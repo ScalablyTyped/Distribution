@@ -20,7 +20,8 @@ object BridgingHeader {
     __obj.asInstanceOf[BridgingHeader]
   }
   
-  extension [Self <: BridgingHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BridgingHeader] (val x: Self) extends AnyVal {
     
     inline def setBridgingHeader(value: String): Self = StObject.set(x, "bridgingHeader", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PinchBounds {
     __obj.asInstanceOf[PinchBounds]
   }
   
-  extension [Self <: PinchBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchBounds] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

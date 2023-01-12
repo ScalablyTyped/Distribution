@@ -17,7 +17,8 @@ object FirmwareRequest {
     __obj.asInstanceOf[FirmwareRequest]
   }
   
-  extension [Self <: FirmwareRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirmwareRequest] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

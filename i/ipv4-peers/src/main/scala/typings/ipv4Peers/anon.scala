@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Encode]
     }
     
-    extension [Self <: Encode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
       
       inline def setDecode(
         value: (/* buffer */ Buffer, /* offset */ js.UndefOr[Double], /* end */ js.UndefOr[Double]) => js.Array[Peer]

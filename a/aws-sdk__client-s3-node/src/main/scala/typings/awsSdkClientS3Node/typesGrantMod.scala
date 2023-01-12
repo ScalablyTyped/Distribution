@@ -32,7 +32,8 @@ object typesGrantMod {
       __obj.asInstanceOf[Grant]
     }
     
-    extension [Self <: Grant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grant] (val x: Self) extends AnyVal {
       
       inline def setGrantee(value: Grantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object typesGrantMod {
       __obj.asInstanceOf[UnmarshalledGrant]
     }
     
-    extension [Self <: UnmarshalledGrant](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGrant] (val x: Self) extends AnyVal {
       
       inline def setGrantee(value: UnmarshalledGrantee): Self = StObject.set(x, "Grantee", value.asInstanceOf[js.Any])
       

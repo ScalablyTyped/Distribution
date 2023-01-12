@@ -122,7 +122,8 @@ object KmlScreenOverlay {
     __obj.asInstanceOf[KmlScreenOverlay]
   }
   
-  extension [Self <: KmlScreenOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlScreenOverlay] (val x: Self) extends AnyVal {
     
     inline def setGetOverlayXY(value: () => KmlVec2): Self = StObject.set(x, "getOverlayXY", js.Any.fromFunction0(value))
     

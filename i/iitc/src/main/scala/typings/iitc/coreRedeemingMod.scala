@@ -34,7 +34,8 @@ object coreRedeemingMod {
         __obj.asInstanceOf[ResultData]
       }
       
-      extension [Self <: ResultData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ResultData] (val x: Self) extends AnyVal {
         
         inline def setAp(value: String): Self = StObject.set(x, "ap", value.asInstanceOf[js.Any])
         

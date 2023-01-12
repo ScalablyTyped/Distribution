@@ -28,7 +28,8 @@ object IdentityProviderSummary {
     __obj.asInstanceOf[IdentityProviderSummary]
   }
   
-  extension [Self <: IdentityProviderSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityProviderSummary] (val x: Self) extends AnyVal {
     
     inline def setIdentityProviderArn(value: ARN): Self = StObject.set(x, "identityProviderArn", value.asInstanceOf[js.Any])
     

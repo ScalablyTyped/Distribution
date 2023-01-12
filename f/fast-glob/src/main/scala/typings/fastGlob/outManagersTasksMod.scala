@@ -52,7 +52,8 @@ object outManagersTasksMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

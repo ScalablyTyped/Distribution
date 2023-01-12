@@ -18,7 +18,8 @@ object DeleteModelPackageGroupInput {
     __obj.asInstanceOf[DeleteModelPackageGroupInput]
   }
   
-  extension [Self <: DeleteModelPackageGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelPackageGroupInput] (val x: Self) extends AnyVal {
     
     inline def setModelPackageGroupName(value: ArnOrName): Self = StObject.set(x, "ModelPackageGroupName", value.asInstanceOf[js.Any])
   }

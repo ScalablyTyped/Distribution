@@ -292,7 +292,8 @@ object SceneViewPropertiestype3d {
     __obj.asInstanceOf[SceneViewPropertiestype3d]
   }
   
-  extension [Self <: SceneViewPropertiestype3d](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewPropertiestype3d] (val x: Self) extends AnyVal {
     
     inline def setAllLayerViews(value: CollectionProperties[LayerViewProperties]): Self = StObject.set(x, "allLayerViews", value.asInstanceOf[js.Any])
     

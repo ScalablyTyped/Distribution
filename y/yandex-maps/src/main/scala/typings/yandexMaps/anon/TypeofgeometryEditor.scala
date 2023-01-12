@@ -53,7 +53,8 @@ object TypeofgeometryEditor {
     __obj.asInstanceOf[TypeofgeometryEditor]
   }
   
-  extension [Self <: TypeofgeometryEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofgeometryEditor] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: Instantiable2[/* geometry */ ICircleGeometry, /* options */ js.UndefOr[js.Object], Circle]): Self = StObject.set(x, "Circle", value.asInstanceOf[js.Any])
     

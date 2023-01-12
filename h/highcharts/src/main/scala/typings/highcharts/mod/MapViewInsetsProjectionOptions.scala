@@ -39,7 +39,8 @@ object MapViewInsetsProjectionOptions {
     __obj.asInstanceOf[MapViewInsetsProjectionOptions]
   }
   
-  extension [Self <: MapViewInsetsProjectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewInsetsProjectionOptions] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

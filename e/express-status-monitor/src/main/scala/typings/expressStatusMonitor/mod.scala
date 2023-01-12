@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[ExpressStatusMonitorConfig]
     }
     
-    extension [Self <: ExpressStatusMonitorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressStatusMonitorConfig] (val x: Self) extends AnyVal {
       
       inline def setChartVisibility(value: Cpu): Self = StObject.set(x, "chartVisibility", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod {
       __obj.asInstanceOf[HealthCheck]
     }
     
-    extension [Self <: HealthCheck](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HealthCheck] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object mod {
       __obj.asInstanceOf[RetentionSpan]
     }
     
-    extension [Self <: RetentionSpan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetentionSpan] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       

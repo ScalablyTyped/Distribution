@@ -20,7 +20,8 @@ object RosMsgDefinition {
     __obj.asInstanceOf[RosMsgDefinition]
   }
   
-  extension [Self <: RosMsgDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RosMsgDefinition] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: js.Array[RosMsgField]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

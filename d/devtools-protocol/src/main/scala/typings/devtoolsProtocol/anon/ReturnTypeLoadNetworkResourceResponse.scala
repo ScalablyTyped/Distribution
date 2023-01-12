@@ -19,7 +19,8 @@ object ReturnTypeLoadNetworkResourceResponse {
     __obj.asInstanceOf[ReturnTypeLoadNetworkResourceResponse]
   }
   
-  extension [Self <: ReturnTypeLoadNetworkResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeLoadNetworkResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[LoadNetworkResourceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

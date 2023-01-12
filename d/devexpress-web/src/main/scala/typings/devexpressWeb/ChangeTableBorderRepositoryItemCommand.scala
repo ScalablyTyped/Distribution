@@ -29,7 +29,8 @@ object ChangeTableBorderRepositoryItemCommand {
     __obj.asInstanceOf[ChangeTableBorderRepositoryItemCommand]
   }
   
-  extension [Self <: ChangeTableBorderRepositoryItemCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableBorderRepositoryItemCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TableBorderSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

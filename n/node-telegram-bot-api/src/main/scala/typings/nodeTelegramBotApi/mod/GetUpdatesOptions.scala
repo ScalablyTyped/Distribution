@@ -21,7 +21,8 @@ object GetUpdatesOptions {
     __obj.asInstanceOf[GetUpdatesOptions]
   }
   
-  extension [Self <: GetUpdatesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUpdatesOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowed_updates(value: js.Array[String]): Self = StObject.set(x, "allowed_updates", value.asInstanceOf[js.Any])
     

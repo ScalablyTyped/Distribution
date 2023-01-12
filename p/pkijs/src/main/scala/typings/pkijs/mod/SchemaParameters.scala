@@ -19,7 +19,8 @@ object SchemaParameters {
     __obj.asInstanceOf[SchemaParameters[N]]
   }
   
-  extension [Self <: SchemaParameters[?], N /* <: Record[String, Any] */](x: Self & SchemaParameters[N]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaParameters[?], N /* <: Record[String, Any] */] (val x: Self & SchemaParameters[N]) extends AnyVal {
     
     inline def setNames(value: SchemaNames & N): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

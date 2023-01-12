@@ -18,7 +18,8 @@ object GetImagePolicyRequest {
     __obj.asInstanceOf[GetImagePolicyRequest]
   }
   
-  extension [Self <: GetImagePolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImagePolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setImageArn(value: ImageBuildVersionArn): Self = StObject.set(x, "imageArn", value.asInstanceOf[js.Any])
   }

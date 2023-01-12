@@ -48,7 +48,8 @@ object DOMMatrixInit {
     __obj.asInstanceOf[DOMMatrixInit]
   }
   
-  extension [Self <: DOMMatrixInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMatrixInit] (val x: Self) extends AnyVal {
     
     inline def setIs2D(value: scala.Boolean): Self = StObject.set(x, "is2D", value.asInstanceOf[js.Any])
     

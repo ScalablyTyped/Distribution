@@ -20,7 +20,8 @@ object Metafile {
     __obj.asInstanceOf[Metafile]
   }
   
-  extension [Self <: Metafile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metafile] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: StringDictionary[Imports]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object EnumerateCallbacks {
     __obj.asInstanceOf[EnumerateCallbacks[T]]
   }
   
-  extension [Self <: EnumerateCallbacks[?], T](x: Self & EnumerateCallbacks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateCallbacks[?], T] (val x: Self & EnumerateCallbacks[T]) extends AnyVal {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     

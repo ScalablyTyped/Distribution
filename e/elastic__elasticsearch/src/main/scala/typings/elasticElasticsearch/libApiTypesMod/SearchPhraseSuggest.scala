@@ -23,7 +23,8 @@ object SearchPhraseSuggest {
     __obj.asInstanceOf[SearchPhraseSuggest]
   }
   
-  extension [Self <: SearchPhraseSuggest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPhraseSuggest] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: SearchPhraseSuggestOption | js.Array[SearchPhraseSuggestOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

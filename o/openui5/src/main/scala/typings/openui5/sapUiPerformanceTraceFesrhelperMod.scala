@@ -66,7 +66,8 @@ object sapUiPerformanceTraceFesrhelperMod extends Shortcut {
       __obj.asInstanceOf[FESRHelper]
     }
     
-    extension [Self <: FESRHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FESRHelper] (val x: Self) extends AnyVal {
       
       inline def setGetSemanticStepname(value: (typings.openui5.sapUiCoreElementMod.default, String) => String): Self = StObject.set(x, "getSemanticStepname", js.Any.fromFunction2(value))
       

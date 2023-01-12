@@ -34,7 +34,8 @@ object StackFrame {
     __obj.asInstanceOf[StackFrame]
   }
   
-  extension [Self <: StackFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrame] (val x: Self) extends AnyVal {
     
     inline def setColumnNumber(value: String): Self = StObject.set(x, "columnNumber", value.asInstanceOf[js.Any])
     

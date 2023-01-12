@@ -122,7 +122,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RellaxInstance]
     }
     
-    extension [Self <: RellaxInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RellaxInstance] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -191,7 +192,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RellaxOptions]
     }
     
-    extension [Self <: RellaxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RellaxOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Tuple3[Double, Double, Double]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

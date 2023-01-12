@@ -23,7 +23,8 @@ object PluginConfig {
     __obj.asInstanceOf[PluginConfig]
   }
   
-  extension [Self <: PluginConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginConfig] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: `object` | json_buffer): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

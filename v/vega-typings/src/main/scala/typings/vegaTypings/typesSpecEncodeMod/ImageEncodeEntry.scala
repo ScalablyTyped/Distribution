@@ -25,7 +25,8 @@ object ImageEncodeEntry {
     __obj.asInstanceOf[ImageEncodeEntry]
   }
   
-  extension [Self <: ImageEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setAspect(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
     

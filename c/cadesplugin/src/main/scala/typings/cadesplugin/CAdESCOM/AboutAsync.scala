@@ -62,7 +62,8 @@ object AboutAsync {
     __obj.asInstanceOf[AboutAsync]
   }
   
-  extension [Self <: AboutAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AboutAsync] (val x: Self) extends AnyVal {
     
     inline def setBuildVersion(
       value: /* import warning: importer.ImportType#apply Failed type conversion: number extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<number> : // tslint:disable-line ban-types

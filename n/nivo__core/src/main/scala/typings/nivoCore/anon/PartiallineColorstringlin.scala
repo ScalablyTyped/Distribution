@@ -25,7 +25,8 @@ object PartiallineColorstringlin {
     __obj.asInstanceOf[PartiallineColorstringlin]
   }
   
-  extension [Self <: PartiallineColorstringlin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartiallineColorstringlin] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: String | `0`): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

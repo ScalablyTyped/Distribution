@@ -39,7 +39,8 @@ object Transfer {
     __obj.asInstanceOf[Transfer]
   }
   
-  extension [Self <: Transfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transfer] (val x: Self) extends AnyVal {
     
     inline def setAccountVerification(
       value: TranferAccountVerificationRequest => js.Promise[AxiosResponse[TranferAccountVerificationResponse, Any]]

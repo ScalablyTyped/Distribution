@@ -83,7 +83,8 @@ object CreateSchemaResponse {
     __obj.asInstanceOf[CreateSchemaResponse]
   }
   
-  extension [Self <: CreateSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setCompatibility(value: Compatibility): Self = StObject.set(x, "Compatibility", value.asInstanceOf[js.Any])
     

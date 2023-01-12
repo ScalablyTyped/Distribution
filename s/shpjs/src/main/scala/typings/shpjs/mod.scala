@@ -30,7 +30,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FeatureCollectionWithFilename]
     }
     
-    extension [Self <: FeatureCollectionWithFilename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureCollectionWithFilename] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       

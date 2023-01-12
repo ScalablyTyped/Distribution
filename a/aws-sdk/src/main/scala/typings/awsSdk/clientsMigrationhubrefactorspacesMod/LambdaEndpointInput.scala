@@ -18,7 +18,8 @@ object LambdaEndpointInput {
     __obj.asInstanceOf[LambdaEndpointInput]
   }
   
-  extension [Self <: LambdaEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setArn(value: LambdaArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object LoadBalancerInfo {
     __obj.asInstanceOf[LoadBalancerInfo]
   }
   
-  extension [Self <: LoadBalancerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerInfo] (val x: Self) extends AnyVal {
     
     inline def setBackendType(value: String): Self = StObject.set(x, "backendType", value.asInstanceOf[js.Any])
     

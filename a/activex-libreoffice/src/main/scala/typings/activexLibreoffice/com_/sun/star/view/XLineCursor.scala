@@ -49,7 +49,8 @@ object XLineCursor {
     __obj.asInstanceOf[XLineCursor]
   }
   
-  extension [Self <: XLineCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLineCursor] (val x: Self) extends AnyVal {
     
     inline def setGotoEndOfLine(value: Boolean => Unit): Self = StObject.set(x, "gotoEndOfLine", js.Any.fromFunction1(value))
     

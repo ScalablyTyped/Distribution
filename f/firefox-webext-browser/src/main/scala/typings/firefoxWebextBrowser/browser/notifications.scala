@@ -65,7 +65,8 @@ object notifications {
       __obj.asInstanceOf[CreateNotificationOptions]
     }
     
-    extension [Self <: CreateNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object notifications {
       __obj.asInstanceOf[CreateNotificationOptionsButtons]
     }
     
-    extension [Self <: CreateNotificationOptionsButtons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateNotificationOptionsButtons] (val x: Self) extends AnyVal {
       
       inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object notifications {
       __obj.asInstanceOf[NotificationItem]
     }
     
-    extension [Self <: NotificationItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationItem] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -249,7 +252,8 @@ object notifications {
       __obj.asInstanceOf[UpdateNotificationOptions]
     }
     
-    extension [Self <: UpdateNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
       
@@ -322,7 +326,8 @@ object notifications {
       __obj.asInstanceOf[UpdateNotificationOptionsButtons]
     }
     
-    extension [Self <: UpdateNotificationOptionsButtons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateNotificationOptionsButtons] (val x: Self) extends AnyVal {
       
       inline def setIconUrl(value: String): Self = StObject.set(x, "iconUrl", value.asInstanceOf[js.Any])
       

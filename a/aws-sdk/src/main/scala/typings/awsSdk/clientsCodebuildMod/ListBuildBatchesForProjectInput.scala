@@ -38,7 +38,8 @@ object ListBuildBatchesForProjectInput {
     __obj.asInstanceOf[ListBuildBatchesForProjectInput]
   }
   
-  extension [Self <: ListBuildBatchesForProjectInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuildBatchesForProjectInput] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: BuildBatchFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

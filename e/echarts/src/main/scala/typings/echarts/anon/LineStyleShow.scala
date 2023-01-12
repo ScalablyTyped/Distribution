@@ -31,7 +31,8 @@ object LineStyleShow {
     __obj.asInstanceOf[LineStyleShow]
   }
   
-  extension [Self <: LineStyleShow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineStyleShow] (val x: Self) extends AnyVal {
     
     inline def setLineStyle(value: Width): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     

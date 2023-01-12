@@ -116,7 +116,8 @@ object PartialConfigParams {
     __obj.asInstanceOf[PartialConfigParams]
   }
   
-  extension [Self <: PartialConfigParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConfigParams] (val x: Self) extends AnyVal {
     
     inline def setAccentSensitive(value: Boolean): Self = StObject.set(x, "accentSensitive", value.asInstanceOf[js.Any])
     

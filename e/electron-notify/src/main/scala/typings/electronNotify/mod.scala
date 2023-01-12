@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ICloseNotificationEvent]
     }
     
-    extension [Self <: ICloseNotificationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICloseNotificationEvent] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: close | show | click): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[ICustomConfig]
     }
     
-    extension [Self <: ICustomConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomConfig] (val x: Self) extends AnyVal {
       
       inline def setAnimateInParallel(value: Boolean): Self = StObject.set(x, "animateInParallel", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object mod {
       __obj.asInstanceOf[INotification]
     }
     
-    extension [Self <: INotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotification] (val x: Self) extends AnyVal {
       
       inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object mod {
       __obj.asInstanceOf[INotificationEvent]
     }
     
-    extension [Self <: INotificationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INotificationEvent] (val x: Self) extends AnyVal {
       
       inline def setCloseNotification(value: Any => Unit): Self = StObject.set(x, "closeNotification", js.Any.fromFunction1(value))
     }

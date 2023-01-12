@@ -25,7 +25,8 @@ object ExtensionArgumentMetadata {
     __obj.asInstanceOf[ExtensionArgumentMetadata]
   }
   
-  extension [Self <: ExtensionArgumentMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionArgumentMetadata] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

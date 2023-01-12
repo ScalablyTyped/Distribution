@@ -53,7 +53,8 @@ object SendRawEmailRequest {
     __obj.asInstanceOf[SendRawEmailRequest]
   }
   
-  extension [Self <: SendRawEmailRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendRawEmailRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
     

@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[HashLinkProps]
     }
     
-    extension [Self <: HashLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashLinkProps] (val x: Self) extends AnyVal {
       
       inline def setElementId(value: String): Self = StObject.set(x, "elementId", value.asInstanceOf[js.Any])
       
@@ -560,7 +561,8 @@ object mod {
       __obj.asInstanceOf[NavHashLinkProps]
     }
     
-    extension [Self <: NavHashLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavHashLinkProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object Cube {
     __obj.asInstanceOf[Cube]
   }
   
-  extension [Self <: Cube](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cube] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: js.Object => String): Self = StObject.set(x, "caption", js.Any.fromFunction1(value))
     

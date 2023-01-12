@@ -41,7 +41,8 @@ object CsvLogFormatter {
     __obj.asInstanceOf[CsvLogFormatter]
   }
   
-  extension [Self <: CsvLogFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvLogFormatter] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: () => Unit): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
   }

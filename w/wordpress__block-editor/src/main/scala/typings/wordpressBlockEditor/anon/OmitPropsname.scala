@@ -22,7 +22,8 @@ object OmitPropsname {
     __obj.asInstanceOf[OmitPropsname]
   }
   
-  extension [Self <: OmitPropsname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPropsname] (val x: Self) extends AnyVal {
     
     inline def setBubblesVirtually(value: Boolean): Self = StObject.set(x, "bubblesVirtually", value.asInstanceOf[js.Any])
     

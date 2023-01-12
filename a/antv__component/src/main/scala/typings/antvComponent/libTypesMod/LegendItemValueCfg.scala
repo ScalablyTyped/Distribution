@@ -38,7 +38,8 @@ object LegendItemValueCfg {
     __obj.asInstanceOf[LegendItemValueCfg]
   }
   
-  extension [Self <: LegendItemValueCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendItemValueCfg] (val x: Self) extends AnyVal {
     
     inline def setAlignRight(value: Boolean): Self = StObject.set(x, "alignRight", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object Preset {
     __obj.asInstanceOf[Preset]
   }
   
-  extension [Self <: Preset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Preset] (val x: Self) extends AnyVal {
     
     inline def setArn(value: string): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

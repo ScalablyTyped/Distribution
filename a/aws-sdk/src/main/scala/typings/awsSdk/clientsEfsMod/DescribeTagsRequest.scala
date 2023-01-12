@@ -28,7 +28,8 @@ object DescribeTagsRequest {
     __obj.asInstanceOf[DescribeTagsRequest]
   }
   
-  extension [Self <: DescribeTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setFileSystemId(value: FileSystemId): Self = StObject.set(x, "FileSystemId", value.asInstanceOf[js.Any])
     

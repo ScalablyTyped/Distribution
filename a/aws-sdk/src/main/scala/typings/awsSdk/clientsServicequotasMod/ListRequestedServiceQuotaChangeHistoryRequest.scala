@@ -33,7 +33,8 @@ object ListRequestedServiceQuotaChangeHistoryRequest {
     __obj.asInstanceOf[ListRequestedServiceQuotaChangeHistoryRequest]
   }
   
-  extension [Self <: ListRequestedServiceQuotaChangeHistoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRequestedServiceQuotaChangeHistoryRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

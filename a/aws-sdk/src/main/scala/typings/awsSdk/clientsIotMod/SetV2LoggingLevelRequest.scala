@@ -23,7 +23,8 @@ object SetV2LoggingLevelRequest {
     __obj.asInstanceOf[SetV2LoggingLevelRequest]
   }
   
-  extension [Self <: SetV2LoggingLevelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetV2LoggingLevelRequest] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     

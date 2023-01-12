@@ -37,7 +37,8 @@ object FindOneAndReplaceOptions {
     __obj.asInstanceOf[FindOneAndReplaceOptions]
   }
   
-  extension [Self <: FindOneAndReplaceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindOneAndReplaceOptions] (val x: Self) extends AnyVal {
     
     inline def setBypassDocumentValidation(value: Boolean): Self = StObject.set(x, "bypassDocumentValidation", value.asInstanceOf[js.Any])
     

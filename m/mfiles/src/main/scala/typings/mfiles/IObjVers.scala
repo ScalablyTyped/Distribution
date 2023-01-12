@@ -35,7 +35,8 @@ object IObjVers {
     __obj.asInstanceOf[IObjVers]
   }
   
-  extension [Self <: IObjVers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjVers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, IObjVer) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

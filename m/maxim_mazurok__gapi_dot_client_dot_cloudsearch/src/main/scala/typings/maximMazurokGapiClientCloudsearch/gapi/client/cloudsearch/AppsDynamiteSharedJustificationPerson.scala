@@ -19,7 +19,8 @@ object AppsDynamiteSharedJustificationPerson {
     __obj.asInstanceOf[AppsDynamiteSharedJustificationPerson]
   }
   
-  extension [Self <: AppsDynamiteSharedJustificationPerson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedJustificationPerson] (val x: Self) extends AnyVal {
     
     inline def setIsRecipient(value: Boolean): Self = StObject.set(x, "isRecipient", value.asInstanceOf[js.Any])
     

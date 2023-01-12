@@ -153,7 +153,8 @@ object mod {
       __obj.asInstanceOf[ReactAudioPlayerProps]
     }
     
-    extension [Self <: ReactAudioPlayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactAudioPlayerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoPlay(value: Boolean): Self = StObject.set(x, "autoPlay", value.asInstanceOf[js.Any])
       

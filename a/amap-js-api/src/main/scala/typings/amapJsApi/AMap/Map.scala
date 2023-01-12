@@ -565,7 +565,8 @@ object Map {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setClick(value: MapsEvent[click, Map]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
       
@@ -857,7 +858,8 @@ object Map {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnimateEnable(value: Boolean): Self = StObject.set(x, "animateEnable", value.asInstanceOf[js.Any])
       
@@ -1133,7 +1135,8 @@ object Map {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setAnimateEnable(value: Boolean): Self = StObject.set(x, "animateEnable", value.asInstanceOf[js.Any])
       

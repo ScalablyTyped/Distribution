@@ -29,7 +29,8 @@ object IMemoryProxy {
     __obj.asInstanceOf[IMemoryProxy]
   }
   
-  extension [Self <: IMemoryProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemoryProxy] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

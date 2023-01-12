@@ -23,7 +23,8 @@ object ListTrackerConsumersResponse {
     __obj.asInstanceOf[ListTrackerConsumersResponse]
   }
   
-  extension [Self <: ListTrackerConsumersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTrackerConsumersResponse] (val x: Self) extends AnyVal {
     
     inline def setConsumerArns(value: ArnList): Self = StObject.set(x, "ConsumerArns", value.asInstanceOf[js.Any])
     

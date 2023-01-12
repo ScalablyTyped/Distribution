@@ -32,7 +32,8 @@ object XSpellChecker1 {
     __obj.asInstanceOf[XSpellChecker1]
   }
   
-  extension [Self <: XSpellChecker1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpellChecker1] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: (String, Double, PropertyValues) => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction3(value))
     

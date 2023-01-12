@@ -18,7 +18,8 @@ object CreateCloudFormationStackRequest {
     __obj.asInstanceOf[CreateCloudFormationStackRequest]
   }
   
-  extension [Self <: CreateCloudFormationStackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCloudFormationStackRequest] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: InstanceEntryList): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

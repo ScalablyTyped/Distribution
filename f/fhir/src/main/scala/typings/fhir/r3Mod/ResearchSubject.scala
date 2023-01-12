@@ -76,7 +76,8 @@ object ResearchSubject {
     __obj.asInstanceOf[ResearchSubject]
   }
   
-  extension [Self <: ResearchSubject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchSubject] (val x: Self) extends AnyVal {
     
     inline def setActualArm(value: String): Self = StObject.set(x, "actualArm", value.asInstanceOf[js.Any])
     

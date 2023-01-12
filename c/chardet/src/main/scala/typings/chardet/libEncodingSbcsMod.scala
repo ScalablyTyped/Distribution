@@ -112,7 +112,8 @@ object libEncodingSbcsMod {
       __obj.asInstanceOf[NGramsPlusLang]
     }
     
-    extension [Self <: NGramsPlusLang](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NGramsPlusLang] (val x: Self) extends AnyVal {
       
       inline def setFLang(value: String): Self = StObject.set(x, "fLang", value.asInstanceOf[js.Any])
       

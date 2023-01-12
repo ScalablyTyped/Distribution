@@ -151,7 +151,8 @@ object Sites {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setDeleteAttachment(value: () => Unit): Self = StObject.set(x, "deleteAttachment", js.Any.fromFunction0(value))
       
@@ -213,7 +214,8 @@ object Sites {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setDeleteColumn(value: () => Unit): Self = StObject.set(x, "deleteColumn", js.Any.fromFunction0(value))
       
@@ -269,7 +271,8 @@ object Sites {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setDeleteComment(value: () => Unit): Self = StObject.set(x, "deleteComment", js.Any.fromFunction0(value))
       
@@ -335,7 +338,8 @@ object Sites {
       __obj.asInstanceOf[ListItem]
     }
     
-    extension [Self <: ListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
       
       inline def setDeleteListItem(value: () => Unit): Self = StObject.set(x, "deleteListItem", js.Any.fromFunction0(value))
       
@@ -490,7 +494,8 @@ object Sites {
       __obj.asInstanceOf[PageAdvancedParameters]
     }
     
-    extension [Self <: PageAdvancedParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageAdvancedParameters] (val x: Self) extends AnyVal {
       
       inline def setIncludeDeleted(value: Boolean): Self = StObject.set(x, "includeDeleted", value.asInstanceOf[js.Any])
       

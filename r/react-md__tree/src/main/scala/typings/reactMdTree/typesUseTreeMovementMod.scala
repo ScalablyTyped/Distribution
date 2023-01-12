@@ -82,7 +82,8 @@ object typesUseTreeMovementMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setData(value: TreeData[UnknownTreeItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object typesUseTreeMovementMod {
       __obj.asInstanceOf[ReturnValue]
     }
     
-    extension [Self <: ReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReturnValue] (val x: Self) extends AnyVal {
       
       inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
       

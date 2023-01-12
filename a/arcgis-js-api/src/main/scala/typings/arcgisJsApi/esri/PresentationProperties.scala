@@ -20,7 +20,8 @@ object PresentationProperties {
     __obj.asInstanceOf[PresentationProperties]
   }
   
-  extension [Self <: PresentationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresentationProperties] (val x: Self) extends AnyVal {
     
     inline def setSlides(value: CollectionProperties[SlideProperties]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
     

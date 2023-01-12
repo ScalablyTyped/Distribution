@@ -23,7 +23,8 @@ object UserSummary {
     __obj.asInstanceOf[UserSummary]
   }
   
-  extension [Self <: UserSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSummary] (val x: Self) extends AnyVal {
     
     inline def setPendingChange(value: ChangeType): Self = StObject.set(x, "PendingChange", value.asInstanceOf[js.Any])
     

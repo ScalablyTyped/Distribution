@@ -62,7 +62,8 @@ object AdapterOptions {
     __obj.asInstanceOf[AdapterOptions]
   }
   
-  extension [Self <: AdapterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdapterOptions] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Any): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object MockJaxStandardLogger {
     __obj.asInstanceOf[MockJaxStandardLogger]
   }
   
-  extension [Self <: MockJaxStandardLogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MockJaxStandardLogger] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: MockJaxLoggingFunction): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

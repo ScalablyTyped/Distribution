@@ -34,7 +34,8 @@ object TransformModuleJSON {
     __obj.asInstanceOf[TransformModuleJSON]
   }
   
-  extension [Self <: TransformModuleJSON](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformModuleJSON] (val x: Self) extends AnyVal {
     
     inline def setAst(value: AcornNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

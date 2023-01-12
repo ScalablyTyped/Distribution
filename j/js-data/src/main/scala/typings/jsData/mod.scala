@@ -970,7 +970,8 @@ object mod {
       __obj.asInstanceOf[Diff]
     }
     
-    extension [Self <: Diff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diff] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: Any): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -995,7 +996,8 @@ object mod {
       __obj.asInstanceOf[SchemaValidationError]
     }
     
-    extension [Self <: SchemaValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaValidationError] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       

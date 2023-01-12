@@ -48,7 +48,8 @@ object SectionHeaderItem {
     __obj.asInstanceOf[SectionHeaderItem]
   }
   
-  extension [Self <: SectionHeaderItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionHeaderItem] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: () => SectionHeaderItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     

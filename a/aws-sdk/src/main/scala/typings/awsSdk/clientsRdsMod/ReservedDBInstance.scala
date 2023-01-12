@@ -93,7 +93,8 @@ object ReservedDBInstance {
     __obj.asInstanceOf[ReservedDBInstance]
   }
   
-  extension [Self <: ReservedDBInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedDBInstance] (val x: Self) extends AnyVal {
     
     inline def setCurrencyCode(value: String): Self = StObject.set(x, "CurrencyCode", value.asInstanceOf[js.Any])
     

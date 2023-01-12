@@ -52,7 +52,8 @@ object OrganizationConformancePack {
     __obj.asInstanceOf[OrganizationConformancePack]
   }
   
-  extension [Self <: OrganizationConformancePack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationConformancePack] (val x: Self) extends AnyVal {
     
     inline def setConformancePackInputParameters(value: ConformancePackInputParameters): Self = StObject.set(x, "ConformancePackInputParameters", value.asInstanceOf[js.Any])
     

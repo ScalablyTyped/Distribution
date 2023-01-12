@@ -18,7 +18,8 @@ object CreateStoreImageTaskResult {
     __obj.asInstanceOf[CreateStoreImageTaskResult]
   }
   
-  extension [Self <: CreateStoreImageTaskResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStoreImageTaskResult] (val x: Self) extends AnyVal {
     
     inline def setObjectKey(value: String): Self = StObject.set(x, "ObjectKey", value.asInstanceOf[js.Any])
     

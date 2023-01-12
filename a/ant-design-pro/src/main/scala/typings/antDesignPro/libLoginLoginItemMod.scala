@@ -62,7 +62,8 @@ object libLoginLoginItemMod {
       __obj.asInstanceOf[LoginItemProps]
     }
     
-    extension [Self <: LoginItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginItemProps] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object libLoginLoginItemMod {
       __obj.asInstanceOf[WrappedLoginItemProps]
     }
     
-    extension [Self <: WrappedLoginItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedLoginItemProps] (val x: Self) extends AnyVal {
       
       inline def setButtonText(value: ReactNode): Self = StObject.set(x, "buttonText", value.asInstanceOf[js.Any])
       

@@ -169,7 +169,8 @@ object coreChatMod {
         __obj.asInstanceOf[chatStorage]
       }
       
-      extension [Self <: chatStorage](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: chatStorage] (val x: Self) extends AnyVal {
         
         inline def setNewestTimestamp(value: Double): Self = StObject.set(x, "newestTimestamp", value.asInstanceOf[js.Any])
         

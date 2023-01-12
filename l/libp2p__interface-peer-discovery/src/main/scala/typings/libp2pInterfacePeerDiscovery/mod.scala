@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[PeerDiscoveryEvents]
     }
     
-    extension [Self <: PeerDiscoveryEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerDiscoveryEvents] (val x: Self) extends AnyVal {
       
       inline def setPeer(value: CustomEvent[PeerInfo]): Self = StObject.set(x, "peer", value.asInstanceOf[js.Any])
     }

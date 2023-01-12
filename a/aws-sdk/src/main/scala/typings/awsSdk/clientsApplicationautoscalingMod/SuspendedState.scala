@@ -28,7 +28,8 @@ object SuspendedState {
     __obj.asInstanceOf[SuspendedState]
   }
   
-  extension [Self <: SuspendedState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendedState] (val x: Self) extends AnyVal {
     
     inline def setDynamicScalingInSuspended(value: ScalingSuspended): Self = StObject.set(x, "DynamicScalingInSuspended", value.asInstanceOf[js.Any])
     

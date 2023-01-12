@@ -18,7 +18,8 @@ object PickanyisClosedpoints {
     __obj.asInstanceOf[PickanyisClosedpoints]
   }
   
-  extension [Self <: PickanyisClosedpoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickanyisClosedpoints] (val x: Self) extends AnyVal {
     
     inline def setIsClosed(value: Any): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
     

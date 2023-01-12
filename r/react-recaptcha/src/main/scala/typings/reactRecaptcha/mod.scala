@@ -88,7 +88,8 @@ object mod {
       __obj.asInstanceOf[RecaptchaProps]
     }
     
-    extension [Self <: RecaptchaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecaptchaProps] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: bottomright | bottomleft | `inline`): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

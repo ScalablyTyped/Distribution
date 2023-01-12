@@ -31,7 +31,8 @@ object MatchingJob {
     __obj.asInstanceOf[MatchingJob]
   }
   
-  extension [Self <: MatchingJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingJob] (val x: Self) extends AnyVal {
     
     inline def setCommuteInfo(value: CommuteInfo): Self = StObject.set(x, "commuteInfo", value.asInstanceOf[js.Any])
     

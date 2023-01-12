@@ -19,7 +19,8 @@ object TextFootnote {
     __obj.asInstanceOf[TextFootnote]
   }
   
-  extension [Self <: TextFootnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFootnote] (val x: Self) extends AnyVal {
     
     inline def setId(value: String | Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

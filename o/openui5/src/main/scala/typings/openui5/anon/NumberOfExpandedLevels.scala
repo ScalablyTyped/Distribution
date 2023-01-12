@@ -36,7 +36,8 @@ object NumberOfExpandedLevels {
     __obj.asInstanceOf[NumberOfExpandedLevels]
   }
   
-  extension [Self <: NumberOfExpandedLevels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberOfExpandedLevels] (val x: Self) extends AnyVal {
     
     inline def setLength(value: int): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

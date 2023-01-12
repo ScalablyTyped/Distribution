@@ -33,7 +33,8 @@ object UpdateDataCatalogInput {
     __obj.asInstanceOf[UpdateDataCatalogInput]
   }
   
-  extension [Self <: UpdateDataCatalogInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDataCatalogInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

@@ -61,7 +61,8 @@ object DocumentDigitalSignatures {
     __obj.asInstanceOf[DocumentDigitalSignatures]
   }
   
-  extension [Self <: DocumentDigitalSignatures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentDigitalSignatures] (val x: Self) extends AnyVal {
     
     inline def setCreateDefault(value: () => Unit): Self = StObject.set(x, "createDefault", js.Any.fromFunction0(value))
     

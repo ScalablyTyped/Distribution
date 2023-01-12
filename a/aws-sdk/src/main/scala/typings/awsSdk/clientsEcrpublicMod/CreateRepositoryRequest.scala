@@ -28,7 +28,8 @@ object CreateRepositoryRequest {
     __obj.asInstanceOf[CreateRepositoryRequest]
   }
   
-  extension [Self <: CreateRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogData(value: RepositoryCatalogDataInput): Self = StObject.set(x, "catalogData", value.asInstanceOf[js.Any])
     

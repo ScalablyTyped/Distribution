@@ -33,7 +33,8 @@ object ImageDistributionPlatformInfo {
     __obj.asInstanceOf[ImageDistributionPlatformInfo]
   }
   
-  extension [Self <: ImageDistributionPlatformInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDistributionPlatformInfo] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: String): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

@@ -164,7 +164,8 @@ object mod {
       __obj.asInstanceOf[HashRingOptions]
     }
     
-    extension [Self <: HashRingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashRingOptions] (val x: Self) extends AnyVal {
       
       inline def setCompatibility(value: hash_ring | ketama): Self = StObject.set(x, "compatibility", value.asInstanceOf[js.Any])
       
@@ -191,7 +192,8 @@ object mod {
       __obj.asInstanceOf[ServerConfig]
     }
     
-    extension [Self <: ServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
       
       inline def setVnodes(value: Double): Self = StObject.set(x, "vnodes", value.asInstanceOf[js.Any])
       

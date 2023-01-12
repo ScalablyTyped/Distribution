@@ -28,7 +28,8 @@ object AnomalyGroupStatistics {
     __obj.asInstanceOf[AnomalyGroupStatistics]
   }
   
-  extension [Self <: AnomalyGroupStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyGroupStatistics] (val x: Self) extends AnyVal {
     
     inline def setEvaluationStartDate(value: TimestampString): Self = StObject.set(x, "EvaluationStartDate", value.asInstanceOf[js.Any])
     

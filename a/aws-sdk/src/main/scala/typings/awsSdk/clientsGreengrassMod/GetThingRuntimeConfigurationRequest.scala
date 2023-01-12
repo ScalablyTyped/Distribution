@@ -18,7 +18,8 @@ object GetThingRuntimeConfigurationRequest {
     __obj.asInstanceOf[GetThingRuntimeConfigurationRequest]
   }
   
-  extension [Self <: GetThingRuntimeConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetThingRuntimeConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setThingName(value: string): Self = StObject.set(x, "ThingName", value.asInstanceOf[js.Any])
   }

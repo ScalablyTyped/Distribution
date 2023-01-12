@@ -64,7 +64,8 @@ object CollapsibleOptions {
     __obj.asInstanceOf[CollapsibleOptions]
   }
   
-  extension [Self <: CollapsibleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollapsibleOptions] (val x: Self) extends AnyVal {
     
     inline def setAccordion(value: Boolean): Self = StObject.set(x, "accordion", value.asInstanceOf[js.Any])
     

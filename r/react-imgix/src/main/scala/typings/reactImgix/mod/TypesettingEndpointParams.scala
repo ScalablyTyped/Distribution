@@ -20,7 +20,8 @@ object TypesettingEndpointParams {
     __obj.asInstanceOf[TypesettingEndpointParams]
   }
   
-  extension [Self <: TypesettingEndpointParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypesettingEndpointParams] (val x: Self) extends AnyVal {
     
     inline def setTildetext(value: ImgixParamType): Self = StObject.set(x, "~text", value.asInstanceOf[js.Any])
     

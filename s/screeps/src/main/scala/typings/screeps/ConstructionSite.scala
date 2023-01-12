@@ -64,7 +64,8 @@ object ConstructionSite {
     __obj.asInstanceOf[ConstructionSite[T]]
   }
   
-  extension [Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */](x: Self & ConstructionSite[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructionSite[?], T /* <: BuildableStructureConstant */] (val x: Self & ConstructionSite[T]) extends AnyVal {
     
     inline def setId(value: Id[ConstructionSite[T]]): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

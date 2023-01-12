@@ -50,7 +50,8 @@ object autosizeAutosizeTypeAutoS {
     __obj.asInstanceOf[autosizeAutosizeTypeAutoS]
   }
   
-  extension [Self <: autosizeAutosizeTypeAutoS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: autosizeAutosizeTypeAutoS] (val x: Self) extends AnyVal {
     
     inline def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])
     

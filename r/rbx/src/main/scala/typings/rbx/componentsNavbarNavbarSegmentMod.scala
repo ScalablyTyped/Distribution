@@ -80,7 +80,8 @@ object componentsNavbarNavbarSegmentMod {
       __obj.asInstanceOf[NavbarSegmentModifierProps]
     }
     
-    extension [Self <: NavbarSegmentModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarSegmentModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     }
@@ -172,7 +173,8 @@ object componentsNavbarNavbarSegmentMod {
       __obj.asInstanceOf[NavbarSegmentProps]
     }
     
-    extension [Self <: NavbarSegmentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarSegmentProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -326,7 +328,8 @@ object componentsNavbarNavbarSegmentMod {
       __obj.asInstanceOf[NavbarSegmentVariables]
     }
     
-    extension [Self <: NavbarSegmentVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarSegmentVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: start | end): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }
@@ -343,7 +346,8 @@ object componentsNavbarNavbarSegmentMod {
       __obj.asInstanceOf[NavbarSegmentVariablesDefaults]
     }
     
-    extension [Self <: NavbarSegmentVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarSegmentVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: start | end): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
     }

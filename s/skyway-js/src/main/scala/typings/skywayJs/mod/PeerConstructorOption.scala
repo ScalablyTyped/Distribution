@@ -30,7 +30,8 @@ object PeerConstructorOption {
     __obj.asInstanceOf[PeerConstructorOption]
   }
   
-  extension [Self <: PeerConstructorOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerConstructorOption] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: RTCConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

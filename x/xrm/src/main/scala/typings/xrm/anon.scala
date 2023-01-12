@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[GetValue]
     }
     
-    extension [Self <: GetValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetValue] (val x: Self) extends AnyVal {
       
       inline def setGetValue(value: () => StageCategory): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     }

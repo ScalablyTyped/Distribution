@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AnswerSignal]
     }
     
-    extension [Self <: AnswerSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnswerSignal] (val x: Self) extends AnyVal {
       
       inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[CandidateSignal]
     }
     
-    extension [Self <: CandidateSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CandidateSignal] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: Candidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object mod {
       __obj.asInstanceOf[GoodbyeSignal]
     }
     
-    extension [Self <: GoodbyeSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoodbyeSignal] (val x: Self) extends AnyVal {
       
       inline def setType(value: goodbye): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -102,7 +105,8 @@ object mod {
       __obj.asInstanceOf[HandshakeSignal]
     }
     
-    extension [Self <: HandshakeSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandshakeSignal] (val x: Self) extends AnyVal {
       
       inline def setAnswer(value: Boolean): Self = StObject.set(x, "answer", value.asInstanceOf[js.Any])
       
@@ -138,7 +142,8 @@ object mod {
       __obj.asInstanceOf[OfferSignal]
     }
     
-    extension [Self <: OfferSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OfferSignal] (val x: Self) extends AnyVal {
       
       inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object mod {
       __obj.asInstanceOf[RenegotiateSignal]
     }
     
-    extension [Self <: RenegotiateSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenegotiateSignal] (val x: Self) extends AnyVal {
       
       inline def setType(value: renegotiate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -246,7 +252,8 @@ object mod {
       __obj.asInstanceOf[SocketEvents]
     }
     
-    extension [Self <: SocketEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

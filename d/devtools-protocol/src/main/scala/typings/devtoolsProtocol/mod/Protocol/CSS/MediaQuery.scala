@@ -23,7 +23,8 @@ object MediaQuery {
     __obj.asInstanceOf[MediaQuery]
   }
   
-  extension [Self <: MediaQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

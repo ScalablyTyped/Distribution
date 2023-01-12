@@ -28,7 +28,8 @@ object PromoteReadReplicaMessage {
     __obj.asInstanceOf[PromoteReadReplicaMessage]
   }
   
-  extension [Self <: PromoteReadReplicaMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromoteReadReplicaMessage] (val x: Self) extends AnyVal {
     
     inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     

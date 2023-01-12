@@ -160,7 +160,8 @@ object DocumentTransform {
       __obj.asInstanceOf[IFieldTransform]
     }
     
-    extension [Self <: IFieldTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFieldTransform] (val x: Self) extends AnyVal {
       
       inline def setAppendMissingElements(value: IArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
       

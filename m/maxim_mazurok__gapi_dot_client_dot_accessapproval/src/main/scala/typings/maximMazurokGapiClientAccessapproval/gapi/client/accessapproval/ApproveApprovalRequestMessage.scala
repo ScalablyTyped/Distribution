@@ -16,7 +16,8 @@ object ApproveApprovalRequestMessage {
     __obj.asInstanceOf[ApproveApprovalRequestMessage]
   }
   
-  extension [Self <: ApproveApprovalRequestMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproveApprovalRequestMessage] (val x: Self) extends AnyVal {
     
     inline def setExpireTime(value: String): Self = StObject.set(x, "expireTime", value.asInstanceOf[js.Any])
     

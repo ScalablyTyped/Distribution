@@ -28,7 +28,8 @@ object DeleteScheduleInput {
     __obj.asInstanceOf[DeleteScheduleInput]
   }
   
-  extension [Self <: DeleteScheduleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteScheduleInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

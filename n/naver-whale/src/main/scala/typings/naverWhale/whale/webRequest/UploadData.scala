@@ -19,7 +19,8 @@ object UploadData {
     __obj.asInstanceOf[UploadData]
   }
   
-  extension [Self <: UploadData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadData] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

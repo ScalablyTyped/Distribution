@@ -70,7 +70,8 @@ object PartialClassNameMapPaperC {
     __obj.asInstanceOf[PartialClassNameMapPaperC]
   }
   
-  extension [Self <: PartialClassNameMapPaperC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapPaperC] (val x: Self) extends AnyVal {
     
     inline def setElevation0(value: String): Self = StObject.set(x, "elevation0", value.asInstanceOf[js.Any])
     

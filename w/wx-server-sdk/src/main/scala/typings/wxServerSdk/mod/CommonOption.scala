@@ -15,7 +15,8 @@ object CommonOption {
     __obj.asInstanceOf[CommonOption[T]]
   }
   
-  extension [Self <: CommonOption[?], T](x: Self & CommonOption[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonOption[?], T] (val x: Self & CommonOption[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

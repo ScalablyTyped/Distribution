@@ -77,7 +77,8 @@ object libMod {
       __obj.asInstanceOf[ApplyPatchesSchema]
     }
     
-    extension [Self <: ApplyPatchesSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyPatchesSchema] (val x: Self) extends AnyVal {
       
       inline def setChange(value: Double): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object libMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
       

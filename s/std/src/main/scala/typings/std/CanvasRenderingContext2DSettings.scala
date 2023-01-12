@@ -25,7 +25,8 @@ object CanvasRenderingContext2DSettings {
     __obj.asInstanceOf[CanvasRenderingContext2DSettings]
   }
   
-  extension [Self <: CanvasRenderingContext2DSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasRenderingContext2DSettings] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: scala.Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

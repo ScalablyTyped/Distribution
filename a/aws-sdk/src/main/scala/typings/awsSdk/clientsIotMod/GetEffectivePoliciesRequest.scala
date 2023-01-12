@@ -28,7 +28,8 @@ object GetEffectivePoliciesRequest {
     __obj.asInstanceOf[GetEffectivePoliciesRequest]
   }
   
-  extension [Self <: GetEffectivePoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEffectivePoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setCognitoIdentityPoolId(value: CognitoIdentityPoolId): Self = StObject.set(x, "cognitoIdentityPoolId", value.asInstanceOf[js.Any])
     

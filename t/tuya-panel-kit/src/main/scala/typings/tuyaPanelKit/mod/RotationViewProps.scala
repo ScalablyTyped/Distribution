@@ -104,7 +104,8 @@ object RotationViewProps {
     __obj.asInstanceOf[RotationViewProps]
   }
   
-  extension [Self <: RotationViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationViewProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

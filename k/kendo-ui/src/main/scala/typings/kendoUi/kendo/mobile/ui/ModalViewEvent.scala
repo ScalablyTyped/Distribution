@@ -19,7 +19,8 @@ object ModalViewEvent {
     __obj.asInstanceOf[ModalViewEvent]
   }
   
-  extension [Self <: ModalViewEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalViewEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

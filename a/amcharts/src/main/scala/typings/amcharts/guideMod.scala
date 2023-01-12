@@ -357,7 +357,8 @@ object guideMod {
       __obj.asInstanceOf[Guide]
     }
     
-    extension [Self <: Guide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guide] (val x: Self) extends AnyVal {
       
       inline def setAbove(value: Boolean): Self = StObject.set(x, "above", value.asInstanceOf[js.Any])
       

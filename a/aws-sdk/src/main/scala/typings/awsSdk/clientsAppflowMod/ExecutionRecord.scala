@@ -48,7 +48,8 @@ object ExecutionRecord {
     __obj.asInstanceOf[ExecutionRecord]
   }
   
-  extension [Self <: ExecutionRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionRecord] (val x: Self) extends AnyVal {
     
     inline def setDataPullEndTime(value: js.Date): Self = StObject.set(x, "dataPullEndTime", value.asInstanceOf[js.Any])
     

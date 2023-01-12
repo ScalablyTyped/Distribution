@@ -18,7 +18,8 @@ object UtilityNetworkTraceAddFlagEvent {
     __obj.asInstanceOf[UtilityNetworkTraceAddFlagEvent]
   }
   
-  extension [Self <: UtilityNetworkTraceAddFlagEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilityNetworkTraceAddFlagEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: `starting-point` | barrier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

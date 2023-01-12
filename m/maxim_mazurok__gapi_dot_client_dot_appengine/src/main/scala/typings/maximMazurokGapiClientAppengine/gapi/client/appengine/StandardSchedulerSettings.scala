@@ -25,7 +25,8 @@ object StandardSchedulerSettings {
     __obj.asInstanceOf[StandardSchedulerSettings]
   }
   
-  extension [Self <: StandardSchedulerSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardSchedulerSettings] (val x: Self) extends AnyVal {
     
     inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     

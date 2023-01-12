@@ -80,7 +80,8 @@ object libFetchCookiesMod {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object libFetchCookiesMod {
       __obj.asInstanceOf[Cookies]
     }
     
-    extension [Self <: Cookies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookies] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Cookie => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -203,7 +205,8 @@ object libFetchCookiesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSessionTimeout(value: s): Self = StObject.set(x, "sessionTimeout", value.asInstanceOf[js.Any])
       

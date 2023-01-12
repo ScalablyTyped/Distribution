@@ -93,7 +93,8 @@ object graphLinkMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setAddNewElements(value: js.Array[SVGGElement] => Unit): Self = StObject.set(x, "addNewElements", js.Any.fromFunction1(value))
       

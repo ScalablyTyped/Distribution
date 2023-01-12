@@ -139,7 +139,8 @@ object OmitCoreConfigOptionsinde {
     __obj.asInstanceOf[OmitCoreConfigOptionsinde]
   }
   
-  extension [Self <: OmitCoreConfigOptionsinde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCoreConfigOptionsinde] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

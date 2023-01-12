@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[BallIndicatorProps]
     }
     
-    extension [Self <: BallIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BallIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[BarIndicatorProps]
     }
     
-    extension [Self <: BarIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object mod {
       __obj.asInstanceOf[BaseIndicatorProps]
     }
     
-    extension [Self <: BaseIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setAnimating(value: Boolean): Self = StObject.set(x, "animating", value.asInstanceOf[js.Any])
       
@@ -314,7 +317,8 @@ object mod {
       __obj.asInstanceOf[DotIndicatorProps]
     }
     
-    extension [Self <: DotIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DotIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object mod {
       __obj.asInstanceOf[MaterialIndicatorProps]
     }
     
-    extension [Self <: MaterialIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaterialIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object mod {
       __obj.asInstanceOf[PacmanIndicatorProps]
     }
     
-    extension [Self <: PacmanIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PacmanIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -433,7 +439,8 @@ object mod {
       __obj.asInstanceOf[PulseIndicatorProps]
     }
     
-    extension [Self <: PulseIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PulseIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -486,7 +493,8 @@ object mod {
       __obj.asInstanceOf[SkypeIndicatorProps]
     }
     
-    extension [Self <: SkypeIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkypeIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -539,7 +547,8 @@ object mod {
       __obj.asInstanceOf[UIActivityIndicatorProps]
     }
     
-    extension [Self <: UIActivityIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIActivityIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -596,7 +605,8 @@ object mod {
       __obj.asInstanceOf[WaveIndicatorProps]
     }
     
-    extension [Self <: WaveIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaveIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

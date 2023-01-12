@@ -53,7 +53,8 @@ object ItemDecorator {
     __obj.asInstanceOf[ItemDecorator]
   }
   
-  extension [Self <: ItemDecorator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDecorator] (val x: Self) extends AnyVal {
     
     inline def setClearButton(value: String): Self = StObject.set(x, "clearButton", value.asInstanceOf[js.Any])
     

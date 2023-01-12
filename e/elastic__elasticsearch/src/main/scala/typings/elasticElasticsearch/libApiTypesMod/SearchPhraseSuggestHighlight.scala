@@ -17,7 +17,8 @@ object SearchPhraseSuggestHighlight {
     __obj.asInstanceOf[SearchPhraseSuggestHighlight]
   }
   
-  extension [Self <: SearchPhraseSuggestHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPhraseSuggestHighlight] (val x: Self) extends AnyVal {
     
     inline def setPost_tag(value: String): Self = StObject.set(x, "post_tag", value.asInstanceOf[js.Any])
     

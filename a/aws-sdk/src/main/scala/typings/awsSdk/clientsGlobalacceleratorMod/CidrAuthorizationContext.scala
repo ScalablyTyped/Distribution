@@ -23,7 +23,8 @@ object CidrAuthorizationContext {
     __obj.asInstanceOf[CidrAuthorizationContext]
   }
   
-  extension [Self <: CidrAuthorizationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CidrAuthorizationContext] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: GenericString): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

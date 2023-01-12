@@ -18,7 +18,8 @@ object GetVoiceConnectorEmergencyCallingConfigurationResponse {
     __obj.asInstanceOf[GetVoiceConnectorEmergencyCallingConfigurationResponse]
   }
   
-  extension [Self <: GetVoiceConnectorEmergencyCallingConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoiceConnectorEmergencyCallingConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setEmergencyCallingConfiguration(value: EmergencyCallingConfiguration): Self = StObject.set(x, "EmergencyCallingConfiguration", value.asInstanceOf[js.Any])
     

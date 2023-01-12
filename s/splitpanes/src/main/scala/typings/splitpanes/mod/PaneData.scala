@@ -15,7 +15,8 @@ object PaneData {
     __obj.asInstanceOf[PaneData]
   }
   
-  extension [Self <: PaneData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaneData] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: Any): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

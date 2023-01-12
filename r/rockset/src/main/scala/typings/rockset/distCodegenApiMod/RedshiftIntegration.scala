@@ -55,7 +55,8 @@ object RedshiftIntegration {
     __obj.asInstanceOf[RedshiftIntegration]
   }
   
-  extension [Self <: RedshiftIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftIntegration] (val x: Self) extends AnyVal {
     
     inline def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     

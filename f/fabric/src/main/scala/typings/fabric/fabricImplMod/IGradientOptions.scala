@@ -36,7 +36,8 @@ object IGradientOptions {
     __obj.asInstanceOf[IGradientOptions]
   }
   
-  extension [Self <: IGradientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGradientOptions] (val x: Self) extends AnyVal {
     
     inline def setColorStops(value: IGradientOptionsColorStops): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ClientGetUidFromClid {
     __obj.asInstanceOf[ClientGetUidFromClid]
   }
   
-  extension [Self <: ClientGetUidFromClid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientGetUidFromClid] (val x: Self) extends AnyVal {
     
     inline def setClid(value: String): Self = StObject.set(x, "clid", value.asInstanceOf[js.Any])
     

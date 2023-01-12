@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[ActualDataSize]
     }
     
-    extension [Self <: ActualDataSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActualDataSize] (val x: Self) extends AnyVal {
       
       inline def setActualDataSize(value: Double): Self = StObject.set(x, "actualDataSize", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "Accept", value.asInstanceOf[js.Any])
       

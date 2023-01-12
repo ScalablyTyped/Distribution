@@ -24,7 +24,8 @@ object AccordionOptions {
     __obj.asInstanceOf[AccordionOptions]
   }
   
-  extension [Self <: AccordionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionOptions] (val x: Self) extends AnyVal {
     
     inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     

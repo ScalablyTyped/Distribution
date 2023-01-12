@@ -18,7 +18,8 @@ object TimelineCriteriaStatus {
     __obj.asInstanceOf[TimelineCriteriaStatus]
   }
   
-  extension [Self <: TimelineCriteriaStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineCriteriaStatus] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetApplicationOutput {
     __obj.asInstanceOf[GetApplicationOutput]
   }
   
-  extension [Self <: GetApplicationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApplicationOutput] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

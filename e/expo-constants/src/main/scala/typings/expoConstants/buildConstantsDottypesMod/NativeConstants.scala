@@ -154,7 +154,8 @@ object NativeConstants {
     __obj.asInstanceOf[NativeConstants]
   }
   
-  extension [Self <: NativeConstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeConstants] (val x: Self) extends AnyVal {
     
     inline def setAppOwnership(value: AppOwnership): Self = StObject.set(x, "appOwnership", value.asInstanceOf[js.Any])
     

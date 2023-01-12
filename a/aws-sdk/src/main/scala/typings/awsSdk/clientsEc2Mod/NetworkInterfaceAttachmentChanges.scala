@@ -23,7 +23,8 @@ object NetworkInterfaceAttachmentChanges {
     __obj.asInstanceOf[NetworkInterfaceAttachmentChanges]
   }
   
-  extension [Self <: NetworkInterfaceAttachmentChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfaceAttachmentChanges] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     

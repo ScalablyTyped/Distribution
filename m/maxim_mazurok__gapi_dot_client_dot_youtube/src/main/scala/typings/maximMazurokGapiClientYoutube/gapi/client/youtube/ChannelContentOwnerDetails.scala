@@ -19,7 +19,8 @@ object ChannelContentOwnerDetails {
     __obj.asInstanceOf[ChannelContentOwnerDetails]
   }
   
-  extension [Self <: ChannelContentOwnerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelContentOwnerDetails] (val x: Self) extends AnyVal {
     
     inline def setContentOwner(value: String): Self = StObject.set(x, "contentOwner", value.asInstanceOf[js.Any])
     

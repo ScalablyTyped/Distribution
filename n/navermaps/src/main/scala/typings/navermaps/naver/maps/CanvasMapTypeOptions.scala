@@ -35,7 +35,8 @@ object CanvasMapTypeOptions {
     __obj.asInstanceOf[CanvasMapTypeOptions]
   }
   
-  extension [Self <: CanvasMapTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasMapTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setDarktheme(value: Boolean): Self = StObject.set(x, "darktheme", value.asInstanceOf[js.Any])
     

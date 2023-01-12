@@ -36,7 +36,8 @@ object foxxSessionsStoragesJwtMod {
       __obj.asInstanceOf[SafeJwtStorageOptions]
     }
     
-    extension [Self <: SafeJwtStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SafeJwtStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: JwtAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object foxxSessionsStoragesJwtMod {
       __obj.asInstanceOf[UnsafeJwtStorageOptions]
     }
     
-    extension [Self <: UnsafeJwtStorageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsafeJwtStorageOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: none): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

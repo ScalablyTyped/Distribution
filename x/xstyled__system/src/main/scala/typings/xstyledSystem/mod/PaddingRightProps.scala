@@ -18,7 +18,8 @@ object PaddingRightProps {
     __obj.asInstanceOf[PaddingRightProps[TLength]]
   }
   
-  extension [Self <: PaddingRightProps[?], TLength](x: Self & PaddingRightProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingRightProps[?], TLength] (val x: Self & PaddingRightProps[TLength]) extends AnyVal {
     
     inline def setPaddingRight(value: ResponsiveValue[PaddingRight[TLength]]): Self = StObject.set(x, "paddingRight", value.asInstanceOf[js.Any])
     

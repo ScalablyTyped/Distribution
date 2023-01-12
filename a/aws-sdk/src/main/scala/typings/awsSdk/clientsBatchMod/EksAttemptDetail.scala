@@ -43,7 +43,8 @@ object EksAttemptDetail {
     __obj.asInstanceOf[EksAttemptDetail]
   }
   
-  extension [Self <: EksAttemptDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksAttemptDetail] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: EksAttemptContainerDetails): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[SkipDuplicates]
     }
     
-    extension [Self <: SkipDuplicates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipDuplicates] (val x: Self) extends AnyVal {
       
       inline def setSkipDuplicates(value: Boolean): Self = StObject.set(x, "skipDuplicates", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object MlUpdateFilterRequest {
     __obj.asInstanceOf[MlUpdateFilterRequest]
   }
   
-  extension [Self <: MlUpdateFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setAdd_items(value: js.Array[String]): Self = StObject.set(x, "add_items", value.asInstanceOf[js.Any])
     

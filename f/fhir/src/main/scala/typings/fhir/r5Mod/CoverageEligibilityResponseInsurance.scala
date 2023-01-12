@@ -37,7 +37,8 @@ object CoverageEligibilityResponseInsurance {
     __obj.asInstanceOf[CoverageEligibilityResponseInsurance]
   }
   
-  extension [Self <: CoverageEligibilityResponseInsurance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageEligibilityResponseInsurance] (val x: Self) extends AnyVal {
     
     inline def setBenefitPeriod(value: Period): Self = StObject.set(x, "benefitPeriod", value.asInstanceOf[js.Any])
     

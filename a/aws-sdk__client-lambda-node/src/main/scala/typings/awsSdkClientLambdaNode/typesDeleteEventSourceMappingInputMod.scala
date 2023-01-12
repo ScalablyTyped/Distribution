@@ -46,7 +46,8 @@ object typesDeleteEventSourceMappingInputMod {
       __obj.asInstanceOf[DeleteEventSourceMappingInput]
     }
     
-    extension [Self <: DeleteEventSourceMappingInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteEventSourceMappingInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

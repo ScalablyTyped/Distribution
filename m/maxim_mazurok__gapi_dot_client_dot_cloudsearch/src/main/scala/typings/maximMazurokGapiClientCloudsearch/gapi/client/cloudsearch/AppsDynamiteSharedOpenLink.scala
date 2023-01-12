@@ -27,7 +27,8 @@ object AppsDynamiteSharedOpenLink {
     __obj.asInstanceOf[AppsDynamiteSharedOpenLink]
   }
   
-  extension [Self <: AppsDynamiteSharedOpenLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedOpenLink] (val x: Self) extends AnyVal {
     
     inline def setAppUri(value: AppsDynamiteSharedOpenLinkAppUri): Self = StObject.set(x, "appUri", value.asInstanceOf[js.Any])
     

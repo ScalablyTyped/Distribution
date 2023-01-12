@@ -19,7 +19,8 @@ object GoogleAppsScriptTypeWebAppEntryPoint {
     __obj.asInstanceOf[GoogleAppsScriptTypeWebAppEntryPoint]
   }
   
-  extension [Self <: GoogleAppsScriptTypeWebAppEntryPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsScriptTypeWebAppEntryPoint] (val x: Self) extends AnyVal {
     
     inline def setEntryPointConfig(value: GoogleAppsScriptTypeWebAppConfig): Self = StObject.set(x, "entryPointConfig", value.asInstanceOf[js.Any])
     

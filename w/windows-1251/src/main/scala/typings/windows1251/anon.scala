@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMode(value: DecoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Mode]
     }
     
-    extension [Self <: Mode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mode] (val x: Self) extends AnyVal {
       
       inline def setMode(value: EncoderMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
       

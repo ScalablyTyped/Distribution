@@ -50,7 +50,8 @@ object libTypescriptElementsGMod {
       __obj.asInstanceOf[GProps]
     }
     
-    extension [Self <: GProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -515,7 +515,8 @@ object mod {
       __obj.asInstanceOf[BaseMessage]
     }
     
-    extension [Self <: BaseMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMessage] (val x: Self) extends AnyVal {
       
       inline def setAdvice(value: Hosts): Self = StObject.set(x, "advice", value.asInstanceOf[js.Any])
       
@@ -658,7 +659,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAppendMessageTypeToURL(value: Boolean): Self = StObject.set(x, "appendMessageTypeToURL", value.asInstanceOf[js.Any])
       
@@ -747,7 +749,8 @@ object mod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setIncoming(value: /* message */ Message => Unit): Self = StObject.set(x, "incoming", js.Any.fromFunction1(value))
       
@@ -884,7 +887,8 @@ object mod {
       __obj.asInstanceOf[SubscribeMessage]
     }
     
-    extension [Self <: SubscribeMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeMessage] (val x: Self) extends AnyVal {
       
       inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     }
@@ -911,7 +915,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionHandle]
     }
     
-    extension [Self <: SubscriptionHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionHandle] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* data */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -960,7 +965,8 @@ object mod {
       __obj.asInstanceOf[SuccessfulHandshakeMessage]
     }
     
-    extension [Self <: SuccessfulHandshakeMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessfulHandshakeMessage] (val x: Self) extends AnyVal {
       
       inline def setAuthSuccessful(value: `true`): Self = StObject.set(x, "authSuccessful", value.asInstanceOf[js.Any])
       
@@ -998,7 +1004,8 @@ object mod {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -1032,7 +1039,8 @@ object mod {
       __obj.asInstanceOf[UnsuccessfulHandshakeMessage]
     }
     
-    extension [Self <: UnsuccessfulHandshakeMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsuccessfulHandshakeMessage] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object MetricsSource {
     __obj.asInstanceOf[MetricsSource]
   }
   
-  extension [Self <: MetricsSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricsSource] (val x: Self) extends AnyVal {
     
     inline def setContentDigest(value: ContentDigest): Self = StObject.set(x, "ContentDigest", value.asInstanceOf[js.Any])
     

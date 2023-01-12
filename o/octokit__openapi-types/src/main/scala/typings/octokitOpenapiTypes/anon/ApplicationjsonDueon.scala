@@ -17,7 +17,8 @@ object ApplicationjsonDueon {
     __obj.asInstanceOf[ApplicationjsonDueon]
   }
   
-  extension [Self <: ApplicationjsonDueon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonDueon] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Dueon): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

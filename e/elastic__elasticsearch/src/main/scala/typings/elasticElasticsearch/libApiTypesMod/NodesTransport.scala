@@ -33,7 +33,8 @@ object NodesTransport {
     __obj.asInstanceOf[NodesTransport]
   }
   
-  extension [Self <: NodesTransport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesTransport] (val x: Self) extends AnyVal {
     
     inline def setInbound_handling_time_histogram(value: js.Array[NodesTransportHistogram]): Self = StObject.set(x, "inbound_handling_time_histogram", value.asInstanceOf[js.Any])
     

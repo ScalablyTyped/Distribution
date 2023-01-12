@@ -48,7 +48,8 @@ object ComponentConditionProperty {
     __obj.asInstanceOf[ComponentConditionProperty]
   }
   
-  extension [Self <: ComponentConditionProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentConditionProperty] (val x: Self) extends AnyVal {
     
     inline def setElse(value: ComponentProperty): Self = StObject.set(x, "else", value.asInstanceOf[js.Any])
     

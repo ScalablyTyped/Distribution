@@ -35,7 +35,8 @@ object view {
       __obj.asInstanceOf[FitOptions]
     }
     
-    extension [Self <: FitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* completed */ Boolean => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

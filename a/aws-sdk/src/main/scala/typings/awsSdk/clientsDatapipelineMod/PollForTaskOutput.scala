@@ -18,7 +18,8 @@ object PollForTaskOutput {
     __obj.asInstanceOf[PollForTaskOutput]
   }
   
-  extension [Self <: PollForTaskOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollForTaskOutput] (val x: Self) extends AnyVal {
     
     inline def setTaskObject(value: TaskObject): Self = StObject.set(x, "taskObject", value.asInstanceOf[js.Any])
     

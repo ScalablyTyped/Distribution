@@ -47,7 +47,8 @@ object SceneViewGraphicHit {
     __obj.asInstanceOf[SceneViewGraphicHit]
   }
   
-  extension [Self <: SceneViewGraphicHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewGraphicHit] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

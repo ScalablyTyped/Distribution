@@ -58,7 +58,8 @@ object AssessmentSummary {
     __obj.asInstanceOf[AssessmentSummary]
   }
   
-  extension [Self <: AssessmentSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentSummary] (val x: Self) extends AnyVal {
     
     inline def setAntipatternReportS3Object(value: S3Object): Self = StObject.set(x, "antipatternReportS3Object", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookCellTextDocumentFilter]
     }
     
-    extension [Self <: NotebookCellTextDocumentFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookCellTextDocumentFilter] (val x: Self) extends AnyVal {
       
       inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }
@@ -80,7 +81,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentMiddleware]
     }
     
-    extension [Self <: NotebookDocumentMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentMiddleware] (val x: Self) extends AnyVal {
       
       inline def setNotebooks(value: DidChange): Self = StObject.set(x, "notebooks", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentOptions]
     }
     
-    extension [Self <: NotebookDocumentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentOptions] (val x: Self) extends AnyVal {
       
       inline def setNotebookDocumentOptions(value: NotebookDocumentOptions_): Self = StObject.set(x, "notebookDocumentOptions", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentOptions_]
     }
     
-    extension [Self <: NotebookDocumentOptions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentOptions_] (val x: Self) extends AnyVal {
       
       inline def setFilterCells(
         value: (/* notebookDocument */ NotebookDocument, /* cells */ js.Array[NotebookCell]) => js.Array[NotebookCell]
@@ -145,7 +149,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentProviderShape]
     }
     
-    extension [Self <: NotebookDocumentProviderShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentProviderShape] (val x: Self) extends AnyVal {
       
       inline def setGetProvider(value: NotebookCell => js.UndefOr[NotebookDocumentSyncFeatureShape]): Self = StObject.set(x, "getProvider", js.Any.fromFunction1(value))
     }
@@ -173,7 +178,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[NotebookDocumentSyncFeatureShape]
     }
     
-    extension [Self <: NotebookDocumentSyncFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotebookDocumentSyncFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setSendDidChangeNotebookDocument(value: VNotebookDocumentChangeEvent => js.Promise[Unit]): Self = StObject.set(x, "sendDidChangeNotebookDocument", js.Any.fromFunction1(value))
       
@@ -209,7 +215,8 @@ object libCommonNotebookMod {
       __obj.asInstanceOf[VNotebookDocumentChangeEvent]
     }
     
-    extension [Self <: VNotebookDocumentChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNotebookDocumentChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setCells(value: Data): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       

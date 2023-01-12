@@ -25,7 +25,8 @@ object BlendType {
     __obj.asInstanceOf[BlendType]
   }
   
-  extension [Self <: BlendType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlendType] (val x: Self) extends AnyVal {
     
     inline def setBlendType(value: Any): Self = StObject.set(x, "blendType", value.asInstanceOf[js.Any])
     

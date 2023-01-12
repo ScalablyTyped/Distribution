@@ -25,7 +25,8 @@ object GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1PurgeUserEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

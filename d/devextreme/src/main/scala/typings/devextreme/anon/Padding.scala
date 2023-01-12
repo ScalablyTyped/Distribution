@@ -43,7 +43,8 @@ object Padding {
     __obj.asInstanceOf[Padding]
   }
   
-  extension [Self <: Padding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Padding] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorVisible): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

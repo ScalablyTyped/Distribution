@@ -82,7 +82,8 @@ object CalendarDayProps {
     __obj.asInstanceOf[CalendarDayProps]
   }
   
-  extension [Self <: CalendarDayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarDayProps] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

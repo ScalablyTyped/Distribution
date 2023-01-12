@@ -15,7 +15,8 @@ object Write {
     __obj.asInstanceOf[Write]
   }
   
-  extension [Self <: Write](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
     
     inline def setWrite(value: Any): Self = StObject.set(x, "write", value.asInstanceOf[js.Any])
   }

@@ -51,7 +51,8 @@ object DbIndexState {
     __obj.asInstanceOf[DbIndexState]
   }
   
-  extension [Self <: DbIndexState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbIndexState] (val x: Self) extends AnyVal {
     
     inline def setDocumentKey(value: EncodedResourcePath): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
     

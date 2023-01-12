@@ -18,7 +18,8 @@ object CreatePullRequestApprovalRuleOutput {
     __obj.asInstanceOf[CreatePullRequestApprovalRuleOutput]
   }
   
-  extension [Self <: CreatePullRequestApprovalRuleOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePullRequestApprovalRuleOutput] (val x: Self) extends AnyVal {
     
     inline def setApprovalRule(value: ApprovalRule): Self = StObject.set(x, "approvalRule", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object InterpolatedAssetPropertyValue {
     __obj.asInstanceOf[InterpolatedAssetPropertyValue]
   }
   
-  extension [Self <: InterpolatedAssetPropertyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolatedAssetPropertyValue] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: TimeInNanos): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

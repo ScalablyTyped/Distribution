@@ -115,7 +115,8 @@ object mod {
       __obj.asInstanceOf[AwayEvent]
     }
     
-    extension [Self <: AwayEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwayEvent] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[DataEvent]
     }
     
-    extension [Self <: DataEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataEvent] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object mod {
       __obj.asInstanceOf[JoinEvent]
     }
     
-    extension [Self <: JoinEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JoinEvent] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object mod {
       __obj.asInstanceOf[MOTDEvent]
     }
     
-    extension [Self <: MOTDEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MOTDEvent] (val x: Self) extends AnyVal {
       
       inline def setMotd(value: js.Array[String]): Self = StObject.set(x, "motd", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object mod {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -246,7 +251,8 @@ object mod {
       __obj.asInstanceOf[ModeEvent]
     }
     
-    extension [Self <: ModeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModeEvent] (val x: Self) extends AnyVal {
       
       inline def setClient(value: String): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       
@@ -274,7 +280,8 @@ object mod {
       __obj.asInstanceOf[NickEvent]
     }
     
-    extension [Self <: NickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NickEvent] (val x: Self) extends AnyVal {
       
       inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
@@ -299,7 +306,8 @@ object mod {
       __obj.asInstanceOf[PartEvent]
     }
     
-    extension [Self <: PartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartEvent] (val x: Self) extends AnyVal {
       
       inline def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
       
@@ -326,7 +334,8 @@ object mod {
       __obj.asInstanceOf[QuitEvent]
     }
     
-    extension [Self <: QuitEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QuitEvent] (val x: Self) extends AnyVal {
       
       inline def setHostmask(value: String): Self = StObject.set(x, "hostmask", value.asInstanceOf[js.Any])
       
@@ -353,7 +362,8 @@ object mod {
       __obj.asInstanceOf[TopicEvent]
     }
     
-    extension [Self <: TopicEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicEvent] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object libVictoryPrimitivesArcMod {
       __obj.asInstanceOf[ArcProps]
     }
     
-    extension [Self <: ArcProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcProps] (val x: Self) extends AnyVal {
       
       inline def setClosedPath(value: Boolean): Self = StObject.set(x, "closedPath", value.asInstanceOf[js.Any])
       

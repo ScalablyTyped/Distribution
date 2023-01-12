@@ -29,7 +29,8 @@ object UploadControlValidationErrorOccurredEventArgs {
     __obj.asInstanceOf[UploadControlValidationErrorOccurredEventArgs]
   }
   
-  extension [Self <: UploadControlValidationErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadControlValidationErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

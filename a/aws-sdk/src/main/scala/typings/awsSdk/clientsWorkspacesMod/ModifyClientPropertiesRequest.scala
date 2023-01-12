@@ -23,7 +23,8 @@ object ModifyClientPropertiesRequest {
     __obj.asInstanceOf[ModifyClientPropertiesRequest]
   }
   
-  extension [Self <: ModifyClientPropertiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClientPropertiesRequest] (val x: Self) extends AnyVal {
     
     inline def setClientProperties(value: ClientProperties): Self = StObject.set(x, "ClientProperties", value.asInstanceOf[js.Any])
     

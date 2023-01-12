@@ -19,7 +19,8 @@ object NgValue {
     __obj.asInstanceOf[NgValue]
   }
   
-  extension [Self <: NgValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgValue] (val x: Self) extends AnyVal {
     
     inline def setNgValue(value: ngValue): Self = StObject.set(x, "ngValue", value.asInstanceOf[js.Any])
     

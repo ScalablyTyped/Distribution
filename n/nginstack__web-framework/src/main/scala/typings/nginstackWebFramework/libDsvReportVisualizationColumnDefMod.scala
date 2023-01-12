@@ -132,7 +132,8 @@ object libDsvReportVisualizationColumnDefMod {
       __obj.asInstanceOf[ColumnLinkDef]
     }
     
-    extension [Self <: ColumnLinkDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnLinkDef] (val x: Self) extends AnyVal {
       
       inline def setDsvKey(value: DBKey | Double): Self = StObject.set(x, "dsvKey", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object libDsvReportVisualizationColumnDefMod {
       __obj.asInstanceOf[ReportVisualizationColumnDef]
     }
     
-    extension [Self <: ReportVisualizationColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportVisualizationColumnDef] (val x: Self) extends AnyVal {
       
       inline def setClassKey(value: Double): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

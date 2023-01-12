@@ -94,7 +94,8 @@ object ObjectmatrixColumnMajorTr {
     __obj.asInstanceOf[ObjectmatrixColumnMajorTr]
   }
   
-  extension [Self <: ObjectmatrixColumnMajorTr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectmatrixColumnMajorTr] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

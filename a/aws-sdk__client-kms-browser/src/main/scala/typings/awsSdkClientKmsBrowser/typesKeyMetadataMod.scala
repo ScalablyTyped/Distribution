@@ -91,7 +91,8 @@ object typesKeyMetadataMod {
       __obj.asInstanceOf[KeyMetadata]
     }
     
-    extension [Self <: KeyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyMetadata] (val x: Self) extends AnyVal {
       
       inline def setAWSAccountId(value: String): Self = StObject.set(x, "AWSAccountId", value.asInstanceOf[js.Any])
       
@@ -174,7 +175,8 @@ object typesKeyMetadataMod {
       __obj.asInstanceOf[UnmarshalledKeyMetadata]
     }
     
-    extension [Self <: UnmarshalledKeyMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledKeyMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       

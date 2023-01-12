@@ -217,7 +217,8 @@ object StructureDefinition {
     __obj.asInstanceOf[StructureDefinition]
   }
   
-  extension [Self <: StructureDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureDefinition] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

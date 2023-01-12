@@ -23,7 +23,8 @@ object LogTargetConfiguration {
     __obj.asInstanceOf[LogTargetConfiguration]
   }
   
-  extension [Self <: LogTargetConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogTargetConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLogLevel(value: LogLevel): Self = StObject.set(x, "logLevel", value.asInstanceOf[js.Any])
     

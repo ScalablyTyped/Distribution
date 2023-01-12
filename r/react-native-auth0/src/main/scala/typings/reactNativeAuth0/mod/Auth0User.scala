@@ -49,7 +49,8 @@ object Auth0User {
     __obj.asInstanceOf[Auth0User[T]]
   }
   
-  extension [Self <: Auth0User[?], T](x: Self & Auth0User[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0User[?], T] (val x: Self & Auth0User[T]) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

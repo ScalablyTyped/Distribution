@@ -16,7 +16,8 @@ object PromisePromise {
     __obj.asInstanceOf[PromisePromise]
   }
   
-  extension [Self <: PromisePromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromisePromise] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[SingleLineMenuResponse]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
   }

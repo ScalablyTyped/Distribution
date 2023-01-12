@@ -18,7 +18,8 @@ object GlueSchema {
     __obj.asInstanceOf[GlueSchema]
   }
   
-  extension [Self <: GlueSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueSchema] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: GlueStudioSchemaColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

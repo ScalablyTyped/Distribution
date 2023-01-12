@@ -31,7 +31,8 @@ object Manager {
     __obj.asInstanceOf[Manager]
   }
   
-  extension [Self <: Manager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Manager] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PickCarouselprev {
     __obj.asInstanceOf[PickCarouselprev]
   }
   
-  extension [Self <: PickCarouselprev](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCarouselprev] (val x: Self) extends AnyVal {
     
     inline def setPrev(value: /* n */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "prev", js.Any.fromFunction1(value))
   }

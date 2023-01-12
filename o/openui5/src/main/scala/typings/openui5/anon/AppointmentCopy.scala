@@ -34,7 +34,8 @@ object AppointmentCopy {
     __obj.asInstanceOf[AppointmentCopy]
   }
   
-  extension [Self <: AppointmentCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentCopy] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

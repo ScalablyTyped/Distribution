@@ -83,7 +83,8 @@ object libListMod {
       __obj.asInstanceOf[ListConsumerProps]
     }
     
-    extension [Self <: ListConsumerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListConsumerProps] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object libListMod {
       __obj.asInstanceOf[ListGridType]
     }
     
-    extension [Self <: ListGridType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListGridType] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: ColumnCount): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object libListMod {
       __obj.asInstanceOf[ListLocale]
     }
     
-    extension [Self <: ListLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListLocale] (val x: Self) extends AnyVal {
       
       inline def setEmptyText(value: ReactNode): Self = StObject.set(x, "emptyText", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object libListMod {
       __obj.asInstanceOf[ListProps[T]]
     }
     
-    extension [Self <: ListProps[?], T](x: Self & ListProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps[?], T] (val x: Self & ListProps[T]) extends AnyVal {
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       

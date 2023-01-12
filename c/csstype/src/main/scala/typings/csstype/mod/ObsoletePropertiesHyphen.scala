@@ -1220,7 +1220,8 @@ object ObsoletePropertiesHyphen {
     __obj.asInstanceOf[ObsoletePropertiesHyphen[TLength, TTime]]
   }
   
-  extension [Self <: ObsoletePropertiesHyphen[?, ?], TLength, TTime](x: Self & (ObsoletePropertiesHyphen[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObsoletePropertiesHyphen[?, ?], TLength, TTime] (val x: Self & (ObsoletePropertiesHyphen[TLength, TTime])) extends AnyVal {
     
     inline def `set-khtml-box-align`(value: BoxAlign): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
     

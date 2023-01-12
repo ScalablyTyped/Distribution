@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Feature]
     }
     
-    extension [Self <: Feature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: Any): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[FeatureChoroplethBoundFeature]
     }
     
-    extension [Self <: FeatureChoroplethBoundFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureChoroplethBoundFeature] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: ChoroplethBoundFeature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[PartialBox]
     }
     
-    extension [Self <: PartialBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBox] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

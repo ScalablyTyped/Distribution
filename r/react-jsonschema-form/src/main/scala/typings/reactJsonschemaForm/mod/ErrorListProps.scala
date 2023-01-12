@@ -30,7 +30,8 @@ object ErrorListProps {
     __obj.asInstanceOf[ErrorListProps]
   }
   
-  extension [Self <: ErrorListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorListProps] (val x: Self) extends AnyVal {
     
     inline def setErrorSchema(value: FormValidation): Self = StObject.set(x, "errorSchema", value.asInstanceOf[js.Any])
     

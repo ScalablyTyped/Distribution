@@ -22,7 +22,8 @@ object TerminologyCapabilitiesValidateCode {
     __obj.asInstanceOf[TerminologyCapabilitiesValidateCode]
   }
   
-  extension [Self <: TerminologyCapabilitiesValidateCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyCapabilitiesValidateCode] (val x: Self) extends AnyVal {
     
     inline def setTranslations(value: Boolean): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ScreenshotCluster {
     __obj.asInstanceOf[ScreenshotCluster]
   }
   
-  extension [Self <: ScreenshotCluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScreenshotCluster] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: String): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

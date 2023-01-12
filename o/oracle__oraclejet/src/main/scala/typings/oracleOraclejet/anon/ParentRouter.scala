@@ -18,7 +18,8 @@ object ParentRouter {
     __obj.asInstanceOf[ParentRouter]
   }
   
-  extension [Self <: ParentRouter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParentRouter] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

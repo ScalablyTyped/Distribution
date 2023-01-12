@@ -20,7 +20,8 @@ object QueryRequest {
     __obj.asInstanceOf[QueryRequest]
   }
   
-  extension [Self <: QueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRequest] (val x: Self) extends AnyVal {
     
     inline def setSql(value: QueryRequestSql): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
     

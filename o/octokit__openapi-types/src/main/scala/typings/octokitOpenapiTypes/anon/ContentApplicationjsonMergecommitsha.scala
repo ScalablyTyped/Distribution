@@ -15,7 +15,8 @@ object ContentApplicationjsonMergecommitsha {
     __obj.asInstanceOf[ContentApplicationjsonMergecommitsha]
   }
   
-  extension [Self <: ContentApplicationjsonMergecommitsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonMergecommitsha] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonMergecommitsha): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

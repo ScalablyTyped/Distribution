@@ -44,7 +44,8 @@ object Encoder {
     __obj.asInstanceOf[Encoder]
   }
   
-  extension [Self <: Encoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
     
     inline def setEncodeMeshToDracoBuffer(value: (Mesh, DracoInt8Array) => Double): Self = StObject.set(x, "EncodeMeshToDracoBuffer", js.Any.fromFunction2(value))
     

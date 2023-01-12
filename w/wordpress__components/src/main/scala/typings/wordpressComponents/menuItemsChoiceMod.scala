@@ -49,7 +49,8 @@ object menuItemsChoiceMod {
         __obj.asInstanceOf[Choice]
       }
       
-      extension [Self <: Choice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Choice] (val x: Self) extends AnyVal {
         
         inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
         
@@ -87,7 +88,8 @@ object menuItemsChoiceMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setChoices(value: js.Array[Choice]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
         

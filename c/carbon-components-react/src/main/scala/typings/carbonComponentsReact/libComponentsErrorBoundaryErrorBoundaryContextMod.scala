@@ -23,7 +23,8 @@ object libComponentsErrorBoundaryErrorBoundaryContextMod {
       __obj.asInstanceOf[ErrorBoundaryContextValue]
     }
     
-    extension [Self <: ErrorBoundaryContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorBoundaryContextValue] (val x: Self) extends AnyVal {
       
       inline def setLog(value: (/* error */ js.Error, /* errorInfo */ ErrorInfo) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       

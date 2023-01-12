@@ -18,7 +18,8 @@ object DeleteVoiceConnectorGroupRequest {
     __obj.asInstanceOf[DeleteVoiceConnectorGroupRequest]
   }
   
-  extension [Self <: DeleteVoiceConnectorGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVoiceConnectorGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setVoiceConnectorGroupId(value: NonEmptyString): Self = StObject.set(x, "VoiceConnectorGroupId", value.asInstanceOf[js.Any])
   }

@@ -42,7 +42,8 @@ object CircleCiEnv {
     __obj.asInstanceOf[CircleCiEnv]
   }
   
-  extension [Self <: CircleCiEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleCiEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

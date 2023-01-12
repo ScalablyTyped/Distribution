@@ -48,7 +48,8 @@ object EditorProviderCurrency {
     __obj.asInstanceOf[EditorProviderCurrency]
   }
   
-  extension [Self <: EditorProviderCurrency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderCurrency] (val x: Self) extends AnyVal {
     
     inline def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction6(value))
     

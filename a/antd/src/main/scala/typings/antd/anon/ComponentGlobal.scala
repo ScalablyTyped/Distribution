@@ -17,7 +17,8 @@ object ComponentGlobal {
     __obj.asInstanceOf[ComponentGlobal]
   }
   
-  extension [Self <: ComponentGlobal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentGlobal] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: MiniContentHeight): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

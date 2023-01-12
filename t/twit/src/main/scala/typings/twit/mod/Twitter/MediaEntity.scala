@@ -51,7 +51,8 @@ object MediaEntity {
     __obj.asInstanceOf[MediaEntity]
   }
   
-  extension [Self <: MediaEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaEntity] (val x: Self) extends AnyVal {
     
     inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
     

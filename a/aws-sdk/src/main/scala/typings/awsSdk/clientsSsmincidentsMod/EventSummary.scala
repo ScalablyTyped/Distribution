@@ -49,7 +49,8 @@ object EventSummary {
     __obj.asInstanceOf[EventSummary]
   }
   
-  extension [Self <: EventSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventSummary] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: UUID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

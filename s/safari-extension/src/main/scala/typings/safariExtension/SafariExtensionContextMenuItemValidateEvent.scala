@@ -34,7 +34,8 @@ object SafariExtensionContextMenuItemValidateEvent {
     __obj.asInstanceOf[SafariExtensionContextMenuItemValidateEvent]
   }
   
-  extension [Self <: SafariExtensionContextMenuItemValidateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariExtensionContextMenuItemValidateEvent] (val x: Self) extends AnyVal {
     
     inline def setCurrentTarget(value: SafariExtensionContextMenuItem): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
     

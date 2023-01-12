@@ -19,7 +19,8 @@ object OrderCustomerLoyaltyInfo {
     __obj.asInstanceOf[OrderCustomerLoyaltyInfo]
   }
   
-  extension [Self <: OrderCustomerLoyaltyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderCustomerLoyaltyInfo] (val x: Self) extends AnyVal {
     
     inline def setLoyaltyNumber(value: String): Self = StObject.set(x, "loyaltyNumber", value.asInstanceOf[js.Any])
     

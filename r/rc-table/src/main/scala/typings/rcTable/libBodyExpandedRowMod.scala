@@ -48,7 +48,8 @@ object libBodyExpandedRowMod {
       __obj.asInstanceOf[ExpandedRowProps]
     }
     
-    extension [Self <: ExpandedRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpandedRowProps] (val x: Self) extends AnyVal {
       
       inline def setCellComponent(value: CustomizeComponent): Self = StObject.set(x, "cellComponent", value.asInstanceOf[js.Any])
       

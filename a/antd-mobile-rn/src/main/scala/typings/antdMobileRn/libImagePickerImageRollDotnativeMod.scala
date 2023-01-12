@@ -30,7 +30,8 @@ object libImagePickerImageRollDotnativeMod {
       __obj.asInstanceOf[ImageRollProps]
     }
     
-    extension [Self <: ImageRollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageRollProps] (val x: Self) extends AnyVal {
       
       inline def setOnCancel(value: () => Unit): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       

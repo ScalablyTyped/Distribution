@@ -15,7 +15,8 @@ object CreateHsmClientCertificateResult {
     __obj.asInstanceOf[CreateHsmClientCertificateResult]
   }
   
-  extension [Self <: CreateHsmClientCertificateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateHsmClientCertificateResult] (val x: Self) extends AnyVal {
     
     inline def setHsmClientCertificate(value: HsmClientCertificate): Self = StObject.set(x, "HsmClientCertificate", value.asInstanceOf[js.Any])
     

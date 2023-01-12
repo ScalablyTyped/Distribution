@@ -63,7 +63,8 @@ object libMod {
       __obj.asInstanceOf[VictoryVoronoiProps]
     }
     
-    extension [Self <: VictoryVoronoiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryVoronoiProps] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[
@@ -149,7 +150,8 @@ object libMod {
       __obj.asInstanceOf[VoronoiProps]
     }
     
-    extension [Self <: VoronoiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiProps] (val x: Self) extends AnyVal {
       
       inline def setCircleComponent(value: ReactElement): Self = StObject.set(x, "circleComponent", value.asInstanceOf[js.Any])
       

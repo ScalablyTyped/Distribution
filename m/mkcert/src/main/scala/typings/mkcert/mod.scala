@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[CACertificateInfo]
     }
     
-    extension [Self <: CACertificateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CACertificateInfo] (val x: Self) extends AnyVal {
       
       inline def setCountryCode(value: String): Self = StObject.set(x, "countryCode", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[Certificate]
     }
     
-    extension [Self <: Certificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Certificate] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object mod {
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    extension [Self <: CertificateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
       
       inline def setCaCert(value: String): Self = StObject.set(x, "caCert", value.asInstanceOf[js.Any])
       

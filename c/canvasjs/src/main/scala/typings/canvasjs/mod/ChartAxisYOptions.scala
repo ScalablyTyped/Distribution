@@ -24,7 +24,8 @@ object ChartAxisYOptions {
     __obj.asInstanceOf[ChartAxisYOptions]
   }
   
-  extension [Self <: ChartAxisYOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartAxisYOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeZero(value: Boolean): Self = StObject.set(x, "includeZero", value.asInstanceOf[js.Any])
     

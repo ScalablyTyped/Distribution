@@ -28,7 +28,8 @@ object Subtler {
     __obj.asInstanceOf[Subtler]
   }
   
-  extension [Self <: Subtler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subtler] (val x: Self) extends AnyVal {
     
     inline def setBolder(value: PaintToken[BaseToken]): Self = StObject.set(x, "bolder", value.asInstanceOf[js.Any])
     

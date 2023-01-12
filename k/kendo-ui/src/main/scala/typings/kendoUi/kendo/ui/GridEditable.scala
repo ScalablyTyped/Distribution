@@ -31,7 +31,8 @@ object GridEditable {
     __obj.asInstanceOf[GridEditable]
   }
   
-  extension [Self <: GridEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridEditable] (val x: Self) extends AnyVal {
     
     inline def setCancelDelete(value: String): Self = StObject.set(x, "cancelDelete", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ElevationLayerFetchTileOptions {
     __obj.asInstanceOf[ElevationLayerFetchTileOptions]
   }
   
-  extension [Self <: ElevationLayerFetchTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationLayerFetchTileOptions] (val x: Self) extends AnyVal {
     
     inline def setNoDataValue(value: Double): Self = StObject.set(x, "noDataValue", value.asInstanceOf[js.Any])
     

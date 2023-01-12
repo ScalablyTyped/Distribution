@@ -23,7 +23,8 @@ object LiveEventTimetrack {
     __obj.asInstanceOf[LiveEventTimetrack]
   }
   
-  extension [Self <: LiveEventTimetrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveEventTimetrack] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

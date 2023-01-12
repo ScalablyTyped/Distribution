@@ -23,7 +23,8 @@ object AwsS3BucketWebsiteConfigurationRoutingRuleCondition {
     __obj.asInstanceOf[AwsS3BucketWebsiteConfigurationRoutingRuleCondition]
   }
   
-  extension [Self <: AwsS3BucketWebsiteConfigurationRoutingRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketWebsiteConfigurationRoutingRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setHttpErrorCodeReturnedEquals(value: NonEmptyString): Self = StObject.set(x, "HttpErrorCodeReturnedEquals", value.asInstanceOf[js.Any])
     

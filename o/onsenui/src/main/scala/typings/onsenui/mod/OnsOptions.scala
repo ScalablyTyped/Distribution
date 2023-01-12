@@ -15,7 +15,8 @@ object OnsOptions {
     __obj.asInstanceOf[OnsOptions]
   }
   
-  extension [Self <: OnsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnsOptions] (val x: Self) extends AnyVal {
     
     inline def setParentScope(value: js.Object): Self = StObject.set(x, "parentScope", value.asInstanceOf[js.Any])
     

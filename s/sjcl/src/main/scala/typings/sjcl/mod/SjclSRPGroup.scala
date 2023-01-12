@@ -17,7 +17,8 @@ object SjclSRPGroup {
     __obj.asInstanceOf[SjclSRPGroup]
   }
   
-  extension [Self <: SjclSRPGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclSRPGroup] (val x: Self) extends AnyVal {
     
     inline def setG(value: BigNumber): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
     

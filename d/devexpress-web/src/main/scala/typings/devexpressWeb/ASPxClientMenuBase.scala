@@ -103,7 +103,8 @@ object ASPxClientMenuBase {
     __obj.asInstanceOf[ASPxClientMenuBase]
   }
   
-  extension [Self <: ASPxClientMenuBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMenuBase] (val x: Self) extends AnyVal {
     
     inline def setCloseUp(value: ASPxClientEvent[ASPxClientMenuItemEventHandler[ASPxClientMenuBase]]): Self = StObject.set(x, "CloseUp", value.asInstanceOf[js.Any])
     

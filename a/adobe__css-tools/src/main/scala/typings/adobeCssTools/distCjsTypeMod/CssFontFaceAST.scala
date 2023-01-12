@@ -23,7 +23,8 @@ object CssFontFaceAST {
     __obj.asInstanceOf[CssFontFaceAST]
   }
   
-  extension [Self <: CssFontFaceAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssFontFaceAST] (val x: Self) extends AnyVal {
     
     inline def setDeclarations(value: js.Array[CssDeclarationAST | CssCommentAST]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
     

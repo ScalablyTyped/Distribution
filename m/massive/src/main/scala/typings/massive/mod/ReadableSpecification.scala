@@ -25,7 +25,8 @@ object ReadableSpecification {
     __obj.asInstanceOf[ReadableSpecification]
   }
   
-  extension [Self <: ReadableSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableSpecification] (val x: Self) extends AnyVal {
     
     inline def setDb(value: Database): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
     

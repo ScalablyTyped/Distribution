@@ -21,7 +21,8 @@ object SpeechRecognitionErrorEventInit {
     __obj.asInstanceOf[SpeechRecognitionErrorEventInit]
   }
   
-  extension [Self <: SpeechRecognitionErrorEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechRecognitionErrorEventInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: SpeechRecognitionErrorCode): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

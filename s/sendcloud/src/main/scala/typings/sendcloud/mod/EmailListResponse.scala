@@ -21,7 +21,8 @@ object EmailListResponse {
     __obj.asInstanceOf[EmailListResponse]
   }
   
-  extension [Self <: EmailListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailListResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

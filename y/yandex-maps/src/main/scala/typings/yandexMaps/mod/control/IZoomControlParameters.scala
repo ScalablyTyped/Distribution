@@ -16,7 +16,8 @@ object IZoomControlParameters {
     __obj.asInstanceOf[IZoomControlParameters]
   }
   
-  extension [Self <: IZoomControlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IZoomControlParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Size): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

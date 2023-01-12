@@ -38,7 +38,8 @@ object DescribeMovingAddressesRequest {
     __obj.asInstanceOf[DescribeMovingAddressesRequest]
   }
   
-  extension [Self <: DescribeMovingAddressesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMovingAddressesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

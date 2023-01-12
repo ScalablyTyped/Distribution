@@ -17,7 +17,8 @@ object CheckIntegrity {
     __obj.asInstanceOf[CheckIntegrity]
   }
   
-  extension [Self <: CheckIntegrity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIntegrity] (val x: Self) extends AnyVal {
     
     inline def setCheckIntegrity(value: Boolean): Self = StObject.set(x, "checkIntegrity", value.asInstanceOf[js.Any])
     

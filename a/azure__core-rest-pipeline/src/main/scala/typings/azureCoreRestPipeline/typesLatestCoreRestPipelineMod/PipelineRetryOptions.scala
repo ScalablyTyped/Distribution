@@ -31,7 +31,8 @@ object PipelineRetryOptions {
     __obj.asInstanceOf[PipelineRetryOptions]
   }
   
-  extension [Self <: PipelineRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

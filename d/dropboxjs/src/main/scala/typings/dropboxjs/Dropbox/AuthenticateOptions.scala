@@ -16,7 +16,8 @@ object AuthenticateOptions {
     __obj.asInstanceOf[AuthenticateOptions]
   }
   
-  extension [Self <: AuthenticateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
   }

@@ -59,7 +59,8 @@ object EmailAdapterObject {
     __obj.asInstanceOf[EmailAdapterObject]
   }
   
-  extension [Self <: EmailAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setAttachmentFileName(value: String): Self = StObject.set(x, "AttachmentFileName", value.asInstanceOf[js.Any])
     

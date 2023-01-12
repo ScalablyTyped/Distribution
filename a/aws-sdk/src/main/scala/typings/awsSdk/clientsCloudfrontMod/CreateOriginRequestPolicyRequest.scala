@@ -18,7 +18,8 @@ object CreateOriginRequestPolicyRequest {
     __obj.asInstanceOf[CreateOriginRequestPolicyRequest]
   }
   
-  extension [Self <: CreateOriginRequestPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOriginRequestPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setOriginRequestPolicyConfig(value: OriginRequestPolicyConfig): Self = StObject.set(x, "OriginRequestPolicyConfig", value.asInstanceOf[js.Any])
   }

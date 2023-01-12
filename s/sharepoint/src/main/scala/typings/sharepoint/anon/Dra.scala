@@ -34,7 +34,8 @@ object Dra {
     __obj.asInstanceOf[Dra]
   }
   
-  extension [Self <: Dra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dra] (val x: Self) extends AnyVal {
     
     inline def setDra(value: Splitter): Self = StObject.set(x, "dra", value.asInstanceOf[js.Any])
     

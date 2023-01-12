@@ -17,7 +17,8 @@ object XRAnchor {
     __obj.asInstanceOf[XRAnchor]
   }
   
-  extension [Self <: XRAnchor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRAnchor] (val x: Self) extends AnyVal {
     
     inline def setAnchorSpace(value: XRSpace): Self = StObject.set(x, "anchorSpace", value.asInstanceOf[js.Any])
     

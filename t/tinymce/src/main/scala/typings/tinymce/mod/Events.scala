@@ -59,7 +59,8 @@ object Events {
       __obj.asInstanceOf[CommandEvent]
     }
     
-    extension [Self <: CommandEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandEvent] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object Events {
       __obj.asInstanceOf[ContentEvent]
     }
     
-    extension [Self <: ContentEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object Events {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
       
@@ -188,7 +191,8 @@ object Events {
       __obj.asInstanceOf[FocusBlurEvent]
     }
     
-    extension [Self <: FocusBlurEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusBlurEvent] (val x: Self) extends AnyVal {
       
       inline def setBlurredEditor(value: Editor): Self = StObject.set(x, "blurredEditor", value.asInstanceOf[js.Any])
     }
@@ -224,7 +228,8 @@ object Events {
       __obj.asInstanceOf[NodeChangeEvent]
     }
     
-    extension [Self <: NodeChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Node): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -277,7 +282,8 @@ object Events {
       __obj.asInstanceOf[ProcessEvent]
     }
     
-    extension [Self <: ProcessEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessEvent] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

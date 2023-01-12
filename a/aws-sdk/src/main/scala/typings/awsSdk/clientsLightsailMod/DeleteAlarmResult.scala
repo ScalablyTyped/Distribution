@@ -18,7 +18,8 @@ object DeleteAlarmResult {
     __obj.asInstanceOf[DeleteAlarmResult]
   }
   
-  extension [Self <: DeleteAlarmResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAlarmResult] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationList): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

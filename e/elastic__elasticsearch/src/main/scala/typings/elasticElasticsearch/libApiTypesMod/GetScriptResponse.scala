@@ -19,7 +19,8 @@ object GetScriptResponse {
     __obj.asInstanceOf[GetScriptResponse]
   }
   
-  extension [Self <: GetScriptResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetScriptResponse] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

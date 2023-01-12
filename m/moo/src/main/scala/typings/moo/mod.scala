@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[ErrorRule]
     }
     
-    extension [Self <: ErrorRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorRule] (val x: Self) extends AnyVal {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object mod {
       __obj.asInstanceOf[FallbackRule]
     }
     
-    extension [Self <: FallbackRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallbackRule] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: `true`): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     }
@@ -130,7 +132,8 @@ object mod {
       __obj.asInstanceOf[LexerState]
     }
     
-    extension [Self <: LexerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexerState] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object mod {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setError(value: `true`): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -274,7 +278,8 @@ object mod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       

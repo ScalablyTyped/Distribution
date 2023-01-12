@@ -39,7 +39,8 @@ object Currency {
     __obj.asInstanceOf[Currency]
   }
   
-  extension [Self <: Currency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
     
     inline def setComma(value: String): Self = StObject.set(x, ",", value.asInstanceOf[js.Any])
     

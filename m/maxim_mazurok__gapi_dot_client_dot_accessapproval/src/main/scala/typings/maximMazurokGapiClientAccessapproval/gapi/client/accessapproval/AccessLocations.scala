@@ -27,7 +27,8 @@ object AccessLocations {
     __obj.asInstanceOf[AccessLocations]
   }
   
-  extension [Self <: AccessLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLocations] (val x: Self) extends AnyVal {
     
     inline def setPrincipalOfficeCountry(value: String): Self = StObject.set(x, "principalOfficeCountry", value.asInstanceOf[js.Any])
     

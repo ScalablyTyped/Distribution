@@ -34,7 +34,8 @@ object ItemListDto {
     __obj.asInstanceOf[ItemListDto]
   }
   
-  extension [Self <: ItemListDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemListDto] (val x: Self) extends AnyVal {
     
     inline def setBasic(value: BasicDataDto): Self = StObject.set(x, "basic", value.asInstanceOf[js.Any])
     

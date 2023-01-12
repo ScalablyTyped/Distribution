@@ -25,7 +25,8 @@ object UpgradeTargetingRule {
     __obj.asInstanceOf[UpgradeTargetingRule]
   }
   
-  extension [Self <: UpgradeTargetingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeTargetingRule] (val x: Self) extends AnyVal {
     
     inline def setBillingPeriodDuration(value: String): Self = StObject.set(x, "billingPeriodDuration", value.asInstanceOf[js.Any])
     

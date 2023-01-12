@@ -28,7 +28,8 @@ object DomainState {
     __obj.asInstanceOf[DomainState]
   }
   
-  extension [Self <: DomainState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainState] (val x: Self) extends AnyVal {
     
     inline def setLastActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "lastActionDateTime", value.asInstanceOf[js.Any])
     

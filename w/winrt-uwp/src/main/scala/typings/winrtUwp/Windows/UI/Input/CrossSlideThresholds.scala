@@ -26,7 +26,8 @@ object CrossSlideThresholds {
     __obj.asInstanceOf[CrossSlideThresholds]
   }
   
-  extension [Self <: CrossSlideThresholds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossSlideThresholds] (val x: Self) extends AnyVal {
     
     inline def setRearrangeStart(value: Double): Self = StObject.set(x, "rearrangeStart", value.asInstanceOf[js.Any])
     

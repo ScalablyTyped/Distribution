@@ -28,7 +28,8 @@ object RenderingGroupInfo {
     __obj.asInstanceOf[RenderingGroupInfo]
   }
   
-  extension [Self <: RenderingGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderingGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setCamera(value: Nullable[Camera]): Self = StObject.set(x, "camera", value.asInstanceOf[js.Any])
     

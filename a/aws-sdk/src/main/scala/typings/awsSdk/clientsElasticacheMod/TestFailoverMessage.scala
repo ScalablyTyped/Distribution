@@ -23,7 +23,8 @@ object TestFailoverMessage {
     __obj.asInstanceOf[TestFailoverMessage]
   }
   
-  extension [Self <: TestFailoverMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFailoverMessage] (val x: Self) extends AnyVal {
     
     inline def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     

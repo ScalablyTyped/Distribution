@@ -63,7 +63,8 @@ object VoiceChannelResponse {
     __obj.asInstanceOf[VoiceChannelResponse]
   }
   
-  extension [Self <: VoiceChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

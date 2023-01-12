@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setTap(value: (Name, js.Function0[Unit]) => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction2(value))
     }
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setTap(value: (String, js.Function1[/* compilation */ WebpackCompilation, Unit]) => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction2(value))
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Basename]
     }
     
-    extension [Self <: Basename](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Basename] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Compilation]
     }
     
-    extension [Self <: Compilation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compilation] (val x: Self) extends AnyVal {
       
       inline def setCompilation(value: `1`): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
       
@@ -127,7 +131,8 @@ object anon {
       __obj.asInstanceOf[DescriptionFileData]
     }
     
-    extension [Self <: DescriptionFileData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptionFileData] (val x: Self) extends AnyVal {
       
       inline def setDescriptionFileData(value: PackageJson): Self = StObject.set(x, "descriptionFileData", value.asInstanceOf[js.Any])
       
@@ -148,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -177,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -198,7 +205,8 @@ object anon {
       __obj.asInstanceOf[OptimizeChunkAssets]
     }
     
-    extension [Self <: OptimizeChunkAssets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptimizeChunkAssets] (val x: Self) extends AnyVal {
       
       inline def setOptimizeChunkAssets(value: Tap): Self = StObject.set(x, "optimizeChunkAssets", value.asInstanceOf[js.Any])
       
@@ -217,7 +225,8 @@ object anon {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
       
@@ -236,7 +245,8 @@ object anon {
       __obj.asInstanceOf[Tap]
     }
     
-    extension [Self <: Tap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tap] (val x: Self) extends AnyVal {
       
       inline def setTap(value: (String, js.Function1[/* chunks */ IterableIterator[WebpackChunk], Unit]) => Unit): Self = StObject.set(x, "tap", js.Any.fromFunction2(value))
     }
@@ -263,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Alt]
     }
     
-    extension [Self <: Alt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alt] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object anon {
       __obj.asInstanceOf[Identifier]
     }
     
-    extension [Self <: Identifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       
@@ -271,7 +275,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -339,7 +344,8 @@ object anon {
       __obj.asInstanceOf[Oauthtoken]
     }
     
-    extension [Self <: Oauthtoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Oauthtoken] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -408,7 +414,8 @@ object anon {
       __obj.asInstanceOf[PrettyPrint]
     }
     
-    extension [Self <: PrettyPrint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrettyPrint] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

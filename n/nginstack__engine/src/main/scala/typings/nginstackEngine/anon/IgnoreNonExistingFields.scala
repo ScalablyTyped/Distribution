@@ -15,7 +15,8 @@ object IgnoreNonExistingFields {
     __obj.asInstanceOf[IgnoreNonExistingFields]
   }
   
-  extension [Self <: IgnoreNonExistingFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreNonExistingFields] (val x: Self) extends AnyVal {
     
     inline def setIgnoreNonExistingFields(value: Boolean): Self = StObject.set(x, "ignoreNonExistingFields", value.asInstanceOf[js.Any])
     

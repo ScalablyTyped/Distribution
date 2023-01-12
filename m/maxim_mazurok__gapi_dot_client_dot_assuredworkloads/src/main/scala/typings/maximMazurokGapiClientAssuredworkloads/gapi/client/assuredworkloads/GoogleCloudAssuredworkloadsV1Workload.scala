@@ -79,7 +79,8 @@ object GoogleCloudAssuredworkloadsV1Workload {
     __obj.asInstanceOf[GoogleCloudAssuredworkloadsV1Workload]
   }
   
-  extension [Self <: GoogleCloudAssuredworkloadsV1Workload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssuredworkloadsV1Workload] (val x: Self) extends AnyVal {
     
     inline def setBillingAccount(value: String): Self = StObject.set(x, "billingAccount", value.asInstanceOf[js.Any])
     

@@ -136,7 +136,8 @@ object dxFormOptions {
     __obj.asInstanceOf[dxFormOptions]
   }
   
-  extension [Self <: dxFormOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFormOptions] (val x: Self) extends AnyVal {
     
     inline def setAlignItemLabels(value: Boolean): Self = StObject.set(x, "alignItemLabels", value.asInstanceOf[js.Any])
     

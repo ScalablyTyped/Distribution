@@ -69,7 +69,8 @@ object anon {
       __obj.asInstanceOf[intensityin50100200300400]
     }
     
-    extension [Self <: intensityin50100200300400](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: intensityin50100200300400] (val x: Self) extends AnyVal {
       
       inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object anon {
       __obj.asInstanceOf[intensityin50100200300400100]
     }
     
-    extension [Self <: intensityin50100200300400100](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: intensityin50100200300400100] (val x: Self) extends AnyVal {
       
       inline def set100(value: String): Self = StObject.set(x, "100", value.asInstanceOf[js.Any])
       
@@ -194,7 +196,8 @@ object anon {
       __obj.asInstanceOf[intensityinprimaryseconda]
     }
     
-    extension [Self <: intensityinprimaryseconda](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: intensityinprimaryseconda] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object anon {
       __obj.asInstanceOf[modeinactiveinactivestrin]
     }
     
-    extension [Self <: modeinactiveinactivestrin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: modeinactiveinactivestrin] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

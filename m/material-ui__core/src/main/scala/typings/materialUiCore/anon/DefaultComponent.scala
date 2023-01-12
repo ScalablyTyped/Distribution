@@ -21,7 +21,8 @@ object DefaultComponent {
     __obj.asInstanceOf[DefaultComponent[P, D]]
   }
   
-  extension [Self <: DefaultComponent[?, ?], P, D /* <: ElementType[Any] */](x: Self & (DefaultComponent[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultComponent[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (DefaultComponent[P, D])) extends AnyVal {
     
     inline def setClassKey(value: AccordionSummaryClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object AvatarGroupProps {
     __obj.asInstanceOf[AvatarGroupProps]
   }
   
-  extension [Self <: AvatarGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AvatarGroupProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityControls(value: String): Self = StObject.set(x, "accessibilityControls", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SystemInfoBuild {
     __obj.asInstanceOf[SystemInfoBuild]
   }
   
-  extension [Self <: SystemInfoBuild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoBuild] (val x: Self) extends AnyVal {
     
     inline def setBuildVersion(value: String): Self = StObject.set(x, "buildVersion", value.asInstanceOf[js.Any])
     

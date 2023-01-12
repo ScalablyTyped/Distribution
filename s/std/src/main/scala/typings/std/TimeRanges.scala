@@ -34,7 +34,8 @@ object TimeRanges {
     __obj.asInstanceOf[TimeRanges]
   }
   
-  extension [Self <: TimeRanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRanges] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double => Double): Self = StObject.set(x, "end", js.Any.fromFunction1(value))
     

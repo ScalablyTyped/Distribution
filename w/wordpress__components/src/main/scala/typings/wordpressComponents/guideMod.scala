@@ -26,7 +26,8 @@ object guideMod extends Shortcut {
       __obj.asInstanceOf[GuidePage]
     }
     
-    extension [Self <: GuidePage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuidePage] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ReactNode): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object guideMod extends Shortcut {
       __obj.asInstanceOf[GuideProps]
     }
     
-    extension [Self <: GuideProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GuideProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

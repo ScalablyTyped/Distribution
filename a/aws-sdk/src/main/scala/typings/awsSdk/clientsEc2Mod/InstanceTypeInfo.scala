@@ -133,7 +133,8 @@ object InstanceTypeInfo {
     __obj.asInstanceOf[InstanceTypeInfo]
   }
   
-  extension [Self <: InstanceTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setAutoRecoverySupported(value: AutoRecoveryFlag): Self = StObject.set(x, "AutoRecoverySupported", value.asInstanceOf[js.Any])
     

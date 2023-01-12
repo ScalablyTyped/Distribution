@@ -32,7 +32,8 @@ object memoryMod {
       __obj.asInstanceOf[MemoryStatus]
     }
     
-    extension [Self <: MemoryStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryStatus] (val x: Self) extends AnyVal {
       
       inline def setDeviceMemory(value: Double): Self = StObject.set(x, "deviceMemory", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object NetworkTags {
     __obj.asInstanceOf[NetworkTags]
   }
   
-  extension [Self <: NetworkTags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkTags] (val x: Self) extends AnyVal {
     
     inline def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

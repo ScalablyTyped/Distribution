@@ -22,7 +22,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Less2Sass]
     }
     
-    extension [Self <: Less2Sass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Less2Sass] (val x: Self) extends AnyVal {
       
       inline def setConvert(value: String => String): Self = StObject.set(x, "convert", js.Any.fromFunction1(value))
     }

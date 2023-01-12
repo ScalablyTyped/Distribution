@@ -34,7 +34,8 @@ object FullScreenManager {
     __obj.asInstanceOf[FullScreenManager]
   }
   
-  extension [Self <: FullScreenManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullScreenManager] (val x: Self) extends AnyVal {
     
     inline def setEventEmitter(value: IEventEmitter): Self = StObject.set(x, "eventEmitter", value.asInstanceOf[js.Any])
     

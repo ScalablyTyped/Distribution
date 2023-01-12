@@ -17,7 +17,8 @@ object ICached {
     __obj.asInstanceOf[ICached]
   }
   
-  extension [Self <: ICached](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICached] (val x: Self) extends AnyVal {
     
     inline def setNextPos(value: Double): Self = StObject.set(x, "nextPos", value.asInstanceOf[js.Any])
     

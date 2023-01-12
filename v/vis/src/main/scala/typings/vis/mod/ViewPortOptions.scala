@@ -31,7 +31,8 @@ object ViewPortOptions {
     __obj.asInstanceOf[ViewPortOptions]
   }
   
-  extension [Self <: ViewPortOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewPortOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationOptions | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

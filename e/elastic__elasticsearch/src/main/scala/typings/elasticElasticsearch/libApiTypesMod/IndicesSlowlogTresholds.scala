@@ -19,7 +19,8 @@ object IndicesSlowlogTresholds {
     __obj.asInstanceOf[IndicesSlowlogTresholds]
   }
   
-  extension [Self <: IndicesSlowlogTresholds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSlowlogTresholds] (val x: Self) extends AnyVal {
     
     inline def setFetch(value: IndicesSlowlogTresholdLevels): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
     

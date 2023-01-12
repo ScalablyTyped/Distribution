@@ -388,7 +388,8 @@ object IgPivotGrid {
     __obj.asInstanceOf[IgPivotGrid]
   }
   
-  extension [Self <: IgPivotGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotGrid] (val x: Self) extends AnyVal {
     
     inline def setAllowHeaderColumnsSorting(value: Boolean): Self = StObject.set(x, "allowHeaderColumnsSorting", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object buildSrcTranscodingMod {
       __obj.asInstanceOf[MatchResult]
     }
     
-    extension [Self <: MatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResult] (val x: Self) extends AnyVal {
       
       inline def setMatchedFields(value: js.Array[String]): Self = StObject.set(x, "matchedFields", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object buildSrcTranscodingMod {
       __obj.asInstanceOf[TranscodedRequest]
     }
     
-    extension [Self <: TranscodedRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranscodedRequest] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

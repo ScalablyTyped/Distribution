@@ -16,7 +16,8 @@ object AppContext {
     __obj.asInstanceOf[AppContext]
   }
   
-  extension [Self <: AppContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppContext] (val x: Self) extends AnyVal {
     
     inline def setAppTypes(value: js.Array[String]): Self = StObject.set(x, "appTypes", value.asInstanceOf[js.Any])
     

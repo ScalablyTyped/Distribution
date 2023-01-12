@@ -22,7 +22,8 @@ object Defaultbranchonly {
     __obj.asInstanceOf[Defaultbranchonly]
   }
   
-  extension [Self <: Defaultbranchonly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaultbranchonly] (val x: Self) extends AnyVal {
     
     inline def setDefault_branch_only(value: Boolean): Self = StObject.set(x, "default_branch_only", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Amphtml {
     __obj.asInstanceOf[Amphtml]
   }
   
-  extension [Self <: Amphtml](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Amphtml] (val x: Self) extends AnyVal {
     
     inline def setAmphtml(value: Boolean): Self = StObject.set(x, "amphtml", value.asInstanceOf[js.Any])
     

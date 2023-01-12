@@ -42,7 +42,8 @@ object CreateNodeInput {
     __obj.asInstanceOf[CreateNodeInput]
   }
   
-  extension [Self <: CreateNodeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateNodeInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object UserFlowApiConnectorConfiguration {
     __obj.asInstanceOf[UserFlowApiConnectorConfiguration]
   }
   
-  extension [Self <: UserFlowApiConnectorConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserFlowApiConnectorConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPostAttributeCollection(value: NullableOption[IdentityApiConnector]): Self = StObject.set(x, "postAttributeCollection", value.asInstanceOf[js.Any])
     

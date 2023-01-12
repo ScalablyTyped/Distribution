@@ -106,7 +106,8 @@ object IHTMLImgElement {
     __obj.asInstanceOf[IHTMLImgElement]
   }
   
-  extension [Self <: IHTMLImgElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLImgElement] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PaginationOptions {
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  extension [Self <: PaginationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

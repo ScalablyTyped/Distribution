@@ -26,7 +26,8 @@ object NumberSchema {
     __obj.asInstanceOf[NumberSchema]
   }
   
-  extension [Self <: NumberSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberSchema] (val x: Self) extends AnyVal {
     
     inline def setExclusiveMaximum(value: Double): Self = StObject.set(x, "exclusiveMaximum", value.asInstanceOf[js.Any])
     

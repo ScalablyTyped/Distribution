@@ -52,7 +52,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlock]
     }
     
-    extension [Self <: ITopBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlock] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -95,7 +96,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlockAPI]
     }
     
-    extension [Self <: ITopBlockAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlockAPI] (val x: Self) extends AnyVal {
       
       inline def setHideLiveIndicator(value: () => Unit): Self = StObject.set(x, "hideLiveIndicator", js.Any.fromFunction0(value))
       
@@ -131,7 +133,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewCallbacks]
     }
     
-    extension [Self <: ITopBlockViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlockViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnBlockMouseMove(value: EventListenerOrEventListenerObject): Self = StObject.set(x, "onBlockMouseMove", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewConfig]
     }
     
-    extension [Self <: ITopBlockViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlockViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: ITopBlockViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -177,7 +181,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewElements]
     }
     
-    extension [Self <: ITopBlockViewElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlockViewElements] (val x: Self) extends AnyVal {
       
       inline def setLiveIndicator(value: HTMLElement): Self = StObject.set(x, "liveIndicator", value.asInstanceOf[js.Any])
       
@@ -213,7 +218,8 @@ object distSrcModulesUiTopBlockTypesMod {
       __obj.asInstanceOf[ITopBlockViewStyles]
     }
     
-    extension [Self <: ITopBlockViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITopBlockViewStyles] (val x: Self) extends AnyVal {
       
       inline def setActivated(value: String): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SemtechGnssConfiguration {
     __obj.asInstanceOf[SemtechGnssConfiguration]
   }
   
-  extension [Self <: SemtechGnssConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemtechGnssConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFec(value: PositionConfigurationFec): Self = StObject.set(x, "Fec", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object LockScreenCallActivatedEventArgs {
     __obj.asInstanceOf[LockScreenCallActivatedEventArgs]
   }
   
-  extension [Self <: LockScreenCallActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockScreenCallActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

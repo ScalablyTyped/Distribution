@@ -98,7 +98,8 @@ object ClientRequestConstructorOptions {
     __obj.asInstanceOf[ClientRequestConstructorOptions]
   }
   
-  extension [Self <: ClientRequestConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRequestConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: include | omit): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

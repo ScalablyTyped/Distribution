@@ -22,7 +22,8 @@ object EnvelopeDocumentVisibility {
     __obj.asInstanceOf[EnvelopeDocumentVisibility]
   }
   
-  extension [Self <: EnvelopeDocumentVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeDocumentVisibility] (val x: Self) extends AnyVal {
     
     inline def setDocumentVisibility(
       value: js.Array[

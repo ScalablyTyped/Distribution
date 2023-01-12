@@ -17,7 +17,8 @@ object SmartQuoteMarkOptions {
     __obj.asInstanceOf[SmartQuoteMarkOptions]
   }
   
-  extension [Self <: SmartQuoteMarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartQuoteMarkOptions] (val x: Self) extends AnyVal {
     
     inline def setSmart(value: Boolean): Self = StObject.set(x, "smart", value.asInstanceOf[js.Any])
     

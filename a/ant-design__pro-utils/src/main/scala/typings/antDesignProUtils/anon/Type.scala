@@ -18,7 +18,8 @@ object Type {
     __obj.asInstanceOf[Type[ComponentsType]]
   }
   
-  extension [Self <: Type[?], ComponentsType](x: Self & Type[ComponentsType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type[?], ComponentsType] (val x: Self & Type[ComponentsType]) extends AnyVal {
     
     inline def setIsEditable(value: Boolean): Self = StObject.set(x, "isEditable", value.asInstanceOf[js.Any])
     

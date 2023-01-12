@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[MisspelledLocation]
     }
     
-    extension [Self <: MisspelledLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MisspelledLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

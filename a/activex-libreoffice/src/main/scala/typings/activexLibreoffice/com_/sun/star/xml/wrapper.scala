@@ -191,7 +191,8 @@ object wrapper {
       __obj.asInstanceOf[XXMLDocumentWrapper]
     }
     
-    extension [Self <: XXMLDocumentWrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XXMLDocumentWrapper] (val x: Self) extends AnyVal {
       
       inline def setClearUselessData(value: (XXMLElementWrapper, SeqEquiv[XXMLElementWrapper], XXMLElementWrapper) => Unit): Self = StObject.set(x, "clearUselessData", js.Any.fromFunction3(value))
       

@@ -18,7 +18,8 @@ object typesMod {
       __obj.asInstanceOf[DialogConfigOptions]
     }
     
-    extension [Self <: DialogConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setIsAboveFullscreenDialog(value: Boolean): Self = StObject.set(x, "isAboveFullscreenDialog", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object typesMod {
       __obj.asInstanceOf[MDCDialogCloseEventDetail]
     }
     
-    extension [Self <: MDCDialogCloseEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCDialogCloseEventDetail] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

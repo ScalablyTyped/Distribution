@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[typings.bufferCompare.mod.List]
     }
     
-    extension [Self <: typings.bufferCompare.mod.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.bufferCompare.mod.List] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

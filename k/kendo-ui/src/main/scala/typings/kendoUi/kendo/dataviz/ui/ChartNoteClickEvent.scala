@@ -27,7 +27,8 @@ object ChartNoteClickEvent {
     __obj.asInstanceOf[ChartNoteClickEvent]
   }
   
-  extension [Self <: ChartNoteClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartNoteClickEvent] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: Any): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

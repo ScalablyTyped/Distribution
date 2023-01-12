@@ -25,7 +25,8 @@ object ListSessionsResponse {
     __obj.asInstanceOf[ListSessionsResponse]
   }
   
-  extension [Self <: ListSessionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSessionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletedSession(value: js.Array[Session]): Self = StObject.set(x, "deletedSession", value.asInstanceOf[js.Any])
     

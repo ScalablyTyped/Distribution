@@ -15,7 +15,8 @@ object CloudConfigResultsArray {
     __obj.asInstanceOf[CloudConfigResultsArray]
   }
   
-  extension [Self <: CloudConfigResultsArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudConfigResultsArray] (val x: Self) extends AnyVal {
     
     inline def setCloudConfigResults(value: js.Array[Any]): Self = StObject.set(x, "cloudConfigResults", value.asInstanceOf[js.Any])
     

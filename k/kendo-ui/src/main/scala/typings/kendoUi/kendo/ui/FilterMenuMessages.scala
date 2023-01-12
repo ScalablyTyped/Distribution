@@ -39,7 +39,8 @@ object FilterMenuMessages {
     __obj.asInstanceOf[FilterMenuMessages]
   }
   
-  extension [Self <: FilterMenuMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterMenuMessages] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOperator(value: String): Self = StObject.set(x, "additionalOperator", value.asInstanceOf[js.Any])
     

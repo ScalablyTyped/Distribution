@@ -20,7 +20,8 @@ object ReplaceAllObjectsOptions {
     __obj.asInstanceOf[ReplaceAllObjectsOptions]
   }
   
-  extension [Self <: ReplaceAllObjectsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllObjectsOptions] (val x: Self) extends AnyVal {
     
     inline def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])
     

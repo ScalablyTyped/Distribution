@@ -33,7 +33,8 @@ object SendEventRequest {
     __obj.asInstanceOf[SendEventRequest]
   }
   
-  extension [Self <: SendEventRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendEventRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

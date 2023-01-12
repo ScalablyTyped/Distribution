@@ -34,7 +34,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ICaptureOptions]
       }
       
-      extension [Self <: ICaptureOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICaptureOptions] (val x: Self) extends AnyVal {
         
         inline def setExtra(value: StringDictionary[String | Double | Boolean]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
         
@@ -110,7 +111,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setBrowser(value: UrlSanitizer): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
         
@@ -203,7 +205,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IReduxMiddlewareOptions]
       }
       
-      extension [Self <: IReduxMiddlewareOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IReduxMiddlewareOptions] (val x: Self) extends AnyVal {
         
         inline def setActionSanitizer(value: /* action */ Action => Null | Action): Self = StObject.set(x, "actionSanitizer", js.Any.fromFunction1(value))
         
@@ -240,7 +243,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IRequest]
       }
       
-      extension [Self <: IRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -287,7 +291,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[IResponse]
       }
       
-      extension [Self <: IResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
         
         inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -388,7 +393,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[TrackEventProperties]
       }
       
-      extension [Self <: TrackEventProperties](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TrackEventProperties] (val x: Self) extends AnyVal {
         
         inline def setRevenue(value: Double): Self = StObject.set(x, "revenue", value.asInstanceOf[js.Any])
         

@@ -120,7 +120,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedNode[Datum]]
     }
     
-    extension [Self <: ComputedNode[?], Datum /* <: js.Object */](x: Self & ComputedNode[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedNode[?], Datum /* <: js.Object */] (val x: Self & ComputedNode[Datum]) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedNodeWithHandlers[Datum]]
     }
     
-    extension [Self <: ComputedNodeWithHandlers[?], Datum /* <: js.Object */](x: Self & ComputedNodeWithHandlers[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedNodeWithHandlers[?], Datum /* <: js.Object */] (val x: Self & ComputedNodeWithHandlers[Datum]) extends AnyVal {
       
       inline def setOnClick(value: MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -318,7 +320,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ComputedNodeWithoutStyles[Datum]]
     }
     
-    extension [Self <: ComputedNodeWithoutStyles[?], Datum /* <: js.Object */](x: Self & ComputedNodeWithoutStyles[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComputedNodeWithoutStyles[?], Datum /* <: js.Object */] (val x: Self & ComputedNodeWithoutStyles[Datum]) extends AnyVal {
       
       inline def setData(value: Omit[Datum, children]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -383,7 +386,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[CustomLayerProps[Datum]]
     }
     
-    extension [Self <: CustomLayerProps[?], Datum /* <: js.Object */](x: Self & CustomLayerProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomLayerProps[?], Datum /* <: js.Object */] (val x: Self & CustomLayerProps[Datum]) extends AnyVal {
       
       inline def setNodes(value: js.Array[ComputedNode[Datum]]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -408,7 +412,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DefaultTreeMapDatum]
     }
     
-    extension [Self <: DefaultTreeMapDatum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultTreeMapDatum] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[DefaultTreeMapDatum]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -475,7 +480,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[NodeAnimatedProps]
     }
     
-    extension [Self <: NodeAnimatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAnimatedProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -541,7 +547,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[NodeProps[Datum]]
     }
     
-    extension [Self <: NodeProps[?], Datum /* <: js.Object */](x: Self & NodeProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeProps[?], Datum /* <: js.Object */] (val x: Self & NodeProps[Datum]) extends AnyVal {
       
       inline def setAnimatedProps(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<NodeAnimatedProps> */ Any
@@ -572,7 +579,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TooltipProps[Datum]]
     }
     
-    extension [Self <: TooltipProps[?], Datum /* <: js.Object */](x: Self & TooltipProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps[?], Datum /* <: js.Object */] (val x: Self & TooltipProps[Datum]) extends AnyVal {
       
       inline def setNode(value: ComputedNode[Datum]): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -670,7 +678,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeMapCanvasProps[Datum]]
     }
     
-    extension [Self <: TreeMapCanvasProps[?], Datum /* <: js.Object */](x: Self & TreeMapCanvasProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapCanvasProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapCanvasProps[Datum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -960,7 +969,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeMapCommonProps[Datum]]
     }
     
-    extension [Self <: TreeMapCommonProps[?], Datum /* <: js.Object */](x: Self & TreeMapCommonProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapCommonProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapCommonProps[Datum]) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -1069,7 +1079,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeMapDataProps[Datum]]
     }
     
-    extension [Self <: TreeMapDataProps[?], Datum /* <: js.Object */](x: Self & TreeMapDataProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapDataProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapDataProps[Datum]) extends AnyVal {
       
       inline def setData(value: Datum): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -1191,7 +1202,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeMapHtmlProps[Datum]]
     }
     
-    extension [Self <: TreeMapHtmlProps[?], Datum /* <: js.Object */](x: Self & TreeMapHtmlProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapHtmlProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapHtmlProps[Datum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -1503,7 +1515,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[TreeMapSvgProps[Datum]]
     }
     
-    extension [Self <: TreeMapSvgProps[?], Datum /* <: js.Object */](x: Self & TreeMapSvgProps[Datum]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeMapSvgProps[?], Datum /* <: js.Object */] (val x: Self & TreeMapSvgProps[Datum]) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

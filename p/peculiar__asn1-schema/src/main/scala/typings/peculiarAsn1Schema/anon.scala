@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[IAsnSchemaRequiredPickIAs]
     }
     
-    extension [Self <: IAsnSchemaRequiredPickIAs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAsnSchemaRequiredPickIAs] (val x: Self) extends AnyVal {
       
       inline def setItemType(value: AsnPropTypes | IEmptyConstructor[Any]): Self = StObject.set(x, "itemType", value.asInstanceOf[js.Any])
       

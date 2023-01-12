@@ -59,7 +59,8 @@ object RegionUploadTypeUploadprotocol {
     __obj.asInstanceOf[RegionUploadTypeUploadprotocol]
   }
   
-  extension [Self <: RegionUploadTypeUploadprotocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionUploadTypeUploadprotocol] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

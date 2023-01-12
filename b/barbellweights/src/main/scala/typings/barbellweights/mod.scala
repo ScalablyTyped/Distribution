@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setBar(value: Double): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
       

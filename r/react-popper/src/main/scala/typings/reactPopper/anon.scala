@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[js.UndefOr[StringDictionary[String]]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[CreatePopper[Modifiers]]
     }
     
-    extension [Self <: CreatePopper[?], Modifiers](x: Self & CreatePopper[Modifiers]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePopper[?], Modifiers] (val x: Self & CreatePopper[Modifiers]) extends AnyVal {
       
       inline def setCreatePopper(value: FnCall): Self = StObject.set(x, "createPopper", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[OmitPartialOptionsmodifie]
     }
     
-    extension [Self <: OmitPartialOptionsmodifie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitPartialOptionsmodifie] (val x: Self) extends AnyVal {
       
       inline def setOnFirstUpdate(value: /* arg0 */ typings.popperjsCore.anon.PartialState => Unit): Self = StObject.set(x, "onFirstUpdate", js.Any.fromFunction1(value))
       
@@ -166,7 +169,8 @@ object anon {
       __obj.asInstanceOf[PartialState]
     }
     
-    extension [Self <: PartialState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialState] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[StringDictionary[String | Boolean]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

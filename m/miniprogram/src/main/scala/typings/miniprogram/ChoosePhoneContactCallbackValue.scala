@@ -23,7 +23,8 @@ object ChoosePhoneContactCallbackValue {
     __obj.asInstanceOf[ChoosePhoneContactCallbackValue]
   }
   
-  extension [Self <: ChoosePhoneContactCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoosePhoneContactCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setMobile(value: String): Self = StObject.set(x, "mobile", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object MediaControllerPlaybackInfoChangeCallback {
     __obj.asInstanceOf[MediaControllerPlaybackInfoChangeCallback]
   }
   
-  extension [Self <: MediaControllerPlaybackInfoChangeCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerPlaybackInfoChangeCallback] (val x: Self) extends AnyVal {
     
     inline def setOnmetadatachanged(value: MediaControllerMetadata => Unit): Self = StObject.set(x, "onmetadatachanged", js.Any.fromFunction1(value))
     

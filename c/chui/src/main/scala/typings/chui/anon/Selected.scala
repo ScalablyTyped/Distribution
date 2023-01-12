@@ -17,7 +17,8 @@ object Selected {
     __obj.asInstanceOf[Selected]
   }
   
-  extension [Self <: Selected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Selected] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

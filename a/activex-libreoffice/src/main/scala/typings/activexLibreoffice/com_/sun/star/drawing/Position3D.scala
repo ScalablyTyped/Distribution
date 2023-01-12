@@ -23,7 +23,8 @@ object Position3D {
     __obj.asInstanceOf[Position3D]
   }
   
-  extension [Self <: Position3D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Position3D] (val x: Self) extends AnyVal {
     
     inline def setPositionX(value: Double): Self = StObject.set(x, "PositionX", value.asInstanceOf[js.Any])
     

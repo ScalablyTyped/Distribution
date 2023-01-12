@@ -69,7 +69,8 @@ object DurationItem {
     __obj.asInstanceOf[DurationItem]
   }
   
-  extension [Self <: DurationItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DurationItem] (val x: Self) extends AnyVal {
     
     inline def setCreateResponse(value: (Integer, Integer, Integer) => ItemResponse): Self = StObject.set(x, "createResponse", js.Any.fromFunction3(value))
     

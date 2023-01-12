@@ -19,7 +19,8 @@ object ResourceQuotasRemaining {
     __obj.asInstanceOf[ResourceQuotasRemaining]
   }
   
-  extension [Self <: ResourceQuotasRemaining](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceQuotasRemaining] (val x: Self) extends AnyVal {
     
     inline def setDailyQuotaTokensRemaining(value: Double): Self = StObject.set(x, "dailyQuotaTokensRemaining", value.asInstanceOf[js.Any])
     

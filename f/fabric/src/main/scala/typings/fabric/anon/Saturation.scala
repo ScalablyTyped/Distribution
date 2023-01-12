@@ -15,7 +15,8 @@ object Saturation {
     __obj.asInstanceOf[Saturation]
   }
   
-  extension [Self <: Saturation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Saturation] (val x: Self) extends AnyVal {
     
     inline def setSaturation(value: Double): Self = StObject.set(x, "saturation", value.asInstanceOf[js.Any])
     

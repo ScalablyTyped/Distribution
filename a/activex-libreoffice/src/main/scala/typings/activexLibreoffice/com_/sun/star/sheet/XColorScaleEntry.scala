@@ -45,7 +45,8 @@ object XColorScaleEntry {
     __obj.asInstanceOf[XColorScaleEntry]
   }
   
-  extension [Self <: XColorScaleEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XColorScaleEntry] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

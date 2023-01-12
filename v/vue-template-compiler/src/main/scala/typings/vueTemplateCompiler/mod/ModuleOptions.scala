@@ -30,7 +30,8 @@ object ModuleOptions {
     __obj.asInstanceOf[ModuleOptions]
   }
   
-  extension [Self <: ModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setGenData(value: ASTElement => String): Self = StObject.set(x, "genData", js.Any.fromFunction1(value))
     

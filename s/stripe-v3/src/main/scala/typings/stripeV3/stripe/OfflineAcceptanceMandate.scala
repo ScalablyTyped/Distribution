@@ -15,7 +15,8 @@ object OfflineAcceptanceMandate {
     __obj.asInstanceOf[OfflineAcceptanceMandate]
   }
   
-  extension [Self <: OfflineAcceptanceMandate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineAcceptanceMandate] (val x: Self) extends AnyVal {
     
     inline def setContact_email(value: String): Self = StObject.set(x, "contact_email", value.asInstanceOf[js.Any])
   }

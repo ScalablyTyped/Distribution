@@ -23,7 +23,8 @@ object FootnoteReferenceOpenToken {
     __obj.asInstanceOf[FootnoteReferenceOpenToken]
   }
   
-  extension [Self <: FootnoteReferenceOpenToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FootnoteReferenceOpenToken] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

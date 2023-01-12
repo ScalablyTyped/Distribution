@@ -18,7 +18,8 @@ object NotificationsEvaluationResult {
     __obj.asInstanceOf[NotificationsEvaluationResult]
   }
   
-  extension [Self <: NotificationsEvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationsEvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

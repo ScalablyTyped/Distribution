@@ -38,7 +38,8 @@ object LoadBalancerTlsPolicy {
     __obj.asInstanceOf[LoadBalancerTlsPolicy]
   }
   
-  extension [Self <: LoadBalancerTlsPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsPolicy] (val x: Self) extends AnyVal {
     
     inline def setCiphers(value: StringList): Self = StObject.set(x, "ciphers", value.asInstanceOf[js.Any])
     

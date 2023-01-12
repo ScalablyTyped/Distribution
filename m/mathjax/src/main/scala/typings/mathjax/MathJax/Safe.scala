@@ -52,7 +52,8 @@ object Safe {
     __obj.asInstanceOf[Safe]
   }
   
-  extension [Self <: Safe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Safe] (val x: Self) extends AnyVal {
     
     inline def setAllow(value: SafeAllow): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DefaultIntegerHyperParameterRange {
     __obj.asInstanceOf[DefaultIntegerHyperParameterRange]
   }
   
-  extension [Self <: DefaultIntegerHyperParameterRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultIntegerHyperParameterRange] (val x: Self) extends AnyVal {
     
     inline def setIsTunable(value: Tunable): Self = StObject.set(x, "isTunable", value.asInstanceOf[js.Any])
     

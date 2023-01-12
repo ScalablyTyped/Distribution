@@ -52,7 +52,8 @@ object CreateExplainabilityRequest {
     __obj.asInstanceOf[CreateExplainabilityRequest]
   }
   
-  extension [Self <: CreateExplainabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateExplainabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: DataSource): Self = StObject.set(x, "DataSource", value.asInstanceOf[js.Any])
     

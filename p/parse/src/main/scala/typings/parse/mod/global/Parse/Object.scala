@@ -306,7 +306,8 @@ object Object extends Shortcut {
       __obj.asInstanceOf[SetOptions]
     }
     
-    extension [Self <: SetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetOptions] (val x: Self) extends AnyVal {
       
       inline def setPromise(value: Any): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
       

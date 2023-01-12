@@ -18,7 +18,8 @@ object StreamingExperienceSettings {
     __obj.asInstanceOf[StreamingExperienceSettings]
   }
   
-  extension [Self <: StreamingExperienceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingExperienceSettings] (val x: Self) extends AnyVal {
     
     inline def setPreferredProtocol(value: PreferredProtocol): Self = StObject.set(x, "PreferredProtocol", value.asInstanceOf[js.Any])
     

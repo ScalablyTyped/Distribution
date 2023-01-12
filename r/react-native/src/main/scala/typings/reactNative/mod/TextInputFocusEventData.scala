@@ -19,7 +19,8 @@ object TextInputFocusEventData {
     __obj.asInstanceOf[TextInputFocusEventData]
   }
   
-  extension [Self <: TextInputFocusEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputFocusEventData] (val x: Self) extends AnyVal {
     
     inline def setEventCount(value: Double): Self = StObject.set(x, "eventCount", value.asInstanceOf[js.Any])
     

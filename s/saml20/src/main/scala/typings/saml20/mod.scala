@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ValidationOptionsWithKey]
     }
     
-    extension [Self <: ValidationOptionsWithKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptionsWithKey] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[ValidationOptionsWithPrint]
     }
     
-    extension [Self <: ValidationOptionsWithPrint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptionsWithPrint] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: Any): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object DeleteRouteRequest {
     __obj.asInstanceOf[DeleteRouteRequest]
   }
   
-  extension [Self <: DeleteRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidrBlock(value: String): Self = StObject.set(x, "DestinationCidrBlock", value.asInstanceOf[js.Any])
     

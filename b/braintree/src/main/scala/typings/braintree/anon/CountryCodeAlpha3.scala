@@ -39,7 +39,8 @@ object CountryCodeAlpha3 {
     __obj.asInstanceOf[CountryCodeAlpha3]
   }
   
-  extension [Self <: CountryCodeAlpha3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountryCodeAlpha3] (val x: Self) extends AnyVal {
     
     inline def setCompany(value: String): Self = StObject.set(x, "company", value.asInstanceOf[js.Any])
     

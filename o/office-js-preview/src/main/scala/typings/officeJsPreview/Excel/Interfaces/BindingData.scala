@@ -34,7 +34,8 @@ object BindingData {
     __obj.asInstanceOf[BindingData]
   }
   
-  extension [Self <: BindingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

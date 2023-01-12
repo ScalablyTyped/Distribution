@@ -19,7 +19,8 @@ object FbtRuntimeCallInput {
     __obj.asInstanceOf[FbtRuntimeCallInput]
   }
   
-  extension [Self <: FbtRuntimeCallInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FbtRuntimeCallInput] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

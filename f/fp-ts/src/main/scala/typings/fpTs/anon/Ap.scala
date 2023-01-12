@@ -30,7 +30,8 @@ object Ap {
     __obj.asInstanceOf[Ap[E, M]]
   }
   
-  extension [Self <: Ap[?, ?], E, M](x: Self & (Ap[E, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ap[?, ?], E, M] (val x: Self & (Ap[E, M])) extends AnyVal {
     
     inline def setAp(value: (TheseT[M, E, js.Function1[Any, Any]], TheseT[M, E, Any]) => TheseT[M, E, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     

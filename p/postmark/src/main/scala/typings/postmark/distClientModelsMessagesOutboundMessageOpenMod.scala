@@ -21,7 +21,8 @@ object distClientModelsMessagesOutboundMessageOpenMod {
       __obj.asInstanceOf[ClientDetails]
     }
     
-    extension [Self <: ClientDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientDetails] (val x: Self) extends AnyVal {
       
       inline def setCompany(value: String): Self = StObject.set(x, "Company", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distClientModelsMessagesOutboundMessageOpenMod {
       __obj.asInstanceOf[GeoLocation]
     }
     
-    extension [Self <: GeoLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoLocation] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "City", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object distClientModelsMessagesOutboundMessageOpenMod {
       __obj.asInstanceOf[OpenEvent]
     }
     
-    extension [Self <: OpenEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEvent] (val x: Self) extends AnyVal {
       
       inline def setClient(value: ClientDetails): Self = StObject.set(x, "Client", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object distClientModelsMessagesOutboundMessageOpenMod {
       __obj.asInstanceOf[OutboundMessageOpens]
     }
     
-    extension [Self <: OutboundMessageOpens](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutboundMessageOpens] (val x: Self) extends AnyVal {
       
       inline def setOpens(value: js.Array[OpenEvent]): Self = StObject.set(x, "Opens", value.asInstanceOf[js.Any])
       

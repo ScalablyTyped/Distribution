@@ -27,7 +27,8 @@ object PeriodMarking {
     __obj.asInstanceOf[PeriodMarking]
   }
   
-  extension [Self <: PeriodMarking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeriodMarking] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

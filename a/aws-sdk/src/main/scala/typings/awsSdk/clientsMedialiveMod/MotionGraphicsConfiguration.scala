@@ -20,7 +20,8 @@ object MotionGraphicsConfiguration {
     __obj.asInstanceOf[MotionGraphicsConfiguration]
   }
   
-  extension [Self <: MotionGraphicsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionGraphicsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMotionGraphicsInsertion(value: MotionGraphicsInsertion): Self = StObject.set(x, "MotionGraphicsInsertion", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Compression {
     __obj.asInstanceOf[Compression]
   }
   
-  extension [Self <: Compression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
     
     inline def `setAttributes-charset`(value: CharacterSet): Self = StObject.set(x, "attributes-charset", value.asInstanceOf[js.Any])
     

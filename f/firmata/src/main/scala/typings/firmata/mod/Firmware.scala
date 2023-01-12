@@ -17,7 +17,8 @@ object Firmware {
     __obj.asInstanceOf[Firmware]
   }
   
-  extension [Self <: Firmware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firmware] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

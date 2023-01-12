@@ -58,7 +58,8 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  extension [Self <: Comment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     inline def setAlbum_cover(value: String): Self = StObject.set(x, "album_cover", value.asInstanceOf[js.Any])
     

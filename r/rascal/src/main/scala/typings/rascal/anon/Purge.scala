@@ -19,7 +19,8 @@ object Purge {
     __obj.asInstanceOf[Purge]
   }
   
-  extension [Self <: Purge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Purge] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: Boolean): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

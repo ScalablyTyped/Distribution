@@ -86,7 +86,8 @@ object libBehaviorsMod {
       __obj.asInstanceOf[SpawnBehaviorOptions]
     }
     
-    extension [Self <: SpawnBehaviorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpawnBehaviorOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object HfcProps {
     __obj.asInstanceOf[HfcProps]
   }
   
-  extension [Self <: HfcProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HfcProps] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StringDictionary[Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

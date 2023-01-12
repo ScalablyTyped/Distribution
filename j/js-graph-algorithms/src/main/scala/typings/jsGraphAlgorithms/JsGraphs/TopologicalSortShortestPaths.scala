@@ -38,7 +38,8 @@ object TopologicalSortShortestPaths {
     __obj.asInstanceOf[TopologicalSortShortestPaths]
   }
   
-  extension [Self <: TopologicalSortShortestPaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopologicalSortShortestPaths] (val x: Self) extends AnyVal {
     
     inline def setCost(value: Any): Self = StObject.set(x, "cost", value.asInstanceOf[js.Any])
     

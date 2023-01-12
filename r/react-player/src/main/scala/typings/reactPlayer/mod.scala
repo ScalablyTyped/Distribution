@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDailymotion(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DailyMotionConfig */ Any
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[ReactPlayerProps]
     }
     
-    extension [Self <: ReactPlayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactPlayerProps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

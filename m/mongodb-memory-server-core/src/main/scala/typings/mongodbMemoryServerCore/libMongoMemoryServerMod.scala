@@ -316,7 +316,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[AutomaticAuth]
     }
     
-    extension [Self <: AutomaticAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutomaticAuth] (val x: Self) extends AnyVal {
       
       inline def setCustomRootName(value: String): Self = StObject.set(x, "customRootName", value.asInstanceOf[js.Any])
       
@@ -363,7 +364,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[CreateUser]
     }
     
-    extension [Self <: CreateUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUser] (val x: Self) extends AnyVal {
       
       inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
       
@@ -420,7 +422,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[CreateUserMongoDB]
     }
     
-    extension [Self <: CreateUserMongoDB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateUserMongoDB] (val x: Self) extends AnyVal {
       
       inline def setAuthenticationRestrictions(value: js.Array[ClientSource]): Self = StObject.set(x, "authenticationRestrictions", value.asInstanceOf[js.Any])
       
@@ -472,7 +475,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[MongoInstanceData]
     }
     
-    extension [Self <: MongoInstanceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoInstanceData] (val x: Self) extends AnyVal {
       
       inline def setDbPath(
         value: NonNullable[
@@ -504,7 +508,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[MongoMemoryServerGetStartOptions]
     }
     
-    extension [Self <: MongoMemoryServerGetStartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryServerGetStartOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateAuth(value: Boolean): Self = StObject.set(x, "createAuth", value.asInstanceOf[js.Any])
       
@@ -534,7 +539,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[MongoMemoryServerOpts]
     }
     
-    extension [Self <: MongoMemoryServerOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MongoMemoryServerOpts] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AutomaticAuth): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -581,7 +587,8 @@ object libMongoMemoryServerMod {
       __obj.asInstanceOf[StartupInstanceData]
     }
     
-    extension [Self <: StartupInstanceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartupInstanceData] (val x: Self) extends AnyVal {
       
       inline def setDbName(value: NonNullable[js.UndefOr[String]]): Self = StObject.set(x, "dbName", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object CoipAddressUsage {
     __obj.asInstanceOf[CoipAddressUsage]
   }
   
-  extension [Self <: CoipAddressUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoipAddressUsage] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

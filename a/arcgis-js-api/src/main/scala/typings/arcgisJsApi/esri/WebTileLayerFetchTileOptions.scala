@@ -21,7 +21,8 @@ object WebTileLayerFetchTileOptions {
     __obj.asInstanceOf[WebTileLayerFetchTileOptions]
   }
   
-  extension [Self <: WebTileLayerFetchTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebTileLayerFetchTileOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Sha256]
     }
     
-    extension [Self <: Sha256](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sha256] (val x: Self) extends AnyVal {
       
       inline def setSha256(value: HashConstructor): Self = StObject.set(x, "sha256", value.asInstanceOf[js.Any])
       

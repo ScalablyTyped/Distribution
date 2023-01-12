@@ -23,7 +23,8 @@ object RegistrationConfig {
     __obj.asInstanceOf[RegistrationConfig]
   }
   
-  extension [Self <: RegistrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistrationConfig] (val x: Self) extends AnyVal {
     
     inline def setDuplicateRegistrationAction(value: DuplicateRegistrationAction): Self = StObject.set(x, "DuplicateRegistrationAction", value.asInstanceOf[js.Any])
     

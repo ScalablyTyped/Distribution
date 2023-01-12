@@ -33,7 +33,8 @@ object DeleteTimeSeriesRequest {
     __obj.asInstanceOf[DeleteTimeSeriesRequest]
   }
   
-  extension [Self <: DeleteTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: PropertyAlias): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

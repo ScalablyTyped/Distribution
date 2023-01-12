@@ -52,7 +52,8 @@ object FsxConfiguration {
     __obj.asInstanceOf[FsxConfiguration]
   }
   
-  extension [Self <: FsxConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsxConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExclusionPatterns(value: DataSourceInclusionsExclusionsStrings): Self = StObject.set(x, "ExclusionPatterns", value.asInstanceOf[js.Any])
     

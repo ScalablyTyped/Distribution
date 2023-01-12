@@ -318,7 +318,8 @@ object esComponentsSideBarSideBarMod {
       __obj.asInstanceOf[SideBarItemProps]
     }
     
-    extension [Self <: SideBarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideBarItemProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -798,7 +799,8 @@ object esComponentsSideBarSideBarMod {
       __obj.asInstanceOf[SideBarProps]
     }
     
-    extension [Self <: SideBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideBarProps] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

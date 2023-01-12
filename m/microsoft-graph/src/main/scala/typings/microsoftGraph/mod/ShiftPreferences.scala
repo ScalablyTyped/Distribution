@@ -18,7 +18,8 @@ object ShiftPreferences {
     __obj.asInstanceOf[ShiftPreferences]
   }
   
-  extension [Self <: ShiftPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShiftPreferences] (val x: Self) extends AnyVal {
     
     inline def setAvailability(value: NullableOption[js.Array[ShiftAvailability]]): Self = StObject.set(x, "availability", value.asInstanceOf[js.Any])
     

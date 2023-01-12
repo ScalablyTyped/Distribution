@@ -28,7 +28,8 @@ object BatchGetAssetPropertyAggregatesRequest {
     __obj.asInstanceOf[BatchGetAssetPropertyAggregatesRequest]
   }
   
-  extension [Self <: BatchGetAssetPropertyAggregatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetAssetPropertyAggregatesRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: BatchGetAssetPropertyAggregatesEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

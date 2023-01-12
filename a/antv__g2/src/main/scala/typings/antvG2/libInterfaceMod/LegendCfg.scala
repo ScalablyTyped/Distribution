@@ -379,7 +379,8 @@ object LegendCfg {
     __obj.asInstanceOf[LegendCfg]
   }
   
-  extension [Self <: LegendCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendCfg] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

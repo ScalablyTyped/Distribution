@@ -34,7 +34,8 @@ object popupUtilsCreatePopupTemplateForFeatureReductionParams {
     __obj.asInstanceOf[popupUtilsCreatePopupTemplateForFeatureReductionParams]
   }
   
-  extension [Self <: popupUtilsCreatePopupTemplateForFeatureReductionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: popupUtilsCreatePopupTemplateForFeatureReductionParams] (val x: Self) extends AnyVal {
     
     inline def setFeatureReduction(value: FeatureReductionBinning | FeatureReductionCluster): Self = StObject.set(x, "featureReduction", value.asInstanceOf[js.Any])
     

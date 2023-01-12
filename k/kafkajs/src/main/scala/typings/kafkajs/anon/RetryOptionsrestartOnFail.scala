@@ -26,7 +26,8 @@ object RetryOptionsrestartOnFail {
     __obj.asInstanceOf[RetryOptionsrestartOnFail]
   }
   
-  extension [Self <: RetryOptionsrestartOnFail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryOptionsrestartOnFail] (val x: Self) extends AnyVal {
     
     inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
     

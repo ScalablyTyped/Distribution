@@ -109,7 +109,8 @@ object PickImpltypePartialPickIm {
     __obj.asInstanceOf[PickImpltypePartialPickIm]
   }
   
-  extension [Self <: PickImpltypePartialPickIm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpltypePartialPickIm] (val x: Self) extends AnyVal {
     
     inline def setCheckOnRefresh(value: Boolean): Self = StObject.set(x, "checkOnRefresh", value.asInstanceOf[js.Any])
     

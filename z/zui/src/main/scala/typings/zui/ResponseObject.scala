@@ -23,7 +23,8 @@ object ResponseObject {
     __obj.asInstanceOf[ResponseObject]
   }
   
-  extension [Self <: ResponseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseObject] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

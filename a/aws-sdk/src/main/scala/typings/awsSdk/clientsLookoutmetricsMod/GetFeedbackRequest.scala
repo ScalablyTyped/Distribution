@@ -33,7 +33,8 @@ object GetFeedbackRequest {
     __obj.asInstanceOf[GetFeedbackRequest]
   }
   
-  extension [Self <: GetFeedbackRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFeedbackRequest] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorArn(value: Arn): Self = StObject.set(x, "AnomalyDetectorArn", value.asInstanceOf[js.Any])
     

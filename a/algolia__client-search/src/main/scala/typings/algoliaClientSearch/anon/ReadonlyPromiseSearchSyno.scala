@@ -28,7 +28,8 @@ object ReadonlyPromiseSearchSyno {
     __obj.asInstanceOf[ReadonlyPromiseSearchSyno]
   }
   
-  extension [Self <: ReadonlyPromiseSearchSyno](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseSearchSyno] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[SearchSynonymsResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

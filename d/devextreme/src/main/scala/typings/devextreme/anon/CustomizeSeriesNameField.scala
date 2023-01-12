@@ -24,7 +24,8 @@ object CustomizeSeriesNameField {
     __obj.asInstanceOf[CustomizeSeriesNameField]
   }
   
-  extension [Self <: CustomizeSeriesNameField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizeSeriesNameField] (val x: Self) extends AnyVal {
     
     inline def setCustomizeSeries(value: /* seriesName */ Any => PolarChartSeries): Self = StObject.set(x, "customizeSeries", js.Any.fromFunction1(value))
     

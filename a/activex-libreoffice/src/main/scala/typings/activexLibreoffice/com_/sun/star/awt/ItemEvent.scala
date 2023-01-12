@@ -27,7 +27,8 @@ object ItemEvent {
     __obj.asInstanceOf[ItemEvent]
   }
   
-  extension [Self <: ItemEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemEvent] (val x: Self) extends AnyVal {
     
     inline def setHighlighted(value: Double): Self = StObject.set(x, "Highlighted", value.asInstanceOf[js.Any])
     

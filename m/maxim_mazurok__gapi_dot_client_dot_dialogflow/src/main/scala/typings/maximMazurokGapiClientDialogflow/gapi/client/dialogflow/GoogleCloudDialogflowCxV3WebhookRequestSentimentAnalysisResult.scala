@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3WebhookRequestSentimentAnalysisResult {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3WebhookRequestSentimentAnalysisResult]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3WebhookRequestSentimentAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3WebhookRequestSentimentAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setMagnitude(value: Double): Self = StObject.set(x, "magnitude", value.asInstanceOf[js.Any])
     

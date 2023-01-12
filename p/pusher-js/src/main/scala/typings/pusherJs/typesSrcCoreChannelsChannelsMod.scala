@@ -60,7 +60,8 @@ object typesSrcCoreChannelsChannelsMod {
       __obj.asInstanceOf[Channels]
     }
     
-    extension [Self <: Channels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channels] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: (String, typings.pusherJs.typesSrcCorePusherMod.default) => typings.pusherJs.typesSrcCoreChannelsChannelMod.default

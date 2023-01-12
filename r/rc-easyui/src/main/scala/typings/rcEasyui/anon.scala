@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Align]
     }
     
-    extension [Self <: Align](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Align] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AlignString]
     }
     
-    extension [Self <: AlignString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlignString] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[Buttons]
     }
     
-    extension [Self <: Buttons](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object anon {
       __obj.asInstanceOf[Colspan]
     }
     
-    extension [Self <: Colspan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colspan] (val x: Self) extends AnyVal {
       
       inline def setColspan(value: Double): Self = StObject.set(x, "colspan", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object anon {
       __obj.asInstanceOf[Disabled]
     }
     
-    extension [Self <: Disabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     }
@@ -171,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Invalid]
     }
     
-    extension [Self <: Invalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
       
       inline def setInvalid(value: Boolean): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
       
@@ -196,7 +202,8 @@ object anon {
       __obj.asInstanceOf[IsMatch]
     }
     
-    extension [Self <: IsMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsMatch] (val x: Self) extends AnyVal {
       
       inline def setIsMatch(value: Any): Self = StObject.set(x, "isMatch", value.asInstanceOf[js.Any])
       
@@ -215,7 +222,8 @@ object anon {
       __obj.asInstanceOf[SelectionMode]
     }
     
-    extension [Self <: SelectionMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionMode] (val x: Self) extends AnyVal {
       
       inline def setSelectionMode(value: String): Self = StObject.set(x, "selectionMode", value.asInstanceOf[js.Any])
     }
@@ -234,7 +242,8 @@ object anon {
       __obj.asInstanceOf[ShowValue]
     }
     
-    extension [Self <: ShowValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowValue] (val x: Self) extends AnyVal {
       
       inline def setShowValue(value: Boolean): Self = StObject.set(x, "showValue", value.asInstanceOf[js.Any])
       

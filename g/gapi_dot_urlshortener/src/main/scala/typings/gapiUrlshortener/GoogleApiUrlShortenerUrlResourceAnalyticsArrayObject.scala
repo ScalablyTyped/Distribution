@@ -23,7 +23,8 @@ object GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject {
     __obj.asInstanceOf[GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject]
   }
   
-  extension [Self <: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiUrlShortenerUrlResourceAnalyticsArrayObject] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ForEachable {
     __obj.asInstanceOf[ForEachable[T]]
   }
   
-  extension [Self <: ForEachable[?], T](x: Self & ForEachable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForEachable[?], T] (val x: Self & ForEachable[T]) extends AnyVal {
     
     inline def setForEach(value: js.Function1[/* value */ T, Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
   }

@@ -77,7 +77,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -163,7 +164,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IRenderOptions]
       }
       
-      extension [Self <: IRenderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
         
         inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
         
@@ -230,7 +232,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IRenderOptions]
       }
       
-      extension [Self <: IRenderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -310,7 +313,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IRenderOptions]
       }
       
-      extension [Self <: IRenderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -386,7 +390,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IRenderOptions]
       }
       
-      extension [Self <: IRenderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         
@@ -443,7 +448,8 @@ object libRenderersMod {
         __obj.asInstanceOf[IRenderOptions]
       }
       
-      extension [Self <: IRenderOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderOptions] (val x: Self) extends AnyVal {
         
         inline def setHost(value: HTMLElement): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
         

@@ -20,7 +20,8 @@ object CreateVersionData {
     __obj.asInstanceOf[CreateVersionData]
   }
   
-  extension [Self <: CreateVersionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVersionData] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: CreateStorageDataAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

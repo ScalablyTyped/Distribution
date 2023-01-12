@@ -53,7 +53,8 @@ object UpdateFormData {
     __obj.asInstanceOf[UpdateFormData]
   }
   
-  extension [Self <: UpdateFormData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFormData] (val x: Self) extends AnyVal {
     
     inline def setCta(value: FormCTA): Self = StObject.set(x, "cta", value.asInstanceOf[js.Any])
     

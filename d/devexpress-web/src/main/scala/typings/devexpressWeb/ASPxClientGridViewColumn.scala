@@ -44,7 +44,8 @@ object ASPxClientGridViewColumn {
     __obj.asInstanceOf[ASPxClientGridViewColumn]
   }
   
-  extension [Self <: ASPxClientGridViewColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewColumn] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

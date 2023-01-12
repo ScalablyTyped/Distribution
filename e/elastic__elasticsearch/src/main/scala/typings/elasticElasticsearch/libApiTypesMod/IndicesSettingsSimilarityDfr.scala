@@ -23,7 +23,8 @@ object IndicesSettingsSimilarityDfr {
     __obj.asInstanceOf[IndicesSettingsSimilarityDfr]
   }
   
-  extension [Self <: IndicesSettingsSimilarityDfr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsSimilarityDfr] (val x: Self) extends AnyVal {
     
     inline def setAfter_effect(value: DFRAfterEffect): Self = StObject.set(x, "after_effect", value.asInstanceOf[js.Any])
     

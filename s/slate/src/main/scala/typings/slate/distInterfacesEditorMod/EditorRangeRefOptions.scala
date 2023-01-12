@@ -16,7 +16,8 @@ object EditorRangeRefOptions {
     __obj.asInstanceOf[EditorRangeRefOptions]
   }
   
-  extension [Self <: EditorRangeRefOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorRangeRefOptions] (val x: Self) extends AnyVal {
     
     inline def setAffinity(value: RangeDirection): Self = StObject.set(x, "affinity", value.asInstanceOf[js.Any])
     

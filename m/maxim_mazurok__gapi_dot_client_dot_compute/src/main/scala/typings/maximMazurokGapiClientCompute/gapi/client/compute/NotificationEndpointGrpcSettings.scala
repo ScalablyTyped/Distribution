@@ -31,7 +31,8 @@ object NotificationEndpointGrpcSettings {
     __obj.asInstanceOf[NotificationEndpointGrpcSettings]
   }
   
-  extension [Self <: NotificationEndpointGrpcSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEndpointGrpcSettings] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

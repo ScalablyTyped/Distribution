@@ -19,7 +19,8 @@ object ActionSheetEvent {
     __obj.asInstanceOf[ActionSheetEvent]
   }
   
-  extension [Self <: ActionSheetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionSheetEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

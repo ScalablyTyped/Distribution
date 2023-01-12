@@ -33,7 +33,8 @@ object buildUtilsHistoryMod {
       __obj.asInstanceOf[PluginHistoryItem]
     }
     
-    extension [Self <: PluginHistoryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginHistoryItem] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

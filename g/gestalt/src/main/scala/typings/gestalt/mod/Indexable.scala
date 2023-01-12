@@ -15,7 +15,8 @@ object Indexable {
     __obj.asInstanceOf[Indexable]
   }
   
-  extension [Self <: Indexable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indexable] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: () => Double): Self = StObject.set(x, "index", js.Any.fromFunction0(value))
   }

@@ -29,7 +29,8 @@ object AnyCompareFactory {
     __obj.asInstanceOf[AnyCompareFactory]
   }
   
-  extension [Self <: AnyCompareFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyCompareFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWithLocale(value: Locale => Unit): Self = StObject.set(x, "createWithLocale", js.Any.fromFunction1(value))
   }

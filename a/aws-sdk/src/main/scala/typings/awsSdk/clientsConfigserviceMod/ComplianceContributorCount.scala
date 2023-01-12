@@ -23,7 +23,8 @@ object ComplianceContributorCount {
     __obj.asInstanceOf[ComplianceContributorCount]
   }
   
-  extension [Self <: ComplianceContributorCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceContributorCount] (val x: Self) extends AnyVal {
     
     inline def setCapExceeded(value: Boolean): Self = StObject.set(x, "CapExceeded", value.asInstanceOf[js.Any])
     

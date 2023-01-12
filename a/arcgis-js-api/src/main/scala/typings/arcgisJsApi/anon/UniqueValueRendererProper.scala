@@ -123,7 +123,8 @@ object UniqueValueRendererProper {
     __obj.asInstanceOf[UniqueValueRendererProper]
   }
   
-  extension [Self <: UniqueValueRendererProper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniqueValueRendererProper] (val x: Self) extends AnyVal {
     
     inline def setAuthoringInfo(value: AuthoringInfoProperties): Self = StObject.set(x, "authoringInfo", value.asInstanceOf[js.Any])
     

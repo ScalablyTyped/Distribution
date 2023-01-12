@@ -18,7 +18,8 @@ object DocumentServiceWarning {
     __obj.asInstanceOf[DocumentServiceWarning]
   }
   
-  extension [Self <: DocumentServiceWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentServiceWarning] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

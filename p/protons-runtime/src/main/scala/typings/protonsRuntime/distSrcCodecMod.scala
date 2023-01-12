@@ -89,7 +89,8 @@ object distSrcCodecMod {
       __obj.asInstanceOf[Codec[T]]
     }
     
-    extension [Self <: Codec[?], T](x: Self & Codec[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec[?], T] (val x: Self & Codec[T]) extends AnyVal {
       
       inline def setDecode(value: (/* reader */ Reader_, /* length */ js.UndefOr[Double]) => T): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
       
@@ -118,7 +119,8 @@ object distSrcCodecMod {
       __obj.asInstanceOf[EncodeOptions]
     }
     
-    extension [Self <: EncodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeOptions] (val x: Self) extends AnyVal {
       
       inline def setLengthDelimited(value: Boolean): Self = StObject.set(x, "lengthDelimited", value.asInstanceOf[js.Any])
       

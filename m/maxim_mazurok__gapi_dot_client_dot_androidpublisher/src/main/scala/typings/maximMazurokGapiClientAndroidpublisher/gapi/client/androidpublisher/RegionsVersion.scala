@@ -16,7 +16,8 @@ object RegionsVersion {
     __obj.asInstanceOf[RegionsVersion]
   }
   
-  extension [Self <: RegionsVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionsVersion] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

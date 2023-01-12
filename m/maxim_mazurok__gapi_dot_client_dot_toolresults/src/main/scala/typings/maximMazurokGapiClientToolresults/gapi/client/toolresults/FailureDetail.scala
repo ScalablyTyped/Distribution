@@ -34,7 +34,8 @@ object FailureDetail {
     __obj.asInstanceOf[FailureDetail]
   }
   
-  extension [Self <: FailureDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailureDetail] (val x: Self) extends AnyVal {
     
     inline def setCrashed(value: Boolean): Self = StObject.set(x, "crashed", value.asInstanceOf[js.Any])
     

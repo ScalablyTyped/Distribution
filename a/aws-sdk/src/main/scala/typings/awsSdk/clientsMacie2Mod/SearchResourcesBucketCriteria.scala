@@ -23,7 +23,8 @@ object SearchResourcesBucketCriteria {
     __obj.asInstanceOf[SearchResourcesBucketCriteria]
   }
   
-  extension [Self <: SearchResourcesBucketCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchResourcesBucketCriteria] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: SearchResourcesCriteriaBlock): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

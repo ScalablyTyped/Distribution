@@ -17,7 +17,8 @@ object toolbarGroups {
     __obj.asInstanceOf[toolbarGroups]
   }
   
-  extension [Self <: toolbarGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: toolbarGroups] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

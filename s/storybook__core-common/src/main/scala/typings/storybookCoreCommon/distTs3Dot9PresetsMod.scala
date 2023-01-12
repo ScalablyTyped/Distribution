@@ -140,7 +140,8 @@ object distTs3Dot9PresetsMod {
       __obj.asInstanceOf[InterPresetOptions]
     }
     
-    extension [Self <: InterPresetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterPresetOptions] (val x: Self) extends AnyVal {
       
       inline def setCache(value: FileSystemCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -338,7 +339,8 @@ object distTs3Dot9PresetsMod {
       __obj.asInstanceOf[ResolvedAddonPreset]
     }
     
-    extension [Self <: ResolvedAddonPreset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedAddonPreset] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -366,7 +368,8 @@ object distTs3Dot9PresetsMod {
       __obj.asInstanceOf[ResolvedAddonVirtual]
     }
     
-    extension [Self <: ResolvedAddonVirtual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedAddonVirtual] (val x: Self) extends AnyVal {
       
       inline def setManagerEntries(value: js.Array[String]): Self = StObject.set(x, "managerEntries", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object distUtilsMod {
       __obj.asInstanceOf[RulesResult]
     }
     
-    extension [Self <: RulesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

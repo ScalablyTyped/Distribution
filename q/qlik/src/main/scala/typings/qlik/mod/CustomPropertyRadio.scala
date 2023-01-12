@@ -28,7 +28,8 @@ object CustomPropertyRadio {
     __obj.asInstanceOf[CustomPropertyRadio]
   }
   
-  extension [Self <: CustomPropertyRadio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyRadio] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: radiobuttons): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

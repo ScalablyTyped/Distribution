@@ -18,7 +18,8 @@ object ContrastError {
     __obj.asInstanceOf[ContrastError]
   }
   
-  extension [Self <: ContrastError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContrastError] (val x: Self) extends AnyVal {
     
     inline def setName(value: typings.vimeoPlayer.vimeoPlayerStrings.ContrastError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

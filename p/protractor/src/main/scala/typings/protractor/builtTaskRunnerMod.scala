@@ -60,7 +60,8 @@ object builtTaskRunnerMod {
       __obj.asInstanceOf[RunResults]
     }
     
-    extension [Self <: RunResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunResults] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: Any): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
       

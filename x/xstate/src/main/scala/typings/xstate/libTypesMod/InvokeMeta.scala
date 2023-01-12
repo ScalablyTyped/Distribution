@@ -19,7 +19,8 @@ object InvokeMeta {
     __obj.asInstanceOf[InvokeMeta]
   }
   
-  extension [Self <: InvokeMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeMeta] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

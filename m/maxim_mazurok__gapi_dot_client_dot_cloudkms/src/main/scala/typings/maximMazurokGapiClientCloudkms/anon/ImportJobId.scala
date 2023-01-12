@@ -57,7 +57,8 @@ object ImportJobId {
     __obj.asInstanceOf[ImportJobId]
   }
   
-  extension [Self <: ImportJobId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportJobId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

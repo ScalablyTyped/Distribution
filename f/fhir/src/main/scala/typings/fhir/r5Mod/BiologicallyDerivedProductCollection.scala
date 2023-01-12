@@ -37,7 +37,8 @@ object BiologicallyDerivedProductCollection {
     __obj.asInstanceOf[BiologicallyDerivedProductCollection]
   }
   
-  extension [Self <: BiologicallyDerivedProductCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiologicallyDerivedProductCollection] (val x: Self) extends AnyVal {
     
     inline def setCollectedDateTime(value: String): Self = StObject.set(x, "collectedDateTime", value.asInstanceOf[js.Any])
     

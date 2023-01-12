@@ -15,7 +15,8 @@ object TabsStateState {
     __obj.asInstanceOf[TabsStateState]
   }
   
-  extension [Self <: TabsStateState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabsStateState] (val x: Self) extends AnyVal {
     
     inline def setSelected(value: String): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
   }

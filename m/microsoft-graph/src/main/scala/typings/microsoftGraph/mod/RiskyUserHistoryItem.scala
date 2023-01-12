@@ -24,7 +24,8 @@ object RiskyUserHistoryItem {
     __obj.asInstanceOf[RiskyUserHistoryItem]
   }
   
-  extension [Self <: RiskyUserHistoryItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RiskyUserHistoryItem] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: NullableOption[RiskUserActivity]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

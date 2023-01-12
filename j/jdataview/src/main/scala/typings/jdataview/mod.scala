@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     }
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Bytes]
     }
     
-    extension [Self <: Bytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

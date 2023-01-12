@@ -22,7 +22,8 @@ object EvaluatedFileACL {
     __obj.asInstanceOf[EvaluatedFileACL]
   }
   
-  extension [Self <: EvaluatedFileACL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluatedFileACL] (val x: Self) extends AnyVal {
     
     inline def setRead(value: Boolean): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     

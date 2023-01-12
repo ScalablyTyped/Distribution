@@ -94,7 +94,8 @@ object typesExportJobResponseMod {
       __obj.asInstanceOf[ExportJobResponse]
     }
     
-    extension [Self <: ExportJobResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExportJobResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object typesExportJobResponseMod {
       __obj.asInstanceOf[UnmarshalledExportJobResponse]
     }
     
-    extension [Self <: UnmarshalledExportJobResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledExportJobResponse] (val x: Self) extends AnyVal {
       
       inline def setDefinition(value: UnmarshalledExportJobResource): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
       

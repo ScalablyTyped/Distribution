@@ -28,7 +28,8 @@ object RepositoryExternalConnectionInfo {
     __obj.asInstanceOf[RepositoryExternalConnectionInfo]
   }
   
-  extension [Self <: RepositoryExternalConnectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryExternalConnectionInfo] (val x: Self) extends AnyVal {
     
     inline def setExternalConnectionName(value: ExternalConnectionName): Self = StObject.set(x, "externalConnectionName", value.asInstanceOf[js.Any])
     

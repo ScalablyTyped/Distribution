@@ -47,7 +47,8 @@ object buttonTypesMod {
       __obj.asInstanceOf[ButtonOverrides]
     }
     
-    extension [Self <: ButtonOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonOverrides] (val x: Self) extends AnyVal {
       
       inline def setBaseButton(value: Override[Any]): Self = StObject.set(x, "BaseButton", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object buttonTypesMod {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object buttonTypesMod {
       __obj.asInstanceOf[CustomColors]
     }
     
-    extension [Self <: CustomColors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomColors] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object buttonTypesMod {
       __obj.asInstanceOf[SharedStyleProps]
     }
     
-    extension [Self <: SharedStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedStyleProps] (val x: Self) extends AnyVal {
       
       inline def set$colors(value: CustomColors): Self = StObject.set(x, "$colors", value.asInstanceOf[js.Any])
       

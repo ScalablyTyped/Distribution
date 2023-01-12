@@ -452,7 +452,8 @@ object ThemeCheckBoxProps {
     __obj.asInstanceOf[ThemeCheckBoxProps]
   }
   
-  extension [Self <: ThemeCheckBoxProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeCheckBoxProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

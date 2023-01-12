@@ -38,7 +38,8 @@ object CompleteSnapshotRequest {
     __obj.asInstanceOf[CompleteSnapshotRequest]
   }
   
-  extension [Self <: CompleteSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompleteSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setChangedBlocksCount(value: ChangedBlocksCount): Self = StObject.set(x, "ChangedBlocksCount", value.asInstanceOf[js.Any])
     

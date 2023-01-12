@@ -122,7 +122,8 @@ object libEsmHeadersColumnHeaderCellMod {
       __obj.asInstanceOf[IColumnHeaderCellProps]
     }
     
-    extension [Self <: IColumnHeaderCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnHeaderCellProps] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnReordering(value: Boolean): Self = StObject.set(x, "enableColumnReordering", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object libEsmHeadersColumnHeaderCellMod {
       __obj.asInstanceOf[IColumnHeaderCellState]
     }
     
-    extension [Self <: IColumnHeaderCellState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnHeaderCellState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object libEsmHeadersColumnHeaderCellMod {
       __obj.asInstanceOf[IColumnNameProps]
     }
     
-    extension [Self <: IColumnNameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnNameProps] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

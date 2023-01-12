@@ -156,7 +156,8 @@ object PartialTouchableHighlight {
     __obj.asInstanceOf[PartialTouchableHighlight]
   }
   
-  extension [Self <: PartialTouchableHighlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTouchableHighlight] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object providerinFirebaseSignInP {
     __obj.asInstanceOf[providerinFirebaseSignInP]
   }
   
-  extension [Self <: providerinFirebaseSignInP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: providerinFirebaseSignInP] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: js.Array[String]): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

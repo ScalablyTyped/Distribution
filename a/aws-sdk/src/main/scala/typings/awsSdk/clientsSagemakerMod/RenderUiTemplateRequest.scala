@@ -33,7 +33,8 @@ object RenderUiTemplateRequest {
     __obj.asInstanceOf[RenderUiTemplateRequest]
   }
   
-  extension [Self <: RenderUiTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderUiTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setHumanTaskUiArn(value: HumanTaskUiArn): Self = StObject.set(x, "HumanTaskUiArn", value.asInstanceOf[js.Any])
     

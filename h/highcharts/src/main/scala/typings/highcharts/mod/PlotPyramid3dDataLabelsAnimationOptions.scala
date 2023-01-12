@@ -20,7 +20,8 @@ object PlotPyramid3dDataLabelsAnimationOptions {
     __obj.asInstanceOf[PlotPyramid3dDataLabelsAnimationOptions]
   }
   
-  extension [Self <: PlotPyramid3dDataLabelsAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramid3dDataLabelsAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setDefer(value: Double): Self = StObject.set(x, "defer", value.asInstanceOf[js.Any])
     

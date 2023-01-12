@@ -32,7 +32,8 @@ object ChartSeriesAddress {
     __obj.asInstanceOf[ChartSeriesAddress]
   }
   
-  extension [Self <: ChartSeriesAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesAddress] (val x: Self) extends AnyVal {
     
     inline def setDataRangeAddress(value: String): Self = StObject.set(x, "DataRangeAddress", value.asInstanceOf[js.Any])
     

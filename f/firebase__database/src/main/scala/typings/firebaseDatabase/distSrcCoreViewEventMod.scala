@@ -84,7 +84,8 @@ object distSrcCoreViewEventMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setGetEventRunner(value: () => js.Function0[Unit]): Self = StObject.set(x, "getEventRunner", js.Any.fromFunction0(value))
       

@@ -15,7 +15,8 @@ object BarcodeExportSVGOptions {
     __obj.asInstanceOf[BarcodeExportSVGOptions]
   }
   
-  extension [Self <: BarcodeExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

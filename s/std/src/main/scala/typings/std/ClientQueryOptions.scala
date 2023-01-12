@@ -19,7 +19,8 @@ object ClientQueryOptions {
     __obj.asInstanceOf[ClientQueryOptions]
   }
   
-  extension [Self <: ClientQueryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientQueryOptions] (val x: Self) extends AnyVal {
     
     inline def setIncludeUncontrolled(value: scala.Boolean): Self = StObject.set(x, "includeUncontrolled", value.asInstanceOf[js.Any])
     

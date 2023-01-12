@@ -23,7 +23,8 @@ object ContainerQueryContainerHighlightConfig {
     __obj.asInstanceOf[ContainerQueryContainerHighlightConfig]
   }
   
-  extension [Self <: ContainerQueryContainerHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerQueryContainerHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setContainerBorder(value: LineStyle): Self = StObject.set(x, "containerBorder", value.asInstanceOf[js.Any])
     

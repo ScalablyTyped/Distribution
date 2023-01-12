@@ -23,7 +23,8 @@ object Effectivedate {
     __obj.asInstanceOf[Effectivedate]
   }
   
-  extension [Self <: Effectivedate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effectivedate] (val x: Self) extends AnyVal {
     
     inline def setEffective_date(value: String): Self = StObject.set(x, "effective_date", value.asInstanceOf[js.Any])
     

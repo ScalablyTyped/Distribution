@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ReactElementToJSXStringOptions]
     }
     
-    extension [Self <: ReactElementToJSXStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactElementToJSXStringOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: /* element */ ReactNode => String): Self = StObject.set(x, "displayName", js.Any.fromFunction1(value))
       

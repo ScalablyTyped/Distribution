@@ -18,7 +18,8 @@ object GetEventSourceMappingRequest {
     __obj.asInstanceOf[GetEventSourceMappingRequest]
   }
   
-  extension [Self <: GetEventSourceMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventSourceMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setUUID(value: String): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object S3Grantee {
     __obj.asInstanceOf[S3Grantee]
   }
   
-  extension [Self <: S3Grantee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Grantee] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
     

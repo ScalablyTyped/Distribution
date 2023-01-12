@@ -21,7 +21,8 @@ object TimedTextSourceResolveResultEventArgs {
     __obj.asInstanceOf[TimedTextSourceResolveResultEventArgs]
   }
   
-  extension [Self <: TimedTextSourceResolveResultEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextSourceResolveResultEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: TimedMetadataTrackError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

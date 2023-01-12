@@ -46,7 +46,8 @@ object Dial {
     __obj.asInstanceOf[Dial]
   }
   
-  extension [Self <: Dial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dial] (val x: Self) extends AnyVal {
     
     inline def setCaller(value: Channel): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     

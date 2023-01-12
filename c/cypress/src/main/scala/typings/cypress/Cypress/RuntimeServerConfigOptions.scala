@@ -88,7 +88,8 @@ object RuntimeServerConfigOptions {
     __obj.asInstanceOf[RuntimeServerConfigOptions]
   }
   
-  extension [Self <: RuntimeServerConfigOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeServerConfigOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
     

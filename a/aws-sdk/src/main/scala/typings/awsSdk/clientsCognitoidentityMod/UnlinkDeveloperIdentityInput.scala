@@ -38,7 +38,8 @@ object UnlinkDeveloperIdentityInput {
     __obj.asInstanceOf[UnlinkDeveloperIdentityInput]
   }
   
-  extension [Self <: UnlinkDeveloperIdentityInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlinkDeveloperIdentityInput] (val x: Self) extends AnyVal {
     
     inline def setDeveloperProviderName(value: DeveloperProviderName): Self = StObject.set(x, "DeveloperProviderName", value.asInstanceOf[js.Any])
     

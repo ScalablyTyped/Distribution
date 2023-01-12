@@ -20,7 +20,8 @@ object IBItemkeystringbackground {
     __obj.asInstanceOf[IBItemkeystringbackground]
   }
   
-  extension [Self <: IBItemkeystringbackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBItemkeystringbackground] (val x: Self) extends AnyVal {
     
     inline def set$(value: SystemColor): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

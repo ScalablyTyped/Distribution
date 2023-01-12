@@ -68,7 +68,8 @@ object distCompileValidateSubschemaMod {
       __obj.asInstanceOf[SubschemaArgs]
     }
     
-    extension [Self <: SubschemaArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubschemaArgs] (val x: Self) extends AnyVal {
       
       inline def setAllErrors(value: Boolean): Self = StObject.set(x, "allErrors", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object distCompileValidateSubschemaMod {
       __obj.asInstanceOf[SubschemaContext]
     }
     
-    extension [Self <: SubschemaContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubschemaContext] (val x: Self) extends AnyVal {
       
       inline def setAllErrors(value: Boolean): Self = StObject.set(x, "allErrors", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object ExcludedVideoKeyword {
     __obj.asInstanceOf[ExcludedVideoKeyword]
   }
   
-  extension [Self <: ExcludedVideoKeyword](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedVideoKeyword] (val x: Self) extends AnyVal {
     
     inline def setGetEntityType(value: () => String): Self = StObject.set(x, "getEntityType", js.Any.fromFunction0(value))
     

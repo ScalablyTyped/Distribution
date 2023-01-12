@@ -23,7 +23,8 @@ object ListJobTemplatesRequest {
     __obj.asInstanceOf[ListJobTemplatesRequest]
   }
   
-  extension [Self <: ListJobTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJobTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: LaserMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

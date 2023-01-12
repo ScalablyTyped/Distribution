@@ -18,7 +18,8 @@ object MobileMoneyMpesaResponse {
     __obj.asInstanceOf[MobileMoneyMpesaResponse]
   }
   
-  extension [Self <: MobileMoneyMpesaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileMoneyMpesaResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: AuthModelUsed): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

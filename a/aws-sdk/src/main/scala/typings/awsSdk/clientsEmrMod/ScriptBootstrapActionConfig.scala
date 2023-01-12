@@ -23,7 +23,8 @@ object ScriptBootstrapActionConfig {
     __obj.asInstanceOf[ScriptBootstrapActionConfig]
   }
   
-  extension [Self <: ScriptBootstrapActionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptBootstrapActionConfig] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: XmlStringList): Self = StObject.set(x, "Args", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ReceivedAction {
     __obj.asInstanceOf[ReceivedAction]
   }
   
-  extension [Self <: ReceivedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceivedAction] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

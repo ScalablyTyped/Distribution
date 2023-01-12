@@ -19,7 +19,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled]
   }
   
-  extension [Self <: Disabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

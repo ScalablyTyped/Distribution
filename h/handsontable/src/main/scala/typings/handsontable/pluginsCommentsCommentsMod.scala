@@ -65,7 +65,8 @@ object pluginsCommentsCommentsMod {
       __obj.asInstanceOf[CommentConfig]
     }
     
-    extension [Self <: CommentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentConfig] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object pluginsCommentsCommentsMod {
       __obj.asInstanceOf[CommentObject]
     }
     
-    extension [Self <: CommentObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentObject] (val x: Self) extends AnyVal {
       
       inline def setReadOnly(value: Boolean): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object pluginsCommentsCommentsMod {
       __obj.asInstanceOf[CommentsRangeObject]
     }
     
-    extension [Self <: CommentsRangeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentsRangeObject] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: typings.handsontable.`3rdpartyWalkontableSrcCellCoordsMod`.default): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object pluginsCommentsCommentsMod {
       __obj.asInstanceOf[DetailedSettings]
     }
     
-    extension [Self <: DetailedSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetailedSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayDelay(value: Double): Self = StObject.set(x, "displayDelay", value.asInstanceOf[js.Any])
       

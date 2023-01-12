@@ -62,7 +62,8 @@ object anon {
       __obj.asInstanceOf[E]
     }
     
-    extension [Self <: E](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: E] (val x: Self) extends AnyVal {
       
       inline def setE(value: String): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object anon {
       __obj.asInstanceOf[EndPlaceholder]
     }
     
-    extension [Self <: EndPlaceholder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndPlaceholder] (val x: Self) extends AnyVal {
       
       inline def setEndPlaceholder(value: String): Self = StObject.set(x, "endPlaceholder", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Hours]
     }
     
-    extension [Self <: Hours](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hours] (val x: Self) extends AnyVal {
       
       inline def setHours(value: String): Self = StObject.set(x, "hours", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object anon {
       __obj.asInstanceOf[InputWaypoints]
     }
     
-    extension [Self <: InputWaypoints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputWaypoints] (val x: Self) extends AnyVal {
       
       inline def setInputWaypoints(value: Waypoint_): Self = StObject.set(x, "inputWaypoints", value.asInstanceOf[js.Any])
       
@@ -210,7 +214,8 @@ object anon {
       __obj.asInstanceOf[LegCount]
     }
     
-    extension [Self <: LegCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegCount] (val x: Self) extends AnyVal {
       
       inline def setLegCount(value: Double): Self = StObject.set(x, "legCount", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object cookies {
       __obj.asInstanceOf[Cookie]
     }
     
-    extension [Self <: Cookie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object cookies {
       __obj.asInstanceOf[CookieChangeInfo]
     }
     
-    extension [Self <: CookieChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setCause(value: String): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object cookies {
       __obj.asInstanceOf[CookieStore]
     }
     
-    extension [Self <: CookieStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CookieStore] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object cookies {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object cookies {
       __obj.asInstanceOf[GetAllDetails]
     }
     
-    extension [Self <: GetAllDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetAllDetails] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -308,7 +313,8 @@ object cookies {
       __obj.asInstanceOf[SetDetails]
     }
     
-    extension [Self <: SetDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDetails] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

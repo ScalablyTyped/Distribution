@@ -23,7 +23,8 @@ object StopDataSourceSyncJobRequest {
     __obj.asInstanceOf[StopDataSourceSyncJobRequest]
   }
   
-  extension [Self <: StopDataSourceSyncJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopDataSourceSyncJobRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: DataSourceId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

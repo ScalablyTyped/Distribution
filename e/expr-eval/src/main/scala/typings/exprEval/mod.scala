@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMemberAccess(value: Boolean): Self = StObject.set(x, "allowMemberAccess", value.asInstanceOf[js.Any])
       

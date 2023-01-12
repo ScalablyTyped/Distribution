@@ -19,7 +19,8 @@ object PutChannelResult {
     __obj.asInstanceOf[PutChannelResult]
   }
   
-  extension [Self <: PutChannelResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutChannelResult] (val x: Self) extends AnyVal {
     
     inline def setPlayUrls(value: js.Array[String]): Self = StObject.set(x, "playUrls", value.asInstanceOf[js.Any])
     

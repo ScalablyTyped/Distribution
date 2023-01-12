@@ -37,7 +37,8 @@ object distTypesSrcBasicAPIMod {
       __obj.asInstanceOf[ApplyPaletteOptions]
     }
     
-    extension [Self <: ApplyPaletteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyPaletteOptions] (val x: Self) extends AnyVal {
       
       inline def setColorDistanceFormula(value: ColorDistanceFormula): Self = StObject.set(x, "colorDistanceFormula", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object distTypesSrcBasicAPIMod {
       __obj.asInstanceOf[BuildPaletteOptions]
     }
     
-    extension [Self <: BuildPaletteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildPaletteOptions] (val x: Self) extends AnyVal {
       
       inline def setColorDistanceFormula(value: ColorDistanceFormula): Self = StObject.set(x, "colorDistanceFormula", value.asInstanceOf[js.Any])
       
@@ -187,7 +189,8 @@ object distTypesSrcBasicAPIMod {
       __obj.asInstanceOf[ProgressOptions]
     }
     
-    extension [Self <: ProgressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressOptions] (val x: Self) extends AnyVal {
       
       inline def setOnProgress(value: /* progress */ Double => Unit): Self = StObject.set(x, "onProgress", js.Any.fromFunction1(value))
       

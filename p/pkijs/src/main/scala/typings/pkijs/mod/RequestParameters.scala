@@ -20,7 +20,8 @@ object RequestParameters {
     __obj.asInstanceOf[RequestParameters]
   }
   
-  extension [Self <: RequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestParameters] (val x: Self) extends AnyVal {
     
     inline def setReqCert(value: CertID): Self = StObject.set(x, "reqCert", value.asInstanceOf[js.Any])
     

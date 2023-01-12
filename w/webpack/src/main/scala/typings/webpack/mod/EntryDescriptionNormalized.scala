@@ -76,7 +76,8 @@ object EntryDescriptionNormalized {
     __obj.asInstanceOf[EntryDescriptionNormalized]
   }
   
-  extension [Self <: EntryDescriptionNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntryDescriptionNormalized] (val x: Self) extends AnyVal {
     
     inline def setAsyncChunks(value: Boolean): Self = StObject.set(x, "asyncChunks", value.asInstanceOf[js.Any])
     

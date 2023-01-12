@@ -19,7 +19,8 @@ object MavenRepositoryConfig {
     __obj.asInstanceOf[MavenRepositoryConfig]
   }
   
-  extension [Self <: MavenRepositoryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MavenRepositoryConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowSnapshotOverwrites(value: Boolean): Self = StObject.set(x, "allowSnapshotOverwrites", value.asInstanceOf[js.Any])
     

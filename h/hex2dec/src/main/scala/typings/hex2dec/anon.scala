@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Prefix]
     }
     
-    extension [Self <: Prefix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Prefix] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: Boolean): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       

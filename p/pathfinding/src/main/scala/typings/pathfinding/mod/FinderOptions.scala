@@ -19,7 +19,8 @@ object FinderOptions {
     __obj.asInstanceOf[FinderOptions]
   }
   
-  extension [Self <: FinderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinderOptions] (val x: Self) extends AnyVal {
     
     inline def setDiagonalMovement(value: DiagonalMovement): Self = StObject.set(x, "diagonalMovement", value.asInstanceOf[js.Any])
     

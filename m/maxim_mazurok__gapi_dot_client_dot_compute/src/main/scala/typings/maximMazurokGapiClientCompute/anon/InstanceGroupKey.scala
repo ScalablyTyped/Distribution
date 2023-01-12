@@ -59,7 +59,8 @@ object InstanceGroupKey {
     __obj.asInstanceOf[InstanceGroupKey]
   }
   
-  extension [Self <: InstanceGroupKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

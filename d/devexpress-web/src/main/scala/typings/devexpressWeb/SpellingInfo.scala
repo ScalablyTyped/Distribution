@@ -26,7 +26,8 @@ object SpellingInfo {
     __obj.asInstanceOf[SpellingInfo]
   }
   
-  extension [Self <: SpellingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellingInfo] (val x: Self) extends AnyVal {
     
     inline def setMisspelledIntervals(value: js.Array[MisspelledInterval]): Self = StObject.set(x, "misspelledIntervals", value.asInstanceOf[js.Any])
     

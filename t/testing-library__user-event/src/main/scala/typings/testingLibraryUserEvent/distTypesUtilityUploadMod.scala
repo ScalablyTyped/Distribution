@@ -27,7 +27,8 @@ object distTypesUtilityUploadMod {
       __obj.asInstanceOf[uploadInit]
     }
     
-    extension [Self <: uploadInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uploadInit] (val x: Self) extends AnyVal {
       
       inline def setChangeInit(value: EventInit): Self = StObject.set(x, "changeInit", value.asInstanceOf[js.Any])
       

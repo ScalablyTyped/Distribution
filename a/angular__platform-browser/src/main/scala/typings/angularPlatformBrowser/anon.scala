@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[AppId]
     }
     
-    extension [Self <: AppId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppId] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     }
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[CssProps]
     }
     
-    extension [Self <: CssProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssProps] (val x: Self) extends AnyVal {
       
       inline def setCssProps(value: Any): Self = StObject.set(x, "cssProps", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object anon {
       __obj.asInstanceOf[DomEventName]
     }
     
-    extension [Self <: DomEventName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomEventName] (val x: Self) extends AnyVal {
       
       inline def setDomEventName(value: String): Self = StObject.set(x, "domEventName", value.asInstanceOf[js.Any])
       
@@ -153,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Optional]
     }
     
-    extension [Self <: Optional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
       

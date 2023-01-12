@@ -15,7 +15,8 @@ object ReleaseDefinitionGate {
     __obj.asInstanceOf[ReleaseDefinitionGate]
   }
   
-  extension [Self <: ReleaseDefinitionGate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDefinitionGate] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: js.Array[WorkflowTask]): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     

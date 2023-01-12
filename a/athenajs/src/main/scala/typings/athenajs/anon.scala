@@ -93,7 +93,8 @@ object anon {
       __obj.asInstanceOf[`32`]
     }
     
-    extension [Self <: `32`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `32`] (val x: Self) extends AnyVal {
       
       inline def set32(value: `1`): Self = StObject.set(x, "32", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object anon {
       __obj.asInstanceOf[AIR]
     }
     
-    extension [Self <: AIR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AIR] (val x: Self) extends AnyVal {
       
       inline def setAIR(value: `1`): Self = StObject.set(x, "AIR", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object anon {
       __obj.asInstanceOf[CTRL]
     }
     
-    extension [Self <: CTRL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CTRL] (val x: Self) extends AnyVal {
       
       inline def setCTRL(value: `17`): Self = StObject.set(x, "CTRL", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -264,7 +268,8 @@ object anon {
       __obj.asInstanceOf[Loop]
     }
     
-    extension [Self <: Loop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loop] (val x: Self) extends AnyVal {
       
       inline def setLoop(value: `false`): Self = StObject.set(x, "loop", value.asInstanceOf[js.Any])
       
@@ -293,7 +298,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

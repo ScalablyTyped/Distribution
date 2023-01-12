@@ -80,7 +80,8 @@ object PopupTheme {
     __obj.asInstanceOf[PopupTheme]
   }
   
-  extension [Self <: PopupTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupTheme] (val x: Self) extends AnyVal {
     
     inline def setBackIconColor(value: String): Self = StObject.set(x, "backIconColor", value.asInstanceOf[js.Any])
     

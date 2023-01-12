@@ -39,7 +39,8 @@ object ForeignSymbol {
     __obj.asInstanceOf[ForeignSymbol]
   }
   
-  extension [Self <: ForeignSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForeignSymbol] (val x: Self) extends AnyVal {
     
     inline def setDo_objectID(value: Uuid): Self = StObject.set(x, "do_objectID", value.asInstanceOf[js.Any])
     

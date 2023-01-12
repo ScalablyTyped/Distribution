@@ -19,7 +19,8 @@ object TemplateMatch {
     __obj.asInstanceOf[TemplateMatch]
   }
   
-  extension [Self <: TemplateMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateMatch] (val x: Self) extends AnyVal {
     
     inline def setDocumentEndPage(value: String): Self = StObject.set(x, "documentEndPage", value.asInstanceOf[js.Any])
     

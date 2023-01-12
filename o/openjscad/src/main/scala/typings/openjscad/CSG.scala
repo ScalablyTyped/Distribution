@@ -154,7 +154,8 @@ object CSG {
       __obj.asInstanceOf[ConnectorList]
     }
     
-    extension [Self <: ConnectorList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectorList] (val x: Self) extends AnyVal {
       
       inline def setAppendConnector(value: Connector => Unit): Self = StObject.set(x, "appendConnector", js.Any.fromFunction1(value))
       
@@ -189,7 +190,8 @@ object CSG {
       __obj.asInstanceOf[IArcOptions]
     }
     
-    extension [Self <: IArcOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArcOptions] (val x: Self) extends AnyVal {
       
       inline def setEndangle(value: Double): Self = StObject.set(x, "endangle", value.asInstanceOf[js.Any])
       
@@ -218,7 +220,8 @@ object CSG {
       __obj.asInstanceOf[ICircleOptions]
     }
     
-    extension [Self <: ICircleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICircleOptions] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Vector2D | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -249,7 +252,8 @@ object CSG {
       __obj.asInstanceOf[IEllpiticalArcOptions]
     }
     
-    extension [Self <: IEllpiticalArcOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEllpiticalArcOptions] (val x: Self) extends AnyVal {
       
       inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
       
@@ -286,7 +290,8 @@ object CSG {
       __obj.asInstanceOf[IRadiusOptions]
     }
     
-    extension [Self <: IRadiusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadiusOptions] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       
@@ -315,7 +320,8 @@ object CSG {
       __obj.asInstanceOf[IRectangleOptions]
     }
     
-    extension [Self <: IRectangleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRectangleOptions] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Vector2D): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -348,7 +354,8 @@ object CSG {
       __obj.asInstanceOf[IRoundRectangleOptions]
     }
     
-    extension [Self <: IRoundRectangleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRoundRectangleOptions] (val x: Self) extends AnyVal {
       
       inline def setResolution(value: Double): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
@@ -439,7 +446,8 @@ object CSG {
       __obj.asInstanceOf[Matrix4x4]
     }
     
-    extension [Self <: Matrix4x4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix4x4] (val x: Self) extends AnyVal {
       
       inline def setElements(value: js.Array[Double]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
       
@@ -503,7 +511,8 @@ object CSG {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setAddPolygonTreeNodes(value: js.Array[PolygonTreeNode] => Unit): Self = StObject.set(x, "addPolygonTreeNodes", js.Any.fromFunction1(value))
       
@@ -688,7 +697,8 @@ object CSG {
         __obj.asInstanceOf[Shared]
       }
       
-      extension [Self <: Shared](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Shared] (val x: Self) extends AnyVal {
         
         inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -761,7 +771,8 @@ object CSG {
       __obj.asInstanceOf[PolygonTreeNode]
     }
     
-    extension [Self <: PolygonTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonTreeNode] (val x: Self) extends AnyVal {
       
       inline def setAddChild(value: Polygon => PolygonTreeNode): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
       
@@ -849,7 +860,8 @@ object CSG {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -1056,7 +1068,8 @@ object CSG {
       __obj.asInstanceOf[fuzzyCSGFactory]
     }
     
-    extension [Self <: fuzzyCSGFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fuzzyCSGFactory] (val x: Self) extends AnyVal {
       
       inline def setGetCSG(value: CSG => CSG): Self = StObject.set(x, "getCSG", js.Any.fromFunction1(value))
       
@@ -1091,7 +1104,8 @@ object CSG {
       __obj.asInstanceOf[fuzzyFactory]
     }
     
-    extension [Self <: fuzzyFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fuzzyFactory] (val x: Self) extends AnyVal {
       
       inline def setLookupOrCreate(value: (Any, Any) => Any): Self = StObject.set(x, "lookupOrCreate", js.Any.fromFunction2(value))
       

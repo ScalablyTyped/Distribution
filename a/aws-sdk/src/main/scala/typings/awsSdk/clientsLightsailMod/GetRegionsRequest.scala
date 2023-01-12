@@ -23,7 +23,8 @@ object GetRegionsRequest {
     __obj.asInstanceOf[GetRegionsRequest]
   }
   
-  extension [Self <: GetRegionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegionsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeAvailabilityZones(value: Boolean): Self = StObject.set(x, "includeAvailabilityZones", value.asInstanceOf[js.Any])
     

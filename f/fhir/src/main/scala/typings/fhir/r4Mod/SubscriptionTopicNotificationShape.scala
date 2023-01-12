@@ -36,7 +36,8 @@ object SubscriptionTopicNotificationShape {
     __obj.asInstanceOf[SubscriptionTopicNotificationShape]
   }
   
-  extension [Self <: SubscriptionTopicNotificationShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionTopicNotificationShape] (val x: Self) extends AnyVal {
     
     inline def setInclude(value: js.Array[String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     

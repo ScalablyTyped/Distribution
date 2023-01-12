@@ -25,7 +25,8 @@ object IdownloadImage {
     __obj.asInstanceOf[IdownloadImage]
   }
   
-  extension [Self <: IdownloadImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdownloadImage] (val x: Self) extends AnyVal {
     
     inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     

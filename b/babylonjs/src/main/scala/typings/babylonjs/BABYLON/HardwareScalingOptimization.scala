@@ -37,7 +37,8 @@ object HardwareScalingOptimization {
     __obj.asInstanceOf[HardwareScalingOptimization]
   }
   
-  extension [Self <: HardwareScalingOptimization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HardwareScalingOptimization] (val x: Self) extends AnyVal {
     
     inline def setMaximumScale(value: Double): Self = StObject.set(x, "maximumScale", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object TableState {
     __obj.asInstanceOf[TableState[D]]
   }
   
-  extension [Self <: TableState[?], D /* <: js.Object */](x: Self & TableState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableState[?], D /* <: js.Object */] (val x: Self & TableState[D]) extends AnyVal {
     
     inline def setHiddenColumns(value: js.Array[IdType[D]]): Self = StObject.set(x, "hiddenColumns", value.asInstanceOf[js.Any])
     

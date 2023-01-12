@@ -17,7 +17,8 @@ object Separated {
     __obj.asInstanceOf[Separated[A, B]]
   }
   
-  extension [Self <: Separated[?, ?], A, B](x: Self & (Separated[A, B])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Separated[?, ?], A, B] (val x: Self & (Separated[A, B])) extends AnyVal {
     
     inline def setLeft(value: A): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

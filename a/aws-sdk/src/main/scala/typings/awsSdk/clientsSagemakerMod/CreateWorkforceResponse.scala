@@ -18,7 +18,8 @@ object CreateWorkforceResponse {
     __obj.asInstanceOf[CreateWorkforceResponse]
   }
   
-  extension [Self <: CreateWorkforceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkforceResponse] (val x: Self) extends AnyVal {
     
     inline def setWorkforceArn(value: WorkforceArn): Self = StObject.set(x, "WorkforceArn", value.asInstanceOf[js.Any])
   }

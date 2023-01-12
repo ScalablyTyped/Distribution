@@ -161,7 +161,8 @@ object esComponentsPageContainerMod {
       __obj.asInstanceOf[PageContainerProps]
     }
     
-    extension [Self <: PageContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAffixProps(value: OmitAffixPropschildren): Self = StObject.set(x, "affixProps", value.asInstanceOf[js.Any])
       
@@ -336,7 +337,8 @@ object esComponentsPageContainerMod {
       __obj.asInstanceOf[PageHeaderTabConfig]
     }
     
-    extension [Self <: PageHeaderTabConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderTabConfig] (val x: Self) extends AnyVal {
       
       inline def setFixHeader(value: Boolean): Self = StObject.set(x, "fixHeader", value.asInstanceOf[js.Any])
       

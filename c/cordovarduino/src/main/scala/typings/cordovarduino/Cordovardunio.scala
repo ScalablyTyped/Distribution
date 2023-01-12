@@ -72,7 +72,8 @@ object Cordovardunio {
       __obj.asInstanceOf[Serial]
     }
     
-    extension [Self <: Serial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Serial] (val x: Self) extends AnyVal {
       
       inline def setClose(value: (js.Function, js.Function) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
       
@@ -117,7 +118,8 @@ object Cordovardunio {
       __obj.asInstanceOf[SerialOptions]
     }
     
-    extension [Self <: SerialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerialOptions] (val x: Self) extends AnyVal {
       
       inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       

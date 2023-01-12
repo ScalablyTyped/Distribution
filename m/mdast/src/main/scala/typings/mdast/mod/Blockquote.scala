@@ -23,7 +23,8 @@ object Blockquote {
     __obj.asInstanceOf[Blockquote]
   }
   
-  extension [Self <: Blockquote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blockquote] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[BlockContent | DefinitionContent]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

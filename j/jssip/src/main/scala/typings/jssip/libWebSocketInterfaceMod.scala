@@ -62,7 +62,8 @@ object libWebSocketInterfaceMod {
       __obj.asInstanceOf[DisconnectEvent]
     }
     
-    extension [Self <: DisconnectEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisconnectEvent] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libWebSocketInterfaceMod {
       __obj.asInstanceOf[WeightedSocket]
     }
     
-    extension [Self <: WeightedSocket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeightedSocket] (val x: Self) extends AnyVal {
       
       inline def setSocket(value: Socket): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
       

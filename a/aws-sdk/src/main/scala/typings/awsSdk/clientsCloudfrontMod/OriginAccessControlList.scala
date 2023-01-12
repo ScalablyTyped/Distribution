@@ -43,7 +43,8 @@ object OriginAccessControlList {
     __obj.asInstanceOf[OriginAccessControlList]
   }
   
-  extension [Self <: OriginAccessControlList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginAccessControlList] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

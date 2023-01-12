@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Drag]
     }
     
-    extension [Self <: Drag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drag] (val x: Self) extends AnyVal {
       
       inline def setDrag(value: (/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ Any) => Unit): Self = StObject.set(x, "drag", js.Any.fromFunction3(value))
       
@@ -107,7 +108,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object libStatisticStatisticMod extends Shortcut {
       __obj.asInstanceOf[StatisticComponent]
     }
     
-    extension [Self <: StatisticComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticComponent] (val x: Self) extends AnyVal {
       
       inline def setCountdown(value: NamedExoticComponent[CountdownProps]): Self = StObject.set(x, "Countdown", value.asInstanceOf[js.Any])
     }
@@ -72,7 +73,8 @@ object libStatisticStatisticMod extends Shortcut {
       __obj.asInstanceOf[StatisticProps]
     }
     
-    extension [Self <: StatisticProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatisticProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

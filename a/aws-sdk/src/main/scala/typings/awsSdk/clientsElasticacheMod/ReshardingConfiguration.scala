@@ -23,7 +23,8 @@ object ReshardingConfiguration {
     __obj.asInstanceOf[ReshardingConfiguration]
   }
   
-  extension [Self <: ReshardingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReshardingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setNodeGroupId(value: AllowedNodeGroupId): Self = StObject.set(x, "NodeGroupId", value.asInstanceOf[js.Any])
     

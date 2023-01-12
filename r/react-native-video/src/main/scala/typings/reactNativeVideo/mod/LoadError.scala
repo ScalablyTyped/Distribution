@@ -16,7 +16,8 @@ object LoadError {
     __obj.asInstanceOf[LoadError]
   }
   
-  extension [Self <: LoadError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadError] (val x: Self) extends AnyVal {
     
     inline def setError(value: _empty): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

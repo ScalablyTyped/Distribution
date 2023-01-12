@@ -35,7 +35,8 @@ object AnimationSettings {
     __obj.asInstanceOf[AnimationSettings]
   }
   
-  extension [Self <: AnimationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSettings] (val x: Self) extends AnyVal {
     
     inline def setPrefersReducedMotion(value: Boolean): Self = StObject.set(x, "prefersReducedMotion", value.asInstanceOf[js.Any])
     

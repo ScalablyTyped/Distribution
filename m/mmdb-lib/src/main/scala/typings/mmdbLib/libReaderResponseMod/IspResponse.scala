@@ -29,7 +29,8 @@ object IspResponse {
     __obj.asInstanceOf[IspResponse]
   }
   
-  extension [Self <: IspResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IspResponse] (val x: Self) extends AnyVal {
     
     inline def setIsp(value: String): Self = StObject.set(x, "isp", value.asInstanceOf[js.Any])
     

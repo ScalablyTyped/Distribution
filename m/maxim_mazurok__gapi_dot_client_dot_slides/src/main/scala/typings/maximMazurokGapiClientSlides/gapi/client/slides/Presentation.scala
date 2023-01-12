@@ -54,7 +54,8 @@ object Presentation {
     __obj.asInstanceOf[Presentation]
   }
   
-  extension [Self <: Presentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Presentation] (val x: Self) extends AnyVal {
     
     inline def setLayouts(value: js.Array[Page]): Self = StObject.set(x, "layouts", value.asInstanceOf[js.Any])
     

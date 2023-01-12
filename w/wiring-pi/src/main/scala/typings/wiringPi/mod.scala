@@ -694,7 +694,8 @@ object mod {
       __obj.asInstanceOf[PiBoardId_]
     }
     
-    extension [Self <: PiBoardId_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PiBoardId_] (val x: Self) extends AnyVal {
       
       inline def setMaker(value: Double): Self = StObject.set(x, "maker", value.asInstanceOf[js.Any])
       
@@ -723,7 +724,8 @@ object mod {
       __obj.asInstanceOf[tcs34725HSV]
     }
     
-    extension [Self <: tcs34725HSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: tcs34725HSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -750,7 +752,8 @@ object mod {
       __obj.asInstanceOf[tcs34725RGBC]
     }
     
-    extension [Self <: tcs34725RGBC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: tcs34725RGBC] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

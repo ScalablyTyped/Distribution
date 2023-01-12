@@ -17,7 +17,8 @@ object TreeCheckboxSelectionKeyType {
     __obj.asInstanceOf[TreeCheckboxSelectionKeyType]
   }
   
-  extension [Self <: TreeCheckboxSelectionKeyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeCheckboxSelectionKeyType] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

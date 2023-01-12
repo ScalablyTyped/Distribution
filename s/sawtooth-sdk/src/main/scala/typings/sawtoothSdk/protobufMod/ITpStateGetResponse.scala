@@ -20,7 +20,8 @@ object ITpStateGetResponse {
     __obj.asInstanceOf[ITpStateGetResponse]
   }
   
-  extension [Self <: ITpStateGetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpStateGetResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[ITpStateEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object SmsEncodedLength {
     __obj.asInstanceOf[SmsEncodedLength]
   }
   
-  extension [Self <: SmsEncodedLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmsEncodedLength] (val x: Self) extends AnyVal {
     
     inline def setByteCountLastSegment(value: Double): Self = StObject.set(x, "byteCountLastSegment", value.asInstanceOf[js.Any])
     

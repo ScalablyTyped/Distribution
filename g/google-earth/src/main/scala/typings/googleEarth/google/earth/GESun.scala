@@ -25,7 +25,8 @@ object GESun {
     __obj.asInstanceOf[GESun]
   }
   
-  extension [Self <: GESun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GESun] (val x: Self) extends AnyVal {
     
     inline def setGetVisibility(value: () => Boolean): Self = StObject.set(x, "getVisibility", js.Any.fromFunction0(value))
     

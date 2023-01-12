@@ -91,7 +91,8 @@ object Basecommit {
     __obj.asInstanceOf[Basecommit]
   }
   
-  extension [Self <: Basecommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Basecommit] (val x: Self) extends AnyVal {
     
     inline def setAhead_by(value: Double): Self = StObject.set(x, "ahead_by", value.asInstanceOf[js.Any])
     

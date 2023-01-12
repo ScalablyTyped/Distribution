@@ -19,7 +19,8 @@ object RefreshManagerConfig {
     __obj.asInstanceOf[RefreshManagerConfig]
   }
   
-  extension [Self <: RefreshManagerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshManagerConfig] (val x: Self) extends AnyVal {
     
     inline def setBootDelay(value: Double): Self = StObject.set(x, "bootDelay", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object MessageBoxesDefault {
     __obj.asInstanceOf[MessageBoxesDefault]
   }
   
-  extension [Self <: MessageBoxesDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBoxesDefault] (val x: Self) extends AnyVal {
     
     inline def setBaseClass(value: String): Self = StObject.set(x, "baseClass", value.asInstanceOf[js.Any])
     

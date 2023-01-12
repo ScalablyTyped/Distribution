@@ -28,7 +28,8 @@ object ActiveTrustedKeyGroups {
     __obj.asInstanceOf[ActiveTrustedKeyGroups]
   }
   
-  extension [Self <: ActiveTrustedKeyGroups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveTrustedKeyGroups] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

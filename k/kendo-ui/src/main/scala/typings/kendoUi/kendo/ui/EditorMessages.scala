@@ -213,7 +213,8 @@ object EditorMessages {
     __obj.asInstanceOf[EditorMessages]
   }
   
-  extension [Self <: EditorMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorMessages] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityTab(value: String): Self = StObject.set(x, "accessibilityTab", value.asInstanceOf[js.Any])
     

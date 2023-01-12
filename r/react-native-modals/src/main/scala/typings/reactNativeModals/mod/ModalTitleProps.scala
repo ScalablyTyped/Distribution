@@ -26,7 +26,8 @@ object ModalTitleProps {
     __obj.asInstanceOf[ModalTitleProps]
   }
   
-  extension [Self <: ModalTitleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalTitleProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object DrawProperties {
     __obj.asInstanceOf[DrawProperties]
   }
   
-  extension [Self <: DrawProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveAction(value: DrawActionProperties): Self = StObject.set(x, "activeAction", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object RawValue {
     __obj.asInstanceOf[RawValue]
   }
   
-  extension [Self <: RawValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawValue] (val x: Self) extends AnyVal {
     
     inline def setLastValue(value: Double): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
     

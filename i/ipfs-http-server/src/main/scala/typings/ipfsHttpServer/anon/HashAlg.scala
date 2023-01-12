@@ -18,7 +18,8 @@ object HashAlg {
     __obj.asInstanceOf[HashAlg]
   }
   
-  extension [Self <: HashAlg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HashAlg] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

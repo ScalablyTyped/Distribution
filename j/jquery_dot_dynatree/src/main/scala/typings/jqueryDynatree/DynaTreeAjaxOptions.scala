@@ -21,7 +21,8 @@ object DynaTreeAjaxOptions {
     __obj.asInstanceOf[DynaTreeAjaxOptions]
   }
   
-  extension [Self <: DynaTreeAjaxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynaTreeAjaxOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

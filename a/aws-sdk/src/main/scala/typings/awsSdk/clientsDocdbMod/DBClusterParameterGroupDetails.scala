@@ -23,7 +23,8 @@ object DBClusterParameterGroupDetails {
     __obj.asInstanceOf[DBClusterParameterGroupDetails]
   }
   
-  extension [Self <: DBClusterParameterGroupDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterParameterGroupDetails] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

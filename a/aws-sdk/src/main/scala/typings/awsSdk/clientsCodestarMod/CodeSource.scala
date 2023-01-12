@@ -18,7 +18,8 @@ object CodeSource {
     __obj.asInstanceOf[CodeSource]
   }
   
-  extension [Self <: CodeSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSource] (val x: Self) extends AnyVal {
     
     inline def setS3(value: S3Location): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
   }

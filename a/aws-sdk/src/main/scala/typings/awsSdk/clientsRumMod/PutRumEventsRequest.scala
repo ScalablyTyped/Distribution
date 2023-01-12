@@ -44,7 +44,8 @@ object PutRumEventsRequest {
     __obj.asInstanceOf[PutRumEventsRequest]
   }
   
-  extension [Self <: PutRumEventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRumEventsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppMonitorDetails(value: AppMonitorDetails): Self = StObject.set(x, "AppMonitorDetails", value.asInstanceOf[js.Any])
     

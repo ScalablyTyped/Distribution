@@ -20,7 +20,8 @@ object JobOutboundMessageStart {
     __obj.asInstanceOf[JobOutboundMessageStart]
   }
   
-  extension [Self <: JobOutboundMessageStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOutboundMessageStart] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Start): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

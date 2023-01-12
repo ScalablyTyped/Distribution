@@ -15,7 +15,8 @@ object IColorHelperStatics {
     __obj.asInstanceOf[IColorHelperStatics]
   }
   
-  extension [Self <: IColorHelperStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColorHelperStatics] (val x: Self) extends AnyVal {
     
     inline def setFromArgb(value: (Double, Double, Double, Double) => Color): Self = StObject.set(x, "fromArgb", js.Any.fromFunction4(value))
   }

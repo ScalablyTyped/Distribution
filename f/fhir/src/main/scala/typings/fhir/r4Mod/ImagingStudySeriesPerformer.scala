@@ -25,7 +25,8 @@ object ImagingStudySeriesPerformer {
     __obj.asInstanceOf[ImagingStudySeriesPerformer]
   }
   
-  extension [Self <: ImagingStudySeriesPerformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagingStudySeriesPerformer] (val x: Self) extends AnyVal {
     
     inline def setActor(value: Reference): Self = StObject.set(x, "actor", value.asInstanceOf[js.Any])
     

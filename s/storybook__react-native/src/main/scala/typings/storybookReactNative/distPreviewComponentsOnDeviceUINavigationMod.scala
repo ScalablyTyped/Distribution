@@ -41,7 +41,8 @@ object distPreviewComponentsOnDeviceUINavigationMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setInitialUiVisible(value: Boolean): Self = StObject.set(x, "initialUiVisible", value.asInstanceOf[js.Any])
       

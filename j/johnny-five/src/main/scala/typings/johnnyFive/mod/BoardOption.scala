@@ -25,7 +25,8 @@ object BoardOption {
     __obj.asInstanceOf[BoardOption]
   }
   
-  extension [Self <: BoardOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoardOption] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     

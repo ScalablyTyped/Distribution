@@ -89,7 +89,8 @@ object distModelsProductMod {
       __obj.asInstanceOf[Product]
     }
     
-    extension [Self <: Product](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: String): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object distModelsProductMod {
       __obj.asInstanceOf[ProductAction]
     }
     
-    extension [Self <: ProductAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductAction] (val x: Self) extends AnyVal {
       
       inline def setAction(value: ProductActionEnum): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -189,7 +191,8 @@ object distModelsProductMod {
       __obj.asInstanceOf[Transaction]
     }
     
-    extension [Self <: Transaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transaction] (val x: Self) extends AnyVal {
       
       inline def setAffiliation(value: String): Self = StObject.set(x, "affiliation", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object Gutter {
     __obj.asInstanceOf[Gutter]
   }
   
-  extension [Self <: Gutter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gutter] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Object): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

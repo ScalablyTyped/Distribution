@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ArrayOptionsanyanyPartial]
     }
     
-    extension [Self <: ArrayOptionsanyanyPartial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayOptionsanyanyPartial] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* err */ Unit, /* value */ js.UndefOr[js.Array[Change]]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Strict]
     }
     
-    extension [Self <: Strict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

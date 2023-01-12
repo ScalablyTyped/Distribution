@@ -19,7 +19,8 @@ object NormalizedVertex {
     __obj.asInstanceOf[NormalizedVertex]
   }
   
-  extension [Self <: NormalizedVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedVertex] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

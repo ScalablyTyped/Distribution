@@ -138,7 +138,8 @@ object SceneViewProperties {
     __obj.asInstanceOf[SceneViewProperties]
   }
   
-  extension [Self <: SceneViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewProperties] (val x: Self) extends AnyVal {
     
     inline def setAlphaCompositingEnabled(value: Boolean): Self = StObject.set(x, "alphaCompositingEnabled", value.asInstanceOf[js.Any])
     

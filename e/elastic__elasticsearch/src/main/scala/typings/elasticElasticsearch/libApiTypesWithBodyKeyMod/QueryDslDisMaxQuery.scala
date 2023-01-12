@@ -19,7 +19,8 @@ object QueryDslDisMaxQuery {
     __obj.asInstanceOf[QueryDslDisMaxQuery]
   }
   
-  extension [Self <: QueryDslDisMaxQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslDisMaxQuery] (val x: Self) extends AnyVal {
     
     inline def setQueries(value: js.Array[QueryDslQueryContainer]): Self = StObject.set(x, "queries", value.asInstanceOf[js.Any])
     

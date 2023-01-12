@@ -15,7 +15,8 @@ object VirtualRouterListener {
     __obj.asInstanceOf[VirtualRouterListener]
   }
   
-  extension [Self <: VirtualRouterListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualRouterListener] (val x: Self) extends AnyVal {
     
     inline def setPortMapping(value: PortMapping): Self = StObject.set(x, "portMapping", value.asInstanceOf[js.Any])
   }

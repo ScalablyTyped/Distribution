@@ -49,7 +49,8 @@ object libPopupMod {
       __obj.asInstanceOf[IPopupCascaderProps]
     }
     
-    extension [Self <: IPopupCascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopupCascaderProps] (val x: Self) extends AnyVal {
       
       inline def setCascader(value: ReactElement): Self = StObject.set(x, "cascader", value.asInstanceOf[js.Any])
       

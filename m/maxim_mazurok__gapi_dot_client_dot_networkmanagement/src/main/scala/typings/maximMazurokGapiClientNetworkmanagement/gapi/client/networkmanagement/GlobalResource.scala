@@ -17,7 +17,8 @@ object GlobalResource {
     __obj.asInstanceOf[GlobalResource]
   }
   
-  extension [Self <: GlobalResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalResource] (val x: Self) extends AnyVal {
     
     inline def setConnectivityTests(value: ConnectivityTestsResource): Self = StObject.set(x, "connectivityTests", value.asInstanceOf[js.Any])
     

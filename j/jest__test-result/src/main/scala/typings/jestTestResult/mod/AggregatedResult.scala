@@ -35,7 +35,8 @@ object AggregatedResult {
     __obj.asInstanceOf[AggregatedResult]
   }
   
-  extension [Self <: AggregatedResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResult] (val x: Self) extends AnyVal {
     
     inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
     

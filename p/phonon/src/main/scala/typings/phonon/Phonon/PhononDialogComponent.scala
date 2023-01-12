@@ -15,7 +15,8 @@ object PhononDialogComponent {
     __obj.asInstanceOf[PhononDialogComponent]
   }
   
-  extension [Self <: PhononDialogComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononDialogComponent] (val x: Self) extends AnyVal {
     
     inline def setOn(value: (String, js.Function1[/* value */ js.UndefOr[Any], Unit]) => PhononDialogComponent): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
   }

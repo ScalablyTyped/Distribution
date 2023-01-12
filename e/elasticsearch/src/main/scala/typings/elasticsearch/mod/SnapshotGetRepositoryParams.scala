@@ -21,7 +21,8 @@ object SnapshotGetRepositoryParams {
     __obj.asInstanceOf[SnapshotGetRepositoryParams]
   }
   
-  extension [Self <: SnapshotGetRepositoryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotGetRepositoryParams] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

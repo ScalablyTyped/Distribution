@@ -33,7 +33,8 @@ object ListEngagementsRequest {
     __obj.asInstanceOf[ListEngagementsRequest]
   }
   
-  extension [Self <: ListEngagementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEngagementsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncidentId(value: IncidentId): Self = StObject.set(x, "IncidentId", value.asInstanceOf[js.Any])
     

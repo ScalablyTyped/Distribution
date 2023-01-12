@@ -38,7 +38,8 @@ object DashStyleHatching {
     __obj.asInstanceOf[DashStyleHatching]
   }
   
-  extension [Self <: DashStyleHatching](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashStyleHatching] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorDashStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

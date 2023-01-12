@@ -92,7 +92,8 @@ object declarationInputTypePinchInputMod {
       __obj.asInstanceOf[PinchInputOption]
     }
     
-    extension [Self <: PinchInputOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinchInputOption] (val x: Self) extends AnyVal {
       
       inline def setInputType(value: js.Array[String]): Self = StObject.set(x, "inputType", value.asInstanceOf[js.Any])
       

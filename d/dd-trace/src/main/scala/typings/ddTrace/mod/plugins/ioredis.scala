@@ -66,7 +66,8 @@ object ioredis {
     __obj.asInstanceOf[ioredis]
   }
   
-  extension [Self <: ioredis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ioredis] (val x: Self) extends AnyVal {
     
     inline def setAllowlist(
       value: String | js.RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* command */ String, Boolean])])

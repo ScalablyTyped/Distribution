@@ -77,7 +77,8 @@ object ColumnTemplateBaseProperties {
     __obj.asInstanceOf[ColumnTemplateBaseProperties]
   }
   
-  extension [Self <: ColumnTemplateBaseProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnTemplateBaseProperties] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc_ | desc_): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

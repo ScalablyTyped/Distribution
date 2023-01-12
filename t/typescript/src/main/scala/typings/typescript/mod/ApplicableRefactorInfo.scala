@@ -38,7 +38,8 @@ object ApplicableRefactorInfo {
     __obj.asInstanceOf[ApplicableRefactorInfo]
   }
   
-  extension [Self <: ApplicableRefactorInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicableRefactorInfo] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[RefactorActionInfo]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

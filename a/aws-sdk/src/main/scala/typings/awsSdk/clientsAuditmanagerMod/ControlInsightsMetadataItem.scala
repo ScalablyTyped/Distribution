@@ -33,7 +33,8 @@ object ControlInsightsMetadataItem {
     __obj.asInstanceOf[ControlInsightsMetadataItem]
   }
   
-  extension [Self <: ControlInsightsMetadataItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlInsightsMetadataItem] (val x: Self) extends AnyVal {
     
     inline def setEvidenceInsights(value: EvidenceInsights): Self = StObject.set(x, "evidenceInsights", value.asInstanceOf[js.Any])
     

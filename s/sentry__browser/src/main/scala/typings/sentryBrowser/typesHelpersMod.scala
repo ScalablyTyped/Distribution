@@ -74,7 +74,8 @@ object typesHelpersMod {
       __obj.asInstanceOf[ReportDialogOptions]
     }
     
-    extension [Self <: ReportDialogOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportDialogOptions] (val x: Self) extends AnyVal {
       
       inline def setDsn(value: DsnLike): Self = StObject.set(x, "dsn", value.asInstanceOf[js.Any])
       

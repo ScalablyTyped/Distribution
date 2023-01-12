@@ -71,7 +71,8 @@ object NightwatchSeleniumOptions {
     __obj.asInstanceOf[NightwatchSeleniumOptions]
   }
   
-  extension [Self <: NightwatchSeleniumOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchSeleniumOptions] (val x: Self) extends AnyVal {
     
     inline def setCheck_process_delay(value: Double): Self = StObject.set(x, "check_process_delay", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ListShardsInput {
     __obj.asInstanceOf[ListShardsInput]
   }
   
-  extension [Self <: ListShardsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListShardsInput] (val x: Self) extends AnyVal {
     
     inline def setExclusiveStartShardId(value: ShardId): Self = StObject.set(x, "ExclusiveStartShardId", value.asInstanceOf[js.Any])
     

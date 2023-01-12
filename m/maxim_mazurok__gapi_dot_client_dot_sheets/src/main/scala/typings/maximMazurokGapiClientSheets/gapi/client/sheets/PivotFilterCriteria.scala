@@ -31,7 +31,8 @@ object PivotFilterCriteria {
     __obj.asInstanceOf[PivotFilterCriteria]
   }
   
-  extension [Self <: PivotFilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotFilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: BooleanCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object FileSystemPermission {
     __obj.asInstanceOf[FileSystemPermission]
   }
   
-  extension [Self <: FileSystemPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemPermission] (val x: Self) extends AnyVal {
     
     inline def setFileSystem(value: js.Array[write_ | retainEntries | directory | requestFileSystem]): Self = StObject.set(x, "fileSystem", value.asInstanceOf[js.Any])
     

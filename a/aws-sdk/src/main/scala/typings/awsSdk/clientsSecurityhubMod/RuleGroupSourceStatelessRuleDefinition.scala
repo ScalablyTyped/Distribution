@@ -23,7 +23,8 @@ object RuleGroupSourceStatelessRuleDefinition {
     __obj.asInstanceOf[RuleGroupSourceStatelessRuleDefinition]
   }
   
-  extension [Self <: RuleGroupSourceStatelessRuleDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSourceStatelessRuleDefinition] (val x: Self) extends AnyVal {
     
     inline def setActions(value: NonEmptyStringList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

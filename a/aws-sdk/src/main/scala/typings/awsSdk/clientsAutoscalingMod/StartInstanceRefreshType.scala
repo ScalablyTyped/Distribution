@@ -33,7 +33,8 @@ object StartInstanceRefreshType {
     __obj.asInstanceOf[StartInstanceRefreshType]
   }
   
-  extension [Self <: StartInstanceRefreshType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartInstanceRefreshType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

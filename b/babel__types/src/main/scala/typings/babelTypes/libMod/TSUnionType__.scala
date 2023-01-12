@@ -25,7 +25,8 @@ object TSUnionType__ {
     __obj.asInstanceOf[TSUnionType__]
   }
   
-  extension [Self <: TSUnionType__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSUnionType__] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSUnionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

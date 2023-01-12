@@ -15,7 +15,8 @@ object DisableWarnings {
     __obj.asInstanceOf[DisableWarnings]
   }
   
-  extension [Self <: DisableWarnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableWarnings] (val x: Self) extends AnyVal {
     
     inline def setDisableWarnings(value: Boolean): Self = StObject.set(x, "disableWarnings", value.asInstanceOf[js.Any])
   }

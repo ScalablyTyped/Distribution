@@ -22,7 +22,8 @@ object DocumentSetContent {
     __obj.asInstanceOf[DocumentSetContent]
   }
   
-  extension [Self <: DocumentSetContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSetContent] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: NullableOption[ContentTypeInfo]): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
     

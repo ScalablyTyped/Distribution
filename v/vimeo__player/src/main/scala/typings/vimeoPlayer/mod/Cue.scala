@@ -23,7 +23,8 @@ object Cue {
     __obj.asInstanceOf[Cue]
   }
   
-  extension [Self <: Cue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cue] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

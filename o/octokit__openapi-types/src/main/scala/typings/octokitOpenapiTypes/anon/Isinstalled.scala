@@ -25,7 +25,8 @@ object Isinstalled {
     __obj.asInstanceOf[Isinstalled]
   }
   
-  extension [Self <: Isinstalled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isinstalled] (val x: Self) extends AnyVal {
     
     inline def setEffective_date(value: String): Self = StObject.set(x, "effective_date", value.asInstanceOf[js.Any])
     

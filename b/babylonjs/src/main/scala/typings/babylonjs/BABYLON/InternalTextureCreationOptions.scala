@@ -41,7 +41,8 @@ object InternalTextureCreationOptions {
     __obj.asInstanceOf[InternalTextureCreationOptions]
   }
   
-  extension [Self <: InternalTextureCreationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalTextureCreationOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateMipMaps(value: Boolean): Self = StObject.set(x, "createMipMaps", value.asInstanceOf[js.Any])
     

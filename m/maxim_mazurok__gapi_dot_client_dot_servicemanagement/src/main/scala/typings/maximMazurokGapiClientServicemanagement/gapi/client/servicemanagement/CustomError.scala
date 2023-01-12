@@ -19,7 +19,8 @@ object CustomError {
     __obj.asInstanceOf[CustomError]
   }
   
-  extension [Self <: CustomError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomError] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[CustomErrorRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

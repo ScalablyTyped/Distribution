@@ -15,7 +15,8 @@ object AbstractMessage {
     __obj.asInstanceOf[AbstractMessage]
   }
   
-  extension [Self <: AbstractMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractMessage] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

@@ -234,7 +234,8 @@ object sapUxapLibraryMod {
       __obj.asInstanceOf[IHeaderContent]
     }
     
-    extension [Self <: IHeaderContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderContent] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_uxap_IHeaderContent(value: Boolean): Self = StObject.set(x, "__implements__sap_uxap_IHeaderContent", value.asInstanceOf[js.Any])
     }
@@ -251,7 +252,8 @@ object sapUxapLibraryMod {
       __obj.asInstanceOf[IHeaderTitle]
     }
     
-    extension [Self <: IHeaderTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeaderTitle] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_uxap_IHeaderTitle(value: Boolean): Self = StObject.set(x, "__implements__sap_uxap_IHeaderTitle", value.asInstanceOf[js.Any])
     }

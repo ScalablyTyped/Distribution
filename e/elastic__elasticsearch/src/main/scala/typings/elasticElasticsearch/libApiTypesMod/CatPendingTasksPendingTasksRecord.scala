@@ -29,7 +29,8 @@ object CatPendingTasksPendingTasksRecord {
     __obj.asInstanceOf[CatPendingTasksPendingTasksRecord]
   }
   
-  extension [Self <: CatPendingTasksPendingTasksRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatPendingTasksPendingTasksRecord] (val x: Self) extends AnyVal {
     
     inline def setInsertOrder(value: String): Self = StObject.set(x, "insertOrder", value.asInstanceOf[js.Any])
     

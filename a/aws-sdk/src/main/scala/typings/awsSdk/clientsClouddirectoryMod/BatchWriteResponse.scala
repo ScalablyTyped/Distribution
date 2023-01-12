@@ -18,7 +18,8 @@ object BatchWriteResponse {
     __obj.asInstanceOf[BatchWriteResponse]
   }
   
-  extension [Self <: BatchWriteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchWriteResponse] (val x: Self) extends AnyVal {
     
     inline def setResponses(value: BatchWriteOperationResponseList): Self = StObject.set(x, "Responses", value.asInstanceOf[js.Any])
     

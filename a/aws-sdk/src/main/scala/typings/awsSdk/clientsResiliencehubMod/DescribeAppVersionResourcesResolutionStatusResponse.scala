@@ -43,7 +43,8 @@ object DescribeAppVersionResourcesResolutionStatusResponse {
     __obj.asInstanceOf[DescribeAppVersionResourcesResolutionStatusResponse]
   }
   
-  extension [Self <: DescribeAppVersionResourcesResolutionStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAppVersionResourcesResolutionStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

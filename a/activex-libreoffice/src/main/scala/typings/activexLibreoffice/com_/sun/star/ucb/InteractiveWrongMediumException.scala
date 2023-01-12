@@ -22,7 +22,8 @@ object InteractiveWrongMediumException {
     __obj.asInstanceOf[InteractiveWrongMediumException]
   }
   
-  extension [Self <: InteractiveWrongMediumException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveWrongMediumException] (val x: Self) extends AnyVal {
     
     inline def setMedium(value: Any): Self = StObject.set(x, "Medium", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object UpdateDatasourcePackagesRequest {
     __obj.asInstanceOf[UpdateDatasourcePackagesRequest]
   }
   
-  extension [Self <: UpdateDatasourcePackagesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDatasourcePackagesRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasourcePackages(value: DatasourcePackageList): Self = StObject.set(x, "DatasourcePackages", value.asInstanceOf[js.Any])
     

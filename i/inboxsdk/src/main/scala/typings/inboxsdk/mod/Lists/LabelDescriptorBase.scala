@@ -21,7 +21,8 @@ object LabelDescriptorBase {
     __obj.asInstanceOf[LabelDescriptorBase]
   }
   
-  extension [Self <: LabelDescriptorBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelDescriptorBase] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

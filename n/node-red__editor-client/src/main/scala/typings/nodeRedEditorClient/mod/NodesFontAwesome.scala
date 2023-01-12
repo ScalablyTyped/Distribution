@@ -17,7 +17,8 @@ object NodesFontAwesome {
     __obj.asInstanceOf[NodesFontAwesome]
   }
   
-  extension [Self <: NodesFontAwesome](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesFontAwesome] (val x: Self) extends AnyVal {
     
     inline def setGetIconList(value: () => js.Array[String]): Self = StObject.set(x, "getIconList", js.Any.fromFunction0(value))
     

@@ -28,7 +28,8 @@ object IdFormat {
     __obj.asInstanceOf[IdFormat]
   }
   
-  extension [Self <: IdFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdFormat] (val x: Self) extends AnyVal {
     
     inline def setDeadline(value: js.Date): Self = StObject.set(x, "Deadline", value.asInstanceOf[js.Any])
     

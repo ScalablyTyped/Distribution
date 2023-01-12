@@ -21,7 +21,8 @@ object UrlEntity {
     __obj.asInstanceOf[UrlEntity]
   }
   
-  extension [Self <: UrlEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlEntity] (val x: Self) extends AnyVal {
     
     inline def setDisplay_url(value: String): Self = StObject.set(x, "display_url", value.asInstanceOf[js.Any])
     

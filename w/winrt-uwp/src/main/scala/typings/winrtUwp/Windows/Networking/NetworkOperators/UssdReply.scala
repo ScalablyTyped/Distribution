@@ -20,7 +20,8 @@ object UssdReply {
     __obj.asInstanceOf[UssdReply]
   }
   
-  extension [Self <: UssdReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UssdReply] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: UssdMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

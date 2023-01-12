@@ -16,7 +16,8 @@ object UseFiltersState {
     __obj.asInstanceOf[UseFiltersState[D]]
   }
   
-  extension [Self <: UseFiltersState[?], D /* <: js.Object */](x: Self & UseFiltersState[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseFiltersState[?], D /* <: js.Object */] (val x: Self & UseFiltersState[D]) extends AnyVal {
     
     inline def setFilters(value: Filters[D]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

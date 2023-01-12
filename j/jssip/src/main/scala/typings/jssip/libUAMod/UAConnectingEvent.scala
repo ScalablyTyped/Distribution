@@ -18,7 +18,8 @@ object UAConnectingEvent {
     __obj.asInstanceOf[UAConnectingEvent]
   }
   
-  extension [Self <: UAConnectingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UAConnectingEvent] (val x: Self) extends AnyVal {
     
     inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
     

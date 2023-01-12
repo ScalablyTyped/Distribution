@@ -16,7 +16,8 @@ object UrlUtil {
     __obj.asInstanceOf[UrlUtil]
   }
   
-  extension [Self <: UrlUtil](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlUtil] (val x: Self) extends AnyVal {
     
     inline def setMakeAbsolute(value: String => String): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction1(value))
   }

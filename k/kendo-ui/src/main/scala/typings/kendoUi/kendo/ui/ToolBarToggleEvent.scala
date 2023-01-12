@@ -22,7 +22,8 @@ object ToolBarToggleEvent {
     __obj.asInstanceOf[ToolBarToggleEvent]
   }
   
-  extension [Self <: ToolBarToggleEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolBarToggleEvent] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

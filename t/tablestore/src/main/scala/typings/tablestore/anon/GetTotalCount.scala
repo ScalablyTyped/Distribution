@@ -24,7 +24,8 @@ object GetTotalCount {
     __obj.asInstanceOf[GetTotalCount]
   }
   
-  extension [Self <: GetTotalCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTotalCount] (val x: Self) extends AnyVal {
     
     inline def setGetTotalCount(value: Boolean): Self = StObject.set(x, "getTotalCount", value.asInstanceOf[js.Any])
     

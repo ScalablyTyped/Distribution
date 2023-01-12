@@ -25,7 +25,8 @@ object MediaRecorderOptions {
     __obj.asInstanceOf[MediaRecorderOptions]
   }
   
-  extension [Self <: MediaRecorderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaRecorderOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioBitsPerSecond(value: Double): Self = StObject.set(x, "audioBitsPerSecond", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object BTreeIndexField {
     __obj.asInstanceOf[BTreeIndexField]
   }
   
-  extension [Self <: BTreeIndexField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BTreeIndexField] (val x: Self) extends AnyVal {
     
     inline def setDatatype(value: String): Self = StObject.set(x, "datatype", value.asInstanceOf[js.Any])
     

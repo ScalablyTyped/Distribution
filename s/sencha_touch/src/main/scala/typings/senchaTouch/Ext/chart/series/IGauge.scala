@@ -222,7 +222,8 @@ object IGauge {
     __obj.asInstanceOf[IGauge]
   }
   
-  extension [Self <: IGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGauge] (val x: Self) extends AnyVal {
     
     inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
     

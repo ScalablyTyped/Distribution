@@ -38,7 +38,8 @@ object ListRuleGroupsRequest {
     __obj.asInstanceOf[ListRuleGroupsRequest]
   }
   
-  extension [Self <: ListRuleGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRuleGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setManagedType(value: ResourceManagedType): Self = StObject.set(x, "ManagedType", value.asInstanceOf[js.Any])
     

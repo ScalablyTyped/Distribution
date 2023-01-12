@@ -15,7 +15,8 @@ object SecureContext {
     __obj.asInstanceOf[SecureContext]
   }
   
-  extension [Self <: SecureContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureContext] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

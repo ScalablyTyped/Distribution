@@ -35,7 +35,8 @@ object Winreg {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object Winreg {
       __obj.asInstanceOf[Registry]
     }
     
-    extension [Self <: Registry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Registry] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -310,7 +312,8 @@ object Winreg {
       __obj.asInstanceOf[RegistryItem]
     }
     
-    extension [Self <: RegistryItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistryItem] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       

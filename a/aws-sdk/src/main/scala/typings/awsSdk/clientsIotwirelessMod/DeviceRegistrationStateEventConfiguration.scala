@@ -23,7 +23,8 @@ object DeviceRegistrationStateEventConfiguration {
     __obj.asInstanceOf[DeviceRegistrationStateEventConfiguration]
   }
   
-  extension [Self <: DeviceRegistrationStateEventConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRegistrationStateEventConfiguration] (val x: Self) extends AnyVal {
     
     inline def setSidewalk(value: SidewalkEventNotificationConfigurations): Self = StObject.set(x, "Sidewalk", value.asInstanceOf[js.Any])
     

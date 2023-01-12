@@ -27,7 +27,8 @@ object mod {
         __obj.asInstanceOf[HighChartsNGChart]
       }
       
-      extension [Self <: HighChartsNGChart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HighChartsNGChart] (val x: Self) extends AnyVal {
         
         inline def setGetHighcharts(value: () => Any): Self = StObject.set(x, "getHighcharts", js.Any.fromFunction0(value))
       }
@@ -80,7 +81,8 @@ object mod {
         __obj.asInstanceOf[HighChartsNGConfig]
       }
       
-      extension [Self <: HighChartsNGConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HighChartsNGConfig] (val x: Self) extends AnyVal {
         
         inline def setFunc(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ChartObject */ /* chart */ Any => Unit

@@ -19,7 +19,8 @@ object ScrollViewRefreshEvent {
     __obj.asInstanceOf[ScrollViewRefreshEvent]
   }
   
-  extension [Self <: ScrollViewRefreshEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollViewRefreshEvent] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

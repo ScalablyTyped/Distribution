@@ -91,7 +91,8 @@ object UserNaturalData {
     __obj.asInstanceOf[UserNaturalData]
   }
   
-  extension [Self <: UserNaturalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserNaturalData] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

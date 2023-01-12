@@ -16,7 +16,8 @@ object KnockoutStatic {
     __obj.asInstanceOf[KnockoutStatic]
   }
   
-  extension [Self <: KnockoutStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
     
     inline def setViewmodel(value: KnockoutViewModelStatic): Self = StObject.set(x, "viewmodel", value.asInstanceOf[js.Any])
   }

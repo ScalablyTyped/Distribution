@@ -23,7 +23,8 @@ object IotSiteWiseCustomerManagedDatastoreS3Storage {
     __obj.asInstanceOf[IotSiteWiseCustomerManagedDatastoreS3Storage]
   }
   
-  extension [Self <: IotSiteWiseCustomerManagedDatastoreS3Storage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IotSiteWiseCustomerManagedDatastoreS3Storage] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
     

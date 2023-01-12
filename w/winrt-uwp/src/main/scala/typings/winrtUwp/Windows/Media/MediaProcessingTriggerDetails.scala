@@ -18,7 +18,8 @@ object MediaProcessingTriggerDetails {
     __obj.asInstanceOf[MediaProcessingTriggerDetails]
   }
   
-  extension [Self <: MediaProcessingTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaProcessingTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ValueSet): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

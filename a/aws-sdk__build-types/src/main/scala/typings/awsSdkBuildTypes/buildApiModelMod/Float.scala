@@ -25,7 +25,8 @@ object Float {
     __obj.asInstanceOf[Float]
   }
   
-  extension [Self <: Float](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Float] (val x: Self) extends AnyVal {
     
     inline def setMax(value: scala.Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

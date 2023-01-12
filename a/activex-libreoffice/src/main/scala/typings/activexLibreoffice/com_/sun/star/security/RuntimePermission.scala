@@ -21,7 +21,8 @@ object RuntimePermission {
     __obj.asInstanceOf[RuntimePermission]
   }
   
-  extension [Self <: RuntimePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimePermission] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

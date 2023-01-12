@@ -19,7 +19,8 @@ object SetHardwareConcurrencyOverrideRequest {
     __obj.asInstanceOf[SetHardwareConcurrencyOverrideRequest]
   }
   
-  extension [Self <: SetHardwareConcurrencyOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetHardwareConcurrencyOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setHardwareConcurrency(value: integer): Self = StObject.set(x, "hardwareConcurrency", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object SearchShardsResponse {
     __obj.asInstanceOf[SearchShardsResponse]
   }
   
-  extension [Self <: SearchShardsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchShardsResponse] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: Record[IndexName, SearchShardsShardStoreIndex]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

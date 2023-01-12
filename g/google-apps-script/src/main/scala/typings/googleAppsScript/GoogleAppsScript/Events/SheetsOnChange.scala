@@ -19,7 +19,8 @@ object SheetsOnChange {
     __obj.asInstanceOf[SheetsOnChange]
   }
   
-  extension [Self <: SheetsOnChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsOnChange] (val x: Self) extends AnyVal {
     
     inline def setChangeType(value: SheetsOnChangeChangeType): Self = StObject.set(x, "changeType", value.asInstanceOf[js.Any])
   }

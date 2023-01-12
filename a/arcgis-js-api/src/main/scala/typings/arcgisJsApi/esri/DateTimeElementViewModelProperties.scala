@@ -30,7 +30,8 @@ object DateTimeElementViewModelProperties {
     __obj.asInstanceOf[DateTimeElementViewModelProperties]
   }
   
-  extension [Self <: DateTimeElementViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeElementViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setState(value: ready): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

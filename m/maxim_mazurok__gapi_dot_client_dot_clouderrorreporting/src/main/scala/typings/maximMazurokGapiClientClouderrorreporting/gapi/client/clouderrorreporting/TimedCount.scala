@@ -22,7 +22,8 @@ object TimedCount {
     __obj.asInstanceOf[TimedCount]
   }
   
-  extension [Self <: TimedCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

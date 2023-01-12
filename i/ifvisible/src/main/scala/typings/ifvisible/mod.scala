@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[IdleInfo]
     }
     
-    extension [Self <: IdleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdleInfo] (val x: Self) extends AnyVal {
       
       inline def setIdleFor(value: Double): Self = StObject.set(x, "idleFor", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OnEveryReturn]
     }
     
-    extension [Self <: OnEveryReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnEveryReturn] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

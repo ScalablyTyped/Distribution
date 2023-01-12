@@ -17,7 +17,8 @@ object AsyncContainerModule {
     __obj.asInstanceOf[AsyncContainerModule]
   }
   
-  extension [Self <: AsyncContainerModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncContainerModule] (val x: Self) extends AnyVal {
     
     inline def setRegistry(value: AsyncContainerModuleCallBack): Self = StObject.set(x, "registry", value.asInstanceOf[js.Any])
   }

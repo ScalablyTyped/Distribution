@@ -21,7 +21,8 @@ object ImageBackgroundProps {
     __obj.asInstanceOf[ImageBackgroundProps]
   }
   
-  extension [Self <: ImageBackgroundProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageBackgroundProps] (val x: Self) extends AnyVal {
     
     inline def setImageRef(value: /* image */ Image => Unit): Self = StObject.set(x, "imageRef", js.Any.fromFunction1(value))
     

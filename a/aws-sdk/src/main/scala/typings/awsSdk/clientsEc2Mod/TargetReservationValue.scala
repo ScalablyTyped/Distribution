@@ -23,7 +23,8 @@ object TargetReservationValue {
     __obj.asInstanceOf[TargetReservationValue]
   }
   
-  extension [Self <: TargetReservationValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetReservationValue] (val x: Self) extends AnyVal {
     
     inline def setReservationValue(value: ReservationValue): Self = StObject.set(x, "ReservationValue", value.asInstanceOf[js.Any])
     

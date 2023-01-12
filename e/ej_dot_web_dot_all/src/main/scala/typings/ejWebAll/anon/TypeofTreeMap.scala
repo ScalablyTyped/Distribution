@@ -20,7 +20,8 @@ object TypeofTreeMap {
     __obj.asInstanceOf[TypeofTreeMap]
   }
   
-  extension [Self <: TypeofTreeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTreeMap] (val x: Self) extends AnyVal {
     
     inline def setFn(value: TreeMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

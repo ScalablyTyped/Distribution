@@ -15,7 +15,8 @@ object JsxClosingTagInfo {
     __obj.asInstanceOf[JsxClosingTagInfo]
   }
   
-  extension [Self <: JsxClosingTagInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxClosingTagInfo] (val x: Self) extends AnyVal {
     
     inline def setNewText(value: java.lang.String): Self = StObject.set(x, "newText", value.asInstanceOf[js.Any])
   }

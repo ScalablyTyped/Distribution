@@ -36,7 +36,8 @@ object XDriverAccess {
     __obj.asInstanceOf[XDriverAccess]
   }
   
-  extension [Self <: XDriverAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDriverAccess] (val x: Self) extends AnyVal {
     
     inline def setGetDriverByURL(value: String => XDriver): Self = StObject.set(x, "getDriverByURL", js.Any.fromFunction1(value))
   }

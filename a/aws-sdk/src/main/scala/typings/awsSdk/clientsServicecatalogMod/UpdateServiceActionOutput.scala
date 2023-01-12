@@ -18,7 +18,8 @@ object UpdateServiceActionOutput {
     __obj.asInstanceOf[UpdateServiceActionOutput]
   }
   
-  extension [Self <: UpdateServiceActionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceActionOutput] (val x: Self) extends AnyVal {
     
     inline def setServiceActionDetail(value: ServiceActionDetail): Self = StObject.set(x, "ServiceActionDetail", value.asInstanceOf[js.Any])
     

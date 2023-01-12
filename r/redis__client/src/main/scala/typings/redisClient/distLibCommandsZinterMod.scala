@@ -43,7 +43,8 @@ object distLibCommandsZinterMod {
       __obj.asInstanceOf[ZInterOptions]
     }
     
-    extension [Self <: ZInterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZInterOptions] (val x: Self) extends AnyVal {
       
       inline def setAGGREGATE(value: SUM | MIN | MAX): Self = StObject.set(x, "AGGREGATE", value.asInstanceOf[js.Any])
       

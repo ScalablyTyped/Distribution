@@ -41,7 +41,8 @@ object XSheetOperation {
     __obj.asInstanceOf[XSheetOperation]
   }
   
-  extension [Self <: XSheetOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetOperation] (val x: Self) extends AnyVal {
     
     inline def setClearContents(value: Double => Unit): Self = StObject.set(x, "clearContents", js.Any.fromFunction1(value))
     

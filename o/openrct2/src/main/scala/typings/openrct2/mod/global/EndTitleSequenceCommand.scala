@@ -19,7 +19,8 @@ object EndTitleSequenceCommand {
     __obj.asInstanceOf[EndTitleSequenceCommand]
   }
   
-  extension [Self <: EndTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setType(value: end): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object CheckboxRadioOptions {
     __obj.asInstanceOf[CheckboxRadioOptions]
   }
   
-  extension [Self <: CheckboxRadioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxRadioOptions] (val x: Self) extends AnyVal {
     
     inline def setMini(value: Boolean): Self = StObject.set(x, "mini", value.asInstanceOf[js.Any])
     

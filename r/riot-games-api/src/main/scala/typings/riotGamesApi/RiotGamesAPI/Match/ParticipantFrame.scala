@@ -44,7 +44,8 @@ object ParticipantFrame {
     __obj.asInstanceOf[ParticipantFrame]
   }
   
-  extension [Self <: ParticipantFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantFrame] (val x: Self) extends AnyVal {
     
     inline def setCurrentGold(value: Double): Self = StObject.set(x, "currentGold", value.asInstanceOf[js.Any])
     

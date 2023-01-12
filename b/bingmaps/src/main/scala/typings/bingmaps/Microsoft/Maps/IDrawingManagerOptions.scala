@@ -21,7 +21,8 @@ object IDrawingManagerOptions {
     __obj.asInstanceOf[IDrawingManagerOptions]
   }
   
-  extension [Self <: IDrawingManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDrawingManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String | Color): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

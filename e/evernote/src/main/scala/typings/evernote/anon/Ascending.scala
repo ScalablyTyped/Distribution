@@ -29,7 +29,8 @@ object Ascending {
     __obj.asInstanceOf[Ascending]
   }
   
-  extension [Self <: Ascending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ascending] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
     

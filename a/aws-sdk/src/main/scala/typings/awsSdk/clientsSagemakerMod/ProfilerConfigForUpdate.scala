@@ -33,7 +33,8 @@ object ProfilerConfigForUpdate {
     __obj.asInstanceOf[ProfilerConfigForUpdate]
   }
   
-  extension [Self <: ProfilerConfigForUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilerConfigForUpdate] (val x: Self) extends AnyVal {
     
     inline def setDisableProfiler(value: DisableProfiler): Self = StObject.set(x, "DisableProfiler", value.asInstanceOf[js.Any])
     

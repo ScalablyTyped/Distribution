@@ -273,7 +273,8 @@ object PlotWordcloudDataLabelsOptions {
     __obj.asInstanceOf[PlotWordcloudDataLabelsOptions]
   }
   
-  extension [Self <: PlotWordcloudDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

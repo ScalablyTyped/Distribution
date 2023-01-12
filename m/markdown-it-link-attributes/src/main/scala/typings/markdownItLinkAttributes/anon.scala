@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[DefaultRender]
     }
     
-    extension [Self <: DefaultRender](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultRender] (val x: Self) extends AnyVal {
       
       inline def setDefaultRender(value: (js.Array[^], Double, Options, Any, Renderer) => String): Self = StObject.set(x, "defaultRender", js.Any.fromFunction5(value))
     }

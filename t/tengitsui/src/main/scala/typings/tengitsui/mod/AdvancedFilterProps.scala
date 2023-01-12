@@ -29,7 +29,8 @@ object AdvancedFilterProps {
     __obj.asInstanceOf[AdvancedFilterProps]
   }
   
-  extension [Self <: AdvancedFilterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedFilterProps] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: js.Object): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

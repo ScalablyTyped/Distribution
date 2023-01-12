@@ -57,7 +57,8 @@ object CombinedCharacters {
     __obj.asInstanceOf[CombinedCharacters]
   }
   
-  extension [Self <: CombinedCharacters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinedCharacters] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
   }

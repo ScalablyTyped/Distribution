@@ -19,7 +19,8 @@ object TextPropertyOptions {
     __obj.asInstanceOf[TextPropertyOptions]
   }
   
-  extension [Self <: TextPropertyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPropertyOptions] (val x: Self) extends AnyVal {
     
     inline def setOperatorOptions(value: TextOperatorOptions): Self = StObject.set(x, "operatorOptions", value.asInstanceOf[js.Any])
     

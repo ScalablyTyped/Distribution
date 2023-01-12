@@ -27,7 +27,8 @@ object CertificateChainValidationEngineParameters {
     __obj.asInstanceOf[CertificateChainValidationEngineParameters]
   }
   
-  extension [Self <: CertificateChainValidationEngineParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateChainValidationEngineParameters] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: js.Array[Certificate]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

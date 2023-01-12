@@ -21,7 +21,8 @@ object FileAssessmentRequest {
     __obj.asInstanceOf[FileAssessmentRequest]
   }
   
-  extension [Self <: FileAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setContentData(value: String): Self = StObject.set(x, "contentData", value.asInstanceOf[js.Any])
     

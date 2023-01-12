@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Callbacks]
     }
     
-    extension [Self <: Callbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callbacks] (val x: Self) extends AnyVal {
       
       inline def setFoundSubsequence(value: (/* nCommon */ Double, /* aCommon */ Double, /* bCommon */ Double) => Unit): Self = StObject.set(x, "foundSubsequence", js.Any.fromFunction3(value))
       

@@ -22,7 +22,8 @@ object SeriesSankeyDataLabelsFormatterContextObject {
     __obj.asInstanceOf[SeriesSankeyDataLabelsFormatterContextObject]
   }
   
-  extension [Self <: SeriesSankeyDataLabelsFormatterContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSankeyDataLabelsFormatterContextObject] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: SankeyNodeObject): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
   }

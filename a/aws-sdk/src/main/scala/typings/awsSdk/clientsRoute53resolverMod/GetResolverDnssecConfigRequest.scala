@@ -18,7 +18,8 @@ object GetResolverDnssecConfigRequest {
     __obj.asInstanceOf[GetResolverDnssecConfigRequest]
   }
   
-  extension [Self <: GetResolverDnssecConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResolverDnssecConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
   }

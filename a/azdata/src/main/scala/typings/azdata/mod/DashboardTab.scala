@@ -20,7 +20,8 @@ object DashboardTab {
     __obj.asInstanceOf[DashboardTab]
   }
   
-  extension [Self <: DashboardTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashboardTab] (val x: Self) extends AnyVal {
     
     inline def setToolbar(value: ToolbarContainer): Self = StObject.set(x, "toolbar", value.asInstanceOf[js.Any])
     

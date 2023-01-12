@@ -15,7 +15,8 @@ object Files {
     __obj.asInstanceOf[Files[I]]
   }
   
-  extension [Self <: Files[?], I](x: Self & Files[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Files[?], I] (val x: Self & Files[I]) extends AnyVal {
     
     inline def setFiles(value: js.Array[I]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
     

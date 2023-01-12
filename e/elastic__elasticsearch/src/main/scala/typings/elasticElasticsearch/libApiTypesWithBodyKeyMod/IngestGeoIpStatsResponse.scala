@@ -21,7 +21,8 @@ object IngestGeoIpStatsResponse {
     __obj.asInstanceOf[IngestGeoIpStatsResponse]
   }
   
-  extension [Self <: IngestGeoIpStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestGeoIpStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setNodes(value: Record[Id, IngestGeoIpStatsGeoIpNodeDatabases]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
     

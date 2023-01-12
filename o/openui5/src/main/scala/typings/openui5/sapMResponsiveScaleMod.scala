@@ -210,7 +210,8 @@ object sapMResponsiveScaleMod {
       __obj.asInstanceOf[ResponsiveScaleSettings]
     }
     
-    extension [Self <: ResponsiveScaleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveScaleSettings] (val x: Self) extends AnyVal {
       
       inline def setTickmarksBetweenLabels(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "tickmarksBetweenLabels", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[ACCEL]
     }
     
-    extension [Self <: ACCEL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ACCEL] (val x: Self) extends AnyVal {
       
       inline def setACCEL(value: STEPPER_RUN_STATE): Self = StObject.set(x, "ACCEL", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Baud]
     }
     
-    extension [Self <: Baud](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Baud] (val x: Self) extends AnyVal {
       
       inline def setBaud(value: Double): Self = StObject.set(x, "baud", value.asInstanceOf[js.Any])
       
@@ -111,7 +114,8 @@ object anon {
       __obj.asInstanceOf[BaudRate]
     }
     
-    extension [Self <: BaudRate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaudRate] (val x: Self) extends AnyVal {
       
       inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[CCW]
     }
     
-    extension [Self <: CCW](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CCW] (val x: Self) extends AnyVal {
       
       inline def setCCW(value: STEPPER_DIRECTION): Self = StObject.set(x, "CCW", value.asInstanceOf[js.Any])
       
@@ -155,7 +160,8 @@ object anon {
       __obj.asInstanceOf[DRIVER]
     }
     
-    extension [Self <: DRIVER](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DRIVER] (val x: Self) extends AnyVal {
       
       inline def setDRIVER(value: STEPPER_TYPE): Self = StObject.set(x, "DRIVER", value.asInstanceOf[js.Any])
       
@@ -176,7 +182,8 @@ object anon {
       __obj.asInstanceOf[Delay]
     }
     
-    extension [Self <: Delay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delay] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     }

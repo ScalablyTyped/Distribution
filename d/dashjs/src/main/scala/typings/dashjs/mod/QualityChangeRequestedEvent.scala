@@ -31,7 +31,8 @@ object QualityChangeRequestedEvent {
     __obj.asInstanceOf[QualityChangeRequestedEvent]
   }
   
-  extension [Self <: QualityChangeRequestedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QualityChangeRequestedEvent] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object esLegacyContextMod extends Shortcut {
       __obj.asInstanceOf[LegacyContextProps]
     }
     
-    extension [Self <: LegacyContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyContextProps] (val x: Self) extends AnyVal {
       
       inline def setCheckable(value: Boolean | ReactNode): Self = StObject.set(x, "checkable", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object RawLineData {
     __obj.asInstanceOf[RawLineData]
   }
   
-  extension [Self <: RawLineData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RawLineData] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[Any]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

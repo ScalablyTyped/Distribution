@@ -30,7 +30,8 @@ object libModalLocaleMod {
       __obj.asInstanceOf[ModalLocale]
     }
     
-    extension [Self <: ModalLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalLocale] (val x: Self) extends AnyVal {
       
       inline def setCancelText(value: String): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
       

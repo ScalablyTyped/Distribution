@@ -22,7 +22,8 @@ object LogConfig {
     __obj.asInstanceOf[LogConfig]
   }
   
-  extension [Self <: LogConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudAudit(value: CloudAuditOptions): Self = StObject.set(x, "cloudAudit", value.asInstanceOf[js.Any])
     

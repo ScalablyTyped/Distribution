@@ -19,7 +19,8 @@ object MarkerOptions {
     __obj.asInstanceOf[MarkerOptions]
   }
   
-  extension [Self <: MarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
     

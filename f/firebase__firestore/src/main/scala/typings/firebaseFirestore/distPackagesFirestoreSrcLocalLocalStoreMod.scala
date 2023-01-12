@@ -41,7 +41,8 @@ object distPackagesFirestoreSrcLocalLocalStoreMod {
       __obj.asInstanceOf[LocalStore]
     }
     
-    extension [Self <: LocalStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalStore] (val x: Self) extends AnyVal {
       
       inline def setCollectGarbage(value: LruGarbageCollector => js.Promise[LruResults]): Self = StObject.set(x, "collectGarbage", js.Any.fromFunction1(value))
       

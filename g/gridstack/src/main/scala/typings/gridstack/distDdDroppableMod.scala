@@ -62,7 +62,8 @@ object distDdDroppableMod {
       __obj.asInstanceOf[DDDroppableOpt]
     }
     
-    extension [Self <: DDDroppableOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDroppableOpt] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String | (js.Function1[/* el */ HTMLElement, Boolean])): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

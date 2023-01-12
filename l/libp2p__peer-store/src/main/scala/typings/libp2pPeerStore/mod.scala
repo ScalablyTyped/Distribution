@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[PersistentPeerStoreComponents]
     }
     
-    extension [Self <: PersistentPeerStoreComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistentPeerStoreComponents] (val x: Self) extends AnyVal {
       
       inline def setDatastore(value: Datastore): Self = StObject.set(x, "datastore", value.asInstanceOf[js.Any])
       

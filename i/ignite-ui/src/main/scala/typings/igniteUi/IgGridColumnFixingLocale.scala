@@ -43,7 +43,8 @@ object IgGridColumnFixingLocale {
     __obj.asInstanceOf[IgGridColumnFixingLocale]
   }
   
-  extension [Self <: IgGridColumnFixingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridColumnFixingLocale] (val x: Self) extends AnyVal {
     
     inline def setFeatureChooserTextFixedColumn(value: String): Self = StObject.set(x, "featureChooserTextFixedColumn", value.asInstanceOf[js.Any])
     

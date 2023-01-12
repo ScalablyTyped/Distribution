@@ -309,7 +309,8 @@ object sapUiUnifiedCurrencyMod {
       __obj.asInstanceOf[CurrencySettings]
     }
     
-    extension [Self <: CurrencySettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrencySettings] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String | PropertyBindingInfo): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

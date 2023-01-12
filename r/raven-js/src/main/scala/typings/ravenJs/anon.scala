@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[ErrorrequestXMLHttpReques]
     }
     
-    extension [Self <: ErrorrequestXMLHttpReques](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorrequestXMLHttpReques] (val x: Self) extends AnyVal {
       
       inline def setCause(value: Any): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Sentryclient]
     }
     
-    extension [Self <: Sentryclient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sentryclient] (val x: Self) extends AnyVal {
       
       inline def setSentry_client(value: String): Self = StObject.set(x, "sentry_client", value.asInstanceOf[js.Any])
       

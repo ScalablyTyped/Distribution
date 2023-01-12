@@ -23,7 +23,8 @@ object ActiveMq {
     __obj.asInstanceOf[ActiveMq]
   }
   
-  extension [Self <: ActiveMq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveMq] (val x: Self) extends AnyVal {
     
     inline def setArn(value: String): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

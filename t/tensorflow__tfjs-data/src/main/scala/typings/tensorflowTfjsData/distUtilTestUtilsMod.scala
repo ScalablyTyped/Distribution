@@ -85,7 +85,8 @@ object distUtilTestUtilsMod {
       __obj.asInstanceOf[FakeAnalyser]
     }
     
-    extension [Self <: FakeAnalyser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeAnalyser] (val x: Self) extends AnyVal {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
@@ -112,7 +113,8 @@ object distUtilTestUtilsMod {
       __obj.asInstanceOf[FakeMediaStreamAudioSourceNode]
     }
     
-    extension [Self <: FakeMediaStreamAudioSourceNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeMediaStreamAudioSourceNode] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: js.Object => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
     }

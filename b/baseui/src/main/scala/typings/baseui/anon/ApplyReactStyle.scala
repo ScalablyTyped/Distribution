@@ -15,7 +15,8 @@ object ApplyReactStyle {
     __obj.asInstanceOf[ApplyReactStyle]
   }
   
-  extension [Self <: ApplyReactStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplyReactStyle] (val x: Self) extends AnyVal {
     
     inline def setApplyReactStyle(value: Fn): Self = StObject.set(x, "applyReactStyle", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object Optimizer {
     __obj.asInstanceOf[Optimizer[ConfigType, BundleConfigType]]
   }
   
-  extension [Self <: Optimizer[?, ?], ConfigType, BundleConfigType](x: Self & (Optimizer[ConfigType, BundleConfigType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Optimizer[?, ?], ConfigType, BundleConfigType] (val x: Self & (Optimizer[ConfigType, BundleConfigType])) extends AnyVal {
     
     inline def setLoadBundleConfig(value: /* arg0 */ BundleGraphConfig => Async[BundleConfigType]): Self = StObject.set(x, "loadBundleConfig", js.Any.fromFunction1(value))
     

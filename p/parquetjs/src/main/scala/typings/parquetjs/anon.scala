@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Codec]
     }
     
-    extension [Self <: Codec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
       
       inline def setCodec(value: Double): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Columns]
     }
     
-    extension [Self <: Columns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Columns] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Any): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

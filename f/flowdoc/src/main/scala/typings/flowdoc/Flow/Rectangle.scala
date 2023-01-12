@@ -21,7 +21,8 @@ object Rectangle {
     __obj.asInstanceOf[Rectangle]
   }
   
-  extension [Self <: Rectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rectangle] (val x: Self) extends AnyVal {
     
     inline def setType(value: RECT): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

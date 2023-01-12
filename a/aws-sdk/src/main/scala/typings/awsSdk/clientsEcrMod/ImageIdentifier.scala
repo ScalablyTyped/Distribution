@@ -23,7 +23,8 @@ object ImageIdentifier {
     __obj.asInstanceOf[ImageIdentifier]
   }
   
-  extension [Self <: ImageIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageIdentifier] (val x: Self) extends AnyVal {
     
     inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     

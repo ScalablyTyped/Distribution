@@ -18,7 +18,8 @@ object LogsAnomalyDetectionIntegrationConfig {
     __obj.asInstanceOf[LogsAnomalyDetectionIntegrationConfig]
   }
   
-  extension [Self <: LogsAnomalyDetectionIntegrationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogsAnomalyDetectionIntegrationConfig] (val x: Self) extends AnyVal {
     
     inline def setOptInStatus(value: OptInStatus): Self = StObject.set(x, "OptInStatus", value.asInstanceOf[js.Any])
     

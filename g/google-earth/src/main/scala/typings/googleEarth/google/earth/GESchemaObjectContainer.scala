@@ -65,7 +65,8 @@ object GESchemaObjectContainer {
     __obj.asInstanceOf[GESchemaObjectContainer[T]]
   }
   
-  extension [Self <: GESchemaObjectContainer[?], T /* <: KmlObject */](x: Self & GESchemaObjectContainer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GESchemaObjectContainer[?], T /* <: KmlObject */] (val x: Self & GESchemaObjectContainer[T]) extends AnyVal {
     
     inline def setAppendChild(value: T => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

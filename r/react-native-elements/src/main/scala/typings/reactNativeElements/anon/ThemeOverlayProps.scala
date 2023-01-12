@@ -639,7 +639,8 @@ object ThemeOverlayProps {
     __obj.asInstanceOf[ThemeOverlayProps]
   }
   
-  extension [Self <: ThemeOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

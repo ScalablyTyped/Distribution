@@ -25,7 +25,8 @@ object LazyJS {
       __obj.asInstanceOf[ArrayLike[T]]
     }
     
-    extension [Self <: ArrayLike[?], T](x: Self & ArrayLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -70,7 +71,8 @@ object LazyJS {
       __obj.asInstanceOf[AsyncHandle[T]]
     }
     
-    extension [Self <: AsyncHandle[?], T](x: Self & AsyncHandle[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncHandle[?], T] (val x: Self & AsyncHandle[T]) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       

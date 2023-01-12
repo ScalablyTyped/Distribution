@@ -101,7 +101,8 @@ object libCellMod extends Shortcut {
       __obj.asInstanceOf[CellProps[RecordType]]
     }
     
-    extension [Self <: CellProps[?], RecordType /* <: DefaultRecordType */](x: Self & CellProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellProps[?], RecordType /* <: DefaultRecordType */] (val x: Self & CellProps[RecordType]) extends AnyVal {
       
       inline def setAdditionalProps(value: TdHTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "additionalProps", value.asInstanceOf[js.Any])
       
@@ -300,7 +301,8 @@ object libCellMod extends Shortcut {
       __obj.asInstanceOf[InternalCellProps[RecordType]]
     }
     
-    extension [Self <: InternalCellProps[?], RecordType /* <: DefaultRecordType */](x: Self & InternalCellProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalCellProps[?], RecordType /* <: DefaultRecordType */] (val x: Self & InternalCellProps[RecordType]) extends AnyVal {
       
       inline def setAdditionalProps(value: TdHTMLAttributes[HTMLTableCellElement]): Self = StObject.set(x, "additionalProps", value.asInstanceOf[js.Any])
       

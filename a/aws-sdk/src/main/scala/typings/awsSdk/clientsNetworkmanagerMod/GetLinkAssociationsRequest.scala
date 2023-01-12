@@ -38,7 +38,8 @@ object GetLinkAssociationsRequest {
     __obj.asInstanceOf[GetLinkAssociationsRequest]
   }
   
-  extension [Self <: GetLinkAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLinkAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: DeviceId): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
     

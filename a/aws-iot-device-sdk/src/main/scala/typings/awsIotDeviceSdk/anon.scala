@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Qos]
     }
     
-    extension [Self <: Qos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Qos] (val x: Self) extends AnyVal {
       
       inline def setQos(value: `0` | `1`): Self = StObject.set(x, "qos", value.asInstanceOf[js.Any])
     }

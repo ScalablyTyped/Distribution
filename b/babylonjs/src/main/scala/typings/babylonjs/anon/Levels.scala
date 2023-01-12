@@ -15,7 +15,8 @@ object Levels {
     __obj.asInstanceOf[Levels]
   }
   
-  extension [Self <: Levels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Levels] (val x: Self) extends AnyVal {
     
     inline def setLevels(value: js.Array[TranscodedPixels]): Self = StObject.set(x, "levels", value.asInstanceOf[js.Any])
     

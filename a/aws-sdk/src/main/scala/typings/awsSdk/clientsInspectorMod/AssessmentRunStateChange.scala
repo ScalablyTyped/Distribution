@@ -23,7 +23,8 @@ object AssessmentRunStateChange {
     __obj.asInstanceOf[AssessmentRunStateChange]
   }
   
-  extension [Self <: AssessmentRunStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentRunStateChange] (val x: Self) extends AnyVal {
     
     inline def setState(value: AssessmentRunState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

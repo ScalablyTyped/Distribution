@@ -34,7 +34,8 @@ object ManagedProperty {
     __obj.asInstanceOf[ManagedProperty]
   }
   
-  extension [Self <: ManagedProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedProperty] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

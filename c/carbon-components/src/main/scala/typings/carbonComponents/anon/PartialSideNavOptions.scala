@@ -32,7 +32,8 @@ object PartialSideNavOptions {
     __obj.asInstanceOf[PartialSideNavOptions]
   }
   
-  extension [Self <: PartialSideNavOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSideNavOptions] (val x: Self) extends AnyVal {
     
     inline def setClassSideNavExpanded(value: String): Self = StObject.set(x, "classSideNavExpanded", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object DataViewMatrixNodeValue {
     __obj.asInstanceOf[DataViewMatrixNodeValue]
   }
   
-  extension [Self <: DataViewMatrixNodeValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewMatrixNodeValue] (val x: Self) extends AnyVal {
     
     inline def setHighlight(value: PrimitiveValue): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
     

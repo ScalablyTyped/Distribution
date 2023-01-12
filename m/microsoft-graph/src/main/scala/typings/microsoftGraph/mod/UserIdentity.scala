@@ -21,7 +21,8 @@ object UserIdentity {
     __obj.asInstanceOf[UserIdentity]
   }
   
-  extension [Self <: UserIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
     
     inline def setIpAddress(value: NullableOption[String]): Self = StObject.set(x, "ipAddress", value.asInstanceOf[js.Any])
     

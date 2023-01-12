@@ -25,7 +25,8 @@ object TransformPutTransformRequest {
     __obj.asInstanceOf[TransformPutTransformRequest]
   }
   
-  extension [Self <: TransformPutTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformPutTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Frequency): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

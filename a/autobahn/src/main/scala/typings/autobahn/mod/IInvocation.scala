@@ -19,7 +19,8 @@ object IInvocation {
     __obj.asInstanceOf[IInvocation]
   }
   
-  extension [Self <: IInvocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInvocation] (val x: Self) extends AnyVal {
     
     inline def setCaller(value: Double): Self = StObject.set(x, "caller", value.asInstanceOf[js.Any])
     

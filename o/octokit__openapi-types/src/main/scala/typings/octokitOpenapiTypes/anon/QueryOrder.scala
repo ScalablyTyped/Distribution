@@ -15,7 +15,8 @@ object QueryOrder {
     __obj.asInstanceOf[QueryOrder]
   }
   
-  extension [Self <: QueryOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryOrder] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Order): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

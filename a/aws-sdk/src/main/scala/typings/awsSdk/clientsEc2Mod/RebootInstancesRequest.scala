@@ -23,7 +23,8 @@ object RebootInstancesRequest {
     __obj.asInstanceOf[RebootInstancesRequest]
   }
   
-  extension [Self <: RebootInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MaxRows {
     __obj.asInstanceOf[MaxRows]
   }
   
-  extension [Self <: MaxRows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxRows] (val x: Self) extends AnyVal {
     
     inline def setMaxRows(value: Double): Self = StObject.set(x, "maxRows", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object distSrcWrapperMod {
       __obj.asInstanceOf[CrossSpawnExeOptions]
     }
     
-    extension [Self <: CrossSpawnExeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossSpawnExeOptions] (val x: Self) extends AnyVal {
       
       inline def setWrapperCommand(value: String): Self = StObject.set(x, "wrapperCommand", value.asInstanceOf[js.Any])
       

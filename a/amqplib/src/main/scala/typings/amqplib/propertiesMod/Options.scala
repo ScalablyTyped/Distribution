@@ -25,7 +25,8 @@ object Options {
       __obj.asInstanceOf[AssertExchange]
     }
     
-    extension [Self <: AssertExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertExchange] (val x: Self) extends AnyVal {
       
       inline def setAlternateExchange(value: String): Self = StObject.set(x, "alternateExchange", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object Options {
       __obj.asInstanceOf[AssertQueue]
     }
     
-    extension [Self <: AssertQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertQueue] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object Options {
       __obj.asInstanceOf[Connect]
     }
     
-    extension [Self <: Connect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Connect] (val x: Self) extends AnyVal {
       
       inline def setFrameMax(value: Double): Self = StObject.set(x, "frameMax", value.asInstanceOf[js.Any])
       
@@ -256,7 +259,8 @@ object Options {
       __obj.asInstanceOf[Consume]
     }
     
-    extension [Self <: Consume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consume] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object Options {
       __obj.asInstanceOf[DeleteExchange]
     }
     
-    extension [Self <: DeleteExchange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteExchange] (val x: Self) extends AnyVal {
       
       inline def setIfUnused(value: Boolean): Self = StObject.set(x, "ifUnused", value.asInstanceOf[js.Any])
       
@@ -316,7 +321,8 @@ object Options {
       __obj.asInstanceOf[DeleteQueue]
     }
     
-    extension [Self <: DeleteQueue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteQueue] (val x: Self) extends AnyVal {
       
       inline def setIfEmpty(value: Boolean): Self = StObject.set(x, "ifEmpty", value.asInstanceOf[js.Any])
       
@@ -339,7 +345,8 @@ object Options {
       __obj.asInstanceOf[Get]
     }
     
-    extension [Self <: Get](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Get] (val x: Self) extends AnyVal {
       
       inline def setNoAck(value: Boolean): Self = StObject.set(x, "noAck", value.asInstanceOf[js.Any])
       
@@ -390,7 +397,8 @@ object Options {
       __obj.asInstanceOf[Publish]
     }
     
-    extension [Self <: Publish](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Publish] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

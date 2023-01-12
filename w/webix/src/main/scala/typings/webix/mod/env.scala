@@ -73,7 +73,8 @@ object env {
   @js.native
   val ^ : typings.webix.webix.env = js.native
   
-  extension [Self <: env](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: env] (val x: Self) extends AnyVal {
     
     inline def set$customScroll(value: Boolean): Self = StObject.set(x, "$customScroll", value.asInstanceOf[js.Any])
     

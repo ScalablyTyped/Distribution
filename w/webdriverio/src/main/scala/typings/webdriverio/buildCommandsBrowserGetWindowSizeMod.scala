@@ -25,7 +25,8 @@ object buildCommandsBrowserGetWindowSizeMod {
       __obj.asInstanceOf[BrowserSize]
     }
     
-    extension [Self <: BrowserSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

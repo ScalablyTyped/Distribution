@@ -44,7 +44,8 @@ object FontWidthEnumValues {
     __obj.asInstanceOf[FontWidthEnumValues]
   }
   
-  extension [Self <: FontWidthEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWidthEnumValues] (val x: Self) extends AnyVal {
     
     inline def setCondensed(value: FontWidth): Self = StObject.set(x, "Condensed", value.asInstanceOf[js.Any])
     

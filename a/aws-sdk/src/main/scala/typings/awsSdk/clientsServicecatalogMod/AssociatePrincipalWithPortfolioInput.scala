@@ -33,7 +33,8 @@ object AssociatePrincipalWithPortfolioInput {
     __obj.asInstanceOf[AssociatePrincipalWithPortfolioInput]
   }
   
-  extension [Self <: AssociatePrincipalWithPortfolioInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatePrincipalWithPortfolioInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

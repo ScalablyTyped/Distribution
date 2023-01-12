@@ -28,7 +28,8 @@ object ProjectDetailsUnknownResu {
     __obj.asInstanceOf[ProjectDetailsUnknownResu]
   }
   
-  extension [Self <: ProjectDetailsUnknownResu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectDetailsUnknownResu] (val x: Self) extends AnyVal {
     
     inline def setConfigPath(value: String): Self = StObject.set(x, "configPath", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DecodedLogEntry {
     __obj.asInstanceOf[DecodedLogEntry[A]]
   }
   
-  extension [Self <: DecodedLogEntry[?], A](x: Self & DecodedLogEntry[A]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecodedLogEntry[?], A] (val x: Self & DecodedLogEntry[A]) extends AnyVal {
     
     inline def setArgs(value: A): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

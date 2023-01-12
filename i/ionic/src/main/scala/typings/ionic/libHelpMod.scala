@@ -77,7 +77,8 @@ object libHelpMod {
       __obj.asInstanceOf[CommandHelpSchema]
     }
     
-    extension [Self <: CommandHelpSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandHelpSchema] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object libHelpMod {
       __obj.asInstanceOf[NamespaceHelpFormatterDeps]
     }
     
-    extension [Self <: NamespaceHelpFormatterDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamespaceHelpFormatterDeps] (val x: Self) extends AnyVal {
       
       inline def setInProject(value: Boolean): Self = StObject.set(x, "inProject", value.asInstanceOf[js.Any])
       

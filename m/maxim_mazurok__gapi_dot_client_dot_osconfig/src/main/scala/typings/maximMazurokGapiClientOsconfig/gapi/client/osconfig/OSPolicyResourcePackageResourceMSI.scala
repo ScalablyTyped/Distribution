@@ -19,7 +19,8 @@ object OSPolicyResourcePackageResourceMSI {
     __obj.asInstanceOf[OSPolicyResourcePackageResourceMSI]
   }
   
-  extension [Self <: OSPolicyResourcePackageResourceMSI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourcePackageResourceMSI] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: js.Array[String]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

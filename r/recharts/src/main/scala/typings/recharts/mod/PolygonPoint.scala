@@ -17,7 +17,8 @@ object PolygonPoint {
     __obj.asInstanceOf[PolygonPoint]
   }
   
-  extension [Self <: PolygonPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

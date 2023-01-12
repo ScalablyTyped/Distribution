@@ -34,7 +34,8 @@ object PlanDefinitionActor {
     __obj.asInstanceOf[PlanDefinitionActor]
   }
   
-  extension [Self <: PlanDefinitionActor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionActor] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

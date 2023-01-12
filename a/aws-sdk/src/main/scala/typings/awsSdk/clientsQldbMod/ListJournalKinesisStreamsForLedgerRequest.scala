@@ -28,7 +28,8 @@ object ListJournalKinesisStreamsForLedgerRequest {
     __obj.asInstanceOf[ListJournalKinesisStreamsForLedgerRequest]
   }
   
-  extension [Self <: ListJournalKinesisStreamsForLedgerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListJournalKinesisStreamsForLedgerRequest] (val x: Self) extends AnyVal {
     
     inline def setLedgerName(value: LedgerName): Self = StObject.set(x, "LedgerName", value.asInstanceOf[js.Any])
     

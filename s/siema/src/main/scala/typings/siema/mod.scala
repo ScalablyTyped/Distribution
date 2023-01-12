@@ -89,7 +89,8 @@ object mod {
       __obj.asInstanceOf[SiemaOptions]
     }
     
-    extension [Self <: SiemaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiemaOptions] (val x: Self) extends AnyVal {
       
       inline def setDraggable(value: Boolean): Self = StObject.set(x, "draggable", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object DeleteAcousticModelParams {
     __obj.asInstanceOf[DeleteAcousticModelParams]
   }
   
-  extension [Self <: DeleteAcousticModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAcousticModelParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

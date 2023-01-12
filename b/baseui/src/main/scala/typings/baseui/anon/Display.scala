@@ -32,7 +32,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setAlignItems(value: center): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

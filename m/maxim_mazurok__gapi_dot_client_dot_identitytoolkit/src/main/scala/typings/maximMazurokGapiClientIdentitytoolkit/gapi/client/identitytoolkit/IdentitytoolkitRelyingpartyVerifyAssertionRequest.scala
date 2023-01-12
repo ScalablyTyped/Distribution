@@ -55,7 +55,8 @@ object IdentitytoolkitRelyingpartyVerifyAssertionRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyVerifyAssertionRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyVerifyAssertionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyVerifyAssertionRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoCreate(value: Boolean): Self = StObject.set(x, "autoCreate", value.asInstanceOf[js.Any])
     

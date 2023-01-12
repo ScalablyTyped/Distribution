@@ -45,7 +45,8 @@ object LiveStateEngine {
     __obj.asInstanceOf[LiveStateEngine]
   }
   
-  extension [Self <: LiveStateEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiveStateEngine] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

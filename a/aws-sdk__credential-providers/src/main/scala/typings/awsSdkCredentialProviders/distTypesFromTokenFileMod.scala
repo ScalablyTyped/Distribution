@@ -31,7 +31,8 @@ object distTypesFromTokenFileMod {
       __obj.asInstanceOf[FromTokenFileInit]
     }
     
-    extension [Self <: FromTokenFileInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTokenFileInit] (val x: Self) extends AnyVal {
       
       inline def setClientConfig(value: STSClientConfig): Self = StObject.set(x, "clientConfig", value.asInstanceOf[js.Any])
       

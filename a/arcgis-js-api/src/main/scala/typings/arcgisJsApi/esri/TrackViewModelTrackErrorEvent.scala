@@ -15,7 +15,8 @@ object TrackViewModelTrackErrorEvent {
     __obj.asInstanceOf[TrackViewModelTrackErrorEvent]
   }
   
-  extension [Self <: TrackViewModelTrackErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackViewModelTrackErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

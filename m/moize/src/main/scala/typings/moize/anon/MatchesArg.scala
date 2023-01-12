@@ -15,7 +15,8 @@ object MatchesArg {
     __obj.asInstanceOf[MatchesArg[Matcher]]
   }
   
-  extension [Self <: MatchesArg[?], Matcher /* <: typings.moize.mod.IsEqual */](x: Self & MatchesArg[Matcher]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchesArg[?], Matcher /* <: typings.moize.mod.IsEqual */] (val x: Self & MatchesArg[Matcher]) extends AnyVal {
     
     inline def setMatchesArg(value: Matcher): Self = StObject.set(x, "matchesArg", value.asInstanceOf[js.Any])
   }

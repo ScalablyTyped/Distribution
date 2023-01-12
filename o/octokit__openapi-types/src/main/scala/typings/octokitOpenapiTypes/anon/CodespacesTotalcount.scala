@@ -17,7 +17,8 @@ object CodespacesTotalcount {
     __obj.asInstanceOf[CodespacesTotalcount]
   }
   
-  extension [Self <: CodespacesTotalcount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodespacesTotalcount] (val x: Self) extends AnyVal {
     
     inline def setCodespaces(value: js.Array[Gitstatus]): Self = StObject.set(x, "codespaces", value.asInstanceOf[js.Any])
     

@@ -69,7 +69,8 @@ object history3RedirectMod {
       __obj.asInstanceOf[ConnectedRouterRedirectConfig[OwnProps, State]]
     }
     
-    extension [Self <: ConnectedRouterRedirectConfig[?, ?], OwnProps, State](x: Self & (ConnectedRouterRedirectConfig[OwnProps, State])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectedRouterRedirectConfig[?, ?], OwnProps, State] (val x: Self & (ConnectedRouterRedirectConfig[OwnProps, State])) extends AnyVal {
       
       inline def setAllowRedirectBack(value: Boolean | (StateSelector[State, OwnProps, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object history3RedirectMod {
       __obj.asInstanceOf[CreateOnEnterConfig[State]]
     }
     
-    extension [Self <: CreateOnEnterConfig[?], State](x: Self & CreateOnEnterConfig[State]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOnEnterConfig[?], State] (val x: Self & CreateOnEnterConfig[State]) extends AnyVal {
       
       inline def setAllowRedirectBack(value: Boolean | (StateMutateSelector[State, Boolean])): Self = StObject.set(x, "allowRedirectBack", value.asInstanceOf[js.Any])
       
@@ -152,7 +154,8 @@ object history3RedirectMod {
       __obj.asInstanceOf[InjectedAuthReduxProps]
     }
     
-    extension [Self <: InjectedAuthReduxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedAuthReduxProps] (val x: Self) extends AnyVal {
       
       inline def setRedirectPath(value: String): Self = StObject.set(x, "redirectPath", value.asInstanceOf[js.Any])
     }
@@ -171,7 +174,8 @@ object history3RedirectMod {
       __obj.asInstanceOf[InjectedAuthRouterProps[Redirect]]
     }
     
-    extension [Self <: InjectedAuthRouterProps[?], Redirect](x: Self & InjectedAuthRouterProps[Redirect]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedAuthRouterProps[?], Redirect] (val x: Self & InjectedAuthRouterProps[Redirect]) extends AnyVal {
       
       inline def setRedirect(value: Redirect): Self = StObject.set(x, "redirect", value.asInstanceOf[js.Any])
     }

@@ -80,7 +80,8 @@ object libRadioStyleIndexDotnativeMod {
       __obj.asInstanceOf[IRadioStyle]
     }
     
-    extension [Self <: IRadioStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadioStyle] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: ViewStyle): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

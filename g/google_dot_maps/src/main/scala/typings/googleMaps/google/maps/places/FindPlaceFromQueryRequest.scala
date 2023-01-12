@@ -56,7 +56,8 @@ object FindPlaceFromQueryRequest {
     __obj.asInstanceOf[FindPlaceFromQueryRequest]
   }
   
-  extension [Self <: FindPlaceFromQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindPlaceFromQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

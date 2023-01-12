@@ -60,7 +60,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[CMYK]
     }
     
-    extension [Self <: CMYK](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CMYK] (val x: Self) extends AnyVal {
       
       inline def setC(value: Double): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: () => Color): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
@@ -217,7 +219,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[HSL]
     }
     
-    extension [Self <: HSL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSL] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[HSV]
     }
     
-    extension [Self <: HSV](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HSV] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[LAB]
     }
     
-    extension [Self <: LAB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LAB] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -277,7 +282,8 @@ object JQueryColorpickerStatic {
     }
   }
   
-  extension [Self <: JQueryColorpickerStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryColorpickerStatic] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Instantiable): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     
@@ -311,7 +317,8 @@ object JQueryColorpickerStatic {
       __obj.asInstanceOf[RGB]
     }
     
-    extension [Self <: RGB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RGB] (val x: Self) extends AnyVal {
       
       inline def setB(value: Double): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
       

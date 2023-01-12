@@ -23,7 +23,8 @@ object DeleteTagsInput {
     __obj.asInstanceOf[DeleteTagsInput]
   }
   
-  extension [Self <: DeleteTagsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTagsInput] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     

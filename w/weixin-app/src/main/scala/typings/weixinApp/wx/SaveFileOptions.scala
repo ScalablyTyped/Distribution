@@ -22,7 +22,8 @@ object SaveFileOptions {
     __obj.asInstanceOf[SaveFileOptions]
   }
   
-  extension [Self <: SaveFileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveFileOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ SavedFileData => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

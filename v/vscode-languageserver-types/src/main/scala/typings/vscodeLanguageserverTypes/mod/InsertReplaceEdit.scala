@@ -43,7 +43,8 @@ object InsertReplaceEdit {
     */
   inline def is(value: TextEdit): /* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.InsertReplaceEdit */ Boolean]
   
-  extension [Self <: InsertReplaceEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertReplaceEdit] (val x: Self) extends AnyVal {
     
     inline def setInsert(value: Range): Self = StObject.set(x, "insert", value.asInstanceOf[js.Any])
     

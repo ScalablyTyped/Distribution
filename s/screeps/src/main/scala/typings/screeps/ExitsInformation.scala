@@ -26,7 +26,8 @@ object ExitsInformation {
     __obj.asInstanceOf[ExitsInformation]
   }
   
-  extension [Self <: ExitsInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitsInformation] (val x: Self) extends AnyVal {
     
     inline def set1(value: String): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
     

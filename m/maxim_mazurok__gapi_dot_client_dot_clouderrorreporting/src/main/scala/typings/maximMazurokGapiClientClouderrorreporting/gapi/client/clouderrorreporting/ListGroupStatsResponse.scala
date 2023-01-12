@@ -25,7 +25,8 @@ object ListGroupStatsResponse {
     __obj.asInstanceOf[ListGroupStatsResponse]
   }
   
-  extension [Self <: ListGroupStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGroupStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorGroupStats(value: js.Array[ErrorGroupStats]): Self = StObject.set(x, "errorGroupStats", value.asInstanceOf[js.Any])
     

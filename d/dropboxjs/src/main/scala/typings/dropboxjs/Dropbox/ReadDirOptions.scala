@@ -25,7 +25,8 @@ object ReadDirOptions {
     __obj.asInstanceOf[ReadDirOptions]
   }
   
-  extension [Self <: ReadDirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadDirOptions] (val x: Self) extends AnyVal {
     
     inline def setContentHash(value: String): Self = StObject.set(x, "contentHash", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object Format_ {
     __obj.asInstanceOf[Format_]
   }
   
-  extension [Self <: Format_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Format_] (val x: Self) extends AnyVal {
     
     inline def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

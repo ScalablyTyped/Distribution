@@ -72,7 +72,8 @@ object ObjectDescriptor {
     __obj.asInstanceOf[ObjectDescriptor]
   }
   
-  extension [Self <: ObjectDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectDescriptor] (val x: Self) extends AnyVal {
     
     inline def setChildrenIds(value: js.Array[String]): Self = StObject.set(x, "childrenIds", value.asInstanceOf[js.Any])
     

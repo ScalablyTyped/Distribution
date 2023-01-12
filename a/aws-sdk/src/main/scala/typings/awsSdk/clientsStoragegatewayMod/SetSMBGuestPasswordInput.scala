@@ -23,7 +23,8 @@ object SetSMBGuestPasswordInput {
     __obj.asInstanceOf[SetSMBGuestPasswordInput]
   }
   
-  extension [Self <: SetSMBGuestPasswordInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSMBGuestPasswordInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

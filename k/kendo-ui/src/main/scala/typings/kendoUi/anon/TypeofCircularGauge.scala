@@ -20,7 +20,8 @@ object TypeofCircularGauge {
     __obj.asInstanceOf[TypeofCircularGauge]
   }
   
-  extension [Self <: TypeofCircularGauge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCircularGauge] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => CircularGauge): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

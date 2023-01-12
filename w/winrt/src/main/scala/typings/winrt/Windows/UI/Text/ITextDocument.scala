@@ -88,7 +88,8 @@ object ITextDocument {
     __obj.asInstanceOf[ITextDocument]
   }
   
-  extension [Self <: ITextDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextDocument] (val x: Self) extends AnyVal {
     
     inline def setApplyDisplayUpdates(value: () => Double): Self = StObject.set(x, "applyDisplayUpdates", js.Any.fromFunction0(value))
     

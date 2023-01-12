@@ -21,7 +21,8 @@ object Major {
     __obj.asInstanceOf[Major]
   }
   
-  extension [Self <: Major](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Major] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Double): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

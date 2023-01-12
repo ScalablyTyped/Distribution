@@ -23,7 +23,8 @@ object Smile {
     __obj.asInstanceOf[Smile]
   }
   
-  extension [Self <: Smile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Smile] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Percent): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

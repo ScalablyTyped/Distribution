@@ -18,7 +18,8 @@ object IDataLayer {
     __obj.asInstanceOf[IDataLayer]
   }
   
-  extension [Self <: IDataLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataLayer] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
   }

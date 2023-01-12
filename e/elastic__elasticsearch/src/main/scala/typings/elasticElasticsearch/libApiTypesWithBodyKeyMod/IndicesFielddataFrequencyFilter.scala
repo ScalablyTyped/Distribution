@@ -19,7 +19,8 @@ object IndicesFielddataFrequencyFilter {
     __obj.asInstanceOf[IndicesFielddataFrequencyFilter]
   }
   
-  extension [Self <: IndicesFielddataFrequencyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesFielddataFrequencyFilter] (val x: Self) extends AnyVal {
     
     inline def setMax(value: double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object LineItemFlight {
     __obj.asInstanceOf[LineItemFlight]
   }
   
-  extension [Self <: LineItemFlight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineItemFlight] (val x: Self) extends AnyVal {
     
     inline def setDateRange(value: DateRange): Self = StObject.set(x, "dateRange", value.asInstanceOf[js.Any])
     

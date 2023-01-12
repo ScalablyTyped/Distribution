@@ -38,7 +38,8 @@ object DrawerOptions {
     __obj.asInstanceOf[DrawerOptions]
   }
   
-  extension [Self <: DrawerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawerOptions] (val x: Self) extends AnyVal {
     
     inline def setAfterHide(value: /* e */ DrawerAfterHideEvent => Unit): Self = StObject.set(x, "afterHide", js.Any.fromFunction1(value))
     

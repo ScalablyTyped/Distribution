@@ -155,7 +155,8 @@ object mod {
       __obj.asInstanceOf[DialogButtonProps]
     }
     
-    extension [Self <: DialogButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogButtonProps] (val x: Self) extends AnyVal {
       
       inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    extension [Self <: DialogContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object mod {
       __obj.asInstanceOf[DialogFooterProps]
     }
     
-    extension [Self <: DialogFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogFooterProps] (val x: Self) extends AnyVal {
       
       inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object mod {
       __obj.asInstanceOf[DialogProps]
     }
     
-    extension [Self <: DialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -409,7 +413,8 @@ object mod {
       __obj.asInstanceOf[DialogTitleProps]
     }
     
-    extension [Self <: DialogTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignTypes): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -472,7 +477,8 @@ object mod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

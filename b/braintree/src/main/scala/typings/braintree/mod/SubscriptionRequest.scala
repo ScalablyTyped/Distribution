@@ -39,7 +39,8 @@ object SubscriptionRequest {
     __obj.asInstanceOf[SubscriptionRequest]
   }
   
-  extension [Self <: SubscriptionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: Add): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     

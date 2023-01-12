@@ -39,7 +39,8 @@ object SKPaymentTransactionObserver {
     __obj.asInstanceOf[SKPaymentTransactionObserver]
   }
   
-  extension [Self <: SKPaymentTransactionObserver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKPaymentTransactionObserver] (val x: Self) extends AnyVal {
     
     inline def setRemovedTransactions(value: /* transactions */ js.Array[SKPaymentTransaction] => Unit): Self = StObject.set(x, "removedTransactions", js.Any.fromFunction1(value))
     

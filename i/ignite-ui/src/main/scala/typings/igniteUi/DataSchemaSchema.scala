@@ -40,7 +40,8 @@ object DataSchemaSchema {
     __obj.asInstanceOf[DataSchemaSchema]
   }
   
-  extension [Self <: DataSchemaSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSchemaSchema] (val x: Self) extends AnyVal {
     
     inline def setChildDataProperty(value: String): Self = StObject.set(x, "childDataProperty", value.asInstanceOf[js.Any])
     

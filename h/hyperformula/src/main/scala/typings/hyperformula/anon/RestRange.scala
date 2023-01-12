@@ -19,7 +19,8 @@ object RestRange {
     __obj.asInstanceOf[RestRange]
   }
   
-  extension [Self <: RestRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestRange] (val x: Self) extends AnyVal {
     
     inline def setRestRange(value: AbsoluteCellRange): Self = StObject.set(x, "restRange", value.asInstanceOf[js.Any])
     

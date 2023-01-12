@@ -50,7 +50,8 @@ object NativeCallbackReturnTypeMap {
     __obj.asInstanceOf[NativeCallbackReturnTypeMap]
   }
   
-  extension [Self <: NativeCallbackReturnTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeCallbackReturnTypeMap] (val x: Self) extends AnyVal {
     
     inline def setInt64(value: Double | Int64): Self = StObject.set(x, "int64", value.asInstanceOf[js.Any])
     

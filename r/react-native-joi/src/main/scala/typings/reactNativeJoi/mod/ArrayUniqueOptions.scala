@@ -15,7 +15,8 @@ object ArrayUniqueOptions {
     __obj.asInstanceOf[ArrayUniqueOptions]
   }
   
-  extension [Self <: ArrayUniqueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayUniqueOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreUndefined(value: Boolean): Self = StObject.set(x, "ignoreUndefined", value.asInstanceOf[js.Any])
     

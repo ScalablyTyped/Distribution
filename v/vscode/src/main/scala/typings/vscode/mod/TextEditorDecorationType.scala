@@ -23,7 +23,8 @@ object TextEditorDecorationType {
     __obj.asInstanceOf[TextEditorDecorationType]
   }
   
-  extension [Self <: TextEditorDecorationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEditorDecorationType] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

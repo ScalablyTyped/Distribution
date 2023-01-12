@@ -34,7 +34,8 @@ object OlapResult {
     __obj.asInstanceOf[OlapResult]
   }
   
-  extension [Self <: OlapResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlapResult] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: js.Object => js.Array[Any]): Self = StObject.set(x, "axes", js.Any.fromFunction1(value))
     

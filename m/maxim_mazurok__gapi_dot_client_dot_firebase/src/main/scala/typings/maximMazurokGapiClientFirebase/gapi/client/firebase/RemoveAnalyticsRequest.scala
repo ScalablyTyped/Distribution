@@ -20,7 +20,8 @@ object RemoveAnalyticsRequest {
     __obj.asInstanceOf[RemoveAnalyticsRequest]
   }
   
-  extension [Self <: RemoveAnalyticsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAnalyticsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsPropertyId(value: String): Self = StObject.set(x, "analyticsPropertyId", value.asInstanceOf[js.Any])
     

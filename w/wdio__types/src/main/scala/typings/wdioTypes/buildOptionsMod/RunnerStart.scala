@@ -43,7 +43,8 @@ object RunnerStart {
     __obj.asInstanceOf[RunnerStart]
   }
   
-  extension [Self <: RunnerStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunnerStart] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: Capabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

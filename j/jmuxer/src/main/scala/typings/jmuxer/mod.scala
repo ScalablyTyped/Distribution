@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Feeder]
     }
     
-    extension [Self <: Feeder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feeder] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: js.typedarray.Uint8Array): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object mod {
       __obj.asInstanceOf[JMuxer]
     }
     
-    extension [Self <: JMuxer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JMuxer] (val x: Self) extends AnyVal {
       
       inline def setCreateStream(value: () => Duplex): Self = StObject.set(x, "createStream", js.Any.fromFunction0(value))
       
@@ -116,7 +118,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClearBuffer(value: Boolean): Self = StObject.set(x, "clearBuffer", value.asInstanceOf[js.Any])
       

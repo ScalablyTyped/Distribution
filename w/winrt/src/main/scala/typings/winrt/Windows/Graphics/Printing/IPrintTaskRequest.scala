@@ -23,7 +23,8 @@ object IPrintTaskRequest {
     __obj.asInstanceOf[IPrintTaskRequest]
   }
   
-  extension [Self <: IPrintTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPrintTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatePrintTask(value: (String, PrintTaskSourceRequestedHandler) => PrintTask): Self = StObject.set(x, "createPrintTask", js.Any.fromFunction2(value))
     

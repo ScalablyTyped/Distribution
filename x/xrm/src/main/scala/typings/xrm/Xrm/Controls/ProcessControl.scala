@@ -42,7 +42,8 @@ object ProcessControl {
     __obj.asInstanceOf[ProcessControl]
   }
   
-  extension [Self <: ProcessControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessControl] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayState(value: () => DisplayState): Self = StObject.set(x, "getDisplayState", js.Any.fromFunction0(value))
     

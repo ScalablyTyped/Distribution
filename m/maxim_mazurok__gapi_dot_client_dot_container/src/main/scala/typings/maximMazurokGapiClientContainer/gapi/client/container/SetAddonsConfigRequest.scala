@@ -34,7 +34,8 @@ object SetAddonsConfigRequest {
     __obj.asInstanceOf[SetAddonsConfigRequest]
   }
   
-  extension [Self <: SetAddonsConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetAddonsConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAddonsConfig(value: AddonsConfig): Self = StObject.set(x, "addonsConfig", value.asInstanceOf[js.Any])
     

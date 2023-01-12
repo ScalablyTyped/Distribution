@@ -48,7 +48,8 @@ object ScheduledToastNotification {
     __obj.asInstanceOf[ScheduledToastNotification]
   }
   
-  extension [Self <: ScheduledToastNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledToastNotification] (val x: Self) extends AnyVal {
     
     inline def setContent(value: XmlDocument): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

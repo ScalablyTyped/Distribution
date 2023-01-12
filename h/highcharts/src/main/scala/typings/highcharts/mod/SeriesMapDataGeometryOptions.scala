@@ -26,7 +26,8 @@ object SeriesMapDataGeometryOptions {
     __obj.asInstanceOf[SeriesMapDataGeometryOptions]
   }
   
-  extension [Self <: SeriesMapDataGeometryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesMapDataGeometryOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[js.Array[LonLatArray] | LonLatArray]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object EvidenceReportSubjectCharacteristic {
     __obj.asInstanceOf[EvidenceReportSubjectCharacteristic]
   }
   
-  extension [Self <: EvidenceReportSubjectCharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceReportSubjectCharacteristic] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

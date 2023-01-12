@@ -27,7 +27,8 @@ object Ngaction {
     __obj.asInstanceOf[Ngaction]
   }
   
-  extension [Self <: Ngaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ngaction] (val x: Self) extends AnyVal {
     
     inline def set__ng_action(value: Parser[Any]): Self = StObject.set(x, "__ng_action", value.asInstanceOf[js.Any])
     

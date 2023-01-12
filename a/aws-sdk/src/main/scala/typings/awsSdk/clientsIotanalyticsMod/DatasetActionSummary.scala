@@ -23,7 +23,8 @@ object DatasetActionSummary {
     __obj.asInstanceOf[DatasetActionSummary]
   }
   
-  extension [Self <: DatasetActionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetActionSummary] (val x: Self) extends AnyVal {
     
     inline def setActionName(value: DatasetActionName): Self = StObject.set(x, "actionName", value.asInstanceOf[js.Any])
     

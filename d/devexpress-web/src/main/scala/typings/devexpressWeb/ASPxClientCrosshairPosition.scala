@@ -26,7 +26,8 @@ object ASPxClientCrosshairPosition {
     __obj.asInstanceOf[ASPxClientCrosshairPosition]
   }
   
-  extension [Self <: ASPxClientCrosshairPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCrosshairPosition] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

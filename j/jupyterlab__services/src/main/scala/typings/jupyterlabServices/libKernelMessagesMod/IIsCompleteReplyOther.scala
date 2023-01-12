@@ -18,7 +18,8 @@ object IIsCompleteReplyOther {
     __obj.asInstanceOf[IIsCompleteReplyOther]
   }
   
-  extension [Self <: IIsCompleteReplyOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIsCompleteReplyOther] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: complete | invalid | unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

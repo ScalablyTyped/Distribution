@@ -16,7 +16,8 @@ object ConditionalAccessSessionControl {
     __obj.asInstanceOf[ConditionalAccessSessionControl]
   }
   
-  extension [Self <: ConditionalAccessSessionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessSessionControl] (val x: Self) extends AnyVal {
     
     inline def setIsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
     

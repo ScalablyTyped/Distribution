@@ -15,7 +15,8 @@ object IgnoreCase {
     __obj.asInstanceOf[IgnoreCase]
   }
   
-  extension [Self <: IgnoreCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreCase] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
   }

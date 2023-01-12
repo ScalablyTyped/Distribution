@@ -23,7 +23,8 @@ object AssociatedApplication {
     __obj.asInstanceOf[AssociatedApplication]
   }
   
-  extension [Self <: AssociatedApplication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociatedApplication] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ColorPaddingHorizontal {
     __obj.asInstanceOf[ColorPaddingHorizontal]
   }
   
-  extension [Self <: ColorPaddingHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorPaddingHorizontal] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

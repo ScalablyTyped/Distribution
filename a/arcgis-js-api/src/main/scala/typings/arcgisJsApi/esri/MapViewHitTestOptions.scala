@@ -27,7 +27,8 @@ object MapViewHitTestOptions {
     __obj.asInstanceOf[MapViewHitTestOptions]
   }
   
-  extension [Self <: MapViewHitTestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapViewHitTestOptions] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: js.Array[HitTestItem] | Collection[HitTestItem] | Layer | Graphic): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

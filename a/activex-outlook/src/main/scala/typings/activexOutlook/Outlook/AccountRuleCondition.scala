@@ -40,7 +40,8 @@ object AccountRuleCondition {
     __obj.asInstanceOf[AccountRuleCondition]
   }
   
-  extension [Self <: AccountRuleCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRuleCondition] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Account): Self = StObject.set(x, "Account", value.asInstanceOf[js.Any])
     

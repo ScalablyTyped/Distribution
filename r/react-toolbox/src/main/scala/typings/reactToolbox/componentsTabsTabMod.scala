@@ -90,7 +90,8 @@ object componentsTabsTabMod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object componentsTabsTabMod {
       __obj.asInstanceOf[TabTheme]
     }
     
-    extension [Self <: TabTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

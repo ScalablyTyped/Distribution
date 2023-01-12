@@ -53,7 +53,8 @@ object BrushProps {
     __obj.asInstanceOf[BrushProps]
   }
   
-  extension [Self <: BrushProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrushProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

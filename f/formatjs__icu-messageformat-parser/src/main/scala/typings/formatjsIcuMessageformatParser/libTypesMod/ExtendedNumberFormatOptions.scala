@@ -18,7 +18,8 @@ object ExtendedNumberFormatOptions {
     __obj.asInstanceOf[ExtendedNumberFormatOptions]
   }
   
-  extension [Self <: ExtendedNumberFormatOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedNumberFormatOptions] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

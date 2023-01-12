@@ -84,7 +84,8 @@ object XComplexDescriptionAccess {
     __obj.asInstanceOf[XComplexDescriptionAccess]
   }
   
-  extension [Self <: XComplexDescriptionAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComplexDescriptionAccess] (val x: Self) extends AnyVal {
     
     inline def setComplexColumnDescriptions(value: SafeArray[SafeArray[String]]): Self = StObject.set(x, "ComplexColumnDescriptions", value.asInstanceOf[js.Any])
     

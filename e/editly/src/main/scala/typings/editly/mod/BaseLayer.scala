@@ -29,7 +29,8 @@ object BaseLayer {
     __obj.asInstanceOf[BaseLayer]
   }
   
-  extension [Self <: BaseLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLayer] (val x: Self) extends AnyVal {
     
     inline def setStart(value: Double): Self = StObject.set(x, "start", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SecurityGetRoleRequest {
     __obj.asInstanceOf[SecurityGetRoleRequest]
   }
   
-  extension [Self <: SecurityGetRoleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetRoleRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Names): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

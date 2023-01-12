@@ -18,7 +18,8 @@ object XummPostPayloadBodyJson {
     __obj.asInstanceOf[XummPostPayloadBodyJson]
   }
   
-  extension [Self <: XummPostPayloadBodyJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummPostPayloadBodyJson] (val x: Self) extends AnyVal {
     
     inline def setTxjson(value: XummJsonTransaction): Self = StObject.set(x, "txjson", value.asInstanceOf[js.Any])
   }

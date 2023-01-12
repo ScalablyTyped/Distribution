@@ -21,7 +21,8 @@ object DownshiftState {
     __obj.asInstanceOf[DownshiftState[Item]]
   }
   
-  extension [Self <: DownshiftState[?], Item](x: Self & DownshiftState[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownshiftState[?], Item] (val x: Self & DownshiftState[Item]) extends AnyVal {
     
     inline def setHighlightedIndex(value: Double): Self = StObject.set(x, "highlightedIndex", value.asInstanceOf[js.Any])
     

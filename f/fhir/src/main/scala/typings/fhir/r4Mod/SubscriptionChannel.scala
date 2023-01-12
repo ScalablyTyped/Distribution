@@ -49,7 +49,8 @@ object SubscriptionChannel {
     __obj.asInstanceOf[SubscriptionChannel]
   }
   
-  extension [Self <: SubscriptionChannel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionChannel] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
     

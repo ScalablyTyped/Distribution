@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

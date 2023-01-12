@@ -22,7 +22,8 @@ object RequestAccessData {
     __obj.asInstanceOf[RequestAccessData]
   }
   
-  extension [Self <: RequestAccessData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestAccessData] (val x: Self) extends AnyVal {
     
     inline def setConcurrentAccess(value: ConcurrentAccessRestriction): Self = StObject.set(x, "concurrentAccess", value.asInstanceOf[js.Any])
     

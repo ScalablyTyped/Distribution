@@ -22,7 +22,8 @@ object IEnvelope {
     __obj.asInstanceOf[IEnvelope[T]]
   }
   
-  extension [Self <: IEnvelope[?], T](x: Self & IEnvelope[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEnvelope[?], T] (val x: Self & IEnvelope[T]) extends AnyVal {
     
     inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

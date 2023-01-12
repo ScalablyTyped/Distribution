@@ -42,7 +42,8 @@ object GmailImageAdBuilder {
     __obj.asInstanceOf[GmailImageAdBuilder[GmailImageAd]]
   }
   
-  extension [Self <: GmailImageAdBuilder[?], GmailImageAd](x: Self & GmailImageAdBuilder[GmailImageAd]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GmailImageAdBuilder[?], GmailImageAd] (val x: Self & GmailImageAdBuilder[GmailImageAd]) extends AnyVal {
     
     inline def setWithAdvertiser(value: String => GmailImageAdBuilder[GmailImageAd]): Self = StObject.set(x, "withAdvertiser", js.Any.fromFunction1(value))
     

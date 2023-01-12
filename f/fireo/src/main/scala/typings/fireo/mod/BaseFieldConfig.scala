@@ -19,7 +19,8 @@ object BaseFieldConfig {
     __obj.asInstanceOf[BaseFieldConfig]
   }
   
-  extension [Self <: BaseFieldConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseFieldConfig] (val x: Self) extends AnyVal {
     
     inline def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
     

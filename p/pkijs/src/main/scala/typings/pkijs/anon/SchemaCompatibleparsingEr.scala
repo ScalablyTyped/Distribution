@@ -31,7 +31,8 @@ object SchemaCompatibleparsingEr {
     __obj.asInstanceOf[SchemaCompatibleparsingEr]
   }
   
-  extension [Self <: SchemaCompatibleparsingEr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaCompatibleparsingEr] (val x: Self) extends AnyVal {
     
     inline def setFromSchema(value: SchemaType => Unit): Self = StObject.set(x, "fromSchema", js.Any.fromFunction1(value))
     

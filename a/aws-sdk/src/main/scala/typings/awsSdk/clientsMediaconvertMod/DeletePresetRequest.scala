@@ -18,7 +18,8 @@ object DeletePresetRequest {
     __obj.asInstanceOf[DeletePresetRequest]
   }
   
-  extension [Self <: DeletePresetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePresetRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: string): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

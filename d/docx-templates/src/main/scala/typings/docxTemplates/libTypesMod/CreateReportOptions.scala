@@ -44,7 +44,8 @@ object CreateReportOptions {
     __obj.asInstanceOf[CreateReportOptions]
   }
   
-  extension [Self <: CreateReportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReportOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalJsContext(value: js.Object): Self = StObject.set(x, "additionalJsContext", value.asInstanceOf[js.Any])
     

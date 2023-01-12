@@ -24,7 +24,8 @@ object NamespaceImport {
     __obj.asInstanceOf[NamespaceImport]
   }
   
-  extension [Self <: NamespaceImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceImport] (val x: Self) extends AnyVal {
     
     inline def setImportClause(value: ImportClause): Self = StObject.set(x, "importClause", value.asInstanceOf[js.Any])
     

@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Console]
     }
     
-    extension [Self <: Console](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (/* message */ js.UndefOr[Any], /* repeated */ Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: Console): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       

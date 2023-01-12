@@ -101,7 +101,8 @@ object `libEsm@ExamplesFilmSelectMod` {
       __obj.asInstanceOf[FilmSelectProps]
     }
     
-    extension [Self <: FilmSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilmSelectProps] (val x: Self) extends AnyVal {
       
       inline def setActiveItem(value: Film | CreateNewItem): Self = StObject.set(x, "activeItem", value.asInstanceOf[js.Any])
       

@@ -177,7 +177,8 @@ object mod {
           __obj.asInstanceOf[PhantomCSSOptions]
         }
         
-        extension [Self <: PhantomCSSOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PhantomCSSOptions] (val x: Self) extends AnyVal {
           
           inline def setAddIteratorToImage(value: Boolean): Self = StObject.set(x, "addIteratorToImage", value.asInstanceOf[js.Any])
           
@@ -278,7 +279,8 @@ object mod {
           __obj.asInstanceOf[PhantomCSSTest]
         }
         
-        extension [Self <: PhantomCSSTest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PhantomCSSTest] (val x: Self) extends AnyVal {
           
           inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           

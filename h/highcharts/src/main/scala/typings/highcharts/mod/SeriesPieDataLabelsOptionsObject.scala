@@ -363,7 +363,8 @@ object SeriesPieDataLabelsOptionsObject {
     __obj.asInstanceOf[SeriesPieDataLabelsOptionsObject]
   }
   
-  extension [Self <: SeriesPieDataLabelsOptionsObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesPieDataLabelsOptionsObject] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

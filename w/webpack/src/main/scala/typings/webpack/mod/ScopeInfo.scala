@@ -35,7 +35,8 @@ object ScopeInfo {
     __obj.asInstanceOf[ScopeInfo]
   }
   
-  extension [Self <: ScopeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeInfo] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: StackedMap[String, ScopeInfo | VariableInfo]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

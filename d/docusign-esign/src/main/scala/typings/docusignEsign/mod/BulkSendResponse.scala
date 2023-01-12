@@ -33,7 +33,8 @@ object BulkSendResponse {
     __obj.asInstanceOf[BulkSendResponse]
   }
   
-  extension [Self <: BulkSendResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchId(value: String): Self = StObject.set(x, "batchId", value.asInstanceOf[js.Any])
     

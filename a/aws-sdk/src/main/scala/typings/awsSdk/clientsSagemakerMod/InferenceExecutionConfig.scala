@@ -18,7 +18,8 @@ object InferenceExecutionConfig {
     __obj.asInstanceOf[InferenceExecutionConfig]
   }
   
-  extension [Self <: InferenceExecutionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceExecutionConfig] (val x: Self) extends AnyVal {
     
     inline def setMode(value: InferenceExecutionMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }

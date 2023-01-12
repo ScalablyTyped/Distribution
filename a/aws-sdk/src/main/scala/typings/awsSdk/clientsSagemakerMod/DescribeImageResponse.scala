@@ -58,7 +58,8 @@ object DescribeImageResponse {
     __obj.asInstanceOf[DescribeImageResponse]
   }
   
-  extension [Self <: DescribeImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeImageResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

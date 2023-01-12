@@ -92,7 +92,8 @@ object GridColumn {
     __obj.asInstanceOf[GridColumn]
   }
   
-  extension [Self <: GridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumn] (val x: Self) extends AnyVal {
     
     inline def setAggregates(value: Any): Self = StObject.set(x, "aggregates", value.asInstanceOf[js.Any])
     

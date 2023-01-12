@@ -143,7 +143,8 @@ object libTypescriptSrcStackRouterMod {
       __obj.asInstanceOf[StackNavigationState[ParamList]]
     }
     
-    extension [Self <: StackNavigationState[?], ParamList /* <: ParamListBase */](x: Self & StackNavigationState[ParamList]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackNavigationState[?], ParamList /* <: ParamListBase */] (val x: Self & StackNavigationState[ParamList]) extends AnyVal {
       
       inline def setHistory(value: js.Array[Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       

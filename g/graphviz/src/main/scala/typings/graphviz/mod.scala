@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[HasAttributes]
     }
     
-    extension [Self <: HasAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasAttributes] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => PossibleValue): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -121,7 +122,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setE(value: Options): Self = StObject.set(x, "E", value.asInstanceOf[js.Any])
       

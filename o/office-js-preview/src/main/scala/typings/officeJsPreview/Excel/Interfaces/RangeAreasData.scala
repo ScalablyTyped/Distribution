@@ -104,7 +104,8 @@ object RangeAreasData {
     __obj.asInstanceOf[RangeAreasData]
   }
   
-  extension [Self <: RangeAreasData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeAreasData] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

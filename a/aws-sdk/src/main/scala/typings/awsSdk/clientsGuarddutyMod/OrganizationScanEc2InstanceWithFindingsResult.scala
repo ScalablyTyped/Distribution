@@ -18,7 +18,8 @@ object OrganizationScanEc2InstanceWithFindingsResult {
     __obj.asInstanceOf[OrganizationScanEc2InstanceWithFindingsResult]
   }
   
-  extension [Self <: OrganizationScanEc2InstanceWithFindingsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationScanEc2InstanceWithFindingsResult] (val x: Self) extends AnyVal {
     
     inline def setEbsVolumes(value: OrganizationEbsVolumesResult): Self = StObject.set(x, "EbsVolumes", value.asInstanceOf[js.Any])
     

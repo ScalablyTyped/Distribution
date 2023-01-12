@@ -32,7 +32,8 @@ object GoogleActionsV2NewSurfaceValueSpec {
     __obj.asInstanceOf[GoogleActionsV2NewSurfaceValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2NewSurfaceValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2NewSurfaceValueSpec] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: js.Array[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

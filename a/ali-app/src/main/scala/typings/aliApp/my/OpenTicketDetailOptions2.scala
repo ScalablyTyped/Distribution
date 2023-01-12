@@ -20,7 +20,8 @@ object OpenTicketDetailOptions2 {
     __obj.asInstanceOf[OpenTicketDetailOptions2]
   }
   
-  extension [Self <: OpenTicketDetailOptions2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenTicketDetailOptions2] (val x: Self) extends AnyVal {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     

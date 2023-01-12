@@ -18,7 +18,8 @@ object ValueFileEncoding {
     __obj.asInstanceOf[ValueFileEncoding]
   }
   
-  extension [Self <: ValueFileEncoding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueFileEncoding] (val x: Self) extends AnyVal {
     
     inline def setScopeDescriptor(value: typings.atom.srcScopeDescriptorMod.ScopeDescriptor): Self = StObject.set(x, "scopeDescriptor", value.asInstanceOf[js.Any])
     

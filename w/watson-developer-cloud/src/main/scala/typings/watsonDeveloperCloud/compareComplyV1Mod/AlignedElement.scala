@@ -26,7 +26,8 @@ object AlignedElement {
     __obj.asInstanceOf[AlignedElement]
   }
   
-  extension [Self <: AlignedElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignedElement] (val x: Self) extends AnyVal {
     
     inline def setElement_pair(value: js.Array[ElementPair]): Self = StObject.set(x, "element_pair", value.asInstanceOf[js.Any])
     

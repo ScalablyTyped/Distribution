@@ -48,7 +48,8 @@ object CreateActivationRequest {
     __obj.asInstanceOf[CreateActivationRequest]
   }
   
-  extension [Self <: CreateActivationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateActivationRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultInstanceName(value: DefaultInstanceName): Self = StObject.set(x, "DefaultInstanceName", value.asInstanceOf[js.Any])
     

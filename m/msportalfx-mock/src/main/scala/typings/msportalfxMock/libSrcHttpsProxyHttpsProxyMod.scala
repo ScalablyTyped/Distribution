@@ -101,7 +101,8 @@ object libSrcHttpsProxyHttpsProxyMod {
         __obj.asInstanceOf[ProxyOptions]
       }
       
-      extension [Self <: ProxyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProxyOptions] (val x: Self) extends AnyVal {
         
         inline def setCloseCallback(value: (/* res */ Any, /* socket */ Any, /* head */ Any) => js.Object): Self = StObject.set(x, "closeCallback", js.Any.fromFunction3(value))
         
@@ -180,7 +181,8 @@ object libSrcHttpsProxyHttpsProxyMod {
         __obj.asInstanceOf[ProxyServer]
       }
       
-      extension [Self <: ProxyServer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProxyServer] (val x: Self) extends AnyVal {
         
         inline def setApp(value: ExpressServer): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
         
@@ -226,7 +228,8 @@ object libSrcHttpsProxyHttpsProxyMod {
         __obj.asInstanceOf[ServerOptions]
       }
       
-      extension [Self <: ServerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ServerOptions] (val x: Self) extends AnyVal {
         
         inline def setServerCallback(value: () => js.Object): Self = StObject.set(x, "serverCallback", js.Any.fromFunction0(value))
         

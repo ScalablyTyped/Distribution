@@ -91,7 +91,8 @@ object XCollator {
     __obj.asInstanceOf[XCollator]
   }
   
-  extension [Self <: XCollator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCollator] (val x: Self) extends AnyVal {
     
     inline def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
     

@@ -85,7 +85,8 @@ object LaunchSpecification {
     __obj.asInstanceOf[LaunchSpecification]
   }
   
-  extension [Self <: LaunchSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchSpecification] (val x: Self) extends AnyVal {
     
     inline def setAddressingType(value: String): Self = StObject.set(x, "AddressingType", value.asInstanceOf[js.Any])
     

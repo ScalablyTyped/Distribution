@@ -18,7 +18,8 @@ object AttributesData {
     __obj.asInstanceOf[AttributesData]
   }
   
-  extension [Self <: AttributesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesData] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Record[String, String | Double | Boolean]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

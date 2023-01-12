@@ -347,7 +347,8 @@ object GraphicObjectShape {
     __obj.asInstanceOf[GraphicObjectShape]
   }
   
-  extension [Self <: GraphicObjectShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphicObjectShape] (val x: Self) extends AnyVal {
     
     inline def setAdjustBlue(value: Double): Self = StObject.set(x, "AdjustBlue", value.asInstanceOf[js.Any])
     

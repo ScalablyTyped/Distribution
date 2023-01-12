@@ -26,7 +26,8 @@ object StateLike {
     __obj.asInstanceOf[StateLike[TContext]]
   }
   
-  extension [Self <: StateLike[?], TContext](x: Self & StateLike[TContext]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateLike[?], TContext] (val x: Self & StateLike[TContext]) extends AnyVal {
     
     inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

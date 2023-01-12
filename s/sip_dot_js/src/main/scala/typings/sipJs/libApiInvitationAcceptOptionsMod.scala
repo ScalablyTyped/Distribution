@@ -32,7 +32,8 @@ object libApiInvitationAcceptOptionsMod {
       __obj.asInstanceOf[InvitationAcceptOptions]
     }
     
-    extension [Self <: InvitationAcceptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvitationAcceptOptions] (val x: Self) extends AnyVal {
       
       inline def setExtraHeaders(value: js.Array[String]): Self = StObject.set(x, "extraHeaders", value.asInstanceOf[js.Any])
       

@@ -76,7 +76,8 @@ object SpellingOptions {
     __obj.asInstanceOf[SpellingOptions]
   }
   
-  extension [Self <: SpellingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpellingOptions] (val x: Self) extends AnyVal {
     
     inline def setArabicModes(value: XlArabicModes): Self = StObject.set(x, "ArabicModes", value.asInstanceOf[js.Any])
     

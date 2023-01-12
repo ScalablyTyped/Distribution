@@ -17,7 +17,8 @@ object SystemMediaTransportControlsButtonPressedEventArgs {
     __obj.asInstanceOf[SystemMediaTransportControlsButtonPressedEventArgs]
   }
   
-  extension [Self <: SystemMediaTransportControlsButtonPressedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMediaTransportControlsButtonPressedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButton(value: SystemMediaTransportControlsButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
   }

@@ -34,7 +34,8 @@ object DataStoreReference {
     __obj.asInstanceOf[DataStoreReference]
   }
   
-  extension [Self <: DataStoreReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataStoreReference] (val x: Self) extends AnyVal {
     
     inline def setDataState(value: DataState): Self = StObject.set(x, "dataState", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object NielsenConfiguration {
     __obj.asInstanceOf[NielsenConfiguration]
   }
   
-  extension [Self <: NielsenConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NielsenConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBreakoutCode(value: integerMin0Max0): Self = StObject.set(x, "BreakoutCode", value.asInstanceOf[js.Any])
     

@@ -408,7 +408,8 @@ object ResourceDetails {
     __obj.asInstanceOf[ResourceDetails]
   }
   
-  extension [Self <: ResourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     inline def setAwsApiGatewayRestApi(value: AwsApiGatewayRestApiDetails): Self = StObject.set(x, "AwsApiGatewayRestApi", value.asInstanceOf[js.Any])
     

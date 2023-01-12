@@ -19,7 +19,8 @@ object ServiceEndpointRequestResult {
     __obj.asInstanceOf[ServiceEndpointRequestResult]
   }
   
-  extension [Self <: ServiceEndpointRequestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEndpointRequestResult] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

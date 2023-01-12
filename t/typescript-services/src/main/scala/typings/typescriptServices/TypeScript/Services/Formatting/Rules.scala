@@ -285,7 +285,8 @@ object Rules {
     __obj.asInstanceOf[Rules]
   }
   
-  extension [Self <: Rules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rules] (val x: Self) extends AnyVal {
     
     inline def setControlOpenBraceLeftTokenRange(value: TokenRange): Self = StObject.set(x, "ControlOpenBraceLeftTokenRange", value.asInstanceOf[js.Any])
     

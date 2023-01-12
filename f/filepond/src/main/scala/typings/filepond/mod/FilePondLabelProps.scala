@@ -185,7 +185,8 @@ object FilePondLabelProps {
     __obj.asInstanceOf[FilePondLabelProps]
   }
   
-  extension [Self <: FilePondLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondLabelProps] (val x: Self) extends AnyVal {
     
     inline def setLabelButtonAbortItemLoad(value: String): Self = StObject.set(x, "labelButtonAbortItemLoad", value.asInstanceOf[js.Any])
     

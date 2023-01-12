@@ -18,7 +18,8 @@ object ParsingError_ {
     __obj.asInstanceOf[ParsingError_]
   }
   
-  extension [Self <: ParsingError_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsingError_] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

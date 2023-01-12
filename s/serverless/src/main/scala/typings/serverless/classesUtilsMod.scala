@@ -109,7 +109,8 @@ object classesUtilsMod {
       __obj.asInstanceOf[Utils]
     }
     
-    extension [Self <: Utils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Utils] (val x: Self) extends AnyVal {
       
       inline def setAppendFileSync(value: (String, String) => PromiseLike[js.Object]): Self = StObject.set(x, "appendFileSync", js.Any.fromFunction2(value))
       

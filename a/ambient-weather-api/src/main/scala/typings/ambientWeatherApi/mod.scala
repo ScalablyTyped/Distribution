@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: DeviceInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -409,7 +411,8 @@ object mod {
       __obj.asInstanceOf[DeviceData]
     }
     
-    extension [Self <: DeviceData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceData] (val x: Self) extends AnyVal {
       
       inline def set24hourrainin(value: Double): Self = StObject.set(x, "24hourrainin", value.asInstanceOf[js.Any])
       
@@ -828,7 +831,8 @@ object mod {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setCoords(value: DeviceLocation): Self = StObject.set(x, "coords", value.asInstanceOf[js.Any])
       
@@ -861,7 +865,8 @@ object mod {
       __obj.asInstanceOf[DeviceLocation]
     }
     
-    extension [Self <: DeviceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceLocation] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -888,7 +893,8 @@ object mod {
       __obj.asInstanceOf[GeoLocationCoordinate]
     }
     
-    extension [Self <: GeoLocationCoordinate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoLocationCoordinate] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       

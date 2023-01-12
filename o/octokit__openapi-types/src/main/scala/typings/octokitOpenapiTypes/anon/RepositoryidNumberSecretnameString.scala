@@ -18,7 +18,8 @@ object RepositoryidNumberSecretnameString {
     __obj.asInstanceOf[RepositoryidNumberSecretnameString]
   }
   
-  extension [Self <: RepositoryidNumberSecretnameString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryidNumberSecretnameString] (val x: Self) extends AnyVal {
     
     inline def setRepository_id(value: Double): Self = StObject.set(x, "repository_id", value.asInstanceOf[js.Any])
     

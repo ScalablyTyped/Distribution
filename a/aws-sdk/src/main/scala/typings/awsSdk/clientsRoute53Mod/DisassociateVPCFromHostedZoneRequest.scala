@@ -28,7 +28,8 @@ object DisassociateVPCFromHostedZoneRequest {
     __obj.asInstanceOf[DisassociateVPCFromHostedZoneRequest]
   }
   
-  extension [Self <: DisassociateVPCFromHostedZoneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateVPCFromHostedZoneRequest] (val x: Self) extends AnyVal {
     
     inline def setComment(value: DisassociateVPCComment): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

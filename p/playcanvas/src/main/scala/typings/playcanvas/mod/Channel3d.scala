@@ -108,7 +108,8 @@ object Channel3d {
     __obj.asInstanceOf[Channel3d]
   }
   
-  extension [Self <: Channel3d](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Channel3d] (val x: Self) extends AnyVal {
     
     inline def setDistanceModel(value: String): Self = StObject.set(x, "distanceModel", value.asInstanceOf[js.Any])
     

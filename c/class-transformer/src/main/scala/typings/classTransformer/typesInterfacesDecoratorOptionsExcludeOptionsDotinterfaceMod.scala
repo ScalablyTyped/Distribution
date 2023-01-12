@@ -25,7 +25,8 @@ object typesInterfacesDecoratorOptionsExcludeOptionsDotinterfaceMod {
       __obj.asInstanceOf[ExcludeOptions]
     }
     
-    extension [Self <: ExcludeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeOptions] (val x: Self) extends AnyVal {
       
       inline def setToClassOnly(value: Boolean): Self = StObject.set(x, "toClassOnly", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object CircleOptions {
     __obj.asInstanceOf[CircleOptions]
   }
   
-  extension [Self <: CircleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

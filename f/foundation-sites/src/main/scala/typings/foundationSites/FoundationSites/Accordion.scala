@@ -21,7 +21,8 @@ object Accordion {
     __obj.asInstanceOf[Accordion]
   }
   
-  extension [Self <: Accordion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Accordion] (val x: Self) extends AnyVal {
     
     inline def setDown(value: (JQuery, Boolean) => Unit): Self = StObject.set(x, "down", js.Any.fromFunction2(value))
     

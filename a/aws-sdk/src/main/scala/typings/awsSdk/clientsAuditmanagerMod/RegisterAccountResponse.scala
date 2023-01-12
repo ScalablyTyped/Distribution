@@ -18,7 +18,8 @@ object RegisterAccountResponse {
     __obj.asInstanceOf[RegisterAccountResponse]
   }
   
-  extension [Self <: RegisterAccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterAccountResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AccountStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

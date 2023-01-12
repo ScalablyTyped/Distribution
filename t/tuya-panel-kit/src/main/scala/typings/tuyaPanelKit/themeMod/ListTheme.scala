@@ -44,7 +44,8 @@ object ListTheme {
     __obj.asInstanceOf[ListTheme]
   }
   
-  extension [Self <: ListTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTheme] (val x: Self) extends AnyVal {
     
     inline def setBoardBg(value: String): Self = StObject.set(x, "boardBg", value.asInstanceOf[js.Any])
     

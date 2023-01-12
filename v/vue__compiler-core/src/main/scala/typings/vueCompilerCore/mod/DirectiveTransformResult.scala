@@ -19,7 +19,8 @@ object DirectiveTransformResult {
     __obj.asInstanceOf[DirectiveTransformResult]
   }
   
-  extension [Self <: DirectiveTransformResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveTransformResult] (val x: Self) extends AnyVal {
     
     inline def setNeedRuntime(value: Boolean | js.Symbol): Self = StObject.set(x, "needRuntime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Patch {
     __obj.asInstanceOf[Patch]
   }
   
-  extension [Self <: Patch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
     
     inline def setQOp(value: add | remove | replace): Self = StObject.set(x, "qOp", value.asInstanceOf[js.Any])
     

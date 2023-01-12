@@ -41,7 +41,8 @@ object TileInformation {
     __obj.asInstanceOf[TileInformation]
   }
   
-  extension [Self <: TileInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileInformation] (val x: Self) extends AnyVal {
     
     inline def setFmt(value: ImageFormat): Self = StObject.set(x, "fmt", value.asInstanceOf[js.Any])
     

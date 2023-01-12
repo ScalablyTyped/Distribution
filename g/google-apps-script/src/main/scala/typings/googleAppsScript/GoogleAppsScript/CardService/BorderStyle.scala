@@ -35,7 +35,8 @@ object BorderStyle {
     __obj.asInstanceOf[BorderStyle]
   }
   
-  extension [Self <: BorderStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderStyle] (val x: Self) extends AnyVal {
     
     inline def setSetCornerRadius(value: Double => BorderStyle): Self = StObject.set(x, "setCornerRadius", js.Any.fromFunction1(value))
     

@@ -226,7 +226,8 @@ object keyinPermissionPermission {
     __obj.asInstanceOf[keyinPermissionPermission]
   }
   
-  extension [Self <: keyinPermissionPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinPermissionPermission] (val x: Self) extends AnyVal {
     
     inline def setAndroidDotpermissionDotACCEPT_HANDOVER(value: PermissionStatus): Self = StObject.set(x, "android.permission.ACCEPT_HANDOVER", value.asInstanceOf[js.Any])
     

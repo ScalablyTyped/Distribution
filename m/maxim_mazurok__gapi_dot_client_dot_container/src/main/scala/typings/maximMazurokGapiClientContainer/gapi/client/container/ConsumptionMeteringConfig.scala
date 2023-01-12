@@ -16,7 +16,8 @@ object ConsumptionMeteringConfig {
     __obj.asInstanceOf[ConsumptionMeteringConfig]
   }
   
-  extension [Self <: ConsumptionMeteringConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumptionMeteringConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

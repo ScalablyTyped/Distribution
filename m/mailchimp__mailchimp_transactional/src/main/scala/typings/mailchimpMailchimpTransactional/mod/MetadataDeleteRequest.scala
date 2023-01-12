@@ -18,7 +18,8 @@ object MetadataDeleteRequest {
     __obj.asInstanceOf[MetadataDeleteRequest]
   }
   
-  extension [Self <: MetadataDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,8 @@ object Strict {
     __obj.asInstanceOf[Strict]
   }
   
-  extension [Self <: Strict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
     
     inline def setChunkGraph(value: typings.webpack.mod.ChunkGraph): Self = StObject.set(x, "chunkGraph", value.asInstanceOf[js.Any])
     

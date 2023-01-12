@@ -17,7 +17,8 @@ object KVData {
     __obj.asInstanceOf[KVData]
   }
   
-  extension [Self <: KVData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KVData] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

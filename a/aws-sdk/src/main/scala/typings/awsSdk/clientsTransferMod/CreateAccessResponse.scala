@@ -23,7 +23,8 @@ object CreateAccessResponse {
     __obj.asInstanceOf[CreateAccessResponse]
   }
   
-  extension [Self <: CreateAccessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccessResponse] (val x: Self) extends AnyVal {
     
     inline def setExternalId(value: ExternalId): Self = StObject.set(x, "ExternalId", value.asInstanceOf[js.Any])
     

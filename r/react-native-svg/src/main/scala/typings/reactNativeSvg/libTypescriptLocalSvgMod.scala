@@ -73,7 +73,8 @@ object libTypescriptLocalSvgMod {
       __obj.asInstanceOf[LocalProps]
     }
     
-    extension [Self <: LocalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalProps] (val x: Self) extends AnyVal {
       
       inline def setAsset(value: ImageSourcePropType): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object libTypescriptLocalSvgMod {
       __obj.asInstanceOf[LocalState]
     }
     
-    extension [Self <: LocalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalState] (val x: Self) extends AnyVal {
       
       inline def setXml(value: String): Self = StObject.set(x, "xml", value.asInstanceOf[js.Any])
       

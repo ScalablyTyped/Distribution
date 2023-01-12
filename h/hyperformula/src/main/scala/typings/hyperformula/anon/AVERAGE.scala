@@ -82,7 +82,8 @@ object AVERAGE {
     __obj.asInstanceOf[AVERAGE]
   }
   
-  extension [Self <: AVERAGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AVERAGE] (val x: Self) extends AnyVal {
     
     inline def setAVERAGE(value: MethodParametersRepeatLastArgs): Self = StObject.set(x, "AVERAGE", value.asInstanceOf[js.Any])
     

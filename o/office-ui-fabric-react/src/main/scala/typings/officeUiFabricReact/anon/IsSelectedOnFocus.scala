@@ -27,7 +27,8 @@ object IsSelectedOnFocus {
     __obj.asInstanceOf[IsSelectedOnFocus]
   }
   
-  extension [Self <: IsSelectedOnFocus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSelectedOnFocus] (val x: Self) extends AnyVal {
     
     inline def setIsSelectedOnFocus(value: Boolean): Self = StObject.set(x, "isSelectedOnFocus", value.asInstanceOf[js.Any])
     

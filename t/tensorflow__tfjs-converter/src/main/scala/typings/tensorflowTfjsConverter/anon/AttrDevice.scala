@@ -23,7 +23,8 @@ object AttrDevice {
     __obj.asInstanceOf[AttrDevice]
   }
   
-  extension [Self <: AttrDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrDevice] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: Tidx): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

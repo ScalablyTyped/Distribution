@@ -24,7 +24,8 @@ object GrpcGatewayRoute {
     __obj.asInstanceOf[GrpcGatewayRoute]
   }
   
-  extension [Self <: GrpcGatewayRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcGatewayRoute] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GrpcGatewayRouteAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

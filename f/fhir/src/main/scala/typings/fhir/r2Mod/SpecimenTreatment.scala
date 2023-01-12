@@ -32,7 +32,8 @@ object SpecimenTreatment {
     __obj.asInstanceOf[SpecimenTreatment]
   }
   
-  extension [Self <: SpecimenTreatment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenTreatment] (val x: Self) extends AnyVal {
     
     inline def setAdditive(value: js.Array[Reference]): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
     

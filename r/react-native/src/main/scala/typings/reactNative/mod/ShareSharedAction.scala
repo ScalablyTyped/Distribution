@@ -20,7 +20,8 @@ object ShareSharedAction {
     __obj.asInstanceOf[ShareSharedAction]
   }
   
-  extension [Self <: ShareSharedAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareSharedAction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: sharedAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

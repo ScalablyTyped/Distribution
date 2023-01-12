@@ -18,7 +18,8 @@ object DeleteBrokerRequest {
     __obj.asInstanceOf[DeleteBrokerRequest]
   }
   
-  extension [Self <: DeleteBrokerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBrokerRequest] (val x: Self) extends AnyVal {
     
     inline def setBrokerId(value: string): Self = StObject.set(x, "BrokerId", value.asInstanceOf[js.Any])
   }

@@ -33,7 +33,8 @@ object ColumnMovingEventUIParam {
     __obj.asInstanceOf[ColumnMovingEventUIParam]
   }
   
-  extension [Self <: ColumnMovingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnMovingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

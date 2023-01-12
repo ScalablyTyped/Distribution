@@ -1155,7 +1155,8 @@ object distLayersConvolutionalMod {
       __obj.asInstanceOf[BaseConvLayerArgs]
     }
     
-    extension [Self <: BaseConvLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseConvLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -1238,7 +1239,8 @@ object distLayersConvolutionalMod {
       __obj.asInstanceOf[ConvLayerArgs]
     }
     
-    extension [Self <: ConvLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: Double): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     }
@@ -1285,7 +1287,8 @@ object distLayersConvolutionalMod {
       __obj.asInstanceOf[Cropping2DLayerArgs]
     }
     
-    extension [Self <: Cropping2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cropping2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setCropping(
         value: Double | (js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])])
@@ -1346,7 +1349,8 @@ object distLayersConvolutionalMod {
       __obj.asInstanceOf[SeparableConvLayerArgs]
     }
     
-    extension [Self <: SeparableConvLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeparableConvLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDepthMultiplier(value: Double): Self = StObject.set(x, "depthMultiplier", value.asInstanceOf[js.Any])
       
@@ -1416,7 +1420,8 @@ object distLayersConvolutionalMod {
       __obj.asInstanceOf[UpSampling2DLayerArgs]
     }
     
-    extension [Self <: UpSampling2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpSampling2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       

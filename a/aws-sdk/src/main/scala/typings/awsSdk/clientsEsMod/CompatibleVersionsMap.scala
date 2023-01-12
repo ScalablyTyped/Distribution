@@ -20,7 +20,8 @@ object CompatibleVersionsMap {
     __obj.asInstanceOf[CompatibleVersionsMap]
   }
   
-  extension [Self <: CompatibleVersionsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatibleVersionsMap] (val x: Self) extends AnyVal {
     
     inline def setSourceVersion(value: ElasticsearchVersionString): Self = StObject.set(x, "SourceVersion", value.asInstanceOf[js.Any])
     

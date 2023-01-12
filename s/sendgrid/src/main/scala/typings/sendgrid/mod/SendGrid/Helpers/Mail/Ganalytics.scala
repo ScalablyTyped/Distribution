@@ -54,7 +54,8 @@ object Ganalytics {
     __obj.asInstanceOf[Ganalytics]
   }
   
-  extension [Self <: Ganalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ganalytics] (val x: Self) extends AnyVal {
     
     inline def setGetContent(value: () => String): Self = StObject.set(x, "getContent", js.Any.fromFunction0(value))
     

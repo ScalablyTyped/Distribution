@@ -32,7 +32,8 @@ object CryptoEngineVerifyDataStampedWithPasswordParams {
     __obj.asInstanceOf[CryptoEngineVerifyDataStampedWithPasswordParams]
   }
   
-  extension [Self <: CryptoEngineVerifyDataStampedWithPasswordParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoEngineVerifyDataStampedWithPasswordParams] (val x: Self) extends AnyVal {
     
     inline def setContentToVerify(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "contentToVerify", value.asInstanceOf[js.Any])
     

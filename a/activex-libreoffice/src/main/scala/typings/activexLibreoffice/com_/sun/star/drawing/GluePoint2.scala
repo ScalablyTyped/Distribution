@@ -46,7 +46,8 @@ object GluePoint2 {
     __obj.asInstanceOf[GluePoint2]
   }
   
-  extension [Self <: GluePoint2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GluePoint2] (val x: Self) extends AnyVal {
     
     inline def setEscape(value: EscapeDirection): Self = StObject.set(x, "Escape", value.asInstanceOf[js.Any])
     

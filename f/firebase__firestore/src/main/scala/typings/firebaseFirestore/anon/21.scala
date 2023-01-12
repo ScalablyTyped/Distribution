@@ -16,7 +16,8 @@ object `21` {
     __obj.asInstanceOf[`21`]
   }
   
-  extension [Self <: `21`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `21`] (val x: Self) extends AnyVal {
     
     inline def setCount(value: AggregateField[Double]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
   }

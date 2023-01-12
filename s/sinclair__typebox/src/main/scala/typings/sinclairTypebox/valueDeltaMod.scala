@@ -38,7 +38,8 @@ object valueDeltaMod {
       __obj.asInstanceOf[Delete[T]]
     }
     
-    extension [Self <: Delete[?], T](x: Self & Delete[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete[?], T] (val x: Self & Delete[T]) extends AnyVal {
       
       inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object valueDeltaMod {
       __obj.asInstanceOf[Insert[T]]
     }
     
-    extension [Self <: Insert[?], T](x: Self & Insert[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Insert[?], T] (val x: Self & Insert[T]) extends AnyVal {
       
       inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object valueDeltaMod {
       __obj.asInstanceOf[Update[T]]
     }
     
-    extension [Self <: Update[?], T](x: Self & Update[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update[?], T] (val x: Self & Update[T]) extends AnyVal {
       
       inline def setBrand(value: T): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       

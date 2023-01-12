@@ -43,7 +43,8 @@ object InsightRule {
     __obj.asInstanceOf[InsightRule]
   }
   
-  extension [Self <: InsightRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightRule] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: InsightRuleDefinition): Self = StObject.set(x, "Definition", value.asInstanceOf[js.Any])
     

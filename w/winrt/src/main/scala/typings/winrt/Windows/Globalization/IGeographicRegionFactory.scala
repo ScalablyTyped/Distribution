@@ -15,7 +15,8 @@ object IGeographicRegionFactory {
     __obj.asInstanceOf[IGeographicRegionFactory]
   }
   
-  extension [Self <: IGeographicRegionFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeographicRegionFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateGeographicRegion(value: String => GeographicRegion): Self = StObject.set(x, "createGeographicRegion", js.Any.fromFunction1(value))
   }

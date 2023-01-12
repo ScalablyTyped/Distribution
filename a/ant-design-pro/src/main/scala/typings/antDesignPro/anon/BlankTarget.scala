@@ -22,7 +22,8 @@ object BlankTarget {
     __obj.asInstanceOf[BlankTarget]
   }
   
-  extension [Self <: BlankTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlankTarget] (val x: Self) extends AnyVal {
     
     inline def setBlankTarget(value: Boolean): Self = StObject.set(x, "blankTarget", value.asInstanceOf[js.Any])
     

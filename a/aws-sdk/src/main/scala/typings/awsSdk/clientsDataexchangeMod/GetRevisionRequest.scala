@@ -23,7 +23,8 @@ object GetRevisionRequest {
     __obj.asInstanceOf[GetRevisionRequest]
   }
   
-  extension [Self <: GetRevisionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRevisionRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSetId(value: string): Self = StObject.set(x, "DataSetId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object UtilizationByTime {
     __obj.asInstanceOf[UtilizationByTime]
   }
   
-  extension [Self <: UtilizationByTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UtilizationByTime] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: ReservationUtilizationGroups): Self = StObject.set(x, "Groups", value.asInstanceOf[js.Any])
     

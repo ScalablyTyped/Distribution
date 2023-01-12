@@ -17,7 +17,8 @@ object HomeEvent {
     __obj.asInstanceOf[HomeEvent]
   }
   
-  extension [Self <: HomeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HomeEvent] (val x: Self) extends AnyVal {
     
     inline def setImmediately(value: Boolean): Self = StObject.set(x, "immediately", value.asInstanceOf[js.Any])
   }

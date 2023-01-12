@@ -19,7 +19,8 @@ object FeatureData {
     __obj.asInstanceOf[FeatureData]
   }
   
-  extension [Self <: FeatureData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureData] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: GeometryClasses | LatLng | LatLngLiteral): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

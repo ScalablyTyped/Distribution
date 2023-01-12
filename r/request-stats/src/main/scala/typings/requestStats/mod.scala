@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Progress]
     }
     
-    extension [Self <: Progress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Progress] (val x: Self) extends AnyVal {
       
       inline def setCompleted(value: Boolean): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setProgress(value: () => Progress): Self = StObject.set(x, "progress", js.Any.fromFunction0(value))
     }
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setOk(value: Boolean): Self = StObject.set(x, "ok", value.asInstanceOf[js.Any])
       

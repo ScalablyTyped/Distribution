@@ -56,7 +56,8 @@ object FancyThumbs {
     __obj.asInstanceOf[FancyThumbs]
   }
   
-  extension [Self <: FancyThumbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyThumbs] (val x: Self) extends AnyVal {
     
     inline def set$button(value: JQuery): Self = StObject.set(x, "$button", value.asInstanceOf[js.Any])
     

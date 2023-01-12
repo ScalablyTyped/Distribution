@@ -31,7 +31,8 @@ object FreeBusyRequest {
     __obj.asInstanceOf[FreeBusyRequest]
   }
   
-  extension [Self <: FreeBusyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyRequest] (val x: Self) extends AnyVal {
     
     inline def setCalendarExpansionMax(value: Double): Self = StObject.set(x, "calendarExpansionMax", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DropdownContextValueisOpe {
     __obj.asInstanceOf[DropdownContextValueisOpe]
   }
   
-  extension [Self <: DropdownContextValueisOpe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropdownContextValueisOpe] (val x: Self) extends AnyVal {
     
     inline def setIsExpanded(value: Boolean): Self = StObject.set(x, "isExpanded", value.asInstanceOf[js.Any])
     

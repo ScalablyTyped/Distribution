@@ -19,7 +19,8 @@ object ICharacterReceivedEventArgs {
     __obj.asInstanceOf[ICharacterReceivedEventArgs]
   }
   
-  extension [Self <: ICharacterReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICharacterReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
     

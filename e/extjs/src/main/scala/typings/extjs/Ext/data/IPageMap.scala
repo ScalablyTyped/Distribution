@@ -36,7 +36,8 @@ object IPageMap {
     __obj.asInstanceOf[IPageMap]
   }
   
-  extension [Self <: IPageMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPageMap] (val x: Self) extends AnyVal {
     
     inline def setFindBy(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Any): Self = StObject.set(x, "findBy", js.Any.fromFunction2(value))
     

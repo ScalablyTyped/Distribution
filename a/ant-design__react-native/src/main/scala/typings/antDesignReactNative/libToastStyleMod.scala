@@ -49,7 +49,8 @@ object libToastStyleMod {
       __obj.asInstanceOf[ToastStyle]
     }
     
-    extension [Self <: ToastStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToastStyle] (val x: Self) extends AnyVal {
       
       inline def setCentering(value: ViewStyle): Self = StObject.set(x, "centering", value.asInstanceOf[js.Any])
       

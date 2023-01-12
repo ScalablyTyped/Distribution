@@ -27,7 +27,8 @@ object ConformanceContact {
     __obj.asInstanceOf[ConformanceContact]
   }
   
-  extension [Self <: ConformanceContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceContact] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

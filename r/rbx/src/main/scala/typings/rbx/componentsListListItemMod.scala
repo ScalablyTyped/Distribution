@@ -66,7 +66,8 @@ object componentsListListItemMod {
       __obj.asInstanceOf[ListItemModifierProps]
     }
     
-    extension [Self <: ListItemModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemModifierProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object componentsListListItemMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

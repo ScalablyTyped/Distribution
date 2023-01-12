@@ -40,7 +40,8 @@ object ProjectsDatabasesDocumentsRunQueryNamedParameters {
     __obj.asInstanceOf[ProjectsDatabasesDocumentsRunQueryNamedParameters]
   }
   
-  extension [Self <: ProjectsDatabasesDocumentsRunQueryNamedParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectsDatabasesDocumentsRunQueryNamedParameters] (val x: Self) extends AnyVal {
     
     inline def set$Xgafv(value: ProjectsDatabasesDocumentsApiClientXgafv): Self = StObject.set(x, "$Xgafv", value.asInstanceOf[js.Any])
     

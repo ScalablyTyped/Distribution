@@ -68,7 +68,8 @@ object AwsSnsTopicDetails {
     __obj.asInstanceOf[AwsSnsTopicDetails]
   }
   
-  extension [Self <: AwsSnsTopicDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsSnsTopicDetails] (val x: Self) extends AnyVal {
     
     inline def setApplicationSuccessFeedbackRoleArn(value: NonEmptyString): Self = StObject.set(x, "ApplicationSuccessFeedbackRoleArn", value.asInstanceOf[js.Any])
     

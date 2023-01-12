@@ -29,7 +29,8 @@ object IUpdateIntentRequest {
     __obj.asInstanceOf[IUpdateIntentRequest]
   }
   
-  extension [Self <: IUpdateIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setIntent(value: IIntent): Self = StObject.set(x, "intent", value.asInstanceOf[js.Any])
     

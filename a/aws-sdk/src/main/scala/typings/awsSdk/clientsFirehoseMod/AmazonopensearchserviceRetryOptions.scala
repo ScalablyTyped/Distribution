@@ -15,7 +15,8 @@ object AmazonopensearchserviceRetryOptions {
     __obj.asInstanceOf[AmazonopensearchserviceRetryOptions]
   }
   
-  extension [Self <: AmazonopensearchserviceRetryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmazonopensearchserviceRetryOptions] (val x: Self) extends AnyVal {
     
     inline def setDurationInSeconds(value: AmazonopensearchserviceRetryDurationInSeconds): Self = StObject.set(x, "DurationInSeconds", value.asInstanceOf[js.Any])
     

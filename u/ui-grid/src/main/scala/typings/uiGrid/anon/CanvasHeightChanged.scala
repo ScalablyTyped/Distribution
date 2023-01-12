@@ -95,7 +95,8 @@ object CanvasHeightChanged {
     __obj.asInstanceOf[CanvasHeightChanged[TEntity]]
   }
   
-  extension [Self <: CanvasHeightChanged[?], TEntity](x: Self & CanvasHeightChanged[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasHeightChanged[?], TEntity] (val x: Self & CanvasHeightChanged[TEntity]) extends AnyVal {
     
     inline def setCanvasHeightChanged(value: (IScope, canvasHeightChangedHandler) => Unit): Self = StObject.set(x, "canvasHeightChanged", js.Any.fromFunction2(value))
     

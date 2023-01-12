@@ -15,7 +15,8 @@ object SearchableSnapshotsCacheStatsNode {
     __obj.asInstanceOf[SearchableSnapshotsCacheStatsNode]
   }
   
-  extension [Self <: SearchableSnapshotsCacheStatsNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchableSnapshotsCacheStatsNode] (val x: Self) extends AnyVal {
     
     inline def setShared_cache(value: SearchableSnapshotsCacheStatsShared): Self = StObject.set(x, "shared_cache", value.asInstanceOf[js.Any])
   }

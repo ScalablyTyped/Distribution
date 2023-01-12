@@ -17,7 +17,8 @@ object ConferenceParametersAddOnParameters {
     __obj.asInstanceOf[ConferenceParametersAddOnParameters]
   }
   
-  extension [Self <: ConferenceParametersAddOnParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceParametersAddOnParameters] (val x: Self) extends AnyVal {
     
     inline def setParameters(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

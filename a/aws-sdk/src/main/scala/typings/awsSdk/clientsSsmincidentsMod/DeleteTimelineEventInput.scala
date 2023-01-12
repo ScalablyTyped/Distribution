@@ -23,7 +23,8 @@ object DeleteTimelineEventInput {
     __obj.asInstanceOf[DeleteTimelineEventInput]
   }
   
-  extension [Self <: DeleteTimelineEventInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTimelineEventInput] (val x: Self) extends AnyVal {
     
     inline def setEventId(value: UUID): Self = StObject.set(x, "eventId", value.asInstanceOf[js.Any])
     

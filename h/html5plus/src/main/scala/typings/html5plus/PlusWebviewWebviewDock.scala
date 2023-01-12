@@ -46,7 +46,8 @@ object PlusWebviewWebviewDock {
     __obj.asInstanceOf[PlusWebviewWebviewDock]
   }
   
-  extension [Self <: PlusWebviewWebviewDock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewDock] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

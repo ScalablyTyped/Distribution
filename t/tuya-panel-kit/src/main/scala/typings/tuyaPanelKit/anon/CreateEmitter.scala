@@ -38,7 +38,8 @@ object CreateEmitter {
     __obj.asInstanceOf[CreateEmitter]
   }
   
-  extension [Self <: CreateEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEmitter] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: AnyFunction => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
     

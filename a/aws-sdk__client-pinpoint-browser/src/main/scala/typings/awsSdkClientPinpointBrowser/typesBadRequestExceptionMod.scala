@@ -161,7 +161,8 @@ object typesBadRequestExceptionMod {
       __obj.asInstanceOf[BadRequestException]
     }
     
-    extension [Self <: BadRequestException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadRequestException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.BadRequestException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -186,7 +187,8 @@ object typesBadRequestExceptionMod {
       __obj.asInstanceOf[BadRequestExceptionDetails]
     }
     
-    extension [Self <: BadRequestExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadRequestExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

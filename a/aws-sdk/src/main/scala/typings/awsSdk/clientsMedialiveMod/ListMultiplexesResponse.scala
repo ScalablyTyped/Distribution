@@ -23,7 +23,8 @@ object ListMultiplexesResponse {
     __obj.asInstanceOf[ListMultiplexesResponse]
   }
   
-  extension [Self <: ListMultiplexesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMultiplexesResponse] (val x: Self) extends AnyVal {
     
     inline def setMultiplexes(value: listOfMultiplexSummary): Self = StObject.set(x, "Multiplexes", value.asInstanceOf[js.Any])
     

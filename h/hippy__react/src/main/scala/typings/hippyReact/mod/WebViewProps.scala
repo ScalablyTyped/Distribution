@@ -57,7 +57,8 @@ object WebViewProps {
     __obj.asInstanceOf[WebViewProps]
   }
   
-  extension [Self <: WebViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebViewProps] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: get | post): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

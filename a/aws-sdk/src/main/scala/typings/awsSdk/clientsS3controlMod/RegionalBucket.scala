@@ -38,7 +38,8 @@ object RegionalBucket {
     __obj.asInstanceOf[RegionalBucket]
   }
   
-  extension [Self <: RegionalBucket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionalBucket] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

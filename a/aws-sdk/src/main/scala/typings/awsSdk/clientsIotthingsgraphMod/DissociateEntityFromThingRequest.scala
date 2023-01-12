@@ -23,7 +23,8 @@ object DissociateEntityFromThingRequest {
     __obj.asInstanceOf[DissociateEntityFromThingRequest]
   }
   
-  extension [Self <: DissociateEntityFromThingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DissociateEntityFromThingRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object NotificationsConfiguration {
     __obj.asInstanceOf[NotificationsConfiguration]
   }
   
-  extension [Self <: NotificationsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLambdaFunctionArn(value: Arn): Self = StObject.set(x, "LambdaFunctionArn", value.asInstanceOf[js.Any])
     

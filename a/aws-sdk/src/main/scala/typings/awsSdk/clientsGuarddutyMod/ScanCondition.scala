@@ -18,7 +18,8 @@ object ScanCondition {
     __obj.asInstanceOf[ScanCondition]
   }
   
-  extension [Self <: ScanCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanCondition] (val x: Self) extends AnyVal {
     
     inline def setMapEquals(value: MapEquals): Self = StObject.set(x, "MapEquals", value.asInstanceOf[js.Any])
     

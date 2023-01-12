@@ -77,7 +77,8 @@ object typesInternalServerErrorMod {
       __obj.asInstanceOf[InternalServerError]
     }
     
-    extension [Self <: InternalServerError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalServerError] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.InternalServerError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -97,7 +98,8 @@ object typesInternalServerErrorMod {
       __obj.asInstanceOf[InternalServerErrorDetails]
     }
     
-    extension [Self <: InternalServerErrorDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalServerErrorDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AttributeChoice {
     __obj.asInstanceOf[AttributeChoice]
   }
   
-  extension [Self <: AttributeChoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeChoice] (val x: Self) extends AnyVal {
     
     inline def setCred_def_id(value: CredentialDefinitionID): Self = StObject.set(x, "cred_def_id", value.asInstanceOf[js.Any])
     

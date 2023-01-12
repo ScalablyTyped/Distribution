@@ -38,7 +38,8 @@ object ResourceDataContainer {
     __obj.asInstanceOf[ResourceDataContainer]
   }
   
-  extension [Self <: ResourceDataContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDataContainer] (val x: Self) extends AnyVal {
     
     inline def setLocalDeviceResourceData(value: LocalDeviceResourceData): Self = StObject.set(x, "LocalDeviceResourceData", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object PrecedenceRightToLeft {
     __obj.asInstanceOf[PrecedenceRightToLeft]
   }
   
-  extension [Self <: PrecedenceRightToLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrecedenceRightToLeft] (val x: Self) extends AnyVal {
     
     inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     

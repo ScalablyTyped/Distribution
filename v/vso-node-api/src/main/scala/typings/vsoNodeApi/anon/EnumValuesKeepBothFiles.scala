@@ -15,7 +15,8 @@ object EnumValuesKeepBothFiles {
     __obj.asInstanceOf[EnumValuesKeepBothFiles]
   }
   
-  extension [Self <: EnumValuesKeepBothFiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesKeepBothFiles] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: KeepBothFiles): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

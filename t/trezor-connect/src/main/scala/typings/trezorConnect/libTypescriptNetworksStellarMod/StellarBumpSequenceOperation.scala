@@ -25,7 +25,8 @@ object StellarBumpSequenceOperation {
     __obj.asInstanceOf[StellarBumpSequenceOperation]
   }
   
-  extension [Self <: StellarBumpSequenceOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarBumpSequenceOperation] (val x: Self) extends AnyVal {
     
     inline def setBumpTo(value: String): Self = StObject.set(x, "bumpTo", value.asInstanceOf[js.Any])
     

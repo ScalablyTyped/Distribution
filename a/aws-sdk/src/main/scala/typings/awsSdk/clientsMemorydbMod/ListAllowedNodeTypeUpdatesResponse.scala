@@ -23,7 +23,8 @@ object ListAllowedNodeTypeUpdatesResponse {
     __obj.asInstanceOf[ListAllowedNodeTypeUpdatesResponse]
   }
   
-  extension [Self <: ListAllowedNodeTypeUpdatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAllowedNodeTypeUpdatesResponse] (val x: Self) extends AnyVal {
     
     inline def setScaleDownNodeTypes(value: NodeTypeList): Self = StObject.set(x, "ScaleDownNodeTypes", value.asInstanceOf[js.Any])
     

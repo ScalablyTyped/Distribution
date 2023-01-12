@@ -96,7 +96,8 @@ object libEsmComponentsFormsFormGroupMod {
       __obj.asInstanceOf[IFormGroupProps]
     }
     
-    extension [Self <: IFormGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ListResolversByFunctionResponse {
     __obj.asInstanceOf[ListResolversByFunctionResponse]
   }
   
-  extension [Self <: ListResolversByFunctionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListResolversByFunctionResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

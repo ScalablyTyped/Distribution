@@ -96,7 +96,8 @@ object ApplicationFrequency {
     __obj.asInstanceOf[ApplicationFrequency]
   }
   
-  extension [Self <: ApplicationFrequency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationFrequency] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: String): Self = StObject.set(x, "additionalInfo", value.asInstanceOf[js.Any])
     

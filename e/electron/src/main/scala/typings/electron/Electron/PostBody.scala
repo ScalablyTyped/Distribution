@@ -32,7 +32,8 @@ object PostBody {
     __obj.asInstanceOf[PostBody]
   }
   
-  extension [Self <: PostBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostBody] (val x: Self) extends AnyVal {
     
     inline def setBoundary(value: String): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
     

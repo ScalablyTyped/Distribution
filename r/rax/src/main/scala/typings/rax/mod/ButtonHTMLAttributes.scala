@@ -40,7 +40,8 @@ object ButtonHTMLAttributes {
     __obj.asInstanceOf[ButtonHTMLAttributes[T]]
   }
   
-  extension [Self <: ButtonHTMLAttributes[?], T](x: Self & ButtonHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonHTMLAttributes[?], T] (val x: Self & ButtonHTMLAttributes[T]) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpdateEnvironmentAccountConnectionInput {
     __obj.asInstanceOf[UpdateEnvironmentAccountConnectionInput]
   }
   
-  extension [Self <: UpdateEnvironmentAccountConnectionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEnvironmentAccountConnectionInput] (val x: Self) extends AnyVal {
     
     inline def setCodebuildRoleArn(value: RoleArn): Self = StObject.set(x, "codebuildRoleArn", value.asInstanceOf[js.Any])
     

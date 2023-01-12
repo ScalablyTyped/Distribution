@@ -22,7 +22,8 @@ object TsTypeParameterDeclaration {
     __obj.asInstanceOf[TsTypeParameterDeclaration]
   }
   
-  extension [Self <: TsTypeParameterDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TsTypeParameterDeclaration] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[TsTypeParameter]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

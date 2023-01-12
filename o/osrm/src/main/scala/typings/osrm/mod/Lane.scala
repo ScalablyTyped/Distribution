@@ -22,7 +22,8 @@ object Lane {
     __obj.asInstanceOf[Lane]
   }
   
-  extension [Self <: Lane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lane] (val x: Self) extends AnyVal {
     
     inline def setIndications(value: js.Array[Indication]): Self = StObject.set(x, "indications", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object AnyName {
     __obj.asInstanceOf[AnyName]
   }
   
-  extension [Self <: AnyName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyName] (val x: Self) extends AnyVal {
     
     inline def setAnyName(value: ClearControlAggregation): Self = StObject.set(x, "anyName", value.asInstanceOf[js.Any])
   }

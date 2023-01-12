@@ -18,7 +18,8 @@ object PartialClassNameMapFormGr {
     __obj.asInstanceOf[PartialClassNameMapFormGr]
   }
   
-  extension [Self <: PartialClassNameMapFormGr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapFormGr] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

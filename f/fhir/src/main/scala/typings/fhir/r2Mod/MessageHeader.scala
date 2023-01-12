@@ -77,7 +77,8 @@ object MessageHeader {
     __obj.asInstanceOf[MessageHeader]
   }
   
-  extension [Self <: MessageHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageHeader] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

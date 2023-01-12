@@ -519,7 +519,8 @@ object sapUiModelOdataV4AnnotationHelperMod extends Shortcut {
       __obj.asInstanceOf[AnnotationHelper]
     }
     
-    extension [Self <: AnnotationHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnnotationHelper] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: (Any, Arguments) => String | js.Promise[Any]): Self = StObject.set(x, "format", js.Any.fromFunction2(value))
       

@@ -43,7 +43,8 @@ object IClipPlanesHolder {
     __obj.asInstanceOf[IClipPlanesHolder]
   }
   
-  extension [Self <: IClipPlanesHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClipPlanesHolder] (val x: Self) extends AnyVal {
     
     inline def setClipPlane(value: Nullable[Plane]): Self = StObject.set(x, "clipPlane", value.asInstanceOf[js.Any])
     

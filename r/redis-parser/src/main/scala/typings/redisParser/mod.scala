@@ -156,7 +156,8 @@ object mod {
       __obj.asInstanceOf[JavascriptRedisParser]
     }
     
-    extension [Self <: JavascriptRedisParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JavascriptRedisParser] (val x: Self) extends AnyVal {
       
       inline def setArrayCache(value: Any): Self = StObject.set(x, "arrayCache", value.asInstanceOf[js.Any])
       
@@ -219,7 +220,8 @@ object mod {
       __obj.asInstanceOf[RedisParserOptions]
     }
     
-    extension [Self <: RedisParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisParserOptions] (val x: Self) extends AnyVal {
       
       inline def setReturnBuffers(value: Boolean): Self = StObject.set(x, "returnBuffers", value.asInstanceOf[js.Any])
       

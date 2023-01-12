@@ -25,7 +25,8 @@ object AccountStatusStatistics {
     __obj.asInstanceOf[AccountStatusStatistics]
   }
   
-  extension [Self <: AccountStatusStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountStatusStatistics] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

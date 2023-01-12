@@ -62,7 +62,8 @@ object PartialMapboxLayersBelow {
     __obj.asInstanceOf[PartialMapboxLayersBelow]
   }
   
-  extension [Self <: PartialMapboxLayersBelow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMapboxLayersBelow] (val x: Self) extends AnyVal {
     
     inline def setBelow(value: String): Self = StObject.set(x, "below", value.asInstanceOf[js.Any])
     

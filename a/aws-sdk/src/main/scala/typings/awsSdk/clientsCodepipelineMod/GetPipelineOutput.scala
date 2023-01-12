@@ -23,7 +23,8 @@ object GetPipelineOutput {
     __obj.asInstanceOf[GetPipelineOutput]
   }
   
-  extension [Self <: GetPipelineOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPipelineOutput] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: PipelineMetadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

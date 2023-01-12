@@ -243,7 +243,8 @@ object experimentalWebsocketsMod {
       __obj.asInstanceOf[MessageEvent]
     }
     
-    extension [Self <: MessageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

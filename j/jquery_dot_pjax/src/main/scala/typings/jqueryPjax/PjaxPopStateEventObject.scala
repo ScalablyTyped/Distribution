@@ -35,7 +35,8 @@ object PjaxPopStateEventObject {
     __obj.asInstanceOf[PjaxPopStateEventObject]
   }
   
-  extension [Self <: PjaxPopStateEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PjaxPopStateEventObject] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
   }

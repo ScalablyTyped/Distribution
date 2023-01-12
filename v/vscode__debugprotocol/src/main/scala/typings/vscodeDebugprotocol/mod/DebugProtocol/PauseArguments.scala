@@ -17,7 +17,8 @@ object PauseArguments {
     __obj.asInstanceOf[PauseArguments]
   }
   
-  extension [Self <: PauseArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseArguments] (val x: Self) extends AnyVal {
     
     inline def setThreadId(value: Double): Self = StObject.set(x, "threadId", value.asInstanceOf[js.Any])
   }

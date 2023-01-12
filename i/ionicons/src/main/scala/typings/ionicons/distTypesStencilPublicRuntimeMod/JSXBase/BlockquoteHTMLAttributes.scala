@@ -17,7 +17,8 @@ object BlockquoteHTMLAttributes {
     __obj.asInstanceOf[BlockquoteHTMLAttributes[T]]
   }
   
-  extension [Self <: BlockquoteHTMLAttributes[?], T](x: Self & BlockquoteHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockquoteHTMLAttributes[?], T] (val x: Self & BlockquoteHTMLAttributes[T]) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object TimeIntervalProperties {
     __obj.asInstanceOf[TimeIntervalProperties]
   }
   
-  extension [Self <: TimeIntervalProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeIntervalProperties] (val x: Self) extends AnyVal {
     
     inline def setUnit(
       value: milliseconds | seconds | minutes | hours | days | weeks | months | years | decades | centuries

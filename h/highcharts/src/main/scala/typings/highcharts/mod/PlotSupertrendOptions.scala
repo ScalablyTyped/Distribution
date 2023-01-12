@@ -786,7 +786,8 @@ object PlotSupertrendOptions {
     __obj.asInstanceOf[PlotSupertrendOptions]
   }
   
-  extension [Self <: PlotSupertrendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

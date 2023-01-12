@@ -73,7 +73,8 @@ object InferenceExecutionSummary {
     __obj.asInstanceOf[InferenceExecutionSummary]
   }
   
-  extension [Self <: InferenceExecutionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceExecutionSummary] (val x: Self) extends AnyVal {
     
     inline def setCustomerResultObject(value: S3Object): Self = StObject.set(x, "CustomerResultObject", value.asInstanceOf[js.Any])
     

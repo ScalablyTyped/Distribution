@@ -282,7 +282,8 @@ object ClearControlAggregation {
     __obj.asInstanceOf[ClearControlAggregation]
   }
   
-  extension [Self <: ClearControlAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearControlAggregation] (val x: Self) extends AnyVal {
     
     inline def setClearControlAggregation(value: Boolean): Self = StObject.set(x, "clearControlAggregation", value.asInstanceOf[js.Any])
     

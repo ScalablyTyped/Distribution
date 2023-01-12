@@ -258,7 +258,8 @@ object dxDataGridOptions {
     __obj.asInstanceOf[dxDataGridOptions[TRowData, TKey]]
   }
   
-  extension [Self <: dxDataGridOptions[?, ?], TRowData, TKey](x: Self & (dxDataGridOptions[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDataGridOptions[?, ?], TRowData, TKey] (val x: Self & (dxDataGridOptions[TRowData, TKey])) extends AnyVal {
     
     inline def setColumns(value: js.Array[(Column[TRowData, TKey]) | String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

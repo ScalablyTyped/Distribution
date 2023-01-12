@@ -88,7 +88,8 @@ object CustomBase {
     __obj.asInstanceOf[CustomBase]
   }
   
-  extension [Self <: CustomBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomBase] (val x: Self) extends AnyVal {
     
     inline def setBorderRadius(value: String): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
     

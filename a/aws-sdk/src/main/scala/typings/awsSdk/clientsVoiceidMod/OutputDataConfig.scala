@@ -23,7 +23,8 @@ object OutputDataConfig {
     __obj.asInstanceOf[OutputDataConfig]
   }
   
-  extension [Self <: OutputDataConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputDataConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

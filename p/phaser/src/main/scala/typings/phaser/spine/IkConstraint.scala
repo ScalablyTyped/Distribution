@@ -72,7 +72,8 @@ object IkConstraint {
     __obj.asInstanceOf[IkConstraint]
   }
   
-  extension [Self <: IkConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IkConstraint] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

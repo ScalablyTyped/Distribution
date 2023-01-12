@@ -27,7 +27,8 @@ object CitationSummary {
     __obj.asInstanceOf[CitationSummary]
   }
   
-  extension [Self <: CitationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationSummary] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CodeableConcept): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

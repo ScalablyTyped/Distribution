@@ -21,7 +21,8 @@ object CssCommonPositionAST {
     __obj.asInstanceOf[CssCommonPositionAST]
   }
   
-  extension [Self <: CssCommonPositionAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssCommonPositionAST] (val x: Self) extends AnyVal {
     
     inline def setParent(value: Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder {
     __obj.asInstanceOf[GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder]
   }
   
-  extension [Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrafeasV1SlsaProvenanceZeroTwoSlsaBuilder] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

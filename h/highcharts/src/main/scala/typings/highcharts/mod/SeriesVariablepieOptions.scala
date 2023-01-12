@@ -98,7 +98,8 @@ object SeriesVariablepieOptions {
     __obj.asInstanceOf[SeriesVariablepieOptions]
   }
   
-  extension [Self <: SeriesVariablepieOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesVariablepieOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[(js.Tuple2[Double | String, Double]) | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object SilentLaunch {
     __obj.asInstanceOf[SilentLaunch]
   }
   
-  extension [Self <: SilentLaunch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SilentLaunch] (val x: Self) extends AnyVal {
     
     inline def setSilentLaunch(value: Boolean): Self = StObject.set(x, "silentLaunch", value.asInstanceOf[js.Any])
     

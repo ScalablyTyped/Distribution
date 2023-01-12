@@ -22,7 +22,8 @@ object PluginTaskSpec {
     __obj.asInstanceOf[PluginTaskSpec]
   }
   
-  extension [Self <: PluginTaskSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginTaskSpec] (val x: Self) extends AnyVal {
     
     inline def setPluginSpec(value: PluginSpec): Self = StObject.set(x, "PluginSpec", value.asInstanceOf[js.Any])
     

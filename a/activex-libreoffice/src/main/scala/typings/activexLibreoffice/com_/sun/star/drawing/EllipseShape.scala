@@ -144,7 +144,8 @@ object EllipseShape {
     __obj.asInstanceOf[EllipseShape]
   }
   
-  extension [Self <: EllipseShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipseShape] (val x: Self) extends AnyVal {
     
     inline def setCircleEndAngle(value: Double): Self = StObject.set(x, "CircleEndAngle", value.asInstanceOf[js.Any])
     

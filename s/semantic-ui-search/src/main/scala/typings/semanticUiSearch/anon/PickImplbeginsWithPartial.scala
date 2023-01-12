@@ -21,7 +21,8 @@ object PickImplbeginsWithPartial {
     __obj.asInstanceOf[PickImplbeginsWithPartial]
   }
   
-  extension [Self <: PickImplbeginsWithPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplbeginsWithPartial] (val x: Self) extends AnyVal {
     
     inline def setBeginsWith(value: String): Self = StObject.set(x, "beginsWith", value.asInstanceOf[js.Any])
     

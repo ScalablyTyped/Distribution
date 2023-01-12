@@ -29,7 +29,8 @@ object ICommandRunTestStep {
     __obj.asInstanceOf[ICommandRunTestStep]
   }
   
-  extension [Self <: ICommandRunTestStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandRunTestStep] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

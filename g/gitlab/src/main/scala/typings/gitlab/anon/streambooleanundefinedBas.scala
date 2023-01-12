@@ -21,7 +21,8 @@ object streambooleanundefinedBas {
     __obj.asInstanceOf[streambooleanundefinedBas]
   }
   
-  extension [Self <: streambooleanundefinedBas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: streambooleanundefinedBas] (val x: Self) extends AnyVal {
     
     inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     

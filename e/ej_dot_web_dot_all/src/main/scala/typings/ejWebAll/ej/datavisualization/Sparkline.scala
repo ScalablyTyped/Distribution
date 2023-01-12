@@ -200,7 +200,8 @@ object Sparkline {
       __obj.asInstanceOf[AxisLineSettings]
     }
     
-    extension [Self <: AxisLineSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisLineSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -239,7 +240,8 @@ object Sparkline {
       __obj.asInstanceOf[Border]
     }
     
-    extension [Self <: Border](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Border] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object Sparkline {
       __obj.asInstanceOf[ClickEventArgs]
     }
     
-    extension [Self <: ClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -309,7 +312,8 @@ object Sparkline {
       __obj.asInstanceOf[DoubleClickEventArgs]
     }
     
-    extension [Self <: DoubleClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -346,7 +350,8 @@ object Sparkline {
       __obj.asInstanceOf[LoadEventArgs]
     }
     
-    extension [Self <: LoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -383,7 +388,8 @@ object Sparkline {
       __obj.asInstanceOf[LoadedEventArgs]
     }
     
-    extension [Self <: LoadedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -432,7 +438,8 @@ object Sparkline {
       __obj.asInstanceOf[MarkerSettings]
     }
     
-    extension [Self <: MarkerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerSettings] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: MarkerSettingsBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -480,7 +487,8 @@ object Sparkline {
       __obj.asInstanceOf[MarkerSettingsBorder]
     }
     
-    extension [Self <: MarkerSettingsBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkerSettingsBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -677,7 +685,8 @@ object Sparkline {
       __obj.asInstanceOf[typings.ejWebAll.ej.datavisualization.Sparkline.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.datavisualization.Sparkline.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.datavisualization.Sparkline.Model] (val x: Self) extends AnyVal {
       
       inline def setAxisLineSettings(value: AxisLineSettings): Self = StObject.set(x, "axisLineSettings", value.asInstanceOf[js.Any])
       
@@ -870,7 +879,8 @@ object Sparkline {
       __obj.asInstanceOf[PointRegionMouseClickEventArgs]
     }
     
-    extension [Self <: PointRegionMouseClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionMouseClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -939,7 +949,8 @@ object Sparkline {
       __obj.asInstanceOf[PointRegionMouseMoveEventArgs]
     }
     
-    extension [Self <: PointRegionMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointRegionMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1000,7 +1011,8 @@ object Sparkline {
       __obj.asInstanceOf[RangeBandSettings]
     }
     
-    extension [Self <: RangeBandSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeBandSettings] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1041,7 +1053,8 @@ object Sparkline {
       __obj.asInstanceOf[RightClickEventArgs]
     }
     
-    extension [Self <: RightClickEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RightClickEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1094,7 +1107,8 @@ object Sparkline {
       __obj.asInstanceOf[SeriesRenderingEventArgs]
     }
     
-    extension [Self <: SeriesRenderingEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeriesRenderingEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1145,7 +1159,8 @@ object Sparkline {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -1178,7 +1193,8 @@ object Sparkline {
       __obj.asInstanceOf[SparklineMouseLeaveEventArgs]
     }
     
-    extension [Self <: SparklineMouseLeaveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklineMouseLeaveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1215,7 +1231,8 @@ object Sparkline {
       __obj.asInstanceOf[SparklineMouseMoveEventArgs]
     }
     
-    extension [Self <: SparklineMouseMoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklineMouseMoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1262,7 +1279,8 @@ object Sparkline {
       __obj.asInstanceOf[Tooltip]
     }
     
-    extension [Self <: Tooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tooltip] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: TooltipBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -1305,7 +1323,8 @@ object Sparkline {
       __obj.asInstanceOf[TooltipBorder]
     }
     
-    extension [Self <: TooltipBorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipBorder] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1356,7 +1375,8 @@ object Sparkline {
       __obj.asInstanceOf[TooltipFont]
     }
     
-    extension [Self <: TooltipFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipFont] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1421,7 +1441,8 @@ object Sparkline {
       __obj.asInstanceOf[TooltipInitializeEventArgs]
     }
     
-    extension [Self <: TooltipInitializeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipInitializeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

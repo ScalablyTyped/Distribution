@@ -23,7 +23,8 @@ object ModifyAuthenticationProfileResult {
     __obj.asInstanceOf[ModifyAuthenticationProfileResult]
   }
   
-  extension [Self <: ModifyAuthenticationProfileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyAuthenticationProfileResult] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationProfileContent(value: String): Self = StObject.set(x, "AuthenticationProfileContent", value.asInstanceOf[js.Any])
     

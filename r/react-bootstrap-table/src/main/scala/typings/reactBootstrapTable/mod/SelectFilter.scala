@@ -52,7 +52,8 @@ object SelectFilter {
     __obj.asInstanceOf[SelectFilter]
   }
   
-  extension [Self <: SelectFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectFilter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: FilterCondition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

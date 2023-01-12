@@ -19,7 +19,8 @@ object CheckTransitiveMembershipResponse {
     __obj.asInstanceOf[CheckTransitiveMembershipResponse]
   }
   
-  extension [Self <: CheckTransitiveMembershipResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckTransitiveMembershipResponse] (val x: Self) extends AnyVal {
     
     inline def setHasMembership(value: Boolean): Self = StObject.set(x, "hasMembership", value.asInstanceOf[js.Any])
     

@@ -265,7 +265,8 @@ object WebAPIException {
   @js.native
   val ^ : WebAPIException = js.native
   
-  extension [Self <: WebAPIException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAPIException] (val x: Self) extends AnyVal {
     
     inline def setABORT_ERR(value: `20`): Self = StObject.set(x, "ABORT_ERR", value.asInstanceOf[js.Any])
     

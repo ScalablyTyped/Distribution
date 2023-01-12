@@ -28,7 +28,8 @@ object UpdateViewInput {
     __obj.asInstanceOf[UpdateViewInput]
   }
   
-  extension [Self <: UpdateViewInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateViewInput] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: SearchFilter): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

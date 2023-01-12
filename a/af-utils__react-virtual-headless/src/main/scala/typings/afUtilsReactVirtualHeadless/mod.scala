@@ -120,7 +120,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionProps]
     }
     
-    extension [Self <: SubscriptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionProps] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[EventType]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object mod {
       __obj.asInstanceOf[useVirtualModelProps]
     }
     
-    extension [Self <: useVirtualModelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: useVirtualModelProps] (val x: Self) extends AnyVal {
       
       inline def setEstimatedWidgetSize(value: Double): Self = StObject.set(x, "estimatedWidgetSize", value.asInstanceOf[js.Any])
       

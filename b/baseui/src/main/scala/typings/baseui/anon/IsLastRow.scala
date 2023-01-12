@@ -19,7 +19,8 @@ object IsLastRow {
     __obj.asInstanceOf[IsLastRow]
   }
   
-  extension [Self <: IsLastRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLastRow] (val x: Self) extends AnyVal {
     
     inline def set$animation(value: Boolean): Self = StObject.set(x, "$animation", value.asInstanceOf[js.Any])
     

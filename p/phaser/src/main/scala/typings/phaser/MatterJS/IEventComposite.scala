@@ -21,7 +21,8 @@ object IEventComposite {
     __obj.asInstanceOf[IEventComposite[T]]
   }
   
-  extension [Self <: IEventComposite[?], T](x: Self & IEventComposite[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventComposite[?], T] (val x: Self & IEventComposite[T]) extends AnyVal {
     
     inline def setObject(value: Any): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

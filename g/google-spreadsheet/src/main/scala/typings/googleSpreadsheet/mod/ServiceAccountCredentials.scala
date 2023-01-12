@@ -25,7 +25,8 @@ object ServiceAccountCredentials {
     __obj.asInstanceOf[ServiceAccountCredentials]
   }
   
-  extension [Self <: ServiceAccountCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAccountCredentials] (val x: Self) extends AnyVal {
     
     inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
     

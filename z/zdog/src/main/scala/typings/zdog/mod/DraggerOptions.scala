@@ -25,7 +25,8 @@ object DraggerOptions {
     __obj.asInstanceOf[DraggerOptions]
   }
   
-  extension [Self <: DraggerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggerOptions] (val x: Self) extends AnyVal {
     
     inline def setOnDragEnd(value: DragEndListener): Self = StObject.set(x, "onDragEnd", value.asInstanceOf[js.Any])
     

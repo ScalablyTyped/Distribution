@@ -199,7 +199,8 @@ object keyinAcceptedARIAany {
     __obj.asInstanceOf[keyinAcceptedARIAany]
   }
   
-  extension [Self <: keyinAcceptedARIAany](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinAcceptedARIAany] (val x: Self) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: Any): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

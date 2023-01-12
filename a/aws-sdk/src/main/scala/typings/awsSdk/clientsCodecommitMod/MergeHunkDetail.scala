@@ -28,7 +28,8 @@ object MergeHunkDetail {
     __obj.asInstanceOf[MergeHunkDetail]
   }
   
-  extension [Self <: MergeHunkDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergeHunkDetail] (val x: Self) extends AnyVal {
     
     inline def setEndLine(value: LineNumber): Self = StObject.set(x, "endLine", value.asInstanceOf[js.Any])
     

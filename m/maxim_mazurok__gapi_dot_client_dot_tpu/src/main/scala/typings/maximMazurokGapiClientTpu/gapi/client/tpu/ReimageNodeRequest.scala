@@ -16,7 +16,8 @@ object ReimageNodeRequest {
     __obj.asInstanceOf[ReimageNodeRequest]
   }
   
-  extension [Self <: ReimageNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReimageNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setTensorflowVersion(value: String): Self = StObject.set(x, "tensorflowVersion", value.asInstanceOf[js.Any])
     

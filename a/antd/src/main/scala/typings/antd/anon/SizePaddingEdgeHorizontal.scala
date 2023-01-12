@@ -15,7 +15,8 @@ object SizePaddingEdgeHorizontal {
     __obj.asInstanceOf[SizePaddingEdgeHorizontal]
   }
   
-  extension [Self <: SizePaddingEdgeHorizontal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizePaddingEdgeHorizontal] (val x: Self) extends AnyVal {
     
     inline def setSizePaddingEdgeHorizontal(value: Double): Self = StObject.set(x, "sizePaddingEdgeHorizontal", value.asInstanceOf[js.Any])
   }

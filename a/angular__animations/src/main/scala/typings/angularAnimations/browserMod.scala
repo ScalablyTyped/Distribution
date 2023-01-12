@@ -533,7 +533,8 @@ object browserMod {
       __obj.asInstanceOf[AnimationEngineInstruction]
     }
     
-    extension [Self <: AnimationEngineInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationEngineInstruction] (val x: Self) extends AnyVal {
       
       inline def setType(value: AnimationTransitionInstructionType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -581,7 +582,8 @@ object browserMod {
       __obj.asInstanceOf[AnimationTimelineInstruction]
     }
     
-    extension [Self <: AnimationTimelineInstruction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationTimelineInstruction] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -672,7 +674,8 @@ object browserMod {
       __obj.asInstanceOf[DOMAnimation]
     }
     
-    extension [Self <: DOMAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMAnimation] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, js.Function1[/* event */ Any, Any]) => Any): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -719,7 +722,8 @@ object browserMod {
       __obj.asInstanceOf[ElementInstructionMap]
     }
     
-    extension [Self <: ElementInstructionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementInstructionMap] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: (Any, js.Array[AnimationTimelineInstruction]) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
@@ -775,7 +779,8 @@ object browserMod {
       __obj.asInstanceOf[SpecialCasedStyles]
     }
     
-    extension [Self <: SpecialCasedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpecialCasedStyles] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

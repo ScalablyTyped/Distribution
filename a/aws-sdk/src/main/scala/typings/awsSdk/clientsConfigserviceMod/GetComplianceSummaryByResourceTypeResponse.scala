@@ -18,7 +18,8 @@ object GetComplianceSummaryByResourceTypeResponse {
     __obj.asInstanceOf[GetComplianceSummaryByResourceTypeResponse]
   }
   
-  extension [Self <: GetComplianceSummaryByResourceTypeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceSummaryByResourceTypeResponse] (val x: Self) extends AnyVal {
     
     inline def setComplianceSummariesByResourceType(value: ComplianceSummariesByResourceType): Self = StObject.set(x, "ComplianceSummariesByResourceType", value.asInstanceOf[js.Any])
     

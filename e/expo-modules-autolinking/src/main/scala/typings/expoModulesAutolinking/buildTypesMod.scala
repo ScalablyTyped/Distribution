@@ -28,7 +28,8 @@ object buildTypesMod {
       __obj.asInstanceOf[GenerateOptions]
     }
     
-    extension [Self <: GenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ModuleAndroidProjectInfo]
     }
     
-    extension [Self <: ModuleAndroidProjectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleAndroidProjectInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ModuleDescriptorAndroid]
     }
     
-    extension [Self <: ModuleDescriptorAndroid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleDescriptorAndroid] (val x: Self) extends AnyVal {
       
       inline def setModules(value: js.Array[String]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ModuleDescriptorIos]
     }
     
-    extension [Self <: ModuleDescriptorIos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleDescriptorIos] (val x: Self) extends AnyVal {
       
       inline def setAppDelegateSubscribers(value: js.Array[String]): Self = StObject.set(x, "appDelegateSubscribers", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ModuleIosPodspecInfo]
     }
     
-    extension [Self <: ModuleIosPodspecInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleIosPodspecInfo] (val x: Self) extends AnyVal {
       
       inline def setPodName(value: String): Self = StObject.set(x, "podName", value.asInstanceOf[js.Any])
       
@@ -225,7 +230,8 @@ object buildTypesMod {
       __obj.asInstanceOf[PackageRevision]
     }
     
-    extension [Self <: PackageRevision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageRevision] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ExpoModuleConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -256,7 +262,8 @@ object buildTypesMod {
       __obj.asInstanceOf[PatchReactImportsOptions]
     }
     
-    extension [Self <: PatchReactImportsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchReactImportsOptions] (val x: Self) extends AnyVal {
       
       inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
@@ -288,7 +295,8 @@ object buildTypesMod {
       __obj.asInstanceOf[RawExpoModuleConfig]
     }
     
-    extension [Self <: RawExpoModuleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawExpoModuleConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroid(value: GradlePath): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
       
@@ -319,7 +327,8 @@ object buildTypesMod {
       __obj.asInstanceOf[ResolveOptions]
     }
     
-    extension [Self <: ResolveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveOptions] (val x: Self) extends AnyVal {
       
       inline def setJson(value: Boolean): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
       
@@ -350,7 +359,8 @@ object buildTypesMod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.Array[String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       

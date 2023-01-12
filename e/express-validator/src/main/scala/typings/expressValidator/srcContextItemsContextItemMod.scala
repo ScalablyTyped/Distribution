@@ -19,7 +19,8 @@ object srcContextItemsContextItemMod {
       __obj.asInstanceOf[ContextItem]
     }
     
-    extension [Self <: ContextItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextItem] (val x: Self) extends AnyVal {
       
       inline def setRun(value: (Context, Any, Meta) => js.Promise[Unit]): Self = StObject.set(x, "run", js.Any.fromFunction3(value))
     }

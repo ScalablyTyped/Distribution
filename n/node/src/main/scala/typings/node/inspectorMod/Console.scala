@@ -48,7 +48,8 @@ object Console {
       __obj.asInstanceOf[ConsoleMessage]
     }
     
-    extension [Self <: ConsoleMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsoleMessage] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object Console {
       __obj.asInstanceOf[MessageAddedEventDataType]
     }
     
-    extension [Self <: MessageAddedEventDataType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageAddedEventDataType] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: ConsoleMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

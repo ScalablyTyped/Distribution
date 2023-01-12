@@ -25,7 +25,8 @@ object CHROMEUPDATE {
     __obj.asInstanceOf[CHROMEUPDATE]
   }
   
-  extension [Self <: CHROMEUPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CHROMEUPDATE] (val x: Self) extends AnyVal {
     
     inline def setCHROME_UPDATE(value: chrome_update_): Self = StObject.set(x, "CHROME_UPDATE", value.asInstanceOf[js.Any])
     

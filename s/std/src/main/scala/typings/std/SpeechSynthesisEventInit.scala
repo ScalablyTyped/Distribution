@@ -30,7 +30,8 @@ object SpeechSynthesisEventInit {
     __obj.asInstanceOf[SpeechSynthesisEventInit]
   }
   
-  extension [Self <: SpeechSynthesisEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechSynthesisEventInit] (val x: Self) extends AnyVal {
     
     inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
     

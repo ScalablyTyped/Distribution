@@ -96,7 +96,8 @@ object ASPxClientFilterControl {
     __obj.asInstanceOf[ASPxClientFilterControl]
   }
   
-  extension [Self <: ASPxClientFilterControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFilterControl] (val x: Self) extends AnyVal {
     
     inline def setApplied(value: ASPxClientEvent[ASPxClientFilterAppliedEventHandler[ASPxClientFilterControl]]): Self = StObject.set(x, "Applied", value.asInstanceOf[js.Any])
     

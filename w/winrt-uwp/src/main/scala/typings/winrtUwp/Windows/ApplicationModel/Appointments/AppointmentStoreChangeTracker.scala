@@ -22,7 +22,8 @@ object AppointmentStoreChangeTracker {
     __obj.asInstanceOf[AppointmentStoreChangeTracker]
   }
   
-  extension [Self <: AppointmentStoreChangeTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentStoreChangeTracker] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Any): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
     

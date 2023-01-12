@@ -151,7 +151,8 @@ object XUIConfigurationManager {
     __obj.asInstanceOf[XUIConfigurationManager]
   }
   
-  extension [Self <: XUIConfigurationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUIConfigurationManager] (val x: Self) extends AnyVal {
     
     inline def setCreateSettings(value: () => XIndexContainer): Self = StObject.set(x, "createSettings", js.Any.fromFunction0(value))
     

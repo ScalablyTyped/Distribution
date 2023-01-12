@@ -51,7 +51,8 @@ object XShapeGroup {
     __obj.asInstanceOf[XShapeGroup]
   }
   
-  extension [Self <: XShapeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XShapeGroup] (val x: Self) extends AnyVal {
     
     inline def setEnterGroup(value: () => Unit): Self = StObject.set(x, "enterGroup", js.Any.fromFunction0(value))
     

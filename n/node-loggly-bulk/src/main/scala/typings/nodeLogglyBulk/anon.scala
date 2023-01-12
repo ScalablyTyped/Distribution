@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[RetriesInMilliSeconds]
     }
     
-    extension [Self <: RetriesInMilliSeconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetriesInMilliSeconds] (val x: Self) extends AnyVal {
       
       inline def setRetriesInMilliSeconds(value: Double): Self = StObject.set(x, "retriesInMilliSeconds", value.asInstanceOf[js.Any])
       

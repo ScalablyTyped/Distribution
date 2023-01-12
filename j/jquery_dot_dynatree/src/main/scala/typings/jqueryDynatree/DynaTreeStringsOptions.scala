@@ -17,7 +17,8 @@ object DynaTreeStringsOptions {
     __obj.asInstanceOf[DynaTreeStringsOptions]
   }
   
-  extension [Self <: DynaTreeStringsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynaTreeStringsOptions] (val x: Self) extends AnyVal {
     
     inline def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object DirectiveSymbol {
     __obj.asInstanceOf[DirectiveSymbol]
   }
   
-  extension [Self <: DirectiveSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveSymbol] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Directive): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

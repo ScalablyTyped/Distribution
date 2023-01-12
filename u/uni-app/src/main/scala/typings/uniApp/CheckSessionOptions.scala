@@ -28,7 +28,8 @@ object CheckSessionOptions {
     __obj.asInstanceOf[CheckSessionOptions]
   }
   
-  extension [Self <: CheckSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

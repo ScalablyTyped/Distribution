@@ -78,7 +78,8 @@ object Enum {
       __obj.asInstanceOf[Ban]
     }
     
-    extension [Self <: Ban](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ban] (val x: Self) extends AnyVal {
       
       inline def setDAY(value: d): Self = StObject.set(x, "DAY", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object Enum {
       __obj.asInstanceOf[BanReason]
     }
     
-    extension [Self <: BanReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BanReason] (val x: Self) extends AnyVal {
       
       inline def setINAPPROPRIATE_GENRE(value: Double): Self = StObject.set(x, "INAPPROPRIATE_GENRE", value.asInstanceOf[js.Any])
       
@@ -240,7 +242,8 @@ object Enum {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setADVANCE(value: advance): Self = StObject.set(x, "ADVANCE", value.asInstanceOf[js.Any])
       
@@ -367,7 +370,8 @@ object Enum {
       __obj.asInstanceOf[GlobalRole]
     }
     
-    extension [Self <: GlobalRole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalRole] (val x: Self) extends AnyVal {
       
       inline def setADMIN(value: Double): Self = StObject.set(x, "ADMIN", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object Enum {
       __obj.asInstanceOf[Mute]
     }
     
-    extension [Self <: Mute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mute] (val x: Self) extends AnyVal {
       
       inline def setLONG(value: l): Self = StObject.set(x, "LONG", value.asInstanceOf[js.Any])
       
@@ -431,7 +436,8 @@ object Enum {
       __obj.asInstanceOf[MuteReason]
     }
     
-    extension [Self <: MuteReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MuteReason] (val x: Self) extends AnyVal {
       
       inline def setNEGATIVE_ATTITUDE(value: Double): Self = StObject.set(x, "NEGATIVE_ATTITUDE", value.asInstanceOf[js.Any])
       
@@ -466,7 +472,8 @@ object Enum {
       __obj.asInstanceOf[RoomRole]
     }
     
-    extension [Self <: RoomRole](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomRole] (val x: Self) extends AnyVal {
       
       inline def setBOUNCER(value: Double): Self = StObject.set(x, "BOUNCER", value.asInstanceOf[js.Any])
       
@@ -495,7 +502,8 @@ object Enum {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setOFFLINE(value: Double): Self = StObject.set(x, "OFFLINE", value.asInstanceOf[js.Any])
       

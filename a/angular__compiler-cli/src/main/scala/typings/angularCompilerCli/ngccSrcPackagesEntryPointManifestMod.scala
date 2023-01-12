@@ -86,7 +86,8 @@ object ngccSrcPackagesEntryPointManifestMod {
       __obj.asInstanceOf[EntryPointManifestFile]
     }
     
-    extension [Self <: EntryPointManifestFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPointManifestFile] (val x: Self) extends AnyVal {
       
       inline def setConfigFileHash(value: String): Self = StObject.set(x, "configFileHash", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object ngccSrcPackagesEntryPointManifestMod {
       __obj.asInstanceOf[NewEntryPointPropertiesMap]
     }
     
-    extension [Self <: NewEntryPointPropertiesMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewEntryPointPropertiesMap] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       

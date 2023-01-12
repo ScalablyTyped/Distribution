@@ -29,7 +29,8 @@ object distSrcHelpersGetInstallationEntryMod {
       __obj.asInstanceOf[InstallationEntryWithRegistrationPromise]
     }
     
-    extension [Self <: InstallationEntryWithRegistrationPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallationEntryWithRegistrationPromise] (val x: Self) extends AnyVal {
       
       inline def setInstallationEntry(value: InstallationEntry): Self = StObject.set(x, "installationEntry", value.asInstanceOf[js.Any])
       

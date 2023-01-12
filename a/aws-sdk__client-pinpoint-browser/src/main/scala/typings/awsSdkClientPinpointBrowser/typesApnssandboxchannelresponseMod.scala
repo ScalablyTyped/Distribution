@@ -75,7 +75,8 @@ object typesApnssandboxchannelresponseMod {
       __obj.asInstanceOf[APNSSandboxChannelResponse]
     }
     
-    extension [Self <: APNSSandboxChannelResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APNSSandboxChannelResponse] (val x: Self) extends AnyVal {
       
       inline def setApplicationId(value: String): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
       

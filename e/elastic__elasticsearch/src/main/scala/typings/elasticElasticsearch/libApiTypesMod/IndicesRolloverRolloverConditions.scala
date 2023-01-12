@@ -37,7 +37,8 @@ object IndicesRolloverRolloverConditions {
     __obj.asInstanceOf[IndicesRolloverRolloverConditions]
   }
   
-  extension [Self <: IndicesRolloverRolloverConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRolloverRolloverConditions] (val x: Self) extends AnyVal {
     
     inline def setMax_age(value: Duration): Self = StObject.set(x, "max_age", value.asInstanceOf[js.Any])
     

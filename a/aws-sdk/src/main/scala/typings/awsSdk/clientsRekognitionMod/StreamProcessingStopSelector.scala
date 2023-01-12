@@ -18,7 +18,8 @@ object StreamProcessingStopSelector {
     __obj.asInstanceOf[StreamProcessingStopSelector]
   }
   
-  extension [Self <: StreamProcessingStopSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessingStopSelector] (val x: Self) extends AnyVal {
     
     inline def setMaxDurationInSeconds(value: MaxDurationInSecondsULong): Self = StObject.set(x, "MaxDurationInSeconds", value.asInstanceOf[js.Any])
     

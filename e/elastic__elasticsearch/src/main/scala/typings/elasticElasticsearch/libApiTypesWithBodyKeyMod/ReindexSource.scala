@@ -29,7 +29,8 @@ object ReindexSource {
     __obj.asInstanceOf[ReindexSource]
   }
   
-  extension [Self <: ReindexSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReindexSource] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Indices): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

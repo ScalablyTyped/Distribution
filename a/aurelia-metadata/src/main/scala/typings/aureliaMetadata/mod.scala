@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[DeprecatedOptions]
     }
     
-    extension [Self <: DeprecatedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: Boolean): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object mod {
       __obj.asInstanceOf[ProtocolOptions]
     }
     
-    extension [Self <: ProtocolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtocolOptions] (val x: Self) extends AnyVal {
       
       inline def setCompose(value: /* target */ Any => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
       

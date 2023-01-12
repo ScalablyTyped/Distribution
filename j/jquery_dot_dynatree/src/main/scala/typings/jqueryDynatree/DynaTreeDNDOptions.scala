@@ -45,7 +45,8 @@ object DynaTreeDNDOptions {
     __obj.asInstanceOf[DynaTreeDNDOptions]
   }
   
-  extension [Self <: DynaTreeDNDOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynaTreeDNDOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
     

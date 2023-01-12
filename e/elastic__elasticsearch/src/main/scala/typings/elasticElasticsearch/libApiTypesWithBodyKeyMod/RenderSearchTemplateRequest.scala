@@ -21,7 +21,8 @@ object RenderSearchTemplateRequest {
     __obj.asInstanceOf[RenderSearchTemplateRequest]
   }
   
-  extension [Self <: RenderSearchTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderSearchTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: File): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

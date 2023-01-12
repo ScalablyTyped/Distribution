@@ -70,7 +70,8 @@ object libParseMod {
       __obj.asInstanceOf[ParseState]
     }
     
-    extension [Self <: ParseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseState] (val x: Self) extends AnyVal {
       
       inline def setBacktrack(value: Boolean): Self = StObject.set(x, "backtrack", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libParseMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: Any): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

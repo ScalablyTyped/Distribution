@@ -50,7 +50,8 @@ object GoogleCloudMlV1HyperparameterSpec {
     __obj.asInstanceOf[GoogleCloudMlV1HyperparameterSpec]
   }
   
-  extension [Self <: GoogleCloudMlV1HyperparameterSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1HyperparameterSpec] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

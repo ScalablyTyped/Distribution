@@ -25,7 +25,8 @@ object ICameraSettingsActivatedEventArgs {
     __obj.asInstanceOf[ICameraSettingsActivatedEventArgs]
   }
   
-  extension [Self <: ICameraSettingsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICameraSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVideoDeviceController(value: Any): Self = StObject.set(x, "videoDeviceController", value.asInstanceOf[js.Any])
     

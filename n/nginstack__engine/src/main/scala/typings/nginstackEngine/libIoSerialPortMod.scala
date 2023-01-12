@@ -460,7 +460,8 @@ object libIoSerialPortMod {
       __obj.asInstanceOf[SerialPort]
     }
     
-    extension [Self <: SerialPort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerialPort] (val x: Self) extends AnyVal {
       
       inline def setBaudRate(value: Double): Self = StObject.set(x, "baudRate", value.asInstanceOf[js.Any])
       
@@ -544,7 +545,8 @@ object libIoSerialPortMod {
       __obj.asInstanceOf[SerialPortInfo]
     }
     
-    extension [Self <: SerialPortInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerialPortInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

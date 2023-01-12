@@ -194,7 +194,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[AllowDenyOptions]
       }
       
-      extension [Self <: AllowDenyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AllowDenyOptions] (val x: Self) extends AnyVal {
         
         inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
         
@@ -283,7 +284,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[ObserveCallbacks]
       }
       
-      extension [Self <: ObserveCallbacks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObserveCallbacks] (val x: Self) extends AnyVal {
         
         inline def setAdded(value: /* document */ js.Object => Unit): Self = StObject.set(x, "added", js.Any.fromFunction1(value))
         
@@ -338,7 +340,8 @@ object meteorMongoMod {
         __obj.asInstanceOf[ObserveChangesCallbacks]
       }
       
-      extension [Self <: ObserveChangesCallbacks](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ObserveChangesCallbacks] (val x: Self) extends AnyVal {
         
         inline def setAdded(value: (/* id */ String, /* fields */ js.Object) => Unit): Self = StObject.set(x, "added", js.Any.fromFunction2(value))
         

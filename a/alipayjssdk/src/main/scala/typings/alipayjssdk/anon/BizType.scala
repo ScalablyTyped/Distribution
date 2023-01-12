@@ -28,7 +28,8 @@ object BizType {
     __obj.asInstanceOf[BizType]
   }
   
-  extension [Self <: BizType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BizType] (val x: Self) extends AnyVal {
     
     inline def setBizType(value: String): Self = StObject.set(x, "bizType", value.asInstanceOf[js.Any])
     

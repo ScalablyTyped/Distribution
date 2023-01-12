@@ -27,7 +27,8 @@ object exporter {
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IColumnDef]
     }
     
-    extension [Self <: typings.uiGrid.mod.exporter.IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.exporter.IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setExporterPdfAlign(value: String): Self = StObject.set(x, "exporterPdfAlign", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object exporter {
       __obj.asInstanceOf[IGridExporterApi]
     }
     
-    extension [Self <: IGridExporterApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridExporterApi] (val x: Self) extends AnyVal {
       
       inline def setCsvExport(value: (String, String) => Unit): Self = StObject.set(x, "csvExport", js.Any.fromFunction2(value))
       
@@ -306,7 +308,8 @@ object exporter {
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IGridOptions[TEntity]]
     }
     
-    extension [Self <: typings.uiGrid.mod.exporter.IGridOptions[?], TEntity](x: Self & typings.uiGrid.mod.exporter.IGridOptions[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridOptions[?], TEntity] (val x: Self & typings.uiGrid.mod.exporter.IGridOptions[TEntity]) extends AnyVal {
       
       inline def setExporterAllDataFn(value: () => IPromise[js.Array[TEntity]]): Self = StObject.set(x, "exporterAllDataFn", js.Any.fromFunction0(value))
       
@@ -438,7 +441,8 @@ object exporter {
       __obj.asInstanceOf[typings.uiGrid.mod.exporter.IGridRow]
     }
     
-    extension [Self <: typings.uiGrid.mod.exporter.IGridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.exporter.IGridRow] (val x: Self) extends AnyVal {
       
       inline def setExporterEnableExporting(value: Boolean): Self = StObject.set(x, "exporterEnableExporting", value.asInstanceOf[js.Any])
       
@@ -483,7 +487,8 @@ object exporter {
       __obj.asInstanceOf[IUiGridExporterConstants]
     }
     
-    extension [Self <: IUiGridExporterConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridExporterConstants] (val x: Self) extends AnyVal {
       
       inline def setALL(value: String): Self = StObject.set(x, "ALL", value.asInstanceOf[js.Any])
       

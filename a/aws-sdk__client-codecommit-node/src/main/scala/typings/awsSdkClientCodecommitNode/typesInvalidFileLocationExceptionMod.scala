@@ -23,7 +23,8 @@ object typesInvalidFileLocationExceptionMod {
       __obj.asInstanceOf[InvalidFileLocationException]
     }
     
-    extension [Self <: InvalidFileLocationException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidFileLocationException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidFileLocationException

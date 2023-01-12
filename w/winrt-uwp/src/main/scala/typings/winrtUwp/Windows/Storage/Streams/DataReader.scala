@@ -172,7 +172,8 @@ object DataReader {
     __obj.asInstanceOf[DataReader]
   }
   
-  extension [Self <: DataReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataReader] (val x: Self) extends AnyVal {
     
     inline def setByteOrder(value: ByteOrder): Self = StObject.set(x, "byteOrder", value.asInstanceOf[js.Any])
     

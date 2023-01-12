@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[ByteLength]
     }
     
-    extension [Self <: ByteLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteLength] (val x: Self) extends AnyVal {
       
       inline def setByteLength(value: Double): Self = StObject.set(x, "byteLength", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Done]
     }
     
-    extension [Self <: Done](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done] (val x: Self) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     }

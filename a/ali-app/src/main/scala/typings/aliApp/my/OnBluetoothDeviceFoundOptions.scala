@@ -19,7 +19,8 @@ object OnBluetoothDeviceFoundOptions {
     __obj.asInstanceOf[OnBluetoothDeviceFoundOptions]
   }
   
-  extension [Self <: OnBluetoothDeviceFoundOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBluetoothDeviceFoundOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ Devices => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

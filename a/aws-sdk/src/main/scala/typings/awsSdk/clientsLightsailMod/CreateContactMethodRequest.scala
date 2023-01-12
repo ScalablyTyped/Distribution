@@ -23,7 +23,8 @@ object CreateContactMethodRequest {
     __obj.asInstanceOf[CreateContactMethodRequest]
   }
   
-  extension [Self <: CreateContactMethodRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateContactMethodRequest] (val x: Self) extends AnyVal {
     
     inline def setContactEndpoint(value: StringMax256): Self = StObject.set(x, "contactEndpoint", value.asInstanceOf[js.Any])
     

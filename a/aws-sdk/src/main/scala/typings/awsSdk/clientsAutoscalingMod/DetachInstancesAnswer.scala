@@ -18,7 +18,8 @@ object DetachInstancesAnswer {
     __obj.asInstanceOf[DetachInstancesAnswer]
   }
   
-  extension [Self <: DetachInstancesAnswer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachInstancesAnswer] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: Activities): Self = StObject.set(x, "Activities", value.asInstanceOf[js.Any])
     

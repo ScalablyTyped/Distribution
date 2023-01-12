@@ -23,7 +23,8 @@ object ListViewFilterable {
     __obj.asInstanceOf[ListViewFilterable]
   }
   
-  extension [Self <: ListViewFilterable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListViewFilterable] (val x: Self) extends AnyVal {
     
     inline def setAutoFilter(value: Boolean): Self = StObject.set(x, "autoFilter", value.asInstanceOf[js.Any])
     

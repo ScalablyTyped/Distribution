@@ -18,7 +18,8 @@ object DecoderStream {
     __obj.asInstanceOf[DecoderStream]
   }
   
-  extension [Self <: DecoderStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoderStream] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => js.UndefOr[String]): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

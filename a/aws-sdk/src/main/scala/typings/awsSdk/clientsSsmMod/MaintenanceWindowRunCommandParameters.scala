@@ -65,7 +65,8 @@ object MaintenanceWindowRunCommandParameters {
     __obj.asInstanceOf[MaintenanceWindowRunCommandParameters]
   }
   
-  extension [Self <: MaintenanceWindowRunCommandParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowRunCommandParameters] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchOutputConfig(value: CloudWatchOutputConfig): Self = StObject.set(x, "CloudWatchOutputConfig", value.asInstanceOf[js.Any])
     

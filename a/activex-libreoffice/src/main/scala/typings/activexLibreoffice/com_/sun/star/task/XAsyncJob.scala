@@ -41,7 +41,8 @@ object XAsyncJob {
     __obj.asInstanceOf[XAsyncJob]
   }
   
-  extension [Self <: XAsyncJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAsyncJob] (val x: Self) extends AnyVal {
     
     inline def setExecuteAsync(value: (SeqEquiv[NamedValue], XJobListener) => Unit): Self = StObject.set(x, "executeAsync", js.Any.fromFunction2(value))
   }

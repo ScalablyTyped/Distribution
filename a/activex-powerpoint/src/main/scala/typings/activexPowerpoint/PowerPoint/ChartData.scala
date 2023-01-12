@@ -31,7 +31,8 @@ object ChartData {
     __obj.asInstanceOf[ChartData]
   }
   
-  extension [Self <: ChartData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartData] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: () => Unit): Self = StObject.set(x, "Activate", js.Any.fromFunction0(value))
     

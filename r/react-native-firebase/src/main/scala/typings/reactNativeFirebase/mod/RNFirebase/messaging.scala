@@ -124,7 +124,8 @@ object messaging {
       __obj.asInstanceOf[MessagingStatics]
     }
     
-    extension [Self <: MessagingStatics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagingStatics] (val x: Self) extends AnyVal {
       
       inline def setRemoteMessage(value: Instantiable0[RemoteMessage]): Self = StObject.set(x, "RemoteMessage", value.asInstanceOf[js.Any])
     }

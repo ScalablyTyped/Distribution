@@ -23,7 +23,8 @@ object MonitoringOutputConfig {
     __obj.asInstanceOf[MonitoringOutputConfig]
   }
   
-  extension [Self <: MonitoringOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: KmsKeyId): Self = StObject.set(x, "KmsKeyId", value.asInstanceOf[js.Any])
     

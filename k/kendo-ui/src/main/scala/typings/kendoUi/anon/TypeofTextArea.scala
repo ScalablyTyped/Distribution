@@ -20,7 +20,8 @@ object TypeofTextArea {
     __obj.asInstanceOf[TypeofTextArea]
   }
   
-  extension [Self <: TypeofTextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTextArea] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => TextArea): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

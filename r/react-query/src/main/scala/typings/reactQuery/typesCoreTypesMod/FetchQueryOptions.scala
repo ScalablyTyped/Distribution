@@ -21,7 +21,8 @@ object FetchQueryOptions {
     __obj.asInstanceOf[FetchQueryOptions[TQueryFnData, TError, TData, TQueryKey]]
   }
   
-  extension [Self <: FetchQueryOptions[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](x: Self & (FetchQueryOptions[TQueryFnData, TError, TData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchQueryOptions[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] (val x: Self & (FetchQueryOptions[TQueryFnData, TError, TData, TQueryKey])) extends AnyVal {
     
     inline def setStaleTime(value: Double): Self = StObject.set(x, "staleTime", value.asInstanceOf[js.Any])
     

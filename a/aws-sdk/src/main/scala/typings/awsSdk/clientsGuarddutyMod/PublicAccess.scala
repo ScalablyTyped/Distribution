@@ -23,7 +23,8 @@ object PublicAccess {
     __obj.asInstanceOf[PublicAccess]
   }
   
-  extension [Self <: PublicAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicAccess] (val x: Self) extends AnyVal {
     
     inline def setEffectivePermission(value: String): Self = StObject.set(x, "EffectivePermission", value.asInstanceOf[js.Any])
     

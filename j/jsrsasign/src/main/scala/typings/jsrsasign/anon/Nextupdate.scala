@@ -31,7 +31,8 @@ object Nextupdate {
     __obj.asInstanceOf[Nextupdate]
   }
   
-  extension [Self <: Nextupdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Nextupdate] (val x: Self) extends AnyVal {
     
     inline def setExt(value: js.Array[RevokedCertificate]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     

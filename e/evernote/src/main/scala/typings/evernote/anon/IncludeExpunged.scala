@@ -46,7 +46,8 @@ object IncludeExpunged {
     __obj.asInstanceOf[IncludeExpunged]
   }
   
-  extension [Self <: IncludeExpunged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeExpunged] (val x: Self) extends AnyVal {
     
     inline def setIncludeExpunged(value: Boolean): Self = StObject.set(x, "includeExpunged", value.asInstanceOf[js.Any])
     

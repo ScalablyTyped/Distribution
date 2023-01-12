@@ -38,7 +38,8 @@ object AnomalousLogGroup {
     __obj.asInstanceOf[AnomalousLogGroup]
   }
   
-  extension [Self <: AnomalousLogGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalousLogGroup] (val x: Self) extends AnyVal {
     
     inline def setImpactEndTime(value: js.Date): Self = StObject.set(x, "ImpactEndTime", value.asInstanceOf[js.Any])
     

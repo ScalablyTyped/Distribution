@@ -33,7 +33,8 @@ object InputDecryptionSettings {
     __obj.asInstanceOf[InputDecryptionSettings]
   }
   
-  extension [Self <: InputDecryptionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDecryptionSettings] (val x: Self) extends AnyVal {
     
     inline def setDecryptionMode(value: DecryptionMode): Self = StObject.set(x, "DecryptionMode", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object DayPickerProviderProps {
     __obj.asInstanceOf[DayPickerProviderProps]
   }
   
-  extension [Self <: DayPickerProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DayPickerProviderProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

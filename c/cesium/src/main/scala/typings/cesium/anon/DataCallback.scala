@@ -26,7 +26,8 @@ object DataCallback {
     __obj.asInstanceOf[DataCallback]
   }
   
-  extension [Self <: DataCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCallback] (val x: Self) extends AnyVal {
     
     inline def setDataCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
     

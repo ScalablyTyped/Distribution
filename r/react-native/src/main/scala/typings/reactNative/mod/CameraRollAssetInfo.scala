@@ -18,7 +18,8 @@ object CameraRollAssetInfo {
     __obj.asInstanceOf[CameraRollAssetInfo]
   }
   
-  extension [Self <: CameraRollAssetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraRollAssetInfo] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: js.Array[CameraRollEdgeInfo]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

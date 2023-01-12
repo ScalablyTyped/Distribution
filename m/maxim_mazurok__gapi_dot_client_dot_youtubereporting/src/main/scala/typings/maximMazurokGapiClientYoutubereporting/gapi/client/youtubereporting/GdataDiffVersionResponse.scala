@@ -19,7 +19,8 @@ object GdataDiffVersionResponse {
     __obj.asInstanceOf[GdataDiffVersionResponse]
   }
   
-  extension [Self <: GdataDiffVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataDiffVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectSizeBytes(value: String): Self = StObject.set(x, "objectSizeBytes", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[BrowserslistUseragentOptions]
     }
     
-    extension [Self <: BrowserslistUseragentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserslistUseragentOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowHigherVersions(value: Boolean): Self = StObject.set(x, "allowHigherVersions", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ResolvedUserAgent]
     }
     
-    extension [Self <: ResolvedUserAgent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedUserAgent] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       

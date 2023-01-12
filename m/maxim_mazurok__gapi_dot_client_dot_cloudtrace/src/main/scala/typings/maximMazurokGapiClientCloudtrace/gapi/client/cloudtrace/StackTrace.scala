@@ -23,7 +23,8 @@ object StackTrace {
     __obj.asInstanceOf[StackTrace]
   }
   
-  extension [Self <: StackTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTrace] (val x: Self) extends AnyVal {
     
     inline def setStackFrames(value: StackFrames): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     

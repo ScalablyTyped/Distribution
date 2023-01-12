@@ -174,7 +174,8 @@ object PickImplsaveRemoteDataPar {
     __obj.asInstanceOf[PickImplsaveRemoteDataPar]
   }
   
-  extension [Self <: PickImplsaveRemoteDataPar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsaveRemoteDataPar] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: activate | select | combo | nothing | hide | (js.ThisFunction3[

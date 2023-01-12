@@ -28,7 +28,8 @@ object ConstantOptions {
     __obj.asInstanceOf[ConstantOptions]
   }
   
-  extension [Self <: ConstantOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstantOptions] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: js.Array[Any]): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MenuItemClickedEventArgs {
     __obj.asInstanceOf[MenuItemClickedEventArgs]
   }
   
-  extension [Self <: MenuItemClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItemClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

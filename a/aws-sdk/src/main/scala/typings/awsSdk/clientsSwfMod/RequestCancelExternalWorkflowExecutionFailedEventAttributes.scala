@@ -48,7 +48,8 @@ object RequestCancelExternalWorkflowExecutionFailedEventAttributes {
     __obj.asInstanceOf[RequestCancelExternalWorkflowExecutionFailedEventAttributes]
   }
   
-  extension [Self <: RequestCancelExternalWorkflowExecutionFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestCancelExternalWorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: RequestCancelExternalWorkflowExecutionFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

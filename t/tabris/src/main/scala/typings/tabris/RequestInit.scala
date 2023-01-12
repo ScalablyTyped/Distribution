@@ -52,7 +52,8 @@ object RequestInit {
     __obj.asInstanceOf[RequestInit]
   }
   
-  extension [Self <: RequestInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestInit] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Blob | FormData | String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

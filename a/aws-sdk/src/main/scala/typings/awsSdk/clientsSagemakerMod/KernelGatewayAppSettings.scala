@@ -28,7 +28,8 @@ object KernelGatewayAppSettings {
     __obj.asInstanceOf[KernelGatewayAppSettings]
   }
   
-  extension [Self <: KernelGatewayAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KernelGatewayAppSettings] (val x: Self) extends AnyVal {
     
     inline def setCustomImages(value: CustomImages): Self = StObject.set(x, "CustomImages", value.asInstanceOf[js.Any])
     

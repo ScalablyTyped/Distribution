@@ -19,7 +19,8 @@ object ConfigTheme {
     __obj.asInstanceOf[ConfigTheme]
   }
   
-  extension [Self <: ConfigTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigTheme] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

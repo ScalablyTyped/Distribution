@@ -3666,7 +3666,8 @@ object distDisplayObjectsPolygonMod {
       __obj.asInstanceOf[ParsedPolygonStyleProps]
     }
     
-    extension [Self <: ParsedPolygonStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPolygonStyleProps] (val x: Self) extends AnyVal {
       
       inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
       
@@ -3733,7 +3734,8 @@ object distDisplayObjectsPolygonMod {
       __obj.asInstanceOf[PolygonStyleProps]
     }
     
-    extension [Self <: PolygonStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonStyleProps] (val x: Self) extends AnyVal {
       
       inline def setIsClosed(value: Boolean): Self = StObject.set(x, "isClosed", value.asInstanceOf[js.Any])
       

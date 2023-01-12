@@ -18,7 +18,8 @@ object DesKeyAlgorithm {
     __obj.asInstanceOf[DesKeyAlgorithm]
   }
   
-  extension [Self <: DesKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
   }

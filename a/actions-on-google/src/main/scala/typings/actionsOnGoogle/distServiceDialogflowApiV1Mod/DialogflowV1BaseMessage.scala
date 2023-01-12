@@ -24,7 +24,8 @@ object DialogflowV1BaseMessage {
     __obj.asInstanceOf[DialogflowV1BaseMessage[TType]]
   }
   
-  extension [Self <: DialogflowV1BaseMessage[?], TType /* <: Double */](x: Self & DialogflowV1BaseMessage[TType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1BaseMessage[?], TType /* <: Double */] (val x: Self & DialogflowV1BaseMessage[TType]) extends AnyVal {
     
     inline def setPlatform(value: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
     

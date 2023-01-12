@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[HeaderConfig]
     }
     
-    extension [Self <: HeaderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderConfig] (val x: Self) extends AnyVal {
       
       inline def setDefaultLevel(value: Double): Self = StObject.set(x, "defaultLevel", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[HeaderData]
     }
     
-    extension [Self <: HeaderData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderData] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object mod {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       

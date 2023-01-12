@@ -38,7 +38,8 @@ object libRadioMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

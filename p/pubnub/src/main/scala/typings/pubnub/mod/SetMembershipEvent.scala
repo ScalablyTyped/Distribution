@@ -20,7 +20,8 @@ object SetMembershipEvent {
     __obj.asInstanceOf[SetMembershipEvent[MembershipCustom]]
   }
   
-  extension [Self <: SetMembershipEvent[?], MembershipCustom /* <: ObjectCustom */](x: Self & SetMembershipEvent[MembershipCustom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMembershipEvent[?], MembershipCustom /* <: ObjectCustom */] (val x: Self & SetMembershipEvent[MembershipCustom]) extends AnyVal {
     
     inline def setMessage(value: DataEventType[MembershipCustom]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

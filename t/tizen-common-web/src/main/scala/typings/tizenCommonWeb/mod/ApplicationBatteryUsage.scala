@@ -25,7 +25,8 @@ object ApplicationBatteryUsage {
     __obj.asInstanceOf[ApplicationBatteryUsage]
   }
   
-  extension [Self <: ApplicationBatteryUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationBatteryUsage] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: ApplicationId): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

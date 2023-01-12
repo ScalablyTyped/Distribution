@@ -71,7 +71,8 @@ object GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1p2beta1VideoAnnotationResults] (val x: Self) extends AnyVal {
     
     inline def setError(value: GoogleRpcStatus): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

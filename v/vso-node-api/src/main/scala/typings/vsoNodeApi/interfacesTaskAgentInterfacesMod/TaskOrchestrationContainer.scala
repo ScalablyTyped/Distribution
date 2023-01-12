@@ -36,7 +36,8 @@ object TaskOrchestrationContainer {
     __obj.asInstanceOf[TaskOrchestrationContainer]
   }
   
-  extension [Self <: TaskOrchestrationContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskOrchestrationContainer] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[TaskOrchestrationItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

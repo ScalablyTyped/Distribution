@@ -24,7 +24,8 @@ object CommsOperation {
     __obj.asInstanceOf[CommsOperation]
   }
   
-  extension [Self <: CommsOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommsOperation] (val x: Self) extends AnyVal {
     
     inline def setClientContext(value: NullableOption[String]): Self = StObject.set(x, "clientContext", value.asInstanceOf[js.Any])
     

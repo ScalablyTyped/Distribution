@@ -27,7 +27,8 @@ object libComponentsNumberInputNumberInputDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[NumberInputSkeletonProps]
     }
     
-    extension [Self <: NumberInputSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberInputSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setHideLabel(value: Boolean): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
       

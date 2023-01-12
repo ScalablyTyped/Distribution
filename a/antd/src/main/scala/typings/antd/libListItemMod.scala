@@ -46,7 +46,8 @@ object libListItemMod extends Shortcut {
       __obj.asInstanceOf[ListItemMetaProps]
     }
     
-    extension [Self <: ListItemMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemMetaProps] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object libListItemMod extends Shortcut {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[ReactNode]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

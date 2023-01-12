@@ -18,7 +18,8 @@ object CreateConferenceProviderResponse {
     __obj.asInstanceOf[CreateConferenceProviderResponse]
   }
   
-  extension [Self <: CreateConferenceProviderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConferenceProviderResponse] (val x: Self) extends AnyVal {
     
     inline def setConferenceProviderArn(value: Arn): Self = StObject.set(x, "ConferenceProviderArn", value.asInstanceOf[js.Any])
     

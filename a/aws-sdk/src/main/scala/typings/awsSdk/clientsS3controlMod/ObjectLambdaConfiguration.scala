@@ -36,7 +36,8 @@ object ObjectLambdaConfiguration {
     __obj.asInstanceOf[ObjectLambdaConfiguration]
   }
   
-  extension [Self <: ObjectLambdaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectLambdaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedFeatures(value: ObjectLambdaAllowedFeaturesList): Self = StObject.set(x, "AllowedFeatures", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[FakeServerOptions]
     }
     
-    extension [Self <: FakeServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoRespond(value: Boolean): Self = StObject.set(x, "autoRespond", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object mod {
       __obj.asInstanceOf[FakeUploadProgress]
     }
     
-    extension [Self <: FakeUploadProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeUploadProgress] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(value: (String, js.Function1[/* e */ Event, Any]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[FakeXHR_]
     }
     
-    extension [Self <: FakeXHR_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FakeXHR_] (val x: Self) extends AnyVal {
       
       inline def setFakeXMLHttpRequest(value: FakeXMLHttpRequestStatic): Self = StObject.set(x, "FakeXMLHttpRequest", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object ValidationData {
     __obj.asInstanceOf[ValidationData]
   }
   
-  extension [Self <: ValidationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationData] (val x: Self) extends AnyVal {
     
     inline def setClientMetadata(value: StringMap): Self = StObject.set(x, "clientMetadata", value.asInstanceOf[js.Any])
     

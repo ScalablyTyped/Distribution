@@ -22,7 +22,8 @@ object IgnoreElementEndShallow {
     __obj.asInstanceOf[IgnoreElementEndShallow]
   }
   
-  extension [Self <: IgnoreElementEndShallow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreElementEndShallow] (val x: Self) extends AnyVal {
     
     inline def setIgnoreElementEnd(value: Boolean): Self = StObject.set(x, "ignoreElementEnd", value.asInstanceOf[js.Any])
     

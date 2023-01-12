@@ -34,7 +34,8 @@ object DrawUncombineEvent {
     __obj.asInstanceOf[DrawUncombineEvent]
   }
   
-  extension [Self <: DrawUncombineEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawUncombineEvent] (val x: Self) extends AnyVal {
     
     inline def setCreatedFeatures(value: js.Array[Feature[Geometry, GeoJsonProperties]]): Self = StObject.set(x, "createdFeatures", value.asInstanceOf[js.Any])
     

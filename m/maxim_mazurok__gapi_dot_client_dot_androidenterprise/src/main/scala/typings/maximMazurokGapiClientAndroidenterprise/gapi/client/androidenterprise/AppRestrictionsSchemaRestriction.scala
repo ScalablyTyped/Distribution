@@ -43,7 +43,8 @@ object AppRestrictionsSchemaRestriction {
     __obj.asInstanceOf[AppRestrictionsSchemaRestriction]
   }
   
-  extension [Self <: AppRestrictionsSchemaRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppRestrictionsSchemaRestriction] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: AppRestrictionsSchemaRestrictionRestrictionValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

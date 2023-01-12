@@ -43,7 +43,8 @@ object UpdateEntityRequest {
     __obj.asInstanceOf[UpdateEntityRequest]
   }
   
-  extension [Self <: UpdateEntityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEntityRequest] (val x: Self) extends AnyVal {
     
     inline def setComponentUpdates(value: ComponentUpdatesMapRequest): Self = StObject.set(x, "componentUpdates", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GatewayRouteVirtualService {
     __obj.asInstanceOf[GatewayRouteVirtualService]
   }
   
-  extension [Self <: GatewayRouteVirtualService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayRouteVirtualService] (val x: Self) extends AnyVal {
     
     inline def setVirtualServiceName(value: ResourceName): Self = StObject.set(x, "virtualServiceName", value.asInstanceOf[js.Any])
   }

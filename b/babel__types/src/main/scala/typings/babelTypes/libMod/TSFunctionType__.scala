@@ -29,7 +29,8 @@ object TSFunctionType__ {
     __obj.asInstanceOf[TSFunctionType__]
   }
   
-  extension [Self <: TSFunctionType__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSFunctionType__] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[Identifier_ | RestElement_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

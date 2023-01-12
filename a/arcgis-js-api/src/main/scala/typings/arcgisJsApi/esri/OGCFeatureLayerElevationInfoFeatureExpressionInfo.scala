@@ -20,7 +20,8 @@ object OGCFeatureLayerElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[OGCFeatureLayerElevationInfoFeatureExpressionInfo]
   }
   
-  extension [Self <: OGCFeatureLayerElevationInfoFeatureExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OGCFeatureLayerElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

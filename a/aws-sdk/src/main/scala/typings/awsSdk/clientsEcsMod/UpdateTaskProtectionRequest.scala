@@ -33,7 +33,8 @@ object UpdateTaskProtectionRequest {
     __obj.asInstanceOf[UpdateTaskProtectionRequest]
   }
   
-  extension [Self <: UpdateTaskProtectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaskProtectionRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

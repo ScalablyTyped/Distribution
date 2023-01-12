@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[MimosOptions]
     }
     
-    extension [Self <: MimosOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimosOptions] (val x: Self) extends AnyVal {
       
       inline def setOverride(value: StringDictionary[MimosOptionsValue]): Self = StObject.set(x, "override", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object mod {
       __obj.asInstanceOf[MimosOptionsValue]
     }
     
-    extension [Self <: MimosOptionsValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimosOptionsValue] (val x: Self) extends AnyVal {
       
       inline def setPredicate(value: MimosOptionsValue => MimosOptionsValue): Self = StObject.set(x, "predicate", js.Any.fromFunction1(value))
       

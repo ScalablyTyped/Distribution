@@ -28,7 +28,8 @@ object InstanceConfig {
     __obj.asInstanceOf[InstanceConfig]
   }
   
-  extension [Self <: InstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

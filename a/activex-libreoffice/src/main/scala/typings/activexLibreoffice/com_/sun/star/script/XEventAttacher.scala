@@ -65,7 +65,8 @@ object XEventAttacher {
     __obj.asInstanceOf[XEventAttacher]
   }
   
-  extension [Self <: XEventAttacher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEventAttacher] (val x: Self) extends AnyVal {
     
     inline def setAttachListener(value: (XInterface, XAllListener, Any, String, String) => XEventListener): Self = StObject.set(x, "attachListener", js.Any.fromFunction5(value))
     

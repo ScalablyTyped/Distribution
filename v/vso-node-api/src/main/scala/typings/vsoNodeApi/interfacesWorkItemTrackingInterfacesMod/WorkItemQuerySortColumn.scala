@@ -23,7 +23,8 @@ object WorkItemQuerySortColumn {
     __obj.asInstanceOf[WorkItemQuerySortColumn]
   }
   
-  extension [Self <: WorkItemQuerySortColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemQuerySortColumn] (val x: Self) extends AnyVal {
     
     inline def setDescending(value: Boolean): Self = StObject.set(x, "descending", value.asInstanceOf[js.Any])
     

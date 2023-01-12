@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ExternallyChangedProps]
     }
     
-    extension [Self <: ExternallyChangedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternallyChangedProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Boolean => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[OnBlurProps]
     }
     
-    extension [Self <: OnBlurProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnBlurProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       
@@ -79,7 +81,8 @@ object mod {
       __obj.asInstanceOf[OnChangeProps]
     }
     
-    extension [Self <: OnChangeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (Any, Any) => Unit): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -100,7 +103,8 @@ object mod {
       __obj.asInstanceOf[OnFocusProps]
     }
     
-    extension [Self <: OnFocusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnFocusProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: () => Unit): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       

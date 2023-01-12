@@ -45,7 +45,8 @@ object TransformOperation {
     __obj.asInstanceOf[TransformOperation]
   }
   
-  extension [Self <: TransformOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformOperation] (val x: Self) extends AnyVal {
     
     inline def setCastColumnTypeOperation(value: CastColumnTypeOperation): Self = StObject.set(x, "CastColumnTypeOperation", value.asInstanceOf[js.Any])
     

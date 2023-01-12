@@ -29,7 +29,8 @@ object CollectionMeta {
     __obj.asInstanceOf[CollectionMeta]
   }
   
-  extension [Self <: CollectionMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionMeta] (val x: Self) extends AnyVal {
     
     inline def set_attachments(value: String): Self = StObject.set(x, "_attachments", value.asInstanceOf[js.Any])
     

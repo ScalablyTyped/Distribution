@@ -25,7 +25,8 @@ object IRateLimiterOptions {
     __obj.asInstanceOf[IRateLimiterOptions]
   }
   
-  extension [Self <: IRateLimiterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRateLimiterOptions] (val x: Self) extends AnyVal {
     
     inline def setBlockDuration(value: Double): Self = StObject.set(x, "blockDuration", value.asInstanceOf[js.Any])
     

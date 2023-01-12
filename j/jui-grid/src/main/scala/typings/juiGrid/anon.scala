@@ -135,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Colshow]
     }
     
-    extension [Self <: Colshow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Colshow] (val x: Self) extends AnyVal {
       
       inline def setColshow(value: Boolean | js.Array[Any]): Self = StObject.set(x, "colshow", value.asInstanceOf[js.Any])
       

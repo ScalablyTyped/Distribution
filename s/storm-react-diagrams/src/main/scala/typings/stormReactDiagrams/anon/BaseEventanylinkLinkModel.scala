@@ -37,7 +37,8 @@ object BaseEventanylinkLinkModel {
     __obj.asInstanceOf[BaseEventanylinkLinkModel]
   }
   
-  extension [Self <: BaseEventanylinkLinkModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEventanylinkLinkModel] (val x: Self) extends AnyVal {
     
     inline def setEntity(value: BaseEntity[BaseListener[Any]]): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object RouteLeg {
     __obj.asInstanceOf[RouteLeg]
   }
   
-  extension [Self <: RouteLeg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteLeg] (val x: Self) extends AnyVal {
     
     inline def setArrival_time(value: Time): Self = StObject.set(x, "arrival_time", value.asInstanceOf[js.Any])
     

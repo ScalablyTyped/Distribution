@@ -19,7 +19,8 @@ object PerformTranslate {
     __obj.asInstanceOf[PerformTranslate]
   }
   
-  extension [Self <: PerformTranslate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformTranslate] (val x: Self) extends AnyVal {
     
     inline def set$performTranslate(value: Boolean): Self = StObject.set(x, "$performTranslate", value.asInstanceOf[js.Any])
     

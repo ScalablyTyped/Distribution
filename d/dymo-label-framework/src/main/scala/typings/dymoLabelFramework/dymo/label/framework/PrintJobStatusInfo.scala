@@ -18,7 +18,8 @@ object PrintJobStatusInfo {
     __obj.asInstanceOf[PrintJobStatusInfo]
   }
   
-  extension [Self <: PrintJobStatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintJobStatusInfo] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: PrintJobStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

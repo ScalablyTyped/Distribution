@@ -49,7 +49,8 @@ object rsocketclientMod {
       __obj.asInstanceOf[ClientConfig[D, M]]
     }
     
-    extension [Self <: ClientConfig[?, ?], D, M](x: Self & (ClientConfig[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig[?, ?], D, M] (val x: Self & (ClientConfig[D, M])) extends AnyVal {
       
       inline def setErrorHandler(value: /* error */ js.Error => Unit): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
       
@@ -86,7 +87,8 @@ object rsocketclientMod {
       __obj.asInstanceOf[RSocketClient[D, M]]
     }
     
-    extension [Self <: RSocketClient[?, ?], D, M](x: Self & (RSocketClient[D, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RSocketClient[?, ?], D, M] (val x: Self & (RSocketClient[D, M])) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

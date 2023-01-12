@@ -33,7 +33,8 @@ object DatastoreFilter {
     __obj.asInstanceOf[DatastoreFilter]
   }
   
-  extension [Self <: DatastoreFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreFilter] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

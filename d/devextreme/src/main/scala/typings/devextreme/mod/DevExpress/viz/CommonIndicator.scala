@@ -107,7 +107,8 @@ object CommonIndicator {
     __obj.asInstanceOf[CommonIndicator]
   }
   
-  extension [Self <: CommonIndicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonIndicator] (val x: Self) extends AnyVal {
     
     inline def setArrowLength(value: Double): Self = StObject.set(x, "arrowLength", value.asInstanceOf[js.Any])
     

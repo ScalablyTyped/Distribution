@@ -26,7 +26,8 @@ object GrantTokenParameters {
     __obj.asInstanceOf[GrantTokenParameters]
   }
   
-  extension [Self <: GrantTokenParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantTokenParameters] (val x: Self) extends AnyVal {
     
     inline def setAuthorized_uuid(value: String): Self = StObject.set(x, "authorized_uuid", value.asInstanceOf[js.Any])
     

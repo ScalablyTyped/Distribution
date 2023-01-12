@@ -19,7 +19,8 @@ object CapturePaymentRequest {
     __obj.asInstanceOf[CapturePaymentRequest]
   }
   
-  extension [Self <: CapturePaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturePaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setPOSKey(value: String): Self = StObject.set(x, "POSKey", value.asInstanceOf[js.Any])
     

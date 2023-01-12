@@ -20,7 +20,8 @@ object RSessionAppSettings {
     __obj.asInstanceOf[RSessionAppSettings]
   }
   
-  extension [Self <: RSessionAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RSessionAppSettings] (val x: Self) extends AnyVal {
     
     inline def setCustomImages(value: CustomImages): Self = StObject.set(x, "CustomImages", value.asInstanceOf[js.Any])
     

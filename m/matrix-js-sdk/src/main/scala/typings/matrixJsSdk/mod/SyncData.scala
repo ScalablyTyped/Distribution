@@ -38,7 +38,8 @@ object SyncData {
     __obj.asInstanceOf[SyncData]
   }
   
-  extension [Self <: SyncData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncData] (val x: Self) extends AnyVal {
     
     inline def setAccountData(value: Record[String, Any]): Self = StObject.set(x, "accountData", value.asInstanceOf[js.Any])
     

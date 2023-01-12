@@ -29,7 +29,8 @@ object typesInventoryEncryptionMod {
       __obj.asInstanceOf[InventoryEncryption]
     }
     
-    extension [Self <: InventoryEncryption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InventoryEncryption] (val x: Self) extends AnyVal {
       
       inline def setSSEKMS(value: _SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object typesInventoryEncryptionMod {
       __obj.asInstanceOf[UnmarshalledInventoryEncryption]
     }
     
-    extension [Self <: UnmarshalledInventoryEncryption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledInventoryEncryption] (val x: Self) extends AnyVal {
       
       inline def setSSEKMS(value: UnmarshalledSSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
       

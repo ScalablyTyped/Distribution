@@ -19,7 +19,8 @@ object GetFileInfoRequest {
     __obj.asInstanceOf[GetFileInfoRequest]
   }
   
-  extension [Self <: GetFileInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFileInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
   }

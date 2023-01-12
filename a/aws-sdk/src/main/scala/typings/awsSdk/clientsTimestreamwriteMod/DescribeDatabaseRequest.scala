@@ -18,7 +18,8 @@ object DescribeDatabaseRequest {
     __obj.asInstanceOf[DescribeDatabaseRequest]
   }
   
-  extension [Self <: DescribeDatabaseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDatabaseRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: ResourceName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
   }

@@ -112,7 +112,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[IDocPageProps]
     }
     
-    extension [Self <: IDocPageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDocPageProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibility(value: String): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[IExample]
     }
     
-    extension [Self <: IExample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IExample] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -261,7 +263,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[ILinkToken]
     }
     
-    extension [Self <: ILinkToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkToken] (val x: Self) extends AnyVal {
       
       inline def setLinkedPage(value: String): Self = StObject.set(x, "linkedPage", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[IPageJson]
     }
     
-    extension [Self <: IPageJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPageJson] (val x: Self) extends AnyVal {
       
       inline def setGroup(value: String): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
       
@@ -331,7 +335,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[ITableJson]
     }
     
-    extension [Self <: ITableJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableJson] (val x: Self) extends AnyVal {
       
       inline def setDeprecated(value: Boolean): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
       
@@ -389,7 +394,8 @@ object libCommonDocPageDottypesMod {
       __obj.asInstanceOf[ITableRowJson]
     }
     
-    extension [Self <: ITableRowJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableRowJson] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

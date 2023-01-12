@@ -38,7 +38,8 @@ object SignalResourceInput {
     __obj.asInstanceOf[SignalResourceInput]
   }
   
-  extension [Self <: SignalResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalResourceInput] (val x: Self) extends AnyVal {
     
     inline def setLogicalResourceId(value: LogicalResourceId): Self = StObject.set(x, "LogicalResourceId", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object IStringConvertible {
     __obj.asInstanceOf[IStringConvertible]
   }
   
-  extension [Self <: IStringConvertible](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStringConvertible] (val x: Self) extends AnyVal {
     
     inline def setFromString(value: String => Unit): Self = StObject.set(x, "fromString", js.Any.fromFunction1(value))
   }

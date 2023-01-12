@@ -191,7 +191,8 @@ object XLayerHandler {
     __obj.asInstanceOf[XLayerHandler]
   }
   
-  extension [Self <: XLayerHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLayerHandler] (val x: Self) extends AnyVal {
     
     inline def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
     

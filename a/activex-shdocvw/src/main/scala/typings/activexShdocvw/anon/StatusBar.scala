@@ -15,7 +15,8 @@ object StatusBar {
     __obj.asInstanceOf[StatusBar]
   }
   
-  extension [Self <: StatusBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusBar] (val x: Self) extends AnyVal {
     
     inline def setStatusBar(value: Boolean): Self = StObject.set(x, "StatusBar", value.asInstanceOf[js.Any])
   }

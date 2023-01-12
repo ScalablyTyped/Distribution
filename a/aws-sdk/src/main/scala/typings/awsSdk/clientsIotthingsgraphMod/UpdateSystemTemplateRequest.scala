@@ -28,7 +28,8 @@ object UpdateSystemTemplateRequest {
     __obj.asInstanceOf[UpdateSystemTemplateRequest]
   }
   
-  extension [Self <: UpdateSystemTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSystemTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setCompatibleNamespaceVersion(value: Version): Self = StObject.set(x, "compatibleNamespaceVersion", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object LightsBuffer {
     __obj.asInstanceOf[LightsBuffer]
   }
   
-  extension [Self <: LightsBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightsBuffer] (val x: Self) extends AnyVal {
     
     inline def setAddLightAreaSizes(value: (Any, Any, Any) => Unit): Self = StObject.set(x, "addLightAreaSizes", js.Any.fromFunction3(value))
     

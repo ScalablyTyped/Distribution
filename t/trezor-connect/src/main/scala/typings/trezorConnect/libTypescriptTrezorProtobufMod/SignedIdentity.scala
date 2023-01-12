@@ -19,7 +19,8 @@ object SignedIdentity {
     __obj.asInstanceOf[SignedIdentity]
   }
   
-  extension [Self <: SignedIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedIdentity] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

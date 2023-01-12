@@ -26,7 +26,8 @@ object IProcedureResult {
     __obj.asInstanceOf[IProcedureResult[T]]
   }
   
-  extension [Self <: IProcedureResult[?], T](x: Self & IProcedureResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IProcedureResult[?], T] (val x: Self & IProcedureResult[T]) extends AnyVal {
     
     inline def setReturnValue(value: Any): Self = StObject.set(x, "returnValue", value.asInstanceOf[js.Any])
   }

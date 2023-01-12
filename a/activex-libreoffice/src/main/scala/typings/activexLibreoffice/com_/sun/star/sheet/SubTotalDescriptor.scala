@@ -93,7 +93,8 @@ object SubTotalDescriptor {
     __obj.asInstanceOf[SubTotalDescriptor]
   }
   
-  extension [Self <: SubTotalDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubTotalDescriptor] (val x: Self) extends AnyVal {
     
     inline def setBindFormatsToContent(value: Boolean): Self = StObject.set(x, "BindFormatsToContent", value.asInstanceOf[js.Any])
     

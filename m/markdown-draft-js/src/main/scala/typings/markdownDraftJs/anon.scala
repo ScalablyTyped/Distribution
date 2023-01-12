@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Open]
     }
     
-    extension [Self <: Open](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Open] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => String): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

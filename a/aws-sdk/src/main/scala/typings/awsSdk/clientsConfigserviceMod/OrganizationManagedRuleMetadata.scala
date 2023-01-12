@@ -53,7 +53,8 @@ object OrganizationManagedRuleMetadata {
     __obj.asInstanceOf[OrganizationManagedRuleMetadata]
   }
   
-  extension [Self <: OrganizationManagedRuleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizationManagedRuleMetadata] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: StringWithCharLimit256Min0): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

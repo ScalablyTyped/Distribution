@@ -19,7 +19,8 @@ object BulkEditNegativeKeywordsRequest {
     __obj.asInstanceOf[BulkEditNegativeKeywordsRequest]
   }
   
-  extension [Self <: BulkEditNegativeKeywordsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditNegativeKeywordsRequest] (val x: Self) extends AnyVal {
     
     inline def setCreatedNegativeKeywords(value: js.Array[NegativeKeyword]): Self = StObject.set(x, "createdNegativeKeywords", value.asInstanceOf[js.Any])
     

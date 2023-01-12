@@ -240,7 +240,8 @@ object distPackagesFirestoreSrcLiteApiUserDataReaderMod {
       __obj.asInstanceOf[ContextSettings]
     }
     
-    extension [Self <: ContextSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextSettings] (val x: Self) extends AnyVal {
       
       inline def setArrayElement(value: Boolean): Self = StObject.set(x, "arrayElement", value.asInstanceOf[js.Any])
       

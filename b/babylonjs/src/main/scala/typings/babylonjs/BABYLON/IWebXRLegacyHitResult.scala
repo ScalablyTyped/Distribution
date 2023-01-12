@@ -25,7 +25,8 @@ object IWebXRLegacyHitResult {
     __obj.asInstanceOf[IWebXRLegacyHitResult]
   }
   
-  extension [Self <: IWebXRLegacyHitResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRLegacyHitResult] (val x: Self) extends AnyVal {
     
     inline def setTransformationMatrix(value: Matrix): Self = StObject.set(x, "transformationMatrix", value.asInstanceOf[js.Any])
     

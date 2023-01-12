@@ -168,7 +168,8 @@ object ICheckboxGroup {
     __obj.asInstanceOf[ICheckboxGroup]
   }
   
-  extension [Self <: ICheckboxGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckboxGroup] (val x: Self) extends AnyVal {
     
     inline def setAllowBlank(value: Boolean): Self = StObject.set(x, "allowBlank", value.asInstanceOf[js.Any])
     

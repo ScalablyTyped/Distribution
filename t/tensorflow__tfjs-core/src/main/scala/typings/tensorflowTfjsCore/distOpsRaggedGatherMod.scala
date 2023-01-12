@@ -52,7 +52,8 @@ object distOpsRaggedGatherMod {
       __obj.asInstanceOf[RaggedGatherMap]
     }
     
-    extension [Self <: RaggedGatherMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaggedGatherMap] (val x: Self) extends AnyVal {
       
       inline def setOutputDenseValues(value: Tensor[Rank]): Self = StObject.set(x, "outputDenseValues", value.asInstanceOf[js.Any])
       

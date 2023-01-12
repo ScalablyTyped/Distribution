@@ -23,7 +23,8 @@ object SwipeViewOptions {
     __obj.asInstanceOf[SwipeViewOptions]
   }
   
-  extension [Self <: SwipeViewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeViewOptions] (val x: Self) extends AnyVal {
     
     inline def setHastyPageFlip(value: Boolean): Self = StObject.set(x, "hastyPageFlip", value.asInstanceOf[js.Any])
     

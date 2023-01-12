@@ -33,7 +33,8 @@ object AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails {
     __obj.asInstanceOf[AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails]
   }
   
-  extension [Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateDetails] (val x: Self) extends AnyVal {
     
     inline def setOperands(value: AwsS3BucketBucketLifecycleConfigurationRulesFilterPredicateOperandsList): Self = StObject.set(x, "Operands", value.asInstanceOf[js.Any])
     

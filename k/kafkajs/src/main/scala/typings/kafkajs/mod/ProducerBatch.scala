@@ -21,7 +21,8 @@ object ProducerBatch {
     __obj.asInstanceOf[ProducerBatch]
   }
   
-  extension [Self <: ProducerBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerBatch] (val x: Self) extends AnyVal {
     
     inline def setAcks(value: Double): Self = StObject.set(x, "acks", value.asInstanceOf[js.Any])
     

@@ -320,7 +320,8 @@ object activeKeystringnullundefi {
     __obj.asInstanceOf[activeKeystringnullundefi]
   }
   
-  extension [Self <: activeKeystringnullundefi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: activeKeystringnullundefi] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: String): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
     

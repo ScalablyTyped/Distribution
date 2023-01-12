@@ -49,7 +49,8 @@ object PathConstraintData {
     __obj.asInstanceOf[PathConstraintData]
   }
   
-  extension [Self <: PathConstraintData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathConstraintData] (val x: Self) extends AnyVal {
     
     inline def setBones(value: js.Array[BoneData]): Self = StObject.set(x, "bones", value.asInstanceOf[js.Any])
     

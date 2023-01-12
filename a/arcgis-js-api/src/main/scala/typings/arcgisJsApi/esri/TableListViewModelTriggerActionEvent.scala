@@ -17,7 +17,8 @@ object TableListViewModelTriggerActionEvent {
     __obj.asInstanceOf[TableListViewModelTriggerActionEvent]
   }
   
-  extension [Self <: TableListViewModelTriggerActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableListViewModelTriggerActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionButton | ActionToggle): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

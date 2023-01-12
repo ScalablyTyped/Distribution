@@ -109,7 +109,8 @@ object RequiredOptionsAutoScroll {
     __obj.asInstanceOf[RequiredOptionsAutoScroll]
   }
   
-  extension [Self <: RequiredOptionsAutoScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOptionsAutoScroll] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

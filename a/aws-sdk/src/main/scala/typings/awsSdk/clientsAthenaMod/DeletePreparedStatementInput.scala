@@ -23,7 +23,8 @@ object DeletePreparedStatementInput {
     __obj.asInstanceOf[DeletePreparedStatementInput]
   }
   
-  extension [Self <: DeletePreparedStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeletePreparedStatementInput] (val x: Self) extends AnyVal {
     
     inline def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     

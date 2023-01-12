@@ -21,7 +21,8 @@ object SPClientPeoplePickerMRU {
     __obj.asInstanceOf[SPClientPeoplePickerMRU]
   }
   
-  extension [Self <: SPClientPeoplePickerMRU](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SPClientPeoplePickerMRU] (val x: Self) extends AnyVal {
     
     inline def setGetItems(value: String => Dictname): Self = StObject.set(x, "GetItems", js.Any.fromFunction1(value))
     

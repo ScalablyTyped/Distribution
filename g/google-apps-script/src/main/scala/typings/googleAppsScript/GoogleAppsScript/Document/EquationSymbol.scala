@@ -56,7 +56,8 @@ object EquationSymbol {
     __obj.asInstanceOf[EquationSymbol]
   }
   
-  extension [Self <: EquationSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EquationSymbol] (val x: Self) extends AnyVal {
     
     inline def setGetCode(value: () => String): Self = StObject.set(x, "getCode", js.Any.fromFunction0(value))
   }

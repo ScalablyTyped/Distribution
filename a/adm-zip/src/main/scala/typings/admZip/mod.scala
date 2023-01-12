@@ -639,7 +639,8 @@ object mod {
       __obj.asInstanceOf[DataHeader]
     }
     
-    extension [Self <: DataHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataHeader] (val x: Self) extends AnyVal {
       
       inline def setCompressedSize(value: Double): Self = StObject.set(x, "compressedSize", value.asInstanceOf[js.Any])
       
@@ -740,7 +741,8 @@ object mod {
       __obj.asInstanceOf[EntryHeader]
     }
     
-    extension [Self <: EntryHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryHeader] (val x: Self) extends AnyVal {
       
       inline def setAttr(value: Double): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
       
@@ -893,7 +895,8 @@ object mod {
       __obj.asInstanceOf[InitOptions]
     }
     
-    extension [Self <: InitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       inline def setFs(value: TypeofFS): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
       

@@ -61,7 +61,8 @@ object keyinMusicCatalogChartReq {
     __obj.asInstanceOf[keyinMusicCatalogChartReq]
   }
   
-  extension [Self <: keyinMusicCatalogChartReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinMusicCatalogChartReq] (val x: Self) extends AnyVal {
     
     inline def setAlbums(
       value: js.Array[

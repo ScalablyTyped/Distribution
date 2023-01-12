@@ -51,7 +51,8 @@ object libComponentsToolbarToolbarMod extends Shortcut {
       __obj.asInstanceOf[ToolbarItemInheritedProps]
     }
     
-    extension [Self <: ToolbarItemInheritedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItemInheritedProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libComponentsToolbarToolbarMod extends Shortcut {
       __obj.asInstanceOf[ToolbarItemProps]
     }
     
-    extension [Self <: ToolbarItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarItemProps] (val x: Self) extends AnyVal {
       
       inline def setPlaceholderText(value: String): Self = StObject.set(x, "placeholderText", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object libComponentsToolbarToolbarMod extends Shortcut {
       __obj.asInstanceOf[ToolbarOptionInheritedProps]
     }
     
-    extension [Self <: ToolbarOptionInheritedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarOptionInheritedProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object libComponentsToolbarToolbarMod extends Shortcut {
       __obj.asInstanceOf[ToolbarTitleProps]
     }
     
-    extension [Self <: ToolbarTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToolbarTitleProps] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

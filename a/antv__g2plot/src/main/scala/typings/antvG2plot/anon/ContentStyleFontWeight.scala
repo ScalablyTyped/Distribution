@@ -18,7 +18,8 @@ object ContentStyleFontWeight {
     __obj.asInstanceOf[ContentStyleFontWeight]
   }
   
-  extension [Self <: ContentStyleFontWeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentStyleFontWeight] (val x: Self) extends AnyVal {
     
     inline def setContent(value: StyleFontWeight): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

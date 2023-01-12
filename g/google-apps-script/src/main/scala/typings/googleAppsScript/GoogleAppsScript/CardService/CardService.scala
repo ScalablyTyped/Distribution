@@ -262,7 +262,8 @@ object CardService {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.CardService.CardService]
   }
   
-  extension [Self <: typings.googleAppsScript.GoogleAppsScript.CardService.CardService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.CardService.CardService] (val x: Self) extends AnyVal {
     
     inline def setBorderType(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BorderType */ Any): Self = StObject.set(x, "BorderType", value.asInstanceOf[js.Any])
     

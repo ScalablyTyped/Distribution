@@ -25,7 +25,8 @@ object RestrictItem {
     __obj.asInstanceOf[RestrictItem]
   }
   
-  extension [Self <: RestrictItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestrictItem] (val x: Self) extends AnyVal {
     
     inline def setDriveFollowUpRestrict(value: DriveFollowUpRestrict): Self = StObject.set(x, "driveFollowUpRestrict", value.asInstanceOf[js.Any])
     

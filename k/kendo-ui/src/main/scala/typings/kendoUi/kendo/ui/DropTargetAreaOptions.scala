@@ -23,7 +23,8 @@ object DropTargetAreaOptions {
     __obj.asInstanceOf[DropTargetAreaOptions]
   }
   
-  extension [Self <: DropTargetAreaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetAreaOptions] (val x: Self) extends AnyVal {
     
     inline def setDragenter(value: /* e */ DropTargetAreaDragenterEvent => Unit): Self = StObject.set(x, "dragenter", js.Any.fromFunction1(value))
     

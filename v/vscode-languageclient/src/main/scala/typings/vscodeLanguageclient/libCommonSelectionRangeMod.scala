@@ -62,7 +62,8 @@ object libCommonSelectionRangeMod {
       __obj.asInstanceOf[SelectionRangeProviderMiddleware]
     }
     
-    extension [Self <: SelectionRangeProviderMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionRangeProviderMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideSelectionRanges(
         value: js.ThisFunction4[

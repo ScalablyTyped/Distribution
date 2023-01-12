@@ -23,7 +23,8 @@ object CommonWidgetProps {
     __obj.asInstanceOf[CommonWidgetProps]
   }
   
-  extension [Self <: CommonWidgetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonWidgetProps] (val x: Self) extends AnyVal {
     
     inline def setTranslations(value: StringDictionary[String | (js.Function1[/* repeated */ Any, Any])]): Self = StObject.set(x, "translations", value.asInstanceOf[js.Any])
     

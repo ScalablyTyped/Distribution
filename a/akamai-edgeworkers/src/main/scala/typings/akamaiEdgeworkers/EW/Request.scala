@@ -78,7 +78,8 @@ object Request {
     __obj.asInstanceOf[Request]
   }
   
-  extension [Self <: Request](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ReadableStreamEW[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

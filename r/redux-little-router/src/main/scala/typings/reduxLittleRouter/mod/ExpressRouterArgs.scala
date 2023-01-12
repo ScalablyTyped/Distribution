@@ -18,7 +18,8 @@ object ExpressRouterArgs {
     __obj.asInstanceOf[ExpressRouterArgs]
   }
   
-  extension [Self <: ExpressRouterArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressRouterArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: BaseUrl): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PixelCoordinate {
     __obj.asInstanceOf[PixelCoordinate]
   }
   
-  extension [Self <: PixelCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelCoordinate] (val x: Self) extends AnyVal {
     
     inline def set_pixelCoordinateBrand(value: String): Self = StObject.set(x, "_pixelCoordinateBrand", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object ICrossSlidingEventArgs {
     __obj.asInstanceOf[ICrossSlidingEventArgs]
   }
   
-  extension [Self <: ICrossSlidingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICrossSlidingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCrossSlidingState(value: CrossSlidingState): Self = StObject.set(x, "crossSlidingState", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object Layer {
     __obj.asInstanceOf[Layer]
   }
   
-  extension [Self <: Layer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Layer] (val x: Self) extends AnyVal {
     
     inline def setGetTiles(value: () => js.Array[String]): Self = StObject.set(x, "getTiles", js.Any.fromFunction0(value))
     

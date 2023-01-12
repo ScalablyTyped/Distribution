@@ -50,7 +50,8 @@ object ClientContext {
     __obj.asInstanceOf[ClientContext]
   }
   
-  extension [Self <: ClientContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientContext] (val x: Self) extends AnyVal {
     
     inline def setGetClient(value: () => Client): Self = StObject.set(x, "getClient", js.Any.fromFunction0(value))
     

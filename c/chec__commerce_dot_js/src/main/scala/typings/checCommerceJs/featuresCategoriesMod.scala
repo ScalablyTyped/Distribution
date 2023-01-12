@@ -35,7 +35,8 @@ object featuresCategoriesMod {
       __obj.asInstanceOf[CategoryCollection]
     }
     
-    extension [Self <: CategoryCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryCollection] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Category]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

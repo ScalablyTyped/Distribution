@@ -33,7 +33,8 @@ object PlotFunnelOnPointOptions {
     __obj.asInstanceOf[PlotFunnelOnPointOptions]
   }
   
-  extension [Self <: PlotFunnelOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotFunnelOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotFunnelOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

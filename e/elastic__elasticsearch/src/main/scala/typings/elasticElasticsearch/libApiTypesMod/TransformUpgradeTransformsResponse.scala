@@ -19,7 +19,8 @@ object TransformUpgradeTransformsResponse {
     __obj.asInstanceOf[TransformUpgradeTransformsResponse]
   }
   
-  extension [Self <: TransformUpgradeTransformsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformUpgradeTransformsResponse] (val x: Self) extends AnyVal {
     
     inline def setNeeds_update(value: integer): Self = StObject.set(x, "needs_update", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object IAccessibilityTag {
     __obj.asInstanceOf[IAccessibilityTag]
   }
   
-  extension [Self <: IAccessibilityTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessibilityTag] (val x: Self) extends AnyVal {
     
     inline def setAria(value: keyinAcceptedARIAany): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

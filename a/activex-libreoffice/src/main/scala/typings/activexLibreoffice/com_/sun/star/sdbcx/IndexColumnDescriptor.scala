@@ -37,7 +37,8 @@ object IndexColumnDescriptor {
     __obj.asInstanceOf[IndexColumnDescriptor]
   }
   
-  extension [Self <: IndexColumnDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexColumnDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIsAscending(value: Boolean): Self = StObject.set(x, "IsAscending", value.asInstanceOf[js.Any])
   }

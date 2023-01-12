@@ -45,7 +45,8 @@ object distNodeEsmSrcCoreSparseSnapshotTreeMod {
       __obj.asInstanceOf[SparseSnapshotTree]
     }
     
-    extension [Self <: SparseSnapshotTree](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparseSnapshotTree] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Map[String, SparseSnapshotTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

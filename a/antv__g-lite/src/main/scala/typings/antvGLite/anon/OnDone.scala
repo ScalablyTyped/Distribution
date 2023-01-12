@@ -21,7 +21,8 @@ object OnDone {
     __obj.asInstanceOf[OnDone]
   }
   
-  extension [Self <: OnDone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDone] (val x: Self) extends AnyVal {
     
     inline def setOnDone(value: Any): Self = StObject.set(x, "onDone", value.asInstanceOf[js.Any])
     

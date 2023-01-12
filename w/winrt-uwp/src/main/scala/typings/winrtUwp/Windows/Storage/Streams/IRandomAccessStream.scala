@@ -70,7 +70,8 @@ object IRandomAccessStream {
     __obj.asInstanceOf[IRandomAccessStream]
   }
   
-  extension [Self <: IRandomAccessStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRandomAccessStream] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

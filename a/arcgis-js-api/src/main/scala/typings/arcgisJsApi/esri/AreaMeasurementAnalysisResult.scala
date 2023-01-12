@@ -36,7 +36,8 @@ object AreaMeasurementAnalysisResult {
     __obj.asInstanceOf[AreaMeasurementAnalysisResult]
   }
   
-  extension [Self <: AreaMeasurementAnalysisResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaMeasurementAnalysisResult] (val x: Self) extends AnyVal {
     
     inline def setArea(value: Area): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

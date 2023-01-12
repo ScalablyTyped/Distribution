@@ -180,7 +180,8 @@ object TerminalModes {
     __obj.asInstanceOf[TerminalModes]
   }
   
-  extension [Self <: TerminalModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminalModes] (val x: Self) extends AnyVal {
     
     inline def setCS7(value: `0` | `1`): Self = StObject.set(x, "CS7", value.asInstanceOf[js.Any])
     

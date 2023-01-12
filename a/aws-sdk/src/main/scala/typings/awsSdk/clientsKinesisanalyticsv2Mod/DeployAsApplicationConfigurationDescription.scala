@@ -18,7 +18,8 @@ object DeployAsApplicationConfigurationDescription {
     __obj.asInstanceOf[DeployAsApplicationConfigurationDescription]
   }
   
-  extension [Self <: DeployAsApplicationConfigurationDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeployAsApplicationConfigurationDescription] (val x: Self) extends AnyVal {
     
     inline def setS3ContentLocationDescription(value: S3ContentBaseLocationDescription): Self = StObject.set(x, "S3ContentLocationDescription", value.asInstanceOf[js.Any])
   }

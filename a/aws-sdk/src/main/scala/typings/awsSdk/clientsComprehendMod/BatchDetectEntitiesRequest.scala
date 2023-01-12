@@ -23,7 +23,8 @@ object BatchDetectEntitiesRequest {
     __obj.asInstanceOf[BatchDetectEntitiesRequest]
   }
   
-  extension [Self <: BatchDetectEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: LanguageCode): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

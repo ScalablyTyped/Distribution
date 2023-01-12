@@ -69,7 +69,8 @@ object PaymentData {
     __obj.asInstanceOf[PaymentData]
   }
   
-  extension [Self <: PaymentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentData] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: Double): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

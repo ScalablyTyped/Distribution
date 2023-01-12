@@ -53,7 +53,8 @@ object HlsManifest {
     __obj.asInstanceOf[HlsManifest]
   }
   
-  extension [Self <: HlsManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsManifest] (val x: Self) extends AnyVal {
     
     inline def setAdMarkers(value: AdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     

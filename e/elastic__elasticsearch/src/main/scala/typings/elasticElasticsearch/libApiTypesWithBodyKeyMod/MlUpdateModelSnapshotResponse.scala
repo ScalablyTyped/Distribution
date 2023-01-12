@@ -17,7 +17,8 @@ object MlUpdateModelSnapshotResponse {
     __obj.asInstanceOf[MlUpdateModelSnapshotResponse]
   }
   
-  extension [Self <: MlUpdateModelSnapshotResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlUpdateModelSnapshotResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

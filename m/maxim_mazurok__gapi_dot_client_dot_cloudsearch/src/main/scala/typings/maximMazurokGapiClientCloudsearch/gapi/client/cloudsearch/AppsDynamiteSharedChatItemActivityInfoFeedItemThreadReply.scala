@@ -16,7 +16,8 @@ object AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply {
     __obj.asInstanceOf[AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply]
   }
   
-  extension [Self <: AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedChatItemActivityInfoFeedItemThreadReply] (val x: Self) extends AnyVal {
     
     inline def setReplyType(value: String): Self = StObject.set(x, "replyType", value.asInstanceOf[js.Any])
     

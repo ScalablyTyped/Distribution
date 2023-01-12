@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Knex]
     }
     
-    extension [Self <: Knex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Knex] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object mod {
         __obj.asInstanceOf[Sql]
       }
       
-      extension [Self <: Sql](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Sql] (val x: Self) extends AnyVal {
         
         inline def setBindings(value: Any): Self = StObject.set(x, "bindings", value.asInstanceOf[js.Any])
         
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Queries]
     }
     
-    extension [Self <: Queries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Queries] (val x: Self) extends AnyVal {
       
       inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
       
@@ -202,7 +205,8 @@ object mod {
       __obj.asInstanceOf[QueryDetailsResponseOption]
     }
     
-    extension [Self <: QueryDetailsResponseOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryDetailsResponseOption] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
       

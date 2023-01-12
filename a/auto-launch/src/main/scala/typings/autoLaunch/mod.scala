@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[AutoLaunch]
     }
     
-    extension [Self <: AutoLaunch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLaunch] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[AutoLaunchOptions]
     }
     
-    extension [Self <: AutoLaunchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoLaunchOptions] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

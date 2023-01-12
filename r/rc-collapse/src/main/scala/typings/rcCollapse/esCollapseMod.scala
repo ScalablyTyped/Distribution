@@ -121,7 +121,8 @@ object esCollapseMod {
       __obj.asInstanceOf[CollapseState]
     }
     
-    extension [Self <: CollapseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollapseState] (val x: Self) extends AnyVal {
       
       inline def setActiveKey(value: js.Array[Key]): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
       

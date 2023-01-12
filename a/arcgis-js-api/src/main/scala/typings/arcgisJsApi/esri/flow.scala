@@ -25,7 +25,8 @@ object flow {
     __obj.asInstanceOf[flow]
   }
   
-  extension [Self <: flow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: flow] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: flowCreateRendererParams => js.Promise[FlowRendererResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

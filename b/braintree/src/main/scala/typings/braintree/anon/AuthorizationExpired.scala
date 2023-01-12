@@ -60,7 +60,8 @@ object AuthorizationExpired {
     __obj.asInstanceOf[AuthorizationExpired]
   }
   
-  extension [Self <: AuthorizationExpired](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationExpired] (val x: Self) extends AnyVal {
     
     inline def setAll(
       value: () => js.Array[

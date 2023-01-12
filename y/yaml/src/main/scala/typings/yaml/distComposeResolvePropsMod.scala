@@ -53,7 +53,8 @@ object distComposeResolvePropsMod {
       __obj.asInstanceOf[ResolvePropsArg]
     }
     
-    extension [Self <: ResolvePropsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvePropsArg] (val x: Self) extends AnyVal {
       
       inline def setFlow(value: (`flow map`) | (`flow sequence`)): Self = StObject.set(x, "flow", value.asInstanceOf[js.Any])
       

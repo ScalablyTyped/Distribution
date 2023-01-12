@@ -22,7 +22,8 @@ object OrderLineItemReturnInfo {
     __obj.asInstanceOf[OrderLineItemReturnInfo]
   }
   
-  extension [Self <: OrderLineItemReturnInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderLineItemReturnInfo] (val x: Self) extends AnyVal {
     
     inline def setDaysToReturn(value: Double): Self = StObject.set(x, "daysToReturn", value.asInstanceOf[js.Any])
     

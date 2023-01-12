@@ -21,7 +21,8 @@ object CircularGaugeScaleLabelsPadding {
     __obj.asInstanceOf[CircularGaugeScaleLabelsPadding]
   }
   
-  extension [Self <: CircularGaugeScaleLabelsPadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularGaugeScaleLabelsPadding] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

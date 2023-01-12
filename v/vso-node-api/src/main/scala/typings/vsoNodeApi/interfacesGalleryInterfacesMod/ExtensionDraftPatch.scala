@@ -17,7 +17,8 @@ object ExtensionDraftPatch {
     __obj.asInstanceOf[ExtensionDraftPatch]
   }
   
-  extension [Self <: ExtensionDraftPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionDraftPatch] (val x: Self) extends AnyVal {
     
     inline def setExtensionData(value: UnpackagedExtensionData): Self = StObject.set(x, "extensionData", value.asInstanceOf[js.Any])
     

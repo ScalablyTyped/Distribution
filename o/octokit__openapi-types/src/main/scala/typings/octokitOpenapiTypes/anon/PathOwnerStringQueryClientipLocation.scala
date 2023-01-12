@@ -17,7 +17,8 @@ object PathOwnerStringQueryClientipLocation {
     __obj.asInstanceOf[PathOwnerStringQueryClientipLocation]
   }
   
-  extension [Self <: PathOwnerStringQueryClientipLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOwnerStringQueryClientipLocation] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OwnerString): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PathLicense {
     __obj.asInstanceOf[PathLicense]
   }
   
-  extension [Self <: PathLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathLicense] (val x: Self) extends AnyVal {
     
     inline def setPath(value: License): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

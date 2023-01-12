@@ -46,7 +46,8 @@ object distKernelsBatchMatMulImplMod {
       __obj.asInstanceOf[BatchMatMulConfig]
     }
     
-    extension [Self <: BatchMatMulConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchMatMulConfig] (val x: Self) extends AnyVal {
       
       inline def setA(value: TensorInfo): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

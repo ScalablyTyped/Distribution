@@ -38,7 +38,8 @@ object AdvancedSecurityOptionsInput {
     __obj.asInstanceOf[AdvancedSecurityOptionsInput]
   }
   
-  extension [Self <: AdvancedSecurityOptionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedSecurityOptionsInput] (val x: Self) extends AnyVal {
     
     inline def setAnonymousAuthEnabled(value: Boolean): Self = StObject.set(x, "AnonymousAuthEnabled", value.asInstanceOf[js.Any])
     

@@ -86,7 +86,8 @@ object distLayersPaddingMod {
       __obj.asInstanceOf[ZeroPadding2DLayerArgs]
     }
     
-    extension [Self <: ZeroPadding2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZeroPadding2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
       

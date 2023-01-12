@@ -39,7 +39,8 @@ object ISerachFieldMatch {
     __obj.asInstanceOf[ISerachFieldMatch]
   }
   
-  extension [Self <: ISerachFieldMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISerachFieldMatch] (val x: Self) extends AnyVal {
     
     inline def setQField(value: Double): Self = StObject.set(x, "qField", value.asInstanceOf[js.Any])
     

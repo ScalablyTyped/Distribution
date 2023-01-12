@@ -90,7 +90,8 @@ object libUseDaumPostcodePopupMod {
       __obj.asInstanceOf[DaumPostcodePopupParams]
     }
     
-    extension [Self <: DaumPostcodePopupParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DaumPostcodePopupParams] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowEngAddr(value: Boolean): Self = StObject.set(x, "alwaysShowEngAddr", value.asInstanceOf[js.Any])
       

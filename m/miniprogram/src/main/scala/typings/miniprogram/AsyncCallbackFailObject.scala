@@ -20,7 +20,8 @@ object AsyncCallbackFailObject {
     __obj.asInstanceOf[AsyncCallbackFailObject]
   }
   
-  extension [Self <: AsyncCallbackFailObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncCallbackFailObject] (val x: Self) extends AnyVal {
     
     inline def setError(value: Double): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

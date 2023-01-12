@@ -32,7 +32,8 @@ object BarcodeScannerInputProper {
     __obj.asInstanceOf[BarcodeScannerInputProper]
   }
   
-  extension [Self <: BarcodeScannerInputProper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarcodeScannerInputProper] (val x: Self) extends AnyVal {
     
     inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
     

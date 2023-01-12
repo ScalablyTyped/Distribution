@@ -17,7 +17,8 @@ object ClosePointInTimeResponse {
     __obj.asInstanceOf[ClosePointInTimeResponse]
   }
   
-  extension [Self <: ClosePointInTimeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosePointInTimeResponse] (val x: Self) extends AnyVal {
     
     inline def setNum_freed(value: integer): Self = StObject.set(x, "num_freed", value.asInstanceOf[js.Any])
     

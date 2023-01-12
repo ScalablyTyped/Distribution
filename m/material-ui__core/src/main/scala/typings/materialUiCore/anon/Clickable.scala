@@ -83,7 +83,8 @@ object Clickable {
     __obj.asInstanceOf[Clickable]
   }
   
-  extension [Self <: Clickable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clickable] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: ReactElement): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

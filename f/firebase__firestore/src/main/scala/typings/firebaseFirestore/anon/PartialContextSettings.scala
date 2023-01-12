@@ -29,7 +29,8 @@ object PartialContextSettings {
     __obj.asInstanceOf[PartialContextSettings]
   }
   
-  extension [Self <: PartialContextSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialContextSettings] (val x: Self) extends AnyVal {
     
     inline def setArrayElement(value: Boolean): Self = StObject.set(x, "arrayElement", value.asInstanceOf[js.Any])
     

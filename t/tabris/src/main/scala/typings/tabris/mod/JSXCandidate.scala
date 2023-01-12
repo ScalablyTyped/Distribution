@@ -17,7 +17,8 @@ object JSXCandidate {
     __obj.asInstanceOf[JSXCandidate]
   }
   
-  extension [Self <: JSXCandidate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXCandidate] (val x: Self) extends AnyVal {
     
     inline def setJsxAttributes(value: Any): Self = StObject.set(x, "jsxAttributes", value.asInstanceOf[js.Any])
     

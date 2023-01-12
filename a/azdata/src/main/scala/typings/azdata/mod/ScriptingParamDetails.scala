@@ -25,7 +25,8 @@ object ScriptingParamDetails {
     __obj.asInstanceOf[ScriptingParamDetails]
   }
   
-  extension [Self <: ScriptingParamDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptingParamDetails] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

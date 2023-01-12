@@ -17,7 +17,8 @@ object IMapPositionOptions {
     __obj.asInstanceOf[IMapPositionOptions]
   }
   
-  extension [Self <: IMapPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setTimingFunction(value: String): Self = StObject.set(x, "timingFunction", value.asInstanceOf[js.Any])
     

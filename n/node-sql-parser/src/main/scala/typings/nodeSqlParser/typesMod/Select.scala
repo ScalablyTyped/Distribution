@@ -42,7 +42,8 @@ object Select {
     __obj.asInstanceOf[Select]
   }
   
-  extension [Self <: Select](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Select] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: (js.Array[Any | Column]) | Asterisk): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -78,7 +78,8 @@ object PhoneNumber {
     __obj.asInstanceOf[PhoneNumber]
   }
   
-  extension [Self <: PhoneNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneNumber] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: PhoneNumberAssociationList): Self = StObject.set(x, "Associations", value.asInstanceOf[js.Any])
     

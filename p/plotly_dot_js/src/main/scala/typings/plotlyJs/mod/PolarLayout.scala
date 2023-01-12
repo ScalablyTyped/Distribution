@@ -42,7 +42,8 @@ object PolarLayout {
     __obj.asInstanceOf[PolarLayout]
   }
   
-  extension [Self <: PolarLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolarLayout] (val x: Self) extends AnyVal {
     
     inline def setAngularaxis(value: PartialLayoutAxisAnchor): Self = StObject.set(x, "angularaxis", value.asInstanceOf[js.Any])
     

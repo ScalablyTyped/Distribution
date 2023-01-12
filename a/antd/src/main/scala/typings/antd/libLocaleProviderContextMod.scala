@@ -26,7 +26,8 @@ object libLocaleProviderContextMod extends Shortcut {
       __obj.asInstanceOf[LocaleContextProps]
     }
     
-    extension [Self <: LocaleContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleContextProps] (val x: Self) extends AnyVal {
       
       inline def setExist(value: Boolean): Self = StObject.set(x, "exist", value.asInstanceOf[js.Any])
       

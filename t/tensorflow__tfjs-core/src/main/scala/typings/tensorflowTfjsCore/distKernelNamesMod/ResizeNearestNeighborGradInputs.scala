@@ -18,7 +18,8 @@ object ResizeNearestNeighborGradInputs {
     __obj.asInstanceOf[ResizeNearestNeighborGradInputs]
   }
   
-  extension [Self <: ResizeNearestNeighborGradInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeNearestNeighborGradInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

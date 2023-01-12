@@ -178,7 +178,8 @@ object ServiceDefinition {
     __obj.asInstanceOf[ServiceDefinition]
   }
   
-  extension [Self <: ServiceDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceDefinition] (val x: Self) extends AnyVal {
     
     inline def setApprovalDate(value: String): Self = StObject.set(x, "approvalDate", value.asInstanceOf[js.Any])
     

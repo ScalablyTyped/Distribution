@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[NoWrapParams]
     }
     
-    extension [Self <: NoWrapParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoWrapParams] (val x: Self) extends AnyVal {
       
       inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[OutputFormat]
     }
     
-    extension [Self <: OutputFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormat] (val x: Self) extends AnyVal {
       
       inline def setNoWrapParams(value: Boolean): Self = StObject.set(x, "noWrapParams", value.asInstanceOf[js.Any])
       

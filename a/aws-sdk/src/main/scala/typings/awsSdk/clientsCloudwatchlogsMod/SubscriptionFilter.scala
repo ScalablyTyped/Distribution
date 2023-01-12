@@ -42,7 +42,8 @@ object SubscriptionFilter {
     __obj.asInstanceOf[SubscriptionFilter]
   }
   
-  extension [Self <: SubscriptionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionFilter] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: Timestamp): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

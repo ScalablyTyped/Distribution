@@ -28,7 +28,8 @@ object NodeManagement {
     __obj.asInstanceOf[NodeManagement]
   }
   
-  extension [Self <: NodeManagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeManagement] (val x: Self) extends AnyVal {
     
     inline def setAutoRepair(value: Boolean): Self = StObject.set(x, "autoRepair", value.asInstanceOf[js.Any])
     

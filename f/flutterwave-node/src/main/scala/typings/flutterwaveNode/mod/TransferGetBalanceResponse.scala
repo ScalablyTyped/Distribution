@@ -18,7 +18,8 @@ object TransferGetBalanceResponse {
     __obj.asInstanceOf[TransferGetBalanceResponse]
   }
   
-  extension [Self <: TransferGetBalanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferGetBalanceResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: AvailableBalance): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

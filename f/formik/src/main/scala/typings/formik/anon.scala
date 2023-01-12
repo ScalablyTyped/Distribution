@@ -226,7 +226,8 @@ object anon {
       __obj.asInstanceOf[Formik[Values]]
     }
     
-    extension [Self <: Formik[?], Values](x: Self & Formik[Values]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formik[?], Values] (val x: Self & Formik[Values]) extends AnyVal {
       
       inline def setFormik(value: FormikContextType[Values]): Self = StObject.set(x, "formik", value.asInstanceOf[js.Any])
     }
@@ -243,7 +244,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -789,7 +791,8 @@ object anon {
       __obj.asInstanceOf[PickDetailedHTMLPropsForm]
     }
     
-    extension [Self <: PickDetailedHTMLPropsForm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickDetailedHTMLPropsForm] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1870,7 +1873,8 @@ object anon {
       __obj.asInstanceOf[Validate]
     }
     
-    extension [Self <: Validate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validate] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: /* value */ Any => String | Unit | (js.Promise[String | Unit])): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
       

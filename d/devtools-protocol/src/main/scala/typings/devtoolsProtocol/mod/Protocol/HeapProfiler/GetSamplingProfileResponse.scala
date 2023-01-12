@@ -18,7 +18,8 @@ object GetSamplingProfileResponse {
     __obj.asInstanceOf[GetSamplingProfileResponse]
   }
   
-  extension [Self <: GetSamplingProfileResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSamplingProfileResponse] (val x: Self) extends AnyVal {
     
     inline def setProfile(value: SamplingHeapProfile): Self = StObject.set(x, "profile", value.asInstanceOf[js.Any])
   }

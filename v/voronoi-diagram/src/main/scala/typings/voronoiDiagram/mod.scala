@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[VoronoiDiagram]
     }
     
-    extension [Self <: VoronoiDiagram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoronoiDiagram] (val x: Self) extends AnyVal {
       
       inline def setCells(value: js.Array[Cell]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
       

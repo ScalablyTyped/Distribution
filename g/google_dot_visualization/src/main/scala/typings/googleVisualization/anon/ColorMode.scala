@@ -24,7 +24,8 @@ object ColorMode {
     __obj.asInstanceOf[ColorMode]
   }
   
-  extension [Self <: ColorMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorMode] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String | ChartStrokeFill): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

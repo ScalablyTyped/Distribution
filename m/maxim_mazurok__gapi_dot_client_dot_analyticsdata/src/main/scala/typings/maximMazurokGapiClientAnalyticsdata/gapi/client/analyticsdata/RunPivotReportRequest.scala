@@ -59,7 +59,8 @@ object RunPivotReportRequest {
     __obj.asInstanceOf[RunPivotReportRequest]
   }
   
-  extension [Self <: RunPivotReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunPivotReportRequest] (val x: Self) extends AnyVal {
     
     inline def setCohortSpec(value: CohortSpec): Self = StObject.set(x, "cohortSpec", value.asInstanceOf[js.Any])
     

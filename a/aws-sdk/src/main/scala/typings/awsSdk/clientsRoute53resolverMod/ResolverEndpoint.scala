@@ -73,7 +73,8 @@ object ResolverEndpoint {
     __obj.asInstanceOf[ResolverEndpoint]
   }
   
-  extension [Self <: ResolverEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolverEndpoint] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

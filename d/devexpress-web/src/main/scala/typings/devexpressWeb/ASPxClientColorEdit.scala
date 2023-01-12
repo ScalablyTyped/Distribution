@@ -105,7 +105,8 @@ object ASPxClientColorEdit {
     __obj.asInstanceOf[ASPxClientColorEdit]
   }
   
-  extension [Self <: ASPxClientColorEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientColorEdit] (val x: Self) extends AnyVal {
     
     inline def setColorChanged(value: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientColorEdit]]): Self = StObject.set(x, "ColorChanged", value.asInstanceOf[js.Any])
     

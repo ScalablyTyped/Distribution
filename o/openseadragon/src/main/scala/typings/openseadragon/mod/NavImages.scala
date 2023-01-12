@@ -41,7 +41,8 @@ object NavImages {
     __obj.asInstanceOf[NavImages]
   }
   
-  extension [Self <: NavImages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavImages] (val x: Self) extends AnyVal {
     
     inline def setFlip(value: NavImagesValues): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])
     

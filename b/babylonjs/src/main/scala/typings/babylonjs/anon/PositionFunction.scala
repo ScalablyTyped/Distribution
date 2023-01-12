@@ -19,7 +19,8 @@ object PositionFunction {
     __obj.asInstanceOf[PositionFunction]
   }
   
-  extension [Self <: PositionFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionFunction] (val x: Self) extends AnyVal {
     
     inline def setPositionFunction(value: Any): Self = StObject.set(x, "positionFunction", value.asInstanceOf[js.Any])
     

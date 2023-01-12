@@ -18,7 +18,8 @@ object OpenShiftItem {
     __obj.asInstanceOf[OpenShiftItem]
   }
   
-  extension [Self <: OpenShiftItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenShiftItem] (val x: Self) extends AnyVal {
     
     inline def setOpenSlotCount(value: Double): Self = StObject.set(x, "openSlotCount", value.asInstanceOf[js.Any])
     

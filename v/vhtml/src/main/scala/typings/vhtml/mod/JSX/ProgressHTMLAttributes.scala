@@ -19,7 +19,8 @@ object ProgressHTMLAttributes {
     __obj.asInstanceOf[ProgressHTMLAttributes]
   }
   
-  extension [Self <: ProgressHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double | String): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

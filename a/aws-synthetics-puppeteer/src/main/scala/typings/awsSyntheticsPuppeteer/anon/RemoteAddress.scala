@@ -23,7 +23,8 @@ object RemoteAddress {
     __obj.asInstanceOf[RemoteAddress]
   }
   
-  extension [Self <: RemoteAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteAddress] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Boolean): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

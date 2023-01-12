@@ -71,7 +71,8 @@ object SAXAttributes60 {
     __obj.asInstanceOf[SAXAttributes60]
   }
   
-  extension [Self <: SAXAttributes60](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SAXAttributes60] (val x: Self) extends AnyVal {
     
     inline def setAddAttribute(value: (String, String, String, String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction5(value))
     

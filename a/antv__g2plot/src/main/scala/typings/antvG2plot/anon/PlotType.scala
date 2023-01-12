@@ -17,7 +17,8 @@ object PlotType {
     __obj.asInstanceOf[PlotType]
   }
   
-  extension [Self <: PlotType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotType] (val x: Self) extends AnyVal {
     
     inline def setPlotType(value: String): Self = StObject.set(x, "plotType", value.asInstanceOf[js.Any])
     

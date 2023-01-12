@@ -23,7 +23,8 @@ object AbstractBase {
     __obj.asInstanceOf[AbstractBase]
   }
   
-  extension [Self <: AbstractBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractBase] (val x: Self) extends AnyVal {
     
     inline def setExtAttrs(value: js.Array[ExtendedAttribute]): Self = StObject.set(x, "extAttrs", value.asInstanceOf[js.Any])
     

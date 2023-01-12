@@ -20,7 +20,8 @@ object JdbcRowId {
     __obj.asInstanceOf[JdbcRowId]
   }
   
-  extension [Self <: JdbcRowId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcRowId] (val x: Self) extends AnyVal {
     
     inline def setGetBytes(value: () => js.Array[Byte]): Self = StObject.set(x, "getBytes", js.Any.fromFunction0(value))
   }

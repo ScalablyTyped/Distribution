@@ -29,7 +29,8 @@ object TfvcItemRequestData {
     __obj.asInstanceOf[TfvcItemRequestData]
   }
   
-  extension [Self <: TfvcItemRequestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcItemRequestData] (val x: Self) extends AnyVal {
     
     inline def setIncludeContentMetadata(value: Boolean): Self = StObject.set(x, "includeContentMetadata", value.asInstanceOf[js.Any])
     

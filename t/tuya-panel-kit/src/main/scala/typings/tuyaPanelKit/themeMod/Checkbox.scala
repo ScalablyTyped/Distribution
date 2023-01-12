@@ -26,7 +26,8 @@ object Checkbox {
     __obj.asInstanceOf[Checkbox]
   }
   
-  extension [Self <: Checkbox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkbox] (val x: Self) extends AnyVal {
     
     inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
     

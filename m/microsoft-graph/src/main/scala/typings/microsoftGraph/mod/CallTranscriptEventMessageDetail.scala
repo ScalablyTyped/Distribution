@@ -24,7 +24,8 @@ object CallTranscriptEventMessageDetail {
     __obj.asInstanceOf[CallTranscriptEventMessageDetail]
   }
   
-  extension [Self <: CallTranscriptEventMessageDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallTranscriptEventMessageDetail] (val x: Self) extends AnyVal {
     
     inline def setCallId(value: NullableOption[String]): Self = StObject.set(x, "callId", value.asInstanceOf[js.Any])
     

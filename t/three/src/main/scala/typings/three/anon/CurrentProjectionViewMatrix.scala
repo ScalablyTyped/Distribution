@@ -24,7 +24,8 @@ object CurrentProjectionViewMatrix {
     __obj.asInstanceOf[CurrentProjectionViewMatrix]
   }
   
-  extension [Self <: CurrentProjectionViewMatrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentProjectionViewMatrix] (val x: Self) extends AnyVal {
     
     inline def setCurrentProjectionViewMatrix(value: IUniform[Any]): Self = StObject.set(x, "currentProjectionViewMatrix", value.asInstanceOf[js.Any])
     

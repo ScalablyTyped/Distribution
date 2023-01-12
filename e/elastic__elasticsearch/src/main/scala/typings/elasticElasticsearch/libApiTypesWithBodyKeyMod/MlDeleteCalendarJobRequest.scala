@@ -19,7 +19,8 @@ object MlDeleteCalendarJobRequest {
     __obj.asInstanceOf[MlDeleteCalendarJobRequest]
   }
   
-  extension [Self <: MlDeleteCalendarJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteCalendarJobRequest] (val x: Self) extends AnyVal {
     
     inline def setCalendar_id(value: Id): Self = StObject.set(x, "calendar_id", value.asInstanceOf[js.Any])
     

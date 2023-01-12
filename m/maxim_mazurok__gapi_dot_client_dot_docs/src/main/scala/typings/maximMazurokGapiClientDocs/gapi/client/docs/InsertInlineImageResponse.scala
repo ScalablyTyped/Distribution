@@ -16,7 +16,8 @@ object InsertInlineImageResponse {
     __obj.asInstanceOf[InsertInlineImageResponse]
   }
   
-  extension [Self <: InsertInlineImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertInlineImageResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

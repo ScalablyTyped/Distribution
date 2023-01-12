@@ -23,7 +23,8 @@ object AggregationsPercentileRanksAggregation {
     __obj.asInstanceOf[AggregationsPercentileRanksAggregation]
   }
   
-  extension [Self <: AggregationsPercentileRanksAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsPercentileRanksAggregation] (val x: Self) extends AnyVal {
     
     inline def setHdr(value: AggregationsHdrMethod): Self = StObject.set(x, "hdr", value.asInstanceOf[js.Any])
     

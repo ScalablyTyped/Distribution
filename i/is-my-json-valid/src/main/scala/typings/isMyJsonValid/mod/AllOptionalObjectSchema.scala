@@ -22,7 +22,8 @@ object AllOptionalObjectSchema {
     __obj.asInstanceOf[AllOptionalObjectSchema[Properties]]
   }
   
-  extension [Self <: AllOptionalObjectSchema[?], Properties /* <: Record[String, AnySchema] */](x: Self & AllOptionalObjectSchema[Properties]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllOptionalObjectSchema[?], Properties /* <: Record[String, AnySchema] */] (val x: Self & AllOptionalObjectSchema[Properties]) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

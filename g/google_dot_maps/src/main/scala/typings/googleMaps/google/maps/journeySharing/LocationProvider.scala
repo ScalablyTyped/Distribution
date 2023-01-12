@@ -28,7 +28,8 @@ object LocationProvider {
     __obj.asInstanceOf[LocationProvider]
   }
   
-  extension [Self <: LocationProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationProvider] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (String, js.Function) => MapsEventListener): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
   }

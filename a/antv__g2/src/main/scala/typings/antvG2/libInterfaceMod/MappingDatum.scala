@@ -53,7 +53,8 @@ object MappingDatum {
     __obj.asInstanceOf[MappingDatum]
   }
   
-  extension [Self <: MappingDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDatum] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

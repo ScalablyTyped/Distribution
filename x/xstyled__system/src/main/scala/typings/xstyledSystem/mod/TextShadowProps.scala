@@ -16,7 +16,8 @@ object TextShadowProps {
     __obj.asInstanceOf[TextShadowProps]
   }
   
-  extension [Self <: TextShadowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextShadowProps] (val x: Self) extends AnyVal {
     
     inline def setTextShadow(value: ResponsiveValue[TextShadow | Double]): Self = StObject.set(x, "textShadow", value.asInstanceOf[js.Any])
     

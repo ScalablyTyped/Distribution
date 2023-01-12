@@ -28,7 +28,8 @@ object libCoreAdaptorMod {
       __obj.asInstanceOf[Params[O]]
     }
     
-    extension [Self <: Params[?], O](x: Self & Params[O]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params[?], O] (val x: Self & Params[O]) extends AnyVal {
       
       inline def setChart(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify View */ Any

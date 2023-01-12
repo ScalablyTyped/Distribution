@@ -29,7 +29,8 @@ object ArchiveOptions {
     __obj.asInstanceOf[ArchiveOptions]
   }
   
-  extension [Self <: ArchiveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveOptions] (val x: Self) extends AnyVal {
     
     inline def setHasAudio(value: Boolean): Self = StObject.set(x, "hasAudio", value.asInstanceOf[js.Any])
     

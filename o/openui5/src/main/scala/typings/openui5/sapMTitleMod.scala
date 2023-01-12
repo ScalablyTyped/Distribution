@@ -613,7 +613,8 @@ object sapMTitleMod {
       __obj.asInstanceOf[TitleSettings]
     }
     
-    extension [Self <: TitleSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleSettings] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ITitleContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

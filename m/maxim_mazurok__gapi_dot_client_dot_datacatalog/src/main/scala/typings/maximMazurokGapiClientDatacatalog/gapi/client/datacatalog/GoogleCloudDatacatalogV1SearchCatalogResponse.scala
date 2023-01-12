@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1SearchCatalogResponse {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1SearchCatalogResponse]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1SearchCatalogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1SearchCatalogResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

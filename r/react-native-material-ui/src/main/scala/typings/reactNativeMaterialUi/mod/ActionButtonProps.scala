@@ -31,7 +31,8 @@ object ActionButtonProps {
     __obj.asInstanceOf[ActionButtonProps]
   }
   
-  extension [Self <: ActionButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[Element | typings.reactNativeMaterialUi.anon.Icon | String]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

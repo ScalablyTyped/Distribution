@@ -17,7 +17,8 @@ object PDFParams {
     __obj.asInstanceOf[PDFParams]
   }
   
-  extension [Self <: PDFParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFParams] (val x: Self) extends AnyVal {
     
     inline def setPage(value: ImgixParamType): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

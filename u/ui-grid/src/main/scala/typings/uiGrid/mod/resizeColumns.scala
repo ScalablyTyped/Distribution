@@ -22,7 +22,8 @@ object resizeColumns {
       __obj.asInstanceOf[typings.uiGrid.mod.resizeColumns.IColumnDef]
     }
     
-    extension [Self <: typings.uiGrid.mod.resizeColumns.IColumnDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.resizeColumns.IColumnDef] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object resizeColumns {
       __obj.asInstanceOf[typings.uiGrid.mod.resizeColumns.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.resizeColumns.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.resizeColumns.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnResizing(value: Boolean): Self = StObject.set(x, "enableColumnResizing", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object resizeColumns {
       __obj.asInstanceOf[IGridResizeColumnsApi]
     }
     
-    extension [Self <: IGridResizeColumnsApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridResizeColumnsApi] (val x: Self) extends AnyVal {
       
       inline def setOn(value: ColumnSizeChanged): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }

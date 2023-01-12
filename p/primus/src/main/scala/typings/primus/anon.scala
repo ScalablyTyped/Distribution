@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Authenticate]
     }
     
-    extension [Self <: Authenticate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authenticate] (val x: Self) extends AnyVal {
       
       inline def setAuthenticate(value: String): Self = StObject.set(x, "authenticate", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Boolean): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[Factor]
     }
     
-    extension [Self <: Factor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Factor] (val x: Self) extends AnyVal {
       
       inline def setFactor(value: Double): Self = StObject.set(x, "factor", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Ip]
     }
     
-    extension [Self <: Ip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ip] (val x: Self) extends AnyVal {
       
       inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -160,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Reconnect]
     }
     
-    extension [Self <: Reconnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reconnect] (val x: Self) extends AnyVal {
       
       inline def setReconnect(value: Boolean): Self = StObject.set(x, "reconnect", value.asInstanceOf[js.Any])
       

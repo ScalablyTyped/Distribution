@@ -66,7 +66,8 @@ object esmMiddlewareImmerMod {
         __obj.asInstanceOf[StoreMutators[S, A]]
       }
       
-      extension [Self <: StoreMutators[?, ?], S, A](x: Self & (StoreMutators[S, A])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StoreMutators[?, ?], S, A] (val x: Self & (StoreMutators[S, A])) extends AnyVal {
         
         inline def setZustandSlashimmer(value: WithImmer[S]): Self = StObject.set(x, "zustand/immer", value.asInstanceOf[js.Any])
       }

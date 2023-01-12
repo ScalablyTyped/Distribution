@@ -18,7 +18,8 @@ object MonitoringGroundTruthS3Input {
     __obj.asInstanceOf[MonitoringGroundTruthS3Input]
   }
   
-  extension [Self <: MonitoringGroundTruthS3Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoringGroundTruthS3Input] (val x: Self) extends AnyVal {
     
     inline def setS3Uri(value: MonitoringS3Uri): Self = StObject.set(x, "S3Uri", value.asInstanceOf[js.Any])
     

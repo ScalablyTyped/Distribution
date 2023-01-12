@@ -55,7 +55,8 @@ object AuthorityInfoAccess {
     __obj.asInstanceOf[AuthorityInfoAccess]
   }
   
-  extension [Self <: AuthorityInfoAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorityInfoAccess] (val x: Self) extends AnyVal {
     
     inline def setGetExtnValueHex(value: () => String): Self = StObject.set(x, "getExtnValueHex", js.Any.fromFunction0(value))
     

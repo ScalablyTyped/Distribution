@@ -23,7 +23,8 @@ object GetDataSourceInput {
     __obj.asInstanceOf[GetDataSourceInput]
   }
   
-  extension [Self <: GetDataSourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataSourceInput] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: EntityId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

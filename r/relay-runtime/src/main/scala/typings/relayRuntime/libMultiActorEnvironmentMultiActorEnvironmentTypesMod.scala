@@ -217,7 +217,8 @@ object libMultiActorEnvironmentMultiActorEnvironmentTypesMod {
       __obj.asInstanceOf[MultiActorEnvironment]
     }
     
-    extension [Self <: MultiActorEnvironment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiActorEnvironment] (val x: Self) extends AnyVal {
       
       inline def setApplyMutation(value: (ActorEnvironment, OptimisticResponseConfig[MutationParameters]) => Disposable): Self = StObject.set(x, "applyMutation", js.Any.fromFunction2(value))
       

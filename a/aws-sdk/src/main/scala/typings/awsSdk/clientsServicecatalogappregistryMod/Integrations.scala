@@ -18,7 +18,8 @@ object Integrations {
     __obj.asInstanceOf[Integrations]
   }
   
-  extension [Self <: Integrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Integrations] (val x: Self) extends AnyVal {
     
     inline def setResourceGroup(value: ResourceGroup): Self = StObject.set(x, "resourceGroup", value.asInstanceOf[js.Any])
     

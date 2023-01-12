@@ -48,7 +48,8 @@ object HadoopJob {
     __obj.asInstanceOf[HadoopJob]
   }
   
-  extension [Self <: HadoopJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HadoopJob] (val x: Self) extends AnyVal {
     
     inline def setArchiveUris(value: js.Array[String]): Self = StObject.set(x, "archiveUris", value.asInstanceOf[js.Any])
     

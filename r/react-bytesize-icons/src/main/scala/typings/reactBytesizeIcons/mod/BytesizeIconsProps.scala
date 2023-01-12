@@ -21,7 +21,8 @@ object BytesizeIconsProps {
     __obj.asInstanceOf[BytesizeIconsProps]
   }
   
-  extension [Self <: BytesizeIconsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BytesizeIconsProps] (val x: Self) extends AnyVal {
     
     inline def setStrokeLinecap(value: StrokeLinecap): Self = StObject.set(x, "strokeLinecap", value.asInstanceOf[js.Any])
     

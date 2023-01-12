@@ -18,7 +18,8 @@ object DeleteWorkspaceImageRequest {
     __obj.asInstanceOf[DeleteWorkspaceImageRequest]
   }
   
-  extension [Self <: DeleteWorkspaceImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkspaceImageRequest] (val x: Self) extends AnyVal {
     
     inline def setImageId(value: WorkspaceImageId): Self = StObject.set(x, "ImageId", value.asInstanceOf[js.Any])
   }

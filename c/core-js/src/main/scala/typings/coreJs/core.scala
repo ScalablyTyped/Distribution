@@ -19,7 +19,8 @@ object core {
       __obj.asInstanceOf[Locale]
     }
     
-    extension [Self <: Locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locale] (val x: Self) extends AnyVal {
       
       inline def setMonths(value: java.lang.String): Self = StObject.set(x, "months", value.asInstanceOf[js.Any])
       

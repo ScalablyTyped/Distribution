@@ -233,7 +233,8 @@ object srcDrawerDotcanvasentryMod {
       __obj.asInstanceOf[CanvasEntry]
     }
     
-    extension [Self <: CanvasEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasEntry] (val x: Self) extends AnyVal {
       
       inline def setApplyCanvasTransforms(value: Boolean => Unit): Self = StObject.set(x, "applyCanvasTransforms", js.Any.fromFunction1(value))
       

@@ -29,7 +29,8 @@ object BundleMetadata2 {
     __obj.asInstanceOf[BundleMetadata2]
   }
   
-  extension [Self <: BundleMetadata2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleMetadata2] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: Timestamp2): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

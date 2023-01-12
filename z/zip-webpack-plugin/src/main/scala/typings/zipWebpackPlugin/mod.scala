@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: String | js.RegExp | (js.Array[String | js.RegExp])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[ZipPlugin]
     }
     
-    extension [Self <: ZipPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -186,7 +188,8 @@ object mod {
       __obj.asInstanceOf[fileOptions]
     }
     
-    extension [Self <: fileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: fileOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: Boolean): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object mod {
       __obj.asInstanceOf[zipOptions]
     }
     
-    extension [Self <: zipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: zipOptions] (val x: Self) extends AnyVal {
       
       inline def setForceZip64Format(value: Boolean): Self = StObject.set(x, "forceZip64Format", value.asInstanceOf[js.Any])
       

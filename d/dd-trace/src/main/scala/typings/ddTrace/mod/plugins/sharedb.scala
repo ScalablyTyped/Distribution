@@ -25,7 +25,8 @@ object sharedb {
     __obj.asInstanceOf[sharedb]
   }
   
-  extension [Self <: sharedb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sharedb] (val x: Self) extends AnyVal {
     
     inline def setHooks(value: Receive): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object abstractResolveLocaleMod {
       __obj.asInstanceOf[ResolveLocaleResult]
     }
     
-    extension [Self <: ResolveLocaleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveLocaleResult] (val x: Self) extends AnyVal {
       
       inline def setDataLocale(value: String): Self = StObject.set(x, "dataLocale", value.asInstanceOf[js.Any])
       

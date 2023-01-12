@@ -83,7 +83,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[BookmarkTreeNode]
       }
       
-      extension [Self <: BookmarkTreeNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BookmarkTreeNode] (val x: Self) extends AnyVal {
         
         inline def setChildren(value: js.Array[BookmarkTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
         
@@ -189,7 +190,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[CreateDetails]
       }
       
-      extension [Self <: CreateDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateDetails] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -232,7 +234,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[MoveDestinationType]
       }
       
-      extension [Self <: MoveDestinationType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MoveDestinationType] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -260,7 +263,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[OnChangedChangeInfoType]
       }
       
-      extension [Self <: OnChangedChangeInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnChangedChangeInfoType] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         
@@ -287,7 +291,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[OnMovedMoveInfoType]
       }
       
-      extension [Self <: OnMovedMoveInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnMovedMoveInfoType] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -314,7 +319,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[OnRemovedRemoveInfoType]
       }
       
-      extension [Self <: OnRemovedRemoveInfoType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnRemovedRemoveInfoType] (val x: Self) extends AnyVal {
         
         inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
         
@@ -354,7 +360,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[SearchQueryC2Type]
       }
       
-      extension [Self <: SearchQueryC2Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SearchQueryC2Type] (val x: Self) extends AnyVal {
         
         inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
         
@@ -509,7 +516,8 @@ object namespacesBookmarksMod {
         __obj.asInstanceOf[UpdateChangesType]
       }
       
-      extension [Self <: UpdateChangesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateChangesType] (val x: Self) extends AnyVal {
         
         inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
         

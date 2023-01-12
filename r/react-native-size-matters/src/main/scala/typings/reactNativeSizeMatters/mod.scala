@@ -100,7 +100,8 @@ object mod {
       __obj.asInstanceOf[StringifiedStyles]
     }
     
-    extension [Self <: StringifiedStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringifiedStyles] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: String | Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       

@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[SwigEmailTemplatesOptions]
     }
     
-    extension [Self <: SwigEmailTemplatesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwigEmailTemplatesOptions] (val x: Self) extends AnyVal {
       
       inline def setJuice(value: Any): Self = StObject.set(x, "juice", value.asInstanceOf[js.Any])
       

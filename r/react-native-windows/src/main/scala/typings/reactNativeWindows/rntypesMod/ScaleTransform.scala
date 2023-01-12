@@ -15,7 +15,8 @@ object ScaleTransform {
     __obj.asInstanceOf[ScaleTransform]
   }
   
-  extension [Self <: ScaleTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleTransform] (val x: Self) extends AnyVal {
     
     inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
   }

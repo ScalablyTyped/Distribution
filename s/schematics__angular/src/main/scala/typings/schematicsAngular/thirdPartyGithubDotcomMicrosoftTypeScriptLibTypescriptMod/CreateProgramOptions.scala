@@ -25,7 +25,8 @@ object CreateProgramOptions {
     __obj.asInstanceOf[CreateProgramOptions]
   }
   
-  extension [Self <: CreateProgramOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProgramOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigFileParsingDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "configFileParsingDiagnostics", value.asInstanceOf[js.Any])
     

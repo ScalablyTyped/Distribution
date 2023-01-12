@@ -25,7 +25,8 @@ object GoogleCloudDialogflowCxV3CompareVersionsRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3CompareVersionsRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3CompareVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3CompareVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

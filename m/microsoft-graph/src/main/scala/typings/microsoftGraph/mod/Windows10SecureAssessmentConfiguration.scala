@@ -36,7 +36,8 @@ object Windows10SecureAssessmentConfiguration {
     __obj.asInstanceOf[Windows10SecureAssessmentConfiguration]
   }
   
-  extension [Self <: Windows10SecureAssessmentConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows10SecureAssessmentConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowPrinting(value: Boolean): Self = StObject.set(x, "allowPrinting", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object buildBucketEndpointMiddlewareMod {
       __obj.asInstanceOf[BucketEndpointAwareInput]
     }
     
-    extension [Self <: BucketEndpointAwareInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketEndpointAwareInput] (val x: Self) extends AnyVal {
       
       inline def set$bucketEndpoint(value: Boolean): Self = StObject.set(x, "$bucketEndpoint", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object buildBucketEndpointMiddlewareMod {
       __obj.asInstanceOf[bucketEndpointMiddlewareConfiguration]
     }
     
-    extension [Self <: bucketEndpointMiddlewareConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: bucketEndpointMiddlewareConfiguration] (val x: Self) extends AnyVal {
       
       inline def setForcePathStyle(value: Boolean): Self = StObject.set(x, "forcePathStyle", value.asInstanceOf[js.Any])
       

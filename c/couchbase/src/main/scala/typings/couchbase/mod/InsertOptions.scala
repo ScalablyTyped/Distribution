@@ -28,7 +28,8 @@ object InsertOptions {
     __obj.asInstanceOf[InsertOptions]
   }
   
-  extension [Self <: InsertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertOptions] (val x: Self) extends AnyVal {
     
     inline def setExpiry(value: Double): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
     

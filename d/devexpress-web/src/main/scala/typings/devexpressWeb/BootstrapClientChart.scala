@@ -82,7 +82,8 @@ object BootstrapClientChart {
     __obj.asInstanceOf[BootstrapClientChart]
   }
   
-  extension [Self <: BootstrapClientChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapClientChart] (val x: Self) extends AnyVal {
     
     inline def setZoomEnd(value: ASPxClientEvent[BootstrapClientChartZoomEndEventHandler[BootstrapClientChart]]): Self = StObject.set(x, "ZoomEnd", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Responsedataundefined {
     __obj.asInstanceOf[Responsedataundefined]
   }
   
-  extension [Self <: Responsedataundefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responsedataundefined] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

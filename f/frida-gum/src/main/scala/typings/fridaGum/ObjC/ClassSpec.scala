@@ -41,7 +41,8 @@ object ClassSpec {
     __obj.asInstanceOf[ClassSpec[D, T, S]]
   }
   
-  extension [Self <: ClassSpec[?, ?, ?], D, T, S](x: Self & (ClassSpec[D, T, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassSpec[?, ?, ?], D, T, S] (val x: Self & (ClassSpec[D, T, S])) extends AnyVal {
     
     inline def setMethods(
       value: StringDictionary[

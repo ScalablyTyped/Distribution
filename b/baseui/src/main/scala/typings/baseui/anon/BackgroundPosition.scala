@@ -28,7 +28,8 @@ object BackgroundPosition {
     __obj.asInstanceOf[BackgroundPosition]
   }
   
-  extension [Self <: BackgroundPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundPosition] (val x: Self) extends AnyVal {
     
     inline def set$backgroundPosition(value: String): Self = StObject.set(x, "$backgroundPosition", value.asInstanceOf[js.Any])
     

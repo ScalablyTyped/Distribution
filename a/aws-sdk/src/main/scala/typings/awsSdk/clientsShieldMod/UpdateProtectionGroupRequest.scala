@@ -42,7 +42,8 @@ object UpdateProtectionGroupRequest {
     __obj.asInstanceOf[UpdateProtectionGroupRequest]
   }
   
-  extension [Self <: UpdateProtectionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateProtectionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregation(value: ProtectionGroupAggregation): Self = StObject.set(x, "Aggregation", value.asInstanceOf[js.Any])
     

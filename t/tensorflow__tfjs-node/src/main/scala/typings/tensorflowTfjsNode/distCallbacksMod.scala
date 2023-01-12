@@ -134,7 +134,8 @@ object distCallbacksMod {
       __obj.asInstanceOf[TensorBoardCallbackArgs]
     }
     
-    extension [Self <: TensorBoardCallbackArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorBoardCallbackArgs] (val x: Self) extends AnyVal {
       
       inline def setHistogramFreq(value: Double): Self = StObject.set(x, "histogramFreq", value.asInstanceOf[js.Any])
       

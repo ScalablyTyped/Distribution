@@ -69,7 +69,8 @@ object libInputItemPropsTypeMod {
       __obj.asInstanceOf[InputItemPropsType]
     }
     
-    extension [Self <: InputItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setClear(value: Boolean): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

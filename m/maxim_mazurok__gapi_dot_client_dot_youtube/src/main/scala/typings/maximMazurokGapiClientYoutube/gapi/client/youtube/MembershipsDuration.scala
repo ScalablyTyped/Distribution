@@ -19,7 +19,8 @@ object MembershipsDuration {
     __obj.asInstanceOf[MembershipsDuration]
   }
   
-  extension [Self <: MembershipsDuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MembershipsDuration] (val x: Self) extends AnyVal {
     
     inline def setMemberSince(value: String): Self = StObject.set(x, "memberSince", value.asInstanceOf[js.Any])
     

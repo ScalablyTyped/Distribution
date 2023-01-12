@@ -90,7 +90,8 @@ object buildFontDottypesMod {
       __obj.asInstanceOf[FontResource]
     }
     
-    extension [Self <: FontResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontResource] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object buildFontDottypesMod {
       __obj.asInstanceOf[UnloadFontOptions]
     }
     
-    extension [Self <: UnloadFontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnloadFontOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: FontDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

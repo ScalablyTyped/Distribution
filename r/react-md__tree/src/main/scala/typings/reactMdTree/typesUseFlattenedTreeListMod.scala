@@ -34,7 +34,8 @@ object typesUseFlattenedTreeListMod {
       __obj.asInstanceOf[ItemMetadata]
     }
     
-    extension [Self <: ItemMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemMetadata] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object typesUseFlattenedTreeListMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExpandedIds(value: ExpandedIds): Self = StObject.set(x, "expandedIds", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object typesUseFlattenedTreeListMod {
       __obj.asInstanceOf[SearchableTreeItem]
     }
     
-    extension [Self <: SearchableTreeItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchableTreeItem] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object typesUseFlattenedTreeListMod {
       __obj.asInstanceOf[TreeConfig]
     }
     
-    extension [Self <: TreeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeConfig] (val x: Self) extends AnyVal {
       
       inline def setGetItemValue(value: (/* item */ UnknownTreeItem, /* valueKey */ String) => String): Self = StObject.set(x, "getItemValue", js.Any.fromFunction2(value))
       

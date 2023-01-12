@@ -24,7 +24,8 @@ object LambdaEventSource {
     __obj.asInstanceOf[LambdaEventSource]
   }
   
-  extension [Self <: LambdaEventSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaEventSource] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: TopicString): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

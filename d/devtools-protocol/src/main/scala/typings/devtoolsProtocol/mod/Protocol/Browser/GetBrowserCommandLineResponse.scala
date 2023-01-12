@@ -18,7 +18,8 @@ object GetBrowserCommandLineResponse {
     __obj.asInstanceOf[GetBrowserCommandLineResponse]
   }
   
-  extension [Self <: GetBrowserCommandLineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBrowserCommandLineResponse] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[String]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

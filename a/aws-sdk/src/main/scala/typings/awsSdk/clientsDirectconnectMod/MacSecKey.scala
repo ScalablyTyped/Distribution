@@ -33,7 +33,8 @@ object MacSecKey {
     __obj.asInstanceOf[MacSecKey]
   }
   
-  extension [Self <: MacSecKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacSecKey] (val x: Self) extends AnyVal {
     
     inline def setCkn(value: Ckn): Self = StObject.set(x, "ckn", value.asInstanceOf[js.Any])
     

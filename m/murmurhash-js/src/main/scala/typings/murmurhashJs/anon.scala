@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Murmur2]
     }
     
-    extension [Self <: Murmur2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Murmur2] (val x: Self) extends AnyVal {
       
       inline def setMurmur2(value: (/* str */ String, /* seed */ js.UndefOr[Double]) => Double): Self = StObject.set(x, "murmur2", js.Any.fromFunction2(value))
       

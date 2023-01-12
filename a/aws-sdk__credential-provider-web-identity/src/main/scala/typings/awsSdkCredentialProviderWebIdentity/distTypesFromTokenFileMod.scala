@@ -52,7 +52,8 @@ object distTypesFromTokenFileMod {
       __obj.asInstanceOf[FromTokenFileInit]
     }
     
-    extension [Self <: FromTokenFileInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromTokenFileInit] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       

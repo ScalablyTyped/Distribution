@@ -44,7 +44,8 @@ object XReset {
     __obj.asInstanceOf[XReset]
   }
   
-  extension [Self <: XReset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReset] (val x: Self) extends AnyVal {
     
     inline def setAddResetListener(value: XResetListener => Unit): Self = StObject.set(x, "addResetListener", js.Any.fromFunction1(value))
     

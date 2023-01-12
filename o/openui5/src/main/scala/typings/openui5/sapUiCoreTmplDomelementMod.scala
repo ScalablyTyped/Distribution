@@ -405,7 +405,8 @@ object sapUiCoreTmplDomelementMod {
       __obj.asInstanceOf[DOMElementSettings]
     }
     
-    extension [Self <: DOMElementSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMElementSettings] (val x: Self) extends AnyVal {
       
       inline def setAttributes(
         value: js.Array[typings.openui5.sapUiCoreTmplDomattributeMod.default] | typings.openui5.sapUiCoreTmplDomattributeMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

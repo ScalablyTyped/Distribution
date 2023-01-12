@@ -618,7 +618,8 @@ object sapUiCommonsAccordionMod {
       __obj.asInstanceOf[AccordionSettings]
     }
     
-    extension [Self <: AccordionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionSettings] (val x: Self) extends AnyVal {
       
       inline def setOpenedSectionsId(value: String | PropertyBindingInfo): Self = StObject.set(x, "openedSectionsId", value.asInstanceOf[js.Any])
       

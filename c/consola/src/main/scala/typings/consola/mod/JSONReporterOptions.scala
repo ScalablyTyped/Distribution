@@ -16,7 +16,8 @@ object JSONReporterOptions {
     __obj.asInstanceOf[JSONReporterOptions]
   }
   
-  extension [Self <: JSONReporterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONReporterOptions] (val x: Self) extends AnyVal {
     
     inline def setStream(value: WritableStream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     

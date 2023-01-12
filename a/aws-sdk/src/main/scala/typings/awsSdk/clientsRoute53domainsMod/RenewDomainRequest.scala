@@ -28,7 +28,8 @@ object RenewDomainRequest {
     __obj.asInstanceOf[RenewDomainRequest]
   }
   
-  extension [Self <: RenewDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenewDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrentExpiryYear(value: CurrentExpiryYear): Self = StObject.set(x, "CurrentExpiryYear", value.asInstanceOf[js.Any])
     

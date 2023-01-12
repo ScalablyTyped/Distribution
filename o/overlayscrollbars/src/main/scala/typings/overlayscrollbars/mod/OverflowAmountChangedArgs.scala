@@ -17,7 +17,8 @@ object OverflowAmountChangedArgs {
     __obj.asInstanceOf[OverflowAmountChangedArgs]
   }
   
-  extension [Self <: OverflowAmountChangedArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverflowAmountChangedArgs] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

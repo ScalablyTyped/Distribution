@@ -19,7 +19,8 @@ object ThirdPartyVPNProperties {
     __obj.asInstanceOf[ThirdPartyVPNProperties]
   }
   
-  extension [Self <: ThirdPartyVPNProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyVPNProperties] (val x: Self) extends AnyVal {
     
     inline def setExtensionID(value: String): Self = StObject.set(x, "ExtensionID", value.asInstanceOf[js.Any])
     

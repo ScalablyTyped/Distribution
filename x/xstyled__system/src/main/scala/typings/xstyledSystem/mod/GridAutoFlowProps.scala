@@ -16,7 +16,8 @@ object GridAutoFlowProps {
     __obj.asInstanceOf[GridAutoFlowProps]
   }
   
-  extension [Self <: GridAutoFlowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAutoFlowProps] (val x: Self) extends AnyVal {
     
     inline def setGridAutoFlow(value: ResponsiveValue[GridAutoFlow]): Self = StObject.set(x, "gridAutoFlow", value.asInstanceOf[js.Any])
     

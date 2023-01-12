@@ -40,7 +40,8 @@ object IScriptSnapshot {
     __obj.asInstanceOf[IScriptSnapshot]
   }
   
-  extension [Self <: IScriptSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScriptSnapshot] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

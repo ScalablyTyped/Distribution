@@ -43,7 +43,8 @@ object PendingModifiedValues {
     __obj.asInstanceOf[PendingModifiedValues]
   }
   
-  extension [Self <: PendingModifiedValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingModifiedValues] (val x: Self) extends AnyVal {
     
     inline def setAuthTokenStatus(value: AuthTokenUpdateStatus): Self = StObject.set(x, "AuthTokenStatus", value.asInstanceOf[js.Any])
     

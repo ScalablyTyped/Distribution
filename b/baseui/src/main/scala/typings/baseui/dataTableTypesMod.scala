@@ -35,7 +35,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[BatchAction]
     }
     
-    extension [Self <: BatchAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchAction] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[ColumnOptions[Value, FilterParams]]
     }
     
-    extension [Self <: ColumnOptions[?, ?], Value, FilterParams](x: Self & (ColumnOptions[Value, FilterParams])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnOptions[?, ?], Value, FilterParams] (val x: Self & (ColumnOptions[Value, FilterParams])) extends AnyVal {
       
       inline def setBuildFilter(value: FilterParams => js.Function1[/* a */ Value, Boolean]): Self = StObject.set(x, "buildFilter", js.Any.fromFunction1(value))
       
@@ -125,7 +127,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[ControlRef]
     }
     
-    extension [Self <: ControlRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlRef] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: ImperativeMethods): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[DataTableProps]
     }
     
-    extension [Self <: DataTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableProps] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: Map[String, Description]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[ImperativeMethods]
     }
     
-    extension [Self <: ImperativeMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImperativeMethods] (val x: Self) extends AnyVal {
       
       inline def setClearSelection(value: () => Unit): Self = StObject.set(x, "clearSelection", js.Any.fromFunction0(value))
       
@@ -241,7 +246,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[Row]
     }
     
-    extension [Self <: Row](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -266,7 +272,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[RowAction]
     }
     
-    extension [Self <: RowAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowAction] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -305,7 +312,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[SharedColumnOptions[Value]]
     }
     
-    extension [Self <: SharedColumnOptions[?], Value](x: Self & SharedColumnOptions[Value]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedColumnOptions[?], Value] (val x: Self & SharedColumnOptions[Value]) extends AnyVal {
       
       inline def setCellBlockAlign(value: start | center | end_): Self = StObject.set(x, "cellBlockAlign", value.asInstanceOf[js.Any])
       
@@ -356,7 +364,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Filters => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -419,7 +428,8 @@ object dataTableTypesMod {
       __obj.asInstanceOf[StatefulDataTableProps]
     }
     
-    extension [Self <: StatefulDataTableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulDataTableProps] (val x: Self) extends AnyVal {
       
       inline def setBatchActions(value: js.Array[BatchAction]): Self = StObject.set(x, "batchActions", value.asInstanceOf[js.Any])
       

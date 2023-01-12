@@ -27,7 +27,8 @@ object VREyeParameters {
     __obj.asInstanceOf[VREyeParameters]
   }
   
-  extension [Self <: VREyeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VREyeParameters] (val x: Self) extends AnyVal {
     
     inline def setFieldOfView(value: VRFieldOfView): Self = StObject.set(x, "fieldOfView", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object ApiGatewayProxySummary {
     __obj.asInstanceOf[ApiGatewayProxySummary]
   }
   
-  extension [Self <: ApiGatewayProxySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiGatewayProxySummary] (val x: Self) extends AnyVal {
     
     inline def setApiGatewayId(value: ApiGatewayId): Self = StObject.set(x, "ApiGatewayId", value.asInstanceOf[js.Any])
     

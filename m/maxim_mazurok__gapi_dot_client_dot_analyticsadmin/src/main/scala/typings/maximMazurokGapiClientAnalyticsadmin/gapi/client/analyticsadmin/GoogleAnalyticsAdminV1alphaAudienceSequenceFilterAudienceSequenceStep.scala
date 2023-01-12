@@ -31,7 +31,8 @@ object GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceSequenceFilterAudienceSequenceStep] (val x: Self) extends AnyVal {
     
     inline def setConstraintDuration(value: String): Self = StObject.set(x, "constraintDuration", value.asInstanceOf[js.Any])
     

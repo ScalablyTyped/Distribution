@@ -53,7 +53,8 @@ object Datapoint {
     __obj.asInstanceOf[Datapoint]
   }
   
-  extension [Self <: Datapoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datapoint] (val x: Self) extends AnyVal {
     
     inline def setAverage(value: DatapointValue): Self = StObject.set(x, "Average", value.asInstanceOf[js.Any])
     

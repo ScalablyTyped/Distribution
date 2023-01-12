@@ -27,7 +27,8 @@ object SpreadProperty1 {
     __obj.asInstanceOf[SpreadProperty1]
   }
   
-  extension [Self <: SpreadProperty1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadProperty1] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

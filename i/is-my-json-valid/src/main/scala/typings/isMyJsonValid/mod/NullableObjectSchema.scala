@@ -25,7 +25,8 @@ object NullableObjectSchema {
     __obj.asInstanceOf[NullableObjectSchema[Properties, Required]]
   }
   
-  extension [Self <: NullableObjectSchema[?, ?], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */](x: Self & (NullableObjectSchema[Properties, Required])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableObjectSchema[?, ?], Properties /* <: Record[String, AnySchema] */, Required /* <: StringKeys[Properties] */] (val x: Self & (NullableObjectSchema[Properties, Required])) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

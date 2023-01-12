@@ -28,7 +28,8 @@ object PartialCollapseProps {
     __obj.asInstanceOf[PartialCollapseProps]
   }
   
-  extension [Self <: PartialCollapseProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCollapseProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

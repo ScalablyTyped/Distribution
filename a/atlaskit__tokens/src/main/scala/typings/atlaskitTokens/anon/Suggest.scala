@@ -25,7 +25,8 @@ object Suggest {
     __obj.asInstanceOf[Suggest[Group]]
   }
   
-  extension [Self <: Suggest[?], Group /* <: Groups */](x: Self & Suggest[Group]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Suggest[?], Group /* <: Groups */] (val x: Self & Suggest[Group]) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

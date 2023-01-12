@@ -31,7 +31,8 @@ object TextureOptimization {
     __obj.asInstanceOf[TextureOptimization]
   }
   
-  extension [Self <: TextureOptimization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextureOptimization] (val x: Self) extends AnyVal {
     
     inline def setMaximumSize(value: Double): Self = StObject.set(x, "maximumSize", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object IAccessControlListComponentKey {
     __obj.asInstanceOf[IAccessControlListComponentKey]
   }
   
-  extension [Self <: IAccessControlListComponentKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccessControlListComponentKey] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IAccessControlListComponentKey): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

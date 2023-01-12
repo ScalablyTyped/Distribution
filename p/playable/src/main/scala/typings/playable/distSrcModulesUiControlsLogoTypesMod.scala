@@ -23,7 +23,8 @@ object distSrcModulesUiControlsLogoTypesMod {
       __obj.asInstanceOf[ILogoAPI]
     }
     
-    extension [Self <: ILogoAPI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogoAPI] (val x: Self) extends AnyVal {
       
       inline def setSetLogo(value: /* src */ String => Unit): Self = StObject.set(x, "setLogo", js.Any.fromFunction1(value))
       
@@ -63,7 +64,8 @@ object distSrcModulesUiControlsLogoTypesMod {
       __obj.asInstanceOf[ILogoViewCallbacks]
     }
     
-    extension [Self <: ILogoViewCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogoViewCallbacks] (val x: Self) extends AnyVal {
       
       inline def setOnLogoClick(value: () => Unit): Self = StObject.set(x, "onLogoClick", js.Any.fromFunction0(value))
     }
@@ -93,7 +95,8 @@ object distSrcModulesUiControlsLogoTypesMod {
       __obj.asInstanceOf[ILogoViewConfig]
     }
     
-    extension [Self <: ILogoViewConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogoViewConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(value: ILogoViewCallbacks): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object distSrcModulesUiControlsLogoTypesMod {
       __obj.asInstanceOf[ILogoViewStyles]
     }
     
-    extension [Self <: ILogoViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILogoViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

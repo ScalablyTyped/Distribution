@@ -20,7 +20,8 @@ object AddUploadBufferInput {
     __obj.asInstanceOf[AddUploadBufferInput]
   }
   
-  extension [Self <: AddUploadBufferInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddUploadBufferInput] (val x: Self) extends AnyVal {
     
     inline def setDiskIds(value: DiskIds): Self = StObject.set(x, "DiskIds", value.asInstanceOf[js.Any])
     

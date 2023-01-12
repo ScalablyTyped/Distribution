@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: typings.i18nJs.mod.Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setScope(value: typings.i18nJs.mod.Scope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       

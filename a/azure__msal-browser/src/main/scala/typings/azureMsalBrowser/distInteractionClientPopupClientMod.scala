@@ -269,7 +269,8 @@ object distInteractionClientPopupClientMod {
       __obj.asInstanceOf[PopupParams]
     }
     
-    extension [Self <: PopupParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupParams] (val x: Self) extends AnyVal {
       
       inline def setPopup(value: Window): Self = StObject.set(x, "popup", value.asInstanceOf[js.Any])
       

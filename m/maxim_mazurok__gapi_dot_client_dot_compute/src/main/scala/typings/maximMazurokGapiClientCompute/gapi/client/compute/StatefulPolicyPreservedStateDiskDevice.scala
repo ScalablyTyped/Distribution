@@ -19,7 +19,8 @@ object StatefulPolicyPreservedStateDiskDevice {
     __obj.asInstanceOf[StatefulPolicyPreservedStateDiskDevice]
   }
   
-  extension [Self <: StatefulPolicyPreservedStateDiskDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulPolicyPreservedStateDiskDevice] (val x: Self) extends AnyVal {
     
     inline def setAutoDelete(value: String): Self = StObject.set(x, "autoDelete", value.asInstanceOf[js.Any])
     

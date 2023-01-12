@@ -21,7 +21,8 @@ object IBaseOutput {
     __obj.asInstanceOf[IBaseOutput]
   }
   
-  extension [Self <: IBaseOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseOutput] (val x: Self) extends AnyVal {
     
     inline def setOutput_type(value: String): Self = StObject.set(x, "output_type", value.asInstanceOf[js.Any])
   }

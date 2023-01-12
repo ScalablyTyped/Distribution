@@ -16,7 +16,8 @@ object Sorters {
     __obj.asInstanceOf[Sorters]
   }
   
-  extension [Self <: Sorters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sorters] (val x: Self) extends AnyVal {
     
     inline def setSorters(value: js.Array[Sorter]): Self = StObject.set(x, "sorters", value.asInstanceOf[js.Any])
     

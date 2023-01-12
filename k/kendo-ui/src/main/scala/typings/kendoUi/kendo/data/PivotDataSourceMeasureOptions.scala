@@ -17,7 +17,8 @@ object PivotDataSourceMeasureOptions {
     __obj.asInstanceOf[PivotDataSourceMeasureOptions]
   }
   
-  extension [Self <: PivotDataSourceMeasureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDataSourceMeasureOptions] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

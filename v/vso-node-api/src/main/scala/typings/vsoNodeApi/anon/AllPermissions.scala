@@ -32,7 +32,8 @@ object AllPermissions {
     __obj.asInstanceOf[AllPermissions]
   }
   
-  extension [Self <: AllPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllPermissions] (val x: Self) extends AnyVal {
     
     inline def setAllPermissions(value: scala.Double): Self = StObject.set(x, "allPermissions", value.asInstanceOf[js.Any])
     

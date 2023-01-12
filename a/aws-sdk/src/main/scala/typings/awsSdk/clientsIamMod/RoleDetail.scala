@@ -70,7 +70,8 @@ object RoleDetail {
     __obj.asInstanceOf[RoleDetail]
   }
   
-  extension [Self <: RoleDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoleDetail] (val x: Self) extends AnyVal {
     
     inline def setArn(value: arnType): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

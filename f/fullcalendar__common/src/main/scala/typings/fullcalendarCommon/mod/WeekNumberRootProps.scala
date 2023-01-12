@@ -30,7 +30,8 @@ object WeekNumberRootProps {
     __obj.asInstanceOf[WeekNumberRootProps]
   }
   
-  extension [Self <: WeekNumberRootProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeekNumberRootProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ /* rootElRef */ Any, /* classNames */ js.Array[String], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Ref<any> */ /* innerElRef */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ /* innerContent */ Any) => /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentChildren */ Any

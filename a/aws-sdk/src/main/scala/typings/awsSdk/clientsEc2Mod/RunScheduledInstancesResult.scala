@@ -18,7 +18,8 @@ object RunScheduledInstancesResult {
     __obj.asInstanceOf[RunScheduledInstancesResult]
   }
   
-  extension [Self <: RunScheduledInstancesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunScheduledInstancesResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceIdSet(value: InstanceIdSet): Self = StObject.set(x, "InstanceIdSet", value.asInstanceOf[js.Any])
     

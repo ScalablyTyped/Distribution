@@ -28,7 +28,8 @@ object GetApiMappingsRequest {
     __obj.asInstanceOf[GetApiMappingsRequest]
   }
   
-  extension [Self <: GetApiMappingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetApiMappingsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: string): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

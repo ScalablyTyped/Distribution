@@ -106,7 +106,8 @@ object dxSortableOptions {
     __obj.asInstanceOf[dxSortableOptions]
   }
   
-  extension [Self <: dxSortableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSortableOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowDropInsideItem(value: Boolean): Self = StObject.set(x, "allowDropInsideItem", value.asInstanceOf[js.Any])
     

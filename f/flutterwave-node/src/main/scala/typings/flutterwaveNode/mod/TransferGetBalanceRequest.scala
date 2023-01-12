@@ -15,7 +15,8 @@ object TransferGetBalanceRequest {
     __obj.asInstanceOf[TransferGetBalanceRequest]
   }
   
-  extension [Self <: TransferGetBalanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferGetBalanceRequest] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

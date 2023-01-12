@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2PathElement {
     __obj.asInstanceOf[GooglePrivacyDlpV2PathElement]
   }
   
-  extension [Self <: GooglePrivacyDlpV2PathElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2PathElement] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

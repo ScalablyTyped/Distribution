@@ -70,7 +70,8 @@ object XFixedHyperlink {
     __obj.asInstanceOf[XFixedHyperlink]
   }
   
-  extension [Self <: XFixedHyperlink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFixedHyperlink] (val x: Self) extends AnyVal {
     
     inline def setAddActionListener(value: XActionListener => Unit): Self = StObject.set(x, "addActionListener", js.Any.fromFunction1(value))
     

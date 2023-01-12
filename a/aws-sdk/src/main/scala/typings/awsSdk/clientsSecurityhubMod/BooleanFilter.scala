@@ -18,7 +18,8 @@ object BooleanFilter {
     __obj.asInstanceOf[BooleanFilter]
   }
   
-  extension [Self <: BooleanFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanFilter] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Boolean): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

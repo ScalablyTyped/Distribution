@@ -23,7 +23,8 @@ object PhononIndicatorComponent {
     __obj.asInstanceOf[PhononIndicatorComponent]
   }
   
-  extension [Self <: PhononIndicatorComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononIndicatorComponent] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

@@ -36,7 +36,8 @@ object TeamMemberCapacity {
     __obj.asInstanceOf[TeamMemberCapacity]
   }
   
-  extension [Self <: TeamMemberCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamMemberCapacity] (val x: Self) extends AnyVal {
     
     inline def setActivities(value: js.Array[Activity]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

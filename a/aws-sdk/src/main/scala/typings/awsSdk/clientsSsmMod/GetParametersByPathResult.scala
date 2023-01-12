@@ -23,7 +23,8 @@ object GetParametersByPathResult {
     __obj.asInstanceOf[GetParametersByPathResult]
   }
   
-  extension [Self <: GetParametersByPathResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersByPathResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

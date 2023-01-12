@@ -51,7 +51,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HTMLTransitionGroupProps[T]]
       }
       
-      extension [Self <: HTMLTransitionGroupProps[?], T](x: Self & HTMLTransitionGroupProps[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLTransitionGroupProps[?], T] (val x: Self & HTMLTransitionGroupProps[T]) extends AnyVal {
         
         inline def setChildFactory(value: /* child */ ReactElement => ReactElement): Self = StObject.set(x, "childFactory", js.Any.fromFunction1(value))
         

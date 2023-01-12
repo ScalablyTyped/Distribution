@@ -38,7 +38,8 @@ object AnalysisOptions {
     __obj.asInstanceOf[AnalysisOptions]
   }
   
-  extension [Self <: AnalysisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgorithmicStemming(value: AlgorithmicStemming): Self = StObject.set(x, "AlgorithmicStemming", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Minutes {
     __obj.asInstanceOf[Minutes]
   }
   
-  extension [Self <: Minutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Minutes] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

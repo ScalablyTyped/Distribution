@@ -26,7 +26,8 @@ object LayoutSize {
     __obj.asInstanceOf[LayoutSize]
   }
   
-  extension [Self <: LayoutSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutSize] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: Double): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

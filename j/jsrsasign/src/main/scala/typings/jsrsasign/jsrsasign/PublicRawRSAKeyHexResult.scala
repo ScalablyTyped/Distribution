@@ -19,7 +19,8 @@ object PublicRawRSAKeyHexResult {
     __obj.asInstanceOf[PublicRawRSAKeyHexResult]
   }
   
-  extension [Self <: PublicRawRSAKeyHexResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicRawRSAKeyHexResult] (val x: Self) extends AnyVal {
     
     inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

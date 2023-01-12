@@ -44,7 +44,8 @@ object IExecuteOptions {
     __obj.asInstanceOf[IExecuteOptions]
   }
   
-  extension [Self <: IExecuteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExecuteOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_stdin(value: Boolean): Self = StObject.set(x, "allow_stdin", value.asInstanceOf[js.Any])
     

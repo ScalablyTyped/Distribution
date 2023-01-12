@@ -45,7 +45,8 @@ object distDdBaseImplMod {
       __obj.asInstanceOf[HTMLElementExtendOpt[T]]
     }
     
-    extension [Self <: HTMLElementExtendOpt[?], T](x: Self & HTMLElementExtendOpt[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLElementExtendOpt[?], T] (val x: Self & HTMLElementExtendOpt[T]) extends AnyVal {
       
       inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
       

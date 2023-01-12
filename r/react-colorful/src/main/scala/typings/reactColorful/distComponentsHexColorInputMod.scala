@@ -31,7 +31,8 @@ object distComponentsHexColorInputMod {
       __obj.asInstanceOf[HexColorInputProps]
     }
     
-    extension [Self <: HexColorInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HexColorInputProps] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

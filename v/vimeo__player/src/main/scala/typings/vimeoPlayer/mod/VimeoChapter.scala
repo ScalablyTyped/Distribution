@@ -22,7 +22,8 @@ object VimeoChapter {
     __obj.asInstanceOf[VimeoChapter]
   }
   
-  extension [Self <: VimeoChapter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VimeoChapter] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

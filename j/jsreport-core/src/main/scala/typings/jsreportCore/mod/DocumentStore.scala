@@ -30,7 +30,8 @@ object DocumentStore {
     __obj.asInstanceOf[DocumentStore]
   }
   
-  extension [Self <: DocumentStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentStore] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: String => Collection): Self = StObject.set(x, "collection", js.Any.fromFunction1(value))
     

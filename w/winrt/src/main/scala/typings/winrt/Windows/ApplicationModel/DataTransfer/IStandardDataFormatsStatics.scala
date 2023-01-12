@@ -25,7 +25,8 @@ object IStandardDataFormatsStatics {
     __obj.asInstanceOf[IStandardDataFormatsStatics]
   }
   
-  extension [Self <: IStandardDataFormatsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStandardDataFormatsStatics] (val x: Self) extends AnyVal {
     
     inline def setBitmap(value: String): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     

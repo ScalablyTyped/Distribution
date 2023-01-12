@@ -33,7 +33,8 @@ object LayoutManipulation {
     __obj.asInstanceOf[LayoutManipulation]
   }
   
-  extension [Self <: LayoutManipulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutManipulation] (val x: Self) extends AnyVal {
     
     inline def setRun(value: () => LayoutManipulation): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
     

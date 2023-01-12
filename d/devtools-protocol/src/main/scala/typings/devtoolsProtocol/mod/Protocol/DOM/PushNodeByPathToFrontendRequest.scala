@@ -18,7 +18,8 @@ object PushNodeByPathToFrontendRequest {
     __obj.asInstanceOf[PushNodeByPathToFrontendRequest]
   }
   
-  extension [Self <: PushNodeByPathToFrontendRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNodeByPathToFrontendRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

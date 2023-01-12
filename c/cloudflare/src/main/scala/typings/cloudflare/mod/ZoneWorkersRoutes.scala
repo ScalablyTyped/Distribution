@@ -30,7 +30,8 @@ object ZoneWorkersRoutes {
     __obj.asInstanceOf[ZoneWorkersRoutes]
   }
   
-  extension [Self <: ZoneWorkersRoutes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneWorkersRoutes] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (String, Pattern) => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

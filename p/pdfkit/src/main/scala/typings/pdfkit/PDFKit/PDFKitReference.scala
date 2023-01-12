@@ -49,7 +49,8 @@ object PDFKitReference {
     __obj.asInstanceOf[PDFKitReference]
   }
   
-  extension [Self <: PDFKitReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFKitReference] (val x: Self) extends AnyVal {
     
     inline def setChunks(value: js.Array[Any]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
     

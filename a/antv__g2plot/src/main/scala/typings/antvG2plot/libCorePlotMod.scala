@@ -206,7 +206,8 @@ object libCorePlotMod {
       __obj.asInstanceOf[PickOptions]
     }
     
-    extension [Self <: PickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendPadding(value: js.Array[Double] | Double): Self = StObject.set(x, "appendPadding", value.asInstanceOf[js.Any])
       

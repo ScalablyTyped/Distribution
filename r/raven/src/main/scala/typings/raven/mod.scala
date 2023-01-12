@@ -228,7 +228,8 @@ object mod {
         __obj.asInstanceOf[HTTPTransportOptions]
       }
       
-      extension [Self <: HTTPTransportOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTTPTransportOptions] (val x: Self) extends AnyVal {
         
         inline def setAgent(value: Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
         
@@ -310,7 +311,8 @@ object mod {
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    extension [Self <: CaptureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
       
       inline def setExtra(value: StringDictionary[Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
       
@@ -381,7 +383,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoBreadcrumbs(value: Boolean | StringDictionary[Boolean]): Self = StObject.set(x, "autoBreadcrumbs", value.asInstanceOf[js.Any])
       
@@ -497,7 +500,8 @@ object mod {
       __obj.asInstanceOf[parsedDSN]
     }
     
-    extension [Self <: parsedDSN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: parsedDSN] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

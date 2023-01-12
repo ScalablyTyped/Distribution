@@ -295,7 +295,8 @@ object AwsRdsDbInstanceDetails {
     __obj.asInstanceOf[AwsRdsDbInstanceDetails]
   }
   
-  extension [Self <: AwsRdsDbInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

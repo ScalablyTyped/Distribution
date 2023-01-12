@@ -72,7 +72,8 @@ object ChunkedUploads {
     __obj.asInstanceOf[ChunkedUploads]
   }
   
-  extension [Self <: ChunkedUploads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkedUploads] (val x: Self) extends AnyVal {
     
     inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
     

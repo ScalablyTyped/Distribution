@@ -17,7 +17,8 @@ object SsmlBreakAttributes {
     __obj.asInstanceOf[SsmlBreakAttributes]
   }
   
-  extension [Self <: SsmlBreakAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlBreakAttributes] (val x: Self) extends AnyVal {
     
     inline def setStrength(value: SsmlBreakStrength): Self = StObject.set(x, "strength", value.asInstanceOf[js.Any])
     

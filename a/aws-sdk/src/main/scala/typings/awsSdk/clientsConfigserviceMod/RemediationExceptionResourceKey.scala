@@ -23,7 +23,8 @@ object RemediationExceptionResourceKey {
     __obj.asInstanceOf[RemediationExceptionResourceKey]
   }
   
-  extension [Self <: RemediationExceptionResourceKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemediationExceptionResourceKey] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: StringWithCharLimit1024): Self = StObject.set(x, "ResourceId", value.asInstanceOf[js.Any])
     

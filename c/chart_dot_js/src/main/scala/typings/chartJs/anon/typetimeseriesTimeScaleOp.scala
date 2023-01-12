@@ -179,7 +179,8 @@ object typetimeseriesTimeScaleOp {
     __obj.asInstanceOf[typetimeseriesTimeScaleOp]
   }
   
-  extension [Self <: typetimeseriesTimeScaleOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typetimeseriesTimeScaleOp] (val x: Self) extends AnyVal {
     
     inline def setAdapters(value: Date): Self = StObject.set(x, "adapters", value.asInstanceOf[js.Any])
     

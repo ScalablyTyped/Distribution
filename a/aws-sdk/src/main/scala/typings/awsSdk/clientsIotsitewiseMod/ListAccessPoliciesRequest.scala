@@ -48,7 +48,8 @@ object ListAccessPoliciesRequest {
     __obj.asInstanceOf[ListAccessPoliciesRequest]
   }
   
-  extension [Self <: ListAccessPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccessPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setIamArn(value: ARN): Self = StObject.set(x, "iamArn", value.asInstanceOf[js.Any])
     

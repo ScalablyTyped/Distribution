@@ -17,7 +17,8 @@ object FPSDropLevelCappingData {
     __obj.asInstanceOf[FPSDropLevelCappingData]
   }
   
-  extension [Self <: FPSDropLevelCappingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSDropLevelCappingData] (val x: Self) extends AnyVal {
     
     inline def setDroppedLevel(value: Double): Self = StObject.set(x, "droppedLevel", value.asInstanceOf[js.Any])
     

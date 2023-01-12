@@ -123,7 +123,8 @@ object replyMod {
       __obj.asInstanceOf[Reply]
     }
     
-    extension [Self <: Reply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reply] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: (/* name */ String, /* value */ String, /* opts */ js.UndefOr[CookieOptions]) => Reply): Self = StObject.set(x, "cookie", js.Any.fromFunction3(value))
       

@@ -194,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -235,7 +236,8 @@ object mod {
       __obj.asInstanceOf[ZipFileOptions]
     }
     
-    extension [Self <: ZipFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipFileOptions] (val x: Self) extends AnyVal {
       
       inline def setDecompress(value: Boolean): Self = StObject.set(x, "decompress", value.asInstanceOf[js.Any])
       

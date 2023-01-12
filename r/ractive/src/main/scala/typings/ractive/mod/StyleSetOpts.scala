@@ -19,7 +19,8 @@ object StyleSetOpts {
     __obj.asInstanceOf[StyleSetOpts]
   }
   
-  extension [Self <: StyleSetOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSetOpts] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Boolean): Self = StObject.set(x, "apply", value.asInstanceOf[js.Any])
     

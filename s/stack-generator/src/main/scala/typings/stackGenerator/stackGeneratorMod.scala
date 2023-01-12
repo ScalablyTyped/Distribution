@@ -32,7 +32,8 @@ object stackGeneratorMod {
       __obj.asInstanceOf[StackGeneratorOptions]
     }
     
-    extension [Self <: StackGeneratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackGeneratorOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxStackSize(value: Double): Self = StObject.set(x, "maxStackSize", value.asInstanceOf[js.Any])
     }

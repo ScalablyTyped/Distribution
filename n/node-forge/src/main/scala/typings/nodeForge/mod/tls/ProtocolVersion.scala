@@ -18,7 +18,8 @@ object ProtocolVersion {
     __obj.asInstanceOf[ProtocolVersion]
   }
   
-  extension [Self <: ProtocolVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtocolVersion] (val x: Self) extends AnyVal {
     
     inline def setMajor(value: Byte): Self = StObject.set(x, "major", value.asInstanceOf[js.Any])
     

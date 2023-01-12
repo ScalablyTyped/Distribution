@@ -16,7 +16,8 @@ object FlexProps {
     __obj.asInstanceOf[FlexProps[TLength]]
   }
   
-  extension [Self <: FlexProps[?], TLength](x: Self & FlexProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexProps[?], TLength] (val x: Self & FlexProps[TLength]) extends AnyVal {
     
     inline def setFlex(value: ResponsiveValue[Flex[TLength]]): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     

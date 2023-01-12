@@ -22,7 +22,8 @@ object Calorie {
     __obj.asInstanceOf[Calorie]
   }
   
-  extension [Self <: Calorie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calorie] (val x: Self) extends AnyVal {
     
     inline def setCalorie(value: Double): Self = StObject.set(x, "calorie", value.asInstanceOf[js.Any])
     

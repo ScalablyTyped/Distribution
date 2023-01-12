@@ -72,7 +72,8 @@ object distSrcModulesUiPreviewServicePreviewServiceMod {
       __obj.asInstanceOf[PreviewService]
     }
     
-    extension [Self <: PreviewService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviewService] (val x: Self) extends AnyVal {
       
       inline def set_engine(value: Any): Self = StObject.set(x, "_engine", value.asInstanceOf[js.Any])
       

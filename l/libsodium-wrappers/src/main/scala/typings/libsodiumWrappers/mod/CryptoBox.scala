@@ -17,7 +17,8 @@ object CryptoBox {
     __obj.asInstanceOf[CryptoBox]
   }
   
-  extension [Self <: CryptoBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CryptoBox] (val x: Self) extends AnyVal {
     
     inline def setCiphertext(value: js.typedarray.Uint8Array): Self = StObject.set(x, "ciphertext", value.asInstanceOf[js.Any])
     

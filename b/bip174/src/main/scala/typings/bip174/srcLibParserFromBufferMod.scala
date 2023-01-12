@@ -40,7 +40,8 @@ object srcLibParserFromBufferMod {
       __obj.asInstanceOf[PsbtFromKeyValsArg]
     }
     
-    extension [Self <: PsbtFromKeyValsArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PsbtFromKeyValsArg] (val x: Self) extends AnyVal {
       
       inline def setGlobalMapKeyVals(value: js.Array[KeyValue]): Self = StObject.set(x, "globalMapKeyVals", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object PartialListItemProps {
     __obj.asInstanceOf[PartialListItemProps]
   }
   
-  extension [Self <: PartialListItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialListItemProps] (val x: Self) extends AnyVal {
     
     inline def setActiveStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "activeStyle", value.asInstanceOf[js.Any])
     

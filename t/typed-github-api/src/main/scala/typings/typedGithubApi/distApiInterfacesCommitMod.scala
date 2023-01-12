@@ -36,7 +36,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[Commit]
     }
     
-    extension [Self <: Commit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[Bloburl]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[CommitRef]
     }
     
-    extension [Self <: CommitRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitRef] (val x: Self) extends AnyVal {
       
       inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     }
@@ -99,7 +101,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[CommitSummary]
     }
     
-    extension [Self <: CommitSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitSummary] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: UserSummary): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[GitActor]
     }
     
-    extension [Self <: GitActor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitActor] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[GitCommit]
     }
     
-    extension [Self <: GitCommit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitCommit] (val x: Self) extends AnyVal {
       
       inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
       
@@ -215,7 +220,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[GitCommitSummary]
     }
     
-    extension [Self <: GitCommitSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitCommitSummary] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: GitActor): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -248,7 +254,8 @@ object distApiInterfacesCommitMod {
       __obj.asInstanceOf[GitRef]
     }
     
-    extension [Self <: GitRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitRef] (val x: Self) extends AnyVal {
       
       inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
       

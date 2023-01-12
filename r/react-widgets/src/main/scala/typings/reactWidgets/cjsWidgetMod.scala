@@ -44,7 +44,8 @@ object cjsWidgetMod {
       __obj.asInstanceOf[WidgetProps]
     }
     
-    extension [Self <: WidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetProps] (val x: Self) extends AnyVal {
       
       inline def setAutofilling(value: Boolean): Self = StObject.set(x, "autofilling", value.asInstanceOf[js.Any])
       

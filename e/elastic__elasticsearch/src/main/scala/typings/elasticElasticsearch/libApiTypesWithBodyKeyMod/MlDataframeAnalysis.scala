@@ -51,7 +51,8 @@ object MlDataframeAnalysis {
     __obj.asInstanceOf[MlDataframeAnalysis]
   }
   
-  extension [Self <: MlDataframeAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
     

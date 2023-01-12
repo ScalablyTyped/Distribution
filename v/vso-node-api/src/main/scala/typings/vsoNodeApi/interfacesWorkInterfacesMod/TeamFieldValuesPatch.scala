@@ -17,7 +17,8 @@ object TeamFieldValuesPatch {
     __obj.asInstanceOf[TeamFieldValuesPatch]
   }
   
-  extension [Self <: TeamFieldValuesPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamFieldValuesPatch] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

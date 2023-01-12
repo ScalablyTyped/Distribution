@@ -23,7 +23,8 @@ object DescribeRetentionConfigurationsRequest {
     __obj.asInstanceOf[DescribeRetentionConfigurationsRequest]
   }
   
-  extension [Self <: DescribeRetentionConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRetentionConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

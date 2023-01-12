@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[DynamicTypeOptions]
     }
     
-    extension [Self <: DynamicTypeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicTypeOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[ErrorObject]
     }
     
-    extension [Self <: ErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -160,7 +162,8 @@ object mod {
       __obj.asInstanceOf[JSONAPIDocument]
     }
     
-    extension [Self <: JSONAPIDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONAPIDocument] (val x: Self) extends AnyVal {
       
       inline def setData(value: ResourceObject[Any] | js.Array[ResourceObject[Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -349,7 +352,8 @@ object mod {
       __obj.asInstanceOf[JsonApiObject]
     }
     
-    extension [Self <: JsonApiObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonApiObject] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }
@@ -368,7 +372,8 @@ object mod {
       __obj.asInstanceOf[LinkObject]
     }
     
-    extension [Self <: LinkObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkObject] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -394,7 +399,8 @@ object mod {
       __obj.asInstanceOf[Linkage]
     }
     
-    extension [Self <: Linkage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Linkage] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -421,7 +427,8 @@ object mod {
       __obj.asInstanceOf[LinksObject]
     }
     
-    extension [Self <: LinksObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinksObject] (val x: Self) extends AnyVal {
       
       inline def setRelated(value: LinkObject | LinksCallback | String): Self = StObject.set(x, "related", value.asInstanceOf[js.Any])
       
@@ -486,7 +493,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfterDeserialize(value: /* data */ Any => Any): Self = StObject.set(x, "afterDeserialize", js.Any.fromFunction1(value))
       
@@ -616,7 +624,8 @@ object mod {
       __obj.asInstanceOf[RelationshipOptions]
     }
     
-    extension [Self <: RelationshipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelationshipOptions] (val x: Self) extends AnyVal {
       
       inline def setAlternativeKey(value: String): Self = StObject.set(x, "alternativeKey", value.asInstanceOf[js.Any])
       
@@ -668,7 +677,8 @@ object mod {
       __obj.asInstanceOf[ResourceObject[T]]
     }
     
-    extension [Self <: ResourceObject[?], T](x: Self & ResourceObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceObject[?], T] (val x: Self & ResourceObject[T]) extends AnyVal {
       
       inline def setAttributes(value: Omit[T, id]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

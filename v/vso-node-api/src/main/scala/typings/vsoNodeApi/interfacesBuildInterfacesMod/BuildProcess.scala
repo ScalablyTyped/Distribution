@@ -19,7 +19,8 @@ object BuildProcess {
     __obj.asInstanceOf[BuildProcess]
   }
   
-  extension [Self <: BuildProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildProcess] (val x: Self) extends AnyVal {
     
     inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

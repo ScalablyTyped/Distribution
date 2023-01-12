@@ -23,7 +23,8 @@ object ListStreamConsumersOutput {
     __obj.asInstanceOf[ListStreamConsumersOutput]
   }
   
-  extension [Self <: ListStreamConsumersOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStreamConsumersOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumers(value: ConsumerList): Self = StObject.set(x, "Consumers", value.asInstanceOf[js.Any])
     

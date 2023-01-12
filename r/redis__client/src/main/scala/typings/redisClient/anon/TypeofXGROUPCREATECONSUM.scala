@@ -25,7 +25,8 @@ object TypeofXGROUPCREATECONSUM {
     __obj.asInstanceOf[TypeofXGROUPCREATECONSUM]
   }
   
-  extension [Self <: TypeofXGROUPCREATECONSUM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofXGROUPCREATECONSUM] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 2 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

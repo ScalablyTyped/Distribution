@@ -17,7 +17,8 @@ object TestDepGraphResponse {
     __obj.asInstanceOf[TestDepGraphResponse]
   }
   
-  extension [Self <: TestDepGraphResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestDepGraphResponse] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: TestDepGraphMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

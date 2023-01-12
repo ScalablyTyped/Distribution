@@ -24,7 +24,8 @@ object CssStylesheetAST {
     __obj.asInstanceOf[CssStylesheetAST]
   }
   
-  extension [Self <: CssStylesheetAST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssStylesheetAST] (val x: Self) extends AnyVal {
     
     inline def setStylesheet(value: ParsingErrors): Self = StObject.set(x, "stylesheet", value.asInstanceOf[js.Any])
     

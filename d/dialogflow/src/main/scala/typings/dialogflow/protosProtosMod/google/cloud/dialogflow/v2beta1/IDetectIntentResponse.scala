@@ -33,7 +33,8 @@ object IDetectIntentResponse {
     __obj.asInstanceOf[IDetectIntentResponse]
   }
   
-  extension [Self <: IDetectIntentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetectIntentResponse] (val x: Self) extends AnyVal {
     
     inline def setAlternativeQueryResults(value: js.Array[IQueryResult]): Self = StObject.set(x, "alternativeQueryResults", value.asInstanceOf[js.Any])
     

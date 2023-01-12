@@ -17,7 +17,8 @@ object CreateErrorOptions {
     __obj.asInstanceOf[CreateErrorOptions]
   }
   
-  extension [Self <: CreateErrorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateErrorOptions] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Boolean): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

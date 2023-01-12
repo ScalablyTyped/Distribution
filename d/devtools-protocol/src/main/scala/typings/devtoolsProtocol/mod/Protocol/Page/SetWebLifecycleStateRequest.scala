@@ -20,7 +20,8 @@ object SetWebLifecycleStateRequest {
     __obj.asInstanceOf[SetWebLifecycleStateRequest]
   }
   
-  extension [Self <: SetWebLifecycleStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetWebLifecycleStateRequest] (val x: Self) extends AnyVal {
     
     inline def setState(value: frozen | active): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

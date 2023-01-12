@@ -109,7 +109,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderProps[ValueType]]
     }
     
-    extension [Self <: SliderProps[?], ValueType](x: Self & SliderProps[ValueType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps[?], ValueType] (val x: Self & SliderProps[ValueType]) extends AnyVal {
       
       inline def setActiveDotStyle(value: CSSProperties | (js.Function1[/* dotValue */ Double, CSSProperties])): Self = StObject.set(x, "activeDotStyle", value.asInstanceOf[js.Any])
       
@@ -296,7 +297,8 @@ object libSliderMod extends Shortcut {
       __obj.asInstanceOf[SliderRef]
     }
     
-    extension [Self <: SliderRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

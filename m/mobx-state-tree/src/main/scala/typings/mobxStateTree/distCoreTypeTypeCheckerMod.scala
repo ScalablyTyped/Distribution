@@ -32,7 +32,8 @@ object distCoreTypeTypeCheckerMod {
       __obj.asInstanceOf[IValidationContextEntry]
     }
     
-    extension [Self <: IValidationContextEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidationContextEntry] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distCoreTypeTypeCheckerMod {
       __obj.asInstanceOf[IValidationError]
     }
     
-    extension [Self <: IValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidationError] (val x: Self) extends AnyVal {
       
       inline def setContext(value: IValidationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

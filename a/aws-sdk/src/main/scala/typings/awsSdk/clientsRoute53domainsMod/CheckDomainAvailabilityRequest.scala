@@ -23,7 +23,8 @@ object CheckDomainAvailabilityRequest {
     __obj.asInstanceOf[CheckDomainAvailabilityRequest]
   }
   
-  extension [Self <: CheckDomainAvailabilityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckDomainAvailabilityRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

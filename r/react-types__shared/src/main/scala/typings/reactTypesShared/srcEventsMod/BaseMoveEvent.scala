@@ -28,7 +28,8 @@ object BaseMoveEvent {
     __obj.asInstanceOf[BaseMoveEvent]
   }
   
-  extension [Self <: BaseMoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMoveEvent] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

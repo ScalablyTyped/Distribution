@@ -23,7 +23,8 @@ object ResponseHeadersPolicyFrameOptions {
     __obj.asInstanceOf[ResponseHeadersPolicyFrameOptions]
   }
   
-  extension [Self <: ResponseHeadersPolicyFrameOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseHeadersPolicyFrameOptions] (val x: Self) extends AnyVal {
     
     inline def setFrameOption(value: FrameOptionsList): Self = StObject.set(x, "FrameOption", value.asInstanceOf[js.Any])
     

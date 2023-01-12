@@ -30,7 +30,8 @@ object IBitmapDecoder {
     __obj.asInstanceOf[IBitmapDecoder]
   }
   
-  extension [Self <: IBitmapDecoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBitmapDecoder] (val x: Self) extends AnyVal {
     
     inline def setBitmapContainerProperties(value: BitmapPropertiesView): Self = StObject.set(x, "bitmapContainerProperties", value.asInstanceOf[js.Any])
     

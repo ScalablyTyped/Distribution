@@ -31,7 +31,8 @@ object OmitPermissionSetusergrou {
     __obj.asInstanceOf[OmitPermissionSetusergrou]
   }
   
-  extension [Self <: OmitPermissionSetusergrou](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitPermissionSetusergrou] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ObjectOperationPermissions): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

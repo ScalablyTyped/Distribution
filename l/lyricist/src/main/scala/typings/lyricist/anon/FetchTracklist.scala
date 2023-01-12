@@ -18,7 +18,8 @@ object FetchTracklist {
     __obj.asInstanceOf[FetchTracklist]
   }
   
-  extension [Self <: FetchTracklist](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchTracklist] (val x: Self) extends AnyVal {
     
     inline def setFetchTracklist(value: Boolean): Self = StObject.set(x, "fetchTracklist", value.asInstanceOf[js.Any])
     

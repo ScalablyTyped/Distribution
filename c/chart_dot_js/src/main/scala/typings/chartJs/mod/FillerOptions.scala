@@ -19,7 +19,8 @@ object FillerOptions {
     __obj.asInstanceOf[FillerOptions]
   }
   
-  extension [Self <: FillerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillerOptions] (val x: Self) extends AnyVal {
     
     inline def setDrawTime(value: beforeDatasetDraw | beforeDatasetsDraw): Self = StObject.set(x, "drawTime", value.asInstanceOf[js.Any])
     

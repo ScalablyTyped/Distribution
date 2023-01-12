@@ -15,7 +15,8 @@ object AuthorizeSnapshotAccessResult {
     __obj.asInstanceOf[AuthorizeSnapshotAccessResult]
   }
   
-  extension [Self <: AuthorizeSnapshotAccessResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeSnapshotAccessResult] (val x: Self) extends AnyVal {
     
     inline def setSnapshot(value: Snapshot): Self = StObject.set(x, "Snapshot", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SourceErrorProps {
     __obj.asInstanceOf[SourceErrorProps]
   }
   
-  extension [Self <: SourceErrorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceErrorProps] (val x: Self) extends AnyVal {
     
     inline def setError(value: SourceError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

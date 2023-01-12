@@ -40,7 +40,8 @@ object AlignVerticalBackUVs {
     __obj.asInstanceOf[AlignVerticalBackUVs]
   }
   
-  extension [Self <: AlignVerticalBackUVs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignVerticalBackUVs] (val x: Self) extends AnyVal {
     
     inline def setAlignHorizontal(value: Double): Self = StObject.set(x, "alignHorizontal", value.asInstanceOf[js.Any])
     

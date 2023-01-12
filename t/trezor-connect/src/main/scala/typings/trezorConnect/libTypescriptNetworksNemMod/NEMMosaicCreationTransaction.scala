@@ -34,7 +34,8 @@ object NEMMosaicCreationTransaction {
     __obj.asInstanceOf[NEMMosaicCreationTransaction]
   }
   
-  extension [Self <: NEMMosaicCreationTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMMosaicCreationTransaction] (val x: Self) extends AnyVal {
     
     inline def setCreationFee(value: Double): Self = StObject.set(x, "creationFee", value.asInstanceOf[js.Any])
     

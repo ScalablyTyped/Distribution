@@ -19,7 +19,8 @@ object DefaultClickThroughEventTagProperties {
     __obj.asInstanceOf[DefaultClickThroughEventTagProperties]
   }
   
-  extension [Self <: DefaultClickThroughEventTagProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultClickThroughEventTagProperties] (val x: Self) extends AnyVal {
     
     inline def setDefaultClickThroughEventTagId(value: String): Self = StObject.set(x, "defaultClickThroughEventTagId", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object buildTypesSchemaMod {
       __obj.asInstanceOf[IJsonSchema]
     }
     
-    extension [Self <: IJsonSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonSchema] (val x: Self) extends AnyVal {
       
       inline def setNames(value: StringDictionary[StringDictionary[IJsonSchemaItem]]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object buildTypesSchemaMod {
       __obj.asInstanceOf[IJsonSchemaItem]
     }
     
-    extension [Self <: IJsonSchemaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonSchemaItem] (val x: Self) extends AnyVal {
       
       inline def setConverter(value: IJsonConverter[Any, Any]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object buildTypesSchemaMod {
       __obj.asInstanceOf[IValidationEvent]
     }
     
-    extension [Self <: IValidationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidationEvent] (val x: Self) extends AnyVal {
       
       inline def setPropName(value: String): Self = StObject.set(x, "propName", value.asInstanceOf[js.Any])
       

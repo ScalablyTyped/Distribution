@@ -675,7 +675,8 @@ object PropsHTMLTemplateElementc {
     __obj.asInstanceOf[PropsHTMLTemplateElementc]
   }
   
-  extension [Self <: PropsHTMLTemplateElementc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLTemplateElementc] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

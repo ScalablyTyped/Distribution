@@ -73,7 +73,8 @@ object ImplementationGuidePage {
     __obj.asInstanceOf[ImplementationGuidePage]
   }
   
-  extension [Self <: ImplementationGuidePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuidePage] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

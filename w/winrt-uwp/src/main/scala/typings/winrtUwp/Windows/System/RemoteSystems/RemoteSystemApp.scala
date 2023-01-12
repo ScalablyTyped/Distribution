@@ -36,7 +36,8 @@ object RemoteSystemApp {
     __obj.asInstanceOf[RemoteSystemApp]
   }
   
-  extension [Self <: RemoteSystemApp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteSystemApp] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: IMapView[String, String]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
     

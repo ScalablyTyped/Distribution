@@ -33,7 +33,8 @@ object DescribeDashboardRequest {
     __obj.asInstanceOf[DescribeDashboardRequest]
   }
   
-  extension [Self <: DescribeDashboardRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDashboardRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasName(value: AliasName): Self = StObject.set(x, "AliasName", value.asInstanceOf[js.Any])
     

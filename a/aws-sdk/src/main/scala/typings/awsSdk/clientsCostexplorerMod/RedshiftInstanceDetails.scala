@@ -38,7 +38,8 @@ object RedshiftInstanceDetails {
     __obj.asInstanceOf[RedshiftInstanceDetails]
   }
   
-  extension [Self <: RedshiftInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setCurrentGeneration(value: GenericBoolean): Self = StObject.set(x, "CurrentGeneration", value.asInstanceOf[js.Any])
     

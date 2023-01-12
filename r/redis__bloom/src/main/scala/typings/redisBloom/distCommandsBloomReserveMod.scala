@@ -34,7 +34,8 @@ object distCommandsBloomReserveMod {
       __obj.asInstanceOf[ReserveOptions]
     }
     
-    extension [Self <: ReserveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReserveOptions] (val x: Self) extends AnyVal {
       
       inline def setEXPANSION(value: Double): Self = StObject.set(x, "EXPANSION", value.asInstanceOf[js.Any])
       

@@ -99,7 +99,8 @@ object libCommonSemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensMiddleware]
     }
     
-    extension [Self <: SemanticTokensMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDocumentRangeSemanticTokens(
         value: js.ThisFunction4[
@@ -156,7 +157,8 @@ object libCommonSemanticTokensMod {
       __obj.asInstanceOf[SemanticTokensProviderShape]
     }
     
-    extension [Self <: SemanticTokensProviderShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SemanticTokensProviderShape] (val x: Self) extends AnyVal {
       
       inline def setFull(value: DocumentSemanticTokensProvider): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
       

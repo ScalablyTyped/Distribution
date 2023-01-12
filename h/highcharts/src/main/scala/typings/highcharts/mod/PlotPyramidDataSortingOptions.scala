@@ -31,7 +31,8 @@ object PlotPyramidDataSortingOptions {
     __obj.asInstanceOf[PlotPyramidDataSortingOptions]
   }
   
-  extension [Self <: PlotPyramidDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPyramidDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PostCustomFieldWithNumericParams {
     __obj.asInstanceOf[PostCustomFieldWithNumericParams]
   }
   
-  extension [Self <: PostCustomFieldWithNumericParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCustomFieldWithNumericParams] (val x: Self) extends AnyVal {
     
     inline def setInitialValue(value: Double): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     

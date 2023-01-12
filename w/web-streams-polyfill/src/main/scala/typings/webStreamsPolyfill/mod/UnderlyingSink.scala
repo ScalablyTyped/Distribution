@@ -56,7 +56,8 @@ object UnderlyingSink {
     __obj.asInstanceOf[UnderlyingSink[W]]
   }
   
-  extension [Self <: UnderlyingSink[?], W](x: Self & UnderlyingSink[W]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnderlyingSink[?], W] (val x: Self & UnderlyingSink[W]) extends AnyVal {
     
     inline def setAbort(value: /* reason */ Any => Unit | PromiseLike[Unit]): Self = StObject.set(x, "abort", js.Any.fromFunction1(value))
     

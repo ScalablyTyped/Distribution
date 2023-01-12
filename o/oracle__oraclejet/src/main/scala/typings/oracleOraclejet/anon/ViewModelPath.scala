@@ -24,7 +24,8 @@ object ViewModelPath {
     __obj.asInstanceOf[ViewModelPath]
   }
   
-  extension [Self <: ViewModelPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewModelPath] (val x: Self) extends AnyVal {
     
     inline def setRequire(
       value: (js.Function1[/* module */ String, Any]) | (js.Function3[

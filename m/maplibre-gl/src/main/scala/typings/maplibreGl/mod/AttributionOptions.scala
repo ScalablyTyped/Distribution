@@ -17,7 +17,8 @@ object AttributionOptions {
     __obj.asInstanceOf[AttributionOptions]
   }
   
-  extension [Self <: AttributionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributionOptions] (val x: Self) extends AnyVal {
     
     inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
     

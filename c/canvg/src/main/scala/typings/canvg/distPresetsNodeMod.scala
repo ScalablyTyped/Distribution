@@ -35,7 +35,8 @@ object distPresetsNodeMod {
       __obj.asInstanceOf[ICanvas]
     }
     
-    extension [Self <: ICanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICanvas] (val x: Self) extends AnyVal {
       
       inline def setCreateCanvas(value: (Double, Double) => Any): Self = StObject.set(x, "createCanvas", js.Any.fromFunction2(value))
       
@@ -77,7 +78,8 @@ object distPresetsNodeMod {
       __obj.asInstanceOf[IConfig]
     }
     
-    extension [Self <: IConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConfig] (val x: Self) extends AnyVal {
       
       inline def setCanvas(value: ICanvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
       

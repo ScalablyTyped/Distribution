@@ -21,7 +21,8 @@ object IPositionCoordinates {
     __obj.asInstanceOf[IPositionCoordinates]
   }
   
-  extension [Self <: IPositionCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionCoordinates] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

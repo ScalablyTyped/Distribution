@@ -41,7 +41,8 @@ object buildFromSharedConfigFilesMod {
       __obj.asInstanceOf[SharedConfigInit]
     }
     
-    extension [Self <: SharedConfigInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedConfigInit] (val x: Self) extends AnyVal {
       
       inline def setLoadedConfig(value: js.Promise[SharedConfigFiles]): Self = StObject.set(x, "loadedConfig", value.asInstanceOf[js.Any])
       

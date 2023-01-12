@@ -220,7 +220,8 @@ object PlaceResult {
     __obj.asInstanceOf[PlaceResult]
   }
   
-  extension [Self <: PlaceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceResult] (val x: Self) extends AnyVal {
     
     inline def setAddress_components(value: js.Array[GeocoderAddressComponent]): Self = StObject.set(x, "address_components", value.asInstanceOf[js.Any])
     

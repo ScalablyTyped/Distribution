@@ -28,7 +28,8 @@ object StopGyroscopeOptions {
     __obj.asInstanceOf[StopGyroscopeOptions]
   }
   
-  extension [Self <: StopGyroscopeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopGyroscopeOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object BatchSegmentJobInput {
     __obj.asInstanceOf[BatchSegmentJobInput]
   }
   
-  extension [Self <: BatchSegmentJobInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchSegmentJobInput] (val x: Self) extends AnyVal {
     
     inline def setS3DataSource(value: S3DataConfig): Self = StObject.set(x, "s3DataSource", value.asInstanceOf[js.Any])
   }

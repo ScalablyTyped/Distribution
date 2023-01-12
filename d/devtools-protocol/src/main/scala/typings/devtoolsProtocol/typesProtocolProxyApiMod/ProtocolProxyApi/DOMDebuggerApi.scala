@@ -85,7 +85,8 @@ object DOMDebuggerApi {
     __obj.asInstanceOf[DOMDebuggerApi]
   }
   
-  extension [Self <: DOMDebuggerApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMDebuggerApi] (val x: Self) extends AnyVal {
     
     inline def setGetEventListeners(value: GetEventListenersRequest => js.Promise[GetEventListenersResponse]): Self = StObject.set(x, "getEventListeners", js.Any.fromFunction1(value))
     

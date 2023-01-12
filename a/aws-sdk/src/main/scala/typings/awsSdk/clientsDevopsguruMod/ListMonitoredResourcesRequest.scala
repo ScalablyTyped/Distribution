@@ -28,7 +28,8 @@ object ListMonitoredResourcesRequest {
     __obj.asInstanceOf[ListMonitoredResourcesRequest]
   }
   
-  extension [Self <: ListMonitoredResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMonitoredResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: ListMonitoredResourcesFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object distSrcPmpMod {
       __obj.asInstanceOf[PortMappingOptions]
     }
     
-    extension [Self <: PortMappingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortMappingOptions] (val x: Self) extends AnyVal {
       
       inline def setExternal(value: Boolean): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
       

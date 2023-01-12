@@ -23,7 +23,8 @@ object UpdateExpirationForHITRequest {
     __obj.asInstanceOf[UpdateExpirationForHITRequest]
   }
   
-  extension [Self <: UpdateExpirationForHITRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateExpirationForHITRequest] (val x: Self) extends AnyVal {
     
     inline def setExpireAt(value: js.Date): Self = StObject.set(x, "ExpireAt", value.asInstanceOf[js.Any])
     

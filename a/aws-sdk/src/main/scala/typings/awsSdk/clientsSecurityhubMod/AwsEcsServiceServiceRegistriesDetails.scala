@@ -33,7 +33,8 @@ object AwsEcsServiceServiceRegistriesDetails {
     __obj.asInstanceOf[AwsEcsServiceServiceRegistriesDetails]
   }
   
-  extension [Self <: AwsEcsServiceServiceRegistriesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceServiceRegistriesDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: NonEmptyString): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     

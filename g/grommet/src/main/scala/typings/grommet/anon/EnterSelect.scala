@@ -21,7 +21,8 @@ object EnterSelect {
     __obj.asInstanceOf[EnterSelect]
   }
   
-  extension [Self <: EnterSelect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterSelect] (val x: Self) extends AnyVal {
     
     inline def setEnterSelect(value: String): Self = StObject.set(x, "enterSelect", value.asInstanceOf[js.Any])
     

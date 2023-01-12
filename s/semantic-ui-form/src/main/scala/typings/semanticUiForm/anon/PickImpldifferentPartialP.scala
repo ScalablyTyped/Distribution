@@ -69,7 +69,8 @@ object PickImpldifferentPartialP {
     __obj.asInstanceOf[PickImpldifferentPartialP]
   }
   
-  extension [Self <: PickImpldifferentPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldifferentPartialP] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: String): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CreateGenerateIdOptions {
     __obj.asInstanceOf[CreateGenerateIdOptions]
   }
   
-  extension [Self <: CreateGenerateIdOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGenerateIdOptions] (val x: Self) extends AnyVal {
     
     inline def setMinify(value: Boolean): Self = StObject.set(x, "minify", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IParameterizedQuery {
     __obj.asInstanceOf[IParameterizedQuery]
   }
   
-  extension [Self <: IParameterizedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParameterizedQuery] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: js.Array[IQueryParam]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

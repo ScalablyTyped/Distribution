@@ -25,7 +25,8 @@ object CommonCallbackOptions {
     __obj.asInstanceOf[CommonCallbackOptions]
   }
   
-  extension [Self <: CommonCallbackOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonCallbackOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

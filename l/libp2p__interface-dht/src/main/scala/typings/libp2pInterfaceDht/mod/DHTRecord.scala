@@ -19,7 +19,8 @@ object DHTRecord {
     __obj.asInstanceOf[DHTRecord]
   }
   
-  extension [Self <: DHTRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DHTRecord] (val x: Self) extends AnyVal {
     
     inline def setKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

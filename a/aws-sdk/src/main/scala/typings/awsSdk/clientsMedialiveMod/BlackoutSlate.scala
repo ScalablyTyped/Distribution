@@ -38,7 +38,8 @@ object BlackoutSlate {
     __obj.asInstanceOf[BlackoutSlate]
   }
   
-  extension [Self <: BlackoutSlate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlackoutSlate] (val x: Self) extends AnyVal {
     
     inline def setBlackoutSlateImage(value: InputLocation): Self = StObject.set(x, "BlackoutSlateImage", value.asInstanceOf[js.Any])
     

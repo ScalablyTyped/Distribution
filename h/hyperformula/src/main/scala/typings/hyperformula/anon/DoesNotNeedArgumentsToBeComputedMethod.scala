@@ -26,7 +26,8 @@ object DoesNotNeedArgumentsToBeComputedMethod {
     __obj.asInstanceOf[DoesNotNeedArgumentsToBeComputedMethod]
   }
   
-  extension [Self <: DoesNotNeedArgumentsToBeComputedMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoesNotNeedArgumentsToBeComputedMethod] (val x: Self) extends AnyVal {
     
     inline def setDoesNotNeedArgumentsToBeComputed(value: Boolean): Self = StObject.set(x, "doesNotNeedArgumentsToBeComputed", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object SetScriptSourceReturnType {
     __obj.asInstanceOf[SetScriptSourceReturnType]
   }
   
-  extension [Self <: SetScriptSourceReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetScriptSourceReturnType] (val x: Self) extends AnyVal {
     
     inline def setAsyncStackTrace(value: StackTrace): Self = StObject.set(x, "asyncStackTrace", value.asInstanceOf[js.Any])
     

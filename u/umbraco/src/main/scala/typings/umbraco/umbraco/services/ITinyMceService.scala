@@ -89,7 +89,8 @@ object ITinyMceService {
     __obj.asInstanceOf[ITinyMceService]
   }
   
-  extension [Self <: ITinyMceService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITinyMceService] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: () => js.Array[ITinyMcePlugin]): Self = StObject.set(x, "configuration", js.Any.fromFunction0(value))
     

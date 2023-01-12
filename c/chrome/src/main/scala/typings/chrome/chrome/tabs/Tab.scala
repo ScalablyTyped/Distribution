@@ -151,7 +151,8 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  extension [Self <: Tab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

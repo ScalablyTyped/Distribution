@@ -42,7 +42,8 @@ object distLibCommandsZrangebylexMod {
       __obj.asInstanceOf[ZRangeByLexOptions]
     }
     
-    extension [Self <: ZRangeByLexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZRangeByLexOptions] (val x: Self) extends AnyVal {
       
       inline def setLIMIT(value: Count): Self = StObject.set(x, "LIMIT", value.asInstanceOf[js.Any])
       

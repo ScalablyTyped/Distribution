@@ -28,7 +28,8 @@ object EnumerateLoadedClassesCallbacks {
     __obj.asInstanceOf[EnumerateLoadedClassesCallbacks]
   }
   
-  extension [Self <: EnumerateLoadedClassesCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumerateLoadedClassesCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnComplete(value: () => Unit): Self = StObject.set(x, "onComplete", js.Any.fromFunction0(value))
     

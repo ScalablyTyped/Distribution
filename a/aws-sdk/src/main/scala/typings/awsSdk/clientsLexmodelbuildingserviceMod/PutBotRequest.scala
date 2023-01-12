@@ -93,7 +93,8 @@ object PutBotRequest {
     __obj.asInstanceOf[PutBotRequest]
   }
   
-  extension [Self <: PutBotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBotRequest] (val x: Self) extends AnyVal {
     
     inline def setAbortStatement(value: Statement): Self = StObject.set(x, "abortStatement", value.asInstanceOf[js.Any])
     

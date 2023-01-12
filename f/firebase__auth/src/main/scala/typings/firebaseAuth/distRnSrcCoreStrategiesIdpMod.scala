@@ -46,7 +46,8 @@ object distRnSrcCoreStrategiesIdpMod {
       __obj.asInstanceOf[IdpTaskParams]
     }
     
-    extension [Self <: IdpTaskParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdpTaskParams] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthInternal): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

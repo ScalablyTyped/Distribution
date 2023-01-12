@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[InterpolationOptions]
     }
     
-    extension [Self <: InterpolationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolationOptions] (val x: Self) extends AnyVal {
       
       inline def setSmart_count(value: Double | Length): Self = StObject.set(x, "smart_count", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[InterpolationTokenOptions]
     }
     
-    extension [Self <: InterpolationTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterpolationTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object mod {
       __obj.asInstanceOf[PluralRules]
     }
     
-    extension [Self <: PluralRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluralRules] (val x: Self) extends AnyVal {
       
       inline def setPluralTypeToLanguages(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "pluralTypeToLanguages", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object mod {
       __obj.asInstanceOf[PolyglotOptions]
     }
     
-    extension [Self <: PolyglotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolyglotOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowMissing(value: Boolean): Self = StObject.set(x, "allowMissing", value.asInstanceOf[js.Any])
       

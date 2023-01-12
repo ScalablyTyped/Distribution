@@ -33,7 +33,8 @@ object mapItemToNodeaNavItemReac {
     __obj.asInstanceOf[mapItemToNodeaNavItemReac]
   }
   
-  extension [Self <: mapItemToNodeaNavItemReac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: mapItemToNodeaNavItemReac] (val x: Self) extends AnyVal {
     
     inline def setMapItemToNode(value: NavItem => ReactNode): Self = StObject.set(x, "mapItemToNode", js.Any.fromFunction1(value))
     

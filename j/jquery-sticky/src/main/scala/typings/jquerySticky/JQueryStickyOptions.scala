@@ -69,7 +69,8 @@ object JQueryStickyOptions {
     __obj.asInstanceOf[JQueryStickyOptions]
   }
   
-  extension [Self <: JQueryStickyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStickyOptions] (val x: Self) extends AnyVal {
     
     inline def setBottomSpacing(value: Double): Self = StObject.set(x, "bottomSpacing", value.asInstanceOf[js.Any])
     

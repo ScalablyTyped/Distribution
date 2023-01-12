@@ -36,7 +36,8 @@ object MapRestriction {
     __obj.asInstanceOf[MapRestriction]
   }
   
-  extension [Self <: MapRestriction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapRestriction] (val x: Self) extends AnyVal {
     
     inline def setLatLngBounds(value: LatLngBounds | LatLngBoundsLiteral): Self = StObject.set(x, "latLngBounds", value.asInstanceOf[js.Any])
     

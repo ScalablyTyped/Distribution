@@ -17,7 +17,8 @@ object CreateItemDataRelationships {
     __obj.asInstanceOf[CreateItemDataRelationships]
   }
   
-  extension [Self <: CreateItemDataRelationships](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateItemDataRelationships] (val x: Self) extends AnyVal {
     
     inline def setParent(value: CreateStorageDataRelationshipsTarget): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

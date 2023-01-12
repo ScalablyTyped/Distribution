@@ -18,7 +18,8 @@ object TextInputSpecification {
     __obj.asInstanceOf[TextInputSpecification]
   }
   
-  extension [Self <: TextInputSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInputSpecification] (val x: Self) extends AnyVal {
     
     inline def setStartTimeoutMs(value: TimeInMilliSeconds): Self = StObject.set(x, "startTimeoutMs", value.asInstanceOf[js.Any])
   }

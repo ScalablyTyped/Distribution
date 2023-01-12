@@ -29,7 +29,8 @@ object ListObjectResult {
     __obj.asInstanceOf[ListObjectResult]
   }
   
-  extension [Self <: ListObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListObjectResult] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: Boolean): Self = StObject.set(x, "isTruncated", value.asInstanceOf[js.Any])
     

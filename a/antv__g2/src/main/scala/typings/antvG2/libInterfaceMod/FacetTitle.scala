@@ -33,7 +33,8 @@ object FacetTitle {
     __obj.asInstanceOf[FacetTitle]
   }
   
-  extension [Self <: FacetTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetTitle] (val x: Self) extends AnyVal {
     
     inline def setFormatter(value: /* val */ Any => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     

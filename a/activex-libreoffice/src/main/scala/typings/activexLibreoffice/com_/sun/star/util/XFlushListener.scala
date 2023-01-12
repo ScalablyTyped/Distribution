@@ -28,7 +28,8 @@ object XFlushListener {
     __obj.asInstanceOf[XFlushListener]
   }
   
-  extension [Self <: XFlushListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFlushListener] (val x: Self) extends AnyVal {
     
     inline def setFlushed(value: EventObject => Unit): Self = StObject.set(x, "flushed", js.Any.fromFunction1(value))
   }

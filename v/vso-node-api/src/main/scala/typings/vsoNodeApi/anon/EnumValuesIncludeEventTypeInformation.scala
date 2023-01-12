@@ -15,7 +15,8 @@ object EnumValuesIncludeEventTypeInformation {
     __obj.asInstanceOf[EnumValuesIncludeEventTypeInformation]
   }
   
-  extension [Self <: EnumValuesIncludeEventTypeInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesIncludeEventTypeInformation] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: IncludeEventTypeInformation): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object RelativeRectResult {
     __obj.asInstanceOf[RelativeRectResult]
   }
   
-  extension [Self <: RelativeRectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeRectResult] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

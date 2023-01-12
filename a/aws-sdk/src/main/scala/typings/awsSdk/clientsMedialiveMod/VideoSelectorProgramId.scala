@@ -18,7 +18,8 @@ object VideoSelectorProgramId {
     __obj.asInstanceOf[VideoSelectorProgramId]
   }
   
-  extension [Self <: VideoSelectorProgramId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSelectorProgramId] (val x: Self) extends AnyVal {
     
     inline def setProgramId(value: integerMin0Max65536): Self = StObject.set(x, "ProgramId", value.asInstanceOf[js.Any])
     

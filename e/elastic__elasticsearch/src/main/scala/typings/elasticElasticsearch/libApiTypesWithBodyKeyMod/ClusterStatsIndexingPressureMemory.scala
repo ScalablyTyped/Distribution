@@ -23,7 +23,8 @@ object ClusterStatsIndexingPressureMemory {
     __obj.asInstanceOf[ClusterStatsIndexingPressureMemory]
   }
   
-  extension [Self <: ClusterStatsIndexingPressureMemory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsIndexingPressureMemory] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: ClusterStatsIndexingPressureMemorySummary): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

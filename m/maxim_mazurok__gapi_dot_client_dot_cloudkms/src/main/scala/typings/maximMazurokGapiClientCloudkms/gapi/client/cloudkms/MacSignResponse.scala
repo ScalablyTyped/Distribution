@@ -37,7 +37,8 @@ object MacSignResponse {
     __obj.asInstanceOf[MacSignResponse]
   }
   
-  extension [Self <: MacSignResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MacSignResponse] (val x: Self) extends AnyVal {
     
     inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object JobCompletedEvent {
     __obj.asInstanceOf[JobCompletedEvent]
   }
   
-  extension [Self <: JobCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setOutputVariables(value: StringDictionary[VariableValue]): Self = StObject.set(x, "outputVariables", value.asInstanceOf[js.Any])
     

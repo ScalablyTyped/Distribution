@@ -18,7 +18,8 @@ object IndexDocument {
     __obj.asInstanceOf[IndexDocument]
   }
   
-  extension [Self <: IndexDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexDocument] (val x: Self) extends AnyVal {
     
     inline def setSuffix(value: Suffix): Self = StObject.set(x, "Suffix", value.asInstanceOf[js.Any])
   }

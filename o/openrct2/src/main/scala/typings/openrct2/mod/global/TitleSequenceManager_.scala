@@ -24,7 +24,8 @@ object TitleSequenceManager_ {
     __obj.asInstanceOf[TitleSequenceManager_]
   }
   
-  extension [Self <: TitleSequenceManager_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TitleSequenceManager_] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String => TitleSequence): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

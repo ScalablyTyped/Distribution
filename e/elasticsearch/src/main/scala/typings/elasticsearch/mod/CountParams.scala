@@ -45,7 +45,8 @@ object CountParams {
     __obj.asInstanceOf[CountParams]
   }
   
-  extension [Self <: CountParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

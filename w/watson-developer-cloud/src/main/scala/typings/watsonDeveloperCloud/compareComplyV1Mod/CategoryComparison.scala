@@ -17,7 +17,8 @@ object CategoryComparison {
     __obj.asInstanceOf[CategoryComparison]
   }
   
-  extension [Self <: CategoryComparison](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryComparison] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

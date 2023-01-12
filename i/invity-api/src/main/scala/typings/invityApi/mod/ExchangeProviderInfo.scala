@@ -62,7 +62,8 @@ object ExchangeProviderInfo {
     __obj.asInstanceOf[ExchangeProviderInfo]
   }
   
-  extension [Self <: ExchangeProviderInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeProviderInfo] (val x: Self) extends AnyVal {
     
     inline def setAddressFormats(value: StringMap): Self = StObject.set(x, "addressFormats", value.asInstanceOf[js.Any])
     

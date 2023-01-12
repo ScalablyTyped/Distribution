@@ -17,7 +17,8 @@ object Activity {
     __obj.asInstanceOf[Activity]
   }
   
-  extension [Self <: Activity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activity] (val x: Self) extends AnyVal {
     
     inline def setCapacityPerDay(value: Double): Self = StObject.set(x, "capacityPerDay", value.asInstanceOf[js.Any])
     

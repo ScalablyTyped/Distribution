@@ -77,7 +77,8 @@ object typesIntegrationsGlobalhandlersMod {
       __obj.asInstanceOf[GlobalHandlersIntegrations]
     }
     
-    extension [Self <: GlobalHandlersIntegrations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalHandlersIntegrations] (val x: Self) extends AnyVal {
       
       inline def setOnerror(value: Boolean): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
       

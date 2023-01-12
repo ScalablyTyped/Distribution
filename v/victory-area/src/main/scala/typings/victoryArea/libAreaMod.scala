@@ -32,7 +32,8 @@ object libAreaMod {
       __obj.asInstanceOf[AreaProps]
     }
     
-    extension [Self <: AreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreaProps] (val x: Self) extends AnyVal {
       
       inline def setGroupComponent(value: ReactElement): Self = StObject.set(x, "groupComponent", value.asInstanceOf[js.Any])
       

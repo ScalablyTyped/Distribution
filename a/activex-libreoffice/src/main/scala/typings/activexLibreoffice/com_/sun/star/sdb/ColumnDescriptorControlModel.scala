@@ -95,7 +95,8 @@ object ColumnDescriptorControlModel {
     __obj.asInstanceOf[ColumnDescriptorControlModel]
   }
   
-  extension [Self <: ColumnDescriptorControlModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnDescriptorControlModel] (val x: Self) extends AnyVal {
     
     inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     

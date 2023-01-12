@@ -18,7 +18,8 @@ object EfaInfo {
     __obj.asInstanceOf[EfaInfo]
   }
   
-  extension [Self <: EfaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EfaInfo] (val x: Self) extends AnyVal {
     
     inline def setMaximumEfaInterfaces(value: MaximumEfaInterfaces): Self = StObject.set(x, "MaximumEfaInterfaces", value.asInstanceOf[js.Any])
     

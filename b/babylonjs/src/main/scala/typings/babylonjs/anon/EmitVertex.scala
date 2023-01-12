@@ -24,7 +24,8 @@ object EmitVertex {
     __obj.asInstanceOf[EmitVertex]
   }
   
-  extension [Self <: EmitVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitVertex] (val x: Self) extends AnyVal {
     
     inline def setEmitFragment(value: Boolean): Self = StObject.set(x, "emitFragment", value.asInstanceOf[js.Any])
     

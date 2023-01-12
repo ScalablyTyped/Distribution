@@ -34,7 +34,8 @@ object Hold {
     __obj.asInstanceOf[Hold]
   }
   
-  extension [Self <: Hold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hold] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: js.Array[HeldAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

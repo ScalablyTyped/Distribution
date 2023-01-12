@@ -18,7 +18,8 @@ object DictkServicePoints {
     __obj.asInstanceOf[DictkServicePoints]
   }
   
-  extension [Self <: DictkServicePoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictkServicePoints] (val x: Self) extends AnyVal {
     
     inline def setServicePoints(value: js.Array[IsGenerator]): Self = StObject.set(x, "servicePoints", value.asInstanceOf[js.Any])
     

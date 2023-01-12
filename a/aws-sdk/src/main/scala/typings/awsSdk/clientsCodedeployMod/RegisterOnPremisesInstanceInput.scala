@@ -28,7 +28,8 @@ object RegisterOnPremisesInstanceInput {
     __obj.asInstanceOf[RegisterOnPremisesInstanceInput]
   }
   
-  extension [Self <: RegisterOnPremisesInstanceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterOnPremisesInstanceInput] (val x: Self) extends AnyVal {
     
     inline def setIamSessionArn(value: IamSessionArn): Self = StObject.set(x, "iamSessionArn", value.asInstanceOf[js.Any])
     

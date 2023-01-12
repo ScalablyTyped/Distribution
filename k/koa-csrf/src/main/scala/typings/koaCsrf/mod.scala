@@ -20,7 +20,8 @@ object mod {
         __obj.asInstanceOf[DefaultState]
       }
       
-      extension [Self <: DefaultState](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DefaultState] (val x: Self) extends AnyVal {
         
         inline def set_csrf(value: String): Self = StObject.set(x, "_csrf", value.asInstanceOf[js.Any])
       }

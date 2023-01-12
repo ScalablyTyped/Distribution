@@ -32,7 +32,8 @@ object PutNotificationConfigurationType {
     __obj.asInstanceOf[PutNotificationConfigurationType]
   }
   
-  extension [Self <: PutNotificationConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutNotificationConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingGroupName(value: XmlStringMaxLen255): Self = StObject.set(x, "AutoScalingGroupName", value.asInstanceOf[js.Any])
     

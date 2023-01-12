@@ -64,7 +64,8 @@ object LustreFileSystemConfiguration {
     __obj.asInstanceOf[LustreFileSystemConfiguration]
   }
   
-  extension [Self <: LustreFileSystemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LustreFileSystemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutomaticBackupRetentionDays(value: AutomaticBackupRetentionDays): Self = StObject.set(x, "AutomaticBackupRetentionDays", value.asInstanceOf[js.Any])
     

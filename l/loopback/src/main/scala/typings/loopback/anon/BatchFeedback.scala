@@ -21,7 +21,8 @@ object BatchFeedback {
     __obj.asInstanceOf[BatchFeedback]
   }
   
-  extension [Self <: BatchFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchFeedback] (val x: Self) extends AnyVal {
     
     inline def setBatchFeedback(value: Boolean): Self = StObject.set(x, "batchFeedback", value.asInstanceOf[js.Any])
     

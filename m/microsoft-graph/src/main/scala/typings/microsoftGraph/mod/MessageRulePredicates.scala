@@ -158,7 +158,8 @@ object MessageRulePredicates {
     __obj.asInstanceOf[MessageRulePredicates]
   }
   
-  extension [Self <: MessageRulePredicates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageRulePredicates] (val x: Self) extends AnyVal {
     
     inline def setBodyContains(value: NullableOption[js.Array[String]]): Self = StObject.set(x, "bodyContains", value.asInstanceOf[js.Any])
     

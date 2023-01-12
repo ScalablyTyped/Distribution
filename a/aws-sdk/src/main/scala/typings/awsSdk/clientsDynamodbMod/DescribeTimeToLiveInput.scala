@@ -18,7 +18,8 @@ object DescribeTimeToLiveInput {
     __obj.asInstanceOf[DescribeTimeToLiveInput]
   }
   
-  extension [Self <: DescribeTimeToLiveInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTimeToLiveInput] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

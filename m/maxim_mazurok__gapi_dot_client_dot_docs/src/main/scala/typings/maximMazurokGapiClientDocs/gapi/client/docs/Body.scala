@@ -16,7 +16,8 @@ object Body {
     __obj.asInstanceOf[Body]
   }
   
-  extension [Self <: Body](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
     
     inline def setContent(value: js.Array[StructuralElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

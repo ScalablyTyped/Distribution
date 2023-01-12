@@ -21,7 +21,8 @@ object KanjiData {
     __obj.asInstanceOf[KanjiData]
   }
   
-  extension [Self <: KanjiData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KanjiData] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

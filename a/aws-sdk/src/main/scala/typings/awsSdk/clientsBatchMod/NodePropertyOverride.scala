@@ -23,7 +23,8 @@ object NodePropertyOverride {
     __obj.asInstanceOf[NodePropertyOverride]
   }
   
-  extension [Self <: NodePropertyOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePropertyOverride] (val x: Self) extends AnyVal {
     
     inline def setContainerOverrides(value: ContainerOverrides): Self = StObject.set(x, "containerOverrides", value.asInstanceOf[js.Any])
     

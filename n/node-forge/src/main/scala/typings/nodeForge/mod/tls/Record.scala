@@ -25,7 +25,8 @@ object Record {
     __obj.asInstanceOf[Record]
   }
   
-  extension [Self <: Record](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: ByteBuffer): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

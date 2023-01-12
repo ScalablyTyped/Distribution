@@ -19,7 +19,8 @@ object GetPhotosReturnType {
     __obj.asInstanceOf[GetPhotosReturnType]
   }
   
-  extension [Self <: GetPhotosReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPhotosReturnType] (val x: Self) extends AnyVal {
     
     inline def setEdges(value: js.Array[Node]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
     

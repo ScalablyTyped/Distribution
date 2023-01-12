@@ -55,7 +55,8 @@ object Global_ {
       __obj.asInstanceOf[History]
     }
     
-    extension [Self <: History](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: History] (val x: Self) extends AnyVal {
       
       inline def setConfigurable(value: Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object Global_ {
       __obj.asInstanceOf[StateOptions]
     }
     
-    extension [Self <: StateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateOptions] (val x: Self) extends AnyVal {
       
       inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     }
@@ -137,7 +139,8 @@ object Global_ {
       __obj.asInstanceOf[UserInfo]
     }
     
-    extension [Self <: UserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInfo] (val x: Self) extends AnyVal {
       
       inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
     }
@@ -176,7 +179,8 @@ object Global_ {
       __obj.asInstanceOf[WebGmeGlobal]
     }
     
-    extension [Self <: WebGmeGlobal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGmeGlobal] (val x: Self) extends AnyVal {
       
       inline def setGetConfig(value: () => typings.webgme.GmeConfig.GmeConfig): Self = StObject.set(x, "getConfig", js.Any.fromFunction0(value))
       

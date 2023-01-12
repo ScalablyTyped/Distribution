@@ -16,7 +16,8 @@ object SignBlobRequest {
     __obj.asInstanceOf[SignBlobRequest]
   }
   
-  extension [Self <: SignBlobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignBlobRequest] (val x: Self) extends AnyVal {
     
     inline def setBytesToSign(value: String): Self = StObject.set(x, "bytesToSign", value.asInstanceOf[js.Any])
     

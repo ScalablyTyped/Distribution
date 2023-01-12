@@ -38,7 +38,8 @@ object Tool {
     __obj.asInstanceOf[Tool]
   }
   
-  extension [Self <: Tool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tool] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: UnrestrictedCommand): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

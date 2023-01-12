@@ -43,7 +43,8 @@ object PlayerLeaderboardScore {
     __obj.asInstanceOf[PlayerLeaderboardScore]
   }
   
-  extension [Self <: PlayerLeaderboardScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerLeaderboardScore] (val x: Self) extends AnyVal {
     
     inline def setFriendsRank(value: LeaderboardScoreRank): Self = StObject.set(x, "friendsRank", value.asInstanceOf[js.Any])
     

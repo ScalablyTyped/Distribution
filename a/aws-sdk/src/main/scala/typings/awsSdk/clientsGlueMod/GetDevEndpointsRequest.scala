@@ -23,7 +23,8 @@ object GetDevEndpointsRequest {
     __obj.asInstanceOf[GetDevEndpointsRequest]
   }
   
-  extension [Self <: GetDevEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDevEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

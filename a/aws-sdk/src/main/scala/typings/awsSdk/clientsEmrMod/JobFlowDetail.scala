@@ -93,7 +93,8 @@ object JobFlowDetail {
     __obj.asInstanceOf[JobFlowDetail]
   }
   
-  extension [Self <: JobFlowDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFlowDetail] (val x: Self) extends AnyVal {
     
     inline def setAmiVersion(value: XmlStringMaxLen256): Self = StObject.set(x, "AmiVersion", value.asInstanceOf[js.Any])
     

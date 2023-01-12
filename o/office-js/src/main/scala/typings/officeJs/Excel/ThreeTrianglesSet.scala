@@ -22,7 +22,8 @@ object ThreeTrianglesSet {
     __obj.asInstanceOf[ThreeTrianglesSet]
   }
   
-  extension [Self <: ThreeTrianglesSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreeTrianglesSet] (val x: Self) extends AnyVal {
     
     inline def setGreenUpTriangle(value: Icon): Self = StObject.set(x, "greenUpTriangle", value.asInstanceOf[js.Any])
     

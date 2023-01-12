@@ -19,7 +19,8 @@ object BinderUniform {
     __obj.asInstanceOf[BinderUniform]
   }
   
-  extension [Self <: BinderUniform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinderUniform] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: Uniform[Any]): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

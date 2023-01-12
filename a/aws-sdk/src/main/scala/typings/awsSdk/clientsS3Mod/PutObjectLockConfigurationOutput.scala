@@ -15,7 +15,8 @@ object PutObjectLockConfigurationOutput {
     __obj.asInstanceOf[PutObjectLockConfigurationOutput]
   }
   
-  extension [Self <: PutObjectLockConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectLockConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

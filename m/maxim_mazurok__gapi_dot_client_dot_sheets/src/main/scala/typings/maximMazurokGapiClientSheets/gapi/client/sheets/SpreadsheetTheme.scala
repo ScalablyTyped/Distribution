@@ -19,7 +19,8 @@ object SpreadsheetTheme {
     __obj.asInstanceOf[SpreadsheetTheme]
   }
   
-  extension [Self <: SpreadsheetTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetTheme] (val x: Self) extends AnyVal {
     
     inline def setPrimaryFontFamily(value: String): Self = StObject.set(x, "primaryFontFamily", value.asInstanceOf[js.Any])
     

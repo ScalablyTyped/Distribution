@@ -32,7 +32,8 @@ object CreateScalingPlanRequest {
     __obj.asInstanceOf[CreateScalingPlanRequest]
   }
   
-  extension [Self <: CreateScalingPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateScalingPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationSource(value: ApplicationSource): Self = StObject.set(x, "ApplicationSource", value.asInstanceOf[js.Any])
     

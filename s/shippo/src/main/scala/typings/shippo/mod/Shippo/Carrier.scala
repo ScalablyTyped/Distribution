@@ -41,7 +41,8 @@ object Carrier {
     __obj.asInstanceOf[Carrier]
   }
   
-  extension [Self <: Carrier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Carrier] (val x: Self) extends AnyVal {
     
     inline def setAccount_id(value: String): Self = StObject.set(x, "account_id", value.asInstanceOf[js.Any])
     

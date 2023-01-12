@@ -62,7 +62,8 @@ object distTypesInheritedColorMod {
       __obj.asInstanceOf[InheritedColorConfigFromContext]
     }
     
-    extension [Self <: InheritedColorConfigFromContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InheritedColorConfigFromContext] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object distTypesInheritedColorMod {
       __obj.asInstanceOf[InheritedColorConfigFromTheme]
     }
     
-    extension [Self <: InheritedColorConfigFromTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InheritedColorConfigFromTheme] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: String): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

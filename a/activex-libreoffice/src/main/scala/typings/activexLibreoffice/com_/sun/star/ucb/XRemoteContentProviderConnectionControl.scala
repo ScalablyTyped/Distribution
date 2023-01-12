@@ -39,7 +39,8 @@ object XRemoteContentProviderConnectionControl {
     __obj.asInstanceOf[XRemoteContentProviderConnectionControl]
   }
   
-  extension [Self <: XRemoteContentProviderConnectionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderConnectionControl] (val x: Self) extends AnyVal {
     
     inline def setEnableConnectionControl(value: (XRemoteContentProviderAcceptor, XInterface) => Unit): Self = StObject.set(x, "enableConnectionControl", js.Any.fromFunction2(value))
   }

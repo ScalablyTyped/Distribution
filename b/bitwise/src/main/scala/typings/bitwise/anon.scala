@@ -118,7 +118,8 @@ object anon {
       __obj.asInstanceOf[GetBit]
     }
     
-    extension [Self <: GetBit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBit] (val x: Self) extends AnyVal {
       
       inline def setGetBit(value: (Double, Double) => Bit): Self = StObject.set(x, "getBit", js.Any.fromFunction2(value))
       
@@ -141,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Read]
     }
     
-    extension [Self <: Read](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
       
       inline def setRead(value: UInt8 => Byte): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       
@@ -160,7 +162,8 @@ object anon {
       __obj.asInstanceOf[ToBits]
     }
     
-    extension [Self <: ToBits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToBits] (val x: Self) extends AnyVal {
       
       inline def setToBits(value: String => Bits): Self = StObject.set(x, "toBits", js.Any.fromFunction1(value))
     }
@@ -179,7 +182,8 @@ object anon {
       __obj.asInstanceOf[Write]
     }
     
-    extension [Self <: Write](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Write] (val x: Self) extends AnyVal {
       
       inline def setRead(value: UInt4 => Nibble): Self = StObject.set(x, "read", js.Any.fromFunction1(value))
       

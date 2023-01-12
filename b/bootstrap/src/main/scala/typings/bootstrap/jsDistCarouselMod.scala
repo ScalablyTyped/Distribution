@@ -198,7 +198,8 @@ object jsDistCarouselMod {
         __obj.asInstanceOf[Event]
       }
       
-      extension [Self <: Event](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
         
         inline def setDirection(value: Direction): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
         
@@ -276,7 +277,8 @@ object jsDistCarouselMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setInterval(value: Double | `false`): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
         

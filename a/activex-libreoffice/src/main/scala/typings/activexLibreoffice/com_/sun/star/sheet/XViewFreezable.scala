@@ -38,7 +38,8 @@ object XViewFreezable {
     __obj.asInstanceOf[XViewFreezable]
   }
   
-  extension [Self <: XViewFreezable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XViewFreezable] (val x: Self) extends AnyVal {
     
     inline def setFreezeAtPosition(value: (Double, Double) => Unit): Self = StObject.set(x, "freezeAtPosition", js.Any.fromFunction2(value))
     

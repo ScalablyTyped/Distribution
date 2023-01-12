@@ -20,7 +20,8 @@ object Request$ {
     __obj.asInstanceOf[Request$]
   }
   
-  extension [Self <: Request$](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Request$] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

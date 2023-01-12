@@ -29,7 +29,8 @@ object CSSLayer {
     __obj.asInstanceOf[CSSLayer]
   }
   
-  extension [Self <: CSSLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSLayer] (val x: Self) extends AnyVal {
     
     inline def setRange(value: SourceRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

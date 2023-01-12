@@ -26,7 +26,8 @@ object MappingPropertyBase {
     __obj.asInstanceOf[MappingPropertyBase]
   }
   
-  extension [Self <: MappingPropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingPropertyBase] (val x: Self) extends AnyVal {
     
     inline def setDynamic(value: MappingDynamicMapping): Self = StObject.set(x, "dynamic", value.asInstanceOf[js.Any])
     

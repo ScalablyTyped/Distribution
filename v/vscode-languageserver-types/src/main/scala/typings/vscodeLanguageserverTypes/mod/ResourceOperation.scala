@@ -28,7 +28,8 @@ object ResourceOperation {
     __obj.asInstanceOf[ResourceOperation]
   }
   
-  extension [Self <: ResourceOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceOperation] (val x: Self) extends AnyVal {
     
     inline def setAnnotationId(value: ChangeAnnotationIdentifier): Self = StObject.set(x, "annotationId", value.asInstanceOf[js.Any])
     

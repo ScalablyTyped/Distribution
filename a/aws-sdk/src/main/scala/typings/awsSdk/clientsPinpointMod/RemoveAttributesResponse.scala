@@ -15,7 +15,8 @@ object RemoveAttributesResponse {
     __obj.asInstanceOf[RemoveAttributesResponse]
   }
   
-  extension [Self <: RemoveAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAttributesResource(value: AttributesResource): Self = StObject.set(x, "AttributesResource", value.asInstanceOf[js.Any])
   }

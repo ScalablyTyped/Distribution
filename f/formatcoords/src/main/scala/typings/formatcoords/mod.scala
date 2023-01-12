@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[CoordsFormatOptions]
     }
     
-    extension [Self <: CoordsFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordsFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimalPlaces(value: Double): Self = StObject.set(x, "decimalPlaces", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[CoordsObject]
     }
     
-    extension [Self <: CoordsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordsObject] (val x: Self) extends AnyVal {
       
       inline def setEast(value: Boolean): Self = StObject.set(x, "east", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[LonLatValues]
     }
     
-    extension [Self <: LonLatValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LonLatValues] (val x: Self) extends AnyVal {
       
       inline def setDegrees(value: Double): Self = StObject.set(x, "degrees", value.asInstanceOf[js.Any])
       

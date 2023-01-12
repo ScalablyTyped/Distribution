@@ -22,7 +22,8 @@ object typesTracingConfigMod {
       __obj.asInstanceOf[TracingConfig]
     }
     
-    extension [Self <: TracingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingConfig] (val x: Self) extends AnyVal {
       
       inline def setMode(value: Active | PassThrough | String): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
       

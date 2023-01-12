@@ -52,7 +52,8 @@ object renderMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CanvasRenderingContext2D): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object renderMod {
       __obj.asInstanceOf[ToContextOptions]
     }
     
-    extension [Self <: ToContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToContextOptions] (val x: Self) extends AnyVal {
       
       inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
       

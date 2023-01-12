@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AddReturn]
     }
     
-    extension [Self <: AddReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddReturn] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       

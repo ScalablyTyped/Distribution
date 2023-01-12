@@ -283,7 +283,8 @@ object mod {
       __obj.asInstanceOf[ConnectionConfigOptions]
     }
     
-    extension [Self <: ConnectionConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthSecret(value: String): Self = StObject.set(x, "authSecret", value.asInstanceOf[js.Any])
       
@@ -374,7 +375,8 @@ object mod {
       __obj.asInstanceOf[ReaderConnectionConfigOptions]
     }
     
-    extension [Self <: ReaderConnectionConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReaderConnectionConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setLookupdHTTPAddresses(value: String | js.Array[String]): Self = StObject.set(x, "lookupdHTTPAddresses", value.asInstanceOf[js.Any])
       

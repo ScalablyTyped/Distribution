@@ -20,7 +20,8 @@ object FieldStatsResponse {
     __obj.asInstanceOf[FieldStatsResponse]
   }
   
-  extension [Self <: FieldStatsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldStatsResponse] (val x: Self) extends AnyVal {
     
     inline def setConflicts(value: StringDictionary[String]): Self = StObject.set(x, "conflicts", value.asInstanceOf[js.Any])
     

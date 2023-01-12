@@ -19,7 +19,8 @@ object ConfigSynonyms {
     __obj.asInstanceOf[ConfigSynonyms]
   }
   
-  extension [Self <: ConfigSynonyms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigSynonyms] (val x: Self) extends AnyVal {
     
     inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
     

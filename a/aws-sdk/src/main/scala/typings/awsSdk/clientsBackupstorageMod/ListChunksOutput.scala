@@ -23,7 +23,8 @@ object ListChunksOutput {
     __obj.asInstanceOf[ListChunksOutput]
   }
   
-  extension [Self <: ListChunksOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChunksOutput] (val x: Self) extends AnyVal {
     
     inline def setChunkList(value: ChunkList): Self = StObject.set(x, "ChunkList", value.asInstanceOf[js.Any])
     

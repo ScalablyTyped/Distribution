@@ -53,7 +53,8 @@ object UserData {
     __obj.asInstanceOf[UserData]
   }
   
-  extension [Self <: UserData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserData] (val x: Self) extends AnyVal {
     
     inline def setActiveSlotsByChannel(value: ChannelToCountMap): Self = StObject.set(x, "ActiveSlotsByChannel", value.asInstanceOf[js.Any])
     

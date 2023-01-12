@@ -67,7 +67,8 @@ object SharedStorageAccessParams {
     __obj.asInstanceOf[SharedStorageAccessParams]
   }
   
-  extension [Self <: SharedStorageAccessParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedStorageAccessParams] (val x: Self) extends AnyVal {
     
     inline def setIgnoreIfPresent(value: Boolean): Self = StObject.set(x, "ignoreIfPresent", value.asInstanceOf[js.Any])
     

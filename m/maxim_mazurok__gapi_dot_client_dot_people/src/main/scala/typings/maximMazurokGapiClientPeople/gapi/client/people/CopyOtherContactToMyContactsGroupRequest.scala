@@ -27,7 +27,8 @@ object CopyOtherContactToMyContactsGroupRequest {
     __obj.asInstanceOf[CopyOtherContactToMyContactsGroupRequest]
   }
   
-  extension [Self <: CopyOtherContactToMyContactsGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyOtherContactToMyContactsGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setCopyMask(value: String): Self = StObject.set(x, "copyMask", value.asInstanceOf[js.Any])
     

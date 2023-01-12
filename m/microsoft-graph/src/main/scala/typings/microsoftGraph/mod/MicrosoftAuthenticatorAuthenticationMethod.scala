@@ -36,7 +36,8 @@ object MicrosoftAuthenticatorAuthenticationMethod {
     __obj.asInstanceOf[MicrosoftAuthenticatorAuthenticationMethod]
   }
   
-  extension [Self <: MicrosoftAuthenticatorAuthenticationMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftAuthenticatorAuthenticationMethod] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

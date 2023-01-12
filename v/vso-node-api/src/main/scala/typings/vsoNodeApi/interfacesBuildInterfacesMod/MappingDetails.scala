@@ -28,7 +28,8 @@ object MappingDetails {
     __obj.asInstanceOf[MappingDetails]
   }
   
-  extension [Self <: MappingDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingDetails] (val x: Self) extends AnyVal {
     
     inline def setLocalPath(value: String): Self = StObject.set(x, "localPath", value.asInstanceOf[js.Any])
     

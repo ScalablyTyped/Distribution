@@ -23,7 +23,8 @@ object ITreeState {
     __obj.asInstanceOf[ITreeState]
   }
   
-  extension [Self <: ITreeState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreeState] (val x: Self) extends AnyVal {
     
     inline def setCurrentRootNode(value: Any): Self = StObject.set(x, "currentRootNode", value.asInstanceOf[js.Any])
     

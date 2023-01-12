@@ -30,7 +30,8 @@ object TransactWriteItemsInput {
     __obj.asInstanceOf[TransactWriteItemsInput]
   }
   
-  extension [Self <: TransactWriteItemsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactWriteItemsInput] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

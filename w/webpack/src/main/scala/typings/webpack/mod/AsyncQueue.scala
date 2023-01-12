@@ -51,7 +51,8 @@ object AsyncQueue {
     __obj.asInstanceOf[AsyncQueue[T, K, R]]
   }
   
-  extension [Self <: AsyncQueue[?, ?, ?], T, K, R](x: Self & (AsyncQueue[T, K, R])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncQueue[?, ?, ?], T, K, R] (val x: Self & (AsyncQueue[T, K, R])) extends AnyVal {
     
     inline def setAdd(value: (T, CallbackAsyncQueue[R]) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     

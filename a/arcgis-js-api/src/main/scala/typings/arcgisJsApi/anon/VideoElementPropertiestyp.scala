@@ -43,7 +43,8 @@ object VideoElementPropertiestyp {
     __obj.asInstanceOf[VideoElementPropertiestyp]
   }
   
-  extension [Self <: VideoElementPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoElementPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setGeoreference(value: ExtentAndRotationGeorefer | CornersGeoreferenceProper | ControlPointsGeoreference): Self = StObject.set(x, "georeference", value.asInstanceOf[js.Any])
     

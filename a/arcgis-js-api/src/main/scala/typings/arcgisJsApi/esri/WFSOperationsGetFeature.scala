@@ -34,7 +34,8 @@ object WFSOperationsGetFeature {
     __obj.asInstanceOf[WFSOperationsGetFeature]
   }
   
-  extension [Self <: WFSOperationsGetFeature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSOperationsGetFeature] (val x: Self) extends AnyVal {
     
     inline def setOutputFormat(value: String): Self = StObject.set(x, "outputFormat", value.asInstanceOf[js.Any])
     

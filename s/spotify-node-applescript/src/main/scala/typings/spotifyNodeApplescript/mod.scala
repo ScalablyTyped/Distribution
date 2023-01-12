@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[SpotifyState]
     }
     
-    extension [Self <: SpotifyState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpotifyState] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object mod {
       __obj.asInstanceOf[TrackInfo]
     }
     
-    extension [Self <: TrackInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrackInfo] (val x: Self) extends AnyVal {
       
       inline def setAlbum(value: String): Self = StObject.set(x, "album", value.asInstanceOf[js.Any])
       

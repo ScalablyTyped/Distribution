@@ -20,7 +20,8 @@ object MentionSentiment {
     __obj.asInstanceOf[MentionSentiment]
   }
   
-  extension [Self <: MentionSentiment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MentionSentiment] (val x: Self) extends AnyVal {
     
     inline def setSentiment(value: SentimentType): Self = StObject.set(x, "Sentiment", value.asInstanceOf[js.Any])
     

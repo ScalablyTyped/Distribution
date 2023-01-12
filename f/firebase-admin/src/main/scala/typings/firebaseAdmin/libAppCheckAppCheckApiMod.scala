@@ -26,7 +26,8 @@ object libAppCheckAppCheckApiMod {
       __obj.asInstanceOf[AppCheckToken]
     }
     
-    extension [Self <: AppCheckToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckToken] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object libAppCheckAppCheckApiMod {
       __obj.asInstanceOf[AppCheckTokenOptions]
     }
     
-    extension [Self <: AppCheckTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCheckTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setTtlMillis(value: Double): Self = StObject.set(x, "ttlMillis", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object libAppCheckAppCheckApiMod {
       __obj.asInstanceOf[DecodedAppCheckToken]
     }
     
-    extension [Self <: DecodedAppCheckToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedAppCheckToken] (val x: Self) extends AnyVal {
       
       inline def setApp_id(value: String): Self = StObject.set(x, "app_id", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object libAppCheckAppCheckApiMod {
       __obj.asInstanceOf[VerifyAppCheckTokenResponse]
     }
     
-    extension [Self <: VerifyAppCheckTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerifyAppCheckTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       

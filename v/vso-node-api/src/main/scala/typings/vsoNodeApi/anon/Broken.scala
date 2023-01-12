@@ -32,7 +32,8 @@ object Broken {
     __obj.asInstanceOf[Broken]
   }
   
-  extension [Self <: Broken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Broken] (val x: Self) extends AnyVal {
     
     inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

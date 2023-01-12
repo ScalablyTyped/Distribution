@@ -113,7 +113,8 @@ object edit {
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IColumnDef[TEntity]]
     }
     
-    extension [Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity](x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity] (val x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) extends AnyVal {
       
       inline def setCellEditableCondition(value: Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object edit {
       __obj.asInstanceOf[IEditDropdown]
     }
     
-    extension [Self <: IEditDropdown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditDropdown] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object edit {
       __obj.asInstanceOf[IGridEditApi[TEntity]]
     }
     
-    extension [Self <: IGridEditApi[?], TEntity](x: Self & IGridEditApi[TEntity]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridEditApi[?], TEntity] (val x: Self & IGridEditApi[TEntity]) extends AnyVal {
       
       inline def setOn(value: AfterCellEdit[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
@@ -243,7 +246,8 @@ object edit {
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.edit.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.edit.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setCellEditableCondition(value: Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
       
@@ -277,7 +281,8 @@ object edit {
       __obj.asInstanceOf[typings.uiGrid.mod.edit.IGridRow]
     }
     
-    extension [Self <: typings.uiGrid.mod.edit.IGridRow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.edit.IGridRow] (val x: Self) extends AnyVal {
       
       inline def setEnableCellEdit(value: Boolean): Self = StObject.set(x, "enableCellEdit", value.asInstanceOf[js.Any])
       
@@ -300,7 +305,8 @@ object edit {
       __obj.asInstanceOf[IUiGridEditConstants]
     }
     
-    extension [Self <: IUiGridEditConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUiGridEditConstants] (val x: Self) extends AnyVal {
       
       inline def setEDITABLE_CELL_DIRECTIVE(value: String): Self = StObject.set(x, "EDITABLE_CELL_DIRECTIVE", value.asInstanceOf[js.Any])
       

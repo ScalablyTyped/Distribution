@@ -23,7 +23,8 @@ object ResponseTimeRootCause {
     __obj.asInstanceOf[ResponseTimeRootCause]
   }
   
-  extension [Self <: ResponseTimeRootCause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseTimeRootCause] (val x: Self) extends AnyVal {
     
     inline def setClientImpacting(value: NullableBoolean): Self = StObject.set(x, "ClientImpacting", value.asInstanceOf[js.Any])
     

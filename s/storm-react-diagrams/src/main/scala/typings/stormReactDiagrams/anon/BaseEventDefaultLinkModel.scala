@@ -26,7 +26,8 @@ object BaseEventDefaultLinkModel {
     __obj.asInstanceOf[BaseEventDefaultLinkModel]
   }
   
-  extension [Self <: BaseEventDefaultLinkModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEventDefaultLinkModel] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

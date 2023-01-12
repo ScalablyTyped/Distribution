@@ -23,7 +23,8 @@ object QRCodeToBufferOptions {
     __obj.asInstanceOf[QRCodeToBufferOptions]
   }
   
-  extension [Self <: QRCodeToBufferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRCodeToBufferOptions] (val x: Self) extends AnyVal {
     
     inline def setRendererOpts(value: DeflateLevel): Self = StObject.set(x, "rendererOpts", value.asInstanceOf[js.Any])
     

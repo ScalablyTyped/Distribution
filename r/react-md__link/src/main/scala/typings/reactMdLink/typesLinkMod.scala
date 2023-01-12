@@ -69,7 +69,8 @@ object typesLinkMod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object typesLinkMod {
       __obj.asInstanceOf[LinkWithComponentProps]
     }
     
-    extension [Self <: LinkWithComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkWithComponentProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ElementType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }

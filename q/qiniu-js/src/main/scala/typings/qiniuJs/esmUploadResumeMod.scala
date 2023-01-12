@@ -28,7 +28,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[ChunkInfo]
     }
     
-    extension [Self <: ChunkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkInfo] (val x: Self) extends AnyVal {
       
       inline def setChunk(value: Blob): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[ChunkLoaded]
     }
     
-    extension [Self <: ChunkLoaded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkLoaded] (val x: Self) extends AnyVal {
       
       inline def setChunks(value: js.Array[Double]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[ChunkPart]
     }
     
-    extension [Self <: ChunkPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkPart] (val x: Self) extends AnyVal {
       
       inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[LocalInfo]
     }
     
-    extension [Self <: LocalInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[UploadedChunkStorage]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -169,7 +173,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[UploadChunkBody]
     }
     
-    extension [Self <: UploadChunkBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadChunkBody] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[ChunkPart]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       
@@ -190,7 +195,8 @@ object esmUploadResumeMod {
       __obj.asInstanceOf[UploadedChunkStorage]
     }
     
-    extension [Self <: UploadedChunkStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadedChunkStorage] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }

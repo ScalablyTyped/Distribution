@@ -451,7 +451,8 @@ object mod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeParse(value: /* window */ DOMWindow => Unit): Self = StObject.set(x, "beforeParse", js.Any.fromFunction1(value))
       
@@ -527,7 +528,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: SupportedContentTypes): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -1703,7 +1705,8 @@ object mod {
       __obj.asInstanceOf[FetchOptions]
     }
     
-    extension [Self <: FetchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -1749,7 +1752,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -1774,7 +1778,8 @@ object mod {
       __obj.asInstanceOf[ReconfigureSettings]
     }
     
-    extension [Self <: ReconfigureSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReconfigureSettings] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -1801,7 +1806,8 @@ object mod {
       __obj.asInstanceOf[ResourceLoaderConstructorOptions]
     }
     
-    extension [Self <: ResourceLoaderConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceLoaderConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setProxy(value: String): Self = StObject.set(x, "proxy", value.asInstanceOf[js.Any])
       
@@ -1849,7 +1855,8 @@ object mod {
       __obj.asInstanceOf[VirtualConsoleSendToOptions]
     }
     
-    extension [Self <: VirtualConsoleSendToOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualConsoleSendToOptions] (val x: Self) extends AnyVal {
       
       inline def setOmitJSDOMErrors(value: Boolean): Self = StObject.set(x, "omitJSDOMErrors", value.asInstanceOf[js.Any])
     }

@@ -626,7 +626,8 @@ object CatNodesNodesRecord {
     __obj.asInstanceOf[CatNodesNodesRecord]
   }
   
-  extension [Self <: CatNodesNodesRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatNodesNodesRecord] (val x: Self) extends AnyVal {
     
     inline def setB(value: String): Self = StObject.set(x, "b", value.asInstanceOf[js.Any])
     

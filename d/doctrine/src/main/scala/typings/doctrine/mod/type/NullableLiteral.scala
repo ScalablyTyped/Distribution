@@ -19,7 +19,8 @@ object NullableLiteral {
     __obj.asInstanceOf[NullableLiteral]
   }
   
-  extension [Self <: NullableLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NullableLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.doctrine.doctrineStrings.NullableLiteral): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

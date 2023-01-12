@@ -33,7 +33,8 @@ object GenerateDataKeyPairWithoutPlaintextRequest {
     __obj.asInstanceOf[GenerateDataKeyPairWithoutPlaintextRequest]
   }
   
-  extension [Self <: GenerateDataKeyPairWithoutPlaintextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateDataKeyPairWithoutPlaintextRequest] (val x: Self) extends AnyVal {
     
     inline def setEncryptionContext(value: EncryptionContextType): Self = StObject.set(x, "EncryptionContext", value.asInstanceOf[js.Any])
     

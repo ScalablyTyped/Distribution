@@ -36,7 +36,8 @@ object IndicesRolloverResponse {
     __obj.asInstanceOf[IndicesRolloverResponse]
   }
   
-  extension [Self <: IndicesRolloverResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRolloverResponse] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

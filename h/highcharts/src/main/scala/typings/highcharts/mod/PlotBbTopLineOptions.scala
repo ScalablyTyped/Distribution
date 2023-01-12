@@ -18,7 +18,8 @@ object PlotBbTopLineOptions {
     __obj.asInstanceOf[PlotBbTopLineOptions]
   }
   
-  extension [Self <: PlotBbTopLineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotBbTopLineOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotBbTopLineStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

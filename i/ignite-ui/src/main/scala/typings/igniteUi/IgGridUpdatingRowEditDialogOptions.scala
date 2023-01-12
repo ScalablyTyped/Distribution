@@ -122,7 +122,8 @@ object IgGridUpdatingRowEditDialogOptions {
     __obj.asInstanceOf[IgGridUpdatingRowEditDialogOptions]
   }
   
-  extension [Self <: IgGridUpdatingRowEditDialogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridUpdatingRowEditDialogOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

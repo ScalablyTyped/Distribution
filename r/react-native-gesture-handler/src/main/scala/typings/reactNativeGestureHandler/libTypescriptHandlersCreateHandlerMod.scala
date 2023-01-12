@@ -42,7 +42,8 @@ object libTypescriptHandlersCreateHandlerMod {
       __obj.asInstanceOf[CreateHandlerArgs[HandlerPropsT]]
     }
     
-    extension [Self <: CreateHandlerArgs[?], HandlerPropsT /* <: Record[String, Any] */](x: Self & CreateHandlerArgs[HandlerPropsT]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateHandlerArgs[?], HandlerPropsT /* <: Record[String, Any] */] (val x: Self & CreateHandlerArgs[HandlerPropsT]) extends AnyVal {
       
       inline def setAllowedProps(value: js.Array[Extract[/* keyof HandlerPropsT */ String, String]]): Self = StObject.set(x, "allowedProps", value.asInstanceOf[js.Any])
       

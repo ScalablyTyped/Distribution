@@ -17,7 +17,8 @@ object GridAreaProps {
     __obj.asInstanceOf[GridAreaProps]
   }
   
-  extension [Self <: GridAreaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridAreaProps] (val x: Self) extends AnyVal {
     
     inline def setGridArea(value: ResponsiveValue[String]): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PredicateContext {
     __obj.asInstanceOf[PredicateContext]
   }
   
-  extension [Self <: PredicateContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredicateContext] (val x: Self) extends AnyVal {
     
     inline def setEntityType(value: EntityType): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
     

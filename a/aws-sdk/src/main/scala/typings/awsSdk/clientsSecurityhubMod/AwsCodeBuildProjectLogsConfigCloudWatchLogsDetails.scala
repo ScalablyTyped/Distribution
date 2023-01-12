@@ -28,7 +28,8 @@ object AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails {
     __obj.asInstanceOf[AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails]
   }
   
-  extension [Self <: AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCodeBuildProjectLogsConfigCloudWatchLogsDetails] (val x: Self) extends AnyVal {
     
     inline def setGroupName(value: NonEmptyString): Self = StObject.set(x, "GroupName", value.asInstanceOf[js.Any])
     

@@ -287,7 +287,8 @@ object IgGridUpdating {
     __obj.asInstanceOf[IgGridUpdating]
   }
   
-  extension [Self <: IgGridUpdating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridUpdating] (val x: Self) extends AnyVal {
     
     inline def setAddRowLabel(value: String): Self = StObject.set(x, "addRowLabel", value.asInstanceOf[js.Any])
     

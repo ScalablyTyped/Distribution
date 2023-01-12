@@ -87,7 +87,8 @@ object Histogram {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBuckets(value: js.Array[Double]): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object Histogram {
       __obj.asInstanceOf[Internal[T]]
     }
     
-    extension [Self <: Internal[?], T /* <: String */](x: Self & Internal[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Internal[?], T /* <: String */] (val x: Self & Internal[T]) extends AnyVal {
       
       inline def setObserve(value: Double => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction1(value))
       

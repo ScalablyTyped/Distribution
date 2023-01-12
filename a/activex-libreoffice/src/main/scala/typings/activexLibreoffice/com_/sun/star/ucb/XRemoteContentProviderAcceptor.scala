@@ -52,7 +52,8 @@ object XRemoteContentProviderAcceptor {
     __obj.asInstanceOf[XRemoteContentProviderAcceptor]
   }
   
-  extension [Self <: XRemoteContentProviderAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderAcceptor] (val x: Self) extends AnyVal {
     
     inline def setAddRemoteContentProvider(
       value: (String, XMultiServiceFactory, SeqEquiv[String], XRemoteContentProviderDoneListener) => Boolean

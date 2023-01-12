@@ -30,7 +30,8 @@ object srcObjectsServersideHttpServiceInterfaceMod {
       __obj.asInstanceOf[HttpServiceInterface]
     }
     
-    extension [Self <: HttpServiceInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpServiceInterface] (val x: Self) extends AnyVal {
       
       inline def setExecuteRequest(
         value: (String, String, Record[String, Any], Record[String, Any]) => js.Promise[Record[String, Any]]

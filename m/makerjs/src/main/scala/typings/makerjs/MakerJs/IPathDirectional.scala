@@ -29,7 +29,8 @@ object IPathDirectional {
     __obj.asInstanceOf[IPathDirectional]
   }
   
-  extension [Self <: IPathDirectional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathDirectional] (val x: Self) extends AnyVal {
     
     inline def setEndPoints(value: js.Array[IPoint]): Self = StObject.set(x, "endPoints", value.asInstanceOf[js.Any])
     

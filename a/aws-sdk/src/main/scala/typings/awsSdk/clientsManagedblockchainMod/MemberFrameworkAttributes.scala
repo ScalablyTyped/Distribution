@@ -18,7 +18,8 @@ object MemberFrameworkAttributes {
     __obj.asInstanceOf[MemberFrameworkAttributes]
   }
   
-  extension [Self <: MemberFrameworkAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberFrameworkAttributes] (val x: Self) extends AnyVal {
     
     inline def setFabric(value: MemberFabricAttributes): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     

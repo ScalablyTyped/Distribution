@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[AutoReconnectOptions]
     }
     
-    extension [Self <: AutoReconnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoReconnectOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialDelay(value: Double): Self = StObject.set(x, "initialDelay", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[ExitData]
     }
     
-    extension [Self <: ExitData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExitData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[QueryOptions]
     }
     
-    extension [Self <: QueryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseKey(value: KeyChain): Self = StObject.set(x, "baseKey", value.asInstanceOf[js.Any])
       
@@ -422,7 +425,8 @@ object mod {
       __obj.asInstanceOf[SCBrokerClientOptions]
     }
     
-    extension [Self <: SCBrokerClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCBrokerClientOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoReconnect(value: Boolean): Self = StObject.set(x, "autoReconnect", value.asInstanceOf[js.Any])
       
@@ -553,7 +557,8 @@ object mod {
       __obj.asInstanceOf[SCBrokerServerOptions]
     }
     
-    extension [Self <: SCBrokerServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SCBrokerServerOptions] (val x: Self) extends AnyVal {
       
       inline def setBrokerControllerPath(value: String): Self = StObject.set(x, "brokerControllerPath", value.asInstanceOf[js.Any])
       
@@ -628,7 +633,8 @@ object mod {
       __obj.asInstanceOf[SpliceOptions]
     }
     
-    extension [Self <: SpliceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpliceOptions] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

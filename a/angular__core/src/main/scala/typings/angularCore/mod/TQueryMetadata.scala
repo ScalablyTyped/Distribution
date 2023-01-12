@@ -22,7 +22,8 @@ object TQueryMetadata {
     __obj.asInstanceOf[TQueryMetadata]
   }
   
-  extension [Self <: TQueryMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TQueryMetadata] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: QueryFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

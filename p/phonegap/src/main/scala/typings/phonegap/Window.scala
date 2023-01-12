@@ -22,7 +22,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setOpenDatabase(value: (String, String, String, Double) => Database): Self = StObject.set(x, "openDatabase", js.Any.fromFunction4(value))
     

@@ -185,7 +185,8 @@ object distParserJsyamlJson2lowLevelMod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setEscapeNumericKeys(value: Boolean): Self = StObject.set(x, "escapeNumericKeys", value.asInstanceOf[js.Any])
       

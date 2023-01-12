@@ -74,7 +74,8 @@ object XResultSetUpdate {
     __obj.asInstanceOf[XResultSetUpdate]
   }
   
-  extension [Self <: XResultSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XResultSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setCancelRowUpdates(value: () => Unit): Self = StObject.set(x, "cancelRowUpdates", js.Any.fromFunction0(value))
     

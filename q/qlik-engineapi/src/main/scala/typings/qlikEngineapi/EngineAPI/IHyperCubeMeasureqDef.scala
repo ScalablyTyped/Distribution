@@ -24,7 +24,8 @@ object IHyperCubeMeasureqDef {
     __obj.asInstanceOf[IHyperCubeMeasureqDef]
   }
   
-  extension [Self <: IHyperCubeMeasureqDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHyperCubeMeasureqDef] (val x: Self) extends AnyVal {
     
     inline def setAutoSort(value: Boolean): Self = StObject.set(x, "autoSort", value.asInstanceOf[js.Any])
     

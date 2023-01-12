@@ -84,7 +84,8 @@ object componentsSwitchSwitchMod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -169,7 +170,8 @@ object componentsSwitchSwitchMod {
       __obj.asInstanceOf[SwitchTheme]
     }
     
-    extension [Self <: SwitchTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchTheme] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

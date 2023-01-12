@@ -19,7 +19,8 @@ object Contains {
     __obj.asInstanceOf[Contains]
   }
   
-  extension [Self <: Contains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
     
     inline def setContains(value: scala.Double): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
     

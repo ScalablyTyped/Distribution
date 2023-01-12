@@ -28,7 +28,8 @@ object RecoveryInstanceDisk {
     __obj.asInstanceOf[RecoveryInstanceDisk]
   }
   
-  extension [Self <: RecoveryInstanceDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceDisk] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: PositiveInteger): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

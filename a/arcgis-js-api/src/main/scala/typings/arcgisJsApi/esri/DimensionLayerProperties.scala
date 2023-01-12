@@ -29,7 +29,8 @@ object DimensionLayerProperties {
     __obj.asInstanceOf[DimensionLayerProperties]
   }
   
-  extension [Self <: DimensionLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setSource(value: DimensionAnalysisProperties): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

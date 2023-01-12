@@ -279,7 +279,8 @@ object sapUiUnifiedCalendarDateIntervalMod {
       __obj.asInstanceOf[CalendarDateIntervalSettings]
     }
     
-    extension [Self <: CalendarDateIntervalSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarDateIntervalSettings] (val x: Self) extends AnyVal {
       
       inline def setDays(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

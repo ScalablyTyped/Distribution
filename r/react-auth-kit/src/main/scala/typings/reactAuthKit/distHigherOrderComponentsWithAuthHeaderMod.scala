@@ -35,7 +35,8 @@ object distHigherOrderComponentsWithAuthHeaderMod {
       __obj.asInstanceOf[withAuthHeaderProps]
     }
     
-    extension [Self <: withAuthHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: withAuthHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAuthHeader(value: String): Self = StObject.set(x, "authHeader", value.asInstanceOf[js.Any])
     }

@@ -146,7 +146,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setInlineMath(value: Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Bubbles]
     }
     
-    extension [Self <: Bubbles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bubbles] (val x: Self) extends AnyVal {
       
       inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object anon {
       __obj.asInstanceOf[Display]
     }
     
-    extension [Self <: Display](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -255,7 +259,8 @@ object anon {
       __obj.asInstanceOf[Down]
     }
     
-    extension [Self <: Down](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Down] (val x: Self) extends AnyVal {
       
       inline def setDown(value: Boolean): Self = StObject.set(x, "down", value.asInstanceOf[js.Any])
       
@@ -278,7 +283,8 @@ object anon {
       __obj.asInstanceOf[ExcludeIframes]
     }
     
-    extension [Self <: ExcludeIframes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeIframes] (val x: Self) extends AnyVal {
       
       inline def setExcludeIframes(value: Boolean): Self = StObject.set(x, "excludeIframes", value.asInstanceOf[js.Any])
       
@@ -301,7 +307,8 @@ object anon {
       __obj.asInstanceOf[F]
     }
     
-    extension [Self <: F](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: F] (val x: Self) extends AnyVal {
       
       inline def setF(value: Double): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
       
@@ -2792,7 +2799,8 @@ object anon {
       __obj.asInstanceOf[Indexf]
     }
     
-    extension [Self <: Indexf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Indexf] (val x: Self) extends AnyVal {
       
       inline def setIndexf(value: Double): Self = StObject.set(x, "indexf", value.asInstanceOf[js.Any])
       
@@ -2819,7 +2827,8 @@ object anon {
       __obj.asInstanceOf[InlineMath]
     }
     
-    extension [Self <: InlineMath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineMath] (val x: Self) extends AnyVal {
       
       inline def setInlineMath(value: Any): Self = StObject.set(x, "inlineMath", value.asInstanceOf[js.Any])
       
@@ -2846,7 +2855,8 @@ object anon {
       __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Next](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Boolean): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -2865,7 +2875,8 @@ object anon {
       __obj.asInstanceOf[SkipHtmlTags]
     }
     
-    extension [Self <: SkipHtmlTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipHtmlTags] (val x: Self) extends AnyVal {
       
       inline def setSkipHtmlTags(value: js.Array[String]): Self = StObject.set(x, "skipHtmlTags", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object NumericMenuExposed {
     __obj.asInstanceOf[NumericMenuExposed]
   }
   
-  extension [Self <: NumericMenuExposed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericMenuExposed] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

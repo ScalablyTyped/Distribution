@@ -18,7 +18,8 @@ object ValueSchemaUtilTokenSchem {
     __obj.asInstanceOf[ValueSchemaUtilTokenSchem]
   }
   
-  extension [Self <: ValueSchemaUtilTokenSchem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSchemaUtilTokenSchem] (val x: Self) extends AnyVal {
     
     inline def setUNSAFE_util(value: OmitDistributive[MISSINGTOKEN, attributes]): Self = StObject.set(x, "UNSAFE_util", value.asInstanceOf[js.Any])
   }

@@ -1016,7 +1016,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[CreateReadStreamOptions]
     }
     
-    extension [Self <: CreateReadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateReadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -1063,7 +1064,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[CreateWriteStreamOptions]
     }
     
-    extension [Self <: CreateWriteStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateWriteStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -1098,7 +1100,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[FileChangeInfo[T]]
     }
     
-    extension [Self <: FileChangeInfo[?], T /* <: String | Buffer */](x: Self & FileChangeInfo[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileChangeInfo[?], T /* <: String | Buffer */] (val x: Self & FileChangeInfo[T]) extends AnyVal {
       
       inline def setEventType(value: WatchEventType): Self = StObject.set(x, "eventType", value.asInstanceOf[js.Any])
       
@@ -1685,7 +1688,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[FileReadOptions[T]]
     }
     
-    extension [Self <: FileReadOptions[?], T /* <: ArrayBufferView */](x: Self & FileReadOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileReadOptions[?], T /* <: ArrayBufferView */] (val x: Self & FileReadOptions[T]) extends AnyVal {
       
       inline def setBuffer(value: T): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -1724,7 +1728,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[FileReadResult[T]]
     }
     
-    extension [Self <: FileReadResult[?], T /* <: ArrayBufferView */](x: Self & FileReadResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileReadResult[?], T /* <: ArrayBufferView */] (val x: Self & FileReadResult[T]) extends AnyVal {
       
       inline def setBuffer(value: T): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -1745,7 +1750,8 @@ object fsPromisesMod {
       __obj.asInstanceOf[FlagAndOpenMode]
     }
     
-    extension [Self <: FlagAndOpenMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagAndOpenMode] (val x: Self) extends AnyVal {
       
       inline def setFlag(value: OpenMode): Self = StObject.set(x, "flag", value.asInstanceOf[js.Any])
       

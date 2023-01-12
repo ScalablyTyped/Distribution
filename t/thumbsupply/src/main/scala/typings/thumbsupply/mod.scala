@@ -24,7 +24,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[AvailableSize]
     }
     
-    extension [Self <: AvailableSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AvailableSize] (val x: Self) extends AnyVal {
       
       inline def setLARGE(value: Size): Self = StObject.set(x, "LARGE", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCacheDir(value: String): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ThumbnailSupplier]
     }
     
-    extension [Self <: ThumbnailSupplier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbnailSupplier] (val x: Self) extends AnyVal {
       
       inline def setCreateThumbnail(value: String => Unit): Self = StObject.set(x, "createThumbnail", js.Any.fromFunction1(value))
       

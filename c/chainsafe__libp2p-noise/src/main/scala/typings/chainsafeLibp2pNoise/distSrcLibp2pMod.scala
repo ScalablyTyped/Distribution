@@ -23,7 +23,8 @@ object distSrcLibp2pMod {
       __obj.asInstanceOf[KeyPair]
     }
     
-    extension [Self <: KeyPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
       
       inline def setPrivateKey(value: js.typedarray.Uint8Array): Self = StObject.set(x, "privateKey", value.asInstanceOf[js.Any])
       

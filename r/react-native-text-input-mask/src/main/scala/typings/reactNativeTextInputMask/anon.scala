@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ContentSize]
     }
     
-    extension [Self <: ContentSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSize] (val x: Self) extends AnyVal {
       
       inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[ContentSizeHeight]
     }
     
-    extension [Self <: ContentSizeHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSizeHeight] (val x: Self) extends AnyVal {
       
       inline def setContentSize(value: Height): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
     }
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -88,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -107,7 +111,8 @@ object anon {
       __obj.asInstanceOf[NativeEvent]
     }
     
-    extension [Self <: NativeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEvent] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: ContentSize): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -124,7 +129,8 @@ object anon {
       __obj.asInstanceOf[NativeEventContentSizeHeight]
     }
     
-    extension [Self <: NativeEventContentSizeHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEventContentSizeHeight] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: ContentSizeHeight): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -141,7 +147,8 @@ object anon {
       __obj.asInstanceOf[NativeEventText]
     }
     
-    extension [Self <: NativeEventText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeEventText] (val x: Self) extends AnyVal {
       
       inline def setNativeEvent(value: Text): Self = StObject.set(x, "nativeEvent", value.asInstanceOf[js.Any])
     }
@@ -158,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

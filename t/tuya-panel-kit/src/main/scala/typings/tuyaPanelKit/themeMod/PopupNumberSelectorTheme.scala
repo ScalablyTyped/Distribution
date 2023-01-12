@@ -17,7 +17,8 @@ object PopupNumberSelectorTheme {
     __obj.asInstanceOf[PopupNumberSelectorTheme]
   }
   
-  extension [Self <: PopupNumberSelectorTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupNumberSelectorTheme] (val x: Self) extends AnyVal {
     
     inline def setCellPlusColor(value: String): Self = StObject.set(x, "cellPlusColor", value.asInstanceOf[js.Any])
     

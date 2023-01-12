@@ -29,7 +29,8 @@ object Detectnoop {
     __obj.asInstanceOf[Detectnoop[TPartialDocument, TDocument]]
   }
   
-  extension [Self <: Detectnoop[?, ?], TPartialDocument, TDocument](x: Self & (Detectnoop[TPartialDocument, TDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Detectnoop[?, ?], TPartialDocument, TDocument] (val x: Self & (Detectnoop[TPartialDocument, TDocument])) extends AnyVal {
     
     inline def setDetect_noop(value: Boolean): Self = StObject.set(x, "detect_noop", value.asInstanceOf[js.Any])
     

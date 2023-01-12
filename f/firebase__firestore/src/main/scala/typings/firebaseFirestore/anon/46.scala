@@ -16,7 +16,8 @@ object `46` {
     __obj.asInstanceOf[`46`]
   }
   
-  extension [Self <: `46`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `46`] (val x: Self) extends AnyVal {
     
     inline def setForEach(value: js.Function1[/* el */ PersistencePromise[Any], Unit] => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
   }

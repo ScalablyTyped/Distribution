@@ -16,7 +16,8 @@ object Component {
     __obj.asInstanceOf[Component[SubheaderTypographyComponent]]
   }
   
-  extension [Self <: Component[?], SubheaderTypographyComponent /* <: ElementType[Any] */](x: Self & Component[SubheaderTypographyComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Component[?], SubheaderTypographyComponent /* <: ElementType[Any] */] (val x: Self & Component[SubheaderTypographyComponent]) extends AnyVal {
     
     inline def setComponent(value: SubheaderTypographyComponent): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

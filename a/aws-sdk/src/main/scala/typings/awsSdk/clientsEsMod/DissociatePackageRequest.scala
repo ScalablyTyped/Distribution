@@ -23,7 +23,8 @@ object DissociatePackageRequest {
     __obj.asInstanceOf[DissociatePackageRequest]
   }
   
-  extension [Self <: DissociatePackageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DissociatePackageRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

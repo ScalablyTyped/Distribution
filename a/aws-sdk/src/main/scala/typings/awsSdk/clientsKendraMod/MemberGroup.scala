@@ -23,7 +23,8 @@ object MemberGroup {
     __obj.asInstanceOf[MemberGroup]
   }
   
-  extension [Self <: MemberGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberGroup] (val x: Self) extends AnyVal {
     
     inline def setDataSourceId(value: DataSourceId): Self = StObject.set(x, "DataSourceId", value.asInstanceOf[js.Any])
     

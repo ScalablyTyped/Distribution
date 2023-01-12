@@ -15,7 +15,8 @@ object ResetCacheOutput {
     __obj.asInstanceOf[ResetCacheOutput]
   }
   
-  extension [Self <: ResetCacheOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetCacheOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

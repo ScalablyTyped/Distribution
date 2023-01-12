@@ -16,7 +16,8 @@ object PartialClassNameMapTreeVi {
     __obj.asInstanceOf[PartialClassNameMapTreeVi]
   }
   
-  extension [Self <: PartialClassNameMapTreeVi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTreeVi] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PrepareQueryRequest {
     __obj.asInstanceOf[PrepareQueryRequest]
   }
   
-  extension [Self <: PrepareQueryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrepareQueryRequest] (val x: Self) extends AnyVal {
     
     inline def setQueryString(value: QueryString): Self = StObject.set(x, "QueryString", value.asInstanceOf[js.Any])
     

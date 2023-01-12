@@ -15,7 +15,8 @@ object BufferCreatedData {
     __obj.asInstanceOf[BufferCreatedData]
   }
   
-  extension [Self <: BufferCreatedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferCreatedData] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: TrackSet): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }

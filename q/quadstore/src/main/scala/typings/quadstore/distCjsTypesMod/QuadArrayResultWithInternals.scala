@@ -28,7 +28,8 @@ object QuadArrayResultWithInternals {
     __obj.asInstanceOf[QuadArrayResultWithInternals]
   }
   
-  extension [Self <: QuadArrayResultWithInternals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuadArrayResultWithInternals] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: js.Array[TermName]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

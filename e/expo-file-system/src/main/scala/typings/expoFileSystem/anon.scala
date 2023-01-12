@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[DirectoryUri]
     }
     
-    extension [Self <: DirectoryUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryUri] (val x: Self) extends AnyVal {
       
       inline def setDirectoryUri(value: String): Self = StObject.set(x, "directoryUri", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Exists]
     }
     
-    extension [Self <: Exists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exists] (val x: Self) extends AnyVal {
       
       inline def setExists(value: `true`): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Granted]
     }
     
-    extension [Self <: Granted](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Granted] (val x: Self) extends AnyVal {
       
       inline def setGranted(value: `false`): Self = StObject.set(x, "granted", value.asInstanceOf[js.Any])
     }
@@ -131,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Idempotent]
     }
     
-    extension [Self <: Idempotent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Idempotent] (val x: Self) extends AnyVal {
       
       inline def setIdempotent(value: Boolean): Self = StObject.set(x, "idempotent", value.asInstanceOf[js.Any])
       
@@ -150,7 +155,8 @@ object anon {
       __obj.asInstanceOf[Intermediates]
     }
     
-    extension [Self <: Intermediates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intermediates] (val x: Self) extends AnyVal {
       
       inline def setIntermediates(value: Boolean): Self = StObject.set(x, "intermediates", value.asInstanceOf[js.Any])
       
@@ -181,7 +187,8 @@ object anon {
       __obj.asInstanceOf[IsDirectory]
     }
     
-    extension [Self <: IsDirectory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDirectory] (val x: Self) extends AnyVal {
       
       inline def setExists(value: `false`): Self = StObject.set(x, "exists", value.asInstanceOf[js.Any])
       
@@ -210,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Md5]
     }
     
-    extension [Self <: Md5](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Md5] (val x: Self) extends AnyVal {
       
       inline def setMd5(value: Boolean): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
       
@@ -242,7 +250,8 @@ object anon {
       __obj.asInstanceOf[uploadTypeBINARYCONTENTun]
     }
     
-    extension [Self <: uploadTypeBINARYCONTENTun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uploadTypeBINARYCONTENTun] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: Record[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -288,7 +297,8 @@ object anon {
       __obj.asInstanceOf[uploadTypeMULTIPARTfieldN]
     }
     
-    extension [Self <: uploadTypeMULTIPARTfieldN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: uploadTypeMULTIPARTfieldN] (val x: Self) extends AnyVal {
       
       inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
       

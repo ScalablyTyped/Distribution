@@ -48,7 +48,8 @@ object ReservationFleetInstanceSpecification {
     __obj.asInstanceOf[ReservationFleetInstanceSpecification]
   }
   
-  extension [Self <: ReservationFleetInstanceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationFleetInstanceSpecification] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: String): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object Resources {
     __obj.asInstanceOf[Resources]
   }
   
-  extension [Self <: Resources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resources] (val x: Self) extends AnyVal {
     
     inline def setRate(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['rate-limit'] */ js.Any

@@ -30,7 +30,8 @@ object distLoaderFallingLinesMod {
       __obj.asInstanceOf[FallingLinesProps]
     }
     
-    extension [Self <: FallingLinesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FallingLinesProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

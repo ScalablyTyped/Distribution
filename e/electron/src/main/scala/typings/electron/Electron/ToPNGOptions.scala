@@ -18,7 +18,8 @@ object ToPNGOptions {
     __obj.asInstanceOf[ToPNGOptions]
   }
   
-  extension [Self <: ToPNGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToPNGOptions] (val x: Self) extends AnyVal {
     
     inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object SchemaGroup {
     __obj.asInstanceOf[SchemaGroup]
   }
   
-  extension [Self <: SchemaGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaGroup] (val x: Self) extends AnyVal {
     
     inline def setChoice(value: Boolean): Self = StObject.set(x, "choice", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ReturnShippingLabel {
     __obj.asInstanceOf[ReturnShippingLabel]
   }
   
-  extension [Self <: ReturnShippingLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnShippingLabel] (val x: Self) extends AnyVal {
     
     inline def setCarrier(value: String): Self = StObject.set(x, "carrier", value.asInstanceOf[js.Any])
     

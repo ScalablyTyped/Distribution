@@ -60,7 +60,8 @@ object LinePaintPropsPossiblyEvaluated {
     __obj.asInstanceOf[LinePaintPropsPossiblyEvaluated]
   }
   
-  extension [Self <: LinePaintPropsPossiblyEvaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinePaintPropsPossiblyEvaluated] (val x: Self) extends AnyVal {
     
     inline def `setLine-blur`(value: PossiblyEvaluatedPropertyValue[Double]): Self = StObject.set(x, "line-blur", value.asInstanceOf[js.Any])
     

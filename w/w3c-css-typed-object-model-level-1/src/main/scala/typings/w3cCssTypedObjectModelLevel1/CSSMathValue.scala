@@ -31,7 +31,8 @@ object CSSMathValue {
     __obj.asInstanceOf[CSSMathValue]
   }
   
-  extension [Self <: CSSMathValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSMathValue] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: CSSMathOperator): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
   }

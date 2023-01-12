@@ -138,7 +138,8 @@ object AriaRoleDescription {
     __obj.asInstanceOf[AriaRoleDescription]
   }
   
-  extension [Self <: AriaRoleDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaRoleDescription] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: VgValueRef | js.Array[VgValueRefteststringundef]): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

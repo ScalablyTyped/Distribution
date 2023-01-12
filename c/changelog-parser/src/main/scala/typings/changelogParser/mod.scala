@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Changelog]
     }
     
-    extension [Self <: Changelog](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changelog] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       

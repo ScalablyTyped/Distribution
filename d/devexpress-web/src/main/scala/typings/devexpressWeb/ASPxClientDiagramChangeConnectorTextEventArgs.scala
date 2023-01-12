@@ -33,7 +33,8 @@ object ASPxClientDiagramChangeConnectorTextEventArgs {
     __obj.asInstanceOf[ASPxClientDiagramChangeConnectorTextEventArgs]
   }
   
-  extension [Self <: ASPxClientDiagramChangeConnectorTextEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDiagramChangeConnectorTextEventArgs] (val x: Self) extends AnyVal {
     
     inline def setConnector(value: DiagramConnector): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
     

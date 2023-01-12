@@ -22,7 +22,8 @@ object AnalysisKuromojiStemmerTokenFilter {
     __obj.asInstanceOf[AnalysisKuromojiStemmerTokenFilter]
   }
   
-  extension [Self <: AnalysisKuromojiStemmerTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisKuromojiStemmerTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setMinimum_length(value: integer): Self = StObject.set(x, "minimum_length", value.asInstanceOf[js.Any])
     

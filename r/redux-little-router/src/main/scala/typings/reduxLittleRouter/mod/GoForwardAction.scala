@@ -18,7 +18,8 @@ object GoForwardAction {
     __obj.asInstanceOf[GoForwardAction]
   }
   
-  extension [Self <: GoForwardAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoForwardAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: /* "ROUTER_GO_FORWARD" */ String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

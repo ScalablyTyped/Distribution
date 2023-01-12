@@ -37,7 +37,8 @@ object XFastSAXSerializable {
     __obj.asInstanceOf[XFastSAXSerializable]
   }
   
-  extension [Self <: XFastSAXSerializable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastSAXSerializable] (val x: Self) extends AnyVal {
     
     inline def setFastSerialize(
       value: (XFastDocumentHandler, XFastTokenHandler, SeqEquiv[StringPair], SeqEquiv[Pair[String, Double]]) => Unit

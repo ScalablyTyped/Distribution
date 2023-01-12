@@ -36,7 +36,8 @@ object CardResponse {
     __obj.asInstanceOf[CardResponse]
   }
   
-  extension [Self <: CardResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthentication_result(value: AuthenticationResponse): Self = StObject.set(x, "authentication_result", value.asInstanceOf[js.Any])
     

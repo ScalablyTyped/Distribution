@@ -18,7 +18,8 @@ object GeoJSONRawGeometry {
     __obj.asInstanceOf[GeoJSONRawGeometry[T, C]]
   }
   
-  extension [Self <: GeoJSONRawGeometry[?, ?], T, C](x: Self & (GeoJSONRawGeometry[T, C])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONRawGeometry[?, ?], T, C] (val x: Self & (GeoJSONRawGeometry[T, C])) extends AnyVal {
     
     inline def setCoordinates(value: C): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

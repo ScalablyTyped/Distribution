@@ -20,7 +20,8 @@ object ForwardedBaseModOptionsprSaveToInternal {
     __obj.asInstanceOf[ForwardedBaseModOptionsprSaveToInternal]
   }
   
-  extension [Self <: ForwardedBaseModOptionsprSaveToInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedBaseModOptionsprSaveToInternal] (val x: Self) extends AnyVal {
     
     inline def setProviders(value: PartialAndroidDefaultProvAppBuildGradle): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     

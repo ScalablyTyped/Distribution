@@ -133,7 +133,8 @@ object toolTipMod {
       __obj.asInstanceOf[TooltipProps]
     }
     
-    extension [Self <: TooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipProps] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: AnimationType): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       

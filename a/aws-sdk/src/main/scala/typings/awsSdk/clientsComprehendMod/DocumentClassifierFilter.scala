@@ -33,7 +33,8 @@ object DocumentClassifierFilter {
     __obj.asInstanceOf[DocumentClassifierFilter]
   }
   
-  extension [Self <: DocumentClassifierFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentClassifierFilter] (val x: Self) extends AnyVal {
     
     inline def setDocumentClassifierName(value: ComprehendArnName): Self = StObject.set(x, "DocumentClassifierName", value.asInstanceOf[js.Any])
     

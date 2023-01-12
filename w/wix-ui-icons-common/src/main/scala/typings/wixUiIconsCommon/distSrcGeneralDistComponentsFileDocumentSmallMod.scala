@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFileDocumentSmallMod extends Shortcut {
       __obj.asInstanceOf[FileDocumentSmallProps]
     }
     
-    extension [Self <: FileDocumentSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDocumentSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

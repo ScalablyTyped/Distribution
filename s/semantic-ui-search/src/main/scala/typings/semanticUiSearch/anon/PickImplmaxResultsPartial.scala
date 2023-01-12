@@ -97,7 +97,8 @@ object PickImplmaxResultsPartial {
     __obj.asInstanceOf[PickImplmaxResultsPartial]
   }
   
-  extension [Self <: PickImplmaxResultsPartial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplmaxResultsPartial] (val x: Self) extends AnyVal {
     
     inline def setApiSettings(value: ApiSettings): Self = StObject.set(x, "apiSettings", value.asInstanceOf[js.Any])
     

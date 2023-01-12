@@ -28,7 +28,8 @@ object SyncResourceResponse {
     __obj.asInstanceOf[SyncResourceResponse]
   }
   
-  extension [Self <: SyncResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setActionTaken(value: SyncAction): Self = StObject.set(x, "actionTaken", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PublicKeyList {
     __obj.asInstanceOf[PublicKeyList]
   }
   
-  extension [Self <: PublicKeyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: PublicKeySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

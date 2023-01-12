@@ -33,7 +33,8 @@ object StripeApplePay {
     __obj.asInstanceOf[StripeApplePay]
   }
   
-  extension [Self <: StripeApplePay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeApplePay] (val x: Self) extends AnyVal {
     
     inline def setBuildSession(
       value: (StripeApplePayPaymentRequest, js.Function2[

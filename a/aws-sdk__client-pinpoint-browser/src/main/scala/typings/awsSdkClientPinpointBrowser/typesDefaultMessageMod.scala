@@ -28,7 +28,8 @@ object typesDefaultMessageMod {
       __obj.asInstanceOf[DefaultMessage]
     }
     
-    extension [Self <: DefaultMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesDefaultMessageMod {
       __obj.asInstanceOf[UnmarshalledDefaultMessage]
     }
     
-    extension [Self <: UnmarshalledDefaultMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledDefaultMessage] (val x: Self) extends AnyVal {
       
       inline def setSubstitutions(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Substitutions", value.asInstanceOf[js.Any])
       

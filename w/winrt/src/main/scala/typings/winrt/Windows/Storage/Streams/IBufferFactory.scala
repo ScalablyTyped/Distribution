@@ -15,7 +15,8 @@ object IBufferFactory {
     __obj.asInstanceOf[IBufferFactory]
   }
   
-  extension [Self <: IBufferFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBufferFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Double => Buffer): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

@@ -19,7 +19,8 @@ object IPacket {
     __obj.asInstanceOf[IPacket]
   }
   
-  extension [Self <: IPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: PacketCmd): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
     

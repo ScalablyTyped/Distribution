@@ -25,7 +25,8 @@ object TypeofimportedINCRBY {
     __obj.asInstanceOf[TypeofimportedINCRBY]
   }
   
-  extension [Self <: TypeofimportedINCRBY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofimportedINCRBY] (val x: Self) extends AnyVal {
     
     inline def setFIRST_KEY_INDEX(value: /* 1 */ Double): Self = StObject.set(x, "FIRST_KEY_INDEX", value.asInstanceOf[js.Any])
     

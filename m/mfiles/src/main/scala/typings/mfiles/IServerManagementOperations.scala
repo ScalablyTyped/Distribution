@@ -43,7 +43,8 @@ object IServerManagementOperations {
     __obj.asInstanceOf[IServerManagementOperations]
   }
   
-  extension [Self <: IServerManagementOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerManagementOperations] (val x: Self) extends AnyVal {
     
     inline def setBackupMasterDB(value: (String, Boolean, Double, IImpersonation) => Unit): Self = StObject.set(x, "BackupMasterDB", js.Any.fromFunction4(value))
     

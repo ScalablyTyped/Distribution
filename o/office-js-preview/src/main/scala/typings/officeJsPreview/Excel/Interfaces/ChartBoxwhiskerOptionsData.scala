@@ -57,7 +57,8 @@ object ChartBoxwhiskerOptionsData {
     __obj.asInstanceOf[ChartBoxwhiskerOptionsData]
   }
   
-  extension [Self <: ChartBoxwhiskerOptionsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBoxwhiskerOptionsData] (val x: Self) extends AnyVal {
     
     inline def setQuartileCalculation(value: ChartBoxQuartileCalculation | Inclusive | Exclusive): Self = StObject.set(x, "quartileCalculation", value.asInstanceOf[js.Any])
     

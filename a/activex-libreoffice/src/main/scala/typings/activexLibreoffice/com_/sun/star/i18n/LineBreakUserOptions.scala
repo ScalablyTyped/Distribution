@@ -34,7 +34,8 @@ object LineBreakUserOptions {
     __obj.asInstanceOf[LineBreakUserOptions]
   }
   
-  extension [Self <: LineBreakUserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBreakUserOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowHyphenateEnglish(value: Boolean): Self = StObject.set(x, "allowHyphenateEnglish", value.asInstanceOf[js.Any])
     

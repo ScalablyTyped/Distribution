@@ -44,7 +44,8 @@ object TriangulationDataSourceSettings {
     __obj.asInstanceOf[TriangulationDataSourceSettings]
   }
   
-  extension [Self <: TriangulationDataSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TriangulationDataSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

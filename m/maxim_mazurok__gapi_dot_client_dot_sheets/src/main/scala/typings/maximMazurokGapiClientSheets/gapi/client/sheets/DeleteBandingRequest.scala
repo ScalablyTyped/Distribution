@@ -16,7 +16,8 @@ object DeleteBandingRequest {
     __obj.asInstanceOf[DeleteBandingRequest]
   }
   
-  extension [Self <: DeleteBandingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBandingRequest] (val x: Self) extends AnyVal {
     
     inline def setBandedRangeId(value: Double): Self = StObject.set(x, "bandedRangeId", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object BatchTransformInput {
     __obj.asInstanceOf[BatchTransformInput]
   }
   
-  extension [Self <: BatchTransformInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchTransformInput] (val x: Self) extends AnyVal {
     
     inline def setDataCapturedDestinationS3Uri(value: DestinationS3Uri): Self = StObject.set(x, "DataCapturedDestinationS3Uri", value.asInstanceOf[js.Any])
     

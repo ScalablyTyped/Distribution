@@ -55,7 +55,8 @@ object TypeofNgForOf {
     __obj.asInstanceOf[TypeofNgForOf]
   }
   
-  extension [Self <: TypeofNgForOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofNgForOf] (val x: Self) extends AnyVal {
     
     inline def setNgTemplateContextGuard(
       value: (typings.angularCommon.mod.NgForOf[Any, Any], Any) => /* is @angular/common.@angular/common.NgForOfContext<T, U> */ Boolean

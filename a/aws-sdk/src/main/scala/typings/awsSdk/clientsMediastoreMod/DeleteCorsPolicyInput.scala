@@ -18,7 +18,8 @@ object DeleteCorsPolicyInput {
     __obj.asInstanceOf[DeleteCorsPolicyInput]
   }
   
-  extension [Self <: DeleteCorsPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCorsPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }

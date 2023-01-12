@@ -24,7 +24,8 @@ object ɵɵInjectorDef {
     __obj.asInstanceOf[ɵɵInjectorDef[T]]
   }
   
-  extension [Self <: ɵɵInjectorDef[?], T](x: Self & ɵɵInjectorDef[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵɵInjectorDef[?], T] (val x: Self & ɵɵInjectorDef[T]) extends AnyVal {
     
     inline def setImports(value: js.Array[InjectorType[Any] | InjectorTypeWithProviders[Any]]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
     

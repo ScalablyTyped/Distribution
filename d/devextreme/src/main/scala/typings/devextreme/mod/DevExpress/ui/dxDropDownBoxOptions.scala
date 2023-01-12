@@ -369,7 +369,8 @@ object dxDropDownBoxOptions {
     __obj.asInstanceOf[dxDropDownBoxOptions]
   }
   
-  extension [Self <: dxDropDownBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDropDownBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setAcceptCustomValue(value: Boolean): Self = StObject.set(x, "acceptCustomValue", value.asInstanceOf[js.Any])
     

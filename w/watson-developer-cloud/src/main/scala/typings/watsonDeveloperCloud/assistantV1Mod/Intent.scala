@@ -29,7 +29,8 @@ object Intent {
     __obj.asInstanceOf[Intent]
   }
   
-  extension [Self <: Intent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Intent] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: String): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

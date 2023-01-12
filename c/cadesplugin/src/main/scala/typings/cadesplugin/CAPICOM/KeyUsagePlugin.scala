@@ -16,7 +16,8 @@ object KeyUsagePlugin {
     __obj.asInstanceOf[KeyUsagePlugin]
   }
   
-  extension [Self <: KeyUsagePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyUsagePlugin] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_DIGITAL_SIGNATURE_KEY_USAGE(value: `128`): Self = StObject.set(x, "CAPICOM_DIGITAL_SIGNATURE_KEY_USAGE", value.asInstanceOf[js.Any])
   }

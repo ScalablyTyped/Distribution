@@ -18,7 +18,8 @@ object GetIntrospectionSchemaResponse {
     __obj.asInstanceOf[GetIntrospectionSchemaResponse]
   }
   
-  extension [Self <: GetIntrospectionSchemaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntrospectionSchemaResponse] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: _Blob): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

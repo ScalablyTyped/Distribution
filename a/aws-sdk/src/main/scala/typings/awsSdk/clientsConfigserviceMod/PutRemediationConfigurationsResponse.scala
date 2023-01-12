@@ -18,7 +18,8 @@ object PutRemediationConfigurationsResponse {
     __obj.asInstanceOf[PutRemediationConfigurationsResponse]
   }
   
-  extension [Self <: PutRemediationConfigurationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRemediationConfigurationsResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedBatches(value: FailedRemediationBatches): Self = StObject.set(x, "FailedBatches", value.asInstanceOf[js.Any])
     

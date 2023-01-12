@@ -20,7 +20,8 @@ object ReleasePrevious {
     __obj.asInstanceOf[ReleasePrevious]
   }
   
-  extension [Self <: ReleasePrevious](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleasePrevious] (val x: Self) extends AnyVal {
     
     inline def setKeyDef(value: pointerKey): Self = StObject.set(x, "keyDef", value.asInstanceOf[js.Any])
     

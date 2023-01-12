@@ -19,7 +19,8 @@ object Database {
     __obj.asInstanceOf[Database]
   }
   
-  extension [Self <: Database](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Database] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: typings.nginstackEngine.libDatabaseDbtrackerMod.Database): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

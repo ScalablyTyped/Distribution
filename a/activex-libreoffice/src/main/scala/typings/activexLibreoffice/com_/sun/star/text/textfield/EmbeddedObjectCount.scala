@@ -57,7 +57,8 @@ object EmbeddedObjectCount {
     __obj.asInstanceOf[EmbeddedObjectCount]
   }
   
-  extension [Self <: EmbeddedObjectCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedObjectCount] (val x: Self) extends AnyVal {
     
     inline def setNumberingType(value: Double): Self = StObject.set(x, "NumberingType", value.asInstanceOf[js.Any])
   }

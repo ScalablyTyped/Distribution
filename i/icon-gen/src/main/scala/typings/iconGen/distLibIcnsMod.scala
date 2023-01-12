@@ -47,7 +47,8 @@ object distLibIcnsMod {
       __obj.asInstanceOf[ICNSOptions]
     }
     
-    extension [Self <: ICNSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICNSOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

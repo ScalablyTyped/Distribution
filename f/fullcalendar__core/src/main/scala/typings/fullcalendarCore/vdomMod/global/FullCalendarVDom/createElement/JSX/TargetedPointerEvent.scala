@@ -244,7 +244,8 @@ object TargetedPointerEvent {
     __obj.asInstanceOf[TargetedPointerEvent[Target]]
   }
   
-  extension [Self <: TargetedPointerEvent[?], Target /* <: EventTarget */](x: Self & TargetedPointerEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedPointerEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedPointerEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

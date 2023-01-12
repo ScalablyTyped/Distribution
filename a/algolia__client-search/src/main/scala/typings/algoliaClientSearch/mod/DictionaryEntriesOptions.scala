@@ -18,7 +18,8 @@ object DictionaryEntriesOptions {
     __obj.asInstanceOf[DictionaryEntriesOptions]
   }
   
-  extension [Self <: DictionaryEntriesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryEntriesOptions] (val x: Self) extends AnyVal {
     
     inline def setDictionaryEntries(value: js.Array[DictionaryEntry]): Self = StObject.set(x, "dictionaryEntries", value.asInstanceOf[js.Any])
     

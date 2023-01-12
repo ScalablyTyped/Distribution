@@ -15,7 +15,8 @@ object ViewContentArg {
     __obj.asInstanceOf[ViewContentArg]
   }
   
-  extension [Self <: ViewContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewContentArg] (val x: Self) extends AnyVal {
     
     inline def setView(value: ViewApi): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }

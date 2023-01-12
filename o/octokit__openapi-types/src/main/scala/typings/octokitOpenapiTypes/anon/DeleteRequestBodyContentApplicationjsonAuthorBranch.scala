@@ -78,7 +78,8 @@ object DeleteRequestBodyContentApplicationjsonAuthorBranch {
     __obj.asInstanceOf[DeleteRequestBodyContentApplicationjsonAuthorBranch]
   }
   
-  extension [Self <: DeleteRequestBodyContentApplicationjsonAuthorBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRequestBodyContentApplicationjsonAuthorBranch] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: RequestBodyContentApplicationjsonAuthorBranch): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
     

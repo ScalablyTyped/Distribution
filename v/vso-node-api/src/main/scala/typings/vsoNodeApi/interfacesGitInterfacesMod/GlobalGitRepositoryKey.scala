@@ -28,7 +28,8 @@ object GlobalGitRepositoryKey {
     __obj.asInstanceOf[GlobalGitRepositoryKey]
   }
   
-  extension [Self <: GlobalGitRepositoryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalGitRepositoryKey] (val x: Self) extends AnyVal {
     
     inline def setCollectionId(value: String): Self = StObject.set(x, "collectionId", value.asInstanceOf[js.Any])
     

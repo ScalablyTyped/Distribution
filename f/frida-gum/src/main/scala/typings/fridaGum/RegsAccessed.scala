@@ -17,7 +17,8 @@ object RegsAccessed {
     __obj.asInstanceOf[RegsAccessed[T]]
   }
   
-  extension [Self <: RegsAccessed[?], T](x: Self & RegsAccessed[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegsAccessed[?], T] (val x: Self & RegsAccessed[T]) extends AnyVal {
     
     inline def setRead(value: js.Array[T]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
     

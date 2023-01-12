@@ -20,7 +20,8 @@ object UsingOperation {
     __obj.asInstanceOf[UsingOperation]
   }
   
-  extension [Self <: UsingOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsingOperation] (val x: Self) extends AnyVal {
     
     inline def setAffectsData(value: Boolean): Self = StObject.set(x, "affectsData", value.asInstanceOf[js.Any])
     

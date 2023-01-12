@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[ChooseFileSystemEntriesFi]
     }
     
-    extension [Self <: ChooseFileSystemEntriesFi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseFileSystemEntriesFi] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ChooseFileSystemEntriesFiAccepts]
     }
     
-    extension [Self <: ChooseFileSystemEntriesFiAccepts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseFileSystemEntriesFiAccepts] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object anon {
       __obj.asInstanceOf[ChooseFileSystemEntriesFiExcludeAcceptAllOption]
     }
     
-    extension [Self <: ChooseFileSystemEntriesFiExcludeAcceptAllOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseFileSystemEntriesFiExcludeAcceptAllOption] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: js.Array[ChooseFileSystemEntriesOptionsAccepts]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -148,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: BufferSource | Blob | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object anon {
       __obj.asInstanceOf[OpenFilePickerOptionsmult]
     }
     
-    extension [Self <: OpenFilePickerOptionsmult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenFilePickerOptionsmult] (val x: Self) extends AnyVal {
       
       inline def setExcludeAcceptAllOption(value: Boolean): Self = StObject.set(x, "excludeAcceptAllOption", value.asInstanceOf[js.Any])
       
@@ -210,7 +215,8 @@ object anon {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Double): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
@@ -234,7 +240,8 @@ object anon {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -254,7 +261,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: `open-directory`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

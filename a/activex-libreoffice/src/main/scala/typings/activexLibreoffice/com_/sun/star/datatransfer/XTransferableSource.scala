@@ -33,7 +33,8 @@ object XTransferableSource {
     __obj.asInstanceOf[XTransferableSource]
   }
   
-  extension [Self <: XTransferableSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransferableSource] (val x: Self) extends AnyVal {
     
     inline def setDataSourceDescription(value: String): Self = StObject.set(x, "DataSourceDescription", value.asInstanceOf[js.Any])
     

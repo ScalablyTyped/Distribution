@@ -22,7 +22,8 @@ object ApproximateProgress {
     __obj.asInstanceOf[ApproximateProgress]
   }
   
-  extension [Self <: ApproximateProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproximateProgress] (val x: Self) extends AnyVal {
     
     inline def setPercentComplete(value: Double): Self = StObject.set(x, "percentComplete", value.asInstanceOf[js.Any])
     

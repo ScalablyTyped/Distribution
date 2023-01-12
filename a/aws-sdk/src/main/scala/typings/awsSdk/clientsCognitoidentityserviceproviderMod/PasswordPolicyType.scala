@@ -43,7 +43,8 @@ object PasswordPolicyType {
     __obj.asInstanceOf[PasswordPolicyType]
   }
   
-  extension [Self <: PasswordPolicyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordPolicyType] (val x: Self) extends AnyVal {
     
     inline def setMinimumLength(value: PasswordPolicyMinLengthType): Self = StObject.set(x, "MinimumLength", value.asInstanceOf[js.Any])
     

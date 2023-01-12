@@ -69,7 +69,8 @@ object namespacesExperimentsMod {
         __obj.asInstanceOf[ExperimentAPI]
       }
       
-      extension [Self <: ExperimentAPI](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExperimentAPI] (val x: Self) extends AnyVal {
         
         inline def setChild(value: ExperimentAPIChildType): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
         
@@ -98,7 +99,8 @@ object namespacesExperimentsMod {
         __obj.asInstanceOf[ExperimentAPIChildType]
       }
       
-      extension [Self <: ExperimentAPIChildType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExperimentAPIChildType] (val x: Self) extends AnyVal {
         
         inline def setPaths(value: APIPaths): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
         
@@ -138,7 +140,8 @@ object namespacesExperimentsMod {
         __obj.asInstanceOf[ExperimentAPIParentType]
       }
       
-      extension [Self <: ExperimentAPIParentType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ExperimentAPIParentType] (val x: Self) extends AnyVal {
         
         inline def setEvents(value: APIEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
         

@@ -19,7 +19,8 @@ object HLOOKUP {
     __obj.asInstanceOf[HLOOKUP]
   }
   
-  extension [Self <: HLOOKUP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HLOOKUP] (val x: Self) extends AnyVal {
     
     inline def setHLOOKUP(value: `21`): Self = StObject.set(x, "HLOOKUP", value.asInstanceOf[js.Any])
     

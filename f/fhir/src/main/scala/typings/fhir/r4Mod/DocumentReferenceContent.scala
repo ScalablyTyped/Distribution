@@ -25,7 +25,8 @@ object DocumentReferenceContent {
     __obj.asInstanceOf[DocumentReferenceContent]
   }
   
-  extension [Self <: DocumentReferenceContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReferenceContent] (val x: Self) extends AnyVal {
     
     inline def setAttachment(value: Attachment): Self = StObject.set(x, "attachment", value.asInstanceOf[js.Any])
     

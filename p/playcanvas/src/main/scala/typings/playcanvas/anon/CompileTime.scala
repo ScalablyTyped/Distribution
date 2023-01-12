@@ -29,7 +29,8 @@ object CompileTime {
     __obj.asInstanceOf[CompileTime]
   }
   
-  extension [Self <: CompileTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileTime] (val x: Self) extends AnyVal {
     
     inline def setCompileTime(value: Double): Self = StObject.set(x, "compileTime", value.asInstanceOf[js.Any])
     

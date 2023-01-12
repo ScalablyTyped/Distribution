@@ -54,7 +54,8 @@ object RegistryKeyState {
     __obj.asInstanceOf[RegistryKeyState]
   }
   
-  extension [Self <: RegistryKeyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegistryKeyState] (val x: Self) extends AnyVal {
     
     inline def setHive(value: NullableOption[RegistryHive]): Self = StObject.set(x, "hive", value.asInstanceOf[js.Any])
     

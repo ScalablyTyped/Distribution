@@ -45,7 +45,8 @@ object PartialMessages {
     __obj.asInstanceOf[PartialMessages]
   }
   
-  extension [Self <: PartialMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMessages] (val x: Self) extends AnyVal {
     
     inline def setCreateOption(value: (/* _value */ Any, /* searchTerm */ String) => ReactNode): Self = StObject.set(x, "createOption", js.Any.fromFunction2(value))
     

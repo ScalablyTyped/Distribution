@@ -28,7 +28,8 @@ object ExecutionStartedEventDetails {
     __obj.asInstanceOf[ExecutionStartedEventDetails]
   }
   
-  extension [Self <: ExecutionStartedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionStartedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setInput(value: SensitiveData): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

@@ -174,7 +174,8 @@ object SubtypeGroupLayerCapabilitiesQuery {
     __obj.asInstanceOf[SubtypeGroupLayerCapabilitiesQuery]
   }
   
-  extension [Self <: SubtypeGroupLayerCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setMaxRecordCount(value: Double): Self = StObject.set(x, "maxRecordCount", value.asInstanceOf[js.Any])
     

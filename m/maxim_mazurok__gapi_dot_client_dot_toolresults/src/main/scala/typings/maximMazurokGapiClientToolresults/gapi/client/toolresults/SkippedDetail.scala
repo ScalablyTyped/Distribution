@@ -22,7 +22,8 @@ object SkippedDetail {
     __obj.asInstanceOf[SkippedDetail]
   }
   
-  extension [Self <: SkippedDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkippedDetail] (val x: Self) extends AnyVal {
     
     inline def setIncompatibleAppVersion(value: Boolean): Self = StObject.set(x, "incompatibleAppVersion", value.asInstanceOf[js.Any])
     

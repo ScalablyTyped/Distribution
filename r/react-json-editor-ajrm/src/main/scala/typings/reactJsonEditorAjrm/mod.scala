@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[JSONInputProperties]
     }
     
-    extension [Self <: JSONInputProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONInputProperties] (val x: Self) extends AnyVal {
       
       inline def setColors(value: colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object mod {
       __obj.asInstanceOf[colors]
     }
     
-    extension [Self <: colors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: colors] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object mod {
       __obj.asInstanceOf[error]
     }
     
-    extension [Self <: error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: error] (val x: Self) extends AnyVal {
       
       inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
       
@@ -265,7 +268,8 @@ object mod {
       __obj.asInstanceOf[locale]
     }
     
-    extension [Self <: locale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: locale] (val x: Self) extends AnyVal {
       
       inline def setBrace(value: Curly): Self = StObject.set(x, "brace", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object mod {
       __obj.asInstanceOf[style]
     }
     
-    extension [Self <: style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: style] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

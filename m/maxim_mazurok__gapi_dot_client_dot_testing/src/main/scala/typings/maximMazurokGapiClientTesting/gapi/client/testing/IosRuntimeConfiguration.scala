@@ -19,7 +19,8 @@ object IosRuntimeConfiguration {
     __obj.asInstanceOf[IosRuntimeConfiguration]
   }
   
-  extension [Self <: IosRuntimeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosRuntimeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLocales(value: js.Array[Locale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
     

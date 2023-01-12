@@ -19,7 +19,8 @@ object AutoResizeDimensionsRequest {
     __obj.asInstanceOf[AutoResizeDimensionsRequest]
   }
   
-  extension [Self <: AutoResizeDimensionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoResizeDimensionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDataSourceSheetDimensions(value: DataSourceSheetDimensionRange): Self = StObject.set(x, "dataSourceSheetDimensions", value.asInstanceOf[js.Any])
     

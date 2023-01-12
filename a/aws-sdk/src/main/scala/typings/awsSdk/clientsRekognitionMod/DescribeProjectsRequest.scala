@@ -28,7 +28,8 @@ object DescribeProjectsRequest {
     __obj.asInstanceOf[DescribeProjectsRequest]
   }
   
-  extension [Self <: DescribeProjectsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProjectsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ProjectsPageSize): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

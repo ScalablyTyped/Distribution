@@ -16,7 +16,8 @@ object KebabKeysZGMenu {
     __obj.asInstanceOf[KebabKeysZGMenu]
   }
   
-  extension [Self <: KebabKeysZGMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KebabKeysZGMenu] (val x: Self) extends AnyVal {
     
     inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
     

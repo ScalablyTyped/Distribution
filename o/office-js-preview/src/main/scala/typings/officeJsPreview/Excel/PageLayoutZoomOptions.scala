@@ -43,7 +43,8 @@ object PageLayoutZoomOptions {
     __obj.asInstanceOf[PageLayoutZoomOptions]
   }
   
-  extension [Self <: PageLayoutZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageLayoutZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setHorizontalFitToPages(value: Double): Self = StObject.set(x, "horizontalFitToPages", value.asInstanceOf[js.Any])
     

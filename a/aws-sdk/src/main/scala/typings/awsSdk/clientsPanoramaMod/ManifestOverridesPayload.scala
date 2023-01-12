@@ -18,7 +18,8 @@ object ManifestOverridesPayload {
     __obj.asInstanceOf[ManifestOverridesPayload]
   }
   
-  extension [Self <: ManifestOverridesPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestOverridesPayload] (val x: Self) extends AnyVal {
     
     inline def setPayloadData(value: ManifestOverridesPayloadData): Self = StObject.set(x, "PayloadData", value.asInstanceOf[js.Any])
     

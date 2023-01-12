@@ -46,7 +46,8 @@ object NodeSingularCompound {
     __obj.asInstanceOf[NodeSingularCompound]
   }
   
-  extension [Self <: NodeSingularCompound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSingularCompound] (val x: Self) extends AnyVal {
     
     inline def setIsChild(value: () => Boolean): Self = StObject.set(x, "isChild", js.Any.fromFunction0(value))
     

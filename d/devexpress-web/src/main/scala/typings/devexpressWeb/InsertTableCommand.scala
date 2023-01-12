@@ -25,7 +25,8 @@ object InsertTableCommand {
     __obj.asInstanceOf[InsertTableCommand]
   }
   
-  extension [Self <: InsertTableCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertTableCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (Double, Double) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
   }

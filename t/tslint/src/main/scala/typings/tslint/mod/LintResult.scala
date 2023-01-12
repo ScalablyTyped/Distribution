@@ -32,7 +32,8 @@ object LintResult {
     __obj.asInstanceOf[LintResult]
   }
   
-  extension [Self <: LintResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LintResult] (val x: Self) extends AnyVal {
     
     inline def setErrorCount(value: Double): Self = StObject.set(x, "errorCount", value.asInstanceOf[js.Any])
     

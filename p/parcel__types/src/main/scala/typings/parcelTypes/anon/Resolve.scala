@@ -36,7 +36,8 @@ object Resolve {
     __obj.asInstanceOf[Resolve[ConfigType]]
   }
   
-  extension [Self <: Resolve[?], ConfigType](x: Self & Resolve[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolve[?], ConfigType] (val x: Self & Resolve[ConfigType]) extends AnyVal {
     
     inline def setAsset(value: MutableAsset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

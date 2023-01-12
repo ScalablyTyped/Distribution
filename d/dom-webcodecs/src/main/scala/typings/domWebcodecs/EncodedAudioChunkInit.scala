@@ -22,7 +22,8 @@ object EncodedAudioChunkInit {
     __obj.asInstanceOf[EncodedAudioChunkInit]
   }
   
-  extension [Self <: EncodedAudioChunkInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodedAudioChunkInit] (val x: Self) extends AnyVal {
     
     inline def setData(value: AllowSharedBufferSource): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

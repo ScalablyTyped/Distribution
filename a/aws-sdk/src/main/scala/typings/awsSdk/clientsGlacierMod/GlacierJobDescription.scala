@@ -118,7 +118,8 @@ object GlacierJobDescription {
     __obj.asInstanceOf[GlacierJobDescription]
   }
   
-  extension [Self <: GlacierJobDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlacierJobDescription] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ActionCode): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

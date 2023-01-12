@@ -53,7 +53,8 @@ object PlaceAutocompleteResult {
     __obj.asInstanceOf[PlaceAutocompleteResult]
   }
   
-  extension [Self <: PlaceAutocompleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceAutocompleteResult] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

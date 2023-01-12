@@ -22,7 +22,8 @@ object NgForOf {
     __obj.asInstanceOf[NgForOf]
   }
   
-  extension [Self <: NgForOf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgForOf] (val x: Self) extends AnyVal {
     
     inline def setNgForOf(value: ngForOf): Self = StObject.set(x, "ngForOf", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object IconSymbol3DLayerProperties {
     __obj.asInstanceOf[IconSymbol3DLayerProperties]
   }
   
-  extension [Self <: IconSymbol3DLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSymbol3DLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setAnchor(
       value: center_ | left_ | right_ | top_ | bottom_ | `top-left` | `top-right` | `bottom-left` | `bottom-right` | relative_

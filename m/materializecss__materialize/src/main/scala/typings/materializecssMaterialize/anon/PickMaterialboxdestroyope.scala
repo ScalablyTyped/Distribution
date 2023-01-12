@@ -26,7 +26,8 @@ object PickMaterialboxdestroyope {
     __obj.asInstanceOf[PickMaterialboxdestroyope]
   }
   
-  extension [Self <: PickMaterialboxdestroyope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickMaterialboxdestroyope] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

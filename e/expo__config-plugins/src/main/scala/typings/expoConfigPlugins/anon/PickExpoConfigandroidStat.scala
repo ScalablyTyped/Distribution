@@ -17,7 +17,8 @@ object PickExpoConfigandroidStat {
     __obj.asInstanceOf[PickExpoConfigandroidStat]
   }
   
-  extension [Self <: PickExpoConfigandroidStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigandroidStat] (val x: Self) extends AnyVal {
     
     inline def setAndroidStatusBar(value: BackgroundColor): Self = StObject.set(x, "androidStatusBar", value.asInstanceOf[js.Any])
     

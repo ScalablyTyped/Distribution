@@ -38,7 +38,8 @@ object LabelAlignment {
     __obj.asInstanceOf[LabelAlignment]
   }
   
-  extension [Self <: LabelAlignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelAlignment] (val x: Self) extends AnyVal {
     
     inline def setLabelAlignment(value: alphabetic | central | `text-before-edge`): Self = StObject.set(x, "labelAlignment", value.asInstanceOf[js.Any])
     

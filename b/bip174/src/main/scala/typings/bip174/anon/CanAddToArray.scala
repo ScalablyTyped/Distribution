@@ -32,7 +32,8 @@ object CanAddToArray {
     __obj.asInstanceOf[CanAddToArray]
   }
   
-  extension [Self <: CanAddToArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanAddToArray] (val x: Self) extends AnyVal {
     
     inline def setCanAddToArray(value: (js.Array[Bip32Derivation], Bip32Derivation, Set[String]) => Boolean): Self = StObject.set(x, "canAddToArray", js.Any.fromFunction3(value))
     

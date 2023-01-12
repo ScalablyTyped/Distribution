@@ -23,7 +23,8 @@ object InputDestinationVpc {
     __obj.asInstanceOf[InputDestinationVpc]
   }
   
-  extension [Self <: InputDestinationVpc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDestinationVpc] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

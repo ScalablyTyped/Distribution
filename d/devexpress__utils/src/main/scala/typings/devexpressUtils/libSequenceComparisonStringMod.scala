@@ -88,7 +88,8 @@ object libSequenceComparisonStringMod {
       __obj.asInstanceOf[PathElem]
     }
     
-    extension [Self <: PathElem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathElem] (val x: Self) extends AnyVal {
       
       inline def setK(value: Double): Self = StObject.set(x, "k", value.asInstanceOf[js.Any])
       

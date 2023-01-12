@@ -21,7 +21,8 @@ object AnimatedSensor {
     __obj.asInstanceOf[AnimatedSensor[SensorValueType]]
   }
   
-  extension [Self <: AnimatedSensor[?], SensorValueType](x: Self & AnimatedSensor[SensorValueType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedSensor[?], SensorValueType] (val x: Self & AnimatedSensor[SensorValueType]) extends AnyVal {
     
     inline def setConfig(value: SensorConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

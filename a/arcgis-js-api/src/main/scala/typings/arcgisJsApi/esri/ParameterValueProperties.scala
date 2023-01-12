@@ -46,7 +46,8 @@ object ParameterValueProperties {
     __obj.asInstanceOf[ParameterValueProperties]
   }
   
-  extension [Self <: ParameterValueProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParameterValueProperties] (val x: Self) extends AnyVal {
     
     inline def setDataType(
       value: boolean | `data-file` | date | double | `feature-record-set-layer` | field | `linear-unit` | long | `raster-data` | `raster-data-layer` | `record-set` | string_ | `multi-value`

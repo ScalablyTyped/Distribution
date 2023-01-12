@@ -116,7 +116,8 @@ object PartialRoseOptions {
     __obj.asInstanceOf[PartialRoseOptions]
   }
   
-  extension [Self <: PartialRoseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRoseOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Animation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

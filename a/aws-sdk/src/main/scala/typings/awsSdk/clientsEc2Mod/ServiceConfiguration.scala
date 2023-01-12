@@ -88,7 +88,8 @@ object ServiceConfiguration {
     __obj.asInstanceOf[ServiceConfiguration]
   }
   
-  extension [Self <: ServiceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     

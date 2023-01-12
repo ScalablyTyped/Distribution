@@ -23,7 +23,8 @@ object TBSRequestJson {
     __obj.asInstanceOf[TBSRequestJson]
   }
   
-  extension [Self <: TBSRequestJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TBSRequestJson] (val x: Self) extends AnyVal {
     
     inline def setRequestExtensions(value: js.Array[ExtensionJson]): Self = StObject.set(x, "requestExtensions", value.asInstanceOf[js.Any])
     

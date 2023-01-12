@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[MapStackTraceOptions]
     }
     
-    extension [Self <: MapStackTraceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapStackTraceOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheGlobally(value: Boolean): Self = StObject.set(x, "cacheGlobally", value.asInstanceOf[js.Any])
       

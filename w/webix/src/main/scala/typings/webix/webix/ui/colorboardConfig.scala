@@ -71,7 +71,8 @@ object colorboardConfig {
     __obj.asInstanceOf[colorboardConfig]
   }
   
-  extension [Self <: colorboardConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorboardConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

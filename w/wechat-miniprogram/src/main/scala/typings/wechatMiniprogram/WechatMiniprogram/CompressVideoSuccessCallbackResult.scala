@@ -21,7 +21,8 @@ object CompressVideoSuccessCallbackResult {
     __obj.asInstanceOf[CompressVideoSuccessCallbackResult]
   }
   
-  extension [Self <: CompressVideoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressVideoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

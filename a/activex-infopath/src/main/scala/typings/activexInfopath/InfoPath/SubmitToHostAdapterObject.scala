@@ -34,7 +34,8 @@ object SubmitToHostAdapterObject {
     __obj.asInstanceOf[SubmitToHostAdapterObject]
   }
   
-  extension [Self <: SubmitToHostAdapterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmitToHostAdapterObject] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotSubmitToHostAdapterObject_typekey(value: SubmitToHostAdapterObject): Self = StObject.set(x, "InfoPath.SubmitToHostAdapterObject_typekey", value.asInstanceOf[js.Any])
     

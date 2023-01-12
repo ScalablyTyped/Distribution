@@ -39,7 +39,8 @@ object libViewsDotsNavigationMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setControlsStrategy(value: String): Self = StObject.set(x, "controlsStrategy", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object distNodeEsmSrcModelUserMod {
       __obj.asInstanceOf[MutableUserInfo]
     }
     
-    extension [Self <: MutableUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutableUserInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distNodeEsmSrcModelUserMod {
       __obj.asInstanceOf[UserCredentialInternal]
     }
     
-    extension [Self <: UserCredentialInternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserCredentialInternal] (val x: Self) extends AnyVal {
       
       inline def setUser(value: UserInternal): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
     }
@@ -170,7 +172,8 @@ object distNodeEsmSrcModelUserMod {
       __obj.asInstanceOf[UserParameters]
     }
     
-    extension [Self <: UserParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserParameters] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: AuthInternal): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

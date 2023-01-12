@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Dirname]
     }
     
-    extension [Self <: Dirname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dirname] (val x: Self) extends AnyVal {
       
       inline def setDirname(value: String): Self = StObject.set(x, "dirname", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Load]
     }
     
-    extension [Self <: Load](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Load] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: String => js.Promise[JsonValue]): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
       

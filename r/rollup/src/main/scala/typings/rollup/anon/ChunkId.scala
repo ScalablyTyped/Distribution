@@ -20,7 +20,8 @@ object ChunkId {
     __obj.asInstanceOf[ChunkId]
   }
   
-  extension [Self <: ChunkId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkId] (val x: Self) extends AnyVal {
     
     inline def setChunkId(value: String): Self = StObject.set(x, "chunkId", value.asInstanceOf[js.Any])
     

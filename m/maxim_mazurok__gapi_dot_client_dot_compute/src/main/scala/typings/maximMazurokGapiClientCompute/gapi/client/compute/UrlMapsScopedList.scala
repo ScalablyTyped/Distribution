@@ -20,7 +20,8 @@ object UrlMapsScopedList {
     __obj.asInstanceOf[UrlMapsScopedList]
   }
   
-  extension [Self <: UrlMapsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapsScopedList] (val x: Self) extends AnyVal {
     
     inline def setUrlMaps(value: js.Array[UrlMap]): Self = StObject.set(x, "urlMaps", value.asInstanceOf[js.Any])
     

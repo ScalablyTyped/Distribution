@@ -54,7 +54,8 @@ object buildCommandsStartRunServerMod {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setAssetPlugins(value: js.Array[String]): Self = StObject.set(x, "assetPlugins", value.asInstanceOf[js.Any])
       

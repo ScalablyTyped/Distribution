@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: Name): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       

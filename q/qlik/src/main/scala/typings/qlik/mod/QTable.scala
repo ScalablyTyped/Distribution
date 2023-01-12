@@ -38,7 +38,8 @@ object QTable {
     __obj.asInstanceOf[QTable]
   }
   
-  extension [Self <: QTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QTable] (val x: Self) extends AnyVal {
     
     inline def setColCount(value: Double): Self = StObject.set(x, "colCount", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CanceledStateContext {
     __obj.asInstanceOf[CanceledStateContext]
   }
   
-  extension [Self <: CanceledStateContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanceledStateContext] (val x: Self) extends AnyVal {
     
     inline def setDeveloperInitiatedCancellation(value: Any): Self = StObject.set(x, "developerInitiatedCancellation", value.asInstanceOf[js.Any])
     

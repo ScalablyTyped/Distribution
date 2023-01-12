@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def `set--`(value: Boolean): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ParsedArgs]
     }
     
-    extension [Self <: ParsedArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedArgs] (val x: Self) extends AnyVal {
       
       inline def `set--`(value: js.Array[String]): Self = StObject.set(x, "--", value.asInstanceOf[js.Any])
       

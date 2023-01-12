@@ -23,7 +23,8 @@ object PushNotificationPreferences {
     __obj.asInstanceOf[PushNotificationPreferences]
   }
   
-  extension [Self <: PushNotificationPreferences](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotificationPreferences] (val x: Self) extends AnyVal {
     
     inline def setAllowNotifications(value: AllowNotifications): Self = StObject.set(x, "AllowNotifications", value.asInstanceOf[js.Any])
     

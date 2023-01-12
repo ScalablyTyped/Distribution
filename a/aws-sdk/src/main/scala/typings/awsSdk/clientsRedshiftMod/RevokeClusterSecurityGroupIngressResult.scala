@@ -15,7 +15,8 @@ object RevokeClusterSecurityGroupIngressResult {
     __obj.asInstanceOf[RevokeClusterSecurityGroupIngressResult]
   }
   
-  extension [Self <: RevokeClusterSecurityGroupIngressResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeClusterSecurityGroupIngressResult] (val x: Self) extends AnyVal {
     
     inline def setClusterSecurityGroup(value: ClusterSecurityGroup): Self = StObject.set(x, "ClusterSecurityGroup", value.asInstanceOf[js.Any])
     

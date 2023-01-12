@@ -20,7 +20,8 @@ object IManagerOptions {
     __obj.asInstanceOf[IManagerOptions]
   }
   
-  extension [Self <: IManagerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IManagerOptions] (val x: Self) extends AnyVal {
     
     inline def setMargin(value: Double): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
     

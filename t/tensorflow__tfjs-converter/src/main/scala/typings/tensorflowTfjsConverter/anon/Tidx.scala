@@ -38,7 +38,8 @@ object Tidx {
     __obj.asInstanceOf[Tidx]
   }
   
-  extension [Self <: Tidx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tidx] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: Type): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object IEndpointPairFactory {
     __obj.asInstanceOf[IEndpointPairFactory]
   }
   
-  extension [Self <: IEndpointPairFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEndpointPairFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateEndpointPair(value: (HostName, String, HostName, String) => EndpointPair): Self = StObject.set(x, "createEndpointPair", js.Any.fromFunction4(value))
   }

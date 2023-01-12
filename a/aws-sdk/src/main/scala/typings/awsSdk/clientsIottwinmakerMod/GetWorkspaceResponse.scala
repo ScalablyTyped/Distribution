@@ -55,7 +55,8 @@ object GetWorkspaceResponse {
     __obj.asInstanceOf[GetWorkspaceResponse]
   }
   
-  extension [Self <: GetWorkspaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkspaceResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: TwinMakerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

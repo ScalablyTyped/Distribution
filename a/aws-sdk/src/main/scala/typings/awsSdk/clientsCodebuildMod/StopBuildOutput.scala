@@ -18,7 +18,8 @@ object StopBuildOutput {
     __obj.asInstanceOf[StopBuildOutput]
   }
   
-  extension [Self <: StopBuildOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopBuildOutput] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: Build): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

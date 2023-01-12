@@ -15,7 +15,8 @@ object ZMPopOptions {
     __obj.asInstanceOf[ZMPopOptions]
   }
   
-  extension [Self <: ZMPopOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZMPopOptions] (val x: Self) extends AnyVal {
     
     inline def setCOUNT(value: Double): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
     

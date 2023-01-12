@@ -16,7 +16,8 @@ object ThreadidNumber {
     __obj.asInstanceOf[ThreadidNumber]
   }
   
-  extension [Self <: ThreadidNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadidNumber] (val x: Self) extends AnyVal {
     
     inline def setThread_id(value: Double): Self = StObject.set(x, "thread_id", value.asInstanceOf[js.Any])
   }

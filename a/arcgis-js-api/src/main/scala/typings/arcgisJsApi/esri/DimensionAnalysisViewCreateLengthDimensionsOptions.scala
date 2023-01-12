@@ -21,7 +21,8 @@ object DimensionAnalysisViewCreateLengthDimensionsOptions {
     __obj.asInstanceOf[DimensionAnalysisViewCreateLengthDimensionsOptions]
   }
   
-  extension [Self <: DimensionAnalysisViewCreateLengthDimensionsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionAnalysisViewCreateLengthDimensionsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

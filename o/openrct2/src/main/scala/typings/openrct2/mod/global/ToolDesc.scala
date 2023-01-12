@@ -36,7 +36,8 @@ object ToolDesc {
     __obj.asInstanceOf[ToolDesc]
   }
   
-  extension [Self <: ToolDesc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolDesc] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: CursorType): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

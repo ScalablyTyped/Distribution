@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[SidebarProps]
     }
     
-    extension [Self <: SidebarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SidebarProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: TabType): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object mod {
       __obj.asInstanceOf[TabProps]
     }
     
-    extension [Self <: TabProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

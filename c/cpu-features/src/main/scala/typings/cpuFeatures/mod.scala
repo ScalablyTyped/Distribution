@@ -86,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Aarch64CpuFeatures]
     }
     
-    extension [Self <: Aarch64CpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aarch64CpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: aarch64): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -366,7 +367,8 @@ object mod {
       __obj.asInstanceOf[Aarch64CpuFlags]
     }
     
-    extension [Self <: Aarch64CpuFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aarch64CpuFlags] (val x: Self) extends AnyVal {
       
       inline def setAes(value: `true`): Self = StObject.set(x, "aes", value.asInstanceOf[js.Any])
       
@@ -606,7 +608,8 @@ object mod {
       __obj.asInstanceOf[ArmCpuFeatures]
     }
     
-    extension [Self <: ArmCpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArmCpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: arm): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -769,7 +772,8 @@ object mod {
       __obj.asInstanceOf[ArmCpuFlags]
     }
     
-    extension [Self <: ArmCpuFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArmCpuFlags] (val x: Self) extends AnyVal {
       
       inline def setAes(value: `true`): Self = StObject.set(x, "aes", value.asInstanceOf[js.Any])
       
@@ -961,7 +965,8 @@ object mod {
       __obj.asInstanceOf[MipsCpuFeatures]
     }
     
-    extension [Self <: MipsCpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MipsCpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: mips): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -995,7 +1000,8 @@ object mod {
       __obj.asInstanceOf[MipsCpuFlags]
     }
     
-    extension [Self <: MipsCpuFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MipsCpuFlags] (val x: Self) extends AnyVal {
       
       inline def setEva(value: `true`): Self = StObject.set(x, "eva", value.asInstanceOf[js.Any])
       
@@ -1047,7 +1053,8 @@ object mod {
       __obj.asInstanceOf[PPCCpuFeatures]
     }
     
-    extension [Self <: PPCCpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PPCCpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: ppc): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -1158,7 +1165,8 @@ object mod {
       __obj.asInstanceOf[PPCCpuFlags]
     }
     
-    extension [Self <: PPCCpuFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PPCCpuFlags] (val x: Self) extends AnyVal {
       
       inline def setAltivec(value: `true`): Self = StObject.set(x, "altivec", value.asInstanceOf[js.Any])
       
@@ -1339,7 +1347,8 @@ object mod {
       __obj.asInstanceOf[UnknownCpuFeatures]
     }
     
-    extension [Self <: UnknownCpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnknownCpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: unknown): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
     }
@@ -1377,7 +1386,8 @@ object mod {
       __obj.asInstanceOf[X86CpuFeatures]
     }
     
-    extension [Self <: X86CpuFeatures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X86CpuFeatures] (val x: Self) extends AnyVal {
       
       inline def setArch(value: x86): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -1531,7 +1541,8 @@ object mod {
       __obj.asInstanceOf[X86CpuFlags]
     }
     
-    extension [Self <: X86CpuFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X86CpuFlags] (val x: Self) extends AnyVal {
       
       inline def setAes(value: `true`): Self = StObject.set(x, "aes", value.asInstanceOf[js.Any])
       

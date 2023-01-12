@@ -15,7 +15,8 @@ object AddWorkingStorageOutput {
     __obj.asInstanceOf[AddWorkingStorageOutput]
   }
   
-  extension [Self <: AddWorkingStorageOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddWorkingStorageOutput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

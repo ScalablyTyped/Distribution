@@ -31,7 +31,8 @@ object libEsmCommonContextMod {
       __obj.asInstanceOf[ColumnInteractionBarContextTypes_]
     }
     
-    extension [Self <: ColumnInteractionBarContextTypes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnInteractionBarContextTypes_] (val x: Self) extends AnyVal {
       
       inline def setEnableColumnInteractionBar(value: Boolean): Self = StObject.set(x, "enableColumnInteractionBar", value.asInstanceOf[js.Any])
       

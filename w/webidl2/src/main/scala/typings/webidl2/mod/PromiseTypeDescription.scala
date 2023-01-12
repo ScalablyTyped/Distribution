@@ -26,7 +26,8 @@ object PromiseTypeDescription {
     __obj.asInstanceOf[PromiseTypeDescription]
   }
   
-  extension [Self <: PromiseTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromiseTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: Promise): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
   }

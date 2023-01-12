@@ -21,7 +21,8 @@ object GoogleCloudDatalabelingV1beta1LabelStats {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1LabelStats]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1LabelStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1LabelStats] (val x: Self) extends AnyVal {
     
     inline def setExampleCount(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

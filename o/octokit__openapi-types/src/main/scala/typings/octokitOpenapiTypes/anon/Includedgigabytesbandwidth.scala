@@ -26,7 +26,8 @@ object Includedgigabytesbandwidth {
     __obj.asInstanceOf[Includedgigabytesbandwidth]
   }
   
-  extension [Self <: Includedgigabytesbandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Includedgigabytesbandwidth] (val x: Self) extends AnyVal {
     
     inline def setIncluded_gigabytes_bandwidth(value: Double): Self = StObject.set(x, "included_gigabytes_bandwidth", value.asInstanceOf[js.Any])
     

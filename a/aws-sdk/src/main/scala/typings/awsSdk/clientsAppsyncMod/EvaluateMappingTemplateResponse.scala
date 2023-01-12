@@ -23,7 +23,8 @@ object EvaluateMappingTemplateResponse {
     __obj.asInstanceOf[EvaluateMappingTemplateResponse]
   }
   
-  extension [Self <: EvaluateMappingTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluateMappingTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorDetail): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

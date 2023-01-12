@@ -16,7 +16,8 @@ object CommentThreadReplies {
     __obj.asInstanceOf[CommentThreadReplies]
   }
   
-  extension [Self <: CommentThreadReplies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentThreadReplies] (val x: Self) extends AnyVal {
     
     inline def setComments(value: js.Array[Comment]): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

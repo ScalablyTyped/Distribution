@@ -17,7 +17,8 @@ object SecurityClearCachedPrivilegesRequest {
     __obj.asInstanceOf[SecurityClearCachedPrivilegesRequest]
   }
   
-  extension [Self <: SecurityClearCachedPrivilegesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearCachedPrivilegesRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Name): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
   }

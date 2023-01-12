@@ -22,7 +22,8 @@ object SerialInputSignals {
     __obj.asInstanceOf[SerialInputSignals]
   }
   
-  extension [Self <: SerialInputSignals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialInputSignals] (val x: Self) extends AnyVal {
     
     inline def setClearToSend(value: Boolean): Self = StObject.set(x, "clearToSend", value.asInstanceOf[js.Any])
     

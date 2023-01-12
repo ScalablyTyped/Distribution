@@ -24,7 +24,8 @@ object DrawModeChangeEvent {
     __obj.asInstanceOf[DrawModeChangeEvent]
   }
   
-  extension [Self <: DrawModeChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawModeChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setMode(value: DrawMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

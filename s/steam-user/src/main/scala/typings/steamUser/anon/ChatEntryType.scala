@@ -18,7 +18,8 @@ object ChatEntryType {
     __obj.asInstanceOf[ChatEntryType]
   }
   
-  extension [Self <: ChatEntryType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatEntryType] (val x: Self) extends AnyVal {
     
     inline def setChatEntryType(value: EChatEntryType): Self = StObject.set(x, "chatEntryType", value.asInstanceOf[js.Any])
     

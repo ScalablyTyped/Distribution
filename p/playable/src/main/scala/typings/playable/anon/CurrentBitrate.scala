@@ -55,7 +55,8 @@ object CurrentBitrate {
     __obj.asInstanceOf[CurrentBitrate]
   }
   
-  extension [Self <: CurrentBitrate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentBitrate] (val x: Self) extends AnyVal {
     
     inline def setBitrates(value: js.Array[String]): Self = StObject.set(x, "bitrates", value.asInstanceOf[js.Any])
     

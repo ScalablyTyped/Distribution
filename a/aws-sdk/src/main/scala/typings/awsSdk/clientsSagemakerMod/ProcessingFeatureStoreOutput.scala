@@ -18,7 +18,8 @@ object ProcessingFeatureStoreOutput {
     __obj.asInstanceOf[ProcessingFeatureStoreOutput]
   }
   
-  extension [Self <: ProcessingFeatureStoreOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingFeatureStoreOutput] (val x: Self) extends AnyVal {
     
     inline def setFeatureGroupName(value: FeatureGroupName): Self = StObject.set(x, "FeatureGroupName", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object DefaultUserRolePermissions {
     __obj.asInstanceOf[DefaultUserRolePermissions]
   }
   
-  extension [Self <: DefaultUserRolePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultUserRolePermissions] (val x: Self) extends AnyVal {
     
     inline def setAllowedToCreateApps(value: Boolean): Self = StObject.set(x, "allowedToCreateApps", value.asInstanceOf[js.Any])
     

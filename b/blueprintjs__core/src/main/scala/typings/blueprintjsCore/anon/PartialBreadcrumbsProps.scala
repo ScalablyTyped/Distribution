@@ -34,7 +34,8 @@ object PartialBreadcrumbsProps {
     __obj.asInstanceOf[PartialBreadcrumbsProps]
   }
   
-  extension [Self <: PartialBreadcrumbsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBreadcrumbsProps] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumbRenderer(value: /* props */ BreadcrumbProps => Element): Self = StObject.set(x, "breadcrumbRenderer", js.Any.fromFunction1(value))
     

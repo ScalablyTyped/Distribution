@@ -22,7 +22,8 @@ object StyleProps {
     __obj.asInstanceOf[StyleProps]
   }
   
-  extension [Self <: StyleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
     
     inline def setOriginX(value: Double): Self = StObject.set(x, "originX", value.asInstanceOf[js.Any])
     

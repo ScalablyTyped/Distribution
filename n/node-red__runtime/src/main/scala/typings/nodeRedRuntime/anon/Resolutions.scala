@@ -24,7 +24,8 @@ object Resolutions {
     __obj.asInstanceOf[Resolutions]
   }
   
-  extension [Self <: Resolutions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resolutions] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

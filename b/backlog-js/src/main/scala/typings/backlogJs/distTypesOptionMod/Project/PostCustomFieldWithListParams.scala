@@ -21,7 +21,8 @@ object PostCustomFieldWithListParams {
     __obj.asInstanceOf[PostCustomFieldWithListParams]
   }
   
-  extension [Self <: PostCustomFieldWithListParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostCustomFieldWithListParams] (val x: Self) extends AnyVal {
     
     inline def setAllowAddItem(value: Boolean): Self = StObject.set(x, "allowAddItem", value.asInstanceOf[js.Any])
     

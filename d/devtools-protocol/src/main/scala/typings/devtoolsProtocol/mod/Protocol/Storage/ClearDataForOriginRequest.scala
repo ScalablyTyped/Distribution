@@ -23,7 +23,8 @@ object ClearDataForOriginRequest {
     __obj.asInstanceOf[ClearDataForOriginRequest]
   }
   
-  extension [Self <: ClearDataForOriginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDataForOriginRequest] (val x: Self) extends AnyVal {
     
     inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
     

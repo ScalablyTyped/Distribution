@@ -27,7 +27,8 @@ object dxSpeedDialAction {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setActionElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "actionElement", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object dxSpeedDialAction {
       __obj.asInstanceOf[ContentReadyEvent]
     }
     
-    extension [Self <: ContentReadyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentReadyEvent] (val x: Self) extends AnyVal {
       
       inline def setActionElement(value: DxElement_[HTMLElement]): Self = StObject.set(x, "actionElement", value.asInstanceOf[js.Any])
       

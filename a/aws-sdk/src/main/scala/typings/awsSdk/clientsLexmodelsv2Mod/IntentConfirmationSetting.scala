@@ -69,7 +69,8 @@ object IntentConfirmationSetting {
     __obj.asInstanceOf[IntentConfirmationSetting]
   }
   
-  extension [Self <: IntentConfirmationSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentConfirmationSetting] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BoxedBoolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

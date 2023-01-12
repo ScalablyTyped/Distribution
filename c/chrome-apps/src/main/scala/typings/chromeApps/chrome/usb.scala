@@ -91,7 +91,8 @@ object usb {
       __obj.asInstanceOf[ConfigDescriptor]
     }
     
-    extension [Self <: ConfigDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigDescriptor] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object usb {
       __obj.asInstanceOf[ConnectionHandle]
     }
     
-    extension [Self <: ConnectionHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionHandle] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: integer): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
@@ -202,7 +204,8 @@ object usb {
       __obj.asInstanceOf[Device]
     }
     
-    extension [Self <: Device](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Device] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: integer): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       
@@ -243,7 +246,8 @@ object usb {
       __obj.asInstanceOf[DeviceFilter]
     }
     
-    extension [Self <: DeviceFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceFilter] (val x: Self) extends AnyVal {
       
       inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
@@ -291,7 +295,8 @@ object usb {
       __obj.asInstanceOf[DeviceFilterStrict]
     }
     
-    extension [Self <: DeviceFilterStrict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceFilterStrict] (val x: Self) extends AnyVal {
       
       inline def setInterfaceClass(value: integer): Self = StObject.set(x, "interfaceClass", value.asInstanceOf[js.Any])
       
@@ -398,7 +403,8 @@ object usb {
       __obj.asInstanceOf[EndpointDescriptor]
     }
     
-    extension [Self <: EndpointDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointDescriptor] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: integer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -490,7 +496,8 @@ object usb {
       __obj.asInstanceOf[GenericTransferInfo]
     }
     
-    extension [Self <: GenericTransferInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericTransferInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -564,7 +571,8 @@ object usb {
       __obj.asInstanceOf[InterfaceDescriptor]
     }
     
-    extension [Self <: InterfaceDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InterfaceDescriptor] (val x: Self) extends AnyVal {
       
       inline def setAlternateSetting(value: integer): Self = StObject.set(x, "alternateSetting", value.asInstanceOf[js.Any])
       
@@ -610,7 +618,8 @@ object usb {
       __obj.asInstanceOf[IsochronousTransferInfo]
     }
     
-    extension [Self <: IsochronousTransferInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsochronousTransferInfo] (val x: Self) extends AnyVal {
       
       inline def setPacketLength(value: integer): Self = StObject.set(x, "packetLength", value.asInstanceOf[js.Any])
       
@@ -702,7 +711,8 @@ object usb {
       __obj.asInstanceOf[TransferInfo]
     }
     
-    extension [Self <: TransferInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -763,7 +773,8 @@ object usb {
       __obj.asInstanceOf[TransferResultInfo]
     }
     
-    extension [Self <: TransferResultInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferResultInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

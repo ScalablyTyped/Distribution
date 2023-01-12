@@ -48,7 +48,8 @@ object CommonProps {
     __obj.asInstanceOf[CommonProps]
   }
   
-  extension [Self <: CommonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
     
     inline def setBeaconComponent(value: ElementType[BeaconRenderProps]): Self = StObject.set(x, "beaconComponent", value.asInstanceOf[js.Any])
     

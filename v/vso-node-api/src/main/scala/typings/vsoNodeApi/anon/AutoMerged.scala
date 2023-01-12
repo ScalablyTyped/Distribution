@@ -29,7 +29,8 @@ object AutoMerged {
     __obj.asInstanceOf[AutoMerged]
   }
   
-  extension [Self <: AutoMerged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoMerged] (val x: Self) extends AnyVal {
     
     inline def setAutoMerged(value: scala.Double): Self = StObject.set(x, "autoMerged", value.asInstanceOf[js.Any])
     

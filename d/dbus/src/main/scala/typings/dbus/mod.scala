@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[DBusConnection]
     }
     
-    extension [Self <: DBusConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBusConnection] (val x: Self) extends AnyVal {
       
       inline def setDisconnect(value: () => Unit): Self = StObject.set(x, "disconnect", js.Any.fromFunction0(value))
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[DBusService]
     }
     
-    extension [Self <: DBusService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBusService] (val x: Self) extends AnyVal {
       
       inline def setBus(value: DBusConnection): Self = StObject.set(x, "bus", value.asInstanceOf[js.Any])
       
@@ -175,7 +177,8 @@ object mod {
       __obj.asInstanceOf[DBusServiceInterface]
     }
     
-    extension [Self <: DBusServiceInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBusServiceInterface] (val x: Self) extends AnyVal {
       
       inline def setAddMethod(
         value: (String, In, js.Function3[
@@ -215,7 +218,8 @@ object mod {
       __obj.asInstanceOf[DBusServiceObject]
     }
     
-    extension [Self <: DBusServiceObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DBusServiceObject] (val x: Self) extends AnyVal {
       
       inline def setCreateInterface(value: String => DBusServiceInterface): Self = StObject.set(x, "createInterface", js.Any.fromFunction1(value))
       

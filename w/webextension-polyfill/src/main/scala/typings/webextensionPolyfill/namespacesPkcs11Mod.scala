@@ -27,7 +27,8 @@ object namespacesPkcs11Mod {
         __obj.asInstanceOf[ModuleSlot]
       }
       
-      extension [Self <: ModuleSlot](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ModuleSlot] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -117,7 +118,8 @@ object namespacesPkcs11Mod {
         __obj.asInstanceOf[Token]
       }
       
-      extension [Self <: Token](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
         
         inline def setFWVersion(value: String): Self = StObject.set(x, "FWVersion", value.asInstanceOf[js.Any])
         

@@ -38,7 +38,8 @@ object CreateDataSourceFromRedshiftInput {
     __obj.asInstanceOf[CreateDataSourceFromRedshiftInput]
   }
   
-  extension [Self <: CreateDataSourceFromRedshiftInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSourceFromRedshiftInput] (val x: Self) extends AnyVal {
     
     inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     

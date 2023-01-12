@@ -50,7 +50,8 @@ object BaseBrowserFlow {
   @js.native
   val ^ : BaseBrowserFlowStatic = js.native
   
-  extension [Self <: BaseBrowserFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseBrowserFlow] (val x: Self) extends AnyVal {
     
     inline def setAsanaBaseUrl(value: () => String): Self = StObject.set(x, "asanaBaseUrl", js.Any.fromFunction0(value))
     

@@ -23,7 +23,8 @@ object PutResourceSetResponse {
     __obj.asInstanceOf[PutResourceSetResponse]
   }
   
-  extension [Self <: PutResourceSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResourceSetResponse] (val x: Self) extends AnyVal {
     
     inline def setResourceSet(value: ResourceSet): Self = StObject.set(x, "ResourceSet", value.asInstanceOf[js.Any])
     

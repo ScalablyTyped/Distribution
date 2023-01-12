@@ -72,7 +72,8 @@ object SceneGrab {
     __obj.asInstanceOf[SceneGrab]
   }
   
-  extension [Self <: SceneGrab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneGrab] (val x: Self) extends AnyVal {
     
     inline def setAllocateRenderTarget(value: (Any, Any, Any, Any, Any, Any, Any) => Any): Self = StObject.set(x, "allocateRenderTarget", js.Any.fromFunction7(value))
     

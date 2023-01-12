@@ -112,7 +112,8 @@ object distTypesUtilsXmlUtilsMod {
         __obj.asInstanceOf[Node]
       }
       
-      extension [Self <: Node](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
         
         inline def setLineNumber(value: Double): Self = StObject.set(x, "lineNumber", value.asInstanceOf[js.Any])
         

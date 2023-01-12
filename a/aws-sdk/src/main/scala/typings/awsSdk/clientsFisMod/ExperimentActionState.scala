@@ -23,7 +23,8 @@ object ExperimentActionState {
     __obj.asInstanceOf[ExperimentActionState]
   }
   
-  extension [Self <: ExperimentActionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExperimentActionState] (val x: Self) extends AnyVal {
     
     inline def setReason(value: ExperimentActionStatusReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

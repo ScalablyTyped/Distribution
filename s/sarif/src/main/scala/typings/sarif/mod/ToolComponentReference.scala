@@ -33,7 +33,8 @@ object ToolComponentReference {
     __obj.asInstanceOf[ToolComponentReference]
   }
   
-  extension [Self <: ToolComponentReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolComponentReference] (val x: Self) extends AnyVal {
     
     inline def setGuid(value: String): Self = StObject.set(x, "guid", value.asInstanceOf[js.Any])
     

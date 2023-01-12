@@ -31,7 +31,8 @@ object UserPageLoadMetricV5 {
     __obj.asInstanceOf[UserPageLoadMetricV5]
   }
   
-  extension [Self <: UserPageLoadMetricV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserPageLoadMetricV5] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

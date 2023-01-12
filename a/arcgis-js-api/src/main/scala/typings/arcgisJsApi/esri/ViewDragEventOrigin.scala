@@ -17,7 +17,8 @@ object ViewDragEventOrigin {
     __obj.asInstanceOf[ViewDragEventOrigin]
   }
   
-  extension [Self <: ViewDragEventOrigin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDragEventOrigin] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ImageFormatEnumValues {
     __obj.asInstanceOf[ImageFormatEnumValues]
   }
   
-  extension [Self <: ImageFormatEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageFormatEnumValues] (val x: Self) extends AnyVal {
     
     inline def setJPEG(value: EncodedImageFormat): Self = StObject.set(x, "JPEG", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CreateOfferDialogResponse {
     __obj.asInstanceOf[CreateOfferDialogResponse]
   }
   
-  extension [Self <: CreateOfferDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOfferDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

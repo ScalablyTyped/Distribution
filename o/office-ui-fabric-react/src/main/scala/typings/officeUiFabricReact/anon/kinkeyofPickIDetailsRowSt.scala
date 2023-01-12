@@ -36,7 +36,8 @@ object kinkeyofPickIDetailsRowSt {
     __obj.asInstanceOf[kinkeyofPickIDetailsRowSt]
   }
   
-  extension [Self <: kinkeyofPickIDetailsRowSt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: kinkeyofPickIDetailsRowSt] (val x: Self) extends AnyVal {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object PointCloudReturnFilterPro {
     __obj.asInstanceOf[PointCloudReturnFilterPro]
   }
   
-  extension [Self <: PointCloudReturnFilterPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudReturnFilterPro] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

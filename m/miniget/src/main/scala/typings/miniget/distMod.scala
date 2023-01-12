@@ -115,7 +115,8 @@ object distMod {
       __obj.asInstanceOf[DefaultOptions_]
     }
     
-    extension [Self <: DefaultOptions_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions_] (val x: Self) extends AnyVal {
       
       inline def setBackoff(value: Inc): Self = StObject.set(x, "backoff", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object distMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAcceptEncoding(value: StringDictionary[js.Function0[Transform]]): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object series {
       __obj.asInstanceOf[IArea]
     }
     
-    extension [Self <: IArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IArea] (val x: Self) extends AnyVal {
       
       inline def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
       
@@ -122,7 +123,8 @@ object series {
       __obj.asInstanceOf[IBar]
     }
     
-    extension [Self <: IBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBar] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Boolean): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object series {
       __obj.asInstanceOf[ICartesian]
     }
     
-    extension [Self <: ICartesian](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICartesian] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Any): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -273,7 +276,8 @@ object series {
       __obj.asInstanceOf[IColumn]
     }
     
-    extension [Self <: IColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumn] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object series {
       __obj.asInstanceOf[IGauge]
     }
     
-    extension [Self <: IGauge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGauge] (val x: Self) extends AnyVal {
       
       inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
       
@@ -379,7 +384,8 @@ object series {
       __obj.asInstanceOf[ILine]
     }
     
-    extension [Self <: ILine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILine] (val x: Self) extends AnyVal {
       
       inline def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
       
@@ -461,7 +467,8 @@ object series {
       __obj.asInstanceOf[IPie]
     }
     
-    extension [Self <: IPie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPie] (val x: Self) extends AnyVal {
       
       inline def setAngleField(value: String): Self = StObject.set(x, "angleField", value.asInstanceOf[js.Any])
       
@@ -538,7 +545,8 @@ object series {
       __obj.asInstanceOf[IRadar]
     }
     
-    extension [Self <: IRadar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRadar] (val x: Self) extends AnyVal {
       
       inline def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
       
@@ -586,7 +594,8 @@ object series {
       __obj.asInstanceOf[IScatter]
     }
     
-    extension [Self <: IScatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScatter] (val x: Self) extends AnyVal {
       
       inline def setDrawSeries(value: () => Unit): Self = StObject.set(x, "drawSeries", js.Any.fromFunction0(value))
       
@@ -725,7 +734,8 @@ object series {
       __obj.asInstanceOf[ISeries]
     }
     
-    extension [Self <: ISeries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISeries] (val x: Self) extends AnyVal {
       
       inline def setEachRecord(value: (/* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "eachRecord", js.Any.fromFunction2(value))
       

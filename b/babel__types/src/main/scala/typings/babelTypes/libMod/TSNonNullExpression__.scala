@@ -27,7 +27,8 @@ object TSNonNullExpression__ {
     __obj.asInstanceOf[TSNonNullExpression__]
   }
   
-  extension [Self <: TSNonNullExpression__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSNonNullExpression__] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: Expression): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

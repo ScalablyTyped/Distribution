@@ -49,7 +49,8 @@ object ActionCodeURL {
     __obj.asInstanceOf[ActionCodeURL]
   }
   
-  extension [Self <: ActionCodeURL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionCodeURL] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

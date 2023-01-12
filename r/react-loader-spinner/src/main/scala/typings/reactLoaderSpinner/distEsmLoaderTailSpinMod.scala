@@ -30,7 +30,8 @@ object distEsmLoaderTailSpinMod extends Shortcut {
       __obj.asInstanceOf[TailSpinProps]
     }
     
-    extension [Self <: TailSpinProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TailSpinProps] (val x: Self) extends AnyVal {
       
       inline def setRadius(value: String | Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
       

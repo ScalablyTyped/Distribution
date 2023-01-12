@@ -38,7 +38,8 @@ object DBClusterCapacityInfo {
     __obj.asInstanceOf[DBClusterCapacityInfo]
   }
   
-  extension [Self <: DBClusterCapacityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBClusterCapacityInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentCapacity(value: IntegerOptional): Self = StObject.set(x, "CurrentCapacity", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object LatLng {
     __obj.asInstanceOf[LatLng]
   }
   
-  extension [Self <: LatLng](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLng] (val x: Self) extends AnyVal {
     
     inline def setEquals_(value: LatLng => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     

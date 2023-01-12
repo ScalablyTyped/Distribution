@@ -42,7 +42,8 @@ object License {
     __obj.asInstanceOf[License]
   }
   
-  extension [Self <: License](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: License] (val x: Self) extends AnyVal {
     
     inline def setChargesUseFee(value: Boolean): Self = StObject.set(x, "chargesUseFee", value.asInstanceOf[js.Any])
     

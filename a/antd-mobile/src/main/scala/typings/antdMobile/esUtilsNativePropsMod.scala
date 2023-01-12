@@ -34,7 +34,8 @@ object esUtilsNativePropsMod {
       __obj.asInstanceOf[NativeProps[S]]
     }
     
-    extension [Self <: NativeProps[?], S /* <: String */](x: Self & NativeProps[S]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps[?], S /* <: String */] (val x: Self & NativeProps[S]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

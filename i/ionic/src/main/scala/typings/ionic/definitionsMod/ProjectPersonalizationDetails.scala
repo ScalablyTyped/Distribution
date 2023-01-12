@@ -23,7 +23,8 @@ object ProjectPersonalizationDetails {
     __obj.asInstanceOf[ProjectPersonalizationDetails]
   }
   
-  extension [Self <: ProjectPersonalizationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectPersonalizationDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

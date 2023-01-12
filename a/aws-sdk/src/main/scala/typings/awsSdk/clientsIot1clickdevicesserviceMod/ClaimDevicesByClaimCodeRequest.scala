@@ -18,7 +18,8 @@ object ClaimDevicesByClaimCodeRequest {
     __obj.asInstanceOf[ClaimDevicesByClaimCodeRequest]
   }
   
-  extension [Self <: ClaimDevicesByClaimCodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimDevicesByClaimCodeRequest] (val x: Self) extends AnyVal {
     
     inline def setClaimCode(value: string): Self = StObject.set(x, "ClaimCode", value.asInstanceOf[js.Any])
   }

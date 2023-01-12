@@ -28,7 +28,8 @@ object FlinkApplicationConfigurationUpdate {
     __obj.asInstanceOf[FlinkApplicationConfigurationUpdate]
   }
   
-  extension [Self <: FlinkApplicationConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlinkApplicationConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setCheckpointConfigurationUpdate(value: CheckpointConfigurationUpdate): Self = StObject.set(x, "CheckpointConfigurationUpdate", value.asInstanceOf[js.Any])
     

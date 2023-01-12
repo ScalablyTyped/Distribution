@@ -467,7 +467,8 @@ object mod {
       __obj.asInstanceOf[CompressOptions]
     }
     
-    extension [Self <: CompressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressOptions] (val x: Self) extends AnyVal {
       
       inline def setArguments(value: Boolean): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       
@@ -716,7 +717,8 @@ object mod {
       __obj.asInstanceOf[MangleOptions]
     }
     
-    extension [Self <: MangleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MangleOptions] (val x: Self) extends AnyVal {
       
       inline def setEval(value: Boolean): Self = StObject.set(x, "eval", value.asInstanceOf[js.Any])
       
@@ -766,7 +768,8 @@ object mod {
       __obj.asInstanceOf[ManglePropertiesOptions]
     }
     
-    extension [Self <: ManglePropertiesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManglePropertiesOptions] (val x: Self) extends AnyVal {
       
       inline def setBuiltins(value: Boolean): Self = StObject.set(x, "builtins", value.asInstanceOf[js.Any])
       
@@ -887,7 +890,8 @@ object mod {
       __obj.asInstanceOf[MinifyOptions]
     }
     
-    extension [Self <: MinifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCompress(value: `false` | CompressOptions): Self = StObject.set(x, "compress", value.asInstanceOf[js.Any])
       
@@ -960,7 +964,8 @@ object mod {
       __obj.asInstanceOf[MinifyOutput]
     }
     
-    extension [Self <: MinifyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinifyOutput] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -1023,7 +1028,8 @@ object mod {
       __obj.asInstanceOf[OutputOptions]
     }
     
-    extension [Self <: OutputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
       
       inline def setAscii_only(value: Boolean): Self = StObject.set(x, "ascii_only", value.asInstanceOf[js.Any])
       
@@ -1123,7 +1129,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setBare_returns(value: Boolean): Self = StObject.set(x, "bare_returns", value.asInstanceOf[js.Any])
       
@@ -1164,7 +1171,8 @@ object mod {
       __obj.asInstanceOf[SourceMapOptions]
     }
     
-    extension [Self <: SourceMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: RawSourceMap | `inline`): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

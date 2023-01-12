@@ -56,7 +56,8 @@ object libComponentsBridgeInfoStateMod {
       __obj.asInstanceOf[MSC2346Content]
     }
     
-    extension [Self <: MSC2346Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSC2346Content] (val x: Self) extends AnyVal {
       
       inline def setBridgebot(value: String): Self = StObject.set(x, "bridgebot", value.asInstanceOf[js.Any])
     }
@@ -79,7 +80,8 @@ object libComponentsBridgeInfoStateMod {
       __obj.asInstanceOf[MappingInfo]
     }
     
-    extension [Self <: MappingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappingInfo] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: Displayname): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -116,7 +118,8 @@ object libComponentsBridgeInfoStateMod {
       __obj.asInstanceOf[Opts[BridgeMappingInfo]]
     }
     
-    extension [Self <: Opts[?], BridgeMappingInfo](x: Self & Opts[BridgeMappingInfo]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts[?], BridgeMappingInfo] (val x: Self & Opts[BridgeMappingInfo]) extends AnyVal {
       
       inline def setBridgeName(value: String): Self = StObject.set(x, "bridgeName", value.asInstanceOf[js.Any])
       

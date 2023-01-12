@@ -19,7 +19,8 @@ object ProximityOption {
     __obj.asInstanceOf[ProximityOption]
   }
   
-  extension [Self <: ProximityOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityOption] (val x: Self) extends AnyVal {
     
     inline def setController(value: String): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
     

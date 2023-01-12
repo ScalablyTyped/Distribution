@@ -428,7 +428,8 @@ object distNodeBackendHtml5fsMod {
       __obj.asInstanceOf[HTML5FSOptions]
     }
     
-    extension [Self <: HTML5FSOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTML5FSOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

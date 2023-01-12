@@ -28,7 +28,8 @@ object S3ResourceClassificationUpdate {
     __obj.asInstanceOf[S3ResourceClassificationUpdate]
   }
   
-  extension [Self <: S3ResourceClassificationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ResourceClassificationUpdate] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

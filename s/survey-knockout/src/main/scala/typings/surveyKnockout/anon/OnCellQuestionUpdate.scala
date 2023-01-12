@@ -15,7 +15,8 @@ object OnCellQuestionUpdate {
     __obj.asInstanceOf[OnCellQuestionUpdate]
   }
   
-  extension [Self <: OnCellQuestionUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnCellQuestionUpdate] (val x: Self) extends AnyVal {
     
     inline def setOnCellQuestionUpdate(value: (Any, Any, Any, Any) => Unit): Self = StObject.set(x, "onCellQuestionUpdate", js.Any.fromFunction4(value))
   }

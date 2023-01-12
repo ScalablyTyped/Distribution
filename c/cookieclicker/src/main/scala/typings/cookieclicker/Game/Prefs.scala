@@ -104,7 +104,8 @@ object Prefs {
     __obj.asInstanceOf[Prefs]
   }
   
-  extension [Self <: Prefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Prefs] (val x: Self) extends AnyVal {
     
     inline def setAltDraw(value: PseudoBoolean): Self = StObject.set(x, "altDraw", value.asInstanceOf[js.Any])
     

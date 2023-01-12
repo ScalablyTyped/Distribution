@@ -23,7 +23,8 @@ object SpecialLocations {
     __obj.asInstanceOf[SpecialLocations]
   }
   
-  extension [Self <: SpecialLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecialLocations] (val x: Self) extends AnyVal {
     
     inline def setDisplayBase(value: ArtifactLocation): Self = StObject.set(x, "displayBase", value.asInstanceOf[js.Any])
     

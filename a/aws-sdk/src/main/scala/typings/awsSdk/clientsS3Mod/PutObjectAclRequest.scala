@@ -80,7 +80,8 @@ object PutObjectAclRequest {
     __obj.asInstanceOf[PutObjectAclRequest]
   }
   
-  extension [Self <: PutObjectAclRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectAclRequest] (val x: Self) extends AnyVal {
     
     inline def setACL(value: ObjectCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     

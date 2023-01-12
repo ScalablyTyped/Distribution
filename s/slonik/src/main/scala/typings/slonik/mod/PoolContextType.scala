@@ -33,7 +33,8 @@ object PoolContextType {
     __obj.asInstanceOf[PoolContextType]
   }
   
-  extension [Self <: PoolContextType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolContextType] (val x: Self) extends AnyVal {
     
     inline def setLog(value: LoggerType): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
     

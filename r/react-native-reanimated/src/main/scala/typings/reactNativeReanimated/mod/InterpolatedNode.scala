@@ -15,7 +15,8 @@ object InterpolatedNode {
     __obj.asInstanceOf[InterpolatedNode]
   }
   
-  extension [Self <: InterpolatedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolatedNode] (val x: Self) extends AnyVal {
     
     inline def set__nodeId(value: Double): Self = StObject.set(x, "__nodeId", value.asInstanceOf[js.Any])
   }

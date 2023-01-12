@@ -63,7 +63,8 @@ object DisruptionCompliance {
     __obj.asInstanceOf[DisruptionCompliance]
   }
   
-  extension [Self <: DisruptionCompliance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisruptionCompliance] (val x: Self) extends AnyVal {
     
     inline def setAchievableRpoInSecs(value: Seconds): Self = StObject.set(x, "achievableRpoInSecs", value.asInstanceOf[js.Any])
     

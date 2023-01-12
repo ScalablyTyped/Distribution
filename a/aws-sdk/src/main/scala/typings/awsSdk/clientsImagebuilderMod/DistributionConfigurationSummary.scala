@@ -48,7 +48,8 @@ object DistributionConfigurationSummary {
     __obj.asInstanceOf[DistributionConfigurationSummary]
   }
   
-  extension [Self <: DistributionConfigurationSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionConfigurationSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ImageBuilderArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

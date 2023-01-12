@@ -220,7 +220,8 @@ object srcPaneMod {
       __obj.asInstanceOf[PaneItemMovedEvent]
     }
     
-    extension [Self <: PaneItemMovedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneItemMovedEvent] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Object): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -245,7 +246,8 @@ object srcPaneMod {
       __obj.asInstanceOf[PaneItemObservedEvent]
     }
     
-    extension [Self <: PaneItemObservedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneItemObservedEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -268,7 +270,8 @@ object srcPaneMod {
       __obj.asInstanceOf[PaneItemOpenedEvent]
     }
     
-    extension [Self <: PaneItemOpenedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneItemOpenedEvent] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -289,7 +292,8 @@ object srcPaneMod {
       __obj.asInstanceOf[PaneListItemShiftedEvent]
     }
     
-    extension [Self <: PaneListItemShiftedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneListItemShiftedEvent] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

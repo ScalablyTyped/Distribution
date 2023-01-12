@@ -59,7 +59,8 @@ object libInternalTypesMod {
       __obj.asInstanceOf[MosaicDragItem]
     }
     
-    extension [Self <: MosaicDragItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicDragItem] (val x: Self) extends AnyVal {
       
       inline def setHideTimer(value: Double): Self = StObject.set(x, "hideTimer", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libInternalTypesMod {
       __obj.asInstanceOf[MosaicDropData]
     }
     
-    extension [Self <: MosaicDropData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicDropData] (val x: Self) extends AnyVal {
       
       inline def setPath(value: MosaicPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

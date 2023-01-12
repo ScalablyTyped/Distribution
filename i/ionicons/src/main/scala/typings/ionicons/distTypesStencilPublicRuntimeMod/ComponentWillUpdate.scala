@@ -23,7 +23,8 @@ object ComponentWillUpdate {
     __obj.asInstanceOf[ComponentWillUpdate]
   }
   
-  extension [Self <: ComponentWillUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentWillUpdate] (val x: Self) extends AnyVal {
     
     inline def setComponentWillUpdate(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "componentWillUpdate", js.Any.fromFunction0(value))
   }

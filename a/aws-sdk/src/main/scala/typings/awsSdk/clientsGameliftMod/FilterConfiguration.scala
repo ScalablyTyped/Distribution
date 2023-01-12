@@ -18,7 +18,8 @@ object FilterConfiguration {
     __obj.asInstanceOf[FilterConfiguration]
   }
   
-  extension [Self <: FilterConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedLocations(value: LocationList): Self = StObject.set(x, "AllowedLocations", value.asInstanceOf[js.Any])
     

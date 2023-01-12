@@ -23,7 +23,8 @@ object AwsBackupBackupPlanRuleCopyActionsDetails {
     __obj.asInstanceOf[AwsBackupBackupPlanRuleCopyActionsDetails]
   }
   
-  extension [Self <: AwsBackupBackupPlanRuleCopyActionsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsBackupBackupPlanRuleCopyActionsDetails] (val x: Self) extends AnyVal {
     
     inline def setDestinationBackupVaultArn(value: NonEmptyString): Self = StObject.set(x, "DestinationBackupVaultArn", value.asInstanceOf[js.Any])
     

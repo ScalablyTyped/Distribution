@@ -90,7 +90,8 @@ object XCellRangesQuery {
     __obj.asInstanceOf[XCellRangesQuery]
   }
   
-  extension [Self <: XCellRangesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellRangesQuery] (val x: Self) extends AnyVal {
     
     inline def setQueryColumnDifferences(value: CellAddress => XSheetCellRanges): Self = StObject.set(x, "queryColumnDifferences", js.Any.fromFunction1(value))
     

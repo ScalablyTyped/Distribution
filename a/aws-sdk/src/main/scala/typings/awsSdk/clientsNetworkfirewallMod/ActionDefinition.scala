@@ -18,7 +18,8 @@ object ActionDefinition {
     __obj.asInstanceOf[ActionDefinition]
   }
   
-  extension [Self <: ActionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionDefinition] (val x: Self) extends AnyVal {
     
     inline def setPublishMetricAction(value: PublishMetricAction): Self = StObject.set(x, "PublishMetricAction", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object CompletionClientCapabilities {
     __obj.asInstanceOf[CompletionClientCapabilities]
   }
   
-  extension [Self <: CompletionClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletionClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setCompletionItem(value: CommitCharactersSupport): Self = StObject.set(x, "completionItem", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TestReportSetupAction {
     __obj.asInstanceOf[TestReportSetupAction]
   }
   
-  extension [Self <: TestReportSetupAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestReportSetupAction] (val x: Self) extends AnyVal {
     
     inline def setAssert(value: TestReportSetupActionAssert): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
     

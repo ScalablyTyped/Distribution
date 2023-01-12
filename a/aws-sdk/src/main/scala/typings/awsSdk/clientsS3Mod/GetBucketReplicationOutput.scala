@@ -15,7 +15,8 @@ object GetBucketReplicationOutput {
     __obj.asInstanceOf[GetBucketReplicationOutput]
   }
   
-  extension [Self <: GetBucketReplicationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketReplicationOutput] (val x: Self) extends AnyVal {
     
     inline def setReplicationConfiguration(value: ReplicationConfiguration): Self = StObject.set(x, "ReplicationConfiguration", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object FragCount {
     __obj.asInstanceOf[FragCount]
   }
   
-  extension [Self <: FragCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragCount] (val x: Self) extends AnyVal {
     
     inline def setFragCount(value: Double): Self = StObject.set(x, "FragCount", value.asInstanceOf[js.Any])
     

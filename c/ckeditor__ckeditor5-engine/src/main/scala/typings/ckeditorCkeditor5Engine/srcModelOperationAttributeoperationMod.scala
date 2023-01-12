@@ -187,7 +187,8 @@ object srcModelOperationAttributeoperationMod {
       __obj.asInstanceOf[AttributeOperation[O, N]]
     }
     
-    extension [Self <: AttributeOperation[?, ?], O /* <: js.UndefOr[String | Double | Boolean] */, N /* <: js.UndefOr[String | Double | Boolean] */](x: Self & (AttributeOperation[O, N])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperation[?, ?], O /* <: js.UndefOr[String | Double | Boolean] */, N /* <: js.UndefOr[String | Double | Boolean] */] (val x: Self & (AttributeOperation[O, N])) extends AnyVal {
       
       inline def setClone_(value: () => AttributeOperation[O, N]): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
       

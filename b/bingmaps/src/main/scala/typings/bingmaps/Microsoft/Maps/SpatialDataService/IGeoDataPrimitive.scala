@@ -31,7 +31,8 @@ object IGeoDataPrimitive {
     __obj.asInstanceOf[IGeoDataPrimitive]
   }
   
-  extension [Self <: IGeoDataPrimitive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoDataPrimitive] (val x: Self) extends AnyVal {
     
     inline def setNumPoints(value: String): Self = StObject.set(x, "NumPoints", value.asInstanceOf[js.Any])
     

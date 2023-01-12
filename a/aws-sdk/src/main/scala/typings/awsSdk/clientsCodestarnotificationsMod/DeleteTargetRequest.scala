@@ -23,7 +23,8 @@ object DeleteTargetRequest {
     __obj.asInstanceOf[DeleteTargetRequest]
   }
   
-  extension [Self <: DeleteTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setForceUnsubscribeAll(value: ForceUnsubscribeAll): Self = StObject.set(x, "ForceUnsubscribeAll", value.asInstanceOf[js.Any])
     

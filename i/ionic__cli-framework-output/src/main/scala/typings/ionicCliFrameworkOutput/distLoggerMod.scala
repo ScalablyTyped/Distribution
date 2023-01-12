@@ -177,7 +177,8 @@ object distLoggerMod {
       __obj.asInstanceOf[CreateTaggedFormatterOptions]
     }
     
-    extension [Self <: CreateTaggedFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateTaggedFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Colors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -220,7 +221,8 @@ object distLoggerMod {
       __obj.asInstanceOf[LogRecord]
     }
     
-    extension [Self <: LogRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogRecord] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Boolean): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -251,7 +253,8 @@ object distLoggerMod {
       __obj.asInstanceOf[LoggerHandler]
     }
     
-    extension [Self <: LoggerHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerHandler] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: /* record */ LogRecord => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
       
@@ -294,7 +297,8 @@ object distLoggerMod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: Set[LoggerHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
@@ -321,7 +325,8 @@ object distLoggerMod {
       __obj.asInstanceOf[StreamHandlerOptions]
     }
     
-    extension [Self <: StreamHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* record */ LogRecord => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       

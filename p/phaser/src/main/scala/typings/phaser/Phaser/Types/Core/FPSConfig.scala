@@ -43,7 +43,8 @@ object FPSConfig {
     __obj.asInstanceOf[FPSConfig]
   }
   
-  extension [Self <: FPSConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPSConfig] (val x: Self) extends AnyVal {
     
     inline def setDeltaHistory(value: Double): Self = StObject.set(x, "deltaHistory", value.asInstanceOf[js.Any])
     

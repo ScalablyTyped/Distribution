@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[APIOptions]
     }
     
-    extension [Self <: APIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIOptions] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[GetResponse]
     }
     
-    extension [Self <: GetResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResponse] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -245,7 +247,8 @@ object mod {
       __obj.asInstanceOf[OAuthOptions]
     }
     
-    extension [Self <: OAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -270,7 +273,8 @@ object mod {
       __obj.asInstanceOf[SetResponse]
     }
     
-    extension [Self <: SetResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetResponse] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

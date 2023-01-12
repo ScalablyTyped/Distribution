@@ -19,7 +19,8 @@ object BuildBazelRemoteExecutionV2PlatformProperty {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2PlatformProperty]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2PlatformProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2PlatformProperty] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

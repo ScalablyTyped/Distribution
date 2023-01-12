@@ -40,7 +40,8 @@ object distAccountAccountInfoMod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setEnvironment(value: String): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object distAccountAccountInfoMod {
       __obj.asInstanceOf[ActiveAccountFilters]
     }
     
-    extension [Self <: ActiveAccountFilters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveAccountFilters] (val x: Self) extends AnyVal {
       
       inline def setHomeAccountId(value: String): Self = StObject.set(x, "homeAccountId", value.asInstanceOf[js.Any])
       

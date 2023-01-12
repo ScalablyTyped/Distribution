@@ -69,7 +69,8 @@ object IDBPTransactionExtends {
     __obj.asInstanceOf[IDBPTransactionExtends]
   }
   
-  extension [Self <: IDBPTransactionExtends](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBPTransactionExtends] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

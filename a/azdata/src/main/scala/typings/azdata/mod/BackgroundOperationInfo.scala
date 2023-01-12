@@ -49,7 +49,8 @@ object BackgroundOperationInfo {
     __obj.asInstanceOf[BackgroundOperationInfo]
   }
   
-  extension [Self <: BackgroundOperationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundOperationInfo] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

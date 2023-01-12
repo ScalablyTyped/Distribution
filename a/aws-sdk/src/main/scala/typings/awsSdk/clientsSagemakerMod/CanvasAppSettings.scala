@@ -18,7 +18,8 @@ object CanvasAppSettings {
     __obj.asInstanceOf[CanvasAppSettings]
   }
   
-  extension [Self <: CanvasAppSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasAppSettings] (val x: Self) extends AnyVal {
     
     inline def setTimeSeriesForecastingSettings(value: TimeSeriesForecastingSettings): Self = StObject.set(x, "TimeSeriesForecastingSettings", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DatabaseOutput {
     __obj.asInstanceOf[DatabaseOutput]
   }
   
-  extension [Self <: DatabaseOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseOutput] (val x: Self) extends AnyVal {
     
     inline def setDatabaseOptions(value: DatabaseTableOutputOptions): Self = StObject.set(x, "DatabaseOptions", value.asInstanceOf[js.Any])
     

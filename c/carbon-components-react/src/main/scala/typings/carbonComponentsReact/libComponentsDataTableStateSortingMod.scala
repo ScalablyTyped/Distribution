@@ -59,7 +59,8 @@ object libComponentsDataTableStateSortingMod {
       __obj.asInstanceOf[DataTableSortStates]
     }
     
-    extension [Self <: DataTableSortStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTableSortStates] (val x: Self) extends AnyVal {
       
       inline def setASC(value: Extract[DataTableSortState, ASC]): Self = StObject.set(x, "ASC", value.asInstanceOf[js.Any])
       

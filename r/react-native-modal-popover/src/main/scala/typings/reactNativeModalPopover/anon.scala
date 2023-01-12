@@ -65,7 +65,8 @@ object anon {
       __obj.asInstanceOf[ArrowSize]
     }
     
-    extension [Self <: ArrowSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrowSize] (val x: Self) extends AnyVal {
       
       inline def setArrowSize(value: Requireable[InferProps[X]]): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Validator[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     }
@@ -134,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Requireable[Double]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -157,7 +160,8 @@ object anon {
       __obj.asInstanceOf[OnPopoverDisplayed]
     }
     
-    extension [Self <: OnPopoverDisplayed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnPopoverDisplayed] (val x: Self) extends AnyVal {
       
       inline def setOnPopoverDisplayed(value: Requireable[js.Function1[/* repeated */ Any, Any]]): Self = StObject.set(x, "onPopoverDisplayed", value.asInstanceOf[js.Any])
     }
@@ -205,7 +209,8 @@ object anon {
       __obj.asInstanceOf[PartialPopoverProps]
     }
     
-    extension [Self <: PartialPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setArrowSize(value: Size): Self = StObject.set(x, "arrowSize", value.asInstanceOf[js.Any])
       
@@ -296,7 +301,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Requireable[Double]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

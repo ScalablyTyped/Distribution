@@ -92,7 +92,8 @@ object StatefulPopoverContainerProps {
     __obj.asInstanceOf[StatefulPopoverContainerProps]
   }
   
-  extension [Self <: StatefulPopoverContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatefulPopoverContainerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
     

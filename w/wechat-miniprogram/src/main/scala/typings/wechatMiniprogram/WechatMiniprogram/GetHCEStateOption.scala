@@ -22,7 +22,8 @@ object GetHCEStateOption {
     __obj.asInstanceOf[GetHCEStateOption]
   }
   
-  extension [Self <: GetHCEStateOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHCEStateOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ NFCError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -32,7 +32,8 @@ object distSharedMod {
       __obj.asInstanceOf[DisabledParameter]
     }
     
-    extension [Self <: DisabledParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledParameter] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: Boolean): Self = StObject.set(x, "disable", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object distSharedMod {
       __obj.asInstanceOf[MarkdownParameter]
     }
     
-    extension [Self <: MarkdownParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkdownParameter] (val x: Self) extends AnyVal {
       
       inline def setMarkdown(value: String): Self = StObject.set(x, "markdown", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object distSharedMod {
       __obj.asInstanceOf[TextParameter]
     }
     
-    extension [Self <: TextParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextParameter] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }

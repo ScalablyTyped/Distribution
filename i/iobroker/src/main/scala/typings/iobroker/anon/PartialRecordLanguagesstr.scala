@@ -36,7 +36,8 @@ object PartialRecordLanguagesstr {
     __obj.asInstanceOf[PartialRecordLanguagesstr]
   }
   
-  extension [Self <: PartialRecordLanguagesstr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRecordLanguagesstr] (val x: Self) extends AnyVal {
     
     inline def setDe(value: String | js.Array[String]): Self = StObject.set(x, "de", value.asInstanceOf[js.Any])
     

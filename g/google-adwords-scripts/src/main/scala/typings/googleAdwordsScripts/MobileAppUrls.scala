@@ -33,7 +33,8 @@ object MobileAppUrls {
     __obj.asInstanceOf[MobileAppUrls]
   }
   
-  extension [Self <: MobileAppUrls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileAppUrls] (val x: Self) extends AnyVal {
     
     inline def setClearMobileFinalUrl(value: () => Unit): Self = StObject.set(x, "clearMobileFinalUrl", js.Any.fromFunction0(value))
     

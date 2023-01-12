@@ -31,7 +31,8 @@ object RevisionTag {
     __obj.asInstanceOf[RevisionTag]
   }
   
-  extension [Self <: RevisionTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionTag] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     

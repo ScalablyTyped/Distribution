@@ -43,7 +43,8 @@ object XFont2 {
     __obj.asInstanceOf[XFont2]
   }
   
-  extension [Self <: XFont2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFont2] (val x: Self) extends AnyVal {
     
     inline def setHasGlyphs(value: String => Boolean): Self = StObject.set(x, "hasGlyphs", js.Any.fromFunction1(value))
   }

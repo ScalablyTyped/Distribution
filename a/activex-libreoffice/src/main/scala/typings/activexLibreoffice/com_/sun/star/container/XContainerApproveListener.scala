@@ -40,7 +40,8 @@ object XContainerApproveListener {
     __obj.asInstanceOf[XContainerApproveListener]
   }
   
-  extension [Self <: XContainerApproveListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContainerApproveListener] (val x: Self) extends AnyVal {
     
     inline def setApproveInsertElement(value: ContainerEvent => XVeto): Self = StObject.set(x, "approveInsertElement", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object ListLaunchPathsOutput {
     __obj.asInstanceOf[ListLaunchPathsOutput]
   }
   
-  extension [Self <: ListLaunchPathsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLaunchPathsOutput] (val x: Self) extends AnyVal {
     
     inline def setLaunchPathSummaries(value: LaunchPathSummaries): Self = StObject.set(x, "LaunchPathSummaries", value.asInstanceOf[js.Any])
     

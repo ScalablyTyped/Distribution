@@ -21,7 +21,8 @@ object Window {
     __obj.asInstanceOf[Window]
   }
   
-  extension [Self <: Window](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
     
     inline def setBrowserReport(value: js.Function2[/* error */ ErrorEvent, /* report */ ReportResult, Any] => Unit): Self = StObject.set(x, "browserReport", js.Any.fromFunction1(value))
     

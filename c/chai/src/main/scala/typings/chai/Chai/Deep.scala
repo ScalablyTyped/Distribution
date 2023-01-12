@@ -93,7 +93,8 @@ object Deep {
     __obj.asInstanceOf[Deep]
   }
   
-  extension [Self <: Deep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
     
     inline def setBe(value: Assertion): Self = StObject.set(x, "be", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListLogsParams {
     __obj.asInstanceOf[ListLogsParams]
   }
   
-  extension [Self <: ListLogsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogsParams] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

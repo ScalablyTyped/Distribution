@@ -53,7 +53,8 @@ object GetPolicyVersionResponse {
     __obj.asInstanceOf[GetPolicyVersionResponse]
   }
   
-  extension [Self <: GetPolicyVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPolicyVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

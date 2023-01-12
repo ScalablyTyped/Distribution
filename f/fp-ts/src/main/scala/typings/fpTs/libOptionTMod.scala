@@ -1571,7 +1571,8 @@ object libOptionTMod {
       __obj.asInstanceOf[OptionM[M]]
     }
     
-    extension [Self <: OptionM[?], M](x: Self & OptionM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionM[?], M] (val x: Self & OptionM[M]) extends AnyVal {
       
       inline def setAlt(value: (OptionT[M, Any], Lazy[OptionT[M, Any]]) => OptionT[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -1656,7 +1657,8 @@ object libOptionTMod {
       __obj.asInstanceOf[OptionM1[M]]
     }
     
-    extension [Self <: OptionM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & OptionM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & OptionM1[M]) extends AnyVal {
       
       inline def setAlt(value: (OptionT1[M, Any], Lazy[OptionT1[M, Any]]) => OptionT1[M, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -1741,7 +1743,8 @@ object libOptionTMod {
       __obj.asInstanceOf[OptionM2[M]]
     }
     
-    extension [Self <: OptionM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & OptionM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & OptionM2[M]) extends AnyVal {
       
       inline def setAlt(value: (OptionT2[M, Any, Any], Lazy[OptionT2[M, Any, Any]]) => OptionT2[M, Any, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       
@@ -1826,7 +1829,8 @@ object libOptionTMod {
       __obj.asInstanceOf[OptionM2C[M, E]]
     }
     
-    extension [Self <: OptionM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (OptionM2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (OptionM2C[M, E])) extends AnyVal {
       
       inline def setAlt(value: (OptionT2[M, E, Any], Lazy[OptionT2[M, E, Any]]) => OptionT2[M, E, Any]): Self = StObject.set(x, "alt", js.Any.fromFunction2(value))
       

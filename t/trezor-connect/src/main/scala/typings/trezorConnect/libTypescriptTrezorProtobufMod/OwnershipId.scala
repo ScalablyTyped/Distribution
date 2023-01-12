@@ -15,7 +15,8 @@ object OwnershipId {
     __obj.asInstanceOf[OwnershipId]
   }
   
-  extension [Self <: OwnershipId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OwnershipId] (val x: Self) extends AnyVal {
     
     inline def setOwnership_id(value: String): Self = StObject.set(x, "ownership_id", value.asInstanceOf[js.Any])
   }

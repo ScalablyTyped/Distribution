@@ -17,7 +17,8 @@ object EthereumPublicKey {
     __obj.asInstanceOf[EthereumPublicKey]
   }
   
-  extension [Self <: EthereumPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumPublicKey] (val x: Self) extends AnyVal {
     
     inline def setNode(value: HDNodeType): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

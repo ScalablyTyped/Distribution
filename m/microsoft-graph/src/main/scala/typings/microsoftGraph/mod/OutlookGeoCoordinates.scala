@@ -31,7 +31,8 @@ object OutlookGeoCoordinates {
     __obj.asInstanceOf[OutlookGeoCoordinates]
   }
   
-  extension [Self <: OutlookGeoCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookGeoCoordinates] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: NullableOption[Double]): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

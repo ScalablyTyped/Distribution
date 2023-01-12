@@ -19,7 +19,8 @@ object SvgDefsAndFill {
     __obj.asInstanceOf[SvgDefsAndFill[T]]
   }
   
-  extension [Self <: SvgDefsAndFill[?], T](x: Self & SvgDefsAndFill[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SvgDefsAndFill[?], T] (val x: Self & SvgDefsAndFill[T]) extends AnyVal {
     
     inline def setDefs(value: js.Array[Dictkey]): Self = StObject.set(x, "defs", value.asInstanceOf[js.Any])
     

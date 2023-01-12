@@ -43,7 +43,8 @@ object RecursivePartialPartialTaCount {
     __obj.asInstanceOf[RecursivePartialPartialTaCount]
   }
   
-  extension [Self <: RecursivePartialPartialTaCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialTaCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: RecursivePartial[js.UndefOr[Double]]): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

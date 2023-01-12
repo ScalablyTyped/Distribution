@@ -330,7 +330,8 @@ object esComponentsSpaceSpaceMod {
       __obj.asInstanceOf[SpaceProps]
     }
     
-    extension [Self <: SpaceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: start | end | center | baseline): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

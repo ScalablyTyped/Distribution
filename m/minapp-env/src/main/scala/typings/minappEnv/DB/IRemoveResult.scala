@@ -19,7 +19,8 @@ object IRemoveResult {
     __obj.asInstanceOf[IRemoveResult]
   }
   
-  extension [Self <: IRemoveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRemoveResult] (val x: Self) extends AnyVal {
     
     inline def setStats(value: Removed): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

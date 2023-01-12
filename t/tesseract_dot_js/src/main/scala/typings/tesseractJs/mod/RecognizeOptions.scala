@@ -15,7 +15,8 @@ object RecognizeOptions {
     __obj.asInstanceOf[RecognizeOptions]
   }
   
-  extension [Self <: RecognizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognizeOptions] (val x: Self) extends AnyVal {
     
     inline def setRectangle(value: Rectangle): Self = StObject.set(x, "rectangle", value.asInstanceOf[js.Any])
   }

@@ -54,7 +54,8 @@ object ChannelSettings {
     __obj.asInstanceOf[ChannelSettings]
   }
   
-  extension [Self <: ChannelSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSettings] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

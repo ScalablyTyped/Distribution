@@ -205,7 +205,8 @@ object XIntegerBitmapColorSpace {
     __obj.asInstanceOf[XIntegerBitmapColorSpace]
   }
   
-  extension [Self <: XIntegerBitmapColorSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIntegerBitmapColorSpace] (val x: Self) extends AnyVal {
     
     inline def setBitsPerPixel(value: Double): Self = StObject.set(x, "BitsPerPixel", value.asInstanceOf[js.Any])
     

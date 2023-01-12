@@ -34,7 +34,8 @@ object Print {
     __obj.asInstanceOf[Print]
   }
   
-  extension [Self <: Print](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Print] (val x: Self) extends AnyVal {
     
     inline def setConnectors(value: NullableOption[js.Array[PrintConnector]]): Self = StObject.set(x, "connectors", value.asInstanceOf[js.Any])
     

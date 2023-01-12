@@ -28,7 +28,8 @@ object ListDashboardsRequest {
     __obj.asInstanceOf[ListDashboardsRequest]
   }
   
-  extension [Self <: ListDashboardsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDashboardsRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

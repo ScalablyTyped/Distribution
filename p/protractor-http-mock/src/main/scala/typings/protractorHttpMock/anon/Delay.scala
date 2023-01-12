@@ -19,7 +19,8 @@ object Delay {
     __obj.asInstanceOf[Delay[TResponse]]
   }
   
-  extension [Self <: Delay[?], TResponse](x: Self & Delay[TResponse]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delay[?], TResponse] (val x: Self & Delay[TResponse]) extends AnyVal {
     
     inline def setData(value: TResponse): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

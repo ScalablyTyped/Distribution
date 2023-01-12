@@ -32,7 +32,8 @@ object ClusterAllocationExplainDiskUsage {
     __obj.asInstanceOf[ClusterAllocationExplainDiskUsage]
   }
   
-  extension [Self <: ClusterAllocationExplainDiskUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAllocationExplainDiskUsage] (val x: Self) extends AnyVal {
     
     inline def setFree_bytes(value: long): Self = StObject.set(x, "free_bytes", value.asInstanceOf[js.Any])
     

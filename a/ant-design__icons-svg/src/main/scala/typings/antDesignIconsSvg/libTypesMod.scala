@@ -25,7 +25,8 @@ object libTypesMod {
       __obj.asInstanceOf[AbstractNode]
     }
     
-    extension [Self <: AbstractNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbstractNode] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: StringDictionary[String]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libTypesMod {
       __obj.asInstanceOf[IconDefinition]
     }
     
-    extension [Self <: IconDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconDefinition] (val x: Self) extends AnyVal {
       
       inline def setIcon(
         value: (js.Function2[/* primaryColor */ String, /* secondaryColor */ String, AbstractNode]) | AbstractNode

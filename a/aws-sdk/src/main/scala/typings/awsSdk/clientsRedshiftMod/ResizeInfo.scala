@@ -23,7 +23,8 @@ object ResizeInfo {
     __obj.asInstanceOf[ResizeInfo]
   }
   
-  extension [Self <: ResizeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeInfo] (val x: Self) extends AnyVal {
     
     inline def setAllowCancelResize(value: Boolean): Self = StObject.set(x, "AllowCancelResize", value.asInstanceOf[js.Any])
     

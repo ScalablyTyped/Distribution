@@ -18,7 +18,8 @@ object CounterConfiguration {
     __obj.asInstanceOf[CounterConfiguration[T]]
   }
   
-  extension [Self <: CounterConfiguration[?], T /* <: String */](x: Self & CounterConfiguration[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterConfiguration[?], T /* <: String */] (val x: Self & CounterConfiguration[T]) extends AnyVal {
     
     inline def setCollect(value: CollectFunction[Counter[T]]): Self = StObject.set(x, "collect", value.asInstanceOf[js.Any])
     

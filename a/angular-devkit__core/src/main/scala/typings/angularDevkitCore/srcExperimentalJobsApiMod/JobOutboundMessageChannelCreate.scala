@@ -20,7 +20,8 @@ object JobOutboundMessageChannelCreate {
     __obj.asInstanceOf[JobOutboundMessageChannelCreate]
   }
   
-  extension [Self <: JobOutboundMessageChannelCreate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobOutboundMessageChannelCreate] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ChannelCreate): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

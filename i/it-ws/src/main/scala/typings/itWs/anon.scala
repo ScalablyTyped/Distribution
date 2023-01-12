@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setAncestorOrigins(value: DOMStringList): Self = StObject.set(x, "ancestorOrigins", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
     }

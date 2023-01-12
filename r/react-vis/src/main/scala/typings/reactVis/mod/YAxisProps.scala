@@ -73,7 +73,8 @@ object YAxisProps {
     __obj.asInstanceOf[YAxisProps]
   }
   
-  extension [Self <: YAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

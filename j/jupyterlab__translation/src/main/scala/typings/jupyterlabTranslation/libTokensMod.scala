@@ -21,7 +21,8 @@ object libTokensMod {
     @js.native
     val ^ : Token[ITranslator] = js.native
     
-    extension [Self <: ITranslator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITranslator] (val x: Self) extends AnyVal {
       
       inline def setLoad(value: String => TranslationBundle): Self = StObject.set(x, "load", js.Any.fromFunction1(value))
     }
@@ -110,7 +111,8 @@ object libTokensMod {
       __obj.asInstanceOf[TranslationBundle]
     }
     
-    extension [Self <: TranslationBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TranslationBundle] (val x: Self) extends AnyVal {
       
       inline def setDcnpgettext(value: (String, String, String, String, Double, /* repeated */ Any) => String): Self = StObject.set(x, "dcnpgettext", js.Any.fromFunction6(value))
       

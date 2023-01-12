@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[ContentDisposition]
     }
     
-    extension [Self <: ContentDisposition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentDisposition] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: StringDictionary[String]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: String | Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

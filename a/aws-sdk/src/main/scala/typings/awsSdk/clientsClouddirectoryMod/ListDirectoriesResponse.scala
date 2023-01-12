@@ -23,7 +23,8 @@ object ListDirectoriesResponse {
     __obj.asInstanceOf[ListDirectoriesResponse]
   }
   
-  extension [Self <: ListDirectoriesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDirectoriesResponse] (val x: Self) extends AnyVal {
     
     inline def setDirectories(value: DirectoryList): Self = StObject.set(x, "Directories", value.asInstanceOf[js.Any])
     

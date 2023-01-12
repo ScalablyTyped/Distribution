@@ -182,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Endpoint[Self]]
     }
     
-    extension [Self_ <: Endpoint[?], Self](x: Self_ & Endpoint[Self]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self_ <: Endpoint[?], Self] (val x: Self_ & Endpoint[Self]) extends AnyVal {
       
       inline def setAddFullRequestInterceptor(value: FullRequestInterceptor => Self): Self_ = StObject.set(x, "addFullRequestInterceptor", js.Any.fromFunction1(value))
       
@@ -236,7 +237,8 @@ object mod {
       __obj.asInstanceOf[FullRequestInterceptorReturnValue]
     }
     
-    extension [Self <: FullRequestInterceptorReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullRequestInterceptorReturnValue] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -358,7 +360,8 @@ object mod {
       __obj.asInstanceOf[ResponseBase]
     }
     
-    extension [Self <: ResponseBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseBase] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: () => Any): Self = StObject.set(x, "config", js.Any.fromFunction0(value))
       
@@ -440,7 +443,8 @@ object mod {
       __obj.asInstanceOf[ResponseInterceptorReturnValue]
     }
     
-    extension [Self <: ResponseInterceptorReturnValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseInterceptorReturnValue] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

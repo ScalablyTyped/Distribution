@@ -15,7 +15,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setBase64(value: JQueryBase64Static): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
   }

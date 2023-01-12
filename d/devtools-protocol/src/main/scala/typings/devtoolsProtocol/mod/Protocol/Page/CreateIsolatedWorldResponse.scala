@@ -19,7 +19,8 @@ object CreateIsolatedWorldResponse {
     __obj.asInstanceOf[CreateIsolatedWorldResponse]
   }
   
-  extension [Self <: CreateIsolatedWorldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIsolatedWorldResponse] (val x: Self) extends AnyVal {
     
     inline def setExecutionContextId(value: ExecutionContextId): Self = StObject.set(x, "executionContextId", value.asInstanceOf[js.Any])
   }

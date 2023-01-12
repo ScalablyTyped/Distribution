@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Private]
     }
     
-    extension [Self <: Private](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Private] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Xpriv]
     }
     
-    extension [Self <: Xpriv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xpriv] (val x: Self) extends AnyVal {
       
       inline def setXpriv(value: String): Self = StObject.set(x, "xpriv", value.asInstanceOf[js.Any])
       

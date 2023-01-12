@@ -110,7 +110,8 @@ object netGrpcMod {
       __obj.asInstanceOf[ConnectParams]
     }
     
-    extension [Self <: ConnectParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectParams] (val x: Self) extends AnyVal {
       
       inline def setMaxReceiveSize(value: Double): Self = StObject.set(x, "maxReceiveSize", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object netGrpcMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -193,7 +195,8 @@ object netGrpcMod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Object): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

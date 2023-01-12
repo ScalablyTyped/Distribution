@@ -22,7 +22,8 @@ object DisableServiceRequest {
     __obj.asInstanceOf[DisableServiceRequest]
   }
   
-  extension [Self <: DisableServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setCheckIfServiceHasUsage(value: String): Self = StObject.set(x, "checkIfServiceHasUsage", value.asInstanceOf[js.Any])
     

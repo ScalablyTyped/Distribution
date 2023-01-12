@@ -40,7 +40,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[ConstantConfig]
     }
     
-    extension [Self <: ConstantConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstantConfig] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -119,7 +120,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[IdentityConfig]
     }
     
-    extension [Self <: IdentityConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityConfig] (val x: Self) extends AnyVal {
       
       inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[OrthogonalConfig]
     }
     
-    extension [Self <: OrthogonalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrthogonalConfig] (val x: Self) extends AnyVal {
       
       inline def setGain(value: Double): Self = StObject.set(x, "gain", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[RandomNormalConfig]
     }
     
-    extension [Self <: RandomNormalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomNormalConfig] (val x: Self) extends AnyVal {
       
       inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
@@ -242,7 +246,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[RandomUniformConfig]
     }
     
-    extension [Self <: RandomUniformConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomUniformConfig] (val x: Self) extends AnyVal {
       
       inline def setMaxval(value: Double): Self = StObject.set(x, "maxval", value.asInstanceOf[js.Any])
       
@@ -275,7 +280,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[TruncatedNormalConfig]
     }
     
-    extension [Self <: TruncatedNormalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TruncatedNormalConfig] (val x: Self) extends AnyVal {
       
       inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object distKerasFormatInitializerConfigMod {
       __obj.asInstanceOf[VarianceScalingConfig]
     }
     
-    extension [Self <: VarianceScalingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VarianceScalingConfig] (val x: Self) extends AnyVal {
       
       inline def setDistribution(value: DistributionSerialization): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
       

@@ -40,7 +40,8 @@ object MetricSource {
     __obj.asInstanceOf[MetricSource]
   }
   
-  extension [Self <: MetricSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricSource] (val x: Self) extends AnyVal {
     
     inline def setAppFlowConfig(value: AppFlowConfig): Self = StObject.set(x, "AppFlowConfig", value.asInstanceOf[js.Any])
     

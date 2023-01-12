@@ -29,7 +29,8 @@ object Ray {
     __obj.asInstanceOf[Ray]
   }
   
-  extension [Self <: Ray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ray] (val x: Self) extends AnyVal {
     
     inline def setCheckCollisionResponse(value: Boolean): Self = StObject.set(x, "checkCollisionResponse", value.asInstanceOf[js.Any])
     

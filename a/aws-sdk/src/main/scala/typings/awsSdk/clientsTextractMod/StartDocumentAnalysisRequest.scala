@@ -50,7 +50,8 @@ object StartDocumentAnalysisRequest {
     __obj.asInstanceOf[StartDocumentAnalysisRequest]
   }
   
-  extension [Self <: StartDocumentAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDocumentAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PrivateName_ {
     __obj.asInstanceOf[PrivateName_]
   }
   
-  extension [Self <: PrivateName_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateName_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

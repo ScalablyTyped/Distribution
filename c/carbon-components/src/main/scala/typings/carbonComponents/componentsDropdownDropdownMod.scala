@@ -107,7 +107,8 @@ object componentsDropdownDropdownMod {
       __obj.asInstanceOf[Dropdown]
     }
     
-    extension [Self <: Dropdown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dropdown] (val x: Self) extends AnyVal {
       
       inline def setGetCurrentNavigation(value: () => js.UndefOr[HTMLElement]): Self = StObject.set(x, "getCurrentNavigation", js.Any.fromFunction0(value))
       
@@ -188,7 +189,8 @@ object componentsDropdownDropdownMod {
       __obj.asInstanceOf[DropdownOptions]
     }
     
-    extension [Self <: DropdownOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownOptions] (val x: Self) extends AnyVal {
       
       inline def setClassDisabled(value: String): Self = StObject.set(x, "classDisabled", value.asInstanceOf[js.Any])
       

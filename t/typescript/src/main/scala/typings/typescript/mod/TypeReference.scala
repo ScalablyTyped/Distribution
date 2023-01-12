@@ -49,7 +49,8 @@ object TypeReference {
     __obj.asInstanceOf[TypeReference]
   }
   
-  extension [Self <: TypeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeReference] (val x: Self) extends AnyVal {
     
     inline def setNode(value: TypeReferenceNode | ArrayTypeNode | TupleTypeNode): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     

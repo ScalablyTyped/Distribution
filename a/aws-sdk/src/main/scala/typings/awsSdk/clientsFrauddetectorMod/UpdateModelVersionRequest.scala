@@ -43,7 +43,8 @@ object UpdateModelVersionRequest {
     __obj.asInstanceOf[UpdateModelVersionRequest]
   }
   
-  extension [Self <: UpdateModelVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateModelVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setExternalEventsDetail(value: ExternalEventsDetail): Self = StObject.set(x, "externalEventsDetail", value.asInstanceOf[js.Any])
     

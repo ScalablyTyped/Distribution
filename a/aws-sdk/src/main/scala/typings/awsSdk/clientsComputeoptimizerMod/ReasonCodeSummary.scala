@@ -23,7 +23,8 @@ object ReasonCodeSummary {
     __obj.asInstanceOf[ReasonCodeSummary]
   }
   
-  extension [Self <: ReasonCodeSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReasonCodeSummary] (val x: Self) extends AnyVal {
     
     inline def setName(value: FindingReasonCode): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

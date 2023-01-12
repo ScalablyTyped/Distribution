@@ -18,7 +18,8 @@ object AwsIotAnalyticsParameters {
     __obj.asInstanceOf[AwsIotAnalyticsParameters]
   }
   
-  extension [Self <: AwsIotAnalyticsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIotAnalyticsParameters] (val x: Self) extends AnyVal {
     
     inline def setDataSetName(value: DataSetName): Self = StObject.set(x, "DataSetName", value.asInstanceOf[js.Any])
   }

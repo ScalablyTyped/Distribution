@@ -64,7 +64,8 @@ object BasemapProperties {
     __obj.asInstanceOf[BasemapProperties]
   }
   
-  extension [Self <: BasemapProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapProperties] (val x: Self) extends AnyVal {
     
     inline def setBaseLayers(value: CollectionProperties[LayerProperties]): Self = StObject.set(x, "baseLayers", value.asInstanceOf[js.Any])
     

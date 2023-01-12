@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1beta2ExplicitContentFrame {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1beta2ExplicitContentFrame]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1beta2ExplicitContentFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1beta2ExplicitContentFrame] (val x: Self) extends AnyVal {
     
     inline def setPornographyLikelihood(value: String): Self = StObject.set(x, "pornographyLikelihood", value.asInstanceOf[js.Any])
     

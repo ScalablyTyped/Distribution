@@ -17,7 +17,8 @@ object Dimensions {
     __obj.asInstanceOf[Dimensions]
   }
   
-  extension [Self <: Dimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     inline def setGetHeight(value: () => Double): Self = StObject.set(x, "getHeight", js.Any.fromFunction0(value))
     

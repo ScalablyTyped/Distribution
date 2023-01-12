@@ -26,7 +26,8 @@ object IsFocusVisibleSize {
     __obj.asInstanceOf[IsFocusVisibleSize]
   }
   
-  extension [Self <: IsFocusVisibleSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsFocusVisibleSize] (val x: Self) extends AnyVal {
     
     inline def set$isFocusVisible(value: Boolean): Self = StObject.set(x, "$isFocusVisible", value.asInstanceOf[js.Any])
     

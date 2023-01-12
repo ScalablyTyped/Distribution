@@ -23,7 +23,8 @@ object DSLMethodOptsWithErr {
     __obj.asInstanceOf[DSLMethodOptsWithErr[T]]
   }
   
-  extension [Self <: DSLMethodOptsWithErr[?], T](x: Self & DSLMethodOptsWithErr[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSLMethodOptsWithErr[?], T] (val x: Self & DSLMethodOptsWithErr[T]) extends AnyVal {
     
     inline def setERR_MSG(value: String): Self = StObject.set(x, "ERR_MSG", value.asInstanceOf[js.Any])
     

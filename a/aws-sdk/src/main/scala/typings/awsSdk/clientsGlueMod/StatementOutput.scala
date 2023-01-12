@@ -43,7 +43,8 @@ object StatementOutput {
     __obj.asInstanceOf[StatementOutput]
   }
   
-  extension [Self <: StatementOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatementOutput] (val x: Self) extends AnyVal {
     
     inline def setData(value: StatementOutputData): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

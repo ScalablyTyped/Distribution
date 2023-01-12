@@ -55,7 +55,8 @@ object SynonymInfo {
     __obj.asInstanceOf[SynonymInfo]
   }
   
-  extension [Self <: SynonymInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynonymInfo] (val x: Self) extends AnyVal {
     
     inline def setAntonymList(value: Any): Self = StObject.set(x, "AntonymList", value.asInstanceOf[js.Any])
     

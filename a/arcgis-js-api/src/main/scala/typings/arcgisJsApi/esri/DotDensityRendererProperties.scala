@@ -93,7 +93,8 @@ object DotDensityRendererProperties {
     __obj.asInstanceOf[DotDensityRendererProperties]
   }
   
-  extension [Self <: DotDensityRendererProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DotDensityRendererProperties] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: js.Array[AttributeColorInfoProperties]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

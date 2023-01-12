@@ -37,7 +37,8 @@ object NotebookDocumentContentOptions {
     __obj.asInstanceOf[NotebookDocumentContentOptions]
   }
   
-  extension [Self <: NotebookDocumentContentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentContentOptions] (val x: Self) extends AnyVal {
     
     inline def setTransientCellMetadata(value: StringDictionary[js.UndefOr[Boolean]]): Self = StObject.set(x, "transientCellMetadata", value.asInstanceOf[js.Any])
     

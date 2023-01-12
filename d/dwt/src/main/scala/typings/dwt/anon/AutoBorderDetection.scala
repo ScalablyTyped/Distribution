@@ -81,7 +81,8 @@ object AutoBorderDetection {
     __obj.asInstanceOf[AutoBorderDetection]
   }
   
-  extension [Self <: AutoBorderDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoBorderDetection] (val x: Self) extends AnyVal {
     
     inline def setAutoBorderDetection(value: Boolean): Self = StObject.set(x, "autoBorderDetection", value.asInstanceOf[js.Any])
     

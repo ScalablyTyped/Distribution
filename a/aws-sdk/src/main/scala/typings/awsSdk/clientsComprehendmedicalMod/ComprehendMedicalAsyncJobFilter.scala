@@ -33,7 +33,8 @@ object ComprehendMedicalAsyncJobFilter {
     __obj.asInstanceOf[ComprehendMedicalAsyncJobFilter]
   }
   
-  extension [Self <: ComprehendMedicalAsyncJobFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComprehendMedicalAsyncJobFilter] (val x: Self) extends AnyVal {
     
     inline def setJobName(value: JobName): Self = StObject.set(x, "JobName", value.asInstanceOf[js.Any])
     

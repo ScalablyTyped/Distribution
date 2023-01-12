@@ -29,7 +29,8 @@ object RadialChartPoint {
     __obj.asInstanceOf[RadialChartPoint]
   }
   
-  extension [Self <: RadialChartPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadialChartPoint] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

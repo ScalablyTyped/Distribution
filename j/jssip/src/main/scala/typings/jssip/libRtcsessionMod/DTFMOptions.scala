@@ -22,7 +22,8 @@ object DTFMOptions {
     __obj.asInstanceOf[DTFMOptions]
   }
   
-  extension [Self <: DTFMOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DTFMOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

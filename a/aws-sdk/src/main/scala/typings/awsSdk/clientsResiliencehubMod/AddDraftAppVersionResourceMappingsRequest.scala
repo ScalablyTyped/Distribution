@@ -23,7 +23,8 @@ object AddDraftAppVersionResourceMappingsRequest {
     __obj.asInstanceOf[AddDraftAppVersionResourceMappingsRequest]
   }
   
-  extension [Self <: AddDraftAppVersionResourceMappingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDraftAppVersionResourceMappingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAppArn(value: Arn): Self = StObject.set(x, "appArn", value.asInstanceOf[js.Any])
     

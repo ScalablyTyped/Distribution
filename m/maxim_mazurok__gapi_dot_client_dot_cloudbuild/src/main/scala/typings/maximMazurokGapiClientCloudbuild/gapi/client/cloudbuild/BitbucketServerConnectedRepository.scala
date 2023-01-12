@@ -22,7 +22,8 @@ object BitbucketServerConnectedRepository {
     __obj.asInstanceOf[BitbucketServerConnectedRepository]
   }
   
-  extension [Self <: BitbucketServerConnectedRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerConnectedRepository] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

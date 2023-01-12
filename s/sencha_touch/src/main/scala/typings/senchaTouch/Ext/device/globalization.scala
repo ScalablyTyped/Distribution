@@ -88,7 +88,8 @@ object globalization {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setGetCurrencyCode(value: () => String): Self = StObject.set(x, "getCurrencyCode", js.Any.fromFunction0(value))
       

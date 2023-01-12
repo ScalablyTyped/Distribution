@@ -36,7 +36,8 @@ object mod {
         __obj.asInstanceOf[NanoScheduler]
       }
       
-      extension [Self <: NanoScheduler](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NanoScheduler] (val x: Self) extends AnyVal {
         
         inline def setPush(value: js.Function0[Unit] => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
         

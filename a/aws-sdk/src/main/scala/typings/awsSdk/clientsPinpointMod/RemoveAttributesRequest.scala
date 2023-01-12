@@ -25,7 +25,8 @@ object RemoveAttributesRequest {
     __obj.asInstanceOf[RemoveAttributesRequest]
   }
   
-  extension [Self <: RemoveAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object libUtilTransButtonMod extends Shortcut {
       __obj.asInstanceOf[TransButtonProps]
     }
     
-    extension [Self <: TransButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

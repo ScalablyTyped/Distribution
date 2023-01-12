@@ -25,7 +25,8 @@ object ChangeDescription {
     __obj.asInstanceOf[ChangeDescription]
   }
   
-  extension [Self <: ChangeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeDescription] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Array[String] | Boolean): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

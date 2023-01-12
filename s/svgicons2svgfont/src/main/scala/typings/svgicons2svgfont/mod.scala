@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[MetadataOptions]
     }
     
-    extension [Self <: MetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataOptions] (val x: Self) extends AnyVal {
       
       inline def setErr(
         value: /* import warning: importer.ImportType#apply Failed type conversion: svgicons2svgfont.anon.Typeofconsole['error'] */ js.Any
@@ -203,7 +205,8 @@ object mod {
       __obj.asInstanceOf[SvgIcons2FontOptions]
     }
     
-    extension [Self <: SvgIcons2FontOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgIcons2FontOptions] (val x: Self) extends AnyVal {
       
       inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       

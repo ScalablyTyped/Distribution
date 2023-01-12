@@ -24,7 +24,8 @@ object OptionsTopBarScrollEdgeAppearanceBackground {
     __obj.asInstanceOf[OptionsTopBarScrollEdgeAppearanceBackground]
   }
   
-  extension [Self <: OptionsTopBarScrollEdgeAppearanceBackground](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsTopBarScrollEdgeAppearanceBackground] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

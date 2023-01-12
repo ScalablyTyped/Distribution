@@ -15,7 +15,8 @@ object AggregationsScriptedHeuristic {
     __obj.asInstanceOf[AggregationsScriptedHeuristic]
   }
   
-  extension [Self <: AggregationsScriptedHeuristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsScriptedHeuristic] (val x: Self) extends AnyVal {
     
     inline def setScript(value: Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }

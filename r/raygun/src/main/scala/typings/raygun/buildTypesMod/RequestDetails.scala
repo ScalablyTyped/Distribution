@@ -35,7 +35,8 @@ object RequestDetails {
     __obj.asInstanceOf[RequestDetails]
   }
   
-  extension [Self <: RequestDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDetails] (val x: Self) extends AnyVal {
     
     inline def setForm(value: js.Object): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     

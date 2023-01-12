@@ -28,7 +28,8 @@ object NetworkQuality {
     __obj.asInstanceOf[NetworkQuality]
   }
   
-  extension [Self <: NetworkQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkQuality] (val x: Self) extends AnyVal {
     
     inline def setDownlinkNetworkQuality(value: `1` | `2` | `3` | `4` | `5` | `6`): Self = StObject.set(x, "downlinkNetworkQuality", value.asInstanceOf[js.Any])
     

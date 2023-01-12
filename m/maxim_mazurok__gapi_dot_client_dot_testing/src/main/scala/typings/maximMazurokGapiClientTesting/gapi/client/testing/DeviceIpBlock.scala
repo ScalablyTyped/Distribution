@@ -22,7 +22,8 @@ object DeviceIpBlock {
     __obj.asInstanceOf[DeviceIpBlock]
   }
   
-  extension [Self <: DeviceIpBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceIpBlock] (val x: Self) extends AnyVal {
     
     inline def setAddedDate(value: Date): Self = StObject.set(x, "addedDate", value.asInstanceOf[js.Any])
     

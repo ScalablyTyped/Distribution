@@ -23,7 +23,8 @@ object Score {
     __obj.asInstanceOf[Score]
   }
   
-  extension [Self <: Score](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Score] (val x: Self) extends AnyVal {
     
     inline def setGrabs(value: Double): Self = StObject.set(x, "grabs", value.asInstanceOf[js.Any])
     

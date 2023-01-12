@@ -18,7 +18,8 @@ object CreateColumnsOperation {
     __obj.asInstanceOf[CreateColumnsOperation]
   }
   
-  extension [Self <: CreateColumnsOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateColumnsOperation] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: CalculatedColumnList): Self = StObject.set(x, "Columns", value.asInstanceOf[js.Any])
     

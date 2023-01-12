@@ -15,7 +15,8 @@ object CliArgs {
     __obj.asInstanceOf[CliArgs]
   }
   
-  extension [Self <: CliArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CliArgs] (val x: Self) extends AnyVal {
     
     inline def setCliArgs(value: js.Array[String]): Self = StObject.set(x, "cliArgs", value.asInstanceOf[js.Any])
     

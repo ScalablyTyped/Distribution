@@ -113,7 +113,8 @@ object JobUpdate {
     __obj.asInstanceOf[JobUpdate]
   }
   
-  extension [Self <: JobUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobUpdate] (val x: Self) extends AnyVal {
     
     inline def setAllocatedCapacity(value: IntegerValue): Self = StObject.set(x, "AllocatedCapacity", value.asInstanceOf[js.Any])
     

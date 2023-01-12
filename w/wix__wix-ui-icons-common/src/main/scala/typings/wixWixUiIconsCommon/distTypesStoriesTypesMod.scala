@@ -25,7 +25,8 @@ object distTypesStoriesTypesMod {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setIconsMetadata(value: js.Array[IconMetadata]): Self = StObject.set(x, "iconsMetadata", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distTypesStoriesTypesMod {
       __obj.asInstanceOf[GeneralCategoryListProps]
     }
     
-    extension [Self <: GeneralCategoryListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralCategoryListProps] (val x: Self) extends AnyVal {
       
       inline def setIconComponents(value: Record[String, FC[IconProps]]): Self = StObject.set(x, "iconComponents", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object distTypesStoriesTypesMod {
       __obj.asInstanceOf[IconDescriptor]
     }
     
-    extension [Self <: IconDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconDescriptor] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: FC[IconProps]): Self = StObject.set(x, "Icon", value.asInstanceOf[js.Any])
       
@@ -106,7 +109,8 @@ object distTypesStoriesTypesMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -129,7 +133,8 @@ object distTypesStoriesTypesMod {
       __obj.asInstanceOf[SystemCategoryListProps]
     }
     
-    extension [Self <: SystemCategoryListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemCategoryListProps] (val x: Self) extends AnyVal {
       
       inline def setIconComponents(value: Record[String, FC[IconProps]]): Self = StObject.set(x, "iconComponents", value.asInstanceOf[js.Any])
       

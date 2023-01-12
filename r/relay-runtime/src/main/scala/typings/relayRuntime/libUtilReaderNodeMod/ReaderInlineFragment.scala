@@ -26,7 +26,8 @@ object ReaderInlineFragment {
     __obj.asInstanceOf[ReaderInlineFragment]
   }
   
-  extension [Self <: ReaderInlineFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderInlineFragment] (val x: Self) extends AnyVal {
     
     inline def setAbstractKey(value: String): Self = StObject.set(x, "abstractKey", value.asInstanceOf[js.Any])
     

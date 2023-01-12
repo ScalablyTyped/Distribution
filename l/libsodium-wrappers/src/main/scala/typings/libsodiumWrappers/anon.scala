@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: js.typedarray.Uint8Array): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       

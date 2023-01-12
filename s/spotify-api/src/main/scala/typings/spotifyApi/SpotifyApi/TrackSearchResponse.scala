@@ -21,7 +21,8 @@ object TrackSearchResponse {
     __obj.asInstanceOf[TrackSearchResponse]
   }
   
-  extension [Self <: TrackSearchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackSearchResponse] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: PagingObject[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
   }

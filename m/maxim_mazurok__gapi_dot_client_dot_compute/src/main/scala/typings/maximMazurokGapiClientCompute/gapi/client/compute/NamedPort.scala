@@ -19,7 +19,8 @@ object NamedPort {
     __obj.asInstanceOf[NamedPort]
   }
   
-  extension [Self <: NamedPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedPort] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

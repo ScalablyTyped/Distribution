@@ -19,7 +19,8 @@ object DropDownListPopup {
     __obj.asInstanceOf[DropDownListPopup]
   }
   
-  extension [Self <: DropDownListPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListPopup] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: String): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

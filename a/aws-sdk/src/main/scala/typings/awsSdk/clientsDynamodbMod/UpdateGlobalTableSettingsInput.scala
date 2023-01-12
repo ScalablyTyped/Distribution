@@ -43,7 +43,8 @@ object UpdateGlobalTableSettingsInput {
     __obj.asInstanceOf[UpdateGlobalTableSettingsInput]
   }
   
-  extension [Self <: UpdateGlobalTableSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGlobalTableSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setGlobalTableBillingMode(value: BillingMode): Self = StObject.set(x, "GlobalTableBillingMode", value.asInstanceOf[js.Any])
     

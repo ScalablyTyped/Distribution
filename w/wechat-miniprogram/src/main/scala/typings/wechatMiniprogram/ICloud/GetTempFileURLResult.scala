@@ -20,7 +20,8 @@ object GetTempFileURLResult {
     __obj.asInstanceOf[GetTempFileURLResult]
   }
   
-  extension [Self <: GetTempFileURLResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTempFileURLResult] (val x: Self) extends AnyVal {
     
     inline def setFileList(value: js.Array[GetTempFileURLResultItem]): Self = StObject.set(x, "fileList", value.asInstanceOf[js.Any])
     

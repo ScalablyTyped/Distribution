@@ -43,7 +43,8 @@ object LinuxParameters {
     __obj.asInstanceOf[LinuxParameters]
   }
   
-  extension [Self <: LinuxParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinuxParameters] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: DevicesList): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

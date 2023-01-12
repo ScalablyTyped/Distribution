@@ -43,7 +43,8 @@ object anon {
       __obj.asInstanceOf[PartialIOptions]
     }
     
-    extension [Self <: PartialIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoFit(value: Boolean): Self = StObject.set(x, "autoFit", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object ExtractDeletedKeys {
     __obj.asInstanceOf[ExtractDeletedKeys]
   }
   
-  extension [Self <: ExtractDeletedKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtractDeletedKeys] (val x: Self) extends AnyVal {
     
     inline def setExtractDeletedKeys(value: /* data */ js.Object => js.Array[DeletedEntityKey]): Self = StObject.set(x, "extractDeletedKeys", js.Any.fromFunction1(value))
     

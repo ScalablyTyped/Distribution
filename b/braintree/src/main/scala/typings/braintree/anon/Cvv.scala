@@ -27,7 +27,8 @@ object Cvv {
     __obj.asInstanceOf[Cvv]
   }
   
-  extension [Self <: Cvv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
     
     inline def setCardholderName(value: String): Self = StObject.set(x, "cardholderName", value.asInstanceOf[js.Any])
     

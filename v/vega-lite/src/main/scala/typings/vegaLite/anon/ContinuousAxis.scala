@@ -33,7 +33,8 @@ object ContinuousAxis {
     __obj.asInstanceOf[ContinuousAxis]
   }
   
-  extension [Self <: ContinuousAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinuousAxis] (val x: Self) extends AnyVal {
     
     inline def setContinuousAxis(value: typings.vegaLite.vegaLiteStrings.x | y): Self = StObject.set(x, "continuousAxis", value.asInstanceOf[js.Any])
     

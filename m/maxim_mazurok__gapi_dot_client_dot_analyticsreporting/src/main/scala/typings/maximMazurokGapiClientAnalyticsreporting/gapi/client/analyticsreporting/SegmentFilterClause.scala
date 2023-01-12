@@ -22,7 +22,8 @@ object SegmentFilterClause {
     __obj.asInstanceOf[SegmentFilterClause]
   }
   
-  extension [Self <: SegmentFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentFilterClause] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilter(value: SegmentDimensionFilter): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     

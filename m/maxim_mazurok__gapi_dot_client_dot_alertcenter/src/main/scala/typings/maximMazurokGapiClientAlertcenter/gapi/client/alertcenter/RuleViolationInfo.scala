@@ -47,7 +47,8 @@ object RuleViolationInfo {
     __obj.asInstanceOf[RuleViolationInfo]
   }
   
-  extension [Self <: RuleViolationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleViolationInfo] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: String): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object WizardStep {
     __obj.asInstanceOf[WizardStep]
   }
   
-  extension [Self <: WizardStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WizardStep] (val x: Self) extends AnyVal {
     
     inline def setButtons(value: js.Array[WizardStepButton]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object IValidationError {
     __obj.asInstanceOf[IValidationError]
   }
   
-  extension [Self <: IValidationError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IValidationError] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

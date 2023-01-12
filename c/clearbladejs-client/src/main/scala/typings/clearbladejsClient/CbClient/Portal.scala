@@ -35,7 +35,8 @@ object Portal {
     __obj.asInstanceOf[Portal]
   }
   
-  extension [Self <: Portal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Portal] (val x: Self) extends AnyVal {
     
     inline def setFetch(value: CbCallback => Unit): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     

@@ -355,7 +355,8 @@ object IgUpload {
     __obj.asInstanceOf[IgUpload]
   }
   
-  extension [Self <: IgUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgUpload] (val x: Self) extends AnyVal {
     
     inline def setAllowedExtensions(value: js.Array[Any]): Self = StObject.set(x, "allowedExtensions", value.asInstanceOf[js.Any])
     

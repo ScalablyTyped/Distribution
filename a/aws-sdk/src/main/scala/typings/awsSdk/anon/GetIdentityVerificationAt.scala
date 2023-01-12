@@ -25,7 +25,8 @@ object GetIdentityVerificationAt {
     __obj.asInstanceOf[GetIdentityVerificationAt]
   }
   
-  extension [Self <: GetIdentityVerificationAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIdentityVerificationAt] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

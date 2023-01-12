@@ -27,7 +27,8 @@ object ResponseDataHoldersBrandSummaryList {
     __obj.asInstanceOf[ResponseDataHoldersBrandSummaryList]
   }
   
-  extension [Self <: ResponseDataHoldersBrandSummaryList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseDataHoldersBrandSummaryList] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Arbn]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

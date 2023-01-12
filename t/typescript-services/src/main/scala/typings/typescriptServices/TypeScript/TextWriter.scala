@@ -41,7 +41,8 @@ object TextWriter {
     __obj.asInstanceOf[TextWriter]
   }
   
-  extension [Self <: TextWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextWriter] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     

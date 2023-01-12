@@ -31,7 +31,8 @@ object Warehouse {
     __obj.asInstanceOf[Warehouse]
   }
   
-  extension [Self <: Warehouse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Warehouse] (val x: Self) extends AnyVal {
     
     inline def setBusinessDayConfig(value: BusinessDayConfig): Self = StObject.set(x, "businessDayConfig", value.asInstanceOf[js.Any])
     

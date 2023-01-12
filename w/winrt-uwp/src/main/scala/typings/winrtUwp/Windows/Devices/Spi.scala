@@ -75,7 +75,8 @@ object Spi {
         __obj.asInstanceOf[ISpiProvider]
       }
       
-      extension [Self <: ISpiProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ISpiProvider] (val x: Self) extends AnyVal {
         
         inline def setGetControllersAsync(value: Any): Self = StObject.set(x, "getControllersAsync", value.asInstanceOf[js.Any])
       }
@@ -104,7 +105,8 @@ object Spi {
         __obj.asInstanceOf[ProviderSpiConnectionSettings]
       }
       
-      extension [Self <: ProviderSpiConnectionSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProviderSpiConnectionSettings] (val x: Self) extends AnyVal {
         
         inline def setChipSelectLine(value: Any): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
         
@@ -146,7 +148,8 @@ object Spi {
       __obj.asInstanceOf[SpiBusInfo]
     }
     
-    extension [Self <: SpiBusInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpiBusInfo] (val x: Self) extends AnyVal {
       
       inline def setChipSelectLineCount(value: Double): Self = StObject.set(x, "chipSelectLineCount", value.asInstanceOf[js.Any])
       
@@ -189,7 +192,8 @@ object Spi {
       __obj.asInstanceOf[SpiConnectionSettings]
     }
     
-    extension [Self <: SpiConnectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpiConnectionSettings] (val x: Self) extends AnyVal {
       
       inline def setChipSelectLine(value: Double): Self = StObject.set(x, "chipSelectLine", value.asInstanceOf[js.Any])
       
@@ -220,7 +224,8 @@ object Spi {
       __obj.asInstanceOf[SpiController]
     }
     
-    extension [Self <: SpiController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpiController] (val x: Self) extends AnyVal {
       
       inline def setGetDevice(value: SpiConnectionSettings => SpiDevice): Self = StObject.set(x, "getDevice", js.Any.fromFunction1(value))
     }
@@ -279,7 +284,8 @@ object Spi {
       __obj.asInstanceOf[SpiDevice]
     }
     
-    extension [Self <: SpiDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpiDevice] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

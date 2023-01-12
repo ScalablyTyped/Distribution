@@ -95,7 +95,8 @@ object InternalFormInstance {
     __obj.asInstanceOf[InternalFormInstance]
   }
   
-  extension [Self <: InternalFormInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalFormInstance] (val x: Self) extends AnyVal {
     
     inline def setGetFieldError(value: /* name */ NamePath => js.Array[String]): Self = StObject.set(x, "getFieldError", js.Any.fromFunction1(value))
     

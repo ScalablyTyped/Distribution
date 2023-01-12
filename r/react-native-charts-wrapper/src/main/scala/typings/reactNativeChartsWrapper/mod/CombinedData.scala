@@ -23,7 +23,8 @@ object CombinedData {
     __obj.asInstanceOf[CombinedData]
   }
   
-  extension [Self <: CombinedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinedData] (val x: Self) extends AnyVal {
     
     inline def setBarData(value: BarData): Self = StObject.set(x, "barData", value.asInstanceOf[js.Any])
     

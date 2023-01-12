@@ -53,7 +53,8 @@ object PartialStyleRulesIconClas {
     __obj.asInstanceOf[PartialStyleRulesIconClas]
   }
   
-  extension [Self <: PartialStyleRulesIconClas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesIconClas] (val x: Self) extends AnyVal {
     
     inline def setColorAction(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

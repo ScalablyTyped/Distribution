@@ -130,7 +130,8 @@ object PointGraph {
     __obj.asInstanceOf[PointGraph[T]]
   }
   
-  extension [Self <: PointGraph[?], T](x: Self & PointGraph[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointGraph[?], T] (val x: Self & PointGraph[T]) extends AnyVal {
     
     inline def setForEachPoint(
       value: js.Function4[

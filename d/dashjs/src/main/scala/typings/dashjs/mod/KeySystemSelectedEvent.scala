@@ -24,7 +24,8 @@ object KeySystemSelectedEvent {
     __obj.asInstanceOf[KeySystemSelectedEvent]
   }
   
-  extension [Self <: KeySystemSelectedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeySystemSelectedEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

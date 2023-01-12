@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[CloseTooltip]
     }
     
-    extension [Self <: CloseTooltip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseTooltip] (val x: Self) extends AnyVal {
       
       inline def setCloseTooltip(value: String): Self = StObject.set(x, "closeTooltip", value.asInstanceOf[js.Any])
       

@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Command[IsDetached]]
     }
     
-    extension [Self <: Command[?], IsDetached /* <: Boolean */](x: Self & Command[IsDetached]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command[?], IsDetached /* <: Boolean */] (val x: Self & Command[IsDetached]) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object mod {
       __obj.asInstanceOf[CommandOption[T]]
     }
     
-    extension [Self <: CommandOption[?], T](x: Self & CommandOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommandOption[?], T] (val x: Self & CommandOption[T]) extends AnyVal {
       
       inline def setDefault(value: OptionValue | T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object mod {
       __obj.asInstanceOf[DependencyConfig]
     }
     
-    extension [Self <: DependencyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyConfig] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -283,7 +287,8 @@ object mod {
       __obj.asInstanceOf[ProjectConfig]
     }
     
-    extension [Self <: ProjectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfig] (val x: Self) extends AnyVal {
       
       inline def setAndroid(
         value: Exclude[
@@ -348,7 +353,8 @@ object mod {
       __obj.asInstanceOf[UserConfig]
     }
     
-    extension [Self <: UserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserConfig] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       
@@ -390,7 +396,8 @@ object mod {
       __obj.asInstanceOf[UserDependencyConfig]
     }
     
-    extension [Self <: UserDependencyConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserDependencyConfig] (val x: Self) extends AnyVal {
       
       inline def setCommands(value: js.Array[Command[`false`]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
       

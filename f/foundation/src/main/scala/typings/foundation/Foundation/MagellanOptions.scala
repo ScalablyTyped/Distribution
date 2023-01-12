@@ -30,7 +30,8 @@ object MagellanOptions {
     __obj.asInstanceOf[MagellanOptions]
   }
   
-  extension [Self <: MagellanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagellanOptions] (val x: Self) extends AnyVal {
     
     inline def setActive_class(value: String): Self = StObject.set(x, "active_class", value.asInstanceOf[js.Any])
     

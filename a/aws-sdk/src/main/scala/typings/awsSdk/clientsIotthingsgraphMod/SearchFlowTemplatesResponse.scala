@@ -23,7 +23,8 @@ object SearchFlowTemplatesResponse {
     __obj.asInstanceOf[SearchFlowTemplatesResponse]
   }
   
-  extension [Self <: SearchFlowTemplatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFlowTemplatesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

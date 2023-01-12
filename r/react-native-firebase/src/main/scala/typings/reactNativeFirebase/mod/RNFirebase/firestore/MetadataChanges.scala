@@ -15,7 +15,8 @@ object MetadataChanges {
     __obj.asInstanceOf[MetadataChanges]
   }
   
-  extension [Self <: MetadataChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataChanges] (val x: Self) extends AnyVal {
     
     inline def setIncludeMetadataChanges(value: Boolean): Self = StObject.set(x, "includeMetadataChanges", value.asInstanceOf[js.Any])
   }

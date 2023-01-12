@@ -23,7 +23,8 @@ object CreateWebLoginTokenResponse {
     __obj.asInstanceOf[CreateWebLoginTokenResponse]
   }
   
-  extension [Self <: CreateWebLoginTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWebLoginTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setWebServerHostname(value: Hostname): Self = StObject.set(x, "WebServerHostname", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object LocationRect {
     __obj.asInstanceOf[LocationRect]
   }
   
-  extension [Self <: LocationRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationRect] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Double => Unit): Self = StObject.set(x, "buffer", js.Any.fromFunction1(value))
     

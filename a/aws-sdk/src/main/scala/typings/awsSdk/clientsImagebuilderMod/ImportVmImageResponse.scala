@@ -28,7 +28,8 @@ object ImportVmImageResponse {
     __obj.asInstanceOf[ImportVmImageResponse]
   }
   
-  extension [Self <: ImportVmImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportVmImageResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

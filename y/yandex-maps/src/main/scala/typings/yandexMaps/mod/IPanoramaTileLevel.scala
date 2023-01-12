@@ -17,7 +17,8 @@ object IPanoramaTileLevel {
     __obj.asInstanceOf[IPanoramaTileLevel]
   }
   
-  extension [Self <: IPanoramaTileLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaTileLevel] (val x: Self) extends AnyVal {
     
     inline def setGetImageSize(value: () => js.Array[Double]): Self = StObject.set(x, "getImageSize", js.Any.fromFunction0(value))
     

@@ -35,7 +35,8 @@ object ContextMenu {
     __obj.asInstanceOf[ContextMenu]
   }
   
-  extension [Self <: ContextMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextMenu] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: MenuItem => Unit): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     

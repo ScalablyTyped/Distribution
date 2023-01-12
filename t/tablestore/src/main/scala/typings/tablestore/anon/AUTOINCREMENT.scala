@@ -16,7 +16,8 @@ object AUTOINCREMENT {
     __obj.asInstanceOf[AUTOINCREMENT]
   }
   
-  extension [Self <: AUTOINCREMENT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AUTOINCREMENT] (val x: Self) extends AnyVal {
     
     inline def setAUTO_INCREMENT(value: `1`): Self = StObject.set(x, "AUTO_INCREMENT", value.asInstanceOf[js.Any])
   }

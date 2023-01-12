@@ -32,7 +32,8 @@ object InstanceGroupAutoscalingPolicyConfig {
     __obj.asInstanceOf[InstanceGroupAutoscalingPolicyConfig]
   }
   
-  extension [Self <: InstanceGroupAutoscalingPolicyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupAutoscalingPolicyConfig] (val x: Self) extends AnyVal {
     
     inline def setMaxInstances(value: Double): Self = StObject.set(x, "maxInstances", value.asInstanceOf[js.Any])
     

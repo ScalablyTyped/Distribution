@@ -26,7 +26,8 @@ object IScriptSnapshotShim {
     __obj.asInstanceOf[IScriptSnapshotShim]
   }
   
-  extension [Self <: IScriptSnapshotShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScriptSnapshotShim] (val x: Self) extends AnyVal {
     
     inline def setGetLength(value: () => Double): Self = StObject.set(x, "getLength", js.Any.fromFunction0(value))
     

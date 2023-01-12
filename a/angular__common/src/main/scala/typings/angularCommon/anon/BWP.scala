@@ -53,7 +53,8 @@ object BWP {
     __obj.asInstanceOf[BWP]
   }
   
-  extension [Self <: BWP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BWP] (val x: Self) extends AnyVal {
     
     inline def setBDT(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "BDT", value.asInstanceOf[js.Any])
     

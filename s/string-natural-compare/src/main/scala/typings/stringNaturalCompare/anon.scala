@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Alphabet]
     }
     
-    extension [Self <: Alphabet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alphabet] (val x: Self) extends AnyVal {
       
       inline def setAlphabet(value: String): Self = StObject.set(x, "alphabet", value.asInstanceOf[js.Any])
       

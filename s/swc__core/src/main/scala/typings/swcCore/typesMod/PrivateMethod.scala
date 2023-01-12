@@ -31,7 +31,8 @@ object PrivateMethod {
     __obj.asInstanceOf[PrivateMethod]
   }
   
-  extension [Self <: PrivateMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivateMethod] (val x: Self) extends AnyVal {
     
     inline def setKey(value: PrivateName): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object ReportOptionalArguments {
     __obj.asInstanceOf[ReportOptionalArguments]
   }
   
-  extension [Self <: ReportOptionalArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportOptionalArguments] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

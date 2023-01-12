@@ -44,7 +44,8 @@ object buildSrcAuthIamMod {
       __obj.asInstanceOf[RequestMetadata]
     }
     
-    extension [Self <: RequestMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestMetadata] (val x: Self) extends AnyVal {
       
       inline def `setX-goog-iam-authority-selector`(value: String): Self = StObject.set(x, "x-goog-iam-authority-selector", value.asInstanceOf[js.Any])
       

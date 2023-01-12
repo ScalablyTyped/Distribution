@@ -22,7 +22,8 @@ object ChannelToStoreLinkDetails {
     __obj.asInstanceOf[ChannelToStoreLinkDetails]
   }
   
-  extension [Self <: ChannelToStoreLinkDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelToStoreLinkDetails] (val x: Self) extends AnyVal {
     
     inline def setMerchantId(value: String): Self = StObject.set(x, "merchantId", value.asInstanceOf[js.Any])
     

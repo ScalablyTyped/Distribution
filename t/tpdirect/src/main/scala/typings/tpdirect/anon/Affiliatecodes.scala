@@ -19,7 +19,8 @@ object Affiliatecodes {
     __obj.asInstanceOf[Affiliatecodes]
   }
   
-  extension [Self <: Affiliatecodes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Affiliatecodes] (val x: Self) extends AnyVal {
     
     inline def setAffiliate_codes(value: js.Array[String]): Self = StObject.set(x, "affiliate_codes", value.asInstanceOf[js.Any])
     

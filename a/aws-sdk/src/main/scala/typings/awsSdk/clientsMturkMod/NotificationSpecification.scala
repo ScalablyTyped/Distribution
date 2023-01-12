@@ -33,7 +33,8 @@ object NotificationSpecification {
     __obj.asInstanceOf[NotificationSpecification]
   }
   
-  extension [Self <: NotificationSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSpecification] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: String): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
     

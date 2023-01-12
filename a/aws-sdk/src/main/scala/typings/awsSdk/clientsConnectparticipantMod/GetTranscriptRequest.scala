@@ -48,7 +48,8 @@ object GetTranscriptRequest {
     __obj.asInstanceOf[GetTranscriptRequest]
   }
   
-  extension [Self <: GetTranscriptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTranscriptRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectionToken(value: ParticipantToken): Self = StObject.set(x, "ConnectionToken", value.asInstanceOf[js.Any])
     

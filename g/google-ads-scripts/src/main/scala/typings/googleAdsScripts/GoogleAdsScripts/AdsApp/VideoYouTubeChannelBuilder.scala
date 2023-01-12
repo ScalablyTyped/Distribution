@@ -36,7 +36,8 @@ object VideoYouTubeChannelBuilder {
     __obj.asInstanceOf[VideoYouTubeChannelBuilder]
   }
   
-  extension [Self <: VideoYouTubeChannelBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoYouTubeChannelBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedVideoYouTubeChannelOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

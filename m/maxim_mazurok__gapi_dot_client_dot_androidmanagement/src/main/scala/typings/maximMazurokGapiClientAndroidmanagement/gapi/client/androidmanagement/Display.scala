@@ -34,7 +34,8 @@ object Display {
     __obj.asInstanceOf[Display]
   }
   
-  extension [Self <: Display](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
     
     inline def setDensity(value: Double): Self = StObject.set(x, "density", value.asInstanceOf[js.Any])
     

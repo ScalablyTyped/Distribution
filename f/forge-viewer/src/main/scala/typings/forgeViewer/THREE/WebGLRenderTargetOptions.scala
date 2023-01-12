@@ -35,7 +35,8 @@ object WebGLRenderTargetOptions {
     __obj.asInstanceOf[WebGLRenderTargetOptions]
   }
   
-  extension [Self <: WebGLRenderTargetOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLRenderTargetOptions] (val x: Self) extends AnyVal {
     
     inline def setAnisotropy(value: Double): Self = StObject.set(x, "anisotropy", value.asInstanceOf[js.Any])
     

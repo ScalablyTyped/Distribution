@@ -26,7 +26,8 @@ object IWebXRDomOverlayOptions {
     __obj.asInstanceOf[IWebXRDomOverlayOptions]
   }
   
-  extension [Self <: IWebXRDomOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRDomOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Element | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

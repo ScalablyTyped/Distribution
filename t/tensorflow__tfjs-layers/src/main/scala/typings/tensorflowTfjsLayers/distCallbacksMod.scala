@@ -135,7 +135,8 @@ object distCallbacksMod {
       __obj.asInstanceOf[EarlyStoppingCallbackArgs]
     }
     
-    extension [Self <: EarlyStoppingCallbackArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EarlyStoppingCallbackArgs] (val x: Self) extends AnyVal {
       
       inline def setBaseline(value: Double): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
       

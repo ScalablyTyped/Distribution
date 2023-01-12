@@ -23,7 +23,8 @@ object LabelMatchStatement {
     __obj.asInstanceOf[LabelMatchStatement]
   }
   
-  extension [Self <: LabelMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setKey(value: LabelMatchKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

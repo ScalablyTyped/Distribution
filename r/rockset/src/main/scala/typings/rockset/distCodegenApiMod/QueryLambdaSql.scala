@@ -27,7 +27,8 @@ object QueryLambdaSql {
     __obj.asInstanceOf[QueryLambdaSql]
   }
   
-  extension [Self <: QueryLambdaSql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryLambdaSql] (val x: Self) extends AnyVal {
     
     inline def setDefault_parameters(value: js.Array[QueryParameter]): Self = StObject.set(x, "default_parameters", value.asInstanceOf[js.Any])
     

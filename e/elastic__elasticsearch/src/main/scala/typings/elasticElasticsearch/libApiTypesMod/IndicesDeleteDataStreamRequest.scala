@@ -19,7 +19,8 @@ object IndicesDeleteDataStreamRequest {
     __obj.asInstanceOf[IndicesDeleteDataStreamRequest]
   }
   
-  extension [Self <: IndicesDeleteDataStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDeleteDataStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setExpand_wildcards(value: ExpandWildcards): Self = StObject.set(x, "expand_wildcards", value.asInstanceOf[js.Any])
     

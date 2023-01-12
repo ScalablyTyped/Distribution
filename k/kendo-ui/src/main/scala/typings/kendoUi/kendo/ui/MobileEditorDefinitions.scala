@@ -51,7 +51,8 @@ object MobileEditorDefinitions {
     __obj.asInstanceOf[MobileEditorDefinitions]
   }
   
-  extension [Self <: MobileEditorDefinitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileEditorDefinitions] (val x: Self) extends AnyVal {
     
     inline def setBoolean(value: (/* container */ JQuery | Element | String, /* options */ EditorDefinitionOptions) => Unit): Self = StObject.set(x, "boolean", js.Any.fromFunction2(value))
     

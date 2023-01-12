@@ -229,7 +229,8 @@ object Sammy {
       __obj.asInstanceOf[Form]
     }
     
-    extension [Self <: Form](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
       
       inline def setFormFor(value: (String, Any, js.Function) => FormBuilder): Self = StObject.set(x, "formFor", js.Any.fromFunction3(value))
     }
@@ -445,7 +446,8 @@ object Sammy {
       __obj.asInstanceOf[StoreOptions]
     }
     
-    extension [Self <: StoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoreOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: Any): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       

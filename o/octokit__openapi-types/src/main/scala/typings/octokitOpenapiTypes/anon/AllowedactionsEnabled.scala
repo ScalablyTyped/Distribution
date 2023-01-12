@@ -22,7 +22,8 @@ object AllowedactionsEnabled {
     __obj.asInstanceOf[AllowedactionsEnabled]
   }
   
-  extension [Self <: AllowedactionsEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedactionsEnabled] (val x: Self) extends AnyVal {
     
     inline def setAllowed_actions(value: all | local_only | selected): Self = StObject.set(x, "allowed_actions", value.asInstanceOf[js.Any])
     

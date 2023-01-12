@@ -22,7 +22,8 @@ object SurroundingTextInfo {
     __obj.asInstanceOf[SurroundingTextInfo]
   }
   
-  extension [Self <: SurroundingTextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SurroundingTextInfo] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: Double): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

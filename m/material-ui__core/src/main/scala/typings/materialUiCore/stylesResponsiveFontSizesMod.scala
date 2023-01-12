@@ -33,7 +33,8 @@ object stylesResponsiveFontSizesMod {
       __obj.asInstanceOf[ResponsiveFontSizesOptions]
     }
     
-    extension [Self <: ResponsiveFontSizesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveFontSizesOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
       

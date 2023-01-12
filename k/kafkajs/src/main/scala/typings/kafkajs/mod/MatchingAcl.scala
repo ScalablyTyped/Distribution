@@ -40,7 +40,8 @@ object MatchingAcl {
     __obj.asInstanceOf[MatchingAcl]
   }
   
-  extension [Self <: MatchingAcl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingAcl] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

@@ -259,7 +259,8 @@ object mod {
       __obj.asInstanceOf[FileInfo]
     }
     
-    extension [Self <: FileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -313,7 +314,8 @@ object mod {
       __obj.asInstanceOf[HTTPResolverOptions]
     }
     
-    extension [Self <: HTTPResolverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPResolverOptions] (val x: Self) extends AnyVal {
       
       inline def setCanRead(
         value: Boolean | js.RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
@@ -386,7 +388,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDereference(value: Circular): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
       
@@ -438,7 +441,8 @@ object mod {
       __obj.asInstanceOf[ParserOptions]
     }
     
-    extension [Self <: ParserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       

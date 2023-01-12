@@ -146,7 +146,8 @@ object RideObjectVehicle {
     __obj.asInstanceOf[RideObjectVehicle]
   }
   
-  extension [Self <: RideObjectVehicle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RideObjectVehicle] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Double): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object ModuleReferenceOptionsind {
     __obj.asInstanceOf[ModuleReferenceOptionsind]
   }
   
-  extension [Self <: ModuleReferenceOptionsind](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleReferenceOptionsind] (val x: Self) extends AnyVal {
     
     inline def setAsiSafe(value: Boolean): Self = StObject.set(x, "asiSafe", value.asInstanceOf[js.Any])
     

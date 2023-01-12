@@ -23,7 +23,8 @@ object ISimplifyOptions {
     __obj.asInstanceOf[ISimplifyOptions]
   }
   
-  extension [Self <: ISimplifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISimplifyOptions] (val x: Self) extends AnyVal {
     
     inline def setScalarMatchingDistance(value: Double): Self = StObject.set(x, "scalarMatchingDistance", value.asInstanceOf[js.Any])
     

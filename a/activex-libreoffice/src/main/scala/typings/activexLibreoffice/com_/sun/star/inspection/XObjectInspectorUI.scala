@@ -118,7 +118,8 @@ object XObjectInspectorUI {
     __obj.asInstanceOf[XObjectInspectorUI]
   }
   
-  extension [Self <: XObjectInspectorUI](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XObjectInspectorUI] (val x: Self) extends AnyVal {
     
     inline def setEnablePropertyUI(value: (String, Boolean) => Unit): Self = StObject.set(x, "enablePropertyUI", js.Any.fromFunction2(value))
     

@@ -21,7 +21,8 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  extension [Self <: Icon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

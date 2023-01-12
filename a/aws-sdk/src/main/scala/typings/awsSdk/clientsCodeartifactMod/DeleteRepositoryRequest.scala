@@ -28,7 +28,8 @@ object DeleteRepositoryRequest {
     __obj.asInstanceOf[DeleteRepositoryRequest]
   }
   
-  extension [Self <: DeleteRepositoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRepositoryRequest] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

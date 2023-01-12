@@ -28,7 +28,8 @@ object UpdateAccountAuditConfigurationRequest {
     __obj.asInstanceOf[UpdateAccountAuditConfigurationRequest]
   }
   
-  extension [Self <: UpdateAccountAuditConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAccountAuditConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditCheckConfigurations(value: AuditCheckConfigurations): Self = StObject.set(x, "auditCheckConfigurations", value.asInstanceOf[js.Any])
     

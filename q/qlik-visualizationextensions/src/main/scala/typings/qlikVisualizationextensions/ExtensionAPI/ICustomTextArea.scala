@@ -35,7 +35,8 @@ object ICustomTextArea {
     __obj.asInstanceOf[ICustomTextArea]
   }
   
-  extension [Self <: ICustomTextArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomTextArea] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: textarea): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DRMSystemOptions {
     __obj.asInstanceOf[DRMSystemOptions]
   }
   
-  extension [Self <: DRMSystemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DRMSystemOptions] (val x: Self) extends AnyVal {
     
     inline def setAudioRobustness(value: String): Self = StObject.set(x, "audioRobustness", value.asInstanceOf[js.Any])
     

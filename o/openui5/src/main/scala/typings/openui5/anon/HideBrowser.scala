@@ -68,7 +68,8 @@ object HideBrowser {
     __obj.asInstanceOf[HideBrowser]
   }
   
-  extension [Self <: HideBrowser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HideBrowser] (val x: Self) extends AnyVal {
     
     inline def setHideBrowser(value: Boolean): Self = StObject.set(x, "hideBrowser", value.asInstanceOf[js.Any])
     

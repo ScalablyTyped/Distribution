@@ -32,7 +32,8 @@ object AnimationStateListener2 {
     __obj.asInstanceOf[AnimationStateListener2]
   }
   
-  extension [Self <: AnimationStateListener2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationStateListener2] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: TrackEntry => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

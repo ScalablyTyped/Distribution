@@ -86,7 +86,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String | CanvasGradient | CanvasPattern): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApi(
         value: Exclude[
@@ -240,7 +243,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[PluginOptionsByType[TType]]
       }
       
-      extension [Self <: PluginOptionsByType[?], TType /* <: ChartType */](x: Self & PluginOptionsByType[TType]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PluginOptionsByType[?], TType /* <: ChartType */] (val x: Self & PluginOptionsByType[TType]) extends AnyVal {
         
         inline def setDoughnutlabel(value: Options): Self = StObject.set(x, "doughnutlabel", value.asInstanceOf[js.Any])
         

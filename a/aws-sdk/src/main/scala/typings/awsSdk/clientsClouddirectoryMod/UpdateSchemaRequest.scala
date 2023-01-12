@@ -23,7 +23,8 @@ object UpdateSchemaRequest {
     __obj.asInstanceOf[UpdateSchemaRequest]
   }
   
-  extension [Self <: UpdateSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: SchemaName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

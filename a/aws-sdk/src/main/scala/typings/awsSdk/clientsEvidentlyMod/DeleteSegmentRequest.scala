@@ -18,7 +18,8 @@ object DeleteSegmentRequest {
     __obj.asInstanceOf[DeleteSegmentRequest]
   }
   
-  extension [Self <: DeleteSegmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSegmentRequest] (val x: Self) extends AnyVal {
     
     inline def setSegment(value: SegmentRef): Self = StObject.set(x, "segment", value.asInstanceOf[js.Any])
   }

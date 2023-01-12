@@ -15,7 +15,8 @@ object MaxArgsMaxArgs {
     __obj.asInstanceOf[MaxArgsMaxArgs[MaxArgs]]
   }
   
-  extension [Self <: MaxArgsMaxArgs[?], MaxArgs /* <: Double */](x: Self & MaxArgsMaxArgs[MaxArgs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxArgsMaxArgs[?], MaxArgs /* <: Double */] (val x: Self & MaxArgsMaxArgs[MaxArgs]) extends AnyVal {
     
     inline def setMaxArgs(value: MaxArgs): Self = StObject.set(x, "maxArgs", value.asInstanceOf[js.Any])
   }

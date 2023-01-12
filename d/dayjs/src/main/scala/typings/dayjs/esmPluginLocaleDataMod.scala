@@ -31,7 +31,8 @@ object esmPluginLocaleDataMod extends Shortcut {
         __obj.asInstanceOf[Dayjs]
       }
       
-      extension [Self <: Dayjs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Dayjs] (val x: Self) extends AnyVal {
         
         inline def setLocaleData(value: () => InstanceLocaleDataReturn): Self = StObject.set(x, "localeData", js.Any.fromFunction0(value))
       }

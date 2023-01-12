@@ -22,7 +22,8 @@ object InterconnectCircuitInfo {
     __obj.asInstanceOf[InterconnectCircuitInfo]
   }
   
-  extension [Self <: InterconnectCircuitInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterconnectCircuitInfo] (val x: Self) extends AnyVal {
     
     inline def setCustomerDemarcId(value: String): Self = StObject.set(x, "customerDemarcId", value.asInstanceOf[js.Any])
     

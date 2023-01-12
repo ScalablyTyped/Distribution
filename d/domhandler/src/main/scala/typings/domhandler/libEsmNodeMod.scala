@@ -332,7 +332,8 @@ object libEsmNodeMod {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -403,7 +404,8 @@ object libEsmNodeMod {
       __obj.asInstanceOf[SourceCodeLocation]
     }
     
-    extension [Self <: SourceCodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceCodeLocation] (val x: Self) extends AnyVal {
       
       inline def setEndCol(value: Double): Self = StObject.set(x, "endCol", value.asInstanceOf[js.Any])
       
@@ -441,7 +443,8 @@ object libEsmNodeMod {
       __obj.asInstanceOf[TagSourceCodeLocation]
     }
     
-    extension [Self <: TagSourceCodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagSourceCodeLocation] (val x: Self) extends AnyVal {
       
       inline def setEndTag(value: SourceCodeLocation): Self = StObject.set(x, "endTag", value.asInstanceOf[js.Any])
       

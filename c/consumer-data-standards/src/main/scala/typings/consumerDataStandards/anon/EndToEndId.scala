@@ -31,7 +31,8 @@ object EndToEndId {
     __obj.asInstanceOf[EndToEndId]
   }
   
-  extension [Self <: EndToEndId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndToEndId] (val x: Self) extends AnyVal {
     
     inline def setEndToEndId(value: String): Self = StObject.set(x, "endToEndId", value.asInstanceOf[js.Any])
     

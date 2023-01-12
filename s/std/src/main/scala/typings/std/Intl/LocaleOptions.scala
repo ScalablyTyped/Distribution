@@ -53,7 +53,8 @@ object LocaleOptions {
     __obj.asInstanceOf[LocaleOptions]
   }
   
-  extension [Self <: LocaleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseName(value: String): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
     

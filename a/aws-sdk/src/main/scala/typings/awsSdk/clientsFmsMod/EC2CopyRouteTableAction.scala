@@ -28,7 +28,8 @@ object EC2CopyRouteTableAction {
     __obj.asInstanceOf[EC2CopyRouteTableAction]
   }
   
-  extension [Self <: EC2CopyRouteTableAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2CopyRouteTableAction] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: LengthBoundedString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

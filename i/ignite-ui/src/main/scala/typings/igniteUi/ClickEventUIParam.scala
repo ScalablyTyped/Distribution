@@ -18,7 +18,8 @@ object ClickEventUIParam {
     __obj.asInstanceOf[ClickEventUIParam]
   }
   
-  extension [Self <: ClickEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object StrictHtmlSpanProps {
     __obj.asInstanceOf[StrictHtmlSpanProps]
   }
   
-  extension [Self <: StrictHtmlSpanProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrictHtmlSpanProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

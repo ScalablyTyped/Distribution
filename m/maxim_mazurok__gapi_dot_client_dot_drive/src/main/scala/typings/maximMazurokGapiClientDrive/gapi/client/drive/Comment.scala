@@ -50,7 +50,8 @@ object Comment {
     __obj.asInstanceOf[Comment]
   }
   
-  extension [Self <: Comment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: String): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

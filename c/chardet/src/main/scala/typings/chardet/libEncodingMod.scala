@@ -35,7 +35,8 @@ object libEncodingMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setByteStats(value: js.Array[Double]): Self = StObject.set(x, "byteStats", value.asInstanceOf[js.Any])
       

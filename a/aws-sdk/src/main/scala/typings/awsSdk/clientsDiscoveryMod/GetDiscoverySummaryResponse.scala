@@ -50,7 +50,8 @@ object GetDiscoverySummaryResponse {
     __obj.asInstanceOf[GetDiscoverySummaryResponse]
   }
   
-  extension [Self <: GetDiscoverySummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDiscoverySummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setAgentSummary(value: CustomerAgentInfo): Self = StObject.set(x, "agentSummary", value.asInstanceOf[js.Any])
     

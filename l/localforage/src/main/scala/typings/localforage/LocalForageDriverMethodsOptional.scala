@@ -15,7 +15,8 @@ object LocalForageDriverMethodsOptional {
     __obj.asInstanceOf[LocalForageDriverMethodsOptional]
   }
   
-  extension [Self <: LocalForageDriverMethodsOptional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalForageDriverMethodsOptional] (val x: Self) extends AnyVal {
     
     inline def setDropInstance(
       value: (/* dbInstanceOptions */ js.UndefOr[LocalForageDbInstanceOptions], /* callback */ js.UndefOr[js.Function1[/* err */ Any, Unit]]) => js.Promise[Unit]

@@ -33,7 +33,8 @@ object UnlockRequirement {
     __obj.asInstanceOf[UnlockRequirement]
   }
   
-  extension [Self <: UnlockRequirement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnlockRequirement] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: Double): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object TimelineItem {
     __obj.asInstanceOf[TimelineItem]
   }
   
-  extension [Self <: TimelineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineItem] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: TimelineAlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

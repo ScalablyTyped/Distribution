@@ -30,7 +30,8 @@ object XRowSetApproveBroadcaster {
     __obj.asInstanceOf[XRowSetApproveBroadcaster]
   }
   
-  extension [Self <: XRowSetApproveBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRowSetApproveBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddRowSetApproveListener(value: XRowSetApproveListener => Unit): Self = StObject.set(x, "addRowSetApproveListener", js.Any.fromFunction1(value))
     

@@ -29,7 +29,8 @@ object Billingcycle {
     __obj.asInstanceOf[Billingcycle]
   }
   
-  extension [Self <: Billingcycle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Billingcycle] (val x: Self) extends AnyVal {
     
     inline def setBilling_cycle(value: String): Self = StObject.set(x, "billing_cycle", value.asInstanceOf[js.Any])
     

@@ -520,7 +520,8 @@ object stepStepMod {
       __obj.asInstanceOf[StepProps]
     }
     
-    extension [Self <: StepProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

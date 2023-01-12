@@ -16,7 +16,8 @@ object NEWNOTE {
     __obj.asInstanceOf[NEWNOTE]
   }
   
-  extension [Self <: NEWNOTE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEWNOTE] (val x: Self) extends AnyVal {
     
     inline def setNEW_NOTE(value: new_note_): Self = StObject.set(x, "NEW_NOTE", value.asInstanceOf[js.Any])
   }

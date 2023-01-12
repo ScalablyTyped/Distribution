@@ -38,7 +38,8 @@ object ScheduleActivityTaskFailedEventAttributes {
     __obj.asInstanceOf[ScheduleActivityTaskFailedEventAttributes]
   }
   
-  extension [Self <: ScheduleActivityTaskFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduleActivityTaskFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setActivityId(value: ActivityId): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
     

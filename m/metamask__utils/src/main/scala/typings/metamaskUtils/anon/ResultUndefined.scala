@@ -19,7 +19,8 @@ object ResultUndefined {
     __obj.asInstanceOf[ResultUndefined]
   }
   
-  extension [Self <: ResultUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultUndefined] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

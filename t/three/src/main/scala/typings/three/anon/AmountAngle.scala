@@ -20,7 +20,8 @@ object AmountAngle {
     __obj.asInstanceOf[AmountAngle]
   }
   
-  extension [Self <: AmountAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmountAngle] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: IUniform[Any]): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

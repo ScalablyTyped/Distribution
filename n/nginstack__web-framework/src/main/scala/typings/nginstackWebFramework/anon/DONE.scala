@@ -19,7 +19,8 @@ object DONE {
     __obj.asInstanceOf[DONE]
   }
   
-  extension [Self <: DONE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DONE] (val x: Self) extends AnyVal {
     
     inline def setDONE(value: String): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
     

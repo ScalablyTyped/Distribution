@@ -37,7 +37,8 @@ object NavigatorXAxisBreaksOptions {
     __obj.asInstanceOf[NavigatorXAxisBreaksOptions]
   }
   
-  extension [Self <: NavigatorXAxisBreaksOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorXAxisBreaksOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakSize(value: Double): Self = StObject.set(x, "breakSize", value.asInstanceOf[js.Any])
     

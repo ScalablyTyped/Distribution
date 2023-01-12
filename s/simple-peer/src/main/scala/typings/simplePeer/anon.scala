@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Unit): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Candidate]
     }
     
-    extension [Self <: Candidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Candidate] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: typings.std.RTCIceCandidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Family]
     }
     
-    extension [Self <: Family](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Family] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -103,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Init]
     }
     
-    extension [Self <: Init](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Init] (val x: Self) extends AnyVal {
       
       inline def setInit(value: RTCRtpTransceiverInit): Self = StObject.set(x, "init", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[RTCIceCandidate]
     }
     
-    extension [Self <: RTCIceCandidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RTCIceCandidate] (val x: Self) extends AnyVal {
       
       inline def setRTCIceCandidate(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RTCIceCandidate */ Any
@@ -162,7 +167,8 @@ object anon {
       __obj.asInstanceOf[Renegotiate]
     }
     
-    extension [Self <: Renegotiate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renegotiate] (val x: Self) extends AnyVal {
       
       inline def setRenegotiate(value: `true`): Self = StObject.set(x, "renegotiate", value.asInstanceOf[js.Any])
       
@@ -186,7 +192,8 @@ object anon {
       __obj.asInstanceOf[TransceiverRequest]
     }
     
-    extension [Self <: TransceiverRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransceiverRequest] (val x: Self) extends AnyVal {
       
       inline def setTransceiverRequest(value: Init): Self = StObject.set(x, "transceiverRequest", value.asInstanceOf[js.Any])
       
@@ -206,7 +213,8 @@ object anon {
       __obj.asInstanceOf[TypeofRTCPeerConnection]
     }
     
-    extension [Self <: TypeofRTCPeerConnection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRTCPeerConnection] (val x: Self) extends AnyVal {
       
       inline def setGenerateCertificate(value: AlgorithmIdentifier => js.Promise[RTCCertificate]): Self = StObject.set(x, "generateCertificate", js.Any.fromFunction1(value))
     }

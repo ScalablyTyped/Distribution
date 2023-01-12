@@ -32,7 +32,8 @@ object IClientConfig {
     __obj.asInstanceOf[IClientConfig]
   }
   
-  extension [Self <: IClientConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientConfig] (val x: Self) extends AnyVal {
     
     inline def setTlsOptions(value: RequestOptions): Self = StObject.set(x, "tlsOptions", value.asInstanceOf[js.Any])
     

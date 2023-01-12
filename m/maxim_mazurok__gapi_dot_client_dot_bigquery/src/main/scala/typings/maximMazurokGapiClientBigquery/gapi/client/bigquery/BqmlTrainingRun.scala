@@ -33,7 +33,8 @@ object BqmlTrainingRun {
     __obj.asInstanceOf[BqmlTrainingRun]
   }
   
-  extension [Self <: BqmlTrainingRun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BqmlTrainingRun] (val x: Self) extends AnyVal {
     
     inline def setIterationResults(value: js.Array[BqmlIterationResult]): Self = StObject.set(x, "iterationResults", value.asInstanceOf[js.Any])
     

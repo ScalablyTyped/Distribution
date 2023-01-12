@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Cmd]
     }
     
-    extension [Self <: Cmd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cmd] (val x: Self) extends AnyVal {
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       

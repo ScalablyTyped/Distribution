@@ -43,7 +43,8 @@ object ListIndexRequest {
     __obj.asInstanceOf[ListIndexRequest]
   }
   
-  extension [Self <: ListIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     

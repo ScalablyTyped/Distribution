@@ -122,7 +122,8 @@ object AnalyzeMetafileSync {
     __obj.asInstanceOf[AnalyzeMetafileSync]
   }
   
-  extension [Self <: AnalyzeMetafileSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeMetafileSync] (val x: Self) extends AnyVal {
     
     inline def setAnalyzeMetafile(
       value: (/* metafile */ Metafile | String, /* options */ js.UndefOr[AnalyzeMetafileOptions]) => js.Promise[String]

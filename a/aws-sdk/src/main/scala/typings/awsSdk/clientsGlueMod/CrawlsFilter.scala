@@ -28,7 +28,8 @@ object CrawlsFilter {
     __obj.asInstanceOf[CrawlsFilter]
   }
   
-  extension [Self <: CrawlsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrawlsFilter] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: FieldName): Self = StObject.set(x, "FieldName", value.asInstanceOf[js.Any])
     

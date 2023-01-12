@@ -43,7 +43,8 @@ object libTypescriptComponentsCardCardMod extends Shortcut {
       __obj.asInstanceOf[ElevatedCardProps]
     }
     
-    extension [Self <: ElevatedCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElevatedCardProps] (val x: Self) extends AnyVal {
       
       inline def setElevation(value: Double): Self = StObject.set(x, "elevation", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libTypescriptComponentsCardCardMod extends Shortcut {
       __obj.asInstanceOf[OutlinedCardProps]
     }
     
-    extension [Self <: OutlinedCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutlinedCardProps] (val x: Self) extends AnyVal {
       
       inline def setMode(value: outlined): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     }

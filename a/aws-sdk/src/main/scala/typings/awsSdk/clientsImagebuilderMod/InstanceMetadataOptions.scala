@@ -23,7 +23,8 @@ object InstanceMetadataOptions {
     __obj.asInstanceOf[InstanceMetadataOptions]
   }
   
-  extension [Self <: InstanceMetadataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMetadataOptions] (val x: Self) extends AnyVal {
     
     inline def setHttpPutResponseHopLimit(value: HttpPutResponseHopLimit): Self = StObject.set(x, "httpPutResponseHopLimit", value.asInstanceOf[js.Any])
     

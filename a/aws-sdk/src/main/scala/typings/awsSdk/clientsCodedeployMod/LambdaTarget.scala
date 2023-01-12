@@ -48,7 +48,8 @@ object LambdaTarget {
     __obj.asInstanceOf[LambdaTarget]
   }
   
-  extension [Self <: LambdaTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaTarget] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

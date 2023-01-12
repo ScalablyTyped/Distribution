@@ -35,7 +35,8 @@ object wfsUtilsGetWFSLayerInfoOptions {
     __obj.asInstanceOf[wfsUtilsGetWFSLayerInfoOptions]
   }
   
-  extension [Self <: wfsUtilsGetWFSLayerInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: wfsUtilsGetWFSLayerInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomParameters(value: Any): Self = StObject.set(x, "customParameters", value.asInstanceOf[js.Any])
     

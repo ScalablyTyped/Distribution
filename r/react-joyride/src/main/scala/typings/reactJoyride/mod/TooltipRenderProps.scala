@@ -39,7 +39,8 @@ object TooltipRenderProps {
     __obj.asInstanceOf[TooltipRenderProps]
   }
   
-  extension [Self <: TooltipRenderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipRenderProps] (val x: Self) extends AnyVal {
     
     inline def setBackProps(value: Arialabel): Self = StObject.set(x, "backProps", value.asInstanceOf[js.Any])
     

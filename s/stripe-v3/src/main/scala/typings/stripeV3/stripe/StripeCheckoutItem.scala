@@ -19,7 +19,8 @@ object StripeCheckoutItem {
     __obj.asInstanceOf[StripeCheckoutItem]
   }
   
-  extension [Self <: StripeCheckoutItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeCheckoutItem] (val x: Self) extends AnyVal {
     
     inline def setPlan(value: String): Self = StObject.set(x, "plan", value.asInstanceOf[js.Any])
     

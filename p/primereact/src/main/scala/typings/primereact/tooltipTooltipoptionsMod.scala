@@ -27,7 +27,8 @@ object tooltipTooltipoptionsMod {
       __obj.asInstanceOf[TooltipEventParams]
     }
     
-    extension [Self <: TooltipEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipEventParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object tooltipTooltipoptionsMod {
       __obj.asInstanceOf[TooltipOptions]
     }
     
-    extension [Self <: TooltipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendTo(value: TooltipAppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
       

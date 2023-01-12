@@ -38,7 +38,8 @@ object libLogcatMod {
       __obj.asInstanceOf[Log]
     }
     
-    extension [Self <: Log](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Log] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object libLogcatMod {
       __obj.asInstanceOf[LogcatOpts]
     }
     
-    extension [Self <: LogcatOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogcatOpts] (val x: Self) extends AnyVal {
       
       inline def setFilterSpecs(value: String | js.Array[String]): Self = StObject.set(x, "filterSpecs", value.asInstanceOf[js.Any])
       

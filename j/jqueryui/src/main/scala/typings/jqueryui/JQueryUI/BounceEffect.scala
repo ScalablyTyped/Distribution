@@ -17,7 +17,8 @@ object BounceEffect {
     __obj.asInstanceOf[BounceEffect]
   }
   
-  extension [Self <: BounceEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BounceEffect] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

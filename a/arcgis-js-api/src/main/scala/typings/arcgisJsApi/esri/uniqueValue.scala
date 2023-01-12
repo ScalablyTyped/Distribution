@@ -25,7 +25,8 @@ object uniqueValue {
     __obj.asInstanceOf[uniqueValue]
   }
   
-  extension [Self <: uniqueValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: uniqueValue] (val x: Self) extends AnyVal {
     
     inline def setCreateRenderer(value: uniqueValueCreateRendererParams => js.Promise[RasterUniqueValuesResult]): Self = StObject.set(x, "createRenderer", js.Any.fromFunction1(value))
   }

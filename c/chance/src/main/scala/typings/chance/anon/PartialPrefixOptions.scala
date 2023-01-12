@@ -21,7 +21,8 @@ object PartialPrefixOptions {
     __obj.asInstanceOf[PartialPrefixOptions]
   }
   
-  extension [Self <: PartialPrefixOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPrefixOptions] (val x: Self) extends AnyVal {
     
     inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
     

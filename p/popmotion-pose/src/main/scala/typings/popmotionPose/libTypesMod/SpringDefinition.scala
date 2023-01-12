@@ -22,7 +22,8 @@ object SpringDefinition {
     __obj.asInstanceOf[SpringDefinition]
   }
   
-  extension [Self <: SpringDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpringDefinition] (val x: Self) extends AnyVal {
     
     inline def setType(value: spring): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object AutoInstallPolicy {
     __obj.asInstanceOf[AutoInstallPolicy]
   }
   
-  extension [Self <: AutoInstallPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoInstallPolicy] (val x: Self) extends AnyVal {
     
     inline def setAutoInstallConstraint(value: js.Array[AutoInstallConstraint]): Self = StObject.set(x, "autoInstallConstraint", value.asInstanceOf[js.Any])
     

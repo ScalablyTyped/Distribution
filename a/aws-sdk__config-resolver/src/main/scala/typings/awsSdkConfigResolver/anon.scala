@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[SigningRegion]
     }
     
-    extension [Self <: SigningRegion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SigningRegion] (val x: Self) extends AnyVal {
       
       inline def setSigningRegion(value: String): Self = StObject.set(x, "signingRegion", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object ConferenceAttributes {
     __obj.asInstanceOf[ConferenceAttributes]
   }
   
-  extension [Self <: ConferenceAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceAttributes] (val x: Self) extends AnyVal {
     
     inline def setBeep(value: ConferenceBeep): Self = StObject.set(x, "beep", value.asInstanceOf[js.Any])
     

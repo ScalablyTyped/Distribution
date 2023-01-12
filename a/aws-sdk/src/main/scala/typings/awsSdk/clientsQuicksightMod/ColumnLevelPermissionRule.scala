@@ -23,7 +23,8 @@ object ColumnLevelPermissionRule {
     __obj.asInstanceOf[ColumnLevelPermissionRule]
   }
   
-  extension [Self <: ColumnLevelPermissionRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnLevelPermissionRule] (val x: Self) extends AnyVal {
     
     inline def setColumnNames(value: ColumnNameList): Self = StObject.set(x, "ColumnNames", value.asInstanceOf[js.Any])
     

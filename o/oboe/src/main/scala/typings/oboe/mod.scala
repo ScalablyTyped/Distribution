@@ -34,7 +34,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FailReason]
     }
     
-    extension [Self <: FailReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailReason] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

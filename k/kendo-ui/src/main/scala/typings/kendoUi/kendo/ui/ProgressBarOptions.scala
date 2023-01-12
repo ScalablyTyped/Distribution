@@ -45,7 +45,8 @@ object ProgressBarOptions {
     __obj.asInstanceOf[ProgressBarOptions]
   }
   
-  extension [Self <: ProgressBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | ProgressBarAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

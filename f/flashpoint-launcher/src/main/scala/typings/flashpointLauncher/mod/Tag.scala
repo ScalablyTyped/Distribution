@@ -43,7 +43,8 @@ object Tag {
     __obj.asInstanceOf[Tag]
   }
   
-  extension [Self <: Tag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[TagAlias]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

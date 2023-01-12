@@ -101,7 +101,8 @@ object AuthModelUsed {
     __obj.asInstanceOf[AuthModelUsed]
   }
   
-  extension [Self <: AuthModelUsed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthModelUsed] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: Double): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

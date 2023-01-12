@@ -21,7 +21,8 @@ object DatafeedstatusesListResponse {
     __obj.asInstanceOf[DatafeedstatusesListResponse]
   }
   
-  extension [Self <: DatafeedstatusesListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedstatusesListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

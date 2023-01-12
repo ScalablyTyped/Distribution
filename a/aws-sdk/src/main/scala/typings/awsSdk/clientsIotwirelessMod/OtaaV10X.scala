@@ -28,7 +28,8 @@ object OtaaV10X {
     __obj.asInstanceOf[OtaaV10X]
   }
   
-  extension [Self <: OtaaV10X](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtaaV10X] (val x: Self) extends AnyVal {
     
     inline def setAppEui(value: AppEui): Self = StObject.set(x, "AppEui", value.asInstanceOf[js.Any])
     

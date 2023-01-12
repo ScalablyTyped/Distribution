@@ -33,7 +33,8 @@ object PrintConnector {
     __obj.asInstanceOf[PrintConnector]
   }
   
-  extension [Self <: PrintConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintConnector] (val x: Self) extends AnyVal {
     
     inline def setAppVersion(value: String): Self = StObject.set(x, "appVersion", value.asInstanceOf[js.Any])
     

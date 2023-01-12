@@ -28,7 +28,8 @@ object UiLabelElement {
     __obj.asInstanceOf[UiLabelElement]
   }
   
-  extension [Self <: UiLabelElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiLabelElement] (val x: Self) extends AnyVal {
     
     inline def setGetLabel(value: () => String): Self = StObject.set(x, "getLabel", js.Any.fromFunction0(value))
     

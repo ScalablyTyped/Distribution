@@ -26,7 +26,8 @@ object TrackChangeRenderedEvent {
     __obj.asInstanceOf[TrackChangeRenderedEvent]
   }
   
-  extension [Self <: TrackChangeRenderedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackChangeRenderedEvent] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

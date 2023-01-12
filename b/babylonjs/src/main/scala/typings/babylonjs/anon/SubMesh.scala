@@ -18,7 +18,8 @@ object SubMesh {
     __obj.asInstanceOf[SubMesh]
   }
   
-  extension [Self <: SubMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubMesh] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: typings.babylonjs.BABYLON.Effect): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTableSquareMod extends Shortcut {
       __obj.asInstanceOf[TableSquareProps]
     }
     
-    extension [Self <: TableSquareProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableSquareProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object UnprocessedQueryExecutionId {
     __obj.asInstanceOf[UnprocessedQueryExecutionId]
   }
   
-  extension [Self <: UnprocessedQueryExecutionId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnprocessedQueryExecutionId] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

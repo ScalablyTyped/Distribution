@@ -59,7 +59,8 @@ object FilterRow {
     __obj.asInstanceOf[FilterRow]
   }
   
-  extension [Self <: FilterRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterRow] (val x: Self) extends AnyVal {
     
     inline def setApplyFilter(value: ApplyFilterMode): Self = StObject.set(x, "applyFilter", value.asInstanceOf[js.Any])
     

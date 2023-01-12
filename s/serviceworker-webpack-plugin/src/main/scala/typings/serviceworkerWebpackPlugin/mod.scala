@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[ServiceWorkerDefaultOption]
     }
     
-    extension [Self <: ServiceWorkerDefaultOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceWorkerDefaultOption] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object mod {
       __obj.asInstanceOf[ServiceWorkerOption]
     }
     
-    extension [Self <: ServiceWorkerOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceWorkerOption] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: js.Array[String]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ServiceWorkerWebpackPluginOptions[T]]
     }
     
-    extension [Self <: ServiceWorkerWebpackPluginOptions[?], T](x: Self & ServiceWorkerWebpackPluginOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceWorkerWebpackPluginOptions[?], T] (val x: Self & ServiceWorkerWebpackPluginOptions[T]) extends AnyVal {
       
       inline def setEntry(value: String): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeleteAttendeeRequest {
     __obj.asInstanceOf[DeleteAttendeeRequest]
   }
   
-  extension [Self <: DeleteAttendeeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAttendeeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttendeeId(value: GuidString): Self = StObject.set(x, "AttendeeId", value.asInstanceOf[js.Any])
     

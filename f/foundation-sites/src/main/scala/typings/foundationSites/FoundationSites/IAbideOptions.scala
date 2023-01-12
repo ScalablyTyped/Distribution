@@ -35,7 +35,8 @@ object IAbideOptions {
     __obj.asInstanceOf[IAbideOptions]
   }
   
-  extension [Self <: IAbideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbideOptions] (val x: Self) extends AnyVal {
     
     inline def setA11yAttributes(value: Boolean): Self = StObject.set(x, "a11yAttributes", value.asInstanceOf[js.Any])
     

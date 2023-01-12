@@ -21,7 +21,8 @@ object I18NLanMap {
     __obj.asInstanceOf[I18NLanMap]
   }
   
-  extension [Self <: I18NLanMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18NLanMap] (val x: Self) extends AnyVal {
     
     inline def setEn(value: Record[String, String]): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object CommentWithNoSpacing {
     __obj.asInstanceOf[CommentWithNoSpacing]
   }
   
-  extension [Self <: CommentWithNoSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentWithNoSpacing] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: _empty): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

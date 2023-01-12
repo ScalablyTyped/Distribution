@@ -31,7 +31,8 @@ object BaselineDate {
     __obj.asInstanceOf[BaselineDate]
   }
   
-  extension [Self <: BaselineDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaselineDate] (val x: Self) extends AnyVal {
     
     inline def setBaselineDate(value: ConverterTooltipDisplay): Self = StObject.set(x, "baselineDate", value.asInstanceOf[js.Any])
     

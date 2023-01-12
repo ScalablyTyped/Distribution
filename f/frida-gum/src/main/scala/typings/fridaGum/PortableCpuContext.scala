@@ -19,7 +19,8 @@ object PortableCpuContext {
     __obj.asInstanceOf[PortableCpuContext]
   }
   
-  extension [Self <: PortableCpuContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortableCpuContext] (val x: Self) extends AnyVal {
     
     inline def setPc(value: NativePointer): Self = StObject.set(x, "pc", value.asInstanceOf[js.Any])
     

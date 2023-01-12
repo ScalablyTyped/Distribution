@@ -16,7 +16,8 @@ object OrderreturnsAcknowledgeRequest {
     __obj.asInstanceOf[OrderreturnsAcknowledgeRequest]
   }
   
-  extension [Self <: OrderreturnsAcknowledgeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderreturnsAcknowledgeRequest] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: String): Self = StObject.set(x, "operationId", value.asInstanceOf[js.Any])
     

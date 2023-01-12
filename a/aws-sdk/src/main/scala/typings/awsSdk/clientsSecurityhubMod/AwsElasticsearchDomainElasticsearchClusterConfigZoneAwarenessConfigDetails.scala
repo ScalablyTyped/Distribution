@@ -18,7 +18,8 @@ object AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetail
     __obj.asInstanceOf[AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetails]
   }
   
-  extension [Self <: AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElasticsearchDomainElasticsearchClusterConfigZoneAwarenessConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneCount(value: Integer): Self = StObject.set(x, "AvailabilityZoneCount", value.asInstanceOf[js.Any])
     

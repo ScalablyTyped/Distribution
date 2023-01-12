@@ -47,7 +47,8 @@ object CommandOperationOptions {
     __obj.asInstanceOf[CommandOperationOptions]
   }
   
-  extension [Self <: CommandOperationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandOperationOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthdb(value: String): Self = StObject.set(x, "authdb", value.asInstanceOf[js.Any])
     

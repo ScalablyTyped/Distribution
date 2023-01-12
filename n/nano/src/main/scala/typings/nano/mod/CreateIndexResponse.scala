@@ -26,7 +26,8 @@ object CreateIndexResponse {
     __obj.asInstanceOf[CreateIndexResponse]
   }
   
-  extension [Self <: CreateIndexResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

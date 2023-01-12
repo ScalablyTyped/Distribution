@@ -28,7 +28,8 @@ object PurchaseReservedElasticsearchInstanceOfferingRequest {
     __obj.asInstanceOf[PurchaseReservedElasticsearchInstanceOfferingRequest]
   }
   
-  extension [Self <: PurchaseReservedElasticsearchInstanceOfferingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedElasticsearchInstanceOfferingRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: InstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

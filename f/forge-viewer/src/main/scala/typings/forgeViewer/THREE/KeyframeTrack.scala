@@ -68,7 +68,8 @@ object KeyframeTrack {
     __obj.asInstanceOf[KeyframeTrack]
   }
   
-  extension [Self <: KeyframeTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyframeTrack] (val x: Self) extends AnyVal {
     
     inline def setDefaultInterpolation(value: InterpolationModes): Self = StObject.set(x, "DefaultInterpolation", value.asInstanceOf[js.Any])
     

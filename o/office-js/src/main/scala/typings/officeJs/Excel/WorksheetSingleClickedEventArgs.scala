@@ -61,7 +61,8 @@ object WorksheetSingleClickedEventArgs {
     __obj.asInstanceOf[WorksheetSingleClickedEventArgs]
   }
   
-  extension [Self <: WorksheetSingleClickedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetSingleClickedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

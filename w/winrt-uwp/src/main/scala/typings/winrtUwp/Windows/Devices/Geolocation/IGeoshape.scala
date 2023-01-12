@@ -27,7 +27,8 @@ object IGeoshape {
     __obj.asInstanceOf[IGeoshape]
   }
   
-  extension [Self <: IGeoshape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeoshape] (val x: Self) extends AnyVal {
     
     inline def setAltitudeReferenceSystem(value: AltitudeReferenceSystem): Self = StObject.set(x, "altitudeReferenceSystem", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object StackedAreaChartProps {
     __obj.asInstanceOf[StackedAreaChartProps[T]]
   }
   
-  extension [Self <: StackedAreaChartProps[?], T](x: Self & StackedAreaChartProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackedAreaChartProps[?], T] (val x: Self & StackedAreaChartProps[T]) extends AnyVal {
     
     inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

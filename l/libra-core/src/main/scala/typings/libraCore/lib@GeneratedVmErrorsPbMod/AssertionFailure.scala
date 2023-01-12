@@ -55,7 +55,8 @@ object AssertionFailure {
       __obj.asInstanceOf[AsObject]
     }
     
-    extension [Self <: AsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
       
       inline def setAssertionErrorCode(value: String): Self = StObject.set(x, "assertionErrorCode", value.asInstanceOf[js.Any])
     }

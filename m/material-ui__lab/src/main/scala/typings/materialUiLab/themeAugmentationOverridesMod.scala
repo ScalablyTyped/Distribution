@@ -84,7 +84,8 @@ object themeAugmentationOverridesMod {
       __obj.asInstanceOf[LabComponentNameToClassKey]
     }
     
-    extension [Self <: LabComponentNameToClassKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabComponentNameToClassKey] (val x: Self) extends AnyVal {
       
       inline def setMuiAlert(value: AlertClassKey): Self = StObject.set(x, "MuiAlert", value.asInstanceOf[js.Any])
       

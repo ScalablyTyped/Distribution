@@ -21,7 +21,8 @@ object PhoneTrigger {
     __obj.asInstanceOf[PhoneTrigger]
   }
   
-  extension [Self <: PhoneTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneTrigger] (val x: Self) extends AnyVal {
     
     inline def setOneShot(value: Boolean): Self = StObject.set(x, "oneShot", value.asInstanceOf[js.Any])
     

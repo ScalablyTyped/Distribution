@@ -20,7 +20,8 @@ object TypeofSchedule {
     __obj.asInstanceOf[TypeofSchedule]
   }
   
-  extension [Self <: TypeofSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSchedule] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Schedule): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object buildSrcDurationMod {
       __obj.asInstanceOf[Duration]
     }
     
-    extension [Self <: Duration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
       
       inline def setNanos(value: Double): Self = StObject.set(x, "nanos", value.asInstanceOf[js.Any])
       

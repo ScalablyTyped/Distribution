@@ -39,7 +39,8 @@ object tabContextTabContextMod {
       __obj.asInstanceOf[TabContextProps]
     }
     
-    extension [Self <: TabContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object tabContextTabContextMod {
       __obj.asInstanceOf[TabContextValue]
     }
     
-    extension [Self <: TabContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContextValue] (val x: Self) extends AnyVal {
       
       inline def setIdPrefix(value: String): Self = StObject.set(x, "idPrefix", value.asInstanceOf[js.Any])
       

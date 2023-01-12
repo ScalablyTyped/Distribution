@@ -66,7 +66,8 @@ object UAEventMap {
     __obj.asInstanceOf[UAEventMap]
   }
   
-  extension [Self <: UAEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UAEventMap] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: /* event */ ConnectedEvent => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     

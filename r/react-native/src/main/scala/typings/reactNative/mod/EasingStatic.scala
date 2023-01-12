@@ -65,7 +65,8 @@ object EasingStatic {
     __obj.asInstanceOf[EasingStatic]
   }
   
-  extension [Self <: EasingStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EasingStatic] (val x: Self) extends AnyVal {
     
     inline def setBack(value: Double => EasingFunction): Self = StObject.set(x, "back", js.Any.fromFunction1(value))
     

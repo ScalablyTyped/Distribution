@@ -149,7 +149,8 @@ object saveState {
       __obj.asInstanceOf[typings.uiGrid.mod.saveState.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.saveState.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.saveState.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setSaveFilter(value: Boolean): Self = StObject.set(x, "saveFilter", value.asInstanceOf[js.Any])
       
@@ -228,7 +229,8 @@ object saveState {
       __obj.asInstanceOf[IGridSaveStateApi]
     }
     
-    extension [Self <: IGridSaveStateApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridSaveStateApi] (val x: Self) extends AnyVal {
       
       inline def setRestore(value: (IScope, IGridSavedState) => Unit): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
       
@@ -255,7 +257,8 @@ object saveState {
       __obj.asInstanceOf[IGridSavedState]
     }
     
-    extension [Self <: IGridSavedState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridSavedState] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ISavedColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object saveState {
       __obj.asInstanceOf[IRowVal]
     }
     
-    extension [Self <: IRowVal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRowVal] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -319,7 +323,8 @@ object saveState {
       __obj.asInstanceOf[ISavedColumn]
     }
     
-    extension [Self <: ISavedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISavedColumn] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[IFilterOptions]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -362,7 +367,8 @@ object saveState {
       __obj.asInstanceOf[ISavedScrollFocus]
     }
     
-    extension [Self <: ISavedScrollFocus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISavedScrollFocus] (val x: Self) extends AnyVal {
       
       inline def setColName(value: String): Self = StObject.set(x, "colName", value.asInstanceOf[js.Any])
       

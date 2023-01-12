@@ -31,7 +31,8 @@ object TransferOptions {
     __obj.asInstanceOf[TransferOptions]
   }
   
-  extension [Self <: TransferOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferOptions] (val x: Self) extends AnyVal {
     
     inline def setDeleteObjectsFromSourceAfterTransfer(value: Boolean): Self = StObject.set(x, "deleteObjectsFromSourceAfterTransfer", value.asInstanceOf[js.Any])
     

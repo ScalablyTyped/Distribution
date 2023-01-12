@@ -110,7 +110,8 @@ object distTypesStyleInjectorMod {
       __obj.asInstanceOf[StyleInjector]
     }
     
-    extension [Self <: StyleInjector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleInjector] (val x: Self) extends AnyVal {
       
       inline def setAddRule(value: String => Double): Self = StObject.set(x, "addRule", js.Any.fromFunction1(value))
       

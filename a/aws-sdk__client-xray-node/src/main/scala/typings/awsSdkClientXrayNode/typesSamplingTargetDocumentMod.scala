@@ -40,7 +40,8 @@ object typesSamplingTargetDocumentMod {
       __obj.asInstanceOf[SamplingTargetDocument]
     }
     
-    extension [Self <: SamplingTargetDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingTargetDocument] (val x: Self) extends AnyVal {
       
       inline def setFixedRate(value: Double): Self = StObject.set(x, "FixedRate", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object typesSamplingTargetDocumentMod {
       __obj.asInstanceOf[UnmarshalledSamplingTargetDocument]
     }
     
-    extension [Self <: UnmarshalledSamplingTargetDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSamplingTargetDocument] (val x: Self) extends AnyVal {
       
       inline def setReservoirQuotaTTL(value: js.Date): Self = StObject.set(x, "ReservoirQuotaTTL", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object PartialCypressRunOptions {
     __obj.asInstanceOf[PartialCypressRunOptions]
   }
   
-  extension [Self <: PartialCypressRunOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCypressRunOptions] (val x: Self) extends AnyVal {
     
     inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
     

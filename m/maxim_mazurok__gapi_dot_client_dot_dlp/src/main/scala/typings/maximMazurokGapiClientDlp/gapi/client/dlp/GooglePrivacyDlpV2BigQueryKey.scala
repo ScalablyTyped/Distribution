@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2BigQueryKey {
     __obj.asInstanceOf[GooglePrivacyDlpV2BigQueryKey]
   }
   
-  extension [Self <: GooglePrivacyDlpV2BigQueryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2BigQueryKey] (val x: Self) extends AnyVal {
     
     inline def setRowNumber(value: String): Self = StObject.set(x, "rowNumber", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object ArrowV {
     __obj.asInstanceOf[ArrowV]
   }
   
-  extension [Self <: ArrowV](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrowV] (val x: Self) extends AnyVal {
     
     inline def setArrow(value: MarginLeftMarginTop): Self = StObject.set(x, "Arrow", value.asInstanceOf[js.Any])
     

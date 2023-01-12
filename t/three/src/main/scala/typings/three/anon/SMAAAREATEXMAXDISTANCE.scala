@@ -26,7 +26,8 @@ object SMAAAREATEXMAXDISTANCE {
     __obj.asInstanceOf[SMAAAREATEXMAXDISTANCE]
   }
   
-  extension [Self <: SMAAAREATEXMAXDISTANCE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SMAAAREATEXMAXDISTANCE] (val x: Self) extends AnyVal {
     
     inline def setSMAA_AREATEX_MAX_DISTANCE(value: String): Self = StObject.set(x, "SMAA_AREATEX_MAX_DISTANCE", value.asInstanceOf[js.Any])
     

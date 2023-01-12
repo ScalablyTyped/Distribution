@@ -71,7 +71,8 @@ object ColorBgCollapsedButton {
     __obj.asInstanceOf[ColorBgCollapsedButton]
   }
   
-  extension [Self <: ColorBgCollapsedButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorBgCollapsedButton] (val x: Self) extends AnyVal {
     
     inline def setColorBgCollapsedButton(value: String): Self = StObject.set(x, "colorBgCollapsedButton", value.asInstanceOf[js.Any])
     

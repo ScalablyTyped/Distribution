@@ -23,7 +23,8 @@ object AppLinkedAppInfo {
     __obj.asInstanceOf[AppLinkedAppInfo]
   }
   
-  extension [Self <: AppLinkedAppInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppLinkedAppInfo] (val x: Self) extends AnyVal {
     
     inline def setAppStoreId(value: String): Self = StObject.set(x, "appStoreId", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object meetingRoom {
       __obj.asInstanceOf[MeetingRoomCapability]
     }
     
-    extension [Self <: MeetingRoomCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeetingRoomCapability] (val x: Self) extends AnyVal {
       
       inline def setMediaControls(value: js.Array[String]): Self = StObject.set(x, "mediaControls", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object meetingRoom {
       __obj.asInstanceOf[MeetingRoomInfo]
     }
     
-    extension [Self <: MeetingRoomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeetingRoomInfo] (val x: Self) extends AnyVal {
       
       inline def setClientType(value: String): Self = StObject.set(x, "clientType", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object meetingRoom {
       __obj.asInstanceOf[MeetingRoomState]
     }
     
-    extension [Self <: MeetingRoomState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MeetingRoomState] (val x: Self) extends AnyVal {
       
       inline def setLeaveMeeting(value: Boolean): Self = StObject.set(x, "leaveMeeting", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object X509Extension {
     __obj.asInstanceOf[X509Extension]
   }
   
-  extension [Self <: X509Extension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X509Extension] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

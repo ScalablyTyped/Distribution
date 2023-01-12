@@ -22,7 +22,8 @@ object ComputedSerie {
     __obj.asInstanceOf[ComputedSerie]
   }
   
-  extension [Self <: ComputedSerie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComputedSerie] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

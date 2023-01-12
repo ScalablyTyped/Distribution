@@ -71,7 +71,8 @@ object SlideShowSettings {
     __obj.asInstanceOf[SlideShowSettings]
   }
   
-  extension [Self <: SlideShowSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideShowSettings] (val x: Self) extends AnyVal {
     
     inline def setAdvanceMode(value: PpSlideShowAdvanceMode): Self = StObject.set(x, "AdvanceMode", value.asInstanceOf[js.Any])
     

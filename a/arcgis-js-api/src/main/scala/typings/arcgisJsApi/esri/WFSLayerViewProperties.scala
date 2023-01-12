@@ -43,7 +43,8 @@ object WFSLayerViewProperties {
     __obj.asInstanceOf[WFSLayerViewProperties]
   }
   
-  extension [Self <: WFSLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WFSLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

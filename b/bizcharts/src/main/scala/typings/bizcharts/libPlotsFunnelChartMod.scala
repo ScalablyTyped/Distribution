@@ -30,7 +30,8 @@ object libPlotsFunnelChartMod extends Shortcut {
       __obj.asInstanceOf[FunnelOptions]
     }
     
-    extension [Self <: FunnelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunnelOptions] (val x: Self) extends AnyVal {
       
       inline def setTranspose(value: Boolean): Self = StObject.set(x, "transpose", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object SchemaConfiguration {
     __obj.asInstanceOf[SchemaConfiguration]
   }
   
-  extension [Self <: SchemaConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: NonEmptyStringWithoutWhitespace): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

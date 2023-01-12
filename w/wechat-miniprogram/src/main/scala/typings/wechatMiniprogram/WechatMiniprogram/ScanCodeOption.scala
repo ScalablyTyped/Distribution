@@ -42,7 +42,8 @@ object ScanCodeOption {
     __obj.asInstanceOf[ScanCodeOption]
   }
   
-  extension [Self <: ScanCodeOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanCodeOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

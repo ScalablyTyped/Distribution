@@ -1416,7 +1416,8 @@ object Mocha {
       __obj.asInstanceOf[MochaGlobals]
     }
     
-    extension [Self <: MochaGlobals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaGlobals] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: HookFunction): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -1471,7 +1472,8 @@ object Mocha {
       __obj.asInstanceOf[MochaInstanceOptions]
     }
     
-    extension [Self <: MochaInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -1564,7 +1566,8 @@ object Mocha {
       __obj.asInstanceOf[MochaOptions]
     }
     
-    extension [Self <: MochaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MochaOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowUncaught(value: Boolean): Self = StObject.set(x, "allowUncaught", value.asInstanceOf[js.Any])
       
@@ -1807,7 +1810,8 @@ object Mocha {
       __obj.asInstanceOf[RootHookObject]
     }
     
-    extension [Self <: RootHookObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootHookObject] (val x: Self) extends AnyVal {
       
       inline def setAfterAll(value: Func | AsyncFunc | (js.Array[AsyncFunc | Func])): Self = StObject.set(x, "afterAll", value.asInstanceOf[js.Any])
       
@@ -2495,7 +2499,8 @@ object Mocha {
       __obj.asInstanceOf[RunnerConstants]
     }
     
-    extension [Self <: RunnerConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunnerConstants] (val x: Self) extends AnyVal {
       
       inline def setEVENT_DELAY_BEGIN(value: waiting): Self = StObject.set(x, "EVENT_DELAY_BEGIN", value.asInstanceOf[js.Any])
       
@@ -2555,7 +2560,8 @@ object Mocha {
       __obj.asInstanceOf[Stats]
     }
     
-    extension [Self <: Stats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stats] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -3086,7 +3092,8 @@ object Mocha {
       __obj.asInstanceOf[SuiteConstants]
     }
     
-    extension [Self <: SuiteConstants](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuiteConstants] (val x: Self) extends AnyVal {
       
       inline def setEVENT_FILE_POST_REQUIRE(value: `post-require`): Self = StObject.set(x, "EVENT_FILE_POST_REQUIRE", value.asInstanceOf[js.Any])
       
@@ -3534,7 +3541,8 @@ object Mocha {
           __obj.asInstanceOf[ColorMap]
         }
         
-        extension [Self <: ColorMap](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ColorMap] (val x: Self) extends AnyVal {
           
           inline def `setBright fail`(value: Double): Self = StObject.set(x, "bright fail", value.asInstanceOf[js.Any])
           
@@ -3584,7 +3592,8 @@ object Mocha {
         }
       }
       
-      extension [Self <: Base_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Base_] (val x: Self) extends AnyVal {
         
         inline def setDone(
           value: (/* failures */ Double, /* fn */ js.UndefOr[js.Function1[/* failures */ Double, Unit]]) => Unit
@@ -3629,7 +3638,8 @@ object Mocha {
           __obj.asInstanceOf[SymbolMap]
         }
         
-        extension [Self <: SymbolMap](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SymbolMap] (val x: Self) extends AnyVal {
           
           inline def setBang(value: String): Self = StObject.set(x, "bang", value.asInstanceOf[js.Any])
           
@@ -3705,7 +3715,8 @@ object Mocha {
         __obj.asInstanceOf[HTML_]
       }
       
-      extension [Self <: HTML_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTML_] (val x: Self) extends AnyVal {
         
         inline def setAddCodeToggle(value: (HTMLLIElement, String) => Unit): Self = StObject.set(x, "addCodeToggle", js.Any.fromFunction2(value))
         
@@ -3829,7 +3840,8 @@ object Mocha {
         __obj.asInstanceOf[Nyan_]
       }
       
-      extension [Self <: Nyan_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Nyan_] (val x: Self) extends AnyVal {
         
         inline def setAppendRainbow(value: Any): Self = StObject.set(x, "appendRainbow", value.asInstanceOf[js.Any])
         
@@ -3899,7 +3911,8 @@ object Mocha {
           __obj.asInstanceOf[ReporterOptions]
         }
         
-        extension [Self <: ReporterOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
           
           inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
           
@@ -4001,7 +4014,8 @@ object Mocha {
         }
       }
       
-      extension [Self <: XUnit_](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XUnit_] (val x: Self) extends AnyVal {
         
         inline def setDone(value: (Double, js.Function1[/* failures */ Double, Unit]) => Unit): Self = StObject.set(x, "done", js.Any.fromFunction2(value))
         
@@ -4023,7 +4037,8 @@ object Mocha {
           __obj.asInstanceOf[ReporterOptions]
         }
         
-        extension [Self <: ReporterOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ReporterOptions] (val x: Self) extends AnyVal {
           
           inline def setOutput(value: String): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
           

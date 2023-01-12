@@ -15,7 +15,8 @@ object DialogModal {
     __obj.asInstanceOf[DialogModal]
   }
   
-  extension [Self <: DialogModal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogModal] (val x: Self) extends AnyVal {
     
     inline def setPreventScroll(value: String): Self = StObject.set(x, "preventScroll", value.asInstanceOf[js.Any])
     

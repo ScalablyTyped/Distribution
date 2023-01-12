@@ -43,7 +43,8 @@ object IntlConfig {
     __obj.asInstanceOf[IntlConfig[T]]
   }
   
-  extension [Self <: IntlConfig[?], T](x: Self & IntlConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntlConfig[?], T] (val x: Self & IntlConfig[T]) extends AnyVal {
     
     inline def setDefaultFormats(value: CustomFormats): Self = StObject.set(x, "defaultFormats", value.asInstanceOf[js.Any])
     

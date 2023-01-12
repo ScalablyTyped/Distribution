@@ -129,7 +129,8 @@ object libEsmComponentsSliderMultiSliderMod {
       __obj.asInstanceOf[IMultiSliderProps]
     }
     
-    extension [Self <: IMultiSliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMultiSliderProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultTrackIntent(value: Intent): Self = StObject.set(x, "defaultTrackIntent", value.asInstanceOf[js.Any])
       
@@ -238,7 +239,8 @@ object libEsmComponentsSliderMultiSliderMod {
       __obj.asInstanceOf[ISliderBaseProps]
     }
     
-    extension [Self <: ISliderBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -309,7 +311,8 @@ object libEsmComponentsSliderMultiSliderMod {
       __obj.asInstanceOf[ISliderState]
     }
     
-    extension [Self <: ISliderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISliderState] (val x: Self) extends AnyVal {
       
       inline def setLabelPrecision(value: Double): Self = StObject.set(x, "labelPrecision", value.asInstanceOf[js.Any])
       

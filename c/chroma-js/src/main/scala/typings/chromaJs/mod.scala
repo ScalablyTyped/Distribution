@@ -607,7 +607,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ColorSpaces]
     }
     
-    extension [Self <: ColorSpaces](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorSpaces] (val x: Self) extends AnyVal {
       
       inline def setCmyk(value: js.Tuple4[Double, Double, Double, Double]): Self = StObject.set(x, "cmyk", value.asInstanceOf[js.Any])
       
@@ -671,7 +672,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Cubehelix]
     }
     
-    extension [Self <: Cubehelix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cubehelix] (val x: Self) extends AnyVal {
       
       inline def setGamma(value: Double => Cubehelix): Self = StObject.set(x, "gamma", js.Any.fromFunction1(value))
       

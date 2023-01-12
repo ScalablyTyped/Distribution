@@ -88,7 +88,8 @@ object EnergyBillingDemandTransaction {
     __obj.asInstanceOf[EnergyBillingDemandTransaction]
   }
   
-  extension [Self <: EnergyBillingDemandTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyBillingDemandTransaction] (val x: Self) extends AnyVal {
     
     inline def setAdjustments(value: js.Array[AmountDescription]): Self = StObject.set(x, "adjustments", value.asInstanceOf[js.Any])
     

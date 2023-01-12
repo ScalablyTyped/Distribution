@@ -15,7 +15,8 @@ object GetMulticastGroupRequest {
     __obj.asInstanceOf[GetMulticastGroupRequest]
   }
   
-  extension [Self <: GetMulticastGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMulticastGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: MulticastGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

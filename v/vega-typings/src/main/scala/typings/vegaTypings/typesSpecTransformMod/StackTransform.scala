@@ -32,7 +32,8 @@ object StackTransform {
     __obj.asInstanceOf[StackTransform]
   }
   
-  extension [Self <: StackTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object BundleBehavior {
     __obj.asInstanceOf[BundleBehavior]
   }
   
-  extension [Self <: BundleBehavior](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BundleBehavior] (val x: Self) extends AnyVal {
     
     inline def setBundleBehavior(value: typings.parcelTypes.mod.BundleBehavior): Self = StObject.set(x, "bundleBehavior", value.asInstanceOf[js.Any])
     

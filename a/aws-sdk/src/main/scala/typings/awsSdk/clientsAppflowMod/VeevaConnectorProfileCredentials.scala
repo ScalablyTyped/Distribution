@@ -23,7 +23,8 @@ object VeevaConnectorProfileCredentials {
     __obj.asInstanceOf[VeevaConnectorProfileCredentials]
   }
   
-  extension [Self <: VeevaConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VeevaConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: Password): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

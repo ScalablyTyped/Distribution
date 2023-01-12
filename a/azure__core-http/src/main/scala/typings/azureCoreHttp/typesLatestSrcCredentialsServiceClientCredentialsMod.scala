@@ -24,7 +24,8 @@ object typesLatestSrcCredentialsServiceClientCredentialsMod {
       __obj.asInstanceOf[ServiceClientCredentials]
     }
     
-    extension [Self <: ServiceClientCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceClientCredentials] (val x: Self) extends AnyVal {
       
       inline def setSignRequest(value: WebResourceLike => js.Promise[WebResourceLike]): Self = StObject.set(x, "signRequest", js.Any.fromFunction1(value))
     }

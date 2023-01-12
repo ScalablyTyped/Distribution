@@ -23,7 +23,8 @@ object ListLiveSourcesResponse {
     __obj.asInstanceOf[ListLiveSourcesResponse]
   }
   
-  extension [Self <: ListLiveSourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLiveSourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfLiveSource): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

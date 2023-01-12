@@ -55,7 +55,8 @@ object TimeDimensionIntervalResolution {
     __obj.asInstanceOf[TimeDimensionIntervalResolution]
   }
   
-  extension [Self <: TimeDimensionIntervalResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeDimensionIntervalResolution] (val x: Self) extends AnyVal {
     
     inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

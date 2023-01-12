@@ -23,7 +23,8 @@ object GetFunctionUrlConfigRequest {
     __obj.asInstanceOf[GetFunctionUrlConfigRequest]
   }
   
-  extension [Self <: GetFunctionUrlConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFunctionUrlConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setFunctionName(value: FunctionName): Self = StObject.set(x, "FunctionName", value.asInstanceOf[js.Any])
     

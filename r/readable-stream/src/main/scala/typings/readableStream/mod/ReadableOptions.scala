@@ -26,7 +26,8 @@ object ReadableOptions {
     __obj.asInstanceOf[ReadableOptions]
   }
   
-  extension [Self <: ReadableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableOptions] (val x: Self) extends AnyVal {
     
     inline def setDestroy(
       value: js.ThisFunction2[

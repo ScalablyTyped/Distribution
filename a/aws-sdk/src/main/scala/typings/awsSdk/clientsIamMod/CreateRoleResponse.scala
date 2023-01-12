@@ -18,7 +18,8 @@ object CreateRoleResponse {
     __obj.asInstanceOf[CreateRoleResponse]
   }
   
-  extension [Self <: CreateRoleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRoleResponse] (val x: Self) extends AnyVal {
     
     inline def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
   }

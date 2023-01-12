@@ -22,7 +22,8 @@ object OptionsPlotOptionsGaugeOptions {
     __obj.asInstanceOf[OptionsPlotOptionsGaugeOptions]
   }
   
-  extension [Self <: OptionsPlotOptionsGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPlotOptionsGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PlotOptionsGaugeOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

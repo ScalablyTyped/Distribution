@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialChain]
     }
     
-    extension [Self <: PartialChain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialChain] (val x: Self) extends AnyVal {
       
       inline def setBootstrapNodes(value: js.Array[BootstrapNode]): Self = StObject.set(x, "bootstrapNodes", value.asInstanceOf[js.Any])
       

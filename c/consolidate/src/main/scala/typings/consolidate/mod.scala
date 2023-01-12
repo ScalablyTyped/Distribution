@@ -83,7 +83,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Consolidate]
     }
     
-    extension [Self <: Consolidate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consolidate] (val x: Self) extends AnyVal {
       
       inline def setClearCache(value: () => Unit): Self = StObject.set(x, "clearCache", js.Any.fromFunction0(value))
       
@@ -621,7 +622,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConsolidateType]
     }
     
-    extension [Self <: ConsolidateType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsolidateType] (val x: Self) extends AnyVal {
       
       inline def `setArc-templates`(value: RendererInterface): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
       
@@ -1028,7 +1030,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[RequiresType]
     }
     
-    extension [Self <: RequiresType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiresType] (val x: Self) extends AnyVal {
       
       inline def `setArc-templates`(value: Any): Self = StObject.set(x, "arc-templates", value.asInstanceOf[js.Any])
       

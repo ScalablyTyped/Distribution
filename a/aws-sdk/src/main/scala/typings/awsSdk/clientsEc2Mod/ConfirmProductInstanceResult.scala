@@ -23,7 +23,8 @@ object ConfirmProductInstanceResult {
     __obj.asInstanceOf[ConfirmProductInstanceResult]
   }
   
-  extension [Self <: ConfirmProductInstanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmProductInstanceResult] (val x: Self) extends AnyVal {
     
     inline def setOwnerId(value: String): Self = StObject.set(x, "OwnerId", value.asInstanceOf[js.Any])
     

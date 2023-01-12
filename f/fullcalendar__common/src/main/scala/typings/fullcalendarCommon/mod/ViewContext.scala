@@ -56,7 +56,8 @@ object ViewContext {
     __obj.asInstanceOf[ViewContext]
   }
   
-  extension [Self <: ViewContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewContext] (val x: Self) extends AnyVal {
     
     inline def setAddResizeHandler(value: ResizeHandler => Unit): Self = StObject.set(x, "addResizeHandler", js.Any.fromFunction1(value))
     

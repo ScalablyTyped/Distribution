@@ -17,7 +17,8 @@ object ILocalSidValueBlock {
     __obj.asInstanceOf[ILocalSidValueBlock]
   }
   
-  extension [Self <: ILocalSidValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalSidValueBlock] (val x: Self) extends AnyVal {
     
     inline def setIsFirstSid(value: scala.Boolean): Self = StObject.set(x, "isFirstSid", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IndicesSettingsSearch {
     __obj.asInstanceOf[IndicesSettingsSearch]
   }
   
-  extension [Self <: IndicesSettingsSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesSettingsSearch] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: IndicesSearchIdle): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

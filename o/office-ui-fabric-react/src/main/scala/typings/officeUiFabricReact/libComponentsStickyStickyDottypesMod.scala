@@ -72,7 +72,8 @@ object libComponentsStickyStickyDottypesMod {
       __obj.asInstanceOf[IStickyProps]
     }
     
-    extension [Self <: IStickyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStickyProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IStickyProps]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       

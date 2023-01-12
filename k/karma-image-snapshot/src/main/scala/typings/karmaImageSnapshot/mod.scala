@@ -123,7 +123,8 @@ object mod {
       __obj.asInstanceOf[MatchImageSnapshotOptions]
     }
     
-    extension [Self <: MatchImageSnapshotOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchImageSnapshotOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowSizeMismatch(value: Boolean): Self = StObject.set(x, "allowSizeMismatch", value.asInstanceOf[js.Any])
       
@@ -233,7 +234,8 @@ object mod {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setReporters(value: js.Array[`outdated-snapshot` | String]): Self = StObject.set(x, "reporters", value.asInstanceOf[js.Any])
         

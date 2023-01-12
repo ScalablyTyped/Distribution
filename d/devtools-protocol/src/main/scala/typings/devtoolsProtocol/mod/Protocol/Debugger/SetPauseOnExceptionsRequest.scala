@@ -22,7 +22,8 @@ object SetPauseOnExceptionsRequest {
     __obj.asInstanceOf[SetPauseOnExceptionsRequest]
   }
   
-  extension [Self <: SetPauseOnExceptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetPauseOnExceptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setState(value: none_ | caught | uncaught | all): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

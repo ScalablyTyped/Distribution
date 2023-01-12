@@ -18,7 +18,8 @@ object VirtualRouterStatus {
     __obj.asInstanceOf[VirtualRouterStatus]
   }
   
-  extension [Self <: VirtualRouterStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualRouterStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: VirtualRouterStatusCode): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

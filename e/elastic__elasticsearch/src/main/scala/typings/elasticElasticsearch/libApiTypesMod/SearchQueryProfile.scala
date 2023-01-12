@@ -29,7 +29,8 @@ object SearchQueryProfile {
     __obj.asInstanceOf[SearchQueryProfile]
   }
   
-  extension [Self <: SearchQueryProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQueryProfile] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: SearchQueryBreakdown): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     

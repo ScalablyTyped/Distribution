@@ -28,7 +28,8 @@ object ConflictResolution {
     __obj.asInstanceOf[ConflictResolution]
   }
   
-  extension [Self <: ConflictResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConflictResolution] (val x: Self) extends AnyVal {
     
     inline def setDeleteFiles(value: DeleteFileEntries): Self = StObject.set(x, "deleteFiles", value.asInstanceOf[js.Any])
     

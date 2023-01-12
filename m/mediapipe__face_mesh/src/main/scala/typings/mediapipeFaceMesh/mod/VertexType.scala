@@ -16,7 +16,8 @@ object VertexType {
     __obj.asInstanceOf[VertexType]
   }
   
-  extension [Self <: VertexType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexType] (val x: Self) extends AnyVal {
     
     inline def setVERTEX_PT(value: `0`): Self = StObject.set(x, "VERTEX_PT", value.asInstanceOf[js.Any])
   }

@@ -44,7 +44,8 @@ object Features {
     __obj.asInstanceOf[Features]
   }
   
-  extension [Self <: Features](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Features] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: CategoriesOptions): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

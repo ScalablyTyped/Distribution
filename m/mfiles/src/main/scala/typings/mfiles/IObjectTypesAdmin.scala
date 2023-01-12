@@ -17,7 +17,8 @@ object IObjectTypesAdmin {
     __obj.asInstanceOf[IObjectTypesAdmin]
   }
   
-  extension [Self <: IObjectTypesAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectTypesAdmin] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

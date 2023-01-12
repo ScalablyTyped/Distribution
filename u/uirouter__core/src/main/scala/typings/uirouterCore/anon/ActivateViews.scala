@@ -59,7 +59,8 @@ object ActivateViews {
     __obj.asInstanceOf[ActivateViews]
   }
   
-  extension [Self <: ActivateViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivateViews] (val x: Self) extends AnyVal {
     
     inline def setActivateViews(value: js.Function): Self = StObject.set(x, "activateViews", value.asInstanceOf[js.Any])
     

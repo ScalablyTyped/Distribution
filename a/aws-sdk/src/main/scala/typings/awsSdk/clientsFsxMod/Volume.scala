@@ -58,7 +58,8 @@ object Volume {
     __obj.asInstanceOf[Volume]
   }
   
-  extension [Self <: Volume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Volume] (val x: Self) extends AnyVal {
     
     inline def setAdministrativeActions(value: AdministrativeActions): Self = StObject.set(x, "AdministrativeActions", value.asInstanceOf[js.Any])
     

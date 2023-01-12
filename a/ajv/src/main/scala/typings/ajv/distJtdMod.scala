@@ -158,7 +158,8 @@ object distJtdMod {
       __obj.asInstanceOf[JTDOptions]
     }
     
-    extension [Self <: JTDOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JTDOptions] (val x: Self) extends AnyVal {
       
       inline def setInlineRefs(value: Boolean): Self = StObject.set(x, "inlineRefs", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object EndExpr {
     __obj.asInstanceOf[EndExpr]
   }
   
-  extension [Self <: EndExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndExpr] (val x: Self) extends AnyVal {
     
     inline def setColorExpr(value: String | js.Function): Self = StObject.set(x, "colorExpr", value.asInstanceOf[js.Any])
     

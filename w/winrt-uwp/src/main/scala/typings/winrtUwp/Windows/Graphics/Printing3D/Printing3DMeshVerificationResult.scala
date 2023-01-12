@@ -28,7 +28,8 @@ object Printing3DMeshVerificationResult {
     __obj.asInstanceOf[Printing3DMeshVerificationResult]
   }
   
-  extension [Self <: Printing3DMeshVerificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3DMeshVerificationResult] (val x: Self) extends AnyVal {
     
     inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
     

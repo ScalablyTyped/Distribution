@@ -34,7 +34,8 @@ object VoiceCommandDefinition {
     __obj.asInstanceOf[VoiceCommandDefinition]
   }
   
-  extension [Self <: VoiceCommandDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceCommandDefinition] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

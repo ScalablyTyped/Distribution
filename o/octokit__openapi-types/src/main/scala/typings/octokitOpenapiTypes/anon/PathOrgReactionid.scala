@@ -15,7 +15,8 @@ object PathOrgReactionid {
     __obj.asInstanceOf[PathOrgReactionid]
   }
   
-  extension [Self <: PathOrgReactionid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathOrgReactionid] (val x: Self) extends AnyVal {
     
     inline def setPath(value: OrgReactionid): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

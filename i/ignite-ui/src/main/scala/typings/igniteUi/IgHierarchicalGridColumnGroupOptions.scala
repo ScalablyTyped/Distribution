@@ -43,7 +43,8 @@ object IgHierarchicalGridColumnGroupOptions {
     __obj.asInstanceOf[IgHierarchicalGridColumnGroupOptions]
   }
   
-  extension [Self <: IgHierarchicalGridColumnGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgHierarchicalGridColumnGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowGroupCollapsing(value: Boolean): Self = StObject.set(x, "allowGroupCollapsing", value.asInstanceOf[js.Any])
     

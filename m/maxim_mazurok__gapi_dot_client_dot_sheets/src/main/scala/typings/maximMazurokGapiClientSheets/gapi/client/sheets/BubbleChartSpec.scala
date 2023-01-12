@@ -55,7 +55,8 @@ object BubbleChartSpec {
     __obj.asInstanceOf[BubbleChartSpec]
   }
   
-  extension [Self <: BubbleChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleChartSpec] (val x: Self) extends AnyVal {
     
     inline def setBubbleBorderColor(value: Color): Self = StObject.set(x, "bubbleBorderColor", value.asInstanceOf[js.Any])
     

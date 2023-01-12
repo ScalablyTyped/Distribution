@@ -23,7 +23,8 @@ object cimSymbolUtilsApplyCIMSymbolColorOptions {
     __obj.asInstanceOf[cimSymbolUtilsApplyCIMSymbolColorOptions]
   }
   
-  extension [Self <: cimSymbolUtilsApplyCIMSymbolColorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: cimSymbolUtilsApplyCIMSymbolColorOptions] (val x: Self) extends AnyVal {
     
     inline def setLayersToColor(value: fill | outline | `fill-and-outline`): Self = StObject.set(x, "layersToColor", value.asInstanceOf[js.Any])
     

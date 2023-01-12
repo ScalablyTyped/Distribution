@@ -32,7 +32,8 @@ object RegexMatchStatement {
     __obj.asInstanceOf[RegexMatchStatement]
   }
   
-  extension [Self <: RegexMatchStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexMatchStatement] (val x: Self) extends AnyVal {
     
     inline def setFieldToMatch(value: FieldToMatch): Self = StObject.set(x, "FieldToMatch", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object BiReservation {
     __obj.asInstanceOf[BiReservation]
   }
   
-  extension [Self <: BiReservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiReservation] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

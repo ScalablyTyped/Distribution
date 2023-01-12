@@ -322,7 +322,8 @@ object esComponentsBadgeBadgeMod {
       __obj.asInstanceOf[BadgeProps]
     }
     
-    extension [Self <: BadgeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BadgeProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

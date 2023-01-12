@@ -28,7 +28,8 @@ object TeamMessagingSettings {
     __obj.asInstanceOf[TeamMessagingSettings]
   }
   
-  extension [Self <: TeamMessagingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamMessagingSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowChannelMentions(value: NullableOption[Boolean]): Self = StObject.set(x, "allowChannelMentions", value.asInstanceOf[js.Any])
     

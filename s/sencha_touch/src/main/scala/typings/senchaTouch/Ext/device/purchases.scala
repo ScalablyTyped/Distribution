@@ -37,7 +37,8 @@ object purchases {
       __obj.asInstanceOf[IProduct]
     }
     
-    extension [Self <: IProduct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProduct] (val x: Self) extends AnyVal {
       
       inline def setGetFields(value: () => Array): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
       
@@ -81,7 +82,8 @@ object purchases {
       __obj.asInstanceOf[IPurchase]
     }
     
-    extension [Self <: IPurchase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPurchase] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -128,7 +130,8 @@ object purchases {
       __obj.asInstanceOf[ISencha]
     }
     
-    extension [Self <: ISencha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISencha] (val x: Self) extends AnyVal {
       
       inline def setCanMakePayments(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "canMakePayments", js.Any.fromFunction1(value))
       

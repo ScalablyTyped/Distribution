@@ -38,7 +38,8 @@ object AwsS3BucketWebsiteConfigurationRoutingRuleRedirect {
     __obj.asInstanceOf[AwsS3BucketWebsiteConfigurationRoutingRuleRedirect]
   }
   
-  extension [Self <: AwsS3BucketWebsiteConfigurationRoutingRuleRedirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketWebsiteConfigurationRoutingRuleRedirect] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: NonEmptyString): Self = StObject.set(x, "Hostname", value.asInstanceOf[js.Any])
     

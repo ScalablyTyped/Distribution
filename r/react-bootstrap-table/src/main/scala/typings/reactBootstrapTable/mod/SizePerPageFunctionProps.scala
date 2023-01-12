@@ -51,7 +51,8 @@ object SizePerPageFunctionProps {
     __obj.asInstanceOf[SizePerPageFunctionProps]
   }
   
-  extension [Self <: SizePerPageFunctionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizePerPageFunctionProps] (val x: Self) extends AnyVal {
     
     inline def setChangeSizePerPage(value: Double => Unit): Self = StObject.set(x, "changeSizePerPage", js.Any.fromFunction1(value))
     

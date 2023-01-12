@@ -75,7 +75,8 @@ object Traceback {
     __obj.asInstanceOf[Traceback]
   }
   
-  extension [Self <: Traceback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Traceback] (val x: Self) extends AnyVal {
     
     inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object PartialDisputeDocumentDat {
     __obj.asInstanceOf[PartialDisputeDocumentDat]
   }
   
-  extension [Self <: PartialDisputeDocumentDat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDisputeDocumentDat] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
     

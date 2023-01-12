@@ -40,7 +40,8 @@ object ConformancePackEvaluationResult {
     __obj.asInstanceOf[ConformancePackEvaluationResult]
   }
   
-  extension [Self <: ConformancePackEvaluationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformancePackEvaluationResult] (val x: Self) extends AnyVal {
     
     inline def setAnnotation(value: Annotation): Self = StObject.set(x, "Annotation", value.asInstanceOf[js.Any])
     

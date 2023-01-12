@@ -22,7 +22,8 @@ object StackFrames {
     __obj.asInstanceOf[StackFrames]
   }
   
-  extension [Self <: StackFrames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackFrames] (val x: Self) extends AnyVal {
     
     inline def setStackFrames(value: js.Array[StackFrame]): Self = StObject.set(x, "stackFrames", value.asInstanceOf[js.Any])
     

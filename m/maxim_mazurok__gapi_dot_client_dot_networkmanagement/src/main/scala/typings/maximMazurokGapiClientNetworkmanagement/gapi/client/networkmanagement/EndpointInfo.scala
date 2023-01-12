@@ -34,7 +34,8 @@ object EndpointInfo {
     __obj.asInstanceOf[EndpointInfo]
   }
   
-  extension [Self <: EndpointInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndpointInfo] (val x: Self) extends AnyVal {
     
     inline def setDestinationIp(value: String): Self = StObject.set(x, "destinationIp", value.asInstanceOf[js.Any])
     

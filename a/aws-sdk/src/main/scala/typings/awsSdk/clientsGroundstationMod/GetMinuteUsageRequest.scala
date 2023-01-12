@@ -23,7 +23,8 @@ object GetMinuteUsageRequest {
     __obj.asInstanceOf[GetMinuteUsageRequest]
   }
   
-  extension [Self <: GetMinuteUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMinuteUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setMonth(value: Month): Self = StObject.set(x, "month", value.asInstanceOf[js.Any])
     

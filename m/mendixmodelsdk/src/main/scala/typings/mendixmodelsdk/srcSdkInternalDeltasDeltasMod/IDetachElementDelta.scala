@@ -19,7 +19,8 @@ object IDetachElementDelta {
     __obj.asInstanceOf[IDetachElementDelta]
   }
   
-  extension [Self <: IDetachElementDelta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetachElementDelta] (val x: Self) extends AnyVal {
     
     inline def setDeltaType(value: DETACH_ELEMENT): Self = StObject.set(x, "deltaType", value.asInstanceOf[js.Any])
   }

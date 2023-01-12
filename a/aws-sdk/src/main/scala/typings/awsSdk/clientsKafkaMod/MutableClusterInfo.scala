@@ -97,7 +97,8 @@ object MutableClusterInfo {
     __obj.asInstanceOf[MutableClusterInfo]
   }
   
-  extension [Self <: MutableClusterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MutableClusterInfo] (val x: Self) extends AnyVal {
     
     inline def setBrokerEBSVolumeInfo(value: listOfBrokerEBSVolumeInfo): Self = StObject.set(x, "BrokerEBSVolumeInfo", value.asInstanceOf[js.Any])
     

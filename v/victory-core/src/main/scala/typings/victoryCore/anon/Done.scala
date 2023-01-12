@@ -17,7 +17,8 @@ object Done {
     __obj.asInstanceOf[Done[T]]
   }
   
-  extension [Self <: Done[?], T](x: Self & Done[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Done[?], T] (val x: Self & Done[T]) extends AnyVal {
     
     inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

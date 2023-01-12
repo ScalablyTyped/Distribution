@@ -17,7 +17,8 @@ object BlockItemDto {
     __obj.asInstanceOf[BlockItemDto]
   }
   
-  extension [Self <: BlockItemDto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockItemDto] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object UsbInterruptInEndpointDescriptor {
     __obj.asInstanceOf[UsbInterruptInEndpointDescriptor]
   }
   
-  extension [Self <: UsbInterruptInEndpointDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbInterruptInEndpointDescriptor] (val x: Self) extends AnyVal {
     
     inline def setEndpointNumber(value: Double): Self = StObject.set(x, "endpointNumber", value.asInstanceOf[js.Any])
     

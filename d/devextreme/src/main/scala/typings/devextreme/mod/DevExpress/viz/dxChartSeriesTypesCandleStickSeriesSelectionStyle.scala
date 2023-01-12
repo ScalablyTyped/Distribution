@@ -21,7 +21,8 @@ object dxChartSeriesTypesCandleStickSeriesSelectionStyle {
     __obj.asInstanceOf[dxChartSeriesTypesCandleStickSeriesSelectionStyle]
   }
   
-  extension [Self <: dxChartSeriesTypesCandleStickSeriesSelectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCandleStickSeriesSelectionStyle] (val x: Self) extends AnyVal {
     
     inline def setHatching(value: dxChartSeriesTypesCandleStickSeriesSelectionStyleHatching): Self = StObject.set(x, "hatching", value.asInstanceOf[js.Any])
     

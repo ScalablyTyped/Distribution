@@ -29,7 +29,8 @@ object TransitFare {
     __obj.asInstanceOf[TransitFare]
   }
   
-  extension [Self <: TransitFare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitFare] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

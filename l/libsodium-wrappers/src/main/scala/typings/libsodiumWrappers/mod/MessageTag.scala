@@ -17,7 +17,8 @@ object MessageTag {
     __obj.asInstanceOf[MessageTag]
   }
   
-  extension [Self <: MessageTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageTag] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: js.typedarray.Uint8Array): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

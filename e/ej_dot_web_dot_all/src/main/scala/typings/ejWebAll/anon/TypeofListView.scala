@@ -20,7 +20,8 @@ object TypeofListView {
     __obj.asInstanceOf[TypeofListView]
   }
   
-  extension [Self <: TypeofListView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofListView] (val x: Self) extends AnyVal {
     
     inline def setFn(value: ListView): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

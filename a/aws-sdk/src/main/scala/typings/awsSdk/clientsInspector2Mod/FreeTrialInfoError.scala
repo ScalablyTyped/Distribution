@@ -28,7 +28,8 @@ object FreeTrialInfoError {
     __obj.asInstanceOf[FreeTrialInfoError]
   }
   
-  extension [Self <: FreeTrialInfoError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeTrialInfoError] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: MeteringAccountId): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

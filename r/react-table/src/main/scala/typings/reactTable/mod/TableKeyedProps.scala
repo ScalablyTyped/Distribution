@@ -18,7 +18,8 @@ object TableKeyedProps {
     __obj.asInstanceOf[TableKeyedProps]
   }
   
-  extension [Self <: TableKeyedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableKeyedProps] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

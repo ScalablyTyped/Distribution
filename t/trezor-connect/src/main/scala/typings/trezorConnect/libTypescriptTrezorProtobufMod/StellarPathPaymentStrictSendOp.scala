@@ -33,7 +33,8 @@ object StellarPathPaymentStrictSendOp {
     __obj.asInstanceOf[StellarPathPaymentStrictSendOp]
   }
   
-  extension [Self <: StellarPathPaymentStrictSendOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarPathPaymentStrictSendOp] (val x: Self) extends AnyVal {
     
     inline def setDestination_account(value: String): Self = StObject.set(x, "destination_account", value.asInstanceOf[js.Any])
     

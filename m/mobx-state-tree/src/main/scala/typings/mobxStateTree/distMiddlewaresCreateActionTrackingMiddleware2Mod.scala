@@ -41,7 +41,8 @@ object distMiddlewaresCreateActionTrackingMiddleware2Mod {
       __obj.asInstanceOf[IActionTrackingMiddleware2Call[TEnv]]
     }
     
-    extension [Self <: IActionTrackingMiddleware2Call[?], TEnv](x: Self & IActionTrackingMiddleware2Call[TEnv]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionTrackingMiddleware2Call[?], TEnv] (val x: Self & IActionTrackingMiddleware2Call[TEnv]) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

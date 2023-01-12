@@ -19,7 +19,8 @@ object OverlappingUIElements {
     __obj.asInstanceOf[OverlappingUIElements]
   }
   
-  extension [Self <: OverlappingUIElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlappingUIElements] (val x: Self) extends AnyVal {
     
     inline def setResourceName(value: js.Array[String]): Self = StObject.set(x, "resourceName", value.asInstanceOf[js.Any])
     

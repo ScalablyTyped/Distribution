@@ -18,7 +18,8 @@ object DeleteFrameworkInput {
     __obj.asInstanceOf[DeleteFrameworkInput]
   }
   
-  extension [Self <: DeleteFrameworkInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFrameworkInput] (val x: Self) extends AnyVal {
     
     inline def setFrameworkName(value: FrameworkName): Self = StObject.set(x, "FrameworkName", value.asInstanceOf[js.Any])
   }

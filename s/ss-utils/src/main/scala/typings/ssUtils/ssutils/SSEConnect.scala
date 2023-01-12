@@ -38,7 +38,8 @@ object SSEConnect {
     __obj.asInstanceOf[SSEConnect]
   }
   
-  extension [Self <: SSEConnect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSEConnect] (val x: Self) extends AnyVal {
     
     inline def setHeartbeatIntervalMs(value: Double): Self = StObject.set(x, "heartbeatIntervalMs", value.asInstanceOf[js.Any])
     

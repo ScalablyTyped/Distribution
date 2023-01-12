@@ -58,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String | js.Array[String]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Destination]
     }
     
-    extension [Self <: Destination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Destination] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: String): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object anon {
       __obj.asInstanceOf[SAMLRequest]
     }
     
-    extension [Self <: SAMLRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAMLRequest] (val x: Self) extends AnyVal {
       
       inline def setSAMLRequest(value: Any): Self = StObject.set(x, "SAMLRequest", value.asInstanceOf[js.Any])
       

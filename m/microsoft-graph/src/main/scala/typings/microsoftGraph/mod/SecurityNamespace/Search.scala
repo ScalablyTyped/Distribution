@@ -32,7 +32,8 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  extension [Self <: Search](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     inline def setContentQuery(value: NullableOption[String]): Self = StObject.set(x, "contentQuery", value.asInstanceOf[js.Any])
     

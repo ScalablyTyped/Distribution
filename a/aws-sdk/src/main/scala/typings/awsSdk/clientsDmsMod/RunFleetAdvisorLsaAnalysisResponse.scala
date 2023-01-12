@@ -23,7 +23,8 @@ object RunFleetAdvisorLsaAnalysisResponse {
     __obj.asInstanceOf[RunFleetAdvisorLsaAnalysisResponse]
   }
   
-  extension [Self <: RunFleetAdvisorLsaAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunFleetAdvisorLsaAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setLsaAnalysisId(value: String): Self = StObject.set(x, "LsaAnalysisId", value.asInstanceOf[js.Any])
     

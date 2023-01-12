@@ -39,7 +39,8 @@ object IsCancelable {
     __obj.asInstanceOf[IsCancelable]
   }
   
-  extension [Self <: IsCancelable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsCancelable] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: none | default): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

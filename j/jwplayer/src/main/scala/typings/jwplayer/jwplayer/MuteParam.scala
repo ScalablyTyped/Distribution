@@ -15,7 +15,8 @@ object MuteParam {
     __obj.asInstanceOf[MuteParam]
   }
   
-  extension [Self <: MuteParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MuteParam] (val x: Self) extends AnyVal {
     
     inline def setMute(value: Boolean): Self = StObject.set(x, "mute", value.asInstanceOf[js.Any])
   }

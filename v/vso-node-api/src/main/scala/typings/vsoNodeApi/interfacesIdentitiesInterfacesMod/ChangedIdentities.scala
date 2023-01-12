@@ -23,7 +23,8 @@ object ChangedIdentities {
     __obj.asInstanceOf[ChangedIdentities]
   }
   
-  extension [Self <: ChangedIdentities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangedIdentities] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: js.Array[Identity]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     

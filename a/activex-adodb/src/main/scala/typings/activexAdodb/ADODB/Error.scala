@@ -40,7 +40,8 @@ object Error {
     __obj.asInstanceOf[Error]
   }
   
-  extension [Self <: Error](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
     
     inline def setADODBDotError_typekey(value: Error): Self = StObject.set(x, "ADODB.Error_typekey", value.asInstanceOf[js.Any])
     

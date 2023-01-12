@@ -92,7 +92,8 @@ object EncodeEntry {
     __obj.asInstanceOf[EncodeEntry]
   }
   
-  extension [Self <: EncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setAria(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "aria", value.asInstanceOf[js.Any])
     

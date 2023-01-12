@@ -58,7 +58,8 @@ object SubProcess {
     __obj.asInstanceOf[SubProcess]
   }
   
-  extension [Self <: SubProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubProcess] (val x: Self) extends AnyVal {
     
     inline def setArtifacts(value: js.Array[Artifact]): Self = StObject.set(x, "artifacts", value.asInstanceOf[js.Any])
     

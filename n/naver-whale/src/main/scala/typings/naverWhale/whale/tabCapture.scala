@@ -36,7 +36,8 @@ object tabCapture {
       __obj.asInstanceOf[CaptureInfo]
     }
     
-    extension [Self <: CaptureInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureInfo] (val x: Self) extends AnyVal {
       
       inline def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object tabCapture {
       __obj.asInstanceOf[CaptureOptions]
     }
     
-    extension [Self <: CaptureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaptureOptions] (val x: Self) extends AnyVal {
       
       inline def setAudio(value: Boolean): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object tabCapture {
       __obj.asInstanceOf[GetMediaStreamOptions]
     }
     
-    extension [Self <: GetMediaStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMediaStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setConsumerTabId(value: Double): Self = StObject.set(x, "consumerTabId", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object tabCapture {
       __obj.asInstanceOf[MediaStreamConstraint]
     }
     
-    extension [Self <: MediaStreamConstraint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaStreamConstraint] (val x: Self) extends AnyVal {
       
       inline def setMandatory(value: js.Object): Self = StObject.set(x, "mandatory", value.asInstanceOf[js.Any])
       

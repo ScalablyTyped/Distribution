@@ -21,7 +21,8 @@ object QueryDslSpanNearQuery {
     __obj.asInstanceOf[QueryDslSpanNearQuery]
   }
   
-  extension [Self <: QueryDslSpanNearQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslSpanNearQuery] (val x: Self) extends AnyVal {
     
     inline def setClauses(value: js.Array[QueryDslSpanQuery]): Self = StObject.set(x, "clauses", value.asInstanceOf[js.Any])
     

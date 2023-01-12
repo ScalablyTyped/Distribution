@@ -19,7 +19,8 @@ object PolicyDocument {
     __obj.asInstanceOf[PolicyDocument]
   }
   
-  extension [Self <: PolicyDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyDocument] (val x: Self) extends AnyVal {
     
     inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Hover {
     __obj.asInstanceOf[Hover]
   }
   
-  extension [Self <: Hover](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hover] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[IMarkdownString]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

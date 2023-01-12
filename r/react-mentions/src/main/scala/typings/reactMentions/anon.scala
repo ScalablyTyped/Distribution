@@ -2138,7 +2138,8 @@ object anon {
       __obj.asInstanceOf[PartialCSSProperties]
     }
     
-    extension [Self <: PartialCSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialCSSProperties] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: AccentColor): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -5314,7 +5315,8 @@ object anon {
       __obj.asInstanceOf[PartialConfig]
     }
     
-    extension [Self <: PartialConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialConfig] (val x: Self) extends AnyVal {
       
       inline def setDisplayTransform(value: (/* id */ String, /* display */ String) => String): Self = StObject.set(x, "displayTransform", js.Any.fromFunction2(value))
       
@@ -5341,7 +5343,8 @@ object anon {
       __obj.asInstanceOf[Results]
     }
     
-    extension [Self <: Results](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Results] (val x: Self) extends AnyVal {
       
       inline def setResults(value: js.Array[Any]): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
       
@@ -5360,7 +5363,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Value): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -5377,7 +5381,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

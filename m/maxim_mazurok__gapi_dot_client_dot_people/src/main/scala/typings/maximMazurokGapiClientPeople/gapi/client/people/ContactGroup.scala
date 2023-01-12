@@ -50,7 +50,8 @@ object ContactGroup {
     __obj.asInstanceOf[ContactGroup]
   }
   
-  extension [Self <: ContactGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactGroup] (val x: Self) extends AnyVal {
     
     inline def setClientData(value: js.Array[GroupClientData]): Self = StObject.set(x, "clientData", value.asInstanceOf[js.Any])
     

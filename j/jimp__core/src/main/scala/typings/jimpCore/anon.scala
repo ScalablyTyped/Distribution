@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Decoders[PluginFuncArr]]
     }
     
-    extension [Self <: Decoders[?], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */](x: Self & Decoders[PluginFuncArr]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decoders[?], PluginFuncArr /* <: FunctionRet[JimpPlugin[Image] | JimpType[Image]] */] (val x: Self & Decoders[PluginFuncArr]) extends AnyVal {
       
       inline def setDecoders(value: UnionToIntersection[GetPluginFuncArrDecoders[PluginFuncArr]]): Self = StObject.set(x, "decoders", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

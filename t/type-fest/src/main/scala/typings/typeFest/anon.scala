@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[ArrayMergeMode]
     }
     
-    extension [Self <: ArrayMergeMode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayMergeMode] (val x: Self) extends AnyVal {
       
       inline def setArrayMergeMode(value: replace): Self = StObject.set(x, "arrayMergeMode", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[DictmoduleName]
     }
     
-    extension [Self <: DictmoduleName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictmoduleName] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Directory]
     }
     
-    extension [Self <: Directory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Directory] (val x: Self) extends AnyVal {
       
       inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[Email]
     }
     
-    extension [Self <: Email](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Email] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -292,7 +296,8 @@ object anon {
       __obj.asInstanceOf[Install]
     }
     
-    extension [Self <: Install](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Install] (val x: Self) extends AnyVal {
       
       inline def setInstall(value: String): Self = StObject.set(x, "install", value.asInstanceOf[js.Any])
       
@@ -419,7 +424,8 @@ object anon {
       __obj.asInstanceOf[Optional]
     }
     
-    extension [Self <: Optional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optional] (val x: Self) extends AnyVal {
       
       inline def setOptional(value: `true`): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     }
@@ -438,7 +444,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -471,7 +478,8 @@ object anon {
       __obj.asInstanceOf[TypeUrl]
     }
     
-    extension [Self <: TypeUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeUrl] (val x: Self) extends AnyVal {
       
       inline def setType(
         value: LiteralUnion[github | opencollective | patreon | individual | foundation | corporation, String]
@@ -502,7 +510,8 @@ object anon {
       __obj.asInstanceOf[Url]
     }
     
-    extension [Self <: Url](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Url] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       

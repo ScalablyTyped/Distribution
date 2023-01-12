@@ -24,7 +24,8 @@ object NoteGuid {
     __obj.asInstanceOf[NoteGuid]
   }
   
-  extension [Self <: NoteGuid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoteGuid] (val x: Self) extends AnyVal {
     
     inline def setNoteGuid(value: typings.evernote.mod.Types.Guid): Self = StObject.set(x, "noteGuid", value.asInstanceOf[js.Any])
     

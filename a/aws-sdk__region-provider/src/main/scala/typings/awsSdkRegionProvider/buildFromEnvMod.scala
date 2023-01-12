@@ -29,7 +29,8 @@ object buildFromEnvMod {
       __obj.asInstanceOf[EnvConfiguration]
     }
     
-    extension [Self <: EnvConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnvConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEnvironmentVariableName(value: String): Self = StObject.set(x, "environmentVariableName", value.asInstanceOf[js.Any])
       

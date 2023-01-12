@@ -17,7 +17,8 @@ object PinchRotateOptions {
     __obj.asInstanceOf[PinchRotateOptions]
   }
   
-  extension [Self <: PinchRotateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchRotateOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object SecurityClearCachedRolesResponse {
     __obj.asInstanceOf[SecurityClearCachedRolesResponse]
   }
   
-  extension [Self <: SecurityClearCachedRolesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityClearCachedRolesResponse] (val x: Self) extends AnyVal {
     
     inline def setCluster_name(value: Name): Self = StObject.set(x, "cluster_name", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object typingsModulesStateMod {
       __obj.asInstanceOf[SwalState]
     }
     
-    extension [Self <: SwalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwalState] (val x: Self) extends AnyVal {
       
       inline def setActions(value: StringDictionary[CloseModal]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

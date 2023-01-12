@@ -26,7 +26,8 @@ object DeploymentGroup {
     __obj.asInstanceOf[DeploymentGroup]
   }
   
-  extension [Self <: DeploymentGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentGroup] (val x: Self) extends AnyVal {
     
     inline def setMachineCount(value: Double): Self = StObject.set(x, "machineCount", value.asInstanceOf[js.Any])
     

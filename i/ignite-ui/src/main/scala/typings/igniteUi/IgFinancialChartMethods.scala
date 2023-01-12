@@ -139,7 +139,8 @@ object IgFinancialChartMethods {
     __obj.asInstanceOf[IgFinancialChartMethods]
   }
   
-  extension [Self <: IgFinancialChartMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgFinancialChartMethods] (val x: Self) extends AnyVal {
     
     inline def setAddItem(value: js.Object => js.Object): Self = StObject.set(x, "addItem", js.Any.fromFunction1(value))
     

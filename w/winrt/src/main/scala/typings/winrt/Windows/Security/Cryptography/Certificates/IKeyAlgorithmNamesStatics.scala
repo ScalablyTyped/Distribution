@@ -38,7 +38,8 @@ object IKeyAlgorithmNamesStatics {
     __obj.asInstanceOf[IKeyAlgorithmNamesStatics]
   }
   
-  extension [Self <: IKeyAlgorithmNamesStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKeyAlgorithmNamesStatics] (val x: Self) extends AnyVal {
     
     inline def setDsa(value: String): Self = StObject.set(x, "dsa", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object WaitOperationRequest {
     __obj.asInstanceOf[WaitOperationRequest]
   }
   
-  extension [Self <: WaitOperationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitOperationRequest] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: String): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

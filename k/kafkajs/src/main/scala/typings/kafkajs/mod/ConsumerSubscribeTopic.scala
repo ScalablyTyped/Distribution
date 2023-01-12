@@ -17,7 +17,8 @@ object ConsumerSubscribeTopic {
     __obj.asInstanceOf[ConsumerSubscribeTopic]
   }
   
-  extension [Self <: ConsumerSubscribeTopic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerSubscribeTopic] (val x: Self) extends AnyVal {
     
     inline def setFromBeginning(value: Boolean): Self = StObject.set(x, "fromBeginning", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IngestPipeline {
     __obj.asInstanceOf[IngestPipeline]
   }
   
-  extension [Self <: IngestPipeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestPipeline] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

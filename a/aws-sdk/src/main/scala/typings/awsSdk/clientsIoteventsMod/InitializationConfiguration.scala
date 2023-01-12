@@ -18,7 +18,8 @@ object InitializationConfiguration {
     __obj.asInstanceOf[InitializationConfiguration]
   }
   
-  extension [Self <: InitializationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDisabledOnInitialization(value: DisabledOnInitialization): Self = StObject.set(x, "disabledOnInitialization", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object anon {
       __obj.asInstanceOf[Margins]
     }
     
-    extension [Self <: Margins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Margins] (val x: Self) extends AnyVal {
       
       inline def setMargins(value: Bottom): Self = StObject.set(x, "margins", value.asInstanceOf[js.Any])
       

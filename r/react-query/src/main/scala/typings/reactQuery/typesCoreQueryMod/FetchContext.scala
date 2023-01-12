@@ -34,7 +34,8 @@ object FetchContext {
     __obj.asInstanceOf[FetchContext[TQueryFnData, TError, TData, TQueryKey]]
   }
   
-  extension [Self <: FetchContext[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](x: Self & (FetchContext[TQueryFnData, TError, TData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchContext[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] (val x: Self & (FetchContext[TQueryFnData, TError, TData, TQueryKey])) extends AnyVal {
     
     inline def setFetchFn(value: () => Any | js.Promise[Any]): Self = StObject.set(x, "fetchFn", js.Any.fromFunction0(value))
     

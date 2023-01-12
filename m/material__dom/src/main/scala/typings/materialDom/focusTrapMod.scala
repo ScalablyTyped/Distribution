@@ -66,7 +66,8 @@ object focusTrapMod {
       __obj.asInstanceOf[FocusOptions]
     }
     
-    extension [Self <: FocusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialFocusEl(value: HTMLElement): Self = StObject.set(x, "initialFocusEl", value.asInstanceOf[js.Any])
       

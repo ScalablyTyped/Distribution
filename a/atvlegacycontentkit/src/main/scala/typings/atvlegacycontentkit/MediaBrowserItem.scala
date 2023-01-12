@@ -41,7 +41,8 @@ object MediaBrowserItem {
     __obj.asInstanceOf[MediaBrowserItem]
   }
   
-  extension [Self <: MediaBrowserItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserItem] (val x: Self) extends AnyVal {
     
     inline def setBadges(value: js.Array[MediaBrowserBadge]): Self = StObject.set(x, "badges", value.asInstanceOf[js.Any])
     

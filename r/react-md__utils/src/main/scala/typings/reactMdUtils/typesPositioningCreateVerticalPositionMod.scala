@@ -55,7 +55,8 @@ object typesPositioningCreateVerticalPositionMod {
       __obj.asInstanceOf[FixConfig]
     }
     
-    extension [Self <: FixConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixConfig] (val x: Self) extends AnyVal {
       
       inline def setDisableSwapping(value: Boolean): Self = StObject.set(x, "disableSwapping", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object typesPositioningCreateVerticalPositionMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setContainerRect(value: DOMRect): Self = StObject.set(x, "containerRect", value.asInstanceOf[js.Any])
       
@@ -156,7 +158,8 @@ object typesPositioningCreateVerticalPositionMod {
       __obj.asInstanceOf[YPosition]
     }
     
-    extension [Self <: YPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YPosition] (val x: Self) extends AnyVal {
       
       inline def setActualY(value: VerticalPosition): Self = StObject.set(x, "actualY", value.asInstanceOf[js.Any])
       

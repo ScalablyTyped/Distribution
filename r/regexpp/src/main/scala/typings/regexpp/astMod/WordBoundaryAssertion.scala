@@ -28,7 +28,8 @@ object WordBoundaryAssertion {
     __obj.asInstanceOf[WordBoundaryAssertion]
   }
   
-  extension [Self <: WordBoundaryAssertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WordBoundaryAssertion] (val x: Self) extends AnyVal {
     
     inline def setKind(value: word): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

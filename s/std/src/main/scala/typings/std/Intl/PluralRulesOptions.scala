@@ -36,7 +36,8 @@ object PluralRulesOptions {
     __obj.asInstanceOf[PluralRulesOptions]
   }
   
-  extension [Self <: PluralRulesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluralRulesOptions] (val x: Self) extends AnyVal {
     
     inline def setLocaleMatcher(value: lookup | (`best fit`)): Self = StObject.set(x, "localeMatcher", value.asInstanceOf[js.Any])
     

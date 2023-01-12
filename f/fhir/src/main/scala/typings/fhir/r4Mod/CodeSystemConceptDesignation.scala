@@ -34,7 +34,8 @@ object CodeSystemConceptDesignation {
     __obj.asInstanceOf[CodeSystemConceptDesignation]
   }
   
-  extension [Self <: CodeSystemConceptDesignation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeSystemConceptDesignation] (val x: Self) extends AnyVal {
     
     inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
     

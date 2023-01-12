@@ -39,7 +39,8 @@ object ResponsiveDisplayAdBuilder {
     __obj.asInstanceOf[ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]]
   }
   
-  extension [Self <: ResponsiveDisplayAdBuilder[?], ResponsiveDisplayAd](x: Self & ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveDisplayAdBuilder[?], ResponsiveDisplayAd] (val x: Self & ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]) extends AnyVal {
     
     inline def setWithBusinessName(value: String => ResponsiveDisplayAdBuilder[ResponsiveDisplayAd]): Self = StObject.set(x, "withBusinessName", js.Any.fromFunction1(value))
     

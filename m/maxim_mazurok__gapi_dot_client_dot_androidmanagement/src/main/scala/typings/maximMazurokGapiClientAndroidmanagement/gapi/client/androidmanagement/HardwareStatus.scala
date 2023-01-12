@@ -34,7 +34,8 @@ object HardwareStatus {
     __obj.asInstanceOf[HardwareStatus]
   }
   
-  extension [Self <: HardwareStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HardwareStatus] (val x: Self) extends AnyVal {
     
     inline def setBatteryTemperatures(value: js.Array[Double]): Self = StObject.set(x, "batteryTemperatures", value.asInstanceOf[js.Any])
     

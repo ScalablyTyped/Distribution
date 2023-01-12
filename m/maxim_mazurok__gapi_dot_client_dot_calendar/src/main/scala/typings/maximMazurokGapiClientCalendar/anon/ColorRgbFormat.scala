@@ -44,7 +44,8 @@ object ColorRgbFormat {
     __obj.asInstanceOf[ColorRgbFormat]
   }
   
-  extension [Self <: ColorRgbFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorRgbFormat] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

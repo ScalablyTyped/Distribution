@@ -17,7 +17,8 @@ object WarningsInfo {
     __obj.asInstanceOf[WarningsInfo]
   }
   
-  extension [Self <: WarningsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarningsInfo] (val x: Self) extends AnyVal {
     
     inline def setTestRunId(value: String): Self = StObject.set(x, "testRunId", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object GridFSBucketWriteStreamOptions {
     __obj.asInstanceOf[GridFSBucketWriteStreamOptions]
   }
   
-  extension [Self <: GridFSBucketWriteStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridFSBucketWriteStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

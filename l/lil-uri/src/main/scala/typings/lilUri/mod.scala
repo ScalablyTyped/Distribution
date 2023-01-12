@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object mod {
       __obj.asInstanceOf[URIParts]
     }
     
-    extension [Self <: URIParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIParts] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object SourceResultCount {
     __obj.asInstanceOf[SourceResultCount]
   }
   
-  extension [Self <: SourceResultCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceResultCount] (val x: Self) extends AnyVal {
     
     inline def setHasMoreResults(value: Boolean): Self = StObject.set(x, "hasMoreResults", value.asInstanceOf[js.Any])
     

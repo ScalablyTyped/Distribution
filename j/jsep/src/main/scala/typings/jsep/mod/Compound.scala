@@ -22,7 +22,8 @@ object Compound {
     __obj.asInstanceOf[Compound]
   }
   
-  extension [Self <: Compound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compound] (val x: Self) extends AnyVal {
     
     inline def setBody(value: js.Array[Expression]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

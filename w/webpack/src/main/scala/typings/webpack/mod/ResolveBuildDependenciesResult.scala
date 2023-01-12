@@ -48,7 +48,8 @@ object ResolveBuildDependenciesResult {
     __obj.asInstanceOf[ResolveBuildDependenciesResult]
   }
   
-  extension [Self <: ResolveBuildDependenciesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveBuildDependenciesResult] (val x: Self) extends AnyVal {
     
     inline def setDirectories(value: Set[String]): Self = StObject.set(x, "directories", value.asInstanceOf[js.Any])
     

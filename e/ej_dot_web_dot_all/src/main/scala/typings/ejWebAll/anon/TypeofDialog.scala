@@ -20,7 +20,8 @@ object TypeofDialog {
     __obj.asInstanceOf[TypeofDialog]
   }
   
-  extension [Self <: TypeofDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDialog] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Dialog): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

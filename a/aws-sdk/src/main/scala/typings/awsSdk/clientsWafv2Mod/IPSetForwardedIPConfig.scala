@@ -32,7 +32,8 @@ object IPSetForwardedIPConfig {
     __obj.asInstanceOf[IPSetForwardedIPConfig]
   }
   
-  extension [Self <: IPSetForwardedIPConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSetForwardedIPConfig] (val x: Self) extends AnyVal {
     
     inline def setFallbackBehavior(value: FallbackBehavior): Self = StObject.set(x, "FallbackBehavior", value.asInstanceOf[js.Any])
     

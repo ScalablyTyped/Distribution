@@ -44,7 +44,8 @@ object sidebarSidebarOptionsunde {
     __obj.asInstanceOf[sidebarSidebarOptionsunde]
   }
   
-  extension [Self <: sidebarSidebarOptionsunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sidebarSidebarOptionsunde] (val x: Self) extends AnyVal {
     
     inline def setAddonPanelInRight(value: Boolean): Self = StObject.set(x, "addonPanelInRight", value.asInstanceOf[js.Any])
     

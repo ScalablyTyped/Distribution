@@ -33,7 +33,8 @@ object TextBoxOptions {
     __obj.asInstanceOf[TextBoxOptions]
   }
   
-  extension [Self <: TextBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ TextBoxChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

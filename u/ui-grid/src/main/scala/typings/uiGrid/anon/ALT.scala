@@ -128,7 +128,8 @@ object ALT {
     __obj.asInstanceOf[ALT]
   }
   
-  extension [Self <: ALT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ALT] (val x: Self) extends AnyVal {
     
     inline def setALT(value: Double): Self = StObject.set(x, "ALT", value.asInstanceOf[js.Any])
     

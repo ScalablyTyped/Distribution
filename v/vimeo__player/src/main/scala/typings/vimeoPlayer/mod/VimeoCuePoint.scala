@@ -19,7 +19,8 @@ object VimeoCuePoint {
     __obj.asInstanceOf[VimeoCuePoint]
   }
   
-  extension [Self <: VimeoCuePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VimeoCuePoint] (val x: Self) extends AnyVal {
     
     inline def setData(value: VimeoCuePointData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

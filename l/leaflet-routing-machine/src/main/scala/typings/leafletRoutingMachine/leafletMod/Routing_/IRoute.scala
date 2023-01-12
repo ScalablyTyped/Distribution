@@ -25,7 +25,8 @@ object IRoute {
     __obj.asInstanceOf[IRoute]
   }
   
-  extension [Self <: IRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
     
     inline def setCoordinates(value: js.Array[LatLng_]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
     

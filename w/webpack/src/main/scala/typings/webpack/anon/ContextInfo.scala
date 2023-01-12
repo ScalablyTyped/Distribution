@@ -28,7 +28,8 @@ object ContextInfo {
     __obj.asInstanceOf[ContextInfo]
   }
   
-  extension [Self <: ContextInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextInfo] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

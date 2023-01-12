@@ -23,7 +23,8 @@ object GetPositionConfigurationRequest {
     __obj.asInstanceOf[GetPositionConfigurationRequest]
   }
   
-  extension [Self <: GetPositionConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPositionConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceIdentifier(value: PositionResourceIdentifier): Self = StObject.set(x, "ResourceIdentifier", value.asInstanceOf[js.Any])
     

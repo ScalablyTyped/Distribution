@@ -25,7 +25,8 @@ object typesTagExceptionMod {
       __obj.asInstanceOf[TagException]
     }
     
-    extension [Self <: TagException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.TagException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -45,7 +46,8 @@ object typesTagExceptionMod {
       __obj.asInstanceOf[TagExceptionDetails]
     }
     
-    extension [Self <: TagExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

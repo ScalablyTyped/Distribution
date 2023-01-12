@@ -40,7 +40,8 @@ object MapSize {
     __obj.asInstanceOf[MapSize]
   }
   
-  extension [Self <: MapSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapSize] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => MapSize): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

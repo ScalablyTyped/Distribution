@@ -46,7 +46,8 @@ object ContainerModule {
     __obj.asInstanceOf[ContainerModule]
   }
   
-  extension [Self <: ContainerModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerModule] (val x: Self) extends AnyVal {
     
     inline def setRegistry(
       value: (/* bind */ Bind, /* unbind */ Unbind, /* isBound */ IsBound, /* rebind */ Rebind, /* unbindAsync */ UnbindAsync, /* onActivation */ js.Function2[

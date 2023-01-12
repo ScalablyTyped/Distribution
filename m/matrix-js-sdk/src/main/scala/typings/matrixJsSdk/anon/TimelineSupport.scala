@@ -19,7 +19,8 @@ object TimelineSupport {
     __obj.asInstanceOf[TimelineSupport]
   }
   
-  extension [Self <: TimelineSupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineSupport] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: typings.matrixJsSdk.mod.Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

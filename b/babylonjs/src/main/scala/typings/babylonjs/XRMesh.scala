@@ -30,7 +30,8 @@ object XRMesh {
     __obj.asInstanceOf[XRMesh]
   }
   
-  extension [Self <: XRMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRMesh] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.typedarray.Uint32Array): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

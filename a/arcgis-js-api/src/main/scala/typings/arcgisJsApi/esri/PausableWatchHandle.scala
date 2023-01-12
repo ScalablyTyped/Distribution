@@ -34,7 +34,8 @@ object PausableWatchHandle {
     __obj.asInstanceOf[PausableWatchHandle]
   }
   
-  extension [Self <: PausableWatchHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PausableWatchHandle] (val x: Self) extends AnyVal {
     
     inline def setPause(value: () => scala.Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     

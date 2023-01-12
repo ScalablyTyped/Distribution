@@ -17,7 +17,8 @@ object `2` {
     __obj.asInstanceOf[`2`[Axis, Value]]
   }
   
-  extension [Self <: `2`[?, ?], Axis /* <: ScaleAxis */, Value /* <: ScaleValue */](x: Self & (`2`[Axis, Value])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `2`[?, ?], Axis /* <: ScaleAxis */, Value /* <: ScaleValue */] (val x: Self & (`2`[Axis, Value])) extends AnyVal {
     
     inline def setData(value: js.Array[DataRecord[Axis, Value]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

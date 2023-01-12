@@ -19,7 +19,8 @@ object ListMessagesResponse {
     __obj.asInstanceOf[ListMessagesResponse]
   }
   
-  extension [Self <: ListMessagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMessagesResponse] (val x: Self) extends AnyVal {
     
     inline def setHl7V2Messages(value: js.Array[Message]): Self = StObject.set(x, "hl7V2Messages", value.asInstanceOf[js.Any])
     

@@ -119,7 +119,8 @@ object BuildTrigger {
     __obj.asInstanceOf[BuildTrigger]
   }
   
-  extension [Self <: BuildTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildTrigger] (val x: Self) extends AnyVal {
     
     inline def setApprovalConfig(value: ApprovalConfig): Self = StObject.set(x, "approvalConfig", value.asInstanceOf[js.Any])
     

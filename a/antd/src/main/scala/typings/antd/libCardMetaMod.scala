@@ -35,7 +35,8 @@ object libCardMetaMod extends Shortcut {
       __obj.asInstanceOf[CardMetaProps]
     }
     
-    extension [Self <: CardMetaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardMetaProps] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: ReactNode): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

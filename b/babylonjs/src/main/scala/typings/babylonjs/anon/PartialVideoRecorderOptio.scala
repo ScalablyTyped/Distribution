@@ -23,7 +23,8 @@ object PartialVideoRecorderOptio {
     __obj.asInstanceOf[PartialVideoRecorderOptio]
   }
   
-  extension [Self <: PartialVideoRecorderOptio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialVideoRecorderOptio] (val x: Self) extends AnyVal {
     
     inline def setAudioTracks(value: js.Array[MediaStreamTrack]): Self = StObject.set(x, "audioTracks", value.asInstanceOf[js.Any])
     

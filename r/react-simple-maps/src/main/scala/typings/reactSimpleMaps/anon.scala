@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Coordinates]
     }
     
-    extension [Self <: Coordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coordinates] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: CSSProperties): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Dragging]
     }
     
-    extension [Self <: Dragging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dragging] (val x: Self) extends AnyVal {
       
       inline def setDragging(value: WheelEvent): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
       

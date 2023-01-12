@@ -73,7 +73,8 @@ object distLibConverterCommentsLexerMod {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setKind(value: TokenSyntaxKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       

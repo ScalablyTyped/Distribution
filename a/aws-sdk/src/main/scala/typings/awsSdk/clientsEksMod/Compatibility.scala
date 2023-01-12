@@ -28,7 +28,8 @@ object Compatibility {
     __obj.asInstanceOf[Compatibility]
   }
   
-  extension [Self <: Compatibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compatibility] (val x: Self) extends AnyVal {
     
     inline def setClusterVersion(value: String): Self = StObject.set(x, "clusterVersion", value.asInstanceOf[js.Any])
     

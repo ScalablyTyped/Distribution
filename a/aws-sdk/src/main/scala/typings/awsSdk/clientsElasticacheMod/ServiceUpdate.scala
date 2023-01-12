@@ -73,7 +73,8 @@ object ServiceUpdate {
     __obj.asInstanceOf[ServiceUpdate]
   }
   
-  extension [Self <: ServiceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdate] (val x: Self) extends AnyVal {
     
     inline def setAutoUpdateAfterRecommendedApplyByDate(value: BooleanOptional): Self = StObject.set(x, "AutoUpdateAfterRecommendedApplyByDate", value.asInstanceOf[js.Any])
     

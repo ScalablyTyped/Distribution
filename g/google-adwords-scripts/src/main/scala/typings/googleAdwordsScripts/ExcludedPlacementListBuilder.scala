@@ -20,7 +20,8 @@ object ExcludedPlacementListBuilder {
     __obj.asInstanceOf[ExcludedPlacementListBuilder[ExcludedPlacementList]]
   }
   
-  extension [Self <: ExcludedPlacementListBuilder[?], ExcludedPlacementList](x: Self & ExcludedPlacementListBuilder[ExcludedPlacementList]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedPlacementListBuilder[?], ExcludedPlacementList] (val x: Self & ExcludedPlacementListBuilder[ExcludedPlacementList]) extends AnyVal {
     
     inline def setWithName(value: String => ExcludedPlacementListBuilder[ExcludedPlacementList]): Self = StObject.set(x, "withName", js.Any.fromFunction1(value))
   }

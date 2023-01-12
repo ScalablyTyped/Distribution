@@ -20,7 +20,8 @@ object IGeneratedExpression {
     __obj.asInstanceOf[IGeneratedExpression]
   }
   
-  extension [Self <: IGeneratedExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeneratedExpression] (val x: Self) extends AnyVal {
     
     inline def setParameterTypeNames(value: js.Array[String]): Self = StObject.set(x, "parameterTypeNames", value.asInstanceOf[js.Any])
     

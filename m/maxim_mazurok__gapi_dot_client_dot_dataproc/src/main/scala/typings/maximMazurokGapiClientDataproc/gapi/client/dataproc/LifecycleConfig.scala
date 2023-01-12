@@ -34,7 +34,8 @@ object LifecycleConfig {
     __obj.asInstanceOf[LifecycleConfig]
   }
   
-  extension [Self <: LifecycleConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LifecycleConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoDeleteTime(value: String): Self = StObject.set(x, "autoDeleteTime", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ContourMeasureIter {
     __obj.asInstanceOf[ContourMeasureIter]
   }
   
-  extension [Self <: ContourMeasureIter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContourMeasureIter] (val x: Self) extends AnyVal {
     
     inline def setNext(value: () => ContourMeasure | Null): Self = StObject.set(x, "next", js.Any.fromFunction0(value))
   }

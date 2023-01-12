@@ -732,7 +732,8 @@ object RaxSVG {
     __obj.asInstanceOf[RaxSVG]
   }
   
-  extension [Self <: RaxSVG](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaxSVG] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: SVGFactory): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

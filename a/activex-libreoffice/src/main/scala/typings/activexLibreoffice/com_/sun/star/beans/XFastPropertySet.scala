@@ -48,7 +48,8 @@ object XFastPropertySet {
     __obj.asInstanceOf[XFastPropertySet]
   }
   
-  extension [Self <: XFastPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastPropertySet] (val x: Self) extends AnyVal {
     
     inline def setGetFastPropertyValue(value: Double => Any): Self = StObject.set(x, "getFastPropertyValue", js.Any.fromFunction1(value))
     

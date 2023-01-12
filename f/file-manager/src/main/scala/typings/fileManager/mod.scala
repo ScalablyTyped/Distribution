@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setRead(
         value: js.Tuple2[
@@ -238,7 +239,8 @@ object mod {
       __obj.asInstanceOf[ReadFilesResult]
     }
     
-    extension [Self <: ReadFilesResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadFilesResult] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

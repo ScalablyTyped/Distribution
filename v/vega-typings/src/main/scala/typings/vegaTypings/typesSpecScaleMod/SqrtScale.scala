@@ -21,7 +21,8 @@ object SqrtScale {
     __obj.asInstanceOf[SqrtScale]
   }
   
-  extension [Self <: SqrtScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqrtScale] (val x: Self) extends AnyVal {
     
     inline def setType(value: sqrt): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

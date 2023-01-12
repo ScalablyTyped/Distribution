@@ -19,7 +19,8 @@ object LiftEffect {
     __obj.asInstanceOf[LiftEffect]
   }
   
-  extension [Self <: LiftEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiftEffect] (val x: Self) extends AnyVal {
     
     inline def setDisplacedBy(value: DisplacedBy): Self = StObject.set(x, "displacedBy", value.asInstanceOf[js.Any])
     

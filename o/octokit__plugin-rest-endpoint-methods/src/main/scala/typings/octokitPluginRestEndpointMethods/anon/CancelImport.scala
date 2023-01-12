@@ -652,7 +652,8 @@ object CancelImport {
     __obj.asInstanceOf[CancelImport]
   }
   
-  extension [Self <: CancelImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelImport] (val x: Self) extends AnyVal {
     
     inline def setCancelImport(value: `359`): Self = StObject.set(x, "cancelImport", value.asInstanceOf[js.Any])
     

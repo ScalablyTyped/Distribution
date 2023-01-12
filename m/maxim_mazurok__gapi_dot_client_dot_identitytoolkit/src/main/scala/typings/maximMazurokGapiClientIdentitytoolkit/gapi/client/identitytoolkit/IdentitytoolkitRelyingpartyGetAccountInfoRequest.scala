@@ -28,7 +28,8 @@ object IdentitytoolkitRelyingpartyGetAccountInfoRequest {
     __obj.asInstanceOf[IdentitytoolkitRelyingpartyGetAccountInfoRequest]
   }
   
-  extension [Self <: IdentitytoolkitRelyingpartyGetAccountInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitytoolkitRelyingpartyGetAccountInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setDelegatedProjectNumber(value: String): Self = StObject.set(x, "delegatedProjectNumber", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ItemsTimedMetadataTrack {
     __obj.asInstanceOf[ItemsTimedMetadataTrack]
   }
   
-  extension [Self <: ItemsTimedMetadataTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsTimedMetadataTrack] (val x: Self) extends AnyVal {
     
     inline def setItems(value: TimedMetadataTrack): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

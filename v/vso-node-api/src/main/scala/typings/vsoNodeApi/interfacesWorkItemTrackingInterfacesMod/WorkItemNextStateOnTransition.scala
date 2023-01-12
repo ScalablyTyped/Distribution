@@ -33,7 +33,8 @@ object WorkItemNextStateOnTransition {
     __obj.asInstanceOf[WorkItemNextStateOnTransition]
   }
   
-  extension [Self <: WorkItemNextStateOnTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemNextStateOnTransition] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
     

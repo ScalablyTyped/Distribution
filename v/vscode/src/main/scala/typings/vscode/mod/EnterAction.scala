@@ -28,7 +28,8 @@ object EnterAction {
     __obj.asInstanceOf[EnterAction]
   }
   
-  extension [Self <: EnterAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterAction] (val x: Self) extends AnyVal {
     
     inline def setAppendText(value: String): Self = StObject.set(x, "appendText", value.asInstanceOf[js.Any])
     

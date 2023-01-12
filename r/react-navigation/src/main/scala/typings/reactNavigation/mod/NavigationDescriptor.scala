@@ -30,7 +30,8 @@ object NavigationDescriptor {
     __obj.asInstanceOf[NavigationDescriptor[Params, Options, NavigationScreenPropType]]
   }
   
-  extension [Self <: NavigationDescriptor[?, ?, ?], Params, Options, NavigationScreenPropType](x: Self & (NavigationDescriptor[Params, Options, NavigationScreenPropType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationDescriptor[?, ?, ?], Params, Options, NavigationScreenPropType] (val x: Self & (NavigationDescriptor[Params, Options, NavigationScreenPropType])) extends AnyVal {
     
     inline def setGetComponent(value: () => ComponentType[js.Object]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
     

@@ -57,7 +57,8 @@ object CreativeAssignment {
     __obj.asInstanceOf[CreativeAssignment]
   }
   
-  extension [Self <: CreativeAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeAssignment] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

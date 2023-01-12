@@ -36,7 +36,8 @@ object ModifyOptions {
     __obj.asInstanceOf[ModifyOptions]
   }
   
-  extension [Self <: ModifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyOptions] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: /* event */ MapBrowserEvent => Boolean): Self = StObject.set(x, "condition", js.Any.fromFunction1(value))
     

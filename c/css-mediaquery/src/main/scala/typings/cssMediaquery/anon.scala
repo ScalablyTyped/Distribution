@@ -44,7 +44,8 @@ object anon {
       __obj.asInstanceOf[PartialMediaValues]
     }
     
-    extension [Self <: PartialMediaValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMediaValues] (val x: Self) extends AnyVal {
       
       inline def `setAspect-ratio`(value: Any): Self = StObject.set(x, "aspect-ratio", value.asInstanceOf[js.Any])
       

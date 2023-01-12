@@ -43,7 +43,8 @@ object StyledUnicodeChar {
     __obj.asInstanceOf[StyledUnicodeChar]
   }
   
-  extension [Self <: StyledUnicodeChar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyledUnicodeChar] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: StyledUnicodeChar => Unit): Self = StObject.set(x, "copy", js.Any.fromFunction1(value))
     

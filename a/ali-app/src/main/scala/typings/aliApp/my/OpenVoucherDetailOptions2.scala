@@ -20,7 +20,8 @@ object OpenVoucherDetailOptions2 {
     __obj.asInstanceOf[OpenVoucherDetailOptions2]
   }
   
-  extension [Self <: OpenVoucherDetailOptions2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenVoucherDetailOptions2] (val x: Self) extends AnyVal {
     
     inline def setPartnerId(value: String): Self = StObject.set(x, "partnerId", value.asInstanceOf[js.Any])
     

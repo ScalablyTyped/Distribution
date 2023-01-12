@@ -18,7 +18,8 @@ object CipherOCBOptions {
     __obj.asInstanceOf[CipherOCBOptions]
   }
   
-  extension [Self <: CipherOCBOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CipherOCBOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthTagLength(value: Double): Self = StObject.set(x, "authTagLength", value.asInstanceOf[js.Any])
   }

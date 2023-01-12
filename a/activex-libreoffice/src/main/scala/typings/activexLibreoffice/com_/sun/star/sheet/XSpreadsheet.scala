@@ -43,7 +43,8 @@ object XSpreadsheet {
     __obj.asInstanceOf[XSpreadsheet]
   }
   
-  extension [Self <: XSpreadsheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpreadsheet] (val x: Self) extends AnyVal {
     
     inline def setCreateCursor(value: () => XSheetCellCursor): Self = StObject.set(x, "createCursor", js.Any.fromFunction0(value))
     

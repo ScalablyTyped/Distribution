@@ -20,7 +20,8 @@ object CreateSegmentRequest {
     __obj.asInstanceOf[CreateSegmentRequest]
   }
   
-  extension [Self <: CreateSegmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSegmentRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

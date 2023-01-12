@@ -24,7 +24,8 @@ object CellFocusChanged {
     __obj.asInstanceOf[CellFocusChanged]
   }
   
-  extension [Self <: CellFocusChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellFocusChanged] (val x: Self) extends AnyVal {
     
     inline def setNewFieldKey(value: String): Self = StObject.set(x, "newFieldKey", value.asInstanceOf[js.Any])
     

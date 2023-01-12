@@ -85,7 +85,8 @@ object ScaleData {
     __obj.asInstanceOf[ScaleData]
   }
   
-  extension [Self <: ScaleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleData] (val x: Self) extends AnyVal {
     
     inline def setAutoDateAxis(value: Boolean): Self = StObject.set(x, "AutoDateAxis", value.asInstanceOf[js.Any])
     

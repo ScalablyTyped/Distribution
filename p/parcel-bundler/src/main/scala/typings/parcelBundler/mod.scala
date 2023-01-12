@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[HttpsOptions]
     }
     
-    extension [Self <: HttpsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpsOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object mod {
       __obj.asInstanceOf[ParcelBundle]
     }
     
-    extension [Self <: ParcelBundle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParcelBundle] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: Set[Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -523,7 +525,8 @@ object mod {
       __obj.asInstanceOf[ParcelOptions]
     }
     
-    extension [Self <: ParcelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParcelOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoInstall(value: Boolean): Self = StObject.set(x, "autoInstall", value.asInstanceOf[js.Any])
       

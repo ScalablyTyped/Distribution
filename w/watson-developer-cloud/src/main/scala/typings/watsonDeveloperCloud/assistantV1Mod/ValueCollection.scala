@@ -20,7 +20,8 @@ object ValueCollection {
     __obj.asInstanceOf[ValueCollection]
   }
   
-  extension [Self <: ValueCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueCollection] (val x: Self) extends AnyVal {
     
     inline def setPagination(value: Pagination): Self = StObject.set(x, "pagination", value.asInstanceOf[js.Any])
     

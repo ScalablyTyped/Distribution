@@ -70,7 +70,8 @@ object DescribePackageVersionResponse {
     __obj.asInstanceOf[DescribePackageVersionResponse]
   }
   
-  extension [Self <: DescribePackageVersionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePackageVersionResponse] (val x: Self) extends AnyVal {
     
     inline def setIsLatestPatch(value: Boolean): Self = StObject.set(x, "IsLatestPatch", value.asInstanceOf[js.Any])
     

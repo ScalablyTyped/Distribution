@@ -25,7 +25,8 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  extension [Self <: Filter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: QueryDslQueryContainer): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

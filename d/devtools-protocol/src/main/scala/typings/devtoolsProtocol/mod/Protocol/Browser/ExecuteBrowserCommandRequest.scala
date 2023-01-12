@@ -15,7 +15,8 @@ object ExecuteBrowserCommandRequest {
     __obj.asInstanceOf[ExecuteBrowserCommandRequest]
   }
   
-  extension [Self <: ExecuteBrowserCommandRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteBrowserCommandRequest] (val x: Self) extends AnyVal {
     
     inline def setCommandId(value: BrowserCommandId): Self = StObject.set(x, "commandId", value.asInstanceOf[js.Any])
   }

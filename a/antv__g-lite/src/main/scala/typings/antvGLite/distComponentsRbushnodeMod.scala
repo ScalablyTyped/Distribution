@@ -22,7 +22,8 @@ object distComponentsRbushnodeMod {
       __obj.asInstanceOf[RBushNode]
     }
     
-    extension [Self <: RBushNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RBushNode] (val x: Self) extends AnyVal {
       
       inline def setAabb(value: RBushNodeAABB): Self = StObject.set(x, "aabb", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object distComponentsRbushnodeMod {
       __obj.asInstanceOf[RBushNodeAABB]
     }
     
-    extension [Self <: RBushNodeAABB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RBushNodeAABB] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

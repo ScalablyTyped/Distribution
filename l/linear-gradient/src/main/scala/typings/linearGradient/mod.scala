@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Gradient]
     }
     
-    extension [Self <: Gradient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gradient] (val x: Self) extends AnyVal {
       
       inline def setCalcArray(value: Double => Color): Self = StObject.set(x, "calcArray", js.Any.fromFunction1(value))
       

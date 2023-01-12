@@ -42,7 +42,8 @@ object distConfigWithThemeMod {
       __obj.asInstanceOf[ThemedComponent]
     }
     
-    extension [Self <: ThemedComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemedComponent] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }

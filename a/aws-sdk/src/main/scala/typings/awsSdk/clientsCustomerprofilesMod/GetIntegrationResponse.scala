@@ -58,7 +58,8 @@ object GetIntegrationResponse {
     __obj.asInstanceOf[GetIntegrationResponse]
   }
   
-  extension [Self <: GetIntegrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIntegrationResponse] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object ViolationDetail {
     __obj.asInstanceOf[ViolationDetail]
   }
   
-  extension [Self <: ViolationDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViolationDetail] (val x: Self) extends AnyVal {
     
     inline def setMemberAccount(value: AWSAccountId): Self = StObject.set(x, "MemberAccount", value.asInstanceOf[js.Any])
     

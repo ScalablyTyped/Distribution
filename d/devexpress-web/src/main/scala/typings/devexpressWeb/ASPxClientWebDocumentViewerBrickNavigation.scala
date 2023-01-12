@@ -19,7 +19,8 @@ object ASPxClientWebDocumentViewerBrickNavigation {
     __obj.asInstanceOf[ASPxClientWebDocumentViewerBrickNavigation]
   }
   
-  extension [Self <: ASPxClientWebDocumentViewerBrickNavigation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientWebDocumentViewerBrickNavigation] (val x: Self) extends AnyVal {
     
     inline def setDrillDownKey(value: String): Self = StObject.set(x, "drillDownKey", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object UpdatePartnerStatusInputMessage {
     __obj.asInstanceOf[UpdatePartnerStatusInputMessage]
   }
   
-  extension [Self <: UpdatePartnerStatusInputMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePartnerStatusInputMessage] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: PartnerIntegrationAccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

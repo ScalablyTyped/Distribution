@@ -91,7 +91,8 @@ object btreecheckpointgeneration {
     __obj.asInstanceOf[btreecheckpointgeneration]
   }
   
-  extension [Self <: btreecheckpointgeneration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: btreecheckpointgeneration] (val x: Self) extends AnyVal {
     
     inline def `setBtree checkpoint generation`(value: Double): Self = StObject.set(x, "btree checkpoint generation", value.asInstanceOf[js.Any])
     

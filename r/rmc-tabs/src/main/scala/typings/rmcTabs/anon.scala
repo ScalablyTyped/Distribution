@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[ActiveTab[S, P]]
     }
     
-    extension [Self <: ActiveTab[?, ?], S /* <: StateType */, P /* <: PropsType */](x: Self & (ActiveTab[S, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveTab[?, ?], S /* <: StateType */, P /* <: PropsType */] (val x: Self & (ActiveTab[S, P])) extends AnyVal {
       
       inline def setActiveTab(
         value: /* import warning: importer.ImportType#apply Failed type conversion: S['currentTab'] */ js.Any
@@ -145,7 +146,8 @@ object anon {
       __obj.asInstanceOf[ActiveTextColor]
     }
     
-    extension [Self <: ActiveTextColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveTextColor] (val x: Self) extends AnyVal {
       
       inline def setActiveTextColor(value: String): Self = StObject.set(x, "activeTextColor", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object anon {
       __obj.asInstanceOf[BottomTabBarSplitLine]
     }
     
-    extension [Self <: BottomTabBarSplitLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BottomTabBarSplitLine] (val x: Self) extends AnyVal {
       
       inline def setBottomTabBarSplitLine(value: ViewStyle): Self = StObject.set(x, "bottomTabBarSplitLine", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def set_component(value: ScrollView): Self = StObject.set(x, "_component", value.asInstanceOf[js.Any])
     }
@@ -218,7 +222,8 @@ object anon {
       __obj.asInstanceOf[FixX]
     }
     
-    extension [Self <: FixX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixX] (val x: Self) extends AnyVal {
       
       inline def setFixX(value: Boolean): Self = StObject.set(x, "fixX", value.asInstanceOf[js.Any])
       
@@ -237,7 +242,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     }
@@ -258,7 +264,8 @@ object anon {
       __obj.asInstanceOf[MozTransform]
     }
     
-    extension [Self <: MozTransform](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MozTransform] (val x: Self) extends AnyVal {
       
       inline def setMozTransform(value: Any): Self = StObject.set(x, "MozTransform", value.asInstanceOf[js.Any])
       
@@ -318,7 +325,8 @@ object anon {
       __obj.asInstanceOf[PropsTypechildrenReactNod]
     }
     
-    extension [Self <: PropsTypechildrenReactNod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropsTypechildrenReactNod] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -406,7 +414,8 @@ object anon {
       __obj.asInstanceOf[ReadonlychildrenReactNode]
     }
     
-    extension [Self <: ReadonlychildrenReactNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlychildrenReactNode] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -523,7 +532,8 @@ object anon {
       __obj.asInstanceOf[ShowNext]
     }
     
-    extension [Self <: ShowNext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowNext] (val x: Self) extends AnyVal {
       
       inline def setShowNext(value: Boolean): Self = StObject.set(x, "showNext", value.asInstanceOf[js.Any])
       
@@ -546,7 +556,8 @@ object anon {
       __obj.asInstanceOf[TabBar]
     }
     
-    extension [Self <: TabBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBar] (val x: Self) extends AnyVal {
       
       inline def setTabBar(value: ActiveTextColor): Self = StObject.set(x, "TabBar", value.asInstanceOf[js.Any])
       

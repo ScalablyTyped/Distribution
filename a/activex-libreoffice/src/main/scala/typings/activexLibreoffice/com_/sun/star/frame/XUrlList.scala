@@ -21,7 +21,8 @@ object XUrlList {
     __obj.asInstanceOf[XUrlList]
   }
   
-  extension [Self <: XUrlList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUrlList] (val x: Self) extends AnyVal {
     
     inline def setList(value: SafeArray[String]): Self = StObject.set(x, "List", value.asInstanceOf[js.Any])
   }

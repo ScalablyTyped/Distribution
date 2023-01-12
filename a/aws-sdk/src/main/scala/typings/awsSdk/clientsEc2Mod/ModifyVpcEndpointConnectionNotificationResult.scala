@@ -18,7 +18,8 @@ object ModifyVpcEndpointConnectionNotificationResult {
     __obj.asInstanceOf[ModifyVpcEndpointConnectionNotificationResult]
   }
   
-  extension [Self <: ModifyVpcEndpointConnectionNotificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyVpcEndpointConnectionNotificationResult] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

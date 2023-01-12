@@ -18,7 +18,8 @@ object ShareResultsOutput {
     __obj.asInstanceOf[ShareResultsOutput]
   }
   
-  extension [Self <: ShareResultsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareResultsOutput] (val x: Self) extends AnyVal {
     
     inline def setGitRemoteUrl(value: String): Self = StObject.set(x, "gitRemoteUrl", value.asInstanceOf[js.Any])
     

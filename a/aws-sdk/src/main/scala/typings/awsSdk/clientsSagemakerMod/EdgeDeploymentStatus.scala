@@ -48,7 +48,8 @@ object EdgeDeploymentStatus {
     __obj.asInstanceOf[EdgeDeploymentStatus]
   }
   
-  extension [Self <: EdgeDeploymentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeDeploymentStatus] (val x: Self) extends AnyVal {
     
     inline def setEdgeDeploymentFailedInStage(value: Integer): Self = StObject.set(x, "EdgeDeploymentFailedInStage", value.asInstanceOf[js.Any])
     

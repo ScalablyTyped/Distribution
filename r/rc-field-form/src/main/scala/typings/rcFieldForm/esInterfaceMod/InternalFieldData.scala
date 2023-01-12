@@ -24,7 +24,8 @@ object InternalFieldData {
     __obj.asInstanceOf[InternalFieldData]
   }
   
-  extension [Self <: InternalFieldData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalFieldData] (val x: Self) extends AnyVal {
     
     inline def setValue(value: StoreValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

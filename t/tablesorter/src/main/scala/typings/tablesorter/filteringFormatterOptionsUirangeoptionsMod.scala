@@ -67,7 +67,8 @@ object filteringFormatterOptionsUirangeoptionsMod {
       __obj.asInstanceOf[UIRangeOptions]
     }
     
-    extension [Self <: UIRangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UIRangeOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

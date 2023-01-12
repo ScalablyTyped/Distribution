@@ -92,7 +92,8 @@ object IStateAdmin {
     __obj.asInstanceOf[IStateAdmin]
   }
   
-  extension [Self <: IStateAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStateAdmin] (val x: Self) extends AnyVal {
     
     inline def setActionAssignToUser(value: Boolean): Self = StObject.set(x, "ActionAssignToUser", value.asInstanceOf[js.Any])
     

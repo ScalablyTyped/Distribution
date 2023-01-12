@@ -28,7 +28,8 @@ object Mp2Settings {
     __obj.asInstanceOf[Mp2Settings]
   }
   
-  extension [Self <: Mp2Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mp2Settings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: double): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

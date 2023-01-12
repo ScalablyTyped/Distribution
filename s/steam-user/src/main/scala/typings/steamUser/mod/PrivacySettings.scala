@@ -32,7 +32,8 @@ object PrivacySettings {
     __obj.asInstanceOf[PrivacySettings]
   }
   
-  extension [Self <: PrivacySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrivacySettings] (val x: Self) extends AnyVal {
     
     inline def setPrivacy_state(value: EPrivacyState): Self = StObject.set(x, "privacy_state", value.asInstanceOf[js.Any])
     

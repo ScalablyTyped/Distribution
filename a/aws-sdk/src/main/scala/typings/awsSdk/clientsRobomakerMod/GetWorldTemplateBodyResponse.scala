@@ -18,7 +18,8 @@ object GetWorldTemplateBodyResponse {
     __obj.asInstanceOf[GetWorldTemplateBodyResponse]
   }
   
-  extension [Self <: GetWorldTemplateBodyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorldTemplateBodyResponse] (val x: Self) extends AnyVal {
     
     inline def setTemplateBody(value: Json): Self = StObject.set(x, "templateBody", value.asInstanceOf[js.Any])
     

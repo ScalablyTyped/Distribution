@@ -19,7 +19,8 @@ object IAbstractUnitJson {
     __obj.asInstanceOf[IAbstractUnitJson]
   }
   
-  extension [Self <: IAbstractUnitJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractUnitJson] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: String): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

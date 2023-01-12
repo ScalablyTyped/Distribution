@@ -23,7 +23,8 @@ object Ec2AmiResource {
     __obj.asInstanceOf[Ec2AmiResource]
   }
   
-  extension [Self <: Ec2AmiResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ec2AmiResource] (val x: Self) extends AnyVal {
     
     inline def setAmiId(value: AmiId): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     

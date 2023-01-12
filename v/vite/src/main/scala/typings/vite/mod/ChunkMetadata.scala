@@ -18,7 +18,8 @@ object ChunkMetadata {
     __obj.asInstanceOf[ChunkMetadata]
   }
   
-  extension [Self <: ChunkMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkMetadata] (val x: Self) extends AnyVal {
     
     inline def setImportedAssets(value: Set[String]): Self = StObject.set(x, "importedAssets", value.asInstanceOf[js.Any])
     

@@ -224,7 +224,8 @@ object mod {
       __obj.asInstanceOf[ColumnAttr]
     }
     
-    extension [Self <: ColumnAttr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnAttr] (val x: Self) extends AnyVal {
       
       inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
@@ -265,7 +266,8 @@ object mod {
       __obj.asInstanceOf[GridOptions]
     }
     
-    extension [Self <: GridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object QuestionReady {
     __obj.asInstanceOf[QuestionReady]
   }
   
-  extension [Self <: QuestionReady](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuestionReady] (val x: Self) extends AnyVal {
     
     inline def setCurrentQuestionAnswerCount(value: Double): Self = StObject.set(x, "currentQuestionAnswerCount", value.asInstanceOf[js.Any])
     

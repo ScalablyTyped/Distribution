@@ -18,7 +18,8 @@ object ServiceNowSourceProperties {
     __obj.asInstanceOf[ServiceNowSourceProperties]
   }
   
-  extension [Self <: ServiceNowSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceNowSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "Object", value.asInstanceOf[js.Any])
   }

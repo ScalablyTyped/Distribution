@@ -610,7 +610,8 @@ object coreInteractionMod {
       __obj.asInstanceOf[DoPhaseArg[T, P]]
     }
     
-    extension [Self <: DoPhaseArg[?, ?], T /* <: ActionName */, P /* <: EventPhase */](x: Self & (DoPhaseArg[T, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoPhaseArg[?, ?], T /* <: ActionName */, P /* <: EventPhase */] (val x: Self & (DoPhaseArg[T, P])) extends AnyVal {
       
       inline def setEvent(value: PointerEventType): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -740,7 +741,8 @@ object coreInteractionMod {
         __obj.asInstanceOf[SignalArgs]
       }
       
-      extension [Self <: SignalArgs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignalArgs] (val x: Self) extends AnyVal {
         
         inline def `setInteractionsColonaction-end`(value: DoAnyPhaseArg): Self = StObject.set(x, "interactions:action-end", value.asInstanceOf[js.Any])
         

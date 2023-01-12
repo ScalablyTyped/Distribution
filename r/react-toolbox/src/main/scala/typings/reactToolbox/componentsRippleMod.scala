@@ -61,7 +61,8 @@ object componentsRippleMod {
       __obj.asInstanceOf[RippleProps]
     }
     
-    extension [Self <: RippleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object componentsRippleMod {
       __obj.asInstanceOf[RippleTheme]
     }
     
-    extension [Self <: RippleTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RippleTheme] (val x: Self) extends AnyVal {
       
       inline def setRipple(value: String): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       

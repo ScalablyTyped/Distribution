@@ -140,7 +140,8 @@ object typographyTypographyMod extends Shortcut {
       __obj.asInstanceOf[TypographyTypeMap[P, D]]
     }
     
-    extension [Self <: TypographyTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (TypographyTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (TypographyTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TypographyClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

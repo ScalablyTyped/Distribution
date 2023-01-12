@@ -22,7 +22,8 @@ object StreetViewResponse {
     __obj.asInstanceOf[StreetViewResponse]
   }
   
-  extension [Self <: StreetViewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreetViewResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: StreetViewPanoramaData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

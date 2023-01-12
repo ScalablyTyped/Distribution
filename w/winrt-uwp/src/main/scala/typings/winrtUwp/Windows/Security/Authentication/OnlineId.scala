@@ -95,7 +95,8 @@ object OnlineId {
       __obj.asInstanceOf[OnlineIdServiceTicket]
     }
     
-    extension [Self <: OnlineIdServiceTicket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlineIdServiceTicket] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object OnlineId {
       __obj.asInstanceOf[OnlineIdServiceTicketRequest]
     }
     
-    extension [Self <: OnlineIdServiceTicketRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlineIdServiceTicketRequest] (val x: Self) extends AnyVal {
       
       inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       
@@ -171,7 +173,8 @@ object OnlineId {
       __obj.asInstanceOf[SignOutUserOperation]
     }
     
-    extension [Self <: SignOutUserOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignOutUserOperation] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -234,7 +237,8 @@ object OnlineId {
       __obj.asInstanceOf[UserAuthenticationOperation]
     }
     
-    extension [Self <: UserAuthenticationOperation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserAuthenticationOperation] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -295,7 +299,8 @@ object OnlineId {
       __obj.asInstanceOf[UserIdentity]
     }
     
-    extension [Self <: UserIdentity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserIdentity] (val x: Self) extends AnyVal {
       
       inline def setFirstName(value: String): Self = StObject.set(x, "firstName", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object IngestionInputConfiguration {
     __obj.asInstanceOf[IngestionInputConfiguration]
   }
   
-  extension [Self <: IngestionInputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestionInputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3InputConfiguration(value: IngestionS3InputConfiguration): Self = StObject.set(x, "S3InputConfiguration", value.asInstanceOf[js.Any])
   }

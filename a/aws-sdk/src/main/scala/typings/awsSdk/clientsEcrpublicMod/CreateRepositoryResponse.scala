@@ -20,7 +20,8 @@ object CreateRepositoryResponse {
     __obj.asInstanceOf[CreateRepositoryResponse]
   }
   
-  extension [Self <: CreateRepositoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositoryResponse] (val x: Self) extends AnyVal {
     
     inline def setCatalogData(value: RepositoryCatalogData): Self = StObject.set(x, "catalogData", value.asInstanceOf[js.Any])
     

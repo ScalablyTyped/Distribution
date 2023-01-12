@@ -17,7 +17,8 @@ object SelectionParams {
     __obj.asInstanceOf[SelectionParams[T]]
   }
   
-  extension [Self <: SelectionParams[?], T](x: Self & SelectionParams[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionParams[?], T] (val x: Self & SelectionParams[T]) extends AnyVal {
     
     inline def setRow(value: T): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     

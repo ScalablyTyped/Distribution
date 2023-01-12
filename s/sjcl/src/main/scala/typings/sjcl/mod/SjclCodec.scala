@@ -18,7 +18,8 @@ object SjclCodec {
     __obj.asInstanceOf[SjclCodec[T]]
   }
   
-  extension [Self <: SjclCodec[?], T](x: Self & SjclCodec[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclCodec[?], T] (val x: Self & SjclCodec[T]) extends AnyVal {
     
     inline def setFromBits(value: BitArray_ => T): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))
     

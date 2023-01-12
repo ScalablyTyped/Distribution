@@ -20,7 +20,8 @@ object SubscriberAdvertisement {
     __obj.asInstanceOf[SubscriberAdvertisement]
   }
   
-  extension [Self <: SubscriberAdvertisement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriberAdvertisement] (val x: Self) extends AnyVal {
     
     inline def setSubscribesTo(value: js.Array[String]): Self = StObject.set(x, "subscribesTo", value.asInstanceOf[js.Any])
     

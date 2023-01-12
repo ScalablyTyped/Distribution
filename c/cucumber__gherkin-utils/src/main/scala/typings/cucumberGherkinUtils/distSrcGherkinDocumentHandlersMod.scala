@@ -64,7 +64,8 @@ object distSrcGherkinDocumentHandlersMod {
       __obj.asInstanceOf[GherkinDocumentHandlers[Acc]]
     }
     
-    extension [Self <: GherkinDocumentHandlers[?], Acc](x: Self & GherkinDocumentHandlers[Acc]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GherkinDocumentHandlers[?], Acc] (val x: Self & GherkinDocumentHandlers[Acc]) extends AnyVal {
       
       inline def setBackground(value: (Background, Acc) => Acc): Self = StObject.set(x, "background", js.Any.fromFunction2(value))
       

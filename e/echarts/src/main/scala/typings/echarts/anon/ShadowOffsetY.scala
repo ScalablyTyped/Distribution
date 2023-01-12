@@ -120,7 +120,8 @@ object ShadowOffsetY {
     __obj.asInstanceOf[ShadowOffsetY]
   }
   
-  extension [Self <: ShadowOffsetY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadowOffsetY] (val x: Self) extends AnyVal {
     
     inline def setBorderColor(value: typings.echarts.echarts.EChartOption.Color): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
     

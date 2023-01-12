@@ -42,7 +42,8 @@ object QueryDriveActivityRequest {
     __obj.asInstanceOf[QueryDriveActivityRequest]
   }
   
-  extension [Self <: QueryDriveActivityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDriveActivityRequest] (val x: Self) extends AnyVal {
     
     inline def setAncestorName(value: String): Self = StObject.set(x, "ancestorName", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object ITitleBar {
     __obj.asInstanceOf[ITitleBar]
   }
   
-  extension [Self <: ITitleBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITitleBar] (val x: Self) extends AnyVal {
     
     inline def setGetCls(value: () => java.lang.String): Self = StObject.set(x, "getCls", js.Any.fromFunction0(value))
     

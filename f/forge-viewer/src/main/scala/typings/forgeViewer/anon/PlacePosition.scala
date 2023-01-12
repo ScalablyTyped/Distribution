@@ -30,7 +30,8 @@ object PlacePosition {
     __obj.asInstanceOf[PlacePosition]
   }
   
-  extension [Self <: PlacePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacePosition] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

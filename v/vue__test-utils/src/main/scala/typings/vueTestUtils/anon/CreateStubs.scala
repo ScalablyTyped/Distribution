@@ -65,7 +65,8 @@ object CreateStubs {
     __obj.asInstanceOf[CreateStubs]
   }
   
-  extension [Self <: CreateStubs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStubs] (val x: Self) extends AnyVal {
     
     inline def setCreateStubs(
       value: /* params */ Component => ConcreteComponent[js.Object, Any, Any, ComputedOptions, MethodOptions]

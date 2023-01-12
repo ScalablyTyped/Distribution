@@ -24,7 +24,8 @@ object libPickerPickerMixinMod {
       __obj.asInstanceOf[ItemProps]
     }
     
-    extension [Self <: ItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemProps] (val x: Self) extends AnyVal {
       
       inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object IpsCheckCustomDnsValidResponse {
     __obj.asInstanceOf[IpsCheckCustomDnsValidResponse]
   }
   
-  extension [Self <: IpsCheckCustomDnsValidResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsCheckCustomDnsValidResponse] (val x: Self) extends AnyVal {
     
     inline def setValid(value: `true`): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }

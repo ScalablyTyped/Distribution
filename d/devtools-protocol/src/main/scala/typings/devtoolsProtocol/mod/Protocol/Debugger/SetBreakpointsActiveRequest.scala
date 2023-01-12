@@ -18,7 +18,8 @@ object SetBreakpointsActiveRequest {
     __obj.asInstanceOf[SetBreakpointsActiveRequest]
   }
   
-  extension [Self <: SetBreakpointsActiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBreakpointsActiveRequest] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
   }

@@ -20,7 +20,8 @@ object mod {
     @js.native
     def apply(number: Double): cin = js.native
     
-    extension [Self <: cin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: cin] (val x: Self) extends AnyVal {
       
       inline def setCorporation(value: Id): Self = StObject.set(x, "corporation", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object mod {
     @js.native
     def apply(number: Double): ssn = js.native
     
-    extension [Self <: ssn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ssn] (val x: Self) extends AnyVal {
       
       inline def setIsValid(value: Boolean): Self = StObject.set(x, "isValid", value.asInstanceOf[js.Any])
       

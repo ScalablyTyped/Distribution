@@ -24,7 +24,8 @@ object distDeclarationsSrcSwitchMod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

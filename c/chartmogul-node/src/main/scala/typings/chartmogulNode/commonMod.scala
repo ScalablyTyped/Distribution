@@ -26,7 +26,8 @@ object commonMod {
       __obj.asInstanceOf[Cursor]
     }
     
-    extension [Self <: Cursor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
       
       inline def setCurrent_page(value: Double): Self = StObject.set(x, "current_page", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object commonMod {
       __obj.asInstanceOf[CursorParams]
     }
     
-    extension [Self <: CursorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CursorParams] (val x: Self) extends AnyVal {
       
       inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object commonMod {
       __obj.asInstanceOf[Entries[T]]
     }
     
-    extension [Self <: Entries[?], T](x: Self & Entries[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entries[?], T] (val x: Self & Entries[T]) extends AnyVal {
       
       inline def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -109,7 +112,8 @@ object commonMod {
       __obj.asInstanceOf[EntriesSummary[T]]
     }
     
-    extension [Self <: EntriesSummary[?], T](x: Self & EntriesSummary[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntriesSummary[?], T] (val x: Self & EntriesSummary[T]) extends AnyVal {
       
       inline def setEntries(value: js.Array[T]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -139,7 +143,8 @@ object commonMod {
       __obj.asInstanceOf[Summary]
     }
     
-    extension [Self <: Summary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Summary] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object DeleteFileSystemOpenZFSConfiguration {
     __obj.asInstanceOf[DeleteFileSystemOpenZFSConfiguration]
   }
   
-  extension [Self <: DeleteFileSystemOpenZFSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFileSystemOpenZFSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFinalBackupTags(value: Tags): Self = StObject.set(x, "FinalBackupTags", value.asInstanceOf[js.Any])
     

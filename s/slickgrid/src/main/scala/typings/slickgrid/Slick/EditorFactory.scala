@@ -16,7 +16,8 @@ object EditorFactory {
     __obj.asInstanceOf[EditorFactory]
   }
   
-  extension [Self <: EditorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorFactory] (val x: Self) extends AnyVal {
     
     inline def setGetEditor(value: Column[Any] => Editor[Any]): Self = StObject.set(x, "getEditor", js.Any.fromFunction1(value))
   }

@@ -68,7 +68,8 @@ object AutoScroll {
     __obj.asInstanceOf[AutoScroll]
   }
   
-  extension [Self <: AutoScroll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScroll] (val x: Self) extends AnyVal {
     
     inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object Scheme {
     __obj.asInstanceOf[Scheme]
   }
   
-  extension [Self <: Scheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scheme] (val x: Self) extends AnyVal {
     
     inline def setClusterMinSize(value: Double): Self = StObject.set(x, "clusterMinSize", value.asInstanceOf[js.Any])
     

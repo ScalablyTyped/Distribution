@@ -56,7 +56,8 @@ object SketchMSStyle {
     __obj.asInstanceOf[SketchMSStyle]
   }
   
-  extension [Self <: SketchMSStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSStyle] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: SketchMSStyleBlur): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

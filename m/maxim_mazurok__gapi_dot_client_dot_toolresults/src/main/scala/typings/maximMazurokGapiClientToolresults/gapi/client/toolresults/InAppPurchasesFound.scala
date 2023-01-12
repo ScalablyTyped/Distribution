@@ -19,7 +19,8 @@ object InAppPurchasesFound {
     __obj.asInstanceOf[InAppPurchasesFound]
   }
   
-  extension [Self <: InAppPurchasesFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InAppPurchasesFound] (val x: Self) extends AnyVal {
     
     inline def setInAppPurchasesFlowsExplored(value: Double): Self = StObject.set(x, "inAppPurchasesFlowsExplored", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[BaseProps]
     }
     
-    extension [Self <: BaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object mod {
       __obj.asInstanceOf[BaseState]
     }
     
-    extension [Self <: BaseState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseState] (val x: Self) extends AnyVal {
       
       inline def setOnline(value: Boolean): Self = StObject.set(x, "online", value.asInstanceOf[js.Any])
     }
@@ -129,7 +131,8 @@ object mod {
       __obj.asInstanceOf[DetectorProps]
     }
     
-    extension [Self <: DetectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DetectorProps] (val x: Self) extends AnyVal {
       
       inline def setRender(value: typings.reactDetectOffline.anon.Online => Element | Null): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
     }
@@ -162,7 +165,8 @@ object mod {
       __obj.asInstanceOf[PollingConfig]
     }
     
-    extension [Self <: PollingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollingConfig] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

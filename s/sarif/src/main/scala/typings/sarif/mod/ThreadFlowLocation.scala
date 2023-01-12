@@ -91,7 +91,8 @@ object ThreadFlowLocation {
     __obj.asInstanceOf[ThreadFlowLocation]
   }
   
-  extension [Self <: ThreadFlowLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadFlowLocation] (val x: Self) extends AnyVal {
     
     inline def setExecutionOrder(value: Double): Self = StObject.set(x, "executionOrder", value.asInstanceOf[js.Any])
     

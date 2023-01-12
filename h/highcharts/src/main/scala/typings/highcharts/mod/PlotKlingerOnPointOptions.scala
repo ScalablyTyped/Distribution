@@ -33,7 +33,8 @@ object PlotKlingerOnPointOptions {
     __obj.asInstanceOf[PlotKlingerOnPointOptions]
   }
   
-  extension [Self <: PlotKlingerOnPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKlingerOnPointOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectorOptions(value: PlotKlingerOnPointConnectorOptions | SVGAttributes): Self = StObject.set(x, "connectorOptions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ParametersPath577QueryPackagetypeVisibility {
     __obj.asInstanceOf[ParametersPath577QueryPackagetypeVisibility]
   }
   
-  extension [Self <: ParametersPath577QueryPackagetypeVisibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPath577QueryPackagetypeVisibility] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Path577QueryPackagetypeVisibility): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

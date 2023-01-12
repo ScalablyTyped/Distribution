@@ -201,7 +201,8 @@ object ProgressSettings {
       __obj.asInstanceOf[Impl]
     }
     
-    extension [Self <: Impl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
       
       inline def setAutoSuccess(value: Boolean): Self = StObject.set(x, "autoSuccess", value.asInstanceOf[js.Any])
       

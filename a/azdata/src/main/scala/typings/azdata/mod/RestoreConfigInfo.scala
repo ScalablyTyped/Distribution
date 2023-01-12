@@ -16,7 +16,8 @@ object RestoreConfigInfo {
     __obj.asInstanceOf[RestoreConfigInfo]
   }
   
-  extension [Self <: RestoreConfigInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreConfigInfo] (val x: Self) extends AnyVal {
     
     inline def setConfigInfo(value: StringDictionary[Any]): Self = StObject.set(x, "configInfo", value.asInstanceOf[js.Any])
   }

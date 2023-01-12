@@ -28,7 +28,8 @@ object NotifyWorkersRequest {
     __obj.asInstanceOf[NotifyWorkersRequest]
   }
   
-  extension [Self <: NotifyWorkersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyWorkersRequest] (val x: Self) extends AnyVal {
     
     inline def setMessageText(value: String): Self = StObject.set(x, "MessageText", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object libSchemaDotinterfaceMod {
       __obj.asInstanceOf[NestedFieldsInterface]
     }
     
-    extension [Self <: NestedFieldsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedFieldsInterface] (val x: Self) extends AnyVal {
       
       inline def setFields(value: SchemaInterface): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libSchemaDotinterfaceMod {
       __obj.asInstanceOf[SingleFieldInterface]
     }
     
-    extension [Self <: SingleFieldInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleFieldInterface] (val x: Self) extends AnyVal {
       
       inline def setBitWidth(value: Double): Self = StObject.set(x, "bitWidth", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object esContextMod extends Shortcut {
       __obj.asInstanceOf[DrawerContextProps]
     }
     
-    extension [Self <: DrawerContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawerContextProps] (val x: Self) extends AnyVal {
       
       inline def setPull(value: () => Unit): Self = StObject.set(x, "pull", js.Any.fromFunction0(value))
       

@@ -51,7 +51,8 @@ object SketchDocumentData {
     __obj.asInstanceOf[SketchDocumentData]
   }
   
-  extension [Self <: SketchDocumentData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchDocumentData] (val x: Self) extends AnyVal {
     
     inline def setAddBlankPage(value: () => SketchPage): Self = StObject.set(x, "addBlankPage", js.Any.fromFunction0(value))
     

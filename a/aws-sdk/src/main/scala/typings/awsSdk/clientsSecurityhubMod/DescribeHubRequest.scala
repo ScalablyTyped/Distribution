@@ -18,7 +18,8 @@ object DescribeHubRequest {
     __obj.asInstanceOf[DescribeHubRequest]
   }
   
-  extension [Self <: DescribeHubRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeHubRequest] (val x: Self) extends AnyVal {
     
     inline def setHubArn(value: NonEmptyString): Self = StObject.set(x, "HubArn", value.asInstanceOf[js.Any])
     

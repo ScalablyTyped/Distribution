@@ -27,7 +27,8 @@ object PortalItemResourceProperties {
     __obj.asInstanceOf[PortalItemResourceProperties]
   }
   
-  extension [Self <: PortalItemResourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalItemResourceProperties] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

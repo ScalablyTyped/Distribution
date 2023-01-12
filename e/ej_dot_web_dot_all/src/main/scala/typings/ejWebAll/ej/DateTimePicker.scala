@@ -78,7 +78,8 @@ object DateTimePicker {
       __obj.asInstanceOf[BeforeCloseEventArgs]
     }
     
-    extension [Self <: BeforeCloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeCloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object DateTimePicker {
       __obj.asInstanceOf[BeforeOpenEventArgs]
     }
     
-    extension [Self <: BeforeOpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeOpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object DateTimePicker {
       __obj.asInstanceOf[ButtonText]
     }
     
-    extension [Self <: ButtonText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonText] (val x: Self) extends AnyVal {
       
       inline def setDone(value: String): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -233,7 +236,8 @@ object DateTimePicker {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setIsInteraction(value: Boolean): Self = StObject.set(x, "isInteraction", value.asInstanceOf[js.Any])
       
@@ -286,7 +290,8 @@ object DateTimePicker {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -323,7 +328,8 @@ object DateTimePicker {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -356,7 +362,8 @@ object DateTimePicker {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -393,7 +400,8 @@ object DateTimePicker {
       __obj.asInstanceOf[FocusInEventArgs]
     }
     
-    extension [Self <: FocusInEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusInEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -430,7 +438,8 @@ object DateTimePicker {
       __obj.asInstanceOf[FocusOutEventArgs]
     }
     
-    extension [Self <: FocusOutEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusOutEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -675,7 +684,8 @@ object DateTimePicker {
       __obj.asInstanceOf[typings.ejWebAll.ej.DateTimePicker.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.DateTimePicker.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.DateTimePicker.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowEdit(value: Boolean): Self = StObject.set(x, "allowEdit", value.asInstanceOf[js.Any])
       
@@ -888,7 +898,8 @@ object DateTimePicker {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: typings.ejWebAll.ej.Model): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -933,7 +944,8 @@ object DateTimePicker {
       __obj.asInstanceOf[TimeDrillDown]
     }
     
-    extension [Self <: TimeDrillDown](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeDrillDown] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

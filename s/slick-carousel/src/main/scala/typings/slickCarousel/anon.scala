@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[CurX]
     }
     
-    extension [Self <: CurX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurX] (val x: Self) extends AnyVal {
       
       inline def setCurX(value: Double): Self = StObject.set(x, "curX", value.asInstanceOf[js.Any])
       

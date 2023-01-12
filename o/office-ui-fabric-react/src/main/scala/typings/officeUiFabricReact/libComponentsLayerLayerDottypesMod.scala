@@ -81,7 +81,8 @@ object libComponentsLayerLayerDottypesMod {
       __obj.asInstanceOf[ILayerProps]
     }
     
-    extension [Self <: ILayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[ILayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -149,7 +150,8 @@ object libComponentsLayerLayerDottypesMod {
       __obj.asInstanceOf[ILayerStyleProps]
     }
     
-    extension [Self <: ILayerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -182,7 +184,8 @@ object libComponentsLayerLayerDottypesMod {
       __obj.asInstanceOf[ILayerStyles]
     }
     
-    extension [Self <: ILayerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerStyles] (val x: Self) extends AnyVal {
       
       inline def setContent(value: IStyle): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[PeerInfo]
     }
     
-    extension [Self <: PeerInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: PeerId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Default[T]]
     }
     
-    extension [Self <: Default[?], T /* <: ComponentType[Any] */](x: Self & Default[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default[?], T /* <: ComponentType[Any] */] (val x: Self & Default[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }

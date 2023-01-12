@@ -18,7 +18,8 @@ object CreateStreamingDistributionWithTagsRequest {
     __obj.asInstanceOf[CreateStreamingDistributionWithTagsRequest]
   }
   
-  extension [Self <: CreateStreamingDistributionWithTagsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingDistributionWithTagsRequest] (val x: Self) extends AnyVal {
     
     inline def setStreamingDistributionConfigWithTags(value: StreamingDistributionConfigWithTags): Self = StObject.set(x, "StreamingDistributionConfigWithTags", value.asInstanceOf[js.Any])
   }

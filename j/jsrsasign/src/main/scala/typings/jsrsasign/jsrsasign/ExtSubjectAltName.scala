@@ -22,7 +22,8 @@ object ExtSubjectAltName {
     __obj.asInstanceOf[ExtSubjectAltName]
   }
   
-  extension [Self <: ExtSubjectAltName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtSubjectAltName] (val x: Self) extends AnyVal {
     
     inline def setArray(value: js.Array[GeneralName]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
     

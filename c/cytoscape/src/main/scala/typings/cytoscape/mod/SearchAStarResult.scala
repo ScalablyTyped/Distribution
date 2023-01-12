@@ -22,7 +22,8 @@ object SearchAStarResult {
     __obj.asInstanceOf[SearchAStarResult]
   }
   
-  extension [Self <: SearchAStarResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAStarResult] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

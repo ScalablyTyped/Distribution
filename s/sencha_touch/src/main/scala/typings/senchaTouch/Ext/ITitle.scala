@@ -28,7 +28,8 @@ object ITitle {
     __obj.asInstanceOf[ITitle]
   }
   
-  extension [Self <: ITitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITitle] (val x: Self) extends AnyVal {
     
     inline def setGetTitle(value: () => java.lang.String): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
     

@@ -31,7 +31,8 @@ object GoogleAnalyticsAdminV1alphaAccount {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAccount]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAccount] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ConnectFromField {
     __obj.asInstanceOf[ConnectFromField]
   }
   
-  extension [Self <: ConnectFromField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectFromField] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object DelegatedProjectNumber {
     __obj.asInstanceOf[DelegatedProjectNumber]
   }
   
-  extension [Self <: DelegatedProjectNumber](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegatedProjectNumber] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

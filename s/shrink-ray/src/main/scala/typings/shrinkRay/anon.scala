@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Lgblock]
     }
     
-    extension [Self <: Lgblock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lgblock] (val x: Self) extends AnyVal {
       
       inline def setLgblock(value: Double): Self = StObject.set(x, "lgblock", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Partialflushnumberundefin]
     }
     
-    extension [Self <: Partialflushnumberundefin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialflushnumberundefin] (val x: Self) extends AnyVal {
       
       inline def setChunkSize(value: Double): Self = StObject.set(x, "chunkSize", value.asInstanceOf[js.Any])
       

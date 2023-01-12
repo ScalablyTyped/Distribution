@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Any]
     }
     
-    extension [Self <: Any](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Any] (val x: Self) extends AnyVal {
       
       inline def setAny(value: js.Array[String]): Self = StObject.set(x, "any", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Attribute]
     }
     
-    extension [Self <: Attribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attribute] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[AttributeString]
     }
     
-    extension [Self <: AttributeString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeString] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     }
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[DnAttributes]
     }
     
-    extension [Self <: DnAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DnAttributes] (val x: Self) extends AnyVal {
       
       inline def setDnAttributes(value: Boolean): Self = StObject.set(x, "dnAttributes", value.asInstanceOf[js.Any])
       
@@ -133,7 +137,8 @@ object anon {
       __obj.asInstanceOf[FailAfter]
     }
     
-    extension [Self <: FailAfter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailAfter] (val x: Self) extends AnyVal {
       
       inline def setFailAfter(value: Double): Self = StObject.set(x, "failAfter", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: typings.ldapjs.mod.Filter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     }
@@ -177,7 +183,8 @@ object anon {
       __obj.asInstanceOf[Filters]
     }
     
-    extension [Self <: Filters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filters] (val x: Self) extends AnyVal {
       
       inline def setFilters(value: js.Array[typings.ldapjs.mod.Filter]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
       
@@ -212,7 +219,8 @@ object anon {
       __obj.asInstanceOf[LDAPMessageJsonObjectobje]
     }
     
-    extension [Self <: LDAPMessageJsonObjectobje](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDAPMessageJsonObjectobje] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[AttributeJson]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -245,7 +253,8 @@ object anon {
       __obj.asInstanceOf[PagePause]
     }
     
-    extension [Self <: PagePause](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagePause] (val x: Self) extends AnyVal {
       
       inline def setPagePause(value: Boolean): Self = StObject.set(x, "pagePause", value.asInstanceOf[js.Any])
       
@@ -270,7 +279,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -295,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       

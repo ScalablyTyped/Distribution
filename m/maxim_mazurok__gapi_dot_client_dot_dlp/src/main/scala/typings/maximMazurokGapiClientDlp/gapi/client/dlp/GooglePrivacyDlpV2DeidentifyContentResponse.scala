@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2DeidentifyContentResponse {
     __obj.asInstanceOf[GooglePrivacyDlpV2DeidentifyContentResponse]
   }
   
-  extension [Self <: GooglePrivacyDlpV2DeidentifyContentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2DeidentifyContentResponse] (val x: Self) extends AnyVal {
     
     inline def setItem(value: GooglePrivacyDlpV2ContentItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

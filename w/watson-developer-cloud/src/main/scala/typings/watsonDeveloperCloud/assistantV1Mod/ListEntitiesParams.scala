@@ -40,7 +40,8 @@ object ListEntitiesParams {
     __obj.asInstanceOf[ListEntitiesParams]
   }
   
-  extension [Self <: ListEntitiesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEntitiesParams] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

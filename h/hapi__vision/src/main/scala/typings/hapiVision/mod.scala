@@ -50,7 +50,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EnginesConfiguration]
     }
     
-    extension [Self <: EnginesConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnginesConfiguration] (val x: Self) extends AnyVal {
       
       inline def setDefaultExtension(value: String): Self = StObject.set(x, "defaultExtension", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NpmModule]
     }
     
-    extension [Self <: NpmModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NpmModule] (val x: Self) extends AnyVal {
       
       inline def setCompile(value: ServerViewCompile): Self = StObject.set(x, "compile", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerViewsConfiguration]
     }
     
-    extension [Self <: ServerViewsConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerViewsConfiguration] (val x: Self) extends AnyVal {
       
       inline def setHelpersPath(value: String | js.Array[String]): Self = StObject.set(x, "helpersPath", value.asInstanceOf[js.Any])
       
@@ -250,7 +253,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ServerViewsEnginesOptions]
     }
     
-    extension [Self <: ServerViewsEnginesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerViewsEnginesOptions] (val x: Self) extends AnyVal {
       
       inline def setModule(value: NpmModule): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     }
@@ -324,7 +328,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ViewHandlerOrReplyOptions]
     }
     
-    extension [Self <: ViewHandlerOrReplyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewHandlerOrReplyOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowAbsolutePaths(value: Boolean): Self = StObject.set(x, "allowAbsolutePaths", value.asInstanceOf[js.Any])
       
@@ -427,7 +432,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ViewManager]
     }
     
-    extension [Self <: ViewManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewManager] (val x: Self) extends AnyVal {
       
       inline def setRegisterHelper(value: (String, js.Function1[/* repeated */ Any, Any]) => Unit): Self = StObject.set(x, "registerHelper", js.Any.fromFunction2(value))
       
@@ -465,7 +471,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[HandlerDecorations]
       }
       
-      extension [Self <: HandlerDecorations](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HandlerDecorations] (val x: Self) extends AnyVal {
         
         inline def setView(value: String | Context): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
         
@@ -517,7 +524,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[typings.hapiVision.mod.hapiHapiAugmentingMod.Request]
       }
       
-      extension [Self <: typings.hapiVision.mod.hapiHapiAugmentingMod.Request](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.hapiVision.mod.hapiHapiAugmentingMod.Request] (val x: Self) extends AnyVal {
         
         inline def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
         
@@ -594,7 +602,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Server]
       }
       
-      extension [Self <: Server](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
         
         inline def setGetViewsManager(value: () => ViewManager): Self = StObject.set(x, "getViewsManager", js.Any.fromFunction0(value))
         

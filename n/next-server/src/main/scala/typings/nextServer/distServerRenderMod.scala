@@ -45,7 +45,8 @@ object distServerRenderMod {
       __obj.asInstanceOf[ManifestItem]
     }
     
-    extension [Self <: ManifestItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManifestItem] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object distServerRenderMod {
       __obj.asInstanceOf[RenderOpts]
     }
     
-    extension [Self <: RenderOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOpts] (val x: Self) extends AnyVal {
       
       inline def setAmpBindInitData(value: Boolean): Self = StObject.set(x, "ampBindInitData", value.asInstanceOf[js.Any])
       

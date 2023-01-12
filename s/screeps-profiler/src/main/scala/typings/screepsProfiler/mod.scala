@@ -27,7 +27,8 @@ object mod extends Shortcut {
       @js.native
       val ^ : Game = js.native
       
-      extension [Self <: Game](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Game] (val x: Self) extends AnyVal {
         
         inline def setProfiler(value: ScreepsGameProfiler): Self = StObject.set(x, "profiler", value.asInstanceOf[js.Any])
       }

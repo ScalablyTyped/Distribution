@@ -38,7 +38,8 @@ object DescribeOptedOutNumbersRequest {
     __obj.asInstanceOf[DescribeOptedOutNumbersRequest]
   }
   
-  extension [Self <: DescribeOptedOutNumbersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeOptedOutNumbersRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: OptedOutFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

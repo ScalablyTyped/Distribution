@@ -23,7 +23,8 @@ object DescribeDefaultParametersRequest {
     __obj.asInstanceOf[DescribeDefaultParametersRequest]
   }
   
-  extension [Self <: DescribeDefaultParametersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDefaultParametersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: IntegerOptional): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

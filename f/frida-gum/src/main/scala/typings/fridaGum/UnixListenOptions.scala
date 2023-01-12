@@ -32,7 +32,8 @@ object UnixListenOptions {
     __obj.asInstanceOf[UnixListenOptions]
   }
   
-  extension [Self <: UnixListenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnixListenOptions] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: unix): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

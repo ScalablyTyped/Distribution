@@ -49,7 +49,8 @@ object GoogleCloudAssetV1p7beta1Resource {
     __obj.asInstanceOf[GoogleCloudAssetV1p7beta1Resource]
   }
   
-  extension [Self <: GoogleCloudAssetV1p7beta1Resource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1p7beta1Resource] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

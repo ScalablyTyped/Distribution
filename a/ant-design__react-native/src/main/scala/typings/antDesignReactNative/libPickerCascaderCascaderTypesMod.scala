@@ -25,7 +25,8 @@ object libPickerCascaderCascaderTypesMod {
       __obj.asInstanceOf[CascaderDataItem]
     }
     
-    extension [Self <: CascaderDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderDataItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[CascaderDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libPickerCascaderCascaderTypesMod {
       __obj.asInstanceOf[CascaderProps]
     }
     
-    extension [Self <: CascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascaderProps] (val x: Self) extends AnyVal {
       
       inline def setCols(value: Double): Self = StObject.set(x, "cols", value.asInstanceOf[js.Any])
       

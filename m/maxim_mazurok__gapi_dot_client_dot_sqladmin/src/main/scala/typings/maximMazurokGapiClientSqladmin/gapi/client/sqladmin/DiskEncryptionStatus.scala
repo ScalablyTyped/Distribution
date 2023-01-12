@@ -19,7 +19,8 @@ object DiskEncryptionStatus {
     __obj.asInstanceOf[DiskEncryptionStatus]
   }
   
-  extension [Self <: DiskEncryptionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskEncryptionStatus] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

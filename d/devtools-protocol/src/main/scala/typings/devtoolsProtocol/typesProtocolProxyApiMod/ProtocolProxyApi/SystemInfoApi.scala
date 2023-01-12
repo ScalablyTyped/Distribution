@@ -28,7 +28,8 @@ object SystemInfoApi {
     __obj.asInstanceOf[SystemInfoApi]
   }
   
-  extension [Self <: SystemInfoApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoApi] (val x: Self) extends AnyVal {
     
     inline def setGetInfo(value: () => js.Promise[GetInfoResponse]): Self = StObject.set(x, "getInfo", js.Any.fromFunction0(value))
     

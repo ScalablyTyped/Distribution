@@ -19,7 +19,8 @@ object GuidOptions {
     __obj.asInstanceOf[GuidOptions]
   }
   
-  extension [Self <: GuidOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuidOptions] (val x: Self) extends AnyVal {
     
     inline def setSeparator(value: Boolean | `-_` | Colon): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
     

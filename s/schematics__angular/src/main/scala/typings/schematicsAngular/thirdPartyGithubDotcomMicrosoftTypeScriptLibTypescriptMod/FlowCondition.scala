@@ -20,7 +20,8 @@ object FlowCondition {
     __obj.asInstanceOf[FlowCondition]
   }
   
-  extension [Self <: FlowCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowCondition] (val x: Self) extends AnyVal {
     
     inline def setAntecedent(value: FlowNode): Self = StObject.set(x, "antecedent", value.asInstanceOf[js.Any])
     

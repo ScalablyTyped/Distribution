@@ -25,7 +25,8 @@ object IamPolicyAnalysis {
     __obj.asInstanceOf[IamPolicyAnalysis]
   }
   
-  extension [Self <: IamPolicyAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicyAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAnalysisQuery(value: IamPolicyAnalysisQuery): Self = StObject.set(x, "analysisQuery", value.asInstanceOf[js.Any])
     

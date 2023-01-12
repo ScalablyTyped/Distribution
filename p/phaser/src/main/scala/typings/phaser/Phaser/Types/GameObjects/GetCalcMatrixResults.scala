@@ -29,7 +29,8 @@ object GetCalcMatrixResults {
     __obj.asInstanceOf[GetCalcMatrixResults]
   }
   
-  extension [Self <: GetCalcMatrixResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCalcMatrixResults] (val x: Self) extends AnyVal {
     
     inline def setCalc(value: TransformMatrix): Self = StObject.set(x, "calc", value.asInstanceOf[js.Any])
     

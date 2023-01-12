@@ -577,7 +577,8 @@ object distParserMod {
       __obj.asInstanceOf[ParserOptions[T]]
     }
     
-    extension [Self <: ParserOptions[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */](x: Self & ParserOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParserOptions[?], T /* <: TreeAdapterTypeMap[Any, Any, Any, Any, Any, Any, Any, Any, Any, Any] */] (val x: Self & ParserOptions[T]) extends AnyVal {
       
       inline def setOnParseError(value: /* error */ ParserError => Unit): Self = StObject.set(x, "onParseError", js.Any.fromFunction1(value))
       

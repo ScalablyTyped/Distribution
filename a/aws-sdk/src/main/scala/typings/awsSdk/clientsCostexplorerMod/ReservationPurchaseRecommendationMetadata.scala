@@ -23,7 +23,8 @@ object ReservationPurchaseRecommendationMetadata {
     __obj.asInstanceOf[ReservationPurchaseRecommendationMetadata]
   }
   
-  extension [Self <: ReservationPurchaseRecommendationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationPurchaseRecommendationMetadata] (val x: Self) extends AnyVal {
     
     inline def setGenerationTimestamp(value: GenericString): Self = StObject.set(x, "GenerationTimestamp", value.asInstanceOf[js.Any])
     

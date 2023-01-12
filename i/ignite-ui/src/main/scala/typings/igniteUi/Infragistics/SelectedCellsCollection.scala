@@ -83,7 +83,8 @@ object SelectedCellsCollection {
     __obj.asInstanceOf[SelectedCellsCollection]
   }
   
-  extension [Self <: SelectedCellsCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedCellsCollection] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction3(value))
     

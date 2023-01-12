@@ -22,7 +22,8 @@ object RoomExtension {
     __obj.asInstanceOf[RoomExtension]
   }
   
-  extension [Self <: RoomExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomExtension] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

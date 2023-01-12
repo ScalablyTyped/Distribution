@@ -65,7 +65,8 @@ object Macro {
     __obj.asInstanceOf[Macro]
   }
   
-  extension [Self <: Macro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Macro] (val x: Self) extends AnyVal {
     
     inline def setHint(value: String): Self = StObject.set(x, "Hint", value.asInstanceOf[js.Any])
     

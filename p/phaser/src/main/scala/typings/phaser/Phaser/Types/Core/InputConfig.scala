@@ -48,7 +48,8 @@ object InputConfig {
     __obj.asInstanceOf[InputConfig]
   }
   
-  extension [Self <: InputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfig] (val x: Self) extends AnyVal {
     
     inline def setActivePointers(value: Double): Self = StObject.set(x, "activePointers", value.asInstanceOf[js.Any])
     

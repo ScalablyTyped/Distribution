@@ -71,7 +71,8 @@ object dxFileManagerDetailsColumn {
     __obj.asInstanceOf[dxFileManagerDetailsColumn]
   }
   
-  extension [Self <: dxFileManagerDetailsColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFileManagerDetailsColumn] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

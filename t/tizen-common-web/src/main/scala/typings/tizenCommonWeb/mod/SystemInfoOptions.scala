@@ -34,7 +34,8 @@ object SystemInfoOptions {
     __obj.asInstanceOf[SystemInfoOptions]
   }
   
-  extension [Self <: SystemInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setHighThreshold(value: Double): Self = StObject.set(x, "highThreshold", value.asInstanceOf[js.Any])
     

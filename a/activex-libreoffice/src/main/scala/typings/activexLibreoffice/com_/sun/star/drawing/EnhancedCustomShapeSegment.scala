@@ -17,7 +17,8 @@ object EnhancedCustomShapeSegment {
     __obj.asInstanceOf[EnhancedCustomShapeSegment]
   }
   
-  extension [Self <: EnhancedCustomShapeSegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapeSegment] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Double): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object libTypescriptSrcUseNavigationCacheMod {
       __obj.asInstanceOf[Options[State, EventMap]]
     }
     
-    extension [Self <: Options[?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */](x: Self & (Options[State, EventMap])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], State /* <: NavigationState[ParamListBase] */, EventMap /* <: Record[String, Any] */] (val x: Self & (Options[State, EventMap])) extends AnyVal {
       
       inline def setEmitter(value: NavigationEventEmitter[EventMap]): Self = StObject.set(x, "emitter", value.asInstanceOf[js.Any])
       

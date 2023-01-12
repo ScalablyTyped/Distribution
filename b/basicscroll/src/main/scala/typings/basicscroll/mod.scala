@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[BasicScroll]
     }
     
-    extension [Self <: BasicScroll](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicScroll] (val x: Self) extends AnyVal {
       
       inline def setCalculate(value: () => Unit): Self = StObject.set(x, "calculate", js.Any.fromFunction0(value))
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setDirect(value: Boolean | Element): Self = StObject.set(x, "direct", value.asInstanceOf[js.Any])
       

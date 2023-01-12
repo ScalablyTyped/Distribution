@@ -15,7 +15,8 @@ object OnPictureInPictureStatusData {
     __obj.asInstanceOf[OnPictureInPictureStatusData]
   }
   
-  extension [Self <: OnPictureInPictureStatusData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPictureInPictureStatusData] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object DescribeEngineVersionsRequest {
     __obj.asInstanceOf[DescribeEngineVersionsRequest]
   }
   
-  extension [Self <: DescribeEngineVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEngineVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDefaultOnly(value: Boolean): Self = StObject.set(x, "DefaultOnly", value.asInstanceOf[js.Any])
     

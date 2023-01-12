@@ -58,7 +58,8 @@ object Vc3Settings {
     __obj.asInstanceOf[Vc3Settings]
   }
   
-  extension [Self <: Vc3Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vc3Settings] (val x: Self) extends AnyVal {
     
     inline def setFramerateControl(value: Vc3FramerateControl): Self = StObject.set(x, "FramerateControl", value.asInstanceOf[js.Any])
     

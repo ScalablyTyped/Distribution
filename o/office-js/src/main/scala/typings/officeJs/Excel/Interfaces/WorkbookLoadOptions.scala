@@ -141,7 +141,8 @@ object WorkbookLoadOptions {
     __obj.asInstanceOf[WorkbookLoadOptions]
   }
   
-  extension [Self <: WorkbookLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

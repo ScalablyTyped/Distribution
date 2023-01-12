@@ -18,7 +18,8 @@ object ListTagsForDomainResponse {
     __obj.asInstanceOf[ListTagsForDomainResponse]
   }
   
-  extension [Self <: ListTagsForDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setTagList(value: TagList): Self = StObject.set(x, "TagList", value.asInstanceOf[js.Any])
     

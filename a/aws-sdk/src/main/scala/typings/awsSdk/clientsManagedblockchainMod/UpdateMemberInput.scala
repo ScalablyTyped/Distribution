@@ -28,7 +28,8 @@ object UpdateMemberInput {
     __obj.asInstanceOf[UpdateMemberInput]
   }
   
-  extension [Self <: UpdateMemberInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateMemberInput] (val x: Self) extends AnyVal {
     
     inline def setLogPublishingConfiguration(value: MemberLogPublishingConfiguration): Self = StObject.set(x, "LogPublishingConfiguration", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AuctionSignals]
     }
     
-    extension [Self <: AuctionSignals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuctionSignals] (val x: Self) extends AnyVal {
       
       inline def setAuctionSignals(value: Any): Self = StObject.set(x, "auctionSignals", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object anon {
       __obj.asInstanceOf[ChangeCorrelator]
     }
     
-    extension [Self <: ChangeCorrelator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeCorrelator] (val x: Self) extends AnyVal {
       
       inline def setChangeCorrelator(value: Boolean): Self = StObject.set(x, "changeCorrelator", value.asInstanceOf[js.Any])
     }
@@ -122,7 +124,8 @@ object anon {
       __obj.asInstanceOf[FetchMarginPercent]
     }
     
-    extension [Self <: FetchMarginPercent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchMarginPercent] (val x: Self) extends AnyVal {
       
       inline def setFetchMarginPercent(value: Double): Self = StObject.set(x, "fetchMarginPercent", value.asInstanceOf[js.Any])
       

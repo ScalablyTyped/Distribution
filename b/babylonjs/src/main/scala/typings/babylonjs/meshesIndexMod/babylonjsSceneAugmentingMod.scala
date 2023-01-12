@@ -28,7 +28,8 @@ object babylonjsSceneAugmentingMod {
       __obj.asInstanceOf[Scene]
     }
     
-    extension [Self <: Scene](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scene] (val x: Self) extends AnyVal {
       
       inline def setSimplificationQueue(value: typings.babylonjs.meshesMeshSimplificationMod.SimplificationQueue): Self = StObject.set(x, "simplificationQueue", value.asInstanceOf[js.Any])
       

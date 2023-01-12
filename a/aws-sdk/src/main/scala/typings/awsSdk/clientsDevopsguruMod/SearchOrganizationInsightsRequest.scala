@@ -40,7 +40,8 @@ object SearchOrganizationInsightsRequest {
     __obj.asInstanceOf[SearchOrganizationInsightsRequest]
   }
   
-  extension [Self <: SearchOrganizationInsightsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOrganizationInsightsRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountIds(value: SearchInsightsAccountIdList): Self = StObject.set(x, "AccountIds", value.asInstanceOf[js.Any])
     

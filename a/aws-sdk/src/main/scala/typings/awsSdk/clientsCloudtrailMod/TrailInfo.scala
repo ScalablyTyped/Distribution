@@ -28,7 +28,8 @@ object TrailInfo {
     __obj.asInstanceOf[TrailInfo]
   }
   
-  extension [Self <: TrailInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrailInfo] (val x: Self) extends AnyVal {
     
     inline def setHomeRegion(value: String): Self = StObject.set(x, "HomeRegion", value.asInstanceOf[js.Any])
     

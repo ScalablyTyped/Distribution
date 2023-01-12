@@ -42,7 +42,8 @@ object FileOperationPattern {
     __obj.asInstanceOf[FileOperationPattern]
   }
   
-  extension [Self <: FileOperationPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOperationPattern] (val x: Self) extends AnyVal {
     
     inline def setGlob(value: String): Self = StObject.set(x, "glob", value.asInstanceOf[js.Any])
     

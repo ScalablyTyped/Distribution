@@ -54,7 +54,8 @@ object libCommonDeclarationMod {
       __obj.asInstanceOf[DeclarationMiddleware]
     }
     
-    extension [Self <: DeclarationMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDeclaration(
         value: js.ThisFunction4[

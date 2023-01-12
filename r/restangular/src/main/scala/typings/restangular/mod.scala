@@ -468,7 +468,8 @@ object mod {
       __obj.asInstanceOf[IResponse]
     }
     
-    extension [Self <: IResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResponse] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Method): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

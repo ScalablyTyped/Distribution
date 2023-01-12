@@ -91,7 +91,8 @@ object SequenceQuality {
     __obj.asInstanceOf[SequenceQuality]
   }
   
-  extension [Self <: SequenceQuality](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceQuality] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

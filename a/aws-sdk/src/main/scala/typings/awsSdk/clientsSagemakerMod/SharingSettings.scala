@@ -28,7 +28,8 @@ object SharingSettings {
     __obj.asInstanceOf[SharingSettings]
   }
   
-  extension [Self <: SharingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharingSettings] (val x: Self) extends AnyVal {
     
     inline def setNotebookOutputOption(value: NotebookOutputOption): Self = StObject.set(x, "NotebookOutputOption", value.asInstanceOf[js.Any])
     

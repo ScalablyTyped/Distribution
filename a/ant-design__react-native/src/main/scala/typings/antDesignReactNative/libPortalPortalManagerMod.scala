@@ -38,7 +38,8 @@ object libPortalPortalManagerMod {
       __obj.asInstanceOf[PortalManagerState]
     }
     
-    extension [Self <: PortalManagerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalManagerState] (val x: Self) extends AnyVal {
       
       inline def setPortals(value: js.Array[Any]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object libPortalPortalManagerMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setPortals(value: js.Array[ChildrenReactNode]): Self = StObject.set(x, "portals", value.asInstanceOf[js.Any])
       

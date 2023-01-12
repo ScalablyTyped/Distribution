@@ -21,7 +21,8 @@ object PPScanRegions {
     __obj.asInstanceOf[PPScanRegions]
   }
   
-  extension [Self <: PPScanRegions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PPScanRegions] (val x: Self) extends AnyVal {
     
     inline def `setX-dimension`(value: Double): Self = StObject.set(x, "x-dimension", value.asInstanceOf[js.Any])
     

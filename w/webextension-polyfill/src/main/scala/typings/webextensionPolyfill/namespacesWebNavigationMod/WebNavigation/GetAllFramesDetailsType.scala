@@ -21,7 +21,8 @@ object GetAllFramesDetailsType {
     __obj.asInstanceOf[GetAllFramesDetailsType]
   }
   
-  extension [Self <: GetAllFramesDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAllFramesDetailsType] (val x: Self) extends AnyVal {
     
     inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
   }

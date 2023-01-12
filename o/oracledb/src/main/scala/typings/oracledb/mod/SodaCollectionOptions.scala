@@ -35,7 +35,8 @@ object SodaCollectionOptions {
     __obj.asInstanceOf[SodaCollectionOptions]
   }
   
-  extension [Self <: SodaCollectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaCollectionOptions] (val x: Self) extends AnyVal {
     
     inline def setMetaData(value: SodaMetadata): Self = StObject.set(x, "metaData", value.asInstanceOf[js.Any])
     

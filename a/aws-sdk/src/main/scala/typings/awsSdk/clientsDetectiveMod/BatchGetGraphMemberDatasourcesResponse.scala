@@ -23,7 +23,8 @@ object BatchGetGraphMemberDatasourcesResponse {
     __obj.asInstanceOf[BatchGetGraphMemberDatasourcesResponse]
   }
   
-  extension [Self <: BatchGetGraphMemberDatasourcesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetGraphMemberDatasourcesResponse] (val x: Self) extends AnyVal {
     
     inline def setMemberDatasources(value: MembershipDatasourcesList): Self = StObject.set(x, "MemberDatasources", value.asInstanceOf[js.Any])
     

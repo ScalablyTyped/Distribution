@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[AnonymousId]
     }
     
-    extension [Self <: AnonymousId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnonymousId] (val x: Self) extends AnyVal {
       
       inline def setAnonymousId(value: String): Self = StObject.set(x, "anonymousId", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Batch]
     }
     
-    extension [Self <: Batch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: js.Array[AnalyticsPayload]): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setContext(value: StringDictionary[Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Enable]
     }
     
-    extension [Self <: Enable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enable] (val x: Self) extends AnyVal {
       
       inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
       
@@ -168,7 +172,8 @@ object anon {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     }
@@ -187,7 +192,8 @@ object anon {
       __obj.asInstanceOf[GroupId]
     }
     
-    extension [Self <: GroupId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupId] (val x: Self) extends AnyVal {
       
       inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
       
@@ -208,7 +214,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -227,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PreviousId]
     }
     
-    extension [Self <: PreviousId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviousId] (val x: Self) extends AnyVal {
       
       inline def setPreviousId(value: String): Self = StObject.set(x, "previousId", value.asInstanceOf[js.Any])
       
@@ -248,7 +256,8 @@ object anon {
       __obj.asInstanceOf[Traits]
     }
     
-    extension [Self <: Traits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Traits] (val x: Self) extends AnyVal {
       
       inline def setTraits(value: StringDictionary[Any]): Self = StObject.set(x, "traits", value.asInstanceOf[js.Any])
       
@@ -269,7 +278,8 @@ object anon {
       __obj.asInstanceOf[UserId]
     }
     
-    extension [Self <: UserId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserId] (val x: Self) extends AnyVal {
       
       inline def setUserId(value: String): Self = StObject.set(x, "userId", value.asInstanceOf[js.Any])
     }

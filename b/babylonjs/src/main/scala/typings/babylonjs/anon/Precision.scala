@@ -25,7 +25,8 @@ object Precision {
     __obj.asInstanceOf[Precision]
   }
   
-  extension [Self <: Precision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Precision] (val x: Self) extends AnyVal {
     
     inline def setPrecision(value: H): Self = StObject.set(x, "precision", value.asInstanceOf[js.Any])
     

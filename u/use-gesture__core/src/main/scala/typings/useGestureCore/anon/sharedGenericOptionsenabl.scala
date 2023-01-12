@@ -78,7 +78,8 @@ object sharedGenericOptionsenabl {
     __obj.asInstanceOf[sharedGenericOptionsenabl]
   }
   
-  extension [Self <: sharedGenericOptionsenabl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sharedGenericOptionsenabl] (val x: Self) extends AnyVal {
     
     inline def setAngleBounds(
       value: PinchBounds | (js.Function1[/* state */ js.UndefOr[PinchStateeventPointerEve], PinchBounds])

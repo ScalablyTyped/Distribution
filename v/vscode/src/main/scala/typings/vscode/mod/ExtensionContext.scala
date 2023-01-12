@@ -165,7 +165,8 @@ object ExtensionContext {
     __obj.asInstanceOf[ExtensionContext]
   }
   
-  extension [Self <: ExtensionContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionContext] (val x: Self) extends AnyVal {
     
     inline def setAsAbsolutePath(value: String => String): Self = StObject.set(x, "asAbsolutePath", js.Any.fromFunction1(value))
     

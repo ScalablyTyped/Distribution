@@ -31,7 +31,8 @@ object libGridStyleMod {
       __obj.asInstanceOf[GridStyle]
     }
     
-    extension [Self <: GridStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStyle] (val x: Self) extends AnyVal {
       
       inline def setGrayBorderBox(value: ViewStyle): Self = StObject.set(x, "grayBorderBox", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object reactNativeAugmentingMod {
       __obj.asInstanceOf[NativeModulesStatic]
     }
     
-    extension [Self <: NativeModulesStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeModulesStatic] (val x: Self) extends AnyVal {
       
       inline def setSensorManager(value: SensorManager): Self = StObject.set(x, "SensorManager", value.asInstanceOf[js.Any])
     }

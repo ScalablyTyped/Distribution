@@ -58,7 +58,8 @@ object Printing3D3MFPackage {
     __obj.asInstanceOf[Printing3D3MFPackage]
   }
   
-  extension [Self <: Printing3D3MFPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Printing3D3MFPackage] (val x: Self) extends AnyVal {
     
     inline def setLoadModelFromPackageAsync(value: IRandomAccessStream => IPromiseWithIAsyncOperation[Printing3DModel]): Self = StObject.set(x, "loadModelFromPackageAsync", js.Any.fromFunction1(value))
     

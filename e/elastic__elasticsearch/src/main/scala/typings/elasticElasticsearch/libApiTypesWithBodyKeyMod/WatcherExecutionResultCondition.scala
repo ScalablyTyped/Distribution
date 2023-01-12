@@ -20,7 +20,8 @@ object WatcherExecutionResultCondition {
     __obj.asInstanceOf[WatcherExecutionResultCondition]
   }
   
-  extension [Self <: WatcherExecutionResultCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecutionResultCondition] (val x: Self) extends AnyVal {
     
     inline def setMet(value: Boolean): Self = StObject.set(x, "met", value.asInstanceOf[js.Any])
     

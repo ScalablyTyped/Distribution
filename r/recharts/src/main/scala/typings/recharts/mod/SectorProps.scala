@@ -211,7 +211,8 @@ object SectorProps {
     __obj.asInstanceOf[SectorProps]
   }
   
-  extension [Self <: SectorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectorProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

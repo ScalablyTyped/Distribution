@@ -48,7 +48,8 @@ object RedshiftDatasetDefinition {
     __obj.asInstanceOf[RedshiftDatasetDefinition]
   }
   
-  extension [Self <: RedshiftDatasetDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDatasetDefinition] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: RedshiftClusterId): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

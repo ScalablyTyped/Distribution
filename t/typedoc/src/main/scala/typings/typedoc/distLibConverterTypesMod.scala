@@ -43,7 +43,8 @@ object distLibConverterTypesMod {
       __obj.asInstanceOf[TypeConverter[TNode, TType]]
     }
     
-    extension [Self <: TypeConverter[?, ?], TNode /* <: TypeNode */, TType /* <: Type */](x: Self & (TypeConverter[TNode, TType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeConverter[?, ?], TNode /* <: TypeNode */, TType /* <: Type */] (val x: Self & (TypeConverter[TNode, TType])) extends AnyVal {
       
       inline def setConvert(value: (Context, TNode) => SomeType): Self = StObject.set(x, "convert", js.Any.fromFunction2(value))
       

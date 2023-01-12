@@ -15,7 +15,8 @@ object ThemeMark {
     __obj.asInstanceOf[ThemeMark]
   }
   
-  extension [Self <: ThemeMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeMark] (val x: Self) extends AnyVal {
     
     inline def setThemeMark(value: String): Self = StObject.set(x, "themeMark", value.asInstanceOf[js.Any])
   }

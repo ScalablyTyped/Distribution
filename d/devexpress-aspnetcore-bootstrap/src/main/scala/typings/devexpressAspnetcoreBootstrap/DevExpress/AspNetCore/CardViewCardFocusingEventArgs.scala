@@ -19,7 +19,8 @@ object CardViewCardFocusingEventArgs {
     __obj.asInstanceOf[CardViewCardFocusingEventArgs]
   }
   
-  extension [Self <: CardViewCardFocusingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardViewCardFocusingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlEvent(value: Any): Self = StObject.set(x, "htmlEvent", value.asInstanceOf[js.Any])
     

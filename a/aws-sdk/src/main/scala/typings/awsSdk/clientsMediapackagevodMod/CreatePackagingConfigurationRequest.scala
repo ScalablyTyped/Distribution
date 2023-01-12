@@ -33,7 +33,8 @@ object CreatePackagingConfigurationRequest {
     __obj.asInstanceOf[CreatePackagingConfigurationRequest]
   }
   
-  extension [Self <: CreatePackagingConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePackagingConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setCmafPackage(value: CmafPackage): Self = StObject.set(x, "CmafPackage", value.asInstanceOf[js.Any])
     

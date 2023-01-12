@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ReactHighchartsProps]
     }
     
-    extension [Self <: ReactHighchartsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHighchartsProps] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ Any => Unit

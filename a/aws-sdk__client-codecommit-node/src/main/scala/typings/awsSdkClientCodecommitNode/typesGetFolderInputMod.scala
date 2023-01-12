@@ -56,7 +56,8 @@ object typesGetFolderInputMod {
       __obj.asInstanceOf[GetFolderInput]
     }
     
-    extension [Self <: GetFolderInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetFolderInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

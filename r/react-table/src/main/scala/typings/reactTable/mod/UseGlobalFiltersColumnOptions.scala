@@ -16,7 +16,8 @@ object UseGlobalFiltersColumnOptions {
     __obj.asInstanceOf[UseGlobalFiltersColumnOptions[D]]
   }
   
-  extension [Self <: UseGlobalFiltersColumnOptions[?], D /* <: js.Object */](x: Self & UseGlobalFiltersColumnOptions[D]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseGlobalFiltersColumnOptions[?], D /* <: js.Object */] (val x: Self & UseGlobalFiltersColumnOptions[D]) extends AnyVal {
     
     inline def setDisableGlobalFilter(value: Boolean): Self = StObject.set(x, "disableGlobalFilter", value.asInstanceOf[js.Any])
     

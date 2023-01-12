@@ -23,7 +23,8 @@ object SyncResourceRequest {
     __obj.asInstanceOf[SyncResourceRequest]
   }
   
-  extension [Self <: SyncResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setResource(value: ResourceSpecifier): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

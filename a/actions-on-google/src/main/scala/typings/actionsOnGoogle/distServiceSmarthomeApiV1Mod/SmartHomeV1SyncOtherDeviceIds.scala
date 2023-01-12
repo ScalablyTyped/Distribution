@@ -17,7 +17,8 @@ object SmartHomeV1SyncOtherDeviceIds {
     __obj.asInstanceOf[SmartHomeV1SyncOtherDeviceIds]
   }
   
-  extension [Self <: SmartHomeV1SyncOtherDeviceIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartHomeV1SyncOtherDeviceIds] (val x: Self) extends AnyVal {
     
     inline def setAgentId(value: String): Self = StObject.set(x, "agentId", value.asInstanceOf[js.Any])
     

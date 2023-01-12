@@ -46,7 +46,8 @@ object Sticker {
     __obj.asInstanceOf[Sticker]
   }
   
-  extension [Self <: Sticker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sticker] (val x: Self) extends AnyVal {
     
     inline def setCustom_emoji_id(value: String): Self = StObject.set(x, "custom_emoji_id", value.asInstanceOf[js.Any])
     

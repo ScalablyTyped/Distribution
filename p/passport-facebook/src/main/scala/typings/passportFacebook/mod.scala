@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[AuthenticateOptions]
     }
     
-    extension [Self <: AuthenticateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticateOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthType(value: String): Self = StObject.set(x, "authType", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setAgeRange(value: Max): Self = StObject.set(x, "ageRange", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[StrategyOption]
     }
     
-    extension [Self <: StrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOption] (val x: Self) extends AnyVal {
       
       inline def setAuthNonce(value: String): Self = StObject.set(x, "authNonce", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionWithRequest]
     }
     
-    extension [Self <: StrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

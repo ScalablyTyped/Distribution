@@ -21,7 +21,8 @@ object CFDeviceType {
     __obj.asInstanceOf[CFDeviceType]
   }
   
-  extension [Self <: CFDeviceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CFDeviceType] (val x: Self) extends AnyVal {
     
     inline def `setCF-Device-Type`(value: String): Self = StObject.set(x, "CF-Device-Type", value.asInstanceOf[js.Any])
     

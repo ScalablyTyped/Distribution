@@ -32,7 +32,8 @@ object InstalledExtensionState {
     __obj.asInstanceOf[InstalledExtensionState]
   }
   
-  extension [Self <: InstalledExtensionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstalledExtensionState] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: ExtensionStateFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

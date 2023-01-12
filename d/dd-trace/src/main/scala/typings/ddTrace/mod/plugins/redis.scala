@@ -58,7 +58,8 @@ object redis {
     __obj.asInstanceOf[redis]
   }
   
-  extension [Self <: redis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: redis] (val x: Self) extends AnyVal {
     
     inline def setAllowlist(
       value: String | js.RegExp | (js.Function1[/* command */ String, Boolean]) | (js.Array[String | js.RegExp | (js.Function1[/* command */ String, Boolean])])

@@ -27,7 +27,8 @@ object CopyMoveAddOperation {
     __obj.asInstanceOf[CopyMoveAddOperation]
   }
   
-  extension [Self <: CopyMoveAddOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyMoveAddOperation] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: GraphOrDefault): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

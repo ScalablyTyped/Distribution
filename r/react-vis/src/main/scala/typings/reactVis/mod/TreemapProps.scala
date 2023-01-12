@@ -71,7 +71,8 @@ object TreemapProps {
     __obj.asInstanceOf[TreemapProps]
   }
   
-  extension [Self <: TreemapProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreemapProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

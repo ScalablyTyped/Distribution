@@ -24,7 +24,8 @@ object TimeOff {
     __obj.asInstanceOf[TimeOff]
   }
   
-  extension [Self <: TimeOff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeOff] (val x: Self) extends AnyVal {
     
     inline def setDraftTimeOff(value: NullableOption[TimeOffItem]): Self = StObject.set(x, "draftTimeOff", value.asInstanceOf[js.Any])
     

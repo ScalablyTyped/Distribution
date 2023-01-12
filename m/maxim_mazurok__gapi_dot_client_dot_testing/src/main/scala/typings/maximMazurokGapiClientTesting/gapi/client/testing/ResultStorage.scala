@@ -25,7 +25,8 @@ object ResultStorage {
     __obj.asInstanceOf[ResultStorage]
   }
   
-  extension [Self <: ResultStorage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultStorage] (val x: Self) extends AnyVal {
     
     inline def setGoogleCloudStorage(value: GoogleCloudStorage): Self = StObject.set(x, "googleCloudStorage", value.asInstanceOf[js.Any])
     

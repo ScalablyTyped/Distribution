@@ -16,7 +16,8 @@ object MoveFolderRequest {
     __obj.asInstanceOf[MoveFolderRequest]
   }
   
-  extension [Self <: MoveFolderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveFolderRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationParent(value: String): Self = StObject.set(x, "destinationParent", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object HttpEndpointRequestConfiguration {
     __obj.asInstanceOf[HttpEndpointRequestConfiguration]
   }
   
-  extension [Self <: HttpEndpointRequestConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpEndpointRequestConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCommonAttributes(value: HttpEndpointCommonAttributesList): Self = StObject.set(x, "CommonAttributes", value.asInstanceOf[js.Any])
     

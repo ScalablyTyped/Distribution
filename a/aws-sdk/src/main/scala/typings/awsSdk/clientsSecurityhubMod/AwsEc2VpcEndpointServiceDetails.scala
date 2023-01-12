@@ -68,7 +68,8 @@ object AwsEc2VpcEndpointServiceDetails {
     __obj.asInstanceOf[AwsEc2VpcEndpointServiceDetails]
   }
   
-  extension [Self <: AwsEc2VpcEndpointServiceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEc2VpcEndpointServiceDetails] (val x: Self) extends AnyVal {
     
     inline def setAcceptanceRequired(value: Boolean): Self = StObject.set(x, "AcceptanceRequired", value.asInstanceOf[js.Any])
     

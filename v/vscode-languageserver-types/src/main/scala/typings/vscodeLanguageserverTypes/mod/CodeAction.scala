@@ -114,7 +114,8 @@ object CodeAction {
   
   inline def is(value: Any): /* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.CodeAction */ Boolean]
   
-  extension [Self <: CodeAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeAction] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: Command): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

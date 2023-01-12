@@ -94,7 +94,8 @@ object AreaMeasurement2DViewModel {
     __obj.asInstanceOf[AreaMeasurement2DViewModel]
   }
   
-  extension [Self <: AreaMeasurement2DViewModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaMeasurement2DViewModel] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => scala.Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

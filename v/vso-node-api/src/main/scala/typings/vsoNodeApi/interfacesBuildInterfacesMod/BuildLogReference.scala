@@ -29,7 +29,8 @@ object BuildLogReference {
     __obj.asInstanceOf[BuildLogReference]
   }
   
-  extension [Self <: BuildLogReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildLogReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

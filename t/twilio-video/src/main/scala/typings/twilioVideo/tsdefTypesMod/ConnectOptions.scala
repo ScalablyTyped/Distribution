@@ -73,7 +73,8 @@ object ConnectOptions {
     __obj.asInstanceOf[ConnectOptions]
   }
   
-  extension [Self <: ConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setAudio(value: Boolean | CreateLocalTrackOptions | CreateLocalAudioTrackOptions): Self = StObject.set(x, "audio", value.asInstanceOf[js.Any])
     

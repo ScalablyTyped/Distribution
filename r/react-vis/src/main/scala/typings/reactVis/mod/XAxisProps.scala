@@ -73,7 +73,8 @@ object XAxisProps {
     __obj.asInstanceOf[XAxisProps]
   }
   
-  extension [Self <: XAxisProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisProps] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: String): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

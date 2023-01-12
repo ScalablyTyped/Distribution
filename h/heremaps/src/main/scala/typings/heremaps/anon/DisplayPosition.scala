@@ -32,7 +32,8 @@ object DisplayPosition {
     __obj.asInstanceOf[DisplayPosition]
   }
   
-  extension [Self <: DisplayPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayPosition] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: AdditionalData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

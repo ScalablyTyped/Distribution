@@ -38,7 +38,8 @@ object Tracker {
     __obj.asInstanceOf[Tracker]
   }
   
-  extension [Self <: Tracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tracker] (val x: Self) extends AnyVal {
     
     inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
     

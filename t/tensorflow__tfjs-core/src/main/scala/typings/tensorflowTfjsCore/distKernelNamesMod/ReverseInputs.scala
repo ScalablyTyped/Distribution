@@ -16,7 +16,8 @@ object ReverseInputs {
     __obj.asInstanceOf[ReverseInputs]
   }
   
-  extension [Self <: ReverseInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

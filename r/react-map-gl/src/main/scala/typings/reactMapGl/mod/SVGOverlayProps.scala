@@ -20,7 +20,8 @@ object SVGOverlayProps {
     __obj.asInstanceOf[SVGOverlayProps]
   }
   
-  extension [Self <: SVGOverlayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGOverlayProps] (val x: Self) extends AnyVal {
     
     inline def setRedraw(value: SVGRedrawOptions => Unit): Self = StObject.set(x, "redraw", js.Any.fromFunction1(value))
     

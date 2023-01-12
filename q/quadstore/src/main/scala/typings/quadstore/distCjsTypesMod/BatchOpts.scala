@@ -18,7 +18,8 @@ object BatchOpts {
     __obj.asInstanceOf[BatchOpts]
   }
   
-  extension [Self <: BatchOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchOpts] (val x: Self) extends AnyVal {
     
     inline def setPreWrite(value: /* batch */ AbstractChainedBatch[Any, Any, Any] => js.Promise[Any] | Any): Self = StObject.set(x, "preWrite", js.Any.fromFunction1(value))
     

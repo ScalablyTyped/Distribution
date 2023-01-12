@@ -19,7 +19,8 @@ object TabMetadataList {
     __obj.asInstanceOf[TabMetadataList]
   }
   
-  extension [Self <: TabMetadataList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabMetadataList] (val x: Self) extends AnyVal {
     
     inline def setTabs(value: js.Array[TabMetadata]): Self = StObject.set(x, "tabs", value.asInstanceOf[js.Any])
     

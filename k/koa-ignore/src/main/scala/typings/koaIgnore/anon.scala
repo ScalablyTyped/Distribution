@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[If]
     }
     
-    extension [Self <: If](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: If] (val x: Self) extends AnyVal {
       
       inline def setIf(
         value: js.Function1[/* context */ Context, Boolean] => Middleware[DefaultState, DefaultContext, Any]

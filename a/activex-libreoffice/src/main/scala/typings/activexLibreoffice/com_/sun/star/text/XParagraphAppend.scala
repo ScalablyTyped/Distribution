@@ -43,7 +43,8 @@ object XParagraphAppend {
     __obj.asInstanceOf[XParagraphAppend]
   }
   
-  extension [Self <: XParagraphAppend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParagraphAppend] (val x: Self) extends AnyVal {
     
     inline def setFinishParagraph(value: PropertyValues => XTextRange): Self = StObject.set(x, "finishParagraph", js.Any.fromFunction1(value))
     

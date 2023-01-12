@@ -48,7 +48,8 @@ object DirectionsRequest {
     __obj.asInstanceOf[DirectionsRequest]
   }
   
-  extension [Self <: DirectionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsRequest] (val x: Self) extends AnyVal {
     
     inline def setArrivalDate(value: js.Date): Self = StObject.set(x, "arrivalDate", value.asInstanceOf[js.Any])
     

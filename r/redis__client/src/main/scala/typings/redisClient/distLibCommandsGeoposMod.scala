@@ -38,7 +38,8 @@ object distLibCommandsGeoposMod {
       __obj.asInstanceOf[GeoCoordinates]
     }
     
-    extension [Self <: GeoCoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoCoordinates] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: RedisCommandArgument): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       

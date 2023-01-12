@@ -74,7 +74,8 @@ object XAccessibleAction {
     __obj.asInstanceOf[XAccessibleAction]
   }
   
-  extension [Self <: XAccessibleAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleAction] (val x: Self) extends AnyVal {
     
     inline def setAccessibleActionCount(value: Double): Self = StObject.set(x, "AccessibleActionCount", value.asInstanceOf[js.Any])
     

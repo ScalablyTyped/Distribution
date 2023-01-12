@@ -35,7 +35,8 @@ object CameraSettingsActivatedEventArgs {
     __obj.asInstanceOf[CameraSettingsActivatedEventArgs]
   }
   
-  extension [Self <: CameraSettingsActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraSettingsActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setKind(value: ActivationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

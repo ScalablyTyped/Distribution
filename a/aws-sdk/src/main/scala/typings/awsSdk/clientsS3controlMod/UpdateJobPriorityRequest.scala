@@ -28,7 +28,8 @@ object UpdateJobPriorityRequest {
     __obj.asInstanceOf[UpdateJobPriorityRequest]
   }
   
-  extension [Self <: UpdateJobPriorityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJobPriorityRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

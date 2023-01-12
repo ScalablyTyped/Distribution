@@ -19,7 +19,8 @@ object Renderer {
     __obj.asInstanceOf[Renderer]
   }
   
-  extension [Self <: Renderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
     
     inline def setFont(value: Face): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

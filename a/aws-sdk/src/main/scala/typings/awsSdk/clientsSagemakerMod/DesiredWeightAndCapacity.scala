@@ -28,7 +28,8 @@ object DesiredWeightAndCapacity {
     __obj.asInstanceOf[DesiredWeightAndCapacity]
   }
   
-  extension [Self <: DesiredWeightAndCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesiredWeightAndCapacity] (val x: Self) extends AnyVal {
     
     inline def setDesiredInstanceCount(value: TaskCount): Self = StObject.set(x, "DesiredInstanceCount", value.asInstanceOf[js.Any])
     

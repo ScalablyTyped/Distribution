@@ -27,7 +27,8 @@ object INDClosedCaptionDataReceivedEventArgs {
     __obj.asInstanceOf[INDClosedCaptionDataReceivedEventArgs]
   }
   
-  extension [Self <: INDClosedCaptionDataReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INDClosedCaptionDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setClosedCaptionData(value: Double): Self = StObject.set(x, "closedCaptionData", value.asInstanceOf[js.Any])
     

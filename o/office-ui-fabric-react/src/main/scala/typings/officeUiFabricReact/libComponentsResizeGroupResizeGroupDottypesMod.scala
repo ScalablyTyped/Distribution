@@ -51,7 +51,8 @@ object libComponentsResizeGroupResizeGroupDottypesMod {
       __obj.asInstanceOf[IResizeGroup]
     }
     
-    extension [Self <: IResizeGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeGroup] (val x: Self) extends AnyVal {
       
       inline def setRemeasure(value: () => Unit): Self = StObject.set(x, "remeasure", js.Any.fromFunction0(value))
     }
@@ -128,7 +129,8 @@ object libComponentsResizeGroupResizeGroupDottypesMod {
       __obj.asInstanceOf[IResizeGroupProps]
     }
     
-    extension [Self <: IResizeGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeGroupProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IResizeGroup]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -185,7 +187,8 @@ object libComponentsResizeGroupResizeGroupDottypesMod {
       __obj.asInstanceOf[IResizeGroupStyleProps]
     }
     
-    extension [Self <: IResizeGroupStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeGroupStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -209,7 +212,8 @@ object libComponentsResizeGroupResizeGroupDottypesMod {
       __obj.asInstanceOf[IResizeGroupStyles]
     }
     
-    extension [Self <: IResizeGroupStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResizeGroupStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

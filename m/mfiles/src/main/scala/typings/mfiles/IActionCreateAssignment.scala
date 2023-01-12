@@ -35,7 +35,8 @@ object IActionCreateAssignment {
     __obj.asInstanceOf[IActionCreateAssignment]
   }
   
-  extension [Self <: IActionCreateAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionCreateAssignment] (val x: Self) extends AnyVal {
     
     inline def setAssignedTo(value: IUserOrUserGroupIDExs): Self = StObject.set(x, "AssignedTo", value.asInstanceOf[js.Any])
     

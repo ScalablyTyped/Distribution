@@ -19,7 +19,8 @@ object UploadEvent {
     __obj.asInstanceOf[UploadEvent]
   }
   
-  extension [Self <: UploadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

@@ -53,7 +53,8 @@ object ReEncryptRequest {
     __obj.asInstanceOf[ReEncryptRequest]
   }
   
-  extension [Self <: ReEncryptRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReEncryptRequest] (val x: Self) extends AnyVal {
     
     inline def setCiphertextBlob(value: CiphertextType): Self = StObject.set(x, "CiphertextBlob", value.asInstanceOf[js.Any])
     

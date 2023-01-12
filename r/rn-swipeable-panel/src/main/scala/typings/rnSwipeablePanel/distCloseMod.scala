@@ -28,7 +28,8 @@ object distCloseMod {
       __obj.asInstanceOf[CloseProps]
     }
     
-    extension [Self <: CloseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseProps] (val x: Self) extends AnyVal {
       
       inline def setIconStyle(value: js.Object): Self = StObject.set(x, "iconStyle", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object GetServerTimeOptions {
     __obj.asInstanceOf[GetServerTimeOptions]
   }
   
-  extension [Self <: GetServerTimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServerTimeOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ Time => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

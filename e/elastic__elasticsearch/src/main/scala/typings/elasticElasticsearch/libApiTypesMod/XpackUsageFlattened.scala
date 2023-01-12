@@ -17,7 +17,8 @@ object XpackUsageFlattened {
     __obj.asInstanceOf[XpackUsageFlattened]
   }
   
-  extension [Self <: XpackUsageFlattened](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageFlattened] (val x: Self) extends AnyVal {
     
     inline def setField_count(value: integer): Self = StObject.set(x, "field_count", value.asInstanceOf[js.Any])
   }

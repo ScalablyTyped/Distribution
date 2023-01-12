@@ -15,7 +15,8 @@ object BubbleData {
     __obj.asInstanceOf[BubbleData]
   }
   
-  extension [Self <: BubbleData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BubbleData] (val x: Self) extends AnyVal {
     
     inline def setDataSets(value: js.Array[BubbleDataset]): Self = StObject.set(x, "dataSets", value.asInstanceOf[js.Any])
     

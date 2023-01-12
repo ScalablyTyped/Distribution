@@ -40,7 +40,8 @@ object distSrcSpanningCellManagerMod {
       __obj.asInstanceOf[SpanningCellContext]
     }
     
-    extension [Self <: SpanningCellContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanningCellContext] (val x: Self) extends AnyVal {
       
       inline def setRowHeights(value: js.Array[Double]): Self = StObject.set(x, "rowHeights", value.asInstanceOf[js.Any])
       
@@ -110,7 +111,8 @@ object distSrcSpanningCellManagerMod {
       __obj.asInstanceOf[SpanningCellParameters]
     }
     
-    extension [Self <: SpanningCellParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanningCellParameters] (val x: Self) extends AnyVal {
       
       inline def setColumnsConfig(
         value: js.Array[

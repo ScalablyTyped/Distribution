@@ -117,7 +117,8 @@ object TagifyRuntimeSettings {
     __obj.asInstanceOf[TagifyRuntimeSettings[T]]
   }
   
-  extension [Self <: TagifyRuntimeSettings[?], T /* <: BaseTagData */](x: Self & TagifyRuntimeSettings[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagifyRuntimeSettings[?], T /* <: BaseTagData */] (val x: Self & TagifyRuntimeSettings[T]) extends AnyVal {
     
     inline def setA11y(value: A11yRuntimeSettings): Self = StObject.set(x, "a11y", value.asInstanceOf[js.Any])
     

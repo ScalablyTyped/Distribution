@@ -23,7 +23,8 @@ object FeatureFormViewModelValueChangeEvent {
     __obj.asInstanceOf[FeatureFormViewModelValueChangeEvent]
   }
   
-  extension [Self <: FeatureFormViewModelValueChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormViewModelValueChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Graphic): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

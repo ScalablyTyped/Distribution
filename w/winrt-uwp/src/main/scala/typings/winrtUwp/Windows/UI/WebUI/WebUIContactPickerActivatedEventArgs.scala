@@ -39,7 +39,8 @@ object WebUIContactPickerActivatedEventArgs {
     __obj.asInstanceOf[WebUIContactPickerActivatedEventArgs]
   }
   
-  extension [Self <: WebUIContactPickerActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIContactPickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

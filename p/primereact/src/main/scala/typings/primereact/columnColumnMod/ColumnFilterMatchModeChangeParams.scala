@@ -17,7 +17,8 @@ object ColumnFilterMatchModeChangeParams {
     __obj.asInstanceOf[ColumnFilterMatchModeChangeParams]
   }
   
-  extension [Self <: ColumnFilterMatchModeChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterMatchModeChangeParams] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

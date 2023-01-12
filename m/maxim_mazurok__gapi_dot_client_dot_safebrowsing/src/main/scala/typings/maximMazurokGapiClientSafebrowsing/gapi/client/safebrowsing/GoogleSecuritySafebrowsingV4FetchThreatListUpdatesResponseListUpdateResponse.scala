@@ -40,7 +40,8 @@ object GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateRespo
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4FetchThreatListUpdatesResponseListUpdateResponse] (val x: Self) extends AnyVal {
     
     inline def setAdditions(value: js.Array[GoogleSecuritySafebrowsingV4ThreatEntrySet]): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
     

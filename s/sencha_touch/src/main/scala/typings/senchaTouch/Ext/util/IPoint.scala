@@ -73,7 +73,8 @@ object IPoint {
     __obj.asInstanceOf[IPoint]
   }
   
-  extension [Self <: IPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPoint] (val x: Self) extends AnyVal {
     
     inline def setClone_(value: () => IPoint): Self = StObject.set(x, "clone", js.Any.fromFunction0(value))
     

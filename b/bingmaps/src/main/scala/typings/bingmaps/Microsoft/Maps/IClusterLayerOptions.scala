@@ -55,7 +55,8 @@ object IClusterLayerOptions {
     __obj.asInstanceOf[IClusterLayerOptions]
   }
   
-  extension [Self <: IClusterLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClusterLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

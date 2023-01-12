@@ -16,7 +16,8 @@ object AdvertiserDataAccessConfig {
     __obj.asInstanceOf[AdvertiserDataAccessConfig]
   }
   
-  extension [Self <: AdvertiserDataAccessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvertiserDataAccessConfig] (val x: Self) extends AnyVal {
     
     inline def setSdfConfig(value: AdvertiserSdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
     

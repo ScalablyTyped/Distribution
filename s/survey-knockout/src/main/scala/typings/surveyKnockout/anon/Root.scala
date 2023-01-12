@@ -15,7 +15,8 @@ object Root {
     __obj.asInstanceOf[Root]
   }
   
-  extension [Self <: Root](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: String): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

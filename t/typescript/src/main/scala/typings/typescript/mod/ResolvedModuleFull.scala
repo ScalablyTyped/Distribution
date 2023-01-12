@@ -24,7 +24,8 @@ object ResolvedModuleFull {
     __obj.asInstanceOf[ResolvedModuleFull]
   }
   
-  extension [Self <: ResolvedModuleFull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedModuleFull] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: Extension): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     

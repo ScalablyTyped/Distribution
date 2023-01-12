@@ -18,7 +18,8 @@ object RollupCache {
     __obj.asInstanceOf[RollupCache]
   }
   
-  extension [Self <: RollupCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupCache] (val x: Self) extends AnyVal {
     
     inline def setModules(value: js.Array[ModuleJSON]): Self = StObject.set(x, "modules", value.asInstanceOf[js.Any])
     

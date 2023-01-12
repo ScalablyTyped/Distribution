@@ -29,7 +29,8 @@ object PartialStyleRulesSnackbarAction {
     __obj.asInstanceOf[PartialStyleRulesSnackbarAction]
   }
   
-  extension [Self <: PartialStyleRulesSnackbarAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesSnackbarAction] (val x: Self) extends AnyVal {
     
     inline def setAction(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

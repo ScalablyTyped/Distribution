@@ -23,7 +23,8 @@ object GetCSVHeaderResponse {
     __obj.asInstanceOf[GetCSVHeaderResponse]
   }
   
-  extension [Self <: GetCSVHeaderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCSVHeaderResponse] (val x: Self) extends AnyVal {
     
     inline def setCSVHeader(value: ListOfStringTypes): Self = StObject.set(x, "CSVHeader", value.asInstanceOf[js.Any])
     

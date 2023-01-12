@@ -15,7 +15,8 @@ object GetJobLogs {
     __obj.asInstanceOf[GetJobLogs]
   }
   
-  extension [Self <: GetJobLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetJobLogs] (val x: Self) extends AnyVal {
     
     inline def setGetJobLogs(value: () => js.Promise[js.Array[String]]): Self = StObject.set(x, "getJobLogs", js.Any.fromFunction0(value))
   }

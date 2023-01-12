@@ -25,7 +25,8 @@ object IgSchedulerAgendaViewSettings {
     __obj.asInstanceOf[IgSchedulerAgendaViewSettings]
   }
   
-  extension [Self <: IgSchedulerAgendaViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgSchedulerAgendaViewSettings] (val x: Self) extends AnyVal {
     
     inline def setDateRangeInterval(value: Double): Self = StObject.set(x, "dateRangeInterval", value.asInstanceOf[js.Any])
     

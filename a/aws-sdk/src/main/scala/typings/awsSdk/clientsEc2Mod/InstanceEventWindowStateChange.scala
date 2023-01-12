@@ -23,7 +23,8 @@ object InstanceEventWindowStateChange {
     __obj.asInstanceOf[InstanceEventWindowStateChange]
   }
   
-  extension [Self <: InstanceEventWindowStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceEventWindowStateChange] (val x: Self) extends AnyVal {
     
     inline def setInstanceEventWindowId(value: InstanceEventWindowId): Self = StObject.set(x, "InstanceEventWindowId", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Alpha2Code]
     }
     
-    extension [Self <: Alpha2Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpha2Code] (val x: Self) extends AnyVal {
       
       inline def setAlpha2Code(value: String): Self = StObject.set(x, "alpha2Code", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[DeviceId]
     }
     
-    extension [Self <: DeviceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceId] (val x: Self) extends AnyVal {
       
       inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Locales]
     }
     
-    extension [Self <: Locales](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Locales] (val x: Self) extends AnyVal {
       
       inline def setLocales(value: js.Array[AccedoLocale]): Self = StObject.set(x, "locales", value.asInstanceOf[js.Any])
       
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[PickAccedoEntryParamsprev]
     }
     
-    extension [Self <: PickAccedoEntryParamsprev](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickAccedoEntryParamsprev] (val x: Self) extends AnyVal {
       
       inline def setAt(value: String | js.Date): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
       
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyDetails]
     }
     
-    extension [Self <: ReadonlyDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyDetails] (val x: Self) extends AnyVal {
       
       inline def setDim1(value: String): Self = StObject.set(x, "dim1", value.asInstanceOf[js.Any])
       

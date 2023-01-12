@@ -28,7 +28,8 @@ object StorageOptions {
     __obj.asInstanceOf[StorageOptions]
   }
   
-  extension [Self <: StorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageOptions] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
     

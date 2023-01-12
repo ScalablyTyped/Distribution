@@ -17,7 +17,8 @@ object IsUserForced {
     __obj.asInstanceOf[IsUserForced]
   }
   
-  extension [Self <: IsUserForced](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsUserForced] (val x: Self) extends AnyVal {
     
     inline def setIsUserForced(value: Boolean): Self = StObject.set(x, "isUserForced", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object IWindow {
     __obj.asInstanceOf[IWindow]
   }
   
-  extension [Self <: IWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindow] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     

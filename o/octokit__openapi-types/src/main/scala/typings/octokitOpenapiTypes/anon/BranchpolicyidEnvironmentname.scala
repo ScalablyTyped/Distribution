@@ -25,7 +25,8 @@ object BranchpolicyidEnvironmentname {
     __obj.asInstanceOf[BranchpolicyidEnvironmentname]
   }
   
-  extension [Self <: BranchpolicyidEnvironmentname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BranchpolicyidEnvironmentname] (val x: Self) extends AnyVal {
     
     inline def setBranch_policy_id(value: Double): Self = StObject.set(x, "branch_policy_id", value.asInstanceOf[js.Any])
     

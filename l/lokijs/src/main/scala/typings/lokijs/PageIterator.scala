@@ -19,7 +19,8 @@ object PageIterator {
     __obj.asInstanceOf[PageIterator]
   }
   
-  extension [Self <: PageIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageIterator] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: Double): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

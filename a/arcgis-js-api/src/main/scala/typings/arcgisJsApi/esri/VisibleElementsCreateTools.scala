@@ -48,7 +48,8 @@ object VisibleElementsCreateTools {
     __obj.asInstanceOf[VisibleElementsCreateTools]
   }
   
-  extension [Self <: VisibleElementsCreateTools](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleElementsCreateTools] (val x: Self) extends AnyVal {
     
     inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
     

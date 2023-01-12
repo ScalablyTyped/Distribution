@@ -27,7 +27,8 @@ object EdgeColor {
     __obj.asInstanceOf[EdgeColor]
   }
   
-  extension [Self <: EdgeColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeColor] (val x: Self) extends AnyVal {
     
     inline def setEdgeColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
     

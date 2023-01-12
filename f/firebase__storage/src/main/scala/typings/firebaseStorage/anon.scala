@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     }
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[MockUserToken]
     }
     
-    extension [Self <: MockUserToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockUserToken] (val x: Self) extends AnyVal {
       
       inline def setMockUserToken(value: EmulatorMockTokenOptions | String): Self = StObject.set(x, "mockUserToken", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[PartialMetadata]
     }
     
-    extension [Self <: PartialMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMetadata] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -217,7 +220,8 @@ object anon {
       __obj.asInstanceOf[PartialMetadataBucket]
     }
     
-    extension [Self <: PartialMetadataBucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMetadataBucket] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "bucket", value.asInstanceOf[js.Any])
       
@@ -302,7 +306,8 @@ object anon {
       __obj.asInstanceOf[ServerResponse]
     }
     
-    extension [Self <: ServerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerResponse] (val x: Self) extends AnyVal {
       
       inline def setServerResponse(value: String): Self = StObject.set(x, "serverResponse", value.asInstanceOf[js.Any])
       
@@ -321,7 +326,8 @@ object anon {
       __obj.asInstanceOf[Token]
     }
     
-    extension [Self <: Token](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }

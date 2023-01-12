@@ -19,7 +19,8 @@ object IsPreservedDOM {
     __obj.asInstanceOf[IsPreservedDOM]
   }
   
-  extension [Self <: IsPreservedDOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsPreservedDOM] (val x: Self) extends AnyVal {
     
     inline def setIsPreservedDOM(value: Boolean): Self = StObject.set(x, "isPreservedDOM", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object WhileStatement_ {
     __obj.asInstanceOf[WhileStatement_]
   }
   
-  extension [Self <: WhileStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhileStatement_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Statement): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

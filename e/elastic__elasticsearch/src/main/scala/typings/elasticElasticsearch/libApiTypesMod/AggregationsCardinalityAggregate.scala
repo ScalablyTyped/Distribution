@@ -18,7 +18,8 @@ object AggregationsCardinalityAggregate {
     __obj.asInstanceOf[AggregationsCardinalityAggregate]
   }
   
-  extension [Self <: AggregationsCardinalityAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCardinalityAggregate] (val x: Self) extends AnyVal {
     
     inline def setValue(value: long): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

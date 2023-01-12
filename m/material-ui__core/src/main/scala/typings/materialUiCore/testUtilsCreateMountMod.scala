@@ -29,7 +29,8 @@ object testUtilsCreateMountMod {
       __obj.asInstanceOf[MountOptions]
     }
     
-    extension [Self <: MountOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MountOptions] (val x: Self) extends AnyVal {
       
       inline def setMount(value: FnCall): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object INxDerivedFieldDescriptionList {
     __obj.asInstanceOf[INxDerivedFieldDescriptionList]
   }
   
-  extension [Self <: INxDerivedFieldDescriptionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxDerivedFieldDescriptionList] (val x: Self) extends AnyVal {
     
     inline def setQDerivedFieldLists(value: js.Array[INxDerivedFieldsData]): Self = StObject.set(x, "qDerivedFieldLists", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object GoogleMapsPlayablelocationsV3LogImpressionsRequest {
     __obj.asInstanceOf[GoogleMapsPlayablelocationsV3LogImpressionsRequest]
   }
   
-  extension [Self <: GoogleMapsPlayablelocationsV3LogImpressionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleMapsPlayablelocationsV3LogImpressionsRequest] (val x: Self) extends AnyVal {
     
     inline def setClientInfo(value: GoogleMapsUnityClientInfo): Self = StObject.set(x, "clientInfo", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setExtension(value: String): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Extensions]
     }
     
-    extension [Self <: Extensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: String): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
     }

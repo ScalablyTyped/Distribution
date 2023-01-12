@@ -91,7 +91,8 @@ object IContact {
     __obj.asInstanceOf[IContact]
   }
   
-  extension [Self <: IContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContact] (val x: Self) extends AnyVal {
     
     inline def setBirth_day(value: Double): Self = StObject.set(x, "birth_day", value.asInstanceOf[js.Any])
     

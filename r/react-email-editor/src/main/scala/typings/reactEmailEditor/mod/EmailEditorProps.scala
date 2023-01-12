@@ -35,7 +35,8 @@ object EmailEditorProps {
     __obj.asInstanceOf[EmailEditorProps]
   }
   
-  extension [Self <: EmailEditorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailEditorProps] (val x: Self) extends AnyVal {
     
     inline def setAppearance(value: AppearanceConfig): Self = StObject.set(x, "appearance", value.asInstanceOf[js.Any])
     

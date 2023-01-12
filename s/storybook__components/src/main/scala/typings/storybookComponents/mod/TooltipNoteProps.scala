@@ -15,7 +15,8 @@ object TooltipNoteProps {
     __obj.asInstanceOf[TooltipNoteProps]
   }
   
-  extension [Self <: TooltipNoteProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipNoteProps] (val x: Self) extends AnyVal {
     
     inline def setNote(value: String): Self = StObject.set(x, "note", value.asInstanceOf[js.Any])
   }

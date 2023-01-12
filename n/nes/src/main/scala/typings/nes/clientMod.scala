@@ -67,7 +67,8 @@ object clientMod {
       __obj.asInstanceOf[ClientConnectOptions]
     }
     
-    extension [Self <: ClientConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: Any): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object clientMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double | Boolean): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object clientMod {
       __obj.asInstanceOf[ClientRequestOptions]
     }
     
-    extension [Self <: ClientRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -162,7 +165,8 @@ object clientMod {
       __obj.asInstanceOf[ClientSubscribeFlags]
     }
     
-    extension [Self <: ClientSubscribeFlags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientSubscribeFlags] (val x: Self) extends AnyVal {
       
       inline def setRevoked(value: Boolean): Self = StObject.set(x, "revoked", value.asInstanceOf[js.Any])
       

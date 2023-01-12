@@ -71,7 +71,8 @@ object LocalClientTime {
     __obj.asInstanceOf[LocalClientTime]
   }
   
-  extension [Self <: LocalClientTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalClientTime] (val x: Self) extends AnyVal {
     
     inline def setDate(value: Double): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

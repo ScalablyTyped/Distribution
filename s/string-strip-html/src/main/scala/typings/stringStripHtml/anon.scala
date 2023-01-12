@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Enabled]
     }
     
-    extension [Self <: Enabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enabled] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialOpts]
     }
     
-    extension [Self <: PartialOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOpts] (val x: Self) extends AnyVal {
       
       inline def setCb(value: /* cbObj */ CbObj => Unit): Self = StObject.set(x, "cb", js.Any.fromFunction1(value))
       
@@ -153,7 +155,8 @@ object anon {
       __obj.asInstanceOf[TimeTakenInMilliseconds]
     }
     
-    extension [Self <: TimeTakenInMilliseconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeTakenInMilliseconds] (val x: Self) extends AnyVal {
       
       inline def setTimeTakenInMilliseconds(value: Double): Self = StObject.set(x, "timeTakenInMilliseconds", value.asInstanceOf[js.Any])
     }

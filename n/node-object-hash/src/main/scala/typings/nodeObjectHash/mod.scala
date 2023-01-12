@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Hashable]
     }
     
-    extension [Self <: Hashable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hashable] (val x: Self) extends AnyVal {
       
       inline def setToHashableString(value: () => String): Self = StObject.set(x, "toHashableString", js.Any.fromFunction0(value))
     }
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[HasherOptions]
     }
     
-    extension [Self <: HasherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasherOptions] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

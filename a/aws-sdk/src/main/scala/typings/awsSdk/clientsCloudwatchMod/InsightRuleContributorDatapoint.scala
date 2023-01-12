@@ -23,7 +23,8 @@ object InsightRuleContributorDatapoint {
     __obj.asInstanceOf[InsightRuleContributorDatapoint]
   }
   
-  extension [Self <: InsightRuleContributorDatapoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightRuleContributorDatapoint] (val x: Self) extends AnyVal {
     
     inline def setApproximateValue(value: InsightRuleUnboundDouble): Self = StObject.set(x, "ApproximateValue", value.asInstanceOf[js.Any])
     

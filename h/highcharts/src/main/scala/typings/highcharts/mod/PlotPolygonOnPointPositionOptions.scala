@@ -39,7 +39,8 @@ object PlotPolygonOnPointPositionOptions {
     __obj.asInstanceOf[PlotPolygonOnPointPositionOptions]
   }
   
-  extension [Self <: PlotPolygonOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPolygonOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

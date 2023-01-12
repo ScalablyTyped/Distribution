@@ -90,7 +90,8 @@ object materialsNodeNodeMaterialDecoratorMod {
       __obj.asInstanceOf[IEditablePropertyListOption]
     }
     
-    extension [Self <: IEditablePropertyListOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditablePropertyListOption] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object materialsNodeNodeMaterialDecoratorMod {
       __obj.asInstanceOf[IEditablePropertyOption]
     }
     
-    extension [Self <: IEditablePropertyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEditablePropertyOption] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object materialsNodeNodeMaterialDecoratorMod {
       __obj.asInstanceOf[IPropertyDescriptionForEdition]
     }
     
-    extension [Self <: IPropertyDescriptionForEdition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropertyDescriptionForEdition] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       

@@ -37,7 +37,8 @@ object SpriteSceneComponent {
     __obj.asInstanceOf[SpriteSceneComponent]
   }
   
-  extension [Self <: SpriteSceneComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSceneComponent] (val x: Self) extends AnyVal {
     
     inline def set_pickSpriteButKeepRay(value: Any): Self = StObject.set(x, "_pickSpriteButKeepRay", value.asInstanceOf[js.Any])
     

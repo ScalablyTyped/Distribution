@@ -23,7 +23,8 @@ object CurrentRow {
     __obj.asInstanceOf[CurrentRow[K]]
   }
   
-  extension [Self <: CurrentRow[?], K](x: Self & CurrentRow[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentRow[?], K] (val x: Self & CurrentRow[K]) extends AnyVal {
     
     inline def setCurrentRow(value: typings.oracleOraclejet.ojtableMod.ojTable.CurrentRow[K]): Self = StObject.set(x, "currentRow", value.asInstanceOf[js.Any])
     

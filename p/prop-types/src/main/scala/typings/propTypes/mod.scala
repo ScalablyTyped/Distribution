@@ -141,7 +141,8 @@ object mod {
       __obj.asInstanceOf[ReactElementLike]
     }
     
-    extension [Self <: ReactElementLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactElementLike] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

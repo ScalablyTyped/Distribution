@@ -28,7 +28,8 @@ object ResponseRegisterDataHolderBrandList {
     __obj.asInstanceOf[ResponseRegisterDataHolderBrandList]
   }
   
-  extension [Self <: ResponseRegisterDataHolderBrandList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseRegisterDataHolderBrandList] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[AuthDetails]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

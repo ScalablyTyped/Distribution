@@ -37,7 +37,8 @@ object ClaimProcedure {
     __obj.asInstanceOf[ClaimProcedure]
   }
   
-  extension [Self <: ClaimProcedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimProcedure] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

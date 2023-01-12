@@ -19,7 +19,8 @@ object Valid {
     __obj.asInstanceOf[Valid]
   }
   
-  extension [Self <: Valid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Valid] (val x: Self) extends AnyVal {
     
     inline def setKeyid(value: typings.openpgp.mod.`type`.keyid.Keyid): Self = StObject.set(x, "keyid", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Api {
     __obj.asInstanceOf[Api]
   }
   
-  extension [Self <: Api](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: String): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

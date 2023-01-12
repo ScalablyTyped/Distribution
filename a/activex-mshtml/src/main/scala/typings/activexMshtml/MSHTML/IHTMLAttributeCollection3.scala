@@ -34,7 +34,8 @@ object IHTMLAttributeCollection3 {
     __obj.asInstanceOf[IHTMLAttributeCollection3]
   }
   
-  extension [Self <: IHTMLAttributeCollection3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLAttributeCollection3] (val x: Self) extends AnyVal {
     
     inline def setGetNamedItem(value: String => IHTMLDOMAttribute): Self = StObject.set(x, "getNamedItem", js.Any.fromFunction1(value))
     

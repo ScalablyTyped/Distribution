@@ -44,7 +44,8 @@ object TextBlock {
     __obj.asInstanceOf[TextBlock]
   }
   
-  extension [Self <: TextBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBlock] (val x: Self) extends AnyVal {
     
     inline def setClass(value: Text): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

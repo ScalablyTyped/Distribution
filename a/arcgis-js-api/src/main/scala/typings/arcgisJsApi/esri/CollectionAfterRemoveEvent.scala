@@ -15,7 +15,8 @@ object CollectionAfterRemoveEvent {
     __obj.asInstanceOf[CollectionAfterRemoveEvent]
   }
   
-  extension [Self <: CollectionAfterRemoveEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionAfterRemoveEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

@@ -66,7 +66,8 @@ object XFunction {
     __obj.asInstanceOf[XFunction]
   }
   
-  extension [Self <: XFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFunction] (val x: Self) extends AnyVal {
     
     inline def setDeepTraversing(value: Boolean): Self = StObject.set(x, "DeepTraversing", value.asInstanceOf[js.Any])
     

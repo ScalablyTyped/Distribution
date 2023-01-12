@@ -784,7 +784,8 @@ object PlotScatter3dOptions {
     __obj.asInstanceOf[PlotScatter3dOptions]
   }
   
-  extension [Self <: PlotScatter3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotScatter3dOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

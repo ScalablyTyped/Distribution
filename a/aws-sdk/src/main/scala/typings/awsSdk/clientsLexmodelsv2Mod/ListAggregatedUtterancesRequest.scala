@@ -58,7 +58,8 @@ object ListAggregatedUtterancesRequest {
     __obj.asInstanceOf[ListAggregatedUtterancesRequest]
   }
   
-  extension [Self <: ListAggregatedUtterancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAggregatedUtterancesRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregationDuration(value: UtteranceAggregationDuration): Self = StObject.set(x, "aggregationDuration", value.asInstanceOf[js.Any])
     

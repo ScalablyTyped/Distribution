@@ -29,7 +29,8 @@ object XDrawPageSummarizer {
     __obj.asInstanceOf[XDrawPageSummarizer]
   }
   
-  extension [Self <: XDrawPageSummarizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPageSummarizer] (val x: Self) extends AnyVal {
     
     inline def setSummarize(value: XDrawPages => XDrawPage): Self = StObject.set(x, "summarize", js.Any.fromFunction1(value))
   }

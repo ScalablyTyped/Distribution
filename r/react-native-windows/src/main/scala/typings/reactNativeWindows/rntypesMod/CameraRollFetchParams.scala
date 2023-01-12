@@ -23,7 +23,8 @@ object CameraRollFetchParams {
     __obj.asInstanceOf[CameraRollFetchParams]
   }
   
-  extension [Self <: CameraRollFetchParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraRollFetchParams] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

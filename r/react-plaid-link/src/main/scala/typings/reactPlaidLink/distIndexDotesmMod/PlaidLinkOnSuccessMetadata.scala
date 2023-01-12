@@ -21,7 +21,8 @@ object PlaidLinkOnSuccessMetadata {
     __obj.asInstanceOf[PlaidLinkOnSuccessMetadata]
   }
   
-  extension [Self <: PlaidLinkOnSuccessMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkOnSuccessMetadata] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: js.Array[PlaidAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object AuthorizationPolicy {
     __obj.asInstanceOf[AuthorizationPolicy]
   }
   
-  extension [Self <: AuthorizationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizationPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowEmailVerifiedUsersToJoinOrganization(value: Boolean): Self = StObject.set(x, "allowEmailVerifiedUsersToJoinOrganization", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DescribeCanariesRequest {
     __obj.asInstanceOf[DescribeCanariesRequest]
   }
   
-  extension [Self <: DescribeCanariesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCanariesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxCanaryResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

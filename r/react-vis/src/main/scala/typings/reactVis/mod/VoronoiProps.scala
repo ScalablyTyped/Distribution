@@ -37,7 +37,8 @@ object VoronoiProps {
     __obj.asInstanceOf[VoronoiProps]
   }
   
-  extension [Self <: VoronoiProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoronoiProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

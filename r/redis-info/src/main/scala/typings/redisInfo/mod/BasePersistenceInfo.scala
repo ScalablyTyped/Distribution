@@ -56,7 +56,8 @@ object BasePersistenceInfo {
     __obj.asInstanceOf[BasePersistenceInfo]
   }
   
-  extension [Self <: BasePersistenceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePersistenceInfo] (val x: Self) extends AnyVal {
     
     inline def setAof_current_rewrite_time_sec(value: String): Self = StObject.set(x, "aof_current_rewrite_time_sec", value.asInstanceOf[js.Any])
     

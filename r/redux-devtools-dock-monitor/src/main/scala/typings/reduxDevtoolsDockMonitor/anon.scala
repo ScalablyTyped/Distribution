@@ -98,7 +98,8 @@ object anon {
       __obj.asInstanceOf[PartialDockMonitorState]
     }
     
-    extension [Self <: PartialDockMonitorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDockMonitorState] (val x: Self) extends AnyVal {
       
       inline def setChildMonitorIndex(value: Double): Self = StObject.set(x, "childMonitorIndex", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object anon {
       __obj.asInstanceOf[PartialExternalPropsunkno]
     }
     
-    extension [Self <: PartialExternalPropsunkno](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialExternalPropsunkno] (val x: Self) extends AnyVal {
       
       inline def setChangeMonitorKey(value: String): Self = StObject.set(x, "changeMonitorKey", value.asInstanceOf[js.Any])
       
@@ -244,7 +246,8 @@ object anon {
       __obj.asInstanceOf[WeakValidationMapExternal]
     }
     
-    extension [Self <: WeakValidationMapExternal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeakValidationMapExternal] (val x: Self) extends AnyVal {
       
       inline def setChangeMonitorKey(
         value: /* import warning: importer.ImportType#apply Failed type conversion: null extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : undefined extends string | undefined ? react.react.Validator<string | undefined | null | undefined> : react.react.Validator<string | undefined> */ js.Any

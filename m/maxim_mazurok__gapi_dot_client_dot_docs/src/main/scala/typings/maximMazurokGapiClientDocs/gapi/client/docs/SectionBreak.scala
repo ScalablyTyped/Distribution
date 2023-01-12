@@ -22,7 +22,8 @@ object SectionBreak {
     __obj.asInstanceOf[SectionBreak]
   }
   
-  extension [Self <: SectionBreak](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionBreak] (val x: Self) extends AnyVal {
     
     inline def setSectionStyle(value: SectionStyle): Self = StObject.set(x, "sectionStyle", value.asInstanceOf[js.Any])
     

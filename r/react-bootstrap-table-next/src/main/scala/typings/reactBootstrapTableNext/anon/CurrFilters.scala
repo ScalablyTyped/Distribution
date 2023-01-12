@@ -15,7 +15,8 @@ object CurrFilters {
     __obj.asInstanceOf[CurrFilters]
   }
   
-  extension [Self <: CurrFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrFilters] (val x: Self) extends AnyVal {
     
     inline def setCurrFilters(value: Any): Self = StObject.set(x, "currFilters", value.asInstanceOf[js.Any])
   }

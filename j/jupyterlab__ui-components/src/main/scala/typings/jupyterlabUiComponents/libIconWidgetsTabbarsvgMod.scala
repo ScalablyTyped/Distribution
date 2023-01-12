@@ -51,7 +51,8 @@ object libIconWidgetsTabbarsvgMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
         
@@ -100,7 +101,8 @@ object libIconWidgetsTabbarsvgMod {
         __obj.asInstanceOf[typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[T]]
       }
       
-      extension [Self <: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[?], T](x: Self & typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[?], T] (val x: Self & typings.jupyterlabUiComponents.libIconWidgetsTabbarsvgMod.TabBarSvg.IOptions[T]) extends AnyVal {
         
         inline def setTranslator(value: ITranslator): Self = StObject.set(x, "translator", value.asInstanceOf[js.Any])
         

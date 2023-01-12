@@ -50,7 +50,8 @@ object CreateEventDataStoreRequest {
     __obj.asInstanceOf[CreateEventDataStoreRequest]
   }
   
-  extension [Self <: CreateEventDataStoreRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventDataStoreRequest] (val x: Self) extends AnyVal {
     
     inline def setAdvancedEventSelectors(value: AdvancedEventSelectors): Self = StObject.set(x, "AdvancedEventSelectors", value.asInstanceOf[js.Any])
     

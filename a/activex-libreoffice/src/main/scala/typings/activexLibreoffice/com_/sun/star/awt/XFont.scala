@@ -90,7 +90,8 @@ object XFont {
     __obj.asInstanceOf[XFont]
   }
   
-  extension [Self <: XFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFont] (val x: Self) extends AnyVal {
     
     inline def setFontDescriptor(value: FontDescriptor): Self = StObject.set(x, "FontDescriptor", value.asInstanceOf[js.Any])
     

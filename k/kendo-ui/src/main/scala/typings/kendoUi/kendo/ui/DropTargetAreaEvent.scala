@@ -15,7 +15,8 @@ object DropTargetAreaEvent {
     __obj.asInstanceOf[DropTargetAreaEvent]
   }
   
-  extension [Self <: DropTargetAreaEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetAreaEvent] (val x: Self) extends AnyVal {
     
     inline def setSender(value: DropTargetArea): Self = StObject.set(x, "sender", value.asInstanceOf[js.Any])
   }

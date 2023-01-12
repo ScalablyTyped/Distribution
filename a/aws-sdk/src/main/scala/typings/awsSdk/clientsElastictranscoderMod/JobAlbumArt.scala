@@ -23,7 +23,8 @@ object JobAlbumArt {
     __obj.asInstanceOf[JobAlbumArt]
   }
   
-  extension [Self <: JobAlbumArt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobAlbumArt] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: Artworks): Self = StObject.set(x, "Artwork", value.asInstanceOf[js.Any])
     

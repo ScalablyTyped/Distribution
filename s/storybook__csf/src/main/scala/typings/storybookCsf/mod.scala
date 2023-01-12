@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[IncludeExcludeOptions]
     }
     
-    extension [Self <: IncludeExcludeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeExcludeOptions] (val x: Self) extends AnyVal {
       
       inline def setExcludeStories(value: StoryDescriptor): Self = StObject.set(x, "excludeStories", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[SeparatorOptions]
     }
     
-    extension [Self <: SeparatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeparatorOptions] (val x: Self) extends AnyVal {
       
       inline def setGroupSeparator(value: String | js.RegExp): Self = StObject.set(x, "groupSeparator", value.asInstanceOf[js.Any])
       

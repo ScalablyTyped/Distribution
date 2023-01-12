@@ -45,7 +45,8 @@ object distSrcEncodeMod {
       __obj.asInstanceOf[EncoderOptions]
     }
     
-    extension [Self <: EncoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncoderOptions] (val x: Self) extends AnyVal {
       
       inline def setLengthEncoder(value: LengthEncoderFunction): Self = StObject.set(x, "lengthEncoder", value.asInstanceOf[js.Any])
       

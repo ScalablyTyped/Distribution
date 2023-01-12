@@ -15,7 +15,8 @@ object ContentApplicationjsonCreatedatDeploymentbranchpolicy {
     __obj.asInstanceOf[ContentApplicationjsonCreatedatDeploymentbranchpolicy]
   }
   
-  extension [Self <: ContentApplicationjsonCreatedatDeploymentbranchpolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonCreatedatDeploymentbranchpolicy] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonCreatedatDeploymentbranchpolicy): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

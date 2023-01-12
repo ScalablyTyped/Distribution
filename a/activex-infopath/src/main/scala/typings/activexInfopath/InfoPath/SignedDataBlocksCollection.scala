@@ -25,7 +25,8 @@ object SignedDataBlocksCollection {
     __obj.asInstanceOf[SignedDataBlocksCollection]
   }
   
-  extension [Self <: SignedDataBlocksCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedDataBlocksCollection] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

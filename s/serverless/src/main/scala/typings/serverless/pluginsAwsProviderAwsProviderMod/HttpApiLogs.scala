@@ -15,7 +15,8 @@ object HttpApiLogs {
     __obj.asInstanceOf[HttpApiLogs]
   }
   
-  extension [Self <: HttpApiLogs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpApiLogs] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

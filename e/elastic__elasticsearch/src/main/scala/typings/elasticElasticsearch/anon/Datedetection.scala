@@ -46,7 +46,8 @@ object Datedetection {
     __obj.asInstanceOf[Datedetection]
   }
   
-  extension [Self <: Datedetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Datedetection] (val x: Self) extends AnyVal {
     
     inline def setDate_detection(value: Boolean): Self = StObject.set(x, "date_detection", value.asInstanceOf[js.Any])
     

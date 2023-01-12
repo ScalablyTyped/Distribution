@@ -50,7 +50,8 @@ object InterfaceType {
     __obj.asInstanceOf[InterfaceType]
   }
   
-  extension [Self <: InterfaceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterfaceType] (val x: Self) extends AnyVal {
     
     inline def setLocalTypeParameters(value: js.Array[TypeParameter]): Self = StObject.set(x, "localTypeParameters", value.asInstanceOf[js.Any])
     

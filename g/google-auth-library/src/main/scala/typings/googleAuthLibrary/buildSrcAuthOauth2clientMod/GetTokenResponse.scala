@@ -19,7 +19,8 @@ object GetTokenResponse {
     __obj.asInstanceOf[GetTokenResponse]
   }
   
-  extension [Self <: GetTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setRes(value: GaxiosResponse[Any]): Self = StObject.set(x, "res", value.asInstanceOf[js.Any])
     

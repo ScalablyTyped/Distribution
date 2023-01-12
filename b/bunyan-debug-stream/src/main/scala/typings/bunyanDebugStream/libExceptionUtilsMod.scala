@@ -43,7 +43,8 @@ object libExceptionUtilsMod {
       __obj.asInstanceOf[ColorExceptionOptions]
     }
     
-    extension [Self <: ColorExceptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorExceptionOptions] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

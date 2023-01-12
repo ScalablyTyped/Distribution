@@ -17,7 +17,8 @@ object ApplicationjsonBypasspullrequestallowances {
     __obj.asInstanceOf[ApplicationjsonBypasspullrequestallowances]
   }
   
-  extension [Self <: ApplicationjsonBypasspullrequestallowances](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonBypasspullrequestallowances] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Bypasspullrequestallowances): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object IsLeafNode {
     __obj.asInstanceOf[IsLeafNode]
   }
   
-  extension [Self <: IsLeafNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLeafNode] (val x: Self) extends AnyVal {
     
     inline def set$isLeafNode(value: Boolean): Self = StObject.set(x, "$isLeafNode", value.asInstanceOf[js.Any])
     

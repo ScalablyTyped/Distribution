@@ -54,7 +54,8 @@ object QueryPropertyValue {
     __obj.asInstanceOf[QueryPropertyValue]
   }
   
-  extension [Self <: QueryPropertyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryPropertyValue] (val x: Self) extends AnyVal {
     
     inline def setGet_boolVal(value: () => Boolean): Self = StObject.set(x, "get_boolVal", js.Any.fromFunction0(value))
     

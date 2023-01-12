@@ -25,7 +25,8 @@ object ItemDefaults {
     __obj.asInstanceOf[ItemDefaults]
   }
   
-  extension [Self <: ItemDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemDefaults] (val x: Self) extends AnyVal {
     
     inline def setItemDefaults(value: js.Array[String]): Self = StObject.set(x, "itemDefaults", value.asInstanceOf[js.Any])
     

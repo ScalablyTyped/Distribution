@@ -724,7 +724,8 @@ object sapUiWebcMainTabContainerMod {
       __obj.asInstanceOf[TabContainerSettings]
     }
     
-    extension [Self <: TabContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       

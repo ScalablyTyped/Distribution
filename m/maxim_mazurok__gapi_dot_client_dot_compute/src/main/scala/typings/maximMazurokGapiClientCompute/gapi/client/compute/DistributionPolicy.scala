@@ -19,7 +19,8 @@ object DistributionPolicy {
     __obj.asInstanceOf[DistributionPolicy]
   }
   
-  extension [Self <: DistributionPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPolicy] (val x: Self) extends AnyVal {
     
     inline def setTargetShape(value: String): Self = StObject.set(x, "targetShape", value.asInstanceOf[js.Any])
     

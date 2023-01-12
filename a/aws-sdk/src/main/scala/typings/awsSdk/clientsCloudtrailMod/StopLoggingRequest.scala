@@ -18,7 +18,8 @@ object StopLoggingRequest {
     __obj.asInstanceOf[StopLoggingRequest]
   }
   
-  extension [Self <: StopLoggingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopLoggingRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

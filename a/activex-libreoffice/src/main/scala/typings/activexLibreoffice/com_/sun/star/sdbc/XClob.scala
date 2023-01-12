@@ -91,7 +91,8 @@ object XClob {
     __obj.asInstanceOf[XClob]
   }
   
-  extension [Self <: XClob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XClob] (val x: Self) extends AnyVal {
     
     inline def setCharacterStream(value: XInputStream): Self = StObject.set(x, "CharacterStream", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Channel]
     }
     
-    extension [Self <: Channel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Channel] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[RemoveEventListener]
     }
     
-    extension [Self <: RemoveEventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEventListener] (val x: Self) extends AnyVal {
       
       inline def setRemoveEventListener(value: (String, js.Function, Boolean) => Unit): Self = StObject.set(x, "removeEventListener", js.Any.fromFunction3(value))
     }
@@ -52,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Double): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
@@ -69,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Views]
     }
     
-    extension [Self <: Views](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Views] (val x: Self) extends AnyVal {
       
       inline def setViews(value: StringDictionary[js.Object]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     }

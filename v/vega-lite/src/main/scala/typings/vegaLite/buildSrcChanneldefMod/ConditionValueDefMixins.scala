@@ -23,7 +23,8 @@ object ConditionValueDefMixins {
     __obj.asInstanceOf[ConditionValueDefMixins[V]]
   }
   
-  extension [Self <: ConditionValueDefMixins[?], V /* <: Value[ExprRef | SignalRef] */](x: Self & ConditionValueDefMixins[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionValueDefMixins[?], V /* <: Value[ExprRef | SignalRef] */] (val x: Self & ConditionValueDefMixins[V]) extends AnyVal {
     
     inline def setCondition(value: Conditional[ValueDef[V]] | js.Array[Conditional[ValueDef[V]]]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

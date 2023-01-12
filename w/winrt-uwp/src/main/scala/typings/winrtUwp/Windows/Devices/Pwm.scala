@@ -40,7 +40,8 @@ object Pwm {
       __obj.asInstanceOf[PwmController]
     }
     
-    extension [Self <: PwmController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwmController] (val x: Self) extends AnyVal {
       
       inline def setActualFrequency(value: Any): Self = StObject.set(x, "actualFrequency", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object Pwm {
       __obj.asInstanceOf[PwmPin]
     }
     
-    extension [Self <: PwmPin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PwmPin] (val x: Self) extends AnyVal {
       
       inline def setClose(value: Any): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       

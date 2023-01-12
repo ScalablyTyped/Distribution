@@ -23,7 +23,8 @@ object ExternalItemContent {
     __obj.asInstanceOf[ExternalItemContent]
   }
   
-  extension [Self <: ExternalItemContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalItemContent] (val x: Self) extends AnyVal {
     
     inline def setType(value: ExternalItemContentType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DocumentSuggesterOptions {
     __obj.asInstanceOf[DocumentSuggesterOptions]
   }
   
-  extension [Self <: DocumentSuggesterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentSuggesterOptions] (val x: Self) extends AnyVal {
     
     inline def setFuzzyMatching(value: SuggesterFuzzyMatching): Self = StObject.set(x, "FuzzyMatching", value.asInstanceOf[js.Any])
     

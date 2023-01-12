@@ -19,7 +19,8 @@ object PolygonSeriesPoint {
     __obj.asInstanceOf[PolygonSeriesPoint]
   }
   
-  extension [Self <: PolygonSeriesPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonSeriesPoint] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

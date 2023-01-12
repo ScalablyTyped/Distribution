@@ -28,7 +28,8 @@ object ImageOccurrence {
     __obj.asInstanceOf[ImageOccurrence]
   }
   
-  extension [Self <: ImageOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageOccurrence] (val x: Self) extends AnyVal {
     
     inline def setBaseResourceUrl(value: String): Self = StObject.set(x, "baseResourceUrl", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object distComponentsFileIconIconMapMod {
       __obj.asInstanceOf[IconMap_]
     }
     
-    extension [Self <: IconMap_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconMap_] (val x: Self) extends AnyVal {
       
       inline def set1(value: Alt): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distComponentsFileIconIconMapMod {
       __obj.asInstanceOf[IconProps]
     }
     
-    extension [Self <: IconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconProps] (val x: Self) extends AnyVal {
       
       inline def set1(value: IconPropsV1): Self = StObject.set(x, "1", value.asInstanceOf[js.Any])
       

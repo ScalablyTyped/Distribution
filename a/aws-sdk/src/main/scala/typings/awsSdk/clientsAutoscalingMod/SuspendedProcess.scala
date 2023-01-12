@@ -23,7 +23,8 @@ object SuspendedProcess {
     __obj.asInstanceOf[SuspendedProcess]
   }
   
-  extension [Self <: SuspendedProcess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspendedProcess] (val x: Self) extends AnyVal {
     
     inline def setProcessName(value: XmlStringMaxLen255): Self = StObject.set(x, "ProcessName", value.asInstanceOf[js.Any])
     

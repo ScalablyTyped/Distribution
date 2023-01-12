@@ -39,7 +39,8 @@ object CurveTimeline {
     __obj.asInstanceOf[CurveTimeline]
   }
   
-  extension [Self <: CurveTimeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurveTimeline] (val x: Self) extends AnyVal {
     
     inline def setCurves(value: Any): Self = StObject.set(x, "curves", value.asInstanceOf[js.Any])
     

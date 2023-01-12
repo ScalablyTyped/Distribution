@@ -22,7 +22,8 @@ object AttrsCastAttrs {
     __obj.asInstanceOf[AttrsCastAttrs]
   }
   
-  extension [Self <: AttrsCastAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsCastAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: CastAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

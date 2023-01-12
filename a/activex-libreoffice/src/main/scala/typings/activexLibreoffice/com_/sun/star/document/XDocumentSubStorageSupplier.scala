@@ -51,7 +51,8 @@ object XDocumentSubStorageSupplier {
     __obj.asInstanceOf[XDocumentSubStorageSupplier]
   }
   
-  extension [Self <: XDocumentSubStorageSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentSubStorageSupplier] (val x: Self) extends AnyVal {
     
     inline def setDocumentSubStoragesNames(value: SafeArray[String]): Self = StObject.set(x, "DocumentSubStoragesNames", value.asInstanceOf[js.Any])
     

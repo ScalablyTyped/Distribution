@@ -57,7 +57,8 @@ object VoxelVariableStyle {
     __obj.asInstanceOf[VoxelVariableStyle]
   }
   
-  extension [Self <: VoxelVariableStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelVariableStyle] (val x: Self) extends AnyVal {
     
     inline def setIsosurfaces(value: Collection[VoxelIsosurface]): Self = StObject.set(x, "isosurfaces", value.asInstanceOf[js.Any])
     

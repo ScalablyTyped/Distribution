@@ -44,7 +44,8 @@ object VehicleJourneySegment {
     __obj.asInstanceOf[VehicleJourneySegment]
   }
   
-  extension [Self <: VehicleJourneySegment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VehicleJourneySegment] (val x: Self) extends AnyVal {
     
     inline def setDistanceMeters(value: Double): Self = StObject.set(x, "distanceMeters", value.asInstanceOf[js.Any])
     

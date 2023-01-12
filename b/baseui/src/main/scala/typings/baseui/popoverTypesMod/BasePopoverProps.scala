@@ -103,7 +103,8 @@ object BasePopoverProps {
     __obj.asInstanceOf[BasePopoverProps]
   }
   
-  extension [Self <: BasePopoverProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePopoverProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DescribeRootFoldersResponse {
     __obj.asInstanceOf[DescribeRootFoldersResponse]
   }
   
-  extension [Self <: DescribeRootFoldersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRootFoldersResponse] (val x: Self) extends AnyVal {
     
     inline def setFolders(value: FolderMetadataList): Self = StObject.set(x, "Folders", value.asInstanceOf[js.Any])
     

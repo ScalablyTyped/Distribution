@@ -28,7 +28,8 @@ object BackButtonOptions {
     __obj.asInstanceOf[BackButtonOptions]
   }
   
-  extension [Self <: BackButtonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackButtonOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object structsLinkedListMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object structsLinkedListMod {
       __obj.asInstanceOf[LinkedList]
     }
     
-    extension [Self <: LinkedList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedList] (val x: Self) extends AnyVal {
       
       inline def setConcat(value: LinkedList => Unit): Self = StObject.set(x, "concat", js.Any.fromFunction1(value))
       

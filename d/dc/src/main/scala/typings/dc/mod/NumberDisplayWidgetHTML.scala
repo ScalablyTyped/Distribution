@@ -19,7 +19,8 @@ object NumberDisplayWidgetHTML {
     __obj.asInstanceOf[NumberDisplayWidgetHTML]
   }
   
-  extension [Self <: NumberDisplayWidgetHTML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberDisplayWidgetHTML] (val x: Self) extends AnyVal {
     
     inline def setNone(value: String): Self = StObject.set(x, "none", value.asInstanceOf[js.Any])
     

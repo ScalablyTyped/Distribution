@@ -19,7 +19,8 @@ object ReturnTypeQuerySelectorResponse {
     __obj.asInstanceOf[ReturnTypeQuerySelectorResponse]
   }
   
-  extension [Self <: ReturnTypeQuerySelectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeQuerySelectorResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[QuerySelectorRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

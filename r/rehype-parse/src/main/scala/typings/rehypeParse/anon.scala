@@ -197,7 +197,8 @@ object anon {
       __obj.asInstanceOf[AbandonedHeadElementChild]
     }
     
-    extension [Self <: AbandonedHeadElementChild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbandonedHeadElementChild] (val x: Self) extends AnyVal {
       
       inline def setAbandonedHeadElementChild(value: Description): Self = StObject.set(x, "abandonedHeadElementChild", value.asInstanceOf[js.Any])
       
@@ -336,7 +337,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -359,7 +361,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

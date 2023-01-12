@@ -17,7 +17,8 @@ object AsnCompareSchemaResult {
     __obj.asInstanceOf[AsnCompareSchemaResult]
   }
   
-  extension [Self <: AsnCompareSchemaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsnCompareSchemaResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

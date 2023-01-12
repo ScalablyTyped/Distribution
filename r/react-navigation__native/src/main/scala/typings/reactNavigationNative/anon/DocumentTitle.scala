@@ -31,7 +31,8 @@ object DocumentTitle {
     __obj.asInstanceOf[DocumentTitle[RootParamList]]
   }
   
-  extension [Self <: DocumentTitle[?], RootParamList /* <: js.Object */](x: Self & DocumentTitle[RootParamList]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentTitle[?], RootParamList /* <: js.Object */] (val x: Self & DocumentTitle[RootParamList]) extends AnyVal {
     
     inline def setDocumentTitle(value: DocumentTitleOptions): Self = StObject.set(x, "documentTitle", value.asInstanceOf[js.Any])
     

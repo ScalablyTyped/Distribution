@@ -44,7 +44,8 @@ object TagToken {
     __obj.asInstanceOf[TagToken]
   }
   
-  extension [Self <: TagToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagToken] (val x: Self) extends AnyVal {
     
     inline def setAckSelfClosing(value: Boolean): Self = StObject.set(x, "ackSelfClosing", value.asInstanceOf[js.Any])
     

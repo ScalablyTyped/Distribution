@@ -23,7 +23,8 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  extension [Self <: Filter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     inline def setContextRowId(value: RowId): Self = StObject.set(x, "contextRowId", value.asInstanceOf[js.Any])
     

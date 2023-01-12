@@ -16,7 +16,8 @@ object OpaqueViewState {
     __obj.asInstanceOf[OpaqueViewState]
   }
   
-  extension [Self <: OpaqueViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpaqueViewState] (val x: Self) extends AnyVal {
     
     inline def set__brand__(value: `Brand for OpaqueViewState that nothing will match`): Self = StObject.set(x, "__brand__", value.asInstanceOf[js.Any])
   }

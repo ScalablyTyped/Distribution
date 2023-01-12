@@ -39,7 +39,8 @@ object KeyBinding {
     __obj.asInstanceOf[KeyBinding]
   }
   
-  extension [Self <: KeyBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyBinding] (val x: Self) extends AnyVal {
     
     inline def setCopyToClipboard(value: String | Boolean): Self = StObject.set(x, "copyToClipboard", value.asInstanceOf[js.Any])
     

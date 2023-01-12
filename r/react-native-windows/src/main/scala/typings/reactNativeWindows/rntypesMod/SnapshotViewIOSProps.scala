@@ -21,7 +21,8 @@ object SnapshotViewIOSProps {
     __obj.asInstanceOf[SnapshotViewIOSProps]
   }
   
-  extension [Self <: SnapshotViewIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotViewIOSProps] (val x: Self) extends AnyVal {
     
     inline def setOnSnapshotReady(value: () => Any): Self = StObject.set(x, "onSnapshotReady", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object EnumValuesBadRequest {
     __obj.asInstanceOf[EnumValuesBadRequest]
   }
   
-  extension [Self <: EnumValuesBadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesBadRequest] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: BadRequest): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

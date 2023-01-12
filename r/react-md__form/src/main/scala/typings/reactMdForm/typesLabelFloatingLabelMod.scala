@@ -40,7 +40,8 @@ object typesLabelFloatingLabelMod {
       __obj.asInstanceOf[FloatingLabelProps]
     }
     
-    extension [Self <: FloatingLabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingLabelProps] (val x: Self) extends AnyVal {
       
       inline def setDense(value: Boolean): Self = StObject.set(x, "dense", value.asInstanceOf[js.Any])
       

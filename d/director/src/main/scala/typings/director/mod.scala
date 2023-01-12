@@ -180,7 +180,8 @@ object mod {
         __obj.asInstanceOf[CliRouterContext[TTY]]
       }
       
-      extension [Self <: CliRouterContext[?], TTY](x: Self & CliRouterContext[TTY]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CliRouterContext[?], TTY] (val x: Self & CliRouterContext[TTY]) extends AnyVal {
         
         inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
         
@@ -806,7 +807,8 @@ object mod {
         __obj.asInstanceOf[HttpRouteHandlerOptions]
       }
       
-      extension [Self <: HttpRouteHandlerOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HttpRouteHandlerOptions] (val x: Self) extends AnyVal {
         
         inline def setAccept(value: BaseOrArray[String | js.RegExp]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
@@ -836,7 +838,8 @@ object mod {
         __obj.asInstanceOf[HttpRouterContext]
       }
       
-      extension [Self <: HttpRouterContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HttpRouterContext] (val x: Self) extends AnyVal {
         
         inline def setReq(value: IncomingMessage): Self = StObject.set(x, "req", value.asInstanceOf[js.Any])
         
@@ -915,7 +918,8 @@ object mod {
         __obj.asInstanceOf[HttpRoutingOptions]
       }
       
-      extension [Self <: HttpRoutingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HttpRoutingOptions] (val x: Self) extends AnyVal {
         
         inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
         
@@ -1024,7 +1028,8 @@ object mod {
       __obj.asInstanceOf[RoutingOptions[ThisType]]
     }
     
-    extension [Self <: RoutingOptions[?], ThisType](x: Self & RoutingOptions[ThisType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoutingOptions[?], ThisType] (val x: Self & RoutingOptions[ThisType]) extends AnyVal {
       
       inline def setAfter(value: RouteEntry[ThisType]): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

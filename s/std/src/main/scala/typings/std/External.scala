@@ -22,7 +22,8 @@ object External {
     __obj.asInstanceOf[External]
   }
   
-  extension [Self <: External](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: External] (val x: Self) extends AnyVal {
     
     inline def setAddSearchProvider(value: () => Unit): Self = StObject.set(x, "AddSearchProvider", js.Any.fromFunction0(value))
     

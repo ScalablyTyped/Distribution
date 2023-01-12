@@ -18,7 +18,8 @@ object ResourceDetails {
     __obj.asInstanceOf[ResourceDetails]
   }
   
-  extension [Self <: ResourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceDetails] (val x: Self) extends AnyVal {
     
     inline def setEC2ResourceDetails(value: EC2ResourceDetails): Self = StObject.set(x, "EC2ResourceDetails", value.asInstanceOf[js.Any])
     

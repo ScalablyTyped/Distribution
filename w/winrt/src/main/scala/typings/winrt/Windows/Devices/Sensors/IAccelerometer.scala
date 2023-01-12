@@ -29,7 +29,8 @@ object IAccelerometer {
     __obj.asInstanceOf[IAccelerometer]
   }
   
-  extension [Self <: IAccelerometer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccelerometer] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentReading(value: () => AccelerometerReading): Self = StObject.set(x, "getCurrentReading", js.Any.fromFunction0(value))
     

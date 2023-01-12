@@ -30,7 +30,8 @@ object utilConvertAstMod {
       __obj.asInstanceOf[ConvertedAst]
     }
     
-    extension [Self <: ConvertedAst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvertedAst] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: js.Array[Node]): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object utilConvertAstMod {
       __obj.asInstanceOf[NodeWrap]
     }
     
-    extension [Self <: NodeWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeWrap] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[NodeWrap]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object utilConvertAstMod {
       __obj.asInstanceOf[WrappedAst]
     }
     
-    extension [Self <: WrappedAst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedAst] (val x: Self) extends AnyVal {
       
       inline def setNext(value: NodeWrap): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       

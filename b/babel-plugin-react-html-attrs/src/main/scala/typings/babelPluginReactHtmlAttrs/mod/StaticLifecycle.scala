@@ -19,7 +19,8 @@ object StaticLifecycle {
     __obj.asInstanceOf[StaticLifecycle[P, S]]
   }
   
-  extension [Self <: StaticLifecycle[?, ?], P, S](x: Self & (StaticLifecycle[P, S])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticLifecycle[?, ?], P, S] (val x: Self & (StaticLifecycle[P, S])) extends AnyVal {
     
     inline def setGetDerivedStateFromError(value: /* error */ Any => Partial[S] | Null): Self = StObject.set(x, "getDerivedStateFromError", js.Any.fromFunction1(value))
     

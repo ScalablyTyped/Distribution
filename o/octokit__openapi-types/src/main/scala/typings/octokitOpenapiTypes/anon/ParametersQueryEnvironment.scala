@@ -17,7 +17,8 @@ object ParametersQueryEnvironment {
     __obj.asInstanceOf[ParametersQueryEnvironment]
   }
   
-  extension [Self <: ParametersQueryEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryEnvironment] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryEnvironment): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

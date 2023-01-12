@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ShowMatcherMessage]
     }
     
-    extension [Self <: ShowMatcherMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowMatcherMessage] (val x: Self) extends AnyVal {
       
       inline def setShowMatcherMessage(value: Boolean): Self = StObject.set(x, "showMatcherMessage", value.asInstanceOf[js.Any])
       

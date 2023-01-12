@@ -28,7 +28,8 @@ object ListMonitorsRequest {
     __obj.asInstanceOf[ListMonitorsRequest]
   }
   
-  extension [Self <: ListMonitorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMonitorsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: Filters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

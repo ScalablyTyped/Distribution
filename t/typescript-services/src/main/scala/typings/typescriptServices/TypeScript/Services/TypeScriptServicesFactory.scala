@@ -42,7 +42,8 @@ object TypeScriptServicesFactory {
     __obj.asInstanceOf[TypeScriptServicesFactory]
   }
   
-  extension [Self <: TypeScriptServicesFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeScriptServicesFactory] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[ItemOfSelectInput]
     }
     
-    extension [Self <: ItemOfSelectInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemOfSelectInput] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String | Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[SelectInputProps[T]]
     }
     
-    extension [Self <: SelectInputProps[?], T /* <: ItemOfSelectInput */](x: Self & SelectInputProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectInputProps[?], T /* <: ItemOfSelectInput */] (val x: Self & SelectInputProps[T]) extends AnyVal {
       
       inline def setFocus(value: Boolean): Self = StObject.set(x, "focus", value.asInstanceOf[js.Any])
       

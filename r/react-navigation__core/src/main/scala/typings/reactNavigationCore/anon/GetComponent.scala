@@ -27,7 +27,8 @@ object GetComponent {
     __obj.asInstanceOf[GetComponent[ParamList, RouteName]]
   }
   
-  extension [Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (GetComponent[ParamList, RouteName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComponent[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (GetComponent[ParamList, RouteName])) extends AnyVal {
     
     inline def setGetComponent(value: () => ScreenComponentType[ParamList, RouteName]): Self = StObject.set(x, "getComponent", js.Any.fromFunction0(value))
   }

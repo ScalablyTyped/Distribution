@@ -48,7 +48,8 @@ object PermissionGroup {
     __obj.asInstanceOf[PermissionGroup]
   }
   
-  extension [Self <: PermissionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionGroup] (val x: Self) extends AnyVal {
     
     inline def setApplicationPermissions(value: ApplicationPermissionList): Self = StObject.set(x, "applicationPermissions", value.asInstanceOf[js.Any])
     

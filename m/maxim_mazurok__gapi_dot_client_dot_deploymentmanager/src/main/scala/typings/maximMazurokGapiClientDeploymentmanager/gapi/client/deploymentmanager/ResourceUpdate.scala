@@ -39,7 +39,8 @@ object ResourceUpdate {
     __obj.asInstanceOf[ResourceUpdate]
   }
   
-  extension [Self <: ResourceUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceUpdate] (val x: Self) extends AnyVal {
     
     inline def setAccessControl(value: ResourceAccessControl): Self = StObject.set(x, "accessControl", value.asInstanceOf[js.Any])
     

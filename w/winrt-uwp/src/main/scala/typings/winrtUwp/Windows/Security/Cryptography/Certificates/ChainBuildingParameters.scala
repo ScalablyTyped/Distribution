@@ -44,7 +44,8 @@ object ChainBuildingParameters {
     __obj.asInstanceOf[ChainBuildingParameters]
   }
   
-  extension [Self <: ChainBuildingParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainBuildingParameters] (val x: Self) extends AnyVal {
     
     inline def setAuthorityInformationAccessEnabled(value: Boolean): Self = StObject.set(x, "authorityInformationAccessEnabled", value.asInstanceOf[js.Any])
     

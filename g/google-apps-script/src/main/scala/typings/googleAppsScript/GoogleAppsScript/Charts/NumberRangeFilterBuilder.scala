@@ -40,7 +40,8 @@ object NumberRangeFilterBuilder {
     __obj.asInstanceOf[NumberRangeFilterBuilder]
   }
   
-  extension [Self <: NumberRangeFilterBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberRangeFilterBuilder] (val x: Self) extends AnyVal {
     
     inline def setSetMaxValue(value: Integer => NumberRangeFilterBuilder): Self = StObject.set(x, "setMaxValue", js.Any.fromFunction1(value))
     

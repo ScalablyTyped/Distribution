@@ -34,7 +34,8 @@ object addonDotOCRMod {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setGetLineRect(value: () => String): Self = StObject.set(x, "GetLineRect", js.Any.fromFunction0(value))
       
@@ -274,7 +275,8 @@ object addonDotOCRMod {
       __obj.asInstanceOf[OCRResult]
     }
     
-    extension [Self <: OCRResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OCRResult] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
       
@@ -314,7 +316,8 @@ object addonDotOCRMod {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setGetLineContent(value: Double => Line): Self = StObject.set(x, "GetLineContent", js.Any.fromFunction1(value))
       
@@ -342,7 +345,8 @@ object addonDotOCRMod {
       __obj.asInstanceOf[PageSet]
     }
     
-    extension [Self <: PageSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSet] (val x: Self) extends AnyVal {
       
       inline def setGetPageContent(value: Double => Page): Self = StObject.set(x, "GetPageContent", js.Any.fromFunction1(value))
       
@@ -382,7 +386,8 @@ object addonDotOCRMod {
       __obj.asInstanceOf[Word]
     }
     
-    extension [Self <: Word](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Word] (val x: Self) extends AnyVal {
       
       inline def setGetFontName(value: () => String): Self = StObject.set(x, "GetFontName", js.Any.fromFunction0(value))
       

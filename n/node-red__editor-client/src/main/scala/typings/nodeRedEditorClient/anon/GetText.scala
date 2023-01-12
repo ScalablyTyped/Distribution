@@ -18,7 +18,8 @@ object GetText {
     __obj.asInstanceOf[GetText]
   }
   
-  extension [Self <: GetText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetText] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: () => Unit): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     

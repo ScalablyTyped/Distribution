@@ -242,7 +242,8 @@ object PinchStateeventPointerEve {
     __obj.asInstanceOf[PinchStateeventPointerEve]
   }
   
-  extension [Self <: PinchStateeventPointerEve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchStateeventPointerEve] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

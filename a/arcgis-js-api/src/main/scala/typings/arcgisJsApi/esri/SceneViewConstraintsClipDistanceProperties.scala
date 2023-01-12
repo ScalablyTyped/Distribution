@@ -38,7 +38,8 @@ object SceneViewConstraintsClipDistanceProperties {
     __obj.asInstanceOf[SceneViewConstraintsClipDistanceProperties]
   }
   
-  extension [Self <: SceneViewConstraintsClipDistanceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewConstraintsClipDistanceProperties] (val x: Self) extends AnyVal {
     
     inline def setFar(value: Double): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     

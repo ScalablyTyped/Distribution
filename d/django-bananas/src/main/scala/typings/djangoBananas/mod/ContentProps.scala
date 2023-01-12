@@ -19,7 +19,8 @@ object ContentProps {
     __obj.asInstanceOf[ContentProps]
   }
   
-  extension [Self <: ContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

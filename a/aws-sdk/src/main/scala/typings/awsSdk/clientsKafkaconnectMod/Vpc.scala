@@ -23,7 +23,8 @@ object Vpc {
     __obj.asInstanceOf[Vpc]
   }
   
-  extension [Self <: Vpc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vpc] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroups(value: listOfString): Self = StObject.set(x, "securityGroups", value.asInstanceOf[js.Any])
     

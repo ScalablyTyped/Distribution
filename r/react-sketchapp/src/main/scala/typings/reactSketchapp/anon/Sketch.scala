@@ -15,7 +15,8 @@ object Sketch {
     __obj.asInstanceOf[Sketch]
   }
   
-  extension [Self <: Sketch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sketch] (val x: Self) extends AnyVal {
     
     inline def setSketch(value: Any): Self = StObject.set(x, "sketch", value.asInstanceOf[js.Any])
   }

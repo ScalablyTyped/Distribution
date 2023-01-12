@@ -19,7 +19,8 @@ object PickupCarrierService {
     __obj.asInstanceOf[PickupCarrierService]
   }
   
-  extension [Self <: PickupCarrierService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickupCarrierService] (val x: Self) extends AnyVal {
     
     inline def setCarrierName(value: String): Self = StObject.set(x, "carrierName", value.asInstanceOf[js.Any])
     

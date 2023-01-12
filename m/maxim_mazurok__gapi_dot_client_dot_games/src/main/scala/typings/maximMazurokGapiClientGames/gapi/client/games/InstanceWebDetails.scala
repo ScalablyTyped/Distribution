@@ -22,7 +22,8 @@ object InstanceWebDetails {
     __obj.asInstanceOf[InstanceWebDetails]
   }
   
-  extension [Self <: InstanceWebDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceWebDetails] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

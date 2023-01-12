@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Children[T]]
     }
     
-    extension [Self <: Children[?], T /* <: js.Array[Any] */](x: Self & Children[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?], T /* <: js.Array[Any] */] (val x: Self & Children[T]) extends AnyVal {
       
       inline def setChildren(value: T => Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Default[T]]
     }
     
-    extension [Self <: Default[?], T](x: Self & Default[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default[?], T] (val x: Self & Default[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -55,7 +57,8 @@ object anon {
       __obj.asInstanceOf[PartialIConfig]
     }
     
-    extension [Self <: PartialIConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIConfig] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* e */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
@@ -75,7 +78,8 @@ object anon {
       __obj.asInstanceOf[PartialSideCarHOC]
     }
     
-    extension [Self <: PartialSideCarHOC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSideCarHOC] (val x: Self) extends AnyVal {
       
       inline def setSideCar(value: SideCarMedium[js.Object]): Self = StObject.set(x, "sideCar", value.asInstanceOf[js.Any])
       

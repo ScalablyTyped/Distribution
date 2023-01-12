@@ -87,7 +87,8 @@ object minimatch {
       __obj.asInstanceOf[IMinimatchOptions]
     }
     
-    extension [Self <: IMinimatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMinimatchOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteProtocolsListRequest {
     __obj.asInstanceOf[DeleteProtocolsListRequest]
   }
   
-  extension [Self <: DeleteProtocolsListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProtocolsListRequest] (val x: Self) extends AnyVal {
     
     inline def setListId(value: ListId): Self = StObject.set(x, "ListId", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object StartThingRegistrationTaskResponse {
     __obj.asInstanceOf[StartThingRegistrationTaskResponse]
   }
   
-  extension [Self <: StartThingRegistrationTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartThingRegistrationTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
     

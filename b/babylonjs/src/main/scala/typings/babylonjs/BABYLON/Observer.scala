@@ -42,7 +42,8 @@ object Observer {
     __obj.asInstanceOf[Observer[T]]
   }
   
-  extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     inline def setCallback(value: (T, EventState) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
     

@@ -39,7 +39,8 @@ object Eligibility {
     __obj.asInstanceOf[Eligibility]
   }
   
-  extension [Self <: Eligibility](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Eligibility] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: GIFT | ACCOUNT_CREDIT | OTHER): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object typesTraceSummaryMod {
       __obj.asInstanceOf[TraceSummary]
     }
     
-    extension [Self <: TraceSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TraceSummary] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(
         value: (StringDictionary[js.Array[ValueWithServiceIds] | js.Iterable[ValueWithServiceIds]]) | (js.Iterable[
@@ -174,7 +175,8 @@ object typesTraceSummaryMod {
       __obj.asInstanceOf[UnmarshalledTraceSummary]
     }
     
-    extension [Self <: UnmarshalledTraceSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTraceSummary] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: StringDictionary[js.Array[UnmarshalledValueWithServiceIds]]): Self = StObject.set(x, "Annotations", value.asInstanceOf[js.Any])
       

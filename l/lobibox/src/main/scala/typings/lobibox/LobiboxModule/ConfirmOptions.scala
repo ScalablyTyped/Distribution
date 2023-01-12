@@ -17,7 +17,8 @@ object ConfirmOptions {
     __obj.asInstanceOf[ConfirmOptions]
   }
   
-  extension [Self <: ConfirmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object DocumentHighlightProvider {
     __obj.asInstanceOf[DocumentHighlightProvider]
   }
   
-  extension [Self <: DocumentHighlightProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentHighlightProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideDocumentHighlights(value: (TextDocument, Position, CancellationToken) => ProviderResult[js.Array[DocumentHighlight]]): Self = StObject.set(x, "provideDocumentHighlights", js.Any.fromFunction3(value))
   }

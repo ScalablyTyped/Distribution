@@ -58,7 +58,8 @@ object FormField {
     __obj.asInstanceOf[FormField]
   }
   
-  extension [Self <: FormField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormField] (val x: Self) extends AnyVal {
     
     inline def setApi_id(value: String): Self = StObject.set(x, "api_id", value.asInstanceOf[js.Any])
     

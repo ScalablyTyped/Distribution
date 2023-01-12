@@ -19,7 +19,8 @@ object IKmlScreenOverlayOptions {
     __obj.asInstanceOf[IKmlScreenOverlayOptions]
   }
   
-  extension [Self <: IKmlScreenOverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKmlScreenOverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setBelowNavigationBar(value: Boolean): Self = StObject.set(x, "belowNavigationBar", value.asInstanceOf[js.Any])
     

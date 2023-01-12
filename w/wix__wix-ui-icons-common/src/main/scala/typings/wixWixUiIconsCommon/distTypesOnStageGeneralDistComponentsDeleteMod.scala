@@ -27,7 +27,8 @@ object distTypesOnStageGeneralDistComponentsDeleteMod extends Shortcut {
       __obj.asInstanceOf[DeleteProps]
     }
     
-    extension [Self <: DeleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

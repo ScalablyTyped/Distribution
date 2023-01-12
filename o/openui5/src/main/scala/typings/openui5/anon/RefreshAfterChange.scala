@@ -65,7 +65,8 @@ object RefreshAfterChange {
     __obj.asInstanceOf[RefreshAfterChange]
   }
   
-  extension [Self <: RefreshAfterChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshAfterChange] (val x: Self) extends AnyVal {
     
     inline def setBatchGroupId(value: String): Self = StObject.set(x, "batchGroupId", value.asInstanceOf[js.Any])
     

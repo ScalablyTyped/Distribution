@@ -30,7 +30,8 @@ object typesGetShardIteratorOutputMod {
       __obj.asInstanceOf[GetShardIteratorOutput]
     }
     
-    extension [Self <: GetShardIteratorOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetShardIteratorOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

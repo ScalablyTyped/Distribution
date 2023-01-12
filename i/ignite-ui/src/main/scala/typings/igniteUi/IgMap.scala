@@ -478,7 +478,8 @@ object IgMap {
     __obj.asInstanceOf[IgMap]
   }
   
-  extension [Self <: IgMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgMap] (val x: Self) extends AnyVal {
     
     inline def setAutoMarginHeight(value: Double): Self = StObject.set(x, "autoMarginHeight", value.asInstanceOf[js.Any])
     

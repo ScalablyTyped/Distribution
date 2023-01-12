@@ -30,7 +30,8 @@ object ConfirmPaymentIntentWithoutElementsOptions {
     __obj.asInstanceOf[ConfirmPaymentIntentWithoutElementsOptions]
   }
   
-  extension [Self <: ConfirmPaymentIntentWithoutElementsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmPaymentIntentWithoutElementsOptions] (val x: Self) extends AnyVal {
     
     inline def setPayment_method(value: String): Self = StObject.set(x, "payment_method", value.asInstanceOf[js.Any])
     

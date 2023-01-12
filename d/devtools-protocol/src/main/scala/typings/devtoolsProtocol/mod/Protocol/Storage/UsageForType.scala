@@ -23,7 +23,8 @@ object UsageForType {
     __obj.asInstanceOf[UsageForType]
   }
   
-  extension [Self <: UsageForType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageForType] (val x: Self) extends AnyVal {
     
     inline def setStorageType(value: StorageType): Self = StObject.set(x, "storageType", value.asInstanceOf[js.Any])
     

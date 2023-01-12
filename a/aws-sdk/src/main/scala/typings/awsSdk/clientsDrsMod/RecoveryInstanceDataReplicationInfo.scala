@@ -43,7 +43,8 @@ object RecoveryInstanceDataReplicationInfo {
     __obj.asInstanceOf[RecoveryInstanceDataReplicationInfo]
   }
   
-  extension [Self <: RecoveryInstanceDataReplicationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecoveryInstanceDataReplicationInfo] (val x: Self) extends AnyVal {
     
     inline def setDataReplicationError(value: RecoveryInstanceDataReplicationError): Self = StObject.set(x, "dataReplicationError", value.asInstanceOf[js.Any])
     

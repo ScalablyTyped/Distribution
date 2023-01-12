@@ -20,7 +20,8 @@ object ContextPermissions {
     __obj.asInstanceOf[ContextPermissions]
   }
   
-  extension [Self <: ContextPermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContextPermissions] (val x: Self) extends AnyVal {
     
     inline def setFromJson(value: High => Unit): Self = StObject.set(x, "fromJson", js.Any.fromFunction1(value))
     

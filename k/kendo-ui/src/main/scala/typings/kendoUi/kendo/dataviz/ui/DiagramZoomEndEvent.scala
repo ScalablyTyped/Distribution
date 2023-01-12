@@ -20,7 +20,8 @@ object DiagramZoomEndEvent {
     __obj.asInstanceOf[DiagramZoomEndEvent]
   }
   
-  extension [Self <: DiagramZoomEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramZoomEndEvent] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: Point): Self = StObject.set(x, "point", value.asInstanceOf[js.Any])
     

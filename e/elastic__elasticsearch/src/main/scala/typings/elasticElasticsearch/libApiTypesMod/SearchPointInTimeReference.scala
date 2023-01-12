@@ -17,7 +17,8 @@ object SearchPointInTimeReference {
     __obj.asInstanceOf[SearchPointInTimeReference]
   }
   
-  extension [Self <: SearchPointInTimeReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPointInTimeReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

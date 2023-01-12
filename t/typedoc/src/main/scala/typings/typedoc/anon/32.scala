@@ -16,7 +16,8 @@ object `32` {
     __obj.asInstanceOf[`32`]
   }
   
-  extension [Self <: `32`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `32`] (val x: Self) extends AnyVal {
     
     inline def setName(value: searchGroupBoosts): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

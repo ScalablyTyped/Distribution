@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[ComplexityOptions]
     }
     
-    extension [Self <: ComplexityOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComplexityOptions] (val x: Self) extends AnyVal {
       
       inline def setLowerCase(value: Double): Self = StObject.set(x, "lowerCase", value.asInstanceOf[js.Any])
       

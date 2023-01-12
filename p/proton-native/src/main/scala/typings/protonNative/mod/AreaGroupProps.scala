@@ -25,7 +25,8 @@ object AreaGroupProps {
     __obj.asInstanceOf[AreaGroupProps]
   }
   
-  extension [Self <: AreaGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaGroupProps] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double | String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

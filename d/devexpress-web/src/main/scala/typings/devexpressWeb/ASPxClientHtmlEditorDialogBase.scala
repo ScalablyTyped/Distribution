@@ -35,7 +35,8 @@ object ASPxClientHtmlEditorDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogBase]
   }
   
-  extension [Self <: ASPxClientHtmlEditorDialogBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorDialogBase] (val x: Self) extends AnyVal {
     
     inline def setGetCancelButton(value: () => ASPxClientButton): Self = StObject.set(x, "GetCancelButton", js.Any.fromFunction0(value))
     

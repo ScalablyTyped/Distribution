@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Plugins[TypesFuncArr, PluginFuncArr]]
     }
     
-    extension [Self <: Plugins[?, ?], TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */](x: Self & (Plugins[TypesFuncArr, PluginFuncArr])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugins[?, ?], TypesFuncArr /* <: js.UndefOr[FunctionRet[JimpType[Image]]] */, PluginFuncArr /* <: js.UndefOr[FunctionRet[JimpPlugin[Image]]] */] (val x: Self & (Plugins[TypesFuncArr, PluginFuncArr])) extends AnyVal {
       
       inline def setPlugins(value: PluginFuncArr): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       

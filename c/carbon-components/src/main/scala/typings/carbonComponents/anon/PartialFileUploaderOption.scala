@@ -54,7 +54,8 @@ object PartialFileUploaderOption {
     __obj.asInstanceOf[PartialFileUploaderOption]
   }
   
-  extension [Self <: PartialFileUploaderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFileUploaderOption] (val x: Self) extends AnyVal {
     
     inline def setClassDragOver(value: String): Self = StObject.set(x, "classDragOver", value.asInstanceOf[js.Any])
     

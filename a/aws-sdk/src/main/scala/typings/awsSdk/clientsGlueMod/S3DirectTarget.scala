@@ -48,7 +48,8 @@ object S3DirectTarget {
     __obj.asInstanceOf[S3DirectTarget]
   }
   
-  extension [Self <: S3DirectTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DirectTarget] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: EnclosedInStringProperty): Self = StObject.set(x, "Compression", value.asInstanceOf[js.Any])
     

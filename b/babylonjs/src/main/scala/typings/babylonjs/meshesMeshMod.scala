@@ -2043,7 +2043,8 @@ object meshesMeshMod {
       __obj.asInstanceOf[InstanceDataStorage]
     }
     
-    extension [Self <: InstanceDataStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceDataStorage] (val x: Self) extends AnyVal {
       
       inline def setBatchCache(value: InstancesBatch): Self = StObject.set(x, "batchCache", value.asInstanceOf[js.Any])
       
@@ -2119,7 +2120,8 @@ object meshesMeshMod {
       __obj.asInstanceOf[ThinInstanceDataStorage]
     }
     
-    extension [Self <: ThinInstanceDataStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThinInstanceDataStorage] (val x: Self) extends AnyVal {
       
       inline def setBoundingVectors(value: js.Array[Vector3]): Self = StObject.set(x, "boundingVectors", value.asInstanceOf[js.Any])
       
@@ -2177,7 +2179,8 @@ object meshesMeshMod {
         __obj.asInstanceOf[typings.babylonjs.meshesMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh]
       }
       
-      extension [Self <: typings.babylonjs.meshesMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.babylonjs.meshesMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh] (val x: Self) extends AnyVal {
         
         inline def setSetMaterialByID(value: String => typings.babylonjs.meshesMeshMod.babylonjsMeshesMeshAugmentingMod.Mesh): Self = StObject.set(x, "setMaterialByID", js.Any.fromFunction1(value))
       }

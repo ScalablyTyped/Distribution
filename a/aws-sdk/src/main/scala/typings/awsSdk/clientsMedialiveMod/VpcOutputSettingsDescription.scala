@@ -36,7 +36,8 @@ object VpcOutputSettingsDescription {
     __obj.asInstanceOf[VpcOutputSettingsDescription]
   }
   
-  extension [Self <: VpcOutputSettingsDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcOutputSettingsDescription] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: listOfString): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

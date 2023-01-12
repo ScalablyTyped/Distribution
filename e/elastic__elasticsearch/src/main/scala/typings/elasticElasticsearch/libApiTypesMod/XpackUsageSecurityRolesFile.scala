@@ -19,7 +19,8 @@ object XpackUsageSecurityRolesFile {
     __obj.asInstanceOf[XpackUsageSecurityRolesFile]
   }
   
-  extension [Self <: XpackUsageSecurityRolesFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageSecurityRolesFile] (val x: Self) extends AnyVal {
     
     inline def setDls(value: Boolean): Self = StObject.set(x, "dls", value.asInstanceOf[js.Any])
     

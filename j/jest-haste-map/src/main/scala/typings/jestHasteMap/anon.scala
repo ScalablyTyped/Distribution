@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[HasteFS]
     }
     
-    extension [Self <: HasteFS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasteFS] (val x: Self) extends AnyVal {
       
       inline def setHasteFS(value: IHasteFS): Self = StObject.set(x, "hasteFS", value.asInstanceOf[js.Any])
       

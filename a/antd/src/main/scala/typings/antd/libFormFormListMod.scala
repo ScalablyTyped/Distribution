@@ -32,7 +32,8 @@ object libFormFormListMod extends Shortcut {
       __obj.asInstanceOf[FormListFieldData]
     }
     
-    extension [Self <: FormListFieldData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormListFieldData] (val x: Self) extends AnyVal {
       
       inline def setFieldKey(value: Double): Self = StObject.set(x, "fieldKey", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object libFormFormListMod extends Shortcut {
       __obj.asInstanceOf[FormListProps]
     }
     
-    extension [Self <: FormListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Array[FormListFieldData], FormListOperation, Errors) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction3(value))
       

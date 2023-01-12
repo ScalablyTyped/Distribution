@@ -152,7 +152,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Attributes]
     }
     
-    extension [Self <: Attributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: Any): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TimeDataStatic]
     }
     
-    extension [Self <: TimeDataStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeDataStatic] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: () => String): Self = StObject.set(x, "allowed", js.Any.fromFunction0(value))
       
@@ -379,7 +381,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[WeekDataStatic]
     }
     
-    extension [Self <: WeekDataStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeekDataStatic] (val x: Self) extends AnyVal {
       
       inline def setFirstDay(value: () => String): Self = StObject.set(x, "firstDay", js.Any.fromFunction0(value))
       

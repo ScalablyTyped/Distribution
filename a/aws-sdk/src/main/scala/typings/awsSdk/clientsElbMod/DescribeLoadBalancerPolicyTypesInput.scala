@@ -18,7 +18,8 @@ object DescribeLoadBalancerPolicyTypesInput {
     __obj.asInstanceOf[DescribeLoadBalancerPolicyTypesInput]
   }
   
-  extension [Self <: DescribeLoadBalancerPolicyTypesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoadBalancerPolicyTypesInput] (val x: Self) extends AnyVal {
     
     inline def setPolicyTypeNames(value: PolicyTypeNames): Self = StObject.set(x, "PolicyTypeNames", value.asInstanceOf[js.Any])
     

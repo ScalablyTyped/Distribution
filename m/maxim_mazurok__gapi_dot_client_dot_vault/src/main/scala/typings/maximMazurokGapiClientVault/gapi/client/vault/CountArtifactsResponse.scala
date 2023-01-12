@@ -22,7 +22,8 @@ object CountArtifactsResponse {
     __obj.asInstanceOf[CountArtifactsResponse]
   }
   
-  extension [Self <: CountArtifactsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CountArtifactsResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupsCountResult(value: GroupsCountResult): Self = StObject.set(x, "groupsCountResult", value.asInstanceOf[js.Any])
     

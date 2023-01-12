@@ -309,7 +309,8 @@ object TextPortion {
     __obj.asInstanceOf[TextPortion]
   }
   
-  extension [Self <: TextPortion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPortion] (val x: Self) extends AnyVal {
     
     inline def setBookmark(value: XTextContent): Self = StObject.set(x, "Bookmark", value.asInstanceOf[js.Any])
     

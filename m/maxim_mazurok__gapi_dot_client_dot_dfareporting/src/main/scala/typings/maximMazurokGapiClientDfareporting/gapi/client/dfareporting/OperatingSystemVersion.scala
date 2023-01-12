@@ -31,7 +31,8 @@ object OperatingSystemVersion {
     __obj.asInstanceOf[OperatingSystemVersion]
   }
   
-  extension [Self <: OperatingSystemVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystemVersion] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object WebMapProperties {
     __obj.asInstanceOf[WebMapProperties]
   }
   
-  extension [Self <: WebMapProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebMapProperties] (val x: Self) extends AnyVal {
     
     inline def setApplicationProperties(value: ApplicationPropertiesProperties): Self = StObject.set(x, "applicationProperties", value.asInstanceOf[js.Any])
     

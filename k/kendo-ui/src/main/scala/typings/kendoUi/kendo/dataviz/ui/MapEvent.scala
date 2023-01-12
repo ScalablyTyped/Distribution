@@ -19,7 +19,8 @@ object MapEvent {
     __obj.asInstanceOf[MapEvent]
   }
   
-  extension [Self <: MapEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapEvent] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultPrevented(value: () => Boolean): Self = StObject.set(x, "isDefaultPrevented", js.Any.fromFunction0(value))
     

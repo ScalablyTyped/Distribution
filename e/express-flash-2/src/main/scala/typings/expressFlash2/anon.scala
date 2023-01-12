@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Flash]
     }
     
-    extension [Self <: Flash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flash] (val x: Self) extends AnyVal {
       
       inline def setFlash(value: typings.expressFlash2.mod.global.Express.Flash): Self = StObject.set(x, "flash", value.asInstanceOf[js.Any])
       

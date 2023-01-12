@@ -18,7 +18,8 @@ object ItemsHttpMethod {
     __obj.asInstanceOf[ItemsHttpMethod]
   }
   
-  extension [Self <: ItemsHttpMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsHttpMethod] (val x: Self) extends AnyVal {
     
     inline def setItems(value: HttpMethod): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

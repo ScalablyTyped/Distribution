@@ -86,7 +86,8 @@ object MailDevOptions {
     __obj.asInstanceOf[MailDevOptions]
   }
   
-  extension [Self <: MailDevOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailDevOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableWeb(value: Boolean): Self = StObject.set(x, "disableWeb", value.asInstanceOf[js.Any])
     

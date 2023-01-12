@@ -53,7 +53,8 @@ object BrokerSummary {
     __obj.asInstanceOf[BrokerSummary]
   }
   
-  extension [Self <: BrokerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerSummary] (val x: Self) extends AnyVal {
     
     inline def setBrokerArn(value: string): Self = StObject.set(x, "BrokerArn", value.asInstanceOf[js.Any])
     

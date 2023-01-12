@@ -19,7 +19,8 @@ object AmexPayWithPoints {
     __obj.asInstanceOf[AmexPayWithPoints]
   }
   
-  extension [Self <: AmexPayWithPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmexPayWithPoints] (val x: Self) extends AnyVal {
     
     inline def setAmexPayWithPoints(value: IneligibleCard): Self = StObject.set(x, "AmexPayWithPoints", value.asInstanceOf[js.Any])
     

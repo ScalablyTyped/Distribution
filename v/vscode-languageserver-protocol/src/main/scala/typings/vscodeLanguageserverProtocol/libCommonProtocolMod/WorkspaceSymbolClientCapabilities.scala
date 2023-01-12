@@ -43,7 +43,8 @@ object WorkspaceSymbolClientCapabilities {
     __obj.asInstanceOf[WorkspaceSymbolClientCapabilities]
   }
   
-  extension [Self <: WorkspaceSymbolClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceSymbolClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

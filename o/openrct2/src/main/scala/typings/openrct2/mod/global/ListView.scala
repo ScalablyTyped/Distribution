@@ -40,7 +40,8 @@ object ListView {
     __obj.asInstanceOf[ListView]
   }
   
-  extension [Self <: ListView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListView] (val x: Self) extends AnyVal {
     
     inline def setCanSelect(value: Boolean): Self = StObject.set(x, "canSelect", value.asInstanceOf[js.Any])
     

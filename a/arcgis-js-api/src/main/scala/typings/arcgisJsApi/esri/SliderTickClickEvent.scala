@@ -23,7 +23,8 @@ object SliderTickClickEvent {
     __obj.asInstanceOf[SliderTickClickEvent]
   }
   
-  extension [Self <: SliderTickClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderTickClickEvent] (val x: Self) extends AnyVal {
     
     inline def setConfigIndex(value: Double): Self = StObject.set(x, "configIndex", value.asInstanceOf[js.Any])
     

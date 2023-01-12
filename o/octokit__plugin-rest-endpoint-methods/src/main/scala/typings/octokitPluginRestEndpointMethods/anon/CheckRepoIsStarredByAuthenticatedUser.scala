@@ -656,7 +656,8 @@ object CheckRepoIsStarredByAuthenticatedUser {
     __obj.asInstanceOf[CheckRepoIsStarredByAuthenticatedUser]
   }
   
-  extension [Self <: CheckRepoIsStarredByAuthenticatedUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckRepoIsStarredByAuthenticatedUser] (val x: Self) extends AnyVal {
     
     inline def setCheckRepoIsStarredByAuthenticatedUser(value: `89`): Self = StObject.set(x, "checkRepoIsStarredByAuthenticatedUser", value.asInstanceOf[js.Any])
     

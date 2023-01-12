@@ -24,7 +24,8 @@ object SubtitleTrackSwitchData {
     __obj.asInstanceOf[SubtitleTrackSwitchData]
   }
   
-  extension [Self <: SubtitleTrackSwitchData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtitleTrackSwitchData] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

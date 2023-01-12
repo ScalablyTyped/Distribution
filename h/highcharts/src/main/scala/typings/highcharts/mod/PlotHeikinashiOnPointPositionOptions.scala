@@ -39,7 +39,8 @@ object PlotHeikinashiOnPointPositionOptions {
     __obj.asInstanceOf[PlotHeikinashiOnPointPositionOptions]
   }
   
-  extension [Self <: PlotHeikinashiOnPointPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeikinashiOnPointPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

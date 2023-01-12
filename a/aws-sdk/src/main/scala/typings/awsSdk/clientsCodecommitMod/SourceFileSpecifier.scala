@@ -23,7 +23,8 @@ object SourceFileSpecifier {
     __obj.asInstanceOf[SourceFileSpecifier]
   }
   
-  extension [Self <: SourceFileSpecifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceFileSpecifier] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: Path): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

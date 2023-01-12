@@ -102,7 +102,8 @@ object DeviceUseStatement {
     __obj.asInstanceOf[DeviceUseStatement]
   }
   
-  extension [Self <: DeviceUseStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceUseStatement] (val x: Self) extends AnyVal {
     
     inline def setBodySite(value: CodeableConcept): Self = StObject.set(x, "bodySite", value.asInstanceOf[js.Any])
     

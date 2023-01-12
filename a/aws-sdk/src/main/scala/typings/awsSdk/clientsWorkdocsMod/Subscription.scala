@@ -28,7 +28,8 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  extension [Self <: Subscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     inline def setEndPoint(value: SubscriptionEndPointType): Self = StObject.set(x, "EndPoint", value.asInstanceOf[js.Any])
     

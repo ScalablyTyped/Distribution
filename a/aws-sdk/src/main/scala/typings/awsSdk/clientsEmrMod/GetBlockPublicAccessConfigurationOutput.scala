@@ -26,7 +26,8 @@ object GetBlockPublicAccessConfigurationOutput {
     __obj.asInstanceOf[GetBlockPublicAccessConfigurationOutput]
   }
   
-  extension [Self <: GetBlockPublicAccessConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBlockPublicAccessConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setBlockPublicAccessConfiguration(value: BlockPublicAccessConfiguration): Self = StObject.set(x, "BlockPublicAccessConfiguration", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Filter {
     __obj.asInstanceOf[Filter]
   }
   
-  extension [Self <: Filter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: FilterConditionString): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

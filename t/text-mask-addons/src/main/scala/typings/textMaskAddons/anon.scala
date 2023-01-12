@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[PartialNumberMaskOptions]
     }
     
-    extension [Self <: PartialNumberMaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNumberMaskOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowDecimal(value: Boolean): Self = StObject.set(x, "allowDecimal", value.asInstanceOf[js.Any])
       

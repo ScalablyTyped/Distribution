@@ -20,7 +20,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable[F]]
     }
     
-    extension [Self <: Unfoldable[?], F](x: Self & Unfoldable[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable[?], F] (val x: Self & Unfoldable[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable1[F]]
     }
     
-    extension [Self <: Unfoldable1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & Unfoldable1[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable1[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & Unfoldable1[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -62,7 +64,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable2[F]]
     }
     
-    extension [Self <: Unfoldable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Unfoldable2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Unfoldable2[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -85,7 +88,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable2C[F, E]]
     }
     
-    extension [Self <: Unfoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Unfoldable2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Unfoldable2C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -108,7 +112,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable3[F]]
     }
     
-    extension [Self <: Unfoldable3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Unfoldable3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Unfoldable3[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -131,7 +136,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable3C[F, E]]
     }
     
-    extension [Self <: Unfoldable3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Unfoldable3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Unfoldable3C[F, E])) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       
@@ -154,7 +160,8 @@ object libUnfoldableMod {
       __obj.asInstanceOf[Unfoldable4[F]]
     }
     
-    extension [Self <: Unfoldable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Unfoldable4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Unfoldable4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Unfoldable4[F]) extends AnyVal {
       
       inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
       

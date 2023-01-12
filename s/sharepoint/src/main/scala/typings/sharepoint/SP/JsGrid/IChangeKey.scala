@@ -26,7 +26,8 @@ object IChangeKey {
     __obj.asInstanceOf[IChangeKey]
   }
   
-  extension [Self <: IChangeKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IChangeKey] (val x: Self) extends AnyVal {
     
     inline def setCompareTo(value: IChangeKey => Double): Self = StObject.set(x, "CompareTo", js.Any.fromFunction1(value))
     

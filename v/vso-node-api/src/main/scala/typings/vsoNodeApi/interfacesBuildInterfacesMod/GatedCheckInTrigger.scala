@@ -32,7 +32,8 @@ object GatedCheckInTrigger {
     __obj.asInstanceOf[GatedCheckInTrigger]
   }
   
-  extension [Self <: GatedCheckInTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatedCheckInTrigger] (val x: Self) extends AnyVal {
     
     inline def setPathFilters(value: js.Array[String]): Self = StObject.set(x, "pathFilters", value.asInstanceOf[js.Any])
     

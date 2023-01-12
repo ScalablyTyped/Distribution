@@ -17,7 +17,8 @@ object DefinitionContentMap {
     __obj.asInstanceOf[DefinitionContentMap]
   }
   
-  extension [Self <: DefinitionContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionContentMap] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: Definition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

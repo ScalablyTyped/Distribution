@@ -22,7 +22,8 @@ object Unit {
     __obj.asInstanceOf[Unit]
   }
   
-  extension [Self <: Unit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Unit] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: forward | backward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

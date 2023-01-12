@@ -20,7 +20,8 @@ object DownloadResponse {
     __obj.asInstanceOf[DownloadResponse]
   }
   
-  extension [Self <: DownloadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadResponse] (val x: Self) extends AnyVal {
     
     inline def setExpires_at(value: Double): Self = StObject.set(x, "expires_at", value.asInstanceOf[js.Any])
     

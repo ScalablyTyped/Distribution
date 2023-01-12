@@ -54,7 +54,8 @@ object XNameAccess {
     __obj.asInstanceOf[XNameAccess]
   }
   
-  extension [Self <: XNameAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNameAccess] (val x: Self) extends AnyVal {
     
     inline def setElementNames(value: SafeArray[String]): Self = StObject.set(x, "ElementNames", value.asInstanceOf[js.Any])
     

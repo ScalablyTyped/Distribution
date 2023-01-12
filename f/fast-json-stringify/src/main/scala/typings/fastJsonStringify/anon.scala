@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Ajv]
     }
     
-    extension [Self <: Ajv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ajv] (val x: Self) extends AnyVal {
       
       inline def setAjv(value: default): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[AllOf]
     }
     
-    extension [Self <: AllOf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllOf] (val x: Self) extends AnyVal {
       
       inline def setAllOf(value: js.Array[ObjectProperties]): Self = StObject.set(x, "allOf", value.asInstanceOf[js.Any])
       

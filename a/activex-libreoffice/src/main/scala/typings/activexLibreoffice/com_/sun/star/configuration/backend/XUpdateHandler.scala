@@ -232,7 +232,8 @@ object XUpdateHandler {
     __obj.asInstanceOf[XUpdateHandler]
   }
   
-  extension [Self <: XUpdateHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdateHandler] (val x: Self) extends AnyVal {
     
     inline def setAddOrReplaceNode(value: (String, Double) => Unit): Self = StObject.set(x, "addOrReplaceNode", js.Any.fromFunction2(value))
     

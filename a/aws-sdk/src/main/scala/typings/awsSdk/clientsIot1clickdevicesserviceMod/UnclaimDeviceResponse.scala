@@ -18,7 +18,8 @@ object UnclaimDeviceResponse {
     __obj.asInstanceOf[UnclaimDeviceResponse]
   }
   
-  extension [Self <: UnclaimDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnclaimDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setState(value: string): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

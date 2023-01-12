@@ -22,7 +22,8 @@ object IdentitySet {
     __obj.asInstanceOf[IdentitySet]
   }
   
-  extension [Self <: IdentitySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentitySet] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: NullableOption[Identity]): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

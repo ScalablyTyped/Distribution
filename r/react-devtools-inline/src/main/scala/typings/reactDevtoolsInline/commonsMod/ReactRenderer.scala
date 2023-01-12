@@ -134,7 +134,8 @@ object ReactRenderer {
     __obj.asInstanceOf[ReactRenderer]
   }
   
-  extension [Self <: ReactRenderer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactRenderer] (val x: Self) extends AnyVal {
     
     inline def setBundleType(value: BundleType): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
     

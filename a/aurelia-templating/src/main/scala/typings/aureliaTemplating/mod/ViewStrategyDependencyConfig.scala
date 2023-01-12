@@ -17,7 +17,8 @@ object ViewStrategyDependencyConfig {
     __obj.asInstanceOf[ViewStrategyDependencyConfig]
   }
   
-  extension [Self <: ViewStrategyDependencyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewStrategyDependencyConfig] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

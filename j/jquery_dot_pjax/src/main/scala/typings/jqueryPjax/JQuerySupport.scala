@@ -18,7 +18,8 @@ object JQuerySupport {
     __obj.asInstanceOf[JQuerySupport]
   }
   
-  extension [Self <: JQuerySupport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuerySupport] (val x: Self) extends AnyVal {
     
     inline def setPjax(value: Boolean): Self = StObject.set(x, "pjax", value.asInstanceOf[js.Any])
   }

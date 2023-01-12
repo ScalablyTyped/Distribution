@@ -780,7 +780,8 @@ object sapMUploadUploaderMod {
       __obj.asInstanceOf[UploaderSettings]
     }
     
-    extension [Self <: UploaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploaderSettings] (val x: Self) extends AnyVal {
       
       inline def setDownloadUrl(value: String | PropertyBindingInfo): Self = StObject.set(x, "downloadUrl", value.asInstanceOf[js.Any])
       

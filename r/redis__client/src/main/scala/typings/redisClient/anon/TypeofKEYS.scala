@@ -22,7 +22,8 @@ object TypeofKEYS {
     __obj.asInstanceOf[TypeofKEYS]
   }
   
-  extension [Self <: TypeofKEYS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofKEYS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: RedisCommandArgument => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

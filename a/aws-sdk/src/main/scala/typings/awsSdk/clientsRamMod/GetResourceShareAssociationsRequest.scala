@@ -48,7 +48,8 @@ object GetResourceShareAssociationsRequest {
     __obj.asInstanceOf[GetResourceShareAssociationsRequest]
   }
   
-  extension [Self <: GetResourceShareAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceShareAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationStatus(value: ResourceShareAssociationStatus): Self = StObject.set(x, "associationStatus", value.asInstanceOf[js.Any])
     

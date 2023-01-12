@@ -39,7 +39,8 @@ object esMenuItemGroupMod {
       __obj.asInstanceOf[MenuItemGroupProps]
     }
     
-    extension [Self <: MenuItemGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object libCustomizationsCustomizerDottypesMod {
       __obj.asInstanceOf[ICustomizerProps]
     }
     
-    extension [Self <: ICustomizerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

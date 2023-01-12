@@ -23,7 +23,8 @@ object typesSpecStreamMod {
       __obj.asInstanceOf[DerivedStream]
     }
     
-    extension [Self <: DerivedStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DerivedStream] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Stream): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }
@@ -136,7 +137,8 @@ object typesSpecStreamMod {
       __obj.asInstanceOf[MergedStream]
     }
     
-    extension [Self <: MergedStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergedStream] (val x: Self) extends AnyVal {
       
       inline def setMerge(value: js.Array[Stream]): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object typesSpecStreamMod {
       __obj.asInstanceOf[StreamParameters]
     }
     
-    extension [Self <: StreamParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamParameters] (val x: Self) extends AnyVal {
       
       inline def setBetween(value: js.Array[Stream]): Self = StObject.set(x, "between", value.asInstanceOf[js.Any])
       

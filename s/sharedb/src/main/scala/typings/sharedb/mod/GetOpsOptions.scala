@@ -16,7 +16,8 @@ object GetOpsOptions {
     __obj.asInstanceOf[GetOpsOptions]
   }
   
-  extension [Self <: GetOpsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsOptions] (val x: Self) extends AnyVal {
     
     inline def setOpsOptions(value: Metadata): Self = StObject.set(x, "opsOptions", value.asInstanceOf[js.Any])
     

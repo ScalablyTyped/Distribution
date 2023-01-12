@@ -25,7 +25,8 @@ object ListCreativeStatusBreakdownByDetailResponse {
     __obj.asInstanceOf[ListCreativeStatusBreakdownByDetailResponse]
   }
   
-  extension [Self <: ListCreativeStatusBreakdownByDetailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCreativeStatusBreakdownByDetailResponse] (val x: Self) extends AnyVal {
     
     inline def setDetailType(value: String): Self = StObject.set(x, "detailType", value.asInstanceOf[js.Any])
     

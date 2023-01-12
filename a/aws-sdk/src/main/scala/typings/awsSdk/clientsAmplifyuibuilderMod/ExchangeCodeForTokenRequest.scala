@@ -23,7 +23,8 @@ object ExchangeCodeForTokenRequest {
     __obj.asInstanceOf[ExchangeCodeForTokenRequest]
   }
   
-  extension [Self <: ExchangeCodeForTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeCodeForTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setProvider(value: TokenProviders): Self = StObject.set(x, "provider", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ContinueOnHttpStepFailure {
     __obj.asInstanceOf[ContinueOnHttpStepFailure]
   }
   
-  extension [Self <: ContinueOnHttpStepFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueOnHttpStepFailure] (val x: Self) extends AnyVal {
     
     inline def setContinueOnHttpStepFailure(value: Boolean): Self = StObject.set(x, "continueOnHttpStepFailure", value.asInstanceOf[js.Any])
     

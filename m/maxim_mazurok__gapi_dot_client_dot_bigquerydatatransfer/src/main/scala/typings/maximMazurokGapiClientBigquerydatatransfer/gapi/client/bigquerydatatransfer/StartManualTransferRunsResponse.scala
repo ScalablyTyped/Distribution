@@ -16,7 +16,8 @@ object StartManualTransferRunsResponse {
     __obj.asInstanceOf[StartManualTransferRunsResponse]
   }
   
-  extension [Self <: StartManualTransferRunsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartManualTransferRunsResponse] (val x: Self) extends AnyVal {
     
     inline def setRuns(value: js.Array[TransferRun]): Self = StObject.set(x, "runs", value.asInstanceOf[js.Any])
     

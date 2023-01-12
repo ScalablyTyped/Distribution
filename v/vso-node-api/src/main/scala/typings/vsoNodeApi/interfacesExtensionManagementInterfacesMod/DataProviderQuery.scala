@@ -23,7 +23,8 @@ object DataProviderQuery {
     __obj.asInstanceOf[DataProviderQuery]
   }
   
-  extension [Self <: DataProviderQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProviderQuery] (val x: Self) extends AnyVal {
     
     inline def setContext(value: DataProviderContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

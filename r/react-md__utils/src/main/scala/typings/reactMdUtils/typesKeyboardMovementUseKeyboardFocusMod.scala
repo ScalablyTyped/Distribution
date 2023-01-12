@@ -39,7 +39,8 @@ object typesKeyboardMovementUseKeyboardFocusMod {
       __obj.asInstanceOf[KeyboardFocusArg[E]]
     }
     
-    extension [Self <: KeyboardFocusArg[?], E /* <: HTMLElement */](x: Self & KeyboardFocusArg[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusArg[?], E /* <: HTMLElement */] (val x: Self & KeyboardFocusArg[E]) extends AnyVal {
       
       inline def setEvent(value: KeyboardEvent[E]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object typesKeyboardMovementUseKeyboardFocusMod {
       __obj.asInstanceOf[KeyboardFocusCallbacks[E]]
     }
     
-    extension [Self <: KeyboardFocusCallbacks[?], E /* <: HTMLElement */](x: Self & KeyboardFocusCallbacks[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusCallbacks[?], E /* <: HTMLElement */] (val x: Self & KeyboardFocusCallbacks[E]) extends AnyVal {
       
       inline def setOnDecrement(value: /* arg */ KeyboardFocusArg[E] => Unit): Self = StObject.set(x, "onDecrement", js.Any.fromFunction1(value))
       
@@ -156,7 +158,8 @@ object typesKeyboardMovementUseKeyboardFocusMod {
       __obj.asInstanceOf[KeyboardFocusHookOptions[E]]
     }
     
-    extension [Self <: KeyboardFocusHookOptions[?], E /* <: HTMLElement */](x: Self & KeyboardFocusHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusHookOptions[?], E /* <: HTMLElement */] (val x: Self & KeyboardFocusHookOptions[E]) extends AnyVal {
       
       inline def setGetDefaultFocusIndex(value: (/* elements */ js.Array[HTMLElement], /* container */ E) => Double): Self = StObject.set(x, "getDefaultFocusIndex", js.Any.fromFunction2(value))
       
@@ -187,7 +190,8 @@ object typesKeyboardMovementUseKeyboardFocusMod {
       __obj.asInstanceOf[KeyboardFocusHookReturnValue[E]]
     }
     
-    extension [Self <: KeyboardFocusHookReturnValue[?], E /* <: HTMLElement */](x: Self & KeyboardFocusHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardFocusHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & KeyboardFocusHookReturnValue[E]) extends AnyVal {
       
       inline def setFocusIndex(value: MutableRefObject[Double]): Self = StObject.set(x, "focusIndex", value.asInstanceOf[js.Any])
       

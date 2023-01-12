@@ -16,7 +16,8 @@ object TypeofKeepAlive {
     __obj.asInstanceOf[TypeofKeepAlive]
   }
   
-  extension [Self <: TypeofKeepAlive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofKeepAlive] (val x: Self) extends AnyVal {
     
     inline def set__isKeepAlive(value: `true`): Self = StObject.set(x, "__isKeepAlive", value.asInstanceOf[js.Any])
   }

@@ -118,7 +118,8 @@ object typesLatestSrcNodeFetchHttpClientMod {
       __obj.asInstanceOf[CommonRequestInit]
     }
     
-    extension [Self <: CommonRequestInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonRequestInit] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object typesLatestSrcNodeFetchHttpClientMod {
       __obj.asInstanceOf[CommonResponse]
     }
     
-    extension [Self <: CommonResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonResponse] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       

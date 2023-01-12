@@ -15,7 +15,8 @@ object FromImport {
     __obj.asInstanceOf[FromImport]
   }
   
-  extension [Self <: FromImport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromImport] (val x: Self) extends AnyVal {
     
     inline def setFromImport(value: Boolean): Self = StObject.set(x, "fromImport", value.asInstanceOf[js.Any])
   }

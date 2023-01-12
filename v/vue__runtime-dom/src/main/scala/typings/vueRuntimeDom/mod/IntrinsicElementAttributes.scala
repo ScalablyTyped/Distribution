@@ -533,7 +533,8 @@ object IntrinsicElementAttributes {
     __obj.asInstanceOf[IntrinsicElementAttributes]
   }
   
-  extension [Self <: IntrinsicElementAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrinsicElementAttributes] (val x: Self) extends AnyVal {
     
     inline def setA(value: AnchorHTMLAttributes): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

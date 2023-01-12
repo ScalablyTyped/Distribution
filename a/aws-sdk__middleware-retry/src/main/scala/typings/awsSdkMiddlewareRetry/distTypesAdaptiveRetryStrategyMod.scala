@@ -32,7 +32,8 @@ object distTypesAdaptiveRetryStrategyMod {
       __obj.asInstanceOf[AdaptiveRetryStrategyOptions]
     }
     
-    extension [Self <: AdaptiveRetryStrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdaptiveRetryStrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setRateLimiter(value: RateLimiter): Self = StObject.set(x, "rateLimiter", value.asInstanceOf[js.Any])
       

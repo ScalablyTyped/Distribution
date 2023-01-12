@@ -40,7 +40,8 @@ object AutoFitView {
     __obj.asInstanceOf[AutoFitView]
   }
   
-  extension [Self <: AutoFitView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoFitView] (val x: Self) extends AnyVal {
     
     inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
     

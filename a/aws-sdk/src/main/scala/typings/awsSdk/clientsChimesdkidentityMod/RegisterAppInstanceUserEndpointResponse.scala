@@ -23,7 +23,8 @@ object RegisterAppInstanceUserEndpointResponse {
     __obj.asInstanceOf[RegisterAppInstanceUserEndpointResponse]
   }
   
-  extension [Self <: RegisterAppInstanceUserEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterAppInstanceUserEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceUserArn(value: SensitiveChimeArn): Self = StObject.set(x, "AppInstanceUserArn", value.asInstanceOf[js.Any])
     

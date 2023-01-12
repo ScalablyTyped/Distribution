@@ -47,7 +47,8 @@ object FlangerOptions {
     __obj.asInstanceOf[FlangerOptions]
   }
   
-  extension [Self <: FlangerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlangerOptions] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ToolbarStyle {
     __obj.asInstanceOf[ToolbarStyle]
   }
   
-  extension [Self <: ToolbarStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarStyle] (val x: Self) extends AnyVal {
     
     inline def setCenterElementContainer(value: ViewStyle): Self = StObject.set(x, "centerElementContainer", value.asInstanceOf[js.Any])
     

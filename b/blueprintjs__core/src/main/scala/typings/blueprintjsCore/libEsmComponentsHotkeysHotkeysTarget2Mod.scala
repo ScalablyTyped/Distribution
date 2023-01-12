@@ -42,7 +42,8 @@ object libEsmComponentsHotkeysHotkeysTarget2Mod {
       __obj.asInstanceOf[HotkeysTarget2Props]
     }
     
-    extension [Self <: HotkeysTarget2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeysTarget2Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | (js.Function1[/* props */ HotkeysTarget2RenderProps, Element])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object libEsmComponentsHotkeysHotkeysTarget2Mod {
       __obj.asInstanceOf[HotkeysTarget2RenderProps]
     }
     
-    extension [Self <: HotkeysTarget2RenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotkeysTarget2RenderProps] (val x: Self) extends AnyVal {
       
       inline def setHandleKeyDown(value: KeyboardEvent[HTMLElement] => Unit): Self = StObject.set(x, "handleKeyDown", js.Any.fromFunction1(value))
       

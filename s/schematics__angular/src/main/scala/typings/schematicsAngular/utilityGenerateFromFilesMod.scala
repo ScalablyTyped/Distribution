@@ -39,7 +39,8 @@ object utilityGenerateFromFilesMod {
       __obj.asInstanceOf[GenerateFromFilesOptions]
     }
     
-    extension [Self <: GenerateFromFilesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateFromFilesOptions] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       

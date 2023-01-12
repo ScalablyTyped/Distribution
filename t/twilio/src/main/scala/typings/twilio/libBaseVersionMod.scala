@@ -112,7 +112,8 @@ object libBaseVersionMod {
       __obj.asInstanceOf[PageLimit]
     }
     
-    extension [Self <: PageLimit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLimit] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object libBaseVersionMod {
       __obj.asInstanceOf[PageLimitOptions]
     }
     
-    extension [Self <: PageLimitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageLimitOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object libBaseVersionMod {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setAbsoluteUrl(value: String => String): Self = StObject.set(x, "absoluteUrl", js.Any.fromFunction1(value))
       

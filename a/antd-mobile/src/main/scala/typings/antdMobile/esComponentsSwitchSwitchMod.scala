@@ -321,7 +321,8 @@ object esComponentsSwitchSwitchMod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object IAnimationKey {
     __obj.asInstanceOf[IAnimationKey]
   }
   
-  extension [Self <: IAnimationKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAnimationKey] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: Double): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
     

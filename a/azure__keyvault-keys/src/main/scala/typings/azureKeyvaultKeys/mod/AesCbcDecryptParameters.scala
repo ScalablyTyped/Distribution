@@ -38,7 +38,8 @@ object AesCbcDecryptParameters {
     __obj.asInstanceOf[AesCbcDecryptParameters]
   }
   
-  extension [Self <: AesCbcDecryptParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AesCbcDecryptParameters] (val x: Self) extends AnyVal {
     
     inline def setAlgorithm(value: AesCbcEncryptionAlgorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
     

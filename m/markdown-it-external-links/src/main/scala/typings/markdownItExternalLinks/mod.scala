@@ -36,7 +36,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setExternalClassName(value: String): Self = StObject.set(x, "externalClassName", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object PictureTile {
     __obj.asInstanceOf[PictureTile]
   }
   
-  extension [Self <: PictureTile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PictureTile] (val x: Self) extends AnyVal {
     
     inline def setPicture(value: String): Self = StObject.set(x, "picture", value.asInstanceOf[js.Any])
     

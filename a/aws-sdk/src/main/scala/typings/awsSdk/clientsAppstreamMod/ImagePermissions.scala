@@ -23,7 +23,8 @@ object ImagePermissions {
     __obj.asInstanceOf[ImagePermissions]
   }
   
-  extension [Self <: ImagePermissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePermissions] (val x: Self) extends AnyVal {
     
     inline def setAllowFleet(value: BooleanObject): Self = StObject.set(x, "allowFleet", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object IlmMigrateToDataTiersRequest {
     __obj.asInstanceOf[IlmMigrateToDataTiersRequest]
   }
   
-  extension [Self <: IlmMigrateToDataTiersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IlmMigrateToDataTiersRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Legacytemplatetodelete): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

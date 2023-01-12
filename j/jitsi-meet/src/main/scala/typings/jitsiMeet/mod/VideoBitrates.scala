@@ -19,7 +19,8 @@ object VideoBitrates {
     __obj.asInstanceOf[VideoBitrates]
   }
   
-  extension [Self <: VideoBitrates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoBitrates] (val x: Self) extends AnyVal {
     
     inline def setHigh(value: Double): Self = StObject.set(x, "high", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object FinalizeCutoverRequest {
     __obj.asInstanceOf[FinalizeCutoverRequest]
   }
   
-  extension [Self <: FinalizeCutoverRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalizeCutoverRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

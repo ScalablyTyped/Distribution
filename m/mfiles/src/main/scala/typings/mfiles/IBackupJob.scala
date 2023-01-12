@@ -36,7 +36,8 @@ object IBackupJob {
     __obj.asInstanceOf[IBackupJob]
   }
   
-  extension [Self <: IBackupJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackupJob] (val x: Self) extends AnyVal {
     
     inline def setBackupType(value: MFBackupType): Self = StObject.set(x, "BackupType", value.asInstanceOf[js.Any])
     

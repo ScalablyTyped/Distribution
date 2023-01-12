@@ -15,7 +15,8 @@ object Deleteinterveningresults {
     __obj.asInstanceOf[Deleteinterveningresults]
   }
   
-  extension [Self <: Deleteinterveningresults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deleteinterveningresults] (val x: Self) extends AnyVal {
     
     inline def setDelete_intervening_results(value: Boolean): Self = StObject.set(x, "delete_intervening_results", value.asInstanceOf[js.Any])
     

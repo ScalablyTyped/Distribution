@@ -16,7 +16,8 @@ object GetParametersQueryCursor {
     __obj.asInstanceOf[GetParametersQueryCursor]
   }
   
-  extension [Self <: GetParametersQueryCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParametersQueryCursor] (val x: Self) extends AnyVal {
     
     inline def setGet(value: ParametersQueryCursor): Self = StObject.set(x, "get", value.asInstanceOf[js.Any])
   }

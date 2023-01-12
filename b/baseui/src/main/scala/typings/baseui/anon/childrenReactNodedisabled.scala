@@ -45,7 +45,8 @@ object childrenReactNodedisabled {
     __obj.asInstanceOf[childrenReactNodedisabled]
   }
   
-  extension [Self <: childrenReactNodedisabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: childrenReactNodedisabled] (val x: Self) extends AnyVal {
     
     inline def `setAria-controls`(value: String): Self = StObject.set(x, "aria-controls", value.asInstanceOf[js.Any])
     

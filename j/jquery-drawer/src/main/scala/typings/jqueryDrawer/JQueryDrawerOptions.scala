@@ -20,7 +20,8 @@ object JQueryDrawerOptions {
     __obj.asInstanceOf[JQueryDrawerOptions]
   }
   
-  extension [Self <: JQueryDrawerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryDrawerOptions] (val x: Self) extends AnyVal {
     
     inline def setClass(value: JQueryDrawerClassOptions): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

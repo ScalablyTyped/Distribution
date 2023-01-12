@@ -21,7 +21,8 @@ object Promotion {
     __obj.asInstanceOf[Promotion]
   }
   
-  extension [Self <: Promotion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Promotion] (val x: Self) extends AnyVal {
     
     inline def setCreative_name(value: String): Self = StObject.set(x, "creative_name", value.asInstanceOf[js.Any])
     

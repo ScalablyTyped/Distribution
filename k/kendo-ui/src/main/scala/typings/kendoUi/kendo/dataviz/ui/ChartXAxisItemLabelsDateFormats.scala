@@ -23,7 +23,8 @@ object ChartXAxisItemLabelsDateFormats {
     __obj.asInstanceOf[ChartXAxisItemLabelsDateFormats]
   }
   
-  extension [Self <: ChartXAxisItemLabelsDateFormats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartXAxisItemLabelsDateFormats] (val x: Self) extends AnyVal {
     
     inline def setDays(value: String): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
     

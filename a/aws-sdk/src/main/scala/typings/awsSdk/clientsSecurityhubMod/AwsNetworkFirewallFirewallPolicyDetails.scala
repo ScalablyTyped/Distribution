@@ -38,7 +38,8 @@ object AwsNetworkFirewallFirewallPolicyDetails {
     __obj.asInstanceOf[AwsNetworkFirewallFirewallPolicyDetails]
   }
   
-  extension [Self <: AwsNetworkFirewallFirewallPolicyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsNetworkFirewallFirewallPolicyDetails] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NonEmptyString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

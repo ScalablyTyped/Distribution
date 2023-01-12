@@ -49,7 +49,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[FirebaseService]
     }
     
-    extension [Self <: FirebaseService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseService] (val x: Self) extends AnyVal {
       
       inline def setApp(value: typings.firebaseAppCompat.distSrcPublicTypesMod.FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[FirebaseServiceInternals]
     }
     
-    extension [Self <: FirebaseServiceInternals](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseServiceInternals] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: () => js.Promise[Unit]): Self = StObject.set(x, "delete", js.Any.fromFunction0(value))
     }

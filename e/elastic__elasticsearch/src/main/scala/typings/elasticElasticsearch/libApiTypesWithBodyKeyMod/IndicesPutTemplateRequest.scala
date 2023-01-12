@@ -29,7 +29,8 @@ object IndicesPutTemplateRequest {
     __obj.asInstanceOf[IndicesPutTemplateRequest]
   }
   
-  extension [Self <: IndicesPutTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPutTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Indexpatterns): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

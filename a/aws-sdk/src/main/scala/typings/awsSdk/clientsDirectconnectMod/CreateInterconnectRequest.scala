@@ -43,7 +43,8 @@ object CreateInterconnectRequest {
     __obj.asInstanceOf[CreateInterconnectRequest]
   }
   
-  extension [Self <: CreateInterconnectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInterconnectRequest] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: Bandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

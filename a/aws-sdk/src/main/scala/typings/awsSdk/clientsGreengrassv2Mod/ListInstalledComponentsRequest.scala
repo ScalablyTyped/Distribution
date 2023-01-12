@@ -33,7 +33,8 @@ object ListInstalledComponentsRequest {
     __obj.asInstanceOf[ListInstalledComponentsRequest]
   }
   
-  extension [Self <: ListInstalledComponentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInstalledComponentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreDeviceThingName(value: CoreDeviceThingName): Self = StObject.set(x, "coreDeviceThingName", value.asInstanceOf[js.Any])
     

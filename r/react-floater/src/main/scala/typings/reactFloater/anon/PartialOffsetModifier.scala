@@ -38,7 +38,8 @@ object PartialOffsetModifier {
     __obj.asInstanceOf[PartialOffsetModifier]
   }
   
-  extension [Self <: PartialOffsetModifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOffsetModifier] (val x: Self) extends AnyVal {
     
     inline def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

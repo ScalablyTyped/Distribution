@@ -18,7 +18,8 @@ object GreenFleetProvisioningOption {
     __obj.asInstanceOf[GreenFleetProvisioningOption]
   }
   
-  extension [Self <: GreenFleetProvisioningOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GreenFleetProvisioningOption] (val x: Self) extends AnyVal {
     
     inline def setAction(value: GreenFleetProvisioningAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

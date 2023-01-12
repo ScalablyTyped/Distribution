@@ -38,7 +38,8 @@ object CreateWirelessGatewayTaskDefinitionRequest {
     __obj.asInstanceOf[CreateWirelessGatewayTaskDefinitionRequest]
   }
   
-  extension [Self <: CreateWirelessGatewayTaskDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWirelessGatewayTaskDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setAutoCreateTasks(value: AutoCreateTasks): Self = StObject.set(x, "AutoCreateTasks", value.asInstanceOf[js.Any])
     

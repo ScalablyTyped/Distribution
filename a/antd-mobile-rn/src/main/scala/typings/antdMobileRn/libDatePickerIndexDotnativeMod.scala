@@ -50,7 +50,8 @@ object libDatePickerIndexDotnativeMod {
       __obj.asInstanceOf[DatePickerNativeProps]
     }
     
-    extension [Self <: DatePickerNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatePickerNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IPickerStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

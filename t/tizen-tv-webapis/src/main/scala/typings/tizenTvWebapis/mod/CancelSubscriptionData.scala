@@ -15,7 +15,8 @@ object CancelSubscriptionData {
     __obj.asInstanceOf[CancelSubscriptionData]
   }
   
-  extension [Self <: CancelSubscriptionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSubscriptionData] (val x: Self) extends AnyVal {
     
     inline def setApiResult(value: String): Self = StObject.set(x, "apiResult", value.asInstanceOf[js.Any])
   }

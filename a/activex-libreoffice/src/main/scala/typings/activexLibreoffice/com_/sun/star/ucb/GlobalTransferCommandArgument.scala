@@ -44,7 +44,8 @@ object GlobalTransferCommandArgument {
     __obj.asInstanceOf[GlobalTransferCommandArgument]
   }
   
-  extension [Self <: GlobalTransferCommandArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTransferCommandArgument] (val x: Self) extends AnyVal {
     
     inline def setNameClash(value: Double): Self = StObject.set(x, "NameClash", value.asInstanceOf[js.Any])
     

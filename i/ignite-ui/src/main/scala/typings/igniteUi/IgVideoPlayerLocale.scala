@@ -133,7 +133,8 @@ object IgVideoPlayerLocale {
     __obj.asInstanceOf[IgVideoPlayerLocale]
   }
   
-  extension [Self <: IgVideoPlayerLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgVideoPlayerLocale] (val x: Self) extends AnyVal {
     
     inline def setAdMessage(value: Boolean): Self = StObject.set(x, "adMessage", value.asInstanceOf[js.Any])
     

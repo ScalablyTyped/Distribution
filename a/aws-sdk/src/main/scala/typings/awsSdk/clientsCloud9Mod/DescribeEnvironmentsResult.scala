@@ -18,7 +18,8 @@ object DescribeEnvironmentsResult {
     __obj.asInstanceOf[DescribeEnvironmentsResult]
   }
   
-  extension [Self <: DescribeEnvironmentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEnvironmentsResult] (val x: Self) extends AnyVal {
     
     inline def setEnvironments(value: EnvironmentList): Self = StObject.set(x, "environments", value.asInstanceOf[js.Any])
     

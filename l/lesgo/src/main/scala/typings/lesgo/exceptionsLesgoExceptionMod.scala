@@ -55,7 +55,8 @@ object exceptionsLesgoExceptionMod {
       __obj.asInstanceOf[LesgoException]
     }
     
-    extension [Self <: LesgoException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LesgoException] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

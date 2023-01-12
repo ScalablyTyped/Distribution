@@ -25,7 +25,8 @@ object LocationPreference {
     __obj.asInstanceOf[LocationPreference]
   }
   
-  extension [Self <: LocationPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPreference] (val x: Self) extends AnyVal {
     
     inline def setFollowGaeApplication(value: String): Self = StObject.set(x, "followGaeApplication", value.asInstanceOf[js.Any])
     

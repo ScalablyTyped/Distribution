@@ -34,7 +34,8 @@ object ComponentBuilder {
     __obj.asInstanceOf[ComponentBuilder[TComponent, TPropertyBag]]
   }
   
-  extension [Self <: ComponentBuilder[?, ?], TComponent /* <: Component */, TPropertyBag /* <: ComponentProperties */](x: Self & (ComponentBuilder[TComponent, TPropertyBag])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentBuilder[?, ?], TComponent /* <: Component */, TPropertyBag /* <: ComponentProperties */] (val x: Self & (ComponentBuilder[TComponent, TPropertyBag])) extends AnyVal {
     
     inline def setComponent(value: () => TComponent): Self = StObject.set(x, "component", js.Any.fromFunction0(value))
     

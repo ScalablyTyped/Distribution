@@ -140,7 +140,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setMaxMessageSize(value: Double): Self = StObject.set(x, "maxMessageSize", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object mod {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -238,7 +240,8 @@ object mod {
       __obj.asInstanceOf[PostBase]
     }
     
-    extension [Self <: PostBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostBase] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: Double): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object mod {
       __obj.asInstanceOf[PostWithPubKey]
     }
     
-    extension [Self <: PostWithPubKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostWithPubKey] (val x: Self) extends AnyVal {
       
       inline def setPubKey(value: String): Self = StObject.set(x, "pubKey", value.asInstanceOf[js.Any])
     }
@@ -300,7 +304,8 @@ object mod {
       __obj.asInstanceOf[PostWithSymKey]
     }
     
-    extension [Self <: PostWithSymKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostWithSymKey] (val x: Self) extends AnyVal {
       
       inline def setSymKeyID(value: String): Self = StObject.set(x, "symKeyID", value.asInstanceOf[js.Any])
     }
@@ -338,7 +343,8 @@ object mod {
       __obj.asInstanceOf[SubscriptionOptions]
     }
     
-    extension [Self <: SubscriptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowP2P(value: Boolean): Self = StObject.set(x, "allowP2P", value.asInstanceOf[js.Any])
       

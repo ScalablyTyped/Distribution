@@ -53,7 +53,8 @@ object DescribeFleetMetadataResponse {
     __obj.asInstanceOf[DescribeFleetMetadataResponse]
   }
   
-  extension [Self <: DescribeFleetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setCompanyCode(value: CompanyCode): Self = StObject.set(x, "CompanyCode", value.asInstanceOf[js.Any])
     

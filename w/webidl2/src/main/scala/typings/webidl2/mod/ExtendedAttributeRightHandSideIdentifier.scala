@@ -21,7 +21,8 @@ object ExtendedAttributeRightHandSideIdentifier {
     __obj.asInstanceOf[ExtendedAttributeRightHandSideIdentifier]
   }
   
-  extension [Self <: ExtendedAttributeRightHandSideIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedAttributeRightHandSideIdentifier] (val x: Self) extends AnyVal {
     
     inline def setType(value: identifier): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

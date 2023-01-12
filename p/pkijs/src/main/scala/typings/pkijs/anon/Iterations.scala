@@ -20,7 +20,8 @@ object Iterations {
     __obj.asInstanceOf[Iterations]
   }
   
-  extension [Self <: Iterations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iterations] (val x: Self) extends AnyVal {
     
     inline def setIterations(value: String): Self = StObject.set(x, "iterations", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object EdgeSingularPoints {
     __obj.asInstanceOf[EdgeSingularPoints]
   }
   
-  extension [Self <: EdgeSingularPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeSingularPoints] (val x: Self) extends AnyVal {
     
     inline def setControlPoints(value: () => js.Array[Position]): Self = StObject.set(x, "controlPoints", js.Any.fromFunction0(value))
     

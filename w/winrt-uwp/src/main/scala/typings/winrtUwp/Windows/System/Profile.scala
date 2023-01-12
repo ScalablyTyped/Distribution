@@ -27,7 +27,8 @@ object Profile {
       __obj.asInstanceOf[AnalyticsVersionInfo]
     }
     
-    extension [Self <: AnalyticsVersionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsVersionInfo] (val x: Self) extends AnyVal {
       
       inline def setDeviceFamily(value: String): Self = StObject.set(x, "deviceFamily", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object Profile {
       __obj.asInstanceOf[HardwareToken]
     }
     
-    extension [Self <: HardwareToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HardwareToken] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: IBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       

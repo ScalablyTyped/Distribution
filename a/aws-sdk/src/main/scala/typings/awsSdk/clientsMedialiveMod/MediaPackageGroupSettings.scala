@@ -18,7 +18,8 @@ object MediaPackageGroupSettings {
     __obj.asInstanceOf[MediaPackageGroupSettings]
   }
   
-  extension [Self <: MediaPackageGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPackageGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: OutputLocationRef): Self = StObject.set(x, "Destination", value.asInstanceOf[js.Any])
   }

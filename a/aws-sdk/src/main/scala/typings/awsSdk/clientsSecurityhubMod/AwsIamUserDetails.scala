@@ -53,7 +53,8 @@ object AwsIamUserDetails {
     __obj.asInstanceOf[AwsIamUserDetails]
   }
   
-  extension [Self <: AwsIamUserDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsIamUserDetails] (val x: Self) extends AnyVal {
     
     inline def setAttachedManagedPolicies(value: AwsIamAttachedManagedPolicyList): Self = StObject.set(x, "AttachedManagedPolicies", value.asInstanceOf[js.Any])
     

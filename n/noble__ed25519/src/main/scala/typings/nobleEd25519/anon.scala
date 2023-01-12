@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Head]
     }
     
-    extension [Self <: Head](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Head] (val x: Self) extends AnyVal {
       
       inline def setHead(value: js.typedarray.Uint8Array): Self = StObject.set(x, "head", value.asInstanceOf[js.Any])
       

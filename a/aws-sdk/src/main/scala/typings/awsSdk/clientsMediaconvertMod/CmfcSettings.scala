@@ -63,7 +63,8 @@ object CmfcSettings {
     __obj.asInstanceOf[CmfcSettings]
   }
   
-  extension [Self <: CmfcSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmfcSettings] (val x: Self) extends AnyVal {
     
     inline def setAudioDuration(value: CmfcAudioDuration): Self = StObject.set(x, "AudioDuration", value.asInstanceOf[js.Any])
     

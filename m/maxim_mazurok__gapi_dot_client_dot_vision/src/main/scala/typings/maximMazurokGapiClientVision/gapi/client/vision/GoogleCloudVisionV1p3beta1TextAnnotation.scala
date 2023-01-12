@@ -19,7 +19,8 @@ object GoogleCloudVisionV1p3beta1TextAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p3beta1TextAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p3beta1TextAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p3beta1TextAnnotation] (val x: Self) extends AnyVal {
     
     inline def setPages(value: js.Array[GoogleCloudVisionV1p3beta1Page]): Self = StObject.set(x, "pages", value.asInstanceOf[js.Any])
     

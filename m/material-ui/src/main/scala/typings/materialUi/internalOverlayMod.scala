@@ -43,7 +43,8 @@ object internalOverlayMod {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setAutoLockScrolling(value: Boolean): Self = StObject.set(x, "autoLockScrolling", value.asInstanceOf[js.Any])
       

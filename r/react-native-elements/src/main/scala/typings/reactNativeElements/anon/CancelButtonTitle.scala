@@ -19,7 +19,8 @@ object CancelButtonTitle {
     __obj.asInstanceOf[CancelButtonTitle]
   }
   
-  extension [Self <: CancelButtonTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelButtonTitle] (val x: Self) extends AnyVal {
     
     inline def setCancelButtonProps(value: PartialTouchableOpacityPr): Self = StObject.set(x, "cancelButtonProps", value.asInstanceOf[js.Any])
     

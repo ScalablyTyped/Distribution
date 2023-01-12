@@ -18,7 +18,8 @@ object NewUri {
     __obj.asInstanceOf[NewUri]
   }
   
-  extension [Self <: NewUri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewUri] (val x: Self) extends AnyVal {
     
     inline def setNewUri(value: Uri): Self = StObject.set(x, "newUri", value.asInstanceOf[js.Any])
     

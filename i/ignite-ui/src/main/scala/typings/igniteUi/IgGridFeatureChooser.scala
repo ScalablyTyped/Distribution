@@ -56,7 +56,8 @@ object IgGridFeatureChooser {
     __obj.asInstanceOf[IgGridFeatureChooser]
   }
   
-  extension [Self <: IgGridFeatureChooser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFeatureChooser] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

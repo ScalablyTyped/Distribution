@@ -166,7 +166,8 @@ object libComponentsMessageBarMessageBarDottypesMod {
       __obj.asInstanceOf[IMessageBarProps]
     }
     
-    extension [Self <: IMessageBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageBarProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Element): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -275,7 +276,8 @@ object libComponentsMessageBarMessageBarDottypesMod {
       __obj.asInstanceOf[IMessageBarStyleProps]
     }
     
-    extension [Self <: IMessageBarStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageBarStyleProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: Boolean): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -373,7 +375,8 @@ object libComponentsMessageBarMessageBarDottypesMod {
       __obj.asInstanceOf[IMessageBarStyles]
     }
     
-    extension [Self <: IMessageBarStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMessageBarStyles] (val x: Self) extends AnyVal {
       
       inline def setActions(value: IStyle): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GoogleCloudVideointelligenceV1FaceFrame {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1FaceFrame]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1FaceFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1FaceFrame] (val x: Self) extends AnyVal {
     
     inline def setNormalizedBoundingBoxes(value: js.Array[GoogleCloudVideointelligenceV1NormalizedBoundingBox]): Self = StObject.set(x, "normalizedBoundingBoxes", value.asInstanceOf[js.Any])
     

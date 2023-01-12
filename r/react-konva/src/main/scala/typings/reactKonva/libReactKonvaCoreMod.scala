@@ -260,7 +260,8 @@ object libReactKonvaCoreMod {
       __obj.asInstanceOf[KonvaNodeEvents]
     }
     
-    extension [Self <: KonvaNodeEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KonvaNodeEvents] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: /* evt */ KonvaEventObject[MouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -466,7 +467,8 @@ object libReactKonvaCoreMod {
       __obj.asInstanceOf[StageProps]
     }
     
-    extension [Self <: StageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StageProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

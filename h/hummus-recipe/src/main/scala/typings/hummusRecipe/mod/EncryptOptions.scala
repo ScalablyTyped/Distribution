@@ -19,7 +19,8 @@ object EncryptOptions {
     __obj.asInstanceOf[EncryptOptions]
   }
   
-  extension [Self <: EncryptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptOptions] (val x: Self) extends AnyVal {
     
     inline def setOwnerPassword(value: String): Self = StObject.set(x, "ownerPassword", value.asInstanceOf[js.Any])
     

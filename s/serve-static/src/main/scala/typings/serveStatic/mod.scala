@@ -117,7 +117,8 @@ object mod {
       __obj.asInstanceOf[ServeStaticOptions[R]]
     }
     
-    extension [Self <: ServeStaticOptions[?], R /* <: ServerResponse[IncomingMessage] */](x: Self & ServeStaticOptions[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServeStaticOptions[?], R /* <: ServerResponse[IncomingMessage] */] (val x: Self & ServeStaticOptions[R]) extends AnyVal {
       
       inline def setCacheControl(value: Boolean): Self = StObject.set(x, "cacheControl", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object CameraProperties {
     __obj.asInstanceOf[CameraProperties]
   }
   
-  extension [Self <: CameraProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraProperties] (val x: Self) extends AnyVal {
     
     inline def setFov(value: Double): Self = StObject.set(x, "fov", value.asInstanceOf[js.Any])
     

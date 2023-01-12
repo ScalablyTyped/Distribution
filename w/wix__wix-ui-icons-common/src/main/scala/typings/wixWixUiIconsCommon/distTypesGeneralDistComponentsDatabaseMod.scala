@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsDatabaseMod extends Shortcut {
       __obj.asInstanceOf[DatabaseProps]
     }
     
-    extension [Self <: DatabaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatabaseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

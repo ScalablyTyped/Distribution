@@ -841,7 +841,8 @@ object JsGridControl {
       __obj.asInstanceOf[GanttParameters]
     }
     
-    extension [Self <: GanttParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GanttParameters] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: ColumnInfoCollection): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     }
@@ -891,7 +892,8 @@ object JsGridControl {
       __obj.asInstanceOf[Parameters]
     }
     
-    extension [Self <: Parameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parameters] (val x: Self) extends AnyVal {
       
       inline def setBEnableDiffTracking(value: Boolean): Self = StObject.set(x, "bEnableDiffTracking", value.asInstanceOf[js.Any])
       
@@ -968,7 +970,8 @@ object JsGridControl {
       __obj.asInstanceOf[RowViewParameters]
     }
     
-    extension [Self <: RowViewParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowViewParameters] (val x: Self) extends AnyVal {
       
       inline def setAutoFilterEntries(value: Any): Self = StObject.set(x, "autoFilterEntries", value.asInstanceOf[js.Any])
       
@@ -1082,7 +1085,8 @@ object JsGridControl {
       __obj.asInstanceOf[TableViewParameters]
     }
     
-    extension [Self <: TableViewParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableViewParameters] (val x: Self) extends AnyVal {
       
       inline def setAllowedSelectionTypes(value: SelectionTypeFlags): Self = StObject.set(x, "allowedSelectionTypes", value.asInstanceOf[js.Any])
       

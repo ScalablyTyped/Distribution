@@ -23,7 +23,8 @@ object ReceiptRuleSetMetadata {
     __obj.asInstanceOf[ReceiptRuleSetMetadata]
   }
   
-  extension [Self <: ReceiptRuleSetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiptRuleSetMetadata] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

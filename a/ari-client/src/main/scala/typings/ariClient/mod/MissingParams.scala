@@ -21,7 +21,8 @@ object MissingParams {
     __obj.asInstanceOf[MissingParams]
   }
   
-  extension [Self <: MissingParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MissingParams] (val x: Self) extends AnyVal {
     
     inline def setParams(value: String | js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

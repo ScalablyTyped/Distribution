@@ -23,7 +23,8 @@ object GetAccessPointPolicyRequest {
     __obj.asInstanceOf[GetAccessPointPolicyRequest]
   }
   
-  extension [Self <: GetAccessPointPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPointPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

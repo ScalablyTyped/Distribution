@@ -18,7 +18,8 @@ object GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3ResponseMessageLiveAgentHandoff] (val x: Self) extends AnyVal {
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

@@ -28,7 +28,8 @@ object PurchaseReservedInstanceOfferingRequest {
     __obj.asInstanceOf[PurchaseReservedInstanceOfferingRequest]
   }
   
-  extension [Self <: PurchaseReservedInstanceOfferingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedInstanceOfferingRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: InstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

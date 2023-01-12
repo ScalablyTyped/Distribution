@@ -39,7 +39,8 @@ object Httpi {
       __obj.asInstanceOf[HttpiPayload]
     }
     
-    extension [Self <: HttpiPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpiPayload] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object Httpi {
       __obj.asInstanceOf[HttpiResource]
     }
     
-    extension [Self <: HttpiResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpiResource] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: HttpiPayload => IHttpPromise[Any]): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))
       

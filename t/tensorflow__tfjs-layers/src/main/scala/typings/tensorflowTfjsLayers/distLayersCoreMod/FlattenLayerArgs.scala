@@ -20,7 +20,8 @@ object FlattenLayerArgs {
     __obj.asInstanceOf[FlattenLayerArgs]
   }
   
-  extension [Self <: FlattenLayerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenLayerArgs] (val x: Self) extends AnyVal {
     
     inline def setDataFormat(value: DataFormat): Self = StObject.set(x, "dataFormat", value.asInstanceOf[js.Any])
     

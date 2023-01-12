@@ -27,7 +27,8 @@ object heatmapUpdateRendererParams {
     __obj.asInstanceOf[heatmapUpdateRendererParams]
   }
   
-  extension [Self <: heatmapUpdateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heatmapUpdateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setFadeRatio(value: Double): Self = StObject.set(x, "fadeRatio", value.asInstanceOf[js.Any])
     

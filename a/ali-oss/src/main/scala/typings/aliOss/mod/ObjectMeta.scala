@@ -44,7 +44,8 @@ object ObjectMeta {
     __obj.asInstanceOf[ObjectMeta]
   }
   
-  extension [Self <: ObjectMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectMeta] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

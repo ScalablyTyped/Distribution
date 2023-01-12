@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Capabilities]
     }
     
-    extension [Self <: Capabilities](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
       
       inline def setCapabilities(value: Power): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     }
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Clean]
     }
     
-    extension [Self <: Clean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clean] (val x: Self) extends AnyVal {
       
       inline def setClean(value: Boolean): Self = StObject.set(x, "clean", value.asInstanceOf[js.Any])
     }
@@ -54,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -72,7 +75,8 @@ object anon {
       __obj.asInstanceOf[Power]
     }
     
-    extension [Self <: Power](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Power] (val x: Self) extends AnyVal {
       
       inline def setPower(value: Boolean): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     }
@@ -91,7 +95,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -112,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -129,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Types]
     }
     
-    extension [Self <: Types](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Types] (val x: Self) extends AnyVal {
       
       inline def setTypes(value: js.Array[username | password | target]): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
       

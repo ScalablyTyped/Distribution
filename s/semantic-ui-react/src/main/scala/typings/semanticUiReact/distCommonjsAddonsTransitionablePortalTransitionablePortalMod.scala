@@ -84,7 +84,8 @@ object distCommonjsAddonsTransitionablePortalTransitionablePortalMod extends Sho
       __obj.asInstanceOf[StrictTransitionablePortalProps]
     }
     
-    extension [Self <: StrictTransitionablePortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictTransitionablePortalProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object distCommonjsAddonsTransitionablePortalTransitionablePortalMod extends Sho
       __obj.asInstanceOf[TransitionablePortalState]
     }
     
-    extension [Self <: TransitionablePortalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionablePortalState] (val x: Self) extends AnyVal {
       
       inline def setPortalOpen(value: Boolean): Self = StObject.set(x, "portalOpen", value.asInstanceOf[js.Any])
       

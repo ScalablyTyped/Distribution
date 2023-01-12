@@ -36,7 +36,8 @@ object Vnode {
     __obj.asInstanceOf[Vnode[Attrs, State]]
   }
   
-  extension [Self <: Vnode[?, ?], Attrs, State](x: Self & (Vnode[Attrs, State])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vnode[?, ?], Attrs, State] (val x: Self & (Vnode[Attrs, State])) extends AnyVal {
     
     inline def setAttrs(value: Attrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

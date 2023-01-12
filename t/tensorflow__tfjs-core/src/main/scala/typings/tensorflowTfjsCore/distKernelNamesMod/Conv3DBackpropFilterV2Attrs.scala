@@ -25,7 +25,8 @@ object Conv3DBackpropFilterV2Attrs {
     __obj.asInstanceOf[Conv3DBackpropFilterV2Attrs]
   }
   
-  extension [Self <: Conv3DBackpropFilterV2Attrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv3DBackpropFilterV2Attrs] (val x: Self) extends AnyVal {
     
     inline def setFilterShape(value: js.Tuple5[Double, Double, Double, Double, Double]): Self = StObject.set(x, "filterShape", value.asInstanceOf[js.Any])
     

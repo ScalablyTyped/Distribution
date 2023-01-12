@@ -43,7 +43,8 @@ object ILayoutSite2 {
     __obj.asInstanceOf[ILayoutSite2]
   }
   
-  extension [Self <: ILayoutSite2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayoutSite2] (val x: Self) extends AnyVal {
     
     inline def setGroupCount(value: Double): Self = StObject.set(x, "groupCount", value.asInstanceOf[js.Any])
     

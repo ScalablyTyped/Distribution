@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[CastingContext]
     }
     
-    extension [Self <: CastingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingContext] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double | String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -251,7 +252,8 @@ object mod {
       __obj.asInstanceOf[Info]
     }
     
-    extension [Self <: Info](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Info] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -490,7 +492,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoParse(value: Boolean | CastingFunction): Self = StObject.set(x, "autoParse", value.asInstanceOf[js.Any])
       

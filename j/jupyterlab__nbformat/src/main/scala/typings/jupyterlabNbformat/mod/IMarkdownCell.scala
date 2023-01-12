@@ -37,7 +37,8 @@ object IMarkdownCell {
     __obj.asInstanceOf[IMarkdownCell]
   }
   
-  extension [Self <: IMarkdownCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMarkdownCell] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: IAttachments): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CommonLegendProps {
     __obj.asInstanceOf[CommonLegendProps]
   }
   
-  extension [Self <: CommonLegendProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonLegendProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Datum]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

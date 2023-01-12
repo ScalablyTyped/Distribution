@@ -27,7 +27,8 @@ object typesReplicationConfigurationMod {
       __obj.asInstanceOf[ReplicationConfiguration]
     }
     
-    extension [Self <: ReplicationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setRole(value: String): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object typesReplicationConfigurationMod {
       __obj.asInstanceOf[UnmarshalledReplicationConfiguration]
     }
     
-    extension [Self <: UnmarshalledReplicationConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicationConfiguration] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[UnmarshalledReplicationRule]): Self = StObject.set(x, "Rules", value.asInstanceOf[js.Any])
       

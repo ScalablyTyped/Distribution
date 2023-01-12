@@ -28,7 +28,8 @@ object TableVersionError {
     __obj.asInstanceOf[TableVersionError]
   }
   
-  extension [Self <: TableVersionError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableVersionError] (val x: Self) extends AnyVal {
     
     inline def setErrorDetail(value: ErrorDetail): Self = StObject.set(x, "ErrorDetail", value.asInstanceOf[js.Any])
     

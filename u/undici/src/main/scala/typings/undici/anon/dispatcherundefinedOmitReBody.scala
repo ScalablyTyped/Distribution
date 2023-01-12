@@ -54,7 +54,8 @@ object dispatcherundefinedOmitReBody {
     __obj.asInstanceOf[dispatcherundefinedOmitReBody]
   }
   
-  extension [Self <: dispatcherundefinedOmitReBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dispatcherundefinedOmitReBody] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String | Buffer | js.typedarray.Uint8Array | Readable | FormData): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

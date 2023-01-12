@@ -18,7 +18,8 @@ object ListVolumeInitiatorsOutput {
     __obj.asInstanceOf[ListVolumeInitiatorsOutput]
   }
   
-  extension [Self <: ListVolumeInitiatorsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVolumeInitiatorsOutput] (val x: Self) extends AnyVal {
     
     inline def setInitiators(value: Initiators): Self = StObject.set(x, "Initiators", value.asInstanceOf[js.Any])
     

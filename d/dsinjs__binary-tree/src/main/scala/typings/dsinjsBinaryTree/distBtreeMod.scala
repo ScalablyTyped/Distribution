@@ -493,7 +493,8 @@ object distBtreeMod {
       __obj.asInstanceOf[BTreeRootAttrStruct[T]]
     }
     
-    extension [Self <: BTreeRootAttrStruct[?], T](x: Self & BTreeRootAttrStruct[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BTreeRootAttrStruct[?], T] (val x: Self & BTreeRootAttrStruct[T]) extends AnyVal {
       
       inline def setRoot(value: T): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -512,7 +513,8 @@ object distBtreeMod {
       __obj.asInstanceOf[BTreeValueAttrStruct[T]]
     }
     
-    extension [Self <: BTreeValueAttrStruct[?], T](x: Self & BTreeValueAttrStruct[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BTreeValueAttrStruct[?], T] (val x: Self & BTreeValueAttrStruct[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       

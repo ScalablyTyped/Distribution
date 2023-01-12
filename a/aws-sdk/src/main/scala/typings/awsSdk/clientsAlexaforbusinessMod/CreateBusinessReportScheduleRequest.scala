@@ -53,7 +53,8 @@ object CreateBusinessReportScheduleRequest {
     __obj.asInstanceOf[CreateBusinessReportScheduleRequest]
   }
   
-  extension [Self <: CreateBusinessReportScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBusinessReportScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object MediaStreamSourceClosedRequest {
     __obj.asInstanceOf[MediaStreamSourceClosedRequest]
   }
   
-  extension [Self <: MediaStreamSourceClosedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSourceClosedRequest] (val x: Self) extends AnyVal {
     
     inline def setReason(value: MediaStreamSourceClosedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

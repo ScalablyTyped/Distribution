@@ -16,7 +16,8 @@ object PosixFilesystem {
     __obj.asInstanceOf[PosixFilesystem]
   }
   
-  extension [Self <: PosixFilesystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosixFilesystem] (val x: Self) extends AnyVal {
     
     inline def setRootDirectory(value: String): Self = StObject.set(x, "rootDirectory", value.asInstanceOf[js.Any])
     

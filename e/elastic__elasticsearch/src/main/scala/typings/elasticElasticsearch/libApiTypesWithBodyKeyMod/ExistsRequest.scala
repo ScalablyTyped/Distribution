@@ -39,7 +39,8 @@ object ExistsRequest {
     __obj.asInstanceOf[ExistsRequest]
   }
   
-  extension [Self <: ExistsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistsRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: Id): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

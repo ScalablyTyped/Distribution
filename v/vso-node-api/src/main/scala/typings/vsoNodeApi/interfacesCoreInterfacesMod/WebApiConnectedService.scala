@@ -55,7 +55,8 @@ object WebApiConnectedService {
     __obj.asInstanceOf[WebApiConnectedService]
   }
   
-  extension [Self <: WebApiConnectedService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApiConnectedService] (val x: Self) extends AnyVal {
     
     inline def setAuthenticatedBy(value: IdentityRef): Self = StObject.set(x, "authenticatedBy", value.asInstanceOf[js.Any])
     

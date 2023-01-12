@@ -61,7 +61,8 @@ object IPointerEvent {
     __obj.asInstanceOf[IPointerEvent]
   }
   
-  extension [Self <: IPointerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerEvent] (val x: Self) extends AnyVal {
     
     inline def setInputIndex(value: Exclude[PointerInput, Horizontal | Vertical | MouseWheelX | MouseWheelY | MouseWheelZ]): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
     

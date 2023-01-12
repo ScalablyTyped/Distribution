@@ -68,7 +68,8 @@ object distLibClientSocketMod {
       __obj.asInstanceOf[RedisSocketCommonOptions]
     }
     
-    extension [Self <: RedisSocketCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisSocketCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distLibClientSocketMod {
       __obj.asInstanceOf[RedisTlsSocketOptions]
     }
     
-    extension [Self <: RedisTlsSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisTlsSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setTls(value: `true`): Self = StObject.set(x, "tls", value.asInstanceOf[js.Any])
     }

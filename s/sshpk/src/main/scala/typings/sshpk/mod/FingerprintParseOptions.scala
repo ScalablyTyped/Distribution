@@ -21,7 +21,8 @@ object FingerprintParseOptions {
     __obj.asInstanceOf[FingerprintParseOptions]
   }
   
-  extension [Self <: FingerprintParseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FingerprintParseOptions] (val x: Self) extends AnyVal {
     
     inline def setAlgotirhms(value: js.Array[String]): Self = StObject.set(x, "algotirhms", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distClientModelsTriggersInboundRuleMod {
       __obj.asInstanceOf[InboundRule]
     }
     
-    extension [Self <: InboundRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundRule] (val x: Self) extends AnyVal {
       
       inline def setID(value: Double): Self = StObject.set(x, "ID", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distClientModelsTriggersInboundRuleMod {
       __obj.asInstanceOf[InboundRules]
     }
     
-    extension [Self <: InboundRules](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InboundRules] (val x: Self) extends AnyVal {
       
       inline def setInboundRules(value: js.Array[InboundRule]): Self = StObject.set(x, "InboundRules", value.asInstanceOf[js.Any])
       

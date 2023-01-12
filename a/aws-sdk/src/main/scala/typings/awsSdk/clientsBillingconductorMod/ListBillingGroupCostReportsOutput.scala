@@ -23,7 +23,8 @@ object ListBillingGroupCostReportsOutput {
     __obj.asInstanceOf[ListBillingGroupCostReportsOutput]
   }
   
-  extension [Self <: ListBillingGroupCostReportsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBillingGroupCostReportsOutput] (val x: Self) extends AnyVal {
     
     inline def setBillingGroupCostReports(value: BillingGroupCostReportList): Self = StObject.set(x, "BillingGroupCostReports", value.asInstanceOf[js.Any])
     

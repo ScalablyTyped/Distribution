@@ -36,7 +36,8 @@ object libComponentsUishellSwitcherItemMod {
       __obj.asInstanceOf[SwitcherItemPropsBase]
     }
     
-    extension [Self <: SwitcherItemPropsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitcherItemPropsBase] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

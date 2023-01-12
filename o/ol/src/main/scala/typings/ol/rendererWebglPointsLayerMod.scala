@@ -33,7 +33,8 @@ object rendererWebglPointsLayerMod {
       __obj.asInstanceOf[CustomAttribute]
     }
     
-    extension [Self <: CustomAttribute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomAttribute] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (typings.ol.featureMod.default[typings.ol.geomGeometryMod.default], StringDictionary[Any]) => Double
@@ -62,7 +63,8 @@ object rendererWebglPointsLayerMod {
       __obj.asInstanceOf[FeatureCacheItem]
     }
     
-    extension [Self <: FeatureCacheItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureCacheItem] (val x: Self) extends AnyVal {
       
       inline def setFeature(value: typings.ol.featureMod.default[typings.ol.geomGeometryMod.default]): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object rendererWebglPointsLayerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[CustomAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AppShellBuilderOptions {
     __obj.asInstanceOf[AppShellBuilderOptions]
   }
   
-  extension [Self <: AppShellBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppShellBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setBrowserTarget(value: String): Self = StObject.set(x, "browserTarget", value.asInstanceOf[js.Any])
     

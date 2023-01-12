@@ -18,7 +18,8 @@ object SplitterContentLoadEvent {
     __obj.asInstanceOf[SplitterContentLoadEvent]
   }
   
-  extension [Self <: SplitterContentLoadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitterContentLoadEvent] (val x: Self) extends AnyVal {
     
     inline def setPane(value: Element): Self = StObject.set(x, "pane", value.asInstanceOf[js.Any])
     

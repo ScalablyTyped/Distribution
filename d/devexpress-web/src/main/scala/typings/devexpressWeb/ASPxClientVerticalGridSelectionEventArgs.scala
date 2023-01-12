@@ -44,7 +44,8 @@ object ASPxClientVerticalGridSelectionEventArgs {
     __obj.asInstanceOf[ASPxClientVerticalGridSelectionEventArgs]
   }
   
-  extension [Self <: ASPxClientVerticalGridSelectionEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridSelectionEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsAllRecordsOnPage(value: Boolean): Self = StObject.set(x, "isAllRecordsOnPage", value.asInstanceOf[js.Any])
     

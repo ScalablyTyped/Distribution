@@ -28,7 +28,8 @@ object ListComplianceStatusRequest {
     __obj.asInstanceOf[ListComplianceStatusRequest]
   }
   
-  extension [Self <: ListComplianceStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComplianceStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

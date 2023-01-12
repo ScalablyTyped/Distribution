@@ -19,7 +19,8 @@ object Justification {
     __obj.asInstanceOf[Justification]
   }
   
-  extension [Self <: Justification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Justification] (val x: Self) extends AnyVal {
     
     inline def setJustification(value: typings.vexflow.Vex.Flow.TextNote.Justification): Self = StObject.set(x, "justification", value.asInstanceOf[js.Any])
     

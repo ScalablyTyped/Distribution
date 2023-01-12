@@ -339,7 +339,8 @@ object sapMSplitAppMod {
       __obj.asInstanceOf[SplitAppSettings]
     }
     
-    extension [Self <: SplitAppSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitAppSettings] (val x: Self) extends AnyVal {
       
       inline def setHomeIcon(value: Any | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "homeIcon", value.asInstanceOf[js.Any])
       

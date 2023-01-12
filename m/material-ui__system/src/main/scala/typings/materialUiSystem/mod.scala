@@ -384,7 +384,8 @@ object mod {
       __obj.asInstanceOf[StyleOptions[PropKey, Theme]]
     }
     
-    extension [Self <: StyleOptions[?, ?], PropKey, Theme /* <: js.Object */](x: Self & (StyleOptions[PropKey, Theme])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleOptions[?, ?], PropKey, Theme /* <: js.Object */] (val x: Self & (StyleOptions[PropKey, Theme])) extends AnyVal {
       
       inline def setCssProperty(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 791, starting with PropKey, typings.materialUiSystem.materialUiSystemStrings.accentColor, typings.materialUiSystem.materialUiSystemStrings.alignContent */ Any

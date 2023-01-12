@@ -53,7 +53,8 @@ object UserGroup {
     __obj.asInstanceOf[UserGroup]
   }
   
-  extension [Self <: UserGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserGroup] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

@@ -92,7 +92,8 @@ object anon {
       __obj.asInstanceOf[CONTAINERNAME]
     }
     
-    extension [Self <: CONTAINERNAME](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CONTAINERNAME] (val x: Self) extends AnyVal {
       
       inline def setCONTAINER_NAME(value: String): Self = StObject.set(x, "CONTAINER_NAME", value.asInstanceOf[js.Any])
       
@@ -259,7 +260,8 @@ object anon {
       __obj.asInstanceOf[FetchStart]
     }
     
-    extension [Self <: FetchStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchStart] (val x: Self) extends AnyVal {
       
       inline def setFetchStart(value: Double): Self = StObject.set(x, "fetchStart", value.asInstanceOf[js.Any])
     }

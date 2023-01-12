@@ -271,7 +271,8 @@ object distMessagesMod {
       __obj.asInstanceOf[BackendMessage]
     }
     
-    extension [Self <: BackendMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackendMessage] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

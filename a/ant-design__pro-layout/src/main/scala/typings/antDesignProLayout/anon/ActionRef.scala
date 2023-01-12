@@ -211,7 +211,8 @@ object ActionRef {
     __obj.asInstanceOf[ActionRef]
   }
   
-  extension [Self <: ActionRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionRef] (val x: Self) extends AnyVal {
     
     inline def setActionRef(value: MutableRefObject[js.UndefOr[Reload]]): Self = StObject.set(x, "actionRef", value.asInstanceOf[js.Any])
     

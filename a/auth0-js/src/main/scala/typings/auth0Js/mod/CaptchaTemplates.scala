@@ -25,7 +25,8 @@ object CaptchaTemplates {
     __obj.asInstanceOf[CaptchaTemplates]
   }
   
-  extension [Self <: CaptchaTemplates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaTemplates] (val x: Self) extends AnyVal {
     
     inline def setAuth0(value: /* challenge */ Auth0Challenge => String): Self = StObject.set(x, "auth0", js.Any.fromFunction1(value))
     

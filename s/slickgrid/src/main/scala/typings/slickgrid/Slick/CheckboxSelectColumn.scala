@@ -17,7 +17,8 @@ object CheckboxSelectColumn {
     __obj.asInstanceOf[CheckboxSelectColumn[T]]
   }
   
-  extension [Self <: CheckboxSelectColumn[?], T /* <: SlickData */](x: Self & CheckboxSelectColumn[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxSelectColumn[?], T /* <: SlickData */] (val x: Self & CheckboxSelectColumn[T]) extends AnyVal {
     
     inline def setGetColumnDefinition(value: () => ColumnMetadata[T]): Self = StObject.set(x, "getColumnDefinition", js.Any.fromFunction0(value))
   }

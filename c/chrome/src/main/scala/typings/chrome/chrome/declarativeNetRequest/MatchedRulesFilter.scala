@@ -21,7 +21,8 @@ object MatchedRulesFilter {
     __obj.asInstanceOf[MatchedRulesFilter]
   }
   
-  extension [Self <: MatchedRulesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchedRulesFilter] (val x: Self) extends AnyVal {
     
     inline def setMinTimeStamp(value: Double): Self = StObject.set(x, "minTimeStamp", value.asInstanceOf[js.Any])
     

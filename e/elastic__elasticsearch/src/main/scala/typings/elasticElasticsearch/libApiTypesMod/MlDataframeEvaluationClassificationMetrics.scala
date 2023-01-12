@@ -20,7 +20,8 @@ object MlDataframeEvaluationClassificationMetrics {
     __obj.asInstanceOf[MlDataframeEvaluationClassificationMetrics]
   }
   
-  extension [Self <: MlDataframeEvaluationClassificationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationClassificationMetrics] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Record[String, Any]): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

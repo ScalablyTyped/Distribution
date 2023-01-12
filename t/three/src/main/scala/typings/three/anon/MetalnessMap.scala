@@ -16,7 +16,8 @@ object MetalnessMap {
     __obj.asInstanceOf[MetalnessMap]
   }
   
-  extension [Self <: MetalnessMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetalnessMap] (val x: Self) extends AnyVal {
     
     inline def setMetalnessMap(value: IUniform[Any]): Self = StObject.set(x, "metalnessMap", value.asInstanceOf[js.Any])
   }

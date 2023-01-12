@@ -17,7 +17,8 @@ object ManifestData {
     __obj.asInstanceOf[ManifestData]
   }
   
-  extension [Self <: ManifestData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestData] (val x: Self) extends AnyVal {
     
     inline def set$(value: Dictkey): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
   }

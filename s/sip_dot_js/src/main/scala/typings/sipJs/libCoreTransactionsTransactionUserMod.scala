@@ -40,7 +40,8 @@ object libCoreTransactionsTransactionUserMod {
       __obj.asInstanceOf[ClientTransactionUser]
     }
     
-    extension [Self <: ClientTransactionUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientTransactionUser] (val x: Self) extends AnyVal {
       
       inline def setOnRequestTimeout(value: () => Unit): Self = StObject.set(x, "onRequestTimeout", js.Any.fromFunction0(value))
       
@@ -94,7 +95,8 @@ object libCoreTransactionsTransactionUserMod {
       __obj.asInstanceOf[TransactionUser]
     }
     
-    extension [Self <: TransactionUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionUser] (val x: Self) extends AnyVal {
       
       inline def setLoggerFactory(value: LoggerFactory): Self = StObject.set(x, "loggerFactory", value.asInstanceOf[js.Any])
       

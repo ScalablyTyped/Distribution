@@ -42,7 +42,8 @@ object VerticalAxis {
     __obj.asInstanceOf[VerticalAxis]
   }
   
-  extension [Self <: VerticalAxis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalAxis] (val x: Self) extends AnyVal {
     
     inline def setCrossAxisEnd(value: right): Self = StObject.set(x, "crossAxisEnd", value.asInstanceOf[js.Any])
     

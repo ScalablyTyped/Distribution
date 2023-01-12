@@ -19,7 +19,8 @@ object GraphQLEnumTypeConfig {
     __obj.asInstanceOf[GraphQLEnumTypeConfig]
   }
   
-  extension [Self <: GraphQLEnumTypeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLEnumTypeConfig] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

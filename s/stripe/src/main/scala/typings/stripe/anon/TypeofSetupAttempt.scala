@@ -17,7 +17,8 @@ object TypeofSetupAttempt {
     __obj.asInstanceOf[TypeofSetupAttempt]
   }
   
-  extension [Self <: TypeofSetupAttempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSetupAttempt] (val x: Self) extends AnyVal {
     
     inline def setPaymentMethodDetails(value: TypeofPaymentMethodDetailBancontact): Self = StObject.set(x, "PaymentMethodDetails", value.asInstanceOf[js.Any])
     

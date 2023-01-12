@@ -53,7 +53,8 @@ object CustomParticleEmitter {
     __obj.asInstanceOf[CustomParticleEmitter]
   }
   
-  extension [Self <: CustomParticleEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomParticleEmitter] (val x: Self) extends AnyVal {
     
     inline def setParse(value: Any => Unit): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
     

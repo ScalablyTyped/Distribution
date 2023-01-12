@@ -106,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Optionsstatsfalseundefine]
     }
     
-    extension [Self <: Optionsstatsfalseundefine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsstatsfalseundefine] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Optionsstatstrue]
     }
     
-    extension [Self <: Optionsstatstrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsstatstrue] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -257,7 +259,8 @@ object anon {
       __obj.asInstanceOf[PartialFileSystem]
     }
     
-    extension [Self <: PartialFileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFileSystem] (val x: Self) extends AnyVal {
       
       inline def setLstat(value: (/* path */ String, /* callback */ Callback[typings.node.fsMod.Stats]) => Unit): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
       

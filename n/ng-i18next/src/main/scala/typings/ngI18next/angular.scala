@@ -19,7 +19,8 @@ object angular {
         __obj.asInstanceOf[I18nextProvider]
       }
       
-      extension [Self <: I18nextProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: I18nextProvider] (val x: Self) extends AnyVal {
         
         inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       }

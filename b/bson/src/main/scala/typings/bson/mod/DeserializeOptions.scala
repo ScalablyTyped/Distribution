@@ -67,7 +67,8 @@ object DeserializeOptions {
     __obj.asInstanceOf[DeserializeOptions]
   }
   
-  extension [Self <: DeserializeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeserializeOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowObjectSmallerThanBufferSize(value: Boolean): Self = StObject.set(x, "allowObjectSmallerThanBufferSize", value.asInstanceOf[js.Any])
     

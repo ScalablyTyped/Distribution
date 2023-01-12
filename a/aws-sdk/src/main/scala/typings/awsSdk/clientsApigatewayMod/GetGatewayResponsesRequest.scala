@@ -28,7 +28,8 @@ object GetGatewayResponsesRequest {
     __obj.asInstanceOf[GetGatewayResponsesRequest]
   }
   
-  extension [Self <: GetGatewayResponsesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGatewayResponsesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

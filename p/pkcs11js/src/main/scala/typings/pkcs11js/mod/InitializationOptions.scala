@@ -27,7 +27,8 @@ object InitializationOptions {
     __obj.asInstanceOf[InitializationOptions]
   }
   
-  extension [Self <: InitializationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitializationOptions] (val x: Self) extends AnyVal {
     
     inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
     

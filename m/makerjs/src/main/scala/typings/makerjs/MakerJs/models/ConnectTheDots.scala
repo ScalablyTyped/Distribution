@@ -20,7 +20,8 @@ object ConnectTheDots {
     __obj.asInstanceOf[ConnectTheDots]
   }
   
-  extension [Self <: ConnectTheDots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectTheDots] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

@@ -30,7 +30,8 @@ object ICoreDispatcher {
     __obj.asInstanceOf[ICoreDispatcher]
   }
   
-  extension [Self <: ICoreDispatcher](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICoreDispatcher] (val x: Self) extends AnyVal {
     
     inline def setHasThreadAccess(value: Boolean): Self = StObject.set(x, "hasThreadAccess", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object QueueOptions {
     __obj.asInstanceOf[QueueOptions]
   }
   
-  extension [Self <: QueueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateClient(
       value: (/* type */ client | subscriber | bclient, /* redisOpts */ js.UndefOr[RedisOptions]) => Redis | Cluster

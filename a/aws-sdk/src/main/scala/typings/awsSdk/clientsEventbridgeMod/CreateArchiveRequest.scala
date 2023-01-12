@@ -38,7 +38,8 @@ object CreateArchiveRequest {
     __obj.asInstanceOf[CreateArchiveRequest]
   }
   
-  extension [Self <: CreateArchiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateArchiveRequest] (val x: Self) extends AnyVal {
     
     inline def setArchiveName(value: ArchiveName): Self = StObject.set(x, "ArchiveName", value.asInstanceOf[js.Any])
     

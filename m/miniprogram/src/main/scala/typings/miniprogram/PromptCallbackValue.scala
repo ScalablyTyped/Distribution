@@ -23,7 +23,8 @@ object PromptCallbackValue {
     __obj.asInstanceOf[PromptCallbackValue]
   }
   
-  extension [Self <: PromptCallbackValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PromptCallbackValue] (val x: Self) extends AnyVal {
     
     inline def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
     

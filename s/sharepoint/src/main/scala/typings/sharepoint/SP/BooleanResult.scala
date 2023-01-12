@@ -15,7 +15,8 @@ object BooleanResult {
     __obj.asInstanceOf[BooleanResult]
   }
   
-  extension [Self <: BooleanResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BooleanResult] (val x: Self) extends AnyVal {
     
     inline def setGet_value(value: () => Boolean): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }

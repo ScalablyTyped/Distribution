@@ -32,7 +32,8 @@ object libDescriptionListDescriptionMod {
       __obj.asInstanceOf[DescriptionProps]
     }
     
-    extension [Self <: DescriptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescriptionProps] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

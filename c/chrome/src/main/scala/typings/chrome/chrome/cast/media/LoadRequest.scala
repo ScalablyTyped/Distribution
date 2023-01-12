@@ -31,7 +31,8 @@ object LoadRequest {
     __obj.asInstanceOf[LoadRequest]
   }
   
-  extension [Self <: LoadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadRequest] (val x: Self) extends AnyVal {
     
     inline def setActiveTrackIds(value: js.Array[Double]): Self = StObject.set(x, "activeTrackIds", value.asInstanceOf[js.Any])
     

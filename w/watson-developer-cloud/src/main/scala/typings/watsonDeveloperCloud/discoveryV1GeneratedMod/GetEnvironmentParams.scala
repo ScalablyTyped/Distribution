@@ -21,7 +21,8 @@ object GetEnvironmentParams {
     __obj.asInstanceOf[GetEnvironmentParams]
   }
   
-  extension [Self <: GetEnvironmentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnvironmentParams] (val x: Self) extends AnyVal {
     
     inline def setEnvironment_id(value: String): Self = StObject.set(x, "environment_id", value.asInstanceOf[js.Any])
     

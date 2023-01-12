@@ -135,7 +135,8 @@ object libLoaderParsersLoaderParserMod {
       __obj.asInstanceOf[LoaderParser[ASSET, META_DATA]]
     }
     
-    extension [Self <: LoaderParser[?, ?], ASSET, META_DATA](x: Self & (LoaderParser[ASSET, META_DATA])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderParser[?, ?], ASSET, META_DATA] (val x: Self & (LoaderParser[ASSET, META_DATA])) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ZXCVBNAttackTime]
     }
     
-    extension [Self <: ZXCVBNAttackTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZXCVBNAttackTime] (val x: Self) extends AnyVal {
       
       inline def setOffline_fast_hashing_1e10_per_second(value: String | Double): Self = StObject.set(x, "offline_fast_hashing_1e10_per_second", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object mod {
       __obj.asInstanceOf[ZXCVBNFeedback]
     }
     
-    extension [Self <: ZXCVBNFeedback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZXCVBNFeedback] (val x: Self) extends AnyVal {
       
       inline def setSuggestions(value: js.Array[String]): Self = StObject.set(x, "suggestions", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object mod {
       __obj.asInstanceOf[ZXCVBNResult]
     }
     
-    extension [Self <: ZXCVBNResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZXCVBNResult] (val x: Self) extends AnyVal {
       
       inline def setCalc_time(value: Double): Self = StObject.set(x, "calc_time", value.asInstanceOf[js.Any])
       
@@ -392,7 +395,8 @@ object mod {
       __obj.asInstanceOf[ZXCVBNSequence]
     }
     
-    extension [Self <: ZXCVBNSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZXCVBNSequence] (val x: Self) extends AnyVal {
       
       inline def setAscending(value: Boolean): Self = StObject.set(x, "ascending", value.asInstanceOf[js.Any])
       

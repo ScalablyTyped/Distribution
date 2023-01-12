@@ -88,7 +88,8 @@ object esComponentsActionSheetActionSheetMod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object esComponentsActionSheetActionSheetMod {
       __obj.asInstanceOf[ActionSheetProps]
     }
     
-    extension [Self <: ActionSheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -689,7 +691,8 @@ object esComponentsActionSheetActionSheetMod {
       __obj.asInstanceOf[ActionSheetShowHandler]
     }
     
-    extension [Self <: ActionSheetShowHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetShowHandler] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     }

@@ -25,7 +25,8 @@ object CarriersCarrier {
     __obj.asInstanceOf[CarriersCarrier]
   }
   
-  extension [Self <: CarriersCarrier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CarriersCarrier] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

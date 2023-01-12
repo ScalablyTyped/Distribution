@@ -15,7 +15,8 @@ object SoundId {
     __obj.asInstanceOf[SoundId]
   }
   
-  extension [Self <: SoundId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoundId] (val x: Self) extends AnyVal {
     
     inline def setSoundId(value: String): Self = StObject.set(x, "soundId", value.asInstanceOf[js.Any])
   }

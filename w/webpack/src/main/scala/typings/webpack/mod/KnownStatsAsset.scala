@@ -54,7 +54,8 @@ object KnownStatsAsset {
     __obj.asInstanceOf[KnownStatsAsset]
   }
   
-  extension [Self <: KnownStatsAsset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsAsset] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryChunkIdHints(value: js.Array[String | Double]): Self = StObject.set(x, "auxiliaryChunkIdHints", value.asInstanceOf[js.Any])
     

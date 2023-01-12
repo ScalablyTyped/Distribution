@@ -28,7 +28,8 @@ object ControlComment {
     __obj.asInstanceOf[ControlComment]
   }
   
-  extension [Self <: ControlComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlComment] (val x: Self) extends AnyVal {
     
     inline def setAuthorName(value: Username): Self = StObject.set(x, "authorName", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TablePageBreakData {
     __obj.asInstanceOf[TablePageBreakData]
   }
   
-  extension [Self <: TablePageBreakData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TablePageBreakData] (val x: Self) extends AnyVal {
     
     inline def setManualBreak(value: Boolean): Self = StObject.set(x, "ManualBreak", value.asInstanceOf[js.Any])
     

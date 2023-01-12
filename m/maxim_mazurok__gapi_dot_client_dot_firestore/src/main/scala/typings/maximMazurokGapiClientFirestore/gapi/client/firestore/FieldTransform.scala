@@ -57,7 +57,8 @@ object FieldTransform {
     __obj.asInstanceOf[FieldTransform]
   }
   
-  extension [Self <: FieldTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldTransform] (val x: Self) extends AnyVal {
     
     inline def setAppendMissingElements(value: ArrayValue): Self = StObject.set(x, "appendMissingElements", value.asInstanceOf[js.Any])
     

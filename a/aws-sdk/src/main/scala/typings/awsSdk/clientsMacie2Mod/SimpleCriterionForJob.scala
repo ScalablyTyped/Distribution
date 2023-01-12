@@ -28,7 +28,8 @@ object SimpleCriterionForJob {
     __obj.asInstanceOf[SimpleCriterionForJob]
   }
   
-  extension [Self <: SimpleCriterionForJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleCriterionForJob] (val x: Self) extends AnyVal {
     
     inline def setComparator(value: JobComparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
     

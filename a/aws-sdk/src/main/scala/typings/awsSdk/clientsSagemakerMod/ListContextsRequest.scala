@@ -53,7 +53,8 @@ object ListContextsRequest {
     __obj.asInstanceOf[ListContextsRequest]
   }
   
-  extension [Self <: ListContextsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContextsRequest] (val x: Self) extends AnyVal {
     
     inline def setContextType(value: String256): Self = StObject.set(x, "ContextType", value.asInstanceOf[js.Any])
     

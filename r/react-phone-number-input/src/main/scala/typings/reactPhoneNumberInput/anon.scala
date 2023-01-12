@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: typings.reactPhoneNumberInput.mod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object anon {
       __obj.asInstanceOf[AddInternationalOption]
     }
     
-    extension [Self <: AddInternationalOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddInternationalOption] (val x: Self) extends AnyVal {
       
       inline def setAddInternationalOption(value: Boolean): Self = StObject.set(x, "addInternationalOption", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Country[InputComponentProps]]
     }
     
-    extension [Self <: Country[?], InputComponentProps](x: Self & Country[InputComponentProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country[?], InputComponentProps] (val x: Self & Country[InputComponentProps]) extends AnyVal {
       
       inline def setCountry(value: typings.reactPhoneNumberInput.mod.Country): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -301,7 +304,8 @@ object anon {
       __obj.asInstanceOf[Labels]
     }
     
-    extension [Self <: Labels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels] (val x: Self) extends AnyVal {
       
       inline def setLabels(value: typings.reactPhoneNumberInput.mod.Labels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object anon {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: typings.reactPhoneNumberInput.mod.Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     }
@@ -348,7 +353,8 @@ object anon {
       __obj.asInstanceOf[OnChangeText]
     }
     
-    extension [Self <: OnChangeText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeText] (val x: Self) extends AnyVal {
       
       inline def setOnChangeText(value: Value => Unit): Self = StObject.set(x, "onChangeText", js.Any.fromFunction1(value))
       
@@ -367,7 +373,8 @@ object anon {
       __obj.asInstanceOf[SmartCaret]
     }
     
-    extension [Self <: SmartCaret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmartCaret] (val x: Self) extends AnyVal {
       
       inline def setSmartCaret(value: Boolean): Self = StObject.set(x, "smartCaret", value.asInstanceOf[js.Any])
       

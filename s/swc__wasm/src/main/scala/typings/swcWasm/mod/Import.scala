@@ -20,7 +20,8 @@ object Import {
     __obj.asInstanceOf[Import]
   }
   
-  extension [Self <: Import](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcWasm.swcWasmStrings.Import): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

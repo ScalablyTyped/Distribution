@@ -22,7 +22,8 @@ object GroupByStep {
     __obj.asInstanceOf[GroupByStep]
   }
   
-  extension [Self <: GroupByStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupByStep] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: PropertyName | js.Array[PropertyName]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

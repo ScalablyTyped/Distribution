@@ -68,7 +68,8 @@ object ArrayFieldTemplateProps {
     __obj.asInstanceOf[ArrayFieldTemplateProps[T]]
   }
   
-  extension [Self <: ArrayFieldTemplateProps[?], T](x: Self & ArrayFieldTemplateProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayFieldTemplateProps[?], T] (val x: Self & ArrayFieldTemplateProps[T]) extends AnyVal {
     
     inline def setCanAdd(value: Boolean): Self = StObject.set(x, "canAdd", value.asInstanceOf[js.Any])
     

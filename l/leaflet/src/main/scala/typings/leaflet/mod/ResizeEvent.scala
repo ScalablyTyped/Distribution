@@ -29,7 +29,8 @@ object ResizeEvent {
     __obj.asInstanceOf[ResizeEvent]
   }
   
-  extension [Self <: ResizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeEvent] (val x: Self) extends AnyVal {
     
     inline def setNewSize(value: Point_): Self = StObject.set(x, "newSize", value.asInstanceOf[js.Any])
     

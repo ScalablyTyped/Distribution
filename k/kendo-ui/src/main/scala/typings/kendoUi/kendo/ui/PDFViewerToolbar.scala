@@ -15,7 +15,8 @@ object PDFViewerToolbar {
     __obj.asInstanceOf[PDFViewerToolbar]
   }
   
-  extension [Self <: PDFViewerToolbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFViewerToolbar] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PDFViewerToolbarItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ViaCity {
     __obj.asInstanceOf[ViaCity]
   }
   
-  extension [Self <: ViaCity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViaCity] (val x: Self) extends AnyVal {
     
     inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
     

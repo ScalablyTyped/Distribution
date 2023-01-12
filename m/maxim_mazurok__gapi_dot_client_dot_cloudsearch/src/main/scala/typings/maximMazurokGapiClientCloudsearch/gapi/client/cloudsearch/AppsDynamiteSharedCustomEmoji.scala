@@ -54,7 +54,8 @@ object AppsDynamiteSharedCustomEmoji {
     __obj.asInstanceOf[AppsDynamiteSharedCustomEmoji]
   }
   
-  extension [Self <: AppsDynamiteSharedCustomEmoji](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCustomEmoji] (val x: Self) extends AnyVal {
     
     inline def setBlobId(value: String): Self = StObject.set(x, "blobId", value.asInstanceOf[js.Any])
     

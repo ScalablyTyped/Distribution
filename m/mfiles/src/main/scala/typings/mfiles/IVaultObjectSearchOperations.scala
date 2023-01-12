@@ -73,7 +73,8 @@ object IVaultObjectSearchOperations {
     __obj.asInstanceOf[IVaultObjectSearchOperations]
   }
   
-  extension [Self <: IVaultObjectSearchOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultObjectSearchOperations] (val x: Self) extends AnyVal {
     
     inline def setFindFile(value: (String, Boolean) => IObjectFileAndVersion): Self = StObject.set(x, "FindFile", js.Any.fromFunction2(value))
     

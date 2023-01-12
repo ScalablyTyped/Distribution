@@ -41,7 +41,8 @@ object EnhancedTextCfg {
     __obj.asInstanceOf[EnhancedTextCfg]
   }
   
-  extension [Self <: EnhancedTextCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedTextCfg] (val x: Self) extends AnyVal {
     
     inline def setAutoEllipsis(value: Boolean): Self = StObject.set(x, "autoEllipsis", value.asInstanceOf[js.Any])
     

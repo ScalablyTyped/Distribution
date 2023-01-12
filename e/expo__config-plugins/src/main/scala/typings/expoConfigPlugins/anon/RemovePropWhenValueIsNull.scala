@@ -15,7 +15,8 @@ object RemovePropWhenValueIsNull {
     __obj.asInstanceOf[RemovePropWhenValueIsNull]
   }
   
-  extension [Self <: RemovePropWhenValueIsNull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemovePropWhenValueIsNull] (val x: Self) extends AnyVal {
     
     inline def setRemovePropWhenValueIsNull(value: Boolean): Self = StObject.set(x, "removePropWhenValueIsNull", value.asInstanceOf[js.Any])
     

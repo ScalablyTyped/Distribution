@@ -27,7 +27,8 @@ object SceneOptions {
     __obj.asInstanceOf[SceneOptions]
   }
   
-  extension [Self <: SceneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneOptions] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

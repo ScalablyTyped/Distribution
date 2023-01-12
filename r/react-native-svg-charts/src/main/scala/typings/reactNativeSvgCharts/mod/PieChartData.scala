@@ -23,7 +23,8 @@ object PieChartData {
     __obj.asInstanceOf[PieChartData]
   }
   
-  extension [Self <: PieChartData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartData] (val x: Self) extends AnyVal {
     
     inline def setArc(value: CornerRadius): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

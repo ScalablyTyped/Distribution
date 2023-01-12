@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2SummaryResult {
     __obj.asInstanceOf[GooglePrivacyDlpV2SummaryResult]
   }
   
-  extension [Self <: GooglePrivacyDlpV2SummaryResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2SummaryResult] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

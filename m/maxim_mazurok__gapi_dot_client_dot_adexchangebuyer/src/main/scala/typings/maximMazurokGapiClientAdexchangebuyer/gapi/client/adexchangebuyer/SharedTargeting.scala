@@ -22,7 +22,8 @@ object SharedTargeting {
     __obj.asInstanceOf[SharedTargeting]
   }
   
-  extension [Self <: SharedTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedTargeting] (val x: Self) extends AnyVal {
     
     inline def setExclusions(value: js.Array[TargetingValue]): Self = StObject.set(x, "exclusions", value.asInstanceOf[js.Any])
     

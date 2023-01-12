@@ -21,7 +21,8 @@ object ClassKeyTabClassKey {
     __obj.asInstanceOf[ClassKeyTabClassKey[P, D]]
   }
   
-  extension [Self <: ClassKeyTabClassKey[?, ?], P, D /* <: ElementType[Any] */](x: Self & (ClassKeyTabClassKey[P, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassKeyTabClassKey[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (ClassKeyTabClassKey[P, D])) extends AnyVal {
     
     inline def setClassKey(value: TabClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
     

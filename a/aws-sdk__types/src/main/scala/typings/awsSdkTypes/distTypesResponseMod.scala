@@ -21,7 +21,8 @@ object distTypesResponseMod {
       __obj.asInstanceOf[MetadataBearer]
     }
     
-    extension [Self <: MetadataBearer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataBearer] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
     }
@@ -68,7 +69,8 @@ object distTypesResponseMod {
       __obj.asInstanceOf[ResponseMetadata]
     }
     
-    extension [Self <: ResponseMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseMetadata] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       

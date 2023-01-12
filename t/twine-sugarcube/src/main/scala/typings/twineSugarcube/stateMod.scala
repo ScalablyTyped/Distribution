@@ -189,7 +189,8 @@ object stateMod {
       __obj.asInstanceOf[StoryMoment]
     }
     
-    extension [Self <: StoryMoment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StoryMoment] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       

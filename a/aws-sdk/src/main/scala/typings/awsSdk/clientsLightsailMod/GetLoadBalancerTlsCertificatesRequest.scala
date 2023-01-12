@@ -18,7 +18,8 @@ object GetLoadBalancerTlsCertificatesRequest {
     __obj.asInstanceOf[GetLoadBalancerTlsCertificatesRequest]
   }
   
-  extension [Self <: GetLoadBalancerTlsCertificatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLoadBalancerTlsCertificatesRequest] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }

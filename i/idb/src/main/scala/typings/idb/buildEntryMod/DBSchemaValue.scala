@@ -20,7 +20,8 @@ object DBSchemaValue {
     __obj.asInstanceOf[DBSchemaValue]
   }
   
-  extension [Self <: DBSchemaValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBSchemaValue] (val x: Self) extends AnyVal {
     
     inline def setIndexes(value: IndexKeys): Self = StObject.set(x, "indexes", value.asInstanceOf[js.Any])
     

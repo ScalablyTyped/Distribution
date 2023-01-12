@@ -19,7 +19,8 @@ object MediaUnmountEvent {
     __obj.asInstanceOf[MediaUnmountEvent]
   }
   
-  extension [Self <: MediaUnmountEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaUnmountEvent] (val x: Self) extends AnyVal {
     
     inline def setMountPoint(value: String): Self = StObject.set(x, "mountPoint", value.asInstanceOf[js.Any])
     

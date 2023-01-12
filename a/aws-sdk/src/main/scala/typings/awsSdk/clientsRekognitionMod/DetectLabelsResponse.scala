@@ -33,7 +33,8 @@ object DetectLabelsResponse {
     __obj.asInstanceOf[DetectLabelsResponse]
   }
   
-  extension [Self <: DetectLabelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectLabelsResponse] (val x: Self) extends AnyVal {
     
     inline def setImageProperties(value: DetectLabelsImageProperties): Self = StObject.set(x, "ImageProperties", value.asInstanceOf[js.Any])
     

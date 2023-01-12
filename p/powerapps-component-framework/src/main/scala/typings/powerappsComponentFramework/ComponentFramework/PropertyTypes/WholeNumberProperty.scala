@@ -23,7 +23,8 @@ object WholeNumberProperty {
     __obj.asInstanceOf[WholeNumberProperty]
   }
   
-  extension [Self <: WholeNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WholeNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: WholeNumberMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

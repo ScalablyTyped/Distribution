@@ -84,7 +84,8 @@ object IParserErrorMessageProvider {
     __obj.asInstanceOf[IParserErrorMessageProvider]
   }
   
-  extension [Self <: IParserErrorMessageProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IParserErrorMessageProvider] (val x: Self) extends AnyVal {
     
     inline def setBuildEarlyExitMessage(value: ExpectedIterationPaths => String): Self = StObject.set(x, "buildEarlyExitMessage", js.Any.fromFunction1(value))
     

@@ -41,7 +41,8 @@ object GooglePrivacyDlpV2ContentLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2ContentLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ContentLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ContentLocation] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

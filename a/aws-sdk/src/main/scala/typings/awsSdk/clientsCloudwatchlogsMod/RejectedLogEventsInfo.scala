@@ -28,7 +28,8 @@ object RejectedLogEventsInfo {
     __obj.asInstanceOf[RejectedLogEventsInfo]
   }
   
-  extension [Self <: RejectedLogEventsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectedLogEventsInfo] (val x: Self) extends AnyVal {
     
     inline def setExpiredLogEventEndIndex(value: LogEventIndex): Self = StObject.set(x, "expiredLogEventEndIndex", value.asInstanceOf[js.Any])
     

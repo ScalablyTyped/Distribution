@@ -27,7 +27,8 @@ object typesLatestSrcOperationArgumentsMod {
       __obj.asInstanceOf[OperationArguments]
     }
     
-    extension [Self <: OperationArguments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationArguments] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: RequestOptionsBase): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object CoverageCostToBeneficiaryException {
     __obj.asInstanceOf[CoverageCostToBeneficiaryException]
   }
   
-  extension [Self <: CoverageCostToBeneficiaryException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoverageCostToBeneficiaryException] (val x: Self) extends AnyVal {
     
     inline def setPeriod(value: Period): Self = StObject.set(x, "period", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ReadonlyNavigatorIOSProps {
     __obj.asInstanceOf[ReadonlyNavigatorIOSProps]
   }
   
-  extension [Self <: ReadonlyNavigatorIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyNavigatorIOSProps] (val x: Self) extends AnyVal {
     
     inline def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
     

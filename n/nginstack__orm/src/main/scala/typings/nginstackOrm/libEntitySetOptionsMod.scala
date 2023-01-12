@@ -46,7 +46,8 @@ object libEntitySetOptionsMod {
       __obj.asInstanceOf[EntitySetOptions]
     }
     
-    extension [Self <: EntitySetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntitySetOptions] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[String] | (js.Function1[/* arg0 */ Field, Boolean])): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

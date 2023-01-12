@@ -18,7 +18,8 @@ object InputStartingPositionConfiguration {
     __obj.asInstanceOf[InputStartingPositionConfiguration]
   }
   
-  extension [Self <: InputStartingPositionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputStartingPositionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInputStartingPosition(value: InputStartingPosition): Self = StObject.set(x, "InputStartingPosition", value.asInstanceOf[js.Any])
     

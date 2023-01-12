@@ -2192,7 +2192,8 @@ object mod {
         __obj.asInstanceOf[Config]
       }
       
-      extension [Self <: Config](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
         
         inline def setALPHABET(value: String): Self = StObject.set(x, "ALPHABET", value.asInstanceOf[js.Any])
         
@@ -2268,7 +2269,8 @@ object mod {
         __obj.asInstanceOf[Format]
       }
       
-      extension [Self <: Format](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
         
         inline def setDecimalSeparator(value: String): Self = StObject.set(x, "decimalSeparator", value.asInstanceOf[js.Any])
         
@@ -2324,7 +2326,8 @@ object mod {
         __obj.asInstanceOf[Instance]
       }
       
-      extension [Self <: Instance](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Instance] (val x: Self) extends AnyVal {
         
         inline def setC(value: js.Array[Double]): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
         

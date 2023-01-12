@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[MacOSProtocol]
     }
     
-    extension [Self <: MacOSProtocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacOSProtocol] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -682,7 +683,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAfterAsar(value: js.Array[HookFunction]): Self = StObject.set(x, "afterAsar", value.asInstanceOf[js.Any])
       
@@ -939,7 +941,8 @@ object mod {
       __obj.asInstanceOf[OsxSignOptions]
     }
     
-    extension [Self <: OsxSignOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OsxSignOptions] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: String): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -1010,7 +1013,8 @@ object mod {
       __obj.asInstanceOf[TargetDefinition]
     }
     
-    extension [Self <: TargetDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetDefinition] (val x: Self) extends AnyVal {
       
       inline def setArch(value: TargetArch): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -1059,7 +1063,8 @@ object mod {
       __obj.asInstanceOf[Win32MetadataOptions]
     }
     
-    extension [Self <: Win32MetadataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Win32MetadataOptions] (val x: Self) extends AnyVal {
       
       inline def `setApplication-manifest`(value: String): Self = StObject.set(x, "application-manifest", value.asInstanceOf[js.Any])
       

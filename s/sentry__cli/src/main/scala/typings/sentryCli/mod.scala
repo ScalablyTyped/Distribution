@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[SentryCli]
     }
     
-    extension [Self <: SentryCli](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCli] (val x: Self) extends AnyVal {
       
       inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[SentryCliCommitsOptions]
     }
     
-    extension [Self <: SentryCliCommitsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliCommitsOptions] (val x: Self) extends AnyVal {
       
       inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object mod {
       __obj.asInstanceOf[SentryCliNewDeployOptions]
     }
     
-    extension [Self <: SentryCliNewDeployOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliNewDeployOptions] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: String): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       
@@ -281,7 +284,8 @@ object mod {
       __obj.asInstanceOf[SentryCliOptions]
     }
     
-    extension [Self <: SentryCliOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliOptions] (val x: Self) extends AnyVal {
       
       inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
       
@@ -427,7 +431,8 @@ object mod {
       __obj.asInstanceOf[SentryCliUploadSourceMapsOptions]
     }
     
-    extension [Self <: SentryCliUploadSourceMapsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SentryCliUploadSourceMapsOptions] (val x: Self) extends AnyVal {
       
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       
@@ -521,7 +526,8 @@ object mod {
       __obj.asInstanceOf[SourceMapsPathDescriptor]
     }
     
-    extension [Self <: SourceMapsPathDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapsPathDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDist(value: String): Self = StObject.set(x, "dist", value.asInstanceOf[js.Any])
       

@@ -211,7 +211,8 @@ object examplesJsmPostprocessingSaopassMod {
       __obj.asInstanceOf[SAOPassParams]
     }
     
-    extension [Self <: SAOPassParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAOPassParams] (val x: Self) extends AnyVal {
       
       inline def setOutput(value: OUTPUT): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       

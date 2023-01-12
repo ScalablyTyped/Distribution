@@ -30,7 +30,8 @@ object GlobalUserTask {
     __obj.asInstanceOf[GlobalUserTask]
   }
   
-  extension [Self <: GlobalUserTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalUserTask] (val x: Self) extends AnyVal {
     
     inline def setImplementation(value: String): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
     

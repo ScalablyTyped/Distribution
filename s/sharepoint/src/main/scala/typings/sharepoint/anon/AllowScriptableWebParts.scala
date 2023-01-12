@@ -32,7 +32,8 @@ object AllowScriptableWebParts {
     __obj.asInstanceOf[AllowScriptableWebParts]
   }
   
-  extension [Self <: AllowScriptableWebParts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowScriptableWebParts] (val x: Self) extends AnyVal {
     
     inline def setAllowScriptableWebParts(value: Boolean): Self = StObject.set(x, "AllowScriptableWebParts", value.asInstanceOf[js.Any])
     

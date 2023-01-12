@@ -15,7 +15,8 @@ object ITableColumn {
     __obj.asInstanceOf[ITableColumn]
   }
   
-  extension [Self <: ITableColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITableColumn] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_webc_main_ITableColumn(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_webc_main_ITableColumn", value.asInstanceOf[js.Any])
   }

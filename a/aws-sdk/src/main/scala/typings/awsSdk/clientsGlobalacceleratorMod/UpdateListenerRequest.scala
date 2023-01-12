@@ -33,7 +33,8 @@ object UpdateListenerRequest {
     __obj.asInstanceOf[UpdateListenerRequest]
   }
   
-  extension [Self <: UpdateListenerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateListenerRequest] (val x: Self) extends AnyVal {
     
     inline def setClientAffinity(value: ClientAffinity): Self = StObject.set(x, "ClientAffinity", value.asInstanceOf[js.Any])
     

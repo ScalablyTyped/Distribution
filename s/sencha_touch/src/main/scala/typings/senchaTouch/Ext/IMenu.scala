@@ -78,7 +78,8 @@ object IMenu {
     __obj.asInstanceOf[IMenu]
   }
   
-  extension [Self <: IMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMenu] (val x: Self) extends AnyVal {
     
     inline def setDoSetHidden(value: () => Unit): Self = StObject.set(x, "doSetHidden", js.Any.fromFunction0(value))
     

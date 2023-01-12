@@ -148,7 +148,8 @@ object libSecurityPermissionMaintenanceMod {
       __obj.asInstanceOf[PermissionMaintenance]
     }
     
-    extension [Self <: PermissionMaintenance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionMaintenance] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: () => Double): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
       

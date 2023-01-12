@@ -15,7 +15,8 @@ object AllowNonClassFields {
     __obj.asInstanceOf[AllowNonClassFields]
   }
   
-  extension [Self <: AllowNonClassFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowNonClassFields] (val x: Self) extends AnyVal {
     
     inline def setAllowNonClassFields(value: Boolean): Self = StObject.set(x, "allowNonClassFields", value.asInstanceOf[js.Any])
   }

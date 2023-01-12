@@ -23,7 +23,8 @@ object PortRange {
     __obj.asInstanceOf[PortRange]
   }
   
-  extension [Self <: PortRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortRange] (val x: Self) extends AnyVal {
     
     inline def setFromPort(value: PortNumber): Self = StObject.set(x, "FromPort", value.asInstanceOf[js.Any])
     

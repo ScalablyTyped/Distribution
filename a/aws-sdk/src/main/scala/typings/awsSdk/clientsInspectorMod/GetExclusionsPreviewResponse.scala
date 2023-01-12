@@ -28,7 +28,8 @@ object GetExclusionsPreviewResponse {
     __obj.asInstanceOf[GetExclusionsPreviewResponse]
   }
   
-  extension [Self <: GetExclusionsPreviewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExclusionsPreviewResponse] (val x: Self) extends AnyVal {
     
     inline def setExclusionPreviews(value: ExclusionPreviewList): Self = StObject.set(x, "exclusionPreviews", value.asInstanceOf[js.Any])
     

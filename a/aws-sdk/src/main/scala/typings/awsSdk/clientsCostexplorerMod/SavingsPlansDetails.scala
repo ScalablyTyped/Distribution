@@ -28,7 +28,8 @@ object SavingsPlansDetails {
     __obj.asInstanceOf[SavingsPlansDetails]
   }
   
-  extension [Self <: SavingsPlansDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SavingsPlansDetails] (val x: Self) extends AnyVal {
     
     inline def setInstanceFamily(value: GenericString): Self = StObject.set(x, "InstanceFamily", value.asInstanceOf[js.Any])
     

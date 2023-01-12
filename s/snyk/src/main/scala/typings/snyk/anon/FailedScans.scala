@@ -19,7 +19,8 @@ object FailedScans {
     __obj.asInstanceOf[FailedScans]
   }
   
-  extension [Self <: FailedScans](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FailedScans] (val x: Self) extends AnyVal {
     
     inline def setFailedScans(value: js.Array[IacFileInDirectory]): Self = StObject.set(x, "failedScans", value.asInstanceOf[js.Any])
     

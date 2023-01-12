@@ -36,7 +36,8 @@ object EventObjectEdge {
     __obj.asInstanceOf[EventObjectEdge]
   }
   
-  extension [Self <: EventObjectEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventObjectEdge] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: EdgeSingular): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
   }

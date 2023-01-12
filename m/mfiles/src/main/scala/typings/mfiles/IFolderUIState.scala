@@ -41,7 +41,8 @@ object IFolderUIState {
     __obj.asInstanceOf[IFolderUIState]
   }
   
-  extension [Self <: IFolderUIState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderUIState] (val x: Self) extends AnyVal {
     
     inline def setBottomPaneBarMinimized(value: Boolean): Self = StObject.set(x, "BottomPaneBarMinimized", value.asInstanceOf[js.Any])
     

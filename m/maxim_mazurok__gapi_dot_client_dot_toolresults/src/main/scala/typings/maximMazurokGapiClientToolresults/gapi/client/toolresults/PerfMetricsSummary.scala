@@ -36,7 +36,8 @@ object PerfMetricsSummary {
     __obj.asInstanceOf[PerfMetricsSummary]
   }
   
-  extension [Self <: PerfMetricsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerfMetricsSummary] (val x: Self) extends AnyVal {
     
     inline def setAppStartTime(value: AppStartTime): Self = StObject.set(x, "appStartTime", value.asInstanceOf[js.Any])
     

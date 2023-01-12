@@ -23,7 +23,8 @@ object AggregationsGeoLineAggregation {
     __obj.asInstanceOf[AggregationsGeoLineAggregation]
   }
   
-  extension [Self <: AggregationsGeoLineAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsGeoLineAggregation] (val x: Self) extends AnyVal {
     
     inline def setInclude_sort(value: Boolean): Self = StObject.set(x, "include_sort", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object libSymbolTreeMod {
       __obj.asInstanceOf[IteratorOptions]
     }
     
-    extension [Self <: IteratorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IteratorOptions] (val x: Self) extends AnyVal {
       
       inline def setReverse(value: Boolean): Self = StObject.set(x, "reverse", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object libSymbolTreeMod {
       __obj.asInstanceOf[SiblingOptions[T]]
     }
     
-    extension [Self <: SiblingOptions[?], T /* <: js.Object */](x: Self & SiblingOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiblingOptions[?], T /* <: js.Object */] (val x: Self & SiblingOptions[T]) extends AnyVal {
       
       inline def setRoot(value: T): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -399,7 +401,8 @@ object libSymbolTreeMod {
       __obj.asInstanceOf[ToArrayOptions[T]]
     }
     
-    extension [Self <: ToArrayOptions[?], T /* <: js.Object */](x: Self & ToArrayOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ToArrayOptions[?], T /* <: js.Object */] (val x: Self & ToArrayOptions[T]) extends AnyVal {
       
       inline def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

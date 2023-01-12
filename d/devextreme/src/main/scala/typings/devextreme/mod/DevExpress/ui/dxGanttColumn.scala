@@ -132,7 +132,8 @@ object dxGanttColumn {
     __obj.asInstanceOf[dxGanttColumn[TRowData, TKey]]
   }
   
-  extension [Self <: dxGanttColumn[?, ?], TRowData, TKey](x: Self & (dxGanttColumn[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttColumn[?, ?], TRowData, TKey] (val x: Self & (dxGanttColumn[TRowData, TKey])) extends AnyVal {
     
     inline def setAlignment(value: HorizontalAlignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

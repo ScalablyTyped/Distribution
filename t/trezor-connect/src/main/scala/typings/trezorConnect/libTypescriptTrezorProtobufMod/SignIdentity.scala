@@ -21,7 +21,8 @@ object SignIdentity {
     __obj.asInstanceOf[SignIdentity]
   }
   
-  extension [Self <: SignIdentity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignIdentity] (val x: Self) extends AnyVal {
     
     inline def setChallenge_hidden(value: String): Self = StObject.set(x, "challenge_hidden", value.asInstanceOf[js.Any])
     

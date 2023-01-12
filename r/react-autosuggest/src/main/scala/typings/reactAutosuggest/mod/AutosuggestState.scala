@@ -25,7 +25,8 @@ object AutosuggestState {
     __obj.asInstanceOf[AutosuggestState[TSuggestion]]
   }
   
-  extension [Self <: AutosuggestState[?], TSuggestion](x: Self & AutosuggestState[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutosuggestState[?], TSuggestion] (val x: Self & AutosuggestState[TSuggestion]) extends AnyVal {
     
     inline def setHighlightedSectionIndex(value: Double): Self = StObject.set(x, "highlightedSectionIndex", value.asInstanceOf[js.Any])
     

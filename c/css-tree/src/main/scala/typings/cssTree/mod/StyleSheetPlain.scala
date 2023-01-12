@@ -22,7 +22,8 @@ object StyleSheetPlain {
     __obj.asInstanceOf[StyleSheetPlain]
   }
   
-  extension [Self <: StyleSheetPlain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetPlain] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[CssNodePlain]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateAppImageConfigRequest {
     __obj.asInstanceOf[UpdateAppImageConfigRequest]
   }
   
-  extension [Self <: UpdateAppImageConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAppImageConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setAppImageConfigName(value: AppImageConfigName): Self = StObject.set(x, "AppImageConfigName", value.asInstanceOf[js.Any])
     

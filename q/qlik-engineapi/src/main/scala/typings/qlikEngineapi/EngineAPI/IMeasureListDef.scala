@@ -19,7 +19,8 @@ object IMeasureListDef {
     __obj.asInstanceOf[IMeasureListDef]
   }
   
-  extension [Self <: IMeasureListDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMeasureListDef] (val x: Self) extends AnyVal {
     
     inline def setQType(value: measure): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }

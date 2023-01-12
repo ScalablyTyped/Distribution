@@ -128,7 +128,8 @@ object DeviceUsage {
     __obj.asInstanceOf[DeviceUsage]
   }
   
-  extension [Self <: DeviceUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceUsage] (val x: Self) extends AnyVal {
     
     inline def setBasedOn(value: js.Array[Reference]): Self = StObject.set(x, "basedOn", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object MonitorMeta {
     __obj.asInstanceOf[MonitorMeta]
   }
   
-  extension [Self <: MonitorMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorMeta] (val x: Self) extends AnyVal {
     
     inline def setIsDocker(value: Boolean): Self = StObject.set(x, "isDocker", value.asInstanceOf[js.Any])
     

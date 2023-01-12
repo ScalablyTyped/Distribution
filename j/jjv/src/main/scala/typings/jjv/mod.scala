@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Errors]
     }
     
-    extension [Self <: Errors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Errors] (val x: Self) extends AnyVal {
       
       inline def setValidation(value: StringDictionary[Required]): Self = StObject.set(x, "validation", value.asInstanceOf[js.Any])
     }
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCheckRequired(value: Boolean): Self = StObject.set(x, "checkRequired", value.asInstanceOf[js.Any])
       

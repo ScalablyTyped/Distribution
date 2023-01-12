@@ -642,7 +642,8 @@ object libButtonMod {
       __obj.asInstanceOf[ButtonProps[T]]
     }
     
-    extension [Self <: ButtonProps[?], T /* <: HTMLButtonElement | HTMLAnchorElement */](x: Self & ButtonProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps[?], T /* <: HTMLButtonElement | HTMLAnchorElement */] (val x: Self & ButtonProps[T]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

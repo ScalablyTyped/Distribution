@@ -34,7 +34,8 @@ object distFirestoreSrcRemoteConnectivityMonitorMod {
       __obj.asInstanceOf[ConnectivityMonitor]
     }
     
-    extension [Self <: ConnectivityMonitor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectivityMonitor] (val x: Self) extends AnyVal {
       
       inline def setAddCallback(value: ConnectivityMonitorCallback => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction1(value))
       

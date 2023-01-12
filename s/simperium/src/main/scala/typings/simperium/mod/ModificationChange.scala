@@ -28,7 +28,8 @@ object ModificationChange {
     __obj.asInstanceOf[ModificationChange[T]]
   }
   
-  extension [Self <: ModificationChange[?], T](x: Self & ModificationChange[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModificationChange[?], T] (val x: Self & ModificationChange[T]) extends AnyVal {
     
     inline def setCcid(value: String): Self = StObject.set(x, "ccid", value.asInstanceOf[js.Any])
     

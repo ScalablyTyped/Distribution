@@ -28,7 +28,8 @@ object UseStore {
     __obj.asInstanceOf[UseStore[S]]
   }
   
-  extension [Self <: UseStore[?], S /* <: StoreApi[Any] */](x: Self & UseStore[S]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseStore[?], S /* <: StoreApi[Any] */] (val x: Self & UseStore[S]) extends AnyVal {
     
     inline def setProvider(value: Children[S] => FunctionComponentElement[ProviderProps[js.UndefOr[S]]]): Self = StObject.set(x, "Provider", js.Any.fromFunction1(value))
     

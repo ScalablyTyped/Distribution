@@ -33,7 +33,8 @@ object IMapState {
     __obj.asInstanceOf[IMapState]
   }
   
-  extension [Self <: IMapState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapState] (val x: Self) extends AnyVal {
     
     inline def setBehaviors(value: js.Array[String]): Self = StObject.set(x, "behaviors", value.asInstanceOf[js.Any])
     

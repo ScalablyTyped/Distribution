@@ -15,7 +15,8 @@ object EnumValuesPartiallyResolved {
     __obj.asInstanceOf[EnumValuesPartiallyResolved]
   }
   
-  extension [Self <: EnumValuesPartiallyResolved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesPartiallyResolved] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: PartiallyResolved): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

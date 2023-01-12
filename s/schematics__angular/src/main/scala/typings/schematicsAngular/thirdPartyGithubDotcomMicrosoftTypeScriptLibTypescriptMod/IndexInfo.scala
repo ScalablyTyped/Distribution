@@ -22,7 +22,8 @@ object IndexInfo {
     __obj.asInstanceOf[IndexInfo]
   }
   
-  extension [Self <: IndexInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexInfo] (val x: Self) extends AnyVal {
     
     inline def setDeclaration(value: IndexSignatureDeclaration): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     

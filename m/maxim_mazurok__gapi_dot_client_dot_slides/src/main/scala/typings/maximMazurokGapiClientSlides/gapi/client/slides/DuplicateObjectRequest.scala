@@ -28,7 +28,8 @@ object DuplicateObjectRequest {
     __obj.asInstanceOf[DuplicateObjectRequest]
   }
   
-  extension [Self <: DuplicateObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DuplicateObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

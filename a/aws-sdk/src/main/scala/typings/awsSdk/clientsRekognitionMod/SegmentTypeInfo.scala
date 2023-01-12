@@ -23,7 +23,8 @@ object SegmentTypeInfo {
     __obj.asInstanceOf[SegmentTypeInfo]
   }
   
-  extension [Self <: SegmentTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setModelVersion(value: String): Self = StObject.set(x, "ModelVersion", value.asInstanceOf[js.Any])
     

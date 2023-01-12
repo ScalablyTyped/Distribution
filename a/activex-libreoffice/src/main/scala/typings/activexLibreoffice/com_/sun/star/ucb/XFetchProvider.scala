@@ -32,7 +32,8 @@ object XFetchProvider {
     __obj.asInstanceOf[XFetchProvider]
   }
   
-  extension [Self <: XFetchProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFetchProvider] (val x: Self) extends AnyVal {
     
     inline def setFetch(value: (Double, Double, Boolean) => FetchResult): Self = StObject.set(x, "fetch", js.Any.fromFunction3(value))
   }

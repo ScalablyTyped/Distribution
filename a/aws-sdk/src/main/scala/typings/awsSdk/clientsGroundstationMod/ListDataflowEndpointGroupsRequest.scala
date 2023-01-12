@@ -23,7 +23,8 @@ object ListDataflowEndpointGroupsRequest {
     __obj.asInstanceOf[ListDataflowEndpointGroupsRequest]
   }
   
-  extension [Self <: ListDataflowEndpointGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataflowEndpointGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

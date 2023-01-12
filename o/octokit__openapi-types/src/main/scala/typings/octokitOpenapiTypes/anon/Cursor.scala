@@ -23,7 +23,8 @@ object Cursor {
     __obj.asInstanceOf[Cursor]
   }
   
-  extension [Self <: Cursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cursor] (val x: Self) extends AnyVal {
     
     inline def setCursor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['cursor'] */ js.Any

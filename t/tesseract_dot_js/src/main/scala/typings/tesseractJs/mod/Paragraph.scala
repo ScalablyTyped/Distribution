@@ -44,7 +44,8 @@ object Paragraph {
     __obj.asInstanceOf[Paragraph]
   }
   
-  extension [Self <: Paragraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Paragraph] (val x: Self) extends AnyVal {
     
     inline def setBaseline(value: Baseline): Self = StObject.set(x, "baseline", value.asInstanceOf[js.Any])
     

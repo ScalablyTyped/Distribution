@@ -38,7 +38,8 @@ object NotifyResourceDeploymentStatusChangeInput {
     __obj.asInstanceOf[NotifyResourceDeploymentStatusChangeInput]
   }
   
-  extension [Self <: NotifyResourceDeploymentStatusChangeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyResourceDeploymentStatusChangeInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

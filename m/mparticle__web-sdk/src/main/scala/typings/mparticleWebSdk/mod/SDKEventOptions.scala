@@ -15,7 +15,8 @@ object SDKEventOptions {
     __obj.asInstanceOf[SDKEventOptions]
   }
   
-  extension [Self <: SDKEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDKEventOptions] (val x: Self) extends AnyVal {
     
     inline def setShouldUploadEvent(value: Boolean): Self = StObject.set(x, "shouldUploadEvent", value.asInstanceOf[js.Any])
   }

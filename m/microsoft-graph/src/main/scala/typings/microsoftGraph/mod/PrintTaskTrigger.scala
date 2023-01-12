@@ -24,7 +24,8 @@ object PrintTaskTrigger {
     __obj.asInstanceOf[PrintTaskTrigger]
   }
   
-  extension [Self <: PrintTaskTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskTrigger] (val x: Self) extends AnyVal {
     
     inline def setDefinition(value: PrintTaskDefinition): Self = StObject.set(x, "definition", value.asInstanceOf[js.Any])
     

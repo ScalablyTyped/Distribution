@@ -22,7 +22,8 @@ object DataRange {
     __obj.asInstanceOf[DataRange]
   }
   
-  extension [Self <: DataRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRange] (val x: Self) extends AnyVal {
     
     inline def setCustomEndDate(value: Date): Self = StObject.set(x, "customEndDate", value.asInstanceOf[js.Any])
     

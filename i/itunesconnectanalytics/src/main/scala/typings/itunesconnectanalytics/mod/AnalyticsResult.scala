@@ -28,7 +28,8 @@ object AnalyticsResult {
     __obj.asInstanceOf[AnalyticsResult]
   }
   
-  extension [Self <: AnalyticsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsResult] (val x: Self) extends AnyVal {
     
     inline def setAdamId(value: String): Self = StObject.set(x, "adamId", value.asInstanceOf[js.Any])
     

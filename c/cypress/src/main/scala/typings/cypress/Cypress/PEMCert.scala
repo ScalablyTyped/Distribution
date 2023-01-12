@@ -28,7 +28,8 @@ object PEMCert {
     __obj.asInstanceOf[PEMCert]
   }
   
-  extension [Self <: PEMCert](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PEMCert] (val x: Self) extends AnyVal {
     
     inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     

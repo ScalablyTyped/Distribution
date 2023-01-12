@@ -41,7 +41,8 @@ object PartialConnectionParams {
     __obj.asInstanceOf[PartialConnectionParams]
   }
   
-  extension [Self <: PartialConnectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialConnectionParams] (val x: Self) extends AnyVal {
     
     inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
     

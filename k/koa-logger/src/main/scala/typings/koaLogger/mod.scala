@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[TransporterOpts]
     }
     
-    extension [Self <: TransporterOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransporterOpts] (val x: Self) extends AnyVal {
       
       inline def setTransporter(
         value: (/* str */ String, /* args */ js.Tuple6[String, String, String, js.UndefOr[Double], js.UndefOr[String], js.UndefOr[String]]) => Unit

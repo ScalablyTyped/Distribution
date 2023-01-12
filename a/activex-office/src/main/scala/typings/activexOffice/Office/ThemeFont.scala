@@ -31,7 +31,8 @@ object ThemeFont {
     __obj.asInstanceOf[ThemeFont]
   }
   
-  extension [Self <: ThemeFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeFont] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

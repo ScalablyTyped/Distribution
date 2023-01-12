@@ -22,7 +22,8 @@ object MilestonenumberOwner {
     __obj.asInstanceOf[MilestonenumberOwner]
   }
   
-  extension [Self <: MilestonenumberOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MilestonenumberOwner] (val x: Self) extends AnyVal {
     
     inline def setMilestone_number(value: Double): Self = StObject.set(x, "milestone_number", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object TryStatement {
     __obj.asInstanceOf[TryStatement]
   }
   
-  extension [Self <: TryStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TryStatement] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object WebhookTestingGateway {
     __obj.asInstanceOf[WebhookTestingGateway]
   }
   
-  extension [Self <: WebhookTestingGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookTestingGateway] (val x: Self) extends AnyVal {
     
     inline def setSampleNotification(value: (WebhookNotificationKind, String) => js.Promise[SampleNotification]): Self = StObject.set(x, "sampleNotification", js.Any.fromFunction2(value))
   }

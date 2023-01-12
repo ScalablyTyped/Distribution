@@ -96,7 +96,8 @@ object distTypesCoreServicesUsersMod {
       __obj.asInstanceOf[UserDetailSchema]
     }
     
-    extension [Self <: UserDetailSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserDetailSchema] (val x: Self) extends AnyVal {
       
       inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
       
@@ -147,7 +148,8 @@ object distTypesCoreServicesUsersMod {
       __obj.asInstanceOf[UserSchema]
     }
     
-    extension [Self <: UserSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserSchema] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       

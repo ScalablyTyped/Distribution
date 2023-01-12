@@ -19,7 +19,8 @@ object BasePrivateKeyEncodingOptions {
     __obj.asInstanceOf[BasePrivateKeyEncodingOptions[T]]
   }
   
-  extension [Self <: BasePrivateKeyEncodingOptions[?], T /* <: KeyFormat */](x: Self & BasePrivateKeyEncodingOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePrivateKeyEncodingOptions[?], T /* <: KeyFormat */] (val x: Self & BasePrivateKeyEncodingOptions[T]) extends AnyVal {
     
     inline def setCipher(value: String): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object anon {
       __obj.asInstanceOf[IParseOptionsdecodernever]
     }
     
-    extension [Self <: IParseOptionsdecodernever](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParseOptionsdecodernever] (val x: Self) extends AnyVal {
       
       inline def setAllowDots(value: Boolean): Self = StObject.set(x, "allowDots", value.asInstanceOf[js.Any])
       

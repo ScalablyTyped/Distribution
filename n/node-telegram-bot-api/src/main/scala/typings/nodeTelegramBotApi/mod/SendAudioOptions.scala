@@ -25,7 +25,8 @@ object SendAudioOptions {
     __obj.asInstanceOf[SendAudioOptions]
   }
   
-  extension [Self <: SendAudioOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendAudioOptions] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

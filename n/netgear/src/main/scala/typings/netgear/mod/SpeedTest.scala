@@ -19,7 +19,8 @@ object SpeedTest {
     __obj.asInstanceOf[SpeedTest]
   }
   
-  extension [Self <: SpeedTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeedTest] (val x: Self) extends AnyVal {
     
     inline def setAveragePing(value: Double): Self = StObject.set(x, "averagePing", value.asInstanceOf[js.Any])
     

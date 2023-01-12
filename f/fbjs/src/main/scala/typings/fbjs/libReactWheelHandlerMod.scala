@@ -150,7 +150,8 @@ object libReactWheelHandlerMod {
       __obj.asInstanceOf[ReactWheelHandler]
     }
     
-    extension [Self <: ReactWheelHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactWheelHandler] (val x: Self) extends AnyVal {
       
       inline def setOnWheel(value: Any => Unit): Self = StObject.set(x, "onWheel", js.Any.fromFunction1(value))
       

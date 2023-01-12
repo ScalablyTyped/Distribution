@@ -48,7 +48,8 @@ object DatabaseQueryCommand {
     __obj.asInstanceOf[DatabaseQueryCommand]
   }
   
-  extension [Self <: DatabaseQueryCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseQueryCommand] (val x: Self) extends AnyVal {
     
     inline def setGt(value: Any => DatabaseLogicCommand): Self = StObject.set(x, "gt", js.Any.fromFunction1(value))
     

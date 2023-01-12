@@ -392,7 +392,8 @@ object HTMLAttributes {
     __obj.asInstanceOf[HTMLAttributes[RefType]]
   }
   
-  extension [Self <: HTMLAttributes[?], RefType /* <: EventTarget */](x: Self & HTMLAttributes[RefType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLAttributes[?], RefType /* <: EventTarget */] (val x: Self & HTMLAttributes[RefType]) extends AnyVal {
     
     inline def setAbout(value: String | SignalLike[String]): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

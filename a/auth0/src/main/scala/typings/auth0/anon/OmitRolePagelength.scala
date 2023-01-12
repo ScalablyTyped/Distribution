@@ -23,7 +23,8 @@ object OmitRolePagelength {
     __obj.asInstanceOf[OmitRolePagelength]
   }
   
-  extension [Self <: OmitRolePagelength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitRolePagelength] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

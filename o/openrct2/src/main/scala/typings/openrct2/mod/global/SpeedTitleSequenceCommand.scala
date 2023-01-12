@@ -21,7 +21,8 @@ object SpeedTitleSequenceCommand {
     __obj.asInstanceOf[SpeedTitleSequenceCommand]
   }
   
-  extension [Self <: SpeedTitleSequenceCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeedTitleSequenceCommand] (val x: Self) extends AnyVal {
     
     inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
     

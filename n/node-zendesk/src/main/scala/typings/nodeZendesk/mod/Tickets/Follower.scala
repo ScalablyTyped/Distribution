@@ -20,7 +20,8 @@ object Follower {
     __obj.asInstanceOf[Follower]
   }
   
-  extension [Self <: Follower](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Follower] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

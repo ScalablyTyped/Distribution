@@ -42,7 +42,8 @@ object XStarBasicDialogInfo {
     __obj.asInstanceOf[XStarBasicDialogInfo]
   }
   
-  extension [Self <: XStarBasicDialogInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStarBasicDialogInfo] (val x: Self) extends AnyVal {
     
     inline def setData(value: SafeArray[Double]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

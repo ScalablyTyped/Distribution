@@ -90,7 +90,8 @@ object angularMod {
         __obj.asInstanceOf[WzStep]
       }
       
-      extension [Self <: WzStep](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WzStep] (val x: Self) extends AnyVal {
         
         inline def setCanenter(value: /* repeated */ Any => Boolean): Self = StObject.set(x, "canenter", js.Any.fromFunction1(value))
         

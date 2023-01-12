@@ -41,7 +41,8 @@ object JavascriptDialogOpeningEvent {
     __obj.asInstanceOf[JavascriptDialogOpeningEvent]
   }
   
-  extension [Self <: JavascriptDialogOpeningEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JavascriptDialogOpeningEvent] (val x: Self) extends AnyVal {
     
     inline def setDefaultPrompt(value: String): Self = StObject.set(x, "defaultPrompt", value.asInstanceOf[js.Any])
     

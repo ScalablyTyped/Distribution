@@ -18,7 +18,8 @@ object RequestSpotFleetResponse {
     __obj.asInstanceOf[RequestSpotFleetResponse]
   }
   
-  extension [Self <: RequestSpotFleetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestSpotFleetResponse] (val x: Self) extends AnyVal {
     
     inline def setSpotFleetRequestId(value: String): Self = StObject.set(x, "SpotFleetRequestId", value.asInstanceOf[js.Any])
     

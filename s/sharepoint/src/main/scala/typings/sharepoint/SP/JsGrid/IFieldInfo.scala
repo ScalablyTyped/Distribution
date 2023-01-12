@@ -31,7 +31,8 @@ object IFieldInfo {
     __obj.asInstanceOf[IFieldInfo]
   }
   
-  extension [Self <: IFieldInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldInfo] (val x: Self) extends AnyVal {
     
     inline def setDateOnly(value: Boolean): Self = StObject.set(x, "dateOnly", value.asInstanceOf[js.Any])
     

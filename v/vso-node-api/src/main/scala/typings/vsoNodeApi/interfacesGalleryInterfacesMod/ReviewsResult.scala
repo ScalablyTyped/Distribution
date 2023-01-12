@@ -28,7 +28,8 @@ object ReviewsResult {
     __obj.asInstanceOf[ReviewsResult]
   }
   
-  extension [Self <: ReviewsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReviewsResult] (val x: Self) extends AnyVal {
     
     inline def setHasMoreReviews(value: Boolean): Self = StObject.set(x, "hasMoreReviews", value.asInstanceOf[js.Any])
     

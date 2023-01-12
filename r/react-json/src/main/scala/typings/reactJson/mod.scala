@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[JsonProperties]
     }
     
-    extension [Self <: JsonProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonProperties] (val x: Self) extends AnyVal {
       
       inline def setOnChange(value: /* value */ Any => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
       

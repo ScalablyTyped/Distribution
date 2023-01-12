@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Apply]
     }
     
-    extension [Self <: Apply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Apply] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Resolver => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -61,7 +62,8 @@ object anon {
       __obj.asInstanceOf[ForceRelative]
     }
     
-    extension [Self <: ForceRelative](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForceRelative] (val x: Self) extends AnyVal {
       
       inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setForceRelative(value: Boolean): Self = StObject.set(x, "forceRelative", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[NoResolve]
     }
     
-    extension [Self <: NoResolve](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoResolve] (val x: Self) extends AnyVal {
       
       inline def setNoResolve(value: SyncHook[js.Tuple2[ResolveRequest, js.Error], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "noResolve", value.asInstanceOf[js.Any])
       

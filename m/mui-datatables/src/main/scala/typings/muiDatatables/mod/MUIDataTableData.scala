@@ -17,7 +17,8 @@ object MUIDataTableData {
     __obj.asInstanceOf[MUIDataTableData]
   }
   
-  extension [Self <: MUIDataTableData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableData] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[js.Object | (js.Array[Double | String])]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StopTrainingEntityRecognizerRequest {
     __obj.asInstanceOf[StopTrainingEntityRecognizerRequest]
   }
   
-  extension [Self <: StopTrainingEntityRecognizerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopTrainingEntityRecognizerRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityRecognizerArn(value: EntityRecognizerArn): Self = StObject.set(x, "EntityRecognizerArn", value.asInstanceOf[js.Any])
   }

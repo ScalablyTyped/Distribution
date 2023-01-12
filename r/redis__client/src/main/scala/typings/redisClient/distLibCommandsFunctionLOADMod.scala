@@ -27,7 +27,8 @@ object distLibCommandsFunctionLOADMod {
       __obj.asInstanceOf[FunctionLoadOptions]
     }
     
-    extension [Self <: FunctionLoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionLoadOptions] (val x: Self) extends AnyVal {
       
       inline def setREPLACE(value: Boolean): Self = StObject.set(x, "REPLACE", value.asInstanceOf[js.Any])
       

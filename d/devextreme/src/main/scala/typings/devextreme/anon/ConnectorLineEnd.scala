@@ -60,7 +60,8 @@ object ConnectorLineEnd {
     __obj.asInstanceOf[ConnectorLineEnd]
   }
   
-  extension [Self <: ConnectorLineEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorLineEnd] (val x: Self) extends AnyVal {
     
     inline def setConnectorLineEnd(value: DiagramConnectorLineEnd): Self = StObject.set(x, "connectorLineEnd", value.asInstanceOf[js.Any])
     

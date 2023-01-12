@@ -50,7 +50,8 @@ object FunctionDefinition {
     __obj.asInstanceOf[FunctionDefinition]
   }
   
-  extension [Self <: FunctionDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDefinition] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Block): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

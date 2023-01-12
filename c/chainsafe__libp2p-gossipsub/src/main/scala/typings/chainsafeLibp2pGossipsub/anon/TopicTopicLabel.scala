@@ -16,7 +16,8 @@ object TopicTopicLabel {
     __obj.asInstanceOf[TopicTopicLabel]
   }
   
-  extension [Self <: TopicTopicLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicTopicLabel] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: TopicLabel): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
   }

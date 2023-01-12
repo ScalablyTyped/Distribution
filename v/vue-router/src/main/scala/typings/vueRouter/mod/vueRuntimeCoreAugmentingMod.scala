@@ -62,7 +62,8 @@ object vueRuntimeCoreAugmentingMod {
       __obj.asInstanceOf[ComponentCustomOptions]
     }
     
-    extension [Self <: ComponentCustomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentCustomOptions] (val x: Self) extends AnyVal {
       
       inline def setBeforeRouteEnter(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'beforeRouteEnter', infer T> * /
@@ -115,7 +116,8 @@ object vueRuntimeCoreAugmentingMod {
       __obj.asInstanceOf[ComponentCustomProperties]
     }
     
-    extension [Self <: ComponentCustomProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentCustomProperties] (val x: Self) extends AnyVal {
       
       inline def set$route(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'$route', infer T> * /
@@ -149,7 +151,8 @@ object vueRuntimeCoreAugmentingMod {
       __obj.asInstanceOf[GlobalComponents]
     }
     
-    extension [Self <: GlobalComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalComponents] (val x: Self) extends AnyVal {
       
       inline def setRouterLink(
         value: /* import warning: importer.ImportType#apply Failed type conversion: vue-router.vue-router.TypesConfig extends / * Inlined std.Record<'RouterLink', infer T> * /

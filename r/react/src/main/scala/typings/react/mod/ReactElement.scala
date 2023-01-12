@@ -22,7 +22,8 @@ object ReactElement {
     __obj.asInstanceOf[ReactElement]
   }
   
-  extension [Self <: ReactElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactElement] (val x: Self) extends AnyVal {
     
     inline def setKey(value: Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

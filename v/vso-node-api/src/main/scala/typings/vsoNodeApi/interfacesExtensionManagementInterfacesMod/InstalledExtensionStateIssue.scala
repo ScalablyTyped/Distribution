@@ -29,7 +29,8 @@ object InstalledExtensionStateIssue {
     __obj.asInstanceOf[InstalledExtensionStateIssue]
   }
   
-  extension [Self <: InstalledExtensionStateIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstalledExtensionStateIssue] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetDistributionMetricDataResult {
     __obj.asInstanceOf[GetDistributionMetricDataResult]
   }
   
-  extension [Self <: GetDistributionMetricDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionMetricDataResult] (val x: Self) extends AnyVal {
     
     inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     

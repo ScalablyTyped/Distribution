@@ -16,7 +16,8 @@ object AccountAccess {
     __obj.asInstanceOf[AccountAccess]
   }
   
-  extension [Self <: AccountAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountAccess] (val x: Self) extends AnyVal {
     
     inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     

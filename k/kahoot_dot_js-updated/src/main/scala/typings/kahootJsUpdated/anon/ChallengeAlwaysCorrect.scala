@@ -25,7 +25,8 @@ object ChallengeAlwaysCorrect {
     __obj.asInstanceOf[ChallengeAlwaysCorrect]
   }
   
-  extension [Self <: ChallengeAlwaysCorrect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeAlwaysCorrect] (val x: Self) extends AnyVal {
     
     inline def setChallengeAlwaysCorrect(value: Boolean): Self = StObject.set(x, "ChallengeAlwaysCorrect", value.asInstanceOf[js.Any])
     

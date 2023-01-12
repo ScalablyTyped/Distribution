@@ -25,7 +25,8 @@ object ArrayOperator {
     __obj.asInstanceOf[ArrayOperator[Type]]
   }
   
-  extension [Self <: ArrayOperator[?], Type](x: Self & ArrayOperator[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayOperator[?], Type] (val x: Self & ArrayOperator[Type]) extends AnyVal {
     
     inline def set$each(value: js.Array[Flatten[Type]]): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
     

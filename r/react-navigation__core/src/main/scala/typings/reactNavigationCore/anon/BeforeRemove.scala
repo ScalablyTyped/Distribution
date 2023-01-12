@@ -23,7 +23,8 @@ object BeforeRemove {
     __obj.asInstanceOf[BeforeRemove]
   }
   
-  extension [Self <: BeforeRemove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeRemove] (val x: Self) extends AnyVal {
     
     inline def setBeforeRemove(value: Record[String, js.UndefOr[ChildBeforeRemoveListener]]): Self = StObject.set(x, "beforeRemove", value.asInstanceOf[js.Any])
     

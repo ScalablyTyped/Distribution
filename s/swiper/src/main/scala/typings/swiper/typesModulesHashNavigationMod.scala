@@ -26,7 +26,8 @@ object typesModulesHashNavigationMod {
       __obj.asInstanceOf[HashNavigationEvents]
     }
     
-    extension [Self <: HashNavigationEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashNavigationEvents] (val x: Self) extends AnyVal {
       
       inline def setHashChange(value: default => Unit): Self = StObject.set(x, "hashChange", js.Any.fromFunction1(value))
       
@@ -61,7 +62,8 @@ object typesModulesHashNavigationMod {
       __obj.asInstanceOf[HashNavigationOptions]
     }
     
-    extension [Self <: HashNavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashNavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setReplaceState(value: Boolean): Self = StObject.set(x, "replaceState", value.asInstanceOf[js.Any])
       

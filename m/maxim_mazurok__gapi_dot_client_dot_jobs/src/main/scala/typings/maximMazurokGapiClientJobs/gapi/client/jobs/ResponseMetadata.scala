@@ -16,7 +16,8 @@ object ResponseMetadata {
     __obj.asInstanceOf[ResponseMetadata]
   }
   
-  extension [Self <: ResponseMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseMetadata] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
     

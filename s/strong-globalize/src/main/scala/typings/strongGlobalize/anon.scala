@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: StringDictionary[String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[HeadersAnyObject]
     }
     
-    extension [Self <: HeadersAnyObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadersAnyObject] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: AnyObject[Any]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     }

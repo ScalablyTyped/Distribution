@@ -23,7 +23,8 @@ object ClearDataForStorageKeyRequest {
     __obj.asInstanceOf[ClearDataForStorageKeyRequest]
   }
   
-  extension [Self <: ClearDataForStorageKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDataForStorageKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setStorageKey(value: String): Self = StObject.set(x, "storageKey", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[AndQueryCondition[T]]
     }
     
-    extension [Self <: AndQueryCondition[?], T](x: Self & AndQueryCondition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AndQueryCondition[?], T] (val x: Self & AndQueryCondition[T]) extends AnyVal {
       
       inline def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[BaseCondition[P]]
     }
     
-    extension [Self <: BaseCondition[?], P](x: Self & BaseCondition[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCondition[?], P] (val x: Self & BaseCondition[P]) extends AnyVal {
       
       inline def set$all(value: js.Array[P]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object mod {
       __obj.asInstanceOf[OrQueryCondition[T]]
     }
     
-    extension [Self <: OrQueryCondition[?], T](x: Self & OrQueryCondition[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrQueryCondition[?], T] (val x: Self & OrQueryCondition[T]) extends AnyVal {
       
       inline def set$or(value: js.Array[Query[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
       

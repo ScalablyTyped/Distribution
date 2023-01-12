@@ -22,7 +22,8 @@ object TCPSocketOnMessageCallbackResult {
     __obj.asInstanceOf[TCPSocketOnMessageCallbackResult]
   }
   
-  extension [Self <: TCPSocketOnMessageCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TCPSocketOnMessageCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setLocalInfo(value: LocalInfo): Self = StObject.set(x, "localInfo", value.asInstanceOf[js.Any])
     

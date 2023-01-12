@@ -539,7 +539,8 @@ object mod {
       __obj.asInstanceOf[StyledComponents]
     }
     
-    extension [Self <: StyledComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledComponents] (val x: Self) extends AnyVal {
       
       inline def setActivityIndicator(value: HostClassComponent[Instantiable0[ActivityIndicator]]): Self = StObject.set(x, "ActivityIndicator", value.asInstanceOf[js.Any])
       

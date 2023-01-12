@@ -21,7 +21,8 @@ object codenumberSequence {
     __obj.asInstanceOf[codenumberSequence]
   }
   
-  extension [Self <: codenumberSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: codenumberSequence] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object buildSrcAuthAwsrequestsignerMod {
       __obj.asInstanceOf[AwsSecurityCredentials]
     }
     
-    extension [Self <: AwsSecurityCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsSecurityCredentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       

@@ -61,7 +61,8 @@ object XClassifiedObject {
     __obj.asInstanceOf[XClassifiedObject]
   }
   
-  extension [Self <: XClassifiedObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XClassifiedObject] (val x: Self) extends AnyVal {
     
     inline def setClassID(value: SafeArray[Double]): Self = StObject.set(x, "ClassID", value.asInstanceOf[js.Any])
     

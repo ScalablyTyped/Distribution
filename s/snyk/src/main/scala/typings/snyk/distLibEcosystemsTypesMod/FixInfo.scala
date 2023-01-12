@@ -19,7 +19,8 @@ object FixInfo {
     __obj.asInstanceOf[FixInfo]
   }
   
-  extension [Self <: FixInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixInfo] (val x: Self) extends AnyVal {
     
     inline def setIsPatchable(value: Boolean): Self = StObject.set(x, "isPatchable", value.asInstanceOf[js.Any])
     

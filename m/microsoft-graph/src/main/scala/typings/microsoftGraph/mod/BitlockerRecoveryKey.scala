@@ -30,7 +30,8 @@ object BitlockerRecoveryKey {
     __obj.asInstanceOf[BitlockerRecoveryKey]
   }
   
-  extension [Self <: BitlockerRecoveryKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitlockerRecoveryKey] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: String): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

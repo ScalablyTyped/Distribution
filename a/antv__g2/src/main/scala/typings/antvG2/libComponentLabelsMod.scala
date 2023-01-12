@@ -84,7 +84,8 @@ object libComponentLabelsMod {
       __obj.asInstanceOf[LabelsGroupCfg]
     }
     
-    extension [Self <: LabelsGroupCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelsGroupCfg] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IGroup): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

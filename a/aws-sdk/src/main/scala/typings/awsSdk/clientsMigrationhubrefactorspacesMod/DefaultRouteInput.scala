@@ -18,7 +18,8 @@ object DefaultRouteInput {
     __obj.asInstanceOf[DefaultRouteInput]
   }
   
-  extension [Self <: DefaultRouteInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultRouteInput] (val x: Self) extends AnyVal {
     
     inline def setActivationState(value: RouteActivationState): Self = StObject.set(x, "ActivationState", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[TextTruncateProps]
     }
     
-    extension [Self <: TextTruncateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextTruncateProps] (val x: Self) extends AnyVal {
       
       inline def setContainerClassName(value: String): Self = StObject.set(x, "containerClassName", value.asInstanceOf[js.Any])
       

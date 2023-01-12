@@ -21,7 +21,8 @@ object IGrid {
     __obj.asInstanceOf[IGrid]
   }
   
-  extension [Self <: IGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGrid] (val x: Self) extends AnyVal {
     
     inline def setChart(value: IChart): Self = StObject.set(x, "chart", value.asInstanceOf[js.Any])
     

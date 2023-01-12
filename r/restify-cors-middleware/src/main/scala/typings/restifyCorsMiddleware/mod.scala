@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[CorsMiddleware]
     }
     
-    extension [Self <: CorsMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CorsMiddleware] (val x: Self) extends AnyVal {
       
       inline def setActual(value: (/* req */ Request, /* res */ Response, /* next */ Next) => Any): Self = StObject.set(x, "actual", js.Any.fromFunction3(value))
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowHeaders(value: js.Array[String]): Self = StObject.set(x, "allowHeaders", value.asInstanceOf[js.Any])
       

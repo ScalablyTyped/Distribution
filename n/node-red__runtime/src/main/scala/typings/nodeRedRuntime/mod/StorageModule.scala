@@ -47,7 +47,8 @@ object StorageModule {
     __obj.asInstanceOf[StorageModule]
   }
   
-  extension [Self <: StorageModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageModule] (val x: Self) extends AnyVal {
     
     inline def setGetFlows(value: () => js.Promise[CredentialsFlows]): Self = StObject.set(x, "getFlows", js.Any.fromFunction0(value))
     

@@ -27,7 +27,8 @@ object typesInvalidCommentIdExceptionMod {
       __obj.asInstanceOf[InvalidCommentIdException]
     }
     
-    extension [Self <: InvalidCommentIdException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidCommentIdException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidCommentIdException

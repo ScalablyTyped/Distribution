@@ -28,7 +28,8 @@ object FromCache {
     __obj.asInstanceOf[FromCache]
   }
   
-  extension [Self <: FromCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromCache] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[Document]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

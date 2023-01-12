@@ -31,7 +31,8 @@ object StepInTargetsResponse {
     __obj.asInstanceOf[StepInTargetsResponse]
   }
   
-  extension [Self <: StepInTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepInTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Targets): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

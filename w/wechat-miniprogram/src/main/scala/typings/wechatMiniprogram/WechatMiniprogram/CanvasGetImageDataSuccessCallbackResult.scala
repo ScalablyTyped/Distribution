@@ -24,7 +24,8 @@ object CanvasGetImageDataSuccessCallbackResult {
     __obj.asInstanceOf[CanvasGetImageDataSuccessCallbackResult]
   }
   
-  extension [Self <: CanvasGetImageDataSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasGetImageDataSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

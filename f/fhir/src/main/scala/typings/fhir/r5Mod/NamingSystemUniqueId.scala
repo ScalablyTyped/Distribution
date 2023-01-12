@@ -61,7 +61,8 @@ object NamingSystemUniqueId {
     __obj.asInstanceOf[NamingSystemUniqueId]
   }
   
-  extension [Self <: NamingSystemUniqueId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingSystemUniqueId] (val x: Self) extends AnyVal {
     
     inline def setAuthoritative(value: Boolean): Self = StObject.set(x, "authoritative", value.asInstanceOf[js.Any])
     

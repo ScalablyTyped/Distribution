@@ -69,7 +69,8 @@ object CreateKeyOptions {
     __obj.asInstanceOf[CreateKeyOptions]
   }
   
-  extension [Self <: CreateKeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateKeyOptions] (val x: Self) extends AnyVal {
     
     inline def setCurve(value: KeyCurveName): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     

@@ -102,7 +102,8 @@ object libUtilitiesButtonGridButtonGridDottypesMod {
       __obj.asInstanceOf[IButtonGridProps]
     }
     
-    extension [Self <: IButtonGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonGridProps] (val x: Self) extends AnyVal {
       
       inline def setAriaPosInSet(value: Double): Self = StObject.set(x, "ariaPosInSet", value.asInstanceOf[js.Any])
       
@@ -176,7 +177,8 @@ object libUtilitiesButtonGridButtonGridDottypesMod {
       __obj.asInstanceOf[IButtonGridStyleProps]
     }
     
-    extension [Self <: IButtonGridStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonGridStyleProps] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: ITheme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }
@@ -206,7 +208,8 @@ object libUtilitiesButtonGridButtonGridDottypesMod {
       __obj.asInstanceOf[IButtonGridStyles]
     }
     
-    extension [Self <: IButtonGridStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IButtonGridStyles] (val x: Self) extends AnyVal {
       
       inline def setFocusedContainer(value: IStyle): Self = StObject.set(x, "focusedContainer", value.asInstanceOf[js.Any])
       

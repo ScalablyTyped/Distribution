@@ -19,7 +19,8 @@ object CollectionPrototype {
     __obj.asInstanceOf[CollectionPrototype]
   }
   
-  extension [Self <: CollectionPrototype](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionPrototype] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Create): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object AlertOptions {
     __obj.asInstanceOf[AlertOptions]
   }
   
-  extension [Self <: AlertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
     
     inline def setError(value: IconClass): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

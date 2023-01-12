@@ -18,7 +18,8 @@ object ShellDispatchInproc {
     __obj.asInstanceOf[ShellDispatchInproc]
   }
   
-  extension [Self <: ShellDispatchInproc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShellDispatchInproc] (val x: Self) extends AnyVal {
     
     inline def setShell32DotShellDispatchInproc_typekey(value: ShellDispatchInproc): Self = StObject.set(x, "Shell32.ShellDispatchInproc_typekey", value.asInstanceOf[js.Any])
   }

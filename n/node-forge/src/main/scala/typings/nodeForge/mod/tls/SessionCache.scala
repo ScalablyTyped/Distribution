@@ -32,7 +32,8 @@ object SessionCache {
     __obj.asInstanceOf[SessionCache]
   }
   
-  extension [Self <: SessionCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SessionCache] (val x: Self) extends AnyVal {
     
     inline def setCache(value: StringDictionary[Session]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

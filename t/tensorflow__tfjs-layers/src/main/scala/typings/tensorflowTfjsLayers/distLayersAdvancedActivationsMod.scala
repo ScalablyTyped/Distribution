@@ -177,7 +177,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[ELULayerArgs]
     }
     
-    extension [Self <: ELULayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ELULayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[LeakyReLULayerArgs]
     }
     
-    extension [Self <: LeakyReLULayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeakyReLULayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -245,7 +247,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[PReLULayerArgs]
     }
     
-    extension [Self <: PReLULayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PReLULayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAlphaConstraint(value: Constraint): Self = StObject.set(x, "alphaConstraint", value.asInstanceOf[js.Any])
       
@@ -283,7 +286,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[ReLULayerArgs]
     }
     
-    extension [Self <: ReLULayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReLULayerArgs] (val x: Self) extends AnyVal {
       
       inline def setMaxValue(value: Double): Self = StObject.set(x, "maxValue", value.asInstanceOf[js.Any])
       
@@ -308,7 +312,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[SoftmaxLayerArgs]
     }
     
-    extension [Self <: SoftmaxLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SoftmaxLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: Double): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -332,7 +337,8 @@ object distLayersAdvancedActivationsMod {
       __obj.asInstanceOf[ThresholdedReLULayerArgs]
     }
     
-    extension [Self <: ThresholdedReLULayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThresholdedReLULayerArgs] (val x: Self) extends AnyVal {
       
       inline def setTheta(value: Double): Self = StObject.set(x, "theta", value.asInstanceOf[js.Any])
       

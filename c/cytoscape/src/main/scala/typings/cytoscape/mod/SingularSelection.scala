@@ -28,7 +28,8 @@ object SingularSelection {
     __obj.asInstanceOf[SingularSelection]
   }
   
-  extension [Self <: SingularSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularSelection] (val x: Self) extends AnyVal {
     
     inline def setSelectable(value: () => Boolean): Self = StObject.set(x, "selectable", js.Any.fromFunction0(value))
     

@@ -37,7 +37,8 @@ object statsbooleanundefineduser {
     __obj.asInstanceOf[statsbooleanundefineduser]
   }
   
-  extension [Self <: statsbooleanundefineduser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: statsbooleanundefineduser] (val x: Self) extends AnyVal {
     
     inline def setOrderBy(value: OrderBy): Self = StObject.set(x, "orderBy", value.asInstanceOf[js.Any])
     

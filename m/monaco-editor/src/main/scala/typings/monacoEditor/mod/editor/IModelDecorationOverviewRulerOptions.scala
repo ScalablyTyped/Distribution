@@ -20,7 +20,8 @@ object IModelDecorationOverviewRulerOptions {
     __obj.asInstanceOf[IModelDecorationOverviewRulerOptions]
   }
   
-  extension [Self <: IModelDecorationOverviewRulerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelDecorationOverviewRulerOptions] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: OverviewRulerLane): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
   }

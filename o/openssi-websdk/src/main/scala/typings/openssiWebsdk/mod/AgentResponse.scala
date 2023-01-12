@@ -19,7 +19,8 @@ object AgentResponse {
     __obj.asInstanceOf[AgentResponse]
   }
   
-  extension [Self <: AgentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentResponse] (val x: Self) extends AnyVal {
     
     inline def setDid(value: DID): Self = StObject.set(x, "did", value.asInstanceOf[js.Any])
     

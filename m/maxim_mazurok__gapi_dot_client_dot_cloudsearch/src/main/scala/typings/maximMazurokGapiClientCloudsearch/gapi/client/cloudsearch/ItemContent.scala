@@ -24,7 +24,8 @@ object ItemContent {
     __obj.asInstanceOf[ItemContent]
   }
   
-  extension [Self <: ItemContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemContent] (val x: Self) extends AnyVal {
     
     inline def setContentDataRef(value: UploadItemRef): Self = StObject.set(x, "contentDataRef", value.asInstanceOf[js.Any])
     

@@ -100,7 +100,8 @@ object `lib@GeneratedValidatorPublicKeysPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setAccountAddress(value: js.typedarray.Uint8Array | String): Self = StObject.set(x, "accountAddress", value.asInstanceOf[js.Any])
         

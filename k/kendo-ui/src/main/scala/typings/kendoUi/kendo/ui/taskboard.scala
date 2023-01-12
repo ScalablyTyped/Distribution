@@ -20,7 +20,8 @@ object taskboard {
       __obj.asInstanceOf[Command]
     }
     
-    extension [Self <: Command](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Command] (val x: Self) extends AnyVal {
       
       inline def setExec(value: () => Unit): Self = StObject.set(x, "exec", js.Any.fromFunction0(value))
       

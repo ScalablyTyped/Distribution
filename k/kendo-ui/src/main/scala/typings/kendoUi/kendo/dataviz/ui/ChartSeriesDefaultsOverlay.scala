@@ -15,7 +15,8 @@ object ChartSeriesDefaultsOverlay {
     __obj.asInstanceOf[ChartSeriesDefaultsOverlay]
   }
   
-  extension [Self <: ChartSeriesDefaultsOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesDefaultsOverlay] (val x: Self) extends AnyVal {
     
     inline def setGradient(value: String): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     

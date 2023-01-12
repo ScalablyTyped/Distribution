@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[GregorianDateObject]
     }
     
-    extension [Self <: GregorianDateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GregorianDateObject] (val x: Self) extends AnyVal {
       
       inline def setGd(value: Double): Self = StObject.set(x, "gd", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object mod {
       __obj.asInstanceOf[JalCalResult]
     }
     
-    extension [Self <: JalCalResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JalCalResult] (val x: Self) extends AnyVal {
       
       inline def setGy(value: Double): Self = StObject.set(x, "gy", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object mod {
       __obj.asInstanceOf[JalaaliDateObject]
     }
     
-    extension [Self <: JalaaliDateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JalaaliDateObject] (val x: Self) extends AnyVal {
       
       inline def setJd(value: Double): Self = StObject.set(x, "jd", value.asInstanceOf[js.Any])
       

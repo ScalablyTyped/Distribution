@@ -224,7 +224,8 @@ object macroMod {
       __obj.asInstanceOf[MacroContextObject]
     }
     
-    extension [Self <: MacroContextObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacroContextObject] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: MacroArgsArray): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -261,7 +262,8 @@ object macroMod {
       __obj.asInstanceOf[MacroDefinition]
     }
     
-    extension [Self <: MacroDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacroDefinition] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
       
@@ -303,7 +305,8 @@ object macroMod {
       __obj.asInstanceOf[MacroTags]
     }
     
-    extension [Self <: MacroTags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacroTags] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Array[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

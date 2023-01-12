@@ -45,7 +45,8 @@ object mod {
         __obj.asInstanceOf[Feature]
       }
       
-      extension [Self <: Feature](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Feature] (val x: Self) extends AnyVal {
         
         inline def setGeometry(value: Geometry): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
         
@@ -71,7 +72,8 @@ object mod {
         __obj.asInstanceOf[FeatureCollection]
       }
       
-      extension [Self <: FeatureCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FeatureCollection] (val x: Self) extends AnyVal {
         
         inline def setFeatures(value: js.Array[Feature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
         
@@ -91,7 +93,8 @@ object mod {
         __obj.asInstanceOf[GeoJSONObject]
       }
       
-      extension [Self <: GeoJSONObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeoJSONObject] (val x: Self) extends AnyVal {
         
         inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       }
@@ -111,7 +114,8 @@ object mod {
         __obj.asInstanceOf[Geometry]
       }
       
-      extension [Self <: Geometry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
         
         inline def setCoordinates(value: Coordinate | (js.Array[js.Array[Coordinate] | Coordinate])): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
         
@@ -133,7 +137,8 @@ object mod {
         __obj.asInstanceOf[GeometryCollection]
       }
       
-      extension [Self <: GeometryCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeometryCollection] (val x: Self) extends AnyVal {
         
         inline def setGeometries(value: js.Array[Geometry]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
         
@@ -169,7 +174,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFlatProperties(value: Boolean): Self = StObject.set(x, "flatProperties", value.asInstanceOf[js.Any])
       
@@ -217,7 +223,8 @@ object mod {
         __obj.asInstanceOf[Element]
       }
       
-      extension [Self <: Element](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
         
         inline def setChangeset(value: Double): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
         
@@ -265,7 +272,8 @@ object mod {
         __obj.asInstanceOf[Member]
       }
       
-      extension [Self <: Member](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Member] (val x: Self) extends AnyVal {
         
         inline def setRef(value: Double): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
         
@@ -291,7 +299,8 @@ object mod {
         __obj.asInstanceOf[Node]
       }
       
-      extension [Self <: Node](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
         
         inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
         
@@ -310,7 +319,8 @@ object mod {
         __obj.asInstanceOf[OsmJSONObject]
       }
       
-      extension [Self <: OsmJSONObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OsmJSONObject] (val x: Self) extends AnyVal {
         
         inline def setElements(value: js.Array[Node | Way | Relationship]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
         
@@ -332,7 +342,8 @@ object mod {
         __obj.asInstanceOf[Relationship]
       }
       
-      extension [Self <: Relationship](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Relationship] (val x: Self) extends AnyVal {
         
         inline def setMembers(value: js.Array[Member]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
         
@@ -354,7 +365,8 @@ object mod {
         __obj.asInstanceOf[Way]
       }
       
-      extension [Self <: Way](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Way] (val x: Self) extends AnyVal {
         
         inline def setNodes(value: js.Array[Double]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
         

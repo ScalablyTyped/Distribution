@@ -328,7 +328,8 @@ object sapUiLayoutFormColumnLayoutMod {
       __obj.asInstanceOf[ColumnLayoutSettings]
     }
     
-    extension [Self <: ColumnLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setColumnsL(value: ColumnsL | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columnsL", value.asInstanceOf[js.Any])
       

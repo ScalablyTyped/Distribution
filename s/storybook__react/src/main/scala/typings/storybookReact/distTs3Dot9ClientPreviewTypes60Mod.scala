@@ -23,7 +23,8 @@ object distTs3Dot9ClientPreviewTypes60Mod {
       __obj.asInstanceOf[ReactFramework]
     }
     
-    extension [Self <: ReactFramework](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactFramework] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: ComponentType[Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

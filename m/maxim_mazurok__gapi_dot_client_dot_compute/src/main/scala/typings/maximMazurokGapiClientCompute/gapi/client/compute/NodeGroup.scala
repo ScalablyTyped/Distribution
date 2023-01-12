@@ -65,7 +65,8 @@ object NodeGroup {
     __obj.asInstanceOf[NodeGroup]
   }
   
-  extension [Self <: NodeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeGroup] (val x: Self) extends AnyVal {
     
     inline def setAutoscalingPolicy(value: NodeGroupAutoscalingPolicy): Self = StObject.set(x, "autoscalingPolicy", value.asInstanceOf[js.Any])
     

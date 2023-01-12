@@ -25,7 +25,8 @@ object Slicer {
     __obj.asInstanceOf[Slicer]
   }
   
-  extension [Self <: Slicer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slicer] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: EmbeddedObjectPosition): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

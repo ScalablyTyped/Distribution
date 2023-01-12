@@ -58,7 +58,8 @@ object ActionParameters {
     __obj.asInstanceOf[ActionParameters]
   }
   
-  extension [Self <: ActionParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionParameters] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ComponentProperty): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

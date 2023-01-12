@@ -19,7 +19,8 @@ object DidChangeConfigurationParams {
     __obj.asInstanceOf[DidChangeConfigurationParams]
   }
   
-  extension [Self <: DidChangeConfigurationParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeConfigurationParams] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: LSPAny): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }

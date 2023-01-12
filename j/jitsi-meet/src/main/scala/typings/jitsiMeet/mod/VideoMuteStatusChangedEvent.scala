@@ -15,7 +15,8 @@ object VideoMuteStatusChangedEvent {
     __obj.asInstanceOf[VideoMuteStatusChangedEvent]
   }
   
-  extension [Self <: VideoMuteStatusChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoMuteStatusChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setMuted(value: Boolean): Self = StObject.set(x, "muted", value.asInstanceOf[js.Any])
   }

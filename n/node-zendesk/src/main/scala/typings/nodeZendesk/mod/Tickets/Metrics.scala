@@ -19,7 +19,8 @@ object Metrics {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ListPayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ListPayload] (val x: Self) extends AnyVal {
       
       inline def setTicket_metrics(value: js.Array[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]): Self = StObject.set(x, "ticket_metrics", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object Metrics {
       __obj.asInstanceOf[MinutesObject]
     }
     
-    extension [Self <: MinutesObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinutesObject] (val x: Self) extends AnyVal {
       
       inline def setBusiness(value: Double): Self = StObject.set(x, "business", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object Metrics {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setAgent_wait_time_in_minutes(value: MinutesObject): Self = StObject.set(x, "agent_wait_time_in_minutes", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object Metrics {
       __obj.asInstanceOf[typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload]
     }
     
-    extension [Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.nodeZendesk.mod.Tickets.Metrics.ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setTicket_metric(value: typings.nodeZendesk.mod.Tickets.Metrics.ResponseModel): Self = StObject.set(x, "ticket_metric", value.asInstanceOf[js.Any])
     }

@@ -80,7 +80,8 @@ object EnergyUsageRead {
     __obj.asInstanceOf[EnergyUsageRead]
   }
   
-  extension [Self <: EnergyUsageRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergyUsageRead] (val x: Self) extends AnyVal {
     
     inline def setBasicRead(value: Quality): Self = StObject.set(x, "basicRead", value.asInstanceOf[js.Any])
     

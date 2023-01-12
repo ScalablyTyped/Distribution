@@ -31,7 +31,8 @@ object OSPolicyResource {
     __obj.asInstanceOf[OSPolicyResource]
   }
   
-  extension [Self <: OSPolicyResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResource] (val x: Self) extends AnyVal {
     
     inline def setExec(value: OSPolicyResourceExecResource): Self = StObject.set(x, "exec", value.asInstanceOf[js.Any])
     

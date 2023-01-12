@@ -213,7 +213,8 @@ object mod {
       __obj.asInstanceOf[BasePluginOptions]
     }
     
-    extension [Self <: BasePluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePluginOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: Rules): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -291,7 +292,8 @@ object mod {
       __obj.asInstanceOf[CssMinimizerPlugin[T]]
     }
     
-    extension [Self <: CssMinimizerPlugin[?], T](x: Self & CssMinimizerPlugin[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssMinimizerPlugin[?], T] (val x: Self & CssMinimizerPlugin[T]) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -314,7 +316,8 @@ object mod {
       __obj.asInstanceOf[CssNanoOptions]
     }
     
-    extension [Self <: CssNanoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssNanoOptions] (val x: Self) extends AnyVal {
       
       inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       
@@ -339,7 +342,8 @@ object mod {
       __obj.asInstanceOf[CssNanoOptionsExtended]
     }
     
-    extension [Self <: CssNanoOptionsExtended](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssNanoOptionsExtended] (val x: Self) extends AnyVal {
       
       inline def setProcessorOptions(value: ProcessOptionsExtender): Self = StObject.set(x, "processorOptions", value.asInstanceOf[js.Any])
       
@@ -376,7 +380,8 @@ object mod {
       __obj.asInstanceOf[ErrorObject]
     }
     
-    extension [Self <: ErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorObject] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -422,7 +427,8 @@ object mod {
       __obj.asInstanceOf[InternalOptions[T]]
     }
     
-    extension [Self <: InternalOptions[?], T](x: Self & InternalOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions[?], T] (val x: Self & InternalOptions[T]) extends AnyVal {
       
       inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -449,7 +455,8 @@ object mod {
       __obj.asInstanceOf[InternalPluginOptions[T]]
     }
     
-    extension [Self <: InternalPluginOptions[?], T](x: Self & InternalPluginOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalPluginOptions[?], T] (val x: Self & InternalPluginOptions[T]) extends AnyVal {
       
       inline def setMinimizer(value: Implementation[T]): Self = StObject.set(x, "minimizer", value.asInstanceOf[js.Any])
     }
@@ -474,7 +481,8 @@ object mod {
       __obj.asInstanceOf[InternalResult]
     }
     
-    extension [Self <: InternalResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[js.Error | ErrorObject | String]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -509,7 +517,8 @@ object mod {
       __obj.asInstanceOf[MinimizedResult]
     }
     
-    extension [Self <: MinimizedResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimizedResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -614,7 +623,8 @@ object mod {
       __obj.asInstanceOf[WarningObject]
     }
     
-    extension [Self <: WarningObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WarningObject] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

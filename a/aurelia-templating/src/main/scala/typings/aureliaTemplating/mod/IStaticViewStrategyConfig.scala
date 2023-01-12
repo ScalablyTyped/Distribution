@@ -21,7 +21,8 @@ object IStaticViewStrategyConfig {
     __obj.asInstanceOf[IStaticViewStrategyConfig]
   }
   
-  extension [Self <: IStaticViewStrategyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStaticViewStrategyConfig] (val x: Self) extends AnyVal {
     
     inline def setDependencies(
       value: js.Array[js.Function] | (js.Function0[js.Array[(js.Promise[Record[String, js.Function]]) | js.Function]])

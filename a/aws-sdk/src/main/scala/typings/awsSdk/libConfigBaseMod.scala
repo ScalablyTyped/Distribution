@@ -334,7 +334,8 @@ object libConfigBaseMod {
       __obj.asInstanceOf[HTTPOptions]
     }
     
-    extension [Self <: HTTPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpsMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -384,7 +385,8 @@ object libConfigBaseMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setLog(value: /* repeated */ Any => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object libConfigBaseMod {
       __obj.asInstanceOf[ParamValidation]
     }
     
-    extension [Self <: ParamValidation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamValidation] (val x: Self) extends AnyVal {
       
       inline def setEnum(value: Boolean): Self = StObject.set(x, "enum", value.asInstanceOf[js.Any])
       
@@ -473,7 +476,8 @@ object libConfigBaseMod {
       __obj.asInstanceOf[RetryDelayOptions]
     }
     
-    extension [Self <: RetryDelayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryDelayOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Double): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       

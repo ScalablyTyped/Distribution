@@ -214,7 +214,8 @@ object IPhoto {
     __obj.asInstanceOf[IPhoto]
   }
   
-  extension [Self <: IPhoto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPhoto] (val x: Self) extends AnyVal {
     
     inline def setCamera_make(value: String): Self = StObject.set(x, "camera_make", value.asInstanceOf[js.Any])
     

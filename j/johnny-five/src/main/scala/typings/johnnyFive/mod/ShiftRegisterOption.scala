@@ -17,7 +17,8 @@ object ShiftRegisterOption {
     __obj.asInstanceOf[ShiftRegisterOption]
   }
   
-  extension [Self <: ShiftRegisterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShiftRegisterOption] (val x: Self) extends AnyVal {
     
     inline def setIsAnode(value: Boolean): Self = StObject.set(x, "isAnode", value.asInstanceOf[js.Any])
     

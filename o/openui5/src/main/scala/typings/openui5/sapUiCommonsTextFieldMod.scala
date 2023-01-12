@@ -1119,7 +1119,8 @@ object sapUiCommonsTextFieldMod {
       __obj.asInstanceOf[TextFieldSettings]
     }
     
-    extension [Self <: TextFieldSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleRole(
         value: AccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof AccessibleRole * / any */ String) | PropertyBindingInfo

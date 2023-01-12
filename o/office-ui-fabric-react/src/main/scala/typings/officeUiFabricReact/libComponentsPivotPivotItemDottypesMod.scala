@@ -91,7 +91,8 @@ object libComponentsPivotPivotItemDottypesMod {
       __obj.asInstanceOf[IPivotItemProps]
     }
     
-    extension [Self <: IPivotItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPivotItemProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysRender(value: Boolean): Self = StObject.set(x, "alwaysRender", value.asInstanceOf[js.Any])
       

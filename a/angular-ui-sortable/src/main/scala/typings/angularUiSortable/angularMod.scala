@@ -34,7 +34,8 @@ object angularMod {
         __obj.asInstanceOf[SortableCursorAtOptions]
       }
       
-      extension [Self <: SortableCursorAtOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortableCursorAtOptions] (val x: Self) extends AnyVal {
         
         inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
         
@@ -89,7 +90,8 @@ object angularMod {
         __obj.asInstanceOf[SortableEvents[T]]
       }
       
-      extension [Self <: SortableEvents[?], T](x: Self & SortableEvents[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortableEvents[?], T] (val x: Self & SortableEvents[T]) extends AnyVal {
         
         inline def setActivate(value: (/* event */ JQueryEventObject, /* ui */ UISortableUIParams[T]) => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
         
@@ -258,7 +260,8 @@ object angularMod {
         __obj.asInstanceOf[SortableOptions[T]]
       }
       
-      extension [Self <: SortableOptions[?], T](x: Self & SortableOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortableOptions[?], T] (val x: Self & SortableOptions[T]) extends AnyVal {
         
         inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
         
@@ -397,7 +400,8 @@ object angularMod {
         __obj.asInstanceOf[SortableUIParams]
       }
       
-      extension [Self <: SortableUIParams](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SortableUIParams] (val x: Self) extends AnyVal {
         
         inline def setHelper(value: IAugmentedJQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
         
@@ -428,7 +432,8 @@ object angularMod {
         __obj.asInstanceOf[UISortableOptions[T]]
       }
       
-      extension [Self <: UISortableOptions[?], T](x: Self & UISortableOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UISortableOptions[?], T] (val x: Self & UISortableOptions[T]) extends AnyVal {
         
         inline def `setUi-floating`(value: auto | Boolean): Self = StObject.set(x, "ui-floating", value.asInstanceOf[js.Any])
         
@@ -519,7 +524,8 @@ object angularMod {
         __obj.asInstanceOf[UISortableProperties[T]]
       }
       
-      extension [Self <: UISortableProperties[?], T](x: Self & UISortableProperties[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UISortableProperties[?], T] (val x: Self & UISortableProperties[T]) extends AnyVal {
         
         inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
         
@@ -791,7 +797,8 @@ object angularMod {
         __obj.asInstanceOf[UISortableUIItem[T]]
       }
       
-      extension [Self <: UISortableUIItem[?], T](x: Self & UISortableUIItem[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UISortableUIItem[?], T] (val x: Self & UISortableUIItem[T]) extends AnyVal {
         
         inline def setAddClass(value: /* className */ String => UISortableUIItem[T]): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
         
@@ -919,7 +926,8 @@ object angularMod {
         __obj.asInstanceOf[UISortableUIParams[T]]
       }
       
-      extension [Self <: UISortableUIParams[?], T](x: Self & UISortableUIParams[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UISortableUIParams[?], T] (val x: Self & UISortableUIParams[T]) extends AnyVal {
         
         inline def setHelper(value: IAugmentedJQuery): Self = StObject.set(x, "helper", value.asInstanceOf[js.Any])
         

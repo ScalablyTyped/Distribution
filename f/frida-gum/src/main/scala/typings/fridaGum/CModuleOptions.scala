@@ -15,7 +15,8 @@ object CModuleOptions {
     __obj.asInstanceOf[CModuleOptions]
   }
   
-  extension [Self <: CModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setToolchain(value: CModuleToolchain): Self = StObject.set(x, "toolchain", value.asInstanceOf[js.Any])
     

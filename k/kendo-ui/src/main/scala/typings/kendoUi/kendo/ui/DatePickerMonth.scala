@@ -19,7 +19,8 @@ object DatePickerMonth {
     __obj.asInstanceOf[DatePickerMonth]
   }
   
-  extension [Self <: DatePickerMonth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerMonth] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

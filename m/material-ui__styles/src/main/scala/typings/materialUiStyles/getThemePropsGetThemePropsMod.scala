@@ -26,7 +26,8 @@ object getThemePropsGetThemePropsMod {
       __obj.asInstanceOf[ThemeWithProps[Components]]
     }
     
-    extension [Self <: ThemeWithProps[?], Components](x: Self & ThemeWithProps[Components]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeWithProps[?], Components] (val x: Self & ThemeWithProps[Components]) extends AnyVal {
       
       inline def setProps(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Components ]: std.Partial<Components[K]>} */ js.Any

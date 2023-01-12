@@ -132,7 +132,8 @@ object interfacesFeatureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeature]
     }
     
-    extension [Self <: ContributedFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributedFeature] (val x: Self) extends AnyVal {
       
       inline def setDefaultState(value: Boolean): Self = StObject.set(x, "defaultState", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object interfacesFeatureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureSettingScope]
     }
     
-    extension [Self <: ContributedFeatureSettingScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributedFeatureSettingScope] (val x: Self) extends AnyVal {
       
       inline def setSettingScope(value: String): Self = StObject.set(x, "settingScope", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object interfacesFeatureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureState]
     }
     
-    extension [Self <: ContributedFeatureState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributedFeatureState] (val x: Self) extends AnyVal {
       
       inline def setFeatureId(value: String): Self = StObject.set(x, "featureId", value.asInstanceOf[js.Any])
       
@@ -269,7 +272,8 @@ object interfacesFeatureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureStateQuery]
     }
     
-    extension [Self <: ContributedFeatureStateQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributedFeatureStateQuery] (val x: Self) extends AnyVal {
       
       inline def setFeatureIds(value: js.Array[String]): Self = StObject.set(x, "featureIds", value.asInstanceOf[js.Any])
       
@@ -300,7 +304,8 @@ object interfacesFeatureManagementInterfacesMod {
       __obj.asInstanceOf[ContributedFeatureValueRule]
     }
     
-    extension [Self <: ContributedFeatureValueRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContributedFeatureValueRule] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

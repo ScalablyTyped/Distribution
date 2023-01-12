@@ -17,7 +17,8 @@ object AjaxContentType {
     __obj.asInstanceOf[AjaxContentType]
   }
   
-  extension [Self <: AjaxContentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxContentType] (val x: Self) extends AnyVal {
     
     inline def setBody(value: (String, Any, Any) => Any): Self = StObject.set(x, "body", js.Any.fromFunction3(value))
     

@@ -45,7 +45,8 @@ object Maps {
     __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Maps.Maps]
   }
   
-  extension [Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Maps.Maps] (val x: Self) extends AnyVal {
     
     inline def setDecodePolyline(value: String => js.Array[Double]): Self = StObject.set(x, "decodePolyline", js.Any.fromFunction1(value))
     

@@ -58,7 +58,8 @@ object ImportSnapshotRequest {
     __obj.asInstanceOf[ImportSnapshotRequest]
   }
   
-  extension [Self <: ImportSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setClientData(value: ClientData): Self = StObject.set(x, "ClientData", value.asInstanceOf[js.Any])
     

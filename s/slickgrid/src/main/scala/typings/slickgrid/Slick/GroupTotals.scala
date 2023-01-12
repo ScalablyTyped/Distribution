@@ -22,7 +22,8 @@ object GroupTotals {
     __obj.asInstanceOf[GroupTotals[T]]
   }
   
-  extension [Self <: GroupTotals[?], T /* <: SlickData */](x: Self & GroupTotals[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupTotals[?], T /* <: SlickData */] (val x: Self & GroupTotals[T]) extends AnyVal {
     
     inline def setGroup(value: Group[T]): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }

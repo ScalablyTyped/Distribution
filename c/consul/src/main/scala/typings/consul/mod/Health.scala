@@ -96,7 +96,8 @@ object Health {
       __obj.asInstanceOf[ChecksOptions]
     }
     
-    extension [Self <: ChecksOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChecksOptions] (val x: Self) extends AnyVal {
       
       inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     }
@@ -115,7 +116,8 @@ object Health {
       __obj.asInstanceOf[NodeOptions]
     }
     
-    extension [Self <: NodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeOptions] (val x: Self) extends AnyVal {
       
       inline def setNode(value: String): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
     }
@@ -140,7 +142,8 @@ object Health {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setNear(value: String): Self = StObject.set(x, "near", value.asInstanceOf[js.Any])
       
@@ -171,7 +174,8 @@ object Health {
       __obj.asInstanceOf[StateOptions]
     }
     
-    extension [Self <: StateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateOptions] (val x: Self) extends AnyVal {
       
       inline def setState(value: String): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     }

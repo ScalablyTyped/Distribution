@@ -28,7 +28,8 @@ object NetworkFirewallMissingExpectedRoutesViolation {
     __obj.asInstanceOf[NetworkFirewallMissingExpectedRoutesViolation]
   }
   
-  extension [Self <: NetworkFirewallMissingExpectedRoutesViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallMissingExpectedRoutesViolation] (val x: Self) extends AnyVal {
     
     inline def setExpectedRoutes(value: ExpectedRoutes): Self = StObject.set(x, "ExpectedRoutes", value.asInstanceOf[js.Any])
     

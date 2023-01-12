@@ -22,7 +22,8 @@ object MeshIstio {
     __obj.asInstanceOf[MeshIstio]
   }
   
-  extension [Self <: MeshIstio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshIstio] (val x: Self) extends AnyVal {
     
     inline def setMeshUid(value: String): Self = StObject.set(x, "meshUid", value.asInstanceOf[js.Any])
     

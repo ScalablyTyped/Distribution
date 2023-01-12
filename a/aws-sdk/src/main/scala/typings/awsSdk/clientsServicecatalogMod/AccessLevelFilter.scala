@@ -23,7 +23,8 @@ object AccessLevelFilter {
     __obj.asInstanceOf[AccessLevelFilter]
   }
   
-  extension [Self <: AccessLevelFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessLevelFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: AccessLevelFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

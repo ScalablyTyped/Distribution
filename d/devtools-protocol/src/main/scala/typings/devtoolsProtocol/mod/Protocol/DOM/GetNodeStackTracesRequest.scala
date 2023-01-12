@@ -18,7 +18,8 @@ object GetNodeStackTracesRequest {
     __obj.asInstanceOf[GetNodeStackTracesRequest]
   }
   
-  extension [Self <: GetNodeStackTracesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNodeStackTracesRequest] (val x: Self) extends AnyVal {
     
     inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
   }

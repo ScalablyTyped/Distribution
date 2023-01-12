@@ -119,7 +119,8 @@ object libEsmComponentsNonIdealStateNonIdealStateMod {
       __obj.asInstanceOf[INonIdealStateProps]
     }
     
-    extension [Self <: INonIdealStateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INonIdealStateProps] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Element): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

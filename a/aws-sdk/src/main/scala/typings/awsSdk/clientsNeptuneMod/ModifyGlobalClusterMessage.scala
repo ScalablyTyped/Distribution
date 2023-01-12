@@ -38,7 +38,8 @@ object ModifyGlobalClusterMessage {
     __obj.asInstanceOf[ModifyGlobalClusterMessage]
   }
   
-  extension [Self <: ModifyGlobalClusterMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyGlobalClusterMessage] (val x: Self) extends AnyVal {
     
     inline def setAllowMajorVersionUpgrade(value: BooleanOptional): Self = StObject.set(x, "AllowMajorVersionUpgrade", value.asInstanceOf[js.Any])
     

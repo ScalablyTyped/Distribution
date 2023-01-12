@@ -28,7 +28,8 @@ object CreateBackendAuthVerificationMessageConfig {
     __obj.asInstanceOf[CreateBackendAuthVerificationMessageConfig]
   }
   
-  extension [Self <: CreateBackendAuthVerificationMessageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackendAuthVerificationMessageConfig] (val x: Self) extends AnyVal {
     
     inline def setDeliveryMethod(value: DeliveryMethod): Self = StObject.set(x, "DeliveryMethod", value.asInstanceOf[js.Any])
     

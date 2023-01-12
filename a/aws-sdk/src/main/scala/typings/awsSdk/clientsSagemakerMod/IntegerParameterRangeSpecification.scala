@@ -23,7 +23,8 @@ object IntegerParameterRangeSpecification {
     __obj.asInstanceOf[IntegerParameterRangeSpecification]
   }
   
-  extension [Self <: IntegerParameterRangeSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerParameterRangeSpecification] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: ParameterValue): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     

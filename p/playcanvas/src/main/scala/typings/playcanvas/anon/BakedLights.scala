@@ -44,7 +44,8 @@ object BakedLights {
     __obj.asInstanceOf[BakedLights]
   }
   
-  extension [Self <: BakedLights](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BakedLights] (val x: Self) extends AnyVal {
     
     inline def setBakedLights(value: Double): Self = StObject.set(x, "bakedLights", value.asInstanceOf[js.Any])
     

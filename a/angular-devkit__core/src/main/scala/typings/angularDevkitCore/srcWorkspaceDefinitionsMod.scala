@@ -92,7 +92,8 @@ object srcWorkspaceDefinitionsMod {
       __obj.asInstanceOf[ProjectDefinition]
     }
     
-    extension [Self <: ProjectDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectDefinition] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: Record[String, js.UndefOr[JsonValue]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object srcWorkspaceDefinitionsMod {
       __obj.asInstanceOf[TargetDefinition]
     }
     
-    extension [Self <: TargetDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetDefinition] (val x: Self) extends AnyVal {
       
       inline def setBuilder(value: String): Self = StObject.set(x, "builder", value.asInstanceOf[js.Any])
       
@@ -158,7 +160,8 @@ object srcWorkspaceDefinitionsMod {
       __obj.asInstanceOf[WorkspaceDefinition]
     }
     
-    extension [Self <: WorkspaceDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceDefinition] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: Record[String, js.UndefOr[JsonValue]]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       

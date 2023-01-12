@@ -23,7 +23,8 @@ object AuthorizerConfig {
     __obj.asInstanceOf[AuthorizerConfig]
   }
   
-  extension [Self <: AuthorizerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizerConfig] (val x: Self) extends AnyVal {
     
     inline def setAllowAuthorizerOverride(value: AllowAuthorizerOverride): Self = StObject.set(x, "allowAuthorizerOverride", value.asInstanceOf[js.Any])
     

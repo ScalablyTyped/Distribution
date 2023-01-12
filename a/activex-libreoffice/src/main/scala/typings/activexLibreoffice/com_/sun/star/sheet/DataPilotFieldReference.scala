@@ -40,7 +40,8 @@ object DataPilotFieldReference {
     __obj.asInstanceOf[DataPilotFieldReference]
   }
   
-  extension [Self <: DataPilotFieldReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotFieldReference] (val x: Self) extends AnyVal {
     
     inline def setReferenceField(value: String): Self = StObject.set(x, "ReferenceField", value.asInstanceOf[js.Any])
     

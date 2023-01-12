@@ -141,7 +141,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[GenericTransformStream]
     }
     
-    extension [Self <: GenericTransformStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericTransformStream] (val x: Self) extends AnyVal {
       
       inline def setReadable(value: ReadableStream[Any]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextDecoderCommon]
     }
     
-    extension [Self <: TextDecoderCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDecoderCommon] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextDecoderOptions]
     }
     
-    extension [Self <: TextDecoderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDecoderOptions] (val x: Self) extends AnyVal {
       
       inline def setFatal(value: Boolean): Self = StObject.set(x, "fatal", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextDecoderStream]
     }
     
-    extension [Self <: TextDecoderStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextDecoderStream] (val x: Self) extends AnyVal {
       
       inline def setReadable(value: ReadableStream[String]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       
@@ -254,7 +258,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextEncoderCommon]
     }
     
-    extension [Self <: TextEncoderCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEncoderCommon] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -282,7 +287,8 @@ object textEncodeTransformMod {
       __obj.asInstanceOf[TextEncoderStream]
     }
     
-    extension [Self <: TextEncoderStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextEncoderStream] (val x: Self) extends AnyVal {
       
       inline def setReadable(value: ReadableStream[js.typedarray.Uint8Array]): Self = StObject.set(x, "readable", value.asInstanceOf[js.Any])
       

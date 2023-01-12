@@ -22,7 +22,8 @@ object ArimaFittingMetrics {
     __obj.asInstanceOf[ArimaFittingMetrics]
   }
   
-  extension [Self <: ArimaFittingMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArimaFittingMetrics] (val x: Self) extends AnyVal {
     
     inline def setAic(value: Double): Self = StObject.set(x, "aic", value.asInstanceOf[js.Any])
     

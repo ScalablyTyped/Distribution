@@ -18,7 +18,8 @@ object AutomatedDiscoveryInformation {
     __obj.asInstanceOf[AutomatedDiscoveryInformation]
   }
   
-  extension [Self <: AutomatedDiscoveryInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutomatedDiscoveryInformation] (val x: Self) extends AnyVal {
     
     inline def setLastRunTime(value: js.Date): Self = StObject.set(x, "LastRunTime", value.asInstanceOf[js.Any])
     

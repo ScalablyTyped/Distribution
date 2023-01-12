@@ -15,7 +15,8 @@ object CustomRulesPath {
     __obj.asInstanceOf[CustomRulesPath]
   }
   
-  extension [Self <: CustomRulesPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomRulesPath] (val x: Self) extends AnyVal {
     
     inline def setCustomRulesPath(value: String): Self = StObject.set(x, "customRulesPath", value.asInstanceOf[js.Any])
     

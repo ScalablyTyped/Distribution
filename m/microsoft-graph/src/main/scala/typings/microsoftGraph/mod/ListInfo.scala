@@ -25,7 +25,8 @@ object ListInfo {
     __obj.asInstanceOf[ListInfo]
   }
   
-  extension [Self <: ListInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInfo] (val x: Self) extends AnyVal {
     
     inline def setContentTypesEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "contentTypesEnabled", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object BCCEmailArchive_ {
     __obj.asInstanceOf[BCCEmailArchive_]
   }
   
-  extension [Self <: BCCEmailArchive_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BCCEmailArchive_] (val x: Self) extends AnyVal {
     
     inline def setBccEmailArchiveHistory(
       value: js.Array[

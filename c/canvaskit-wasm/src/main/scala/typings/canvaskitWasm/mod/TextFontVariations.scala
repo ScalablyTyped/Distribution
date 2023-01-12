@@ -17,7 +17,8 @@ object TextFontVariations {
     __obj.asInstanceOf[TextFontVariations]
   }
   
-  extension [Self <: TextFontVariations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFontVariations] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: String): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

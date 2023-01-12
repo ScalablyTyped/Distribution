@@ -28,7 +28,8 @@ object PortMapping {
     __obj.asInstanceOf[PortMapping]
   }
   
-  extension [Self <: PortMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortMapping] (val x: Self) extends AnyVal {
     
     inline def setContainerPort(value: BoxedInteger): Self = StObject.set(x, "containerPort", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SupportedEndpointType {
     __obj.asInstanceOf[SupportedEndpointType]
   }
   
-  extension [Self <: SupportedEndpointType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedEndpointType] (val x: Self) extends AnyVal {
     
     inline def setEndpointType(value: ReplicationEndpointTypeValue): Self = StObject.set(x, "EndpointType", value.asInstanceOf[js.Any])
     

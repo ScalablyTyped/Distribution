@@ -138,7 +138,8 @@ object IDataProxy {
     __obj.asInstanceOf[IDataProxy]
   }
   
-  extension [Self <: IDataProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDataProxy] (val x: Self) extends AnyVal {
     
     inline def setBatch(value: /* options */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
     

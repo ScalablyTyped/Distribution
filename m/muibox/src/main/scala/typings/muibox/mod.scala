@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[AlertOptions]
     }
     
-    extension [Self <: AlertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlertOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String | ReactNode): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ConfirmOptions]
     }
     
-    extension [Self <: ConfirmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmOptions] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: DialogButtonOptions): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object mod {
       __obj.asInstanceOf[DialogButtonOptions]
     }
     
-    extension [Self <: DialogButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -142,7 +145,8 @@ object mod {
       __obj.asInstanceOf[PromptOptions]
     }
     
-    extension [Self <: PromptOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: String | Double): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

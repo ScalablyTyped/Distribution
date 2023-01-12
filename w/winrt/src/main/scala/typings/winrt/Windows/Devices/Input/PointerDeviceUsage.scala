@@ -38,7 +38,8 @@ object PointerDeviceUsage {
     __obj.asInstanceOf[PointerDeviceUsage]
   }
   
-  extension [Self <: PointerDeviceUsage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerDeviceUsage] (val x: Self) extends AnyVal {
     
     inline def setMaxLogical(value: Double): Self = StObject.set(x, "maxLogical", value.asInstanceOf[js.Any])
     

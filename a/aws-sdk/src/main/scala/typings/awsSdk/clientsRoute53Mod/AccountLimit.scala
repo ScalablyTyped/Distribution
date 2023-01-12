@@ -23,7 +23,8 @@ object AccountLimit {
     __obj.asInstanceOf[AccountLimit]
   }
   
-  extension [Self <: AccountLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountLimit] (val x: Self) extends AnyVal {
     
     inline def setType(value: AccountLimitType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

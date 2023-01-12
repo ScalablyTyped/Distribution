@@ -18,7 +18,8 @@ object DisableApplicationLayerAutomaticResponseRequest {
     __obj.asInstanceOf[DisableApplicationLayerAutomaticResponseRequest]
   }
   
-  extension [Self <: DisableApplicationLayerAutomaticResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableApplicationLayerAutomaticResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: ResourceArn): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
   }

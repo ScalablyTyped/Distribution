@@ -43,7 +43,8 @@ object GetPositionResponse {
     __obj.asInstanceOf[GetPositionResponse]
   }
   
-  extension [Self <: GetPositionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPositionResponse] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Accuracy): Self = StObject.set(x, "Accuracy", value.asInstanceOf[js.Any])
     

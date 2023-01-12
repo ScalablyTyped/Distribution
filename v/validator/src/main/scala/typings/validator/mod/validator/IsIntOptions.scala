@@ -39,7 +39,8 @@ object IsIntOptions {
     __obj.asInstanceOf[IsIntOptions]
   }
   
-  extension [Self <: IsIntOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsIntOptions] (val x: Self) extends AnyVal {
     
     inline def setAllow_leading_zeroes(value: Boolean): Self = StObject.set(x, "allow_leading_zeroes", value.asInstanceOf[js.Any])
     

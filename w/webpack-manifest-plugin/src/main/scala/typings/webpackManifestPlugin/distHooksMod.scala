@@ -39,7 +39,8 @@ object distHooksMod {
       __obj.asInstanceOf[BeforeRunHookArgs]
     }
     
-    extension [Self <: BeforeRunHookArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeRunHookArgs] (val x: Self) extends AnyVal {
       
       inline def setEmitCountMap(value: EmitCountMap): Self = StObject.set(x, "emitCountMap", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distHooksMod {
       __obj.asInstanceOf[EmitHookArgs]
     }
     
-    extension [Self <: EmitHookArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitHookArgs] (val x: Self) extends AnyVal {
       
       inline def setCompiler(value: Compiler): Self = StObject.set(x, "compiler", value.asInstanceOf[js.Any])
       

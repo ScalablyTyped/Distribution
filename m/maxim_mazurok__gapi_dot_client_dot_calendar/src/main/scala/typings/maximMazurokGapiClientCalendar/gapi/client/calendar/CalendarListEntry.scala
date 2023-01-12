@@ -86,7 +86,8 @@ object CalendarListEntry {
     __obj.asInstanceOf[CalendarListEntry]
   }
   
-  extension [Self <: CalendarListEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarListEntry] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: String): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
     

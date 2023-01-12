@@ -33,7 +33,8 @@ object SafariCommandEvent {
     __obj.asInstanceOf[SafariCommandEvent]
   }
   
-  extension [Self <: SafariCommandEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafariCommandEvent] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
   }

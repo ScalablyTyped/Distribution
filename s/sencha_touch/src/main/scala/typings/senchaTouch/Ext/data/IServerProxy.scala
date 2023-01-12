@@ -290,7 +290,8 @@ object IServerProxy {
     __obj.asInstanceOf[IServerProxy]
   }
   
-  extension [Self <: IServerProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IServerProxy] (val x: Self) extends AnyVal {
     
     inline def setAfterRequest(value: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "afterRequest", js.Any.fromFunction2(value))
     

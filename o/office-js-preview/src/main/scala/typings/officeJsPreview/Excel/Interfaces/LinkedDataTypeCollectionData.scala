@@ -16,7 +16,8 @@ object LinkedDataTypeCollectionData {
     __obj.asInstanceOf[LinkedDataTypeCollectionData]
   }
   
-  extension [Self <: LinkedDataTypeCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedDataTypeCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[LinkedDataTypeData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

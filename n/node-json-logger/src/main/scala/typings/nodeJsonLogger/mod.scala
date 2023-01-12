@@ -130,7 +130,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TLogger]
     }
     
-    extension [Self <: TLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => LevelMessage): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       

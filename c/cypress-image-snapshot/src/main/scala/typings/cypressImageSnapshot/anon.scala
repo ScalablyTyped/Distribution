@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Counter]
     }
     
-    extension [Self <: Counter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Counter] (val x: Self) extends AnyVal {
       
       inline def setCounter(value: Double): Self = StObject.set(x, "counter", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -77,7 +79,8 @@ object anon {
       __obj.asInstanceOf[IncludeAA]
     }
     
-    extension [Self <: IncludeAA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncludeAA] (val x: Self) extends AnyVal {
       
       inline def setIncludeAA(value: Boolean): Self = StObject.set(x, "includeAA", value.asInstanceOf[js.Any])
       
@@ -100,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }

@@ -25,7 +25,8 @@ object ApiResolver {
     __obj.asInstanceOf[ApiResolver]
   }
   
-  extension [Self <: ApiResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiResolver] (val x: Self) extends AnyVal {
     
     inline def setEnumerateMatches(value: String => js.Array[ApiResolverMatch]): Self = StObject.set(x, "enumerateMatches", js.Any.fromFunction1(value))
   }

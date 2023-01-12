@@ -25,7 +25,8 @@ object ParamOptions {
     __obj.asInstanceOf[ParamOptions]
   }
   
-  extension [Self <: ParamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParamOptions] (val x: Self) extends AnyVal {
     
     inline def setGender(value: IntlVariationsGender): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
     

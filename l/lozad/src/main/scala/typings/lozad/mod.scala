@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Observer]
     }
     
-    extension [Self <: Observer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer] (val x: Self) extends AnyVal {
       
       inline def setObserve(value: () => Unit): Self = StObject.set(x, "observe", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEnableAutoReload(value: Boolean): Self = StObject.set(x, "enableAutoReload", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object CopyClusterSnapshotMessage {
     __obj.asInstanceOf[CopyClusterSnapshotMessage]
   }
   
-  extension [Self <: CopyClusterSnapshotMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyClusterSnapshotMessage] (val x: Self) extends AnyVal {
     
     inline def setManualSnapshotRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "ManualSnapshotRetentionPeriod", value.asInstanceOf[js.Any])
     

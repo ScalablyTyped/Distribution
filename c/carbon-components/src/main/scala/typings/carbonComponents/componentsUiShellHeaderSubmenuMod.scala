@@ -118,7 +118,8 @@ object componentsUiShellHeaderSubmenuMod {
       __obj.asInstanceOf[HeaderSubmenuOptions]
     }
     
-    extension [Self <: HeaderSubmenuOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderSubmenuOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribExpanded(value: String): Self = StObject.set(x, "attribExpanded", value.asInstanceOf[js.Any])
       

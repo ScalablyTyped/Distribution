@@ -28,7 +28,8 @@ object DisassociateDeviceFromPlacementRequest {
     __obj.asInstanceOf[DisassociateDeviceFromPlacementRequest]
   }
   
-  extension [Self <: DisassociateDeviceFromPlacementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateDeviceFromPlacementRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceTemplateName(value: DeviceTemplateName): Self = StObject.set(x, "deviceTemplateName", value.asInstanceOf[js.Any])
     

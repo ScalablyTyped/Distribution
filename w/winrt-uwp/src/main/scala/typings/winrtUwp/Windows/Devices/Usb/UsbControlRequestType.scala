@@ -31,7 +31,8 @@ object UsbControlRequestType {
     __obj.asInstanceOf[UsbControlRequestType]
   }
   
-  extension [Self <: UsbControlRequestType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbControlRequestType] (val x: Self) extends AnyVal {
     
     inline def setAsByte(value: Double): Self = StObject.set(x, "asByte", value.asInstanceOf[js.Any])
     

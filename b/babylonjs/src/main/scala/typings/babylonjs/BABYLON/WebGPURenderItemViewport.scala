@@ -24,7 +24,8 @@ object WebGPURenderItemViewport {
     __obj.asInstanceOf[WebGPURenderItemViewport]
   }
   
-  extension [Self <: WebGPURenderItemViewport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPURenderItemViewport] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

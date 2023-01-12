@@ -23,7 +23,8 @@ object Qio {
       __obj.asInstanceOf[ForEach]
     }
     
-    extension [Self <: ForEach](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForEach] (val x: Self) extends AnyVal {
       
       inline def setForEach(value: ForEachCallback => Promise[Unit]): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
     }

@@ -23,7 +23,8 @@ object GetOperationsForResourceRequest {
     __obj.asInstanceOf[GetOperationsForResourceRequest]
   }
   
-  extension [Self <: GetOperationsForResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOperationsForResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setPageToken(value: String): Self = StObject.set(x, "pageToken", value.asInstanceOf[js.Any])
     

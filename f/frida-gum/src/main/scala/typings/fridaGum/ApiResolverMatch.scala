@@ -23,7 +23,8 @@ object ApiResolverMatch {
     __obj.asInstanceOf[ApiResolverMatch]
   }
   
-  extension [Self <: ApiResolverMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiResolverMatch] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: NativePointer): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

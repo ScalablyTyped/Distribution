@@ -36,7 +36,8 @@ object libTypesThemeMod {
       __obj.asInstanceOf[ComponentStyles]
     }
     
-    extension [Self <: ComponentStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentStyles] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: IStyleFunctionOrObject[Any, Any]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object libTypesThemeMod {
       __obj.asInstanceOf[PartialTheme]
     }
     
-    extension [Self <: PartialTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTheme] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: ComponentsStyles): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object libTypesThemeMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setComponents(value: ComponentsStyles): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
       

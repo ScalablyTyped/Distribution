@@ -86,7 +86,8 @@ object XLogger {
     __obj.asInstanceOf[XLogger]
   }
   
-  extension [Self <: XLogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLogger] (val x: Self) extends AnyVal {
     
     inline def setAddLogHandler(value: XLogHandler => Unit): Self = StObject.set(x, "addLogHandler", js.Any.fromFunction1(value))
     

@@ -33,7 +33,8 @@ object Peer {
     __obj.asInstanceOf[Peer]
   }
   
-  extension [Self <: Peer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Peer] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

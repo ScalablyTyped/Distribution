@@ -96,7 +96,8 @@ object `lib@GeneratedAdmissionControlGrpcPbMod` {
       __obj.asInstanceOf[IAdmissionControlServer]
     }
     
-    extension [Self <: IAdmissionControlServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdmissionControlServer] (val x: Self) extends AnyVal {
       
       inline def setSubmitTransaction(
         value: (/* call */ ServerUnaryCall[SubmitTransactionRequest], /* callback */ sendUnaryData[SubmitTransactionResponse]) => Unit
@@ -125,7 +126,8 @@ object `lib@GeneratedAdmissionControlGrpcPbMod` {
       __obj.asInstanceOf[IAdmissionControlService]
     }
     
-    extension [Self <: IAdmissionControlService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdmissionControlService] (val x: Self) extends AnyVal {
       
       inline def setSubmitTransaction(value: IAdmissionControlServiceISubmitTransaction): Self = StObject.set(x, "submitTransaction", value.asInstanceOf[js.Any])
       

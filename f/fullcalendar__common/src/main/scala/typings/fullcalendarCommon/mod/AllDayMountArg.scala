@@ -21,7 +21,8 @@ object AllDayMountArg {
     __obj.asInstanceOf[AllDayMountArg]
   }
   
-  extension [Self <: AllDayMountArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllDayMountArg] (val x: Self) extends AnyVal {
     
     inline def setEl(value: HTMLElement): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
     

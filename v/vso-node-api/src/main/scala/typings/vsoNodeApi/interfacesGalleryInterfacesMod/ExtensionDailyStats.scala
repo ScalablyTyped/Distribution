@@ -44,7 +44,8 @@ object ExtensionDailyStats {
     __obj.asInstanceOf[ExtensionDailyStats]
   }
   
-  extension [Self <: ExtensionDailyStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionDailyStats] (val x: Self) extends AnyVal {
     
     inline def setDailyStats(value: js.Array[ExtensionDailyStat]): Self = StObject.set(x, "dailyStats", value.asInstanceOf[js.Any])
     

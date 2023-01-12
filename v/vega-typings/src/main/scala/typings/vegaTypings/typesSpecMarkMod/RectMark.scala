@@ -23,7 +23,8 @@ object RectMark {
     __obj.asInstanceOf[RectMark]
   }
   
-  extension [Self <: RectMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectMark] (val x: Self) extends AnyVal {
     
     inline def setType(value: rect): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -107,7 +107,8 @@ object ImageSampleParametersProperties {
     __obj.asInstanceOf[ImageSampleParametersProperties]
   }
   
-  extension [Self <: ImageSampleParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageSampleParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometry(
       value: PointPropertiestypepoint | MultipointPropertiestypem | PolylinePropertiestypepol | ExtentPropertiestypeexten | PolygonPropertiestypepoly

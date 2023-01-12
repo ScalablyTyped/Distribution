@@ -18,7 +18,8 @@ object EC2TagSet {
     __obj.asInstanceOf[EC2TagSet]
   }
   
-  extension [Self <: EC2TagSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2TagSet] (val x: Self) extends AnyVal {
     
     inline def setEc2TagSetList(value: EC2TagSetList): Self = StObject.set(x, "ec2TagSetList", value.asInstanceOf[js.Any])
     

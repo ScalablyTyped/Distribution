@@ -73,7 +73,8 @@ object vuelidateMod {
       __obj.asInstanceOf[Validation]
     }
     
-    extension [Self <: Validation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Validation] (val x: Self) extends AnyVal {
       
       inline def set$anyDirty(value: Boolean): Self = StObject.set(x, "$anyDirty", value.asInstanceOf[js.Any])
       

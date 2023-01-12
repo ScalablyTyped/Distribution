@@ -43,7 +43,8 @@ object ResourceResponse {
     __obj.asInstanceOf[ResourceResponse]
   }
   
-  extension [Self <: ResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setBodySize(value: Double): Self = StObject.set(x, "bodySize", value.asInstanceOf[js.Any])
     

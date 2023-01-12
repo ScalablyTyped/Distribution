@@ -53,7 +53,8 @@ object Alias {
     __obj.asInstanceOf[Alias]
   }
   
-  extension [Self <: Alias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alias] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

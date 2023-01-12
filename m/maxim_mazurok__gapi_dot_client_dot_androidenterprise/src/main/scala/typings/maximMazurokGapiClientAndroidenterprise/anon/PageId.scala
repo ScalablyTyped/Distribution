@@ -57,7 +57,8 @@ object PageId {
     __obj.asInstanceOf[PageId]
   }
   
-  extension [Self <: PageId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

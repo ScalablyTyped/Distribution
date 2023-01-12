@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Column]
     }
     
-    extension [Self <: Column](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Column] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[GeneratedColumn]
     }
     
-    extension [Self <: GeneratedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedColumn] (val x: Self) extends AnyVal {
       
       inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[GeneratedLine]
     }
     
-    extension [Self <: GeneratedLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratedLine] (val x: Self) extends AnyVal {
       
       inline def setGeneratedColumn(value: Double): Self = StObject.set(x, "generatedColumn", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object anon {
       __obj.asInstanceOf[OmitDecodedSourceMapmappi]
     }
     
-    extension [Self <: OmitDecodedSourceMapmappi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitDecodedSourceMapmappi] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

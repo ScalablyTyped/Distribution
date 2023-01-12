@@ -27,7 +27,8 @@ object GetExporter {
     __obj.asInstanceOf[GetExporter]
   }
   
-  extension [Self <: GetExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetExporter] (val x: Self) extends AnyVal {
     
     inline def setFormats(value: js.Array[ProcessKey]): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     

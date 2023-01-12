@@ -18,7 +18,8 @@ object FirewallPolicyStatefulRuleGroupReferencesDetails {
     __obj.asInstanceOf[FirewallPolicyStatefulRuleGroupReferencesDetails]
   }
   
-  extension [Self <: FirewallPolicyStatefulRuleGroupReferencesDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPolicyStatefulRuleGroupReferencesDetails] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: NonEmptyString): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     

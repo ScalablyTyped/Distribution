@@ -23,7 +23,8 @@ object StereoPannerOptions {
     __obj.asInstanceOf[StereoPannerOptions]
   }
   
-  extension [Self <: StereoPannerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StereoPannerOptions] (val x: Self) extends AnyVal {
     
     inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     

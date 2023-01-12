@@ -235,7 +235,8 @@ object mod {
       __obj.asInstanceOf[BufferOptions]
     }
     
-    extension [Self <: BufferOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferOptions] (val x: Self) extends AnyVal {
       
       inline def setEndian(value: String | Double): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
       

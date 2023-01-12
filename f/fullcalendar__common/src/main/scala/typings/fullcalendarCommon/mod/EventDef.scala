@@ -48,7 +48,8 @@ object EventDef {
     __obj.asInstanceOf[EventDef]
   }
   
-  extension [Self <: EventDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventDef] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

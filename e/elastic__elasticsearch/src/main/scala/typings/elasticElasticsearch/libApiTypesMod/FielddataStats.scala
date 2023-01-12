@@ -22,7 +22,8 @@ object FielddataStats {
     __obj.asInstanceOf[FielddataStats]
   }
   
-  extension [Self <: FielddataStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FielddataStats] (val x: Self) extends AnyVal {
     
     inline def setEvictions(value: long): Self = StObject.set(x, "evictions", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListLoggingConfigurationsRequest {
     __obj.asInstanceOf[ListLoggingConfigurationsRequest]
   }
   
-  extension [Self <: ListLoggingConfigurationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLoggingConfigurationsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

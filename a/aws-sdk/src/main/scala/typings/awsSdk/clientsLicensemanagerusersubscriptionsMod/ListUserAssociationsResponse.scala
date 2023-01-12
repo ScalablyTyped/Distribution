@@ -23,7 +23,8 @@ object ListUserAssociationsResponse {
     __obj.asInstanceOf[ListUserAssociationsResponse]
   }
   
-  extension [Self <: ListUserAssociationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUserAssociationsResponse] (val x: Self) extends AnyVal {
     
     inline def setInstanceUserSummaries(value: InstanceUserSummaryList): Self = StObject.set(x, "InstanceUserSummaries", value.asInstanceOf[js.Any])
     

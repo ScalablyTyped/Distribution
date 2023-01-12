@@ -36,7 +36,8 @@ object LocalDiskInitializeParams {
     __obj.asInstanceOf[LocalDiskInitializeParams]
   }
   
-  extension [Self <: LocalDiskInitializeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalDiskInitializeParams] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object WriteApplicationSettingsRequest {
     __obj.asInstanceOf[WriteApplicationSettingsRequest]
   }
   
-  extension [Self <: WriteApplicationSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteApplicationSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setCampaignHook(value: CampaignHook): Self = StObject.set(x, "CampaignHook", value.asInstanceOf[js.Any])
     

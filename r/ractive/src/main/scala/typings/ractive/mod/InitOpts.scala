@@ -35,7 +35,8 @@ object InitOpts {
     __obj.asInstanceOf[InitOpts[T]]
   }
   
-  extension [Self <: InitOpts[?], T /* <: Ractive[T] */](x: Self & InitOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitOpts[?], T /* <: Ractive[T] */] (val x: Self & InitOpts[T]) extends AnyVal {
     
     inline def setAppend(value: `true`): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
     

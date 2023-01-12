@@ -18,7 +18,8 @@ object JobStoppingCondition {
     __obj.asInstanceOf[JobStoppingCondition]
   }
   
-  extension [Self <: JobStoppingCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobStoppingCondition] (val x: Self) extends AnyVal {
     
     inline def setMaxRuntimeInSeconds(value: JobStoppingConditionMaxRuntimeInSecondsInteger): Self = StObject.set(x, "maxRuntimeInSeconds", value.asInstanceOf[js.Any])
     

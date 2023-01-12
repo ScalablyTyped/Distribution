@@ -67,7 +67,8 @@ object RadarChartProps {
     __obj.asInstanceOf[RadarChartProps]
   }
   
-  extension [Self <: RadarChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RadarChartProps] (val x: Self) extends AnyVal {
     
     inline def setBarCategoryGap(value: Double | String): Self = StObject.set(x, "barCategoryGap", value.asInstanceOf[js.Any])
     

@@ -533,7 +533,8 @@ object mod {
       __obj.asInstanceOf[AudioVideoFilter]
     }
     
-    extension [Self <: AudioVideoFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AudioVideoFilter] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -573,7 +574,8 @@ object mod {
       __obj.asInstanceOf[Codec]
     }
     
-    extension [Self <: Codec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec] (val x: Self) extends AnyVal {
       
       inline def setCanDecode(value: Boolean): Self = StObject.set(x, "canDecode", value.asInstanceOf[js.Any])
       
@@ -645,7 +647,8 @@ object mod {
       __obj.asInstanceOf[Encoder]
     }
     
-    extension [Self <: Encoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoder] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -689,7 +692,8 @@ object mod {
       __obj.asInstanceOf[FfmpegCommandLogger]
     }
     
-    extension [Self <: FfmpegCommandLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfmpegCommandLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -728,7 +732,8 @@ object mod {
       __obj.asInstanceOf[FfmpegCommandOptions]
     }
     
-    extension [Self <: FfmpegCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfmpegCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -783,7 +788,8 @@ object mod {
       __obj.asInstanceOf[FfprobeData]
     }
     
-    extension [Self <: FfprobeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfprobeData] (val x: Self) extends AnyVal {
       
       inline def setChapters(value: js.Array[Any]): Self = StObject.set(x, "chapters", value.asInstanceOf[js.Any])
       
@@ -830,7 +836,8 @@ object mod {
       __obj.asInstanceOf[FfprobeFormat]
     }
     
-    extension [Self <: FfprobeFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfprobeFormat] (val x: Self) extends AnyVal {
       
       inline def setBit_rate(value: Double): Self = StObject.set(x, "bit_rate", value.asInstanceOf[js.Any])
       
@@ -981,7 +988,8 @@ object mod {
       __obj.asInstanceOf[FfprobeStream]
     }
     
-    extension [Self <: FfprobeStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfprobeStream] (val x: Self) extends AnyVal {
       
       inline def setAvg_frame_rate(value: String): Self = StObject.set(x, "avg_frame_rate", value.asInstanceOf[js.Any])
       
@@ -1202,7 +1210,8 @@ object mod {
       __obj.asInstanceOf[FfprobeStreamDisposition]
     }
     
-    extension [Self <: FfprobeStreamDisposition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FfprobeStreamDisposition] (val x: Self) extends AnyVal {
       
       inline def setAttached_pic(value: Double): Self = StObject.set(x, "attached_pic", value.asInstanceOf[js.Any])
       
@@ -1279,7 +1288,8 @@ object mod {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -1310,7 +1320,8 @@ object mod {
       __obj.asInstanceOf[FilterSpecification]
     }
     
-    extension [Self <: FilterSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterSpecification] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -1353,7 +1364,8 @@ object mod {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setCanDemux(value: Boolean): Self = StObject.set(x, "canDemux", value.asInstanceOf[js.Any])
       
@@ -1392,7 +1404,8 @@ object mod {
       __obj.asInstanceOf[ScreenshotsConfig]
     }
     
-    extension [Self <: ScreenshotsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotsConfig] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

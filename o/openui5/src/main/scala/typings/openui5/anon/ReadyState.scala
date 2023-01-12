@@ -64,7 +64,8 @@ object ReadyState {
     __obj.asInstanceOf[ReadyState]
   }
   
-  extension [Self <: ReadyState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadyState] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -181,7 +181,8 @@ object XmlDocumentType {
     __obj.asInstanceOf[XmlDocumentType]
   }
   
-  extension [Self <: XmlDocumentType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlDocumentType] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXmlNode => IXmlNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

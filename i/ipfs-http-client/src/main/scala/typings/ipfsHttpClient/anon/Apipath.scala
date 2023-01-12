@@ -24,7 +24,8 @@ object Apipath {
     __obj.asInstanceOf[Apipath]
   }
   
-  extension [Self <: Apipath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apipath] (val x: Self) extends AnyVal {
     
     inline def `setApi-path`(value: String): Self = StObject.set(x, "api-path", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object Libs {
     __obj.asInstanceOf[Libs]
   }
   
-  extension [Self <: Libs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Libs] (val x: Self) extends AnyVal {
     
     inline def setComponents(value: js.Array[js.Object | String]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
     

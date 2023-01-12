@@ -37,7 +37,8 @@ object clientsMarketplacecommerceanalyticsMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -142,7 +143,8 @@ object clientsMarketplacecommerceanalyticsMod {
       __obj.asInstanceOf[GenerateDataSetRequest]
     }
     
-    extension [Self <: GenerateDataSetRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateDataSetRequest] (val x: Self) extends AnyVal {
       
       inline def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object clientsMarketplacecommerceanalyticsMod {
       __obj.asInstanceOf[GenerateDataSetResult]
     }
     
-    extension [Self <: GenerateDataSetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateDataSetResult] (val x: Self) extends AnyVal {
       
       inline def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
       
@@ -279,7 +282,8 @@ object clientsMarketplacecommerceanalyticsMod {
       __obj.asInstanceOf[StartSupportDataExportRequest]
     }
     
-    extension [Self <: StartSupportDataExportRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSupportDataExportRequest] (val x: Self) extends AnyVal {
       
       inline def setCustomerDefinedValues(value: CustomerDefinedValues): Self = StObject.set(x, "customerDefinedValues", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object clientsMarketplacecommerceanalyticsMod {
       __obj.asInstanceOf[StartSupportDataExportResult]
     }
     
-    extension [Self <: StartSupportDataExportResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSupportDataExportResult] (val x: Self) extends AnyVal {
       
       inline def setDataSetRequestId(value: DataSetRequestId): Self = StObject.set(x, "dataSetRequestId", value.asInstanceOf[js.Any])
       

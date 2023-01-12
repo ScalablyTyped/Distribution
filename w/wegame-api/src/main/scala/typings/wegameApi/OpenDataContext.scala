@@ -24,7 +24,8 @@ object OpenDataContext {
     __obj.asInstanceOf[OpenDataContext]
   }
   
-  extension [Self <: OpenDataContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDataContext] (val x: Self) extends AnyVal {
     
     inline def setCanvas(value: Canvas): Self = StObject.set(x, "canvas", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object DatePickerMessages {
     __obj.asInstanceOf[DatePickerMessages]
   }
   
-  extension [Self <: DatePickerMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerMessages] (val x: Self) extends AnyVal {
     
     inline def setWeekColumnHeader(value: String): Self = StObject.set(x, "weekColumnHeader", value.asInstanceOf[js.Any])
     

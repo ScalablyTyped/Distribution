@@ -29,7 +29,8 @@ object typesTimeToLiveDescriptionMod {
       __obj.asInstanceOf[TimeToLiveDescription]
     }
     
-    extension [Self <: TimeToLiveDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
       
       inline def setAttributeName(value: String): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
       

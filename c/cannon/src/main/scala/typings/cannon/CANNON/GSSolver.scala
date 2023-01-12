@@ -25,7 +25,8 @@ object GSSolver {
     __obj.asInstanceOf[GSSolver]
   }
   
-  extension [Self <: GSSolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GSSolver] (val x: Self) extends AnyVal {
     
     inline def setTolerance(value: Double): Self = StObject.set(x, "tolerance", value.asInstanceOf[js.Any])
   }

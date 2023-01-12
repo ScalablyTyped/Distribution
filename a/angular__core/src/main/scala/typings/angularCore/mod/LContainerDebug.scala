@@ -44,7 +44,8 @@ object LContainerDebug {
     __obj.asInstanceOf[LContainerDebug]
   }
   
-  extension [Self <: LContainerDebug](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LContainerDebug] (val x: Self) extends AnyVal {
     
     inline def setHasTransplantedViews(value: Boolean): Self = StObject.set(x, "hasTransplantedViews", value.asInstanceOf[js.Any])
     

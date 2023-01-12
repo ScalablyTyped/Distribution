@@ -22,7 +22,8 @@ object ISnapshot {
     __obj.asInstanceOf[ISnapshot]
   }
   
-  extension [Self <: ISnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISnapshot] (val x: Self) extends AnyVal {
     
     inline def setDocChanges(value: js.Array[ISingleDBEvent]): Self = StObject.set(x, "docChanges", value.asInstanceOf[js.Any])
     

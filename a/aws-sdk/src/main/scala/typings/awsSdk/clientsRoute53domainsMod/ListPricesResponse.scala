@@ -23,7 +23,8 @@ object ListPricesResponse {
     __obj.asInstanceOf[ListPricesResponse]
   }
   
-  extension [Self <: ListPricesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPricesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageMarker(value: PageMarker): Self = StObject.set(x, "NextPageMarker", value.asInstanceOf[js.Any])
     

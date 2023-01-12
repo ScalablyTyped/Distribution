@@ -45,7 +45,8 @@ object JsxFormElementProps {
     __obj.asInstanceOf[JsxFormElementProps]
   }
   
-  extension [Self <: JsxFormElementProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsxFormElementProps] (val x: Self) extends AnyVal {
     
     inline def `setAccept-charset`(value: String): Self = StObject.set(x, "accept-charset", value.asInstanceOf[js.Any])
     

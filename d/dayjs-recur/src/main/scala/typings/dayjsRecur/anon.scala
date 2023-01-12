@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[End]
     }
     
-    extension [Self <: End](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: End] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: String | Dayjs): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

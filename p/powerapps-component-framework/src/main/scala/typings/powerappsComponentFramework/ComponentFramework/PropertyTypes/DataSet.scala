@@ -143,7 +143,8 @@ object DataSet {
     __obj.asInstanceOf[DataSet]
   }
   
-  extension [Self <: DataSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSet] (val x: Self) extends AnyVal {
     
     inline def setAddColumn(value: (/* name */ String, /* entityAlias */ js.UndefOr[String]) => Unit): Self = StObject.set(x, "addColumn", js.Any.fromFunction2(value))
     

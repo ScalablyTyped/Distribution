@@ -60,7 +60,8 @@ object libSrcLexerTokenizerEngineMod {
       __obj.asInstanceOf[RegExpLike]
     }
     
-    extension [Self <: RegExpLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegExpLike] (val x: Self) extends AnyVal {
       
       inline def setExec(value: String => js.Array[String] | Null): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
@@ -86,7 +87,8 @@ object libSrcLexerTokenizerEngineMod {
       __obj.asInstanceOf[TokenRule]
     }
     
-    extension [Self <: TokenRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenRule] (val x: Self) extends AnyVal {
       
       inline def setKey(value: /* rawText */ String => String): Self = StObject.set(x, "key", js.Any.fromFunction1(value))
       
@@ -144,7 +146,8 @@ object libSrcLexerTokenizerEngineMod {
       __obj.asInstanceOf[TokenizerEngine]
     }
     
-    extension [Self <: TokenizerEngine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenizerEngine] (val x: Self) extends AnyVal {
       
       inline def setCreateParseError(value: Any): Self = StObject.set(x, "createParseError", value.asInstanceOf[js.Any])
       

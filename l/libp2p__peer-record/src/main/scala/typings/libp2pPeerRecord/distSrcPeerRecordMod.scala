@@ -76,7 +76,8 @@ object distSrcPeerRecordMod {
       __obj.asInstanceOf[PeerRecordInit]
     }
     
-    extension [Self <: PeerRecordInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeerRecordInit] (val x: Self) extends AnyVal {
       
       inline def setMultiaddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "multiaddrs", value.asInstanceOf[js.Any])
       

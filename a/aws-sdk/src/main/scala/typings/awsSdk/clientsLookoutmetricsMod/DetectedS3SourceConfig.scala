@@ -18,7 +18,8 @@ object DetectedS3SourceConfig {
     __obj.asInstanceOf[DetectedS3SourceConfig]
   }
   
-  extension [Self <: DetectedS3SourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedS3SourceConfig] (val x: Self) extends AnyVal {
     
     inline def setFileFormatDescriptor(value: DetectedFileFormatDescriptor): Self = StObject.set(x, "FileFormatDescriptor", value.asInstanceOf[js.Any])
     

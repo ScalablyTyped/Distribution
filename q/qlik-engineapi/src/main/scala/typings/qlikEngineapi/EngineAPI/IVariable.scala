@@ -85,7 +85,8 @@ object IVariable {
     __obj.asInstanceOf[IVariable]
   }
   
-  extension [Self <: IVariable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVariable] (val x: Self) extends AnyVal {
     
     inline def setForceContent(value: (String, Double) => js.Promise[Unit]): Self = StObject.set(x, "forceContent", js.Any.fromFunction2(value))
     

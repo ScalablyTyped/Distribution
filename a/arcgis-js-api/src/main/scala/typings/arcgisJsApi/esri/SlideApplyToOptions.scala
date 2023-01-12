@@ -62,7 +62,8 @@ object SlideApplyToOptions {
     __obj.asInstanceOf[SlideApplyToOptions]
   }
   
-  extension [Self <: SlideApplyToOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideApplyToOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

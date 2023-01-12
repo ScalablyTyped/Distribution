@@ -54,7 +54,8 @@ object PDFDocumentOptions {
     __obj.asInstanceOf[PDFDocumentOptions]
   }
   
-  extension [Self <: PDFDocumentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PDFDocumentOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoFirstPage(value: Boolean): Self = StObject.set(x, "autoFirstPage", value.asInstanceOf[js.Any])
     

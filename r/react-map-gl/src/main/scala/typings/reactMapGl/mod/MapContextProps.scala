@@ -29,7 +29,8 @@ object MapContextProps {
     __obj.asInstanceOf[MapContextProps]
   }
   
-  extension [Self <: MapContextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapContextProps] (val x: Self) extends AnyVal {
     
     inline def setEventManager(value: EventManager): Self = StObject.set(x, "eventManager", value.asInstanceOf[js.Any])
     

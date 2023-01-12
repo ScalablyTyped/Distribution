@@ -17,7 +17,8 @@ object IOHandlerSync {
     __obj.asInstanceOf[IOHandlerSync]
   }
   
-  extension [Self <: IOHandlerSync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOHandlerSync] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: () => ModelArtifacts): Self = StObject.set(x, "load", js.Any.fromFunction0(value))
     

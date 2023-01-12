@@ -23,7 +23,8 @@ object BatchStopJobRunResponse {
     __obj.asInstanceOf[BatchStopJobRunResponse]
   }
   
-  extension [Self <: BatchStopJobRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchStopJobRunResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchStopJobRunErrorList): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

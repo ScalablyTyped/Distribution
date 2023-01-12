@@ -39,7 +39,8 @@ object HOTP {
     __obj.asInstanceOf[HOTP]
   }
   
-  extension [Self <: HOTP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HOTP] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: (String, String, Double) => Boolean): Self = StObject.set(x, "check", js.Any.fromFunction3(value))
     

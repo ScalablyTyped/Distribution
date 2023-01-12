@@ -28,7 +28,8 @@ object CreateVirtualClusterResponse {
     __obj.asInstanceOf[CreateVirtualClusterResponse]
   }
   
-  extension [Self <: CreateVirtualClusterResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVirtualClusterResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: VirtualClusterArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

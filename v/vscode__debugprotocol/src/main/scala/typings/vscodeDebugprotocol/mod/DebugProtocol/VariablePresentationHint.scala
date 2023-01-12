@@ -86,7 +86,8 @@ object VariablePresentationHint {
     __obj.asInstanceOf[VariablePresentationHint]
   }
   
-  extension [Self <: VariablePresentationHint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariablePresentationHint] (val x: Self) extends AnyVal {
     
     inline def setAttributes(
       value: js.Array[

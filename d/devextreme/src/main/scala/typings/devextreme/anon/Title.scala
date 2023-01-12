@@ -24,7 +24,8 @@ object Title {
     __obj.asInstanceOf[Title]
   }
   
-  extension [Self <: Title](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: js.Array[DiagramCommand]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

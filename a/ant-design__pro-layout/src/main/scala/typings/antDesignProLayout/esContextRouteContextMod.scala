@@ -104,7 +104,8 @@ object esContextRouteContextMod {
       __obj.asInstanceOf[RouteContextType]
     }
     
-    extension [Self <: RouteContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteContextType] (val x: Self) extends AnyVal {
       
       inline def setBreadcrumb(value: BreadcrumbListReturn): Self = StObject.set(x, "breadcrumb", value.asInstanceOf[js.Any])
       

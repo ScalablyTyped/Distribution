@@ -28,7 +28,8 @@ object StackTraceArguments {
     __obj.asInstanceOf[StackTraceArguments]
   }
   
-  extension [Self <: StackTraceArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackTraceArguments] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: StackFrameFormat): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

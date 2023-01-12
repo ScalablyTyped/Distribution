@@ -51,7 +51,8 @@ object ExifInit {
     __obj.asInstanceOf[ExifInit]
   }
   
-  extension [Self <: ExifInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExifInit] (val x: Self) extends AnyVal {
     
     inline def setDeviceMaker(value: String): Self = StObject.set(x, "deviceMaker", value.asInstanceOf[js.Any])
     

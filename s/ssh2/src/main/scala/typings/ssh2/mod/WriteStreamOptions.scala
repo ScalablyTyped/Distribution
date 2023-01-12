@@ -30,7 +30,8 @@ object WriteStreamOptions {
     __obj.asInstanceOf[WriteStreamOptions]
   }
   
-  extension [Self <: WriteStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
     

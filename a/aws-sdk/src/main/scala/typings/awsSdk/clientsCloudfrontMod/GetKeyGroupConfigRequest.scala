@@ -18,7 +18,8 @@ object GetKeyGroupConfigRequest {
     __obj.asInstanceOf[GetKeyGroupConfigRequest]
   }
   
-  extension [Self <: GetKeyGroupConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKeyGroupConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

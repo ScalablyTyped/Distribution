@@ -18,7 +18,8 @@ object EXAT {
     __obj.asInstanceOf[EXAT]
   }
   
-  extension [Self <: EXAT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EXAT] (val x: Self) extends AnyVal {
     
     inline def setEXAT(value: Double | js.Date): Self = StObject.set(x, "EXAT", value.asInstanceOf[js.Any])
   }

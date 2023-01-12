@@ -45,7 +45,8 @@ object distConstantsMod {
       __obj.asInstanceOf[Constants_]
     }
     
-    extension [Self <: Constants_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constants_] (val x: Self) extends AnyVal {
       
       inline def setROUTER_START(value: String): Self = StObject.set(x, "ROUTER_START", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object distConstantsMod {
       __obj.asInstanceOf[ErrorCodes_]
     }
     
-    extension [Self <: ErrorCodes_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorCodes_] (val x: Self) extends AnyVal {
       
       inline def setCANNOT_ACTIVATE(value: String): Self = StObject.set(x, "CANNOT_ACTIVATE", value.asInstanceOf[js.Any])
       

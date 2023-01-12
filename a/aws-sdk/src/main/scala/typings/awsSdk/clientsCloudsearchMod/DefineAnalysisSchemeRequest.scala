@@ -17,7 +17,8 @@ object DefineAnalysisSchemeRequest {
     __obj.asInstanceOf[DefineAnalysisSchemeRequest]
   }
   
-  extension [Self <: DefineAnalysisSchemeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefineAnalysisSchemeRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysisScheme(value: AnalysisScheme): Self = StObject.set(x, "AnalysisScheme", value.asInstanceOf[js.Any])
     

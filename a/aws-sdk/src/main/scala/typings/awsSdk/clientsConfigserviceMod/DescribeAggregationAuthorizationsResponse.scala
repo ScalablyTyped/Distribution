@@ -23,7 +23,8 @@ object DescribeAggregationAuthorizationsResponse {
     __obj.asInstanceOf[DescribeAggregationAuthorizationsResponse]
   }
   
-  extension [Self <: DescribeAggregationAuthorizationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAggregationAuthorizationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAggregationAuthorizations(value: AggregationAuthorizationList): Self = StObject.set(x, "AggregationAuthorizations", value.asInstanceOf[js.Any])
     

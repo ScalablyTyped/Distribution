@@ -23,7 +23,8 @@ object RegisterPublisherInput {
     __obj.asInstanceOf[RegisterPublisherInput]
   }
   
-  extension [Self <: RegisterPublisherInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterPublisherInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptTermsAndConditions(value: AcceptTermsAndConditions): Self = StObject.set(x, "AcceptTermsAndConditions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SecuritySamlServiceProviderMetadataRequest {
     __obj.asInstanceOf[SecuritySamlServiceProviderMetadataRequest]
   }
   
-  extension [Self <: SecuritySamlServiceProviderMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySamlServiceProviderMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setRealm_name(value: Name): Self = StObject.set(x, "realm_name", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object NetworkFirewallPolicyModifiedViolation {
     __obj.asInstanceOf[NetworkFirewallPolicyModifiedViolation]
   }
   
-  extension [Self <: NetworkFirewallPolicyModifiedViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallPolicyModifiedViolation] (val x: Self) extends AnyVal {
     
     inline def setCurrentPolicyDescription(value: NetworkFirewallPolicyDescription): Self = StObject.set(x, "CurrentPolicyDescription", value.asInstanceOf[js.Any])
     

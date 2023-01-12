@@ -36,7 +36,8 @@ object Milk {
     __obj.asInstanceOf[Milk]
   }
   
-  extension [Self <: Milk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Milk] (val x: Self) extends AnyVal {
     
     inline def setBname(value: String): Self = StObject.set(x, "bname", value.asInstanceOf[js.Any])
     

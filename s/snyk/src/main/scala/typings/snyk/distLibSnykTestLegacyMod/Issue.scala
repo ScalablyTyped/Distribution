@@ -21,7 +21,8 @@ object Issue {
     __obj.asInstanceOf[Issue]
   }
   
-  extension [Self <: Issue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Issue] (val x: Self) extends AnyVal {
     
     inline def setFixInfo(value: FixInfo): Self = StObject.set(x, "fixInfo", value.asInstanceOf[js.Any])
     

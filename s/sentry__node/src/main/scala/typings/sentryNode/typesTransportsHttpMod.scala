@@ -42,7 +42,8 @@ object typesTransportsHttpMod {
       __obj.asInstanceOf[NodeTransportOptions]
     }
     
-    extension [Self <: NodeTransportOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTransportOptions] (val x: Self) extends AnyVal {
       
       inline def setCaCerts(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "caCerts", value.asInstanceOf[js.Any])
       

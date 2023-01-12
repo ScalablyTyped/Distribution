@@ -204,7 +204,8 @@ object NgModule {
   @js.native
   val ^ : NgModuleDecorator = js.native
   
-  extension [Self <: NgModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgModule] (val x: Self) extends AnyVal {
     
     inline def setBootstrap(value: js.Array[Type[Any] | js.Array[Any]]): Self = StObject.set(x, "bootstrap", value.asInstanceOf[js.Any])
     

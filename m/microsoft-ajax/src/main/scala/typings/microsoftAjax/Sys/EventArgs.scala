@@ -23,7 +23,8 @@ object EventArgs {
     __obj.asInstanceOf[EventArgs]
   }
   
-  extension [Self <: EventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventArgs] (val x: Self) extends AnyVal {
     
     inline def setEmpty(value: EventArgs): Self = StObject.set(x, "Empty", value.asInstanceOf[js.Any])
   }

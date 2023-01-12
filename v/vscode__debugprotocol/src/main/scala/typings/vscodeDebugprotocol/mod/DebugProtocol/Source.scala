@@ -54,7 +54,8 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  extension [Self <: Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     inline def setAdapterData(value: Any): Self = StObject.set(x, "adapterData", value.asInstanceOf[js.Any])
     

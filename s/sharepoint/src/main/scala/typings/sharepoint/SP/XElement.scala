@@ -32,7 +32,8 @@ object XElement {
     __obj.asInstanceOf[XElement]
   }
   
-  extension [Self <: XElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XElement] (val x: Self) extends AnyVal {
     
     inline def setGet_attributes(value: () => Any): Self = StObject.set(x, "get_attributes", js.Any.fromFunction0(value))
     

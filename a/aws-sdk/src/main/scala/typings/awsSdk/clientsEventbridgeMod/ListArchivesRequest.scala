@@ -38,7 +38,8 @@ object ListArchivesRequest {
     __obj.asInstanceOf[ListArchivesRequest]
   }
   
-  extension [Self <: ListArchivesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListArchivesRequest] (val x: Self) extends AnyVal {
     
     inline def setEventSourceArn(value: Arn): Self = StObject.set(x, "EventSourceArn", value.asInstanceOf[js.Any])
     

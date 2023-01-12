@@ -50,7 +50,8 @@ object AfterBefore {
     __obj.asInstanceOf[AfterBefore]
   }
   
-  extension [Self <: AfterBefore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterBefore] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object componentsDropdownDropdownContextMod {
       __obj.asInstanceOf[DropdownContextValue]
     }
     
-    extension [Self <: DropdownContextValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownContextValue] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

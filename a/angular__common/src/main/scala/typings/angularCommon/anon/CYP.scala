@@ -155,7 +155,8 @@ object CYP {
     __obj.asInstanceOf[CYP]
   }
   
-  extension [Self <: CYP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CYP] (val x: Self) extends AnyVal {
     
     inline def setARS(value: js.Array[String]): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
     

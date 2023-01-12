@@ -22,7 +22,8 @@ object InteractionSettings {
     __obj.asInstanceOf[InteractionSettings]
   }
   
-  extension [Self <: InteractionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractionSettings] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: DateComponent[Any, Dictionary]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

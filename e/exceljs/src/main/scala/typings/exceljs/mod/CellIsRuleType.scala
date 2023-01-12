@@ -24,7 +24,8 @@ object CellIsRuleType {
     __obj.asInstanceOf[CellIsRuleType]
   }
   
-  extension [Self <: CellIsRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellIsRuleType] (val x: Self) extends AnyVal {
     
     inline def setFormulae(value: js.Array[Any]): Self = StObject.set(x, "formulae", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MultiConfiguration {
     __obj.asInstanceOf[MultiConfiguration]
   }
   
-  extension [Self <: MultiConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMultiConfiguration(value: scala.Double): Self = StObject.set(x, "multiConfiguration", value.asInstanceOf[js.Any])
     

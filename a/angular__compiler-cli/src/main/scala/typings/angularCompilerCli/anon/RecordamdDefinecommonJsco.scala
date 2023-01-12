@@ -25,7 +25,8 @@ object RecordamdDefinecommonJsco {
     __obj.asInstanceOf[RecordamdDefinecommonJsco]
   }
   
-  extension [Self <: RecordamdDefinecommonJsco](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordamdDefinecommonJsco] (val x: Self) extends AnyVal {
     
     inline def setAmdDefine(value: CallExpression): Self = StObject.set(x, "amdDefine", value.asInstanceOf[js.Any])
     

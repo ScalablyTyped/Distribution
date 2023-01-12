@@ -36,7 +36,8 @@ object libMod {
       __obj.asInstanceOf[BaseFields]
     }
     
-    extension [Self <: BaseFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseFields] (val x: Self) extends AnyVal {
       
       inline def setHandlers(value: PartialGenerator): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object libMod {
       __obj.asInstanceOf[BaseResultFields]
     }
     
-    extension [Self <: BaseResultFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseResultFields] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -244,7 +246,8 @@ object libMod {
       __obj.asInstanceOf[Handlers]
     }
     
-    extension [Self <: Handlers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Handlers] (val x: Self) extends AnyVal {
       
       inline def setArrayExpression(value: Handler): Self = StObject.set(x, "ArrayExpression", value.asInstanceOf[js.Any])
       
@@ -617,7 +620,8 @@ object libMod {
       __obj.asInstanceOf[Map]
     }
     
-    extension [Self <: Map](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Map] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -707,7 +711,8 @@ object libMod {
       __obj.asInstanceOf[ResultFieldsRegardlessOfSourceMapGenerator]
     }
     
-    extension [Self <: ResultFieldsRegardlessOfSourceMapGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultFieldsRegardlessOfSourceMapGenerator] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       
@@ -729,7 +734,8 @@ object libMod {
       __obj.asInstanceOf[ResultFieldsWithSourceMapGenerator]
     }
     
-    extension [Self <: ResultFieldsWithSourceMapGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultFieldsWithSourceMapGenerator] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Map): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
@@ -749,7 +755,8 @@ object libMod {
       __obj.asInstanceOf[ResultFieldsWithoutSourceMapGenerator]
     }
     
-    extension [Self <: ResultFieldsWithoutSourceMapGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultFieldsWithoutSourceMapGenerator] (val x: Self) extends AnyVal {
       
       inline def setMap(value: Unit): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
     }
@@ -811,7 +818,8 @@ object libMod {
       __obj.asInstanceOf[SourceMapFieldsWithSourceMapGenerator]
     }
     
-    extension [Self <: SourceMapFieldsWithSourceMapGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapFieldsWithSourceMapGenerator] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -841,7 +849,8 @@ object libMod {
       __obj.asInstanceOf[SourceMapFieldsWithoutSourceMapGenerator]
     }
     
-    extension [Self <: SourceMapFieldsWithoutSourceMapGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapFieldsWithoutSourceMapGenerator] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: Unit): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       

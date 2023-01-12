@@ -27,7 +27,8 @@ object TempFileNaming {
     __obj.asInstanceOf[TempFileNaming]
   }
   
-  extension [Self <: TempFileNaming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TempFileNaming] (val x: Self) extends AnyVal {
     
     inline def setPrefix(value: String): Self = StObject.set(x, "prefix", value.asInstanceOf[js.Any])
     

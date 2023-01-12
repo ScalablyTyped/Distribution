@@ -43,7 +43,8 @@ object Default {
     __obj.asInstanceOf[Default[Options, Server, TypeProvider]]
   }
   
-  extension [Self <: Default[?, ?, ?], Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */](x: Self & (Default[Options, Server, TypeProvider])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Default[?, ?, ?], Options /* <: FastifyPluginOptions */, Server /* <: RawServerBase */, TypeProvider /* <: FastifyTypeProvider */] (val x: Self & (Default[Options, Server, TypeProvider])) extends AnyVal {
     
     inline def setDefault(
       value: (/* instance */ FastifyInstance[

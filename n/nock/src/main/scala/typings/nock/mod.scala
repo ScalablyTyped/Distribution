@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[BackContext]
     }
     
-    extension [Self <: BackContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackContext] (val x: Self) extends AnyVal {
       
       inline def setAssertScopesFinished(value: () => Unit): Self = StObject.set(x, "assertScopesFinished", js.Any.fromFunction0(value))
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[BackOptions]
     }
     
-    extension [Self <: BackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: /* scope */ Scope => Unit): Self = StObject.set(x, "after", js.Any.fromFunction1(value))
       
@@ -269,7 +271,8 @@ object mod {
       __obj.asInstanceOf[Definition]
     }
     
-    extension [Self <: Definition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
       
       inline def setBody(value: RequestBodyMatcher): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -478,7 +481,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowUnmocked(value: Boolean): Self = StObject.set(x, "allowUnmocked", value.asInstanceOf[js.Any])
       
@@ -523,7 +527,8 @@ object mod {
       __obj.asInstanceOf[RecorderOptions]
     }
     
-    extension [Self <: RecorderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecorderOptions] (val x: Self) extends AnyVal {
       
       inline def setDont_print(value: Boolean): Self = StObject.set(x, "dont_print", value.asInstanceOf[js.Any])
       
@@ -596,7 +601,8 @@ object mod {
       __obj.asInstanceOf[ReqOptions]
     }
     
-    extension [Self <: ReqOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReqOptions] (val x: Self) extends AnyVal {
       
       inline def setProto(value: String): Self = StObject.set(x, "proto", value.asInstanceOf[js.Any])
       

@@ -55,7 +55,8 @@ object esAuthAuthenticatorsIamAuthenticatorMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setApikey(value: String): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
     }

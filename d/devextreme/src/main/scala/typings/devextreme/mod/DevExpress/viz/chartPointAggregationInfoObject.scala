@@ -33,7 +33,8 @@ object chartPointAggregationInfoObject {
     __obj.asInstanceOf[chartPointAggregationInfoObject]
   }
   
-  extension [Self <: chartPointAggregationInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: chartPointAggregationInfoObject] (val x: Self) extends AnyVal {
     
     inline def setAggregationInterval(value: Any): Self = StObject.set(x, "aggregationInterval", value.asInstanceOf[js.Any])
     

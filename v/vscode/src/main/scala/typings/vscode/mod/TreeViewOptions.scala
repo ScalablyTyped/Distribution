@@ -35,7 +35,8 @@ object TreeViewOptions {
     __obj.asInstanceOf[TreeViewOptions[T]]
   }
   
-  extension [Self <: TreeViewOptions[?], T](x: Self & TreeViewOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeViewOptions[?], T] (val x: Self & TreeViewOptions[T]) extends AnyVal {
     
     inline def setCanSelectMany(value: Boolean): Self = StObject.set(x, "canSelectMany", value.asInstanceOf[js.Any])
     

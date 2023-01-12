@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[ParsedPath]
     }
     
-    extension [Self <: ParsedPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedPath] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

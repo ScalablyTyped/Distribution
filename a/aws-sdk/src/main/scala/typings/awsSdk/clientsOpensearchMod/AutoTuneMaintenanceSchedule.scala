@@ -28,7 +28,8 @@ object AutoTuneMaintenanceSchedule {
     __obj.asInstanceOf[AutoTuneMaintenanceSchedule]
   }
   
-  extension [Self <: AutoTuneMaintenanceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTuneMaintenanceSchedule] (val x: Self) extends AnyVal {
     
     inline def setCronExpressionForRecurrence(value: String): Self = StObject.set(x, "CronExpressionForRecurrence", value.asInstanceOf[js.Any])
     

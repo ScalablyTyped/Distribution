@@ -94,7 +94,8 @@ object typesPutBucketPolicyInputMod {
       __obj.asInstanceOf[PutBucketPolicyInput]
     }
     
-    extension [Self <: PutBucketPolicyInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutBucketPolicyInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

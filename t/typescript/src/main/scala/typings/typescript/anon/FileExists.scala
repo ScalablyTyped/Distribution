@@ -26,7 +26,8 @@ object FileExists {
     __obj.asInstanceOf[FileExists]
   }
   
-  extension [Self <: FileExists](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileExists] (val x: Self) extends AnyVal {
     
     inline def setFileExists(value: String => Boolean): Self = StObject.set(x, "fileExists", js.Any.fromFunction1(value))
     

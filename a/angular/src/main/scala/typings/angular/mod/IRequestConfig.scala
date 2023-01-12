@@ -43,7 +43,8 @@ object IRequestConfig {
     __obj.asInstanceOf[IRequestConfig]
   }
   
-  extension [Self <: IRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setEventHandlers(value: StringDictionary[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventHandlers", value.asInstanceOf[js.Any])
     

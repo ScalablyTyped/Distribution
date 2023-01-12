@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[AriaLabelsShape]
     }
     
-    extension [Self <: AriaLabelsShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AriaLabelsShape] (val x: Self) extends AnyVal {
       
       inline def setDateInput(value: RangeKeyDict): Self = StObject.set(x, "dateInput", value.asInstanceOf[js.Any])
       
@@ -323,7 +324,8 @@ object mod {
       __obj.asInstanceOf[CalendarProps]
     }
     
-    extension [Self <: CalendarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabels(value: AriaLabelsShape): Self = StObject.set(x, "ariaLabels", value.asInstanceOf[js.Any])
       
@@ -622,7 +624,8 @@ object mod {
       __obj.asInstanceOf[ClassNames]
     }
     
-    extension [Self <: ClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNames] (val x: Self) extends AnyVal {
       
       inline def setCalendarWrapper(value: String): Self = StObject.set(x, "calendarWrapper", value.asInstanceOf[js.Any])
       
@@ -871,7 +874,8 @@ object mod {
       __obj.asInstanceOf[DateRangePickerProps]
     }
     
-    extension [Self <: DateRangePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangePickerProps] (val x: Self) extends AnyVal {
       
       inline def setFooterContent(value: ReactNode): Self = StObject.set(x, "footerContent", value.asInstanceOf[js.Any])
       
@@ -1017,7 +1021,8 @@ object mod {
       __obj.asInstanceOf[DateRangeProps]
     }
     
-    extension [Self <: DateRangeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateRangeProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabels(value: AriaLabelsShape): Self = StObject.set(x, "ariaLabels", value.asInstanceOf[js.Any])
       
@@ -1264,7 +1269,8 @@ object mod {
       __obj.asInstanceOf[DefinedRangeProps]
     }
     
-    extension [Self <: DefinedRangeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinedRangeProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1347,7 +1353,8 @@ object mod {
       __obj.asInstanceOf[Preview]
     }
     
-    extension [Self <: Preview](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Preview] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -1386,7 +1393,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -1443,7 +1451,8 @@ object mod {
       __obj.asInstanceOf[ScrollOptions]
     }
     
-    extension [Self <: ScrollOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOptions] (val x: Self) extends AnyVal {
       
       inline def setCalendarHeight(value: Double): Self = StObject.set(x, "calendarHeight", value.asInstanceOf[js.Any])
       

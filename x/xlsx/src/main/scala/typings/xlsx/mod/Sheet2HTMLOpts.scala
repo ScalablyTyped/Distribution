@@ -25,7 +25,8 @@ object Sheet2HTMLOpts {
     __obj.asInstanceOf[Sheet2HTMLOpts]
   }
   
-  extension [Self <: Sheet2HTMLOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sheet2HTMLOpts] (val x: Self) extends AnyVal {
     
     inline def setEditable(value: Boolean): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
     

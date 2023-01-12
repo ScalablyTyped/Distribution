@@ -20,7 +20,8 @@ object ForInStatement {
     __obj.asInstanceOf[ForInStatement]
   }
   
-  extension [Self <: ForInStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForInStatement] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.estree.estreeStrings.ForInStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

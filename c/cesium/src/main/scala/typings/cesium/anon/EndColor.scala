@@ -35,7 +35,8 @@ object EndColor {
     __obj.asInstanceOf[EndColor]
   }
   
-  extension [Self <: EndColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndColor] (val x: Self) extends AnyVal {
     
     inline def setEndColor(value: typings.cesium.mod.Color): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
     

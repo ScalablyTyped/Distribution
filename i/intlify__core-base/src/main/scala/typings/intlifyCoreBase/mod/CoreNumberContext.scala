@@ -17,7 +17,8 @@ object CoreNumberContext {
     __obj.asInstanceOf[CoreNumberContext[NumberFormats]]
   }
   
-  extension [Self <: CoreNumberContext[?], NumberFormats](x: Self & CoreNumberContext[NumberFormats]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNumberContext[?], NumberFormats] (val x: Self & CoreNumberContext[NumberFormats]) extends AnyVal {
     
     inline def setNumberFormats(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof NumberFormats ]: NumberFormats[K]} */ js.Any

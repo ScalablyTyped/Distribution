@@ -65,7 +65,8 @@ object libVictoryErrorbarMod {
       __obj.asInstanceOf[VictoryErrorBarProps]
     }
     
-    extension [Self <: VictoryErrorBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryErrorBarProps] (val x: Self) extends AnyVal {
       
       inline def setBorderWidth(value: Double): Self = StObject.set(x, "borderWidth", value.asInstanceOf[js.Any])
       

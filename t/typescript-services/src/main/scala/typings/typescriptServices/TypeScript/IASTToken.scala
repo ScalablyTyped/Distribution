@@ -42,7 +42,8 @@ object IASTToken {
     __obj.asInstanceOf[IASTToken]
   }
   
-  extension [Self <: IASTToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IASTToken] (val x: Self) extends AnyVal {
     
     inline def setText(value: () => String): Self = StObject.set(x, "text", js.Any.fromFunction0(value))
     

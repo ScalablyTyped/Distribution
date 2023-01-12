@@ -17,7 +17,8 @@ object JsHamcrest {
       __obj.asInstanceOf[BetweenBuilder]
     }
     
-    extension [Self <: BetweenBuilder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BetweenBuilder] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: Any => SimpleMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
     }
@@ -56,7 +57,8 @@ object JsHamcrest {
       __obj.asInstanceOf[CombinableMatcher]
     }
     
-    extension [Self <: CombinableMatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombinableMatcher] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: Any => CombinableMatcher): Self = StObject.set(x, "and", js.Any.fromFunction1(value))
       
@@ -146,7 +148,8 @@ object JsHamcrest {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Any => Description): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
       
@@ -185,7 +188,8 @@ object JsHamcrest {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def setDescribeValueTo(value: (/* value */ Any, /* description */ Description) => Unit): Self = StObject.set(x, "describeValueTo", js.Any.fromFunction2(value))
       
@@ -215,7 +219,8 @@ object JsHamcrest {
       __obj.asInstanceOf[MatcherConfig]
     }
     
-    extension [Self <: MatcherConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatcherConfig] (val x: Self) extends AnyVal {
       
       inline def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
       
@@ -258,7 +263,8 @@ object JsHamcrest {
         __obj.asInstanceOf[AssertOptions]
       }
       
-      extension [Self <: AssertOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AssertOptions] (val x: Self) extends AnyVal {
         
         inline def setFail(value: /* description */ String => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
         
@@ -288,7 +294,8 @@ object JsHamcrest {
       __obj.asInstanceOf[SelfDescribing]
     }
     
-    extension [Self <: SelfDescribing](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelfDescribing] (val x: Self) extends AnyVal {
       
       inline def setDescribeTo(value: /* description */ Description => Unit): Self = StObject.set(x, "describeTo", js.Any.fromFunction1(value))
     }

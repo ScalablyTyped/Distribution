@@ -33,7 +33,8 @@ object SearchDijkstraOptions {
     __obj.asInstanceOf[SearchDijkstraOptions]
   }
   
-  extension [Self <: SearchDijkstraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchDijkstraOptions] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

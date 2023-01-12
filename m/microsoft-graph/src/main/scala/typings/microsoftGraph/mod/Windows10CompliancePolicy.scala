@@ -75,7 +75,8 @@ object Windows10CompliancePolicy {
     __obj.asInstanceOf[Windows10CompliancePolicy]
   }
   
-  extension [Self <: Windows10CompliancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows10CompliancePolicy] (val x: Self) extends AnyVal {
     
     inline def setBitLockerEnabled(value: Boolean): Self = StObject.set(x, "bitLockerEnabled", value.asInstanceOf[js.Any])
     

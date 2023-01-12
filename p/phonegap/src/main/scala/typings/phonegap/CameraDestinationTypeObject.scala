@@ -17,7 +17,8 @@ object CameraDestinationTypeObject {
     __obj.asInstanceOf[CameraDestinationTypeObject]
   }
   
-  extension [Self <: CameraDestinationTypeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraDestinationTypeObject] (val x: Self) extends AnyVal {
     
     inline def setDATA_URL(value: Double): Self = StObject.set(x, "DATA_URL", value.asInstanceOf[js.Any])
     

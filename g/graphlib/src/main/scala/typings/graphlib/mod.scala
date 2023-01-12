@@ -629,7 +629,8 @@ object mod {
       __obj.asInstanceOf[Edge]
     }
     
-    extension [Self <: Edge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Edge] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -658,7 +659,8 @@ object mod {
       __obj.asInstanceOf[GraphOptions]
     }
     
-    extension [Self <: GraphOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphOptions] (val x: Self) extends AnyVal {
       
       inline def setCompound(value: Boolean): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
       
@@ -687,7 +689,8 @@ object mod {
       __obj.asInstanceOf[Path]
     }
     
-    extension [Self <: Path](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Path] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       

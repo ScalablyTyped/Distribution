@@ -23,7 +23,8 @@ object SearchFirstOptionsBase {
     __obj.asInstanceOf[SearchFirstOptionsBase]
   }
   
-  extension [Self <: SearchFirstOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchFirstOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setDirected(value: Boolean): Self = StObject.set(x, "directed", value.asInstanceOf[js.Any])
     

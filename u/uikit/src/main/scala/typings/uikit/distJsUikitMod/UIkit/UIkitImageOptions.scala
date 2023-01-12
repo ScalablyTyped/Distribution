@@ -29,7 +29,8 @@ object UIkitImageOptions {
     __obj.asInstanceOf[UIkitImageOptions]
   }
   
-  extension [Self <: UIkitImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitImageOptions] (val x: Self) extends AnyVal {
     
     inline def setDataSrc(value: String): Self = StObject.set(x, "dataSrc", value.asInstanceOf[js.Any])
     

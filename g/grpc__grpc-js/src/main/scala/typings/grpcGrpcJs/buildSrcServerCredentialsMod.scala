@@ -44,7 +44,8 @@ object buildSrcServerCredentialsMod {
       __obj.asInstanceOf[KeyCertPair]
     }
     
-    extension [Self <: KeyCertPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCertPair] (val x: Self) extends AnyVal {
       
       inline def setCert_chain(value: Buffer): Self = StObject.set(x, "cert_chain", value.asInstanceOf[js.Any])
       

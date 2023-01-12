@@ -16,7 +16,8 @@ object Geolocation {
     __obj.asInstanceOf[Geolocation]
   }
   
-  extension [Self <: Geolocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geolocation] (val x: Self) extends AnyVal {
     
     inline def setRegionCode(value: String): Self = StObject.set(x, "regionCode", value.asInstanceOf[js.Any])
     

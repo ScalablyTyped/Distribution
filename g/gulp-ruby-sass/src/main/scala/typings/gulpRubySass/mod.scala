@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBundleExec(value: Boolean): Self = StObject.set(x, "bundleExec", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object mod {
       __obj.asInstanceOf[SassOptions]
     }
     
-    extension [Self <: SassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SassOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheLocation(value: String): Self = StObject.set(x, "cacheLocation", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object OVRMultiview2 {
     __obj.asInstanceOf[OVRMultiview2]
   }
   
-  extension [Self <: OVRMultiview2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OVRMultiview2] (val x: Self) extends AnyVal {
     
     inline def setFRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR(value: Double): Self = StObject.set(x, "FRAMEBUFFER_ATTACHMENT_TEXTURE_BASE_VIEW_INDEX_OVR", value.asInstanceOf[js.Any])
     

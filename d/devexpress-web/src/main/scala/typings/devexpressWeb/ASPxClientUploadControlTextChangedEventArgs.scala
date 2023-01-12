@@ -23,7 +23,8 @@ object ASPxClientUploadControlTextChangedEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlTextChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlTextChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlTextChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setInputIndex(value: Double): Self = StObject.set(x, "inputIndex", value.asInstanceOf[js.Any])
   }

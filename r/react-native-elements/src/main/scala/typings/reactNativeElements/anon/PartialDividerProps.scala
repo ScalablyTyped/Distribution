@@ -190,7 +190,8 @@ object PartialDividerProps {
     __obj.asInstanceOf[PartialDividerProps]
   }
   
-  extension [Self <: PartialDividerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDividerProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PrintSubmitEvent {
     __obj.asInstanceOf[PrintSubmitEvent]
   }
   
-  extension [Self <: PrintSubmitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintSubmitEvent] (val x: Self) extends AnyVal {
     
     inline def setResults(value: PrintSubmitEventResults): Self = StObject.set(x, "results", value.asInstanceOf[js.Any])
   }

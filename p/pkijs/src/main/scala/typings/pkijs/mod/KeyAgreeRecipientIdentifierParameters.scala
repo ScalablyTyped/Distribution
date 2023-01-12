@@ -20,7 +20,8 @@ object KeyAgreeRecipientIdentifierParameters {
     __obj.asInstanceOf[KeyAgreeRecipientIdentifierParameters]
   }
   
-  extension [Self <: KeyAgreeRecipientIdentifierParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyAgreeRecipientIdentifierParameters] (val x: Self) extends AnyVal {
     
     inline def setSchema(value: SchemaType): Self = StObject.set(x, "schema", value.asInstanceOf[js.Any])
     

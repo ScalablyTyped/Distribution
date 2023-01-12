@@ -30,7 +30,8 @@ object CloudflareApps {
       __obj.asInstanceOf[App]
     }
     
-    extension [Self <: App](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: App] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object CloudflareApps {
       __obj.asInstanceOf[CloudflareAppsProxy]
     }
     
-    extension [Self <: CloudflareAppsProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloudflareAppsProxy] (val x: Self) extends AnyVal {
       
       inline def setEmbedSiteId(value: String): Self = StObject.set(x, "embedSiteId", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object CloudflareApps {
       __obj.asInstanceOf[ElementLocation]
     }
     
-    extension [Self <: ElementLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementLocation] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: before | prepend | append | after | replace): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object CloudflareApps {
       __obj.asInstanceOf[InstallProduct]
     }
     
-    extension [Self <: InstallProduct](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallProduct] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -144,7 +148,8 @@ object CloudflareApps {
       __obj.asInstanceOf[OriginalURL]
     }
     
-    extension [Self <: OriginalURL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalURL] (val x: Self) extends AnyVal {
       
       inline def setParsed(value: OriginalURLParsed): Self = StObject.set(x, "parsed", value.asInstanceOf[js.Any])
       
@@ -171,7 +176,8 @@ object CloudflareApps {
       __obj.asInstanceOf[OriginalURLParsed]
     }
     
-    extension [Self <: OriginalURLParsed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OriginalURLParsed] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: String): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       

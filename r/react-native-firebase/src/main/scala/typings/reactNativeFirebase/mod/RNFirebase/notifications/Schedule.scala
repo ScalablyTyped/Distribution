@@ -21,7 +21,8 @@ object Schedule {
     __obj.asInstanceOf[Schedule]
   }
   
-  extension [Self <: Schedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Schedule] (val x: Self) extends AnyVal {
     
     inline def setFireDate(value: Double): Self = StObject.set(x, "fireDate", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PresetsOptions {
     __obj.asInstanceOf[PresetsOptions]
   }
   
-  extension [Self <: PresetsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresetsOptions] (val x: Self) extends AnyVal {
     
     inline def setCorePresets(value: js.Array[String]): Self = StObject.set(x, "corePresets", value.asInstanceOf[js.Any])
     

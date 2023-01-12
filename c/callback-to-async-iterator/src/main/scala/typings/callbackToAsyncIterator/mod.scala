@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[AsyncifyOptions[T, R]]
     }
     
-    extension [Self <: AsyncifyOptions[?, ?], T, R](x: Self & (AsyncifyOptions[T, R])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncifyOptions[?, ?], T, R] (val x: Self & (AsyncifyOptions[T, R])) extends AnyVal {
       
       inline def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object TeamMemberSettings {
     __obj.asInstanceOf[TeamMemberSettings]
   }
   
-  extension [Self <: TeamMemberSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamMemberSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowAddRemoveApps(value: NullableOption[Boolean]): Self = StObject.set(x, "allowAddRemoveApps", value.asInstanceOf[js.Any])
     

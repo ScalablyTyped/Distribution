@@ -28,7 +28,8 @@ object BatchDescribeTypeConfigurationsOutput {
     __obj.asInstanceOf[BatchDescribeTypeConfigurationsOutput]
   }
   
-  extension [Self <: BatchDescribeTypeConfigurationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDescribeTypeConfigurationsOutput] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchDescribeTypeConfigurationsErrors): Self = StObject.set(x, "Errors", value.asInstanceOf[js.Any])
     

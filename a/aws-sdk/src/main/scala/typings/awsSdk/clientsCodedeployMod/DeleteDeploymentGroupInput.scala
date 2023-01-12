@@ -23,7 +23,8 @@ object DeleteDeploymentGroupInput {
     __obj.asInstanceOf[DeleteDeploymentGroupInput]
   }
   
-  extension [Self <: DeleteDeploymentGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDeploymentGroupInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

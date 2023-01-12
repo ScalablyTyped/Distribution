@@ -19,7 +19,8 @@ object Type {
     __obj.asInstanceOf[Type]
   }
   
-  extension [Self <: Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

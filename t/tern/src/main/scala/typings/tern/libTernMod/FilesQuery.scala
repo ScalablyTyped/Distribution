@@ -28,7 +28,8 @@ object FilesQuery {
     __obj.asInstanceOf[FilesQuery]
   }
   
-  extension [Self <: FilesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesQuery] (val x: Self) extends AnyVal {
     
     inline def setType(value: files): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

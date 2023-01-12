@@ -26,7 +26,8 @@ object Artifactid {
     __obj.asInstanceOf[Artifactid]
   }
   
-  extension [Self <: Artifactid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Artifactid] (val x: Self) extends AnyVal {
     
     inline def setArtifact_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['artifact-id'] */ js.Any

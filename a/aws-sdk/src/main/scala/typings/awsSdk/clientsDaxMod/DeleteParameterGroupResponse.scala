@@ -18,7 +18,8 @@ object DeleteParameterGroupResponse {
     __obj.asInstanceOf[DeleteParameterGroupResponse]
   }
   
-  extension [Self <: DeleteParameterGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParameterGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setDeletionMessage(value: String): Self = StObject.set(x, "DeletionMessage", value.asInstanceOf[js.Any])
     

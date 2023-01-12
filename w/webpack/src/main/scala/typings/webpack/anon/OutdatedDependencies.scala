@@ -38,7 +38,8 @@ object OutdatedDependencies {
     __obj.asInstanceOf[OutdatedDependencies]
   }
   
-  extension [Self <: OutdatedDependencies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutdatedDependencies] (val x: Self) extends AnyVal {
     
     inline def setChain(value: js.Array[Double]): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
     

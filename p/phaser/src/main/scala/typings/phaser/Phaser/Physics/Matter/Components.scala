@@ -30,7 +30,8 @@ object Components {
       __obj.asInstanceOf[Bounce]
     }
     
-    extension [Self <: Bounce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounce] (val x: Self) extends AnyVal {
       
       inline def setSetBounce(value: Double => GameObject): Self = StObject.set(x, "setBounce", js.Any.fromFunction1(value))
     }
@@ -171,7 +172,8 @@ object Components {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setApplyForce(value: Vector2 => GameObject): Self = StObject.set(x, "applyForce", js.Any.fromFunction1(value))
       
@@ -239,7 +241,8 @@ object Components {
       __obj.asInstanceOf[Gravity]
     }
     
-    extension [Self <: Gravity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gravity] (val x: Self) extends AnyVal {
       
       inline def setSetIgnoreGravity(value: Boolean => GameObject): Self = StObject.set(x, "setIgnoreGravity", js.Any.fromFunction1(value))
     }
@@ -278,7 +281,8 @@ object Components {
       __obj.asInstanceOf[Mass]
     }
     
-    extension [Self <: Mass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mass] (val x: Self) extends AnyVal {
       
       inline def setCenterOfMass(value: Vector2): Self = StObject.set(x, "centerOfMass", value.asInstanceOf[js.Any])
       
@@ -312,7 +316,8 @@ object Components {
       __obj.asInstanceOf[Sensor]
     }
     
-    extension [Self <: Sensor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sensor] (val x: Self) extends AnyVal {
       
       inline def setIsSensor(value: () => Boolean): Self = StObject.set(x, "isSensor", js.Any.fromFunction0(value))
       
@@ -469,7 +474,8 @@ object Components {
       __obj.asInstanceOf[Static]
     }
     
-    extension [Self <: Static](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
       
       inline def setIsStatic(value: () => Boolean): Self = StObject.set(x, "isStatic", js.Any.fromFunction0(value))
       

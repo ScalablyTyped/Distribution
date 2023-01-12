@@ -34,7 +34,8 @@ object LoaderCallbacks {
     __obj.asInstanceOf[LoaderCallbacks[T]]
   }
   
-  extension [Self <: LoaderCallbacks[?], T /* <: LoaderContext */](x: Self & LoaderCallbacks[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderCallbacks[?], T /* <: LoaderContext */] (val x: Self & LoaderCallbacks[T]) extends AnyVal {
     
     inline def setOnAbort(value: (/* stats */ LoaderStats, T, /* networkDetails */ Any) => Unit): Self = StObject.set(x, "onAbort", js.Any.fromFunction3(value))
     

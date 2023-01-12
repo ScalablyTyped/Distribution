@@ -21,7 +21,8 @@ object THeadCloseToken {
     __obj.asInstanceOf[THeadCloseToken]
   }
   
-  extension [Self <: THeadCloseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: THeadCloseToken] (val x: Self) extends AnyVal {
     
     inline def setType(value: thead_close): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

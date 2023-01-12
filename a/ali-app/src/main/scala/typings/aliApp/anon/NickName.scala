@@ -18,7 +18,8 @@ object NickName {
     __obj.asInstanceOf[NickName]
   }
   
-  extension [Self <: NickName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NickName] (val x: Self) extends AnyVal {
     
     inline def setAvatar(value: String): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
     

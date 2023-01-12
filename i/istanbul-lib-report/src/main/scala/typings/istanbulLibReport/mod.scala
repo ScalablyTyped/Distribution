@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[ContextOptions]
     }
     
-    extension [Self <: ContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextOptions] (val x: Self) extends AnyVal {
       
       inline def setCoverageMap(value: CoverageMap): Self = StObject.set(x, "coverageMap", value.asInstanceOf[js.Any])
       
@@ -208,7 +209,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setIsRoot(value: () => Boolean): Self = StObject.set(x, "isRoot", js.Any.fromFunction0(value))
       
@@ -227,7 +229,8 @@ object mod {
       __obj.asInstanceOf[ReportBaseOptions]
     }
     
-    extension [Self <: ReportBaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportBaseOptions] (val x: Self) extends AnyVal {
       
       inline def setSummarizer(value: Summarizers): Self = StObject.set(x, "summarizer", value.asInstanceOf[js.Any])
     }
@@ -285,7 +288,8 @@ object mod {
       __obj.asInstanceOf[ReportNode]
     }
     
-    extension [Self <: ReportNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportNode] (val x: Self) extends AnyVal {
       
       inline def setAddChild(value: ReportNode => Unit): Self = StObject.set(x, "addChild", js.Any.fromFunction1(value))
       
@@ -350,7 +354,8 @@ object mod {
       __obj.asInstanceOf[Tree[N]]
     }
     
-    extension [Self <: Tree[?], N /* <: Node */](x: Self & Tree[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tree[?], N /* <: Node */] (val x: Self & Tree[N]) extends AnyVal {
       
       inline def setGetRoot(value: () => N): Self = StObject.set(x, "getRoot", js.Any.fromFunction0(value))
       
@@ -383,7 +388,8 @@ object mod {
       __obj.asInstanceOf[Visitor[N]]
     }
     
-    extension [Self <: Visitor[?], N /* <: Node */](x: Self & Visitor[N]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Visitor[?], N /* <: Node */] (val x: Self & Visitor[N]) extends AnyVal {
       
       inline def setOnDetail(value: (N, Any) => Unit): Self = StObject.set(x, "onDetail", js.Any.fromFunction2(value))
       
@@ -416,7 +422,8 @@ object mod {
       __obj.asInstanceOf[Watermarks]
     }
     
-    extension [Self <: Watermarks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Watermarks] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Watermark): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       

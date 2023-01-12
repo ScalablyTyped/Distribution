@@ -27,7 +27,8 @@ object libComponentsDataTableTableExpandedRowMod extends Shortcut {
       __obj.asInstanceOf[TableExpandedRowProps]
     }
     
-    extension [Self <: TableExpandedRowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableExpandedRowProps] (val x: Self) extends AnyVal {
       
       inline def setColSpan(value: Double): Self = StObject.set(x, "colSpan", value.asInstanceOf[js.Any])
     }

@@ -74,7 +74,8 @@ object BootstrapPolarChartEventMap {
     __obj.asInstanceOf[BootstrapPolarChartEventMap]
   }
   
-  extension [Self <: BootstrapPolarChartEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BootstrapPolarChartEventMap] (val x: Self) extends AnyVal {
     
     inline def setArgumentAxisClick(value: BootstrapChartElementClickEventArgs): Self = StObject.set(x, "argumentAxisClick", value.asInstanceOf[js.Any])
     

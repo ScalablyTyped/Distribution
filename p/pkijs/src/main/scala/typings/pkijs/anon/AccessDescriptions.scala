@@ -15,7 +15,8 @@ object AccessDescriptions {
     __obj.asInstanceOf[AccessDescriptions]
   }
   
-  extension [Self <: AccessDescriptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessDescriptions] (val x: Self) extends AnyVal {
     
     inline def setAccessDescriptions(value: String): Self = StObject.set(x, "accessDescriptions", value.asInstanceOf[js.Any])
     

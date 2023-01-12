@@ -25,7 +25,8 @@ object State {
     __obj.asInstanceOf[State]
   }
   
-  extension [Self <: State](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
     
     inline def setAncestors(value: Any): Self = StObject.set(x, "ancestors", value.asInstanceOf[js.Any])
     

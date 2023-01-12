@@ -28,7 +28,8 @@ object PartialTextInputOptions {
     __obj.asInstanceOf[PartialTextInputOptions]
   }
   
-  extension [Self <: PartialTextInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTextInputOptions] (val x: Self) extends AnyVal {
     
     inline def setPasswordIsVisible(value: String): Self = StObject.set(x, "passwordIsVisible", value.asInstanceOf[js.Any])
     

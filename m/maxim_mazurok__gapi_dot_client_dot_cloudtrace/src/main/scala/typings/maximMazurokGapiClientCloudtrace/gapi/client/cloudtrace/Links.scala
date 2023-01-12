@@ -19,7 +19,8 @@ object Links {
     __obj.asInstanceOf[Links]
   }
   
-  extension [Self <: Links](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Links] (val x: Self) extends AnyVal {
     
     inline def setDroppedLinksCount(value: Double): Self = StObject.set(x, "droppedLinksCount", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object libCommonDocumentLinkMod {
       __obj.asInstanceOf[DocumentLinkMiddleware]
     }
     
-    extension [Self <: DocumentLinkMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentLinkMiddleware] (val x: Self) extends AnyVal {
       
       inline def setProvideDocumentLinks(
         value: js.ThisFunction3[

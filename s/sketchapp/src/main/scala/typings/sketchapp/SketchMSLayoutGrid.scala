@@ -55,7 +55,8 @@ object SketchMSLayoutGrid {
     __obj.asInstanceOf[SketchMSLayoutGrid]
   }
   
-  extension [Self <: SketchMSLayoutGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSLayoutGrid] (val x: Self) extends AnyVal {
     
     inline def setColumnWidth(value: Double): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Pg]
     }
     
-    extension [Self <: Pg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pg] (val x: Self) extends AnyVal {
       
       inline def setPg(value: Boolean): Self = StObject.set(x, "pg", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Sql[TParams]]
     }
     
-    extension [Self <: Sql[?], TParams /* <: js.Object */](x: Self & Sql[TParams]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sql[?], TParams /* <: js.Object */] (val x: Self & Sql[TParams]) extends AnyVal {
       
       inline def setSql(value: String): Self = StObject.set(x, "sql", value.asInstanceOf[js.Any])
       
@@ -89,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Text[TParams]]
     }
     
-    extension [Self <: Text[?], TParams /* <: js.Object */](x: Self & Text[TParams]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text[?], TParams /* <: js.Object */] (val x: Self & Text[TParams]) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       

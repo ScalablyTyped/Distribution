@@ -53,7 +53,8 @@ object CreateModelInput {
     __obj.asInstanceOf[CreateModelInput]
   }
   
-  extension [Self <: CreateModelInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelInput] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: ContainerDefinitionList): Self = StObject.set(x, "Containers", value.asInstanceOf[js.Any])
     

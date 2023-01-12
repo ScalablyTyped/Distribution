@@ -16,7 +16,8 @@ object ActivityContentDetailsLike {
     __obj.asInstanceOf[ActivityContentDetailsLike]
   }
   
-  extension [Self <: ActivityContentDetailsLike](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityContentDetailsLike] (val x: Self) extends AnyVal {
     
     inline def setResourceId(value: ResourceId): Self = StObject.set(x, "resourceId", value.asInstanceOf[js.Any])
     

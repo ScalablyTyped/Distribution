@@ -20,7 +20,8 @@ object ISearchControlParameters {
     __obj.asInstanceOf[ISearchControlParameters]
   }
   
-  extension [Self <: ISearchControlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchControlParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

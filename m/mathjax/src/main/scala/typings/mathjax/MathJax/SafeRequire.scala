@@ -55,7 +55,8 @@ object SafeRequire {
     __obj.asInstanceOf[SafeRequire]
   }
   
-  extension [Self <: SafeRequire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SafeRequire] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

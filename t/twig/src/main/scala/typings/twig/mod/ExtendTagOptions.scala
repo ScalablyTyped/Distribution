@@ -33,7 +33,8 @@ object ExtendTagOptions {
     __obj.asInstanceOf[ExtendTagOptions]
   }
   
-  extension [Self <: ExtendTagOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendTagOptions] (val x: Self) extends AnyVal {
     
     inline def setCompile(value: /* token */ TagToken => TagToken): Self = StObject.set(x, "compile", js.Any.fromFunction1(value))
     

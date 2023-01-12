@@ -33,7 +33,8 @@ object GetUsagePlanKeysRequest {
     __obj.asInstanceOf[GetUsagePlanKeysRequest]
   }
   
-  extension [Self <: GetUsagePlanKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsagePlanKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

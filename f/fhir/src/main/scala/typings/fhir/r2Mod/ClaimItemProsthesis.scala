@@ -34,7 +34,8 @@ object ClaimItemProsthesis {
     __obj.asInstanceOf[ClaimItemProsthesis]
   }
   
-  extension [Self <: ClaimItemProsthesis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimItemProsthesis] (val x: Self) extends AnyVal {
     
     inline def setInitial(value: Boolean): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

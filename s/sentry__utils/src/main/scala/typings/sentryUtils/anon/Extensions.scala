@@ -25,7 +25,8 @@ object Extensions {
     __obj.asInstanceOf[Extensions]
   }
   
-  extension [Self <: Extensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extensions] (val x: Self) extends AnyVal {
     
     inline def setExtensions(
       value: /** Extension methods for the hub, which are bound to the current Hub instance */

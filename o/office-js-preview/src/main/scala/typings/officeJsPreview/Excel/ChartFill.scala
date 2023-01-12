@@ -59,7 +59,8 @@ object ChartFill {
     __obj.asInstanceOf[ChartFill]
   }
   
-  extension [Self <: ChartFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartFill] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
     

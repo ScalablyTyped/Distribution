@@ -15,7 +15,8 @@ object EmbindEnumEntity {
     __obj.asInstanceOf[EmbindEnumEntity]
   }
   
-  extension [Self <: EmbindEnumEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbindEnumEntity] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

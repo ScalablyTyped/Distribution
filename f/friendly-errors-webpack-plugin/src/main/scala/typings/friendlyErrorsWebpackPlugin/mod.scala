@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[FriendlyErrorsWebpackPlugin]
     }
     
-    extension [Self <: FriendlyErrorsWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FriendlyErrorsWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -84,7 +85,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAdditionalFormatters(
         value: js.Array[
@@ -137,7 +139,8 @@ object mod {
       __obj.asInstanceOf[WebpackError]
     }
     
-    extension [Self <: WebpackError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackError] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

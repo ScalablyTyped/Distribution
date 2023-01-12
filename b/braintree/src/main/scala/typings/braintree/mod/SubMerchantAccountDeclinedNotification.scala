@@ -25,7 +25,8 @@ object SubMerchantAccountDeclinedNotification {
     __obj.asInstanceOf[SubMerchantAccountDeclinedNotification]
   }
   
-  extension [Self <: SubMerchantAccountDeclinedNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubMerchantAccountDeclinedNotification] (val x: Self) extends AnyVal {
     
     inline def setKind(value: SubMerchantAccountDeclinedNotificationKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

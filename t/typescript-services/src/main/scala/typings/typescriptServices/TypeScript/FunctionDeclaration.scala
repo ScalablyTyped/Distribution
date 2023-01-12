@@ -50,7 +50,8 @@ object FunctionDeclaration {
     __obj.asInstanceOf[FunctionDeclaration]
   }
   
-  extension [Self <: FunctionDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FunctionDeclaration] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

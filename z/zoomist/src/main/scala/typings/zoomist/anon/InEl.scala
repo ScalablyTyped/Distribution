@@ -21,7 +21,8 @@ object InEl {
     __obj.asInstanceOf[InEl]
   }
   
-  extension [Self <: InEl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InEl] (val x: Self) extends AnyVal {
     
     inline def setDisableOnBounds(value: Boolean): Self = StObject.set(x, "disableOnBounds", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object Style {
     __obj.asInstanceOf[Style[P]]
   }
   
-  extension [Self <: Style[?], P /* <: BaseProps */](x: Self & Style[P]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Style[?], P /* <: BaseProps */] (val x: Self & Style[P]) extends AnyVal {
     
     inline def setStyle(value: P): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
   }

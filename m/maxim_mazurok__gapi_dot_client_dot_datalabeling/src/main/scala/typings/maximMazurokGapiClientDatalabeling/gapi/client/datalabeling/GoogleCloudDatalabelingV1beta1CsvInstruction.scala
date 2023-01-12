@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1CsvInstruction {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CsvInstruction]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1CsvInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CsvInstruction] (val x: Self) extends AnyVal {
     
     inline def setGcsFileUri(value: String): Self = StObject.set(x, "gcsFileUri", value.asInstanceOf[js.Any])
     

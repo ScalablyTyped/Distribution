@@ -29,7 +29,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkChangeInfo]
     }
     
-    extension [Self <: BookmarkChangeInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkChangeInfo] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkChangesArg]
     }
     
-    extension [Self <: BookmarkChangesArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkChangesArg] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkCreateArg]
     }
     
-    extension [Self <: BookmarkCreateArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkCreateArg] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -121,7 +124,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkDestinationArg]
     }
     
-    extension [Self <: BookmarkDestinationArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkDestinationArg] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -154,7 +158,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkMoveInfo]
     }
     
-    extension [Self <: BookmarkMoveInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkMoveInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -183,7 +188,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkRemoveInfo]
     }
     
-    extension [Self <: BookmarkRemoveInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkRemoveInfo] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -206,7 +212,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkReorderInfo]
     }
     
-    extension [Self <: BookmarkReorderInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkReorderInfo] (val x: Self) extends AnyVal {
       
       inline def setChildIds(value: js.Array[String]): Self = StObject.set(x, "childIds", value.asInstanceOf[js.Any])
       
@@ -229,7 +236,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkSearchQuery]
     }
     
-    extension [Self <: BookmarkSearchQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkSearchQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -285,7 +293,8 @@ object bookmarks {
       __obj.asInstanceOf[BookmarkTreeNode]
     }
     
-    extension [Self <: BookmarkTreeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookmarkTreeNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[BookmarkTreeNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

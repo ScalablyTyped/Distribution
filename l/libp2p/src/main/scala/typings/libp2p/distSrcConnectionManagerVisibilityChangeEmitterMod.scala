@@ -62,7 +62,8 @@ object distSrcConnectionManagerVisibilityChangeEmitterMod {
       __obj.asInstanceOf[VisibilityChangeEmitterEvents]
     }
     
-    extension [Self <: VisibilityChangeEmitterEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibilityChangeEmitterEvents] (val x: Self) extends AnyVal {
       
       inline def setVisibilityChange(value: CustomEvent[Boolean]): Self = StObject.set(x, "visibilityChange", value.asInstanceOf[js.Any])
     }

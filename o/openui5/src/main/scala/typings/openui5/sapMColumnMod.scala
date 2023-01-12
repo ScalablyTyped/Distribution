@@ -991,7 +991,8 @@ object sapMColumnMod {
       __obj.asInstanceOf[ColumnSettings]
     }
     
-    extension [Self <: ColumnSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
       
       inline def setAutoPopinWidth(value: float | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "autoPopinWidth", value.asInstanceOf[js.Any])
       

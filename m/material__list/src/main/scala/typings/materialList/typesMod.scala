@@ -29,7 +29,8 @@ object typesMod {
       __obj.asInstanceOf[MDCListActionEventDetail]
     }
     
-    extension [Self <: MDCListActionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCListActionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object typesMod {
       __obj.asInstanceOf[MDCListSelectionChangeDetail]
     }
     
-    extension [Self <: MDCListSelectionChangeDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCListSelectionChangeDetail] (val x: Self) extends AnyVal {
       
       inline def setChangedIndices(value: js.Array[Double]): Self = StObject.set(x, "changedIndices", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object typesMod {
       __obj.asInstanceOf[MDCListTextAndIndex]
     }
     
-    extension [Self <: MDCListTextAndIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCListTextAndIndex] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

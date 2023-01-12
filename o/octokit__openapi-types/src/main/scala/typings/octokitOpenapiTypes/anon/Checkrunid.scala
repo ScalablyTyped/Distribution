@@ -26,7 +26,8 @@ object Checkrunid {
     __obj.asInstanceOf[Checkrunid]
   }
   
-  extension [Self <: Checkrunid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkrunid] (val x: Self) extends AnyVal {
     
     inline def setCheck_run_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['check-run-id'] */ js.Any

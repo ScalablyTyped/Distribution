@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[OmitOptionsclasses]
     }
     
-    extension [Self <: OmitOptionsclasses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitOptionsclasses] (val x: Self) extends AnyVal {
       
       inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -768,7 +769,8 @@ object anon {
       __obj.asInstanceOf[Typeoffigures]
     }
     
-    extension [Self <: Typeoffigures](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeoffigures] (val x: Self) extends AnyVal {
       
       inline def setAlmostEqual(value: String): Self = StObject.set(x, "almostEqual", value.asInstanceOf[js.Any])
       

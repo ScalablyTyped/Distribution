@@ -33,7 +33,8 @@ object MetadataProperties {
     __obj.asInstanceOf[MetadataProperties]
   }
   
-  extension [Self <: MetadataProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataProperties] (val x: Self) extends AnyVal {
     
     inline def setCommitId(value: MetadataPropertyValue): Self = StObject.set(x, "CommitId", value.asInstanceOf[js.Any])
     

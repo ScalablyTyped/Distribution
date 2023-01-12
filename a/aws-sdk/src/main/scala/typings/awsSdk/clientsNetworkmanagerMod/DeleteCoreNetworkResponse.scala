@@ -18,7 +18,8 @@ object DeleteCoreNetworkResponse {
     __obj.asInstanceOf[DeleteCoreNetworkResponse]
   }
   
-  extension [Self <: DeleteCoreNetworkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCoreNetworkResponse] (val x: Self) extends AnyVal {
     
     inline def setCoreNetwork(value: CoreNetwork): Self = StObject.set(x, "CoreNetwork", value.asInstanceOf[js.Any])
     

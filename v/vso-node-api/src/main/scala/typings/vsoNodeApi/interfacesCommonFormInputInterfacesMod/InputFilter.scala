@@ -18,7 +18,8 @@ object InputFilter {
     __obj.asInstanceOf[InputFilter]
   }
   
-  extension [Self <: InputFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputFilter] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: js.Array[InputFilterCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
     

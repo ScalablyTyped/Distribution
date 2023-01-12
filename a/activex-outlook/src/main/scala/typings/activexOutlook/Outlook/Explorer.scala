@@ -124,7 +124,8 @@ object Explorer {
     __obj.asInstanceOf[Explorer]
   }
   
-  extension [Self <: Explorer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Explorer] (val x: Self) extends AnyVal {
     
     inline def setAccountSelector(value: AccountSelector): Self = StObject.set(x, "AccountSelector", value.asInstanceOf[js.Any])
     

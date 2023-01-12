@@ -43,7 +43,8 @@ object typesGranteeMod {
       __obj.asInstanceOf[Grantee]
     }
     
-    extension [Self <: Grantee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grantee] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "DisplayName", value.asInstanceOf[js.Any])
       

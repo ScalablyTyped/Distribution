@@ -532,7 +532,8 @@ object SchedulerTemplates {
     __obj.asInstanceOf[SchedulerTemplates]
   }
   
-  extension [Self <: SchedulerTemplates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerTemplates] (val x: Self) extends AnyVal {
     
     inline def setAgenda_date(value: (js.Date, js.Date) => String): Self = StObject.set(x, "agenda_date", js.Any.fromFunction2(value))
     

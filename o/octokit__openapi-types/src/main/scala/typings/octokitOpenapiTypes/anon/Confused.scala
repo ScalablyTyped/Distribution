@@ -48,7 +48,8 @@ object Confused {
     __obj.asInstanceOf[Confused]
   }
   
-  extension [Self <: Confused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Confused] (val x: Self) extends AnyVal {
     
     inline def `set-1`(value: Double): Self = StObject.set(x, "-1", value.asInstanceOf[js.Any])
     

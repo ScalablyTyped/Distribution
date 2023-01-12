@@ -51,7 +51,8 @@ object XConversionPropertyType {
     __obj.asInstanceOf[XConversionPropertyType]
   }
   
-  extension [Self <: XConversionPropertyType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConversionPropertyType] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyType(value: (String, String) => Double): Self = StObject.set(x, "getPropertyType", js.Any.fromFunction2(value))
     

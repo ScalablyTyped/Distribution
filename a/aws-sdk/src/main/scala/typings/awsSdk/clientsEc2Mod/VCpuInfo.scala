@@ -38,7 +38,8 @@ object VCpuInfo {
     __obj.asInstanceOf[VCpuInfo]
   }
   
-  extension [Self <: VCpuInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VCpuInfo] (val x: Self) extends AnyVal {
     
     inline def setDefaultCores(value: CoreCount): Self = StObject.set(x, "DefaultCores", value.asInstanceOf[js.Any])
     

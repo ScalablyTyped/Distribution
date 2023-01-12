@@ -36,7 +36,8 @@ object distMenuSrcMenuContextMod {
       __obj.asInstanceOf[MenuContextType]
     }
     
-    extension [Self <: MenuContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuContextType] (val x: Self) extends AnyVal {
       
       inline def setOnSelect(value: (/* event */ SyntheticEvent[Element, Event], /* key */ String) => Unit): Self = StObject.set(x, "onSelect", js.Any.fromFunction2(value))
       

@@ -23,7 +23,8 @@ object DataEventType {
     __obj.asInstanceOf[DataEventType[MembershipCustom]]
   }
   
-  extension [Self <: DataEventType[?], MembershipCustom /* <: ObjectCustom */](x: Self & DataEventType[MembershipCustom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataEventType[?], MembershipCustom /* <: ObjectCustom */] (val x: Self & DataEventType[MembershipCustom]) extends AnyVal {
     
     inline def setData(value: Channel[MembershipCustom]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

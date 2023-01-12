@@ -33,7 +33,8 @@ object EditorImageBrowserMessages {
     __obj.asInstanceOf[EditorImageBrowserMessages]
   }
   
-  extension [Self <: EditorImageBrowserMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorImageBrowserMessages] (val x: Self) extends AnyVal {
     
     inline def setDeleteFile(value: String): Self = StObject.set(x, "deleteFile", value.asInstanceOf[js.Any])
     

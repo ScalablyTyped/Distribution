@@ -42,7 +42,8 @@ object TextTrackCueList {
     __obj.asInstanceOf[TextTrackCueList]
   }
   
-  extension [Self <: TextTrackCueList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextTrackCueList] (val x: Self) extends AnyVal {
     
     inline def setGetCueById(value: String => TextTrackCue): Self = StObject.set(x, "getCueById", js.Any.fromFunction1(value))
     
@@ -86,7 +87,8 @@ object TextTrackCueList {
       __obj.asInstanceOf[TextTrackCue]
     }
     
-    extension [Self <: TextTrackCue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextTrackCue] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object AadOauthTokenRequest {
     __obj.asInstanceOf[AadOauthTokenRequest]
   }
   
-  extension [Self <: AadOauthTokenRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AadOauthTokenRequest] (val x: Self) extends AnyVal {
     
     inline def setRefresh(value: Boolean): Self = StObject.set(x, "refresh", value.asInstanceOf[js.Any])
     

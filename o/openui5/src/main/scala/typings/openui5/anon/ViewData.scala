@@ -58,7 +58,8 @@ object ViewData {
     __obj.asInstanceOf[ViewData]
   }
   
-  extension [Self <: ViewData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewData] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[ClearFieldContextProps]
     }
     
-    extension [Self <: ClearFieldContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearFieldContextProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[FieldContextType]
     }
     
-    extension [Self <: FieldContextType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldContextType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[UseFieldInputPropsReturn]
     }
     
-    extension [Self <: UseFieldInputPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldInputPropsReturn] (val x: Self) extends AnyVal {
       
       inline def `setAria-describedby`(value: String): Self = StObject.set(x, "aria-describedby", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[UseFieldLabelPropsReturn]
     }
     
-    extension [Self <: UseFieldLabelPropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldLabelPropsReturn] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -262,7 +266,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[UseFieldLabelProps_]
     }
     
-    extension [Self <: UseFieldLabelProps_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldLabelProps_] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -289,7 +294,8 @@ object distFieldSrcFieldContextMod {
       __obj.asInstanceOf[UseFieldMessagePropsReturn]
     }
     
-    extension [Self <: UseFieldMessagePropsReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseFieldMessagePropsReturn] (val x: Self) extends AnyVal {
       
       inline def `setAria-live`(value: polite): Self = StObject.set(x, "aria-live", value.asInstanceOf[js.Any])
       

@@ -60,7 +60,8 @@ object libCoreInlineBlockMod {
       __obj.asInstanceOf[InlineBlock]
     }
     
-    extension [Self <: InlineBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlineBlock] (val x: Self) extends AnyVal {
       
       inline def setBeginIfPossible(value: (Any, Any) => Unit): Self = StObject.set(x, "beginIfPossible", js.Any.fromFunction2(value))
       

@@ -28,7 +28,8 @@ object capture {
       __obj.asInstanceOf[IAbstract]
     }
     
-    extension [Self <: IAbstract](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
       
       inline def setCaptureAudio(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
       
@@ -63,7 +64,8 @@ object capture {
       __obj.asInstanceOf[ISimulator]
     }
     
-    extension [Self <: ISimulator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISimulator] (val x: Self) extends AnyVal {
       
       inline def setCaptureAudio(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "captureAudio", js.Any.fromFunction1(value))
       

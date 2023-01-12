@@ -28,7 +28,8 @@ object ReplicateKeyResponse {
     __obj.asInstanceOf[ReplicateKeyResponse]
   }
   
-  extension [Self <: ReplicateKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicateKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicaKeyMetadata(value: KeyMetadata): Self = StObject.set(x, "ReplicaKeyMetadata", value.asInstanceOf[js.Any])
     

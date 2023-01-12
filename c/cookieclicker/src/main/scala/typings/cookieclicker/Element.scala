@@ -19,7 +19,8 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  extension [Self <: Element](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     inline def setGetBounds(value: () => DOMRect): Self = StObject.set(x, "getBounds", js.Any.fromFunction0(value))
   }

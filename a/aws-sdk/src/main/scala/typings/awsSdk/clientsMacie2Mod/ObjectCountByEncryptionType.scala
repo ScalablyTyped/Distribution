@@ -38,7 +38,8 @@ object ObjectCountByEncryptionType {
     __obj.asInstanceOf[ObjectCountByEncryptionType]
   }
   
-  extension [Self <: ObjectCountByEncryptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectCountByEncryptionType] (val x: Self) extends AnyVal {
     
     inline def setCustomerManaged(value: long): Self = StObject.set(x, "customerManaged", value.asInstanceOf[js.Any])
     

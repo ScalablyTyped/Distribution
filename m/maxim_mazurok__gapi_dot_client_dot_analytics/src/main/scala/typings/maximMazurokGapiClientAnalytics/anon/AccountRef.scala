@@ -23,7 +23,8 @@ object AccountRef {
     __obj.asInstanceOf[AccountRef]
   }
   
-  extension [Self <: AccountRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRef] (val x: Self) extends AnyVal {
     
     inline def setAccountRef(value: typings.maximMazurokGapiClientAnalytics.gapi.client.analytics.AccountRef): Self = StObject.set(x, "accountRef", value.asInstanceOf[js.Any])
     

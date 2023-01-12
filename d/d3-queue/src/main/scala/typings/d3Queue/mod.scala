@@ -69,7 +69,8 @@ object mod {
       __obj.asInstanceOf[Queue_]
     }
     
-    extension [Self <: Queue_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Queue_] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Queue_): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       

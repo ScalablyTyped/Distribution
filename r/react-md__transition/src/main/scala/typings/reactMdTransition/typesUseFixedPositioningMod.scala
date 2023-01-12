@@ -67,7 +67,8 @@ object typesUseFixedPositioningMod {
       __obj.asInstanceOf[FixedPositioningHookReturnValue[E]]
     }
     
-    extension [Self <: FixedPositioningHookReturnValue[?], E /* <: HTMLElement */](x: Self & FixedPositioningHookReturnValue[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedPositioningHookReturnValue[?], E /* <: HTMLElement */] (val x: Self & FixedPositioningHookReturnValue[E]) extends AnyVal {
       
       inline def setCallbacks(value: ReadonlyRequiredFixedPosi): Self = StObject.set(x, "callbacks", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object typesUseFixedPositioningMod {
       __obj.asInstanceOf[FixedPositioningOptions[FixedToElement, FixedElement]]
     }
     
-    extension [Self <: FixedPositioningOptions[?, ?], FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */](x: Self & (FixedPositioningOptions[FixedToElement, FixedElement])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedPositioningOptions[?, ?], FixedToElement /* <: HTMLElement */, FixedElement /* <: HTMLElement */] (val x: Self & (FixedPositioningOptions[FixedToElement, FixedElement])) extends AnyVal {
       
       inline def setFixedTo(value: RefObject[FixedToElement]): Self = StObject.set(x, "fixedTo", value.asInstanceOf[js.Any])
       

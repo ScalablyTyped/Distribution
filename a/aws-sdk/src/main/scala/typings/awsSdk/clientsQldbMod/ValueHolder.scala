@@ -18,7 +18,8 @@ object ValueHolder {
     __obj.asInstanceOf[ValueHolder]
   }
   
-  extension [Self <: ValueHolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueHolder] (val x: Self) extends AnyVal {
     
     inline def setIonText(value: IonText): Self = StObject.set(x, "IonText", value.asInstanceOf[js.Any])
     

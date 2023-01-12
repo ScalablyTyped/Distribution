@@ -16,7 +16,8 @@ object SendingEvent {
     __obj.asInstanceOf[SendingEvent]
   }
   
-  extension [Self <: SendingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendingEvent] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: OutgoingRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

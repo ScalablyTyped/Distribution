@@ -35,7 +35,8 @@ object OnGetPrevScrollableMonths {
     __obj.asInstanceOf[OnGetPrevScrollableMonths]
   }
   
-  extension [Self <: OnGetPrevScrollableMonths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnGetPrevScrollableMonths] (val x: Self) extends AnyVal {
     
     inline def setOnGetNextScrollableMonths(
       value: /* event */ js.UndefOr[(MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]] => Unit

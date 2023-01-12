@@ -40,7 +40,8 @@ object buildImportExpoModulesAutolinkingMod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setPlatform(value: ios | android | web): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])
       

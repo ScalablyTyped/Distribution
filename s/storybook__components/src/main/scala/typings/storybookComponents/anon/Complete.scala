@@ -17,7 +17,8 @@ object Complete {
     __obj.asInstanceOf[Complete]
   }
   
-  extension [Self <: Complete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Complete] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: Double): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     

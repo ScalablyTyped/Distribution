@@ -66,7 +66,8 @@ object Interception {
     __obj.asInstanceOf[Interception]
   }
   
-  extension [Self <: Interception](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interception] (val x: Self) extends AnyVal {
     
     inline def setBrowserRequestId(value: String): Self = StObject.set(x, "browserRequestId", value.asInstanceOf[js.Any])
     

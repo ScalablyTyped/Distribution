@@ -24,7 +24,8 @@ object IosCustomConfiguration {
     __obj.asInstanceOf[IosCustomConfiguration]
   }
   
-  extension [Self <: IosCustomConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosCustomConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: String): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

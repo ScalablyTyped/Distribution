@@ -19,7 +19,8 @@ object AxisConfigStyle {
     __obj.asInstanceOf[AxisConfigStyle]
   }
   
-  extension [Self <: AxisConfigStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisConfigStyle] (val x: Self) extends AnyVal {
     
     inline def setAxisConfigStyle(value: Any): Self = StObject.set(x, "axisConfigStyle", value.asInstanceOf[js.Any])
     

@@ -177,7 +177,8 @@ object Tab {
       __obj.asInstanceOf[AjaxBeforeLoadEventArgs]
     }
     
-    extension [Self <: AjaxBeforeLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxBeforeLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: HTMLElement): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -246,7 +247,8 @@ object Tab {
       __obj.asInstanceOf[AjaxErrorEventArgs]
     }
     
-    extension [Self <: AjaxErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -315,7 +317,8 @@ object Tab {
       __obj.asInstanceOf[AjaxLoadEventArgs]
     }
     
-    extension [Self <: AjaxLoadEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxLoadEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: HTMLElement): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -394,7 +397,8 @@ object Tab {
       __obj.asInstanceOf[typings.ejWebAll.ej.Tab.AjaxSettings]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Tab.AjaxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Tab.AjaxSettings] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -455,7 +459,8 @@ object Tab {
       __obj.asInstanceOf[AjaxSuccessEventArgs]
     }
     
-    extension [Self <: AjaxSuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxSuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -524,7 +529,8 @@ object Tab {
       __obj.asInstanceOf[BeforeActiveEventArgs]
     }
     
-    extension [Self <: BeforeActiveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeActiveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: HTMLElement): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -585,7 +591,8 @@ object Tab {
       __obj.asInstanceOf[BeforeItemRemoveEventArgs]
     }
     
-    extension [Self <: BeforeItemRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeItemRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -626,7 +633,8 @@ object Tab {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -663,7 +671,8 @@ object Tab {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -720,7 +729,8 @@ object Tab {
       __obj.asInstanceOf[ItemActiveEventArgs]
     }
     
-    extension [Self <: ItemActiveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemActiveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setActiveHeader(value: HTMLElement): Self = StObject.set(x, "activeHeader", value.asInstanceOf[js.Any])
       
@@ -785,7 +795,8 @@ object Tab {
       __obj.asInstanceOf[ItemAddEventArgs]
     }
     
-    extension [Self <: ItemAddEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemAddEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -834,7 +845,8 @@ object Tab {
       __obj.asInstanceOf[ItemRemoveEventArgs]
     }
     
-    extension [Self <: ItemRemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemRemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -1025,7 +1037,8 @@ object Tab {
       __obj.asInstanceOf[typings.ejWebAll.ej.Tab.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Tab.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Tab.Model] (val x: Self) extends AnyVal {
       
       inline def setAjaxBeforeLoad(value: /* e */ AjaxBeforeLoadEventArgs => Unit): Self = StObject.set(x, "ajaxBeforeLoad", js.Any.fromFunction1(value))
       

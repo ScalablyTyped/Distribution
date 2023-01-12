@@ -306,7 +306,8 @@ object mod {
         __obj.asInstanceOf[HTMLElementTagNameMap]
       }
       
-      extension [Self <: HTMLElementTagNameMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
         
         inline def `setAtom-text-editor`(value: TextEditorElement): Self = StObject.set(x, "atom-text-editor", value.asInstanceOf[js.Any])
       }
@@ -1014,7 +1015,8 @@ object mod {
       __obj.asInstanceOf[ConfigValues]
     }
     
-    extension [Self <: ConfigValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigValues] (val x: Self) extends AnyVal {
       
       inline def `setAutocomplete-plusDotautoActivationDelay`(value: Double): Self = StObject.set(x, "autocomplete-plus.autoActivationDelay", value.asInstanceOf[js.Any])
       
@@ -1642,7 +1644,8 @@ object mod {
         __obj.asInstanceOf[typings.atom.mod.atomAugmentingMod.ConfigValues]
       }
       
-      extension [Self <: typings.atom.mod.atomAugmentingMod.ConfigValues](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.atom.mod.atomAugmentingMod.ConfigValues] (val x: Self) extends AnyVal {
         
         inline def setCoreDotallowPendingPaneItems(value: Boolean): Self = StObject.set(x, "core.allowPendingPaneItems", value.asInstanceOf[js.Any])
         

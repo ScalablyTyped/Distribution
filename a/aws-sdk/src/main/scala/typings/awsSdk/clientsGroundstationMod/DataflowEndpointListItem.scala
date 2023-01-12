@@ -23,7 +23,8 @@ object DataflowEndpointListItem {
     __obj.asInstanceOf[DataflowEndpointListItem]
   }
   
-  extension [Self <: DataflowEndpointListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataflowEndpointListItem] (val x: Self) extends AnyVal {
     
     inline def setDataflowEndpointGroupArn(value: DataflowEndpointGroupArn): Self = StObject.set(x, "dataflowEndpointGroupArn", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ClassifierMetadata {
     __obj.asInstanceOf[ClassifierMetadata]
   }
   
-  extension [Self <: ClassifierMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifierMetadata] (val x: Self) extends AnyVal {
     
     inline def setEvaluationMetrics(value: ClassifierEvaluationMetrics): Self = StObject.set(x, "EvaluationMetrics", value.asInstanceOf[js.Any])
     

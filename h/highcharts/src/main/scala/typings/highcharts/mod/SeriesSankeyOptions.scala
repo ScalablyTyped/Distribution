@@ -104,7 +104,8 @@ object SeriesSankeyOptions {
     __obj.asInstanceOf[SeriesSankeyOptions]
   }
   
-  extension [Self <: SeriesSankeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesSankeyOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[(js.Array[String | Double]) | SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

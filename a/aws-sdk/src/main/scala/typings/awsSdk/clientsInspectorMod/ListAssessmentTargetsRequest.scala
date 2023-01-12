@@ -28,7 +28,8 @@ object ListAssessmentTargetsRequest {
     __obj.asInstanceOf[ListAssessmentTargetsRequest]
   }
   
-  extension [Self <: ListAssessmentTargetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssessmentTargetsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: AssessmentTargetFilter): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

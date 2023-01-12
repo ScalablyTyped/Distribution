@@ -18,7 +18,8 @@ object UrlRecord {
     __obj.asInstanceOf[UrlRecord]
   }
   
-  extension [Self <: UrlRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlRecord] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "Url", value.asInstanceOf[js.Any])
     

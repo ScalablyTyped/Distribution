@@ -21,7 +21,8 @@ object ChainExpression {
     __obj.asInstanceOf[ChainExpression]
   }
   
-  extension [Self <: ChainExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChainExpression] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: ChainElement): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

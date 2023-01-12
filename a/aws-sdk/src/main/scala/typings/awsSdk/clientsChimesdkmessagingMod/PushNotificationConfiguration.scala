@@ -28,7 +28,8 @@ object PushNotificationConfiguration {
     __obj.asInstanceOf[PushNotificationConfiguration]
   }
   
-  extension [Self <: PushNotificationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotificationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBody(value: PushNotificationBody): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

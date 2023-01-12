@@ -19,7 +19,8 @@ object SasPortalDpaMoveList {
     __obj.asInstanceOf[SasPortalDpaMoveList]
   }
   
-  extension [Self <: SasPortalDpaMoveList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalDpaMoveList] (val x: Self) extends AnyVal {
     
     inline def setDpaId(value: String): Self = StObject.set(x, "dpaId", value.asInstanceOf[js.Any])
     

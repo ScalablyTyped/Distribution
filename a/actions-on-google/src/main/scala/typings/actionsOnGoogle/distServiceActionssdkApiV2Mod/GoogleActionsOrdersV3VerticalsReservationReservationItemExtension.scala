@@ -68,7 +68,8 @@ object GoogleActionsOrdersV3VerticalsReservationReservationItemExtension {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsReservationReservationItemExtension]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsReservationReservationItemExtension] (val x: Self) extends AnyVal {
     
     inline def setConfirmationCode(value: String): Self = StObject.set(x, "confirmationCode", value.asInstanceOf[js.Any])
     

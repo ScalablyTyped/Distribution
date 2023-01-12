@@ -27,7 +27,8 @@ object NormalizedViewportProps {
     __obj.asInstanceOf[NormalizedViewportProps]
   }
   
-  extension [Self <: NormalizedViewportProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizedViewportProps] (val x: Self) extends AnyVal {
     
     inline def setBearing(value: Double): Self = StObject.set(x, "bearing", value.asInstanceOf[js.Any])
     

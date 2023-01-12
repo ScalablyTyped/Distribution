@@ -23,7 +23,8 @@ object ListKeysRequest {
     __obj.asInstanceOf[ListKeysRequest]
   }
   
-  extension [Self <: ListKeysRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKeysRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: LimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

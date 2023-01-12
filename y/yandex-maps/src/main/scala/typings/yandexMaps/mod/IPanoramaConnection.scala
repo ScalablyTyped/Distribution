@@ -15,7 +15,8 @@ object IPanoramaConnection {
     __obj.asInstanceOf[IPanoramaConnection]
   }
   
-  extension [Self <: IPanoramaConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaConnection] (val x: Self) extends AnyVal {
     
     inline def setGetConnectedPanorama(value: () => js.Promise[IPanorama]): Self = StObject.set(x, "getConnectedPanorama", js.Any.fromFunction0(value))
   }

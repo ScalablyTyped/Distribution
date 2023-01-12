@@ -20,7 +20,8 @@ object DataTableRowEditSaveParams {
     __obj.asInstanceOf[DataTableRowEditSaveParams]
   }
   
-  extension [Self <: DataTableRowEditSaveParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableRowEditSaveParams] (val x: Self) extends AnyVal {
     
     inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object UpdateWorkspaceRequest {
     __obj.asInstanceOf[UpdateWorkspaceRequest]
   }
   
-  extension [Self <: UpdateWorkspaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWorkspaceRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

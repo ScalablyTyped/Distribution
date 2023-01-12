@@ -19,7 +19,8 @@ object HttpApiEvent {
     __obj.asInstanceOf[HttpApiEvent]
   }
   
-  extension [Self <: HttpApiEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpApiEvent] (val x: Self) extends AnyVal {
     
     inline def setAuthorizer(value: NamedHttpApiEventAuthorizer | IdRefHttpApiEventAuthorizer): Self = StObject.set(x, "authorizer", value.asInstanceOf[js.Any])
     

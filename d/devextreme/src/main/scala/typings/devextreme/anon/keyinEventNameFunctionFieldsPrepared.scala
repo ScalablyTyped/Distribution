@@ -22,7 +22,8 @@ object keyinEventNameFunctionFieldsPrepared {
     __obj.asInstanceOf[keyinEventNameFunctionFieldsPrepared]
   }
   
-  extension [Self <: keyinEventNameFunctionFieldsPrepared](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinEventNameFunctionFieldsPrepared] (val x: Self) extends AnyVal {
     
     inline def setChanged(value: js.Function): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
     

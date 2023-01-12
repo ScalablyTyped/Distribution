@@ -32,7 +32,8 @@ object Twitter {
     __obj.asInstanceOf[Twitter]
   }
   
-  extension [Self <: Twitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Twitter] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: TwitterEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object WorkerStatus {
     __obj.asInstanceOf[WorkerStatus]
   }
   
-  extension [Self <: WorkerStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerStatus] (val x: Self) extends AnyVal {
     
     inline def setAttachedDisks(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.genomics.gapi.client.genomics.DiskStatus} */ js.Any

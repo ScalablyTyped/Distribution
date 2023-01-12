@@ -17,7 +17,8 @@ object ExtensionAuthorization {
     __obj.asInstanceOf[ExtensionAuthorization]
   }
   
-  extension [Self <: ExtensionAuthorization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionAuthorization] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

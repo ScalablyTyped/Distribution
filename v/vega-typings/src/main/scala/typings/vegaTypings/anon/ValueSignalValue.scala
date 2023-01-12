@@ -19,7 +19,8 @@ object ValueSignalValue {
     __obj.asInstanceOf[ValueSignalValue]
   }
   
-  extension [Self <: ValueSignalValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueSignalValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: SignalValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

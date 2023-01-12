@@ -68,7 +68,8 @@ object S3ObjectMetadata {
     __obj.asInstanceOf[S3ObjectMetadata]
   }
   
-  extension [Self <: S3ObjectMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ObjectMetadata] (val x: Self) extends AnyVal {
     
     inline def setCacheControl(value: NonEmptyMaxLength1024String): Self = StObject.set(x, "CacheControl", value.asInstanceOf[js.Any])
     

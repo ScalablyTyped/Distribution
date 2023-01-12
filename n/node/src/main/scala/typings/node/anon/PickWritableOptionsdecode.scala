@@ -23,7 +23,8 @@ object PickWritableOptionsdecode {
     __obj.asInstanceOf[PickWritableOptionsdecode]
   }
   
-  extension [Self <: PickWritableOptionsdecode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickWritableOptionsdecode] (val x: Self) extends AnyVal {
     
     inline def setDecodeStrings(value: Boolean): Self = StObject.set(x, "decodeStrings", value.asInstanceOf[js.Any])
     

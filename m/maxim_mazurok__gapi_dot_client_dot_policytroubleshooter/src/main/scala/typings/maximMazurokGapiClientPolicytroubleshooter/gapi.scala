@@ -40,7 +40,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1AccessTuple]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1AccessTuple](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1AccessTuple] (val x: Self) extends AnyVal {
           
           inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
           
@@ -105,7 +106,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanation]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1BindingExplanation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1BindingExplanation] (val x: Self) extends AnyVal {
           
           inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
@@ -154,7 +156,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1BindingExplanationAnnotatedMembership] (val x: Self) extends AnyVal {
           
           inline def setMembership(value: String): Self = StObject.set(x, "membership", value.asInstanceOf[js.Any])
           
@@ -204,7 +207,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1ExplainedPolicy]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1ExplainedPolicy](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1ExplainedPolicy] (val x: Self) extends AnyVal {
           
           inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
@@ -242,7 +246,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyRequest] (val x: Self) extends AnyVal {
           
           inline def setAccessTuple(value: GoogleCloudPolicytroubleshooterV1AccessTuple): Self = StObject.set(x, "accessTuple", value.asInstanceOf[js.Any])
           
@@ -272,7 +277,8 @@ object gapi {
           __obj.asInstanceOf[GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse]
         }
         
-        extension [Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleCloudPolicytroubleshooterV1TroubleshootIamPolicyResponse] (val x: Self) extends AnyVal {
           
           inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
           
@@ -310,7 +316,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIamV1AuditConfig]
         }
         
-        extension [Self <: GoogleIamV1AuditConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIamV1AuditConfig] (val x: Self) extends AnyVal {
           
           inline def setAuditLogConfigs(value: js.Array[GoogleIamV1AuditLogConfig]): Self = StObject.set(x, "auditLogConfigs", value.asInstanceOf[js.Any])
           
@@ -339,7 +346,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIamV1AuditLogConfig]
         }
         
-        extension [Self <: GoogleIamV1AuditLogConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIamV1AuditLogConfig] (val x: Self) extends AnyVal {
           
           inline def setExemptedMembers(value: js.Array[String]): Self = StObject.set(x, "exemptedMembers", value.asInstanceOf[js.Any])
           
@@ -389,7 +397,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIamV1Binding]
         }
         
-        extension [Self <: GoogleIamV1Binding](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIamV1Binding] (val x: Self) extends AnyVal {
           
           inline def setCondition(value: GoogleTypeExpr): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
           
@@ -446,7 +455,8 @@ object gapi {
           __obj.asInstanceOf[GoogleIamV1Policy]
         }
         
-        extension [Self <: GoogleIamV1Policy](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleIamV1Policy] (val x: Self) extends AnyVal {
           
           inline def setAuditConfigs(value: js.Array[GoogleIamV1AuditConfig]): Self = StObject.set(x, "auditConfigs", value.asInstanceOf[js.Any])
           
@@ -495,7 +505,8 @@ object gapi {
           __obj.asInstanceOf[GoogleRpcStatus]
         }
         
-        extension [Self <: GoogleRpcStatus](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleRpcStatus] (val x: Self) extends AnyVal {
           
           inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
@@ -540,7 +551,8 @@ object gapi {
           __obj.asInstanceOf[GoogleTypeExpr]
         }
         
-        extension [Self <: GoogleTypeExpr](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: GoogleTypeExpr] (val x: Self) extends AnyVal {
           
           inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
           

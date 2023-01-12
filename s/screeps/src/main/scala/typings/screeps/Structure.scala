@@ -72,7 +72,8 @@ object Structure {
     __obj.asInstanceOf[Structure[T]]
   }
   
-  extension [Self <: Structure[?], T /* <: StructureConstant */](x: Self & Structure[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Structure[?], T /* <: StructureConstant */] (val x: Self & Structure[T]) extends AnyVal {
     
     inline def setDestroy(value: () => ScreepsReturnCode): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

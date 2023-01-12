@@ -19,7 +19,8 @@ object GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValu
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1WebhookRequestIntentInfoIntentParameterValue] (val x: Self) extends AnyVal {
     
     inline def setOriginalValue(value: String): Self = StObject.set(x, "originalValue", value.asInstanceOf[js.Any])
     

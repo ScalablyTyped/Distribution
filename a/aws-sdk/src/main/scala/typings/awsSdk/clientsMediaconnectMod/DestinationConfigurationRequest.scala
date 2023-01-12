@@ -28,7 +28,8 @@ object DestinationConfigurationRequest {
     __obj.asInstanceOf[DestinationConfigurationRequest]
   }
   
-  extension [Self <: DestinationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationIp(value: string): Self = StObject.set(x, "DestinationIp", value.asInstanceOf[js.Any])
     

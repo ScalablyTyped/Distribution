@@ -18,7 +18,8 @@ object PropertyNameQuery {
     __obj.asInstanceOf[PropertyNameQuery]
   }
   
-  extension [Self <: PropertyNameQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyNameQuery] (val x: Self) extends AnyVal {
     
     inline def setPropertyNameHint(value: PropertyNameHint): Self = StObject.set(x, "PropertyNameHint", value.asInstanceOf[js.Any])
   }

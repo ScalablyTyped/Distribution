@@ -618,7 +618,8 @@ object paginationPaginationMod {
       __obj.asInstanceOf[PaginationProps]
     }
     
-    extension [Self <: PaginationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1432,7 +1433,8 @@ object paginationPaginationMod {
       __obj.asInstanceOf[PaginationRenderItemParams]
     }
     
-    extension [Self <: PaginationRenderItemParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationRenderItemParams] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | secondary | standard): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object WorkloadShare {
     __obj.asInstanceOf[WorkloadShare]
   }
   
-  extension [Self <: WorkloadShare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkloadShare] (val x: Self) extends AnyVal {
     
     inline def setPermissionType(value: PermissionType): Self = StObject.set(x, "PermissionType", value.asInstanceOf[js.Any])
     

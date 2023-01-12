@@ -41,7 +41,8 @@ object UpdateClusterKafkaVersionRequest {
     __obj.asInstanceOf[UpdateClusterKafkaVersionRequest]
   }
   
-  extension [Self <: UpdateClusterKafkaVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateClusterKafkaVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

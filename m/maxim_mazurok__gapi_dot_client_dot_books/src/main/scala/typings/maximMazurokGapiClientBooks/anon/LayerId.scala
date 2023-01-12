@@ -23,7 +23,8 @@ object LayerId {
     __obj.asInstanceOf[LayerId]
   }
   
-  extension [Self <: LayerId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerId] (val x: Self) extends AnyVal {
     
     inline def setAllowedCharacterCount(value: Double): Self = StObject.set(x, "allowedCharacterCount", value.asInstanceOf[js.Any])
     

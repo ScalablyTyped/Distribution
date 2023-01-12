@@ -18,7 +18,8 @@ object DeleteVolumeOutput {
     __obj.asInstanceOf[DeleteVolumeOutput]
   }
   
-  extension [Self <: DeleteVolumeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVolumeOutput] (val x: Self) extends AnyVal {
     
     inline def setVolumeARN(value: VolumeARN): Self = StObject.set(x, "VolumeARN", value.asInstanceOf[js.Any])
     

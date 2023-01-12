@@ -66,7 +66,8 @@ object libModalModalViewMod {
       __obj.asInstanceOf[IModalPropTypes]
     }
     
-    extension [Self <: IModalPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModalPropTypes] (val x: Self) extends AnyVal {
       
       inline def setAnimateAppear(value: Boolean): Self = StObject.set(x, "animateAppear", value.asInstanceOf[js.Any])
       

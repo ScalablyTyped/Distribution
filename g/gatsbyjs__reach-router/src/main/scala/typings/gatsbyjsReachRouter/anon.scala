@@ -115,7 +115,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyLocationProps]
     }
     
-    extension [Self <: ReadonlyLocationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyLocationProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: LocationContext => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }
@@ -135,7 +136,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyLocationProviderP]
     }
     
-    extension [Self <: ReadonlyLocationProviderP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyLocationProviderP] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode | LocationProviderRenderFn): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -735,7 +737,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyRouterPropsHTMLPr]
     }
     
-    extension [Self <: ReadonlyRouterPropsHTMLPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyRouterPropsHTMLPr] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1903,7 +1906,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyServerLocationPro]
     }
     
-    extension [Self <: ReadonlyServerLocationPro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyServerLocationPro] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

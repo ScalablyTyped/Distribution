@@ -143,7 +143,8 @@ object ContainerDetail {
     __obj.asInstanceOf[ContainerDetail]
   }
   
-  extension [Self <: ContainerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerDetail] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: StringList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

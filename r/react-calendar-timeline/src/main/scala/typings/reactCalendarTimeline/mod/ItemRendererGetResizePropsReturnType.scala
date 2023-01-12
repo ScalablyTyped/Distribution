@@ -18,7 +18,8 @@ object ItemRendererGetResizePropsReturnType {
     __obj.asInstanceOf[ItemRendererGetResizePropsReturnType]
   }
   
-  extension [Self <: ItemRendererGetResizePropsReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemRendererGetResizePropsReturnType] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: ClassName): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

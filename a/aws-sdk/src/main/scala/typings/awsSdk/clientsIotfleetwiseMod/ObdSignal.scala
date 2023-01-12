@@ -66,7 +66,8 @@ object ObdSignal {
     __obj.asInstanceOf[ObdSignal]
   }
   
-  extension [Self <: ObdSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObdSignal] (val x: Self) extends AnyVal {
     
     inline def setBitMaskLength(value: ObdBitmaskLength): Self = StObject.set(x, "bitMaskLength", value.asInstanceOf[js.Any])
     

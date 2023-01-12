@@ -597,7 +597,8 @@ object Witness {
     __obj.asInstanceOf[Witness]
   }
   
-  extension [Self <: Witness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Witness] (val x: Self) extends AnyVal {
     
     inline def setAccessCode(value: String): Self = StObject.set(x, "accessCode", value.asInstanceOf[js.Any])
     

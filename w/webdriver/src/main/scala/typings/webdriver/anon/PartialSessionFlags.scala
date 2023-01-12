@@ -32,7 +32,8 @@ object PartialSessionFlags {
     __obj.asInstanceOf[PartialSessionFlags]
   }
   
-  extension [Self <: PartialSessionFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSessionFlags] (val x: Self) extends AnyVal {
     
     inline def setIsAndroid(value: Boolean): Self = StObject.set(x, "isAndroid", value.asInstanceOf[js.Any])
     

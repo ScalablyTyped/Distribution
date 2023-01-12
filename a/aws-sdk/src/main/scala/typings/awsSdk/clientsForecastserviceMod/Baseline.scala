@@ -18,7 +18,8 @@ object Baseline {
     __obj.asInstanceOf[Baseline]
   }
   
-  extension [Self <: Baseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Baseline] (val x: Self) extends AnyVal {
     
     inline def setPredictorBaseline(value: PredictorBaseline): Self = StObject.set(x, "PredictorBaseline", value.asInstanceOf[js.Any])
     

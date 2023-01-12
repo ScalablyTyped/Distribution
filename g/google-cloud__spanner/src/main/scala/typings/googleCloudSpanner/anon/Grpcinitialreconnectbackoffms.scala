@@ -29,7 +29,8 @@ object Grpcinitialreconnectbackoffms {
     __obj.asInstanceOf[Grpcinitialreconnectbackoffms]
   }
   
-  extension [Self <: Grpcinitialreconnectbackoffms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grpcinitialreconnectbackoffms] (val x: Self) extends AnyVal {
     
     inline def setGrpcDotinitial_reconnect_backoff_ms(value: Double): Self = StObject.set(x, "grpc.initial_reconnect_backoff_ms", value.asInstanceOf[js.Any])
     

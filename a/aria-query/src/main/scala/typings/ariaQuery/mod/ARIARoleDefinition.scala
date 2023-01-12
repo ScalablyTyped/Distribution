@@ -51,7 +51,8 @@ object ARIARoleDefinition {
     __obj.asInstanceOf[ARIARoleDefinition]
   }
   
-  extension [Self <: ARIARoleDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARIARoleDefinition] (val x: Self) extends AnyVal {
     
     inline def setAbstract(value: Boolean): Self = StObject.set(x, "abstract", value.asInstanceOf[js.Any])
     

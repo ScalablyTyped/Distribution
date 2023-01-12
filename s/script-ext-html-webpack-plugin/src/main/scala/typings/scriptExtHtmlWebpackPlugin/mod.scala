@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[Custom]
     }
     
-    extension [Self <: Custom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Custom] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: ScriptMatchingPattern): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[ScriptExtHtmlWebpackPlugin]
     }
     
-    extension [Self <: ScriptExtHtmlWebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptExtHtmlWebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }
@@ -195,7 +198,8 @@ object mod {
       __obj.asInstanceOf[ScriptMatchingPatternHash]
     }
     
-    extension [Self <: ScriptMatchingPatternHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptMatchingPatternHash] (val x: Self) extends AnyVal {
       
       inline def setTest(value: ScriptMatchingPatternBase): Self = StObject.set(x, "test", value.asInstanceOf[js.Any])
       

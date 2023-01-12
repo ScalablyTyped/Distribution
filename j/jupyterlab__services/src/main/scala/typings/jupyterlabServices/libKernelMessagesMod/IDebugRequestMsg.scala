@@ -27,7 +27,8 @@ object IDebugRequestMsg {
     __obj.asInstanceOf[IDebugRequestMsg]
   }
   
-  extension [Self <: IDebugRequestMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDebugRequestMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Arguments): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

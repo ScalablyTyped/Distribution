@@ -32,7 +32,8 @@ object BackingStore {
     __obj.asInstanceOf[BackingStore]
   }
   
-  extension [Self <: BackingStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackingStore] (val x: Self) extends AnyVal {
     
     inline def setBackingStore(value: IntentBackingStore): Self = StObject.set(x, "backingStore", value.asInstanceOf[js.Any])
     

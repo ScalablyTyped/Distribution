@@ -94,7 +94,8 @@ object DatabaseNumberOfSet {
     __obj.asInstanceOf[DatabaseNumberOfSet]
   }
   
-  extension [Self <: DatabaseNumberOfSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseNumberOfSet] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

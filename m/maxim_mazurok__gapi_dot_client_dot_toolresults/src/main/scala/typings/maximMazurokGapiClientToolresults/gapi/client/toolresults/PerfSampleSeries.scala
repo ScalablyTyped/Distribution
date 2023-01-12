@@ -31,7 +31,8 @@ object PerfSampleSeries {
     __obj.asInstanceOf[PerfSampleSeries]
   }
   
-  extension [Self <: PerfSampleSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerfSampleSeries] (val x: Self) extends AnyVal {
     
     inline def setBasicPerfSampleSeries(value: BasicPerfSampleSeries): Self = StObject.set(x, "basicPerfSampleSeries", value.asInstanceOf[js.Any])
     

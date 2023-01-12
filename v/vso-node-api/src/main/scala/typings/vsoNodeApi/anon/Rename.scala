@@ -29,7 +29,8 @@ object Rename {
     __obj.asInstanceOf[Rename]
   }
   
-  extension [Self <: Rename](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rename] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: scala.Double): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

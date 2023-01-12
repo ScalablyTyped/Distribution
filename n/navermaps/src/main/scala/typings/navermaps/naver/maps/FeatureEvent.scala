@@ -18,7 +18,8 @@ object FeatureEvent {
     __obj.asInstanceOf[FeatureEvent]
   }
   
-  extension [Self <: FeatureEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureEvent] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
   }

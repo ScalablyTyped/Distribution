@@ -27,7 +27,8 @@ object SoftPhoneOptions {
     __obj.asInstanceOf[SoftPhoneOptions]
   }
   
-  extension [Self <: SoftPhoneOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftPhoneOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFramedSoftphone(value: Boolean): Self = StObject.set(x, "allowFramedSoftphone", value.asInstanceOf[js.Any])
     

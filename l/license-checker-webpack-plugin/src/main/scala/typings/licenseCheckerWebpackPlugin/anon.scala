@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[PartialDependency]
     }
     
-    extension [Self <: PartialDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDependency] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllow(value: String): Self = StObject.set(x, "allow", value.asInstanceOf[js.Any])
       

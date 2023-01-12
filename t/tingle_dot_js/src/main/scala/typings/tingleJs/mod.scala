@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBeforeClose(value: js.ThisFunction0[/* this */ modal, js.UndefOr[Boolean]]): Self = StObject.set(x, "beforeClose", value.asInstanceOf[js.Any])
       

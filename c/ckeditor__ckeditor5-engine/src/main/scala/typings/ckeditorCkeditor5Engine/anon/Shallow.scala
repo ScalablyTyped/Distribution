@@ -30,7 +30,8 @@ object Shallow {
     __obj.asInstanceOf[Shallow]
   }
   
-  extension [Self <: Shallow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shallow] (val x: Self) extends AnyVal {
     
     inline def setBoundaries(value: default): Self = StObject.set(x, "boundaries", value.asInstanceOf[js.Any])
     

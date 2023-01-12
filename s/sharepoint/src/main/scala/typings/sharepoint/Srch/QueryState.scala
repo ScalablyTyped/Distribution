@@ -19,7 +19,8 @@ object QueryState {
     __obj.asInstanceOf[QueryState]
   }
   
-  extension [Self <: QueryState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryState] (val x: Self) extends AnyVal {
     
     inline def setE(value: Double): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
     

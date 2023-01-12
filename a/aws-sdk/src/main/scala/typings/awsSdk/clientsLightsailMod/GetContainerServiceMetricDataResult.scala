@@ -23,7 +23,8 @@ object GetContainerServiceMetricDataResult {
     __obj.asInstanceOf[GetContainerServiceMetricDataResult]
   }
   
-  extension [Self <: GetContainerServiceMetricDataResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerServiceMetricDataResult] (val x: Self) extends AnyVal {
     
     inline def setMetricData(value: MetricDatapointList): Self = StObject.set(x, "metricData", value.asInstanceOf[js.Any])
     

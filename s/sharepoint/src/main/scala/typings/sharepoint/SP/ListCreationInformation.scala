@@ -75,7 +75,8 @@ object ListCreationInformation {
     __obj.asInstanceOf[ListCreationInformation]
   }
   
-  extension [Self <: ListCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_customSchemaXml(value: () => String): Self = StObject.set(x, "get_customSchemaXml", js.Any.fromFunction0(value))
     

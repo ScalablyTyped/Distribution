@@ -85,7 +85,8 @@ object mod {
       __obj.asInstanceOf[ProgressBar]
     }
     
-    extension [Self <: ProgressBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBar] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -136,7 +137,8 @@ object mod {
       __obj.asInstanceOf[ProgressBarOptions]
     }
     
-    extension [Self <: ProgressBarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressBarOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortOnError(value: Boolean): Self = StObject.set(x, "abortOnError", value.asInstanceOf[js.Any])
       
@@ -197,7 +199,8 @@ object mod {
       __obj.asInstanceOf[StyleOptions]
     }
     
-    extension [Self <: StyleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleOptions] (val x: Self) extends AnyVal {
       
       inline def setBar(value: js.Object): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
       

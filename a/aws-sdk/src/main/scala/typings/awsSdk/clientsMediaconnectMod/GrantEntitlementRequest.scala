@@ -43,7 +43,8 @@ object GrantEntitlementRequest {
     __obj.asInstanceOf[GrantEntitlementRequest]
   }
   
-  extension [Self <: GrantEntitlementRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantEntitlementRequest] (val x: Self) extends AnyVal {
     
     inline def setDataTransferSubscriberFeePercent(value: integer): Self = StObject.set(x, "DataTransferSubscriberFeePercent", value.asInstanceOf[js.Any])
     

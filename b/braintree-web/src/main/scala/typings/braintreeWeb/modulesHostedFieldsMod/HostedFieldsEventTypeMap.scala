@@ -38,7 +38,8 @@ object HostedFieldsEventTypeMap {
     __obj.asInstanceOf[HostedFieldsEventTypeMap]
   }
   
-  extension [Self <: HostedFieldsEventTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsEventTypeMap] (val x: Self) extends AnyVal {
     
     inline def setBinAvailable(value: HostedFieldsBinPayload): Self = StObject.set(x, "binAvailable", value.asInstanceOf[js.Any])
     

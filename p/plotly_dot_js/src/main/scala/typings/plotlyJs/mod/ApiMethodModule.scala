@@ -22,7 +22,8 @@ object ApiMethodModule {
     __obj.asInstanceOf[ApiMethodModule]
   }
   
-  extension [Self <: ApiMethodModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiMethodModule] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Any): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

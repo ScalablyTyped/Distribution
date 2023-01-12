@@ -19,7 +19,8 @@ object DesParams {
     __obj.asInstanceOf[DesParams]
   }
   
-  extension [Self <: DesParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DesParams] (val x: Self) extends AnyVal {
     
     inline def setIv(value: BufferSource): Self = StObject.set(x, "iv", value.asInstanceOf[js.Any])
   }

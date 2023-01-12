@@ -19,7 +19,8 @@ object GetDepGraphResponse {
     __obj.asInstanceOf[GetDepGraphResponse]
   }
   
-  extension [Self <: GetDepGraphResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDepGraphResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

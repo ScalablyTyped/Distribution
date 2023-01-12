@@ -26,7 +26,8 @@ object TotalPages {
     __obj.asInstanceOf[TotalPages]
   }
   
-  extension [Self <: TotalPages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TotalPages] (val x: Self) extends AnyVal {
     
     inline def setTotalPages(value: Double): Self = StObject.set(x, "totalPages", value.asInstanceOf[js.Any])
     

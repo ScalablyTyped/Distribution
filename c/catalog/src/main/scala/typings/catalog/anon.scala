@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: ComponentType[js.Object]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialTheme]
     }
     
-    extension [Self <: PartialTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTheme] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

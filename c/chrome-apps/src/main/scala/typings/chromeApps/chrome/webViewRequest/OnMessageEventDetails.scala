@@ -68,7 +68,8 @@ object OnMessageEventDetails {
     __obj.asInstanceOf[OnMessageEventDetails]
   }
   
-  extension [Self <: OnMessageEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMessageEventDetails] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: integer): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

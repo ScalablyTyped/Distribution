@@ -24,7 +24,8 @@ object DismissText {
     __obj.asInstanceOf[DismissText]
   }
   
-  extension [Self <: DismissText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DismissText] (val x: Self) extends AnyVal {
     
     inline def setDatePickerLocale(value: Day): Self = StObject.set(x, "DatePickerLocale", value.asInstanceOf[js.Any])
     

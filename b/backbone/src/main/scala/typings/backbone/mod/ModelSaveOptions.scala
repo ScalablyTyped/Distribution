@@ -21,7 +21,8 @@ object ModelSaveOptions {
     __obj.asInstanceOf[ModelSaveOptions]
   }
   
-  extension [Self <: ModelSaveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelSaveOptions] (val x: Self) extends AnyVal {
     
     inline def setPatch(value: Boolean): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
     

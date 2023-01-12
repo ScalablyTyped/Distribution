@@ -37,7 +37,8 @@ object XSheetConditionalEntry {
     __obj.asInstanceOf[XSheetConditionalEntry]
   }
   
-  extension [Self <: XSheetConditionalEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetConditionalEntry] (val x: Self) extends AnyVal {
     
     inline def setGetStyleName(value: () => String): Self = StObject.set(x, "getStyleName", js.Any.fromFunction0(value))
     

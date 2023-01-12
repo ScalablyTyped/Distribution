@@ -51,7 +51,8 @@ object libTypographyBaseEllipsisMod {
       __obj.asInstanceOf[EllipsisProps]
     }
     
-    extension [Self <: EllipsisProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EllipsisProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (js.Array[ReactNode], Boolean) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

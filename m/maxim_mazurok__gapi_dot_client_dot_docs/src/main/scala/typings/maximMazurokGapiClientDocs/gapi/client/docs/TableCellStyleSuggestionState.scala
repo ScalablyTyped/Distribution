@@ -49,7 +49,8 @@ object TableCellStyleSuggestionState {
     __obj.asInstanceOf[TableCellStyleSuggestionState]
   }
   
-  extension [Self <: TableCellStyleSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellStyleSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColorSuggested(value: Boolean): Self = StObject.set(x, "backgroundColorSuggested", value.asInstanceOf[js.Any])
     

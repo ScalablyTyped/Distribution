@@ -36,7 +36,8 @@ object SimpleBlock {
     __obj.asInstanceOf[SimpleBlock]
   }
   
-  extension [Self <: SimpleBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleBlock] (val x: Self) extends AnyVal {
     
     inline def setDiscarable(value: Boolean): Self = StObject.set(x, "discarable", value.asInstanceOf[js.Any])
     

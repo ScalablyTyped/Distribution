@@ -16,7 +16,8 @@ object PermissionDescriptor {
     __obj.asInstanceOf[PermissionDescriptor]
   }
   
-  extension [Self <: PermissionDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionDescriptor] (val x: Self) extends AnyVal {
     
     inline def setName(value: PermissionName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

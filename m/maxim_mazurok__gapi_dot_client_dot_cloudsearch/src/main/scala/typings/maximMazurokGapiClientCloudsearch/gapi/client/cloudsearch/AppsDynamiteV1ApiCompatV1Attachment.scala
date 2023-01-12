@@ -70,7 +70,8 @@ object AppsDynamiteV1ApiCompatV1Attachment {
     __obj.asInstanceOf[AppsDynamiteV1ApiCompatV1Attachment]
   }
   
-  extension [Self <: AppsDynamiteV1ApiCompatV1Attachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteV1ApiCompatV1Attachment] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[AppsDynamiteV1ApiCompatV1Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

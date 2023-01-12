@@ -18,7 +18,8 @@ object CreateEnvironmentEC2Result {
     __obj.asInstanceOf[CreateEnvironmentEC2Result]
   }
   
-  extension [Self <: CreateEnvironmentEC2Result](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvironmentEC2Result] (val x: Self) extends AnyVal {
     
     inline def setEnvironmentId(value: EnvironmentId): Self = StObject.set(x, "environmentId", value.asInstanceOf[js.Any])
     

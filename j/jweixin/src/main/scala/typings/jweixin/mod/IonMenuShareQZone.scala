@@ -34,7 +34,8 @@ object IonMenuShareQZone {
     __obj.asInstanceOf[IonMenuShareQZone]
   }
   
-  extension [Self <: IonMenuShareQZone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IonMenuShareQZone] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     

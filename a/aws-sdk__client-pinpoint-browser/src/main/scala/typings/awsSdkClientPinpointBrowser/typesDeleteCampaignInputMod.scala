@@ -51,7 +51,8 @@ object typesDeleteCampaignInputMod {
       __obj.asInstanceOf[DeleteCampaignInput]
     }
     
-    extension [Self <: DeleteCampaignInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteCampaignInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

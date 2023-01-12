@@ -35,7 +35,8 @@ object IMetadataCardSelectionList {
     __obj.asInstanceOf[IMetadataCardSelectionList]
   }
   
-  extension [Self <: IMetadataCardSelectionList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMetadataCardSelectionList] (val x: Self) extends AnyVal {
     
     inline def setAutoSelect(value: String => Unit): Self = StObject.set(x, "AutoSelect", js.Any.fromFunction1(value))
     

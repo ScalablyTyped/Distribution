@@ -18,7 +18,8 @@ object CloudFormationCollection {
     __obj.asInstanceOf[CloudFormationCollection]
   }
   
-  extension [Self <: CloudFormationCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudFormationCollection] (val x: Self) extends AnyVal {
     
     inline def setStackNames(value: StackNames): Self = StObject.set(x, "StackNames", value.asInstanceOf[js.Any])
     

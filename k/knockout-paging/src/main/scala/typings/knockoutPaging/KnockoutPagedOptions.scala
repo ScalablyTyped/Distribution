@@ -19,7 +19,8 @@ object KnockoutPagedOptions {
     __obj.asInstanceOf[KnockoutPagedOptions]
   }
   
-  extension [Self <: KnockoutPagedOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutPagedOptions] (val x: Self) extends AnyVal {
     
     inline def setPageGenerator(value: String): Self = StObject.set(x, "pageGenerator", value.asInstanceOf[js.Any])
     

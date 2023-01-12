@@ -15,7 +15,8 @@ object IsLatLongOptions {
     __obj.asInstanceOf[IsLatLongOptions]
   }
   
-  extension [Self <: IsLatLongOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsLatLongOptions] (val x: Self) extends AnyVal {
     
     inline def setCheckDMS(value: Boolean): Self = StObject.set(x, "checkDMS", value.asInstanceOf[js.Any])
     

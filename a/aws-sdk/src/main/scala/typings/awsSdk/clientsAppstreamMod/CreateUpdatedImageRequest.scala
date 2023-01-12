@@ -43,7 +43,8 @@ object CreateUpdatedImageRequest {
     __obj.asInstanceOf[CreateUpdatedImageRequest]
   }
   
-  extension [Self <: CreateUpdatedImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUpdatedImageRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
     

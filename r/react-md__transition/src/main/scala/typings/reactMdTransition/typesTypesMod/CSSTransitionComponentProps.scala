@@ -24,7 +24,8 @@ object CSSTransitionComponentProps {
     __obj.asInstanceOf[CSSTransitionComponentProps]
   }
   
-  extension [Self <: CSSTransitionComponentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSTransitionComponentProps] (val x: Self) extends AnyVal {
     
     inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Delete43 {
     __obj.asInstanceOf[Delete43]
   }
   
-  extension [Self <: Delete43](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Delete43] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: `43`): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
   }

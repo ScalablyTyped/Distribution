@@ -18,7 +18,8 @@ object GetBeaconsOptions {
     __obj.asInstanceOf[GetBeaconsOptions]
   }
   
-  extension [Self <: GetBeaconsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBeaconsOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* options */ GetBeaconsSuccess => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

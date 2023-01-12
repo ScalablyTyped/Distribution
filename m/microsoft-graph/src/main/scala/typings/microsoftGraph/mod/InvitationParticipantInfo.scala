@@ -29,7 +29,8 @@ object InvitationParticipantInfo {
     __obj.asInstanceOf[InvitationParticipantInfo]
   }
   
-  extension [Self <: InvitationParticipantInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvitationParticipantInfo] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: NullableOption[Boolean]): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

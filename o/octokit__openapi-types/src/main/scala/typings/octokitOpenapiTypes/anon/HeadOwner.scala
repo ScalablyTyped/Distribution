@@ -23,7 +23,8 @@ object HeadOwner {
     __obj.asInstanceOf[HeadOwner]
   }
   
-  extension [Self <: HeadOwner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadOwner] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

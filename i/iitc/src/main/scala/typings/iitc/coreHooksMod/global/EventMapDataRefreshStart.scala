@@ -30,7 +30,8 @@ object EventMapDataRefreshStart {
     __obj.asInstanceOf[EventMapDataRefreshStart]
   }
   
-  extension [Self <: EventMapDataRefreshStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMapDataRefreshStart] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: LatLngBounds_): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

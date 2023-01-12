@@ -15,7 +15,8 @@ object GetPermissionsPolicyStateRequest {
     __obj.asInstanceOf[GetPermissionsPolicyStateRequest]
   }
   
-  extension [Self <: GetPermissionsPolicyStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPermissionsPolicyStateRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: FrameId): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
   }

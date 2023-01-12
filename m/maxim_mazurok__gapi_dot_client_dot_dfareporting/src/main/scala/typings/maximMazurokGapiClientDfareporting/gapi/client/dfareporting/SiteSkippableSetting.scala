@@ -25,7 +25,8 @@ object SiteSkippableSetting {
     __obj.asInstanceOf[SiteSkippableSetting]
   }
   
-  extension [Self <: SiteSkippableSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteSkippableSetting] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

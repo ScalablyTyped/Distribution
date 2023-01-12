@@ -17,7 +17,8 @@ object ElementReference {
     __obj.asInstanceOf[ElementReference]
   }
   
-  extension [Self <: ElementReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementReference] (val x: Self) extends AnyVal {
     
     inline def `setElement-6066-11e4-a52e-4f735466cecf`(value: String): Self = StObject.set(x, "element-6066-11e4-a52e-4f735466cecf", value.asInstanceOf[js.Any])
   }

@@ -46,7 +46,8 @@ object dxDropDownBox {
       __obj.asInstanceOf[ContentTemplateData]
     }
     
-    extension [Self <: ContentTemplateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentTemplateData] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxDropDownBox): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

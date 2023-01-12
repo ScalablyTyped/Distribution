@@ -20,7 +20,8 @@ object SlideTitleProperties {
     __obj.asInstanceOf[SlideTitleProperties]
   }
   
-  extension [Self <: SlideTitleProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideTitleProperties] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

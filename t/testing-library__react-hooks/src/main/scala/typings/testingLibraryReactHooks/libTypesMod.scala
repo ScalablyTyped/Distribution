@@ -37,7 +37,8 @@ object libTypesMod {
       __obj.asInstanceOf[AsyncUtils]
     }
     
-    extension [Self <: AsyncUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsyncUtils] (val x: Self) extends AnyVal {
       
       inline def setWaitFor(
         value: (/* callback */ js.Function0[Boolean | Unit], /* options */ js.UndefOr[WaitForOptions]) => js.Promise[Unit]
@@ -70,7 +71,8 @@ object libTypesMod {
       __obj.asInstanceOf[RenderHookOptions[TProps]]
     }
     
-    extension [Self <: RenderHookOptions[?], TProps](x: Self & RenderHookOptions[TProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderHookOptions[?], TProps] (val x: Self & RenderHookOptions[TProps]) extends AnyVal {
       
       inline def setInitialProps(value: TProps): Self = StObject.set(x, "initialProps", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object libTypesMod {
       __obj.asInstanceOf[RenderResult[TValue]]
     }
     
-    extension [Self <: RenderResult[?], TValue](x: Self & RenderResult[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderResult[?], TValue] (val x: Self & RenderResult[TValue]) extends AnyVal {
       
       inline def setAll(value: js.Array[TValue | js.Error]): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object libTypesMod {
       __obj.asInstanceOf[RendererProps[TProps, TResult]]
     }
     
-    extension [Self <: RendererProps[?, ?], TProps, TResult](x: Self & (RendererProps[TProps, TResult])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererProps[?, ?], TProps, TResult] (val x: Self & (RendererProps[TProps, TResult])) extends AnyVal {
       
       inline def setCallback(value: TProps => TResult): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -162,7 +166,8 @@ object libTypesMod {
       __obj.asInstanceOf[ResultContainer[TValue]]
     }
     
-    extension [Self <: ResultContainer[?], TValue](x: Self & ResultContainer[TValue]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultContainer[?], TValue] (val x: Self & ResultContainer[TValue]) extends AnyVal {
       
       inline def setResult(value: RenderResult[TValue]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -198,7 +203,8 @@ object libTypesMod {
       __obj.asInstanceOf[WaitForNextUpdateOptions]
     }
     
-    extension [Self <: WaitForNextUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitForNextUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double | `false`): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       
@@ -229,7 +235,8 @@ object libTypesMod {
       __obj.asInstanceOf[WaitOptions]
     }
     
-    extension [Self <: WaitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaitOptions] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double | `false`): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       

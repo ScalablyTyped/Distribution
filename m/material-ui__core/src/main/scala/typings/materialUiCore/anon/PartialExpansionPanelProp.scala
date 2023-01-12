@@ -489,7 +489,8 @@ object PartialExpansionPanelProp {
     __obj.asInstanceOf[PartialExpansionPanelProp]
   }
   
-  extension [Self <: PartialExpansionPanelProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialExpansionPanelProp] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

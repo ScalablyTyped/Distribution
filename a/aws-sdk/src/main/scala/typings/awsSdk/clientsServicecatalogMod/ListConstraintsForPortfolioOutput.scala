@@ -23,7 +23,8 @@ object ListConstraintsForPortfolioOutput {
     __obj.asInstanceOf[ListConstraintsForPortfolioOutput]
   }
   
-  extension [Self <: ListConstraintsForPortfolioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConstraintsForPortfolioOutput] (val x: Self) extends AnyVal {
     
     inline def setConstraintDetails(value: ConstraintDetails): Self = StObject.set(x, "ConstraintDetails", value.asInstanceOf[js.Any])
     

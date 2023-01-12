@@ -19,7 +19,8 @@ object GoogleCloudRecommendationengineV1beta1ImportCatalogItemsResponse {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1ImportCatalogItemsResponse]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1ImportCatalogItemsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorSamples(value: js.Array[GoogleRpcStatus]): Self = StObject.set(x, "errorSamples", value.asInstanceOf[js.Any])
     

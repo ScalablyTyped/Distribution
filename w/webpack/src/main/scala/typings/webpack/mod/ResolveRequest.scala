@@ -43,7 +43,8 @@ object ResolveRequest {
     __obj.asInstanceOf[ResolveRequest]
   }
   
-  extension [Self <: ResolveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveRequest] (val x: Self) extends AnyVal {
     
     inline def setDescriptionFileData(value: js.Object): Self = StObject.set(x, "descriptionFileData", value.asInstanceOf[js.Any])
     

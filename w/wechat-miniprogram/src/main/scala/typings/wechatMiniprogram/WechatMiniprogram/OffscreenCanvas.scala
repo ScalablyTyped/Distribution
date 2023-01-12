@@ -53,7 +53,8 @@ object OffscreenCanvas {
     __obj.asInstanceOf[OffscreenCanvas]
   }
   
-  extension [Self <: OffscreenCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffscreenCanvas] (val x: Self) extends AnyVal {
     
     inline def setCreateImage(value: () => Image): Self = StObject.set(x, "createImage", js.Any.fromFunction0(value))
     

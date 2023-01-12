@@ -19,7 +19,8 @@ object ClickThroughUrlSuffixProperties {
     __obj.asInstanceOf[ClickThroughUrlSuffixProperties]
   }
   
-  extension [Self <: ClickThroughUrlSuffixProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClickThroughUrlSuffixProperties] (val x: Self) extends AnyVal {
     
     inline def setClickThroughUrlSuffix(value: String): Self = StObject.set(x, "clickThroughUrlSuffix", value.asInstanceOf[js.Any])
     

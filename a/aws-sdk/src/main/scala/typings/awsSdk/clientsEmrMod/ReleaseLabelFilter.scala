@@ -23,7 +23,8 @@ object ReleaseLabelFilter {
     __obj.asInstanceOf[ReleaseLabelFilter]
   }
   
-  extension [Self <: ReleaseLabelFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseLabelFilter] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: String): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object ShareSheet {
       __obj.asInstanceOf[ShareSheetResult]
     }
     
-    extension [Self <: ShareSheetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShareSheetResult] (val x: Self) extends AnyVal {
       
       inline def setActivity_type(value: String): Self = StObject.set(x, "activity_type", value.asInstanceOf[js.Any])
       

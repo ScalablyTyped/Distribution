@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2ProfileStatus {
     __obj.asInstanceOf[GooglePrivacyDlpV2ProfileStatus]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ProfileStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ProfileStatus] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleRpcStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

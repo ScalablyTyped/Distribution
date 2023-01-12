@@ -18,7 +18,8 @@ object AtomOptionsWithDefault {
     __obj.asInstanceOf[AtomOptionsWithDefault[T]]
   }
   
-  extension [Self <: AtomOptionsWithDefault[?], T](x: Self & AtomOptionsWithDefault[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AtomOptionsWithDefault[?], T] (val x: Self & AtomOptionsWithDefault[T]) extends AnyVal {
     
     inline def setDefault(value: RecoilValue[T] | js.Promise[T] | Loadable[T] | WrappedValue[T] | T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

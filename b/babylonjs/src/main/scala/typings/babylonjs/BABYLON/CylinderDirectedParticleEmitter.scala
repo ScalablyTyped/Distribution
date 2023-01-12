@@ -48,7 +48,8 @@ object CylinderDirectedParticleEmitter {
     __obj.asInstanceOf[CylinderDirectedParticleEmitter]
   }
   
-  extension [Self <: CylinderDirectedParticleEmitter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CylinderDirectedParticleEmitter] (val x: Self) extends AnyVal {
     
     inline def setDirection1(value: Vector3): Self = StObject.set(x, "direction1", value.asInstanceOf[js.Any])
     

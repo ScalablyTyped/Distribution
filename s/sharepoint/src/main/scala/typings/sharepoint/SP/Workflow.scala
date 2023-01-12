@@ -139,7 +139,8 @@ object Workflow {
       __obj.asInstanceOf[WorkflowAssociationCreationInformation]
     }
     
-    extension [Self <: WorkflowAssociationCreationInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkflowAssociationCreationInformation] (val x: Self) extends AnyVal {
       
       inline def setGet_contentTypeAssociationHistoryListName(value: () => String): Self = StObject.set(x, "get_contentTypeAssociationHistoryListName", js.Any.fromFunction0(value))
       

@@ -126,7 +126,8 @@ object mod {
       __obj.asInstanceOf[TabNavigatorItemProps]
     }
     
-    extension [Self <: TabNavigatorItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabNavigatorItemProps] (val x: Self) extends AnyVal {
       
       inline def setAllowFontScaling(value: Boolean): Self = StObject.set(x, "allowFontScaling", value.asInstanceOf[js.Any])
       
@@ -211,7 +212,8 @@ object mod {
       __obj.asInstanceOf[TabNavigatorProps]
     }
     
-    extension [Self <: TabNavigatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabNavigatorProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

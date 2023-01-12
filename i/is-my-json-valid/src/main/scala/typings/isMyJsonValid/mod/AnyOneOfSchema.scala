@@ -17,7 +17,8 @@ object AnyOneOfSchema {
     __obj.asInstanceOf[AnyOneOfSchema]
   }
   
-  extension [Self <: AnyOneOfSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnyOneOfSchema] (val x: Self) extends AnyVal {
     
     inline def setOneOf(value: js.Array[AnySchema]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
     

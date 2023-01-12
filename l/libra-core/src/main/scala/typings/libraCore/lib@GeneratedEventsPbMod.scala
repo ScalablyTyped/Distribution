@@ -81,7 +81,8 @@ object `lib@GeneratedEventsPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setAccessPath(value: typings.libraCore.`lib@GeneratedAccessPathPbMod`.AccessPath.AsObject): Self = StObject.set(x, "accessPath", value.asInstanceOf[js.Any])
         
@@ -167,7 +168,8 @@ object `lib@GeneratedEventsPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setEvent(value: typings.libraCore.`lib@GeneratedEventsPbMod`.Event.AsObject): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
         
@@ -236,7 +238,8 @@ object `lib@GeneratedEventsPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setEventsForVersionList(value: js.Array[typings.libraCore.`lib@GeneratedEventsPbMod`.EventsList.AsObject]): Self = StObject.set(x, "eventsForVersionList", value.asInstanceOf[js.Any])
         
@@ -297,7 +300,8 @@ object `lib@GeneratedEventsPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setEventsList(value: js.Array[typings.libraCore.`lib@GeneratedEventsPbMod`.Event.AsObject]): Self = StObject.set(x, "eventsList", value.asInstanceOf[js.Any])
         

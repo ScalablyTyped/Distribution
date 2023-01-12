@@ -17,7 +17,8 @@ object Membership {
     __obj.asInstanceOf[Membership]
   }
   
-  extension [Self <: Membership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Membership] (val x: Self) extends AnyVal {
     
     inline def setProject(value: Resource): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     

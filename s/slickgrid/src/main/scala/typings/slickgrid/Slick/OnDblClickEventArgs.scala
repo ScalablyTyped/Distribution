@@ -19,7 +19,8 @@ object OnDblClickEventArgs {
     __obj.asInstanceOf[OnDblClickEventArgs[T]]
   }
   
-  extension [Self <: OnDblClickEventArgs[?], T /* <: SlickData */](x: Self & OnDblClickEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDblClickEventArgs[?], T /* <: SlickData */] (val x: Self & OnDblClickEventArgs[T]) extends AnyVal {
     
     inline def setCell(value: Double): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

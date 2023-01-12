@@ -17,7 +17,8 @@ object ReferencesEvents {
     __obj.asInstanceOf[ReferencesEvents]
   }
   
-  extension [Self <: ReferencesEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferencesEvents] (val x: Self) extends AnyVal {
     
     inline def setVBIDEDotReferencesEvents_typekey(value: ReferencesEvents): Self = StObject.set(x, "VBIDE.ReferencesEvents_typekey", value.asInstanceOf[js.Any])
   }

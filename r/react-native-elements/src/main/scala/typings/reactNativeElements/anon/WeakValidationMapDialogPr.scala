@@ -359,7 +359,8 @@ object WeakValidationMapDialogPr {
     __obj.asInstanceOf[WeakValidationMapDialogPr]
   }
   
-  extension [Self <: WeakValidationMapDialogPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapDialogPr] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | undefined ? react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | undefined | null | undefined> : undefined extends std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | undefined ? react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | undefined | null | undefined> : react.react.Validator<std.ReadonlyArray<react-native.react-native.AccessibilityActionInfo> | undefined | undefined> */ js.Any

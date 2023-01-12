@@ -29,7 +29,8 @@ object SnapOptions {
     __obj.asInstanceOf[SnapOptions]
   }
   
-  extension [Self <: SnapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapOptions] (val x: Self) extends AnyVal {
     
     inline def setEdge(value: Boolean): Self = StObject.set(x, "edge", value.asInstanceOf[js.Any])
     

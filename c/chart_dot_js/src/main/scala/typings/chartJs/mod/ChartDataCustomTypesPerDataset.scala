@@ -17,7 +17,8 @@ object ChartDataCustomTypesPerDataset {
     __obj.asInstanceOf[ChartDataCustomTypesPerDataset[TType, TData, TLabel]]
   }
   
-  extension [Self <: ChartDataCustomTypesPerDataset[?, ?, ?], TType /* <: ChartType */, TData, TLabel](x: Self & (ChartDataCustomTypesPerDataset[TType, TData, TLabel])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataCustomTypesPerDataset[?, ?, ?], TType /* <: ChartType */, TData, TLabel] (val x: Self & (ChartDataCustomTypesPerDataset[TType, TData, TLabel])) extends AnyVal {
     
     inline def setDatasets(value: js.Array[ChartDatasetCustomTypesPerDataset[TType, TData]]): Self = StObject.set(x, "datasets", value.asInstanceOf[js.Any])
     

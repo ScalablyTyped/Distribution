@@ -54,7 +54,8 @@ object EventMap {
     __obj.asInstanceOf[EventMap]
   }
   
-  extension [Self <: EventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
     
     inline def setOnCallEnd(value: Unit): Self = StObject.set(x, "onCallEnd", value.asInstanceOf[js.Any])
     

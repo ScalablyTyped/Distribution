@@ -28,7 +28,8 @@ object DisconnectPlayerRequest {
     __obj.asInstanceOf[DisconnectPlayerRequest]
   }
   
-  extension [Self <: DisconnectPlayerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisconnectPlayerRequest] (val x: Self) extends AnyVal {
     
     inline def setGameName(value: GameName): Self = StObject.set(x, "GameName", value.asInstanceOf[js.Any])
     

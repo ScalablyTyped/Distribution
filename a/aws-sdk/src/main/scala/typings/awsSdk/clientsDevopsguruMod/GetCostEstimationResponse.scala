@@ -43,7 +43,8 @@ object GetCostEstimationResponse {
     __obj.asInstanceOf[GetCostEstimationResponse]
   }
   
-  extension [Self <: GetCostEstimationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCostEstimationResponse] (val x: Self) extends AnyVal {
     
     inline def setCosts(value: ServiceResourceCosts): Self = StObject.set(x, "Costs", value.asInstanceOf[js.Any])
     

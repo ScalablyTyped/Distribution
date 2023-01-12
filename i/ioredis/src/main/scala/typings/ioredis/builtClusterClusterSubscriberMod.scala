@@ -85,7 +85,8 @@ object builtClusterClusterSubscriberMod {
       __obj.asInstanceOf[ClusterSubscriber]
     }
     
-    extension [Self <: ClusterSubscriber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClusterSubscriber] (val x: Self) extends AnyVal {
       
       inline def setConnectionPool(value: Any): Self = StObject.set(x, "connectionPool", value.asInstanceOf[js.Any])
       

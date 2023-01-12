@@ -55,7 +55,8 @@ object FeatureLayer_ {
     __obj.asInstanceOf[FeatureLayer_]
   }
   
-  extension [Self <: FeatureLayer_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayer_] (val x: Self) extends AnyVal {
     
     inline def setGetFilter(value: () => FilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction0(value))
     

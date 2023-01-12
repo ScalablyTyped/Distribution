@@ -53,7 +53,8 @@ object IBodyRenderOptions {
     __obj.asInstanceOf[IBodyRenderOptions]
   }
   
-  extension [Self <: IBodyRenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBodyRenderOptions] (val x: Self) extends AnyVal {
     
     inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
     

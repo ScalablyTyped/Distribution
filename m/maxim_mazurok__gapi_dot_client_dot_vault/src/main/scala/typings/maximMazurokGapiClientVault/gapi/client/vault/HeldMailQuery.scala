@@ -22,7 +22,8 @@ object HeldMailQuery {
     __obj.asInstanceOf[HeldMailQuery]
   }
   
-  extension [Self <: HeldMailQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeldMailQuery] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

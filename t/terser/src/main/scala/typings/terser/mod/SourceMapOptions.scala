@@ -26,7 +26,8 @@ object SourceMapOptions {
     __obj.asInstanceOf[SourceMapOptions]
   }
   
-  extension [Self <: SourceMapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
     
     inline def setContent(value: SectionedSourceMapInput | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

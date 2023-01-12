@@ -33,7 +33,8 @@ object distLibLinkedListMod {
       __obj.asInstanceOf[ILinkedListNode[T]]
     }
     
-    extension [Self <: ILinkedListNode[?], T](x: Self & ILinkedListNode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILinkedListNode[?], T] (val x: Self & ILinkedListNode[T]) extends AnyVal {
       
       inline def setElement(value: T): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       

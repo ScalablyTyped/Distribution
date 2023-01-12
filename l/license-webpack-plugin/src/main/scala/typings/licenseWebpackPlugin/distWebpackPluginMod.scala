@@ -19,7 +19,8 @@ object distWebpackPluginMod {
       __obj.asInstanceOf[WebpackPlugin]
     }
     
-    extension [Self <: WebpackPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebpackPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: WebpackCompiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }

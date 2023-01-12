@@ -49,7 +49,8 @@ object Subtotals {
     __obj.asInstanceOf[Subtotals]
   }
   
-  extension [Self <: Subtotals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subtotals] (val x: Self) extends AnyVal {
     
     inline def setAutomatic(value: Boolean): Self = StObject.set(x, "automatic", value.asInstanceOf[js.Any])
     

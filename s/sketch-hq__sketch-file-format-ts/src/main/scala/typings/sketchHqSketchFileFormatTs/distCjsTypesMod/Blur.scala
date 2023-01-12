@@ -31,7 +31,8 @@ object Blur {
     __obj.asInstanceOf[Blur]
   }
   
-  extension [Self <: Blur](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Blur] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: PointString): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

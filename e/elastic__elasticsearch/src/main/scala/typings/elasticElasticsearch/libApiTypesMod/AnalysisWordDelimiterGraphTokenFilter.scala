@@ -50,7 +50,8 @@ object AnalysisWordDelimiterGraphTokenFilter {
     __obj.asInstanceOf[AnalysisWordDelimiterGraphTokenFilter]
   }
   
-  extension [Self <: AnalysisWordDelimiterGraphTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisWordDelimiterGraphTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setAdjust_offsets(value: Boolean): Self = StObject.set(x, "adjust_offsets", value.asInstanceOf[js.Any])
     

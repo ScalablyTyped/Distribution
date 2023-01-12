@@ -27,7 +27,8 @@ object GamePadFactory {
     __obj.asInstanceOf[GamePadFactory]
   }
   
-  extension [Self <: GamePadFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GamePadFactory] (val x: Self) extends AnyVal {
     
     inline def setCanCreate(value: Any => Boolean): Self = StObject.set(x, "canCreate", js.Any.fromFunction1(value))
     

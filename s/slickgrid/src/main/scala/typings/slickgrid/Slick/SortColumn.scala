@@ -17,7 +17,8 @@ object SortColumn {
     __obj.asInstanceOf[SortColumn[T]]
   }
   
-  extension [Self <: SortColumn[?], T /* <: SlickData */](x: Self & SortColumn[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortColumn[?], T /* <: SlickData */] (val x: Self & SortColumn[T]) extends AnyVal {
     
     inline def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])
     

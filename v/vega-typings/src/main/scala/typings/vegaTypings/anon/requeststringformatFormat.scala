@@ -27,7 +27,8 @@ object requeststringformatFormat {
     __obj.asInstanceOf[requeststringformatFormat]
   }
   
-  extension [Self <: requeststringformatFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: requeststringformatFormat] (val x: Self) extends AnyVal {
     
     inline def set$format(value: Format): Self = StObject.set(x, "$format", value.asInstanceOf[js.Any])
     

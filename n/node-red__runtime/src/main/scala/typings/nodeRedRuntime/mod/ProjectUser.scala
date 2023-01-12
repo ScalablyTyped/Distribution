@@ -15,7 +15,8 @@ object ProjectUser {
     __obj.asInstanceOf[ProjectUser]
   }
   
-  extension [Self <: ProjectUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectUser] (val x: Self) extends AnyVal {
     
     inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
   }

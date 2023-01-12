@@ -114,7 +114,8 @@ object XUnionTypeDescription {
     __obj.asInstanceOf[XUnionTypeDescription]
   }
   
-  extension [Self <: XUnionTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUnionTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setDefaultDiscriminant(value: Any): Self = StObject.set(x, "DefaultDiscriminant", value.asInstanceOf[js.Any])
     

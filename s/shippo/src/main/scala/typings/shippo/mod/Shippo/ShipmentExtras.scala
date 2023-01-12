@@ -32,7 +32,8 @@ object ShipmentExtras {
     __obj.asInstanceOf[ShipmentExtras]
   }
   
-  extension [Self <: ShipmentExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShipmentExtras] (val x: Self) extends AnyVal {
     
     inline def setAuthority_to_leave(value: Boolean): Self = StObject.set(x, "authority_to_leave", value.asInstanceOf[js.Any])
     

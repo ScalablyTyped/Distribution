@@ -15,7 +15,8 @@ object FederatedAuthRequestIssueDetails {
     __obj.asInstanceOf[FederatedAuthRequestIssueDetails]
   }
   
-  extension [Self <: FederatedAuthRequestIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FederatedAuthRequestIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setFederatedAuthRequestIssueReason(value: FederatedAuthRequestIssueReason): Self = StObject.set(x, "federatedAuthRequestIssueReason", value.asInstanceOf[js.Any])
   }

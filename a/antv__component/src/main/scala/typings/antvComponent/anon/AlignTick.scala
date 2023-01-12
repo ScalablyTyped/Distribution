@@ -21,7 +21,8 @@ object AlignTick {
     __obj.asInstanceOf[AlignTick]
   }
   
-  extension [Self <: AlignTick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignTick] (val x: Self) extends AnyVal {
     
     inline def setAlignTick(value: Boolean): Self = StObject.set(x, "alignTick", value.asInstanceOf[js.Any])
     

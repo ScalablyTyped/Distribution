@@ -55,7 +55,8 @@ object Bio {
     __obj.asInstanceOf[Bio]
   }
   
-  extension [Self <: Bio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bio] (val x: Self) extends AnyVal {
     
     inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     

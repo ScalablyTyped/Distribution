@@ -25,7 +25,8 @@ object InstanceMoveRequest {
     __obj.asInstanceOf[InstanceMoveRequest]
   }
   
-  extension [Self <: InstanceMoveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceMoveRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationZone(value: String): Self = StObject.set(x, "destinationZone", value.asInstanceOf[js.Any])
     

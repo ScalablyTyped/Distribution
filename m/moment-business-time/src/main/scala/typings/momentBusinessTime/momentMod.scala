@@ -23,7 +23,8 @@ object momentMod {
       __obj.asInstanceOf[LocaleSpecification]
     }
     
-    extension [Self <: LocaleSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
       
       inline def setHolidays(value: js.Array[String]): Self = StObject.set(x, "holidays", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object momentMod {
       __obj.asInstanceOf[TransitionTime]
     }
     
-    extension [Self <: TransitionTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionTime] (val x: Self) extends AnyVal {
       
       inline def setMoment(value: Moment): Self = StObject.set(x, "moment", value.asInstanceOf[js.Any])
       
@@ -123,7 +125,8 @@ object momentMod {
       __obj.asInstanceOf[WorkingHoursMap]
     }
     
-    extension [Self <: WorkingHoursMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkingHoursMap] (val x: Self) extends AnyVal {
       
       inline def set0(value: js.Array[String]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
       

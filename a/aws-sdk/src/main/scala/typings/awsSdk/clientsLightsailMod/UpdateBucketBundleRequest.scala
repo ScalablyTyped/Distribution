@@ -23,7 +23,8 @@ object UpdateBucketBundleRequest {
     __obj.asInstanceOf[UpdateBucketBundleRequest]
   }
   
-  extension [Self <: UpdateBucketBundleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBucketBundleRequest] (val x: Self) extends AnyVal {
     
     inline def setBucketName(value: BucketName): Self = StObject.set(x, "bucketName", value.asInstanceOf[js.Any])
     

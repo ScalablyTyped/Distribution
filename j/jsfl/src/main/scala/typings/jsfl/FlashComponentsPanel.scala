@@ -17,7 +17,8 @@ object FlashComponentsPanel {
     __obj.asInstanceOf[FlashComponentsPanel]
   }
   
-  extension [Self <: FlashComponentsPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashComponentsPanel] (val x: Self) extends AnyVal {
     
     inline def setAddItemToDocument(value: () => Any): Self = StObject.set(x, "addItemToDocument", js.Any.fromFunction0(value))
     

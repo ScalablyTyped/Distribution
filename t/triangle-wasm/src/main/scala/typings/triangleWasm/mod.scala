@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[TriangulateData]
     }
     
-    extension [Self <: TriangulateData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangulateData] (val x: Self) extends AnyVal {
       
       inline def setEdgelist(value: js.Array[Double]): Self = StObject.set(x, "edgelist", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[TriangulateIO]
     }
     
-    extension [Self <: TriangulateIO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangulateIO] (val x: Self) extends AnyVal {
       
       inline def setEdgelist(value: js.Array[Double]): Self = StObject.set(x, "edgelist", value.asInstanceOf[js.Any])
       
@@ -320,7 +322,8 @@ object mod {
       __obj.asInstanceOf[TriangulateSwitches]
     }
     
-    extension [Self <: TriangulateSwitches](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangulateSwitches] (val x: Self) extends AnyVal {
       
       inline def setArea(value: Boolean | Double): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       

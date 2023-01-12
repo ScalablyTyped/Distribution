@@ -17,7 +17,8 @@ object FileList {
     __obj.asInstanceOf[FileList]
   }
   
-  extension [Self <: FileList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileList] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

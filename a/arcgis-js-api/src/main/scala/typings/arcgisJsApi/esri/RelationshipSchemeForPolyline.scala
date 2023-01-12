@@ -72,7 +72,8 @@ object RelationshipSchemeForPolyline {
     __obj.asInstanceOf[RelationshipSchemeForPolyline]
   }
   
-  extension [Self <: RelationshipSchemeForPolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipSchemeForPolyline] (val x: Self) extends AnyVal {
     
     inline def setColorsForClassBreaks(value: js.Array[RelationshipSchemeForPolylineColorsForClassBreaks]): Self = StObject.set(x, "colorsForClassBreaks", value.asInstanceOf[js.Any])
     

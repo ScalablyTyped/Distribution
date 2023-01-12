@@ -33,7 +33,8 @@ object ListVirtualRoutersInput {
     __obj.asInstanceOf[ListVirtualRoutersInput]
   }
   
-  extension [Self <: ListVirtualRoutersInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListVirtualRoutersInput] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: ListVirtualRoutersLimit): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

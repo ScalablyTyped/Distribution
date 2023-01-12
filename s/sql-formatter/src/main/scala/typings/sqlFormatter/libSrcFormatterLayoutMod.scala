@@ -146,7 +146,8 @@ object libSrcFormatterLayoutMod {
       __obj.asInstanceOf[Layout]
     }
     
-    extension [Self <: Layout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Layout] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ WS | String => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

@@ -289,7 +289,8 @@ object anon {
       __obj.asInstanceOf[KinkeyofPredicatesOptiona]
     }
     
-    extension [Self <: KinkeyofPredicatesOptiona](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KinkeyofPredicatesOptiona] (val x: Self) extends AnyVal {
       
       inline def setAny(
         value: Optionalify[
@@ -456,7 +457,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String | (js.Function1[/* label */ String, String])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

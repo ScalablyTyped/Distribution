@@ -18,7 +18,8 @@ object SchemaDefinition {
     __obj.asInstanceOf[SchemaDefinition]
   }
   
-  extension [Self <: SchemaDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaDefinition] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Columns): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

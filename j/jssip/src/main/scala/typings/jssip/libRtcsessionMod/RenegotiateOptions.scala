@@ -18,7 +18,8 @@ object RenegotiateOptions {
     __obj.asInstanceOf[RenegotiateOptions]
   }
   
-  extension [Self <: RenegotiateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenegotiateOptions] (val x: Self) extends AnyVal {
     
     inline def setRtcOfferConstraints(value: RTCOfferOptions): Self = StObject.set(x, "rtcOfferConstraints", value.asInstanceOf[js.Any])
     

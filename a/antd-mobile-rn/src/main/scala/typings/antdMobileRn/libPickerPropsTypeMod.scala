@@ -23,7 +23,8 @@ object libPickerPropsTypeMod {
       __obj.asInstanceOf[PickerData]
     }
     
-    extension [Self <: PickerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerData] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[PickerData]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object libPickerPropsTypeMod {
       __obj.asInstanceOf[PickerPropsType]
     }
     
-    extension [Self <: PickerPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPropsType] (val x: Self) extends AnyVal {
       
       inline def setCascade(value: Boolean): Self = StObject.set(x, "cascade", value.asInstanceOf[js.Any])
       

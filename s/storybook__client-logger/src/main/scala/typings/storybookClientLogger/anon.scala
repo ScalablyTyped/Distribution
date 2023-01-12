@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: (Any, /* repeated */ Any) => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction2(value))
       

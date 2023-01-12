@@ -32,7 +32,8 @@ object libCredentialsProcessCredentialsMod {
       __obj.asInstanceOf[ProcessCredentialsOptions]
     }
     
-    extension [Self <: ProcessCredentialsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessCredentialsOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       

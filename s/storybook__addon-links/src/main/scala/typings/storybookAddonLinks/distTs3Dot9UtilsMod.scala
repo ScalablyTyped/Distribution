@@ -43,7 +43,8 @@ object distTs3Dot9UtilsMod {
       __obj.asInstanceOf[ParamsCombo]
     }
     
-    extension [Self <: ParamsCombo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamsCombo] (val x: Self) extends AnyVal {
       
       inline def setKind(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentTitle */ Any
@@ -72,7 +73,8 @@ object distTs3Dot9UtilsMod {
       __obj.asInstanceOf[ParamsId]
     }
     
-    extension [Self <: ParamsId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamsId] (val x: Self) extends AnyVal {
       
       inline def setStoryId(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StoryId */ Any

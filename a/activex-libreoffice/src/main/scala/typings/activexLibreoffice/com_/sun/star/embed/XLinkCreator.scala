@@ -48,7 +48,8 @@ object XLinkCreator {
     __obj.asInstanceOf[XLinkCreator]
   }
   
-  extension [Self <: XLinkCreator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLinkCreator] (val x: Self) extends AnyVal {
     
     inline def setCreateInstanceLink(value: (XStorage, String, SeqEquiv[PropertyValue], SeqEquiv[PropertyValue]) => XInterface): Self = StObject.set(x, "createInstanceLink", js.Any.fromFunction4(value))
   }

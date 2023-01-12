@@ -54,7 +54,8 @@ object libComboboxInputComboboxInputMod extends Shortcut {
       __obj.asInstanceOf[ComboboxInputProps]
     }
     
-    extension [Self <: ComboboxInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxInputProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: js.Object): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

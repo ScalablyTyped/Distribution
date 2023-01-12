@@ -31,7 +31,8 @@ object WSParameter {
     __obj.asInstanceOf[WSParameter]
   }
   
-  extension [Self <: WSParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WSParameter] (val x: Self) extends AnyVal {
     
     inline def setAccessDotWSParameter_typekey(value: WSParameter): Self = StObject.set(x, "Access.WSParameter_typekey", value.asInstanceOf[js.Any])
     

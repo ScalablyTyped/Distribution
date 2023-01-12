@@ -19,7 +19,8 @@ object FullscreenSetDetails {
     __obj.asInstanceOf[FullscreenSetDetails]
   }
   
-  extension [Self <: FullscreenSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

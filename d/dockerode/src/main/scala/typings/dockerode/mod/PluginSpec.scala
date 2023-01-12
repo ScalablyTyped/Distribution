@@ -24,7 +24,8 @@ object PluginSpec {
     __obj.asInstanceOf[PluginSpec]
   }
   
-  extension [Self <: PluginSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginSpec] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "Disabled", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object distTypesMod {
       __obj.asInstanceOf[ImageData]
     }
     
-    extension [Self <: ImageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageData] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8ClampedArray): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distTypesMod {
       __obj.asInstanceOf[MSSIMMatrix]
     }
     
-    extension [Self <: MSSIMMatrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MSSIMMatrix] (val x: Self) extends AnyVal {
       
       inline def setMssim(value: Double): Self = StObject.set(x, "mssim", value.asInstanceOf[js.Any])
     }
@@ -107,7 +109,8 @@ object distTypesMod {
       __obj.asInstanceOf[Matrix]
     }
     
-    extension [Self <: Matrix](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object distTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       

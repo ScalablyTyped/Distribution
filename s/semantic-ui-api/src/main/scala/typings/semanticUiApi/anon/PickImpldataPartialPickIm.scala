@@ -152,7 +152,8 @@ object PickImpldataPartialPickIm {
     __obj.asInstanceOf[PickImpldataPartialPickIm]
   }
   
-  extension [Self <: PickImpldataPartialPickIm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldataPartialPickIm] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

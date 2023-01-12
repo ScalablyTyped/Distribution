@@ -37,7 +37,8 @@ object PostgreSqlConnectionProfile {
     __obj.asInstanceOf[PostgreSqlConnectionProfile]
   }
   
-  extension [Self <: PostgreSqlConnectionProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostgreSqlConnectionProfile] (val x: Self) extends AnyVal {
     
     inline def setCloudSqlId(value: String): Self = StObject.set(x, "cloudSqlId", value.asInstanceOf[js.Any])
     

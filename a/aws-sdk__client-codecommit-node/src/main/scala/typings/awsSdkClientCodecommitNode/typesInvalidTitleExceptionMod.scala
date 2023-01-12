@@ -23,7 +23,8 @@ object typesInvalidTitleExceptionMod {
       __obj.asInstanceOf[InvalidTitleException]
     }
     
-    extension [Self <: InvalidTitleException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidTitleException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidTitleException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

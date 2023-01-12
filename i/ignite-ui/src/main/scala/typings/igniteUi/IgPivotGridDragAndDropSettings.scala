@@ -35,7 +35,8 @@ object IgPivotGridDragAndDropSettings {
     __obj.asInstanceOf[IgPivotGridDragAndDropSettings]
   }
   
-  extension [Self <: IgPivotGridDragAndDropSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotGridDragAndDropSettings] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: Any): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

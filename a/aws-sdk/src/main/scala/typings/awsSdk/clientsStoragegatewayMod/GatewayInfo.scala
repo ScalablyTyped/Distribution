@@ -58,7 +58,8 @@ object GatewayInfo {
     __obj.asInstanceOf[GatewayInfo]
   }
   
-  extension [Self <: GatewayInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewayInfo] (val x: Self) extends AnyVal {
     
     inline def setEc2InstanceId(value: Ec2InstanceId): Self = StObject.set(x, "Ec2InstanceId", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object libConnectMod {
       __obj.asInstanceOf[BaseConnectOptions]
     }
     
-    extension [Self <: BaseConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setConnect(
         value: (/* options */ ConnectOptions, /* connectionListener */ js.UndefOr[js.Function0[Unit]]) => Socket
@@ -88,7 +89,8 @@ object libConnectMod {
       __obj.asInstanceOf[ConnectHeaders]
     }
     
-    extension [Self <: ConnectHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectHeaders] (val x: Self) extends AnyVal {
       
       inline def `setAccept-version`(value: String): Self = StObject.set(x, "accept-version", value.asInstanceOf[js.Any])
       
@@ -154,7 +156,8 @@ object libConnectMod {
       __obj.asInstanceOf[NetIpcConnectOptions]
     }
     
-    extension [Self <: NetIpcConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetIpcConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setSsl(value: `false`): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object libConnectMod {
       __obj.asInstanceOf[NetTcpConnectOptions]
     }
     
-    extension [Self <: NetTcpConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetTcpConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setSsl(value: `false`): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object libConnectMod {
       __obj.asInstanceOf[SslConnectOptions]
     }
     
-    extension [Self <: SslConnectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SslConnectOptions] (val x: Self) extends AnyVal {
       
       inline def setSsl(value: `true`): Self = StObject.set(x, "ssl", value.asInstanceOf[js.Any])
     }

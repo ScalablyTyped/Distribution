@@ -19,7 +19,8 @@ object Coordinate {
     __obj.asInstanceOf[Coordinate]
   }
   
-  extension [Self <: Coordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coordinate] (val x: Self) extends AnyVal {
     
     inline def setCanonical(value: CanonicalCoordinate): Self = StObject.set(x, "canonical", value.asInstanceOf[js.Any])
     

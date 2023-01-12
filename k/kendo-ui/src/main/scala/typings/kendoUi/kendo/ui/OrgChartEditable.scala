@@ -23,7 +23,8 @@ object OrgChartEditable {
     __obj.asInstanceOf[OrgChartEditable]
   }
   
-  extension [Self <: OrgChartEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgChartEditable] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Boolean): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

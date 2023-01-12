@@ -29,7 +29,8 @@ object MatterTileOptions {
     __obj.asInstanceOf[MatterTileOptions]
   }
   
-  extension [Self <: MatterTileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatterTileOptions] (val x: Self) extends AnyVal {
     
     inline def setAddToWorld(value: Boolean): Self = StObject.set(x, "addToWorld", value.asInstanceOf[js.Any])
     

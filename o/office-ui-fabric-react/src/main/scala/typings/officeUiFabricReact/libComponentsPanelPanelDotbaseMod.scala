@@ -139,7 +139,8 @@ object libComponentsPanelPanelDotbaseMod {
       __obj.asInstanceOf[IPanelState]
     }
     
-    extension [Self <: IPanelState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPanelState] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

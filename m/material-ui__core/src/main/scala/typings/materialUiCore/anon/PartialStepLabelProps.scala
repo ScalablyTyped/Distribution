@@ -475,7 +475,8 @@ object PartialStepLabelProps {
     __obj.asInstanceOf[PartialStepLabelProps]
   }
   
-  extension [Self <: PartialStepLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStepLabelProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

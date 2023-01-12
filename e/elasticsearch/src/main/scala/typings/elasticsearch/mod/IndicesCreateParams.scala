@@ -27,7 +27,8 @@ object IndicesCreateParams {
     __obj.asInstanceOf[IndicesCreateParams]
   }
   
-  extension [Self <: IndicesCreateParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesCreateParams] (val x: Self) extends AnyVal {
     
     inline def setIncludeTypeName(value: Boolean): Self = StObject.set(x, "includeTypeName", value.asInstanceOf[js.Any])
     

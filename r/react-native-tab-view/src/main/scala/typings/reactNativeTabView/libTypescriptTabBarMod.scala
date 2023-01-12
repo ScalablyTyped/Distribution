@@ -103,7 +103,8 @@ object libTypescriptTabBarMod {
       __obj.asInstanceOf[Props[T]]
     }
     
-    extension [Self <: Props[?], T /* <: Route */](x: Self & Props[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], T /* <: Route */] (val x: Self & Props[T]) extends AnyVal {
       
       inline def setActiveColor(value: String): Self = StObject.set(x, "activeColor", value.asInstanceOf[js.Any])
       

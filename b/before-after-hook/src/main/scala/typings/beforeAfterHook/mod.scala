@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[Hook]
     }
     
-    extension [Self <: Hook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hook] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: Collection): Self = StObject.set(x, "Collection", value.asInstanceOf[js.Any])
       
@@ -356,7 +357,8 @@ object mod {
       __obj.asInstanceOf[TypeStore]
     }
     
-    extension [Self <: TypeStore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeStore] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       

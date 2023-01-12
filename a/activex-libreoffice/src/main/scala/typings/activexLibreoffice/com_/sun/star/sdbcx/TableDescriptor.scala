@@ -59,7 +59,8 @@ object TableDescriptor {
     __obj.asInstanceOf[TableDescriptor]
   }
   
-  extension [Self <: TableDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCatalogName(value: String): Self = StObject.set(x, "CatalogName", value.asInstanceOf[js.Any])
     

@@ -541,7 +541,8 @@ object filledInputFilledInputMod {
       __obj.asInstanceOf[FilledInputProps]
     }
     
-    extension [Self <: FilledInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilledInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

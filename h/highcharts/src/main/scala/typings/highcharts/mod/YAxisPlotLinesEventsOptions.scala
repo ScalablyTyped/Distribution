@@ -34,7 +34,8 @@ object YAxisPlotLinesEventsOptions {
     __obj.asInstanceOf[YAxisPlotLinesEventsOptions]
   }
   
-  extension [Self <: YAxisPlotLinesEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisPlotLinesEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSessionRequest {
     __obj.asInstanceOf[GetSessionRequest]
   }
   
-  extension [Self <: GetSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setAssistantId(value: UuidOrArn): Self = StObject.set(x, "assistantId", value.asInstanceOf[js.Any])
     

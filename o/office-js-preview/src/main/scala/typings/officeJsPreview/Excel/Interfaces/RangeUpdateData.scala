@@ -137,7 +137,8 @@ object RangeUpdateData {
     __obj.asInstanceOf[RangeUpdateData]
   }
   
-  extension [Self <: RangeUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeUpdateData] (val x: Self) extends AnyVal {
     
     inline def setColumnHidden(value: Boolean): Self = StObject.set(x, "columnHidden", value.asInstanceOf[js.Any])
     

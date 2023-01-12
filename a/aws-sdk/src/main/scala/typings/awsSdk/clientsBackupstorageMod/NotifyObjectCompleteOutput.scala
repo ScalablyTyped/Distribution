@@ -23,7 +23,8 @@ object NotifyObjectCompleteOutput {
     __obj.asInstanceOf[NotifyObjectCompleteOutput]
   }
   
-  extension [Self <: NotifyObjectCompleteOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyObjectCompleteOutput] (val x: Self) extends AnyVal {
     
     inline def setObjectChecksum(value: String): Self = StObject.set(x, "ObjectChecksum", value.asInstanceOf[js.Any])
     

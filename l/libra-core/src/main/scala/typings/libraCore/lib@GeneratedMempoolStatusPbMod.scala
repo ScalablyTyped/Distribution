@@ -63,7 +63,8 @@ object `lib@GeneratedMempoolStatusPbMod` {
         __obj.asInstanceOf[AsObject]
       }
       
-      extension [Self <: AsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AsObject] (val x: Self) extends AnyVal {
         
         inline def setCode(value: MempoolAddTransactionStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         

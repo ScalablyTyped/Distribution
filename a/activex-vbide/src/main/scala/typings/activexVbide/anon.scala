@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CancelDefault]
     }
     
-    extension [Self <: CancelDefault](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelDefault] (val x: Self) extends AnyVal {
       
       inline def setCancelDefault(value: Boolean): Self = StObject.set(x, "CancelDefault", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def setReference(value: typings.activexVbide.VBIDE.Reference): Self = StObject.set(x, "Reference", value.asInstanceOf[js.Any])
     }

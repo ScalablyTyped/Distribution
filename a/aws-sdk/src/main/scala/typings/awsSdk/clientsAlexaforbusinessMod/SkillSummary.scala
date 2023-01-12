@@ -38,7 +38,8 @@ object SkillSummary {
     __obj.asInstanceOf[SkillSummary]
   }
   
-  extension [Self <: SkillSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkillSummary] (val x: Self) extends AnyVal {
     
     inline def setEnablementType(value: EnablementType): Self = StObject.set(x, "EnablementType", value.asInstanceOf[js.Any])
     

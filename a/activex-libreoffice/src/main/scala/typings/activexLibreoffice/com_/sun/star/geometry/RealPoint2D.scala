@@ -23,7 +23,8 @@ object RealPoint2D {
     __obj.asInstanceOf[RealPoint2D]
   }
   
-  extension [Self <: RealPoint2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealPoint2D] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "X", value.asInstanceOf[js.Any])
     

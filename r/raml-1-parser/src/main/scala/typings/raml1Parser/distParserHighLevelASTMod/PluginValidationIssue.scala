@@ -24,7 +24,8 @@ object PluginValidationIssue {
     __obj.asInstanceOf[PluginValidationIssue]
   }
   
-  extension [Self <: PluginValidationIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginValidationIssue] (val x: Self) extends AnyVal {
     
     inline def setIsWarning(value: Boolean): Self = StObject.set(x, "isWarning", value.asInstanceOf[js.Any])
     

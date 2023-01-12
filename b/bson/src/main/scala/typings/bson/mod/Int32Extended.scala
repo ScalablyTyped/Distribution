@@ -16,7 +16,8 @@ object Int32Extended {
     __obj.asInstanceOf[Int32Extended]
   }
   
-  extension [Self <: Int32Extended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Int32Extended] (val x: Self) extends AnyVal {
     
     inline def set$numberInt(value: String): Self = StObject.set(x, "$numberInt", value.asInstanceOf[js.Any])
   }

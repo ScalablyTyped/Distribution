@@ -92,7 +92,8 @@ object SteamID {
     __obj.asInstanceOf[SteamID]
   }
   
-  extension [Self <: SteamID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SteamID] (val x: Self) extends AnyVal {
     
     inline def setAccountid(value: Double): Self = StObject.set(x, "accountid", value.asInstanceOf[js.Any])
     

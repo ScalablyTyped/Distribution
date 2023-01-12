@@ -28,7 +28,8 @@ object DescribePatchBaselinesRequest {
     __obj.asInstanceOf[DescribePatchBaselinesRequest]
   }
   
-  extension [Self <: DescribePatchBaselinesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePatchBaselinesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: PatchOrchestratorFilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Projection {
     __obj.asInstanceOf[Projection]
   }
   
-  extension [Self <: Projection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
     
     inline def setNonKeyAttributes(value: NonKeyAttributeNameList): Self = StObject.set(x, "NonKeyAttributes", value.asInstanceOf[js.Any])
     

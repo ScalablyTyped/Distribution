@@ -15,7 +15,8 @@ object ThrottleEndTimeMillis {
     __obj.asInstanceOf[ThrottleEndTimeMillis]
   }
   
-  extension [Self <: ThrottleEndTimeMillis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrottleEndTimeMillis] (val x: Self) extends AnyVal {
     
     inline def setThrottleEndTimeMillis(value: Double): Self = StObject.set(x, "throttleEndTimeMillis", value.asInstanceOf[js.Any])
   }

@@ -70,7 +70,8 @@ object formMod {
       __obj.asInstanceOf[FormProps]
     }
     
-    extension [Self <: FormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode] | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

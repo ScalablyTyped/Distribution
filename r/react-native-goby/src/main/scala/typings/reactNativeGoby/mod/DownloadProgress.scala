@@ -23,7 +23,8 @@ object DownloadProgress {
     __obj.asInstanceOf[DownloadProgress]
   }
   
-  extension [Self <: DownloadProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadProgress] (val x: Self) extends AnyVal {
     
     inline def setReceivedBytes(value: Double): Self = StObject.set(x, "receivedBytes", value.asInstanceOf[js.Any])
     

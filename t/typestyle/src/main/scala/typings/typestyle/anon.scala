@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[AutoGenerateTag]
     }
     
-    extension [Self <: AutoGenerateTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoGenerateTag] (val x: Self) extends AnyVal {
       
       inline def setAutoGenerateTag(value: Boolean): Self = StObject.set(x, "autoGenerateTag", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[TextContent]
     }
     
-    extension [Self <: TextContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextContent] (val x: Self) extends AnyVal {
       
       inline def setTextContent(value: String): Self = StObject.set(x, "textContent", value.asInstanceOf[js.Any])
       

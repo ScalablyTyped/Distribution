@@ -23,7 +23,8 @@ object PostDataParams {
     __obj.asInstanceOf[PostDataParams]
   }
   
-  extension [Self <: PostDataParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostDataParams] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[Param]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

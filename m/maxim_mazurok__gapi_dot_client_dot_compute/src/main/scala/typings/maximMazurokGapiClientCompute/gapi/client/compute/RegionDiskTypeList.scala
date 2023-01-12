@@ -35,7 +35,8 @@ object RegionDiskTypeList {
     __obj.asInstanceOf[RegionDiskTypeList]
   }
   
-  extension [Self <: RegionDiskTypeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionDiskTypeList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

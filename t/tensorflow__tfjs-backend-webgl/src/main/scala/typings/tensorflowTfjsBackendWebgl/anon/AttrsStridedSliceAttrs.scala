@@ -22,7 +22,8 @@ object AttrsStridedSliceAttrs {
     __obj.asInstanceOf[AttrsStridedSliceAttrs]
   }
   
-  extension [Self <: AttrsStridedSliceAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsStridedSliceAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: StridedSliceAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

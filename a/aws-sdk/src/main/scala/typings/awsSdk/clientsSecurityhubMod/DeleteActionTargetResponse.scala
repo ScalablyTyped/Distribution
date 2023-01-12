@@ -18,7 +18,8 @@ object DeleteActionTargetResponse {
     __obj.asInstanceOf[DeleteActionTargetResponse]
   }
   
-  extension [Self <: DeleteActionTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteActionTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setActionTargetArn(value: NonEmptyString): Self = StObject.set(x, "ActionTargetArn", value.asInstanceOf[js.Any])
   }

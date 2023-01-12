@@ -30,7 +30,8 @@ object Chain {
     __obj.asInstanceOf[Chain[E, M]]
   }
   
-  extension [Self <: Chain[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & (Chain[E, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chain[?, ?], E, M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & (Chain[E, M])) extends AnyVal {
     
     inline def setAp(value: (TheseT1[M, E, js.Function1[Any, Any]], TheseT1[M, E, Any]) => TheseT1[M, E, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
     

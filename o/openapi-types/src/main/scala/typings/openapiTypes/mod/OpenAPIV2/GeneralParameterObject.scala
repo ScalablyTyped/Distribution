@@ -20,7 +20,8 @@ object GeneralParameterObject {
     __obj.asInstanceOf[GeneralParameterObject]
   }
   
-  extension [Self <: GeneralParameterObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralParameterObject] (val x: Self) extends AnyVal {
     
     inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
     

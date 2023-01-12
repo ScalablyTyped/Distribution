@@ -41,7 +41,8 @@ object ShoppingAdGroupTargeting {
     __obj.asInstanceOf[ShoppingAdGroupTargeting]
   }
   
-  extension [Self <: ShoppingAdGroupTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAdGroupTargeting] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: () => ShoppingAdGroupAudienceSelector): Self = StObject.set(x, "audiences", js.Any.fromFunction0(value))
     

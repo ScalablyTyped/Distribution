@@ -15,7 +15,8 @@ object IndicesStatsShardsTotalStats {
     __obj.asInstanceOf[IndicesStatsShardsTotalStats]
   }
   
-  extension [Self <: IndicesStatsShardsTotalStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesStatsShardsTotalStats] (val x: Self) extends AnyVal {
     
     inline def setTotal_count(value: long): Self = StObject.set(x, "total_count", value.asInstanceOf[js.Any])
   }

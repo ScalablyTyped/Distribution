@@ -42,7 +42,8 @@ object DeviceManagementExchangeConnector {
     __obj.asInstanceOf[DeviceManagementExchangeConnector]
   }
   
-  extension [Self <: DeviceManagementExchangeConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceManagementExchangeConnector] (val x: Self) extends AnyVal {
     
     inline def setConnectorServerName(value: NullableOption[String]): Self = StObject.set(x, "connectorServerName", value.asInstanceOf[js.Any])
     

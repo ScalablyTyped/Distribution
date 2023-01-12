@@ -29,7 +29,8 @@ object VastError {
     __obj.asInstanceOf[VastError]
   }
   
-  extension [Self <: VastError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastError] (val x: Self) extends AnyVal {
     
     inline def setERRORCODE(value: String | Double): Self = StObject.set(x, "ERRORCODE", value.asInstanceOf[js.Any])
     

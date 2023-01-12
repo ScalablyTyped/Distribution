@@ -28,7 +28,8 @@ object UpdateGatewayResponseRequest {
     __obj.asInstanceOf[UpdateGatewayResponseRequest]
   }
   
-  extension [Self <: UpdateGatewayResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateGatewayResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setPatchOperations(value: ListOfPatchOperation): Self = StObject.set(x, "patchOperations", value.asInstanceOf[js.Any])
     

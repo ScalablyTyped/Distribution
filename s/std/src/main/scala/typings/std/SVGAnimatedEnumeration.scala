@@ -20,7 +20,8 @@ object SVGAnimatedEnumeration {
     __obj.asInstanceOf[SVGAnimatedEnumeration]
   }
   
-  extension [Self <: SVGAnimatedEnumeration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAnimatedEnumeration] (val x: Self) extends AnyVal {
     
     inline def setAnimVal(value: Double): Self = StObject.set(x, "animVal", value.asInstanceOf[js.Any])
     

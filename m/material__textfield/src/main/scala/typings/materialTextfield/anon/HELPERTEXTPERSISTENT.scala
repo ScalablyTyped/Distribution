@@ -19,7 +19,8 @@ object HELPERTEXTPERSISTENT {
     __obj.asInstanceOf[HELPERTEXTPERSISTENT]
   }
   
-  extension [Self <: HELPERTEXTPERSISTENT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HELPERTEXTPERSISTENT] (val x: Self) extends AnyVal {
     
     inline def setHELPER_TEXT_PERSISTENT(value: String): Self = StObject.set(x, "HELPER_TEXT_PERSISTENT", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ValueAsPromise {
     __obj.asInstanceOf[ValueAsPromise]
   }
   
-  extension [Self <: ValueAsPromise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueAsPromise] (val x: Self) extends AnyVal {
     
     inline def setContext(value: default): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

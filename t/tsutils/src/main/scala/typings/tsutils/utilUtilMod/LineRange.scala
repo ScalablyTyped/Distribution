@@ -18,7 +18,8 @@ object LineRange {
     __obj.asInstanceOf[LineRange]
   }
   
-  extension [Self <: LineRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineRange] (val x: Self) extends AnyVal {
     
     inline def setContentLength(value: Double): Self = StObject.set(x, "contentLength", value.asInstanceOf[js.Any])
   }

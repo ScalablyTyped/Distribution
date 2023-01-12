@@ -30,7 +30,8 @@ object ObserverOpts {
     __obj.asInstanceOf[ObserverOpts]
   }
   
-  extension [Self <: ObserverOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObserverOpts] (val x: Self) extends AnyVal {
     
     inline def setLinks(value: Boolean): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

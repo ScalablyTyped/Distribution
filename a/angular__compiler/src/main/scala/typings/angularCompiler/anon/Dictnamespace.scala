@@ -19,7 +19,8 @@ object Dictnamespace {
     __obj.asInstanceOf[Dictnamespace]
   }
   
-  extension [Self <: Dictnamespace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictnamespace] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: TagContentType): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
   }

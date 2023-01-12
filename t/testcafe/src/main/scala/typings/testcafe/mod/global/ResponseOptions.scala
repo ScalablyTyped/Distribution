@@ -33,7 +33,8 @@ object ResponseOptions {
     __obj.asInstanceOf[ResponseOptions]
   }
   
-  extension [Self <: ResponseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ResponseBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

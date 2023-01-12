@@ -31,7 +31,8 @@ object PlacementContainerOverrid {
     __obj.asInstanceOf[PlacementContainerOverrid]
   }
   
-  extension [Self <: PlacementContainerOverrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementContainerOverrid] (val x: Self) extends AnyVal {
     
     inline def setActionButtonContainer(value: Override[Any]): Self = StObject.set(x, "ActionButtonContainer", value.asInstanceOf[js.Any])
     

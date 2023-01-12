@@ -75,7 +75,8 @@ object Century {
     __obj.asInstanceOf[Century]
   }
   
-  extension [Self <: Century](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Century] (val x: Self) extends AnyVal {
     
     inline def setCentury(value: Requireable[Any]): Self = StObject.set(x, "century", value.asInstanceOf[js.Any])
     

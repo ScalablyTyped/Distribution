@@ -23,7 +23,8 @@ object CreateFpgaImageResult {
     __obj.asInstanceOf[CreateFpgaImageResult]
   }
   
-  extension [Self <: CreateFpgaImageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFpgaImageResult] (val x: Self) extends AnyVal {
     
     inline def setFpgaImageGlobalId(value: String): Self = StObject.set(x, "FpgaImageGlobalId", value.asInstanceOf[js.Any])
     

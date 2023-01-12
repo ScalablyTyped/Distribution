@@ -37,7 +37,8 @@ object IUtilDomEvent {
     __obj.asInstanceOf[IUtilDomEvent]
   }
   
-  extension [Self <: IUtilDomEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUtilDomEvent] (val x: Self) extends AnyVal {
     
     inline def setAddListener(value: (HTMLElement, String, js.Function) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction3(value))
     

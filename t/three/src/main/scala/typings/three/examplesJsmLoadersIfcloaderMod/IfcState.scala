@@ -22,7 +22,8 @@ object IfcState {
     __obj.asInstanceOf[IfcState]
   }
   
-  extension [Self <: IfcState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfcState] (val x: Self) extends AnyVal {
     
     inline def setApi(value: IfcAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

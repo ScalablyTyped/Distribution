@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[HttpRequestqueryQueryPara]
     }
     
-    extension [Self <: HttpRequestqueryQueryPara](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequestqueryQueryPara] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[UnhoistableHeaders]
     }
     
-    extension [Self <: UnhoistableHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnhoistableHeaders] (val x: Self) extends AnyVal {
       
       inline def setUnhoistableHeaders(value: Set[String]): Self = StObject.set(x, "unhoistableHeaders", value.asInstanceOf[js.Any])
       

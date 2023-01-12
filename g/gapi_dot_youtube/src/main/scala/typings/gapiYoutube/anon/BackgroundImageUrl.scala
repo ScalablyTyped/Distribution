@@ -128,7 +128,8 @@ object BackgroundImageUrl {
     __obj.asInstanceOf[BackgroundImageUrl]
   }
   
-  extension [Self <: BackgroundImageUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundImageUrl] (val x: Self) extends AnyVal {
     
     inline def setBackgroundImageUrl(value: Default): Self = StObject.set(x, "backgroundImageUrl", value.asInstanceOf[js.Any])
     

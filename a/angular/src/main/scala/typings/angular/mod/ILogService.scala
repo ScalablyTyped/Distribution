@@ -44,7 +44,8 @@ object ILogService {
     __obj.asInstanceOf[ILogService]
   }
   
-  extension [Self <: ILogService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogService] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: /* repeated */ Any => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     

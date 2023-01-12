@@ -28,7 +28,8 @@ object StopActivityStreamResponse {
     __obj.asInstanceOf[StopActivityStreamResponse]
   }
   
-  extension [Self <: StopActivityStreamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopActivityStreamResponse] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamName(value: String): Self = StObject.set(x, "KinesisStreamName", value.asInstanceOf[js.Any])
     

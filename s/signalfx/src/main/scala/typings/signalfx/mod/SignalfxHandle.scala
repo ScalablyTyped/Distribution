@@ -26,7 +26,8 @@ object SignalfxHandle {
     __obj.asInstanceOf[SignalfxHandle]
   }
   
-  extension [Self <: SignalfxHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalfxHandle] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Boolean): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

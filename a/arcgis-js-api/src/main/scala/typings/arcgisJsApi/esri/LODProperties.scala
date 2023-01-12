@@ -41,7 +41,8 @@ object LODProperties {
     __obj.asInstanceOf[LODProperties]
   }
   
-  extension [Self <: LODProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LODProperties] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

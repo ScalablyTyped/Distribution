@@ -25,7 +25,8 @@ object RoadviewOptions {
     __obj.asInstanceOf[RoadviewOptions]
   }
   
-  extension [Self <: RoadviewOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoadviewOptions] (val x: Self) extends AnyVal {
     
     inline def setPan(value: Double): Self = StObject.set(x, "pan", value.asInstanceOf[js.Any])
     

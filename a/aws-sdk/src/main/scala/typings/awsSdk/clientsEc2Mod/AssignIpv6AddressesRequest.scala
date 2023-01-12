@@ -38,7 +38,8 @@ object AssignIpv6AddressesRequest {
     __obj.asInstanceOf[AssignIpv6AddressesRequest]
   }
   
-  extension [Self <: AssignIpv6AddressesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignIpv6AddressesRequest] (val x: Self) extends AnyVal {
     
     inline def setIpv6AddressCount(value: Integer): Self = StObject.set(x, "Ipv6AddressCount", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SearchLayerProperties {
     __obj.asInstanceOf[SearchLayerProperties]
   }
   
-  extension [Self <: SearchLayerProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchLayerProperties] (val x: Self) extends AnyVal {
     
     inline def setField(value: SearchLayerFieldProperties): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

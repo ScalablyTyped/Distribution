@@ -27,7 +27,8 @@ object distComponentsThumbnailPlaceholderMod {
       __obj.asInstanceOf[ThumbnailPlaceholderProps]
     }
     
-    extension [Self <: ThumbnailPlaceholderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThumbnailPlaceholderProps] (val x: Self) extends AnyVal {
       
       inline def setHandleFiles(value: js.Array[File] => Unit): Self = StObject.set(x, "handleFiles", js.Any.fromFunction1(value))
       

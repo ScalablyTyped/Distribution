@@ -30,7 +30,8 @@ object HighlightFrameRequest {
     __obj.asInstanceOf[HighlightFrameRequest]
   }
   
-  extension [Self <: HighlightFrameRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightFrameRequest] (val x: Self) extends AnyVal {
     
     inline def setContentColor(value: RGBA): Self = StObject.set(x, "contentColor", value.asInstanceOf[js.Any])
     

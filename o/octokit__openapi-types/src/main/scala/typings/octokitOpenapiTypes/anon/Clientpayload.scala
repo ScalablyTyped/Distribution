@@ -20,7 +20,8 @@ object Clientpayload {
     __obj.asInstanceOf[Clientpayload]
   }
   
-  extension [Self <: Clientpayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Clientpayload] (val x: Self) extends AnyVal {
     
     inline def setClient_payload(value: StringDictionary[Any]): Self = StObject.set(x, "client_payload", value.asInstanceOf[js.Any])
     

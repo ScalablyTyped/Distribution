@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[DynamicNumberProps]
     }
     
-    extension [Self <: DynamicNumberProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicNumberProps] (val x: Self) extends AnyVal {
       
       inline def setFraction(value: Double): Self = StObject.set(x, "fraction", value.asInstanceOf[js.Any])
       

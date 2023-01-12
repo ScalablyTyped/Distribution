@@ -70,7 +70,8 @@ object AutoscrollSpeed {
     __obj.asInstanceOf[AutoscrollSpeed[T]]
   }
   
-  extension [Self <: AutoscrollSpeed[?], T](x: Self & AutoscrollSpeed[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscrollSpeed[?], T] (val x: Self & AutoscrollSpeed[T]) extends AnyVal {
     
     inline def setActivationDistance(value: Double): Self = StObject.set(x, "activationDistance", value.asInstanceOf[js.Any])
     

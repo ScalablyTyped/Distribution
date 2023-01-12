@@ -66,7 +66,8 @@ object distSrcCircuitCircuitStreamHandlerMod {
       __obj.asInstanceOf[StreamHandlerOptions]
     }
     
-    extension [Self <: StreamHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxLength(value: Double): Self = StObject.set(x, "maxLength", value.asInstanceOf[js.Any])
       

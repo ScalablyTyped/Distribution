@@ -42,7 +42,8 @@ object TeamSettingsIteration {
     __obj.asInstanceOf[TeamSettingsIteration]
   }
   
-  extension [Self <: TeamSettingsIteration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TeamSettingsIteration] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: TeamIterationAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

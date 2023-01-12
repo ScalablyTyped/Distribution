@@ -98,7 +98,8 @@ object ServerEvents {
     __obj.asInstanceOf[ServerEvents]
   }
   
-  extension [Self <: ServerEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerEvents] (val x: Self) extends AnyVal {
     
     inline def setClosed(value: () => Unit): Self = StObject.set(x, "closed", js.Any.fromFunction0(value))
     

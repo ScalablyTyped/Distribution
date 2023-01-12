@@ -47,7 +47,8 @@ object ICallControl {
     __obj.asInstanceOf[ICallControl]
   }
   
-  extension [Self <: ICallControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICallControl] (val x: Self) extends AnyVal {
     
     inline def setEndCall(value: Double => Unit): Self = StObject.set(x, "endCall", js.Any.fromFunction1(value))
     

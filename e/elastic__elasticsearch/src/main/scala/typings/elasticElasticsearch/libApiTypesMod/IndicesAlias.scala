@@ -25,7 +25,8 @@ object IndicesAlias {
     __obj.asInstanceOf[IndicesAlias]
   }
   
-  extension [Self <: IndicesAlias](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAlias] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: QueryDslQueryContainer): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object tableTableContextMod extends Shortcut {
       __obj.asInstanceOf[TableContextProps]
     }
     
-    extension [Self <: TableContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableContextProps] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: Padding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       

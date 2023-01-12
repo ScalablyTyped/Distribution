@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[PickStoragegetItemsetItem]
     }
     
-    extension [Self <: PickStoragegetItemsetItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickStoragegetItemsetItem] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: /* key */ String => String | Null): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       

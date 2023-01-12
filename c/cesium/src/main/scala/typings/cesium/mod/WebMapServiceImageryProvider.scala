@@ -329,7 +329,8 @@ object WebMapServiceImageryProvider {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
       

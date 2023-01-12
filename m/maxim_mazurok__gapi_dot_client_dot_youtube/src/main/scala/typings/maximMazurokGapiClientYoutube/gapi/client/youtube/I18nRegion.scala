@@ -26,7 +26,8 @@ object I18nRegion {
     __obj.asInstanceOf[I18nRegion]
   }
   
-  extension [Self <: I18nRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nRegion] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

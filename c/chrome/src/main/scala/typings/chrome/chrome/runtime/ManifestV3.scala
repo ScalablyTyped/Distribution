@@ -39,7 +39,8 @@ object ManifestV3 {
     __obj.asInstanceOf[ManifestV3]
   }
   
-  extension [Self <: ManifestV3](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestV3] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ManifestAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

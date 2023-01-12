@@ -15,7 +15,8 @@ object UserBlocks {
     __obj.asInstanceOf[UserBlocks]
   }
   
-  extension [Self <: UserBlocks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserBlocks] (val x: Self) extends AnyVal {
     
     inline def setBlocked_for(value: js.Array[BlockedForEntry]): Self = StObject.set(x, "blocked_for", value.asInstanceOf[js.Any])
     

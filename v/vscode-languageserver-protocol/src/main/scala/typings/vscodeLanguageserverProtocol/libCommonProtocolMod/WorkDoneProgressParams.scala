@@ -19,7 +19,8 @@ object WorkDoneProgressParams {
     __obj.asInstanceOf[WorkDoneProgressParams]
   }
   
-  extension [Self <: WorkDoneProgressParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkDoneProgressParams] (val x: Self) extends AnyVal {
     
     inline def setWorkDoneToken(value: ProgressToken): Self = StObject.set(x, "workDoneToken", value.asInstanceOf[js.Any])
     

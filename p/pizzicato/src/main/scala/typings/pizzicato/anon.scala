@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: FileSoundOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object anon {
       __obj.asInstanceOf[OptionsScriptSoundOptions]
     }
     
-    extension [Self <: OptionsScriptSoundOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsScriptSoundOptions] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: ScriptSoundOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[OptionsSource]
     }
     
-    extension [Self <: OptionsSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsSource] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: SoundOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: WaveSoundOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

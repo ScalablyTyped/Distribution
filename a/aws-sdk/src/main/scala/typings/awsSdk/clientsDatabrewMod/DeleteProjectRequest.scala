@@ -18,7 +18,8 @@ object DeleteProjectRequest {
     __obj.asInstanceOf[DeleteProjectRequest]
   }
   
-  extension [Self <: DeleteProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: ProjectName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

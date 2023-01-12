@@ -40,7 +40,8 @@ object ClusterOptions {
     __obj.asInstanceOf[ClusterOptions]
   }
   
-  extension [Self <: ClusterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     

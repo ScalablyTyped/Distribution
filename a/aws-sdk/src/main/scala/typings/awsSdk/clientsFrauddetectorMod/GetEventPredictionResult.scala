@@ -28,7 +28,8 @@ object GetEventPredictionResult {
     __obj.asInstanceOf[GetEventPredictionResult]
   }
   
-  extension [Self <: GetEventPredictionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventPredictionResult] (val x: Self) extends AnyVal {
     
     inline def setExternalModelOutputs(value: ListOfExternalModelOutputs): Self = StObject.set(x, "externalModelOutputs", value.asInstanceOf[js.Any])
     

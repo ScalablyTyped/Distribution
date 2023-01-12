@@ -91,7 +91,8 @@ object srcPluginMinimapMod {
       __obj.asInstanceOf[MinimapPluginParams]
     }
     
-    extension [Self <: MinimapPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinimapPluginParams] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | HTMLElement | `false`): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

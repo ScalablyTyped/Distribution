@@ -23,7 +23,8 @@ object Assertions {
     __obj.asInstanceOf[Assertions]
   }
   
-  extension [Self <: Assertions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Assertions] (val x: Self) extends AnyVal {
     
     inline def setAssertions(value: Record[String, String]): Self = StObject.set(x, "assertions", value.asInstanceOf[js.Any])
     

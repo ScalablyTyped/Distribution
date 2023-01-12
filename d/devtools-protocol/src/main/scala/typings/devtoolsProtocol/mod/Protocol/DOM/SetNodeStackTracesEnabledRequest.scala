@@ -18,7 +18,8 @@ object SetNodeStackTracesEnabledRequest {
     __obj.asInstanceOf[SetNodeStackTracesEnabledRequest]
   }
   
-  extension [Self <: SetNodeStackTracesEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetNodeStackTracesEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: Boolean): Self = StObject.set(x, "enable", value.asInstanceOf[js.Any])
   }

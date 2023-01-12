@@ -166,7 +166,8 @@ object ATVAnimation {
     __obj.asInstanceOf[ATVAnimation]
   }
   
-  extension [Self <: ATVAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVAnimation] (val x: Self) extends AnyVal {
     
     inline def setAdditive(value: Boolean): Self = StObject.set(x, "additive", value.asInstanceOf[js.Any])
     

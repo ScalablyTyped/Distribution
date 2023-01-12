@@ -67,7 +67,8 @@ object libEsmComponentsTooltipTooltipMod {
       __obj.asInstanceOf[ITooltipProps]
     }
     
-    extension [Self <: ITooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITooltipProps] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Element | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       

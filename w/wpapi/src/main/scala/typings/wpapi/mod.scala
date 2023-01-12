@@ -331,7 +331,8 @@ object mod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
       
@@ -368,7 +369,8 @@ object mod {
       __obj.asInstanceOf[HTTPArgument]
     }
     
-    extension [Self <: HTTPArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPArgument] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String | Double): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -433,7 +435,8 @@ object mod {
       __obj.asInstanceOf[HTTPEndpoint]
     }
     
-    extension [Self <: HTTPEndpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTTPEndpoint] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: StringDictionary[HTTPArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -481,7 +484,8 @@ object mod {
       __obj.asInstanceOf[RegisterRouteOptions]
     }
     
-    extension [Self <: RegisterRouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegisterRouteOptions] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[HTTPMethod]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -518,7 +522,8 @@ object mod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setEndpoints(value: js.Array[HTTPEndpoint]): Self = StObject.set(x, "endpoints", value.asInstanceOf[js.Any])
       
@@ -557,7 +562,8 @@ object mod {
       __obj.asInstanceOf[Transport]
     }
     
-    extension [Self <: Transport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transport] (val x: Self) extends AnyVal {
       
       inline def setDelete(value: (/* wpreq */ WPRequest, /* cb */ js.UndefOr[WPRequestCallback]) => js.Promise[Any]): Self = StObject.set(x, "delete", js.Any.fromFunction2(value))
       
@@ -759,7 +765,8 @@ object mod {
       __obj.asInstanceOf[WPAPIOptions]
     }
     
-    extension [Self <: WPAPIOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WPAPIOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -798,7 +805,8 @@ object mod {
       __obj.asInstanceOf[WPRequestOptions]
     }
     
-    extension [Self <: WPRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WPRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object libTypesMod {
       __obj.asInstanceOf[Filters[T]]
     }
     
-    extension [Self <: Filters[?], T](x: Self & Filters[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filters[?], T] (val x: Self & Filters[T]) extends AnyVal {
       
       inline def setExclude(value: T): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMap(value: MapFunction): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

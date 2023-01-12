@@ -31,7 +31,8 @@ object StandardTimeZoneOffset {
     __obj.asInstanceOf[StandardTimeZoneOffset]
   }
   
-  extension [Self <: StandardTimeZoneOffset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StandardTimeZoneOffset] (val x: Self) extends AnyVal {
     
     inline def setDayOccurrence(value: NullableOption[Double]): Self = StObject.set(x, "dayOccurrence", value.asInstanceOf[js.Any])
     

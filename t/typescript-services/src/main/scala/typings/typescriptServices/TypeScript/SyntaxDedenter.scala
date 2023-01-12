@@ -136,7 +136,8 @@ object SyntaxDedenter {
     __obj.asInstanceOf[SyntaxDedenter]
   }
   
-  extension [Self <: SyntaxDedenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxDedenter] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Any): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

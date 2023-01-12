@@ -37,7 +37,8 @@ object libPlotsCirclePackingUtilsMod {
       __obj.asInstanceOf[TransformDataOptions]
     }
     
-    extension [Self <: TransformDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformDataOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Record[String, Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

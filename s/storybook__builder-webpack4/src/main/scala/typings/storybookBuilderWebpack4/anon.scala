@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Exclude]
     }
     
-    extension [Self <: Exclude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclude] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: js.RegExp): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Loader]
     }
     
-    extension [Self <: Loader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
       
       inline def setLoader(value: String): Self = StObject.set(x, "loader", value.asInstanceOf[js.Any])
       

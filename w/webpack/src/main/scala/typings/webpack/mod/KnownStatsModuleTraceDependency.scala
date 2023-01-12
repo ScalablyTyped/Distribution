@@ -15,7 +15,8 @@ object KnownStatsModuleTraceDependency {
     __obj.asInstanceOf[KnownStatsModuleTraceDependency]
   }
   
-  extension [Self <: KnownStatsModuleTraceDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnownStatsModuleTraceDependency] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: String): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

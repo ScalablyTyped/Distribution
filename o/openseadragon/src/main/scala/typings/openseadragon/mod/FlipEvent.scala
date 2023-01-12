@@ -17,7 +17,8 @@ object FlipEvent {
     __obj.asInstanceOf[FlipEvent]
   }
   
-  extension [Self <: FlipEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlipEvent] (val x: Self) extends AnyVal {
     
     inline def setFlipped(value: Double): Self = StObject.set(x, "flipped", value.asInstanceOf[js.Any])
   }

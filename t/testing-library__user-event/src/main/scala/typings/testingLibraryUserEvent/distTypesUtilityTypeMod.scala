@@ -31,7 +31,8 @@ object distTypesUtilityTypeMod {
       __obj.asInstanceOf[typeOptions]
     }
     
-    extension [Self <: typeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typeOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialSelectionEnd(value: Double): Self = StObject.set(x, "initialSelectionEnd", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object CreateWorldGenerationJobResponse {
     __obj.asInstanceOf[CreateWorldGenerationJobResponse]
   }
   
-  extension [Self <: CreateWorldGenerationJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorldGenerationJobResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

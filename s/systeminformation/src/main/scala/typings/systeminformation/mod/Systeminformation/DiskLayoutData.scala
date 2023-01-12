@@ -67,7 +67,8 @@ object DiskLayoutData {
     __obj.asInstanceOf[DiskLayoutData]
   }
   
-  extension [Self <: DiskLayoutData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskLayoutData] (val x: Self) extends AnyVal {
     
     inline def setBytesPerSector(value: Double): Self = StObject.set(x, "bytesPerSector", value.asInstanceOf[js.Any])
     

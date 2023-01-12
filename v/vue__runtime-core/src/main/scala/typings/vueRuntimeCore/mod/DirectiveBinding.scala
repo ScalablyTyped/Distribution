@@ -38,7 +38,8 @@ object DirectiveBinding {
     __obj.asInstanceOf[DirectiveBinding[V]]
   }
   
-  extension [Self <: DirectiveBinding[?], V](x: Self & DirectiveBinding[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveBinding[?], V] (val x: Self & DirectiveBinding[V]) extends AnyVal {
     
     inline def setArg(value: String): Self = StObject.set(x, "arg", value.asInstanceOf[js.Any])
     

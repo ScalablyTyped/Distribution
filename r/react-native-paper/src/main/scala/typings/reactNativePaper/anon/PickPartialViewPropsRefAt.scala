@@ -178,7 +178,8 @@ object PickPartialViewPropsRefAt {
     __obj.asInstanceOf[PickPartialViewPropsRefAt]
   }
   
-  extension [Self <: PickPartialViewPropsRefAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickPartialViewPropsRefAt] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Unit): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[ShouldRetry]
     }
     
-    extension [Self <: ShouldRetry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShouldRetry] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: GaxiosOptions): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object PhaseContext {
     __obj.asInstanceOf[PhaseContext]
   }
   
-  extension [Self <: PhaseContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhaseContext] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

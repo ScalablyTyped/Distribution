@@ -79,7 +79,8 @@ object PartialDropzoneOptionsAccept {
     __obj.asInstanceOf[PartialDropzoneOptionsAccept]
   }
   
-  extension [Self <: PartialDropzoneOptionsAccept](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDropzoneOptionsAccept] (val x: Self) extends AnyVal {
     
     inline def setAccept(
       value: String | typings.interactjsTypes.coreTypesMod.Element | (js.Function1[/* param0 */ Dropzone, Boolean])

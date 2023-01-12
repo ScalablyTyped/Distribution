@@ -31,7 +31,8 @@ object GoogleDevtoolsArtifactregistryV1File {
     __obj.asInstanceOf[GoogleDevtoolsArtifactregistryV1File]
   }
   
-  extension [Self <: GoogleDevtoolsArtifactregistryV1File](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsArtifactregistryV1File] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

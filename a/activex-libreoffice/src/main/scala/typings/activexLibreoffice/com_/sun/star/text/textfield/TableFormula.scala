@@ -77,7 +77,8 @@ object TableFormula {
     __obj.asInstanceOf[TableFormula]
   }
   
-  extension [Self <: TableFormula](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableFormula] (val x: Self) extends AnyVal {
     
     inline def setCurrentPresentation(value: String): Self = StObject.set(x, "CurrentPresentation", value.asInstanceOf[js.Any])
     

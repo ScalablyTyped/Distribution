@@ -20,7 +20,8 @@ object TypeofForm {
     __obj.asInstanceOf[TypeofForm]
   }
   
-  extension [Self <: TypeofForm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofForm] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Form): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

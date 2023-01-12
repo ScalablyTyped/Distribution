@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[AssignmentMethod]
     }
     
-    extension [Self <: AssignmentMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssignmentMethod] (val x: Self) extends AnyVal {
       
       inline def setAssignmentMethod(value: String): Self = StObject.set(x, "assignmentMethod", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Cache]
     }
     
-    extension [Self <: Cache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cache] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -192,7 +194,8 @@ object anon {
       __obj.asInstanceOf[ConnectString]
     }
     
-    extension [Self <: ConnectString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectString] (val x: Self) extends AnyVal {
       
       inline def setConnectString(value: String): Self = StObject.set(x, "connectString", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object anon {
       __obj.asInstanceOf[ConnectionString]
     }
     
-    extension [Self <: ConnectionString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionString] (val x: Self) extends AnyVal {
       
       inline def setConnectionString(value: String): Self = StObject.set(x, "connectionString", value.asInstanceOf[js.Any])
       
@@ -275,7 +279,8 @@ object anon {
       __obj.asInstanceOf[Correlation[T]]
     }
     
-    extension [Self <: Correlation[?], T](x: Self & Correlation[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Correlation[?], T] (val x: Self & Correlation[T]) extends AnyVal {
       
       inline def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object anon {
       __obj.asInstanceOf[Hint]
     }
     
-    extension [Self <: Hint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hint] (val x: Self) extends AnyVal {
       
       inline def setHint(value: String): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     }
@@ -339,7 +345,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -374,7 +381,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -402,7 +410,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -425,7 +434,8 @@ object anon {
       __obj.asInstanceOf[Operation]
     }
     
-    extension [Self <: Operation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
       
       inline def setOperation(value: Double): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
       
@@ -445,7 +455,8 @@ object anon {
       __obj.asInstanceOf[Tables]
     }
     
-    extension [Self <: Tables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tables] (val x: Self) extends AnyVal {
       
       inline def setTables(value: SubscriptionTables): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     }
@@ -463,7 +474,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -488,7 +500,8 @@ object anon {
       __obj.asInstanceOf[TypeClass[T]]
     }
     
-    extension [Self <: TypeClass[?], T](x: Self & TypeClass[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeClass[?], T] (val x: Self & TypeClass[T]) extends AnyVal {
       
       inline def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

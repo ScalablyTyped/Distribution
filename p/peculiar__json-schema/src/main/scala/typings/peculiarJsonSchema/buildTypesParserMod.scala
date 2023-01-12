@@ -58,7 +58,8 @@ object buildTypesParserMod {
       __obj.asInstanceOf[IJsonParserOptions[T]]
     }
     
-    extension [Self <: IJsonParserOptions[?], T](x: Self & IJsonParserOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonParserOptions[?], T] (val x: Self & IJsonParserOptions[T]) extends AnyVal {
       
       inline def setSchemaName(value: String): Self = StObject.set(x, "schemaName", value.asInstanceOf[js.Any])
       

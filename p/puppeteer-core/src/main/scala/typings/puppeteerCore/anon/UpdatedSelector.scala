@@ -18,7 +18,8 @@ object UpdatedSelector {
     __obj.asInstanceOf[UpdatedSelector]
   }
   
-  extension [Self <: UpdatedSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatedSelector] (val x: Self) extends AnyVal {
     
     inline def setQueryHandler(value: PuppeteerQueryHandler): Self = StObject.set(x, "queryHandler", value.asInstanceOf[js.Any])
     

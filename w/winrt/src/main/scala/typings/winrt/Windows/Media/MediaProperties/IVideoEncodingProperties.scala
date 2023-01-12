@@ -35,7 +35,8 @@ object IVideoEncodingProperties {
     __obj.asInstanceOf[IVideoEncodingProperties]
   }
   
-  extension [Self <: IVideoEncodingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVideoEncodingProperties] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

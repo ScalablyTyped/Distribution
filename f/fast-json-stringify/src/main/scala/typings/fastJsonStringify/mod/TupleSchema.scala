@@ -25,7 +25,8 @@ object TupleSchema {
     __obj.asInstanceOf[TupleSchema]
   }
   
-  extension [Self <: TupleSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleSchema] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[Schema]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

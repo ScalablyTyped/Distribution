@@ -26,7 +26,8 @@ object DateTimeProperty {
     __obj.asInstanceOf[DateTimeProperty]
   }
   
-  extension [Self <: DateTimeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DateTimeProperty] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: DateTimeMetadata): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

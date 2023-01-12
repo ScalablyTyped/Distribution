@@ -76,7 +76,8 @@ object PartialEditorSettingsEdit {
     __obj.asInstanceOf[PartialEditorSettingsEdit]
   }
   
-  extension [Self <: PartialEditorSettingsEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEditorSettingsEdit] (val x: Self) extends AnyVal {
     
     inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
     

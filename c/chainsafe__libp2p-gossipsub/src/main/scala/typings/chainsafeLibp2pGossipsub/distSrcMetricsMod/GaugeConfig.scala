@@ -21,7 +21,8 @@ object GaugeConfig {
     __obj.asInstanceOf[GaugeConfig[Labels]]
   }
   
-  extension [Self <: GaugeConfig[?], Labels /* <: LabelsGeneric */](x: Self & GaugeConfig[Labels]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaugeConfig[?], Labels /* <: LabelsGeneric */] (val x: Self & GaugeConfig[Labels]) extends AnyVal {
     
     inline def setHelp(value: String): Self = StObject.set(x, "help", value.asInstanceOf[js.Any])
     

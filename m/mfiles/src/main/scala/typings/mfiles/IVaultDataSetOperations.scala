@@ -26,7 +26,8 @@ object IVaultDataSetOperations {
     __obj.asInstanceOf[IVaultDataSetOperations]
   }
   
-  extension [Self <: IVaultDataSetOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVaultDataSetOperations] (val x: Self) extends AnyVal {
     
     inline def setGetDataSetExportingStatus(value: Double => IDataSetExportingStatus): Self = StObject.set(x, "GetDataSetExportingStatus", js.Any.fromFunction1(value))
     

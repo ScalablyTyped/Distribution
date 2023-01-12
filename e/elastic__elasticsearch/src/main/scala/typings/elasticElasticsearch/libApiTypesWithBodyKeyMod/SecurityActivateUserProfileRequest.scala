@@ -19,7 +19,8 @@ object SecurityActivateUserProfileRequest {
     __obj.asInstanceOf[SecurityActivateUserProfileRequest]
   }
   
-  extension [Self <: SecurityActivateUserProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityActivateUserProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Accesstoken): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

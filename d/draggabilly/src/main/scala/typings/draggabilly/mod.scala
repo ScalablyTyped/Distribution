@@ -112,7 +112,8 @@ object mod {
       __obj.asInstanceOf[DraggabillyOptions]
     }
     
-    extension [Self <: DraggabillyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DraggabillyOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.draggabilly.draggabillyStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -145,7 +146,8 @@ object mod {
       __obj.asInstanceOf[Position]
     }
     
-    extension [Self <: Position](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

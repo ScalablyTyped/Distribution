@@ -158,7 +158,8 @@ object mod {
       __obj.asInstanceOf[ZoomistOptions]
     }
     
-    extension [Self <: ZoomistOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomistOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Boolean): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       

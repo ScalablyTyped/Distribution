@@ -20,7 +20,8 @@ object LastResultDetails {
     __obj.asInstanceOf[LastResultDetails]
   }
   
-  extension [Self <: LastResultDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastResultDetails] (val x: Self) extends AnyVal {
     
     inline def setDateCompleted(value: js.Date): Self = StObject.set(x, "dateCompleted", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object SearchCompletionSuggestOption {
     __obj.asInstanceOf[SearchCompletionSuggestOption[TDocument]]
   }
   
-  extension [Self <: SearchCompletionSuggestOption[?], TDocument](x: Self & SearchCompletionSuggestOption[TDocument]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCompletionSuggestOption[?], TDocument] (val x: Self & SearchCompletionSuggestOption[TDocument]) extends AnyVal {
     
     inline def setCollate_match(value: Boolean): Self = StObject.set(x, "collate_match", value.asInstanceOf[js.Any])
     

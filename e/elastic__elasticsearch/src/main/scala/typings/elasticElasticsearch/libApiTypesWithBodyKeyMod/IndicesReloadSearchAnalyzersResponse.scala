@@ -17,7 +17,8 @@ object IndicesReloadSearchAnalyzersResponse {
     __obj.asInstanceOf[IndicesReloadSearchAnalyzersResponse]
   }
   
-  extension [Self <: IndicesReloadSearchAnalyzersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesReloadSearchAnalyzersResponse] (val x: Self) extends AnyVal {
     
     inline def setReload_details(value: js.Array[IndicesReloadSearchAnalyzersReloadDetails]): Self = StObject.set(x, "reload_details", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object TargetChange {
     __obj.asInstanceOf[TargetChange]
   }
   
-  extension [Self <: TargetChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetChange] (val x: Self) extends AnyVal {
     
     inline def setCause(value: Status): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

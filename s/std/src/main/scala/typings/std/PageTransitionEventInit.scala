@@ -18,7 +18,8 @@ object PageTransitionEventInit {
     __obj.asInstanceOf[PageTransitionEventInit]
   }
   
-  extension [Self <: PageTransitionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageTransitionEventInit] (val x: Self) extends AnyVal {
     
     inline def setPersisted(value: scala.Boolean): Self = StObject.set(x, "persisted", value.asInstanceOf[js.Any])
     

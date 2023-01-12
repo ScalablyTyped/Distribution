@@ -27,7 +27,8 @@ object BufferImageData {
     __obj.asInstanceOf[BufferImageData]
   }
   
-  extension [Self <: BufferImageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferImageData] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

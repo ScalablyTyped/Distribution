@@ -63,7 +63,8 @@ object CreateIndexRequest {
     __obj.asInstanceOf[CreateIndexRequest]
   }
   
-  extension [Self <: CreateIndexRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenName): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

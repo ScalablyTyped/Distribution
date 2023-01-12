@@ -23,7 +23,8 @@ object ObjectTypeKey {
     __obj.asInstanceOf[ObjectTypeKey]
   }
   
-  extension [Self <: ObjectTypeKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectTypeKey] (val x: Self) extends AnyVal {
     
     inline def setFieldNames(value: FieldNameList): Self = StObject.set(x, "FieldNames", value.asInstanceOf[js.Any])
     

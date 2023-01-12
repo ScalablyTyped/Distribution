@@ -65,7 +65,8 @@ object Uploadbox {
       __obj.asInstanceOf[BeforeSendEventArgs]
     }
     
-    extension [Self <: BeforeSendEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeSendEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object Uploadbox {
       __obj.asInstanceOf[BeginEventArgs]
     }
     
-    extension [Self <: BeginEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object Uploadbox {
       __obj.asInstanceOf[ButtonText]
     }
     
-    extension [Self <: ButtonText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonText] (val x: Self) extends AnyVal {
       
       inline def setBrowse(value: String): Self = StObject.set(x, "browse", value.asInstanceOf[js.Any])
       
@@ -208,7 +211,8 @@ object Uploadbox {
       __obj.asInstanceOf[CancelEventArgs]
     }
     
-    extension [Self <: CancelEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFileStatus(value: Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
@@ -257,7 +261,8 @@ object Uploadbox {
       __obj.asInstanceOf[CompleteEventArgs]
     }
     
-    extension [Self <: CompleteEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteEventArgs] (val x: Self) extends AnyVal {
       
       inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object Uploadbox {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -343,7 +349,8 @@ object Uploadbox {
       __obj.asInstanceOf[CustomFileDetails]
     }
     
-    extension [Self <: CustomFileDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomFileDetails] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Boolean): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object Uploadbox {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setModel(value: Any): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
@@ -421,7 +429,8 @@ object Uploadbox {
       __obj.asInstanceOf[DialogAction]
     }
     
-    extension [Self <: DialogAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogAction] (val x: Self) extends AnyVal {
       
       inline def setCloseOnComplete(value: Boolean): Self = StObject.set(x, "closeOnComplete", value.asInstanceOf[js.Any])
       
@@ -466,7 +475,8 @@ object Uploadbox {
       __obj.asInstanceOf[DialogText]
     }
     
-    extension [Self <: DialogText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogText] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -511,7 +521,8 @@ object Uploadbox {
       __obj.asInstanceOf[ErrorEventArgs]
     }
     
-    extension [Self <: ErrorEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorEventArgs] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -552,7 +563,8 @@ object Uploadbox {
       __obj.asInstanceOf[FileSelectEventArgs]
     }
     
-    extension [Self <: FileSelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileSelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -601,7 +613,8 @@ object Uploadbox {
       __obj.asInstanceOf[InProgressEventArgs]
     }
     
-    extension [Self <: InProgressEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InProgressEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -821,7 +834,8 @@ object Uploadbox {
       __obj.asInstanceOf[typings.ejWebAll.ej.Uploadbox.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Uploadbox.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Uploadbox.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowDragAndDrop(value: Boolean): Self = StObject.set(x, "allowDragAndDrop", value.asInstanceOf[js.Any])
       
@@ -1006,7 +1020,8 @@ object Uploadbox {
       __obj.asInstanceOf[RemoveEventArgs]
     }
     
-    extension [Self <: RemoveEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEventArgs] (val x: Self) extends AnyVal {
       
       inline def setFileStatus(value: Any): Self = StObject.set(x, "fileStatus", value.asInstanceOf[js.Any])
       
@@ -1059,7 +1074,8 @@ object Uploadbox {
       __obj.asInstanceOf[SuccessEventArgs]
     }
     
-    extension [Self <: SuccessEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessEventArgs] (val x: Self) extends AnyVal {
       
       inline def setE(value: Any): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object LayerListVisibleElements {
     __obj.asInstanceOf[LayerListVisibleElements]
   }
   
-  extension [Self <: LayerListVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerListVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: Boolean): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SuggestionsFetchRequestedParams {
     __obj.asInstanceOf[SuggestionsFetchRequestedParams]
   }
   
-  extension [Self <: SuggestionsFetchRequestedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionsFetchRequestedParams] (val x: Self) extends AnyVal {
     
     inline def setReason(value: FetchRequestedReasons): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object ClusterOperationInfo {
     __obj.asInstanceOf[ClusterOperationInfo]
   }
   
-  extension [Self <: ClusterOperationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterOperationInfo] (val x: Self) extends AnyVal {
     
     inline def setClientRequestId(value: string): Self = StObject.set(x, "ClientRequestId", value.asInstanceOf[js.Any])
     

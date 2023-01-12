@@ -66,7 +66,8 @@ object AdvancedQueueMessage {
     __obj.asInstanceOf[AdvancedQueueMessage[T]]
   }
   
-  extension [Self <: AdvancedQueueMessage[?], T](x: Self & AdvancedQueueMessage[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdvancedQueueMessage[?], T] (val x: Self & AdvancedQueueMessage[T]) extends AnyVal {
     
     inline def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
     

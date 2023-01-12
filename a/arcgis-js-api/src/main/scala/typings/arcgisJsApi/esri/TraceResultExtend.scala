@@ -62,7 +62,8 @@ object TraceResultExtend {
     __obj.asInstanceOf[TraceResultExtend]
   }
   
-  extension [Self <: TraceResultExtend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceResultExtend] (val x: Self) extends AnyVal {
     
     inline def setGraphicColor(value: GraphicColor): Self = StObject.set(x, "graphicColor", value.asInstanceOf[js.Any])
     

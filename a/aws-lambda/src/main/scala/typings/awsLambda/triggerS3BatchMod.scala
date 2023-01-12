@@ -33,7 +33,8 @@ object triggerS3BatchMod {
       __obj.asInstanceOf[S3BatchEvent]
     }
     
-    extension [Self <: S3BatchEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BatchEvent] (val x: Self) extends AnyVal {
       
       inline def setInvocationId(value: String): Self = StObject.set(x, "invocationId", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object triggerS3BatchMod {
       __obj.asInstanceOf[S3BatchEventJob]
     }
     
-    extension [Self <: S3BatchEventJob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BatchEventJob] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object triggerS3BatchMod {
       __obj.asInstanceOf[S3BatchEventTask]
     }
     
-    extension [Self <: S3BatchEventTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BatchEventTask] (val x: Self) extends AnyVal {
       
       inline def setS3BucketArn(value: String): Self = StObject.set(x, "s3BucketArn", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object triggerS3BatchMod {
       __obj.asInstanceOf[S3BatchResult]
     }
     
-    extension [Self <: S3BatchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BatchResult] (val x: Self) extends AnyVal {
       
       inline def setInvocationId(value: String): Self = StObject.set(x, "invocationId", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object triggerS3BatchMod {
       __obj.asInstanceOf[S3BatchResultResult]
     }
     
-    extension [Self <: S3BatchResultResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3BatchResultResult] (val x: Self) extends AnyVal {
       
       inline def setResultCode(value: S3BatchResultResultCode): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       

@@ -199,7 +199,8 @@ object distSrcModulesUiControlsTimeTimeMod {
       __obj.asInstanceOf[TimeControl]
     }
     
-    extension [Self <: TimeControl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeControl] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

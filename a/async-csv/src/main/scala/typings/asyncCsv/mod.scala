@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[CastingContext]
     }
     
-    extension [Self <: CastingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CastingContext] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double | String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -223,7 +224,8 @@ object mod {
       __obj.asInstanceOf[CsvGenerateOptions]
     }
     
-    extension [Self <: CsvGenerateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsvGenerateOptions] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: Double | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -481,7 +483,8 @@ object mod {
       __obj.asInstanceOf[CsvParseOptions]
     }
     
-    extension [Self <: CsvParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsvParseOptions] (val x: Self) extends AnyVal {
       
       inline def setAuto_parse(value: Boolean | CastingFunction): Self = StObject.set(x, "auto_parse", value.asInstanceOf[js.Any])
       
@@ -686,7 +689,8 @@ object mod {
       __obj.asInstanceOf[CsvStringifyOptions]
     }
     
-    extension [Self <: CsvStringifyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CsvStringifyOptions] (val x: Self) extends AnyVal {
       
       inline def setCast(value: typings.asyncCsv.anon.Boolean): Self = StObject.set(x, "cast", value.asInstanceOf[js.Any])
       
@@ -782,7 +786,8 @@ object mod {
       __obj.asInstanceOf[TransformOptions]
     }
     
-    extension [Self <: TransformOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformOptions] (val x: Self) extends AnyVal {
       
       inline def setConsume(value: Boolean): Self = StObject.set(x, "consume", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object PartialBooleanTypeProps {
     __obj.asInstanceOf[PartialBooleanTypeProps]
   }
   
-  extension [Self <: PartialBooleanTypeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBooleanTypeProps] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: BooleanTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

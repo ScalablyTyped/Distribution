@@ -129,7 +129,8 @@ object RelationshipQueryProperties {
     __obj.asInstanceOf[RelationshipQueryProperties]
   }
   
-  extension [Self <: RelationshipQueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationshipQueryProperties] (val x: Self) extends AnyVal {
     
     inline def setCacheHint(value: Boolean): Self = StObject.set(x, "cacheHint", value.asInstanceOf[js.Any])
     

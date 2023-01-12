@@ -31,7 +31,8 @@ object NotationPrecedenceRightToLeft {
     __obj.asInstanceOf[NotationPrecedenceRightToLeft]
   }
   
-  extension [Self <: NotationPrecedenceRightToLeft](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotationPrecedenceRightToLeft] (val x: Self) extends AnyVal {
     
     inline def setArgCount(value: `1`): Self = StObject.set(x, "argCount", value.asInstanceOf[js.Any])
     

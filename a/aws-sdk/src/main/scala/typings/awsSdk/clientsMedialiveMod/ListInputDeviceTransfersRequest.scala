@@ -19,7 +19,8 @@ object ListInputDeviceTransfersRequest {
     __obj.asInstanceOf[ListInputDeviceTransfersRequest]
   }
   
-  extension [Self <: ListInputDeviceTransfersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInputDeviceTransfersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

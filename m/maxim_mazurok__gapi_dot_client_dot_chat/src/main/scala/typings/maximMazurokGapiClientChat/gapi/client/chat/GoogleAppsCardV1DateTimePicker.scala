@@ -38,7 +38,8 @@ object GoogleAppsCardV1DateTimePicker {
     __obj.asInstanceOf[GoogleAppsCardV1DateTimePicker]
   }
   
-  extension [Self <: GoogleAppsCardV1DateTimePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAppsCardV1DateTimePicker] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MessageReason {
     __obj.asInstanceOf[MessageReason]
   }
   
-  extension [Self <: MessageReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageReason] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

@@ -186,7 +186,8 @@ object libDeviceMod {
       __obj.asInstanceOf[DeviceOptions]
     }
     
-    extension [Self <: DeviceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceOptions] (val x: Self) extends AnyVal {
       
       inline def setFriendlyName(value: String): Self = StObject.set(x, "friendlyName", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object libDeviceMod {
       __obj.asInstanceOf[DeviceStatus]
     }
     
-    extension [Self <: DeviceStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceStatus] (val x: Self) extends AnyVal {
       
       inline def setCurrentTime(value: Double): Self = StObject.set(x, "currentTime", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object libDeviceMod {
       __obj.asInstanceOf[DeviceVolume]
     }
     
-    extension [Self <: DeviceVolume](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceVolume] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -303,7 +306,8 @@ object libDeviceMod {
       __obj.asInstanceOf[GenericMediaMetadata]
     }
     
-    extension [Self <: GenericMediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericMediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -342,7 +346,8 @@ object libDeviceMod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object libDeviceMod {
       __obj.asInstanceOf[MediaResource]
     }
     
-    extension [Self <: MediaResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaResource] (val x: Self) extends AnyVal {
       
       inline def setCover(value: Title): Self = StObject.set(x, "cover", value.asInstanceOf[js.Any])
       
@@ -414,7 +420,8 @@ object libDeviceMod {
       __obj.asInstanceOf[MovieMediaMetadata]
     }
     
-    extension [Self <: MovieMediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovieMediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setImages(value: js.Array[Image]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
@@ -471,7 +478,8 @@ object libDeviceMod {
       __obj.asInstanceOf[MusicTrackMediaMetadata]
     }
     
-    extension [Self <: MusicTrackMediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MusicTrackMediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setAlbumArtist(value: String): Self = StObject.set(x, "albumArtist", value.asInstanceOf[js.Any])
       
@@ -542,7 +550,8 @@ object libDeviceMod {
       __obj.asInstanceOf[PhotoMediaMetadata]
     }
     
-    extension [Self <: PhotoMediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhotoMediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setArtist(value: String): Self = StObject.set(x, "artist", value.asInstanceOf[js.Any])
       
@@ -591,7 +600,8 @@ object libDeviceMod {
       __obj.asInstanceOf[PlaybackOptions]
     }
     
-    extension [Self <: PlaybackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaybackOptions] (val x: Self) extends AnyVal {
       
       inline def setStartTime(value: Double): Self = StObject.set(x, "startTime", value.asInstanceOf[js.Any])
       
@@ -622,7 +632,8 @@ object libDeviceMod {
       __obj.asInstanceOf[TvShowMediaMetadata]
     }
     
-    extension [Self <: TvShowMediaMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TvShowMediaMetadata] (val x: Self) extends AnyVal {
       
       inline def setEpisode(value: Double): Self = StObject.set(x, "episode", value.asInstanceOf[js.Any])
       

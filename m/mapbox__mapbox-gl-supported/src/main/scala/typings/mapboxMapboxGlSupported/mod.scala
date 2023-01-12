@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[IsSupportedOptions]
     }
     
-    extension [Self <: IsSupportedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSupportedOptions] (val x: Self) extends AnyVal {
       
       inline def setFailIfMajorPerformanceCaveat(value: Boolean): Self = StObject.set(x, "failIfMajorPerformanceCaveat", value.asInstanceOf[js.Any])
     }

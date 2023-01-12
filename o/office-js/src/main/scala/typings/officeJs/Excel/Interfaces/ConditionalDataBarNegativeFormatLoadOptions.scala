@@ -58,7 +58,8 @@ object ConditionalDataBarNegativeFormatLoadOptions {
     __obj.asInstanceOf[ConditionalDataBarNegativeFormatLoadOptions]
   }
   
-  extension [Self <: ConditionalDataBarNegativeFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalDataBarNegativeFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

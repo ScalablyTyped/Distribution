@@ -17,7 +17,8 @@ object Mac {
     __obj.asInstanceOf[Mac]
   }
   
-  extension [Self <: Mac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mac] (val x: Self) extends AnyVal {
     
     inline def setMac(value: String): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     

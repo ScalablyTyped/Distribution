@@ -132,7 +132,8 @@ object Configuration {
     __obj.asInstanceOf[Configuration]
   }
   
-  extension [Self <: Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
     
     inline def setAcrValues(value: js.Array[String] | Set[String]): Self = StObject.set(x, "acrValues", value.asInstanceOf[js.Any])
     

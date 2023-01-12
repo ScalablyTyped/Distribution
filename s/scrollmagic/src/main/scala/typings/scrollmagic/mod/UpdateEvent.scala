@@ -32,7 +32,8 @@ object UpdateEvent {
     __obj.asInstanceOf[UpdateEvent]
   }
   
-  extension [Self <: UpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setEndPos(value: Double): Self = StObject.set(x, "endPos", value.asInstanceOf[js.Any])
     

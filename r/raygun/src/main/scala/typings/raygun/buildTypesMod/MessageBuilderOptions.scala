@@ -21,7 +21,8 @@ object MessageBuilderOptions {
     __obj.asInstanceOf[MessageBuilderOptions]
   }
   
-  extension [Self <: MessageBuilderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageBuilderOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[String]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

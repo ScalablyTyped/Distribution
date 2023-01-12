@@ -226,7 +226,8 @@ object sapUiTableRowActionMod {
       __obj.asInstanceOf[RowActionSettings]
     }
     
-    extension [Self <: RowActionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowActionSettings] (val x: Self) extends AnyVal {
       
       inline def setItems(
         value: js.Array[typings.openui5.sapUiTableRowActionItemMod.default] | typings.openui5.sapUiTableRowActionItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

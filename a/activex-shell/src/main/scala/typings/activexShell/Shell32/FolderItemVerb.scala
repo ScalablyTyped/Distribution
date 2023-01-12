@@ -24,7 +24,8 @@ object FolderItemVerb {
     __obj.asInstanceOf[FolderItemVerb]
   }
   
-  extension [Self <: FolderItemVerb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FolderItemVerb] (val x: Self) extends AnyVal {
     
     inline def setDoIt(value: () => Unit): Self = StObject.set(x, "DoIt", js.Any.fromFunction0(value))
     

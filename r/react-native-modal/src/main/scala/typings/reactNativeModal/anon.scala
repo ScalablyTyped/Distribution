@@ -175,7 +175,8 @@ object anon {
       __obj.asInstanceOf[AnimationIn]
     }
     
-    extension [Self <: AnimationIn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationIn] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(value: Requireable[String | js.Object]): Self = StObject.set(x, "animationIn", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object anon {
       __obj.asInstanceOf[AnimationInTiming]
     }
     
-    extension [Self <: AnimationInTiming](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationInTiming] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
@@ -481,7 +483,8 @@ object anon {
       __obj.asInstanceOf[AnimationOut]
     }
     
-    extension [Self <: AnimationOut](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationOut] (val x: Self) extends AnyVal {
       
       inline def setAnimationIn(
         value: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 63, starting with typings.reactNativeModal.reactNativeModalStrings.bounce, typings.reactNativeModal.reactNativeModalStrings.flash, typings.reactNativeModal.reactNativeModalStrings.jello */ Any
@@ -516,7 +519,8 @@ object anon {
       __obj.asInstanceOf[BackgroundColor]
     }
     
-    extension [Self <: BackgroundColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundColor] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -547,7 +551,8 @@ object anon {
       __obj.asInstanceOf[Flex]
     }
     
-    extension [Self <: Flex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Flex] (val x: Self) extends AnyVal {
       
       inline def setFlex(value: Double): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
       
@@ -568,7 +573,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: StringDictionary[Double]): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -589,7 +595,8 @@ object anon {
       __obj.asInstanceOf[IsVisible]
     }
     
-    extension [Self <: IsVisible](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsVisible] (val x: Self) extends AnyVal {
       
       inline def setIsVisible(value: Boolean): Self = StObject.set(x, "isVisible", value.asInstanceOf[js.Any])
       
@@ -612,7 +619,8 @@ object anon {
       __obj.asInstanceOf[Opacity]
     }
     
-    extension [Self <: Opacity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opacity] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -901,7 +909,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyModalProps]
     }
     
-    extension [Self <: ReadonlyModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyModalProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

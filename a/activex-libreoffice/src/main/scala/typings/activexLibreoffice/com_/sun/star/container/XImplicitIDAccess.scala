@@ -37,7 +37,8 @@ object XImplicitIDAccess {
     __obj.asInstanceOf[XImplicitIDAccess]
   }
   
-  extension [Self <: XImplicitIDAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XImplicitIDAccess] (val x: Self) extends AnyVal {
     
     inline def setGetByImplicitID(value: String => Any): Self = StObject.set(x, "getByImplicitID", js.Any.fromFunction1(value))
     

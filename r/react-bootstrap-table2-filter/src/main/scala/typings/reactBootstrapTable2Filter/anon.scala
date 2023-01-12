@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Comparator]
     }
     
-    extension [Self <: Comparator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comparator] (val x: Self) extends AnyVal {
       
       inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Date]
     }
     
-    extension [Self <: Date](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Date] (val x: Self) extends AnyVal {
       
       inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Number]
     }
     
-    extension [Self <: Number](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Number] (val x: Self) extends AnyVal {
       
       inline def setComparator(value: typings.reactBootstrapTable2Filter.mod.Comparator): Self = StObject.set(x, "comparator", value.asInstanceOf[js.Any])
       
@@ -135,7 +139,8 @@ object anon {
       __obj.asInstanceOf[PartialMultiSelectFilterP]
     }
     
-    extension [Self <: PartialMultiSelectFilterP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMultiSelectFilterP] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object anon {
       __obj.asInstanceOf[PartialNumberFilterPropsa]
     }
     
-    extension [Self <: PartialNumberFilterPropsa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialNumberFilterPropsa] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -337,7 +343,8 @@ object anon {
       __obj.asInstanceOf[PartialSelectFilterPropsa]
     }
     
-    extension [Self <: PartialSelectFilterPropsa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSelectFilterPropsa] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -425,7 +432,8 @@ object anon {
       __obj.asInstanceOf[PartialTextFilterPropsany]
     }
     
-    extension [Self <: PartialTextFilterPropsany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTextFilterPropsany] (val x: Self) extends AnyVal {
       
       inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
       

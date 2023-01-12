@@ -15,7 +15,8 @@ object IncludePadding {
     __obj.asInstanceOf[IncludePadding]
   }
   
-  extension [Self <: IncludePadding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludePadding] (val x: Self) extends AnyVal {
     
     inline def setIncludePadding(value: Boolean): Self = StObject.set(x, "includePadding", value.asInstanceOf[js.Any])
   }

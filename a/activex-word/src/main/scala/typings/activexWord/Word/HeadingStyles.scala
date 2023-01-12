@@ -37,7 +37,8 @@ object HeadingStyles {
     __obj.asInstanceOf[HeadingStyles]
   }
   
-  extension [Self <: HeadingStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadingStyles] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Any, Double) => HeadingStyle): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

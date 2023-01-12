@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[TockOptions]
     }
     
-    extension [Self <: TockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TockOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       

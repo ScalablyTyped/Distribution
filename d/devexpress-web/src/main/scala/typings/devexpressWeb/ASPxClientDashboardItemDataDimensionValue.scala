@@ -31,7 +31,8 @@ object ASPxClientDashboardItemDataDimensionValue {
     __obj.asInstanceOf[ASPxClientDashboardItemDataDimensionValue]
   }
   
-  extension [Self <: ASPxClientDashboardItemDataDimensionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDashboardItemDataDimensionValue] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayText(value: () => String): Self = StObject.set(x, "GetDisplayText", js.Any.fromFunction0(value))
     

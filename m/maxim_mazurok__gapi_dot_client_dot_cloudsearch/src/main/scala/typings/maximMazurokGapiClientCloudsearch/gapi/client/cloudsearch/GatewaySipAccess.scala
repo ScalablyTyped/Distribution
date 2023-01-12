@@ -22,7 +22,8 @@ object GatewaySipAccess {
     __obj.asInstanceOf[GatewaySipAccess]
   }
   
-  extension [Self <: GatewaySipAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewaySipAccess] (val x: Self) extends AnyVal {
     
     inline def setSipAccessCode(value: String): Self = StObject.set(x, "sipAccessCode", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GradientTexture {
     __obj.asInstanceOf[GradientTexture]
   }
   
-  extension [Self <: GradientTexture](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientTexture] (val x: Self) extends AnyVal {
     
     inline def setGradient(value: RGBAImage): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
     

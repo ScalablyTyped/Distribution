@@ -23,7 +23,8 @@ object CapacityAllocation {
     __obj.asInstanceOf[CapacityAllocation]
   }
   
-  extension [Self <: CapacityAllocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityAllocation] (val x: Self) extends AnyVal {
     
     inline def setAllocationType(value: AllocationType): Self = StObject.set(x, "AllocationType", value.asInstanceOf[js.Any])
     

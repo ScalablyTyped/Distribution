@@ -33,7 +33,8 @@ object GroupCreationInformation {
     __obj.asInstanceOf[GroupCreationInformation]
   }
   
-  extension [Self <: GroupCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_description(value: () => String): Self = StObject.set(x, "get_description", js.Any.fromFunction0(value))
     

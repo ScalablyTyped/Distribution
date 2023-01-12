@@ -20,7 +20,8 @@ object CIMMarkerPlacementAlongLineSameSize {
     __obj.asInstanceOf[CIMMarkerPlacementAlongLineSameSize]
   }
   
-  extension [Self <: CIMMarkerPlacementAlongLineSameSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementAlongLineSameSize] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAlongLineSameSize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

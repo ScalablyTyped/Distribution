@@ -65,7 +65,8 @@ object PickImplpushingPartialPic {
     __obj.asInstanceOf[PickImplpushingPartialPic]
   }
   
-  extension [Self <: PickImplpushingPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpushingPartialPic] (val x: Self) extends AnyVal {
     
     inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
     

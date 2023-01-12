@@ -35,7 +35,8 @@ object UIkitDropdownOptions {
     __obj.asInstanceOf[UIkitDropdownOptions]
   }
   
-  extension [Self <: UIkitDropdownOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitDropdownOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object OfferShiftRequest {
     __obj.asInstanceOf[OfferShiftRequest]
   }
   
-  extension [Self <: OfferShiftRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfferShiftRequest] (val x: Self) extends AnyVal {
     
     inline def setRecipientActionDateTime(value: NullableOption[String]): Self = StObject.set(x, "recipientActionDateTime", value.asInstanceOf[js.Any])
     

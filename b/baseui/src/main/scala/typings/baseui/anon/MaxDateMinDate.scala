@@ -17,7 +17,8 @@ object MaxDateMinDate {
     __obj.asInstanceOf[MaxDateMinDate[T]]
   }
   
-  extension [Self <: MaxDateMinDate[?], T](x: Self & MaxDateMinDate[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxDateMinDate[?], T] (val x: Self & MaxDateMinDate[T]) extends AnyVal {
     
     inline def setMaxDate(value: T): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
     

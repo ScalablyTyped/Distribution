@@ -49,7 +49,8 @@ object ExpandableConfig {
     __obj.asInstanceOf[ExpandableConfig[RecordType]]
   }
   
-  extension [Self <: ExpandableConfig[?], RecordType](x: Self & ExpandableConfig[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandableConfig[?], RecordType] (val x: Self & ExpandableConfig[RecordType]) extends AnyVal {
     
     inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
     

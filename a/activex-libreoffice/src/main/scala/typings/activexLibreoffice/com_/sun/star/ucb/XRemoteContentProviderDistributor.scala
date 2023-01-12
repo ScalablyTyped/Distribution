@@ -50,7 +50,8 @@ object XRemoteContentProviderDistributor {
     __obj.asInstanceOf[XRemoteContentProviderDistributor]
   }
   
-  extension [Self <: XRemoteContentProviderDistributor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRemoteContentProviderDistributor] (val x: Self) extends AnyVal {
     
     inline def setConnectToRemoteAcceptor(value: (String, String) => Boolean): Self = StObject.set(x, "connectToRemoteAcceptor", js.Any.fromFunction2(value))
     

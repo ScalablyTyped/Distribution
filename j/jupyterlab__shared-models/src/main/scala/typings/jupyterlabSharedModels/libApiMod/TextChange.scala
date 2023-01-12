@@ -16,7 +16,8 @@ object TextChange {
     __obj.asInstanceOf[TextChange]
   }
   
-  extension [Self <: TextChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextChange] (val x: Self) extends AnyVal {
     
     inline def setSourceChange(value: Delta[String]): Self = StObject.set(x, "sourceChange", value.asInstanceOf[js.Any])
     

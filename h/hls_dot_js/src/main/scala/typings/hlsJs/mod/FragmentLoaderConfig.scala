@@ -28,7 +28,8 @@ object FragmentLoaderConfig {
     __obj.asInstanceOf[FragmentLoaderConfig]
   }
   
-  extension [Self <: FragmentLoaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentLoaderConfig] (val x: Self) extends AnyVal {
     
     inline def setFLoader(value: FragmentLoaderConstructor): Self = StObject.set(x, "fLoader", value.asInstanceOf[js.Any])
     

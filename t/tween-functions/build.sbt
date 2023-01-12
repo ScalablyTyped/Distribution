@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "tween-functions"
-version := "1.2-dt-20220801Z-fb58c1"
+version := "1.2-dt-20220801Z-07a832"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -45,7 +45,8 @@ object libEsmApiHooksMod {
       __obj.asInstanceOf[ComponentBounds]
     }
     
-    extension [Self <: ComponentBounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentBounds] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -354,7 +355,8 @@ object libEsmApiHooksMod {
       __obj.asInstanceOf[Hookable[TContext]]
     }
     
-    extension [Self <: Hookable[?], TContext](x: Self & Hookable[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hookable[?], TContext] (val x: Self & Hookable[TContext]) extends AnyVal {
       
       inline def setEditComponentState(
         value: HookHandler[

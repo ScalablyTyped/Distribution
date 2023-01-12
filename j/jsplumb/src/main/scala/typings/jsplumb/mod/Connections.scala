@@ -19,7 +19,8 @@ object Connections {
     __obj.asInstanceOf[Connections]
   }
   
-  extension [Self <: Connections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Connections] (val x: Self) extends AnyVal {
     
     inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
     

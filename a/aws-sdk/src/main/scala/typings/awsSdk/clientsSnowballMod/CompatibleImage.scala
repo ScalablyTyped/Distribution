@@ -23,7 +23,8 @@ object CompatibleImage {
     __obj.asInstanceOf[CompatibleImage]
   }
   
-  extension [Self <: CompatibleImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompatibleImage] (val x: Self) extends AnyVal {
     
     inline def setAmiId(value: String): Self = StObject.set(x, "AmiId", value.asInstanceOf[js.Any])
     

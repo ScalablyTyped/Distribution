@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[TimeComponents]
     }
     
-    extension [Self <: TimeComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeComponents] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

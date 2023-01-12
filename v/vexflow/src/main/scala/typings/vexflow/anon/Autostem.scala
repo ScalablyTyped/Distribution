@@ -31,7 +31,8 @@ object Autostem {
     __obj.asInstanceOf[Autostem]
   }
   
-  extension [Self <: Autostem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autostem] (val x: Self) extends AnyVal {
     
     inline def setAuto_stem(value: Boolean): Self = StObject.set(x, "auto_stem", value.asInstanceOf[js.Any])
     

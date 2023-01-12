@@ -22,7 +22,8 @@ object BackspaceLabel {
     __obj.asInstanceOf[BackspaceLabel]
   }
   
-  extension [Self <: BackspaceLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackspaceLabel] (val x: Self) extends AnyVal {
     
     inline def setBackspaceLabel(value: String): Self = StObject.set(x, "backspaceLabel", value.asInstanceOf[js.Any])
     

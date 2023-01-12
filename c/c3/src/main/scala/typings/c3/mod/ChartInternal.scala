@@ -19,7 +19,8 @@ object ChartInternal {
     __obj.asInstanceOf[ChartInternal]
   }
   
-  extension [Self <: ChartInternal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartInternal] (val x: Self) extends AnyVal {
     
     inline def setApi(value: ChartAPI): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
   }

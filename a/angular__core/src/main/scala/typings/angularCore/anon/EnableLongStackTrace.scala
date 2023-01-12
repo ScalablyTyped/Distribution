@@ -19,7 +19,8 @@ object EnableLongStackTrace {
     __obj.asInstanceOf[EnableLongStackTrace]
   }
   
-  extension [Self <: EnableLongStackTrace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableLongStackTrace] (val x: Self) extends AnyVal {
     
     inline def setEnableLongStackTrace(value: Boolean): Self = StObject.set(x, "enableLongStackTrace", value.asInstanceOf[js.Any])
     

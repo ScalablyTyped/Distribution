@@ -111,7 +111,8 @@ object IgGridRowSelectors {
     __obj.asInstanceOf[IgGridRowSelectors]
   }
   
-  extension [Self <: IgGridRowSelectors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridRowSelectors] (val x: Self) extends AnyVal {
     
     inline def setCheckBoxStateChanged(value: (/* event */ Event, /* ui */ CheckBoxStateChangedEventUIParam) => Unit): Self = StObject.set(x, "checkBoxStateChanged", js.Any.fromFunction2(value))
     

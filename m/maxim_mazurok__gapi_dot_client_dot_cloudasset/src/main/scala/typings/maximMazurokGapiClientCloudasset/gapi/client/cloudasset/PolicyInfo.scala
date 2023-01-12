@@ -19,7 +19,8 @@ object PolicyInfo {
     __obj.asInstanceOf[PolicyInfo]
   }
   
-  extension [Self <: PolicyInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolicyInfo] (val x: Self) extends AnyVal {
     
     inline def setAttachedResource(value: String): Self = StObject.set(x, "attachedResource", value.asInstanceOf[js.Any])
     

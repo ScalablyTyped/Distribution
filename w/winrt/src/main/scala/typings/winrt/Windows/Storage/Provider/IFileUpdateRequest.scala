@@ -31,7 +31,8 @@ object IFileUpdateRequest {
     __obj.asInstanceOf[IFileUpdateRequest]
   }
   
-  extension [Self <: IFileUpdateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFileUpdateRequest] (val x: Self) extends AnyVal {
     
     inline def setContentId(value: String): Self = StObject.set(x, "contentId", value.asInstanceOf[js.Any])
     

@@ -47,7 +47,8 @@ object ObservationReferenceRange {
     __obj.asInstanceOf[ObservationReferenceRange]
   }
   
-  extension [Self <: ObservationReferenceRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObservationReferenceRange] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Range): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Abortable {
     __obj.asInstanceOf[Abortable]
   }
   
-  extension [Self <: Abortable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Abortable] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
   }

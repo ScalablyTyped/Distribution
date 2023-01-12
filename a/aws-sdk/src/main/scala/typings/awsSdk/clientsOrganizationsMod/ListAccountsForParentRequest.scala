@@ -28,7 +28,8 @@ object ListAccountsForParentRequest {
     __obj.asInstanceOf[ListAccountsForParentRequest]
   }
   
-  extension [Self <: ListAccountsForParentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountsForParentRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

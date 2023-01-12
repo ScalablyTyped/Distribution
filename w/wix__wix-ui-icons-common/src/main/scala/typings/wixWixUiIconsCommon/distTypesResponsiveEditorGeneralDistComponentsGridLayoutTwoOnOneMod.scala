@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsGridLayoutTwoOnOneMod exten
       __obj.asInstanceOf[GridLayoutTwoOnOneProps]
     }
     
-    extension [Self <: GridLayoutTwoOnOneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridLayoutTwoOnOneProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

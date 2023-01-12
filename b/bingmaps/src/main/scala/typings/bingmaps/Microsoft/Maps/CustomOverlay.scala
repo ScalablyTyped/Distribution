@@ -60,7 +60,8 @@ object CustomOverlay {
     __obj.asInstanceOf[CustomOverlay]
   }
   
-  extension [Self <: CustomOverlay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomOverlay] (val x: Self) extends AnyVal {
     
     inline def setGetHtmlElement(value: () => HTMLElement): Self = StObject.set(x, "getHtmlElement", js.Any.fromFunction0(value))
     

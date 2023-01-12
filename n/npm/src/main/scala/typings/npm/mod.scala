@@ -678,7 +678,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: (js.Object, js.Object) => Any): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -741,7 +742,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigDefs]
     }
     
-    extension [Self <: ConfigDefs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigDefs] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ConfigOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -939,7 +941,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigOptions]
     }
     
-    extension [Self <: ConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
       
       inline def `setAlways-auth`(value: Boolean): Self = StObject.set(x, "always-auth", value.asInstanceOf[js.Any])
       
@@ -1405,7 +1408,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigShorthands]
     }
     
-    extension [Self <: ConfigShorthands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigShorthands] (val x: Self) extends AnyVal {
       
       inline def setB(value: js.Array[Any]): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
       
@@ -1551,7 +1555,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigSource]
     }
     
-    extension [Self <: ConfigSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigSource] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -2158,7 +2163,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ConfigTypes]
     }
     
-    extension [Self <: ConfigTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigTypes] (val x: Self) extends AnyVal {
       
       inline def `setAlways-auth`(value: BooleanConstructor): Self = StObject.set(x, "always-auth", value.asInstanceOf[js.Any])
       
@@ -2381,7 +2387,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -2430,7 +2437,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Spinner]
     }
     
-    extension [Self <: Spinner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spinner] (val x: Self) extends AnyVal {
       
       inline def setInt(value: String): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object IPingrespPacket {
     __obj.asInstanceOf[IPingrespPacket]
   }
   
-  extension [Self <: IPingrespPacket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPingrespPacket] (val x: Self) extends AnyVal {
     
     inline def setCmd(value: pingresp): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
   }

@@ -581,7 +581,8 @@ object sapUiCommonsCarouselMod {
       __obj.asInstanceOf[CarouselSettings]
     }
     
-    extension [Self <: CarouselSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselSettings] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       

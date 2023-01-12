@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[AjaxUrl]
     }
     
-    extension [Self <: AjaxUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjaxUrl] (val x: Self) extends AnyVal {
       
       inline def setAjaxUrl(value: String): Self = StObject.set(x, "ajaxUrl", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Css]
     }
     
-    extension [Self <: Css](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Css] (val x: Self) extends AnyVal {
       
       inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     }
@@ -98,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -123,7 +127,8 @@ object anon {
       __obj.asInstanceOf[IsLocked]
     }
     
-    extension [Self <: IsLocked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsLocked] (val x: Self) extends AnyVal {
       
       inline def setIsLocked(value: Boolean): Self = StObject.set(x, "isLocked", value.asInstanceOf[js.Any])
       
@@ -148,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -174,7 +180,8 @@ object anon {
       __obj.asInstanceOf[OmitPropsname]
     }
     
-    extension [Self <: OmitPropsname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitPropsname] (val x: Self) extends AnyVal {
       
       inline def setBubblesVirtually(value: Boolean): Self = StObject.set(x, "bubblesVirtually", value.asInstanceOf[js.Any])
       
@@ -252,7 +259,8 @@ object anon {
       __obj.asInstanceOf[PartialEditorSettings]
     }
     
-    extension [Self <: PartialEditorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEditorSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
       
@@ -389,7 +397,8 @@ object anon {
       __obj.asInstanceOf[Slug]
     }
     
-    extension [Self <: Slug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slug] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

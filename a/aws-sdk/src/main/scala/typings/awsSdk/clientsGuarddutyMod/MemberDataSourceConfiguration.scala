@@ -23,7 +23,8 @@ object MemberDataSourceConfiguration {
     __obj.asInstanceOf[MemberDataSourceConfiguration]
   }
   
-  extension [Self <: MemberDataSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberDataSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: AccountId): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

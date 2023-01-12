@@ -44,7 +44,8 @@ object StylelintPostcssResult {
     __obj.asInstanceOf[StylelintPostcssResult]
   }
   
-  extension [Self <: StylelintPostcssResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylelintPostcssResult] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

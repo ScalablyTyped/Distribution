@@ -16,7 +16,8 @@ object KubernetesDashboard {
     __obj.asInstanceOf[KubernetesDashboard]
   }
   
-  extension [Self <: KubernetesDashboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KubernetesDashboard] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

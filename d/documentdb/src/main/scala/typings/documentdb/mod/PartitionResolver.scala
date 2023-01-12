@@ -35,7 +35,8 @@ object PartitionResolver {
     __obj.asInstanceOf[PartitionResolver]
   }
   
-  extension [Self <: PartitionResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionResolver] (val x: Self) extends AnyVal {
     
     inline def setGetPartitionKey(value: Any => String): Self = StObject.set(x, "getPartitionKey", js.Any.fromFunction1(value))
     

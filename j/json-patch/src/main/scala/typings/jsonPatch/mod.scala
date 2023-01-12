@@ -90,7 +90,8 @@ object mod {
       __obj.asInstanceOf[AddPatch]
     }
     
-    extension [Self <: AddPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddPatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: add): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[CopyPatch]
     }
     
-    extension [Self <: CopyPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyPatch] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object mod {
       __obj.asInstanceOf[MovePatch]
     }
     
-    extension [Self <: MovePatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovePatch] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -199,7 +202,8 @@ object mod {
       __obj.asInstanceOf[Patch]
     }
     
-    extension [Self <: Patch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Patch] (val x: Self) extends AnyVal {
       
       inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     }
@@ -219,7 +223,8 @@ object mod {
       __obj.asInstanceOf[RemovePatch]
     }
     
-    extension [Self <: RemovePatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemovePatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: remove): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     }
@@ -241,7 +246,8 @@ object mod {
       __obj.asInstanceOf[ReplacePatch]
     }
     
-    extension [Self <: ReplacePatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplacePatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: replace): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object mod {
       __obj.asInstanceOf[TestPatch]
     }
     
-    extension [Self <: TestPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestPatch] (val x: Self) extends AnyVal {
       
       inline def setOp(value: test): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
       

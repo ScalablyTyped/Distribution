@@ -23,7 +23,8 @@ object URL {
     __obj.asInstanceOf[URL]
   }
   
-  extension [Self <: URL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: URL] (val x: Self) extends AnyVal {
     
     inline def setHyperlinkName(value: HyperlinkName): Self = StObject.set(x, "hyperlinkName", value.asInstanceOf[js.Any])
     

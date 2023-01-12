@@ -28,7 +28,8 @@ object UpdateWirelessGatewayTaskEntry {
     __obj.asInstanceOf[UpdateWirelessGatewayTaskEntry]
   }
   
-  extension [Self <: UpdateWirelessGatewayTaskEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateWirelessGatewayTaskEntry] (val x: Self) extends AnyVal {
     
     inline def setArn(value: WirelessGatewayTaskDefinitionArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

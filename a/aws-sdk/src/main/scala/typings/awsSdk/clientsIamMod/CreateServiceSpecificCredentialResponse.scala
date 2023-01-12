@@ -18,7 +18,8 @@ object CreateServiceSpecificCredentialResponse {
     __obj.asInstanceOf[CreateServiceSpecificCredentialResponse]
   }
   
-  extension [Self <: CreateServiceSpecificCredentialResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateServiceSpecificCredentialResponse] (val x: Self) extends AnyVal {
     
     inline def setServiceSpecificCredential(value: ServiceSpecificCredential): Self = StObject.set(x, "ServiceSpecificCredential", value.asInstanceOf[js.Any])
     

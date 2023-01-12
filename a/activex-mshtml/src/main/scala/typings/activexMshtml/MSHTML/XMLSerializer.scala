@@ -19,7 +19,8 @@ object XMLSerializer {
     __obj.asInstanceOf[XMLSerializer]
   }
   
-  extension [Self <: XMLSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMLSerializer] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotXMLSerializer_typekey(value: XMLSerializer): Self = StObject.set(x, "MSHTML.XMLSerializer_typekey", value.asInstanceOf[js.Any])
     

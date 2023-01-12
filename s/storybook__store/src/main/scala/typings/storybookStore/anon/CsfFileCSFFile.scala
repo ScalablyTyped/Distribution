@@ -16,7 +16,8 @@ object CsfFileCSFFile {
     __obj.asInstanceOf[CsfFileCSFFile[TFramework]]
   }
   
-  extension [Self <: CsfFileCSFFile[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & CsfFileCSFFile[TFramework]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsfFileCSFFile[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & CsfFileCSFFile[TFramework]) extends AnyVal {
     
     inline def setCsfFile(value: CSFFile[TFramework]): Self = StObject.set(x, "csfFile", value.asInstanceOf[js.Any])
   }

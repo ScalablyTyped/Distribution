@@ -15,7 +15,8 @@ object ExecuteModuleOptions {
     __obj.asInstanceOf[ExecuteModuleOptions]
   }
   
-  extension [Self <: ExecuteModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setEntryOptions(value: EntryOptions): Self = StObject.set(x, "entryOptions", value.asInstanceOf[js.Any])
     

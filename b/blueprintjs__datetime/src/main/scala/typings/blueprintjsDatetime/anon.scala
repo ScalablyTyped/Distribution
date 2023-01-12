@@ -112,7 +112,8 @@ object anon {
       __obj.asInstanceOf[PartialDateInputProps]
     }
     
-    extension [Self <: PartialDateInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDateInputProps] (val x: Self) extends AnyVal {
       
       inline def setCanClearSelection(value: Boolean): Self = StObject.set(x, "canClearSelection", value.asInstanceOf[js.Any])
       
@@ -332,7 +333,8 @@ object anon {
       __obj.asInstanceOf[PartialDateRangeInputProp]
     }
     
-    extension [Self <: PartialDateRangeInputProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDateRangeInputProp] (val x: Self) extends AnyVal {
       
       inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       
@@ -574,7 +576,8 @@ object anon {
       __obj.asInstanceOf[PartialIPopoverProps]
     }
     
-    extension [Self <: PartialIPopoverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIPopoverProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -782,7 +785,8 @@ object anon {
       __obj.asInstanceOf[PartialIShortcutsProps]
     }
     
-    extension [Self <: PartialIShortcutsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIShortcutsProps] (val x: Self) extends AnyVal {
       
       inline def setAllowSingleDayRange(value: Boolean): Self = StObject.set(x, "allowSingleDayRange", value.asInstanceOf[js.Any])
       

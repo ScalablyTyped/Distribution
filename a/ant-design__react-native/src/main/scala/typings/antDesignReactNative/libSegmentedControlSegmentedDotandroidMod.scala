@@ -45,7 +45,8 @@ object libSegmentedControlSegmentedDotandroidMod {
       __obj.asInstanceOf[SegmentControlProps]
     }
     
-    extension [Self <: SegmentControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentControlProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       

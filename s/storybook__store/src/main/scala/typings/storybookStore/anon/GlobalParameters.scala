@@ -34,7 +34,8 @@ object GlobalParameters {
     __obj.asInstanceOf[GlobalParameters]
   }
   
-  extension [Self <: GlobalParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalParameters] (val x: Self) extends AnyVal {
     
     inline def setGlobals(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_csf.Globals */ Any

@@ -24,7 +24,8 @@ object MaximumHeight {
     __obj.asInstanceOf[MaximumHeight]
   }
   
-  extension [Self <: MaximumHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumHeight] (val x: Self) extends AnyVal {
     
     inline def setEllipsoid(value: typings.cesium.mod.Ellipsoid): Self = StObject.set(x, "ellipsoid", value.asInstanceOf[js.Any])
     

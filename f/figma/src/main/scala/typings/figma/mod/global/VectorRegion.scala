@@ -17,7 +17,8 @@ object VectorRegion {
     __obj.asInstanceOf[VectorRegion]
   }
   
-  extension [Self <: VectorRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorRegion] (val x: Self) extends AnyVal {
     
     inline def setLoops(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "loops", value.asInstanceOf[js.Any])
     

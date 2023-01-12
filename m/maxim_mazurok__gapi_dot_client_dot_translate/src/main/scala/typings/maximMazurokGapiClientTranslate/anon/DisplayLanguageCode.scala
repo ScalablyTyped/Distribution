@@ -65,7 +65,8 @@ object DisplayLanguageCode {
     __obj.asInstanceOf[DisplayLanguageCode]
   }
   
-  extension [Self <: DisplayLanguageCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayLanguageCode] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

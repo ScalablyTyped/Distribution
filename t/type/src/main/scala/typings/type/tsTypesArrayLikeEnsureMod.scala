@@ -30,7 +30,8 @@ object tsTypesArrayLikeEnsureMod {
       __obj.asInstanceOf[ArrayLikeEnsureOptions]
     }
     
-    extension [Self <: ArrayLikeEnsureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayLikeEnsureOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowString(value: Boolean): Self = StObject.set(x, "allowString", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object tsTypesArrayLikeEnsureMod {
       __obj.asInstanceOf[LengthwiseObject]
     }
     
-    extension [Self <: LengthwiseObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LengthwiseObject] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

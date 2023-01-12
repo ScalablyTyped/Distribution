@@ -21,7 +21,8 @@ object NxDataPage {
     __obj.asInstanceOf[NxDataPage]
   }
   
-  extension [Self <: NxDataPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxDataPage] (val x: Self) extends AnyVal {
     
     inline def setQArea(value: Rect): Self = StObject.set(x, "qArea", value.asInstanceOf[js.Any])
     

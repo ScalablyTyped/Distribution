@@ -19,7 +19,8 @@ object DerivedMetric {
     __obj.asInstanceOf[DerivedMetric]
   }
   
-  extension [Self <: DerivedMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DerivedMetric] (val x: Self) extends AnyVal {
     
     inline def setDenominator(value: LocalizedString): Self = StObject.set(x, "denominator", value.asInstanceOf[js.Any])
     

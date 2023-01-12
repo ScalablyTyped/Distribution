@@ -128,7 +128,8 @@ object CAPICOM_PROPID {
     __obj.asInstanceOf[CAPICOM_PROPID]
   }
   
-  extension [Self <: CAPICOM_PROPID](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_PROPID] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_PROPID_ACCESS_STATE(value: `14`): Self = StObject.set(x, "CAPICOM_PROPID_ACCESS_STATE", value.asInstanceOf[js.Any])
     

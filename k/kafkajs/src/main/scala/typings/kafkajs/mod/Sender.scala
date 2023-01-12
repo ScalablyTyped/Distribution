@@ -20,7 +20,8 @@ object Sender {
     __obj.asInstanceOf[Sender]
   }
   
-  extension [Self <: Sender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sender] (val x: Self) extends AnyVal {
     
     inline def setSend(value: ProducerRecord => js.Promise[js.Array[RecordMetadata]]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     

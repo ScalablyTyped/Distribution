@@ -59,7 +59,8 @@ object FieldsInterconnectAttachment {
     __obj.asInstanceOf[FieldsInterconnectAttachment]
   }
   
-  extension [Self <: FieldsInterconnectAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldsInterconnectAttachment] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

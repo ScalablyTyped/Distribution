@@ -19,7 +19,8 @@ object OAuthIdentityDetails {
     __obj.asInstanceOf[OAuthIdentityDetails]
   }
   
-  extension [Self <: OAuthIdentityDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthIdentityDetails] (val x: Self) extends AnyVal {
     
     inline def setHtml_url(value: String): Self = StObject.set(x, "html_url", value.asInstanceOf[js.Any])
     

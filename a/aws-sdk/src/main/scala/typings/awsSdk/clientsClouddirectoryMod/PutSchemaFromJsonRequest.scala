@@ -23,7 +23,8 @@ object PutSchemaFromJsonRequest {
     __obj.asInstanceOf[PutSchemaFromJsonRequest]
   }
   
-  extension [Self <: PutSchemaFromJsonRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSchemaFromJsonRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: SchemaJsonDocument): Self = StObject.set(x, "Document", value.asInstanceOf[js.Any])
     

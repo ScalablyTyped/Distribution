@@ -26,7 +26,8 @@ object IriStem {
     __obj.asInstanceOf[IriStem]
   }
   
-  extension [Self <: IriStem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IriStem] (val x: Self) extends AnyVal {
     
     inline def setStem(value: IRIREF): Self = StObject.set(x, "stem", value.asInstanceOf[js.Any])
     

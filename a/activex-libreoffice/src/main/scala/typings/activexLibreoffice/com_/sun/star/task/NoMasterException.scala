@@ -21,7 +21,8 @@ object NoMasterException {
     __obj.asInstanceOf[NoMasterException]
   }
   
-  extension [Self <: NoMasterException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoMasterException] (val x: Self) extends AnyVal {
     
     inline def setMode(value: PasswordRequestMode): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }

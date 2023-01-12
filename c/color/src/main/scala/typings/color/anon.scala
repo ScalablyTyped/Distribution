@@ -268,7 +268,8 @@ object anon {
       __obj.asInstanceOf[Alpha]
     }
     
-    extension [Self <: Alpha](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alpha] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -295,7 +296,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -573,7 +575,8 @@ object anon {
       __obj.asInstanceOf[Typeofconvert]
     }
     
-    extension [Self <: Typeofconvert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofconvert] (val x: Self) extends AnyVal {
       
       inline def setAnsi16(value: Typeofansi16): Self = StObject.set(x, "ansi16", value.asInstanceOf[js.Any])
       

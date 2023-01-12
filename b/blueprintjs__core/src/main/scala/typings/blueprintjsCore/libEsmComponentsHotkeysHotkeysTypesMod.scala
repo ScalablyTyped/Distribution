@@ -32,7 +32,8 @@ object libEsmComponentsHotkeysHotkeysTypesMod {
       __obj.asInstanceOf[IHotkeysProps]
     }
     
-    extension [Self <: IHotkeysProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHotkeysProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

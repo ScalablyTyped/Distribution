@@ -23,7 +23,8 @@ object ConnectionPasswordEncryption {
     __obj.asInstanceOf[ConnectionPasswordEncryption]
   }
   
-  extension [Self <: ConnectionPasswordEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionPasswordEncryption] (val x: Self) extends AnyVal {
     
     inline def setAwsKmsKeyId(value: NameString): Self = StObject.set(x, "AwsKmsKeyId", value.asInstanceOf[js.Any])
     

@@ -55,7 +55,8 @@ object dxPieChartLegend {
     __obj.asInstanceOf[dxPieChartLegend]
   }
   
-  extension [Self <: dxPieChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPieChartLegend] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* pointInfo */ PointColor => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

@@ -24,7 +24,8 @@ object PhotoConfirmationControl {
     __obj.asInstanceOf[PhotoConfirmationControl]
   }
   
-  extension [Self <: PhotoConfirmationControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoConfirmationControl] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

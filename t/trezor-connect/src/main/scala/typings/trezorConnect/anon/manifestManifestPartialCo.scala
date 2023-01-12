@@ -71,7 +71,8 @@ object manifestManifestPartialCo {
     __obj.asInstanceOf[manifestManifestPartialCo]
   }
   
-  extension [Self <: manifestManifestPartialCo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: manifestManifestPartialCo] (val x: Self) extends AnyVal {
     
     inline def setConfigSrc(value: String): Self = StObject.set(x, "configSrc", value.asInstanceOf[js.Any])
     

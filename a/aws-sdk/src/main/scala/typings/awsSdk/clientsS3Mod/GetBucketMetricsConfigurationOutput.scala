@@ -18,7 +18,8 @@ object GetBucketMetricsConfigurationOutput {
     __obj.asInstanceOf[GetBucketMetricsConfigurationOutput]
   }
   
-  extension [Self <: GetBucketMetricsConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketMetricsConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setMetricsConfiguration(value: MetricsConfiguration): Self = StObject.set(x, "MetricsConfiguration", value.asInstanceOf[js.Any])
     

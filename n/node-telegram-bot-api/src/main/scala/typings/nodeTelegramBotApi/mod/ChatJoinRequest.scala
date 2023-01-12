@@ -23,7 +23,8 @@ object ChatJoinRequest {
     __obj.asInstanceOf[ChatJoinRequest]
   }
   
-  extension [Self <: ChatJoinRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatJoinRequest] (val x: Self) extends AnyVal {
     
     inline def setBio(value: String): Self = StObject.set(x, "bio", value.asInstanceOf[js.Any])
     

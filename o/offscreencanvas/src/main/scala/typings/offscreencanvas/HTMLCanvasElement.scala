@@ -15,7 +15,8 @@ object HTMLCanvasElement {
     __obj.asInstanceOf[HTMLCanvasElement]
   }
   
-  extension [Self <: HTMLCanvasElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLCanvasElement] (val x: Self) extends AnyVal {
     
     inline def setTransferControlToOffscreen(value: () => OffscreenCanvas): Self = StObject.set(x, "transferControlToOffscreen", js.Any.fromFunction0(value))
   }

@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Partialmillisecondnumbers]
     }
     
-    extension [Self <: Partialmillisecondnumbers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialmillisecondnumbers] (val x: Self) extends AnyVal {
       
       inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Partialmillisecondsnumber]
     }
     
-    extension [Self <: Partialmillisecondsnumber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialmillisecondsnumber] (val x: Self) extends AnyVal {
       
       inline def setDays(value: Double): Self = StObject.set(x, "days", value.asInstanceOf[js.Any])
       

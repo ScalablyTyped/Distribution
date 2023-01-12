@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.Array[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object anon {
       __obj.asInstanceOf[DataHeight]
     }
     
-    extension [Self <: DataHeight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataHeight] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setData(
         value: js.typedarray.Uint8Array | js.typedarray.Int8Array | js.typedarray.Uint32Array | js.typedarray.Int32Array | js.typedarray.Uint16Array
@@ -114,7 +117,8 @@ object anon {
       __obj.asInstanceOf[Mssim]
     }
     
-    extension [Self <: Mssim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mssim] (val x: Self) extends AnyVal {
       
       inline def setMssim(value: Double): Self = StObject.set(x, "mssim", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setBitDepth(value: Double): Self = StObject.set(x, "bitDepth", value.asInstanceOf[js.Any])
       
@@ -201,7 +206,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Int32Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

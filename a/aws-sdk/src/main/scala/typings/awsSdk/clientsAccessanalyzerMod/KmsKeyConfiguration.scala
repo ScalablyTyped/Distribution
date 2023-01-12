@@ -23,7 +23,8 @@ object KmsKeyConfiguration {
     __obj.asInstanceOf[KmsKeyConfiguration]
   }
   
-  extension [Self <: KmsKeyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmsKeyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: KmsGrantConfigurationsList): Self = StObject.set(x, "grants", value.asInstanceOf[js.Any])
     

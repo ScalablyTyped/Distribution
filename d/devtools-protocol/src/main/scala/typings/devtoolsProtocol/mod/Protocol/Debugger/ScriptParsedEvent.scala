@@ -121,7 +121,8 @@ object ScriptParsedEvent {
     __obj.asInstanceOf[ScriptParsedEvent]
   }
   
-  extension [Self <: ScriptParsedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptParsedEvent] (val x: Self) extends AnyVal {
     
     inline def setCodeOffset(value: integer): Self = StObject.set(x, "codeOffset", value.asInstanceOf[js.Any])
     

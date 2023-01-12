@@ -19,7 +19,8 @@ object BeaconUpdateOptions {
     __obj.asInstanceOf[BeaconUpdateOptions]
   }
   
-  extension [Self <: BeaconUpdateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeaconUpdateOptions] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: /* res */ Beacons => Unit): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
     

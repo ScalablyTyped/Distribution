@@ -41,7 +41,8 @@ object angularMod {
         __obj.asInstanceOf[ConfigProvider]
       }
       
-      extension [Self <: ConfigProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigProvider] (val x: Self) extends AnyVal {
         
         inline def setDisableWorker(value: () => Unit): Self = StObject.set(x, "disableWorker", js.Any.fromFunction0(value))
         

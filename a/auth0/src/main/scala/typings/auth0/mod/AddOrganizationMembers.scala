@@ -15,7 +15,8 @@ object AddOrganizationMembers {
     __obj.asInstanceOf[AddOrganizationMembers]
   }
   
-  extension [Self <: AddOrganizationMembers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOrganizationMembers] (val x: Self) extends AnyVal {
     
     inline def setMembers(value: js.Array[String]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     

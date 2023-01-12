@@ -25,7 +25,8 @@ object RuleMetadata {
     __obj.asInstanceOf[RuleMetadata]
   }
   
-  extension [Self <: RuleMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleMetadata] (val x: Self) extends AnyVal {
     
     inline def setActIds(value: js.Array[String]): Self = StObject.set(x, "actIds", value.asInstanceOf[js.Any])
     

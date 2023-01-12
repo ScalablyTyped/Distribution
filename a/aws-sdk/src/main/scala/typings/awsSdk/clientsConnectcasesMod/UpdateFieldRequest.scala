@@ -33,7 +33,8 @@ object UpdateFieldRequest {
     __obj.asInstanceOf[UpdateFieldRequest]
   }
   
-  extension [Self <: UpdateFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: FieldDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

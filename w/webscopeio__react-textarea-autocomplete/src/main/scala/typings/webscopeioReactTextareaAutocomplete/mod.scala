@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[ItemComponentProps[TItem]]
     }
     
-    extension [Self <: ItemComponentProps[?], TItem](x: Self & ItemComponentProps[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemComponentProps[?], TItem] (val x: Self & ItemComponentProps[TItem]) extends AnyVal {
       
       inline def setEntity(value: TItem): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[SettingType[TItem]]
     }
     
-    extension [Self <: SettingType[?], TItem](x: Self & SettingType[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SettingType[?], TItem] (val x: Self & SettingType[TItem]) extends AnyVal {
       
       inline def setAfterWhitespace(value: Boolean): Self = StObject.set(x, "afterWhitespace", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[TextToReplaceType]
     }
     
-    extension [Self <: TextToReplaceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextToReplaceType] (val x: Self) extends AnyVal {
       
       inline def setCaretPosition(value: CaretPositionType): Self = StObject.set(x, "caretPosition", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[TextareaState[TItem]]
     }
     
-    extension [Self <: TextareaState[?], TItem](x: Self & TextareaState[TItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextareaState[?], TItem] (val x: Self & TextareaState[TItem]) extends AnyVal {
       
       inline def setActualToken(value: String): Self = StObject.set(x, "actualToken", value.asInstanceOf[js.Any])
       

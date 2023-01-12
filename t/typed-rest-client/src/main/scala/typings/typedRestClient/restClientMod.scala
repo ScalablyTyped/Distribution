@@ -208,7 +208,8 @@ object restClientMod {
       __obj.asInstanceOf[IRequestOptions]
     }
     
-    extension [Self <: IRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAcceptHeader(value: String): Self = StObject.set(x, "acceptHeader", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object restClientMod {
       __obj.asInstanceOf[IRestResponse[T]]
     }
     
-    extension [Self <: IRestResponse[?], T](x: Self & IRestResponse[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRestResponse[?], T] (val x: Self & IRestResponse[T]) extends AnyVal {
       
       inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       

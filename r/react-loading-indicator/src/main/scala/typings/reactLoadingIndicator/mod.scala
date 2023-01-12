@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[LoadingIndicatorColor]
     }
     
-    extension [Self <: LoadingIndicatorColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingIndicatorColor] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[LoadingIndicatorProps]
     }
     
-    extension [Self <: LoadingIndicatorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingIndicatorProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: LoadingIndicatorColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

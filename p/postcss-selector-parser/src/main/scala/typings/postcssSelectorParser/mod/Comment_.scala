@@ -36,7 +36,8 @@ object Comment_ {
     __obj.asInstanceOf[Comment_]
   }
   
-  extension [Self <: Comment_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Comment_] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.postcssSelectorParser.postcssSelectorParserStrings.comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

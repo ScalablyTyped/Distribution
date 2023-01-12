@@ -50,7 +50,8 @@ object CSSKeyframesRule {
     __obj.asInstanceOf[CSSKeyframesRule]
   }
   
-  extension [Self <: CSSKeyframesRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSKeyframesRule] (val x: Self) extends AnyVal {
     
     inline def setAppendRule(value: java.lang.String => Unit): Self = StObject.set(x, "appendRule", js.Any.fromFunction1(value))
     

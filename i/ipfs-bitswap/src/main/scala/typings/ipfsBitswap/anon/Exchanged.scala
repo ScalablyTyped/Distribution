@@ -24,7 +24,8 @@ object Exchanged {
     __obj.asInstanceOf[Exchanged]
   }
   
-  extension [Self <: Exchanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Exchanged] (val x: Self) extends AnyVal {
     
     inline def setExchanged(value: Double): Self = StObject.set(x, "exchanged", value.asInstanceOf[js.Any])
     

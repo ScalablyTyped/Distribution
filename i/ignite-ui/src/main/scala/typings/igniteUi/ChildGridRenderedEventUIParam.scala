@@ -28,7 +28,8 @@ object ChildGridRenderedEventUIParam {
     __obj.asInstanceOf[ChildGridRenderedEventUIParam]
   }
   
-  extension [Self <: ChildGridRenderedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildGridRenderedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChildgrid(value: Any): Self = StObject.set(x, "childgrid", value.asInstanceOf[js.Any])
     

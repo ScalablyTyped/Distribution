@@ -37,7 +37,8 @@ object CustomPalette {
     __obj.asInstanceOf[CustomPalette]
   }
   
-  extension [Self <: CustomPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPalette] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: PartialStatusColor): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     

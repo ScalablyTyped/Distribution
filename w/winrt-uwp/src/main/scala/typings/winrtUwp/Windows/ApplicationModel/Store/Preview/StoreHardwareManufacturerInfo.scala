@@ -31,7 +31,8 @@ object StoreHardwareManufacturerInfo {
     __obj.asInstanceOf[StoreHardwareManufacturerInfo]
   }
   
-  extension [Self <: StoreHardwareManufacturerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreHardwareManufacturerInfo] (val x: Self) extends AnyVal {
     
     inline def setHardwareManufacturerId(value: String): Self = StObject.set(x, "hardwareManufacturerId", value.asInstanceOf[js.Any])
     

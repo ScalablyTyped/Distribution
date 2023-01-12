@@ -69,7 +69,8 @@ object defaultWeakMapMod {
       __obj.asInstanceOf[DefaultWeakMap[K, V]]
     }
     
-    extension [Self <: DefaultWeakMap[?, ?], K /* <: js.Object */, V](x: Self & (DefaultWeakMap[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultWeakMap[?, ?], K /* <: js.Object */, V] (val x: Self & (DefaultWeakMap[K, V])) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

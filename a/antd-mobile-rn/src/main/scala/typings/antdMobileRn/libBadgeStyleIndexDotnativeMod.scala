@@ -100,7 +100,8 @@ object libBadgeStyleIndexDotnativeMod {
       __obj.asInstanceOf[IBadgeStyle]
     }
     
-    extension [Self <: IBadgeStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBadgeStyle] (val x: Self) extends AnyVal {
       
       inline def setDot(value: ViewStyle): Self = StObject.set(x, "dot", value.asInstanceOf[js.Any])
       

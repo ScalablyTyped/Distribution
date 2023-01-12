@@ -28,7 +28,8 @@ object GetRequestValidatorsRequest {
     __obj.asInstanceOf[GetRequestValidatorsRequest]
   }
   
-  extension [Self <: GetRequestValidatorsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRequestValidatorsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

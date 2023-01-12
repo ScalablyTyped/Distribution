@@ -28,7 +28,8 @@ object DeleteProvisioningArtifactInput {
     __obj.asInstanceOf[DeleteProvisioningArtifactInput]
   }
   
-  extension [Self <: DeleteProvisioningArtifactInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteProvisioningArtifactInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

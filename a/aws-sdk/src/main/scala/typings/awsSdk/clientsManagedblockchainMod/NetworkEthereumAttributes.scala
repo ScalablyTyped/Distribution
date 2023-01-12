@@ -18,7 +18,8 @@ object NetworkEthereumAttributes {
     __obj.asInstanceOf[NetworkEthereumAttributes]
   }
   
-  extension [Self <: NetworkEthereumAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEthereumAttributes] (val x: Self) extends AnyVal {
     
     inline def setChainId(value: String): Self = StObject.set(x, "ChainId", value.asInstanceOf[js.Any])
     

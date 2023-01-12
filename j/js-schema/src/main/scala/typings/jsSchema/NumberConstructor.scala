@@ -29,7 +29,8 @@ object NumberConstructor {
     __obj.asInstanceOf[NumberConstructor]
   }
   
-  extension [Self <: NumberConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberConstructor] (val x: Self) extends AnyVal {
     
     inline def setAbove(value: Double => NumberConstructor): Self = StObject.set(x, "above", js.Any.fromFunction1(value))
     

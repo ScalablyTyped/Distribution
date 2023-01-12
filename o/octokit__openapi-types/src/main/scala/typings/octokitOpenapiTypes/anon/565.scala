@@ -18,7 +18,8 @@ object `565` {
     __obj.asInstanceOf[`565`]
   }
   
-  extension [Self <: `565`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `565`] (val x: Self) extends AnyVal {
     
     inline def setPer(value: typings.octokitOpenapiTypes.octokitOpenapiTypesStrings._empty | day | week): Self = StObject.set(x, "per", value.asInstanceOf[js.Any])
     

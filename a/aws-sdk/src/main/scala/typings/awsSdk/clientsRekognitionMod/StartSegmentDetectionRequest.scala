@@ -40,7 +40,8 @@ object StartSegmentDetectionRequest {
     __obj.asInstanceOf[StartSegmentDetectionRequest]
   }
   
-  extension [Self <: StartSegmentDetectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSegmentDetectionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

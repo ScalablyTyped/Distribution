@@ -238,7 +238,8 @@ object Observation {
     __obj.asInstanceOf[Observation]
   }
   
-  extension [Self <: Observation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Observation] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchEventDetailType(value: CloudWatchEventDetailType): Self = StObject.set(x, "CloudWatchEventDetailType", value.asInstanceOf[js.Any])
     

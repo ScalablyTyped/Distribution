@@ -59,7 +59,8 @@ object distFirestoreSrcApiSettingsMod {
       __obj.asInstanceOf[FirestoreSettings]
     }
     
-    extension [Self <: FirestoreSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirestoreSettings] (val x: Self) extends AnyVal {
       
       inline def setCacheSizeBytes(value: Double): Self = StObject.set(x, "cacheSizeBytes", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object distFirestoreSrcApiSettingsMod {
       __obj.asInstanceOf[PersistenceSettings]
     }
     
-    extension [Self <: PersistenceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PersistenceSettings] (val x: Self) extends AnyVal {
       
       inline def setForceOwnership(value: Boolean): Self = StObject.set(x, "forceOwnership", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object AverageItemLength {
     __obj.asInstanceOf[AverageItemLength]
   }
   
-  extension [Self <: AverageItemLength](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageItemLength] (val x: Self) extends AnyVal {
     
     inline def setAverageItemLength(value: Double): Self = StObject.set(x, "averageItemLength", value.asInstanceOf[js.Any])
     

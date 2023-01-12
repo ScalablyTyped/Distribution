@@ -106,7 +106,8 @@ object IAjaxProxy {
     __obj.asInstanceOf[IAjaxProxy]
   }
   
-  extension [Self <: IAjaxProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAjaxProxy] (val x: Self) extends AnyVal {
     
     inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
     

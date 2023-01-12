@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Epoch]
     }
     
-    extension [Self <: Epoch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Epoch] (val x: Self) extends AnyVal {
       
       inline def setEpoch(value: Double): Self = StObject.set(x, "epoch", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object anon {
       __obj.asInstanceOf[IdResource]
     }
     
-    extension [Self <: IdResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdResource] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -166,7 +171,8 @@ object anon {
       __obj.asInstanceOf[Minsize]
     }
     
-    extension [Self <: Minsize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Minsize] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Resource]
     }
     
-    extension [Self <: Resource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resource] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -216,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Resourcepath]
     }
     
-    extension [Self <: Resourcepath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resourcepath] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

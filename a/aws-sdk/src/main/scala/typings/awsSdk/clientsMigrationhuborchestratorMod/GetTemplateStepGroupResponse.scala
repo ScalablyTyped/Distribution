@@ -63,7 +63,8 @@ object GetTemplateStepGroupResponse {
     __obj.asInstanceOf[GetTemplateStepGroupResponse]
   }
   
-  extension [Self <: GetTemplateStepGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTemplateStepGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

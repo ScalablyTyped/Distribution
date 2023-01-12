@@ -19,7 +19,8 @@ object SchemaRestrictionResponse {
     __obj.asInstanceOf[SchemaRestrictionResponse]
   }
   
-  extension [Self <: SchemaRestrictionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaRestrictionResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveMetricRestrictions(value: js.Array[ActiveMetricRestriction]): Self = StObject.set(x, "activeMetricRestrictions", value.asInstanceOf[js.Any])
     

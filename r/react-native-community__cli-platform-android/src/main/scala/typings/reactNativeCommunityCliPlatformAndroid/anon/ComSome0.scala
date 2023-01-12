@@ -17,7 +17,8 @@ object ComSome0 {
     __obj.asInstanceOf[ComSome0]
   }
   
-  extension [Self <: ComSome0](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComSome0] (val x: Self) extends AnyVal {
     
     inline def setCom_(value: Some0): Self = StObject.set(x, "com", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object libCacheCacheParserMod {
       __obj.asInstanceOf[CacheParser[T]]
     }
     
-    extension [Self <: CacheParser[?], T](x: Self & CacheParser[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheParser[?], T] (val x: Self & CacheParser[T]) extends AnyVal {
       
       inline def setConfig(value: Record[String, Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object ConnectionCredential {
     __obj.asInstanceOf[ConnectionCredential]
   }
   
-  extension [Self <: ConnectionCredential](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionCredential] (val x: Self) extends AnyVal {
     
     inline def setCloudSql(value: CloudSqlCredential): Self = StObject.set(x, "cloudSql", value.asInstanceOf[js.Any])
     

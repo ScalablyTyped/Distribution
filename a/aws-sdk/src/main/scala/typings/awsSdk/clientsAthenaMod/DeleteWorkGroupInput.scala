@@ -23,7 +23,8 @@ object DeleteWorkGroupInput {
     __obj.asInstanceOf[DeleteWorkGroupInput]
   }
   
-  extension [Self <: DeleteWorkGroupInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkGroupInput] (val x: Self) extends AnyVal {
     
     inline def setRecursiveDeleteOption(value: BoxedBoolean): Self = StObject.set(x, "RecursiveDeleteOption", value.asInstanceOf[js.Any])
     

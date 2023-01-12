@@ -101,7 +101,8 @@ object dxRangeSelectorOptions {
     __obj.asInstanceOf[dxRangeSelectorOptions]
   }
   
-  extension [Self <: dxRangeSelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxRangeSelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: Image): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

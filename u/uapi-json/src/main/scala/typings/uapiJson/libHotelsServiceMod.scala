@@ -52,7 +52,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[BookParams]
     }
     
-    extension [Self <: BookParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BookParams] (val x: Self) extends AnyVal {
       
       inline def setEndDate(value: String): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[CancelBookParams]
     }
     
-    extension [Self <: CancelBookParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelBookParams] (val x: Self) extends AnyVal {
       
       inline def setLocatorCode(value: String): Self = StObject.set(x, "LocatorCode", value.asInstanceOf[js.Any])
     }
@@ -128,7 +130,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[Guarantee]
     }
     
-    extension [Self <: Guarantee](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Guarantee] (val x: Self) extends AnyVal {
       
       inline def setBankCountryCode(value: String): Self = StObject.set(x, "BankCountryCode", value.asInstanceOf[js.Any])
       
@@ -204,7 +207,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[People]
     }
     
-    extension [Self <: People](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: People] (val x: Self) extends AnyVal {
       
       inline def setAge(value: Double): Self = StObject.set(x, "Age", value.asInstanceOf[js.Any])
       
@@ -274,7 +278,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[RatesParams]
     }
     
-    extension [Self <: RatesParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatesParams] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -311,7 +316,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[Room]
     }
     
-    extension [Self <: Room](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Room] (val x: Self) extends AnyVal {
       
       inline def setAdults(value: Double): Self = StObject.set(x, "adults", value.asInstanceOf[js.Any])
       
@@ -336,7 +342,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[RoomRef]
     }
     
-    extension [Self <: RoomRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoomRef] (val x: Self) extends AnyVal {
       
       inline def setAdults(value: Double): Self = StObject.set(x, "adults", value.asInstanceOf[js.Any])
       
@@ -384,7 +391,8 @@ object libHotelsServiceMod {
       __obj.asInstanceOf[SearchParams]
     }
     
-    extension [Self <: SearchParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchParams] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       

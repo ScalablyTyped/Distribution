@@ -15,7 +15,8 @@ object GridGroupableMessages {
     __obj.asInstanceOf[GridGroupableMessages]
   }
   
-  extension [Self <: GridGroupableMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridGroupableMessages] (val x: Self) extends AnyVal {
     
     inline def setEmpty(value: String): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
     

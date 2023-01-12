@@ -40,7 +40,8 @@ object ClientRequestFailedEventArgs {
     __obj.asInstanceOf[ClientRequestFailedEventArgs]
   }
   
-  extension [Self <: ClientRequestFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientRequestFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGet_errorCode(value: () => Double): Self = StObject.set(x, "get_errorCode", js.Any.fromFunction0(value))
     

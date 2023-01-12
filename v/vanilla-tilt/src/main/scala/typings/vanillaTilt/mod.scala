@@ -207,7 +207,8 @@ object mod {
       __obj.asInstanceOf[TiltOptions]
     }
     
-    extension [Self <: TiltOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TiltOptions] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.vanillaTilt.vanillaTiltStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -330,7 +331,8 @@ object mod {
       __obj.asInstanceOf[TiltValues]
     }
     
-    extension [Self <: TiltValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TiltValues] (val x: Self) extends AnyVal {
       
       inline def setPercentageX(value: Double): Self = StObject.set(x, "percentageX", value.asInstanceOf[js.Any])
       
@@ -382,7 +384,8 @@ object mod {
       __obj.asInstanceOf[VanillaTilt]
     }
     
-    extension [Self <: VanillaTilt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VanillaTilt] (val x: Self) extends AnyVal {
       
       inline def setAddEventListeners(value: () => Unit): Self = StObject.set(x, "addEventListeners", js.Any.fromFunction0(value))
       

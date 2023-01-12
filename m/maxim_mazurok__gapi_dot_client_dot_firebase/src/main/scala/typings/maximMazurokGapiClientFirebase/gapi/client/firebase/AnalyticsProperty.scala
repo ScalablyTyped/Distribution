@@ -26,7 +26,8 @@ object AnalyticsProperty {
     __obj.asInstanceOf[AnalyticsProperty]
   }
   
-  extension [Self <: AnalyticsProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsProperty] (val x: Self) extends AnyVal {
     
     inline def setAnalyticsAccountId(value: String): Self = StObject.set(x, "analyticsAccountId", value.asInstanceOf[js.Any])
     

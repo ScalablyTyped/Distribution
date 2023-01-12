@@ -131,7 +131,8 @@ object Capabilities {
     __obj.asInstanceOf[Capabilities]
   }
   
-  extension [Self <: Capabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Capabilities] (val x: Self) extends AnyVal {
     
     inline def setAdditionalModuleColumns(value: js.Array[ColumnDescriptor]): Self = StObject.set(x, "additionalModuleColumns", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object UpdateScalingParametersResponse {
     __obj.asInstanceOf[UpdateScalingParametersResponse]
   }
   
-  extension [Self <: UpdateScalingParametersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateScalingParametersResponse] (val x: Self) extends AnyVal {
     
     inline def setScalingParameters(value: ScalingParametersStatus): Self = StObject.set(x, "ScalingParameters", value.asInstanceOf[js.Any])
   }

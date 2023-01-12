@@ -109,7 +109,8 @@ object proxy {
       __obj.asInstanceOf[IAjax]
     }
     
-    extension [Self <: IAjax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAjax] (val x: Self) extends AnyVal {
       
       inline def setActionMethods(value: Any): Self = StObject.set(x, "actionMethods", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object proxy {
       __obj.asInstanceOf[IClient]
     }
     
-    extension [Self <: IClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IClient] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -280,7 +282,8 @@ object proxy {
       __obj.asInstanceOf[IDirect]
     }
     
-    extension [Self <: IDirect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDirect] (val x: Self) extends AnyVal {
       
       inline def setBuildUrl(value: () => String): Self = StObject.set(x, "buildUrl", js.Any.fromFunction0(value))
       
@@ -409,7 +412,8 @@ object proxy {
       __obj.asInstanceOf[typings.senchaTouch.Ext.data.proxy.IJsonP]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.data.proxy.IJsonP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.data.proxy.IJsonP] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -493,7 +497,8 @@ object proxy {
       __obj.asInstanceOf[IMemory]
     }
     
-    extension [Self <: IMemory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMemory] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -648,7 +653,8 @@ object proxy {
       __obj.asInstanceOf[typings.senchaTouch.Ext.data.proxy.IProxy]
     }
     
-    extension [Self <: typings.senchaTouch.Ext.data.proxy.IProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.data.proxy.IProxy] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: /* options */ js.UndefOr[Any] => IBatch): Self = StObject.set(x, "batch", js.Any.fromFunction1(value))
       
@@ -787,7 +793,8 @@ object proxy {
       __obj.asInstanceOf[IRest]
     }
     
-    extension [Self <: IRest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRest] (val x: Self) extends AnyVal {
       
       inline def setAppendId(value: Boolean): Self = StObject.set(x, "appendId", value.asInstanceOf[js.Any])
       
@@ -1108,7 +1115,8 @@ object proxy {
       __obj.asInstanceOf[IServer]
     }
     
-    extension [Self <: IServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServer] (val x: Self) extends AnyVal {
       
       inline def setAfterRequest(value: (/* request */ js.UndefOr[IRequest], /* success */ js.UndefOr[Boolean]) => Unit): Self = StObject.set(x, "afterRequest", js.Any.fromFunction2(value))
       
@@ -1481,7 +1489,8 @@ object proxy {
       __obj.asInstanceOf[ISql]
     }
     
-    extension [Self <: ISql](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISql] (val x: Self) extends AnyVal {
       
       inline def setCreate(
         value: (/* operation */ js.UndefOr[Any], /* callback */ js.UndefOr[Any], /* scope */ js.UndefOr[Any]) => Unit
@@ -1686,7 +1695,8 @@ object proxy {
       __obj.asInstanceOf[IWebStorage]
     }
     
-    extension [Self <: IWebStorage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebStorage] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       

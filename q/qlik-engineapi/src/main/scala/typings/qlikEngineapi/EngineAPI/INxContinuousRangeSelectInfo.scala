@@ -23,7 +23,8 @@ object INxContinuousRangeSelectInfo {
     __obj.asInstanceOf[INxContinuousRangeSelectInfo]
   }
   
-  extension [Self <: INxContinuousRangeSelectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxContinuousRangeSelectInfo] (val x: Self) extends AnyVal {
     
     inline def setQDimIx(value: Double): Self = StObject.set(x, "qDimIx", value.asInstanceOf[js.Any])
   }

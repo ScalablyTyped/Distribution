@@ -96,7 +96,8 @@ object libSideBySideRendererMod {
       __obj.asInstanceOf[DiffPreparedLine]
     }
     
-    extension [Self <: DiffPreparedLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffPreparedLine] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -121,7 +122,8 @@ object libSideBySideRendererMod {
       __obj.asInstanceOf[FileHtml]
     }
     
-    extension [Self <: FileHtml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileHtml] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: String): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object libSideBySideRendererMod {
       __obj.asInstanceOf[SideBySideRendererConfig]
     }
     
-    extension [Self <: SideBySideRendererConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideBySideRendererConfig] (val x: Self) extends AnyVal {
       
       inline def setMatchingMaxComparisons(value: Double): Self = StObject.set(x, "matchingMaxComparisons", value.asInstanceOf[js.Any])
       

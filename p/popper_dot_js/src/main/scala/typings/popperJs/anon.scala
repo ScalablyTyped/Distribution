@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Arrow]
     }
     
-    extension [Self <: Arrow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Arrow] (val x: Self) extends AnyVal {
       
       inline def setArrow(value: Left): Self = StObject.set(x, "arrow", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object anon {
       __obj.asInstanceOf[BaseModifierbehaviorBehav]
     }
     
-    extension [Self <: BaseModifierbehaviorBehav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifierbehaviorBehav] (val x: Self) extends AnyVal {
       
       inline def setBehavior(value: Behavior | js.Array[Position]): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object anon {
       __obj.asInstanceOf[BaseModifierelementstring]
     }
     
-    extension [Self <: BaseModifierelementstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifierelementstring] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String | Element): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object anon {
       __obj.asInstanceOf[BaseModifiergpuAccelerati]
     }
     
-    extension [Self <: BaseModifiergpuAccelerati](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifiergpuAccelerati] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object anon {
       __obj.asInstanceOf[BaseModifiernamestring]
     }
     
-    extension [Self <: BaseModifiernamestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifiernamestring] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -249,7 +254,8 @@ object anon {
       __obj.asInstanceOf[BaseModifieroffsetnumbers]
     }
     
-    extension [Self <: BaseModifieroffsetnumbers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifieroffsetnumbers] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -289,7 +295,8 @@ object anon {
       __obj.asInstanceOf[BaseModifieronLoadFunctio]
     }
     
-    extension [Self <: BaseModifieronLoadFunctio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifieronLoadFunctio] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -337,7 +344,8 @@ object anon {
       __obj.asInstanceOf[BaseModifierpriorityArray]
     }
     
-    extension [Self <: BaseModifierpriorityArray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModifierpriorityArray] (val x: Self) extends AnyVal {
       
       inline def setBoundariesElement(value: Boundary | Element): Self = StObject.set(x, "boundariesElement", value.asInstanceOf[js.Any])
       
@@ -384,7 +392,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Double): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       

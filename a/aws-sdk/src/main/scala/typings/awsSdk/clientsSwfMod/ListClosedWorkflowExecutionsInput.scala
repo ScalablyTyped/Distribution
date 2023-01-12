@@ -63,7 +63,8 @@ object ListClosedWorkflowExecutionsInput {
     __obj.asInstanceOf[ListClosedWorkflowExecutionsInput]
   }
   
-  extension [Self <: ListClosedWorkflowExecutionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListClosedWorkflowExecutionsInput] (val x: Self) extends AnyVal {
     
     inline def setCloseStatusFilter(value: CloseStatusFilter): Self = StObject.set(x, "closeStatusFilter", value.asInstanceOf[js.Any])
     

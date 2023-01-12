@@ -21,7 +21,8 @@ object StorageStats {
     __obj.asInstanceOf[StorageStats]
   }
   
-  extension [Self <: StorageStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageStats] (val x: Self) extends AnyVal {
     
     inline def setRead_count_normalized(value: Double): Self = StObject.set(x, "read_count_normalized", value.asInstanceOf[js.Any])
     

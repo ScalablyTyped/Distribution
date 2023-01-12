@@ -31,7 +31,8 @@ object mod {
         __obj.asInstanceOf[JSON]
       }
       
-      extension [Self <: JSON](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JSON] (val x: Self) extends AnyVal {
         
         inline def setMinify(value: String => String): Self = StObject.set(x, "minify", js.Any.fromFunction1(value))
       }

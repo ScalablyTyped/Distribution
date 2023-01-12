@@ -52,7 +52,8 @@ object componentsButtonIconButtonMod {
       __obj.asInstanceOf[IconButtonProps]
     }
     
-    extension [Self <: IconButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object componentsButtonIconButtonMod {
       __obj.asInstanceOf[IconButtonTheme]
     }
     
-    extension [Self <: IconButtonTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconButtonTheme] (val x: Self) extends AnyVal {
       
       inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
       

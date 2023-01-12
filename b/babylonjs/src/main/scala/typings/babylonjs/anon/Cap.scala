@@ -47,7 +47,8 @@ object Cap {
     __obj.asInstanceOf[Cap]
   }
   
-  extension [Self <: Cap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cap] (val x: Self) extends AnyVal {
     
     inline def setArc(value: Double): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
     

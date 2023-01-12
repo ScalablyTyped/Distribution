@@ -112,7 +112,8 @@ object distTypesDomDocumentClonerMod {
       __obj.asInstanceOf[CloneConfigurations]
     }
     
-    extension [Self <: CloneConfigurations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneConfigurations] (val x: Self) extends AnyVal {
       
       inline def setCopyStyles(value: Boolean): Self = StObject.set(x, "copyStyles", value.asInstanceOf[js.Any])
       
@@ -135,7 +136,8 @@ object distTypesDomDocumentClonerMod {
       __obj.asInstanceOf[CloneOptions]
     }
     
-    extension [Self <: CloneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloneOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object distTypesDomDocumentClonerMod {
       __obj.asInstanceOf[WindowOptions]
     }
     
-    extension [Self <: WindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowOptions] (val x: Self) extends AnyVal {
       
       inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
       

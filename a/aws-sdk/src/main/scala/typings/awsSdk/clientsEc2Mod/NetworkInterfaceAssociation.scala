@@ -48,7 +48,8 @@ object NetworkInterfaceAssociation {
     __obj.asInstanceOf[NetworkInterfaceAssociation]
   }
   
-  extension [Self <: NetworkInterfaceAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkInterfaceAssociation] (val x: Self) extends AnyVal {
     
     inline def setAllocationId(value: String): Self = StObject.set(x, "AllocationId", value.asInstanceOf[js.Any])
     

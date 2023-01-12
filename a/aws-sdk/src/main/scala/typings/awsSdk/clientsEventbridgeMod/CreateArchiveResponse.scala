@@ -33,7 +33,8 @@ object CreateArchiveResponse {
     __obj.asInstanceOf[CreateArchiveResponse]
   }
   
-  extension [Self <: CreateArchiveResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateArchiveResponse] (val x: Self) extends AnyVal {
     
     inline def setArchiveArn(value: ArchiveArn): Self = StObject.set(x, "ArchiveArn", value.asInstanceOf[js.Any])
     

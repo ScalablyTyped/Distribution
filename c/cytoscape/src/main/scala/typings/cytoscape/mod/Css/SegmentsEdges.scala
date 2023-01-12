@@ -51,7 +51,8 @@ object SegmentsEdges {
     __obj.asInstanceOf[SegmentsEdges]
   }
   
-  extension [Self <: SegmentsEdges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentsEdges] (val x: Self) extends AnyVal {
     
     inline def `setEdge-distances`(value: PropertyValueEdge[intersection | `node-position`]): Self = StObject.set(x, "edge-distances", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object KeyboardWillShowEvent {
     __obj.asInstanceOf[KeyboardWillShowEvent]
   }
   
-  extension [Self <: KeyboardWillShowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardWillShowEvent] (val x: Self) extends AnyVal {
     
     inline def setKeyboardHeight(value: Double): Self = StObject.set(x, "keyboardHeight", value.asInstanceOf[js.Any])
   }

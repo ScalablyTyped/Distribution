@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsFileMod extends Shortcut {
       __obj.asInstanceOf[FileProps]
     }
     
-    extension [Self <: FileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ExchangeOptions]
     }
     
-    extension [Self <: ExchangeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangeOptions] (val x: Self) extends AnyVal {
       
       inline def setNoReply(value: Boolean): Self = StObject.set(x, "noReply", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object mod {
       __obj.asInstanceOf[QueueOptions]
     }
     
-    extension [Self <: QueueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

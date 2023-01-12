@@ -18,7 +18,8 @@ object MobileBroadbandPinLockStateChangeTriggerDetails {
     __obj.asInstanceOf[MobileBroadbandPinLockStateChangeTriggerDetails]
   }
   
-  extension [Self <: MobileBroadbandPinLockStateChangeTriggerDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandPinLockStateChangeTriggerDetails] (val x: Self) extends AnyVal {
     
     inline def setPinLockStateChanges(value: IVectorView[MobileBroadbandPinLockStateChange]): Self = StObject.set(x, "pinLockStateChanges", value.asInstanceOf[js.Any])
   }

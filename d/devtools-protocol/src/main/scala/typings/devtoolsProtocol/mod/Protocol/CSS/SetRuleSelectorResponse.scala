@@ -18,7 +18,8 @@ object SetRuleSelectorResponse {
     __obj.asInstanceOf[SetRuleSelectorResponse]
   }
   
-  extension [Self <: SetRuleSelectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetRuleSelectorResponse] (val x: Self) extends AnyVal {
     
     inline def setSelectorList(value: SelectorList): Self = StObject.set(x, "selectorList", value.asInstanceOf[js.Any])
   }

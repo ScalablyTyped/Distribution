@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Fade]
     }
     
-    extension [Self <: Fade](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fade] (val x: Self) extends AnyVal {
       
       inline def setFade(value: TransitionOptions): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       

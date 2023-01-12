@@ -20,7 +20,8 @@ object ExtOcspNoCheck {
     __obj.asInstanceOf[ExtOcspNoCheck]
   }
   
-  extension [Self <: ExtOcspNoCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtOcspNoCheck] (val x: Self) extends AnyVal {
     
     inline def setCritical(value: Boolean): Self = StObject.set(x, "critical", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ScrollBarOption {
     __obj.asInstanceOf[ScrollBarOption]
   }
   
-  extension [Self <: ScrollBarOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollBarOption] (val x: Self) extends AnyVal {
     
     inline def setFade(value: Boolean): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
   }

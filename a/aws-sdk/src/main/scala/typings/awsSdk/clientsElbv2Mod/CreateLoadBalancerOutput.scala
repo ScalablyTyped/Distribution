@@ -18,7 +18,8 @@ object CreateLoadBalancerOutput {
     __obj.asInstanceOf[CreateLoadBalancerOutput]
   }
   
-  extension [Self <: CreateLoadBalancerOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLoadBalancerOutput] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancers(value: LoadBalancers): Self = StObject.set(x, "LoadBalancers", value.asInstanceOf[js.Any])
     

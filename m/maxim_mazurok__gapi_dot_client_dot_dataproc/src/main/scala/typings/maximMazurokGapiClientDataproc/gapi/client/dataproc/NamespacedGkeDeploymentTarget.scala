@@ -19,7 +19,8 @@ object NamespacedGkeDeploymentTarget {
     __obj.asInstanceOf[NamespacedGkeDeploymentTarget]
   }
   
-  extension [Self <: NamespacedGkeDeploymentTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespacedGkeDeploymentTarget] (val x: Self) extends AnyVal {
     
     inline def setClusterNamespace(value: String): Self = StObject.set(x, "clusterNamespace", value.asInstanceOf[js.Any])
     

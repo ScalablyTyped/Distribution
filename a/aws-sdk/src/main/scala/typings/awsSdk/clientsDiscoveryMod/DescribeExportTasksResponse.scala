@@ -23,7 +23,8 @@ object DescribeExportTasksResponse {
     __obj.asInstanceOf[DescribeExportTasksResponse]
   }
   
-  extension [Self <: DescribeExportTasksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExportTasksResponse] (val x: Self) extends AnyVal {
     
     inline def setExportsInfo(value: ExportsInfo): Self = StObject.set(x, "exportsInfo", value.asInstanceOf[js.Any])
     

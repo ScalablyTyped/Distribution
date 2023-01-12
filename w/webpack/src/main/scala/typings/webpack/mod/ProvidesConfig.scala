@@ -37,7 +37,8 @@ object ProvidesConfig {
     __obj.asInstanceOf[ProvidesConfig]
   }
   
-  extension [Self <: ProvidesConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProvidesConfig] (val x: Self) extends AnyVal {
     
     inline def setEager(value: Boolean): Self = StObject.set(x, "eager", value.asInstanceOf[js.Any])
     

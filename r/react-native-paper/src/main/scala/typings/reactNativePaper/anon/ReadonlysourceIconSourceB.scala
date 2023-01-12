@@ -23,7 +23,8 @@ object ReadonlysourceIconSourceB {
     __obj.asInstanceOf[ReadonlysourceIconSourceB]
   }
   
-  extension [Self <: ReadonlysourceIconSourceB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlysourceIconSourceB] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: rtl | ltr | auto): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

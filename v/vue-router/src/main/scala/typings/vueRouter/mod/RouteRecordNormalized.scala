@@ -139,7 +139,8 @@ object RouteRecordNormalized {
     __obj.asInstanceOf[RouteRecordNormalized]
   }
   
-  extension [Self <: RouteRecordNormalized](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordNormalized] (val x: Self) extends AnyVal {
     
     inline def setAliasOf(value: RouteRecordNormalized): Self = StObject.set(x, "aliasOf", value.asInstanceOf[js.Any])
     

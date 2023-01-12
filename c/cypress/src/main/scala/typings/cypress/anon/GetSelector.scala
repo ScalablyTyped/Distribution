@@ -20,7 +20,8 @@ object GetSelector {
     __obj.asInstanceOf[GetSelector]
   }
   
-  extension [Self <: GetSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSelector] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: PartialSelectorPlayground => Unit): Self = StObject.set(x, "defaults", js.Any.fromFunction1(value))
     

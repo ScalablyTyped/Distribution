@@ -18,7 +18,8 @@ object DeleteAlertRequest {
     __obj.asInstanceOf[DeleteAlertRequest]
   }
   
-  extension [Self <: DeleteAlertRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteAlertRequest] (val x: Self) extends AnyVal {
     
     inline def setAlertArn(value: Arn): Self = StObject.set(x, "AlertArn", value.asInstanceOf[js.Any])
   }

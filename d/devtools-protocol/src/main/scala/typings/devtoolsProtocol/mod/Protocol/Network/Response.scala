@@ -145,7 +145,8 @@ object Response {
     __obj.asInstanceOf[Response]
   }
   
-  extension [Self <: Response](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
     
     inline def setAlternateProtocolUsage(value: AlternateProtocolUsage): Self = StObject.set(x, "alternateProtocolUsage", value.asInstanceOf[js.Any])
     

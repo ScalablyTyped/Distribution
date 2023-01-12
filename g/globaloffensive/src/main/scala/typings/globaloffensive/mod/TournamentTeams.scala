@@ -24,7 +24,8 @@ object TournamentTeams {
     __obj.asInstanceOf[TournamentTeams]
   }
   
-  extension [Self <: TournamentTeams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TournamentTeams] (val x: Self) extends AnyVal {
     
     inline def setPlayers(value: Accountid): Self = StObject.set(x, "players", value.asInstanceOf[js.Any])
     

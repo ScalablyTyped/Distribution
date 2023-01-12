@@ -19,7 +19,8 @@ object AdmissionWhitelistPattern {
     __obj.asInstanceOf[AdmissionWhitelistPattern]
   }
   
-  extension [Self <: AdmissionWhitelistPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdmissionWhitelistPattern] (val x: Self) extends AnyVal {
     
     inline def setNamePattern(value: String): Self = StObject.set(x, "namePattern", value.asInstanceOf[js.Any])
     

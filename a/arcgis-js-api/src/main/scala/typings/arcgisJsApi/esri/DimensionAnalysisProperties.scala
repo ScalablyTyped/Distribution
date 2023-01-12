@@ -27,7 +27,8 @@ object DimensionAnalysisProperties {
     __obj.asInstanceOf[DimensionAnalysisProperties]
   }
   
-  extension [Self <: DimensionAnalysisProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionAnalysisProperties] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: CollectionProperties[LengthDimensionProperties]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

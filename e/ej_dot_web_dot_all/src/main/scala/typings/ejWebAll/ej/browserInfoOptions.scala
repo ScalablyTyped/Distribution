@@ -21,7 +21,8 @@ object browserInfoOptions {
     __obj.asInstanceOf[browserInfoOptions]
   }
   
-  extension [Self <: browserInfoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: browserInfoOptions] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: Any): Self = StObject.set(x, "culture", value.asInstanceOf[js.Any])
     

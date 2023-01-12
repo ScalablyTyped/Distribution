@@ -223,7 +223,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Renderer[optionType]]
     }
     
-    extension [Self <: Renderer[?], optionType](x: Self & Renderer[optionType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer[?], optionType] (val x: Self & Renderer[optionType]) extends AnyVal {
       
       inline def setContext(value: (optionType, js.Function0[js.Array[String]]) => js.Function0[js.Array[String]]): Self = StObject.set(x, "context", js.Any.fromFunction2(value))
       
@@ -280,7 +281,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TagType]
     }
     
-    extension [Self <: TagType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactNode]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

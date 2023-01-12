@@ -19,7 +19,8 @@ object CADJPY {
     __obj.asInstanceOf[CADJPY]
   }
   
-  extension [Self <: CADJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CADJPY] (val x: Self) extends AnyVal {
     
     inline def setCAD(value: js.Array[String]): Self = StObject.set(x, "CAD", value.asInstanceOf[js.Any])
     

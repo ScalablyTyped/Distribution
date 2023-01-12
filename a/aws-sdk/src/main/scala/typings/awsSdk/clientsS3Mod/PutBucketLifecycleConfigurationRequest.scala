@@ -33,7 +33,8 @@ object PutBucketLifecycleConfigurationRequest {
     __obj.asInstanceOf[PutBucketLifecycleConfigurationRequest]
   }
   
-  extension [Self <: PutBucketLifecycleConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketLifecycleConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: BucketName): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

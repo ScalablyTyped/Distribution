@@ -23,7 +23,8 @@ object EbsConfiguration {
     __obj.asInstanceOf[EbsConfiguration]
   }
   
-  extension [Self <: EbsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEbsBlockDeviceConfigs(value: EbsBlockDeviceConfigList): Self = StObject.set(x, "EbsBlockDeviceConfigs", value.asInstanceOf[js.Any])
     

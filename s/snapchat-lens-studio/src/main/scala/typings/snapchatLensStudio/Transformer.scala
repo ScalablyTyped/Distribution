@@ -22,7 +22,8 @@ object Transformer {
     __obj.asInstanceOf[Transformer]
   }
   
-  extension [Self <: Transformer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transformer] (val x: Self) extends AnyVal {
     
     inline def setInverseMatrix(value: mat3): Self = StObject.set(x, "inverseMatrix", value.asInstanceOf[js.Any])
     

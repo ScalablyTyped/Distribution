@@ -26,7 +26,8 @@ object ChildrenTransitions {
     __obj.asInstanceOf[ChildrenTransitions]
   }
   
-  extension [Self <: ChildrenTransitions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenTransitions] (val x: Self) extends AnyVal {
     
     inline def setChildrenTransitions(value: Any): Self = StObject.set(x, "childrenTransitions", value.asInstanceOf[js.Any])
     

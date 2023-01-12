@@ -17,7 +17,8 @@ object PressColor {
     __obj.asInstanceOf[PressColor]
   }
   
-  extension [Self <: PressColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressColor] (val x: Self) extends AnyVal {
     
     inline def setBorderless(value: Boolean): Self = StObject.set(x, "borderless", value.asInstanceOf[js.Any])
     

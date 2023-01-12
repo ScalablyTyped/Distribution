@@ -47,7 +47,8 @@ object GridDrawEvent {
     __obj.asInstanceOf[GridDrawEvent]
   }
   
-  extension [Self <: GridDrawEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridDrawEvent] (val x: Self) extends AnyVal {
     
     inline def setAxis(value: Axis): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

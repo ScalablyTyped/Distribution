@@ -37,7 +37,8 @@ object XInteractionDocumentSave {
     __obj.asInstanceOf[XInteractionDocumentSave]
   }
   
-  extension [Self <: XInteractionDocumentSave](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInteractionDocumentSave] (val x: Self) extends AnyVal {
     
     inline def setSetName(value: (String, XContent) => Unit): Self = StObject.set(x, "setName", js.Any.fromFunction2(value))
   }

@@ -33,7 +33,8 @@ object Meeting {
     __obj.asInstanceOf[Meeting]
   }
   
-  extension [Self <: Meeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Meeting] (val x: Self) extends AnyVal {
     
     inline def setExternalMeetingId(value: ExternalMeetingIdType): Self = StObject.set(x, "ExternalMeetingId", value.asInstanceOf[js.Any])
     

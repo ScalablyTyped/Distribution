@@ -18,7 +18,8 @@ object StreamProcessorDataSharingPreference {
     __obj.asInstanceOf[StreamProcessorDataSharingPreference]
   }
   
-  extension [Self <: StreamProcessorDataSharingPreference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamProcessorDataSharingPreference] (val x: Self) extends AnyVal {
     
     inline def setOptIn(value: Boolean): Self = StObject.set(x, "OptIn", value.asInstanceOf[js.Any])
   }

@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[CharsetMatch]
     }
     
-    extension [Self <: CharsetMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CharsetMatch] (val x: Self) extends AnyVal {
       
       inline def setCharsetName(value: String): Self = StObject.set(x, "charsetName", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object mod {
       __obj.asInstanceOf[InputStats]
     }
     
-    extension [Self <: InputStats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InputStats] (val x: Self) extends AnyVal {
       
       inline def setByteStats(value: js.Array[Double]): Self = StObject.set(x, "byteStats", value.asInstanceOf[js.Any])
       

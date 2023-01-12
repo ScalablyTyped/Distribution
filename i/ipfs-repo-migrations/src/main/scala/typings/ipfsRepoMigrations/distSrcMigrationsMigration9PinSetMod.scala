@@ -37,7 +37,8 @@ object distSrcMigrationsMigration9PinSetMod {
       __obj.asInstanceOf[Pin]
     }
     
-    extension [Self <: Pin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pin] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

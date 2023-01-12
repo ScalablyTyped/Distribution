@@ -21,7 +21,8 @@ object LayoutAnimationConfig {
     __obj.asInstanceOf[LayoutAnimationConfig]
   }
   
-  extension [Self <: LayoutAnimationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutAnimationConfig] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: LayoutAnimationAnim): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

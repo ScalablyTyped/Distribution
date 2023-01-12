@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => js.Promise[js.Array[java.lang.String]]): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
     }
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[String]
     }
     
-    extension [Self <: String](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: String] (val x: Self) extends AnyVal {
       
       inline def setString(value: js.Array[java.lang.String]): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
       

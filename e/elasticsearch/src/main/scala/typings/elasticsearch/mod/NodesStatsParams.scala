@@ -40,7 +40,8 @@ object NodesStatsParams {
     __obj.asInstanceOf[NodesStatsParams]
   }
   
-  extension [Self <: NodesStatsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesStatsParams] (val x: Self) extends AnyVal {
     
     inline def setCompletionFields(value: NameList): Self = StObject.set(x, "completionFields", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[ContentRangeFormatOptions]
     }
     
-    extension [Self <: ContentRangeFormatOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRangeFormatOptions] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ContentRangeParts]
     }
     
-    extension [Self <: ContentRangeParts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentRangeParts] (val x: Self) extends AnyVal {
       
       inline def setFirst(value: Double): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
       

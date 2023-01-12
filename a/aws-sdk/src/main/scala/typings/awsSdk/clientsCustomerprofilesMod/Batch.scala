@@ -23,7 +23,8 @@ object Batch {
     __obj.asInstanceOf[Batch]
   }
   
-  extension [Self <: Batch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Batch] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "EndTime", value.asInstanceOf[js.Any])
     

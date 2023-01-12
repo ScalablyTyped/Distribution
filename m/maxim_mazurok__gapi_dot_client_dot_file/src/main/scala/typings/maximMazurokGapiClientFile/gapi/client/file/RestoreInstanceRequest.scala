@@ -19,7 +19,8 @@ object RestoreInstanceRequest {
     __obj.asInstanceOf[RestoreInstanceRequest]
   }
   
-  extension [Self <: RestoreInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setFileShare(value: String): Self = StObject.set(x, "fileShare", value.asInstanceOf[js.Any])
     

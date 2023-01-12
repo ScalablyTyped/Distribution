@@ -63,7 +63,8 @@ object buildSrcNormalizeRuleforrangedlineMod {
       __obj.asInstanceOf[EncodingX2Mixins]
     }
     
-    extension [Self <: EncodingX2Mixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingX2Mixins] (val x: Self) extends AnyVal {
       
       inline def setX2(value: Position2Def[Field]): Self = StObject.set(x, "x2", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object buildSrcNormalizeRuleforrangedlineMod {
       __obj.asInstanceOf[EncodingY2Mixins]
     }
     
-    extension [Self <: EncodingY2Mixins](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingY2Mixins] (val x: Self) extends AnyVal {
       
       inline def setY2(value: Position2Def[Field]): Self = StObject.set(x, "y2", value.asInstanceOf[js.Any])
       

@@ -185,7 +185,8 @@ object IXMLDOMCDATASection {
     __obj.asInstanceOf[IXMLDOMCDATASection]
   }
   
-  extension [Self <: IXMLDOMCDATASection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXMLDOMCDATASection] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: IXMLDOMNode => IXMLDOMNode): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

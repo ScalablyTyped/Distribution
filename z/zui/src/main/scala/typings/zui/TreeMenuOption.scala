@@ -23,7 +23,8 @@ object TreeMenuOption {
     __obj.asInstanceOf[TreeMenuOption]
   }
   
-  extension [Self <: TreeMenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeMenuOption] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

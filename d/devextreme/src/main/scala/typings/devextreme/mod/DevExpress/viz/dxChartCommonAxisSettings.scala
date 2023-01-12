@@ -128,7 +128,8 @@ object dxChartCommonAxisSettings {
     __obj.asInstanceOf[dxChartCommonAxisSettings]
   }
   
-  extension [Self <: dxChartCommonAxisSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartCommonAxisSettings] (val x: Self) extends AnyVal {
     
     inline def setAggregatedPointsPosition(value: AggregatedPointsPosition): Self = StObject.set(x, "aggregatedPointsPosition", value.asInstanceOf[js.Any])
     

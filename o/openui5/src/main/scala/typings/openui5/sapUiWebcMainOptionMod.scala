@@ -340,7 +340,8 @@ object sapUiWebcMainOptionMod {
       __obj.asInstanceOf[OptionSettings]
     }
     
-    extension [Self <: OptionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

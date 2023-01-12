@@ -34,7 +34,8 @@ object libModalHeaderMod {
       __obj.asInstanceOf[ModalHeaderProps]
     }
     
-    extension [Self <: ModalHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

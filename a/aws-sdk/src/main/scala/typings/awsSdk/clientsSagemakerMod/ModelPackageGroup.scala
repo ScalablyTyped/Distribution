@@ -45,7 +45,8 @@ object ModelPackageGroup {
     __obj.asInstanceOf[ModelPackageGroup]
   }
   
-  extension [Self <: ModelPackageGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelPackageGroup] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: UserContext): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     

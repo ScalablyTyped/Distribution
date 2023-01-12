@@ -27,7 +27,8 @@ object PixelSizeSpatialReference {
     __obj.asInstanceOf[PixelSizeSpatialReference]
   }
   
-  extension [Self <: PixelSizeSpatialReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PixelSizeSpatialReference] (val x: Self) extends AnyVal {
     
     inline def setWkid(value: Double): Self = StObject.set(x, "wkid", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PutPartnerEventsResultEntry {
     __obj.asInstanceOf[PutPartnerEventsResultEntry]
   }
   
-  extension [Self <: PutPartnerEventsResultEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutPartnerEventsResultEntry] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: ErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

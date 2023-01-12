@@ -81,7 +81,8 @@ object DaylightProperties {
     __obj.asInstanceOf[DaylightProperties]
   }
   
-  extension [Self <: DaylightProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DaylightProperties] (val x: Self) extends AnyVal {
     
     inline def setDateOrSeason(value: season | date): Self = StObject.set(x, "dateOrSeason", value.asInstanceOf[js.Any])
     

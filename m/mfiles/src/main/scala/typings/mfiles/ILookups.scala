@@ -38,7 +38,8 @@ object ILookups {
     __obj.asInstanceOf[ILookups]
   }
   
-  extension [Self <: ILookups](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILookups] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (Double, ILookup) => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction2(value))
     

@@ -286,7 +286,8 @@ object sapMLightBoxMod {
       __obj.asInstanceOf[LightBoxSettings]
     }
     
-    extension [Self <: LightBoxSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightBoxSettings] (val x: Self) extends AnyVal {
       
       inline def setImageContent(
         value: js.Array[typings.openui5.sapMLightBoxItemMod.default] | typings.openui5.sapMLightBoxItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

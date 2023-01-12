@@ -22,7 +22,8 @@ object ConnectInfo {
     __obj.asInstanceOf[ConnectInfo]
   }
   
-  extension [Self <: ConnectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectInfo] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

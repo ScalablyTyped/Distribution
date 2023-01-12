@@ -1977,7 +1977,8 @@ object rxjsInternalObservableMod {
         ]
     ): typings.rxjs.distTypesInternalObservableMod.Observable[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("zip")(sourcesAndResultSelector.asInstanceOf[js.Any]).asInstanceOf[typings.rxjs.distTypesInternalObservableMod.Observable[R]]
     
-    extension [Self <: Observable[?], T](x: Self & Observable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], T] (val x: Self & Observable[T]) extends AnyVal {
       
       inline def setAudit(value: FnCall): Self = StObject.set(x, "audit", value.asInstanceOf[js.Any])
       

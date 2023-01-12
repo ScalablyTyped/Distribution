@@ -28,7 +28,8 @@ object Permissions {
     __obj.asInstanceOf[Permissions]
   }
   
-  extension [Self <: Permissions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Permissions] (val x: Self) extends AnyVal {
     
     inline def setPermissions(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['app-permissions'] */ js.Any

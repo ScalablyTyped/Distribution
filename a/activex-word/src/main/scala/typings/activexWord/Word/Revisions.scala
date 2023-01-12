@@ -40,7 +40,8 @@ object Revisions {
     __obj.asInstanceOf[Revisions]
   }
   
-  extension [Self <: Revisions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Revisions] (val x: Self) extends AnyVal {
     
     inline def setAcceptAll(value: () => Unit): Self = StObject.set(x, "AcceptAll", js.Any.fromFunction0(value))
     

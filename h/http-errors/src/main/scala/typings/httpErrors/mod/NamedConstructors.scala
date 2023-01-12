@@ -554,7 +554,8 @@ object NamedConstructors {
     __obj.asInstanceOf[NamedConstructors]
   }
   
-  extension [Self <: NamedConstructors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedConstructors] (val x: Self) extends AnyVal {
     
     inline def set400(value: HttpErrorConstructor[typings.httpErrors.httpErrorsInts.`400`]): Self = StObject.set(x, "400", value.asInstanceOf[js.Any])
     

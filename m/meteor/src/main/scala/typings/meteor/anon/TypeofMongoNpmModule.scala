@@ -638,7 +638,8 @@ object TypeofMongoNpmModule {
     __obj.asInstanceOf[TypeofMongoNpmModule]
   }
   
-  extension [Self <: TypeofMongoNpmModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMongoNpmModule] (val x: Self) extends AnyVal {
     
     inline def setAbstractCursor(value: TypeofAbstractCursor): Self = StObject.set(x, "AbstractCursor", value.asInstanceOf[js.Any])
     

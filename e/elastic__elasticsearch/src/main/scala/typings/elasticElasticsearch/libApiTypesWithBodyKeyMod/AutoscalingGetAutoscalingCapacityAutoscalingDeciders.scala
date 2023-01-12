@@ -27,7 +27,8 @@ object AutoscalingGetAutoscalingCapacityAutoscalingDeciders {
     __obj.asInstanceOf[AutoscalingGetAutoscalingCapacityAutoscalingDeciders]
   }
   
-  extension [Self <: AutoscalingGetAutoscalingCapacityAutoscalingDeciders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingGetAutoscalingCapacityAutoscalingDeciders] (val x: Self) extends AnyVal {
     
     inline def setCurrent_capacity(value: AutoscalingGetAutoscalingCapacityAutoscalingCapacity): Self = StObject.set(x, "current_capacity", value.asInstanceOf[js.Any])
     

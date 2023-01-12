@@ -408,7 +408,8 @@ object mod {
       __obj.asInstanceOf[PlatformStatic]
     }
     
-    extension [Self <: PlatformStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformStatic] (val x: Self) extends AnyVal {
       
       inline def setOS(value: PlatformOSType): Self = StObject.set(x, "OS", value.asInstanceOf[js.Any])
       

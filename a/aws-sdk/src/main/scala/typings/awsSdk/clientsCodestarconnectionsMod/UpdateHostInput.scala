@@ -28,7 +28,8 @@ object UpdateHostInput {
     __obj.asInstanceOf[UpdateHostInput]
   }
   
-  extension [Self <: UpdateHostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHostInput] (val x: Self) extends AnyVal {
     
     inline def setHostArn(value: HostArn): Self = StObject.set(x, "HostArn", value.asInstanceOf[js.Any])
     

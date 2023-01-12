@@ -18,7 +18,8 @@ object GetGameSessionLogUrlOutput {
     __obj.asInstanceOf[GetGameSessionLogUrlOutput]
   }
   
-  extension [Self <: GetGameSessionLogUrlOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGameSessionLogUrlOutput] (val x: Self) extends AnyVal {
     
     inline def setPreSignedUrl(value: NonZeroAndMaxString): Self = StObject.set(x, "PreSignedUrl", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object distProvidersOpenStreetMapProviderMod {
       __obj.asInstanceOf[OpenStreetMapProviderOptions]
     }
     
-    extension [Self <: OpenStreetMapProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenStreetMapProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setReverseUrl(value: String): Self = StObject.set(x, "reverseUrl", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object distProvidersOpenStreetMapProviderMod {
       __obj.asInstanceOf[RawResult]
     }
     
-    extension [Self <: RawResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawResult] (val x: Self) extends AnyVal {
       
       inline def setBoundingbox(value: js.Tuple4[String, String, String, String]): Self = StObject.set(x, "boundingbox", value.asInstanceOf[js.Any])
       

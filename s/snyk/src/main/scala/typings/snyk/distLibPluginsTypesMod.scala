@@ -23,7 +23,8 @@ object distLibPluginsTypesMod {
       __obj.asInstanceOf[InspectResult]
     }
     
-    extension [Self <: InspectResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectResult] (val x: Self) extends AnyVal {
       
       inline def setPlugin(value: Runtime): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distLibPluginsTypesMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllSubProjects(value: Boolean): Self = StObject.set(x, "allSubProjects", value.asInstanceOf[js.Any])
       

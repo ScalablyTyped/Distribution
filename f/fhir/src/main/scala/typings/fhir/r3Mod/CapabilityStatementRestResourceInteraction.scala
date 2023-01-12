@@ -40,7 +40,8 @@ object CapabilityStatementRestResourceInteraction {
     __obj.asInstanceOf[CapabilityStatementRestResourceInteraction]
   }
   
-  extension [Self <: CapabilityStatementRestResourceInteraction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapabilityStatementRestResourceInteraction] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: read | vread | update | patch_ | delete_ | `history-instance` | `history-type` | create | `search-type`

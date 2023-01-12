@@ -53,7 +53,8 @@ object srcViewMatcherMod {
       __obj.asInstanceOf[Matcher]
     }
     
-    extension [Self <: Matcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matcher] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ MatcherPattern => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

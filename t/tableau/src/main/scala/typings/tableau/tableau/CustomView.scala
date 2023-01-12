@@ -50,7 +50,8 @@ object CustomView {
     __obj.asInstanceOf[CustomView]
   }
   
-  extension [Self <: CustomView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomView] (val x: Self) extends AnyVal {
     
     inline def setGetAdvertised(value: () => Boolean): Self = StObject.set(x, "getAdvertised", js.Any.fromFunction0(value))
     

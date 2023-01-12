@@ -18,7 +18,8 @@ object GetDataLakeSettingsResponse {
     __obj.asInstanceOf[GetDataLakeSettingsResponse]
   }
   
-  extension [Self <: GetDataLakeSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataLakeSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setDataLakeSettings(value: DataLakeSettings): Self = StObject.set(x, "DataLakeSettings", value.asInstanceOf[js.Any])
     

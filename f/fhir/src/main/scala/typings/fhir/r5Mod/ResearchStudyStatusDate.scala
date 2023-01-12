@@ -32,7 +32,8 @@ object ResearchStudyStatusDate {
     __obj.asInstanceOf[ResearchStudyStatusDate]
   }
   
-  extension [Self <: ResearchStudyStatusDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyStatusDate] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: CodeableConcept): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

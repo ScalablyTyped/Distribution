@@ -22,7 +22,8 @@ object ZoomPanOptions {
     __obj.asInstanceOf[ZoomPanOptions]
   }
   
-  extension [Self <: ZoomPanOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoomPanOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

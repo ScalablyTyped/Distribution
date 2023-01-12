@@ -31,7 +31,8 @@ object PostProjectParams {
     __obj.asInstanceOf[PostProjectParams]
   }
   
-  extension [Self <: PostProjectParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostProjectParams] (val x: Self) extends AnyVal {
     
     inline def setChartEnabled(value: Boolean): Self = StObject.set(x, "chartEnabled", value.asInstanceOf[js.Any])
     

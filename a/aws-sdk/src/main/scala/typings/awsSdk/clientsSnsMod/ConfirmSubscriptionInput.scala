@@ -28,7 +28,8 @@ object ConfirmSubscriptionInput {
     __obj.asInstanceOf[ConfirmSubscriptionInput]
   }
   
-  extension [Self <: ConfirmSubscriptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfirmSubscriptionInput] (val x: Self) extends AnyVal {
     
     inline def setAuthenticateOnUnsubscribe(value: authenticateOnUnsubscribe): Self = StObject.set(x, "AuthenticateOnUnsubscribe", value.asInstanceOf[js.Any])
     

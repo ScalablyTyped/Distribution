@@ -39,7 +39,8 @@ object ITextConstantsStatics {
     __obj.asInstanceOf[ITextConstantsStatics]
   }
   
-  extension [Self <: ITextConstantsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITextConstantsStatics] (val x: Self) extends AnyVal {
     
     inline def setAutoColor(value: Color): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
     

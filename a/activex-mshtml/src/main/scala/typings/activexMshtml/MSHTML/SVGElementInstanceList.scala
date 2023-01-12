@@ -25,7 +25,8 @@ object SVGElementInstanceList {
     __obj.asInstanceOf[SVGElementInstanceList]
   }
   
-  extension [Self <: SVGElementInstanceList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGElementInstanceList] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Double => ISVGElementInstance): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
     

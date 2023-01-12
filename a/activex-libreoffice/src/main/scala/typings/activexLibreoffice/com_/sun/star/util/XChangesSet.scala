@@ -48,7 +48,8 @@ object XChangesSet {
     __obj.asInstanceOf[XChangesSet]
   }
   
-  extension [Self <: XChangesSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChangesSet] (val x: Self) extends AnyVal {
     
     inline def setAllChanges(value: SafeArray[ElementChange]): Self = StObject.set(x, "AllChanges", value.asInstanceOf[js.Any])
     

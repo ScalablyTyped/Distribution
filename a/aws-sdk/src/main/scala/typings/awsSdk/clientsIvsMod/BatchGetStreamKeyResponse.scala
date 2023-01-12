@@ -23,7 +23,8 @@ object BatchGetStreamKeyResponse {
     __obj.asInstanceOf[BatchGetStreamKeyResponse]
   }
   
-  extension [Self <: BatchGetStreamKeyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetStreamKeyResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

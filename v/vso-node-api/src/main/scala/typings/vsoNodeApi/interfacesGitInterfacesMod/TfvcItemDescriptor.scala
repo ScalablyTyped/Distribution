@@ -29,7 +29,8 @@ object TfvcItemDescriptor {
     __obj.asInstanceOf[TfvcItemDescriptor]
   }
   
-  extension [Self <: TfvcItemDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcItemDescriptor] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

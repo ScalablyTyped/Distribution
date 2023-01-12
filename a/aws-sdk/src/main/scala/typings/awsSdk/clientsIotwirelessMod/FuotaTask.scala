@@ -19,7 +19,8 @@ object FuotaTask {
     __obj.asInstanceOf[FuotaTask]
   }
   
-  extension [Self <: FuotaTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FuotaTask] (val x: Self) extends AnyVal {
     
     inline def setArn(value: FuotaTaskArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

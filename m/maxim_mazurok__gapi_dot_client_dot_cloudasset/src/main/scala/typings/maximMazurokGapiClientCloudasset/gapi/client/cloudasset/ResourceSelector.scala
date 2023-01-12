@@ -19,7 +19,8 @@ object ResourceSelector {
     __obj.asInstanceOf[ResourceSelector]
   }
   
-  extension [Self <: ResourceSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSelector] (val x: Self) extends AnyVal {
     
     inline def setFullResourceName(value: String): Self = StObject.set(x, "fullResourceName", value.asInstanceOf[js.Any])
     

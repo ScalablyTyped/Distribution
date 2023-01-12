@@ -17,7 +17,8 @@ object RegexTokenizerOptions {
     __obj.asInstanceOf[RegexTokenizerOptions]
   }
   
-  extension [Self <: RegexTokenizerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegexTokenizerOptions] (val x: Self) extends AnyVal {
     
     inline def setDiscardEmpty(value: Boolean): Self = StObject.set(x, "discardEmpty", value.asInstanceOf[js.Any])
     

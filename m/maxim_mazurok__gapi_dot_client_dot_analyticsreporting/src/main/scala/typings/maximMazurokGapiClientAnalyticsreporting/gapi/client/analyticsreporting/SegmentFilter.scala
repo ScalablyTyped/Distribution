@@ -29,7 +29,8 @@ object SegmentFilter {
     __obj.asInstanceOf[SegmentFilter]
   }
   
-  extension [Self <: SegmentFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentFilter] (val x: Self) extends AnyVal {
     
     inline def setNot(value: Boolean): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     

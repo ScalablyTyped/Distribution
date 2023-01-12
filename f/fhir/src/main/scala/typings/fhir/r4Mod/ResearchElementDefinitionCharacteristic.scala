@@ -146,7 +146,8 @@ object ResearchElementDefinitionCharacteristic {
     __obj.asInstanceOf[ResearchElementDefinitionCharacteristic]
   }
   
-  extension [Self <: ResearchElementDefinitionCharacteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchElementDefinitionCharacteristic] (val x: Self) extends AnyVal {
     
     inline def setDefinitionCanonical(value: String): Self = StObject.set(x, "definitionCanonical", value.asInstanceOf[js.Any])
     

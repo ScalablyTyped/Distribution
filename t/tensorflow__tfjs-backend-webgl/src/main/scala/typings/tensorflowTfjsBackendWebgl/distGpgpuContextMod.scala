@@ -190,7 +190,8 @@ object distGpgpuContextMod {
       __obj.asInstanceOf[FenceContext]
     }
     
-    extension [Self <: FenceContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FenceContext] (val x: Self) extends AnyVal {
       
       inline def setIsFencePassed(value: () => Boolean): Self = StObject.set(x, "isFencePassed", js.Any.fromFunction0(value))
       

@@ -22,7 +22,8 @@ object FreezePeriod {
     __obj.asInstanceOf[FreezePeriod]
   }
   
-  extension [Self <: FreezePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreezePeriod] (val x: Self) extends AnyVal {
     
     inline def setEndDate(value: Date): Self = StObject.set(x, "endDate", value.asInstanceOf[js.Any])
     

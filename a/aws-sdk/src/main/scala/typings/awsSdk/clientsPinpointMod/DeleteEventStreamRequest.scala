@@ -18,7 +18,8 @@ object DeleteEventStreamRequest {
     __obj.asInstanceOf[DeleteEventStreamRequest]
   }
   
-  extension [Self <: DeleteEventStreamRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteEventStreamRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
   }

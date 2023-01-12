@@ -51,7 +51,8 @@ object esContextTypesMod {
       __obj.asInstanceOf[NodeDragEventParams[TreeDataType, T]]
     }
     
-    extension [Self <: NodeDragEventParams[?, ?], TreeDataType /* <: BasicDataNode */, T](x: Self & (NodeDragEventParams[TreeDataType, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeDragEventParams[?, ?], TreeDataType /* <: BasicDataNode */, T] (val x: Self & (NodeDragEventParams[TreeDataType, T])) extends AnyVal {
       
       inline def setEvent(value: DragEvent[T]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object esContextTypesMod {
       __obj.asInstanceOf[NodeMouseEventParams[TreeDataType, T]]
     }
     
-    extension [Self <: NodeMouseEventParams[?, ?], TreeDataType /* <: BasicDataNode */, T](x: Self & (NodeMouseEventParams[TreeDataType, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeMouseEventParams[?, ?], TreeDataType /* <: BasicDataNode */, T] (val x: Self & (NodeMouseEventParams[TreeDataType, T])) extends AnyVal {
       
       inline def setEvent(value: MouseEvent[T, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object esContextTypesMod {
       __obj.asInstanceOf[TreeContextProps[TreeDataType]]
     }
     
-    extension [Self <: TreeContextProps[?], TreeDataType /* <: BasicDataNode */](x: Self & TreeContextProps[TreeDataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeContextProps[?], TreeDataType /* <: BasicDataNode */] (val x: Self & TreeContextProps[TreeDataType]) extends AnyVal {
       
       inline def setCheckStrictly(value: Boolean): Self = StObject.set(x, "checkStrictly", value.asInstanceOf[js.Any])
       

@@ -30,7 +30,8 @@ object esSingleObserverMod {
       __obj.asInstanceOf[SingleObserverProps]
     }
     
-    extension [Self <: SingleObserverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleObserverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | (js.Function1[/* ref */ RefObject[typings.std.Element], ReactElement])): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

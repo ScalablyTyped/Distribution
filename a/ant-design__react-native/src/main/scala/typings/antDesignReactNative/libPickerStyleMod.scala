@@ -48,7 +48,8 @@ object libPickerStyleMod {
       __obj.asInstanceOf[PickerStyle]
     }
     
-    extension [Self <: PickerStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerStyle] (val x: Self) extends AnyVal {
       
       inline def setActionText(value: TextStyle): Self = StObject.set(x, "actionText", value.asInstanceOf[js.Any])
       

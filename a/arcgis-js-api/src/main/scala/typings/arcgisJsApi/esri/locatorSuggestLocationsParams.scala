@@ -34,7 +34,8 @@ object locatorSuggestLocationsParams {
     __obj.asInstanceOf[locatorSuggestLocationsParams]
   }
   
-  extension [Self <: locatorSuggestLocationsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: locatorSuggestLocationsParams] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[String]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

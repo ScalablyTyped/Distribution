@@ -33,7 +33,8 @@ object LinkedWorkbookCollectionLoadOptions {
     __obj.asInstanceOf[LinkedWorkbookCollectionLoadOptions]
   }
   
-  extension [Self <: LinkedWorkbookCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkedWorkbookCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

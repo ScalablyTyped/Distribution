@@ -28,7 +28,8 @@ object RetryBuildBatchInput {
     __obj.asInstanceOf[RetryBuildBatchInput]
   }
   
-  extension [Self <: RetryBuildBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryBuildBatchInput] (val x: Self) extends AnyVal {
     
     inline def setId(value: NonEmptyString): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

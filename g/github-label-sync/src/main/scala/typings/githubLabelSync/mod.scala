@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[BasicLabel]
     }
     
-    extension [Self <: BasicLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicLabel] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: Null): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[LabelDiff]
     }
     
-    extension [Self <: LabelDiff](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelDiff] (val x: Self) extends AnyVal {
       
       inline def setActual(value: BasicLabel): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object mod {
       __obj.asInstanceOf[LabelInfo]
     }
     
-    extension [Self <: LabelInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelInfo] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       
@@ -176,7 +180,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -207,7 +212,8 @@ object mod {
       __obj.asInstanceOf[OptionsBase]
     }
     
-    extension [Self <: OptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAllowAddedLabels(value: Boolean): Self = StObject.set(x, "allowAddedLabels", value.asInstanceOf[js.Any])
       

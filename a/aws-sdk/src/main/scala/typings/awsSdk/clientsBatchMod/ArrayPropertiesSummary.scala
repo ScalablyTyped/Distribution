@@ -23,7 +23,8 @@ object ArrayPropertiesSummary {
     __obj.asInstanceOf[ArrayPropertiesSummary]
   }
   
-  extension [Self <: ArrayPropertiesSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayPropertiesSummary] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Integer): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

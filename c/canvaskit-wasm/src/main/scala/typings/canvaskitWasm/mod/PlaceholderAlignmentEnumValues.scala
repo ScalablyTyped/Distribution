@@ -35,7 +35,8 @@ object PlaceholderAlignmentEnumValues {
     __obj.asInstanceOf[PlaceholderAlignmentEnumValues]
   }
   
-  extension [Self <: PlaceholderAlignmentEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderAlignmentEnumValues] (val x: Self) extends AnyVal {
     
     inline def setAboveBaseline(value: PlaceholderAlignment): Self = StObject.set(x, "AboveBaseline", value.asInstanceOf[js.Any])
     

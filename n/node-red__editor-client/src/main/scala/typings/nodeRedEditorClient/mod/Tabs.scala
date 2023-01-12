@@ -16,7 +16,8 @@ object Tabs {
     __obj.asInstanceOf[Tabs]
   }
   
-  extension [Self <: Tabs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tabs] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: AddButton => TabsInstance): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

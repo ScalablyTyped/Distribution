@@ -18,7 +18,8 @@ object DescribeLoadBasedAutoScalingRequest {
     __obj.asInstanceOf[DescribeLoadBasedAutoScalingRequest]
   }
   
-  extension [Self <: DescribeLoadBasedAutoScalingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLoadBasedAutoScalingRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerIds(value: Strings): Self = StObject.set(x, "LayerIds", value.asInstanceOf[js.Any])
     

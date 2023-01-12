@@ -367,7 +367,8 @@ object ojChartEventMap {
     __obj.asInstanceOf[ojChartEventMap[K, D]]
   }
   
-  extension [Self <: ojChartEventMap[?, ?], K, D](x: Self & (ojChartEventMap[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojChartEventMap[?, ?], K, D] (val x: Self & (ojChartEventMap[K, D])) extends AnyVal {
     
     inline def setAnimationOnDataChangeChanged(value: JetElementCustomEvent[auto | slideToLeft | slideToRight | none]): Self = StObject.set(x, "animationOnDataChangeChanged", value.asInstanceOf[js.Any])
     

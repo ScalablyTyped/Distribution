@@ -20,7 +20,8 @@ object Polygon {
     __obj.asInstanceOf[Polygon]
   }
   
-  extension [Self <: Polygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Polygon] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

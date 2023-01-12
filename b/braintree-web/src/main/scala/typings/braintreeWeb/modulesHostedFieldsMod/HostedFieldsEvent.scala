@@ -21,7 +21,8 @@ object HostedFieldsEvent {
     __obj.asInstanceOf[HostedFieldsEvent]
   }
   
-  extension [Self <: HostedFieldsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsEvent] (val x: Self) extends AnyVal {
     
     inline def setEmittedBy(value: HostedFieldsHostedFieldsFieldName): Self = StObject.set(x, "emittedBy", value.asInstanceOf[js.Any])
   }

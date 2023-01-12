@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setKeepHistory(value: Boolean): Self = StObject.set(x, "keepHistory", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ResultObject]
     }
     
-    extension [Self <: ResultObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultObject] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: Double): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       

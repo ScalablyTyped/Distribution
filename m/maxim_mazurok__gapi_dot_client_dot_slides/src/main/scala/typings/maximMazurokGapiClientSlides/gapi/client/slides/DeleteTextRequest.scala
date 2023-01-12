@@ -28,7 +28,8 @@ object DeleteTextRequest {
     __obj.asInstanceOf[DeleteTextRequest]
   }
   
-  extension [Self <: DeleteTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTextRequest] (val x: Self) extends AnyVal {
     
     inline def setCellLocation(value: TableCellLocation): Self = StObject.set(x, "cellLocation", value.asInstanceOf[js.Any])
     

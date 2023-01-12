@@ -71,7 +71,8 @@ object ViewEngineHooks_ {
     __obj.asInstanceOf[ViewEngineHooks_]
   }
   
-  extension [Self <: ViewEngineHooks_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewEngineHooks_] (val x: Self) extends AnyVal {
     
     inline def setAfterCompile(value: /* viewFactory */ ViewFactory => Unit): Self = StObject.set(x, "afterCompile", js.Any.fromFunction1(value))
     

@@ -18,7 +18,8 @@ object SlotTypeConfiguration {
     __obj.asInstanceOf[SlotTypeConfiguration]
   }
   
-  extension [Self <: SlotTypeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotTypeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRegexConfiguration(value: SlotTypeRegexConfiguration): Self = StObject.set(x, "regexConfiguration", value.asInstanceOf[js.Any])
     

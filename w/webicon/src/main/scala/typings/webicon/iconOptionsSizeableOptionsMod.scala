@@ -32,7 +32,8 @@ object iconOptionsSizeableOptionsMod {
       __obj.asInstanceOf[SizeableOptions]
     }
     
-    extension [Self <: SizeableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeableOptions] (val x: Self) extends AnyVal {
       
       inline def setSize(
         value: /* import warning: importer.ImportType#apply Failed type conversion: this['iconSize'] */ js.Any

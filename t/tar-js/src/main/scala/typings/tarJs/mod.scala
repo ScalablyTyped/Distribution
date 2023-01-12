@@ -80,7 +80,8 @@ object mod {
       __obj.asInstanceOf[TarOptions]
     }
     
-    extension [Self <: TarOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TarOptions] (val x: Self) extends AnyVal {
       
       inline def setGid(value: Double): Self = StObject.set(x, "gid", value.asInstanceOf[js.Any])
       

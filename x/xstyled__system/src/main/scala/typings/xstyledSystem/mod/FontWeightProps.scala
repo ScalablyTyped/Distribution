@@ -16,7 +16,8 @@ object FontWeightProps {
     __obj.asInstanceOf[FontWeightProps]
   }
   
-  extension [Self <: FontWeightProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontWeightProps] (val x: Self) extends AnyVal {
     
     inline def setFontWeight(value: ResponsiveValue[FontWeight | AliasKey]): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

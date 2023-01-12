@@ -28,7 +28,8 @@ object UpdateApplicationRequest {
     __obj.asInstanceOf[UpdateApplicationRequest]
   }
   
-  extension [Self <: UpdateApplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

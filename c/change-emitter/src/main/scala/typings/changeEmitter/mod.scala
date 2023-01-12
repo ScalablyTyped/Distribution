@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitter]
     }
     
-    extension [Self <: ChangeEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: /* repeated */ Any => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
@@ -56,7 +57,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf0]
     }
     
-    extension [Self <: ChangeEmitterOf0](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf0] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: () => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction0(value))
       
@@ -77,7 +79,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf1[T]]
     }
     
-    extension [Self <: ChangeEmitterOf1[?], T](x: Self & ChangeEmitterOf1[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf1[?], T] (val x: Self & ChangeEmitterOf1[T]) extends AnyVal {
       
       inline def setEmit(value: T => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       
@@ -98,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf2[T1, T2]]
     }
     
-    extension [Self <: ChangeEmitterOf2[?, ?], T1, T2](x: Self & (ChangeEmitterOf2[T1, T2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf2[?, ?], T1, T2] (val x: Self & (ChangeEmitterOf2[T1, T2])) extends AnyVal {
       
       inline def setEmit(value: (T1, T2) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
@@ -119,7 +123,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf3[T1, T2, T3]]
     }
     
-    extension [Self <: ChangeEmitterOf3[?, ?, ?], T1, T2, T3](x: Self & (ChangeEmitterOf3[T1, T2, T3])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf3[?, ?, ?], T1, T2, T3] (val x: Self & (ChangeEmitterOf3[T1, T2, T3])) extends AnyVal {
       
       inline def setEmit(value: (T1, T2, T3) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction3(value))
       
@@ -140,7 +145,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf4[T1, T2, T3, T4]]
     }
     
-    extension [Self <: ChangeEmitterOf4[?, ?, ?, ?], T1, T2, T3, T4](x: Self & (ChangeEmitterOf4[T1, T2, T3, T4])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf4[?, ?, ?, ?], T1, T2, T3, T4] (val x: Self & (ChangeEmitterOf4[T1, T2, T3, T4])) extends AnyVal {
       
       inline def setEmit(value: (T1, T2, T3, T4) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction4(value))
       
@@ -161,7 +167,8 @@ object mod {
       __obj.asInstanceOf[ChangeEmitterOf5[T1, T2, T3, T4, T5]]
     }
     
-    extension [Self <: ChangeEmitterOf5[?, ?, ?, ?, ?], T1, T2, T3, T4, T5](x: Self & (ChangeEmitterOf5[T1, T2, T3, T4, T5])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEmitterOf5[?, ?, ?, ?, ?], T1, T2, T3, T4, T5] (val x: Self & (ChangeEmitterOf5[T1, T2, T3, T4, T5])) extends AnyVal {
       
       inline def setEmit(value: (T1, T2, T3, T4, T5) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction5(value))
       

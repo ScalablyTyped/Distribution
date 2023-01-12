@@ -154,7 +154,8 @@ object libModuleModuleMod {
       __obj.asInstanceOf[ModuleFileSystem]
     }
     
-    extension [Self <: ModuleFileSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleFileSystem] (val x: Self) extends AnyVal {
       
       inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       

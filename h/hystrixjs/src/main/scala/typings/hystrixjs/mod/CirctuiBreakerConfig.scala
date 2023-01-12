@@ -35,7 +35,8 @@ object CirctuiBreakerConfig {
     __obj.asInstanceOf[CirctuiBreakerConfig]
   }
   
-  extension [Self <: CirctuiBreakerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CirctuiBreakerConfig] (val x: Self) extends AnyVal {
     
     inline def setCircuitBreakerErrorThresholdPercentage(value: Double): Self = StObject.set(x, "circuitBreakerErrorThresholdPercentage", value.asInstanceOf[js.Any])
     

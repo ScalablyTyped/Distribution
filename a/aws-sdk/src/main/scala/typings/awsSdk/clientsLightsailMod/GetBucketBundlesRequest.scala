@@ -18,7 +18,8 @@ object GetBucketBundlesRequest {
     __obj.asInstanceOf[GetBucketBundlesRequest]
   }
   
-  extension [Self <: GetBucketBundlesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketBundlesRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     

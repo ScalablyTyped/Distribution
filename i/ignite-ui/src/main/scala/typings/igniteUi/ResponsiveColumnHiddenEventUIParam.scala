@@ -28,7 +28,8 @@ object ResponsiveColumnHiddenEventUIParam {
     __obj.asInstanceOf[ResponsiveColumnHiddenEventUIParam]
   }
   
-  extension [Self <: ResponsiveColumnHiddenEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveColumnHiddenEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

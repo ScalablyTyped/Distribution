@@ -66,7 +66,8 @@ object ITabPanel {
     __obj.asInstanceOf[ITabPanel]
   }
   
-  extension [Self <: ITabPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITabPanel] (val x: Self) extends AnyVal {
     
     inline def setActiveTab(value: Any): Self = StObject.set(x, "activeTab", value.asInstanceOf[js.Any])
     

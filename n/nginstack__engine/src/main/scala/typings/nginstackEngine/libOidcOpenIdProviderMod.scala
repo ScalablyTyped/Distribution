@@ -126,7 +126,8 @@ object libOidcOpenIdProviderMod {
       __obj.asInstanceOf[ProviderMetadata]
     }
     
-    extension [Self <: ProviderMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProviderMetadata] (val x: Self) extends AnyVal {
       
       inline def setAuthorizationEndpoint(value: String): Self = StObject.set(x, "authorizationEndpoint", value.asInstanceOf[js.Any])
       

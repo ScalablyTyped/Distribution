@@ -15,7 +15,8 @@ object RenderTargetCreationTime {
     __obj.asInstanceOf[RenderTargetCreationTime]
   }
   
-  extension [Self <: RenderTargetCreationTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderTargetCreationTime] (val x: Self) extends AnyVal {
     
     inline def setRenderTargetCreationTime(value: Double): Self = StObject.set(x, "renderTargetCreationTime", value.asInstanceOf[js.Any])
   }

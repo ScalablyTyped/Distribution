@@ -19,7 +19,8 @@ object SubmissionHistory {
     __obj.asInstanceOf[SubmissionHistory]
   }
   
-  extension [Self <: SubmissionHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubmissionHistory] (val x: Self) extends AnyVal {
     
     inline def setGradeHistory(value: GradeHistory): Self = StObject.set(x, "gradeHistory", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object YAML {
     __obj.asInstanceOf[YAML]
   }
   
-  extension [Self <: YAML](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAML] (val x: Self) extends AnyVal {
     
     inline def setType(value: yaml): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

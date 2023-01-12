@@ -23,7 +23,8 @@ object UpdateDevicePolicyConfigurationRequest {
     __obj.asInstanceOf[UpdateDevicePolicyConfigurationRequest]
   }
   
-  extension [Self <: UpdateDevicePolicyConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDevicePolicyConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceCaCertificate(value: CertificateChain): Self = StObject.set(x, "DeviceCaCertificate", value.asInstanceOf[js.Any])
     

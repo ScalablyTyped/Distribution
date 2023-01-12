@@ -16,7 +16,8 @@ object AppsDynamiteMessageAttributes {
     __obj.asInstanceOf[AppsDynamiteMessageAttributes]
   }
   
-  extension [Self <: AppsDynamiteMessageAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteMessageAttributes] (val x: Self) extends AnyVal {
     
     inline def setIsTombstone(value: Boolean): Self = StObject.set(x, "isTombstone", value.asInstanceOf[js.Any])
     

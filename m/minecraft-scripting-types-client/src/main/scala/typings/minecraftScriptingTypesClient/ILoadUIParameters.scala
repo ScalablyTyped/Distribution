@@ -27,7 +27,8 @@ object ILoadUIParameters {
     __obj.asInstanceOf[ILoadUIParameters]
   }
   
-  extension [Self <: ILoadUIParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILoadUIParameters] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Absorbsinput): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

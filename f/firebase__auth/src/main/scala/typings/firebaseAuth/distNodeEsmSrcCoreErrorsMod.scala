@@ -1279,7 +1279,8 @@ object distNodeEsmSrcCoreErrorsMod {
       __obj.asInstanceOf[GenericAuthErrorParams]
     }
     
-    extension [Self <: GenericAuthErrorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericAuthErrorParams] (val x: Self) extends AnyVal {
       
       inline def `setAccount-exists-with-different-credential`(value: AppNameEmailMessage): Self = StObject.set(x, "account-exists-with-different-credential", value.asInstanceOf[js.Any])
       
@@ -1486,7 +1487,8 @@ object distNodeEsmSrcCoreErrorsMod {
       __obj.asInstanceOf[NamedErrorParams]
     }
     
-    extension [Self <: NamedErrorParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedErrorParams] (val x: Self) extends AnyVal {
       
       inline def setAppName(value: AppName): Self = StObject.set(x, "appName", value.asInstanceOf[js.Any])
       

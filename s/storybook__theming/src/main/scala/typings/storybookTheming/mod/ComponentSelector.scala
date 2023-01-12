@@ -15,7 +15,8 @@ object ComponentSelector {
     __obj.asInstanceOf[ComponentSelector]
   }
   
-  extension [Self <: ComponentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentSelector] (val x: Self) extends AnyVal {
     
     inline def set__emotion_styles(value: Any): Self = StObject.set(x, "__emotion_styles", value.asInstanceOf[js.Any])
   }

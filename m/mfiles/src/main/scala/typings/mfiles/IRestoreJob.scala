@@ -29,7 +29,8 @@ object IRestoreJob {
     __obj.asInstanceOf[IRestoreJob]
   }
   
-  extension [Self <: IRestoreJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRestoreJob] (val x: Self) extends AnyVal {
     
     inline def setBackupFileDifferential(value: String): Self = StObject.set(x, "BackupFileDifferential", value.asInstanceOf[js.Any])
     

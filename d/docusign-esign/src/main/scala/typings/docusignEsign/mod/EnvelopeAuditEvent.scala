@@ -19,7 +19,8 @@ object EnvelopeAuditEvent {
     __obj.asInstanceOf[EnvelopeAuditEvent]
   }
   
-  extension [Self <: EnvelopeAuditEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeAuditEvent] (val x: Self) extends AnyVal {
     
     inline def setEventFields(
       value: js.Array[

@@ -64,7 +64,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldEqualPredicate]
     }
     
-    extension [Self <: FieldEqualPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldEqualPredicate] (val x: Self) extends AnyVal {
       
       inline def setEqual(value: String | Double | Boolean | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "equal", value.asInstanceOf[js.Any])
     }
@@ -88,7 +89,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldGTEPredicate]
     }
     
-    extension [Self <: FieldGTEPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldGTEPredicate] (val x: Self) extends AnyVal {
       
       inline def setGte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gte", value.asInstanceOf[js.Any])
     }
@@ -112,7 +114,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldGTPredicate]
     }
     
-    extension [Self <: FieldGTPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldGTPredicate] (val x: Self) extends AnyVal {
       
       inline def setGt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "gt", value.asInstanceOf[js.Any])
     }
@@ -136,7 +139,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldLTEPredicate]
     }
     
-    extension [Self <: FieldLTEPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLTEPredicate] (val x: Self) extends AnyVal {
       
       inline def setLte(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lte", value.asInstanceOf[js.Any])
     }
@@ -160,7 +164,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldLTPredicate]
     }
     
-    extension [Self <: FieldLTPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldLTPredicate] (val x: Self) extends AnyVal {
       
       inline def setLt(value: String | Double | DateTime | ExprRef | SignalRef): Self = StObject.set(x, "lt", value.asInstanceOf[js.Any])
     }
@@ -185,7 +190,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldOneOfPredicate]
     }
     
-    extension [Self <: FieldOneOfPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldOneOfPredicate] (val x: Self) extends AnyVal {
       
       inline def setOneOf(value: js.Array[Boolean | DateTime | Double | String]): Self = StObject.set(x, "oneOf", value.asInstanceOf[js.Any])
       
@@ -269,7 +275,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldPredicateBase]
     }
     
-    extension [Self <: FieldPredicateBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldPredicateBase] (val x: Self) extends AnyVal {
       
       inline def setField(value: FieldName): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -303,7 +310,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldRangePredicate]
     }
     
-    extension [Self <: FieldRangePredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldRangePredicate] (val x: Self) extends AnyVal {
       
       inline def setRange(value: (js.Array[Double | DateTime | Null | ExprRef | SignalRef]) | ExprRef | SignalRef): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
       
@@ -329,7 +337,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[FieldValidPredicate_]
     }
     
-    extension [Self <: FieldValidPredicate_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldValidPredicate_] (val x: Self) extends AnyVal {
       
       inline def setValid(value: Boolean): Self = StObject.set(x, "valid", value.asInstanceOf[js.Any])
     }
@@ -357,7 +366,8 @@ object buildSrcPredicateMod {
       __obj.asInstanceOf[ParameterPredicate]
     }
     
-    extension [Self <: ParameterPredicate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParameterPredicate] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       

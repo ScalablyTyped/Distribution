@@ -84,7 +84,8 @@ object typesGetBucketMetricsConfigurationInputMod {
       __obj.asInstanceOf[GetBucketMetricsConfigurationInput]
     }
     
-    extension [Self <: GetBucketMetricsConfigurationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketMetricsConfigurationInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

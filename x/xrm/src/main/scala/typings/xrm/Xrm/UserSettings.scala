@@ -105,7 +105,8 @@ object UserSettings {
     __obj.asInstanceOf[UserSettings]
   }
   
-  extension [Self <: UserSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
     
     inline def setDateFormattingInfo(value: DateFormattingInfo): Self = StObject.set(x, "dateFormattingInfo", value.asInstanceOf[js.Any])
     

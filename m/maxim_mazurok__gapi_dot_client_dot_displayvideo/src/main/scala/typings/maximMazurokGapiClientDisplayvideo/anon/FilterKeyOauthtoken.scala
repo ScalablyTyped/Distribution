@@ -75,7 +75,8 @@ object FilterKeyOauthtoken {
     __obj.asInstanceOf[FilterKeyOauthtoken]
   }
   
-  extension [Self <: FilterKeyOauthtoken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterKeyOauthtoken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

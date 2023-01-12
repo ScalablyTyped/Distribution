@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[URIComponents]
     }
     
-    extension [Self <: URIComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URIComponents] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[options]
     }
     
-    extension [Self <: options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: options] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: Boolean): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       

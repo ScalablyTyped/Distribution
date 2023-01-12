@@ -26,7 +26,8 @@ object SendersDomainsSpf {
     __obj.asInstanceOf[SendersDomainsSpf]
   }
   
-  extension [Self <: SendersDomainsSpf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersDomainsSpf] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

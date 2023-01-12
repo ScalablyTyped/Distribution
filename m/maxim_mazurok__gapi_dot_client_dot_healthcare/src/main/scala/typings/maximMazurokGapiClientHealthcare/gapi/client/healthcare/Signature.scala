@@ -27,7 +27,8 @@ object Signature {
     __obj.asInstanceOf[Signature]
   }
   
-  extension [Self <: Signature](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Signature] (val x: Self) extends AnyVal {
     
     inline def setImage(value: Image): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

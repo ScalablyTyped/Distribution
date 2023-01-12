@@ -24,7 +24,8 @@ object Success {
     __obj.asInstanceOf[Success]
   }
   
-  extension [Self <: Success](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

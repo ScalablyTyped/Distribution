@@ -58,7 +58,8 @@ object ListNotebookInstanceLifecycleConfigsInput {
     __obj.asInstanceOf[ListNotebookInstanceLifecycleConfigsInput]
   }
   
-  extension [Self <: ListNotebookInstanceLifecycleConfigsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListNotebookInstanceLifecycleConfigsInput] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

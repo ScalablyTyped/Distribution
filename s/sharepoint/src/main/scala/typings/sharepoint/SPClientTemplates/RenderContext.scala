@@ -53,7 +53,8 @@ object RenderContext {
     __obj.asInstanceOf[RenderContext]
   }
   
-  extension [Self <: RenderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContext] (val x: Self) extends AnyVal {
     
     inline def setBaseViewID(value: Double): Self = StObject.set(x, "BaseViewID", value.asInstanceOf[js.Any])
     

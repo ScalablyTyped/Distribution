@@ -22,7 +22,8 @@ object CreateShortDynamicLinkResponse {
     __obj.asInstanceOf[CreateShortDynamicLinkResponse]
   }
   
-  extension [Self <: CreateShortDynamicLinkResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateShortDynamicLinkResponse] (val x: Self) extends AnyVal {
     
     inline def setPreviewLink(value: String): Self = StObject.set(x, "previewLink", value.asInstanceOf[js.Any])
     

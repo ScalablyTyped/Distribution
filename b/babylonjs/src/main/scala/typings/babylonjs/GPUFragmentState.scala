@@ -21,7 +21,8 @@ object GPUFragmentState {
     __obj.asInstanceOf[GPUFragmentState]
   }
   
-  extension [Self <: GPUFragmentState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUFragmentState] (val x: Self) extends AnyVal {
     
     inline def setTargets(value: js.Array[GPUColorTargetState | Null]): Self = StObject.set(x, "targets", value.asInstanceOf[js.Any])
     

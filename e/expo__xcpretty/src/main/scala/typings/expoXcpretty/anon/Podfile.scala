@@ -20,7 +20,8 @@ object Podfile {
     __obj.asInstanceOf[Podfile]
   }
   
-  extension [Self <: Podfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Podfile] (val x: Self) extends AnyVal {
     
     inline def setPodfile(value: PodfileLock): Self = StObject.set(x, "podfile", value.asInstanceOf[js.Any])
     

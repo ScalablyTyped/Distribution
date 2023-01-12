@@ -23,7 +23,8 @@ object EvaluationResultIdentifier {
     __obj.asInstanceOf[EvaluationResultIdentifier]
   }
   
-  extension [Self <: EvaluationResultIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluationResultIdentifier] (val x: Self) extends AnyVal {
     
     inline def setEvaluationResultQualifier(value: EvaluationResultQualifier): Self = StObject.set(x, "EvaluationResultQualifier", value.asInstanceOf[js.Any])
     

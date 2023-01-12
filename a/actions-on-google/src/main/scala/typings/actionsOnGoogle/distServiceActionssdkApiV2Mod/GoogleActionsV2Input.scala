@@ -45,7 +45,8 @@ object GoogleActionsV2Input {
     __obj.asInstanceOf[GoogleActionsV2Input]
   }
   
-  extension [Self <: GoogleActionsV2Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2Input] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[GoogleActionsV2Argument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

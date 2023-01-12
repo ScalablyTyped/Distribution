@@ -26,7 +26,8 @@ object TreeType {
     __obj.asInstanceOf[TreeType]
   }
   
-  extension [Self <: TreeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeType] (val x: Self) extends AnyVal {
     
     inline def setCheckbox(value: (obj, obj) => String): Self = StObject.set(x, "checkbox", js.Any.fromFunction2(value))
     

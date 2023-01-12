@@ -33,7 +33,8 @@ object IndicesPutSettingsRequest {
     __obj.asInstanceOf[IndicesPutSettingsRequest]
   }
   
-  extension [Self <: IndicesPutSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesPutSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

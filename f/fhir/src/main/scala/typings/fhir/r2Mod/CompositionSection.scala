@@ -62,7 +62,8 @@ object CompositionSection {
     __obj.asInstanceOf[CompositionSection]
   }
   
-  extension [Self <: CompositionSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositionSection] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

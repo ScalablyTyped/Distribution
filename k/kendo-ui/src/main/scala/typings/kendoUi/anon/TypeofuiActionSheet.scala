@@ -201,7 +201,8 @@ object TypeofuiActionSheet {
     __obj.asInstanceOf[TypeofuiActionSheet]
   }
   
-  extension [Self <: TypeofuiActionSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofuiActionSheet] (val x: Self) extends AnyVal {
     
     inline def setActionSheet(
       value: Instantiable2[/* element */ Element, /* options */ js.UndefOr[ActionSheetOptions], ActionSheet]

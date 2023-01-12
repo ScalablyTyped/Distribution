@@ -20,7 +20,8 @@ object NotificationEventBacklogStatus {
     __obj.asInstanceOf[NotificationEventBacklogStatus]
   }
   
-  extension [Self <: NotificationEventBacklogStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationEventBacklogStatus] (val x: Self) extends AnyVal {
     
     inline def setEventBacklogStatus(value: js.Array[EventBacklogStatus]): Self = StObject.set(x, "eventBacklogStatus", value.asInstanceOf[js.Any])
     

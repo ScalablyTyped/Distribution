@@ -29,7 +29,8 @@ object ChangeTableCellShadingCommand {
     __obj.asInstanceOf[ChangeTableCellShadingCommand]
   }
   
-  extension [Self <: ChangeTableCellShadingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableCellShadingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: String => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

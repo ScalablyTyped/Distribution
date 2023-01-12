@@ -27,7 +27,8 @@ object ElementStyle {
     __obj.asInstanceOf[ElementStyle]
   }
   
-  extension [Self <: ElementStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: BorderStyle): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

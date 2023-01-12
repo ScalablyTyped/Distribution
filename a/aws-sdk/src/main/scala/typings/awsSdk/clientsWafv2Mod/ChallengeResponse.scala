@@ -28,7 +28,8 @@ object ChallengeResponse {
     __obj.asInstanceOf[ChallengeResponse]
   }
   
-  extension [Self <: ChallengeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChallengeResponse] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

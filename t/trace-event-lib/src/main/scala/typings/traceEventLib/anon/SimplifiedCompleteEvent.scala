@@ -46,7 +46,8 @@ object SimplifiedCompleteEvent {
     __obj.asInstanceOf[SimplifiedCompleteEvent]
   }
   
-  extension [Self <: SimplifiedCompleteEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimplifiedCompleteEvent] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: Record[String, Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

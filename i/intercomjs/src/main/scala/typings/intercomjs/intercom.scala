@@ -63,7 +63,8 @@ object intercom {
       __obj.asInstanceOf[SocketBindingOptions]
     }
     
-    extension [Self <: SocketBindingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketBindingOptions] (val x: Self) extends AnyVal {
       
       inline def setReceive(value: Any): Self = StObject.set(x, "receive", value.asInstanceOf[js.Any])
       

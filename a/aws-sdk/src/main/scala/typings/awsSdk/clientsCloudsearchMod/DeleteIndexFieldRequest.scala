@@ -20,7 +20,8 @@ object DeleteIndexFieldRequest {
     __obj.asInstanceOf[DeleteIndexFieldRequest]
   }
   
-  extension [Self <: DeleteIndexFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteIndexFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

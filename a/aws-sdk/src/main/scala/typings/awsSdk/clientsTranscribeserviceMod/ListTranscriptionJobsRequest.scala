@@ -33,7 +33,8 @@ object ListTranscriptionJobsRequest {
     __obj.asInstanceOf[ListTranscriptionJobsRequest]
   }
   
-  extension [Self <: ListTranscriptionJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTranscriptionJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setJobNameContains(value: TranscriptionJobName): Self = StObject.set(x, "JobNameContains", value.asInstanceOf[js.Any])
     

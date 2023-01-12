@@ -15,7 +15,8 @@ object UL {
     __obj.asInstanceOf[UL]
   }
   
-  extension [Self <: UL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UL] (val x: Self) extends AnyVal {
     
     inline def setUL(value: typings.screeps.screepsStrings.G): Self = StObject.set(x, "UL", value.asInstanceOf[js.Any])
   }

@@ -21,7 +21,8 @@ object ISelectionData {
     __obj.asInstanceOf[ISelectionData]
   }
   
-  extension [Self <: ISelectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISelectionData] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

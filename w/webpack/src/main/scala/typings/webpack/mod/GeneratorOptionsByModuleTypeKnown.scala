@@ -56,7 +56,8 @@ object GeneratorOptionsByModuleTypeKnown {
     __obj.asInstanceOf[GeneratorOptionsByModuleTypeKnown]
   }
   
-  extension [Self <: GeneratorOptionsByModuleTypeKnown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneratorOptionsByModuleTypeKnown] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: AssetGeneratorOptions): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

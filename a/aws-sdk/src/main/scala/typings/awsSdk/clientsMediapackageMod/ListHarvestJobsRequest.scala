@@ -33,7 +33,8 @@ object ListHarvestJobsRequest {
     __obj.asInstanceOf[ListHarvestJobsRequest]
   }
   
-  extension [Self <: ListHarvestJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListHarvestJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeChannelId(value: string): Self = StObject.set(x, "IncludeChannelId", value.asInstanceOf[js.Any])
     

@@ -295,7 +295,8 @@ object StructureMapGroupRuleSource {
     __obj.asInstanceOf[StructureMapGroupRuleSource]
   }
   
-  extension [Self <: StructureMapGroupRuleSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureMapGroupRuleSource] (val x: Self) extends AnyVal {
     
     inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PutLabelRequest {
     __obj.asInstanceOf[PutLabelRequest]
   }
   
-  extension [Self <: PutLabelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutLabelRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

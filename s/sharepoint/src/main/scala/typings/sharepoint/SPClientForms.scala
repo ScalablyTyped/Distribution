@@ -73,7 +73,8 @@ object SPClientForms {
       __obj.asInstanceOf[ClientForm]
     }
     
-    extension [Self <: ClientForm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientForm] (val x: Self) extends AnyVal {
       
       inline def setNotifyControlEvent(value: (FormManagerEvents, String, Any) => Unit): Self = StObject.set(x, "NotifyControlEvent", js.Any.fromFunction3(value))
       
@@ -98,7 +99,8 @@ object SPClientForms {
         __obj.asInstanceOf[IValidator]
       }
       
-      extension [Self <: IValidator](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IValidator] (val x: Self) extends AnyVal {
         
         inline def setValidate(value: Any => ValidationResult): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
       }
@@ -161,7 +163,8 @@ object SPClientForms {
         __obj.asInstanceOf[ValidatorSet]
       }
       
-      extension [Self <: ValidatorSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ValidatorSet] (val x: Self) extends AnyVal {
         
         inline def setRegisterValidator(value: IValidator => Unit): Self = StObject.set(x, "RegisterValidator", js.Any.fromFunction1(value))
       }

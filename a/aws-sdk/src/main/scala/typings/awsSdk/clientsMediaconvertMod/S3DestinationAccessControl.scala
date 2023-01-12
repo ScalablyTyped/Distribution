@@ -18,7 +18,8 @@ object S3DestinationAccessControl {
     __obj.asInstanceOf[S3DestinationAccessControl]
   }
   
-  extension [Self <: S3DestinationAccessControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DestinationAccessControl] (val x: Self) extends AnyVal {
     
     inline def setCannedAcl(value: S3ObjectCannedAcl): Self = StObject.set(x, "CannedAcl", value.asInstanceOf[js.Any])
     

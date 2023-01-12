@@ -18,7 +18,8 @@ object GetRegistryCatalogDataResponse {
     __obj.asInstanceOf[GetRegistryCatalogDataResponse]
   }
   
-  extension [Self <: GetRegistryCatalogDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegistryCatalogDataResponse] (val x: Self) extends AnyVal {
     
     inline def setRegistryCatalogData(value: RegistryCatalogData): Self = StObject.set(x, "registryCatalogData", value.asInstanceOf[js.Any])
   }

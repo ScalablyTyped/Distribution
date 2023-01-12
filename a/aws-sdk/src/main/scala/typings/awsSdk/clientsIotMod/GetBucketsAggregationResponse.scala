@@ -23,7 +23,8 @@ object GetBucketsAggregationResponse {
     __obj.asInstanceOf[GetBucketsAggregationResponse]
   }
   
-  extension [Self <: GetBucketsAggregationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketsAggregationResponse] (val x: Self) extends AnyVal {
     
     inline def setBuckets(value: Buckets): Self = StObject.set(x, "buckets", value.asInstanceOf[js.Any])
     

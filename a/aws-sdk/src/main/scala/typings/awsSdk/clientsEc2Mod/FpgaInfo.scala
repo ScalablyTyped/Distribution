@@ -23,7 +23,8 @@ object FpgaInfo {
     __obj.asInstanceOf[FpgaInfo]
   }
   
-  extension [Self <: FpgaInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FpgaInfo] (val x: Self) extends AnyVal {
     
     inline def setFpgas(value: FpgaDeviceInfoList): Self = StObject.set(x, "Fpgas", value.asInstanceOf[js.Any])
     

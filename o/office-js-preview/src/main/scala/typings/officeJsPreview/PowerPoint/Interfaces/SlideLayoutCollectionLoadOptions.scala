@@ -41,7 +41,8 @@ object SlideLayoutCollectionLoadOptions {
     __obj.asInstanceOf[SlideLayoutCollectionLoadOptions]
   }
   
-  extension [Self <: SlideLayoutCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideLayoutCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

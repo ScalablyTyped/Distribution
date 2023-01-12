@@ -19,7 +19,8 @@ object ITypeaheadOverrides {
     __obj.asInstanceOf[ITypeaheadOverrides]
   }
   
-  extension [Self <: ITypeaheadOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeaheadOverrides] (val x: Self) extends AnyVal {
     
     inline def setInstanceSelectHandler(value: js.Function): Self = StObject.set(x, "instanceSelectHandler", value.asInstanceOf[js.Any])
     

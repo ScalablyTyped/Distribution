@@ -23,7 +23,8 @@ object AmplitudeConnectorProfileCredentials {
     __obj.asInstanceOf[AmplitudeConnectorProfileCredentials]
   }
   
-  extension [Self <: AmplitudeConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmplitudeConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

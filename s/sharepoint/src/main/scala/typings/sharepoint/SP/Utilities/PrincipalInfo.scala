@@ -51,7 +51,8 @@ object PrincipalInfo {
     __obj.asInstanceOf[PrincipalInfo]
   }
   
-  extension [Self <: PrincipalInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalInfo] (val x: Self) extends AnyVal {
     
     inline def setGet_department(value: () => String): Self = StObject.set(x, "get_department", js.Any.fromFunction0(value))
     

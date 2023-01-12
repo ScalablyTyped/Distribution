@@ -22,7 +22,8 @@ object VideoElementProperties {
     __obj.asInstanceOf[VideoElementProperties]
   }
   
-  extension [Self <: VideoElementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoElementProperties] (val x: Self) extends AnyVal {
     
     inline def setVideo(value: String | Any): Self = StObject.set(x, "video", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object TSMappedType_ {
     __obj.asInstanceOf[TSMappedType_]
   }
   
-  extension [Self <: TSMappedType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSMappedType_] (val x: Self) extends AnyVal {
     
     inline def setNameType(value: TSType): Self = StObject.set(x, "nameType", value.asInstanceOf[js.Any])
     

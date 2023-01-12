@@ -28,7 +28,8 @@ object MessageTemplateType {
     __obj.asInstanceOf[MessageTemplateType]
   }
   
-  extension [Self <: MessageTemplateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageTemplateType] (val x: Self) extends AnyVal {
     
     inline def setEmailMessage(value: EmailVerificationMessageType): Self = StObject.set(x, "EmailMessage", value.asInstanceOf[js.Any])
     

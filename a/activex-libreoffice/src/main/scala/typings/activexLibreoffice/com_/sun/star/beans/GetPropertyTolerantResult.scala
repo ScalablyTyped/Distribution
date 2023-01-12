@@ -37,7 +37,8 @@ object GetPropertyTolerantResult {
     __obj.asInstanceOf[GetPropertyTolerantResult]
   }
   
-  extension [Self <: GetPropertyTolerantResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPropertyTolerantResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Double): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object ChartSeriesCollectionData {
     __obj.asInstanceOf[ChartSeriesCollectionData]
   }
   
-  extension [Self <: ChartSeriesCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ChartSeriesData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object Ix {
       __obj.asInstanceOf[Dictionary[TKey, TValue]]
     }
     
-    extension [Self <: Dictionary[?, ?], TKey, TValue](x: Self & (Dictionary[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictionary[?, ?], TKey, TValue] (val x: Self & (Dictionary[TKey, TValue])) extends AnyVal {
       
       inline def setAdd(value: (TKey, TValue) => Unit): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
@@ -87,7 +88,8 @@ object Ix {
       __obj.asInstanceOf[Disposable]
     }
     
-    extension [Self <: Disposable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Disposable] (val x: Self) extends AnyVal {
       
       inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     }
@@ -559,7 +561,8 @@ object Ix {
       __obj.asInstanceOf[Enumerator[T]]
     }
     
-    extension [Self <: Enumerator[?], T](x: Self & Enumerator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enumerator[?], T] (val x: Self & Enumerator[T]) extends AnyVal {
       
       inline def setGetCurrent(value: () => T): Self = StObject.set(x, "getCurrent", js.Any.fromFunction0(value))
       
@@ -604,7 +607,8 @@ object Ix {
       __obj.asInstanceOf[KeyValuePair[TKey, TValue]]
     }
     
-    extension [Self <: KeyValuePair[?, ?], TKey, TValue](x: Self & (KeyValuePair[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyValuePair[?, ?], TKey, TValue] (val x: Self & (KeyValuePair[TKey, TValue])) extends AnyVal {
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -634,7 +638,8 @@ object Ix {
       __obj.asInstanceOf[Lookup[TKey, TValue]]
     }
     
-    extension [Self <: Lookup[?, ?], TKey, TValue](x: Self & (Lookup[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lookup[?, ?], TKey, TValue] (val x: Self & (Lookup[TKey, TValue])) extends AnyVal {
       
       inline def setGet(value: TKey => Enumerable[TValue]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -661,7 +666,8 @@ object Ix {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setOnCompleted(value: () => Unit): Self = StObject.set(x, "onCompleted", js.Any.fromFunction0(value))
       

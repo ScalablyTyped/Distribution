@@ -316,7 +316,8 @@ object esComponentsInfiniteScrollInfiniteScrollMod {
       __obj.asInstanceOf[InfiniteScrollProps]
     }
     
-    extension [Self <: InfiniteScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfiniteScrollProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       

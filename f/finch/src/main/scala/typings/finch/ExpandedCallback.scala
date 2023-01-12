@@ -21,7 +21,8 @@ object ExpandedCallback {
     __obj.asInstanceOf[ExpandedCallback]
   }
   
-  extension [Self <: ExpandedCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedCallback] (val x: Self) extends AnyVal {
     
     inline def setLoad(value: (/* bindings */ js.UndefOr[Any], /* childCallback */ js.UndefOr[js.Function0[Unit]]) => Any): Self = StObject.set(x, "load", js.Any.fromFunction2(value))
     

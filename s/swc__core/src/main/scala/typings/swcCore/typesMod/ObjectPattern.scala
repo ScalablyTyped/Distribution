@@ -25,7 +25,8 @@ object ObjectPattern {
     __obj.asInstanceOf[ObjectPattern]
   }
   
-  extension [Self <: ObjectPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectPattern] (val x: Self) extends AnyVal {
     
     inline def setOptional(value: Boolean): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
     

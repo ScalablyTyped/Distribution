@@ -182,7 +182,8 @@ object FamilyMemberHistory {
     __obj.asInstanceOf[FamilyMemberHistory]
   }
   
-  extension [Self <: FamilyMemberHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FamilyMemberHistory] (val x: Self) extends AnyVal {
     
     inline def setAgeAge(value: Age): Self = StObject.set(x, "ageAge", value.asInstanceOf[js.Any])
     

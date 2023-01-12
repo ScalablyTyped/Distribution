@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Left]
     }
     
-    extension [Self <: Left](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Left] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: js.Array[Any]): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object anon {
       __obj.asInstanceOf[PartialIAceEditorProps]
     }
     
-    extension [Self <: PartialIAceEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIAceEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[Annotation]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -420,7 +422,8 @@ object anon {
       __obj.asInstanceOf[PartialIDiffEditorProps]
     }
     
-    extension [Self <: PartialIDiffEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIDiffEditorProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -650,7 +653,8 @@ object anon {
       __obj.asInstanceOf[PartialISplitEditorProps]
     }
     
-    extension [Self <: PartialISplitEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialISplitEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[js.Array[IAnnotation]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -857,7 +861,8 @@ object anon {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -874,7 +879,8 @@ object anon {
       __obj.asInstanceOf[TypeofAce]
     }
     
-    extension [Self <: TypeofAce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofAce] (val x: Self) extends AnyVal {
       
       inline def setSelection(value: Any): Self = StObject.set(x, "Selection", value.asInstanceOf[js.Any])
     }
@@ -921,7 +927,8 @@ object anon {
       __obj.asInstanceOf[TypeofRange]
     }
     
-    extension [Self <: TypeofRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRange] (val x: Self) extends AnyVal {
       
       inline def setComparePoints(value: (Point, Point) => Double): Self = StObject.set(x, "comparePoints", js.Any.fromFunction2(value))
       
@@ -1047,7 +1054,8 @@ object anon {
       __obj.asInstanceOf[ValidationMapIAceEditorPr]
     }
     
-    extension [Self <: ValidationMapIAceEditorPr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationMapIAceEditorPr] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Validator[js.UndefOr[js.Array[Annotation]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -1313,7 +1321,8 @@ object anon {
       __obj.asInstanceOf[ValidationMapIDiffEditorP]
     }
     
-    extension [Self <: ValidationMapIDiffEditorP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationMapIDiffEditorP] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: Validator[js.UndefOr[String]]): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -1551,7 +1560,8 @@ object anon {
       __obj.asInstanceOf[ValidationMapISplitEditor]
     }
     
-    extension [Self <: ValidationMapISplitEditor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationMapISplitEditor] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: Validator[js.UndefOr[js.Array[js.Array[IAnnotation]]]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

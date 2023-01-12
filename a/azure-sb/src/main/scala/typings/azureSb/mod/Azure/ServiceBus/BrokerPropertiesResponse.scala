@@ -42,7 +42,8 @@ object BrokerPropertiesResponse {
     __obj.asInstanceOf[BrokerPropertiesResponse]
   }
   
-  extension [Self <: BrokerPropertiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerPropertiesResponse] (val x: Self) extends AnyVal {
     
     inline def setCorrelationId(value: String): Self = StObject.set(x, "CorrelationId", value.asInstanceOf[js.Any])
     

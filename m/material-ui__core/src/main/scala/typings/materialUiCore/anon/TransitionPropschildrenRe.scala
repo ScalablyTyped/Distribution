@@ -61,7 +61,8 @@ object TransitionPropschildrenRe {
     __obj.asInstanceOf[TransitionPropschildrenRe]
   }
   
-  extension [Self <: TransitionPropschildrenRe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionPropschildrenRe] (val x: Self) extends AnyVal {
     
     inline def setAddEndListener(value: Any): Self = StObject.set(x, "addEndListener", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object GrantedLicense {
     __obj.asInstanceOf[GrantedLicense]
   }
   
-  extension [Self <: GrantedLicense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantedLicense] (val x: Self) extends AnyVal {
     
     inline def setBeneficiary(value: String): Self = StObject.set(x, "Beneficiary", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListDefaultVocabulariesResponse {
     __obj.asInstanceOf[ListDefaultVocabulariesResponse]
   }
   
-  extension [Self <: ListDefaultVocabulariesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDefaultVocabulariesResponse] (val x: Self) extends AnyVal {
     
     inline def setDefaultVocabularyList(value: DefaultVocabularyList): Self = StObject.set(x, "DefaultVocabularyList", value.asInstanceOf[js.Any])
     

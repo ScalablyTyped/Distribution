@@ -30,7 +30,8 @@ object ParDoInstruction {
     __obj.asInstanceOf[ParDoInstruction]
   }
   
-  extension [Self <: ParDoInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParDoInstruction] (val x: Self) extends AnyVal {
     
     inline def setInput(value: InstructionInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

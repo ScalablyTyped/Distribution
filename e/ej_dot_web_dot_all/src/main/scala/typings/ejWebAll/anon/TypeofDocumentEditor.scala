@@ -20,7 +20,8 @@ object TypeofDocumentEditor {
     __obj.asInstanceOf[TypeofDocumentEditor]
   }
   
-  extension [Self <: TypeofDocumentEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDocumentEditor] (val x: Self) extends AnyVal {
     
     inline def setFn(value: DocumentEditor): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

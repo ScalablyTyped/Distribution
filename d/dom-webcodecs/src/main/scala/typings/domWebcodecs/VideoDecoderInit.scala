@@ -22,7 +22,8 @@ object VideoDecoderInit {
     __obj.asInstanceOf[VideoDecoderInit]
   }
   
-  extension [Self <: VideoDecoderInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoDecoderInit] (val x: Self) extends AnyVal {
     
     inline def setError(value: /* error */ DOMException => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

@@ -21,7 +21,8 @@ object NamedReference {
     __obj.asInstanceOf[NamedReference]
   }
   
-  extension [Self <: NamedReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamedReference] (val x: Self) extends AnyVal {
     
     inline def setMatchIndex(value: Unit): Self = StObject.set(x, "matchIndex", value.asInstanceOf[js.Any])
     

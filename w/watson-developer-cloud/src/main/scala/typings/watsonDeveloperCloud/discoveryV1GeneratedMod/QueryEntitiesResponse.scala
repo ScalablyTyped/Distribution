@@ -17,7 +17,8 @@ object QueryEntitiesResponse {
     __obj.asInstanceOf[QueryEntitiesResponse]
   }
   
-  extension [Self <: QueryEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[QueryEntitiesResponseItem]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

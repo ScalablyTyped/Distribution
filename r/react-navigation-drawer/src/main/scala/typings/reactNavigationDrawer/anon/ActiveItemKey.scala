@@ -84,7 +84,8 @@ object ActiveItemKey {
     __obj.asInstanceOf[ActiveItemKey]
   }
   
-  extension [Self <: ActiveItemKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveItemKey] (val x: Self) extends AnyVal {
     
     inline def setActiveBackgroundColor(value: String): Self = StObject.set(x, "activeBackgroundColor", value.asInstanceOf[js.Any])
     

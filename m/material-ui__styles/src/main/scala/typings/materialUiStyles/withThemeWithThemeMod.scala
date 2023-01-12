@@ -82,7 +82,8 @@ object withThemeWithThemeMod {
       __obj.asInstanceOf[ThemedComponentProps]
     }
     
-    extension [Self <: ThemedComponentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object withThemeWithThemeMod {
       __obj.asInstanceOf[WithTheme[Theme]]
     }
     
-    extension [Self <: WithTheme[?], Theme](x: Self & WithTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithTheme[?], Theme] (val x: Self & WithTheme[Theme]) extends AnyVal {
       
       inline def setInnerRef(value: Ref[Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object withThemeWithThemeMod {
       __obj.asInstanceOf[WithThemeCreatorOption[Theme]]
     }
     
-    extension [Self <: WithThemeCreatorOption[?], Theme](x: Self & WithThemeCreatorOption[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithThemeCreatorOption[?], Theme] (val x: Self & WithThemeCreatorOption[Theme]) extends AnyVal {
       
       inline def setDefaultTheme(value: Theme): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])
       

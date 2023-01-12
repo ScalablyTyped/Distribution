@@ -28,7 +28,8 @@ object GroupFindingsResponse {
     __obj.asInstanceOf[GroupFindingsResponse]
   }
   
-  extension [Self <: GroupFindingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupFindingsResponse] (val x: Self) extends AnyVal {
     
     inline def setGroupByResults(value: js.Array[GroupResult]): Self = StObject.set(x, "groupByResults", value.asInstanceOf[js.Any])
     

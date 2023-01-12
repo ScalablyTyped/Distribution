@@ -73,7 +73,8 @@ object INxTreeNode {
     __obj.asInstanceOf[INxTreeNode]
   }
   
-  extension [Self <: INxTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxTreeNode] (val x: Self) extends AnyVal {
     
     inline def setQAttrDims(value: INxAttributeDimValues): Self = StObject.set(x, "qAttrDims", value.asInstanceOf[js.Any])
     

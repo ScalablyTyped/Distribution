@@ -23,7 +23,8 @@ object AlgorithmImage {
     __obj.asInstanceOf[AlgorithmImage]
   }
   
-  extension [Self <: AlgorithmImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmImage] (val x: Self) extends AnyVal {
     
     inline def setDockerURI(value: DockerURI): Self = StObject.set(x, "dockerURI", value.asInstanceOf[js.Any])
     

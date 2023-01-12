@@ -79,7 +79,8 @@ object CreateLicenseRequest {
     __obj.asInstanceOf[CreateLicenseRequest]
   }
   
-  extension [Self <: CreateLicenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLicenseRequest] (val x: Self) extends AnyVal {
     
     inline def setBeneficiary(value: String): Self = StObject.set(x, "Beneficiary", value.asInstanceOf[js.Any])
     

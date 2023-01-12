@@ -33,7 +33,8 @@ object CreateUserHierarchyGroupRequest {
     __obj.asInstanceOf[CreateUserHierarchyGroupRequest]
   }
   
-  extension [Self <: CreateUserHierarchyGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserHierarchyGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: InstanceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

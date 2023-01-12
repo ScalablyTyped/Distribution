@@ -34,7 +34,8 @@ object FlexGridColumnCount {
     __obj.asInstanceOf[FlexGridColumnCount]
   }
   
-  extension [Self <: FlexGridColumnCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexGridColumnCount] (val x: Self) extends AnyVal {
     
     inline def set$theme(value: typings.baseui.stylesTypesMod.Theme): Self = StObject.set(x, "$theme", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object FleetMsearchRequest {
     __obj.asInstanceOf[FleetMsearchRequest]
   }
   
-  extension [Self <: FleetMsearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetMsearchRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object logoClassifyOptions {
     __obj.asInstanceOf[logoClassifyOptions]
   }
   
-  extension [Self <: logoClassifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: logoClassifyOptions] (val x: Self) extends AnyVal {
     
     inline def setCustom_lib(value: Boolean): Self = StObject.set(x, "custom_lib", value.asInstanceOf[js.Any])
     

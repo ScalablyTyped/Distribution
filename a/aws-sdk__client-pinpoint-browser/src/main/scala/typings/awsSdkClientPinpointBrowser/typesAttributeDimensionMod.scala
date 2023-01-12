@@ -31,7 +31,8 @@ object typesAttributeDimensionMod {
       __obj.asInstanceOf[AttributeDimension]
     }
     
-    extension [Self <: AttributeDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeDimension] (val x: Self) extends AnyVal {
       
       inline def setAttributeType(value: INCLUSIVE | EXCLUSIVE | String): Self = StObject.set(x, "AttributeType", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object typesAttributeDimensionMod {
       __obj.asInstanceOf[UnmarshalledAttributeDimension]
     }
     
-    extension [Self <: UnmarshalledAttributeDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledAttributeDimension] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
       

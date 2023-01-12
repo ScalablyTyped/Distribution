@@ -15,7 +15,8 @@ object Dim {
     __obj.asInstanceOf[Dim]
   }
   
-  extension [Self <: Dim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dim] (val x: Self) extends AnyVal {
     
     inline def setDim(value: js.Array[Size]): Self = StObject.set(x, "dim", value.asInstanceOf[js.Any])
     

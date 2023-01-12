@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[EventHandlerOf[T, TSubs]]
     }
     
-    extension [Self <: EventHandlerOf[?, ?], T, TSubs /* <: Subscribable[T] */](x: Self & (EventHandlerOf[T, TSubs])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventHandlerOf[?, ?], T, TSubs /* <: Subscribable[T] */] (val x: Self & (EventHandlerOf[T, TSubs])) extends AnyVal {
       
       inline def setHandler(value: T => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
@@ -250,7 +251,8 @@ object mod {
       __obj.asInstanceOf[ObservableConfig]
     }
     
-    extension [Self <: ObservableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObservableConfig] (val x: Self) extends AnyVal {
       
       inline def setFromESObservable(value: /* observable */ Subscribable[Any] => Any): Self = StObject.set(x, "fromESObservable", js.Any.fromFunction1(value))
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[Observer[T]]
     }
     
-    extension [Self <: Observer[?], T](x: Self & Observer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
       
       inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
       
@@ -373,7 +376,8 @@ object mod {
       __obj.asInstanceOf[ReactLifeCycleFunctions[TProps, TState, TInstance]]
     }
     
-    extension [Self <: ReactLifeCycleFunctions[?, ?, ?], TProps, TState, TInstance](x: Self & (ReactLifeCycleFunctions[TProps, TState, TInstance])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactLifeCycleFunctions[?, ?, ?], TProps, TState, TInstance] (val x: Self & (ReactLifeCycleFunctions[TProps, TState, TInstance])) extends AnyVal {
       
       inline def setComponentDidCatch(
         value: js.ThisFunction2[
@@ -508,7 +512,8 @@ object mod {
       __obj.asInstanceOf[Subscribable[T]]
     }
     
-    extension [Self <: Subscribable[?], T](x: Self & Subscribable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscribable[?], T] (val x: Self & Subscribable[T]) extends AnyVal {
       
       inline def setSubscribe(value: Observer[T] => Subscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
@@ -525,7 +530,8 @@ object mod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }

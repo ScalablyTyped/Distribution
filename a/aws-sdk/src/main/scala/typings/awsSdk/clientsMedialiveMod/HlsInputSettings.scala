@@ -38,7 +38,8 @@ object HlsInputSettings {
     __obj.asInstanceOf[HlsInputSettings]
   }
   
-  extension [Self <: HlsInputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsInputSettings] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: integerMin0): Self = StObject.set(x, "Bandwidth", value.asInstanceOf[js.Any])
     

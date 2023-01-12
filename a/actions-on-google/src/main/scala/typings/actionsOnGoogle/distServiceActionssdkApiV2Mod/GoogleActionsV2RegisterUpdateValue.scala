@@ -18,7 +18,8 @@ object GoogleActionsV2RegisterUpdateValue {
     __obj.asInstanceOf[GoogleActionsV2RegisterUpdateValue]
   }
   
-  extension [Self <: GoogleActionsV2RegisterUpdateValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2RegisterUpdateValue] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: GoogleActionsV2RegisterUpdateValueStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

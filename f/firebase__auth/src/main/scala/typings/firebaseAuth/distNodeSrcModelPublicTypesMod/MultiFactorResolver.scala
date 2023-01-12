@@ -46,7 +46,8 @@ object MultiFactorResolver {
     __obj.asInstanceOf[MultiFactorResolver]
   }
   
-  extension [Self <: MultiFactorResolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiFactorResolver] (val x: Self) extends AnyVal {
     
     inline def setHints(value: js.Array[MultiFactorInfo]): Self = StObject.set(x, "hints", value.asInstanceOf[js.Any])
     

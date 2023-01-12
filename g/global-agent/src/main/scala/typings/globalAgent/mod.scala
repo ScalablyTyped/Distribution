@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[ProxyAgentConfigurationInputType]
     }
     
-    extension [Self <: ProxyAgentConfigurationInputType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyAgentConfigurationInputType] (val x: Self) extends AnyVal {
       
       inline def setEnvironmentVariableNamespace(value: String): Self = StObject.set(x, "environmentVariableNamespace", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object mod {
       __obj.asInstanceOf[ProxyAgentConfigurationType]
     }
     
-    extension [Self <: ProxyAgentConfigurationType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyAgentConfigurationType] (val x: Self) extends AnyVal {
       
       inline def setHTTPS_PROXY(value: String): Self = StObject.set(x, "HTTPS_PROXY", value.asInstanceOf[js.Any])
       

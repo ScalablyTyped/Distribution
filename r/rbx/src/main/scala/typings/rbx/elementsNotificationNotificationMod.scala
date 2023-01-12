@@ -68,7 +68,8 @@ object elementsNotificationNotificationMod {
       __obj.asInstanceOf[NotificationModifierProps]
     }
     
-    extension [Self <: NotificationModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationModifierProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: primary | success | info | warning | danger | light | dark | white | black | link): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -164,7 +165,8 @@ object elementsNotificationNotificationMod {
       __obj.asInstanceOf[NotificationProps]
     }
     
-    extension [Self <: NotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

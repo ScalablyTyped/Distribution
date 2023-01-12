@@ -200,7 +200,8 @@ object libComponentsTextTextDottypesMod {
       __obj.asInstanceOf[ITextProps]
     }
     
-    extension [Self <: ITextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -413,7 +414,8 @@ object libComponentsTextTextDottypesMod {
       __obj.asInstanceOf[ITextSlots]
     }
     
-    extension [Self <: ITextSlots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextSlots] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IHTMLSlot): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -433,7 +435,8 @@ object libComponentsTextTextDottypesMod {
       __obj.asInstanceOf[ITextStyles]
     }
     
-    extension [Self <: ITextStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

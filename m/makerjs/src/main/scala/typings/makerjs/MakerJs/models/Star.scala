@@ -20,7 +20,8 @@ object Star {
     __obj.asInstanceOf[Star]
   }
   
-  extension [Self <: Star](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Star] (val x: Self) extends AnyVal {
     
     inline def setPaths(value: IPathMap): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object CsvReadOptions {
     __obj.asInstanceOf[CsvReadOptions]
   }
   
-  extension [Self <: CsvReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvReadOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormats(value: js.Array[String]): Self = StObject.set(x, "dateFormats", value.asInstanceOf[js.Any])
     

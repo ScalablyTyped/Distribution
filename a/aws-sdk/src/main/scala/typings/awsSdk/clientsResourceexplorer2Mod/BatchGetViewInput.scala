@@ -18,7 +18,8 @@ object BatchGetViewInput {
     __obj.asInstanceOf[BatchGetViewInput]
   }
   
-  extension [Self <: BatchGetViewInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetViewInput] (val x: Self) extends AnyVal {
     
     inline def setViewArns(value: BatchGetViewInputViewArnsList): Self = StObject.set(x, "ViewArns", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object ASN1Util {
     __obj.asInstanceOf[ASN1Util]
   }
   
-  extension [Self <: ASN1Util](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASN1Util] (val x: Self) extends AnyVal {
     
     inline def setBigIntToMinTwosComplementsHex(value: BigInteger => String): Self = StObject.set(x, "bigIntToMinTwosComplementsHex", js.Any.fromFunction1(value))
     

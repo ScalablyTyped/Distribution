@@ -15,7 +15,8 @@ object IndicesRecoveryRecoveryStatus {
     __obj.asInstanceOf[IndicesRecoveryRecoveryStatus]
   }
   
-  extension [Self <: IndicesRecoveryRecoveryStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesRecoveryRecoveryStatus] (val x: Self) extends AnyVal {
     
     inline def setShards(value: js.Array[IndicesRecoveryShardRecovery]): Self = StObject.set(x, "shards", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Appearance {
     __obj.asInstanceOf[Appearance]
   }
   
-  extension [Self <: Appearance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appearance] (val x: Self) extends AnyVal {
     
     inline def setAllowPicking(value: Boolean): Self = StObject.set(x, "allowPicking", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object mod {
       __obj.asInstanceOf[Denque[T]]
     }
     
-    extension [Self <: Denque[?], T](x: Self & Denque[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Denque[?], T] (val x: Self & Denque[T]) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -168,7 +169,8 @@ object mod {
       __obj.asInstanceOf[IDenqueOptions]
     }
     
-    extension [Self <: IDenqueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDenqueOptions] (val x: Self) extends AnyVal {
       
       inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
       

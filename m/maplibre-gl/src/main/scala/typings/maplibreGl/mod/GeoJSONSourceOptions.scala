@@ -20,7 +20,8 @@ object GeoJSONSourceOptions {
     __obj.asInstanceOf[GeoJSONSourceOptions]
   }
   
-  extension [Self <: GeoJSONSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setCollectResourceTiming(value: Boolean): Self = StObject.set(x, "collectResourceTiming", value.asInstanceOf[js.Any])
     

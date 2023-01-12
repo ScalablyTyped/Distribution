@@ -19,7 +19,8 @@ object PasswordStatus {
     __obj.asInstanceOf[PasswordStatus]
   }
   
-  extension [Self <: PasswordStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordStatus] (val x: Self) extends AnyVal {
     
     inline def setLocked(value: Boolean): Self = StObject.set(x, "locked", value.asInstanceOf[js.Any])
     

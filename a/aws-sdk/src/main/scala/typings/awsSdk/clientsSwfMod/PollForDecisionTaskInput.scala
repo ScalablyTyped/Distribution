@@ -43,7 +43,8 @@ object PollForDecisionTaskInput {
     __obj.asInstanceOf[PollForDecisionTaskInput]
   }
   
-  extension [Self <: PollForDecisionTaskInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollForDecisionTaskInput] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: DomainName): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

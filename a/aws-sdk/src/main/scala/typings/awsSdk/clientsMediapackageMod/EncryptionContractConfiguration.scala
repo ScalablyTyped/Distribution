@@ -23,7 +23,8 @@ object EncryptionContractConfiguration {
     __obj.asInstanceOf[EncryptionContractConfiguration]
   }
   
-  extension [Self <: EncryptionContractConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionContractConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPresetSpeke20Audio(value: PresetSpeke20Audio): Self = StObject.set(x, "PresetSpeke20Audio", value.asInstanceOf[js.Any])
     

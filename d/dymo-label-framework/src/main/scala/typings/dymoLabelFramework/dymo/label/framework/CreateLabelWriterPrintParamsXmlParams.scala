@@ -28,7 +28,8 @@ object CreateLabelWriterPrintParamsXmlParams {
     __obj.asInstanceOf[CreateLabelWriterPrintParamsXmlParams]
   }
   
-  extension [Self <: CreateLabelWriterPrintParamsXmlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLabelWriterPrintParamsXmlParams] (val x: Self) extends AnyVal {
     
     inline def setCopies(value: Double): Self = StObject.set(x, "copies", value.asInstanceOf[js.Any])
     

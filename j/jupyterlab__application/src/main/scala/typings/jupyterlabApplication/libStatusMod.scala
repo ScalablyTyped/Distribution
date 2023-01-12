@@ -55,7 +55,8 @@ object libStatusMod {
     @js.native
     val ^ : Token[ILabStatus] = js.native
     
-    extension [Self <: ILabStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabStatus] (val x: Self) extends AnyVal {
       
       inline def setBusySignal(value: ISignal[JupyterFrontEnd[Any, Any], Boolean]): Self = StObject.set(x, "busySignal", value.asInstanceOf[js.Any])
       

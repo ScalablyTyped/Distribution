@@ -149,7 +149,8 @@ object FlexStyle {
     __obj.asInstanceOf[FlexStyle]
   }
   
-  extension [Self <: FlexStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexStyle] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(value: `flex-start` | `flex-end` | center | stretch | `space-between` | `space-around`): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

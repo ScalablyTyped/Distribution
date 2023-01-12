@@ -34,7 +34,8 @@ object ReplaySnapshotRequest {
     __obj.asInstanceOf[ReplaySnapshotRequest]
   }
   
-  extension [Self <: ReplaySnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaySnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setFromStep(value: integer): Self = StObject.set(x, "fromStep", value.asInstanceOf[js.Any])
     

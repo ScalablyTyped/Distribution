@@ -23,7 +23,8 @@ object RuleGroupSummary {
     __obj.asInstanceOf[RuleGroupSummary]
   }
   
-  extension [Self <: RuleGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ChildrenMargin {
     __obj.asInstanceOf[ChildrenMargin[Datum]]
   }
   
-  extension [Self <: ChildrenMargin[?], Datum](x: Self & ChildrenMargin[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenMargin[?], Datum] (val x: Self & ChildrenMargin[Datum]) extends AnyVal {
     
     inline def setChildrenMargin(value: Double): Self = StObject.set(x, "childrenMargin", value.asInstanceOf[js.Any])
     

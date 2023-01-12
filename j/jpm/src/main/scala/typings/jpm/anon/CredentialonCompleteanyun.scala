@@ -33,7 +33,8 @@ object CredentialonCompleteanyun {
     __obj.asInstanceOf[CredentialonCompleteanyun]
   }
   
-  extension [Self <: CredentialonCompleteanyun](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CredentialonCompleteanyun] (val x: Self) extends AnyVal {
     
     inline def setFormSubmitURL(value: String): Self = StObject.set(x, "formSubmitURL", value.asInstanceOf[js.Any])
     

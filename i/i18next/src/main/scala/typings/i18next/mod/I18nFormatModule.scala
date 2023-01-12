@@ -20,7 +20,8 @@ object I18nFormatModule {
     __obj.asInstanceOf[I18nFormatModule]
   }
   
-  extension [Self <: I18nFormatModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: I18nFormatModule] (val x: Self) extends AnyVal {
     
     inline def setType(value: i18nFormat): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

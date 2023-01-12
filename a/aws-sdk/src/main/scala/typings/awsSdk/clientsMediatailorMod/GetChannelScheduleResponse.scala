@@ -23,7 +23,8 @@ object GetChannelScheduleResponse {
     __obj.asInstanceOf[GetChannelScheduleResponse]
   }
   
-  extension [Self <: GetChannelScheduleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChannelScheduleResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfScheduleEntry): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

@@ -83,7 +83,8 @@ object AgentAlertInfo {
     __obj.asInstanceOf[AgentAlertInfo]
   }
   
-  extension [Self <: AgentAlertInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentAlertInfo] (val x: Self) extends AnyVal {
     
     inline def setAlertType(value: AlertType): Self = StObject.set(x, "alertType", value.asInstanceOf[js.Any])
     

@@ -408,7 +408,8 @@ object sapUiCommonsLayoutMatrixLayoutMod {
       __obj.asInstanceOf[MatrixLayoutSettings]
     }
     
-    extension [Self <: MatrixLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

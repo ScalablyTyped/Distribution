@@ -35,7 +35,8 @@ object IsRange {
     __obj.asInstanceOf[IsRange]
   }
   
-  extension [Self <: IsRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRange] (val x: Self) extends AnyVal {
     
     inline def setIsRange(value: Boolean): Self = StObject.set(x, "isRange", value.asInstanceOf[js.Any])
     

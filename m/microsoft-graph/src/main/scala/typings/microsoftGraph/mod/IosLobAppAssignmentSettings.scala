@@ -18,7 +18,8 @@ object IosLobAppAssignmentSettings {
     __obj.asInstanceOf[IosLobAppAssignmentSettings]
   }
   
-  extension [Self <: IosLobAppAssignmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosLobAppAssignmentSettings] (val x: Self) extends AnyVal {
     
     inline def setVpnConfigurationId(value: NullableOption[String]): Self = StObject.set(x, "vpnConfigurationId", value.asInstanceOf[js.Any])
     

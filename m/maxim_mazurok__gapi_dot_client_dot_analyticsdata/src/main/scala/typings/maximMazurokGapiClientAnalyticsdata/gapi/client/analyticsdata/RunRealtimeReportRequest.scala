@@ -47,7 +47,8 @@ object RunRealtimeReportRequest {
     __obj.asInstanceOf[RunRealtimeReportRequest]
   }
   
-  extension [Self <: RunRealtimeReportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunRealtimeReportRequest] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilter(value: FilterExpression): Self = StObject.set(x, "dimensionFilter", value.asInstanceOf[js.Any])
     

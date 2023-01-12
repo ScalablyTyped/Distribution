@@ -196,7 +196,8 @@ object sapFDndGridDropInfoMod {
       __obj.asInstanceOf[GridDropInfoSettings]
     }
     
-    extension [Self <: GridDropInfoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridDropInfoSettings] (val x: Self) extends AnyVal {
       
       inline def setDropIndicatorSize(value: js.Function | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "dropIndicatorSize", value.asInstanceOf[js.Any])
       

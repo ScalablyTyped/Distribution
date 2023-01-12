@@ -34,7 +34,8 @@ object Bin {
     __obj.asInstanceOf[Bin]
   }
   
-  extension [Self <: Bin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

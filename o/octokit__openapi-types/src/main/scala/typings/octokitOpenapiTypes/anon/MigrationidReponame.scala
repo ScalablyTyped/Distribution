@@ -22,7 +22,8 @@ object MigrationidReponame {
     __obj.asInstanceOf[MigrationidReponame]
   }
   
-  extension [Self <: MigrationidReponame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationidReponame] (val x: Self) extends AnyVal {
     
     inline def setMigration_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['migration-id'] */ js.Any

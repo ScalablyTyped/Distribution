@@ -15,7 +15,8 @@ object ColorProfile {
     __obj.asInstanceOf[ColorProfile]
   }
   
-  extension [Self <: ColorProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorProfile] (val x: Self) extends AnyVal {
     
     inline def setDummy(value: Double): Self = StObject.set(x, "dummy", value.asInstanceOf[js.Any])
   }

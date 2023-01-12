@@ -23,7 +23,8 @@ object PredictorEvent {
     __obj.asInstanceOf[PredictorEvent]
   }
   
-  extension [Self <: PredictorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredictorEvent] (val x: Self) extends AnyVal {
     
     inline def setDatetime(value: js.Date): Self = StObject.set(x, "Datetime", value.asInstanceOf[js.Any])
     

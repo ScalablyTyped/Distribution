@@ -16,7 +16,8 @@ object ImageConfig {
     __obj.asInstanceOf[ImageConfig]
   }
   
-  extension [Self <: ImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
     
     inline def setTextRedactionMode(value: String): Self = StObject.set(x, "textRedactionMode", value.asInstanceOf[js.Any])
     

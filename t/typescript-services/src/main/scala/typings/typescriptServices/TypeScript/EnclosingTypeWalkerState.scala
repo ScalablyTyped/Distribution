@@ -17,7 +17,8 @@ object EnclosingTypeWalkerState {
     __obj.asInstanceOf[EnclosingTypeWalkerState]
   }
   
-  extension [Self <: EnclosingTypeWalkerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnclosingTypeWalkerState] (val x: Self) extends AnyVal {
     
     inline def set_currentSymbols(value: js.Array[PullSymbol]): Self = StObject.set(x, "_currentSymbols", value.asInstanceOf[js.Any])
     

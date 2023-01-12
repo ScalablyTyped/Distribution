@@ -115,7 +115,8 @@ object distTypesJweGeneralEncryptMod {
       __obj.asInstanceOf[Recipient]
     }
     
-    extension [Self <: Recipient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Recipient] (val x: Self) extends AnyVal {
       
       inline def setAddRecipient(
         value: Parameters[

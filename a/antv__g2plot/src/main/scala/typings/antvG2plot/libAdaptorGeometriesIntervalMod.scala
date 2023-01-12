@@ -71,7 +71,8 @@ object libAdaptorGeometriesIntervalMod {
       __obj.asInstanceOf[IntervalGeometryOptions]
     }
     
-    extension [Self <: IntervalGeometryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntervalGeometryOptions] (val x: Self) extends AnyVal {
       
       inline def setColumnBackground(value: Style): Self = StObject.set(x, "columnBackground", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object Hypervisor {
     __obj.asInstanceOf[Hypervisor]
   }
   
-  extension [Self <: Hypervisor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hypervisor] (val x: Self) extends AnyVal {
     
     inline def setHost(value: Host): Self = StObject.set(x, "Host", value.asInstanceOf[js.Any])
     

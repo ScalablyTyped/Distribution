@@ -31,7 +31,8 @@ object libTypesMod {
       __obj.asInstanceOf[AncestorValue[V]]
     }
     
-    extension [Self <: AncestorValue[?], V](x: Self & AncestorValue[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AncestorValue[?], V] (val x: Self & AncestorValue[V]) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object libTypesMod {
       __obj.asInstanceOf[Pose[A, TD]]
     }
     
-    extension [Self <: Pose[?, ?], A, TD](x: Self & (Pose[A, TD])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pose[?, ?], A, TD] (val x: Self & (Pose[A, TD])) extends AnyVal {
       
       inline def setAfterChildren(value: Boolean | BooleanPropFactory): Self = StObject.set(x, "afterChildren", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object libTypesMod {
       __obj.asInstanceOf[PoseFactoryConfig[V, A, C, P, TD]]
     }
     
-    extension [Self <: PoseFactoryConfig[?, ?, ?, ?, ?], V, A, C, P, TD](x: Self & (PoseFactoryConfig[V, A, C, P, TD])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoseFactoryConfig[?, ?, ?, ?, ?], V, A, C, P, TD] (val x: Self & (PoseFactoryConfig[V, A, C, P, TD])) extends AnyVal {
       
       inline def setAddActionDelay(value: (/* delay */ Double, A) => A): Self = StObject.set(x, "addActionDelay", js.Any.fromFunction2(value))
       
@@ -395,7 +398,8 @@ object libTypesMod {
       __obj.asInstanceOf[PoserConfig[V]]
     }
     
-    extension [Self <: PoserConfig[?], V](x: Self & PoserConfig[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoserConfig[?], V] (val x: Self & PoserConfig[V]) extends AnyVal {
       
       inline def setAncestorValues(value: AncestorValueList[V]): Self = StObject.set(x, "ancestorValues", value.asInstanceOf[js.Any])
       
@@ -462,7 +466,8 @@ object libTypesMod {
       __obj.asInstanceOf[PoserState[V, A, C, P]]
     }
     
-    extension [Self <: PoserState[?, ?, ?, ?], V, A, C, P](x: Self & (PoserState[V, A, C, P])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoserState[?, ?, ?, ?], V, A, C, P] (val x: Self & (PoserState[V, A, C, P])) extends AnyVal {
       
       inline def setActiveActions(value: ActiveActions[C]): Self = StObject.set(x, "activeActions", value.asInstanceOf[js.Any])
       

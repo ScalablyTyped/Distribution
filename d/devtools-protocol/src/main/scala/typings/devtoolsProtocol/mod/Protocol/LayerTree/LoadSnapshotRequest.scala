@@ -18,7 +18,8 @@ object LoadSnapshotRequest {
     __obj.asInstanceOf[LoadSnapshotRequest]
   }
   
-  extension [Self <: LoadSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setTiles(value: js.Array[PictureTile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
     

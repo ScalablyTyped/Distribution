@@ -26,7 +26,8 @@ object HealthcareServiceServiceType {
     __obj.asInstanceOf[HealthcareServiceServiceType]
   }
   
-  extension [Self <: HealthcareServiceServiceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HealthcareServiceServiceType] (val x: Self) extends AnyVal {
     
     inline def setSpecialty(value: js.Array[CodeableConcept]): Self = StObject.set(x, "specialty", value.asInstanceOf[js.Any])
     

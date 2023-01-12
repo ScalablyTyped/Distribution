@@ -77,7 +77,8 @@ object mod {
       __obj.asInstanceOf[NativeHelper]
     }
     
-    extension [Self <: NativeHelper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeHelper] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: Blocks): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -115,7 +116,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def set$cache(value: Boolean): Self = StObject.set(x, "$cache", value.asInstanceOf[js.Any])
       

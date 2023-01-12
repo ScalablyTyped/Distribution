@@ -16,7 +16,8 @@ object IStorageFolder2 {
     __obj.asInstanceOf[IStorageFolder2]
   }
   
-  extension [Self <: IStorageFolder2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStorageFolder2] (val x: Self) extends AnyVal {
     
     inline def setTryGetItemAsync(value: String => IAsyncOperation[IStorageItem]): Self = StObject.set(x, "tryGetItemAsync", js.Any.fromFunction1(value))
   }

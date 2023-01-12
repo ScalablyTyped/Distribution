@@ -23,7 +23,8 @@ object AudioLanguageSelection {
     __obj.asInstanceOf[AudioLanguageSelection]
   }
   
-  extension [Self <: AudioLanguageSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioLanguageSelection] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: string): Self = StObject.set(x, "LanguageCode", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object AbstractCursorOptions {
     __obj.asInstanceOf[AbstractCursorOptions]
   }
   
-  extension [Self <: AbstractCursorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractCursorOptions] (val x: Self) extends AnyVal {
     
     inline def setAwaitData(value: Boolean): Self = StObject.set(x, "awaitData", value.asInstanceOf[js.Any])
     

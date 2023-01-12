@@ -56,7 +56,8 @@ object typingsDependencyGraphAddressMappingChooseAddressMappingPolicyMod {
       __obj.asInstanceOf[ChooseAddressMapping]
     }
     
-    extension [Self <: ChooseAddressMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChooseAddressMapping] (val x: Self) extends AnyVal {
       
       inline def setCall(value: Double => AddressMappingStrategyConstructor): Self = StObject.set(x, "call", js.Any.fromFunction1(value))
     }

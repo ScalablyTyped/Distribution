@@ -25,7 +25,8 @@ object typesCommentDeletedExceptionMod {
       __obj.asInstanceOf[CommentDeletedException]
     }
     
-    extension [Self <: CommentDeletedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentDeletedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDeletedException

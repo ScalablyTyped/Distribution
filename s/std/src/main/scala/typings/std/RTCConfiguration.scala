@@ -31,7 +31,8 @@ object RTCConfiguration {
     __obj.asInstanceOf[RTCConfiguration]
   }
   
-  extension [Self <: RTCConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBundlePolicy(value: RTCBundlePolicy): Self = StObject.set(x, "bundlePolicy", value.asInstanceOf[js.Any])
     

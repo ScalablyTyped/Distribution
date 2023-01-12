@@ -40,7 +40,8 @@ object GoogleCloudMlV1ParameterSpec {
     __obj.asInstanceOf[GoogleCloudMlV1ParameterSpec]
   }
   
-  extension [Self <: GoogleCloudMlV1ParameterSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1ParameterSpec] (val x: Self) extends AnyVal {
     
     inline def setCategoricalValues(value: js.Array[String]): Self = StObject.set(x, "categoricalValues", value.asInstanceOf[js.Any])
     

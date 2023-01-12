@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[ExperimentalObjectRestSpread]
     }
     
-    extension [Self <: ExperimentalObjectRestSpread](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExperimentalObjectRestSpread] (val x: Self) extends AnyVal {
       
       inline def setExperimentalObjectRestSpread(value: Boolean): Self = StObject.set(x, "experimentalObjectRestSpread", value.asInstanceOf[js.Any])
       

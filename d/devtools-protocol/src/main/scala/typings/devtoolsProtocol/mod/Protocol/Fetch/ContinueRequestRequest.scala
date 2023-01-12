@@ -45,7 +45,8 @@ object ContinueRequestRequest {
     __obj.asInstanceOf[ContinueRequestRequest]
   }
   
-  extension [Self <: ContinueRequestRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContinueRequestRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Array[HeaderEntry]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

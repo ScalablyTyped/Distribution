@@ -52,7 +52,8 @@ object SpecimenDefinition {
     __obj.asInstanceOf[SpecimenDefinition]
   }
   
-  extension [Self <: SpecimenDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecimenDefinition] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: js.Array[CodeableConcept]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

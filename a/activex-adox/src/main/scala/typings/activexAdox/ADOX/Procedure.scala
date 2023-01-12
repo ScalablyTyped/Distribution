@@ -27,7 +27,8 @@ object Procedure {
     __obj.asInstanceOf[Procedure]
   }
   
-  extension [Self <: Procedure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Procedure] (val x: Self) extends AnyVal {
     
     inline def setADOXDotProcedure_typekey(value: Procedure): Self = StObject.set(x, "ADOX.Procedure_typekey", value.asInstanceOf[js.Any])
     

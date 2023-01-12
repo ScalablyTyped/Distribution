@@ -21,7 +21,8 @@ object PickInfo {
     __obj.asInstanceOf[PickInfo]
   }
   
-  extension [Self <: PickInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickInfo] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Vector3): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

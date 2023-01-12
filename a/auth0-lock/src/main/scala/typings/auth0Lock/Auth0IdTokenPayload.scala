@@ -40,7 +40,8 @@ object Auth0IdTokenPayload {
     __obj.asInstanceOf[Auth0IdTokenPayload]
   }
   
-  extension [Self <: Auth0IdTokenPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0IdTokenPayload] (val x: Self) extends AnyVal {
     
     inline def setAcr(value: String): Self = StObject.set(x, "acr", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object AutoplayComponent {
     __obj.asInstanceOf[AutoplayComponent]
   }
   
-  extension [Self <: AutoplayComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoplayComponent] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

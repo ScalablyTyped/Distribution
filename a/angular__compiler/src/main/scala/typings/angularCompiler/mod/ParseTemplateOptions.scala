@@ -112,7 +112,8 @@ object ParseTemplateOptions {
     __obj.asInstanceOf[ParseTemplateOptions]
   }
   
-  extension [Self <: ParseTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysAttemptHtmlToR3AstConversion(value: Boolean): Self = StObject.set(x, "alwaysAttemptHtmlToR3AstConversion", value.asInstanceOf[js.Any])
     

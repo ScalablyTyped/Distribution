@@ -41,7 +41,8 @@ object utilsUseControlledMod {
       __obj.asInstanceOf[UseControlledProps[T]]
     }
     
-    extension [Self <: UseControlledProps[?], T](x: Self & UseControlledProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseControlledProps[?], T] (val x: Self & UseControlledProps[T]) extends AnyVal {
       
       inline def setControlled(value: T): Self = StObject.set(x, "controlled", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object PutObjectResponse {
     __obj.asInstanceOf[PutObjectResponse]
   }
   
-  extension [Self <: PutObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setContentSHA256(value: SHA256Hash): Self = StObject.set(x, "ContentSHA256", value.asInstanceOf[js.Any])
     

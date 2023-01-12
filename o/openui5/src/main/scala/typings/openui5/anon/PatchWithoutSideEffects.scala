@@ -32,7 +32,8 @@ object PatchWithoutSideEffects {
     __obj.asInstanceOf[PatchWithoutSideEffects]
   }
   
-  extension [Self <: PatchWithoutSideEffects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchWithoutSideEffects] (val x: Self) extends AnyVal {
     
     inline def setDollarDollargroupId(value: String): Self = StObject.set(x, "$$groupId", value.asInstanceOf[js.Any])
     

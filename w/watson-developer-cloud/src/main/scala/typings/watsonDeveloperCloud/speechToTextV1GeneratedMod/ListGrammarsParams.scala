@@ -21,7 +21,8 @@ object ListGrammarsParams {
     __obj.asInstanceOf[ListGrammarsParams]
   }
   
-  extension [Self <: ListGrammarsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGrammarsParams] (val x: Self) extends AnyVal {
     
     inline def setCustomization_id(value: String): Self = StObject.set(x, "customization_id", value.asInstanceOf[js.Any])
     

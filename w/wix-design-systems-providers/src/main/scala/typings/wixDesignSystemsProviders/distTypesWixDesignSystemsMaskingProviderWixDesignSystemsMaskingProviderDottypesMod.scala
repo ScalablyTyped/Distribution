@@ -18,7 +18,8 @@ object distTypesWixDesignSystemsMaskingProviderWixDesignSystemsMaskingProviderDo
       __obj.asInstanceOf[WixDesignSystemsMaskingContextProps]
     }
     
-    extension [Self <: WixDesignSystemsMaskingContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixDesignSystemsMaskingContextProps] (val x: Self) extends AnyVal {
       
       inline def setMaskingClassNames(value: String): Self = StObject.set(x, "maskingClassNames", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object distTypesWixDesignSystemsMaskingProviderWixDesignSystemsMaskingProviderDo
       __obj.asInstanceOf[WixDesignSystemsMaskingProviderProps]
     }
     
-    extension [Self <: WixDesignSystemsMaskingProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixDesignSystemsMaskingProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object AlarmCapabilities {
     __obj.asInstanceOf[AlarmCapabilities]
   }
   
-  extension [Self <: AlarmCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlarmCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAcknowledgeFlow(value: AcknowledgeFlow): Self = StObject.set(x, "acknowledgeFlow", value.asInstanceOf[js.Any])
     

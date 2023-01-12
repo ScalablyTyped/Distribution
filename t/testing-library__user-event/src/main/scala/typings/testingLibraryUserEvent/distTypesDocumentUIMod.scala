@@ -68,7 +68,8 @@ object distTypesDocumentUIMod {
       __obj.asInstanceOf[UISelection]
     }
     
-    extension [Self <: UISelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UISelection] (val x: Self) extends AnyVal {
       
       inline def setAnchorOffset(value: Double): Self = StObject.set(x, "anchorOffset", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distTypesDocumentUIMod {
       __obj.asInstanceOf[UISelectionRange]
     }
     
-    extension [Self <: UISelectionRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UISelectionRange] (val x: Self) extends AnyVal {
       
       inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
       

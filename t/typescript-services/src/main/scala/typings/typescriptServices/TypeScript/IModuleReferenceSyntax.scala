@@ -41,7 +41,8 @@ object IModuleReferenceSyntax {
     __obj.asInstanceOf[IModuleReferenceSyntax]
   }
   
-  extension [Self <: IModuleReferenceSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModuleReferenceSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsModuleReference(value: () => Boolean): Self = StObject.set(x, "isModuleReference", js.Any.fromFunction0(value))
   }

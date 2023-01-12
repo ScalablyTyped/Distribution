@@ -148,7 +148,8 @@ object relationshipCreateRendererParams {
     __obj.asInstanceOf[relationshipCreateRendererParams]
   }
   
-  extension [Self <: relationshipCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: relationshipCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setClassificationMethod(value: quantile | `equal-interval` | `natural-breaks`): Self = StObject.set(x, "classificationMethod", value.asInstanceOf[js.Any])
     

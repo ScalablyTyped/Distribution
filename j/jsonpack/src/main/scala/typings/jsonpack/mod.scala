@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[DebugObject]
     }
     
-    extension [Self <: DebugObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugObject] (val x: Self) extends AnyVal {
       
       inline def setAst(value: js.Array[Index]): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object mod {
       __obj.asInstanceOf[PackDebugOptions]
     }
     
-    extension [Self <: PackDebugOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackDebugOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object mod {
       __obj.asInstanceOf[PackOptions]
     }
     
-    extension [Self <: PackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackOptions] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       

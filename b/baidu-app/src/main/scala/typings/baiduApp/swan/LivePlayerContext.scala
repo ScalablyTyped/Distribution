@@ -42,7 +42,8 @@ object LivePlayerContext {
     __obj.asInstanceOf[LivePlayerContext]
   }
   
-  extension [Self <: LivePlayerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LivePlayerContext] (val x: Self) extends AnyVal {
     
     inline def setExitFullScreen(value: BaseOptions[Any, Any] => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction1(value))
     

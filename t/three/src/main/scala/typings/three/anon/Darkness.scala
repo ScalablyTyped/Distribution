@@ -20,7 +20,8 @@ object Darkness {
     __obj.asInstanceOf[Darkness]
   }
   
-  extension [Self <: Darkness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Darkness] (val x: Self) extends AnyVal {
     
     inline def setDarkness(value: IUniform[Any]): Self = StObject.set(x, "darkness", value.asInstanceOf[js.Any])
     

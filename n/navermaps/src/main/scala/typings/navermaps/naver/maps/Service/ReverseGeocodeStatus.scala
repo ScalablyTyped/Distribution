@@ -19,7 +19,8 @@ object ReverseGeocodeStatus {
     __obj.asInstanceOf[ReverseGeocodeStatus]
   }
   
-  extension [Self <: ReverseGeocodeStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseGeocodeStatus] (val x: Self) extends AnyVal {
     
     inline def setCode(value: ReverseGeocodeStatusCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

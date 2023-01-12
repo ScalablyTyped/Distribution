@@ -315,7 +315,8 @@ object LocalSettings {
     __obj.asInstanceOf[LocalSettings]
   }
   
-  extension [Self <: LocalSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalSettings] (val x: Self) extends AnyVal {
     
     inline def setAdminAuth(value: Default | Authenticate | Strategy): Self = StObject.set(x, "adminAuth", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PopupWindowPinnedChangedEventArgs {
     __obj.asInstanceOf[PopupWindowPinnedChangedEventArgs]
   }
   
-  extension [Self <: PopupWindowPinnedChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopupWindowPinnedChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPinned(value: Boolean): Self = StObject.set(x, "pinned", value.asInstanceOf[js.Any])
   }

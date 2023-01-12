@@ -48,7 +48,8 @@ object Recommendation {
     __obj.asInstanceOf[Recommendation]
   }
   
-  extension [Self <: Recommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Recommendation] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: RecommendationCategory): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

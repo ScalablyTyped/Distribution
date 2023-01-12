@@ -37,7 +37,8 @@ object TestSessionExploredWorkItemReference {
     __obj.asInstanceOf[TestSessionExploredWorkItemReference]
   }
   
-  extension [Self <: TestSessionExploredWorkItemReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestSessionExploredWorkItemReference] (val x: Self) extends AnyVal {
     
     inline def setAssociatedWorkItems(value: js.Array[TestSessionWorkItemReference]): Self = StObject.set(x, "associatedWorkItems", value.asInstanceOf[js.Any])
     

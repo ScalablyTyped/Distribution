@@ -34,7 +34,8 @@ object VueServeOptions {
     __obj.asInstanceOf[VueServeOptions]
   }
   
-  extension [Self <: VueServeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VueServeOptions] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: String): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

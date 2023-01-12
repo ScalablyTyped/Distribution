@@ -58,7 +58,8 @@ object AwsBackupBackupPlanRuleDetails {
     __obj.asInstanceOf[AwsBackupBackupPlanRuleDetails]
   }
   
-  extension [Self <: AwsBackupBackupPlanRuleDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsBackupBackupPlanRuleDetails] (val x: Self) extends AnyVal {
     
     inline def setCompletionWindowMinutes(value: Long): Self = StObject.set(x, "CompletionWindowMinutes", value.asInstanceOf[js.Any])
     

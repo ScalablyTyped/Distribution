@@ -83,7 +83,8 @@ object libRenderUtilsMod {
       __obj.asInstanceOf[HighlightedLines]
     }
     
-    extension [Self <: HighlightedLines](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HighlightedLines] (val x: Self) extends AnyVal {
       
       inline def setNewLine(value: Content): Self = StObject.set(x, "newLine", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libRenderUtilsMod {
       __obj.asInstanceOf[RenderConfig]
     }
     
-    extension [Self <: RenderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderConfig] (val x: Self) extends AnyVal {
       
       inline def setDiffStyle(value: DiffStyleType): Self = StObject.set(x, "diffStyle", value.asInstanceOf[js.Any])
       

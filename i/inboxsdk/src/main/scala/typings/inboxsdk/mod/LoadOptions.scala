@@ -27,7 +27,8 @@ object LoadOptions {
     __obj.asInstanceOf[LoadOptions]
   }
   
-  extension [Self <: LoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadOptions] (val x: Self) extends AnyVal {
     
     inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     

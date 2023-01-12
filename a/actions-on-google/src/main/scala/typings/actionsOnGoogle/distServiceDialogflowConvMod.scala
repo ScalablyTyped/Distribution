@@ -194,7 +194,8 @@ object distServiceDialogflowConvMod {
       __obj.asInstanceOf[DialogflowConversationOptions[TConvData, TUserStorage]]
     }
     
-    extension [Self <: DialogflowConversationOptions[?, ?], TConvData, TUserStorage](x: Self & (DialogflowConversationOptions[TConvData, TUserStorage])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogflowConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowConversationOptions[TConvData, TUserStorage])) extends AnyVal {
       
       inline def setBody(value: GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -225,7 +226,8 @@ object distServiceDialogflowConvMod {
       __obj.asInstanceOf[GoogleAssistantResponse]
     }
     
-    extension [Self <: GoogleAssistantResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleAssistantResponse] (val x: Self) extends AnyVal {
       
       inline def setExpectUserResponse(value: Boolean): Self = StObject.set(x, "expectUserResponse", value.asInstanceOf[js.Any])
       
@@ -272,7 +274,8 @@ object distServiceDialogflowConvMod {
       __obj.asInstanceOf[PayloadGoogle]
     }
     
-    extension [Self <: PayloadGoogle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PayloadGoogle] (val x: Self) extends AnyVal {
       
       inline def setGoogle(value: GoogleAssistantResponse): Self = StObject.set(x, "google", value.asInstanceOf[js.Any])
     }
@@ -291,7 +294,8 @@ object distServiceDialogflowConvMod {
       __obj.asInstanceOf[SystemIntent]
     }
     
-    extension [Self <: SystemIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SystemIntent] (val x: Self) extends AnyVal {
       
       inline def setData(value: ProtoAnystringJsonObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

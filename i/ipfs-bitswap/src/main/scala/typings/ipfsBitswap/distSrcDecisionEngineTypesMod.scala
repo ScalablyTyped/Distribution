@@ -32,7 +32,8 @@ object distSrcDecisionEngineTypesMod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setData(value: TaskData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object distSrcDecisionEngineTypesMod {
       __obj.asInstanceOf[TaskData]
     }
     
-    extension [Self <: TaskData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskData] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object distSrcDecisionEngineTypesMod {
       __obj.asInstanceOf[TaskMerger]
     }
     
-    extension [Self <: TaskMerger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskMerger] (val x: Self) extends AnyVal {
       
       inline def setHasNewInfo(value: (Task, js.Array[Task]) => Boolean): Self = StObject.set(x, "hasNewInfo", js.Any.fromFunction2(value))
       

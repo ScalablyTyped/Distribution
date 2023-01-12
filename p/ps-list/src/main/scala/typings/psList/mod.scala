@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ProcessDescriptor]
     }
     
-    extension [Self <: ProcessDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessDescriptor] (val x: Self) extends AnyVal {
       
       inline def setCmd(value: String): Self = StObject.set(x, "cmd", value.asInstanceOf[js.Any])
       

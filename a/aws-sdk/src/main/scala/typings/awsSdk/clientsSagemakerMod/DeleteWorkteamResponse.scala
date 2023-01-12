@@ -18,7 +18,8 @@ object DeleteWorkteamResponse {
     __obj.asInstanceOf[DeleteWorkteamResponse]
   }
   
-  extension [Self <: DeleteWorkteamResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWorkteamResponse] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Success): Self = StObject.set(x, "Success", value.asInstanceOf[js.Any])
   }

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setChars(value: StringDictionary[FontChar]): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
       __obj.asInstanceOf[FontChar]
     }
     
-    extension [Self <: FontChar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontChar] (val x: Self) extends AnyVal {
       
       inline def setChnl(value: Double): Self = StObject.set(x, "chnl", value.asInstanceOf[js.Any])
       
@@ -161,7 +163,8 @@ object mod {
       __obj.asInstanceOf[FontCommon]
     }
     
-    extension [Self <: FontCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontCommon] (val x: Self) extends AnyVal {
       
       inline def setAlphaChnl(value: Double): Self = StObject.set(x, "alphaChnl", value.asInstanceOf[js.Any])
       
@@ -228,7 +231,8 @@ object mod {
       __obj.asInstanceOf[FontInfo]
     }
     
-    extension [Self <: FontInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FontInfo] (val x: Self) extends AnyVal {
       
       inline def setAa(value: Double): Self = StObject.set(x, "aa", value.asInstanceOf[js.Any])
       
@@ -268,7 +272,8 @@ object mod {
       __obj.asInstanceOf[Print]
     }
     
-    extension [Self <: Print](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Print] (val x: Self) extends AnyVal {
       
       inline def setClass(value: PrintClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
       

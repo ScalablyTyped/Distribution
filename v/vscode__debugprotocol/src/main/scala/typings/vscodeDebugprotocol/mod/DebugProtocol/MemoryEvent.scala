@@ -29,7 +29,8 @@ object MemoryEvent {
     __obj.asInstanceOf[MemoryEvent]
   }
   
-  extension [Self <: MemoryEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemoryEvent] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Count): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

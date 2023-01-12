@@ -52,7 +52,8 @@ object PickerViewIOSProps {
     __obj.asInstanceOf[PickerViewIOSProps]
   }
   
-  extension [Self <: PickerViewIOSProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerViewIOSProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

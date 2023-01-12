@@ -203,7 +203,8 @@ object HTMLElementTagNameMap {
     __obj.asInstanceOf[HTMLElementTagNameMap]
   }
   
-  extension [Self <: HTMLElementTagNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
     
     inline def `setZg-body`(value: ZGBody): Self = StObject.set(x, "zg-body", value.asInstanceOf[js.Any])
     

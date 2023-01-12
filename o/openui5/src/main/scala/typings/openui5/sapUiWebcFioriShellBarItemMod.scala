@@ -344,7 +344,8 @@ object sapUiWebcFioriShellBarItemMod {
       __obj.asInstanceOf[ShellBarItemSettings]
     }
     
-    extension [Self <: ShellBarItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShellBarItemSettings] (val x: Self) extends AnyVal {
       
       inline def setClick(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
       

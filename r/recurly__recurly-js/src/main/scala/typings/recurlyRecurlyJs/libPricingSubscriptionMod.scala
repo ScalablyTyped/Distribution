@@ -23,7 +23,8 @@ object libPricingSubscriptionMod {
       __obj.asInstanceOf[AddonOptions]
     }
     
-    extension [Self <: AddonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddonOptions] (val x: Self) extends AnyVal {
       
       inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object libPricingSubscriptionMod {
       __obj.asInstanceOf[PlanOptions]
     }
     
-    extension [Self <: PlanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlanOptions] (val x: Self) extends AnyVal {
       
       inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object libPricingSubscriptionMod {
       __obj.asInstanceOf[SubscriptionPricingState]
     }
     
-    extension [Self <: SubscriptionPricingState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionPricingState] (val x: Self) extends AnyVal {
       
       inline def setPrice(value: Base): Self = StObject.set(x, "price", value.asInstanceOf[js.Any])
     }
@@ -122,7 +125,8 @@ object libPricingSubscriptionMod {
       __obj.asInstanceOf[SubscriptionPricingStateTax]
     }
     
-    extension [Self <: SubscriptionPricingStateTax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscriptionPricingStateTax] (val x: Self) extends AnyVal {
       
       inline def setRate(value: String): Self = StObject.set(x, "rate", value.asInstanceOf[js.Any])
       

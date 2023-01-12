@@ -16,7 +16,8 @@ object GoogleCloudMlV1IntegratedGradientsAttribution {
     __obj.asInstanceOf[GoogleCloudMlV1IntegratedGradientsAttribution]
   }
   
-  extension [Self <: GoogleCloudMlV1IntegratedGradientsAttribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1IntegratedGradientsAttribution] (val x: Self) extends AnyVal {
     
     inline def setNumIntegralSteps(value: Double): Self = StObject.set(x, "numIntegralSteps", value.asInstanceOf[js.Any])
     

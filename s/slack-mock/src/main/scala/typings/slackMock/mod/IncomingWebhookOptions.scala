@@ -22,7 +22,8 @@ object IncomingWebhookOptions {
     __obj.asInstanceOf[IncomingWebhookOptions[T]]
   }
   
-  extension [Self <: IncomingWebhookOptions[?], T](x: Self & IncomingWebhookOptions[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncomingWebhookOptions[?], T] (val x: Self & IncomingWebhookOptions[T]) extends AnyVal {
     
     inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

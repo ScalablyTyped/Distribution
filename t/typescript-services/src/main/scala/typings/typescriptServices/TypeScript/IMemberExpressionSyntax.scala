@@ -44,7 +44,8 @@ object IMemberExpressionSyntax {
     __obj.asInstanceOf[IMemberExpressionSyntax]
   }
   
-  extension [Self <: IMemberExpressionSyntax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMemberExpressionSyntax] (val x: Self) extends AnyVal {
     
     inline def setIsMemberExpression(value: () => Boolean): Self = StObject.set(x, "isMemberExpression", js.Any.fromFunction0(value))
   }

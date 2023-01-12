@@ -78,7 +78,8 @@ object typesServiceExceptionMod {
       __obj.asInstanceOf[ServiceException]
     }
     
-    extension [Self <: ServiceException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.ServiceException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object typesServiceExceptionMod {
       __obj.asInstanceOf[ServiceExceptionDetails]
     }
     
-    extension [Self <: ServiceExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

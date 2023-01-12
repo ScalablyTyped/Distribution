@@ -30,7 +30,8 @@ object typesGetObjectTorrentOutputMod {
       __obj.asInstanceOf[GetObjectTorrentOutput[StreamType]]
     }
     
-    extension [Self <: GetObjectTorrentOutput[?], StreamType](x: Self & GetObjectTorrentOutput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetObjectTorrentOutput[?], StreamType] (val x: Self & GetObjectTorrentOutput[StreamType]) extends AnyVal {
       
       inline def setBody(value: StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
       

@@ -62,7 +62,8 @@ object DigestType {
     __obj.asInstanceOf[DigestType]
   }
   
-  extension [Self <: DigestType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

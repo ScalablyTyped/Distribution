@@ -19,7 +19,8 @@ object DeploymentUpdateLabelEntry {
     __obj.asInstanceOf[DeploymentUpdateLabelEntry]
   }
   
-  extension [Self <: DeploymentUpdateLabelEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentUpdateLabelEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

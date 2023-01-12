@@ -17,7 +17,8 @@ object Plugins {
     __obj.asInstanceOf[Plugins]
   }
   
-  extension [Self <: Plugins](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
     
     inline def setInAppBrowser(value: `6`): Self = StObject.set(x, "InAppBrowser", value.asInstanceOf[js.Any])
     

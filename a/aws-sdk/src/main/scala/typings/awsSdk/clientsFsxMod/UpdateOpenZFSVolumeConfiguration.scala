@@ -48,7 +48,8 @@ object UpdateOpenZFSVolumeConfiguration {
     __obj.asInstanceOf[UpdateOpenZFSVolumeConfiguration]
   }
   
-  extension [Self <: UpdateOpenZFSVolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateOpenZFSVolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataCompressionType(value: OpenZFSDataCompressionType): Self = StObject.set(x, "DataCompressionType", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object FogColor {
     __obj.asInstanceOf[FogColor]
   }
   
-  extension [Self <: FogColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FogColor] (val x: Self) extends AnyVal {
     
     inline def setFogColor(value: IUniform[Any]): Self = StObject.set(x, "fogColor", value.asInstanceOf[js.Any])
     

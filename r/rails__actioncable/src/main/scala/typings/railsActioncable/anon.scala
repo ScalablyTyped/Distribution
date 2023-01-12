@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[AllowReconnect]
     }
     
-    extension [Self <: AllowReconnect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowReconnect] (val x: Self) extends AnyVal {
       
       inline def setAllowReconnect(value: Boolean): Self = StObject.set(x, "allowReconnect", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Close]
     }
     
-    extension [Self <: Close](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Close] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Identifier): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Identifier]
     }
     
-    extension [Self <: Identifier](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Identifier] (val x: Self) extends AnyVal {
       
       inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
       

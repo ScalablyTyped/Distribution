@@ -20,7 +20,8 @@ object Router {
     __obj.asInstanceOf[Router[Options, NavigationPropType]]
   }
   
-  extension [Self <: Router[?, ?], Options, NavigationPropType](x: Self & (Router[Options, NavigationPropType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Router[?, ?], Options, NavigationPropType] (val x: Self & (Router[Options, NavigationPropType])) extends AnyVal {
     
     inline def setNavigationOptions(value: NavigationScreenConfig[Options, NavigationPropType, Any]): Self = StObject.set(x, "navigationOptions", value.asInstanceOf[js.Any])
     

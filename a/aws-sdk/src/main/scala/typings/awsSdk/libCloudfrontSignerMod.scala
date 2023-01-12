@@ -83,7 +83,8 @@ object libCloudfrontSignerMod {
         __obj.asInstanceOf[CannedPolicy]
       }
       
-      extension [Self <: CannedPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CannedPolicy] (val x: Self) extends AnyVal {
         
         inline def `setCloudFront-Expires`(value: Double): Self = StObject.set(x, "CloudFront-Expires", value.asInstanceOf[js.Any])
         
@@ -111,7 +112,8 @@ object libCloudfrontSignerMod {
         __obj.asInstanceOf[CustomPolicy]
       }
       
-      extension [Self <: CustomPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomPolicy] (val x: Self) extends AnyVal {
         
         inline def `setCloudFront-Key-Pair-Id`(value: String): Self = StObject.set(x, "CloudFront-Key-Pair-Id", value.asInstanceOf[js.Any])
         
@@ -135,7 +137,8 @@ object libCloudfrontSignerMod {
         __obj.asInstanceOf[SignerOptionsWithPolicy]
       }
       
-      extension [Self <: SignerOptionsWithPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignerOptionsWithPolicy] (val x: Self) extends AnyVal {
         
         inline def setPolicy(value: String): Self = StObject.set(x, "policy", value.asInstanceOf[js.Any])
       }
@@ -160,7 +163,8 @@ object libCloudfrontSignerMod {
         __obj.asInstanceOf[SignerOptionsWithoutPolicy]
       }
       
-      extension [Self <: SignerOptionsWithoutPolicy](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SignerOptionsWithoutPolicy] (val x: Self) extends AnyVal {
         
         inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
         

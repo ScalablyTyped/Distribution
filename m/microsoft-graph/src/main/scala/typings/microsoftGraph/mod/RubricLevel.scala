@@ -25,7 +25,8 @@ object RubricLevel {
     __obj.asInstanceOf[RubricLevel]
   }
   
-  extension [Self <: RubricLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RubricLevel] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: NullableOption[EducationItemBody]): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object SearchCommandArgument {
     __obj.asInstanceOf[SearchCommandArgument]
   }
   
-  extension [Self <: SearchCommandArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchCommandArgument] (val x: Self) extends AnyVal {
     
     inline def setInfo(value: SearchInfo): Self = StObject.set(x, "Info", value.asInstanceOf[js.Any])
     

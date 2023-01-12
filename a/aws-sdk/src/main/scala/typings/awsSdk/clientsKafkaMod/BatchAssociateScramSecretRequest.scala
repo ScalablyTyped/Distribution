@@ -27,7 +27,8 @@ object BatchAssociateScramSecretRequest {
     __obj.asInstanceOf[BatchAssociateScramSecretRequest]
   }
   
-  extension [Self <: BatchAssociateScramSecretRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchAssociateScramSecretRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

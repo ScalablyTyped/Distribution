@@ -34,7 +34,8 @@ object Typeofoption {
     __obj.asInstanceOf[Typeofoption]
   }
   
-  extension [Self <: Typeofoption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofoption] (val x: Self) extends AnyVal {
     
     inline def setManager(
       value: Instantiable3[

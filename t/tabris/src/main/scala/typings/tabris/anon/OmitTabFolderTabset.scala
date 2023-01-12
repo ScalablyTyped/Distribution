@@ -779,7 +779,8 @@ object OmitTabFolderTabset {
     __obj.asInstanceOf[OmitTabFolderTabset[TabType]]
   }
   
-  extension [Self <: OmitTabFolderTabset[?], TabType /* <: Tab */](x: Self & OmitTabFolderTabset[TabType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTabFolderTabset[?], TabType /* <: Tab */] (val x: Self & OmitTabFolderTabset[TabType]) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

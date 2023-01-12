@@ -71,7 +71,8 @@ object cmyk {
     __obj.asInstanceOf[cmyk]
   }
   
-  extension [Self <: cmyk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: cmyk] (val x: Self) extends AnyVal {
     
     inline def setAnsi16(value: CMYK_ => ANSI16_): Self = StObject.set(x, "ansi16", js.Any.fromFunction1(value))
     

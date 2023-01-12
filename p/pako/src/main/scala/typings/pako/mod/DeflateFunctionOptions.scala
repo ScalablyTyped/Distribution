@@ -36,7 +36,8 @@ object DeflateFunctionOptions {
     __obj.asInstanceOf[DeflateFunctionOptions]
   }
   
-  extension [Self <: DeflateFunctionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeflateFunctionOptions] (val x: Self) extends AnyVal {
     
     inline def setDictionary(value: Any): Self = StObject.set(x, "dictionary", value.asInstanceOf[js.Any])
     

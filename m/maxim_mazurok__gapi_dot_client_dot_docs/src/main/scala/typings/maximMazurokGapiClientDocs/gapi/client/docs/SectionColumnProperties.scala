@@ -19,7 +19,8 @@ object SectionColumnProperties {
     __obj.asInstanceOf[SectionColumnProperties]
   }
   
-  extension [Self <: SectionColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setPaddingEnd(value: Dimension): Self = StObject.set(x, "paddingEnd", value.asInstanceOf[js.Any])
     

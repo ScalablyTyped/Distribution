@@ -22,7 +22,8 @@ object ManifestExtra {
     __obj.asInstanceOf[ManifestExtra]
   }
   
-  extension [Self <: ManifestExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManifestExtra] (val x: Self) extends AnyVal {
     
     inline def setEas(value: EASConfig): Self = StObject.set(x, "eas", value.asInstanceOf[js.Any])
     

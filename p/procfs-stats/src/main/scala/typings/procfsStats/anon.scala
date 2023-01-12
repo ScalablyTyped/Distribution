@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Discardedpackets]
     }
     
-    extension [Self <: Discardedpackets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Discardedpackets] (val x: Self) extends AnyVal {
       
       inline def `setDiscarded packets`(value: String): Self = StObject.set(x, "Discarded packets", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[Missed]
     }
     
-    extension [Self <: Missed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Missed] (val x: Self) extends AnyVal {
       
       inline def setMissed(value: String): Self = StObject.set(x, "Missed", value.asInstanceOf[js.Any])
     }
@@ -52,7 +54,8 @@ object anon {
       __obj.asInstanceOf[Quality]
     }
     
-    extension [Self <: Quality](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quality] (val x: Self) extends AnyVal {
       
       inline def setQuality(value: String): Self = StObject.set(x, "Quality", value.asInstanceOf[js.Any])
     }
@@ -71,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Receive]
     }
     
-    extension [Self <: Receive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Receive] (val x: Self) extends AnyVal {
       
       inline def setReceive(value: String): Self = StObject.set(x, "Receive", value.asInstanceOf[js.Any])
       
@@ -90,7 +94,8 @@ object anon {
       __obj.asInstanceOf[ReceiveString]
     }
     
-    extension [Self <: ReceiveString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiveString] (val x: Self) extends AnyVal {
       
       inline def setReceive(value: String): Self = StObject.set(x, "Receive", value.asInstanceOf[js.Any])
     }
@@ -107,7 +112,8 @@ object anon {
       __obj.asInstanceOf[Transmit]
     }
     
-    extension [Self <: Transmit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transmit] (val x: Self) extends AnyVal {
       
       inline def setTransmit(value: String): Self = StObject.set(x, "Transmit", value.asInstanceOf[js.Any])
     }

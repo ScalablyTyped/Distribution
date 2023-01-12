@@ -40,7 +40,8 @@ object GatewaySummary {
     __obj.asInstanceOf[GatewaySummary]
   }
   
-  extension [Self <: GatewaySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GatewaySummary] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

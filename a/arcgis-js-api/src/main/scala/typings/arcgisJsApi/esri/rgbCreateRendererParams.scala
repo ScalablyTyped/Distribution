@@ -85,7 +85,8 @@ object rgbCreateRendererParams {
     __obj.asInstanceOf[rgbCreateRendererParams]
   }
   
-  extension [Self <: rgbCreateRendererParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rgbCreateRendererParams] (val x: Self) extends AnyVal {
     
     inline def setDynamicRangeAdjustment(value: Boolean): Self = StObject.set(x, "dynamicRangeAdjustment", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object IgValidatorLengthRule {
     __obj.asInstanceOf[IgValidatorLengthRule]
   }
   
-  extension [Self <: IgValidatorLengthRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgValidatorLengthRule] (val x: Self) extends AnyVal {
     
     inline def setFormatMessage(value: String => String): Self = StObject.set(x, "formatMessage", js.Any.fromFunction1(value))
     

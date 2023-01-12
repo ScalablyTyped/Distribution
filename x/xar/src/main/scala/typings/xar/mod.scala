@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[PackOptions]
     }
     
-    extension [Self <: PackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackOptions] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: Compression): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[TOCHeader]
     }
     
-    extension [Self <: TOCHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TOCHeader] (val x: Self) extends AnyVal {
       
       inline def setCksumAlg(value: Double): Self = StObject.set(x, "cksumAlg", value.asInstanceOf[js.Any])
       

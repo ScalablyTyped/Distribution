@@ -42,7 +42,8 @@ object moduleGraphTypesMod {
       __obj.asInstanceOf[ConcreteTransformResult]
     }
     
-    extension [Self <: ConcreteTransformResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteTransformResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object moduleGraphTypesMod {
       __obj.asInstanceOf[ImportNames]
     }
     
-    extension [Self <: ImportNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportNames] (val x: Self) extends AnyVal {
       
       inline def setAll(value: String): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object moduleGraphTypesMod {
       __obj.asInstanceOf[LinkedTransformResult]
     }
     
-    extension [Self <: LinkedTransformResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkedTransformResult] (val x: Self) extends AnyVal {
       
       inline def setSourceVariantName(value: String): Self = StObject.set(x, "sourceVariantName", value.asInstanceOf[js.Any])
       

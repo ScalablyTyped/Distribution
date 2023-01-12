@@ -43,7 +43,8 @@ object Discount {
     __obj.asInstanceOf[Discount]
   }
   
-  extension [Self <: Discount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Discount] (val x: Self) extends AnyVal {
     
     inline def setDiscount(value: OmitDiscountvalid | js.Array[Any]): Self = StObject.set(x, "discount", value.asInstanceOf[js.Any])
     

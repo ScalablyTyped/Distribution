@@ -23,7 +23,8 @@ object ListMetricStreamsInput {
     __obj.asInstanceOf[ListMetricStreamsInput]
   }
   
-  extension [Self <: ListMetricStreamsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricStreamsInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: ListMetricStreamsMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

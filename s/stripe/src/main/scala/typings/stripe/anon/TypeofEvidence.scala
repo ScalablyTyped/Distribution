@@ -21,7 +21,8 @@ object TypeofEvidence {
     __obj.asInstanceOf[TypeofEvidence]
   }
   
-  extension [Self <: TypeofEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofEvidence] (val x: Self) extends AnyVal {
     
     inline def setCanceled(value: Any): Self = StObject.set(x, "Canceled", value.asInstanceOf[js.Any])
     

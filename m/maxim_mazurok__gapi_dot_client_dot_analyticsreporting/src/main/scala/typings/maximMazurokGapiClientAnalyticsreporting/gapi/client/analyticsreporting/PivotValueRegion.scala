@@ -16,7 +16,8 @@ object PivotValueRegion {
     __obj.asInstanceOf[PivotValueRegion]
   }
   
-  extension [Self <: PivotValueRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotValueRegion] (val x: Self) extends AnyVal {
     
     inline def setValues(value: js.Array[String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

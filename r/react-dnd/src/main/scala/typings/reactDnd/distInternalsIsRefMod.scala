@@ -23,7 +23,8 @@ object distInternalsIsRefMod {
       __obj.asInstanceOf[Ref[T]]
     }
     
-    extension [Self <: Ref[?], T](x: Self & Ref[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref[?], T] (val x: Self & Ref[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     }

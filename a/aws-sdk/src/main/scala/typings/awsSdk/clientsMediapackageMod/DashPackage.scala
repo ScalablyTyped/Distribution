@@ -85,7 +85,8 @@ object DashPackage {
     __obj.asInstanceOf[DashPackage]
   }
   
-  extension [Self <: DashPackage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashPackage] (val x: Self) extends AnyVal {
     
     inline def setAdTriggers(value: AdTriggers): Self = StObject.set(x, "AdTriggers", value.asInstanceOf[js.Any])
     

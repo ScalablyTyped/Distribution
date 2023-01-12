@@ -20,7 +20,8 @@ object NetworkOperatorTetheringOperationResult {
     __obj.asInstanceOf[NetworkOperatorTetheringOperationResult]
   }
   
-  extension [Self <: NetworkOperatorTetheringOperationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOperatorTetheringOperationResult] (val x: Self) extends AnyVal {
     
     inline def setAdditionalErrorMessage(value: String): Self = StObject.set(x, "additionalErrorMessage", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object IndexConfig {
     __obj.asInstanceOf[IndexConfig]
   }
   
-  extension [Self <: IndexConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexConfig] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

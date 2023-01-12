@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[MockClientData]
     }
     
-    extension [Self <: MockClientData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MockClientData] (val x: Self) extends AnyVal {
       
       inline def setMockClientData(value: Boolean): Self = StObject.set(x, "mockClientData", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialEnvironmentConfig]
     }
     
-    extension [Self <: PartialEnvironmentConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEnvironmentConfig] (val x: Self) extends AnyVal {
       
       inline def setConfigName(value: String): Self = StObject.set(x, "configName", value.asInstanceOf[js.Any])
       

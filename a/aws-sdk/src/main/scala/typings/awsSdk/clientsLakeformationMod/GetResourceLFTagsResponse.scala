@@ -28,7 +28,8 @@ object GetResourceLFTagsResponse {
     __obj.asInstanceOf[GetResourceLFTagsResponse]
   }
   
-  extension [Self <: GetResourceLFTagsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceLFTagsResponse] (val x: Self) extends AnyVal {
     
     inline def setLFTagOnDatabase(value: LFTagsList): Self = StObject.set(x, "LFTagOnDatabase", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PersistenceInsertOptions {
     __obj.asInstanceOf[PersistenceInsertOptions]
   }
   
-  extension [Self <: PersistenceInsertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceInsertOptions] (val x: Self) extends AnyVal {
     
     inline def setDeepInsert(value: Boolean): Self = StObject.set(x, "deepInsert", value.asInstanceOf[js.Any])
     

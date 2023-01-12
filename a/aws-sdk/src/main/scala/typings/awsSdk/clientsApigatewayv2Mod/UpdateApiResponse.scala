@@ -93,7 +93,8 @@ object UpdateApiResponse {
     __obj.asInstanceOf[UpdateApiResponse]
   }
   
-  extension [Self <: UpdateApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateApiResponse] (val x: Self) extends AnyVal {
     
     inline def setApiEndpoint(value: string): Self = StObject.set(x, "ApiEndpoint", value.asInstanceOf[js.Any])
     

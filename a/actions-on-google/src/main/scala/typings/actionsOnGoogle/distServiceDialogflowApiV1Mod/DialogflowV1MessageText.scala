@@ -19,7 +19,8 @@ object DialogflowV1MessageText {
     __obj.asInstanceOf[DialogflowV1MessageText]
   }
   
-  extension [Self <: DialogflowV1MessageText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1MessageText] (val x: Self) extends AnyVal {
     
     inline def setSpeech(value: String): Self = StObject.set(x, "speech", value.asInstanceOf[js.Any])
     

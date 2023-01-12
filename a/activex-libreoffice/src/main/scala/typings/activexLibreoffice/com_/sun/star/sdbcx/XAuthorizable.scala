@@ -66,7 +66,8 @@ object XAuthorizable {
     __obj.asInstanceOf[XAuthorizable]
   }
   
-  extension [Self <: XAuthorizable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAuthorizable] (val x: Self) extends AnyVal {
     
     inline def setGetGrantablePrivileges(value: (String, Double) => Double): Self = StObject.set(x, "getGrantablePrivileges", js.Any.fromFunction2(value))
     

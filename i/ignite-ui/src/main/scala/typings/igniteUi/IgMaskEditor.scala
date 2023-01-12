@@ -330,7 +330,8 @@ object IgMaskEditor {
     __obj.asInstanceOf[IgMaskEditor]
   }
   
-  extension [Self <: IgMaskEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgMaskEditor] (val x: Self) extends AnyVal {
     
     inline def setAllowNullValue(value: Boolean): Self = StObject.set(x, "allowNullValue", value.asInstanceOf[js.Any])
     

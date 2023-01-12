@@ -19,7 +19,8 @@ object Route {
     __obj.asInstanceOf[Route[ParamList, RouteName]]
   }
   
-  extension [Self <: Route[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (Route[ParamList, RouteName])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Route[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (Route[ParamList, RouteName])) extends AnyVal {
     
     inline def setNavigation(value: Any): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
     

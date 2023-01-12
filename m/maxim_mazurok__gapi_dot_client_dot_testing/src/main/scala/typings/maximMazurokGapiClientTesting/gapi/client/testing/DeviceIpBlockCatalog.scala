@@ -16,7 +16,8 @@ object DeviceIpBlockCatalog {
     __obj.asInstanceOf[DeviceIpBlockCatalog]
   }
   
-  extension [Self <: DeviceIpBlockCatalog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceIpBlockCatalog] (val x: Self) extends AnyVal {
     
     inline def setIpBlocks(value: js.Array[DeviceIpBlock]): Self = StObject.set(x, "ipBlocks", value.asInstanceOf[js.Any])
     

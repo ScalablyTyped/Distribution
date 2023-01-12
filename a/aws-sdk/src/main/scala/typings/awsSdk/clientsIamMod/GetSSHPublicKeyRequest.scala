@@ -28,7 +28,8 @@ object GetSSHPublicKeyRequest {
     __obj.asInstanceOf[GetSSHPublicKeyRequest]
   }
   
-  extension [Self <: GetSSHPublicKeyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSSHPublicKeyRequest] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: encodingType): Self = StObject.set(x, "Encoding", value.asInstanceOf[js.Any])
     

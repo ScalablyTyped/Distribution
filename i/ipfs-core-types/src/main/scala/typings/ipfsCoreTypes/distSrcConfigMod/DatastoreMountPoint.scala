@@ -22,7 +22,8 @@ object DatastoreMountPoint {
     __obj.asInstanceOf[DatastoreMountPoint]
   }
   
-  extension [Self <: DatastoreMountPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatastoreMountPoint] (val x: Self) extends AnyVal {
     
     inline def setChild(value: DatastoreType): Self = StObject.set(x, "child", value.asInstanceOf[js.Any])
     

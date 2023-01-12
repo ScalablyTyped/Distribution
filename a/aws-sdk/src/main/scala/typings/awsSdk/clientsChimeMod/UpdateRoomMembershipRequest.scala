@@ -33,7 +33,8 @@ object UpdateRoomMembershipRequest {
     __obj.asInstanceOf[UpdateRoomMembershipRequest]
   }
   
-  extension [Self <: UpdateRoomMembershipRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRoomMembershipRequest] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: NonEmptyString): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

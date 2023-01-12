@@ -18,7 +18,8 @@ object IWebGPURenderPipelineStageDescriptor {
     __obj.asInstanceOf[IWebGPURenderPipelineStageDescriptor]
   }
   
-  extension [Self <: IWebGPURenderPipelineStageDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebGPURenderPipelineStageDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFragmentStage(value: GPUProgrammableStage): Self = StObject.set(x, "fragmentStage", value.asInstanceOf[js.Any])
     

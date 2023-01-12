@@ -81,7 +81,8 @@ object AwaitingEventEmitter {
     __obj.asInstanceOf[AwaitingEventEmitter[T]]
   }
   
-  extension [Self <: AwaitingEventEmitter[?], T /* <: StringDictionary[js.Function1[/* parameters */ Any, Any]] */](x: Self & AwaitingEventEmitter[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwaitingEventEmitter[?], T /* <: StringDictionary[js.Function1[/* parameters */ Any, Any]] */] (val x: Self & AwaitingEventEmitter[T]) extends AnyVal {
     
     inline def setClose(value: () => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
     

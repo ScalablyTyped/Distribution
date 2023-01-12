@@ -23,7 +23,8 @@ object Accounts {
       __obj.asInstanceOf[HashedStampedLoginToken]
     }
     
-    extension [Self <: HashedStampedLoginToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HashedStampedLoginToken] (val x: Self) extends AnyVal {
       
       inline def setHashedToken(value: String): Self = StObject.set(x, "hashedToken", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object Accounts {
       __obj.asInstanceOf[IValidateLoginAttemptCbOpts]
     }
     
-    extension [Self <: IValidateLoginAttemptCbOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IValidateLoginAttemptCbOpts] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object Accounts {
       __obj.asInstanceOf[LoginMethodOptions]
     }
     
-    extension [Self <: LoginMethodOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginMethodOptions] (val x: Self) extends AnyVal {
       
       inline def setMethodArguments(value: js.Array[Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object Accounts {
       __obj.asInstanceOf[StampedLoginToken]
     }
     
-    extension [Self <: StampedLoginToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StampedLoginToken] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       

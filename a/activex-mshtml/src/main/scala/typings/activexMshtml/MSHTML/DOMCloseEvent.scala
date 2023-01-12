@@ -78,7 +78,8 @@ object DOMCloseEvent {
     __obj.asInstanceOf[DOMCloseEvent]
   }
   
-  extension [Self <: DOMCloseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMCloseEvent] (val x: Self) extends AnyVal {
     
     inline def setBubbles(value: Boolean): Self = StObject.set(x, "bubbles", value.asInstanceOf[js.Any])
     

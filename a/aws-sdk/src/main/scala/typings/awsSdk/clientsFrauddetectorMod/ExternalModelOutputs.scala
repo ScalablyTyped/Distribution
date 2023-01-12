@@ -23,7 +23,8 @@ object ExternalModelOutputs {
     __obj.asInstanceOf[ExternalModelOutputs]
   }
   
-  extension [Self <: ExternalModelOutputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExternalModelOutputs] (val x: Self) extends AnyVal {
     
     inline def setExternalModel(value: ExternalModelSummary): Self = StObject.set(x, "externalModel", value.asInstanceOf[js.Any])
     

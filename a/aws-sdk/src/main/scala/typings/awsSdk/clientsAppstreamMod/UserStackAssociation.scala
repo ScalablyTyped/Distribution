@@ -33,7 +33,8 @@ object UserStackAssociation {
     __obj.asInstanceOf[UserStackAssociation]
   }
   
-  extension [Self <: UserStackAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserStackAssociation] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationType(value: AuthenticationType): Self = StObject.set(x, "AuthenticationType", value.asInstanceOf[js.Any])
     

@@ -147,7 +147,8 @@ object PickNavbarItemContainerPrActive {
     __obj.asInstanceOf[PickNavbarItemContainerPrActive]
   }
   
-  extension [Self <: PickNavbarItemContainerPrActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickNavbarItemContainerPrActive] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

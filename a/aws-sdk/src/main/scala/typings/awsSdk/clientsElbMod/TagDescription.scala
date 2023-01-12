@@ -23,7 +23,8 @@ object TagDescription {
     __obj.asInstanceOf[TagDescription]
   }
   
-  extension [Self <: TagDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagDescription] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: AccessPointName): Self = StObject.set(x, "LoadBalancerName", value.asInstanceOf[js.Any])
     

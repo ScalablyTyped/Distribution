@@ -27,7 +27,8 @@ object srcComponentsNotificationMod extends Shortcut {
       __obj.asInstanceOf[NotificationProps]
     }
     
-    extension [Self <: NotificationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

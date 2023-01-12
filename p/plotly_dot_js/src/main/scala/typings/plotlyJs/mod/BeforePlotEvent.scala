@@ -21,7 +21,8 @@ object BeforePlotEvent {
     __obj.asInstanceOf[BeforePlotEvent]
   }
   
-  extension [Self <: BeforePlotEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforePlotEvent] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: PartialConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

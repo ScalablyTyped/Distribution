@@ -45,7 +45,8 @@ object PaymentDataCallbacks {
     __obj.asInstanceOf[PaymentDataCallbacks]
   }
   
-  extension [Self <: PaymentDataCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentDataCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnPaymentAuthorized(
       value: /* paymentData */ PaymentData => js.Promise[PaymentAuthorizationResult] | PaymentAuthorizationResult

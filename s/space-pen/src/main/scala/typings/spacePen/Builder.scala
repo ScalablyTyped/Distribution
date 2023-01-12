@@ -44,7 +44,8 @@ object Builder {
     __obj.asInstanceOf[Builder]
   }
   
-  extension [Self <: Builder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
     
     inline def setBuildHtml(value: () => js.Array[Any]): Self = StObject.set(x, "buildHtml", js.Any.fromFunction0(value))
     

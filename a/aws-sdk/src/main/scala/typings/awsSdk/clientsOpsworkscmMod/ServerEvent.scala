@@ -33,7 +33,8 @@ object ServerEvent {
     __obj.asInstanceOf[ServerEvent]
   }
   
-  extension [Self <: ServerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerEvent] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "CreatedAt", value.asInstanceOf[js.Any])
     

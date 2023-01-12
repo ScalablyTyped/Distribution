@@ -23,7 +23,8 @@ object ISearchAgentsRequest {
     __obj.asInstanceOf[ISearchAgentsRequest]
   }
   
-  extension [Self <: ISearchAgentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchAgentsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpdateAccountSettingsInput {
     __obj.asInstanceOf[UpdateAccountSettingsInput]
   }
   
-  extension [Self <: UpdateAccountSettingsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAccountSettingsInput] (val x: Self) extends AnyVal {
     
     inline def setDeletePipelineProvisioningRepository(value: Boolean): Self = StObject.set(x, "deletePipelineProvisioningRepository", value.asInstanceOf[js.Any])
     

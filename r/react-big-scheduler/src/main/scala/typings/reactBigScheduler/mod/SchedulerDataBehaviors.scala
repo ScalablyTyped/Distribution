@@ -25,7 +25,8 @@ object SchedulerDataBehaviors {
     __obj.asInstanceOf[SchedulerDataBehaviors]
   }
   
-  extension [Self <: SchedulerDataBehaviors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerDataBehaviors] (val x: Self) extends AnyVal {
     
     inline def setGetCustomDateFunc(
       value: (/* schedulerData */ SchedulerData, /* num */ Double, /* date */ js.UndefOr[String]) => CellUnit

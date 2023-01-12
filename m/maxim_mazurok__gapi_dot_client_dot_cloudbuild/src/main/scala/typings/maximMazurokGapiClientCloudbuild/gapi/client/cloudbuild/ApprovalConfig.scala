@@ -16,7 +16,8 @@ object ApprovalConfig {
     __obj.asInstanceOf[ApprovalConfig]
   }
   
-  extension [Self <: ApprovalConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApprovalConfig] (val x: Self) extends AnyVal {
     
     inline def setApprovalRequired(value: Boolean): Self = StObject.set(x, "approvalRequired", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PickImplminPartialPickImp {
     __obj.asInstanceOf[PickImplminPartialPickImp]
   }
   
-  extension [Self <: PickImplminPartialPickImp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplminPartialPickImp] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

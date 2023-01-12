@@ -147,7 +147,8 @@ object libSpacerMod {
       __obj.asInstanceOf[SpacerProps]
     }
     
-    extension [Self <: SpacerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpacerProps] (val x: Self) extends AnyVal {
       
       inline def setIsInlineBlock(value: Boolean): Self = StObject.set(x, "isInlineBlock", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object libSpacerMod {
       __obj.asInstanceOf[SpacerSizes]
     }
     
-    extension [Self <: SpacerSizes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpacerSizes] (val x: Self) extends AnyVal {
       
       inline def setLARGE(value: large): Self = StObject.set(x, "LARGE", value.asInstanceOf[js.Any])
       

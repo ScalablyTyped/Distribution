@@ -20,7 +20,8 @@ object ValidateErrorEntity {
     __obj.asInstanceOf[ValidateErrorEntity[Values]]
   }
   
-  extension [Self <: ValidateErrorEntity[?], Values](x: Self & ValidateErrorEntity[Values]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateErrorEntity[?], Values] (val x: Self & ValidateErrorEntity[Values]) extends AnyVal {
     
     inline def setErrorFields(value: js.Array[Errors]): Self = StObject.set(x, "errorFields", value.asInstanceOf[js.Any])
     

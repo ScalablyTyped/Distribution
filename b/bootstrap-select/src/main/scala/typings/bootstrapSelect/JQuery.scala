@@ -66,7 +66,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery[TElement]]
   }
   
-  extension [Self <: JQuery[?], TElement](x: Self & JQuery[TElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery[?], TElement] (val x: Self & JQuery[TElement]) extends AnyVal {
     
     inline def setOn(
       value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: bootstrap-select.BootstrapSelectEvents[K] */ js.Any) => JQuery[TElement]

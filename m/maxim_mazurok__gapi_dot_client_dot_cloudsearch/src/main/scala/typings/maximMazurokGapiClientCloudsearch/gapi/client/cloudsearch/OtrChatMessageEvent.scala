@@ -21,7 +21,8 @@ object OtrChatMessageEvent {
     __obj.asInstanceOf[OtrChatMessageEvent]
   }
   
-  extension [Self <: OtrChatMessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OtrChatMessageEvent] (val x: Self) extends AnyVal {
     
     inline def setExpirationTimestampUsec(value: String): Self = StObject.set(x, "expirationTimestampUsec", value.asInstanceOf[js.Any])
     

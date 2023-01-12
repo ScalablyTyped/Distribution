@@ -54,7 +54,8 @@ object IStreetsideOptions {
     __obj.asInstanceOf[IStreetsideOptions]
   }
   
-  extension [Self <: IStreetsideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreetsideOptions] (val x: Self) extends AnyVal {
     
     inline def setDisablePanoramaNavigation(value: Boolean): Self = StObject.set(x, "disablePanoramaNavigation", value.asInstanceOf[js.Any])
     

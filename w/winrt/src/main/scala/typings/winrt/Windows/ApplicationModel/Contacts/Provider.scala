@@ -86,7 +86,8 @@ object Provider {
       __obj.asInstanceOf[IContactPickerUI]
     }
     
-    extension [Self <: IContactPickerUI](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContactPickerUI] (val x: Self) extends AnyVal {
       
       inline def setAddContact(value: (String, Contact) => AddContactResult): Self = StObject.set(x, "addContact", js.Any.fromFunction2(value))
       
@@ -113,7 +114,8 @@ object Provider {
       __obj.asInstanceOf[IContactRemovedEventArgs]
     }
     
-    extension [Self <: IContactRemovedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IContactRemovedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object LgMax {
     __obj.asInstanceOf[LgMax]
   }
   
-  extension [Self <: LgMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LgMax] (val x: Self) extends AnyVal {
     
     inline def setLg(value: `23`): Self = StObject.set(x, "lg", value.asInstanceOf[js.Any])
     

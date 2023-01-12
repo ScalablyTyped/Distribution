@@ -15,7 +15,8 @@ object Liquid {
     __obj.asInstanceOf[Liquid]
   }
   
-  extension [Self <: Liquid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Liquid] (val x: Self) extends AnyVal {
     
     inline def setLiquid(value: Boolean): Self = StObject.set(x, "liquid", value.asInstanceOf[js.Any])
   }

@@ -29,7 +29,8 @@ object SKProductsResponse {
     __obj.asInstanceOf[SKProductsResponse]
   }
   
-  extension [Self <: SKProductsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SKProductsResponse] (val x: Self) extends AnyVal {
     
     inline def setInvalidProductIdentifiers(value: js.Array[String]): Self = StObject.set(x, "invalidProductIdentifiers", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object EntityTypesListItem {
     __obj.asInstanceOf[EntityTypesListItem]
   }
   
-  extension [Self <: EntityTypesListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityTypesListItem] (val x: Self) extends AnyVal {
     
     inline def setType(value: EntityTypeName): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
   }

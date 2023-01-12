@@ -17,7 +17,8 @@ object StateState {
     __obj.asInstanceOf[StateState[State]]
   }
   
-  extension [Self <: StateState[?], State /* <: NavigationState[ParamListBase] */](x: Self & StateState[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateState[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & StateState[State]) extends AnyVal {
     
     inline def setState(value: State): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
   }

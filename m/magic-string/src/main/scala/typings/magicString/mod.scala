@@ -95,7 +95,8 @@ object mod {
       __obj.asInstanceOf[BundleOptions]
     }
     
-    extension [Self <: BundleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleOptions] (val x: Self) extends AnyVal {
       
       inline def setIntro(value: String): Self = StObject.set(x, "intro", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[DecodedSourceMap]
     }
     
-    extension [Self <: DecodedSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodedSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -169,7 +171,8 @@ object mod {
       __obj.asInstanceOf[IndentOptions]
     }
     
-    extension [Self <: IndentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentOptions] (val x: Self) extends AnyVal {
       
       inline def setExclude(value: ExclusionRange | js.Array[ExclusionRange]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
       
@@ -370,7 +373,8 @@ object mod {
       __obj.asInstanceOf[MagicStringOptions]
     }
     
-    extension [Self <: MagicStringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MagicStringOptions] (val x: Self) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
       
@@ -397,7 +401,8 @@ object mod {
       __obj.asInstanceOf[OverwriteOptions]
     }
     
-    extension [Self <: OverwriteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverwriteOptions] (val x: Self) extends AnyVal {
       
       inline def setContentOnly(value: Boolean): Self = StObject.set(x, "contentOnly", value.asInstanceOf[js.Any])
       
@@ -443,7 +448,8 @@ object mod {
       __obj.asInstanceOf[SourceMapOptions]
     }
     
-    extension [Self <: SourceMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceMapOptions] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -478,7 +484,8 @@ object mod {
       __obj.asInstanceOf[UpdateOptions]
     }
     
-    extension [Self <: UpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
       

@@ -115,7 +115,8 @@ object MotionProps {
     __obj.asInstanceOf[MotionProps]
   }
   
-  extension [Self <: MotionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionProps] (val x: Self) extends AnyVal {
     
     inline def setAnimationConfig(value: Delay): Self = StObject.set(x, "animationConfig", value.asInstanceOf[js.Any])
     

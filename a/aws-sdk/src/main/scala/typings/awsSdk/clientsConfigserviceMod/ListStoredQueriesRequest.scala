@@ -23,7 +23,8 @@ object ListStoredQueriesRequest {
     __obj.asInstanceOf[ListStoredQueriesRequest]
   }
   
-  extension [Self <: ListStoredQueriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListStoredQueriesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Limit): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

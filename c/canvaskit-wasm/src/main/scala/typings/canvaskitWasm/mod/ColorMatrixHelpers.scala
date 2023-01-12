@@ -59,7 +59,8 @@ object ColorMatrixHelpers {
     __obj.asInstanceOf[ColorMatrixHelpers]
   }
   
-  extension [Self <: ColorMatrixHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorMatrixHelpers] (val x: Self) extends AnyVal {
     
     inline def setConcat(value: (js.typedarray.Float32Array, js.typedarray.Float32Array) => js.typedarray.Float32Array): Self = StObject.set(x, "concat", js.Any.fromFunction2(value))
     

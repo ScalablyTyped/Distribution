@@ -68,7 +68,8 @@ object S3ParquetSource {
     __obj.asInstanceOf[S3ParquetSource]
   }
   
-  extension [Self <: S3ParquetSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ParquetSource] (val x: Self) extends AnyVal {
     
     inline def setAdditionalOptions(value: S3DirectSourceAdditionalOptions): Self = StObject.set(x, "AdditionalOptions", value.asInstanceOf[js.Any])
     

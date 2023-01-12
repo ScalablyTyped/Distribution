@@ -22,7 +22,8 @@ object IGenericSelectionNxInfo {
     __obj.asInstanceOf[IGenericSelectionNxInfo]
   }
   
-  extension [Self <: IGenericSelectionNxInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericSelectionNxInfo] (val x: Self) extends AnyVal {
     
     inline def setQType(value: CurrentSelection): Self = StObject.set(x, "qType", value.asInstanceOf[js.Any])
   }

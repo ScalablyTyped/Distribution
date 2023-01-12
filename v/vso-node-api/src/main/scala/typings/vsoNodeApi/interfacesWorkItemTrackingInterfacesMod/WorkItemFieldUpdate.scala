@@ -23,7 +23,8 @@ object WorkItemFieldUpdate {
     __obj.asInstanceOf[WorkItemFieldUpdate]
   }
   
-  extension [Self <: WorkItemFieldUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemFieldUpdate] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Any): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

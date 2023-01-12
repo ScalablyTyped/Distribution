@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[CallbackNode]
     }
     
-    extension [Self <: CallbackNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackNode] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: FrameCallbackType): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object srcArchitectMod {
       __obj.asInstanceOf[ScheduleOptions]
     }
     
-    extension [Self <: ScheduleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScheduleOptions] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: Analytics): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       

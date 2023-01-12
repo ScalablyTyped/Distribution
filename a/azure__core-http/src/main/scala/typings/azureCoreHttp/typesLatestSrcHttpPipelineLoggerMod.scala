@@ -54,7 +54,8 @@ object typesLatestSrcHttpPipelineLoggerMod {
       __obj.asInstanceOf[HttpPipelineLogger]
     }
     
-    extension [Self <: HttpPipelineLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpPipelineLogger] (val x: Self) extends AnyVal {
       
       inline def setLog(value: (HttpPipelineLogLevel, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       

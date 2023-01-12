@@ -97,7 +97,8 @@ object anon {
       __obj.asInstanceOf[AgentOptionsproxyOptionsP]
     }
     
-    extension [Self <: AgentOptionsproxyOptionsP](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptionsproxyOptionsP] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -502,7 +503,8 @@ object anon {
       __obj.asInstanceOf[AgentOptionsproxyOptionsPALPNProtocols]
     }
     
-    extension [Self <: AgentOptionsproxyOptionsPALPNProtocols](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptionsproxyOptionsPALPNProtocols] (val x: Self) extends AnyVal {
       
       inline def setALPNProtocols(value: (js.Array[String | js.typedarray.Uint8Array]) | js.typedarray.Uint8Array): Self = StObject.set(x, "ALPNProtocols", value.asInstanceOf[js.Any])
       
@@ -752,7 +754,8 @@ object anon {
       __obj.asInstanceOf[AgentOptionsproxyOptionsPMaxCachedTlsSessions]
     }
     
-    extension [Self <: AgentOptionsproxyOptionsPMaxCachedTlsSessions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AgentOptionsproxyOptionsPMaxCachedTlsSessions] (val x: Self) extends AnyVal {
       
       inline def setMaxCachedTlsSessions(value: Double): Self = StObject.set(x, "maxCachedTlsSessions", value.asInstanceOf[js.Any])
       
@@ -806,7 +809,8 @@ object anon {
       __obj.asInstanceOf[Http]
     }
     
-    extension [Self <: Http](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Http] (val x: Self) extends AnyVal {
       
       inline def setHttp(value: Agent | `false`): Self = StObject.set(x, "http", value.asInstanceOf[js.Any])
       

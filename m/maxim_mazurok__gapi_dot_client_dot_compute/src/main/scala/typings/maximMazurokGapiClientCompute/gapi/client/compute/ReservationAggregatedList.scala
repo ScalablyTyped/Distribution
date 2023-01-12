@@ -40,7 +40,8 @@ object ReservationAggregatedList {
     __obj.asInstanceOf[ReservationAggregatedList]
   }
   
-  extension [Self <: ReservationAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object libTileTileMod {
       __obj.asInstanceOf[TileContentProps]
     }
     
-    extension [Self <: TileContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileContentProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object libTileTileMod {
       __obj.asInstanceOf[TileFooterProps]
     }
     
-    extension [Self <: TileFooterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileFooterProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object libTileTileMod {
       __obj.asInstanceOf[TileHeaderProps]
     }
     
-    extension [Self <: TileHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -160,7 +163,8 @@ object libTileTileMod {
       __obj.asInstanceOf[TileProps]
     }
     
-    extension [Self <: TileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

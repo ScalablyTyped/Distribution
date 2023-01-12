@@ -22,7 +22,8 @@ object StructuredMessage {
     __obj.asInstanceOf[StructuredMessage]
   }
   
-  extension [Self <: StructuredMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructuredMessage] (val x: Self) extends AnyVal {
     
     inline def setMessageKey(value: String): Self = StObject.set(x, "messageKey", value.asInstanceOf[js.Any])
     

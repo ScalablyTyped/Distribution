@@ -23,7 +23,8 @@ object ParallelDataDataLocation {
     __obj.asInstanceOf[ParallelDataDataLocation]
   }
   
-  extension [Self <: ParallelDataDataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParallelDataDataLocation] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
     

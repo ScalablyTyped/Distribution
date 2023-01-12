@@ -18,7 +18,8 @@ object IWindowSizeChangedEventArgs {
     __obj.asInstanceOf[IWindowSizeChangedEventArgs]
   }
   
-  extension [Self <: IWindowSizeChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWindowSizeChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Size): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

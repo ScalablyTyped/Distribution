@@ -21,7 +21,8 @@ object StreamPriorityOptions {
     __obj.asInstanceOf[StreamPriorityOptions]
   }
   
-  extension [Self <: StreamPriorityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamPriorityOptions] (val x: Self) extends AnyVal {
     
     inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
     

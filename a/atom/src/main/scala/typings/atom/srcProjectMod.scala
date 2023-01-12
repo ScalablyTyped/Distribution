@@ -114,7 +114,8 @@ object srcProjectMod {
       __obj.asInstanceOf[Project]
     }
     
-    extension [Self <: Project](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Project] (val x: Self) extends AnyVal {
       
       inline def setAddPath(value: String => Unit): Self = StObject.set(x, "addPath", js.Any.fromFunction1(value))
       
@@ -169,7 +170,8 @@ object srcProjectMod {
       __obj.asInstanceOf[ProjectSpecification]
     }
     
-    extension [Self <: ProjectSpecification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectSpecification] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ConfigValues): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

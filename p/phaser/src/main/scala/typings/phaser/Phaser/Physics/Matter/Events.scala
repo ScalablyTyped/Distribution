@@ -32,7 +32,8 @@ object Events {
       __obj.asInstanceOf[AfterAddEvent]
     }
     
-    extension [Self <: AfterAddEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterAddEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object Events {
       __obj.asInstanceOf[AfterRemoveEvent]
     }
     
-    extension [Self <: AfterRemoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterRemoveEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -105,7 +107,8 @@ object Events {
       __obj.asInstanceOf[AfterUpdateEvent]
     }
     
-    extension [Self <: AfterUpdateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AfterUpdateEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object Events {
       __obj.asInstanceOf[BeforeAddEvent]
     }
     
-    extension [Self <: BeforeAddEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeAddEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -177,7 +181,8 @@ object Events {
       __obj.asInstanceOf[BeforeRemoveEvent]
     }
     
-    extension [Self <: BeforeRemoveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeRemoveEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -213,7 +218,8 @@ object Events {
       __obj.asInstanceOf[BeforeUpdateEvent]
     }
     
-    extension [Self <: BeforeUpdateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeUpdateEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -252,7 +258,8 @@ object Events {
       __obj.asInstanceOf[CollisionActiveEvent]
     }
     
-    extension [Self <: CollisionActiveEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollisionActiveEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -295,7 +302,8 @@ object Events {
       __obj.asInstanceOf[CollisionEndEvent]
     }
     
-    extension [Self <: CollisionEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollisionEndEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -338,7 +346,8 @@ object Events {
       __obj.asInstanceOf[CollisionStartEvent]
     }
     
-    extension [Self <: CollisionStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollisionStartEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -371,7 +380,8 @@ object Events {
       __obj.asInstanceOf[SleepEndEvent]
     }
     
-    extension [Self <: SleepEndEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SleepEndEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -398,7 +408,8 @@ object Events {
       __obj.asInstanceOf[SleepStartEvent]
     }
     
-    extension [Self <: SleepStartEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SleepStartEvent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

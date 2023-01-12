@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[Client]
     }
     
-    extension [Self <: Client](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Client] (val x: Self) extends AnyVal {
       
       inline def setSails(value: ClientSails): Self = StObject.set(x, "sails", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object mod {
       __obj.asInstanceOf[ConnectConfig]
     }
     
-    extension [Self <: ConnectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectConfig] (val x: Self) extends AnyVal {
       
       inline def setInitialConnectionHeaders(value: InitialConnectionHeaders): Self = StObject.set(x, "initialConnectionHeaders", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object mod {
       __obj.asInstanceOf[InitialConnectionHeaders]
     }
     
-    extension [Self <: InitialConnectionHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitialConnectionHeaders] (val x: Self) extends AnyVal {
       
       inline def setNosession(value: Boolean): Self = StObject.set(x, "nosession", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object mod {
       __obj.asInstanceOf[JWR]
     }
     
-    extension [Self <: JWR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWR] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -232,7 +237,8 @@ object mod {
       __obj.asInstanceOf[SDKInfo]
     }
     
-    extension [Self <: SDKInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SDKInfo] (val x: Self) extends AnyVal {
       
       inline def setLanguage(value: String): Self = StObject.set(x, "language", value.asInstanceOf[js.Any])
       

@@ -117,7 +117,8 @@ object searchConfig {
     __obj.asInstanceOf[searchConfig]
   }
   
-  extension [Self <: searchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: searchConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

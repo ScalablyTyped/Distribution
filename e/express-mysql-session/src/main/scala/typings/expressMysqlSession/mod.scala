@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ColumnNames]
     }
     
-    extension [Self <: ColumnNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnNames] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -138,7 +139,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCheckExpirationInterval(value: Double): Self = StObject.set(x, "checkExpirationInterval", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setColumnNames(value: PartialColumnNames): Self = StObject.set(x, "columnNames", value.asInstanceOf[js.Any])
       

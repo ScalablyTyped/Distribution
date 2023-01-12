@@ -19,7 +19,8 @@ object VectorNetwork {
     __obj.asInstanceOf[VectorNetwork]
   }
   
-  extension [Self <: VectorNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorNetwork] (val x: Self) extends AnyVal {
     
     inline def setRegions(value: js.Array[VectorRegion]): Self = StObject.set(x, "regions", value.asInstanceOf[js.Any])
     

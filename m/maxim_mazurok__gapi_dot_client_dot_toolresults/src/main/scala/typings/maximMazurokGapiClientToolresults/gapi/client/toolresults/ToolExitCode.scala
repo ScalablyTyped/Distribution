@@ -16,7 +16,8 @@ object ToolExitCode {
     __obj.asInstanceOf[ToolExitCode]
   }
   
-  extension [Self <: ToolExitCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolExitCode] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
     

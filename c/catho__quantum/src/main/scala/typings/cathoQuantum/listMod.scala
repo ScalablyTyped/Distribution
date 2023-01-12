@@ -64,7 +64,8 @@ object listMod {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object listMod {
       __obj.asInstanceOf[Header]
     }
     
-    extension [Self <: Header](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Header] (val x: Self) extends AnyVal {
       
       inline def setTheme(value: `17`): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object listMod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setBullet(value: String): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object listMod {
       __obj.asInstanceOf[ItemContent]
     }
     
-    extension [Self <: ItemContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemContent] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: String): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -194,7 +198,8 @@ object listMod {
       __obj.asInstanceOf[ListItem]
     }
     
-    extension [Self <: ListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ItemContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -229,7 +234,8 @@ object listMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setBullet(value: Boolean): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
       
@@ -276,7 +282,8 @@ object listMod {
       __obj.asInstanceOf[SubHeader]
     }
     
-    extension [Self <: SubHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubHeader] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement | js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

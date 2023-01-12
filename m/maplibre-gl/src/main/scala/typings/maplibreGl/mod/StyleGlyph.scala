@@ -19,7 +19,8 @@ object StyleGlyph {
     __obj.asInstanceOf[StyleGlyph]
   }
   
-  extension [Self <: StyleGlyph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleGlyph] (val x: Self) extends AnyVal {
     
     inline def setBitmap(value: AlphaImage): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     

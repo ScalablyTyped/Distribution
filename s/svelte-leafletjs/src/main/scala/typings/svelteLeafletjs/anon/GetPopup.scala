@@ -31,7 +31,8 @@ object GetPopup {
     __obj.asInstanceOf[GetPopup]
   }
   
-  extension [Self <: GetPopup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPopup] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: PathEventKeys): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

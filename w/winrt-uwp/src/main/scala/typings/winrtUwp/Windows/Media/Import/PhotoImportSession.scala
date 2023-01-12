@@ -54,7 +54,8 @@ object PhotoImportSession {
     __obj.asInstanceOf[PhotoImportSession]
   }
   
-  extension [Self <: PhotoImportSession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoImportSession] (val x: Self) extends AnyVal {
     
     inline def setAppendSessionDateToDestinationFolder(value: Boolean): Self = StObject.set(x, "appendSessionDateToDestinationFolder", value.asInstanceOf[js.Any])
     

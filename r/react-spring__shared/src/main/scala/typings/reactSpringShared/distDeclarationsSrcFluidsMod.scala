@@ -80,7 +80,8 @@ object distDeclarationsSrcFluidsMod {
       __obj.asInstanceOf[FluidEvent[T]]
     }
     
-    extension [Self <: FluidEvent[?], T](x: Self & FluidEvent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluidEvent[?], T] (val x: Self & FluidEvent[T]) extends AnyVal {
       
       inline def setParent(value: FluidValue[T, Any]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       

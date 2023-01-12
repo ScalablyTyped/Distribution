@@ -28,7 +28,8 @@ object IpSet {
     __obj.asInstanceOf[IpSet]
   }
   
-  extension [Self <: IpSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpSet] (val x: Self) extends AnyVal {
     
     inline def setIpAddressFamily(value: IpAddressFamily): Self = StObject.set(x, "IpAddressFamily", value.asInstanceOf[js.Any])
     

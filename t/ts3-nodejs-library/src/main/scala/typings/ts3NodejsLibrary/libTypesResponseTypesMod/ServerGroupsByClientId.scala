@@ -22,7 +22,8 @@ object ServerGroupsByClientId {
     __obj.asInstanceOf[ServerGroupsByClientId]
   }
   
-  extension [Self <: ServerGroupsByClientId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerGroupsByClientId] (val x: Self) extends AnyVal {
     
     inline def setCldbid(value: String): Self = StObject.set(x, "cldbid", value.asInstanceOf[js.Any])
     

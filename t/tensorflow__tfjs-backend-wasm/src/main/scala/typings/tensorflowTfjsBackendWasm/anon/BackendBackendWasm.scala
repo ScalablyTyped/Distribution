@@ -19,7 +19,8 @@ object BackendBackendWasm {
     __obj.asInstanceOf[BackendBackendWasm]
   }
   
-  extension [Self <: BackendBackendWasm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendBackendWasm] (val x: Self) extends AnyVal {
     
     inline def setBackend(value: BackendWasm): Self = StObject.set(x, "backend", value.asInstanceOf[js.Any])
     

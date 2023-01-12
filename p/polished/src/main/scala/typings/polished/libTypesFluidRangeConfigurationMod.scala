@@ -21,7 +21,8 @@ object libTypesFluidRangeConfigurationMod {
       __obj.asInstanceOf[FluidRangeConfiguration]
     }
     
-    extension [Self <: FluidRangeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluidRangeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFromSize(value: String | Double): Self = StObject.set(x, "fromSize", value.asInstanceOf[js.Any])
       

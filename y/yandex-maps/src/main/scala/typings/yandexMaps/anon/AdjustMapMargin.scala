@@ -40,7 +40,8 @@ object AdjustMapMargin {
     __obj.asInstanceOf[AdjustMapMargin]
   }
   
-  extension [Self <: AdjustMapMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdjustMapMargin] (val x: Self) extends AnyVal {
     
     inline def setAdjustMapMargin(value: Boolean): Self = StObject.set(x, "adjustMapMargin", value.asInstanceOf[js.Any])
     

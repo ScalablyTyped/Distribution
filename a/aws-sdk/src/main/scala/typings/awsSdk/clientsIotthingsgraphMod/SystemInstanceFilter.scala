@@ -23,7 +23,8 @@ object SystemInstanceFilter {
     __obj.asInstanceOf[SystemInstanceFilter]
   }
   
-  extension [Self <: SystemInstanceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInstanceFilter] (val x: Self) extends AnyVal {
     
     inline def setName(value: SystemInstanceFilterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FeatureParameter {
     __obj.asInstanceOf[FeatureParameter]
   }
   
-  extension [Self <: FeatureParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureParameter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: FeatureParameterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

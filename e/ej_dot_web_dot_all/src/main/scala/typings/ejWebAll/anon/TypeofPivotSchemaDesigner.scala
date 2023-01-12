@@ -20,7 +20,8 @@ object TypeofPivotSchemaDesigner {
     __obj.asInstanceOf[TypeofPivotSchemaDesigner]
   }
   
-  extension [Self <: TypeofPivotSchemaDesigner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPivotSchemaDesigner] (val x: Self) extends AnyVal {
     
     inline def setFn(value: PivotSchemaDesigner): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

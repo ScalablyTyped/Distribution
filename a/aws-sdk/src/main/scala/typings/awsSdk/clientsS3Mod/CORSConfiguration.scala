@@ -18,7 +18,8 @@ object CORSConfiguration {
     __obj.asInstanceOf[CORSConfiguration]
   }
   
-  extension [Self <: CORSConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CORSConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCORSRules(value: CORSRules): Self = StObject.set(x, "CORSRules", value.asInstanceOf[js.Any])
     

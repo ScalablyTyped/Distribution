@@ -49,7 +49,8 @@ object EntityAnnotation {
     __obj.asInstanceOf[EntityAnnotation]
   }
   
-  extension [Self <: EntityAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityAnnotation] (val x: Self) extends AnyVal {
     
     inline def setBoundingPoly(value: BoundingPoly): Self = StObject.set(x, "boundingPoly", value.asInstanceOf[js.Any])
     

@@ -296,7 +296,8 @@ object JQueryFileInputOptions {
     __obj.asInstanceOf[JQueryFileInputOptions]
   }
   
-  extension [Self <: JQueryFileInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFileInputOptions] (val x: Self) extends AnyVal {
     
     inline def setActive(value: js.Function): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

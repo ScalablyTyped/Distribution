@@ -497,7 +497,8 @@ object Defaultbranch {
     __obj.asInstanceOf[Defaultbranch]
   }
   
-  extension [Self <: Defaultbranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Defaultbranch] (val x: Self) extends AnyVal {
     
     inline def setAllow_auto_merge(value: Boolean): Self = StObject.set(x, "allow_auto_merge", value.asInstanceOf[js.Any])
     

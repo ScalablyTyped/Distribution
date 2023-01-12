@@ -19,7 +19,8 @@ object QuickReply {
     __obj.asInstanceOf[QuickReply]
   }
   
-  extension [Self <: QuickReply](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickReply] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[QuickReplyOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

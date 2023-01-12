@@ -30,7 +30,8 @@ object DictionaryEntry {
     __obj.asInstanceOf[DictionaryEntry]
   }
   
-  extension [Self <: DictionaryEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryEntry] (val x: Self) extends AnyVal {
     
     inline def setDecomposition(value: js.Array[String]): Self = StObject.set(x, "decomposition", value.asInstanceOf[js.Any])
     

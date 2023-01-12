@@ -764,7 +764,8 @@ object mod {
       __obj.asInstanceOf[EditorBaseSetting]
     }
     
-    extension [Self <: EditorBaseSetting](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorBaseSetting] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -785,7 +786,8 @@ object mod {
       __obj.asInstanceOf[EditorBlockListSettings]
     }
     
-    extension [Self <: EditorBlockListSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorBlockListSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowedBlocks(value: js.Array[String]): Self = StObject.set(x, "allowedBlocks", value.asInstanceOf[js.Any])
       
@@ -824,7 +826,8 @@ object mod {
       __obj.asInstanceOf[EditorColor]
     }
     
-    extension [Self <: EditorColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorColor] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     }
@@ -843,7 +846,8 @@ object mod {
       __obj.asInstanceOf[EditorFontSize]
     }
     
-    extension [Self <: EditorFontSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorFontSize] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     }
@@ -924,7 +928,8 @@ object mod {
       __obj.asInstanceOf[EditorInserterItem]
     }
     
-    extension [Self <: EditorInserterItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorInserterItem] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -988,7 +993,8 @@ object mod {
       __obj.asInstanceOf[EditorSelection]
     }
     
-    extension [Self <: EditorSelection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorSelection] (val x: Self) extends AnyVal {
       
       inline def setAttributeKey(value: String): Self = StObject.set(x, "attributeKey", value.asInstanceOf[js.Any])
       
@@ -1159,7 +1165,8 @@ object mod {
       __obj.asInstanceOf[EditorSettings]
     }
     
-    extension [Self <: EditorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorSettings] (val x: Self) extends AnyVal {
       
       inline def setAlignWide(value: Boolean): Self = StObject.set(x, "alignWide", value.asInstanceOf[js.Any])
       
@@ -1244,7 +1251,8 @@ object mod {
       __obj.asInstanceOf[EditorStyle]
     }
     
-    extension [Self <: EditorStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorStyle] (val x: Self) extends AnyVal {
       
       inline def setBaseURL(value: String): Self = StObject.set(x, "baseURL", value.asInstanceOf[js.Any])
       

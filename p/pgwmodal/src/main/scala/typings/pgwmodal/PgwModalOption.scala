@@ -49,7 +49,8 @@ object PgwModalOption {
     __obj.asInstanceOf[PgwModalOption]
   }
   
-  extension [Self <: PgwModalOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PgwModalOption] (val x: Self) extends AnyVal {
     
     inline def setAjaxOptions(value: Any): Self = StObject.set(x, "ajaxOptions", value.asInstanceOf[js.Any])
     

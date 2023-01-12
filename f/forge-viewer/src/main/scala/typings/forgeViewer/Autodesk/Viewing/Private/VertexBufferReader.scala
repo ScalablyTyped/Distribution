@@ -23,7 +23,8 @@ object VertexBufferReader {
     __obj.asInstanceOf[VertexBufferReader]
   }
   
-  extension [Self <: VertexBufferReader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VertexBufferReader] (val x: Self) extends AnyVal {
     
     inline def setEnumGeoms(value: (Any, GeometryCallback) => Unit): Self = StObject.set(x, "enumGeoms", js.Any.fromFunction2(value))
     

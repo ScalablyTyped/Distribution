@@ -58,7 +58,8 @@ object LeaderboardEntry {
     __obj.asInstanceOf[LeaderboardEntry]
   }
   
-  extension [Self <: LeaderboardEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderboardEntry] (val x: Self) extends AnyVal {
     
     inline def setGetExtraData(value: () => String | Null): Self = StObject.set(x, "getExtraData", js.Any.fromFunction0(value))
     

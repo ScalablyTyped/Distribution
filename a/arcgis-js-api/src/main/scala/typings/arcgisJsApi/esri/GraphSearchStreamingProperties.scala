@@ -52,7 +52,8 @@ object GraphSearchStreamingProperties {
     __obj.asInstanceOf[GraphSearchStreamingProperties]
   }
   
-  extension [Self <: GraphSearchStreamingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphSearchStreamingProperties] (val x: Self) extends AnyVal {
     
     inline def setGlobalIdsFilter(value: js.Array[String]): Self = StObject.set(x, "globalIdsFilter", value.asInstanceOf[js.Any])
     

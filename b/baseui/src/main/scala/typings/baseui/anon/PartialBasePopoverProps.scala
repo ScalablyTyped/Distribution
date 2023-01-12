@@ -75,7 +75,8 @@ object PartialBasePopoverProps {
     __obj.asInstanceOf[PartialBasePopoverProps]
   }
   
-  extension [Self <: PartialBasePopoverProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBasePopoverProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityType(value: AccessibilityType): Self = StObject.set(x, "accessibilityType", value.asInstanceOf[js.Any])
     

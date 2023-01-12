@@ -20,7 +20,8 @@ object BeforeSaveRequest {
     __obj.asInstanceOf[BeforeSaveRequest[T]]
   }
   
-  extension [Self <: BeforeSaveRequest[?], T](x: Self & BeforeSaveRequest[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeSaveRequest[?], T] (val x: Self & BeforeSaveRequest[T]) extends AnyVal {
     
     inline def setContext(value: Record[String, Any]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
   }

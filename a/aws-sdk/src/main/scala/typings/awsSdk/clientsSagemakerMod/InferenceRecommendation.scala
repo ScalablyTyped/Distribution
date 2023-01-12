@@ -32,7 +32,8 @@ object InferenceRecommendation {
     __obj.asInstanceOf[InferenceRecommendation]
   }
   
-  extension [Self <: InferenceRecommendation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InferenceRecommendation] (val x: Self) extends AnyVal {
     
     inline def setEndpointConfiguration(value: EndpointOutputConfiguration): Self = StObject.set(x, "EndpointConfiguration", value.asInstanceOf[js.Any])
     

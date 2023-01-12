@@ -19,7 +19,8 @@ object GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1RunAssetDiscoveryResponse] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: String): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

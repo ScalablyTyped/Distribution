@@ -43,7 +43,8 @@ object CardInfoV1 {
     __obj.asInstanceOf[CardInfoV1]
   }
   
-  extension [Self <: CardInfoV1](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardInfoV1] (val x: Self) extends AnyVal {
     
     inline def setBincode(value: String): Self = StObject.set(x, "bincode", value.asInstanceOf[js.Any])
     

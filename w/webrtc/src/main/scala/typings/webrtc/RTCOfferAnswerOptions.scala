@@ -16,7 +16,8 @@ object RTCOfferAnswerOptions {
     __obj.asInstanceOf[RTCOfferAnswerOptions]
   }
   
-  extension [Self <: RTCOfferAnswerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCOfferAnswerOptions] (val x: Self) extends AnyVal {
     
     inline def setVoiceActivityDetection(value: Boolean): Self = StObject.set(x, "voiceActivityDetection", value.asInstanceOf[js.Any])
     

@@ -88,7 +88,8 @@ object distBloomMod {
       __obj.asInstanceOf[Bloom]
     }
     
-    extension [Self <: Bloom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bloom] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Buffer => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

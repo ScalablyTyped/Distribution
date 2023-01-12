@@ -211,7 +211,8 @@ object NodeStatic {
     __obj.asInstanceOf[NodeStatic]
   }
   
-  extension [Self <: NodeStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeStatic] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Instantiable0[Arguments]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object ExpandRowProps {
     __obj.asInstanceOf[ExpandRowProps[T, K]]
   }
   
-  extension [Self <: ExpandRowProps[?, ?], T, K](x: Self & (ExpandRowProps[T, K])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandRowProps[?, ?], T, K] (val x: Self & (ExpandRowProps[T, K])) extends AnyVal {
     
     inline def setClassName(value: String | (js.Function3[/* isExpand */ Boolean, /* row */ T, /* rowIndex */ Double, String])): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

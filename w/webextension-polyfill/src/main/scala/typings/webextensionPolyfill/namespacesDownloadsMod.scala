@@ -29,7 +29,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[BooleanDelta]
       }
       
-      extension [Self <: BooleanDelta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BooleanDelta] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -97,7 +98,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[DoubleDelta]
       }
       
-      extension [Self <: DoubleDelta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DoubleDelta] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         
@@ -235,7 +237,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[DownloadItem]
       }
       
-      extension [Self <: DownloadItem](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DownloadItem] (val x: Self) extends AnyVal {
         
         inline def setByExtensionId(value: String): Self = StObject.set(x, "byExtensionId", value.asInstanceOf[js.Any])
         
@@ -372,7 +375,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[DownloadOptionsType]
       }
       
-      extension [Self <: DownloadOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DownloadOptionsType] (val x: Self) extends AnyVal {
         
         inline def setAllowHttpErrors(value: Boolean): Self = StObject.set(x, "allowHttpErrors", value.asInstanceOf[js.Any])
         
@@ -435,7 +439,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[DownloadOptionsTypeHeadersItemType]
       }
       
-      extension [Self <: DownloadOptionsTypeHeadersItemType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DownloadOptionsTypeHeadersItemType] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -631,7 +636,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[DownloadQuery]
       }
       
-      extension [Self <: DownloadQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DownloadQuery] (val x: Self) extends AnyVal {
         
         inline def setBytesReceived(value: Double): Self = StObject.set(x, "bytesReceived", value.asInstanceOf[js.Any])
         
@@ -779,7 +785,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[GetFileIconOptionsType]
       }
       
-      extension [Self <: GetFileIconOptionsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetFileIconOptionsType] (val x: Self) extends AnyVal {
         
         inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
         
@@ -955,7 +962,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[OnChangedDownloadDeltaType]
       }
       
-      extension [Self <: OnChangedDownloadDeltaType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnChangedDownloadDeltaType] (val x: Self) extends AnyVal {
         
         inline def setCanResume(value: BooleanDelta): Self = StObject.set(x, "canResume", value.asInstanceOf[js.Any])
         
@@ -1170,7 +1178,8 @@ object namespacesDownloadsMod {
         __obj.asInstanceOf[StringDelta]
       }
       
-      extension [Self <: StringDelta](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StringDelta] (val x: Self) extends AnyVal {
         
         inline def setCurrent(value: String): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
         

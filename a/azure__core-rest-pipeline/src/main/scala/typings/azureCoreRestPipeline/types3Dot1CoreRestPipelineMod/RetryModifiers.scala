@@ -34,7 +34,8 @@ object RetryModifiers {
     __obj.asInstanceOf[RetryModifiers]
   }
   
-  extension [Self <: RetryModifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryModifiers] (val x: Self) extends AnyVal {
     
     inline def setErrorToThrow(value: RestError): Self = StObject.set(x, "errorToThrow", value.asInstanceOf[js.Any])
     

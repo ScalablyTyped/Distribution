@@ -97,7 +97,8 @@ object Spectrum {
       __obj.asInstanceOf[BeforeShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: BeforeShowEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (BeforeShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeShowEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (BeforeShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: beforeShow): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -198,7 +199,8 @@ object Spectrum {
       __obj.asInstanceOf[DragstartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragstartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragstartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragstartEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragstartEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragstart): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -275,7 +277,8 @@ object Spectrum {
       __obj.asInstanceOf[DragstopEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: DragstopEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (DragstopEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragstopEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (DragstopEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: dragstop): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -361,7 +364,8 @@ object Spectrum {
       __obj.asInstanceOf[HideEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: HideEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (HideEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HideEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (HideEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: hide): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -439,7 +443,8 @@ object Spectrum {
       __obj.asInstanceOf[MoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: MoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (MoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MoveEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (MoveEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: move): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -1008,7 +1013,8 @@ object Spectrum {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmpty(value: Boolean): Self = StObject.set(x, "allowEmpty", value.asInstanceOf[js.Any])
       
@@ -1232,7 +1238,8 @@ object Spectrum {
       __obj.asInstanceOf[ShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget]]
     }
     
-    extension [Self <: ShowEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget](x: Self & (ShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowEvent[?, ?, ?, ?], TDelegateTarget, TData, TCurrentTarget, TTarget] (val x: Self & (ShowEvent[TDelegateTarget, TData, TCurrentTarget, TTarget])) extends AnyVal {
       
       inline def setType(value: show): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

@@ -28,7 +28,8 @@ object ApiResourceVersion {
     __obj.asInstanceOf[ApiResourceVersion]
   }
   
-  extension [Self <: ApiResourceVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiResourceVersion] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

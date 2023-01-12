@@ -18,7 +18,8 @@ object PartialTileContentProps {
     __obj.asInstanceOf[PartialTileContentProps]
   }
   
-  extension [Self <: PartialTileContentProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTileContentProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

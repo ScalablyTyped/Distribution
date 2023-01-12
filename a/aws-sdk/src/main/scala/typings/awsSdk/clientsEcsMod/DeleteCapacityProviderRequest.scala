@@ -18,7 +18,8 @@ object DeleteCapacityProviderRequest {
     __obj.asInstanceOf[DeleteCapacityProviderRequest]
   }
   
-  extension [Self <: DeleteCapacityProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCapacityProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setCapacityProvider(value: String): Self = StObject.set(x, "capacityProvider", value.asInstanceOf[js.Any])
   }

@@ -118,7 +118,8 @@ object XFilePreview {
     __obj.asInstanceOf[XFilePreview]
   }
   
-  extension [Self <: XFilePreview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilePreview] (val x: Self) extends AnyVal {
     
     inline def setAvailableHeight(value: Double): Self = StObject.set(x, "AvailableHeight", value.asInstanceOf[js.Any])
     

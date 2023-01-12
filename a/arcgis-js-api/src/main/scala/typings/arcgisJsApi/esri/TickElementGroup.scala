@@ -28,7 +28,8 @@ object TickElementGroup {
     __obj.asInstanceOf[TickElementGroup]
   }
   
-  extension [Self <: TickElementGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TickElementGroup] (val x: Self) extends AnyVal {
     
     inline def setLabelElement(value: HTMLElement): Self = StObject.set(x, "labelElement", value.asInstanceOf[js.Any])
     

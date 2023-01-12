@@ -29,7 +29,8 @@ object AssignmentProperty {
     __obj.asInstanceOf[AssignmentProperty]
   }
   
-  extension [Self <: AssignmentProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignmentProperty] (val x: Self) extends AnyVal {
     
     inline def setKind(value: init): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

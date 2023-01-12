@@ -21,7 +21,8 @@ object DomainIdentitySource {
     __obj.asInstanceOf[DomainIdentitySource]
   }
   
-  extension [Self <: DomainIdentitySource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainIdentitySource] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

@@ -246,7 +246,8 @@ object GameConfig {
     __obj.asInstanceOf[GameConfig]
   }
   
-  extension [Self <: GameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameConfig] (val x: Self) extends AnyVal {
     
     inline def setAntialias(value: Boolean): Self = StObject.set(x, "antialias", value.asInstanceOf[js.Any])
     

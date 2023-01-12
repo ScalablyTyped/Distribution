@@ -35,7 +35,8 @@ object IIDRange {
     __obj.asInstanceOf[IIDRange]
   }
   
-  extension [Self <: IIDRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IIDRange] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IIDRange): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

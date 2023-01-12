@@ -15,7 +15,8 @@ object DBCoreQueryResponse {
     __obj.asInstanceOf[DBCoreQueryResponse]
   }
   
-  extension [Self <: DBCoreQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[Any]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object PreferenceHelper {
     __obj.asInstanceOf[PreferenceHelper]
   }
   
-  extension [Self <: PreferenceHelper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreferenceHelper] (val x: Self) extends AnyVal {
     
     inline def setGetPreferences(value: () => PreferenceHelper): Self = StObject.set(x, "getPreferences", js.Any.fromFunction0(value))
   }

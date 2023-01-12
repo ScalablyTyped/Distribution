@@ -20,7 +20,8 @@ object IBackgroundTransferContentPartFactory {
     __obj.asInstanceOf[IBackgroundTransferContentPartFactory]
   }
   
-  extension [Self <: IBackgroundTransferContentPartFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBackgroundTransferContentPartFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateWithName(value: String => BackgroundTransferContentPart): Self = StObject.set(x, "createWithName", js.Any.fromFunction1(value))
     

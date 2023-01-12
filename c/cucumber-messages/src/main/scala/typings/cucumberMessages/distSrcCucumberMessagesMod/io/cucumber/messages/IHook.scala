@@ -23,7 +23,8 @@ object IHook {
     __obj.asInstanceOf[IHook]
   }
   
-  extension [Self <: IHook](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHook] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

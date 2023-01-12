@@ -19,7 +19,8 @@ object AbuseReportingConfig {
     __obj.asInstanceOf[AbuseReportingConfig]
   }
   
-  extension [Self <: AbuseReportingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbuseReportingConfig] (val x: Self) extends AnyVal {
     
     inline def setRecordingAllowed(value: Boolean): Self = StObject.set(x, "recordingAllowed", value.asInstanceOf[js.Any])
     

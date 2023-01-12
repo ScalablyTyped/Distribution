@@ -99,7 +99,8 @@ object PstnCallLogRow {
     __obj.asInstanceOf[PstnCallLogRow]
   }
   
-  extension [Self <: PstnCallLogRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PstnCallLogRow] (val x: Self) extends AnyVal {
     
     inline def setCallDurationSource(value: NullableOption[PstnCallDurationSource]): Self = StObject.set(x, "callDurationSource", value.asInstanceOf[js.Any])
     

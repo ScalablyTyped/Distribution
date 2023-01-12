@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: ReverseGeocodeAddress): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Addresses]
     }
     
-    extension [Self <: Addresses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Addresses] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[AddressItemV2]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -166,7 +170,8 @@ object anon {
       __obj.asInstanceOf[Crs]
     }
     
-    extension [Self <: Crs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crs] (val x: Self) extends AnyVal {
       
       inline def setCrs(value: String): Self = StObject.set(x, "crs", value.asInstanceOf[js.Any])
       
@@ -192,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -217,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Items]
     }
     
-    extension [Self <: Items](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Items] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[AddressItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -244,7 +251,8 @@ object anon {
       __obj.asInstanceOf[Total]
     }
     
-    extension [Self <: Total](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Total] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[AddressItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

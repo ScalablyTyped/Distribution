@@ -19,7 +19,8 @@ object RoutesConfigDump {
     __obj.asInstanceOf[RoutesConfigDump]
   }
   
-  extension [Self <: RoutesConfigDump](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutesConfigDump] (val x: Self) extends AnyVal {
     
     inline def setDynamicRouteConfigs(value: js.Array[DynamicRouteConfig]): Self = StObject.set(x, "dynamicRouteConfigs", value.asInstanceOf[js.Any])
     

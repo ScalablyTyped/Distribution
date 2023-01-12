@@ -17,7 +17,8 @@ object RelatedNode {
     __obj.asInstanceOf[RelatedNode]
   }
   
-  extension [Self <: RelatedNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelatedNode] (val x: Self) extends AnyVal {
     
     inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
     

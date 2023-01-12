@@ -23,7 +23,8 @@ object NumberAttributeConstraintsType {
     __obj.asInstanceOf[NumberAttributeConstraintsType]
   }
   
-  extension [Self <: NumberAttributeConstraintsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberAttributeConstraintsType] (val x: Self) extends AnyVal {
     
     inline def setMaxValue(value: StringType): Self = StObject.set(x, "MaxValue", value.asInstanceOf[js.Any])
     

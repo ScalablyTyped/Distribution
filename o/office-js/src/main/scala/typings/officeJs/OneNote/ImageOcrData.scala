@@ -35,7 +35,8 @@ object ImageOcrData {
     __obj.asInstanceOf[ImageOcrData]
   }
   
-  extension [Self <: ImageOcrData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageOcrData] (val x: Self) extends AnyVal {
     
     inline def setOcrLanguageId(value: String): Self = StObject.set(x, "ocrLanguageId", value.asInstanceOf[js.Any])
     

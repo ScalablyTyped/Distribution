@@ -33,7 +33,8 @@ object FindNodesInfo {
     __obj.asInstanceOf[FindNodesInfo]
   }
   
-  extension [Self <: FindNodesInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindNodesInfo] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

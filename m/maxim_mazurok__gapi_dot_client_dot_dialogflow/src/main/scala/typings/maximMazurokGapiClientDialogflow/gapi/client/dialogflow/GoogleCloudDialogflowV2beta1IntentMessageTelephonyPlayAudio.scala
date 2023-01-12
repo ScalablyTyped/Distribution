@@ -21,7 +21,8 @@ object GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1IntentMessageTelephonyPlayAudio] (val x: Self) extends AnyVal {
     
     inline def setAudioUri(value: String): Self = StObject.set(x, "audioUri", value.asInstanceOf[js.Any])
     

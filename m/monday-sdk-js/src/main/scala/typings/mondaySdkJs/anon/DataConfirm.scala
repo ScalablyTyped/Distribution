@@ -15,7 +15,8 @@ object DataConfirm {
     __obj.asInstanceOf[DataConfirm]
   }
   
-  extension [Self <: DataConfirm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataConfirm] (val x: Self) extends AnyVal {
     
     inline def setData(value: Confirm): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

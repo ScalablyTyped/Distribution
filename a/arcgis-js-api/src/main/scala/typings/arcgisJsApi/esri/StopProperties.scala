@@ -111,7 +111,8 @@ object StopProperties {
     __obj.asInstanceOf[StopProperties]
   }
   
-  extension [Self <: StopProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopProperties] (val x: Self) extends AnyVal {
     
     inline def setArriveTime(value: DateProperties): Self = StObject.set(x, "arriveTime", value.asInstanceOf[js.Any])
     

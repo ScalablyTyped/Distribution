@@ -34,7 +34,8 @@ object ChangedItem {
     __obj.asInstanceOf[ChangedItem]
   }
   
-  extension [Self <: ChangedItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangedItem] (val x: Self) extends AnyVal {
     
     inline def setChangedItem(value: default): Self = StObject.set(x, "changedItem", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DataSourceTransportSignalrServer {
     __obj.asInstanceOf[DataSourceTransportSignalrServer]
   }
   
-  extension [Self <: DataSourceTransportSignalrServer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceTransportSignalrServer] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     

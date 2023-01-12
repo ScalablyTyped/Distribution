@@ -19,7 +19,8 @@ object StoreAsGlobalParams {
     __obj.asInstanceOf[StoreAsGlobalParams]
   }
   
-  extension [Self <: StoreAsGlobalParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreAsGlobalParams] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

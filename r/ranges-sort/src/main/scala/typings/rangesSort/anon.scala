@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[PartialOpts]
     }
     
-    extension [Self <: PartialOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOpts] (val x: Self) extends AnyVal {
       
       inline def setProgressFn(value: /* percentageDone */ Double => Unit): Self = StObject.set(x, "progressFn", js.Any.fromFunction1(value))
       

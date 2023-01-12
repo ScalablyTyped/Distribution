@@ -137,7 +137,8 @@ object libEsmComponentsSelectSelectMod {
       __obj.asInstanceOf[ISelectState]
     }
     
-    extension [Self <: ISelectState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISelectState] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
     }

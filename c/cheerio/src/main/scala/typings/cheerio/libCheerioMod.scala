@@ -492,7 +492,8 @@ object libCheerioMod {
       __obj.asInstanceOf[FormsType]
     }
     
-    extension [Self <: FormsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormsType] (val x: Self) extends AnyVal {
       
       inline def setSerialize(value: () => String): Self = StObject.set(x, "serialize", js.Any.fromFunction0(value))
       

@@ -20,7 +20,8 @@ object ApiPassthrough {
     __obj.asInstanceOf[ApiPassthrough]
   }
   
-  extension [Self <: ApiPassthrough](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiPassthrough] (val x: Self) extends AnyVal {
     
     inline def setExtensions(value: Extensions): Self = StObject.set(x, "Extensions", value.asInstanceOf[js.Any])
     

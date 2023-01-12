@@ -29,7 +29,8 @@ object KnockstrapModalDefaults {
     __obj.asInstanceOf[KnockstrapModalDefaults]
   }
   
-  extension [Self <: KnockstrapModalDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapModalDefaults] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: KnockstrapModalDefaultsAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

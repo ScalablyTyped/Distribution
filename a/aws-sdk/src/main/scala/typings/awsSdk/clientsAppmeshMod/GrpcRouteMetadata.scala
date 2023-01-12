@@ -28,7 +28,8 @@ object GrpcRouteMetadata {
     __obj.asInstanceOf[GrpcRouteMetadata]
   }
   
-  extension [Self <: GrpcRouteMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcRouteMetadata] (val x: Self) extends AnyVal {
     
     inline def setInvert(value: Boolean): Self = StObject.set(x, "invert", value.asInstanceOf[js.Any])
     

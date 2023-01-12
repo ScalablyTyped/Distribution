@@ -28,7 +28,8 @@ object NightwatchTestSettingScreenshots {
     __obj.asInstanceOf[NightwatchTestSettingScreenshots]
   }
   
-  extension [Self <: NightwatchTestSettingScreenshots](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchTestSettingScreenshots] (val x: Self) extends AnyVal {
     
     inline def setScreenshots(value: NightwatchScreenshotOptions): Self = StObject.set(x, "screenshots", value.asInstanceOf[js.Any])
   }

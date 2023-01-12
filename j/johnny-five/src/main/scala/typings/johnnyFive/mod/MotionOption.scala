@@ -15,7 +15,8 @@ object MotionOption {
     __obj.asInstanceOf[MotionOption]
   }
   
-  extension [Self <: MotionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotionOption] (val x: Self) extends AnyVal {
     
     inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
   }

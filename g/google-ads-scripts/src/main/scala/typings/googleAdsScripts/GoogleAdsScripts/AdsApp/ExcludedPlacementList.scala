@@ -46,7 +46,8 @@ object ExcludedPlacementList {
     __obj.asInstanceOf[ExcludedPlacementList]
   }
   
-  extension [Self <: ExcludedPlacementList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedPlacementList] (val x: Self) extends AnyVal {
     
     inline def setAddExcludedPlacement(value: String => Unit): Self = StObject.set(x, "addExcludedPlacement", js.Any.fromFunction1(value))
     

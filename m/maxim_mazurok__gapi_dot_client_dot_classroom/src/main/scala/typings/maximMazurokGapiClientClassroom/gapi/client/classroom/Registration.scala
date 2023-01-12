@@ -25,7 +25,8 @@ object Registration {
     __obj.asInstanceOf[Registration]
   }
   
-  extension [Self <: Registration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registration] (val x: Self) extends AnyVal {
     
     inline def setCloudPubsubTopic(value: CloudPubsubTopic): Self = StObject.set(x, "cloudPubsubTopic", value.asInstanceOf[js.Any])
     

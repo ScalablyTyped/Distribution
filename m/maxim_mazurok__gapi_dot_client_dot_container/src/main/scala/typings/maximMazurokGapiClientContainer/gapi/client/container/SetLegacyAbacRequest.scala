@@ -34,7 +34,8 @@ object SetLegacyAbacRequest {
     __obj.asInstanceOf[SetLegacyAbacRequest]
   }
   
-  extension [Self <: SetLegacyAbacRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetLegacyAbacRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: String): Self = StObject.set(x, "clusterId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetPreparedStatementInput {
     __obj.asInstanceOf[GetPreparedStatementInput]
   }
   
-  extension [Self <: GetPreparedStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPreparedStatementInput] (val x: Self) extends AnyVal {
     
     inline def setStatementName(value: StatementName): Self = StObject.set(x, "StatementName", value.asInstanceOf[js.Any])
     

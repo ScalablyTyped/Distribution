@@ -25,7 +25,8 @@ object SplitSolver {
     __obj.asInstanceOf[SplitSolver]
   }
   
-  extension [Self <: SplitSolver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitSolver] (val x: Self) extends AnyVal {
     
     inline def setSubsolver(value: Solver): Self = StObject.set(x, "subsolver", value.asInstanceOf[js.Any])
   }

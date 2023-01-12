@@ -33,7 +33,8 @@ object CompositeDisposable {
     __obj.asInstanceOf[CompositeDisposable]
   }
   
-  extension [Self <: CompositeDisposable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeDisposable] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: IDisposable => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

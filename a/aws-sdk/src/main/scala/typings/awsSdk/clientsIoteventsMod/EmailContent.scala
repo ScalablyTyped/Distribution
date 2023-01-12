@@ -23,7 +23,8 @@ object EmailContent {
     __obj.asInstanceOf[EmailContent]
   }
   
-  extension [Self <: EmailContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailContent] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMessage(value: NotificationAdditionalMessage): Self = StObject.set(x, "additionalMessage", value.asInstanceOf[js.Any])
     

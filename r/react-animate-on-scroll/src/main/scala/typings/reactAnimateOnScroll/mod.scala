@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ScrollAnimationProps]
     }
     
-    extension [Self <: ScrollAnimationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollAnimationProps] (val x: Self) extends AnyVal {
       
       inline def setAfterAnimatedIn(value: /* visibile */ VisibleType => js.UndefOr[js.Object]): Self = StObject.set(x, "afterAnimatedIn", js.Any.fromFunction1(value))
       
@@ -127,7 +128,8 @@ object mod {
       __obj.asInstanceOf[VisibleType]
     }
     
-    extension [Self <: VisibleType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibleType] (val x: Self) extends AnyVal {
       
       inline def setInViewport(value: Boolean): Self = StObject.set(x, "inViewport", value.asInstanceOf[js.Any])
       

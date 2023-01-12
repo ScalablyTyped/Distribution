@@ -19,7 +19,8 @@ object PickExpoConfigUpdatesrunt {
     __obj.asInstanceOf[PickExpoConfigUpdatesrunt]
   }
   
-  extension [Self <: PickExpoConfigUpdatesrunt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickExpoConfigUpdatesrunt] (val x: Self) extends AnyVal {
     
     inline def setRuntimeVersion(value: String | Policy): Self = StObject.set(x, "runtimeVersion", value.asInstanceOf[js.Any])
     

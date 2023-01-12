@@ -34,7 +34,8 @@ object XUser {
     __obj.asInstanceOf[XUser]
   }
   
-  extension [Self <: XUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUser] (val x: Self) extends AnyVal {
     
     inline def setChangePassword(value: (String, String) => Unit): Self = StObject.set(x, "changePassword", js.Any.fromFunction2(value))
   }

@@ -216,7 +216,8 @@ object typesBaseMod {
       __obj.asInstanceOf[FilteringStyledOptions[Props, ForwardedProps]]
     }
     
-    extension [Self <: FilteringStyledOptions[?, ?], Props, ForwardedProps /* <: /* keyof Props */ String */](x: Self & (FilteringStyledOptions[Props, ForwardedProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilteringStyledOptions[?, ?], Props, ForwardedProps /* <: /* keyof Props */ String */] (val x: Self & (FilteringStyledOptions[Props, ForwardedProps])) extends AnyVal {
       
       inline def setShouldForwardProp(value: /* propName */ String => /* is ForwardedProps */ Boolean): Self = StObject.set(x, "shouldForwardProp", js.Any.fromFunction1(value))
       
@@ -534,7 +535,8 @@ object typesBaseMod {
       __obj.asInstanceOf[StyledOptions[Props]]
     }
     
-    extension [Self <: StyledOptions[?], Props](x: Self & StyledOptions[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledOptions[?], Props] (val x: Self & StyledOptions[Props]) extends AnyVal {
       
       inline def setShouldForwardProp(value: /* propName */ String => Boolean): Self = StObject.set(x, "shouldForwardProp", js.Any.fromFunction1(value))
       

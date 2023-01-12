@@ -94,7 +94,8 @@ object mod {
       __obj.asInstanceOf[DeepCyclicCopyOptions]
     }
     
-    extension [Self <: DeepCyclicCopyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeepCyclicCopyOptions] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: Set[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       

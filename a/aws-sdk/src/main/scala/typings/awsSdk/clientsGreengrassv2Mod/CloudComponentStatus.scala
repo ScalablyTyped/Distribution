@@ -38,7 +38,8 @@ object CloudComponentStatus {
     __obj.asInstanceOf[CloudComponentStatus]
   }
   
-  extension [Self <: CloudComponentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudComponentStatus] (val x: Self) extends AnyVal {
     
     inline def setComponentState(value: CloudComponentState): Self = StObject.set(x, "componentState", value.asInstanceOf[js.Any])
     

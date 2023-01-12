@@ -28,7 +28,8 @@ object SpectrumConfig {
     __obj.asInstanceOf[SpectrumConfig]
   }
   
-  extension [Self <: SpectrumConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpectrumConfig] (val x: Self) extends AnyVal {
     
     inline def setBandwidth(value: FrequencyBandwidth): Self = StObject.set(x, "bandwidth", value.asInstanceOf[js.Any])
     

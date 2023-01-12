@@ -113,7 +113,8 @@ object DescribeDomainResponse {
     __obj.asInstanceOf[DescribeDomainResponse]
   }
   
-  extension [Self <: DescribeDomainResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDomainResponse] (val x: Self) extends AnyVal {
     
     inline def setAppNetworkAccessType(value: AppNetworkAccessType): Self = StObject.set(x, "AppNetworkAccessType", value.asInstanceOf[js.Any])
     

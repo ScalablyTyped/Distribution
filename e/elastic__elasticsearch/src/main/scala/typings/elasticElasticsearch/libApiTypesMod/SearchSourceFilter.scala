@@ -21,7 +21,8 @@ object SearchSourceFilter {
     __obj.asInstanceOf[SearchSourceFilter]
   }
   
-  extension [Self <: SearchSourceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSourceFilter] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: Fields): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ListObjectsQuery {
     __obj.asInstanceOf[ListObjectsQuery]
   }
   
-  extension [Self <: ListObjectsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListObjectsQuery] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

@@ -163,7 +163,8 @@ object libInterfacesMod {
       __obj.asInstanceOf[IObjectPool[T]]
     }
     
-    extension [Self <: IObjectPool[?], T /* <: IObservableDisposable */](x: Self & IObjectPool[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObjectPool[?], T /* <: IObservableDisposable */] (val x: Self & IObjectPool[T]) extends AnyVal {
       
       inline def setAdded(value: ISignal[IObjectPool[T], T]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -242,7 +243,8 @@ object libInterfacesMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: IObservableDisposable */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: IObservableDisposable */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setConnector(value: IDataConnector[ReadonlyPartialJSONValue, ReadonlyPartialJSONValue, String, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
@@ -250,7 +252,8 @@ object libInterfacesMod {
       }
     }
     
-    extension [Self <: IRestorable[?, ?], T /* <: IObservableDisposable */, U](x: Self & (IRestorable[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRestorable[?, ?], T /* <: IObservableDisposable */, U] (val x: Self & (IRestorable[T, U])) extends AnyVal {
       
       inline def setRestore(value: IOptions[T] => js.Promise[U]): Self = StObject.set(x, "restore", js.Any.fromFunction1(value))
       
@@ -321,7 +324,8 @@ object libInterfacesMod {
         __obj.asInstanceOf[typings.jupyterlabStatedb.libInterfacesMod.IRestorer.IOptions[T]]
       }
       
-      extension [Self <: typings.jupyterlabStatedb.libInterfacesMod.IRestorer.IOptions[?], T /* <: IObservableDisposable */](x: Self & typings.jupyterlabStatedb.libInterfacesMod.IRestorer.IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.jupyterlabStatedb.libInterfacesMod.IRestorer.IOptions[?], T /* <: IObservableDisposable */] (val x: Self & typings.jupyterlabStatedb.libInterfacesMod.IRestorer.IOptions[T]) extends AnyVal {
         
         inline def setArgs(value: /* obj */ T => ReadonlyPartialJSONObject): Self = StObject.set(x, "args", js.Any.fromFunction1(value))
         
@@ -339,7 +343,8 @@ object libInterfacesMod {
       }
     }
     
-    extension [Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, Any] */, U /* <: IObservableDisposable */, V](x: Self & (IRestorer[T, U, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRestorer[?, ?, ?], T /* <: IRestorable[U, Any] */, U /* <: IObservableDisposable */, V] (val x: Self & (IRestorer[T, U, V])) extends AnyVal {
       
       inline def setRestore(value: (T, typings.jupyterlabStatedb.libInterfacesMod.IRestorable.IOptions[U]) => js.Promise[V]): Self = StObject.set(x, "restore", js.Any.fromFunction2(value))
       

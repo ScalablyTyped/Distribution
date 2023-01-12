@@ -38,7 +38,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setGetInput(value: () => Double | String): Self = StObject.set(x, "GetInput", js.Any.fromFunction0(value))
       
@@ -67,7 +68,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Letter]
     }
     
-    extension [Self <: Letter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Letter] (val x: Self) extends AnyVal {
       
       inline def setGetLetterRect(value: () => String): Self = StObject.set(x, "GetLetterRect", js.Any.fromFunction0(value))
       
@@ -179,7 +181,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[OCRPro]
     }
     
-    extension [Self <: OCRPro](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OCRPro] (val x: Self) extends AnyVal {
       
       inline def setDownload(
         value: (String, js.Function0[Unit], js.Function2[/* errorCode */ Double, /* errorString */ String, Unit]) => Unit
@@ -281,7 +284,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[OCRProResult]
     }
     
-    extension [Self <: OCRProResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OCRProResult] (val x: Self) extends AnyVal {
       
       inline def setGet(value: () => String): Self = StObject.set(x, "Get", js.Any.fromFunction0(value))
       
@@ -341,7 +345,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Page]
     }
     
-    extension [Self <: Page](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page] (val x: Self) extends AnyVal {
       
       inline def setGetLetterContent(value: Double => Letter): Self = StObject.set(x, "GetLetterContent", js.Any.fromFunction1(value))
       
@@ -370,7 +375,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Rect]
     }
     
-    extension [Self <: Rect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rect] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -410,7 +416,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Redaction]
     }
     
-    extension [Self <: Redaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redaction] (val x: Self) extends AnyVal {
       
       inline def setFindText(value: String): Self = StObject.set(x, "FindText", value.asInstanceOf[js.Any])
       
@@ -472,7 +479,8 @@ object addonDotOCRProMod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setLanguages(value: String): Self = StObject.set(x, "Languages", value.asInstanceOf[js.Any])
       

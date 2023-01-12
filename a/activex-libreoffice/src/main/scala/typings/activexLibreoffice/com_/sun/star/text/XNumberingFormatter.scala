@@ -35,7 +35,8 @@ object XNumberingFormatter {
     __obj.asInstanceOf[XNumberingFormatter]
   }
   
-  extension [Self <: XNumberingFormatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XNumberingFormatter] (val x: Self) extends AnyVal {
     
     inline def setMakeNumberingString(value: (SeqEquiv[PropertyValue], Locale) => String): Self = StObject.set(x, "makeNumberingString", js.Any.fromFunction2(value))
   }

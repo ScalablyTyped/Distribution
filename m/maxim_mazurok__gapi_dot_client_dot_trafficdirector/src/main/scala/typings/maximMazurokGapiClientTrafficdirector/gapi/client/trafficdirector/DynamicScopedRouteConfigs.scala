@@ -29,7 +29,8 @@ object DynamicScopedRouteConfigs {
     __obj.asInstanceOf[DynamicScopedRouteConfigs]
   }
   
-  extension [Self <: DynamicScopedRouteConfigs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicScopedRouteConfigs] (val x: Self) extends AnyVal {
     
     inline def setLastUpdated(value: String): Self = StObject.set(x, "lastUpdated", value.asInstanceOf[js.Any])
     

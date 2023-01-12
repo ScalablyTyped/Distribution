@@ -20,7 +20,8 @@ object SketchMSGradientStop {
     __obj.asInstanceOf[SketchMSGradientStop]
   }
   
-  extension [Self <: SketchMSGradientStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSGradientStop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: SketchMSColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

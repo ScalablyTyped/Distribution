@@ -21,7 +21,8 @@ object PaymentMethodChangeEventInit {
     __obj.asInstanceOf[PaymentMethodChangeEventInit]
   }
   
-  extension [Self <: PaymentMethodChangeEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentMethodChangeEventInit] (val x: Self) extends AnyVal {
     
     inline def setMethodDetails(value: Any): Self = StObject.set(x, "methodDetails", value.asInstanceOf[js.Any])
     

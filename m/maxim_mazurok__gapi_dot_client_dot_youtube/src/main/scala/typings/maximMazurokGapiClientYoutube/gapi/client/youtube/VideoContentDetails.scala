@@ -50,7 +50,8 @@ object VideoContentDetails {
     __obj.asInstanceOf[VideoContentDetails]
   }
   
-  extension [Self <: VideoContentDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoContentDetails] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
     

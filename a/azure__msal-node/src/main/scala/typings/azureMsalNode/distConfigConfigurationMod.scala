@@ -33,7 +33,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[CacheOptions]
     }
     
-    extension [Self <: CacheOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheOptions] (val x: Self) extends AnyVal {
       
       inline def setCachePlugin(value: ICachePlugin): Self = StObject.set(x, "cachePlugin", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: NodeAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[NodeAuthOptions]
     }
     
-    extension [Self <: NodeAuthOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeAuthOptions] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[NodeConfiguration]
     }
     
-    extension [Self <: NodeConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
       
       inline def setAuth(value: RequiredNodeAuthOptions): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -212,7 +216,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[NodeSystemOptions]
     }
     
-    extension [Self <: NodeSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setLoggerOptions(value: LoggerOptions): Self = StObject.set(x, "loggerOptions", value.asInstanceOf[js.Any])
       
@@ -239,7 +244,8 @@ object distConfigConfigurationMod {
       __obj.asInstanceOf[NodeTelemetryOptions]
     }
     
-    extension [Self <: NodeTelemetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeTelemetryOptions] (val x: Self) extends AnyVal {
       
       inline def setApplication(value: ApplicationTelemetry): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
       

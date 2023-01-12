@@ -36,7 +36,8 @@ object XummWebsocketBody {
     __obj.asInstanceOf[XummWebsocketBody]
   }
   
-  extension [Self <: XummWebsocketBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XummWebsocketBody] (val x: Self) extends AnyVal {
     
     inline def setCustom_meta(value: XummCustomMeta): Self = StObject.set(x, "custom_meta", value.asInstanceOf[js.Any])
     

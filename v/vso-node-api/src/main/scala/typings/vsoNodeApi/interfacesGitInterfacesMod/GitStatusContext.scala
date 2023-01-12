@@ -23,7 +23,8 @@ object GitStatusContext {
     __obj.asInstanceOf[GitStatusContext]
   }
   
-  extension [Self <: GitStatusContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitStatusContext] (val x: Self) extends AnyVal {
     
     inline def setGenre(value: String): Self = StObject.set(x, "genre", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Modern {
     __obj.asInstanceOf[Modern]
   }
   
-  extension [Self <: Modern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Modern] (val x: Self) extends AnyVal {
     
     inline def setModern(value: Boolean): Self = StObject.set(x, "modern", value.asInstanceOf[js.Any])
     

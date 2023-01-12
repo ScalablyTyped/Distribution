@@ -89,7 +89,8 @@ object typesSrcCoreChannelsMembersMod {
       __obj.asInstanceOf[Members]
     }
     
-    extension [Self <: Members](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Members] (val x: Self) extends AnyVal {
       
       inline def setAddMember(value: Any => Any): Self = StObject.set(x, "addMember", js.Any.fromFunction1(value))
       

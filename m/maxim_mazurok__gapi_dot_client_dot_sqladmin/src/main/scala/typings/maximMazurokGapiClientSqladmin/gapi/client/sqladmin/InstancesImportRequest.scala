@@ -16,7 +16,8 @@ object InstancesImportRequest {
     __obj.asInstanceOf[InstancesImportRequest]
   }
   
-  extension [Self <: InstancesImportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesImportRequest] (val x: Self) extends AnyVal {
     
     inline def setImportContext(value: ImportContext): Self = StObject.set(x, "importContext", value.asInstanceOf[js.Any])
     

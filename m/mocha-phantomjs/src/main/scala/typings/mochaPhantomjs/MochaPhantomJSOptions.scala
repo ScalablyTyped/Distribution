@@ -23,7 +23,8 @@ object MochaPhantomJSOptions {
     __obj.asInstanceOf[MochaPhantomJSOptions]
   }
   
-  extension [Self <: MochaPhantomJSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MochaPhantomJSOptions] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: js.Array[Any]): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

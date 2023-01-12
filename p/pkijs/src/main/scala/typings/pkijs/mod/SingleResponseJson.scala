@@ -23,7 +23,8 @@ object SingleResponseJson {
     __obj.asInstanceOf[SingleResponseJson]
   }
   
-  extension [Self <: SingleResponseJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingleResponseJson] (val x: Self) extends AnyVal {
     
     inline def setCertID(value: CertIDJson): Self = StObject.set(x, "certID", value.asInstanceOf[js.Any])
     

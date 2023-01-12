@@ -15,7 +15,8 @@ object PreserveExpressions {
     __obj.asInstanceOf[PreserveExpressions]
   }
   
-  extension [Self <: PreserveExpressions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreserveExpressions] (val x: Self) extends AnyVal {
     
     inline def setPreserveExpressions(value: Boolean): Self = StObject.set(x, "preserveExpressions", value.asInstanceOf[js.Any])
     

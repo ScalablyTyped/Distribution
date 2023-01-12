@@ -18,7 +18,8 @@ object RejectInvitationRequest {
     __obj.asInstanceOf[RejectInvitationRequest]
   }
   
-  extension [Self <: RejectInvitationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectInvitationRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
   }

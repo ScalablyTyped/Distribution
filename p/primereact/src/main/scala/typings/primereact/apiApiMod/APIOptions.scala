@@ -33,7 +33,8 @@ object APIOptions {
     __obj.asInstanceOf[APIOptions]
   }
   
-  extension [Self <: APIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendTo(value: AppendToType): Self = StObject.set(x, "appendTo", value.asInstanceOf[js.Any])
     

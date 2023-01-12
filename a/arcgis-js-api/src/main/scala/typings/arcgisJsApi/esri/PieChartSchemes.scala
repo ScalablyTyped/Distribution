@@ -46,7 +46,8 @@ object PieChartSchemes {
     __obj.asInstanceOf[PieChartSchemes]
   }
   
-  extension [Self <: PieChartSchemes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartSchemes] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

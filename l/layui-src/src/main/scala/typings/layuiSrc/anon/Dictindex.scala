@@ -47,7 +47,8 @@ object Dictindex {
     __obj.asInstanceOf[Dictindex]
   }
   
-  extension [Self <: Dictindex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictindex] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

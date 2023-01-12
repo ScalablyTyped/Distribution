@@ -18,7 +18,8 @@ object SetShowAdHighlightsRequest {
     __obj.asInstanceOf[SetShowAdHighlightsRequest]
   }
   
-  extension [Self <: SetShowAdHighlightsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetShowAdHighlightsRequest] (val x: Self) extends AnyVal {
     
     inline def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])
   }

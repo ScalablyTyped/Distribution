@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[subTitleType]
     }
     
-    extension [Self <: subTitleType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: subTitleType] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double | String): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

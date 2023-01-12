@@ -15,7 +15,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setToast(value: toastOptions => Unit): Self = StObject.set(x, "toast", js.Any.fromFunction1(value))
   }

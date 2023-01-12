@@ -18,7 +18,8 @@ object LambdaFunctionStartedEventAttributes {
     __obj.asInstanceOf[LambdaFunctionStartedEventAttributes]
   }
   
-  extension [Self <: LambdaFunctionStartedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LambdaFunctionStartedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setScheduledEventId(value: EventId): Self = StObject.set(x, "scheduledEventId", value.asInstanceOf[js.Any])
   }

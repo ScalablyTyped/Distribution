@@ -40,7 +40,8 @@ object distTypesUtilsDataTransferClipboardMod {
       __obj.asInstanceOf[ClipboardStubControlInstance]
     }
     
-    extension [Self <: ClipboardStubControlInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClipboardStubControlInstance] (val x: Self) extends AnyVal {
       
       inline def setDetachClipboardStub(value: () => Unit): Self = StObject.set(x, "detachClipboardStub", js.Any.fromFunction0(value))
       

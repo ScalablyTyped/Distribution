@@ -71,7 +71,8 @@ object IgGridFeatureChooserMethods {
     __obj.asInstanceOf[IgGridFeatureChooserMethods]
   }
   
-  extension [Self <: IgGridFeatureChooserMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridFeatureChooserMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

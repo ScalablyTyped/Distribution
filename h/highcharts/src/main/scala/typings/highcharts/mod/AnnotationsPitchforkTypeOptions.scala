@@ -42,7 +42,8 @@ object AnnotationsPitchforkTypeOptions {
     __obj.asInstanceOf[AnnotationsPitchforkTypeOptions]
   }
   
-  extension [Self <: AnnotationsPitchforkTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsPitchforkTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setInnerBackground(value: AnnotationsPitchforkTypeInnerBackgroundOptions): Self = StObject.set(x, "innerBackground", value.asInstanceOf[js.Any])
     

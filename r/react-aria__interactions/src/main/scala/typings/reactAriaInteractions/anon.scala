@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[IsTextInput]
     }
     
-    extension [Self <: IsTextInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsTextInput] (val x: Self) extends AnyVal {
       
       inline def setIsTextInput(value: Boolean): Self = StObject.set(x, "isTextInput", value.asInstanceOf[js.Any])
       

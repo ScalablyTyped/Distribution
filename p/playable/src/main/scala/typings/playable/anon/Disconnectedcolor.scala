@@ -17,7 +17,8 @@ object Disconnectedcolor {
     __obj.asInstanceOf[Disconnectedcolor]
   }
   
-  extension [Self <: Disconnectedcolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disconnectedcolor] (val x: Self) extends AnyVal {
     
     inline def `set--disconnected-color`(value: IThemeConfig => String): Self = StObject.set(x, "--disconnected-color", js.Any.fromFunction1(value))
   }

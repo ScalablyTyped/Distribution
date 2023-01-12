@@ -23,7 +23,8 @@ object FleetError {
     __obj.asInstanceOf[FleetError]
   }
   
-  extension [Self <: FleetError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: FleetErrorCode): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

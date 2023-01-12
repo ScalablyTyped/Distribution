@@ -23,7 +23,8 @@ object DNSSECStatus {
     __obj.asInstanceOf[DNSSECStatus]
   }
   
-  extension [Self <: DNSSECStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DNSSECStatus] (val x: Self) extends AnyVal {
     
     inline def setServeSignature(value: ServeSignature): Self = StObject.set(x, "ServeSignature", value.asInstanceOf[js.Any])
     

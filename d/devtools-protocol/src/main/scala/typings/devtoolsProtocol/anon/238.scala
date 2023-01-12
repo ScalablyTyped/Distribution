@@ -18,7 +18,8 @@ object `238` {
     __obj.asInstanceOf[`238`]
   }
   
-  extension [Self <: `238`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `238`] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[ContinueWithAuthRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LangReq {
     __obj.asInstanceOf[LangReq]
   }
   
-  extension [Self <: LangReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LangReq] (val x: Self) extends AnyVal {
     
     inline def setLang(value: String): Self = StObject.set(x, "lang", value.asInstanceOf[js.Any])
     

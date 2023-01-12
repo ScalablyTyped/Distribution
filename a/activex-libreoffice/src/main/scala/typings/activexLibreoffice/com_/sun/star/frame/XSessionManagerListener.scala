@@ -59,7 +59,8 @@ object XSessionManagerListener {
     __obj.asInstanceOf[XSessionManagerListener]
   }
   
-  extension [Self <: XSessionManagerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSessionManagerListener] (val x: Self) extends AnyVal {
     
     inline def setApproveInteraction(value: Boolean => Unit): Self = StObject.set(x, "approveInteraction", js.Any.fromFunction1(value))
     

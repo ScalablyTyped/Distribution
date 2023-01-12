@@ -165,7 +165,8 @@ object mod {
       __obj.asInstanceOf[EditorProps]
     }
     
-    extension [Self <: EditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditorProps] (val x: Self) extends AnyVal {
       
       inline def setAriaActiveDescendantID(value: String): Self = StObject.set(x, "ariaActiveDescendantID", value.asInstanceOf[js.Any])
       

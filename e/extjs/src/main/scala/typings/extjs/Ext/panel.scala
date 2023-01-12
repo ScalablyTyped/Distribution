@@ -134,7 +134,8 @@ object panel {
       __obj.asInstanceOf[IAbstractPanel]
     }
     
-    extension [Self <: IAbstractPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractPanel] (val x: Self) extends AnyVal {
       
       inline def setAddBodyCls(value: /* cls */ js.UndefOr[java.lang.String] => typings.extjs.Ext.panel.IPanel): Self = StObject.set(x, "addBodyCls", js.Any.fromFunction1(value))
       
@@ -242,7 +243,8 @@ object panel {
       __obj.asInstanceOf[IDD]
     }
     
-    extension [Self <: IDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDD] (val x: Self) extends AnyVal {
       
       inline def setGetDragEl(value: /* e */ js.UndefOr[Any] => HTMLElement): Self = StObject.set(x, "getDragEl", js.Any.fromFunction1(value))
       
@@ -335,7 +337,8 @@ object panel {
       __obj.asInstanceOf[IHeader]
     }
     
-    extension [Self <: IHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHeader] (val x: Self) extends AnyVal {
       
       inline def setAddTool(value: /* tool */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
       
@@ -647,7 +650,8 @@ object panel {
       __obj.asInstanceOf[typings.extjs.Ext.panel.IPanel]
     }
     
-    extension [Self <: typings.extjs.Ext.panel.IPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.panel.IPanel] (val x: Self) extends AnyVal {
       
       inline def setAddTool(value: /* tools */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
       
@@ -938,7 +942,8 @@ object panel {
       __obj.asInstanceOf[IProxy]
     }
     
-    extension [Self <: IProxy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProxy] (val x: Self) extends AnyVal {
       
       inline def setGetEl(value: () => IElement): Self = StObject.set(x, "getEl", js.Any.fromFunction0(value))
       
@@ -1135,7 +1140,8 @@ object panel {
       __obj.asInstanceOf[ITable]
     }
     
-    extension [Self <: ITable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITable] (val x: Self) extends AnyVal {
       
       inline def setAfterCollapse(value: () => Unit): Self = StObject.set(x, "afterCollapse", js.Any.fromFunction0(value))
       
@@ -1359,7 +1365,8 @@ object panel {
       __obj.asInstanceOf[ITool]
     }
     
-    extension [Self <: ITool](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITool] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: Any): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       

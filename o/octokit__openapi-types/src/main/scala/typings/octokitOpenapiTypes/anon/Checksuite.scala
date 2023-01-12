@@ -100,7 +100,8 @@ object Checksuite {
     __obj.asInstanceOf[Checksuite]
   }
   
-  extension [Self <: Checksuite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checksuite] (val x: Self) extends AnyVal {
     
     inline def setApp(value: Externalurl): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

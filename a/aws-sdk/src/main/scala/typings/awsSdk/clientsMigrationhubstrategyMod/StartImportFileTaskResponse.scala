@@ -18,7 +18,8 @@ object StartImportFileTaskResponse {
     __obj.asInstanceOf[StartImportFileTaskResponse]
   }
   
-  extension [Self <: StartImportFileTaskResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportFileTaskResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

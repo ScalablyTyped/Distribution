@@ -22,7 +22,8 @@ object BaseAttributesExtensionObject {
     __obj.asInstanceOf[BaseAttributesExtensionObject]
   }
   
-  extension [Self <: BaseAttributesExtensionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAttributesExtensionObject] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

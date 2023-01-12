@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsEaseInCubicMod extends Shor
       __obj.asInstanceOf[EaseInCubicProps]
     }
     
-    extension [Self <: EaseInCubicProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EaseInCubicProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

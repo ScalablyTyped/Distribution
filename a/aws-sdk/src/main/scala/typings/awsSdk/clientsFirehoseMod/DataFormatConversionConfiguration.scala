@@ -33,7 +33,8 @@ object DataFormatConversionConfiguration {
     __obj.asInstanceOf[DataFormatConversionConfiguration]
   }
   
-  extension [Self <: DataFormatConversionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFormatConversionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: BooleanObject): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

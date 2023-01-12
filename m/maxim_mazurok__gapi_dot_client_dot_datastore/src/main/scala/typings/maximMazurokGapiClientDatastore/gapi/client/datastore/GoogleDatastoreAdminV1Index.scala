@@ -31,7 +31,8 @@ object GoogleDatastoreAdminV1Index {
     __obj.asInstanceOf[GoogleDatastoreAdminV1Index]
   }
   
-  extension [Self <: GoogleDatastoreAdminV1Index](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDatastoreAdminV1Index] (val x: Self) extends AnyVal {
     
     inline def setAncestor(value: String): Self = StObject.set(x, "ancestor", value.asInstanceOf[js.Any])
     

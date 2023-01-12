@@ -28,7 +28,8 @@ object ClusterPendingUpdates {
     __obj.asInstanceOf[ClusterPendingUpdates]
   }
   
-  extension [Self <: ClusterPendingUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterPendingUpdates] (val x: Self) extends AnyVal {
     
     inline def setACLs(value: ACLsUpdateStatus): Self = StObject.set(x, "ACLs", value.asInstanceOf[js.Any])
     

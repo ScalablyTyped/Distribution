@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[SearchBarProps]
     }
     
-    extension [Self <: SearchBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchBarProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowBackButton(value: Boolean): Self = StObject.set(x, "alwaysShowBackButton", value.asInstanceOf[js.Any])
       

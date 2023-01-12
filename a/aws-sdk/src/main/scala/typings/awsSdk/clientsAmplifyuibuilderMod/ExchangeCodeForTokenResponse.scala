@@ -28,7 +28,8 @@ object ExchangeCodeForTokenResponse {
     __obj.asInstanceOf[ExchangeCodeForTokenResponse]
   }
   
-  extension [Self <: ExchangeCodeForTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeCodeForTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: SensitiveString): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object EnableRequest {
     __obj.asInstanceOf[EnableRequest]
   }
   
-  extension [Self <: EnableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
     
     inline def setHandleAuthRequests(value: Boolean): Self = StObject.set(x, "handleAuthRequests", value.asInstanceOf[js.Any])
     

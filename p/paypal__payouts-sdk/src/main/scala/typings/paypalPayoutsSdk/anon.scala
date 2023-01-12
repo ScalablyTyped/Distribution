@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[Alternatefullname]
     }
     
-    extension [Self <: Alternatefullname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alternatefullname] (val x: Self) extends AnyVal {
       
       inline def setAlternate_full_name(value: String): Self = StObject.set(x, "alternate_full_name", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Countrycode]
     }
     
-    extension [Self <: Countrycode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Countrycode] (val x: Self) extends AnyVal {
       
       inline def setCountry_code(value: String): Self = StObject.set(x, "country_code", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -120,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Phone]
     }
     
-    extension [Self <: Phone](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Phone] (val x: Self) extends AnyVal {
       
       inline def setPhone(value: Countrycode): Self = StObject.set(x, "phone", value.asInstanceOf[js.Any])
       

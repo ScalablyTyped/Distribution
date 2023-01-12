@@ -33,7 +33,8 @@ object JobTemplateSummary {
     __obj.asInstanceOf[JobTemplateSummary]
   }
   
-  extension [Self <: JobTemplateSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplateSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object LegendTitleOptions {
     __obj.asInstanceOf[LegendTitleOptions]
   }
   
-  extension [Self <: LegendTitleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendTitleOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CSSObject): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

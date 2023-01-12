@@ -33,7 +33,8 @@ object GraphRequestConfig {
     __obj.asInstanceOf[GraphRequestConfig]
   }
   
-  extension [Self <: GraphRequestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphRequestConfig] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

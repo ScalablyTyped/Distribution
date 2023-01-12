@@ -48,7 +48,8 @@ object Commit {
     __obj.asInstanceOf[Commit]
   }
   
-  extension [Self <: Commit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Commit] (val x: Self) extends AnyVal {
     
     inline def setAdditionalData(value: AdditionalData): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     

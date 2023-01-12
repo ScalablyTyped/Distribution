@@ -28,7 +28,8 @@ object TestMessageLogDetails {
     __obj.asInstanceOf[TestMessageLogDetails]
   }
   
-  extension [Self <: TestMessageLogDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestMessageLogDetails] (val x: Self) extends AnyVal {
     
     inline def setDateCreated(value: js.Date): Self = StObject.set(x, "dateCreated", value.asInstanceOf[js.Any])
     

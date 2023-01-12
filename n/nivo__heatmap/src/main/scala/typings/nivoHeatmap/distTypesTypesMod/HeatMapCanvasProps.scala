@@ -159,7 +159,8 @@ object HeatMapCanvasProps {
     __obj.asInstanceOf[HeatMapCanvasProps[Datum, ExtraProps]]
   }
   
-  extension [Self <: HeatMapCanvasProps[?, ?], Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */](x: Self & (HeatMapCanvasProps[Datum, ExtraProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatMapCanvasProps[?, ?], Datum /* <: HeatMapDatum */, ExtraProps /* <: js.Object */] (val x: Self & (HeatMapCanvasProps[Datum, ExtraProps])) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

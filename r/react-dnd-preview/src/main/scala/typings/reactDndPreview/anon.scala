@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[`0`[T, El]]
     }
     
-    extension [Self <: `0`[?, ?], T, El /* <: Element */](x: Self & (`0`[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?, ?], T, El /* <: Element */] (val x: Self & (`0`[T, El])) extends AnyVal {
       
       inline def setChildren(value: (PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Children[T, El]]
     }
     
-    extension [Self <: Children[?, ?], T, El /* <: Element */](x: Self & (Children[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children[?, ?], T, El /* <: Element */] (val x: Self & (Children[T, El])) extends AnyVal {
       
       inline def setChildren(value: (typings.reactDndPreview.distCjsPreviewMod.PreviewGenerator[T, El]) | ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -75,7 +77,8 @@ object anon {
       __obj.asInstanceOf[Display]
     }
     
-    extension [Self <: Display](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Display] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: `false`): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     }
@@ -96,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Generator[T, El]]
     }
     
-    extension [Self <: Generator[?, ?], T, El /* <: Element */](x: Self & (Generator[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Generator[?, ?], T, El /* <: Element */] (val x: Self & (Generator[T, El])) extends AnyVal {
       
       inline def setGenerator(
         value: /* state */ typings.reactDndPreview.distCjsContextMod.PreviewState[T, El] => typings.react.mod.global.JSX.Element
@@ -117,7 +121,8 @@ object anon {
       __obj.asInstanceOf[GeneratorPreviewGenerator[T, El]]
     }
     
-    extension [Self <: GeneratorPreviewGenerator[?, ?], T, El /* <: Element */](x: Self & (GeneratorPreviewGenerator[T, El])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneratorPreviewGenerator[?, ?], T, El /* <: Element */] (val x: Self & (GeneratorPreviewGenerator[T, El])) extends AnyVal {
       
       inline def setGenerator(value: /* state */ PreviewState[T, El] => typings.react.mod.global.JSX.Element): Self = StObject.set(x, "generator", js.Any.fromFunction1(value))
     }

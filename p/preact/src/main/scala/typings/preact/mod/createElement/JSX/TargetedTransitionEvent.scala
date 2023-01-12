@@ -101,7 +101,8 @@ object TargetedTransitionEvent {
     __obj.asInstanceOf[TargetedTransitionEvent[Target]]
   }
   
-  extension [Self <: TargetedTransitionEvent[?], Target /* <: EventTarget */](x: Self & TargetedTransitionEvent[Target]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetedTransitionEvent[?], Target /* <: EventTarget */] (val x: Self & TargetedTransitionEvent[Target]) extends AnyVal {
     
     inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
     

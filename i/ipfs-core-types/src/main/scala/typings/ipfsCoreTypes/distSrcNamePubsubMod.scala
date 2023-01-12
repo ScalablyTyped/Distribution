@@ -62,7 +62,8 @@ object distSrcNamePubsubMod {
       __obj.asInstanceOf[PubsubCancelResult]
     }
     
-    extension [Self <: PubsubCancelResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubsubCancelResult] (val x: Self) extends AnyVal {
       
       inline def setCanceled(value: Boolean): Self = StObject.set(x, "canceled", value.asInstanceOf[js.Any])
     }
@@ -79,7 +80,8 @@ object distSrcNamePubsubMod {
       __obj.asInstanceOf[PubsubStateResult]
     }
     
-    extension [Self <: PubsubStateResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PubsubStateResult] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     }

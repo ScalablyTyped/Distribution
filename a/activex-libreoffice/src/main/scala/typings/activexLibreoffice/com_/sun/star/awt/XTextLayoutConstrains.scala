@@ -30,7 +30,8 @@ object XTextLayoutConstrains {
     __obj.asInstanceOf[XTextLayoutConstrains]
   }
   
-  extension [Self <: XTextLayoutConstrains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextLayoutConstrains] (val x: Self) extends AnyVal {
     
     inline def setGetColumnsAndLines(value: (js.Array[Double], js.Array[Double]) => Unit): Self = StObject.set(x, "getColumnsAndLines", js.Any.fromFunction2(value))
     

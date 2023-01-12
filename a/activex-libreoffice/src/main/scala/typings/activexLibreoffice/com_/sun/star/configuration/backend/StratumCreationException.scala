@@ -32,7 +32,8 @@ object StratumCreationException {
     __obj.asInstanceOf[StratumCreationException]
   }
   
-  extension [Self <: StratumCreationException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StratumCreationException] (val x: Self) extends AnyVal {
     
     inline def setStratumData(value: String): Self = StObject.set(x, "StratumData", value.asInstanceOf[js.Any])
     

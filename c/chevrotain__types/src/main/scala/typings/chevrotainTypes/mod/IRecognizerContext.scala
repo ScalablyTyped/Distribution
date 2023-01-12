@@ -25,7 +25,8 @@ object IRecognizerContext {
     __obj.asInstanceOf[IRecognizerContext]
   }
   
-  extension [Self <: IRecognizerContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecognizerContext] (val x: Self) extends AnyVal {
     
     inline def setRuleOccurrenceStack(value: js.Array[Double]): Self = StObject.set(x, "ruleOccurrenceStack", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnTypeResolveNodeResponse {
     __obj.asInstanceOf[ReturnTypeResolveNodeResponse]
   }
   
-  extension [Self <: ReturnTypeResolveNodeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeResolveNodeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[ResolveNodeRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

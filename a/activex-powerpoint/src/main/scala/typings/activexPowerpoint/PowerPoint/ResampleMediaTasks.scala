@@ -37,7 +37,8 @@ object ResampleMediaTasks {
     __obj.asInstanceOf[ResampleMediaTasks]
   }
   
-  extension [Self <: ResampleMediaTasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResampleMediaTasks] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "Cancel", js.Any.fromFunction0(value))
     

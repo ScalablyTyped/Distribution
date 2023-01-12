@@ -35,7 +35,8 @@ object DiagramConnectionDefaults {
     __obj.asInstanceOf[DiagramConnectionDefaults]
   }
   
-  extension [Self <: DiagramConnectionDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramConnectionDefaults] (val x: Self) extends AnyVal {
     
     inline def setContent(value: DiagramConnectionDefaultsContent): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

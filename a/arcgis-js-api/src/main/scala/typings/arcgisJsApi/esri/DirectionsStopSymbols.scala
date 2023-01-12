@@ -48,7 +48,8 @@ object DirectionsStopSymbols {
     __obj.asInstanceOf[DirectionsStopSymbols]
   }
   
-  extension [Self <: DirectionsStopSymbols](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsStopSymbols] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: Symbol): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

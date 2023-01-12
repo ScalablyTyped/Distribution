@@ -19,7 +19,8 @@ object BoundingPoly {
     __obj.asInstanceOf[BoundingPoly]
   }
   
-  extension [Self <: BoundingPoly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingPoly] (val x: Self) extends AnyVal {
     
     inline def setNormalizedVertices(value: js.Array[NormalizedVertex]): Self = StObject.set(x, "normalizedVertices", value.asInstanceOf[js.Any])
     

@@ -102,7 +102,8 @@ object DataPilotSourceDimension {
     __obj.asInstanceOf[DataPilotSourceDimension]
   }
   
-  extension [Self <: DataPilotSourceDimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotSourceDimension] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: SafeArray[TableFilterField]): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

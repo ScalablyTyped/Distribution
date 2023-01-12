@@ -18,7 +18,8 @@ object WarnOnNgModelWithFormControl {
     __obj.asInstanceOf[WarnOnNgModelWithFormControl]
   }
   
-  extension [Self <: WarnOnNgModelWithFormControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarnOnNgModelWithFormControl] (val x: Self) extends AnyVal {
     
     inline def setWarnOnNgModelWithFormControl(value: never | once | always): Self = StObject.set(x, "warnOnNgModelWithFormControl", value.asInstanceOf[js.Any])
   }

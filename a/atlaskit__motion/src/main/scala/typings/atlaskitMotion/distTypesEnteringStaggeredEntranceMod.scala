@@ -67,7 +67,8 @@ object distTypesEnteringStaggeredEntranceMod {
       __obj.asInstanceOf[StaggeredEntranceProps]
     }
     
-    extension [Self <: StaggeredEntranceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaggeredEntranceProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element | js.Array[Element]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

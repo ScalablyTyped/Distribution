@@ -19,7 +19,8 @@ object IContextKey {
     __obj.asInstanceOf[IContextKey[T]]
   }
   
-  extension [Self <: IContextKey[?], T /* <: ContextKeyValue */](x: Self & IContextKey[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContextKey[?], T /* <: ContextKeyValue */] (val x: Self & IContextKey[T]) extends AnyVal {
     
     inline def setGet(value: () => js.UndefOr[T]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

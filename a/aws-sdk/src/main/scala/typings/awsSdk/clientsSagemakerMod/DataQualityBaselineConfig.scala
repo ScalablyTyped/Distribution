@@ -22,7 +22,8 @@ object DataQualityBaselineConfig {
     __obj.asInstanceOf[DataQualityBaselineConfig]
   }
   
-  extension [Self <: DataQualityBaselineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataQualityBaselineConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseliningJobName(value: ProcessingJobName): Self = StObject.set(x, "BaseliningJobName", value.asInstanceOf[js.Any])
     

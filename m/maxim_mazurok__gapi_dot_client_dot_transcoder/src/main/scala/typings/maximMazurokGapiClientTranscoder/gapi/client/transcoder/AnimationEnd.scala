@@ -16,7 +16,8 @@ object AnimationEnd {
     __obj.asInstanceOf[AnimationEnd]
   }
   
-  extension [Self <: AnimationEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEnd] (val x: Self) extends AnyVal {
     
     inline def setStartTimeOffset(value: String): Self = StObject.set(x, "startTimeOffset", value.asInstanceOf[js.Any])
     

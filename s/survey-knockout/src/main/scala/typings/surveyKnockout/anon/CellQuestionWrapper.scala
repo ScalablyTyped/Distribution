@@ -77,7 +77,8 @@ object CellQuestionWrapper {
     __obj.asInstanceOf[CellQuestionWrapper]
   }
   
-  extension [Self <: CellQuestionWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellQuestionWrapper] (val x: Self) extends AnyVal {
     
     inline def setActionsCell(value: String): Self = StObject.set(x, "actionsCell", value.asInstanceOf[js.Any])
     

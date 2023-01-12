@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[BaseLine]
     }
     
-    extension [Self <: BaseLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLine] (val x: Self) extends AnyVal {
       
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[GoogleFont]
     }
     
-    extension [Self <: GoogleFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoogleFont] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object mod {
       __obj.asInstanceOf[Typography]
     }
     
-    extension [Self <: Typography](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typography] (val x: Self) extends AnyVal {
       
       inline def setAdjustFontSizeTo(value: /* value */ js.UndefOr[Double | String] => js.Object): Self = StObject.set(x, "adjustFontSizeTo", js.Any.fromFunction1(value))
       
@@ -232,7 +235,8 @@ object mod {
       __obj.asInstanceOf[TypographyOptions]
     }
     
-    extension [Self <: TypographyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       

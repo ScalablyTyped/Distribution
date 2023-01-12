@@ -28,7 +28,8 @@ object ConfigureAgentRequest {
     __obj.asInstanceOf[ConfigureAgentRequest]
   }
   
-  extension [Self <: ConfigureAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setFleetInstanceId(value: FleetInstanceId): Self = StObject.set(x, "fleetInstanceId", value.asInstanceOf[js.Any])
     

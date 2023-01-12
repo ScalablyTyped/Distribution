@@ -23,7 +23,8 @@ object PlotVbpVolumeDivisionStylesOptions {
     __obj.asInstanceOf[PlotVbpVolumeDivisionStylesOptions]
   }
   
-  extension [Self <: PlotVbpVolumeDivisionStylesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVbpVolumeDivisionStylesOptions] (val x: Self) extends AnyVal {
     
     inline def setNegativeColor(value: ColorString): Self = StObject.set(x, "negativeColor", value.asInstanceOf[js.Any])
     

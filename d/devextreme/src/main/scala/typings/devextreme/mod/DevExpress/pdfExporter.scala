@@ -101,7 +101,8 @@ object pdfExporter {
       __obj.asInstanceOf[Cell]
     }
     
-    extension [Self <: Cell](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cell] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -234,7 +235,8 @@ object pdfExporter {
       __obj.asInstanceOf[PdfExportDataGridProps]
     }
     
-    extension [Self <: PdfExportDataGridProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfExportDataGridProps] (val x: Self) extends AnyVal {
       
       inline def setColumnWidths(value: js.Array[Double]): Self = StObject.set(x, "columnWidths", value.asInstanceOf[js.Any])
       
@@ -347,7 +349,8 @@ object pdfExporter {
       __obj.asInstanceOf[PdfExportGanttProps]
     }
     
-    extension [Self <: PdfExportGanttProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PdfExportGanttProps] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: dxGantt): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

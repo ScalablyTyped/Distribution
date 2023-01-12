@@ -47,7 +47,8 @@ object XDOMImplementation {
     __obj.asInstanceOf[XDOMImplementation]
   }
   
-  extension [Self <: XDOMImplementation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDOMImplementation] (val x: Self) extends AnyVal {
     
     inline def setCreateDocument(value: (String, String, XDocumentType) => XDocument): Self = StObject.set(x, "createDocument", js.Any.fromFunction3(value))
     

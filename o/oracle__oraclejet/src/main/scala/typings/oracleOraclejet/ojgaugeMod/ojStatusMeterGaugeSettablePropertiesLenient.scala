@@ -95,7 +95,8 @@ object ojStatusMeterGaugeSettablePropertiesLenient {
     __obj.asInstanceOf[ojStatusMeterGaugeSettablePropertiesLenient]
   }
   
-  extension [Self <: ojStatusMeterGaugeSettablePropertiesLenient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojStatusMeterGaugeSettablePropertiesLenient] (val x: Self) extends AnyVal {
     
     inline def setAngleExtent(value: Double): Self = StObject.set(x, "angleExtent", value.asInstanceOf[js.Any])
     

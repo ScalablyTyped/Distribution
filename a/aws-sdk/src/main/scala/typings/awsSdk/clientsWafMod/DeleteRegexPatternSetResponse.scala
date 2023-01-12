@@ -18,7 +18,8 @@ object DeleteRegexPatternSetResponse {
     __obj.asInstanceOf[DeleteRegexPatternSetResponse]
   }
   
-  extension [Self <: DeleteRegexPatternSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRegexPatternSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object taskrunner {
       __obj.asInstanceOf[ITask]
     }
     
-    extension [Self <: ITask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITask] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       

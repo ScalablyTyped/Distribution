@@ -22,7 +22,8 @@ object DistributionCut {
     __obj.asInstanceOf[DistributionCut]
   }
   
-  extension [Self <: DistributionCut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionCut] (val x: Self) extends AnyVal {
     
     inline def setDistributionFilter(value: String): Self = StObject.set(x, "distributionFilter", value.asInstanceOf[js.Any])
     

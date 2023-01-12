@@ -24,7 +24,8 @@ object IcheckJsApi {
     __obj.asInstanceOf[IcheckJsApi]
   }
   
-  extension [Self <: IcheckJsApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IcheckJsApi] (val x: Self) extends AnyVal {
     
     inline def setJsApiList(value: jsApiList): Self = StObject.set(x, "jsApiList", value.asInstanceOf[js.Any])
     

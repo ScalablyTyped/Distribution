@@ -36,7 +36,8 @@ object IArrow {
     __obj.asInstanceOf[IArrow]
   }
   
-  extension [Self <: IArrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArrow] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

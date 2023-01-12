@@ -23,7 +23,8 @@ object typesInvalidRequestContentExceptionMod {
       __obj.asInstanceOf[InvalidRequestContentException]
     }
     
-    extension [Self <: InvalidRequestContentException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRequestContentException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.InvalidRequestContentException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -48,7 +49,8 @@ object typesInvalidRequestContentExceptionMod {
       __obj.asInstanceOf[InvalidRequestContentExceptionDetails]
     }
     
-    extension [Self <: InvalidRequestContentExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidRequestContentExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

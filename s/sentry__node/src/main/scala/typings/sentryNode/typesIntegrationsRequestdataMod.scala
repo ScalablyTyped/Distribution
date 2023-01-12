@@ -102,7 +102,8 @@ object typesIntegrationsRequestdataMod {
       __obj.asInstanceOf[RequestDataOptions]
     }
     
-    extension [Self <: RequestDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestDataOptions] (val x: Self) extends AnyVal {
       
       inline def setAddRequestData(
         value: (/* event */ Event, /* req */ PolymorphicRequest, /* options */ js.UndefOr[AddRequestDataToEventOptions]) => Event

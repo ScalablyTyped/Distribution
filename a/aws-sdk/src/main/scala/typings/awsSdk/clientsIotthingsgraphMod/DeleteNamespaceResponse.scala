@@ -23,7 +23,8 @@ object DeleteNamespaceResponse {
     __obj.asInstanceOf[DeleteNamespaceResponse]
   }
   
-  extension [Self <: DeleteNamespaceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteNamespaceResponse] (val x: Self) extends AnyVal {
     
     inline def setNamespaceArn(value: Arn): Self = StObject.set(x, "namespaceArn", value.asInstanceOf[js.Any])
     

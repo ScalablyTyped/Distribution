@@ -23,7 +23,8 @@ object CustomerProfilesDestinationProperties {
     __obj.asInstanceOf[CustomerProfilesDestinationProperties]
   }
   
-  extension [Self <: CustomerProfilesDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerProfilesDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
     

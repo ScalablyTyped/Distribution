@@ -38,7 +38,8 @@ object RepositoryTrigger {
     __obj.asInstanceOf[RepositoryTrigger]
   }
   
-  extension [Self <: RepositoryTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepositoryTrigger] (val x: Self) extends AnyVal {
     
     inline def setBranches(value: BranchNameList): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
     

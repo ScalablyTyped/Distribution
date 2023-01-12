@@ -55,7 +55,8 @@ object esComponentsErrorBlockMod {
       __obj.asInstanceOf[ImageRecord]
     }
     
-    extension [Self <: ImageRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageRecord] (val x: Self) extends AnyVal {
       
       inline def setBusy(value: String | ReactNode): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
       

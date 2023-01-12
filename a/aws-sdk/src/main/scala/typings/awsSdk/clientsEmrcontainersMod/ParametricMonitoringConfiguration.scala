@@ -28,7 +28,8 @@ object ParametricMonitoringConfiguration {
     __obj.asInstanceOf[ParametricMonitoringConfiguration]
   }
   
-  extension [Self <: ParametricMonitoringConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametricMonitoringConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchMonitoringConfiguration(value: ParametricCloudWatchMonitoringConfiguration): Self = StObject.set(x, "cloudWatchMonitoringConfiguration", value.asInstanceOf[js.Any])
     

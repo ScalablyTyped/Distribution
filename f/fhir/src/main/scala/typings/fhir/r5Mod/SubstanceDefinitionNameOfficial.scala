@@ -32,7 +32,8 @@ object SubstanceDefinitionNameOfficial {
     __obj.asInstanceOf[SubstanceDefinitionNameOfficial]
   }
   
-  extension [Self <: SubstanceDefinitionNameOfficial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionNameOfficial] (val x: Self) extends AnyVal {
     
     inline def setAuthority(value: CodeableConcept): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
     

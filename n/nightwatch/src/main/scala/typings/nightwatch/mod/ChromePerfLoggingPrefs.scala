@@ -36,7 +36,8 @@ object ChromePerfLoggingPrefs {
     __obj.asInstanceOf[ChromePerfLoggingPrefs]
   }
   
-  extension [Self <: ChromePerfLoggingPrefs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChromePerfLoggingPrefs] (val x: Self) extends AnyVal {
     
     inline def setBufferUsageReportingInterval(value: Double): Self = StObject.set(x, "bufferUsageReportingInterval", value.asInstanceOf[js.Any])
     

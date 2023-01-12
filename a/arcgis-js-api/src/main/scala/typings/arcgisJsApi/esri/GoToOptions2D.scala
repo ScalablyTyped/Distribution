@@ -47,7 +47,8 @@ object GoToOptions2D {
     __obj.asInstanceOf[GoToOptions2D]
   }
   
-  extension [Self <: GoToOptions2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoToOptions2D] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object StorageStream {
     __obj.asInstanceOf[StorageStream]
   }
   
-  extension [Self <: StorageStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageStream] (val x: Self) extends AnyVal {
     
     inline def setIsCompressed(value: Boolean): Self = StObject.set(x, "IsCompressed", value.asInstanceOf[js.Any])
     

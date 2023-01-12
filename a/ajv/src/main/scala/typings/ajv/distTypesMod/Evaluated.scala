@@ -21,7 +21,8 @@ object Evaluated {
     __obj.asInstanceOf[Evaluated]
   }
   
-  extension [Self <: Evaluated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Evaluated] (val x: Self) extends AnyVal {
     
     inline def setDynamicItems(value: Boolean): Self = StObject.set(x, "dynamicItems", value.asInstanceOf[js.Any])
     

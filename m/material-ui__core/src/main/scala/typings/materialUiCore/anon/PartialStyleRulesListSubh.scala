@@ -41,7 +41,8 @@ object PartialStyleRulesListSubh {
     __obj.asInstanceOf[PartialStyleRulesListSubh]
   }
   
-  extension [Self <: PartialStyleRulesListSubh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesListSubh] (val x: Self) extends AnyVal {
     
     inline def setColorInherit(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

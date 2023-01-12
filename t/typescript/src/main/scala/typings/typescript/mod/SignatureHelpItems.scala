@@ -32,7 +32,8 @@ object SignatureHelpItems {
     __obj.asInstanceOf[SignatureHelpItems]
   }
   
-  extension [Self <: SignatureHelpItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureHelpItems] (val x: Self) extends AnyVal {
     
     inline def setApplicableSpan(value: TextSpan): Self = StObject.set(x, "applicableSpan", value.asInstanceOf[js.Any])
     

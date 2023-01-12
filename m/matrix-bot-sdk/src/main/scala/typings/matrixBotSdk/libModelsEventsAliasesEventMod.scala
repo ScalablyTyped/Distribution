@@ -37,7 +37,8 @@ object libModelsEventsAliasesEventMod {
       __obj.asInstanceOf[AliasesEventContent]
     }
     
-    extension [Self <: AliasesEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AliasesEventContent] (val x: Self) extends AnyVal {
       
       inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
       

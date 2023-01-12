@@ -17,7 +17,8 @@ object ParametersPathIssuenumberName {
     __obj.asInstanceOf[ParametersPathIssuenumberName]
   }
   
-  extension [Self <: ParametersPathIssuenumberName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathIssuenumberName] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathIssuenumberName): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

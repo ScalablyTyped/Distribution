@@ -18,7 +18,8 @@ object Source {
     __obj.asInstanceOf[Source]
   }
   
-  extension [Self <: Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
     
     inline def setSource(value: Double | StringDictionary[Any]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

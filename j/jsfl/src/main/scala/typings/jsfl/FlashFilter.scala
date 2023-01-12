@@ -72,7 +72,8 @@ object FlashFilter {
     __obj.asInstanceOf[FlashFilter]
   }
   
-  extension [Self <: FlashFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashFilter] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object RQDownloadFileParam {
     __obj.asInstanceOf[RQDownloadFileParam]
   }
   
-  extension [Self <: RQDownloadFileParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RQDownloadFileParam] (val x: Self) extends AnyVal {
     
     inline def setCloudPath(value: String): Self = StObject.set(x, "cloudPath", value.asInstanceOf[js.Any])
     

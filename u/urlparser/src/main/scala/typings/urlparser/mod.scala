@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[UrlData]
     }
     
-    extension [Self <: UrlData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlData] (val x: Self) extends AnyVal {
       
       inline def setHost(value: Hostname): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

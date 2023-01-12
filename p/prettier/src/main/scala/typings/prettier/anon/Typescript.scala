@@ -16,7 +16,8 @@ object Typescript {
     __obj.asInstanceOf[Typescript]
   }
   
-  extension [Self <: Typescript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typescript] (val x: Self) extends AnyVal {
     
     inline def setTypescript(value: Parser[Any]): Self = StObject.set(x, "typescript", value.asInstanceOf[js.Any])
   }

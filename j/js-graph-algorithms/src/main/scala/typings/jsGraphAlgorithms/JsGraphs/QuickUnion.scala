@@ -26,7 +26,8 @@ object QuickUnion {
     __obj.asInstanceOf[QuickUnion]
   }
   
-  extension [Self <: QuickUnion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickUnion] (val x: Self) extends AnyVal {
     
     inline def setConnected(value: (Double, Double) => Boolean): Self = StObject.set(x, "connected", js.Any.fromFunction2(value))
     

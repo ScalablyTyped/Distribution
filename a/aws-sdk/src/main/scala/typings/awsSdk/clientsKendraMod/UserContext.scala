@@ -33,7 +33,8 @@ object UserContext {
     __obj.asInstanceOf[UserContext]
   }
   
-  extension [Self <: UserContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserContext] (val x: Self) extends AnyVal {
     
     inline def setDataSourceGroups(value: DataSourceGroups): Self = StObject.set(x, "DataSourceGroups", value.asInstanceOf[js.Any])
     

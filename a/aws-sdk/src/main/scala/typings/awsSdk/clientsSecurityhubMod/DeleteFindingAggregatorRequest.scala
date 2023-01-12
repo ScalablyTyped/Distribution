@@ -18,7 +18,8 @@ object DeleteFindingAggregatorRequest {
     __obj.asInstanceOf[DeleteFindingAggregatorRequest]
   }
   
-  extension [Self <: DeleteFindingAggregatorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFindingAggregatorRequest] (val x: Self) extends AnyVal {
     
     inline def setFindingAggregatorArn(value: NonEmptyString): Self = StObject.set(x, "FindingAggregatorArn", value.asInstanceOf[js.Any])
   }

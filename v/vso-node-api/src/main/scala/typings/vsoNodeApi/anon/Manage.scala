@@ -19,7 +19,8 @@ object Manage {
     __obj.asInstanceOf[Manage]
   }
   
-  extension [Self <: Manage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Manage] (val x: Self) extends AnyVal {
     
     inline def setManage(value: scala.Double): Self = StObject.set(x, "manage", value.asInstanceOf[js.Any])
     

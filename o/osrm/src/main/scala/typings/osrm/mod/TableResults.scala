@@ -27,7 +27,8 @@ object TableResults {
     __obj.asInstanceOf[TableResults]
   }
   
-  extension [Self <: TableResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableResults] (val x: Self) extends AnyVal {
     
     inline def setDestinations(value: js.Array[Waypoint]): Self = StObject.set(x, "destinations", value.asInstanceOf[js.Any])
     

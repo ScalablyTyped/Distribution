@@ -183,7 +183,8 @@ object libShareButtonMod {
       __obj.asInstanceOf[CustomProps[LinkOptions]]
     }
     
-    extension [Self <: CustomProps[?], LinkOptions](x: Self & CustomProps[LinkOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomProps[?], LinkOptions] (val x: Self & CustomProps[LinkOptions]) extends AnyVal {
       
       inline def setBeforeOnClick(value: () => js.Promise[Unit] | Unit): Self = StObject.set(x, "beforeOnClick", js.Any.fromFunction0(value))
       
@@ -689,7 +690,8 @@ object libShareButtonMod {
       __obj.asInstanceOf[Props[LinkOptions]]
     }
     
-    extension [Self <: Props[?], LinkOptions](x: Self & Props[LinkOptions]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], LinkOptions] (val x: Self & Props[LinkOptions]) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GetImageRecipeRequest {
     __obj.asInstanceOf[GetImageRecipeRequest]
   }
   
-  extension [Self <: GetImageRecipeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImageRecipeRequest] (val x: Self) extends AnyVal {
     
     inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
   }

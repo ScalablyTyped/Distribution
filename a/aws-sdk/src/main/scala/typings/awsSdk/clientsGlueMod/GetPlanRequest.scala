@@ -43,7 +43,8 @@ object GetPlanRequest {
     __obj.asInstanceOf[GetPlanRequest]
   }
   
-  extension [Self <: GetPlanRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPlanRequest] (val x: Self) extends AnyVal {
     
     inline def setAdditionalPlanOptionsMap(value: AdditionalPlanOptionsMap): Self = StObject.set(x, "AdditionalPlanOptionsMap", value.asInstanceOf[js.Any])
     

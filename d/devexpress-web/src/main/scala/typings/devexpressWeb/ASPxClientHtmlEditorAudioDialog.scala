@@ -59,7 +59,8 @@ object ASPxClientHtmlEditorAudioDialog {
     __obj.asInstanceOf[ASPxClientHtmlEditorAudioDialog]
   }
   
-  extension [Self <: ASPxClientHtmlEditorAudioDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorAudioDialog] (val x: Self) extends AnyVal {
     
     inline def setGetAutoPlayCheckBox(value: () => ASPxClientCheckBox): Self = StObject.set(x, "GetAutoPlayCheckBox", js.Any.fromFunction0(value))
     

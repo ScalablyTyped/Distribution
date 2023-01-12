@@ -46,7 +46,8 @@ object ViewFields {
     __obj.asInstanceOf[ViewFields]
   }
   
-  extension [Self <: ViewFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewFields] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: String => ViewField): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
     

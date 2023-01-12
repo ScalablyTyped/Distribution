@@ -26,7 +26,8 @@ object FeatureTableSelectionChangeEventRemoved {
     __obj.asInstanceOf[FeatureTableSelectionChangeEventRemoved]
   }
   
-  extension [Self <: FeatureTableSelectionChangeEventRemoved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureTableSelectionChangeEventRemoved] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[AttachmentInfo]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

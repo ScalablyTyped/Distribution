@@ -23,7 +23,8 @@ object SendOfflineMsgOptions {
     __obj.asInstanceOf[SendOfflineMsgOptions]
   }
   
-  extension [Self <: SendOfflineMsgOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendOfflineMsgOptions] (val x: Self) extends AnyVal {
     
     inline def setDepartment(value: Double): Self = StObject.set(x, "department", value.asInstanceOf[js.Any])
     

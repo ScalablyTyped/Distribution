@@ -18,7 +18,8 @@ object AggregationsBucketMetricValueAggregate {
     __obj.asInstanceOf[AggregationsBucketMetricValueAggregate]
   }
   
-  extension [Self <: AggregationsBucketMetricValueAggregate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBucketMetricValueAggregate] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[String]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
     

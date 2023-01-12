@@ -26,7 +26,8 @@ object IEditablePropertyOption {
     __obj.asInstanceOf[IEditablePropertyOption]
   }
   
-  extension [Self <: IEditablePropertyOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditablePropertyOption] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

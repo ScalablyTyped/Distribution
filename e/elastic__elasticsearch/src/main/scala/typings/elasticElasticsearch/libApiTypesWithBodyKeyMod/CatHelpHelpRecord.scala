@@ -15,7 +15,8 @@ object CatHelpHelpRecord {
     __obj.asInstanceOf[CatHelpHelpRecord]
   }
   
-  extension [Self <: CatHelpHelpRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatHelpHelpRecord] (val x: Self) extends AnyVal {
     
     inline def setEndpoint(value: String): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
   }

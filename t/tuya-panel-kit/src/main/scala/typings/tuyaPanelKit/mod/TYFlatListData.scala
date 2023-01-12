@@ -98,7 +98,8 @@ object TYFlatListData {
     __obj.asInstanceOf[TYFlatListData]
   }
   
-  extension [Self <: TYFlatListData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TYFlatListData] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Any): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

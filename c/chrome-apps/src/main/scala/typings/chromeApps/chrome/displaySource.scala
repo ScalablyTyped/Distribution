@@ -54,7 +54,8 @@ object displaySource {
       __obj.asInstanceOf[AuthenticationInfo]
     }
     
-    extension [Self <: AuthenticationInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthenticationInfo] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object displaySource {
       __obj.asInstanceOf[ErrorInfo]
     }
     
-    extension [Self <: ErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object displaySource {
       __obj.asInstanceOf[SinkInfo]
     }
     
-    extension [Self <: SinkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinkInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: integer): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -179,7 +182,8 @@ object displaySource {
       __obj.asInstanceOf[StartSessionInfo]
     }
     
-    extension [Self <: StartSessionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartSessionInfo] (val x: Self) extends AnyVal {
       
       inline def setAudioTrack(value: js.Object): Self = StObject.set(x, "audioTrack", value.asInstanceOf[js.Any])
       

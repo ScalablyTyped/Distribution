@@ -117,7 +117,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureBlobPropertyOptions]
       }
       
-      extension [Self <: AzureBlobPropertyOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureBlobPropertyOptions] (val x: Self) extends AnyVal {
         
         inline def setName(value: String | AzureBlobPropertyNameFunction): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -153,7 +154,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureChunkingOptions]
       }
       
-      extension [Self <: AzureChunkingOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureChunkingOptions] (val x: Self) extends AnyVal {
         
         inline def setMinFileSize(value: Double): Self = StObject.set(x, "minFileSize", value.asInstanceOf[js.Any])
         
@@ -209,7 +211,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureCoreOptions]
       }
       
-      extension [Self <: AzureCoreOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureCoreOptions] (val x: Self) extends AnyVal {
         
         inline def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
         
@@ -266,7 +269,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureFailedUploadTextDisplayOptions]
       }
       
-      extension [Self <: AzureFailedUploadTextDisplayOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureFailedUploadTextDisplayOptions] (val x: Self) extends AnyVal {
         
         inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
         
@@ -292,7 +296,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureRequestOptions]
       }
       
-      extension [Self <: AzureRequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureRequestOptions] (val x: Self) extends AnyVal {
         
         inline def setContainerUrl(value: String): Self = StObject.set(x, "containerUrl", value.asInstanceOf[js.Any])
         
@@ -316,7 +321,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureResumableFileObject]
       }
       
-      extension [Self <: AzureResumableFileObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureResumableFileObject] (val x: Self) extends AnyVal {
         
         inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
         
@@ -351,7 +357,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureSignatureOptions]
       }
       
-      extension [Self <: AzureSignatureOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureSignatureOptions] (val x: Self) extends AnyVal {
         
         inline def setCustomHeaders(value: Any | AzureCustomHeaderFunction): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         
@@ -417,7 +424,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureUIOptions]
       }
       
-      extension [Self <: AzureUIOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureUIOptions] (val x: Self) extends AnyVal {
         
         inline def setBlobProperties(value: AzureBlobPropertyOptions): Self = StObject.set(x, "blobProperties", value.asInstanceOf[js.Any])
         
@@ -489,7 +497,8 @@ object libAzureMod {
         __obj.asInstanceOf[AzureUploadSuccessOptions]
       }
       
-      extension [Self <: AzureUploadSuccessOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AzureUploadSuccessOptions] (val x: Self) extends AnyVal {
         
         inline def setCustomHeaders(value: Any): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
         

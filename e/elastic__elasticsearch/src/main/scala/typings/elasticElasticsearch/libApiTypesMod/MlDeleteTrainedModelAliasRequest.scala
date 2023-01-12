@@ -19,7 +19,8 @@ object MlDeleteTrainedModelAliasRequest {
     __obj.asInstanceOf[MlDeleteTrainedModelAliasRequest]
   }
   
-  extension [Self <: MlDeleteTrainedModelAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDeleteTrainedModelAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setModel_alias(value: Name): Self = StObject.set(x, "model_alias", value.asInstanceOf[js.Any])
     

@@ -431,7 +431,8 @@ object ImageryLayerPropertiestyp {
     __obj.asInstanceOf[ImageryLayerPropertiestyp]
   }
   
-  extension [Self <: ImageryLayerPropertiestyp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageryLayerPropertiestyp] (val x: Self) extends AnyVal {
     
     inline def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
     

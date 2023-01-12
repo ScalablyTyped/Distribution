@@ -23,7 +23,8 @@ object MaintenanceWindowAutomationParameters {
     __obj.asInstanceOf[MaintenanceWindowAutomationParameters]
   }
   
-  extension [Self <: MaintenanceWindowAutomationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowAutomationParameters] (val x: Self) extends AnyVal {
     
     inline def setDocumentVersion(value: DocumentVersion): Self = StObject.set(x, "DocumentVersion", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object PivotOrderBy {
     __obj.asInstanceOf[PivotOrderBy]
   }
   
-  extension [Self <: PivotOrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotOrderBy] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: String): Self = StObject.set(x, "metricName", value.asInstanceOf[js.Any])
     

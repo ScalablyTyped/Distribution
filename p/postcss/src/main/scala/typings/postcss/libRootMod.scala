@@ -68,7 +68,8 @@ object libRootMod {
       __obj.asInstanceOf[RootProps]
     }
     
-    extension [Self <: RootProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootProps] (val x: Self) extends AnyVal {
       
       inline def setRaws(value: RootRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
       
@@ -112,7 +113,8 @@ object libRootMod {
       __obj.asInstanceOf[RootRaws]
     }
     
-    extension [Self <: RootRaws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RootRaws] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object EbsSnapshotConfiguration {
     __obj.asInstanceOf[EbsSnapshotConfiguration]
   }
   
-  extension [Self <: EbsSnapshotConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EbsSnapshotConfiguration] (val x: Self) extends AnyVal {
     
     inline def setGroups(value: EbsGroupList): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
     

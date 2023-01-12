@@ -15,7 +15,8 @@ object IPointerVisualizationSettingsStatics {
     __obj.asInstanceOf[IPointerVisualizationSettingsStatics]
   }
   
-  extension [Self <: IPointerVisualizationSettingsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPointerVisualizationSettingsStatics] (val x: Self) extends AnyVal {
     
     inline def setGetForCurrentView(value: () => PointerVisualizationSettings): Self = StObject.set(x, "getForCurrentView", js.Any.fromFunction0(value))
   }

@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[BrowserReadableStreamToItOptions]
     }
     
-    extension [Self <: BrowserReadableStreamToItOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserReadableStreamToItOptions] (val x: Self) extends AnyVal {
       
       inline def setPreventCancel(value: Boolean): Self = StObject.set(x, "preventCancel", value.asInstanceOf[js.Any])
       

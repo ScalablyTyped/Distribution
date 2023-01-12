@@ -26,7 +26,8 @@ object ObjectOldValue {
     __obj.asInstanceOf[ObjectOldValue[T]]
   }
   
-  extension [Self <: ObjectOldValue[?], T](x: Self & ObjectOldValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectOldValue[?], T] (val x: Self & ObjectOldValue[T]) extends AnyVal {
     
     inline def setObject(value: ObservableSet[T]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

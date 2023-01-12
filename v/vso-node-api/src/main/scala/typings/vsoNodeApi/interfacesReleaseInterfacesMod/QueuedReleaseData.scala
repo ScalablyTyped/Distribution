@@ -19,7 +19,8 @@ object QueuedReleaseData {
     __obj.asInstanceOf[QueuedReleaseData]
   }
   
-  extension [Self <: QueuedReleaseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueuedReleaseData] (val x: Self) extends AnyVal {
     
     inline def setProjectId(value: String): Self = StObject.set(x, "projectId", value.asInstanceOf[js.Any])
     

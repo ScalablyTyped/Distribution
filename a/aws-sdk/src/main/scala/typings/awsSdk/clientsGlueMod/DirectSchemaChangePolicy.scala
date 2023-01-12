@@ -33,7 +33,8 @@ object DirectSchemaChangePolicy {
     __obj.asInstanceOf[DirectSchemaChangePolicy]
   }
   
-  extension [Self <: DirectSchemaChangePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectSchemaChangePolicy] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

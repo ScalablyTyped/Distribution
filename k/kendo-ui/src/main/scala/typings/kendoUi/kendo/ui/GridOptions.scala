@@ -147,7 +147,8 @@ object GridOptions {
     __obj.asInstanceOf[GridOptions]
   }
   
-  extension [Self <: GridOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowCopy(value: Boolean | GridAllowCopy): Self = StObject.set(x, "allowCopy", value.asInstanceOf[js.Any])
     

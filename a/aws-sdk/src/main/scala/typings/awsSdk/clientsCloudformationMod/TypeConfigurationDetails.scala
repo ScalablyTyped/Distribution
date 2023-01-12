@@ -48,7 +48,8 @@ object TypeConfigurationDetails {
     __obj.asInstanceOf[TypeConfigurationDetails]
   }
   
-  extension [Self <: TypeConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: TypeConfigurationAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

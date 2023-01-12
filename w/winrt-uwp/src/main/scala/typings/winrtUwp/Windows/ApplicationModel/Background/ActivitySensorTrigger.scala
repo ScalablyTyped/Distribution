@@ -34,7 +34,8 @@ object ActivitySensorTrigger {
     __obj.asInstanceOf[ActivitySensorTrigger]
   }
   
-  extension [Self <: ActivitySensorTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivitySensorTrigger] (val x: Self) extends AnyVal {
     
     inline def setMinimumReportInterval(value: Double): Self = StObject.set(x, "minimumReportInterval", value.asInstanceOf[js.Any])
     

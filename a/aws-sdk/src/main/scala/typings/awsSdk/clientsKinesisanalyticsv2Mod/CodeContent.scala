@@ -28,7 +28,8 @@ object CodeContent {
     __obj.asInstanceOf[CodeContent]
   }
   
-  extension [Self <: CodeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeContent] (val x: Self) extends AnyVal {
     
     inline def setS3ContentLocation(value: S3ContentLocation): Self = StObject.set(x, "S3ContentLocation", value.asInstanceOf[js.Any])
     

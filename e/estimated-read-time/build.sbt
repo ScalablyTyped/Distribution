@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "estimated-read-time"
-version := "1.2-dt-20211202Z-e735b1"
+version := "1.2-dt-20211202Z-03cbc8"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

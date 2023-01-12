@@ -104,7 +104,8 @@ object SystemInfoManager {
     __obj.asInstanceOf[SystemInfoManager]
   }
   
-  extension [Self <: SystemInfoManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemInfoManager] (val x: Self) extends AnyVal {
     
     inline def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
     

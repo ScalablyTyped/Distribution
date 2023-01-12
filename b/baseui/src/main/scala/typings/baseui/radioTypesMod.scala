@@ -71,7 +71,8 @@ object radioTypesMod {
       __obj.asInstanceOf[DefaultProps]
     }
     
-    extension [Self <: DefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object radioTypesMod {
       __obj.asInstanceOf[DefaultStatefulProps]
     }
     
-    extension [Self <: DefaultStatefulProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultStatefulProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* props */ RadioGroupProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -223,7 +225,8 @@ object radioTypesMod {
       __obj.asInstanceOf[RadioGroupOverrides]
     }
     
-    extension [Self <: RadioGroupOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupOverrides] (val x: Self) extends AnyVal {
       
       inline def setRadioGroupRoot(value: Override[Any]): Self = StObject.set(x, "RadioGroupRoot", value.asInstanceOf[js.Any])
       
@@ -305,7 +308,8 @@ object radioTypesMod {
       __obj.asInstanceOf[RadioGroupProps]
     }
     
-    extension [Self <: RadioGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -412,7 +416,8 @@ object radioTypesMod {
       __obj.asInstanceOf[RadioOverrides]
     }
     
-    extension [Self <: RadioOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioOverrides] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: Override[Any]): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
       
@@ -520,7 +525,8 @@ object radioTypesMod {
       __obj.asInstanceOf[RadioProps]
     }
     
-    extension [Self <: RadioProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -633,7 +639,8 @@ object radioTypesMod {
       __obj.asInstanceOf[RadioState]
     }
     
-    extension [Self <: RadioState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioState] (val x: Self) extends AnyVal {
       
       inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
       
@@ -652,7 +659,8 @@ object radioTypesMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -696,7 +704,8 @@ object radioTypesMod {
       __obj.asInstanceOf[StatefulContainerProps]
     }
     
-    extension [Self <: StatefulContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulContainerProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -747,7 +756,8 @@ object radioTypesMod {
       __obj.asInstanceOf[StatefulRadioGroupProps]
     }
     
-    extension [Self <: StatefulRadioGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatefulRadioGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -786,7 +796,8 @@ object radioTypesMod {
       __obj.asInstanceOf[StatelessState]
     }
     
-    extension [Self <: StatelessState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatelessState] (val x: Self) extends AnyVal {
       
       inline def setFocusedRadioIndex(value: Double): Self = StObject.set(x, "focusedRadioIndex", value.asInstanceOf[js.Any])
       
@@ -851,7 +862,8 @@ object radioTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$align(value: String): Self = StObject.set(x, "$align", value.asInstanceOf[js.Any])
       

@@ -34,7 +34,8 @@ object dxChartSeriesTypesCommonSeriesSelectionStyleHatching {
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesSelectionStyleHatching]
   }
   
-  extension [Self <: dxChartSeriesTypesCommonSeriesSelectionStyleHatching](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCommonSeriesSelectionStyleHatching] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: HatchDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

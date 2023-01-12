@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsFocalPointMod extends Shortc
       __obj.asInstanceOf[FocalPointProps]
     }
     
-    extension [Self <: FocalPointProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocalPointProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

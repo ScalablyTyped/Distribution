@@ -119,7 +119,8 @@ object anon {
       __obj.asInstanceOf[PickRequestuseonsetqueryt]
     }
     
-    extension [Self <: PickRequestuseonsetqueryt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickRequestuseonsetqueryt] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: /* type */ String => PickRequestuseonsetqueryt): Self = StObject.set(x, "accept", js.Any.fromFunction1(value))
       

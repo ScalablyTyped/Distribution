@@ -105,7 +105,8 @@ object libProvisioningApiMod {
       __obj.asInstanceOf[ExchangeOpenAPIRequestBody]
     }
     
-    extension [Self <: ExchangeOpenAPIRequestBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangeOpenAPIRequestBody] (val x: Self) extends AnyVal {
       
       inline def setMatrixServer(value: String): Self = StObject.set(x, "matrixServer", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object libProvisioningApiMod {
       __obj.asInstanceOf[ExchangeOpenAPIResponseBody]
     }
     
-    extension [Self <: ExchangeOpenAPIResponseBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExchangeOpenAPIResponseBody] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
       
@@ -196,7 +198,8 @@ object libProvisioningApiMod {
       __obj.asInstanceOf[ProvisioningApiOpts]
     }
     
-    extension [Self <: ProvisioningApiOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProvisioningApiOpts] (val x: Self) extends AnyVal {
       
       inline def setApiPrefix(value: String): Self = StObject.set(x, "apiPrefix", value.asInstanceOf[js.Any])
       

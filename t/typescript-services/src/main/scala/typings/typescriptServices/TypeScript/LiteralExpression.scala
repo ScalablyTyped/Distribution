@@ -53,7 +53,8 @@ object LiteralExpression {
     __obj.asInstanceOf[LiteralExpression]
   }
   
-  extension [Self <: LiteralExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralExpression] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (ParenthesizedExpression, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

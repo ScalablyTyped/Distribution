@@ -27,7 +27,8 @@ object typesKmsaccessdeniedexceptionMod {
       __obj.asInstanceOf[KMSAccessDeniedException]
     }
     
-    extension [Self <: KMSAccessDeniedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSAccessDeniedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientKinesisBrowser.awsSdkClientKinesisBrowserStrings.KMSAccessDeniedException
@@ -49,7 +50,8 @@ object typesKmsaccessdeniedexceptionMod {
       __obj.asInstanceOf[KMSAccessDeniedExceptionDetails]
     }
     
-    extension [Self <: KMSAccessDeniedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KMSAccessDeniedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

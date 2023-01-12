@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[OnCloseTag]
     }
     
-    extension [Self <: OnCloseTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnCloseTag] (val x: Self) extends AnyVal {
       
       inline def setOnCloseTag(value: (String, Double) => Unit): Self = StObject.set(x, "onCloseTag", js.Any.fromFunction2(value))
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[RequiredStripPrefixConfig]
     }
     
-    extension [Self <: RequiredStripPrefixConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredStripPrefixConfig] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: Boolean): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       

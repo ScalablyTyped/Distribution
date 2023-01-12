@@ -18,7 +18,8 @@ object IpsInfoRequest {
     __obj.asInstanceOf[IpsInfoRequest]
   }
   
-  extension [Self <: IpsInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setIp(value: String): Self = StObject.set(x, "ip", value.asInstanceOf[js.Any])
     

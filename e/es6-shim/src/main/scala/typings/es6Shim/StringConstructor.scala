@@ -32,7 +32,8 @@ object StringConstructor {
     __obj.asInstanceOf[StringConstructor]
   }
   
-  extension [Self <: StringConstructor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringConstructor] (val x: Self) extends AnyVal {
     
     inline def setFromCodePoint(value: /* repeated */ Double => java.lang.String): Self = StObject.set(x, "fromCodePoint", js.Any.fromFunction1(value))
     

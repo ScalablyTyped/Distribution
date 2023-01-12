@@ -17,7 +17,8 @@ object LanguageMessageTemplate {
     __obj.asInstanceOf[LanguageMessageTemplate]
   }
   
-  extension [Self <: LanguageMessageTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LanguageMessageTemplate] (val x: Self) extends AnyVal {
     
     inline def setRendered(value: String): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ColumnGap {
     __obj.asInstanceOf[ColumnGap]
   }
   
-  extension [Self <: ColumnGap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnGap] (val x: Self) extends AnyVal {
     
     inline def setColumnGap(value: Unit): Self = StObject.set(x, "columnGap", value.asInstanceOf[js.Any])
     

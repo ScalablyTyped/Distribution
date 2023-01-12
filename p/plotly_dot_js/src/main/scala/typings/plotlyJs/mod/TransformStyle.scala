@@ -18,7 +18,8 @@ object TransformStyle {
     __obj.asInstanceOf[TransformStyle]
   }
   
-  extension [Self <: TransformStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformStyle] (val x: Self) extends AnyVal {
     
     inline def setTarget(value: Double | String | (js.Array[Double | String])): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     

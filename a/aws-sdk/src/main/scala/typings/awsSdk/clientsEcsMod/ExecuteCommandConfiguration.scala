@@ -28,7 +28,8 @@ object ExecuteCommandConfiguration {
     __obj.asInstanceOf[ExecuteCommandConfiguration]
   }
   
-  extension [Self <: ExecuteCommandConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteCommandConfiguration] (val x: Self) extends AnyVal {
     
     inline def setKmsKeyId(value: String): Self = StObject.set(x, "kmsKeyId", value.asInstanceOf[js.Any])
     

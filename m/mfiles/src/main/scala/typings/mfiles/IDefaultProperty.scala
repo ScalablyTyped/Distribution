@@ -92,7 +92,8 @@ object IDefaultProperty {
     __obj.asInstanceOf[IDefaultProperty]
   }
   
-  extension [Self <: IDefaultProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDefaultProperty] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => IDefaultProperty): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

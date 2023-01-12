@@ -107,7 +107,8 @@ object SeriesHlcOptions {
     __obj.asInstanceOf[SeriesHlcOptions]
   }
   
-  extension [Self <: SeriesHlcOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesHlcOptions] (val x: Self) extends AnyVal {
     
     inline def setData(
       value: js.Array[

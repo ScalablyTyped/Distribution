@@ -16,7 +16,8 @@ object ProfileOptions {
     __obj.asInstanceOf[ProfileOptions]
   }
   
-  extension [Self <: ProfileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileOptions] (val x: Self) extends AnyVal {
     
     inline def setLIMITED(value: `true`): Self = StObject.set(x, "LIMITED", value.asInstanceOf[js.Any])
     

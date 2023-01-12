@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsAccessibilityMod extends Shortcut {
       __obj.asInstanceOf[AccessibilityProps]
     }
     
-    extension [Self <: AccessibilityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessibilityProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object AddToSetOperators {
     __obj.asInstanceOf[AddToSetOperators[Type]]
   }
   
-  extension [Self <: AddToSetOperators[?], Type](x: Self & AddToSetOperators[Type]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddToSetOperators[?], Type] (val x: Self & AddToSetOperators[Type]) extends AnyVal {
     
     inline def set$each(value: js.Array[Flatten[Type]]): Self = StObject.set(x, "$each", value.asInstanceOf[js.Any])
     

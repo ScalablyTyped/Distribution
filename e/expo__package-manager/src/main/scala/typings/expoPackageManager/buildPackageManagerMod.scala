@@ -55,7 +55,8 @@ object buildPackageManagerMod {
       __obj.asInstanceOf[PackageManager]
     }
     
-    extension [Self <: PackageManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageManager] (val x: Self) extends AnyVal {
       
       inline def setAddAsync(value: /* repeated */ String => js.Promise[Unit]): Self = StObject.set(x, "addAsync", js.Any.fromFunction1(value))
       

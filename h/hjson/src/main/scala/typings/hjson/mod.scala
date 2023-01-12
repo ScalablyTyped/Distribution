@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[DeserializeOptions]
     }
     
-    extension [Self <: DeserializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeserializeOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepWsc(value: Boolean): Self = StObject.set(x, "keepWsc", value.asInstanceOf[js.Any])
       
@@ -118,7 +119,8 @@ object mod {
       __obj.asInstanceOf[SerializeOptions]
     }
     
-    extension [Self <: SerializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializeOptions] (val x: Self) extends AnyVal {
       
       inline def setBracesSameLine(value: Boolean): Self = StObject.set(x, "bracesSameLine", value.asInstanceOf[js.Any])
       

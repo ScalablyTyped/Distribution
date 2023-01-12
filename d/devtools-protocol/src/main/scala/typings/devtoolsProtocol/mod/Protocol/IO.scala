@@ -21,7 +21,8 @@ object IO {
       __obj.asInstanceOf[CloseRequest]
     }
     
-    extension [Self <: CloseRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseRequest] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
     }
@@ -52,7 +53,8 @@ object IO {
       __obj.asInstanceOf[ReadRequest]
     }
     
-    extension [Self <: ReadRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadRequest] (val x: Self) extends AnyVal {
       
       inline def setHandle(value: StreamHandle): Self = StObject.set(x, "handle", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object IO {
       __obj.asInstanceOf[ReadResponse]
     }
     
-    extension [Self <: ReadResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadResponse] (val x: Self) extends AnyVal {
       
       inline def setBase64Encoded(value: Boolean): Self = StObject.set(x, "base64Encoded", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object IO {
       __obj.asInstanceOf[ResolveBlobRequest]
     }
     
-    extension [Self <: ResolveBlobRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveBlobRequest] (val x: Self) extends AnyVal {
       
       inline def setObjectId(value: RemoteObjectId): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     }
@@ -136,7 +140,8 @@ object IO {
       __obj.asInstanceOf[ResolveBlobResponse]
     }
     
-    extension [Self <: ResolveBlobResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveBlobResponse] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }

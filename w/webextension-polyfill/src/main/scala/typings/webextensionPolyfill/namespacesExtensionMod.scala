@@ -37,7 +37,8 @@ object namespacesExtensionMod {
         __obj.asInstanceOf[GetViewsFetchPropertiesType]
       }
       
-      extension [Self <: GetViewsFetchPropertiesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GetViewsFetchPropertiesType] (val x: Self) extends AnyVal {
         
         inline def setTabId(value: Double): Self = StObject.set(x, "tabId", value.asInstanceOf[js.Any])
         

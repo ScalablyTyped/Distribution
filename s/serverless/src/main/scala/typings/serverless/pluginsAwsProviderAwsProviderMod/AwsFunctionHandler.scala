@@ -17,7 +17,8 @@ object AwsFunctionHandler {
     __obj.asInstanceOf[AwsFunctionHandler]
   }
   
-  extension [Self <: AwsFunctionHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsFunctionHandler] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: String): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
   }

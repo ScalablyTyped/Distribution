@@ -37,7 +37,8 @@ object GitHubEnterpriseSecrets {
     __obj.asInstanceOf[GitHubEnterpriseSecrets]
   }
   
-  extension [Self <: GitHubEnterpriseSecrets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitHubEnterpriseSecrets] (val x: Self) extends AnyVal {
     
     inline def setOauthClientIdName(value: String): Self = StObject.set(x, "oauthClientIdName", value.asInstanceOf[js.Any])
     

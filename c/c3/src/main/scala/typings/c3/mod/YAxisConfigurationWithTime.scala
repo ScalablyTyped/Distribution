@@ -18,7 +18,8 @@ object YAxisConfigurationWithTime {
     __obj.asInstanceOf[YAxisConfigurationWithTime]
   }
   
-  extension [Self <: YAxisConfigurationWithTime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YAxisConfigurationWithTime] (val x: Self) extends AnyVal {
     
     inline def setTick(value: YTickConfigurationWithTime): Self = StObject.set(x, "tick", value.asInstanceOf[js.Any])
     

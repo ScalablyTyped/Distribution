@@ -25,7 +25,8 @@ object GoogleCloudDialogflowV2beta1SuggestFaqAnswersResponse {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1SuggestFaqAnswersResponse]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1SuggestFaqAnswersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1SuggestFaqAnswersResponse] (val x: Self) extends AnyVal {
     
     inline def setContextSize(value: Double): Self = StObject.set(x, "contextSize", value.asInstanceOf[js.Any])
     

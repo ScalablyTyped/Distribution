@@ -343,7 +343,8 @@ object TableHeaderColumnProps {
     __obj.asInstanceOf[TableHeaderColumnProps]
   }
   
-  extension [Self <: TableHeaderColumnProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHeaderColumnProps] (val x: Self) extends AnyVal {
     
     inline def setAutoValue(value: Boolean | js.Function0[Any]): Self = StObject.set(x, "autoValue", value.asInstanceOf[js.Any])
     

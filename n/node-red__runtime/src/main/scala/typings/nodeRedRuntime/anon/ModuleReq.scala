@@ -17,7 +17,8 @@ object ModuleReq {
     __obj.asInstanceOf[ModuleReq]
   }
   
-  extension [Self <: ModuleReq](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleReq] (val x: Self) extends AnyVal {
     
     inline def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
     

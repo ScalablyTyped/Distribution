@@ -48,7 +48,8 @@ object InstanceTarget {
     __obj.asInstanceOf[InstanceTarget]
   }
   
-  extension [Self <: InstanceTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceTarget] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

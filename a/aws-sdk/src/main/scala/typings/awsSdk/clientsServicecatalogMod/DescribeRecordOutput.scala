@@ -28,7 +28,8 @@ object DescribeRecordOutput {
     __obj.asInstanceOf[DescribeRecordOutput]
   }
   
-  extension [Self <: DescribeRecordOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRecordOutput] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: PageToken): Self = StObject.set(x, "NextPageToken", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object DebugAdapterTrackerFactory {
     __obj.asInstanceOf[DebugAdapterTrackerFactory]
   }
   
-  extension [Self <: DebugAdapterTrackerFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugAdapterTrackerFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDebugAdapterTracker(value: DebugSession => ProviderResult[DebugAdapterTracker]): Self = StObject.set(x, "createDebugAdapterTracker", js.Any.fromFunction1(value))
   }

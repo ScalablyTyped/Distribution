@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[StructuredHeader]
     }
     
-    extension [Self <: StructuredHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructuredHeader] (val x: Self) extends AnyVal {
       
       inline def setParams(value: StringDictionary[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       

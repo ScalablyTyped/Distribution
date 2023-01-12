@@ -19,7 +19,8 @@ object FieldSchemas {
     __obj.asInstanceOf[FieldSchemas]
   }
   
-  extension [Self <: FieldSchemas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldSchemas] (val x: Self) extends AnyVal {
     
     inline def setFieldSchemas(value: js.Array[typings.tablestore.mod.FieldSchemas]): Self = StObject.set(x, "fieldSchemas", value.asInstanceOf[js.Any])
     

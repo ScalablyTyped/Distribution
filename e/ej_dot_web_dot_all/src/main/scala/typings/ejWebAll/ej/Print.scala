@@ -46,7 +46,8 @@ object Print {
       __obj.asInstanceOf[BeforeStartEventArgs]
     }
     
-    extension [Self <: BeforeStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeforeStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object Print {
       __obj.asInstanceOf[typings.ejWebAll.ej.Print.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Print.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Print.Model] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: String): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       

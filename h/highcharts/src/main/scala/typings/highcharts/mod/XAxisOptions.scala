@@ -728,7 +728,8 @@ object XAxisOptions {
     __obj.asInstanceOf[XAxisOptions]
   }
   
-  extension [Self <: XAxisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAxisOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AxisAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

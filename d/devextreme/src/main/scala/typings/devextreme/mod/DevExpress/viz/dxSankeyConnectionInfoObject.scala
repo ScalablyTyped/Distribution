@@ -28,7 +28,8 @@ object dxSankeyConnectionInfoObject {
     __obj.asInstanceOf[dxSankeyConnectionInfoObject]
   }
   
-  extension [Self <: dxSankeyConnectionInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxSankeyConnectionInfoObject] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object OTAUpdateFile {
     __obj.asInstanceOf[OTAUpdateFile]
   }
   
-  extension [Self <: OTAUpdateFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OTAUpdateFile] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: AttributesMap): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

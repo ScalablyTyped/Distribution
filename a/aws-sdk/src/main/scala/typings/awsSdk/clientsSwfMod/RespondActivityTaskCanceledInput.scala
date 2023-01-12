@@ -23,7 +23,8 @@ object RespondActivityTaskCanceledInput {
     __obj.asInstanceOf[RespondActivityTaskCanceledInput]
   }
   
-  extension [Self <: RespondActivityTaskCanceledInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RespondActivityTaskCanceledInput] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: Data): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

@@ -50,7 +50,8 @@ object FormSummary {
     __obj.asInstanceOf[FormSummary]
   }
   
-  extension [Self <: FormSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormSummary] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

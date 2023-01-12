@@ -34,7 +34,8 @@ object ArrayWrapper {
     __obj.asInstanceOf[ArrayWrapper]
   }
   
-  extension [Self <: ArrayWrapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayWrapper] (val x: Self) extends AnyVal {
     
     inline def setArray(value: Any): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     

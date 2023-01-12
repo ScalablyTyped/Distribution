@@ -45,7 +45,8 @@ object CreateUserNaturalPayerData {
     __obj.asInstanceOf[CreateUserNaturalPayerData]
   }
   
-  extension [Self <: CreateUserNaturalPayerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserNaturalPayerData] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String | AddressData): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

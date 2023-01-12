@@ -21,7 +21,8 @@ object ConditionalAccessRoot {
     __obj.asInstanceOf[ConditionalAccessRoot]
   }
   
-  extension [Self <: ConditionalAccessRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessRoot] (val x: Self) extends AnyVal {
     
     inline def setNamedLocations(value: NullableOption[js.Array[NamedLocation]]): Self = StObject.set(x, "namedLocations", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object CheckIsOpenAccessibilitySuccessCallbackOption {
     __obj.asInstanceOf[CheckIsOpenAccessibilitySuccessCallbackOption]
   }
   
-  extension [Self <: CheckIsOpenAccessibilitySuccessCallbackOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIsOpenAccessibilitySuccessCallbackOption] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: Boolean): Self = StObject.set(x, "open", value.asInstanceOf[js.Any])
   }

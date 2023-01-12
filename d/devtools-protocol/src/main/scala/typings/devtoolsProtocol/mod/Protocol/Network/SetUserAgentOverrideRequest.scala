@@ -34,7 +34,8 @@ object SetUserAgentOverrideRequest {
     __obj.asInstanceOf[SetUserAgentOverrideRequest]
   }
   
-  extension [Self <: SetUserAgentOverrideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetUserAgentOverrideRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: String): Self = StObject.set(x, "acceptLanguage", value.asInstanceOf[js.Any])
     

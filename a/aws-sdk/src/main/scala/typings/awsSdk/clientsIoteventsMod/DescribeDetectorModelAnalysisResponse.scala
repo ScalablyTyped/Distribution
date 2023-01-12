@@ -18,7 +18,8 @@ object DescribeDetectorModelAnalysisResponse {
     __obj.asInstanceOf[DescribeDetectorModelAnalysisResponse]
   }
   
-  extension [Self <: DescribeDetectorModelAnalysisResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDetectorModelAnalysisResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: AnalysisStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

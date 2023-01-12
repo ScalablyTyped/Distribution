@@ -37,7 +37,8 @@ object Draggable {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object Draggable {
       __obj.asInstanceOf[DragEventArgs]
     }
     
-    extension [Self <: DragEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object Draggable {
       __obj.asInstanceOf[DragStartEventArgs]
     }
     
-    extension [Self <: DragStartEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStartEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object Draggable {
       __obj.asInstanceOf[DragStopEventArgs]
     }
     
-    extension [Self <: DragStopEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragStopEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -229,7 +233,8 @@ object Draggable {
       __obj.asInstanceOf[HelperEventArgs]
     }
     
-    extension [Self <: HelperEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperEventArgs] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Any): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -317,7 +322,8 @@ object Draggable {
       __obj.asInstanceOf[typings.ejWebAll.ej.Draggable.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.Draggable.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.Draggable.Model] (val x: Self) extends AnyVal {
       
       inline def setAutoScroll(value: Boolean): Self = StObject.set(x, "autoScroll", value.asInstanceOf[js.Any])
       

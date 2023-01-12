@@ -151,7 +151,8 @@ object DisplayControl {
     __obj.asInstanceOf[DisplayControl]
   }
   
-  extension [Self <: DisplayControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayControl] (val x: Self) extends AnyVal {
     
     inline def setAdd_oneTimeResultRendered(value: Any => Unit): Self = StObject.set(x, "add_oneTimeResultRendered", js.Any.fromFunction1(value))
     

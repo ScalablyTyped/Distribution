@@ -15,7 +15,8 @@ object IPanoramaGraphEdge {
     __obj.asInstanceOf[IPanoramaGraphEdge]
   }
   
-  extension [Self <: IPanoramaGraphEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPanoramaGraphEdge] (val x: Self) extends AnyVal {
     
     inline def setGetEndNodes(value: () => js.Array[IPanoramaGraphNode]): Self = StObject.set(x, "getEndNodes", js.Any.fromFunction0(value))
   }

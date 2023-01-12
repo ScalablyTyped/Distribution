@@ -20,7 +20,8 @@ object TMessage {
     __obj.asInstanceOf[TMessage]
   }
   
-  extension [Self <: TMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TMessage] (val x: Self) extends AnyVal {
     
     inline def setFname(value: String): Self = StObject.set(x, "fname", value.asInstanceOf[js.Any])
     

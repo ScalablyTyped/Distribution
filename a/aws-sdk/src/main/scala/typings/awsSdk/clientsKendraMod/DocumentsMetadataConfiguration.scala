@@ -18,7 +18,8 @@ object DocumentsMetadataConfiguration {
     __obj.asInstanceOf[DocumentsMetadataConfiguration]
   }
   
-  extension [Self <: DocumentsMetadataConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentsMetadataConfiguration] (val x: Self) extends AnyVal {
     
     inline def setS3Prefix(value: S3ObjectKey): Self = StObject.set(x, "S3Prefix", value.asInstanceOf[js.Any])
     

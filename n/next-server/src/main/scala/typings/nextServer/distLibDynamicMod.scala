@@ -40,7 +40,8 @@ object distLibDynamicMod {
       __obj.asInstanceOf[DynamicOptions[P]]
     }
     
-    extension [Self <: DynamicOptions[?], P](x: Self & DynamicOptions[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicOptions[?], P] (val x: Self & DynamicOptions[P]) extends AnyVal {
       
       inline def setRender(value: (/* props */ P, /* loaded */ Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       
@@ -67,7 +68,8 @@ object distLibDynamicMod {
       __obj.asInstanceOf[LoadableBaseOptions[P]]
     }
     
-    extension [Self <: LoadableBaseOptions[?], P](x: Self & LoadableBaseOptions[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableBaseOptions[?], P] (val x: Self & LoadableBaseOptions[P]) extends AnyVal {
       
       inline def setLoadableGenerated(value: LoadableGeneratedOptions): Self = StObject.set(x, "loadableGenerated", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object distLibDynamicMod {
       __obj.asInstanceOf[LoadableGeneratedOptions]
     }
     
-    extension [Self <: LoadableGeneratedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableGeneratedOptions] (val x: Self) extends AnyVal {
       
       inline def setModules(value: () => LoaderMap): Self = StObject.set(x, "modules", js.Any.fromFunction0(value))
       
@@ -131,7 +134,8 @@ object distLibDynamicMod {
       __obj.asInstanceOf[LoadableOptions[P]]
     }
     
-    extension [Self <: LoadableOptions[?], P](x: Self & LoadableOptions[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadableOptions[?], P] (val x: Self & LoadableOptions[P]) extends AnyVal {
       
       inline def setRender(value: (/* loader */ Any, /* props */ Any) => Element): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
       

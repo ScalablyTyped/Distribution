@@ -104,7 +104,8 @@ object Acknowledged {
     __obj.asInstanceOf[Acknowledged]
   }
   
-  extension [Self <: Acknowledged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acknowledged] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

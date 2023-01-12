@@ -29,7 +29,8 @@ object namespacesUserScriptsMod {
         __obj.asInstanceOf[RegisteredUserScript]
       }
       
-      extension [Self <: RegisteredUserScript](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RegisteredUserScript] (val x: Self) extends AnyVal {
         
         inline def setUnregister(value: () => Unit): Self = StObject.set(x, "unregister", js.Any.fromFunction0(value))
       }
@@ -52,7 +53,8 @@ object namespacesUserScriptsMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setRegister(value: UserScriptOptions => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
       }
@@ -126,7 +128,8 @@ object namespacesUserScriptsMod {
         __obj.asInstanceOf[UserScriptOptions]
       }
       
-      extension [Self <: UserScriptOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UserScriptOptions] (val x: Self) extends AnyVal {
         
         inline def setAllFrames(value: Boolean): Self = StObject.set(x, "allFrames", value.asInstanceOf[js.Any])
         

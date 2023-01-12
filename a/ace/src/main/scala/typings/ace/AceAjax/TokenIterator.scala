@@ -44,7 +44,8 @@ object TokenIterator {
     __obj.asInstanceOf[TokenIterator]
   }
   
-  extension [Self <: TokenIterator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenIterator] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentToken(value: () => TokenInfo): Self = StObject.set(x, "getCurrentToken", js.Any.fromFunction0(value))
     

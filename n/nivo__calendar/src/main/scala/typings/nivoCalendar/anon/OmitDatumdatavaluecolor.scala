@@ -24,7 +24,8 @@ object OmitDatumdatavaluecolor {
     __obj.asInstanceOf[OmitDatumdatavaluecolor]
   }
   
-  extension [Self <: OmitDatumdatavaluecolor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitDatumdatavaluecolor] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

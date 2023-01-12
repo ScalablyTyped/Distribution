@@ -17,7 +17,8 @@ object XpackUsageEqlFeaturesPipes {
     __obj.asInstanceOf[XpackUsageEqlFeaturesPipes]
   }
   
-  extension [Self <: XpackUsageEqlFeaturesPipes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageEqlFeaturesPipes] (val x: Self) extends AnyVal {
     
     inline def setPipe_head(value: uint): Self = StObject.set(x, "pipe_head", value.asInstanceOf[js.Any])
     

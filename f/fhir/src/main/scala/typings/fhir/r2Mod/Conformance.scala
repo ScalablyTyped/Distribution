@@ -169,7 +169,8 @@ object Conformance {
     __obj.asInstanceOf[Conformance]
   }
   
-  extension [Self <: Conformance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conformance] (val x: Self) extends AnyVal {
     
     inline def setAcceptUnknown(value: no | extensions | elements | both): Self = StObject.set(x, "acceptUnknown", value.asInstanceOf[js.Any])
     

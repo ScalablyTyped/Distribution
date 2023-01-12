@@ -39,7 +39,8 @@ object srcAddressMod {
       __obj.asInstanceOf[Base58CheckResult]
     }
     
-    extension [Self <: Base58CheckResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base58CheckResult] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Buffer): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object srcAddressMod {
       __obj.asInstanceOf[Bech32Result]
     }
     
-    extension [Self <: Bech32Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bech32Result] (val x: Self) extends AnyVal {
       
       inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -307,7 +307,8 @@ object libComponentsPickersBasePickerDottypesMod {
       __obj.asInstanceOf[IBasePickerStyleProps]
     }
     
-    extension [Self <: IBasePickerStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasePickerStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object libComponentsPickersBasePickerDottypesMod {
       __obj.asInstanceOf[IBasePickerStyles]
     }
     
-    extension [Self <: IBasePickerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasePickerStyles] (val x: Self) extends AnyVal {
       
       inline def setInput(value: IStyle): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -440,7 +442,8 @@ object libComponentsPickersBasePickerDottypesMod {
       __obj.asInstanceOf[IBasePickerSuggestionsProps[T]]
     }
     
-    extension [Self <: IBasePickerSuggestionsProps[?], T](x: Self & IBasePickerSuggestionsProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBasePickerSuggestionsProps[?], T] (val x: Self & IBasePickerSuggestionsProps[T]) extends AnyVal {
       
       inline def setClassName(value: Any): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -538,7 +541,8 @@ object libComponentsPickersBasePickerDottypesMod {
       __obj.asInstanceOf[IInputProps]
     }
     
-    extension [Self <: IInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IInputProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultVisibleValue(value: String): Self = StObject.set(x, "defaultVisibleValue", value.asInstanceOf[js.Any])
       

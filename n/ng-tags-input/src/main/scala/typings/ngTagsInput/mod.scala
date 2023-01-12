@@ -54,7 +54,8 @@ object mod {
           __obj.asInstanceOf[AutocompleteParams]
         }
         
-        extension [Self <: AutocompleteParams](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: AutocompleteParams] (val x: Self) extends AnyVal {
           
           inline def setDebounceDelay(value: Double | Boolean): Self = StObject.set(x, "debounceDelay", value.asInstanceOf[js.Any])
           
@@ -206,7 +207,8 @@ object mod {
           __obj.asInstanceOf[TagsInputParams]
         }
         
-        extension [Self <: TagsInputParams](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: TagsInputParams] (val x: Self) extends AnyVal {
           
           inline def setAddFromAutocompleteOnly(value: Boolean): Self = StObject.set(x, "addFromAutocompleteOnly", value.asInstanceOf[js.Any])
           

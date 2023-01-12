@@ -23,7 +23,8 @@ object SearchQuantumTasksResponse {
     __obj.asInstanceOf[SearchQuantumTasksResponse]
   }
   
-  extension [Self <: SearchQuantumTasksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQuantumTasksResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object AddPhoneCalendarOption {
     __obj.asInstanceOf[AddPhoneCalendarOption]
   }
   
-  extension [Self <: AddPhoneCalendarOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPhoneCalendarOption] (val x: Self) extends AnyVal {
     
     inline def setAlarm(value: Boolean): Self = StObject.set(x, "alarm", value.asInstanceOf[js.Any])
     

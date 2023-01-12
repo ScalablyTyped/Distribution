@@ -21,7 +21,8 @@ object OnExitMetaData {
     __obj.asInstanceOf[OnExitMetaData]
   }
   
-  extension [Self <: OnExitMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnExitMetaData] (val x: Self) extends AnyVal {
     
     inline def setInstitution(value: Institution): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
     

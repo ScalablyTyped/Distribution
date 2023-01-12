@@ -30,7 +30,8 @@ object AnalysisPathHierarchyTokenizer {
     __obj.asInstanceOf[AnalysisPathHierarchyTokenizer]
   }
   
-  extension [Self <: AnalysisPathHierarchyTokenizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPathHierarchyTokenizer] (val x: Self) extends AnyVal {
     
     inline def setBuffer_size(value: integer): Self = StObject.set(x, "buffer_size", value.asInstanceOf[js.Any])
     

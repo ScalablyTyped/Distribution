@@ -49,7 +49,8 @@ object PartialStyleRulesFormHelp {
     __obj.asInstanceOf[PartialStyleRulesFormHelp]
   }
   
-  extension [Self <: PartialStyleRulesFormHelp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesFormHelp] (val x: Self) extends AnyVal {
     
     inline def setContained(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

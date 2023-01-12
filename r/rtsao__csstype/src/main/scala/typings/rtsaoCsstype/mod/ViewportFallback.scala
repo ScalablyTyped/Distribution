@@ -67,7 +67,8 @@ object ViewportFallback {
     __obj.asInstanceOf[ViewportFallback[TLength]]
   }
   
-  extension [Self <: ViewportFallback[?], TLength](x: Self & ViewportFallback[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewportFallback[?], TLength] (val x: Self & ViewportFallback[TLength]) extends AnyVal {
     
     inline def setHeight(value: ViewportHeightProperty[TLength] | js.Array[ViewportHeightProperty[TLength]]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

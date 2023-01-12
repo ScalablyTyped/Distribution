@@ -30,7 +30,8 @@ object ASPxDesignerOpenDialog {
     __obj.asInstanceOf[ASPxDesignerOpenDialog]
   }
   
-  extension [Self <: ASPxDesignerOpenDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerOpenDialog] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: String => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }

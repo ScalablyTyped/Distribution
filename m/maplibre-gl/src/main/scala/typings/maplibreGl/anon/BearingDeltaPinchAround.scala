@@ -18,7 +18,8 @@ object BearingDeltaPinchAround {
     __obj.asInstanceOf[BearingDeltaPinchAround]
   }
   
-  extension [Self <: BearingDeltaPinchAround](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BearingDeltaPinchAround] (val x: Self) extends AnyVal {
     
     inline def setBearingDelta(value: Double): Self = StObject.set(x, "bearingDelta", value.asInstanceOf[js.Any])
     

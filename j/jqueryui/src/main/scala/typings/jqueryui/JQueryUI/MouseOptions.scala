@@ -20,7 +20,8 @@ object MouseOptions {
     __obj.asInstanceOf[MouseOptions]
   }
   
-  extension [Self <: MouseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseOptions] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: String): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

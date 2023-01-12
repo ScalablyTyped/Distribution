@@ -106,7 +106,8 @@ object WebRequestEventInterface {
     __obj.asInstanceOf[WebRequestEventInterface]
   }
   
-  extension [Self <: WebRequestEventInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebRequestEventInterface] (val x: Self) extends AnyVal {
     
     inline def setOnAuthRequired(value: WebAuthenticationChallengeEvent): Self = StObject.set(x, "onAuthRequired", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GenerateIdsParameters {
     __obj.asInstanceOf[GenerateIdsParameters]
   }
   
-  extension [Self <: GenerateIdsParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateIdsParameters] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: Double): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

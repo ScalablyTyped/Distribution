@@ -101,7 +101,8 @@ object QuickInput {
     __obj.asInstanceOf[QuickInput]
   }
   
-  extension [Self <: QuickInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuickInput] (val x: Self) extends AnyVal {
     
     inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
     

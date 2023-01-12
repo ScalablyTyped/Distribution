@@ -20,7 +20,8 @@ object LayersMixinProperties {
     __obj.asInstanceOf[LayersMixinProperties]
   }
   
-  extension [Self <: LayersMixinProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayersMixinProperties] (val x: Self) extends AnyVal {
     
     inline def setLayers(value: CollectionProperties[LayerProperties] | js.Array[LayerProperties]): Self = StObject.set(x, "layers", value.asInstanceOf[js.Any])
     

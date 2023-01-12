@@ -25,7 +25,8 @@ object PickImplsuccessPartialPicActive {
     __obj.asInstanceOf[PickImplsuccessPartialPicActive]
   }
   
-  extension [Self <: PickImplsuccessPartialPicActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplsuccessPartialPicActive] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

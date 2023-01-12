@@ -19,7 +19,8 @@ object TypeofFUNCTIONKILL {
     __obj.asInstanceOf[TypeofFUNCTIONKILL]
   }
   
-  extension [Self <: TypeofFUNCTIONKILL](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFUNCTIONKILL] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: () => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction0(value))
     

@@ -17,7 +17,8 @@ object PivotDataSourceV2Transport {
     __obj.asInstanceOf[PivotDataSourceV2Transport]
   }
   
-  extension [Self <: PivotDataSourceV2Transport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotDataSourceV2Transport] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: PivotDataSourceV2TransportConnection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

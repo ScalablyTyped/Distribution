@@ -28,7 +28,8 @@ object OutputLogEvent {
     __obj.asInstanceOf[OutputLogEvent]
   }
   
-  extension [Self <: OutputLogEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputLogEvent] (val x: Self) extends AnyVal {
     
     inline def setIngestionTime(value: Timestamp): Self = StObject.set(x, "ingestionTime", value.asInstanceOf[js.Any])
     

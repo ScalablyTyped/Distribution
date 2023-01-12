@@ -106,7 +106,8 @@ object DOMDebugger {
       __obj.asInstanceOf[EventListener]
     }
     
-    extension [Self <: EventListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventListener] (val x: Self) extends AnyVal {
       
       inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object DOMDebugger {
       __obj.asInstanceOf[GetEventListenersRequest]
     }
     
-    extension [Self <: GetEventListenersRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEventListenersRequest] (val x: Self) extends AnyVal {
       
       inline def setDepth(value: integer): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object DOMDebugger {
       __obj.asInstanceOf[GetEventListenersResponse]
     }
     
-    extension [Self <: GetEventListenersResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetEventListenersResponse] (val x: Self) extends AnyVal {
       
       inline def setListeners(value: js.Array[EventListener]): Self = StObject.set(x, "listeners", value.asInstanceOf[js.Any])
       
@@ -218,7 +221,8 @@ object DOMDebugger {
       __obj.asInstanceOf[RemoveDOMBreakpointRequest]
     }
     
-    extension [Self <: RemoveDOMBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveDOMBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
@@ -245,7 +249,8 @@ object DOMDebugger {
       __obj.asInstanceOf[RemoveEventListenerBreakpointRequest]
     }
     
-    extension [Self <: RemoveEventListenerBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveEventListenerBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -269,7 +274,8 @@ object DOMDebugger {
       __obj.asInstanceOf[RemoveInstrumentationBreakpointRequest]
     }
     
-    extension [Self <: RemoveInstrumentationBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
@@ -289,7 +295,8 @@ object DOMDebugger {
       __obj.asInstanceOf[RemoveXHRBreakpointRequest]
     }
     
-    extension [Self <: RemoveXHRBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveXHRBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }
@@ -309,7 +316,8 @@ object DOMDebugger {
       __obj.asInstanceOf[SetBreakOnCSPViolationRequest]
     }
     
-    extension [Self <: SetBreakOnCSPViolationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetBreakOnCSPViolationRequest] (val x: Self) extends AnyVal {
       
       inline def setViolationTypes(value: js.Array[CSPViolationType]): Self = StObject.set(x, "violationTypes", value.asInstanceOf[js.Any])
       
@@ -337,7 +345,8 @@ object DOMDebugger {
       __obj.asInstanceOf[SetDOMBreakpointRequest]
     }
     
-    extension [Self <: SetDOMBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDOMBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setNodeId(value: NodeId): Self = StObject.set(x, "nodeId", value.asInstanceOf[js.Any])
       
@@ -365,7 +374,8 @@ object DOMDebugger {
       __obj.asInstanceOf[SetEventListenerBreakpointRequest]
     }
     
-    extension [Self <: SetEventListenerBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetEventListenerBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
       
@@ -389,7 +399,8 @@ object DOMDebugger {
       __obj.asInstanceOf[SetInstrumentationBreakpointRequest]
     }
     
-    extension [Self <: SetInstrumentationBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetInstrumentationBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setEventName(value: String): Self = StObject.set(x, "eventName", value.asInstanceOf[js.Any])
     }
@@ -409,7 +420,8 @@ object DOMDebugger {
       __obj.asInstanceOf[SetXHRBreakpointRequest]
     }
     
-    extension [Self <: SetXHRBreakpointRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetXHRBreakpointRequest] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     }

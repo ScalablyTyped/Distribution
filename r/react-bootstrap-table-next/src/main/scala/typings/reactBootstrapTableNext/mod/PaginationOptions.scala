@@ -70,7 +70,8 @@ object PaginationOptions {
     __obj.asInstanceOf[PaginationOptions]
   }
   
-  extension [Self <: PaginationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlwaysShowAllBtns(value: Boolean): Self = StObject.set(x, "alwaysShowAllBtns", value.asInstanceOf[js.Any])
     

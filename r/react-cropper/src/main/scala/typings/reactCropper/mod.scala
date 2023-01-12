@@ -782,7 +782,8 @@ object mod {
       __obj.asInstanceOf[ReactCropperProps]
     }
     
-    extension [Self <: ReactCropperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactCropperProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object libRowBufferDotinterfaceMod {
       __obj.asInstanceOf[RowBufferInterface]
     }
     
-    extension [Self <: RowBufferInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowBufferInterface] (val x: Self) extends AnyVal {
       
       inline def setColumnData(value: StringDictionary[Count]): Self = StObject.set(x, "columnData", value.asInstanceOf[js.Any])
       

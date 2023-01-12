@@ -29,7 +29,8 @@ object MouseHandlerOptions {
     __obj.asInstanceOf[MouseHandlerOptions]
   }
   
-  extension [Self <: MouseHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setDragDelay(value: Double): Self = StObject.set(x, "dragDelay", value.asInstanceOf[js.Any])
     

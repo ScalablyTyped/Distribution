@@ -54,7 +54,8 @@ object srcUritemplateMod extends Shortcut {
       __obj.asInstanceOf[URITemplateExpression]
     }
     
-    extension [Self <: URITemplateExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URITemplateExpression] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object srcUritemplateMod extends Shortcut {
       __obj.asInstanceOf[URITemplateVariable]
     }
     
-    extension [Self <: URITemplateVariable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: URITemplateVariable] (val x: Self) extends AnyVal {
       
       inline def setExplode(value: Boolean): Self = StObject.set(x, "explode", value.asInstanceOf[js.Any])
       

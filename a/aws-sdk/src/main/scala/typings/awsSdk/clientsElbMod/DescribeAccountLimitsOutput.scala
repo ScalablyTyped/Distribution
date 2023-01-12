@@ -23,7 +23,8 @@ object DescribeAccountLimitsOutput {
     __obj.asInstanceOf[DescribeAccountLimitsOutput]
   }
   
-  extension [Self <: DescribeAccountLimitsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccountLimitsOutput] (val x: Self) extends AnyVal {
     
     inline def setLimits(value: Limits): Self = StObject.set(x, "Limits", value.asInstanceOf[js.Any])
     

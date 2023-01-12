@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Actual]
     }
     
-    extension [Self <: Actual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
       
       inline def setActual(value: String | Double): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object anon {
       __obj.asInstanceOf[OmitAsymmetricMatchersany]
     }
     
-    extension [Self <: OmitAsymmetricMatchersany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitAsymmetricMatchersany] (val x: Self) extends AnyVal {
       
       inline def setArrayContaining(value: /* sample */ js.Array[Any] => AsymmetricMatcher2): Self = StObject.set(x, "arrayContaining", js.Any.fromFunction1(value))
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[OmitSyncExpectationResult]
     }
     
-    extension [Self <: OmitSyncExpectationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitSyncExpectationResult] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -146,7 +149,8 @@ object anon {
       __obj.asInstanceOf[PartialMatcherState]
     }
     
-    extension [Self <: PartialMatcherState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMatcherState] (val x: Self) extends AnyVal {
       
       inline def setAssertionCalls(value: Double): Self = StObject.set(x, "assertionCalls", value.asInstanceOf[js.Any])
       

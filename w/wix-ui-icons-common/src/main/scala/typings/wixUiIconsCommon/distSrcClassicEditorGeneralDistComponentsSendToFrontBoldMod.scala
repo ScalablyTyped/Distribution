@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsSendToFrontBoldMod extends Short
       __obj.asInstanceOf[SendToFrontBoldProps]
     }
     
-    extension [Self <: SendToFrontBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendToFrontBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

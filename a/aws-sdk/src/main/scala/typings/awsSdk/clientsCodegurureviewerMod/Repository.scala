@@ -30,7 +30,8 @@ object Repository {
     __obj.asInstanceOf[Repository]
   }
   
-  extension [Self <: Repository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repository] (val x: Self) extends AnyVal {
     
     inline def setBitbucket(value: ThirdPartySourceRepository): Self = StObject.set(x, "Bitbucket", value.asInstanceOf[js.Any])
     

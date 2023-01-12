@@ -18,7 +18,8 @@ object JsonLogicFilter {
     __obj.asInstanceOf[JsonLogicFilter[AddOps]]
   }
   
-  extension [Self <: JsonLogicFilter[?], AddOps /* <: AdditionalOperation */](x: Self & JsonLogicFilter[AddOps]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonLogicFilter[?], AddOps /* <: AdditionalOperation */] (val x: Self & JsonLogicFilter[AddOps]) extends AnyVal {
     
     inline def setFilter(value: js.Tuple2[RulesLogic[AddOps], RulesLogic[AddOps]]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
   }

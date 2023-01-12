@@ -15,7 +15,8 @@ object Bearer {
     __obj.asInstanceOf[Bearer]
   }
   
-  extension [Self <: Bearer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bearer] (val x: Self) extends AnyVal {
     
     inline def setBearer(value: String): Self = StObject.set(x, "bearer", value.asInstanceOf[js.Any])
   }

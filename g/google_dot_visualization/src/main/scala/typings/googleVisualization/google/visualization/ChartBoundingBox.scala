@@ -21,7 +21,8 @@ object ChartBoundingBox {
     __obj.asInstanceOf[ChartBoundingBox]
   }
   
-  extension [Self <: ChartBoundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartBoundingBox] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

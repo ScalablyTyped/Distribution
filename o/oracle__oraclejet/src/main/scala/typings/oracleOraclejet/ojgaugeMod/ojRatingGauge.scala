@@ -374,7 +374,8 @@ object ojRatingGauge {
       __obj.asInstanceOf[Threshold]
     }
     
-    extension [Self <: Threshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
       
       inline def setBorderColor(value: String): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])
       
@@ -412,7 +413,8 @@ object ojRatingGauge {
       __obj.asInstanceOf[TooltipContext]
     }
     
-    extension [Self <: TooltipContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

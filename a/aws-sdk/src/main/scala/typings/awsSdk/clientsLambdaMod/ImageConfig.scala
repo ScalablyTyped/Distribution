@@ -28,7 +28,8 @@ object ImageConfig {
     __obj.asInstanceOf[ImageConfig]
   }
   
-  extension [Self <: ImageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageConfig] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: StringList): Self = StObject.set(x, "Command", value.asInstanceOf[js.Any])
     

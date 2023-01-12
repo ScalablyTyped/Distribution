@@ -22,7 +22,8 @@ object ArrayBufferTypes {
     __obj.asInstanceOf[ArrayBufferTypes]
   }
   
-  extension [Self <: ArrayBufferTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayBufferTypes] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "ArrayBuffer", value.asInstanceOf[js.Any])
     

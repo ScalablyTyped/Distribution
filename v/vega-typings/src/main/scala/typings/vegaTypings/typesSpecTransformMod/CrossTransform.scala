@@ -25,7 +25,8 @@ object CrossTransform {
     __obj.asInstanceOf[CrossTransform]
   }
   
-  extension [Self <: CrossTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: (Vector2[String | SignalRef]) | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

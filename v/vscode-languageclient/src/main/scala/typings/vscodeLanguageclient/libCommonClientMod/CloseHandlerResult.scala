@@ -23,7 +23,8 @@ object CloseHandlerResult {
     __obj.asInstanceOf[CloseHandlerResult]
   }
   
-  extension [Self <: CloseHandlerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseHandlerResult] (val x: Self) extends AnyVal {
     
     inline def setAction(value: CloseAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

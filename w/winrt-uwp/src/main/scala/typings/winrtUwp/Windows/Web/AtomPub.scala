@@ -163,7 +163,8 @@ object AtomPub {
       __obj.asInstanceOf[AtomPubClient]
     }
     
-    extension [Self <: AtomPubClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AtomPubClient] (val x: Self) extends AnyVal {
       
       inline def setBypassCacheOnRetrieve(value: Boolean): Self = StObject.set(x, "bypassCacheOnRetrieve", value.asInstanceOf[js.Any])
       
@@ -270,7 +271,8 @@ object AtomPub {
       __obj.asInstanceOf[ResourceCollection]
     }
     
-    extension [Self <: ResourceCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResourceCollection] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: IVectorView[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object AtomPub {
       __obj.asInstanceOf[ServiceDocument]
     }
     
-    extension [Self <: ServiceDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceDocument] (val x: Self) extends AnyVal {
       
       inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
       
@@ -426,7 +429,8 @@ object AtomPub {
       __obj.asInstanceOf[Workspace]
     }
     
-    extension [Self <: Workspace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Workspace] (val x: Self) extends AnyVal {
       
       inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
       

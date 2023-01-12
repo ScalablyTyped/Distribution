@@ -40,7 +40,8 @@ object DashManifest {
     __obj.asInstanceOf[DashManifest]
   }
   
-  extension [Self <: DashManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestLayout(value: ManifestLayout): Self = StObject.set(x, "ManifestLayout", value.asInstanceOf[js.Any])
     

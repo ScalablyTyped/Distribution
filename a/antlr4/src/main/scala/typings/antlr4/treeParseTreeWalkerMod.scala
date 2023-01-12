@@ -112,7 +112,8 @@ object treeParseTreeWalkerMod {
       __obj.asInstanceOf[ParseTreeWalker]
     }
     
-    extension [Self <: ParseTreeWalker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseTreeWalker] (val x: Self) extends AnyVal {
       
       inline def setEnterRule(
         value: (typings.antlr4.treeParseTreeListenerMod.default, typings.antlr4.treeRuleNodeMod.default) => Unit

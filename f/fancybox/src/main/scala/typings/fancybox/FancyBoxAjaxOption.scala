@@ -19,7 +19,8 @@ object FancyBoxAjaxOption {
     __obj.asInstanceOf[FancyBoxAjaxOption]
   }
   
-  extension [Self <: FancyBoxAjaxOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FancyBoxAjaxOption] (val x: Self) extends AnyVal {
     
     inline def setSettings(value: JQueryAjaxSettings): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
   }

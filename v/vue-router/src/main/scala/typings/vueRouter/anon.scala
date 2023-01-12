@@ -47,7 +47,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setDefault(
         value: /* param0 */ Component => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Component]
     }
     
-    extension [Self <: Component](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Component] (val x: Self) extends AnyVal {
       
       inline def setComponent(value: VNode[RendererNode, RendererElement, StringDictionary[Any]]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(
         value: /* param0 */ UnwrapRef[ReturnType[js.Function1[/* props */ UseLinkOptions, IsActive]]] => js.Array[VNode[RendererNode, RendererElement, StringDictionary[Any]]]
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[Href]
     }
     
-    extension [Self <: Href](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Href] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     }
@@ -172,7 +176,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterLinkProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
       
@@ -412,7 +417,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyArrayRouteRecordR]
     }
     
-    extension [Self <: ReadonlyArrayRouteRecordR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyArrayRouteRecordR] (val x: Self) extends AnyVal {
       
       inline def setAt(value: Double => js.UndefOr[RouteRecordRaw]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
       
@@ -610,7 +616,8 @@ object anon {
       __obj.asInstanceOf[RouteLocationhrefstring]
     }
     
-    extension [Self <: RouteLocationhrefstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteLocationhrefstring] (val x: Self) extends AnyVal {
       
       inline def setFullPath(value: String): Self = StObject.set(x, "fullPath", value.asInstanceOf[js.Any])
       
@@ -657,7 +664,8 @@ object anon {
       __obj.asInstanceOf[Slots]
     }
     
-    extension [Self <: Slots](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slots] (val x: Self) extends AnyVal {
       
       inline def set$props(value: AllowedComponentProps & ComponentCustomProps & VNodeProps & RouterViewProps): Self = StObject.set(x, "$props", value.asInstanceOf[js.Any])
       

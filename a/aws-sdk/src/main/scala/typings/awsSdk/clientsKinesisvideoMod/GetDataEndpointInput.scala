@@ -28,7 +28,8 @@ object GetDataEndpointInput {
     __obj.asInstanceOf[GetDataEndpointInput]
   }
   
-  extension [Self <: GetDataEndpointInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataEndpointInput] (val x: Self) extends AnyVal {
     
     inline def setAPIName(value: APIName): Self = StObject.set(x, "APIName", value.asInstanceOf[js.Any])
     

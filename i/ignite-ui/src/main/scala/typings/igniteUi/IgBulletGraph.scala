@@ -391,7 +391,8 @@ object IgBulletGraph {
     __obj.asInstanceOf[IgBulletGraph]
   }
   
-  extension [Self <: IgBulletGraph](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBulletGraph] (val x: Self) extends AnyVal {
     
     inline def setAlignLabel(value: (/* event */ Event, /* ui */ AlignLabelEventUIParam) => Unit): Self = StObject.set(x, "alignLabel", js.Any.fromFunction2(value))
     

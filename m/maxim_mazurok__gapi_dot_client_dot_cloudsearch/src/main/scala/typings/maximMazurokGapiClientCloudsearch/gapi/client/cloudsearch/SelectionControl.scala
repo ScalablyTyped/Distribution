@@ -27,7 +27,8 @@ object SelectionControl {
     __obj.asInstanceOf[SelectionControl]
   }
   
-  extension [Self <: SelectionControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionControl] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[SelectionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

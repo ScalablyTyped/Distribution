@@ -20,7 +20,8 @@ object DataSourceSchemaWithConstructorModel {
     __obj.asInstanceOf[DataSourceSchemaWithConstructorModel]
   }
   
-  extension [Self <: DataSourceSchemaWithConstructorModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceSchemaWithConstructorModel] (val x: Self) extends AnyVal {
     
     inline def setModel(value: TypeofModel & (Instantiable1[/* data */ js.UndefOr[Any], Model])): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

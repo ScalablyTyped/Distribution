@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedActions]
     }
     
-    extension [Self <: TypeofimportedActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedActions] (val x: Self) extends AnyVal {
       
       inline def setSetIsMatching(value: Record[String, Boolean] => Unit): Self = StObject.set(x, "setIsMatching", js.Any.fromFunction1(value))
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[TypeofimportedSelectors]
     }
     
-    extension [Self <: TypeofimportedSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofimportedSelectors] (val x: Self) extends AnyVal {
       
       inline def setIsViewportMatch(value: String => Boolean): Self = StObject.set(x, "isViewportMatch", js.Any.fromFunction1(value))
     }

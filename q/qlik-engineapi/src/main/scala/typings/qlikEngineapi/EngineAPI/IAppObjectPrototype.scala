@@ -17,7 +17,8 @@ object IAppObjectPrototype {
     __obj.asInstanceOf[IAppObjectPrototype[P, O]]
   }
   
-  extension [Self <: IAppObjectPrototype[?, ?], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */](x: Self & (IAppObjectPrototype[P, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAppObjectPrototype[?, ?], P /* <: IGenericObjectProperties */, O /* <: IGenericObject */] (val x: Self & (IAppObjectPrototype[P, O])) extends AnyVal {
     
     inline def setCreateObject(value: P => js.Promise[O]): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
     

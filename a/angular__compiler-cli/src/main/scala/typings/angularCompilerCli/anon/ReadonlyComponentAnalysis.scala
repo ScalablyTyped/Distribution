@@ -72,7 +72,8 @@ object ReadonlyComponentAnalysis {
     __obj.asInstanceOf[ReadonlyComponentAnalysis]
   }
   
-  extension [Self <: ReadonlyComponentAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyComponentAnalysis] (val x: Self) extends AnyVal {
     
     inline def setAnimationTriggerNames(value: AnimationTriggerNames): Self = StObject.set(x, "animationTriggerNames", value.asInstanceOf[js.Any])
     

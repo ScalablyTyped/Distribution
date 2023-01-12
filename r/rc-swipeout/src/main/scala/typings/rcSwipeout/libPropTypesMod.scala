@@ -32,7 +32,8 @@ object libPropTypesMod {
       __obj.asInstanceOf[IPropTypes]
     }
     
-    extension [Self <: IPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPropTypes] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object WebExtensionManifestChromeUrlOverrides {
     __obj.asInstanceOf[WebExtensionManifestChromeUrlOverrides]
   }
   
-  extension [Self <: WebExtensionManifestChromeUrlOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestChromeUrlOverrides] (val x: Self) extends AnyVal {
     
     inline def setBookmarks(value: ExtensionURL): Self = StObject.set(x, "bookmarks", value.asInstanceOf[js.Any])
     

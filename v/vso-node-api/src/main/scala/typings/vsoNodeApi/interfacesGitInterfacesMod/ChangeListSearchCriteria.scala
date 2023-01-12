@@ -92,7 +92,8 @@ object ChangeListSearchCriteria {
     __obj.asInstanceOf[ChangeListSearchCriteria]
   }
   
-  extension [Self <: ChangeListSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeListSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setCompareVersion(value: String): Self = StObject.set(x, "compareVersion", value.asInstanceOf[js.Any])
     

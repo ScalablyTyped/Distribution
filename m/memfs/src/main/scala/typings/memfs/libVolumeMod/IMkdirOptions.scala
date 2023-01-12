@@ -17,7 +17,8 @@ object IMkdirOptions {
     __obj.asInstanceOf[IMkdirOptions]
   }
   
-  extension [Self <: IMkdirOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMkdirOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: TMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

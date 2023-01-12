@@ -96,7 +96,8 @@ object mod {
       __obj.asInstanceOf[Drive]
     }
     
-    extension [Self <: Drive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Drive] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -177,7 +178,8 @@ object mod {
       __obj.asInstanceOf[MountPoint]
     }
     
-    extension [Self <: MountPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MountPoint] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

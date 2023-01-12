@@ -35,7 +35,8 @@ object commonApiGatewayMod {
       __obj.asInstanceOf[APIGatewayEventClientCertificate]
     }
     
-    extension [Self <: APIGatewayEventClientCertificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventClientCertificate] (val x: Self) extends AnyVal {
       
       inline def setClientCertPem(value: String): Self = StObject.set(x, "clientCertPem", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object commonApiGatewayMod {
       __obj.asInstanceOf[APIGatewayEventIdentity]
     }
     
-    extension [Self <: APIGatewayEventIdentity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventIdentity] (val x: Self) extends AnyVal {
       
       inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object commonApiGatewayMod {
       __obj.asInstanceOf[APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]]
     }
     
-    extension [Self <: APIGatewayEventRequestContextWithAuthorizer[?], TAuthorizerContext](x: Self & APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: APIGatewayEventRequestContextWithAuthorizer[?], TAuthorizerContext] (val x: Self & APIGatewayEventRequestContextWithAuthorizer[TAuthorizerContext]) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       

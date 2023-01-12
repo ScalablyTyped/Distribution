@@ -23,7 +23,8 @@ object UpdateLabelGroupRequest {
     __obj.asInstanceOf[UpdateLabelGroupRequest]
   }
   
-  extension [Self <: UpdateLabelGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateLabelGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setFaultCodes(value: FaultCodes): Self = StObject.set(x, "FaultCodes", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object distLibCommandsFunctionLISTWITHCODEMod {
       __obj.asInstanceOf[FunctionListWithCodeItemReply]
     }
     
-    extension [Self <: FunctionListWithCodeItemReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionListWithCodeItemReply] (val x: Self) extends AnyVal {
       
       inline def setLibraryCode(value: String): Self = StObject.set(x, "libraryCode", value.asInstanceOf[js.Any])
     }

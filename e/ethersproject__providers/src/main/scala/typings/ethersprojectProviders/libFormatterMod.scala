@@ -111,7 +111,8 @@ object libFormatterMod {
       __obj.asInstanceOf[CommunityResourcable]
     }
     
-    extension [Self <: CommunityResourcable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommunityResourcable] (val x: Self) extends AnyVal {
       
       inline def setIsCommunityResource(value: () => Boolean): Self = StObject.set(x, "isCommunityResource", js.Any.fromFunction0(value))
     }
@@ -155,7 +156,8 @@ object libFormatterMod {
       __obj.asInstanceOf[Formats]
     }
     
-    extension [Self <: Formats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: FormatFuncs): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

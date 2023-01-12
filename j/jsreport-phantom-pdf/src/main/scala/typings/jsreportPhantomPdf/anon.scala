@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowLocalFilesAccess(value: Boolean): Self = StObject.set(x, "allowLocalFilesAccess", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object anon {
       __obj.asInstanceOf[PartialPhantom]
     }
     
-    extension [Self <: PartialPhantom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPhantom] (val x: Self) extends AnyVal {
       
       inline def setBlockJavaScript(value: Boolean): Self = StObject.set(x, "blockJavaScript", value.asInstanceOf[js.Any])
       

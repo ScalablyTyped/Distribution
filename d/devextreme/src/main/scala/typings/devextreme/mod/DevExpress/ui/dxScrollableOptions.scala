@@ -67,7 +67,8 @@ object dxScrollableOptions {
     __obj.asInstanceOf[dxScrollableOptions[TComponent]]
   }
   
-  extension [Self <: dxScrollableOptions[?], TComponent](x: Self & dxScrollableOptions[TComponent]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxScrollableOptions[?], TComponent] (val x: Self & dxScrollableOptions[TComponent]) extends AnyVal {
     
     inline def setBounceEnabled(value: Boolean): Self = StObject.set(x, "bounceEnabled", value.asInstanceOf[js.Any])
     

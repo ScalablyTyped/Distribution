@@ -33,7 +33,8 @@ object ListTopicRulesRequest {
     __obj.asInstanceOf[ListTopicRulesRequest]
   }
   
-  extension [Self <: ListTopicRulesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTopicRulesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: TopicRuleMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

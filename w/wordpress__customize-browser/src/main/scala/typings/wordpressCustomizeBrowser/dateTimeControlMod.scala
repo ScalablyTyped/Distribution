@@ -55,7 +55,8 @@ object dateTimeControlMod {
       __obj.asInstanceOf[DateTime]
     }
     
-    extension [Self <: DateTime](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTime] (val x: Self) extends AnyVal {
       
       inline def setDay(value: String): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
       

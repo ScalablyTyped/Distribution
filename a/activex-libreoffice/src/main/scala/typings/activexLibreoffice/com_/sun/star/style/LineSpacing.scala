@@ -23,7 +23,8 @@ object LineSpacing {
     __obj.asInstanceOf[LineSpacing]
   }
   
-  extension [Self <: LineSpacing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSpacing] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

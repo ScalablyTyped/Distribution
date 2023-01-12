@@ -21,7 +21,8 @@ object FloatAttribute {
     __obj.asInstanceOf[FloatAttribute]
   }
   
-  extension [Self <: FloatAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatAttribute] (val x: Self) extends AnyVal {
     
     inline def setType(value: float): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object IControlChannelTriggerEventDetails {
     __obj.asInstanceOf[IControlChannelTriggerEventDetails]
   }
   
-  extension [Self <: IControlChannelTriggerEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IControlChannelTriggerEventDetails] (val x: Self) extends AnyVal {
     
     inline def setControlChannelTrigger(value: ControlChannelTrigger): Self = StObject.set(x, "controlChannelTrigger", value.asInstanceOf[js.Any])
   }

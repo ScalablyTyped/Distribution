@@ -20,7 +20,8 @@ object Subject {
     __obj.asInstanceOf[Subject]
   }
   
-  extension [Self <: Subject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subject] (val x: Self) extends AnyVal {
     
     inline def setDigest(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

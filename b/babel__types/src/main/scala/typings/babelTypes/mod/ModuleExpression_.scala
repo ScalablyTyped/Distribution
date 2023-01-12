@@ -24,7 +24,8 @@ object ModuleExpression_ {
     __obj.asInstanceOf[ModuleExpression_]
   }
   
-  extension [Self <: ModuleExpression_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModuleExpression_] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Program_): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

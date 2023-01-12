@@ -24,7 +24,8 @@ object Codespan {
     __obj.asInstanceOf[Codespan]
   }
   
-  extension [Self <: Codespan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codespan] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

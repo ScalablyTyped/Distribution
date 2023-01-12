@@ -23,7 +23,8 @@ object PathWidth {
     __obj.asInstanceOf[PathWidth]
   }
   
-  extension [Self <: PathWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathWidth] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

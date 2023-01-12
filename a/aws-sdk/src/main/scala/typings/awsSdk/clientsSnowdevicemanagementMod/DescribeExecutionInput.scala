@@ -23,7 +23,8 @@ object DescribeExecutionInput {
     __obj.asInstanceOf[DescribeExecutionInput]
   }
   
-  extension [Self <: DescribeExecutionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExecutionInput] (val x: Self) extends AnyVal {
     
     inline def setManagedDeviceId(value: ManagedDeviceId): Self = StObject.set(x, "managedDeviceId", value.asInstanceOf[js.Any])
     

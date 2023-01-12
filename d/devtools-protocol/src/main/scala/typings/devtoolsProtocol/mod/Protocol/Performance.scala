@@ -22,7 +22,8 @@ object Performance {
       __obj.asInstanceOf[EnableRequest]
     }
     
-    extension [Self <: EnableRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableRequest] (val x: Self) extends AnyVal {
       
       inline def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object Performance {
       __obj.asInstanceOf[GetMetricsResponse]
     }
     
-    extension [Self <: GetMetricsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetMetricsResponse] (val x: Self) extends AnyVal {
       
       inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object Performance {
       __obj.asInstanceOf[Metric]
     }
     
-    extension [Self <: Metric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object Performance {
       __obj.asInstanceOf[MetricsEvent]
     }
     
-    extension [Self <: MetricsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsEvent] (val x: Self) extends AnyVal {
       
       inline def setMetrics(value: js.Array[Metric]): Self = StObject.set(x, "metrics", value.asInstanceOf[js.Any])
       
@@ -134,7 +138,8 @@ object Performance {
       __obj.asInstanceOf[SetTimeDomainRequest]
     }
     
-    extension [Self <: SetTimeDomainRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetTimeDomainRequest] (val x: Self) extends AnyVal {
       
       inline def setTimeDomain(value: timeTicks | threadTicks): Self = StObject.set(x, "timeDomain", value.asInstanceOf[js.Any])
     }

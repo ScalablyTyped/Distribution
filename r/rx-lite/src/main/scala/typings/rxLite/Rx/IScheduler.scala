@@ -90,7 +90,8 @@ object IScheduler {
     __obj.asInstanceOf[IScheduler]
   }
   
-  extension [Self <: IScheduler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduler] (val x: Self) extends AnyVal {
     
     inline def setIsScheduler(value: Any => Boolean): Self = StObject.set(x, "isScheduler", js.Any.fromFunction1(value))
     

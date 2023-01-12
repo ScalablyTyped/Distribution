@@ -17,7 +17,8 @@ object AccordionGroupEventArgs {
     __obj.asInstanceOf[AccordionGroupEventArgs]
   }
   
-  extension [Self <: AccordionGroupEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccordionGroupEventArgs] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: BootstrapAccordionGroup): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
   }

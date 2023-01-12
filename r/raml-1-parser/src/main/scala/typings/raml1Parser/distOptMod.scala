@@ -128,7 +128,8 @@ object distOptMod {
       __obj.asInstanceOf[Opt[T]]
     }
     
-    extension [Self <: Opt[?], T](x: Self & Opt[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opt[?], T] (val x: Self & Opt[T]) extends AnyVal {
       
       inline def setEquals_(value: Opt[T] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
       

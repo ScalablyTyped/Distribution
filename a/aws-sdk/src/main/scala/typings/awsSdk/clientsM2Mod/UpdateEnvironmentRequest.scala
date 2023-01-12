@@ -43,7 +43,8 @@ object UpdateEnvironmentRequest {
     __obj.asInstanceOf[UpdateEnvironmentRequest]
   }
   
-  extension [Self <: UpdateEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setApplyDuringMaintenanceWindow(value: Boolean): Self = StObject.set(x, "applyDuringMaintenanceWindow", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PrioritizeBusinessGoals {
     __obj.asInstanceOf[PrioritizeBusinessGoals]
   }
   
-  extension [Self <: PrioritizeBusinessGoals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrioritizeBusinessGoals] (val x: Self) extends AnyVal {
     
     inline def setBusinessGoals(value: BusinessGoals): Self = StObject.set(x, "businessGoals", value.asInstanceOf[js.Any])
     

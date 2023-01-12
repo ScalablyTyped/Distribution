@@ -19,7 +19,8 @@ object Envelope3DBounds {
     __obj.asInstanceOf[Envelope3DBounds]
   }
   
-  extension [Self <: Envelope3DBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envelope3DBounds] (val x: Self) extends AnyVal {
     
     inline def setMaxZ(value: Double): Self = StObject.set(x, "maxZ", value.asInstanceOf[js.Any])
     

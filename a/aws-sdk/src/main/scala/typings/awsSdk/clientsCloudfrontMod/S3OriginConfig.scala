@@ -18,7 +18,8 @@ object S3OriginConfig {
     __obj.asInstanceOf[S3OriginConfig]
   }
   
-  extension [Self <: S3OriginConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3OriginConfig] (val x: Self) extends AnyVal {
     
     inline def setOriginAccessIdentity(value: String): Self = StObject.set(x, "OriginAccessIdentity", value.asInstanceOf[js.Any])
   }

@@ -80,7 +80,8 @@ object XStorageBasedLibraryContainer {
     __obj.asInstanceOf[XStorageBasedLibraryContainer]
   }
   
-  extension [Self <: XStorageBasedLibraryContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorageBasedLibraryContainer] (val x: Self) extends AnyVal {
     
     inline def setRootStorage(value: XStorage): Self = StObject.set(x, "RootStorage", value.asInstanceOf[js.Any])
     

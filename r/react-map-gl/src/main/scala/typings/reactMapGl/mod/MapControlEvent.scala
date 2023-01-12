@@ -36,7 +36,8 @@ object MapControlEvent {
     __obj.asInstanceOf[MapControlEvent]
   }
   
-  extension [Self <: MapControlEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapControlEvent] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Center): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

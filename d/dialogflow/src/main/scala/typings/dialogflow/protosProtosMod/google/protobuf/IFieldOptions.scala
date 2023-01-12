@@ -51,7 +51,8 @@ object IFieldOptions {
     __obj.asInstanceOf[IFieldOptions]
   }
   
-  extension [Self <: IFieldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFieldOptions] (val x: Self) extends AnyVal {
     
     inline def setCtype(
       value: CType | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.protobuf.FieldOptions.CType * / any */ String)

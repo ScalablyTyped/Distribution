@@ -15,7 +15,8 @@ object SymbolMap {
     __obj.asInstanceOf[SymbolMap]
   }
   
-  extension [Self <: SymbolMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolMap] (val x: Self) extends AnyVal {
     
     inline def setSet(value: (String, js.Function1[/* size */ Any, Unit]) => Unit): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
   }

@@ -25,7 +25,8 @@ object PopoverKnockoutBindingHandler {
     __obj.asInstanceOf[PopoverKnockoutBindingHandler]
   }
   
-  extension [Self <: PopoverKnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopoverKnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setInit(
       value: (/* element */ Any, /* valueAccessor */ js.Function0[Any], /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutAllBindingsAccessor */ /* allBindingsAccessor */ Any, /* viewModel */ Any, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ /* bindingContext */ Any) => KnockoutControlsDescendantBindings

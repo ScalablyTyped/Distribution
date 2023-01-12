@@ -20,7 +20,8 @@ object distClientModelsServerServersMod {
       __obj.asInstanceOf[Servers]
     }
     
-    extension [Self <: Servers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Servers] (val x: Self) extends AnyVal {
       
       inline def setServers(value: js.Array[Server]): Self = StObject.set(x, "Servers", value.asInstanceOf[js.Any])
       

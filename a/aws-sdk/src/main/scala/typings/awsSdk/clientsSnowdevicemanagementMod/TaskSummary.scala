@@ -33,7 +33,8 @@ object TaskSummary {
     __obj.asInstanceOf[TaskSummary]
   }
   
-  extension [Self <: TaskSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskSummary] (val x: Self) extends AnyVal {
     
     inline def setState(value: TaskState): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

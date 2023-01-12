@@ -19,7 +19,8 @@ object FirewallPoliciesListAssociationsResponse {
     __obj.asInstanceOf[FirewallPoliciesListAssociationsResponse]
   }
   
-  extension [Self <: FirewallPoliciesListAssociationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallPoliciesListAssociationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociations(value: js.Array[FirewallPolicyAssociation]): Self = StObject.set(x, "associations", value.asInstanceOf[js.Any])
     

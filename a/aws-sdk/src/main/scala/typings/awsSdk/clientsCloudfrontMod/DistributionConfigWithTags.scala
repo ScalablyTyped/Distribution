@@ -23,7 +23,8 @@ object DistributionConfigWithTags {
     __obj.asInstanceOf[DistributionConfigWithTags]
   }
   
-  extension [Self <: DistributionConfigWithTags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionConfigWithTags] (val x: Self) extends AnyVal {
     
     inline def setDistributionConfig(value: DistributionConfig): Self = StObject.set(x, "DistributionConfig", value.asInstanceOf[js.Any])
     

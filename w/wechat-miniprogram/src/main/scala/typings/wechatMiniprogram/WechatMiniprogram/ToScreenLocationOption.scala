@@ -22,7 +22,8 @@ object ToScreenLocationOption {
     __obj.asInstanceOf[ToScreenLocationOption]
   }
   
-  extension [Self <: ToScreenLocationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToScreenLocationOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[StorageConfig]
     }
     
-    extension [Self <: StorageConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StorageConfig] (val x: Self) extends AnyVal {
       
       inline def setDbKey(value: String): Self = StObject.set(x, "dbKey", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object QueueItem {
     __obj.asInstanceOf[QueueItem]
   }
   
-  extension [Self <: QueueItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

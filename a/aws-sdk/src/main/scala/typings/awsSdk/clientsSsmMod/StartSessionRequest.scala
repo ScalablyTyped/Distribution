@@ -33,7 +33,8 @@ object StartSessionRequest {
     __obj.asInstanceOf[StartSessionRequest]
   }
   
-  extension [Self <: StartSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setDocumentName(value: DocumentARN): Self = StObject.set(x, "DocumentName", value.asInstanceOf[js.Any])
     

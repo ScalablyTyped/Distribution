@@ -23,7 +23,8 @@ object CreateApplicationSnapshotRequest {
     __obj.asInstanceOf[CreateApplicationSnapshotRequest]
   }
   
-  extension [Self <: CreateApplicationSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateApplicationSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

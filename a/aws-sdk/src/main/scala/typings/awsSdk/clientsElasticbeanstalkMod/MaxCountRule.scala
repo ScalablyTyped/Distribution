@@ -28,7 +28,8 @@ object MaxCountRule {
     __obj.asInstanceOf[MaxCountRule]
   }
   
-  extension [Self <: MaxCountRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxCountRule] (val x: Self) extends AnyVal {
     
     inline def setDeleteSourceFromS3(value: BoxedBoolean): Self = StObject.set(x, "DeleteSourceFromS3", value.asInstanceOf[js.Any])
     

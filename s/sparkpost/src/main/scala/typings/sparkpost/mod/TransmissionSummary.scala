@@ -39,7 +39,8 @@ object TransmissionSummary {
     __obj.asInstanceOf[TransmissionSummary]
   }
   
-  extension [Self <: TransmissionSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransmissionSummary] (val x: Self) extends AnyVal {
     
     inline def setCampaign_id(value: String): Self = StObject.set(x, "campaign_id", value.asInstanceOf[js.Any])
     

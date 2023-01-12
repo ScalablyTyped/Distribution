@@ -48,7 +48,8 @@ object ConditionalRangeBorderCollectionUpdateData {
     __obj.asInstanceOf[ConditionalRangeBorderCollectionUpdateData]
   }
   
-  extension [Self <: ConditionalRangeBorderCollectionUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeBorderCollectionUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: ConditionalRangeBorderUpdateData): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

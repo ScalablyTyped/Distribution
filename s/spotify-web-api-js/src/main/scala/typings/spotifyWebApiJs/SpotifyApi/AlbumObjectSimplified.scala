@@ -45,7 +45,8 @@ object AlbumObjectSimplified {
     __obj.asInstanceOf[AlbumObjectSimplified]
   }
   
-  extension [Self <: AlbumObjectSimplified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumObjectSimplified] (val x: Self) extends AnyVal {
     
     inline def setAlbum_type(value: String): Self = StObject.set(x, "album_type", value.asInstanceOf[js.Any])
     

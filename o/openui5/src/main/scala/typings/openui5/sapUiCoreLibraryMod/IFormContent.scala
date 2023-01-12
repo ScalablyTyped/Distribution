@@ -30,7 +30,8 @@ object IFormContent {
     __obj.asInstanceOf[IFormContent]
   }
   
-  extension [Self <: IFormContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFormContent] (val x: Self) extends AnyVal {
     
     inline def setGetFormDoNotAdjustWidth(value: () => Boolean): Self = StObject.set(x, "getFormDoNotAdjustWidth", js.Any.fromFunction0(value))
     

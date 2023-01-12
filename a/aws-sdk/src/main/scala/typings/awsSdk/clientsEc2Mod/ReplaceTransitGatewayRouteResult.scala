@@ -18,7 +18,8 @@ object ReplaceTransitGatewayRouteResult {
     __obj.asInstanceOf[ReplaceTransitGatewayRouteResult]
   }
   
-  extension [Self <: ReplaceTransitGatewayRouteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceTransitGatewayRouteResult] (val x: Self) extends AnyVal {
     
     inline def setRoute(value: TransitGatewayRoute): Self = StObject.set(x, "Route", value.asInstanceOf[js.Any])
     

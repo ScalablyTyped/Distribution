@@ -38,7 +38,8 @@ object ListObjectPoliciesRequest {
     __obj.asInstanceOf[ListObjectPoliciesRequest]
   }
   
-  extension [Self <: ListObjectPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListObjectPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setConsistencyLevel(value: ConsistencyLevel): Self = StObject.set(x, "ConsistencyLevel", value.asInstanceOf[js.Any])
     

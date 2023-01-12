@@ -16,7 +16,8 @@ object GetPublisherProfilesByAccountIdResponse {
     __obj.asInstanceOf[GetPublisherProfilesByAccountIdResponse]
   }
   
-  extension [Self <: GetPublisherProfilesByAccountIdResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPublisherProfilesByAccountIdResponse] (val x: Self) extends AnyVal {
     
     inline def setProfiles(value: js.Array[PublisherProfileApiProto]): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
     

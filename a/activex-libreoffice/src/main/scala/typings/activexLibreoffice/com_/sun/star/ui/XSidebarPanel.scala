@@ -29,7 +29,8 @@ object XSidebarPanel {
     __obj.asInstanceOf[XSidebarPanel]
   }
   
-  extension [Self <: XSidebarPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSidebarPanel] (val x: Self) extends AnyVal {
     
     inline def setGetHeightForWidth(value: Double => LayoutSize): Self = StObject.set(x, "getHeightForWidth", js.Any.fromFunction1(value))
     

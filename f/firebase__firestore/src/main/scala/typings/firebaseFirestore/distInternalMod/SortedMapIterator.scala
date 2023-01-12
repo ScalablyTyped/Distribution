@@ -29,7 +29,8 @@ object SortedMapIterator {
     __obj.asInstanceOf[SortedMapIterator[K, V]]
   }
   
-  extension [Self <: SortedMapIterator[?, ?], K, V](x: Self & (SortedMapIterator[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortedMapIterator[?, ?], K, V] (val x: Self & (SortedMapIterator[K, V])) extends AnyVal {
     
     inline def setGetNext(value: () => Entry[K, V]): Self = StObject.set(x, "getNext", js.Any.fromFunction0(value))
     

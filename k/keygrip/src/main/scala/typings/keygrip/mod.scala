@@ -50,7 +50,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Keygrip]
     }
     
-    extension [Self <: Keygrip](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Keygrip] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: (Any, String) => Double): Self = StObject.set(x, "index", js.Any.fromFunction2(value))
       

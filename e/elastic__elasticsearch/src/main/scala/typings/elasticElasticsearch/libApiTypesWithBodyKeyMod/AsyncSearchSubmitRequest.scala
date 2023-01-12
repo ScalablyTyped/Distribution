@@ -85,7 +85,8 @@ object AsyncSearchSubmitRequest {
     __obj.asInstanceOf[AsyncSearchSubmitRequest]
   }
   
-  extension [Self <: AsyncSearchSubmitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchSubmitRequest] (val x: Self) extends AnyVal {
     
     inline def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])
     

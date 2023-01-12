@@ -26,7 +26,8 @@ object ContentVersion {
     __obj.asInstanceOf[ContentVersion]
   }
   
-  extension [Self <: ContentVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentVersion] (val x: Self) extends AnyVal {
     
     inline def setCfiRange(value: BooksAnnotationsRange): Self = StObject.set(x, "cfiRange", value.asInstanceOf[js.Any])
     

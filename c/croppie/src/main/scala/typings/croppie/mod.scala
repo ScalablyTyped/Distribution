@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[CropData]
     }
     
-    extension [Self <: CropData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CropData] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[CroppieOptions]
     }
     
-    extension [Self <: CroppieOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CroppieOptions] (val x: Self) extends AnyVal {
       
       inline def setBoundary(value: Height): Self = StObject.set(x, "boundary", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object mod {
       __obj.asInstanceOf[ResultOptions]
     }
     
-    extension [Self <: ResultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptions] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       

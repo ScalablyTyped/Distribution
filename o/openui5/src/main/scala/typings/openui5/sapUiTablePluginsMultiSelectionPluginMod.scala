@@ -456,7 +456,8 @@ object sapUiTablePluginsMultiSelectionPluginMod {
       __obj.asInstanceOf[MultiSelectionPluginSettings]
     }
     
-    extension [Self <: MultiSelectionPluginSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectionPluginSettings] (val x: Self) extends AnyVal {
       
       inline def setEnableNotification(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enableNotification", value.asInstanceOf[js.Any])
       

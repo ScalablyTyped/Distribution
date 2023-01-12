@@ -202,7 +202,8 @@ object libEsmComponentsCardCardMod {
       __obj.asInstanceOf[ICardProps]
     }
     
-    extension [Self <: ICardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICardProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

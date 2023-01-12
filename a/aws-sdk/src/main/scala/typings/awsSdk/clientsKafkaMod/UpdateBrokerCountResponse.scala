@@ -27,7 +27,8 @@ object UpdateBrokerCountResponse {
     __obj.asInstanceOf[UpdateBrokerCountResponse]
   }
   
-  extension [Self <: UpdateBrokerCountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBrokerCountResponse] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
     

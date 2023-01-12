@@ -51,7 +51,8 @@ object libTypesStateMod {
       __obj.asInstanceOf[StateObject]
     }
     
-    extension [Self <: StateObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateObject] (val x: Self) extends AnyVal {
       
       inline def setData(value: Datum | Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

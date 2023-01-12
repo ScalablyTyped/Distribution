@@ -47,7 +47,8 @@ object TagMetadata {
     __obj.asInstanceOf[TagMetadata]
   }
   
-  extension [Self <: TagMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagMetadata] (val x: Self) extends AnyVal {
     
     inline def setDataSize(value: Double): Self = StObject.set(x, "dataSize", value.asInstanceOf[js.Any])
     

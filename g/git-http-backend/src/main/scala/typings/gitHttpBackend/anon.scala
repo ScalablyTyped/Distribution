@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Gitreceivepack]
     }
     
-    extension [Self <: Gitreceivepack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Gitreceivepack] (val x: Self) extends AnyVal {
       
       inline def `setGit-receive-pack`(value: String): Self = StObject.set(x, "git-receive-pack", value.asInstanceOf[js.Any])
       

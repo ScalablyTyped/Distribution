@@ -78,7 +78,8 @@ object libComponentsKeytipLayerKeytipLayerDottypesMod {
       __obj.asInstanceOf[IKeytipLayerProps]
     }
     
-    extension [Self <: IKeytipLayerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipLayerProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IKeytipLayer]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object libComponentsKeytipLayerKeytipLayerDottypesMod {
       __obj.asInstanceOf[IKeytipLayerStyles]
     }
     
-    extension [Self <: IKeytipLayerStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeytipLayerStyles] (val x: Self) extends AnyVal {
       
       inline def setInnerContent(value: IStyle): Self = StObject.set(x, "innerContent", value.asInstanceOf[js.Any])
       

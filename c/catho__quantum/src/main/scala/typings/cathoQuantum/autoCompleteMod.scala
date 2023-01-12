@@ -48,7 +48,8 @@ object autoCompleteMod {
       __obj.asInstanceOf[AutoCompleteProps]
     }
     
-    extension [Self <: AutoCompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoCompleteProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

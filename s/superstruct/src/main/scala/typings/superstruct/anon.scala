@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Coerce]
     }
     
-    extension [Self <: Coerce](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coerce] (val x: Self) extends AnyVal {
       
       inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
@@ -125,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Coercer[S, T]]
     }
     
-    extension [Self <: Coercer[?, ?], S, T](x: Self & (Coercer[S, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Coercer[?, ?], S, T] (val x: Self & (Coercer[S, T])) extends AnyVal {
       
       inline def setCoercer(value: (Any, /* context */ Context) => Any): Self = StObject.set(x, "coercer", js.Any.fromFunction2(value))
       
@@ -162,7 +166,8 @@ object anon {
       __obj.asInstanceOf[Exclusive]
     }
     
-    extension [Self <: Exclusive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exclusive] (val x: Self) extends AnyVal {
       
       inline def setExclusive(value: Boolean): Self = StObject.set(x, "exclusive", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object anon {
       __obj.asInstanceOf[PartialFailure]
     }
     
-    extension [Self <: PartialFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFailure] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: js.Array[Any]): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -246,7 +252,8 @@ object anon {
       __obj.asInstanceOf[Strict]
     }
     
-    extension [Self <: Strict](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Strict] (val x: Self) extends AnyVal {
       
       inline def setStrict(value: Boolean): Self = StObject.set(x, "strict", value.asInstanceOf[js.Any])
       

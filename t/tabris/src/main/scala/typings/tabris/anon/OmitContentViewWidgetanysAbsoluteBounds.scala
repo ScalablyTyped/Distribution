@@ -722,7 +722,8 @@ object OmitContentViewWidgetanysAbsoluteBounds {
     __obj.asInstanceOf[OmitContentViewWidgetanysAbsoluteBounds[ChildType]]
   }
   
-  extension [Self <: OmitContentViewWidgetanysAbsoluteBounds[?], ChildType /* <: AnyWidget */](x: Self & OmitContentViewWidgetanysAbsoluteBounds[ChildType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitContentViewWidgetanysAbsoluteBounds[?], ChildType /* <: AnyWidget */] (val x: Self & OmitContentViewWidgetanysAbsoluteBounds[ChildType]) extends AnyVal {
     
     inline def set$children(value: js.Array[Widget[Any]]): Self = StObject.set(x, "$children", value.asInstanceOf[js.Any])
     

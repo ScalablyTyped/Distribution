@@ -20,7 +20,8 @@ object RefererTimeout {
     __obj.asInstanceOf[RefererTimeout]
   }
   
-  extension [Self <: RefererTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefererTimeout] (val x: Self) extends AnyVal {
     
     inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     

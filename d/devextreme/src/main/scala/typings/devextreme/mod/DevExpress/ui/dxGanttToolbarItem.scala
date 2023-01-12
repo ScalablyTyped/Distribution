@@ -21,7 +21,8 @@ object dxGanttToolbarItem {
     __obj.asInstanceOf[dxGanttToolbarItem]
   }
   
-  extension [Self <: dxGanttToolbarItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxGanttToolbarItem] (val x: Self) extends AnyVal {
     
     inline def setName(value: GanttPredefinedToolbarItem | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

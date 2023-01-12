@@ -33,7 +33,8 @@ object TranslogStats {
     __obj.asInstanceOf[TranslogStats]
   }
   
-  extension [Self <: TranslogStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslogStats] (val x: Self) extends AnyVal {
     
     inline def setEarliest_last_modified_age(value: long): Self = StObject.set(x, "earliest_last_modified_age", value.asInstanceOf[js.Any])
     

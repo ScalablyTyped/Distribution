@@ -59,7 +59,8 @@ object Submodulegiturl {
     __obj.asInstanceOf[Submodulegiturl]
   }
   
-  extension [Self <: Submodulegiturl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Submodulegiturl] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

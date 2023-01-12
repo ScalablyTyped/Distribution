@@ -53,7 +53,8 @@ object Category {
     __obj.asInstanceOf[Category]
   }
   
-  extension [Self <: Category](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_key(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis-analysis-key'] */ js.Any

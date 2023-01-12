@@ -43,7 +43,8 @@ object AnalysisSummary {
     __obj.asInstanceOf[AnalysisSummary]
   }
   
-  extension [Self <: AnalysisSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSummary] (val x: Self) extends AnyVal {
     
     inline def setAnalysisId(value: RestrictiveResourceId): Self = StObject.set(x, "AnalysisId", value.asInstanceOf[js.Any])
     

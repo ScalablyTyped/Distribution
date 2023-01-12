@@ -319,7 +319,8 @@ object sapMWheelSliderContainerMod {
       __obj.asInstanceOf[WheelSliderContainerSettings]
     }
     
-    extension [Self <: WheelSliderContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WheelSliderContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

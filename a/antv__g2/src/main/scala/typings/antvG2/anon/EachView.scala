@@ -29,7 +29,8 @@ object EachView {
     __obj.asInstanceOf[EachView]
   }
   
-  extension [Self <: EachView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EachView] (val x: Self) extends AnyVal {
     
     inline def setEachView(value: Any): Self = StObject.set(x, "eachView", value.asInstanceOf[js.Any])
     

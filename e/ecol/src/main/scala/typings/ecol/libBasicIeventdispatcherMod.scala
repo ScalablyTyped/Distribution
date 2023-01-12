@@ -31,7 +31,8 @@ object libBasicIeventdispatcherMod {
       __obj.asInstanceOf[IEventDispatcher[T, SourceT, IteratorT, ReverseT]]
     }
     
-    extension [Self <: IEventDispatcher[?, ?, ?, ?], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */](x: Self & (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IEventDispatcher[?, ?, ?, ?], T, SourceT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer<T, SourceT, IteratorT, ReverseT> */ Any */, IteratorT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.Iterator<T, SourceT, IteratorT, ReverseT> */ Any */, ReverseT /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify IContainer.ReverseIterator<T, SourceT, IteratorT, ReverseT> */ Any */] (val x: Self & (IEventDispatcher[T, SourceT, IteratorT, ReverseT])) extends AnyVal {
       
       inline def setAddEventListener(value: (Type, Listener[T, SourceT, IteratorT, ReverseT]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
       

@@ -15,7 +15,8 @@ object QueryFeaturedPage {
     __obj.asInstanceOf[QueryFeaturedPage]
   }
   
-  extension [Self <: QueryFeaturedPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryFeaturedPage] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: FeaturedPage): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

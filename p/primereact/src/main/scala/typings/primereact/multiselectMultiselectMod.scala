@@ -146,7 +146,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectAllParams]
     }
     
-    extension [Self <: MultiSelectAllParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectAllParams] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectChangeParams]
     }
     
-    extension [Self <: MultiSelectChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectChangeParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectChangeTargetOptions]
     }
     
-    extension [Self <: MultiSelectChangeTargetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectChangeTargetOptions] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -247,7 +250,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectFilterOptions]
     }
     
-    extension [Self <: MultiSelectFilterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectFilterOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: /* event */ js.UndefOr[KeyboardEvent] => Unit): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
@@ -272,7 +276,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectFilterParams]
     }
     
-    extension [Self <: MultiSelectFilterParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectFilterParams] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       
@@ -295,7 +300,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectHeaderCheckboxChangeParams]
     }
     
-    extension [Self <: MultiSelectHeaderCheckboxChangeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectHeaderCheckboxChangeParams] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -354,7 +360,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectPanelHeaderTemplateParams]
     }
     
-    extension [Self <: MultiSelectPanelHeaderTemplateParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectPanelHeaderTemplateParams] (val x: Self) extends AnyVal {
       
       inline def setCheckboxElement(value: HTMLElement): Self = StObject.set(x, "checkboxElement", value.asInstanceOf[js.Any])
       
@@ -908,7 +915,8 @@ object multiselectMultiselectMod {
       __obj.asInstanceOf[MultiSelectProps]
     }
     
-    extension [Self <: MultiSelectProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiSelectProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

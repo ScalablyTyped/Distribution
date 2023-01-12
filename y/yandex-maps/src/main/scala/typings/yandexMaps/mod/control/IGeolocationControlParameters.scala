@@ -22,7 +22,8 @@ object IGeolocationControlParameters {
     __obj.asInstanceOf[IGeolocationControlParameters]
   }
   
-  extension [Self <: IGeolocationControlParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeolocationControlParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: Image): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

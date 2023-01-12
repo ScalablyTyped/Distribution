@@ -26,7 +26,8 @@ object IDoReloadExResult {
     __obj.asInstanceOf[IDoReloadExResult]
   }
   
-  extension [Self <: IDoReloadExResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDoReloadExResult] (val x: Self) extends AnyVal {
     
     inline def setQScriptLogFile(value: String): Self = StObject.set(x, "qScriptLogFile", value.asInstanceOf[js.Any])
     

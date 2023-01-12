@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Html]
     }
     
-    extension [Self <: Html](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Html] (val x: Self) extends AnyVal {
       
       inline def setHtml(value: String): Self = StObject.set(x, "html", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PartialSelectionStateProp]
     }
     
-    extension [Self <: PartialSelectionStateProp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialSelectionStateProp] (val x: Self) extends AnyVal {
       
       inline def setAnchorKey(value: String): Self = StObject.set(x, "anchorKey", value.asInstanceOf[js.Any])
       

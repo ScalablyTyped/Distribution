@@ -51,7 +51,8 @@ object examplesJsmNodesCoreNodeBuilderMod {
       __obj.asInstanceOf[FlowData]
     }
     
-    extension [Self <: FlowData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlowData] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     }
@@ -272,7 +273,8 @@ object examplesJsmNodesCoreNodeBuilderMod {
       __obj.asInstanceOf[NodeData]
     }
     
-    extension [Self <: NodeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeData] (val x: Self) extends AnyVal {
       
       inline def setCompute(value: AnyObject): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
       

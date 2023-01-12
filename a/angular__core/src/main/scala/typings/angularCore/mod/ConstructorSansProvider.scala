@@ -20,7 +20,8 @@ object ConstructorSansProvider {
     __obj.asInstanceOf[ConstructorSansProvider]
   }
   
-  extension [Self <: ConstructorSansProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstructorSansProvider] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

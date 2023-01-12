@@ -265,7 +265,8 @@ object libUtilRelayConcreteNodeMod {
       __obj.asInstanceOf[ConcreteRequest]
     }
     
-    extension [Self <: ConcreteRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteRequest] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: ReaderFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       
@@ -293,7 +294,8 @@ object libUtilRelayConcreteNodeMod {
       __obj.asInstanceOf[ConcreteUpdatableQuery]
     }
     
-    extension [Self <: ConcreteUpdatableQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConcreteUpdatableQuery] (val x: Self) extends AnyVal {
       
       inline def setFragment(value: ReaderFragment): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
       

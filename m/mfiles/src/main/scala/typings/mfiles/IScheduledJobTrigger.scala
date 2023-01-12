@@ -47,7 +47,8 @@ object IScheduledJobTrigger {
     __obj.asInstanceOf[IScheduledJobTrigger]
   }
   
-  extension [Self <: IScheduledJobTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledJobTrigger] (val x: Self) extends AnyVal {
     
     inline def setBeginDay(value: Double): Self = StObject.set(x, "BeginDay", value.asInstanceOf[js.Any])
     

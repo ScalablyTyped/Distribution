@@ -85,7 +85,8 @@ object CreativeServingDecision {
     __obj.asInstanceOf[CreativeServingDecision]
   }
   
-  extension [Self <: CreativeServingDecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreativeServingDecision] (val x: Self) extends AnyVal {
     
     inline def setAdTechnologyProviders(value: AdTechnologyProviders): Self = StObject.set(x, "adTechnologyProviders", value.asInstanceOf[js.Any])
     

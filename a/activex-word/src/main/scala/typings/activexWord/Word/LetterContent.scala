@@ -124,7 +124,8 @@ object LetterContent {
     __obj.asInstanceOf[LetterContent]
   }
   
-  extension [Self <: LetterContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LetterContent] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

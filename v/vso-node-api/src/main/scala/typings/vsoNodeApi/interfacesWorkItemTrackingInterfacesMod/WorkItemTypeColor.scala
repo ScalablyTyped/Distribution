@@ -28,7 +28,8 @@ object WorkItemTypeColor {
     __obj.asInstanceOf[WorkItemTypeColor]
   }
   
-  extension [Self <: WorkItemTypeColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemTypeColor] (val x: Self) extends AnyVal {
     
     inline def setPrimaryColor(value: String): Self = StObject.set(x, "primaryColor", value.asInstanceOf[js.Any])
     

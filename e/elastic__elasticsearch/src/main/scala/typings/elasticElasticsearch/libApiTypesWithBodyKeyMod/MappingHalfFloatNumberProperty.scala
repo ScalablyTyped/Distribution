@@ -22,7 +22,8 @@ object MappingHalfFloatNumberProperty {
     __obj.asInstanceOf[MappingHalfFloatNumberProperty]
   }
   
-  extension [Self <: MappingHalfFloatNumberProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingHalfFloatNumberProperty] (val x: Self) extends AnyVal {
     
     inline def setNull_value(value: float): Self = StObject.set(x, "null_value", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsTabletMod extends Shortcut {
       __obj.asInstanceOf[TabletProps]
     }
     
-    extension [Self <: TabletProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabletProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object AssociateProactiveEngagementDetailsRequest {
     __obj.asInstanceOf[AssociateProactiveEngagementDetailsRequest]
   }
   
-  extension [Self <: AssociateProactiveEngagementDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateProactiveEngagementDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setEmergencyContactList(value: EmergencyContactList): Self = StObject.set(x, "EmergencyContactList", value.asInstanceOf[js.Any])
     

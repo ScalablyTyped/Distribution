@@ -30,7 +30,8 @@ object Metric {
     __obj.asInstanceOf[Metric]
   }
   
-  extension [Self <: Metric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metric] (val x: Self) extends AnyVal {
     
     inline def setMetricOverrides(value: js.Array[String]): Self = StObject.set(x, "metricOverrides", value.asInstanceOf[js.Any])
     

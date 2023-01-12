@@ -114,7 +114,8 @@ object AngularNgNewOptionsSchema {
     __obj.asInstanceOf[AngularNgNewOptionsSchema]
   }
   
-  extension [Self <: AngularNgNewOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularNgNewOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: CommitUnion): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
     

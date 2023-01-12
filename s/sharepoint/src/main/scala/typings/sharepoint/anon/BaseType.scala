@@ -23,7 +23,8 @@ object BaseType {
     __obj.asInstanceOf[BaseType]
   }
   
-  extension [Self <: BaseType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseType] (val x: Self) extends AnyVal {
     
     inline def setBaseType(value: Double): Self = StObject.set(x, "BaseType", value.asInstanceOf[js.Any])
     

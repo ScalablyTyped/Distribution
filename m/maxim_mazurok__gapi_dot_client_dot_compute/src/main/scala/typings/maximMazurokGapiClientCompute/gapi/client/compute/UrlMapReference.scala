@@ -15,7 +15,8 @@ object UrlMapReference {
     __obj.asInstanceOf[UrlMapReference]
   }
   
-  extension [Self <: UrlMapReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapReference] (val x: Self) extends AnyVal {
     
     inline def setUrlMap(value: String): Self = StObject.set(x, "urlMap", value.asInstanceOf[js.Any])
     

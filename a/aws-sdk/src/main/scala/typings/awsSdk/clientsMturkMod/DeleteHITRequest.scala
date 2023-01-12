@@ -18,7 +18,8 @@ object DeleteHITRequest {
     __obj.asInstanceOf[DeleteHITRequest]
   }
   
-  extension [Self <: DeleteHITRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHITRequest] (val x: Self) extends AnyVal {
     
     inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
   }

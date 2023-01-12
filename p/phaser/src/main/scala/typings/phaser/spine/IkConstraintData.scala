@@ -43,7 +43,8 @@ object IkConstraintData {
     __obj.asInstanceOf[IkConstraintData]
   }
   
-  extension [Self <: IkConstraintData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IkConstraintData] (val x: Self) extends AnyVal {
     
     inline def setBendDirection(value: Double): Self = StObject.set(x, "bendDirection", value.asInstanceOf[js.Any])
     

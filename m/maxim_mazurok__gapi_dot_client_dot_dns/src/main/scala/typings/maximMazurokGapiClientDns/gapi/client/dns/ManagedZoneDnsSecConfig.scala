@@ -24,7 +24,8 @@ object ManagedZoneDnsSecConfig {
     __obj.asInstanceOf[ManagedZoneDnsSecConfig]
   }
   
-  extension [Self <: ManagedZoneDnsSecConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedZoneDnsSecConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultKeySpecs(value: js.Array[DnsKeySpec]): Self = StObject.set(x, "defaultKeySpecs", value.asInstanceOf[js.Any])
     

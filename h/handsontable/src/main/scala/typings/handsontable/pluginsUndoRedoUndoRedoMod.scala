@@ -93,7 +93,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[ChangeAction]
     }
     
-    extension [Self <: ChangeAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: change): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[FilterAction]
     }
     
-    extension [Self <: FilterAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: filter): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[InsertColAction]
     }
     
-    extension [Self <: InsertColAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertColAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: insert_col): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -176,7 +179,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[InsertRowAction]
     }
     
-    extension [Self <: InsertRowAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InsertRowAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: insert_row): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -218,7 +222,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[RemoveColAction]
     }
     
-    extension [Self <: RemoveColAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveColAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: remove_col): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       
@@ -261,7 +266,8 @@ object pluginsUndoRedoUndoRedoMod {
       __obj.asInstanceOf[RemoveRowAction]
     }
     
-    extension [Self <: RemoveRowAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoveRowAction] (val x: Self) extends AnyVal {
       
       inline def setActionType(value: remove_row): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object RouterLinkProps {
     __obj.asInstanceOf[RouterLinkProps]
   }
   
-  extension [Self <: RouterLinkProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterLinkProps] (val x: Self) extends AnyVal {
     
     inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
     

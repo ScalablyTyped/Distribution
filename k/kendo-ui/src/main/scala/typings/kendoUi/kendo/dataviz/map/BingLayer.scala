@@ -21,7 +21,8 @@ object BingLayer {
     __obj.asInstanceOf[BingLayer]
   }
   
-  extension [Self <: BingLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BingLayer] (val x: Self) extends AnyVal {
     
     inline def setImagerySet(value: () => Unit): Self = StObject.set(x, "imagerySet", js.Any.fromFunction0(value))
     

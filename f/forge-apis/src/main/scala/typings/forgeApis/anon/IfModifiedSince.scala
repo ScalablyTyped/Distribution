@@ -17,7 +17,8 @@ object IfModifiedSince {
     __obj.asInstanceOf[IfModifiedSince]
   }
   
-  extension [Self <: IfModifiedSince](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfModifiedSince] (val x: Self) extends AnyVal {
     
     inline def setAcceptEncoding(value: String): Self = StObject.set(x, "acceptEncoding", value.asInstanceOf[js.Any])
     

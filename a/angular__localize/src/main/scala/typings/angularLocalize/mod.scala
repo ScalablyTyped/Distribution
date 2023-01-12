@@ -228,7 +228,8 @@ object mod {
       __obj.asInstanceOf[MessageMetadata]
     }
     
-    extension [Self <: MessageMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageMetadata] (val x: Self) extends AnyVal {
       
       inline def setCustomId(value: String): Self = StObject.set(x, "customId", value.asInstanceOf[js.Any])
       
@@ -346,7 +347,8 @@ object mod {
       __obj.asInstanceOf[ɵParsedMessage]
     }
     
-    extension [Self <: ɵParsedMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ɵParsedMessage] (val x: Self) extends AnyVal {
       
       inline def setAssociatedMessageIds(value: Record[String, MessageId]): Self = StObject.set(x, "associatedMessageIds", value.asInstanceOf[js.Any])
       
@@ -391,7 +393,8 @@ object mod {
       __obj.asInstanceOf[ɵParsedTranslation]
     }
     
-    extension [Self <: ɵParsedTranslation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ɵParsedTranslation] (val x: Self) extends AnyVal {
       
       inline def setMessageParts(value: TemplateStringsArray): Self = StObject.set(x, "messageParts", value.asInstanceOf[js.Any])
       
@@ -420,7 +423,8 @@ object mod {
       __obj.asInstanceOf[ɵSourceLocation]
     }
     
-    extension [Self <: ɵSourceLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ɵSourceLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorCount(value: String): Self = StObject.set(x, "acceleratorCount", value.asInstanceOf[js.Any])
     

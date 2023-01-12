@@ -18,7 +18,8 @@ object ReaderRef {
     __obj.asInstanceOf[ReaderRef]
   }
   
-  extension [Self <: ReaderRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReaderRef] (val x: Self) extends AnyVal {
     
     inline def setReaderRef(value: DatabaseReference): Self = StObject.set(x, "readerRef", value.asInstanceOf[js.Any])
     

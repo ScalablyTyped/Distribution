@@ -89,7 +89,8 @@ object PivotTableCollectionLoadOptions {
     __obj.asInstanceOf[PivotTableCollectionLoadOptions]
   }
   
-  extension [Self <: PivotTableCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotTableCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

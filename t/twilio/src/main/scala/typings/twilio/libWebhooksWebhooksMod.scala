@@ -55,7 +55,8 @@ object libWebhooksWebhooksMod {
       __obj.asInstanceOf[Request]
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object libWebhooksWebhooksMod {
       __obj.asInstanceOf[RequestValidatorOptions]
     }
     
-    extension [Self <: RequestValidatorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestValidatorOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object libWebhooksWebhooksMod {
       __obj.asInstanceOf[WebhookOptions]
     }
     
-    extension [Self <: WebhookOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebhookOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

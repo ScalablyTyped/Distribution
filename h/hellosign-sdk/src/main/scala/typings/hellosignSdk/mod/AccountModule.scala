@@ -28,7 +28,8 @@ object AccountModule {
     __obj.asInstanceOf[AccountModule]
   }
   
-  extension [Self <: AccountModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountModule] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: Emailaddress => js.Promise[AccountResponse]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
     

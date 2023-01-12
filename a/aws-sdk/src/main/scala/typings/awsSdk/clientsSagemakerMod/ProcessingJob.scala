@@ -105,7 +105,8 @@ object ProcessingJob {
     __obj.asInstanceOf[ProcessingJob]
   }
   
-  extension [Self <: ProcessingJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessingJob] (val x: Self) extends AnyVal {
     
     inline def setAppSpecification(value: AppSpecification): Self = StObject.set(x, "AppSpecification", value.asInstanceOf[js.Any])
     

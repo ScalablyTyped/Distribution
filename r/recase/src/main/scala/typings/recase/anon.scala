@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Exceptions]
     }
     
-    extension [Self <: Exceptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exceptions] (val x: Self) extends AnyVal {
       
       inline def setExceptions(value: StringDictionary[String]): Self = StObject.set(x, "exceptions", value.asInstanceOf[js.Any])
       

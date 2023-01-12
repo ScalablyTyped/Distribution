@@ -18,7 +18,8 @@ object PutRetentionConfigurationResponse {
     __obj.asInstanceOf[PutRetentionConfigurationResponse]
   }
   
-  extension [Self <: PutRetentionConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRetentionConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setRetentionConfiguration(value: RetentionConfiguration): Self = StObject.set(x, "RetentionConfiguration", value.asInstanceOf[js.Any])
     

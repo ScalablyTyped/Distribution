@@ -63,7 +63,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAlways(value: Boolean): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VariableConfig]
     }
     
-    extension [Self <: VariableConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableConfig] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

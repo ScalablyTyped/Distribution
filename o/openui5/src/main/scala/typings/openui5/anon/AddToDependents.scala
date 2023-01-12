@@ -39,7 +39,8 @@ object AddToDependents {
     __obj.asInstanceOf[AddToDependents]
   }
   
-  extension [Self <: AddToDependents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddToDependents] (val x: Self) extends AnyVal {
     
     inline def setAddToDependents(value: Boolean): Self = StObject.set(x, "addToDependents", value.asInstanceOf[js.Any])
     

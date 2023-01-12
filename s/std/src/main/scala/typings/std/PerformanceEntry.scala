@@ -35,7 +35,8 @@ object PerformanceEntry {
     __obj.asInstanceOf[PerformanceEntry]
   }
   
-  extension [Self <: PerformanceEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceEntry] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: DOMHighResTimeStamp): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

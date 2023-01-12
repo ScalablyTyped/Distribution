@@ -72,7 +72,8 @@ object TreemapChartSpec {
     __obj.asInstanceOf[TreemapChartSpec]
   }
   
-  extension [Self <: TreemapChartSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreemapChartSpec] (val x: Self) extends AnyVal {
     
     inline def setColorData(value: ChartData): Self = StObject.set(x, "colorData", value.asInstanceOf[js.Any])
     

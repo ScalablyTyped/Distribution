@@ -39,7 +39,8 @@ object CashDrawerCapabilities {
     __obj.asInstanceOf[CashDrawerCapabilities]
   }
   
-  extension [Self <: CashDrawerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CashDrawerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setIsDrawerOpenSensorAvailable(value: Boolean): Self = StObject.set(x, "isDrawerOpenSensorAvailable", value.asInstanceOf[js.Any])
     

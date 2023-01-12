@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsWixChatFilledMod extends Shortcut {
       __obj.asInstanceOf[WixChatFilledProps]
     }
     
-    extension [Self <: WixChatFilledProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WixChatFilledProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

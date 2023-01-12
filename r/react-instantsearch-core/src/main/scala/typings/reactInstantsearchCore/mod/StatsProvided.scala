@@ -21,7 +21,8 @@ object StatsProvided {
     __obj.asInstanceOf[StatsProvided]
   }
   
-  extension [Self <: StatsProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsProvided] (val x: Self) extends AnyVal {
     
     inline def setAreHitsSorted(value: Boolean): Self = StObject.set(x, "areHitsSorted", value.asInstanceOf[js.Any])
     

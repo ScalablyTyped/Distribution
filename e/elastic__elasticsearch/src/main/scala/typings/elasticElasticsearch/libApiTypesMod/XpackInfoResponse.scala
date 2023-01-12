@@ -26,7 +26,8 @@ object XpackInfoResponse {
     __obj.asInstanceOf[XpackInfoResponse]
   }
   
-  extension [Self <: XpackInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: XpackInfoBuildInformation): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

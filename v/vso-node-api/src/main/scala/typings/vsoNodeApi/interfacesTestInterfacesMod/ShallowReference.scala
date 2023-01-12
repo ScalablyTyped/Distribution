@@ -28,7 +28,8 @@ object ShallowReference {
     __obj.asInstanceOf[ShallowReference]
   }
   
-  extension [Self <: ShallowReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShallowReference] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

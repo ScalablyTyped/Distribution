@@ -16,7 +16,8 @@ object FreeListingsProgramStatusReviewIneligibilityReasonDetails {
     __obj.asInstanceOf[FreeListingsProgramStatusReviewIneligibilityReasonDetails]
   }
   
-  extension [Self <: FreeListingsProgramStatusReviewIneligibilityReasonDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeListingsProgramStatusReviewIneligibilityReasonDetails] (val x: Self) extends AnyVal {
     
     inline def setCooldownTime(value: String): Self = StObject.set(x, "cooldownTime", value.asInstanceOf[js.Any])
     

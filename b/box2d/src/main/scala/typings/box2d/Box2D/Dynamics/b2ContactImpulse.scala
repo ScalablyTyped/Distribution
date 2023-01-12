@@ -24,7 +24,8 @@ object b2ContactImpulse {
     __obj.asInstanceOf[b2ContactImpulse]
   }
   
-  extension [Self <: b2ContactImpulse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2ContactImpulse] (val x: Self) extends AnyVal {
     
     inline def setNormalImpulses(value: b2Vec2): Self = StObject.set(x, "normalImpulses", value.asInstanceOf[js.Any])
     

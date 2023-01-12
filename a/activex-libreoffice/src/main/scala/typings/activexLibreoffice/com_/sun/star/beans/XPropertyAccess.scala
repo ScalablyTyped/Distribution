@@ -47,7 +47,8 @@ object XPropertyAccess {
     __obj.asInstanceOf[XPropertyAccess]
   }
   
-  extension [Self <: XPropertyAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyAccess] (val x: Self) extends AnyVal {
     
     inline def setGetPropertyValues(value: () => SafeArray[PropertyValue]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction0(value))
     

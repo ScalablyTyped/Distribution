@@ -29,7 +29,8 @@ object PlotZigzagOnPointConnectorOptions {
     __obj.asInstanceOf[PlotZigzagOnPointConnectorOptions]
   }
   
-  extension [Self <: PlotZigzagOnPointConnectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotZigzagOnPointConnectorOptions] (val x: Self) extends AnyVal {
     
     inline def setDashstyle(value: String): Self = StObject.set(x, "dashstyle", value.asInstanceOf[js.Any])
     

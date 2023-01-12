@@ -39,7 +39,8 @@ object UsageInfo {
     __obj.asInstanceOf[UsageInfo]
   }
   
-  extension [Self <: UsageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageInfo] (val x: Self) extends AnyVal {
     
     inline def setGet_bandwidth(value: () => Double): Self = StObject.set(x, "get_bandwidth", js.Any.fromFunction0(value))
     

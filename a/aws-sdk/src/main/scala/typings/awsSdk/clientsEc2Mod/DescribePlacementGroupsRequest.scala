@@ -33,7 +33,8 @@ object DescribePlacementGroupsRequest {
     __obj.asInstanceOf[DescribePlacementGroupsRequest]
   }
   
-  extension [Self <: DescribePlacementGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePlacementGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

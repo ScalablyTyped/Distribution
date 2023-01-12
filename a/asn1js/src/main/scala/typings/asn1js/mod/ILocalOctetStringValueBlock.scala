@@ -15,7 +15,8 @@ object ILocalOctetStringValueBlock {
     __obj.asInstanceOf[ILocalOctetStringValueBlock]
   }
   
-  extension [Self <: ILocalOctetStringValueBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalOctetStringValueBlock] (val x: Self) extends AnyVal {
     
     inline def setIsConstructed(value: scala.Boolean): Self = StObject.set(x, "isConstructed", value.asInstanceOf[js.Any])
   }

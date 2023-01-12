@@ -16,7 +16,8 @@ object BulkEditAssignedLocationsResponse {
     __obj.asInstanceOf[BulkEditAssignedLocationsResponse]
   }
   
-  extension [Self <: BulkEditAssignedLocationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkEditAssignedLocationsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedLocations(value: js.Array[AssignedLocation]): Self = StObject.set(x, "assignedLocations", value.asInstanceOf[js.Any])
     

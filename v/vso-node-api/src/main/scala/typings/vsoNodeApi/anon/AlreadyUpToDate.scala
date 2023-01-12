@@ -41,7 +41,8 @@ object AlreadyUpToDate {
     __obj.asInstanceOf[AlreadyUpToDate]
   }
   
-  extension [Self <: AlreadyUpToDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlreadyUpToDate] (val x: Self) extends AnyVal {
     
     inline def setAlreadyUpToDate(value: scala.Double): Self = StObject.set(x, "alreadyUpToDate", value.asInstanceOf[js.Any])
     

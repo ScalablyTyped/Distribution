@@ -52,7 +52,8 @@ object StructureRampart {
     __obj.asInstanceOf[StructureRampart]
   }
   
-  extension [Self <: StructureRampart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureRampart] (val x: Self) extends AnyVal {
     
     inline def setIsPublic(value: Boolean): Self = StObject.set(x, "isPublic", value.asInstanceOf[js.Any])
     

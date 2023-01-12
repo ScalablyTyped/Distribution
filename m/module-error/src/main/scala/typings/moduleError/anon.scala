@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Cause]
     }
     
-    extension [Self <: Cause](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cause] (val x: Self) extends AnyVal {
       
       inline def setCause(value: js.Error): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
       

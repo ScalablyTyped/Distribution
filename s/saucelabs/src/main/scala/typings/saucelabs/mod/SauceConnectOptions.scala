@@ -203,7 +203,8 @@ object SauceConnectOptions {
     __obj.asInstanceOf[SauceConnectOptions]
   }
   
-  extension [Self <: SauceConnectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SauceConnectOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: String): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

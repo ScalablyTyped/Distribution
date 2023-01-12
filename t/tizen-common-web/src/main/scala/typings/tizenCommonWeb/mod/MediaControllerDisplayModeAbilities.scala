@@ -62,7 +62,8 @@ object MediaControllerDisplayModeAbilities {
     __obj.asInstanceOf[MediaControllerDisplayModeAbilities]
   }
   
-  extension [Self <: MediaControllerDisplayModeAbilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaControllerDisplayModeAbilities] (val x: Self) extends AnyVal {
     
     inline def setCroppedFull(value: MediaControllerAbilitySupport): Self = StObject.set(x, "croppedFull", value.asInstanceOf[js.Any])
     

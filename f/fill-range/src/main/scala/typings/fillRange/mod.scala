@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[Options[ValueType, TransformValueType]]
     }
     
-    extension [Self <: Options[?, ?], ValueType, TransformValueType](x: Self & (Options[ValueType, TransformValueType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?, ?], ValueType, TransformValueType] (val x: Self & (Options[ValueType, TransformValueType])) extends AnyVal {
       
       inline def setStep(value: Double): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
       

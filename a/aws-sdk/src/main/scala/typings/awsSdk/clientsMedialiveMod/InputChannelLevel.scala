@@ -23,7 +23,8 @@ object InputChannelLevel {
     __obj.asInstanceOf[InputChannelLevel]
   }
   
-  extension [Self <: InputChannelLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputChannelLevel] (val x: Self) extends AnyVal {
     
     inline def setGain(value: integerMinNegative60Max6): Self = StObject.set(x, "Gain", value.asInstanceOf[js.Any])
     

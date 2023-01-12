@@ -43,7 +43,8 @@ object typingsTypesMod {
       __obj.asInstanceOf[ApplyCaseMiddlewareOptions]
     }
     
-    extension [Self <: ApplyCaseMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ApplyCaseMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseFunctions(value: PartialCaseFunctions): Self = StObject.set(x, "caseFunctions", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object typingsTypesMod {
       __obj.asInstanceOf[AxiosCaseMiddlewareOptions]
     }
     
-    extension [Self <: AxiosCaseMiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosCaseMiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseFunctions(value: PartialCaseFunctions): Self = StObject.set(x, "caseFunctions", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object typingsTypesMod {
       __obj.asInstanceOf[CaseFunctions]
     }
     
-    extension [Self <: CaseFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CaseFunctions] (val x: Self) extends AnyVal {
       
       inline def setCamel(value: (/* input */ String, /* options */ js.UndefOr[Options]) => String): Self = StObject.set(x, "camel", js.Any.fromFunction2(value))
       
@@ -206,7 +209,8 @@ object typingsTypesMod {
       __obj.asInstanceOf[ObjectTransformerOptions]
     }
     
-    extension [Self <: ObjectTransformerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectTransformerOptions] (val x: Self) extends AnyVal {
       
       inline def setCaseOptions(value: Options): Self = StObject.set(x, "caseOptions", value.asInstanceOf[js.Any])
       
@@ -255,7 +259,8 @@ object typingsTypesMod {
       __obj.asInstanceOf[ObjectTransformers]
     }
     
-    extension [Self <: ObjectTransformers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectTransformers] (val x: Self) extends AnyVal {
       
       inline def setCamel(value: (/* data */ Any, /* options */ js.UndefOr[ObjectTransformerOptions]) => Any): Self = StObject.set(x, "camel", js.Any.fromFunction2(value))
       

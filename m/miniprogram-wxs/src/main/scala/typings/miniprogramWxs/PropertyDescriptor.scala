@@ -25,7 +25,8 @@ object PropertyDescriptor {
     __obj.asInstanceOf[PropertyDescriptor]
   }
   
-  extension [Self <: PropertyDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyDescriptor] (val x: Self) extends AnyVal {
     
     inline def setConfigurable(value: scala.Boolean): Self = StObject.set(x, "configurable", value.asInstanceOf[js.Any])
     

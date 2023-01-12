@@ -54,7 +54,8 @@ object ErrorGroupStats {
     __obj.asInstanceOf[ErrorGroupStats]
   }
   
-  extension [Self <: ErrorGroupStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorGroupStats] (val x: Self) extends AnyVal {
     
     inline def setAffectedServices(value: js.Array[ServiceContext]): Self = StObject.set(x, "affectedServices", value.asInstanceOf[js.Any])
     

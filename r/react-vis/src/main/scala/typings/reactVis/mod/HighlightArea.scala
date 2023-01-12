@@ -21,7 +21,8 @@ object HighlightArea {
     __obj.asInstanceOf[HighlightArea]
   }
   
-  extension [Self <: HighlightArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightArea] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

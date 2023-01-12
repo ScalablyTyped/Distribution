@@ -181,7 +181,8 @@ object mod {
       __obj.asInstanceOf[LogStub]
     }
     
-    extension [Self <: LogStub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogStub] (val x: Self) extends AnyVal {
       
       inline def setAll(value: /* repeated */ Any => Unit): Self = StObject.set(x, "all", js.Any.fromFunction1(value))
       

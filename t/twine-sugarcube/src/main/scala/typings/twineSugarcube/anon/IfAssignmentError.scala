@@ -69,7 +69,8 @@ object IfAssignmentError {
     __obj.asInstanceOf[IfAssignmentError]
   }
   
-  extension [Self <: IfAssignmentError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IfAssignmentError] (val x: Self) extends AnyVal {
     
     inline def setIfAssignmentError(value: Boolean): Self = StObject.set(x, "ifAssignmentError", value.asInstanceOf[js.Any])
     

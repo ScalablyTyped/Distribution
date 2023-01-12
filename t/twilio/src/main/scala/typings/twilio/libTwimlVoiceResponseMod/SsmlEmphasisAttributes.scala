@@ -15,7 +15,8 @@ object SsmlEmphasisAttributes {
     __obj.asInstanceOf[SsmlEmphasisAttributes]
   }
   
-  extension [Self <: SsmlEmphasisAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlEmphasisAttributes] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: SsmlEmphasisLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

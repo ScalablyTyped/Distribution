@@ -23,7 +23,8 @@ object ITpProcessResponse {
     __obj.asInstanceOf[ITpProcessResponse]
   }
   
-  extension [Self <: ITpProcessResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITpProcessResponse] (val x: Self) extends AnyVal {
     
     inline def setExtendedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "extendedData", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object XUpdatableLayer {
     __obj.asInstanceOf[XUpdatableLayer]
   }
   
-  extension [Self <: XUpdatableLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUpdatableLayer] (val x: Self) extends AnyVal {
     
     inline def setReplaceWith(value: XLayer => Unit): Self = StObject.set(x, "replaceWith", js.Any.fromFunction1(value))
   }

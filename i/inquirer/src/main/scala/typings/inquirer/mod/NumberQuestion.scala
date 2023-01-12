@@ -23,7 +23,8 @@ object NumberQuestion {
     __obj.asInstanceOf[NumberQuestion[T]]
   }
   
-  extension [Self <: NumberQuestion[?], T /* <: Answers */](x: Self & NumberQuestion[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberQuestion[?], T /* <: Answers */] (val x: Self & NumberQuestion[T]) extends AnyVal {
     
     inline def setType(value: number): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object libOrgOsflashSignalsIprioritysignalMod {
     @js.native
     val ^ : js.Symbol = js.native
     
-    extension [Self <: IPrioritySignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPrioritySignal] (val x: Self) extends AnyVal {
       
       inline def setAddOnceWithPriority(value: (js.Function, Double) => ISlot): Self = StObject.set(x, "addOnceWithPriority", js.Any.fromFunction2(value))
       

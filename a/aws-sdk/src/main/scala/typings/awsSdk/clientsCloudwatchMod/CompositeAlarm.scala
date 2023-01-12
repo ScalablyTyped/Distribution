@@ -108,7 +108,8 @@ object CompositeAlarm {
     __obj.asInstanceOf[CompositeAlarm]
   }
   
-  extension [Self <: CompositeAlarm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeAlarm] (val x: Self) extends AnyVal {
     
     inline def setActionsEnabled(value: ActionsEnabled): Self = StObject.set(x, "ActionsEnabled", value.asInstanceOf[js.Any])
     

@@ -134,7 +134,8 @@ object WalletItem {
     __obj.asInstanceOf[WalletItem]
   }
   
-  extension [Self <: WalletItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletItem] (val x: Self) extends AnyVal {
     
     inline def setBarcode(value: WalletBarcode): Self = StObject.set(x, "barcode", value.asInstanceOf[js.Any])
     

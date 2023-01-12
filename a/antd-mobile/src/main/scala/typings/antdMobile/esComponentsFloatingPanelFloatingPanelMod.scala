@@ -314,7 +314,8 @@ object esComponentsFloatingPanelFloatingPanelMod {
       __obj.asInstanceOf[FloatingPanelProps]
     }
     
-    extension [Self <: FloatingPanelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingPanelProps] (val x: Self) extends AnyVal {
       
       inline def setAnchors(value: js.Array[Double]): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
       

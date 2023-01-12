@@ -20,7 +20,8 @@ object TypeofListBox {
     __obj.asInstanceOf[TypeofListBox]
   }
   
-  extension [Self <: TypeofListBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofListBox] (val x: Self) extends AnyVal {
     
     inline def setFn(value: ListBox): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

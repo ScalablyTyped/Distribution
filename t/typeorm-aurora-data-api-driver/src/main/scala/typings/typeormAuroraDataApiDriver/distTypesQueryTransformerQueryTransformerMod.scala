@@ -46,7 +46,8 @@ object distTypesQueryTransformerQueryTransformerMod {
       __obj.asInstanceOf[QueryTransformationResult]
     }
     
-    extension [Self <: QueryTransformationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryTransformationResult] (val x: Self) extends AnyVal {
       
       inline def setParameters(value: js.Array[Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       

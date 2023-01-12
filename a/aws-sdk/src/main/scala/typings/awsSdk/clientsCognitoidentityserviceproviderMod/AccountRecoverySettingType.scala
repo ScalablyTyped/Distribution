@@ -18,7 +18,8 @@ object AccountRecoverySettingType {
     __obj.asInstanceOf[AccountRecoverySettingType]
   }
   
-  extension [Self <: AccountRecoverySettingType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountRecoverySettingType] (val x: Self) extends AnyVal {
     
     inline def setRecoveryMechanisms(value: RecoveryMechanismsType): Self = StObject.set(x, "RecoveryMechanisms", value.asInstanceOf[js.Any])
     

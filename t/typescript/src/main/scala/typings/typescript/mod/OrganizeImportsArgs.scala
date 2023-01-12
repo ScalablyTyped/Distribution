@@ -21,7 +21,8 @@ object OrganizeImportsArgs {
     __obj.asInstanceOf[OrganizeImportsArgs]
   }
   
-  extension [Self <: OrganizeImportsArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrganizeImportsArgs] (val x: Self) extends AnyVal {
     
     inline def setMode(value: OrganizeImportsMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

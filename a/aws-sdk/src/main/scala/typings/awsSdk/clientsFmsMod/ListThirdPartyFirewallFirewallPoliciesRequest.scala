@@ -28,7 +28,8 @@ object ListThirdPartyFirewallFirewallPoliciesRequest {
     __obj.asInstanceOf[ListThirdPartyFirewallFirewallPoliciesRequest]
   }
   
-  extension [Self <: ListThirdPartyFirewallFirewallPoliciesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListThirdPartyFirewallFirewallPoliciesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: PaginationMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

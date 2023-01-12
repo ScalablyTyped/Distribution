@@ -183,7 +183,8 @@ object ErrorModel {
     /* 1 */ val VERSIONEXCEPTION: typings.rockset.distCodegenApiMod.ErrorModel.TypeEnum.VERSIONEXCEPTION & Double = js.native
   }
   
-  extension [Self <: ErrorModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorModel] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

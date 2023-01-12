@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[PartialEsm]
     }
     
-    extension [Self <: PartialEsm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialEsm] (val x: Self) extends AnyVal {
       
       inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAwait(value: Boolean): Self = StObject.set(x, "await", value.asInstanceOf[js.Any])
       

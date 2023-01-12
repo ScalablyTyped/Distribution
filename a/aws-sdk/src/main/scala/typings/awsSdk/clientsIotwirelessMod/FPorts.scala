@@ -24,7 +24,8 @@ object FPorts {
     __obj.asInstanceOf[FPorts]
   }
   
-  extension [Self <: FPorts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FPorts] (val x: Self) extends AnyVal {
     
     inline def setClockSync(value: FPort): Self = StObject.set(x, "ClockSync", value.asInstanceOf[js.Any])
     

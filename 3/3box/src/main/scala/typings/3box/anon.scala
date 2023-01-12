@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMetadata(value: Boolean): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     }
@@ -59,7 +61,8 @@ object anon {
       __obj.asInstanceOf[AddressServer]
     }
     
-    extension [Self <: AddressServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressServer] (val x: Self) extends AnyVal {
       
       inline def setAddressServer(value: String): Self = StObject.set(x, "addressServer", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Audience]
     }
     
-    extension [Self <: Audience](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Audience] (val x: Self) extends AnyVal {
       
       inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
@@ -119,7 +123,8 @@ object anon {
       __obj.asInstanceOf[Blocklist]
     }
     
-    extension [Self <: Blocklist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocklist] (val x: Self) extends AnyVal {
       
       inline def setAddressServer(value: String): Self = StObject.set(x, "addressServer", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object anon {
       __obj.asInstanceOf[ConsentCallback]
     }
     
-    extension [Self <: ConsentCallback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsentCallback] (val x: Self) extends AnyVal {
       
       inline def setConsentCallback(value: () => Unit): Self = StObject.set(x, "consentCallback", js.Any.fromFunction0(value))
       
@@ -191,7 +197,8 @@ object anon {
       __obj.asInstanceOf[FirstModerator]
     }
     
-    extension [Self <: FirstModerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirstModerator] (val x: Self) extends AnyVal {
       
       inline def setFirstModerator(value: String): Self = StObject.set(x, "firstModerator", value.asInstanceOf[js.Any])
       
@@ -226,7 +233,8 @@ object anon {
       __obj.asInstanceOf[GraphqlServer]
     }
     
-    extension [Self <: GraphqlServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphqlServer] (val x: Self) extends AnyVal {
       
       inline def setGraphqlServer(value: String): Self = StObject.set(x, "graphqlServer", value.asInstanceOf[js.Any])
       
@@ -249,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Members]
     }
     
-    extension [Self <: Members](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Members] (val x: Self) extends AnyVal {
       
       inline def setFirstModerator(value: String): Self = StObject.set(x, "firstModerator", value.asInstanceOf[js.Any])
       
@@ -280,7 +289,8 @@ object anon {
       __obj.asInstanceOf[Metadata]
     }
     
-    extension [Self <: Metadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
       
       inline def setBlocklist(value: Any): Self = StObject.set(x, "blocklist", value.asInstanceOf[js.Any])
       
@@ -307,7 +317,8 @@ object anon {
       __obj.asInstanceOf[NoAutoSub]
     }
     
-    extension [Self <: NoAutoSub](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoAutoSub] (val x: Self) extends AnyVal {
       
       inline def setNoAutoSub(value: Boolean): Self = StObject.set(x, "noAutoSub", value.asInstanceOf[js.Any])
       
@@ -326,7 +337,8 @@ object anon {
       __obj.asInstanceOf[ProfileServer]
     }
     
-    extension [Self <: ProfileServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProfileServer] (val x: Self) extends AnyVal {
       
       inline def setProfileServer(value: String): Self = StObject.set(x, "profileServer", value.asInstanceOf[js.Any])
       
@@ -345,7 +357,8 @@ object anon {
       __obj.asInstanceOf[SignJWT]
     }
     
-    extension [Self <: SignJWT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignJWT] (val x: Self) extends AnyVal {
       
       inline def setSignJWT(value: String => String): Self = StObject.set(x, "signJWT", js.Any.fromFunction1(value))
     }

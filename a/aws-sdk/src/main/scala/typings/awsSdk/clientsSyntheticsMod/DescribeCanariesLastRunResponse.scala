@@ -23,7 +23,8 @@ object DescribeCanariesLastRunResponse {
     __obj.asInstanceOf[DescribeCanariesLastRunResponse]
   }
   
-  extension [Self <: DescribeCanariesLastRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCanariesLastRunResponse] (val x: Self) extends AnyVal {
     
     inline def setCanariesLastRun(value: CanariesLastRun): Self = StObject.set(x, "CanariesLastRun", value.asInstanceOf[js.Any])
     

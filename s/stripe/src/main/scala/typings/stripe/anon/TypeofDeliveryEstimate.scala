@@ -17,7 +17,8 @@ object TypeofDeliveryEstimate {
     __obj.asInstanceOf[TypeofDeliveryEstimate]
   }
   
-  extension [Self <: TypeofDeliveryEstimate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDeliveryEstimate] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: Any): Self = StObject.set(x, "Maximum", value.asInstanceOf[js.Any])
     

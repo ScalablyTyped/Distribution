@@ -23,7 +23,8 @@ object NameServersUpdateState {
     __obj.asInstanceOf[NameServersUpdateState]
   }
   
-  extension [Self <: NameServersUpdateState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameServersUpdateState] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NameServersUpdateStateCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

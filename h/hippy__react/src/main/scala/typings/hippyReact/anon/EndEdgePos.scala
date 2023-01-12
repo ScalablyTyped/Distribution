@@ -29,7 +29,8 @@ object EndEdgePos {
     __obj.asInstanceOf[EndEdgePos]
   }
   
-  extension [Self <: EndEdgePos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndEdgePos] (val x: Self) extends AnyVal {
     
     inline def setEndEdgePos(value: Double): Self = StObject.set(x, "endEdgePos", value.asInstanceOf[js.Any])
     

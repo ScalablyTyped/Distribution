@@ -28,7 +28,8 @@ object navigationRouteMod {
       __obj.asInstanceOf[NavigationRouteOptions]
     }
     
-    extension [Self <: NavigationRouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationRouteOptions] (val x: Self) extends AnyVal {
       
       inline def setBlacklist(value: js.Array[js.RegExp]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])
       

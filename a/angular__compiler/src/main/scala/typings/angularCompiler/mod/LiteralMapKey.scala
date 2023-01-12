@@ -17,7 +17,8 @@ object LiteralMapKey {
     __obj.asInstanceOf[LiteralMapKey]
   }
   
-  extension [Self <: LiteralMapKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiteralMapKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

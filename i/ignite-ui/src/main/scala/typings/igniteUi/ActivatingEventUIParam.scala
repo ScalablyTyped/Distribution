@@ -18,7 +18,8 @@ object ActivatingEventUIParam {
     __obj.asInstanceOf[ActivatingEventUIParam]
   }
   
-  extension [Self <: ActivatingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivatingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

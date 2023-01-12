@@ -40,7 +40,8 @@ object examplesJsmNodesCoreNodeVarMod {
       __obj.asInstanceOf[NodeVar]
     }
     
-    extension [Self <: NodeVar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeVar] (val x: Self) extends AnyVal {
       
       inline def setIsNodeVar(value: `true`): Self = StObject.set(x, "isNodeVar", value.asInstanceOf[js.Any])
       

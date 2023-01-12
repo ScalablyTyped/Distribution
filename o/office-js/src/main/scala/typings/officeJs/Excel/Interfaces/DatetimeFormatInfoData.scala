@@ -54,7 +54,8 @@ object DatetimeFormatInfoData {
     __obj.asInstanceOf[DatetimeFormatInfoData]
   }
   
-  extension [Self <: DatetimeFormatInfoData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatetimeFormatInfoData] (val x: Self) extends AnyVal {
     
     inline def setDateSeparator(value: String): Self = StObject.set(x, "dateSeparator", value.asInstanceOf[js.Any])
     

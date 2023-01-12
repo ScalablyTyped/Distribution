@@ -338,7 +338,8 @@ object ContentCanvas {
     __obj.asInstanceOf[ContentCanvas]
   }
   
-  extension [Self <: ContentCanvas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentCanvas] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: Position): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

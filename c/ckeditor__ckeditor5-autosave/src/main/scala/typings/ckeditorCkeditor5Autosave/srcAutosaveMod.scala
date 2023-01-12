@@ -72,7 +72,8 @@ object srcAutosaveMod {
       __obj.asInstanceOf[AutosaveAdapter]
     }
     
-    extension [Self <: AutosaveAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutosaveAdapter] (val x: Self) extends AnyVal {
       
       inline def setSave(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Editor */ Any => js.Promise[Any]
@@ -97,7 +98,8 @@ object srcAutosaveMod {
       __obj.asInstanceOf[AutosaveConfig]
     }
     
-    extension [Self <: AutosaveConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutosaveConfig] (val x: Self) extends AnyVal {
       
       inline def setSave(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Editor */ Any => js.Promise[Any]
@@ -123,7 +125,8 @@ object srcAutosaveMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setAutoSave(value: AutoSave): Self = StObject.set(x, "AutoSave", value.asInstanceOf[js.Any])
       }

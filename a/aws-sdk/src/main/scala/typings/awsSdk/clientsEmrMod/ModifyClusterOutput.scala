@@ -18,7 +18,8 @@ object ModifyClusterOutput {
     __obj.asInstanceOf[ModifyClusterOutput]
   }
   
-  extension [Self <: ModifyClusterOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyClusterOutput] (val x: Self) extends AnyVal {
     
     inline def setStepConcurrencyLevel(value: Integer): Self = StObject.set(x, "StepConcurrencyLevel", value.asInstanceOf[js.Any])
     

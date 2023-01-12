@@ -158,7 +158,8 @@ object distClientModelsServerServerMod {
       __obj.asInstanceOf[Server]
     }
     
-    extension [Self <: Server](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Server] (val x: Self) extends AnyVal {
       
       inline def setApiTokens(value: js.Array[String]): Self = StObject.set(x, "ApiTokens", value.asInstanceOf[js.Any])
       

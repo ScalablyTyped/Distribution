@@ -79,7 +79,8 @@ object EditorProviderBase {
     __obj.asInstanceOf[EditorProviderBase]
   }
   
-  extension [Self <: EditorProviderBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderBase] (val x: Self) extends AnyVal {
     
     inline def setAttachErrorEvents(value: (js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "attachErrorEvents", js.Any.fromFunction3(value))
     

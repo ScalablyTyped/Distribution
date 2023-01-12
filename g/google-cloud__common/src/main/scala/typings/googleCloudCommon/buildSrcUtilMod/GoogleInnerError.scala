@@ -17,7 +17,8 @@ object GoogleInnerError {
     __obj.asInstanceOf[GoogleInnerError]
   }
   
-  extension [Self <: GoogleInnerError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleInnerError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

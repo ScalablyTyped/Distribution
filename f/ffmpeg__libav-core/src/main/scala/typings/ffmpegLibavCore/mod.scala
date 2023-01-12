@@ -23,7 +23,8 @@ object mod {
       __obj.asInstanceOf[LibavCore]
     }
     
-    extension [Self <: LibavCore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LibavCore] (val x: Self) extends AnyVal {
       
       inline def setNULL(value: Pointer): Self = StObject.set(x, "NULL", value.asInstanceOf[js.Any])
     }

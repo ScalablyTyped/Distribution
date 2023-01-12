@@ -33,7 +33,8 @@ object EC2InstanceLimit {
     __obj.asInstanceOf[EC2InstanceLimit]
   }
   
-  extension [Self <: EC2InstanceLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2InstanceLimit] (val x: Self) extends AnyVal {
     
     inline def setCurrentInstances(value: WholeNumber): Self = StObject.set(x, "CurrentInstances", value.asInstanceOf[js.Any])
     

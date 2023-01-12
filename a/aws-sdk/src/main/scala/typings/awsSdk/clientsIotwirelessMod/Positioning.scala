@@ -19,7 +19,8 @@ object Positioning {
     __obj.asInstanceOf[Positioning]
   }
   
-  extension [Self <: Positioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Positioning] (val x: Self) extends AnyVal {
     
     inline def setClockSync(value: FPort): Self = StObject.set(x, "ClockSync", value.asInstanceOf[js.Any])
     

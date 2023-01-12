@@ -38,7 +38,8 @@ object distIcacheMod {
       __obj.asInstanceOf[ICache[DataType]]
     }
     
-    extension [Self <: ICache[?], DataType](x: Self & ICache[DataType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICache[?], DataType] (val x: Self & ICache[DataType]) extends AnyVal {
       
       inline def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))
       

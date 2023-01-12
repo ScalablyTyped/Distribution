@@ -65,7 +65,8 @@ object Pnp {
       __obj.asInstanceOf[IPnpObject]
     }
     
-    extension [Self <: IPnpObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPnpObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object Pnp {
       __obj.asInstanceOf[IPnpObjectUpdate]
     }
     
-    extension [Self <: IPnpObjectUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPnpObjectUpdate] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object Pnp {
       __obj.asInstanceOf[IPnpObjectWatcher]
     }
     
-    extension [Self <: IPnpObjectWatcher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPnpObjectWatcher] (val x: Self) extends AnyVal {
       
       inline def setOnadded(value: Any): Self = StObject.set(x, "onadded", value.asInstanceOf[js.Any])
       

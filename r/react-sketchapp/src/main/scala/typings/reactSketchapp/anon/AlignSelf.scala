@@ -326,7 +326,8 @@ object AlignSelf {
     __obj.asInstanceOf[AlignSelf]
   }
   
-  extension [Self <: AlignSelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignSelf] (val x: Self) extends AnyVal {
     
     inline def setAlignContent(
       value: Requireable[

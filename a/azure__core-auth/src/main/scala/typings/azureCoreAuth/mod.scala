@@ -163,7 +163,8 @@ object mod {
       __obj.asInstanceOf[AccessToken]
     }
     
-    extension [Self <: AccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
       
       inline def setExpiresOnTimestamp(value: Double): Self = StObject.set(x, "expiresOnTimestamp", value.asInstanceOf[js.Any])
       
@@ -205,7 +206,8 @@ object mod {
       __obj.asInstanceOf[GetTokenOptions]
     }
     
-    extension [Self <: GetTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setAbortSignal(value: AbortSignalLike): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[KeyCredential]
     }
     
-    extension [Self <: KeyCredential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCredential] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -268,7 +271,8 @@ object mod {
       __obj.asInstanceOf[NamedKeyCredential]
     }
     
-    extension [Self <: NamedKeyCredential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedKeyCredential] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[SASCredential]
     }
     
-    extension [Self <: SASCredential](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SASCredential] (val x: Self) extends AnyVal {
       
       inline def setSignature(value: String): Self = StObject.set(x, "signature", value.asInstanceOf[js.Any])
     }
@@ -352,7 +357,8 @@ object mod {
       __obj.asInstanceOf[TracingContext]
     }
     
-    extension [Self <: TracingContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TracingContext] (val x: Self) extends AnyVal {
       
       inline def setDeleteValue(value: js.Symbol => TracingContext): Self = StObject.set(x, "deleteValue", js.Any.fromFunction1(value))
       

@@ -22,7 +22,8 @@ object Validator {
     __obj.asInstanceOf[Validator[ResourceType]]
   }
   
-  extension [Self <: Validator[?], ResourceType](x: Self & Validator[ResourceType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Validator[?], ResourceType] (val x: Self & Validator[ResourceType]) extends AnyVal {
     
     inline def setType(value: Constructor[ResourceType]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

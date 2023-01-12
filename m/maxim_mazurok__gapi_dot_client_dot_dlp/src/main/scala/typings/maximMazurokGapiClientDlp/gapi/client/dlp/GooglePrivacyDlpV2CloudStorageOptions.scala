@@ -43,7 +43,8 @@ object GooglePrivacyDlpV2CloudStorageOptions {
     __obj.asInstanceOf[GooglePrivacyDlpV2CloudStorageOptions]
   }
   
-  extension [Self <: GooglePrivacyDlpV2CloudStorageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2CloudStorageOptions] (val x: Self) extends AnyVal {
     
     inline def setBytesLimitPerFile(value: String): Self = StObject.set(x, "bytesLimitPerFile", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CompactCardHeight {
     __obj.asInstanceOf[CompactCardHeight]
   }
   
-  extension [Self <: CompactCardHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactCardHeight] (val x: Self) extends AnyVal {
     
     inline def setCompactCardHeight(value: Double): Self = StObject.set(x, "compactCardHeight", value.asInstanceOf[js.Any])
     

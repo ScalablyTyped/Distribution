@@ -58,7 +58,8 @@ object EC2ResourceDetails {
     __obj.asInstanceOf[EC2ResourceDetails]
   }
   
-  extension [Self <: EC2ResourceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EC2ResourceDetails] (val x: Self) extends AnyVal {
     
     inline def setHourlyOnDemandRate(value: GenericString): Self = StObject.set(x, "HourlyOnDemandRate", value.asInstanceOf[js.Any])
     

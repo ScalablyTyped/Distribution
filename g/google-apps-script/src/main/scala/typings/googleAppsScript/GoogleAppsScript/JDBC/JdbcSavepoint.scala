@@ -22,7 +22,8 @@ object JdbcSavepoint {
     __obj.asInstanceOf[JdbcSavepoint]
   }
   
-  extension [Self <: JdbcSavepoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JdbcSavepoint] (val x: Self) extends AnyVal {
     
     inline def setGetSavepointId(value: () => Integer): Self = StObject.set(x, "getSavepointId", js.Any.fromFunction0(value))
     

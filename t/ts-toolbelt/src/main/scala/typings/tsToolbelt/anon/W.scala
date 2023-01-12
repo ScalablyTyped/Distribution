@@ -24,7 +24,8 @@ object W {
     __obj.asInstanceOf[W[Path, A]]
   }
   
-  extension [Self <: W[?, ?], Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A](x: Self & (W[Path, A])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: W[?, ?], Path /* <: typings.tsToolbelt.outListListMod.List[Key] */, A] (val x: Self & (W[Path, A])) extends AnyVal {
     
     inline def setR(value: RecordOR[Path, A, IterationOf[typings.tsToolbelt.tsToolbeltInts.`0`]]): Self = StObject.set(x, "R", value.asInstanceOf[js.Any])
     

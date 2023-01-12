@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PartialTokenOption]
     }
     
-    extension [Self <: PartialTokenOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTokenOption] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       

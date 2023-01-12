@@ -21,7 +21,8 @@ object BufferProtectUnprotectResult {
     __obj.asInstanceOf[BufferProtectUnprotectResult]
   }
   
-  extension [Self <: BufferProtectUnprotectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferProtectUnprotectResult] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: IBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

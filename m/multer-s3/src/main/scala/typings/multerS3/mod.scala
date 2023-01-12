@@ -111,7 +111,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAcl(
         value: (js.Function3[
@@ -302,7 +303,8 @@ object mod extends Shortcut {
             __obj.asInstanceOf[typings.multerS3.mod.global.Express.MulterS3.File]
           }
           
-          extension [Self <: typings.multerS3.mod.global.Express.MulterS3.File](x: Self) {
+          @scala.inline
+          implicit open class MutableBuilder[Self <: typings.multerS3.mod.global.Express.MulterS3.File] (val x: Self) extends AnyVal {
             
             inline def setAcl(value: String): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
             

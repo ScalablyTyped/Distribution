@@ -28,7 +28,8 @@ object ListDataIntegrationAssociationsRequest {
     __obj.asInstanceOf[ListDataIntegrationAssociationsRequest]
   }
   
-  extension [Self <: ListDataIntegrationAssociationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataIntegrationAssociationsRequest] (val x: Self) extends AnyVal {
     
     inline def setDataIntegrationIdentifier(value: Identifier): Self = StObject.set(x, "DataIntegrationIdentifier", value.asInstanceOf[js.Any])
     

@@ -102,7 +102,8 @@ object ScriptParsedEventDataType {
     __obj.asInstanceOf[ScriptParsedEventDataType]
   }
   
-  extension [Self <: ScriptParsedEventDataType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptParsedEventDataType] (val x: Self) extends AnyVal {
     
     inline def setEndColumn(value: Double): Self = StObject.set(x, "endColumn", value.asInstanceOf[js.Any])
     

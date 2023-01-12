@@ -26,7 +26,8 @@ object Duration {
     __obj.asInstanceOf[Duration]
   }
   
-  extension [Self <: Duration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Duration] (val x: Self) extends AnyVal {
     
     inline def setByterange(value: ByteRange): Self = StObject.set(x, "byterange", value.asInstanceOf[js.Any])
     

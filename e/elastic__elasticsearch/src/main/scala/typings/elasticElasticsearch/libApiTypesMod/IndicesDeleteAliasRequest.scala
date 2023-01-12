@@ -23,7 +23,8 @@ object IndicesDeleteAliasRequest {
     __obj.asInstanceOf[IndicesDeleteAliasRequest]
   }
   
-  extension [Self <: IndicesDeleteAliasRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesDeleteAliasRequest] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Indices): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

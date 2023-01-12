@@ -28,7 +28,8 @@ object IPROXIMITY_LIST_UPDATE {
     __obj.asInstanceOf[IPROXIMITY_LIST_UPDATE]
   }
   
-  extension [Self <: IPROXIMITY_LIST_UPDATE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPROXIMITY_LIST_UPDATE] (val x: Self) extends AnyVal {
     
     inline def setAddedItems(value: js.Array[MMOItem]): Self = StObject.set(x, "addedItems", value.asInstanceOf[js.Any])
     

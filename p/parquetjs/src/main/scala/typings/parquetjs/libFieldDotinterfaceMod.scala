@@ -42,7 +42,8 @@ object libFieldDotinterfaceMod {
       __obj.asInstanceOf[FieldInterface]
     }
     
-    extension [Self <: FieldInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldInterface] (val x: Self) extends AnyVal {
       
       inline def setCompression(value: String): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object ReservedProps {
     __obj.asInstanceOf[ReservedProps]
   }
   
-  extension [Self <: ReservedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservedProps] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String | Double | js.Symbol): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

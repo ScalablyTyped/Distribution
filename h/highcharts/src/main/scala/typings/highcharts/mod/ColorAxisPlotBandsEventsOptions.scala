@@ -34,7 +34,8 @@ object ColorAxisPlotBandsEventsOptions {
     __obj.asInstanceOf[ColorAxisPlotBandsEventsOptions]
   }
   
-  extension [Self <: ColorAxisPlotBandsEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorAxisPlotBandsEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: EventCallbackFunction[PlotLineOrBand]): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

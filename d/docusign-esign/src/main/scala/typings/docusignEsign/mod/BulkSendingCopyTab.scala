@@ -26,7 +26,8 @@ object BulkSendingCopyTab {
     __obj.asInstanceOf[BulkSendingCopyTab]
   }
   
-  extension [Self <: BulkSendingCopyTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkSendingCopyTab] (val x: Self) extends AnyVal {
     
     inline def setInitialValue(value: String): Self = StObject.set(x, "initialValue", value.asInstanceOf[js.Any])
     

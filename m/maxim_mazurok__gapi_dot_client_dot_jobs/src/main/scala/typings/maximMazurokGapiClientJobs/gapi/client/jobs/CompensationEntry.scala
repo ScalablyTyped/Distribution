@@ -34,7 +34,8 @@ object CompensationEntry {
     __obj.asInstanceOf[CompensationEntry]
   }
   
-  extension [Self <: CompensationEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompensationEntry] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Money): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

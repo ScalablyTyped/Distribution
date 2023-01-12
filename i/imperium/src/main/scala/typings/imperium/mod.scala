@@ -307,7 +307,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -341,7 +342,8 @@ object mod {
       __obj.asInstanceOf[RoleActions]
     }
     
-    extension [Self <: RoleActions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleActions] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

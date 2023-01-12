@@ -40,7 +40,8 @@ object S3DataSourceConfiguration {
     __obj.asInstanceOf[S3DataSourceConfiguration]
   }
   
-  extension [Self <: S3DataSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3DataSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAccessControlListConfiguration(value: AccessControlListConfiguration): Self = StObject.set(x, "AccessControlListConfiguration", value.asInstanceOf[js.Any])
     

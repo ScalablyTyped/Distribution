@@ -28,7 +28,8 @@ object ResponseTimeRootCauseEntity {
     __obj.asInstanceOf[ResponseTimeRootCauseEntity]
   }
   
-  extension [Self <: ResponseTimeRootCauseEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseTimeRootCauseEntity] (val x: Self) extends AnyVal {
     
     inline def setCoverage(value: NullableDouble): Self = StObject.set(x, "Coverage", value.asInstanceOf[js.Any])
     

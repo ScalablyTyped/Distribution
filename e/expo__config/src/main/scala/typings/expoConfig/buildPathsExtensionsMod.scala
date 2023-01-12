@@ -35,7 +35,8 @@ object buildPathsExtensionsMod {
       __obj.asInstanceOf[LanguageOptions]
     }
     
-    extension [Self <: LanguageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageOptions] (val x: Self) extends AnyVal {
       
       inline def setIsModern(value: Boolean): Self = StObject.set(x, "isModern", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object ListMetricDescriptorsResponse {
     __obj.asInstanceOf[ListMetricDescriptorsResponse]
   }
   
-  extension [Self <: ListMetricDescriptorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricDescriptorsResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricDescriptors(value: js.Array[MetricDescriptor]): Self = StObject.set(x, "metricDescriptors", value.asInstanceOf[js.Any])
     

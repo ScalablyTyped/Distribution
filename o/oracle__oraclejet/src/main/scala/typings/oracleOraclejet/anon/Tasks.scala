@@ -17,7 +17,8 @@ object Tasks {
     __obj.asInstanceOf[Tasks]
   }
   
-  extension [Self <: Tasks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tasks] (val x: Self) extends AnyVal {
     
     inline def setTasks(value: disabled | enabled): Self = StObject.set(x, "tasks", value.asInstanceOf[js.Any])
     

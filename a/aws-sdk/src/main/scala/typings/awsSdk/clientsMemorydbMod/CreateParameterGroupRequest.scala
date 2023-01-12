@@ -33,7 +33,8 @@ object CreateParameterGroupRequest {
     __obj.asInstanceOf[CreateParameterGroupRequest]
   }
   
-  extension [Self <: CreateParameterGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParameterGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

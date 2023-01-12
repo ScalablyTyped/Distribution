@@ -28,7 +28,8 @@ object AutoScalingPolicyDescription {
     __obj.asInstanceOf[AutoScalingPolicyDescription]
   }
   
-  extension [Self <: AutoScalingPolicyDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoScalingPolicyDescription] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: ScalingConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

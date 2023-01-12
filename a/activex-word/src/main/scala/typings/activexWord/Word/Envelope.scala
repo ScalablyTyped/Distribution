@@ -218,7 +218,8 @@ object Envelope {
     __obj.asInstanceOf[Envelope]
   }
   
-  extension [Self <: Envelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Range): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
     

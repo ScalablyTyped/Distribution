@@ -29,7 +29,8 @@ object ReedSolomonDecoder {
     __obj.asInstanceOf[ReedSolomonDecoder]
   }
   
-  extension [Self <: ReedSolomonDecoder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReedSolomonDecoder] (val x: Self) extends AnyVal {
     
     inline def setDecode(value: (GF256, js.Array[Double]) => Unit): Self = StObject.set(x, "decode", js.Any.fromFunction2(value))
     

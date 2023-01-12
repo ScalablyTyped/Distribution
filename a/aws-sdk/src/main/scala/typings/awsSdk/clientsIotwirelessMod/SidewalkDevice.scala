@@ -30,7 +30,8 @@ object SidewalkDevice {
     __obj.asInstanceOf[SidewalkDevice]
   }
   
-  extension [Self <: SidewalkDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SidewalkDevice] (val x: Self) extends AnyVal {
     
     inline def setAmazonId(value: AmazonId): Self = StObject.set(x, "AmazonId", value.asInstanceOf[js.Any])
     

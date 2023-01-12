@@ -251,7 +251,8 @@ object dxListOptions {
     __obj.asInstanceOf[dxListOptions[TItem, TKey]]
   }
   
-  extension [Self <: dxListOptions[?, ?], TItem /* <: ItemLike */, TKey](x: Self & (dxListOptions[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxListOptions[?, ?], TItem /* <: ItemLike */, TKey] (val x: Self & (dxListOptions[TItem, TKey])) extends AnyVal {
     
     inline def setAllowItemDeleting(value: Boolean): Self = StObject.set(x, "allowItemDeleting", value.asInstanceOf[js.Any])
     

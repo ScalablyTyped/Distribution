@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[ColorsObject]
     }
     
-    extension [Self <: ColorsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorsObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: Boolean | ActionToString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[LevelObject]
     }
     
-    extension [Self <: LevelObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String | Boolean | ActionToString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -150,7 +152,8 @@ object mod {
       __obj.asInstanceOf[LogEntryObject]
     }
     
-    extension [Self <: LogEntryObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntryObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String | Boolean | ActionToString): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object mod {
       __obj.asInstanceOf[ReduxLoggerOptions]
     }
     
-    extension [Self <: ReduxLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setActionTransformer(value: /* action */ Any => Any): Self = StObject.set(x, "actionTransformer", js.Any.fromFunction1(value))
       

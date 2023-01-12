@@ -25,7 +25,8 @@ object InstanceAndroidDetails {
     __obj.asInstanceOf[InstanceAndroidDetails]
   }
   
-  extension [Self <: InstanceAndroidDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceAndroidDetails] (val x: Self) extends AnyVal {
     
     inline def setEnablePiracyCheck(value: Boolean): Self = StObject.set(x, "enablePiracyCheck", value.asInstanceOf[js.Any])
     

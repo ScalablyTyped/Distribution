@@ -182,7 +182,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
           
@@ -300,7 +301,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setBeforeSend(value: String): Self = StObject.set(x, "beforeSend", value.asInstanceOf[js.Any])
           
@@ -437,7 +439,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
           
@@ -486,7 +489,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setOptional(value: js.RegExp): Self = StObject.set(x, "optional", value.asInstanceOf[js.Any])
           
@@ -535,7 +539,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
           
@@ -894,7 +899,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setAction(value: String | `false`): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
         

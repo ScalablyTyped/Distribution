@@ -74,7 +74,8 @@ object NodesRegistry {
     __obj.asInstanceOf[NodesRegistry]
   }
   
-  extension [Self <: NodesRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesRegistry] (val x: Self) extends AnyVal {
     
     inline def setAddNodeSet(value: js.Object => Unit): Self = StObject.set(x, "addNodeSet", js.Any.fromFunction1(value))
     

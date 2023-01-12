@@ -49,7 +49,8 @@ object TransitionHooks {
     __obj.asInstanceOf[TransitionHooks[HostElement]]
   }
   
-  extension [Self <: TransitionHooks[?], HostElement](x: Self & TransitionHooks[HostElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionHooks[?], HostElement] (val x: Self & TransitionHooks[HostElement]) extends AnyVal {
     
     inline def setAfterLeave(value: () => Unit): Self = StObject.set(x, "afterLeave", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object distSrcD3adaptorMod {
       __obj.asInstanceOf[D3v3Context]
     }
     
-    extension [Self <: D3v3Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D3v3Context] (val x: Self) extends AnyVal {
       
       inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     }

@@ -16,7 +16,8 @@ object GenerateEphemeralCertResponse {
     __obj.asInstanceOf[GenerateEphemeralCertResponse]
   }
   
-  extension [Self <: GenerateEphemeralCertResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GenerateEphemeralCertResponse] (val x: Self) extends AnyVal {
     
     inline def setEphemeralCert(value: SslCert): Self = StObject.set(x, "ephemeralCert", value.asInstanceOf[js.Any])
     

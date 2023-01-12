@@ -18,7 +18,8 @@ object SheetControlsOption {
     __obj.asInstanceOf[SheetControlsOption]
   }
   
-  extension [Self <: SheetControlsOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetControlsOption] (val x: Self) extends AnyVal {
     
     inline def setVisibilityState(value: DashboardUIState): Self = StObject.set(x, "VisibilityState", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetRunResult {
     __obj.asInstanceOf[GetRunResult]
   }
   
-  extension [Self <: GetRunResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRunResult] (val x: Self) extends AnyVal {
     
     inline def setRun(value: Run): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     

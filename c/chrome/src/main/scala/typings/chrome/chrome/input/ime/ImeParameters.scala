@@ -19,7 +19,8 @@ object ImeParameters {
     __obj.asInstanceOf[ImeParameters]
   }
   
-  extension [Self <: ImeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImeParameters] (val x: Self) extends AnyVal {
     
     inline def setEngineID(value: String): Self = StObject.set(x, "engineID", value.asInstanceOf[js.Any])
     

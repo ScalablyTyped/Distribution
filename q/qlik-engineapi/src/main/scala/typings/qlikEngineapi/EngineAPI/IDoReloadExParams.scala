@@ -41,7 +41,8 @@ object IDoReloadExParams {
     __obj.asInstanceOf[IDoReloadExParams]
   }
   
-  extension [Self <: IDoReloadExParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDoReloadExParams] (val x: Self) extends AnyVal {
     
     inline def setQDebug(value: Boolean): Self = StObject.set(x, "qDebug", value.asInstanceOf[js.Any])
     

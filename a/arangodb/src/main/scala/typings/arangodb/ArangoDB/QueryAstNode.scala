@@ -21,7 +21,8 @@ object QueryAstNode {
     __obj.asInstanceOf[QueryAstNode]
   }
   
-  extension [Self <: QueryAstNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAstNode] (val x: Self) extends AnyVal {
     
     inline def setSubNodes(value: js.Array[QueryAstNode]): Self = StObject.set(x, "subNodes", value.asInstanceOf[js.Any])
     

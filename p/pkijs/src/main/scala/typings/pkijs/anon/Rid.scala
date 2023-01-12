@@ -23,7 +23,8 @@ object Rid {
     __obj.asInstanceOf[Rid]
   }
   
-  extension [Self <: Rid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rid] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKey(value: String): Self = StObject.set(x, "encryptedKey", value.asInstanceOf[js.Any])
     

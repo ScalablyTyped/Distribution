@@ -38,7 +38,8 @@ object CatalogTarget {
     __obj.asInstanceOf[CatalogTarget]
   }
   
-  extension [Self <: CatalogTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogTarget] (val x: Self) extends AnyVal {
     
     inline def setConnectionName(value: ConnectionName): Self = StObject.set(x, "ConnectionName", value.asInstanceOf[js.Any])
     

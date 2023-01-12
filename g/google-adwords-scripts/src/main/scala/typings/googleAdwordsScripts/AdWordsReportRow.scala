@@ -15,7 +15,8 @@ object AdWordsReportRow {
     __obj.asInstanceOf[AdWordsReportRow]
   }
   
-  extension [Self <: AdWordsReportRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsReportRow] (val x: Self) extends AnyVal {
     
     inline def setFormatForUpload(value: () => js.Object): Self = StObject.set(x, "formatForUpload", js.Any.fromFunction0(value))
   }

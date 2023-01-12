@@ -29,7 +29,8 @@ object RefundResource {
     __obj.asInstanceOf[RefundResource]
   }
   
-  extension [Self <: RefundResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefundResource] (val x: Self) extends AnyVal {
     
     inline def setCapture_id(value: String): Self = StObject.set(x, "capture_id", value.asInstanceOf[js.Any])
     

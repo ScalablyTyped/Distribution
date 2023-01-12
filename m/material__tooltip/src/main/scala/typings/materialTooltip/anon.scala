@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCTooltipAdapter]
     }
     
-    extension [Self <: PartialMDCTooltipAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCTooltipAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ CssClasses => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       
@@ -279,7 +281,8 @@ object anon {
       __obj.asInstanceOf[WithCaretPos]
     }
     
-    extension [Self <: WithCaretPos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithCaretPos] (val x: Self) extends AnyVal {
       
       inline def setWithCaretPos(value: PositionWithCaret): Self = StObject.set(x, "withCaretPos", value.asInstanceOf[js.Any])
       

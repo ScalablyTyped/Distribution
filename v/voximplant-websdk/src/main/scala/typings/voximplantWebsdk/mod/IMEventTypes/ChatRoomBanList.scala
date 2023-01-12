@@ -30,7 +30,8 @@ object ChatRoomBanList {
     __obj.asInstanceOf[ChatRoomBanList]
   }
   
-  extension [Self <: ChatRoomBanList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomBanList] (val x: Self) extends AnyVal {
     
     inline def setParticipants(value: js.Array[ChatRoomParticipant]): Self = StObject.set(x, "participants", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object Compactable2 {
     __obj.asInstanceOf[Compactable2[F]]
   }
   
-  extension [Self <: Compactable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Compactable2[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compactable2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Compactable2[F]) extends AnyVal {
     
     inline def setCompact(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, Option<A>> */ Any => Any

@@ -15,7 +15,8 @@ object GeoChartRegionClickEvent {
     __obj.asInstanceOf[GeoChartRegionClickEvent]
   }
   
-  extension [Self <: GeoChartRegionClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoChartRegionClickEvent] (val x: Self) extends AnyVal {
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
   }

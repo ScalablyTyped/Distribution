@@ -62,7 +62,8 @@ object Beam {
     __obj.asInstanceOf[Beam]
   }
   
-  extension [Self <: Beam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Beam] (val x: Self) extends AnyVal {
     
     inline def setApplyStemExtensions(value: () => Unit): Self = StObject.set(x, "applyStemExtensions", js.Any.fromFunction0(value))
     

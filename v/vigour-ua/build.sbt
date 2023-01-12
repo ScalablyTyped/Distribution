@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "vigour-ua"
-version := "4.0-dt-20211202Z-9aa889"
+version := "4.0-dt-20211202Z-e125c5"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

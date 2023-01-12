@@ -56,7 +56,8 @@ object LevelPeriod {
     __obj.asInstanceOf[LevelPeriod]
   }
   
-  extension [Self <: LevelPeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelPeriod] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: operator): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

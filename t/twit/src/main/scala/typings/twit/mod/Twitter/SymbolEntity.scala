@@ -17,7 +17,8 @@ object SymbolEntity {
     __obj.asInstanceOf[SymbolEntity]
   }
   
-  extension [Self <: SymbolEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolEntity] (val x: Self) extends AnyVal {
     
     inline def setIndices(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
     

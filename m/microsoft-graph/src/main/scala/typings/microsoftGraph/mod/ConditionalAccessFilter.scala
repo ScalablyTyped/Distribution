@@ -22,7 +22,8 @@ object ConditionalAccessFilter {
     __obj.asInstanceOf[ConditionalAccessFilter]
   }
   
-  extension [Self <: ConditionalAccessFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessFilter] (val x: Self) extends AnyVal {
     
     inline def setMode(value: FilterMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

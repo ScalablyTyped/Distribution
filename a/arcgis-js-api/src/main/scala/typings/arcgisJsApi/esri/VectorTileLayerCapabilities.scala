@@ -33,7 +33,8 @@ object VectorTileLayerCapabilities {
     __obj.asInstanceOf[VectorTileLayerCapabilities]
   }
   
-  extension [Self <: VectorTileLayerCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VectorTileLayerCapabilities] (val x: Self) extends AnyVal {
     
     inline def setExportMap(value: VectorTileLayerCapabilitiesExportMap): Self = StObject.set(x, "exportMap", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object distDisclosureSrcDisclosureMod {
       __obj.asInstanceOf[InnerDisclosureProps]
     }
     
-    extension [Self <: InnerDisclosureProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerDisclosureProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

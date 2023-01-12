@@ -26,7 +26,8 @@ object HttpResponse {
     __obj.asInstanceOf[HttpResponse]
   }
   
-  extension [Self <: HttpResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

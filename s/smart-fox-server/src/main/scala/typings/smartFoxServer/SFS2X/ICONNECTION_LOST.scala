@@ -15,7 +15,8 @@ object ICONNECTION_LOST {
     __obj.asInstanceOf[ICONNECTION_LOST]
   }
   
-  extension [Self <: ICONNECTION_LOST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICONNECTION_LOST] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

@@ -17,7 +17,8 @@ object RotationMesh {
     __obj.asInstanceOf[RotationMesh]
   }
   
-  extension [Self <: RotationMesh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotationMesh] (val x: Self) extends AnyVal {
     
     inline def setCollider(value: typings.babylonjs.BABYLON.Mesh): Self = StObject.set(x, "collider", value.asInstanceOf[js.Any])
     

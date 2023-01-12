@@ -28,7 +28,8 @@ object PackageProgressCallback {
     __obj.asInstanceOf[PackageProgressCallback]
   }
   
-  extension [Self <: PackageProgressCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageProgressCallback] (val x: Self) extends AnyVal {
     
     inline def setOncomplete(value: PackageId => Unit): Self = StObject.set(x, "oncomplete", js.Any.fromFunction1(value))
     

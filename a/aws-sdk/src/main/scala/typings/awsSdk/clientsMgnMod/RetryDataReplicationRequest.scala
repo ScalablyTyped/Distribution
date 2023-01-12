@@ -18,7 +18,8 @@ object RetryDataReplicationRequest {
     __obj.asInstanceOf[RetryDataReplicationRequest]
   }
   
-  extension [Self <: RetryDataReplicationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetryDataReplicationRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceServerID(value: SourceServerID): Self = StObject.set(x, "sourceServerID", value.asInstanceOf[js.Any])
   }

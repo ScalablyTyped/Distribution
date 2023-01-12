@@ -49,7 +49,8 @@ object componentsSelectMultipleMod {
       __obj.asInstanceOf[SelectMultipleProps]
     }
     
-    extension [Self <: SelectMultipleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectMultipleProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: js.Array[String | Double | js.Object]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ParametersPathHookidOwnerQueryCursor {
     __obj.asInstanceOf[ParametersPathHookidOwnerQueryCursor]
   }
   
-  extension [Self <: ParametersPathHookidOwnerQueryCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathHookidOwnerQueryCursor] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathHookidOwnerQueryCursor): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

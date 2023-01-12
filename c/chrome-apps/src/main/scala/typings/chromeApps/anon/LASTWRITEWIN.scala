@@ -19,7 +19,8 @@ object LASTWRITEWIN {
     __obj.asInstanceOf[LASTWRITEWIN]
   }
   
-  extension [Self <: LASTWRITEWIN](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LASTWRITEWIN] (val x: Self) extends AnyVal {
     
     inline def setLAST_WRITE_WIN(value: last_write_win_): Self = StObject.set(x, "LAST_WRITE_WIN", value.asInstanceOf[js.Any])
     

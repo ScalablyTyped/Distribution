@@ -204,7 +204,8 @@ object MUIDataTableColumnOptions {
     __obj.asInstanceOf[MUIDataTableColumnOptions]
   }
   
-  extension [Self <: MUIDataTableColumnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MUIDataTableColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomBodyRender(
       value: (/* value */ Any, /* tableMeta */ MUIDataTableMeta, /* updateValue */ js.Function1[/* value */ String, Unit]) => String | ReactNode

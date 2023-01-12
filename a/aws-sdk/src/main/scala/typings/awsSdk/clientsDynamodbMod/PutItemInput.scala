@@ -60,7 +60,8 @@ object PutItemInput {
     __obj.asInstanceOf[PutItemInput]
   }
   
-  extension [Self <: PutItemInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutItemInput] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: ConditionExpression): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object GoogleCloudRecommenderV1InsightTypeConfig {
     __obj.asInstanceOf[GoogleCloudRecommenderV1InsightTypeConfig]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1InsightTypeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1InsightTypeConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotations(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

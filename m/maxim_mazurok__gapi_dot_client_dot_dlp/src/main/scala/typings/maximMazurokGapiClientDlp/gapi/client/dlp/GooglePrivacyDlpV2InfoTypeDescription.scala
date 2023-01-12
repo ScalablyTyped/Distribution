@@ -31,7 +31,8 @@ object GooglePrivacyDlpV2InfoTypeDescription {
     __obj.asInstanceOf[GooglePrivacyDlpV2InfoTypeDescription]
   }
   
-  extension [Self <: GooglePrivacyDlpV2InfoTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2InfoTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: js.Array[GooglePrivacyDlpV2InfoTypeCategory]): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
     

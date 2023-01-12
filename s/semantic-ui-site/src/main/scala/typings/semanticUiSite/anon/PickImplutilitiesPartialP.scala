@@ -27,7 +27,8 @@ object PickImplutilitiesPartialP {
     __obj.asInstanceOf[PickImplutilitiesPartialP]
   }
   
-  extension [Self <: PickImplutilitiesPartialP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplutilitiesPartialP] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

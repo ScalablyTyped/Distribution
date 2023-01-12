@@ -18,7 +18,8 @@ object GoogleCloudDialogflowV2OriginalDetectIntentRequest {
     __obj.asInstanceOf[GoogleCloudDialogflowV2OriginalDetectIntentRequest]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2OriginalDetectIntentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2OriginalDetectIntentRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: ApiClientObjectMap[Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

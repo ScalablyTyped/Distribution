@@ -16,7 +16,8 @@ object GetStackTraceRequest {
     __obj.asInstanceOf[GetStackTraceRequest]
   }
   
-  extension [Self <: GetStackTraceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStackTraceRequest] (val x: Self) extends AnyVal {
     
     inline def setStackTraceId(value: StackTraceId): Self = StObject.set(x, "stackTraceId", value.asInstanceOf[js.Any])
   }

@@ -76,7 +76,8 @@ object XBitmapPalette {
     __obj.asInstanceOf[XBitmapPalette]
   }
   
-  extension [Self <: XBitmapPalette](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBitmapPalette] (val x: Self) extends AnyVal {
     
     inline def setColorSpace(value: XColorSpace): Self = StObject.set(x, "ColorSpace", value.asInstanceOf[js.Any])
     

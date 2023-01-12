@@ -25,7 +25,8 @@ object heatmapStatistics {
     __obj.asInstanceOf[heatmapStatistics]
   }
   
-  extension [Self <: heatmapStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heatmapStatistics] (val x: Self) extends AnyVal {
     
     inline def setHeatmapStatistics(value: heatmapStatisticsHeatmapStatisticsParams => js.Promise[HeatmapStatisticsResult]): Self = StObject.set(x, "heatmapStatistics", js.Any.fromFunction1(value))
   }

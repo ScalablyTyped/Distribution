@@ -56,7 +56,8 @@ object Appenders {
     __obj.asInstanceOf[Appenders]
   }
   
-  extension [Self <: Appenders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appenders] (val x: Self) extends AnyVal {
     
     inline def setCategoryFilterAppender(value: CategoryFilterAppender): Self = StObject.set(x, "CategoryFilterAppender", value.asInstanceOf[js.Any])
     

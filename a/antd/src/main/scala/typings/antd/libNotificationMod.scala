@@ -64,7 +64,8 @@ object libNotificationMod extends Shortcut {
       __obj.asInstanceOf[ArgsProps]
     }
     
-    extension [Self <: ArgsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgsProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object libNotificationMod extends Shortcut {
       __obj.asInstanceOf[ConfigProps]
     }
     
-    extension [Self <: ConfigProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -232,7 +234,8 @@ object libNotificationMod extends Shortcut {
       __obj.asInstanceOf[DivProps]
     }
     
-    extension [Self <: DivProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivProps] (val x: Self) extends AnyVal {
       
       inline def `setData-testid`(value: String): Self = StObject.set(x, "data-testid", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object libNotificationMod extends Shortcut {
       __obj.asInstanceOf[NotificationApi]
     }
     
-    extension [Self <: NotificationApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationApi] (val x: Self) extends AnyVal {
       
       inline def setClose(value: String => Unit): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
       
@@ -329,7 +333,8 @@ object libNotificationMod extends Shortcut {
       __obj.asInstanceOf[NotificationInstance]
     }
     
-    extension [Self <: NotificationInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationInstance] (val x: Self) extends AnyVal {
       
       inline def setError(value: ArgsProps => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       

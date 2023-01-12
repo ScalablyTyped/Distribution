@@ -15,7 +15,8 @@ object TokenizerBuilderOption {
     __obj.asInstanceOf[TokenizerBuilderOption]
   }
   
-  extension [Self <: TokenizerBuilderOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenizerBuilderOption] (val x: Self) extends AnyVal {
     
     inline def setDicPath(value: String): Self = StObject.set(x, "dicPath", value.asInstanceOf[js.Any])
     

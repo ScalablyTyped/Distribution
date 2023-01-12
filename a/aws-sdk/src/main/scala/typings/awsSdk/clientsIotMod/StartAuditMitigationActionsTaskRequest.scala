@@ -38,7 +38,8 @@ object StartAuditMitigationActionsTaskRequest {
     __obj.asInstanceOf[StartAuditMitigationActionsTaskRequest]
   }
   
-  extension [Self <: StartAuditMitigationActionsTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartAuditMitigationActionsTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setAuditCheckToActionsMapping(value: AuditCheckToActionsMapping): Self = StObject.set(x, "auditCheckToActionsMapping", value.asInstanceOf[js.Any])
     

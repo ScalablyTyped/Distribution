@@ -31,7 +31,8 @@ object MenuItems {
     __obj.asInstanceOf[MenuItems]
   }
   
-  extension [Self <: MenuItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuItems] (val x: Self) extends AnyVal {
     
     inline def setFileUpload(value: Boolean): Self = StObject.set(x, "fileUpload", value.asInstanceOf[js.Any])
     

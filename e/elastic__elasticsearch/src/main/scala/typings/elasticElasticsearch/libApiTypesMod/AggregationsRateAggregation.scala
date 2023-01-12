@@ -19,7 +19,8 @@ object AggregationsRateAggregation {
     __obj.asInstanceOf[AggregationsRateAggregation]
   }
   
-  extension [Self <: AggregationsRateAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsRateAggregation] (val x: Self) extends AnyVal {
     
     inline def setMode(value: AggregationsRateMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

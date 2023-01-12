@@ -212,7 +212,8 @@ object ProgressProps {
     __obj.asInstanceOf[ProgressProps]
   }
   
-  extension [Self <: ProgressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
     
     inline def setAndDegree(value: Double): Self = StObject.set(x, "andDegree", value.asInstanceOf[js.Any])
     

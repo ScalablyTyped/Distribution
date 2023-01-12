@@ -23,7 +23,8 @@ object ExportThemesResponse {
     __obj.asInstanceOf[ExportThemesResponse]
   }
   
-  extension [Self <: ExportThemesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportThemesResponse] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: ThemeList): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

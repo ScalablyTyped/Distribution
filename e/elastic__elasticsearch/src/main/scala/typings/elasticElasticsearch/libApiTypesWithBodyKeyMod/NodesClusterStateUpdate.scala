@@ -43,7 +43,8 @@ object NodesClusterStateUpdate {
     __obj.asInstanceOf[NodesClusterStateUpdate]
   }
   
-  extension [Self <: NodesClusterStateUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClusterStateUpdate] (val x: Self) extends AnyVal {
     
     inline def setCommit_time(value: Duration): Self = StObject.set(x, "commit_time", value.asInstanceOf[js.Any])
     

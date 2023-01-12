@@ -22,7 +22,8 @@ object AutoForwarding {
     __obj.asInstanceOf[AutoForwarding]
   }
   
-  extension [Self <: AutoForwarding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoForwarding] (val x: Self) extends AnyVal {
     
     inline def setDisposition(value: String): Self = StObject.set(x, "disposition", value.asInstanceOf[js.Any])
     

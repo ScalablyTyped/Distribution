@@ -34,7 +34,8 @@ object AmbigousFilterRequest {
     __obj.asInstanceOf[AmbigousFilterRequest]
   }
   
-  extension [Self <: AmbigousFilterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbigousFilterRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectedFilter(value: String): Self = StObject.set(x, "DetectedFilter", value.asInstanceOf[js.Any])
     

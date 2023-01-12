@@ -22,7 +22,8 @@ object OnPageNotFoundCallbackResult {
     __obj.asInstanceOf[OnPageNotFoundCallbackResult]
   }
   
-  extension [Self <: OnPageNotFoundCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPageNotFoundCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setIsEntryPage(value: Boolean): Self = StObject.set(x, "isEntryPage", value.asInstanceOf[js.Any])
     

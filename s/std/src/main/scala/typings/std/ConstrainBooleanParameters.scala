@@ -19,7 +19,8 @@ object ConstrainBooleanParameters {
     __obj.asInstanceOf[ConstrainBooleanParameters]
   }
   
-  extension [Self <: ConstrainBooleanParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConstrainBooleanParameters] (val x: Self) extends AnyVal {
     
     inline def setExact(value: scala.Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
     

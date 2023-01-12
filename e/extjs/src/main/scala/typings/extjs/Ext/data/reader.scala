@@ -41,7 +41,8 @@ object reader {
       __obj.asInstanceOf[IJson]
     }
     
-    extension [Self <: IJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJson] (val x: Self) extends AnyVal {
       
       inline def setJsonData(value: Any): Self = StObject.set(x, "jsonData", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object reader {
       __obj.asInstanceOf[typings.extjs.Ext.data.reader.IReader]
     }
     
-    extension [Self <: typings.extjs.Ext.data.reader.IReader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.data.reader.IReader] (val x: Self) extends AnyVal {
       
       inline def setGetResponseData(value: /* response */ js.UndefOr[Any] => IResultSet): Self = StObject.set(x, "getResponseData", js.Any.fromFunction1(value))
       
@@ -195,7 +197,8 @@ object reader {
       __obj.asInstanceOf[IXml]
     }
     
-    extension [Self <: IXml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXml] (val x: Self) extends AnyVal {
       
       inline def setGetData(value: /* data */ js.UndefOr[Any] => Any): Self = StObject.set(x, "getData", js.Any.fromFunction1(value))
       

@@ -37,7 +37,8 @@ object KeyboardComponent {
     __obj.asInstanceOf[KeyboardComponent]
   }
   
-  extension [Self <: KeyboardComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardComponent] (val x: Self) extends AnyVal {
     
     inline def setBind(value: () => Unit): Self = StObject.set(x, "bind", js.Any.fromFunction0(value))
     

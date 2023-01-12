@@ -32,7 +32,8 @@ object esPanelsTimePanelTimeBodyMod {
       __obj.asInstanceOf[BodyOperationRef]
     }
     
-    extension [Self <: BodyOperationRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyOperationRef] (val x: Self) extends AnyVal {
       
       inline def setOnUpDown(value: Double => Unit): Self = StObject.set(x, "onUpDown", js.Any.fromFunction1(value))
     }
@@ -70,7 +71,8 @@ object esPanelsTimePanelTimeBodyMod {
       __obj.asInstanceOf[TimeBodyProps[DateType]]
     }
     
-    extension [Self <: TimeBodyProps[?], DateType](x: Self & TimeBodyProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeBodyProps[?], DateType] (val x: Self & TimeBodyProps[DateType]) extends AnyVal {
       
       inline def setActiveColumnIndex(value: Double): Self = StObject.set(x, "activeColumnIndex", value.asInstanceOf[js.Any])
       

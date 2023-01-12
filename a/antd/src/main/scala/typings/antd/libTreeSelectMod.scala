@@ -130,7 +130,8 @@ object libTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[LabeledValue]
     }
     
-    extension [Self <: LabeledValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabeledValue] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -459,7 +460,8 @@ object libTreeSelectMod extends Shortcut {
       __obj.asInstanceOf[TreeSelectProps[ValueType, OptionType]]
     }
     
-    extension [Self <: TreeSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */](x: Self & (TreeSelectProps[ValueType, OptionType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeSelectProps[?, ?], ValueType, OptionType /* <: BaseOptionType | DefaultOptionType */] (val x: Self & (TreeSelectProps[ValueType, OptionType])) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

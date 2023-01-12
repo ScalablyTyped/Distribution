@@ -22,7 +22,8 @@ object ColumnSizeChanged {
     __obj.asInstanceOf[ColumnSizeChanged]
   }
   
-  extension [Self <: ColumnSizeChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSizeChanged] (val x: Self) extends AnyVal {
     
     inline def setColumnSizeChanged(value: (IScope, columnSizeChangedHandler) => Unit): Self = StObject.set(x, "columnSizeChanged", js.Any.fromFunction2(value))
   }

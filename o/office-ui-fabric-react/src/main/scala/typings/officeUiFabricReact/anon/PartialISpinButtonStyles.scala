@@ -55,7 +55,8 @@ object PartialISpinButtonStyles {
     __obj.asInstanceOf[PartialISpinButtonStyles]
   }
   
-  extension [Self <: PartialISpinButtonStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialISpinButtonStyles] (val x: Self) extends AnyVal {
     
     inline def setArrowButtonsContainer(value: IStyle): Self = StObject.set(x, "arrowButtonsContainer", value.asInstanceOf[js.Any])
     

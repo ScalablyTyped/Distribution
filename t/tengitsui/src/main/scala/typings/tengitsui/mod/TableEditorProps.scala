@@ -21,7 +21,8 @@ object TableEditorProps {
     __obj.asInstanceOf[TableEditorProps]
   }
   
-  extension [Self <: TableEditorProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableEditorProps] (val x: Self) extends AnyVal {
     
     inline def setAddTool(value: /* columns */ js.Object => js.Object): Self = StObject.set(x, "addTool", js.Any.fromFunction1(value))
     

@@ -69,7 +69,8 @@ object libShapesLineMod {
       __obj.asInstanceOf[LineConfig]
     }
     
-    extension [Self <: LineConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineConfig] (val x: Self) extends AnyVal {
       
       inline def setBezier(value: Boolean): Self = StObject.set(x, "bezier", value.asInstanceOf[js.Any])
       

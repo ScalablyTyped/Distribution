@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[Hash]
     }
     
-    extension [Self <: Hash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hash] (val x: Self) extends AnyVal {
       
       inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object mod {
       __obj.asInstanceOf[SerializableHash]
     }
     
-    extension [Self <: SerializableHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SerializableHash] (val x: Self) extends AnyVal {
       
       inline def setCleanSavedState(value: Any => Unit): Self = StObject.set(x, "cleanSavedState", js.Any.fromFunction1(value))
       

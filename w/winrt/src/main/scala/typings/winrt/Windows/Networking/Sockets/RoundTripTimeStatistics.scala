@@ -21,7 +21,8 @@ object RoundTripTimeStatistics {
     __obj.asInstanceOf[RoundTripTimeStatistics]
   }
   
-  extension [Self <: RoundTripTimeStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoundTripTimeStatistics] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

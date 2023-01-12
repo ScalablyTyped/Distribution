@@ -17,7 +17,8 @@ object Retain {
     __obj.asInstanceOf[Retain]
   }
   
-  extension [Self <: Retain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Retain] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

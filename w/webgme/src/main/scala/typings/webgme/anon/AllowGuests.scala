@@ -69,7 +69,8 @@ object AllowGuests {
     __obj.asInstanceOf[AllowGuests]
   }
   
-  extension [Self <: AllowGuests](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowGuests] (val x: Self) extends AnyVal {
     
     inline def setAllowGuests(value: Boolean): Self = StObject.set(x, "allowGuests", value.asInstanceOf[js.Any])
     

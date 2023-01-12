@@ -18,7 +18,8 @@ object DeleteConfigurationSetTrackingOptionsRequest {
     __obj.asInstanceOf[DeleteConfigurationSetTrackingOptionsRequest]
   }
   
-  extension [Self <: DeleteConfigurationSetTrackingOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteConfigurationSetTrackingOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setConfigurationSetName(value: ConfigurationSetName): Self = StObject.set(x, "ConfigurationSetName", value.asInstanceOf[js.Any])
   }

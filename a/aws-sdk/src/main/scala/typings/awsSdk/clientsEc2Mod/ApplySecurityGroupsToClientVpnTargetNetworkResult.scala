@@ -18,7 +18,8 @@ object ApplySecurityGroupsToClientVpnTargetNetworkResult {
     __obj.asInstanceOf[ApplySecurityGroupsToClientVpnTargetNetworkResult]
   }
   
-  extension [Self <: ApplySecurityGroupsToClientVpnTargetNetworkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplySecurityGroupsToClientVpnTargetNetworkResult] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: ClientVpnSecurityGroupIdSet): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

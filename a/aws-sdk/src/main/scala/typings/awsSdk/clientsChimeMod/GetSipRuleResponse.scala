@@ -18,7 +18,8 @@ object GetSipRuleResponse {
     __obj.asInstanceOf[GetSipRuleResponse]
   }
   
-  extension [Self <: GetSipRuleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSipRuleResponse] (val x: Self) extends AnyVal {
     
     inline def setSipRule(value: SipRule): Self = StObject.set(x, "SipRule", value.asInstanceOf[js.Any])
     

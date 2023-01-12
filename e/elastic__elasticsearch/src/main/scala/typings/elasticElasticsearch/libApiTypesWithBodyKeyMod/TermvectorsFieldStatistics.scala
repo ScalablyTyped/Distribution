@@ -19,7 +19,8 @@ object TermvectorsFieldStatistics {
     __obj.asInstanceOf[TermvectorsFieldStatistics]
   }
   
-  extension [Self <: TermvectorsFieldStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermvectorsFieldStatistics] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: integer): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     

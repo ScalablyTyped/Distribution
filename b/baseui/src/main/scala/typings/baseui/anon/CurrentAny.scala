@@ -15,7 +15,8 @@ object CurrentAny {
     __obj.asInstanceOf[CurrentAny]
   }
   
-  extension [Self <: CurrentAny](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CurrentAny] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: Any): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
   }

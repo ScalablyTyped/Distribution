@@ -55,7 +55,8 @@ object DockerContainerStatsData {
     __obj.asInstanceOf[DockerContainerStatsData]
   }
   
-  extension [Self <: DockerContainerStatsData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DockerContainerStatsData] (val x: Self) extends AnyVal {
     
     inline def setBlockIO(value: R): Self = StObject.set(x, "blockIO", value.asInstanceOf[js.Any])
     

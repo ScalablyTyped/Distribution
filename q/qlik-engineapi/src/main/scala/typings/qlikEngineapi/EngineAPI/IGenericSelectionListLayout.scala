@@ -28,7 +28,8 @@ object IGenericSelectionListLayout {
     __obj.asInstanceOf[IGenericSelectionListLayout]
   }
   
-  extension [Self <: IGenericSelectionListLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGenericSelectionListLayout] (val x: Self) extends AnyVal {
     
     inline def setQSelectionObject(value: ISelectionListObject): Self = StObject.set(x, "qSelectionObject", value.asInstanceOf[js.Any])
   }

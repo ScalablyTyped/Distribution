@@ -26,7 +26,8 @@ object PartitionOptions {
     __obj.asInstanceOf[PartitionOptions]
   }
   
-  extension [Self <: PartitionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartitionOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxPartitions(value: String): Self = StObject.set(x, "maxPartitions", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SharedElementTransition {
     __obj.asInstanceOf[SharedElementTransition]
   }
   
-  extension [Self <: SharedElementTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedElementTransition] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

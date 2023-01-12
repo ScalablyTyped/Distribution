@@ -86,7 +86,8 @@ object distTypesExceptionsMod {
       __obj.asInstanceOf[ServiceExceptionOptions]
     }
     
-    extension [Self <: ServiceExceptionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceExceptionOptions] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

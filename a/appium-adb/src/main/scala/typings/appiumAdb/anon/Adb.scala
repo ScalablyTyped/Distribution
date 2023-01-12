@@ -24,7 +24,8 @@ object Adb {
     __obj.asInstanceOf[Adb]
   }
   
-  extension [Self <: Adb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adb] (val x: Self) extends AnyVal {
     
     inline def setAdb(value: AdbExecutable): Self = StObject.set(x, "adb", value.asInstanceOf[js.Any])
     

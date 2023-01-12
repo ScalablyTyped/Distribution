@@ -20,7 +20,8 @@ object UpdateShareInvitationInput {
     __obj.asInstanceOf[UpdateShareInvitationInput]
   }
   
-  extension [Self <: UpdateShareInvitationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateShareInvitationInput] (val x: Self) extends AnyVal {
     
     inline def setShareInvitationAction(value: ShareInvitationAction): Self = StObject.set(x, "ShareInvitationAction", value.asInstanceOf[js.Any])
     

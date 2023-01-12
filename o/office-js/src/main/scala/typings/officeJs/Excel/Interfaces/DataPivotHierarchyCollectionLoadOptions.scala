@@ -81,7 +81,8 @@ object DataPivotHierarchyCollectionLoadOptions {
     __obj.asInstanceOf[DataPivotHierarchyCollectionLoadOptions]
   }
   
-  extension [Self <: DataPivotHierarchyCollectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPivotHierarchyCollectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object DistributionNormal {
     __obj.asInstanceOf[DistributionNormal]
   }
   
-  extension [Self <: DistributionNormal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionNormal] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: normal): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
     

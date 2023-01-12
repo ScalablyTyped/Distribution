@@ -56,7 +56,8 @@ object FRF {
     __obj.asInstanceOf[FRF]
   }
   
-  extension [Self <: FRF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FRF] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[String]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

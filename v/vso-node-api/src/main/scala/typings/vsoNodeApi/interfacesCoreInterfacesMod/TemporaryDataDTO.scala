@@ -19,7 +19,8 @@ object TemporaryDataDTO {
     __obj.asInstanceOf[TemporaryDataDTO]
   }
   
-  extension [Self <: TemporaryDataDTO](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemporaryDataDTO] (val x: Self) extends AnyVal {
     
     inline def setExpirationSeconds(value: Double): Self = StObject.set(x, "expirationSeconds", value.asInstanceOf[js.Any])
     

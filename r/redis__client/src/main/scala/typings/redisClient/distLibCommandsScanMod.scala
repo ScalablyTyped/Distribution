@@ -35,7 +35,8 @@ object distLibCommandsScanMod {
       __obj.asInstanceOf[ScanCommandOptions]
     }
     
-    extension [Self <: ScanCommandOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanCommandOptions] (val x: Self) extends AnyVal {
       
       inline def setTYPE(value: RedisCommandArgument): Self = StObject.set(x, "TYPE", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distLibCommandsScanMod {
       __obj.asInstanceOf[ScanReply]
     }
     
-    extension [Self <: ScanReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanReply] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: Double): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

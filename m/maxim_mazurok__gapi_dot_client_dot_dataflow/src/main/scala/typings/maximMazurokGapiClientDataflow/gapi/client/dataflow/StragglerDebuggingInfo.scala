@@ -16,7 +16,8 @@ object StragglerDebuggingInfo {
     __obj.asInstanceOf[StragglerDebuggingInfo]
   }
   
-  extension [Self <: StragglerDebuggingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StragglerDebuggingInfo] (val x: Self) extends AnyVal {
     
     inline def setHotKey(value: HotKeyDebuggingInfo): Self = StObject.set(x, "hotKey", value.asInstanceOf[js.Any])
     

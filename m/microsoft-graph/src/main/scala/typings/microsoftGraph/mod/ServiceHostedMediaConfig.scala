@@ -18,7 +18,8 @@ object ServiceHostedMediaConfig {
     __obj.asInstanceOf[ServiceHostedMediaConfig]
   }
   
-  extension [Self <: ServiceHostedMediaConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceHostedMediaConfig] (val x: Self) extends AnyVal {
     
     inline def setPreFetchMedia(value: NullableOption[js.Array[MediaInfo]]): Self = StObject.set(x, "preFetchMedia", value.asInstanceOf[js.Any])
     

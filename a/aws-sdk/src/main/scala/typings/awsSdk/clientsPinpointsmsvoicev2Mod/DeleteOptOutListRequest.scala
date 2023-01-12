@@ -18,7 +18,8 @@ object DeleteOptOutListRequest {
     __obj.asInstanceOf[DeleteOptOutListRequest]
   }
   
-  extension [Self <: DeleteOptOutListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOptOutListRequest] (val x: Self) extends AnyVal {
     
     inline def setOptOutListName(value: OptOutListNameOrArn): Self = StObject.set(x, "OptOutListName", value.asInstanceOf[js.Any])
   }

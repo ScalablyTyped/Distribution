@@ -26,7 +26,8 @@ object FormalSignatureItemInfo {
     __obj.asInstanceOf[FormalSignatureItemInfo]
   }
   
-  extension [Self <: FormalSignatureItemInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormalSignatureItemInfo] (val x: Self) extends AnyVal {
     
     inline def setDocComment(value: String): Self = StObject.set(x, "docComment", value.asInstanceOf[js.Any])
     

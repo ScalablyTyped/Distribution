@@ -34,7 +34,8 @@ object MapImageLayerCreateExportImageParametersOptions {
     __obj.asInstanceOf[MapImageLayerCreateExportImageParametersOptions]
   }
   
-  extension [Self <: MapImageLayerCreateExportImageParametersOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapImageLayerCreateExportImageParametersOptions] (val x: Self) extends AnyVal {
     
     inline def setPixelRatio(value: Double): Self = StObject.set(x, "pixelRatio", value.asInstanceOf[js.Any])
     

@@ -105,7 +105,8 @@ object mod {
       __obj.asInstanceOf[ExternallyOwnedAccount]
     }
     
-    extension [Self <: ExternallyOwnedAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExternallyOwnedAccount] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[TypedDataDomain]
     }
     
-    extension [Self <: TypedDataDomain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedDataDomain] (val x: Self) extends AnyVal {
       
       inline def setChainId(value: BigNumberish): Self = StObject.set(x, "chainId", value.asInstanceOf[js.Any])
       
@@ -170,7 +172,8 @@ object mod {
       __obj.asInstanceOf[TypedDataField]
     }
     
-    extension [Self <: TypedDataField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedDataField] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -195,7 +198,8 @@ object mod {
       __obj.asInstanceOf[TypedDataSigner]
     }
     
-    extension [Self <: TypedDataSigner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedDataSigner] (val x: Self) extends AnyVal {
       
       inline def set_signTypedData(
         value: (TypedDataDomain, Record[String, js.Array[TypedDataField]], Record[String, Any]) => js.Promise[String]

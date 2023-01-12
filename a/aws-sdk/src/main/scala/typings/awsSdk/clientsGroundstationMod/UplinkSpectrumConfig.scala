@@ -23,7 +23,8 @@ object UplinkSpectrumConfig {
     __obj.asInstanceOf[UplinkSpectrumConfig]
   }
   
-  extension [Self <: UplinkSpectrumConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UplinkSpectrumConfig] (val x: Self) extends AnyVal {
     
     inline def setCenterFrequency(value: Frequency): Self = StObject.set(x, "centerFrequency", value.asInstanceOf[js.Any])
     

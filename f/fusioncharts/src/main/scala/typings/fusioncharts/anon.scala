@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[CreditLabel]
     }
     
-    extension [Self <: CreditLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreditLabel] (val x: Self) extends AnyVal {
       
       inline def setCreditLabel(value: String | Boolean): Self = StObject.set(x, "creditLabel", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object anon {
       __obj.asInstanceOf[UseCanvas]
     }
     
-    extension [Self <: UseCanvas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseCanvas] (val x: Self) extends AnyVal {
       
       inline def setUseCanvas(value: String | Boolean): Self = StObject.set(x, "useCanvas", value.asInstanceOf[js.Any])
       

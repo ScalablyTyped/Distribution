@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[CheckpointConfig]
     }
     
-    extension [Self <: CheckpointConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckpointConfig] (val x: Self) extends AnyVal {
       
       inline def setIsCheckpointFn(value: /* chunk */ Any => Boolean): Self = StObject.set(x, "isCheckpointFn", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object OSUpdateSettings {
     __obj.asInstanceOf[OSUpdateSettings]
   }
   
-  extension [Self <: OSUpdateSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSUpdateSettings] (val x: Self) extends AnyVal {
     
     inline def setOSVersion(value: OSVersion): Self = StObject.set(x, "OSVersion", value.asInstanceOf[js.Any])
     

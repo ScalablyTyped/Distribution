@@ -28,7 +28,8 @@ object DescribeIngestionRequest {
     __obj.asInstanceOf[DescribeIngestionRequest]
   }
   
-  extension [Self <: DescribeIngestionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIngestionRequest] (val x: Self) extends AnyVal {
     
     inline def setAwsAccountId(value: AwsAccountId): Self = StObject.set(x, "AwsAccountId", value.asInstanceOf[js.Any])
     

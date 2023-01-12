@@ -40,7 +40,8 @@ object typingsMysqlLibProtocolPacketsResultSetHeaderMod {
       __obj.asInstanceOf[ResultSetHeader]
     }
     
-    extension [Self <: ResultSetHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSetHeader] (val x: Self) extends AnyVal {
       
       inline def setAffectedRows(value: Double): Self = StObject.set(x, "affectedRows", value.asInstanceOf[js.Any])
       

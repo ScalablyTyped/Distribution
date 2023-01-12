@@ -16,7 +16,8 @@ object IapTestServiceAccountInfo {
     __obj.asInstanceOf[IapTestServiceAccountInfo]
   }
   
-  extension [Self <: IapTestServiceAccountInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IapTestServiceAccountInfo] (val x: Self) extends AnyVal {
     
     inline def setTargetAudienceClientId(value: String): Self = StObject.set(x, "targetAudienceClientId", value.asInstanceOf[js.Any])
     

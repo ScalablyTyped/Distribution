@@ -180,7 +180,8 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       __obj.asInstanceOf[StrictVisibilityProps]
     }
     
-    extension [Self <: StrictVisibilityProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictVisibilityProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -323,7 +324,8 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       __obj.asInstanceOf[VisibilityCalculations]
     }
     
-    extension [Self <: VisibilityCalculations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibilityCalculations] (val x: Self) extends AnyVal {
       
       inline def setBottomPassed(value: Boolean): Self = StObject.set(x, "bottomPassed", value.asInstanceOf[js.Any])
       
@@ -366,7 +368,8 @@ object distCommonjsBehaviorsVisibilityVisibilityMod extends Shortcut {
       __obj.asInstanceOf[VisibilityEventData]
     }
     
-    extension [Self <: VisibilityEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisibilityEventData] (val x: Self) extends AnyVal {
       
       inline def setCalculations(value: VisibilityCalculations): Self = StObject.set(x, "calculations", value.asInstanceOf[js.Any])
     }

@@ -34,7 +34,8 @@ object XPropertySetRegistryFactory {
     __obj.asInstanceOf[XPropertySetRegistryFactory]
   }
   
-  extension [Self <: XPropertySetRegistryFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertySetRegistryFactory] (val x: Self) extends AnyVal {
     
     inline def setCreatePropertySetRegistry(value: String => XPropertySetRegistry): Self = StObject.set(x, "createPropertySetRegistry", js.Any.fromFunction1(value))
   }

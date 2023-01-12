@@ -67,7 +67,8 @@ object mod {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object mod {
       __obj.asInstanceOf[AppStart]
     }
     
-    extension [Self <: AppStart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppStart] (val x: Self) extends AnyVal {
       
       inline def setUserInfo(value: Cid): Self = StObject.set(x, "userInfo", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object mod {
       __obj.asInstanceOf[Download]
     }
     
-    extension [Self <: Download](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Download] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -144,7 +147,8 @@ object mod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -185,7 +189,8 @@ object mod {
       __obj.asInstanceOf[InstanceProps]
     }
     
-    extension [Self <: InstanceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object mod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setLink(value: String): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
@@ -251,7 +257,8 @@ object mod {
       __obj.asInstanceOf[MatomoProviderProps]
     }
     
-    extension [Self <: MatomoProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatomoProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -290,7 +297,8 @@ object mod {
       __obj.asInstanceOf[MatomoTracker]
     }
     
-    extension [Self <: MatomoTracker](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatomoTracker] (val x: Self) extends AnyVal {
       
       inline def setTrackAction(value: Action => js.Promise[Response]): Self = StObject.set(x, "trackAction", js.Any.fromFunction1(value))
       
@@ -325,7 +333,8 @@ object mod {
       __obj.asInstanceOf[SiteSearch]
     }
     
-    extension [Self <: SiteSearch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SiteSearch] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

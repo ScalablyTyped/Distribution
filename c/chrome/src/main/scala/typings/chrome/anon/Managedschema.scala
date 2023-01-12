@@ -15,7 +15,8 @@ object Managedschema {
     __obj.asInstanceOf[Managedschema]
   }
   
-  extension [Self <: Managedschema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Managedschema] (val x: Self) extends AnyVal {
     
     inline def setManaged_schema(value: String): Self = StObject.set(x, "managed_schema", value.asInstanceOf[js.Any])
   }

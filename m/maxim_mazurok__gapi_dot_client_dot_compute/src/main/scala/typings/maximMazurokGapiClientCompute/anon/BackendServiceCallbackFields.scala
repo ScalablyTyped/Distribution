@@ -62,7 +62,8 @@ object BackendServiceCallbackFields {
     __obj.asInstanceOf[BackendServiceCallbackFields]
   }
   
-  extension [Self <: BackendServiceCallbackFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendServiceCallbackFields] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

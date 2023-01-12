@@ -50,7 +50,8 @@ object libVictoryPrimitivesBorderMod {
       __obj.asInstanceOf[BorderProps]
     }
     
-    extension [Self <: BorderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

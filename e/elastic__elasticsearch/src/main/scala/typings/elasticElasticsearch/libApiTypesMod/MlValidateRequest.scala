@@ -33,7 +33,8 @@ object MlValidateRequest {
     __obj.asInstanceOf[MlValidateRequest]
   }
   
-  extension [Self <: MlValidateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlValidateRequest] (val x: Self) extends AnyVal {
     
     inline def setAnalysis_config(value: MlAnalysisConfig): Self = StObject.set(x, "analysis_config", value.asInstanceOf[js.Any])
     

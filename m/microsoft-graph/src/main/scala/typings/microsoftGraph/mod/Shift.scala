@@ -27,7 +27,8 @@ object Shift {
     __obj.asInstanceOf[Shift]
   }
   
-  extension [Self <: Shift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Shift] (val x: Self) extends AnyVal {
     
     inline def setDraftShift(value: NullableOption[ShiftItem]): Self = StObject.set(x, "draftShift", value.asInstanceOf[js.Any])
     

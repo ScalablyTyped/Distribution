@@ -17,7 +17,8 @@ object SetStyleSheetTextRequest {
     __obj.asInstanceOf[SetStyleSheetTextRequest]
   }
   
-  extension [Self <: SetStyleSheetTextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetStyleSheetTextRequest] (val x: Self) extends AnyVal {
     
     inline def setStyleSheetId(value: StyleSheetId): Self = StObject.set(x, "styleSheetId", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DetectorStateDefinition {
     __obj.asInstanceOf[DetectorStateDefinition]
   }
   
-  extension [Self <: DetectorStateDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectorStateDefinition] (val x: Self) extends AnyVal {
     
     inline def setStateName(value: StateName): Self = StObject.set(x, "stateName", value.asInstanceOf[js.Any])
     

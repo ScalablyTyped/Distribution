@@ -23,7 +23,8 @@ object SourceCtlName {
     __obj.asInstanceOf[SourceCtlName]
   }
   
-  extension [Self <: SourceCtlName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceCtlName] (val x: Self) extends AnyVal {
     
     inline def setSourceCtlName(value: String): Self = StObject.set(x, "SourceCtlName", value.asInstanceOf[js.Any])
     

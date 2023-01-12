@@ -27,7 +27,8 @@ object SecureFormErrorMessage {
     __obj.asInstanceOf[SecureFormErrorMessage]
   }
   
-  extension [Self <: SecureFormErrorMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecureFormErrorMessage] (val x: Self) extends AnyVal {
     
     inline def setCode(value: SecureFormErrorCode): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object PositionText {
     __obj.asInstanceOf[PositionText]
   }
   
-  extension [Self <: PositionText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionText] (val x: Self) extends AnyVal {
     
     inline def setPosition(
       value: `inner-top` | `inner-middle` | `inner-bottom` | `outer-top` | `outer-middle` | `outer-bottom`

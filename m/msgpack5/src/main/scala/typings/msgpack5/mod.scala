@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[EncodeDecodeOptions]
     }
     
-    extension [Self <: EncodeDecodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodeDecodeOptions] (val x: Self) extends AnyVal {
       
       inline def setHeader(value: Boolean): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object mod {
       __obj.asInstanceOf[MsgPackOptions]
     }
     
-    extension [Self <: MsgPackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsgPackOptions] (val x: Self) extends AnyVal {
       
       inline def setCompatibilityMode(value: Boolean): Self = StObject.set(x, "compatibilityMode", value.asInstanceOf[js.Any])
       

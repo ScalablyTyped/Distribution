@@ -60,7 +60,8 @@ object libApiRegistererOptionsMod {
       __obj.asInstanceOf[RegistererOptions]
     }
     
-    extension [Self <: RegistererOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegistererOptions] (val x: Self) extends AnyVal {
       
       inline def setExpires(value: Double): Self = StObject.set(x, "expires", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ParametersQueryVisibletoorganization {
     __obj.asInstanceOf[ParametersQueryVisibletoorganization]
   }
   
-  extension [Self <: ParametersQueryVisibletoorganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersQueryVisibletoorganization] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: QueryVisibletoorganization): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

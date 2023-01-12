@@ -111,7 +111,8 @@ object distHdkeyMod {
       __obj.asInstanceOf[EthereumHDKey]
     }
     
-    extension [Self <: EthereumHDKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EthereumHDKey] (val x: Self) extends AnyVal {
       
       inline def setDeriveChild(value: Double => EthereumHDKey): Self = StObject.set(x, "deriveChild", js.Any.fromFunction1(value))
       

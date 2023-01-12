@@ -15,7 +15,8 @@ object Full {
     __obj.asInstanceOf[Full]
   }
   
-  extension [Self <: Full](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Full] (val x: Self) extends AnyVal {
     
     inline def setFull(value: Boolean): Self = StObject.set(x, "full", value.asInstanceOf[js.Any])
   }

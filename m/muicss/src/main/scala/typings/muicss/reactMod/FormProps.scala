@@ -19,7 +19,8 @@ object FormProps {
     __obj.asInstanceOf[FormProps]
   }
   
-  extension [Self <: FormProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
     
     inline def setInline(value: Boolean): Self = StObject.set(x, "inline", value.asInstanceOf[js.Any])
     

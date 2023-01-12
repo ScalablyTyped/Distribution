@@ -21,7 +21,8 @@ object Acl {
     __obj.asInstanceOf[Acl]
   }
   
-  extension [Self <: Acl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Acl] (val x: Self) extends AnyVal {
     
     inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

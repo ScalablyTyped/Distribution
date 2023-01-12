@@ -30,7 +30,8 @@ object ISharedWith {
     __obj.asInstanceOf[ISharedWith]
   }
   
-  extension [Self <: ISharedWith](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISharedWith] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: String): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
   }

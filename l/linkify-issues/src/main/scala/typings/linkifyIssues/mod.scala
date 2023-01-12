@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: HTMLAttributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[TypeDomOptions]
     }
     
-    extension [Self <: TypeDomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeDomOptions] (val x: Self) extends AnyVal {
       
       inline def setType(value: dom): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

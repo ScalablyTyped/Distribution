@@ -33,7 +33,8 @@ object AwsLambdaFunctionCode {
     __obj.asInstanceOf[AwsLambdaFunctionCode]
   }
   
-  extension [Self <: AwsLambdaFunctionCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionCode] (val x: Self) extends AnyVal {
     
     inline def setS3Bucket(value: NonEmptyString): Self = StObject.set(x, "S3Bucket", value.asInstanceOf[js.Any])
     

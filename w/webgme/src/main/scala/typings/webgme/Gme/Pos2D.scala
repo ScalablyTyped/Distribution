@@ -17,7 +17,8 @@ object Pos2D {
     __obj.asInstanceOf[Pos2D]
   }
   
-  extension [Self <: Pos2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pos2D] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

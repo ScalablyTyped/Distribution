@@ -30,7 +30,8 @@ object TouchableProps {
     __obj.asInstanceOf[TouchableProps]
   }
   
-  extension [Self <: TouchableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableProps] (val x: Self) extends AnyVal {
     
     inline def setDelayLongPress(value: Double): Self = StObject.set(x, "delayLongPress", value.asInstanceOf[js.Any])
     

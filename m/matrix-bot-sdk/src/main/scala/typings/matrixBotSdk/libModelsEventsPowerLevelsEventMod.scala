@@ -114,7 +114,8 @@ object libModelsEventsPowerLevelsEventMod {
       __obj.asInstanceOf[PowerLevelsEventContent]
     }
     
-    extension [Self <: PowerLevelsEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PowerLevelsEventContent] (val x: Self) extends AnyVal {
       
       inline def setBan(value: Double): Self = StObject.set(x, "ban", value.asInstanceOf[js.Any])
       

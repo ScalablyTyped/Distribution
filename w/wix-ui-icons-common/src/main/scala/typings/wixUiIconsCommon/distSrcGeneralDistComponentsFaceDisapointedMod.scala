@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsFaceDisapointedMod extends Shortcut {
       __obj.asInstanceOf[FaceDisapointedProps]
     }
     
-    extension [Self <: FaceDisapointedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaceDisapointedProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

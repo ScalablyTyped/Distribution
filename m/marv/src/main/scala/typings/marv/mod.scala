@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Driver]
     }
     
-    extension [Self <: Driver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Driver] (val x: Self) extends AnyVal {
       
       inline def setConnect(value: ErrorOnlyCallback => Unit): Self = StObject.set(x, "connect", js.Any.fromFunction1(value))
       
@@ -104,7 +105,8 @@ object mod {
       __obj.asInstanceOf[DriverMigration]
     }
     
-    extension [Self <: DriverMigration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriverMigration] (val x: Self) extends AnyVal {
       
       inline def setChecksum(value: String): Self = StObject.set(x, "checksum", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object mod {
       __obj.asInstanceOf[ParsedMigration]
     }
     
-    extension [Self <: ParsedMigration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedMigration] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -200,7 +203,8 @@ object mod {
       __obj.asInstanceOf[ScanOptions]
     }
     
-    extension [Self <: ScanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanOptions] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: Record[String, String]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
       

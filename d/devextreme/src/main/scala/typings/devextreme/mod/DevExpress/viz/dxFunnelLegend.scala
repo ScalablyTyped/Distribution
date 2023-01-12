@@ -47,7 +47,8 @@ object dxFunnelLegend {
     __obj.asInstanceOf[dxFunnelLegend]
   }
   
-  extension [Self <: dxFunnelLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxFunnelLegend] (val x: Self) extends AnyVal {
     
     inline def setCustomizeHint(value: /* itemInfo */ Text => String): Self = StObject.set(x, "customizeHint", js.Any.fromFunction1(value))
     

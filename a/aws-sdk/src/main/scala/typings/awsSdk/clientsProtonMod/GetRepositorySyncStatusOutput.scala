@@ -18,7 +18,8 @@ object GetRepositorySyncStatusOutput {
     __obj.asInstanceOf[GetRepositorySyncStatusOutput]
   }
   
-  extension [Self <: GetRepositorySyncStatusOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRepositorySyncStatusOutput] (val x: Self) extends AnyVal {
     
     inline def setLatestSync(value: RepositorySyncAttempt): Self = StObject.set(x, "latestSync", value.asInstanceOf[js.Any])
     

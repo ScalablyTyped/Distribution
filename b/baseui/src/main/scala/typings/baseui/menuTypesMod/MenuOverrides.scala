@@ -26,7 +26,8 @@ object MenuOverrides {
     __obj.asInstanceOf[MenuOverrides]
   }
   
-  extension [Self <: MenuOverrides](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuOverrides] (val x: Self) extends AnyVal {
     
     inline def setEmptyState(value: Override[Any]): Self = StObject.set(x, "EmptyState", value.asInstanceOf[js.Any])
     

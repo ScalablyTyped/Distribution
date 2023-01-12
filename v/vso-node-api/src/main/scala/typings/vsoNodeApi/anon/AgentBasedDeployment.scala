@@ -26,7 +26,8 @@ object AgentBasedDeployment {
     __obj.asInstanceOf[AgentBasedDeployment]
   }
   
-  extension [Self <: AgentBasedDeployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentBasedDeployment] (val x: Self) extends AnyVal {
     
     inline def setAgentBasedDeployment(value: scala.Double): Self = StObject.set(x, "agentBasedDeployment", value.asInstanceOf[js.Any])
     

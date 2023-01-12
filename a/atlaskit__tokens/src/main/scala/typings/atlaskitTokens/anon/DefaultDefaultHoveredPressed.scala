@@ -18,7 +18,8 @@ object DefaultDefaultHoveredPressed {
     __obj.asInstanceOf[DefaultDefaultHoveredPressed[BaseToken]]
   }
   
-  extension [Self <: DefaultDefaultHoveredPressed[?], BaseToken](x: Self & DefaultDefaultHoveredPressed[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultDefaultHoveredPressed[?], BaseToken] (val x: Self & DefaultDefaultHoveredPressed[BaseToken]) extends AnyVal {
     
     inline def setBold(value: DefaultHoveredPressed[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

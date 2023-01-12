@@ -51,7 +51,8 @@ object ILabelSetRecord {
     __obj.asInstanceOf[ILabelSetRecord]
   }
   
-  extension [Self <: ILabelSetRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILabelSetRecord] (val x: Self) extends AnyVal {
     
     inline def setSetBase64Image(value: (String, String) => ILabelSetRecord): Self = StObject.set(x, "setBase64Image", js.Any.fromFunction2(value))
     

@@ -31,7 +31,8 @@ object CircleOptions {
     __obj.asInstanceOf[CircleOptions]
   }
   
-  extension [Self <: CircleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableClicking(value: Boolean): Self = StObject.set(x, "enableClicking", value.asInstanceOf[js.Any])
     

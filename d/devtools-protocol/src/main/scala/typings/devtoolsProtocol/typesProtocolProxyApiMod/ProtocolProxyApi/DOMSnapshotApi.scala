@@ -48,7 +48,8 @@ object DOMSnapshotApi {
     __obj.asInstanceOf[DOMSnapshotApi]
   }
   
-  extension [Self <: DOMSnapshotApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMSnapshotApi] (val x: Self) extends AnyVal {
     
     inline def setCaptureSnapshot(value: CaptureSnapshotRequest => js.Promise[CaptureSnapshotResponse]): Self = StObject.set(x, "captureSnapshot", js.Any.fromFunction1(value))
     

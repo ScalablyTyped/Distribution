@@ -40,7 +40,8 @@ object Requiredconversationresolution {
     __obj.asInstanceOf[Requiredconversationresolution]
   }
   
-  extension [Self <: Requiredconversationresolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Requiredconversationresolution] (val x: Self) extends AnyVal {
     
     inline def setAllow_deletions(value: EnabledBoolean): Self = StObject.set(x, "allow_deletions", value.asInstanceOf[js.Any])
     

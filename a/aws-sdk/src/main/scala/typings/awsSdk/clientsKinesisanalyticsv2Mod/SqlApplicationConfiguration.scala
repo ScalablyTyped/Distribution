@@ -28,7 +28,8 @@ object SqlApplicationConfiguration {
     __obj.asInstanceOf[SqlApplicationConfiguration]
   }
   
-  extension [Self <: SqlApplicationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlApplicationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: Inputs): Self = StObject.set(x, "Inputs", value.asInstanceOf[js.Any])
     

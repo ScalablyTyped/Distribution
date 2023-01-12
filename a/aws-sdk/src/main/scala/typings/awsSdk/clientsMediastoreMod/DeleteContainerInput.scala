@@ -18,7 +18,8 @@ object DeleteContainerInput {
     __obj.asInstanceOf[DeleteContainerInput]
   }
   
-  extension [Self <: DeleteContainerInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteContainerInput] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: ContainerName): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
   }

@@ -56,7 +56,8 @@ object CreateAccountOptions {
     __obj.asInstanceOf[CreateAccountOptions]
   }
   
-  extension [Self <: CreateAccountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccountOptions] (val x: Self) extends AnyVal {
     
     inline def setAccountType(value: caldav | carddav): Self = StObject.set(x, "accountType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object UpdateS3ResourcesRequest {
     __obj.asInstanceOf[UpdateS3ResourcesRequest]
   }
   
-  extension [Self <: UpdateS3ResourcesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateS3ResourcesRequest] (val x: Self) extends AnyVal {
     
     inline def setMemberAccountId(value: AWSAccountId): Self = StObject.set(x, "memberAccountId", value.asInstanceOf[js.Any])
     

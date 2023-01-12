@@ -38,7 +38,8 @@ object NetworkSettings {
     __obj.asInstanceOf[NetworkSettings]
   }
   
-  extension [Self <: NetworkSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkSettings] (val x: Self) extends AnyVal {
     
     inline def setAssociatedPortalArns(value: ArnList): Self = StObject.set(x, "associatedPortalArns", value.asInstanceOf[js.Any])
     

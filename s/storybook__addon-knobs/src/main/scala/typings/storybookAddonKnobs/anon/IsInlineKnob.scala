@@ -29,7 +29,8 @@ object IsInlineKnob {
     __obj.asInstanceOf[IsInlineKnob]
   }
   
-  extension [Self <: IsInlineKnob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsInlineKnob] (val x: Self) extends AnyVal {
     
     inline def setIsInline(value: Validator[Boolean]): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     

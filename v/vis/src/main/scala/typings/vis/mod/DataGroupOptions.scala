@@ -26,7 +26,8 @@ object DataGroupOptions {
     __obj.asInstanceOf[DataGroupOptions]
   }
   
-  extension [Self <: DataGroupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataGroupOptions] (val x: Self) extends AnyVal {
     
     inline def setDrawPoints(value: Graph2dDrawPointsOption | js.Function0[Unit]): Self = StObject.set(x, "drawPoints", value.asInstanceOf[js.Any])
     

@@ -46,7 +46,8 @@ object FeatureLayerCapabilitiesQueryRelated {
     __obj.asInstanceOf[FeatureLayerCapabilitiesQueryRelated]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesQueryRelated](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesQueryRelated] (val x: Self) extends AnyVal {
     
     inline def setSupportsCacheHint(value: Boolean): Self = StObject.set(x, "supportsCacheHint", value.asInstanceOf[js.Any])
     

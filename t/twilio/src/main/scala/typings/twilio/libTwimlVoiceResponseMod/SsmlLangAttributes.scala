@@ -16,7 +16,8 @@ object SsmlLangAttributes {
     __obj.asInstanceOf[SsmlLangAttributes]
   }
   
-  extension [Self <: SsmlLangAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsmlLangAttributes] (val x: Self) extends AnyVal {
     
     inline def setXmlColonlang(value: SsmlLangXmlLang): Self = StObject.set(x, "xml:lang", value.asInstanceOf[js.Any])
     

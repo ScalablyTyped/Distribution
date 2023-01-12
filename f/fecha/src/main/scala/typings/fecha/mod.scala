@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[I18nSettings]
     }
     
-    extension [Self <: I18nSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nSettings] (val x: Self) extends AnyVal {
       
       inline def setAmPm(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPm", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object mod {
       __obj.asInstanceOf[I18nSettingsOptional]
     }
     
-    extension [Self <: I18nSettingsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: I18nSettingsOptional] (val x: Self) extends AnyVal {
       
       inline def setAmPm(value: js.Tuple2[String, String]): Self = StObject.set(x, "amPm", value.asInstanceOf[js.Any])
       

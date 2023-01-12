@@ -35,7 +35,8 @@ object PartialCollapsibleListPro {
     __obj.asInstanceOf[PartialCollapsibleListPro]
   }
   
-  extension [Self <: PartialCollapsibleListPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCollapsibleListPro] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

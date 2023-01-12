@@ -53,7 +53,8 @@ object XPolicy {
     __obj.asInstanceOf[XPolicy]
   }
   
-  extension [Self <: XPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPolicy] (val x: Self) extends AnyVal {
     
     inline def setDefaultPermissions(value: SafeArray[Any]): Self = StObject.set(x, "DefaultPermissions", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object IHTMLDocumentCompatibleInfo {
     __obj.asInstanceOf[IHTMLDocumentCompatibleInfo]
   }
   
-  extension [Self <: IHTMLDocumentCompatibleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLDocumentCompatibleInfo] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIHTMLDocumentCompatibleInfo_typekey(value: IHTMLDocumentCompatibleInfo): Self = StObject.set(x, "MSHTML.IHTMLDocumentCompatibleInfo_typekey", value.asInstanceOf[js.Any])
     

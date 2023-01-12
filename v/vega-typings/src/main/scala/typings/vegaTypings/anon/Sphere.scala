@@ -19,7 +19,8 @@ object Sphere {
     __obj.asInstanceOf[Sphere]
   }
   
-  extension [Self <: Sphere](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sphere] (val x: Self) extends AnyVal {
     
     inline def setSphere(value: String | SignalRef): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }

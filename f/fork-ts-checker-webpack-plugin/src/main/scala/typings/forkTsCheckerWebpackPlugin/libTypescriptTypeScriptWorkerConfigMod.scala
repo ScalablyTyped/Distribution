@@ -65,7 +65,8 @@ object libTypescriptTypeScriptWorkerConfigMod {
       __obj.asInstanceOf[TypeScriptWorkerConfig]
     }
     
-    extension [Self <: TypeScriptWorkerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeScriptWorkerConfig] (val x: Self) extends AnyVal {
       
       inline def setBuild(value: Boolean): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       

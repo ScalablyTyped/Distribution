@@ -40,7 +40,8 @@ object TypeaheadInputProps {
     __obj.asInstanceOf[TypeaheadInputProps[T]]
   }
   
-  extension [Self <: TypeaheadInputProps[?], T /* <: TypeaheadModel */](x: Self & TypeaheadInputProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeaheadInputProps[?], T /* <: TypeaheadModel */] (val x: Self & TypeaheadInputProps[T]) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

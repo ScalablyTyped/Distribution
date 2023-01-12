@@ -18,7 +18,8 @@ object AssociateWebsiteCertificateAuthorityResponse {
     __obj.asInstanceOf[AssociateWebsiteCertificateAuthorityResponse]
   }
   
-  extension [Self <: AssociateWebsiteCertificateAuthorityResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateWebsiteCertificateAuthorityResponse] (val x: Self) extends AnyVal {
     
     inline def setWebsiteCaId(value: Id): Self = StObject.set(x, "WebsiteCaId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object StopPipelineExecutionRequest {
     __obj.asInstanceOf[StopPipelineExecutionRequest]
   }
   
-  extension [Self <: StopPipelineExecutionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopPipelineExecutionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: IdempotencyToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

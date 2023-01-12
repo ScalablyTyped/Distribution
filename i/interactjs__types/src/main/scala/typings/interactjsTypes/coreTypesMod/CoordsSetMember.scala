@@ -19,7 +19,8 @@ object CoordsSetMember {
     __obj.asInstanceOf[CoordsSetMember]
   }
   
-  extension [Self <: CoordsSetMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordsSetMember] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Point): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

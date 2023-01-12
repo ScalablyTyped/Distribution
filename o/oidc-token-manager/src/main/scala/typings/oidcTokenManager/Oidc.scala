@@ -20,7 +20,8 @@ object Oidc {
       __obj.asInstanceOf[DefaultHttpRequest]
     }
     
-    extension [Self <: DefaultHttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultHttpRequest] (val x: Self) extends AnyVal {
       
       inline def setGetJSON(value: (String, Any) => DefaultPromise): Self = StObject.set(x, "getJSON", js.Any.fromFunction2(value))
     }
@@ -47,7 +48,8 @@ object Oidc {
       __obj.asInstanceOf[DefaultPromise]
     }
     
-    extension [Self <: DefaultPromise](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPromise] (val x: Self) extends AnyVal {
       
       inline def setCatch(value: js.Function0[Unit] => DefaultPromise): Self = StObject.set(x, "catch", js.Any.fromFunction1(value))
       
@@ -72,7 +74,8 @@ object Oidc {
       __obj.asInstanceOf[DefaultPromiseFactory]
     }
     
-    extension [Self <: DefaultPromiseFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultPromiseFactory] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: Any => DefaultPromise): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
       
@@ -128,7 +131,8 @@ object Oidc {
       __obj.asInstanceOf[OidcClient]
     }
     
-    extension [Self <: OidcClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OidcClient] (val x: Self) extends AnyVal {
       
       inline def setCreateLogoutRequestAsync(value: String => DefaultPromise): Self = StObject.set(x, "createLogoutRequestAsync", js.Any.fromFunction1(value))
       
@@ -177,7 +181,8 @@ object Oidc {
       __obj.asInstanceOf[OidcClientSettings]
     }
     
-    extension [Self <: OidcClientSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OidcClientSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object Oidc {
       __obj.asInstanceOf[OidcToken]
     }
     
-    extension [Self <: OidcToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OidcToken] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -381,7 +387,8 @@ object Oidc {
       __obj.asInstanceOf[OidcTokenManagerSettings]
     }
     
-    extension [Self <: OidcTokenManagerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OidcTokenManagerSettings] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -493,7 +500,8 @@ object Oidc {
       __obj.asInstanceOf[PopupSettings]
     }
     
-    extension [Self <: PopupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupSettings] (val x: Self) extends AnyVal {
       
       inline def setFeatures(value: String): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object `type` {
     __obj.asInstanceOf[`type`]
   }
   
-  extension [Self <: `type`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `type`] (val x: Self) extends AnyVal {
     
     inline def setCreatePCClassRenderer(value: typeCreatePCClassRendererParams => js.Promise[PCClassRendererResult]): Self = StObject.set(x, "createPCClassRenderer", js.Any.fromFunction1(value))
     

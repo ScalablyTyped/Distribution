@@ -45,7 +45,8 @@ object passageMod {
       __obj.asInstanceOf[Passage]
     }
     
-    extension [Self <: Passage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Passage] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: () => String): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
       
@@ -82,7 +83,8 @@ object passageMod {
       __obj.asInstanceOf[PassageBase]
     }
     
-    extension [Self <: PassageBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PassageBase] (val x: Self) extends AnyVal {
       
       inline def setTags(value: Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

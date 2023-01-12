@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setIn(value: header): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[AllowEmptyValue]
     }
     
-    extension [Self <: AllowEmptyValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowEmptyValue] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[CollectionFormat]
     }
     
-    extension [Self <: CollectionFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionFormat] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyValue(value: Boolean): Self = StObject.set(x, "allowEmptyValue", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object anon {
       __obj.asInstanceOf[In]
     }
     
-    extension [Self <: In](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: In] (val x: Self) extends AnyVal {
       
       inline def setIn(value: path): Self = StObject.set(x, "in", value.asInstanceOf[js.Any])
       

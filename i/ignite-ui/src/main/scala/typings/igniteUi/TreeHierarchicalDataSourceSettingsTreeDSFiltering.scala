@@ -39,7 +39,8 @@ object TreeHierarchicalDataSourceSettingsTreeDSFiltering {
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSFiltering]
   }
   
-  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSFiltering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSFiltering] (val x: Self) extends AnyVal {
     
     inline def setDisplayMode(value: Any): Self = StObject.set(x, "displayMode", value.asInstanceOf[js.Any])
     

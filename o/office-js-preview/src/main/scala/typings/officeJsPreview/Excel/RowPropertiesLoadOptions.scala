@@ -47,7 +47,8 @@ object RowPropertiesLoadOptions {
     __obj.asInstanceOf[RowPropertiesLoadOptions]
   }
   
-  extension [Self <: RowPropertiesLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowPropertiesLoadOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: CellPropertiesFormatLoadO): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

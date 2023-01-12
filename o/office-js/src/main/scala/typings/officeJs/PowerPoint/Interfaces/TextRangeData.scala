@@ -40,7 +40,8 @@ object TextRangeData {
     __obj.asInstanceOf[TextRangeData]
   }
   
-  extension [Self <: TextRangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextRangeData] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

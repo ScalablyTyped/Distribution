@@ -54,7 +54,8 @@ object RNFetchBlobFetchRepsonse {
     __obj.asInstanceOf[RNFetchBlobFetchRepsonse]
   }
   
-  extension [Self <: RNFetchBlobFetchRepsonse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobFetchRepsonse] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: () => js.Promise[js.Array[Any]]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
     

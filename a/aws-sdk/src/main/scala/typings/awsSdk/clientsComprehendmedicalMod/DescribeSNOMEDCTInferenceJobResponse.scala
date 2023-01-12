@@ -15,7 +15,8 @@ object DescribeSNOMEDCTInferenceJobResponse {
     __obj.asInstanceOf[DescribeSNOMEDCTInferenceJobResponse]
   }
   
-  extension [Self <: DescribeSNOMEDCTInferenceJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSNOMEDCTInferenceJobResponse] (val x: Self) extends AnyVal {
     
     inline def setComprehendMedicalAsyncJobProperties(value: ComprehendMedicalAsyncJobProperties): Self = StObject.set(x, "ComprehendMedicalAsyncJobProperties", value.asInstanceOf[js.Any])
     

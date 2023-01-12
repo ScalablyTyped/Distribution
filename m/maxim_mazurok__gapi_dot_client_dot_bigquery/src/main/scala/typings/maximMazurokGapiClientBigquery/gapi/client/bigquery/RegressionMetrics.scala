@@ -28,7 +28,8 @@ object RegressionMetrics {
     __obj.asInstanceOf[RegressionMetrics]
   }
   
-  extension [Self <: RegressionMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegressionMetrics] (val x: Self) extends AnyVal {
     
     inline def setMeanAbsoluteError(value: Double): Self = StObject.set(x, "meanAbsoluteError", value.asInstanceOf[js.Any])
     

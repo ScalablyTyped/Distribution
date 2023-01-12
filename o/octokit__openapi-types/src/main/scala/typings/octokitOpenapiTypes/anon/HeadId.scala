@@ -23,7 +23,8 @@ object HeadId {
     __obj.asInstanceOf[HeadId]
   }
   
-  extension [Self <: HeadId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadId] (val x: Self) extends AnyVal {
     
     inline def setBase(value: RefRepo): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

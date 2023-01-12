@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1CreateInstructionRequest {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CreateInstructionRequest]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1CreateInstructionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CreateInstructionRequest] (val x: Self) extends AnyVal {
     
     inline def setInstruction(value: GoogleCloudDatalabelingV1beta1Instruction): Self = StObject.set(x, "instruction", value.asInstanceOf[js.Any])
     

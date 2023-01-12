@@ -28,7 +28,8 @@ object S3Source {
     __obj.asInstanceOf[S3Source]
   }
   
-  extension [Self <: S3Source](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3Source] (val x: Self) extends AnyVal {
     
     inline def setDataSourceArn(value: Arn): Self = StObject.set(x, "DataSourceArn", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ASPxClientCustomizeElementsEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeElementsEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeElementsEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeElementsEventArgs] (val x: Self) extends AnyVal {
     
     inline def setElements(value: js.Array[ASPxReportUIElement]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
     

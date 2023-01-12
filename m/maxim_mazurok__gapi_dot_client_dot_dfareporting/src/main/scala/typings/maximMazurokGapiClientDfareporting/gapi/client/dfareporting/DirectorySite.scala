@@ -37,7 +37,8 @@ object DirectorySite {
     __obj.asInstanceOf[DirectorySite]
   }
   
-  extension [Self <: DirectorySite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectorySite] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

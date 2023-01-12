@@ -16,7 +16,8 @@ object AccountsUpdateLabelsRequest {
     __obj.asInstanceOf[AccountsUpdateLabelsRequest]
   }
   
-  extension [Self <: AccountsUpdateLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountsUpdateLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setLabelIds(value: js.Array[String]): Self = StObject.set(x, "labelIds", value.asInstanceOf[js.Any])
     

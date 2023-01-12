@@ -263,7 +263,8 @@ object BarProps {
     __obj.asInstanceOf[BarProps]
   }
   
-  extension [Self <: BarProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarProps] (val x: Self) extends AnyVal {
     
     inline def setAlignmentBaseline(value: String): Self = StObject.set(x, "alignmentBaseline", value.asInstanceOf[js.Any])
     

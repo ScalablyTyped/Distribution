@@ -20,7 +20,8 @@ object Module {
     __obj.asInstanceOf[Module]
   }
   
-  extension [Self <: Module](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Module] (val x: Self) extends AnyVal {
     
     inline def setRun(value: () => Unit): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
   }

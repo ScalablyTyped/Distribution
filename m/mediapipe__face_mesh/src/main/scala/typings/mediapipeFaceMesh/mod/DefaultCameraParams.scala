@@ -22,7 +22,8 @@ object DefaultCameraParams {
     __obj.asInstanceOf[DefaultCameraParams]
   }
   
-  extension [Self <: DefaultCameraParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultCameraParams] (val x: Self) extends AnyVal {
     
     inline def setFar(value: `10000.0`): Self = StObject.set(x, "far", value.asInstanceOf[js.Any])
     

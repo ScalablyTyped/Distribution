@@ -17,7 +17,8 @@ object TypeofPropertyBindingComposite {
     __obj.asInstanceOf[TypeofPropertyBindingComposite]
   }
   
-  extension [Self <: TypeofPropertyBindingComposite](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPropertyBindingComposite] (val x: Self) extends AnyVal {
     
     inline def setComposite(value: Instantiable2[/* targetGroup */ Any, /* path */ Any, Composite]): Self = StObject.set(x, "Composite", value.asInstanceOf[js.Any])
   }

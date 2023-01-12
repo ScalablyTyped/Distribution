@@ -26,7 +26,8 @@ object ServiceAnnouncementAttachment {
     __obj.asInstanceOf[ServiceAnnouncementAttachment]
   }
   
-  extension [Self <: ServiceAnnouncementAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAnnouncementAttachment] (val x: Self) extends AnyVal {
     
     inline def setContent(value: NullableOption[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

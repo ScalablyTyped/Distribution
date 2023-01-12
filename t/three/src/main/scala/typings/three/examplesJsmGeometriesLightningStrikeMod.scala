@@ -99,7 +99,8 @@ object examplesJsmGeometriesLightningStrikeMod {
       __obj.asInstanceOf[LightningSegment]
     }
     
-    extension [Self <: LightningSegment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightningSegment] (val x: Self) extends AnyVal {
       
       inline def setFraction0(value: Double): Self = StObject.set(x, "fraction0", value.asInstanceOf[js.Any])
       
@@ -197,7 +198,8 @@ object examplesJsmGeometriesLightningStrikeMod {
       __obj.asInstanceOf[LightningSubray]
     }
     
-    extension [Self <: LightningSubray](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LightningSubray] (val x: Self) extends AnyVal {
       
       inline def setBeginVanishingTime(value: Double): Self = StObject.set(x, "beginVanishingTime", value.asInstanceOf[js.Any])
       
@@ -256,7 +258,8 @@ object examplesJsmGeometriesLightningStrikeMod {
       __obj.asInstanceOf[RandomGenerator]
     }
     
-    extension [Self <: RandomGenerator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RandomGenerator] (val x: Self) extends AnyVal {
       
       inline def setGetSeed(value: () => Double): Self = StObject.set(x, "getSeed", js.Any.fromFunction0(value))
       
@@ -343,7 +346,8 @@ object examplesJsmGeometriesLightningStrikeMod {
       __obj.asInstanceOf[RayParameters]
     }
     
-    extension [Self <: RayParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RayParameters] (val x: Self) extends AnyVal {
       
       inline def setBirthTime(value: Double): Self = StObject.set(x, "birthTime", value.asInstanceOf[js.Any])
       

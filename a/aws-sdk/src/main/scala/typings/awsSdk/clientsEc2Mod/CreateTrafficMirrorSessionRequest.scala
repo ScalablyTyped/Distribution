@@ -68,7 +68,8 @@ object CreateTrafficMirrorSessionRequest {
     __obj.asInstanceOf[CreateTrafficMirrorSessionRequest]
   }
   
-  extension [Self <: CreateTrafficMirrorSessionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrafficMirrorSessionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

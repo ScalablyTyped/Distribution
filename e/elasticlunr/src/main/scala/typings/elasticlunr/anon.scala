@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[Tf]
     }
     
-    extension [Self <: Tf](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tf] (val x: Self) extends AnyVal {
       
       inline def setTf(value: Double): Self = StObject.set(x, "tf", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object RobotApplicationConfig {
     __obj.asInstanceOf[RobotApplicationConfig]
   }
   
-  extension [Self <: RobotApplicationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RobotApplicationConfig] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Arn): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

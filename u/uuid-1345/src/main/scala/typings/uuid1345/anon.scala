@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -78,7 +81,8 @@ object anon {
       __obj.asInstanceOf[`3`]
     }
     
-    extension [Self <: `3`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -97,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -120,7 +125,8 @@ object anon {
       __obj.asInstanceOf[EncodingMac]
     }
     
-    extension [Self <: EncodingMac](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingMac] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -145,7 +151,8 @@ object anon {
       __obj.asInstanceOf[EncodingName]
     }
     
-    extension [Self <: EncodingName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EncodingName] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: binary): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -170,7 +177,8 @@ object anon {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -193,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Mac]
     }
     
-    extension [Self <: Mac](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mac] (val x: Self) extends AnyVal {
       
       inline def setMac(value: Boolean): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
       
@@ -214,7 +223,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -237,7 +247,8 @@ object anon {
       __obj.asInstanceOf[NameNamespace]
     }
     
-    extension [Self <: NameNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameNamespace] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -262,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Namespace]
     }
     
-    extension [Self <: Namespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Namespace] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: ascii): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object ResolveResult {
     __obj.asInstanceOf[ResolveResult]
   }
   
-  extension [Self <: ResolveResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolveResult] (val x: Self) extends AnyVal {
     
     inline def setCanDefer(value: Boolean): Self = StObject.set(x, "canDefer", value.asInstanceOf[js.Any])
     

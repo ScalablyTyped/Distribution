@@ -29,7 +29,8 @@ object complexTypesMod {
       __obj.asInstanceOf[MdxFlowExpression]
     }
     
-    extension [Self <: MdxFlowExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxFlowExpression] (val x: Self) extends AnyVal {
       
       inline def setData(value: Estree & js.UndefOr[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -57,7 +58,8 @@ object complexTypesMod {
       __obj.asInstanceOf[MdxTextExpression]
     }
     
-    extension [Self <: MdxTextExpression](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MdxTextExpression] (val x: Self) extends AnyVal {
       
       inline def setData(value: Estree & js.UndefOr[Data]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object complexTypesMod {
         __obj.asInstanceOf[ElementContentMap]
       }
       
-      extension [Self <: ElementContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ElementContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxFlowExpression(value: MdxFlowExpression): Self = StObject.set(x, "mdxFlowExpression", value.asInstanceOf[js.Any])
         
@@ -104,7 +107,8 @@ object complexTypesMod {
         __obj.asInstanceOf[RootContentMap]
       }
       
-      extension [Self <: RootContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RootContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxFlowExpression(value: MdxFlowExpression): Self = StObject.set(x, "mdxFlowExpression", value.asInstanceOf[js.Any])
         
@@ -127,7 +131,8 @@ object complexTypesMod {
         __obj.asInstanceOf[BlockContentMap]
       }
       
-      extension [Self <: BlockContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BlockContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxFlowExpression(value: MdxFlowExpression): Self = StObject.set(x, "mdxFlowExpression", value.asInstanceOf[js.Any])
       }
@@ -144,7 +149,8 @@ object complexTypesMod {
         __obj.asInstanceOf[StaticPhrasingContentMap]
       }
       
-      extension [Self <: StaticPhrasingContentMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StaticPhrasingContentMap] (val x: Self) extends AnyVal {
         
         inline def setMdxTextExpression(value: MdxTextExpression): Self = StObject.set(x, "mdxTextExpression", value.asInstanceOf[js.Any])
       }

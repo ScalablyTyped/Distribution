@@ -20,7 +20,8 @@ object EventFilter {
     __obj.asInstanceOf[EventFilter]
   }
   
-  extension [Self <: EventFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFilter] (val x: Self) extends AnyVal {
     
     inline def setEventFilter(value: /* event */ MouseEvent => Boolean): Self = StObject.set(x, "eventFilter", js.Any.fromFunction1(value))
     

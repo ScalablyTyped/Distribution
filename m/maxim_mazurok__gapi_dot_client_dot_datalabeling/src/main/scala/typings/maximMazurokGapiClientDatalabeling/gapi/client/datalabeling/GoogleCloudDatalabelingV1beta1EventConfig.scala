@@ -22,7 +22,8 @@ object GoogleCloudDatalabelingV1beta1EventConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EventConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1EventConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EventConfig] (val x: Self) extends AnyVal {
     
     inline def setAnnotationSpecSets(value: js.Array[String]): Self = StObject.set(x, "annotationSpecSets", value.asInstanceOf[js.Any])
     

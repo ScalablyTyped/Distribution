@@ -22,7 +22,8 @@ object distRequestCommonOnBehalfOfRequestMod {
       __obj.asInstanceOf[CommonOnBehalfOfRequest]
     }
     
-    extension [Self <: CommonOnBehalfOfRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOnBehalfOfRequest] (val x: Self) extends AnyVal {
       
       inline def setOboAssertion(value: String): Self = StObject.set(x, "oboAssertion", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object OldValue {
     __obj.asInstanceOf[OldValue]
   }
   
-  extension [Self <: OldValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OldValue] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Boolean): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GooglePrivacyDlpV2KmsWrappedCryptoKey {
     __obj.asInstanceOf[GooglePrivacyDlpV2KmsWrappedCryptoKey]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KmsWrappedCryptoKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KmsWrappedCryptoKey] (val x: Self) extends AnyVal {
     
     inline def setCryptoKeyName(value: String): Self = StObject.set(x, "cryptoKeyName", value.asInstanceOf[js.Any])
     

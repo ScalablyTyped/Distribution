@@ -73,7 +73,8 @@ object `5` {
     __obj.asInstanceOf[`5`]
   }
   
-  extension [Self <: `5`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `5`] (val x: Self) extends AnyVal {
     
     inline def setOne(value: js.Tuple4[typings.makePlural.makePluralStrings.`1`, `0Dot1`, `1Dot0`, `1Dot6`]): Self = StObject.set(x, "one", value.asInstanceOf[js.Any])
     

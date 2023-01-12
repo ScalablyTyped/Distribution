@@ -33,7 +33,8 @@ object ToastItem {
     __obj.asInstanceOf[ToastItem[Data]]
   }
   
-  extension [Self <: ToastItem[?], Data](x: Self & ToastItem[Data]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastItem[?], Data] (val x: Self & ToastItem[Data]) extends AnyVal {
     
     inline def setContainerId(value: Id): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

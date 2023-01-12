@@ -23,7 +23,8 @@ object DescribeLunaClientRequest {
     __obj.asInstanceOf[DescribeLunaClientRequest]
   }
   
-  extension [Self <: DescribeLunaClientRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeLunaClientRequest] (val x: Self) extends AnyVal {
     
     inline def setCertificateFingerprint(value: CertificateFingerprint): Self = StObject.set(x, "CertificateFingerprint", value.asInstanceOf[js.Any])
     

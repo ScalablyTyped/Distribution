@@ -23,7 +23,8 @@ object TimeToLiveDescription {
     __obj.asInstanceOf[TimeToLiveDescription]
   }
   
-  extension [Self <: TimeToLiveDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeToLiveDescription] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: TimeToLiveAttributeName): Self = StObject.set(x, "AttributeName", value.asInstanceOf[js.Any])
     

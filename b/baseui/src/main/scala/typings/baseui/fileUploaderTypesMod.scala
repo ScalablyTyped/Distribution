@@ -64,7 +64,8 @@ object fileUploaderTypesMod {
       __obj.asInstanceOf[FileUploaderOverrides]
     }
     
-    extension [Self <: FileUploaderOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderOverrides] (val x: Self) extends AnyVal {
       
       inline def setButtonComponent(value: Override[Any]): Self = StObject.set(x, "ButtonComponent", value.asInstanceOf[js.Any])
       
@@ -182,7 +183,8 @@ object fileUploaderTypesMod {
       __obj.asInstanceOf[FileUploaderProps]
     }
     
-    extension [Self <: FileUploaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileUploaderProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: String | js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       
@@ -338,7 +340,8 @@ object fileUploaderTypesMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def set$afterFileDrop(value: Boolean): Self = StObject.set(x, "$afterFileDrop", value.asInstanceOf[js.Any])
       

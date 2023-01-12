@@ -34,7 +34,8 @@ object SVGFilterPrimitiveStandardAttributes {
     __obj.asInstanceOf[SVGFilterPrimitiveStandardAttributes]
   }
   
-  extension [Self <: SVGFilterPrimitiveStandardAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGFilterPrimitiveStandardAttributes] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: SVGAnimatedLength): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

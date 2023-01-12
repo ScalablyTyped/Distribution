@@ -120,7 +120,8 @@ object PartialProps {
     __obj.asInstanceOf[PartialProps]
   }
   
-  extension [Self <: PartialProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

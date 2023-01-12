@@ -113,7 +113,8 @@ object CompositeType {
     __obj.asInstanceOf[CompositeType]
   }
   
-  extension [Self <: CompositeType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeType] (val x: Self) extends AnyVal {
     
     inline def setBodies(value: js.Array[BodyType]): Self = StObject.set(x, "bodies", value.asInstanceOf[js.Any])
     

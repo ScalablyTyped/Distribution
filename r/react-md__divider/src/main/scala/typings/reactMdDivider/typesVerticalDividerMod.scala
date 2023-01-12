@@ -28,7 +28,8 @@ object typesVerticalDividerMod {
       __obj.asInstanceOf[VerticalDividerProps]
     }
     
-    extension [Self <: VerticalDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalDividerProps] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       

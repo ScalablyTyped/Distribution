@@ -43,7 +43,8 @@ object GeocodedWaypoint {
     __obj.asInstanceOf[GeocodedWaypoint]
   }
   
-  extension [Self <: GeocodedWaypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodedWaypoint] (val x: Self) extends AnyVal {
     
     inline def setGeocoder_status(value: GeocodedWaypointStatus): Self = StObject.set(x, "geocoder_status", value.asInstanceOf[js.Any])
     

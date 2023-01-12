@@ -27,7 +27,8 @@ object LabelClassLabelExpressionInfo {
     __obj.asInstanceOf[LabelClassLabelExpressionInfo]
   }
   
-  extension [Self <: LabelClassLabelExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelClassLabelExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

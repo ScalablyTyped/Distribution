@@ -43,7 +43,8 @@ object ConditionalColorScaleCriteria {
     __obj.asInstanceOf[ConditionalColorScaleCriteria]
   }
   
-  extension [Self <: ConditionalColorScaleCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalColorScaleCriteria] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: ConditionalColorScaleCriterion): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     

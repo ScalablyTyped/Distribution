@@ -109,7 +109,8 @@ object PreparedStatement {
     __obj.asInstanceOf[PreparedStatement]
   }
   
-  extension [Self <: PreparedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreparedStatement] (val x: Self) extends AnyVal {
     
     inline def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
   }

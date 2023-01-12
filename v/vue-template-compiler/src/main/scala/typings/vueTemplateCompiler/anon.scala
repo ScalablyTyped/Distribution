@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Callback]
     }
     
-    extension [Self <: Callback](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: String): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

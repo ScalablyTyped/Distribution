@@ -723,7 +723,8 @@ object mod {
       __obj.asInstanceOf[Failure]
     }
     
-    extension [Self <: Failure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
@@ -758,7 +759,8 @@ object mod {
       __obj.asInstanceOf[FailureReply]
     }
     
-    extension [Self <: FailureReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailureReply] (val x: Self) extends AnyVal {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       
@@ -792,7 +794,8 @@ object mod {
       __obj.asInstanceOf[Index_]
     }
     
-    extension [Self <: Index_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index_] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -819,7 +822,8 @@ object mod {
       __obj.asInstanceOf[Mark[T]]
     }
     
-    extension [Self <: Mark[?], T](x: Self & Mark[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mark[?], T] (val x: Self & Mark[T]) extends AnyVal {
       
       inline def setEnd(value: Index_): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -842,7 +846,8 @@ object mod {
       __obj.asInstanceOf[Node[Name, T]]
     }
     
-    extension [Self <: Node[?, ?], Name /* <: String */, T](x: Self & (Node[Name, T])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node[?, ?], Name /* <: String */, T] (val x: Self & (Node[Name, T])) extends AnyVal {
       
       inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -905,7 +910,8 @@ object mod {
       __obj.asInstanceOf[Success[T]]
     }
     
-    extension [Self <: Success[?], T](x: Self & Success[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Success[?], T] (val x: Self & Success[T]) extends AnyVal {
       
       inline def setStatus(value: `true`): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
       
@@ -936,7 +942,8 @@ object mod {
       __obj.asInstanceOf[SuccessReply[T]]
     }
     
-    extension [Self <: SuccessReply[?], T](x: Self & SuccessReply[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessReply[?], T] (val x: Self & SuccessReply[T]) extends AnyVal {
       
       inline def setExpected(value: js.Array[String]): Self = StObject.set(x, "expected", value.asInstanceOf[js.Any])
       

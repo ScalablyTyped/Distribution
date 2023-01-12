@@ -33,7 +33,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersArbTranslationParserMo
       __obj.asInstanceOf[ArbJsonObject]
     }
     
-    extension [Self <: ArbJsonObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArbJsonObject] (val x: Self) extends AnyVal {
       
       inline def `set@@locale`(value: String): Self = StObject.set(x, "@@locale", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersArbTranslationParserMo
       __obj.asInstanceOf[ArbLocation]
     }
     
-    extension [Self <: ArbLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArbLocation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Column): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -79,7 +81,8 @@ object toolsSrcTranslateTranslationFilesTranslationParsersArbTranslationParserMo
       __obj.asInstanceOf[ArbMetadata]
     }
     
-    extension [Self <: ArbMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArbMetadata] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

@@ -35,7 +35,8 @@ object distSrcInterfacesInternalDependenciesMod {
       __obj.asInstanceOf[FirebaseInternalDependencies]
     }
     
-    extension [Self <: FirebaseInternalDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseInternalDependencies] (val x: Self) extends AnyVal {
       
       inline def setAnalyticsProvider(
         value: Provider[

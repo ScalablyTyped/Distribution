@@ -58,7 +58,8 @@ object IExpandedMonarchLanguageAction {
     __obj.asInstanceOf[IExpandedMonarchLanguageAction]
   }
   
-  extension [Self <: IExpandedMonarchLanguageAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpandedMonarchLanguageAction] (val x: Self) extends AnyVal {
     
     inline def setBracket(value: String): Self = StObject.set(x, "bracket", value.asInstanceOf[js.Any])
     

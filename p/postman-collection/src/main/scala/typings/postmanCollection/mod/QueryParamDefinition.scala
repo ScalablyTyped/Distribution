@@ -21,7 +21,8 @@ object QueryParamDefinition {
     __obj.asInstanceOf[QueryParamDefinition]
   }
   
-  extension [Self <: QueryParamDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryParamDefinition] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

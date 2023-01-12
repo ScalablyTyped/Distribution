@@ -29,7 +29,8 @@ object GitPushEventData {
     __obj.asInstanceOf[GitPushEventData]
   }
   
-  extension [Self <: GitPushEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitPushEventData] (val x: Self) extends AnyVal {
     
     inline def setAfterId(value: String): Self = StObject.set(x, "afterId", value.asInstanceOf[js.Any])
     

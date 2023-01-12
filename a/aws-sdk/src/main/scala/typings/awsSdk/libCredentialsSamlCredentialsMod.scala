@@ -56,7 +56,8 @@ object libCredentialsSamlCredentialsMod {
       __obj.asInstanceOf[SAMLCredentialsParams]
     }
     
-    extension [Self <: SAMLCredentialsParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SAMLCredentialsParams] (val x: Self) extends AnyVal {
       
       inline def setDurationSeconds(value: Double): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object GetAccountAuthorizationDetailsRequest {
     __obj.asInstanceOf[GetAccountAuthorizationDetailsRequest]
   }
   
-  extension [Self <: GetAccountAuthorizationDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountAuthorizationDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: entityListType): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

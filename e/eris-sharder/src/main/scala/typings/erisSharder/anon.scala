@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Bot]
     }
     
-    extension [Self <: Bot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bot] (val x: Self) extends AnyVal {
       
       inline def setBot(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eris.Client */ Any
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Broadcast]
     }
     
-    extension [Self <: Broadcast](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Broadcast] (val x: Self) extends AnyVal {
       
       inline def setBroadcast(value: (String, Any) => Unit): Self = StObject.set(x, "broadcast", js.Any.fromFunction2(value))
       
@@ -140,7 +142,8 @@ object anon {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setClientOptions(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Eris.ClientOptions */ Any
@@ -205,7 +208,8 @@ object anon {
       __obj.asInstanceOf[Cluster]
     }
     
-    extension [Self <: Cluster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
       
       inline def setCluster(value: Any): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
       

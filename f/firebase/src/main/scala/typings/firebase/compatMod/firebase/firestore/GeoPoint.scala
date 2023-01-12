@@ -31,7 +31,8 @@ object GeoPoint {
     __obj.asInstanceOf[GeoPoint]
   }
   
-  extension [Self <: GeoPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoPoint] (val x: Self) extends AnyVal {
     
     inline def setIsEqual(value: GeoPoint => Boolean): Self = StObject.set(x, "isEqual", js.Any.fromFunction1(value))
     

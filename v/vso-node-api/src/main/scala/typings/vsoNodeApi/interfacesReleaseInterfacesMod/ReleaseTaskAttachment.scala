@@ -39,7 +39,8 @@ object ReleaseTaskAttachment {
     __obj.asInstanceOf[ReleaseTaskAttachment]
   }
   
-  extension [Self <: ReleaseTaskAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseTaskAttachment] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: js.Date): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

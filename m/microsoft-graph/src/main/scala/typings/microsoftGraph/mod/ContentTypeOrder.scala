@@ -19,7 +19,8 @@ object ContentTypeOrder {
     __obj.asInstanceOf[ContentTypeOrder]
   }
   
-  extension [Self <: ContentTypeOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentTypeOrder] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: NullableOption[Boolean]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

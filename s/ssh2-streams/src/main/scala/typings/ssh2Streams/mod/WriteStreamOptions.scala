@@ -19,7 +19,8 @@ object WriteStreamOptions {
     __obj.asInstanceOf[WriteStreamOptions]
   }
   
-  extension [Self <: WriteStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

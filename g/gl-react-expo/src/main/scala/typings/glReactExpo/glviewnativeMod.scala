@@ -46,7 +46,8 @@ object glviewnativeMod {
       __obj.asInstanceOf[GLViewNativeProps]
     }
     
-    extension [Self <: GLViewNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLViewNativeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Any): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

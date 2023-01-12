@@ -38,7 +38,8 @@ object DescribeScalingActivitiesType {
     __obj.asInstanceOf[DescribeScalingActivitiesType]
   }
   
-  extension [Self <: DescribeScalingActivitiesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalingActivitiesType] (val x: Self) extends AnyVal {
     
     inline def setActivityIds(value: ActivityIds): Self = StObject.set(x, "ActivityIds", value.asInstanceOf[js.Any])
     

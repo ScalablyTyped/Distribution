@@ -55,7 +55,8 @@ object srcCoreEventDispatcherMod {
       __obj.asInstanceOf[BaseEvent]
     }
     
-    extension [Self <: BaseEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -76,7 +77,8 @@ object srcCoreEventDispatcherMod {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

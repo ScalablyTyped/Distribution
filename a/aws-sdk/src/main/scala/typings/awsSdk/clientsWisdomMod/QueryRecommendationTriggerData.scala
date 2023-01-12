@@ -18,7 +18,8 @@ object QueryRecommendationTriggerData {
     __obj.asInstanceOf[QueryRecommendationTriggerData]
   }
   
-  extension [Self <: QueryRecommendationTriggerData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryRecommendationTriggerData] (val x: Self) extends AnyVal {
     
     inline def setText(value: QueryText): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

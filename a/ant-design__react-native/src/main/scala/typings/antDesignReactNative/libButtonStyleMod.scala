@@ -118,7 +118,8 @@ object libButtonStyleMod {
       __obj.asInstanceOf[ButtonStyles]
     }
     
-    extension [Self <: ButtonStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: ViewStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

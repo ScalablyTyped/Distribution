@@ -45,7 +45,8 @@ object CanvasMapType {
     __obj.asInstanceOf[CanvasMapType]
   }
   
-  extension [Self <: CanvasMapType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasMapType] (val x: Self) extends AnyVal {
     
     inline def setGetMapTypeOptions(value: () => CanvasMapTypeOptions): Self = StObject.set(x, "getMapTypeOptions", js.Any.fromFunction0(value))
     

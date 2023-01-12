@@ -17,7 +17,8 @@ object OnAttachedAttachInfo {
     __obj.asInstanceOf[OnAttachedAttachInfo]
   }
   
-  extension [Self <: OnAttachedAttachInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAttachedAttachInfo] (val x: Self) extends AnyVal {
     
     inline def setNewPosition(value: Double): Self = StObject.set(x, "newPosition", value.asInstanceOf[js.Any])
     

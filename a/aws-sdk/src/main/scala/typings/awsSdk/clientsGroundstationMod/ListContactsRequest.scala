@@ -53,7 +53,8 @@ object ListContactsRequest {
     __obj.asInstanceOf[ListContactsRequest]
   }
   
-  extension [Self <: ListContactsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContactsRequest] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: js.Date): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

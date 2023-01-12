@@ -71,7 +71,8 @@ object PipeableChain2C {
     __obj.asInstanceOf[PipeableChain2C[F, E]]
   }
   
-  extension [Self <: PipeableChain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (PipeableChain2C[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableChain2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (PipeableChain2C[F, E])) extends AnyVal {
     
     inline def setChain(
       value: js.Function1[

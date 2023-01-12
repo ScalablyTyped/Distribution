@@ -25,7 +25,8 @@ object typesFunctionCodeLocationMod {
       __obj.asInstanceOf[FunctionCodeLocation]
     }
     
-    extension [Self <: FunctionCodeLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionCodeLocation] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: String): Self = StObject.set(x, "Location", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object CookieMatchPattern {
     __obj.asInstanceOf[CookieMatchPattern]
   }
   
-  extension [Self <: CookieMatchPattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookieMatchPattern] (val x: Self) extends AnyVal {
     
     inline def setAll(value: All): Self = StObject.set(x, "All", value.asInstanceOf[js.Any])
     

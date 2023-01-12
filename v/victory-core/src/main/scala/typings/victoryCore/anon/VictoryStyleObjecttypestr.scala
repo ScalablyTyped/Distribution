@@ -1596,7 +1596,8 @@ object VictoryStyleObjecttypestr {
     __obj.asInstanceOf[VictoryStyleObjecttypestr]
   }
   
-  extension [Self <: VictoryStyleObjecttypestr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VictoryStyleObjecttypestr] (val x: Self) extends AnyVal {
     
     inline def setAccentColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
     

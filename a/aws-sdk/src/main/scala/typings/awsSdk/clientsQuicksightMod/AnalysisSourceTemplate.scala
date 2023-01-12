@@ -23,7 +23,8 @@ object AnalysisSourceTemplate {
     __obj.asInstanceOf[AnalysisSourceTemplate]
   }
   
-  extension [Self <: AnalysisSourceTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSourceTemplate] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

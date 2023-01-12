@@ -25,7 +25,8 @@ object NotebookExecuteProvider {
     __obj.asInstanceOf[NotebookExecuteProvider]
   }
   
-  extension [Self <: NotebookExecuteProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookExecuteProvider] (val x: Self) extends AnyVal {
     
     inline def setGetExecuteManager(value: Uri => Thenable[ExecuteManager]): Self = StObject.set(x, "getExecuteManager", js.Any.fromFunction1(value))
     

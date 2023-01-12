@@ -23,7 +23,8 @@ object GetAccountLimitResponse {
     __obj.asInstanceOf[GetAccountLimitResponse]
   }
   
-  extension [Self <: GetAccountLimitResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountLimitResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: UsageCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

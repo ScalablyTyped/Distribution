@@ -48,7 +48,8 @@ object Aggregation {
     __obj.asInstanceOf[Aggregation]
   }
   
-  extension [Self <: Aggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Aggregation] (val x: Self) extends AnyVal {
     
     inline def setAlignmentPeriod(value: String): Self = StObject.set(x, "alignmentPeriod", value.asInstanceOf[js.Any])
     

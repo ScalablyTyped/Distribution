@@ -23,7 +23,8 @@ object ModifyMountTargetSecurityGroupsRequest {
     __obj.asInstanceOf[ModifyMountTargetSecurityGroupsRequest]
   }
   
-  extension [Self <: ModifyMountTargetSecurityGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyMountTargetSecurityGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setMountTargetId(value: MountTargetId): Self = StObject.set(x, "MountTargetId", value.asInstanceOf[js.Any])
     

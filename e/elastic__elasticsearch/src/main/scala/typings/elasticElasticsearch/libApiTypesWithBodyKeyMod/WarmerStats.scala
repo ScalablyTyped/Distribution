@@ -21,7 +21,8 @@ object WarmerStats {
     __obj.asInstanceOf[WarmerStats]
   }
   
-  extension [Self <: WarmerStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WarmerStats] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: long): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

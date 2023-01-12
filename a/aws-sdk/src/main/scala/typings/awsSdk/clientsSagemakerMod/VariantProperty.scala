@@ -18,7 +18,8 @@ object VariantProperty {
     __obj.asInstanceOf[VariantProperty]
   }
   
-  extension [Self <: VariantProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariantProperty] (val x: Self) extends AnyVal {
     
     inline def setVariantPropertyType(value: VariantPropertyType): Self = StObject.set(x, "VariantPropertyType", value.asInstanceOf[js.Any])
   }

@@ -36,7 +36,8 @@ object XTransition {
     __obj.asInstanceOf[XTransition]
   }
   
-  extension [Self <: XTransition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransition] (val x: Self) extends AnyVal {
     
     inline def setUpdate(value: Double => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     

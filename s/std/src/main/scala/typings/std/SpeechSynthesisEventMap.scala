@@ -16,7 +16,8 @@ object SpeechSynthesisEventMap {
     __obj.asInstanceOf[SpeechSynthesisEventMap]
   }
   
-  extension [Self <: SpeechSynthesisEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeechSynthesisEventMap] (val x: Self) extends AnyVal {
     
     inline def setVoiceschanged(value: Event): Self = StObject.set(x, "voiceschanged", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object TypeParameterInstantiation_ {
     __obj.asInstanceOf[TypeParameterInstantiation_]
   }
   
-  extension [Self <: TypeParameterInstantiation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeParameterInstantiation_] (val x: Self) extends AnyVal {
     
     inline def setParams(value: js.Array[FlowType]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DiscardedView {
     __obj.asInstanceOf[DiscardedView]
   }
   
-  extension [Self <: DiscardedView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscardedView] (val x: Self) extends AnyVal {
     
     inline def setJob_ids(value: js.Array[String]): Self = StObject.set(x, "job_ids", value.asInstanceOf[js.Any])
     

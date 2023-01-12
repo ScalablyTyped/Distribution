@@ -39,7 +39,8 @@ object SheetProps {
     __obj.asInstanceOf[SheetProps]
   }
   
-  extension [Self <: SheetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityDismissButtonLabel(value: String): Self = StObject.set(x, "accessibilityDismissButtonLabel", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object RTCIceParameters {
     __obj.asInstanceOf[RTCIceParameters]
   }
   
-  extension [Self <: RTCIceParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCIceParameters] (val x: Self) extends AnyVal {
     
     inline def setIceLite(value: Boolean): Self = StObject.set(x, "iceLite", value.asInstanceOf[js.Any])
     

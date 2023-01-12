@@ -65,7 +65,8 @@ object BeginIdle {
     __obj.asInstanceOf[BeginIdle]
   }
   
-  extension [Self <: BeginIdle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeginIdle] (val x: Self) extends AnyVal {
     
     inline def setBeginIdle(value: SyncHook[js.Array[Any], Unit, UnsetAdditionalOptions]): Self = StObject.set(x, "beginIdle", value.asInstanceOf[js.Any])
     

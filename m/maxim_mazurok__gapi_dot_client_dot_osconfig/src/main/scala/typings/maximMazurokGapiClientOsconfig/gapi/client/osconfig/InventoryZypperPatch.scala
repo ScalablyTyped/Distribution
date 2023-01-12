@@ -25,7 +25,8 @@ object InventoryZypperPatch {
     __obj.asInstanceOf[InventoryZypperPatch]
   }
   
-  extension [Self <: InventoryZypperPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryZypperPatch] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

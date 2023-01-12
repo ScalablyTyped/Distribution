@@ -35,7 +35,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[DividerProps]
     }
     
-    extension [Self <: DividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DividerProps] (val x: Self) extends AnyVal {
       
       inline def setDividerChar(value: String): Self = StObject.set(x, "dividerChar", value.asInstanceOf[js.Any])
       

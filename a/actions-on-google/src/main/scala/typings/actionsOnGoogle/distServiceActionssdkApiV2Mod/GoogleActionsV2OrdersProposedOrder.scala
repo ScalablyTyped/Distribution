@@ -53,7 +53,8 @@ object GoogleActionsV2OrdersProposedOrder {
     __obj.asInstanceOf[GoogleActionsV2OrdersProposedOrder]
   }
   
-  extension [Self <: GoogleActionsV2OrdersProposedOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersProposedOrder] (val x: Self) extends AnyVal {
     
     inline def setCart(value: GoogleActionsV2OrdersCart): Self = StObject.set(x, "cart", value.asInstanceOf[js.Any])
     

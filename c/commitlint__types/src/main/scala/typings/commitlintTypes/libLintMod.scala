@@ -35,7 +35,8 @@ object libLintMod {
       __obj.asInstanceOf[LintOptions]
     }
     
-    extension [Self <: LintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultIgnores(value: Boolean): Self = StObject.set(x, "defaultIgnores", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object libLintMod {
       __obj.asInstanceOf[LintOutcome]
     }
     
-    extension [Self <: LintOutcome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintOutcome] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[LintRuleOutcome]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -126,7 +128,8 @@ object libLintMod {
       __obj.asInstanceOf[LintRuleOutcome]
     }
     
-    extension [Self <: LintRuleOutcome](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LintRuleOutcome] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: RuleConfigSeverity): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

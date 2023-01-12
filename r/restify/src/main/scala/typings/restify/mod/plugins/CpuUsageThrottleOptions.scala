@@ -21,7 +21,8 @@ object CpuUsageThrottleOptions {
     __obj.asInstanceOf[CpuUsageThrottleOptions]
   }
   
-  extension [Self <: CpuUsageThrottleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuUsageThrottleOptions] (val x: Self) extends AnyVal {
     
     inline def setHalfLife(value: Double): Self = StObject.set(x, "halfLife", value.asInstanceOf[js.Any])
     

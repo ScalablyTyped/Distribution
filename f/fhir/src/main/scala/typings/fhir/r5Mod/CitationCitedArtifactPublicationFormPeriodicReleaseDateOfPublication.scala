@@ -57,7 +57,8 @@ object CitationCitedArtifactPublicationFormPeriodicReleaseDateOfPublication {
     __obj.asInstanceOf[CitationCitedArtifactPublicationFormPeriodicReleaseDateOfPublication]
   }
   
-  extension [Self <: CitationCitedArtifactPublicationFormPeriodicReleaseDateOfPublication](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactPublicationFormPeriodicReleaseDateOfPublication] (val x: Self) extends AnyVal {
     
     inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

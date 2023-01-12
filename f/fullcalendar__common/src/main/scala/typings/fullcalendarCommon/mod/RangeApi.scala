@@ -21,7 +21,8 @@ object RangeApi {
     __obj.asInstanceOf[RangeApi]
   }
   
-  extension [Self <: RangeApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeApi] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

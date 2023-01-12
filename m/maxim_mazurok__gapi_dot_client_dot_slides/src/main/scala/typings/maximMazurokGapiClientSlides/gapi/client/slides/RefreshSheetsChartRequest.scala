@@ -16,7 +16,8 @@ object RefreshSheetsChartRequest {
     __obj.asInstanceOf[RefreshSheetsChartRequest]
   }
   
-  extension [Self <: RefreshSheetsChartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshSheetsChartRequest] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

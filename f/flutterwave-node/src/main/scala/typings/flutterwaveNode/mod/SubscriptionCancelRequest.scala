@@ -17,7 +17,8 @@ object SubscriptionCancelRequest {
     __obj.asInstanceOf[SubscriptionCancelRequest]
   }
   
-  extension [Self <: SubscriptionCancelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionCancelRequest] (val x: Self) extends AnyVal {
     
     inline def setFetch_by_tx(value: String): Self = StObject.set(x, "fetch_by_tx", value.asInstanceOf[js.Any])
     

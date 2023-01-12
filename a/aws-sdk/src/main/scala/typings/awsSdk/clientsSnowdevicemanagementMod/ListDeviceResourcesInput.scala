@@ -33,7 +33,8 @@ object ListDeviceResourcesInput {
     __obj.asInstanceOf[ListDeviceResourcesInput]
   }
   
-  extension [Self <: ListDeviceResourcesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDeviceResourcesInput] (val x: Self) extends AnyVal {
     
     inline def setManagedDeviceId(value: ManagedDeviceId): Self = StObject.set(x, "managedDeviceId", value.asInstanceOf[js.Any])
     

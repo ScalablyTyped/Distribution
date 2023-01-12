@@ -21,7 +21,8 @@ object InviteSignUrl {
     __obj.asInstanceOf[InviteSignUrl]
   }
   
-  extension [Self <: InviteSignUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InviteSignUrl] (val x: Self) extends AnyVal {
     
     inline def setInviteSignUrl(value: Boolean): Self = StObject.set(x, "inviteSignUrl", value.asInstanceOf[js.Any])
     

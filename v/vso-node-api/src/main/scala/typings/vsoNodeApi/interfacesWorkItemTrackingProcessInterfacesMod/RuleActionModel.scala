@@ -19,7 +19,8 @@ object RuleActionModel {
     __obj.asInstanceOf[RuleActionModel]
   }
   
-  extension [Self <: RuleActionModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleActionModel] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

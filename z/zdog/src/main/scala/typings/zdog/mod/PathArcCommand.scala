@@ -18,7 +18,8 @@ object PathArcCommand {
     __obj.asInstanceOf[PathArcCommand]
   }
   
-  extension [Self <: PathArcCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathArcCommand] (val x: Self) extends AnyVal {
     
     inline def setArc(value: js.Tuple2[VectorOptions, VectorOptions]): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
   }

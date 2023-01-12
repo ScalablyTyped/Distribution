@@ -22,7 +22,8 @@ object XModuleController {
     __obj.asInstanceOf[XModuleController]
   }
   
-  extension [Self <: XModuleController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModuleController] (val x: Self) extends AnyVal {
     
     inline def setRequestResource(value: String => Unit): Self = StObject.set(x, "requestResource", js.Any.fromFunction1(value))
   }

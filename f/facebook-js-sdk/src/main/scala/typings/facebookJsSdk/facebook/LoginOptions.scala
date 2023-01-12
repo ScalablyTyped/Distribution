@@ -26,7 +26,8 @@ object LoginOptions {
     __obj.asInstanceOf[LoginOptions]
   }
   
-  extension [Self <: LoginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginOptions] (val x: Self) extends AnyVal {
     
     inline def setAuth_type(value: reauthenticate | reauthorize | rerequest): Self = StObject.set(x, "auth_type", value.asInstanceOf[js.Any])
     

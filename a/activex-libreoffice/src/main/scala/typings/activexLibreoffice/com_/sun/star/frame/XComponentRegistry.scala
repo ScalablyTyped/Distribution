@@ -27,7 +27,8 @@ object XComponentRegistry {
     __obj.asInstanceOf[XComponentRegistry]
   }
   
-  extension [Self <: XComponentRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XComponentRegistry] (val x: Self) extends AnyVal {
     
     inline def setCreateObject(value: (String, Uik) => XInterface): Self = StObject.set(x, "createObject", js.Any.fromFunction2(value))
   }

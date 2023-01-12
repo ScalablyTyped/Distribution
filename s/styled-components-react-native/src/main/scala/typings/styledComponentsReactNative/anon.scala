@@ -141,7 +141,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyButtonProps]
     }
     
-    extension [Self <: ReadonlyButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
       
@@ -555,7 +556,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyFlatListPropsany]
     }
     
-    extension [Self <: ReadonlyFlatListPropsany](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyFlatListPropsany] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1437,7 +1439,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyModalProps]
     }
     
-    extension [Self <: ReadonlyModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyModalProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1799,7 +1802,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyNavigatorIOSProps]
     }
     
-    extension [Self <: ReadonlyNavigatorIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyNavigatorIOSProps] (val x: Self) extends AnyVal {
       
       inline def setBarTintColor(value: ColorValue): Self = StObject.set(x, "barTintColor", value.asInstanceOf[js.Any])
       
@@ -2239,7 +2243,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySectionListPropsa]
     }
     
-    extension [Self <: ReadonlySectionListPropsa](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySectionListPropsa] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -3007,7 +3012,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyStatusBarProps]
     }
     
-    extension [Self <: ReadonlyStatusBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyStatusBarProps] (val x: Self) extends AnyVal {
       
       inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
       
@@ -3069,7 +3075,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySwipeableListView]
     }
     
-    extension [Self <: ReadonlySwipeableListView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySwipeableListView] (val x: Self) extends AnyVal {
       
       inline def setBounceFirstRowOnMount(value: Boolean): Self = StObject.set(x, "bounceFirstRowOnMount", value.asInstanceOf[js.Any])
       
@@ -3239,7 +3246,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySwitchIOSProps]
     }
     
-    extension [Self <: ReadonlySwitchIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySwitchIOSProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -3697,7 +3705,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyTabBarIOSProps]
     }
     
-    extension [Self <: ReadonlyTabBarIOSProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyTabBarIOSProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

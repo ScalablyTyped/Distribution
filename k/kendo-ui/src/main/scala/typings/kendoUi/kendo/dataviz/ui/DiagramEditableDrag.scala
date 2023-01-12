@@ -15,7 +15,8 @@ object DiagramEditableDrag {
     __obj.asInstanceOf[DiagramEditableDrag]
   }
   
-  extension [Self <: DiagramEditableDrag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramEditableDrag] (val x: Self) extends AnyVal {
     
     inline def setSnap(value: Boolean | DiagramEditableDragSnap): Self = StObject.set(x, "snap", value.asInstanceOf[js.Any])
     

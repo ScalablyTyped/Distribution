@@ -32,7 +32,8 @@ object SocksClientOptions {
     __obj.asInstanceOf[SocksClientOptions]
   }
   
-  extension [Self <: SocksClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocksClientOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: SocksCommandOption): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

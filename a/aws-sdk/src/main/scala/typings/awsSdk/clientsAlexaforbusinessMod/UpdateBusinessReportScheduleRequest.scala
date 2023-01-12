@@ -43,7 +43,8 @@ object UpdateBusinessReportScheduleRequest {
     __obj.asInstanceOf[UpdateBusinessReportScheduleRequest]
   }
   
-  extension [Self <: UpdateBusinessReportScheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateBusinessReportScheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: BusinessReportFormat): Self = StObject.set(x, "Format", value.asInstanceOf[js.Any])
     

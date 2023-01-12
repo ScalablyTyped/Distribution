@@ -371,7 +371,8 @@ object IObservable {
     __obj.asInstanceOf[IObservable]
   }
   
-  extension [Self <: IObservable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObservable] (val x: Self) extends AnyVal {
     
     inline def setAddAfterListener(
       value: (/* eventName */ js.UndefOr[Any], /* fn */ js.UndefOr[Any], /* scope */ js.UndefOr[Any], /* options */ js.UndefOr[Any]) => Unit

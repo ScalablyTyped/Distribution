@@ -15,7 +15,8 @@ object PlotTreegraphBreadcrumbsButtonThemeOptions {
     __obj.asInstanceOf[PlotTreegraphBreadcrumbsButtonThemeOptions]
   }
   
-  extension [Self <: PlotTreegraphBreadcrumbsButtonThemeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotTreegraphBreadcrumbsButtonThemeOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: PlotTreegraphBreadcrumbsButtonThemeStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

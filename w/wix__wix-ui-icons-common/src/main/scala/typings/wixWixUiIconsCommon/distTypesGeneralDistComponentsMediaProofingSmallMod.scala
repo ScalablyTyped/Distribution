@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsMediaProofingSmallMod extends Shortcut {
       __obj.asInstanceOf[MediaProofingSmallProps]
     }
     
-    extension [Self <: MediaProofingSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaProofingSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

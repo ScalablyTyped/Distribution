@@ -30,7 +30,8 @@ object ContentPanelDescriptor {
     __obj.asInstanceOf[ContentPanelDescriptor]
   }
   
-  extension [Self <: ContentPanelDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentPanelDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAppIconUrl(value: String): Self = StObject.set(x, "appIconUrl", value.asInstanceOf[js.Any])
     

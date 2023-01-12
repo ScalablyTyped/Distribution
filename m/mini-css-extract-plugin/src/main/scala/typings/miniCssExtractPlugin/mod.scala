@@ -235,7 +235,8 @@ object mod {
       __obj.asInstanceOf[CssDependencyOptions]
     }
     
-    extension [Self <: CssDependencyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssDependencyOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Buffer): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -308,7 +309,8 @@ object mod {
       __obj.asInstanceOf[CssModuleDependency]
     }
     
-    extension [Self <: CssModuleDependency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CssModuleDependency] (val x: Self) extends AnyVal {
       
       inline def setAssets(value: StringDictionary[Any]): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
       
@@ -369,7 +371,8 @@ object mod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: Boolean): Self = StObject.set(x, "emit", value.asInstanceOf[js.Any])
       
@@ -464,7 +467,8 @@ object mod {
       __obj.asInstanceOf[MiniCssExtractPlugin]
     }
     
-    extension [Self <: MiniCssExtractPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiniCssExtractPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       
@@ -521,7 +525,8 @@ object mod {
       __obj.asInstanceOf[NormalizedPluginOptions]
     }
     
-    extension [Self <: NormalizedPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizedPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -612,7 +617,8 @@ object mod {
       __obj.asInstanceOf[PluginOptions]
     }
     
-    extension [Self <: PluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -685,7 +691,8 @@ object mod {
       __obj.asInstanceOf[RuntimeOptions]
     }
     
-    extension [Self <: RuntimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RuntimeOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Record[String, String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

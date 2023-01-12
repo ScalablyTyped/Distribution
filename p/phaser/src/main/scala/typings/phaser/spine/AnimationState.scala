@@ -132,7 +132,8 @@ object AnimationState {
     __obj.asInstanceOf[AnimationState]
   }
   
-  extension [Self <: AnimationState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationState] (val x: Self) extends AnyVal {
     
     inline def setAddAnimation(value: (Double, String, Boolean, Double) => TrackEntry): Self = StObject.set(x, "addAnimation", js.Any.fromFunction4(value))
     

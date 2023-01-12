@@ -17,7 +17,8 @@ object ApplicationjsonHeadcommit {
     __obj.asInstanceOf[ApplicationjsonHeadcommit]
   }
   
-  extension [Self <: ApplicationjsonHeadcommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonHeadcommit] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Headcommit): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -37,7 +37,8 @@ object CertificateDescription {
     __obj.asInstanceOf[CertificateDescription]
   }
   
-  extension [Self <: CertificateDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateDescription] (val x: Self) extends AnyVal {
     
     inline def setAiaIssuingCertificateUrls(value: js.Array[String]): Self = StObject.set(x, "aiaIssuingCertificateUrls", value.asInstanceOf[js.Any])
     

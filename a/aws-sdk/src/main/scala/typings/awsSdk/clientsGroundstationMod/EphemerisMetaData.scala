@@ -33,7 +33,8 @@ object EphemerisMetaData {
     __obj.asInstanceOf[EphemerisMetaData]
   }
   
-  extension [Self <: EphemerisMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EphemerisMetaData] (val x: Self) extends AnyVal {
     
     inline def setEphemerisId(value: Uuid): Self = StObject.set(x, "ephemerisId", value.asInstanceOf[js.Any])
     

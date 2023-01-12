@@ -20,7 +20,8 @@ object TypeofFileExplorer {
     __obj.asInstanceOf[TypeofFileExplorer]
   }
   
-  extension [Self <: TypeofFileExplorer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFileExplorer] (val x: Self) extends AnyVal {
     
     inline def setFn(value: FileExplorer): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

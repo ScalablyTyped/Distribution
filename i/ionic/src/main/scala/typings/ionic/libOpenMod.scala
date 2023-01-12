@@ -26,7 +26,8 @@ object libOpenMod {
       __obj.asInstanceOf[OpenUrlOptions]
     }
     
-    extension [Self <: OpenUrlOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenUrlOptions] (val x: Self) extends AnyVal {
       
       inline def setApp(value: String | js.Array[String]): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       

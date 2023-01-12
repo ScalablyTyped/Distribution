@@ -1145,7 +1145,8 @@ object modulesDataMod {
         __obj.asInstanceOf[AjaxSettingsObject]
       }
       
-      extension [Self <: AjaxSettingsObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AjaxSettingsObject] (val x: Self) extends AnyVal {
         
         inline def setData(value: String | Dictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -1189,7 +1190,8 @@ object modulesDataMod {
         __obj.asInstanceOf[Chart]
       }
       
-      extension [Self <: Chart](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Chart] (val x: Self) extends AnyVal {
         
         inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -1330,7 +1332,8 @@ object modulesDataMod {
         __obj.asInstanceOf[DataDateFormatObject]
       }
       
-      extension [Self <: DataDateFormatObject](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataDateFormatObject] (val x: Self) extends AnyVal {
         
         inline def setAlternative(value: String): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
         

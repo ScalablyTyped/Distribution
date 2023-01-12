@@ -18,7 +18,8 @@ object MeshServiceDiscovery {
     __obj.asInstanceOf[MeshServiceDiscovery]
   }
   
-  extension [Self <: MeshServiceDiscovery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshServiceDiscovery] (val x: Self) extends AnyVal {
     
     inline def setIpPreference(value: IpPreference): Self = StObject.set(x, "ipPreference", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[CountDownProps]
     }
     
-    extension [Self <: CountDownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountDownProps] (val x: Self) extends AnyVal {
       
       inline def setDigitStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "digitStyle", value.asInstanceOf[js.Any])
       
@@ -209,7 +210,8 @@ object mod {
       __obj.asInstanceOf[CountDownState]
     }
     
-    extension [Self <: CountDownState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountDownState] (val x: Self) extends AnyVal {
       
       inline def setLastUntil(value: Double): Self = StObject.set(x, "lastUntil", value.asInstanceOf[js.Any])
       

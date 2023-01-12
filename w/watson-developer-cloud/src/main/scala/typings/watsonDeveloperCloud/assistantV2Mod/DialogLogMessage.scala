@@ -20,7 +20,8 @@ object DialogLogMessage {
     __obj.asInstanceOf[DialogLogMessage]
   }
   
-  extension [Self <: DialogLogMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogLogMessage] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

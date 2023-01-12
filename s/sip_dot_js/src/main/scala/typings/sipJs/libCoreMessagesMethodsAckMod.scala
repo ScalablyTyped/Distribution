@@ -20,7 +20,8 @@ object libCoreMessagesMethodsAckMod {
       __obj.asInstanceOf[IncomingAckRequest]
     }
     
-    extension [Self <: IncomingAckRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingAckRequest] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: IncomingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object libCoreMessagesMethodsAckMod {
       __obj.asInstanceOf[OutgoingAckRequest]
     }
     
-    extension [Self <: OutgoingAckRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingAckRequest] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: OutgoingRequestMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }

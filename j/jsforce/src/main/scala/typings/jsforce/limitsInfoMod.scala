@@ -47,7 +47,8 @@ object limitsInfoMod {
       __obj.asInstanceOf[DailyApiRequests]
     }
     
-    extension [Self <: DailyApiRequests](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DailyApiRequests] (val x: Self) extends AnyVal {
       
       inline def `setChatter Desktop`(value: Limit): Self = StObject.set(x, "Chatter Desktop", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object limitsInfoMod {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "Max", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object limitsInfoMod {
       __obj.asInstanceOf[LimitInfo]
     }
     
-    extension [Self <: LimitInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitInfo] (val x: Self) extends AnyVal {
       
       inline def setApiUsage(value: typings.jsforce.anon.Limit): Self = StObject.set(x, "apiUsage", value.asInstanceOf[js.Any])
     }
@@ -194,7 +197,8 @@ object limitsInfoMod {
       __obj.asInstanceOf[LimitsInfo]
     }
     
-    extension [Self <: LimitsInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimitsInfo] (val x: Self) extends AnyVal {
       
       inline def setConcurrentAsyncGetReportInstances(value: Limit): Self = StObject.set(x, "ConcurrentAsyncGetReportInstances", value.asInstanceOf[js.Any])
       
@@ -265,7 +269,8 @@ object limitsInfoMod {
       __obj.asInstanceOf[PermissionSets]
     }
     
-    extension [Self <: PermissionSets](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PermissionSets] (val x: Self) extends AnyVal {
       
       inline def setCreateCustom(value: Limit): Self = StObject.set(x, "CreateCustom", value.asInstanceOf[js.Any])
     }

@@ -28,7 +28,8 @@ object IPRange {
     __obj.asInstanceOf[IPRange]
   }
   
-  extension [Self <: IPRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPRange] (val x: Self) extends AnyVal {
     
     inline def setCIDRIP(value: String): Self = StObject.set(x, "CIDRIP", value.asInstanceOf[js.Any])
     

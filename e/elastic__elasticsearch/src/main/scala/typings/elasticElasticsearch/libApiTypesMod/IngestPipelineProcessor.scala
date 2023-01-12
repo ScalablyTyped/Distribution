@@ -19,7 +19,8 @@ object IngestPipelineProcessor {
     __obj.asInstanceOf[IngestPipelineProcessor]
   }
   
-  extension [Self <: IngestPipelineProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestPipelineProcessor] (val x: Self) extends AnyVal {
     
     inline def setIgnore_missing_pipeline(value: Boolean): Self = StObject.set(x, "ignore_missing_pipeline", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object ShowShareImageMenuOption {
     __obj.asInstanceOf[ShowShareImageMenuOption]
   }
   
-  extension [Self <: ShowShareImageMenuOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowShareImageMenuOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

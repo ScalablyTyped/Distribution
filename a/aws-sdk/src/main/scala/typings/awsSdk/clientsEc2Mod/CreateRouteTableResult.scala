@@ -18,7 +18,8 @@ object CreateRouteTableResult {
     __obj.asInstanceOf[CreateRouteTableResult]
   }
   
-  extension [Self <: CreateRouteTableResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRouteTableResult] (val x: Self) extends AnyVal {
     
     inline def setRouteTable(value: RouteTable): Self = StObject.set(x, "RouteTable", value.asInstanceOf[js.Any])
     

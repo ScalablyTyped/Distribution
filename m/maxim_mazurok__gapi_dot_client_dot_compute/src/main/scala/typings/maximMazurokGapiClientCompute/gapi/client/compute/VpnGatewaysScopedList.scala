@@ -20,7 +20,8 @@ object VpnGatewaysScopedList {
     __obj.asInstanceOf[VpnGatewaysScopedList]
   }
   
-  extension [Self <: VpnGatewaysScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnGatewaysScopedList] (val x: Self) extends AnyVal {
     
     inline def setVpnGateways(value: js.Array[VpnGateway]): Self = StObject.set(x, "vpnGateways", value.asInstanceOf[js.Any])
     

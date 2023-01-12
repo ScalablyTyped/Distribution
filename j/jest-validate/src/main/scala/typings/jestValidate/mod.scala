@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setDeprecation(value: String): Self = StObject.set(x, "deprecation", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod {
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    extension [Self <: ValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       

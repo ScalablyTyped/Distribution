@@ -28,7 +28,8 @@ object mod {
       __obj.asInstanceOf[babel]
     }
     
-    extension [Self <: babel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: babel] (val x: Self) extends AnyVal {
       
       inline def setCacheDirectory(value: Boolean): Self = StObject.set(x, "cacheDirectory", value.asInstanceOf[js.Any])
       

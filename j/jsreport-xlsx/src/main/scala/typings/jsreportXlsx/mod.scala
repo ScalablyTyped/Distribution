@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddBufferSize(value: Double): Self = StObject.set(x, "addBufferSize", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[Xlsx]
     }
     
-    extension [Self <: Xlsx](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Xlsx] (val x: Self) extends AnyVal {
       
       inline def setShortid(value: String): Self = StObject.set(x, "shortid", value.asInstanceOf[js.Any])
     }
@@ -74,7 +76,8 @@ object mod {
       __obj.asInstanceOf[XlsxTemplate]
     }
     
-    extension [Self <: XlsxTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XlsxTemplate] (val x: Self) extends AnyVal {
       
       inline def setRecipe(value: xlsx | String): Self = StObject.set(x, "recipe", value.asInstanceOf[js.Any])
     }
@@ -94,7 +97,8 @@ object mod {
         __obj.asInstanceOf[TemplateRegistry]
       }
       
-      extension [Self <: TemplateRegistry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TemplateRegistry] (val x: Self) extends AnyVal {
         
         inline def setXlsxTemplate(value: XlsxTemplate): Self = StObject.set(x, "XlsxTemplate", value.asInstanceOf[js.Any])
       }

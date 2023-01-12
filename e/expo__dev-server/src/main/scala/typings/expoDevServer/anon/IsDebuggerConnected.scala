@@ -19,7 +19,8 @@ object IsDebuggerConnected {
     __obj.asInstanceOf[IsDebuggerConnected]
   }
   
-  extension [Self <: IsDebuggerConnected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsDebuggerConnected] (val x: Self) extends AnyVal {
     
     inline def setIsDebuggerConnected(value: () => Boolean): Self = StObject.set(x, "isDebuggerConnected", js.Any.fromFunction0(value))
     

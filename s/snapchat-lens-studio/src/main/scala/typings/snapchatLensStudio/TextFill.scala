@@ -44,7 +44,8 @@ object TextFill {
     __obj.asInstanceOf[TextFill]
   }
   
-  extension [Self <: TextFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFill] (val x: Self) extends AnyVal {
     
     inline def setColor(value: vec4): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

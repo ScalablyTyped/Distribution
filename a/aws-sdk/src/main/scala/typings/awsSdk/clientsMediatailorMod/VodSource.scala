@@ -53,7 +53,8 @@ object VodSource {
     __obj.asInstanceOf[VodSource]
   }
   
-  extension [Self <: VodSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VodSource] (val x: Self) extends AnyVal {
     
     inline def setArn(value: _String): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

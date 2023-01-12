@@ -17,7 +17,8 @@ object IsRootTarget {
     __obj.asInstanceOf[IsRootTarget]
   }
   
-  extension [Self <: IsRootTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRootTarget] (val x: Self) extends AnyVal {
     
     inline def setIsRootTarget(value: Boolean): Self = StObject.set(x, "isRootTarget", value.asInstanceOf[js.Any])
     

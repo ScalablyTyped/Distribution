@@ -40,7 +40,8 @@ object IosXcTest {
     __obj.asInstanceOf[IosXcTest]
   }
   
-  extension [Self <: IosXcTest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosXcTest] (val x: Self) extends AnyVal {
     
     inline def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
     

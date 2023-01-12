@@ -31,7 +31,8 @@ object ArtistObjectSimplified {
     __obj.asInstanceOf[ArtistObjectSimplified]
   }
   
-  extension [Self <: ArtistObjectSimplified](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtistObjectSimplified] (val x: Self) extends AnyVal {
     
     inline def setExternal_urls(value: ExternalUrlObject): Self = StObject.set(x, "external_urls", value.asInstanceOf[js.Any])
     

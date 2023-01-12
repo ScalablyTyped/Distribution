@@ -36,7 +36,8 @@ object RouteRecordSingleViewWithChildren {
     __obj.asInstanceOf[RouteRecordSingleViewWithChildren]
   }
   
-  extension [Self <: RouteRecordSingleViewWithChildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteRecordSingleViewWithChildren] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[RouteRecordRaw]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

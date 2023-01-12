@@ -23,7 +23,8 @@ object BatchListOutgoingTypedLinksResponse {
     __obj.asInstanceOf[BatchListOutgoingTypedLinksResponse]
   }
   
-  extension [Self <: BatchListOutgoingTypedLinksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchListOutgoingTypedLinksResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

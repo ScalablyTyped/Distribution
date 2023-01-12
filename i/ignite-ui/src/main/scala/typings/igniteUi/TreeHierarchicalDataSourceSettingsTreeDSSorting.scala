@@ -29,7 +29,8 @@ object TreeHierarchicalDataSourceSettingsTreeDSSorting {
     __obj.asInstanceOf[TreeHierarchicalDataSourceSettingsTreeDSSorting]
   }
   
-  extension [Self <: TreeHierarchicalDataSourceSettingsTreeDSSorting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeHierarchicalDataSourceSettingsTreeDSSorting] (val x: Self) extends AnyVal {
     
     inline def setFromLevel(value: Double): Self = StObject.set(x, "fromLevel", value.asInstanceOf[js.Any])
     

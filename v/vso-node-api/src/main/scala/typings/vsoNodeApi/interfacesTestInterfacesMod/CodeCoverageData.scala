@@ -28,7 +28,8 @@ object CodeCoverageData {
     __obj.asInstanceOf[CodeCoverageData]
   }
   
-  extension [Self <: CodeCoverageData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeCoverageData] (val x: Self) extends AnyVal {
     
     inline def setBuildFlavor(value: String): Self = StObject.set(x, "buildFlavor", value.asInstanceOf[js.Any])
     

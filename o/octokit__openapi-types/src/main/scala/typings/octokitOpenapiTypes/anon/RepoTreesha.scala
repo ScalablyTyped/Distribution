@@ -21,7 +21,8 @@ object RepoTreesha {
     __obj.asInstanceOf[RepoTreesha]
   }
   
-  extension [Self <: RepoTreesha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoTreesha] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

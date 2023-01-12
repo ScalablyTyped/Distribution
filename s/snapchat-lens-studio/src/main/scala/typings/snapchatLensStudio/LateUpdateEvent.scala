@@ -27,7 +27,8 @@ object LateUpdateEvent {
     __obj.asInstanceOf[LateUpdateEvent]
   }
   
-  extension [Self <: LateUpdateEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LateUpdateEvent] (val x: Self) extends AnyVal {
     
     inline def setGetDeltaTime(value: () => Double): Self = StObject.set(x, "getDeltaTime", js.Any.fromFunction0(value))
   }

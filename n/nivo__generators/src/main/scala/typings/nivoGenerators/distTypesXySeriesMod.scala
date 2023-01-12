@@ -33,7 +33,8 @@ object distTypesXySeriesMod {
       __obj.asInstanceOf[XYRandomNumericValues]
     }
     
-    extension [Self <: XYRandomNumericValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYRandomNumericValues] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTypesXySeriesMod {
       __obj.asInstanceOf[XYRangeStaticValues]
     }
     
-    extension [Self <: XYRangeStaticValues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XYRangeStaticValues] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[Double | String]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       

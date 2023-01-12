@@ -361,7 +361,8 @@ object IgTree {
     __obj.asInstanceOf[IgTree]
   }
   
-  extension [Self <: IgTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTree] (val x: Self) extends AnyVal {
     
     inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
     

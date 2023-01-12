@@ -19,7 +19,8 @@ object MeshLODLevel {
     __obj.asInstanceOf[MeshLODLevel]
   }
   
-  extension [Self <: MeshLODLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeshLODLevel] (val x: Self) extends AnyVal {
     
     inline def setDistanceOrScreenCoverage(value: Double): Self = StObject.set(x, "distanceOrScreenCoverage", value.asInstanceOf[js.Any])
     

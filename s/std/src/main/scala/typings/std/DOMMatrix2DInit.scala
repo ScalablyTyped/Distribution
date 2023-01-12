@@ -49,7 +49,8 @@ object DOMMatrix2DInit {
     __obj.asInstanceOf[DOMMatrix2DInit]
   }
   
-  extension [Self <: DOMMatrix2DInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMMatrix2DInit] (val x: Self) extends AnyVal {
     
     inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

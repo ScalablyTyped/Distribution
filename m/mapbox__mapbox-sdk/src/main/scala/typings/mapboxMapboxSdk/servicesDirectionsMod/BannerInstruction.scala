@@ -38,7 +38,8 @@ object BannerInstruction {
     __obj.asInstanceOf[BannerInstruction]
   }
   
-  extension [Self <: BannerInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BannerInstruction] (val x: Self) extends AnyVal {
     
     inline def setDistanceAlongGeometry(value: Double): Self = StObject.set(x, "distanceAlongGeometry", value.asInstanceOf[js.Any])
     

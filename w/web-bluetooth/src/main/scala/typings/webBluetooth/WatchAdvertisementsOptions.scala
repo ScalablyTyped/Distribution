@@ -16,7 +16,8 @@ object WatchAdvertisementsOptions {
     __obj.asInstanceOf[WatchAdvertisementsOptions]
   }
   
-  extension [Self <: WatchAdvertisementsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchAdvertisementsOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

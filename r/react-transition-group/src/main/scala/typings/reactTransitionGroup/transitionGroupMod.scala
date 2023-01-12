@@ -86,7 +86,8 @@ object transitionGroupMod {
       __obj.asInstanceOf[ComponentTransitionGroupProps[T]]
     }
     
-    extension [Self <: ComponentTransitionGroupProps[?], T /* <: ElementType[Any] */](x: Self & ComponentTransitionGroupProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentTransitionGroupProps[?], T /* <: ElementType[Any] */] (val x: Self & ComponentTransitionGroupProps[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     }
@@ -105,7 +106,8 @@ object transitionGroupMod {
       __obj.asInstanceOf[IntrinsicTransitionGroupProps[T]]
     }
     
-    extension [Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */](x: Self & IntrinsicTransitionGroupProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntrinsicTransitionGroupProps[?], T /* <: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175, starting with typings.reactTransitionGroup.reactTransitionGroupStrings.a, typings.reactTransitionGroup.reactTransitionGroupStrings.abbr, typings.reactTransitionGroup.reactTransitionGroupStrings.address */ Any */] (val x: Self & IntrinsicTransitionGroupProps[T]) extends AnyVal {
       
       inline def setComponent(value: T): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object FlushOnChange {
     __obj.asInstanceOf[FlushOnChange]
   }
   
-  extension [Self <: FlushOnChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlushOnChange] (val x: Self) extends AnyVal {
     
     inline def setFlushOnChange(value: Boolean): Self = StObject.set(x, "flushOnChange", value.asInstanceOf[js.Any])
     

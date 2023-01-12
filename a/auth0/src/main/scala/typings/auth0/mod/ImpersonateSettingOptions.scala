@@ -21,7 +21,8 @@ object ImpersonateSettingOptions {
     __obj.asInstanceOf[ImpersonateSettingOptions]
   }
   
-  extension [Self <: ImpersonateSettingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpersonateSettingOptions] (val x: Self) extends AnyVal {
     
     inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
     

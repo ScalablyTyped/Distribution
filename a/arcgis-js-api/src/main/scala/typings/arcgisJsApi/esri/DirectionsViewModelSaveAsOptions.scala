@@ -20,7 +20,8 @@ object DirectionsViewModelSaveAsOptions {
     __obj.asInstanceOf[DirectionsViewModelSaveAsOptions]
   }
   
-  extension [Self <: DirectionsViewModelSaveAsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsViewModelSaveAsOptions] (val x: Self) extends AnyVal {
     
     inline def setFolder(value: PortalFolder): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
     

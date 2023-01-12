@@ -23,7 +23,8 @@ object ListAccountPermissionsResponse {
     __obj.asInstanceOf[ListAccountPermissionsResponse]
   }
   
-  extension [Self <: ListAccountPermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAccountPermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

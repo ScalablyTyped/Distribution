@@ -209,7 +209,8 @@ object mod {
       __obj.asInstanceOf[CreateDefaultLoggerOptions]
     }
     
-    extension [Self <: CreateDefaultLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDefaultLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatterOptions(value: CreateTaggedFormatterOptions): Self = StObject.set(x, "formatterOptions", value.asInstanceOf[js.Any])
       

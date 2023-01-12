@@ -59,7 +59,8 @@ object XCheckBox {
     __obj.asInstanceOf[XCheckBox]
   }
   
-  extension [Self <: XCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCheckBox] (val x: Self) extends AnyVal {
     
     inline def setAddItemListener(value: XItemListener => Unit): Self = StObject.set(x, "addItemListener", js.Any.fromFunction1(value))
     

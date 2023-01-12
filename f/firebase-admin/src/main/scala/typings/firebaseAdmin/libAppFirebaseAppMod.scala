@@ -55,7 +55,8 @@ object libAppFirebaseAppMod {
       __obj.asInstanceOf[FirebaseAccessToken]
     }
     
-    extension [Self <: FirebaseAccessToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebaseAccessToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

@@ -46,7 +46,8 @@ object libUtilFormatSmartMod {
       __obj.asInstanceOf[FormatSmartOptions]
     }
     
-    extension [Self <: FormatSmartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatSmartOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: Boolean): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       

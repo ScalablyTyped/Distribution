@@ -72,7 +72,8 @@ object clientsAppconfigdataMod {
       __obj.asInstanceOf[ClientApiVersions]
     }
     
-    extension [Self <: ClientApiVersions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientApiVersions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: apiVersion): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object clientsAppconfigdataMod {
       __obj.asInstanceOf[GetLatestConfigurationRequest]
     }
     
-    extension [Self <: GetLatestConfigurationRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetLatestConfigurationRequest] (val x: Self) extends AnyVal {
       
       inline def setConfigurationToken(value: Token): Self = StObject.set(x, "ConfigurationToken", value.asInstanceOf[js.Any])
     }
@@ -134,7 +136,8 @@ object clientsAppconfigdataMod {
       __obj.asInstanceOf[GetLatestConfigurationResponse]
     }
     
-    extension [Self <: GetLatestConfigurationResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetLatestConfigurationResponse] (val x: Self) extends AnyVal {
       
       inline def setConfiguration(value: SyntheticGetLatestConfigurationResponseBlob): Self = StObject.set(x, "Configuration", value.asInstanceOf[js.Any])
       
@@ -193,7 +196,8 @@ object clientsAppconfigdataMod {
       __obj.asInstanceOf[StartConfigurationSessionRequest]
     }
     
-    extension [Self <: StartConfigurationSessionRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartConfigurationSessionRequest] (val x: Self) extends AnyVal {
       
       inline def setApplicationIdentifier(value: Identifier): Self = StObject.set(x, "ApplicationIdentifier", value.asInstanceOf[js.Any])
       
@@ -221,7 +225,8 @@ object clientsAppconfigdataMod {
       __obj.asInstanceOf[StartConfigurationSessionResponse]
     }
     
-    extension [Self <: StartConfigurationSessionResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StartConfigurationSessionResponse] (val x: Self) extends AnyVal {
       
       inline def setInitialConfigurationToken(value: Token): Self = StObject.set(x, "InitialConfigurationToken", value.asInstanceOf[js.Any])
       

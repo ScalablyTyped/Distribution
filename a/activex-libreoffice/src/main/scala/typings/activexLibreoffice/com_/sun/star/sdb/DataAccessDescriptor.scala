@@ -227,7 +227,8 @@ object DataAccessDescriptor {
     __obj.asInstanceOf[DataAccessDescriptor]
   }
   
-  extension [Self <: DataAccessDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAccessDescriptor] (val x: Self) extends AnyVal {
     
     inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     

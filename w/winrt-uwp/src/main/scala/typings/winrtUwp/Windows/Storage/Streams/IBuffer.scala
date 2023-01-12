@@ -20,7 +20,8 @@ object IBuffer {
     __obj.asInstanceOf[IBuffer]
   }
   
-  extension [Self <: IBuffer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBuffer] (val x: Self) extends AnyVal {
     
     inline def setCapacity(value: Double): Self = StObject.set(x, "capacity", value.asInstanceOf[js.Any])
     

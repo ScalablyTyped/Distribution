@@ -87,7 +87,8 @@ object IAttributes {
     __obj.asInstanceOf[IAttributes]
   }
   
-  extension [Self <: IAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttributes] (val x: Self) extends AnyVal {
     
     inline def set$addClass(value: String => Unit): Self = StObject.set(x, "$addClass", js.Any.fromFunction1(value))
     

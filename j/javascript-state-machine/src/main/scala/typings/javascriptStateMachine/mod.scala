@@ -210,7 +210,8 @@ object mod {
     inline def create(config: StateMachineConfig): StateMachine = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any]).asInstanceOf[StateMachine]
     inline def create(config: StateMachineConfig, target: StateMachine): StateMachine = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(config.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[StateMachine]
     
-    extension [Self <: StateMachine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateMachine] (val x: Self) extends AnyVal {
       
       inline def setCan(value: /* evt */ String => Boolean): Self = StObject.set(x, "can", js.Any.fromFunction1(value))
       
@@ -275,7 +276,8 @@ object mod {
       __obj.asInstanceOf[StateMachineConfig]
     }
     
-    extension [Self <: StateMachineConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateMachineConfig] (val x: Self) extends AnyVal {
       
       inline def setCallbacks(
         value: StringDictionary[
@@ -346,7 +348,8 @@ object mod {
       __obj.asInstanceOf[StateMachineEventDef]
     }
     
-    extension [Self <: StateMachineEventDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateMachineEventDef] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Any): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

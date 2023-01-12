@@ -23,7 +23,8 @@ object IpOptions {
     __obj.asInstanceOf[IpOptions]
   }
   
-  extension [Self <: IpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpOptions] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: PresenceMode): Self = StObject.set(x, "cidr", value.asInstanceOf[js.Any])
     

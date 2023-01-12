@@ -55,7 +55,8 @@ object SubaccountResponse {
     __obj.asInstanceOf[SubaccountResponse]
   }
   
-  extension [Self <: SubaccountResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubaccountResponse] (val x: Self) extends AnyVal {
     
     inline def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     

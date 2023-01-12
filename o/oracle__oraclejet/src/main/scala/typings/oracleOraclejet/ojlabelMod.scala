@@ -267,7 +267,8 @@ object ojlabelMod {
       __obj.asInstanceOf[ojLabelEventMap]
     }
     
-    extension [Self <: ojLabelEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelEventMap] (val x: Self) extends AnyVal {
       
       inline def setForChanged(value: JetElementCustomEvent[String | Null]): Self = StObject.set(x, "forChanged", value.asInstanceOf[js.Any])
       
@@ -302,7 +303,8 @@ object ojlabelMod {
       __obj.asInstanceOf[ojLabelSettableProperties]
     }
     
-    extension [Self <: ojLabelSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       
@@ -344,7 +346,8 @@ object ojlabelMod {
       __obj.asInstanceOf[ojLabelSettablePropertiesLenient]
     }
     
-    extension [Self <: ojLabelSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojLabelSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setFor(value: String): Self = StObject.set(x, "for", value.asInstanceOf[js.Any])
       

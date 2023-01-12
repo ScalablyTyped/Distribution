@@ -23,7 +23,8 @@ object typesUtilMod {
       __obj.asInstanceOf[DrawingContextAttributes]
     }
     
-    extension [Self <: DrawingContextAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawingContextAttributes] (val x: Self) extends AnyVal {
       
       inline def setDesynchronized(value: Boolean): Self = StObject.set(x, "desynchronized", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object typesUtilMod {
       __obj.asInstanceOf[ListenerDescriptor]
     }
     
-    extension [Self <: ListenerDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListenerDescriptor] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* repeated */ Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
@@ -117,7 +119,8 @@ object typesUtilMod {
       __obj.asInstanceOf[WaveSurferUtil]
     }
     
-    extension [Self <: WaveSurferUtil](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WaveSurferUtil] (val x: Self) extends AnyVal {
       
       inline def setAbsMax(value: js.Array[Double] => Double): Self = StObject.set(x, "absMax", js.Any.fromFunction1(value))
       

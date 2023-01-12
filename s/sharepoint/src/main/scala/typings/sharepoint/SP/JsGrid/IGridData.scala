@@ -66,7 +66,8 @@ object IGridData {
     __obj.asInstanceOf[IGridData]
   }
   
-  extension [Self <: IGridData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGridData] (val x: Self) extends AnyVal {
     
     inline def setAdditionalParams(value: Any): Self = StObject.set(x, "AdditionalParams", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object OperationParameter {
     __obj.asInstanceOf[OperationParameter]
   }
   
-  extension [Self <: OperationParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationParameter] (val x: Self) extends AnyVal {
     
     inline def setMapper(value: Mapper): Self = StObject.set(x, "mapper", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ModifyInstanceMaintenanceOptionsResult {
     __obj.asInstanceOf[ModifyInstanceMaintenanceOptionsResult]
   }
   
-  extension [Self <: ModifyInstanceMaintenanceOptionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceMaintenanceOptionsResult] (val x: Self) extends AnyVal {
     
     inline def setAutoRecovery(value: InstanceAutoRecoveryState): Self = StObject.set(x, "AutoRecovery", value.asInstanceOf[js.Any])
     

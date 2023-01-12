@@ -168,7 +168,8 @@ object mod {
       __obj.asInstanceOf[ILayerOptions]
     }
     
-    extension [Self <: ILayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILayerOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Boolean): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -227,7 +228,8 @@ object mod {
       __obj.asInstanceOf[IRouterAllowedMethodsOptions]
     }
     
-    extension [Self <: IRouterAllowedMethodsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRouterAllowedMethodsOptions] (val x: Self) extends AnyVal {
       
       inline def setMethodNotAllowed(value: () => Any): Self = StObject.set(x, "methodNotAllowed", js.Any.fromFunction0(value))
       
@@ -861,7 +863,8 @@ object mod {
       __obj.asInstanceOf[IRouterOptions]
     }
     
-    extension [Self <: IRouterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRouterOptions] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: js.Array[String]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
@@ -913,7 +916,8 @@ object mod {
       __obj.asInstanceOf[IRouterParamContext[StateT, CustomT]]
     }
     
-    extension [Self <: IRouterParamContext[?, ?], StateT, CustomT](x: Self & (IRouterParamContext[StateT, CustomT])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRouterParamContext[?, ?], StateT, CustomT] (val x: Self & (IRouterParamContext[StateT, CustomT])) extends AnyVal {
       
       inline def setParams(value: Record[String, String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -944,7 +948,8 @@ object mod {
       __obj.asInstanceOf[IRoutesMatch]
     }
     
-    extension [Self <: IRoutesMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRoutesMatch] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[Layer]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -969,7 +974,8 @@ object mod {
       __obj.asInstanceOf[IUrlOptionsQuery]
     }
     
-    extension [Self <: IUrlOptionsQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IUrlOptionsQuery] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: js.Object | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     }

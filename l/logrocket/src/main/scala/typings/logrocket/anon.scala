@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[BaseHref]
     }
     
-    extension [Self <: BaseHref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHref] (val x: Self) extends AnyVal {
       
       inline def setBaseHref(value: String): Self = StObject.set(x, "baseHref", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Debug]
     }
     
-    extension [Self <: Debug](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Debug] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object anon {
       __obj.asInstanceOf[IsEnabled]
     }
     
-    extension [Self <: IsEnabled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsEnabled] (val x: Self) extends AnyVal {
       
       inline def setIsEnabled(value: Boolean | Debug): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object anon {
       __obj.asInstanceOf[RequestSanitizer]
     }
     
-    extension [Self <: RequestSanitizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestSanitizer] (val x: Self) extends AnyVal {
       
       inline def setIsEnabled(value: Boolean): Self = StObject.set(x, "isEnabled", value.asInstanceOf[js.Any])
       
@@ -163,7 +167,8 @@ object anon {
       __obj.asInstanceOf[UrlSanitizer]
     }
     
-    extension [Self <: UrlSanitizer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlSanitizer] (val x: Self) extends AnyVal {
       
       inline def setUrlSanitizer(value: /* url */ String => Null | String): Self = StObject.set(x, "urlSanitizer", js.Any.fromFunction1(value))
       

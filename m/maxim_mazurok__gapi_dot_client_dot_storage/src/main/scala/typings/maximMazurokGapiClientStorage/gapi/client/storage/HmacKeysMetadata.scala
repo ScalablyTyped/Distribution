@@ -22,7 +22,8 @@ object HmacKeysMetadata {
     __obj.asInstanceOf[HmacKeysMetadata]
   }
   
-  extension [Self <: HmacKeysMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmacKeysMetadata] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[HmacKeyMetadata]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

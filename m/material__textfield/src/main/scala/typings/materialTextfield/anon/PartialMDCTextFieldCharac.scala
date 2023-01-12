@@ -16,7 +16,8 @@ object PartialMDCTextFieldCharac {
     __obj.asInstanceOf[PartialMDCTextFieldCharac]
   }
   
-  extension [Self <: PartialMDCTextFieldCharac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMDCTextFieldCharac] (val x: Self) extends AnyVal {
     
     inline def setSetContent(value: /* content */ String => Unit): Self = StObject.set(x, "setContent", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object EFCONSTRUCTION {
     __obj.asInstanceOf[EFCONSTRUCTION]
   }
   
-  extension [Self <: EFCONSTRUCTION](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EFCONSTRUCTION] (val x: Self) extends AnyVal {
     
     inline def setEF_CONSTRUCTION(value: Double): Self = StObject.set(x, "EF_CONSTRUCTION", value.asInstanceOf[js.Any])
     

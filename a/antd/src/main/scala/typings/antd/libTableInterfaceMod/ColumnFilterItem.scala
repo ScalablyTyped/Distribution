@@ -20,7 +20,8 @@ object ColumnFilterItem {
     __obj.asInstanceOf[ColumnFilterItem]
   }
   
-  extension [Self <: ColumnFilterItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterItem] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[ColumnFilterItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

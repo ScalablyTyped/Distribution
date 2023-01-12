@@ -28,7 +28,8 @@ object NodeOutputPort {
     __obj.asInstanceOf[NodeOutputPort]
   }
   
-  extension [Self <: NodeOutputPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeOutputPort] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

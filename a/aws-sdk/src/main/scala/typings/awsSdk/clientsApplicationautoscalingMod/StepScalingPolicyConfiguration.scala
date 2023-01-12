@@ -38,7 +38,8 @@ object StepScalingPolicyConfiguration {
     __obj.asInstanceOf[StepScalingPolicyConfiguration]
   }
   
-  extension [Self <: StepScalingPolicyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepScalingPolicyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentType(value: AdjustmentType): Self = StObject.set(x, "AdjustmentType", value.asInstanceOf[js.Any])
     

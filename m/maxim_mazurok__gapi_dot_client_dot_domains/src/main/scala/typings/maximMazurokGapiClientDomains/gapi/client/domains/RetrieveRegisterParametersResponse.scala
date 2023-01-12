@@ -16,7 +16,8 @@ object RetrieveRegisterParametersResponse {
     __obj.asInstanceOf[RetrieveRegisterParametersResponse]
   }
   
-  extension [Self <: RetrieveRegisterParametersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveRegisterParametersResponse] (val x: Self) extends AnyVal {
     
     inline def setRegisterParameters(value: RegisterParameters): Self = StObject.set(x, "registerParameters", value.asInstanceOf[js.Any])
     

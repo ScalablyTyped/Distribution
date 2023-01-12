@@ -38,7 +38,8 @@ object Termination {
     __obj.asInstanceOf[Termination]
   }
   
-  extension [Self <: Termination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Termination] (val x: Self) extends AnyVal {
     
     inline def setCallingRegions(value: CallingRegionList): Self = StObject.set(x, "CallingRegions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Alb {
     __obj.asInstanceOf[Alb]
   }
   
-  extension [Self <: Alb](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Alb] (val x: Self) extends AnyVal {
     
     inline def setAuthorizers(value: Authorizers): Self = StObject.set(x, "authorizers", value.asInstanceOf[js.Any])
     

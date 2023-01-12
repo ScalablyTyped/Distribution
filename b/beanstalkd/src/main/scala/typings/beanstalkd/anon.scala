@@ -202,7 +202,8 @@ object anon {
       __obj.asInstanceOf[RequiredBeanstalkdClient]
     }
     
-    extension [Self <: RequiredBeanstalkdClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredBeanstalkdClient] (val x: Self) extends AnyVal {
       
       inline def setBury(value: (/* id */ Double, /* priority */ Double) => js.Promise[Unit]): Self = StObject.set(x, "bury", js.Any.fromFunction2(value))
       

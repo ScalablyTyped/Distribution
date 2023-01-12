@@ -22,7 +22,8 @@ object GetHistoricalBytesOption {
     __obj.asInstanceOf[GetHistoricalBytesOption]
   }
   
-  extension [Self <: GetHistoricalBytesOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHistoricalBytesOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Nfcrwerror => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[As[C]]
     }
     
-    extension [Self <: As[?], C /* <: ElementType[Any] */](x: Self & As[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: As[?], C /* <: ElementType[Any] */] (val x: Self & As[C]) extends AnyVal {
       
       inline def set$as(value: C): Self = StObject.set(x, "$as", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Base]
     }
     
-    extension [Self <: Base](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base] (val x: Self) extends AnyVal {
       
       inline def setBase(value: Any): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[ClassName[P]]
     }
     
-    extension [Self <: ClassName[?], P /* <: js.Object */](x: Self & ClassName[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName[?], P /* <: js.Object */] (val x: Self & ClassName[P]) extends AnyVal {
       
       inline def set$style(value: StyleObject | (js.Function1[/* props */ P, StyleObject])): Self = StObject.set(x, "$style", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Hydrating]
     }
     
-    extension [Self <: Hydrating](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hydrating] (val x: Self) extends AnyVal {
       
       inline def setHydrating(value: Boolean): Self = StObject.set(x, "hydrating", value.asInstanceOf[js.Any])
     }
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Any): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -143,7 +148,8 @@ object anon {
       __obj.asInstanceOf[Ref]
     }
     
-    extension [Self <: Ref](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Any): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
@@ -162,7 +168,8 @@ object anon {
       __obj.asInstanceOf[StackIndex]
     }
     
-    extension [Self <: StackIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackIndex] (val x: Self) extends AnyVal {
       
       inline def setStackIndex(value: Any): Self = StObject.set(x, "stackIndex", value.asInstanceOf[js.Any])
       
@@ -183,7 +190,8 @@ object anon {
       __obj.asInstanceOf[StackInfo]
     }
     
-    extension [Self <: StackInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StackInfo] (val x: Self) extends AnyVal {
       
       inline def setStackIndex(value: Double): Self = StObject.set(x, "stackIndex", value.asInstanceOf[js.Any])
       

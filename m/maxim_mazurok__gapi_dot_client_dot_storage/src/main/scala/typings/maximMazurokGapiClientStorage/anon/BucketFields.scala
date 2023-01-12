@@ -46,7 +46,8 @@ object BucketFields {
     __obj.asInstanceOf[BucketFields]
   }
   
-  extension [Self <: BucketFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketFields] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

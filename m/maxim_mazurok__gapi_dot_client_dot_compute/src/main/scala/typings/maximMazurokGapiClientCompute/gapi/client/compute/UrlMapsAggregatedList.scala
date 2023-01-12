@@ -40,7 +40,8 @@ object UrlMapsAggregatedList {
     __obj.asInstanceOf[UrlMapsAggregatedList]
   }
   
-  extension [Self <: UrlMapsAggregatedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlMapsAggregatedList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

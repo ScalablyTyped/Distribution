@@ -19,7 +19,8 @@ object componentMod {
       __obj.asInstanceOf[NameServiceMapping]
     }
     
-    extension [Self <: NameServiceMapping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
       
       inline def `setAuth-compat`(value: FirebaseAuth): Self = StObject.set(x, "auth-compat", value.asInstanceOf[js.Any])
     }

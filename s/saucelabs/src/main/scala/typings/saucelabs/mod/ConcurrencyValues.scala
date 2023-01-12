@@ -24,7 +24,8 @@ object ConcurrencyValues {
     __obj.asInstanceOf[ConcurrencyValues]
   }
   
-  extension [Self <: ConcurrencyValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcurrencyValues] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

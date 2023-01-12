@@ -72,7 +72,8 @@ object PickImpldisplayTimePartia {
     __obj.asInstanceOf[PickImpldisplayTimePartia]
   }
   
-  extension [Self <: PickImpldisplayTimePartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpldisplayTimePartia] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object EnumValuesDelayRangeStart {
     __obj.asInstanceOf[EnumValuesDelayRangeStart]
   }
   
-  extension [Self <: EnumValuesDelayRangeStart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesDelayRangeStart] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: DelayRangeStart): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

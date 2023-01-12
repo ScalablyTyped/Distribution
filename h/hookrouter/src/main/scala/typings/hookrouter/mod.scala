@@ -115,7 +115,8 @@ object mod {
         __obj.asInstanceOf[AProps]
       }
       
-      extension [Self <: AProps](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AProps] (val x: Self) extends AnyVal {
         
         inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       }

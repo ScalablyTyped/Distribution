@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Application]
     }
     
-    extension [Self <: Application](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Application] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object mod {
       __obj.asInstanceOf[FaviconFile]
     }
     
-    extension [Self <: FaviconFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconFile] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -109,7 +111,8 @@ object mod {
       __obj.asInstanceOf[FaviconImage]
     }
     
-    extension [Self <: FaviconImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconImage] (val x: Self) extends AnyVal {
       
       inline def setContents(value: Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod {
       __obj.asInstanceOf[FaviconOptions]
     }
     
-    extension [Self <: FaviconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconOptions] (val x: Self) extends AnyVal {
       
       inline def setAppDescription(value: String): Self = StObject.set(x, "appDescription", value.asInstanceOf[js.Any])
       
@@ -307,7 +311,8 @@ object mod {
       __obj.asInstanceOf[FaviconResponse]
     }
     
-    extension [Self <: FaviconResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconResponse] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[FaviconFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -346,7 +351,8 @@ object mod {
       __obj.asInstanceOf[FaviconStreamOptions]
     }
     
-    extension [Self <: FaviconStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FaviconStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setEmitBuffers(value: Boolean): Self = StObject.set(x, "emitBuffers", value.asInstanceOf[js.Any])
       
@@ -373,7 +379,8 @@ object mod {
       __obj.asInstanceOf[FileOptions]
     }
     
-    extension [Self <: FileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
       
       inline def setManifestFileName(value: String): Self = StObject.set(x, "manifestFileName", value.asInstanceOf[js.Any])
       
@@ -406,7 +413,8 @@ object mod {
       __obj.asInstanceOf[IconOptions]
     }
     
-    extension [Self <: IconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String | Boolean): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -447,7 +455,8 @@ object mod {
       __obj.asInstanceOf[IconSize]
     }
     
-    extension [Self <: IconSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -470,7 +479,8 @@ object mod {
       __obj.asInstanceOf[OutputOptions]
     }
     
-    extension [Self <: OutputOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputOptions] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Boolean): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -529,7 +539,8 @@ object mod {
       __obj.asInstanceOf[ShortcutOptions]
     }
     
-    extension [Self <: ShortcutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShortcutOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object SearchSortedInputs {
     __obj.asInstanceOf[SearchSortedInputs]
   }
   
-  extension [Self <: SearchSortedInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSortedInputs] (val x: Self) extends AnyVal {
     
     inline def setSortedSequence(value: scala.Any): Self = StObject.set(x, "sortedSequence", value.asInstanceOf[js.Any])
     

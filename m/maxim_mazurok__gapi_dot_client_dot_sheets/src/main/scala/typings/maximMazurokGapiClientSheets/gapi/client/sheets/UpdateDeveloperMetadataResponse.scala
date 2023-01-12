@@ -16,7 +16,8 @@ object UpdateDeveloperMetadataResponse {
     __obj.asInstanceOf[UpdateDeveloperMetadataResponse]
   }
   
-  extension [Self <: UpdateDeveloperMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDeveloperMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setDeveloperMetadata(value: js.Array[DeveloperMetadata]): Self = StObject.set(x, "developerMetadata", value.asInstanceOf[js.Any])
     

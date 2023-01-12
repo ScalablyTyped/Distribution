@@ -25,7 +25,8 @@ object GridParamNames {
     __obj.asInstanceOf[GridParamNames]
   }
   
-  extension [Self <: GridParamNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridParamNames] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

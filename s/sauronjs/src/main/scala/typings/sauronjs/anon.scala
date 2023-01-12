@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[TypeofComponent]
     }
     
-    extension [Self <: TypeofComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
       
       inline def set_index(value: Double): Self = StObject.set(x, "_index", value.asInstanceOf[js.Any])
     }

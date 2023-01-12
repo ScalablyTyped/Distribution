@@ -18,7 +18,8 @@ object LazyOptions {
     __obj.asInstanceOf[LazyOptions]
   }
   
-  extension [Self <: LazyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LazyOptions] (val x: Self) extends AnyVal {
     
     inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
     

@@ -73,7 +73,8 @@ object SnapshotTierStatus {
     __obj.asInstanceOf[SnapshotTierStatus]
   }
   
-  extension [Self <: SnapshotTierStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotTierStatus] (val x: Self) extends AnyVal {
     
     inline def setArchivalCompleteTime(value: js.Date): Self = StObject.set(x, "ArchivalCompleteTime", value.asInstanceOf[js.Any])
     

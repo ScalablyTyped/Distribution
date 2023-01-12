@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "object-inspect"
-version := "1.8-dt-20211202Z-0c3577"
+version := "1.8-dt-20211202Z-761781"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

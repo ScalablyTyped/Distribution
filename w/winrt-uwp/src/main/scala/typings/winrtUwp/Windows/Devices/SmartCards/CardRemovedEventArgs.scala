@@ -17,7 +17,8 @@ object CardRemovedEventArgs {
     __obj.asInstanceOf[CardRemovedEventArgs]
   }
   
-  extension [Self <: CardRemovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardRemovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSmartCard(value: SmartCard): Self = StObject.set(x, "smartCard", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object CrosshairProps {
     __obj.asInstanceOf[CrosshairProps]
   }
   
-  extension [Self <: CrosshairProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[ReactTagsProps]
     }
     
-    extension [Self <: ReactTagsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactTagsProps] (val x: Self) extends AnyVal {
       
       inline def setAllowAdditionFromPaste(value: Boolean): Self = StObject.set(x, "allowAdditionFromPaste", value.asInstanceOf[js.Any])
       
@@ -280,7 +281,8 @@ object mod {
       __obj.asInstanceOf[Tag]
     }
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

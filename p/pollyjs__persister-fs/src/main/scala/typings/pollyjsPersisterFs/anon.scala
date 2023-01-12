@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[RecordingsDir]
     }
     
-    extension [Self <: RecordingsDir](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordingsDir] (val x: Self) extends AnyVal {
       
       inline def setRecordingsDir(value: String): Self = StObject.set(x, "recordingsDir", value.asInstanceOf[js.Any])
       

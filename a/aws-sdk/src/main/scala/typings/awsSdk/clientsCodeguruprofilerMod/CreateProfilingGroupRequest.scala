@@ -38,7 +38,8 @@ object CreateProfilingGroupRequest {
     __obj.asInstanceOf[CreateProfilingGroupRequest]
   }
   
-  extension [Self <: CreateProfilingGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateProfilingGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentOrchestrationConfig(value: AgentOrchestrationConfig): Self = StObject.set(x, "agentOrchestrationConfig", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ImportInstanceResult {
     __obj.asInstanceOf[ImportInstanceResult]
   }
   
-  extension [Self <: ImportInstanceResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportInstanceResult] (val x: Self) extends AnyVal {
     
     inline def setConversionTask(value: ConversionTask): Self = StObject.set(x, "ConversionTask", value.asInstanceOf[js.Any])
     

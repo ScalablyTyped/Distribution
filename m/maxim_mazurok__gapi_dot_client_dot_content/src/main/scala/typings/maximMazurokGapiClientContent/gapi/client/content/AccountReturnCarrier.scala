@@ -25,7 +25,8 @@ object AccountReturnCarrier {
     __obj.asInstanceOf[AccountReturnCarrier]
   }
   
-  extension [Self <: AccountReturnCarrier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountReturnCarrier] (val x: Self) extends AnyVal {
     
     inline def setCarrierAccountId(value: String): Self = StObject.set(x, "carrierAccountId", value.asInstanceOf[js.Any])
     

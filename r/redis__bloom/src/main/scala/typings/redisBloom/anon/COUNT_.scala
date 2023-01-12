@@ -62,7 +62,8 @@ object COUNT_ {
     __obj.asInstanceOf[COUNT_]
   }
   
-  extension [Self <: COUNT_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: COUNT_] (val x: Self) extends AnyVal {
     
     inline def setADD(value: FIRSTKEYINDEX): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
     

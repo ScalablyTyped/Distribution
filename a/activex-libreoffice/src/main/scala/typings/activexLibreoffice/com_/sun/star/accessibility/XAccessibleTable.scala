@@ -277,7 +277,8 @@ object XAccessibleTable {
     __obj.asInstanceOf[XAccessibleTable]
   }
   
-  extension [Self <: XAccessibleTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleTable] (val x: Self) extends AnyVal {
     
     inline def setAccessibleCaption(value: XAccessible): Self = StObject.set(x, "AccessibleCaption", value.asInstanceOf[js.Any])
     

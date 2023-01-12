@@ -37,7 +37,8 @@ object distTypesLoadSharedConfigFilesMod {
       __obj.asInstanceOf[SharedConfigInit]
     }
     
-    extension [Self <: SharedConfigInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedConfigInit] (val x: Self) extends AnyVal {
       
       inline def setConfigFilepath(value: String): Self = StObject.set(x, "configFilepath", value.asInstanceOf[js.Any])
       

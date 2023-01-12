@@ -129,7 +129,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[ContinueAction]
     }
     
-    extension [Self <: ContinueAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContinueAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: continue): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -151,7 +152,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[ErrorAction[TError]]
     }
     
-    extension [Self <: ErrorAction[?], TError](x: Self & ErrorAction[TError]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorAction[?], TError] (val x: Self & ErrorAction[TError]) extends AnyVal {
       
       inline def setError(value: TError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -173,7 +175,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[FailedAction]
     }
     
-    extension [Self <: FailedAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FailedAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: failed): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -197,7 +200,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[LoadingAction[TVariables, TContext]]
     }
     
-    extension [Self <: LoadingAction[?, ?], TVariables, TContext](x: Self & (LoadingAction[TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingAction[?, ?], TVariables, TContext] (val x: Self & (LoadingAction[TVariables, TContext])) extends AnyVal {
       
       inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -236,7 +240,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[MutationConfig[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: MutationConfig[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationConfig[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationConfig[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationConfig[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setDefaultOptions(value: MutationOptions[TData, TError, TVariables, TContext]): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       
@@ -281,7 +286,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[MutationState[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: MutationState[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (MutationState[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutationState[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (MutationState[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setContext(value: TContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -321,7 +327,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[PauseAction]
     }
     
-    extension [Self <: PauseAction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PauseAction] (val x: Self) extends AnyVal {
       
       inline def setType(value: pause): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -343,7 +350,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[SetStateAction[TData, TError, TVariables, TContext]]
     }
     
-    extension [Self <: SetStateAction[?, ?, ?, ?], TData, TError, TVariables, TContext](x: Self & (SetStateAction[TData, TError, TVariables, TContext])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetStateAction[?, ?, ?, ?], TData, TError, TVariables, TContext] (val x: Self & (SetStateAction[TData, TError, TVariables, TContext])) extends AnyVal {
       
       inline def setState(value: MutationState[TData, TError, TVariables, TContext]): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
       
@@ -367,7 +375,8 @@ object typesCoreMutationMod {
       __obj.asInstanceOf[SuccessAction[TData]]
     }
     
-    extension [Self <: SuccessAction[?], TData](x: Self & SuccessAction[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SuccessAction[?], TData] (val x: Self & SuccessAction[TData]) extends AnyVal {
       
       inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

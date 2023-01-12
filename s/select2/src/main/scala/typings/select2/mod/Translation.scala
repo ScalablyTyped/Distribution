@@ -27,7 +27,8 @@ object Translation {
     __obj.asInstanceOf[Translation]
   }
   
-  extension [Self <: Translation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
     
     inline def setErrorLoading(value: () => String): Self = StObject.set(x, "errorLoading", js.Any.fromFunction0(value))
     

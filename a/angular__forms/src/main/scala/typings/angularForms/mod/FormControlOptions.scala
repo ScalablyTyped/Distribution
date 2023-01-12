@@ -29,7 +29,8 @@ object FormControlOptions {
     __obj.asInstanceOf[FormControlOptions]
   }
   
-  extension [Self <: FormControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormControlOptions] (val x: Self) extends AnyVal {
     
     inline def setInitialValueIsDefault(value: Boolean): Self = StObject.set(x, "initialValueIsDefault", value.asInstanceOf[js.Any])
     

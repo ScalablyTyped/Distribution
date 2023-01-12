@@ -38,7 +38,8 @@ object GlobalTableDescription {
     __obj.asInstanceOf[GlobalTableDescription]
   }
   
-  extension [Self <: GlobalTableDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalTableDescription] (val x: Self) extends AnyVal {
     
     inline def setCreationDateTime(value: js.Date): Self = StObject.set(x, "CreationDateTime", value.asInstanceOf[js.Any])
     

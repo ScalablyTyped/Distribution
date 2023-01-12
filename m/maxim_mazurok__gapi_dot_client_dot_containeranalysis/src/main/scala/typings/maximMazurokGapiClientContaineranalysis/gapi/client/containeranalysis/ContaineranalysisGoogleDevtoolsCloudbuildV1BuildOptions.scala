@@ -75,7 +75,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptions {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptions]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1BuildOptions] (val x: Self) extends AnyVal {
     
     inline def setDiskSizeGb(value: String): Self = StObject.set(x, "diskSizeGb", value.asInstanceOf[js.Any])
     

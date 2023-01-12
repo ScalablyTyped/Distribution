@@ -19,7 +19,8 @@ object CancelPressed {
     __obj.asInstanceOf[CancelPressed]
   }
   
-  extension [Self <: CancelPressed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelPressed] (val x: Self) extends AnyVal {
     
     inline def setCancelPressed(value: Boolean): Self = StObject.set(x, "cancelPressed", value.asInstanceOf[js.Any])
     

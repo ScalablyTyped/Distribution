@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[FloatingLabel]
     }
     
-    extension [Self <: FloatingLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FloatingLabel] (val x: Self) extends AnyVal {
       
       inline def setRefresh(value: () => Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     }

@@ -33,7 +33,8 @@ object VisibleSecurityState {
     __obj.asInstanceOf[VisibleSecurityState]
   }
   
-  extension [Self <: VisibleSecurityState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleSecurityState] (val x: Self) extends AnyVal {
     
     inline def setCertificateSecurityState(value: CertificateSecurityState): Self = StObject.set(x, "certificateSecurityState", value.asInstanceOf[js.Any])
     

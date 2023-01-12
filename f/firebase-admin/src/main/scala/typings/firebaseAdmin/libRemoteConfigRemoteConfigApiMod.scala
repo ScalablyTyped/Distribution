@@ -31,7 +31,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[ExplicitParameterValue]
     }
     
-    extension [Self <: ExplicitParameterValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitParameterValue] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }
@@ -53,7 +54,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[InAppDefaultValue]
     }
     
-    extension [Self <: InAppDefaultValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InAppDefaultValue] (val x: Self) extends AnyVal {
       
       inline def setUseInAppDefault(value: Boolean): Self = StObject.set(x, "useInAppDefault", value.asInstanceOf[js.Any])
     }
@@ -96,7 +98,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[ListVersionsOptions]
     }
     
-    extension [Self <: ListVersionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListVersionsOptions] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: js.Date | String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[ListVersionsResult]
     }
     
-    extension [Self <: ListVersionsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListVersionsResult] (val x: Self) extends AnyVal {
       
       inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
       
@@ -199,7 +203,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[RemoteConfigCondition]
     }
     
-    extension [Self <: RemoteConfigCondition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigCondition] (val x: Self) extends AnyVal {
       
       inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
       
@@ -244,7 +249,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[RemoteConfigParameter]
     }
     
-    extension [Self <: RemoteConfigParameter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigParameter] (val x: Self) extends AnyVal {
       
       inline def setConditionalValues(value: StringDictionary[RemoteConfigParameterValue]): Self = StObject.set(x, "conditionalValues", value.asInstanceOf[js.Any])
       
@@ -287,7 +293,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[RemoteConfigParameterGroup]
     }
     
-    extension [Self <: RemoteConfigParameterGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigParameterGroup] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -357,7 +364,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[RemoteConfigTemplate]
     }
     
-    extension [Self <: RemoteConfigTemplate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigTemplate] (val x: Self) extends AnyVal {
       
       inline def setConditions(value: js.Array[RemoteConfigCondition]): Self = StObject.set(x, "conditions", value.asInstanceOf[js.Any])
       
@@ -399,7 +407,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[RemoteConfigUser]
     }
     
-    extension [Self <: RemoteConfigUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigUser] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -506,7 +515,8 @@ object libRemoteConfigRemoteConfigApiMod {
       __obj.asInstanceOf[Version]
     }
     
-    extension [Self <: Version](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Version] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       

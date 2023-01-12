@@ -33,7 +33,8 @@ object scrollspy {
       __obj.asInstanceOf[IScrollspy]
     }
     
-    extension [Self <: IScrollspy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollspy] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: Double => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object scrollspy {
       __obj.asInstanceOf[IScrollspyOptions]
     }
     
-    extension [Self <: IScrollspyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollspyOptions] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object scrollspy {
       __obj.asInstanceOf[IScrollspyProvider]
     }
     
-    extension [Self <: IScrollspyProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScrollspyProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IScrollspyOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

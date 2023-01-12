@@ -23,7 +23,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessCpuUsage]
     }
     
-    extension [Self <: ProcessCpuUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessCpuUsage] (val x: Self) extends AnyVal {
       
       inline def setGetReport(value: () => ProcessCpuUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
@@ -45,7 +46,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessCpuUsageReport]
     }
     
-    extension [Self <: ProcessCpuUsageReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessCpuUsageReport] (val x: Self) extends AnyVal {
       
       inline def setKernelTime(value: Double): Self = StObject.set(x, "kernelTime", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessDiagnosticInfo]
     }
     
-    extension [Self <: ProcessDiagnosticInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessDiagnosticInfo] (val x: Self) extends AnyVal {
       
       inline def setCpuUsage(value: ProcessCpuUsage): Self = StObject.set(x, "cpuUsage", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessDiskUsage]
     }
     
-    extension [Self <: ProcessDiskUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessDiskUsage] (val x: Self) extends AnyVal {
       
       inline def setGetReport(value: () => ProcessDiskUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
@@ -167,7 +171,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessDiskUsageReport]
     }
     
-    extension [Self <: ProcessDiskUsageReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessDiskUsageReport] (val x: Self) extends AnyVal {
       
       inline def setBytesReadCount(value: Double): Self = StObject.set(x, "bytesReadCount", value.asInstanceOf[js.Any])
       
@@ -199,7 +204,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessMemoryUsage]
     }
     
-    extension [Self <: ProcessMemoryUsage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessMemoryUsage] (val x: Self) extends AnyVal {
       
       inline def setGetReport(value: () => ProcessMemoryUsageReport): Self = StObject.set(x, "getReport", js.Any.fromFunction0(value))
     }
@@ -264,7 +270,8 @@ object Diagnostics {
       __obj.asInstanceOf[ProcessMemoryUsageReport]
     }
     
-    extension [Self <: ProcessMemoryUsageReport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessMemoryUsageReport] (val x: Self) extends AnyVal {
       
       inline def setNonPagedPoolSizeInBytes(value: Double): Self = StObject.set(x, "nonPagedPoolSizeInBytes", value.asInstanceOf[js.Any])
       

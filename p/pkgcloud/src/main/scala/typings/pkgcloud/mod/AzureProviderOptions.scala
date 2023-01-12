@@ -22,7 +22,8 @@ object AzureProviderOptions {
     __obj.asInstanceOf[AzureProviderOptions]
   }
   
-  extension [Self <: AzureProviderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureProviderOptions] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: String): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

@@ -99,7 +99,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: BodyInit): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object anon {
       __obj.asInstanceOf[RequiredHookskeyofHooks]
     }
     
-    extension [Self <: RequiredHookskeyofHooks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredHookskeyofHooks] (val x: Self) extends AnyVal {
       
       inline def setAfterResponse(value: js.Array[AfterResponseHook]): Self = StObject.set(x, "afterResponse", value.asInstanceOf[js.Any])
       
@@ -412,7 +414,8 @@ object anon {
       __obj.asInstanceOf[RequiredRetryOptions]
     }
     
-    extension [Self <: RequiredRetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredRetryOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "afterStatusCodes", value.asInstanceOf[js.Any])
       
@@ -472,7 +475,8 @@ object anon {
       __obj.asInstanceOf[RequiredRetryOptionskeyof]
     }
     
-    extension [Self <: RequiredRetryOptionskeyof](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredRetryOptionskeyof] (val x: Self) extends AnyVal {
       
       inline def setAfterStatusCodes(value: js.Array[Double]): Self = StObject.set(x, "afterStatusCodes", value.asInstanceOf[js.Any])
       

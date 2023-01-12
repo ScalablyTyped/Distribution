@@ -18,7 +18,8 @@ object BatchPutDocumentResponse {
     __obj.asInstanceOf[BatchPutDocumentResponse]
   }
   
-  extension [Self <: BatchPutDocumentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutDocumentResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedDocuments(value: BatchPutDocumentResponseFailedDocuments): Self = StObject.set(x, "FailedDocuments", value.asInstanceOf[js.Any])
     

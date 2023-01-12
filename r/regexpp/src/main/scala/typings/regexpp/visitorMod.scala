@@ -91,7 +91,8 @@ object visitorMod {
         __obj.asInstanceOf[Handlers]
       }
       
-      extension [Self <: Handlers](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Handlers] (val x: Self) extends AnyVal {
         
         inline def setOnAlternativeEnter(value: /* node */ Alternative => Unit): Self = StObject.set(x, "onAlternativeEnter", js.Any.fromFunction1(value))
         

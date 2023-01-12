@@ -27,7 +27,8 @@ object IClearOutputMsg {
     __obj.asInstanceOf[IClearOutputMsg]
   }
   
-  extension [Self <: IClearOutputMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClearOutputMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Wait): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: `true`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
     }
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       
@@ -70,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Color]
     }
     
-    extension [Self <: Color](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Color] (val x: Self) extends AnyVal {
       
       inline def setColor(value: PieceColor): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -104,7 +107,8 @@ object anon {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -143,7 +147,8 @@ object anon {
       __obj.asInstanceOf[Legal]
     }
     
-    extension [Self <: Legal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Legal] (val x: Self) extends AnyVal {
       
       inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
       
@@ -176,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Maxwidth]
     }
     
-    extension [Self <: Maxwidth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Maxwidth] (val x: Self) extends AnyVal {
       
       inline def setMax_width(value: Double): Self = StObject.set(x, "max_width", value.asInstanceOf[js.Any])
       
@@ -218,7 +224,8 @@ object anon {
       __obj.asInstanceOf[Newlinechar]
     }
     
-    extension [Self <: Newlinechar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Newlinechar] (val x: Self) extends AnyVal {
       
       inline def setNewline_char(value: String): Self = StObject.set(x, "newline_char", value.asInstanceOf[js.Any])
       
@@ -259,7 +266,8 @@ object anon {
       __obj.asInstanceOf[Piece]
     }
     
-    extension [Self <: Piece](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Piece] (val x: Self) extends AnyVal {
       
       inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
       
@@ -294,7 +302,8 @@ object anon {
       __obj.asInstanceOf[Sloppy]
     }
     
-    extension [Self <: Sloppy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sloppy] (val x: Self) extends AnyVal {
       
       inline def setSloppy(value: Boolean): Self = StObject.set(x, "sloppy", value.asInstanceOf[js.Any])
       
@@ -331,7 +340,8 @@ object anon {
       __obj.asInstanceOf[Square]
     }
     
-    extension [Self <: Square](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Square] (val x: Self) extends AnyVal {
       
       inline def setLegal(value: Boolean): Self = StObject.set(x, "legal", value.asInstanceOf[js.Any])
       
@@ -366,7 +376,8 @@ object anon {
       __obj.asInstanceOf[Verbose]
     }
     
-    extension [Self <: Verbose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Verbose] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: `false`): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       

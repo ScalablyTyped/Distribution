@@ -25,7 +25,8 @@ object LockOptions {
     __obj.asInstanceOf[LockOptions]
   }
   
-  extension [Self <: LockOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockOptions] (val x: Self) extends AnyVal {
     
     inline def setIfAvailable(value: scala.Boolean): Self = StObject.set(x, "ifAvailable", value.asInstanceOf[js.Any])
     

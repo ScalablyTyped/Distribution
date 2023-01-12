@@ -34,7 +34,8 @@ object typesGetBucketVersioningOutputMod {
       __obj.asInstanceOf[GetBucketVersioningOutput]
     }
     
-    extension [Self <: GetBucketVersioningOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetBucketVersioningOutput] (val x: Self) extends AnyVal {
       
       inline def setMFADelete(value: Enabled | Disabled | String): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
       

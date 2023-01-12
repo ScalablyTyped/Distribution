@@ -72,7 +72,8 @@ object distRequestPopupRequestMod {
       __obj.asInstanceOf[PopupRequest]
     }
     
-    extension [Self <: PopupRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupRequest] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: AccountInfo): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object ISyncTreeArgs {
     __obj.asInstanceOf[ISyncTreeArgs]
   }
   
-  extension [Self <: ISyncTreeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyncTreeArgs] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: Boolean): Self = StObject.set(x, "activate", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object RequestHandleWithPromise {
     __obj.asInstanceOf[RequestHandleWithPromise[T]]
   }
   
-  extension [Self <: RequestHandleWithPromise[?], T](x: Self & RequestHandleWithPromise[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestHandleWithPromise[?], T] (val x: Self & RequestHandleWithPromise[T]) extends AnyVal {
     
     inline def setAsPromise(value: () => js.Promise[ClientResponse[T]]): Self = StObject.set(x, "asPromise", js.Any.fromFunction0(value))
   }

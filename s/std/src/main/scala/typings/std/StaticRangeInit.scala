@@ -25,7 +25,8 @@ object StaticRangeInit {
     __obj.asInstanceOf[StaticRangeInit]
   }
   
-  extension [Self <: StaticRangeInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticRangeInit] (val x: Self) extends AnyVal {
     
     inline def setEndContainer(value: Node): Self = StObject.set(x, "endContainer", value.asInstanceOf[js.Any])
     

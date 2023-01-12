@@ -28,7 +28,8 @@ object WorkerResourceConfig {
     __obj.asInstanceOf[WorkerResourceConfig]
   }
   
-  extension [Self <: WorkerResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setCpu(value: CpuSize): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object PinModes {
     __obj.asInstanceOf[PinModes]
   }
   
-  extension [Self <: PinModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinModes] (val x: Self) extends AnyVal {
     
     inline def setANALOG(value: PIN_MODE): Self = StObject.set(x, "ANALOG", value.asInstanceOf[js.Any])
     

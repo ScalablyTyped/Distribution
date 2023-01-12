@@ -22,7 +22,8 @@ object Arithmetic {
     __obj.asInstanceOf[Arithmetic]
   }
   
-  extension [Self <: Arithmetic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arithmetic] (val x: Self) extends AnyVal {
     
     inline def setArithmetic(value: ArithmeticExpression): Self = StObject.set(x, "arithmetic", value.asInstanceOf[js.Any])
     

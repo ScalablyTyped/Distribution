@@ -35,7 +35,8 @@ object ASPxClientTabControlTabClickEventArgs {
     __obj.asInstanceOf[ASPxClientTabControlTabClickEventArgs]
   }
   
-  extension [Self <: ASPxClientTabControlTabClickEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTabControlTabClickEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHtmlElement(value: Any): Self = StObject.set(x, "htmlElement", value.asInstanceOf[js.Any])
     

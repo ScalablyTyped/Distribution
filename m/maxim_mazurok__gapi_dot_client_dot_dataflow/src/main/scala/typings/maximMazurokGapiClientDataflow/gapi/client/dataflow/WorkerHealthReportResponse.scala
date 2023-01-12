@@ -19,7 +19,8 @@ object WorkerHealthReportResponse {
     __obj.asInstanceOf[WorkerHealthReportResponse]
   }
   
-  extension [Self <: WorkerHealthReportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkerHealthReportResponse] (val x: Self) extends AnyVal {
     
     inline def setReportInterval(value: String): Self = StObject.set(x, "reportInterval", value.asInstanceOf[js.Any])
     

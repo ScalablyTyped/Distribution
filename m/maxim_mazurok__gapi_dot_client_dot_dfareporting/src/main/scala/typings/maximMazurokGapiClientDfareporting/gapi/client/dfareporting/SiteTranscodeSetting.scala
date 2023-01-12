@@ -19,7 +19,8 @@ object SiteTranscodeSetting {
     __obj.asInstanceOf[SiteTranscodeSetting]
   }
   
-  extension [Self <: SiteTranscodeSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SiteTranscodeSetting] (val x: Self) extends AnyVal {
     
     inline def setEnabledVideoFormats(value: js.Array[Double]): Self = StObject.set(x, "enabledVideoFormats", value.asInstanceOf[js.Any])
     

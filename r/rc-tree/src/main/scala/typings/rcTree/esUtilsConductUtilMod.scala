@@ -52,7 +52,8 @@ object esUtilsConductUtilMod {
       __obj.asInstanceOf[ConductReturnType]
     }
     
-    extension [Self <: ConductReturnType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConductReturnType] (val x: Self) extends AnyVal {
       
       inline def setCheckedKeys(value: js.Array[Key]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       

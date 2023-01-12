@@ -275,7 +275,8 @@ object amBalloonMod {
       __obj.asInstanceOf[AmBalloon]
     }
     
-    extension [Self <: AmBalloon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmBalloon] (val x: Self) extends AnyVal {
       
       inline def setAdjustBorderColor(value: Boolean): Self = StObject.set(x, "adjustBorderColor", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object SfProductCard extends Shortcut {
       __obj.asInstanceOf[Computed]
     }
     
-    extension [Self <: Computed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Computed] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: (`Remove from wishlist`) | (`Add to wishlist`)): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object SfProductCard extends Shortcut {
       __obj.asInstanceOf[Constructor]
     }
     
-    extension [Self <: Constructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Constructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Computed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object SfProductCard extends Shortcut {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setIsAddingToCart(value: Boolean): Self = StObject.set(x, "isAddingToCart", value.asInstanceOf[js.Any])
     }
@@ -127,7 +130,8 @@ object SfProductCard extends Shortcut {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setOnAddToCart(value: Event => Unit): Self = StObject.set(x, "onAddToCart", js.Any.fromFunction1(value))
       
@@ -197,7 +201,8 @@ object SfProductCard extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setAddToCartDisabled(value: Boolean): Self = StObject.set(x, "addToCartDisabled", value.asInstanceOf[js.Any])
       

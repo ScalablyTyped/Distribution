@@ -48,7 +48,8 @@ object VolumeConfiguration {
     __obj.asInstanceOf[VolumeConfiguration]
   }
   
-  extension [Self <: VolumeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEncrypted(value: Boolean): Self = StObject.set(x, "Encrypted", value.asInstanceOf[js.Any])
     

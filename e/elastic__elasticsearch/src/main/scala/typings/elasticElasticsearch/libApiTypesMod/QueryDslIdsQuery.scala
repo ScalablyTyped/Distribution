@@ -17,7 +17,8 @@ object QueryDslIdsQuery {
     __obj.asInstanceOf[QueryDslIdsQuery]
   }
   
-  extension [Self <: QueryDslIdsQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslIdsQuery] (val x: Self) extends AnyVal {
     
     inline def setValues(value: Ids): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
     

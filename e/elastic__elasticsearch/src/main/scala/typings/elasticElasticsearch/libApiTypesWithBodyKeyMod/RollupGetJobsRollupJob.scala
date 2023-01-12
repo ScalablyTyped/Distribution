@@ -23,7 +23,8 @@ object RollupGetJobsRollupJob {
     __obj.asInstanceOf[RollupGetJobsRollupJob]
   }
   
-  extension [Self <: RollupGetJobsRollupJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetJobsRollupJob] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: RollupGetJobsRollupJobConfiguration): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

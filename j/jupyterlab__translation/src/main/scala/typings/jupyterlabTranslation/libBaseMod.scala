@@ -31,7 +31,8 @@ object libBaseMod {
       __obj.asInstanceOf[NullTranslator_]
     }
     
-    extension [Self <: NullTranslator_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NullTranslator_] (val x: Self) extends AnyVal {
       
       inline def setLocale(value: () => String): Self = StObject.set(x, "locale", js.Any.fromFunction0(value))
       

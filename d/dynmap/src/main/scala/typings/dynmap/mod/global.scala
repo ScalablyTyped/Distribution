@@ -176,7 +176,8 @@ object global {
       __obj.asInstanceOf[Array[T]]
     }
     
-    extension [Self <: Array[?], T](x: Self & Array[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Array[?], T] (val x: Self & Array[T]) extends AnyVal {
       
       inline def setIndexOf(value: T => Double): Self = StObject.set(x, "indexOf", js.Any.fromFunction1(value))
     }
@@ -601,7 +602,8 @@ object global {
       __obj.asInstanceOf[HDMapType]
     }
     
-    extension [Self <: HDMapType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDMapType] (val x: Self) extends AnyVal {
       
       inline def setAddEventListener(
         value: (/* type */ baselayerchange | overlayadd | overlayremove, /* fn */ LayersControlEventHandlerFn) => HDMapType
@@ -847,7 +849,8 @@ object global {
       __obj.asInstanceOf[HDProjection]
     }
     
-    extension [Self <: HDProjection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDProjection] (val x: Self) extends AnyVal {
       
       inline def setAddInitHook(value: Any): Self = StObject.set(x, "addInitHook", value.asInstanceOf[js.Any])
       

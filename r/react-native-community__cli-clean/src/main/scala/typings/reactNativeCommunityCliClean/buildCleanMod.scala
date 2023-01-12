@@ -71,7 +71,8 @@ object buildCleanMod {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setInclude(value: String): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
       

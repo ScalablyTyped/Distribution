@@ -17,7 +17,8 @@ object Imag {
     __obj.asInstanceOf[Imag]
   }
   
-  extension [Self <: Imag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Imag] (val x: Self) extends AnyVal {
     
     inline def setImag(value: js.typedarray.Float32Array): Self = StObject.set(x, "imag", value.asInstanceOf[js.Any])
     

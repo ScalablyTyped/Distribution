@@ -21,7 +21,8 @@ object OptimisticUpdateRelayPayload {
     __obj.asInstanceOf[OptimisticUpdateRelayPayload]
   }
   
-  extension [Self <: OptimisticUpdateRelayPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptimisticUpdateRelayPayload] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: OperationDescriptor): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

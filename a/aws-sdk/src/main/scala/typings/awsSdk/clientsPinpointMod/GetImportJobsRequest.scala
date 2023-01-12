@@ -28,7 +28,8 @@ object GetImportJobsRequest {
     __obj.asInstanceOf[GetImportJobsRequest]
   }
   
-  extension [Self <: GetImportJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetImportJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: string): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

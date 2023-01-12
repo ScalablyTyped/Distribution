@@ -23,7 +23,8 @@ object CapacityReservationSpecificationResponse {
     __obj.asInstanceOf[CapacityReservationSpecificationResponse]
   }
   
-  extension [Self <: CapacityReservationSpecificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapacityReservationSpecificationResponse] (val x: Self) extends AnyVal {
     
     inline def setCapacityReservationPreference(value: CapacityReservationPreference): Self = StObject.set(x, "CapacityReservationPreference", value.asInstanceOf[js.Any])
     

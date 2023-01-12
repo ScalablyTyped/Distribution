@@ -22,7 +22,8 @@ object PartialClassNameMapAccord {
     __obj.asInstanceOf[PartialClassNameMapAccord]
   }
   
-  extension [Self <: PartialClassNameMapAccord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapAccord] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

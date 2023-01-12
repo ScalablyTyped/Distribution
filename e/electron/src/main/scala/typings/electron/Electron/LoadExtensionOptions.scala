@@ -20,7 +20,8 @@ object LoadExtensionOptions {
     __obj.asInstanceOf[LoadExtensionOptions]
   }
   
-  extension [Self <: LoadExtensionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadExtensionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowFileAccess(value: Boolean): Self = StObject.set(x, "allowFileAccess", value.asInstanceOf[js.Any])
   }

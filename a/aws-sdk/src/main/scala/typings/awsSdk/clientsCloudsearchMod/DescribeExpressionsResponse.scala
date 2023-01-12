@@ -18,7 +18,8 @@ object DescribeExpressionsResponse {
     __obj.asInstanceOf[DescribeExpressionsResponse]
   }
   
-  extension [Self <: DescribeExpressionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExpressionsResponse] (val x: Self) extends AnyVal {
     
     inline def setExpressions(value: ExpressionStatusList): Self = StObject.set(x, "Expressions", value.asInstanceOf[js.Any])
     

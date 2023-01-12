@@ -15,7 +15,8 @@ object CreateableIndexBuilder {
     __obj.asInstanceOf[CreateableIndexBuilder]
   }
   
-  extension [Self <: CreateableIndexBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateableIndexBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithOptions(value: MappedDict[String] => CreateableIndexBuilder): Self = StObject.set(x, "withOptions", js.Any.fromFunction1(value))
   }

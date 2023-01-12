@@ -24,7 +24,8 @@ object FormatValueString {
     __obj.asInstanceOf[FormatValueString]
   }
   
-  extension [Self <: FormatValueString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormatValueString] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: EncodingType): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

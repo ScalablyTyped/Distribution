@@ -38,7 +38,8 @@ object AngularInterceptorOptionsSchema {
     __obj.asInstanceOf[AngularInterceptorOptionsSchema]
   }
   
-  extension [Self <: AngularInterceptorOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularInterceptorOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

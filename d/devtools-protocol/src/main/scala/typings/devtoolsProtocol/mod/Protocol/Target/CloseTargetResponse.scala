@@ -18,7 +18,8 @@ object CloseTargetResponse {
     __obj.asInstanceOf[CloseTargetResponse]
   }
   
-  extension [Self <: CloseTargetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseTargetResponse] (val x: Self) extends AnyVal {
     
     inline def setSuccess(value: Boolean): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
   }

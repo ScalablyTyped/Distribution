@@ -15,7 +15,8 @@ object PatternExisting {
     __obj.asInstanceOf[PatternExisting]
   }
   
-  extension [Self <: PatternExisting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatternExisting] (val x: Self) extends AnyVal {
     
     inline def setSource(value: js.Array[String]): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

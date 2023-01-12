@@ -23,7 +23,8 @@ object DisassociateTrialComponentRequest {
     __obj.asInstanceOf[DisassociateTrialComponentRequest]
   }
   
-  extension [Self <: DisassociateTrialComponentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateTrialComponentRequest] (val x: Self) extends AnyVal {
     
     inline def setTrialComponentName(value: ExperimentEntityName): Self = StObject.set(x, "TrialComponentName", value.asInstanceOf[js.Any])
     

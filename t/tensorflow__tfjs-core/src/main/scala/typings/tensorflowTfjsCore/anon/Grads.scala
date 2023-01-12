@@ -19,7 +19,8 @@ object Grads {
     __obj.asInstanceOf[Grads[O]]
   }
   
-  extension [Self <: Grads[?], O /* <: Tensor[Rank] */](x: Self & Grads[O]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grads[?], O /* <: Tensor[Rank] */] (val x: Self & Grads[O]) extends AnyVal {
     
     inline def setGrads(value: js.Array[Tensor[Rank]]): Self = StObject.set(x, "grads", value.asInstanceOf[js.Any])
     

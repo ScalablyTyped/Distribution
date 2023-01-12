@@ -15,7 +15,8 @@ object TreeParamNames {
     __obj.asInstanceOf[TreeParamNames]
   }
   
-  extension [Self <: TreeParamNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeParamNames] (val x: Self) extends AnyVal {
     
     inline def setParentId(value: String): Self = StObject.set(x, "parentId", value.asInstanceOf[js.Any])
     

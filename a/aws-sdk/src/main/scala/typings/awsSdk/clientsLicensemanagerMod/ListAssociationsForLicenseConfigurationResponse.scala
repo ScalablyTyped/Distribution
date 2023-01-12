@@ -23,7 +23,8 @@ object ListAssociationsForLicenseConfigurationResponse {
     __obj.asInstanceOf[ListAssociationsForLicenseConfigurationResponse]
   }
   
-  extension [Self <: ListAssociationsForLicenseConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAssociationsForLicenseConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setLicenseConfigurationAssociations(value: LicenseConfigurationAssociations): Self = StObject.set(x, "LicenseConfigurationAssociations", value.asInstanceOf[js.Any])
     

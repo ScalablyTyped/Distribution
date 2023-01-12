@@ -151,7 +151,8 @@ object sqsconfigurationMod {
       __obj.asInstanceOf[SQSConfiguration]
     }
     
-    extension [Self <: SQSConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -300,7 +301,8 @@ object sqsconfigurationMod {
       __obj.asInstanceOf[SQSResolvableConfiguration]
     }
     
-    extension [Self <: SQSResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -432,7 +434,8 @@ object sqsconfigurationMod {
       __obj.asInstanceOf[SQSResolvedConfiguration]
     }
     
-    extension [Self <: SQSResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

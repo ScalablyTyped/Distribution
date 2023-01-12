@@ -52,7 +52,8 @@ object GoogleCloudMlV1HyperparameterOutput {
     __obj.asInstanceOf[GoogleCloudMlV1HyperparameterOutput]
   }
   
-  extension [Self <: GoogleCloudMlV1HyperparameterOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudMlV1HyperparameterOutput] (val x: Self) extends AnyVal {
     
     inline def setAllMetrics(value: js.Array[GoogleCloudMlV1HyperparameterOutputHyperparameterMetric]): Self = StObject.set(x, "allMetrics", value.asInstanceOf[js.Any])
     

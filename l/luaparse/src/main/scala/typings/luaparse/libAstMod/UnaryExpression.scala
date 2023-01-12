@@ -25,7 +25,8 @@ object UnaryExpression {
     __obj.asInstanceOf[UnaryExpression]
   }
   
-  extension [Self <: UnaryExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnaryExpression] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: Expression): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

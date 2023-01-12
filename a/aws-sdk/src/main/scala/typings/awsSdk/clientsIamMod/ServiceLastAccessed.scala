@@ -48,7 +48,8 @@ object ServiceLastAccessed {
     __obj.asInstanceOf[ServiceLastAccessed]
   }
   
-  extension [Self <: ServiceLastAccessed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceLastAccessed] (val x: Self) extends AnyVal {
     
     inline def setLastAuthenticated(value: js.Date): Self = StObject.set(x, "LastAuthenticated", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MoveOptions {
     __obj.asInstanceOf[MoveOptions]
   }
   
-  extension [Self <: MoveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveOptions] (val x: Self) extends AnyVal {
     
     inline def setAction(value: NavigateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

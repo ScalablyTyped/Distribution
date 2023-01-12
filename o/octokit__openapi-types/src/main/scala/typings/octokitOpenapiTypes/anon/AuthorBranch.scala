@@ -28,7 +28,8 @@ object AuthorBranch {
     __obj.asInstanceOf[AuthorBranch]
   }
   
-  extension [Self <: AuthorBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorBranch] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: EmailName): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

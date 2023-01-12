@@ -26,7 +26,8 @@ object EtaResponse {
     __obj.asInstanceOf[EtaResponse]
   }
   
-  extension [Self <: EtaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EtaResponse] (val x: Self) extends AnyVal {
     
     inline def setEtas(value: js.Array[EtaResult]): Self = StObject.set(x, "etas", value.asInstanceOf[js.Any])
     

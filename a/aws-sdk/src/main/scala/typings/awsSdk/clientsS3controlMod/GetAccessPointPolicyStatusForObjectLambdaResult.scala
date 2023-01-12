@@ -15,7 +15,8 @@ object GetAccessPointPolicyStatusForObjectLambdaResult {
     __obj.asInstanceOf[GetAccessPointPolicyStatusForObjectLambdaResult]
   }
   
-  extension [Self <: GetAccessPointPolicyStatusForObjectLambdaResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccessPointPolicyStatusForObjectLambdaResult] (val x: Self) extends AnyVal {
     
     inline def setPolicyStatus(value: PolicyStatus): Self = StObject.set(x, "PolicyStatus", value.asInstanceOf[js.Any])
     

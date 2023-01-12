@@ -679,7 +679,8 @@ object PropsHTMLMapElementconten {
     __obj.asInstanceOf[PropsHTMLMapElementconten]
   }
   
-  extension [Self <: PropsHTMLMapElementconten](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropsHTMLMapElementconten] (val x: Self) extends AnyVal {
     
     inline def setATTRIBUTE_NODE(value: Double): Self = StObject.set(x, "ATTRIBUTE_NODE", value.asInstanceOf[js.Any])
     

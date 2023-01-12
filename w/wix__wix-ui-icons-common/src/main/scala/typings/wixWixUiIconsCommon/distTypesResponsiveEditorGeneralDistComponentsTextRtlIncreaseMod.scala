@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsTextRtlIncreaseMod extends 
       __obj.asInstanceOf[TextRtlIncreaseProps]
     }
     
-    extension [Self <: TextRtlIncreaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextRtlIncreaseProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

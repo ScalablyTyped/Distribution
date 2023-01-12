@@ -72,7 +72,8 @@ object customerMod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -175,7 +176,8 @@ object customerMod {
       __obj.asInstanceOf[BankAccount]
     }
     
-    extension [Self <: BankAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankAccount] (val x: Self) extends AnyVal {
       
       inline def setAccount_holder_name(value: String): Self = StObject.set(x, "account_holder_name", value.asInstanceOf[js.Any])
       
@@ -384,7 +386,8 @@ object customerMod {
       __obj.asInstanceOf[Card]
     }
     
-    extension [Self <: Card](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Card] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       
@@ -517,7 +520,8 @@ object customerMod {
       __obj.asInstanceOf[Customer]
     }
     
-    extension [Self <: Customer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Customer] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: Address): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       

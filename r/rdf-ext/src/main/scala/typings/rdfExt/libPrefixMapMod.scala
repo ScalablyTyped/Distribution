@@ -73,7 +73,8 @@ object libPrefixMapMod {
       __obj.asInstanceOf[PrefixMap]
     }
     
-    extension [Self <: PrefixMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrefixMap] (val x: Self) extends AnyVal {
       
       inline def setAddAll(value: PrefixesRecord => PrefixMap): Self = StObject.set(x, "addAll", js.Any.fromFunction1(value))
       

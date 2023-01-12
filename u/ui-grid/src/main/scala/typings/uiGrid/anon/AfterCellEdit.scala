@@ -42,7 +42,8 @@ object AfterCellEdit {
     __obj.asInstanceOf[AfterCellEdit[TEntity]]
   }
   
-  extension [Self <: AfterCellEdit[?], TEntity](x: Self & AfterCellEdit[TEntity]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AfterCellEdit[?], TEntity] (val x: Self & AfterCellEdit[TEntity]) extends AnyVal {
     
     inline def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "afterCellEdit", js.Any.fromFunction2(value))
     

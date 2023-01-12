@@ -19,7 +19,8 @@ object HexBlockParams {
     __obj.asInstanceOf[HexBlockParams]
   }
   
-  extension [Self <: HexBlockParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexBlockParams] (val x: Self) extends AnyVal {
     
     inline def setIsHexOnly(value: scala.Boolean): Self = StObject.set(x, "isHexOnly", value.asInstanceOf[js.Any])
     

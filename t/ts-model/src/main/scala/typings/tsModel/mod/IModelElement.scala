@@ -15,7 +15,8 @@ object IModelElement {
     __obj.asInstanceOf[IModelElement]
   }
   
-  extension [Self <: IModelElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModelElement] (val x: Self) extends AnyVal {
     
     inline def setModelClass(value: () => String): Self = StObject.set(x, "modelClass", js.Any.fromFunction0(value))
   }

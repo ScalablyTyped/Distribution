@@ -23,7 +23,8 @@ object SqlParameter {
     __obj.asInstanceOf[SqlParameter]
   }
   
-  extension [Self <: SqlParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SqlParameter] (val x: Self) extends AnyVal {
     
     inline def setName(value: ParameterName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

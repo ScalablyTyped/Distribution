@@ -740,7 +740,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Object): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       
@@ -775,7 +776,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       __obj.asInstanceOf[errorParameters]
     }
     
-    extension [Self <: errorParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: errorParameters] (val x: Self) extends AnyVal {
       
       inline def setResult(value: js.Error): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }
@@ -796,7 +798,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       __obj.asInstanceOf[failedParameters]
     }
     
-    extension [Self <: failedParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: failedParameters] (val x: Self) extends AnyVal {
       
       inline def setResult(value: js.Array[js.Error]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -819,7 +822,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       __obj.asInstanceOf[loadedParameters]
     }
     
-    extension [Self <: loadedParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: loadedParameters] (val x: Self) extends AnyVal {
       
       inline def setResult(value: (js.Array[js.Error | Source]) | Any): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -841,7 +845,8 @@ object sapUiModelOdataV2OdataannotationsMod {
       __obj.asInstanceOf[successParameters]
     }
     
-    extension [Self <: successParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: successParameters] (val x: Self) extends AnyVal {
       
       inline def setResult(value: Source): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     }

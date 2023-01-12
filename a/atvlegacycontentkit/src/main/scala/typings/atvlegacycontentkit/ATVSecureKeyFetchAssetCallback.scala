@@ -30,7 +30,8 @@ object ATVSecureKeyFetchAssetCallback {
     __obj.asInstanceOf[ATVSecureKeyFetchAssetCallback]
   }
   
-  extension [Self <: ATVSecureKeyFetchAssetCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVSecureKeyFetchAssetCallback] (val x: Self) extends AnyVal {
     
     inline def setFailure(value: String => Unit): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

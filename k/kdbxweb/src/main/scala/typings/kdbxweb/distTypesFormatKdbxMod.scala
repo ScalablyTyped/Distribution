@@ -253,7 +253,8 @@ object distTypesFormatKdbxMod {
       __obj.asInstanceOf[KdbxEditState]
     }
     
-    extension [Self <: KdbxEditState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KdbxEditState] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: StringDictionary[KdbxEntryEditState]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -290,7 +291,8 @@ object distTypesFormatKdbxMod {
       __obj.asInstanceOf[MergeObjectMap]
     }
     
-    extension [Self <: MergeObjectMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeObjectMap] (val x: Self) extends AnyVal {
       
       inline def setDeleted(value: Map[String, js.Date]): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       

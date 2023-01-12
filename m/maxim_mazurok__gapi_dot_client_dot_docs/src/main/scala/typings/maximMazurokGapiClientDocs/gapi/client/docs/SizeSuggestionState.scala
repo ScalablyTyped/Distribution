@@ -19,7 +19,8 @@ object SizeSuggestionState {
     __obj.asInstanceOf[SizeSuggestionState]
   }
   
-  extension [Self <: SizeSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setHeightSuggested(value: Boolean): Self = StObject.set(x, "heightSuggested", value.asInstanceOf[js.Any])
     

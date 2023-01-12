@@ -20,7 +20,8 @@ object NxFieldSelectionInfo {
     __obj.asInstanceOf[NxFieldSelectionInfo]
   }
   
-  extension [Self <: NxFieldSelectionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NxFieldSelectionInfo] (val x: Self) extends AnyVal {
     
     inline def setQFieldSelectionmode(value: NORMAL | AND | NOT): Self = StObject.set(x, "qFieldSelectionmode", value.asInstanceOf[js.Any])
     

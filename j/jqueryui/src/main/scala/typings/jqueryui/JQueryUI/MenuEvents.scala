@@ -22,7 +22,8 @@ object MenuEvents {
     __obj.asInstanceOf[MenuEvents]
   }
   
-  extension [Self <: MenuEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuEvents] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: (/* event */ JQueryEventObject, /* ui */ MenuUIParams) => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction2(value))
     

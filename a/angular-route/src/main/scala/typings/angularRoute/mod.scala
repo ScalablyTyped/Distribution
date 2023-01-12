@@ -46,7 +46,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[ICurrentRoute]
         }
         
-        extension [Self <: ICurrentRoute](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICurrentRoute] (val x: Self) extends AnyVal {
           
           inline def setLocals(value: Dictindex): Self = StObject.set(x, "locals", value.asInstanceOf[js.Any])
           
@@ -220,7 +221,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IRoute]
         }
         
-        extension [Self <: IRoute](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IRoute] (val x: Self) extends AnyVal {
           
           inline def setCaseInsensitiveMatch(value: Boolean): Self = StObject.set(x, "caseInsensitiveMatch", value.asInstanceOf[js.Any])
           
@@ -383,7 +385,8 @@ object mod extends Shortcut {
           __obj.asInstanceOf[IRouteService]
         }
         
-        extension [Self <: IRouteService](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IRouteService] (val x: Self) extends AnyVal {
           
           inline def setCurrent(value: ICurrentRoute): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
           

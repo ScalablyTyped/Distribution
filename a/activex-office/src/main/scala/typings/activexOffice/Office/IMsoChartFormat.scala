@@ -60,7 +60,8 @@ object IMsoChartFormat {
     __obj.asInstanceOf[IMsoChartFormat]
   }
   
-  extension [Self <: IMsoChartFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMsoChartFormat] (val x: Self) extends AnyVal {
     
     inline def setAdjustments(value: Adjustments): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
     

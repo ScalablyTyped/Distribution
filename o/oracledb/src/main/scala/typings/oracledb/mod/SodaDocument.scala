@@ -78,7 +78,8 @@ object SodaDocument {
     __obj.asInstanceOf[SodaDocument]
   }
   
-  extension [Self <: SodaDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaDocument] (val x: Self) extends AnyVal {
     
     inline def setCreatedOn(value: String): Self = StObject.set(x, "createdOn", value.asInstanceOf[js.Any])
     

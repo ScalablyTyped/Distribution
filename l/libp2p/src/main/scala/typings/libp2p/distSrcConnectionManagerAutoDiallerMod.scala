@@ -67,7 +67,8 @@ object distSrcConnectionManagerAutoDiallerMod {
       __obj.asInstanceOf[AutoDiallerComponents]
     }
     
-    extension [Self <: AutoDiallerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDiallerComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object distSrcConnectionManagerAutoDiallerMod {
       __obj.asInstanceOf[AutoDiallerInit]
     }
     
-    extension [Self <: AutoDiallerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoDiallerInit] (val x: Self) extends AnyVal {
       
       inline def setAutoDialInterval(value: Double): Self = StObject.set(x, "autoDialInterval", value.asInstanceOf[js.Any])
       

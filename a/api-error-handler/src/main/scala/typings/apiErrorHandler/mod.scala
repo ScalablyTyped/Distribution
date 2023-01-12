@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[Response]
     }
     
-    extension [Self <: Response](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Any): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

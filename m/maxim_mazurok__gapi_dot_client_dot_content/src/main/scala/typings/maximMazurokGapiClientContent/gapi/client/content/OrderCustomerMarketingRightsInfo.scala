@@ -29,7 +29,8 @@ object OrderCustomerMarketingRightsInfo {
     __obj.asInstanceOf[OrderCustomerMarketingRightsInfo]
   }
   
-  extension [Self <: OrderCustomerMarketingRightsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderCustomerMarketingRightsInfo] (val x: Self) extends AnyVal {
     
     inline def setExplicitMarketingPreference(value: String): Self = StObject.set(x, "explicitMarketingPreference", value.asInstanceOf[js.Any])
     

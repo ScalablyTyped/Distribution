@@ -107,7 +107,8 @@ object Closedat {
     __obj.asInstanceOf[Closedat]
   }
   
-  extension [Self <: Closedat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Closedat] (val x: Self) extends AnyVal {
     
     inline def setClosed_at(value: String): Self = StObject.set(x, "closed_at", value.asInstanceOf[js.Any])
     

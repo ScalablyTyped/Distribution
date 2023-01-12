@@ -33,7 +33,8 @@ object AbstractSecuritySchemeScalarsAnnotations {
     __obj.asInstanceOf[AbstractSecuritySchemeScalarsAnnotations]
   }
   
-  extension [Self <: AbstractSecuritySchemeScalarsAnnotations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractSecuritySchemeScalarsAnnotations] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: () => js.Array[AnnotationRef]): Self = StObject.set(x, "description", js.Any.fromFunction0(value))
     

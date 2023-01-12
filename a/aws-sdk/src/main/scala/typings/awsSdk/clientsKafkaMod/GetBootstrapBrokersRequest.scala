@@ -20,7 +20,8 @@ object GetBootstrapBrokersRequest {
     __obj.asInstanceOf[GetBootstrapBrokersRequest]
   }
   
-  extension [Self <: GetBootstrapBrokersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBootstrapBrokersRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterArn(value: string): Self = StObject.set(x, "ClusterArn", value.asInstanceOf[js.Any])
   }

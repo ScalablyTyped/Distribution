@@ -57,7 +57,8 @@ object examplesJsmLoadersBvhloaderMod {
       __obj.asInstanceOf[BVH]
     }
     
-    extension [Self <: BVH](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BVH] (val x: Self) extends AnyVal {
       
       inline def setClip(value: AnimationClip): Self = StObject.set(x, "clip", value.asInstanceOf[js.Any])
       

@@ -110,7 +110,8 @@ object ArbiterDef {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object ArbiterDef {
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    extension [Self <: SubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

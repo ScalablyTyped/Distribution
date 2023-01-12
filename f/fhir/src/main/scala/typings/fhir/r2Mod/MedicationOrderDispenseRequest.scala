@@ -45,7 +45,8 @@ object MedicationOrderDispenseRequest {
     __obj.asInstanceOf[MedicationOrderDispenseRequest]
   }
   
-  extension [Self <: MedicationOrderDispenseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicationOrderDispenseRequest] (val x: Self) extends AnyVal {
     
     inline def setExpectedSupplyDuration(value: Quantity): Self = StObject.set(x, "expectedSupplyDuration", value.asInstanceOf[js.Any])
     

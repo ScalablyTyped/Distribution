@@ -29,7 +29,8 @@ object GetRangeResult {
     __obj.asInstanceOf[GetRangeResult]
   }
   
-  extension [Self <: GetRangeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRangeResult] (val x: Self) extends AnyVal {
     
     inline def setCompressType(value: Double): Self = StObject.set(x, "compressType", value.asInstanceOf[js.Any])
     

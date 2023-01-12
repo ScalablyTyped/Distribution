@@ -29,7 +29,8 @@ object libComponentsDisclosureMod {
       __obj.asInstanceOf[UseDisclosureReturn]
     }
     
-    extension [Self <: UseDisclosureReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseDisclosureReturn] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: Ariacontrols): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

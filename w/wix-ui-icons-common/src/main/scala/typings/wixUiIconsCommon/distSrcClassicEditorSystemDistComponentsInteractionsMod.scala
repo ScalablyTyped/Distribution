@@ -27,7 +27,8 @@ object distSrcClassicEditorSystemDistComponentsInteractionsMod extends Shortcut 
       __obj.asInstanceOf[InteractionsProps]
     }
     
-    extension [Self <: InteractionsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InteractionsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

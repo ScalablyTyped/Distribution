@@ -18,7 +18,8 @@ object VmEndpointNatMappings {
     __obj.asInstanceOf[VmEndpointNatMappings]
   }
   
-  extension [Self <: VmEndpointNatMappings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmEndpointNatMappings] (val x: Self) extends AnyVal {
     
     inline def setInstanceName(value: String): Self = StObject.set(x, "instanceName", value.asInstanceOf[js.Any])
     

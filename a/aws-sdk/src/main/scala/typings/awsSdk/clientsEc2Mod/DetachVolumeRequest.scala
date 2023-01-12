@@ -38,7 +38,8 @@ object DetachVolumeRequest {
     __obj.asInstanceOf[DetachVolumeRequest]
   }
   
-  extension [Self <: DetachVolumeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachVolumeRequest] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: String): Self = StObject.set(x, "Device", value.asInstanceOf[js.Any])
     

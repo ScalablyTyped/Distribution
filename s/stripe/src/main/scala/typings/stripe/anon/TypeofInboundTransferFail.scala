@@ -15,7 +15,8 @@ object TypeofInboundTransferFail {
     __obj.asInstanceOf[TypeofInboundTransferFail]
   }
   
-  extension [Self <: TypeofInboundTransferFail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofInboundTransferFail] (val x: Self) extends AnyVal {
     
     inline def setFailureDetails(value: Any): Self = StObject.set(x, "FailureDetails", value.asInstanceOf[js.Any])
   }

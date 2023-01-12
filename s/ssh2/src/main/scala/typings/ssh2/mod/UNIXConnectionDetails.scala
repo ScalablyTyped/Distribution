@@ -15,7 +15,8 @@ object UNIXConnectionDetails {
     __obj.asInstanceOf[UNIXConnectionDetails]
   }
   
-  extension [Self <: UNIXConnectionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UNIXConnectionDetails] (val x: Self) extends AnyVal {
     
     inline def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
   }

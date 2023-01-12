@@ -22,7 +22,8 @@ object PlaidLinkOnExitMetadata {
     __obj.asInstanceOf[PlaidLinkOnExitMetadata]
   }
   
-  extension [Self <: PlaidLinkOnExitMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkOnExitMetadata] (val x: Self) extends AnyVal {
     
     inline def setInstitution(value: PlaidInstitution): Self = StObject.set(x, "institution", value.asInstanceOf[js.Any])
     

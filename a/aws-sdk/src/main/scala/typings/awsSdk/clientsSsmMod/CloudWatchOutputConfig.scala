@@ -23,7 +23,8 @@ object CloudWatchOutputConfig {
     __obj.asInstanceOf[CloudWatchOutputConfig]
   }
   
-  extension [Self <: CloudWatchOutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudWatchOutputConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogGroupName(value: CloudWatchLogGroupName): Self = StObject.set(x, "CloudWatchLogGroupName", value.asInstanceOf[js.Any])
     

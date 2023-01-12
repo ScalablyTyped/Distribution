@@ -50,7 +50,8 @@ object ASPxClientHtmlEditorInsertImageCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorInsertImageCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorInsertImageCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorInsertImageCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

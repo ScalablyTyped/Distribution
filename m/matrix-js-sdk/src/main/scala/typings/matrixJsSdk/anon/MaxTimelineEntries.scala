@@ -18,7 +18,8 @@ object MaxTimelineEntries {
     __obj.asInstanceOf[MaxTimelineEntries]
   }
   
-  extension [Self <: MaxTimelineEntries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxTimelineEntries] (val x: Self) extends AnyVal {
     
     inline def setMaxTimelineEntries(value: Double): Self = StObject.set(x, "maxTimelineEntries", value.asInstanceOf[js.Any])
     

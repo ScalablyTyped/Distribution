@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[ArrayField]
     }
     
-    extension [Self <: ArrayField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayField] (val x: Self) extends AnyVal {
       
       inline def setArrayField(value: typings.ceddlCeddlPolyfill.mod.ArrayField): Self = StObject.set(x, "ArrayField", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[FieldType]
     }
     
-    extension [Self <: FieldType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldType] (val x: Self) extends AnyVal {
       
       inline def setFieldType(value: StringField | BooleanField | NumberField): Self = StObject.set(x, "fieldType", value.asInstanceOf[js.Any])
       

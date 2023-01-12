@@ -43,7 +43,8 @@ object DeviceMetricCalibration {
     __obj.asInstanceOf[DeviceMetricCalibration]
   }
   
-  extension [Self <: DeviceMetricCalibration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceMetricCalibration] (val x: Self) extends AnyVal {
     
     inline def setState(value: `not-calibrated` | `calibration-required` | calibrated | unspecified): Self = StObject.set(x, "state", value.asInstanceOf[js.Any])
     

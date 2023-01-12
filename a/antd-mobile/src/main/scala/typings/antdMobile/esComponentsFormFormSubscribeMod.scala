@@ -39,7 +39,8 @@ object esComponentsFormFormSubscribeMod {
       __obj.asInstanceOf[FormSubscribeProps]
     }
     
-    extension [Self <: FormSubscribeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSubscribeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (/* changedValues */ Record[String, Any], /* form */ FormInstance[Any]) => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       

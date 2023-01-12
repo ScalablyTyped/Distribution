@@ -19,7 +19,8 @@ object AccessScopes {
     __obj.asInstanceOf[AccessScopes]
   }
   
-  extension [Self <: AccessScopes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessScopes] (val x: Self) extends AnyVal {
     
     inline def setForbidden(value: js.Array[String]): Self = StObject.set(x, "forbidden", value.asInstanceOf[js.Any])
     

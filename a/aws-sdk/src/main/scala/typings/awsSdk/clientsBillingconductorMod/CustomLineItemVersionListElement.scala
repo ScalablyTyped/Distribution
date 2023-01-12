@@ -65,7 +65,8 @@ object CustomLineItemVersionListElement {
     __obj.asInstanceOf[CustomLineItemVersionListElement]
   }
   
-  extension [Self <: CustomLineItemVersionListElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLineItemVersionListElement] (val x: Self) extends AnyVal {
     
     inline def setAssociationSize(value: NumberOfAssociations): Self = StObject.set(x, "AssociationSize", value.asInstanceOf[js.Any])
     

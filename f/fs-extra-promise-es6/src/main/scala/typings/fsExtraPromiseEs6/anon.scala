@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[AutoClose]
     }
     
-    extension [Self <: AutoClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoClose] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Curr]
     }
     
-    extension [Self <: Curr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Curr] (val x: Self) extends AnyVal {
       
       inline def setCurr(value: Stats): Self = StObject.set(x, "curr", value.asInstanceOf[js.Any])
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[Interval]
     }
     
-    extension [Self <: Interval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object anon {
       __obj.asInstanceOf[Persistent]
     }
     
-    extension [Self <: Persistent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Persistent] (val x: Self) extends AnyVal {
       
       inline def setPersistent(value: Boolean): Self = StObject.set(x, "persistent", value.asInstanceOf[js.Any])
       

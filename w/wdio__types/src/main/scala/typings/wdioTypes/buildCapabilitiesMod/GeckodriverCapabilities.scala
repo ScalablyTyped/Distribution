@@ -29,7 +29,8 @@ object GeckodriverCapabilities {
     __obj.asInstanceOf[GeckodriverCapabilities]
   }
   
-  extension [Self <: GeckodriverCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeckodriverCapabilities] (val x: Self) extends AnyVal {
     
     inline def setAddCustomRequestHeaders(value: Boolean): Self = StObject.set(x, "addCustomRequestHeaders", value.asInstanceOf[js.Any])
     

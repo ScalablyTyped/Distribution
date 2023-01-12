@@ -18,7 +18,8 @@ object EventsRequest {
     __obj.asInstanceOf[EventsRequest]
   }
   
-  extension [Self <: EventsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsRequest] (val x: Self) extends AnyVal {
     
     inline def setBatchItem(value: MapOfEventsBatch): Self = StObject.set(x, "BatchItem", value.asInstanceOf[js.Any])
   }

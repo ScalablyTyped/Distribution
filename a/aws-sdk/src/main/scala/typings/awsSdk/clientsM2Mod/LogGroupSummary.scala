@@ -23,7 +23,8 @@ object LogGroupSummary {
     __obj.asInstanceOf[LogGroupSummary]
   }
   
-  extension [Self <: LogGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LogGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setLogGroupName(value: LogGroupIdentifier): Self = StObject.set(x, "logGroupName", value.asInstanceOf[js.Any])
     

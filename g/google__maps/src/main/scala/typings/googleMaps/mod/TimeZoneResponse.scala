@@ -51,7 +51,8 @@ object TimeZoneResponse {
     __obj.asInstanceOf[TimeZoneResponse]
   }
   
-  extension [Self <: TimeZoneResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZoneResponse] (val x: Self) extends AnyVal {
     
     inline def setDstOffset(value: Double): Self = StObject.set(x, "dstOffset", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object MediaBookmark {
     __obj.asInstanceOf[MediaBookmark]
   }
   
-  extension [Self <: MediaBookmark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBookmark] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
     

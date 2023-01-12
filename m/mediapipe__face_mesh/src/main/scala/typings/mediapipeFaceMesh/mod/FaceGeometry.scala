@@ -17,7 +17,8 @@ object FaceGeometry {
     __obj.asInstanceOf[FaceGeometry]
   }
   
-  extension [Self <: FaceGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaceGeometry] (val x: Self) extends AnyVal {
     
     inline def setGetMesh(value: () => Mesh): Self = StObject.set(x, "getMesh", js.Any.fromFunction0(value))
     

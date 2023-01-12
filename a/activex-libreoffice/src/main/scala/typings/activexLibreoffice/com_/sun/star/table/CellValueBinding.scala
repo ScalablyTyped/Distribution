@@ -65,7 +65,8 @@ object CellValueBinding {
     __obj.asInstanceOf[CellValueBinding]
   }
   
-  extension [Self <: CellValueBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellValueBinding] (val x: Self) extends AnyVal {
     
     inline def setBoundCell(value: CellAddress): Self = StObject.set(x, "BoundCell", value.asInstanceOf[js.Any])
   }

@@ -15,7 +15,8 @@ object RollupGetRollupIndexCapsIndexCapabilities {
     __obj.asInstanceOf[RollupGetRollupIndexCapsIndexCapabilities]
   }
   
-  extension [Self <: RollupGetRollupIndexCapsIndexCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetRollupIndexCapsIndexCapabilities] (val x: Self) extends AnyVal {
     
     inline def setRollup_jobs(value: js.Array[RollupGetRollupIndexCapsRollupJobSummary]): Self = StObject.set(x, "rollup_jobs", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object Runtime {
     __obj.asInstanceOf[Runtime[ConfigType]]
   }
   
-  extension [Self <: Runtime[?], ConfigType](x: Self & Runtime[ConfigType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Runtime[?], ConfigType] (val x: Self & Runtime[ConfigType]) extends AnyVal {
     
     inline def setApply(value: BundleBundleGraph[ConfigType] => Async[Unit | RuntimeAsset | js.Array[RuntimeAsset]]): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     

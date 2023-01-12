@@ -35,7 +35,8 @@ object ClaimResponseError {
     __obj.asInstanceOf[ClaimResponseError]
   }
   
-  extension [Self <: ClaimResponseError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClaimResponseError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: Coding): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

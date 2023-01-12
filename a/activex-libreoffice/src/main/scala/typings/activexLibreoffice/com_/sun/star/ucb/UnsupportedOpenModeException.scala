@@ -28,7 +28,8 @@ object UnsupportedOpenModeException {
     __obj.asInstanceOf[UnsupportedOpenModeException]
   }
   
-  extension [Self <: UnsupportedOpenModeException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsupportedOpenModeException] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
   }

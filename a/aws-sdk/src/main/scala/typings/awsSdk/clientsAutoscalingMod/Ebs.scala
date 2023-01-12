@@ -48,7 +48,8 @@ object Ebs {
     __obj.asInstanceOf[Ebs]
   }
   
-  extension [Self <: Ebs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ebs] (val x: Self) extends AnyVal {
     
     inline def setDeleteOnTermination(value: BlockDeviceEbsDeleteOnTermination): Self = StObject.set(x, "DeleteOnTermination", value.asInstanceOf[js.Any])
     

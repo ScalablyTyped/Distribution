@@ -88,7 +88,8 @@ object IWebStorageProxy {
     __obj.asInstanceOf[IWebStorageProxy]
   }
   
-  extension [Self <: IWebStorageProxy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebStorageProxy] (val x: Self) extends AnyVal {
     
     inline def setCache(value: Any): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

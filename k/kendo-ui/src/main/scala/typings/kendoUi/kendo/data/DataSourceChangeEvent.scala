@@ -27,7 +27,8 @@ object DataSourceChangeEvent {
     __obj.asInstanceOf[DataSourceChangeEvent]
   }
   
-  extension [Self <: DataSourceChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

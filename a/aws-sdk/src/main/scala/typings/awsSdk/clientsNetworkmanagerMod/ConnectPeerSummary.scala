@@ -48,7 +48,8 @@ object ConnectPeerSummary {
     __obj.asInstanceOf[ConnectPeerSummary]
   }
   
-  extension [Self <: ConnectPeerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectPeerSummary] (val x: Self) extends AnyVal {
     
     inline def setConnectAttachmentId(value: AttachmentId): Self = StObject.set(x, "ConnectAttachmentId", value.asInstanceOf[js.Any])
     

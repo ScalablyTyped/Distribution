@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[CountUpOptions]
     }
     
-    extension [Self <: CountUpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountUpOptions] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       

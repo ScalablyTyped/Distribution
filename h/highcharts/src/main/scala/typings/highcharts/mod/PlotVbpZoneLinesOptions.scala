@@ -23,7 +23,8 @@ object PlotVbpZoneLinesOptions {
     __obj.asInstanceOf[PlotVbpZoneLinesOptions]
   }
   
-  extension [Self <: PlotVbpZoneLinesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotVbpZoneLinesOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

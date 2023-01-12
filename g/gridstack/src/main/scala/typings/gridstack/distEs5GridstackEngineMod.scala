@@ -165,7 +165,8 @@ object distEs5GridstackEngineMod {
       __obj.asInstanceOf[GridStackEngineOptions]
     }
     
-    extension [Self <: GridStackEngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStackEngineOptions] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       

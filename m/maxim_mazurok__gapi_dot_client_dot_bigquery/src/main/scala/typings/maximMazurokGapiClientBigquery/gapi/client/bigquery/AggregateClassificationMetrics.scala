@@ -37,7 +37,8 @@ object AggregateClassificationMetrics {
     __obj.asInstanceOf[AggregateClassificationMetrics]
   }
   
-  extension [Self <: AggregateClassificationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateClassificationMetrics] (val x: Self) extends AnyVal {
     
     inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
     

@@ -113,7 +113,8 @@ object typesMenuSheetMod {
       __obj.asInstanceOf[MenuSheetProps]
     }
     
-    extension [Self <: MenuSheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuSheetProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -39,7 +39,8 @@ object commandsPackageBuildMod {
       __obj.asInstanceOf[DownloadUrl]
     }
     
-    extension [Self <: DownloadUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadUrl] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -111,7 +112,8 @@ object commandsPackageBuildMod {
       __obj.asInstanceOf[PackageBuild]
     }
     
-    extension [Self <: PackageBuild](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageBuild] (val x: Self) extends AnyVal {
       
       inline def setAutomation_id(value: Double): Self = StObject.set(x, "automation_id", value.asInstanceOf[js.Any])
       

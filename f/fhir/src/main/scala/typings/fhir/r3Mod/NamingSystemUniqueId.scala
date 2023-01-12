@@ -53,7 +53,8 @@ object NamingSystemUniqueId {
     __obj.asInstanceOf[NamingSystemUniqueId]
   }
   
-  extension [Self <: NamingSystemUniqueId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingSystemUniqueId] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

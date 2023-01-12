@@ -38,7 +38,8 @@ object GradientUnits {
     __obj.asInstanceOf[GradientUnits]
   }
   
-  extension [Self <: GradientUnits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GradientUnits] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Requireable[ReactNodeLike]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

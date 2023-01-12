@@ -33,7 +33,8 @@ object DatabaseTransactionConnectionType {
     __obj.asInstanceOf[DatabaseTransactionConnectionType]
   }
   
-  extension [Self <: DatabaseTransactionConnectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatabaseTransactionConnectionType] (val x: Self) extends AnyVal {
     
     inline def setTransaction(value: TransactionFunctionType[Any] => js.Promise[Any]): Self = StObject.set(x, "transaction", js.Any.fromFunction1(value))
   }

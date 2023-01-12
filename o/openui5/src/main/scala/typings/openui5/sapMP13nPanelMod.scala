@@ -632,7 +632,8 @@ object sapMP13nPanelMod {
       __obj.asInstanceOf[P13nPanelSettings]
     }
     
-    extension [Self <: P13nPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setBeforeNavigationTo(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "beforeNavigationTo", js.Any.fromFunction1(value))
       

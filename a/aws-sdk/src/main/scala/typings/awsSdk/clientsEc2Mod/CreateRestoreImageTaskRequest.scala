@@ -38,7 +38,8 @@ object CreateRestoreImageTaskRequest {
     __obj.asInstanceOf[CreateRestoreImageTaskRequest]
   }
   
-  extension [Self <: CreateRestoreImageTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRestoreImageTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
     

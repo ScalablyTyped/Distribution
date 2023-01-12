@@ -21,7 +21,8 @@ object LayoutSize {
     __obj.asInstanceOf[LayoutSize]
   }
   
-  extension [Self <: LayoutSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayoutSize] (val x: Self) extends AnyVal {
     
     inline def setKind(value: constant): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

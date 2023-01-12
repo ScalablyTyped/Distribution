@@ -24,7 +24,8 @@ object QueryErrorMessage {
     __obj.asInstanceOf[QueryErrorMessage]
   }
   
-  extension [Self <: QueryErrorMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryErrorMessage] (val x: Self) extends AnyVal {
     
     inline def setExtraMsg(value: String): Self = StObject.set(x, "extraMsg", value.asInstanceOf[js.Any])
     

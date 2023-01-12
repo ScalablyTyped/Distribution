@@ -31,7 +31,8 @@ object DashNbDashSize {
     __obj.asInstanceOf[DashNbDashSize]
   }
   
-  extension [Self <: DashNbDashSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashNbDashSize] (val x: Self) extends AnyVal {
     
     inline def setDashNb(value: Double): Self = StObject.set(x, "dashNb", value.asInstanceOf[js.Any])
     

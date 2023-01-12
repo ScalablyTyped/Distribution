@@ -86,7 +86,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ConsoleFormattedStreamLevelStyle]
       }
       
-      extension [Self <: ConsoleFormattedStreamLevelStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConsoleFormattedStreamLevelStyle] (val x: Self) extends AnyVal {
         
         inline def setDebug(value: String): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
         
@@ -115,7 +116,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ConsoleFormattedStreamOptions]
       }
       
-      extension [Self <: ConsoleFormattedStreamOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConsoleFormattedStreamOptions] (val x: Self) extends AnyVal {
         
         inline def setCss(value: PartialConsoleFormattedStDef): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
         
@@ -145,7 +147,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[ConsoleFormattedStreamStyle]
       }
       
-      extension [Self <: ConsoleFormattedStreamStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConsoleFormattedStreamStyle] (val x: Self) extends AnyVal {
         
         inline def setDef(value: String): Self = StObject.set(x, "def", value.asInstanceOf[js.Any])
         

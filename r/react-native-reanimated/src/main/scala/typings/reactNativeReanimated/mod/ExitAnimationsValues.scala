@@ -32,7 +32,8 @@ object ExitAnimationsValues {
     __obj.asInstanceOf[ExitAnimationsValues]
   }
   
-  extension [Self <: ExitAnimationsValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitAnimationsValues] (val x: Self) extends AnyVal {
     
     inline def setCurrentGlobalOriginX(value: Double): Self = StObject.set(x, "currentGlobalOriginX", value.asInstanceOf[js.Any])
     

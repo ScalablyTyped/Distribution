@@ -40,7 +40,8 @@ object karmaMod {
       __obj.asInstanceOf[ClientOptions]
     }
     
-    extension [Self <: ClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientOptions] (val x: Self) extends AnyVal {
       
       inline def setSkipTags(value: String | js.Array[String] | Boolean): Self = StObject.set(x, "skipTags", value.asInstanceOf[js.Any])
       

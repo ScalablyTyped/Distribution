@@ -18,7 +18,8 @@ object DeleteHsmResponse {
     __obj.asInstanceOf[DeleteHsmResponse]
   }
   
-  extension [Self <: DeleteHsmResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteHsmResponse] (val x: Self) extends AnyVal {
     
     inline def setHsmId(value: HsmId): Self = StObject.set(x, "HsmId", value.asInstanceOf[js.Any])
     

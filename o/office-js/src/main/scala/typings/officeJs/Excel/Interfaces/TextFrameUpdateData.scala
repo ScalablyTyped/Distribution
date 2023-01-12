@@ -142,7 +142,8 @@ object TextFrameUpdateData {
     __obj.asInstanceOf[TextFrameUpdateData]
   }
   
-  extension [Self <: TextFrameUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFrameUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAutoSizeSetting(
       value: ShapeAutoSize | AutoSizeNone | AutoSizeTextToFitShape | AutoSizeShapeToFitText | AutoSizeMixed

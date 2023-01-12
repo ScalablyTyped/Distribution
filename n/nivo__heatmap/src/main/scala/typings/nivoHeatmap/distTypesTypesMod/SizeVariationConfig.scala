@@ -17,7 +17,8 @@ object SizeVariationConfig {
     __obj.asInstanceOf[SizeVariationConfig]
   }
   
-  extension [Self <: SizeVariationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeVariationConfig] (val x: Self) extends AnyVal {
     
     inline def setSizes(value: js.Tuple2[/* min */ Double, /* max */ Double]): Self = StObject.set(x, "sizes", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator[TState]]
   }
   
-  extension [Self <: Navigator[?], TState](x: Self & Navigator[TState]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator[?], TState] (val x: Self & Navigator[TState]) extends AnyVal {
     
     inline def setRouter(value: Router[TState]): Self = StObject.set(x, "router", value.asInstanceOf[js.Any])
   }

@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialAnimalProps]
     }
     
-    extension [Self <: PartialAnimalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialAnimalProps] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       

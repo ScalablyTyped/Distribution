@@ -53,7 +53,8 @@ object CreateMissionProfileRequest {
     __obj.asInstanceOf[CreateMissionProfileRequest]
   }
   
-  extension [Self <: CreateMissionProfileRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateMissionProfileRequest] (val x: Self) extends AnyVal {
     
     inline def setContactPostPassDurationSeconds(value: DurationInSeconds): Self = StObject.set(x, "contactPostPassDurationSeconds", value.asInstanceOf[js.Any])
     

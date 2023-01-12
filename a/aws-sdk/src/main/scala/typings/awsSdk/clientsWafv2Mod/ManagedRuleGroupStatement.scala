@@ -48,7 +48,8 @@ object ManagedRuleGroupStatement {
     __obj.asInstanceOf[ManagedRuleGroupStatement]
   }
   
-  extension [Self <: ManagedRuleGroupStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedRuleGroupStatement] (val x: Self) extends AnyVal {
     
     inline def setExcludedRules(value: ExcludedRules): Self = StObject.set(x, "ExcludedRules", value.asInstanceOf[js.Any])
     

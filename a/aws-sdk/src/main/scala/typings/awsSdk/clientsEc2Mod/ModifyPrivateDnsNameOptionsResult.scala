@@ -18,7 +18,8 @@ object ModifyPrivateDnsNameOptionsResult {
     __obj.asInstanceOf[ModifyPrivateDnsNameOptionsResult]
   }
   
-  extension [Self <: ModifyPrivateDnsNameOptionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyPrivateDnsNameOptionsResult] (val x: Self) extends AnyVal {
     
     inline def setReturn(value: Boolean): Self = StObject.set(x, "Return", value.asInstanceOf[js.Any])
     

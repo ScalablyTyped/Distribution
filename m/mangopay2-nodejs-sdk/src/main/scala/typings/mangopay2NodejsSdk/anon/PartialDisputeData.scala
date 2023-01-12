@@ -50,7 +50,8 @@ object PartialDisputeData {
     __obj.asInstanceOf[PartialDisputeData]
   }
   
-  extension [Self <: PartialDisputeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDisputeData] (val x: Self) extends AnyVal {
     
     inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
     

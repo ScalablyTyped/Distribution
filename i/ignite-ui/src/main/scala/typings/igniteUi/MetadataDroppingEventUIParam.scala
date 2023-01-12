@@ -48,7 +48,8 @@ object MetadataDroppingEventUIParam {
     __obj.asInstanceOf[MetadataDroppingEventUIParam]
   }
   
-  extension [Self <: MetadataDroppingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetadataDroppingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDraggedElement(value: String): Self = StObject.set(x, "draggedElement", value.asInstanceOf[js.Any])
     

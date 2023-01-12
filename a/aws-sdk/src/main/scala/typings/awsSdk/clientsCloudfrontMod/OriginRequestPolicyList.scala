@@ -33,7 +33,8 @@ object OriginRequestPolicyList {
     __obj.asInstanceOf[OriginRequestPolicyList]
   }
   
-  extension [Self <: OriginRequestPolicyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRequestPolicyList] (val x: Self) extends AnyVal {
     
     inline def setItems(value: OriginRequestPolicySummaryList): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

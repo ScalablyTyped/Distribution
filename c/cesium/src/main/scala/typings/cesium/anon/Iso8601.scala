@@ -25,7 +25,8 @@ object Iso8601 {
     __obj.asInstanceOf[Iso8601]
   }
   
-  extension [Self <: Iso8601](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Iso8601] (val x: Self) extends AnyVal {
     
     inline def setDataCallback(value: /* repeated */ Any => Any): Self = StObject.set(x, "dataCallback", js.Any.fromFunction1(value))
     

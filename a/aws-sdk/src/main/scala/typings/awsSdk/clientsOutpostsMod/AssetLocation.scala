@@ -18,7 +18,8 @@ object AssetLocation {
     __obj.asInstanceOf[AssetLocation]
   }
   
-  extension [Self <: AssetLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetLocation] (val x: Self) extends AnyVal {
     
     inline def setRackElevation(value: RackElevation): Self = StObject.set(x, "RackElevation", value.asInstanceOf[js.Any])
     

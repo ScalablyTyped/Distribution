@@ -29,7 +29,8 @@ object AgentChangeEvent {
     __obj.asInstanceOf[AgentChangeEvent]
   }
   
-  extension [Self <: AgentChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AgentChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: TaskAgent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

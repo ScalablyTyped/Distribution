@@ -93,7 +93,8 @@ object anon {
       __obj.asInstanceOf[FormidableErrortypeofForm]
     }
     
-    extension [Self <: FormidableErrortypeofForm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormidableErrortypeofForm] (val x: Self) extends AnyVal {
       
       inline def setAborted(value: Double): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyFiles(value: Boolean): Self = StObject.set(x, "allowEmptyFiles", value.asInstanceOf[js.Any])
       
@@ -291,7 +293,8 @@ object anon {
       __obj.asInstanceOf[RecordPARSERUNINITIALIZED]
     }
     
-    extension [Self <: RecordPARSERUNINITIALIZED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordPARSERUNINITIALIZED] (val x: Self) extends AnyVal {
       
       inline def setEND(value: Double): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
       
@@ -333,7 +336,8 @@ object anon {
       __obj.asInstanceOf[TypeofFormidable]
     }
     
-    extension [Self <: TypeofFormidable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofFormidable] (val x: Self) extends AnyVal {
       
       inline def setDEFAULT_OPTIONS(value: DefaultOptions): Self = StObject.set(x, "DEFAULT_OPTIONS", value.asInstanceOf[js.Any])
     }
@@ -406,7 +410,8 @@ object anon {
       __obj.asInstanceOf[Typeofparsers]
     }
     
-    extension [Self <: Typeofparsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofparsers] (val x: Self) extends AnyVal {
       
       inline def setDummyParser(
         value: Instantiable2[

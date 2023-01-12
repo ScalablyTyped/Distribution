@@ -27,7 +27,8 @@ object distSrcClassicEditorSystemDistComponentsCopyMod extends Shortcut {
       __obj.asInstanceOf[CopyProps]
     }
     
-    extension [Self <: CopyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

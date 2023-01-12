@@ -28,7 +28,8 @@ object DetectIdentifyOptions {
     __obj.asInstanceOf[DetectIdentifyOptions]
   }
   
-  extension [Self <: DetectIdentifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectIdentifyOptions] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
     

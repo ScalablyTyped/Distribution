@@ -25,7 +25,8 @@ object KeyRange {
     __obj.asInstanceOf[KeyRange]
   }
   
-  extension [Self <: KeyRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyRange] (val x: Self) extends AnyVal {
     
     inline def setEndClosed(value: js.Array[Any]): Self = StObject.set(x, "endClosed", value.asInstanceOf[js.Any])
     

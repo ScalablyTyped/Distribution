@@ -64,7 +64,8 @@ object SimulationJobRequest {
     __obj.asInstanceOf[SimulationJobRequest]
   }
   
-  extension [Self <: SimulationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimulationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setCompute(value: Compute): Self = StObject.set(x, "compute", value.asInstanceOf[js.Any])
     

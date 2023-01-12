@@ -90,7 +90,8 @@ object ISpinner {
     __obj.asInstanceOf[ISpinner]
   }
   
-  extension [Self <: ISpinner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpinner] (val x: Self) extends AnyVal {
     
     inline def setAccelerateOnTapHold(value: Boolean): Self = StObject.set(x, "accelerateOnTapHold", value.asInstanceOf[js.Any])
     

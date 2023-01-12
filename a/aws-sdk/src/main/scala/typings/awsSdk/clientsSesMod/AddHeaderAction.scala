@@ -23,7 +23,8 @@ object AddHeaderAction {
     __obj.asInstanceOf[AddHeaderAction]
   }
   
-  extension [Self <: AddHeaderAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddHeaderAction] (val x: Self) extends AnyVal {
     
     inline def setHeaderName(value: HeaderName): Self = StObject.set(x, "HeaderName", value.asInstanceOf[js.Any])
     

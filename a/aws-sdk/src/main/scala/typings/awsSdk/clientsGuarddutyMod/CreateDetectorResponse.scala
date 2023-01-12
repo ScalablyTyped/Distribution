@@ -23,7 +23,8 @@ object CreateDetectorResponse {
     __obj.asInstanceOf[CreateDetectorResponse]
   }
   
-  extension [Self <: CreateDetectorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDetectorResponse] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: DetectorId): Self = StObject.set(x, "DetectorId", value.asInstanceOf[js.Any])
     

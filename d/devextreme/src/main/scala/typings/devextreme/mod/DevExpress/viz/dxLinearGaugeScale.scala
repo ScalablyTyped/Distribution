@@ -33,7 +33,8 @@ object dxLinearGaugeScale {
     __obj.asInstanceOf[dxLinearGaugeScale]
   }
   
-  extension [Self <: dxLinearGaugeScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxLinearGaugeScale] (val x: Self) extends AnyVal {
     
     inline def setHorizontalOrientation(value: HorizontalAlignment): Self = StObject.set(x, "horizontalOrientation", value.asInstanceOf[js.Any])
     

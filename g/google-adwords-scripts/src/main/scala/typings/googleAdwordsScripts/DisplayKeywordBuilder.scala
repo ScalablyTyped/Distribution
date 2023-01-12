@@ -23,7 +23,8 @@ object DisplayKeywordBuilder {
     __obj.asInstanceOf[DisplayKeywordBuilder[DisplayKeyword]]
   }
   
-  extension [Self <: DisplayKeywordBuilder[?], DisplayKeyword](x: Self & DisplayKeywordBuilder[DisplayKeyword]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayKeywordBuilder[?], DisplayKeyword] (val x: Self & DisplayKeywordBuilder[DisplayKeyword]) extends AnyVal {
     
     inline def setWithText(value: String => DisplayKeywordBuilder[DisplayKeyword]): Self = StObject.set(x, "withText", js.Any.fromFunction1(value))
   }

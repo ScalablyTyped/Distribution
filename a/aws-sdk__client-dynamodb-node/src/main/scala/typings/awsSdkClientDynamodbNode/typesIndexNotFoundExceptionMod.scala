@@ -21,7 +21,8 @@ object typesIndexNotFoundExceptionMod {
       __obj.asInstanceOf[IndexNotFoundException]
     }
     
-    extension [Self <: IndexNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.IndexNotFoundException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesIndexNotFoundExceptionMod {
       __obj.asInstanceOf[IndexNotFoundExceptionDetails]
     }
     
-    extension [Self <: IndexNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

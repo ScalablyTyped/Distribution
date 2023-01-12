@@ -43,7 +43,8 @@ object ListTimelineEventsInput {
     __obj.asInstanceOf[ListTimelineEventsInput]
   }
   
-  extension [Self <: ListTimelineEventsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTimelineEventsInput] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

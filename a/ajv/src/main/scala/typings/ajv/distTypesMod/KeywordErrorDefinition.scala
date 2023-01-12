@@ -18,7 +18,8 @@ object KeywordErrorDefinition {
     __obj.asInstanceOf[KeywordErrorDefinition]
   }
   
-  extension [Self <: KeywordErrorDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordErrorDefinition] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String | Code | (js.Function1[/* cxt */ KeywordErrorCxt, String | Code])): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ContentArtifactsConfiguration {
     __obj.asInstanceOf[ContentArtifactsConfiguration]
   }
   
-  extension [Self <: ContentArtifactsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentArtifactsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setMuxType(value: ContentMuxType): Self = StObject.set(x, "MuxType", value.asInstanceOf[js.Any])
     

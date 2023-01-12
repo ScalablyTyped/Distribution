@@ -18,7 +18,8 @@ object libApiSessionOptionsMod {
       __obj.asInstanceOf[SessionOptions]
     }
     
-    extension [Self <: SessionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionOptions] (val x: Self) extends AnyVal {
       
       inline def setDelegate(value: SessionDelegate): Self = StObject.set(x, "delegate", value.asInstanceOf[js.Any])
       

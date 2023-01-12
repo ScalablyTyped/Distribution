@@ -31,7 +31,8 @@ object SizeSliderViewModelProperties {
     __obj.asInstanceOf[SizeSliderViewModelProperties]
   }
   
-  extension [Self <: SizeSliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setPersistSizeRangeEnabled(value: Boolean): Self = StObject.set(x, "persistSizeRangeEnabled", value.asInstanceOf[js.Any])
     

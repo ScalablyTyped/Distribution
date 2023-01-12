@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Cipher]
     }
     
-    extension [Self <: Cipher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cipher] (val x: Self) extends AnyVal {
       
       inline def setCipher(value: js.Array[String]): Self = StObject.set(x, "cipher", value.asInstanceOf[js.Any])
       

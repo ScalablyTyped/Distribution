@@ -33,7 +33,8 @@ object StopLaunchRequest {
     __obj.asInstanceOf[StopLaunchRequest]
   }
   
-  extension [Self <: StopLaunchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopLaunchRequest] (val x: Self) extends AnyVal {
     
     inline def setDesiredState(value: LaunchStopDesiredState): Self = StObject.set(x, "desiredState", value.asInstanceOf[js.Any])
     

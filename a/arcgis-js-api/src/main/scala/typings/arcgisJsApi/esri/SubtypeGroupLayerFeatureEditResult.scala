@@ -34,7 +34,8 @@ object SubtypeGroupLayerFeatureEditResult {
     __obj.asInstanceOf[SubtypeGroupLayerFeatureEditResult]
   }
   
-  extension [Self <: SubtypeGroupLayerFeatureEditResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtypeGroupLayerFeatureEditResult] (val x: Self) extends AnyVal {
     
     inline def setError(value: SubtypeGroupLayerFeatureEditResultError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

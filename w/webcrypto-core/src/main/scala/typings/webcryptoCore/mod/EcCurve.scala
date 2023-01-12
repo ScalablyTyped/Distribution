@@ -17,7 +17,8 @@ object EcCurve {
     __obj.asInstanceOf[EcCurve]
   }
   
-  extension [Self <: EcCurve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcCurve] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
   }

@@ -25,7 +25,8 @@ object Applicationjsonsarif {
     __obj.asInstanceOf[Applicationjsonsarif]
   }
   
-  extension [Self <: Applicationjsonsarif](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicationjsonsarif] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['code-scanning-analysis'] */ js.Any

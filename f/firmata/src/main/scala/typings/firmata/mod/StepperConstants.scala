@@ -22,7 +22,8 @@ object StepperConstants {
     __obj.asInstanceOf[StepperConstants]
   }
   
-  extension [Self <: StepperConstants](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepperConstants] (val x: Self) extends AnyVal {
     
     inline def setDIRECTION(value: CCW): Self = StObject.set(x, "DIRECTION", value.asInstanceOf[js.Any])
     

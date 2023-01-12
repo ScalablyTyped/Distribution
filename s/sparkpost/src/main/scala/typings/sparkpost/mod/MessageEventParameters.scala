@@ -61,7 +61,8 @@ object MessageEventParameters {
     __obj.asInstanceOf[MessageEventParameters]
   }
   
-  extension [Self <: MessageEventParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEventParameters] (val x: Self) extends AnyVal {
     
     inline def setBounce_classes(value: (js.Array[String | Double]) | String | Double): Self = StObject.set(x, "bounce_classes", value.asInstanceOf[js.Any])
     

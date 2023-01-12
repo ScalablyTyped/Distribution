@@ -27,7 +27,8 @@ object PartialRangeSlider {
     __obj.asInstanceOf[PartialRangeSlider]
   }
   
-  extension [Self <: PartialRangeSlider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRangeSlider] (val x: Self) extends AnyVal {
     
     inline def setBgcolor(value: String): Self = StObject.set(x, "bgcolor", value.asInstanceOf[js.Any])
     

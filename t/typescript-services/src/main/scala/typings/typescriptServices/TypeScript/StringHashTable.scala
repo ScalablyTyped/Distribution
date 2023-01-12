@@ -33,7 +33,8 @@ object StringHashTable {
     __obj.asInstanceOf[StringHashTable[T]]
   }
   
-  extension [Self <: StringHashTable[?], T](x: Self & StringHashTable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringHashTable[?], T] (val x: Self & StringHashTable[T]) extends AnyVal {
     
     inline def setItemCount(value: Any): Self = StObject.set(x, "itemCount", value.asInstanceOf[js.Any])
     

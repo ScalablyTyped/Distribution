@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Options[Result]]
     }
     
-    extension [Self <: Options[?], Result](x: Self & Options[Result]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], Result] (val x: Self & Options[Result]) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[OptionsHash]
     }
     
-    extension [Self <: OptionsHash](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsHash] (val x: Self) extends AnyVal {
       
       inline def setHash(value: `true`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }
@@ -100,7 +102,8 @@ object mod {
       __obj.asInstanceOf[OptionsString]
     }
     
-    extension [Self <: OptionsString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsString] (val x: Self) extends AnyVal {
       
       inline def setHash(value: `false`): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     }

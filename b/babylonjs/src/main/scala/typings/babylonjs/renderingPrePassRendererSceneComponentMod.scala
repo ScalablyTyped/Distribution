@@ -101,7 +101,8 @@ object renderingPrePassRendererSceneComponentMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setDisablePrePassRenderer(value: () => Unit): Self = StObject.set(x, "disablePrePassRenderer", js.Any.fromFunction0(value))
         
@@ -133,7 +134,8 @@ object renderingPrePassRendererSceneComponentMod {
         __obj.asInstanceOf[RenderTargetTexture]
       }
       
-      extension [Self <: RenderTargetTexture](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RenderTargetTexture] (val x: Self) extends AnyVal {
         
         inline def set_prePassRenderTarget(value: Nullable[PrePassRenderTarget]): Self = StObject.set(x, "_prePassRenderTarget", value.asInstanceOf[js.Any])
         

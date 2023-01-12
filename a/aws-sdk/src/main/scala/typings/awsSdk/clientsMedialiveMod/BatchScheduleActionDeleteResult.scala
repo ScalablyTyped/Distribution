@@ -18,7 +18,8 @@ object BatchScheduleActionDeleteResult {
     __obj.asInstanceOf[BatchScheduleActionDeleteResult]
   }
   
-  extension [Self <: BatchScheduleActionDeleteResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchScheduleActionDeleteResult] (val x: Self) extends AnyVal {
     
     inline def setScheduleActions(value: listOfScheduleAction): Self = StObject.set(x, "ScheduleActions", value.asInstanceOf[js.Any])
     

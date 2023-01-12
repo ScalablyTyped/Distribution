@@ -135,7 +135,8 @@ object IObjectVersion {
     __obj.asInstanceOf[IObjectVersion]
   }
   
-  extension [Self <: IObjectVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IObjectVersion] (val x: Self) extends AnyVal {
     
     inline def setAccessedByMeUtc(value: js.Date): Self = StObject.set(x, "AccessedByMeUtc", value.asInstanceOf[js.Any])
     

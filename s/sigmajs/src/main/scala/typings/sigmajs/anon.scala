@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[DictrenderType]
     }
     
-    extension [Self <: DictrenderType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DictrenderType] (val x: Self) extends AnyVal {
       
       inline def setLabels(value: SVGEdgeLabels): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

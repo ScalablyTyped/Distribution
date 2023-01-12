@@ -52,7 +52,8 @@ object BasemapLayerListViewModelProperties {
     __obj.asInstanceOf[BasemapLayerListViewModelProperties]
   }
   
-  extension [Self <: BasemapLayerListViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasemapLayerListViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setBaseListItemCreatedFunction(value: /* event */ Any => scala.Unit): Self = StObject.set(x, "baseListItemCreatedFunction", js.Any.fromFunction1(value))
     

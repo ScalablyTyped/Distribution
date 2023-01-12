@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setBalance(value: Double): Self = StObject.set(x, "balance", value.asInstanceOf[js.Any])
       
@@ -107,7 +108,8 @@ object mod {
       __obj.asInstanceOf[DownloadLink]
     }
     
-    extension [Self <: DownloadLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadLink] (val x: Self) extends AnyVal {
       
       inline def setContent_type(value: String): Self = StObject.set(x, "content_type", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object mod {
       __obj.asInstanceOf[DownloadLinkParam]
     }
     
-    extension [Self <: DownloadLinkParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadLinkParam] (val x: Self) extends AnyVal {
       
       inline def setCaptcha_response(value: String): Self = StObject.set(x, "captcha_response", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object mod {
       __obj.asInstanceOf[DownloadTicket]
     }
     
-    extension [Self <: DownloadTicket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadTicket] (val x: Self) extends AnyVal {
       
       inline def setCaptcha_h(value: Double): Self = StObject.set(x, "captcha_h", value.asInstanceOf[js.Any])
       
@@ -209,7 +213,8 @@ object mod {
       __obj.asInstanceOf[ListFolder]
     }
     
-    extension [Self <: ListFolder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListFolder] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[Cstatus]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -285,7 +290,8 @@ object mod {
       __obj.asInstanceOf[OpenloadConfig]
     }
     
-    extension [Self <: OpenloadConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenloadConfig] (val x: Self) extends AnyVal {
       
       inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object mod {
       __obj.asInstanceOf[RemoteUpload]
     }
     
-    extension [Self <: RemoteUpload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteUpload] (val x: Self) extends AnyVal {
       
       inline def setFolderid(value: String): Self = StObject.set(x, "folderid", value.asInstanceOf[js.Any])
       
@@ -333,7 +340,8 @@ object mod {
       __obj.asInstanceOf[RemoteUploadParam]
     }
     
-    extension [Self <: RemoteUploadParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteUploadParam] (val x: Self) extends AnyVal {
       
       inline def setFolder(value: String): Self = StObject.set(x, "folder", value.asInstanceOf[js.Any])
       
@@ -362,7 +370,8 @@ object mod {
       __obj.asInstanceOf[RemoteUploadStatusParam]
     }
     
-    extension [Self <: RemoteUploadStatusParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteUploadStatusParam] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -408,7 +417,8 @@ object mod {
       __obj.asInstanceOf[RunningFileConverts]
     }
     
-    extension [Self <: RunningFileConverts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunningFileConverts] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -441,7 +451,8 @@ object mod {
       __obj.asInstanceOf[Upload]
     }
     
-    extension [Self <: Upload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Upload] (val x: Self) extends AnyVal {
       
       inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       
@@ -466,7 +477,8 @@ object mod {
       __obj.asInstanceOf[UploadParam]
     }
     
-    extension [Self <: UploadParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadParam] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       
@@ -499,7 +511,8 @@ object mod {
       __obj.asInstanceOf[UploadProgress]
     }
     
-    extension [Self <: UploadProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadProgress] (val x: Self) extends AnyVal {
       
       inline def setPercent(value: Double): Self = StObject.set(x, "percent", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DiscriminatorObject {
     __obj.asInstanceOf[DiscriminatorObject]
   }
   
-  extension [Self <: DiscriminatorObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscriminatorObject] (val x: Self) extends AnyVal {
     
     inline def setMapping(value: StringDictionary[String]): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
     

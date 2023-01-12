@@ -39,7 +39,8 @@ object Objectstyleundefined {
     __obj.asInstanceOf[Objectstyleundefined]
   }
   
-  extension [Self <: Objectstyleundefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Objectstyleundefined] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: js.Function): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

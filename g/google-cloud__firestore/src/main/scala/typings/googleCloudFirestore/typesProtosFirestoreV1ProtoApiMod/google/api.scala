@@ -371,7 +371,8 @@ object api {
       __obj.asInstanceOf[ICustomHttpPattern]
     }
     
-    extension [Self <: ICustomHttpPattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomHttpPattern] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -400,7 +401,8 @@ object api {
       __obj.asInstanceOf[IHttp]
     }
     
-    extension [Self <: IHttp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttp] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[IHttpRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       
@@ -449,7 +451,8 @@ object api {
       __obj.asInstanceOf[IHttpRule]
     }
     
-    extension [Self <: IHttpRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHttpRule] (val x: Self) extends AnyVal {
       
       inline def setAdditionalBindings(value: js.Array[IHttpRule]): Self = StObject.set(x, "additionalBindings", value.asInstanceOf[js.Any])
       
@@ -540,7 +543,8 @@ object api {
       __obj.asInstanceOf[IResourceDescriptor]
     }
     
-    extension [Self <: IResourceDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceDescriptor] (val x: Self) extends AnyVal {
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -606,7 +610,8 @@ object api {
       __obj.asInstanceOf[IResourceReference]
     }
     
-    extension [Self <: IResourceReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceReference] (val x: Self) extends AnyVal {
       
       inline def setChildType(value: String): Self = StObject.set(x, "childType", value.asInstanceOf[js.Any])
       

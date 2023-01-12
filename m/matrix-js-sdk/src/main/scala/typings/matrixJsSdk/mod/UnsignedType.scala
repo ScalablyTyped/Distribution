@@ -19,7 +19,8 @@ object UnsignedType {
     __obj.asInstanceOf[UnsignedType]
   }
   
-  extension [Self <: UnsignedType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsignedType] (val x: Self) extends AnyVal {
     
     inline def setAge(value: Double): Self = StObject.set(x, "age", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object XmlSchema {
     __obj.asInstanceOf[XmlSchema]
   }
   
-  extension [Self <: XmlSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlSchema] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

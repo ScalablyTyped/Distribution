@@ -45,7 +45,8 @@ object UpdateByQueryResponse {
     __obj.asInstanceOf[UpdateByQueryResponse]
   }
   
-  extension [Self <: UpdateByQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateByQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setBatches(value: long): Self = StObject.set(x, "batches", value.asInstanceOf[js.Any])
     

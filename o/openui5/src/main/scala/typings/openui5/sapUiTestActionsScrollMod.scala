@@ -186,7 +186,8 @@ object sapUiTestActionsScrollMod {
       __obj.asInstanceOf[ScrollSettings]
     }
     
-    extension [Self <: ScrollSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSettings] (val x: Self) extends AnyVal {
       
       inline def setX(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

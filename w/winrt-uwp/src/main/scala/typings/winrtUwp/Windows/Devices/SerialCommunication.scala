@@ -199,7 +199,8 @@ object SerialCommunication {
       __obj.asInstanceOf[ErrorReceivedEventArgs]
     }
     
-    extension [Self <: ErrorReceivedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorReceivedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setError(value: SerialError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -218,7 +219,8 @@ object SerialCommunication {
       __obj.asInstanceOf[PinChangedEventArgs]
     }
     
-    extension [Self <: PinChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setPinChange(value: SerialPinChange): Self = StObject.set(x, "pinChange", value.asInstanceOf[js.Any])
     }

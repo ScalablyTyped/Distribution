@@ -17,7 +17,8 @@ object ToastDismissedEventArgs {
     __obj.asInstanceOf[ToastDismissedEventArgs]
   }
   
-  extension [Self <: ToastDismissedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToastDismissedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReason(value: ToastDismissalReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

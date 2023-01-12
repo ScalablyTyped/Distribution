@@ -68,7 +68,8 @@ object PutParameterRequest {
     __obj.asInstanceOf[PutParameterRequest]
   }
   
-  extension [Self <: PutParameterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutParameterRequest] (val x: Self) extends AnyVal {
     
     inline def setAllowedPattern(value: AllowedPattern): Self = StObject.set(x, "AllowedPattern", value.asInstanceOf[js.Any])
     

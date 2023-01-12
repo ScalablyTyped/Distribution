@@ -25,7 +25,8 @@ object GitSuggestion {
     __obj.asInstanceOf[GitSuggestion]
   }
   
-  extension [Self <: GitSuggestion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitSuggestion] (val x: Self) extends AnyVal {
     
     inline def setProperties(value: StringDictionary[Any]): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     

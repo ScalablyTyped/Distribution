@@ -31,7 +31,8 @@ object ConditionalRoot {
     __obj.asInstanceOf[ConditionalRoot]
   }
   
-  extension [Self <: ConditionalRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRoot] (val x: Self) extends AnyVal {
     
     inline def setAliasSymbol(value: Symbol): Self = StObject.set(x, "aliasSymbol", value.asInstanceOf[js.Any])
     

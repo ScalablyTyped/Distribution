@@ -479,7 +479,8 @@ object progressspinnerProgressspinnerMod {
       __obj.asInstanceOf[ProgressSpinnerProps]
     }
     
-    extension [Self <: ProgressSpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressSpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

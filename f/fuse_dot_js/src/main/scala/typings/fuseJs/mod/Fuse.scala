@@ -103,7 +103,8 @@ object Fuse {
       __obj.asInstanceOf[FuseIndex[T]]
     }
     
-    extension [Self <: FuseIndex[?], T](x: Self & FuseIndex[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseIndex[?], T] (val x: Self & FuseIndex[T]) extends AnyVal {
       
       inline def setAdd(value: T => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -146,7 +147,8 @@ object Fuse {
       __obj.asInstanceOf[FuseIndexObjectRecord]
     }
     
-    extension [Self <: FuseIndexObjectRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseIndexObjectRecord] (val x: Self) extends AnyVal {
       
       inline def set$(value: RecordEntry): Self = StObject.set(x, "$", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object Fuse {
       __obj.asInstanceOf[FuseIndexOptions[T]]
     }
     
-    extension [Self <: FuseIndexOptions[?], T](x: Self & FuseIndexOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseIndexOptions[?], T] (val x: Self & FuseIndexOptions[T]) extends AnyVal {
       
       inline def setGetFn(value: (T, /* path */ String | js.Array[String]) => js.Array[String] | String): Self = StObject.set(x, "getFn", js.Any.fromFunction2(value))
     }
@@ -201,7 +204,8 @@ object Fuse {
       __obj.asInstanceOf[FuseIndexStringRecord]
     }
     
-    extension [Self <: FuseIndexStringRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseIndexStringRecord] (val x: Self) extends AnyVal {
       
       inline def setI(value: Double): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -228,7 +232,8 @@ object Fuse {
       __obj.asInstanceOf[FuseOptionKeyObject[T]]
     }
     
-    extension [Self <: FuseOptionKeyObject[?], T](x: Self & FuseOptionKeyObject[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseOptionKeyObject[?], T] (val x: Self & FuseOptionKeyObject[T]) extends AnyVal {
       
       inline def setGetFn(value: /* obj */ T => js.Array[String] | String): Self = StObject.set(x, "getFn", js.Any.fromFunction1(value))
       
@@ -261,7 +266,8 @@ object Fuse {
       __obj.asInstanceOf[FuseResult[T]]
     }
     
-    extension [Self <: FuseResult[?], T](x: Self & FuseResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseResult[?], T] (val x: Self & FuseResult[T]) extends AnyVal {
       
       inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -296,7 +302,8 @@ object Fuse {
       __obj.asInstanceOf[FuseResultMatch]
     }
     
-    extension [Self <: FuseResultMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseResultMatch] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[RangeTuple]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -327,7 +334,8 @@ object Fuse {
       __obj.asInstanceOf[FuseSearchOptions]
     }
     
-    extension [Self <: FuseSearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseSearchOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     }
@@ -352,7 +360,8 @@ object Fuse {
       __obj.asInstanceOf[FuseSortFunctionArg]
     }
     
-    extension [Self <: FuseSortFunctionArg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseSortFunctionArg] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
       
@@ -387,7 +396,8 @@ object Fuse {
       __obj.asInstanceOf[FuseSortFunctionMatch]
     }
     
-    extension [Self <: FuseSortFunctionMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseSortFunctionMatch] (val x: Self) extends AnyVal {
       
       inline def setIndices(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "indices", value.asInstanceOf[js.Any])
       
@@ -414,7 +424,8 @@ object Fuse {
       __obj.asInstanceOf[FuseSortFunctionMatchList]
     }
     
-    extension [Self <: FuseSortFunctionMatchList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FuseSortFunctionMatchList] (val x: Self) extends AnyVal {
       
       inline def setIdx(value: Double): Self = StObject.set(x, "idx", value.asInstanceOf[js.Any])
     }
@@ -477,7 +488,8 @@ object Fuse {
       __obj.asInstanceOf[IFuseOptions[T]]
     }
     
-    extension [Self <: IFuseOptions[?], T](x: Self & IFuseOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFuseOptions[?], T] (val x: Self & IFuseOptions[T]) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -580,7 +592,8 @@ object Fuse {
       __obj.asInstanceOf[RecordEntryObject]
     }
     
-    extension [Self <: RecordEntryObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordEntryObject] (val x: Self) extends AnyVal {
       
       inline def setN(value: Double): Self = StObject.set(x, "n", value.asInstanceOf[js.Any])
       

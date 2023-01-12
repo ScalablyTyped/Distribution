@@ -23,7 +23,8 @@ object ListIdentityPoolUsageRequest {
     __obj.asInstanceOf[ListIdentityPoolUsageRequest]
   }
   
-  extension [Self <: ListIdentityPoolUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListIdentityPoolUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: IntegerString): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

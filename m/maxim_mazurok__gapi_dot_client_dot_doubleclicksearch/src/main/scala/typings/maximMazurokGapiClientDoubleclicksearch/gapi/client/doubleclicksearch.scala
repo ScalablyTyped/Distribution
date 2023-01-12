@@ -48,7 +48,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[Availability]
     }
     
-    extension [Self <: Availability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Availability] (val x: Self) extends AnyVal {
       
       inline def setAdvertiserId(value: String): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[Conversion]
     }
     
-    extension [Self <: Conversion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conversion] (val x: Self) extends AnyVal {
       
       inline def setAdGroupId(value: String): Self = StObject.set(x, "adGroupId", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[ConversionList]
     }
     
-    extension [Self <: ConversionList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionList] (val x: Self) extends AnyVal {
       
       inline def setConversion(value: js.Array[Conversion]): Self = StObject.set(x, "conversion", value.asInstanceOf[js.Any])
       
@@ -398,7 +401,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[CustomDimension]
     }
     
-    extension [Self <: CustomDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDimension] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -425,7 +429,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[CustomMetric]
     }
     
-    extension [Self <: CustomMetric](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomMetric] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -479,7 +484,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[Report]
     }
     
-    extension [Self <: Report](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[ByteCount]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -575,7 +581,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[ReportApiColumnSpec]
     }
     
-    extension [Self <: ReportApiColumnSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportApiColumnSpec] (val x: Self) extends AnyVal {
       
       inline def setColumnName(value: String): Self = StObject.set(x, "columnName", value.asInstanceOf[js.Any])
       
@@ -686,7 +693,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[ReportRequest]
     }
     
-    extension [Self <: ReportRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportRequest] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[ReportApiColumnSpec]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -799,7 +807,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[SavedColumn]
     }
     
-    extension [Self <: SavedColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedColumn] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -830,7 +839,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[SavedColumnList]
     }
     
-    extension [Self <: SavedColumnList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedColumnList] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[SavedColumn]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -864,7 +874,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[UpdateAvailabilityRequest]
     }
     
-    extension [Self <: UpdateAvailabilityRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAvailabilityRequest] (val x: Self) extends AnyVal {
       
       inline def setAvailabilities(value: js.Array[Availability]): Self = StObject.set(x, "availabilities", value.asInstanceOf[js.Any])
       
@@ -886,7 +897,8 @@ object doubleclicksearch {
       __obj.asInstanceOf[UpdateAvailabilityResponse]
     }
     
-    extension [Self <: UpdateAvailabilityResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAvailabilityResponse] (val x: Self) extends AnyVal {
       
       inline def setAvailabilities(value: js.Array[Availability]): Self = StObject.set(x, "availabilities", value.asInstanceOf[js.Any])
       

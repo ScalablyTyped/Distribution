@@ -31,7 +31,8 @@ object gapi {
           __obj.asInstanceOf[CreateProfileRequest]
         }
         
-        extension [Self <: CreateProfileRequest](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: CreateProfileRequest] (val x: Self) extends AnyVal {
           
           inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
           
@@ -73,7 +74,8 @@ object gapi {
           __obj.asInstanceOf[Deployment]
         }
         
-        extension [Self <: Deployment](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
           
           inline def setLabels(
             value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any
@@ -127,7 +129,8 @@ object gapi {
           __obj.asInstanceOf[Profile]
         }
         
-        extension [Self <: Profile](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
           
           inline def setDeployment(value: Deployment): Self = StObject.set(x, "deployment", value.asInstanceOf[js.Any])
           
@@ -192,7 +195,8 @@ object gapi {
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        extension [Self <: ProjectsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
           
           inline def setProfiles(value: ProfilesResource): Self = StObject.set(x, "profiles", value.asInstanceOf[js.Any])
         }

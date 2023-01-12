@@ -19,7 +19,8 @@ object accessLevelAccessLevelund {
     __obj.asInstanceOf[accessLevelAccessLevelund]
   }
   
-  extension [Self <: accessLevelAccessLevelund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: accessLevelAccessLevelund] (val x: Self) extends AnyVal {
     
     inline def setAccessLevel(value: AccessLevel): Self = StObject.set(x, "accessLevel", value.asInstanceOf[js.Any])
     

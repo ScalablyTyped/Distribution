@@ -40,7 +40,8 @@ object ArchivedPrintJob {
     __obj.asInstanceOf[ArchivedPrintJob]
   }
   
-  extension [Self <: ArchivedPrintJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchivedPrintJob] (val x: Self) extends AnyVal {
     
     inline def setAcquiredByPrinter(value: Boolean): Self = StObject.set(x, "acquiredByPrinter", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object tsdefLocalDataTrackOptionsMod {
       __obj.asInstanceOf[LocalDataTrackOptions]
     }
     
-    extension [Self <: LocalDataTrackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalDataTrackOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxPacketLifeTime(value: Double): Self = StObject.set(x, "maxPacketLifeTime", value.asInstanceOf[js.Any])
       

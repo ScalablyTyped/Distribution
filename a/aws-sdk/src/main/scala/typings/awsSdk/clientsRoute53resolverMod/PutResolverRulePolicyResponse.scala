@@ -18,7 +18,8 @@ object PutResolverRulePolicyResponse {
     __obj.asInstanceOf[PutResolverRulePolicyResponse]
   }
   
-  extension [Self <: PutResolverRulePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutResolverRulePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setReturnValue(value: Boolean): Self = StObject.set(x, "ReturnValue", value.asInstanceOf[js.Any])
     

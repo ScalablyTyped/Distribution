@@ -23,7 +23,8 @@ object EventValue {
     __obj.asInstanceOf[EventValue]
   }
   
-  extension [Self <: EventValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventValue] (val x: Self) extends AnyVal {
     
     inline def setEvent(
       value: (FocusEvent[HTMLInputElement, Element]) | (typings.react.mod.SyntheticEvent[HTMLInputElement, typings.std.Event])

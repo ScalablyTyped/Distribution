@@ -76,7 +76,8 @@ object libInputDevicesMod {
       __obj.asInstanceOf[NvKeyboardDefaults]
     }
     
-    extension [Self <: NvKeyboardDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvKeyboardDefaults] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libInputDevicesMod {
       __obj.asInstanceOf[NvMouseDefaults]
     }
     
-    extension [Self <: NvMouseDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NvMouseDefaults] (val x: Self) extends AnyVal {
       
       inline def setFocused(value: Boolean): Self = StObject.set(x, "focused", value.asInstanceOf[js.Any])
       

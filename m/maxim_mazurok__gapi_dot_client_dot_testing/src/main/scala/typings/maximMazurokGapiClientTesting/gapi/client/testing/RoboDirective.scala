@@ -25,7 +25,8 @@ object RoboDirective {
     __obj.asInstanceOf[RoboDirective]
   }
   
-  extension [Self <: RoboDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoboDirective] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: String): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

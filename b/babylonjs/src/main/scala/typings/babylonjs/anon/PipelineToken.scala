@@ -19,7 +19,8 @@ object PipelineToken {
     __obj.asInstanceOf[PipelineToken]
   }
   
-  extension [Self <: PipelineToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineToken] (val x: Self) extends AnyVal {
     
     inline def setPipeline(value: Nullable[GPURenderPipeline]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     

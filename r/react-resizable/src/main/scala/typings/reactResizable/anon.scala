@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Style]
     }
     
-    extension [Self <: Style](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object anon {
       __obj.asInstanceOf[widthnumberheightnumberax]
     }
     
-    extension [Self <: widthnumberheightnumberax](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: widthnumberheightnumberax] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: both): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object anon {
       __obj.asInstanceOf[widthnumberheightnumberun]
     }
     
-    extension [Self <: widthnumberheightnumberun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: widthnumberheightnumberun] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: typings.reactResizable.reactResizableStrings.x): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -354,7 +358,8 @@ object anon {
       __obj.asInstanceOf[widthnumberundefinedheigh]
     }
     
-    extension [Self <: widthnumberundefinedheigh](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: widthnumberundefinedheigh] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       

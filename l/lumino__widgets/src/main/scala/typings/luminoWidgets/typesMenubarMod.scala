@@ -334,7 +334,8 @@ object typesMenubarMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setForceItemsPosition(value: IOpenOptions): Self = StObject.set(x, "forceItemsPosition", value.asInstanceOf[js.Any])
         
@@ -370,7 +371,8 @@ object typesMenubarMod {
         __obj.asInstanceOf[IRenderData]
       }
       
-      extension [Self <: IRenderData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderData] (val x: Self) extends AnyVal {
         
         inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
         
@@ -403,7 +405,8 @@ object typesMenubarMod {
         __obj.asInstanceOf[IRenderer]
       }
       
-      extension [Self <: IRenderer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRenderer] (val x: Self) extends AnyVal {
         
         inline def setRenderItem(value: IRenderData => VirtualElement): Self = StObject.set(x, "renderItem", js.Any.fromFunction1(value))
       }

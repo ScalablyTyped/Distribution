@@ -18,7 +18,8 @@ object PropagatingVgw {
     __obj.asInstanceOf[PropagatingVgw]
   }
   
-  extension [Self <: PropagatingVgw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropagatingVgw] (val x: Self) extends AnyVal {
     
     inline def setGatewayId(value: String): Self = StObject.set(x, "GatewayId", value.asInstanceOf[js.Any])
     

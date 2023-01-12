@@ -39,7 +39,8 @@ object dxChartSeriesTypesCommonSeriesHoverStyle {
     __obj.asInstanceOf[dxChartSeriesTypesCommonSeriesHoverStyle]
   }
   
-  extension [Self <: dxChartSeriesTypesCommonSeriesHoverStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartSeriesTypesCommonSeriesHoverStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: dxChartSeriesTypesCommonSeriesHoverStyleBorder): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object OperationsScopedList {
     __obj.asInstanceOf[OperationsScopedList]
   }
   
-  extension [Self <: OperationsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationsScopedList] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: js.Array[Operation]): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object JestGlobals {
     __obj.asInstanceOf[JestGlobals]
   }
   
-  extension [Self <: JestGlobals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JestGlobals] (val x: Self) extends AnyVal {
     
     inline def setExpect(value: Any): Self = StObject.set(x, "expect", value.asInstanceOf[js.Any])
   }

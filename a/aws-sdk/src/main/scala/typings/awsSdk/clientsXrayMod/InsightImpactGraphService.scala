@@ -43,7 +43,8 @@ object InsightImpactGraphService {
     __obj.asInstanceOf[InsightImpactGraphService]
   }
   
-  extension [Self <: InsightImpactGraphService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsightImpactGraphService] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "AccountId", value.asInstanceOf[js.Any])
     

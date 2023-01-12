@@ -34,7 +34,8 @@ object MatchWaypoint {
     __obj.asInstanceOf[MatchWaypoint]
   }
   
-  extension [Self <: MatchWaypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchWaypoint] (val x: Self) extends AnyVal {
     
     inline def setMatchings_index(value: js.Array[Double]): Self = StObject.set(x, "matchings_index", value.asInstanceOf[js.Any])
     

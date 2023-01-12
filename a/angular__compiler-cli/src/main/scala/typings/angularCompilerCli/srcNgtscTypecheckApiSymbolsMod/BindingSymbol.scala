@@ -38,7 +38,8 @@ object BindingSymbol {
     __obj.asInstanceOf[BindingSymbol]
   }
   
-  extension [Self <: BindingSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingSymbol] (val x: Self) extends AnyVal {
     
     inline def setKind(value: Binding): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

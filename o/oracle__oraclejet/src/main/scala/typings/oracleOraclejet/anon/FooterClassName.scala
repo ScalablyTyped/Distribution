@@ -55,7 +55,8 @@ object FooterClassName {
     __obj.asInstanceOf[FooterClassName[K, D]]
   }
   
-  extension [Self <: FooterClassName[?, ?], K, D](x: Self & (FooterClassName[K, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FooterClassName[?, ?], K, D] (val x: Self & (FooterClassName[K, D])) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object VideoChallengeLanguage {
     __obj.asInstanceOf[VideoChallengeLanguage]
   }
   
-  extension [Self <: VideoChallengeLanguage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoChallengeLanguage] (val x: Self) extends AnyVal {
     
     inline def setLanguage_code(value: SupportedLanguages): Self = StObject.set(x, "language_code", value.asInstanceOf[js.Any])
     

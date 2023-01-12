@@ -112,7 +112,8 @@ object JSONEditorNode {
     __obj.asInstanceOf[JSONEditorNode]
   }
   
-  extension [Self <: JSONEditorNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorNode] (val x: Self) extends AnyVal {
     
     inline def setAppendChild(value: JSONEditorNode => Unit): Self = StObject.set(x, "appendChild", js.Any.fromFunction1(value))
     

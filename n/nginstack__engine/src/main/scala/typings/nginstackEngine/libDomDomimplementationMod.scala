@@ -32,7 +32,8 @@ object libDomDomimplementationMod {
       __obj.asInstanceOf[DOMImplementation]
     }
     
-    extension [Self <: DOMImplementation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DOMImplementation] (val x: Self) extends AnyVal {
       
       inline def setHasFeature(value: (String, String) => Boolean): Self = StObject.set(x, "hasFeature", js.Any.fromFunction2(value))
     }

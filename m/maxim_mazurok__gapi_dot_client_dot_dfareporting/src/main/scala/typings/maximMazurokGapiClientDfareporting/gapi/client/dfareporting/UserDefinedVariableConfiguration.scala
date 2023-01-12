@@ -22,7 +22,8 @@ object UserDefinedVariableConfiguration {
     __obj.asInstanceOf[UserDefinedVariableConfiguration]
   }
   
-  extension [Self <: UserDefinedVariableConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserDefinedVariableConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

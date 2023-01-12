@@ -16,7 +16,8 @@ object TopKInputs {
     __obj.asInstanceOf[TopKInputs]
   }
   
-  extension [Self <: TopKInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopKInputs] (val x: Self) extends AnyVal {
     
     inline def setX(value: scala.Any): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

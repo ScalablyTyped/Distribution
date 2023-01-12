@@ -23,7 +23,8 @@ object GitImportGitSource {
     __obj.asInstanceOf[GitImportGitSource]
   }
   
-  extension [Self <: GitImportGitSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitImportGitSource] (val x: Self) extends AnyVal {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

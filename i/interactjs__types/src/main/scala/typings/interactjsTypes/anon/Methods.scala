@@ -21,7 +21,8 @@ object Methods {
     __obj.asInstanceOf[Methods]
   }
   
-  extension [Self <: Methods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

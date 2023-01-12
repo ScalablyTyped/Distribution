@@ -155,7 +155,8 @@ object RunJobFlowInput {
     __obj.asInstanceOf[RunJobFlowInput]
   }
   
-  extension [Self <: RunJobFlowInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunJobFlowInput] (val x: Self) extends AnyVal {
     
     inline def setAdditionalInfo(value: XmlString): Self = StObject.set(x, "AdditionalInfo", value.asInstanceOf[js.Any])
     

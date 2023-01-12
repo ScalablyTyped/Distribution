@@ -103,7 +103,8 @@ object HeadObjectRequestwaiterWa {
     __obj.asInstanceOf[HeadObjectRequestwaiterWa]
   }
   
-  extension [Self <: HeadObjectRequestwaiterWa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadObjectRequestwaiterWa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

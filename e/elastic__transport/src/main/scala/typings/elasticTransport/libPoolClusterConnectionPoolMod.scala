@@ -70,7 +70,8 @@ object libPoolClusterConnectionPoolMod {
       __obj.asInstanceOf[ResurrectEvent]
     }
     
-    extension [Self <: ResurrectEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResurrectEvent] (val x: Self) extends AnyVal {
       
       inline def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libPoolClusterConnectionPoolMod {
       __obj.asInstanceOf[ResurrectOptions]
     }
     
-    extension [Self <: ResurrectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResurrectOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

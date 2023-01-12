@@ -15,7 +15,8 @@ object IntervalFormatFallback {
     __obj.asInstanceOf[IntervalFormatFallback]
   }
   
-  extension [Self <: IntervalFormatFallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntervalFormatFallback] (val x: Self) extends AnyVal {
     
     inline def setIntervalFormatFallback(value: String): Self = StObject.set(x, "intervalFormatFallback", value.asInstanceOf[js.Any])
   }

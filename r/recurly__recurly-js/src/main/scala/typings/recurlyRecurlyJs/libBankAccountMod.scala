@@ -26,7 +26,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setAccount_number(value: String): Self = StObject.set(x, "account_number", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BacsBillingInfo]
     }
     
-    extension [Self <: BacsBillingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BacsBillingInfo] (val x: Self) extends AnyVal {
       
       inline def setSort_code(value: String): Self = StObject.set(x, "sort_code", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BankAccountBillingInfo]
     }
     
-    extension [Self <: BankAccountBillingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankAccountBillingInfo] (val x: Self) extends AnyVal {
       
       inline def setRouting_number(value: String): Self = StObject.set(x, "routing_number", value.asInstanceOf[js.Any])
     }
@@ -130,7 +133,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BankInfoOptions]
     }
     
-    extension [Self <: BankInfoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankInfoOptions] (val x: Self) extends AnyVal {
       
       inline def setRoutingNumber(value: String): Self = StObject.set(x, "routingNumber", value.asInstanceOf[js.Any])
     }
@@ -150,7 +154,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BankInfoPayload]
     }
     
-    extension [Self <: BankInfoPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BankInfoPayload] (val x: Self) extends AnyVal {
       
       inline def setBank_name(value: String): Self = StObject.set(x, "bank_name", value.asInstanceOf[js.Any])
     }
@@ -178,7 +183,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BecsBillingInfo]
     }
     
-    extension [Self <: BecsBillingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BecsBillingInfo] (val x: Self) extends AnyVal {
       
       inline def setBranch_code(value: String): Self = StObject.set(x, "branch_code", value.asInstanceOf[js.Any])
       
@@ -258,7 +264,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[BillingInfoCommonFields]
     }
     
-    extension [Self <: BillingInfoCommonFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BillingInfoCommonFields] (val x: Self) extends AnyVal {
       
       inline def setAddress1(value: String): Self = StObject.set(x, "address1", value.asInstanceOf[js.Any])
       
@@ -311,7 +318,8 @@ object libBankAccountMod {
       __obj.asInstanceOf[SepaBillingInfo]
     }
     
-    extension [Self <: SepaBillingInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SepaBillingInfo] (val x: Self) extends AnyVal {
       
       inline def setIban(value: String): Self = StObject.set(x, "iban", value.asInstanceOf[js.Any])
     }

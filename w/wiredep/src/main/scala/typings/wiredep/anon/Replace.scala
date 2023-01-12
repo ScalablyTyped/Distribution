@@ -23,7 +23,8 @@ object Replace {
     __obj.asInstanceOf[Replace]
   }
   
-  extension [Self <: Replace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: js.RegExp): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

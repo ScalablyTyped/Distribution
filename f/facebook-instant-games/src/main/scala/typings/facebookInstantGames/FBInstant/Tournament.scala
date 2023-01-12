@@ -67,7 +67,8 @@ object Tournament {
     __obj.asInstanceOf[Tournament]
   }
   
-  extension [Self <: Tournament](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tournament] (val x: Self) extends AnyVal {
     
     inline def setGetContextID(value: () => String): Self = StObject.set(x, "getContextID", js.Any.fromFunction0(value))
     

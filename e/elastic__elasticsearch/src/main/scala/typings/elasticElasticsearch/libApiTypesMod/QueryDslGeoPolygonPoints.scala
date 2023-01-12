@@ -15,7 +15,8 @@ object QueryDslGeoPolygonPoints {
     __obj.asInstanceOf[QueryDslGeoPolygonPoints]
   }
   
-  extension [Self <: QueryDslGeoPolygonPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslGeoPolygonPoints] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: js.Array[GeoLocation]): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
     

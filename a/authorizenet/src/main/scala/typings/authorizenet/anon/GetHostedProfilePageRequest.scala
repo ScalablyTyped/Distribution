@@ -15,7 +15,8 @@ object GetHostedProfilePageRequest {
     __obj.asInstanceOf[GetHostedProfilePageRequest]
   }
   
-  extension [Self <: GetHostedProfilePageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHostedProfilePageRequest] (val x: Self) extends AnyVal {
     
     inline def setGetHostedProfilePageRequest(value: typings.authorizenet.mod.APIContracts.GetHostedProfilePageRequest): Self = StObject.set(x, "getHostedProfilePageRequest", value.asInstanceOf[js.Any])
   }

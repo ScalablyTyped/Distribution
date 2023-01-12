@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsInspectorMod extends Shortcu
       __obj.asInstanceOf[InspectorProps]
     }
     
-    extension [Self <: InspectorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InspectorProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

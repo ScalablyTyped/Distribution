@@ -51,7 +51,8 @@ object TextEncodeEntry {
     __obj.asInstanceOf[TextEncodeEntry]
   }
   
-  extension [Self <: TextEncodeEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEncodeEntry] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object DataRecipientsStatusList {
     __obj.asInstanceOf[DataRecipientsStatusList]
   }
   
-  extension [Self <: DataRecipientsStatusList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRecipientsStatusList] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[Status]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

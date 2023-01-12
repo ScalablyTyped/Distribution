@@ -29,7 +29,8 @@ object IngestCsvProcessor {
     __obj.asInstanceOf[IngestCsvProcessor]
   }
   
-  extension [Self <: IngestCsvProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestCsvProcessor] (val x: Self) extends AnyVal {
     
     inline def setEmpty_value(value: Any): Self = StObject.set(x, "empty_value", value.asInstanceOf[js.Any])
     

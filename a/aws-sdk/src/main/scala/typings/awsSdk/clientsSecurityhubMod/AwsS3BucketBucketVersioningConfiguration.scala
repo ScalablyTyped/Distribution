@@ -23,7 +23,8 @@ object AwsS3BucketBucketVersioningConfiguration {
     __obj.asInstanceOf[AwsS3BucketBucketVersioningConfiguration]
   }
   
-  extension [Self <: AwsS3BucketBucketVersioningConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketBucketVersioningConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIsMfaDeleteEnabled(value: Boolean): Self = StObject.set(x, "IsMfaDeleteEnabled", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Imagejpeg]
     }
     
-    extension [Self <: Imagejpeg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Imagejpeg] (val x: Self) extends AnyVal {
       
       inline def setImageSlashjpeg(value: js.Array[String]): Self = StObject.set(x, "image/jpeg", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object anon {
       __obj.asInstanceOf[ImagejpegDecoderFn]
     }
     
-    extension [Self <: ImagejpegDecoderFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagejpegDecoderFn] (val x: Self) extends AnyVal {
       
       inline def setImageSlashjpeg(value: /* data */ Buffer => Bitmap): Self = StObject.set(x, "image/jpeg", js.Any.fromFunction1(value))
     }
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[ImagejpegEncoderFn]
     }
     
-    extension [Self <: ImagejpegEncoderFn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagejpegEncoderFn] (val x: Self) extends AnyVal {
       
       inline def setImageSlashjpeg(value: Image => Buffer): Self = StObject.set(x, "image/jpeg", js.Any.fromFunction1(value))
     }
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[MIMEJPEG]
     }
     
-    extension [Self <: MIMEJPEG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MIMEJPEG] (val x: Self) extends AnyVal {
       
       inline def setMIME_JPEG(value: imageSlashjpeg): Self = StObject.set(x, "MIME_JPEG", value.asInstanceOf[js.Any])
     }

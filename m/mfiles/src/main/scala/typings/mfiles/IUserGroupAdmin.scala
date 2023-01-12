@@ -29,7 +29,8 @@ object IUserGroupAdmin {
     __obj.asInstanceOf[IUserGroupAdmin]
   }
   
-  extension [Self <: IUserGroupAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUserGroupAdmin] (val x: Self) extends AnyVal {
     
     inline def setAccessControlList(value: IAccessControlList): Self = StObject.set(x, "AccessControlList", value.asInstanceOf[js.Any])
     

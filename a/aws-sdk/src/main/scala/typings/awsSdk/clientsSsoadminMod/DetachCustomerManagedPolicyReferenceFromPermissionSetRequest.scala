@@ -32,7 +32,8 @@ object DetachCustomerManagedPolicyReferenceFromPermissionSetRequest {
     __obj.asInstanceOf[DetachCustomerManagedPolicyReferenceFromPermissionSetRequest]
   }
   
-  extension [Self <: DetachCustomerManagedPolicyReferenceFromPermissionSetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachCustomerManagedPolicyReferenceFromPermissionSetRequest] (val x: Self) extends AnyVal {
     
     inline def setCustomerManagedPolicyReference(value: CustomerManagedPolicyReference): Self = StObject.set(x, "CustomerManagedPolicyReference", value.asInstanceOf[js.Any])
     

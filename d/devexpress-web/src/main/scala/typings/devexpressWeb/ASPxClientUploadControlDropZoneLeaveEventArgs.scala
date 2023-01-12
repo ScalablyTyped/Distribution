@@ -23,7 +23,8 @@ object ASPxClientUploadControlDropZoneLeaveEventArgs {
     __obj.asInstanceOf[ASPxClientUploadControlDropZoneLeaveEventArgs]
   }
   
-  extension [Self <: ASPxClientUploadControlDropZoneLeaveEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientUploadControlDropZoneLeaveEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDropZone(value: Any): Self = StObject.set(x, "dropZone", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object GetRegexPatternSetResponse {
     __obj.asInstanceOf[GetRegexPatternSetResponse]
   }
   
-  extension [Self <: GetRegexPatternSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRegexPatternSetResponse] (val x: Self) extends AnyVal {
     
     inline def setLockToken(value: LockToken): Self = StObject.set(x, "LockToken", value.asInstanceOf[js.Any])
     

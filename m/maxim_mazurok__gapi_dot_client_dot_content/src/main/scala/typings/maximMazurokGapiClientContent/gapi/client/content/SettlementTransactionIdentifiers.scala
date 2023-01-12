@@ -31,7 +31,8 @@ object SettlementTransactionIdentifiers {
     __obj.asInstanceOf[SettlementTransactionIdentifiers]
   }
   
-  extension [Self <: SettlementTransactionIdentifiers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementTransactionIdentifiers] (val x: Self) extends AnyVal {
     
     inline def setAdjustmentId(value: String): Self = StObject.set(x, "adjustmentId", value.asInstanceOf[js.Any])
     

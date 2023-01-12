@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonAdvancedsecurityenabledfornewrepositorie
     __obj.asInstanceOf[RequestBodyContentApplicationjsonAdvancedsecurityenabledfornewrepositories]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonAdvancedsecurityenabledfornewrepositories](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonAdvancedsecurityenabledfornewrepositories] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: `57`): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

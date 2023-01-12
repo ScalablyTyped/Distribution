@@ -31,7 +31,8 @@ object GeocodingSummary {
     __obj.asInstanceOf[GeocodingSummary]
   }
   
-  extension [Self <: GeocodingSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingSummary] (val x: Self) extends AnyVal {
     
     inline def setAddressUnderstood(value: Boolean): Self = StObject.set(x, "addressUnderstood", value.asInstanceOf[js.Any])
     

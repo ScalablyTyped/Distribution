@@ -49,7 +49,8 @@ object typesRepositoriesConfigMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setBroadcaster(value: String): Self = StObject.set(x, "broadcaster", value.asInstanceOf[js.Any])
       

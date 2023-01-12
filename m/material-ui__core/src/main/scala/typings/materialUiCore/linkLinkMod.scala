@@ -77,7 +77,8 @@ object linkLinkMod extends Shortcut {
       __obj.asInstanceOf[LinkTypeMap[P, D]]
     }
     
-    extension [Self <: LinkTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (LinkTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (LinkTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: LinkClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

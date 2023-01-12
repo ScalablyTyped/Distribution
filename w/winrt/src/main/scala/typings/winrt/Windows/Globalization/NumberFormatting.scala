@@ -102,7 +102,8 @@ object NumberFormatting {
       __obj.asInstanceOf[ICurrencyFormatter]
     }
     
-    extension [Self <: ICurrencyFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICurrencyFormatter] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     }
@@ -124,7 +125,8 @@ object NumberFormatting {
       __obj.asInstanceOf[ICurrencyFormatterFactory]
     }
     
-    extension [Self <: ICurrencyFormatterFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICurrencyFormatterFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateCurrencyFormatterCode(value: String => CurrencyFormatter): Self = StObject.set(x, "createCurrencyFormatterCode", js.Any.fromFunction1(value))
       
@@ -143,7 +145,8 @@ object NumberFormatting {
       __obj.asInstanceOf[IDecimalFormatterFactory]
     }
     
-    extension [Self <: IDecimalFormatterFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDecimalFormatterFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateDecimalFormatter(value: (IIterable[String], String) => DecimalFormatter): Self = StObject.set(x, "createDecimalFormatter", js.Any.fromFunction2(value))
     }
@@ -160,7 +163,8 @@ object NumberFormatting {
       __obj.asInstanceOf[INumberFormatter]
     }
     
-    extension [Self <: INumberFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumberFormatter] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: Double => String): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     }
@@ -181,7 +185,8 @@ object NumberFormatting {
       __obj.asInstanceOf[INumberFormatter2]
     }
     
-    extension [Self <: INumberFormatter2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumberFormatter2] (val x: Self) extends AnyVal {
       
       inline def setFormatDouble(value: Double => String): Self = StObject.set(x, "formatDouble", js.Any.fromFunction1(value))
       
@@ -228,7 +233,8 @@ object NumberFormatting {
       __obj.asInstanceOf[INumberFormatterOptions]
     }
     
-    extension [Self <: INumberFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumberFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setFractionDigits(value: Double): Self = StObject.set(x, "fractionDigits", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object NumberFormatting {
       __obj.asInstanceOf[INumberParser]
     }
     
-    extension [Self <: INumberParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumberParser] (val x: Self) extends AnyVal {
       
       inline def setParseDouble(value: String => Double): Self = StObject.set(x, "parseDouble", js.Any.fromFunction1(value))
       
@@ -286,7 +293,8 @@ object NumberFormatting {
       __obj.asInstanceOf[IPercentFormatterFactory]
     }
     
-    extension [Self <: IPercentFormatterFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPercentFormatterFactory] (val x: Self) extends AnyVal {
       
       inline def setCreatePercentFormatter(value: (IIterable[String], String) => PercentFormatter): Self = StObject.set(x, "createPercentFormatter", js.Any.fromFunction2(value))
     }
@@ -303,7 +311,8 @@ object NumberFormatting {
       __obj.asInstanceOf[IPermilleFormatterFactory]
     }
     
-    extension [Self <: IPermilleFormatterFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPermilleFormatterFactory] (val x: Self) extends AnyVal {
       
       inline def setCreatePermilleFormatter(value: (IIterable[String], String) => PermilleFormatter): Self = StObject.set(x, "createPermilleFormatter", js.Any.fromFunction2(value))
     }

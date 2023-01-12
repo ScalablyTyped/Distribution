@@ -23,7 +23,8 @@ object SolutionStackDescription {
     __obj.asInstanceOf[SolutionStackDescription]
   }
   
-  extension [Self <: SolutionStackDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SolutionStackDescription] (val x: Self) extends AnyVal {
     
     inline def setPermittedFileTypes(value: SolutionStackFileTypeList): Self = StObject.set(x, "PermittedFileTypes", value.asInstanceOf[js.Any])
     

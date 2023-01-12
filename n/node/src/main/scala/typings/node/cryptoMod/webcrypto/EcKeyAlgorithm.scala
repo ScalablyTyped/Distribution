@@ -17,7 +17,8 @@ object EcKeyAlgorithm {
     __obj.asInstanceOf[EcKeyAlgorithm]
   }
   
-  extension [Self <: EcKeyAlgorithm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcKeyAlgorithm] (val x: Self) extends AnyVal {
     
     inline def setNamedCurve(value: NamedCurve): Self = StObject.set(x, "namedCurve", value.asInstanceOf[js.Any])
   }

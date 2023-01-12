@@ -23,7 +23,8 @@ object SectionListScrollParams {
     __obj.asInstanceOf[SectionListScrollParams]
   }
   
-  extension [Self <: SectionListScrollParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SectionListScrollParams] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

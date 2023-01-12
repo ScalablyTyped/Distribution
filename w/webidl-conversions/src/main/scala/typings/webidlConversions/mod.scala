@@ -132,7 +132,8 @@ object mod {
       __obj.asInstanceOf[BufferSourceOptions]
     }
     
-    extension [Self <: BufferSourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferSourceOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowShared(value: Boolean): Self = StObject.set(x, "allowShared", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object mod {
       __obj.asInstanceOf[IntegerOptions]
     }
     
-    extension [Self <: IntegerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IntegerOptions] (val x: Self) extends AnyVal {
       
       inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -225,7 +228,8 @@ object mod {
       __obj.asInstanceOf[StringOptions]
     }
     
-    extension [Self <: StringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringOptions] (val x: Self) extends AnyVal {
       
       inline def setTreatNullAsEmptyString(value: Boolean): Self = StObject.set(x, "treatNullAsEmptyString", value.asInstanceOf[js.Any])
       

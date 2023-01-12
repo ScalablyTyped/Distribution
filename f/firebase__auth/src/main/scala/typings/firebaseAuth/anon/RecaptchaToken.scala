@@ -15,7 +15,8 @@ object RecaptchaToken {
     __obj.asInstanceOf[RecaptchaToken]
   }
   
-  extension [Self <: RecaptchaToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecaptchaToken] (val x: Self) extends AnyVal {
     
     inline def setRecaptchaToken(value: String): Self = StObject.set(x, "recaptchaToken", value.asInstanceOf[js.Any])
   }

@@ -49,7 +49,8 @@ object ApplicationDataContainer {
     __obj.asInstanceOf[ApplicationDataContainer]
   }
   
-  extension [Self <: ApplicationDataContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationDataContainer] (val x: Self) extends AnyVal {
     
     inline def setContainers(value: IMapView[String, ApplicationDataContainer]): Self = StObject.set(x, "containers", value.asInstanceOf[js.Any])
     

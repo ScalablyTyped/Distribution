@@ -359,7 +359,8 @@ object srcNgtscTypecheckSrcTypeCheckBlockMod {
       __obj.asInstanceOf[TcbOp]
     }
     
-    extension [Self <: TcbOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TcbOp] (val x: Self) extends AnyVal {
       
       inline def setCircularFallback(value: () => TcbOp | Expression): Self = StObject.set(x, "circularFallback", js.Any.fromFunction0(value))
       

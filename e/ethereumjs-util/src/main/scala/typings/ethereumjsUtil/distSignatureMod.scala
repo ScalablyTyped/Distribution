@@ -49,7 +49,8 @@ object distSignatureMod {
       __obj.asInstanceOf[ECDSASignature]
     }
     
-    extension [Self <: ECDSASignature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECDSASignature] (val x: Self) extends AnyVal {
       
       inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distSignatureMod {
       __obj.asInstanceOf[ECDSASignatureBuffer]
     }
     
-    extension [Self <: ECDSASignatureBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECDSASignatureBuffer] (val x: Self) extends AnyVal {
       
       inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       

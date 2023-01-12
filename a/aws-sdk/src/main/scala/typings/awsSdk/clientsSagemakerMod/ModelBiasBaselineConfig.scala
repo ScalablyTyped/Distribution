@@ -20,7 +20,8 @@ object ModelBiasBaselineConfig {
     __obj.asInstanceOf[ModelBiasBaselineConfig]
   }
   
-  extension [Self <: ModelBiasBaselineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelBiasBaselineConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseliningJobName(value: ProcessingJobName): Self = StObject.set(x, "BaseliningJobName", value.asInstanceOf[js.Any])
     

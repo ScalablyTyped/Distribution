@@ -176,7 +176,8 @@ object PickViewPropsRefAttributeAccessibilityIgnoresInvertColors {
     __obj.asInstanceOf[PickViewPropsRefAttributeAccessibilityIgnoresInvertColors]
   }
   
-  extension [Self <: PickViewPropsRefAttributeAccessibilityIgnoresInvertColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickViewPropsRefAttributeAccessibilityIgnoresInvertColors] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

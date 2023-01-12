@@ -75,7 +75,8 @@ object buildSrcWrappersWrapperMod {
       __obj.asInstanceOf[IWrappingResult]
     }
     
-    extension [Self <: IWrappingResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWrappingResult] (val x: Self) extends AnyVal {
       
       inline def setNoBrokeWords(value: Double): Self = StObject.set(x, "noBrokeWords", value.asInstanceOf[js.Any])
       

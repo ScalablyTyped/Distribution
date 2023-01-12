@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[OmitChannelOptionscount]
     }
     
-    extension [Self <: OmitChannelOptionscount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitChannelOptionscount] (val x: Self) extends AnyVal {
       
       inline def setBrightness(value: Double): Self = StObject.set(x, "brightness", value.asInstanceOf[js.Any])
       
@@ -96,7 +97,8 @@ object anon {
       __obj.asInstanceOf[SK6812]
     }
     
-    extension [Self <: SK6812](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SK6812] (val x: Self) extends AnyVal {
       
       inline def setSK6812(value: `528384`): Self = StObject.set(x, "SK6812", value.asInstanceOf[js.Any])
       

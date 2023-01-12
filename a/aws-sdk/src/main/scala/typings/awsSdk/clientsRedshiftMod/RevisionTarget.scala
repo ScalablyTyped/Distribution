@@ -28,7 +28,8 @@ object RevisionTarget {
     __obj.asInstanceOf[RevisionTarget]
   }
   
-  extension [Self <: RevisionTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionTarget] (val x: Self) extends AnyVal {
     
     inline def setDatabaseRevision(value: String): Self = StObject.set(x, "DatabaseRevision", value.asInstanceOf[js.Any])
     

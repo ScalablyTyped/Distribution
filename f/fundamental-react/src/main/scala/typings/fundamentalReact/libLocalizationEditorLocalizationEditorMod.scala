@@ -73,7 +73,8 @@ object libLocalizationEditorLocalizationEditorMod {
       __obj.asInstanceOf[LocalizationEditorProps]
     }
     
-    extension [Self <: LocalizationEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizationEditorProps] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       

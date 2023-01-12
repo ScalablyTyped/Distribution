@@ -85,7 +85,8 @@ object libPaypalhttpHttpClientMod {
       __obj.asInstanceOf[HttpRequest[T]]
     }
     
-    extension [Self <: HttpRequest[?], T](x: Self & HttpRequest[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpRequest[?], T] (val x: Self & HttpRequest[T]) extends AnyVal {
       
       inline def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

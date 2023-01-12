@@ -26,7 +26,8 @@ object RelationsResult {
     __obj.asInstanceOf[RelationsResult]
   }
   
-  extension [Self <: RelationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelationsResult] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Array[RelationArgument]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

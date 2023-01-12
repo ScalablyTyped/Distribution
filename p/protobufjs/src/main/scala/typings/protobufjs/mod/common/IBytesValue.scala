@@ -16,7 +16,8 @@ object IBytesValue {
     __obj.asInstanceOf[IBytesValue]
   }
   
-  extension [Self <: IBytesValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBytesValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.typedarray.Uint8Array): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

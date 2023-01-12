@@ -20,7 +20,8 @@ object TupleType {
     __obj.asInstanceOf[TupleType]
   }
   
-  extension [Self <: TupleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TupleType] (val x: Self) extends AnyVal {
     
     inline def setElements(value: ModelToObject[js.Array[typings.typedoc.distLibModelsTypesMod.SomeType]]): Self = StObject.set(x, "elements", value.asInstanceOf[js.Any])
     

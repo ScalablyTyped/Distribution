@@ -21,7 +21,8 @@ object TooltipMessageProps {
     __obj.asInstanceOf[TooltipMessageProps]
   }
   
-  extension [Self <: TooltipMessageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipMessageProps] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

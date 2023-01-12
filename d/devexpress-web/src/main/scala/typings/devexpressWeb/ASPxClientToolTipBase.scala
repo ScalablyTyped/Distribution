@@ -71,7 +71,8 @@ object ASPxClientToolTipBase {
     __obj.asInstanceOf[ASPxClientToolTipBase]
   }
   
-  extension [Self <: ASPxClientToolTipBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientToolTipBase] (val x: Self) extends AnyVal {
     
     inline def setCalculatePosition(value: Any => ASPxClientPoint): Self = StObject.set(x, "CalculatePosition", js.Any.fromFunction1(value))
     

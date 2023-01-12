@@ -24,7 +24,8 @@ object StartZMVerifyOptions {
     __obj.asInstanceOf[StartZMVerifyOptions]
   }
   
-  extension [Self <: StartZMVerifyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartZMVerifyOptions] (val x: Self) extends AnyVal {
     
     inline def setBizNo(value: String): Self = StObject.set(x, "bizNo", value.asInstanceOf[js.Any])
     

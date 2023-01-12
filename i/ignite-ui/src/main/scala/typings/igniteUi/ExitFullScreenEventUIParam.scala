@@ -18,7 +18,8 @@ object ExitFullScreenEventUIParam {
     __obj.asInstanceOf[ExitFullScreenEventUIParam]
   }
   
-  extension [Self <: ExitFullScreenEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExitFullScreenEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setSource(value: String): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

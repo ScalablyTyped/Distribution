@@ -70,7 +70,8 @@ object ImageItem {
     __obj.asInstanceOf[ImageItem]
   }
   
-  extension [Self <: ImageItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageItem] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: () => ImageItem): Self = StObject.set(x, "duplicate", js.Any.fromFunction0(value))
     

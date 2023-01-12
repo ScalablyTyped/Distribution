@@ -33,7 +33,8 @@ object EnableNetworkEmulationOptions {
     __obj.asInstanceOf[EnableNetworkEmulationOptions]
   }
   
-  extension [Self <: EnableNetworkEmulationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableNetworkEmulationOptions] (val x: Self) extends AnyVal {
     
     inline def setDownloadThroughput(value: Double): Self = StObject.set(x, "downloadThroughput", value.asInstanceOf[js.Any])
     

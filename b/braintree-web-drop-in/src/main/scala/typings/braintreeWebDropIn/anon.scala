@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AdditionalInformation]
     }
     
-    extension [Self <: AdditionalInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalInformation] (val x: Self) extends AnyVal {
       
       inline def setAdditionalInformation(value: js.Object): Self = StObject.set(x, "additionalInformation", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[AllowVaultCardOverride]
     }
     
-    extension [Self <: AllowVaultCardOverride](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowVaultCardOverride] (val x: Self) extends AnyVal {
       
       inline def setAllowVaultCardOverride(value: Boolean): Self = StObject.set(x, "allowVaultCardOverride", value.asInstanceOf[js.Any])
       
@@ -119,7 +121,8 @@ object anon {
       __obj.asInstanceOf[BillingAddress]
     }
     
-    extension [Self <: BillingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BillingAddress] (val x: Self) extends AnyVal {
       
       inline def setBillingAddress(value: Address): Self = StObject.set(x, "billingAddress", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object anon {
       __obj.asInstanceOf[Bin]
     }
     
-    extension [Self <: Bin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bin] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -213,7 +217,8 @@ object anon {
       __obj.asInstanceOf[CardHolderName]
     }
     
-    extension [Self <: CardHolderName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHolderName] (val x: Self) extends AnyVal {
       
       inline def setCardHolderName(value: String): Self = StObject.set(x, "cardHolderName", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object anon {
       __obj.asInstanceOf[CardType]
     }
     
-    extension [Self <: CardType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardType] (val x: Self) extends AnyVal {
       
       inline def setBin(value: String): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
       
@@ -296,7 +302,8 @@ object anon {
       __obj.asInstanceOf[Cvv]
     }
     
-    extension [Self <: Cvv](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cvv] (val x: Self) extends AnyVal {
       
       inline def setCvv(value: HostedFieldsField): Self = StObject.set(x, "cvv", value.asInstanceOf[js.Any])
       
@@ -329,7 +336,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: Cvv): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -363,7 +371,8 @@ object anon {
       __obj.asInstanceOf[PartialButtonStyle]
     }
     
-    extension [Self <: PartialButtonStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialButtonStyle] (val x: Self) extends AnyVal {
       
       inline def setColor(value: ButtonColorOption): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -402,7 +411,8 @@ object anon {
       __obj.asInstanceOf[Required]
     }
     
-    extension [Self <: Required](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Required] (val x: Self) extends AnyVal {
       
       inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
       
@@ -421,7 +431,8 @@ object anon {
       __obj.asInstanceOf[Username]
     }
     
-    extension [Self <: Username](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Username] (val x: Self) extends AnyVal {
       
       inline def setUsername(value: String): Self = StObject.set(x, "username", value.asInstanceOf[js.Any])
     }

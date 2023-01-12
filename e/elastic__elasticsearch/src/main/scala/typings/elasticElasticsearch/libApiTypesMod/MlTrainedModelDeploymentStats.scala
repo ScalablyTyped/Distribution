@@ -53,7 +53,8 @@ object MlTrainedModelDeploymentStats {
     __obj.asInstanceOf[MlTrainedModelDeploymentStats]
   }
   
-  extension [Self <: MlTrainedModelDeploymentStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlTrainedModelDeploymentStats] (val x: Self) extends AnyVal {
     
     inline def setAllocation_status(value: MlTrainedModelDeploymentAllocationStatus): Self = StObject.set(x, "allocation_status", value.asInstanceOf[js.Any])
     

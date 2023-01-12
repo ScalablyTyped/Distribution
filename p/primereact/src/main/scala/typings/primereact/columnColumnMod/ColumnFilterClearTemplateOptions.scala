@@ -19,7 +19,8 @@ object ColumnFilterClearTemplateOptions {
     __obj.asInstanceOf[ColumnFilterClearTemplateOptions]
   }
   
-  extension [Self <: ColumnFilterClearTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFilterClearTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

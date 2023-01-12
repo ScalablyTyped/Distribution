@@ -27,7 +27,8 @@ object AddDisposeCallback {
     __obj.asInstanceOf[AddDisposeCallback]
   }
   
-  extension [Self <: AddDisposeCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddDisposeCallback] (val x: Self) extends AnyVal {
     
     inline def setAddDisposeCallback(value: (typings.std.Element, js.Function) => Unit): Self = StObject.set(x, "addDisposeCallback", js.Any.fromFunction2(value))
     

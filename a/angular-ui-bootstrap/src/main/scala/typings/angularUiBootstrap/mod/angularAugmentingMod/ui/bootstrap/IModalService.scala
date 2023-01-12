@@ -25,7 +25,8 @@ object IModalService {
     __obj.asInstanceOf[IModalService]
   }
   
-  extension [Self <: IModalService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IModalService] (val x: Self) extends AnyVal {
     
     inline def setGetPromiseChain(value: () => IPromise[Any]): Self = StObject.set(x, "getPromiseChain", js.Any.fromFunction0(value))
     

@@ -35,7 +35,8 @@ object MlAnalysisConfigRead {
     __obj.asInstanceOf[MlAnalysisConfigRead]
   }
   
-  extension [Self <: MlAnalysisConfigRead](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlAnalysisConfigRead] (val x: Self) extends AnyVal {
     
     inline def setBucket_span(value: Duration): Self = StObject.set(x, "bucket_span", value.asInstanceOf[js.Any])
     

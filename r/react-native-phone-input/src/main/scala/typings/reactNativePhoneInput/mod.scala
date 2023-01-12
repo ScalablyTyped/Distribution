@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[CountriesListItem]
     }
     
-    extension [Self <: CountriesListItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CountriesListItem] (val x: Self) extends AnyVal {
       
       inline def setAreaCodes(value: js.Array[String]): Self = StObject.set(x, "areaCodes", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object mod {
       __obj.asInstanceOf[PickerData]
     }
     
-    extension [Self <: PickerData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerData] (val x: Self) extends AnyVal {
       
       inline def setDialCode(value: String): Self = StObject.set(x, "dialCode", value.asInstanceOf[js.Any])
       
@@ -269,7 +271,8 @@ object mod {
       __obj.asInstanceOf[ReactNativePhoneInputProps[TextComponentType]]
     }
     
-    extension [Self <: ReactNativePhoneInputProps[?], TextComponentType /* <: ComponentType[js.Object] */](x: Self & ReactNativePhoneInputProps[TextComponentType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactNativePhoneInputProps[?], TextComponentType /* <: ComponentType[js.Object] */] (val x: Self & ReactNativePhoneInputProps[TextComponentType]) extends AnyVal {
       
       inline def setAllowZeroAfterCountryCode(value: Boolean): Self = StObject.set(x, "allowZeroAfterCountryCode", value.asInstanceOf[js.Any])
       

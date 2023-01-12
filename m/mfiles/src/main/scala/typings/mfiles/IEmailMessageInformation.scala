@@ -52,7 +52,8 @@ object IEmailMessageInformation {
     __obj.asInstanceOf[IEmailMessageInformation]
   }
   
-  extension [Self <: IEmailMessageInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEmailMessageInformation] (val x: Self) extends AnyVal {
     
     inline def setCc(value: IStrings): Self = StObject.set(x, "Cc", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object LatencyControllerConfig {
     __obj.asInstanceOf[LatencyControllerConfig]
   }
   
-  extension [Self <: LatencyControllerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatencyControllerConfig] (val x: Self) extends AnyVal {
     
     inline def setLiveMaxLatencyDuration(value: Double): Self = StObject.set(x, "liveMaxLatencyDuration", value.asInstanceOf[js.Any])
     

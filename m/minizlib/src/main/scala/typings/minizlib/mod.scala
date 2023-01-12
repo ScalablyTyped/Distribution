@@ -551,7 +551,8 @@ object mod {
       __obj.asInstanceOf[MiniPassOptions]
     }
     
-    extension [Self <: MiniPassOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiniPassOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -633,7 +634,8 @@ object mod {
       __obj.asInstanceOf[ZlibBaseOptions]
     }
     
-    extension [Self <: ZlibBaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZlibBaseOptions] (val x: Self) extends AnyVal {
       
       inline def setFinishFlush(value: Double): Self = StObject.set(x, "finishFlush", value.asInstanceOf[js.Any])
       
@@ -687,7 +689,8 @@ object mod {
       __obj.asInstanceOf[ZlibOptions]
     }
     
-    extension [Self <: ZlibOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZlibOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object DescribeReservedCacheNodesMessage {
     __obj.asInstanceOf[DescribeReservedCacheNodesMessage]
   }
   
-  extension [Self <: DescribeReservedCacheNodesMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedCacheNodesMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheNodeType(value: String): Self = StObject.set(x, "CacheNodeType", value.asInstanceOf[js.Any])
     

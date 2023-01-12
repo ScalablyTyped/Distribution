@@ -23,7 +23,8 @@ object ClosedCaptionButtonProps {
     __obj.asInstanceOf[ClosedCaptionButtonProps]
   }
   
-  extension [Self <: ClosedCaptionButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosedCaptionButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: Any): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

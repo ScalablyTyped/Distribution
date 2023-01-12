@@ -261,7 +261,8 @@ object ViewSettings {
     __obj.asInstanceOf[ViewSettings]
   }
   
-  extension [Self <: ViewSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewSettings] (val x: Self) extends AnyVal {
     
     inline def setHideWhitespace(value: Boolean): Self = StObject.set(x, "HideWhitespace", value.asInstanceOf[js.Any])
     

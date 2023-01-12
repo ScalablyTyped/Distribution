@@ -17,7 +17,8 @@ object ParametersPathGistidQueryPage {
     __obj.asInstanceOf[ParametersPathGistidQueryPage]
   }
   
-  extension [Self <: ParametersPathGistidQueryPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametersPathGistidQueryPage] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathGistidQueryPage): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

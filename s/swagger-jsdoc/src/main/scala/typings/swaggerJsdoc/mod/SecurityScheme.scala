@@ -33,7 +33,8 @@ object SecurityScheme {
     __obj.asInstanceOf[SecurityScheme]
   }
   
-  extension [Self <: SecurityScheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityScheme] (val x: Self) extends AnyVal {
     
     inline def setBearerFormat(value: String): Self = StObject.set(x, "bearerFormat", value.asInstanceOf[js.Any])
     

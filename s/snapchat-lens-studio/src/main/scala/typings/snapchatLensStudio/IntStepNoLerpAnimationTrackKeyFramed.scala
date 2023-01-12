@@ -31,7 +31,8 @@ object IntStepNoLerpAnimationTrackKeyFramed {
     __obj.asInstanceOf[IntStepNoLerpAnimationTrackKeyFramed]
   }
   
-  extension [Self <: IntStepNoLerpAnimationTrackKeyFramed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntStepNoLerpAnimationTrackKeyFramed] (val x: Self) extends AnyVal {
     
     inline def setAddKey(value: (Double, Double) => Unit): Self = StObject.set(x, "addKey", js.Any.fromFunction2(value))
     

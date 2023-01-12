@@ -53,7 +53,8 @@ object FileDescriptorStat {
     __obj.asInstanceOf[FileDescriptorStat]
   }
   
-  extension [Self <: FileDescriptorStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDescriptorStat] (val x: Self) extends AnyVal {
     
     inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     

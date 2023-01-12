@@ -85,7 +85,8 @@ object srcRulesTemplateMod {
       __obj.asInstanceOf[PathTemplateOptions]
     }
     
-    extension [Self <: PathTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setInterpolationEnd(value: String): Self = StObject.set(x, "interpolationEnd", value.asInstanceOf[js.Any])
       

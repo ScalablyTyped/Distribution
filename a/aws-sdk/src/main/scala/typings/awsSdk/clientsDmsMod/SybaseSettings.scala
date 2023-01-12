@@ -48,7 +48,8 @@ object SybaseSettings {
     __obj.asInstanceOf[SybaseSettings]
   }
   
-  extension [Self <: SybaseSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SybaseSettings] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

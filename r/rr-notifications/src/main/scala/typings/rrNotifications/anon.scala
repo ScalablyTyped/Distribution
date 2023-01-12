@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[AnimationDuration]
     }
     
-    extension [Self <: AnimationDuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationDuration] (val x: Self) extends AnyVal {
       
       inline def setAnimationDuration(value: Double): Self = StObject.set(x, "animationDuration", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object anon {
       __obj.asInstanceOf[Payload]
     }
     
-    extension [Self <: Payload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
       
       inline def setPayload(value: NotificationPayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       

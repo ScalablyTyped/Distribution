@@ -23,7 +23,8 @@ object TransformPreviewTransformRequest {
     __obj.asInstanceOf[TransformPreviewTransformRequest]
   }
   
-  extension [Self <: TransformPreviewTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformPreviewTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Dest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

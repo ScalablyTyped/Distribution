@@ -35,7 +35,8 @@ object XSignatureVerifyResultListener {
     __obj.asInstanceOf[XSignatureVerifyResultListener]
   }
   
-  extension [Self <: XSignatureVerifyResultListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSignatureVerifyResultListener] (val x: Self) extends AnyVal {
     
     inline def setSignatureVerified(value: (Double, SecurityOperationStatus) => Unit): Self = StObject.set(x, "signatureVerified", js.Any.fromFunction2(value))
   }

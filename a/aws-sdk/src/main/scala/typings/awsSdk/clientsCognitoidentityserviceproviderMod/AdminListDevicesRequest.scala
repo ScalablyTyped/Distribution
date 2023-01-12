@@ -33,7 +33,8 @@ object AdminListDevicesRequest {
     __obj.asInstanceOf[AdminListDevicesRequest]
   }
   
-  extension [Self <: AdminListDevicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminListDevicesRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: QueryLimitType): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

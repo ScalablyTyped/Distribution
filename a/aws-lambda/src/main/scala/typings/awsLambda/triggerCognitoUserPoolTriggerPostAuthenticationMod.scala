@@ -31,7 +31,8 @@ object triggerCognitoUserPoolTriggerPostAuthenticationMod {
       __obj.asInstanceOf[PostAuthenticationTriggerEvent]
     }
     
-    extension [Self <: PostAuthenticationTriggerEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostAuthenticationTriggerEvent] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: NewDeviceUsed): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     }

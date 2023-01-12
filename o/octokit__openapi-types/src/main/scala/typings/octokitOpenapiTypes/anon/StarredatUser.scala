@@ -21,7 +21,8 @@ object StarredatUser {
     __obj.asInstanceOf[StarredatUser]
   }
   
-  extension [Self <: StarredatUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StarredatUser] (val x: Self) extends AnyVal {
     
     inline def setStarred_at(value: String): Self = StObject.set(x, "starred_at", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object BackgroundLayer {
     __obj.asInstanceOf[BackgroundLayer]
   }
   
-  extension [Self <: BackgroundLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: BackgroundLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

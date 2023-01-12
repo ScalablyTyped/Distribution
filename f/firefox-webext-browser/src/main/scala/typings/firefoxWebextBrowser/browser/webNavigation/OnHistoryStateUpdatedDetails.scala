@@ -44,7 +44,8 @@ object OnHistoryStateUpdatedDetails {
     __obj.asInstanceOf[OnHistoryStateUpdatedDetails]
   }
   
-  extension [Self <: OnHistoryStateUpdatedDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnHistoryStateUpdatedDetails] (val x: Self) extends AnyVal {
     
     inline def setFrameId(value: Double): Self = StObject.set(x, "frameId", value.asInstanceOf[js.Any])
     

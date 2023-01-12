@@ -32,7 +32,8 @@ object CohortsRange {
     __obj.asInstanceOf[CohortsRange]
   }
   
-  extension [Self <: CohortsRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CohortsRange] (val x: Self) extends AnyVal {
     
     inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

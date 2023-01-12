@@ -80,7 +80,8 @@ object TabBarIOSItemProps {
     __obj.asInstanceOf[TabBarIOSItemProps]
   }
   
-  extension [Self <: TabBarIOSItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBarIOSItemProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: String | Double): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

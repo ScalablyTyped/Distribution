@@ -32,7 +32,8 @@ object SnappedSpeedLimitsRequest {
     __obj.asInstanceOf[SnappedSpeedLimitsRequest]
   }
   
-  extension [Self <: SnappedSpeedLimitsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnappedSpeedLimitsRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: js.Array[LatLng]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

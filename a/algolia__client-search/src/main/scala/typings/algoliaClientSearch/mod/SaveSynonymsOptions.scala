@@ -29,7 +29,8 @@ object SaveSynonymsOptions {
     __obj.asInstanceOf[SaveSynonymsOptions]
   }
   
-  extension [Self <: SaveSynonymsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveSynonymsOptions] (val x: Self) extends AnyVal {
     
     inline def setClearExistingSynonyms(value: Boolean): Self = StObject.set(x, "clearExistingSynonyms", value.asInstanceOf[js.Any])
     

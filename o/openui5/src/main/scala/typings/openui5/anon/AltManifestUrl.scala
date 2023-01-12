@@ -80,7 +80,8 @@ object AltManifestUrl {
     __obj.asInstanceOf[AltManifestUrl]
   }
   
-  extension [Self <: AltManifestUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AltManifestUrl] (val x: Self) extends AnyVal {
     
     inline def setActiveTerminologies(value: js.Array[String]): Self = StObject.set(x, "activeTerminologies", value.asInstanceOf[js.Any])
     

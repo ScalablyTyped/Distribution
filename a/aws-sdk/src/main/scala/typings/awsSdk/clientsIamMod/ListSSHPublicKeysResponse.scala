@@ -28,7 +28,8 @@ object ListSSHPublicKeysResponse {
     __obj.asInstanceOf[ListSSHPublicKeysResponse]
   }
   
-  extension [Self <: ListSSHPublicKeysResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSSHPublicKeysResponse] (val x: Self) extends AnyVal {
     
     inline def setIsTruncated(value: booleanType): Self = StObject.set(x, "IsTruncated", value.asInstanceOf[js.Any])
     

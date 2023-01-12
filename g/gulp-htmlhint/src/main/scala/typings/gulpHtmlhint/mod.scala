@@ -36,7 +36,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[FailOnErrorOptions]
       }
       
-      extension [Self <: FailOnErrorOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FailOnErrorOptions] (val x: Self) extends AnyVal {
         
         inline def setSuppress(value: Boolean): Self = StObject.set(x, "suppress", value.asInstanceOf[js.Any])
       }
@@ -53,7 +54,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setHtmlhintrc(value: String): Self = StObject.set(x, "htmlhintrc", value.asInstanceOf[js.Any])
         

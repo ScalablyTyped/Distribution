@@ -19,7 +19,8 @@ object ThrottlingData {
     __obj.asInstanceOf[ThrottlingData]
   }
   
-  extension [Self <: ThrottlingData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrottlingData] (val x: Self) extends AnyVal {
     
     inline def setPeriods(value: Double): Self = StObject.set(x, "periods", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object Tickable {
     __obj.asInstanceOf[Tickable]
   }
   
-  extension [Self <: Tickable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tickable] (val x: Self) extends AnyVal {
     
     inline def setAddModifier(value: Modifier => Tickable): Self = StObject.set(x, "addModifier", js.Any.fromFunction1(value))
     

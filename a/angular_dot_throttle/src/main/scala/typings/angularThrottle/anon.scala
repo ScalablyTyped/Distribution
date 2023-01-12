@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Leading]
     }
     
-    extension [Self <: Leading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leading] (val x: Self) extends AnyVal {
       
       inline def setLeading(value: Boolean): Self = StObject.set(x, "leading", value.asInstanceOf[js.Any])
       

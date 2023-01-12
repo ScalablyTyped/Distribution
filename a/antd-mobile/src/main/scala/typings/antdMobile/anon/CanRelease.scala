@@ -19,7 +19,8 @@ object CanRelease {
     __obj.asInstanceOf[CanRelease]
   }
   
-  extension [Self <: CanRelease](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanRelease] (val x: Self) extends AnyVal {
     
     inline def setCanRelease(value: String): Self = StObject.set(x, "canRelease", value.asInstanceOf[js.Any])
     

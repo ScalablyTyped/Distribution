@@ -21,7 +21,8 @@ object Timer {
     __obj.asInstanceOf[Timer]
   }
   
-  extension [Self <: Timer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timer] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: () => Unit): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
     

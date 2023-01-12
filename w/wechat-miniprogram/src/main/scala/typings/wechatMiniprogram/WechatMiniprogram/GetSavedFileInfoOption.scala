@@ -25,7 +25,8 @@ object GetSavedFileInfoOption {
     __obj.asInstanceOf[GetSavedFileInfoOption]
   }
   
-  extension [Self <: GetSavedFileInfoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavedFileInfoOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

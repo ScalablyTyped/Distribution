@@ -22,7 +22,8 @@ object MetaTrueOptions {
     __obj.asInstanceOf[MetaTrueOptions]
   }
   
-  extension [Self <: MetaTrueOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetaTrueOptions] (val x: Self) extends AnyVal {
     
     inline def setMeta(value: `true`): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

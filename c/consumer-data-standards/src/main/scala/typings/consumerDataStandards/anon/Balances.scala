@@ -21,7 +21,8 @@ object Balances {
     __obj.asInstanceOf[Balances]
   }
   
-  extension [Self <: Balances](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Balances] (val x: Self) extends AnyVal {
     
     inline def setBalances(value: js.Array[AmortisedLimit]): Self = StObject.set(x, "balances", value.asInstanceOf[js.Any])
     

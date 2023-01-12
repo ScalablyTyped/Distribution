@@ -120,7 +120,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[AccountInfo]
     }
     
-    extension [Self <: AccountInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccountInfo] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[GetRoleCredentialsRequest]
     }
     
-    extension [Self <: GetRoleCredentialsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRoleCredentialsRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[GetRoleCredentialsResponse]
     }
     
-    extension [Self <: GetRoleCredentialsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRoleCredentialsResponse] (val x: Self) extends AnyVal {
       
       inline def setRoleCredentials(value: RoleCredentials): Self = StObject.set(x, "roleCredentials", value.asInstanceOf[js.Any])
       
@@ -229,7 +232,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[ListAccountRolesRequest]
     }
     
-    extension [Self <: ListAccountRolesRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListAccountRolesRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -269,7 +273,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[ListAccountRolesResponse]
     }
     
-    extension [Self <: ListAccountRolesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListAccountRolesResponse] (val x: Self) extends AnyVal {
       
       inline def setNextToken(value: String): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
       
@@ -309,7 +314,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[ListAccountsRequest]
     }
     
-    extension [Self <: ListAccountsRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListAccountsRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -345,7 +351,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[ListAccountsResponse]
     }
     
-    extension [Self <: ListAccountsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListAccountsResponse] (val x: Self) extends AnyVal {
       
       inline def setAccountList(value: js.Array[AccountInfo]): Self = StObject.set(x, "accountList", value.asInstanceOf[js.Any])
       
@@ -374,7 +381,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[LogoutRequest]
     }
     
-    extension [Self <: LogoutRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogoutRequest] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -415,7 +423,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[RoleCredentials]
     }
     
-    extension [Self <: RoleCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleCredentials] (val x: Self) extends AnyVal {
       
       inline def setAccessKeyId(value: String): Self = StObject.set(x, "accessKeyId", value.asInstanceOf[js.Any])
       
@@ -454,7 +463,8 @@ object distTypesModelsModels0Mod {
       __obj.asInstanceOf[RoleInfo]
     }
     
-    extension [Self <: RoleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoleInfo] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       

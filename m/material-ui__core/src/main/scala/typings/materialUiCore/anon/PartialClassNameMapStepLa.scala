@@ -36,7 +36,8 @@ object PartialClassNameMapStepLa {
     __obj.asInstanceOf[PartialClassNameMapStepLa]
   }
   
-  extension [Self <: PartialClassNameMapStepLa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapStepLa] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

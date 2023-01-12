@@ -15,7 +15,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setHasTrustToken(value: String => js.Promise[Boolean]): Self = StObject.set(x, "hasTrustToken", js.Any.fromFunction1(value))
   }

@@ -32,7 +32,8 @@ object XTitle {
     __obj.asInstanceOf[XTitle]
   }
   
-  extension [Self <: XTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTitle] (val x: Self) extends AnyVal {
     
     inline def setGetText(value: () => SafeArray[XFormattedString]): Self = StObject.set(x, "getText", js.Any.fromFunction0(value))
     

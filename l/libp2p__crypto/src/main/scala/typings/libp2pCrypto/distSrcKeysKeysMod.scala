@@ -62,7 +62,8 @@ object distSrcKeysKeysMod {
     
     inline def encode(obj: PrivateKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PrivateKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrivateKey] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object distSrcKeysKeysMod {
     
     inline def encode(obj: PublicKey): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: PublicKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublicKey] (val x: Self) extends AnyVal {
       
       inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
       

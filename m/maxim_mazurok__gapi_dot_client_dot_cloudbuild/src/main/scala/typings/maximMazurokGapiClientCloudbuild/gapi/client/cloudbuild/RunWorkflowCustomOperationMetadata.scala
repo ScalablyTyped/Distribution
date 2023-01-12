@@ -37,7 +37,8 @@ object RunWorkflowCustomOperationMetadata {
     __obj.asInstanceOf[RunWorkflowCustomOperationMetadata]
   }
   
-  extension [Self <: RunWorkflowCustomOperationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunWorkflowCustomOperationMetadata] (val x: Self) extends AnyVal {
     
     inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
     

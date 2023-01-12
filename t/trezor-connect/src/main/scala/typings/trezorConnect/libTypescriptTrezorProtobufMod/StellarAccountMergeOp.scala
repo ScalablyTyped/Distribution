@@ -17,7 +17,8 @@ object StellarAccountMergeOp {
     __obj.asInstanceOf[StellarAccountMergeOp]
   }
   
-  extension [Self <: StellarAccountMergeOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StellarAccountMergeOp] (val x: Self) extends AnyVal {
     
     inline def setDestination_account(value: String): Self = StObject.set(x, "destination_account", value.asInstanceOf[js.Any])
     

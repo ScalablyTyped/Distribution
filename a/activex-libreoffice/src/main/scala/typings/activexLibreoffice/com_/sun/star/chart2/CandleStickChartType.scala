@@ -103,7 +103,8 @@ object CandleStickChartType {
     __obj.asInstanceOf[CandleStickChartType]
   }
   
-  extension [Self <: CandleStickChartType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CandleStickChartType] (val x: Self) extends AnyVal {
     
     inline def setBlackDay(value: XPropertySet): Self = StObject.set(x, "BlackDay", value.asInstanceOf[js.Any])
     

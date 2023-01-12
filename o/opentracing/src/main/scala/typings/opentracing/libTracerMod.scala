@@ -144,7 +144,8 @@ object libTracerMod {
       __obj.asInstanceOf[SpanOptions]
     }
     
-    extension [Self <: SpanOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanOptions] (val x: Self) extends AnyVal {
       
       inline def setChildOf(value: typings.opentracing.libSpanMod.default | typings.opentracing.libSpanContextMod.default): Self = StObject.set(x, "childOf", value.asInstanceOf[js.Any])
       

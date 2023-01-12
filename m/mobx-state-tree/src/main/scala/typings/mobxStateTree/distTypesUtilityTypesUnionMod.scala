@@ -525,7 +525,8 @@ object distTypesUtilityTypesUnionMod {
       __obj.asInstanceOf[UnionOptions]
     }
     
-    extension [Self <: UnionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnionOptions] (val x: Self) extends AnyVal {
       
       inline def setDispatcher(value: /* snapshot */ Any => IAnyType): Self = StObject.set(x, "dispatcher", js.Any.fromFunction1(value))
       

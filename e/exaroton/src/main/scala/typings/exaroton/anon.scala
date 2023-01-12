@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[CRASHED]
     }
     
-    extension [Self <: CRASHED](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CRASHED] (val x: Self) extends AnyVal {
       
       inline def setCRASHED(value: `7`): Self = StObject.set(x, "CRASHED", value.asInstanceOf[js.Any])
       
@@ -90,7 +91,8 @@ object anon {
       __obj.asInstanceOf[Console]
     }
     
-    extension [Self <: Console](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Console] (val x: Self) extends AnyVal {
       
       inline def setConsole(value: ConsoleStream): Self = StObject.set(x, "console", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object anon {
       __obj.asInstanceOf[Tail]
     }
     
-    extension [Self <: Tail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tail] (val x: Self) extends AnyVal {
       
       inline def setTail(value: `0`): Self = StObject.set(x, "tail", value.asInstanceOf[js.Any])
     }

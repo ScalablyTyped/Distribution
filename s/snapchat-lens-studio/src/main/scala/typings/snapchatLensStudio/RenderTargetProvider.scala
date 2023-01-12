@@ -50,7 +50,8 @@ object RenderTargetProvider {
     __obj.asInstanceOf[RenderTargetProvider]
   }
   
-  extension [Self <: RenderTargetProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderTargetProvider] (val x: Self) extends AnyVal {
     
     inline def setClearColor(value: vec4): Self = StObject.set(x, "clearColor", value.asInstanceOf[js.Any])
     

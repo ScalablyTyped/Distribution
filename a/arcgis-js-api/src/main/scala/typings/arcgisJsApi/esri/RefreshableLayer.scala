@@ -29,7 +29,8 @@ object RefreshableLayer {
     __obj.asInstanceOf[RefreshableLayer]
   }
   
-  extension [Self <: RefreshableLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshableLayer] (val x: Self) extends AnyVal {
     
     inline def setRefresh(value: () => scala.Unit): Self = StObject.set(x, "refresh", js.Any.fromFunction0(value))
     

@@ -15,7 +15,8 @@ object IMapMarginOptions {
     __obj.asInstanceOf[IMapMarginOptions]
   }
   
-  extension [Self <: IMapMarginOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapMarginOptions] (val x: Self) extends AnyVal {
     
     inline def setUseMapMargin(value: Boolean): Self = StObject.set(x, "useMapMargin", value.asInstanceOf[js.Any])
     

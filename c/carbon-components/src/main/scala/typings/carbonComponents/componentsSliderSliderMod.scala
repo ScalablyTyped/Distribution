@@ -99,7 +99,8 @@ object componentsSliderSliderMod {
       __obj.asInstanceOf[SliderOptions]
     }
     
-    extension [Self <: SliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
       
       inline def setClassDisabled(value: String): Self = StObject.set(x, "classDisabled", value.asInstanceOf[js.Any])
       

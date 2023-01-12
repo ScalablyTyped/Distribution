@@ -19,7 +19,8 @@ object LongRunningPathTemplateBasedRequestPrepareOptions {
     __obj.asInstanceOf[LongRunningPathTemplateBasedRequestPrepareOptions]
   }
   
-  extension [Self <: LongRunningPathTemplateBasedRequestPrepareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongRunningPathTemplateBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
     
     inline def setDeserializationMapperForTerminalResponse(value: Mapper): Self = StObject.set(x, "deserializationMapperForTerminalResponse", value.asInstanceOf[js.Any])
     

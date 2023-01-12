@@ -23,7 +23,8 @@ object ECSService {
     __obj.asInstanceOf[ECSService]
   }
   
-  extension [Self <: ECSService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECSService] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: ECSClusterName): Self = StObject.set(x, "clusterName", value.asInstanceOf[js.Any])
     

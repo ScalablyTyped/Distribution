@@ -23,7 +23,8 @@ object CreatePortalResponse {
     __obj.asInstanceOf[CreatePortalResponse]
   }
   
-  extension [Self <: CreatePortalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePortalResponse] (val x: Self) extends AnyVal {
     
     inline def setPortalArn(value: ARN): Self = StObject.set(x, "portalArn", value.asInstanceOf[js.Any])
     

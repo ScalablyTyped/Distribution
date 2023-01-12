@@ -19,7 +19,8 @@ object StockChartDragEndEvent {
     __obj.asInstanceOf[StockChartDragEndEvent]
   }
   
-  extension [Self <: StockChartDragEndEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartDragEndEvent] (val x: Self) extends AnyVal {
     
     inline def setAxisRanges(value: Any): Self = StObject.set(x, "axisRanges", value.asInstanceOf[js.Any])
     

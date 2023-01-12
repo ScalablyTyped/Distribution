@@ -17,7 +17,8 @@ object RolePage {
     __obj.asInstanceOf[RolePage]
   }
   
-  extension [Self <: RolePage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RolePage] (val x: Self) extends AnyVal {
     
     inline def setRoles(value: js.Array[Role]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

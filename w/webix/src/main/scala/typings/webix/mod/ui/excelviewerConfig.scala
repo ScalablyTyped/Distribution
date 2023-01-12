@@ -208,7 +208,8 @@ object excelviewerConfig {
     __obj.asInstanceOf[excelviewerConfig]
   }
   
-  extension [Self <: excelviewerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: excelviewerConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

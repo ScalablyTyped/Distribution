@@ -28,7 +28,8 @@ object SecurityConfiguration {
     __obj.asInstanceOf[SecurityConfiguration]
   }
   
-  extension [Self <: SecurityConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimeStamp(value: js.Date): Self = StObject.set(x, "CreatedTimeStamp", value.asInstanceOf[js.Any])
     

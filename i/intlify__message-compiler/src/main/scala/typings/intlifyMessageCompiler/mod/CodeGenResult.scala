@@ -20,7 +20,8 @@ object CodeGenResult {
     __obj.asInstanceOf[CodeGenResult]
   }
   
-  extension [Self <: CodeGenResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeGenResult] (val x: Self) extends AnyVal {
     
     inline def setAst(value: ResourceNode): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyBag]
     }
     
-    extension [Self <: ReadonlyBag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyBag] (val x: Self) extends AnyVal {
       
       inline def setDrake(value: Drake): Self = StObject.set(x, "drake", value.asInstanceOf[js.Any])
       

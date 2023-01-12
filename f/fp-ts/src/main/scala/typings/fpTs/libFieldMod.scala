@@ -46,7 +46,8 @@ object libFieldMod {
       __obj.asInstanceOf[Field[A]]
     }
     
-    extension [Self <: Field[?], A](x: Self & Field[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field[?], A] (val x: Self & Field[A]) extends AnyVal {
       
       inline def setDegree(value: A => Double): Self = StObject.set(x, "degree", js.Any.fromFunction1(value))
       

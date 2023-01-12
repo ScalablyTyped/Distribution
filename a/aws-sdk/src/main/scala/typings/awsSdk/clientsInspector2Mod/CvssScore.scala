@@ -33,7 +33,8 @@ object CvssScore {
     __obj.asInstanceOf[CvssScore]
   }
   
-  extension [Self <: CvssScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CvssScore] (val x: Self) extends AnyVal {
     
     inline def setBaseScore(value: Double): Self = StObject.set(x, "baseScore", value.asInstanceOf[js.Any])
     

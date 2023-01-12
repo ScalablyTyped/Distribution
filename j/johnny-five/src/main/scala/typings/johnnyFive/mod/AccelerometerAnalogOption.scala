@@ -25,7 +25,8 @@ object AccelerometerAnalogOption {
     __obj.asInstanceOf[AccelerometerAnalogOption]
   }
   
-  extension [Self <: AccelerometerAnalogOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccelerometerAnalogOption] (val x: Self) extends AnyVal {
     
     inline def setAref(value: Double): Self = StObject.set(x, "aref", value.asInstanceOf[js.Any])
     

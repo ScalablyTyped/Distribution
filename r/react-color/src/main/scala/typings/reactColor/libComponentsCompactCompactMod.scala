@@ -37,7 +37,8 @@ object libComponentsCompactCompactMod {
       __obj.asInstanceOf[CompactPickerProps]
     }
     
-    extension [Self <: CompactPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompactPickerProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object libComponentsCompactCompactMod {
       __obj.asInstanceOf[CompactPickerStylesProps]
     }
     
-    extension [Self <: CompactPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompactPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setClear(value: CSSProperties): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

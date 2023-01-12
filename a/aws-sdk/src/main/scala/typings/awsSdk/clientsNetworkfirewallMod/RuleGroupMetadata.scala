@@ -23,7 +23,8 @@ object RuleGroupMetadata {
     __obj.asInstanceOf[RuleGroupMetadata]
   }
   
-  extension [Self <: RuleGroupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DefaultInitEventType {
     __obj.asInstanceOf[DefaultInitEventType]
   }
   
-  extension [Self <: DefaultInitEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultInitEventType] (val x: Self) extends AnyVal {
     
     inline def setDefaultInit(value: EventInit): Self = StObject.set(x, "defaultInit", value.asInstanceOf[js.Any])
     

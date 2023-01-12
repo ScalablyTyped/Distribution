@@ -39,7 +39,8 @@ object EvidenceReportRelatesToTarget {
     __obj.asInstanceOf[EvidenceReportRelatesToTarget]
   }
   
-  extension [Self <: EvidenceReportRelatesToTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvidenceReportRelatesToTarget] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

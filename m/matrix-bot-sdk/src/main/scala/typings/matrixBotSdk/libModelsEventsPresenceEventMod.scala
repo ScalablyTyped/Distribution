@@ -57,7 +57,8 @@ object libModelsEventsPresenceEventMod {
       __obj.asInstanceOf[PresenceEventContent]
     }
     
-    extension [Self <: PresenceEventContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PresenceEventContent] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       

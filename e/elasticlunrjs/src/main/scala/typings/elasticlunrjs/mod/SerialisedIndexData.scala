@@ -32,7 +32,8 @@ object SerialisedIndexData {
     __obj.asInstanceOf[SerialisedIndexData[T]]
   }
   
-  extension [Self <: SerialisedIndexData[?], T](x: Self & SerialisedIndexData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialisedIndexData[?], T] (val x: Self & SerialisedIndexData[T]) extends AnyVal {
     
     inline def setDocumentStore(value: SerialisedDocumentStore[T]): Self = StObject.set(x, "documentStore", value.asInstanceOf[js.Any])
     

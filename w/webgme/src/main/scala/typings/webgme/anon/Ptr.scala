@@ -17,7 +17,8 @@ object Ptr {
     __obj.asInstanceOf[Ptr]
   }
   
-  extension [Self <: Ptr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ptr] (val x: Self) extends AnyVal {
     
     inline def setPtr(value: MetaCardRulemin1max1): Self = StObject.set(x, "ptr", value.asInstanceOf[js.Any])
     

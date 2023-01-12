@@ -21,7 +21,8 @@ object RequestUpdateCheckCallbackDetailsType {
     __obj.asInstanceOf[RequestUpdateCheckCallbackDetailsType]
   }
   
-  extension [Self <: RequestUpdateCheckCallbackDetailsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestUpdateCheckCallbackDetailsType] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: String): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
   }

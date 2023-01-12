@@ -53,7 +53,8 @@ object InputDeviceHdSettings {
     __obj.asInstanceOf[InputDeviceHdSettings]
   }
   
-  extension [Self <: InputDeviceHdSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDeviceHdSettings] (val x: Self) extends AnyVal {
     
     inline def setActiveInput(value: InputDeviceActiveInput): Self = StObject.set(x, "ActiveInput", value.asInstanceOf[js.Any])
     

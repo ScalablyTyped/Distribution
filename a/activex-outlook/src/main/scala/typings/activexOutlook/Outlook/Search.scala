@@ -58,7 +58,8 @@ object Search {
     __obj.asInstanceOf[Search]
   }
   
-  extension [Self <: Search](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Search] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

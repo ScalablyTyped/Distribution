@@ -76,7 +76,8 @@ object PropertyDefinition {
     __obj.asInstanceOf[PropertyDefinition]
   }
   
-  extension [Self <: PropertyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyDefinition] (val x: Self) extends AnyVal {
     
     inline def setBooleanPropertyOptions(value: BooleanPropertyOptions): Self = StObject.set(x, "booleanPropertyOptions", value.asInstanceOf[js.Any])
     

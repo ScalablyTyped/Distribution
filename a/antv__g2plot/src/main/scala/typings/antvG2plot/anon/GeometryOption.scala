@@ -23,7 +23,8 @@ object GeometryOption {
     __obj.asInstanceOf[GeometryOption]
   }
   
-  extension [Self <: GeometryOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeometryOption] (val x: Self) extends AnyVal {
     
     inline def setGeometryOption(value: typings.antvG2plot.libPlotsDualAxesTypesMod.GeometryOption): Self = StObject.set(x, "geometryOption", value.asInstanceOf[js.Any])
     

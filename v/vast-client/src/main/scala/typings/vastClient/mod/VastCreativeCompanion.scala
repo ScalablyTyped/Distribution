@@ -18,7 +18,8 @@ object VastCreativeCompanion {
     __obj.asInstanceOf[VastCreativeCompanion]
   }
   
-  extension [Self <: VastCreativeCompanion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VastCreativeCompanion] (val x: Self) extends AnyVal {
     
     inline def setVariations(value: js.Array[VastCompanionAd]): Self = StObject.set(x, "variations", value.asInstanceOf[js.Any])
     

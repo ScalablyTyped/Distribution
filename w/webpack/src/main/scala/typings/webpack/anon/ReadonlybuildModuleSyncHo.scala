@@ -520,7 +520,8 @@ object ReadonlybuildModuleSyncHo {
     __obj.asInstanceOf[ReadonlybuildModuleSyncHo]
   }
   
-  extension [Self <: ReadonlybuildModuleSyncHo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlybuildModuleSyncHo] (val x: Self) extends AnyVal {
     
     inline def setAddEntry(
       value: SyncHook[

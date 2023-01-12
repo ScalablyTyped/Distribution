@@ -14,7 +14,8 @@ object StyleSheet {
   @js.native
   val ^ : StyleSheet = js.native
   
-  extension [Self <: StyleSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheet] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: StyleObj => StyleObj): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
   }

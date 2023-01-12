@@ -18,7 +18,8 @@ object ContactData {
     __obj.asInstanceOf[ContactData]
   }
   
-  extension [Self <: ContactData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactData] (val x: Self) extends AnyVal {
     
     inline def setContactData(value: Channel): Self = StObject.set(x, "ContactData", value.asInstanceOf[js.Any])
     

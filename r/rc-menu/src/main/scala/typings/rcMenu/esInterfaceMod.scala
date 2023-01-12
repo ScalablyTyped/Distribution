@@ -35,7 +35,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[ItemSharedProps]
     }
     
-    extension [Self <: ItemSharedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemSharedProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MenuDividerType]
     }
     
-    extension [Self <: MenuDividerType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDividerType] (val x: Self) extends AnyVal {
       
       inline def setType(value: divider): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -104,7 +106,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MenuInfo]
     }
     
-    extension [Self <: MenuInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuInfo] (val x: Self) extends AnyVal {
       
       inline def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MenuItemGroupType]
     }
     
-    extension [Self <: MenuItemGroupType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemGroupType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -179,7 +183,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MenuItemType]
     }
     
-    extension [Self <: MenuItemType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuItemType] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -252,7 +257,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[MenuTitleInfo]
     }
     
-    extension [Self <: MenuTitleInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuTitleInfo] (val x: Self) extends AnyVal {
       
       inline def setDomEvent(value: (MouseEvent[HTMLElement, NativeMouseEvent]) | KeyboardEvent[HTMLElement]): Self = StObject.set(x, "domEvent", value.asInstanceOf[js.Any])
       
@@ -277,7 +283,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[RenderIconInfo]
     }
     
-    extension [Self <: RenderIconInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderIconInfo] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -320,7 +327,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[SelectInfo]
     }
     
-    extension [Self <: SelectInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectInfo] (val x: Self) extends AnyVal {
       
       inline def setSelectedKeys(value: js.Array[String]): Self = StObject.set(x, "selectedKeys", value.asInstanceOf[js.Any])
       
@@ -370,7 +378,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[SubMenuType]
     }
     
-    extension [Self <: SubMenuType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubMenuType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ItemType]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

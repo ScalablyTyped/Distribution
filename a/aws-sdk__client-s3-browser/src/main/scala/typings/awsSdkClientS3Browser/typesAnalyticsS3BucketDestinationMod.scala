@@ -36,7 +36,8 @@ object typesAnalyticsS3BucketDestinationMod {
       __obj.asInstanceOf[AnalyticsS3BucketDestination]
     }
     
-    extension [Self <: AnalyticsS3BucketDestination](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsS3BucketDestination] (val x: Self) extends AnyVal {
       
       inline def setBucket(value: String): Self = StObject.set(x, "Bucket", value.asInstanceOf[js.Any])
       

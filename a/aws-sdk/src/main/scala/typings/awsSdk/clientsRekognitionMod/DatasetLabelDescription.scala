@@ -23,7 +23,8 @@ object DatasetLabelDescription {
     __obj.asInstanceOf[DatasetLabelDescription]
   }
   
-  extension [Self <: DatasetLabelDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetLabelDescription] (val x: Self) extends AnyVal {
     
     inline def setLabelName(value: DatasetLabel): Self = StObject.set(x, "LabelName", value.asInstanceOf[js.Any])
     

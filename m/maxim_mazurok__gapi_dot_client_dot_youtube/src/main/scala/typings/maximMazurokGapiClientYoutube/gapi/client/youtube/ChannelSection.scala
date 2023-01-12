@@ -36,7 +36,8 @@ object ChannelSection {
     __obj.asInstanceOf[ChannelSection]
   }
   
-  extension [Self <: ChannelSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelSection] (val x: Self) extends AnyVal {
     
     inline def setContentDetails(value: ChannelSectionContentDetails): Self = StObject.set(x, "contentDetails", value.asInstanceOf[js.Any])
     

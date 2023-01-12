@@ -34,7 +34,8 @@ object utilsUploadMediaMod {
       __obj.asInstanceOf[MediaItem]
     }
     
-    extension [Self <: MediaItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaItem] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       
@@ -122,7 +123,8 @@ object utilsUploadMediaMod {
       __obj.asInstanceOf[UploadMediaOptions]
     }
     
-    extension [Self <: UploadMediaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadMediaOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalData(value: Record[String, Any]): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
       

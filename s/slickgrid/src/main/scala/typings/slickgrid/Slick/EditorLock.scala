@@ -64,7 +64,8 @@ object EditorLock {
     __obj.asInstanceOf[EditorLock[T]]
   }
   
-  extension [Self <: EditorLock[?], T /* <: SlickData */](x: Self & EditorLock[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorLock[?], T /* <: SlickData */] (val x: Self & EditorLock[T]) extends AnyVal {
     
     inline def setActivate(value: Editor[T] => Unit): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     

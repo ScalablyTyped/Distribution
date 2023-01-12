@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Fixture]
     }
     
-    extension [Self <: Fixture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fixture] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -152,7 +153,8 @@ object mod {
       __obj.asInstanceOf[GeosuggestProps]
     }
     
-    extension [Self <: GeosuggestProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeosuggestProps] (val x: Self) extends AnyVal {
       
       inline def setAutoActivateFirstSuggest(value: Boolean): Self = StObject.set(x, "autoActivateFirstSuggest", value.asInstanceOf[js.Any])
       
@@ -360,7 +362,8 @@ object mod {
       __obj.asInstanceOf[Styles]
     }
     
-    extension [Self <: Styles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Styles] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Record[String, Any]): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -393,7 +396,8 @@ object mod {
       __obj.asInstanceOf[Suggest]
     }
     
-    extension [Self <: Suggest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Suggest] (val x: Self) extends AnyVal {
       
       inline def setGmaps(value: GeocoderResult): Self = StObject.set(x, "gmaps", value.asInstanceOf[js.Any])
       

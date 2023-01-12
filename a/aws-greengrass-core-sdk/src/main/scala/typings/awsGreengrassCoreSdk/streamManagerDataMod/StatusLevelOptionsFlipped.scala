@@ -33,7 +33,8 @@ object StatusLevelOptionsFlipped {
     __obj.asInstanceOf[StatusLevelOptionsFlipped]
   }
   
-  extension [Self <: StatusLevelOptionsFlipped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusLevelOptionsFlipped] (val x: Self) extends AnyVal {
     
     inline def set0(value: ERROR): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

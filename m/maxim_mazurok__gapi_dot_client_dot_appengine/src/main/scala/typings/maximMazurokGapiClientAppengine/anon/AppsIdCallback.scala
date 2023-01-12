@@ -63,7 +63,8 @@ object AppsIdCallback {
     __obj.asInstanceOf[AppsIdCallback]
   }
   
-  extension [Self <: AppsIdCallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsIdCallback] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PutAutoScalingPolicyOutput {
     __obj.asInstanceOf[PutAutoScalingPolicyOutput]
   }
   
-  extension [Self <: PutAutoScalingPolicyOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAutoScalingPolicyOutput] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingPolicy(value: AutoScalingPolicyDescription): Self = StObject.set(x, "AutoScalingPolicy", value.asInstanceOf[js.Any])
     

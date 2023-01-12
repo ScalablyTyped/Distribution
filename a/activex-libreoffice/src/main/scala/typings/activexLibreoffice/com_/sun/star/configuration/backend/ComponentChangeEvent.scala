@@ -24,7 +24,8 @@ object ComponentChangeEvent {
     __obj.asInstanceOf[ComponentChangeEvent]
   }
   
-  extension [Self <: ComponentChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: String): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])
   }

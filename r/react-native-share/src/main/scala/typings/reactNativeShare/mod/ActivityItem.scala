@@ -20,7 +20,8 @@ object ActivityItem {
     __obj.asInstanceOf[ActivityItem]
   }
   
-  extension [Self <: ActivityItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActivityItem] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

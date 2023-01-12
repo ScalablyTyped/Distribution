@@ -28,7 +28,8 @@ object StartPolicyGenerationRequest {
     __obj.asInstanceOf[StartPolicyGenerationRequest]
   }
   
-  extension [Self <: StartPolicyGenerationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPolicyGenerationRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

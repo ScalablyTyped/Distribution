@@ -59,7 +59,8 @@ object sizeSizeSharedProps {
     __obj.asInstanceOf[sizeSizeSharedProps]
   }
   
-  extension [Self <: sizeSizeSharedProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: sizeSizeSharedProps] (val x: Self) extends AnyVal {
     
     inline def set$adjoined(value: typings.baseui.inputTypesMod.Adjoined): Self = StObject.set(x, "$adjoined", value.asInstanceOf[js.Any])
     

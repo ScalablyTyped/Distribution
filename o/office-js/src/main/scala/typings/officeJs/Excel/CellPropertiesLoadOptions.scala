@@ -67,7 +67,8 @@ object CellPropertiesLoadOptions {
     __obj.asInstanceOf[CellPropertiesLoadOptions]
   }
   
-  extension [Self <: CellPropertiesLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellPropertiesLoadOptions] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Boolean): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

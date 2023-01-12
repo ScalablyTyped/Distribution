@@ -24,7 +24,8 @@ object typesSdkinfoMod {
       __obj.asInstanceOf[SdkInfo]
     }
     
-    extension [Self <: SdkInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SdkInfo] (val x: Self) extends AnyVal {
       
       inline def setIntegrations(value: js.Array[String]): Self = StObject.set(x, "integrations", value.asInstanceOf[js.Any])
       

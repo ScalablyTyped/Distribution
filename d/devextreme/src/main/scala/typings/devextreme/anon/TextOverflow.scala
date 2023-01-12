@@ -28,7 +28,8 @@ object TextOverflow {
     __obj.asInstanceOf[TextOverflow]
   }
   
-  extension [Self <: TextOverflow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextOverflow] (val x: Self) extends AnyVal {
     
     inline def setFont(value: typings.devextreme.mod.DevExpress.viz.Font): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
     

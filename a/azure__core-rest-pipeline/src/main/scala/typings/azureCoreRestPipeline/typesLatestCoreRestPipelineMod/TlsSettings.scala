@@ -61,7 +61,8 @@ object TlsSettings {
     __obj.asInstanceOf[TlsSettings]
   }
   
-  extension [Self <: TlsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlsSettings] (val x: Self) extends AnyVal {
     
     inline def setCa(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
     

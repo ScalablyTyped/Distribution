@@ -43,7 +43,8 @@ object LaunchConfig {
     __obj.asInstanceOf[LaunchConfig]
   }
   
-  extension [Self <: LaunchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchConfig] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: CommandList): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

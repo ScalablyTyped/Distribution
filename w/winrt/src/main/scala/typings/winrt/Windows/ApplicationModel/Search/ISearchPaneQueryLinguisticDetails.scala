@@ -24,7 +24,8 @@ object ISearchPaneQueryLinguisticDetails {
     __obj.asInstanceOf[ISearchPaneQueryLinguisticDetails]
   }
   
-  extension [Self <: ISearchPaneQueryLinguisticDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchPaneQueryLinguisticDetails] (val x: Self) extends AnyVal {
     
     inline def setQueryTextAlternatives(value: IVectorView[String]): Self = StObject.set(x, "queryTextAlternatives", value.asInstanceOf[js.Any])
     

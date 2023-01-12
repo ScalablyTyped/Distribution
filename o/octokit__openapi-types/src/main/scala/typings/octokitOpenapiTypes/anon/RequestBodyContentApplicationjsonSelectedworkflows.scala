@@ -23,7 +23,8 @@ object RequestBodyContentApplicationjsonSelectedworkflows {
     __obj.asInstanceOf[RequestBodyContentApplicationjsonSelectedworkflows]
   }
   
-  extension [Self <: RequestBodyContentApplicationjsonSelectedworkflows](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestBodyContentApplicationjsonSelectedworkflows] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathOrgRunnergroupid): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

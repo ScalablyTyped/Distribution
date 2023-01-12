@@ -28,7 +28,8 @@ object MergePullRequestByFastForwardInput {
     __obj.asInstanceOf[MergePullRequestByFastForwardInput]
   }
   
-  extension [Self <: MergePullRequestByFastForwardInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MergePullRequestByFastForwardInput] (val x: Self) extends AnyVal {
     
     inline def setPullRequestId(value: PullRequestId): Self = StObject.set(x, "pullRequestId", value.asInstanceOf[js.Any])
     

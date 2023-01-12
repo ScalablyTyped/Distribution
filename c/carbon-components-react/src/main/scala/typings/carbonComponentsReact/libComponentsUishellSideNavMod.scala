@@ -56,7 +56,8 @@ object libComponentsUishellSideNavMod extends Shortcut {
       __obj.asInstanceOf[SideNavProps]
     }
     
-    extension [Self <: SideNavProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavProps] (val x: Self) extends AnyVal {
       
       inline def setAddFocusListeners(value: Boolean): Self = StObject.set(x, "addFocusListeners", value.asInstanceOf[js.Any])
       

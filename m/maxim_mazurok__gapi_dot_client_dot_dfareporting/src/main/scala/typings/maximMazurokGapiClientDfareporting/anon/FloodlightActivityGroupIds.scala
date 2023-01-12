@@ -93,7 +93,8 @@ object FloodlightActivityGroupIds {
     __obj.asInstanceOf[FloodlightActivityGroupIds]
   }
   
-  extension [Self <: FloodlightActivityGroupIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightActivityGroupIds] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

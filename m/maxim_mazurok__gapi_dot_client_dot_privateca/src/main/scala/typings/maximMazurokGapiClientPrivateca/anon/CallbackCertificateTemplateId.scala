@@ -62,7 +62,8 @@ object CallbackCertificateTemplateId {
     __obj.asInstanceOf[CallbackCertificateTemplateId]
   }
   
-  extension [Self <: CallbackCertificateTemplateId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackCertificateTemplateId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

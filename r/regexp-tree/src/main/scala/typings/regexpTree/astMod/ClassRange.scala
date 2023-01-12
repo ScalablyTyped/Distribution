@@ -20,7 +20,8 @@ object ClassRange {
     __obj.asInstanceOf[ClassRange]
   }
   
-  extension [Self <: ClassRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassRange] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: Char): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

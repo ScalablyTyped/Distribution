@@ -26,7 +26,8 @@ object ASPxClientVerticalGridCellInfo {
     __obj.asInstanceOf[ASPxClientVerticalGridCellInfo]
   }
   
-  extension [Self <: ASPxClientVerticalGridCellInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientVerticalGridCellInfo] (val x: Self) extends AnyVal {
     
     inline def setRecordVisibleIndex(value: Double): Self = StObject.set(x, "recordVisibleIndex", value.asInstanceOf[js.Any])
     

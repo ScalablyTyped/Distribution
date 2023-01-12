@@ -35,7 +35,8 @@ object typesHelpersHelpersDotcollectionMod {
       __obj.asInstanceOf[ArrayListener[T]]
     }
     
-    extension [Self <: ArrayListener[?], T](x: Self & ArrayListener[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArrayListener[?], T] (val x: Self & ArrayListener[T]) extends AnyVal {
       
       inline def set_onDataPop(value: () => Unit): Self = StObject.set(x, "_onDataPop", js.Any.fromFunction0(value))
       

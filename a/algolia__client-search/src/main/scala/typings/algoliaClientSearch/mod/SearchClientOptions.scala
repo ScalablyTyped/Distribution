@@ -30,7 +30,8 @@ object SearchClientOptions {
     __obj.asInstanceOf[SearchClientOptions]
   }
   
-  extension [Self <: SearchClientOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchClientOptions] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: String): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
     

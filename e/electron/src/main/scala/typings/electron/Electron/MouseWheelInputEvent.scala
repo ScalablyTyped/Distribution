@@ -40,7 +40,8 @@ object MouseWheelInputEvent {
     __obj.asInstanceOf[MouseWheelInputEvent]
   }
   
-  extension [Self <: MouseWheelInputEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseWheelInputEvent] (val x: Self) extends AnyVal {
     
     inline def setAccelerationRatioX(value: Double): Self = StObject.set(x, "accelerationRatioX", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object FastifyHttp2SecureOptions {
     __obj.asInstanceOf[FastifyHttp2SecureOptions[Server, Logger]]
   }
   
-  extension [Self <: FastifyHttp2SecureOptions[?, ?], Server /* <: Http2SecureServer */, Logger /* <: FastifyBaseLogger */](x: Self & (FastifyHttp2SecureOptions[Server, Logger])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastifyHttp2SecureOptions[?, ?], Server /* <: Http2SecureServer */, Logger /* <: FastifyBaseLogger */] (val x: Self & (FastifyHttp2SecureOptions[Server, Logger])) extends AnyVal {
     
     inline def setHttp2(value: `true`): Self = StObject.set(x, "http2", value.asInstanceOf[js.Any])
     

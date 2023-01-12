@@ -33,7 +33,8 @@ object PdfExportGanttFont {
     __obj.asInstanceOf[PdfExportGanttFont]
   }
   
-  extension [Self <: PdfExportGanttFont](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PdfExportGanttFont] (val x: Self) extends AnyVal {
     
     inline def setFontObject(value: js.Object): Self = StObject.set(x, "fontObject", value.asInstanceOf[js.Any])
     

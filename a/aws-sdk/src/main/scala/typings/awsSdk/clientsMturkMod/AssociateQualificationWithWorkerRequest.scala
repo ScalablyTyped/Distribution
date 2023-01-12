@@ -33,7 +33,8 @@ object AssociateQualificationWithWorkerRequest {
     __obj.asInstanceOf[AssociateQualificationWithWorkerRequest]
   }
   
-  extension [Self <: AssociateQualificationWithWorkerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateQualificationWithWorkerRequest] (val x: Self) extends AnyVal {
     
     inline def setIntegerValue(value: Integer): Self = StObject.set(x, "IntegerValue", value.asInstanceOf[js.Any])
     

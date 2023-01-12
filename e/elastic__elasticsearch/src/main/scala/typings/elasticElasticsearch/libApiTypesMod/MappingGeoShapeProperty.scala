@@ -30,7 +30,8 @@ object MappingGeoShapeProperty {
     __obj.asInstanceOf[MappingGeoShapeProperty]
   }
   
-  extension [Self <: MappingGeoShapeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingGeoShapeProperty] (val x: Self) extends AnyVal {
     
     inline def setCoerce(value: Boolean): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
     

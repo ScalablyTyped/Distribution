@@ -23,7 +23,8 @@ object TargetGroupStickinessConfig {
     __obj.asInstanceOf[TargetGroupStickinessConfig]
   }
   
-  extension [Self <: TargetGroupStickinessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGroupStickinessConfig] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: TargetGroupStickinessDurationSeconds): Self = StObject.set(x, "DurationSeconds", value.asInstanceOf[js.Any])
     

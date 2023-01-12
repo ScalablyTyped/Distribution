@@ -73,7 +73,8 @@ object EAP {
     __obj.asInstanceOf[EAP]
   }
   
-  extension [Self <: EAP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EAP] (val x: Self) extends AnyVal {
     
     inline def setEAP(value: `4`): Self = StObject.set(x, "EAP", value.asInstanceOf[js.Any])
     

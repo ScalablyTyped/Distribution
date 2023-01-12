@@ -19,7 +19,8 @@ object PartialDocumentPageConsul {
     __obj.asInstanceOf[PartialDocumentPageConsul]
   }
   
-  extension [Self <: PartialDocumentPageConsul](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDocumentPageConsul] (val x: Self) extends AnyVal {
     
     inline def setExpirationDate(value: Timestamp): Self = StObject.set(x, "ExpirationDate", value.asInstanceOf[js.Any])
     

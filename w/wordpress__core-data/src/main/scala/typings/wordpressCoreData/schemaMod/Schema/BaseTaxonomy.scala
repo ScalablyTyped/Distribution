@@ -52,7 +52,8 @@ object BaseTaxonomy {
     __obj.asInstanceOf[BaseTaxonomy[T]]
   }
   
-  extension [Self <: BaseTaxonomy[?], T /* <: Context */](x: Self & BaseTaxonomy[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseTaxonomy[?], T /* <: Context */] (val x: Self & BaseTaxonomy[T]) extends AnyVal {
     
     inline def setCapabilities(value: Assignterms): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

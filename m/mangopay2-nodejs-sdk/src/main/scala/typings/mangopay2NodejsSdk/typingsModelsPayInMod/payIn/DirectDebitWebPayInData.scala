@@ -80,7 +80,8 @@ object DirectDebitWebPayInData {
     __obj.asInstanceOf[DirectDebitWebPayInData]
   }
   
-  extension [Self <: DirectDebitWebPayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectDebitWebPayInData] (val x: Self) extends AnyVal {
     
     inline def setCulture(value: CountryISO): Self = StObject.set(x, "Culture", value.asInstanceOf[js.Any])
     

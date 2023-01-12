@@ -158,7 +158,8 @@ object DocumentPropertiesData {
     __obj.asInstanceOf[DocumentPropertiesData]
   }
   
-  extension [Self <: DocumentPropertiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentPropertiesData] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: String): Self = StObject.set(x, "applicationName", value.asInstanceOf[js.Any])
     

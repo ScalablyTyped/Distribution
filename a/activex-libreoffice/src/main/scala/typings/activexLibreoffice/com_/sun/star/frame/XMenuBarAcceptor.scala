@@ -35,7 +35,8 @@ object XMenuBarAcceptor {
     __obj.asInstanceOf[XMenuBarAcceptor]
   }
   
-  extension [Self <: XMenuBarAcceptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMenuBarAcceptor] (val x: Self) extends AnyVal {
     
     inline def setUpdateMenuBar(value: js.Array[XMenuBar] => Unit): Self = StObject.set(x, "updateMenuBar", js.Any.fromFunction1(value))
   }

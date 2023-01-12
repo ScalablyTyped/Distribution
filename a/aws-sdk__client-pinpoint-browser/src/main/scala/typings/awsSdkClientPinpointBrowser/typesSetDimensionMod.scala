@@ -31,7 +31,8 @@ object typesSetDimensionMod {
       __obj.asInstanceOf[SetDimension]
     }
     
-    extension [Self <: SetDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDimension] (val x: Self) extends AnyVal {
       
       inline def setDimensionType(value: INCLUSIVE | EXCLUSIVE | String): Self = StObject.set(x, "DimensionType", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object typesSetDimensionMod {
       __obj.asInstanceOf[UnmarshalledSetDimension]
     }
     
-    extension [Self <: UnmarshalledSetDimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSetDimension] (val x: Self) extends AnyVal {
       
       inline def setValues(value: js.Array[String]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
       

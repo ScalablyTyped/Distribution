@@ -21,7 +21,8 @@ object ActiveSize {
     __obj.asInstanceOf[ActiveSize]
   }
   
-  extension [Self <: ActiveSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveSize] (val x: Self) extends AnyVal {
     
     inline def setActiveSize(value: Double): Self = StObject.set(x, "activeSize", value.asInstanceOf[js.Any])
     

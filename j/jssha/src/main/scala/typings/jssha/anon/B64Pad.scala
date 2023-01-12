@@ -19,7 +19,8 @@ object B64Pad {
     __obj.asInstanceOf[B64Pad]
   }
   
-  extension [Self <: B64Pad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: B64Pad] (val x: Self) extends AnyVal {
     
     inline def setB64Pad(value: String): Self = StObject.set(x, "b64Pad", value.asInstanceOf[js.Any])
     

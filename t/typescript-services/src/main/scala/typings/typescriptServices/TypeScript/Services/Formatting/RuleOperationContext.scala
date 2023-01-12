@@ -19,7 +19,8 @@ object RuleOperationContext {
     __obj.asInstanceOf[RuleOperationContext]
   }
   
-  extension [Self <: RuleOperationContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleOperationContext] (val x: Self) extends AnyVal {
     
     inline def setCustomContextChecks(value: Any): Self = StObject.set(x, "customContextChecks", value.asInstanceOf[js.Any])
     

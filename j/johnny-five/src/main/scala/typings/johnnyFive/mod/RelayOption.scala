@@ -17,7 +17,8 @@ object RelayOption {
     __obj.asInstanceOf[RelayOption]
   }
   
-  extension [Self <: RelayOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayOption] (val x: Self) extends AnyVal {
     
     inline def setPin(value: Double | String): Self = StObject.set(x, "pin", value.asInstanceOf[js.Any])
     

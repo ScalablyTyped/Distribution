@@ -116,7 +116,8 @@ object LLRBEmptyNode {
     __obj.asInstanceOf[LLRBEmptyNode[K, V]]
   }
   
-  extension [Self <: LLRBEmptyNode[?, ?], K, V](x: Self & (LLRBEmptyNode[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LLRBEmptyNode[?, ?], K, V] (val x: Self & (LLRBEmptyNode[K, V])) extends AnyVal {
     
     inline def setCheck_(value: () => Double): Self = StObject.set(x, "check_", js.Any.fromFunction0(value))
     

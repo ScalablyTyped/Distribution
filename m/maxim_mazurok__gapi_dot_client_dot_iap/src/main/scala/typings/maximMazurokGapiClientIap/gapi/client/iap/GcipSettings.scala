@@ -23,7 +23,8 @@ object GcipSettings {
     __obj.asInstanceOf[GcipSettings]
   }
   
-  extension [Self <: GcipSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcipSettings] (val x: Self) extends AnyVal {
     
     inline def setLoginPageUri(value: String): Self = StObject.set(x, "loginPageUri", value.asInstanceOf[js.Any])
     

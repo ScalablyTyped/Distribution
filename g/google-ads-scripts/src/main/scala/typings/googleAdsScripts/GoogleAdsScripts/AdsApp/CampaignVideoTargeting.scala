@@ -155,7 +155,8 @@ object CampaignVideoTargeting {
     __obj.asInstanceOf[CampaignVideoTargeting]
   }
   
-  extension [Self <: CampaignVideoTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CampaignVideoTargeting] (val x: Self) extends AnyVal {
     
     inline def setAges(value: () => VideoAgeSelector): Self = StObject.set(x, "ages", js.Any.fromFunction0(value))
     

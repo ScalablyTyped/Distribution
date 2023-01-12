@@ -15,7 +15,8 @@ object NodesClusterAppliedStats {
     __obj.asInstanceOf[NodesClusterAppliedStats]
   }
   
-  extension [Self <: NodesClusterAppliedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesClusterAppliedStats] (val x: Self) extends AnyVal {
     
     inline def setRecordings(value: js.Array[NodesRecording]): Self = StObject.set(x, "recordings", value.asInstanceOf[js.Any])
     

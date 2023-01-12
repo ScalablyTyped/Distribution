@@ -24,7 +24,8 @@ object PartialTableFooterProps {
     __obj.asInstanceOf[PartialTableFooterProps]
   }
   
-  extension [Self <: PartialTableFooterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableFooterProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

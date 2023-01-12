@@ -28,7 +28,8 @@ object GetCoreNetworkPolicyRequest {
     __obj.asInstanceOf[GetCoreNetworkPolicyRequest]
   }
   
-  extension [Self <: GetCoreNetworkPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCoreNetworkPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: CoreNetworkPolicyAlias): Self = StObject.set(x, "Alias", value.asInstanceOf[js.Any])
     

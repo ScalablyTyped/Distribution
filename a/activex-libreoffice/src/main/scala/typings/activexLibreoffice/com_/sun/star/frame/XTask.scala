@@ -70,7 +70,8 @@ object XTask {
     __obj.asInstanceOf[XTask]
   }
   
-  extension [Self <: XTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTask] (val x: Self) extends AnyVal {
     
     inline def setArrangeWindowsHorizontal(value: () => Unit): Self = StObject.set(x, "arrangeWindowsHorizontal", js.Any.fromFunction0(value))
     

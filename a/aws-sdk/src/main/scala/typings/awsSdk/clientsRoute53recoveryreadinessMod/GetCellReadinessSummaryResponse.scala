@@ -28,7 +28,8 @@ object GetCellReadinessSummaryResponse {
     __obj.asInstanceOf[GetCellReadinessSummaryResponse]
   }
   
-  extension [Self <: GetCellReadinessSummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCellReadinessSummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: string): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

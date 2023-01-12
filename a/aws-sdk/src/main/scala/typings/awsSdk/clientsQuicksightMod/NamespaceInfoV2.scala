@@ -43,7 +43,8 @@ object NamespaceInfoV2 {
     __obj.asInstanceOf[NamespaceInfoV2]
   }
   
-  extension [Self <: NamespaceInfoV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamespaceInfoV2] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

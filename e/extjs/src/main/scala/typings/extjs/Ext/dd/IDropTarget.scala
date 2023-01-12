@@ -87,7 +87,8 @@ object IDropTarget {
     __obj.asInstanceOf[IDropTarget]
   }
   
-  extension [Self <: IDropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDropTarget] (val x: Self) extends AnyVal {
     
     inline def setDdGroup(value: String): Self = StObject.set(x, "ddGroup", value.asInstanceOf[js.Any])
     

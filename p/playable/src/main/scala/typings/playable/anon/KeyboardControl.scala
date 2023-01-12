@@ -22,7 +22,8 @@ object KeyboardControl {
     __obj.asInstanceOf[KeyboardControl]
   }
   
-  extension [Self <: KeyboardControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyboardControl] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: IPlaybackEngine): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

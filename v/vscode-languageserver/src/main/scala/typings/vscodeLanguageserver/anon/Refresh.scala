@@ -43,7 +43,8 @@ object Refresh {
     __obj.asInstanceOf[Refresh]
   }
   
-  extension [Self <: Refresh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Refresh] (val x: Self) extends AnyVal {
     
     inline def setOn(
       value: ServerRequestHandler[InlayHintParams, js.UndefOr[js.Array[InlayHint] | Null], js.Array[InlayHint], Unit] => Disposable

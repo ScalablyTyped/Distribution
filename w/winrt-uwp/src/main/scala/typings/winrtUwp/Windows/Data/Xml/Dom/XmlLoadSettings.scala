@@ -35,7 +35,8 @@ object XmlLoadSettings {
     __obj.asInstanceOf[XmlLoadSettings]
   }
   
-  extension [Self <: XmlLoadSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XmlLoadSettings] (val x: Self) extends AnyVal {
     
     inline def setElementContentWhiteSpace(value: Boolean): Self = StObject.set(x, "elementContentWhiteSpace", value.asInstanceOf[js.Any])
     

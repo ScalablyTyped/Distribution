@@ -43,7 +43,8 @@ object StackSummary {
     __obj.asInstanceOf[StackSummary]
   }
   
-  extension [Self <: StackSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackSummary] (val x: Self) extends AnyVal {
     
     inline def setAppsCount(value: Integer): Self = StObject.set(x, "AppsCount", value.asInstanceOf[js.Any])
     

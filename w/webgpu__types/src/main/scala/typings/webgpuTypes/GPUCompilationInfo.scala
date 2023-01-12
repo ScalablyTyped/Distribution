@@ -22,7 +22,8 @@ object GPUCompilationInfo {
     __obj.asInstanceOf[GPUCompilationInfo]
   }
   
-  extension [Self <: GPUCompilationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUCompilationInfo] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[GPUCompilationMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

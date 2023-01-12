@@ -44,7 +44,8 @@ object SenderIdInformation {
     __obj.asInstanceOf[SenderIdInformation]
   }
   
-  extension [Self <: SenderIdInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SenderIdInformation] (val x: Self) extends AnyVal {
     
     inline def setIsoCountryCode(value: IsoCountryCode): Self = StObject.set(x, "IsoCountryCode", value.asInstanceOf[js.Any])
     

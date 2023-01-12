@@ -27,7 +27,8 @@ object GetItem {
     __obj.asInstanceOf[GetItem]
   }
   
-  extension [Self <: GetItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetItem] (val x: Self) extends AnyVal {
     
     inline def setGetItem(value: String => js.Promise[DataGetResponse]): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
     

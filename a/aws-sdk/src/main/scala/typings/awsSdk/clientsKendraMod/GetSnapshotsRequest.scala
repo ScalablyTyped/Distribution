@@ -38,7 +38,8 @@ object GetSnapshotsRequest {
     __obj.asInstanceOf[GetSnapshotsRequest]
   }
   
-  extension [Self <: GetSnapshotsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSnapshotsRequest] (val x: Self) extends AnyVal {
     
     inline def setIndexId(value: IndexId): Self = StObject.set(x, "IndexId", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object Pagination {
     __obj.asInstanceOf[Pagination]
   }
   
-  extension [Self <: Pagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pagination] (val x: Self) extends AnyVal {
     
     inline def setCursor_range(value: js.Tuple2[String, String]): Self = StObject.set(x, "cursor_range", value.asInstanceOf[js.Any])
     

@@ -103,7 +103,8 @@ object APNSMessage {
     __obj.asInstanceOf[APNSMessage]
   }
   
-  extension [Self <: APNSMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APNSMessage] (val x: Self) extends AnyVal {
     
     inline def setAPNSPushType(value: string): Self = StObject.set(x, "APNSPushType", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListFlowDefinitionsResponse {
     __obj.asInstanceOf[ListFlowDefinitionsResponse]
   }
   
-  extension [Self <: ListFlowDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFlowDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setFlowDefinitionSummaries(value: FlowDefinitionSummaries): Self = StObject.set(x, "FlowDefinitionSummaries", value.asInstanceOf[js.Any])
     

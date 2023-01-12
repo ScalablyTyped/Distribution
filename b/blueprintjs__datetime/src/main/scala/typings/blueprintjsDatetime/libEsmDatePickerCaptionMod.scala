@@ -56,7 +56,8 @@ object libEsmDatePickerCaptionMod {
       __obj.asInstanceOf[IDatePickerCaptionProps]
     }
     
-    extension [Self <: IDatePickerCaptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerCaptionProps] (val x: Self) extends AnyVal {
       
       inline def setMaxDate(value: js.Date): Self = StObject.set(x, "maxDate", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object libEsmDatePickerCaptionMod {
       __obj.asInstanceOf[IDatePickerCaptionState]
     }
     
-    extension [Self <: IDatePickerCaptionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDatePickerCaptionState] (val x: Self) extends AnyVal {
       
       inline def setMonthRightOffset(value: Double): Self = StObject.set(x, "monthRightOffset", value.asInstanceOf[js.Any])
     }

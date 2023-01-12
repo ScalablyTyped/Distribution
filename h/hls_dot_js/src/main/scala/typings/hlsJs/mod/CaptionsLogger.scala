@@ -19,7 +19,8 @@ object CaptionsLogger {
     __obj.asInstanceOf[CaptionsLogger]
   }
   
-  extension [Self <: CaptionsLogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionsLogger] (val x: Self) extends AnyVal {
     
     inline def setLog(value: (VerboseLevel, String) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
     

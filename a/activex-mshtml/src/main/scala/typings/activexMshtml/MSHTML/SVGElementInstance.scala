@@ -52,7 +52,8 @@ object SVGElementInstance {
     __obj.asInstanceOf[SVGElementInstance]
   }
   
-  extension [Self <: SVGElementInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGElementInstance] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, Any, Boolean) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction3(value))
     

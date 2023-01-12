@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Orientation]
     }
     
-    extension [Self <: Orientation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Orientation] (val x: Self) extends AnyVal {
       
       inline def setOrientation(value: Double): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
       
@@ -94,7 +96,8 @@ object anon {
       __obj.asInstanceOf[ResultOptionstypebase64ca]
     }
     
-    extension [Self <: ResultOptionstypebase64ca](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptionstypebase64ca] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -138,7 +141,8 @@ object anon {
       __obj.asInstanceOf[ResultOptionstypeblob]
     }
     
-    extension [Self <: ResultOptionstypeblob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptionstypeblob] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -182,7 +186,8 @@ object anon {
       __obj.asInstanceOf[ResultOptionstypehtml]
     }
     
-    extension [Self <: ResultOptionstypehtml](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptionstypehtml] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -226,7 +231,8 @@ object anon {
       __obj.asInstanceOf[ResultOptionstyperawcanva]
     }
     
-    extension [Self <: ResultOptionstyperawcanva](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptionstyperawcanva] (val x: Self) extends AnyVal {
       
       inline def setCircle(value: Boolean): Self = StObject.set(x, "circle", value.asInstanceOf[js.Any])
       
@@ -265,7 +271,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       

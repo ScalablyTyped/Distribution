@@ -30,7 +30,8 @@ object MkdirOption {
     __obj.asInstanceOf[MkdirOption]
   }
   
-  extension [Self <: MkdirOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MkdirOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

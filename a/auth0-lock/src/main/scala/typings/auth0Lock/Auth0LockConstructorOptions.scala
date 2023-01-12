@@ -101,7 +101,8 @@ object Auth0LockConstructorOptions {
     __obj.asInstanceOf[Auth0LockConstructorOptions]
   }
   
-  extension [Self <: Auth0LockConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditionalSignUpFields(value: js.Array[Auth0LockAdditionalSignUpField]): Self = StObject.set(x, "additionalSignUpFields", value.asInstanceOf[js.Any])
     

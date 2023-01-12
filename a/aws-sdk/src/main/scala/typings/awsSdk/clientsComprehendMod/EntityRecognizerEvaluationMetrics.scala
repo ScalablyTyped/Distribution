@@ -28,7 +28,8 @@ object EntityRecognizerEvaluationMetrics {
     __obj.asInstanceOf[EntityRecognizerEvaluationMetrics]
   }
   
-  extension [Self <: EntityRecognizerEvaluationMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerEvaluationMetrics] (val x: Self) extends AnyVal {
     
     inline def setF1Score(value: Double): Self = StObject.set(x, "F1Score", value.asInstanceOf[js.Any])
     

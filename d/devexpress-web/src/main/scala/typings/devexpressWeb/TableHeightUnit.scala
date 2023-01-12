@@ -27,7 +27,8 @@ object TableHeightUnit {
     __obj.asInstanceOf[TableHeightUnit]
   }
   
-  extension [Self <: TableHeightUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableHeightUnit] (val x: Self) extends AnyVal {
     
     inline def setType(value: TableHeightUnitType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

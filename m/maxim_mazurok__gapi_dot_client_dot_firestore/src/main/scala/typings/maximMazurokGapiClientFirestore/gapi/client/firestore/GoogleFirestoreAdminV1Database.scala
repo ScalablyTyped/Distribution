@@ -41,7 +41,8 @@ object GoogleFirestoreAdminV1Database {
     __obj.asInstanceOf[GoogleFirestoreAdminV1Database]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1Database](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1Database] (val x: Self) extends AnyVal {
     
     inline def setAppEngineIntegrationMode(value: String): Self = StObject.set(x, "appEngineIntegrationMode", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Distance[T]]
     }
     
-    extension [Self <: Distance[?], T](x: Self & Distance[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Distance[?], T] (val x: Self & Distance[T]) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Evicted[K, V]]
     }
     
-    extension [Self <: Evicted[?, ?], K, V](x: Self & (Evicted[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Evicted[?, ?], K, V] (val x: Self & (Evicted[K, V])) extends AnyVal {
       
       inline def setEvicted(value: Boolean): Self = StObject.set(x, "evicted", value.asInstanceOf[js.Any])
       

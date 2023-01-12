@@ -19,7 +19,8 @@ object ExchangeParams {
     __obj.asInstanceOf[ExchangeParams]
   }
   
-  extension [Self <: ExchangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangeParams] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

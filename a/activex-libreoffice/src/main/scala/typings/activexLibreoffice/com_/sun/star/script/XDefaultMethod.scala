@@ -47,7 +47,8 @@ object XDefaultMethod {
     __obj.asInstanceOf[XDefaultMethod]
   }
   
-  extension [Self <: XDefaultMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDefaultMethod] (val x: Self) extends AnyVal {
     
     inline def setDefaultMethodName(value: String): Self = StObject.set(x, "DefaultMethodName", value.asInstanceOf[js.Any])
     

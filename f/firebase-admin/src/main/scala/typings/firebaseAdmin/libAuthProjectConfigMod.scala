@@ -54,7 +54,8 @@ object libAuthProjectConfigMod {
       __obj.asInstanceOf[ProjectConfigClientRequest]
     }
     
-    extension [Self <: ProjectConfigClientRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfigClientRequest] (val x: Self) extends AnyVal {
       
       inline def setSmsRegionConfig(value: SmsRegionConfig): Self = StObject.set(x, "smsRegionConfig", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libAuthProjectConfigMod {
       __obj.asInstanceOf[ProjectConfigServerResponse]
     }
     
-    extension [Self <: ProjectConfigServerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectConfigServerResponse] (val x: Self) extends AnyVal {
       
       inline def setSmsRegionConfig(value: SmsRegionConfig): Self = StObject.set(x, "smsRegionConfig", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object libAuthProjectConfigMod {
       __obj.asInstanceOf[UpdateProjectConfigRequest]
     }
     
-    extension [Self <: UpdateProjectConfigRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateProjectConfigRequest] (val x: Self) extends AnyVal {
       
       inline def setSmsRegionConfig(value: SmsRegionConfig): Self = StObject.set(x, "smsRegionConfig", value.asInstanceOf[js.Any])
       

@@ -56,7 +56,8 @@ object hasExtensions {
     __obj.asInstanceOf[hasExtensions]
   }
   
-  extension [Self <: hasExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: hasExtensions] (val x: Self) extends AnyVal {
     
     inline def setAddCallout(value: Callout => AdWordsOperation[Callout]): Self = StObject.set(x, "addCallout", js.Any.fromFunction1(value))
     

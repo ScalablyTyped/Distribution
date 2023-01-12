@@ -66,7 +66,8 @@ object TransitLine {
     __obj.asInstanceOf[TransitLine]
   }
   
-  extension [Self <: TransitLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitLine] (val x: Self) extends AnyVal {
     
     inline def setAgencies(value: js.Array[TransitAgency | Null]): Self = StObject.set(x, "agencies", value.asInstanceOf[js.Any])
     

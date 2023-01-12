@@ -70,7 +70,8 @@ object BoundingSphere {
     __obj.asInstanceOf[BoundingSphere]
   }
   
-  extension [Self <: BoundingSphere](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingSphere] (val x: Self) extends AnyVal {
     
     inline def setBoundingSphere(value: typings.cesium.mod.BoundingSphere): Self = StObject.set(x, "boundingSphere", value.asInstanceOf[js.Any])
     

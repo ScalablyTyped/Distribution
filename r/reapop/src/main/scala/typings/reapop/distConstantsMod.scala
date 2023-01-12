@@ -178,7 +178,8 @@ object distConstantsMod {
       __obj.asInstanceOf[NotificationConfig]
     }
     
-    extension [Self <: NotificationConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
       
       inline def setCustomizeNotification(value: /* notification */ NewNotification => Unit): Self = StObject.set(x, "customizeNotification", js.Any.fromFunction1(value))
       

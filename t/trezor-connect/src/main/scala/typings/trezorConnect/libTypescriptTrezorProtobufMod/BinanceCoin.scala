@@ -17,7 +17,8 @@ object BinanceCoin {
     __obj.asInstanceOf[BinanceCoin]
   }
   
-  extension [Self <: BinanceCoin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceCoin] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: UintType): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

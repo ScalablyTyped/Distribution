@@ -18,7 +18,8 @@ object CrlDetailResponse {
     __obj.asInstanceOf[CrlDetailResponse]
   }
   
-  extension [Self <: CrlDetailResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrlDetailResponse] (val x: Self) extends AnyVal {
     
     inline def setCrl(value: CrlDetail): Self = StObject.set(x, "crl", value.asInstanceOf[js.Any])
   }

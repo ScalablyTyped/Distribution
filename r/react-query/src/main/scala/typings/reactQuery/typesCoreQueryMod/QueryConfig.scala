@@ -31,7 +31,8 @@ object QueryConfig {
     __obj.asInstanceOf[QueryConfig[TQueryFnData, TError, TData, TQueryKey]]
   }
   
-  extension [Self <: QueryConfig[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */](x: Self & (QueryConfig[TQueryFnData, TError, TData, TQueryKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryConfig[?, ?, ?, ?], TQueryFnData, TError, TData, TQueryKey /* <: QueryKey */] (val x: Self & (QueryConfig[TQueryFnData, TError, TData, TQueryKey])) extends AnyVal {
     
     inline def setCache(value: QueryCache): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
     

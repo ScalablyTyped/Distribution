@@ -130,7 +130,8 @@ object uri {
       __obj.asInstanceOf[XExternalUriReferenceTranslator]
     }
     
-    extension [Self <: XExternalUriReferenceTranslator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XExternalUriReferenceTranslator] (val x: Self) extends AnyVal {
       
       inline def setTranslateToExternal(value: String => String): Self = StObject.set(x, "translateToExternal", js.Any.fromFunction1(value))
       
@@ -352,7 +353,8 @@ object uri {
       __obj.asInstanceOf[XUriReference]
     }
     
-    extension [Self <: XUriReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUriReference] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
       
@@ -469,7 +471,8 @@ object uri {
       __obj.asInstanceOf[XUriReferenceFactory]
     }
     
-    extension [Self <: XUriReferenceFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUriReferenceFactory] (val x: Self) extends AnyVal {
       
       inline def setMakeAbsolute(value: (XUriReference, XUriReference, Boolean, RelativeUriExcessParentSegments) => XUriReference): Self = StObject.set(x, "makeAbsolute", js.Any.fromFunction4(value))
       
@@ -514,7 +517,8 @@ object uri {
       __obj.asInstanceOf[XUriSchemeParser]
     }
     
-    extension [Self <: XUriSchemeParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XUriSchemeParser] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (String, String) => XUriReference): Self = StObject.set(x, "parse", js.Any.fromFunction2(value))
     }
@@ -546,7 +550,8 @@ object uri {
       __obj.asInstanceOf[XVndSunStarExpandUrl]
     }
     
-    extension [Self <: XVndSunStarExpandUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVndSunStarExpandUrl] (val x: Self) extends AnyVal {
       
       inline def setExpand(value: XMacroExpander => String): Self = StObject.set(x, "expand", js.Any.fromFunction1(value))
     }
@@ -620,7 +625,8 @@ object uri {
       __obj.asInstanceOf[XVndSunStarPkgUrlReferenceFactory]
     }
     
-    extension [Self <: XVndSunStarPkgUrlReferenceFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVndSunStarPkgUrlReferenceFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateVndSunStarPkgUrlReference(value: XUriReference => XUriReference): Self = StObject.set(x, "createVndSunStarPkgUrlReference", js.Any.fromFunction1(value))
     }
@@ -704,7 +710,8 @@ object uri {
       __obj.asInstanceOf[XVndSunStarScriptUrl]
     }
     
-    extension [Self <: XVndSunStarScriptUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XVndSunStarScriptUrl] (val x: Self) extends AnyVal {
       
       inline def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
       

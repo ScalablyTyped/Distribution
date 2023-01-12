@@ -18,7 +18,8 @@ object TestRenderTemplateResponse {
     __obj.asInstanceOf[TestRenderTemplateResponse]
   }
   
-  extension [Self <: TestRenderTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRenderTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setRenderedTemplate(value: RenderedTemplate): Self = StObject.set(x, "RenderedTemplate", value.asInstanceOf[js.Any])
     

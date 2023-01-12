@@ -48,7 +48,8 @@ object GetWirelessGatewayResponse {
     __obj.asInstanceOf[GetWirelessGatewayResponse]
   }
   
-  extension [Self <: GetWirelessGatewayResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWirelessGatewayResponse] (val x: Self) extends AnyVal {
     
     inline def setArn(value: WirelessGatewayArn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

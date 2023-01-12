@@ -17,7 +17,8 @@ object LimitableQueryBuilder {
     __obj.asInstanceOf[LimitableQueryBuilder]
   }
   
-  extension [Self <: LimitableQueryBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LimitableQueryBuilder] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double => LimitableQueryBuilder): Self = StObject.set(x, "limit", js.Any.fromFunction1(value))
     

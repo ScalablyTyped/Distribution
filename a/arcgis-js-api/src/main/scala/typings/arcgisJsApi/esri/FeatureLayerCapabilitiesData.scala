@@ -41,7 +41,8 @@ object FeatureLayerCapabilitiesData {
     __obj.asInstanceOf[FeatureLayerCapabilitiesData]
   }
   
-  extension [Self <: FeatureLayerCapabilitiesData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerCapabilitiesData] (val x: Self) extends AnyVal {
     
     inline def setIsVersioned(value: Boolean): Self = StObject.set(x, "isVersioned", value.asInstanceOf[js.Any])
     

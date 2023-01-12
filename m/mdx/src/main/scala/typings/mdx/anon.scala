@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Wrapper]
     }
     
-    extension [Self <: Wrapper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wrapper] (val x: Self) extends AnyVal {
       
       inline def setWrapper(value: Component[Any]): Self = StObject.set(x, "wrapper", value.asInstanceOf[js.Any])
       

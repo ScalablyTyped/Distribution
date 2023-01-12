@@ -19,7 +19,8 @@ object INotebookMetadata {
     __obj.asInstanceOf[INotebookMetadata]
   }
   
-  extension [Self <: INotebookMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INotebookMetadata] (val x: Self) extends AnyVal {
     
     inline def setKernelspec(value: IKernelSpec): Self = StObject.set(x, "kernelspec", value.asInstanceOf[js.Any])
     

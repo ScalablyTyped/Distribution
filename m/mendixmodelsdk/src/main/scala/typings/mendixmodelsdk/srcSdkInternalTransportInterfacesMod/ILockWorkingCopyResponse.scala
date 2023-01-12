@@ -17,7 +17,8 @@ object ILockWorkingCopyResponse {
     __obj.asInstanceOf[ILockWorkingCopyResponse]
   }
   
-  extension [Self <: ILockWorkingCopyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILockWorkingCopyResponse] (val x: Self) extends AnyVal {
     
     inline def setMerge(value: ILockData): Self = StObject.set(x, "merge", value.asInstanceOf[js.Any])
     

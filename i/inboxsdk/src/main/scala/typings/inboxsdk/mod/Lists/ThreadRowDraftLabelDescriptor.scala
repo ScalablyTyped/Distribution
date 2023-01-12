@@ -17,7 +17,8 @@ object ThreadRowDraftLabelDescriptor {
     __obj.asInstanceOf[ThreadRowDraftLabelDescriptor]
   }
   
-  extension [Self <: ThreadRowDraftLabelDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowDraftLabelDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCount(value: String): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object NavigationInitActionPayload {
     __obj.asInstanceOf[NavigationInitActionPayload]
   }
   
-  extension [Self <: NavigationInitActionPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationInitActionPayload] (val x: Self) extends AnyVal {
     
     inline def setParams(value: NavigationParams): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

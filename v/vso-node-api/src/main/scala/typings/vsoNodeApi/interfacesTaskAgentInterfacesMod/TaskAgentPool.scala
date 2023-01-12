@@ -73,7 +73,8 @@ object TaskAgentPool {
     __obj.asInstanceOf[TaskAgentPool]
   }
   
-  extension [Self <: TaskAgentPool](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAgentPool] (val x: Self) extends AnyVal {
     
     inline def setAdministratorsGroup(value: IdentityRef): Self = StObject.set(x, "administratorsGroup", value.asInstanceOf[js.Any])
     

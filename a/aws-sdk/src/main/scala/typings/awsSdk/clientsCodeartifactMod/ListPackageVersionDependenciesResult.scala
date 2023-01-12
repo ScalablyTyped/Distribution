@@ -49,7 +49,8 @@ object ListPackageVersionDependenciesResult {
     __obj.asInstanceOf[ListPackageVersionDependenciesResult]
   }
   
-  extension [Self <: ListPackageVersionDependenciesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPackageVersionDependenciesResult] (val x: Self) extends AnyVal {
     
     inline def setDependencies(value: PackageDependencyList): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
     

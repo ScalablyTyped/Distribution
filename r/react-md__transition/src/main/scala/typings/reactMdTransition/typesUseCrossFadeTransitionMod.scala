@@ -91,7 +91,8 @@ object typesUseCrossFadeTransitionMod {
       __obj.asInstanceOf[CrossFadeTransitionHookOptions[E]]
     }
     
-    extension [Self <: CrossFadeTransitionHookOptions[?], E /* <: HTMLElement */](x: Self & CrossFadeTransitionHookOptions[E]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CrossFadeTransitionHookOptions[?], E /* <: HTMLElement */] (val x: Self & CrossFadeTransitionHookOptions[E]) extends AnyVal {
       
       inline def setClassNames(value: CSSTransitionClassNames): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

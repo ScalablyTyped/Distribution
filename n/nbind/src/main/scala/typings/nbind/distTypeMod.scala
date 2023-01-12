@@ -170,7 +170,8 @@ object distTypeMod {
       __obj.asInstanceOf[TypeClass]
     }
     
-    extension [Self <: TypeClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeClass] (val x: Self) extends AnyVal {
       
       inline def setMakeWireRead(
         value: (/* expr */ String, /* convertParamList */ js.UndefOr[js.Array[Any]], /* num */ js.UndefOr[Double]) => String
@@ -328,7 +329,8 @@ object distTypeMod {
       __obj.asInstanceOf[TypeSpec]
     }
     
-    extension [Self <: TypeSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeSpec] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: TypeFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       
@@ -364,7 +366,8 @@ object distTypeMod {
       __obj.asInstanceOf[TypeSpecWithName]
     }
     
-    extension [Self <: TypeSpecWithName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeSpecWithName] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -384,7 +387,8 @@ object distTypeMod {
       __obj.asInstanceOf[TypeSpecWithParam]
     }
     
-    extension [Self <: TypeSpecWithParam](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeSpecWithParam] (val x: Self) extends AnyVal {
       
       inline def setParamList(value: js.Array[TypeClass | Double]): Self = StObject.set(x, "paramList", value.asInstanceOf[js.Any])
       
@@ -406,7 +410,8 @@ object distTypeMod {
       __obj.asInstanceOf[TypeSpecWithSize]
     }
     
-    extension [Self <: TypeSpecWithSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeSpecWithSize] (val x: Self) extends AnyVal {
       
       inline def setPtrSize(value: Double): Self = StObject.set(x, "ptrSize", value.asInstanceOf[js.Any])
     }

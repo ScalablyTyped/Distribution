@@ -20,7 +20,8 @@ object interfacesIsavepagewidgetrequestMod {
       __obj.asInstanceOf[ISavePageWidgetRequest]
     }
     
-    extension [Self <: ISavePageWidgetRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISavePageWidgetRequest] (val x: Self) extends AnyVal {
       
       inline def setPageId(value: String): Self = StObject.set(x, "pageId", value.asInstanceOf[js.Any])
       

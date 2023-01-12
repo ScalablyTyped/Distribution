@@ -26,7 +26,8 @@ object TrackSubtitleParams {
     __obj.asInstanceOf[TrackSubtitleParams]
   }
   
-  extension [Self <: TrackSubtitleParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackSubtitleParams] (val x: Self) extends AnyVal {
     
     inline def setF_subtitle_length(value: Double): Self = StObject.set(x, "f_subtitle_length", value.asInstanceOf[js.Any])
     

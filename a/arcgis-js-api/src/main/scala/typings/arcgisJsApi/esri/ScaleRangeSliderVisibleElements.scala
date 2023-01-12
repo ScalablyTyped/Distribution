@@ -27,7 +27,8 @@ object ScaleRangeSliderVisibleElements {
     __obj.asInstanceOf[ScaleRangeSliderVisibleElements]
   }
   
-  extension [Self <: ScaleRangeSliderVisibleElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleRangeSliderVisibleElements] (val x: Self) extends AnyVal {
     
     inline def setPreview(value: Boolean): Self = StObject.set(x, "preview", value.asInstanceOf[js.Any])
     

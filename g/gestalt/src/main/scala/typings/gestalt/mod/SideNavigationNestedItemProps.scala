@@ -47,7 +47,8 @@ object SideNavigationNestedItemProps {
     __obj.asInstanceOf[SideNavigationNestedItemProps]
   }
   
-  extension [Self <: SideNavigationNestedItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationNestedItemProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: page | section): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

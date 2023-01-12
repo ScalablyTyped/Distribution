@@ -36,7 +36,8 @@ object GRPCHealthCheck {
     __obj.asInstanceOf[GRPCHealthCheck]
   }
   
-  extension [Self <: GRPCHealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GRPCHealthCheck] (val x: Self) extends AnyVal {
     
     inline def setGrpcServiceName(value: String): Self = StObject.set(x, "grpcServiceName", value.asInstanceOf[js.Any])
     

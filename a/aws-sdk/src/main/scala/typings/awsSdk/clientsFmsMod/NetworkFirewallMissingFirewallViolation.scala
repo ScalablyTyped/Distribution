@@ -33,7 +33,8 @@ object NetworkFirewallMissingFirewallViolation {
     __obj.asInstanceOf[NetworkFirewallMissingFirewallViolation]
   }
   
-  extension [Self <: NetworkFirewallMissingFirewallViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkFirewallMissingFirewallViolation] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: LengthBoundedString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

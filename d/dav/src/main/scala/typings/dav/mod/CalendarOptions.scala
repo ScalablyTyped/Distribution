@@ -40,7 +40,8 @@ object CalendarOptions {
     __obj.asInstanceOf[CalendarOptions]
   }
   
-  extension [Self <: CalendarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarOptions] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: Account): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

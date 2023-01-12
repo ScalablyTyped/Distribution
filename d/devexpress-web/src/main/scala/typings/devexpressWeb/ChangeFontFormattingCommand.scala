@@ -29,7 +29,8 @@ object ChangeFontFormattingCommand {
     __obj.asInstanceOf[ChangeFontFormattingCommand]
   }
   
-  extension [Self <: ChangeFontFormattingCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFontFormattingCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: FontFormattingSettings => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

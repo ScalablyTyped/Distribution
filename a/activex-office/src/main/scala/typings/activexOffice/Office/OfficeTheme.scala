@@ -39,7 +39,8 @@ object OfficeTheme {
     __obj.asInstanceOf[OfficeTheme]
   }
   
-  extension [Self <: OfficeTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfficeTheme] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

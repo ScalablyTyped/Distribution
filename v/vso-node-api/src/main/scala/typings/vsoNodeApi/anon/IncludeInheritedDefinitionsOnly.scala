@@ -29,7 +29,8 @@ object IncludeInheritedDefinitionsOnly {
     __obj.asInstanceOf[IncludeInheritedDefinitionsOnly]
   }
   
-  extension [Self <: IncludeInheritedDefinitionsOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeInheritedDefinitionsOnly] (val x: Self) extends AnyVal {
     
     inline def setIncludeInheritedDefinitionsOnly(value: scala.Double): Self = StObject.set(x, "includeInheritedDefinitionsOnly", value.asInstanceOf[js.Any])
     

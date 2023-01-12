@@ -26,7 +26,8 @@ object AdRequestParam {
     __obj.asInstanceOf[AdRequestParam]
   }
   
-  extension [Self <: AdRequestParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdRequestParam] (val x: Self) extends AnyVal {
     
     inline def setAdposition(value: pre | mid | post): Self = StObject.set(x, "adposition", value.asInstanceOf[js.Any])
     

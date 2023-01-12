@@ -31,7 +31,8 @@ object Mozosxfontsmoothing {
     __obj.asInstanceOf[Mozosxfontsmoothing]
   }
   
-  extension [Self <: Mozosxfontsmoothing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mozosxfontsmoothing] (val x: Self) extends AnyVal {
     
     inline def `set-moz-osx-font-smoothing`(value: String): Self = StObject.set(x, "-moz-osx-font-smoothing", value.asInstanceOf[js.Any])
     

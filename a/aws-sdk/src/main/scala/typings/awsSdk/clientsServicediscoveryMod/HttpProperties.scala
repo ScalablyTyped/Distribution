@@ -18,7 +18,8 @@ object HttpProperties {
     __obj.asInstanceOf[HttpProperties]
   }
   
-  extension [Self <: HttpProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpProperties] (val x: Self) extends AnyVal {
     
     inline def setHttpName(value: NamespaceName): Self = StObject.set(x, "HttpName", value.asInstanceOf[js.Any])
     

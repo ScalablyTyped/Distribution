@@ -41,7 +41,8 @@ object libTypesReanimated2AnimationCommonTypesMod {
       __obj.asInstanceOf[DelayAnimation]
     }
     
-    extension [Self <: DelayAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DelayAnimation] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: AnimatableValue): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object libTypesReanimated2AnimationCommonTypesMod {
       __obj.asInstanceOf[HigherOrderAnimation]
     }
     
-    extension [Self <: HigherOrderAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HigherOrderAnimation] (val x: Self) extends AnyVal {
       
       inline def setIsHigherOrder(value: Boolean): Self = StObject.set(x, "isHigherOrder", value.asInstanceOf[js.Any])
       
@@ -103,7 +105,8 @@ object libTypesReanimated2AnimationCommonTypesMod {
       __obj.asInstanceOf[RepeatAnimation]
     }
     
-    extension [Self <: RepeatAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepeatAnimation] (val x: Self) extends AnyVal {
       
       inline def setPreviousAnimation(value: RepeatAnimation): Self = StObject.set(x, "previousAnimation", value.asInstanceOf[js.Any])
       
@@ -136,7 +139,8 @@ object libTypesReanimated2AnimationCommonTypesMod {
       __obj.asInstanceOf[SequenceAnimation]
     }
     
-    extension [Self <: SequenceAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SequenceAnimation] (val x: Self) extends AnyVal {
       
       inline def setAnimationIndex(value: Double): Self = StObject.set(x, "animationIndex", value.asInstanceOf[js.Any])
     }
@@ -173,7 +177,8 @@ object libTypesReanimated2AnimationCommonTypesMod {
       __obj.asInstanceOf[StyleLayoutAnimation]
     }
     
-    extension [Self <: StyleLayoutAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleLayoutAnimation] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* finished */ js.UndefOr[Boolean], /* current */ js.UndefOr[AnimatableValue]) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

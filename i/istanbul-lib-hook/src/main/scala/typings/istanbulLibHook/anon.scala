@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialHookRequireOptions]
     }
     
-    extension [Self <: PartialHookRequireOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHookRequireOptions] (val x: Self) extends AnyVal {
       
       inline def setExtensions(value: js.Array[String]): Self = StObject.set(x, "extensions", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object anon {
       __obj.asInstanceOf[PartialHookRunInContextOp]
     }
     
-    extension [Self <: PartialHookRunInContextOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialHookRunInContextOp] (val x: Self) extends AnyVal {
       
       inline def setCoverageVariable(value: String): Self = StObject.set(x, "coverageVariable", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setVerbose(value: Boolean): Self = StObject.set(x, "verbose", value.asInstanceOf[js.Any])
       

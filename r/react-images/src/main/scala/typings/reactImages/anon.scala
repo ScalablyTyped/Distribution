@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Blanket]
     }
     
-    extension [Self <: Blanket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blanket] (val x: Self) extends AnyVal {
       
       inline def setBlanket(value: (/* base */ CSSProperties, /* state */ Any) => CSSProperties): Self = StObject.set(x, "blanket", js.Any.fromFunction2(value))
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Download]
     }
     
-    extension [Self <: Download](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Download] (val x: Self) extends AnyVal {
       
       inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setProps(value: String): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       

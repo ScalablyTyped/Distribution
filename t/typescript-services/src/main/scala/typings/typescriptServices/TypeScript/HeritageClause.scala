@@ -44,7 +44,8 @@ object HeritageClause {
     __obj.asInstanceOf[HeritageClause]
   }
   
-  extension [Self <: HeritageClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeritageClause] (val x: Self) extends AnyVal {
     
     inline def setStructuralEquals(value: (HeritageClause, Boolean) => Boolean): Self = StObject.set(x, "structuralEquals", js.Any.fromFunction2(value))
     

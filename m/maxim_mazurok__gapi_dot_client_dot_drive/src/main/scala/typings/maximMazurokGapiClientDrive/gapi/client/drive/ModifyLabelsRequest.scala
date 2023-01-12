@@ -19,7 +19,8 @@ object ModifyLabelsRequest {
     __obj.asInstanceOf[ModifyLabelsRequest]
   }
   
-  extension [Self <: ModifyLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

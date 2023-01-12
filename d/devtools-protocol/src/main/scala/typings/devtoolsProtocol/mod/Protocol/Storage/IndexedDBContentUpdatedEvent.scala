@@ -33,7 +33,8 @@ object IndexedDBContentUpdatedEvent {
     __obj.asInstanceOf[IndexedDBContentUpdatedEvent]
   }
   
-  extension [Self <: IndexedDBContentUpdatedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndexedDBContentUpdatedEvent] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: String): Self = StObject.set(x, "databaseName", value.asInstanceOf[js.Any])
     

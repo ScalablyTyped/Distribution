@@ -65,7 +65,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[ICollection[I]]
     }
     
-    extension [Self <: ICollection[?], I](x: Self & ICollection[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollection[?], I] (val x: Self & ICollection[I]) extends AnyVal {
       
       inline def setAdd(value: I => Unit): Self = StObject.set(x, "Add", js.Any.fromFunction1(value))
       
@@ -128,7 +129,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[IConverter[T]]
     }
     
-    extension [Self <: IConverter[?], T](x: Self & IConverter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConverter[?], T] (val x: Self & IConverter[T]) extends AnyVal {
       
       inline def setGet(value: T => js.UndefOr[String]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -207,7 +209,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlChildElementType[T]]
     }
     
-    extension [Self <: XmlChildElementType[?], T](x: Self & XmlChildElementType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlChildElementType[?], T] (val x: Self & XmlChildElementType[T]) extends AnyVal {
       
       inline def setMaxOccurs(value: Double): Self = StObject.set(x, "maxOccurs", value.asInstanceOf[js.Any])
       
@@ -256,7 +259,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlContentType[T]]
     }
     
-    extension [Self <: XmlContentType[?], T](x: Self & XmlContentType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlContentType[?], T] (val x: Self & XmlContentType[T]) extends AnyVal {
       
       inline def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -295,7 +299,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlElementType]
     }
     
-    extension [Self <: XmlElementType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlElementType] (val x: Self) extends AnyVal {
       
       inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
     }
@@ -326,7 +331,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlNamespace]
     }
     
-    extension [Self <: XmlNamespace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlNamespace] (val x: Self) extends AnyVal {
       
       inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
       
@@ -359,7 +365,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlSchema]
     }
     
-    extension [Self <: XmlSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlSchema] (val x: Self) extends AnyVal {
       
       inline def setItems(value: StringDictionary[XmlChildElementTypeanytyp | XmlAttributeTypeanytypest]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -426,7 +433,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlSchemaItem[T]]
     }
     
-    extension [Self <: XmlSchemaItem[?], T](x: Self & XmlSchemaItem[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlSchemaItem[?], T] (val x: Self & XmlSchemaItem[T]) extends AnyVal {
       
       inline def setConverter(value: IConverter[T]): Self = StObject.set(x, "converter", value.asInstanceOf[js.Any])
       
@@ -477,7 +485,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlSchemaItemBase]
     }
     
-    extension [Self <: XmlSchemaItemBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlSchemaItemBase] (val x: Self) extends AnyVal {
       
       inline def setLocalName(value: String): Self = StObject.set(x, "localName", value.asInstanceOf[js.Any])
       
@@ -514,7 +523,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[XmlSchemaItemParser]
     }
     
-    extension [Self <: XmlSchemaItemParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlSchemaItemParser] (val x: Self) extends AnyVal {
       
       inline def setParser(value: IXmlSerializableConstructor): Self = StObject.set(x, "parser", value.asInstanceOf[js.Any])
       

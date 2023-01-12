@@ -19,7 +19,8 @@ object ForRet {
     __obj.asInstanceOf[ForRet]
   }
   
-  extension [Self <: ForRet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForRet] (val x: Self) extends AnyVal {
     
     inline def setIn(value: Any => ForExpression): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     

@@ -185,7 +185,8 @@ object JobTemplateAttributes {
     __obj.asInstanceOf[JobTemplateAttributes]
   }
   
-  extension [Self <: JobTemplateAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobTemplateAttributes] (val x: Self) extends AnyVal {
     
     inline def `setChamber-humidity`(value: Double): Self = StObject.set(x, "chamber-humidity", value.asInstanceOf[js.Any])
     

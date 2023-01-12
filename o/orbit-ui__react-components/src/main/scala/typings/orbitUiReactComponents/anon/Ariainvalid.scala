@@ -58,7 +58,8 @@ object Ariainvalid {
     __obj.asInstanceOf[Ariainvalid]
   }
   
-  extension [Self <: Ariainvalid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ariainvalid] (val x: Self) extends AnyVal {
     
     inline def `setAria-invalid`(value: Boolean): Self = StObject.set(x, "aria-invalid", value.asInstanceOf[js.Any])
     

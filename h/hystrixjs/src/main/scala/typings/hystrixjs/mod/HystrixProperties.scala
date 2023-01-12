@@ -56,7 +56,8 @@ object HystrixProperties {
     __obj.asInstanceOf[HystrixProperties]
   }
   
-  extension [Self <: HystrixProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HystrixProperties] (val x: Self) extends AnyVal {
     
     inline def setHystrixDotcircuitDoterrorThresholdPercentage(value: Double): Self = StObject.set(x, "hystrix.circuit.errorThresholdPercentage", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setClusterStates(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState} */ js.Any

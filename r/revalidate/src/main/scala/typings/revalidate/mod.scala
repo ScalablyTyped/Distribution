@@ -118,7 +118,8 @@ object mod {
       __obj.asInstanceOf[CombineValidatorsOptions]
     }
     
-    extension [Self <: CombineValidatorsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CombineValidatorsOptions] (val x: Self) extends AnyVal {
       
       inline def setSerializeValues(value: /* values */ Any => Any): Self = StObject.set(x, "serializeValues", js.Any.fromFunction1(value))
       
@@ -155,7 +156,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setField(value: Any): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[Multiple]
     }
     
-    extension [Self <: Multiple](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Multiple] (val x: Self) extends AnyVal {
       
       inline def setMultiple(value: Boolean): Self = StObject.set(x, "multiple", value.asInstanceOf[js.Any])
       
@@ -224,7 +227,8 @@ object mod {
       __obj.asInstanceOf[ParsedField]
     }
     
-    extension [Self <: ParsedField](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedField] (val x: Self) extends AnyVal {
       
       inline def setBaseName(value: String): Self = StObject.set(x, "baseName", value.asInstanceOf[js.Any])
       

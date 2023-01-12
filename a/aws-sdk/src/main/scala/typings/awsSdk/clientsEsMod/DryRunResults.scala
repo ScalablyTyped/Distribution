@@ -23,7 +23,8 @@ object DryRunResults {
     __obj.asInstanceOf[DryRunResults]
   }
   
-  extension [Self <: DryRunResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DryRunResults] (val x: Self) extends AnyVal {
     
     inline def setDeploymentType(value: DeploymentType): Self = StObject.set(x, "DeploymentType", value.asInstanceOf[js.Any])
     

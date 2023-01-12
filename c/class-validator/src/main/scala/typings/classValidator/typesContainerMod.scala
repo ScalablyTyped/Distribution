@@ -37,7 +37,8 @@ object typesContainerMod {
       __obj.asInstanceOf[UseContainerOptions]
     }
     
-    extension [Self <: UseContainerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseContainerOptions] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: Boolean): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       

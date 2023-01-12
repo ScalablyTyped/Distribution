@@ -48,7 +48,8 @@ object libSimpleeventemitterMod {
       __obj.asInstanceOf[SimpleEventEmitter]
     }
     
-    extension [Self <: SimpleEventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleEventEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: /* repeated */ Any => Any): Self = StObject.set(x, "emit", js.Any.fromFunction1(value))
       

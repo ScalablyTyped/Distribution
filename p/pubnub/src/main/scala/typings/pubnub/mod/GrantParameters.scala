@@ -38,7 +38,8 @@ object GrantParameters {
     __obj.asInstanceOf[GrantParameters]
   }
   
-  extension [Self <: GrantParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantParameters] (val x: Self) extends AnyVal {
     
     inline def setAuthKeys(value: js.Array[String]): Self = StObject.set(x, "authKeys", value.asInstanceOf[js.Any])
     

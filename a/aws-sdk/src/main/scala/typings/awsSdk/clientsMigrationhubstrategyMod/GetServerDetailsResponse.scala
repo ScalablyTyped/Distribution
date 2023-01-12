@@ -28,7 +28,8 @@ object GetServerDetailsResponse {
     __obj.asInstanceOf[GetServerDetailsResponse]
   }
   
-  extension [Self <: GetServerDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServerDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssociatedApplications(value: AssociatedApplications): Self = StObject.set(x, "associatedApplications", value.asInstanceOf[js.Any])
     

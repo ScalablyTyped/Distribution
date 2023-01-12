@@ -28,7 +28,8 @@ object PackageObject {
     __obj.asInstanceOf[PackageObject]
   }
   
-  extension [Self <: PackageObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageObject] (val x: Self) extends AnyVal {
     
     inline def setName(value: NodePackageName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

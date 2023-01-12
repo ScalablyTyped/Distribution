@@ -20,7 +20,8 @@ object NotebookDescription {
     __obj.asInstanceOf[NotebookDescription]
   }
   
-  extension [Self <: NotebookDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDescription] (val x: Self) extends AnyVal {
     
     inline def setNotebookDescription(value: String): Self = StObject.set(x, "notebookDescription", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object esThemeThemeMod {
       __obj.asInstanceOf[Theme[DesignToken, DerivativeToken]]
     }
     
-    extension [Self <: Theme[?, ?], DesignToken /* <: TokenType */, DerivativeToken /* <: TokenType */](x: Self & (Theme[DesignToken, DerivativeToken])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme[?, ?], DesignToken /* <: TokenType */, DerivativeToken /* <: TokenType */] (val x: Self & (Theme[DesignToken, DerivativeToken])) extends AnyVal {
       
       inline def setDerivatives(value: Any): Self = StObject.set(x, "derivatives", value.asInstanceOf[js.Any])
       

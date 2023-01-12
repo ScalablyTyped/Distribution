@@ -55,7 +55,8 @@ object typesModulesEffectCardsMod {
       __obj.asInstanceOf[CardsEffectOptions]
     }
     
-    extension [Self <: CardsEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardsEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setPerSlideOffset(value: Double): Self = StObject.set(x, "perSlideOffset", value.asInstanceOf[js.Any])
       

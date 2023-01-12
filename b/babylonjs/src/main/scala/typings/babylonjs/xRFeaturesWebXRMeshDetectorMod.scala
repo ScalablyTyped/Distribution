@@ -92,7 +92,8 @@ object xRFeaturesWebXRMeshDetectorMod {
       __obj.asInstanceOf[IWebXRMeshDetectorOptions]
     }
     
-    extension [Self <: IWebXRMeshDetectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRMeshDetectorOptions] (val x: Self) extends AnyVal {
       
       inline def setConvertCoordinateSystems(value: Boolean): Self = StObject.set(x, "convertCoordinateSystems", value.asInstanceOf[js.Any])
       
@@ -163,7 +164,8 @@ object xRFeaturesWebXRMeshDetectorMod {
       __obj.asInstanceOf[IWebXRVertexData]
     }
     
-    extension [Self <: IWebXRVertexData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWebXRVertexData] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object NonSdkApiInsight {
     __obj.asInstanceOf[NonSdkApiInsight]
   }
   
-  extension [Self <: NonSdkApiInsight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonSdkApiInsight] (val x: Self) extends AnyVal {
     
     inline def setExampleTraceMessages(value: js.Array[String]): Self = StObject.set(x, "exampleTraceMessages", value.asInstanceOf[js.Any])
     

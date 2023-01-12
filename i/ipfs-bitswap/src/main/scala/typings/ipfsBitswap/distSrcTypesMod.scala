@@ -70,7 +70,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Ledger]
     }
     
-    extension [Self <: Ledger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ledger] (val x: Self) extends AnyVal {
       
       inline def setExchanged(value: Double): Self = StObject.set(x, "exchanged", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Stat]
     }
     
-    extension [Self <: Stat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stat] (val x: Self) extends AnyVal {
       
       inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
       
@@ -186,7 +188,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[WantListEntry]
     }
     
-    extension [Self <: WantListEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WantListEntry] (val x: Self) extends AnyVal {
       
       inline def setCid(value: typings.multiformats.cidMod.CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -242,7 +245,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Wantlist]
     }
     
-    extension [Self <: Wantlist](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Wantlist] (val x: Self) extends AnyVal {
       
       inline def setAdd(
         value: (typings.multiformats.cidMod.CID[Any, Double, Double, Version], Double, /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Message.Wantlist.WantType */ Any) => Unit

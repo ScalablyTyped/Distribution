@@ -28,7 +28,8 @@ object HopDestination {
     __obj.asInstanceOf[HopDestination]
   }
   
-  extension [Self <: HopDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HopDestination] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: integerMinNegative50Max50): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

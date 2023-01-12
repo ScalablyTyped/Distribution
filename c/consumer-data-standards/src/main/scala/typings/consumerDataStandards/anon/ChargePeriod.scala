@@ -96,7 +96,8 @@ object ChargePeriod {
     __obj.asInstanceOf[ChargePeriod]
   }
   
-  extension [Self <: ChargePeriod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargePeriod] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

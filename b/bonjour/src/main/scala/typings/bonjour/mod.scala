@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[BaseService]
     }
     
-    extension [Self <: BaseService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseService] (val x: Self) extends AnyVal {
       
       inline def setFqdn(value: String): Self = StObject.set(x, "fqdn", value.asInstanceOf[js.Any])
       
@@ -125,7 +126,8 @@ object mod {
       __obj.asInstanceOf[BonjourOptions]
     }
     
-    extension [Self <: BonjourOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BonjourOptions] (val x: Self) extends AnyVal {
       
       inline def setInterface(value: String): Self = StObject.set(x, "interface", value.asInstanceOf[js.Any])
       
@@ -214,7 +216,8 @@ object mod {
       __obj.asInstanceOf[BrowserOptions]
     }
     
-    extension [Self <: BrowserOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       
@@ -266,7 +269,8 @@ object mod {
       __obj.asInstanceOf[RemoteService]
     }
     
-    extension [Self <: RemoteService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteService] (val x: Self) extends AnyVal {
       
       inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object mod {
       __obj.asInstanceOf[ServiceOptions]
     }
     
-    extension [Self <: ServiceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceOptions] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       

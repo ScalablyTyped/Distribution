@@ -21,7 +21,8 @@ object babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod {
       __obj.asInstanceOf[typings.babylonjs.legacyLegacyMod.babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod.RenderTargetTexture]
     }
     
-    extension [Self <: typings.babylonjs.legacyLegacyMod.babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod.RenderTargetTexture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.babylonjs.legacyLegacyMod.babylonjsMaterialsTexturesRenderTargetTextureAugmentingMod.RenderTargetTexture] (val x: Self) extends AnyVal {
       
       inline def set_prePassRenderTarget(value: Nullable[PrePassRenderTarget]): Self = StObject.set(x, "_prePassRenderTarget", value.asInstanceOf[js.Any])
       

@@ -42,7 +42,8 @@ object HostedFieldsField {
     __obj.asInstanceOf[HostedFieldsField]
   }
   
-  extension [Self <: HostedFieldsField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsField] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

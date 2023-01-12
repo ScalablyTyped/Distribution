@@ -18,7 +18,8 @@ object SetSettingsOptions {
     __obj.asInstanceOf[SetSettingsOptions]
   }
   
-  extension [Self <: SetSettingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSettingsOptions] (val x: Self) extends AnyVal {
     
     inline def setForwardToReplicas(value: Boolean): Self = StObject.set(x, "forwardToReplicas", value.asInstanceOf[js.Any])
     

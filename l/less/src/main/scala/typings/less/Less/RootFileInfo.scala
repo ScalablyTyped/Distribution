@@ -45,7 +45,8 @@ object RootFileInfo {
     __obj.asInstanceOf[RootFileInfo]
   }
   
-  extension [Self <: RootFileInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootFileInfo] (val x: Self) extends AnyVal {
     
     inline def setCurrentDirectory(value: String): Self = StObject.set(x, "currentDirectory", value.asInstanceOf[js.Any])
     

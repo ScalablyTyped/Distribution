@@ -24,7 +24,8 @@ object TorrentStream {
       __obj.asInstanceOf[ReadStreamOptions]
     }
     
-    extension [Self <: ReadStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object TorrentStream {
       __obj.asInstanceOf[Swarm]
     }
     
-    extension [Self <: Swarm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Swarm] (val x: Self) extends AnyVal {
       
       inline def setDownloaded(value: Double): Self = StObject.set(x, "downloaded", value.asInstanceOf[js.Any])
     }
@@ -117,7 +119,8 @@ object TorrentStream {
       __obj.asInstanceOf[TorrentEngineOptions]
     }
     
-    extension [Self <: TorrentEngineOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentEngineOptions] (val x: Self) extends AnyVal {
       
       inline def setConnections(value: Double): Self = StObject.set(x, "connections", value.asInstanceOf[js.Any])
       

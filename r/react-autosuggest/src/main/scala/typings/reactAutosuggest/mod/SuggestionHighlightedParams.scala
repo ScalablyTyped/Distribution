@@ -15,7 +15,8 @@ object SuggestionHighlightedParams {
     __obj.asInstanceOf[SuggestionHighlightedParams]
   }
   
-  extension [Self <: SuggestionHighlightedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuggestionHighlightedParams] (val x: Self) extends AnyVal {
     
     inline def setSuggestion(value: Any): Self = StObject.set(x, "suggestion", value.asInstanceOf[js.Any])
   }

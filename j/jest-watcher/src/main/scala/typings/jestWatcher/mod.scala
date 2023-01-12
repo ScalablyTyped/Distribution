@@ -255,7 +255,8 @@ object mod {
       __obj.asInstanceOf[AllowedConfigOptions]
     }
     
-    extension [Self <: AllowedConfigOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedConfigOptions] (val x: Self) extends AnyVal {
       
       inline def setBail(value: Double): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object mod {
       __obj.asInstanceOf[JestHookEmitter]
     }
     
-    extension [Self <: JestHookEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestHookEmitter] (val x: Self) extends AnyVal {
       
       inline def setOnFileChange(value: JestHookExposedFS => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
@@ -392,7 +394,8 @@ object mod {
       __obj.asInstanceOf[JestHookExposedFS]
     }
     
-    extension [Self <: JestHookExposedFS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestHookExposedFS] (val x: Self) extends AnyVal {
       
       inline def setProjects(value: js.Array[Config]): Self = StObject.set(x, "projects", value.asInstanceOf[js.Any])
       
@@ -419,7 +422,8 @@ object mod {
       __obj.asInstanceOf[JestHookSubscriber]
     }
     
-    extension [Self <: JestHookSubscriber](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JestHookSubscriber] (val x: Self) extends AnyVal {
       
       inline def setOnFileChange(value: FileChange => Unit): Self = StObject.set(x, "onFileChange", js.Any.fromFunction1(value))
       
@@ -442,7 +446,8 @@ object mod {
       __obj.asInstanceOf[ScrollOptions2]
     }
     
-    extension [Self <: ScrollOptions2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollOptions2] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -463,7 +468,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setInterrupted(value: Boolean): Self = StObject.set(x, "interrupted", value.asInstanceOf[js.Any])
     }
@@ -486,7 +492,8 @@ object mod {
       __obj.asInstanceOf[TestSuiteInfo]
     }
     
-    extension [Self <: TestSuiteInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestSuiteInfo] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ProjectConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -513,7 +520,8 @@ object mod {
       __obj.asInstanceOf[UsageData]
     }
     
-    extension [Self <: UsageData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UsageData] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -547,7 +555,8 @@ object mod {
       __obj.asInstanceOf[WatchPlugin]
     }
     
-    extension [Self <: WatchPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: /* hooks */ JestHookSubscriber => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

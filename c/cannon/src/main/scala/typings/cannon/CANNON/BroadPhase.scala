@@ -50,7 +50,8 @@ object BroadPhase {
     __obj.asInstanceOf[BroadPhase]
   }
   
-  extension [Self <: BroadPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BroadPhase] (val x: Self) extends AnyVal {
     
     inline def setAabbQuery(value: (World, AABB, js.Array[Body]) => js.Array[Body]): Self = StObject.set(x, "aabbQuery", js.Any.fromFunction3(value))
     

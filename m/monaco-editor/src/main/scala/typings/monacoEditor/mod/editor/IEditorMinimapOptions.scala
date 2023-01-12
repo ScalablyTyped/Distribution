@@ -66,7 +66,8 @@ object IEditorMinimapOptions {
     __obj.asInstanceOf[IEditorMinimapOptions]
   }
   
-  extension [Self <: IEditorMinimapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEditorMinimapOptions] (val x: Self) extends AnyVal {
     
     inline def setAutohide(value: Boolean): Self = StObject.set(x, "autohide", value.asInstanceOf[js.Any])
     

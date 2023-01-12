@@ -69,7 +69,8 @@ object Dangerous {
     __obj.asInstanceOf[Dangerous]
   }
   
-  extension [Self <: Dangerous](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dangerous] (val x: Self) extends AnyVal {
     
     inline def setAppDelegate(value: BaseModProviderMethods[AppDelegateProjectFile, PartialPickBaseModOptions]): Self = StObject.set(x, "appDelegate", value.asInstanceOf[js.Any])
     

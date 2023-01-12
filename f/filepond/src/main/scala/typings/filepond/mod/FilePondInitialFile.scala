@@ -18,7 +18,8 @@ object FilePondInitialFile {
     __obj.asInstanceOf[FilePondInitialFile]
   }
   
-  extension [Self <: FilePondInitialFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePondInitialFile] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: typings.filepond.anon.File): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

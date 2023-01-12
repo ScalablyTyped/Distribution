@@ -21,7 +21,8 @@ object AggregationsCardinalityAggregation {
     __obj.asInstanceOf[AggregationsCardinalityAggregation]
   }
   
-  extension [Self <: AggregationsCardinalityAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsCardinalityAggregation] (val x: Self) extends AnyVal {
     
     inline def setExecution_hint(value: AggregationsCardinalityExecutionMode): Self = StObject.set(x, "execution_hint", value.asInstanceOf[js.Any])
     

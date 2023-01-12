@@ -34,7 +34,8 @@ object AutoEncryptionTlsOptions {
     __obj.asInstanceOf[AutoEncryptionTlsOptions]
   }
   
-  extension [Self <: AutoEncryptionTlsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoEncryptionTlsOptions] (val x: Self) extends AnyVal {
     
     inline def setTlsCAFile(value: String): Self = StObject.set(x, "tlsCAFile", value.asInstanceOf[js.Any])
     

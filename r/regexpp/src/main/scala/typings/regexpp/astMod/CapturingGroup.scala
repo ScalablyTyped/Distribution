@@ -37,7 +37,8 @@ object CapturingGroup {
     __obj.asInstanceOf[CapturingGroup]
   }
   
-  extension [Self <: CapturingGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CapturingGroup] (val x: Self) extends AnyVal {
     
     inline def setAlternatives(value: js.Array[Alternative]): Self = StObject.set(x, "alternatives", value.asInstanceOf[js.Any])
     

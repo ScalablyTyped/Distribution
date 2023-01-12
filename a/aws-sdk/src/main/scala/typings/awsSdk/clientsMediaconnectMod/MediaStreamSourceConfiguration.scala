@@ -28,7 +28,8 @@ object MediaStreamSourceConfiguration {
     __obj.asInstanceOf[MediaStreamSourceConfiguration]
   }
   
-  extension [Self <: MediaStreamSourceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaStreamSourceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setEncodingName(value: EncodingName): Self = StObject.set(x, "EncodingName", value.asInstanceOf[js.Any])
     

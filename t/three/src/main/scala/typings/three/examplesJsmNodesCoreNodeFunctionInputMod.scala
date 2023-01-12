@@ -51,7 +51,8 @@ object examplesJsmNodesCoreNodeFunctionInputMod {
       __obj.asInstanceOf[NodeFunctionInput]
     }
     
-    extension [Self <: NodeFunctionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeFunctionInput] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

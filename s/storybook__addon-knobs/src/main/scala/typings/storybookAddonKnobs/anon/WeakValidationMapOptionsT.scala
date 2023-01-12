@@ -26,7 +26,8 @@ object WeakValidationMapOptionsT {
     __obj.asInstanceOf[WeakValidationMapOptionsT]
   }
   
-  extension [Self <: WeakValidationMapOptionsT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapOptionsT] (val x: Self) extends AnyVal {
     
     inline def setDisplay(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptionsDisplay ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptionsDisplay | null | undefined> : undefined extends @storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptionsDisplay ? react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptionsDisplay | null | undefined> : react.react.Validator<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsKnobOptionsDisplay> */ js.Any

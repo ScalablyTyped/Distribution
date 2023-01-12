@@ -39,7 +39,8 @@ object LoadingLoadable {
     __obj.asInstanceOf[LoadingLoadable[T]]
   }
   
-  extension [Self <: LoadingLoadable[?], T](x: Self & LoadingLoadable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadingLoadable[?], T] (val x: Self & LoadingLoadable[T]) extends AnyVal {
     
     inline def setContents(value: js.Promise[T]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

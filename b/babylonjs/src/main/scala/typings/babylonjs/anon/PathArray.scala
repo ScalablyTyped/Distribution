@@ -41,7 +41,8 @@ object PathArray {
     __obj.asInstanceOf[PathArray]
   }
   
-  extension [Self <: PathArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathArray] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

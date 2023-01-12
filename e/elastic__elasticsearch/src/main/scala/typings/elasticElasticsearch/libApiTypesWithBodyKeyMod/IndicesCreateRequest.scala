@@ -27,7 +27,8 @@ object IndicesCreateRequest {
     __obj.asInstanceOf[IndicesCreateRequest]
   }
   
-  extension [Self <: IndicesCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Mappings): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

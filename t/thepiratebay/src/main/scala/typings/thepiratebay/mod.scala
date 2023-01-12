@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[Category]
     }
     
-    extension [Self <: Category](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Category] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[CategoryGroup]
     }
     
-    extension [Self <: CategoryGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryGroup] (val x: Self) extends AnyVal {
       
       inline def setSubcategories(value: js.Array[Category]): Self = StObject.set(x, "subcategories", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object mod {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -119,7 +122,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String | Double): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -156,7 +160,8 @@ object mod {
       __obj.asInstanceOf[TVSeason]
     }
     
-    extension [Self <: TVSeason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TVSeason] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -181,7 +186,8 @@ object mod {
       __obj.asInstanceOf[TVTorrent]
     }
     
-    extension [Self <: TVTorrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TVTorrent] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -231,7 +237,8 @@ object mod {
       __obj.asInstanceOf[Torrent]
     }
     
-    extension [Self <: Torrent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Torrent] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -280,7 +287,8 @@ object mod {
       __obj.asInstanceOf[TorrentDetails]
     }
     
-    extension [Self <: TorrentDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentDetails] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     }
@@ -317,7 +325,8 @@ object mod {
       __obj.asInstanceOf[TorrentSearchResult]
     }
     
-    extension [Self <: TorrentSearchResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TorrentSearchResult] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: Category): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

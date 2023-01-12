@@ -29,7 +29,8 @@ object TypeofOrder {
     __obj.asInstanceOf[TypeofOrder]
   }
   
-  extension [Self <: TypeofOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofOrder] (val x: Self) extends AnyVal {
     
     inline def setAutomaticTax(value: Any): Self = StObject.set(x, "AutomaticTax", value.asInstanceOf[js.Any])
     

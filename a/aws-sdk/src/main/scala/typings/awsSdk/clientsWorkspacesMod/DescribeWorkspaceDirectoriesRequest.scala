@@ -28,7 +28,8 @@ object DescribeWorkspaceDirectoriesRequest {
     __obj.asInstanceOf[DescribeWorkspaceDirectoriesRequest]
   }
   
-  extension [Self <: DescribeWorkspaceDirectoriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeWorkspaceDirectoriesRequest] (val x: Self) extends AnyVal {
     
     inline def setDirectoryIds(value: DirectoryIdList): Self = StObject.set(x, "DirectoryIds", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Model {
     __obj.asInstanceOf[Model]
   }
   
-  extension [Self <: Model](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Model] (val x: Self) extends AnyVal {
     
     inline def setBindTo(value: Any => Unit): Self = StObject.set(x, "bindTo", js.Any.fromFunction1(value))
     

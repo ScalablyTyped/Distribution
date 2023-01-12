@@ -38,7 +38,8 @@ object Fallback {
     __obj.asInstanceOf[Fallback]
   }
   
-  extension [Self <: Fallback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fallback] (val x: Self) extends AnyVal {
     
     inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object QuotaResponse {
     __obj.asInstanceOf[QuotaResponse]
   }
   
-  extension [Self <: QuotaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuotaResponse] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Object): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

@@ -74,7 +74,8 @@ object PartialUpcastConversionAp {
     __obj.asInstanceOf[PartialUpcastConversionAp]
   }
   
-  extension [Self <: PartialUpcastConversionAp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialUpcastConversionAp] (val x: Self) extends AnyVal {
     
     inline def setConsumable(value: default): Self = StObject.set(x, "consumable", value.asInstanceOf[js.Any])
     

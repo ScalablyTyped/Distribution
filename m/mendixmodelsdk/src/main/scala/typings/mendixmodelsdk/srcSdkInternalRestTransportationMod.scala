@@ -73,7 +73,8 @@ object srcSdkInternalRestTransportationMod {
       __obj.asInstanceOf[IRequestResult]
     }
     
-    extension [Self <: IRequestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRequestResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

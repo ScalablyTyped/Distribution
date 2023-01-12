@@ -55,7 +55,8 @@ object typesFieldsetMod {
       __obj.asInstanceOf[FieldsetProps]
     }
     
-    extension [Self <: FieldsetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FieldsetProps] (val x: Self) extends AnyVal {
       
       inline def setLegend(value: ReactNode): Self = StObject.set(x, "legend", value.asInstanceOf[js.Any])
       

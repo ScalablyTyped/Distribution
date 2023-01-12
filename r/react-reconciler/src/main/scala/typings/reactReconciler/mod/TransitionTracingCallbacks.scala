@@ -71,7 +71,8 @@ object TransitionTracingCallbacks {
     __obj.asInstanceOf[TransitionTracingCallbacks]
   }
   
-  extension [Self <: TransitionTracingCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionTracingCallbacks] (val x: Self) extends AnyVal {
     
     inline def setOnMarkerComplete(
       value: (/* transitionName */ String, /* marker */ String, /* startTime */ Double, /* endTime */ Double) => Unit

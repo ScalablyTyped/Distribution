@@ -76,7 +76,8 @@ object XDataSequence {
     __obj.asInstanceOf[XDataSequence]
   }
   
-  extension [Self <: XDataSequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataSequence] (val x: Self) extends AnyVal {
     
     inline def setData(value: SafeArray[Any]): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

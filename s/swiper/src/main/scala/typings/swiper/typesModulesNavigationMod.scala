@@ -43,7 +43,8 @@ object typesModulesNavigationMod {
       __obj.asInstanceOf[NavigationEvents]
     }
     
-    extension [Self <: NavigationEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationEvents] (val x: Self) extends AnyVal {
       
       inline def setNavigationHide(value: default => Unit): Self = StObject.set(x, "navigationHide", js.Any.fromFunction1(value))
       
@@ -95,7 +96,8 @@ object typesModulesNavigationMod {
       __obj.asInstanceOf[NavigationMethods]
     }
     
-    extension [Self <: NavigationMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationMethods] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -174,7 +176,8 @@ object typesModulesNavigationMod {
       __obj.asInstanceOf[NavigationOptions]
     }
     
-    extension [Self <: NavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabledClass(value: String): Self = StObject.set(x, "disabledClass", value.asInstanceOf[js.Any])
       

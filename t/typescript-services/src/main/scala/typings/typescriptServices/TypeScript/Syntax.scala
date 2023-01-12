@@ -45,7 +45,8 @@ object Syntax {
       __obj.asInstanceOf[EmptySyntaxList]
     }
     
-    extension [Self <: EmptySyntaxList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptySyntaxList] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (PositionedElement, Double, Double) => PositionedToken): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -123,7 +124,8 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithLeadingAndTrailingTrivia]
     }
     
-    extension [Self <: FixedWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedWidthTokenWithLeadingAndTrailingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -206,7 +208,8 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithLeadingTrivia]
     }
     
-    extension [Self <: FixedWidthTokenWithLeadingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedWidthTokenWithLeadingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -281,7 +284,8 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithNoTrivia]
     }
     
-    extension [Self <: FixedWidthTokenWithNoTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedWidthTokenWithNoTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -358,7 +362,8 @@ object Syntax {
       __obj.asInstanceOf[FixedWidthTokenWithTrailingTrivia]
     }
     
-    extension [Self <: FixedWidthTokenWithTrailingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedWidthTokenWithTrailingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -864,7 +869,8 @@ object Syntax {
       __obj.asInstanceOf[IFactory]
     }
     
-    extension [Self <: IFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFactory] (val x: Self) extends AnyVal {
       
       inline def setArgumentList(
         value: (TypeArgumentListSyntax, ISyntaxToken, ISeparatedSyntaxList, ISyntaxToken) => ArgumentListSyntax
@@ -1356,7 +1362,8 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithLeadingAndTrailingTrivia]
     }
     
-    extension [Self <: VariableWidthTokenWithLeadingAndTrailingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableWidthTokenWithLeadingAndTrailingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -1439,7 +1446,8 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithLeadingTrivia]
     }
     
-    extension [Self <: VariableWidthTokenWithLeadingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableWidthTokenWithLeadingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -1517,7 +1525,8 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithNoTrivia]
     }
     
-    extension [Self <: VariableWidthTokenWithNoTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableWidthTokenWithNoTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       
@@ -1596,7 +1605,8 @@ object Syntax {
       __obj.asInstanceOf[VariableWidthTokenWithTrailingTrivia]
     }
     
-    extension [Self <: VariableWidthTokenWithTrailingTrivia](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableWidthTokenWithTrailingTrivia] (val x: Self) extends AnyVal {
       
       inline def setFindTokenInternal(value: (Any, Any, Any) => Any): Self = StObject.set(x, "findTokenInternal", js.Any.fromFunction3(value))
       

@@ -15,7 +15,8 @@ object DefaultValueTypeDescriptor {
     __obj.asInstanceOf[DefaultValueTypeDescriptor]
   }
   
-  extension [Self <: DefaultValueTypeDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultValueTypeDescriptor] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: Boolean): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
   }

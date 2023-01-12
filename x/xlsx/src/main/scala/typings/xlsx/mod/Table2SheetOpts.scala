@@ -30,7 +30,8 @@ object Table2SheetOpts {
     __obj.asInstanceOf[Table2SheetOpts]
   }
   
-  extension [Self <: Table2SheetOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table2SheetOpts] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object Disapproval {
     __obj.asInstanceOf[Disapproval]
   }
   
-  extension [Self <: Disapproval](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disapproval] (val x: Self) extends AnyVal {
     
     inline def setDetails(value: js.Array[String]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
     

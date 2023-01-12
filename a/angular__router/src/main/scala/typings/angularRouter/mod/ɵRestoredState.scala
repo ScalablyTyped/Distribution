@@ -20,7 +20,8 @@ object ɵRestoredState {
     __obj.asInstanceOf[ɵRestoredState]
   }
   
-  extension [Self <: ɵRestoredState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ɵRestoredState] (val x: Self) extends AnyVal {
     
     inline def setNavigationId(value: Double): Self = StObject.set(x, "navigationId", value.asInstanceOf[js.Any])
     

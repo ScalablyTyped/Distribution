@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[ClearOptOutInOutOptions]
     }
     
-    extension [Self <: ClearOptOutInOutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearOptOutInOutOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie_expiration(value: Double): Self = StObject.set(x, "cookie_expiration", value.asInstanceOf[js.Any])
       
@@ -289,7 +290,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setApi_host(value: String): Self = StObject.set(x, "api_host", value.asInstanceOf[js.Any])
       
@@ -449,7 +451,8 @@ object mod {
       __obj.asInstanceOf[HasOptedInOutOptions]
     }
     
-    extension [Self <: HasOptedInOutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HasOptedInOutOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie_prefix(value: String): Self = StObject.set(x, "cookie_prefix", value.asInstanceOf[js.Any])
       
@@ -483,7 +486,8 @@ object mod {
       __obj.asInstanceOf[InTrackingOptions]
     }
     
-    extension [Self <: InTrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InTrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setTrack(value: () => Unit): Self = StObject.set(x, "track", js.Any.fromFunction0(value))
       
@@ -627,7 +631,8 @@ object mod {
       __obj.asInstanceOf[OutTrackingOptions]
     }
     
-    extension [Self <: OutTrackingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutTrackingOptions] (val x: Self) extends AnyVal {
       
       inline def setDelete_user(value: Boolean): Self = StObject.set(x, "delete_user", value.asInstanceOf[js.Any])
     }
@@ -725,7 +730,8 @@ object mod {
       __obj.asInstanceOf[RequestOptions]
     }
     
-    extension [Self <: RequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
       
       inline def setSend_immediately(value: Boolean): Self = StObject.set(x, "send_immediately", value.asInstanceOf[js.Any])
       

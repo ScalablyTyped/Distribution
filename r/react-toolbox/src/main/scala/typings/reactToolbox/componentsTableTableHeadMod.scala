@@ -75,7 +75,8 @@ object componentsTableTableHeadMod {
       __obj.asInstanceOf[TableHeadProps]
     }
     
-    extension [Self <: TableHeadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeadProps] (val x: Self) extends AnyVal {
       
       inline def setDisplaySelect(value: Boolean): Self = StObject.set(x, "displaySelect", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object componentsTableTableHeadMod {
       __obj.asInstanceOf[TableHeadTheme]
     }
     
-    extension [Self <: TableHeadTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableHeadTheme] (val x: Self) extends AnyVal {
       
       inline def setCheckboxCell(value: String): Self = StObject.set(x, "checkboxCell", value.asInstanceOf[js.Any])
       

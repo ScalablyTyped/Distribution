@@ -21,7 +21,8 @@ object PartialProps {
     __obj.asInstanceOf[PartialProps]
   }
   
-  extension [Self <: PartialProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialProps] (val x: Self) extends AnyVal {
     
     inline def setColors(value: js.Array[EditorColor]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

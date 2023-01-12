@@ -35,7 +35,8 @@ object ExcludedContentLabel {
     __obj.asInstanceOf[ExcludedContentLabel]
   }
   
-  extension [Self <: ExcludedContentLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExcludedContentLabel] (val x: Self) extends AnyVal {
     
     inline def setGetCampaignType(value: () => CampaignType): Self = StObject.set(x, "getCampaignType", js.Any.fromFunction0(value))
     

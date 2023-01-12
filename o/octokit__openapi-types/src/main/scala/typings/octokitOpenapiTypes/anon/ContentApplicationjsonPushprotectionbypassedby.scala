@@ -15,7 +15,8 @@ object ContentApplicationjsonPushprotectionbypassedby {
     __obj.asInstanceOf[ContentApplicationjsonPushprotectionbypassedby]
   }
   
-  extension [Self <: ContentApplicationjsonPushprotectionbypassedby](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonPushprotectionbypassedby] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonPushprotectionbypassedby): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -73,7 +73,8 @@ object buildTypesAlgorithmMod {
       __obj.asInstanceOf[IAlgorithm]
     }
     
-    extension [Self <: IAlgorithm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAlgorithm] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: Algorithm): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       

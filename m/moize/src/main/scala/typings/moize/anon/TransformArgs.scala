@@ -16,7 +16,8 @@ object TransformArgs {
     __obj.asInstanceOf[TransformArgs[Transformer]]
   }
   
-  extension [Self <: TransformArgs[?], Transformer /* <: TransformKey */](x: Self & TransformArgs[Transformer]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformArgs[?], Transformer /* <: TransformKey */] (val x: Self & TransformArgs[Transformer]) extends AnyVal {
     
     inline def setTransformArgs(value: Transformer): Self = StObject.set(x, "transformArgs", value.asInstanceOf[js.Any])
   }

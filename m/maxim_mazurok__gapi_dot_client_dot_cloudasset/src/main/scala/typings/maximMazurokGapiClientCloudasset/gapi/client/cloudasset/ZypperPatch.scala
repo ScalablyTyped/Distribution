@@ -25,7 +25,8 @@ object ZypperPatch {
     __obj.asInstanceOf[ZypperPatch]
   }
   
-  extension [Self <: ZypperPatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZypperPatch] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object XMimeTypeInfo {
     __obj.asInstanceOf[XMimeTypeInfo]
   }
   
-  extension [Self <: XMimeTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMimeTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setGetSupportedMimeTypeNames(value: () => SafeArray[String]): Self = StObject.set(x, "getSupportedMimeTypeNames", js.Any.fromFunction0(value))
     

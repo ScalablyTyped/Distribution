@@ -16,7 +16,8 @@ object ProductViewItemIssueItemIssueType {
     __obj.asInstanceOf[ProductViewItemIssueItemIssueType]
   }
   
-  extension [Self <: ProductViewItemIssueItemIssueType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductViewItemIssueItemIssueType] (val x: Self) extends AnyVal {
     
     inline def setCanonicalAttribute(value: String): Self = StObject.set(x, "canonicalAttribute", value.asInstanceOf[js.Any])
     

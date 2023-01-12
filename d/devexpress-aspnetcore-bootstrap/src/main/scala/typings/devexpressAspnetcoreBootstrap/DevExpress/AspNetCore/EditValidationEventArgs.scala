@@ -21,7 +21,8 @@ object EditValidationEventArgs {
     __obj.asInstanceOf[EditValidationEventArgs]
   }
   
-  extension [Self <: EditValidationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditValidationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorText(value: String): Self = StObject.set(x, "errorText", value.asInstanceOf[js.Any])
     

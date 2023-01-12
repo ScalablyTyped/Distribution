@@ -217,7 +217,8 @@ object legacyMod {
       __obj.asInstanceOf[ConnectionConfig[Props]]
     }
     
-    extension [Self <: ConnectionConfig[?], Props](x: Self & ConnectionConfig[Props]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionConfig[?], Props] (val x: Self & ConnectionConfig[Props]) extends AnyVal {
       
       inline def setDirection(value: backward | forward): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object legacyMod {
       __obj.asInstanceOf[ConnectionData]
     }
     
-    extension [Self <: ConnectionData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionData] (val x: Self) extends AnyVal {
       
       inline def setEdges(value: js.Array[Any]): Self = StObject.set(x, "edges", value.asInstanceOf[js.Any])
       
@@ -297,7 +299,8 @@ object legacyMod {
       __obj.asInstanceOf[QueryRendererProps[TOperation]]
     }
     
-    extension [Self <: QueryRendererProps[?], TOperation /* <: OperationType */](x: Self & QueryRendererProps[TOperation]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryRendererProps[?], TOperation /* <: OperationType */] (val x: Self & QueryRendererProps[TOperation]) extends AnyVal {
       
       inline def setEnvironment(value: Environment): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
       

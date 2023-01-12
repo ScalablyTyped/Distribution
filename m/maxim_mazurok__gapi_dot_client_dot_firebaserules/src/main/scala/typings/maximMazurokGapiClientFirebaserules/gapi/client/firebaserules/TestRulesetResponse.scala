@@ -19,7 +19,8 @@ object TestRulesetResponse {
     __obj.asInstanceOf[TestRulesetResponse]
   }
   
-  extension [Self <: TestRulesetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRulesetResponse] (val x: Self) extends AnyVal {
     
     inline def setIssues(value: js.Array[Issue]): Self = StObject.set(x, "issues", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PieChartProps {
     __obj.asInstanceOf[PieChartProps[T]]
   }
   
-  extension [Self <: PieChartProps[?], T /* <: PieChartData */](x: Self & PieChartProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartProps[?], T /* <: PieChartData */] (val x: Self & PieChartProps[T]) extends AnyVal {
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

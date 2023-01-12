@@ -15,7 +15,8 @@ object PassingSchemas {
     __obj.asInstanceOf[PassingSchemas]
   }
   
-  extension [Self <: PassingSchemas](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassingSchemas] (val x: Self) extends AnyVal {
     
     inline def setPassingSchemas(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "passingSchemas", value.asInstanceOf[js.Any])
     

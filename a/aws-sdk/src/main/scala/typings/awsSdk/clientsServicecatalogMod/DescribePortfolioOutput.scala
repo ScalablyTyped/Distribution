@@ -33,7 +33,8 @@ object DescribePortfolioOutput {
     __obj.asInstanceOf[DescribePortfolioOutput]
   }
   
-  extension [Self <: DescribePortfolioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribePortfolioOutput] (val x: Self) extends AnyVal {
     
     inline def setBudgets(value: Budgets): Self = StObject.set(x, "Budgets", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object DBCoreDeleteRequest {
     __obj.asInstanceOf[DBCoreDeleteRequest]
   }
   
-  extension [Self <: DBCoreDeleteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreDeleteRequest] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: Index): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

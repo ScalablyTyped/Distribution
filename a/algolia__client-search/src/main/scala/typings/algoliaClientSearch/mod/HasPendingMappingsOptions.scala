@@ -29,7 +29,8 @@ object HasPendingMappingsOptions {
     __obj.asInstanceOf[HasPendingMappingsOptions]
   }
   
-  extension [Self <: HasPendingMappingsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HasPendingMappingsOptions] (val x: Self) extends AnyVal {
     
     inline def setGetClusters(value: Boolean): Self = StObject.set(x, "getClusters", value.asInstanceOf[js.Any])
     

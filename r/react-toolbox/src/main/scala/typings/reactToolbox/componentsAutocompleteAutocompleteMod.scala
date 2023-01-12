@@ -122,7 +122,8 @@ object componentsAutocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteProps]
     }
     
-    extension [Self <: AutocompleteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteProps] (val x: Self) extends AnyVal {
       
       inline def setAllowCreate(value: Boolean): Self = StObject.set(x, "allowCreate", value.asInstanceOf[js.Any])
       
@@ -224,7 +225,8 @@ object componentsAutocompleteAutocompleteMod {
       __obj.asInstanceOf[AutocompleteTheme]
     }
     
-    extension [Self <: AutocompleteTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutocompleteTheme] (val x: Self) extends AnyVal {
       
       inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

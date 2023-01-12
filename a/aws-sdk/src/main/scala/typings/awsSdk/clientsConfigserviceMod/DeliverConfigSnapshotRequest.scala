@@ -18,7 +18,8 @@ object DeliverConfigSnapshotRequest {
     __obj.asInstanceOf[DeliverConfigSnapshotRequest]
   }
   
-  extension [Self <: DeliverConfigSnapshotRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliverConfigSnapshotRequest] (val x: Self) extends AnyVal {
     
     inline def setDeliveryChannelName(value: ChannelName): Self = StObject.set(x, "deliveryChannelName", value.asInstanceOf[js.Any])
   }

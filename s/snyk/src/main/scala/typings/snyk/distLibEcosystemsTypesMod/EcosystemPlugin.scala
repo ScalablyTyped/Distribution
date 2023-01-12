@@ -31,7 +31,8 @@ object EcosystemPlugin {
     __obj.asInstanceOf[EcosystemPlugin]
   }
   
-  extension [Self <: EcosystemPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EcosystemPlugin] (val x: Self) extends AnyVal {
     
     inline def setDisplay(
       value: (js.Array[ScanResult], js.Array[TestResult], js.Array[String], Options) => js.Promise[String]

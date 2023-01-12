@@ -20,7 +20,8 @@ object MlExplainDataFrameAnalyticsResponse {
     __obj.asInstanceOf[MlExplainDataFrameAnalyticsResponse]
   }
   
-  extension [Self <: MlExplainDataFrameAnalyticsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlExplainDataFrameAnalyticsResponse] (val x: Self) extends AnyVal {
     
     inline def setField_selection(value: js.Array[MlDataframeAnalyticsFieldSelection]): Self = StObject.set(x, "field_selection", value.asInstanceOf[js.Any])
     

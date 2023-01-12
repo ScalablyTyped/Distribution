@@ -33,7 +33,8 @@ object ListConnectionsInput {
     __obj.asInstanceOf[ListConnectionsInput]
   }
   
-  extension [Self <: ListConnectionsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConnectionsInput] (val x: Self) extends AnyVal {
     
     inline def setHostArnFilter(value: HostArn): Self = StObject.set(x, "HostArnFilter", value.asInstanceOf[js.Any])
     

@@ -208,7 +208,8 @@ object vizMod {
       __obj.asInstanceOf[VizCreateOptions]
     }
     
-    extension [Self <: VizCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VizCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setDevice(value: DeviceType): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
       

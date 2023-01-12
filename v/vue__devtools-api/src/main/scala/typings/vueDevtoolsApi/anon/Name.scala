@@ -17,7 +17,8 @@ object Name {
     __obj.asInstanceOf[Name]
   }
   
-  extension [Self <: Name](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
     
     inline def setComponentInstance(value: typings.vueDevtoolsApi.libEsmApiComponentMod.ComponentInstance): Self = StObject.set(x, "componentInstance", value.asInstanceOf[js.Any])
     

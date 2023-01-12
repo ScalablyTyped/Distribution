@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[ClientSource]
     }
     
-    extension [Self <: ClientSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientSource] (val x: Self) extends AnyVal {
       
       inline def setClientSource(value: String): Self = StObject.set(x, "clientSource", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object anon {
       __obj.asInstanceOf[Db]
     }
     
-    extension [Self <: Db](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Db] (val x: Self) extends AnyVal {
       
       inline def setDb(value: String): Self = StObject.set(x, "db", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Length]
     }
     
-    extension [Self <: Length](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Length] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -106,7 +109,8 @@ object anon {
       __obj.asInstanceOf[PartialMongoMemoryReplSet]
     }
     
-    extension [Self <: PartialMongoMemoryReplSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMongoMemoryReplSet] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[PartialMongodOpts]
     }
     
-    extension [Self <: PartialMongodOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMongodOpts] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: MongoBinaryOpts): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -180,7 +185,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyMongoBinaryOpts]
     }
     
-    extension [Self <: ReadonlyMongoBinaryOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyMongoBinaryOpts] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -250,7 +256,8 @@ object anon {
       __obj.asInstanceOf[ReadonlySpawnOptions]
     }
     
-    extension [Self <: ReadonlySpawnOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlySpawnOptions] (val x: Self) extends AnyVal {
       
       inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
       
@@ -341,7 +348,8 @@ object anon {
       __obj.asInstanceOf[RequiredAutomaticAuth]
     }
     
-    extension [Self <: RequiredAutomaticAuth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredAutomaticAuth] (val x: Self) extends AnyVal {
       
       inline def setCustomRootName(value: String): Self = StObject.set(x, "customRootName", value.asInstanceOf[js.Any])
       
@@ -381,7 +389,8 @@ object anon {
       __obj.asInstanceOf[RequiredDryMongoBinaryOpt]
     }
     
-    extension [Self <: RequiredDryMongoBinaryOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredDryMongoBinaryOpt] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -431,7 +440,8 @@ object anon {
       __obj.asInstanceOf[RequiredMongoBinaryOpts]
     }
     
-    extension [Self <: RequiredMongoBinaryOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredMongoBinaryOpts] (val x: Self) extends AnyVal {
       
       inline def setArch(value: String): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -487,7 +497,8 @@ object anon {
       __obj.asInstanceOf[RequiredReplSetOpts]
     }
     
-    extension [Self <: RequiredReplSetOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredReplSetOpts] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[String]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

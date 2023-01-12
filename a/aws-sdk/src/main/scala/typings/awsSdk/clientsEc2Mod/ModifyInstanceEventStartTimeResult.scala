@@ -18,7 +18,8 @@ object ModifyInstanceEventStartTimeResult {
     __obj.asInstanceOf[ModifyInstanceEventStartTimeResult]
   }
   
-  extension [Self <: ModifyInstanceEventStartTimeResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyInstanceEventStartTimeResult] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: InstanceStatusEvent): Self = StObject.set(x, "Event", value.asInstanceOf[js.Any])
     

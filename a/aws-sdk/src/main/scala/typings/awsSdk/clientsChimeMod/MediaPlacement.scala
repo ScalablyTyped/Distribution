@@ -53,7 +53,8 @@ object MediaPlacement {
     __obj.asInstanceOf[MediaPlacement]
   }
   
-  extension [Self <: MediaPlacement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlacement] (val x: Self) extends AnyVal {
     
     inline def setAudioFallbackUrl(value: UriType): Self = StObject.set(x, "AudioFallbackUrl", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TypeofSigma {
     __obj.asInstanceOf[TypeofSigma]
   }
   
-  extension [Self <: TypeofSigma](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSigma] (val x: Self) extends AnyVal {
     
     inline def setScheduledQueryRun(value: Any): Self = StObject.set(x, "ScheduledQueryRun", value.asInstanceOf[js.Any])
     

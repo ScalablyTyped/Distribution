@@ -19,7 +19,8 @@ object Xxe {
     __obj.asInstanceOf[Xxe]
   }
   
-  extension [Self <: Xxe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Xxe] (val x: Self) extends AnyVal {
     
     inline def setPayloadLocation(value: String): Self = StObject.set(x, "payloadLocation", value.asInstanceOf[js.Any])
     

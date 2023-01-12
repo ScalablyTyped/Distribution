@@ -23,7 +23,8 @@ object GetInAppTemplateRequest {
     __obj.asInstanceOf[GetInAppTemplateRequest]
   }
   
-  extension [Self <: GetInAppTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInAppTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     

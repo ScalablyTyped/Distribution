@@ -29,7 +29,8 @@ object WidgetTypedInputOptions {
     __obj.asInstanceOf[WidgetTypedInputOptions]
   }
   
-  extension [Self <: WidgetTypedInputOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetTypedInputOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: WidgetTypedInputType | String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

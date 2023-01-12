@@ -87,7 +87,8 @@ object libSystemSystemManagerMod {
       __obj.asInstanceOf[ISystemConfig[R]]
     }
     
-    extension [Self <: ISystemConfig[?], R](x: Self & ISystemConfig[R]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISystemConfig[?], R] (val x: Self & ISystemConfig[R]) extends AnyVal {
       
       inline def setPriority(value: js.Array[String]): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       

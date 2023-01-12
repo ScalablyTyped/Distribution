@@ -26,7 +26,8 @@ object ForRenderListExpression {
     __obj.asInstanceOf[ForRenderListExpression]
   }
   
-  extension [Self <: ForRenderListExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForRenderListExpression] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: js.Tuple2[ExpressionNode, ForIteratorExpression]): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

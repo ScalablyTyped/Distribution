@@ -56,7 +56,8 @@ object DisableSelectedOrganizationGithubActionsEnterprise {
     __obj.asInstanceOf[DisableSelectedOrganizationGithubActionsEnterprise]
   }
   
-  extension [Self <: DisableSelectedOrganizationGithubActionsEnterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisableSelectedOrganizationGithubActionsEnterprise] (val x: Self) extends AnyVal {
     
     inline def setAddCustomLabelsToSelfHostedRunnerForEnterprise(value: `1040`): Self = StObject.set(x, "addCustomLabelsToSelfHostedRunnerForEnterprise", value.asInstanceOf[js.Any])
     

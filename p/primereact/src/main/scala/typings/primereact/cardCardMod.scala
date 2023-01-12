@@ -477,7 +477,8 @@ object cardCardMod {
       __obj.asInstanceOf[CardProps]
     }
     
-    extension [Self <: CardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

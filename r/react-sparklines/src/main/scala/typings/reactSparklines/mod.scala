@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[SparklinesBarsProps]
     }
     
-    extension [Self <: SparklinesBarsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesBarsProps] (val x: Self) extends AnyVal {
       
       inline def setBarWidth(value: Double): Self = StObject.set(x, "barWidth", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object mod {
       __obj.asInstanceOf[SparklinesCurveProps]
     }
     
-    extension [Self <: SparklinesCurveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesCurveProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -234,7 +237,8 @@ object mod {
       __obj.asInstanceOf[SparklinesLineProps]
     }
     
-    extension [Self <: SparklinesLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesLineProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -261,7 +265,8 @@ object mod {
       __obj.asInstanceOf[SparklinesNormalBandProps]
     }
     
-    extension [Self <: SparklinesNormalBandProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesNormalBandProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -302,7 +307,8 @@ object mod {
       __obj.asInstanceOf[SparklinesProps]
     }
     
-    extension [Self <: SparklinesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -371,7 +377,8 @@ object mod {
       __obj.asInstanceOf[SparklinesReferenceLineProps]
     }
     
-    extension [Self <: SparklinesReferenceLineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesReferenceLineProps] (val x: Self) extends AnyVal {
       
       inline def setStyle(value: CSSProperties): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
@@ -402,7 +409,8 @@ object mod {
       __obj.asInstanceOf[SparklinesSpotsProps]
     }
     
-    extension [Self <: SparklinesSpotsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesSpotsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -435,7 +443,8 @@ object mod {
       __obj.asInstanceOf[SparklinesTextProps]
     }
     
-    extension [Self <: SparklinesTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SparklinesTextProps] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       

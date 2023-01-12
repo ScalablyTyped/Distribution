@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[CanvasDrawProps]
     }
     
-    extension [Self <: CanvasDrawProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CanvasDrawProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

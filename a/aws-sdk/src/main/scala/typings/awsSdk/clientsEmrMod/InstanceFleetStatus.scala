@@ -28,7 +28,8 @@ object InstanceFleetStatus {
     __obj.asInstanceOf[InstanceFleetStatus]
   }
   
-  extension [Self <: InstanceFleetStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceFleetStatus] (val x: Self) extends AnyVal {
     
     inline def setState(value: InstanceFleetState): Self = StObject.set(x, "State", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PointObjectLiteral {
     __obj.asInstanceOf[PointObjectLiteral]
   }
   
-  extension [Self <: PointObjectLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointObjectLiteral] (val x: Self) extends AnyVal {
     
     inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
     

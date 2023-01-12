@@ -600,7 +600,8 @@ object sapMSlideTileMod {
       __obj.asInstanceOf[SlideTileSettings]
     }
     
-    extension [Self <: SlideTileSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideTileSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayTime(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "displayTime", value.asInstanceOf[js.Any])
       

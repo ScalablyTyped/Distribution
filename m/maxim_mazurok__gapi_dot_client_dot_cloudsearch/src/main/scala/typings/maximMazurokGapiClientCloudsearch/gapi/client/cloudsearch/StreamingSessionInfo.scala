@@ -43,7 +43,8 @@ object StreamingSessionInfo {
     __obj.asInstanceOf[StreamingSessionInfo]
   }
   
-  extension [Self <: StreamingSessionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSessionInfo] (val x: Self) extends AnyVal {
     
     inline def setApplicationType(value: String): Self = StObject.set(x, "applicationType", value.asInstanceOf[js.Any])
     

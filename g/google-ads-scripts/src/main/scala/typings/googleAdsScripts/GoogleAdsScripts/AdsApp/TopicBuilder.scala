@@ -45,7 +45,8 @@ object TopicBuilder {
     __obj.asInstanceOf[TopicBuilder]
   }
   
-  extension [Self <: TopicBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicBuilder] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: () => ExcludedTopicOperation): Self = StObject.set(x, "exclude", js.Any.fromFunction0(value))
     

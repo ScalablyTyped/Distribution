@@ -23,7 +23,8 @@ object GetTerminologyRequest {
     __obj.asInstanceOf[GetTerminologyRequest]
   }
   
-  extension [Self <: GetTerminologyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTerminologyRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: ResourceName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

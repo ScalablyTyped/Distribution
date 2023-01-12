@@ -21,7 +21,8 @@ object TaxiFare {
     __obj.asInstanceOf[TaxiFare]
   }
   
-  extension [Self <: TaxiFare](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaxiFare] (val x: Self) extends AnyVal {
     
     inline def setDay(value: TaxiFareDetail): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

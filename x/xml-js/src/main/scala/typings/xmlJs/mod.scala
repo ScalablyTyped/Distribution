@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[DeclarationAttributes]
     }
     
-    extension [Self <: DeclarationAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeclarationAttributes] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: `utf-8` | String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object mod {
       __obj.asInstanceOf[Element]
     }
     
-    extension [Self <: Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -165,7 +167,8 @@ object mod {
       __obj.asInstanceOf[ElementCompact]
     }
     
-    extension [Self <: ElementCompact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementCompact] (val x: Self) extends AnyVal {
       
       inline def set_attributes(value: Attributes): Self = StObject.set(x, "_attributes", value.asInstanceOf[js.Any])
       
@@ -230,7 +233,8 @@ object mod {
         __obj.asInstanceOf[ChangingKeyNames]
       }
       
-      extension [Self <: ChangingKeyNames](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ChangingKeyNames] (val x: Self) extends AnyVal {
         
         inline def setAttributesKey(value: String): Self = StObject.set(x, "attributesKey", value.asInstanceOf[js.Any])
         
@@ -301,7 +305,8 @@ object mod {
         __obj.asInstanceOf[IgnoreOptions]
       }
       
-      extension [Self <: IgnoreOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IgnoreOptions] (val x: Self) extends AnyVal {
         
         inline def setIgnoreAttributes(value: Boolean): Self = StObject.set(x, "ignoreAttributes", value.asInstanceOf[js.Any])
         
@@ -459,7 +464,8 @@ object mod {
         __obj.asInstanceOf[JS2XML]
       }
       
-      extension [Self <: JS2XML](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JS2XML] (val x: Self) extends AnyVal {
         
         inline def setAttributeNameFn(
           value: (/* attributeName */ String, /* attributeValue */ String, /* currentElementName */ String, /* currentElementObj */ js.Object) => Unit
@@ -637,7 +643,8 @@ object mod {
         __obj.asInstanceOf[XML2JS]
       }
       
-      extension [Self <: XML2JS](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XML2JS] (val x: Self) extends AnyVal {
         
         inline def setAddParent(value: Boolean): Self = StObject.set(x, "addParent", value.asInstanceOf[js.Any])
         
@@ -740,7 +747,8 @@ object mod {
         __obj.asInstanceOf[XML2JSON]
       }
       
-      extension [Self <: XML2JSON](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: XML2JSON] (val x: Self) extends AnyVal {
         
         inline def setSpaces(value: Double | String): Self = StObject.set(x, "spaces", value.asInstanceOf[js.Any])
         

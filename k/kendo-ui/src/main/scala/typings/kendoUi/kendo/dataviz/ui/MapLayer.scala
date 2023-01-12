@@ -63,7 +63,8 @@ object MapLayer {
     __obj.asInstanceOf[MapLayer]
   }
   
-  extension [Self <: MapLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayer] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

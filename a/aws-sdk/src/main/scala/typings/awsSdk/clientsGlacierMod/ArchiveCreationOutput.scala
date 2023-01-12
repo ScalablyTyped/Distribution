@@ -28,7 +28,8 @@ object ArchiveCreationOutput {
     __obj.asInstanceOf[ArchiveCreationOutput]
   }
   
-  extension [Self <: ArchiveCreationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArchiveCreationOutput] (val x: Self) extends AnyVal {
     
     inline def setArchiveId(value: String): Self = StObject.set(x, "archiveId", value.asInstanceOf[js.Any])
     

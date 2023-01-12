@@ -28,7 +28,8 @@ object IMouseTargetScrollbar {
     __obj.asInstanceOf[IMouseTargetScrollbar]
   }
   
-  extension [Self <: IMouseTargetScrollbar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetScrollbar] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

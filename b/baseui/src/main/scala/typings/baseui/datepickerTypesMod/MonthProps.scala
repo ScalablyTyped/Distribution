@@ -31,7 +31,8 @@ object MonthProps {
     __obj.asInstanceOf[MonthProps[T]]
   }
   
-  extension [Self <: MonthProps[?], T](x: Self & MonthProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonthProps[?], T] (val x: Self & MonthProps[T]) extends AnyVal {
     
     inline def setFixedHeight(value: Boolean): Self = StObject.set(x, "fixedHeight", value.asInstanceOf[js.Any])
     

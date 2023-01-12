@@ -21,7 +21,8 @@ object ProcessLimit {
     __obj.asInstanceOf[ProcessLimit]
   }
   
-  extension [Self <: ProcessLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessLimit] (val x: Self) extends AnyVal {
     
     inline def setHard(value: Double): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     

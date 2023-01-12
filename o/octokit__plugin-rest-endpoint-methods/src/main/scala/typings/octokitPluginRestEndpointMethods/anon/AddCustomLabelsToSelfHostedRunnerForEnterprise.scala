@@ -393,7 +393,8 @@ object AddCustomLabelsToSelfHostedRunnerForEnterprise {
     __obj.asInstanceOf[AddCustomLabelsToSelfHostedRunnerForEnterprise]
   }
   
-  extension [Self <: AddCustomLabelsToSelfHostedRunnerForEnterprise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCustomLabelsToSelfHostedRunnerForEnterprise] (val x: Self) extends AnyVal {
     
     inline def setAddCustomLabelsToSelfHostedRunnerForEnterprise(value: `253`): Self = StObject.set(x, "addCustomLabelsToSelfHostedRunnerForEnterprise", value.asInstanceOf[js.Any])
     

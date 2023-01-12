@@ -155,7 +155,8 @@ object distNodeBackendIndexedDBMod {
       __obj.asInstanceOf[IndexedDBFileSystemOptions]
     }
     
-    extension [Self <: IndexedDBFileSystemOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedDBFileSystemOptions] (val x: Self) extends AnyVal {
       
       inline def setStoreName(value: String): Self = StObject.set(x, "storeName", value.asInstanceOf[js.Any])
       

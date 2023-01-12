@@ -59,7 +59,8 @@ object SchedulerDateHelpers {
     __obj.asInstanceOf[SchedulerDateHelpers]
   }
   
-  extension [Self <: SchedulerDateHelpers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerDateHelpers] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: (js.Date, Double, String) => js.Date): Self = StObject.set(x, "add", js.Any.fromFunction3(value))
     

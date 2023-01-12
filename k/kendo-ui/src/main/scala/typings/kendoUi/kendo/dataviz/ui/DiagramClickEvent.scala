@@ -22,7 +22,8 @@ object DiagramClickEvent {
     __obj.asInstanceOf[DiagramClickEvent]
   }
   
-  extension [Self <: DiagramClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramClickEvent] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Any): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

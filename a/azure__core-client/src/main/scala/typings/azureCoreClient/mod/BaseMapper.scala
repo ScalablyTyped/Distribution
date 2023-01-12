@@ -86,7 +86,8 @@ object BaseMapper {
     __obj.asInstanceOf[BaseMapper]
   }
   
-  extension [Self <: BaseMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseMapper] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: MapperConstraints): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
     

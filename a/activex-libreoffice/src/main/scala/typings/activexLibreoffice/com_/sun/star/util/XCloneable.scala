@@ -26,7 +26,8 @@ object XCloneable {
     __obj.asInstanceOf[XCloneable]
   }
   
-  extension [Self <: XCloneable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCloneable] (val x: Self) extends AnyVal {
     
     inline def setCreateClone(value: () => XCloneable): Self = StObject.set(x, "createClone", js.Any.fromFunction0(value))
   }

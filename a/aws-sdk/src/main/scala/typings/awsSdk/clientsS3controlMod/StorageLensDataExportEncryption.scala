@@ -23,7 +23,8 @@ object StorageLensDataExportEncryption {
     __obj.asInstanceOf[StorageLensDataExportEncryption]
   }
   
-  extension [Self <: StorageLensDataExportEncryption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageLensDataExportEncryption] (val x: Self) extends AnyVal {
     
     inline def setSSEKMS(value: SSEKMS): Self = StObject.set(x, "SSEKMS", value.asInstanceOf[js.Any])
     

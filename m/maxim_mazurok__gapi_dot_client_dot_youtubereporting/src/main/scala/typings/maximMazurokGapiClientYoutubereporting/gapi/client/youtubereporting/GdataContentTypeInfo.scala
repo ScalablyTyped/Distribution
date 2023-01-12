@@ -28,7 +28,8 @@ object GdataContentTypeInfo {
     __obj.asInstanceOf[GdataContentTypeInfo]
   }
   
-  extension [Self <: GdataContentTypeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GdataContentTypeInfo] (val x: Self) extends AnyVal {
     
     inline def setBestGuess(value: String): Self = StObject.set(x, "bestGuess", value.asInstanceOf[js.Any])
     

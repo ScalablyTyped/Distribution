@@ -30,7 +30,8 @@ object DraggableProps {
     __obj.asInstanceOf[DraggableProps]
   }
   
-  extension [Self <: DraggableProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DraggableProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: (/* provided */ DraggableProvided, /* snapshot */ DraggableStateSnapshot, /* rubric */ DraggableRubric) => ReactElement

@@ -23,7 +23,8 @@ object SparkSqlJobDriver {
     __obj.asInstanceOf[SparkSqlJobDriver]
   }
   
-  extension [Self <: SparkSqlJobDriver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparkSqlJobDriver] (val x: Self) extends AnyVal {
     
     inline def setEntryPoint(value: EntryPointPath): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     

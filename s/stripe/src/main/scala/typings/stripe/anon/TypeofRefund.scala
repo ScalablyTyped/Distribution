@@ -15,7 +15,8 @@ object TypeofRefund {
     __obj.asInstanceOf[TypeofRefund]
   }
   
-  extension [Self <: TypeofRefund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofRefund] (val x: Self) extends AnyVal {
     
     inline def setNextAction(value: TypeofNextActionDisplayDetails): Self = StObject.set(x, "NextAction", value.asInstanceOf[js.Any])
   }

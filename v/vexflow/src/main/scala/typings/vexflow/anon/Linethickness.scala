@@ -50,7 +50,8 @@ object Linethickness {
     __obj.asInstanceOf[Linethickness]
   }
   
-  extension [Self <: Linethickness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linethickness] (val x: Self) extends AnyVal {
     
     inline def setLine(value: Double): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

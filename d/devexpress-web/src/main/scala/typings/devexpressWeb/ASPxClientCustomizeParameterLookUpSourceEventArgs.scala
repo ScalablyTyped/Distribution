@@ -37,7 +37,8 @@ object ASPxClientCustomizeParameterLookUpSourceEventArgs {
     __obj.asInstanceOf[ASPxClientCustomizeParameterLookUpSourceEventArgs]
   }
   
-  extension [Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientCustomizeParameterLookUpSourceEventArgs] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

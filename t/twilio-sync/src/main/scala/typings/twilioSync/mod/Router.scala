@@ -33,7 +33,8 @@ object Router {
     __obj.asInstanceOf[Router]
   }
   
-  extension [Self <: Router](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
     
     inline def set_routeMessage(value: (String, Any) => Any): Self = StObject.set(x, "_routeMessage", js.Any.fromFunction2(value))
     

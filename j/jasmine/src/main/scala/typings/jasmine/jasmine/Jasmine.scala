@@ -19,7 +19,8 @@ object Jasmine {
     __obj.asInstanceOf[Jasmine]
   }
   
-  extension [Self <: Jasmine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Jasmine] (val x: Self) extends AnyVal {
     
     inline def setClock(value: Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     

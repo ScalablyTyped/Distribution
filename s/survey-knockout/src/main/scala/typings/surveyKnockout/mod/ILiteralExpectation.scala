@@ -20,7 +20,8 @@ object ILiteralExpectation {
     __obj.asInstanceOf[ILiteralExpectation]
   }
   
-  extension [Self <: ILiteralExpectation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILiteralExpectation] (val x: Self) extends AnyVal {
     
     inline def setIgnoreCase(value: Boolean): Self = StObject.set(x, "ignoreCase", value.asInstanceOf[js.Any])
     

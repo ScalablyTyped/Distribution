@@ -25,7 +25,8 @@ object GSMACCEPT {
     __obj.asInstanceOf[GSMACCEPT]
   }
   
-  extension [Self <: GSMACCEPT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GSMACCEPT] (val x: Self) extends AnyVal {
     
     inline def setGSM_ACCEPT(value: accept): Self = StObject.set(x, "GSM_ACCEPT", value.asInstanceOf[js.Any])
     

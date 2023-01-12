@@ -331,7 +331,8 @@ object distLayersConvolutionalRecurrentMod {
       __obj.asInstanceOf[ConvLSTM2DArgs]
     }
     
-    extension [Self <: ConvLSTM2DArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvLSTM2DArgs] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -611,7 +612,8 @@ object distLayersConvolutionalRecurrentMod {
       __obj.asInstanceOf[ConvLSTM2DCellArgs]
     }
     
-    extension [Self <: ConvLSTM2DCellArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvLSTM2DCellArgs] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -904,7 +906,8 @@ object distLayersConvolutionalRecurrentMod {
       __obj.asInstanceOf[ConvRNN2DCellArgs]
     }
     
-    extension [Self <: ConvRNN2DCellArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvRNN2DCellArgs] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       
@@ -1117,7 +1120,8 @@ object distLayersConvolutionalRecurrentMod {
       __obj.asInstanceOf[ConvRNN2DLayerArgs]
     }
     
-    extension [Self <: ConvRNN2DLayerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConvRNN2DLayerArgs] (val x: Self) extends AnyVal {
       
       inline def setActivation(value: ActivationIdentifier): Self = StObject.set(x, "activation", value.asInstanceOf[js.Any])
       

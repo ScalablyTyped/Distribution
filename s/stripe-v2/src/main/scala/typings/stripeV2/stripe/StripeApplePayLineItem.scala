@@ -23,7 +23,8 @@ object StripeApplePayLineItem {
     __obj.asInstanceOf[StripeApplePayLineItem]
   }
   
-  extension [Self <: StripeApplePayLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeApplePayLineItem] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

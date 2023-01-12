@@ -20,7 +20,8 @@ object StorageInfo {
     __obj.asInstanceOf[StorageInfo]
   }
   
-  extension [Self <: StorageInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StorageInfo] (val x: Self) extends AnyVal {
     
     inline def setEbsStorageInfo(value: EBSStorageInfo): Self = StObject.set(x, "EbsStorageInfo", value.asInstanceOf[js.Any])
     

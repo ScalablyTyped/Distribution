@@ -33,7 +33,8 @@ object JSONEditorObjectOptions {
     __obj.asInstanceOf[JSONEditorObjectOptions]
   }
   
-  extension [Self <: JSONEditorObjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONEditorObjectOptions] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Boolean): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

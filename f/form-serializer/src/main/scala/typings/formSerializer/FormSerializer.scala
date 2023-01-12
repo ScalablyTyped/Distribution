@@ -25,7 +25,8 @@ object FormSerializer {
       __obj.asInstanceOf[FormSerializerPatterns]
     }
     
-    extension [Self <: FormSerializerPatterns](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormSerializerPatterns] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: js.RegExp): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       

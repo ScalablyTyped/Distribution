@@ -15,7 +15,8 @@ object P2pQuotesResponse {
     __obj.asInstanceOf[P2pQuotesResponse]
   }
   
-  extension [Self <: P2pQuotesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pQuotesResponse] (val x: Self) extends AnyVal {
     
     inline def setQuotes(value: js.Array[P2pQuote]): Self = StObject.set(x, "quotes", value.asInstanceOf[js.Any])
     

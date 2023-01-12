@@ -18,7 +18,8 @@ object StartMLEvaluationTaskRunRequest {
     __obj.asInstanceOf[StartMLEvaluationTaskRunRequest]
   }
   
-  extension [Self <: StartMLEvaluationTaskRunRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMLEvaluationTaskRunRequest] (val x: Self) extends AnyVal {
     
     inline def setTransformId(value: HashString): Self = StObject.set(x, "TransformId", value.asInstanceOf[js.Any])
   }

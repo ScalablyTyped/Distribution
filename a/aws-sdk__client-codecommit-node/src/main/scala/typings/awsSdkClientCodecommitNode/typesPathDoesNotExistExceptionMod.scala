@@ -25,7 +25,8 @@ object typesPathDoesNotExistExceptionMod {
       __obj.asInstanceOf[PathDoesNotExistException]
     }
     
-    extension [Self <: PathDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.PathDoesNotExistException

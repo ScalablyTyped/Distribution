@@ -20,7 +20,8 @@ object PlayToConnectionStateChangedEventArgs {
     __obj.asInstanceOf[PlayToConnectionStateChangedEventArgs]
   }
   
-  extension [Self <: PlayToConnectionStateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayToConnectionStateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: PlayToConnectionState): Self = StObject.set(x, "currentState", value.asInstanceOf[js.Any])
     

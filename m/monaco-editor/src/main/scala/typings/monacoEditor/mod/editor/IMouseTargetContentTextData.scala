@@ -15,7 +15,8 @@ object IMouseTargetContentTextData {
     __obj.asInstanceOf[IMouseTargetContentTextData]
   }
   
-  extension [Self <: IMouseTargetContentTextData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetContentTextData] (val x: Self) extends AnyVal {
     
     inline def setMightBeForeignElement(value: Boolean): Self = StObject.set(x, "mightBeForeignElement", value.asInstanceOf[js.Any])
   }

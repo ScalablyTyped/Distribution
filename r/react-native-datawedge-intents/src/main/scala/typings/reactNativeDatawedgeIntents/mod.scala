@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[ExtrasObject]
     }
     
-    extension [Self <: ExtrasObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtrasObject] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object mod {
       __obj.asInstanceOf[FilterObject]
     }
     
-    extension [Self <: FilterObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterObject] (val x: Self) extends AnyVal {
       
       inline def setFilterActions(value: js.Array[String]): Self = StObject.set(x, "filterActions", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object ZoombarProviderDataChart {
     __obj.asInstanceOf[ZoombarProviderDataChart]
   }
   
-  extension [Self <: ZoombarProviderDataChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoombarProviderDataChart] (val x: Self) extends AnyVal {
     
     inline def setClean(value: () => Unit): Self = StObject.set(x, "clean", js.Any.fromFunction0(value))
     

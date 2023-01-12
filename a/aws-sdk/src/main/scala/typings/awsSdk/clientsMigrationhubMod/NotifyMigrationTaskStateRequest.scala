@@ -49,7 +49,8 @@ object NotifyMigrationTaskStateRequest {
     __obj.asInstanceOf[NotifyMigrationTaskStateRequest]
   }
   
-  extension [Self <: NotifyMigrationTaskStateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyMigrationTaskStateRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: DryRun): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

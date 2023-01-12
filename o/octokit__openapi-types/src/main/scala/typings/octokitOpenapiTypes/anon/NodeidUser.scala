@@ -48,7 +48,8 @@ object NodeidUser {
     __obj.asInstanceOf[NodeidUser]
   }
   
-  extension [Self <: NodeidUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeidUser] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Plussign1 | `-1` | laugh | confused | heart | hooray | rocket | eyes): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

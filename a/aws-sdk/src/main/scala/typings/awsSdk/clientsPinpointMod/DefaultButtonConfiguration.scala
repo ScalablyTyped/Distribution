@@ -43,7 +43,8 @@ object DefaultButtonConfiguration {
     __obj.asInstanceOf[DefaultButtonConfiguration]
   }
   
-  extension [Self <: DefaultButtonConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultButtonConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: string): Self = StObject.set(x, "BackgroundColor", value.asInstanceOf[js.Any])
     

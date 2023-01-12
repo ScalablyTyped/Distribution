@@ -78,7 +78,8 @@ object VideoContext {
     __obj.asInstanceOf[VideoContext]
   }
   
-  extension [Self <: VideoContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoContext] (val x: Self) extends AnyVal {
     
     inline def setExitFullScreen(value: () => Unit): Self = StObject.set(x, "exitFullScreen", js.Any.fromFunction0(value))
     

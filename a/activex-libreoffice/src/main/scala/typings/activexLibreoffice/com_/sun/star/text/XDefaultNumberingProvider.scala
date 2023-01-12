@@ -51,7 +51,8 @@ object XDefaultNumberingProvider {
     __obj.asInstanceOf[XDefaultNumberingProvider]
   }
   
-  extension [Self <: XDefaultNumberingProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDefaultNumberingProvider] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultContinuousNumberingLevels(value: Locale => SafeArray[PropertyValues]): Self = StObject.set(x, "getDefaultContinuousNumberingLevels", js.Any.fromFunction1(value))
     

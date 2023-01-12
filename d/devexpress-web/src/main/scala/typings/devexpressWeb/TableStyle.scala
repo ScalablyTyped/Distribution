@@ -23,7 +23,8 @@ object TableStyle {
     __obj.asInstanceOf[TableStyle]
   }
   
-  extension [Self <: TableStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableStyle] (val x: Self) extends AnyVal {
     
     inline def setParent(value: TableStyle): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
   }

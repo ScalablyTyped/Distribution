@@ -48,7 +48,8 @@ object BuildV2 {
     __obj.asInstanceOf[BuildV2]
   }
   
-  extension [Self <: BuildV2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildV2] (val x: Self) extends AnyVal {
     
     inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     

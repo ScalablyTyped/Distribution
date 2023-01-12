@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[CallbackResponse]
     }
     
-    extension [Self <: CallbackResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -153,7 +154,8 @@ object mod {
       __obj.asInstanceOf[FetchBody]
     }
     
-    extension [Self <: FetchBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchBody] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: () => js.Promise[js.typedarray.ArrayBuffer]): Self = StObject.set(x, "arrayBuffer", js.Any.fromFunction0(value))
       
@@ -199,7 +201,8 @@ object mod {
       __obj.asInstanceOf[FetchHeaders]
     }
     
-    extension [Self <: FetchHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchHeaders] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: (String, String) => Unit): Self = StObject.set(x, "append", js.Any.fromFunction2(value))
       
@@ -267,7 +270,8 @@ object mod {
       __obj.asInstanceOf[FetchRequest]
     }
     
-    extension [Self <: FetchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -347,7 +351,8 @@ object mod {
       __obj.asInstanceOf[FetchRequestInit[RequestBody]]
     }
     
-    extension [Self <: FetchRequestInit[?], RequestBody](x: Self & FetchRequestInit[RequestBody]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequestInit[?], RequestBody] (val x: Self & FetchRequestInit[RequestBody]) extends AnyVal {
       
       inline def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -444,7 +449,8 @@ object mod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setHeaders(value: FetchHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
       
@@ -498,7 +504,8 @@ object mod {
       __obj.asInstanceOf[NetworkTransport]
     }
     
-    extension [Self <: NetworkTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkTransport] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: Request[Any] => js.Promise[FetchResponse]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
       
@@ -524,7 +531,8 @@ object mod {
       __obj.asInstanceOf[Request[RequestBody]]
     }
     
-    extension [Self <: Request[?], RequestBody](x: Self & Request[RequestBody]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request[?], RequestBody] (val x: Self & Request[RequestBody]) extends AnyVal {
       
       inline def setMethod(value: Method): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -553,7 +561,8 @@ object mod {
       __obj.asInstanceOf[ResponseHandler]
     }
     
-    extension [Self <: ResponseHandler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseHandler] (val x: Self) extends AnyVal {
       
       inline def setOnError(value: /* err */ js.Error => Unit): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       

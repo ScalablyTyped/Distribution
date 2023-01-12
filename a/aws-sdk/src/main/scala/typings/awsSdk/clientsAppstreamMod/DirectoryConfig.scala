@@ -38,7 +38,8 @@ object DirectoryConfig {
     __obj.asInstanceOf[DirectoryConfig]
   }
   
-  extension [Self <: DirectoryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryConfig] (val x: Self) extends AnyVal {
     
     inline def setCertificateBasedAuthProperties(value: CertificateBasedAuthProperties): Self = StObject.set(x, "CertificateBasedAuthProperties", value.asInstanceOf[js.Any])
     

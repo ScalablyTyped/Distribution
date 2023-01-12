@@ -25,7 +25,8 @@ object PlayerScoreResetResponse {
     __obj.asInstanceOf[PlayerScoreResetResponse]
   }
   
-  extension [Self <: PlayerScoreResetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerScoreResetResponse] (val x: Self) extends AnyVal {
     
     inline def setDefinitionId(value: String): Self = StObject.set(x, "definitionId", value.asInstanceOf[js.Any])
     

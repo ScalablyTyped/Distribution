@@ -85,7 +85,8 @@ object typesServiceUnavailableExceptionMod {
       __obj.asInstanceOf[ServiceUnavailableException]
     }
     
-    extension [Self <: ServiceUnavailableException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceUnavailableException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ServiceUnavailableException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -115,7 +116,8 @@ object typesServiceUnavailableExceptionMod {
       __obj.asInstanceOf[ServiceUnavailableExceptionDetails]
     }
     
-    extension [Self <: ServiceUnavailableExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceUnavailableExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

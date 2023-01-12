@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[RouteDefinition]
     }
     
-    extension [Self <: RouteDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteDefinition] (val x: Self) extends AnyVal {
       
       inline def setHttpStatus(value: String): Self = StObject.set(x, "httpStatus", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[StandaloneOptions]
     }
     
-    extension [Self <: StandaloneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StandaloneOptions] (val x: Self) extends AnyVal {
       
       inline def setReadMode(value: Boolean): Self = StObject.set(x, "readMode", value.asInstanceOf[js.Any])
       

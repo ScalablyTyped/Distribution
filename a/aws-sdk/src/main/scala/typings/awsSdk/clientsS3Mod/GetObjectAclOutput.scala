@@ -25,7 +25,8 @@ object GetObjectAclOutput {
     __obj.asInstanceOf[GetObjectAclOutput]
   }
   
-  extension [Self <: GetObjectAclOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectAclOutput] (val x: Self) extends AnyVal {
     
     inline def setGrants(value: Grants): Self = StObject.set(x, "Grants", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object OmaSettingBase64 {
     __obj.asInstanceOf[OmaSettingBase64]
   }
   
-  extension [Self <: OmaSettingBase64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmaSettingBase64] (val x: Self) extends AnyVal {
     
     inline def setFileName(value: NullableOption[String]): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
     

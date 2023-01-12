@@ -20,7 +20,8 @@ object RestoreObjectOutput {
     __obj.asInstanceOf[RestoreObjectOutput]
   }
   
-  extension [Self <: RestoreObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setRequestCharged(value: RequestCharged): Self = StObject.set(x, "RequestCharged", value.asInstanceOf[js.Any])
     

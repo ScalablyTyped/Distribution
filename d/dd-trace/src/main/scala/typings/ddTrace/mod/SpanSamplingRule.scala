@@ -33,7 +33,8 @@ object SpanSamplingRule {
     __obj.asInstanceOf[SpanSamplingRule]
   }
   
-  extension [Self <: SpanSamplingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpanSamplingRule] (val x: Self) extends AnyVal {
     
     inline def setMaxPerSecond(value: Double): Self = StObject.set(x, "maxPerSecond", value.asInstanceOf[js.Any])
     

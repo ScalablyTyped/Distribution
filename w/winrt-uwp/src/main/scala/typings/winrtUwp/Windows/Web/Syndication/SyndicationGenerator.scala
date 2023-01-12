@@ -66,7 +66,8 @@ object SyndicationGenerator {
     __obj.asInstanceOf[SyndicationGenerator]
   }
   
-  extension [Self <: SyndicationGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyndicationGenerator] (val x: Self) extends AnyVal {
     
     inline def setAttributeExtensions(value: IVector[SyndicationAttribute]): Self = StObject.set(x, "attributeExtensions", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object anon {
       __obj.asInstanceOf[PartialFileSystemAdapter]
     }
     
-    extension [Self <: PartialFileSystemAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFileSystemAdapter] (val x: Self) extends AnyVal {
       
       inline def setLstat(
         value: (/* path */ String, /* callback */ js.Function2[/* error */ ErrnoException | Null, /* stats */ Stats, Unit]) => Unit
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[WithFileTypes]
     }
     
-    extension [Self <: WithFileTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WithFileTypes] (val x: Self) extends AnyVal {
       
       inline def setWithFileTypes(value: `true`): Self = StObject.set(x, "withFileTypes", value.asInstanceOf[js.Any])
     }

@@ -34,7 +34,8 @@ object distSrcPbTagsMod {
     
     inline def encode(obj: Tag): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Tag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tag] (val x: Self) extends AnyVal {
       
       inline def setExpiry(value: js.BigInt): Self = StObject.set(x, "expiry", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distSrcPbTagsMod {
     
     inline def encode(obj: Tags): js.typedarray.Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(obj.asInstanceOf[js.Any]).asInstanceOf[js.typedarray.Uint8Array]
     
-    extension [Self <: Tags](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tags] (val x: Self) extends AnyVal {
       
       inline def setTags(value: js.Array[Tag]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       

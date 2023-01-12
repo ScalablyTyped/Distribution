@@ -24,7 +24,8 @@ object PFXParameters {
     __obj.asInstanceOf[PFXParameters]
   }
   
-  extension [Self <: PFXParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PFXParameters] (val x: Self) extends AnyVal {
     
     inline def setAuthSafe(value: ContentInfo): Self = StObject.set(x, "authSafe", value.asInstanceOf[js.Any])
     

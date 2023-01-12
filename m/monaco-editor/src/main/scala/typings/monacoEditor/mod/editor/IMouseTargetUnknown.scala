@@ -20,7 +20,8 @@ object IMouseTargetUnknown {
     __obj.asInstanceOf[IMouseTargetUnknown]
   }
   
-  extension [Self <: IMouseTargetUnknown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetUnknown] (val x: Self) extends AnyVal {
     
     inline def setType(value: UNKNOWN): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -39,7 +39,8 @@ object BitmapTextOptions {
     __obj.asInstanceOf[BitmapTextOptions]
   }
   
-  extension [Self <: BitmapTextOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitmapTextOptions] (val x: Self) extends AnyVal {
     
     inline def setCharHeight(value: Double): Self = StObject.set(x, "charHeight", value.asInstanceOf[js.Any])
     

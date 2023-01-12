@@ -28,7 +28,8 @@ object ListComponentTypesFilter {
     __obj.asInstanceOf[ListComponentTypesFilter]
   }
   
-  extension [Self <: ListComponentTypesFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListComponentTypesFilter] (val x: Self) extends AnyVal {
     
     inline def setExtendsFrom(value: ComponentTypeId): Self = StObject.set(x, "extendsFrom", value.asInstanceOf[js.Any])
     

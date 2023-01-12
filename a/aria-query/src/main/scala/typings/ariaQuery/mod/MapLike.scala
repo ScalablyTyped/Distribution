@@ -29,7 +29,8 @@ object MapLike {
     __obj.asInstanceOf[MapLike[Key, Value]]
   }
   
-  extension [Self <: MapLike[?, ?], Key, Value](x: Self & (MapLike[Key, Value])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLike[?, ?], Key, Value] (val x: Self & (MapLike[Key, Value])) extends AnyVal {
     
     inline def setEntries(value: () => js.Array[js.Tuple2[Key, Value]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
     

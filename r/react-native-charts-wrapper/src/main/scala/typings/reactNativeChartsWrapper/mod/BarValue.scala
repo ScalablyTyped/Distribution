@@ -19,7 +19,8 @@ object BarValue {
     __obj.asInstanceOf[BarValue]
   }
   
-  extension [Self <: BarValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarValue] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String | js.Array[String]): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object CpuCurrentSpeedData {
     __obj.asInstanceOf[CpuCurrentSpeedData]
   }
   
-  extension [Self <: CpuCurrentSpeedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CpuCurrentSpeedData] (val x: Self) extends AnyVal {
     
     inline def setAvg(value: Double): Self = StObject.set(x, "avg", value.asInstanceOf[js.Any])
     

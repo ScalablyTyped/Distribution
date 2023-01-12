@@ -241,7 +241,8 @@ object libModeldbMod {
         __obj.asInstanceOf[ICreateOptions]
       }
       
-      extension [Self <: ICreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICreateOptions] (val x: Self) extends AnyVal {
         
         inline def setBaseDB(value: ModelDB): Self = StObject.set(x, "baseDB", value.asInstanceOf[js.Any])
         
@@ -270,7 +271,8 @@ object libModeldbMod {
         __obj.asInstanceOf[IFactory]
       }
       
-      extension [Self <: IFactory](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IFactory] (val x: Self) extends AnyVal {
         
         inline def setCreateNew(value: String => IModelDB): Self = StObject.set(x, "createNew", js.Any.fromFunction1(value))
       }
@@ -426,7 +428,8 @@ object libModeldbMod {
       __obj.asInstanceOf[ICollaborator]
     }
     
-    extension [Self <: ICollaborator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollaborator] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -473,7 +476,8 @@ object libModeldbMod {
       __obj.asInstanceOf[ICollaboratorMap]
     }
     
-    extension [Self <: ICollaboratorMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICollaboratorMap] (val x: Self) extends AnyVal {
       
       inline def setLocalCollaborator(value: ICollaborator): Self = StObject.set(x, "localCollaborator", value.asInstanceOf[js.Any])
     }
@@ -626,7 +630,8 @@ object libModeldbMod {
       __obj.asInstanceOf[IModelDB]
     }
     
-    extension [Self <: IModelDB](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModelDB] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       
@@ -677,7 +682,8 @@ object libModeldbMod {
       __obj.asInstanceOf[IObservable]
     }
     
-    extension [Self <: IObservable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservable] (val x: Self) extends AnyVal {
       
       inline def setType(value: ObservableType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -722,7 +728,8 @@ object libModeldbMod {
       __obj.asInstanceOf[IObservableValue]
     }
     
-    extension [Self <: IObservableValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableValue] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: ISignal[IObservableValue, IChangedArgs]): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

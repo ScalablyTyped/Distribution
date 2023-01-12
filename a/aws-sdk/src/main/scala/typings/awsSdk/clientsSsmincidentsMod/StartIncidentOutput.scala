@@ -18,7 +18,8 @@ object StartIncidentOutput {
     __obj.asInstanceOf[StartIncidentOutput]
   }
   
-  extension [Self <: StartIncidentOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartIncidentOutput] (val x: Self) extends AnyVal {
     
     inline def setIncidentRecordArn(value: Arn): Self = StObject.set(x, "incidentRecordArn", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object GetREFRsOptions {
     __obj.asInstanceOf[GetREFRsOptions]
   }
   
-  extension [Self <: GetREFRsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetREFRsOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludeDeleted(value: Boolean): Self = StObject.set(x, "excludeDeleted", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object libFillPathByDiffMod {
       __obj.asInstanceOf[DiffType]
     }
     
-    extension [Self <: DiffType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiffType] (val x: Self) extends AnyVal {
       
       inline def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
       

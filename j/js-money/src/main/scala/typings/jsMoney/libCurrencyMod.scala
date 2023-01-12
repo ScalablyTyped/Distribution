@@ -384,7 +384,8 @@ object libCurrencyMod extends Shortcut {
       __obj.asInstanceOf[Currencies]
     }
     
-    extension [Self <: Currencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currencies] (val x: Self) extends AnyVal {
       
       inline def setAED(value: Currency): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
       
@@ -659,7 +660,8 @@ object libCurrencyMod extends Shortcut {
       __obj.asInstanceOf[Currency]
     }
     
-    extension [Self <: Currency](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currency] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object Autostart {
     __obj.asInstanceOf[Autostart]
   }
   
-  extension [Self <: Autostart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autostart] (val x: Self) extends AnyVal {
     
     inline def setAutostart(value: Boolean): Self = StObject.set(x, "autostart", value.asInstanceOf[js.Any])
     

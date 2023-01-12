@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[IFilterOptions[T]]
     }
     
-    extension [Self <: IFilterOptions[?], T](x: Self & IFilterOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilterOptions[?], T] (val x: Self & IFilterOptions[T]) extends AnyVal {
       
       inline def setKey(
         value: /* import warning: importer.ImportType#apply Failed type conversion: T extends string ? never : keyof T | undefined */ js.Any
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowErrors(value: Boolean): Self = StObject.set(x, "allowErrors", value.asInstanceOf[js.Any])
       

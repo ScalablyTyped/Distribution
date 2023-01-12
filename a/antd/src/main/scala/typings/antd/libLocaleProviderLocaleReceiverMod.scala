@@ -126,7 +126,8 @@ object libLocaleProviderLocaleReceiverMod {
       __obj.asInstanceOf[LocaleReceiverProps[C]]
     }
     
-    extension [Self <: LocaleReceiverProps[?], C /* <: LocaleComponentName */](x: Self & LocaleReceiverProps[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleReceiverProps[?], C /* <: LocaleComponentName */] (val x: Self & LocaleReceiverProps[C]) extends AnyVal {
       
       inline def setChildren(
         value: (NonNullable[

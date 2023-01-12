@@ -16,7 +16,8 @@ object NewShortcut {
     __obj.asInstanceOf[NewShortcut]
   }
   
-  extension [Self <: NewShortcut](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewShortcut] (val x: Self) extends AnyVal {
     
     inline def setNewShortcut(value: OutlookBarShortcut): Self = StObject.set(x, "NewShortcut", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ImportsListItem {
     __obj.asInstanceOf[ImportsListItem]
   }
   
-  extension [Self <: ImportsListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportsListItem] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "CreatedTimestamp", value.asInstanceOf[js.Any])
     

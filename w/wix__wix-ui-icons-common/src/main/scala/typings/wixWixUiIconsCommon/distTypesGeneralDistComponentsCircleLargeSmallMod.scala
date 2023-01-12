@@ -27,7 +27,8 @@ object distTypesGeneralDistComponentsCircleLargeSmallMod extends Shortcut {
       __obj.asInstanceOf[CircleLargeSmallProps]
     }
     
-    extension [Self <: CircleLargeSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircleLargeSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -54,7 +54,8 @@ object rendererWebglLayerMod {
       __obj.asInstanceOf[BufferPositions]
     }
     
-    extension [Self <: BufferPositions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferPositions] (val x: Self) extends AnyVal {
       
       inline def setIndexPosition(value: Double): Self = StObject.set(x, "indexPosition", value.asInstanceOf[js.Any])
       
@@ -77,7 +78,8 @@ object rendererWebglLayerMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object rendererWebglLayerMod {
       __obj.asInstanceOf[PostProcessesOptions]
     }
     
-    extension [Self <: PostProcessesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PostProcessesOptions] (val x: Self) extends AnyVal {
       
       inline def setFragmentShader(value: String): Self = StObject.set(x, "fragmentShader", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object rendererWebglLayerMod {
       __obj.asInstanceOf[WebGLWorkerGenerateBuffersMessage]
     }
     
-    extension [Self <: WebGLWorkerGenerateBuffersMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebGLWorkerGenerateBuffersMessage] (val x: Self) extends AnyVal {
       
       inline def setCustomAttributesCount(value: Double): Self = StObject.set(x, "customAttributesCount", value.asInstanceOf[js.Any])
       

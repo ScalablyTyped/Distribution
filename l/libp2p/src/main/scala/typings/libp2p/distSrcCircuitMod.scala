@@ -80,7 +80,8 @@ object distSrcCircuitMod {
       __obj.asInstanceOf[AutoRelayConfig]
     }
     
-    extension [Self <: AutoRelayConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AutoRelayConfig] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       
@@ -105,7 +106,8 @@ object distSrcCircuitMod {
       __obj.asInstanceOf[RelayAdvertiseConfig]
     }
     
-    extension [Self <: RelayAdvertiseConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayAdvertiseConfig] (val x: Self) extends AnyVal {
       
       inline def setBootDelay(value: Double): Self = StObject.set(x, "bootDelay", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object distSrcCircuitMod {
       __obj.asInstanceOf[RelayComponents]
     }
     
-    extension [Self <: RelayComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayComponents] (val x: Self) extends AnyVal {
       
       inline def setConnectionManager(value: ConnectionManager): Self = StObject.set(x, "connectionManager", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object distSrcCircuitMod {
       __obj.asInstanceOf[RelayInit]
     }
     
-    extension [Self <: RelayInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelayInit] (val x: Self) extends AnyVal {
       
       inline def setAddressSorter(value: (/* a */ Address, /* b */ Address) => `-1` | `0` | `1`): Self = StObject.set(x, "addressSorter", js.Any.fromFunction2(value))
       

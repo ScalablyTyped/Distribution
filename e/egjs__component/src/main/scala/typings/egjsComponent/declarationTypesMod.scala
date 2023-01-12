@@ -43,7 +43,8 @@ object declarationTypesMod {
       __obj.asInstanceOf[DefaultProps[TYPE, THIS]]
     }
     
-    extension [Self <: DefaultProps[?, ?], TYPE /* <: String */, THIS](x: Self & (DefaultProps[TYPE, THIS])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultProps[?, ?], TYPE /* <: String */, THIS] (val x: Self & (DefaultProps[TYPE, THIS])) extends AnyVal {
       
       inline def setCurrentTarget(value: THIS): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       

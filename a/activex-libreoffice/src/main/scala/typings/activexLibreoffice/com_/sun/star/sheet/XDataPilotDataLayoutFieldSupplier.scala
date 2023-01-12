@@ -38,7 +38,8 @@ object XDataPilotDataLayoutFieldSupplier {
     __obj.asInstanceOf[XDataPilotDataLayoutFieldSupplier]
   }
   
-  extension [Self <: XDataPilotDataLayoutFieldSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotDataLayoutFieldSupplier] (val x: Self) extends AnyVal {
     
     inline def setDataLayoutField(value: XDataPilotField): Self = StObject.set(x, "DataLayoutField", value.asInstanceOf[js.Any])
     

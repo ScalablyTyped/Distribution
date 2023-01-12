@@ -48,7 +48,8 @@ object SearchPlaceIndexForSuggestionsSummary {
     __obj.asInstanceOf[SearchPlaceIndexForSuggestionsSummary]
   }
   
-  extension [Self <: SearchPlaceIndexForSuggestionsSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchPlaceIndexForSuggestionsSummary] (val x: Self) extends AnyVal {
     
     inline def setBiasPosition(value: Position): Self = StObject.set(x, "BiasPosition", value.asInstanceOf[js.Any])
     

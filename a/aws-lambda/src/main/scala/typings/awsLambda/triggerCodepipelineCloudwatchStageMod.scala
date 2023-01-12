@@ -49,7 +49,8 @@ object triggerCodepipelineCloudwatchStageMod {
       __obj.asInstanceOf[CodePipelineCloudWatchStageEvent]
     }
     
-    extension [Self <: CodePipelineCloudWatchStageEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodePipelineCloudWatchStageEvent] (val x: Self) extends AnyVal {
       
       inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
       

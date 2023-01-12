@@ -28,7 +28,8 @@ object ListLanguagesResponse {
     __obj.asInstanceOf[ListLanguagesResponse]
   }
   
-  extension [Self <: ListLanguagesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLanguagesResponse] (val x: Self) extends AnyVal {
     
     inline def setDisplayLanguageCode(value: DisplayLanguageCode): Self = StObject.set(x, "DisplayLanguageCode", value.asInstanceOf[js.Any])
     

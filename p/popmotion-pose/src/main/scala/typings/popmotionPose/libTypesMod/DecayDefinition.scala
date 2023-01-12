@@ -22,7 +22,8 @@ object DecayDefinition {
     __obj.asInstanceOf[DecayDefinition]
   }
   
-  extension [Self <: DecayDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecayDefinition] (val x: Self) extends AnyVal {
     
     inline def setType(value: decay): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

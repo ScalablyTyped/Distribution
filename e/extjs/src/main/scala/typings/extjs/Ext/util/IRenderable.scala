@@ -56,7 +56,8 @@ object IRenderable {
     __obj.asInstanceOf[IRenderable]
   }
   
-  extension [Self <: IRenderable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRenderable] (val x: Self) extends AnyVal {
     
     inline def setAfterRender(value: () => Unit): Self = StObject.set(x, "afterRender", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object KeyNameRouteName {
     __obj.asInstanceOf[KeyNameRouteName[RouteName]]
   }
   
-  extension [Self <: KeyNameRouteName[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */](x: Self & KeyNameRouteName[RouteName]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyNameRouteName[?], RouteName /* <: /* keyof tuya-panel-kit.tuya-panel-kit/@react-navigation/routers/types.ParamListBase */ String */] (val x: Self & KeyNameRouteName[RouteName]) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

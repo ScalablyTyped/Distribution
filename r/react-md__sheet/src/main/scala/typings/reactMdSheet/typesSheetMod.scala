@@ -546,7 +546,8 @@ object typesSheetMod {
       __obj.asInstanceOf[AllowedDialogProps]
     }
     
-    extension [Self <: AllowedDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowedDialogProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1430,7 +1431,8 @@ object typesSheetMod {
       __obj.asInstanceOf[BaseSheetProps]
     }
     
-    extension [Self <: BaseSheetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSheetProps] (val x: Self) extends AnyVal {
       
       inline def setHorizontalSize(value: SheetHorizontalSize): Self = StObject.set(x, "horizontalSize", value.asInstanceOf[js.Any])
       

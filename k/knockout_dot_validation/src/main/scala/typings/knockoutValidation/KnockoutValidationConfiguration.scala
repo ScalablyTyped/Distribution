@@ -102,7 +102,8 @@ object KnockoutValidationConfiguration {
     __obj.asInstanceOf[KnockoutValidationConfiguration]
   }
   
-  extension [Self <: KnockoutValidationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowHtmlMessages(value: Boolean): Self = StObject.set(x, "allowHtmlMessages", value.asInstanceOf[js.Any])
     

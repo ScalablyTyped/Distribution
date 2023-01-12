@@ -49,7 +49,8 @@ object distOperationsDomainsTypesMod {
       __obj.asInstanceOf[DomainOptions]
     }
     
-    extension [Self <: DomainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object distOperationsDomainsTypesMod {
       __obj.asInstanceOf[DomainOptionsAlter]
     }
     
-    extension [Self <: DomainOptionsAlter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainOptionsAlter] (val x: Self) extends AnyVal {
       
       inline def setAllowNull(value: Boolean): Self = StObject.set(x, "allowNull", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object distOperationsDomainsTypesMod {
       __obj.asInstanceOf[DomainOptionsCreate]
     }
     
-    extension [Self <: DomainOptionsCreate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomainOptionsCreate] (val x: Self) extends AnyVal {
       
       inline def setCollation(value: String): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])
       

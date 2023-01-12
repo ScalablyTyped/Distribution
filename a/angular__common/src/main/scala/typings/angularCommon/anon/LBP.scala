@@ -155,7 +155,8 @@ object LBP {
     __obj.asInstanceOf[LBP]
   }
   
-  extension [Self <: LBP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LBP] (val x: Self) extends AnyVal {
     
     inline def setARS(value: js.Array[String]): Self = StObject.set(x, "ARS", value.asInstanceOf[js.Any])
     

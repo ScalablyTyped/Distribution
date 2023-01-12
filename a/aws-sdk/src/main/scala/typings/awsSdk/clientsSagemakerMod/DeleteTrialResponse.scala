@@ -18,7 +18,8 @@ object DeleteTrialResponse {
     __obj.asInstanceOf[DeleteTrialResponse]
   }
   
-  extension [Self <: DeleteTrialResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteTrialResponse] (val x: Self) extends AnyVal {
     
     inline def setTrialArn(value: TrialArn): Self = StObject.set(x, "TrialArn", value.asInstanceOf[js.Any])
     

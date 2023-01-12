@@ -56,7 +56,8 @@ object EllipticalArcCommandMadeAbsolute {
     __obj.asInstanceOf[EllipticalArcCommandMadeAbsolute]
   }
   
-  extension [Self <: EllipticalArcCommandMadeAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipticalArcCommandMadeAbsolute] (val x: Self) extends AnyVal {
     
     inline def setCode(value: A): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

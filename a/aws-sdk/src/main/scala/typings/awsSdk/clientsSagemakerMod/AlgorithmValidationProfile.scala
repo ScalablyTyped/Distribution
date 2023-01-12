@@ -28,7 +28,8 @@ object AlgorithmValidationProfile {
     __obj.asInstanceOf[AlgorithmValidationProfile]
   }
   
-  extension [Self <: AlgorithmValidationProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlgorithmValidationProfile] (val x: Self) extends AnyVal {
     
     inline def setProfileName(value: EntityName): Self = StObject.set(x, "ProfileName", value.asInstanceOf[js.Any])
     

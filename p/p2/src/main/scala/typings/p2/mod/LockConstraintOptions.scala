@@ -21,7 +21,8 @@ object LockConstraintOptions {
     __obj.asInstanceOf[LockConstraintOptions]
   }
   
-  extension [Self <: LockConstraintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LockConstraintOptions] (val x: Self) extends AnyVal {
     
     inline def setLocalAngleB(value: Double): Self = StObject.set(x, "localAngleB", value.asInstanceOf[js.Any])
     

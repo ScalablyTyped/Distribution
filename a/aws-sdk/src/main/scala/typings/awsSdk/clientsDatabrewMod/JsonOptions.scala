@@ -18,7 +18,8 @@ object JsonOptions {
     __obj.asInstanceOf[JsonOptions]
   }
   
-  extension [Self <: JsonOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
     
     inline def setMultiLine(value: MultiLine): Self = StObject.set(x, "MultiLine", value.asInstanceOf[js.Any])
     

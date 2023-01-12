@@ -74,7 +74,8 @@ object NotifyDefault {
     __obj.asInstanceOf[NotifyDefault]
   }
   
-  extension [Self <: NotifyDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyDefault] (val x: Self) extends AnyVal {
     
     inline def setClosable(value: Boolean): Self = StObject.set(x, "closable", value.asInstanceOf[js.Any])
     

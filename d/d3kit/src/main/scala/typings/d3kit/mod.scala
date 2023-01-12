@@ -310,7 +310,8 @@ object mod {
       __obj.asInstanceOf[ChartMargin]
     }
     
-    extension [Self <: ChartMargin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartMargin] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -349,7 +350,8 @@ object mod {
       __obj.asInstanceOf[ChartOptions]
     }
     
-    extension [Self <: ChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartOptions] (val x: Self) extends AnyVal {
       
       inline def setInitialHeight(value: Double): Self = StObject.set(x, "initialHeight", value.asInstanceOf[js.Any])
       
@@ -394,7 +396,8 @@ object mod {
       __obj.asInstanceOf[FitOptions]
     }
     
-    extension [Self <: FitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FitOptions] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -456,7 +459,8 @@ object mod {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       

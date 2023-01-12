@@ -34,7 +34,8 @@ object libProjectAngularAilmentsMod {
       __obj.asInstanceOf[AngularAilmentDeps]
     }
     
-    extension [Self <: AngularAilmentDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AngularAilmentDeps] (val x: Self) extends AnyVal {
       
       inline def setProject(value: AngularProject): Self = StObject.set(x, "project", value.asInstanceOf[js.Any])
     }

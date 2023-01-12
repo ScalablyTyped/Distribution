@@ -27,7 +27,8 @@ object IXmlWriter {
     __obj.asInstanceOf[IXmlWriter]
   }
   
-  extension [Self <: IXmlWriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlWriter] (val x: Self) extends AnyVal {
     
     inline def setDefaultDocumentRoot(value: String): Self = StObject.set(x, "defaultDocumentRoot", value.asInstanceOf[js.Any])
     

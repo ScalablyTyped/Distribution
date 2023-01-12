@@ -19,7 +19,8 @@ object Matrix {
     __obj.asInstanceOf[Matrix]
   }
   
-  extension [Self <: Matrix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Matrix] (val x: Self) extends AnyVal {
     
     inline def setCoord(value: OverscaledTileID): Self = StObject.set(x, "coord", value.asInstanceOf[js.Any])
     

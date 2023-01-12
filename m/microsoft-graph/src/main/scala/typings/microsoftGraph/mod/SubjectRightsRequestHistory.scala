@@ -34,7 +34,8 @@ object SubjectRightsRequestHistory {
     __obj.asInstanceOf[SubjectRightsRequestHistory]
   }
   
-  extension [Self <: SubjectRightsRequestHistory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectRightsRequestHistory] (val x: Self) extends AnyVal {
     
     inline def setChangedBy(value: NullableOption[IdentitySet]): Self = StObject.set(x, "changedBy", value.asInstanceOf[js.Any])
     

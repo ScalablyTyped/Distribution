@@ -56,7 +56,8 @@ object Text {
       __obj.asInstanceOf[GetTextSizeObject]
     }
     
-    extension [Self <: GetTextSizeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetTextSizeObject] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -100,7 +101,8 @@ object Text {
       __obj.asInstanceOf[TextConfig]
     }
     
-    extension [Self <: TextConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextConfig] (val x: Self) extends AnyVal {
       
       inline def setPadding(value: TextPadding): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object Text {
       __obj.asInstanceOf[TextMetrics]
     }
     
-    extension [Self <: TextMetrics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextMetrics] (val x: Self) extends AnyVal {
       
       inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
       
@@ -197,7 +200,8 @@ object Text {
       __obj.asInstanceOf[TextPadding]
     }
     
-    extension [Self <: TextPadding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextPadding] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -267,7 +271,8 @@ object Text {
       __obj.asInstanceOf[TextShadow]
     }
     
-    extension [Self <: TextShadow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextShadow] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Double): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       
@@ -412,7 +417,8 @@ object Text {
       __obj.asInstanceOf[TextStyle]
     }
     
-    extension [Self <: TextStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextStyle] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -532,7 +538,8 @@ object Text {
       __obj.asInstanceOf[TextWordWrap]
     }
     
-    extension [Self <: TextWordWrap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextWordWrap] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: (/* text */ String, /* textObject */ typings.phaser.Phaser.GameObjects.Text) => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       

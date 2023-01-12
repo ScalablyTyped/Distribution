@@ -18,7 +18,8 @@ object ItemAttachment {
     __obj.asInstanceOf[ItemAttachment]
   }
   
-  extension [Self <: ItemAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemAttachment] (val x: Self) extends AnyVal {
     
     inline def setItem(value: NullableOption[OutlookItem]): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

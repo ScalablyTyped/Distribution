@@ -16,7 +16,8 @@ object SketchMSUserDocument {
     __obj.asInstanceOf[SketchMSUserDocument]
   }
   
-  extension [Self <: SketchMSUserDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSUserDocument] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: PageListCollapsed): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
   }

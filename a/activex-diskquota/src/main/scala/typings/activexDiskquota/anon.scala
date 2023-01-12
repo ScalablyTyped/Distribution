@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[PUser]
     }
     
-    extension [Self <: PUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PUser] (val x: Self) extends AnyVal {
       
       inline def setPUser(value: DIDiskQuotaUser): Self = StObject.set(x, "pUser", value.asInstanceOf[js.Any])
     }

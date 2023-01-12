@@ -28,7 +28,8 @@ object IMonarchLanguageBracket {
     __obj.asInstanceOf[IMonarchLanguageBracket]
   }
   
-  extension [Self <: IMonarchLanguageBracket](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMonarchLanguageBracket] (val x: Self) extends AnyVal {
     
     inline def setClose(value: String): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
     

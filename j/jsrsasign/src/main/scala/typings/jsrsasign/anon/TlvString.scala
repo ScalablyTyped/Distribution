@@ -15,7 +15,8 @@ object TlvString {
     __obj.asInstanceOf[TlvString]
   }
   
-  extension [Self <: TlvString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TlvString] (val x: Self) extends AnyVal {
     
     inline def setTlv(value: String): Self = StObject.set(x, "tlv", value.asInstanceOf[js.Any])
   }

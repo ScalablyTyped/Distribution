@@ -182,7 +182,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IOptions]
       }
       
-      extension [Self <: IOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
         
         inline def setConnector(value: IDataConnector[IReply, Unit, IRequest, String]): Self = StObject.set(x, "connector", value.asInstanceOf[js.Any])
         
@@ -212,7 +213,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IReply]
       }
       
-      extension [Self <: IReply](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IReply] (val x: Self) extends AnyVal {
         
         inline def setData(value: ReadonlyJSONObject): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -242,7 +244,8 @@ object libHandlerMod {
         __obj.asInstanceOf[IRequest]
       }
       
-      extension [Self <: IRequest](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRequest] (val x: Self) extends AnyVal {
         
         inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
         

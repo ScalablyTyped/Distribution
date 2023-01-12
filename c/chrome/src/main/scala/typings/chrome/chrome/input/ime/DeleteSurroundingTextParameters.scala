@@ -25,7 +25,8 @@ object DeleteSurroundingTextParameters {
     __obj.asInstanceOf[DeleteSurroundingTextParameters]
   }
   
-  extension [Self <: DeleteSurroundingTextParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSurroundingTextParameters] (val x: Self) extends AnyVal {
     
     inline def setContextID(value: Double): Self = StObject.set(x, "contextID", value.asInstanceOf[js.Any])
     

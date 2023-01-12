@@ -65,7 +65,8 @@ object mod {
       __obj.asInstanceOf[Config[V]]
     }
     
-    extension [Self <: Config[?], V /* <: HTTPVersion */](x: Self & Config[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config[?], V /* <: HTTPVersion */] (val x: Self & Config[V]) extends AnyVal {
       
       inline def setAllowUnsafeRegex(value: Boolean): Self = StObject.set(x, "allowUnsafeRegex", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object mod {
       __obj.asInstanceOf[FindResult[V]]
     }
     
-    extension [Self <: FindResult[?], V /* <: HTTPVersion */](x: Self & FindResult[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindResult[?], V /* <: HTTPVersion */] (val x: Self & FindResult[V]) extends AnyVal {
       
       inline def setHandler(
         value: (/* req */ Req[V], /* res */ Res[V], /* params */ StringDictionary[js.UndefOr[String]], /* store */ Any, /* searchParams */ StringDictionary[String]) => Any
@@ -584,7 +586,8 @@ object mod {
       __obj.asInstanceOf[RouteOptions]
     }
     
-    extension [Self <: RouteOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteOptions] (val x: Self) extends AnyVal {
       
       inline def setConstraints(value: StringDictionary[Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       

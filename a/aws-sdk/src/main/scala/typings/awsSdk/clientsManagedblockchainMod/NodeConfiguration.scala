@@ -33,7 +33,8 @@ object NodeConfiguration {
     __obj.asInstanceOf[NodeConfiguration]
   }
   
-  extension [Self <: NodeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: AvailabilityZoneString): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

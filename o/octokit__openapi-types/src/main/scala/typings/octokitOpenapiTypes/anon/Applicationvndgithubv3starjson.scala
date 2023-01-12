@@ -32,7 +32,8 @@ object Applicationvndgithubv3starjson {
     __obj.asInstanceOf[Applicationvndgithubv3starjson]
   }
   
-  extension [Self <: Applicationvndgithubv3starjson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Applicationvndgithubv3starjson] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(
       value: js.Array[

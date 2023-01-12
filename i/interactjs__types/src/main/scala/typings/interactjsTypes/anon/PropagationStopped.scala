@@ -18,7 +18,8 @@ object PropagationStopped {
     __obj.asInstanceOf[PropagationStopped]
   }
   
-  extension [Self <: PropagationStopped](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropagationStopped] (val x: Self) extends AnyVal {
     
     inline def setPropagationStopped(value: Boolean): Self = StObject.set(x, "propagationStopped", value.asInstanceOf[js.Any])
     

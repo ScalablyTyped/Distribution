@@ -71,7 +71,8 @@ object buildSrcCryptoCryptoMod {
       __obj.asInstanceOf[CryptoSigner]
     }
     
-    extension [Self <: CryptoSigner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CryptoSigner] (val x: Self) extends AnyVal {
       
       inline def setSign(value: (String, String) => String): Self = StObject.set(x, "sign", js.Any.fromFunction2(value))
       
@@ -100,7 +101,8 @@ object buildSrcCryptoCryptoMod {
       __obj.asInstanceOf[JwkCertificate]
     }
     
-    extension [Self <: JwkCertificate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JwkCertificate] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

@@ -88,7 +88,8 @@ object namespacesBrowsingDataMod {
         __obj.asInstanceOf[DataTypeSet]
       }
       
-      extension [Self <: DataTypeSet](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DataTypeSet] (val x: Self) extends AnyVal {
         
         inline def setCache(value: Boolean): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
         
@@ -176,7 +177,8 @@ object namespacesBrowsingDataMod {
         __obj.asInstanceOf[RemovalOptions]
       }
       
-      extension [Self <: RemovalOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemovalOptions] (val x: Self) extends AnyVal {
         
         inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
         
@@ -230,7 +232,8 @@ object namespacesBrowsingDataMod {
         __obj.asInstanceOf[RemovalOptionsOriginTypesType]
       }
       
-      extension [Self <: RemovalOptionsOriginTypesType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RemovalOptionsOriginTypesType] (val x: Self) extends AnyVal {
         
         inline def setExtension(value: Boolean): Self = StObject.set(x, "extension", value.asInstanceOf[js.Any])
         
@@ -269,7 +272,8 @@ object namespacesBrowsingDataMod {
         __obj.asInstanceOf[SettingsCallbackResultType]
       }
       
-      extension [Self <: SettingsCallbackResultType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SettingsCallbackResultType] (val x: Self) extends AnyVal {
         
         inline def setDataRemovalPermitted(value: DataTypeSet): Self = StObject.set(x, "dataRemovalPermitted", value.asInstanceOf[js.Any])
         
@@ -379,7 +383,8 @@ object namespacesBrowsingDataMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setRemove(value: (RemovalOptions, DataTypeSet) => js.Promise[Unit]): Self = StObject.set(x, "remove", js.Any.fromFunction2(value))
         

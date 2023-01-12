@@ -25,7 +25,8 @@ object PageBackgroundFill {
     __obj.asInstanceOf[PageBackgroundFill]
   }
   
-  extension [Self <: PageBackgroundFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageBackgroundFill] (val x: Self) extends AnyVal {
     
     inline def setPropertyState(value: String): Self = StObject.set(x, "propertyState", value.asInstanceOf[js.Any])
     

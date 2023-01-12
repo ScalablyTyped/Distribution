@@ -88,7 +88,8 @@ object KafkaStreamingSourceOptions {
     __obj.asInstanceOf[KafkaStreamingSourceOptions]
   }
   
-  extension [Self <: KafkaStreamingSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KafkaStreamingSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setAssign(value: EnclosedInStringProperty): Self = StObject.set(x, "Assign", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object XStorageChangeListener {
     __obj.asInstanceOf[XStorageChangeListener]
   }
   
-  extension [Self <: XStorageChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStorageChangeListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyStorageChange(value: (XInterface, XStorage) => Unit): Self = StObject.set(x, "notifyStorageChange", js.Any.fromFunction2(value))
   }

@@ -29,7 +29,8 @@ object LoadModelOptions {
     __obj.asInstanceOf[LoadModelOptions]
   }
   
-  extension [Self <: LoadModelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadModelOptions] (val x: Self) extends AnyVal {
     
     inline def setApplyScaling(value: String | From): Self = StObject.set(x, "applyScaling", value.asInstanceOf[js.Any])
     

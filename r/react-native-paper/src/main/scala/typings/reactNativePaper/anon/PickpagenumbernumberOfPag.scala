@@ -196,7 +196,8 @@ object PickpagenumbernumberOfPag {
     __obj.asInstanceOf[PickpagenumbernumberOfPag]
   }
   
-  extension [Self <: PickpagenumbernumberOfPag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickpagenumbernumberOfPag] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

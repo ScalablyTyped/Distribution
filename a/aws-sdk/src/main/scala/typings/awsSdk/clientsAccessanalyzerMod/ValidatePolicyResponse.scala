@@ -23,7 +23,8 @@ object ValidatePolicyResponse {
     __obj.asInstanceOf[ValidatePolicyResponse]
   }
   
-  extension [Self <: ValidatePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidatePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setFindings(value: ValidatePolicyFindingList): Self = StObject.set(x, "findings", value.asInstanceOf[js.Any])
     

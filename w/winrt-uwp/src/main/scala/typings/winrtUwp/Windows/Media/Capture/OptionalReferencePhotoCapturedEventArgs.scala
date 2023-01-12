@@ -20,7 +20,8 @@ object OptionalReferencePhotoCapturedEventArgs {
     __obj.asInstanceOf[OptionalReferencePhotoCapturedEventArgs]
   }
   
-  extension [Self <: OptionalReferencePhotoCapturedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionalReferencePhotoCapturedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

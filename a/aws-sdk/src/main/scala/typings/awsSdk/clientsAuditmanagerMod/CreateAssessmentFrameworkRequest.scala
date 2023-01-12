@@ -38,7 +38,8 @@ object CreateAssessmentFrameworkRequest {
     __obj.asInstanceOf[CreateAssessmentFrameworkRequest]
   }
   
-  extension [Self <: CreateAssessmentFrameworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssessmentFrameworkRequest] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "complianceType", value.asInstanceOf[js.Any])
     

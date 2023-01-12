@@ -15,7 +15,8 @@ object VideoEncoderEncodeOptions {
     __obj.asInstanceOf[VideoEncoderEncodeOptions]
   }
   
-  extension [Self <: VideoEncoderEncodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoEncoderEncodeOptions] (val x: Self) extends AnyVal {
     
     inline def setKeyFrame(value: Boolean): Self = StObject.set(x, "keyFrame", value.asInstanceOf[js.Any])
     

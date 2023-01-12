@@ -23,7 +23,8 @@ object MinimumEngineVersionPerAllowedValue {
     __obj.asInstanceOf[MinimumEngineVersionPerAllowedValue]
   }
   
-  extension [Self <: MinimumEngineVersionPerAllowedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinimumEngineVersionPerAllowedValue] (val x: Self) extends AnyVal {
     
     inline def setAllowedValue(value: String): Self = StObject.set(x, "AllowedValue", value.asInstanceOf[js.Any])
     

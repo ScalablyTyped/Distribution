@@ -84,7 +84,8 @@ object CreateLicenseVersionRequest {
     __obj.asInstanceOf[CreateLicenseVersionRequest]
   }
   
-  extension [Self <: CreateLicenseVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLicenseVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

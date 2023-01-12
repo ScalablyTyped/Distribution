@@ -79,7 +79,8 @@ object libSmsAspSmsMod {
       __obj.asInstanceOf[AspSms]
     }
     
-    extension [Self <: AspSms](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AspSms] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       

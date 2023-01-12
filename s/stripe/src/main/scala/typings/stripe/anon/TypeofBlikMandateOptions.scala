@@ -15,7 +15,8 @@ object TypeofBlikMandateOptions {
     __obj.asInstanceOf[TypeofBlikMandateOptions]
   }
   
-  extension [Self <: TypeofBlikMandateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofBlikMandateOptions] (val x: Self) extends AnyVal {
     
     inline def setMandateOptions(value: TypeofMandateOptions): Self = StObject.set(x, "MandateOptions", value.asInstanceOf[js.Any])
   }

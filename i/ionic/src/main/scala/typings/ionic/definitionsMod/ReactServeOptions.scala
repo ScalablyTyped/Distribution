@@ -34,7 +34,8 @@ object ReactServeOptions {
     __obj.asInstanceOf[ReactServeOptions]
   }
   
-  extension [Self <: ReactServeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactServeOptions] (val x: Self) extends AnyVal {
     
     inline def setCi(value: Boolean): Self = StObject.set(x, "ci", value.asInstanceOf[js.Any])
     

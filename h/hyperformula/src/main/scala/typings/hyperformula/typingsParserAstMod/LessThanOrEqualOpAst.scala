@@ -20,7 +20,8 @@ object LessThanOrEqualOpAst {
     __obj.asInstanceOf[LessThanOrEqualOpAst]
   }
   
-  extension [Self <: LessThanOrEqualOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LessThanOrEqualOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: LESS_THAN_OR_EQUAL_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

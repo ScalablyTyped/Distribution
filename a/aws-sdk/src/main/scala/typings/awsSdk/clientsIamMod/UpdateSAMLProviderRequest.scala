@@ -23,7 +23,8 @@ object UpdateSAMLProviderRequest {
     __obj.asInstanceOf[UpdateSAMLProviderRequest]
   }
   
-  extension [Self <: UpdateSAMLProviderRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSAMLProviderRequest] (val x: Self) extends AnyVal {
     
     inline def setSAMLMetadataDocument(value: SAMLMetadataDocumentType): Self = StObject.set(x, "SAMLMetadataDocument", value.asInstanceOf[js.Any])
     

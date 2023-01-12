@@ -38,7 +38,8 @@ object NeighborConnectionDetail {
     __obj.asInstanceOf[NeighborConnectionDetail]
   }
   
-  extension [Self <: NeighborConnectionDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NeighborConnectionDetail] (val x: Self) extends AnyVal {
     
     inline def setConnectionsCount(value: Long): Self = StObject.set(x, "connectionsCount", value.asInstanceOf[js.Any])
     

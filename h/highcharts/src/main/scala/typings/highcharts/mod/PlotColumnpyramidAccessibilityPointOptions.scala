@@ -81,7 +81,8 @@ object PlotColumnpyramidAccessibilityPointOptions {
     __obj.asInstanceOf[PlotColumnpyramidAccessibilityPointOptions]
   }
   
-  extension [Self <: PlotColumnpyramidAccessibilityPointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotColumnpyramidAccessibilityPointOptions] (val x: Self) extends AnyVal {
     
     inline def setDateFormat(value: String): Self = StObject.set(x, "dateFormat", value.asInstanceOf[js.Any])
     

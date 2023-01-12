@@ -23,7 +23,8 @@ object TransferResult {
     __obj.asInstanceOf[TransferResult]
   }
   
-  extension [Self <: TransferResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferResult] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Any): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
     

@@ -109,7 +109,8 @@ object ngccSrcDependenciesDependencyHostMod {
       __obj.asInstanceOf[DependencyHost]
     }
     
-    extension [Self <: DependencyHost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyHost] (val x: Self) extends AnyVal {
       
       inline def setCollectDependencies(value: (AbsoluteFsPath, DependencyInfo) => Unit): Self = StObject.set(x, "collectDependencies", js.Any.fromFunction2(value))
     }
@@ -134,7 +135,8 @@ object ngccSrcDependenciesDependencyHostMod {
       __obj.asInstanceOf[DependencyInfo]
     }
     
-    extension [Self <: DependencyInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependencyInfo] (val x: Self) extends AnyVal {
       
       inline def setDeepImports(value: Set[AbsoluteFsPath]): Self = StObject.set(x, "deepImports", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object ngccSrcDependenciesDependencyHostMod {
       __obj.asInstanceOf[EntryPointWithDependencies]
     }
     
-    extension [Self <: EntryPointWithDependencies](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EntryPointWithDependencies] (val x: Self) extends AnyVal {
       
       inline def setDepInfo(value: DependencyInfo): Self = StObject.set(x, "depInfo", value.asInstanceOf[js.Any])
       

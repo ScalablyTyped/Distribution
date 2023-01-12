@@ -23,7 +23,8 @@ object CreateTagOptionInput {
     __obj.asInstanceOf[CreateTagOptionInput]
   }
   
-  extension [Self <: CreateTagOptionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTagOptionInput] (val x: Self) extends AnyVal {
     
     inline def setKey(value: TagOptionKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

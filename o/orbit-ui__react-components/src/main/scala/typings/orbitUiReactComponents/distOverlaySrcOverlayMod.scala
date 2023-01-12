@@ -68,7 +68,8 @@ object distOverlaySrcOverlayMod {
       __obj.asInstanceOf[InnerOverlayProps]
     }
     
-    extension [Self <: InnerOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

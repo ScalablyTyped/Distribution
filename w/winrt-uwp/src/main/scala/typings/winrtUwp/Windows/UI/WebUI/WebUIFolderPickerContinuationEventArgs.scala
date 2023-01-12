@@ -44,7 +44,8 @@ object WebUIFolderPickerContinuationEventArgs {
     __obj.asInstanceOf[WebUIFolderPickerContinuationEventArgs]
   }
   
-  extension [Self <: WebUIFolderPickerContinuationEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIFolderPickerContinuationEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

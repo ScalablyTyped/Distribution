@@ -109,7 +109,8 @@ object DirectGeometry {
     __obj.asInstanceOf[DirectGeometry]
   }
   
-  extension [Self <: DirectGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectGeometry] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, js.Function1[/* event */ Event, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

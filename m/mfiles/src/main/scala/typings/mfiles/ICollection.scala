@@ -41,7 +41,8 @@ object ICollection {
     __obj.asInstanceOf[ICollection]
   }
   
-  extension [Self <: ICollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollection] (val x: Self) extends AnyVal {
     
     inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object BigPlayButtonProps {
     __obj.asInstanceOf[BigPlayButtonProps]
   }
   
-  extension [Self <: BigPlayButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigPlayButtonProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

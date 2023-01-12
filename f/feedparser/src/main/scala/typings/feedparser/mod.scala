@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Attrs]
     }
     
-    extension [Self <: Attrs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attrs] (val x: Self) extends AnyVal {
       
       inline def setLocal(value: String): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[Enclosure]
     }
     
-    extension [Self <: Enclosure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enclosure] (val x: Self) extends AnyVal {
       
       inline def setLength(value: String): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object mod {
       __obj.asInstanceOf[Image]
     }
     
-    extension [Self <: Image](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Image] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
       
@@ -237,7 +240,8 @@ object mod {
       __obj.asInstanceOf[Item]
     }
     
-    extension [Self <: Item](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -334,7 +338,8 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setAuthor(value: String): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
       
@@ -401,7 +406,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAddmeta(value: Boolean): Self = StObject.set(x, "addmeta", value.asInstanceOf[js.Any])
       

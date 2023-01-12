@@ -19,7 +19,8 @@ object RealContentHashPlugin {
     __obj.asInstanceOf[RealContentHashPlugin]
   }
   
-  extension [Self <: RealContentHashPlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealContentHashPlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

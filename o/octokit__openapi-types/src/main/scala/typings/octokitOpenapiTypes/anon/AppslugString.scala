@@ -15,7 +15,8 @@ object AppslugString {
     __obj.asInstanceOf[AppslugString]
   }
   
-  extension [Self <: AppslugString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppslugString] (val x: Self) extends AnyVal {
     
     inline def setApp_slug(value: String): Self = StObject.set(x, "app_slug", value.asInstanceOf[js.Any])
   }

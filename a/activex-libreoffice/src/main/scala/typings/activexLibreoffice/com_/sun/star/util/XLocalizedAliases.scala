@@ -60,7 +60,8 @@ object XLocalizedAliases {
     __obj.asInstanceOf[XLocalizedAliases]
   }
   
-  extension [Self <: XLocalizedAliases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLocalizedAliases] (val x: Self) extends AnyVal {
     
     inline def setBindAlias(value: (String, Locale, String) => Unit): Self = StObject.set(x, "bindAlias", js.Any.fromFunction3(value))
     

@@ -61,7 +61,8 @@ object SubstanceProteinSubunit {
     __obj.asInstanceOf[SubstanceProteinSubunit]
   }
   
-  extension [Self <: SubstanceProteinSubunit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceProteinSubunit] (val x: Self) extends AnyVal {
     
     inline def setCTerminalModification(value: String): Self = StObject.set(x, "cTerminalModification", value.asInstanceOf[js.Any])
     

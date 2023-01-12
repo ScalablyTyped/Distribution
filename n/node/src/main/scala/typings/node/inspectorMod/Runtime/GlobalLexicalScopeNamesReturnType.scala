@@ -15,7 +15,8 @@ object GlobalLexicalScopeNamesReturnType {
     __obj.asInstanceOf[GlobalLexicalScopeNamesReturnType]
   }
   
-  extension [Self <: GlobalLexicalScopeNamesReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalLexicalScopeNamesReturnType] (val x: Self) extends AnyVal {
     
     inline def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
     

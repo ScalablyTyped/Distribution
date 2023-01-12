@@ -28,7 +28,8 @@ object libKbarresultsMod {
       __obj.asInstanceOf[KBarResultsProps]
     }
     
-    extension [Self <: KBarResultsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KBarResultsProps] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object libKbarresultsMod {
       __obj.asInstanceOf[RenderParams[T]]
     }
     
-    extension [Self <: RenderParams[?], T](x: Self & RenderParams[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderParams[?], T] (val x: Self & RenderParams[T]) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

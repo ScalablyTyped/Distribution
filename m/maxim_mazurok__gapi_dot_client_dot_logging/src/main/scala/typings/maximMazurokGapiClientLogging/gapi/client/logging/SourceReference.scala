@@ -19,7 +19,8 @@ object SourceReference {
     __obj.asInstanceOf[SourceReference]
   }
   
-  extension [Self <: SourceReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceReference] (val x: Self) extends AnyVal {
     
     inline def setRepository(value: String): Self = StObject.set(x, "repository", value.asInstanceOf[js.Any])
     

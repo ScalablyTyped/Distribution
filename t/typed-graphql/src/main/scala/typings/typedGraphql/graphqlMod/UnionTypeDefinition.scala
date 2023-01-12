@@ -24,7 +24,8 @@ object UnionTypeDefinition {
     __obj.asInstanceOf[UnionTypeDefinition]
   }
   
-  extension [Self <: UnionTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnionTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

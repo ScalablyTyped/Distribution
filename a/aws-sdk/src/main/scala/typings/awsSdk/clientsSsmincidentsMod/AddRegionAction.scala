@@ -23,7 +23,8 @@ object AddRegionAction {
     __obj.asInstanceOf[AddRegionAction]
   }
   
-  extension [Self <: AddRegionAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRegionAction] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "regionName", value.asInstanceOf[js.Any])
     

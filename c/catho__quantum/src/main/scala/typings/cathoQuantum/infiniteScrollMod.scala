@@ -35,7 +35,8 @@ object infiniteScrollMod {
       __obj.asInstanceOf[InfiniteScrollProps]
     }
     
-    extension [Self <: InfiniteScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfiniteScrollProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(
         value: (js.Array[

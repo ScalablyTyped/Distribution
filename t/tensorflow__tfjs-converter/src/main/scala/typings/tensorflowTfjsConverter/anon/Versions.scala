@@ -24,7 +24,8 @@ object Versions {
     __obj.asInstanceOf[Versions]
   }
   
-  extension [Self <: Versions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
     
     inline def setNode(
       value: js.Array[

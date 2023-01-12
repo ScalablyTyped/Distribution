@@ -25,7 +25,8 @@ object Dimension {
     __obj.asInstanceOf[Dimension]
   }
   
-  extension [Self <: Dimension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.cssTree.cssTreeStrings.Dimension): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

@@ -85,7 +85,8 @@ object StructureNuker {
     __obj.asInstanceOf[StructureNuker]
   }
   
-  extension [Self <: StructureNuker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructureNuker] (val x: Self) extends AnyVal {
     
     inline def setCooldown(value: Double): Self = StObject.set(x, "cooldown", value.asInstanceOf[js.Any])
     

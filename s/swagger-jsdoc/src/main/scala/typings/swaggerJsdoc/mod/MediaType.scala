@@ -24,7 +24,8 @@ object MediaType {
     __obj.asInstanceOf[MediaType]
   }
   
-  extension [Self <: MediaType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaType] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: StringDictionary[Encoding]): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

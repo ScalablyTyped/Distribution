@@ -34,7 +34,8 @@ object `9` {
     __obj.asInstanceOf[`9`]
   }
   
-  extension [Self <: `9`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `9`] (val x: Self) extends AnyVal {
     
     inline def setConverterPriority(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double

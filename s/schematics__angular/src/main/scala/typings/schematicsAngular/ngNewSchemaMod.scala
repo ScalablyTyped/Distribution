@@ -117,7 +117,8 @@ object ngNewSchemaMod {
       __obj.asInstanceOf[CommitObject]
     }
     
-    extension [Self <: CommitObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitObject] (val x: Self) extends AnyVal {
       
       inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
       
@@ -241,7 +242,8 @@ object ngNewSchemaMod {
       __obj.asInstanceOf[Schema]
     }
     
-    extension [Self <: Schema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Schema] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: CommitUnion): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       

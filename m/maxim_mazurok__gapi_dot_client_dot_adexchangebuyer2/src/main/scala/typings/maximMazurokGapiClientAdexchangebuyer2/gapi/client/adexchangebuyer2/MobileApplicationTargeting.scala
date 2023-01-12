@@ -16,7 +16,8 @@ object MobileApplicationTargeting {
     __obj.asInstanceOf[MobileApplicationTargeting]
   }
   
-  extension [Self <: MobileApplicationTargeting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileApplicationTargeting] (val x: Self) extends AnyVal {
     
     inline def setFirstPartyTargeting(value: FirstPartyMobileApplicationTargeting): Self = StObject.set(x, "firstPartyTargeting", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object Html2CanvasOptions {
     __obj.asInstanceOf[Html2CanvasOptions]
   }
   
-  extension [Self <: Html2CanvasOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Html2CanvasOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowTaint(value: Boolean): Self = StObject.set(x, "allowTaint", value.asInstanceOf[js.Any])
     

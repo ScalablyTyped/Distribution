@@ -63,7 +63,8 @@ object XFilePicker2 {
     __obj.asInstanceOf[XFilePicker2]
   }
   
-  extension [Self <: XFilePicker2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFilePicker2] (val x: Self) extends AnyVal {
     
     inline def setGetSelectedFiles(value: () => SafeArray[String]): Self = StObject.set(x, "getSelectedFiles", js.Any.fromFunction0(value))
     

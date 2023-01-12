@@ -196,7 +196,8 @@ object libUndoablelistMod {
       __obj.asInstanceOf[ISerializer[T]]
     }
     
-    extension [Self <: ISerializer[?], T](x: Self & ISerializer[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISerializer[?], T] (val x: Self & ISerializer[T]) extends AnyVal {
       
       inline def setFromJSON(value: JSONValue => T): Self = StObject.set(x, "fromJSON", js.Any.fromFunction1(value))
       

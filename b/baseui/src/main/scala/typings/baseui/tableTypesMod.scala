@@ -25,7 +25,8 @@ object tableTypesMod {
       __obj.asInstanceOf[FilterOverrides]
     }
     
-    extension [Self <: FilterOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object tableTypesMod {
       __obj.asInstanceOf[FilterProps]
     }
     
-    extension [Self <: FilterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -142,7 +144,8 @@ object tableTypesMod {
       __obj.asInstanceOf[HeadCellOverrides]
     }
     
-    extension [Self <: HeadCellOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadCellOverrides] (val x: Self) extends AnyVal {
       
       inline def setHeadCell(value: Override[Any]): Self = StObject.set(x, "HeadCell", value.asInstanceOf[js.Any])
       
@@ -188,7 +191,8 @@ object tableTypesMod {
       __obj.asInstanceOf[HeadCellProps]
     }
     
-    extension [Self <: HeadCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadCellProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -259,7 +263,8 @@ object tableTypesMod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[String | ReactNode]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       

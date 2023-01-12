@@ -48,7 +48,8 @@ object `0Zip` {
     __obj.asInstanceOf[`0Zip`[L, L1, LN, I]]
   }
   
-  extension [Self <: `0Zip`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */](x: Self & (`0Zip`[L, L1, LN, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Zip`[?, ?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, L1 /* <: typings.tsToolbelt.outListListMod.List[Any] */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */, I /* <: Iteration */] (val x: Self & (`0Zip`[L, L1, LN, I])) extends AnyVal {
     
     inline def set0(
       value: __Zip[

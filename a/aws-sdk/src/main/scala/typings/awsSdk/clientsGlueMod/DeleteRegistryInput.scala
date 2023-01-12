@@ -18,7 +18,8 @@ object DeleteRegistryInput {
     __obj.asInstanceOf[DeleteRegistryInput]
   }
   
-  extension [Self <: DeleteRegistryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRegistryInput] (val x: Self) extends AnyVal {
     
     inline def setRegistryId(value: RegistryId): Self = StObject.set(x, "RegistryId", value.asInstanceOf[js.Any])
   }

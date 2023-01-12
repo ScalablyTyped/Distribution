@@ -17,7 +17,8 @@ object ConsumedCapacity {
     __obj.asInstanceOf[ConsumedCapacity]
   }
   
-  extension [Self <: ConsumedCapacity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumedCapacity] (val x: Self) extends AnyVal {
     
     inline def setCapacityUnits(value: Double): Self = StObject.set(x, "CapacityUnits", value.asInstanceOf[js.Any])
     

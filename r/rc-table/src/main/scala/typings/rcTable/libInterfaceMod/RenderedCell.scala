@@ -18,7 +18,8 @@ object RenderedCell {
     __obj.asInstanceOf[RenderedCell[RecordType]]
   }
   
-  extension [Self <: RenderedCell[?], RecordType](x: Self & RenderedCell[RecordType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderedCell[?], RecordType] (val x: Self & RenderedCell[RecordType]) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

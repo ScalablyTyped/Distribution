@@ -28,7 +28,8 @@ object FileSystemConfig {
     __obj.asInstanceOf[FileSystemConfig]
   }
   
-  extension [Self <: FileSystemConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemConfig] (val x: Self) extends AnyVal {
     
     inline def setDefaultGid(value: DefaultGid): Self = StObject.set(x, "DefaultGid", value.asInstanceOf[js.Any])
     

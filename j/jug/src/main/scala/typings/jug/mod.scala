@@ -162,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VertexStructure]
     }
     
-    extension [Self <: VertexStructure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VertexStructure] (val x: Self) extends AnyVal {
       
       inline def setData(value: VertexData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

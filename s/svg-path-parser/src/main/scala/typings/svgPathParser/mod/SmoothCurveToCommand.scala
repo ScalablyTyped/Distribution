@@ -33,7 +33,8 @@ object SmoothCurveToCommand {
     __obj.asInstanceOf[SmoothCurveToCommand]
   }
   
-  extension [Self <: SmoothCurveToCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmoothCurveToCommand] (val x: Self) extends AnyVal {
     
     inline def setCode(value: s_ | S): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

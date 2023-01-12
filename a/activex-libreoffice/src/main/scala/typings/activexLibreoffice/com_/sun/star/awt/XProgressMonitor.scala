@@ -43,7 +43,8 @@ object XProgressMonitor {
     __obj.asInstanceOf[XProgressMonitor]
   }
   
-  extension [Self <: XProgressMonitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProgressMonitor] (val x: Self) extends AnyVal {
     
     inline def setAddText(value: (String, String, Boolean) => Unit): Self = StObject.set(x, "addText", js.Any.fromFunction3(value))
     

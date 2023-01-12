@@ -64,7 +64,8 @@ object libFormattersOptionsMod {
       __obj.asInstanceOf[IDateFormatterOptions]
     }
     
-    extension [Self <: IDateFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDateFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setAbbrDayNames(value: js.Array[String]): Self = StObject.set(x, "abbrDayNames", value.asInstanceOf[js.Any])
       
@@ -213,7 +214,8 @@ object libFormattersOptionsMod {
       __obj.asInstanceOf[INumberFormatterOptions]
     }
     
-    extension [Self <: INumberFormatterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INumberFormatterOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrDecimalPoint(value: String): Self = StObject.set(x, "currDecimalPoint", value.asInstanceOf[js.Any])
       

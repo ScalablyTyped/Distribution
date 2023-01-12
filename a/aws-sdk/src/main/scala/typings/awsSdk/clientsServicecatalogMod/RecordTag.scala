@@ -23,7 +23,8 @@ object RecordTag {
     __obj.asInstanceOf[RecordTag]
   }
   
-  extension [Self <: RecordTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordTag] (val x: Self) extends AnyVal {
     
     inline def setKey(value: RecordTagKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

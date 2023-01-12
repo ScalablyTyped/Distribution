@@ -65,7 +65,8 @@ object WebXRInput {
     __obj.asInstanceOf[WebXRInput]
   }
   
-  extension [Self <: WebXRInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebXRInput] (val x: Self) extends AnyVal {
     
     inline def setControllers(value: js.Array[WebXRInputSource]): Self = StObject.set(x, "controllers", value.asInstanceOf[js.Any])
     

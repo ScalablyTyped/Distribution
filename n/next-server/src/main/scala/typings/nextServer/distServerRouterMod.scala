@@ -60,7 +60,8 @@ object distServerRouterMod {
       __obj.asInstanceOf[Route_]
     }
     
-    extension [Self <: Route_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route_] (val x: Self) extends AnyVal {
       
       inline def setFn(value: (IncomingMessage, ServerResponse[IncomingMessage], Params, UrlWithParsedQuery) => Unit): Self = StObject.set(x, "fn", js.Any.fromFunction4(value))
       
@@ -88,7 +89,8 @@ object distServerRouterMod {
       __obj.asInstanceOf[Router]
     }
     
-    extension [Self <: Router](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Router] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Route_ => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

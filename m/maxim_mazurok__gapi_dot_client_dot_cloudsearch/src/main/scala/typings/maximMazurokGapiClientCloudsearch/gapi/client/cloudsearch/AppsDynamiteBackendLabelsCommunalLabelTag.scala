@@ -19,7 +19,8 @@ object AppsDynamiteBackendLabelsCommunalLabelTag {
     __obj.asInstanceOf[AppsDynamiteBackendLabelsCommunalLabelTag]
   }
   
-  extension [Self <: AppsDynamiteBackendLabelsCommunalLabelTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteBackendLabelsCommunalLabelTag] (val x: Self) extends AnyVal {
     
     inline def setCreatorUserId(value: String): Self = StObject.set(x, "creatorUserId", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DownIcon {
     __obj.asInstanceOf[DownIcon]
   }
   
-  extension [Self <: DownIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownIcon] (val x: Self) extends AnyVal {
     
     inline def setDownIcon(value: ReactNode): Self = StObject.set(x, "downIcon", value.asInstanceOf[js.Any])
     

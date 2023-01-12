@@ -32,7 +32,8 @@ object calendarMod {
     @js.native
     val ^ : Calendar = js.native
     
-    extension [Self <: Calendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Calendar] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: MergedModifiers): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       

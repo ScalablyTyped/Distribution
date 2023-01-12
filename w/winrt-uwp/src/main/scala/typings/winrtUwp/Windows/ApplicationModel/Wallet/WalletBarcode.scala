@@ -32,7 +32,8 @@ object WalletBarcode {
     __obj.asInstanceOf[WalletBarcode]
   }
   
-  extension [Self <: WalletBarcode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WalletBarcode] (val x: Self) extends AnyVal {
     
     inline def setGetImageAsync(value: () => IPromiseWithIAsyncOperation[IRandomAccessStreamReference]): Self = StObject.set(x, "getImageAsync", js.Any.fromFunction0(value))
     

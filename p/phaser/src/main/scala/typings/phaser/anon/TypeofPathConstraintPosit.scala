@@ -25,7 +25,8 @@ object TypeofPathConstraintPosit {
     __obj.asInstanceOf[TypeofPathConstraintPosit]
   }
   
-  extension [Self <: TypeofPathConstraintPosit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPathConstraintPosit] (val x: Self) extends AnyVal {
     
     inline def setENTRIES(value: Double): Self = StObject.set(x, "ENTRIES", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object Icon {
     __obj.asInstanceOf[Icon]
   }
   
-  extension [Self <: Icon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Icon] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

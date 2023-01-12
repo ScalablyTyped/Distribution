@@ -16,7 +16,8 @@ object UpsellSubCompnents {
     __obj.asInstanceOf[UpsellSubCompnents]
   }
   
-  extension [Self <: UpsellSubCompnents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpsellSubCompnents] (val x: Self) extends AnyVal {
     
     inline def setForm(value: FC[UpsellFormProps]): Self = StObject.set(x, "Form", value.asInstanceOf[js.Any])
   }

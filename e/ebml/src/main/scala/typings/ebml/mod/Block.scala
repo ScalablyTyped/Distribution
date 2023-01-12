@@ -39,7 +39,8 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  extension [Self <: Block](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Buffer): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

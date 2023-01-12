@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[ErrorMessage]
     }
     
-    extension [Self <: ErrorMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorMessage] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -134,7 +135,8 @@ object mod {
       __obj.asInstanceOf[Methods]
     }
     
-    extension [Self <: Methods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Methods] (val x: Self) extends AnyVal {
       
       inline def setGetCrawler(value: () => typings.simplecrawler.mod.^): Self = StObject.set(x, "getCrawler", js.Any.fromFunction0(value))
       

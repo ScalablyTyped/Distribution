@@ -28,7 +28,8 @@ object ResetFpgaImageAttributeRequest {
     __obj.asInstanceOf[ResetFpgaImageAttributeRequest]
   }
   
-  extension [Self <: ResetFpgaImageAttributeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetFpgaImageAttributeRequest] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: ResetFpgaImageAttributeName): Self = StObject.set(x, "Attribute", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object PartialStyleRulesToolbarC {
     __obj.asInstanceOf[PartialStyleRulesToolbarC]
   }
   
-  extension [Self <: PartialStyleRulesToolbarC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesToolbarC] (val x: Self) extends AnyVal {
     
     inline def setDense(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

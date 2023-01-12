@@ -18,7 +18,8 @@ object CreateOrganizationRequest {
     __obj.asInstanceOf[CreateOrganizationRequest]
   }
   
-  extension [Self <: CreateOrganizationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOrganizationRequest] (val x: Self) extends AnyVal {
     
     inline def setFeatureSet(value: OrganizationFeatureSet): Self = StObject.set(x, "FeatureSet", value.asInstanceOf[js.Any])
     

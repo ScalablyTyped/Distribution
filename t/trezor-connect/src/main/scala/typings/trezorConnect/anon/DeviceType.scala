@@ -18,7 +18,8 @@ object DeviceType {
     __obj.asInstanceOf[DeviceType]
   }
   
-  extension [Self <: DeviceType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceType] (val x: Self) extends AnyVal {
     
     inline def setDevice(value: typings.trezorConnect.libTypescriptTrezorDeviceMod.Device): Self = StObject.set(x, "device", value.asInstanceOf[js.Any])
     

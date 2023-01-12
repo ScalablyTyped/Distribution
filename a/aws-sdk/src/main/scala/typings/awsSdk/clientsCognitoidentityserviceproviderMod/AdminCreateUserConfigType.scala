@@ -28,7 +28,8 @@ object AdminCreateUserConfigType {
     __obj.asInstanceOf[AdminCreateUserConfigType]
   }
   
-  extension [Self <: AdminCreateUserConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminCreateUserConfigType] (val x: Self) extends AnyVal {
     
     inline def setAllowAdminCreateUserOnly(value: BooleanType): Self = StObject.set(x, "AllowAdminCreateUserOnly", value.asInstanceOf[js.Any])
     

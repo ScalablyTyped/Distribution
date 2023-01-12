@@ -25,7 +25,8 @@ object Isalphanumeric {
     __obj.asInstanceOf[Isalphanumeric]
   }
   
-  extension [Self <: Isalphanumeric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Isalphanumeric] (val x: Self) extends AnyVal {
     
     inline def setIs_alphanumeric(value: Boolean): Self = StObject.set(x, "is_alphanumeric", value.asInstanceOf[js.Any])
     

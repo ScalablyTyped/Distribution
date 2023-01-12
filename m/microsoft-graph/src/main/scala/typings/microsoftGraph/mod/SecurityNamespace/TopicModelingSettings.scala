@@ -35,7 +35,8 @@ object TopicModelingSettings {
     __obj.asInstanceOf[TopicModelingSettings]
   }
   
-  extension [Self <: TopicModelingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicModelingSettings] (val x: Self) extends AnyVal {
     
     inline def setDynamicallyAdjustTopicCount(value: NullableOption[Boolean]): Self = StObject.set(x, "dynamicallyAdjustTopicCount", value.asInstanceOf[js.Any])
     

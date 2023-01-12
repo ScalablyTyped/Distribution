@@ -19,7 +19,8 @@ object ILockingView {
     __obj.asInstanceOf[ILockingView]
   }
   
-  extension [Self <: ILockingView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILockingView] (val x: Self) extends AnyVal {
     
     inline def setIsLockingView(value: Boolean): Self = StObject.set(x, "isLockingView", value.asInstanceOf[js.Any])
     

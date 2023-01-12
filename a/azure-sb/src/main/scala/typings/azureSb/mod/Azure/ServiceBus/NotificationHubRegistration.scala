@@ -36,7 +36,8 @@ object NotificationHubRegistration {
     __obj.asInstanceOf[NotificationHubRegistration]
   }
   
-  extension [Self <: NotificationHubRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationHubRegistration] (val x: Self) extends AnyVal {
     
     inline def setBodyTemplate(value: Any): Self = StObject.set(x, "BodyTemplate", value.asInstanceOf[js.Any])
     

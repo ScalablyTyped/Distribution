@@ -43,7 +43,8 @@ object SearchAvailablePhoneNumbersRequest {
     __obj.asInstanceOf[SearchAvailablePhoneNumbersRequest]
   }
   
-  extension [Self <: SearchAvailablePhoneNumbersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAvailablePhoneNumbersRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResult10): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

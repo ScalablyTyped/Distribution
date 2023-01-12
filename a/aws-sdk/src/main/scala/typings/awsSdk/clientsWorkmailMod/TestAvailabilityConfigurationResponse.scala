@@ -23,7 +23,8 @@ object TestAvailabilityConfigurationResponse {
     __obj.asInstanceOf[TestAvailabilityConfigurationResponse]
   }
   
-  extension [Self <: TestAvailabilityConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestAvailabilityConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: String): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

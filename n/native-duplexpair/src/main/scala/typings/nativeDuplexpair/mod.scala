@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[DuplexPair]
     }
     
-    extension [Self <: DuplexPair](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplexPair] (val x: Self) extends AnyVal {
       
       inline def setSocket1(value: Duplex): Self = StObject.set(x, "socket1", value.asInstanceOf[js.Any])
       

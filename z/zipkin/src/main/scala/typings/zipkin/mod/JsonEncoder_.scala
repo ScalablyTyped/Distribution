@@ -17,7 +17,8 @@ object JsonEncoder_ {
     __obj.asInstanceOf[JsonEncoder_]
   }
   
-  extension [Self <: JsonEncoder_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonEncoder_] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: Span => String): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
   }

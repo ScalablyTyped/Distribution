@@ -23,7 +23,8 @@ object BatchUpdateScheduleResponse {
     __obj.asInstanceOf[BatchUpdateScheduleResponse]
   }
   
-  extension [Self <: BatchUpdateScheduleResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateScheduleResponse] (val x: Self) extends AnyVal {
     
     inline def setCreates(value: BatchScheduleActionCreateResult): Self = StObject.set(x, "Creates", value.asInstanceOf[js.Any])
     

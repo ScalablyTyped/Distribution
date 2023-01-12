@@ -15,7 +15,8 @@ object PlotIkhSenkouSpanAOptions {
     __obj.asInstanceOf[PlotIkhSenkouSpanAOptions]
   }
   
-  extension [Self <: PlotIkhSenkouSpanAOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotIkhSenkouSpanAOptions] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: PlotIkhSenkouSpanAStylesOptions): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
     

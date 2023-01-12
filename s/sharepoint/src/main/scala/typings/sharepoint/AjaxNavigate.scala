@@ -51,7 +51,8 @@ object AjaxNavigate {
     __obj.asInstanceOf[AjaxNavigate]
   }
   
-  extension [Self <: AjaxNavigate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AjaxNavigate] (val x: Self) extends AnyVal {
     
     inline def setAdd_navigate(value: js.Function2[/* obj */ Any, /* eventArgs */ Any, Unit] => Unit): Self = StObject.set(x, "add_navigate", js.Any.fromFunction1(value))
     

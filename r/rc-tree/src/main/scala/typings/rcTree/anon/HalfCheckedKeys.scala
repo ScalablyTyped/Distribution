@@ -18,7 +18,8 @@ object HalfCheckedKeys {
     __obj.asInstanceOf[HalfCheckedKeys]
   }
   
-  extension [Self <: HalfCheckedKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HalfCheckedKeys] (val x: Self) extends AnyVal {
     
     inline def setChecked(value: `false`): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
     

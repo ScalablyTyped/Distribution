@@ -26,7 +26,8 @@ object RetrieveMultipleResult {
     __obj.asInstanceOf[RetrieveMultipleResult]
   }
   
-  extension [Self <: RetrieveMultipleResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetrieveMultipleResult] (val x: Self) extends AnyVal {
     
     inline def setEntities(value: js.Array[Any]): Self = StObject.set(x, "entities", value.asInstanceOf[js.Any])
     

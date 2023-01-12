@@ -35,7 +35,8 @@ object B2xIdentityUserFlow {
     __obj.asInstanceOf[B2xIdentityUserFlow]
   }
   
-  extension [Self <: B2xIdentityUserFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: B2xIdentityUserFlow] (val x: Self) extends AnyVal {
     
     inline def setApiConnectorConfiguration(value: NullableOption[UserFlowApiConnectorConfiguration]): Self = StObject.set(x, "apiConnectorConfiguration", value.asInstanceOf[js.Any])
     

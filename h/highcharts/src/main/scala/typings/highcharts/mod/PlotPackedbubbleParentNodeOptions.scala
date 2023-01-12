@@ -19,7 +19,8 @@ object PlotPackedbubbleParentNodeOptions {
     __obj.asInstanceOf[PlotPackedbubbleParentNodeOptions]
   }
   
-  extension [Self <: PlotPackedbubbleParentNodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotPackedbubbleParentNodeOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowPointSelect(value: Boolean): Self = StObject.set(x, "allowPointSelect", value.asInstanceOf[js.Any])
     

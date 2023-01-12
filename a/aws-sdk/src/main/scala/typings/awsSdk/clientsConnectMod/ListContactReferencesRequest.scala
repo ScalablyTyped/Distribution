@@ -33,7 +33,8 @@ object ListContactReferencesRequest {
     __obj.asInstanceOf[ListContactReferencesRequest]
   }
   
-  extension [Self <: ListContactReferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContactReferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

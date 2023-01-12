@@ -45,7 +45,8 @@ object SnappingControlsProperties {
     __obj.asInstanceOf[SnappingControlsProperties]
   }
   
-  extension [Self <: SnappingControlsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnappingControlsProperties] (val x: Self) extends AnyVal {
     
     inline def setSnappingOptions(value: SnappingOptionsProperties): Self = StObject.set(x, "snappingOptions", value.asInstanceOf[js.Any])
     

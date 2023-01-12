@@ -18,7 +18,8 @@ object ProofSelection {
     __obj.asInstanceOf[ProofSelection]
   }
   
-  extension [Self <: ProofSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProofSelection] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[AttributeChoice]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

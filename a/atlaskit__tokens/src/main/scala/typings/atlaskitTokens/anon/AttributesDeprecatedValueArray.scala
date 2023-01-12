@@ -17,7 +17,8 @@ object AttributesDeprecatedValueArray {
     __obj.asInstanceOf[AttributesDeprecatedValueArray]
   }
   
-  extension [Self <: AttributesDeprecatedValueArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributesDeprecatedValueArray] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Deprecated): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

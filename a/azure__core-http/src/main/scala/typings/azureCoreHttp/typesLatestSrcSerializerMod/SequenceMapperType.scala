@@ -26,7 +26,8 @@ object SequenceMapperType {
     __obj.asInstanceOf[SequenceMapperType]
   }
   
-  extension [Self <: SequenceMapperType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceMapperType] (val x: Self) extends AnyVal {
     
     inline def setElement(value: Mapper): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

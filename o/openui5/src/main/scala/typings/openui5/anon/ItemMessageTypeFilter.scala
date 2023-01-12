@@ -27,7 +27,8 @@ object ItemMessageTypeFilter {
     __obj.asInstanceOf[ItemMessageTypeFilter]
   }
   
-  extension [Self <: ItemMessageTypeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemMessageTypeFilter] (val x: Self) extends AnyVal {
     
     inline def setItem(value: default): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

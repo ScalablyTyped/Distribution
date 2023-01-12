@@ -35,7 +35,8 @@ object IGotoLocationOptions {
     __obj.asInstanceOf[IGotoLocationOptions]
   }
   
-  extension [Self <: IGotoLocationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGotoLocationOptions] (val x: Self) extends AnyVal {
     
     inline def setAlternativeDeclarationCommand(value: String): Self = StObject.set(x, "alternativeDeclarationCommand", value.asInstanceOf[js.Any])
     

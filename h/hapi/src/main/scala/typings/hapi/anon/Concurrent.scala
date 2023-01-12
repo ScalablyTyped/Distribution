@@ -35,7 +35,8 @@ object Concurrent {
     __obj.asInstanceOf[Concurrent]
   }
   
-  extension [Self <: Concurrent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Concurrent] (val x: Self) extends AnyVal {
     
     inline def setConcurrent(value: Double): Self = StObject.set(x, "concurrent", value.asInstanceOf[js.Any])
     

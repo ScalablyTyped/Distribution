@@ -35,7 +35,8 @@ object distModuleCacheMod {
       __obj.asInstanceOf[ModuleCache]
     }
     
-    extension [Self <: ModuleCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleCache] (val x: Self) extends AnyVal {
       
       inline def setAlreadySeenForChunk(value: (String, String) => Boolean): Self = StObject.set(x, "alreadySeenForChunk", js.Any.fromFunction2(value))
       

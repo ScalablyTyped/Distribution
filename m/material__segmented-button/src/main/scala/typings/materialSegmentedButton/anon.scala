@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSegmentedButton]
     }
     
-    extension [Self <: PartialMDCSegmentedButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSegmentedButton] (val x: Self) extends AnyVal {
       
       inline def setGetSegments(value: () => js.Array[SegmentDetail]): Self = StObject.set(x, "getSegments", js.Any.fromFunction0(value))
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCSegmentedButtonAddClass]
     }
     
-    extension [Self <: PartialMDCSegmentedButtonAddClass](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCSegmentedButtonAddClass] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

@@ -18,7 +18,8 @@ object DescribeReturnShippingLabelRequest {
     __obj.asInstanceOf[DescribeReturnShippingLabelRequest]
   }
   
-  extension [Self <: DescribeReturnShippingLabelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReturnShippingLabelRequest] (val x: Self) extends AnyVal {
     
     inline def setJobId(value: JobId): Self = StObject.set(x, "JobId", value.asInstanceOf[js.Any])
   }

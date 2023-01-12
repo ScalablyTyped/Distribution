@@ -19,7 +19,8 @@ object StateCondition {
     __obj.asInstanceOf[StateCondition]
   }
   
-  extension [Self <: StateCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateCondition] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

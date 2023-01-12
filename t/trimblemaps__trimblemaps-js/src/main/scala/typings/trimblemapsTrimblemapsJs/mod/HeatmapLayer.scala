@@ -27,7 +27,8 @@ object HeatmapLayer {
     __obj.asInstanceOf[HeatmapLayer]
   }
   
-  extension [Self <: HeatmapLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeatmapLayer] (val x: Self) extends AnyVal {
     
     inline def setLayout(value: HeatmapLayout): Self = StObject.set(x, "layout", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object UpgradePublishedSchemaRequest {
     __obj.asInstanceOf[UpgradePublishedSchemaRequest]
   }
   
-  extension [Self <: UpgradePublishedSchemaRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradePublishedSchemaRequest] (val x: Self) extends AnyVal {
     
     inline def setDevelopmentSchemaArn(value: Arn): Self = StObject.set(x, "DevelopmentSchemaArn", value.asInstanceOf[js.Any])
     

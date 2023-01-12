@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[ReactShowMoreProps]
     }
     
-    extension [Self <: ReactShowMoreProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactShowMoreProps] (val x: Self) extends AnyVal {
       
       inline def setAnchorClass(value: String): Self = StObject.set(x, "anchorClass", value.asInstanceOf[js.Any])
       

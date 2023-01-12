@@ -47,7 +47,8 @@ object ASPxClientMediaFileSelector {
     __obj.asInstanceOf[ASPxClientMediaFileSelector]
   }
   
-  extension [Self <: ASPxClientMediaFileSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientMediaFileSelector] (val x: Self) extends AnyVal {
     
     inline def setGetUrl(value: () => String): Self = StObject.set(x, "GetUrl", js.Any.fromFunction0(value))
     

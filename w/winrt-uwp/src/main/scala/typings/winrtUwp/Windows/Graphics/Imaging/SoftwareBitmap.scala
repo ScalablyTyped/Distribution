@@ -84,7 +84,8 @@ object SoftwareBitmap {
     __obj.asInstanceOf[SoftwareBitmap]
   }
   
-  extension [Self <: SoftwareBitmap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SoftwareBitmap] (val x: Self) extends AnyVal {
     
     inline def setBitmapAlphaMode(value: BitmapAlphaMode): Self = StObject.set(x, "bitmapAlphaMode", value.asInstanceOf[js.Any])
     

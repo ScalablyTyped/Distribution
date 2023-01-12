@@ -23,7 +23,8 @@ object CacheBehaviorPerPath {
     __obj.asInstanceOf[CacheBehaviorPerPath]
   }
   
-  extension [Self <: CacheBehaviorPerPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheBehaviorPerPath] (val x: Self) extends AnyVal {
     
     inline def setBehavior(value: BehaviorEnum): Self = StObject.set(x, "behavior", value.asInstanceOf[js.Any])
     

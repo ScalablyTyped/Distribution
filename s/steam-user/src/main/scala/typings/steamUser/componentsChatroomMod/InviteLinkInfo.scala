@@ -25,7 +25,8 @@ object InviteLinkInfo {
     __obj.asInstanceOf[InviteLinkInfo]
   }
   
-  extension [Self <: InviteLinkInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InviteLinkInfo] (val x: Self) extends AnyVal {
     
     inline def setBanned(value: Boolean): Self = StObject.set(x, "banned", value.asInstanceOf[js.Any])
     

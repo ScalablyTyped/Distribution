@@ -60,7 +60,8 @@ object RenderContextcodeGenerati {
     __obj.asInstanceOf[RenderContextcodeGenerati]
   }
   
-  extension [Self <: RenderContextcodeGenerati](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextcodeGenerati] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: typings.webpack.mod.Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

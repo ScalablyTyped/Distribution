@@ -131,7 +131,8 @@ object OmitCalendarSvgPropsheigh {
     __obj.asInstanceOf[OmitCalendarSvgPropsheigh]
   }
   
-  extension [Self <: OmitCalendarSvgPropsheigh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitCalendarSvgPropsheigh] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

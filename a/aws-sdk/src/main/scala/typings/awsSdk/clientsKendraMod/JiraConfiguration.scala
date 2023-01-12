@@ -88,7 +88,8 @@ object JiraConfiguration {
     __obj.asInstanceOf[JiraConfiguration]
   }
   
-  extension [Self <: JiraConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JiraConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAttachmentFieldMappings(value: DataSourceToIndexFieldMappingList): Self = StObject.set(x, "AttachmentFieldMappings", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ThemeTypePropertiesType {
     __obj.asInstanceOf[ThemeTypePropertiesType]
   }
   
-  extension [Self <: ThemeTypePropertiesType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeTypePropertiesType] (val x: Self) extends AnyVal {
     
     inline def setAdditional_backgrounds_alignment(value: js.Array[ThemeTypePropertiesAdditionalBackgroundsAlignmentItemEnum]): Self = StObject.set(x, "additional_backgrounds_alignment", value.asInstanceOf[js.Any])
     

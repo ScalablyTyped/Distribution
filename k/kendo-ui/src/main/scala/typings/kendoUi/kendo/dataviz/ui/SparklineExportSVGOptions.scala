@@ -15,7 +15,8 @@ object SparklineExportSVGOptions {
     __obj.asInstanceOf[SparklineExportSVGOptions]
   }
   
-  extension [Self <: SparklineExportSVGOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SparklineExportSVGOptions] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: Boolean): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

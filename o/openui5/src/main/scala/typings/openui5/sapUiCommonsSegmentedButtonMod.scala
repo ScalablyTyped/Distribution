@@ -413,7 +413,8 @@ object sapUiCommonsSegmentedButtonMod {
       __obj.asInstanceOf[SegmentedButtonSettings]
     }
     
-    extension [Self <: SegmentedButtonSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedButtonSettings] (val x: Self) extends AnyVal {
       
       inline def setButtons(
         value: js.Array[typings.openui5.sapUiCommonsButtonMod.default] | typings.openui5.sapUiCommonsButtonMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

@@ -265,7 +265,8 @@ object IXMLDOMDocument {
     __obj.asInstanceOf[IXMLDOMDocument]
   }
   
-  extension [Self <: IXMLDOMDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXMLDOMDocument] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

@@ -48,7 +48,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setCell(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify InkComponent */ Any

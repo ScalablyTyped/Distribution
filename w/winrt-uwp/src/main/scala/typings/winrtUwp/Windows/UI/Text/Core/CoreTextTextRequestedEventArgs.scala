@@ -17,7 +17,8 @@ object CoreTextTextRequestedEventArgs {
     __obj.asInstanceOf[CoreTextTextRequestedEventArgs]
   }
   
-  extension [Self <: CoreTextTextRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreTextTextRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: CoreTextTextRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

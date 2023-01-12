@@ -51,7 +51,8 @@ object IPersonaProps {
     __obj.asInstanceOf[IPersonaProps]
   }
   
-  extension [Self <: IPersonaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPersonaProps] (val x: Self) extends AnyVal {
     
     inline def setComponentRef(value: IRefObject[IPersona]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     

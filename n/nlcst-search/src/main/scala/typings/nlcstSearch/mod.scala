@@ -59,7 +59,8 @@ object mod {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowLiterals(value: Boolean): Self = StObject.set(x, "allowLiterals", value.asInstanceOf[js.Any])
       

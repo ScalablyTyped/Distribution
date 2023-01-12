@@ -56,7 +56,8 @@ object XFrameLoaderQuery {
     __obj.asInstanceOf[XFrameLoaderQuery]
   }
   
-  extension [Self <: XFrameLoaderQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFrameLoaderQuery] (val x: Self) extends AnyVal {
     
     inline def setAvailableFilterNames(value: SafeArray[String]): Self = StObject.set(x, "AvailableFilterNames", value.asInstanceOf[js.Any])
     

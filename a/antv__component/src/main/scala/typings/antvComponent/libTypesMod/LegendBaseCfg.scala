@@ -46,7 +46,8 @@ object LegendBaseCfg {
     __obj.asInstanceOf[LegendBaseCfg]
   }
   
-  extension [Self <: LegendBaseCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegendBaseCfg] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: LegendBackgroundCfg): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

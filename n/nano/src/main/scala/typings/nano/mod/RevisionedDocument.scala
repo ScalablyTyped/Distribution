@@ -15,7 +15,8 @@ object RevisionedDocument {
     __obj.asInstanceOf[RevisionedDocument]
   }
   
-  extension [Self <: RevisionedDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevisionedDocument] (val x: Self) extends AnyVal {
     
     inline def set_rev(value: String): Self = StObject.set(x, "_rev", value.asInstanceOf[js.Any])
   }

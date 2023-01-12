@@ -50,7 +50,8 @@ object ConnectedOrganization {
     __obj.asInstanceOf[ConnectedOrganization]
   }
   
-  extension [Self <: ConnectedOrganization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedOrganization] (val x: Self) extends AnyVal {
     
     inline def setCreatedDateTime(value: NullableOption[String]): Self = StObject.set(x, "createdDateTime", value.asInstanceOf[js.Any])
     

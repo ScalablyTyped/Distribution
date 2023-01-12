@@ -16,7 +16,8 @@ object BatchApprovePublisherConnectionsResponse {
     __obj.asInstanceOf[BatchApprovePublisherConnectionsResponse]
   }
   
-  extension [Self <: BatchApprovePublisherConnectionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchApprovePublisherConnectionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPublisherConnections(value: js.Array[PublisherConnection]): Self = StObject.set(x, "publisherConnections", value.asInstanceOf[js.Any])
     

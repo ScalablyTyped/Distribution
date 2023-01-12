@@ -51,7 +51,8 @@ object distTypesAuthMod {
       __obj.asInstanceOf[AuthScheme]
     }
     
-    extension [Self <: AuthScheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthScheme] (val x: Self) extends AnyVal {
       
       inline def setName(value: sigv4 | sigv4a | String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

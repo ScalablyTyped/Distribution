@@ -38,7 +38,8 @@ object OutlierDetection {
     __obj.asInstanceOf[OutlierDetection]
   }
   
-  extension [Self <: OutlierDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlierDetection] (val x: Self) extends AnyVal {
     
     inline def setBaseEjectionDuration(value: Duration): Self = StObject.set(x, "baseEjectionDuration", value.asInstanceOf[js.Any])
     

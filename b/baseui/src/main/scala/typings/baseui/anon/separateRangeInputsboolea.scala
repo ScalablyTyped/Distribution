@@ -102,7 +102,8 @@ object separateRangeInputsboolea {
     __obj.asInstanceOf[separateRangeInputsboolea]
   }
   
-  extension [Self <: separateRangeInputsboolea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: separateRangeInputsboolea] (val x: Self) extends AnyVal {
     
     inline def set$date(value: Any): Self = StObject.set(x, "$date", value.asInstanceOf[js.Any])
     

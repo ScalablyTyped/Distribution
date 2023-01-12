@@ -194,7 +194,8 @@ object ResourceStrings {
     __obj.asInstanceOf[ResourceStrings]
   }
   
-  extension [Self <: ResourceStrings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceStrings] (val x: Self) extends AnyVal {
     
     inline def setArgumentExceptionMessage(value: String): Self = StObject.set(x, "argumentExceptionMessage", value.asInstanceOf[js.Any])
     

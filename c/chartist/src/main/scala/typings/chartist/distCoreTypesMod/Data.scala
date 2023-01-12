@@ -17,7 +17,8 @@ object Data {
     __obj.asInstanceOf[Data[T]]
   }
   
-  extension [Self <: Data[?], T /* <: AllSeriesTypes */](x: Self & Data[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Data[?], T /* <: AllSeriesTypes */] (val x: Self & Data[T]) extends AnyVal {
     
     inline def setLabels(value: js.Array[Label]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

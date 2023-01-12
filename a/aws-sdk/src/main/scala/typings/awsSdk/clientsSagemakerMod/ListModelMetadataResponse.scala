@@ -23,7 +23,8 @@ object ListModelMetadataResponse {
     __obj.asInstanceOf[ListModelMetadataResponse]
   }
   
-  extension [Self <: ListModelMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListModelMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setModelMetadataSummaries(value: ModelMetadataSummaries): Self = StObject.set(x, "ModelMetadataSummaries", value.asInstanceOf[js.Any])
     

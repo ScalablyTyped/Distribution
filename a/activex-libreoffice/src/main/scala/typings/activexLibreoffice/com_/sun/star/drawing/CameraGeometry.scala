@@ -23,7 +23,8 @@ object CameraGeometry {
     __obj.asInstanceOf[CameraGeometry]
   }
   
-  extension [Self <: CameraGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CameraGeometry] (val x: Self) extends AnyVal {
     
     inline def setVpn(value: Direction3D): Self = StObject.set(x, "vpn", value.asInstanceOf[js.Any])
     

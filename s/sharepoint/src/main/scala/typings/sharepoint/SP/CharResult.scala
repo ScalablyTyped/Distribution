@@ -15,7 +15,8 @@ object CharResult {
     __obj.asInstanceOf[CharResult]
   }
   
-  extension [Self <: CharResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharResult] (val x: Self) extends AnyVal {
     
     inline def setGet_value(value: () => Any): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))
   }

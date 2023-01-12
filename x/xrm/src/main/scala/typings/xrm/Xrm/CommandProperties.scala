@@ -51,7 +51,8 @@ object CommandProperties {
     __obj.asInstanceOf[CommandProperties]
   }
   
-  extension [Self <: CommandProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandProperties] (val x: Self) extends AnyVal {
     
     inline def setCommandValueId(value: String): Self = StObject.set(x, "CommandValueId", value.asInstanceOf[js.Any])
     

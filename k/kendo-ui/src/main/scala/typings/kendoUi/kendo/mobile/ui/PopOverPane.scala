@@ -21,7 +21,8 @@ object PopOverPane {
     __obj.asInstanceOf[PopOverPane]
   }
   
-  extension [Self <: PopOverPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopOverPane] (val x: Self) extends AnyVal {
     
     inline def setInitial(value: String): Self = StObject.set(x, "initial", value.asInstanceOf[js.Any])
     

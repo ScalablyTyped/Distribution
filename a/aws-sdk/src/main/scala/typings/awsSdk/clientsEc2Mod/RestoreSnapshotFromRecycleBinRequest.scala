@@ -23,7 +23,8 @@ object RestoreSnapshotFromRecycleBinRequest {
     __obj.asInstanceOf[RestoreSnapshotFromRecycleBinRequest]
   }
   
-  extension [Self <: RestoreSnapshotFromRecycleBinRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreSnapshotFromRecycleBinRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[PartialServerRouteReqRefD]
     }
     
-    extension [Self <: PartialServerRouteReqRefD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialServerRouteReqRefD] (val x: Self) extends AnyVal {
       
       inline def setHandler(value: (Method[ReqRefDefaults, ReturnValue[ReqRefDefaults]]) | HandlerDecorations): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
       

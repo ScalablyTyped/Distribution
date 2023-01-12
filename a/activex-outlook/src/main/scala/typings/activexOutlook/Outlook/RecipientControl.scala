@@ -37,7 +37,8 @@ object RecipientControl {
     __obj.asInstanceOf[RecipientControl]
   }
   
-  extension [Self <: RecipientControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientControl] (val x: Self) extends AnyVal {
     
     inline def setBackColor(value: Double): Self = StObject.set(x, "BackColor", value.asInstanceOf[js.Any])
     

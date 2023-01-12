@@ -23,7 +23,8 @@ object ExistsTypeAnnotation_ {
     __obj.asInstanceOf[ExistsTypeAnnotation_]
   }
   
-  extension [Self <: ExistsTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExistsTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: ExistsTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

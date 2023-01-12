@@ -21,7 +21,8 @@ object typesSubnetIPAddressLimitReachedExceptionMod {
       __obj.asInstanceOf[SubnetIPAddressLimitReachedException]
     }
     
-    extension [Self <: SubnetIPAddressLimitReachedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubnetIPAddressLimitReachedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.SubnetIPAddressLimitReachedException
@@ -48,7 +49,8 @@ object typesSubnetIPAddressLimitReachedExceptionMod {
       __obj.asInstanceOf[SubnetIPAddressLimitReachedExceptionDetails]
     }
     
-    extension [Self <: SubnetIPAddressLimitReachedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubnetIPAddressLimitReachedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
       

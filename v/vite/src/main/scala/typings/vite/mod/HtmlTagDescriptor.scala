@@ -29,7 +29,8 @@ object HtmlTagDescriptor {
     __obj.asInstanceOf[HtmlTagDescriptor]
   }
   
-  extension [Self <: HtmlTagDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlTagDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Record[String, js.UndefOr[String | Boolean]]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

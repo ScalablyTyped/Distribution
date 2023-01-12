@@ -47,7 +47,8 @@ object DataViewTreeNode {
     __obj.asInstanceOf[DataViewTreeNode]
   }
   
-  extension [Self <: DataViewTreeNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewTreeNode] (val x: Self) extends AnyVal {
     
     inline def setChildIdentityFields(value: js.Array[ISQExpr]): Self = StObject.set(x, "childIdentityFields", value.asInstanceOf[js.Any])
     

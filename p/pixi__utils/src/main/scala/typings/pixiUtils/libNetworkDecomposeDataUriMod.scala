@@ -31,7 +31,8 @@ object libNetworkDecomposeDataUriMod {
       __obj.asInstanceOf[DecomposedDataUri]
     }
     
-    extension [Self <: DecomposedDataUri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecomposedDataUri] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       

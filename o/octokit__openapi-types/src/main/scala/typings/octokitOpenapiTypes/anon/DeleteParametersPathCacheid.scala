@@ -22,7 +22,8 @@ object DeleteParametersPathCacheid {
     __obj.asInstanceOf[DeleteParametersPathCacheid]
   }
   
-  extension [Self <: DeleteParametersPathCacheid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteParametersPathCacheid] (val x: Self) extends AnyVal {
     
     inline def setDelete(value: ParametersPathCacheid): Self = StObject.set(x, "delete", value.asInstanceOf[js.Any])
   }

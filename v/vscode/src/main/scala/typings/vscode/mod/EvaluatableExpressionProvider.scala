@@ -28,7 +28,8 @@ object EvaluatableExpressionProvider {
     __obj.asInstanceOf[EvaluatableExpressionProvider]
   }
   
-  extension [Self <: EvaluatableExpressionProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EvaluatableExpressionProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideEvaluatableExpression(value: (TextDocument, Position, CancellationToken) => ProviderResult[EvaluatableExpression]): Self = StObject.set(x, "provideEvaluatableExpression", js.Any.fromFunction3(value))
   }

@@ -18,7 +18,8 @@ object DeleteMatchmakingConfigurationInput {
     __obj.asInstanceOf[DeleteMatchmakingConfigurationInput]
   }
   
-  extension [Self <: DeleteMatchmakingConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMatchmakingConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: MatchmakingConfigurationName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

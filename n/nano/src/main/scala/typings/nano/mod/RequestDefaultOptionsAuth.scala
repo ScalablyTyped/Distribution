@@ -18,7 +18,8 @@ object RequestDefaultOptionsAuth {
     __obj.asInstanceOf[RequestDefaultOptionsAuth]
   }
   
-  extension [Self <: RequestDefaultOptionsAuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestDefaultOptionsAuth] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

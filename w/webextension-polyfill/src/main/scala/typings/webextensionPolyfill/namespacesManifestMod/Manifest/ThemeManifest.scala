@@ -41,7 +41,8 @@ object ThemeManifest {
     __obj.asInstanceOf[ThemeManifest]
   }
   
-  extension [Self <: ThemeManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeManifest] (val x: Self) extends AnyVal {
     
     inline def setDark_theme(value: ThemeType): Self = StObject.set(x, "dark_theme", value.asInstanceOf[js.Any])
     

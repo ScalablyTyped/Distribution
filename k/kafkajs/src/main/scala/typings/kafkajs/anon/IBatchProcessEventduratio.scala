@@ -42,7 +42,8 @@ object IBatchProcessEventduratio {
     __obj.asInstanceOf[IBatchProcessEventduratio]
   }
   
-  extension [Self <: IBatchProcessEventduratio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchProcessEventduratio] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object UpdateTaskTemplateRequest {
     __obj.asInstanceOf[UpdateTaskTemplateRequest]
   }
   
-  extension [Self <: UpdateTaskTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTaskTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setConstraints(value: TaskTemplateConstraints): Self = StObject.set(x, "Constraints", value.asInstanceOf[js.Any])
     

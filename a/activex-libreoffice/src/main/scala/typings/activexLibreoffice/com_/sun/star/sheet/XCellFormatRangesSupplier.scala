@@ -49,7 +49,8 @@ object XCellFormatRangesSupplier {
     __obj.asInstanceOf[XCellFormatRangesSupplier]
   }
   
-  extension [Self <: XCellFormatRangesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCellFormatRangesSupplier] (val x: Self) extends AnyVal {
     
     inline def setCellFormatRanges(value: XIndexAccess): Self = StObject.set(x, "CellFormatRanges", value.asInstanceOf[js.Any])
     

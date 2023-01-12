@@ -54,7 +54,8 @@ object SheetInfo {
     __obj.asInstanceOf[SheetInfo]
   }
   
-  extension [Self <: SheetInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetInfo] (val x: Self) extends AnyVal {
     
     inline def setGetIndex(value: () => Double): Self = StObject.set(x, "getIndex", js.Any.fromFunction0(value))
     

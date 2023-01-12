@@ -27,7 +27,8 @@ object MediaBrowserComment {
     __obj.asInstanceOf[MediaBrowserComment]
   }
   
-  extension [Self <: MediaBrowserComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaBrowserComment] (val x: Self) extends AnyVal {
     
     inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     

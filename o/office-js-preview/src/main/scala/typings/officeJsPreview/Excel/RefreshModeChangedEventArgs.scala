@@ -68,7 +68,8 @@ object RefreshModeChangedEventArgs {
     __obj.asInstanceOf[RefreshModeChangedEventArgs]
   }
   
-  extension [Self <: RefreshModeChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshModeChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRefreshMode(value: LinkedDataTypeRefreshMode | Unknown_ | Manual | OnLoad | Periodic): Self = StObject.set(x, "refreshMode", value.asInstanceOf[js.Any])
     

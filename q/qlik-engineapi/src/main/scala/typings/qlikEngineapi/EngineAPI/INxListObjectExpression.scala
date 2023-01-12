@@ -27,7 +27,8 @@ object INxListObjectExpression {
     __obj.asInstanceOf[INxListObjectExpression]
   }
   
-  extension [Self <: INxListObjectExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxListObjectExpression] (val x: Self) extends AnyVal {
     
     inline def setQError(value: INxLayoutErrors): Self = StObject.set(x, "qError", value.asInstanceOf[js.Any])
     

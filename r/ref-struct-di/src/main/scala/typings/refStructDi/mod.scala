@@ -46,7 +46,8 @@ object mod {
       __obj.asInstanceOf[Field[T]]
     }
     
-    extension [Self <: Field[?], T](x: Self & Field[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Field[?], T] (val x: Self & Field[T]) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[RefModuleLike]
     }
     
-    extension [Self <: RefModuleLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefModuleLike] (val x: Self) extends AnyVal {
       
       inline def setAlignof(value: AlignofRegistry): Self = StObject.set(x, "alignof", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object mod {
       __obj.asInstanceOf[StructObjectBase]
     }
     
-    extension [Self <: StructObjectBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StructObjectBase] (val x: Self) extends AnyVal {
       
       inline def setInspect(value: () => String): Self = StObject.set(x, "inspect", js.Any.fromFunction0(value))
       

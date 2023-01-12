@@ -41,7 +41,8 @@ object ColorRampStop {
     __obj.asInstanceOf[ColorRampStop]
   }
   
-  extension [Self <: ColorRampStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorRampStop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

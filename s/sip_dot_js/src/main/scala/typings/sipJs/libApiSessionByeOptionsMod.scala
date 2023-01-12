@@ -23,7 +23,8 @@ object libApiSessionByeOptionsMod {
       __obj.asInstanceOf[SessionByeOptions]
     }
     
-    extension [Self <: SessionByeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionByeOptions] (val x: Self) extends AnyVal {
       
       inline def setRequestDelegate(value: OutgoingRequestDelegate): Self = StObject.set(x, "requestDelegate", value.asInstanceOf[js.Any])
       

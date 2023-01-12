@@ -53,7 +53,8 @@ object ServiceQuotaIncreaseRequestInTemplate {
     __obj.asInstanceOf[ServiceQuotaIncreaseRequestInTemplate]
   }
   
-  extension [Self <: ServiceQuotaIncreaseRequestInTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceQuotaIncreaseRequestInTemplate] (val x: Self) extends AnyVal {
     
     inline def setAwsRegion(value: AwsRegion): Self = StObject.set(x, "AwsRegion", value.asInstanceOf[js.Any])
     

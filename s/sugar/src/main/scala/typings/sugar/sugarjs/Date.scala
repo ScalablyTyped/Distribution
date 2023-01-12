@@ -1548,7 +1548,8 @@ object Date {
       __obj.asInstanceOf[DateCreateOptions]
     }
     
-    extension [Self <: DateCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setClone_(value: Boolean): Self = StObject.set(x, "clone", value.asInstanceOf[js.Any])
       
@@ -1591,7 +1592,8 @@ object Date {
       __obj.asInstanceOf[DateOptions]
     }
     
-    extension [Self <: DateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateOptions] (val x: Self) extends AnyVal {
       
       inline def setNewDateInternal(value: typings.sugar.Function): Self = StObject.set(x, "newDateInternal", value.asInstanceOf[js.Any])
     }

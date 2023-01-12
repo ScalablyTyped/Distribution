@@ -38,7 +38,8 @@ object GitImportRequestParameters {
     __obj.asInstanceOf[GitImportRequestParameters]
   }
   
-  extension [Self <: GitImportRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitImportRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setDeleteServiceEndpointAfterImportIsDone(value: Boolean): Self = StObject.set(x, "deleteServiceEndpointAfterImportIsDone", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Token {
     __obj.asInstanceOf[Token]
   }
   
-  extension [Self <: Token](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Token] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: Map[String, String]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

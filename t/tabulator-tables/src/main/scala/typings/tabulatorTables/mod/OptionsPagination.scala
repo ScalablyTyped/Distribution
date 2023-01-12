@@ -76,7 +76,8 @@ object OptionsPagination {
     __obj.asInstanceOf[OptionsPagination]
   }
   
-  extension [Self <: OptionsPagination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPagination] (val x: Self) extends AnyVal {
     
     inline def setDataReceiveParams(value: Record[String, String]): Self = StObject.set(x, "dataReceiveParams", value.asInstanceOf[js.Any])
     

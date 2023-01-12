@@ -30,7 +30,8 @@ object CIMGeometricEffectScale {
     __obj.asInstanceOf[CIMGeometricEffectScale]
   }
   
-  extension [Self <: CIMGeometricEffectScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMGeometricEffectScale] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectScale): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

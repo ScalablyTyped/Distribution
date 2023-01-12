@@ -42,7 +42,8 @@ object IgColorPicker {
     __obj.asInstanceOf[IgColorPicker]
   }
   
-  extension [Self <: IgColorPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgColorPicker] (val x: Self) extends AnyVal {
     
     inline def setColorSelected(value: (/* event */ Event, /* ui */ ColorSelectedEventUIParam) => Unit): Self = StObject.set(x, "colorSelected", js.Any.fromFunction2(value))
     

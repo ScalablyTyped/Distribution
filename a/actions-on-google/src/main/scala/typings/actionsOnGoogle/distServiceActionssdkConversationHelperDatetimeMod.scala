@@ -37,7 +37,8 @@ object distServiceActionssdkConversationHelperDatetimeMod {
       __obj.asInstanceOf[DateTimeOptions]
     }
     
-    extension [Self <: DateTimeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeOptions] (val x: Self) extends AnyVal {
       
       inline def setPrompts(value: DateTimeOptionsPrompts): Self = StObject.set(x, "prompts", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object distServiceActionssdkConversationHelperDatetimeMod {
       __obj.asInstanceOf[DateTimeOptionsPrompts]
     }
     
-    extension [Self <: DateTimeOptionsPrompts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateTimeOptionsPrompts] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       

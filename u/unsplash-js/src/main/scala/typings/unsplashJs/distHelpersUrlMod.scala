@@ -29,7 +29,8 @@ object distHelpersUrlMod {
       __obj.asInstanceOf[BuildUrlParams]
     }
     
-    extension [Self <: BuildUrlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildUrlParams] (val x: Self) extends AnyVal {
       
       inline def setPathname(value: String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       

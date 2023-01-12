@@ -43,7 +43,8 @@ object StartFHIRExportJobRequest {
     __obj.asInstanceOf[StartFHIRExportJobRequest]
   }
   
-  extension [Self <: StartFHIRExportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartFHIRExportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientTokenString): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

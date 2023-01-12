@@ -19,7 +19,8 @@ object IErrorTranslateArgs {
     __obj.asInstanceOf[IErrorTranslateArgs]
   }
   
-  extension [Self <: IErrorTranslateArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IErrorTranslateArgs] (val x: Self) extends AnyVal {
     
     inline def setCustomMessage(value: (/* config */ Any, /* args */ Any) => String): Self = StObject.set(x, "CustomMessage", js.Any.fromFunction2(value))
     

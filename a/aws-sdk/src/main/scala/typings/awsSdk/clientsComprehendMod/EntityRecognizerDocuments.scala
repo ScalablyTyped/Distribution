@@ -28,7 +28,8 @@ object EntityRecognizerDocuments {
     __obj.asInstanceOf[EntityRecognizerDocuments]
   }
   
-  extension [Self <: EntityRecognizerDocuments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityRecognizerDocuments] (val x: Self) extends AnyVal {
     
     inline def setInputFormat(value: InputFormat): Self = StObject.set(x, "InputFormat", value.asInstanceOf[js.Any])
     

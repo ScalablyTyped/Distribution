@@ -22,7 +22,8 @@ object TransactionOptions {
     __obj.asInstanceOf[TransactionOptions]
   }
   
-  extension [Self <: TransactionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxCommitTimeMS(value: scala.Double): Self = StObject.set(x, "maxCommitTimeMS", value.asInstanceOf[js.Any])
     

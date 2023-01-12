@@ -33,7 +33,8 @@ object TypedAttributeValueRange {
     __obj.asInstanceOf[TypedAttributeValueRange]
   }
   
-  extension [Self <: TypedAttributeValueRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedAttributeValueRange] (val x: Self) extends AnyVal {
     
     inline def setEndMode(value: RangeMode): Self = StObject.set(x, "EndMode", value.asInstanceOf[js.Any])
     

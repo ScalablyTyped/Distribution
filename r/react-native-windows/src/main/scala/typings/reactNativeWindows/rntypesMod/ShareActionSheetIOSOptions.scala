@@ -24,7 +24,8 @@ object ShareActionSheetIOSOptions {
     __obj.asInstanceOf[ShareActionSheetIOSOptions]
   }
   
-  extension [Self <: ShareActionSheetIOSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareActionSheetIOSOptions] (val x: Self) extends AnyVal {
     
     inline def setExcludedActivityTypes(value: js.Array[String]): Self = StObject.set(x, "excludedActivityTypes", value.asInstanceOf[js.Any])
     

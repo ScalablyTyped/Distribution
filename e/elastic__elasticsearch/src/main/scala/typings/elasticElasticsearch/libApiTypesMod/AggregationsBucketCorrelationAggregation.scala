@@ -17,7 +17,8 @@ object AggregationsBucketCorrelationAggregation {
     __obj.asInstanceOf[AggregationsBucketCorrelationAggregation]
   }
   
-  extension [Self <: AggregationsBucketCorrelationAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBucketCorrelationAggregation] (val x: Self) extends AnyVal {
     
     inline def setFunction(value: AggregationsBucketCorrelationFunction): Self = StObject.set(x, "function", value.asInstanceOf[js.Any])
   }

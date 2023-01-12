@@ -18,7 +18,8 @@ object S3OutputUrl {
     __obj.asInstanceOf[S3OutputUrl]
   }
   
-  extension [Self <: S3OutputUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3OutputUrl] (val x: Self) extends AnyVal {
     
     inline def setOutputUrl(value: Url): Self = StObject.set(x, "OutputUrl", value.asInstanceOf[js.Any])
     

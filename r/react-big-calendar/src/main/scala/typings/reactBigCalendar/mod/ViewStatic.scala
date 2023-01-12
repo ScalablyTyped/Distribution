@@ -17,7 +17,8 @@ object ViewStatic {
     __obj.asInstanceOf[ViewStatic]
   }
   
-  extension [Self <: ViewStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewStatic] (val x: Self) extends AnyVal {
     
     inline def setNavigate(value: (js.Date, NavigateAction, Any) => js.Date): Self = StObject.set(x, "navigate", js.Any.fromFunction3(value))
     

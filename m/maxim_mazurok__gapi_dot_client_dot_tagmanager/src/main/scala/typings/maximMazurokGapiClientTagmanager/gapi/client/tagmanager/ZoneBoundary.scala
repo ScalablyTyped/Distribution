@@ -19,7 +19,8 @@ object ZoneBoundary {
     __obj.asInstanceOf[ZoneBoundary]
   }
   
-  extension [Self <: ZoneBoundary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneBoundary] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: js.Array[Condition]): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

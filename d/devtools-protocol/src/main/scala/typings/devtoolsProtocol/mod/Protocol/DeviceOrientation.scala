@@ -30,7 +30,8 @@ object DeviceOrientation {
       __obj.asInstanceOf[SetDeviceOrientationOverrideRequest]
     }
     
-    extension [Self <: SetDeviceOrientationOverrideRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDeviceOrientationOverrideRequest] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

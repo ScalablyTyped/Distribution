@@ -30,7 +30,8 @@ object GetAppManifestResponse {
     __obj.asInstanceOf[GetAppManifestResponse]
   }
   
-  extension [Self <: GetAppManifestResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppManifestResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

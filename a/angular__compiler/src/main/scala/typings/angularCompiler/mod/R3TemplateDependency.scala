@@ -21,7 +21,8 @@ object R3TemplateDependency {
     __obj.asInstanceOf[R3TemplateDependency]
   }
   
-  extension [Self <: R3TemplateDependency](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3TemplateDependency] (val x: Self) extends AnyVal {
     
     inline def setKind(value: R3TemplateDependencyKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -53,7 +53,8 @@ object libBodyMod extends Shortcut {
       __obj.asInstanceOf[BodyProps[RecordType]]
     }
     
-    extension [Self <: BodyProps[?], RecordType](x: Self & BodyProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BodyProps[?], RecordType] (val x: Self & BodyProps[RecordType]) extends AnyVal {
       
       inline def setChildrenColumnName(value: String): Self = StObject.set(x, "childrenColumnName", value.asInstanceOf[js.Any])
       

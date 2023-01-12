@@ -28,7 +28,8 @@ object LargeTimestampGaps {
     __obj.asInstanceOf[LargeTimestampGaps]
   }
   
-  extension [Self <: LargeTimestampGaps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LargeTimestampGaps] (val x: Self) extends AnyVal {
     
     inline def setMaxTimestampGapInDays(value: Integer): Self = StObject.set(x, "MaxTimestampGapInDays", value.asInstanceOf[js.Any])
     

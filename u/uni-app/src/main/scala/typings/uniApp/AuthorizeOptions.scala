@@ -33,7 +33,8 @@ object AuthorizeOptions {
     __obj.asInstanceOf[AuthorizeOptions]
   }
   
-  extension [Self <: AuthorizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthorizeOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

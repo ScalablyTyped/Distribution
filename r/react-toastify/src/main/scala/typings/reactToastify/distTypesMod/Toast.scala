@@ -18,7 +18,8 @@ object Toast {
     __obj.asInstanceOf[Toast]
   }
   
-  extension [Self <: Toast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Toast] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ToastContent[Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

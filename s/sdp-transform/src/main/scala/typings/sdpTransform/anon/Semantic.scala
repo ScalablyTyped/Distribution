@@ -17,7 +17,8 @@ object Semantic {
     __obj.asInstanceOf[Semantic]
   }
   
-  extension [Self <: Semantic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Semantic] (val x: Self) extends AnyVal {
     
     inline def setSemantic(value: String): Self = StObject.set(x, "semantic", value.asInstanceOf[js.Any])
     

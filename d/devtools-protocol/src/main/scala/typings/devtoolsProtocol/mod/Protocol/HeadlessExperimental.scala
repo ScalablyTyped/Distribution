@@ -44,7 +44,8 @@ object HeadlessExperimental {
       __obj.asInstanceOf[BeginFrameRequest]
     }
     
-    extension [Self <: BeginFrameRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginFrameRequest] (val x: Self) extends AnyVal {
       
       inline def setFrameTimeTicks(value: Double): Self = StObject.set(x, "frameTimeTicks", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object HeadlessExperimental {
       __obj.asInstanceOf[BeginFrameResponse]
     }
     
-    extension [Self <: BeginFrameResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BeginFrameResponse] (val x: Self) extends AnyVal {
       
       inline def setHasDamage(value: Boolean): Self = StObject.set(x, "hasDamage", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object HeadlessExperimental {
       __obj.asInstanceOf[ScreenshotParams]
     }
     
-    extension [Self <: ScreenshotParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotParams] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: jpeg | png | webp): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

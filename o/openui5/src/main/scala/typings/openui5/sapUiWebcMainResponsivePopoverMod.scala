@@ -1457,7 +1457,8 @@ object sapUiWebcMainResponsivePopoverMod {
       __obj.asInstanceOf[ResponsivePopoverSettings]
     }
     
-    extension [Self <: ResponsivePopoverSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsivePopoverSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleName(value: String | PropertyBindingInfo): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object GetVoIPSignOptions {
     __obj.asInstanceOf[GetVoIPSignOptions]
   }
   
-  extension [Self <: GetVoIPSignOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVoIPSignOptions] (val x: Self) extends AnyVal {
     
     inline def setGroupId(value: String): Self = StObject.set(x, "groupId", value.asInstanceOf[js.Any])
     

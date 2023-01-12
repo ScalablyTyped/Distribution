@@ -146,7 +146,8 @@ object libProvisioningErrorsMod {
       __obj.asInstanceOf[IApiError]
     }
     
-    extension [Self <: IApiError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IApiError] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Response_[Any, Record[String, Any]] => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
       

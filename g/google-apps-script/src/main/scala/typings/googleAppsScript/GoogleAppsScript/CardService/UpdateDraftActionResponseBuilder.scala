@@ -35,7 +35,8 @@ object UpdateDraftActionResponseBuilder {
     __obj.asInstanceOf[UpdateDraftActionResponseBuilder]
   }
   
-  extension [Self <: UpdateDraftActionResponseBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateDraftActionResponseBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => UpdateDraftActionResponse): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

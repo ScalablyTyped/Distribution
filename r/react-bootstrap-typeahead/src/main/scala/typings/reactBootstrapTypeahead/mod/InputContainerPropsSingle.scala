@@ -85,7 +85,8 @@ object InputContainerPropsSingle {
     __obj.asInstanceOf[InputContainerPropsSingle[T]]
   }
   
-  extension [Self <: InputContainerPropsSingle[?], T /* <: TypeaheadModel */](x: Self & InputContainerPropsSingle[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputContainerPropsSingle[?], T /* <: TypeaheadModel */] (val x: Self & InputContainerPropsSingle[T]) extends AnyVal {
     
     inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
     

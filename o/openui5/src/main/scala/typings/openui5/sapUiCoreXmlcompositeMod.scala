@@ -357,7 +357,8 @@ object sapUiCoreXmlcompositeMod {
       __obj.asInstanceOf[XMLCompositeSettings]
     }
     
-    extension [Self <: XMLCompositeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLCompositeSettings] (val x: Self) extends AnyVal {
       
       inline def setDisplayBlock(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "displayBlock", value.asInstanceOf[js.Any])
       

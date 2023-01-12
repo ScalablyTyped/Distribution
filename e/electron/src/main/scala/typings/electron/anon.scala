@@ -64,7 +64,8 @@ object anon {
       __obj.asInstanceOf[Action]
     }
     
-    extension [Self <: Action](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Action] (val x: Self) extends AnyVal {
       
       inline def setAction(value: deny): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     }
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[OverrideBrowserWindowOptions]
     }
     
-    extension [Self <: OverrideBrowserWindowOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverrideBrowserWindowOptions] (val x: Self) extends AnyVal {
       
       inline def setAction(value: allow): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -111,7 +113,8 @@ object anon {
       __obj.asInstanceOf[PartialRectangle]
     }
     
-    extension [Self <: PartialRectangle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRectangle] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -178,7 +181,8 @@ object anon {
       __obj.asInstanceOf[TypeofBrowserWindow]
     }
     
-    extension [Self <: TypeofBrowserWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofBrowserWindow] (val x: Self) extends AnyVal {
       
       inline def setFromBrowserView(value: BrowserView => BrowserWindow | Null): Self = StObject.set(x, "fromBrowserView", js.Any.fromFunction1(value))
       
@@ -207,7 +211,8 @@ object anon {
       __obj.asInstanceOf[TypeofCommon]
     }
     
-    extension [Self <: TypeofCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCommon] (val x: Self) extends AnyVal {
       
       inline def setClipboard(value: Clipboard): Self = StObject.set(x, "clipboard", value.asInstanceOf[js.Any])
       
@@ -326,7 +331,8 @@ object anon {
       __obj.asInstanceOf[TypeofCrossProcessExports]
     }
     
-    extension [Self <: TypeofCrossProcessExports](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofCrossProcessExports] (val x: Self) extends AnyVal {
       
       inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -487,7 +493,8 @@ object anon {
       __obj.asInstanceOf[TypeofMain]
     }
     
-    extension [Self <: TypeofMain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofMain] (val x: Self) extends AnyVal {
       
       inline def setApp(value: typings.electron.Electron.Main.App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -703,7 +710,8 @@ object anon {
       __obj.asInstanceOf[TypeofNotification]
     }
     
-    extension [Self <: TypeofNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofNotification] (val x: Self) extends AnyVal {
       
       inline def setIsSupported(value: () => Boolean): Self = StObject.set(x, "isSupported", js.Any.fromFunction0(value))
     }
@@ -728,7 +736,8 @@ object anon {
       __obj.asInstanceOf[TypeofRenderer]
     }
     
-    extension [Self <: TypeofRenderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofRenderer] (val x: Self) extends AnyVal {
       
       inline def setContextBridge(value: typings.electron.Electron.Renderer.ContextBridge): Self = StObject.set(x, "contextBridge", value.asInstanceOf[js.Any])
       
@@ -823,7 +832,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebContents]
     }
     
-    extension [Self <: TypeofWebContents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebContents] (val x: Self) extends AnyVal {
       
       inline def setFromDevToolsTargetId(value: String => WebContents_): Self = StObject.set(x, "fromDevToolsTargetId", js.Any.fromFunction1(value))
       
@@ -854,7 +864,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebFrameMain]
     }
     
-    extension [Self <: TypeofWebFrameMain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebFrameMain] (val x: Self) extends AnyVal {
       
       inline def setFromId(value: (Double, Double) => js.UndefOr[WebFrameMain_]): Self = StObject.set(x, "fromId", js.Any.fromFunction2(value))
     }

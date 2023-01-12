@@ -24,7 +24,8 @@ object BaseAnswer {
     __obj.asInstanceOf[BaseAnswer[T, D]]
   }
   
-  extension [Self <: BaseAnswer[?, ?], T, D](x: Self & (BaseAnswer[T, D])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseAnswer[?, ?], T, D] (val x: Self & (BaseAnswer[T, D])) extends AnyVal {
     
     inline def setClass(value: RecordClass): Self = StObject.set(x, "class", value.asInstanceOf[js.Any])
     

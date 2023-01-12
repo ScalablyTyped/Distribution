@@ -17,7 +17,8 @@ object MlChunkingConfig {
     __obj.asInstanceOf[MlChunkingConfig]
   }
   
-  extension [Self <: MlChunkingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlChunkingConfig] (val x: Self) extends AnyVal {
     
     inline def setMode(value: MlChunkingMode): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

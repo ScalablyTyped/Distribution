@@ -17,7 +17,8 @@ object CircleOptions {
     __obj.asInstanceOf[CircleOptions]
   }
   
-  extension [Self <: CircleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircleOptions] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

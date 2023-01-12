@@ -35,7 +35,8 @@ object GhostContentAPIOptions {
     __obj.asInstanceOf[GhostContentAPIOptions]
   }
   
-  extension [Self <: GhostContentAPIOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GhostContentAPIOptions] (val x: Self) extends AnyVal {
     
     inline def setGhostPath(value: String): Self = StObject.set(x, "ghostPath", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object GetReadinessCheckStatusResponse {
     __obj.asInstanceOf[GetReadinessCheckStatusResponse]
   }
   
-  extension [Self <: GetReadinessCheckStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetReadinessCheckStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: listOfMessage): Self = StObject.set(x, "Messages", value.asInstanceOf[js.Any])
     

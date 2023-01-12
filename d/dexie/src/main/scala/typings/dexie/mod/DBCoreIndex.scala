@@ -40,7 +40,8 @@ object DBCoreIndex {
     __obj.asInstanceOf[DBCoreIndex]
   }
   
-  extension [Self <: DBCoreIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreIndex] (val x: Self) extends AnyVal {
     
     inline def setAutoIncrement(value: Boolean): Self = StObject.set(x, "autoIncrement", value.asInstanceOf[js.Any])
     

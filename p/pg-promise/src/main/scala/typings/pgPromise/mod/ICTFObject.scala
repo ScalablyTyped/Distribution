@@ -17,7 +17,8 @@ object ICTFObject {
     __obj.asInstanceOf[ICTFObject]
   }
   
-  extension [Self <: ICTFObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICTFObject] (val x: Self) extends AnyVal {
     
     inline def setToPostgres(value: Any => Any): Self = StObject.set(x, "toPostgres", js.Any.fromFunction1(value))
   }

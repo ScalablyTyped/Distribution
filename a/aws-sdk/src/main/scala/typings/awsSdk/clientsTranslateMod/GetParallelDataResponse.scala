@@ -33,7 +33,8 @@ object GetParallelDataResponse {
     __obj.asInstanceOf[GetParallelDataResponse]
   }
   
-  extension [Self <: GetParallelDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetParallelDataResponse] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryDataLocation(value: ParallelDataDataLocation): Self = StObject.set(x, "AuxiliaryDataLocation", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetSampleDataResponse {
     __obj.asInstanceOf[GetSampleDataResponse]
   }
   
-  extension [Self <: GetSampleDataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSampleDataResponse] (val x: Self) extends AnyVal {
     
     inline def setHeaderValues(value: HeaderValueList): Self = StObject.set(x, "HeaderValues", value.asInstanceOf[js.Any])
     

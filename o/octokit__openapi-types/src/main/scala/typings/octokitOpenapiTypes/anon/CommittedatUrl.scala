@@ -38,7 +38,8 @@ object CommittedatUrl {
     __obj.asInstanceOf[CommittedatUrl]
   }
   
-  extension [Self <: CommittedatUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommittedatUrl] (val x: Self) extends AnyVal {
     
     inline def setChange_status(value: Additions): Self = StObject.set(x, "change_status", value.asInstanceOf[js.Any])
     

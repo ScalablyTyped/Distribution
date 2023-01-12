@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[FlagIconOptions]
     }
     
-    extension [Self <: FlagIconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagIconOptions] (val x: Self) extends AnyVal {
       
       inline def setCustomCodes(value: StringDictionary[String]): Self = StObject.set(x, "customCodes", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object mod {
       __obj.asInstanceOf[FlagIconProps]
     }
     
-    extension [Self <: FlagIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagIconProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

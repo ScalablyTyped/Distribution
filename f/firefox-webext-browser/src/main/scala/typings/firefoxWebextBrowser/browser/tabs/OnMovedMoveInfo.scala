@@ -19,7 +19,8 @@ object OnMovedMoveInfo {
     __obj.asInstanceOf[OnMovedMoveInfo]
   }
   
-  extension [Self <: OnMovedMoveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnMovedMoveInfo] (val x: Self) extends AnyVal {
     
     inline def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])
     

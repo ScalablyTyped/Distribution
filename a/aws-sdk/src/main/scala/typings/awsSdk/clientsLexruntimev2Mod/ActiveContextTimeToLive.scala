@@ -23,7 +23,8 @@ object ActiveContextTimeToLive {
     __obj.asInstanceOf[ActiveContextTimeToLive]
   }
   
-  extension [Self <: ActiveContextTimeToLive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveContextTimeToLive] (val x: Self) extends AnyVal {
     
     inline def setTimeToLiveInSeconds(value: ActiveContextTimeToLiveInSeconds): Self = StObject.set(x, "timeToLiveInSeconds", value.asInstanceOf[js.Any])
     

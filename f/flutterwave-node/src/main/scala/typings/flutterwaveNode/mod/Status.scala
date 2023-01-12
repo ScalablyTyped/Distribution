@@ -21,7 +21,8 @@ object Status {
     __obj.asInstanceOf[Status]
   }
   
-  extension [Self <: Status](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
     
     inline def setRequery(value: StatusRequeryRequest => js.Promise[AxiosResponse[StatusRequeryResponse, Any]]): Self = StObject.set(x, "requery", js.Any.fromFunction1(value))
     

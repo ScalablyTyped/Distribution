@@ -32,7 +32,8 @@ object TSTypeParameter {
   @js.native
   def apply(constraint: TSType, default_ : TSType): TSTypeParameter = js.native
   
-  extension [Self <: TSTypeParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSTypeParameter] (val x: Self) extends AnyVal {
     
     inline def setConstraint(value: TSType): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
     

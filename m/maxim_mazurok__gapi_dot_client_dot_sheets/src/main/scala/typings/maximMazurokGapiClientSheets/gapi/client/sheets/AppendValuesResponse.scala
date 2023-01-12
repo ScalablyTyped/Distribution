@@ -22,7 +22,8 @@ object AppendValuesResponse {
     __obj.asInstanceOf[AppendValuesResponse]
   }
   
-  extension [Self <: AppendValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppendValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

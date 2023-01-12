@@ -28,7 +28,8 @@ object MailAssessmentRequest {
     __obj.asInstanceOf[MailAssessmentRequest]
   }
   
-  extension [Self <: MailAssessmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MailAssessmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationRoutingReason(value: NullableOption[MailDestinationRoutingReason]): Self = StObject.set(x, "destinationRoutingReason", value.asInstanceOf[js.Any])
     

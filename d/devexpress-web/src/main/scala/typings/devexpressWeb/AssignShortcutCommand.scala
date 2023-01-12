@@ -25,7 +25,8 @@ object AssignShortcutCommand {
     __obj.asInstanceOf[AssignShortcutCommand]
   }
   
-  extension [Self <: AssignShortcutCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssignShortcutCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: (Double, js.Function0[Unit]) => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction2(value))
   }

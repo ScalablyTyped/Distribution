@@ -160,7 +160,8 @@ object componentsLevelLevelMod {
       __obj.asInstanceOf[LevelModifierProps]
     }
     
-    extension [Self <: LevelModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelModifierProps] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: mobile | tablet | desktop | widescreen | fullhd | touch): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       
@@ -254,7 +255,8 @@ object componentsLevelLevelMod {
       __obj.asInstanceOf[LevelProps]
     }
     
-    extension [Self <: LevelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LevelProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(
         value: primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`

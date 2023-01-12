@@ -383,7 +383,8 @@ object libAssetsMod {
       __obj.asInstanceOf[AssetInitOptions]
     }
     
-    extension [Self <: AssetInitOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetInitOptions] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

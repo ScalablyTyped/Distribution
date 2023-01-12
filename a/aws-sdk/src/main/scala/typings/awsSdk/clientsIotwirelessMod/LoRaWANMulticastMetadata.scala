@@ -15,7 +15,8 @@ object LoRaWANMulticastMetadata {
     __obj.asInstanceOf[LoRaWANMulticastMetadata]
   }
   
-  extension [Self <: LoRaWANMulticastMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANMulticastMetadata] (val x: Self) extends AnyVal {
     
     inline def setFPort(value: FPort): Self = StObject.set(x, "FPort", value.asInstanceOf[js.Any])
     

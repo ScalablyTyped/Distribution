@@ -38,7 +38,8 @@ object SelectionStyle {
     __obj.asInstanceOf[SelectionStyle]
   }
   
-  extension [Self <: SelectionStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectionStyle] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: ColorWidth): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
     

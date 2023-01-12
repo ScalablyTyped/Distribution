@@ -31,7 +31,8 @@ object DimensionFilter {
     __obj.asInstanceOf[DimensionFilter]
   }
   
-  extension [Self <: DimensionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionFilter] (val x: Self) extends AnyVal {
     
     inline def setCaseSensitive(value: Boolean): Self = StObject.set(x, "caseSensitive", value.asInstanceOf[js.Any])
     

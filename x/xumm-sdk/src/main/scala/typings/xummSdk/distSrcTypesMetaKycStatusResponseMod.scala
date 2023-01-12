@@ -23,7 +23,8 @@ object distSrcTypesMetaKycStatusResponseMod {
       __obj.asInstanceOf[KycStatusResponse]
     }
     
-    extension [Self <: KycStatusResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KycStatusResponse] (val x: Self) extends AnyVal {
       
       inline def setKycStatus(value: NONE | IN_PROGRESS | REJECTED | SUCCESSFUL): Self = StObject.set(x, "kycStatus", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object distSrcTypesMetaKycStatusResponseMod {
       __obj.asInstanceOf[PossibleKycStatuses]
     }
     
-    extension [Self <: PossibleKycStatuses](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PossibleKycStatuses] (val x: Self) extends AnyVal {
       
       inline def setIN_PROGRESS(value: String): Self = StObject.set(x, "IN_PROGRESS", value.asInstanceOf[js.Any])
       

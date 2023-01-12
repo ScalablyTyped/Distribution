@@ -22,7 +22,8 @@ object PickLinterOptionscwdconfi {
     __obj.asInstanceOf[PickLinterOptionscwdconfi]
   }
   
-  extension [Self <: PickLinterOptionscwdconfi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickLinterOptionscwdconfi] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.stylelint.mod.Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

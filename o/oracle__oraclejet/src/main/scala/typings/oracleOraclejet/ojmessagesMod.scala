@@ -1208,7 +1208,8 @@ object ojmessagesMod {
         __obj.asInstanceOf[Position]
       }
       
-      extension [Self <: Position](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Position] (val x: Self) extends AnyVal {
         
         inline def setAt(value: PositionAlign): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
         
@@ -1246,7 +1247,8 @@ object ojmessagesMod {
         __obj.asInstanceOf[PositionAlign]
       }
       
-      extension [Self <: PositionAlign](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionAlign] (val x: Self) extends AnyVal {
         
         inline def setHorizontal(value: start | end | left | center | bottom): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
         
@@ -1272,7 +1274,8 @@ object ojmessagesMod {
         __obj.asInstanceOf[PositionPoint]
       }
       
-      extension [Self <: PositionPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PositionPoint] (val x: Self) extends AnyVal {
         
         inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
         
@@ -1413,7 +1416,8 @@ object ojmessagesMod {
       __obj.asInstanceOf[ojMessagesEventMap]
     }
     
-    extension [Self <: ojMessagesEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessagesEventMap] (val x: Self) extends AnyVal {
       
       inline def setDisplayChanged(value: JetElementCustomEvent[general | notification]): Self = StObject.set(x, "displayChanged", value.asInstanceOf[js.Any])
       
@@ -1448,7 +1452,8 @@ object ojmessagesMod {
       __obj.asInstanceOf[ojMessagesSettableProperties]
     }
     
-    extension [Self <: ojMessagesSettableProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessagesSettableProperties] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: general | notification): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -1490,7 +1495,8 @@ object ojmessagesMod {
       __obj.asInstanceOf[ojMessagesSettablePropertiesLenient]
     }
     
-    extension [Self <: ojMessagesSettablePropertiesLenient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojMessagesSettablePropertiesLenient] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: general | notification): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       

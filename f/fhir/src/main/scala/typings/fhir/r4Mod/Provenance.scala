@@ -81,7 +81,8 @@ object Provenance {
     __obj.asInstanceOf[Provenance]
   }
   
-  extension [Self <: Provenance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Provenance] (val x: Self) extends AnyVal {
     
     inline def setActivity(value: CodeableConcept): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
     

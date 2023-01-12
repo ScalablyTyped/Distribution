@@ -353,7 +353,8 @@ object XPropertyHandler {
     __obj.asInstanceOf[XPropertyHandler]
   }
   
-  extension [Self <: XPropertyHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyHandler] (val x: Self) extends AnyVal {
     
     inline def setActuatingProperties(value: SafeArray[String]): Self = StObject.set(x, "ActuatingProperties", value.asInstanceOf[js.Any])
     

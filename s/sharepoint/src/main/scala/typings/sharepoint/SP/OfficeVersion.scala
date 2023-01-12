@@ -38,7 +38,8 @@ object OfficeVersion {
     __obj.asInstanceOf[OfficeVersion]
   }
   
-  extension [Self <: OfficeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfficeVersion] (val x: Self) extends AnyVal {
     
     inline def setAssemblyVersion(value: String): Self = StObject.set(x, "assemblyVersion", value.asInstanceOf[js.Any])
     

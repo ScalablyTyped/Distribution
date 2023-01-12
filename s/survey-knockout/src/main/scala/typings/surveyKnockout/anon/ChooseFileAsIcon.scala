@@ -125,7 +125,8 @@ object ChooseFileAsIcon {
     __obj.asInstanceOf[ChooseFileAsIcon]
   }
   
-  extension [Self <: ChooseFileAsIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseFileAsIcon] (val x: Self) extends AnyVal {
     
     inline def setChooseFile(value: String): Self = StObject.set(x, "chooseFile", value.asInstanceOf[js.Any])
     

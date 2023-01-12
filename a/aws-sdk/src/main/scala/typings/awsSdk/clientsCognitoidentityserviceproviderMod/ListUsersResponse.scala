@@ -23,7 +23,8 @@ object ListUsersResponse {
     __obj.asInstanceOf[ListUsersResponse]
   }
   
-  extension [Self <: ListUsersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUsersResponse] (val x: Self) extends AnyVal {
     
     inline def setPaginationToken(value: SearchPaginationTokenType): Self = StObject.set(x, "PaginationToken", value.asInstanceOf[js.Any])
     

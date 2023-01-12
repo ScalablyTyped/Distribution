@@ -27,7 +27,8 @@ object EndDockingEvent {
     __obj.asInstanceOf[EndDockingEvent]
   }
   
-  extension [Self <: EndDockingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndDockingEvent] (val x: Self) extends AnyVal {
     
     inline def setBCancelled(value: Boolean): Self = StObject.set(x, "bCancelled", value.asInstanceOf[js.Any])
     

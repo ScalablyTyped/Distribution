@@ -15,7 +15,8 @@ object StreamLinks {
     __obj.asInstanceOf[StreamLinks]
   }
   
-  extension [Self <: StreamLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamLinks] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: String): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
   }

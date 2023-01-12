@@ -57,7 +57,8 @@ object distTs3Dot9ComponentsReportRulesMod {
       __obj.asInstanceOf[RulesProps]
     }
     
-    extension [Self <: RulesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RulesProps] (val x: Self) extends AnyVal {
       
       inline def setRules(value: js.Array[CheckResult]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
       

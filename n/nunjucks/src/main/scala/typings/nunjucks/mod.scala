@@ -267,7 +267,8 @@ object mod {
       __obj.asInstanceOf[ConfigureOptions]
     }
     
-    extension [Self <: ConfigureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfigureOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoescape(value: Boolean): Self = StObject.set(x, "autoescape", value.asInstanceOf[js.Any])
       
@@ -321,7 +322,8 @@ object mod {
       __obj.asInstanceOf[Extension]
     }
     
-    extension [Self <: Extension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extension] (val x: Self) extends AnyVal {
       
       inline def setParse(value: (Any, Any, Any) => Any): Self = StObject.set(x, "parse", js.Any.fromFunction3(value))
       
@@ -357,7 +359,8 @@ object mod {
       __obj.asInstanceOf[LoaderOptions]
     }
     
-    extension [Self <: LoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       
@@ -384,7 +387,8 @@ object mod {
       __obj.asInstanceOf[LoaderSource]
     }
     
-    extension [Self <: LoaderSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderSource] (val x: Self) extends AnyVal {
       
       inline def setNoCache(value: Boolean): Self = StObject.set(x, "noCache", value.asInstanceOf[js.Any])
       
@@ -419,7 +423,8 @@ object mod {
       __obj.asInstanceOf[PrecompileOptions]
     }
     
-    extension [Self <: PrecompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrecompileOptions] (val x: Self) extends AnyVal {
       
       inline def setAsFunction(value: Boolean): Self = StObject.set(x, "asFunction", value.asInstanceOf[js.Any])
       
@@ -470,7 +475,8 @@ object mod {
       __obj.asInstanceOf[WebLoaderOptions]
     }
     
-    extension [Self <: WebLoaderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebLoaderOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       

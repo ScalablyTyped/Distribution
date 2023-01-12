@@ -41,7 +41,8 @@ object QueryAXTreeRequest {
     __obj.asInstanceOf[QueryAXTreeRequest]
   }
   
-  extension [Self <: QueryAXTreeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryAXTreeRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessibleName(value: String): Self = StObject.set(x, "accessibleName", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BaseExpressionData {
     __obj.asInstanceOf[BaseExpressionData[Scope]]
   }
   
-  extension [Self <: BaseExpressionData[?], Scope](x: Self & BaseExpressionData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseExpressionData[?], Scope] (val x: Self & BaseExpressionData[Scope]) extends AnyVal {
     
     inline def setEvaluate(value: Scope => Any): Self = StObject.set(x, "evaluate", js.Any.fromFunction1(value))
     

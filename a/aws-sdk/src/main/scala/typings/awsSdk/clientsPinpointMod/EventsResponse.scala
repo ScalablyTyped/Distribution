@@ -18,7 +18,8 @@ object EventsResponse {
     __obj.asInstanceOf[EventsResponse]
   }
   
-  extension [Self <: EventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventsResponse] (val x: Self) extends AnyVal {
     
     inline def setResults(value: MapOfItemResponse): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
     

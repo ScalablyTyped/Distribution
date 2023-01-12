@@ -24,7 +24,8 @@ object distTypesEndpointOptionsMod {
       __obj.asInstanceOf[EndpointOptions]
     }
     
-    extension [Self <: EndpointOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointOptions] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: RequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       

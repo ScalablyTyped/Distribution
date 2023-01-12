@@ -335,7 +335,8 @@ object sapMSegmentedButtonItemMod {
       __obj.asInstanceOf[SegmentedButtonItemSettings]
     }
     
-    extension [Self <: SegmentedButtonItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedButtonItemSettings] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String | PropertyBindingInfo): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       

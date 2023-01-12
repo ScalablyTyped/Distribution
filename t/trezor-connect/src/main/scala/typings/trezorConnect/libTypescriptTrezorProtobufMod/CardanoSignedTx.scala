@@ -17,7 +17,8 @@ object CardanoSignedTx {
     __obj.asInstanceOf[CardanoSignedTx]
   }
   
-  extension [Self <: CardanoSignedTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoSignedTx] (val x: Self) extends AnyVal {
     
     inline def setSerialized_tx(value: String): Self = StObject.set(x, "serialized_tx", value.asInstanceOf[js.Any])
     

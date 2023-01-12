@@ -33,7 +33,8 @@ object DescribeRegionsRequest {
     __obj.asInstanceOf[DescribeRegionsRequest]
   }
   
-  extension [Self <: DescribeRegionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeRegionsRequest] (val x: Self) extends AnyVal {
     
     inline def setAllRegions(value: Boolean): Self = StObject.set(x, "AllRegions", value.asInstanceOf[js.Any])
     

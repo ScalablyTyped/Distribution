@@ -20,7 +20,8 @@ object FullscreenControlProps {
     __obj.asInstanceOf[FullscreenControlProps]
   }
   
-  extension [Self <: FullscreenControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FullscreenControlProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object typesConditionMod {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: js.Array[AttributeValue] | js.Iterable[AttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object typesConditionMod {
       __obj.asInstanceOf[UnmarshalledCondition]
     }
     
-    extension [Self <: UnmarshalledCondition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCondition] (val x: Self) extends AnyVal {
       
       inline def setAttributeValueList(value: js.Array[UnmarshalledAttributeValue]): Self = StObject.set(x, "AttributeValueList", value.asInstanceOf[js.Any])
       

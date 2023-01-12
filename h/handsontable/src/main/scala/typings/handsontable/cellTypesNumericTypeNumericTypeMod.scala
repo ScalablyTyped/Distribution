@@ -83,7 +83,8 @@ object cellTypesNumericTypeNumericTypeMod {
       __obj.asInstanceOf[NumericCellType]
     }
     
-    extension [Self <: NumericCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumericCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, NumericEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

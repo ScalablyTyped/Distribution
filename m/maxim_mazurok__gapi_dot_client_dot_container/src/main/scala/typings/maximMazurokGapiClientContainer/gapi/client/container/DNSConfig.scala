@@ -22,7 +22,8 @@ object DNSConfig {
     __obj.asInstanceOf[DNSConfig]
   }
   
-  extension [Self <: DNSConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DNSConfig] (val x: Self) extends AnyVal {
     
     inline def setClusterDns(value: String): Self = StObject.set(x, "clusterDns", value.asInstanceOf[js.Any])
     

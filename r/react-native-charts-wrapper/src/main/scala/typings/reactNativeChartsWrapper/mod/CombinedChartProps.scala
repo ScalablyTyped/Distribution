@@ -30,7 +30,8 @@ object CombinedChartProps {
     __obj.asInstanceOf[CombinedChartProps]
   }
   
-  extension [Self <: CombinedChartProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CombinedChartProps] (val x: Self) extends AnyVal {
     
     inline def setData(value: CombinedData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

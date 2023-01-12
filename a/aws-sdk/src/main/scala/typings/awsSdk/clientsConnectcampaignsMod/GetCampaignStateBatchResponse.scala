@@ -17,7 +17,8 @@ object GetCampaignStateBatchResponse {
     __obj.asInstanceOf[GetCampaignStateBatchResponse]
   }
   
-  extension [Self <: GetCampaignStateBatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCampaignStateBatchResponse] (val x: Self) extends AnyVal {
     
     inline def setFailedRequests(value: FailedCampaignStateResponseList): Self = StObject.set(x, "failedRequests", value.asInstanceOf[js.Any])
     

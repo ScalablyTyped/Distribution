@@ -19,7 +19,8 @@ object LineValue {
     __obj.asInstanceOf[LineValue]
   }
   
-  extension [Self <: LineValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineValue] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

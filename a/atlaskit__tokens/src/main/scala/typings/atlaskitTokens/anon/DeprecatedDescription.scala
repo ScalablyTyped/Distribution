@@ -34,7 +34,8 @@ object DeprecatedDescription {
     __obj.asInstanceOf[DeprecatedDescription[Group]]
   }
   
-  extension [Self <: DeprecatedDescription[?], Group /* <: Groups */](x: Self & DeprecatedDescription[Group]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecatedDescription[?], Group /* <: Groups */] (val x: Self & DeprecatedDescription[Group]) extends AnyVal {
     
     inline def setDeprecated(value: String): Self = StObject.set(x, "deprecated", value.asInstanceOf[js.Any])
     

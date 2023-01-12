@@ -16,7 +16,8 @@ object CorsSettings {
     __obj.asInstanceOf[CorsSettings]
   }
   
-  extension [Self <: CorsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorsSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowHttpOptions(value: Boolean): Self = StObject.set(x, "allowHttpOptions", value.asInstanceOf[js.Any])
     

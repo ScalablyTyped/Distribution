@@ -15,7 +15,8 @@ object BreadcrumbMessages {
     __obj.asInstanceOf[BreadcrumbMessages]
   }
   
-  extension [Self <: BreadcrumbMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreadcrumbMessages] (val x: Self) extends AnyVal {
     
     inline def setRootTitle(value: String): Self = StObject.set(x, "rootTitle", value.asInstanceOf[js.Any])
     

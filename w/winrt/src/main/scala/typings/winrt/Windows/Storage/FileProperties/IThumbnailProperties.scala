@@ -27,7 +27,8 @@ object IThumbnailProperties {
     __obj.asInstanceOf[IThumbnailProperties]
   }
   
-  extension [Self <: IThumbnailProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IThumbnailProperties] (val x: Self) extends AnyVal {
     
     inline def setOriginalHeight(value: Double): Self = StObject.set(x, "originalHeight", value.asInstanceOf[js.Any])
     

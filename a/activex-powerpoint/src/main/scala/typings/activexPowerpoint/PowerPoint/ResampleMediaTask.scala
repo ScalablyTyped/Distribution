@@ -52,7 +52,8 @@ object ResampleMediaTask {
     __obj.asInstanceOf[ResampleMediaTask]
   }
   
-  extension [Self <: ResampleMediaTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResampleMediaTask] (val x: Self) extends AnyVal {
     
     inline def setAudioCompressionType(value: String): Self = StObject.set(x, "AudioCompressionType", value.asInstanceOf[js.Any])
     

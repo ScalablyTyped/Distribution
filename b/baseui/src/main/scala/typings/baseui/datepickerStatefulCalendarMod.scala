@@ -121,7 +121,8 @@ object datepickerStatefulCalendarMod {
       __obj.asInstanceOf[DatepickerProps[T]]
     }
     
-    extension [Self <: DatepickerProps[?], T](x: Self & DatepickerProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatepickerProps[?], T] (val x: Self & DatepickerProps[T]) extends AnyVal {
       
       inline def setAdapter(value: DateIOAdapter[js.Date]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

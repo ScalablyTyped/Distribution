@@ -17,7 +17,8 @@ object DatesSetArg {
     __obj.asInstanceOf[DatesSetArg]
   }
   
-  extension [Self <: DatesSetArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatesSetArg] (val x: Self) extends AnyVal {
     
     inline def setView(value: ViewApi): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
   }

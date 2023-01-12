@@ -22,7 +22,8 @@ object NotFoundException {
     __obj.asInstanceOf[NotFoundException]
   }
   
-  extension [Self <: NotFoundException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotFoundException] (val x: Self) extends AnyVal {
     
     inline def setNotFoundException(value: EDAMNotFoundException): Self = StObject.set(x, "notFoundException", value.asInstanceOf[js.Any])
     

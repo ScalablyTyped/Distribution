@@ -41,7 +41,8 @@ object AttachmentsProperties {
     __obj.asInstanceOf[AttachmentsProperties]
   }
   
-  extension [Self <: AttachmentsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentsProperties] (val x: Self) extends AnyVal {
     
     inline def setDisplayType(value: auto | preview | list): Self = StObject.set(x, "displayType", value.asInstanceOf[js.Any])
     

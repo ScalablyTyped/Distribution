@@ -19,7 +19,8 @@ object StockChartLegendBorder {
     __obj.asInstanceOf[StockChartLegendBorder]
   }
   
-  extension [Self <: StockChartLegendBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockChartLegendBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

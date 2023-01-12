@@ -18,7 +18,8 @@ object PowOptions {
     __obj.asInstanceOf[PowOptions]
   }
   
-  extension [Self <: PowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PowOptions] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: Double): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

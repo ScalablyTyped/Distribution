@@ -47,7 +47,8 @@ object EndOfLine {
     __obj.asInstanceOf[EndOfLine[T]]
   }
   
-  extension [Self <: EndOfLine[?], T](x: Self & EndOfLine[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndOfLine[?], T] (val x: Self & EndOfLine[T]) extends AnyVal {
     
     inline def setEndOfLine(
       value: (/* commentNode */ Any, /* text */ String, /* options */ ParserOptions[T], /* ast */ T, /* isLastComment */ Boolean) => Boolean

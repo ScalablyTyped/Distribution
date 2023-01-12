@@ -24,7 +24,8 @@ object Payouts {
     __obj.asInstanceOf[Payouts]
   }
   
-  extension [Self <: Payouts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Payouts] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (Any, Callback[Any]) => Unit): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
     

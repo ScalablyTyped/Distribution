@@ -52,7 +52,8 @@ object libClassdefGridEventMod {
       __obj.asInstanceOf[GridEvent]
     }
     
-    extension [Self <: GridEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridEvent] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: Grid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       

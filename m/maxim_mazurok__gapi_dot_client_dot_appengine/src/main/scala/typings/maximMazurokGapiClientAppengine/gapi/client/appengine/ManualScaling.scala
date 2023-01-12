@@ -19,7 +19,8 @@ object ManualScaling {
     __obj.asInstanceOf[ManualScaling]
   }
   
-  extension [Self <: ManualScaling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualScaling] (val x: Self) extends AnyVal {
     
     inline def setInstances(value: Double): Self = StObject.set(x, "instances", value.asInstanceOf[js.Any])
     

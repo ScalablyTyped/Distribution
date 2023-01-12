@@ -17,7 +17,8 @@ object AggregationsMedianAbsoluteDeviationAggregation {
     __obj.asInstanceOf[AggregationsMedianAbsoluteDeviationAggregation]
   }
   
-  extension [Self <: AggregationsMedianAbsoluteDeviationAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMedianAbsoluteDeviationAggregation] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

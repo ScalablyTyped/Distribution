@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Cert]
     }
     
-    extension [Self <: Cert](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cert] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setContext(value: PlatformContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -67,7 +69,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -90,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Documenttarget]
     }
     
-    extension [Self <: Documenttarget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Documenttarget] (val x: Self) extends AnyVal {
       
       inline def setDocument_target(value: String): Self = StObject.set(x, "document_target", value.asInstanceOf[js.Any])
       
@@ -115,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -144,7 +149,8 @@ object anon {
       __obj.asInstanceOf[KeepAlive]
     }
     
-    extension [Self <: KeepAlive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeepAlive] (val x: Self) extends AnyVal {
       
       inline def setKeepAlive(value: Boolean): Self = StObject.set(x, "keepAlive", value.asInstanceOf[js.Any])
       
@@ -183,7 +189,8 @@ object anon {
       __obj.asInstanceOf[Label]
     }
     
-    extension [Self <: Label](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -212,7 +219,8 @@ object anon {
       __obj.asInstanceOf[LineItem]
     }
     
-    extension [Self <: LineItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LineItem] (val x: Self) extends AnyVal {
       
       inline def setLineItem(value: String): Self = StObject.set(x, "lineItem", value.asInstanceOf[js.Any])
       
@@ -237,7 +245,8 @@ object anon {
       __obj.asInstanceOf[Method]
     }
     
-    extension [Self <: Method](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Method] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -258,7 +267,8 @@ object anon {
       __obj.asInstanceOf[SameSite]
     }
     
-    extension [Self <: SameSite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SameSite] (val x: Self) extends AnyVal {
       
       inline def setSameSite(value: String): Self = StObject.set(x, "sameSite", value.asInstanceOf[js.Any])
       
@@ -283,7 +293,8 @@ object anon {
       __obj.asInstanceOf[Title]
     }
     
-    extension [Self <: Title](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Title] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

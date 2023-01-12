@@ -64,7 +64,8 @@ object ScaleRangeSliderViewModelProperties {
     __obj.asInstanceOf[ScaleRangeSliderViewModelProperties]
   }
   
-  extension [Self <: ScaleRangeSliderViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleRangeSliderViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setLayer(value: LayerProperties): Self = StObject.set(x, "layer", value.asInstanceOf[js.Any])
     

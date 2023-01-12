@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Optionswarningstrue]
     }
     
-    extension [Self <: Optionswarningstrue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionswarningstrue] (val x: Self) extends AnyVal {
       
       inline def setSave(value: Boolean): Self = StObject.set(x, "save", value.asInstanceOf[js.Any])
       

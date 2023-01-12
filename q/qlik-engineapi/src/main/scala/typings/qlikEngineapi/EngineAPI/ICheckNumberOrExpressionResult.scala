@@ -20,7 +20,8 @@ object ICheckNumberOrExpressionResult {
     __obj.asInstanceOf[ICheckNumberOrExpressionResult]
   }
   
-  extension [Self <: ICheckNumberOrExpressionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICheckNumberOrExpressionResult] (val x: Self) extends AnyVal {
     
     inline def setQErrorMsg(value: String): Self = StObject.set(x, "qErrorMsg", value.asInstanceOf[js.Any])
   }

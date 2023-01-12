@@ -132,7 +132,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[GeocodeFeature]
     }
     
-    extension [Self <: GeocodeFeature](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeFeature] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[GeocodeProperties]
     }
     
-    extension [Self <: GeocodeProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeProperties] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -370,7 +372,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[GeocodeRequest]
     }
     
-    extension [Self <: GeocodeRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeRequest] (val x: Self) extends AnyVal {
       
       inline def setAutocomplete(value: Boolean): Self = StObject.set(x, "autocomplete", value.asInstanceOf[js.Any])
       
@@ -448,7 +451,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[GeocodeResponse]
     }
     
-    extension [Self <: GeocodeResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeResponse] (val x: Self) extends AnyVal {
       
       inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
       
@@ -480,7 +484,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[GeocodeService]
     }
     
-    extension [Self <: GeocodeService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeService] (val x: Self) extends AnyVal {
       
       inline def setForwardGeocode(value: GeocodeRequest => MapiRequest[GeocodeResponse]): Self = StObject.set(x, "forwardGeocode", js.Any.fromFunction1(value))
       
@@ -513,7 +518,8 @@ object servicesGeocodingMod {
       __obj.asInstanceOf[Geometry]
     }
     
-    extension [Self <: Geometry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geometry] (val x: Self) extends AnyVal {
       
       inline def setCoordinates(value: js.Array[Double]): Self = StObject.set(x, "coordinates", value.asInstanceOf[js.Any])
       

@@ -102,7 +102,8 @@ object fieldsMod {
       __obj.asInstanceOf[AttributeOpts]
     }
     
-    extension [Self <: AttributeOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOpts] (val x: Self) extends AnyVal {
       
       inline def setGetDefault(value: () => Any): Self = StObject.set(x, "getDefault", js.Any.fromFunction0(value))
       
@@ -161,7 +162,8 @@ object fieldsMod {
       __obj.asInstanceOf[RelationalFieldOpts]
     }
     
-    extension [Self <: RelationalFieldOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RelationalFieldOpts] (val x: Self) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

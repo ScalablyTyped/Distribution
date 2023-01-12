@@ -16,7 +16,8 @@ object AppsDynamiteSharedAssistantDebugContext {
     __obj.asInstanceOf[AppsDynamiteSharedAssistantDebugContext]
   }
   
-  extension [Self <: AppsDynamiteSharedAssistantDebugContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedAssistantDebugContext] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

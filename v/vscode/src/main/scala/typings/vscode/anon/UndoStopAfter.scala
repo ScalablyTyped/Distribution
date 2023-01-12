@@ -17,7 +17,8 @@ object UndoStopAfter {
     __obj.asInstanceOf[UndoStopAfter]
   }
   
-  extension [Self <: UndoStopAfter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UndoStopAfter] (val x: Self) extends AnyVal {
     
     inline def setUndoStopAfter(value: Boolean): Self = StObject.set(x, "undoStopAfter", value.asInstanceOf[js.Any])
     

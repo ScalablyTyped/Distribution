@@ -29,7 +29,8 @@ object RequestResponseFrame {
     __obj.asInstanceOf[RequestResponseFrame]
   }
   
-  extension [Self <: RequestResponseFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestResponseFrame] (val x: Self) extends AnyVal {
     
     inline def setData(value: Encodable): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

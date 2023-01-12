@@ -94,7 +94,8 @@ object outGitHubPublisherMod {
       __obj.asInstanceOf[Release]
     }
     
-    extension [Self <: Release](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Release] (val x: Self) extends AnyVal {
       
       inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
       

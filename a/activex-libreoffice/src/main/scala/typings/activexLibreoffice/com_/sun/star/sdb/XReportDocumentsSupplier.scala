@@ -42,7 +42,8 @@ object XReportDocumentsSupplier {
     __obj.asInstanceOf[XReportDocumentsSupplier]
   }
   
-  extension [Self <: XReportDocumentsSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReportDocumentsSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetReportDocuments(value: () => XNameAccess): Self = StObject.set(x, "getReportDocuments", js.Any.fromFunction0(value))
     

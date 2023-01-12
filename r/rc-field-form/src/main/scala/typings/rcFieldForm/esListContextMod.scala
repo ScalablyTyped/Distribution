@@ -25,7 +25,8 @@ object esListContextMod extends Shortcut {
       __obj.asInstanceOf[ListContextProps]
     }
     
-    extension [Self <: ListContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListContextProps] (val x: Self) extends AnyVal {
       
       inline def setGetKey(value: InternalNamePath => js.Tuple2[Key, InternalNamePath]): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     }

@@ -28,7 +28,8 @@ object ListEventActionsRequest {
     __obj.asInstanceOf[ListEventActionsRequest]
   }
   
-  extension [Self <: ListEventActionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventActionsRequest] (val x: Self) extends AnyVal {
     
     inline def setEventSourceId(value: string): Self = StObject.set(x, "EventSourceId", value.asInstanceOf[js.Any])
     

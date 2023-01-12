@@ -38,7 +38,8 @@ object Typeofomnibox {
     __obj.asInstanceOf[Typeofomnibox]
   }
   
-  extension [Self <: Typeofomnibox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofomnibox] (val x: Self) extends AnyVal {
     
     inline def setOnDeleteSuggestion(value: OmniboxSuggestionDeletedEvent): Self = StObject.set(x, "onDeleteSuggestion", value.asInstanceOf[js.Any])
     

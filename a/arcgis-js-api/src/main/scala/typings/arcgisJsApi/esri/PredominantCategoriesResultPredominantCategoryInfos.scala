@@ -34,7 +34,8 @@ object PredominantCategoriesResultPredominantCategoryInfos {
     __obj.asInstanceOf[PredominantCategoriesResultPredominantCategoryInfos]
   }
   
-  extension [Self <: PredominantCategoriesResultPredominantCategoryInfos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PredominantCategoriesResultPredominantCategoryInfos] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ListContentMap {
     __obj.asInstanceOf[ListContentMap]
   }
   
-  extension [Self <: ListContentMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContentMap] (val x: Self) extends AnyVal {
     
     inline def setListItem(value: ListItem): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
   }

@@ -26,7 +26,8 @@ object CheckContextMenu {
     __obj.asInstanceOf[CheckContextMenu]
   }
   
-  extension [Self <: CheckContextMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckContextMenu] (val x: Self) extends AnyVal {
     
     inline def setCheckContextMenu(value: Boolean): Self = StObject.set(x, "checkContextMenu", value.asInstanceOf[js.Any])
     

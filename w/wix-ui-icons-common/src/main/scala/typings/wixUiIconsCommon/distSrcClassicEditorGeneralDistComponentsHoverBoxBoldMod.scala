@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsHoverBoxBoldMod extends Shortcut
       __obj.asInstanceOf[HoverBoxBoldProps]
     }
     
-    extension [Self <: HoverBoxBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HoverBoxBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

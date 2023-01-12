@@ -18,7 +18,8 @@ object ModifyTrafficMirrorSessionResult {
     __obj.asInstanceOf[ModifyTrafficMirrorSessionResult]
   }
   
-  extension [Self <: ModifyTrafficMirrorSessionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyTrafficMirrorSessionResult] (val x: Self) extends AnyVal {
     
     inline def setTrafficMirrorSession(value: TrafficMirrorSession): Self = StObject.set(x, "TrafficMirrorSession", value.asInstanceOf[js.Any])
     

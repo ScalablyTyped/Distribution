@@ -27,7 +27,8 @@ object PortalRatingProperties {
     __obj.asInstanceOf[PortalRatingProperties]
   }
   
-  extension [Self <: PortalRatingProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PortalRatingProperties] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: DateProperties): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
     

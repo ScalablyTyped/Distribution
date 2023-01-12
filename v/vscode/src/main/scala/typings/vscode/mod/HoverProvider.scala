@@ -26,7 +26,8 @@ object HoverProvider {
     __obj.asInstanceOf[HoverProvider]
   }
   
-  extension [Self <: HoverProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoverProvider] (val x: Self) extends AnyVal {
     
     inline def setProvideHover(value: (TextDocument, Position, CancellationToken) => ProviderResult[Hover]): Self = StObject.set(x, "provideHover", js.Any.fromFunction3(value))
   }

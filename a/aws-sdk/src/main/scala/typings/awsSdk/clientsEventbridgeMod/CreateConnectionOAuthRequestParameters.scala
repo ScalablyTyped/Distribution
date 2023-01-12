@@ -37,7 +37,8 @@ object CreateConnectionOAuthRequestParameters {
     __obj.asInstanceOf[CreateConnectionOAuthRequestParameters]
   }
   
-  extension [Self <: CreateConnectionOAuthRequestParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateConnectionOAuthRequestParameters] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationEndpoint(value: HttpsEndpoint): Self = StObject.set(x, "AuthorizationEndpoint", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object Advertiser {
     __obj.asInstanceOf[Advertiser]
   }
   
-  extension [Self <: Advertiser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Advertiser] (val x: Self) extends AnyVal {
     
     inline def setAdServerConfig(value: AdvertiserAdServerConfig): Self = StObject.set(x, "adServerConfig", value.asInstanceOf[js.Any])
     

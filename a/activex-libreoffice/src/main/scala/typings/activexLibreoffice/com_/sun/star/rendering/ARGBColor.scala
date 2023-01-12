@@ -26,7 +26,8 @@ object ARGBColor {
     __obj.asInstanceOf[ARGBColor]
   }
   
-  extension [Self <: ARGBColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ARGBColor] (val x: Self) extends AnyVal {
     
     inline def setAlpha(value: ColorComponent): Self = StObject.set(x, "Alpha", value.asInstanceOf[js.Any])
     

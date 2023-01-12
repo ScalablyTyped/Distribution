@@ -34,7 +34,8 @@ object InputProps {
     __obj.asInstanceOf[InputProps[TSuggestion]]
   }
   
-  extension [Self <: InputProps[?], TSuggestion](x: Self & InputProps[TSuggestion]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputProps[?], TSuggestion] (val x: Self & InputProps[TSuggestion]) extends AnyVal {
     
     inline def setOnBlur(
       value: (/* event */ FocusEvent[HTMLElement, Element], /* params */ js.UndefOr[BlurEvent[TSuggestion]]) => Unit

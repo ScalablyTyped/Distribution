@@ -48,7 +48,8 @@ object OpsItemEventSummary {
     __obj.asInstanceOf[OpsItemEventSummary]
   }
   
-  extension [Self <: OpsItemEventSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsItemEventSummary] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: OpsItemIdentity): Self = StObject.set(x, "CreatedBy", value.asInstanceOf[js.Any])
     

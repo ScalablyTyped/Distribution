@@ -36,7 +36,8 @@ object Misc {
     __obj.asInstanceOf[Misc]
   }
   
-  extension [Self <: Misc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Misc] (val x: Self) extends AnyVal {
     
     inline def setDisburse(value: MiscDisburseRequest => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "disburse", js.Any.fromFunction1(value))
     

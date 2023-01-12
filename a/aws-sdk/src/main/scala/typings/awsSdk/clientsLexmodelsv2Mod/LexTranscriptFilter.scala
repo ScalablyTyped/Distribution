@@ -18,7 +18,8 @@ object LexTranscriptFilter {
     __obj.asInstanceOf[LexTranscriptFilter]
   }
   
-  extension [Self <: LexTranscriptFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LexTranscriptFilter] (val x: Self) extends AnyVal {
     
     inline def setDateRangeFilter(value: DateRangeFilter): Self = StObject.set(x, "dateRangeFilter", value.asInstanceOf[js.Any])
     

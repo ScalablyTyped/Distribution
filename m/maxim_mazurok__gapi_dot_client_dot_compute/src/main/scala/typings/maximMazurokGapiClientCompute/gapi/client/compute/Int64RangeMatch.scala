@@ -19,7 +19,8 @@ object Int64RangeMatch {
     __obj.asInstanceOf[Int64RangeMatch]
   }
   
-  extension [Self <: Int64RangeMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Int64RangeMatch] (val x: Self) extends AnyVal {
     
     inline def setRangeEnd(value: String): Self = StObject.set(x, "rangeEnd", value.asInstanceOf[js.Any])
     

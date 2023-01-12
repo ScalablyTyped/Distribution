@@ -16,7 +16,8 @@ object GoogleAudienceTargetingSetting {
     __obj.asInstanceOf[GoogleAudienceTargetingSetting]
   }
   
-  extension [Self <: GoogleAudienceTargetingSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAudienceTargetingSetting] (val x: Self) extends AnyVal {
     
     inline def setGoogleAudienceId(value: String): Self = StObject.set(x, "googleAudienceId", value.asInstanceOf[js.Any])
     

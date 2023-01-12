@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsVkMod extends Shortcut {
       __obj.asInstanceOf[VkProps]
     }
     
-    extension [Self <: VkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VkProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

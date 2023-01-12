@@ -47,7 +47,8 @@ object ExecInspectInfo {
     __obj.asInstanceOf[ExecInspectInfo]
   }
   
-  extension [Self <: ExecInspectInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecInspectInfo] (val x: Self) extends AnyVal {
     
     inline def setCanRemove(value: Boolean): Self = StObject.set(x, "CanRemove", value.asInstanceOf[js.Any])
     

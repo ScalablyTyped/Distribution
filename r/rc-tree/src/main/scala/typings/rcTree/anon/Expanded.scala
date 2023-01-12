@@ -22,7 +22,8 @@ object Expanded {
     __obj.asInstanceOf[Expanded[TreeDataType]]
   }
   
-  extension [Self <: Expanded[?], TreeDataType /* <: BasicDataNode */](x: Self & Expanded[TreeDataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Expanded[?], TreeDataType /* <: BasicDataNode */] (val x: Self & Expanded[TreeDataType]) extends AnyVal {
     
     inline def setExpanded(value: Boolean): Self = StObject.set(x, "expanded", value.asInstanceOf[js.Any])
     

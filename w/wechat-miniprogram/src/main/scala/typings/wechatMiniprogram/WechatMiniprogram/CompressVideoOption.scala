@@ -45,7 +45,8 @@ object CompressVideoOption {
     __obj.asInstanceOf[CompressVideoOption]
   }
   
-  extension [Self <: CompressVideoOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompressVideoOption] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

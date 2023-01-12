@@ -37,7 +37,8 @@ object IOApi {
     __obj.asInstanceOf[IOApi]
   }
   
-  extension [Self <: IOApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IOApi] (val x: Self) extends AnyVal {
     
     inline def setClose(value: CloseRequest => js.Promise[Unit]): Self = StObject.set(x, "close", js.Any.fromFunction1(value))
     

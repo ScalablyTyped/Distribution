@@ -26,7 +26,8 @@ object MatrixData {
     __obj.asInstanceOf[MatrixData]
   }
   
-  extension [Self <: MatrixData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatrixData] (val x: Self) extends AnyVal {
     
     inline def setGetCols(value: () => Double): Self = StObject.set(x, "getCols", js.Any.fromFunction0(value))
     

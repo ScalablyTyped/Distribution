@@ -16,7 +16,8 @@ object OnAppShowCallbackResult {
     __obj.asInstanceOf[OnAppShowCallbackResult]
   }
   
-  extension [Self <: OnAppShowCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnAppShowCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setObject(value: ResultOption): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

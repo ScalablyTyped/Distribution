@@ -59,7 +59,8 @@ object LayerPerformanceInfo {
     __obj.asInstanceOf[LayerPerformanceInfo]
   }
   
-  extension [Self <: LayerPerformanceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerPerformanceInfo] (val x: Self) extends AnyVal {
     
     inline def setDisplayedNumberOfFeatures(value: Double): Self = StObject.set(x, "displayedNumberOfFeatures", value.asInstanceOf[js.Any])
     

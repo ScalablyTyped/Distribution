@@ -39,7 +39,8 @@ object pointerEventsInteractableTargetsMod extends Shortcut {
         __obj.asInstanceOf[Interactable]
       }
       
-      extension [Self <: Interactable](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Interactable] (val x: Self) extends AnyVal {
         
         inline def setPointerEvents(
           value: js.ThisFunction1[/* this */ InteractableDeltaSource, /* options */ Any, InteractableDeltaSource]

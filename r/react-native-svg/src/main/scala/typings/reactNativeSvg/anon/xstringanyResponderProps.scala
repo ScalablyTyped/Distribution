@@ -112,7 +112,8 @@ object xstringanyResponderProps {
     __obj.asInstanceOf[xstringanyResponderProps]
   }
   
-  extension [Self <: xstringanyResponderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: xstringanyResponderProps] (val x: Self) extends AnyVal {
     
     inline def setOnMoveShouldSetResponder(value: /* event */ GestureResponderEvent => Boolean): Self = StObject.set(x, "onMoveShouldSetResponder", js.Any.fromFunction1(value))
     

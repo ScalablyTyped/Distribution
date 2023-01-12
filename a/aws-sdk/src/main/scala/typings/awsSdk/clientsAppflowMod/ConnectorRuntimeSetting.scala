@@ -48,7 +48,8 @@ object ConnectorRuntimeSetting {
     __obj.asInstanceOf[ConnectorRuntimeSetting]
   }
   
-  extension [Self <: ConnectorRuntimeSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorRuntimeSetting] (val x: Self) extends AnyVal {
     
     inline def setConnectorSuppliedValueOptions(value: ConnectorSuppliedValueOptionList): Self = StObject.set(x, "connectorSuppliedValueOptions", value.asInstanceOf[js.Any])
     

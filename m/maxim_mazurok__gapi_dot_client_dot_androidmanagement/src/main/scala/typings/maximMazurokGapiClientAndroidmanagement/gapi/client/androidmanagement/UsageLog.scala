@@ -19,7 +19,8 @@ object UsageLog {
     __obj.asInstanceOf[UsageLog]
   }
   
-  extension [Self <: UsageLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageLog] (val x: Self) extends AnyVal {
     
     inline def setEnabledLogTypes(value: js.Array[String]): Self = StObject.set(x, "enabledLogTypes", value.asInstanceOf[js.Any])
     

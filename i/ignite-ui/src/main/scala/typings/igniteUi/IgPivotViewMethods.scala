@@ -62,7 +62,8 @@ object IgPivotViewMethods {
     __obj.asInstanceOf[IgPivotViewMethods]
   }
   
-  extension [Self <: IgPivotViewMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgPivotViewMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeGlobalLanguage(value: () => Unit): Self = StObject.set(x, "changeGlobalLanguage", js.Any.fromFunction0(value))
     

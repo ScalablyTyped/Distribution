@@ -32,7 +32,8 @@ object BasicType {
     __obj.asInstanceOf[BasicType]
   }
   
-  extension [Self <: BasicType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicType] (val x: Self) extends AnyVal {
     
     inline def setBasicName(value: String): Self = StObject.set(x, "basicName", value.asInstanceOf[js.Any])
     

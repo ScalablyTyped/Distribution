@@ -23,7 +23,8 @@ object ASPxClientHtmlEditorTableRowPropertiesCommandArguments {
     __obj.asInstanceOf[ASPxClientHtmlEditorTableRowPropertiesCommandArguments]
   }
   
-  extension [Self <: ASPxClientHtmlEditorTableRowPropertiesCommandArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorTableRowPropertiesCommandArguments] (val x: Self) extends AnyVal {
     
     inline def setStyleSettings(value: ASPxClientHtmlEditorCommandStyleSettings): Self = StObject.set(x, "styleSettings", value.asInstanceOf[js.Any])
   }

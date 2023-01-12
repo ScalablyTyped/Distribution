@@ -16,7 +16,8 @@ object IAuthenticationResultServerFinal {
     __obj.asInstanceOf[IAuthenticationResultServerFinal]
   }
   
-  extension [Self <: IAuthenticationResultServerFinal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAuthenticationResultServerFinal] (val x: Self) extends AnyVal {
     
     inline def setServerConnection(value: MFServerConnection): Self = StObject.set(x, "ServerConnection", value.asInstanceOf[js.Any])
   }

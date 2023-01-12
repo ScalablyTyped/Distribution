@@ -65,7 +65,8 @@ object IConstraintRenderDefinition {
     __obj.asInstanceOf[IConstraintRenderDefinition]
   }
   
-  extension [Self <: IConstraintRenderDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConstraintRenderDefinition] (val x: Self) extends AnyVal {
     
     inline def setAnchors(value: Boolean): Self = StObject.set(x, "anchors", value.asInstanceOf[js.Any])
     

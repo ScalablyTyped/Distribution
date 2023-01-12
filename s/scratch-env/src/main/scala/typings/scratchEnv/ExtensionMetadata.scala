@@ -36,7 +36,8 @@ object ExtensionMetadata {
     __obj.asInstanceOf[ExtensionMetadata]
   }
   
-  extension [Self <: ExtensionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtensionMetadata] (val x: Self) extends AnyVal {
     
     inline def setBlockIconURI(value: String): Self = StObject.set(x, "blockIconURI", value.asInstanceOf[js.Any])
     

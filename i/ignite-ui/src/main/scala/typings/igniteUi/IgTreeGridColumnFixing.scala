@@ -131,7 +131,8 @@ object IgTreeGridColumnFixing {
     __obj.asInstanceOf[IgTreeGridColumnFixing]
   }
   
-  extension [Self <: IgTreeGridColumnFixing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridColumnFixing] (val x: Self) extends AnyVal {
     
     inline def setColumnFixed(value: (/* event */ Event, /* ui */ ColumnFixedEventUIParam) => Unit): Self = StObject.set(x, "columnFixed", js.Any.fromFunction2(value))
     

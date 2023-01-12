@@ -20,7 +20,8 @@ object IntegerSchema {
     __obj.asInstanceOf[IntegerSchema]
   }
   
-  extension [Self <: IntegerSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegerSchema] (val x: Self) extends AnyVal {
     
     inline def setType(value: integer): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object LocationPokemon {
     __obj.asInstanceOf[LocationPokemon]
   }
   
-  extension [Self <: LocationPokemon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationPokemon] (val x: Self) extends AnyVal {
     
     inline def setDay_times(value: js.Array[String]): Self = StObject.set(x, "day_times", value.asInstanceOf[js.Any])
     

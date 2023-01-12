@@ -17,7 +17,8 @@ object ScriptField {
     __obj.asInstanceOf[ScriptField]
   }
   
-  extension [Self <: ScriptField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScriptField] (val x: Self) extends AnyVal {
     
     inline def setIgnore_failure(value: Boolean): Self = StObject.set(x, "ignore_failure", value.asInstanceOf[js.Any])
     

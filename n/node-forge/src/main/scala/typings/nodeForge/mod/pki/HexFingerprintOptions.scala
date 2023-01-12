@@ -21,7 +21,8 @@ object HexFingerprintOptions {
     __obj.asInstanceOf[HexFingerprintOptions]
   }
   
-  extension [Self <: HexFingerprintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HexFingerprintOptions] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: hex): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
   }

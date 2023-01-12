@@ -42,7 +42,8 @@ object MemberVariableDeclaration {
     __obj.asInstanceOf[MemberVariableDeclaration]
   }
   
-  extension [Self <: MemberVariableDeclaration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberVariableDeclaration] (val x: Self) extends AnyVal {
     
     inline def setModifiers(value: js.Array[PullElementFlags]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object anon {
       __obj.asInstanceOf[Delayed]
     }
     
-    extension [Self <: Delayed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delayed] (val x: Self) extends AnyVal {
       
       inline def setDelayed(value: Record[String, String]): Self = StObject.set(x, "delayed", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Fragments]
     }
     
-    extension [Self <: Fragments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragments] (val x: Self) extends AnyVal {
       
       inline def setFragments(value: Boolean): Self = StObject.set(x, "fragments", value.asInstanceOf[js.Any])
       
@@ -69,7 +71,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: typings.snabbdom.buildVnodeMod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[PartialModule]
     }
     
-    extension [Self <: PartialModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialModule] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: (/* emptyVNode */ VNode_, /* vNode */ VNode_) => Any): Self = StObject.set(x, "create", js.Any.fromFunction2(value))
       

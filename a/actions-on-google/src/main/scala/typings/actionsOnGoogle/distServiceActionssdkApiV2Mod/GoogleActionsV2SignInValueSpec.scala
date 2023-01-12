@@ -20,7 +20,8 @@ object GoogleActionsV2SignInValueSpec {
     __obj.asInstanceOf[GoogleActionsV2SignInValueSpec]
   }
   
-  extension [Self <: GoogleActionsV2SignInValueSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2SignInValueSpec] (val x: Self) extends AnyVal {
     
     inline def setOptContext(value: String): Self = StObject.set(x, "optContext", value.asInstanceOf[js.Any])
     

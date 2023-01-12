@@ -19,7 +19,8 @@ object ConfigDeploymentInfo {
     __obj.asInstanceOf[ConfigDeploymentInfo]
   }
   
-  extension [Self <: ConfigDeploymentInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigDeploymentInfo] (val x: Self) extends AnyVal {
     
     inline def setRegion(value: String): Self = StObject.set(x, "region", value.asInstanceOf[js.Any])
     

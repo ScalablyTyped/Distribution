@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Attributes[Context, InitialProps]]
     }
     
-    extension [Self <: Attributes[?, ?], Context, InitialProps](x: Self & (Attributes[Context, InitialProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attributes[?, ?], Context, InitialProps] (val x: Self & (Attributes[Context, InitialProps])) extends AnyVal {
       
       inline def setAttributes(value: js.Array[AttributeExpressionData[Context]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[ParentScope]
     }
     
-    extension [Self <: ParentScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentScope] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[AttributeExpressionData[Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

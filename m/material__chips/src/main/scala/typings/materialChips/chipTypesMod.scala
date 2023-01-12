@@ -34,7 +34,8 @@ object chipTypesMod {
       __obj.asInstanceOf[MDCChipAnimationEventDetail]
     }
     
-    extension [Self <: MDCChipAnimationEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipAnimationEventDetail] (val x: Self) extends AnyVal {
       
       inline def setAddedAnnouncement(value: String): Self = StObject.set(x, "addedAnnouncement", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object chipTypesMod {
       __obj.asInstanceOf[MDCChipInteractionEventDetail]
     }
     
-    extension [Self <: MDCChipInteractionEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipInteractionEventDetail] (val x: Self) extends AnyVal {
       
       inline def setActionID(value: String): Self = StObject.set(x, "actionID", value.asInstanceOf[js.Any])
       
@@ -113,7 +115,8 @@ object chipTypesMod {
       __obj.asInstanceOf[MDCChipNavigationEventDetail]
     }
     
-    extension [Self <: MDCChipNavigationEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCChipNavigationEventDetail] (val x: Self) extends AnyVal {
       
       inline def setChipID(value: String): Self = StObject.set(x, "chipID", value.asInstanceOf[js.Any])
       

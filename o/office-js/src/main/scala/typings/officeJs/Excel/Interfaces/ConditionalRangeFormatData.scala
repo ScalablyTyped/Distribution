@@ -47,7 +47,8 @@ object ConditionalRangeFormatData {
     __obj.asInstanceOf[ConditionalRangeFormatData]
   }
   
-  extension [Self <: ConditionalRangeFormatData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalRangeFormatData] (val x: Self) extends AnyVal {
     
     inline def setBorders(value: js.Array[ConditionalRangeBorderData]): Self = StObject.set(x, "borders", value.asInstanceOf[js.Any])
     

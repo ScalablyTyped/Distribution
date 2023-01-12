@@ -19,7 +19,8 @@ object SaveInfo {
     __obj.asInstanceOf[SaveInfo]
   }
   
-  extension [Self <: SaveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SaveInfo] (val x: Self) extends AnyVal {
     
     inline def `setSave-document-format`(value: MimeMediaType): Self = StObject.set(x, "save-document-format", value.asInstanceOf[js.Any])
     

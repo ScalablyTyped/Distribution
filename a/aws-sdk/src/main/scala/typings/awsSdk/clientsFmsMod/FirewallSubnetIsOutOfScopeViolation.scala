@@ -38,7 +38,8 @@ object FirewallSubnetIsOutOfScopeViolation {
     __obj.asInstanceOf[FirewallSubnetIsOutOfScopeViolation]
   }
   
-  extension [Self <: FirewallSubnetIsOutOfScopeViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirewallSubnetIsOutOfScopeViolation] (val x: Self) extends AnyVal {
     
     inline def setFirewallSubnetId(value: ResourceId): Self = StObject.set(x, "FirewallSubnetId", value.asInstanceOf[js.Any])
     

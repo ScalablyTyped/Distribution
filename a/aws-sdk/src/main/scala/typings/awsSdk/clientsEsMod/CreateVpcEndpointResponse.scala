@@ -18,7 +18,8 @@ object CreateVpcEndpointResponse {
     __obj.asInstanceOf[CreateVpcEndpointResponse]
   }
   
-  extension [Self <: CreateVpcEndpointResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVpcEndpointResponse] (val x: Self) extends AnyVal {
     
     inline def setVpcEndpoint(value: VpcEndpoint): Self = StObject.set(x, "VpcEndpoint", value.asInstanceOf[js.Any])
   }

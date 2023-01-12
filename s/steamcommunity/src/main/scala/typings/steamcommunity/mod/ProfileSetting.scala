@@ -42,7 +42,8 @@ object ProfileSetting {
     __obj.asInstanceOf[ProfileSetting]
   }
   
-  extension [Self <: ProfileSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfileSetting] (val x: Self) extends AnyVal {
     
     inline def setComments(value: Any): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MathZoom {
     __obj.asInstanceOf[MathZoom]
   }
   
-  extension [Self <: MathZoom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MathZoom] (val x: Self) extends AnyVal {
     
     inline def setStyles(value: Any): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
   }

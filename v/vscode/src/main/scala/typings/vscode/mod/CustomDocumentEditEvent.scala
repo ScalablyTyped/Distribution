@@ -49,7 +49,8 @@ object CustomDocumentEditEvent {
     __obj.asInstanceOf[CustomDocumentEditEvent[T]]
   }
   
-  extension [Self <: CustomDocumentEditEvent[?], T /* <: CustomDocument */](x: Self & CustomDocumentEditEvent[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomDocumentEditEvent[?], T /* <: CustomDocument */] (val x: Self & CustomDocumentEditEvent[T]) extends AnyVal {
     
     inline def setDocument(value: T): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

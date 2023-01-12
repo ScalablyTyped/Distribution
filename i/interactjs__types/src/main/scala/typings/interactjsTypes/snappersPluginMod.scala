@@ -39,7 +39,8 @@ object snappersPluginMod extends Shortcut {
         __obj.asInstanceOf[InteractStatic]
       }
       
-      extension [Self <: InteractStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: InteractStatic] (val x: Self) extends AnyVal {
         
         inline def setCreateSnapGrid(value: /* grid */ GridOptions => SnapFunction & CoordFields): Self = StObject.set(x, "createSnapGrid", js.Any.fromFunction1(value))
         

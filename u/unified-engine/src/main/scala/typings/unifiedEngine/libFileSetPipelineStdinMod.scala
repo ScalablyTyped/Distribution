@@ -25,7 +25,8 @@ object libFileSetPipelineStdinMod {
       __obj.asInstanceOf[Context]
     }
     
-    extension [Self <: Context](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Context] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String | VFile]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

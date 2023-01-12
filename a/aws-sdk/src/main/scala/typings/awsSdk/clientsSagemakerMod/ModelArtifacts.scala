@@ -18,7 +18,8 @@ object ModelArtifacts {
     __obj.asInstanceOf[ModelArtifacts]
   }
   
-  extension [Self <: ModelArtifacts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelArtifacts] (val x: Self) extends AnyVal {
     
     inline def setS3ModelArtifacts(value: S3Uri): Self = StObject.set(x, "S3ModelArtifacts", value.asInstanceOf[js.Any])
   }

@@ -16,7 +16,8 @@ object NavigatorOnLine {
     __obj.asInstanceOf[NavigatorOnLine]
   }
   
-  extension [Self <: NavigatorOnLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorOnLine] (val x: Self) extends AnyVal {
     
     inline def setOnLine(value: scala.Boolean): Self = StObject.set(x, "onLine", value.asInstanceOf[js.Any])
   }

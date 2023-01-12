@@ -233,7 +233,8 @@ object XDatabaseDataProvider {
     __obj.asInstanceOf[XDatabaseDataProvider]
   }
   
-  extension [Self <: XDatabaseDataProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDatabaseDataProvider] (val x: Self) extends AnyVal {
     
     inline def setActiveConnection(value: XConnection): Self = StObject.set(x, "ActiveConnection", value.asInstanceOf[js.Any])
     

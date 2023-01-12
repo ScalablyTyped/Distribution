@@ -21,7 +21,8 @@ object PersonGroupResponses {
       __obj.asInstanceOf[typings.projectOxford.mod.PersonGroupResponses.PersonGroup]
     }
     
-    extension [Self <: typings.projectOxford.mod.PersonGroupResponses.PersonGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.projectOxford.mod.PersonGroupResponses.PersonGroup] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object PersonGroupResponses {
       __obj.asInstanceOf[TrainingStatus]
     }
     
-    extension [Self <: TrainingStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TrainingStatus] (val x: Self) extends AnyVal {
       
       inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
       

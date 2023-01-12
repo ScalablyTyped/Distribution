@@ -24,7 +24,8 @@ object ConcurrencyLimit {
     __obj.asInstanceOf[ConcurrencyLimit]
   }
   
-  extension [Self <: ConcurrencyLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConcurrencyLimit] (val x: Self) extends AnyVal {
     
     inline def setMac(value: Double): Self = StObject.set(x, "mac", value.asInstanceOf[js.Any])
     

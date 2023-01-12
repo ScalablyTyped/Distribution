@@ -86,7 +86,8 @@ object Tile {
     __obj.asInstanceOf[Tile]
   }
   
-  extension [Self <: Tile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tile] (val x: Self) extends AnyVal {
     
     inline def setBounds(value: js.Array[Double]): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
     

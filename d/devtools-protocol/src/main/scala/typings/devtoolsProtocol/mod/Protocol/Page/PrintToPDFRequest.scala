@@ -106,7 +106,8 @@ object PrintToPDFRequest {
     __obj.asInstanceOf[PrintToPDFRequest]
   }
   
-  extension [Self <: PrintToPDFRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintToPDFRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayHeaderFooter(value: Boolean): Self = StObject.set(x, "displayHeaderFooter", value.asInstanceOf[js.Any])
     

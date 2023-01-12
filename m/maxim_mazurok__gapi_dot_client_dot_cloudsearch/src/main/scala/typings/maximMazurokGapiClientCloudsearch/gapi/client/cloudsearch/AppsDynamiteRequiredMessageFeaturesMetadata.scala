@@ -15,7 +15,8 @@ object AppsDynamiteRequiredMessageFeaturesMetadata {
     __obj.asInstanceOf[AppsDynamiteRequiredMessageFeaturesMetadata]
   }
   
-  extension [Self <: AppsDynamiteRequiredMessageFeaturesMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteRequiredMessageFeaturesMetadata] (val x: Self) extends AnyVal {
     
     inline def setRequiredFeatures(value: js.Array[String]): Self = StObject.set(x, "requiredFeatures", value.asInstanceOf[js.Any])
     

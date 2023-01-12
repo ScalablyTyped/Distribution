@@ -26,7 +26,8 @@ object IsHardRedirect {
     __obj.asInstanceOf[IsHardRedirect]
   }
   
-  extension [Self <: IsHardRedirect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsHardRedirect] (val x: Self) extends AnyVal {
     
     inline def setIsHardRedirect(value: Boolean): Self = StObject.set(x, "isHardRedirect", value.asInstanceOf[js.Any])
     

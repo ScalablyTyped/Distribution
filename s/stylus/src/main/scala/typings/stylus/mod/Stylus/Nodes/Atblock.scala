@@ -36,7 +36,8 @@ object Atblock {
     __obj.asInstanceOf[Atblock]
   }
   
-  extension [Self <: Atblock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Atblock] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: Block): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

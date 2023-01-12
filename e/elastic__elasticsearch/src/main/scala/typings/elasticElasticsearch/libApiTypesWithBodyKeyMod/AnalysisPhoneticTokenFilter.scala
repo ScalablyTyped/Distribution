@@ -37,7 +37,8 @@ object AnalysisPhoneticTokenFilter {
     __obj.asInstanceOf[AnalysisPhoneticTokenFilter]
   }
   
-  extension [Self <: AnalysisPhoneticTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisPhoneticTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setEncoder(value: AnalysisPhoneticEncoder): Self = StObject.set(x, "encoder", value.asInstanceOf[js.Any])
     

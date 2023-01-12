@@ -17,7 +17,8 @@ object SVGPolygonAttributes {
     __obj.asInstanceOf[SVGPolygonAttributes]
   }
   
-  extension [Self <: SVGPolygonAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPolygonAttributes] (val x: Self) extends AnyVal {
     
     inline def setPoints(value: String): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
   }

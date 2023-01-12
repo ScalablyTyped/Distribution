@@ -32,7 +32,8 @@ object ShareOpenGraphDialogParams {
     __obj.asInstanceOf[ShareOpenGraphDialogParams]
   }
   
-  extension [Self <: ShareOpenGraphDialogParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareOpenGraphDialogParams] (val x: Self) extends AnyVal {
     
     inline def setAction_properties(value: StringDictionary[Any]): Self = StObject.set(x, "action_properties", value.asInstanceOf[js.Any])
     

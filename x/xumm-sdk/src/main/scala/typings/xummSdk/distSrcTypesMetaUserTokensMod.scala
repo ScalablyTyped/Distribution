@@ -17,7 +17,8 @@ object distSrcTypesMetaUserTokensMod {
       __obj.asInstanceOf[UserTokenResponse]
     }
     
-    extension [Self <: UserTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setTokens(value: js.Array[UserTokenValidity]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object distSrcTypesMetaUserTokensMod {
       __obj.asInstanceOf[UserTokenValidity]
     }
     
-    extension [Self <: UserTokenValidity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserTokenValidity] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

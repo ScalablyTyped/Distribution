@@ -32,7 +32,8 @@ object tsTypesEnsureMod {
       __obj.asInstanceOf[EnsureBaseOptions]
     }
     
-    extension [Self <: EnsureBaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureBaseOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: ErrorConstructor): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object tsTypesEnsureMod {
       __obj.asInstanceOf[EnsureDefault[T]]
     }
     
-    extension [Self <: EnsureDefault[?], T](x: Self & EnsureDefault[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureDefault[?], T] (val x: Self & EnsureDefault[T]) extends AnyVal {
       
       inline def setDefault(value: T): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -86,7 +88,8 @@ object tsTypesEnsureMod {
       __obj.asInstanceOf[EnsureIsOptional]
     }
     
-    extension [Self <: EnsureIsOptional](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureIsOptional] (val x: Self) extends AnyVal {
       
       inline def setIsOptional(value: Boolean): Self = StObject.set(x, "isOptional", value.asInstanceOf[js.Any])
     }
@@ -107,7 +110,8 @@ object tsTypesEnsureMod {
       __obj.asInstanceOf[EnsureOptions]
     }
     
-    extension [Self <: EnsureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnsureOptions] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

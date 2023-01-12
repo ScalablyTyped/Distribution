@@ -23,7 +23,8 @@ object CancelSpotFleetRequestsErrorItem {
     __obj.asInstanceOf[CancelSpotFleetRequestsErrorItem]
   }
   
-  extension [Self <: CancelSpotFleetRequestsErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSpotFleetRequestsErrorItem] (val x: Self) extends AnyVal {
     
     inline def setError(value: CancelSpotFleetRequestsError): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

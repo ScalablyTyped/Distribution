@@ -41,7 +41,8 @@ object AggregateQuery {
     __obj.asInstanceOf[AggregateQuery[T]]
   }
   
-  extension [Self <: AggregateQuery[?], T /* <: AggregateSpec */](x: Self & AggregateQuery[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateQuery[?], T /* <: AggregateSpec */] (val x: Self & AggregateQuery[T]) extends AnyVal {
     
     inline def setGet(value: () => js.Promise[AggregateQuerySnapshot[T]]): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

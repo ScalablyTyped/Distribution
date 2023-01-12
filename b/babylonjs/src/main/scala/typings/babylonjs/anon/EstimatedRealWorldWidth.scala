@@ -24,7 +24,8 @@ object EstimatedRealWorldWidth {
     __obj.asInstanceOf[EstimatedRealWorldWidth]
   }
   
-  extension [Self <: EstimatedRealWorldWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EstimatedRealWorldWidth] (val x: Self) extends AnyVal {
     
     inline def setEstimatedRealWorldWidth(value: Double): Self = StObject.set(x, "estimatedRealWorldWidth", value.asInstanceOf[js.Any])
     

@@ -54,7 +54,8 @@ object componentsListListMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object componentsListListMod {
       __obj.asInstanceOf[ListTheme]
     }
     
-    extension [Self <: ListTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListTheme] (val x: Self) extends AnyVal {
       
       inline def setList(value: String): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       

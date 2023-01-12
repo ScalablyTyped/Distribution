@@ -21,7 +21,8 @@ object TreeListColumnReorderEvent {
     __obj.asInstanceOf[TreeListColumnReorderEvent]
   }
   
-  extension [Self <: TreeListColumnReorderEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeListColumnReorderEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

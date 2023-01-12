@@ -62,7 +62,8 @@ object typesCreatePullRequestInputMod {
       __obj.asInstanceOf[CreatePullRequestInput]
     }
     
-    extension [Self <: CreatePullRequestInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePullRequestInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

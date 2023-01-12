@@ -56,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Bytes]
     }
     
-    extension [Self <: Bytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bytes] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object anon {
       __obj.asInstanceOf[BytesDelta]
     }
     
-    extension [Self <: BytesDelta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BytesDelta] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -149,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Headers]
     }
     
-    extension [Self <: Headers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Headers] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Speed]
     }
     
-    extension [Self <: Speed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Speed] (val x: Self) extends AnyVal {
       
       inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
       

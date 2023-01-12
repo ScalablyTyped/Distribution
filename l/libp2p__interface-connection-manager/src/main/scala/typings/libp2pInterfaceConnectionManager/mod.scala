@@ -64,7 +64,8 @@ object mod {
       __obj.asInstanceOf[ConnectionManagerEvents]
     }
     
-    extension [Self <: ConnectionManagerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionManagerEvents] (val x: Self) extends AnyVal {
       
       inline def setPeerColonconnect(value: CustomEvent[Connection]): Self = StObject.set(x, "peer:connect", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object typesTooManyEntriesInBatchRequestMod {
       __obj.asInstanceOf[TooManyEntriesInBatchRequest]
     }
     
-    extension [Self <: TooManyEntriesInBatchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooManyEntriesInBatchRequest] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.TooManyEntriesInBatchRequest): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object PutImageRecipePolicyResponse {
     __obj.asInstanceOf[PutImageRecipePolicyResponse]
   }
   
-  extension [Self <: PutImageRecipePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutImageRecipePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setImageRecipeArn(value: ImageRecipeArn): Self = StObject.set(x, "imageRecipeArn", value.asInstanceOf[js.Any])
     

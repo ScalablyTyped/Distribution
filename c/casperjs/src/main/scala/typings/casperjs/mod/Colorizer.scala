@@ -17,7 +17,8 @@ object Colorizer {
     __obj.asInstanceOf[Colorizer]
   }
   
-  extension [Self <: Colorizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Colorizer] (val x: Self) extends AnyVal {
     
     inline def setColorize(value: (String, String) => Unit): Self = StObject.set(x, "colorize", js.Any.fromFunction2(value))
     

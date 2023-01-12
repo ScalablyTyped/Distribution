@@ -29,7 +29,8 @@ object DnsKeysListResponse {
     __obj.asInstanceOf[DnsKeysListResponse]
   }
   
-  extension [Self <: DnsKeysListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsKeysListResponse] (val x: Self) extends AnyVal {
     
     inline def setDnsKeys(value: js.Array[DnsKey]): Self = StObject.set(x, "dnsKeys", value.asInstanceOf[js.Any])
     

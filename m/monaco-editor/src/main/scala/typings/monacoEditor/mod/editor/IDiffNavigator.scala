@@ -21,7 +21,8 @@ object IDiffNavigator {
     __obj.asInstanceOf[IDiffNavigator]
   }
   
-  extension [Self <: IDiffNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDiffNavigator] (val x: Self) extends AnyVal {
     
     inline def setCanNavigate(value: () => Boolean): Self = StObject.set(x, "canNavigate", js.Any.fromFunction0(value))
     

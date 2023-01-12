@@ -69,7 +69,8 @@ object IWebElementFinders {
     __obj.asInstanceOf[IWebElementFinders]
   }
   
-  extension [Self <: IWebElementFinders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebElementFinders] (val x: Self) extends AnyVal {
     
     inline def setFindElement(value: Locator => WebElementPromise): Self = StObject.set(x, "findElement", js.Any.fromFunction1(value))
     

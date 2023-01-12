@@ -346,7 +346,8 @@ object mod {
       __obj.asInstanceOf[GraylogConfig]
     }
     
-    extension [Self <: GraylogConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraylogConfig] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

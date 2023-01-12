@@ -22,7 +22,8 @@ object IdentifierTransform {
     __obj.asInstanceOf[IdentifierTransform]
   }
   
-  extension [Self <: IdentifierTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentifierTransform] (val x: Self) extends AnyVal {
     
     inline def setAs(value: String | SignalRef): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
     

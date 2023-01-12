@@ -19,7 +19,8 @@ object IClientEventsGetRequest {
     __obj.asInstanceOf[IClientEventsGetRequest]
   }
   
-  extension [Self <: IClientEventsGetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientEventsGetRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockIds(value: js.Array[String]): Self = StObject.set(x, "blockIds", value.asInstanceOf[js.Any])
     

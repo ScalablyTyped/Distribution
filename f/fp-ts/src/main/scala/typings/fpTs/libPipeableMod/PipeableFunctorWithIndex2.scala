@@ -29,7 +29,8 @@ object PipeableFunctorWithIndex2 {
     __obj.asInstanceOf[PipeableFunctorWithIndex2[F, I]]
   }
   
-  extension [Self <: PipeableFunctorWithIndex2[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I](x: Self & (PipeableFunctorWithIndex2[F, I])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFunctorWithIndex2[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, I] (val x: Self & (PipeableFunctorWithIndex2[F, I])) extends AnyVal {
     
     inline def setMapWithIndex(
       value: js.Function2[/* i */ I, Any, Any] => js.Function1[

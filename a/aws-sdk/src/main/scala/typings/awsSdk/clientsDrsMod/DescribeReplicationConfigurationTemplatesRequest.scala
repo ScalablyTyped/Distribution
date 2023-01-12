@@ -28,7 +28,8 @@ object DescribeReplicationConfigurationTemplatesRequest {
     __obj.asInstanceOf[DescribeReplicationConfigurationTemplatesRequest]
   }
   
-  extension [Self <: DescribeReplicationConfigurationTemplatesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReplicationConfigurationTemplatesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: StrictlyPositiveInteger): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

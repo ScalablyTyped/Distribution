@@ -63,7 +63,8 @@ object PutScalingPolicyInput {
     __obj.asInstanceOf[PutScalingPolicyInput]
   }
   
-  extension [Self <: PutScalingPolicyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutScalingPolicyInput] (val x: Self) extends AnyVal {
     
     inline def setComparisonOperator(value: ComparisonOperatorType): Self = StObject.set(x, "ComparisonOperator", value.asInstanceOf[js.Any])
     

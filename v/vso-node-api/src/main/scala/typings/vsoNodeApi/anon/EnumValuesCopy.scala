@@ -15,7 +15,8 @@ object EnumValuesCopy {
     __obj.asInstanceOf[EnumValuesCopy]
   }
   
-  extension [Self <: EnumValuesCopy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesCopy] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: Copy): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

@@ -31,7 +31,8 @@ object PickImplloggingPartialPic {
     __obj.asInstanceOf[PickImplloggingPartialPic]
   }
   
-  extension [Self <: PickImplloggingPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplloggingPartialPic] (val x: Self) extends AnyVal {
     
     inline def setLogging(value: String): Self = StObject.set(x, "logging", value.asInstanceOf[js.Any])
     

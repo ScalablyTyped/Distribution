@@ -19,7 +19,8 @@ object IAilmentRegistry {
     __obj.asInstanceOf[IAilmentRegistry]
   }
   
-  extension [Self <: IAilmentRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAilmentRegistry] (val x: Self) extends AnyVal {
     
     inline def setAilments(value: js.Array[IAilment]): Self = StObject.set(x, "ailments", value.asInstanceOf[js.Any])
     

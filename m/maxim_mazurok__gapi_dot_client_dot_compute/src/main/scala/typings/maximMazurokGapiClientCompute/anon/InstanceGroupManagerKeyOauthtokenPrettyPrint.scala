@@ -68,7 +68,8 @@ object InstanceGroupManagerKeyOauthtokenPrettyPrint {
     __obj.asInstanceOf[InstanceGroupManagerKeyOauthtokenPrettyPrint]
   }
   
-  extension [Self <: InstanceGroupManagerKeyOauthtokenPrettyPrint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupManagerKeyOauthtokenPrettyPrint] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DataProtocolClientCapabilities {
     __obj.asInstanceOf[DataProtocolClientCapabilities]
   }
   
-  extension [Self <: DataProtocolClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProtocolClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     

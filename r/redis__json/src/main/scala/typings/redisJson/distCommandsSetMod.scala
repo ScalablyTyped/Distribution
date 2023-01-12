@@ -34,7 +34,8 @@ object distCommandsSetMod {
       __obj.asInstanceOf[NX]
     }
     
-    extension [Self <: NX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NX] (val x: Self) extends AnyVal {
       
       inline def setNX(value: `true`): Self = StObject.set(x, "NX", value.asInstanceOf[js.Any])
     }
@@ -51,7 +52,8 @@ object distCommandsSetMod {
       __obj.asInstanceOf[XX]
     }
     
-    extension [Self <: XX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XX] (val x: Self) extends AnyVal {
       
       inline def setXX(value: `true`): Self = StObject.set(x, "XX", value.asInstanceOf[js.Any])
     }

@@ -40,7 +40,8 @@ object SmimeInfo {
     __obj.asInstanceOf[SmimeInfo]
   }
   
-  extension [Self <: SmimeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmimeInfo] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKeyPassword(value: String): Self = StObject.set(x, "encryptedKeyPassword", value.asInstanceOf[js.Any])
     

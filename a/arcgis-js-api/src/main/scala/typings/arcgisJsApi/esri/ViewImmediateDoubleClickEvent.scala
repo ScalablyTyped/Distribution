@@ -45,7 +45,8 @@ object ViewImmediateDoubleClickEvent {
     __obj.asInstanceOf[ViewImmediateDoubleClickEvent]
   }
   
-  extension [Self <: ViewImmediateDoubleClickEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewImmediateDoubleClickEvent] (val x: Self) extends AnyVal {
     
     inline def setButton(value: `0` | `1` | `2`): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

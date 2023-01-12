@@ -51,7 +51,8 @@ object INxAppProperties {
     __obj.asInstanceOf[INxAppProperties]
   }
   
-  extension [Self <: INxAppProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAppProperties] (val x: Self) extends AnyVal {
     
     inline def setQLastReloadTime(value: String): Self = StObject.set(x, "qLastReloadTime", value.asInstanceOf[js.Any])
     

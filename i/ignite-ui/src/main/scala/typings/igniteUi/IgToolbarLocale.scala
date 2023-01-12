@@ -31,7 +31,8 @@ object IgToolbarLocale {
     __obj.asInstanceOf[IgToolbarLocale]
   }
   
-  extension [Self <: IgToolbarLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgToolbarLocale] (val x: Self) extends AnyVal {
     
     inline def setCollapseButtonTitle(value: Any): Self = StObject.set(x, "collapseButtonTitle", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object SizeSchemeForPolyline {
     __obj.asInstanceOf[SizeSchemeForPolyline]
   }
   
-  extension [Self <: SizeSchemeForPolyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SizeSchemeForPolyline] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

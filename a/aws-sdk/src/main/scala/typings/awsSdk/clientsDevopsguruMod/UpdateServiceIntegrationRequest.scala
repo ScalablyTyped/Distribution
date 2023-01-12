@@ -18,7 +18,8 @@ object UpdateServiceIntegrationRequest {
     __obj.asInstanceOf[UpdateServiceIntegrationRequest]
   }
   
-  extension [Self <: UpdateServiceIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateServiceIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setServiceIntegration(value: UpdateServiceIntegrationConfig): Self = StObject.set(x, "ServiceIntegration", value.asInstanceOf[js.Any])
   }

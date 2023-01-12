@@ -47,7 +47,8 @@ object IFontWeightsStatics {
     __obj.asInstanceOf[IFontWeightsStatics]
   }
   
-  extension [Self <: IFontWeightsStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFontWeightsStatics] (val x: Self) extends AnyVal {
     
     inline def setBlack(value: FontWeight): Self = StObject.set(x, "black", value.asInstanceOf[js.Any])
     

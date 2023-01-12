@@ -33,7 +33,8 @@ object StartDBInstanceAutomatedBackupsReplicationMessage {
     __obj.asInstanceOf[StartDBInstanceAutomatedBackupsReplicationMessage]
   }
   
-  extension [Self <: StartDBInstanceAutomatedBackupsReplicationMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartDBInstanceAutomatedBackupsReplicationMessage] (val x: Self) extends AnyVal {
     
     inline def setBackupRetentionPeriod(value: IntegerOptional): Self = StObject.set(x, "BackupRetentionPeriod", value.asInstanceOf[js.Any])
     

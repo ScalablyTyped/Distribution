@@ -132,7 +132,8 @@ object InfoWindow {
       __obj.asInstanceOf[EventMap[I]]
     }
     
-    extension [Self <: EventMap[?], I](x: Self & EventMap[I]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap[?], I] (val x: Self & EventMap[I]) extends AnyVal {
       
       inline def setChange(value: Event_[change, Target[I]]): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object InfoWindow {
       __obj.asInstanceOf[Options[ExtraData]]
     }
     
-    extension [Self <: Options[?], ExtraData](x: Self & Options[ExtraData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options[?], ExtraData] (val x: Self & Options[ExtraData]) extends AnyVal {
       
       inline def setAnchor(value: Anchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       

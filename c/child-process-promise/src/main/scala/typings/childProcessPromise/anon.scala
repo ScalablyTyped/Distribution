@@ -59,7 +59,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsExecFileOp]
     }
     
-    extension [Self <: ReadonlyOptionsExecFileOp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsExecFileOp] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsExecFileOpCapture]
     }
     
-    extension [Self <: ReadonlyOptionsExecFileOpCapture](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsExecFileOpCapture] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsExecOption]
     }
     
-    extension [Self <: ReadonlyOptionsExecOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsExecOption] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -363,7 +366,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsForkOption]
     }
     
-    extension [Self <: ReadonlyOptionsForkOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsForkOption] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -483,7 +487,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsSpawnOptio]
     }
     
-    extension [Self <: ReadonlyOptionsSpawnOptio](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsSpawnOptio] (val x: Self) extends AnyVal {
       
       inline def setArgv0(value: String): Self = StObject.set(x, "argv0", value.asInstanceOf[js.Any])
       
@@ -595,7 +600,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsencodingBu_]
     }
     
-    extension [Self <: ReadonlyOptionsencodingBu_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsencodingBu_] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -693,7 +699,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsencodingbu]
     }
     
-    extension [Self <: ReadonlyOptionsencodingbu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsencodingbu] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       
@@ -793,7 +800,8 @@ object anon {
       __obj.asInstanceOf[ReadonlyOptionsencodingst]
     }
     
-    extension [Self <: ReadonlyOptionsencodingst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadonlyOptionsencodingst] (val x: Self) extends AnyVal {
       
       inline def setCapture(value: (js.Array[stdout | stderr | Any]) | (js.Tuple2[stdout | stderr, stderr | stdout])): Self = StObject.set(x, "capture", value.asInstanceOf[js.Any])
       

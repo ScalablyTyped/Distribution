@@ -73,7 +73,8 @@ object RaisedButtonProps {
     __obj.asInstanceOf[RaisedButtonProps]
   }
   
-  extension [Self <: RaisedButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RaisedButtonProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

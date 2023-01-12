@@ -34,7 +34,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseRecordMetadata]
     }
     
-    extension [Self <: FirehoseRecordMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseRecordMetadata] (val x: Self) extends AnyVal {
       
       inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationEvent]
     }
     
-    extension [Self <: FirehoseTransformationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseTransformationEvent] (val x: Self) extends AnyVal {
       
       inline def setDeliveryStreamArn(value: String): Self = StObject.set(x, "deliveryStreamArn", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationEventRecord]
     }
     
-    extension [Self <: FirehoseTransformationEventRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseTransformationEventRecord] (val x: Self) extends AnyVal {
       
       inline def setApproximateArrivalTimestamp(value: Double): Self = StObject.set(x, "approximateArrivalTimestamp", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationMetadata]
     }
     
-    extension [Self <: FirehoseTransformationMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseTransformationMetadata] (val x: Self) extends AnyVal {
       
       inline def setPartitionKeys(value: StringDictionary[String]): Self = StObject.set(x, "partitionKeys", value.asInstanceOf[js.Any])
     }
@@ -169,7 +173,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationResult]
     }
     
-    extension [Self <: FirehoseTransformationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseTransformationResult] (val x: Self) extends AnyVal {
       
       inline def setRecords(value: js.Array[FirehoseTransformationResultRecord]): Self = StObject.set(x, "records", value.asInstanceOf[js.Any])
       
@@ -195,7 +200,8 @@ object triggerKinesisFirehoseTransformationMod {
       __obj.asInstanceOf[FirehoseTransformationResultRecord]
     }
     
-    extension [Self <: FirehoseTransformationResultRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirehoseTransformationResultRecord] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object GetWebACLRequest {
     __obj.asInstanceOf[GetWebACLRequest]
   }
   
-  extension [Self <: GetWebACLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWebACLRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

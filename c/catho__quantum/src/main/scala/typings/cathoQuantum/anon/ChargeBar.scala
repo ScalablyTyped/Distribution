@@ -15,7 +15,8 @@ object ChargeBar {
     __obj.asInstanceOf[ChargeBar]
   }
   
-  extension [Self <: ChargeBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChargeBar] (val x: Self) extends AnyVal {
     
     inline def setChargeBar(value: js.Object): Self = StObject.set(x, "chargeBar", value.asInstanceOf[js.Any])
     

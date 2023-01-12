@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[PartialLocation]
     }
     
-    extension [Self <: PartialLocation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLocation] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object anon {
       __obj.asInstanceOf[PartialPath]
     }
     
-    extension [Self <: PartialPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPath] (val x: Self) extends AnyVal {
       
       inline def setHash(value: Hash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

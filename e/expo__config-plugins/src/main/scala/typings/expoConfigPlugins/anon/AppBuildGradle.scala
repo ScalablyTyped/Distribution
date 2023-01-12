@@ -79,7 +79,8 @@ object AppBuildGradle {
     __obj.asInstanceOf[AppBuildGradle]
   }
   
-  extension [Self <: AppBuildGradle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppBuildGradle] (val x: Self) extends AnyVal {
     
     inline def setAppBuildGradle(value: Mod[GradleProjectFile]): Self = StObject.set(x, "appBuildGradle", value.asInstanceOf[js.Any])
     

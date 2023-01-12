@@ -59,7 +59,8 @@ object EventTarget {
     __obj.asInstanceOf[EventTarget]
   }
   
-  extension [Self <: EventTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTarget] (val x: Self) extends AnyVal {
     
     inline def setEventListeners(value: /* eventName */ js.UndefOr[String] => js.Array[EventListenerOrEventListenerObject]): Self = StObject.set(x, "eventListeners", js.Any.fromFunction1(value))
     

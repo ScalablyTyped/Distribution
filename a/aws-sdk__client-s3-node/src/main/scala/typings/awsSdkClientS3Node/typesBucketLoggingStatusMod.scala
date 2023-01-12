@@ -22,7 +22,8 @@ object typesBucketLoggingStatusMod {
       __obj.asInstanceOf[BucketLoggingStatus]
     }
     
-    extension [Self <: BucketLoggingStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BucketLoggingStatus] (val x: Self) extends AnyVal {
       
       inline def setLoggingEnabled(value: LoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object typesBucketLoggingStatusMod {
       __obj.asInstanceOf[UnmarshalledBucketLoggingStatus]
     }
     
-    extension [Self <: UnmarshalledBucketLoggingStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledBucketLoggingStatus] (val x: Self) extends AnyVal {
       
       inline def setLoggingEnabled(value: UnmarshalledLoggingEnabled): Self = StObject.set(x, "LoggingEnabled", value.asInstanceOf[js.Any])
       

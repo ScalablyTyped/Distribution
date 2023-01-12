@@ -19,7 +19,8 @@ object IDracoCompressionConfiguration {
     __obj.asInstanceOf[IDracoCompressionConfiguration]
   }
   
-  extension [Self <: IDracoCompressionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDracoCompressionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDecoder(value: FallbackUrl): Self = StObject.set(x, "decoder", value.asInstanceOf[js.Any])
   }

@@ -57,7 +57,8 @@ object anon {
       __obj.asInstanceOf[Base64]
     }
     
-    extension [Self <: Base64](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Base64] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypearrayb]
     }
     
-    extension [Self <: GenerateOptionstypearrayb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptionstypearrayb] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypeblob]
     }
     
-    extension [Self <: GenerateOptionstypeblob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptionstypeblob] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -396,7 +399,8 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypenodebu]
     }
     
-    extension [Self <: GenerateOptionstypenodebu](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptionstypenodebu] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -517,7 +521,8 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypestring]
     }
     
-    extension [Self <: GenerateOptionstypestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptionstypestring] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -638,7 +643,8 @@ object anon {
       __obj.asInstanceOf[GenerateOptionstypeuint8a]
     }
     
-    extension [Self <: GenerateOptionstypeuint8a](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenerateOptionstypeuint8a] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: Boolean): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -687,7 +693,8 @@ object anon {
       __obj.asInstanceOf[Level]
     }
     
-    extension [Self <: Level](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Level] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     }

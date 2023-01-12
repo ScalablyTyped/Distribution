@@ -62,7 +62,8 @@ object distLibCommandsMigrateMod {
       __obj.asInstanceOf[MigrateOptions]
     }
     
-    extension [Self <: MigrateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrateOptions] (val x: Self) extends AnyVal {
       
       inline def setAUTH(value: AuthOptions): Self = StObject.set(x, "AUTH", value.asInstanceOf[js.Any])
       

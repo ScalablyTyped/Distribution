@@ -70,7 +70,8 @@ object DataPilotSourceLevel {
     __obj.asInstanceOf[DataPilotSourceLevel]
   }
   
-  extension [Self <: DataPilotSourceLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataPilotSourceLevel] (val x: Self) extends AnyVal {
     
     inline def setShowEmpty(value: Boolean): Self = StObject.set(x, "ShowEmpty", value.asInstanceOf[js.Any])
     

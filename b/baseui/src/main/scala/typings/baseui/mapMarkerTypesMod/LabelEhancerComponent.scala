@@ -21,7 +21,8 @@ object LabelEhancerComponent {
     __obj.asInstanceOf[LabelEhancerComponent]
   }
   
-  extension [Self <: LabelEhancerComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LabelEhancerComponent] (val x: Self) extends AnyVal {
     
     inline def setNeedleHeight(value: Double): Self = StObject.set(x, "needleHeight", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object DisassociateDataShareConsumerMessage {
     __obj.asInstanceOf[DisassociateDataShareConsumerMessage]
   }
   
-  extension [Self <: DisassociateDataShareConsumerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateDataShareConsumerMessage] (val x: Self) extends AnyVal {
     
     inline def setConsumerArn(value: String): Self = StObject.set(x, "ConsumerArn", value.asInstanceOf[js.Any])
     

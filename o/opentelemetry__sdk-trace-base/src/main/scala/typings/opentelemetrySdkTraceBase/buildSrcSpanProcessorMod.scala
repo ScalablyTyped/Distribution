@@ -48,7 +48,8 @@ object buildSrcSpanProcessorMod {
       __obj.asInstanceOf[SpanProcessor]
     }
     
-    extension [Self <: SpanProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanProcessor] (val x: Self) extends AnyVal {
       
       inline def setForceFlush(value: () => js.Promise[Unit]): Self = StObject.set(x, "forceFlush", js.Any.fromFunction0(value))
       

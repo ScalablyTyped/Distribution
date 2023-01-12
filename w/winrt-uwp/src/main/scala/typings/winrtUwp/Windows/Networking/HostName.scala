@@ -45,7 +45,8 @@ object HostName {
     __obj.asInstanceOf[HostName]
   }
   
-  extension [Self <: HostName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostName] (val x: Self) extends AnyVal {
     
     inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     

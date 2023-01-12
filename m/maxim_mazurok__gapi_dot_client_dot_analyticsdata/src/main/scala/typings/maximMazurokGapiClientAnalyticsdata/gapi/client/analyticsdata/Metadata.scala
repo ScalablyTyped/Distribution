@@ -22,7 +22,8 @@ object Metadata {
     __obj.asInstanceOf[Metadata]
   }
   
-  extension [Self <: Metadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: js.Array[DimensionMetadata]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
     

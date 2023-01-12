@@ -29,7 +29,8 @@ object ConfigAnalytics {
     __obj.asInstanceOf[ConfigAnalytics]
   }
   
-  extension [Self <: ConfigAnalytics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigAnalytics] (val x: Self) extends AnyVal {
     
     inline def setAmplitudeAPPKey(value: String): Self = StObject.set(x, "amplitudeAPPKey", value.asInstanceOf[js.Any])
     

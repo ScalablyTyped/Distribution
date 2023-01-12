@@ -37,7 +37,8 @@ object SingularReaderSelector {
     __obj.asInstanceOf[SingularReaderSelector]
   }
   
-  extension [Self <: SingularReaderSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularReaderSelector] (val x: Self) extends AnyVal {
     
     inline def setDataID(value: DataID): Self = StObject.set(x, "dataID", value.asInstanceOf[js.Any])
     

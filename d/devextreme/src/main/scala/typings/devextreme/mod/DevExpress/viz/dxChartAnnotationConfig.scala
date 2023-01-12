@@ -20,7 +20,8 @@ object dxChartAnnotationConfig {
     __obj.asInstanceOf[dxChartAnnotationConfig]
   }
   
-  extension [Self <: dxChartAnnotationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxChartAnnotationConfig] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

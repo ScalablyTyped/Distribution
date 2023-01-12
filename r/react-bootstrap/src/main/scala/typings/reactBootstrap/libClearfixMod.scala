@@ -39,7 +39,8 @@ object libClearfixMod {
       __obj.asInstanceOf[ClearfixProps]
     }
     
-    extension [Self <: ClearfixProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearfixProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

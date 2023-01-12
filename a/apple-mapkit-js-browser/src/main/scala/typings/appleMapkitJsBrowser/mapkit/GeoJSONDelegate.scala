@@ -158,7 +158,8 @@ object GeoJSONDelegate {
     __obj.asInstanceOf[GeoJSONDelegate]
   }
   
-  extension [Self <: GeoJSONDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONDelegate] (val x: Self) extends AnyVal {
     
     inline def setGeoJSONDidComplete(value: (/* result */ ItemCollection, /* geoJSON */ js.Object) => Unit): Self = StObject.set(x, "geoJSONDidComplete", js.Any.fromFunction2(value))
     

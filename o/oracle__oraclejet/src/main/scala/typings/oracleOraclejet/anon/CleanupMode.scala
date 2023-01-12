@@ -22,7 +22,8 @@ object CleanupMode {
     __obj.asInstanceOf[CleanupMode]
   }
   
-  extension [Self <: CleanupMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CleanupMode] (val x: Self) extends AnyVal {
     
     inline def setCleanupMode(value: onDisconnect | none): Self = StObject.set(x, "cleanupMode", value.asInstanceOf[js.Any])
     

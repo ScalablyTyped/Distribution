@@ -28,7 +28,8 @@ object Subshell {
     __obj.asInstanceOf[Subshell]
   }
   
-  extension [Self <: Subshell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subshell] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[RedirectArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

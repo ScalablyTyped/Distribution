@@ -72,7 +72,8 @@ object confirmpopupConfirmpopupMod {
       __obj.asInstanceOf[ConfirmPopupOptions]
     }
     
-    extension [Self <: ConfirmPopupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
       
@@ -157,7 +158,8 @@ object confirmpopupConfirmpopupMod {
       __obj.asInstanceOf[ConfirmPopupProps]
     }
     
-    extension [Self <: ConfirmPopupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupProps] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: () => Unit): Self = StObject.set(x, "accept", js.Any.fromFunction0(value))
       
@@ -276,7 +278,8 @@ object confirmpopupConfirmpopupMod {
       __obj.asInstanceOf[ConfirmPopupReturn]
     }
     
-    extension [Self <: ConfirmPopupReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmPopupReturn] (val x: Self) extends AnyVal {
       
       inline def setHide(value: () => Unit): Self = StObject.set(x, "hide", js.Any.fromFunction0(value))
       

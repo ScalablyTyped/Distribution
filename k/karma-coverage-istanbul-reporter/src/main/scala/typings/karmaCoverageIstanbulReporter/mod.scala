@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[CoverageIstanbulReporter]
     }
     
-    extension [Self <: CoverageIstanbulReporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoverageIstanbulReporter] (val x: Self) extends AnyVal {
       
       inline def setCombineBrowserReports(value: Boolean): Self = StObject.set(x, "combineBrowserReports", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object mod {
       __obj.asInstanceOf[Threshold]
     }
     
-    extension [Self <: Threshold](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Threshold] (val x: Self) extends AnyVal {
       
       inline def setBranches(value: Double): Self = StObject.set(x, "branches", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object mod {
       __obj.asInstanceOf[ThresholdConfig]
     }
     
-    extension [Self <: ThresholdConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThresholdConfig] (val x: Self) extends AnyVal {
       
       inline def setEach(value: ThresholdsEach): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
@@ -185,7 +188,8 @@ object mod {
       __obj.asInstanceOf[ThresholdsEach]
     }
     
-    extension [Self <: ThresholdsEach](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThresholdsEach] (val x: Self) extends AnyVal {
       
       inline def setOverrides(value: StringDictionary[Threshold]): Self = StObject.set(x, "overrides", value.asInstanceOf[js.Any])
       
@@ -208,7 +212,8 @@ object mod {
         __obj.asInstanceOf[ConfigOptions]
       }
       
-      extension [Self <: ConfigOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
         
         inline def setCoverageIstanbulReporter(value: CoverageIstanbulReporter): Self = StObject.set(x, "coverageIstanbulReporter", value.asInstanceOf[js.Any])
         

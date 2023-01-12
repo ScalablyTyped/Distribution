@@ -56,7 +56,8 @@ object SyntaxHighlighterBaseProp {
     __obj.asInstanceOf[SyntaxHighlighterBaseProp]
   }
   
-  extension [Self <: SyntaxHighlighterBaseProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxHighlighterBaseProp] (val x: Self) extends AnyVal {
     
     inline def setBordered(value: Boolean): Self = StObject.set(x, "bordered", value.asInstanceOf[js.Any])
     

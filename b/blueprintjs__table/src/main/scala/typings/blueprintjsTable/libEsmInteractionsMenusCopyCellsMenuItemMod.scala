@@ -57,7 +57,8 @@ object libEsmInteractionsMenusCopyCellsMenuItemMod {
       __obj.asInstanceOf[ICopyCellsMenuItemProps]
     }
     
-    extension [Self <: ICopyCellsMenuItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICopyCellsMenuItemProps] (val x: Self) extends AnyVal {
       
       inline def setContext(value: IMenuContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

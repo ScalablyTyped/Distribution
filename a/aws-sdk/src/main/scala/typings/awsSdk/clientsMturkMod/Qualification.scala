@@ -40,7 +40,8 @@ object Qualification {
     __obj.asInstanceOf[Qualification]
   }
   
-  extension [Self <: Qualification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Qualification] (val x: Self) extends AnyVal {
     
     inline def setGrantTime(value: js.Date): Self = StObject.set(x, "GrantTime", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object OnRemovedRemoveInfoType {
     __obj.asInstanceOf[OnRemovedRemoveInfoType]
   }
   
-  extension [Self <: OnRemovedRemoveInfoType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnRemovedRemoveInfoType] (val x: Self) extends AnyVal {
     
     inline def setIsWindowClosing(value: Boolean): Self = StObject.set(x, "isWindowClosing", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object NumberCancelable {
     __obj.asInstanceOf[NumberCancelable]
   }
   
-  extension [Self <: NumberCancelable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberCancelable] (val x: Self) extends AnyVal {
     
     inline def setNumber(value: Cancelable): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
   }

@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[ChunkInfos]
     }
     
-    extension [Self <: ChunkInfos](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkInfos] (val x: Self) extends AnyVal {
       
       inline def setChunkInfos(value: js.Array[ChunkInfo]): Self = StObject.set(x, "chunkInfos", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Conn]
     }
     
-    extension [Self <: Conn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Conn] (val x: Self) extends AnyVal {
       
       inline def setConn(value: Double): Self = StObject.set(x, "conn", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Freeze]
     }
     
-    extension [Self <: Freeze](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Freeze] (val x: Self) extends AnyVal {
       
       inline def setFreeze(value: Boolean): Self = StObject.set(x, "freeze", value.asInstanceOf[js.Any])
       
@@ -87,7 +90,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       
@@ -106,7 +110,8 @@ object anon {
       __obj.asInstanceOf[Opcode]
     }
     
-    extension [Self <: Opcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opcode] (val x: Self) extends AnyVal {
       
       inline def setOpcode(value: Double): Self = StObject.set(x, "opcode", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object DnsProperties {
     __obj.asInstanceOf[DnsProperties]
   }
   
-  extension [Self <: DnsProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DnsProperties] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

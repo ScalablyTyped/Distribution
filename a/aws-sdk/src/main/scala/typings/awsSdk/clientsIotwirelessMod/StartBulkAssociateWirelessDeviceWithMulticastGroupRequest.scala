@@ -19,7 +19,8 @@ object StartBulkAssociateWirelessDeviceWithMulticastGroupRequest {
     __obj.asInstanceOf[StartBulkAssociateWirelessDeviceWithMulticastGroupRequest]
   }
   
-  extension [Self <: StartBulkAssociateWirelessDeviceWithMulticastGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartBulkAssociateWirelessDeviceWithMulticastGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: MulticastGroupId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

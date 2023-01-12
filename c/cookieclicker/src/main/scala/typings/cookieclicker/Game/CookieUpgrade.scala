@@ -16,7 +16,8 @@ object CookieUpgrade {
     __obj.asInstanceOf[CookieUpgrade]
   }
   
-  extension [Self <: CookieUpgrade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CookieUpgrade] (val x: Self) extends AnyVal {
     
     inline def setPool(value: cookie): Self = StObject.set(x, "pool", value.asInstanceOf[js.Any])
   }

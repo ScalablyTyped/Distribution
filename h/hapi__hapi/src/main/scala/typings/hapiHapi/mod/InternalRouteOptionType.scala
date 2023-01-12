@@ -17,7 +17,8 @@ object InternalRouteOptionType {
     __obj.asInstanceOf[InternalRouteOptionType]
   }
   
-  extension [Self <: InternalRouteOptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalRouteOptionType] (val x: Self) extends AnyVal {
     
     inline def setScope(value: RouteOptionsAccessScope): Self = StObject.set(x, "Scope", value.asInstanceOf[js.Any])
     

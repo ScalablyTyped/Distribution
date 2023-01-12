@@ -28,7 +28,8 @@ object GroupMark {
     __obj.asInstanceOf[GroupMark]
   }
   
-  extension [Self <: GroupMark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupMark] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: FromFacet): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

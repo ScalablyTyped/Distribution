@@ -127,7 +127,8 @@ object RTCInboundRtpStreamStats {
     __obj.asInstanceOf[RTCInboundRtpStreamStats]
   }
   
-  extension [Self <: RTCInboundRtpStreamStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCInboundRtpStreamStats] (val x: Self) extends AnyVal {
     
     inline def setAudioLevel(value: Double): Self = StObject.set(x, "audioLevel", value.asInstanceOf[js.Any])
     

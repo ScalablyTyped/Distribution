@@ -54,7 +54,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[Shape]
     }
     
-    extension [Self <: Shape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       

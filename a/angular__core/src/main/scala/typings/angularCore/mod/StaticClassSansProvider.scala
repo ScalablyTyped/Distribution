@@ -27,7 +27,8 @@ object StaticClassSansProvider {
     __obj.asInstanceOf[StaticClassSansProvider]
   }
   
-  extension [Self <: StaticClassSansProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaticClassSansProvider] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[Any]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

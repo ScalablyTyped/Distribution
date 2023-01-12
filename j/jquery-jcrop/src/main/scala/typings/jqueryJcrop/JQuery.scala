@@ -60,7 +60,8 @@ object JQuery {
         __obj.asInstanceOf[Api]
       }
       
-      extension [Self <: Api](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
         
         inline def setAnimateTo(value: js.Tuple4[Double, Double, Double, Double] => Unit): Self = StObject.set(x, "animateTo", js.Any.fromFunction1(value))
         
@@ -215,7 +216,8 @@ object JQuery {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setAddClass(value: String): Self = StObject.set(x, "addClass", value.asInstanceOf[js.Any])
         
@@ -400,7 +402,8 @@ object JQuery {
         __obj.asInstanceOf[SelectionInfo]
       }
       
-      extension [Self <: SelectionInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SelectionInfo] (val x: Self) extends AnyVal {
         
         inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
         

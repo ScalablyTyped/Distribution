@@ -50,7 +50,8 @@ object WrapIfAdditionalTemplateProps {
     __obj.asInstanceOf[WrapIfAdditionalTemplateProps[T, F]]
   }
   
-  extension [Self <: WrapIfAdditionalTemplateProps[?, ?], T, F](x: Self & (WrapIfAdditionalTemplateProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WrapIfAdditionalTemplateProps[?, ?], T, F] (val x: Self & (WrapIfAdditionalTemplateProps[T, F])) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

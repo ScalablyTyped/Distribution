@@ -29,7 +29,8 @@ object SketchMSData {
     __obj.asInstanceOf[SketchMSData]
   }
   
-  extension [Self <: SketchMSData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSData] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: SketchMSDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

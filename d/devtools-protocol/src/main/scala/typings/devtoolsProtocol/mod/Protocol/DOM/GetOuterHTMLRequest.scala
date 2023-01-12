@@ -29,7 +29,8 @@ object GetOuterHTMLRequest {
     __obj.asInstanceOf[GetOuterHTMLRequest]
   }
   
-  extension [Self <: GetOuterHTMLRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOuterHTMLRequest] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

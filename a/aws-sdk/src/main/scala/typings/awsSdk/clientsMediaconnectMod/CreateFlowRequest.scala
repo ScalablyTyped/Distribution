@@ -51,7 +51,8 @@ object CreateFlowRequest {
     __obj.asInstanceOf[CreateFlowRequest]
   }
   
-  extension [Self <: CreateFlowRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFlowRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZone(value: string): Self = StObject.set(x, "AvailabilityZone", value.asInstanceOf[js.Any])
     

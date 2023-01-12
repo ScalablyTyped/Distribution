@@ -95,7 +95,8 @@ object TetherShepherd {
       __obj.asInstanceOf[IShepherdTourAttachProperties]
     }
     
-    extension [Self <: IShepherdTourAttachProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShepherdTourAttachProperties] (val x: Self) extends AnyVal {
       
       inline def setElement(value: String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object TetherShepherd {
       __obj.asInstanceOf[IShepherdTourButton]
     }
     
-    extension [Self <: IShepherdTourButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShepherdTourButton] (val x: Self) extends AnyVal {
       
       inline def setAction(value: js.Function): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -153,7 +155,8 @@ object TetherShepherd {
       __obj.asInstanceOf[IShepherdTourOptions]
     }
     
-    extension [Self <: IShepherdTourOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShepherdTourOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IShepherdTourStepOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
       
@@ -258,7 +261,8 @@ object TetherShepherd {
       __obj.asInstanceOf[IShepherdTourStepOptions]
     }
     
-    extension [Self <: IShepherdTourStepOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IShepherdTourStepOptions] (val x: Self) extends AnyVal {
       
       inline def setAdvanceOn(value: Any): Self = StObject.set(x, "advanceOn", value.asInstanceOf[js.Any])
       

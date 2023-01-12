@@ -15,7 +15,8 @@ object WebGLShader {
     __obj.asInstanceOf[WebGLShader]
   }
   
-  extension [Self <: WebGLShader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLShader] (val x: Self) extends AnyVal {
     
     inline def set__WebGLShader(value: Unit): Self = StObject.set(x, "__WebGLShader", value.asInstanceOf[js.Any])
   }

@@ -38,7 +38,8 @@ object ZoneRuntimeConfigurations {
     __obj.asInstanceOf[ZoneRuntimeConfigurations]
   }
   
-  extension [Self <: ZoneRuntimeConfigurations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZoneRuntimeConfigurations] (val x: Self) extends AnyVal {
     
     inline def set__zone_symbol__ignoreConsoleErrorUncaughtError(value: Boolean): Self = StObject.set(x, "__zone_symbol__ignoreConsoleErrorUncaughtError", value.asInstanceOf[js.Any])
     

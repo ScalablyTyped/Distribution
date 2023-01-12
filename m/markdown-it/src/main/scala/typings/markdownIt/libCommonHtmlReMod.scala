@@ -24,7 +24,8 @@ object libCommonHtmlReMod extends Shortcut {
       __obj.asInstanceOf[HtmlRE]
     }
     
-    extension [Self <: HtmlRE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HtmlRE] (val x: Self) extends AnyVal {
       
       inline def setHTML_OPEN_CLOSE_TAG_RE(value: js.RegExp): Self = StObject.set(x, "HTML_OPEN_CLOSE_TAG_RE", value.asInstanceOf[js.Any])
       

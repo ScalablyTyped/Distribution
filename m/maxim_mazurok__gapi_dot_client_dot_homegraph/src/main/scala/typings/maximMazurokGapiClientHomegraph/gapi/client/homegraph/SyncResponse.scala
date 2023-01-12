@@ -19,7 +19,8 @@ object SyncResponse {
     __obj.asInstanceOf[SyncResponse]
   }
   
-  extension [Self <: SyncResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncResponse] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: SyncResponsePayload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

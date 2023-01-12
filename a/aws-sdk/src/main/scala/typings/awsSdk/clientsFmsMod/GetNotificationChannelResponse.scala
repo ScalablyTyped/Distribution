@@ -23,7 +23,8 @@ object GetNotificationChannelResponse {
     __obj.asInstanceOf[GetNotificationChannelResponse]
   }
   
-  extension [Self <: GetNotificationChannelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetNotificationChannelResponse] (val x: Self) extends AnyVal {
     
     inline def setSnsRoleName(value: ResourceArn): Self = StObject.set(x, "SnsRoleName", value.asInstanceOf[js.Any])
     

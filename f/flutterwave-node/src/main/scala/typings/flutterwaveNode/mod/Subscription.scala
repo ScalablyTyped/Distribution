@@ -27,7 +27,8 @@ object Subscription {
     __obj.asInstanceOf[Subscription]
   }
   
-  extension [Self <: Subscription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
     
     inline def setActivate(value: SubscriptionActivateRequest => js.Promise[AxiosResponse[Any, Any]]): Self = StObject.set(x, "activate", js.Any.fromFunction1(value))
     

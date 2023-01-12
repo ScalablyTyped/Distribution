@@ -23,7 +23,8 @@ object WatchCreativesResponse {
     __obj.asInstanceOf[WatchCreativesResponse]
   }
   
-  extension [Self <: WatchCreativesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchCreativesResponse] (val x: Self) extends AnyVal {
     
     inline def setSubscription(value: String): Self = StObject.set(x, "subscription", value.asInstanceOf[js.Any])
     

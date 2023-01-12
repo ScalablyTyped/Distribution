@@ -27,7 +27,8 @@ object Movable {
   @js.native
   val ^ : Movable = js.native
   
-  extension [Self <: Movable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Movable] (val x: Self) extends AnyVal {
     
     inline def set$dragCreate(value: (HTMLElement, Event, String) => HTMLElement): Self = StObject.set(x, "$dragCreate", js.Any.fromFunction3(value))
     

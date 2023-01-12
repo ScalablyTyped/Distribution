@@ -108,7 +108,8 @@ object LaunchTemplateInstanceNetworkInterfaceSpecification {
     __obj.asInstanceOf[LaunchTemplateInstanceNetworkInterfaceSpecification]
   }
   
-  extension [Self <: LaunchTemplateInstanceNetworkInterfaceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateInstanceNetworkInterfaceSpecification] (val x: Self) extends AnyVal {
     
     inline def setAssociateCarrierIpAddress(value: Boolean): Self = StObject.set(x, "AssociateCarrierIpAddress", value.asInstanceOf[js.Any])
     

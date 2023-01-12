@@ -18,7 +18,8 @@ object DescribeFlowDefinitionRequest {
     __obj.asInstanceOf[DescribeFlowDefinitionRequest]
   }
   
-  extension [Self <: DescribeFlowDefinitionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFlowDefinitionRequest] (val x: Self) extends AnyVal {
     
     inline def setFlowDefinitionName(value: FlowDefinitionName): Self = StObject.set(x, "FlowDefinitionName", value.asInstanceOf[js.Any])
   }

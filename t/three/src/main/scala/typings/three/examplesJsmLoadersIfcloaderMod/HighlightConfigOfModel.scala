@@ -19,7 +19,8 @@ object HighlightConfigOfModel {
     __obj.asInstanceOf[HighlightConfigOfModel]
   }
   
-  extension [Self <: HighlightConfigOfModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightConfigOfModel] (val x: Self) extends AnyVal {
     
     inline def setModelID(value: Double): Self = StObject.set(x, "modelID", value.asInstanceOf[js.Any])
   }

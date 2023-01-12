@@ -18,7 +18,8 @@ object IClientBlockGetByNumRequest {
     __obj.asInstanceOf[IClientBlockGetByNumRequest]
   }
   
-  extension [Self <: IClientBlockGetByNumRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IClientBlockGetByNumRequest] (val x: Self) extends AnyVal {
     
     inline def setBlockNum(
       value: Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ Any)

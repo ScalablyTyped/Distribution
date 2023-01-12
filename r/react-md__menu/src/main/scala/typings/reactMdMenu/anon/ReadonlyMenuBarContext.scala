@@ -40,7 +40,8 @@ object ReadonlyMenuBarContext {
     __obj.asInstanceOf[ReadonlyMenuBarContext]
   }
   
-  extension [Self <: ReadonlyMenuBarContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyMenuBarContext] (val x: Self) extends AnyVal {
     
     inline def setActiveId(value: String): Self = StObject.set(x, "activeId", value.asInstanceOf[js.Any])
     

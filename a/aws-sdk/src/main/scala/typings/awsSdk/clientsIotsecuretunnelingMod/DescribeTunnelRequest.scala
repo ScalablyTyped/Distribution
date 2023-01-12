@@ -18,7 +18,8 @@ object DescribeTunnelRequest {
     __obj.asInstanceOf[DescribeTunnelRequest]
   }
   
-  extension [Self <: DescribeTunnelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTunnelRequest] (val x: Self) extends AnyVal {
     
     inline def setTunnelId(value: TunnelId): Self = StObject.set(x, "tunnelId", value.asInstanceOf[js.Any])
   }

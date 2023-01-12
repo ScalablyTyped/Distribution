@@ -23,7 +23,8 @@ object VmServerAddress {
     __obj.asInstanceOf[VmServerAddress]
   }
   
-  extension [Self <: VmServerAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VmServerAddress] (val x: Self) extends AnyVal {
     
     inline def setVmId(value: VmId): Self = StObject.set(x, "vmId", value.asInstanceOf[js.Any])
     

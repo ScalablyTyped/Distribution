@@ -17,7 +17,8 @@ object ShareMenuOptions {
     __obj.asInstanceOf[ShareMenuOptions]
   }
   
-  extension [Self <: ShareMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setWithShareTicket(value: Boolean): Self = StObject.set(x, "withShareTicket", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object AppointmentCalendarRow {
     __obj.asInstanceOf[AppointmentCalendarRow]
   }
   
-  extension [Self <: AppointmentCalendarRow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppointmentCalendarRow] (val x: Self) extends AnyVal {
     
     inline def setAppointment(value: default): Self = StObject.set(x, "appointment", value.asInstanceOf[js.Any])
     

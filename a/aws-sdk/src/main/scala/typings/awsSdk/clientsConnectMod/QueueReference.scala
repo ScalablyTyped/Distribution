@@ -23,7 +23,8 @@ object QueueReference {
     __obj.asInstanceOf[QueueReference]
   }
   
-  extension [Self <: QueueReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueReference] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ARN): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

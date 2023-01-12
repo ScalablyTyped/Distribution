@@ -22,7 +22,8 @@ object TypeofCONFIGGET {
     __obj.asInstanceOf[TypeofCONFIGGET]
   }
   
-  extension [Self <: TypeofCONFIGGET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCONFIGGET] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: String => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

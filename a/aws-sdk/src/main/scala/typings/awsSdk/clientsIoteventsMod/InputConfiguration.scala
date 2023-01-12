@@ -49,7 +49,8 @@ object InputConfiguration {
     __obj.asInstanceOf[InputConfiguration]
   }
   
-  extension [Self <: InputConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "creationTime", value.asInstanceOf[js.Any])
     

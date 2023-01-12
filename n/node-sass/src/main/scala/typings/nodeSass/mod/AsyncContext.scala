@@ -20,7 +20,8 @@ object AsyncContext {
     __obj.asInstanceOf[AsyncContext]
   }
   
-  extension [Self <: AsyncContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncContext] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: (/* err */ SassError, /* result */ Result) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
   }

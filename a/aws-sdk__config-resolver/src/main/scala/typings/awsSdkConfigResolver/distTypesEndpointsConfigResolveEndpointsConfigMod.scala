@@ -44,7 +44,8 @@ object distTypesEndpointsConfigResolveEndpointsConfigMod {
       __obj.asInstanceOf[EndpointsInputConfig]
     }
     
-    extension [Self <: EndpointsInputConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointsInputConfig] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: String | Endpoint | Provider[Endpoint]): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object distTypesEndpointsConfigResolveEndpointsConfigMod {
       __obj.asInstanceOf[EndpointsResolvedConfig]
     }
     
-    extension [Self <: EndpointsResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointsResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: () => js.Promise[Endpoint]): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       
@@ -153,7 +155,8 @@ object distTypesEndpointsConfigResolveEndpointsConfigMod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setRegion(value: () => js.Promise[String]): Self = StObject.set(x, "region", js.Any.fromFunction0(value))
       

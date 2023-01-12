@@ -59,7 +59,8 @@ object AnalyzerSummary {
     __obj.asInstanceOf[AnalyzerSummary]
   }
   
-  extension [Self <: AnalyzerSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzerSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AnalyzerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

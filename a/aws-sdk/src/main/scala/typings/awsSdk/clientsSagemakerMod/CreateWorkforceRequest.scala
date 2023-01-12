@@ -40,7 +40,8 @@ object CreateWorkforceRequest {
     __obj.asInstanceOf[CreateWorkforceRequest]
   }
   
-  extension [Self <: CreateWorkforceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorkforceRequest] (val x: Self) extends AnyVal {
     
     inline def setCognitoConfig(value: CognitoConfig): Self = StObject.set(x, "CognitoConfig", value.asInstanceOf[js.Any])
     

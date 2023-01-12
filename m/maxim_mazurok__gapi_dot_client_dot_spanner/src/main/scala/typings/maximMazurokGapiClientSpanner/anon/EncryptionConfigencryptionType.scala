@@ -67,7 +67,8 @@ object EncryptionConfigencryptionType {
     __obj.asInstanceOf[EncryptionConfigencryptionType]
   }
   
-  extension [Self <: EncryptionConfigencryptionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncryptionConfigencryptionType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object TaskExecution {
     __obj.asInstanceOf[TaskExecution]
   }
   
-  extension [Self <: TaskExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskExecution] (val x: Self) extends AnyVal {
     
     inline def setExecTask(value: TaskReference): Self = StObject.set(x, "execTask", value.asInstanceOf[js.Any])
     

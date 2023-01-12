@@ -33,7 +33,8 @@ object UpdateSubnetChangeProtectionRequest {
     __obj.asInstanceOf[UpdateSubnetChangeProtectionRequest]
   }
   
-  extension [Self <: UpdateSubnetChangeProtectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateSubnetChangeProtectionRequest] (val x: Self) extends AnyVal {
     
     inline def setFirewallArn(value: ResourceArn): Self = StObject.set(x, "FirewallArn", value.asInstanceOf[js.Any])
     

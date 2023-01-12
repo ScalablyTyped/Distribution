@@ -46,7 +46,8 @@ object exporter {
       __obj.asInstanceOf[ExcelFont]
     }
     
-    extension [Self <: ExcelFont](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcelFont] (val x: Self) extends AnyVal {
       
       inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object DriveList {
     __obj.asInstanceOf[DriveList]
   }
   
-  extension [Self <: DriveList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveList] (val x: Self) extends AnyVal {
     
     inline def setDrives(value: js.Array[Drive]): Self = StObject.set(x, "drives", value.asInstanceOf[js.Any])
     

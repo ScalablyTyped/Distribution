@@ -38,7 +38,8 @@ object DeviceJob {
     __obj.asInstanceOf[DeviceJob]
   }
   
-  extension [Self <: DeviceJob](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceJob] (val x: Self) extends AnyVal {
     
     inline def setCreatedTime(value: js.Date): Self = StObject.set(x, "CreatedTime", value.asInstanceOf[js.Any])
     

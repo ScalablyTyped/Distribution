@@ -98,7 +98,8 @@ object distTileSrcTileMod {
       __obj.asInstanceOf[InnerTileProps]
     }
     
-    extension [Self <: InnerTileProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerTileProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

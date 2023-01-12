@@ -44,7 +44,8 @@ object typesSpecScopeMod {
       __obj.asInstanceOf[Scope]
     }
     
-    extension [Self <: Scope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
       
       inline def setAxes(value: js.Array[Axis]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       

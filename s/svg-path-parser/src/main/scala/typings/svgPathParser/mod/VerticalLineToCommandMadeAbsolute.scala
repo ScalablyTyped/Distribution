@@ -36,7 +36,8 @@ object VerticalLineToCommandMadeAbsolute {
     __obj.asInstanceOf[VerticalLineToCommandMadeAbsolute]
   }
   
-  extension [Self <: VerticalLineToCommandMadeAbsolute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerticalLineToCommandMadeAbsolute] (val x: Self) extends AnyVal {
     
     inline def setCode(value: V): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object MachineConfig {
     __obj.asInstanceOf[MachineConfig[TContext, TStateSchema, TEvent, TAction, TServiceMap, TTypesMeta]]
   }
   
-  extension [Self <: MachineConfig[?, ?, ?, ?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */, TTypesMeta](x: Self & (MachineConfig[TContext, TStateSchema, TEvent, TAction, TServiceMap, TTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MachineConfig[?, ?, ?, ?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */, TServiceMap /* <: ServiceMap */, TTypesMeta] (val x: Self & (MachineConfig[TContext, TStateSchema, TEvent, TAction, TServiceMap, TTypesMeta])) extends AnyVal {
     
     inline def setContext(value: LowInfer[TContext | js.Function0[TContext]]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

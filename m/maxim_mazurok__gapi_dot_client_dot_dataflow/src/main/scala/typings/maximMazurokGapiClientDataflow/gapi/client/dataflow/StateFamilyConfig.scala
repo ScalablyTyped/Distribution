@@ -19,7 +19,8 @@ object StateFamilyConfig {
     __obj.asInstanceOf[StateFamilyConfig]
   }
   
-  extension [Self <: StateFamilyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateFamilyConfig] (val x: Self) extends AnyVal {
     
     inline def setIsRead(value: Boolean): Self = StObject.set(x, "isRead", value.asInstanceOf[js.Any])
     

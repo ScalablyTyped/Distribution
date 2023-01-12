@@ -26,7 +26,8 @@ object MediaParams {
     __obj.asInstanceOf[MediaParams]
   }
   
-  extension [Self <: MediaParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaParams] (val x: Self) extends AnyVal {
     
     inline def setGif(value: MediaContent): Self = StObject.set(x, "gif", value.asInstanceOf[js.Any])
     

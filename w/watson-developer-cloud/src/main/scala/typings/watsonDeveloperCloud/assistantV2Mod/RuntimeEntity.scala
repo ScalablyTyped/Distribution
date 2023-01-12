@@ -32,7 +32,8 @@ object RuntimeEntity {
     __obj.asInstanceOf[RuntimeEntity]
   }
   
-  extension [Self <: RuntimeEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeEntity] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

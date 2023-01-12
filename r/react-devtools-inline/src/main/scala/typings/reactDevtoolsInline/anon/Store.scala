@@ -18,7 +18,8 @@ object Store {
     __obj.asInstanceOf[Store]
   }
   
-  extension [Self <: Store](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Store] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: FrontendBridge): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

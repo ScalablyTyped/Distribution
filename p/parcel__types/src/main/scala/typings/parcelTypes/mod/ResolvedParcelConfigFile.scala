@@ -19,7 +19,8 @@ object ResolvedParcelConfigFile {
     __obj.asInstanceOf[ResolvedParcelConfigFile]
   }
   
-  extension [Self <: ResolvedParcelConfigFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedParcelConfigFile] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: FilePath): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
     

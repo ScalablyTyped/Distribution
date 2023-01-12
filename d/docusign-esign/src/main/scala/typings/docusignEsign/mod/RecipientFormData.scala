@@ -54,7 +54,8 @@ object RecipientFormData {
     __obj.asInstanceOf[RecipientFormData]
   }
   
-  extension [Self <: RecipientFormData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecipientFormData] (val x: Self) extends AnyVal {
     
     inline def setDeclinedTime(value: String): Self = StObject.set(x, "DeclinedTime", value.asInstanceOf[js.Any])
     

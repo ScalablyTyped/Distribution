@@ -38,7 +38,8 @@ object numberFilter {
     __obj.asInstanceOf[numberFilter]
   }
   
-  extension [Self <: numberFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: numberFilter] (val x: Self) extends AnyVal {
     
     inline def setContains(value: (Any, Any) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     

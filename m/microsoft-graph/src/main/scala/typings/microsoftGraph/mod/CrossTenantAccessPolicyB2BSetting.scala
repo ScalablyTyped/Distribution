@@ -19,7 +19,8 @@ object CrossTenantAccessPolicyB2BSetting {
     __obj.asInstanceOf[CrossTenantAccessPolicyB2BSetting]
   }
   
-  extension [Self <: CrossTenantAccessPolicyB2BSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrossTenantAccessPolicyB2BSetting] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: NullableOption[CrossTenantAccessPolicyTargetConfiguration]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

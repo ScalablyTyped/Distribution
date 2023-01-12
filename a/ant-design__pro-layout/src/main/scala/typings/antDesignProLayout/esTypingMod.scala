@@ -34,7 +34,8 @@ object esTypingMod {
       __obj.asInstanceOf[BasicRouteProps[Params, C, S]]
     }
     
-    extension [Self <: BasicRouteProps[?, ?, ?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, C /* <: StaticContext */, S](x: Self & (BasicRouteProps[Params, C, S])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicRouteProps[?, ?, ?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */, C /* <: StaticContext */, S] (val x: Self & (BasicRouteProps[Params, C, S])) extends AnyVal {
       
       inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object esTypingMod {
       __obj.asInstanceOf[LinkProps]
     }
     
-    extension [Self <: LinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
       
       inline def setInnerRef(value: Ref[HTMLAnchorElement]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object esTypingMod {
       __obj.asInstanceOf[MenuDataItem]
     }
     
-    extension [Self <: MenuDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuDataItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -222,7 +225,8 @@ object esTypingMod {
       __obj.asInstanceOf[MessageDescriptor]
     }
     
-    extension [Self <: MessageDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageDescriptor] (val x: Self) extends AnyVal {
       
       inline def setDefaultMessage(value: String): Self = StObject.set(x, "defaultMessage", value.asInstanceOf[js.Any])
       
@@ -272,7 +276,8 @@ object esTypingMod {
       __obj.asInstanceOf[Route]
     }
     
-    extension [Self <: Route](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[MenuDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -355,7 +360,8 @@ object esTypingMod {
       __obj.asInstanceOf[RouterTypes]
     }
     
-    extension [Self <: RouterTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterTypes] (val x: Self) extends AnyVal {
       
       inline def setComputedMatch(value: `match`[Any]): Self = StObject.set(x, "computedMatch", value.asInstanceOf[js.Any])
       
@@ -388,7 +394,8 @@ object esTypingMod {
       __obj.asInstanceOf[StaticContext]
     }
     
-    extension [Self <: StaticContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticContext] (val x: Self) extends AnyVal {
       
       inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
       
@@ -415,7 +422,8 @@ object esTypingMod {
       __obj.asInstanceOf[`match`[Params]]
     }
     
-    extension [Self <: `match`[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */](x: Self & `match`[Params]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `match`[?], Params /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof Params ]:? string} */ js.Any */] (val x: Self & `match`[Params]) extends AnyVal {
       
       inline def setIsExact(value: Boolean): Self = StObject.set(x, "isExact", value.asInstanceOf[js.Any])
       

@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsFlagDismissMod extends Shortcut {
       __obj.asInstanceOf[FlagDismissProps]
     }
     
-    extension [Self <: FlagDismissProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlagDismissProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

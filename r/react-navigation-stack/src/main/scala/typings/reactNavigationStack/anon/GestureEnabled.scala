@@ -30,7 +30,8 @@ object GestureEnabled {
     __obj.asInstanceOf[GestureEnabled]
   }
   
-  extension [Self <: GestureEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GestureEnabled] (val x: Self) extends AnyVal {
     
     inline def setGestureEnabled(value: Boolean): Self = StObject.set(x, "gestureEnabled", value.asInstanceOf[js.Any])
     

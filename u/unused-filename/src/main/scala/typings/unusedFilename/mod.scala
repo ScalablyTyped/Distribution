@@ -78,7 +78,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setIncrementer(value: (/* filename */ String, /* extension */ String) => js.Tuple2[String, String]): Self = StObject.set(x, "incrementer", js.Any.fromFunction2(value))
       

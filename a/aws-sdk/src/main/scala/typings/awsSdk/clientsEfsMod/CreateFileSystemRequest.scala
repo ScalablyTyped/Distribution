@@ -58,7 +58,8 @@ object CreateFileSystemRequest {
     __obj.asInstanceOf[CreateFileSystemRequest]
   }
   
-  extension [Self <: CreateFileSystemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFileSystemRequest] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZoneName(value: AvailabilityZoneName): Self = StObject.set(x, "AvailabilityZoneName", value.asInstanceOf[js.Any])
     

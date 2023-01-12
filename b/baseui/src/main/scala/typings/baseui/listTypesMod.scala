@@ -49,7 +49,8 @@ object listTypesMod {
       __obj.asInstanceOf[HeadingOverrides]
     }
     
-    extension [Self <: HeadingOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingOverrides] (val x: Self) extends AnyVal {
       
       inline def setContent(value: Override[Any]): Self = StObject.set(x, "Content", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object listTypesMod {
       __obj.asInstanceOf[HeadingProps]
     }
     
-    extension [Self <: HeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeadingProps] (val x: Self) extends AnyVal {
       
       inline def setEndEnhancer(value: ReactNode | ComponentType[js.Object]): Self = StObject.set(x, "endEnhancer", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object listTypesMod {
       __obj.asInstanceOf[LabelOverrides]
     }
     
-    extension [Self <: LabelOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOverrides] (val x: Self) extends AnyVal {
       
       inline def setLabelContent(value: Override[Any]): Self = StObject.set(x, "LabelContent", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object listTypesMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -211,7 +215,8 @@ object listTypesMod {
       __obj.asInstanceOf[ListOverrides]
     }
     
-    extension [Self <: ListOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOverrides] (val x: Self) extends AnyVal {
       
       inline def setArtworkContainer(value: Override[Any]): Self = StObject.set(x, "ArtworkContainer", value.asInstanceOf[js.Any])
       
@@ -262,7 +267,8 @@ object listTypesMod {
       __obj.asInstanceOf[ListProps]
     }
     
-    extension [Self <: ListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-label`(value: String): Self = StObject.set(x, "aria-label", value.asInstanceOf[js.Any])
       
@@ -336,7 +342,8 @@ object listTypesMod {
       __obj.asInstanceOf[MenuAdapterProps]
     }
     
-    extension [Self <: MenuAdapterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuAdapterProps] (val x: Self) extends AnyVal {
       
       inline def set$disabled(value: Boolean): Self = StObject.set(x, "$disabled", value.asInstanceOf[js.Any])
       
@@ -391,7 +398,8 @@ object listTypesMod {
       __obj.asInstanceOf[StyledArtworkContainerProps]
     }
     
-    extension [Self <: StyledArtworkContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledArtworkContainerProps] (val x: Self) extends AnyVal {
       
       inline def set$artworkSize(value: ArtworkSizes | Double): Self = StObject.set(x, "$artworkSize", value.asInstanceOf[js.Any])
       
@@ -416,7 +424,8 @@ object listTypesMod {
       __obj.asInstanceOf[StyledContentProps]
     }
     
-    extension [Self <: StyledContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledContentProps] (val x: Self) extends AnyVal {
       
       inline def set$mLeft(value: Boolean): Self = StObject.set(x, "$mLeft", value.asInstanceOf[js.Any])
       
@@ -436,7 +445,8 @@ object listTypesMod {
       __obj.asInstanceOf[StyledHeadingHeadingProps]
     }
     
-    extension [Self <: StyledHeadingHeadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledHeadingHeadingProps] (val x: Self) extends AnyVal {
       
       inline def set$maxLines(value: Double): Self = StObject.set(x, "$maxLines", value.asInstanceOf[js.Any])
     }
@@ -454,7 +464,8 @@ object listTypesMod {
       __obj.asInstanceOf[StyledRootProps]
     }
     
-    extension [Self <: StyledRootProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledRootProps] (val x: Self) extends AnyVal {
       
       inline def set$shape(value: Shape): Self = StObject.set(x, "$shape", value.asInstanceOf[js.Any])
     }

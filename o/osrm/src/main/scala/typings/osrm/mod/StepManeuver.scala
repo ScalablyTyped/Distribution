@@ -50,7 +50,8 @@ object StepManeuver {
     __obj.asInstanceOf[StepManeuver]
   }
   
-  extension [Self <: StepManeuver](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepManeuver] (val x: Self) extends AnyVal {
     
     inline def setBearing_after(value: Double): Self = StObject.set(x, "bearing_after", value.asInstanceOf[js.Any])
     

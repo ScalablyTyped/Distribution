@@ -20,7 +20,8 @@ object rules {
   @js.native
   val ^ : typings.webix.webix.rules = js.native
   
-  extension [Self <: rules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: rules] (val x: Self) extends AnyVal {
     
     inline def setIsChecked(value: Any => Boolean): Self = StObject.set(x, "isChecked", js.Any.fromFunction1(value))
     

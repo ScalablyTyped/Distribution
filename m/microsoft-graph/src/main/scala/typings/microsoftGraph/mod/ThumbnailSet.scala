@@ -27,7 +27,8 @@ object ThumbnailSet {
     __obj.asInstanceOf[ThumbnailSet]
   }
   
-  extension [Self <: ThumbnailSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThumbnailSet] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: NullableOption[Thumbnail]): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

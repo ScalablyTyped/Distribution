@@ -17,7 +17,8 @@ object IsOutline {
     __obj.asInstanceOf[IsOutline]
   }
   
-  extension [Self <: IsOutline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsOutline] (val x: Self) extends AnyVal {
     
     inline def setIsOutline(value: Boolean): Self = StObject.set(x, "isOutline", value.asInstanceOf[js.Any])
     

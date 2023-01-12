@@ -19,7 +19,8 @@ object AssetAssociation {
     __obj.asInstanceOf[AssetAssociation]
   }
   
-  extension [Self <: AssetAssociation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetAssociation] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

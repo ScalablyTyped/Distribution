@@ -23,7 +23,8 @@ object PostStarParams {
     __obj.asInstanceOf[PostStarParams]
   }
   
-  extension [Self <: PostStarParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostStarParams] (val x: Self) extends AnyVal {
     
     inline def setCommentId(value: Double): Self = StObject.set(x, "commentId", value.asInstanceOf[js.Any])
     

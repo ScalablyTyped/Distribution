@@ -17,7 +17,8 @@ object PathTemplateBasedRequestPrepareOptions {
     __obj.asInstanceOf[PathTemplateBasedRequestPrepareOptions]
   }
   
-  extension [Self <: PathTemplateBasedRequestPrepareOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathTemplateBasedRequestPrepareOptions] (val x: Self) extends AnyVal {
     
     inline def setPathTemplate(value: String): Self = StObject.set(x, "pathTemplate", value.asInstanceOf[js.Any])
   }

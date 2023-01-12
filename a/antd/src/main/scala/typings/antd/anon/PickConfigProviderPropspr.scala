@@ -21,7 +21,8 @@ object PickConfigProviderPropspr {
     __obj.asInstanceOf[PickConfigProviderPropspr]
   }
   
-  extension [Self <: PickConfigProviderPropspr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickConfigProviderPropspr] (val x: Self) extends AnyVal {
     
     inline def setIconPrefixCls(value: String): Self = StObject.set(x, "iconPrefixCls", value.asInstanceOf[js.Any])
     

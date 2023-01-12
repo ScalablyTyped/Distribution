@@ -66,7 +66,8 @@ object libCommentMod {
       __obj.asInstanceOf[CommentProps]
     }
     
-    extension [Self <: CommentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentProps] (val x: Self) extends AnyVal {
       
       inline def setRaws(value: CommentRaws): Self = StObject.set(x, "raws", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object libCommentMod {
       __obj.asInstanceOf[CommentRaws]
     }
     
-    extension [Self <: CommentRaws](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentRaws] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       

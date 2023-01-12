@@ -51,7 +51,8 @@ object AuthKey {
     __obj.asInstanceOf[AuthKey]
   }
   
-  extension [Self <: AuthKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthKey] (val x: Self) extends AnyVal {
     
     inline def setAuthKey(value: String): Self = StObject.set(x, "authKey", value.asInstanceOf[js.Any])
     

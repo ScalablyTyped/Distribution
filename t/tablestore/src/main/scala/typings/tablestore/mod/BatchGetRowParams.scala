@@ -18,7 +18,8 @@ object BatchGetRowParams {
     __obj.asInstanceOf[BatchGetRowParams]
   }
   
-  extension [Self <: BatchGetRowParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetRowParams] (val x: Self) extends AnyVal {
     
     inline def setTables(value: js.Array[RowParamsInBatchGet]): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SpatialCoordinateSystem {
     __obj.asInstanceOf[SpatialCoordinateSystem]
   }
   
-  extension [Self <: SpatialCoordinateSystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpatialCoordinateSystem] (val x: Self) extends AnyVal {
     
     inline def setTryGetTransformTo(value: Any): Self = StObject.set(x, "tryGetTransformTo", value.asInstanceOf[js.Any])
   }

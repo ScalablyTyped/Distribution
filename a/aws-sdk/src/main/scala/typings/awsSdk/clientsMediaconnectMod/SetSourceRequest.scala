@@ -103,7 +103,8 @@ object SetSourceRequest {
     __obj.asInstanceOf[SetSourceRequest]
   }
   
-  extension [Self <: SetSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setDecryption(value: Encryption): Self = StObject.set(x, "Decryption", value.asInstanceOf[js.Any])
     

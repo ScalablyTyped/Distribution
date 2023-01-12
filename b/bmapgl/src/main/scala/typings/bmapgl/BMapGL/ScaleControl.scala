@@ -34,7 +34,8 @@ object ScaleControl {
     __obj.asInstanceOf[ScaleControl]
   }
   
-  extension [Self <: ScaleControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleControl] (val x: Self) extends AnyVal {
     
     inline def setGetUnit(value: () => LengthUnit): Self = StObject.set(x, "getUnit", js.Any.fromFunction0(value))
     

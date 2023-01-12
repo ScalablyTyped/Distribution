@@ -58,7 +58,8 @@ object libNodesXmlElementMod {
       __obj.asInstanceOf[IXmlElementOptions]
     }
     
-    extension [Self <: IXmlElementOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IXmlElementOptions] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

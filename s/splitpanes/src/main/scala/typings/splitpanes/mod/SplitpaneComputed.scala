@@ -17,7 +17,8 @@ object SplitpaneComputed {
     __obj.asInstanceOf[SplitpaneComputed]
   }
   
-  extension [Self <: SplitpaneComputed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitpaneComputed] (val x: Self) extends AnyVal {
     
     inline def setIndexedPanes(value: () => SplitpaneIndexedType | Null): Self = StObject.set(x, "indexedPanes", js.Any.fromFunction0(value))
     

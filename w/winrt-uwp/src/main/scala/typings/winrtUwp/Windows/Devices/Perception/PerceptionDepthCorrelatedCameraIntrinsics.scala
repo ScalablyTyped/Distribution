@@ -52,7 +52,8 @@ object PerceptionDepthCorrelatedCameraIntrinsics {
     __obj.asInstanceOf[PerceptionDepthCorrelatedCameraIntrinsics]
   }
   
-  extension [Self <: PerceptionDepthCorrelatedCameraIntrinsics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerceptionDepthCorrelatedCameraIntrinsics] (val x: Self) extends AnyVal {
     
     inline def setUnprojectAllPixelsAtCorrelatedDepthAsync(value: PerceptionDepthFrame => Results): Self = StObject.set(x, "unprojectAllPixelsAtCorrelatedDepthAsync", js.Any.fromFunction1(value))
     

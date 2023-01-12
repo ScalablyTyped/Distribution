@@ -78,7 +78,8 @@ object OBSStudioEventMap {
     __obj.asInstanceOf[OBSStudioEventMap]
   }
   
-  extension [Self <: OBSStudioEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OBSStudioEventMap] (val x: Self) extends AnyVal {
     
     inline def setObsExit(value: CustomEvent[Null]): Self = StObject.set(x, "obsExit", value.asInstanceOf[js.Any])
     

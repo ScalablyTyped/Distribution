@@ -41,7 +41,8 @@ object CAPICOM_KEY_USAGE {
     __obj.asInstanceOf[CAPICOM_KEY_USAGE]
   }
   
-  extension [Self <: CAPICOM_KEY_USAGE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_KEY_USAGE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CRL_SIGN_KEY_USAGE(value: `2`): Self = StObject.set(x, "CAPICOM_CRL_SIGN_KEY_USAGE", value.asInstanceOf[js.Any])
     

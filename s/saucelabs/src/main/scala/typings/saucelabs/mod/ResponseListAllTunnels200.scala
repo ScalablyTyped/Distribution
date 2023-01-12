@@ -18,7 +18,8 @@ object ResponseListAllTunnels200 {
     __obj.asInstanceOf[ResponseListAllTunnels200]
   }
   
-  extension [Self <: ResponseListAllTunnels200](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseListAllTunnels200] (val x: Self) extends AnyVal {
     
     inline def setTunnels(value: js.Array[Tunnel]): Self = StObject.set(x, "tunnels", value.asInstanceOf[js.Any])
     

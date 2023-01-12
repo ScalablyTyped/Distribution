@@ -18,7 +18,8 @@ object BatchPutPropertyValuesResponse {
     __obj.asInstanceOf[BatchPutPropertyValuesResponse]
   }
   
-  extension [Self <: BatchPutPropertyValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutPropertyValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorEntries(value: ErrorEntries): Self = StObject.set(x, "errorEntries", value.asInstanceOf[js.Any])
     

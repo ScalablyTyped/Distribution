@@ -19,7 +19,8 @@ object IDBIndexParameters {
     __obj.asInstanceOf[IDBIndexParameters]
   }
   
-  extension [Self <: IDBIndexParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBIndexParameters] (val x: Self) extends AnyVal {
     
     inline def setMultiEntry(value: scala.Boolean): Self = StObject.set(x, "multiEntry", value.asInstanceOf[js.Any])
     

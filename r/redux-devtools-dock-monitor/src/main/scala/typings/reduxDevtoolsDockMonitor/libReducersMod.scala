@@ -46,7 +46,8 @@ object libReducersMod {
       __obj.asInstanceOf[DockMonitorState]
     }
     
-    extension [Self <: DockMonitorState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DockMonitorState] (val x: Self) extends AnyVal {
       
       inline def setChildMonitorIndex(value: Double): Self = StObject.set(x, "childMonitorIndex", value.asInstanceOf[js.Any])
       

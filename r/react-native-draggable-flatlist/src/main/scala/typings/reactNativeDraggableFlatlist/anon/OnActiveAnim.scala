@@ -17,7 +17,8 @@ object OnActiveAnim {
     __obj.asInstanceOf[OnActiveAnim]
   }
   
-  extension [Self <: OnActiveAnim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnActiveAnim] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object FrameFlashControl {
     __obj.asInstanceOf[FrameFlashControl]
   }
   
-  extension [Self <: FrameFlashControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameFlashControl] (val x: Self) extends AnyVal {
     
     inline def setAuto(value: Boolean): Self = StObject.set(x, "auto", value.asInstanceOf[js.Any])
     

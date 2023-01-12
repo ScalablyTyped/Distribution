@@ -147,7 +147,8 @@ object libValidatorsMod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -170,7 +171,8 @@ object libValidatorsMod {
       __obj.asInstanceOf[ValidationParams]
     }
     
-    extension [Self <: ValidationParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationParams] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

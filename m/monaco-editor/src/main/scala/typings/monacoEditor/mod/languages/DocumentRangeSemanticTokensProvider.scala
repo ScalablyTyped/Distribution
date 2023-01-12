@@ -23,7 +23,8 @@ object DocumentRangeSemanticTokensProvider {
     __obj.asInstanceOf[DocumentRangeSemanticTokensProvider]
   }
   
-  extension [Self <: DocumentRangeSemanticTokensProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentRangeSemanticTokensProvider] (val x: Self) extends AnyVal {
     
     inline def setGetLegend(value: () => SemanticTokensLegend): Self = StObject.set(x, "getLegend", js.Any.fromFunction0(value))
     

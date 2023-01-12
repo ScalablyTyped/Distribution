@@ -37,7 +37,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setRetrieve(value: String => js.Promise[Rate]): Self = StObject.set(x, "retrieve", js.Any.fromFunction1(value))
     }
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object anon {
       __obj.asInstanceOf[Content]
     }
     
-    extension [Self <: Content](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Content] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -150,7 +153,8 @@ object anon {
       __obj.asInstanceOf[Extendedtoken]
     }
     
-    extension [Self <: Extendedtoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extendedtoken] (val x: Self) extends AnyVal {
       
       inline def setExtended_token(value: String): Self = StObject.set(x, "extended_token", value.asInstanceOf[js.Any])
       
@@ -175,7 +179,8 @@ object anon {
       __obj.asInstanceOf[Isvalid]
     }
     
-    extension [Self <: Isvalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Isvalid] (val x: Self) extends AnyVal {
       
       inline def setIs_valid(value: Boolean): Self = StObject.set(x, "is_valid", value.asInstanceOf[js.Any])
       

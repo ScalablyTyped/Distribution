@@ -34,7 +34,8 @@ object GifOptions {
     __obj.asInstanceOf[GifOptions]
   }
   
-  extension [Self <: GifOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GifOptions] (val x: Self) extends AnyVal {
     
     inline def setColors(value: Double): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

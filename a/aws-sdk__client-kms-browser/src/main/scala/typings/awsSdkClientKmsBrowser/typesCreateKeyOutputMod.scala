@@ -31,7 +31,8 @@ object typesCreateKeyOutputMod {
       __obj.asInstanceOf[CreateKeyOutput]
     }
     
-    extension [Self <: CreateKeyOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateKeyOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

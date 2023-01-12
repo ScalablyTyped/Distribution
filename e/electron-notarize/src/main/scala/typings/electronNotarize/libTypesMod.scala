@@ -23,7 +23,8 @@ object libTypesMod {
       __obj.asInstanceOf[LegacyNotarizeApiKeyCredentials]
     }
     
-    extension [Self <: LegacyNotarizeApiKeyCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyNotarizeApiKeyCredentials] (val x: Self) extends AnyVal {
       
       inline def setAppleApiIssuer(value: String): Self = StObject.set(x, "appleApiIssuer", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object libTypesMod {
       __obj.asInstanceOf[LegacyNotarizeAppOptions]
     }
     
-    extension [Self <: LegacyNotarizeAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyNotarizeAppOptions] (val x: Self) extends AnyVal {
       
       inline def setAppBundleId(value: String): Self = StObject.set(x, "appBundleId", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object libTypesMod {
       __obj.asInstanceOf[LegacyNotarizePasswordCredentials]
     }
     
-    extension [Self <: LegacyNotarizePasswordCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyNotarizePasswordCredentials] (val x: Self) extends AnyVal {
       
       inline def setAppleId(value: String): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotarizeResult]
     }
     
-    extension [Self <: NotarizeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotarizeResult] (val x: Self) extends AnyVal {
       
       inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     }
@@ -163,7 +167,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotarizeStapleOptions]
     }
     
-    extension [Self <: NotarizeStapleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotarizeStapleOptions] (val x: Self) extends AnyVal {
       
       inline def setAppPath(value: String): Self = StObject.set(x, "appPath", value.asInstanceOf[js.Any])
     }
@@ -186,7 +191,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotaryToolApiKeyCredentials]
     }
     
-    extension [Self <: NotaryToolApiKeyCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotaryToolApiKeyCredentials] (val x: Self) extends AnyVal {
       
       inline def setAppleApiIssuer(value: String): Self = StObject.set(x, "appleApiIssuer", value.asInstanceOf[js.Any])
       
@@ -237,7 +243,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotaryToolKeychainCredentials]
     }
     
-    extension [Self <: NotaryToolKeychainCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotaryToolKeychainCredentials] (val x: Self) extends AnyVal {
       
       inline def setKeychain(value: String): Self = StObject.set(x, "keychain", value.asInstanceOf[js.Any])
       
@@ -258,7 +265,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotaryToolNotarizeAppOptions]
     }
     
-    extension [Self <: NotaryToolNotarizeAppOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotaryToolNotarizeAppOptions] (val x: Self) extends AnyVal {
       
       inline def setAppPath(value: String): Self = StObject.set(x, "appPath", value.asInstanceOf[js.Any])
     }
@@ -281,7 +289,8 @@ object libTypesMod {
       __obj.asInstanceOf[NotaryToolPasswordCredentials]
     }
     
-    extension [Self <: NotaryToolPasswordCredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotaryToolPasswordCredentials] (val x: Self) extends AnyVal {
       
       inline def setAppleId(value: String): Self = StObject.set(x, "appleId", value.asInstanceOf[js.Any])
       
@@ -304,7 +313,8 @@ object libTypesMod {
       __obj.asInstanceOf[TransporterOptions]
     }
     
-    extension [Self <: TransporterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransporterOptions] (val x: Self) extends AnyVal {
       
       inline def setAscProvider(value: String): Self = StObject.set(x, "ascProvider", value.asInstanceOf[js.Any])
       

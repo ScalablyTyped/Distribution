@@ -60,7 +60,8 @@ object IShikiTheme {
     __obj.asInstanceOf[IShikiTheme]
   }
   
-  extension [Self <: IShikiTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShikiTheme] (val x: Self) extends AnyVal {
     
     inline def setBg(value: String): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

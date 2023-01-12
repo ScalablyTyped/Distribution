@@ -15,7 +15,8 @@ object OffsetsByTopicPartition {
     __obj.asInstanceOf[OffsetsByTopicPartition]
   }
   
-  extension [Self <: OffsetsByTopicPartition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetsByTopicPartition] (val x: Self) extends AnyVal {
     
     inline def setTopics(value: js.Array[TopicOffsets]): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
     

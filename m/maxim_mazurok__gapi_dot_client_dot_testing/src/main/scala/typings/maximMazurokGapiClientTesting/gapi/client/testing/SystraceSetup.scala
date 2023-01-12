@@ -16,7 +16,8 @@ object SystraceSetup {
     __obj.asInstanceOf[SystraceSetup]
   }
   
-  extension [Self <: SystraceSetup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystraceSetup] (val x: Self) extends AnyVal {
     
     inline def setDurationSeconds(value: Double): Self = StObject.set(x, "durationSeconds", value.asInstanceOf[js.Any])
     

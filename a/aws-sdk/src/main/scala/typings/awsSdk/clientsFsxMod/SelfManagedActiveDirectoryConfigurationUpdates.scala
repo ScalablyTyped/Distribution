@@ -28,7 +28,8 @@ object SelfManagedActiveDirectoryConfigurationUpdates {
     __obj.asInstanceOf[SelfManagedActiveDirectoryConfigurationUpdates]
   }
   
-  extension [Self <: SelfManagedActiveDirectoryConfigurationUpdates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfManagedActiveDirectoryConfigurationUpdates] (val x: Self) extends AnyVal {
     
     inline def setDnsIps(value: DnsIps): Self = StObject.set(x, "DnsIps", value.asInstanceOf[js.Any])
     

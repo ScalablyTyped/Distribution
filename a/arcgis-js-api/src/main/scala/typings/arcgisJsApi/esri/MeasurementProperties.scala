@@ -87,7 +87,8 @@ object MeasurementProperties {
     __obj.asInstanceOf[MeasurementProperties]
   }
   
-  extension [Self <: MeasurementProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeasurementProperties] (val x: Self) extends AnyVal {
     
     inline def setActiveTool(value: area | distance | `direct-line`): Self = StObject.set(x, "activeTool", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GridMenuOptions {
     __obj.asInstanceOf[GridMenuOptions]
   }
   
-  extension [Self <: GridMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setExitOnUnexpectedKey(value: Boolean): Self = StObject.set(x, "exitOnUnexpectedKey", value.asInstanceOf[js.Any])
     

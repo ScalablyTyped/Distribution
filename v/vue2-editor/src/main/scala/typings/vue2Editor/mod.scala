@@ -34,7 +34,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueEditorConstructor]
     }
     
-    extension [Self <: VueEditorConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueEditorConstructor] (val x: Self) extends AnyVal {
       
       inline def setData(value: () => VueEditorData): Self = StObject.set(x, "data", js.Any.fromFunction0(value))
       
@@ -57,7 +58,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueEditorData]
     }
     
-    extension [Self <: VueEditorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueEditorData] (val x: Self) extends AnyVal {
       
       inline def setQuill(value: Any): Self = StObject.set(x, "quill", value.asInstanceOf[js.Any])
     }
@@ -115,7 +117,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueEditorMethods]
     }
     
-    extension [Self <: VueEditorMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueEditorMethods] (val x: Self) extends AnyVal {
       
       inline def setCheckForCustomImageHandler(value: () => Unit): Self = StObject.set(x, "checkForCustomImageHandler", js.Any.fromFunction0(value))
       
@@ -181,7 +184,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueEditorProps]
     }
     
-    extension [Self <: VueEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueEditorProps] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -216,7 +220,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueEditorWatch]
     }
     
-    extension [Self <: VueEditorWatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueEditorWatch] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean => Unit): Self = StObject.set(x, "disabled", js.Any.fromFunction1(value))
       

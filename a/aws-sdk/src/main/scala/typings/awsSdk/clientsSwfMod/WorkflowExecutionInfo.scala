@@ -63,7 +63,8 @@ object WorkflowExecutionInfo {
     __obj.asInstanceOf[WorkflowExecutionInfo]
   }
   
-  extension [Self <: WorkflowExecutionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionInfo] (val x: Self) extends AnyVal {
     
     inline def setCancelRequested(value: Canceled): Self = StObject.set(x, "cancelRequested", value.asInstanceOf[js.Any])
     

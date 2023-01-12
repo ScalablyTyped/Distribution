@@ -25,7 +25,8 @@ object libUuidMod {
       __obj.asInstanceOf[UUIDBrand]
     }
     
-    extension [Self <: UUIDBrand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UUIDBrand] (val x: Self) extends AnyVal {
       
       inline def setUUID(value: js.Symbol): Self = StObject.set(x, "UUID", value.asInstanceOf[js.Any])
     }

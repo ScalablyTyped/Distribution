@@ -18,7 +18,8 @@ object SplitViewInitEvent {
     __obj.asInstanceOf[SplitViewInitEvent]
   }
   
-  extension [Self <: SplitViewInitEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SplitViewInitEvent] (val x: Self) extends AnyVal {
     
     inline def setView(value: JQuery): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

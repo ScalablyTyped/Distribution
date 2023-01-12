@@ -83,7 +83,8 @@ object BatchReadSuccessfulResponse {
     __obj.asInstanceOf[BatchReadSuccessfulResponse]
   }
   
-  extension [Self <: BatchReadSuccessfulResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchReadSuccessfulResponse] (val x: Self) extends AnyVal {
     
     inline def setGetLinkAttributes(value: BatchGetLinkAttributesResponse): Self = StObject.set(x, "GetLinkAttributes", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: uint8array | u8 | uint8): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: array): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[`2`]
     }
     
-    extension [Self <: `2`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `2`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: string): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }
@@ -75,7 +78,8 @@ object anon {
       __obj.asInstanceOf[`3`]
     }
     
-    extension [Self <: `3`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: buffer): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -94,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: `object`): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     }

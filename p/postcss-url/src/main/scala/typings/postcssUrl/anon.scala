@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[AbsolutePath]
     }
     
-    extension [Self <: AbsolutePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AbsolutePath] (val x: Self) extends AnyVal {
       
       inline def setAbsolutePath(value: String): Self = StObject.set(x, "absolutePath", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Append]
     }
     
-    extension [Self <: Append](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Append] (val x: Self) extends AnyVal {
       
       inline def setAppend(value: Boolean): Self = StObject.set(x, "append", value.asInstanceOf[js.Any])
       
@@ -141,7 +143,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

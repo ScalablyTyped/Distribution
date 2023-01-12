@@ -23,7 +23,8 @@ object PreloadQueryStatus {
     __obj.asInstanceOf[PreloadQueryStatus]
   }
   
-  extension [Self <: PreloadQueryStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreloadQueryStatus] (val x: Self) extends AnyVal {
     
     inline def setCacheConfig(value: CacheConfig): Self = StObject.set(x, "cacheConfig", value.asInstanceOf[js.Any])
     

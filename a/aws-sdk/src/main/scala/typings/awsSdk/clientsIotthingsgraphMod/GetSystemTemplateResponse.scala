@@ -18,7 +18,8 @@ object GetSystemTemplateResponse {
     __obj.asInstanceOf[GetSystemTemplateResponse]
   }
   
-  extension [Self <: GetSystemTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSystemTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: SystemTemplateDescription): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

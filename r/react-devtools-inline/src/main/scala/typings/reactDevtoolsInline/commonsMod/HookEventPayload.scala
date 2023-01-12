@@ -46,7 +46,8 @@ object HookEventPayload {
     __obj.asInstanceOf[HookEventPayload]
   }
   
-  extension [Self <: HookEventPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HookEventPayload] (val x: Self) extends AnyVal {
     
     inline def setFastRefreshScheduled(value: Unit): Self = StObject.set(x, "fastRefreshScheduled", value.asInstanceOf[js.Any])
     

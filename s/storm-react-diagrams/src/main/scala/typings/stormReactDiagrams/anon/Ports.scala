@@ -36,7 +36,8 @@ object Ports {
     __obj.asInstanceOf[Ports]
   }
   
-  extension [Self <: Ports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ports] (val x: Self) extends AnyVal {
     
     inline def setExtras(value: Any): Self = StObject.set(x, "extras", value.asInstanceOf[js.Any])
     

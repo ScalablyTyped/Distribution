@@ -29,7 +29,8 @@ object distEvmOpcodesMod {
       __obj.asInstanceOf[Opcode]
     }
     
-    extension [Self <: Opcode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opcode] (val x: Self) extends AnyVal {
       
       inline def setFee(value: Double): Self = StObject.set(x, "fee", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object Projection {
     __obj.asInstanceOf[Projection]
   }
   
-  extension [Self <: Projection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Projection] (val x: Self) extends AnyVal {
     
     inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
     

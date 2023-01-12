@@ -32,7 +32,8 @@ object InteractiveAugmentedIOException {
     __obj.asInstanceOf[InteractiveAugmentedIOException]
   }
   
-  extension [Self <: InteractiveAugmentedIOException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveAugmentedIOException] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: SafeArray[Any]): Self = StObject.set(x, "Arguments", value.asInstanceOf[js.Any])
   }

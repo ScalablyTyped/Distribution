@@ -23,7 +23,8 @@ object DataFunctionArgs {
     __obj.asInstanceOf[DataFunctionArgs]
   }
   
-  extension [Self <: DataFunctionArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFunctionArgs] (val x: Self) extends AnyVal {
     
     inline def setParams(value: Params[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     

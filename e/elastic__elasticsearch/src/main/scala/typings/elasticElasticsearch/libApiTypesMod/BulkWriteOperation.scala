@@ -22,7 +22,8 @@ object BulkWriteOperation {
     __obj.asInstanceOf[BulkWriteOperation]
   }
   
-  extension [Self <: BulkWriteOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkWriteOperation] (val x: Self) extends AnyVal {
     
     inline def setDynamic_templates(value: Record[String, String]): Self = StObject.set(x, "dynamic_templates", value.asInstanceOf[js.Any])
     

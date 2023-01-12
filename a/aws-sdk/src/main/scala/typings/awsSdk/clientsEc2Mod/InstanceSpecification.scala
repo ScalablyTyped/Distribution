@@ -28,7 +28,8 @@ object InstanceSpecification {
     __obj.asInstanceOf[InstanceSpecification]
   }
   
-  extension [Self <: InstanceSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceSpecification] (val x: Self) extends AnyVal {
     
     inline def setExcludeBootVolume(value: Boolean): Self = StObject.set(x, "ExcludeBootVolume", value.asInstanceOf[js.Any])
     

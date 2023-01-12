@@ -32,7 +32,8 @@ object DatasetBands {
     __obj.asInstanceOf[DatasetBands]
   }
   
-  extension [Self <: DatasetBands](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetBands] (val x: Self) extends AnyVal {
     
     inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     

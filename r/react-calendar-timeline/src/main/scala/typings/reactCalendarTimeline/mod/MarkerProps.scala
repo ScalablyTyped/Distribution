@@ -18,7 +18,8 @@ object MarkerProps {
     __obj.asInstanceOf[MarkerProps]
   }
   
-  extension [Self <: MarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: /* props */ CustomMarkerChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     

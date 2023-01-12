@@ -20,7 +20,8 @@ object DynamicToStaticEvent {
     __obj.asInstanceOf[DynamicToStaticEvent]
   }
   
-  extension [Self <: DynamicToStaticEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicToStaticEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: dynamicToStatic): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

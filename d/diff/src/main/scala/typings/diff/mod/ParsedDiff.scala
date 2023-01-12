@@ -25,7 +25,8 @@ object ParsedDiff {
     __obj.asInstanceOf[ParsedDiff]
   }
   
-  extension [Self <: ParsedDiff](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedDiff] (val x: Self) extends AnyVal {
     
     inline def setHunks(value: js.Array[Hunk]): Self = StObject.set(x, "hunks", value.asInstanceOf[js.Any])
     

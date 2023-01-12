@@ -18,7 +18,8 @@ object CalculationProperties {
     __obj.asInstanceOf[CalculationProperties]
   }
   
-  extension [Self <: CalculationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalculationProperties] (val x: Self) extends AnyVal {
     
     inline def setFullCalcOnLoad(value: Boolean): Self = StObject.set(x, "fullCalcOnLoad", value.asInstanceOf[js.Any])
   }

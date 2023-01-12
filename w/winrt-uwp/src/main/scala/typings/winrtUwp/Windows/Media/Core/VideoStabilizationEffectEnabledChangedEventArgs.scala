@@ -17,7 +17,8 @@ object VideoStabilizationEffectEnabledChangedEventArgs {
     __obj.asInstanceOf[VideoStabilizationEffectEnabledChangedEventArgs]
   }
   
-  extension [Self <: VideoStabilizationEffectEnabledChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoStabilizationEffectEnabledChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setReason(value: VideoStabilizationEffectEnabledChangedReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

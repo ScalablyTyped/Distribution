@@ -27,7 +27,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[Animation[V]]
     }
     
-    extension [Self <: Animation[?], V](x: Self & Animation[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animation[?], V] (val x: Self & Animation[V]) extends AnyVal {
       
       inline def setFlipTarget(value: () => Unit): Self = StObject.set(x, "flipTarget", js.Any.fromFunction0(value))
       
@@ -50,7 +51,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[AnimationState[V]]
     }
     
-    extension [Self <: AnimationState[?], V](x: Self & AnimationState[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationState[?], V] (val x: Self & AnimationState[V]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -81,7 +83,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[DecayOptions]
     }
     
-    extension [Self <: DecayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecayOptions] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Double): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -128,7 +131,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[DriverControls]
     }
     
-    extension [Self <: DriverControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriverControls] (val x: Self) extends AnyVal {
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
@@ -165,7 +169,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[InertiaOptions]
     }
     
-    extension [Self <: InertiaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InertiaOptions] (val x: Self) extends AnyVal {
       
       inline def setBounceDamping(value: Double): Self = StObject.set(x, "bounceDamping", value.asInstanceOf[js.Any])
       
@@ -224,7 +229,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[KeyframeOptions[V]]
     }
     
-    extension [Self <: KeyframeOptions[?], V](x: Self & KeyframeOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyframeOptions[?], V] (val x: Self & KeyframeOptions[V]) extends AnyVal {
       
       inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -271,7 +277,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[PhysicsSpringOptions]
     }
     
-    extension [Self <: PhysicsSpringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhysicsSpringOptions] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -302,7 +309,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[PlaybackControls]
     }
     
-    extension [Self <: PlaybackControls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaybackControls] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
@@ -343,7 +351,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[PlaybackOptions[V]]
     }
     
-    extension [Self <: PlaybackOptions[?], V](x: Self & PlaybackOptions[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaybackOptions[?], V] (val x: Self & PlaybackOptions[V]) extends AnyVal {
       
       inline def setAutoplay(value: Boolean): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -422,7 +431,8 @@ object libAnimationsTypesMod {
       __obj.asInstanceOf[SpringOptions]
     }
     
-    extension [Self <: SpringOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringOptions] (val x: Self) extends AnyVal {
       
       inline def setBounce(value: Double): Self = StObject.set(x, "bounce", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object DeliveryStreamEncryptionConfigurationInput {
     __obj.asInstanceOf[DeliveryStreamEncryptionConfigurationInput]
   }
   
-  extension [Self <: DeliveryStreamEncryptionConfigurationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliveryStreamEncryptionConfigurationInput] (val x: Self) extends AnyVal {
     
     inline def setKeyARN(value: AWSKMSKeyARN): Self = StObject.set(x, "KeyARN", value.asInstanceOf[js.Any])
     

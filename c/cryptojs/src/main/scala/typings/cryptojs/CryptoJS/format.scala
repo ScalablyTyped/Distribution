@@ -21,7 +21,8 @@ object format {
       __obj.asInstanceOf[FormatStatic]
     }
     
-    extension [Self <: FormatStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatStatic] (val x: Self) extends AnyVal {
       
       inline def setHex(value: IFormatter): Self = StObject.set(x, "Hex", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object format {
       __obj.asInstanceOf[IFormatter]
     }
     
-    extension [Self <: IFormatter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFormatter] (val x: Self) extends AnyVal {
       
       inline def setParse(value: String => CipherParams): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
       

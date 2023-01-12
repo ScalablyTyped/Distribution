@@ -49,7 +49,8 @@ object IDisplay {
     __obj.asInstanceOf[IDisplay]
   }
   
-  extension [Self <: IDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisplay] (val x: Self) extends AnyVal {
     
     inline def setGetRawValue(value: () => String): Self = StObject.set(x, "getRawValue", js.Any.fromFunction0(value))
     

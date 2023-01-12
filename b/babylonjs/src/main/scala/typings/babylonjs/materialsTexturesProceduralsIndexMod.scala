@@ -341,7 +341,8 @@ object materialsTexturesProceduralsIndexMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setProceduralTextures(
           value: js.Array[

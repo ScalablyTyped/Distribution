@@ -114,7 +114,8 @@ object XCurrencyField {
     __obj.asInstanceOf[XCurrencyField]
   }
   
-  extension [Self <: XCurrencyField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCurrencyField] (val x: Self) extends AnyVal {
     
     inline def setDecimalDigits(value: Double): Self = StObject.set(x, "DecimalDigits", value.asInstanceOf[js.Any])
     

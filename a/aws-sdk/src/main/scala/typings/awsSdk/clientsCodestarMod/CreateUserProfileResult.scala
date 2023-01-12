@@ -43,7 +43,8 @@ object CreateUserProfileResult {
     __obj.asInstanceOf[CreateUserProfileResult]
   }
   
-  extension [Self <: CreateUserProfileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserProfileResult] (val x: Self) extends AnyVal {
     
     inline def setCreatedTimestamp(value: js.Date): Self = StObject.set(x, "createdTimestamp", value.asInstanceOf[js.Any])
     

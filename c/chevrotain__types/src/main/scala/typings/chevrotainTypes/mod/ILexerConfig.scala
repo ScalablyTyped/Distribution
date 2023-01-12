@@ -135,7 +135,8 @@ object ILexerConfig {
     __obj.asInstanceOf[ILexerConfig]
   }
   
-  extension [Self <: ILexerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILexerConfig] (val x: Self) extends AnyVal {
     
     inline def setDeferDefinitionErrorsHandling(value: Boolean): Self = StObject.set(x, "deferDefinitionErrorsHandling", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object WebUIContactVideoCallActivatedEventArgs {
     __obj.asInstanceOf[WebUIContactVideoCallActivatedEventArgs]
   }
   
-  extension [Self <: WebUIContactVideoCallActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebUIContactVideoCallActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setActivatedOperation(value: ActivatedOperation): Self = StObject.set(x, "activatedOperation", value.asInstanceOf[js.Any])
     

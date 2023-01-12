@@ -17,7 +17,8 @@ object LinearSpringOptions {
     __obj.asInstanceOf[LinearSpringOptions]
   }
   
-  extension [Self <: LinearSpringOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinearSpringOptions] (val x: Self) extends AnyVal {
     
     inline def setRestLength(value: Double): Self = StObject.set(x, "restLength", value.asInstanceOf[js.Any])
     

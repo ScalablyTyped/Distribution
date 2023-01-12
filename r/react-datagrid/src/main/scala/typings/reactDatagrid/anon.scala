@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[DisabledStyle]
     }
     
-    extension [Self <: DisabledStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisabledStyle] (val x: Self) extends AnyVal {
       
       inline def setDisabledStyle(value: SVGAttributes[js.Object]): Self = StObject.set(x, "disabledStyle", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[PageSize]
     }
     
-    extension [Self <: PageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       

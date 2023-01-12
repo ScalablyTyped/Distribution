@@ -40,7 +40,8 @@ object build2StringUtilsMod {
       __obj.asInstanceOf[InternalDecodedString]
     }
     
-    extension [Self <: InternalDecodedString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalDecodedString] (val x: Self) extends AnyVal {
       
       inline def setBytesReadCount(value: Double): Self = StObject.set(x, "bytesReadCount", value.asInstanceOf[js.Any])
       

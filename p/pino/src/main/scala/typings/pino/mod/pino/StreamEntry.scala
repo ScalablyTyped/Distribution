@@ -17,7 +17,8 @@ object StreamEntry {
     __obj.asInstanceOf[StreamEntry]
   }
   
-  extension [Self <: StreamEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamEntry] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Level): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

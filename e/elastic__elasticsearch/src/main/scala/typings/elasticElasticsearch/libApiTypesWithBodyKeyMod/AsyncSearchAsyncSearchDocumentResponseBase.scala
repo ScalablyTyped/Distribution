@@ -23,7 +23,8 @@ object AsyncSearchAsyncSearchDocumentResponseBase {
     __obj.asInstanceOf[AsyncSearchAsyncSearchDocumentResponseBase[TDocument, TAggregations]]
   }
   
-  extension [Self <: AsyncSearchAsyncSearchDocumentResponseBase[?, ?], TDocument, TAggregations](x: Self & (AsyncSearchAsyncSearchDocumentResponseBase[TDocument, TAggregations])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsyncSearchAsyncSearchDocumentResponseBase[?, ?], TDocument, TAggregations] (val x: Self & (AsyncSearchAsyncSearchDocumentResponseBase[TDocument, TAggregations])) extends AnyVal {
     
     inline def setResponse(value: AsyncSearchAsyncSearch[TDocument, TAggregations]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
   }

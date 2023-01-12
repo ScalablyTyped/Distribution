@@ -48,7 +48,8 @@ object ListEventPredictionsRequest {
     __obj.asInstanceOf[ListEventPredictionsRequest]
   }
   
-  extension [Self <: ListEventPredictionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEventPredictionsRequest] (val x: Self) extends AnyVal {
     
     inline def setDetectorId(value: FilterCondition): Self = StObject.set(x, "detectorId", value.asInstanceOf[js.Any])
     

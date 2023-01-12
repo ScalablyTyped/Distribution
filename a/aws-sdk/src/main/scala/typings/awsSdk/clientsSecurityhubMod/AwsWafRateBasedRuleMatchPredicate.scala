@@ -28,7 +28,8 @@ object AwsWafRateBasedRuleMatchPredicate {
     __obj.asInstanceOf[AwsWafRateBasedRuleMatchPredicate]
   }
   
-  extension [Self <: AwsWafRateBasedRuleMatchPredicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsWafRateBasedRuleMatchPredicate] (val x: Self) extends AnyVal {
     
     inline def setDataId(value: NonEmptyString): Self = StObject.set(x, "DataId", value.asInstanceOf[js.Any])
     

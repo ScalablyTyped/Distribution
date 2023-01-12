@@ -63,7 +63,8 @@ object PipelineExecutionStep {
     __obj.asInstanceOf[PipelineExecutionStep]
   }
   
-  extension [Self <: PipelineExecutionStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipelineExecutionStep] (val x: Self) extends AnyVal {
     
     inline def setAttemptCount(value: IntegerValue): Self = StObject.set(x, "AttemptCount", value.asInstanceOf[js.Any])
     

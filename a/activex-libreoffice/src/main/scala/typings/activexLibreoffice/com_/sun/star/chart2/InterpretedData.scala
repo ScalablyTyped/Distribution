@@ -20,7 +20,8 @@ object InterpretedData {
     __obj.asInstanceOf[InterpretedData]
   }
   
-  extension [Self <: InterpretedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpretedData] (val x: Self) extends AnyVal {
     
     inline def setCategories(value: XLabeledDataSequence): Self = StObject.set(x, "Categories", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object BottomBlock {
     __obj.asInstanceOf[BottomBlock]
   }
   
-  extension [Self <: BottomBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BottomBlock] (val x: Self) extends AnyVal {
     
     inline def setBottomBlock(value: IBottomBlock): Self = StObject.set(x, "bottomBlock", value.asInstanceOf[js.Any])
     

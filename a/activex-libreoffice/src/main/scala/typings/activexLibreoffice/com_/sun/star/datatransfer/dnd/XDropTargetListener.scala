@@ -68,7 +68,8 @@ object XDropTargetListener {
     __obj.asInstanceOf[XDropTargetListener]
   }
   
-  extension [Self <: XDropTargetListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDropTargetListener] (val x: Self) extends AnyVal {
     
     inline def setDragEnter(value: DropTargetDragEnterEvent => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
     

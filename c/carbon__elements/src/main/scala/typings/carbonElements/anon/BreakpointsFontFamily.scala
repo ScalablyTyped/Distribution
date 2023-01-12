@@ -28,7 +28,8 @@ object BreakpointsFontFamily {
     __obj.asInstanceOf[BreakpointsFontFamily]
   }
   
-  extension [Self <: BreakpointsFontFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointsFontFamily] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: MaxMd): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

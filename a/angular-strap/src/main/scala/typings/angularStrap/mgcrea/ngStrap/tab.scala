@@ -27,7 +27,8 @@ object tab {
       __obj.asInstanceOf[ITabOptions]
     }
     
-    extension [Self <: ITabOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabOptions] (val x: Self) extends AnyVal {
       
       inline def setActiveClass(value: String): Self = StObject.set(x, "activeClass", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object tab {
       __obj.asInstanceOf[ITabProvider]
     }
     
-    extension [Self <: ITabProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: ITabOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }
@@ -77,7 +79,8 @@ object tab {
       __obj.asInstanceOf[ITabService]
     }
     
-    extension [Self <: ITabService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabService] (val x: Self) extends AnyVal {
       
       inline def setController(value: Any): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       

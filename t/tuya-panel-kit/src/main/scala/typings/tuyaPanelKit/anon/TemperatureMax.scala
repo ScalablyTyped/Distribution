@@ -17,7 +17,8 @@ object TemperatureMax {
     __obj.asInstanceOf[TemperatureMax]
   }
   
-  extension [Self <: TemperatureMax](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemperatureMax] (val x: Self) extends AnyVal {
     
     inline def setTemperatureMax(value: Double): Self = StObject.set(x, "temperatureMax", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Handle {
     __obj.asInstanceOf[Handle[TTarget, TData]]
   }
   
-  extension [Self <: Handle[?, ?], TTarget, TData](x: Self & (Handle[TTarget, TData])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Handle[?, ?], TTarget, TData] (val x: Self & (Handle[TTarget, TData])) extends AnyVal {
     
     inline def setHandle(
       value: ((TriggeredEvent[TTarget, TData, Any, Any]) & (HandleObj[TTarget, TData]), /* repeated */ TData) => Unit

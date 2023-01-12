@@ -134,7 +134,8 @@ object libDropdownMod {
       __obj.asInstanceOf[DropdownBaseProps]
     }
     
-    extension [Self <: DropdownBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownBaseProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       
@@ -682,7 +683,8 @@ object libDropdownMod {
       __obj.asInstanceOf[DropdownProps]
     }
     
-    extension [Self <: DropdownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

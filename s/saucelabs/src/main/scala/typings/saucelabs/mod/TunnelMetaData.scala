@@ -30,7 +30,8 @@ object TunnelMetaData {
     __obj.asInstanceOf[TunnelMetaData]
   }
   
-  extension [Self <: TunnelMetaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TunnelMetaData] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: String): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
     

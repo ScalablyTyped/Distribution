@@ -22,7 +22,8 @@ object CustomAccount {
     __obj.asInstanceOf[CustomAccount]
   }
   
-  extension [Self <: CustomAccount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomAccount] (val x: Self) extends AnyVal {
     
     inline def setLoginUrl(value: String): Self = StObject.set(x, "loginUrl", value.asInstanceOf[js.Any])
     

@@ -80,7 +80,8 @@ object libSrcParserLexerAdapterMod {
       __obj.asInstanceOf[LexerAdapter]
     }
     
-    extension [Self <: LexerAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexerAdapter] (val x: Self) extends AnyVal {
       
       inline def setFormatError(value: NearleyToken => String): Self = StObject.set(x, "formatError", js.Any.fromFunction1(value))
       
@@ -116,7 +117,8 @@ object libSrcParserLexerAdapterMod {
       __obj.asInstanceOf[NearleyToken]
     }
     
-    extension [Self <: NearleyToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NearleyToken] (val x: Self) extends AnyVal {
       
       inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

@@ -20,7 +20,8 @@ object ScheduledReleaseTrigger {
     __obj.asInstanceOf[ScheduledReleaseTrigger]
   }
   
-  extension [Self <: ScheduledReleaseTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScheduledReleaseTrigger] (val x: Self) extends AnyVal {
     
     inline def setSchedule(value: ReleaseSchedule): Self = StObject.set(x, "schedule", value.asInstanceOf[js.Any])
   }

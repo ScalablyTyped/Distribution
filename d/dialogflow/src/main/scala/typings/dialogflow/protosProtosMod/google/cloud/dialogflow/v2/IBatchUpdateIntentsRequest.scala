@@ -35,7 +35,8 @@ object IBatchUpdateIntentsRequest {
     __obj.asInstanceOf[IBatchUpdateIntentsRequest]
   }
   
-  extension [Self <: IBatchUpdateIntentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBatchUpdateIntentsRequest] (val x: Self) extends AnyVal {
     
     inline def setIntentBatchInline(value: IIntentBatch): Self = StObject.set(x, "intentBatchInline", value.asInstanceOf[js.Any])
     

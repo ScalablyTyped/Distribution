@@ -19,7 +19,8 @@ object FirstSecond {
     __obj.asInstanceOf[FirstSecond]
   }
   
-  extension [Self <: FirstSecond](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstSecond] (val x: Self) extends AnyVal {
     
     inline def setFirst(value: IMapView[String, NamedResource]): Self = StObject.set(x, "first", value.asInstanceOf[js.Any])
     

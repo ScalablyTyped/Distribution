@@ -21,7 +21,8 @@ object Dictlayerdata {
     __obj.asInstanceOf[Dictlayerdata]
   }
   
-  extension [Self <: Dictlayerdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictlayerdata] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: Title): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

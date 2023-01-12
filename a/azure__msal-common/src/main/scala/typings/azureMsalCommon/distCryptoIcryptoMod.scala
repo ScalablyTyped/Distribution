@@ -80,7 +80,8 @@ object distCryptoIcryptoMod {
       __obj.asInstanceOf[PkceCodes]
     }
     
-    extension [Self <: PkceCodes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PkceCodes] (val x: Self) extends AnyVal {
       
       inline def setChallenge(value: String): Self = StObject.set(x, "challenge", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distCryptoIcryptoMod {
       __obj.asInstanceOf[SignedHttpRequestParameters]
     }
     
-    extension [Self <: SignedHttpRequestParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignedHttpRequestParameters] (val x: Self) extends AnyVal {
       
       inline def setCorrelationId(value: String): Self = StObject.set(x, "correlationId", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object BaseListenOptions {
     __obj.asInstanceOf[BaseListenOptions]
   }
   
-  extension [Self <: BaseListenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseListenOptions] (val x: Self) extends AnyVal {
     
     inline def setBacklog(value: Double): Self = StObject.set(x, "backlog", value.asInstanceOf[js.Any])
     

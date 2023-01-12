@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[ClassName]
     }
     
-    extension [Self <: ClassName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: PaneSize): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object anon {
       __obj.asInstanceOf[Next]
     }
     
-    extension [Self <: Next](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Next] (val x: Self) extends AnyVal {
       
       inline def setNext(value: Double): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object anon {
       __obj.asInstanceOf[PageX]
     }
     
-    extension [Self <: PageX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageX] (val x: Self) extends AnyVal {
       
       inline def setPageX(value: Double): Self = StObject.set(x, "pageX", value.asInstanceOf[js.Any])
       
@@ -140,7 +144,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object componentsHelpersMod {
       __obj.asInstanceOf[Helpers]
     }
     
-    extension [Self <: Helpers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Helpers] (val x: Self) extends AnyVal {
       
       inline def setDecodeSteamTime(value: String => js.Date): Self = StObject.set(x, "decodeSteamTime", js.Any.fromFunction1(value))
       

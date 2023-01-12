@@ -39,7 +39,8 @@ object JSXFragment__ {
     __obj.asInstanceOf[JSXFragment__]
   }
   
-  extension [Self <: JSXFragment__](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXFragment__] (val x: Self) extends AnyVal {
     
     inline def setChildren(
       value: js.Array[

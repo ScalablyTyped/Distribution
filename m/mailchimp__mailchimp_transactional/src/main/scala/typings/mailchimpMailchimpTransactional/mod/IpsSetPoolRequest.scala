@@ -27,7 +27,8 @@ object IpsSetPoolRequest {
     __obj.asInstanceOf[IpsSetPoolRequest]
   }
   
-  extension [Self <: IpsSetPoolRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpsSetPoolRequest] (val x: Self) extends AnyVal {
     
     inline def setCreate_pool(value: Boolean): Self = StObject.set(x, "create_pool", value.asInstanceOf[js.Any])
     

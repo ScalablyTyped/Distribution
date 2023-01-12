@@ -23,7 +23,8 @@ object Rationale {
     __obj.asInstanceOf[Rationale]
   }
   
-  extension [Self <: Rationale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rationale] (val x: Self) extends AnyVal {
     
     inline def setButtonNegative(value: String): Self = StObject.set(x, "buttonNegative", value.asInstanceOf[js.Any])
     

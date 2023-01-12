@@ -23,7 +23,8 @@ object CreateImageBuilderStreamingURLResult {
     __obj.asInstanceOf[CreateImageBuilderStreamingURLResult]
   }
   
-  extension [Self <: CreateImageBuilderStreamingURLResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateImageBuilderStreamingURLResult] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: js.Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ViewModel {
     __obj.asInstanceOf[ViewModel]
   }
   
-  extension [Self <: ViewModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewModel] (val x: Self) extends AnyVal {
     
     inline def setViewModel(value: js.Object): Self = StObject.set(x, "viewModel", value.asInstanceOf[js.Any])
   }

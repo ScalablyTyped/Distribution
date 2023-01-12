@@ -71,7 +71,8 @@ object anon {
       __obj.asInstanceOf[PartialUIEvent]
     }
     
-    extension [Self <: PartialUIEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialUIEvent] (val x: Self) extends AnyVal {
       
       inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object typesBaseSizeableOptionsMod {
       __obj.asInstanceOf[SizeableOptions]
     }
     
-    extension [Self <: SizeableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SizeableOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoResize(value: Boolean | String): Self = StObject.set(x, "autoResize", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object typesBaseSizeableOptionsMod {
       __obj.asInstanceOf[WidthOption]
     }
     
-    extension [Self <: WidthOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidthOption] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       

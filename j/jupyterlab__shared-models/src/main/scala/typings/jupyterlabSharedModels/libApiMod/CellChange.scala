@@ -25,7 +25,8 @@ object CellChange {
     __obj.asInstanceOf[CellChange[MetadataType]]
   }
   
-  extension [Self <: CellChange[?], MetadataType](x: Self & CellChange[MetadataType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellChange[?], MetadataType] (val x: Self & CellChange[MetadataType]) extends AnyVal {
     
     inline def setExecutionCountChange(value: OldValue): Self = StObject.set(x, "executionCountChange", value.asInstanceOf[js.Any])
     

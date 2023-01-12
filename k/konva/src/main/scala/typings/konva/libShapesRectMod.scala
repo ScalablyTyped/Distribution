@@ -36,7 +36,8 @@ object libShapesRectMod {
       __obj.asInstanceOf[RectConfig]
     }
     
-    extension [Self <: RectConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RectConfig] (val x: Self) extends AnyVal {
       
       inline def setCornerRadius(value: Double | js.Array[Double]): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
       

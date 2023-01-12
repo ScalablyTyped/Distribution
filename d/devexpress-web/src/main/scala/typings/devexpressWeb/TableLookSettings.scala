@@ -53,7 +53,8 @@ object TableLookSettings {
     __obj.asInstanceOf[TableLookSettings]
   }
   
-  extension [Self <: TableLookSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableLookSettings] (val x: Self) extends AnyVal {
     
     inline def setApplyFirstColumn(value: Boolean): Self = StObject.set(x, "applyFirstColumn", value.asInstanceOf[js.Any])
     

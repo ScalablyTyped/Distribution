@@ -17,7 +17,8 @@ object IndicesAnalyzeCharFilterDetail {
     __obj.asInstanceOf[IndicesAnalyzeCharFilterDetail]
   }
   
-  extension [Self <: IndicesAnalyzeCharFilterDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesAnalyzeCharFilterDetail] (val x: Self) extends AnyVal {
     
     inline def setFiltered_text(value: js.Array[String]): Self = StObject.set(x, "filtered_text", value.asInstanceOf[js.Any])
     

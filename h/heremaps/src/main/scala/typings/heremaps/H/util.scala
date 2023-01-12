@@ -81,7 +81,8 @@ object util {
            with State
     }
     
-    extension [Self <: Request](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
       
       inline def setGetFailed(value: () => Double): Self = StObject.set(x, "getFailed", js.Any.fromFunction0(value))
       
@@ -216,7 +217,8 @@ object util {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setCallback(value: /* event */ Event => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
         
@@ -290,7 +292,8 @@ object util {
       __obj.asInstanceOf[Event]
     }
     
-    extension [Self <: Event](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Event] (val x: Self) extends AnyVal {
       
       inline def setCurrentTarget(value: Any): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       
@@ -442,7 +445,8 @@ object util {
       __obj.asInstanceOf[ICancelable]
     }
     
-    extension [Self <: ICancelable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICancelable] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
     }
@@ -619,7 +623,8 @@ object util {
         __obj.asInstanceOf[IKinetics]
       }
       
-      extension [Self <: IKinetics](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKinetics] (val x: Self) extends AnyVal {
         
         inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
         

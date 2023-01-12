@@ -125,7 +125,8 @@ object libEsmComponentsTreeTreeMod {
       __obj.asInstanceOf[ITreeProps[T]]
     }
     
-    extension [Self <: ITreeProps[?], T](x: Self & ITreeProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITreeProps[?], T] (val x: Self & ITreeProps[T]) extends AnyVal {
       
       inline def setContents(value: js.Array[TreeNodeInfo[T]]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       

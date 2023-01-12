@@ -42,7 +42,8 @@ object distTypesRequestRequestOptionsMod {
       __obj.asInstanceOf[RequestRequestOptions]
     }
     
-    extension [Self <: RequestRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

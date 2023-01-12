@@ -460,7 +460,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setEscape(value: /* value */ Any => String): Self = StObject.set(x, "escape", js.Any.fromFunction1(value))
       
@@ -489,7 +490,8 @@ object mod {
       __obj.asInstanceOf[TemplateCache_]
     }
     
-    extension [Self <: TemplateCache_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TemplateCache_] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

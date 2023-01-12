@@ -30,7 +30,8 @@ object NodePropertyDef {
     __obj.asInstanceOf[NodePropertyDef[TVal, TInstProps]]
   }
   
-  extension [Self <: NodePropertyDef[?, ?], TVal, TInstProps /* <: NodeProperties */](x: Self & (NodePropertyDef[TVal, TInstProps])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodePropertyDef[?, ?], TVal, TInstProps /* <: NodeProperties */] (val x: Self & (NodePropertyDef[TVal, TInstProps])) extends AnyVal {
     
     inline def setRequired(value: Boolean): Self = StObject.set(x, "required", value.asInstanceOf[js.Any])
     

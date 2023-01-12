@@ -28,7 +28,8 @@ object GetTimeSeriesServiceStatisticsResult {
     __obj.asInstanceOf[GetTimeSeriesServiceStatisticsResult]
   }
   
-  extension [Self <: GetTimeSeriesServiceStatisticsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTimeSeriesServiceStatisticsResult] (val x: Self) extends AnyVal {
     
     inline def setContainsOldGroupVersions(value: Boolean): Self = StObject.set(x, "ContainsOldGroupVersions", value.asInstanceOf[js.Any])
     

@@ -348,7 +348,8 @@ object libEsmTablePropsMod {
       __obj.asInstanceOf[ITableProps]
     }
     
-    extension [Self <: ITableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableProps] (val x: Self) extends AnyVal {
       
       inline def setBodyContextMenuRenderer(value: /* context */ IMenuContext => Element): Self = StObject.set(x, "bodyContextMenuRenderer", js.Any.fromFunction1(value))
       
@@ -616,7 +617,8 @@ object libEsmTablePropsMod {
       __obj.asInstanceOf[TablePropsDefaults]
     }
     
-    extension [Self <: TablePropsDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePropsDefaults] (val x: Self) extends AnyVal {
       
       inline def setDefaultColumnWidth(value: Double): Self = StObject.set(x, "defaultColumnWidth", value.asInstanceOf[js.Any])
       
@@ -790,7 +792,8 @@ object libEsmTablePropsMod {
       __obj.asInstanceOf[TablePropsWithDefaults]
     }
     
-    extension [Self <: TablePropsWithDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablePropsWithDefaults] (val x: Self) extends AnyVal {
       
       inline def setBodyContextMenuRenderer(value: /* context */ IMenuContext => Element): Self = StObject.set(x, "bodyContextMenuRenderer", js.Any.fromFunction1(value))
       

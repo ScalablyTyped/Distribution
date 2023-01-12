@@ -17,7 +17,8 @@ object QueryEcosystem {
     __obj.asInstanceOf[QueryEcosystem]
   }
   
-  extension [Self <: QueryEcosystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEcosystem] (val x: Self) extends AnyVal {
     
     inline def setPath(value: Owner): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

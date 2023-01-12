@@ -108,7 +108,8 @@ object distFormatsMod {
       __obj.asInstanceOf[DefinedFormats]
     }
     
-    extension [Self <: DefinedFormats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefinedFormats] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Format): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       

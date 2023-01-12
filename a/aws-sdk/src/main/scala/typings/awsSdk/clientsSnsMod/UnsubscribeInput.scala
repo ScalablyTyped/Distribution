@@ -18,7 +18,8 @@ object UnsubscribeInput {
     __obj.asInstanceOf[UnsubscribeInput]
   }
   
-  extension [Self <: UnsubscribeInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnsubscribeInput] (val x: Self) extends AnyVal {
     
     inline def setSubscriptionArn(value: subscriptionARN): Self = StObject.set(x, "SubscriptionArn", value.asInstanceOf[js.Any])
   }

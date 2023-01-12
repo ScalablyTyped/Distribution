@@ -22,7 +22,8 @@ object PartialNumericMenuProvide {
     __obj.asInstanceOf[PartialNumericMenuProvide]
   }
   
-  extension [Self <: PartialNumericMenuProvide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNumericMenuProvide] (val x: Self) extends AnyVal {
     
     inline def setCreateURL(value: /* repeated */ Any => Any): Self = StObject.set(x, "createURL", js.Any.fromFunction1(value))
     

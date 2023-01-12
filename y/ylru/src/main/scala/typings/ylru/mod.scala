@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[YLRUOptions]
     }
     
-    extension [Self <: YLRUOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YLRUOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       

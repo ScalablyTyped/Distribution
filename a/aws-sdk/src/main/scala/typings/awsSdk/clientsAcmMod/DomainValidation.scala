@@ -43,7 +43,8 @@ object DomainValidation {
     __obj.asInstanceOf[DomainValidation]
   }
   
-  extension [Self <: DomainValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainValidation] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainNameString): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

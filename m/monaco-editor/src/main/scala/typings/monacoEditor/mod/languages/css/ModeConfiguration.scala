@@ -78,7 +78,8 @@ object ModeConfiguration {
     __obj.asInstanceOf[ModeConfiguration]
   }
   
-  extension [Self <: ModeConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModeConfiguration] (val x: Self) extends AnyVal {
     
     inline def setColors(value: Boolean): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object QueryExecuteCompleteNotificationResult {
     __obj.asInstanceOf[QueryExecuteCompleteNotificationResult]
   }
   
-  extension [Self <: QueryExecuteCompleteNotificationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExecuteCompleteNotificationResult] (val x: Self) extends AnyVal {
     
     inline def setBatchSummaries(value: js.Array[BatchSummary]): Self = StObject.set(x, "batchSummaries", value.asInstanceOf[js.Any])
     

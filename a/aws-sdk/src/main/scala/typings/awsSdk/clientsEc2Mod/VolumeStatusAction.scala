@@ -33,7 +33,8 @@ object VolumeStatusAction {
     __obj.asInstanceOf[VolumeStatusAction]
   }
   
-  extension [Self <: VolumeStatusAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeStatusAction] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

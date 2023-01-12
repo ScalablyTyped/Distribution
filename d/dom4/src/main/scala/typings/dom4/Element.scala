@@ -33,7 +33,8 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  extension [Self <: Element](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     inline def setClosest(value: String => Element | Null): Self = StObject.set(x, "closest", js.Any.fromFunction1(value))
     

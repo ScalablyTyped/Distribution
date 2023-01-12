@@ -29,7 +29,8 @@ object TooltipOptions {
     __obj.asInstanceOf[TooltipOptions]
   }
   
-  extension [Self <: TooltipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TooltipOptions] (val x: Self) extends AnyVal {
     
     inline def setAdditional_inheritable_classes(value: js.Array[String]): Self = StObject.set(x, "additional_inheritable_classes", value.asInstanceOf[js.Any])
     

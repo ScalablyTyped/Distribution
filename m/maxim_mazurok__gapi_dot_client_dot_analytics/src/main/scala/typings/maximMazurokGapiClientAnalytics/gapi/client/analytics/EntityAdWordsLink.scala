@@ -34,7 +34,8 @@ object EntityAdWordsLink {
     __obj.asInstanceOf[EntityAdWordsLink]
   }
   
-  extension [Self <: EntityAdWordsLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityAdWordsLink] (val x: Self) extends AnyVal {
     
     inline def setAdWordsAccounts(value: js.Array[AdWordsAccount]): Self = StObject.set(x, "adWordsAccounts", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ListUptimeCheckIpsResponse {
     __obj.asInstanceOf[ListUptimeCheckIpsResponse]
   }
   
-  extension [Self <: ListUptimeCheckIpsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListUptimeCheckIpsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

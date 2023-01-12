@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[EnterFullscreen]
     }
     
-    extension [Self <: EnterFullscreen](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnterFullscreen] (val x: Self) extends AnyVal {
       
       inline def setEnterFullscreen(value: /* event */ Event => Unit): Self = StObject.set(x, "enterFullscreen", js.Any.fromFunction1(value))
       

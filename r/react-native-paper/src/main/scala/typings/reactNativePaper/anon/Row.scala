@@ -17,7 +17,8 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  extension [Self <: Row](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     inline def setGroup(value: `30`): Self = StObject.set(x, "Group", value.asInstanceOf[js.Any])
     

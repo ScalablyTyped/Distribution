@@ -80,7 +80,8 @@ object symbolUtilsRenderPreviewHTMLOptions {
     __obj.asInstanceOf[symbolUtilsRenderPreviewHTMLOptions]
   }
   
-  extension [Self <: symbolUtilsRenderPreviewHTMLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: symbolUtilsRenderPreviewHTMLOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableUpsampling(value: Boolean): Self = StObject.set(x, "disableUpsampling", value.asInstanceOf[js.Any])
     

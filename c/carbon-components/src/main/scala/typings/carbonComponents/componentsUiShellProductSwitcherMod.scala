@@ -92,7 +92,8 @@ object componentsUiShellProductSwitcherMod {
       __obj.asInstanceOf[ProductSwitcherOptions]
     }
     
-    extension [Self <: ProductSwitcherOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProductSwitcherOptions] (val x: Self) extends AnyVal {
       
       inline def setAttribInitTarget(value: String): Self = StObject.set(x, "attribInitTarget", value.asInstanceOf[js.Any])
       

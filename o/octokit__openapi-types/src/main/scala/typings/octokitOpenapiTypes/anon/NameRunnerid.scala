@@ -22,7 +22,8 @@ object NameRunnerid {
     __obj.asInstanceOf[NameRunnerid]
   }
   
-  extension [Self <: NameRunnerid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NameRunnerid] (val x: Self) extends AnyVal {
     
     inline def setEnterprise(value: String): Self = StObject.set(x, "enterprise", value.asInstanceOf[js.Any])
     

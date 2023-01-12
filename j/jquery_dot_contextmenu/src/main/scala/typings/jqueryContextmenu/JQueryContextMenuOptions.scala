@@ -50,7 +50,8 @@ object JQueryContextMenuOptions {
     __obj.asInstanceOf[JQueryContextMenuOptions]
   }
   
-  extension [Self <: JQueryContextMenuOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryContextMenuOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Duration): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

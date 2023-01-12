@@ -30,7 +30,8 @@ object RoomConfigObject {
     __obj.asInstanceOf[RoomConfigObject]
   }
   
-  extension [Self <: RoomConfigObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoomConfigObject] (val x: Self) extends AnyVal {
     
     inline def setGeo(value: Code): Self = StObject.set(x, "geo", value.asInstanceOf[js.Any])
     

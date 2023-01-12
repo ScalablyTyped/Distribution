@@ -63,7 +63,8 @@ object PartialNotificationOption {
     __obj.asInstanceOf[PartialNotificationOption]
   }
   
-  extension [Self <: PartialNotificationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNotificationOption] (val x: Self) extends AnyVal {
     
     inline def setAppIconMaskUrl(value: String): Self = StObject.set(x, "appIconMaskUrl", value.asInstanceOf[js.Any])
     

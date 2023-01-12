@@ -28,7 +28,8 @@ object IterationResult {
     __obj.asInstanceOf[IterationResult]
   }
   
-  extension [Self <: IterationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IterationResult] (val x: Self) extends AnyVal {
     
     inline def setDurationMs(value: String): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     

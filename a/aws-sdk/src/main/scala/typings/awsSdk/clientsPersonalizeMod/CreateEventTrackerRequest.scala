@@ -28,7 +28,8 @@ object CreateEventTrackerRequest {
     __obj.asInstanceOf[CreateEventTrackerRequest]
   }
   
-  extension [Self <: CreateEventTrackerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEventTrackerRequest] (val x: Self) extends AnyVal {
     
     inline def setDatasetGroupArn(value: Arn): Self = StObject.set(x, "datasetGroupArn", value.asInstanceOf[js.Any])
     

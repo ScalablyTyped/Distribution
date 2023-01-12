@@ -48,7 +48,8 @@ object DescribedConnector {
     __obj.asInstanceOf[DescribedConnector]
   }
   
-  extension [Self <: DescribedConnector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribedConnector] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: Role): Self = StObject.set(x, "AccessRole", value.asInstanceOf[js.Any])
     

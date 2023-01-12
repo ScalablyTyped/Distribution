@@ -23,7 +23,8 @@ object GetBatchImportJobsResult {
     __obj.asInstanceOf[GetBatchImportJobsResult]
   }
   
-  extension [Self <: GetBatchImportJobsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBatchImportJobsResult] (val x: Self) extends AnyVal {
     
     inline def setBatchImports(value: BatchImportList): Self = StObject.set(x, "batchImports", value.asInstanceOf[js.Any])
     

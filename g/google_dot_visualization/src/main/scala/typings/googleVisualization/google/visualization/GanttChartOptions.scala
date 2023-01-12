@@ -21,7 +21,8 @@ object GanttChartOptions {
     __obj.asInstanceOf[GanttChartOptions]
   }
   
-  extension [Self <: GanttChartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttChartOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: ChartFill): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

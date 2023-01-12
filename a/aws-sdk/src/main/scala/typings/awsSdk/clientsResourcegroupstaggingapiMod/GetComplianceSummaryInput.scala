@@ -48,7 +48,8 @@ object GetComplianceSummaryInput {
     __obj.asInstanceOf[GetComplianceSummaryInput]
   }
   
-  extension [Self <: GetComplianceSummaryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetComplianceSummaryInput] (val x: Self) extends AnyVal {
     
     inline def setGroupBy(value: GroupBy): Self = StObject.set(x, "GroupBy", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object AnswerOption {
     __obj.asInstanceOf[AnswerOption]
   }
   
-  extension [Self <: AnswerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnswerOption] (val x: Self) extends AnyVal {
     
     inline def setSdpTransform(value: js.Function): Self = StObject.set(x, "sdpTransform", value.asInstanceOf[js.Any])
     

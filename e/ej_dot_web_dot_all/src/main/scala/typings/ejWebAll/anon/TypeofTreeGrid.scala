@@ -20,7 +20,8 @@ object TypeofTreeGrid {
     __obj.asInstanceOf[TypeofTreeGrid]
   }
   
-  extension [Self <: TypeofTreeGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTreeGrid] (val x: Self) extends AnyVal {
     
     inline def setFn(value: TreeGrid): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

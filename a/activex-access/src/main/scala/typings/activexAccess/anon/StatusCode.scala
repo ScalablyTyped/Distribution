@@ -23,7 +23,8 @@ object StatusCode {
     __obj.asInstanceOf[StatusCode]
   }
   
-  extension [Self <: StatusCode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusCode] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

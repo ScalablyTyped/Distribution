@@ -18,7 +18,8 @@ object GetDataQualityMetricsResponse {
     __obj.asInstanceOf[GetDataQualityMetricsResponse]
   }
   
-  extension [Self <: GetDataQualityMetricsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDataQualityMetricsResponse] (val x: Self) extends AnyVal {
     
     inline def setAnomalyDetectorDataQualityMetricList(value: AnomalyDetectorDataQualityMetricList): Self = StObject.set(x, "AnomalyDetectorDataQualityMetricList", value.asInstanceOf[js.Any])
     

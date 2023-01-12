@@ -53,7 +53,8 @@ object TransformationResult {
     __obj.asInstanceOf[TransformationResult[T]]
   }
   
-  extension [Self <: TransformationResult[?], T /* <: Node */](x: Self & TransformationResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformationResult[?], T /* <: Node */] (val x: Self & TransformationResult[T]) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[DiagnosticWithLocation]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

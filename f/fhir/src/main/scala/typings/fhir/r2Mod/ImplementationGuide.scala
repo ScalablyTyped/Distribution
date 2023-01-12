@@ -138,7 +138,8 @@ object ImplementationGuide {
     __obj.asInstanceOf[ImplementationGuide]
   }
   
-  extension [Self <: ImplementationGuide](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImplementationGuide] (val x: Self) extends AnyVal {
     
     inline def setBinary(value: js.Array[String]): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     

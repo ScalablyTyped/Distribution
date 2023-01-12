@@ -23,7 +23,8 @@ object IgGridRowSelectorsMethods {
     __obj.asInstanceOf[IgGridRowSelectorsMethods]
   }
   
-  extension [Self <: IgGridRowSelectorsMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridRowSelectorsMethods] (val x: Self) extends AnyVal {
     
     inline def setChangeLocale(value: () => Unit): Self = StObject.set(x, "changeLocale", js.Any.fromFunction0(value))
     

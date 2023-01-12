@@ -52,7 +52,8 @@ object AggregateContactManager {
     __obj.asInstanceOf[AggregateContactManager]
   }
   
-  extension [Self <: AggregateContactManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregateContactManager] (val x: Self) extends AnyVal {
     
     inline def setFindRawContactsAsync(value: Contact => IPromiseWithIAsyncOperation[IVectorView[Any]]): Self = StObject.set(x, "findRawContactsAsync", js.Any.fromFunction1(value))
     

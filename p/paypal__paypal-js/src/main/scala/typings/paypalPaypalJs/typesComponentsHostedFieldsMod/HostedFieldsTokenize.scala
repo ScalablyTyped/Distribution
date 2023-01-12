@@ -24,7 +24,8 @@ object HostedFieldsTokenize {
     __obj.asInstanceOf[HostedFieldsTokenize]
   }
   
-  extension [Self <: HostedFieldsTokenize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsTokenize] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationInsight(value: Any): Self = StObject.set(x, "authenticationInsight", value.asInstanceOf[js.Any])
     

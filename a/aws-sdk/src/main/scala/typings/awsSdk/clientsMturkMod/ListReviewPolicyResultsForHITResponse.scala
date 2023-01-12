@@ -40,7 +40,8 @@ object ListReviewPolicyResultsForHITResponse {
     __obj.asInstanceOf[ListReviewPolicyResultsForHITResponse]
   }
   
-  extension [Self <: ListReviewPolicyResultsForHITResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReviewPolicyResultsForHITResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignmentReviewPolicy(value: ReviewPolicy): Self = StObject.set(x, "AssignmentReviewPolicy", value.asInstanceOf[js.Any])
     

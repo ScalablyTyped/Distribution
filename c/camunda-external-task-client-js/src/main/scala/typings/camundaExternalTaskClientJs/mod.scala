@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[BasicAuthInterceptorConfig]
     }
     
-    extension [Self <: BasicAuthInterceptorConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicAuthInterceptorConfig] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[ClientConfig]
     }
     
-    extension [Self <: ClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
       
       inline def setAsyncResponseTimeout(value: Double): Self = StObject.set(x, "asyncResponseTimeout", value.asInstanceOf[js.Any])
       
@@ -219,7 +221,8 @@ object mod {
       __obj.asInstanceOf[HandleFailureOptions]
     }
     
-    extension [Self <: HandleFailureOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleFailureOptions] (val x: Self) extends AnyVal {
       
       inline def setErrorDetails(value: String): Self = StObject.set(x, "errorDetails", value.asInstanceOf[js.Any])
       
@@ -254,7 +257,8 @@ object mod {
       __obj.asInstanceOf[HandlerArgs]
     }
     
-    extension [Self <: HandlerArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandlerArgs] (val x: Self) extends AnyVal {
       
       inline def setTask(value: Task): Self = StObject.set(x, "task", value.asInstanceOf[js.Any])
       
@@ -315,7 +319,8 @@ object mod {
       __obj.asInstanceOf[SubscribeOptions]
     }
     
-    extension [Self <: SubscribeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
       
       inline def setBusinessKey(value: String): Self = StObject.set(x, "businessKey", value.asInstanceOf[js.Any])
       
@@ -430,7 +435,8 @@ object mod {
       __obj.asInstanceOf[Task]
     }
     
-    extension [Self <: Task](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
       
       inline def setActivityId(value: String): Self = StObject.set(x, "activityId", value.asInstanceOf[js.Any])
       
@@ -544,7 +550,8 @@ object mod {
       __obj.asInstanceOf[TopicSubscription]
     }
     
-    extension [Self <: TopicSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicSubscription] (val x: Self) extends AnyVal {
       
       inline def setUnsubscribe(value: () => Unit): Self = StObject.set(x, "unsubscribe", js.Any.fromFunction0(value))
     }
@@ -566,7 +573,8 @@ object mod {
       __obj.asInstanceOf[TypedValue]
     }
     
-    extension [Self <: TypedValue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedValue] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

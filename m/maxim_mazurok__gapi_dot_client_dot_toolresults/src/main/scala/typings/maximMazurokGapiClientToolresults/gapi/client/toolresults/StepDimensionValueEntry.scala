@@ -17,7 +17,8 @@ object StepDimensionValueEntry {
     __obj.asInstanceOf[StepDimensionValueEntry]
   }
   
-  extension [Self <: StepDimensionValueEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepDimensionValueEntry] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

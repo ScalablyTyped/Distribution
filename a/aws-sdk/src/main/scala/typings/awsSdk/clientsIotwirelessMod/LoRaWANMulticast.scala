@@ -17,7 +17,8 @@ object LoRaWANMulticast {
     __obj.asInstanceOf[LoRaWANMulticast]
   }
   
-  extension [Self <: LoRaWANMulticast](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANMulticast] (val x: Self) extends AnyVal {
     
     inline def setDlClass(value: DlClass): Self = StObject.set(x, "DlClass", value.asInstanceOf[js.Any])
     

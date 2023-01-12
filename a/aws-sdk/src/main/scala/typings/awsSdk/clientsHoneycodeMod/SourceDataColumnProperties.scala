@@ -18,7 +18,8 @@ object SourceDataColumnProperties {
     __obj.asInstanceOf[SourceDataColumnProperties]
   }
   
-  extension [Self <: SourceDataColumnProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceDataColumnProperties] (val x: Self) extends AnyVal {
     
     inline def setColumnIndex(value: SourceDataColumnIndex): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
     

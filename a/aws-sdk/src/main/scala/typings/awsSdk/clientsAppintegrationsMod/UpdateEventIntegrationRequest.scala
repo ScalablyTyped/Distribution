@@ -23,7 +23,8 @@ object UpdateEventIntegrationRequest {
     __obj.asInstanceOf[UpdateEventIntegrationRequest]
   }
   
-  extension [Self <: UpdateEventIntegrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateEventIntegrationRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

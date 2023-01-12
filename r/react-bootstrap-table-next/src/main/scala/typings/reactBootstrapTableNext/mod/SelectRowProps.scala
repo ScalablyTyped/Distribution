@@ -86,7 +86,8 @@ object SelectRowProps {
     __obj.asInstanceOf[SelectRowProps[T]]
   }
   
-  extension [Self <: SelectRowProps[?], T](x: Self & SelectRowProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectRowProps[?], T] (val x: Self & SelectRowProps[T]) extends AnyVal {
     
     inline def setBgColor(value: (js.Function2[/* row */ T, /* rowIndex */ Double, String]) | String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
     

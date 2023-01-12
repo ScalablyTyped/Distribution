@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object anon {
       __obj.asInstanceOf[CallbackName]
     }
     
-    extension [Self <: CallbackName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallbackName] (val x: Self) extends AnyVal {
       
       inline def setCallbackName(value: String): Self = StObject.set(x, "callbackName", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: Delete): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     }
@@ -158,7 +161,8 @@ object anon {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setHasKey(value: js.Function): Self = StObject.set(x, "hasKey", value.asInstanceOf[js.Any])
       
@@ -193,7 +197,8 @@ object anon {
       __obj.asInstanceOf[Extend]
     }
     
-    extension [Self <: Extend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Extend] (val x: Self) extends AnyVal {
       
       inline def setExtend(value: js.Object => js.Array[HTMLElement]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     }

@@ -31,7 +31,8 @@ object middlewaresNormalizeSQSMessageMiddlewareMod {
       __obj.asInstanceOf[NormalizeSQSMiddleware]
     }
     
-    extension [Self <: NormalizeSQSMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NormalizeSQSMiddleware] (val x: Self) extends AnyVal {
       
       inline def setBefore(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify middy.MiddlewareFunction<SQSEventWithCollection, any> */ Any
@@ -52,7 +53,8 @@ object middlewaresNormalizeSQSMessageMiddlewareMod {
       __obj.asInstanceOf[SQSEventWithCollection]
     }
     
-    extension [Self <: SQSEventWithCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQSEventWithCollection] (val x: Self) extends AnyVal {
       
       inline def setCollection(value: PickSQSRecordmessageIdrec & (Record[String, Any])): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       

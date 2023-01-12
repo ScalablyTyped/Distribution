@@ -77,7 +77,8 @@ object BoxShadow {
     __obj.asInstanceOf[BoxShadow]
   }
   
-  extension [Self <: BoxShadow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxShadow] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Unit): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

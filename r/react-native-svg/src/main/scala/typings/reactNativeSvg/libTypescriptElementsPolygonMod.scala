@@ -53,7 +53,8 @@ object libTypescriptElementsPolygonMod {
       __obj.asInstanceOf[PolygonProps]
     }
     
-    extension [Self <: PolygonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolygonProps] (val x: Self) extends AnyVal {
       
       inline def setOpacity(value: NumberProp): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
       

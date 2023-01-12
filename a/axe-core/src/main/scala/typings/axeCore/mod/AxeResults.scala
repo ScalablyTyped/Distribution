@@ -27,7 +27,8 @@ object AxeResults {
   @js.native
   val ^ : AxeResults = js.native
   
-  extension [Self <: AxeResults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxeResults] (val x: Self) extends AnyVal {
     
     inline def setInapplicable(value: js.Array[Result]): Self = StObject.set(x, "inapplicable", value.asInstanceOf[js.Any])
     

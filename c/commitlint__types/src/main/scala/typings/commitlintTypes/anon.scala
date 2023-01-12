@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[Description]
     }
     
-    extension [Self <: Description](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Description] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[EnableMultipleScopes]
     }
     
-    extension [Self <: EnableMultipleScopes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnableMultipleScopes] (val x: Self) extends AnyVal {
       
       inline def setEnableMultipleScopes(value: Boolean): Self = StObject.set(x, "enableMultipleScopes", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Enum]
     }
     
-    extension [Self <: Enum](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object anon {
       __obj.asInstanceOf[OmitCommitraw]
     }
     
-    extension [Self <: OmitCommitraw](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitCommitraw] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -223,7 +227,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordPromptNamede]
     }
     
-    extension [Self <: PartialRecordPromptNamede](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordPromptNamede] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Enum): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -353,7 +358,8 @@ object anon {
       __obj.asInstanceOf[PartialRulesConfigUser]
     }
     
-    extension [Self <: PartialRulesConfigUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRulesConfigUser] (val x: Self) extends AnyVal {
       
       inline def `setBody-case`(value: CaseRuleConfig[User]): Self = StObject.set(x, "body-case", value.asInstanceOf[js.Any])
       

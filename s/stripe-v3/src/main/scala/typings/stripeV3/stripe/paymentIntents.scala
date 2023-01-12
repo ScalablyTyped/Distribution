@@ -276,7 +276,8 @@ object paymentIntents {
       __obj.asInstanceOf[Charge]
     }
     
-    extension [Self <: Charge](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Charge] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -604,7 +605,8 @@ object paymentIntents {
       __obj.asInstanceOf[PaymentIntent]
     }
     
-    extension [Self <: PaymentIntent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentIntent] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -754,7 +756,8 @@ object paymentIntents {
       __obj.asInstanceOf[PaymentIntentNextActionRedirectToUrl]
     }
     
-    extension [Self <: PaymentIntentNextActionRedirectToUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentIntentNextActionRedirectToUrl] (val x: Self) extends AnyVal {
       
       inline def setRedirect_to_url(value: Url): Self = StObject.set(x, "redirect_to_url", value.asInstanceOf[js.Any])
       
@@ -785,7 +788,8 @@ object paymentIntents {
       __obj.asInstanceOf[PaymentIntentNextActionUseStripeSdk]
     }
     
-    extension [Self <: PaymentIntentNextActionUseStripeSdk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentIntentNextActionUseStripeSdk] (val x: Self) extends AnyVal {
       
       inline def setType(value: use_stripe_sdk): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -925,7 +929,8 @@ object paymentIntents {
       __obj.asInstanceOf[Refund]
     }
     
-    extension [Self <: Refund](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Refund] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

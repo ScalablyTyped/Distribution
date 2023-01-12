@@ -85,7 +85,8 @@ object distSrcNatManagerMod {
       __obj.asInstanceOf[NatManagerComponents]
     }
     
-    extension [Self <: NatManagerComponents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NatManagerComponents] (val x: Self) extends AnyVal {
       
       inline def setAddressManager(value: AddressManager): Self = StObject.set(x, "addressManager", value.asInstanceOf[js.Any])
       
@@ -139,7 +140,8 @@ object distSrcNatManagerMod {
       __obj.asInstanceOf[NatManagerInit]
     }
     
-    extension [Self <: NatManagerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NatManagerInit] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -181,7 +183,8 @@ object distSrcNatManagerMod {
       __obj.asInstanceOf[PMPOptions]
     }
     
-    extension [Self <: PMPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PMPOptions] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

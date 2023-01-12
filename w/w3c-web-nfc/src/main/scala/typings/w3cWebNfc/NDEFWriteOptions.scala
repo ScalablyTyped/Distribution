@@ -18,7 +18,8 @@ object NDEFWriteOptions {
     __obj.asInstanceOf[NDEFWriteOptions]
   }
   
-  extension [Self <: NDEFWriteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NDEFWriteOptions] (val x: Self) extends AnyVal {
     
     inline def setOverwrite(value: Boolean): Self = StObject.set(x, "overwrite", value.asInstanceOf[js.Any])
     

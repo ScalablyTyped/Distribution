@@ -21,7 +21,8 @@ object AlbumsControlOptions {
     __obj.asInstanceOf[AlbumsControlOptions]
   }
   
-  extension [Self <: AlbumsControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlbumsControlOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchor(value: ControlAnchor): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
     

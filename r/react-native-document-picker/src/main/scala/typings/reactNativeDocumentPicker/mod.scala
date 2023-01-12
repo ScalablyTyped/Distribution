@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[DirectoryPickerResponse]
     }
     
-    extension [Self <: DirectoryPickerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryPickerResponse] (val x: Self) extends AnyVal {
       
       inline def setUri(value: String): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])
     }
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[DocumentPickerOptions[OS]]
     }
     
-    extension [Self <: DocumentPickerOptions[?], OS /* <: SupportedPlatforms */](x: Self & DocumentPickerOptions[OS]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPickerOptions[?], OS /* <: SupportedPlatforms */] (val x: Self & DocumentPickerOptions[OS]) extends AnyVal {
       
       inline def setAllowMultiSelection(value: Boolean): Self = StObject.set(x, "allowMultiSelection", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object mod {
       __obj.asInstanceOf[DocumentPickerResponse]
     }
     
-    extension [Self <: DocumentPickerResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentPickerResponse] (val x: Self) extends AnyVal {
       
       inline def setCopyError(value: String): Self = StObject.set(x, "copyError", value.asInstanceOf[js.Any])
       
@@ -240,7 +243,8 @@ object mod {
       __obj.asInstanceOf[NativeModuleErrorShape]
     }
     
-    extension [Self <: NativeModuleErrorShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeModuleErrorShape] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

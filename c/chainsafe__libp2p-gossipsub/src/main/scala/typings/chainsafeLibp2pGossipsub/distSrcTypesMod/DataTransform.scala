@@ -30,7 +30,8 @@ object DataTransform {
     __obj.asInstanceOf[DataTransform]
   }
   
-  extension [Self <: DataTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTransform] (val x: Self) extends AnyVal {
     
     inline def setInboundTransform(value: (TopicStr, js.typedarray.Uint8Array) => js.typedarray.Uint8Array): Self = StObject.set(x, "inboundTransform", js.Any.fromFunction2(value))
     

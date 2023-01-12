@@ -21,7 +21,8 @@ object RenderDescriptor {
     __obj.asInstanceOf[RenderDescriptor]
   }
   
-  extension [Self <: RenderDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderDescriptor] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Size): Self = StObject.set(x, "PageSize", value.asInstanceOf[js.Any])
   }

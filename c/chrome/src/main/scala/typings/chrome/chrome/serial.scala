@@ -68,7 +68,8 @@ object serial {
       __obj.asInstanceOf[ConnectionInfo]
     }
     
-    extension [Self <: ConnectionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionInfo] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object serial {
       __obj.asInstanceOf[ConnectionOptions]
     }
     
-    extension [Self <: ConnectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionOptions] (val x: Self) extends AnyVal {
       
       inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
       
@@ -225,7 +227,8 @@ object serial {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: Double): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
       
@@ -260,7 +263,8 @@ object serial {
         __obj.asInstanceOf[OnReceiveInfo]
       }
       
-      extension [Self <: OnReceiveInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnReceiveInfo] (val x: Self) extends AnyVal {
         
         inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         
@@ -286,7 +290,8 @@ object serial {
         __obj.asInstanceOf[OnReceiveErrorInfo]
       }
       
-      extension [Self <: OnReceiveErrorInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnReceiveErrorInfo] (val x: Self) extends AnyVal {
         
         inline def setConnectionId(value: Double): Self = StObject.set(x, "connectionId", value.asInstanceOf[js.Any])
         

@@ -29,7 +29,8 @@ object MsearchTemplateRequest {
     __obj.asInstanceOf[MsearchTemplateRequest]
   }
   
-  extension [Self <: MsearchTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MsearchTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setCcs_minimize_roundtrips(value: Boolean): Self = StObject.set(x, "ccs_minimize_roundtrips", value.asInstanceOf[js.Any])
     

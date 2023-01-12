@@ -19,7 +19,8 @@ object ListWorkloadSharesOutput {
     __obj.asInstanceOf[ListWorkloadSharesOutput]
   }
   
-  extension [Self <: ListWorkloadSharesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWorkloadSharesOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

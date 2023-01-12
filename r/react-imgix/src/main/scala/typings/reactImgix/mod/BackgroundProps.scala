@@ -23,7 +23,8 @@ object BackgroundProps {
     __obj.asInstanceOf[BackgroundProps]
   }
   
-  extension [Self <: BackgroundProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackgroundProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

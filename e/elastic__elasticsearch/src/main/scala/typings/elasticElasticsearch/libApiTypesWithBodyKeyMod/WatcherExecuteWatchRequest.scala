@@ -23,7 +23,8 @@ object WatcherExecuteWatchRequest {
     __obj.asInstanceOf[WatcherExecuteWatchRequest]
   }
   
-  extension [Self <: WatcherExecuteWatchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherExecuteWatchRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Actionmodes): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

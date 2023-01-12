@@ -28,7 +28,8 @@ object distCoreOptionsProviderMod {
       __obj.asInstanceOf[OptionsProvider_[T]]
     }
     
-    extension [Self <: OptionsProvider_[?], T](x: Self & OptionsProvider_[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsProvider_[?], T] (val x: Self & OptionsProvider_[T]) extends AnyVal {
       
       inline def setGetCurrentOptions(value: () => T): Self = StObject.set(x, "getCurrentOptions", js.Any.fromFunction0(value))
       

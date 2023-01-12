@@ -772,7 +772,8 @@ object PlotStochasticOptions {
     __obj.asInstanceOf[PlotStochasticOptions]
   }
   
-  extension [Self <: PlotStochasticOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotStochasticOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: SeriesAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

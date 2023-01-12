@@ -48,7 +48,8 @@ object SignedPlayerInfo {
     __obj.asInstanceOf[SignedPlayerInfo]
   }
   
-  extension [Self <: SignedPlayerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedPlayerInfo] (val x: Self) extends AnyVal {
     
     inline def setGetPlayerID(value: () => String): Self = StObject.set(x, "getPlayerID", js.Any.fromFunction0(value))
     

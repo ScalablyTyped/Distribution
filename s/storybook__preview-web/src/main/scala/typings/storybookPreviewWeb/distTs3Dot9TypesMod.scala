@@ -85,7 +85,8 @@ object distTs3Dot9TypesMod {
       __obj.asInstanceOf[DocsContextProps[TFramework]]
     }
     
-    extension [Self <: DocsContextProps[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */](x: Self & DocsContextProps[TFramework]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocsContextProps[?], TFramework /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AnyFramework */ Any */] (val x: Self & DocsContextProps[TFramework]) extends AnyVal {
       
       inline def setArgs(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Args */ Any

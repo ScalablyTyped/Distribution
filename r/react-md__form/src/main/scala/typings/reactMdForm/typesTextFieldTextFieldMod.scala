@@ -583,7 +583,8 @@ object typesTextFieldTextFieldMod {
       __obj.asInstanceOf[TextFieldAttributes]
     }
     
-    extension [Self <: TextFieldAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldAttributes] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1502,7 +1503,8 @@ object typesTextFieldTextFieldMod {
       __obj.asInstanceOf[TextFieldProps]
     }
     
-    extension [Self <: TextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setContainerProps(value: OmitHTMLAttributesHTMLDiv): Self = StObject.set(x, "containerProps", value.asInstanceOf[js.Any])
       

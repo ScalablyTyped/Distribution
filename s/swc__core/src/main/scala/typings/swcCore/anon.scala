@@ -42,7 +42,8 @@ object anon {
       __obj.asInstanceOf[CacheRoot]
     }
     
-    extension [Self <: CacheRoot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CacheRoot] (val x: Self) extends AnyVal {
       
       inline def setCacheRoot(value: String): Self = StObject.set(x, "cacheRoot", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object anon {
       __obj.asInstanceOf[Comments]
     }
     
-    extension [Self <: Comments](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comments] (val x: Self) extends AnyVal {
       
       inline def setComments(value: Boolean): Self = StObject.set(x, "comments", value.asInstanceOf[js.Any])
       
@@ -112,7 +114,8 @@ object anon {
       __obj.asInstanceOf[FileName]
     }
     
-    extension [Self <: FileName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileName] (val x: Self) extends AnyVal {
       
       inline def setFileName(value: String): Self = StObject.set(x, "fileName", value.asInstanceOf[js.Any])
       
@@ -133,7 +136,8 @@ object anon {
       __obj.asInstanceOf[IsModule]
     }
     
-    extension [Self <: IsModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsModule] (val x: Self) extends AnyVal {
       
       inline def setIsModule(value: `false`): Self = StObject.set(x, "isModule", value.asInstanceOf[js.Any])
     }
@@ -273,7 +277,8 @@ object anon {
       __obj.asInstanceOf[JsFormatOptionsToSnakeCas]
     }
     
-    extension [Self <: JsFormatOptionsToSnakeCas](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsFormatOptionsToSnakeCas] (val x: Self) extends AnyVal {
       
       inline def setAsciiOnly(value: Boolean): Self = StObject.set(x, "asciiOnly", value.asInstanceOf[js.Any])
       
@@ -372,7 +377,8 @@ object anon {
       __obj.asInstanceOf[MinCost]
     }
     
-    extension [Self <: MinCost](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MinCost] (val x: Self) extends AnyVal {
       
       inline def setMinCost(value: Double): Self = StObject.set(x, "minCost", value.asInstanceOf[js.Any])
     }
@@ -389,7 +395,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaCreateUserLinkRequest {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaCreateUserLinkRequest]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaCreateUserLinkRequest] (val x: Self) extends AnyVal {
     
     inline def setNotifyNewUser(value: Boolean): Self = StObject.set(x, "notifyNewUser", value.asInstanceOf[js.Any])
     

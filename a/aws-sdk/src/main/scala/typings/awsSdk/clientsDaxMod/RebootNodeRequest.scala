@@ -23,7 +23,8 @@ object RebootNodeRequest {
     __obj.asInstanceOf[RebootNodeRequest]
   }
   
-  extension [Self <: RebootNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RebootNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterName(value: String): Self = StObject.set(x, "ClusterName", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ILayerMouseEventArgs {
     __obj.asInstanceOf[ILayerMouseEventArgs]
   }
   
-  extension [Self <: ILayerMouseEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayerMouseEventArgs] (val x: Self) extends AnyVal {
     
     inline def setPrimitive(value: IPrimitive): Self = StObject.set(x, "primitive", value.asInstanceOf[js.Any])
   }

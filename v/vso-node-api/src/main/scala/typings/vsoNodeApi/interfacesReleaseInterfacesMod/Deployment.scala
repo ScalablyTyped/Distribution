@@ -141,7 +141,8 @@ object Deployment {
     __obj.asInstanceOf[Deployment]
   }
   
-  extension [Self <: Deployment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deployment] (val x: Self) extends AnyVal {
     
     inline def setAttempt(value: Double): Self = StObject.set(x, "attempt", value.asInstanceOf[js.Any])
     

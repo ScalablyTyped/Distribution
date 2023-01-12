@@ -18,7 +18,8 @@ object UpdatePermissionsResponse {
     __obj.asInstanceOf[UpdatePermissionsResponse]
   }
   
-  extension [Self <: UpdatePermissionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePermissionsResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: UpdateErrorList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

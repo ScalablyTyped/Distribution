@@ -18,7 +18,8 @@ object ResizeToFitDeviceOptions {
     __obj.asInstanceOf[ResizeToFitDeviceOptions]
   }
   
-  extension [Self <: ResizeToFitDeviceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeToFitDeviceOptions] (val x: Self) extends AnyVal {
     
     inline def setPortraitOrientation(value: Boolean): Self = StObject.set(x, "portraitOrientation", value.asInstanceOf[js.Any])
     

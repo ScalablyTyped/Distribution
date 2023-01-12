@@ -47,7 +47,8 @@ object XSheetCellRange {
     __obj.asInstanceOf[XSheetCellRange]
   }
   
-  extension [Self <: XSheetCellRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSheetCellRange] (val x: Self) extends AnyVal {
     
     inline def setGetSpreadsheet(value: () => XSpreadsheet): Self = StObject.set(x, "getSpreadsheet", js.Any.fromFunction0(value))
     

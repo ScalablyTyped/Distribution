@@ -57,7 +57,8 @@ object ISearchGroupItem {
     __obj.asInstanceOf[ISearchGroupItem]
   }
   
-  extension [Self <: ISearchGroupItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchGroupItem] (val x: Self) extends AnyVal {
     
     inline def setQIdentifier(value: String): Self = StObject.set(x, "qIdentifier", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[DoubleQuote]
     }
     
-    extension [Self <: DoubleQuote](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DoubleQuote] (val x: Self) extends AnyVal {
       
       inline def setDoubleQuote(value: Double): Self = StObject.set(x, "doubleQuote", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object InvalidTextContentException {
     __obj.asInstanceOf[InvalidTextContentException]
   }
   
-  extension [Self <: InvalidTextContentException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidTextContentException] (val x: Self) extends AnyVal {
     
     inline def setTextContent(value: XTextContent): Self = StObject.set(x, "TextContent", value.asInstanceOf[js.Any])
   }

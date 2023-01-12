@@ -27,7 +27,8 @@ object OnenoteOperation {
     __obj.asInstanceOf[OnenoteOperation]
   }
   
-  extension [Self <: OnenoteOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnenoteOperation] (val x: Self) extends AnyVal {
     
     inline def setError(value: NullableOption[OnenoteOperationError]): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

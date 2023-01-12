@@ -35,7 +35,8 @@ object ChannelClientPermIdEntry {
     __obj.asInstanceOf[ChannelClientPermIdEntry]
   }
   
-  extension [Self <: ChannelClientPermIdEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelClientPermIdEntry] (val x: Self) extends AnyVal {
     
     inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
     

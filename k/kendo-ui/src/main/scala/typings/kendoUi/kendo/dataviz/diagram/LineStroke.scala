@@ -17,7 +17,8 @@ object LineStroke {
     __obj.asInstanceOf[LineStroke]
   }
   
-  extension [Self <: LineStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineStroke] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

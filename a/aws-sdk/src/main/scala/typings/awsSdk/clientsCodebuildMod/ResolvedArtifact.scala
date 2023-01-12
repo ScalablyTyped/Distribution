@@ -28,7 +28,8 @@ object ResolvedArtifact {
     __obj.asInstanceOf[ResolvedArtifact]
   }
   
-  extension [Self <: ResolvedArtifact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResolvedArtifact] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

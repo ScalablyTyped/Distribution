@@ -23,7 +23,8 @@ object BatchGetDeploymentTargetsInput {
     __obj.asInstanceOf[BatchGetDeploymentTargetsInput]
   }
   
-  extension [Self <: BatchGetDeploymentTargetsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetDeploymentTargetsInput] (val x: Self) extends AnyVal {
     
     inline def setDeploymentId(value: DeploymentId): Self = StObject.set(x, "deploymentId", value.asInstanceOf[js.Any])
     

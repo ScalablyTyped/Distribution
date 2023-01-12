@@ -33,7 +33,8 @@ object CognitoOptions {
     __obj.asInstanceOf[CognitoOptions]
   }
   
-  extension [Self <: CognitoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CognitoOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

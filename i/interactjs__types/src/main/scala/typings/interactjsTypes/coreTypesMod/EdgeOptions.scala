@@ -21,7 +21,8 @@ object EdgeOptions {
     __obj.asInstanceOf[EdgeOptions]
   }
   
-  extension [Self <: EdgeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EdgeOptions] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Boolean | String | Element): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

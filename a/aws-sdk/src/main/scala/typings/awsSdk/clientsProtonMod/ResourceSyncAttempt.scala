@@ -50,7 +50,8 @@ object ResourceSyncAttempt {
     __obj.asInstanceOf[ResourceSyncAttempt]
   }
   
-  extension [Self <: ResourceSyncAttempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceSyncAttempt] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: ResourceSyncEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

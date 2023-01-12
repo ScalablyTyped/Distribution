@@ -16,7 +16,8 @@ object ReplicationMasterInfo {
     __obj.asInstanceOf[ReplicationMasterInfo]
   }
   
-  extension [Self <: ReplicationMasterInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationMasterInfo] (val x: Self) extends AnyVal {
     
     inline def setRole(value: master): Self = StObject.set(x, "role", value.asInstanceOf[js.Any])
   }

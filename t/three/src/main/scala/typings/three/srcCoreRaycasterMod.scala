@@ -145,7 +145,8 @@ object srcCoreRaycasterMod {
       __obj.asInstanceOf[Face]
     }
     
-    extension [Self <: Face](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Face] (val x: Self) extends AnyVal {
       
       inline def setA(value: Double): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       
@@ -189,7 +190,8 @@ object srcCoreRaycasterMod {
       __obj.asInstanceOf[Intersection[TIntersected]]
     }
     
-    extension [Self <: Intersection[?], TIntersected /* <: Object3D[Event] */](x: Self & Intersection[TIntersected]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intersection[?], TIntersected /* <: Object3D[Event] */] (val x: Self & Intersection[TIntersected]) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -248,7 +250,8 @@ object srcCoreRaycasterMod {
       __obj.asInstanceOf[RaycasterParameters]
     }
     
-    extension [Self <: RaycasterParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RaycasterParameters] (val x: Self) extends AnyVal {
       
       inline def setLOD(value: Any): Self = StObject.set(x, "LOD", value.asInstanceOf[js.Any])
       

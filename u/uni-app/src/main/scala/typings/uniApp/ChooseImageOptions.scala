@@ -43,7 +43,8 @@ object ChooseImageOptions {
     __obj.asInstanceOf[ChooseImageOptions]
   }
   
-  extension [Self <: ChooseImageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseImageOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

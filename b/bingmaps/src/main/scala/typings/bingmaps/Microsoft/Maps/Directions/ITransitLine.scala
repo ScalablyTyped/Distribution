@@ -46,7 +46,8 @@ object ITransitLine {
     __obj.asInstanceOf[ITransitLine]
   }
   
-  extension [Self <: ITransitLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransitLine] (val x: Self) extends AnyVal {
     
     inline def setAbbreviatedName(value: String): Self = StObject.set(x, "abbreviatedName", value.asInstanceOf[js.Any])
     

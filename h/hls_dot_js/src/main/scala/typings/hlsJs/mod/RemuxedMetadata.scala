@@ -15,7 +15,8 @@ object RemuxedMetadata {
     __obj.asInstanceOf[RemuxedMetadata]
   }
   
-  extension [Self <: RemuxedMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemuxedMetadata] (val x: Self) extends AnyVal {
     
     inline def setSamples(value: js.Array[MetadataSample]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     

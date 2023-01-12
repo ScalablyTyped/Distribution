@@ -31,7 +31,8 @@ object SetExpressionResponse {
     __obj.asInstanceOf[SetExpressionResponse]
   }
   
-  extension [Self <: SetExpressionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetExpressionResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: NamedVariables): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
   }

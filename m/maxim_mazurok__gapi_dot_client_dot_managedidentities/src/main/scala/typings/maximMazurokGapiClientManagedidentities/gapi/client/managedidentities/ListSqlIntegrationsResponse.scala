@@ -22,7 +22,8 @@ object ListSqlIntegrationsResponse {
     __obj.asInstanceOf[ListSqlIntegrationsResponse]
   }
   
-  extension [Self <: ListSqlIntegrationsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSqlIntegrationsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

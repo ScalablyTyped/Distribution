@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[KawaiiProps]
     }
     
-    extension [Self <: KawaiiProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KawaiiProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

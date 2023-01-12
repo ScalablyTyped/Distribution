@@ -30,7 +30,8 @@ object libUtilsApplyChangeToValueMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setDisplayTransform(value: (/* id */ String, /* display */ String) => String): Self = StObject.set(x, "displayTransform", js.Any.fromFunction2(value))
       
@@ -61,7 +62,8 @@ object libUtilsApplyChangeToValueMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSelectionEndAfter(value: Double): Self = StObject.set(x, "selectionEndAfter", value.asInstanceOf[js.Any])
       

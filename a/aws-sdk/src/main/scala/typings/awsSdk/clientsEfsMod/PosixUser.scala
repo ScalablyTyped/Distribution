@@ -28,7 +28,8 @@ object PosixUser {
     __obj.asInstanceOf[PosixUser]
   }
   
-  extension [Self <: PosixUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosixUser] (val x: Self) extends AnyVal {
     
     inline def setGid(value: Gid): Self = StObject.set(x, "Gid", value.asInstanceOf[js.Any])
     

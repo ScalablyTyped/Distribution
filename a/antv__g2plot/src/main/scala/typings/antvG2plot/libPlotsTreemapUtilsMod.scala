@@ -45,7 +45,8 @@ object libPlotsTreemapUtilsMod {
       __obj.asInstanceOf[TransformDataOptions]
     }
     
-    extension [Self <: TransformDataOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformDataOptions] (val x: Self) extends AnyVal {
       
       inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
       

@@ -28,7 +28,8 @@ object PatchJobInstanceDetails {
     __obj.asInstanceOf[PatchJobInstanceDetails]
   }
   
-  extension [Self <: PatchJobInstanceDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchJobInstanceDetails] (val x: Self) extends AnyVal {
     
     inline def setAttemptCount(value: String): Self = StObject.set(x, "attemptCount", value.asInstanceOf[js.Any])
     

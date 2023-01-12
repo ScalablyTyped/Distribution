@@ -44,7 +44,8 @@ object PaymentLineItem {
     __obj.asInstanceOf[PaymentLineItem]
   }
   
-  extension [Self <: PaymentLineItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentLineItem] (val x: Self) extends AnyVal {
     
     inline def setAmountReference(value: String): Self = StObject.set(x, "amountReference", value.asInstanceOf[js.Any])
     

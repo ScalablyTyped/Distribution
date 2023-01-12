@@ -15,7 +15,8 @@ object UpdateRegistrationRequest {
     __obj.asInstanceOf[UpdateRegistrationRequest]
   }
   
-  extension [Self <: UpdateRegistrationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRegistrationRequest] (val x: Self) extends AnyVal {
     
     inline def setScopeURL(value: String): Self = StObject.set(x, "scopeURL", value.asInstanceOf[js.Any])
   }

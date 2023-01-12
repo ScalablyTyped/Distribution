@@ -23,7 +23,8 @@ object MapPanes {
     __obj.asInstanceOf[MapPanes]
   }
   
-  extension [Self <: MapPanes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapPanes] (val x: Self) extends AnyVal {
     
     inline def setFloatPane(value: HTMLElement): Self = StObject.set(x, "floatPane", value.asInstanceOf[js.Any])
     

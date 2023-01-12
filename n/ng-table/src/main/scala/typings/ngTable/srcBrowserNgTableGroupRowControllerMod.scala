@@ -78,7 +78,8 @@ object srcBrowserNgTableGroupRowControllerMod {
       __obj.asInstanceOf[IScopeExtensions[T]]
     }
     
-    extension [Self <: IScopeExtensions[?], T](x: Self & IScopeExtensions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IScopeExtensions[?], T] (val x: Self & IScopeExtensions[T]) extends AnyVal {
       
       inline def set$selGroup(value: IGroupingFunc[Any] | String): Self = StObject.set(x, "$selGroup", value.asInstanceOf[js.Any])
       

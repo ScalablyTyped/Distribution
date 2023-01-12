@@ -35,7 +35,8 @@ object QRepositoryid {
     __obj.asInstanceOf[QRepositoryid]
   }
   
-  extension [Self <: QRepositoryid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QRepositoryid] (val x: Self) extends AnyVal {
     
     inline def setOrder(value: desc | asc): Self = StObject.set(x, "order", value.asInstanceOf[js.Any])
     

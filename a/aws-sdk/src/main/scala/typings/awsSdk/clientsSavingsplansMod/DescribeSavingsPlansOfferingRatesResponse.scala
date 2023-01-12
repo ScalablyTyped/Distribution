@@ -23,7 +23,8 @@ object DescribeSavingsPlansOfferingRatesResponse {
     __obj.asInstanceOf[DescribeSavingsPlansOfferingRatesResponse]
   }
   
-  extension [Self <: DescribeSavingsPlansOfferingRatesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSavingsPlansOfferingRatesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: PaginationToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

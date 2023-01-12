@@ -23,7 +23,8 @@ object ListTablesOutput {
     __obj.asInstanceOf[ListTablesOutput]
   }
   
-  extension [Self <: ListTablesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTablesOutput] (val x: Self) extends AnyVal {
     
     inline def setLastEvaluatedTableName(value: TableName): Self = StObject.set(x, "LastEvaluatedTableName", value.asInstanceOf[js.Any])
     

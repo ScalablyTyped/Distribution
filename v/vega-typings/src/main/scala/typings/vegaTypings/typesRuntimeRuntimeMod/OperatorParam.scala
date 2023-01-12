@@ -19,7 +19,8 @@ object OperatorParam {
     __obj.asInstanceOf[OperatorParam]
   }
   
-  extension [Self <: OperatorParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatorParam] (val x: Self) extends AnyVal {
     
     inline def set$ref(value: ID): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
   }

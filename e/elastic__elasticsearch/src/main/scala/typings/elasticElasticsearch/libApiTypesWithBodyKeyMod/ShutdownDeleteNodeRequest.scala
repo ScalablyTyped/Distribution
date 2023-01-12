@@ -21,7 +21,8 @@ object ShutdownDeleteNodeRequest {
     __obj.asInstanceOf[ShutdownDeleteNodeRequest]
   }
   
-  extension [Self <: ShutdownDeleteNodeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShutdownDeleteNodeRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: TimeUnit): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

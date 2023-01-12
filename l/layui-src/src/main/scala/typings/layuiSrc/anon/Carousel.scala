@@ -85,7 +85,8 @@ object Carousel {
     __obj.asInstanceOf[Carousel]
   }
   
-  extension [Self <: Carousel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Carousel] (val x: Self) extends AnyVal {
     
     inline def setCarousel(value: Boolean): Self = StObject.set(x, "carousel", value.asInstanceOf[js.Any])
     

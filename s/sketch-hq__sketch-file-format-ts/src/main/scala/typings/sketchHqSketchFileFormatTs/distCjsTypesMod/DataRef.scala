@@ -29,7 +29,8 @@ object DataRef {
     __obj.asInstanceOf[DataRef]
   }
   
-  extension [Self <: DataRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRef] (val x: Self) extends AnyVal {
     
     inline def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

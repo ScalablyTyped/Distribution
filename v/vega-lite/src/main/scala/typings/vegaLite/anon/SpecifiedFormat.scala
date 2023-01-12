@@ -26,7 +26,8 @@ object SpecifiedFormat {
     __obj.asInstanceOf[SpecifiedFormat]
   }
   
-  extension [Self <: SpecifiedFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecifiedFormat] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

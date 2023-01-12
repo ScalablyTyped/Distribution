@@ -35,7 +35,8 @@ object Radio {
     __obj.asInstanceOf[Radio]
   }
   
-  extension [Self <: Radio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Radio] (val x: Self) extends AnyVal {
     
     inline def setCheckbox(value: Boolean): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     

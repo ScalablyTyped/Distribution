@@ -36,7 +36,8 @@ object OutputQuantizationParametersProperties {
     __obj.asInstanceOf[OutputQuantizationParametersProperties]
   }
   
-  extension [Self <: OutputQuantizationParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputQuantizationParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setExtent(value: OutputQuantizationParametersExtent): Self = StObject.set(x, "extent", value.asInstanceOf[js.Any])
     

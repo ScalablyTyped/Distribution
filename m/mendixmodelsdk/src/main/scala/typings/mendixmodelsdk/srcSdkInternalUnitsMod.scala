@@ -160,7 +160,8 @@ object srcSdkInternalUnitsMod {
       __obj.asInstanceOf[IAbstractUnit]
     }
     
-    extension [Self <: IAbstractUnit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractUnit] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IStructuralUnit): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

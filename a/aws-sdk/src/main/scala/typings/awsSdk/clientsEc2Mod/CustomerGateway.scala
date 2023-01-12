@@ -53,7 +53,8 @@ object CustomerGateway {
     __obj.asInstanceOf[CustomerGateway]
   }
   
-  extension [Self <: CustomerGateway](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerGateway] (val x: Self) extends AnyVal {
     
     inline def setBgpAsn(value: String): Self = StObject.set(x, "BgpAsn", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object SubscribeOptions {
     __obj.asInstanceOf[SubscribeOptions]
   }
   
-  extension [Self <: SubscribeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscribeOptions] (val x: Self) extends AnyVal {
     
     inline def setPrepend(value: Boolean): Self = StObject.set(x, "prepend", value.asInstanceOf[js.Any])
     

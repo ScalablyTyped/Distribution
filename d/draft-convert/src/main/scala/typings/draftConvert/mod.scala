@@ -107,7 +107,8 @@ object mod {
       __obj.asInstanceOf[IConvertFromHTMLConfig[S, B, E]]
     }
     
-    extension [Self <: IConvertFromHTMLConfig[?, ?, ?], S /* <: StringDictionary[Any] */, B /* <: DraftBlockType */, E /* <: RawDraftEntity[StringDictionary[Any]] */](x: Self & (IConvertFromHTMLConfig[S, B, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConvertFromHTMLConfig[?, ?, ?], S /* <: StringDictionary[Any] */, B /* <: DraftBlockType */, E /* <: RawDraftEntity[StringDictionary[Any]] */] (val x: Self & (IConvertFromHTMLConfig[S, B, E])) extends AnyVal {
       
       inline def setHtmlToBlock(
         value: (/* nodeName */ String, /* node */ ExtendedHTMLElement[S]) => js.UndefOr[B | Data[B] | `false`]
@@ -169,7 +170,8 @@ object mod {
       __obj.asInstanceOf[IConvertToHTMLConfig[S, B, E]]
     }
     
-    extension [Self <: IConvertToHTMLConfig[?, ?, ?], S, B /* <: DraftBlockType */, E /* <: RawDraftEntity[StringDictionary[Any]] */](x: Self & (IConvertToHTMLConfig[S, B, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IConvertToHTMLConfig[?, ?, ?], S, B /* <: DraftBlockType */, E /* <: RawDraftEntity[StringDictionary[Any]] */] (val x: Self & (IConvertToHTMLConfig[S, B, E])) extends AnyVal {
       
       inline def setBlockToHTML(value: /* block */ RawDraftContentBlockWithCustomType[B] => Tag): Self = StObject.set(x, "blockToHTML", js.Any.fromFunction1(value))
       
@@ -217,7 +219,8 @@ object mod {
       __obj.asInstanceOf[RawDraftContentBlockWithCustomType[T]]
     }
     
-    extension [Self <: RawDraftContentBlockWithCustomType[?], T](x: Self & RawDraftContentBlockWithCustomType[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftContentBlockWithCustomType[?], T] (val x: Self & RawDraftContentBlockWithCustomType[T]) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

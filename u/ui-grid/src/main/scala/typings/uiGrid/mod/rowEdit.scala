@@ -24,7 +24,8 @@ object rowEdit {
       __obj.asInstanceOf[typings.uiGrid.mod.rowEdit.IGridOptions]
     }
     
-    extension [Self <: typings.uiGrid.mod.rowEdit.IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.uiGrid.mod.rowEdit.IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setRowEditWaitInterval(value: Double): Self = StObject.set(x, "rowEditWaitInterval", value.asInstanceOf[js.Any])
       

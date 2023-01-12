@@ -37,7 +37,8 @@ object sapUiModelTreeBindingUtilsMod extends Shortcut {
       __obj.asInstanceOf[TreeBindingUtils]
     }
     
-    extension [Self <: TreeBindingUtils](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeBindingUtils] (val x: Self) extends AnyVal {
       
       inline def setMergeSections(value: (js.Array[js.Object], js.Object) => js.Array[js.Object]): Self = StObject.set(x, "mergeSections", js.Any.fromFunction2(value))
     }

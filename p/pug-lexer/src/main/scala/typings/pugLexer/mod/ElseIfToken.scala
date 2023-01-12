@@ -21,7 +21,8 @@ object ElseIfToken {
     __obj.asInstanceOf[ElseIfToken]
   }
   
-  extension [Self <: ElseIfToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElseIfToken] (val x: Self) extends AnyVal {
     
     inline def setVal(value: String): Self = StObject.set(x, "val", value.asInstanceOf[js.Any])
   }

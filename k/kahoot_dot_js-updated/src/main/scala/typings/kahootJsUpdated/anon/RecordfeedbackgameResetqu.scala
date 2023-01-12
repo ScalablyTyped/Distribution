@@ -96,7 +96,8 @@ object RecordfeedbackgameResetqu {
     __obj.asInstanceOf[RecordfeedbackgameResetqu]
   }
   
-  extension [Self <: RecordfeedbackgameResetqu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordfeedbackgameResetqu] (val x: Self) extends AnyVal {
     
     inline def setDisconnect(value: /* message */ ^ => Unit): Self = StObject.set(x, "Disconnect", js.Any.fromFunction1(value))
     

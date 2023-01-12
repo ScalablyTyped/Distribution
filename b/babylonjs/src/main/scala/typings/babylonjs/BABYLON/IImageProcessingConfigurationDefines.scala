@@ -62,7 +62,8 @@ object IImageProcessingConfigurationDefines {
     __obj.asInstanceOf[IImageProcessingConfigurationDefines]
   }
   
-  extension [Self <: IImageProcessingConfigurationDefines](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IImageProcessingConfigurationDefines] (val x: Self) extends AnyVal {
     
     inline def setCOLORCURVES(value: Boolean): Self = StObject.set(x, "COLORCURVES", value.asInstanceOf[js.Any])
     

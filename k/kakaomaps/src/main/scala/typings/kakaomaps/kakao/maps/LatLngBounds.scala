@@ -33,7 +33,8 @@ object LatLngBounds {
     __obj.asInstanceOf[LatLngBounds]
   }
   
-  extension [Self <: LatLngBounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LatLngBounds] (val x: Self) extends AnyVal {
     
     inline def setContain(value: LatLng => Boolean): Self = StObject.set(x, "contain", js.Any.fromFunction1(value))
     

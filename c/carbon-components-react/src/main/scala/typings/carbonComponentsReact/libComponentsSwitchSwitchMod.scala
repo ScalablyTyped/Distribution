@@ -121,7 +121,8 @@ object libComponentsSwitchSwitchMod extends Shortcut {
       __obj.asInstanceOf[SwitchOnKeyDownData]
     }
     
-    extension [Self <: SwitchOnKeyDownData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchOnKeyDownData] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -531,7 +532,8 @@ object libComponentsSwitchSwitchMod extends Shortcut {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

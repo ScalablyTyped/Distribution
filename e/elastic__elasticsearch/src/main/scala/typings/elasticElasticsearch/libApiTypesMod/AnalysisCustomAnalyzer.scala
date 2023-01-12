@@ -29,7 +29,8 @@ object AnalysisCustomAnalyzer {
     __obj.asInstanceOf[AnalysisCustomAnalyzer]
   }
   
-  extension [Self <: AnalysisCustomAnalyzer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCustomAnalyzer] (val x: Self) extends AnyVal {
     
     inline def setChar_filter(value: js.Array[String]): Self = StObject.set(x, "char_filter", value.asInstanceOf[js.Any])
     

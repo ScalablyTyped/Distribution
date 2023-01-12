@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[DateConfig]
     }
     
-    extension [Self <: DateConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DateConfig] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: Boolean): Self = StObject.set(x, "adjust", value.asInstanceOf[js.Any])
       

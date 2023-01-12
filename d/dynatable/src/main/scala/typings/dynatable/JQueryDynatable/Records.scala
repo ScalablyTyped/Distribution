@@ -76,7 +76,8 @@ object Records {
     __obj.asInstanceOf[Records]
   }
   
-  extension [Self <: Records](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Records] (val x: Self) extends AnyVal {
     
     inline def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
     

@@ -30,7 +30,8 @@ object WaitForOptionsrefererstri {
     __obj.asInstanceOf[WaitForOptionsrefererstri]
   }
   
-  extension [Self <: WaitForOptionsrefererstri](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaitForOptionsrefererstri] (val x: Self) extends AnyVal {
     
     inline def setReferer(value: String): Self = StObject.set(x, "referer", value.asInstanceOf[js.Any])
     

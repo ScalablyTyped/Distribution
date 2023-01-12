@@ -35,7 +35,8 @@ object typesLibCardDeckMod {
       __obj.asInstanceOf[CardDeckProps]
     }
     
-    extension [Self <: CardDeckProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardDeckProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

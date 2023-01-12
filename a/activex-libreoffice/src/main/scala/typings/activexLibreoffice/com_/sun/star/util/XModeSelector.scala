@@ -47,7 +47,8 @@ object XModeSelector {
     __obj.asInstanceOf[XModeSelector]
   }
   
-  extension [Self <: XModeSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModeSelector] (val x: Self) extends AnyVal {
     
     inline def setGetMode(value: () => String): Self = StObject.set(x, "getMode", js.Any.fromFunction0(value))
     

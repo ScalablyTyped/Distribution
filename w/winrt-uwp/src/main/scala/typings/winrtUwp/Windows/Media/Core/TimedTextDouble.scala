@@ -20,7 +20,8 @@ object TimedTextDouble {
     __obj.asInstanceOf[TimedTextDouble]
   }
   
-  extension [Self <: TimedTextDouble](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedTextDouble] (val x: Self) extends AnyVal {
     
     inline def setUnit(value: TimedTextUnit): Self = StObject.set(x, "unit", value.asInstanceOf[js.Any])
     

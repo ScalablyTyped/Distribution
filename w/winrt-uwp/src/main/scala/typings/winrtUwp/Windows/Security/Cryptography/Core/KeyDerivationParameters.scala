@@ -28,7 +28,8 @@ object KeyDerivationParameters {
     __obj.asInstanceOf[KeyDerivationParameters]
   }
   
-  extension [Self <: KeyDerivationParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyDerivationParameters] (val x: Self) extends AnyVal {
     
     inline def setCapi1KdfTargetAlgorithm(value: Capi1KdfTargetAlgorithm): Self = StObject.set(x, "capi1KdfTargetAlgorithm", value.asInstanceOf[js.Any])
     

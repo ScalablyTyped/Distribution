@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Actual]
     }
     
-    extension [Self <: Actual](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Actual] (val x: Self) extends AnyVal {
       
       inline def setActual(value: Any): Self = StObject.set(x, "actual", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Bail]
     }
     
-    extension [Self <: Bail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bail] (val x: Self) extends AnyVal {
       
       inline def setBail(value: Boolean): Self = StObject.set(x, "bail", value.asInstanceOf[js.Any])
     }
@@ -81,7 +83,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

@@ -24,7 +24,8 @@ object TermsOfUseContainer {
     __obj.asInstanceOf[TermsOfUseContainer]
   }
   
-  extension [Self <: TermsOfUseContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TermsOfUseContainer] (val x: Self) extends AnyVal {
     
     inline def setAgreementAcceptances(value: NullableOption[js.Array[AgreementAcceptance]]): Self = StObject.set(x, "agreementAcceptances", value.asInstanceOf[js.Any])
     

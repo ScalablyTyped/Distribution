@@ -43,7 +43,8 @@ object PutSessionResponse {
     __obj.asInstanceOf[PutSessionResponse]
   }
   
-  extension [Self <: PutSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setAudioStream(value: BlobStream): Self = StObject.set(x, "audioStream", value.asInstanceOf[js.Any])
     

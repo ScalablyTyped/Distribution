@@ -18,7 +18,8 @@ object InputVideoGenerator {
     __obj.asInstanceOf[InputVideoGenerator]
   }
   
-  extension [Self <: InputVideoGenerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputVideoGenerator] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: integerMin50Max86400000): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
     

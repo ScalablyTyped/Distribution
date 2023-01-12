@@ -54,7 +54,8 @@ object ReadRequest {
     __obj.asInstanceOf[ReadRequest]
   }
   
-  extension [Self <: ReadRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadRequest] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

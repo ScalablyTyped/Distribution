@@ -17,7 +17,8 @@ object ModifiersString {
     __obj.asInstanceOf[ModifiersString]
   }
   
-  extension [Self <: ModifiersString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifiersString] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

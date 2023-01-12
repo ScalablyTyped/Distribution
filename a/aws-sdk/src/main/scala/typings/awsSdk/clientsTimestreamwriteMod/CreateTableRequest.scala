@@ -38,7 +38,8 @@ object CreateTableRequest {
     __obj.asInstanceOf[CreateTableRequest]
   }
   
-  extension [Self <: CreateTableRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTableRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseName(value: ResourceCreateAPIName): Self = StObject.set(x, "DatabaseName", value.asInstanceOf[js.Any])
     

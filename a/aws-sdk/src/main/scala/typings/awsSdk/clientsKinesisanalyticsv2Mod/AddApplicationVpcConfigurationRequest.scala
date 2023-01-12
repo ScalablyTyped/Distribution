@@ -33,7 +33,8 @@ object AddApplicationVpcConfigurationRequest {
     __obj.asInstanceOf[AddApplicationVpcConfigurationRequest]
   }
   
-  extension [Self <: AddApplicationVpcConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddApplicationVpcConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationName(value: ApplicationName): Self = StObject.set(x, "ApplicationName", value.asInstanceOf[js.Any])
     

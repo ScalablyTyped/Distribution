@@ -25,7 +25,8 @@ object typesOrderTaxLineMod {
       __obj.asInstanceOf[OrderTaxLine]
     }
     
-    extension [Self <: OrderTaxLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderTaxLine] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Price): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       

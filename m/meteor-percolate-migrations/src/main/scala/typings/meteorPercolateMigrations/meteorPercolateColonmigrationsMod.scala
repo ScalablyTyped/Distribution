@@ -31,7 +31,8 @@ object meteorPercolateColonmigrationsMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setCollectionName(value: String): Self = StObject.set(x, "collectionName", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object meteorPercolateColonmigrationsMod {
       __obj.asInstanceOf[LoggerOptions]
     }
     
-    extension [Self <: LoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: info | warn | error | debug): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object meteorPercolateColonmigrationsMod {
       __obj.asInstanceOf[MigrationSpec]
     }
     
-    extension [Self <: MigrationSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationSpec] (val x: Self) extends AnyVal {
       
       inline def setDown(value: () => Unit): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
       

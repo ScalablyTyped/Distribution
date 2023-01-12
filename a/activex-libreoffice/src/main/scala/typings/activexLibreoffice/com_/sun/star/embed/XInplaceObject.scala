@@ -60,7 +60,8 @@ object XInplaceObject {
     __obj.asInstanceOf[XInplaceObject]
   }
   
-  extension [Self <: XInplaceObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInplaceObject] (val x: Self) extends AnyVal {
     
     inline def setEnableModeless(value: Boolean => Unit): Self = StObject.set(x, "enableModeless", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object FileHash {
     __obj.asInstanceOf[FileHash]
   }
   
-  extension [Self <: FileHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileHash] (val x: Self) extends AnyVal {
     
     inline def setHashes_ffm(value: js.Array[HashFormat]): Self = StObject.set(x, "hashes_ffm", value.asInstanceOf[js.Any])
     

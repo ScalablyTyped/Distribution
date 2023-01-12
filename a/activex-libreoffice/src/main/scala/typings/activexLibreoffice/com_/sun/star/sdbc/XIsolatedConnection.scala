@@ -51,7 +51,8 @@ object XIsolatedConnection {
     __obj.asInstanceOf[XIsolatedConnection]
   }
   
-  extension [Self <: XIsolatedConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIsolatedConnection] (val x: Self) extends AnyVal {
     
     inline def setGetIsolatedConnection(value: (String, String) => XConnection): Self = StObject.set(x, "getIsolatedConnection", js.Any.fromFunction2(value))
     

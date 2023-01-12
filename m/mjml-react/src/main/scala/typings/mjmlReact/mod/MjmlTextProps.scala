@@ -42,7 +42,8 @@ object MjmlTextProps {
     __obj.asInstanceOf[MjmlTextProps]
   }
   
-  extension [Self <: MjmlTextProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlTextProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

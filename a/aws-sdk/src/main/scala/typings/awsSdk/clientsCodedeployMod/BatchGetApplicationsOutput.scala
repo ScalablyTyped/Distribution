@@ -18,7 +18,8 @@ object BatchGetApplicationsOutput {
     __obj.asInstanceOf[BatchGetApplicationsOutput]
   }
   
-  extension [Self <: BatchGetApplicationsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetApplicationsOutput] (val x: Self) extends AnyVal {
     
     inline def setApplicationsInfo(value: ApplicationsInfoList): Self = StObject.set(x, "applicationsInfo", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object AnalyticsTotals {
     __obj.asInstanceOf[AnalyticsTotals]
   }
   
-  extension [Self <: AnalyticsTotals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsTotals] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

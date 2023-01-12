@@ -203,7 +203,8 @@ object PartialActionSheetProps {
     __obj.asInstanceOf[PartialActionSheetProps]
   }
   
-  extension [Self <: PartialActionSheetProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialActionSheetProps] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Array[typings.antdMobile.esComponentsActionSheetActionSheetMod.Action]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

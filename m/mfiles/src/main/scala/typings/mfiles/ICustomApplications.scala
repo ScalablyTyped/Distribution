@@ -19,7 +19,8 @@ object ICustomApplications {
     __obj.asInstanceOf[ICustomApplications]
   }
   
-  extension [Self <: ICustomApplications](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICustomApplications] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ICustomApplications): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

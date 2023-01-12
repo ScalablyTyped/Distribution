@@ -23,7 +23,8 @@ object GetBLEDeviceServicesSuccess {
     __obj.asInstanceOf[GetBLEDeviceServicesSuccess]
   }
   
-  extension [Self <: GetBLEDeviceServicesSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBLEDeviceServicesSuccess] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: String): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

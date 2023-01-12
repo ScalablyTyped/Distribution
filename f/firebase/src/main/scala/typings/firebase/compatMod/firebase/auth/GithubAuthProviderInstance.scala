@@ -42,7 +42,8 @@ object GithubAuthProviderInstance {
     __obj.asInstanceOf[GithubAuthProviderInstance]
   }
   
-  extension [Self <: GithubAuthProviderInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GithubAuthProviderInstance] (val x: Self) extends AnyVal {
     
     inline def setAddScope(value: String => AuthProvider): Self = StObject.set(x, "addScope", js.Any.fromFunction1(value))
     

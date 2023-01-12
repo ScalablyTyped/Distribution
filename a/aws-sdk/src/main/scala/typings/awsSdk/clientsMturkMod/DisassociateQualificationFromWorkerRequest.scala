@@ -28,7 +28,8 @@ object DisassociateQualificationFromWorkerRequest {
     __obj.asInstanceOf[DisassociateQualificationFromWorkerRequest]
   }
   
-  extension [Self <: DisassociateQualificationFromWorkerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateQualificationFromWorkerRequest] (val x: Self) extends AnyVal {
     
     inline def setQualificationTypeId(value: EntityId): Self = StObject.set(x, "QualificationTypeId", value.asInstanceOf[js.Any])
     

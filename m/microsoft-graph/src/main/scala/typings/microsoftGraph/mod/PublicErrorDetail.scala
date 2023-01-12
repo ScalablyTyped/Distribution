@@ -22,7 +22,8 @@ object PublicErrorDetail {
     __obj.asInstanceOf[PublicErrorDetail]
   }
   
-  extension [Self <: PublicErrorDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicErrorDetail] (val x: Self) extends AnyVal {
     
     inline def setCode(value: NullableOption[String]): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object Fields {
     __obj.asInstanceOf[Fields]
   }
   
-  extension [Self <: Fields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
     
     inline def setComputedStyle(value: js.Array[String]): Self = StObject.set(x, "computedStyle", value.asInstanceOf[js.Any])
     

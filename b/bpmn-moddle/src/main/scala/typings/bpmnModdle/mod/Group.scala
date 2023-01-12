@@ -17,7 +17,8 @@ object Group {
     __obj.asInstanceOf[Group]
   }
   
-  extension [Self <: Group](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Group] (val x: Self) extends AnyVal {
     
     inline def setCategoryValueRef(value: CategoryValue): Self = StObject.set(x, "categoryValueRef", value.asInstanceOf[js.Any])
   }

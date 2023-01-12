@@ -419,7 +419,8 @@ object sapUiCoreScrollBarMod {
       __obj.asInstanceOf[ScrollBarSettings]
     }
     
-    extension [Self <: ScrollBarSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollBarSettings] (val x: Self) extends AnyVal {
       
       inline def setContentSize(value: CSSSize | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "contentSize", value.asInstanceOf[js.Any])
       

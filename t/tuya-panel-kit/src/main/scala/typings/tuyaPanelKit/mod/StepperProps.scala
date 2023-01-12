@@ -600,7 +600,8 @@ object StepperProps {
     __obj.asInstanceOf[StepperProps]
   }
   
-  extension [Self <: StepperProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepperProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

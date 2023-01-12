@@ -57,7 +57,8 @@ object typesTopicConfigurationMod {
       __obj.asInstanceOf[TopicConfiguration]
     }
     
-    extension [Self <: TopicConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: (js.Array[
@@ -113,7 +114,8 @@ object typesTopicConfigurationMod {
       __obj.asInstanceOf[UnmarshalledTopicConfiguration]
     }
     
-    extension [Self <: UnmarshalledTopicConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTopicConfiguration] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

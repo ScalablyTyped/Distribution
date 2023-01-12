@@ -16,7 +16,8 @@ object GoogleCloudDatacatalogV1ReplaceTaxonomyRequest {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1ReplaceTaxonomyRequest]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1ReplaceTaxonomyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1ReplaceTaxonomyRequest] (val x: Self) extends AnyVal {
     
     inline def setSerializedTaxonomy(value: GoogleCloudDatacatalogV1SerializedTaxonomy): Self = StObject.set(x, "serializedTaxonomy", value.asInstanceOf[js.Any])
     

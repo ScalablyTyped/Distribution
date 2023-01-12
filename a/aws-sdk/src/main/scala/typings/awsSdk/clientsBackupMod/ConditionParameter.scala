@@ -23,7 +23,8 @@ object ConditionParameter {
     __obj.asInstanceOf[ConditionParameter]
   }
   
-  extension [Self <: ConditionParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionParameter] (val x: Self) extends AnyVal {
     
     inline def setConditionKey(value: ConditionKey): Self = StObject.set(x, "ConditionKey", value.asInstanceOf[js.Any])
     

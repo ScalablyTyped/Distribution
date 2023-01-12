@@ -56,7 +56,8 @@ object XGridFieldDataSupplier {
     __obj.asInstanceOf[XGridFieldDataSupplier]
   }
   
-  extension [Self <: XGridFieldDataSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridFieldDataSupplier] (val x: Self) extends AnyVal {
     
     inline def setQueryFieldData(value: (Double, `type`) => SafeArray[Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
     

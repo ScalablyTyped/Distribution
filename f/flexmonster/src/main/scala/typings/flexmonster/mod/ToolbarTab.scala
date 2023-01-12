@@ -41,7 +41,8 @@ object ToolbarTab {
     __obj.asInstanceOf[ToolbarTab]
   }
   
-  extension [Self <: ToolbarTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarTab] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: Boolean): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

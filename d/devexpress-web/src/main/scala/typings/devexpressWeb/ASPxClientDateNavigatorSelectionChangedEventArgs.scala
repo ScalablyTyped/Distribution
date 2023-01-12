@@ -23,7 +23,8 @@ object ASPxClientDateNavigatorSelectionChangedEventArgs {
     __obj.asInstanceOf[ASPxClientDateNavigatorSelectionChangedEventArgs]
   }
   
-  extension [Self <: ASPxClientDateNavigatorSelectionChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDateNavigatorSelectionChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setSelectedDates(value: js.Array[js.Date]): Self = StObject.set(x, "selectedDates", value.asInstanceOf[js.Any])
     

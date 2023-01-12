@@ -35,7 +35,8 @@ object TerrainPreludeUniformsType {
     __obj.asInstanceOf[TerrainPreludeUniformsType]
   }
   
-  extension [Self <: TerrainPreludeUniformsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerrainPreludeUniformsType] (val x: Self) extends AnyVal {
     
     inline def setU_depth(value: Uniform1i): Self = StObject.set(x, "u_depth", value.asInstanceOf[js.Any])
     

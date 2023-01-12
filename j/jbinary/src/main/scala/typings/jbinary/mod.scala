@@ -142,7 +142,8 @@ object mod {
       __obj.asInstanceOf[CustomTypeConfig]
     }
     
-    extension [Self <: CustomTypeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomTypeConfig] (val x: Self) extends AnyVal {
       
       inline def setParams(value: js.Array[String]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object mod {
       __obj.asInstanceOf[TypeSet]
     }
     
-    extension [Self <: TypeSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeSet] (val x: Self) extends AnyVal {
       
       inline def setJBinaryDotall(value: String): Self = StObject.set(x, "jBinary.all", value.asInstanceOf[js.Any])
       

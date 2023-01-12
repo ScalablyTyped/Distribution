@@ -23,7 +23,8 @@ object DescribeFleetAdvisorLsaAnalysisRequest {
     __obj.asInstanceOf[DescribeFleetAdvisorLsaAnalysisRequest]
   }
   
-  extension [Self <: DescribeFleetAdvisorLsaAnalysisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeFleetAdvisorLsaAnalysisRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxRecords(value: IntegerOptional): Self = StObject.set(x, "MaxRecords", value.asInstanceOf[js.Any])
     

@@ -125,7 +125,8 @@ object FontData {
     __obj.asInstanceOf[FontData]
   }
   
-  extension [Self <: FontData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontData] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

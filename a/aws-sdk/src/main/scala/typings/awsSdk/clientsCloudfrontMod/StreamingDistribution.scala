@@ -55,7 +55,8 @@ object StreamingDistribution {
     __obj.asInstanceOf[StreamingDistribution]
   }
   
-  extension [Self <: StreamingDistribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingDistribution] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

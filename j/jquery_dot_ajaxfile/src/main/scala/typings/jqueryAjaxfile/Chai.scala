@@ -463,7 +463,8 @@ object Chai {
       __obj.asInstanceOf[AssertionError]
     }
     
-    extension [Self <: AssertionError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -515,7 +516,8 @@ object Chai {
       __obj.asInstanceOf[ChaiStatic]
     }
     
-    extension [Self <: ChaiStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChaiStatic] (val x: Self) extends AnyVal {
       
       inline def setAssert(value: AssertStatic): Self = StObject.set(x, "assert", value.asInstanceOf[js.Any])
       
@@ -540,7 +542,8 @@ object Chai {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setIncludeStack(value: Boolean): Self = StObject.set(x, "includeStack", value.asInstanceOf[js.Any])
     }
@@ -580,7 +583,8 @@ object Chai {
       __obj.asInstanceOf[Deep]
     }
     
-    extension [Self <: Deep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Deep] (val x: Self) extends AnyVal {
       
       inline def setEqual(value: (/* value */ Any, /* message */ js.UndefOr[String]) => Assertion): Self = StObject.set(x, "equal", js.Any.fromFunction2(value))
       
@@ -715,7 +719,8 @@ object Chai {
       __obj.asInstanceOf[LanguageChains]
     }
     
-    extension [Self <: LanguageChains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LanguageChains] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: Assertion): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       

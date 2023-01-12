@@ -45,7 +45,8 @@ object ChartSeriesItemLabels {
     __obj.asInstanceOf[ChartSeriesItemLabels]
   }
   
-  extension [Self <: ChartSeriesItemLabels](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartSeriesItemLabels] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

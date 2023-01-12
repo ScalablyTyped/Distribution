@@ -28,7 +28,8 @@ object DescribeStackSetOperationInput {
     __obj.asInstanceOf[DescribeStackSetOperationInput]
   }
   
-  extension [Self <: DescribeStackSetOperationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStackSetOperationInput] (val x: Self) extends AnyVal {
     
     inline def setCallAs(value: CallAs): Self = StObject.set(x, "CallAs", value.asInstanceOf[js.Any])
     

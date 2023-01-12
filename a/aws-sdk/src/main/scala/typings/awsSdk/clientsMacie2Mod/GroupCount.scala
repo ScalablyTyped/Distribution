@@ -23,7 +23,8 @@ object GroupCount {
     __obj.asInstanceOf[GroupCount]
   }
   
-  extension [Self <: GroupCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupCount] (val x: Self) extends AnyVal {
     
     inline def setCount(value: long): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

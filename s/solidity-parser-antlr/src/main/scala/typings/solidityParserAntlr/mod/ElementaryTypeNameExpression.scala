@@ -23,7 +23,8 @@ object ElementaryTypeNameExpression {
     __obj.asInstanceOf[ElementaryTypeNameExpression]
   }
   
-  extension [Self <: ElementaryTypeNameExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementaryTypeNameExpression] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.solidityParserAntlr.solidityParserAntlrStrings.ElementaryTypeNameExpression): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

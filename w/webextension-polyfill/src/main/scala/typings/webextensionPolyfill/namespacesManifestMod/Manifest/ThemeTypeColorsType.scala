@@ -209,7 +209,8 @@ object ThemeTypeColorsType {
     __obj.asInstanceOf[ThemeTypeColorsType]
   }
   
-  extension [Self <: ThemeTypeColorsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeTypeColorsType] (val x: Self) extends AnyVal {
     
     inline def setBookmark_text(value: ThemeColor): Self = StObject.set(x, "bookmark_text", value.asInstanceOf[js.Any])
     

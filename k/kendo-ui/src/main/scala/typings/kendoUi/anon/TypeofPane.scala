@@ -20,7 +20,8 @@ object TypeofPane {
     __obj.asInstanceOf[TypeofPane]
   }
   
-  extension [Self <: TypeofPane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPane] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => Pane): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

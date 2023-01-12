@@ -28,7 +28,8 @@ object GetWorkUnitsResponse {
     __obj.asInstanceOf[GetWorkUnitsResponse]
   }
   
-  extension [Self <: GetWorkUnitsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetWorkUnitsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: Token): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

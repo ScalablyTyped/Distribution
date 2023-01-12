@@ -473,7 +473,8 @@ object TypeofAPIServices {
     __obj.asInstanceOf[TypeofAPIServices]
   }
   
-  extension [Self <: TypeofAPIServices](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofAPIServices] (val x: Self) extends AnyVal {
     
     inline def setApplicationSettings(value: Instantiable0[ApplicationSettings]): Self = StObject.set(x, "ApplicationSettings", value.asInstanceOf[js.Any])
     

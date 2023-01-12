@@ -68,7 +68,8 @@ object WorksheetNameChangedEventArgs {
     __obj.asInstanceOf[WorksheetNameChangedEventArgs]
   }
   
-  extension [Self <: WorksheetNameChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetNameChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setNameAfter(value: String): Self = StObject.set(x, "nameAfter", value.asInstanceOf[js.Any])
     

@@ -376,7 +376,8 @@ object distEsmChannelWrapperMod {
       __obj.asInstanceOf[Consumer]
     }
     
-    extension [Self <: Consumer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Consumer] (val x: Self) extends AnyVal {
       
       inline def setConsumerTag(value: String): Self = StObject.set(x, "consumerTag", value.asInstanceOf[js.Any])
       
@@ -403,7 +404,8 @@ object distEsmChannelWrapperMod {
       __obj.asInstanceOf[ConsumerOptions]
     }
     
-    extension [Self <: ConsumerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConsumerOptions] (val x: Self) extends AnyVal {
       
       inline def setPrefetch(value: Double): Self = StObject.set(x, "prefetch", value.asInstanceOf[js.Any])
       
@@ -445,7 +447,8 @@ object distEsmChannelWrapperMod {
       __obj.asInstanceOf[CreateChannelOpts]
     }
     
-    extension [Self <: CreateChannelOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateChannelOpts] (val x: Self) extends AnyVal {
       
       inline def setConfirm(value: Boolean): Self = StObject.set(x, "confirm", value.asInstanceOf[js.Any])
       
@@ -489,7 +492,8 @@ object distEsmChannelWrapperMod {
       __obj.asInstanceOf[PublishOptions]
     }
     
-    extension [Self <: PublishOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PublishOptions] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
       

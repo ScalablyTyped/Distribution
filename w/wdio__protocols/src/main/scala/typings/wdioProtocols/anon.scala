@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[RecordCommandMethodComman]
     }
     
-    extension [Self <: RecordCommandMethodComman](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordCommandMethodComman] (val x: Self) extends AnyVal {
       
       inline def setDELETE(value: CommandEndpoint): Self = StObject.set(x, "DELETE", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[RecordEnvironmentsstring]
     }
     
-    extension [Self <: RecordEnvironmentsstring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordEnvironmentsstring] (val x: Self) extends AnyVal {
       
       inline def setUIAutomation(value: String): Self = StObject.set(x, "UIAutomation", value.asInstanceOf[js.Any])
       

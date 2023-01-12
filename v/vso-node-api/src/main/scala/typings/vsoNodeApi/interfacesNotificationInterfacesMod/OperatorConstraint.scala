@@ -20,7 +20,8 @@ object OperatorConstraint {
     __obj.asInstanceOf[OperatorConstraint]
   }
   
-  extension [Self <: OperatorConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatorConstraint] (val x: Self) extends AnyVal {
     
     inline def setOperator(value: String): Self = StObject.set(x, "operator", value.asInstanceOf[js.Any])
     

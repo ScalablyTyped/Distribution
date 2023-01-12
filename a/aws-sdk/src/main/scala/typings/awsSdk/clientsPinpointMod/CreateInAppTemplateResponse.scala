@@ -15,7 +15,8 @@ object CreateInAppTemplateResponse {
     __obj.asInstanceOf[CreateInAppTemplateResponse]
   }
   
-  extension [Self <: CreateInAppTemplateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateInAppTemplateResponse] (val x: Self) extends AnyVal {
     
     inline def setTemplateCreateMessageBody(value: TemplateCreateMessageBody): Self = StObject.set(x, "TemplateCreateMessageBody", value.asInstanceOf[js.Any])
   }

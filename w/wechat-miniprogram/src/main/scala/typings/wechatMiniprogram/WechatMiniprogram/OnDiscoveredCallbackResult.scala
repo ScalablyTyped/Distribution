@@ -19,7 +19,8 @@ object OnDiscoveredCallbackResult {
     __obj.asInstanceOf[OnDiscoveredCallbackResult]
   }
   
-  extension [Self <: OnDiscoveredCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDiscoveredCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[Any]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object RemuxedUserdata {
     __obj.asInstanceOf[RemuxedUserdata]
   }
   
-  extension [Self <: RemuxedUserdata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemuxedUserdata] (val x: Self) extends AnyVal {
     
     inline def setSamples(value: js.Array[UserdataSample]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
     

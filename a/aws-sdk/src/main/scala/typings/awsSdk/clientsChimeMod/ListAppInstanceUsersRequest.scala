@@ -28,7 +28,8 @@ object ListAppInstanceUsersRequest {
     __obj.asInstanceOf[ListAppInstanceUsersRequest]
   }
   
-  extension [Self <: ListAppInstanceUsersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAppInstanceUsersRequest] (val x: Self) extends AnyVal {
     
     inline def setAppInstanceArn(value: ChimeArn): Self = StObject.set(x, "AppInstanceArn", value.asInstanceOf[js.Any])
     

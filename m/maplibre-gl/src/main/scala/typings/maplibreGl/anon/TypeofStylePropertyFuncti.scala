@@ -23,7 +23,8 @@ object TypeofStylePropertyFuncti {
     __obj.asInstanceOf[TypeofStylePropertyFuncti]
   }
   
-  extension [Self <: TypeofStylePropertyFuncti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofStylePropertyFuncti] (val x: Self) extends AnyVal {
     
     inline def setDeserialize(value: Parameters[Any] => StylePropertyFunction[Any]): Self = StObject.set(x, "deserialize", js.Any.fromFunction1(value))
     

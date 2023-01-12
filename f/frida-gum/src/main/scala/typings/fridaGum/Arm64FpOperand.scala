@@ -22,7 +22,8 @@ object Arm64FpOperand {
     __obj.asInstanceOf[Arm64FpOperand]
   }
   
-  extension [Self <: Arm64FpOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Arm64FpOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: fp): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

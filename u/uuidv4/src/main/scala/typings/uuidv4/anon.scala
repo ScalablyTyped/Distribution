@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
       

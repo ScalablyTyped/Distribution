@@ -29,7 +29,8 @@ object Social {
       __obj.asInstanceOf[ClientState]
     }
     
-    extension [Self <: ClientState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientState] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object Social {
       __obj.asInstanceOf[IncomingMessage]
     }
     
-    extension [Self <: IncomingMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingMessage] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: ClientState): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object Social {
       __obj.asInstanceOf[LoginRequest]
     }
     
-    extension [Self <: LoginRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginRequest] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       
@@ -181,7 +184,8 @@ object Social {
       __obj.asInstanceOf[UserProfile]
     }
     
-    extension [Self <: UserProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserProfile] (val x: Self) extends AnyVal {
       
       inline def setImageData(value: String): Self = StObject.set(x, "imageData", value.asInstanceOf[js.Any])
       

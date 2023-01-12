@@ -33,7 +33,8 @@ object Tab {
     __obj.asInstanceOf[Tab]
   }
   
-  extension [Self <: Tab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tab] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Component): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

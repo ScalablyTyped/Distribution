@@ -27,7 +27,8 @@ object SearchTermSource {
     __obj.asInstanceOf[SearchTermSource]
   }
   
-  extension [Self <: SearchTermSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchTermSource] (val x: Self) extends AnyVal {
     
     inline def setLastValue(value: Value): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
     

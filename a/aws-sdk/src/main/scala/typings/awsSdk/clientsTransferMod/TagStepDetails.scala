@@ -28,7 +28,8 @@ object TagStepDetails {
     __obj.asInstanceOf[TagStepDetails]
   }
   
-  extension [Self <: TagStepDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagStepDetails] (val x: Self) extends AnyVal {
     
     inline def setName(value: WorkflowStepName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

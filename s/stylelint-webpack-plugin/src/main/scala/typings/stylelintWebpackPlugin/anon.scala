@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setApi(value: InternalApi): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object anon {
       __obj.asInstanceOf[CheckAgainstRule]
     }
     
-    extension [Self <: CheckAgainstRule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckAgainstRule] (val x: Self) extends AnyVal {
       
       inline def setCheckAgainstRule(value: (Root[Any, Any], js.Function1[/* warning */ Warning, Unit]) => Unit): Self = StObject.set(x, "checkAgainstRule", js.Any.fromFunction2(value))
       
@@ -136,7 +138,8 @@ object anon {
       __obj.asInstanceOf[PartialPluginOptions]
     }
     
-    extension [Self <: PartialPluginOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPluginOptions] (val x: Self) extends AnyVal {
       
       inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -264,7 +267,8 @@ object anon {
       __obj.asInstanceOf[PartialStylelintOptions]
     }
     
-    extension [Self <: PartialStylelintOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialStylelintOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyInput(value: Boolean): Self = StObject.set(x, "allowEmptyInput", value.asInstanceOf[js.Any])
       
@@ -396,7 +400,8 @@ object anon {
       __obj.asInstanceOf[PickLinterOptionscwdconfi]
     }
     
-    extension [Self <: PickLinterOptionscwdconfi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickLinterOptionscwdconfi] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: Config): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -431,7 +436,8 @@ object anon {
       __obj.asInstanceOf[Root[T_1, O]]
     }
     
-    extension [Self <: Root[?, ?], T_1, O /* <: js.Object */](x: Self & (Root[T_1, O])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Root[?, ?], T_1, O /* <: js.Object */] (val x: Self & (Root[T_1, O])) extends AnyVal {
       
       inline def setRoot(value: Root_): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       
@@ -460,7 +466,8 @@ object anon {
       __obj.asInstanceOf[Rule]
     }
     
-    extension [Self <: Rule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
       
       inline def setRule(value: typings.stylelint.mod.Rule[Any, Any]): Self = StObject.set(x, "rule", value.asInstanceOf[js.Any])
       
@@ -479,7 +486,8 @@ object anon {
       __obj.asInstanceOf[Timestamp]
     }
     
-    extension [Self <: Timestamp](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timestamp] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     }

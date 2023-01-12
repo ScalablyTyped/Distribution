@@ -15,7 +15,8 @@ object IncludeSelf {
     __obj.asInstanceOf[IncludeSelf]
   }
   
-  extension [Self <: IncludeSelf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeSelf] (val x: Self) extends AnyVal {
     
     inline def setIncludeSelf(value: Boolean): Self = StObject.set(x, "includeSelf", value.asInstanceOf[js.Any])
     

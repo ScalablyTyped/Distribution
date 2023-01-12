@@ -15,7 +15,8 @@ object DirectionResult {
     __obj.asInstanceOf[DirectionResult]
   }
   
-  extension [Self <: DirectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionResult] (val x: Self) extends AnyVal {
     
     inline def setRoutes(value: js.Array[DirectionRoute]): Self = StObject.set(x, "routes", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object GeoJSONLayerCapabilitiesQuery {
     __obj.asInstanceOf[GeoJSONLayerCapabilitiesQuery]
   }
   
-  extension [Self <: GeoJSONLayerCapabilitiesQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerCapabilitiesQuery] (val x: Self) extends AnyVal {
     
     inline def setSupportsCentroid(value: Boolean): Self = StObject.set(x, "supportsCentroid", value.asInstanceOf[js.Any])
     

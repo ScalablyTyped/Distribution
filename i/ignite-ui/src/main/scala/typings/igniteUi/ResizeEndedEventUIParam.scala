@@ -18,7 +18,8 @@ object ResizeEndedEventUIParam {
     __obj.asInstanceOf[ResizeEndedEventUIParam]
   }
   
-  extension [Self <: ResizeEndedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResizeEndedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: Any): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
     

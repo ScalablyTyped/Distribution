@@ -17,7 +17,8 @@ object Registrations {
     __obj.asInstanceOf[Registrations]
   }
   
-  extension [Self <: Registrations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Registrations] (val x: Self) extends AnyVal {
     
     inline def setRegistrations(value: js.Array[Domain]): Self = StObject.set(x, "registrations", value.asInstanceOf[js.Any])
     

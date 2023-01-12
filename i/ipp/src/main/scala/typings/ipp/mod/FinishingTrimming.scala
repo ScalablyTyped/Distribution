@@ -21,7 +21,8 @@ object FinishingTrimming {
     __obj.asInstanceOf[FinishingTrimming]
   }
   
-  extension [Self <: FinishingTrimming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingTrimming] (val x: Self) extends AnyVal {
     
     inline def `setTrimming-offset`(value: Double): Self = StObject.set(x, "trimming-offset", value.asInstanceOf[js.Any])
     

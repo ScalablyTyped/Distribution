@@ -18,7 +18,8 @@ object ListPolicyVersionsResponse {
     __obj.asInstanceOf[ListPolicyVersionsResponse]
   }
   
-  extension [Self <: ListPolicyVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListPolicyVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setPolicyVersions(value: PolicyVersions): Self = StObject.set(x, "policyVersions", value.asInstanceOf[js.Any])
     

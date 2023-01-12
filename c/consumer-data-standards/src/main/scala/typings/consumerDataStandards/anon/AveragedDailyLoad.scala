@@ -88,7 +88,8 @@ object AveragedDailyLoad {
     __obj.asInstanceOf[AveragedDailyLoad]
   }
   
-  extension [Self <: AveragedDailyLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AveragedDailyLoad] (val x: Self) extends AnyVal {
     
     inline def setAveragedDailyLoad(value: Double): Self = StObject.set(x, "averagedDailyLoad", value.asInstanceOf[js.Any])
     

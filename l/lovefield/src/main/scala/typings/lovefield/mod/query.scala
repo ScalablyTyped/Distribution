@@ -30,7 +30,8 @@ object query {
       __obj.asInstanceOf[Builder]
     }
     
-    extension [Self <: Builder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Builder] (val x: Self) extends AnyVal {
       
       inline def setBind(value: /* repeated */ Any => Builder): Self = StObject.set(x, "bind", js.Any.fromFunction1(value))
       
@@ -64,7 +65,8 @@ object query {
       __obj.asInstanceOf[Delete]
     }
     
-    extension [Self <: Delete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Delete] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: Table => Delete): Self = StObject.set(x, "from", js.Any.fromFunction1(value))
       
@@ -130,7 +132,8 @@ object query {
       __obj.asInstanceOf[Update]
     }
     
-    extension [Self <: Update](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
       
       inline def setSet(value: (Column, Any) => Update): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
       

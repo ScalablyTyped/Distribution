@@ -33,7 +33,8 @@ object S3ExportConfiguration {
     __obj.asInstanceOf[S3ExportConfiguration]
   }
   
-  extension [Self <: S3ExportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3ExportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDiskImageFormat(value: DiskImageFormat): Self = StObject.set(x, "diskImageFormat", value.asInstanceOf[js.Any])
     

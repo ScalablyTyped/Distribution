@@ -84,7 +84,8 @@ object TestFrameworkGlobals {
     __obj.asInstanceOf[TestFrameworkGlobals]
   }
   
-  extension [Self <: TestFrameworkGlobals](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestFrameworkGlobals] (val x: Self) extends AnyVal {
     
     inline def setAfterAll(value: (/* fn */ HookFn, /* timeout */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "afterAll", js.Any.fromFunction2(value))
     

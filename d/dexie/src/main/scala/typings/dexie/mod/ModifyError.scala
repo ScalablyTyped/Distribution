@@ -29,7 +29,8 @@ object ModifyError {
     __obj.asInstanceOf[ModifyError]
   }
   
-  extension [Self <: ModifyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyError] (val x: Self) extends AnyVal {
     
     inline def setFailedKeys(value: IndexableTypeArrayReadonly): Self = StObject.set(x, "failedKeys", value.asInstanceOf[js.Any])
     

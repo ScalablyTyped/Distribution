@@ -17,7 +17,8 @@ object MlDataframeAnalysisAnalyzedFields {
     __obj.asInstanceOf[MlDataframeAnalysisAnalyzedFields]
   }
   
-  extension [Self <: MlDataframeAnalysisAnalyzedFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalysisAnalyzedFields] (val x: Self) extends AnyVal {
     
     inline def setExcludes(value: js.Array[String]): Self = StObject.set(x, "excludes", value.asInstanceOf[js.Any])
     

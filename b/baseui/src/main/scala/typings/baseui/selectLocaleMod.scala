@@ -43,7 +43,8 @@ object selectLocaleMod {
       __obj.asInstanceOf[SelectLocale]
     }
     
-    extension [Self <: SelectLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectLocale] (val x: Self) extends AnyVal {
       
       inline def setCreate(value: String): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
       

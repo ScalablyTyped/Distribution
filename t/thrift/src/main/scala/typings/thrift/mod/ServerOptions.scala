@@ -26,7 +26,8 @@ object ServerOptions {
     __obj.asInstanceOf[ServerOptions[TProcessor, THandler]]
   }
   
-  extension [Self <: ServerOptions[?, ?], TProcessor, THandler](x: Self & (ServerOptions[TProcessor, THandler])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerOptions[?, ?], TProcessor, THandler] (val x: Self & (ServerOptions[TProcessor, THandler])) extends AnyVal {
     
     inline def setCors(value: js.Array[String]): Self = StObject.set(x, "cors", value.asInstanceOf[js.Any])
     

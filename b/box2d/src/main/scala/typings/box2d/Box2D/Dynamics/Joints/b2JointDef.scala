@@ -40,7 +40,8 @@ object b2JointDef {
     __obj.asInstanceOf[b2JointDef]
   }
   
-  extension [Self <: b2JointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2JointDef] (val x: Self) extends AnyVal {
     
     inline def setBodyA(value: b2Body): Self = StObject.set(x, "bodyA", value.asInstanceOf[js.Any])
     

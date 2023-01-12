@@ -110,7 +110,8 @@ object componentsSliderSliderMod {
       __obj.asInstanceOf[SliderProps]
     }
     
-    extension [Self <: SliderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderProps] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Double): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -236,7 +237,8 @@ object componentsSliderSliderMod {
       __obj.asInstanceOf[SliderTheme]
     }
     
-    extension [Self <: SliderTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderTheme] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

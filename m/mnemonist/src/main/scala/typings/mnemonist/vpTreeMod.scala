@@ -63,7 +63,8 @@ object vpTreeMod {
       __obj.asInstanceOf[QueryMatch[T]]
     }
     
-    extension [Self <: QueryMatch[?], T](x: Self & QueryMatch[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryMatch[?], T] (val x: Self & QueryMatch[T]) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -101,7 +102,8 @@ object vpTreeMod {
       __obj.asInstanceOf[VPTree[T]]
     }
     
-    extension [Self <: VPTree[?], T](x: Self & VPTree[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VPTree[?], T] (val x: Self & VPTree[T]) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       

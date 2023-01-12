@@ -28,7 +28,8 @@ object CreateParticipantConnectionRequest {
     __obj.asInstanceOf[CreateParticipantConnectionRequest]
   }
   
-  extension [Self <: CreateParticipantConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateParticipantConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectParticipant(value: Bool): Self = StObject.set(x, "ConnectParticipant", value.asInstanceOf[js.Any])
     

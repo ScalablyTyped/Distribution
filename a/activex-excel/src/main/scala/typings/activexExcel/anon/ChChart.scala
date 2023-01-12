@@ -16,7 +16,8 @@ object ChChart {
     __obj.asInstanceOf[ChChart]
   }
   
-  extension [Self <: ChChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChChart] (val x: Self) extends AnyVal {
     
     inline def setCh(value: Chart): Self = StObject.set(x, "Ch", value.asInstanceOf[js.Any])
   }

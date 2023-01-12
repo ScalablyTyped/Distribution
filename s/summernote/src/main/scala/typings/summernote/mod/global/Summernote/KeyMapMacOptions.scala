@@ -15,7 +15,8 @@ object KeyMapMacOptions {
     __obj.asInstanceOf[KeyMapMacOptions]
   }
   
-  extension [Self <: KeyMapMacOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyMapMacOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

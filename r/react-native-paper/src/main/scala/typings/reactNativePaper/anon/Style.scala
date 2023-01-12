@@ -23,7 +23,8 @@ object Style {
     __obj.asInstanceOf[Style]
   }
   
-  extension [Self <: Style](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Style] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

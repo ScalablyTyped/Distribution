@@ -18,7 +18,8 @@ object NotAction {
     __obj.asInstanceOf[NotAction]
   }
   
-  extension [Self <: NotAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotAction] (val x: Self) extends AnyVal {
     
     inline def setNotAction(value: String | js.Array[String]): Self = StObject.set(x, "NotAction", value.asInstanceOf[js.Any])
     

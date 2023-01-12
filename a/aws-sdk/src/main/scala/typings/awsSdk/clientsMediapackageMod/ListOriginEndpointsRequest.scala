@@ -28,7 +28,8 @@ object ListOriginEndpointsRequest {
     __obj.asInstanceOf[ListOriginEndpointsRequest]
   }
   
-  extension [Self <: ListOriginEndpointsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOriginEndpointsRequest] (val x: Self) extends AnyVal {
     
     inline def setChannelId(value: string): Self = StObject.set(x, "ChannelId", value.asInstanceOf[js.Any])
     

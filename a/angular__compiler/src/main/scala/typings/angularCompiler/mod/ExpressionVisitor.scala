@@ -80,7 +80,8 @@ object ExpressionVisitor {
     __obj.asInstanceOf[ExpressionVisitor]
   }
   
-  extension [Self <: ExpressionVisitor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpressionVisitor] (val x: Self) extends AnyVal {
     
     inline def setVisitBinaryOperatorExpr(value: (BinaryOperatorExpr, Any) => Any): Self = StObject.set(x, "visitBinaryOperatorExpr", js.Any.fromFunction2(value))
     

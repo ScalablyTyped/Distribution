@@ -54,7 +54,8 @@ object BoundingRegion {
     __obj.asInstanceOf[BoundingRegion]
   }
   
-  extension [Self <: BoundingRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundingRegion] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => BoundingRegion): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

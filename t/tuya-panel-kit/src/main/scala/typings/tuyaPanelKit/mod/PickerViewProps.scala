@@ -244,7 +244,8 @@ object PickerViewProps {
     __obj.asInstanceOf[PickerViewProps]
   }
   
-  extension [Self <: PickerViewProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickerViewProps] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

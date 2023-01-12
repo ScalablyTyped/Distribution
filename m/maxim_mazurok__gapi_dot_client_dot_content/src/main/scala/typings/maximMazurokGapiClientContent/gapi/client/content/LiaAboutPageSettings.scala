@@ -19,7 +19,8 @@ object LiaAboutPageSettings {
     __obj.asInstanceOf[LiaAboutPageSettings]
   }
   
-  extension [Self <: LiaAboutPageSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LiaAboutPageSettings] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

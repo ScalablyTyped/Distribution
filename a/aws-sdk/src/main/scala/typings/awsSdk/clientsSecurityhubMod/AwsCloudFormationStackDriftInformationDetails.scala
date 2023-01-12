@@ -18,7 +18,8 @@ object AwsCloudFormationStackDriftInformationDetails {
     __obj.asInstanceOf[AwsCloudFormationStackDriftInformationDetails]
   }
   
-  extension [Self <: AwsCloudFormationStackDriftInformationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsCloudFormationStackDriftInformationDetails] (val x: Self) extends AnyVal {
     
     inline def setStackDriftStatus(value: NonEmptyString): Self = StObject.set(x, "StackDriftStatus", value.asInstanceOf[js.Any])
     

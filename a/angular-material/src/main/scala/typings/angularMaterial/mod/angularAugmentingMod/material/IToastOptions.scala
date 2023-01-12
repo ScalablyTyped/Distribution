@@ -54,7 +54,8 @@ object IToastOptions {
     __obj.asInstanceOf[IToastOptions]
   }
   
-  extension [Self <: IToastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToastOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoWrap(value: Boolean): Self = StObject.set(x, "autoWrap", value.asInstanceOf[js.Any])
     

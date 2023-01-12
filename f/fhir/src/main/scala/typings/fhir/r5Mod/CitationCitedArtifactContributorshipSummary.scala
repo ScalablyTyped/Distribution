@@ -37,7 +37,8 @@ object CitationCitedArtifactContributorshipSummary {
     __obj.asInstanceOf[CitationCitedArtifactContributorshipSummary]
   }
   
-  extension [Self <: CitationCitedArtifactContributorshipSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CitationCitedArtifactContributorshipSummary] (val x: Self) extends AnyVal {
     
     inline def setSource(value: CodeableConcept): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

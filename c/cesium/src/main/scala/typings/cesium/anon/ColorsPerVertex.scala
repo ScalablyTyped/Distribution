@@ -26,7 +26,8 @@ object ColorsPerVertex {
     __obj.asInstanceOf[ColorsPerVertex]
   }
   
-  extension [Self <: ColorsPerVertex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorsPerVertex] (val x: Self) extends AnyVal {
     
     inline def setArcType(value: typings.cesium.mod.ArcType): Self = StObject.set(x, "arcType", value.asInstanceOf[js.Any])
     

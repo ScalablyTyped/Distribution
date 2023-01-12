@@ -32,7 +32,8 @@ object AutoResolve {
     __obj.asInstanceOf[AutoResolve]
   }
   
-  extension [Self <: AutoResolve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoResolve] (val x: Self) extends AnyVal {
     
     inline def setAutoResolve(value: Boolean): Self = StObject.set(x, "autoResolve", value.asInstanceOf[js.Any])
     

@@ -52,7 +52,8 @@ object CIMStroke {
     __obj.asInstanceOf[CIMStroke]
   }
   
-  extension [Self <: CIMStroke](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMStroke] (val x: Self) extends AnyVal {
     
     inline def setCapStyle(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof LineCapStyle * / any */ String

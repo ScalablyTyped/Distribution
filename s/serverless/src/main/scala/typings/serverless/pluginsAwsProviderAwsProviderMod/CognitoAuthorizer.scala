@@ -34,7 +34,8 @@ object CognitoAuthorizer {
     __obj.asInstanceOf[CognitoAuthorizer]
   }
   
-  extension [Self <: CognitoAuthorizer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CognitoAuthorizer] (val x: Self) extends AnyVal {
     
     inline def setAllowUnauthenticated(value: Boolean): Self = StObject.set(x, "allowUnauthenticated", value.asInstanceOf[js.Any])
     

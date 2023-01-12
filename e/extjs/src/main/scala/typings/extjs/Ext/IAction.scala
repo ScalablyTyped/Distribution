@@ -97,7 +97,8 @@ object IAction {
     __obj.asInstanceOf[IAction]
   }
   
-  extension [Self <: IAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAction] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => Unit): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

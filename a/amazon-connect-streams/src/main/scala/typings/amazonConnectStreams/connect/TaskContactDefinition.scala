@@ -41,7 +41,8 @@ object TaskContactDefinition {
     __obj.asInstanceOf[TaskContactDefinition]
   }
   
-  extension [Self <: TaskContactDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskContactDefinition] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

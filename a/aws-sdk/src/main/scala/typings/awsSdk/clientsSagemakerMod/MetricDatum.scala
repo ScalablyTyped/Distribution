@@ -33,7 +33,8 @@ object MetricDatum {
     __obj.asInstanceOf[MetricDatum]
   }
   
-  extension [Self <: MetricDatum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricDatum] (val x: Self) extends AnyVal {
     
     inline def setMetricName(value: AutoMLMetricEnum): Self = StObject.set(x, "MetricName", value.asInstanceOf[js.Any])
     

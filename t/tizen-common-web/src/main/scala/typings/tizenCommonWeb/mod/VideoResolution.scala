@@ -33,7 +33,8 @@ object VideoResolution {
     __obj.asInstanceOf[VideoResolution]
   }
   
-  extension [Self <: VideoResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoResolution] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: AspectRatio): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

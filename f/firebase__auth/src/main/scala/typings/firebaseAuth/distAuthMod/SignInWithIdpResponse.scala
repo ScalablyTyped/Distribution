@@ -29,7 +29,8 @@ object SignInWithIdpResponse {
     __obj.asInstanceOf[SignInWithIdpResponse]
   }
   
-  extension [Self <: SignInWithIdpResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignInWithIdpResponse] (val x: Self) extends AnyVal {
     
     inline def setNonce(value: String): Self = StObject.set(x, "nonce", value.asInstanceOf[js.Any])
     

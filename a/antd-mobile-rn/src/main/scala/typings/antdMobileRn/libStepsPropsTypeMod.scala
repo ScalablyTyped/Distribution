@@ -21,7 +21,8 @@ object libStepsPropsTypeMod {
       __obj.asInstanceOf[StepsPropsType]
     }
     
-    extension [Self <: StepsPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StepsPropsType] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

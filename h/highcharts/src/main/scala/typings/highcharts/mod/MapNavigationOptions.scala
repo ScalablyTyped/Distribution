@@ -79,7 +79,8 @@ object MapNavigationOptions {
     __obj.asInstanceOf[MapNavigationOptions]
   }
   
-  extension [Self <: MapNavigationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapNavigationOptions] (val x: Self) extends AnyVal {
     
     inline def setButtonOptions(value: MapNavigationButtonOptions): Self = StObject.set(x, "buttonOptions", value.asInstanceOf[js.Any])
     

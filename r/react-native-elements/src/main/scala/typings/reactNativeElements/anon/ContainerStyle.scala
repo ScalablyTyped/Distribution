@@ -59,7 +59,8 @@ object ContainerStyle {
     __obj.asInstanceOf[ContainerStyle]
   }
   
-  extension [Self <: ContainerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerStyle] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(value: StyleProp[ViewStyle]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     

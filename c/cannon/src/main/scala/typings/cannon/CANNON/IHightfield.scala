@@ -19,7 +19,8 @@ object IHightfield {
     __obj.asInstanceOf[IHightfield]
   }
   
-  extension [Self <: IHightfield](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHightfield] (val x: Self) extends AnyVal {
     
     inline def setElementSize(value: Double): Self = StObject.set(x, "elementSize", value.asInstanceOf[js.Any])
     

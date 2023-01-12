@@ -24,7 +24,8 @@ object DynamicWidgetsProvided {
     __obj.asInstanceOf[DynamicWidgetsProvided]
   }
   
-  extension [Self <: DynamicWidgetsProvided](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamicWidgetsProvided] (val x: Self) extends AnyVal {
     
     inline def setAttributesToRender(value: js.Array[String]): Self = StObject.set(x, "attributesToRender", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object FilteringCount {
     __obj.asInstanceOf[FilteringCount]
   }
   
-  extension [Self <: FilteringCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilteringCount] (val x: Self) extends AnyVal {
     
     inline def setFilteringCount(value: String): Self = StObject.set(x, "filteringCount", value.asInstanceOf[js.Any])
     

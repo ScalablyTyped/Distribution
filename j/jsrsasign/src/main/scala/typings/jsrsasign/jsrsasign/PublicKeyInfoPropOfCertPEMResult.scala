@@ -22,7 +22,8 @@ object PublicKeyInfoPropOfCertPEMResult {
     __obj.asInstanceOf[PublicKeyInfoPropOfCertPEMResult]
   }
   
-  extension [Self <: PublicKeyInfoPropOfCertPEMResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeyInfoPropOfCertPEMResult] (val x: Self) extends AnyVal {
     
     inline def setAlgoid(value: String): Self = StObject.set(x, "algoid", value.asInstanceOf[js.Any])
     

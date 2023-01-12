@@ -242,7 +242,8 @@ object HttpProxy {
       __obj.asInstanceOf[ProxyTargetDetailed]
     }
     
-    extension [Self <: ProxyTargetDetailed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProxyTargetDetailed] (val x: Self) extends AnyVal {
       
       inline def setCa(value: String): Self = StObject.set(x, "ca", value.asInstanceOf[js.Any])
       
@@ -376,7 +377,8 @@ object HttpProxy {
       __obj.asInstanceOf[typings.vite.mod.HttpProxy.ServerOptions]
     }
     
-    extension [Self <: typings.vite.mod.HttpProxy.ServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.vite.mod.HttpProxy.ServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

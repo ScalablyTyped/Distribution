@@ -18,7 +18,8 @@ object InvocationListener {
     __obj.asInstanceOf[InvocationListener]
   }
   
-  extension [Self <: InvocationListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvocationListener] (val x: Self) extends AnyVal {
     
     inline def setDetach(value: () => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction0(value))
   }

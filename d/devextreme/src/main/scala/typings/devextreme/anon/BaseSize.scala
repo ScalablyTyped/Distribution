@@ -33,7 +33,8 @@ object BaseSize {
     __obj.asInstanceOf[BaseSize]
   }
   
-  extension [Self <: BaseSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseSize] (val x: Self) extends AnyVal {
     
     inline def setBaseSize(value: Double | typings.devextreme.mod.DevExpress.common.Mode): Self = StObject.set(x, "baseSize", value.asInstanceOf[js.Any])
     

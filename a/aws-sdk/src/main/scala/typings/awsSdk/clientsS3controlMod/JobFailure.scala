@@ -23,7 +23,8 @@ object JobFailure {
     __obj.asInstanceOf[JobFailure]
   }
   
-  extension [Self <: JobFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobFailure] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: JobFailureCode): Self = StObject.set(x, "FailureCode", value.asInstanceOf[js.Any])
     

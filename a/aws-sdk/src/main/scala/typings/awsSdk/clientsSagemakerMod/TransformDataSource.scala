@@ -18,7 +18,8 @@ object TransformDataSource {
     __obj.asInstanceOf[TransformDataSource]
   }
   
-  extension [Self <: TransformDataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformDataSource] (val x: Self) extends AnyVal {
     
     inline def setS3DataSource(value: TransformS3DataSource): Self = StObject.set(x, "S3DataSource", value.asInstanceOf[js.Any])
   }

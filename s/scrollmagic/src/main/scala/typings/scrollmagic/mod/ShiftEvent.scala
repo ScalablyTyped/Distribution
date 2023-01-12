@@ -26,7 +26,8 @@ object ShiftEvent {
     __obj.asInstanceOf[ShiftEvent]
   }
   
-  extension [Self <: ShiftEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShiftEvent] (val x: Self) extends AnyVal {
     
     inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

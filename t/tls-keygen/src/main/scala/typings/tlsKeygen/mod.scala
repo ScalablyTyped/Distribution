@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[EphemeralResult]
     }
     
-    extension [Self <: EphemeralResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EphemeralResult] (val x: Self) extends AnyVal {
       
       inline def setCert(value: Buffer): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[KeyGenOptions]
     }
     
-    extension [Self <: KeyGenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyGenOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object mod {
       __obj.asInstanceOf[KeyGenResult]
     }
     
-    extension [Self <: KeyGenResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyGenResult] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       

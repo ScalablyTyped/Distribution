@@ -15,7 +15,8 @@ object Octaveshift {
     __obj.asInstanceOf[Octaveshift]
   }
   
-  extension [Self <: Octaveshift](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Octaveshift] (val x: Self) extends AnyVal {
     
     inline def setOctave_shift(value: Double): Self = StObject.set(x, "octave_shift", value.asInstanceOf[js.Any])
     

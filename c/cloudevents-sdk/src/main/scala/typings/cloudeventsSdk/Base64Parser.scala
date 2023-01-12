@@ -17,7 +17,8 @@ object Base64Parser {
     __obj.asInstanceOf[Base64Parser]
   }
   
-  extension [Self <: Base64Parser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Base64Parser] (val x: Self) extends AnyVal {
     
     inline def setDecorator(value: Any): Self = StObject.set(x, "decorator", value.asInstanceOf[js.Any])
     

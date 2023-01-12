@@ -120,7 +120,8 @@ object ModalProps {
     __obj.asInstanceOf[ModalProps]
   }
   
-  extension [Self <: ModalProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalProps] (val x: Self) extends AnyVal {
     
     inline def setActiveIdx(value: Double): Self = StObject.set(x, "activeIdx", value.asInstanceOf[js.Any])
     

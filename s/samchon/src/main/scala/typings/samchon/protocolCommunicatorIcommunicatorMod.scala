@@ -46,7 +46,8 @@ object protocolCommunicatorIcommunicatorMod {
       __obj.asInstanceOf[ICommunicator]
     }
     
-    extension [Self <: ICommunicator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICommunicator] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

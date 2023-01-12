@@ -75,7 +75,8 @@ object GaData {
     __obj.asInstanceOf[GaData]
   }
   
-  extension [Self <: GaData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GaData] (val x: Self) extends AnyVal {
     
     inline def setColumnHeaders(value: js.Array[ColumnType]): Self = StObject.set(x, "columnHeaders", value.asInstanceOf[js.Any])
     

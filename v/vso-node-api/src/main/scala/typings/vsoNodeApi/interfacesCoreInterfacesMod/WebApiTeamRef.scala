@@ -28,7 +28,8 @@ object WebApiTeamRef {
     __obj.asInstanceOf[WebApiTeamRef]
   }
   
-  extension [Self <: WebApiTeamRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebApiTeamRef] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

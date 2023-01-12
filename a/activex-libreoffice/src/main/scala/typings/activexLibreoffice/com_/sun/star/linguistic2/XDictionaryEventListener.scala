@@ -38,7 +38,8 @@ object XDictionaryEventListener {
     __obj.asInstanceOf[XDictionaryEventListener]
   }
   
-  extension [Self <: XDictionaryEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDictionaryEventListener] (val x: Self) extends AnyVal {
     
     inline def setProcessDictionaryEvent(value: DictionaryEvent => Unit): Self = StObject.set(x, "processDictionaryEvent", js.Any.fromFunction1(value))
   }

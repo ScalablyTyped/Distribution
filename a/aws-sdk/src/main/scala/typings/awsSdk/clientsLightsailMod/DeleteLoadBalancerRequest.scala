@@ -18,7 +18,8 @@ object DeleteLoadBalancerRequest {
     __obj.asInstanceOf[DeleteLoadBalancerRequest]
   }
   
-  extension [Self <: DeleteLoadBalancerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLoadBalancerRequest] (val x: Self) extends AnyVal {
     
     inline def setLoadBalancerName(value: ResourceName): Self = StObject.set(x, "loadBalancerName", value.asInstanceOf[js.Any])
   }

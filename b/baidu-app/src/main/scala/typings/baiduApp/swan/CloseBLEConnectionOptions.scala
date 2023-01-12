@@ -23,7 +23,8 @@ object CloseBLEConnectionOptions {
     __obj.asInstanceOf[CloseBLEConnectionOptions]
   }
   
-  extension [Self <: CloseBLEConnectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseBLEConnectionOptions] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

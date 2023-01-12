@@ -25,7 +25,8 @@ object TextDocumentPositionParams {
     __obj.asInstanceOf[TextDocumentPositionParams]
   }
   
-  extension [Self <: TextDocumentPositionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextDocumentPositionParams] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

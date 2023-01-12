@@ -42,7 +42,8 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
       __obj.asInstanceOf[AnalyticsErrorBoundaryErrorInfo]
     }
     
-    extension [Self <: AnalyticsErrorBoundaryErrorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsErrorBoundaryErrorInfo] (val x: Self) extends AnyVal {
       
       inline def setComponentStack(value: String): Self = StObject.set(x, "componentStack", value.asInstanceOf[js.Any])
     }
@@ -63,7 +64,8 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
       __obj.asInstanceOf[AnalyticsErrorBoundaryPayload]
     }
     
-    extension [Self <: AnalyticsErrorBoundaryPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsErrorBoundaryPayload] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error | String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
       __obj.asInstanceOf[AnalyticsErrorBoundaryProps]
     }
     
-    extension [Self <: AnalyticsErrorBoundaryProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsErrorBoundaryProps] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: String): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object distTypesComponentsAnalyticsErrorBoundaryMod extends Shortcut {
       __obj.asInstanceOf[AnalyticsErrorBoundaryState]
     }
     
-    extension [Self <: AnalyticsErrorBoundaryState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyticsErrorBoundaryState] (val x: Self) extends AnyVal {
       
       inline def setHasError(value: Boolean): Self = StObject.set(x, "hasError", value.asInstanceOf[js.Any])
     }

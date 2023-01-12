@@ -24,7 +24,8 @@ object TreeItemLabel {
     __obj.asInstanceOf[TreeItemLabel]
   }
   
-  extension [Self <: TreeItemLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TreeItemLabel] (val x: Self) extends AnyVal {
     
     inline def setHighlights(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "highlights", value.asInstanceOf[js.Any])
     

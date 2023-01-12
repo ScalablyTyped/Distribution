@@ -28,7 +28,8 @@ object Apikey {
     __obj.asInstanceOf[Apikey]
   }
   
-  extension [Self <: Apikey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Apikey] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

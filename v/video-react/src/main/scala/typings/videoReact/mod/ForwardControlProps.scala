@@ -21,7 +21,8 @@ object ForwardControlProps {
     __obj.asInstanceOf[ForwardControlProps]
   }
   
-  extension [Self <: ForwardControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardControlProps] (val x: Self) extends AnyVal {
     
     inline def setSeconds(value: `5` | `10` | `30`): Self = StObject.set(x, "seconds", value.asInstanceOf[js.Any])
     

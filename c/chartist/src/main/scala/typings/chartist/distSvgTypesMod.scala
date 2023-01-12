@@ -85,7 +85,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[AnimationDefinition]
     }
     
-    extension [Self <: AnimationDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationDefinition] (val x: Self) extends AnyVal {
       
       inline def setBegin(value: Double | String): Self = StObject.set(x, "begin", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[AnimationEvent]
     }
     
-    extension [Self <: AnimationEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimationEvent] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Element): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[ArcParams]
     }
     
-    extension [Self <: ArcParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArcParams] (val x: Self) extends AnyVal {
       
       inline def setLAf(value: Double): Self = StObject.set(x, "lAf", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[BasePathParams]
     }
     
-    extension [Self <: BasePathParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePathParams] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -255,7 +259,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[CurveParams]
     }
     
-    extension [Self <: CurveParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurveParams] (val x: Self) extends AnyVal {
       
       inline def setX1(value: Double): Self = StObject.set(x, "x1", value.asInstanceOf[js.Any])
       
@@ -292,7 +297,8 @@ object distSvgTypesMod {
       __obj.asInstanceOf[SvgPathOptions]
     }
     
-    extension [Self <: SvgPathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SvgPathOptions] (val x: Self) extends AnyVal {
       
       inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
       

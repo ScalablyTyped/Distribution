@@ -17,7 +17,8 @@ object IVisibilityChangedEventArgs {
     __obj.asInstanceOf[IVisibilityChangedEventArgs]
   }
   
-  extension [Self <: IVisibilityChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVisibilityChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
   }

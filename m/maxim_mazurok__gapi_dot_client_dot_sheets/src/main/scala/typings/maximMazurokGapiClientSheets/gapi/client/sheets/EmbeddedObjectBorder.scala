@@ -19,7 +19,8 @@ object EmbeddedObjectBorder {
     __obj.asInstanceOf[EmbeddedObjectBorder]
   }
   
-  extension [Self <: EmbeddedObjectBorder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedObjectBorder] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

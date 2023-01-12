@@ -17,7 +17,8 @@ object IMUMPU6050Option {
     __obj.asInstanceOf[IMUMPU6050Option]
   }
   
-  extension [Self <: IMUMPU6050Option](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMUMPU6050Option] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }

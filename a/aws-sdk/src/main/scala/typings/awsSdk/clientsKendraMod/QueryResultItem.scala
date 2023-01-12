@@ -63,7 +63,8 @@ object QueryResultItem {
     __obj.asInstanceOf[QueryResultItem]
   }
   
-  extension [Self <: QueryResultItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryResultItem] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAttributes(value: AdditionalResultAttributeList): Self = StObject.set(x, "AdditionalAttributes", value.asInstanceOf[js.Any])
     

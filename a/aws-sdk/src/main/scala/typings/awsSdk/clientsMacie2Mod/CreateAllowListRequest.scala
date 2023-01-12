@@ -38,7 +38,8 @@ object CreateAllowListRequest {
     __obj.asInstanceOf[CreateAllowListRequest]
   }
   
-  extension [Self <: CreateAllowListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAllowListRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: string): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object TestResultsGroupsForBuild {
     __obj.asInstanceOf[TestResultsGroupsForBuild]
   }
   
-  extension [Self <: TestResultsGroupsForBuild](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestResultsGroupsForBuild] (val x: Self) extends AnyVal {
     
     inline def setBuildId(value: Double): Self = StObject.set(x, "buildId", value.asInstanceOf[js.Any])
     

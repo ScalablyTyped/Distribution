@@ -44,7 +44,8 @@ object PlayerServers {
     __obj.asInstanceOf[PlayerServers]
   }
   
-  extension [Self <: PlayerServers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerServers] (val x: Self) extends AnyVal {
     
     inline def setBanned(value: `false`): Self = StObject.set(x, "banned", value.asInstanceOf[js.Any])
     

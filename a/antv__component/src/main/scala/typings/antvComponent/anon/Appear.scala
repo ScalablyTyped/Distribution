@@ -21,7 +21,8 @@ object Appear {
     __obj.asInstanceOf[Appear]
   }
   
-  extension [Self <: Appear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
     
     inline def setAppear(value: Any): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
     

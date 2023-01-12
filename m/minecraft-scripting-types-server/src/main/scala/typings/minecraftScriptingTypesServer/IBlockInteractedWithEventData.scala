@@ -28,7 +28,8 @@ object IBlockInteractedWithEventData {
     __obj.asInstanceOf[IBlockInteractedWithEventData]
   }
   
-  extension [Self <: IBlockInteractedWithEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBlockInteractedWithEventData] (val x: Self) extends AnyVal {
     
     inline def setBlock_position(value: VectorXYZ): Self = StObject.set(x, "block_position", value.asInstanceOf[js.Any])
     

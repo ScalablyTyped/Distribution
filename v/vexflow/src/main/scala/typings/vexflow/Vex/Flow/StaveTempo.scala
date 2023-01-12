@@ -44,7 +44,8 @@ object StaveTempo {
     __obj.asInstanceOf[StaveTempo]
   }
   
-  extension [Self <: StaveTempo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StaveTempo] (val x: Self) extends AnyVal {
     
     inline def setDraw(value: (Stave, Double) => StaveTempo): Self = StObject.set(x, "draw", js.Any.fromFunction2(value))
     

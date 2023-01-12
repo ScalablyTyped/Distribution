@@ -23,7 +23,8 @@ object TakePreciseCoverageResponse {
     __obj.asInstanceOf[TakePreciseCoverageResponse]
   }
   
-  extension [Self <: TakePreciseCoverageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TakePreciseCoverageResponse] (val x: Self) extends AnyVal {
     
     inline def setResult(value: js.Array[ScriptCoverage]): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

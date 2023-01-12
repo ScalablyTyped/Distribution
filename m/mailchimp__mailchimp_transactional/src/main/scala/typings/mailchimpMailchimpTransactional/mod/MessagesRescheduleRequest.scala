@@ -24,7 +24,8 @@ object MessagesRescheduleRequest {
     __obj.asInstanceOf[MessagesRescheduleRequest]
   }
   
-  extension [Self <: MessagesRescheduleRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagesRescheduleRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

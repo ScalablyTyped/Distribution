@@ -26,7 +26,8 @@ object CanvasRect {
     __obj.asInstanceOf[CanvasRect]
   }
   
-  extension [Self <: CanvasRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanvasRect] (val x: Self) extends AnyVal {
     
     inline def setClearRect(value: (Double, Double, Double, Double) => Unit): Self = StObject.set(x, "clearRect", js.Any.fromFunction4(value))
     

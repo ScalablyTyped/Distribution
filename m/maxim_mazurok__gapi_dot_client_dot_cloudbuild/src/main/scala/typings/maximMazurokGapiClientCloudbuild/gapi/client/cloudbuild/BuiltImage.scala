@@ -22,7 +22,8 @@ object BuiltImage {
     __obj.asInstanceOf[BuiltImage]
   }
   
-  extension [Self <: BuiltImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuiltImage] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: String): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

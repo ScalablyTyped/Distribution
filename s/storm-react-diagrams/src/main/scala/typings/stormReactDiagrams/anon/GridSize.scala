@@ -35,7 +35,8 @@ object GridSize {
     __obj.asInstanceOf[GridSize]
   }
   
-  extension [Self <: GridSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridSize] (val x: Self) extends AnyVal {
     
     inline def setGridSize(value: Double): Self = StObject.set(x, "gridSize", value.asInstanceOf[js.Any])
     

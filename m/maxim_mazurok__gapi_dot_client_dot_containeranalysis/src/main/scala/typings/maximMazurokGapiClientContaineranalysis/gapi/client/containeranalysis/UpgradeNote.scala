@@ -26,7 +26,8 @@ object UpgradeNote {
     __obj.asInstanceOf[UpgradeNote]
   }
   
-  extension [Self <: UpgradeNote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeNote] (val x: Self) extends AnyVal {
     
     inline def setDistributions(value: js.Array[UpgradeDistribution]): Self = StObject.set(x, "distributions", value.asInstanceOf[js.Any])
     

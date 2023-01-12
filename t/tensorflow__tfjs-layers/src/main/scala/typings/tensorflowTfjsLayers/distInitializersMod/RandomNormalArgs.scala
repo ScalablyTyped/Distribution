@@ -22,7 +22,8 @@ object RandomNormalArgs {
     __obj.asInstanceOf[RandomNormalArgs]
   }
   
-  extension [Self <: RandomNormalArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomNormalArgs] (val x: Self) extends AnyVal {
     
     inline def setMean(value: Double): Self = StObject.set(x, "mean", value.asInstanceOf[js.Any])
     

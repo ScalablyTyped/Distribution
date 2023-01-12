@@ -38,7 +38,8 @@ object ConvertToHtmlParams {
     __obj.asInstanceOf[ConvertToHtmlParams]
   }
   
-  extension [Self <: ConvertToHtmlParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConvertToHtmlParams] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MatchInfo {
     __obj.asInstanceOf[MatchInfo]
   }
   
-  extension [Self <: MatchInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchInfo] (val x: Self) extends AnyVal {
     
     inline def setPredefinedDetector(value: PredefinedDetectorInfo): Self = StObject.set(x, "predefinedDetector", value.asInstanceOf[js.Any])
     

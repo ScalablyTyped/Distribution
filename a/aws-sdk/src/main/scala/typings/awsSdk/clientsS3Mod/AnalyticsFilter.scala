@@ -28,7 +28,8 @@ object AnalyticsFilter {
     __obj.asInstanceOf[AnalyticsFilter]
   }
   
-  extension [Self <: AnalyticsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyticsFilter] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: AnalyticsAndOperator): Self = StObject.set(x, "And", value.asInstanceOf[js.Any])
     

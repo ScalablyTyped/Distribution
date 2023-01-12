@@ -18,7 +18,8 @@ object ConnectedRouterProps {
     __obj.asInstanceOf[ConnectedRouterProps[State]]
   }
   
-  extension [Self <: ConnectedRouterProps[?], State](x: Self & ConnectedRouterProps[State]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectedRouterProps[?], State] (val x: Self & ConnectedRouterProps[State]) extends AnyVal {
     
     inline def setHistory(value: History): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     

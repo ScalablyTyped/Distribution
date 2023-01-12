@@ -32,7 +32,8 @@ object ClassifyElementsParams {
     __obj.asInstanceOf[ClassifyElementsParams]
   }
   
-  extension [Self <: ClassifyElementsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifyElementsParams] (val x: Self) extends AnyVal {
     
     inline def setFile(value: ReadableStream | FileObject | Buffer): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     

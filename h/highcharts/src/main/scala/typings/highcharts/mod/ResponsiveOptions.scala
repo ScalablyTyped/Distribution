@@ -19,7 +19,8 @@ object ResponsiveOptions {
     __obj.asInstanceOf[ResponsiveOptions]
   }
   
-  extension [Self <: ResponsiveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponsiveOptions] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[ResponsiveRulesOptions]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

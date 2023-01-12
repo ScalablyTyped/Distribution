@@ -25,7 +25,8 @@ object VideoFileDetailsAudioStream {
     __obj.asInstanceOf[VideoFileDetailsAudioStream]
   }
   
-  extension [Self <: VideoFileDetailsAudioStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoFileDetailsAudioStream] (val x: Self) extends AnyVal {
     
     inline def setBitrateBps(value: String): Self = StObject.set(x, "bitrateBps", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object MappingIntegerRangeProperty {
     __obj.asInstanceOf[MappingIntegerRangeProperty]
   }
   
-  extension [Self <: MappingIntegerRangeProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingIntegerRangeProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: integer_range): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

@@ -27,7 +27,8 @@ object SimpleFillSymbol {
     __obj.asInstanceOf[SimpleFillSymbol]
   }
   
-  extension [Self <: SimpleFillSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleFillSymbol] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

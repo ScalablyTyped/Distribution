@@ -42,7 +42,8 @@ object EventId_ {
     __obj.asInstanceOf[EventId_]
   }
   
-  extension [Self <: EventId_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventId_] (val x: Self) extends AnyVal {
     
     inline def setActor(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['simple-user'] */ js.Any

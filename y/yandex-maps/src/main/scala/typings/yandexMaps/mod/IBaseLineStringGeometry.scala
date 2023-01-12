@@ -60,7 +60,8 @@ object IBaseLineStringGeometry {
     __obj.asInstanceOf[IBaseLineStringGeometry]
   }
   
-  extension [Self <: IBaseLineStringGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBaseLineStringGeometry] (val x: Self) extends AnyVal {
     
     inline def setFreeze(value: () => IFreezable): Self = StObject.set(x, "freeze", js.Any.fromFunction0(value))
     

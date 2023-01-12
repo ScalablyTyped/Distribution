@@ -22,7 +22,8 @@ object PartialITagInputState {
     __obj.asInstanceOf[PartialITagInputState]
   }
   
-  extension [Self <: PartialITagInputState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialITagInputState] (val x: Self) extends AnyVal {
     
     inline def setActiveIndex(value: Double): Self = StObject.set(x, "activeIndex", value.asInstanceOf[js.Any])
     

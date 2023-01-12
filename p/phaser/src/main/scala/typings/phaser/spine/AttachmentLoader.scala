@@ -32,7 +32,8 @@ object AttachmentLoader {
     __obj.asInstanceOf[AttachmentLoader]
   }
   
-  extension [Self <: AttachmentLoader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentLoader] (val x: Self) extends AnyVal {
     
     inline def setNewBoundingBoxAttachment(value: (Skin, String) => BoundingBoxAttachment): Self = StObject.set(x, "newBoundingBoxAttachment", js.Any.fromFunction2(value))
     

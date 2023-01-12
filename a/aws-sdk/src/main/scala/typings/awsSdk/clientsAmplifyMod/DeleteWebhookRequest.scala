@@ -18,7 +18,8 @@ object DeleteWebhookRequest {
     __obj.asInstanceOf[DeleteWebhookRequest]
   }
   
-  extension [Self <: DeleteWebhookRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteWebhookRequest] (val x: Self) extends AnyVal {
     
     inline def setWebhookId(value: WebhookId): Self = StObject.set(x, "webhookId", value.asInstanceOf[js.Any])
   }

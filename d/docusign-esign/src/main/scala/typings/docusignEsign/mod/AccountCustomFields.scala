@@ -31,7 +31,8 @@ object AccountCustomFields {
     __obj.asInstanceOf[AccountCustomFields]
   }
   
-  extension [Self <: AccountCustomFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountCustomFields] (val x: Self) extends AnyVal {
     
     inline def setListCustomFields(
       value: js.Array[

@@ -34,7 +34,8 @@ object declarationsKeywordsAbsolutePathMod {
       __obj.asInstanceOf[SchemaUtilErrorObject]
     }
     
-    extension [Self <: SchemaUtilErrorObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaUtilErrorObject] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ErrorObject[String, Record[String, Any], Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

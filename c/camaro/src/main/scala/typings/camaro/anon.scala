@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[IndentSize]
     }
     
-    extension [Self <: IndentSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentSize] (val x: Self) extends AnyVal {
       
       inline def setIndentSize(value: Double): Self = StObject.set(x, "indentSize", value.asInstanceOf[js.Any])
     }

@@ -31,7 +31,8 @@ object IActionEvent {
     __obj.asInstanceOf[IActionEvent]
   }
   
-  extension [Self <: IActionEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IActionEvent] (val x: Self) extends AnyVal {
     
     inline def setAdditionalData(value: Any): Self = StObject.set(x, "additionalData", value.asInstanceOf[js.Any])
     

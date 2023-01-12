@@ -33,7 +33,8 @@ object BuildBazelRemoteExecutionV2OutputFile {
     __obj.asInstanceOf[BuildBazelRemoteExecutionV2OutputFile]
   }
   
-  extension [Self <: BuildBazelRemoteExecutionV2OutputFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildBazelRemoteExecutionV2OutputFile] (val x: Self) extends AnyVal {
     
     inline def setContents(value: String): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

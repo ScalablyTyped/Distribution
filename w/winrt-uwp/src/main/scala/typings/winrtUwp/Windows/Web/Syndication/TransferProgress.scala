@@ -26,7 +26,8 @@ object TransferProgress {
     __obj.asInstanceOf[TransferProgress]
   }
   
-  extension [Self <: TransferProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferProgress] (val x: Self) extends AnyVal {
     
     inline def setBytesRetrieved(value: Double): Self = StObject.set(x, "bytesRetrieved", value.asInstanceOf[js.Any])
     

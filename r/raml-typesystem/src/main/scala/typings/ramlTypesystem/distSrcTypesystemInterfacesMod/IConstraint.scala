@@ -28,7 +28,8 @@ object IConstraint {
     __obj.asInstanceOf[IConstraint]
   }
   
-  extension [Self <: IConstraint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConstraint] (val x: Self) extends AnyVal {
     
     inline def setComposeWith(value: IConstraint => IConstraint): Self = StObject.set(x, "composeWith", js.Any.fromFunction1(value))
   }

@@ -15,7 +15,8 @@ object BindingExpression {
     __obj.asInstanceOf[BindingExpression]
   }
   
-  extension [Self <: BindingExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingExpression] (val x: Self) extends AnyVal {
     
     inline def setCreateBinding(value: Any => Binding): Self = StObject.set(x, "createBinding", js.Any.fromFunction1(value))
   }

@@ -18,7 +18,8 @@ object PageHeaderAction {
     __obj.asInstanceOf[PageHeaderAction]
   }
   
-  extension [Self <: PageHeaderAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageHeaderAction] (val x: Self) extends AnyVal {
     
     inline def setComponent(value: ReactElement): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

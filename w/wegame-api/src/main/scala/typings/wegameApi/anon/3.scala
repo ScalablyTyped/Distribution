@@ -19,7 +19,8 @@ object `3` {
     __obj.asInstanceOf[`3`]
   }
   
-  extension [Self <: `3`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `3`] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: typings.wegameApi.wegameApiInts.`0` | typings.wegameApi.wegameApiInts.`1`): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

@@ -150,7 +150,8 @@ object distSrcModulesUiDebugPanelDebugPanelMod {
       __obj.asInstanceOf[DebugPanel]
     }
     
-    extension [Self <: DebugPanel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugPanel] (val x: Self) extends AnyVal {
       
       inline def setClearUpdateInterval(value: () => Unit): Self = StObject.set(x, "clearUpdateInterval", js.Any.fromFunction0(value))
       

@@ -114,7 +114,8 @@ object checksuggestConfig {
     __obj.asInstanceOf[checksuggestConfig]
   }
   
-  extension [Self <: checksuggestConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: checksuggestConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

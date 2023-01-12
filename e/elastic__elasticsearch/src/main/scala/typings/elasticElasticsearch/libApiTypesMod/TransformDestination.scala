@@ -17,7 +17,8 @@ object TransformDestination {
     __obj.asInstanceOf[TransformDestination]
   }
   
-  extension [Self <: TransformDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformDestination] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: IndexName): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ArtifactFilter {
     __obj.asInstanceOf[ArtifactFilter]
   }
   
-  extension [Self <: ArtifactFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtifactFilter] (val x: Self) extends AnyVal {
     
     inline def setSourceBranch(value: String): Self = StObject.set(x, "sourceBranch", value.asInstanceOf[js.Any])
     

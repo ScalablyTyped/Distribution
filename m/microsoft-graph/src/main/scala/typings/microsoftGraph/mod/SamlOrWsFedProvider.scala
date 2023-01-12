@@ -39,7 +39,8 @@ object SamlOrWsFedProvider {
     __obj.asInstanceOf[SamlOrWsFedProvider]
   }
   
-  extension [Self <: SamlOrWsFedProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamlOrWsFedProvider] (val x: Self) extends AnyVal {
     
     inline def setIssuerUri(value: NullableOption[String]): Self = StObject.set(x, "issuerUri", value.asInstanceOf[js.Any])
     

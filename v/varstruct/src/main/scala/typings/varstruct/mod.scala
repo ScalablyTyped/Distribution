@@ -324,7 +324,8 @@ object mod {
       __obj.asInstanceOf[Codec[T]]
     }
     
-    extension [Self <: Codec[?], T](x: Self & Codec[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Codec[?], T] (val x: Self & Codec[T]) extends AnyVal {
       
       inline def setDecode(value: Bytes[T]): Self = StObject.set(x, "decode", value.asInstanceOf[js.Any])
       

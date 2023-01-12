@@ -18,7 +18,8 @@ object ChatStreamingConfiguration {
     __obj.asInstanceOf[ChatStreamingConfiguration]
   }
   
-  extension [Self <: ChatStreamingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatStreamingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setStreamingEndpointArn(value: ChatStreamingEndpointARN): Self = StObject.set(x, "StreamingEndpointArn", value.asInstanceOf[js.Any])
   }

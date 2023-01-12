@@ -36,7 +36,8 @@ object PieChartLegendItem {
     __obj.asInstanceOf[PieChartLegendItem]
   }
   
-  extension [Self <: PieChartLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PieChartLegendItem] (val x: Self) extends AnyVal {
     
     inline def setArgument(value: String | js.Date | Double): Self = StObject.set(x, "argument", value.asInstanceOf[js.Any])
     

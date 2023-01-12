@@ -29,7 +29,8 @@ object Geometry {
     __obj.asInstanceOf[Geometry[T]]
   }
   
-  extension [Self <: Geometry[?], T](x: Self & Geometry[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Geometry[?], T] (val x: Self & Geometry[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

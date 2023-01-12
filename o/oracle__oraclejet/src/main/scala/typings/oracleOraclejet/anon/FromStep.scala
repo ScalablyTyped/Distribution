@@ -20,7 +20,8 @@ object FromStep {
     __obj.asInstanceOf[FromStep]
   }
   
-  extension [Self <: FromStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromStep] (val x: Self) extends AnyVal {
     
     inline def setFromStep(value: String): Self = StObject.set(x, "fromStep", value.asInstanceOf[js.Any])
     

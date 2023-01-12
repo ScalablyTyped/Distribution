@@ -35,7 +35,8 @@ object Auth {
       __obj.asInstanceOf[API]
     }
     
-    extension [Self <: API](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: API] (val x: Self) extends AnyVal {
       
       inline def setGetLoginStatus(value: js.Function1[/* status */ LoginStatus, Unit] => Unit): Self = StObject.set(x, "getLoginStatus", js.Any.fromFunction1(value))
       
@@ -64,7 +65,8 @@ object Auth {
       __obj.asInstanceOf[EmptyLoginStatus]
     }
     
-    extension [Self <: EmptyLoginStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmptyLoginStatus] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Null): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
@@ -87,7 +89,8 @@ object Auth {
       __obj.asInstanceOf[LoginStatus]
     }
     
-    extension [Self <: LoginStatus](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoginStatus] (val x: Self) extends AnyVal {
       
       inline def setSession(value: Session): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object Auth {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setExpire(value: Double): Self = StObject.set(x, "expire", value.asInstanceOf[js.Any])
       

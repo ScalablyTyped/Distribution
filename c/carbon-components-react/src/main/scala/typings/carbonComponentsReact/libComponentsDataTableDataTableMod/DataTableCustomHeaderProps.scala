@@ -33,7 +33,8 @@ object DataTableCustomHeaderProps {
     __obj.asInstanceOf[DataTableCustomHeaderProps[H]]
   }
   
-  extension [Self <: DataTableCustomHeaderProps[?], H /* <: Key */](x: Self & DataTableCustomHeaderProps[H]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomHeaderProps[?], H /* <: Key */] (val x: Self & DataTableCustomHeaderProps[H]) extends AnyVal {
     
     inline def setIsSortHeader(value: Boolean): Self = StObject.set(x, "isSortHeader", value.asInstanceOf[js.Any])
     

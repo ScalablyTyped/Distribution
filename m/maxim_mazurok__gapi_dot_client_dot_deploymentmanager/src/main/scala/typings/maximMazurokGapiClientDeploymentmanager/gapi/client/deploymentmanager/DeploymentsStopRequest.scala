@@ -21,7 +21,8 @@ object DeploymentsStopRequest {
     __obj.asInstanceOf[DeploymentsStopRequest]
   }
   
-  extension [Self <: DeploymentsStopRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentsStopRequest] (val x: Self) extends AnyVal {
     
     inline def setFingerprint(value: String): Self = StObject.set(x, "fingerprint", value.asInstanceOf[js.Any])
     

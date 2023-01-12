@@ -28,7 +28,8 @@ object RowsRequestingEventUIParam {
     __obj.asInstanceOf[RowsRequestingEventUIParam]
   }
   
-  extension [Self <: RowsRequestingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowsRequestingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setChunkIndex(value: Double): Self = StObject.set(x, "chunkIndex", value.asInstanceOf[js.Any])
     

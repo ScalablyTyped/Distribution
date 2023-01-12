@@ -16,7 +16,8 @@ object IToastNotificationFactory {
     __obj.asInstanceOf[IToastNotificationFactory]
   }
   
-  extension [Self <: IToastNotificationFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToastNotificationFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateToastNotification(value: XmlDocument => ToastNotification): Self = StObject.set(x, "createToastNotification", js.Any.fromFunction1(value))
   }

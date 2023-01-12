@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[CandidateExts]
     }
     
-    extension [Self <: CandidateExts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CandidateExts] (val x: Self) extends AnyVal {
       
       inline def setCandidateExts(value: js.Array[String]): Self = StObject.set(x, "candidateExts", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Candidates[TCandidates]]
     }
     
-    extension [Self <: Candidates[?], TCandidates](x: Self & Candidates[TCandidates]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Candidates[?], TCandidates] (val x: Self & Candidates[TCandidates]) extends AnyVal {
       
       inline def setCandidates(value: TCandidates): Self = StObject.set(x, "candidates", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object anon {
       __obj.asInstanceOf[FilePath]
     }
     
-    extension [Self <: FilePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePath] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -110,7 +113,8 @@ object anon {
       __obj.asInstanceOf[FilePaths]
     }
     
-    extension [Self <: FilePaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePaths] (val x: Self) extends AnyVal {
       
       inline def setFilePaths(value: AssetFileResolution): Self = StObject.set(x, "filePaths", value.asInstanceOf[js.Any])
       
@@ -136,7 +140,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -160,7 +165,8 @@ object anon {
       __obj.asInstanceOf[Resolution[TResolution]]
     }
     
-    extension [Self <: Resolution[?], TResolution](x: Self & Resolution[TResolution]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolution[?], TResolution] (val x: Self & Resolution[TResolution]) extends AnyVal {
       
       inline def setResolution(value: TResolution): Self = StObject.set(x, "resolution", value.asInstanceOf[js.Any])
       
@@ -182,7 +188,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: empty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

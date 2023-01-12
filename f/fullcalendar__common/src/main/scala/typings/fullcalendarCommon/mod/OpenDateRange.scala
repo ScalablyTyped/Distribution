@@ -17,7 +17,8 @@ object OpenDateRange {
     __obj.asInstanceOf[OpenDateRange]
   }
   
-  extension [Self <: OpenDateRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenDateRange] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

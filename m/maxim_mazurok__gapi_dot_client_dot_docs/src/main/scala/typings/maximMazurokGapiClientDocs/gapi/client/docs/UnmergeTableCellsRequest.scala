@@ -20,7 +20,8 @@ object UnmergeTableCellsRequest {
     __obj.asInstanceOf[UnmergeTableCellsRequest]
   }
   
-  extension [Self <: UnmergeTableCellsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnmergeTableCellsRequest] (val x: Self) extends AnyVal {
     
     inline def setTableRange(value: TableRange): Self = StObject.set(x, "tableRange", value.asInstanceOf[js.Any])
     

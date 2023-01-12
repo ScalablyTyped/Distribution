@@ -33,7 +33,8 @@ object distUiComponentsJobCardJobCardMod {
       __obj.asInstanceOf[JobCardProps]
     }
     
-    extension [Self <: JobCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobCardProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: PromoteJob): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

@@ -153,7 +153,8 @@ object DBInstanceAutomatedBackup {
     __obj.asInstanceOf[DBInstanceAutomatedBackup]
   }
   
-  extension [Self <: DBInstanceAutomatedBackup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBInstanceAutomatedBackup] (val x: Self) extends AnyVal {
     
     inline def setAllocatedStorage(value: Integer): Self = StObject.set(x, "AllocatedStorage", value.asInstanceOf[js.Any])
     

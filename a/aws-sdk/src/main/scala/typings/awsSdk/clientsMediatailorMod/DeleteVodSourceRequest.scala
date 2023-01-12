@@ -23,7 +23,8 @@ object DeleteVodSourceRequest {
     __obj.asInstanceOf[DeleteVodSourceRequest]
   }
   
-  extension [Self <: DeleteVodSourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVodSourceRequest] (val x: Self) extends AnyVal {
     
     inline def setSourceLocationName(value: _String): Self = StObject.set(x, "SourceLocationName", value.asInstanceOf[js.Any])
     

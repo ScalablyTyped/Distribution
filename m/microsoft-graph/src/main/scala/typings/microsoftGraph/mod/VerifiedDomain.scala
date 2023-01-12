@@ -28,7 +28,8 @@ object VerifiedDomain {
     __obj.asInstanceOf[VerifiedDomain]
   }
   
-  extension [Self <: VerifiedDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifiedDomain] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: NullableOption[String]): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

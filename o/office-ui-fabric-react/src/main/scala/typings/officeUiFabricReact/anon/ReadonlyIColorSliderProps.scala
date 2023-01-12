@@ -63,7 +63,8 @@ object ReadonlyIColorSliderProps {
     __obj.asInstanceOf[ReadonlyIColorSliderProps]
   }
   
-  extension [Self <: ReadonlyIColorSliderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIColorSliderProps] (val x: Self) extends AnyVal {
     
     inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     

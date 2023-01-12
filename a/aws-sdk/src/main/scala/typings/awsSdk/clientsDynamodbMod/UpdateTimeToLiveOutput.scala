@@ -18,7 +18,8 @@ object UpdateTimeToLiveOutput {
     __obj.asInstanceOf[UpdateTimeToLiveOutput]
   }
   
-  extension [Self <: UpdateTimeToLiveOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTimeToLiveOutput] (val x: Self) extends AnyVal {
     
     inline def setTimeToLiveSpecification(value: TimeToLiveSpecification): Self = StObject.set(x, "TimeToLiveSpecification", value.asInstanceOf[js.Any])
     

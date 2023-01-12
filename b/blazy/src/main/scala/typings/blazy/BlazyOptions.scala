@@ -41,7 +41,8 @@ object BlazyOptions {
     __obj.asInstanceOf[BlazyOptions]
   }
   
-  extension [Self <: BlazyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlazyOptions] (val x: Self) extends AnyVal {
     
     inline def setBreakpoints(value: js.Array[Breakpoint]): Self = StObject.set(x, "breakpoints", value.asInstanceOf[js.Any])
     

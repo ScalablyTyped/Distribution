@@ -23,7 +23,8 @@ object ListRouteCalculatorsResponse {
     __obj.asInstanceOf[ListRouteCalculatorsResponse]
   }
   
-  extension [Self <: ListRouteCalculatorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRouteCalculatorsResponse] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: ListRouteCalculatorsResponseEntryList): Self = StObject.set(x, "Entries", value.asInstanceOf[js.Any])
     

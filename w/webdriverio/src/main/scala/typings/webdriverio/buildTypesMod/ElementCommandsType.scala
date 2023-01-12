@@ -302,7 +302,8 @@ object ElementCommandsType {
     __obj.asInstanceOf[ElementCommandsType]
   }
   
-  extension [Self <: ElementCommandsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementCommandsType] (val x: Self) extends AnyVal {
     
     inline def set$(
       value: /* args */ Parameters[

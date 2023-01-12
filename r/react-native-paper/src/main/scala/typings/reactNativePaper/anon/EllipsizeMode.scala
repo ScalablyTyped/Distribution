@@ -22,7 +22,8 @@ object EllipsizeMode {
     __obj.asInstanceOf[EllipsizeMode]
   }
   
-  extension [Self <: EllipsizeMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EllipsizeMode] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

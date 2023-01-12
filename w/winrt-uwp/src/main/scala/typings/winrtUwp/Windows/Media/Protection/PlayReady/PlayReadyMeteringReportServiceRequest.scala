@@ -72,7 +72,8 @@ object PlayReadyMeteringReportServiceRequest {
     __obj.asInstanceOf[PlayReadyMeteringReportServiceRequest]
   }
   
-  extension [Self <: PlayReadyMeteringReportServiceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayReadyMeteringReportServiceRequest] (val x: Self) extends AnyVal {
     
     inline def setBeginServiceRequest(value: () => IAsyncAction): Self = StObject.set(x, "beginServiceRequest", js.Any.fromFunction0(value))
     

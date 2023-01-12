@@ -19,7 +19,8 @@ object RangePips {
     __obj.asInstanceOf[RangePips]
   }
   
-  extension [Self <: RangePips](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangePips] (val x: Self) extends AnyVal {
     
     inline def setMode(value: typings.nouislider.mod.PipsMode.Range): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object CancelSpotInstanceRequestsResult {
     __obj.asInstanceOf[CancelSpotInstanceRequestsResult]
   }
   
-  extension [Self <: CancelSpotInstanceRequestsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSpotInstanceRequestsResult] (val x: Self) extends AnyVal {
     
     inline def setCancelledSpotInstanceRequests(value: CancelledSpotInstanceRequestList): Self = StObject.set(x, "CancelledSpotInstanceRequests", value.asInstanceOf[js.Any])
     

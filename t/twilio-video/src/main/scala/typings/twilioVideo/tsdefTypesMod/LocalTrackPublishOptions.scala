@@ -16,7 +16,8 @@ object LocalTrackPublishOptions {
     __obj.asInstanceOf[LocalTrackPublishOptions]
   }
   
-  extension [Self <: LocalTrackPublishOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalTrackPublishOptions] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: Priority): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
     

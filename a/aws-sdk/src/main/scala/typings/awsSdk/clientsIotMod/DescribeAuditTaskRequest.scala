@@ -18,7 +18,8 @@ object DescribeAuditTaskRequest {
     __obj.asInstanceOf[DescribeAuditTaskRequest]
   }
   
-  extension [Self <: DescribeAuditTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAuditTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: AuditTaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }

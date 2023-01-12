@@ -17,7 +17,8 @@ object Textures {
     __obj.asInstanceOf[Textures]
   }
   
-  extension [Self <: Textures](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Textures] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: Double): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

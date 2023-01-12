@@ -33,7 +33,8 @@ object ImgixProviderProps {
     __obj.asInstanceOf[ImgixProviderProps]
   }
   
-  extension [Self <: ImgixProviderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImgixProviderProps] (val x: Self) extends AnyVal {
     
     inline def setAttributeConfig(value: AttributeConfig): Self = StObject.set(x, "attributeConfig", value.asInstanceOf[js.Any])
     

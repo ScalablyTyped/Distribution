@@ -29,7 +29,8 @@ object BaseLegendItem {
     __obj.asInstanceOf[BaseLegendItem]
   }
   
-  extension [Self <: BaseLegendItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseLegendItem] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: Fill): Self = StObject.set(x, "marker", value.asInstanceOf[js.Any])
     

@@ -76,7 +76,8 @@ object namespacesThemeMod {
         __obj.asInstanceOf[ThemeUpdateInfo]
       }
       
-      extension [Self <: ThemeUpdateInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ThemeUpdateInfo] (val x: Self) extends AnyVal {
         
         inline def setTheme(value: ThemeUpdateInfoThemeType): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
         

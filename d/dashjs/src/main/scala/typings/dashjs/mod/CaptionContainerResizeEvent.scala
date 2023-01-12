@@ -20,7 +20,8 @@ object CaptionContainerResizeEvent {
     __obj.asInstanceOf[CaptionContainerResizeEvent]
   }
   
-  extension [Self <: CaptionContainerResizeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionContainerResizeEvent] (val x: Self) extends AnyVal {
     
     inline def setType(value: captionContainerResize): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

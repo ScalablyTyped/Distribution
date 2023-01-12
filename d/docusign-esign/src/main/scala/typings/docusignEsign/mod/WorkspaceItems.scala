@@ -142,7 +142,8 @@ object WorkspaceItems {
     __obj.asInstanceOf[WorkspaceItems]
   }
   
-  extension [Self <: WorkspaceItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceItems] (val x: Self) extends AnyVal {
     
     inline def setCallerAuthorization(
       value: /* Provides properties that describe user authorization to a workspace. */ WorkspaceUserAuthorization

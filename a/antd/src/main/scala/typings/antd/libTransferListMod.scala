@@ -55,7 +55,8 @@ object libTransferListMod {
       __obj.asInstanceOf[RenderedItem[RecordType]]
     }
     
-    extension [Self <: RenderedItem[?], RecordType](x: Self & RenderedItem[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderedItem[?], RecordType] (val x: Self & RenderedItem[RecordType]) extends AnyVal {
       
       inline def setItem(value: RecordType): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -264,7 +265,8 @@ object libTransferListMod {
       __obj.asInstanceOf[TransferListProps[RecordType]]
     }
     
-    extension [Self <: TransferListProps[?], RecordType](x: Self & TransferListProps[RecordType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferListProps[?], RecordType] (val x: Self & TransferListProps[RecordType]) extends AnyVal {
       
       inline def setCheckedKeys(value: js.Array[String]): Self = StObject.set(x, "checkedKeys", value.asInstanceOf[js.Any])
       
@@ -356,7 +358,8 @@ object libTransferListMod {
       __obj.asInstanceOf[TransferListState]
     }
     
-    extension [Self <: TransferListState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransferListState] (val x: Self) extends AnyVal {
       
       inline def setFilterValue(value: String): Self = StObject.set(x, "filterValue", value.asInstanceOf[js.Any])
     }

@@ -37,7 +37,8 @@ object IngestKeyValueProcessor {
     __obj.asInstanceOf[IngestKeyValueProcessor]
   }
   
-  extension [Self <: IngestKeyValueProcessor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestKeyValueProcessor] (val x: Self) extends AnyVal {
     
     inline def setExclude_keys(value: js.Array[String]): Self = StObject.set(x, "exclude_keys", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IUpdateDisplayDataMsg {
     __obj.asInstanceOf[IUpdateDisplayDataMsg]
   }
   
-  extension [Self <: IUpdateDisplayDataMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUpdateDisplayDataMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Metadata & TransientDisplayidString): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object RegularExpressionsClientCapabilities {
     __obj.asInstanceOf[RegularExpressionsClientCapabilities]
   }
   
-  extension [Self <: RegularExpressionsClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegularExpressionsClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setEngine(value: String): Self = StObject.set(x, "engine", value.asInstanceOf[js.Any])
     

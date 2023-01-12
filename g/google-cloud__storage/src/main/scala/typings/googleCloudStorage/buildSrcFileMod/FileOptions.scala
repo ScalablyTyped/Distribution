@@ -29,7 +29,8 @@ object FileOptions {
     __obj.asInstanceOf[FileOptions]
   }
   
-  extension [Self <: FileOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileOptions] (val x: Self) extends AnyVal {
     
     inline def setCrc32cGenerator(value: () => CRC32CValidator): Self = StObject.set(x, "crc32cGenerator", js.Any.fromFunction0(value))
     

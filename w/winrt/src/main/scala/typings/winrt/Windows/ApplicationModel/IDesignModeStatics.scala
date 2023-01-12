@@ -15,7 +15,8 @@ object IDesignModeStatics {
     __obj.asInstanceOf[IDesignModeStatics]
   }
   
-  extension [Self <: IDesignModeStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDesignModeStatics] (val x: Self) extends AnyVal {
     
     inline def setDesignModeEnabled(value: Boolean): Self = StObject.set(x, "designModeEnabled", value.asInstanceOf[js.Any])
   }

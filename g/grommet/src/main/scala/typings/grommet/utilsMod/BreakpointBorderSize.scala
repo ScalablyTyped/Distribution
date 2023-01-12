@@ -23,7 +23,8 @@ object BreakpointBorderSize {
     __obj.asInstanceOf[BreakpointBorderSize]
   }
   
-  extension [Self <: BreakpointBorderSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BreakpointBorderSize] (val x: Self) extends AnyVal {
     
     inline def setLarge(value: String): Self = StObject.set(x, "large", value.asInstanceOf[js.Any])
     

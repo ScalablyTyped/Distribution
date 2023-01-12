@@ -21,7 +21,8 @@ object DataCollector {
     __obj.asInstanceOf[DataCollector]
   }
   
-  extension [Self <: DataCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCollector] (val x: Self) extends AnyVal {
     
     inline def setDataCollector(value: Boolean): Self = StObject.set(x, "dataCollector", value.asInstanceOf[js.Any])
     

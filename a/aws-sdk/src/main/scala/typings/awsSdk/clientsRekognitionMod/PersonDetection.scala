@@ -23,7 +23,8 @@ object PersonDetection {
     __obj.asInstanceOf[PersonDetection]
   }
   
-  extension [Self <: PersonDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonDetection] (val x: Self) extends AnyVal {
     
     inline def setPerson(value: PersonDetail): Self = StObject.set(x, "Person", value.asInstanceOf[js.Any])
     

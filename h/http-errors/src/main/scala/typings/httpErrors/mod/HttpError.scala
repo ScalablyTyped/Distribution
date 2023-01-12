@@ -28,7 +28,8 @@ object HttpError {
   @js.native
   def apply(msg: String): HttpError[Double] = js.native
   
-  extension [Self <: HttpError[?], N /* <: Double */](x: Self & HttpError[N]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpError[?], N /* <: Double */] (val x: Self & HttpError[N]) extends AnyVal {
     
     inline def setExpose(value: Boolean): Self = StObject.set(x, "expose", value.asInstanceOf[js.Any])
     

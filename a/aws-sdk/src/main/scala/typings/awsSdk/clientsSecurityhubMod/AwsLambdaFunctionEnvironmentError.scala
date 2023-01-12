@@ -23,7 +23,8 @@ object AwsLambdaFunctionEnvironmentError {
     __obj.asInstanceOf[AwsLambdaFunctionEnvironmentError]
   }
   
-  extension [Self <: AwsLambdaFunctionEnvironmentError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsLambdaFunctionEnvironmentError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: NonEmptyString): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ThirdPartyUrl {
     __obj.asInstanceOf[ThirdPartyUrl]
   }
   
-  extension [Self <: ThirdPartyUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThirdPartyUrl] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

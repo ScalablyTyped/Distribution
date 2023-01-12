@@ -18,7 +18,8 @@ object OmaSettingFloatingPoint {
     __obj.asInstanceOf[OmaSettingFloatingPoint]
   }
   
-  extension [Self <: OmaSettingFloatingPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmaSettingFloatingPoint] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Double): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object BaseWindow {
     __obj.asInstanceOf[BaseWindow]
   }
   
-  extension [Self <: BaseWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseWindow] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: () => Unit): Self = StObject.set(x, "center", js.Any.fromFunction0(value))
     

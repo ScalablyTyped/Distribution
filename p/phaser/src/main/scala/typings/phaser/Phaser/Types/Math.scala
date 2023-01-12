@@ -30,7 +30,8 @@ object Math {
       __obj.asInstanceOf[SinCosTable]
     }
     
-    extension [Self <: SinCosTable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SinCosTable] (val x: Self) extends AnyVal {
       
       inline def setCos(value: Double): Self = StObject.set(x, "cos", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object Math {
       __obj.asInstanceOf[Vector2Like]
     }
     
-    extension [Self <: Vector2Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector2Like] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object Math {
       __obj.asInstanceOf[Vector3Like]
     }
     
-    extension [Self <: Vector3Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector3Like] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object Math {
       __obj.asInstanceOf[Vector4Like]
     }
     
-    extension [Self <: Vector4Like](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector4Like] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       

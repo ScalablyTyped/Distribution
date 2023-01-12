@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       
@@ -115,7 +117,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptions]
     }
     
-    extension [Self <: StrategyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptions] (val x: Self) extends AnyVal {
       
       inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
       

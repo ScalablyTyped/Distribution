@@ -28,7 +28,8 @@ object ImportModuleOptions {
     __obj.asInstanceOf[ImportModuleOptions]
   }
   
-  extension [Self <: ImportModuleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportModuleOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseUri(value: String): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
     

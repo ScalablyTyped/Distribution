@@ -16,7 +16,8 @@ object ReplaceAllShapesWithImageResponse {
     __obj.asInstanceOf[ReplaceAllShapesWithImageResponse]
   }
   
-  extension [Self <: ReplaceAllShapesWithImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceAllShapesWithImageResponse] (val x: Self) extends AnyVal {
     
     inline def setOccurrencesChanged(value: Double): Self = StObject.set(x, "occurrencesChanged", value.asInstanceOf[js.Any])
     

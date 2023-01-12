@@ -44,7 +44,8 @@ object AngularGuardOptionsSchema {
     __obj.asInstanceOf[AngularGuardOptionsSchema]
   }
   
-  extension [Self <: AngularGuardOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularGuardOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

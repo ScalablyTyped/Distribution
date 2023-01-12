@@ -16,7 +16,8 @@ object GetInitialState {
     __obj.asInstanceOf[GetInitialState]
   }
   
-  extension [Self <: GetInitialState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInitialState] (val x: Self) extends AnyVal {
     
     inline def setGetInitialState(value: () => PromiseLike[js.UndefOr[PartialOmitReadonlykeystrHistory]]): Self = StObject.set(x, "getInitialState", js.Any.fromFunction0(value))
   }

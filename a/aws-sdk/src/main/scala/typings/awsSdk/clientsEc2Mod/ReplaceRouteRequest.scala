@@ -98,7 +98,8 @@ object ReplaceRouteRequest {
     __obj.asInstanceOf[ReplaceRouteRequest]
   }
   
-  extension [Self <: ReplaceRouteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplaceRouteRequest] (val x: Self) extends AnyVal {
     
     inline def setCarrierGatewayId(value: CarrierGatewayId): Self = StObject.set(x, "CarrierGatewayId", value.asInstanceOf[js.Any])
     

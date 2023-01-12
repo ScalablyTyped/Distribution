@@ -26,7 +26,8 @@ object AccountContainer {
     __obj.asInstanceOf[AccountContainer]
   }
   
-  extension [Self <: AccountContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountContainer] (val x: Self) extends AnyVal {
     
     inline def setAccountContainer(value: ViewStyle): Self = StObject.set(x, "accountContainer", value.asInstanceOf[js.Any])
     

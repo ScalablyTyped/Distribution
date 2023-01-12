@@ -16,7 +16,8 @@ object `9` {
     __obj.asInstanceOf[`9`[K2, D2]]
   }
   
-  extension [Self <: `9`[?, ?], K2, D2](x: Self & (`9`[K2, D2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `9`[?, ?], K2, D2] (val x: Self & (`9`[K2, D2])) extends AnyVal {
     
     inline def setRenderer(value: TooltipContext[K2, D2] => Insert | PreventDefault): Self = StObject.set(x, "renderer", js.Any.fromFunction1(value))
   }

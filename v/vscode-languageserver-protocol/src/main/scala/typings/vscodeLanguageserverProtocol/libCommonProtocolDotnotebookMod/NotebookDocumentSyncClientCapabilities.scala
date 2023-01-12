@@ -26,7 +26,8 @@ object NotebookDocumentSyncClientCapabilities {
     __obj.asInstanceOf[NotebookDocumentSyncClientCapabilities]
   }
   
-  extension [Self <: NotebookDocumentSyncClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookDocumentSyncClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

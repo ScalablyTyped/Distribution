@@ -17,7 +17,8 @@ object EnergySpent {
     __obj.asInstanceOf[EnergySpent]
   }
   
-  extension [Self <: EnergySpent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnergySpent] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

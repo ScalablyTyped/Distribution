@@ -23,7 +23,8 @@ object ISignatureDef {
     __obj.asInstanceOf[ISignatureDef]
   }
   
-  extension [Self <: ISignatureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISignatureDef] (val x: Self) extends AnyVal {
     
     inline def setInputs(value: StringDictionary[ITensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
     

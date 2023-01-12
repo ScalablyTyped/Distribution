@@ -33,7 +33,8 @@ object alarms {
       __obj.asInstanceOf[Alarm]
     }
     
-    extension [Self <: Alarm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alarm] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object alarms {
       __obj.asInstanceOf[AlarmCreateInfo]
     }
     
-    extension [Self <: AlarmCreateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlarmCreateInfo] (val x: Self) extends AnyVal {
       
       inline def setDelayInMinutes(value: Double): Self = StObject.set(x, "delayInMinutes", value.asInstanceOf[js.Any])
       

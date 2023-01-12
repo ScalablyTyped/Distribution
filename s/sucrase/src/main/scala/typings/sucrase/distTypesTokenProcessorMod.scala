@@ -368,7 +368,8 @@ object distTypesTokenProcessorMod {
       __obj.asInstanceOf[TokenProcessor]
     }
     
-    extension [Self <: TokenProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenProcessor] (val x: Self) extends AnyVal {
       
       inline def setAppendCode(value: String => Unit): Self = StObject.set(x, "appendCode", js.Any.fromFunction1(value))
       
@@ -487,7 +488,8 @@ object distTypesTokenProcessorMod {
       __obj.asInstanceOf[TokenProcessorSnapshot]
     }
     
-    extension [Self <: TokenProcessorSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenProcessorSnapshot] (val x: Self) extends AnyVal {
       
       inline def setResultCode(value: String): Self = StObject.set(x, "resultCode", value.asInstanceOf[js.Any])
       

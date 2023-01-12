@@ -17,7 +17,8 @@ object EURI {
     __obj.asInstanceOf[EURI[F, E]]
   }
   
-  extension [Self <: EURI[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (EURI[F, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EURI[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (EURI[F, E])) extends AnyVal {
     
     inline def setURI(value: F): Self = StObject.set(x, "URI", value.asInstanceOf[js.Any])
     

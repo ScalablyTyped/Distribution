@@ -24,7 +24,8 @@ object GridNodeHighlightConfig {
     __obj.asInstanceOf[GridNodeHighlightConfig]
   }
   
-  extension [Self <: GridNodeHighlightConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridNodeHighlightConfig] (val x: Self) extends AnyVal {
     
     inline def setGridHighlightConfig(value: GridHighlightConfig): Self = StObject.set(x, "gridHighlightConfig", value.asInstanceOf[js.Any])
     

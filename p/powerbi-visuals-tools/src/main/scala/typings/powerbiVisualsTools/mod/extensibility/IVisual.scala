@@ -18,7 +18,8 @@ object IVisual {
     __obj.asInstanceOf[IVisual]
   }
   
-  extension [Self <: IVisual](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVisual] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

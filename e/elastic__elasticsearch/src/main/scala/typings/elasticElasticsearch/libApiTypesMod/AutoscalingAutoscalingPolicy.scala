@@ -18,7 +18,8 @@ object AutoscalingAutoscalingPolicy {
     __obj.asInstanceOf[AutoscalingAutoscalingPolicy]
   }
   
-  extension [Self <: AutoscalingAutoscalingPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoscalingAutoscalingPolicy] (val x: Self) extends AnyVal {
     
     inline def setDeciders(value: Record[String, Any]): Self = StObject.set(x, "deciders", value.asInstanceOf[js.Any])
     

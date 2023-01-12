@@ -62,7 +62,8 @@ object VisionPrescription {
     __obj.asInstanceOf[VisionPrescription]
   }
   
-  extension [Self <: VisionPrescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisionPrescription] (val x: Self) extends AnyVal {
     
     inline def setDateWritten(value: String): Self = StObject.set(x, "dateWritten", value.asInstanceOf[js.Any])
     

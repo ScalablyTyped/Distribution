@@ -29,7 +29,8 @@ object CustomGallery {
     __obj.asInstanceOf[CustomGallery]
   }
   
-  extension [Self <: CustomGallery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomGallery] (val x: Self) extends AnyVal {
     
     inline def setAccount_url(value: String): Self = StObject.set(x, "account_url", value.asInstanceOf[js.Any])
     

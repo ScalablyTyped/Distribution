@@ -24,7 +24,8 @@ object ECPublicKeyParameters {
     __obj.asInstanceOf[ECPublicKeyParameters]
   }
   
-  extension [Self <: ECPublicKeyParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECPublicKeyParameters] (val x: Self) extends AnyVal {
     
     inline def setJson(value: ECPublicKeyJson): Self = StObject.set(x, "json", value.asInstanceOf[js.Any])
     

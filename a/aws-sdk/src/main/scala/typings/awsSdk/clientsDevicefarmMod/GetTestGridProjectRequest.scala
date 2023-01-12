@@ -18,7 +18,8 @@ object GetTestGridProjectRequest {
     __obj.asInstanceOf[GetTestGridProjectRequest]
   }
   
-  extension [Self <: GetTestGridProjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTestGridProjectRequest] (val x: Self) extends AnyVal {
     
     inline def setProjectArn(value: DeviceFarmArn): Self = StObject.set(x, "projectArn", value.asInstanceOf[js.Any])
   }

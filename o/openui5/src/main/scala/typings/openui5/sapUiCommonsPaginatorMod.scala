@@ -299,7 +299,8 @@ object sapUiCommonsPaginatorMod {
       __obj.asInstanceOf[PaginatorSettings]
     }
     
-    extension [Self <: PaginatorSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginatorSettings] (val x: Self) extends AnyVal {
       
       inline def setCurrentPage(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "currentPage", value.asInstanceOf[js.Any])
       

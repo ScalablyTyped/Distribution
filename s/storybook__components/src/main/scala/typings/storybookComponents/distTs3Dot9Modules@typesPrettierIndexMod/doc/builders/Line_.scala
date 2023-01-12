@@ -24,7 +24,8 @@ object Line_ {
     __obj.asInstanceOf[Line_]
   }
   
-  extension [Self <: Line_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Line_] (val x: Self) extends AnyVal {
     
     inline def setHard(value: Boolean): Self = StObject.set(x, "hard", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object TypeofFlatColorPicker {
     __obj.asInstanceOf[TypeofFlatColorPicker]
   }
   
-  extension [Self <: TypeofFlatColorPicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFlatColorPicker] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => FlatColorPicker): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

@@ -60,7 +60,8 @@ object HapticFeedback {
     __obj.asInstanceOf[HapticFeedback]
   }
   
-  extension [Self <: HapticFeedback](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HapticFeedback] (val x: Self) extends AnyVal {
     
     inline def setImpactOccurred(value: light | medium | heavy | rigid | soft => js.Function0[Unit]): Self = StObject.set(x, "impactOccurred", js.Any.fromFunction1(value))
     

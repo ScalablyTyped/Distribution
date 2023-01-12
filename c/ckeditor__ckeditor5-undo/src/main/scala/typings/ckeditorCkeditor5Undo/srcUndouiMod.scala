@@ -42,7 +42,8 @@ object srcUndouiMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setUndoUI(value: UndoUI): Self = StObject.set(x, "UndoUI", value.asInstanceOf[js.Any])
       }

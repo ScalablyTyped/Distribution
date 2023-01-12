@@ -40,7 +40,8 @@ object triggerAmplifyResolverMod {
       __obj.asInstanceOf[AmplifyGraphQlResolverEvent[TArguments, TSource]]
     }
     
-    extension [Self <: AmplifyGraphQlResolverEvent[?, ?], TArguments, TSource](x: Self & (AmplifyGraphQlResolverEvent[TArguments, TSource])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmplifyGraphQlResolverEvent[?, ?], TArguments, TSource] (val x: Self & (AmplifyGraphQlResolverEvent[TArguments, TSource])) extends AnyVal {
       
       inline def setArguments(value: TArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
       

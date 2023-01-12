@@ -39,7 +39,8 @@ object srcAnalyticsApiMod {
       __obj.asInstanceOf[CustomDimensionsAndMetricsOptions]
     }
     
-    extension [Self <: CustomDimensionsAndMetricsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomDimensionsAndMetricsOptions] (val x: Self) extends AnyVal {
       
       inline def setDimensions(value: js.Array[Boolean | Double | String]): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object srcAnalyticsApiMod {
       __obj.asInstanceOf[EventOptions]
     }
     
-    extension [Self <: EventOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       
@@ -97,7 +99,8 @@ object srcAnalyticsApiMod {
       __obj.asInstanceOf[PageviewOptions]
     }
     
-    extension [Self <: PageviewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageviewOptions] (val x: Self) extends AnyVal {
       
       inline def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object srcAnalyticsApiMod {
       __obj.asInstanceOf[ScreenviewOptions]
     }
     
-    extension [Self <: ScreenviewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenviewOptions] (val x: Self) extends AnyVal {
       
       inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object srcAnalyticsApiMod {
       __obj.asInstanceOf[TimingOptions]
     }
     
-    extension [Self <: TimingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingOptions] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object distResolversResolverMod {
       __obj.asInstanceOf[Resolver]
     }
     
-    extension [Self <: Resolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Resolver] (val x: Self) extends AnyVal {
       
       inline def setBinding(value: typings.forgeDi.distFrameworkBindingMod.default): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
       

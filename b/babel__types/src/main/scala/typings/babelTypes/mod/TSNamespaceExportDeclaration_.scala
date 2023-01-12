@@ -25,7 +25,8 @@ object TSNamespaceExportDeclaration_ {
     __obj.asInstanceOf[TSNamespaceExportDeclaration_]
   }
   
-  extension [Self <: TSNamespaceExportDeclaration_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSNamespaceExportDeclaration_] (val x: Self) extends AnyVal {
     
     inline def setId(value: Identifier_): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

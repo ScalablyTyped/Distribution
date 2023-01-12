@@ -50,7 +50,8 @@ object XIdlMember {
     __obj.asInstanceOf[XIdlMember]
   }
   
-  extension [Self <: XIdlMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdlMember] (val x: Self) extends AnyVal {
     
     inline def setDeclaringClass(value: XIdlClass[Any]): Self = StObject.set(x, "DeclaringClass", value.asInstanceOf[js.Any])
     

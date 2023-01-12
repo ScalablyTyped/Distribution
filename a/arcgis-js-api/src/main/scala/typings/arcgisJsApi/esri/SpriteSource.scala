@@ -77,7 +77,8 @@ object SpriteSource {
     __obj.asInstanceOf[SpriteSource]
   }
   
-  extension [Self <: SpriteSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpriteSource] (val x: Self) extends AnyVal {
     
     inline def setBaseUrl(value: String): Self = StObject.set(x, "baseUrl", value.asInstanceOf[js.Any])
     

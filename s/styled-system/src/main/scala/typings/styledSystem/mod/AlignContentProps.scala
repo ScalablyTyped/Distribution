@@ -22,7 +22,8 @@ object AlignContentProps {
     __obj.asInstanceOf[AlignContentProps[ThemeType]]
   }
   
-  extension [Self <: AlignContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignContentProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignContentProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & AlignContentProps[ThemeType]) extends AnyVal {
     
     inline def setAlignContent(value: ResponsiveValue[AlignContent, ThemeType]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object GoogleAnalyticsAdminV1alphaAudienceFilterClause {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaAudienceFilterClause]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaAudienceFilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaAudienceFilterClause] (val x: Self) extends AnyVal {
     
     inline def setClauseType(value: String): Self = StObject.set(x, "clauseType", value.asInstanceOf[js.Any])
     

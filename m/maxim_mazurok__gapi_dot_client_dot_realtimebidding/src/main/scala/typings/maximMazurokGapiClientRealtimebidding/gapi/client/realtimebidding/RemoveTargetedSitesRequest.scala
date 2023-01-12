@@ -16,7 +16,8 @@ object RemoveTargetedSitesRequest {
     __obj.asInstanceOf[RemoveTargetedSitesRequest]
   }
   
-  extension [Self <: RemoveTargetedSitesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveTargetedSitesRequest] (val x: Self) extends AnyVal {
     
     inline def setSites(value: js.Array[String]): Self = StObject.set(x, "sites", value.asInstanceOf[js.Any])
     

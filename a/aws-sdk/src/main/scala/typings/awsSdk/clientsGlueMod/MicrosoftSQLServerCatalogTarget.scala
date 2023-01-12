@@ -38,7 +38,8 @@ object MicrosoftSQLServerCatalogTarget {
     __obj.asInstanceOf[MicrosoftSQLServerCatalogTarget]
   }
   
-  extension [Self <: MicrosoftSQLServerCatalogTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MicrosoftSQLServerCatalogTarget] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: EnclosedInStringProperty): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

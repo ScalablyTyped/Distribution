@@ -17,7 +17,8 @@ object DataDOM {
     __obj.asInstanceOf[DataDOM]
   }
   
-  extension [Self <: DataDOM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataDOM] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotDataDOM_typekey(value: DataDOM): Self = StObject.set(x, "InfoPath.DataDOM_typekey", value.asInstanceOf[js.Any])
   }

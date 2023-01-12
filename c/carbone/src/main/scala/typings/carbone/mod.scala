@@ -54,7 +54,8 @@ object mod {
       __obj.asInstanceOf[ConversionFormat]
     }
     
-    extension [Self <: ConversionFormat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConversionFormat] (val x: Self) extends AnyVal {
       
       inline def setDesc(value: String): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object mod {
       __obj.asInstanceOf[FormatterContext]
     }
     
-    extension [Self <: FormatterContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterContext] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: Rates): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: Double): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       
@@ -251,7 +254,8 @@ object mod {
       __obj.asInstanceOf[RenderOptions]
     }
     
-    extension [Self <: RenderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
       
       inline def setComplement(value: js.Object): Self = StObject.set(x, "complement", value.asInstanceOf[js.Any])
       
@@ -320,7 +324,8 @@ object mod {
       __obj.asInstanceOf[RenderXMLOptions]
     }
     
-    extension [Self <: RenderXMLOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderXMLOptions] (val x: Self) extends AnyVal {
       
       inline def setComplement(value: js.Object): Self = StObject.set(x, "complement", value.asInstanceOf[js.Any])
       
@@ -371,7 +376,8 @@ object mod {
       __obj.asInstanceOf[Variable]
     }
     
-    extension [Self <: Variable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Variable] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -38,7 +38,8 @@ object GetMobileDeviceAccessEffectRequest {
     __obj.asInstanceOf[GetMobileDeviceAccessEffectRequest]
   }
   
-  extension [Self <: GetMobileDeviceAccessEffectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMobileDeviceAccessEffectRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceModel(value: DeviceModel): Self = StObject.set(x, "DeviceModel", value.asInstanceOf[js.Any])
     

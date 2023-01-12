@@ -198,7 +198,8 @@ object distLibPriorityQueueMod {
       __obj.asInstanceOf[PriorityQueue[T]]
     }
     
-    extension [Self <: PriorityQueue[?], T](x: Self & PriorityQueue[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriorityQueue[?], T] (val x: Self & PriorityQueue[T]) extends AnyVal {
       
       inline def setAdd(value: T => Boolean): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

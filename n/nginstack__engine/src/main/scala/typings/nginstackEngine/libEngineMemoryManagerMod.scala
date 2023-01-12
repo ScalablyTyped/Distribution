@@ -112,7 +112,8 @@ object libEngineMemoryManagerMod {
       __obj.asInstanceOf[MemoryManager]
     }
     
-    extension [Self <: MemoryManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MemoryManager] (val x: Self) extends AnyVal {
       
       inline def setAllocated(value: Double): Self = StObject.set(x, "allocated", value.asInstanceOf[js.Any])
       

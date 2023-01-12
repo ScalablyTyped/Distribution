@@ -27,7 +27,8 @@ object ClusterRendererResult {
     __obj.asInstanceOf[ClusterRendererResult]
   }
   
-  extension [Self <: ClusterRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterRendererResult] (val x: Self) extends AnyVal {
     
     inline def setFields(value: js.Array[AggregateField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

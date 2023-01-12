@@ -35,7 +35,8 @@ object XDataBarEntry {
     __obj.asInstanceOf[XDataBarEntry]
   }
   
-  extension [Self <: XDataBarEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataBarEntry] (val x: Self) extends AnyVal {
     
     inline def setFormula(value: String): Self = StObject.set(x, "Formula", value.asInstanceOf[js.Any])
     

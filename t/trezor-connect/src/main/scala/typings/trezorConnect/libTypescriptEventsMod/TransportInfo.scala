@@ -24,7 +24,8 @@ object TransportInfo {
     __obj.asInstanceOf[TransportInfo]
   }
   
-  extension [Self <: TransportInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransportInfo] (val x: Self) extends AnyVal {
     
     inline def setBridge(value: BridgeInfo): Self = StObject.set(x, "bridge", value.asInstanceOf[js.Any])
     

@@ -62,7 +62,8 @@ object MainRenderContext {
     __obj.asInstanceOf[MainRenderContext]
   }
   
-  extension [Self <: MainRenderContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MainRenderContext] (val x: Self) extends AnyVal {
     
     inline def setChunk(value: Chunk): Self = StObject.set(x, "chunk", value.asInstanceOf[js.Any])
     

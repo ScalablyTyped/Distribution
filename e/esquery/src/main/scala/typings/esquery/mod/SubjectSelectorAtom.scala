@@ -18,7 +18,8 @@ object SubjectSelectorAtom {
     __obj.asInstanceOf[SubjectSelectorAtom]
   }
   
-  extension [Self <: SubjectSelectorAtom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectSelectorAtom] (val x: Self) extends AnyVal {
     
     inline def setSubject(value: Boolean): Self = StObject.set(x, "subject", value.asInstanceOf[js.Any])
     

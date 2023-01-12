@@ -962,7 +962,8 @@ object ojDiagram {
       __obj.asInstanceOf[RendererContext[K1, D1]]
     }
     
-    extension [Self <: RendererContext[?, ?], K1, D1](x: Self & (RendererContext[K1, D1])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RendererContext[?, ?], K1, D1] (val x: Self & (RendererContext[K1, D1])) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       
@@ -1023,7 +1024,8 @@ object ojDiagram {
       __obj.asInstanceOf[TooltipContext[K1, K2, D1, D2]]
     }
     
-    extension [Self <: TooltipContext[?, ?, ?, ?], K1, K2, D1, D2](x: Self & (TooltipContext[K1, K2, D1, D2])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipContext[?, ?, ?, ?], K1, K2, D1, D2] (val x: Self & (TooltipContext[K1, K2, D1, D2])) extends AnyVal {
       
       inline def setComponentElement(value: Element): Self = StObject.set(x, "componentElement", value.asInstanceOf[js.Any])
       

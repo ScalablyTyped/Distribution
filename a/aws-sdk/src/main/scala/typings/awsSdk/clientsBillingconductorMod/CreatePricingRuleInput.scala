@@ -58,7 +58,8 @@ object CreatePricingRuleInput {
     __obj.asInstanceOf[CreatePricingRuleInput]
   }
   
-  extension [Self <: CreatePricingRuleInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePricingRuleInput] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

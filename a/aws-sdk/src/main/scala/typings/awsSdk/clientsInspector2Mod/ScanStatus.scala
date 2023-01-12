@@ -23,7 +23,8 @@ object ScanStatus {
     __obj.asInstanceOf[ScanStatus]
   }
   
-  extension [Self <: ScanStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanStatus] (val x: Self) extends AnyVal {
     
     inline def setReason(value: ScanStatusReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

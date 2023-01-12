@@ -17,7 +17,8 @@ object CreatePayoutRequestBody {
     __obj.asInstanceOf[CreatePayoutRequestBody]
   }
   
-  extension [Self <: CreatePayoutRequestBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePayoutRequestBody] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[PayoutItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object PropertyGroup {
     __obj.asInstanceOf[PropertyGroup]
   }
   
-  extension [Self <: PropertyGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PropertyGroup] (val x: Self) extends AnyVal {
     
     inline def setPropertyGroupId(value: Id): Self = StObject.set(x, "PropertyGroupId", value.asInstanceOf[js.Any])
     

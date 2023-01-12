@@ -26,7 +26,8 @@ object KnockstrapCarouselDefaults {
     __obj.asInstanceOf[KnockstrapCarouselDefaults]
   }
   
-  extension [Self <: KnockstrapCarouselDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockstrapCarouselDefaults] (val x: Self) extends AnyVal {
     
     inline def setControlsTemplate(value: KnockstrapCarouselDefaultsControlsTemplate): Self = StObject.set(x, "controlsTemplate", value.asInstanceOf[js.Any])
     

@@ -155,7 +155,8 @@ object ChartDataLabelsUpdateData {
     __obj.asInstanceOf[ChartDataLabelsUpdateData]
   }
   
-  extension [Self <: ChartDataLabelsUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartDataLabelsUpdateData] (val x: Self) extends AnyVal {
     
     inline def setAutoText(value: Boolean): Self = StObject.set(x, "autoText", value.asInstanceOf[js.Any])
     

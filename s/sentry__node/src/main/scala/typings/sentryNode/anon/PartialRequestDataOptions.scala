@@ -31,7 +31,8 @@ object PartialRequestDataOptions {
     __obj.asInstanceOf[PartialRequestDataOptions]
   }
   
-  extension [Self <: PartialRequestDataOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRequestDataOptions] (val x: Self) extends AnyVal {
     
     inline def setAddRequestData(
       value: (/* event */ Event, /* req */ PolymorphicRequest, /* options */ js.UndefOr[AddRequestDataToEventOptions]) => Event

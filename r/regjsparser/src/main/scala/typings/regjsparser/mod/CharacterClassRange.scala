@@ -23,7 +23,8 @@ object CharacterClassRange {
     __obj.asInstanceOf[CharacterClassRange]
   }
   
-  extension [Self <: CharacterClassRange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacterClassRange] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Value): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

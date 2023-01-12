@@ -18,7 +18,8 @@ object ScanEc2InstanceWithFindings {
     __obj.asInstanceOf[ScanEc2InstanceWithFindings]
   }
   
-  extension [Self <: ScanEc2InstanceWithFindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScanEc2InstanceWithFindings] (val x: Self) extends AnyVal {
     
     inline def setEbsVolumes(value: Boolean): Self = StObject.set(x, "EbsVolumes", value.asInstanceOf[js.Any])
     

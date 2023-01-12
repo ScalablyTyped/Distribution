@@ -21,7 +21,8 @@ object IncrementPos {
     __obj.asInstanceOf[IncrementPos]
   }
   
-  extension [Self <: IncrementPos](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncrementPos] (val x: Self) extends AnyVal {
     
     inline def setIncrementPos(value: Any): Self = StObject.set(x, "incrementPos", value.asInstanceOf[js.Any])
     

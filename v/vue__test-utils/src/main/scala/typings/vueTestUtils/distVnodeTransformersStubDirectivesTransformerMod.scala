@@ -27,7 +27,8 @@ object distVnodeTransformersStubDirectivesTransformerMod {
       __obj.asInstanceOf[CreateDirectivesTransformerConfig]
     }
     
-    extension [Self <: CreateDirectivesTransformerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateDirectivesTransformerConfig] (val x: Self) extends AnyVal {
       
       inline def setDirectives(value: Record[String, (Directive[Any, Any]) | `true`]): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
     }

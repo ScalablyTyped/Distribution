@@ -28,7 +28,8 @@ object DescribeReservedElasticsearchInstancesRequest {
     __obj.asInstanceOf[DescribeReservedElasticsearchInstancesRequest]
   }
   
-  extension [Self <: DescribeReservedElasticsearchInstancesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReservedElasticsearchInstancesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

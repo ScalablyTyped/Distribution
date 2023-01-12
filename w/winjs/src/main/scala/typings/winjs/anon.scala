@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[typings.winjs.anon.Element]
     }
     
-    extension [Self <: typings.winjs.anon.Element](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.winjs.anon.Element] (val x: Self) extends AnyVal {
       
       inline def setElement(value: Promise[HTMLElement]): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
       
@@ -45,7 +46,8 @@ object anon {
       __obj.asInstanceOf[Empty]
     }
     
-    extension [Self <: Empty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Empty] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: Boolean): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Entrance]
     }
     
-    extension [Self <: Entrance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Entrance] (val x: Self) extends AnyVal {
       
       inline def setEntrance(value: js.Function): Self = StObject.set(x, "entrance", value.asInstanceOf[js.Any])
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Item[T]]
     }
     
-    extension [Self <: Item[?], T](x: Self & Item[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item[?], T] (val x: Self & Item[T]) extends AnyVal {
       
       inline def setItem(value: T): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
       
@@ -116,7 +120,8 @@ object anon {
       __obj.asInstanceOf[KeyCode]
     }
     
-    extension [Self <: KeyCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyCode] (val x: Self) extends AnyVal {
       
       inline def setKeyCode(value: Double): Self = StObject.set(x, "keyCode", value.asInstanceOf[js.Any])
       
@@ -139,7 +144,8 @@ object anon {
       __obj.asInstanceOf[ScrollLeft]
     }
     
-    extension [Self <: ScrollLeft](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollLeft] (val x: Self) extends AnyVal {
       
       inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
       
@@ -160,7 +166,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

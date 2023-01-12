@@ -15,7 +15,8 @@ object LocalCityOptions {
     __obj.asInstanceOf[LocalCityOptions]
   }
   
-  extension [Self <: LocalCityOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalCityOptions] (val x: Self) extends AnyVal {
     
     inline def setRenderOptions(value: RenderOptions): Self = StObject.set(x, "renderOptions", value.asInstanceOf[js.Any])
     

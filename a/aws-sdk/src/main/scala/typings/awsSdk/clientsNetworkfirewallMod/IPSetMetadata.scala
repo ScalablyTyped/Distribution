@@ -18,7 +18,8 @@ object IPSetMetadata {
     __obj.asInstanceOf[IPSetMetadata]
   }
   
-  extension [Self <: IPSetMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSetMetadata] (val x: Self) extends AnyVal {
     
     inline def setResolvedCIDRCount(value: CIDRCount): Self = StObject.set(x, "ResolvedCIDRCount", value.asInstanceOf[js.Any])
     

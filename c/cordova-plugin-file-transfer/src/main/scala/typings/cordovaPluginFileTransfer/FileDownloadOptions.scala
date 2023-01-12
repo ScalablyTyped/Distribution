@@ -17,7 +17,8 @@ object FileDownloadOptions {
     __obj.asInstanceOf[FileDownloadOptions]
   }
   
-  extension [Self <: FileDownloadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileDownloadOptions] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SubtitleColor {
     __obj.asInstanceOf[SubtitleColor]
   }
   
-  extension [Self <: SubtitleColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubtitleColor] (val x: Self) extends AnyVal {
     
     inline def setFontWeight(value: Double): Self = StObject.set(x, "fontWeight", value.asInstanceOf[js.Any])
     

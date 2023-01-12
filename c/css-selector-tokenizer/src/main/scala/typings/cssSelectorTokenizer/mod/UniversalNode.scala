@@ -22,7 +22,8 @@ object UniversalNode {
     __obj.asInstanceOf[UniversalNode]
   }
   
-  extension [Self <: UniversalNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UniversalNode] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

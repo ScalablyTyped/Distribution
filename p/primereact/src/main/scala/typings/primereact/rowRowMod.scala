@@ -35,7 +35,8 @@ object rowRowMod {
       __obj.asInstanceOf[RowProps]
     }
     
-    extension [Self <: RowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object LoRaWANSendDataToDevice {
     __obj.asInstanceOf[LoRaWANSendDataToDevice]
   }
   
-  extension [Self <: LoRaWANSendDataToDevice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoRaWANSendDataToDevice] (val x: Self) extends AnyVal {
     
     inline def setFPort(value: FPort): Self = StObject.set(x, "FPort", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object CourseMaterial {
     __obj.asInstanceOf[CourseMaterial]
   }
   
-  extension [Self <: CourseMaterial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CourseMaterial] (val x: Self) extends AnyVal {
     
     inline def setDriveFile(value: DriveFile): Self = StObject.set(x, "driveFile", value.asInstanceOf[js.Any])
     

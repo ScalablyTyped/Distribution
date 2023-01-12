@@ -62,7 +62,8 @@ object typesRuntimeInternalTypesMod {
       __obj.asInstanceOf[Fragment]
     }
     
-    extension [Self <: Fragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fragment] (val x: Self) extends AnyVal {
       
       inline def setA(value: () => Unit): Self = StObject.set(x, "a", js.Any.fromFunction0(value))
       
@@ -153,7 +154,8 @@ object typesRuntimeInternalTypesMod {
       __obj.asInstanceOf[T]
     }
     
-    extension [Self <: T](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: T] (val x: Self) extends AnyVal {
       
       inline def setAfter_update(value: js.Array[Any]): Self = StObject.set(x, "after_update", value.asInstanceOf[js.Any])
       

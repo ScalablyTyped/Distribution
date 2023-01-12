@@ -23,7 +23,8 @@ object GetObjectListItem {
     __obj.asInstanceOf[GetObjectListItem]
   }
   
-  extension [Self <: GetObjectListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetObjectListItem] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: Object): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

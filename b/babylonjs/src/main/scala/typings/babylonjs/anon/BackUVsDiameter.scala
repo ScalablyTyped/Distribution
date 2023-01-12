@@ -26,7 +26,8 @@ object BackUVsDiameter {
     __obj.asInstanceOf[BackUVsDiameter]
   }
   
-  extension [Self <: BackUVsDiameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackUVsDiameter] (val x: Self) extends AnyVal {
     
     inline def setBackUVs(value: Vector4): Self = StObject.set(x, "backUVs", value.asInstanceOf[js.Any])
     

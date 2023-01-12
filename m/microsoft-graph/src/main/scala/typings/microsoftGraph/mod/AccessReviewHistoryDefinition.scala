@@ -67,7 +67,8 @@ object AccessReviewHistoryDefinition {
     __obj.asInstanceOf[AccessReviewHistoryDefinition]
   }
   
-  extension [Self <: AccessReviewHistoryDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessReviewHistoryDefinition] (val x: Self) extends AnyVal {
     
     inline def setCreatedBy(value: UserIdentity): Self = StObject.set(x, "createdBy", value.asInstanceOf[js.Any])
     

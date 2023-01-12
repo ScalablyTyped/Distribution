@@ -37,7 +37,8 @@ object buttonMod extends Shortcut {
       __obj.asInstanceOf[ButtonProps]
     }
     
-    extension [Self <: ButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonProps] (val x: Self) extends AnyVal {
       
       inline def setButtonStyle(value: StyleProp[ViewProps]): Self = StObject.set(x, "buttonStyle", value.asInstanceOf[js.Any])
       

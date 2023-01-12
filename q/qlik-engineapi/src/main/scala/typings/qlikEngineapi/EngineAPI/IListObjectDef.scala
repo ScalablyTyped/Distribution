@@ -74,7 +74,8 @@ object IListObjectDef {
     __obj.asInstanceOf[IListObjectDef]
   }
   
-  extension [Self <: IListObjectDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListObjectDef] (val x: Self) extends AnyVal {
     
     inline def setQAutoSortByState(value: INxAutoSortByStateDef): Self = StObject.set(x, "qAutoSortByState", value.asInstanceOf[js.Any])
     

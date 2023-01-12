@@ -88,7 +88,8 @@ object AutoCompleteOptions {
     __obj.asInstanceOf[AutoCompleteOptions]
   }
   
-  extension [Self <: AutoCompleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | AutoCompleteAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

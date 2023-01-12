@@ -120,7 +120,8 @@ object libNavbarMod {
       __obj.asInstanceOf[NavbarFormProps]
     }
     
-    extension [Self <: NavbarFormProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarFormProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object libNavbarMod {
       __obj.asInstanceOf[NavbarLinkProps]
     }
     
-    extension [Self <: NavbarLinkProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarLinkProps] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -211,7 +213,8 @@ object libNavbarMod {
       __obj.asInstanceOf[NavbarProps]
     }
     
-    extension [Self <: NavbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarProps] (val x: Self) extends AnyVal {
       
       inline def setBrand(value: Any): Self = StObject.set(x, "brand", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object libNavbarMod {
       __obj.asInstanceOf[NavbarTextProps]
     }
     
-    extension [Self <: NavbarTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavbarTextProps] (val x: Self) extends AnyVal {
       
       inline def setPullRight(value: Boolean): Self = StObject.set(x, "pullRight", value.asInstanceOf[js.Any])
       

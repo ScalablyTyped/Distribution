@@ -436,7 +436,8 @@ object libTexturesBaseTextureMod {
       __obj.asInstanceOf[IBaseTextureOptions[RO]]
     }
     
-    extension [Self <: IBaseTextureOptions[?], RO](x: Self & IBaseTextureOptions[RO]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBaseTextureOptions[?], RO] (val x: Self & IBaseTextureOptions[RO]) extends AnyVal {
       
       inline def setAlphaMode(value: ALPHA_MODES): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
       

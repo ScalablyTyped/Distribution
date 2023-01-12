@@ -41,7 +41,8 @@ object RasterHistogram {
     __obj.asInstanceOf[RasterHistogram]
   }
   
-  extension [Self <: RasterHistogram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterHistogram] (val x: Self) extends AnyVal {
     
     inline def setCounts(value: js.Array[Double] | js.typedarray.Uint32Array): Self = StObject.set(x, "counts", value.asInstanceOf[js.Any])
     

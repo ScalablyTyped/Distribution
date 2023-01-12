@@ -19,7 +19,8 @@ object WatcherHttpInput {
     __obj.asInstanceOf[WatcherHttpInput]
   }
   
-  extension [Self <: WatcherHttpInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherHttpInput] (val x: Self) extends AnyVal {
     
     inline def setExtract(value: js.Array[String]): Self = StObject.set(x, "extract", value.asInstanceOf[js.Any])
     

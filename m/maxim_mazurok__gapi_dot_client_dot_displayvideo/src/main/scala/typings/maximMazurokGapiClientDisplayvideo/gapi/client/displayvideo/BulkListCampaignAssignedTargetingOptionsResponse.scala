@@ -22,7 +22,8 @@ object BulkListCampaignAssignedTargetingOptionsResponse {
     __obj.asInstanceOf[BulkListCampaignAssignedTargetingOptionsResponse]
   }
   
-  extension [Self <: BulkListCampaignAssignedTargetingOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkListCampaignAssignedTargetingOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAssignedTargetingOptions(value: js.Array[AssignedTargetingOption]): Self = StObject.set(x, "assignedTargetingOptions", value.asInstanceOf[js.Any])
     

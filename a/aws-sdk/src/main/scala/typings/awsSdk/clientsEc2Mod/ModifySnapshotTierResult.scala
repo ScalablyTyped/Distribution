@@ -23,7 +23,8 @@ object ModifySnapshotTierResult {
     __obj.asInstanceOf[ModifySnapshotTierResult]
   }
   
-  extension [Self <: ModifySnapshotTierResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifySnapshotTierResult] (val x: Self) extends AnyVal {
     
     inline def setSnapshotId(value: String): Self = StObject.set(x, "SnapshotId", value.asInstanceOf[js.Any])
     

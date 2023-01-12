@@ -25,7 +25,8 @@ object LastEditorId {
     __obj.asInstanceOf[LastEditorId]
   }
   
-  extension [Self <: LastEditorId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastEditorId] (val x: Self) extends AnyVal {
     
     inline def setLastEditorId(value: UserID): Self = StObject.set(x, "lastEditorId", value.asInstanceOf[js.Any])
     

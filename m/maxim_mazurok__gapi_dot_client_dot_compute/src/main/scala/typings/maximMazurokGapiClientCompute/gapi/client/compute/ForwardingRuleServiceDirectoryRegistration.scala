@@ -25,7 +25,8 @@ object ForwardingRuleServiceDirectoryRegistration {
     __obj.asInstanceOf[ForwardingRuleServiceDirectoryRegistration]
   }
   
-  extension [Self <: ForwardingRuleServiceDirectoryRegistration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardingRuleServiceDirectoryRegistration] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

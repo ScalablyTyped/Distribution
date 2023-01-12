@@ -28,7 +28,8 @@ object SpineGameObjectConfig {
     __obj.asInstanceOf[SpineGameObjectConfig]
   }
   
-  extension [Self <: SpineGameObjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpineGameObjectConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimationName(value: String): Self = StObject.set(x, "animationName", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object RoutePolicy {
     __obj.asInstanceOf[RoutePolicy]
   }
   
-  extension [Self <: RoutePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RoutePolicy] (val x: Self) extends AnyVal {
     
     inline def setConnectionProfile(value: ConnectionProfile): Self = StObject.set(x, "connectionProfile", value.asInstanceOf[js.Any])
     

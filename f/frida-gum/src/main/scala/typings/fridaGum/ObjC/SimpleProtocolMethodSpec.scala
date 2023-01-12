@@ -30,7 +30,8 @@ object SimpleProtocolMethodSpec {
     __obj.asInstanceOf[SimpleProtocolMethodSpec]
   }
   
-  extension [Self <: SimpleProtocolMethodSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleProtocolMethodSpec] (val x: Self) extends AnyVal {
     
     inline def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
     

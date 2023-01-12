@@ -63,7 +63,8 @@ object Peering {
     __obj.asInstanceOf[Peering]
   }
   
-  extension [Self <: Peering](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Peering] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkArn(value: CoreNetworkArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
     

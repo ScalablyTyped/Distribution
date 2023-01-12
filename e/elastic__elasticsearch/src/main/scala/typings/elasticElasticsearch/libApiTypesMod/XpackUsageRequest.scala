@@ -17,7 +17,8 @@ object XpackUsageRequest {
     __obj.asInstanceOf[XpackUsageRequest]
   }
   
-  extension [Self <: XpackUsageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

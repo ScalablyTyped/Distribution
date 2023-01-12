@@ -28,7 +28,8 @@ object GetSampledRequestsResponse {
     __obj.asInstanceOf[GetSampledRequestsResponse]
   }
   
-  extension [Self <: GetSampledRequestsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSampledRequestsResponse] (val x: Self) extends AnyVal {
     
     inline def setPopulationSize(value: PopulationSize): Self = StObject.set(x, "PopulationSize", value.asInstanceOf[js.Any])
     

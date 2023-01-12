@@ -28,7 +28,8 @@ object PaymentProcessorInformation {
     __obj.asInstanceOf[PaymentProcessorInformation]
   }
   
-  extension [Self <: PaymentProcessorInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentProcessorInformation] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: /* Contains address information. */ AddressInformation): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

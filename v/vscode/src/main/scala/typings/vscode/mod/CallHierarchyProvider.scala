@@ -54,7 +54,8 @@ object CallHierarchyProvider {
     __obj.asInstanceOf[CallHierarchyProvider]
   }
   
-  extension [Self <: CallHierarchyProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallHierarchyProvider] (val x: Self) extends AnyVal {
     
     inline def setPrepareCallHierarchy(
       value: (TextDocument, Position, CancellationToken) => ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]]

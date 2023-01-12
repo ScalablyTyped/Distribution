@@ -43,7 +43,8 @@ object rsocketencodingMod {
       __obj.asInstanceOf[Encoder[T]]
     }
     
-    extension [Self <: Encoder[?], T /* <: Encodable */](x: Self & Encoder[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoder[?], T /* <: Encodable */] (val x: Self & Encoder[T]) extends AnyVal {
       
       inline def setByteLength(value: Encodable => Double): Self = StObject.set(x, "byteLength", js.Any.fromFunction1(value))
       
@@ -81,7 +82,8 @@ object rsocketencodingMod {
       __obj.asInstanceOf[Encoders[T]]
     }
     
-    extension [Self <: Encoders[?], T /* <: Encodable */](x: Self & Encoders[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoders[?], T /* <: Encodable */] (val x: Self & Encoders[T]) extends AnyVal {
       
       inline def setData(value: Encoder[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

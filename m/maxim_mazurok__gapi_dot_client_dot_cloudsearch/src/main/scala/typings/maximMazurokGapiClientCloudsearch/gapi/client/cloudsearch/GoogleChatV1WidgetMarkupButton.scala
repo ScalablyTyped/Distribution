@@ -19,7 +19,8 @@ object GoogleChatV1WidgetMarkupButton {
     __obj.asInstanceOf[GoogleChatV1WidgetMarkupButton]
   }
   
-  extension [Self <: GoogleChatV1WidgetMarkupButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleChatV1WidgetMarkupButton] (val x: Self) extends AnyVal {
     
     inline def setImageButton(value: GoogleChatV1WidgetMarkupImageButton): Self = StObject.set(x, "imageButton", value.asInstanceOf[js.Any])
     

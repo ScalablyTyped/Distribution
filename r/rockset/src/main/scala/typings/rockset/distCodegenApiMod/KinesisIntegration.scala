@@ -27,7 +27,8 @@ object KinesisIntegration {
     __obj.asInstanceOf[KinesisIntegration]
   }
   
-  extension [Self <: KinesisIntegration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisIntegration] (val x: Self) extends AnyVal {
     
     inline def setAws_access_key(value: AwsAccessKey): Self = StObject.set(x, "aws_access_key", value.asInstanceOf[js.Any])
     

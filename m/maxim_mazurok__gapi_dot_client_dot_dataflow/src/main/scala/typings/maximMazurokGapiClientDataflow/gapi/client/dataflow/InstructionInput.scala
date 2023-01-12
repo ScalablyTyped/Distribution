@@ -22,7 +22,8 @@ object InstructionInput {
     __obj.asInstanceOf[InstructionInput]
   }
   
-  extension [Self <: InstructionInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstructionInput] (val x: Self) extends AnyVal {
     
     inline def setOutputNum(value: Double): Self = StObject.set(x, "outputNum", value.asInstanceOf[js.Any])
     

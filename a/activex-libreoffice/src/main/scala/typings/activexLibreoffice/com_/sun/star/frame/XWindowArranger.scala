@@ -30,7 +30,8 @@ object XWindowArranger {
     __obj.asInstanceOf[XWindowArranger]
   }
   
-  extension [Self <: XWindowArranger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XWindowArranger] (val x: Self) extends AnyVal {
     
     inline def setArrange(value: Double => Unit): Self = StObject.set(x, "arrange", js.Any.fromFunction1(value))
     

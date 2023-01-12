@@ -208,7 +208,8 @@ object JavascriptParserOptions {
     __obj.asInstanceOf[JavascriptParserOptions]
   }
   
-  extension [Self <: JavascriptParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JavascriptParserOptions] (val x: Self) extends AnyVal {
     
     inline def setAmd(value: `false` | StringDictionary[Any]): Self = StObject.set(x, "amd", value.asInstanceOf[js.Any])
     

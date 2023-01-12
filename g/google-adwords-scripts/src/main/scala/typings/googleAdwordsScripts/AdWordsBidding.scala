@@ -23,7 +23,8 @@ object AdWordsBidding {
     __obj.asInstanceOf[AdWordsBidding]
   }
   
-  extension [Self <: AdWordsBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdWordsBidding] (val x: Self) extends AnyVal {
     
     inline def setGetStrategy(value: () => BiddingStrategy): Self = StObject.set(x, "getStrategy", js.Any.fromFunction0(value))
     

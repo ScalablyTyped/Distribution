@@ -59,7 +59,8 @@ object distOperationsTypesTypesMod {
       __obj.asInstanceOf[AddTypeValueOptions]
     }
     
-    extension [Self <: AddTypeValueOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTypeValueOptions] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       

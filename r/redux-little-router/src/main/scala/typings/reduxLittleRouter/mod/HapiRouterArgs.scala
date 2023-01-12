@@ -18,7 +18,8 @@ object HapiRouterArgs {
     __obj.asInstanceOf[HapiRouterArgs]
   }
   
-  extension [Self <: HapiRouterArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HapiRouterArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: Path): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
     

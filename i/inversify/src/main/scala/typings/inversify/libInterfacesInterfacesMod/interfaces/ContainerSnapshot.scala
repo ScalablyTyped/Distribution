@@ -28,7 +28,8 @@ object ContainerSnapshot {
     __obj.asInstanceOf[ContainerSnapshot]
   }
   
-  extension [Self <: ContainerSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerSnapshot] (val x: Self) extends AnyVal {
     
     inline def setActivations(value: Lookup[BindingActivation[Any]]): Self = StObject.set(x, "activations", value.asInstanceOf[js.Any])
     

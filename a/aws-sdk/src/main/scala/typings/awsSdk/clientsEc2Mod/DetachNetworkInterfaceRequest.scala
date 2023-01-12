@@ -28,7 +28,8 @@ object DetachNetworkInterfaceRequest {
     __obj.asInstanceOf[DetachNetworkInterfaceRequest]
   }
   
-  extension [Self <: DetachNetworkInterfaceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachNetworkInterfaceRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: NetworkInterfaceAttachmentId): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     

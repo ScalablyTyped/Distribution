@@ -29,7 +29,8 @@ object CatalogEntryRelatedEntry {
     __obj.asInstanceOf[CatalogEntryRelatedEntry]
   }
   
-  extension [Self <: CatalogEntryRelatedEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatalogEntryRelatedEntry] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Reference): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object DeclarativeTableMenuCellValue {
     __obj.asInstanceOf[DeclarativeTableMenuCellValue]
   }
   
-  extension [Self <: DeclarativeTableMenuCellValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarativeTableMenuCellValue] (val x: Self) extends AnyVal {
     
     inline def setCommands(value: js.Array[String | js.Array[String]]): Self = StObject.set(x, "commands", value.asInstanceOf[js.Any])
     

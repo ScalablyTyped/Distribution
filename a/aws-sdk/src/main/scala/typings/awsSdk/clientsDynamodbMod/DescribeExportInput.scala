@@ -18,7 +18,8 @@ object DescribeExportInput {
     __obj.asInstanceOf[DescribeExportInput]
   }
   
-  extension [Self <: DescribeExportInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeExportInput] (val x: Self) extends AnyVal {
     
     inline def setExportArn(value: ExportArn): Self = StObject.set(x, "ExportArn", value.asInstanceOf[js.Any])
   }

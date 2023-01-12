@@ -26,7 +26,8 @@ object PhotoOptions {
     __obj.asInstanceOf[PhotoOptions]
   }
   
-  extension [Self <: PhotoOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhotoOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

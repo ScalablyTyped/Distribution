@@ -15,7 +15,8 @@ object SetTraceParams {
     __obj.asInstanceOf[SetTraceParams]
   }
   
-  extension [Self <: SetTraceParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTraceParams] (val x: Self) extends AnyVal {
     
     inline def setValue(value: TraceValues): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

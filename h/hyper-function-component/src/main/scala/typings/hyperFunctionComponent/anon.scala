@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Changed]
     }
     
-    extension [Self <: Changed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Changed] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: HfcProps => Unit): Self = StObject.set(x, "changed", js.Any.fromFunction1(value))
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Dictk]
     }
     
-    extension [Self <: Dictk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictk] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -72,7 +74,8 @@ object anon {
       __obj.asInstanceOf[Hfc]
     }
     
-    extension [Self <: Hfc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hfc] (val x: Self) extends AnyVal {
       
       inline def setHfc(value: String): Self = StObject.set(x, "hfc", value.asInstanceOf[js.Any])
       

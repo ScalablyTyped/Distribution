@@ -30,7 +30,8 @@ object QueueSearchCriteria {
     __obj.asInstanceOf[QueueSearchCriteria]
   }
   
-  extension [Self <: QueueSearchCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueueSearchCriteria] (val x: Self) extends AnyVal {
     
     inline def setAndConditions(value: QueueSearchConditionList): Self = StObject.set(x, "AndConditions", value.asInstanceOf[js.Any])
     

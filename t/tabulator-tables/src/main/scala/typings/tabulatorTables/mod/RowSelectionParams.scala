@@ -17,7 +17,8 @@ object RowSelectionParams {
     __obj.asInstanceOf[RowSelectionParams]
   }
   
-  extension [Self <: RowSelectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSelectionParams] (val x: Self) extends AnyVal {
     
     inline def setRowRange(value: RowRangeLookup): Self = StObject.set(x, "rowRange", value.asInstanceOf[js.Any])
     

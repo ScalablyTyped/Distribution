@@ -468,7 +468,8 @@ object mod {
       __obj.asInstanceOf[LicenseSpec]
     }
     
-    extension [Self <: LicenseSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LicenseSpec] (val x: Self) extends AnyVal {
       
       inline def setBody(value: js.Array[BodySpec]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -505,7 +506,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setOnNonFatalError(value: /* error */ js.Error => Unit): Self = StObject.set(x, "onNonFatalError", js.Any.fromFunction1(value))
       

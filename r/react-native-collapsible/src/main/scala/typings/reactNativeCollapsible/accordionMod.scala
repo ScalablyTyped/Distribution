@@ -173,7 +173,8 @@ object accordionMod {
       __obj.asInstanceOf[AccordionProps[T]]
     }
     
-    extension [Self <: AccordionProps[?], T](x: Self & AccordionProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionProps[?], T] (val x: Self & AccordionProps[T]) extends AnyVal {
       
       inline def setActiveSections(value: js.Array[Double | String]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
       

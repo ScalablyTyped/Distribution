@@ -118,7 +118,8 @@ object OrderableDBInstanceOption {
     __obj.asInstanceOf[OrderableDBInstanceOption]
   }
   
-  extension [Self <: OrderableDBInstanceOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderableDBInstanceOption] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityZones(value: AvailabilityZoneList): Self = StObject.set(x, "AvailabilityZones", value.asInstanceOf[js.Any])
     

@@ -94,7 +94,8 @@ object Tournaments {
     __obj.asInstanceOf[Tournaments]
   }
   
-  extension [Self <: Tournaments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tournaments] (val x: Self) extends AnyVal {
     
     inline def setCreateAsync(value: CreateTournamentPayload => js.Promise[Tournament]): Self = StObject.set(x, "createAsync", js.Any.fromFunction1(value))
     

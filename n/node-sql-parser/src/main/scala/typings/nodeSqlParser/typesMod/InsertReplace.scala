@@ -28,7 +28,8 @@ object InsertReplace {
     __obj.asInstanceOf[InsertReplace]
   }
   
-  extension [Self <: InsertReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertReplace] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

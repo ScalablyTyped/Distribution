@@ -28,7 +28,8 @@ object distCommandsDropindexMod {
       __obj.asInstanceOf[DropIndexOptions]
     }
     
-    extension [Self <: DropIndexOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropIndexOptions] (val x: Self) extends AnyVal {
       
       inline def setDD(value: `true`): Self = StObject.set(x, "DD", value.asInstanceOf[js.Any])
       

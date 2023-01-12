@@ -506,7 +506,8 @@ object mod {
       __obj.asInstanceOf[GregorianCalendar]
     }
     
-    extension [Self <: GregorianCalendar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GregorianCalendar] (val x: Self) extends AnyVal {
       
       inline def setAddDayOfMonth(value: Number => Unit): Self = StObject.set(x, "addDayOfMonth", js.Any.fromFunction1(value))
       

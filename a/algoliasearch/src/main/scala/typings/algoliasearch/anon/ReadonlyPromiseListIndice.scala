@@ -28,7 +28,8 @@ object ReadonlyPromiseListIndice {
     __obj.asInstanceOf[ReadonlyPromiseListIndice]
   }
   
-  extension [Self <: ReadonlyPromiseListIndice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseListIndice] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[ListIndicesResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

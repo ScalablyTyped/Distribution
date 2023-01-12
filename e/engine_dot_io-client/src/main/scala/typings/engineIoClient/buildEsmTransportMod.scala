@@ -124,7 +124,8 @@ object buildEsmTransportMod {
       __obj.asInstanceOf[CloseDetails]
     }
     
-    extension [Self <: CloseDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseDetails] (val x: Self) extends AnyVal {
       
       inline def setContext(value: CloseEvent | XMLHttpRequest): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object buildEsmTransportMod {
       __obj.asInstanceOf[TransportError]
     }
     
-    extension [Self <: TransportError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransportError] (val x: Self) extends AnyVal {
       
       inline def setContext(value: Any): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
       

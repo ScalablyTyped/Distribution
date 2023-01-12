@@ -21,7 +21,8 @@ object MappingCorePropertyBase {
     __obj.asInstanceOf[MappingCorePropertyBase]
   }
   
-  extension [Self <: MappingCorePropertyBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingCorePropertyBase] (val x: Self) extends AnyVal {
     
     inline def setCopy_to(value: Fields): Self = StObject.set(x, "copy_to", value.asInstanceOf[js.Any])
     

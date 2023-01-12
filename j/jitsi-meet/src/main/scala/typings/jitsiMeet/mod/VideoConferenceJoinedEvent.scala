@@ -21,7 +21,8 @@ object VideoConferenceJoinedEvent {
     __obj.asInstanceOf[VideoConferenceJoinedEvent]
   }
   
-  extension [Self <: VideoConferenceJoinedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoConferenceJoinedEvent] (val x: Self) extends AnyVal {
     
     inline def setAvatarURL(value: String): Self = StObject.set(x, "avatarURL", value.asInstanceOf[js.Any])
     

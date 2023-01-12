@@ -30,7 +30,8 @@ object LocalPosition {
     __obj.asInstanceOf[LocalPosition]
   }
   
-  extension [Self <: LocalPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalPosition] (val x: Self) extends AnyVal {
     
     inline def setLocalPosition(value: Any => AnimTarget): Self = StObject.set(x, "localPosition", js.Any.fromFunction1(value))
     

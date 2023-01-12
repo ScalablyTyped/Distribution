@@ -41,7 +41,8 @@ object FetchPopupFeaturesResult {
     __obj.asInstanceOf[FetchPopupFeaturesResult]
   }
   
-  extension [Self <: FetchPopupFeaturesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPopupFeaturesResult] (val x: Self) extends AnyVal {
     
     inline def setAllGraphicsPromise(value: js.Promise[js.Array[Graphic]]): Self = StObject.set(x, "allGraphicsPromise", value.asInstanceOf[js.Any])
     

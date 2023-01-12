@@ -19,7 +19,8 @@ object distLifecyclesLifecycleMod {
       __obj.asInstanceOf[Lifecycle]
     }
     
-    extension [Self <: Lifecycle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lifecycle] (val x: Self) extends AnyVal {
       
       inline def setResolve(value: (default, typings.forgeDi.distFrameworkContextMod.default, Arguments) => Any): Self = StObject.set(x, "resolve", js.Any.fromFunction3(value))
     }

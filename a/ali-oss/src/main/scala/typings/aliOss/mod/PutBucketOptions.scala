@@ -21,7 +21,8 @@ object PutBucketOptions {
     __obj.asInstanceOf[PutBucketOptions]
   }
   
-  extension [Self <: PutBucketOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketOptions] (val x: Self) extends AnyVal {
     
     inline def setAcl(value: ACLType): Self = StObject.set(x, "acl", value.asInstanceOf[js.Any])
     

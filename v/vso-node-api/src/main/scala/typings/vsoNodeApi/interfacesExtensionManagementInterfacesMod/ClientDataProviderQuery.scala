@@ -20,7 +20,8 @@ object ClientDataProviderQuery {
     __obj.asInstanceOf[ClientDataProviderQuery]
   }
   
-  extension [Self <: ClientDataProviderQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientDataProviderQuery] (val x: Self) extends AnyVal {
     
     inline def setQueryServiceInstanceType(value: String): Self = StObject.set(x, "queryServiceInstanceType", value.asInstanceOf[js.Any])
   }

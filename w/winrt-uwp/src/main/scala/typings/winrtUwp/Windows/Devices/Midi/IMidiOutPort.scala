@@ -38,7 +38,8 @@ object IMidiOutPort {
     __obj.asInstanceOf[IMidiOutPort]
   }
   
-  extension [Self <: IMidiOutPort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMidiOutPort] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: String): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
     

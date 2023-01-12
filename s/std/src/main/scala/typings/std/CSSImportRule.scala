@@ -44,7 +44,8 @@ object CSSImportRule {
     __obj.asInstanceOf[CSSImportRule]
   }
   
-  extension [Self <: CSSImportRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSImportRule] (val x: Self) extends AnyVal {
     
     inline def setHref(value: java.lang.String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

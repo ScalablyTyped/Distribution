@@ -23,7 +23,8 @@ object ValueWithServiceIds {
     __obj.asInstanceOf[ValueWithServiceIds]
   }
   
-  extension [Self <: ValueWithServiceIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueWithServiceIds] (val x: Self) extends AnyVal {
     
     inline def setAnnotationValue(value: AnnotationValue): Self = StObject.set(x, "AnnotationValue", value.asInstanceOf[js.Any])
     

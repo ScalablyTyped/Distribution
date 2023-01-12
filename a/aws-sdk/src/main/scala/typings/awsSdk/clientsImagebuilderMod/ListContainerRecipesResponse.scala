@@ -28,7 +28,8 @@ object ListContainerRecipesResponse {
     __obj.asInstanceOf[ListContainerRecipesResponse]
   }
   
-  extension [Self <: ListContainerRecipesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContainerRecipesResponse] (val x: Self) extends AnyVal {
     
     inline def setContainerRecipeSummaryList(value: ContainerRecipeSummaryList): Self = StObject.set(x, "containerRecipeSummaryList", value.asInstanceOf[js.Any])
     

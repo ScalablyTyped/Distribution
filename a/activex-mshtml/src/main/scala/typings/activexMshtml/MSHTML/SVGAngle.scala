@@ -37,7 +37,8 @@ object SVGAngle {
     __obj.asInstanceOf[SVGAngle]
   }
   
-  extension [Self <: SVGAngle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGAngle] (val x: Self) extends AnyVal {
     
     inline def setConvertToSpecifiedUnits(value: Double => Unit): Self = StObject.set(x, "convertToSpecifiedUnits", js.Any.fromFunction1(value))
     

@@ -25,7 +25,8 @@ object PartialDocumentationRoute {
     __obj.asInstanceOf[PartialDocumentationRoute]
   }
   
-  extension [Self <: PartialDocumentationRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialDocumentationRoute] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: (/* req */ Request, /* res */ Response) => Unit | `false`): Self = StObject.set(x, "before", js.Any.fromFunction2(value))
     

@@ -130,7 +130,8 @@ object XGridColumn {
     __obj.asInstanceOf[XGridColumn]
   }
   
-  extension [Self <: XGridColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XGridColumn] (val x: Self) extends AnyVal {
     
     inline def setAddGridColumnListener(value: XGridColumnListener => Unit): Self = StObject.set(x, "addGridColumnListener", js.Any.fromFunction1(value))
     

@@ -48,7 +48,8 @@ object ViewSpec {
     __obj.asInstanceOf[ViewSpec]
   }
   
-  extension [Self <: ViewSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewSpec] (val x: Self) extends AnyVal {
     
     inline def setButtonTextDefault(value: String): Self = StObject.set(x, "buttonTextDefault", value.asInstanceOf[js.Any])
     

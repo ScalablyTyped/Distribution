@@ -28,7 +28,8 @@ object RecordColumn {
     __obj.asInstanceOf[RecordColumn]
   }
   
-  extension [Self <: RecordColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordColumn] (val x: Self) extends AnyVal {
     
     inline def setMapping(value: RecordColumnMapping): Self = StObject.set(x, "Mapping", value.asInstanceOf[js.Any])
     

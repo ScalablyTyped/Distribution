@@ -69,7 +69,8 @@ object XEnumTypeDescription {
     __obj.asInstanceOf[XEnumTypeDescription]
   }
   
-  extension [Self <: XEnumTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnumTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setDefaultEnumValue(value: Double): Self = StObject.set(x, "DefaultEnumValue", value.asInstanceOf[js.Any])
     

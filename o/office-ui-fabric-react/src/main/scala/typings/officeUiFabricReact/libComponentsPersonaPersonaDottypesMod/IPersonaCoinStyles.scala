@@ -24,7 +24,8 @@ object IPersonaCoinStyles {
     __obj.asInstanceOf[IPersonaCoinStyles]
   }
   
-  extension [Self <: IPersonaCoinStyles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPersonaCoinStyles] (val x: Self) extends AnyVal {
     
     inline def setCoin(value: IStyle): Self = StObject.set(x, "coin", value.asInstanceOf[js.Any])
     

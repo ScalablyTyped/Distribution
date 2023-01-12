@@ -28,7 +28,8 @@ object LayerFailure {
     __obj.asInstanceOf[LayerFailure]
   }
   
-  extension [Self <: LayerFailure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LayerFailure] (val x: Self) extends AnyVal {
     
     inline def setFailureCode(value: LayerFailureCode): Self = StObject.set(x, "failureCode", value.asInstanceOf[js.Any])
     

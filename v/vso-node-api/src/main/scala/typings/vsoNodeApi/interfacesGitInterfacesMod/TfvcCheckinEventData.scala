@@ -18,7 +18,8 @@ object TfvcCheckinEventData {
     __obj.asInstanceOf[TfvcCheckinEventData]
   }
   
-  extension [Self <: TfvcCheckinEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcCheckinEventData] (val x: Self) extends AnyVal {
     
     inline def setChangeset(value: TfvcChangeset): Self = StObject.set(x, "changeset", value.asInstanceOf[js.Any])
     

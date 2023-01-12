@@ -21,7 +21,8 @@ object HoneycodeDestinationProperties {
     __obj.asInstanceOf[HoneycodeDestinationProperties]
   }
   
-  extension [Self <: HoneycodeDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoneycodeDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     

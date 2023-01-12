@@ -33,7 +33,8 @@ object AggregatedResultsAnalysis {
     __obj.asInstanceOf[AggregatedResultsAnalysis]
   }
   
-  extension [Self <: AggregatedResultsAnalysis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedResultsAnalysis] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Any): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

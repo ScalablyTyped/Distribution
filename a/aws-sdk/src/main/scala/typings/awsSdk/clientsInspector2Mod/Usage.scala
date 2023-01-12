@@ -33,7 +33,8 @@ object Usage {
     __obj.asInstanceOf[Usage]
   }
   
-  extension [Self <: Usage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Usage] (val x: Self) extends AnyVal {
     
     inline def setCurrency(value: Currency): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
     

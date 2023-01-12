@@ -33,7 +33,8 @@ object EmailMessageActivity {
     __obj.asInstanceOf[EmailMessageActivity]
   }
   
-  extension [Self <: EmailMessageActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMessageActivity] (val x: Self) extends AnyVal {
     
     inline def setMessageConfig(value: JourneyEmailMessage): Self = StObject.set(x, "MessageConfig", value.asInstanceOf[js.Any])
     

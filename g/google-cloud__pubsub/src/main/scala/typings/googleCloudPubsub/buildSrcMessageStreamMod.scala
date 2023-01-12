@@ -228,7 +228,8 @@ object buildSrcMessageStreamMod {
       __obj.asInstanceOf[MessageStreamOptions]
     }
     
-    extension [Self <: MessageStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
       

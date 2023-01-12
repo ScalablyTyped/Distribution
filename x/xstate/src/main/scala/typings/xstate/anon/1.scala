@@ -29,7 +29,8 @@ object `1` {
     __obj.asInstanceOf[`1`[TContext, TResolvedTypesMeta]]
   }
   
-  extension [Self <: `1`[?, ?], TContext, TResolvedTypesMeta](x: Self & (`1`[TContext, TResolvedTypesMeta])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?, ?], TContext, TResolvedTypesMeta] (val x: Self & (`1`[TContext, TResolvedTypesMeta])) extends AnyVal {
     
     inline def setActions(
       value: MachineOptionsActions[

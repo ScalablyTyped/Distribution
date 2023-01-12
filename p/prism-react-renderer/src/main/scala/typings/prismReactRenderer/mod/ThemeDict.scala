@@ -20,7 +20,8 @@ object ThemeDict {
     __obj.asInstanceOf[ThemeDict]
   }
   
-  extension [Self <: ThemeDict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeDict] (val x: Self) extends AnyVal {
     
     inline def setPlain(value: StyleObj): Self = StObject.set(x, "plain", value.asInstanceOf[js.Any])
     

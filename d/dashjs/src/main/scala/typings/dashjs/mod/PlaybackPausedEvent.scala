@@ -22,7 +22,8 @@ object PlaybackPausedEvent {
     __obj.asInstanceOf[PlaybackPausedEvent]
   }
   
-  extension [Self <: PlaybackPausedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaybackPausedEvent] (val x: Self) extends AnyVal {
     
     inline def setEnded(value: Boolean): Self = StObject.set(x, "ended", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object Cluster {
     __obj.asInstanceOf[Cluster]
   }
   
-  extension [Self <: Cluster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cluster] (val x: Self) extends AnyVal {
     
     inline def setCentroidId(value: String): Self = StObject.set(x, "centroidId", value.asInstanceOf[js.Any])
     

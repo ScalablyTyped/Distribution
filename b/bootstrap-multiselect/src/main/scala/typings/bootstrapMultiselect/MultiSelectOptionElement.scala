@@ -28,7 +28,8 @@ object MultiSelectOptionElement {
     __obj.asInstanceOf[MultiSelectOptionElement]
   }
   
-  extension [Self <: MultiSelectOptionElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiSelectOptionElement] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

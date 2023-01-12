@@ -21,7 +21,8 @@ object IndicesValidateQueryIndicesValidationExplanation {
     __obj.asInstanceOf[IndicesValidateQueryIndicesValidationExplanation]
   }
   
-  extension [Self <: IndicesValidateQueryIndicesValidationExplanation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesValidateQueryIndicesValidationExplanation] (val x: Self) extends AnyVal {
     
     inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -90,7 +90,8 @@ object WeakValidationMapConfigPr {
     __obj.asInstanceOf[WeakValidationMapConfigPr]
   }
   
-  extension [Self <: WeakValidationMapConfigPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WeakValidationMapConfigPr] (val x: Self) extends AnyVal {
     
     inline def setAutoInsertSpaceInButton(
       value: /* import warning: importer.ImportType#apply Failed type conversion: null extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : undefined extends boolean | undefined ? react.react.Validator<boolean | undefined | null | undefined> : react.react.Validator<boolean | undefined> */ js.Any

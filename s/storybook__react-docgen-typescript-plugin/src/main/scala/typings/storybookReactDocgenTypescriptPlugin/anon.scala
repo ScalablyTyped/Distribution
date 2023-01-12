@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[CompilerOptions]
     }
     
-    extension [Self <: CompilerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompilerOptions] (val x: Self) extends AnyVal {
       
       inline def setCompilerOptions(value: typings.typescript.mod.CompilerOptions): Self = StObject.set(x, "compilerOptions", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[DocgenCollectionName]
     }
     
-    extension [Self <: DocgenCollectionName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocgenCollectionName] (val x: Self) extends AnyVal {
       
       inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[SetDisplayName]
     }
     
-    extension [Self <: SetDisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetDisplayName] (val x: Self) extends AnyVal {
       
       inline def setDocgenCollectionName(value: String): Self = StObject.set(x, "docgenCollectionName", value.asInstanceOf[js.Any])
       
@@ -99,7 +102,8 @@ object anon {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def set_value(value: String): Self = StObject.set(x, "_value", value.asInstanceOf[js.Any])
     }

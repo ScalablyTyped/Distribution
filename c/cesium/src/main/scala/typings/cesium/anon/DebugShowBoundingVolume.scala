@@ -22,7 +22,8 @@ object DebugShowBoundingVolume {
     __obj.asInstanceOf[DebugShowBoundingVolume]
   }
   
-  extension [Self <: DebugShowBoundingVolume](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugShowBoundingVolume] (val x: Self) extends AnyVal {
     
     inline def setBlendOption(value: typings.cesium.mod.BlendOption): Self = StObject.set(x, "blendOption", value.asInstanceOf[js.Any])
     

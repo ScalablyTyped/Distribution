@@ -38,7 +38,8 @@ object SamlConfiguration {
     __obj.asInstanceOf[SamlConfiguration]
   }
   
-  extension [Self <: SamlConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamlConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowedOrganizations(value: AllowedOrganizations): Self = StObject.set(x, "allowedOrganizations", value.asInstanceOf[js.Any])
     

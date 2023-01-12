@@ -25,7 +25,8 @@ object Transform {
     __obj.asInstanceOf[Transform]
   }
   
-  extension [Self <: Transform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transform] (val x: Self) extends AnyVal {
     
     inline def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
     

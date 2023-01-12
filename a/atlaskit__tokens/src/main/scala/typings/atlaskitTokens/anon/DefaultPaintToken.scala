@@ -18,7 +18,8 @@ object DefaultPaintToken {
     __obj.asInstanceOf[DefaultPaintToken]
   }
   
-  extension [Self <: DefaultPaintToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultPaintToken] (val x: Self) extends AnyVal {
     
     inline def `set[default]`(value: PaintToken[BaseToken]): Self = StObject.set(x, "[default]", value.asInstanceOf[js.Any])
   }

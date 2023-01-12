@@ -37,7 +37,8 @@ object ConformanceMessaging {
     __obj.asInstanceOf[ConformanceMessaging]
   }
   
-  extension [Self <: ConformanceMessaging](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceMessaging] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

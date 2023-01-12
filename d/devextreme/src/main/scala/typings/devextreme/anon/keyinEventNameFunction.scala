@@ -16,7 +16,8 @@ object keyinEventNameFunction {
     __obj.asInstanceOf[keyinEventNameFunction]
   }
   
-  extension [Self <: keyinEventNameFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinEventNameFunction] (val x: Self) extends AnyVal {
     
     inline def setOrientationChanged(value: js.Function): Self = StObject.set(x, "orientationChanged", value.asInstanceOf[js.Any])
     

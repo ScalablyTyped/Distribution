@@ -23,7 +23,8 @@ object UsageLimitList {
     __obj.asInstanceOf[UsageLimitList]
   }
   
-  extension [Self <: UsageLimitList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageLimitList] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: String): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Args]
     }
     
-    extension [Self <: Args](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -46,7 +47,8 @@ object anon {
       __obj.asInstanceOf[Condition]
     }
     
-    extension [Self <: Condition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Condition] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: js.Function): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Location]
     }
     
-    extension [Self <: Location](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

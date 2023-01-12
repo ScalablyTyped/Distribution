@@ -25,7 +25,8 @@ object GoogleCloudAssetV1p7beta1RelationshipAttributes {
     __obj.asInstanceOf[GoogleCloudAssetV1p7beta1RelationshipAttributes]
   }
   
-  extension [Self <: GoogleCloudAssetV1p7beta1RelationshipAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudAssetV1p7beta1RelationshipAttributes] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

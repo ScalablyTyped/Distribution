@@ -28,7 +28,8 @@ object SnowflakeParameters {
     __obj.asInstanceOf[SnowflakeParameters]
   }
   
-  extension [Self <: SnowflakeParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnowflakeParameters] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: Database): Self = StObject.set(x, "Database", value.asInstanceOf[js.Any])
     

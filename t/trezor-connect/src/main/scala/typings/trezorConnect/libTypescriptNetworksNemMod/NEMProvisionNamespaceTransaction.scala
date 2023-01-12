@@ -36,7 +36,8 @@ object NEMProvisionNamespaceTransaction {
     __obj.asInstanceOf[NEMProvisionNamespaceTransaction]
   }
   
-  extension [Self <: NEMProvisionNamespaceTransaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NEMProvisionNamespaceTransaction] (val x: Self) extends AnyVal {
     
     inline def setNewPart(value: String): Self = StObject.set(x, "newPart", value.asInstanceOf[js.Any])
     

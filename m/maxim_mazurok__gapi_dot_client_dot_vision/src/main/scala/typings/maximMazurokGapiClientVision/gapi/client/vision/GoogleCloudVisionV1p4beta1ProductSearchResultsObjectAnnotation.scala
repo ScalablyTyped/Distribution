@@ -25,7 +25,8 @@ object GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation {
     __obj.asInstanceOf[GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation]
   }
   
-  extension [Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p4beta1ProductSearchResultsObjectAnnotation] (val x: Self) extends AnyVal {
     
     inline def setLanguageCode(value: String): Self = StObject.set(x, "languageCode", value.asInstanceOf[js.Any])
     

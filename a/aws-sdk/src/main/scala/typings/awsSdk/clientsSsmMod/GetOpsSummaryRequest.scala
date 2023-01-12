@@ -43,7 +43,8 @@ object GetOpsSummaryRequest {
     __obj.asInstanceOf[GetOpsSummaryRequest]
   }
   
-  extension [Self <: GetOpsSummaryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOpsSummaryRequest] (val x: Self) extends AnyVal {
     
     inline def setAggregators(value: OpsAggregatorList): Self = StObject.set(x, "Aggregators", value.asInstanceOf[js.Any])
     

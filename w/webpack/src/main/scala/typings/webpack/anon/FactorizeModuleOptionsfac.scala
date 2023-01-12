@@ -37,7 +37,8 @@ object FactorizeModuleOptionsfac {
     __obj.asInstanceOf[FactorizeModuleOptionsfac]
   }
   
-  extension [Self <: FactorizeModuleOptionsfac](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FactorizeModuleOptionsfac] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ElevationQueryResultSampleInfo {
     __obj.asInstanceOf[ElevationQueryResultSampleInfo]
   }
   
-  extension [Self <: ElevationQueryResultSampleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElevationQueryResultSampleInfo] (val x: Self) extends AnyVal {
     
     inline def setDemResolution(value: Double): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     

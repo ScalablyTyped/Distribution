@@ -23,7 +23,8 @@ object ToneChatScore {
     __obj.asInstanceOf[ToneChatScore]
   }
   
-  extension [Self <: ToneChatScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToneChatScore] (val x: Self) extends AnyVal {
     
     inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

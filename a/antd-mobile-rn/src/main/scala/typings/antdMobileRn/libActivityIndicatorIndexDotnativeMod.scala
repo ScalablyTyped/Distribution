@@ -42,7 +42,8 @@ object libActivityIndicatorIndexDotnativeMod {
       __obj.asInstanceOf[ActivityIndicatorNativeProps]
     }
     
-    extension [Self <: ActivityIndicatorNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActivityIndicatorNativeProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

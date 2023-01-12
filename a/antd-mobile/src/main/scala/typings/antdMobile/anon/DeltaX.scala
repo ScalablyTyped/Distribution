@@ -54,7 +54,8 @@ object DeltaX {
     __obj.asInstanceOf[DeltaX]
   }
   
-  extension [Self <: DeltaX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaX] (val x: Self) extends AnyVal {
     
     inline def setDeltaX(value: MutableRefObject[Double]): Self = StObject.set(x, "deltaX", value.asInstanceOf[js.Any])
     

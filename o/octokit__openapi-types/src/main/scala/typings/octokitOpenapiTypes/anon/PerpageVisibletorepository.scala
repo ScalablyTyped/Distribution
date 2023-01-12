@@ -22,7 +22,8 @@ object PerpageVisibletorepository {
     __obj.asInstanceOf[PerpageVisibletorepository]
   }
   
-  extension [Self <: PerpageVisibletorepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerpageVisibletorepository] (val x: Self) extends AnyVal {
     
     inline def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])
     

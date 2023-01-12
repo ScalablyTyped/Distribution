@@ -18,7 +18,8 @@ object GetTriggerResponse {
     __obj.asInstanceOf[GetTriggerResponse]
   }
   
-  extension [Self <: GetTriggerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetTriggerResponse] (val x: Self) extends AnyVal {
     
     inline def setTrigger(value: Trigger): Self = StObject.set(x, "Trigger", value.asInstanceOf[js.Any])
     

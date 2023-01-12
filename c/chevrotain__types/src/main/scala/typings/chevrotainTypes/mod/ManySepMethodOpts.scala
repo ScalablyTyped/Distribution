@@ -33,7 +33,8 @@ object ManySepMethodOpts {
     __obj.asInstanceOf[ManySepMethodOpts[T]]
   }
   
-  extension [Self <: ManySepMethodOpts[?], T](x: Self & ManySepMethodOpts[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManySepMethodOpts[?], T] (val x: Self & ManySepMethodOpts[T]) extends AnyVal {
     
     inline def setDEF(value: () => T): Self = StObject.set(x, "DEF", js.Any.fromFunction0(value))
     

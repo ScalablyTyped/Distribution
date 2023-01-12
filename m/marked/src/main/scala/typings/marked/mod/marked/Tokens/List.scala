@@ -31,7 +31,8 @@ object List {
     __obj.asInstanceOf[typings.marked.mod.marked.Tokens.List]
   }
   
-  extension [Self <: typings.marked.mod.marked.Tokens.List](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typings.marked.mod.marked.Tokens.List] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ListItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

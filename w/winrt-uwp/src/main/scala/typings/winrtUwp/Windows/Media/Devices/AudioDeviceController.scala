@@ -52,7 +52,8 @@ object AudioDeviceController {
     __obj.asInstanceOf[AudioDeviceController]
   }
   
-  extension [Self <: AudioDeviceController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioDeviceController] (val x: Self) extends AnyVal {
     
     inline def setGetAvailableMediaStreamProperties(value: MediaStreamType => IVectorView[IMediaEncodingProperties]): Self = StObject.set(x, "getAvailableMediaStreamProperties", js.Any.fromFunction1(value))
     

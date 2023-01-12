@@ -35,7 +35,8 @@ object DrivingResult {
     __obj.asInstanceOf[DrivingResult]
   }
   
-  extension [Self <: DrivingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrivingResult] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: LngLat | Poi): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

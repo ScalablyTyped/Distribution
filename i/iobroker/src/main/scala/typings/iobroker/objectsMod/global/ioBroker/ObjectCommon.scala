@@ -31,7 +31,8 @@ object ObjectCommon {
     __obj.asInstanceOf[ObjectCommon]
   }
   
-  extension [Self <: ObjectCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectCommon] (val x: Self) extends AnyVal {
     
     inline def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])
     

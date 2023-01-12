@@ -19,7 +19,8 @@ object SearchSearchProfile {
     __obj.asInstanceOf[SearchSearchProfile]
   }
   
-  extension [Self <: SearchSearchProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSearchProfile] (val x: Self) extends AnyVal {
     
     inline def setCollector(value: js.Array[SearchCollector]): Self = StObject.set(x, "collector", value.asInstanceOf[js.Any])
     

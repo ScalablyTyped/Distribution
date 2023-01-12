@@ -421,7 +421,8 @@ object ojLegend {
       __obj.asInstanceOf[ItemContext]
     }
     
-    extension [Self <: ItemContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemContext] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     }
@@ -443,7 +444,8 @@ object ojLegend {
       __obj.asInstanceOf[NodeContext]
     }
     
-    extension [Self <: NodeContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeContext] (val x: Self) extends AnyVal {
       
       inline def setItemIndex(value: Double): Self = StObject.set(x, "itemIndex", value.asInstanceOf[js.Any])
       
@@ -469,7 +471,8 @@ object ojLegend {
       __obj.asInstanceOf[PreferredSize]
     }
     
-    extension [Self <: PreferredSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreferredSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -503,7 +506,8 @@ object ojLegend {
       __obj.asInstanceOf[SectionContext]
     }
     
-    extension [Self <: SectionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SectionContext] (val x: Self) extends AnyVal {
       
       inline def setGetItems(value: TextString): Self = StObject.set(x, "getItems", value.asInstanceOf[js.Any])
       

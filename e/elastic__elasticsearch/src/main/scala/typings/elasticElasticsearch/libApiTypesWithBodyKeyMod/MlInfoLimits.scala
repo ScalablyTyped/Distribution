@@ -19,7 +19,8 @@ object MlInfoLimits {
     __obj.asInstanceOf[MlInfoLimits]
   }
   
-  extension [Self <: MlInfoLimits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlInfoLimits] (val x: Self) extends AnyVal {
     
     inline def setEffective_max_model_memory_limit(value: String): Self = StObject.set(x, "effective_max_model_memory_limit", value.asInstanceOf[js.Any])
     

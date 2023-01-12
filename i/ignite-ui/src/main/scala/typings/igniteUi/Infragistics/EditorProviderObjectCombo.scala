@@ -60,7 +60,8 @@ object EditorProviderObjectCombo {
     __obj.asInstanceOf[EditorProviderObjectCombo]
   }
   
-  extension [Self <: EditorProviderObjectCombo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorProviderObjectCombo] (val x: Self) extends AnyVal {
     
     inline def setCreateEditor(value: (js.Object, js.Object, js.Object, js.Object, js.Object, js.Object) => Unit): Self = StObject.set(x, "createEditor", js.Any.fromFunction6(value))
     

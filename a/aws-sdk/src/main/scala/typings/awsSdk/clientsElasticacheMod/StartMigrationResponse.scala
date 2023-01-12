@@ -15,7 +15,8 @@ object StartMigrationResponse {
     __obj.asInstanceOf[StartMigrationResponse]
   }
   
-  extension [Self <: StartMigrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartMigrationResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationGroup(value: ReplicationGroup): Self = StObject.set(x, "ReplicationGroup", value.asInstanceOf[js.Any])
     

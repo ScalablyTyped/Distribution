@@ -19,7 +19,8 @@ object RefreshRuntimeTokenInternalResponse {
     __obj.asInstanceOf[RefreshRuntimeTokenInternalResponse]
   }
   
-  extension [Self <: RefreshRuntimeTokenInternalResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshRuntimeTokenInternalResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object ReturnEffect {
     __obj.asInstanceOf[ReturnEffect]
   }
   
-  extension [Self <: ReturnEffect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnEffect] (val x: Self) extends AnyVal {
     
     inline def setMSFormsDotReturnEffect_typekey(value: ReturnEffect): Self = StObject.set(x, "MSForms.ReturnEffect_typekey", value.asInstanceOf[js.Any])
     

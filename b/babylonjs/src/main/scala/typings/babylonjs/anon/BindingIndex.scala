@@ -17,7 +17,8 @@ object BindingIndex {
     __obj.asInstanceOf[BindingIndex]
   }
   
-  extension [Self <: BindingIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingIndex] (val x: Self) extends AnyVal {
     
     inline def setBindingIndex(value: Double): Self = StObject.set(x, "bindingIndex", value.asInstanceOf[js.Any])
     

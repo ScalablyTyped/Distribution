@@ -30,7 +30,8 @@ object SemAct {
     __obj.asInstanceOf[SemAct]
   }
   
-  extension [Self <: SemAct](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SemAct] (val x: Self) extends AnyVal {
     
     inline def setCode(value: STRING): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

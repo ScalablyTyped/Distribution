@@ -20,7 +20,8 @@ object ManualSharding {
     __obj.asInstanceOf[ManualSharding]
   }
   
-  extension [Self <: ManualSharding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManualSharding] (val x: Self) extends AnyVal {
     
     inline def setTestTargetsForShard(value: js.Array[TestTargetsForShard]): Self = StObject.set(x, "testTargetsForShard", value.asInstanceOf[js.Any])
     

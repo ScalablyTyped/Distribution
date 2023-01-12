@@ -20,7 +20,8 @@ object QueryEntitiesEntity {
     __obj.asInstanceOf[QueryEntitiesEntity]
   }
   
-  extension [Self <: QueryEntitiesEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryEntitiesEntity] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

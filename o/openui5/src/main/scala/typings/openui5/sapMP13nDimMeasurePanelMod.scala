@@ -608,7 +608,8 @@ object sapMP13nDimMeasurePanelMod {
       __obj.asInstanceOf[P13nDimMeasurePanelSettings]
     }
     
-    extension [Self <: P13nDimMeasurePanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nDimMeasurePanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAvailableChartTypes(
         value: js.Array[typings.openui5.sapUiCoreItemMod.default] | typings.openui5.sapUiCoreItemMod.default | AggregationBindingInfo | (/* template literal string: {${string}} */ String)

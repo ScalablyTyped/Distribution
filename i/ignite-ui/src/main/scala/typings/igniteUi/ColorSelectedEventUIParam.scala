@@ -18,7 +18,8 @@ object ColorSelectedEventUIParam {
     __obj.asInstanceOf[ColorSelectedEventUIParam]
   }
   
-  extension [Self <: ColorSelectedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorSelectedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Any): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ChannelResource {
     __obj.asInstanceOf[ChannelResource]
   }
   
-  extension [Self <: ChannelResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChannelResource] (val x: Self) extends AnyVal {
     
     inline def setExpiration(value: Double): Self = StObject.set(x, "expiration", value.asInstanceOf[js.Any])
     

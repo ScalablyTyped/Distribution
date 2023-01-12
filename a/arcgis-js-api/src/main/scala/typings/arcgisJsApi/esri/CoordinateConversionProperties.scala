@@ -123,7 +123,8 @@ object CoordinateConversionProperties {
     __obj.asInstanceOf[CoordinateConversionProperties]
   }
   
-  extension [Self <: CoordinateConversionProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoordinateConversionProperties] (val x: Self) extends AnyVal {
     
     inline def setConversions(value: CollectionProperties[ConversionProperties]): Self = StObject.set(x, "conversions", value.asInstanceOf[js.Any])
     

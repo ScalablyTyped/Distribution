@@ -24,7 +24,8 @@ object AnimatedNode {
     __obj.asInstanceOf[AnimatedNode[T]]
   }
   
-  extension [Self <: AnimatedNode[?], T](x: Self & AnimatedNode[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimatedNode[?], T] (val x: Self & AnimatedNode[T]) extends AnyVal {
     
     inline def setIsNativelyInitialized(value: () => Boolean): Self = StObject.set(x, "isNativelyInitialized", js.Any.fromFunction0(value))
     

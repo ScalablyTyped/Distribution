@@ -46,7 +46,8 @@ object EaseToOptionseaseIdstring {
     __obj.asInstanceOf[EaseToOptionseaseIdstring]
   }
   
-  extension [Self <: EaseToOptionseaseIdstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EaseToOptionseaseIdstring] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Authority]
     }
     
-    extension [Self <: Authority](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Authority] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: String): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[PaymentRequestInput]
     }
     
-    extension [Self <: PaymentRequestInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentRequestInput] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
@@ -93,7 +95,8 @@ object mod {
       __obj.asInstanceOf[PaymentRequestOutput]
     }
     
-    extension [Self <: PaymentRequestOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentRequestOutput] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "authority", value.asInstanceOf[js.Any])
       
@@ -116,7 +119,8 @@ object mod {
       __obj.asInstanceOf[PaymentVerificationInput]
     }
     
-    extension [Self <: PaymentVerificationInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentVerificationInput] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "Amount", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object mod {
       __obj.asInstanceOf[PaymentVerificationOutput]
     }
     
-    extension [Self <: PaymentVerificationOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaymentVerificationOutput] (val x: Self) extends AnyVal {
       
       inline def setRefID(value: Double): Self = StObject.set(x, "RefID", value.asInstanceOf[js.Any])
       
@@ -158,7 +163,8 @@ object mod {
       __obj.asInstanceOf[RefreshAuthorityInput]
     }
     
-    extension [Self <: RefreshAuthorityInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshAuthorityInput] (val x: Self) extends AnyVal {
       
       inline def setAuthority(value: String): Self = StObject.set(x, "Authority", value.asInstanceOf[js.Any])
       
@@ -177,7 +183,8 @@ object mod {
       __obj.asInstanceOf[RefreshAuthorityOutput]
     }
     
-    extension [Self <: RefreshAuthorityOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshAuthorityOutput] (val x: Self) extends AnyVal {
       
       inline def setStatus(value: Double): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
@@ -196,7 +203,8 @@ object mod {
       __obj.asInstanceOf[UnverifiedTransactionsOutput]
     }
     
-    extension [Self <: UnverifiedTransactionsOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnverifiedTransactionsOutput] (val x: Self) extends AnyVal {
       
       inline def setAuthorities(value: js.Array[Authority]): Self = StObject.set(x, "authorities", value.asInstanceOf[js.Any])
       
@@ -228,7 +236,8 @@ object mod {
       __obj.asInstanceOf[ZarinPalInstance]
     }
     
-    extension [Self <: ZarinPalInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZarinPalInstance] (val x: Self) extends AnyVal {
       
       inline def setPaymentRequest(value: PaymentRequestInput => js.Promise[PaymentRequestOutput]): Self = StObject.set(x, "PaymentRequest", js.Any.fromFunction1(value))
       

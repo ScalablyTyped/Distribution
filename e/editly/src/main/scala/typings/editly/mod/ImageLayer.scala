@@ -43,7 +43,8 @@ object ImageLayer {
     __obj.asInstanceOf[ImageLayer]
   }
   
-  extension [Self <: ImageLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageLayer] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

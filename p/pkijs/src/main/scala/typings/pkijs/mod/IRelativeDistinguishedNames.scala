@@ -23,7 +23,8 @@ object IRelativeDistinguishedNames {
     __obj.asInstanceOf[IRelativeDistinguishedNames]
   }
   
-  extension [Self <: IRelativeDistinguishedNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRelativeDistinguishedNames] (val x: Self) extends AnyVal {
     
     inline def setTypesAndValues(value: js.Array[AttributeTypeAndValue]): Self = StObject.set(x, "typesAndValues", value.asInstanceOf[js.Any])
     

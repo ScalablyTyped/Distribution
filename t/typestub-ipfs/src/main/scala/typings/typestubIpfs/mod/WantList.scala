@@ -15,7 +15,8 @@ object WantList {
     __obj.asInstanceOf[WantList]
   }
   
-  extension [Self <: WantList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WantList] (val x: Self) extends AnyVal {
     
     inline def setKeys(value: js.Array[WantListItem]): Self = StObject.set(x, "Keys", value.asInstanceOf[js.Any])
     

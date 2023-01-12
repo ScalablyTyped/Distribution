@@ -15,7 +15,8 @@ object QueryCollab {
     __obj.asInstanceOf[QueryCollab]
   }
   
-  extension [Self <: QueryCollab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryCollab] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: Collab): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object WorkflowExecutionFailedEventAttributes {
     __obj.asInstanceOf[WorkflowExecutionFailedEventAttributes]
   }
   
-  extension [Self <: WorkflowExecutionFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkflowExecutionFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setDecisionTaskCompletedEventId(value: EventId): Self = StObject.set(x, "decisionTaskCompletedEventId", value.asInstanceOf[js.Any])
     

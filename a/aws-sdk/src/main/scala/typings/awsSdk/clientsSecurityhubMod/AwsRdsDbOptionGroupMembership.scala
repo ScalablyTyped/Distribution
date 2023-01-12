@@ -23,7 +23,8 @@ object AwsRdsDbOptionGroupMembership {
     __obj.asInstanceOf[AwsRdsDbOptionGroupMembership]
   }
   
-  extension [Self <: AwsRdsDbOptionGroupMembership](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsRdsDbOptionGroupMembership] (val x: Self) extends AnyVal {
     
     inline def setOptionGroupName(value: NonEmptyString): Self = StObject.set(x, "OptionGroupName", value.asInstanceOf[js.Any])
     

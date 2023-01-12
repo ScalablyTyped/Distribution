@@ -30,7 +30,8 @@ object buildMsWindowMod {
       __obj.asInstanceOf[MsCrypto]
     }
     
-    extension [Self <: MsCrypto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MsCrypto] (val x: Self) extends AnyVal {
       
       inline def setGetRandomValues(value: js.typedarray.Uint8Array => Unit): Self = StObject.set(x, "getRandomValues", js.Any.fromFunction1(value))
       

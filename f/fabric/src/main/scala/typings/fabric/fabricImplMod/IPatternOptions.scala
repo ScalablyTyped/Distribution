@@ -49,7 +49,8 @@ object IPatternOptions {
     __obj.asInstanceOf[IPatternOptions]
   }
   
-  extension [Self <: IPatternOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPatternOptions] (val x: Self) extends AnyVal {
     
     inline def setCrossOrigin(value: _empty | anonymous | `use-credentials`): Self = StObject.set(x, "crossOrigin", value.asInstanceOf[js.Any])
     

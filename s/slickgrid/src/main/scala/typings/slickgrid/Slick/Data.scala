@@ -26,7 +26,8 @@ object Data {
         __obj.asInstanceOf[Aggregator[T]]
       }
       
-      extension [Self <: Aggregator[?], T /* <: SlickData */](x: Self & Aggregator[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Aggregator[?], T /* <: SlickData */] (val x: Self & Aggregator[T]) extends AnyVal {
         
         inline def setAccumulate(value: T => Unit): Self = StObject.set(x, "accumulate", js.Any.fromFunction1(value))
         
@@ -173,7 +174,8 @@ object Data {
       __obj.asInstanceOf[DataViewOptions[T]]
     }
     
-    extension [Self <: DataViewOptions[?], T /* <: SlickData */](x: Self & DataViewOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataViewOptions[?], T /* <: SlickData */] (val x: Self & DataViewOptions[T]) extends AnyVal {
       
       inline def setGroupItemMetadataProvider(value: GroupItemMetadataProvider[T]): Self = StObject.set(x, "groupItemMetadataProvider", value.asInstanceOf[js.Any])
       
@@ -226,7 +228,8 @@ object Data {
       __obj.asInstanceOf[GroupItemMetadataProviderOptions]
     }
     
-    extension [Self <: GroupItemMetadataProviderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupItemMetadataProviderOptions] (val x: Self) extends AnyVal {
       
       inline def setEnableExpandCollapse(value: Boolean): Self = StObject.set(x, "enableExpandCollapse", value.asInstanceOf[js.Any])
       
@@ -296,7 +299,8 @@ object Data {
       __obj.asInstanceOf[GroupingOptions[T]]
     }
     
-    extension [Self <: GroupingOptions[?], T /* <: SlickData */](x: Self & GroupingOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupingOptions[?], T /* <: SlickData */] (val x: Self & GroupingOptions[T]) extends AnyVal {
       
       inline def setAggregateChildGroups(value: Boolean): Self = StObject.set(x, "aggregateChildGroups", value.asInstanceOf[js.Any])
       
@@ -361,7 +365,8 @@ object Data {
       __obj.asInstanceOf[OnRowsChangedEventData]
     }
     
-    extension [Self <: OnRowsChangedEventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnRowsChangedEventData] (val x: Self) extends AnyVal {
       
       inline def setRows(value: js.Array[Double]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
       
@@ -386,7 +391,8 @@ object Data {
       __obj.asInstanceOf[PagingOptions]
     }
     
-    extension [Self <: PagingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagingOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNum(value: Double): Self = StObject.set(x, "pageNum", value.asInstanceOf[js.Any])
       
@@ -425,7 +431,8 @@ object Data {
       __obj.asInstanceOf[RefreshHints]
     }
     
-    extension [Self <: RefreshHints](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefreshHints] (val x: Self) extends AnyVal {
       
       inline def setIgnoreDiffsAfter(value: Boolean): Self = StObject.set(x, "ignoreDiffsAfter", value.asInstanceOf[js.Any])
       

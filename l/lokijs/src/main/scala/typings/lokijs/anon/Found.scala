@@ -17,7 +17,8 @@ object Found {
     __obj.asInstanceOf[Found]
   }
   
-  extension [Self <: Found](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Found] (val x: Self) extends AnyVal {
     
     inline def setFound(value: Boolean): Self = StObject.set(x, "found", value.asInstanceOf[js.Any])
     

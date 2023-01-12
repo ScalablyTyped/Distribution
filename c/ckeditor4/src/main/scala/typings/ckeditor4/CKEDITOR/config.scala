@@ -540,7 +540,8 @@ object config {
     __obj.asInstanceOf[config]
   }
   
-  extension [Self <: config](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: config] (val x: Self) extends AnyVal {
     
     inline def setAllowedContent(value: Boolean | allowedContentRules): Self = StObject.set(x, "allowedContent", value.asInstanceOf[js.Any])
     
@@ -1624,7 +1625,8 @@ object config {
       __obj.asInstanceOf[styleObject]
     }
     
-    extension [Self <: styleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: styleObject] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object GoogleActionsTransactionsV3DigitalPurchaseCheckResult {
     __obj.asInstanceOf[GoogleActionsTransactionsV3DigitalPurchaseCheckResult]
   }
   
-  extension [Self <: GoogleActionsTransactionsV3DigitalPurchaseCheckResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsTransactionsV3DigitalPurchaseCheckResult] (val x: Self) extends AnyVal {
     
     inline def setResultType(value: GoogleActionsTransactionsV3DigitalPurchaseCheckResultResultType): Self = StObject.set(x, "resultType", value.asInstanceOf[js.Any])
     

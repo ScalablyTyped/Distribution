@@ -59,7 +59,8 @@ object CallbackDiskType {
     __obj.asInstanceOf[CallbackDiskType]
   }
   
-  extension [Self <: CallbackDiskType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackDiskType] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

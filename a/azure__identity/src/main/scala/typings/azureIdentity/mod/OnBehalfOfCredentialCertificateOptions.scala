@@ -39,7 +39,8 @@ object OnBehalfOfCredentialCertificateOptions {
     __obj.asInstanceOf[OnBehalfOfCredentialCertificateOptions]
   }
   
-  extension [Self <: OnBehalfOfCredentialCertificateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnBehalfOfCredentialCertificateOptions] (val x: Self) extends AnyVal {
     
     inline def setCertificatePath(value: String): Self = StObject.set(x, "certificatePath", value.asInstanceOf[js.Any])
     

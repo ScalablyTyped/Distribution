@@ -99,7 +99,8 @@ object dxVectorMap {
       __obj.asInstanceOf[CenterChangedEvent]
     }
     
-    extension [Self <: CenterChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CenterChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       
@@ -120,7 +121,8 @@ object dxVectorMap {
       __obj.asInstanceOf[ClickEvent]
     }
     
-    extension [Self <: ClickEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: MapLayerElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -189,7 +191,8 @@ object dxVectorMap {
       __obj.asInstanceOf[SelectionChangedEvent]
     }
     
-    extension [Self <: SelectionChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectionChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: MapLayerElement): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -218,7 +221,8 @@ object dxVectorMap {
       __obj.asInstanceOf[TooltipInfo]
     }
     
-    extension [Self <: TooltipInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: MapLayerElement | dxVectorMapAnnotationConfig): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       
@@ -296,7 +300,8 @@ object dxVectorMap {
       __obj.asInstanceOf[ZoomFactorChangedEvent]
     }
     
-    extension [Self <: ZoomFactorChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoomFactorChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setZoomFactor(value: Double): Self = StObject.set(x, "zoomFactor", value.asInstanceOf[js.Any])
     }

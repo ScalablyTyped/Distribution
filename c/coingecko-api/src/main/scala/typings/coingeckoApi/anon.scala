@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Additions]
     }
     
-    extension [Self <: Additions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Additions] (val x: Self) extends AnyVal {
       
       inline def setAdditions(value: Double): Self = StObject.set(x, "additions", value.asInstanceOf[js.Any])
       
@@ -55,7 +56,8 @@ object anon {
       __obj.asInstanceOf[Alexarank]
     }
     
-    extension [Self <: Alexarank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Alexarank] (val x: Self) extends AnyVal {
       
       inline def setAlexa_rank(value: Double): Self = StObject.set(x, "alexa_rank", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[Btc]
     }
     
-    extension [Self <: Btc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Btc] (val x: Self) extends AnyVal {
       
       inline def setBtc(value: Double): Self = StObject.set(x, "btc", value.asInstanceOf[js.Any])
       
@@ -166,7 +169,8 @@ object anon {
       __obj.asInstanceOf[Circulatingsupply]
     }
     
-    extension [Self <: Circulatingsupply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Circulatingsupply] (val x: Self) extends AnyVal {
       
       inline def setCirculating_supply(value: Double): Self = StObject.set(x, "circulating_supply", value.asInstanceOf[js.Any])
       
@@ -227,7 +231,8 @@ object anon {
       __obj.asInstanceOf[Closedissues]
     }
     
-    extension [Self <: Closedissues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Closedissues] (val x: Self) extends AnyVal {
       
       inline def setClosed_issues(value: Double): Self = StObject.set(x, "closed_issues", value.asInstanceOf[js.Any])
       
@@ -268,7 +273,8 @@ object anon {
       __obj.asInstanceOf[Currentprice]
     }
     
-    extension [Self <: Currentprice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Currentprice] (val x: Self) extends AnyVal {
       
       inline def setCurrent_price(value: Record[Currency & String, Double]): Self = StObject.set(x, "current_price", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object anon {
       __obj.asInstanceOf[Eth]
     }
     
-    extension [Self <: Eth](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eth] (val x: Self) extends AnyVal {
       
       inline def setBtc(value: Double): Self = StObject.set(x, "btc", value.asInstanceOf[js.Any])
       
@@ -330,7 +337,8 @@ object anon {
       __obj.asInstanceOf[Facebooklikes]
     }
     
-    extension [Self <: Facebooklikes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Facebooklikes] (val x: Self) extends AnyVal {
       
       inline def setFacebook_likes(value: Double): Self = StObject.set(x, "facebook_likes", value.asInstanceOf[js.Any])
       
@@ -380,7 +388,8 @@ object anon {
       __obj.asInstanceOf[Hastradingincentive]
     }
     
-    extension [Self <: Hastradingincentive](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hastradingincentive] (val x: Self) extends AnyVal {
       
       inline def setHas_trading_incentive(value: Boolean): Self = StObject.set(x, "has_trading_incentive", value.asInstanceOf[js.Any])
       
@@ -405,7 +414,8 @@ object anon {
       __obj.asInstanceOf[Price]
     }
     
-    extension [Self <: Price](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Price] (val x: Self) extends AnyVal {
       
       inline def setPrice(value: SimplePriceParams => js.Promise[Response[Any]]): Self = StObject.set(x, "price", js.Any.fromFunction1(value))
     }
@@ -424,7 +434,8 @@ object anon {
       __obj.asInstanceOf[Small]
     }
     
-    extension [Self <: Small](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Small] (val x: Self) extends AnyVal {
       
       inline def setSmall(value: String): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       

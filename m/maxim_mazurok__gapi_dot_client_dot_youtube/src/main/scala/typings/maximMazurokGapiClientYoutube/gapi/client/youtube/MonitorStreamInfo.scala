@@ -26,7 +26,8 @@ object MonitorStreamInfo {
     __obj.asInstanceOf[MonitorStreamInfo]
   }
   
-  extension [Self <: MonitorStreamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitorStreamInfo] (val x: Self) extends AnyVal {
     
     inline def setBroadcastStreamDelayMs(value: Double): Self = StObject.set(x, "broadcastStreamDelayMs", value.asInstanceOf[js.Any])
     

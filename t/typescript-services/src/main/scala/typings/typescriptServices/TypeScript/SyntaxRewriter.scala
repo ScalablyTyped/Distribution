@@ -114,7 +114,8 @@ object SyntaxRewriter {
     __obj.asInstanceOf[SyntaxRewriter]
   }
   
-  extension [Self <: SyntaxRewriter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxRewriter] (val x: Self) extends AnyVal {
     
     inline def setVisitList(value: ISyntaxList => ISyntaxList): Self = StObject.set(x, "visitList", js.Any.fromFunction1(value))
     

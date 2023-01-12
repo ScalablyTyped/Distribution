@@ -32,7 +32,8 @@ object PointerMouseTrackerEvent {
     __obj.asInstanceOf[PointerMouseTrackerEvent]
   }
   
-  extension [Self <: PointerMouseTrackerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointerMouseTrackerEvent] (val x: Self) extends AnyVal {
     
     inline def setIsTouchEvent(value: Boolean): Self = StObject.set(x, "isTouchEvent", value.asInstanceOf[js.Any])
     

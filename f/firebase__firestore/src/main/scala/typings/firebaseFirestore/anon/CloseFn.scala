@@ -17,7 +17,8 @@ object CloseFn {
     __obj.asInstanceOf[CloseFn[I]]
   }
   
-  extension [Self <: CloseFn[?], I](x: Self & CloseFn[I]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseFn[?], I] (val x: Self & CloseFn[I]) extends AnyVal {
     
     inline def setCloseFn(value: () => Unit): Self = StObject.set(x, "closeFn", js.Any.fromFunction0(value))
     

@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Form]
     }
     
-    extension [Self <: Form](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Form] (val x: Self) extends AnyVal {
       
       inline def setForm(value: String): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object anon {
       __obj.asInstanceOf[PartialInitializeOptions]
     }
     
-    extension [Self <: PartialInitializeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialInitializeOptions] (val x: Self) extends AnyVal {
       
       inline def setKeepDirty(value: Boolean): Self = StObject.set(x, "keepDirty", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[Props[P]]
     }
     
-    extension [Self <: Props[?], P](x: Self & Props[P]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props[?], P] (val x: Self & Props[P]) extends AnyVal {
       
       inline def setProps(value: P): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[ReduxForm]
     }
     
-    extension [Self <: ReduxForm](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReduxForm] (val x: Self) extends AnyVal {
       
       inline def set_reduxForm(value: WrappedReduxFormContext): Self = StObject.set(x, "_reduxForm", value.asInstanceOf[js.Any])
       

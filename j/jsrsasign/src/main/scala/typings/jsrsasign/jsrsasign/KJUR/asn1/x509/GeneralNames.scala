@@ -31,7 +31,8 @@ object GeneralNames {
     __obj.asInstanceOf[GeneralNames]
   }
   
-  extension [Self <: GeneralNames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeneralNames] (val x: Self) extends AnyVal {
     
     inline def setGetEncodedHex(value: () => String): Self = StObject.set(x, "getEncodedHex", js.Any.fromFunction0(value))
     

@@ -143,7 +143,8 @@ object AnnotationsFibonacciLabelOptions {
     __obj.asInstanceOf[AnnotationsFibonacciLabelOptions]
   }
   
-  extension [Self <: AnnotationsFibonacciLabelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsFibonacciLabelOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibility(value: AnnotationLabelAccessibilityOptionsObject): Self = StObject.set(x, "accessibility", value.asInstanceOf[js.Any])
     

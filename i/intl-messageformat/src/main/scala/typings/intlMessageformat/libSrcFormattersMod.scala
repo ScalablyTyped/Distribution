@@ -239,7 +239,8 @@ object libSrcFormattersMod {
       __obj.asInstanceOf[Formats]
     }
     
-    extension [Self <: Formats](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Formats] (val x: Self) extends AnyVal {
       
       inline def setDate(value: Record[Format[date], DateTimeFormatOptions]): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -268,7 +269,8 @@ object libSrcFormattersMod {
       __obj.asInstanceOf[FormatterCache]
     }
     
-    extension [Self <: FormatterCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatterCache] (val x: Self) extends AnyVal {
       
       inline def setDateTime(value: Record[String, DateTimeFormat]): Self = StObject.set(x, "dateTime", value.asInstanceOf[js.Any])
       
@@ -313,7 +315,8 @@ object libSrcFormattersMod {
       __obj.asInstanceOf[LiteralPart]
     }
     
-    extension [Self <: LiteralPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiteralPart] (val x: Self) extends AnyVal {
       
       inline def setType(value: literal): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -357,7 +360,8 @@ object libSrcFormattersMod {
       __obj.asInstanceOf[ObjectPart[T]]
     }
     
-    extension [Self <: ObjectPart[?], T](x: Self & ObjectPart[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectPart[?], T] (val x: Self & ObjectPart[T]) extends AnyVal {
       
       inline def setType(value: `object`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

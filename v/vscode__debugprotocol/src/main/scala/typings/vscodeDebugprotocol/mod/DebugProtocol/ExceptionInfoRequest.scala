@@ -32,7 +32,8 @@ object ExceptionInfoRequest {
     __obj.asInstanceOf[ExceptionInfoRequest]
   }
   
-  extension [Self <: ExceptionInfoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExceptionInfoRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: ExceptionInfoArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

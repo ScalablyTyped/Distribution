@@ -18,7 +18,8 @@ object SetTypeConfigurationOutput {
     __obj.asInstanceOf[SetTypeConfigurationOutput]
   }
   
-  extension [Self <: SetTypeConfigurationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetTypeConfigurationOutput] (val x: Self) extends AnyVal {
     
     inline def setConfigurationArn(value: TypeConfigurationArn): Self = StObject.set(x, "ConfigurationArn", value.asInstanceOf[js.Any])
     

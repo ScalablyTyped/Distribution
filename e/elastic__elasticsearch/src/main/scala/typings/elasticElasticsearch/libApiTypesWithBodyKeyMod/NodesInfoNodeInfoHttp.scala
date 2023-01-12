@@ -21,7 +21,8 @@ object NodesInfoNodeInfoHttp {
     __obj.asInstanceOf[NodesInfoNodeInfoHttp]
   }
   
-  extension [Self <: NodesInfoNodeInfoHttp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoNodeInfoHttp] (val x: Self) extends AnyVal {
     
     inline def setBound_address(value: js.Array[String]): Self = StObject.set(x, "bound_address", value.asInstanceOf[js.Any])
     

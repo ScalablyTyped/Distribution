@@ -40,7 +40,8 @@ object schematicsUtilsTypescriptImportsMod {
       __obj.asInstanceOf[Import]
     }
     
-    extension [Self <: Import](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Import] (val x: Self) extends AnyVal {
       
       inline def setImportModule(value: String): Self = StObject.set(x, "importModule", value.asInstanceOf[js.Any])
       

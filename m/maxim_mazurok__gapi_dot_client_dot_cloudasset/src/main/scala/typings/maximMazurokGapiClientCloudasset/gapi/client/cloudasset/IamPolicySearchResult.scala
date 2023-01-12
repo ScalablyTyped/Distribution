@@ -57,7 +57,8 @@ object IamPolicySearchResult {
     __obj.asInstanceOf[IamPolicySearchResult]
   }
   
-  extension [Self <: IamPolicySearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IamPolicySearchResult] (val x: Self) extends AnyVal {
     
     inline def setAssetType(value: String): Self = StObject.set(x, "assetType", value.asInstanceOf[js.Any])
     

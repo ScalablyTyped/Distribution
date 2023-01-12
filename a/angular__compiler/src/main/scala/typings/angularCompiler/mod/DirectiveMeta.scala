@@ -61,7 +61,8 @@ object DirectiveMeta {
     __obj.asInstanceOf[DirectiveMeta]
   }
   
-  extension [Self <: DirectiveMeta](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectiveMeta] (val x: Self) extends AnyVal {
     
     inline def setAnimationTriggerNames(value: AnimationTriggerNames): Self = StObject.set(x, "animationTriggerNames", value.asInstanceOf[js.Any])
     

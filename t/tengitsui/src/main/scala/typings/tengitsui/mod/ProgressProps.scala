@@ -28,7 +28,8 @@ object ProgressProps {
     __obj.asInstanceOf[ProgressProps]
   }
   
-  extension [Self <: ProgressProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressProps] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
     

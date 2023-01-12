@@ -237,7 +237,8 @@ object IDialogService {
     __obj.asInstanceOf[IDialogService]
   }
   
-  extension [Self <: IDialogService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDialogService] (val x: Self) extends AnyVal {
     
     inline def setClose(value: (IDialog, /* repeated */ Any) => Unit): Self = StObject.set(x, "close", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object JobWatermark {
     __obj.asInstanceOf[JobWatermark]
   }
   
-  extension [Self <: JobWatermark](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobWatermark] (val x: Self) extends AnyVal {
     
     inline def setEncryption(value: Encryption): Self = StObject.set(x, "Encryption", value.asInstanceOf[js.Any])
     

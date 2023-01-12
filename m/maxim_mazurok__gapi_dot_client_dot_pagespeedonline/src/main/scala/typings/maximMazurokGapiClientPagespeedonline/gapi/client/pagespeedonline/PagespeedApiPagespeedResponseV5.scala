@@ -37,7 +37,8 @@ object PagespeedApiPagespeedResponseV5 {
     __obj.asInstanceOf[PagespeedApiPagespeedResponseV5]
   }
   
-  extension [Self <: PagespeedApiPagespeedResponseV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagespeedApiPagespeedResponseV5] (val x: Self) extends AnyVal {
     
     inline def setAnalysisUTCTimestamp(value: String): Self = StObject.set(x, "analysisUTCTimestamp", value.asInstanceOf[js.Any])
     

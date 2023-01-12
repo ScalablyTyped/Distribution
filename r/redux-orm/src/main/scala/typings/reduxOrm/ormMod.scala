@@ -132,7 +132,8 @@ object ormMod {
       __obj.asInstanceOf[ORMOpts[MClassMap]]
     }
     
-    extension [Self <: ORMOpts[?], MClassMap](x: Self & ORMOpts[MClassMap]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ORMOpts[?], MClassMap] (val x: Self & ORMOpts[MClassMap]) extends AnyVal {
       
       inline def setCreateDatabase(value: DatabaseCreator): Self = StObject.set(x, "createDatabase", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object Followindexpattern {
     __obj.asInstanceOf[Followindexpattern]
   }
   
-  extension [Self <: Followindexpattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Followindexpattern] (val x: Self) extends AnyVal {
     
     inline def setFollow_index_pattern(value: IndexPattern): Self = StObject.set(x, "follow_index_pattern", value.asInstanceOf[js.Any])
     

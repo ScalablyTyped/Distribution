@@ -18,7 +18,8 @@ object BatchImportEvidenceToAssessmentControlResponse {
     __obj.asInstanceOf[BatchImportEvidenceToAssessmentControlResponse]
   }
   
-  extension [Self <: BatchImportEvidenceToAssessmentControlResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchImportEvidenceToAssessmentControlResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchImportEvidenceToAssessmentControlErrors): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

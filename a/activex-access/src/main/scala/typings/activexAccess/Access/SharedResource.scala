@@ -34,7 +34,8 @@ object SharedResource {
     __obj.asInstanceOf[SharedResource]
   }
   
-  extension [Self <: SharedResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedResource] (val x: Self) extends AnyVal {
     
     inline def setAccessDotSharedResource_typekey(value: SharedResource): Self = StObject.set(x, "Access.SharedResource_typekey", value.asInstanceOf[js.Any])
     

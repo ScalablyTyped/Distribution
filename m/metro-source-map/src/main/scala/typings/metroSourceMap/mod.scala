@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[BasicSourceMap]
     }
     
-    extension [Self <: BasicSourceMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasicSourceMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[FBSourceFunctionMap]
     }
     
-    extension [Self <: FBSourceFunctionMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FBSourceFunctionMap] (val x: Self) extends AnyVal {
       
       inline def setMappings(value: String): Self = StObject.set(x, "mappings", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object mod {
       __obj.asInstanceOf[IndexMap]
     }
     
-    extension [Self <: IndexMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexMap] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object mod {
       __obj.asInstanceOf[IndexMapSection]
     }
     
-    extension [Self <: IndexMapSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexMapSection] (val x: Self) extends AnyVal {
       
       inline def setMap(value: IndexMap | BasicSourceMap): Self = StObject.set(x, "map", value.asInstanceOf[js.Any])
       

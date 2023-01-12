@@ -110,7 +110,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[Query]
     }
     
-    extension [Self <: Query](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[ResultSet]
     }
     
-    extension [Self <: ResultSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSet] (val x: Self) extends AnyVal {
       
       inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
@@ -166,7 +168,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[ResultSetError]
     }
     
-    extension [Self <: ResultSetError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultSetError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -193,7 +196,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[SQLResultSet]
     }
     
-    extension [Self <: SQLResultSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQLResultSet] (val x: Self) extends AnyVal {
       
       inline def setInsertId(value: Double): Self = StObject.set(x, "insertId", value.asInstanceOf[js.Any])
       
@@ -231,7 +235,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[SQLResultSetRowList]
     }
     
-    extension [Self <: SQLResultSetRowList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SQLResultSetRowList] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Double => Any): Self = StObject.set(x, "item", js.Any.fromFunction1(value))
       
@@ -338,7 +343,8 @@ object buildSqliteDottypesMod {
       __obj.asInstanceOf[Window]
     }
     
-    extension [Self <: Window](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
       
       inline def setOpenDatabase(
         value: (/* name */ String, /* version */ String, /* displayName */ String, /* estimatedSize */ Double, /* creationCallback */ js.UndefOr[DatabaseCallback]) => Database

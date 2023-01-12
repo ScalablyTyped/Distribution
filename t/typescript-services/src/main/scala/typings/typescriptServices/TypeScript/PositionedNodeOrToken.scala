@@ -41,7 +41,8 @@ object PositionedNodeOrToken {
     __obj.asInstanceOf[PositionedNodeOrToken]
   }
   
-  extension [Self <: PositionedNodeOrToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PositionedNodeOrToken] (val x: Self) extends AnyVal {
     
     inline def setNodeOrToken(value: () => ISyntaxNodeOrToken): Self = StObject.set(x, "nodeOrToken", js.Any.fromFunction0(value))
   }

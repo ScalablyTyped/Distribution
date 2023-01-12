@@ -18,7 +18,8 @@ object DefaultIndex {
     __obj.asInstanceOf[DefaultIndex]
   }
   
-  extension [Self <: DefaultIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultIndex] (val x: Self) extends AnyVal {
     
     inline def setDefaultIndex(value: Double): Self = StObject.set(x, "defaultIndex", value.asInstanceOf[js.Any])
     

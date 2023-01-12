@@ -35,7 +35,8 @@ object HidBooleanControl {
     __obj.asInstanceOf[HidBooleanControl]
   }
   
-  extension [Self <: HidBooleanControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HidBooleanControl] (val x: Self) extends AnyVal {
     
     inline def setControlDescription(value: HidBooleanControlDescription): Self = StObject.set(x, "controlDescription", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object IRowFactory {
     __obj.asInstanceOf[IRowFactory]
   }
   
-  extension [Self <: IRowFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRowFactory] (val x: Self) extends AnyVal {
     
     inline def setAggCache(value: Any): Self = StObject.set(x, "aggCache", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object UpdateRequest {
     __obj.asInstanceOf[UpdateRequest[TDocument, TPartialDocument]]
   }
   
-  extension [Self <: UpdateRequest[?, ?], TDocument, TPartialDocument](x: Self & (UpdateRequest[TDocument, TPartialDocument])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRequest[?, ?], TDocument, TPartialDocument] (val x: Self & (UpdateRequest[TDocument, TPartialDocument])) extends AnyVal {
     
     inline def setBody(value: Detectnoop[TPartialDocument, TDocument]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

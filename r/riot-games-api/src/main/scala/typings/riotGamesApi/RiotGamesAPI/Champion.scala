@@ -37,7 +37,8 @@ object Champion {
       __obj.asInstanceOf[ChampionDto]
     }
     
-    extension [Self <: ChampionDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChampionDto] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -64,7 +65,8 @@ object Champion {
       __obj.asInstanceOf[ChampionListDto]
     }
     
-    extension [Self <: ChampionListDto](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChampionListDto] (val x: Self) extends AnyVal {
       
       inline def setChampions(value: js.Array[ChampionDto]): Self = StObject.set(x, "champions", value.asInstanceOf[js.Any])
       

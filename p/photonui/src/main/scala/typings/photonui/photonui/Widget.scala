@@ -77,7 +77,8 @@ object Widget {
     __obj.asInstanceOf[Widget]
   }
   
-  extension [Self <: Widget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
     
     inline def setAbsolutePosition(value: X): Self = StObject.set(x, "absolutePosition", value.asInstanceOf[js.Any])
     

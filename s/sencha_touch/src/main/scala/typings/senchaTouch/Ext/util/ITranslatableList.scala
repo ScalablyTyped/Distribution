@@ -27,7 +27,8 @@ object ITranslatableList {
     __obj.asInstanceOf[ITranslatableList]
   }
   
-  extension [Self <: ITranslatableList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITranslatableList] (val x: Self) extends AnyVal {
     
     inline def setGetItems(value: () => Array): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     

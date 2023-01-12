@@ -22,7 +22,8 @@ object ActionMeta {
     __obj.asInstanceOf[ActionMeta[TContext, TEvent, TAction]]
   }
   
-  extension [Self <: ActionMeta[?, ?, ?], TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */](x: Self & (ActionMeta[TContext, TEvent, TAction])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMeta[?, ?, ?], TContext, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] (val x: Self & (ActionMeta[TContext, TEvent, TAction])) extends AnyVal {
     
     inline def setAction(value: TAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
   }

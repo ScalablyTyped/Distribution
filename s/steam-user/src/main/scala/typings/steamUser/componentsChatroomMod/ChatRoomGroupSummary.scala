@@ -51,7 +51,8 @@ object ChatRoomGroupSummary {
     __obj.asInstanceOf[ChatRoomGroupSummary]
   }
   
-  extension [Self <: ChatRoomGroupSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatRoomGroupSummary] (val x: Self) extends AnyVal {
     
     inline def setActive_member_count(value: Double): Self = StObject.set(x, "active_member_count", value.asInstanceOf[js.Any])
     

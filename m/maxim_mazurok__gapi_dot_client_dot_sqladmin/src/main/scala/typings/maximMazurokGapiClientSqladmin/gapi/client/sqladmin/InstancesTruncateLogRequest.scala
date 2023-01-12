@@ -16,7 +16,8 @@ object InstancesTruncateLogRequest {
     __obj.asInstanceOf[InstancesTruncateLogRequest]
   }
   
-  extension [Self <: InstancesTruncateLogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesTruncateLogRequest] (val x: Self) extends AnyVal {
     
     inline def setTruncateLogContext(value: TruncateLogContext): Self = StObject.set(x, "truncateLogContext", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object ShowTitle {
     __obj.asInstanceOf[ShowTitle]
   }
   
-  extension [Self <: ShowTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowTitle] (val x: Self) extends AnyVal {
     
     inline def setShowTitle(value: Boolean): Self = StObject.set(x, "showTitle", value.asInstanceOf[js.Any])
     

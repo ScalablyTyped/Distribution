@@ -70,7 +70,8 @@ object InsertModalFooterProps {
     __obj.asInstanceOf[InsertModalFooterProps]
   }
   
-  extension [Self <: InsertModalFooterProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertModalFooterProps] (val x: Self) extends AnyVal {
     
     inline def setBeforeClose(value: /* e */ SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     

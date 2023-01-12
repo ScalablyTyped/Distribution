@@ -79,7 +79,8 @@ object PickButtonGroupPropsParti {
     __obj.asInstanceOf[PickButtonGroupPropsParti]
   }
   
-  extension [Self <: PickButtonGroupPropsParti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickButtonGroupPropsParti] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

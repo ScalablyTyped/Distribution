@@ -51,7 +51,8 @@ object ProgressBar {
     __obj.asInstanceOf[ProgressBar]
   }
   
-  extension [Self <: ProgressBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProgressBar] (val x: Self) extends AnyVal {
     
     inline def setOrientation(value: String): Self = StObject.set(x, "orientation", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object OverrideError {
     __obj.asInstanceOf[OverrideError]
   }
   
-  extension [Self <: OverrideError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverrideError] (val x: Self) extends AnyVal {
     
     inline def setForceError(value: Boolean): Self = StObject.set(x, "forceError", value.asInstanceOf[js.Any])
   }

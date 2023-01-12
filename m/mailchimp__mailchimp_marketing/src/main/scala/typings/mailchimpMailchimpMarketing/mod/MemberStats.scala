@@ -19,7 +19,8 @@ object MemberStats {
     __obj.asInstanceOf[MemberStats]
   }
   
-  extension [Self <: MemberStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberStats] (val x: Self) extends AnyVal {
     
     inline def setAvg_click_rate(value: Double): Self = StObject.set(x, "avg_click_rate", value.asInstanceOf[js.Any])
     

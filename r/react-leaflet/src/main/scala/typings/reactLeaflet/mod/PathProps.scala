@@ -24,7 +24,8 @@ object PathProps {
     __obj.asInstanceOf[PathProps]
   }
   
-  extension [Self <: PathProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: Children): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object DefaultCollisionCoordinator {
     __obj.asInstanceOf[DefaultCollisionCoordinator]
   }
   
-  extension [Self <: DefaultCollisionCoordinator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultCollisionCoordinator] (val x: Self) extends AnyVal {
     
     inline def set_collideWithWorld(value: Any): Self = StObject.set(x, "_collideWithWorld", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EnvelopeNotificationRequest {
     __obj.asInstanceOf[EnvelopeNotificationRequest]
   }
   
-  extension [Self <: EnvelopeNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setExpirations(
       value: /* A complex element that specifies the expiration settings for the envelope. */ Expirations

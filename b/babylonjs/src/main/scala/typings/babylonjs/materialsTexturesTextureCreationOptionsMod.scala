@@ -34,7 +34,8 @@ object materialsTexturesTextureCreationOptionsMod {
       __obj.asInstanceOf[DepthTextureCreationOptions]
     }
     
-    extension [Self <: DepthTextureCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepthTextureCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setBilinearFiltering(value: Boolean): Self = StObject.set(x, "bilinearFiltering", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object materialsTexturesTextureCreationOptionsMod {
       __obj.asInstanceOf[InternalTextureCreationOptions]
     }
     
-    extension [Self <: InternalTextureCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalTextureCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setCreateMipMaps(value: Boolean): Self = StObject.set(x, "createMipMaps", value.asInstanceOf[js.Any])
       
@@ -155,7 +157,8 @@ object materialsTexturesTextureCreationOptionsMod {
       __obj.asInstanceOf[RenderTargetCreationOptions]
     }
     
-    extension [Self <: RenderTargetCreationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTargetCreationOptions] (val x: Self) extends AnyVal {
       
       inline def setGenerateDepthBuffer(value: Boolean): Self = StObject.set(x, "generateDepthBuffer", value.asInstanceOf[js.Any])
       

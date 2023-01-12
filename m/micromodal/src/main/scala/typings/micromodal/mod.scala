@@ -83,7 +83,8 @@ object mod {
       __obj.asInstanceOf[MicroModalConfig]
     }
     
-    extension [Self <: MicroModalConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MicroModalConfig] (val x: Self) extends AnyVal {
       
       inline def setAwaitCloseAnimation(value: Boolean): Self = StObject.set(x, "awaitCloseAnimation", value.asInstanceOf[js.Any])
       

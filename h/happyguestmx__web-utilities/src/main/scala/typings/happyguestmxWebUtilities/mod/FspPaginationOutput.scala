@@ -32,7 +32,8 @@ object FspPaginationOutput {
     __obj.asInstanceOf[FspPaginationOutput]
   }
   
-  extension [Self <: FspPaginationOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FspPaginationOutput] (val x: Self) extends AnyVal {
     
     inline def setIndexBegin(value: Double): Self = StObject.set(x, "indexBegin", value.asInstanceOf[js.Any])
     

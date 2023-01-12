@@ -18,7 +18,8 @@ object TimeSeriesSelector {
     __obj.asInstanceOf[TimeSeriesSelector]
   }
   
-  extension [Self <: TimeSeriesSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeSeriesSelector] (val x: Self) extends AnyVal {
     
     inline def setTimeSeriesIdentifiers(value: TimeSeriesIdentifiers): Self = StObject.set(x, "TimeSeriesIdentifiers", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Characteristic {
     __obj.asInstanceOf[Characteristic]
   }
   
-  extension [Self <: Characteristic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Characteristic] (val x: Self) extends AnyVal {
     
     inline def setDescriptors(value: js.Array[CharacteristicDescriptor]): Self = StObject.set(x, "descriptors", value.asInstanceOf[js.Any])
     

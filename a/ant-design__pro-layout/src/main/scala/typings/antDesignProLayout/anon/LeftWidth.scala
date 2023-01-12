@@ -15,7 +15,8 @@ object LeftWidth {
     __obj.asInstanceOf[LeftWidth]
   }
   
-  extension [Self <: LeftWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeftWidth] (val x: Self) extends AnyVal {
     
     inline def setLeftWidth(value: String): Self = StObject.set(x, "leftWidth", value.asInstanceOf[js.Any])
     

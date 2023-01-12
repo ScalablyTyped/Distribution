@@ -473,7 +473,8 @@ object coreMod {
       __obj.asInstanceOf[FileTypeResult]
     }
     
-    extension [Self <: FileTypeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileTypeResult] (val x: Self) extends AnyVal {
       
       inline def setExt(value: FileExtension): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
       
@@ -908,7 +909,8 @@ object coreMod {
       __obj.asInstanceOf[StreamOptions]
     }
     
-    extension [Self <: StreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamOptions] (val x: Self) extends AnyVal {
       
       inline def setSampleSize(value: Double): Self = StObject.set(x, "sampleSize", value.asInstanceOf[js.Any])
       

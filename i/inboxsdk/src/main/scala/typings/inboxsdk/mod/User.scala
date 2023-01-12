@@ -32,7 +32,8 @@ object User {
       __obj.asInstanceOf[UserInstance]
     }
     
-    extension [Self <: UserInstance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserInstance] (val x: Self) extends AnyVal {
       
       inline def setGetAccountSwitcherContactList(value: () => js.Array[Contact]): Self = StObject.set(x, "getAccountSwitcherContactList", js.Any.fromFunction0(value))
       

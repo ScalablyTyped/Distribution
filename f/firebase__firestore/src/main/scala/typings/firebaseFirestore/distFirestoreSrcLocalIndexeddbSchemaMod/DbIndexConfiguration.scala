@@ -26,7 +26,8 @@ object DbIndexConfiguration {
     __obj.asInstanceOf[DbIndexConfiguration]
   }
   
-  extension [Self <: DbIndexConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbIndexConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCollectionGroup(value: String): Self = StObject.set(x, "collectionGroup", value.asInstanceOf[js.Any])
     

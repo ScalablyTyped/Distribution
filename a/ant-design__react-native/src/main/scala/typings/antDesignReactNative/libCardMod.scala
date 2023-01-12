@@ -67,7 +67,8 @@ object libCardMod {
       __obj.asInstanceOf[CardNativeProps]
     }
     
-    extension [Self <: CardNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardNativeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

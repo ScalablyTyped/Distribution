@@ -458,7 +458,8 @@ object sapUiCommonsAccordionSectionMod {
       __obj.asInstanceOf[AccordionSectionSettings]
     }
     
-    extension [Self <: AccordionSectionSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionSectionSettings] (val x: Self) extends AnyVal {
       
       inline def setCollapsed(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object ThemeVersion {
     __obj.asInstanceOf[ThemeVersion]
   }
   
-  extension [Self <: ThemeVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeVersion] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

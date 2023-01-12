@@ -19,7 +19,8 @@ object JQueryRowGridJSOptions {
     __obj.asInstanceOf[JQueryRowGridJSOptions]
   }
   
-  extension [Self <: JQueryRowGridJSOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryRowGridJSOptions] (val x: Self) extends AnyVal {
     
     inline def setItemSelector(value: String): Self = StObject.set(x, "itemSelector", value.asInstanceOf[js.Any])
     

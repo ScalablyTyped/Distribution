@@ -25,7 +25,8 @@ object AllowedMethods {
     __obj.asInstanceOf[AllowedMethods]
   }
   
-  extension [Self <: AllowedMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedMethods] (val x: Self) extends AnyVal {
     
     inline def setCachedMethods(value: CachedMethods): Self = StObject.set(x, "CachedMethods", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetFrameOwnerResponse {
     __obj.asInstanceOf[GetFrameOwnerResponse]
   }
   
-  extension [Self <: GetFrameOwnerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFrameOwnerResponse] (val x: Self) extends AnyVal {
     
     inline def setBackendNodeId(value: BackendNodeId): Self = StObject.set(x, "backendNodeId", value.asInstanceOf[js.Any])
     

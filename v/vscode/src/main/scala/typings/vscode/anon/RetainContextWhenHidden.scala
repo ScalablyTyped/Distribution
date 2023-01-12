@@ -31,7 +31,8 @@ object RetainContextWhenHidden {
     __obj.asInstanceOf[RetainContextWhenHidden]
   }
   
-  extension [Self <: RetainContextWhenHidden](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RetainContextWhenHidden] (val x: Self) extends AnyVal {
     
     inline def setRetainContextWhenHidden(value: Boolean): Self = StObject.set(x, "retainContextWhenHidden", value.asInstanceOf[js.Any])
     

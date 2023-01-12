@@ -1588,7 +1588,8 @@ object react3x2Mod {
       __obj.asInstanceOf[ElementAttributes[T]]
     }
     
-    extension [Self <: ElementAttributes[?], T](x: Self & ElementAttributes[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElementAttributes[?], T] (val x: Self & ElementAttributes[T]) extends AnyVal {
       
       inline def setAccentHeight(value: Double | String): Self = StObject.set(x, "accentHeight", value.asInstanceOf[js.Any])
       

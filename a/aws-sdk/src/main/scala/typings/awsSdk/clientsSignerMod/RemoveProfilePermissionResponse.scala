@@ -18,7 +18,8 @@ object RemoveProfilePermissionResponse {
     __obj.asInstanceOf[RemoveProfilePermissionResponse]
   }
   
-  extension [Self <: RemoveProfilePermissionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveProfilePermissionResponse] (val x: Self) extends AnyVal {
     
     inline def setRevisionId(value: String): Self = StObject.set(x, "revisionId", value.asInstanceOf[js.Any])
     

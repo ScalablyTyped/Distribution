@@ -190,7 +190,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[EulerLayoutOptions]
     }
     
-    extension [Self <: EulerLayoutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EulerLayoutOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean | end): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

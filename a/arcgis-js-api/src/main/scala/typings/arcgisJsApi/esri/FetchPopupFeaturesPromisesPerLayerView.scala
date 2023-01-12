@@ -27,7 +27,8 @@ object FetchPopupFeaturesPromisesPerLayerView {
     __obj.asInstanceOf[FetchPopupFeaturesPromisesPerLayerView]
   }
   
-  extension [Self <: FetchPopupFeaturesPromisesPerLayerView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchPopupFeaturesPromisesPerLayerView] (val x: Self) extends AnyVal {
     
     inline def setLayerView(value: LayerView): Self = StObject.set(x, "layerView", value.asInstanceOf[js.Any])
     

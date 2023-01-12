@@ -23,7 +23,8 @@ object ClientSendOptions {
     __obj.asInstanceOf[ClientSendOptions]
   }
   
-  extension [Self <: ClientSendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSendOptions] (val x: Self) extends AnyVal {
     
     inline def setSandbox(value: Sandbox): Self = StObject.set(x, "sandbox", value.asInstanceOf[js.Any])
     

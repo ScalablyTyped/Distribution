@@ -125,7 +125,8 @@ object libComponentsContentSwitcherContentSwitcherMod {
       __obj.asInstanceOf[ContentSwitcherOnChangeData]
     }
     
-    extension [Self <: ContentSwitcherOnChangeData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSwitcherOnChangeData] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -516,7 +517,8 @@ object libComponentsContentSwitcherContentSwitcherMod {
       __obj.asInstanceOf[ContentSwitcherProps]
     }
     
-    extension [Self <: ContentSwitcherProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentSwitcherProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

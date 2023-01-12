@@ -22,7 +22,8 @@ object TimelineStyleUpdateData {
     __obj.asInstanceOf[TimelineStyleUpdateData]
   }
   
-  extension [Self <: TimelineStyleUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineStyleUpdateData] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

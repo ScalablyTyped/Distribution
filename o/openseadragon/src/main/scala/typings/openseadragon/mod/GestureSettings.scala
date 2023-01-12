@@ -29,7 +29,8 @@ object GestureSettings {
     __obj.asInstanceOf[GestureSettings]
   }
   
-  extension [Self <: GestureSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GestureSettings] (val x: Self) extends AnyVal {
     
     inline def setClickToZoom(value: Boolean): Self = StObject.set(x, "clickToZoom", value.asInstanceOf[js.Any])
     

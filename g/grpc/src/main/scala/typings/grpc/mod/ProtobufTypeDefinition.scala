@@ -21,7 +21,8 @@ object ProtobufTypeDefinition {
     __obj.asInstanceOf[ProtobufTypeDefinition]
   }
   
-  extension [Self <: ProtobufTypeDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtobufTypeDefinition] (val x: Self) extends AnyVal {
     
     inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
     

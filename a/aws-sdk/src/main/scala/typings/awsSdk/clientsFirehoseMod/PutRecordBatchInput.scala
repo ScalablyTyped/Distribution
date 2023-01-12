@@ -23,7 +23,8 @@ object PutRecordBatchInput {
     __obj.asInstanceOf[PutRecordBatchInput]
   }
   
-  extension [Self <: PutRecordBatchInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutRecordBatchInput] (val x: Self) extends AnyVal {
     
     inline def setDeliveryStreamName(value: DeliveryStreamName): Self = StObject.set(x, "DeliveryStreamName", value.asInstanceOf[js.Any])
     

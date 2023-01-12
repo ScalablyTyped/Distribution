@@ -24,7 +24,8 @@ object Desc {
     __obj.asInstanceOf[Desc]
   }
   
-  extension [Self <: Desc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Desc] (val x: Self) extends AnyVal {
     
     inline def setDesc(value: ReactNode): Self = StObject.set(x, "desc", value.asInstanceOf[js.Any])
     

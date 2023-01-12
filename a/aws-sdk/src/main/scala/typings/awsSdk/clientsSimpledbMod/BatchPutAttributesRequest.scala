@@ -23,7 +23,8 @@ object BatchPutAttributesRequest {
     __obj.asInstanceOf[BatchPutAttributesRequest]
   }
   
-  extension [Self <: BatchPutAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: String): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

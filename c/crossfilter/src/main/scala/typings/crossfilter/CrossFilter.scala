@@ -52,7 +52,8 @@ object CrossFilter {
       __obj.asInstanceOf[typings.crossfilter.CrossFilter.CrossFilter[T]]
     }
     
-    extension [Self <: typings.crossfilter.CrossFilter.CrossFilter[?], T](x: Self & typings.crossfilter.CrossFilter.CrossFilter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.crossfilter.CrossFilter.CrossFilter[?], T] (val x: Self & typings.crossfilter.CrossFilter.CrossFilter[T]) extends AnyVal {
       
       inline def setAdd(value: js.Array[T] => typings.crossfilter.CrossFilter.CrossFilter[T]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       
@@ -181,7 +182,8 @@ object CrossFilter {
       __obj.asInstanceOf[GroupAll[T, TValue]]
     }
     
-    extension [Self <: GroupAll[?, ?], T, TValue](x: Self & (GroupAll[T, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GroupAll[?, ?], T, TValue] (val x: Self & (GroupAll[T, TValue])) extends AnyVal {
       
       inline def setDispose(value: () => GroupAll[T, TValue]): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
       
@@ -210,7 +212,8 @@ object CrossFilter {
       __obj.asInstanceOf[Grouping[TKey, TValue]]
     }
     
-    extension [Self <: Grouping[?, ?], TKey, TValue](x: Self & (Grouping[TKey, TValue])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Grouping[?, ?], TKey, TValue] (val x: Self & (Grouping[TKey, TValue])) extends AnyVal {
       
       inline def setKey(value: TKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

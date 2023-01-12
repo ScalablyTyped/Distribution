@@ -23,7 +23,8 @@ object BatchGetPartitionResponse {
     __obj.asInstanceOf[BatchGetPartitionResponse]
   }
   
-  extension [Self <: BatchGetPartitionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetPartitionResponse] (val x: Self) extends AnyVal {
     
     inline def setPartitions(value: PartitionList): Self = StObject.set(x, "Partitions", value.asInstanceOf[js.Any])
     

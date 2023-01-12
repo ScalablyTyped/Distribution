@@ -18,7 +18,8 @@ object IKEVersionsListValue {
     __obj.asInstanceOf[IKEVersionsListValue]
   }
   
-  extension [Self <: IKEVersionsListValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKEVersionsListValue] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "Value", value.asInstanceOf[js.Any])
     

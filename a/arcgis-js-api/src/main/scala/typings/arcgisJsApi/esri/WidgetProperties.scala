@@ -44,7 +44,8 @@ object WidgetProperties {
     __obj.asInstanceOf[WidgetProperties]
   }
   
-  extension [Self <: WidgetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WidgetProperties] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

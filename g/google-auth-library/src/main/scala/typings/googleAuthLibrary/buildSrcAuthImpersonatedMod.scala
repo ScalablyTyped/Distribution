@@ -88,7 +88,8 @@ object buildSrcAuthImpersonatedMod {
       __obj.asInstanceOf[FetchIdTokenOptions]
     }
     
-    extension [Self <: FetchIdTokenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchIdTokenOptions] (val x: Self) extends AnyVal {
       
       inline def setIncludeEmail(value: Boolean): Self = StObject.set(x, "includeEmail", value.asInstanceOf[js.Any])
     }
@@ -106,7 +107,8 @@ object buildSrcAuthImpersonatedMod {
       __obj.asInstanceOf[FetchIdTokenResponse]
     }
     
-    extension [Self <: FetchIdTokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchIdTokenResponse] (val x: Self) extends AnyVal {
       
       inline def setToken(value: String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -153,7 +155,8 @@ object buildSrcAuthImpersonatedMod {
       __obj.asInstanceOf[ImpersonatedOptions]
     }
     
-    extension [Self <: ImpersonatedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImpersonatedOptions] (val x: Self) extends AnyVal {
       
       inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
       
@@ -198,7 +201,8 @@ object buildSrcAuthImpersonatedMod {
       __obj.asInstanceOf[TokenResponse]
     }
     
-    extension [Self <: TokenResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenResponse] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

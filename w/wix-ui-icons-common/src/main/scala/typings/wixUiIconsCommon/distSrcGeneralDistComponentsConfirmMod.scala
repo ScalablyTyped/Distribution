@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsConfirmMod extends Shortcut {
       __obj.asInstanceOf[ConfirmProps]
     }
     
-    extension [Self <: ConfirmProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConfirmProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

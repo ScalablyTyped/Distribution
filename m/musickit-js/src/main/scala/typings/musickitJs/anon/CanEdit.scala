@@ -29,7 +29,8 @@ object CanEdit {
     __obj.asInstanceOf[CanEdit]
   }
   
-  extension [Self <: CanEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CanEdit] (val x: Self) extends AnyVal {
     
     inline def setArtwork(value: typings.musickitJs.MusicKit.Artwork): Self = StObject.set(x, "artwork", value.asInstanceOf[js.Any])
     

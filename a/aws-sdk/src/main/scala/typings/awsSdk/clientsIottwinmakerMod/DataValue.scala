@@ -58,7 +58,8 @@ object DataValue {
     __obj.asInstanceOf[DataValue]
   }
   
-  extension [Self <: DataValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataValue] (val x: Self) extends AnyVal {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     

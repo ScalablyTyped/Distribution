@@ -18,7 +18,8 @@ object MaxMin {
     __obj.asInstanceOf[MaxMin]
   }
   
-  extension [Self <: MaxMin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxMin] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Vector3): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object DirectoryMapping {
     __obj.asInstanceOf[DirectoryMapping]
   }
   
-  extension [Self <: DirectoryMapping](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryMapping] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object IAttachKey2clickOptions {
     __obj.asInstanceOf[IAttachKey2clickOptions]
   }
   
-  extension [Self <: IAttachKey2clickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAttachKey2clickOptions] (val x: Self) extends AnyVal {
     
     inline def setDisableTabStop(value: Boolean): Self = StObject.set(x, "disableTabStop", value.asInstanceOf[js.Any])
     

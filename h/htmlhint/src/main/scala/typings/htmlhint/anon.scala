@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[Col]
     }
     
-    extension [Self <: Col](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Col] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -83,7 +85,8 @@ object anon {
       __obj.asInstanceOf[PartialBlock]
     }
     
-    extension [Self <: PartialBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialBlock] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[StyleInjectOptions]
     }
     
-    extension [Self <: StyleInjectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleInjectOptions] (val x: Self) extends AnyVal {
       
       inline def setInsertAt(value: top): Self = StObject.set(x, "insertAt", value.asInstanceOf[js.Any])
       

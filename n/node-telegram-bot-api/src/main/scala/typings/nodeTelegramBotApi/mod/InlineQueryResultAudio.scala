@@ -32,7 +32,8 @@ object InlineQueryResultAudio {
     __obj.asInstanceOf[InlineQueryResultAudio]
   }
   
-  extension [Self <: InlineQueryResultAudio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlineQueryResultAudio] (val x: Self) extends AnyVal {
     
     inline def setAudio_duration(value: Double): Self = StObject.set(x, "audio_duration", value.asInstanceOf[js.Any])
     

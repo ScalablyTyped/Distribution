@@ -43,7 +43,8 @@ object InstancesDistribution {
     __obj.asInstanceOf[InstancesDistribution]
   }
   
-  extension [Self <: InstancesDistribution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesDistribution] (val x: Self) extends AnyVal {
     
     inline def setOnDemandAllocationStrategy(value: XmlString): Self = StObject.set(x, "OnDemandAllocationStrategy", value.asInstanceOf[js.Any])
     

@@ -63,7 +63,8 @@ object Facets {
     __obj.asInstanceOf[Facets]
   }
   
-  extension [Self <: Facets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Facets] (val x: Self) extends AnyVal {
     
     inline def setAllowedTargets(value: NameString): Self = StObject.set(x, "allowedTargets", value.asInstanceOf[js.Any])
     

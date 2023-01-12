@@ -90,7 +90,8 @@ object Geocoder {
       __obj.asInstanceOf[BatchReGeocodeResult]
     }
     
-    extension [Self <: BatchReGeocodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BatchReGeocodeResult] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object Geocoder {
       __obj.asInstanceOf[BuildingArea]
     }
     
-    extension [Self <: BuildingArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildingArea] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -186,7 +188,8 @@ object Geocoder {
       __obj.asInstanceOf[Cross]
     }
     
-    extension [Self <: Cross](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cross] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -223,7 +226,8 @@ object Geocoder {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Event_[complete, GeocodeResult | js.Object | ReGeocodeResult | BatchReGeocodeResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -271,7 +275,8 @@ object Geocoder {
       __obj.asInstanceOf[Geocode]
     }
     
-    extension [Self <: Geocode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Geocode] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -361,7 +366,8 @@ object Geocoder {
       __obj.asInstanceOf[GeocodeAddressComponent]
     }
     
-    extension [Self <: GeocodeAddressComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeAddressComponent] (val x: Self) extends AnyVal {
       
       inline def setBuilding(value: String): Self = StObject.set(x, "building", value.asInstanceOf[js.Any])
       
@@ -411,7 +417,8 @@ object Geocoder {
       __obj.asInstanceOf[GeocodeResult]
     }
     
-    extension [Self <: GeocodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeocodeResult] (val x: Self) extends AnyVal {
       
       inline def setGeocodes(value: js.Array[Geocode]): Self = StObject.set(x, "geocodes", value.asInstanceOf[js.Any])
       
@@ -457,7 +464,8 @@ object Geocoder {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBatch(value: Boolean): Self = StObject.set(x, "batch", value.asInstanceOf[js.Any])
       
@@ -523,7 +531,8 @@ object Geocoder {
       __obj.asInstanceOf[ReGeocode]
     }
     
-    extension [Self <: ReGeocode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReGeocode] (val x: Self) extends AnyVal {
       
       inline def setAddressComponent(value: ReGeocodeAddressComponent): Self = StObject.set(x, "addressComponent", value.asInstanceOf[js.Any])
       
@@ -637,7 +646,8 @@ object Geocoder {
       __obj.asInstanceOf[ReGeocodeAddressComponent]
     }
     
-    extension [Self <: ReGeocodeAddressComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReGeocodeAddressComponent] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -691,7 +701,8 @@ object Geocoder {
       __obj.asInstanceOf[ReGeocodeAoi]
     }
     
-    extension [Self <: ReGeocodeAoi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReGeocodeAoi] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -772,7 +783,8 @@ object Geocoder {
       __obj.asInstanceOf[ReGeocodePoi]
     }
     
-    extension [Self <: ReGeocodePoi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReGeocodePoi] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
       
@@ -813,7 +825,8 @@ object Geocoder {
       __obj.asInstanceOf[ReGeocodeResult]
     }
     
-    extension [Self <: ReGeocodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReGeocodeResult] (val x: Self) extends AnyVal {
       
       inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -855,7 +868,8 @@ object Geocoder {
       __obj.asInstanceOf[Road]
     }
     
-    extension [Self <: Road](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Road] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       

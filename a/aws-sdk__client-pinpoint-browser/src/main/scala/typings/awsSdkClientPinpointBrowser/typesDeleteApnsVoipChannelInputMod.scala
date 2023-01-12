@@ -46,7 +46,8 @@ object typesDeleteApnsVoipChannelInputMod {
       __obj.asInstanceOf[DeleteApnsVoipChannelInput]
     }
     
-    extension [Self <: DeleteApnsVoipChannelInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeleteApnsVoipChannelInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

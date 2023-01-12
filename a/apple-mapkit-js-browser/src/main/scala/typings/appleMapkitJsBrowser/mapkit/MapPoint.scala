@@ -52,7 +52,8 @@ object MapPoint {
     __obj.asInstanceOf[MapPoint]
   }
   
-  extension [Self <: MapPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapPoint] (val x: Self) extends AnyVal {
     
     inline def setCopy(value: () => MapPoint): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
     

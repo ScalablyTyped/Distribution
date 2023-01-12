@@ -33,7 +33,8 @@ object ResponseInformation {
     __obj.asInstanceOf[ResponseInformation]
   }
   
-  extension [Self <: ResponseInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseInformation] (val x: Self) extends AnyVal {
     
     inline def setAdvertiserId(value: Double): Self = StObject.set(x, "advertiserId", value.asInstanceOf[js.Any])
     

@@ -116,7 +116,8 @@ object adapterMod {
       __obj.asInstanceOf[MDCListAdapter]
     }
     
-    extension [Self <: MDCListAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCListAdapter] (val x: Self) extends AnyVal {
       
       inline def setAddClassForElementIndex(value: (Double, String) => Unit): Self = StObject.set(x, "addClassForElementIndex", js.Any.fromFunction2(value))
       

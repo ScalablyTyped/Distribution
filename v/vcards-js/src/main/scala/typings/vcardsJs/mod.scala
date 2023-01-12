@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[Address]
     }
     
-    extension [Self <: Address](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Address] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Photo]
     }
     
-    extension [Self <: Photo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Photo] (val x: Self) extends AnyVal {
       
       inline def setAttachFromUrl(value: (String, String) => Unit): Self = StObject.set(x, "attachFromUrl", js.Any.fromFunction2(value))
       
@@ -154,7 +156,8 @@ object mod {
       __obj.asInstanceOf[SocialUrls]
     }
     
-    extension [Self <: SocialUrls](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocialUrls] (val x: Self) extends AnyVal {
       
       inline def setFacebook(value: String): Self = StObject.set(x, "facebook", value.asInstanceOf[js.Any])
       
@@ -400,7 +403,8 @@ object mod {
       __obj.asInstanceOf[vCard]
     }
     
-    extension [Self <: vCard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: vCard] (val x: Self) extends AnyVal {
       
       inline def setAnniversary(value: js.Date): Self = StObject.set(x, "anniversary", value.asInstanceOf[js.Any])
       

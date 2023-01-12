@@ -31,7 +31,8 @@ object distFirestoreSrcLocalIndexeddbRemoteDocumentCacheMod {
       __obj.asInstanceOf[DocumentSizeEntry]
     }
     
-    extension [Self <: DocumentSizeEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentSizeEntry] (val x: Self) extends AnyVal {
       
       inline def setDocument(value: MutableDocument): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
       

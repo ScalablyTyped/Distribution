@@ -146,7 +146,8 @@ object mod {
       __obj.asInstanceOf[RemoteConfig]
     }
     
-    extension [Self <: RemoteConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfig] (val x: Self) extends AnyVal {
       
       inline def setActivate(value: () => js.Promise[Boolean]): Self = StObject.set(x, "activate", js.Any.fromFunction0(value))
       
@@ -199,7 +200,8 @@ object mod {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setFetchTimeoutMillis(value: Double): Self = StObject.set(x, "fetchTimeoutMillis", value.asInstanceOf[js.Any])
       
@@ -244,7 +246,8 @@ object mod {
       __obj.asInstanceOf[Value]
     }
     
-    extension [Self <: Value](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
       
       inline def setAsBoolean(value: () => Boolean): Self = StObject.set(x, "asBoolean", js.Any.fromFunction0(value))
       
@@ -286,7 +289,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setRemoteConfig-compat`(value: RemoteConfig): Self = StObject.set(x, "remoteConfig-compat", value.asInstanceOf[js.Any])
       }

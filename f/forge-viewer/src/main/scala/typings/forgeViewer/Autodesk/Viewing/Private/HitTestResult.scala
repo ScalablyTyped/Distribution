@@ -45,7 +45,8 @@ object HitTestResult {
     __obj.asInstanceOf[HitTestResult]
   }
   
-  extension [Self <: HitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitTestResult] (val x: Self) extends AnyVal {
     
     inline def setDbId(value: Double): Self = StObject.set(x, "dbId", value.asInstanceOf[js.Any])
     

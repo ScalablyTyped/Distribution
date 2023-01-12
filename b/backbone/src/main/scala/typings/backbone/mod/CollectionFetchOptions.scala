@@ -18,7 +18,8 @@ object CollectionFetchOptions {
     __obj.asInstanceOf[CollectionFetchOptions]
   }
   
-  extension [Self <: CollectionFetchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionFetchOptions] (val x: Self) extends AnyVal {
     
     inline def setReset(value: Boolean): Self = StObject.set(x, "reset", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object PBKDF2Params {
     __obj.asInstanceOf[PBKDF2Params]
   }
   
-  extension [Self <: PBKDF2Params](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PBKDF2Params] (val x: Self) extends AnyVal {
     
     inline def setIter(value: Double): Self = StObject.set(x, "iter", value.asInstanceOf[js.Any])
     

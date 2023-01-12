@@ -15,7 +15,8 @@ object FinalCall {
     __obj.asInstanceOf[FinalCall]
   }
   
-  extension [Self <: FinalCall](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalCall] (val x: Self) extends AnyVal {
     
     inline def setFinalCall(value: Boolean): Self = StObject.set(x, "finalCall", value.asInstanceOf[js.Any])
   }

@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[RowProps[T, K]]
     }
     
-    extension [Self <: RowProps[?, ?], T, K](x: Self & (RowProps[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RowProps[?, ?], T, K] (val x: Self & (RowProps[T, K])) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -231,7 +232,8 @@ object mod {
       __obj.asInstanceOf[SortableListProps[T, K]]
     }
     
-    extension [Self <: SortableListProps[?, ?], T, K](x: Self & (SortableListProps[T, K])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortableListProps[?, ?], T, K] (val x: Self & (SortableListProps[T, K])) extends AnyVal {
       
       inline def setAutoscrollAreaSize(value: Double): Self = StObject.set(x, "autoscrollAreaSize", value.asInstanceOf[js.Any])
       

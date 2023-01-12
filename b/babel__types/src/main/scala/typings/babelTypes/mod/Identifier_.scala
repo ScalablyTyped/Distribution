@@ -34,7 +34,8 @@ object Identifier_ {
     __obj.asInstanceOf[Identifier_]
   }
   
-  extension [Self <: Identifier_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Identifier_] (val x: Self) extends AnyVal {
     
     inline def setDecorators(value: js.Array[Decorator_]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     

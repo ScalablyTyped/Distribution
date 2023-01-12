@@ -35,7 +35,8 @@ object distCommandsMgetMod {
       __obj.asInstanceOf[MGetOptions]
     }
     
-    extension [Self <: MGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MGetOptions] (val x: Self) extends AnyVal {
       
       inline def setLATEST(value: Boolean): Self = StObject.set(x, "LATEST", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distCommandsMgetMod {
       __obj.asInstanceOf[MGetReply]
     }
     
-    extension [Self <: MGetReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MGetReply] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

@@ -47,7 +47,8 @@ object gapi {
           __obj.asInstanceOf[Webfont]
         }
         
-        extension [Self <: Webfont](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Webfont] (val x: Self) extends AnyVal {
           
           inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
           
@@ -104,7 +105,8 @@ object gapi {
           __obj.asInstanceOf[WebfontList]
         }
         
-        extension [Self <: WebfontList](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: WebfontList] (val x: Self) extends AnyVal {
           
           inline def setItems(value: js.Array[Webfont]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
           

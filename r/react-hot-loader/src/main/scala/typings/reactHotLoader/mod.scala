@@ -55,7 +55,8 @@ object mod {
       __obj.asInstanceOf[AppChildren]
     }
     
-    extension [Self <: AppChildren](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppChildren] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[AppContainerProps]
     }
     
-    extension [Self <: AppContainerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppContainerProps] (val x: Self) extends AnyVal {
       
       inline def setErrorBoundary(value: Boolean): Self = StObject.set(x, "errorBoundary", value.asInstanceOf[js.Any])
       
@@ -195,7 +197,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAllowSFC(value: Boolean): Self = StObject.set(x, "allowSFC", value.asInstanceOf[js.Any])
       
@@ -240,7 +243,8 @@ object mod {
       __obj.asInstanceOf[ErrorReporterProps]
     }
     
-    extension [Self <: ErrorReporterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorReporterProps] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -259,7 +263,8 @@ object mod {
       __obj.asInstanceOf[HotError]
     }
     
-    extension [Self <: HotError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HotError] (val x: Self) extends AnyVal {
       
       inline def setError(value: js.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

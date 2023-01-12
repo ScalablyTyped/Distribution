@@ -29,7 +29,8 @@ object Path1DEffectStyleEnumValues {
     __obj.asInstanceOf[Path1DEffectStyleEnumValues]
   }
   
-  extension [Self <: Path1DEffectStyleEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Path1DEffectStyleEnumValues] (val x: Self) extends AnyVal {
     
     inline def setMorph(value: Path1DEffectStyle): Self = StObject.set(x, "Morph", value.asInstanceOf[js.Any])
     

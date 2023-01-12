@@ -21,7 +21,8 @@ object IdentityGovernance {
     __obj.asInstanceOf[IdentityGovernance]
   }
   
-  extension [Self <: IdentityGovernance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityGovernance] (val x: Self) extends AnyVal {
     
     inline def setAccessReviews(value: NullableOption[AccessReviewSet]): Self = StObject.set(x, "accessReviews", value.asInstanceOf[js.Any])
     

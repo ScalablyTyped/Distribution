@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[PerformanceJSON]
     }
     
-    extension [Self <: PerformanceJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformanceJSON] (val x: Self) extends AnyVal {
       
       inline def setTimeOrigin(value: Double): Self = StObject.set(x, "timeOrigin", value.asInstanceOf[js.Any])
     }

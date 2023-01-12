@@ -47,7 +47,8 @@ object AudioTrack {
     __obj.asInstanceOf[AudioTrack]
   }
   
-  extension [Self <: AudioTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioTrack] (val x: Self) extends AnyVal {
     
     inline def setCutFrom(value: Double): Self = StObject.set(x, "cutFrom", value.asInstanceOf[js.Any])
     

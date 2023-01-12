@@ -18,7 +18,8 @@ object PlaceGeometry {
     __obj.asInstanceOf[PlaceGeometry]
   }
   
-  extension [Self <: PlaceGeometry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceGeometry] (val x: Self) extends AnyVal {
     
     inline def setPoint(value: Position): Self = StObject.set(x, "Point", value.asInstanceOf[js.Any])
     

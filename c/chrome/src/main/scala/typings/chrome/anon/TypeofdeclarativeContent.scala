@@ -46,7 +46,8 @@ object TypeofdeclarativeContent {
     __obj.asInstanceOf[TypeofdeclarativeContent]
   }
   
-  extension [Self <: TypeofdeclarativeContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdeclarativeContent] (val x: Self) extends AnyVal {
     
     inline def setOnPageChanged(value: PageChangedEvent): Self = StObject.set(x, "onPageChanged", value.asInstanceOf[js.Any])
     

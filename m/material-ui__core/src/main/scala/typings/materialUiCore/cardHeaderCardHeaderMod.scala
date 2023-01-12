@@ -78,7 +78,8 @@ object cardHeaderCardHeaderMod extends Shortcut {
       __obj.asInstanceOf[CardHeaderTypeMap[Props, DefaultComponent, TitleTypographyComponent, SubheaderTypographyComponent]]
     }
     
-    extension [Self <: CardHeaderTypeMap[?, ?, ?, ?], Props, DefaultComponent /* <: ElementType[Any] */, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */](x: Self & (CardHeaderTypeMap[Props, DefaultComponent, TitleTypographyComponent, SubheaderTypographyComponent])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CardHeaderTypeMap[?, ?, ?, ?], Props, DefaultComponent /* <: ElementType[Any] */, TitleTypographyComponent /* <: ElementType[Any] */, SubheaderTypographyComponent /* <: ElementType[Any] */] (val x: Self & (CardHeaderTypeMap[Props, DefaultComponent, TitleTypographyComponent, SubheaderTypographyComponent])) extends AnyVal {
       
       inline def setClassKey(value: CardHeaderClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

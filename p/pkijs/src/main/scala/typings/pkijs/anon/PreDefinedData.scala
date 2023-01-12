@@ -21,7 +21,8 @@ object PreDefinedData {
     __obj.asInstanceOf[PreDefinedData]
   }
   
-  extension [Self <: PreDefinedData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreDefinedData] (val x: Self) extends AnyVal {
     
     inline def setPreDefinedData(value: BufferSource): Self = StObject.set(x, "preDefinedData", value.asInstanceOf[js.Any])
     

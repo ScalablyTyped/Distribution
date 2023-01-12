@@ -19,7 +19,8 @@ object Middleware {
     __obj.asInstanceOf[Middleware]
   }
   
-  extension [Self <: Middleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
     
     inline def setFn(value: MiddlewareArguments => Promisable[MiddlewareReturn]): Self = StObject.set(x, "fn", js.Any.fromFunction1(value))
     

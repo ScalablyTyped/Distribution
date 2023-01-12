@@ -33,7 +33,8 @@ object GrpcGatewayRouteMatch {
     __obj.asInstanceOf[GrpcGatewayRouteMatch]
   }
   
-  extension [Self <: GrpcGatewayRouteMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrpcGatewayRouteMatch] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: GatewayRouteHostnameMatch): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

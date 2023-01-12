@@ -18,7 +18,8 @@ object CreateModelOutput {
     __obj.asInstanceOf[CreateModelOutput]
   }
   
-  extension [Self <: CreateModelOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateModelOutput] (val x: Self) extends AnyVal {
     
     inline def setModelArn(value: ModelArn): Self = StObject.set(x, "ModelArn", value.asInstanceOf[js.Any])
   }

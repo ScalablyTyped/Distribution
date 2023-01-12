@@ -20,7 +20,8 @@ object OrderBy_ {
     __obj.asInstanceOf[OrderBy_]
   }
   
-  extension [Self <: OrderBy_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderBy_] (val x: Self) extends AnyVal {
     
     inline def setDir(value: Direction): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

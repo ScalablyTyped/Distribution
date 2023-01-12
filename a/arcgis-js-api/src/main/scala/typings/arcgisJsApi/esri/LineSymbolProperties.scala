@@ -32,7 +32,8 @@ object LineSymbolProperties {
     __obj.asInstanceOf[LineSymbolProperties]
   }
   
-  extension [Self <: LineSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setType(value: `simple-line`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

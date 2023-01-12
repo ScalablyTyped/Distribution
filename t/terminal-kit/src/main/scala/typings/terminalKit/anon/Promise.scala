@@ -17,7 +17,8 @@ object Promise {
     __obj.asInstanceOf[Promise]
   }
   
-  extension [Self <: Promise](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Promise] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

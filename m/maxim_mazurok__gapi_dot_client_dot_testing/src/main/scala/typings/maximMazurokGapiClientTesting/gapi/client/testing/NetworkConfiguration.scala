@@ -22,7 +22,8 @@ object NetworkConfiguration {
     __obj.asInstanceOf[NetworkConfiguration]
   }
   
-  extension [Self <: NetworkConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDownRule(value: TrafficRule): Self = StObject.set(x, "downRule", value.asInstanceOf[js.Any])
     

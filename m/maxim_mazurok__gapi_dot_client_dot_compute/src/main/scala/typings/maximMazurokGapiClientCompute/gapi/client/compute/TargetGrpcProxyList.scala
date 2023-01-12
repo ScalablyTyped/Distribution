@@ -35,7 +35,8 @@ object TargetGrpcProxyList {
     __obj.asInstanceOf[TargetGrpcProxyList]
   }
   
-  extension [Self <: TargetGrpcProxyList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetGrpcProxyList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

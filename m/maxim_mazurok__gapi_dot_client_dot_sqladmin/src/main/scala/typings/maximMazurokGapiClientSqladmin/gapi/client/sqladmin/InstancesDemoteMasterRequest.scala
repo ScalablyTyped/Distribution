@@ -16,7 +16,8 @@ object InstancesDemoteMasterRequest {
     __obj.asInstanceOf[InstancesDemoteMasterRequest]
   }
   
-  extension [Self <: InstancesDemoteMasterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstancesDemoteMasterRequest] (val x: Self) extends AnyVal {
     
     inline def setDemoteMasterContext(value: DemoteMasterContext): Self = StObject.set(x, "demoteMasterContext", value.asInstanceOf[js.Any])
     

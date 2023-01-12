@@ -17,7 +17,8 @@ object PrintOptions {
     __obj.asInstanceOf[PrintOptions]
   }
   
-  extension [Self <: PrintOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintOptions] (val x: Self) extends AnyVal {
     
     inline def setFooter(value: String): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
     

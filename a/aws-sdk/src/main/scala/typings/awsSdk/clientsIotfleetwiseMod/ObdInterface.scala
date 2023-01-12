@@ -48,7 +48,8 @@ object ObdInterface {
     __obj.asInstanceOf[ObdInterface]
   }
   
-  extension [Self <: ObdInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObdInterface] (val x: Self) extends AnyVal {
     
     inline def setDtcRequestIntervalSeconds(value: nonNegativeInteger): Self = StObject.set(x, "dtcRequestIntervalSeconds", value.asInstanceOf[js.Any])
     

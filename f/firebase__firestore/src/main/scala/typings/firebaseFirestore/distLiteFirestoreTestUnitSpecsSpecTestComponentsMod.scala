@@ -385,7 +385,8 @@ object distLiteFirestoreTestUnitSpecsSpecTestComponentsMod {
       __obj.asInstanceOf[QueryEvent]
     }
     
-    extension [Self <: QueryEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: FirestoreError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       

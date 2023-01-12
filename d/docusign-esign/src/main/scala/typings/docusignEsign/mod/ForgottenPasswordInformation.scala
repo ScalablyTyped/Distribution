@@ -53,7 +53,8 @@ object ForgottenPasswordInformation {
     __obj.asInstanceOf[ForgottenPasswordInformation]
   }
   
-  extension [Self <: ForgottenPasswordInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForgottenPasswordInformation] (val x: Self) extends AnyVal {
     
     inline def setForgottenPasswordAnswer1(value: String): Self = StObject.set(x, "forgottenPasswordAnswer1", value.asInstanceOf[js.Any])
     

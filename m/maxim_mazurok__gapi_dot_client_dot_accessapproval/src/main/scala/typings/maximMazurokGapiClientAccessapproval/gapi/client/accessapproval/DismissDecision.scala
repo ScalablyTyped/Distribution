@@ -22,7 +22,8 @@ object DismissDecision {
     __obj.asInstanceOf[DismissDecision]
   }
   
-  extension [Self <: DismissDecision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DismissDecision] (val x: Self) extends AnyVal {
     
     inline def setDismissTime(value: String): Self = StObject.set(x, "dismissTime", value.asInstanceOf[js.Any])
     

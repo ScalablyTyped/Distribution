@@ -49,7 +49,8 @@ object UploadLayerPartRequest {
     __obj.asInstanceOf[UploadLayerPartRequest]
   }
   
-  extension [Self <: UploadLayerPartRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadLayerPartRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerPartBlob(value: LayerPartBlob): Self = StObject.set(x, "layerPartBlob", value.asInstanceOf[js.Any])
     

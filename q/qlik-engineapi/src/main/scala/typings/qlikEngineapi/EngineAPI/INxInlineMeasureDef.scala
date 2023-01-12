@@ -114,7 +114,8 @@ object INxInlineMeasureDef {
     __obj.asInstanceOf[INxInlineMeasureDef]
   }
   
-  extension [Self <: INxInlineMeasureDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxInlineMeasureDef] (val x: Self) extends AnyVal {
     
     inline def setQAccumulate(value: Double): Self = StObject.set(x, "qAccumulate", value.asInstanceOf[js.Any])
     

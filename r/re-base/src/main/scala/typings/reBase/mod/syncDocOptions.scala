@@ -35,7 +35,8 @@ object syncDocOptions {
     __obj.asInstanceOf[syncDocOptions]
   }
   
-  extension [Self <: syncDocOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: syncDocOptions] (val x: Self) extends AnyVal {
     
     inline def setContext(value: js.Object): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

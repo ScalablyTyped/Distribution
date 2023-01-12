@@ -15,7 +15,8 @@ object DocCommentTemplateOptions {
     __obj.asInstanceOf[DocCommentTemplateOptions]
   }
   
-  extension [Self <: DocCommentTemplateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocCommentTemplateOptions] (val x: Self) extends AnyVal {
     
     inline def setGenerateReturnInDocTemplate(value: Boolean): Self = StObject.set(x, "generateReturnInDocTemplate", value.asInstanceOf[js.Any])
     

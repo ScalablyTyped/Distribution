@@ -18,7 +18,8 @@ object NfsMountOptions {
     __obj.asInstanceOf[NfsMountOptions]
   }
   
-  extension [Self <: NfsMountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NfsMountOptions] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: NfsVersion): Self = StObject.set(x, "Version", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetCognitoEventsResponse {
     __obj.asInstanceOf[GetCognitoEventsResponse]
   }
   
-  extension [Self <: GetCognitoEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCognitoEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: Events): Self = StObject.set(x, "Events", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object MarkerObject {
     __obj.asInstanceOf[MarkerObject]
   }
   
-  extension [Self <: MarkerObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerObject] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

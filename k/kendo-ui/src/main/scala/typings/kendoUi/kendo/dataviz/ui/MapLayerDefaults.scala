@@ -25,7 +25,8 @@ object MapLayerDefaults {
     __obj.asInstanceOf[MapLayerDefaults]
   }
   
-  extension [Self <: MapLayerDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaults] (val x: Self) extends AnyVal {
     
     inline def setBing(value: MapLayerDefaultsBing): Self = StObject.set(x, "bing", value.asInstanceOf[js.Any])
     

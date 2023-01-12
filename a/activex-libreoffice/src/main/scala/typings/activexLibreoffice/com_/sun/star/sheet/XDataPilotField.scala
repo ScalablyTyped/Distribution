@@ -40,7 +40,8 @@ object XDataPilotField {
     __obj.asInstanceOf[XDataPilotField]
   }
   
-  extension [Self <: XDataPilotField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataPilotField] (val x: Self) extends AnyVal {
     
     inline def setGetItems(value: () => XIndexAccess): Self = StObject.set(x, "getItems", js.Any.fromFunction0(value))
     

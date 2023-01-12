@@ -68,7 +68,8 @@ object libTabBarTabbarDotandroidMod {
       __obj.asInstanceOf[TabBarNativeProps]
     }
     
-    extension [Self <: TabBarNativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarNativeProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: ITabBarStyle): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       

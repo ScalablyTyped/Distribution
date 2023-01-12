@@ -22,7 +22,8 @@ object TranslateTextGlossaryConfig {
     __obj.asInstanceOf[TranslateTextGlossaryConfig]
   }
   
-  extension [Self <: TranslateTextGlossaryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateTextGlossaryConfig] (val x: Self) extends AnyVal {
     
     inline def setGlossary(value: String): Self = StObject.set(x, "glossary", value.asInstanceOf[js.Any])
     

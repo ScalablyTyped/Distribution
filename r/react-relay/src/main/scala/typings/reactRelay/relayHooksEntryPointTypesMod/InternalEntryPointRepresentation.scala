@@ -86,7 +86,8 @@ object InternalEntryPointRepresentation {
     __obj.asInstanceOf[InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps]]
   }
   
-  extension [Self <: InternalEntryPointRepresentation[?, ?, ?, ?, ?], /**
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InternalEntryPointRepresentation[?, ?, ?, ?, ?], /**
     * object that contains all necessary information to execute the preloaders (routeParams, query variables)
     */
   TEntryPointParams /* <: js.Object */, /**
@@ -103,7 +104,7 @@ object InternalEntryPointRepresentation {
     * a bag of extra props that you may define in `entrypoint` file and they will be passed to the EntryPointComponent
     * as `extraProps`
     */
-  TExtraProps /* <: js.Object | Null */](x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) {
+  TExtraProps /* <: js.Object | Null */] (val x: Self & (InternalEntryPointRepresentation[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TRuntimeProps, TExtraProps])) extends AnyVal {
     
     inline def setGetPreloadProps(
       value: /* entryPointParams */ TEntryPointParams => PreloadProps[TEntryPointParams, TPreloadedQueries, TPreloadedEntryPoints, TExtraProps]

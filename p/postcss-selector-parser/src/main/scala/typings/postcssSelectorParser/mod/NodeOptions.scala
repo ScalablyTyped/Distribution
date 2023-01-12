@@ -22,7 +22,8 @@ object NodeOptions {
     __obj.asInstanceOf[NodeOptions[Value]]
   }
   
-  extension [Self <: NodeOptions[?], Value](x: Self & NodeOptions[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeOptions[?], Value] (val x: Self & NodeOptions[Value]) extends AnyVal {
     
     inline def setSource(value: NodeSource): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     

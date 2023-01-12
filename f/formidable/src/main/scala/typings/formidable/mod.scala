@@ -119,7 +119,8 @@ object mod {
     @js.native
     val ^ : Instantiable1[/* properties */ File, typings.formidable.persistentFileMod.^] = js.native
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
@@ -428,7 +429,8 @@ object mod {
       __obj.asInstanceOf[DefaultOptions]
     }
     
-    extension [Self <: DefaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultOptions] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyFiles(value: Boolean): Self = StObject.set(x, "allowEmptyFiles", value.asInstanceOf[js.Any])
       
@@ -483,7 +485,8 @@ object mod {
       __obj.asInstanceOf[EmitData]
     }
     
-    extension [Self <: EmitData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitData] (val x: Self) extends AnyVal {
       
       inline def setFormname(value: Any): Self = StObject.set(x, "formname", value.asInstanceOf[js.Any])
       
@@ -538,7 +541,8 @@ object mod {
       __obj.asInstanceOf[EventData]
     }
     
-    extension [Self <: EventData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventData] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: String): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -630,7 +634,8 @@ object mod {
       __obj.asInstanceOf[FileJSON]
     }
     
-    extension [Self <: FileJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileJSON] (val x: Self) extends AnyVal {
       
       inline def setFilepath(value: String): Self = StObject.set(x, "filepath", value.asInstanceOf[js.Any])
       
@@ -709,7 +714,8 @@ object mod {
       __obj.asInstanceOf[MappedParsers]
     }
     
-    extension [Self <: MappedParsers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MappedParsers] (val x: Self) extends AnyVal {
       
       inline def setDummyParser(
         value: Instantiable2[
@@ -872,7 +878,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowEmptyFiles(value: Boolean): Self = StObject.set(x, "allowEmptyFiles", value.asInstanceOf[js.Any])
       

@@ -32,7 +32,8 @@ object mod {
       __obj.asInstanceOf[Subscription[T]]
     }
     
-    extension [Self <: Subscription[?], T](x: Self & Subscription[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription[?], T] (val x: Self & Subscription[T]) extends AnyVal {
       
       inline def setGetCurrentValue(value: () => T): Self = StObject.set(x, "getCurrentValue", js.Any.fromFunction0(value))
       

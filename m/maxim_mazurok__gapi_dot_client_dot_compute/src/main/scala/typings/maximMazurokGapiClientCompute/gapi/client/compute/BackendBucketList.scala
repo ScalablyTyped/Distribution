@@ -35,7 +35,8 @@ object BackendBucketList {
     __obj.asInstanceOf[BackendBucketList]
   }
   
-  extension [Self <: BackendBucketList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendBucketList] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

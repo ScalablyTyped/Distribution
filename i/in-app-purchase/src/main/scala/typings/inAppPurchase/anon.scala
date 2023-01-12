@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[ClientEmail]
     }
     
-    extension [Self <: ClientEmail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientEmail] (val x: Self) extends AnyVal {
       
       inline def setClientEmail(value: String): Self = StObject.set(x, "clientEmail", value.asInstanceOf[js.Any])
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -63,7 +65,8 @@ object anon {
       __obj.asInstanceOf[IgnoreCanceled]
     }
     
-    extension [Self <: IgnoreCanceled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreCanceled] (val x: Self) extends AnyVal {
       
       inline def setIgnoreCanceled(value: Boolean): Self = StObject.set(x, "ignoreCanceled", value.asInstanceOf[js.Any])
       

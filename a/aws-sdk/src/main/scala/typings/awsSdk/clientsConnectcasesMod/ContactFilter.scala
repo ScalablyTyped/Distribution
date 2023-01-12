@@ -23,7 +23,8 @@ object ContactFilter {
     __obj.asInstanceOf[ContactFilter]
   }
   
-  extension [Self <: ContactFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactFilter] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: ContactFilterChannelList): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

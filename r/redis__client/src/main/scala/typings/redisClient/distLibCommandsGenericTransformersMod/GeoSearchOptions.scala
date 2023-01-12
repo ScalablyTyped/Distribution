@@ -19,7 +19,8 @@ object GeoSearchOptions {
     __obj.asInstanceOf[GeoSearchOptions]
   }
   
-  extension [Self <: GeoSearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoSearchOptions] (val x: Self) extends AnyVal {
     
     inline def setCOUNT(value: GeoCountArgument): Self = StObject.set(x, "COUNT", value.asInstanceOf[js.Any])
     

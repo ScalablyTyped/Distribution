@@ -33,7 +33,8 @@ object RateBasedStatement {
     __obj.asInstanceOf[RateBasedStatement]
   }
   
-  extension [Self <: RateBasedStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RateBasedStatement] (val x: Self) extends AnyVal {
     
     inline def setAggregateKeyType(value: RateBasedStatementAggregateKeyType): Self = StObject.set(x, "AggregateKeyType", value.asInstanceOf[js.Any])
     

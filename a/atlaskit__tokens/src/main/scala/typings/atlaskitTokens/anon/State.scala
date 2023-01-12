@@ -25,7 +25,8 @@ object State {
     __obj.asInstanceOf[State[Group]]
   }
   
-  extension [Self <: State[?], Group /* <: Groups */](x: Self & State[Group]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: State[?], Group /* <: Groups */] (val x: Self & State[Group]) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

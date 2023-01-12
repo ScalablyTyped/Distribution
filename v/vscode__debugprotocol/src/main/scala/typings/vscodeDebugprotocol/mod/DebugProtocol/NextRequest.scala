@@ -33,7 +33,8 @@ object NextRequest {
     __obj.asInstanceOf[NextRequest]
   }
   
-  extension [Self <: NextRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: NextArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

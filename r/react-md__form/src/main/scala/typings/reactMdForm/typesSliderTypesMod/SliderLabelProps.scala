@@ -28,7 +28,8 @@ object SliderLabelProps {
     __obj.asInstanceOf[SliderLabelProps]
   }
   
-  extension [Self <: SliderLabelProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderLabelProps] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: ReactNode): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

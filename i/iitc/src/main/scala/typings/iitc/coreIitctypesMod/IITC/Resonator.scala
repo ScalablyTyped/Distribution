@@ -19,7 +19,8 @@ object Resonator {
     __obj.asInstanceOf[Resonator]
   }
   
-  extension [Self <: Resonator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resonator] (val x: Self) extends AnyVal {
     
     inline def setEnergy(value: Double): Self = StObject.set(x, "energy", value.asInstanceOf[js.Any])
     

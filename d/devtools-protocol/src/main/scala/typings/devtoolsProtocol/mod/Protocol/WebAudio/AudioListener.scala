@@ -17,7 +17,8 @@ object AudioListener {
     __obj.asInstanceOf[AudioListener]
   }
   
-  extension [Self <: AudioListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioListener] (val x: Self) extends AnyVal {
     
     inline def setContextId(value: GraphObjectId): Self = StObject.set(x, "contextId", value.asInstanceOf[js.Any])
     

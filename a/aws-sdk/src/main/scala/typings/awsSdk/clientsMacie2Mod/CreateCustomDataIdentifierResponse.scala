@@ -18,7 +18,8 @@ object CreateCustomDataIdentifierResponse {
     __obj.asInstanceOf[CreateCustomDataIdentifierResponse]
   }
   
-  extension [Self <: CreateCustomDataIdentifierResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCustomDataIdentifierResponse] (val x: Self) extends AnyVal {
     
     inline def setCustomDataIdentifierId(value: string): Self = StObject.set(x, "customDataIdentifierId", value.asInstanceOf[js.Any])
     

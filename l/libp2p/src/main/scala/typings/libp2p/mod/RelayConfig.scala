@@ -23,7 +23,8 @@ object RelayConfig {
     __obj.asInstanceOf[RelayConfig]
   }
   
-  extension [Self <: RelayConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayConfig] (val x: Self) extends AnyVal {
     
     inline def setAdvertise(value: RelayAdvertiseConfig): Self = StObject.set(x, "advertise", value.asInstanceOf[js.Any])
     

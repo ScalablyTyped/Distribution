@@ -23,7 +23,8 @@ object GetClipOutput {
     __obj.asInstanceOf[GetClipOutput]
   }
   
-  extension [Self <: GetClipOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetClipOutput] (val x: Self) extends AnyVal {
     
     inline def setContentType(value: ContentType): Self = StObject.set(x, "ContentType", value.asInstanceOf[js.Any])
     

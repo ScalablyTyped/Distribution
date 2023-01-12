@@ -273,7 +273,8 @@ object PlotMaplineDataLabelsOptions {
     __obj.asInstanceOf[PlotMaplineDataLabelsOptions]
   }
   
-  extension [Self <: PlotMaplineDataLabelsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotMaplineDataLabelsOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

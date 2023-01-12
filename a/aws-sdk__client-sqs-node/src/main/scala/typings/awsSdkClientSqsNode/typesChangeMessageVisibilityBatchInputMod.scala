@@ -55,7 +55,8 @@ object typesChangeMessageVisibilityBatchInputMod {
       __obj.asInstanceOf[ChangeMessageVisibilityBatchInput]
     }
     
-    extension [Self <: ChangeMessageVisibilityBatchInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeMessageVisibilityBatchInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

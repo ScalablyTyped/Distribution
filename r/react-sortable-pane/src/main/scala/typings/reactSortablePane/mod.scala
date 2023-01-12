@@ -274,7 +274,8 @@ object mod {
       __obj.asInstanceOf[PaneProperty]
     }
     
-    extension [Self <: PaneProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneProperty] (val x: Self) extends AnyVal {
       
       inline def setKey(value: PaneKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -314,7 +315,8 @@ object mod {
       __obj.asInstanceOf[PaneSize]
     }
     
-    extension [Self <: PaneSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -405,7 +407,8 @@ object mod {
       __obj.asInstanceOf[SortablePaneProps]
     }
     
-    extension [Self <: SortablePaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortablePaneProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ReactElement]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -519,7 +522,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -550,7 +554,8 @@ object mod {
         __obj.asInstanceOf[Window]
       }
       
-      extension [Self <: Window](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Window] (val x: Self) extends AnyVal {
         
         inline def setTouchEvent(value: typings.std.TouchEvent): Self = StObject.set(x, "TouchEvent", value.asInstanceOf[js.Any])
       }

@@ -16,7 +16,8 @@ object TranslateX {
     __obj.asInstanceOf[TranslateX]
   }
   
-  extension [Self <: TranslateX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslateX] (val x: Self) extends AnyVal {
     
     inline def setTranslateX(value: AnimatedInterpolation[Double | String]): Self = StObject.set(x, "translateX", value.asInstanceOf[js.Any])
   }

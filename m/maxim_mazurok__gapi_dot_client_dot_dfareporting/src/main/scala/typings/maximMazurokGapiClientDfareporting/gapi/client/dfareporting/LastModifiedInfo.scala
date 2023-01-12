@@ -16,7 +16,8 @@ object LastModifiedInfo {
     __obj.asInstanceOf[LastModifiedInfo]
   }
   
-  extension [Self <: LastModifiedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LastModifiedInfo] (val x: Self) extends AnyVal {
     
     inline def setTime(value: String): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ReadonlyColorMode {
     __obj.asInstanceOf[ReadonlyColorMode]
   }
   
-  extension [Self <: ReadonlyColorMode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyColorMode] (val x: Self) extends AnyVal {
     
     inline def setAlphaBlended(value: Any): Self = StObject.set(x, "alphaBlended", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ATVVolatileReloadEvent {
     __obj.asInstanceOf[ATVVolatileReloadEvent]
   }
   
-  extension [Self <: ATVVolatileReloadEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ATVVolatileReloadEvent] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: () => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
   }

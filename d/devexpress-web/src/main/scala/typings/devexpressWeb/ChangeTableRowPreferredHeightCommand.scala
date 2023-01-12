@@ -29,7 +29,8 @@ object ChangeTableRowPreferredHeightCommand {
     __obj.asInstanceOf[ChangeTableRowPreferredHeightCommand]
   }
   
-  extension [Self <: ChangeTableRowPreferredHeightCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableRowPreferredHeightCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TableHeightUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

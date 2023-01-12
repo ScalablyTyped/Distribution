@@ -16,7 +16,8 @@ object DisplayProps {
     __obj.asInstanceOf[DisplayProps]
   }
   
-  extension [Self <: DisplayProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisplayProps] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: ResponsiveValue[Display]): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

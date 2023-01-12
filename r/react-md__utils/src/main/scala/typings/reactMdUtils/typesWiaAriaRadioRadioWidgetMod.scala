@@ -47,7 +47,8 @@ object typesWiaAriaRadioRadioWidgetMod {
       __obj.asInstanceOf[RadioWidgetProps]
     }
     
-    extension [Self <: RadioWidgetProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioWidgetProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

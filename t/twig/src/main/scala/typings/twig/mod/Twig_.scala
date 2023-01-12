@@ -19,7 +19,8 @@ object Twig_ {
     __obj.asInstanceOf[Twig_]
   }
   
-  extension [Self <: Twig_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Twig_] (val x: Self) extends AnyVal {
     
     inline def setExports(value: Cache): Self = StObject.set(x, "exports", value.asInstanceOf[js.Any])
     

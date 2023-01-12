@@ -29,7 +29,8 @@ object ColorVariableProperties {
     __obj.asInstanceOf[ColorVariableProperties]
   }
   
-  extension [Self <: ColorVariableProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorVariableProperties] (val x: Self) extends AnyVal {
     
     inline def setNormalizationField(value: String): Self = StObject.set(x, "normalizationField", value.asInstanceOf[js.Any])
     

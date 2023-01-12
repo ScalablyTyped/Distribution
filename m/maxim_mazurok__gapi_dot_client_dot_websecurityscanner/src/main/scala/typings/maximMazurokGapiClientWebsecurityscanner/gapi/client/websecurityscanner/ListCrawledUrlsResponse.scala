@@ -19,7 +19,8 @@ object ListCrawledUrlsResponse {
     __obj.asInstanceOf[ListCrawledUrlsResponse]
   }
   
-  extension [Self <: ListCrawledUrlsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCrawledUrlsResponse] (val x: Self) extends AnyVal {
     
     inline def setCrawledUrls(value: js.Array[CrawledUrl]): Self = StObject.set(x, "crawledUrls", value.asInstanceOf[js.Any])
     

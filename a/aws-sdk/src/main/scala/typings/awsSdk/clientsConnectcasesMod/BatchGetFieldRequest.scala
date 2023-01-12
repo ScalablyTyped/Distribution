@@ -23,7 +23,8 @@ object BatchGetFieldRequest {
     __obj.asInstanceOf[BatchGetFieldRequest]
   }
   
-  extension [Self <: BatchGetFieldRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetFieldRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainId(value: DomainId): Self = StObject.set(x, "domainId", value.asInstanceOf[js.Any])
     

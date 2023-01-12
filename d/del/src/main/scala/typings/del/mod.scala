@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDryRun(value: Boolean): Self = StObject.set(x, "dryRun", value.asInstanceOf[js.Any])
       
@@ -102,7 +103,8 @@ object mod {
       __obj.asInstanceOf[ProgressData]
     }
     
-    extension [Self <: ProgressData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProgressData] (val x: Self) extends AnyVal {
       
       inline def setDeletedCount(value: Double): Self = StObject.set(x, "deletedCount", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object TypeofExpansionPanel {
     __obj.asInstanceOf[TypeofExpansionPanel]
   }
   
-  extension [Self <: TypeofExpansionPanel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofExpansionPanel] (val x: Self) extends AnyVal {
     
     inline def setExtend(value: js.Object => ExpansionPanel): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     

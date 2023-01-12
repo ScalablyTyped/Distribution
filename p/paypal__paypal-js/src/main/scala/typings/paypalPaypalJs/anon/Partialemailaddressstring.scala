@@ -27,7 +27,8 @@ object Partialemailaddressstring {
     __obj.asInstanceOf[Partialemailaddressstring]
   }
   
-  extension [Self <: Partialemailaddressstring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialemailaddressstring] (val x: Self) extends AnyVal {
     
     inline def setEmail_address(value: String): Self = StObject.set(x, "email_address", value.asInstanceOf[js.Any])
     

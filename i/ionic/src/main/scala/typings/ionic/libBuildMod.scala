@@ -153,7 +153,8 @@ object libBuildMod {
       __obj.asInstanceOf[BuildRunnerDeps]
     }
     
-    extension [Self <: BuildRunnerDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BuildRunnerDeps] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object Label {
     __obj.asInstanceOf[Label]
   }
   
-  extension [Self <: Label](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Label] (val x: Self) extends AnyVal {
     
     inline def set__implements__sap_ui_core_Label(value: Boolean): Self = StObject.set(x, "__implements__sap_ui_core_Label", value.asInstanceOf[js.Any])
   }

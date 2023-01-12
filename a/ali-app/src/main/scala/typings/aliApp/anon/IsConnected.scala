@@ -20,7 +20,8 @@ object IsConnected {
     __obj.asInstanceOf[IsConnected]
   }
   
-  extension [Self <: IsConnected](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsConnected] (val x: Self) extends AnyVal {
     
     inline def setIsConnected(value: Boolean): Self = StObject.set(x, "isConnected", value.asInstanceOf[js.Any])
     

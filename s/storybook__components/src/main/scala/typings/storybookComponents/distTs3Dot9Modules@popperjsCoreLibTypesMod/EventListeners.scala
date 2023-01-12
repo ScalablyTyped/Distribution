@@ -17,7 +17,8 @@ object EventListeners {
     __obj.asInstanceOf[EventListeners]
   }
   
-  extension [Self <: EventListeners](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventListeners] (val x: Self) extends AnyVal {
     
     inline def setResize(value: Boolean): Self = StObject.set(x, "resize", value.asInstanceOf[js.Any])
     

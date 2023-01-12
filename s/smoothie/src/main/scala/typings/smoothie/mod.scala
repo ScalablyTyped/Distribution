@@ -225,7 +225,8 @@ object mod {
       __obj.asInstanceOf[IChartOptions]
     }
     
-    extension [Self <: IChartOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChartOptions] (val x: Self) extends AnyVal {
       
       inline def setDisplayDataFromPercentile(value: Double): Self = StObject.set(x, "displayDataFromPercentile", value.asInstanceOf[js.Any])
       
@@ -358,7 +359,8 @@ object mod {
       __obj.asInstanceOf[IGridOptions]
     }
     
-    extension [Self <: IGridOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGridOptions] (val x: Self) extends AnyVal {
       
       inline def setBorderVisible(value: Boolean): Self = StObject.set(x, "borderVisible", value.asInstanceOf[js.Any])
       
@@ -401,7 +403,8 @@ object mod {
       __obj.asInstanceOf[IHorizontalLine]
     }
     
-    extension [Self <: IHorizontalLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IHorizontalLine] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -443,7 +446,8 @@ object mod {
       __obj.asInstanceOf[ILabelOptions]
     }
     
-    extension [Self <: ILabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabelOptions] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
@@ -488,7 +492,8 @@ object mod {
       __obj.asInstanceOf[IRange]
     }
     
-    extension [Self <: IRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRange] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -509,7 +514,8 @@ object mod {
       __obj.asInstanceOf[ITimeSeriesOptions]
     }
     
-    extension [Self <: ITimeSeriesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeSeriesOptions] (val x: Self) extends AnyVal {
       
       inline def setResetBounds(value: Boolean): Self = StObject.set(x, "resetBounds", value.asInstanceOf[js.Any])
       
@@ -544,7 +550,8 @@ object mod {
       __obj.asInstanceOf[ITimeSeriesPresentationOptions]
     }
     
-    extension [Self <: ITimeSeriesPresentationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITimeSeriesPresentationOptions] (val x: Self) extends AnyVal {
       
       inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       
@@ -590,7 +597,8 @@ object mod {
       __obj.asInstanceOf[ITitleOptions]
     }
     
-    extension [Self <: ITitleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITitleOptions] (val x: Self) extends AnyVal {
       
       inline def setFillStyle(value: String): Self = StObject.set(x, "fillStyle", value.asInstanceOf[js.Any])
       

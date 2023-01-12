@@ -158,7 +158,8 @@ object srcPluginRegionsMod {
       __obj.asInstanceOf[HandleStyle]
     }
     
-    extension [Self <: HandleStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandleStyle] (val x: Self) extends AnyVal {
       
       inline def setLeft(value: Styles): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
       
@@ -201,7 +202,8 @@ object srcPluginRegionsMod {
       __obj.asInstanceOf[RegionParams]
     }
     
-    extension [Self <: RegionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionParams] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object srcPluginRegionsMod {
       __obj.asInstanceOf[RegionUpdatedEventParams]
     }
     
-    extension [Self <: RegionUpdatedEventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionUpdatedEventParams] (val x: Self) extends AnyVal {
       
       inline def setAction(value: drag | resize): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -351,7 +354,8 @@ object srcPluginRegionsMod {
       __obj.asInstanceOf[RegionsPluginParams]
     }
     
-    extension [Self <: RegionsPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RegionsPluginParams] (val x: Self) extends AnyVal {
       
       inline def setDragSelection(value: Boolean): Self = StObject.set(x, "dragSelection", value.asInstanceOf[js.Any])
       
@@ -411,7 +415,8 @@ object srcPluginRegionsMod {
         __obj.asInstanceOf[WaveSurfer]
       }
       
-      extension [Self <: WaveSurfer](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WaveSurfer] (val x: Self) extends AnyVal {
         
         inline def setAddRegion(value: RegionParams => Unit): Self = StObject.set(x, "addRegion", js.Any.fromFunction1(value))
         

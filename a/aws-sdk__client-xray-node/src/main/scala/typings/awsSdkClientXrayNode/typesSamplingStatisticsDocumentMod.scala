@@ -51,7 +51,8 @@ object typesSamplingStatisticsDocumentMod {
       __obj.asInstanceOf[SamplingStatisticsDocument]
     }
     
-    extension [Self <: SamplingStatisticsDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SamplingStatisticsDocument] (val x: Self) extends AnyVal {
       
       inline def setBorrowCount(value: Double): Self = StObject.set(x, "BorrowCount", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object typesSamplingStatisticsDocumentMod {
       __obj.asInstanceOf[UnmarshalledSamplingStatisticsDocument]
     }
     
-    extension [Self <: UnmarshalledSamplingStatisticsDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSamplingStatisticsDocument] (val x: Self) extends AnyVal {
       
       inline def setTimestamp(value: js.Date): Self = StObject.set(x, "Timestamp", value.asInstanceOf[js.Any])
     }

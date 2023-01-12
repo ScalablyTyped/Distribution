@@ -17,7 +17,8 @@ object GeocodingEvent {
     __obj.asInstanceOf[GeocodingEvent]
   }
   
-  extension [Self <: GeocodingEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocodingEvent] (val x: Self) extends AnyVal {
     
     inline def setWaypoint(value: Waypoint_): Self = StObject.set(x, "waypoint", value.asInstanceOf[js.Any])
     

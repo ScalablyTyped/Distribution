@@ -23,7 +23,8 @@ object IteratorsProfile {
     __obj.asInstanceOf[IteratorsProfile]
   }
   
-  extension [Self <: IteratorsProfile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IteratorsProfile] (val x: Self) extends AnyVal {
     
     inline def setChildIterators(value: js.Array[ChildIterator]): Self = StObject.set(x, "childIterators", value.asInstanceOf[js.Any])
     

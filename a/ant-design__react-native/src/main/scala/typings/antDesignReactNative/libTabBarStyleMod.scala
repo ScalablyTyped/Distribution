@@ -59,7 +59,8 @@ object libTabBarStyleMod {
       __obj.asInstanceOf[TabBarStyle]
     }
     
-    extension [Self <: TabBarStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabBarStyle] (val x: Self) extends AnyVal {
       
       inline def setBadge(value: ViewStyle): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
       

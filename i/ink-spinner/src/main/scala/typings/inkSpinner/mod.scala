@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[SpinnerProps]
     }
     
-    extension [Self <: SpinnerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpinnerProps] (val x: Self) extends AnyVal {
       
       inline def setType(value: SpinnerName): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

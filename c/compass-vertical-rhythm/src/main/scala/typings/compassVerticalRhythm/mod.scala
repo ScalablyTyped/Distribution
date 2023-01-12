@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBaseFontSize(value: String): Self = StObject.set(x, "baseFontSize", value.asInstanceOf[js.Any])
       
@@ -129,7 +130,8 @@ object mod {
       __obj.asInstanceOf[VerticalRhythmStyles]
     }
     
-    extension [Self <: VerticalRhythmStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalRhythmStyles] (val x: Self) extends AnyVal {
       
       inline def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       

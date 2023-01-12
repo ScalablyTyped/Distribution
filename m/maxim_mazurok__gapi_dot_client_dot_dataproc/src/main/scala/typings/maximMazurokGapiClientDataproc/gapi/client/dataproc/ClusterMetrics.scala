@@ -23,7 +23,8 @@ object ClusterMetrics {
     __obj.asInstanceOf[ClusterMetrics]
   }
   
-  extension [Self <: ClusterMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterMetrics] (val x: Self) extends AnyVal {
     
     inline def setHdfsMetrics(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

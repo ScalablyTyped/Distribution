@@ -28,7 +28,8 @@ object ParticipatingGateways {
     __obj.asInstanceOf[ParticipatingGateways]
   }
   
-  extension [Self <: ParticipatingGateways](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipatingGateways] (val x: Self) extends AnyVal {
     
     inline def setDownlinkMode(value: DownlinkMode): Self = StObject.set(x, "DownlinkMode", value.asInstanceOf[js.Any])
     

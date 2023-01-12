@@ -15,7 +15,8 @@ object DescribeEngineDefaultClusterParametersResult {
     __obj.asInstanceOf[DescribeEngineDefaultClusterParametersResult]
   }
   
-  extension [Self <: DescribeEngineDefaultClusterParametersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeEngineDefaultClusterParametersResult] (val x: Self) extends AnyVal {
     
     inline def setEngineDefaults(value: EngineDefaults): Self = StObject.set(x, "EngineDefaults", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object mod {
         __obj.asInstanceOf[JQuery]
       }
       
-      extension [Self <: JQuery](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
         
         inline def setMousewheel(value: JQueryMousewheelEventHandler => JQuery): Self = StObject.set(x, "mousewheel", js.Any.fromFunction1(value))
         
@@ -69,7 +70,8 @@ object mod {
           __obj.asInstanceOf[SpecialEventHooks]
         }
         
-        extension [Self <: SpecialEventHooks](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: SpecialEventHooks] (val x: Self) extends AnyVal {
           
           inline def setMousewheel(value: JQueryMousewheelEventHook[JQueryMousewheelEventObject, JQueryMousewheelEventData]): Self = StObject.set(x, "mousewheel", value.asInstanceOf[js.Any])
         }
@@ -93,7 +95,8 @@ object mod {
           __obj.asInstanceOf[JQueryMousewheelEventData]
         }
         
-        extension [Self <: JQueryMousewheelEventData](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: JQueryMousewheelEventData] (val x: Self) extends AnyVal {
           
           inline def `setMousewheel-line-height`(value: Double): Self = StObject.set(x, "mousewheel-line-height", value.asInstanceOf[js.Any])
           
@@ -139,7 +142,8 @@ object mod {
           __obj.asInstanceOf[JQueryMousewheelEventHook[O, D]]
         }
         
-        extension [Self <: JQueryMousewheelEventHook[?, ?], O, D](x: Self & (JQueryMousewheelEventHook[O, D])) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: JQueryMousewheelEventHook[?, ?], O, D] (val x: Self & (JQueryMousewheelEventHook[O, D])) extends AnyVal {
           
           inline def setGetLineHeight(
             value: /* import warning: importer.ImportType#apply Failed type conversion: std.Parameters<jquery-mousewheel.jquery-mousewheel.<global>.JQuery['appendTo']>[0] */ js.Any => Double | scala.Nothing

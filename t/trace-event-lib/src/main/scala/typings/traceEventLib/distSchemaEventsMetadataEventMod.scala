@@ -34,7 +34,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataEvent]
     }
     
-    extension [Self <: MetadataEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataEvent] (val x: Self) extends AnyVal {
       
       inline def setPh(value: M): Self = StObject.set(x, "ph", value.asInstanceOf[js.Any])
     }
@@ -57,7 +58,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataProcessLabelsEvent]
     }
     
-    extension [Self <: MetadataProcessLabelsEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataProcessLabelsEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Labels): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataProcessNameEvent]
     }
     
-    extension [Self <: MetadataProcessNameEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataProcessNameEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Name): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataProcessSortIndexEvent]
     }
     
-    extension [Self <: MetadataProcessSortIndexEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataProcessSortIndexEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Sortindex): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -132,7 +136,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataThreadNameEvent]
     }
     
-    extension [Self <: MetadataThreadNameEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataThreadNameEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Name): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -157,7 +162,8 @@ object distSchemaEventsMetadataEventMod {
       __obj.asInstanceOf[MetadataThreadSortIndexEvent]
     }
     
-    extension [Self <: MetadataThreadSortIndexEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataThreadSortIndexEvent] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Sortindex): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

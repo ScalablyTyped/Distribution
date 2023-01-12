@@ -28,7 +28,8 @@ object CoreNetworkEdge {
     __obj.asInstanceOf[CoreNetworkEdge]
   }
   
-  extension [Self <: CoreNetworkEdge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetworkEdge] (val x: Self) extends AnyVal {
     
     inline def setAsn(value: Long): Self = StObject.set(x, "Asn", value.asInstanceOf[js.Any])
     

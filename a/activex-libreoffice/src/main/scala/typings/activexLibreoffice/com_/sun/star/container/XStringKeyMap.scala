@@ -67,7 +67,8 @@ object XStringKeyMap {
     __obj.asInstanceOf[XStringKeyMap]
   }
   
-  extension [Self <: XStringKeyMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStringKeyMap] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

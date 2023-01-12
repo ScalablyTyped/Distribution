@@ -38,7 +38,8 @@ object CreateDiskRequest {
     __obj.asInstanceOf[CreateDiskRequest]
   }
   
-  extension [Self <: CreateDiskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDiskRequest] (val x: Self) extends AnyVal {
     
     inline def setAddOns(value: AddOnRequestList): Self = StObject.set(x, "addOns", value.asInstanceOf[js.Any])
     

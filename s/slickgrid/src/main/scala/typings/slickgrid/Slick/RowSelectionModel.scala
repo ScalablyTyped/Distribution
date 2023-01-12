@@ -31,7 +31,8 @@ object RowSelectionModel {
     __obj.asInstanceOf[RowSelectionModel[T, E]]
   }
   
-  extension [Self <: RowSelectionModel[?, ?], T /* <: SlickData */, E](x: Self & (RowSelectionModel[T, E])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowSelectionModel[?, ?], T /* <: SlickData */, E] (val x: Self & (RowSelectionModel[T, E])) extends AnyVal {
     
     inline def setGetSelectedRanges(value: () => js.Array[Double]): Self = StObject.set(x, "getSelectedRanges", js.Any.fromFunction0(value))
     

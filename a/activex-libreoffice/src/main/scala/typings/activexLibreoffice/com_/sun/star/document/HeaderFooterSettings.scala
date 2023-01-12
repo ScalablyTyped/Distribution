@@ -48,7 +48,8 @@ object HeaderFooterSettings {
     __obj.asInstanceOf[HeaderFooterSettings]
   }
   
-  extension [Self <: HeaderFooterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeaderFooterSettings] (val x: Self) extends AnyVal {
     
     inline def setIsPrintDate(value: Boolean): Self = StObject.set(x, "IsPrintDate", value.asInstanceOf[js.Any])
     

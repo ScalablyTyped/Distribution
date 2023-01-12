@@ -42,7 +42,8 @@ object IntegratedMeshLayerElevationInfo {
     __obj.asInstanceOf[IntegratedMeshLayerElevationInfo]
   }
   
-  extension [Self <: IntegratedMeshLayerElevationInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntegratedMeshLayerElevationInfo] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

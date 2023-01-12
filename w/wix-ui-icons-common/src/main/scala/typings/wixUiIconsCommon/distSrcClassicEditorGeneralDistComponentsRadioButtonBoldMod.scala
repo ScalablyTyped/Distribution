@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsRadioButtonBoldMod extends Short
       __obj.asInstanceOf[RadioButtonBoldProps]
     }
     
-    extension [Self <: RadioButtonBoldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonBoldProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

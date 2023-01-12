@@ -35,7 +35,8 @@ object typesUnsupportedOperationExceptionMod {
       __obj.asInstanceOf[UnsupportedOperationException]
     }
     
-    extension [Self <: UnsupportedOperationException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsupportedOperationException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.UnsupportedOperationException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -55,7 +56,8 @@ object typesUnsupportedOperationExceptionMod {
       __obj.asInstanceOf[UnsupportedOperationExceptionDetails]
     }
     
-    extension [Self <: UnsupportedOperationExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnsupportedOperationExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

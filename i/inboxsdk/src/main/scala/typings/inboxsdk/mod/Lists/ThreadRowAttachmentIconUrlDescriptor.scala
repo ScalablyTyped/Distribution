@@ -20,7 +20,8 @@ object ThreadRowAttachmentIconUrlDescriptor {
     __obj.asInstanceOf[ThreadRowAttachmentIconUrlDescriptor]
   }
   
-  extension [Self <: ThreadRowAttachmentIconUrlDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadRowAttachmentIconUrlDescriptor] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

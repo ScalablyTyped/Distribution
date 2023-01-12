@@ -23,7 +23,8 @@ object DrilldownBreadcrumbsSeparatorOptions {
     __obj.asInstanceOf[DrilldownBreadcrumbsSeparatorOptions]
   }
   
-  extension [Self <: DrilldownBreadcrumbsSeparatorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrilldownBreadcrumbsSeparatorOptions] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: CSSObject | DrilldownBreadcrumbsSeparatorStyleOptions): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

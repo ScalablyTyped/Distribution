@@ -54,7 +54,8 @@ object accessKeystringapiUrlneve {
     __obj.asInstanceOf[accessKeystringapiUrlneve]
   }
   
-  extension [Self <: accessKeystringapiUrlneve](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: accessKeystringapiUrlneve] (val x: Self) extends AnyVal {
     
     inline def setAccessKey(value: String): Self = StObject.set(x, "accessKey", value.asInstanceOf[js.Any])
     

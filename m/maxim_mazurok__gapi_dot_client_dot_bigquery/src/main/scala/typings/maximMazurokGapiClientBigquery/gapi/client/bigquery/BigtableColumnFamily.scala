@@ -41,7 +41,8 @@ object BigtableColumnFamily {
     __obj.asInstanceOf[BigtableColumnFamily]
   }
   
-  extension [Self <: BigtableColumnFamily](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigtableColumnFamily] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: js.Array[BigtableColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

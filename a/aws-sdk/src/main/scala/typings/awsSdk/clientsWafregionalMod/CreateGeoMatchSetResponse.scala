@@ -23,7 +23,8 @@ object CreateGeoMatchSetResponse {
     __obj.asInstanceOf[CreateGeoMatchSetResponse]
   }
   
-  extension [Self <: CreateGeoMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGeoMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeToken(value: ChangeToken): Self = StObject.set(x, "ChangeToken", value.asInstanceOf[js.Any])
     

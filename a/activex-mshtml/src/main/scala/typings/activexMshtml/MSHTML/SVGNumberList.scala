@@ -43,7 +43,8 @@ object SVGNumberList {
     __obj.asInstanceOf[SVGNumberList]
   }
   
-  extension [Self <: SVGNumberList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGNumberList] (val x: Self) extends AnyVal {
     
     inline def setAppendItem(value: SVGNumber => SVGNumber): Self = StObject.set(x, "appendItem", js.Any.fromFunction1(value))
     

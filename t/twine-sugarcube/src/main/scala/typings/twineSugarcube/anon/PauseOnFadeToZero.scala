@@ -34,7 +34,8 @@ object PauseOnFadeToZero {
     __obj.asInstanceOf[PauseOnFadeToZero]
   }
   
-  extension [Self <: PauseOnFadeToZero](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PauseOnFadeToZero] (val x: Self) extends AnyVal {
     
     inline def setPauseOnFadeToZero(value: Boolean): Self = StObject.set(x, "pauseOnFadeToZero", value.asInstanceOf[js.Any])
     

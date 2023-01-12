@@ -72,7 +72,8 @@ object PickImplpersistPartialPic {
     __obj.asInstanceOf[PickImplpersistPartialPic]
   }
   
-  extension [Self <: PickImplpersistPartialPic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplpersistPartialPic] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: AnimationSettings): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

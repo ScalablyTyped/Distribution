@@ -238,7 +238,8 @@ object mod {
       __obj.asInstanceOf[AnyExtension]
     }
     
-    extension [Self <: AnyExtension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnyExtension] (val x: Self) extends AnyVal {
       
       inline def `set@type`(value: String): Self = StObject.set(x, "@type", value.asInstanceOf[js.Any])
     }
@@ -262,7 +263,8 @@ object mod {
       __obj.asInstanceOf[EnumTypeDefinition]
     }
     
-    extension [Self <: EnumTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: `Protocol Buffer 3 EnumDescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
@@ -284,7 +286,8 @@ object mod {
       __obj.asInstanceOf[MessageTypeDefinition]
     }
     
-    extension [Self <: MessageTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: `Protocol Buffer 3 DescriptorProto`): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     }
@@ -337,7 +340,8 @@ object mod {
       __obj.asInstanceOf[MethodDefinition[RequestType, ResponseType, OutputRequestType, OutputResponseType]]
     }
     
-    extension [Self <: MethodDefinition[?, ?, ?, ?], RequestType, ResponseType, OutputRequestType, OutputResponseType](x: Self & (MethodDefinition[RequestType, ResponseType, OutputRequestType, OutputResponseType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodDefinition[?, ?, ?, ?], RequestType, ResponseType, OutputRequestType, OutputResponseType] (val x: Self & (MethodDefinition[RequestType, ResponseType, OutputRequestType, OutputResponseType])) extends AnyVal {
       
       inline def setOriginalName(value: String): Self = StObject.set(x, "originalName", value.asInstanceOf[js.Any])
       
@@ -381,7 +385,8 @@ object mod {
       __obj.asInstanceOf[ProtobufTypeDefinition]
     }
     
-    extension [Self <: ProtobufTypeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtobufTypeDefinition] (val x: Self) extends AnyVal {
       
       inline def setFileDescriptorProtos(value: js.Array[Buffer]): Self = StObject.set(x, "fileDescriptorProtos", value.asInstanceOf[js.Any])
       
@@ -427,7 +432,8 @@ object mod {
         __obj.asInstanceOf[Enum]
       }
       
-      extension [Self <: Enum](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Enum] (val x: Self) extends AnyVal {
         
         inline def setToDescriptor(value: String => Message[IEnumDescriptorProto] & IEnumDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }
@@ -444,7 +450,8 @@ object mod {
         __obj.asInstanceOf[Root]
       }
       
-      extension [Self <: Root](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Root] (val x: Self) extends AnyVal {
         
         inline def setToDescriptor(value: String => Message[IFileDescriptorSet] & IFileDescriptorSet): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }
@@ -475,7 +482,8 @@ object mod {
         __obj.asInstanceOf[Type]
       }
       
-      extension [Self <: Type](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
         
         inline def setToDescriptor(value: String => Message[IDescriptorProto] & IDescriptorProto): Self = StObject.set(x, "toDescriptor", js.Any.fromFunction1(value))
       }

@@ -68,7 +68,8 @@ object EksContainerDetail {
     __obj.asInstanceOf[EksContainerDetail]
   }
   
-  extension [Self <: EksContainerDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EksContainerDetail] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: StringList): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object CounterStyleHyphenFallback {
     __obj.asInstanceOf[CounterStyleHyphenFallback[TLength, TTime]]
   }
   
-  extension [Self <: CounterStyleHyphenFallback[?, ?], TLength, TTime](x: Self & (CounterStyleHyphenFallback[TLength, TTime])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterStyleHyphenFallback[?, ?], TLength, TTime] (val x: Self & (CounterStyleHyphenFallback[TLength, TTime])) extends AnyVal {
     
     inline def `setAdditive-symbols`(value: String | js.Array[NonNullable[js.UndefOr[String]]]): Self = StObject.set(x, "additive-symbols", value.asInstanceOf[js.Any])
     

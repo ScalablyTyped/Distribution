@@ -15,7 +15,8 @@ object XpackUsageRealmCache {
     __obj.asInstanceOf[XpackUsageRealmCache]
   }
   
-  extension [Self <: XpackUsageRealmCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageRealmCache] (val x: Self) extends AnyVal {
     
     inline def setSize(value: long): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

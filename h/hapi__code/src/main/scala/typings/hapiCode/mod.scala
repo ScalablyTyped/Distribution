@@ -650,7 +650,8 @@ object mod {
         __obj.asInstanceOf[Location]
       }
       
-      extension [Self <: Location](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
         
         inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
         
@@ -705,7 +706,8 @@ object mod {
       __obj.asInstanceOf[Settings_]
     }
     
-    extension [Self <: Settings_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
       
       inline def setComparePrototypes(value: Boolean): Self = StObject.set(x, "comparePrototypes", value.asInstanceOf[js.Any])
       

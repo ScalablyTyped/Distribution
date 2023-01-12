@@ -33,7 +33,8 @@ object ManagedAgentStateChange {
     __obj.asInstanceOf[ManagedAgentStateChange]
   }
   
-  extension [Self <: ManagedAgentStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedAgentStateChange] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: String): Self = StObject.set(x, "containerName", value.asInstanceOf[js.Any])
     

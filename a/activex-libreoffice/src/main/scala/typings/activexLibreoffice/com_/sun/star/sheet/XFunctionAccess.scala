@@ -37,7 +37,8 @@ object XFunctionAccess {
     __obj.asInstanceOf[XFunctionAccess]
   }
   
-  extension [Self <: XFunctionAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFunctionAccess] (val x: Self) extends AnyVal {
     
     inline def setCallFunction(value: (String, SeqEquiv[Any]) => Any): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
   }

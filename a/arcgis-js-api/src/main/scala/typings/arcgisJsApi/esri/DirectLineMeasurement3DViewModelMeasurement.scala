@@ -48,7 +48,8 @@ object DirectLineMeasurement3DViewModelMeasurement {
     __obj.asInstanceOf[DirectLineMeasurement3DViewModelMeasurement]
   }
   
-  extension [Self <: DirectLineMeasurement3DViewModelMeasurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectLineMeasurement3DViewModelMeasurement] (val x: Self) extends AnyVal {
     
     inline def setDirectDistance(value: DirectLineMeasurement3DViewModelMeasurementValue): Self = StObject.set(x, "directDistance", value.asInstanceOf[js.Any])
     

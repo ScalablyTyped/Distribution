@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaListPropertiesResponse {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListPropertiesResponse]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaListPropertiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListPropertiesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
     

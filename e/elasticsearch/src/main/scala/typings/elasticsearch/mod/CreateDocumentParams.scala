@@ -42,7 +42,8 @@ object CreateDocumentParams {
     __obj.asInstanceOf[CreateDocumentParams]
   }
   
-  extension [Self <: CreateDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

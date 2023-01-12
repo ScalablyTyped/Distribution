@@ -15,7 +15,8 @@ object TypeofPhase {
     __obj.asInstanceOf[TypeofPhase]
   }
   
-  extension [Self <: TypeofPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofPhase] (val x: Self) extends AnyVal {
     
     inline def setItem(value: Any): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
   }

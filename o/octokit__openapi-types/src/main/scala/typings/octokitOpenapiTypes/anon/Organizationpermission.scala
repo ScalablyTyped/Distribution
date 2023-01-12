@@ -44,7 +44,8 @@ object Organizationpermission {
     __obj.asInstanceOf[Organizationpermission]
   }
   
-  extension [Self <: Organizationpermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Organizationpermission] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

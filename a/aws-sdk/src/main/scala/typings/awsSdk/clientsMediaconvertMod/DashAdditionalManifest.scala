@@ -23,7 +23,8 @@ object DashAdditionalManifest {
     __obj.asInstanceOf[DashAdditionalManifest]
   }
   
-  extension [Self <: DashAdditionalManifest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DashAdditionalManifest] (val x: Self) extends AnyVal {
     
     inline def setManifestNameModifier(value: stringMin1): Self = StObject.set(x, "ManifestNameModifier", value.asInstanceOf[js.Any])
     

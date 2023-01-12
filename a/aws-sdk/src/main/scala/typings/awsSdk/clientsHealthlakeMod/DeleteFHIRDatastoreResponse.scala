@@ -38,7 +38,8 @@ object DeleteFHIRDatastoreResponse {
     __obj.asInstanceOf[DeleteFHIRDatastoreResponse]
   }
   
-  extension [Self <: DeleteFHIRDatastoreResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFHIRDatastoreResponse] (val x: Self) extends AnyVal {
     
     inline def setDatastoreArn(value: DatastoreArn): Self = StObject.set(x, "DatastoreArn", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object Screenshot {
     __obj.asInstanceOf[Screenshot]
   }
   
-  extension [Self <: Screenshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Screenshot] (val x: Self) extends AnyVal {
     
     inline def setData(value: ImageData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

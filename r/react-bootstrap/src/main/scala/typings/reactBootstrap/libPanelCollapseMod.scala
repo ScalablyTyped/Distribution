@@ -40,7 +40,8 @@ object libPanelCollapseMod {
       __obj.asInstanceOf[PanelCollapseProps]
     }
     
-    extension [Self <: PanelCollapseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelCollapseProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

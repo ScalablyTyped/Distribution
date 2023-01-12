@@ -19,7 +19,8 @@ object JPYUSD {
     __obj.asInstanceOf[JPYUSD]
   }
   
-  extension [Self <: JPYUSD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JPYUSD] (val x: Self) extends AnyVal {
     
     inline def setGNF(value: js.Array[String]): Self = StObject.set(x, "GNF", value.asInstanceOf[js.Any])
     

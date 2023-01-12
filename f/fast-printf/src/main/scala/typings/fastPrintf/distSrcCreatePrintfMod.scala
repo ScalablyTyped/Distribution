@@ -29,7 +29,8 @@ object distSrcCreatePrintfMod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setFormatUnboundExpression(
         value: (/* subject */ String, /* token */ PlaceholderToken, /* boundValues */ js.Array[Any]) => String

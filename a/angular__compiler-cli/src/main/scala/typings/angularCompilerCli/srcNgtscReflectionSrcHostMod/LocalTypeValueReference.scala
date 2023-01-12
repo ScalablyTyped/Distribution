@@ -32,7 +32,8 @@ object LocalTypeValueReference {
     __obj.asInstanceOf[LocalTypeValueReference]
   }
   
-  extension [Self <: LocalTypeValueReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalTypeValueReference] (val x: Self) extends AnyVal {
     
     inline def setDefaultImportStatement(value: ImportDeclaration): Self = StObject.set(x, "defaultImportStatement", value.asInstanceOf[js.Any])
     

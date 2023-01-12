@@ -28,7 +28,8 @@ object DescribeIpGroupsRequest {
     __obj.asInstanceOf[DescribeIpGroupsRequest]
   }
   
-  extension [Self <: DescribeIpGroupsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeIpGroupsRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupIds(value: IpGroupIdList): Self = StObject.set(x, "GroupIds", value.asInstanceOf[js.Any])
     

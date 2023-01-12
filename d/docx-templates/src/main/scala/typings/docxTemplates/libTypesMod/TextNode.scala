@@ -21,7 +21,8 @@ object TextNode {
     __obj.asInstanceOf[TextNode]
   }
   
-  extension [Self <: TextNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextNode] (val x: Self) extends AnyVal {
     
     inline def set_fTextNode(value: `true`): Self = StObject.set(x, "_fTextNode", value.asInstanceOf[js.Any])
     

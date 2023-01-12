@@ -61,7 +61,8 @@ object distComponentsTypesCheckboxesMod {
       __obj.asInstanceOf[CheckboxesTypeKnob]
     }
     
-    extension [Self <: CheckboxesTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxesTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Record[String, String]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     }
@@ -88,7 +89,8 @@ object distComponentsTypesCheckboxesMod {
       __obj.asInstanceOf[CheckboxesTypeProps]
     }
     
-    extension [Self <: CheckboxesTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxesTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: CheckboxesTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }
@@ -105,7 +107,8 @@ object distComponentsTypesCheckboxesMod {
       __obj.asInstanceOf[CheckboxesTypeState]
     }
     
-    extension [Self <: CheckboxesTypeState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxesTypeState] (val x: Self) extends AnyVal {
       
       inline def setValues(value: CheckboxesTypeKnobValue): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object distComponentsTypesCheckboxesMod {
       __obj.asInstanceOf[CheckboxesWrapperProps]
     }
     
-    extension [Self <: CheckboxesWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxesWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setIsInline(value: Boolean): Self = StObject.set(x, "isInline", value.asInstanceOf[js.Any])
     }

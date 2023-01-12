@@ -22,7 +22,8 @@ object ProductDetail {
     __obj.asInstanceOf[ProductDetail]
   }
   
-  extension [Self <: ProductDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductDetail] (val x: Self) extends AnyVal {
     
     inline def setAttributeName(value: String): Self = StObject.set(x, "attributeName", value.asInstanceOf[js.Any])
     

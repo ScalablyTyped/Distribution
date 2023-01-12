@@ -119,7 +119,8 @@ object ServiceDiscovery {
         __obj.asInstanceOf[DnssdRegistrationResult]
       }
       
-      extension [Self <: DnssdRegistrationResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DnssdRegistrationResult] (val x: Self) extends AnyVal {
         
         inline def setHasInstanceNameChanged(value: Boolean): Self = StObject.set(x, "hasInstanceNameChanged", value.asInstanceOf[js.Any])
         

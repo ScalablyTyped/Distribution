@@ -29,7 +29,8 @@ object AdminDistrict {
     __obj.asInstanceOf[AdminDistrict]
   }
   
-  extension [Self <: AdminDistrict](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdminDistrict] (val x: Self) extends AnyVal {
     
     inline def setAdminDistrict(value: String): Self = StObject.set(x, "adminDistrict", value.asInstanceOf[js.Any])
     

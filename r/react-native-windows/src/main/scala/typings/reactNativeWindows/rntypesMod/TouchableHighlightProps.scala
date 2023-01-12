@@ -36,7 +36,8 @@ object TouchableHighlightProps {
     __obj.asInstanceOf[TouchableHighlightProps]
   }
   
-  extension [Self <: TouchableHighlightProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TouchableHighlightProps] (val x: Self) extends AnyVal {
     
     inline def setActiveOpacity(value: Double): Self = StObject.set(x, "activeOpacity", value.asInstanceOf[js.Any])
     

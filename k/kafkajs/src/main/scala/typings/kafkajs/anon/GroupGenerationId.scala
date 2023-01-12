@@ -24,7 +24,8 @@ object GroupGenerationId {
     __obj.asInstanceOf[GroupGenerationId]
   }
   
-  extension [Self <: GroupGenerationId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupGenerationId] (val x: Self) extends AnyVal {
     
     inline def setGroupGenerationId(value: Double): Self = StObject.set(x, "groupGenerationId", value.asInstanceOf[js.Any])
     

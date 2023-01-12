@@ -16,7 +16,8 @@ object TypeofSelectComponent {
     __obj.asInstanceOf[TypeofSelectComponent]
   }
   
-  extension [Self <: TypeofSelectComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofSelectComponent] (val x: Self) extends AnyVal {
     
     inline def setDefaultProps(value: Ariaerrormessage): Self = StObject.set(x, "defaultProps", value.asInstanceOf[js.Any])
   }

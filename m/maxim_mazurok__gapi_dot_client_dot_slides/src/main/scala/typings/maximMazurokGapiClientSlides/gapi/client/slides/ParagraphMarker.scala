@@ -19,7 +19,8 @@ object ParagraphMarker {
     __obj.asInstanceOf[ParagraphMarker]
   }
   
-  extension [Self <: ParagraphMarker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphMarker] (val x: Self) extends AnyVal {
     
     inline def setBullet(value: Bullet): Self = StObject.set(x, "bullet", value.asInstanceOf[js.Any])
     

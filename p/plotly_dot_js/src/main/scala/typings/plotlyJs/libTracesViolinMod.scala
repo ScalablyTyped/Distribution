@@ -136,7 +136,8 @@ object libTracesViolinMod {
       __obj.asInstanceOf[ViolinData]
     }
     
-    extension [Self <: ViolinData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViolinData] (val x: Self) extends AnyVal {
       
       inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object CreateAccountAssignmentRequest {
     __obj.asInstanceOf[CreateAccountAssignmentRequest]
   }
   
-  extension [Self <: CreateAccountAssignmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAccountAssignmentRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceArn(value: InstanceArn): Self = StObject.set(x, "InstanceArn", value.asInstanceOf[js.Any])
     

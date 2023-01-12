@@ -25,7 +25,8 @@ object ControlScore {
     __obj.asInstanceOf[ControlScore]
   }
   
-  extension [Self <: ControlScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlScore] (val x: Self) extends AnyVal {
     
     inline def setControlCategory(value: NullableOption[String]): Self = StObject.set(x, "controlCategory", value.asInstanceOf[js.Any])
     

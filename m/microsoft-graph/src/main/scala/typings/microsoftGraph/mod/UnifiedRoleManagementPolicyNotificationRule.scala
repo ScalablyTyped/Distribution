@@ -30,7 +30,8 @@ object UnifiedRoleManagementPolicyNotificationRule {
     __obj.asInstanceOf[UnifiedRoleManagementPolicyNotificationRule]
   }
   
-  extension [Self <: UnifiedRoleManagementPolicyNotificationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRoleManagementPolicyNotificationRule] (val x: Self) extends AnyVal {
     
     inline def setIsDefaultRecipientsEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "isDefaultRecipientsEnabled", value.asInstanceOf[js.Any])
     

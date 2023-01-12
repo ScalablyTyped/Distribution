@@ -29,7 +29,8 @@ object GetUsersData {
     __obj.asInstanceOf[GetUsersData]
   }
   
-  extension [Self <: GetUsersData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsersData] (val x: Self) extends AnyVal {
     
     inline def setConnection(value: String): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     

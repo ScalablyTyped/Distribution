@@ -29,7 +29,8 @@ object libCommonProtocolDiagnosticMod {
     
     inline def is(value: Any): /* is vscode-languageclient.vscode-languageclient/lib/common/protocolDiagnostic.DiagnosticCode */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageclient.vscode-languageclient/lib/common/protocolDiagnostic.DiagnosticCode */ Boolean]
     
-    extension [Self <: DiagnosticCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiagnosticCode] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

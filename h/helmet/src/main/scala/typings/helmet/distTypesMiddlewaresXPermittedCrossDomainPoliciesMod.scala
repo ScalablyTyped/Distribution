@@ -51,7 +51,8 @@ object distTypesMiddlewaresXPermittedCrossDomainPoliciesMod {
       __obj.asInstanceOf[XPermittedCrossDomainPoliciesOptions]
     }
     
-    extension [Self <: XPermittedCrossDomainPoliciesOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XPermittedCrossDomainPoliciesOptions] (val x: Self) extends AnyVal {
       
       inline def setPermittedPolicies(value: none | `master-only` | `by-content-type` | all): Self = StObject.set(x, "permittedPolicies", value.asInstanceOf[js.Any])
       

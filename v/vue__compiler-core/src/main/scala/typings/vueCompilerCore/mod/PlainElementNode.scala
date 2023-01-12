@@ -32,7 +32,8 @@ object PlainElementNode {
     __obj.asInstanceOf[PlainElementNode]
   }
   
-  extension [Self <: PlainElementNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlainElementNode] (val x: Self) extends AnyVal {
     
     inline def setCodegenNode(value: VNodeCall | SimpleExpressionNode | CacheExpression | MemoExpression): Self = StObject.set(x, "codegenNode", value.asInstanceOf[js.Any])
     

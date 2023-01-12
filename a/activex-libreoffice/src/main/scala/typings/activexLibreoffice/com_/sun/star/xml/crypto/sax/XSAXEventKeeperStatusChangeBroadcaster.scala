@@ -44,7 +44,8 @@ object XSAXEventKeeperStatusChangeBroadcaster {
     __obj.asInstanceOf[XSAXEventKeeperStatusChangeBroadcaster]
   }
   
-  extension [Self <: XSAXEventKeeperStatusChangeBroadcaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSAXEventKeeperStatusChangeBroadcaster] (val x: Self) extends AnyVal {
     
     inline def setAddSAXEventKeeperStatusChangeListener(value: XSAXEventKeeperStatusChangeListener => Unit): Self = StObject.set(x, "addSAXEventKeeperStatusChangeListener", js.Any.fromFunction1(value))
     

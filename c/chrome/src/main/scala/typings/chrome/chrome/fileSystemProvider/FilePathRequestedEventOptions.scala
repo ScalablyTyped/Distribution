@@ -18,7 +18,8 @@ object FilePathRequestedEventOptions {
     __obj.asInstanceOf[FilePathRequestedEventOptions]
   }
   
-  extension [Self <: FilePathRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilePathRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
   }

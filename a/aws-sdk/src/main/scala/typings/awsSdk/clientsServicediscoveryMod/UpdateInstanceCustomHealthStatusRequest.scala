@@ -28,7 +28,8 @@ object UpdateInstanceCustomHealthStatusRequest {
     __obj.asInstanceOf[UpdateInstanceCustomHealthStatusRequest]
   }
   
-  extension [Self <: UpdateInstanceCustomHealthStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateInstanceCustomHealthStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setInstanceId(value: ResourceId): Self = StObject.set(x, "InstanceId", value.asInstanceOf[js.Any])
     

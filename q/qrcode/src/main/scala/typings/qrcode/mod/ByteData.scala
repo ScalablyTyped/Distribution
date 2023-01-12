@@ -26,7 +26,8 @@ object ByteData {
     __obj.asInstanceOf[ByteData]
   }
   
-  extension [Self <: ByteData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteData] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

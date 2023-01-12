@@ -51,7 +51,8 @@ object ChapterNumberingRule {
     __obj.asInstanceOf[ChapterNumberingRule]
   }
   
-  extension [Self <: ChapterNumberingRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChapterNumberingRule] (val x: Self) extends AnyVal {
     
     inline def setHeadingStyleName(value: String): Self = StObject.set(x, "HeadingStyleName", value.asInstanceOf[js.Any])
   }

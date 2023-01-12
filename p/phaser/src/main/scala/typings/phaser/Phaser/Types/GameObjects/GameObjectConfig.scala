@@ -88,7 +88,8 @@ object GameObjectConfig {
     __obj.asInstanceOf[GameObjectConfig]
   }
   
-  extension [Self <: GameObjectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GameObjectConfig] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
     

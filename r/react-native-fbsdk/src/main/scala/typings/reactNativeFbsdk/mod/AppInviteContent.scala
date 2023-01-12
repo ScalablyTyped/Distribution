@@ -38,7 +38,8 @@ object AppInviteContent {
     __obj.asInstanceOf[AppInviteContent]
   }
   
-  extension [Self <: AppInviteContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppInviteContent] (val x: Self) extends AnyVal {
     
     inline def setApplinkUrl(value: String): Self = StObject.set(x, "applinkUrl", value.asInstanceOf[js.Any])
     

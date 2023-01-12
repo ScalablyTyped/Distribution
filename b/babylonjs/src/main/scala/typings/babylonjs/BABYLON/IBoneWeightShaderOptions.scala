@@ -34,7 +34,8 @@ object IBoneWeightShaderOptions {
     __obj.asInstanceOf[IBoneWeightShaderOptions]
   }
   
-  extension [Self <: IBoneWeightShaderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBoneWeightShaderOptions] (val x: Self) extends AnyVal {
     
     inline def setColorBase(value: Color3): Self = StObject.set(x, "colorBase", value.asInstanceOf[js.Any])
     

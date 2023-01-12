@@ -23,7 +23,8 @@ object MVCxClientReportDesignerSaveCommandExecutedEventArgs {
     __obj.asInstanceOf[MVCxClientReportDesignerSaveCommandExecutedEventArgs]
   }
   
-  extension [Self <: MVCxClientReportDesignerSaveCommandExecutedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientReportDesignerSaveCommandExecutedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setResult(value: String): Self = StObject.set(x, "Result", value.asInstanceOf[js.Any])
   }

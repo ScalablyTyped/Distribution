@@ -19,7 +19,8 @@ object ClientErrorExtensions {
     __obj.asInstanceOf[ClientErrorExtensions]
   }
   
-  extension [Self <: ClientErrorExtensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientErrorExtensions] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

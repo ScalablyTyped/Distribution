@@ -19,7 +19,8 @@ object CardanoInput {
     __obj.asInstanceOf[CardanoInput]
   }
   
-  extension [Self <: CardanoInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoInput] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String | js.Array[Double]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     

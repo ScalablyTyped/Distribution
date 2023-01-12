@@ -24,7 +24,8 @@ object GoogleActionsV2TransactionRequirementsCheckSpec {
     __obj.asInstanceOf[GoogleActionsV2TransactionRequirementsCheckSpec]
   }
   
-  extension [Self <: GoogleActionsV2TransactionRequirementsCheckSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2TransactionRequirementsCheckSpec] (val x: Self) extends AnyVal {
     
     inline def setOrderOptions(value: GoogleActionsV2OrdersOrderOptions): Self = StObject.set(x, "orderOptions", value.asInstanceOf[js.Any])
     

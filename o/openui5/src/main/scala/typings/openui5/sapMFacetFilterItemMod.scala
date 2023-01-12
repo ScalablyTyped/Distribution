@@ -228,7 +228,8 @@ object sapMFacetFilterItemMod {
       __obj.asInstanceOf[FacetFilterItemSettings]
     }
     
-    extension [Self <: FacetFilterItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FacetFilterItemSettings] (val x: Self) extends AnyVal {
       
       inline def setCount(value: int | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

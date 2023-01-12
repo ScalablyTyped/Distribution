@@ -23,7 +23,8 @@ object S3PublicAccessBlockConfiguration {
     __obj.asInstanceOf[S3PublicAccessBlockConfiguration]
   }
   
-  extension [Self <: S3PublicAccessBlockConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: S3PublicAccessBlockConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIgnorePublicAcls(value: Boolean): Self = StObject.set(x, "ignorePublicAcls", value.asInstanceOf[js.Any])
     

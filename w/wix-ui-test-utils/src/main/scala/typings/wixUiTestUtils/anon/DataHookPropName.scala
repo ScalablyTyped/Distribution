@@ -15,7 +15,8 @@ object DataHookPropName {
     __obj.asInstanceOf[DataHookPropName]
   }
   
-  extension [Self <: DataHookPropName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHookPropName] (val x: Self) extends AnyVal {
     
     inline def setDataHookPropName(value: String): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
     

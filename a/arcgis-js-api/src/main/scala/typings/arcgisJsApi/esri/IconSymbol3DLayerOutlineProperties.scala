@@ -31,7 +31,8 @@ object IconSymbol3DLayerOutlineProperties {
     __obj.asInstanceOf[IconSymbol3DLayerOutlineProperties]
   }
   
-  extension [Self <: IconSymbol3DLayerOutlineProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSymbol3DLayerOutlineProperties] (val x: Self) extends AnyVal {
     
     inline def setColor(value: Color_ | js.Array[Double] | String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

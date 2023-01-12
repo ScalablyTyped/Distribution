@@ -17,7 +17,8 @@ object TextLayoutEventData {
     __obj.asInstanceOf[TextLayoutEventData]
   }
   
-  extension [Self <: TextLayoutEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLayoutEventData] (val x: Self) extends AnyVal {
     
     inline def setLines(value: js.Array[TextLayoutLine]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EndAt {
     __obj.asInstanceOf[EndAt]
   }
   
-  extension [Self <: EndAt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndAt] (val x: Self) extends AnyVal {
     
     inline def setEndAt(value: String): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
     

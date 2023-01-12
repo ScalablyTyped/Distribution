@@ -17,7 +17,8 @@ object RollupWatchOptions {
     __obj.asInstanceOf[RollupWatchOptions]
   }
   
-  extension [Self <: RollupWatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupWatchOptions] (val x: Self) extends AnyVal {
     
     inline def setOutput(value: OutputOptions | js.Array[OutputOptions]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
     

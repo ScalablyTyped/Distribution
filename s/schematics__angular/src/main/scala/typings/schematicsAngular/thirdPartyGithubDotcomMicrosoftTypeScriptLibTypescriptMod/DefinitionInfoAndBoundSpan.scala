@@ -17,7 +17,8 @@ object DefinitionInfoAndBoundSpan {
     __obj.asInstanceOf[DefinitionInfoAndBoundSpan]
   }
   
-  extension [Self <: DefinitionInfoAndBoundSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefinitionInfoAndBoundSpan] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: js.Array[DefinitionInfo]): Self = StObject.set(x, "definitions", value.asInstanceOf[js.Any])
     

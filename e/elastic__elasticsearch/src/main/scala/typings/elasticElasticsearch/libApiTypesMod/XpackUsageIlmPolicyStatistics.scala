@@ -17,7 +17,8 @@ object XpackUsageIlmPolicyStatistics {
     __obj.asInstanceOf[XpackUsageIlmPolicyStatistics]
   }
   
-  extension [Self <: XpackUsageIlmPolicyStatistics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackUsageIlmPolicyStatistics] (val x: Self) extends AnyVal {
     
     inline def setIndices_managed(value: integer): Self = StObject.set(x, "indices_managed", value.asInstanceOf[js.Any])
     

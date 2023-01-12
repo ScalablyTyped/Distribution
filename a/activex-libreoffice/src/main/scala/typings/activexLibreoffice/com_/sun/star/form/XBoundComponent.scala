@@ -39,7 +39,8 @@ object XBoundComponent {
     __obj.asInstanceOf[XBoundComponent]
   }
   
-  extension [Self <: XBoundComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBoundComponent] (val x: Self) extends AnyVal {
     
     inline def setCommit(value: () => Boolean): Self = StObject.set(x, "commit", js.Any.fromFunction0(value))
   }

@@ -17,7 +17,8 @@ object OnlyValue {
     __obj.asInstanceOf[OnlyValue]
   }
   
-  extension [Self <: OnlyValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnlyValue] (val x: Self) extends AnyVal {
     
     inline def setOnly(value: Boolean): Self = StObject.set(x, "only", value.asInstanceOf[js.Any])
     

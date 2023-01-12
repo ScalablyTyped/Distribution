@@ -15,7 +15,8 @@ object ExpandNodesFirst {
     __obj.asInstanceOf[ExpandNodesFirst]
   }
   
-  extension [Self <: ExpandNodesFirst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandNodesFirst] (val x: Self) extends AnyVal {
     
     inline def setExpandNodesFirst(value: Boolean): Self = StObject.set(x, "expandNodesFirst", value.asInstanceOf[js.Any])
     

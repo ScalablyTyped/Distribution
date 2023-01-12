@@ -52,7 +52,8 @@ object outOptionsMacOptionsMod {
       __obj.asInstanceOf[DmgContent]
     }
     
-    extension [Self <: DmgContent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DmgContent] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object outOptionsMacOptionsMod {
       __obj.asInstanceOf[DmgOptions]
     }
     
-    extension [Self <: DmgOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DmgOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       
@@ -255,7 +257,8 @@ object outOptionsMacOptionsMod {
       __obj.asInstanceOf[DmgWindow]
     }
     
-    extension [Self <: DmgWindow](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DmgWindow] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -486,7 +489,8 @@ object outOptionsMacOptionsMod {
       __obj.asInstanceOf[MacConfiguration]
     }
     
-    extension [Self <: MacConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MacConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBinaries(value: js.Array[String]): Self = StObject.set(x, "binaries", value.asInstanceOf[js.Any])
       

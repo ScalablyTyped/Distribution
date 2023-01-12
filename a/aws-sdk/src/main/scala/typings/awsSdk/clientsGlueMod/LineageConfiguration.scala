@@ -18,7 +18,8 @@ object LineageConfiguration {
     __obj.asInstanceOf[LineageConfiguration]
   }
   
-  extension [Self <: LineageConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineageConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrawlerLineageSettings(value: CrawlerLineageSettings): Self = StObject.set(x, "CrawlerLineageSettings", value.asInstanceOf[js.Any])
     

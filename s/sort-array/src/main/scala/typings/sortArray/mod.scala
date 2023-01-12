@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[SortOptions[Computed]]
     }
     
-    extension [Self <: SortOptions[?], Computed](x: Self & SortOptions[Computed]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SortOptions[?], Computed] (val x: Self & SortOptions[Computed]) extends AnyVal {
       
       inline def setBy(value: String | js.Array[String]): Self = StObject.set(x, "by", value.asInstanceOf[js.Any])
       

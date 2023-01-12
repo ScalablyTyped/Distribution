@@ -45,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Angle]
     }
     
-    extension [Self <: Angle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Angle] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[From]
     }
     
-    extension [Self <: From](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: From] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: PointLike): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[TypeofColor]
     }
     
-    extension [Self <: TypeofColor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofColor] (val x: Self) extends AnyVal {
       
       inline def setRandom(value: () => Color): Self = StObject.set(x, "random", js.Any.fromFunction0(value))
     }
@@ -169,7 +173,8 @@ object anon {
       __obj.asInstanceOf[TypeofKey]
     }
     
-    extension [Self <: TypeofKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofKey] (val x: Self) extends AnyVal {
       
       inline def setIsDown(value: String => Boolean): Self = StObject.set(x, "isDown", js.Any.fromFunction1(value))
       
@@ -192,7 +197,8 @@ object anon {
       __obj.asInstanceOf[TypeofPaperScope]
     }
     
-    extension [Self <: TypeofPaperScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPaperScope] (val x: Self) extends AnyVal {
       
       inline def setGet(value: Any => PaperScope): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -319,7 +325,8 @@ object anon {
       __obj.asInstanceOf[TypeofPath]
     }
     
-    extension [Self <: TypeofPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPath] (val x: Self) extends AnyVal {
       
       inline def setArc(value: Instantiable3[/* from */ PointLike, /* through */ PointLike, /* to */ PointLike, Arc]): Self = StObject.set(x, "Arc", value.asInstanceOf[js.Any])
       
@@ -422,7 +429,8 @@ object anon {
       __obj.asInstanceOf[TypeofPoint]
     }
     
-    extension [Self <: TypeofPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofPoint] (val x: Self) extends AnyVal {
       
       inline def setMax(value: (PointLike, PointLike) => Point): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
@@ -459,7 +467,8 @@ object anon {
       __obj.asInstanceOf[TypeofShape]
     }
     
-    extension [Self <: TypeofShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofShape] (val x: Self) extends AnyVal {
       
       inline def setCircle(
         value: Instantiable2[/* center */ PointLike, /* radius */ Double, typings.paper.paper.Shape.Circle]
@@ -513,7 +522,8 @@ object anon {
       __obj.asInstanceOf[TypeofSize]
     }
     
-    extension [Self <: TypeofSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofSize] (val x: Self) extends AnyVal {
       
       inline def setMax(value: (SizeLike, SizeLike) => Size): Self = StObject.set(x, "max", js.Any.fromFunction2(value))
       
@@ -542,7 +552,8 @@ object anon {
       __obj.asInstanceOf[Width]
     }
     
-    extension [Self <: Width](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Width] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -570,7 +581,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

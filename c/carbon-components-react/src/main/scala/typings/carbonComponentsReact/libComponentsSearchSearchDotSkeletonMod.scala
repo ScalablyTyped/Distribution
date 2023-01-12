@@ -27,7 +27,8 @@ object libComponentsSearchSearchDotSkeletonMod extends Shortcut {
       __obj.asInstanceOf[SearchSkeletonProps]
     }
     
-    extension [Self <: SearchSkeletonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchSkeletonProps] (val x: Self) extends AnyVal {
       
       inline def setSmall(value: Boolean): Self = StObject.set(x, "small", value.asInstanceOf[js.Any])
       

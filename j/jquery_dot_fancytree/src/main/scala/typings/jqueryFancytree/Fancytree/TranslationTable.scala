@@ -33,7 +33,8 @@ object TranslationTable {
     __obj.asInstanceOf[TranslationTable]
   }
   
-  extension [Self <: TranslationTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationTable] (val x: Self) extends AnyVal {
     
     inline def setLoadError(value: String): Self = StObject.set(x, "loadError", value.asInstanceOf[js.Any])
     

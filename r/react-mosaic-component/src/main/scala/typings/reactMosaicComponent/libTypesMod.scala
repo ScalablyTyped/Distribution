@@ -39,7 +39,8 @@ object libTypesMod {
       __obj.asInstanceOf[EnabledResizeOptions]
     }
     
-    extension [Self <: EnabledResizeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnabledResizeOptions] (val x: Self) extends AnyVal {
       
       inline def setMinimumPaneSizePercentage(value: Double): Self = StObject.set(x, "minimumPaneSizePercentage", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object libTypesMod {
       __obj.asInstanceOf[MosaicParent[T]]
     }
     
-    extension [Self <: MosaicParent[?], T /* <: MosaicKey */](x: Self & MosaicParent[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicParent[?], T /* <: MosaicKey */] (val x: Self & MosaicParent[T]) extends AnyVal {
       
       inline def setDirection(value: MosaicDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -121,7 +123,8 @@ object libTypesMod {
       __obj.asInstanceOf[MosaicUpdate[T]]
     }
     
-    extension [Self <: MosaicUpdate[?], T /* <: MosaicKey */](x: Self & MosaicUpdate[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MosaicUpdate[?], T /* <: MosaicKey */] (val x: Self & MosaicUpdate[T]) extends AnyVal {
       
       inline def setPath(value: MosaicPath): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       

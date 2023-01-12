@@ -31,7 +31,8 @@ object libUtilsValueUtilMod {
       __obj.asInstanceOf[GetColumnKeyColumn]
     }
     
-    extension [Self <: GetColumnKeyColumn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetColumnKeyColumn] (val x: Self) extends AnyVal {
       
       inline def setDataIndex(value: DataIndex): Self = StObject.set(x, "dataIndex", value.asInstanceOf[js.Any])
       

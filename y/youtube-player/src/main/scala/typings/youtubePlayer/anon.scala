@@ -39,7 +39,8 @@ object anon {
       __obj.asInstanceOf[AcceptableStates]
     }
     
-    extension [Self <: AcceptableStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AcceptableStates] (val x: Self) extends AnyVal {
       
       inline def setAcceptableStates(value: js.Tuple2[ENDED, PAUSED]): Self = StObject.set(x, "acceptableStates", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object anon {
       __obj.asInstanceOf[Autoplay]
     }
     
-    extension [Self <: Autoplay](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Autoplay] (val x: Self) extends AnyVal {
       
       inline def setAutoplay(value: `0` | `1`): Self = StObject.set(x, "autoplay", value.asInstanceOf[js.Any])
       
@@ -312,7 +314,8 @@ object anon {
       __obj.asInstanceOf[EndSeconds]
     }
     
-    extension [Self <: EndSeconds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndSeconds] (val x: Self) extends AnyVal {
       
       inline def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
       
@@ -349,7 +352,8 @@ object anon {
       __obj.asInstanceOf[Index]
     }
     
-    extension [Self <: Index](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
@@ -393,7 +397,8 @@ object anon {
       __obj.asInstanceOf[MediaContentUrl]
     }
     
-    extension [Self <: MediaContentUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaContentUrl] (val x: Self) extends AnyVal {
       
       inline def setEndSeconds(value: Double): Self = StObject.set(x, "endSeconds", value.asInstanceOf[js.Any])
       
@@ -424,7 +429,8 @@ object anon {
       __obj.asInstanceOf[StateChangeRequired]
     }
     
-    extension [Self <: StateChangeRequired](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateChangeRequired] (val x: Self) extends AnyVal {
       
       inline def setAcceptableStates(value: js.Tuple2[ENDED, PLAYING]): Self = StObject.set(x, "acceptableStates", value.asInstanceOf[js.Any])
       
@@ -448,7 +454,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setAcceptableStates(value: js.Tuple3[ENDED, PLAYING, PAUSED]): Self = StObject.set(x, "acceptableStates", value.asInstanceOf[js.Any])
       
@@ -482,7 +489,8 @@ object anon {
       __obj.asInstanceOf[eventTypeinEventTypeevent]
     }
     
-    extension [Self <: eventTypeinEventTypeevent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: eventTypeinEventTypeevent] (val x: Self) extends AnyVal {
       
       inline def setApiChange(value: /* event */ CustomEvent[Any] => Unit): Self = StObject.set(x, "apiChange", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object EventCondition {
     __obj.asInstanceOf[EventCondition]
   }
   
-  extension [Self <: EventCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCondition] (val x: Self) extends AnyVal {
     
     inline def setDimensions(value: EventDimensions): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
     

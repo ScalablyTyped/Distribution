@@ -21,7 +21,8 @@ object InvokeActionObject {
     __obj.asInstanceOf[InvokeActionObject[TContext, TEvent]]
   }
   
-  extension [Self <: InvokeActionObject[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (InvokeActionObject[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvokeActionObject[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (InvokeActionObject[TContext, TEvent])) extends AnyVal {
     
     inline def setActivity(value: InvokeDefinition[TContext, TEvent]): Self = StObject.set(x, "activity", value.asInstanceOf[js.Any])
   }

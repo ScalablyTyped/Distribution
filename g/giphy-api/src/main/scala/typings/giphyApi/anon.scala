@@ -34,7 +34,8 @@ object anon {
       __obj.asInstanceOf[Avatarurl]
     }
     
-    extension [Self <: Avatarurl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avatarurl] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       
@@ -68,7 +69,8 @@ object anon {
       __obj.asInstanceOf[BaseImagesizestring]
     }
     
-    extension [Self <: BaseImagesizestring](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseImagesizestring] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object anon {
       __obj.asInstanceOf[BaseImagesizestringframes]
     }
     
-    extension [Self <: BaseImagesizestringframes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseImagesizestringframes] (val x: Self) extends AnyVal {
       
       inline def setFrames(value: String): Self = StObject.set(x, "frames", value.asInstanceOf[js.Any])
       
@@ -175,7 +178,8 @@ object anon {
       __obj.asInstanceOf[BaseImagesizestringmp4str]
     }
     
-    extension [Self <: BaseImagesizestringmp4str](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseImagesizestringmp4str] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -217,7 +221,8 @@ object anon {
       __obj.asInstanceOf[BaseImagesizestringwebpst]
     }
     
-    extension [Self <: BaseImagesizestringwebpst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseImagesizestringwebpst] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -248,7 +253,8 @@ object anon {
       __obj.asInstanceOf[Count]
     }
     
-    extension [Self <: Count](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Count] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -275,7 +281,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -298,7 +305,8 @@ object anon {
       __obj.asInstanceOf[Mp4]
     }
     
-    extension [Self <: Mp4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Mp4] (val x: Self) extends AnyVal {
       
       inline def setMp4(value: String): Self = StObject.set(x, "mp4", value.asInstanceOf[js.Any])
     }
@@ -319,7 +327,8 @@ object anon {
       __obj.asInstanceOf[Msg]
     }
     
-    extension [Self <: Msg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       

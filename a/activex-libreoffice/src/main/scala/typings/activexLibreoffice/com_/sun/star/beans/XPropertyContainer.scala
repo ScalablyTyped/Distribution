@@ -46,7 +46,8 @@ object XPropertyContainer {
     __obj.asInstanceOf[XPropertyContainer]
   }
   
-  extension [Self <: XPropertyContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XPropertyContainer] (val x: Self) extends AnyVal {
     
     inline def setAddProperty(value: (String, Double, Any) => Unit): Self = StObject.set(x, "addProperty", js.Any.fromFunction3(value))
     

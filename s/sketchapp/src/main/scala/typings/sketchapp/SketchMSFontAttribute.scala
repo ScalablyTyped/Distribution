@@ -19,7 +19,8 @@ object SketchMSFontAttribute {
     __obj.asInstanceOf[SketchMSFontAttribute]
   }
   
-  extension [Self <: SketchMSFontAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSFontAttribute] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Name): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

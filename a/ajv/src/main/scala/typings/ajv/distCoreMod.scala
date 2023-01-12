@@ -515,7 +515,8 @@ object distCoreMod {
       __obj.asInstanceOf[CodeOptions]
     }
     
-    extension [Self <: CodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodeOptions] (val x: Self) extends AnyVal {
       
       inline def setEs5(value: Boolean): Self = StObject.set(x, "es5", value.asInstanceOf[js.Any])
       
@@ -663,7 +664,8 @@ object distCoreMod {
       __obj.asInstanceOf[CurrentOptions]
     }
     
-    extension [Self <: CurrentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentOptions] (val x: Self) extends AnyVal {
       
       inline def set$comment(
         value: `true` | (js.Function3[
@@ -884,7 +886,8 @@ object distCoreMod {
       __obj.asInstanceOf[DeprecatedOptions]
     }
     
-    extension [Self <: DeprecatedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecatedOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreKeywordsWithRef(value: Boolean): Self = StObject.set(x, "ignoreKeywordsWithRef", value.asInstanceOf[js.Any])
       
@@ -913,7 +916,8 @@ object distCoreMod {
       __obj.asInstanceOf[ErrorsTextOptions]
     }
     
-    extension [Self <: ErrorsTextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorsTextOptions] (val x: Self) extends AnyVal {
       
       inline def setDataVar(value: String): Self = StObject.set(x, "dataVar", value.asInstanceOf[js.Any])
       
@@ -944,7 +948,8 @@ object distCoreMod {
       __obj.asInstanceOf[InstanceCodeOptions]
     }
     
-    extension [Self <: InstanceCodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceCodeOptions] (val x: Self) extends AnyVal {
       
       inline def setOptimize(value: Double): Self = StObject.set(x, "optimize", value.asInstanceOf[js.Any])
       
@@ -1074,7 +1079,8 @@ object distCoreMod {
       __obj.asInstanceOf[InstanceOptions]
     }
     
-    extension [Self <: InstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstanceOptions] (val x: Self) extends AnyVal {
       
       inline def set$comment(
         value: `true` | (js.Function3[
@@ -1304,7 +1310,8 @@ object distCoreMod {
       __obj.asInstanceOf[Logger]
     }
     
-    extension [Self <: Logger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logger] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* repeated */ Any => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -1381,7 +1388,8 @@ object distCoreMod {
       __obj.asInstanceOf[RequiredInstanceOptions]
     }
     
-    extension [Self <: RequiredInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setAddUsedSchema(value: NonNullable[js.UndefOr[Boolean]]): Self = StObject.set(x, "addUsedSchema", value.asInstanceOf[js.Any])
       

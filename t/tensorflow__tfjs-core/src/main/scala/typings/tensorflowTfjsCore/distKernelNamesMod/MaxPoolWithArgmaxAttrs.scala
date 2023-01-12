@@ -28,7 +28,8 @@ object MaxPoolWithArgmaxAttrs {
     __obj.asInstanceOf[MaxPoolWithArgmaxAttrs]
   }
   
-  extension [Self <: MaxPoolWithArgmaxAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaxPoolWithArgmaxAttrs] (val x: Self) extends AnyVal {
     
     inline def setFilterSize(value: (js.Tuple2[Double, Double]) | Double): Self = StObject.set(x, "filterSize", value.asInstanceOf[js.Any])
     

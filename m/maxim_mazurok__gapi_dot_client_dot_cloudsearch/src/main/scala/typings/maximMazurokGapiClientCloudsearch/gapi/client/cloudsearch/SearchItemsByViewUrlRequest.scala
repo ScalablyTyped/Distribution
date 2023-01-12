@@ -22,7 +22,8 @@ object SearchItemsByViewUrlRequest {
     __obj.asInstanceOf[SearchItemsByViewUrlRequest]
   }
   
-  extension [Self <: SearchItemsByViewUrlRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchItemsByViewUrlRequest] (val x: Self) extends AnyVal {
     
     inline def setDebugOptions(value: DebugOptions): Self = StObject.set(x, "debugOptions", value.asInstanceOf[js.Any])
     

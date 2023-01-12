@@ -29,7 +29,8 @@ object WriteSyncError {
     __obj.asInstanceOf[WriteSyncError]
   }
   
-  extension [Self <: WriteSyncError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteSyncError] (val x: Self) extends AnyVal {
     
     inline def setErrCode(value: Double): Self = StObject.set(x, "errCode", value.asInstanceOf[js.Any])
     

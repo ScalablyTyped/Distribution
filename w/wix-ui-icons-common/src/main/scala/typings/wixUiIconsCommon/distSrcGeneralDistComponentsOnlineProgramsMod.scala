@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsOnlineProgramsMod extends Shortcut {
       __obj.asInstanceOf[OnlineProgramsProps]
     }
     
-    extension [Self <: OnlineProgramsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnlineProgramsProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object Components_ {
     __obj.asInstanceOf[Components_[TEvent, TResource]]
   }
   
-  extension [Self <: Components_[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */](x: Self & (Components_[TEvent, TResource])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Components_[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (Components_[TEvent, TResource])) extends AnyVal {
     
     inline def setAgenda(value: Date[TEvent]): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OSPolicyResourceFileRemote {
     __obj.asInstanceOf[OSPolicyResourceFileRemote]
   }
   
-  extension [Self <: OSPolicyResourceFileRemote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyResourceFileRemote] (val x: Self) extends AnyVal {
     
     inline def setSha256Checksum(value: String): Self = StObject.set(x, "sha256Checksum", value.asInstanceOf[js.Any])
     

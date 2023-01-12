@@ -25,7 +25,8 @@ object LineInputProps {
     __obj.asInstanceOf[LineInputProps]
   }
   
-  extension [Self <: LineInputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineInputProps] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

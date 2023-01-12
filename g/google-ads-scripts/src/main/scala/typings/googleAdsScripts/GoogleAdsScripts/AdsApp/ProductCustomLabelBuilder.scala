@@ -31,7 +31,8 @@ object ProductCustomLabelBuilder {
     __obj.asInstanceOf[ProductCustomLabelBuilder]
   }
   
-  extension [Self <: ProductCustomLabelBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductCustomLabelBuilder] (val x: Self) extends AnyVal {
     
     inline def setWithBid(value: Double => ProductCustomLabelBuilder): Self = StObject.set(x, "withBid", js.Any.fromFunction1(value))
     

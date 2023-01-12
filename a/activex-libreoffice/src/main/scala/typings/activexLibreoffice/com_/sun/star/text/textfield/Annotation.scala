@@ -84,7 +84,8 @@ object Annotation {
     __obj.asInstanceOf[Annotation]
   }
   
-  extension [Self <: Annotation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Annotation] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: String): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     

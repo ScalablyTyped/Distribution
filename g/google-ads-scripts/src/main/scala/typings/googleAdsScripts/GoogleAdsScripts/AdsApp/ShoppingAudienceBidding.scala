@@ -23,7 +23,8 @@ object ShoppingAudienceBidding {
     __obj.asInstanceOf[ShoppingAudienceBidding]
   }
   
-  extension [Self <: ShoppingAudienceBidding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShoppingAudienceBidding] (val x: Self) extends AnyVal {
     
     inline def setClearBidModifier(value: () => Unit): Self = StObject.set(x, "clearBidModifier", js.Any.fromFunction0(value))
     

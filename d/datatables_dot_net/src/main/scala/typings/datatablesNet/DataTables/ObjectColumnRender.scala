@@ -24,7 +24,8 @@ object ObjectColumnRender {
     __obj.asInstanceOf[ObjectColumnRender]
   }
   
-  extension [Self <: ObjectColumnRender](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectColumnRender] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String | Double | FunctionColumnRender): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

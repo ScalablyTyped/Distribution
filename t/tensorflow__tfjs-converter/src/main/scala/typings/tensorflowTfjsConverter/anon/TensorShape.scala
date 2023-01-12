@@ -19,7 +19,8 @@ object TensorShape {
     __obj.asInstanceOf[TensorShape]
   }
   
-  extension [Self <: TensorShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TensorShape] (val x: Self) extends AnyVal {
     
     inline def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
     

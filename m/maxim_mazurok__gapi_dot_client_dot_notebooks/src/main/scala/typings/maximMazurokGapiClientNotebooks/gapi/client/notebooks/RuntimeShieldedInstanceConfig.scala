@@ -28,7 +28,8 @@ object RuntimeShieldedInstanceConfig {
     __obj.asInstanceOf[RuntimeShieldedInstanceConfig]
   }
   
-  extension [Self <: RuntimeShieldedInstanceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuntimeShieldedInstanceConfig] (val x: Self) extends AnyVal {
     
     inline def setEnableIntegrityMonitoring(value: Boolean): Self = StObject.set(x, "enableIntegrityMonitoring", value.asInstanceOf[js.Any])
     

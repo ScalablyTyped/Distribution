@@ -25,7 +25,8 @@ object BarEnd {
     __obj.asInstanceOf[BarEnd]
   }
   
-  extension [Self <: BarEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarEnd] (val x: Self) extends AnyVal {
     
     inline def setBarEnd(value: Double): Self = StObject.set(x, "barEnd", value.asInstanceOf[js.Any])
     

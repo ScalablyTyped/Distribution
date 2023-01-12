@@ -43,7 +43,8 @@ object libTypescriptElementsPathMod {
       __obj.asInstanceOf[PathProps]
     }
     
-    extension [Self <: PathProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathProps] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

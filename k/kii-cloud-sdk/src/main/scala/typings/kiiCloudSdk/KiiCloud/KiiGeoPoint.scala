@@ -26,7 +26,8 @@ object KiiGeoPoint {
     __obj.asInstanceOf[KiiGeoPoint]
   }
   
-  extension [Self <: KiiGeoPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KiiGeoPoint] (val x: Self) extends AnyVal {
     
     inline def setGetLatitude(value: () => Double): Self = StObject.set(x, "getLatitude", js.Any.fromFunction0(value))
     

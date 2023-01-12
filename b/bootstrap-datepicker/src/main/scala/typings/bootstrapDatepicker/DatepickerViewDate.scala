@@ -21,7 +21,8 @@ object DatepickerViewDate {
     __obj.asInstanceOf[DatepickerViewDate]
   }
   
-  extension [Self <: DatepickerViewDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatepickerViewDate] (val x: Self) extends AnyVal {
     
     inline def setDay(value: Double): Self = StObject.set(x, "day", value.asInstanceOf[js.Any])
     

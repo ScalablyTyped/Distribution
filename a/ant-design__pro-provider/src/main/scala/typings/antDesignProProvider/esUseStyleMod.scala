@@ -60,7 +60,8 @@ object esUseStyleMod {
       __obj.asInstanceOf[ProAliasToken]
     }
     
-    extension [Self <: ProAliasToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProAliasToken] (val x: Self) extends AnyVal {
       
       inline def setAntCls(value: String): Self = StObject.set(x, "antCls", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object esUseStyleMod {
       __obj.asInstanceOf[UseStyleResult]
     }
     
-    extension [Self <: UseStyleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseStyleResult] (val x: Self) extends AnyVal {
       
       inline def setHashId(value: String): Self = StObject.set(x, "hashId", value.asInstanceOf[js.Any])
       

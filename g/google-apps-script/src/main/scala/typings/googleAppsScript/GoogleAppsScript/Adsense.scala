@@ -160,7 +160,8 @@ object Adsense {
           __obj.asInstanceOf[typings.googleAppsScript.GoogleAppsScript.Adsense.Collection.Accounts.PaymentsCollection]
         }
         
-        extension [Self <: typings.googleAppsScript.GoogleAppsScript.Adsense.Collection.Accounts.PaymentsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.googleAppsScript.GoogleAppsScript.Adsense.Collection.Accounts.PaymentsCollection] (val x: Self) extends AnyVal {
           
           inline def setList(value: String => Payments): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
         }
@@ -356,7 +357,8 @@ object Adsense {
           __obj.asInstanceOf[DimensionsCollection]
         }
         
-        extension [Self <: DimensionsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: DimensionsCollection] (val x: Self) extends AnyVal {
           
           inline def setList(value: () => typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
         }
@@ -374,7 +376,8 @@ object Adsense {
           __obj.asInstanceOf[MetricsCollection]
         }
         
-        extension [Self <: MetricsCollection](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: MetricsCollection] (val x: Self) extends AnyVal {
           
           inline def setList(value: () => typings.googleAppsScript.GoogleAppsScript.Adsense.Schema.Metadata): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
         }
@@ -394,7 +397,8 @@ object Adsense {
         __obj.asInstanceOf[MetadataCollection]
       }
       
-      extension [Self <: MetadataCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetadataCollection] (val x: Self) extends AnyVal {
         
         inline def setDimensions(value: DimensionsCollection): Self = StObject.set(x, "Dimensions", value.asInstanceOf[js.Any])
         
@@ -418,7 +422,8 @@ object Adsense {
         __obj.asInstanceOf[PaymentsCollection]
       }
       
-      extension [Self <: PaymentsCollection](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PaymentsCollection] (val x: Self) extends AnyVal {
         
         inline def setList(value: () => Payments): Self = StObject.set(x, "list", js.Any.fromFunction0(value))
       }
@@ -476,7 +481,8 @@ object Adsense {
     }
   }
   
-  extension [Self <: Adsense](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adsense] (val x: Self) extends AnyVal {
     
     inline def setAccounts(value: AccountsCollection): Self = StObject.set(x, "Accounts", value.asInstanceOf[js.Any])
     
@@ -544,7 +550,8 @@ object Adsense {
         __obj.asInstanceOf[Account]
       }
       
-      extension [Self <: Account](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Account] (val x: Self) extends AnyVal {
         
         inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
         
@@ -595,7 +602,8 @@ object Adsense {
         __obj.asInstanceOf[Accounts]
       }
       
-      extension [Self <: Accounts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Accounts] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -636,7 +644,8 @@ object Adsense {
         __obj.asInstanceOf[AdClient]
       }
       
-      extension [Self <: AdClient](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdClient] (val x: Self) extends AnyVal {
         
         inline def setArcOptIn(value: Boolean): Self = StObject.set(x, "arcOptIn", value.asInstanceOf[js.Any])
         
@@ -677,7 +686,8 @@ object Adsense {
         __obj.asInstanceOf[AdClients]
       }
       
-      extension [Self <: AdClients](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdClients] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -716,7 +726,8 @@ object Adsense {
         __obj.asInstanceOf[AdCode]
       }
       
-      extension [Self <: AdCode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdCode] (val x: Self) extends AnyVal {
         
         inline def setAdCode(value: String): Self = StObject.set(x, "adCode", value.asInstanceOf[js.Any])
         
@@ -753,7 +764,8 @@ object Adsense {
         __obj.asInstanceOf[AdStyle]
       }
       
-      extension [Self <: AdStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdStyle] (val x: Self) extends AnyVal {
         
         inline def setColors(value: AdStyleColors): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
         
@@ -792,7 +804,8 @@ object Adsense {
         __obj.asInstanceOf[AdStyleColors]
       }
       
-      extension [Self <: AdStyleColors](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdStyleColors] (val x: Self) extends AnyVal {
         
         inline def setBackground(value: String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
         
@@ -829,7 +842,8 @@ object Adsense {
         __obj.asInstanceOf[AdStyleFont]
       }
       
-      extension [Self <: AdStyleFont](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdStyleFont] (val x: Self) extends AnyVal {
         
         inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
         
@@ -870,7 +884,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnit]
       }
       
-      extension [Self <: AdUnit](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnit] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -929,7 +944,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnitContentAdsSettings]
       }
       
-      extension [Self <: AdUnitContentAdsSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnitContentAdsSettings] (val x: Self) extends AnyVal {
         
         inline def setBackupOption(value: AdUnitContentAdsSettingsBackupOption): Self = StObject.set(x, "backupOption", value.asInstanceOf[js.Any])
         
@@ -960,7 +976,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnitContentAdsSettingsBackupOption]
       }
       
-      extension [Self <: AdUnitContentAdsSettingsBackupOption](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnitContentAdsSettingsBackupOption] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -993,7 +1010,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnitFeedAdsSettings]
       }
       
-      extension [Self <: AdUnitFeedAdsSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnitFeedAdsSettings] (val x: Self) extends AnyVal {
         
         inline def setAdPosition(value: String): Self = StObject.set(x, "adPosition", value.asInstanceOf[js.Any])
         
@@ -1030,7 +1048,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnitMobileContentAdsSettings]
       }
       
-      extension [Self <: AdUnitMobileContentAdsSettings](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnitMobileContentAdsSettings] (val x: Self) extends AnyVal {
         
         inline def setMarkupLanguage(value: String): Self = StObject.set(x, "markupLanguage", value.asInstanceOf[js.Any])
         
@@ -1067,7 +1086,8 @@ object Adsense {
         __obj.asInstanceOf[AdUnits]
       }
       
-      extension [Self <: AdUnits](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdUnits] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1116,7 +1136,8 @@ object Adsense {
         __obj.asInstanceOf[AdsenseReportsGenerateResponse]
       }
       
-      extension [Self <: AdsenseReportsGenerateResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdsenseReportsGenerateResponse] (val x: Self) extends AnyVal {
         
         inline def setAverages(value: js.Array[String]): Self = StObject.set(x, "averages", value.asInstanceOf[js.Any])
         
@@ -1181,7 +1202,8 @@ object Adsense {
         __obj.asInstanceOf[AdsenseReportsGenerateResponseHeaders]
       }
       
-      extension [Self <: AdsenseReportsGenerateResponseHeaders](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AdsenseReportsGenerateResponseHeaders] (val x: Self) extends AnyVal {
         
         inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
         
@@ -1218,7 +1240,8 @@ object Adsense {
         __obj.asInstanceOf[Alert]
       }
       
-      extension [Self <: Alert](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Alert] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1259,7 +1282,8 @@ object Adsense {
         __obj.asInstanceOf[Alerts]
       }
       
-      extension [Self <: Alerts](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Alerts] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Alert]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1292,7 +1316,8 @@ object Adsense {
         __obj.asInstanceOf[CustomChannel]
       }
       
-      extension [Self <: CustomChannel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomChannel] (val x: Self) extends AnyVal {
         
         inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
         
@@ -1333,7 +1358,8 @@ object Adsense {
         __obj.asInstanceOf[CustomChannelTargetingInfo]
       }
       
-      extension [Self <: CustomChannelTargetingInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomChannelTargetingInfo] (val x: Self) extends AnyVal {
         
         inline def setAdsAppearOn(value: String): Self = StObject.set(x, "adsAppearOn", value.asInstanceOf[js.Any])
         
@@ -1370,7 +1396,8 @@ object Adsense {
         __obj.asInstanceOf[CustomChannels]
       }
       
-      extension [Self <: CustomChannels](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CustomChannels] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1405,7 +1432,8 @@ object Adsense {
         __obj.asInstanceOf[Metadata]
       }
       
-      extension [Self <: Metadata](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Metadata] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[ReportingMetadataEntry]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1438,7 +1466,8 @@ object Adsense {
         __obj.asInstanceOf[Payment]
       }
       
-      extension [Self <: Payment](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Payment] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1475,7 +1504,8 @@ object Adsense {
         __obj.asInstanceOf[Payments]
       }
       
-      extension [Self <: Payments](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Payments] (val x: Self) extends AnyVal {
         
         inline def setItems(value: js.Array[Payment]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
         
@@ -1512,7 +1542,8 @@ object Adsense {
         __obj.asInstanceOf[ReportingMetadataEntry]
       }
       
-      extension [Self <: ReportingMetadataEntry](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ReportingMetadataEntry] (val x: Self) extends AnyVal {
         
         inline def setCompatibleDimensions(value: js.Array[String]): Self = StObject.set(x, "compatibleDimensions", value.asInstanceOf[js.Any])
         
@@ -1571,7 +1602,8 @@ object Adsense {
         __obj.asInstanceOf[SavedAdStyle]
       }
       
-      extension [Self <: SavedAdStyle](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SavedAdStyle] (val x: Self) extends AnyVal {
         
         inline def setAdStyle(value: AdStyle): Self = StObject.set(x, "adStyle", value.asInstanceOf[js.Any])
         
@@ -1608,7 +1640,8 @@ object Adsense {
         __obj.asInstanceOf[SavedAdStyles]
       }
       
-      extension [Self <: SavedAdStyles](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SavedAdStyles] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1645,7 +1678,8 @@ object Adsense {
         __obj.asInstanceOf[SavedReport]
       }
       
-      extension [Self <: SavedReport](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SavedReport] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1678,7 +1712,8 @@ object Adsense {
         __obj.asInstanceOf[SavedReports]
       }
       
-      extension [Self <: SavedReports](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SavedReports] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         
@@ -1715,7 +1750,8 @@ object Adsense {
         __obj.asInstanceOf[UrlChannel]
       }
       
-      extension [Self <: UrlChannel](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UrlChannel] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -1748,7 +1784,8 @@ object Adsense {
         __obj.asInstanceOf[UrlChannels]
       }
       
-      extension [Self <: UrlChannels](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UrlChannels] (val x: Self) extends AnyVal {
         
         inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
         

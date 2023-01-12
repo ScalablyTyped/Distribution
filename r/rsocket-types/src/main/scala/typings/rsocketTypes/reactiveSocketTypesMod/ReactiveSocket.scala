@@ -43,7 +43,8 @@ object ReactiveSocket {
     __obj.asInstanceOf[ReactiveSocket[D, M]]
   }
   
-  extension [Self <: ReactiveSocket[?, ?], D, M](x: Self & (ReactiveSocket[D, M])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveSocket[?, ?], D, M] (val x: Self & (ReactiveSocket[D, M])) extends AnyVal {
     
     inline def setAvailability(value: () => Double): Self = StObject.set(x, "availability", js.Any.fromFunction0(value))
     

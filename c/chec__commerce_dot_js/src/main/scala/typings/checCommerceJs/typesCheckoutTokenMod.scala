@@ -74,7 +74,8 @@ object typesCheckoutTokenMod {
       __obj.asInstanceOf[CheckoutToken]
     }
     
-    extension [Self <: CheckoutToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutToken] (val x: Self) extends AnyVal {
       
       inline def setAnalytics(value: Any): Self = StObject.set(x, "analytics", value.asInstanceOf[js.Any])
       
@@ -165,7 +166,8 @@ object typesCheckoutTokenMod {
       __obj.asInstanceOf[CheckoutTokenLineItem]
     }
     
-    extension [Self <: CheckoutTokenLineItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckoutTokenLineItem] (val x: Self) extends AnyVal {
       
       inline def setCollects(value: Billingaddress): Self = StObject.set(x, "collects", value.asInstanceOf[js.Any])
       

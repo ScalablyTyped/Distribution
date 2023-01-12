@@ -26,7 +26,8 @@ object OptionSetValue {
     __obj.asInstanceOf[OptionSetValue]
   }
   
-  extension [Self <: OptionSetValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionSetValue] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

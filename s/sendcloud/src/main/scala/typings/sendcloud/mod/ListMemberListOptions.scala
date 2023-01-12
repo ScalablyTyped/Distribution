@@ -25,7 +25,8 @@ object ListMemberListOptions {
     __obj.asInstanceOf[ListMemberListOptions]
   }
   
-  extension [Self <: ListMemberListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMemberListOptions] (val x: Self) extends AnyVal {
     
     inline def setApi_key(value: String): Self = StObject.set(x, "api_key", value.asInstanceOf[js.Any])
     

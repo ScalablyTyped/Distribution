@@ -19,7 +19,8 @@ object ICommitToTeamServerBaseOptions {
     __obj.asInstanceOf[ICommitToTeamServerBaseOptions]
   }
   
-  extension [Self <: ICommitToTeamServerBaseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommitToTeamServerBaseOptions] (val x: Self) extends AnyVal {
     
     inline def setCommitMessage(value: String): Self = StObject.set(x, "commitMessage", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object libReferenceMod {
       __obj.asInstanceOf[Reference]
     }
     
-    extension [Self <: Reference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
       
       inline def setReferencedContext(value: () => typings.opentracing.libSpanContextMod.default): Self = StObject.set(x, "referencedContext", js.Any.fromFunction0(value))
       

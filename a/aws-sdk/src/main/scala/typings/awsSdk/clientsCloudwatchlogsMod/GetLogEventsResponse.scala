@@ -28,7 +28,8 @@ object GetLogEventsResponse {
     __obj.asInstanceOf[GetLogEventsResponse]
   }
   
-  extension [Self <: GetLogEventsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLogEventsResponse] (val x: Self) extends AnyVal {
     
     inline def setEvents(value: OutputLogEvents): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[PGStoreOptions]
     }
     
-    extension [Self <: PGStoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PGStoreOptions] (val x: Self) extends AnyVal {
       
       inline def setConObject(value: PoolConfig): Self = StObject.set(x, "conObject", value.asInstanceOf[js.Any])
       

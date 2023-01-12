@@ -25,7 +25,8 @@ object encodestringeventsEventsA {
     __obj.asInstanceOf[encodestringeventsEventsA]
   }
   
-  extension [Self <: encodestringeventsEventsA](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: encodestringeventsEventsA] (val x: Self) extends AnyVal {
     
     inline def setEncode(value: String): Self = StObject.set(x, "encode", value.asInstanceOf[js.Any])
     

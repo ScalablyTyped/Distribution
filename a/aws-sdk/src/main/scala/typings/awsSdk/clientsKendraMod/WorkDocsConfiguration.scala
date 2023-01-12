@@ -43,7 +43,8 @@ object WorkDocsConfiguration {
     __obj.asInstanceOf[WorkDocsConfiguration]
   }
   
-  extension [Self <: WorkDocsConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkDocsConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCrawlComments(value: Boolean): Self = StObject.set(x, "CrawlComments", value.asInstanceOf[js.Any])
     

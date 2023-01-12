@@ -18,7 +18,8 @@ object Per {
     __obj.asInstanceOf[Per]
   }
   
-  extension [Self <: Per](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Per] (val x: Self) extends AnyVal {
     
     inline def setPer(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['per'] */ js.Any

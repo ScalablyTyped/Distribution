@@ -15,7 +15,8 @@ object ShapeLibrary {
     __obj.asInstanceOf[ShapeLibrary]
   }
   
-  extension [Self <: ShapeLibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeLibrary] (val x: Self) extends AnyVal {
     
     inline def setEnumerate(value: () => Any): Self = StObject.set(x, "enumerate", js.Any.fromFunction0(value))
   }

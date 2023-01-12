@@ -35,7 +35,8 @@ object NOGLASS3DNOTSUPPORTED {
     __obj.asInstanceOf[NOGLASS3DNOTSUPPORTED]
   }
   
-  extension [Self <: NOGLASS3DNOTSUPPORTED](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOGLASS3DNOTSUPPORTED] (val x: Self) extends AnyVal {
     
     inline def setNO_GLASS_3D_NOT_SUPPORTED(value: `0`): Self = StObject.set(x, "NO_GLASS_3D_NOT_SUPPORTED", value.asInstanceOf[js.Any])
     

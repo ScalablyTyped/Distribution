@@ -18,7 +18,8 @@ object SetBreakpointsActiveParameterType {
     __obj.asInstanceOf[SetBreakpointsActiveParameterType]
   }
   
-  extension [Self <: SetBreakpointsActiveParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetBreakpointsActiveParameterType] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
   }

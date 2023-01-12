@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[FastGlobOptionsWithoutCwd]
     }
     
-    extension [Self <: FastGlobOptionsWithoutCwd](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastGlobOptionsWithoutCwd] (val x: Self) extends AnyVal {
       
       inline def setAbsolute(value: Boolean): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[GitignoreOptions]
     }
     
-    extension [Self <: GitignoreOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitignoreOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object mod {
       __obj.asInstanceOf[GlobTask]
     }
     
-    extension [Self <: GlobTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobTask] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Options): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
@@ -290,7 +293,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: URL | String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

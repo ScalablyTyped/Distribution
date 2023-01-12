@@ -16,7 +16,8 @@ object VideoPlayerSizeTargetingOptionDetails {
     __obj.asInstanceOf[VideoPlayerSizeTargetingOptionDetails]
   }
   
-  extension [Self <: VideoPlayerSizeTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoPlayerSizeTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setVideoPlayerSize(value: String): Self = StObject.set(x, "videoPlayerSize", value.asInstanceOf[js.Any])
     

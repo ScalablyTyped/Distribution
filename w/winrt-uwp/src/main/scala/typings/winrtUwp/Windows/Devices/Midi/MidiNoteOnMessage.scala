@@ -41,7 +41,8 @@ object MidiNoteOnMessage {
     __obj.asInstanceOf[MidiNoteOnMessage]
   }
   
-  extension [Self <: MidiNoteOnMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MidiNoteOnMessage] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Double): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
     

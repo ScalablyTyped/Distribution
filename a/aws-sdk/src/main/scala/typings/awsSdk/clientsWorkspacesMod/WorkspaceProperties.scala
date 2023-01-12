@@ -43,7 +43,8 @@ object WorkspaceProperties {
     __obj.asInstanceOf[WorkspaceProperties]
   }
   
-  extension [Self <: WorkspaceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceProperties] (val x: Self) extends AnyVal {
     
     inline def setComputeTypeName(value: Compute): Self = StObject.set(x, "ComputeTypeName", value.asInstanceOf[js.Any])
     

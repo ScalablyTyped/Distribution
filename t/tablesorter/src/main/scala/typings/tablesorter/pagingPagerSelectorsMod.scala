@@ -58,7 +58,8 @@ object pagingPagerSelectorsMod {
       __obj.asInstanceOf[PagerSelectors]
     }
     
-    extension [Self <: PagerSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PagerSelectors] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Selector | JQuery[HTMLElement]): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

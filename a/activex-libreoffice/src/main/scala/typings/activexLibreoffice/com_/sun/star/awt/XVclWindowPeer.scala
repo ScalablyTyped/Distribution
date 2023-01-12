@@ -76,7 +76,8 @@ object XVclWindowPeer {
     __obj.asInstanceOf[XVclWindowPeer]
   }
   
-  extension [Self <: XVclWindowPeer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XVclWindowPeer] (val x: Self) extends AnyVal {
     
     inline def setEnableClipSiblings(value: Boolean => Unit): Self = StObject.set(x, "enableClipSiblings", js.Any.fromFunction1(value))
     

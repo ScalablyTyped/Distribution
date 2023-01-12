@@ -97,7 +97,8 @@ object mod {
       __obj.asInstanceOf[PackOptions]
     }
     
-    extension [Self <: PackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackOptions] (val x: Self) extends AnyVal {
       
       inline def setEndian(value: l | b): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
     }
@@ -124,7 +125,8 @@ object mod {
       __obj.asInstanceOf[UnpackOptions]
     }
     
-    extension [Self <: UnpackOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnpackOptions] (val x: Self) extends AnyVal {
       
       inline def setEndian(value: l | b): Self = StObject.set(x, "endian", value.asInstanceOf[js.Any])
     }

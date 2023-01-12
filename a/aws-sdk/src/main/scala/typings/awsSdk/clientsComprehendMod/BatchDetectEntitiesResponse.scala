@@ -23,7 +23,8 @@ object BatchDetectEntitiesResponse {
     __obj.asInstanceOf[BatchDetectEntitiesResponse]
   }
   
-  extension [Self <: BatchDetectEntitiesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetectEntitiesResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorList(value: BatchItemErrorList): Self = StObject.set(x, "ErrorList", value.asInstanceOf[js.Any])
     

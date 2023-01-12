@@ -18,7 +18,8 @@ object SingularConnectorProfileCredentials {
     __obj.asInstanceOf[SingularConnectorProfileCredentials]
   }
   
-  extension [Self <: SingularConnectorProfileCredentials](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SingularConnectorProfileCredentials] (val x: Self) extends AnyVal {
     
     inline def setApiKey(value: ApiKey): Self = StObject.set(x, "apiKey", value.asInstanceOf[js.Any])
   }

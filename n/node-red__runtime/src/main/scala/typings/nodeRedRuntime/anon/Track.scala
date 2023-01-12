@@ -24,7 +24,8 @@ object Track {
     __obj.asInstanceOf[Track]
   }
   
-  extension [Self <: Track](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Track] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

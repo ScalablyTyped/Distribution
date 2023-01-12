@@ -18,7 +18,8 @@ object IgnoreVgConfig {
     __obj.asInstanceOf[IgnoreVgConfig]
   }
   
-  extension [Self <: IgnoreVgConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgnoreVgConfig] (val x: Self) extends AnyVal {
     
     inline def setIgnoreVgConfig(value: Boolean): Self = StObject.set(x, "ignoreVgConfig", value.asInstanceOf[js.Any])
     

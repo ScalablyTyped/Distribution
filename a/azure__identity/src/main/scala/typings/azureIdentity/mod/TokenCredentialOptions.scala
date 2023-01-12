@@ -29,7 +29,8 @@ object TokenCredentialOptions {
     __obj.asInstanceOf[TokenCredentialOptions]
   }
   
-  extension [Self <: TokenCredentialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TokenCredentialOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorityHost(value: String): Self = StObject.set(x, "authorityHost", value.asInstanceOf[js.Any])
     

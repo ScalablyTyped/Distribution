@@ -53,7 +53,8 @@ object Actuator {
     __obj.asInstanceOf[Actuator]
   }
   
-  extension [Self <: Actuator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Actuator] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: listOfStrings): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

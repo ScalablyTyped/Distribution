@@ -61,7 +61,8 @@ object libComponentsRadioButtonGroupRadioButtonGroupMod {
       __obj.asInstanceOf[RadioButtonGroupProps]
     }
     
-    extension [Self <: RadioButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

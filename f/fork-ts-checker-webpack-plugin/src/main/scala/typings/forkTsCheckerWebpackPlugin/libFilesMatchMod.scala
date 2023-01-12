@@ -28,7 +28,8 @@ object libFilesMatchMod {
       __obj.asInstanceOf[FilesMatch]
     }
     
-    extension [Self <: FilesMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilesMatch] (val x: Self) extends AnyVal {
       
       inline def setDirs(value: js.Array[String]): Self = StObject.set(x, "dirs", value.asInstanceOf[js.Any])
       

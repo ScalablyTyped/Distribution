@@ -23,7 +23,8 @@ object CreateDataViewResponse {
     __obj.asInstanceOf[CreateDataViewResponse]
   }
   
-  extension [Self <: CreateDataViewResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataViewResponse] (val x: Self) extends AnyVal {
     
     inline def setDataViewId(value: DataViewId): Self = StObject.set(x, "dataViewId", value.asInstanceOf[js.Any])
     

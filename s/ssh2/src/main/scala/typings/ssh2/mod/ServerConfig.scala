@@ -42,7 +42,8 @@ object ServerConfig {
     __obj.asInstanceOf[ServerConfig]
   }
   
-  extension [Self <: ServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerConfig] (val x: Self) extends AnyVal {
     
     inline def setAlgorithms(value: Algorithms): Self = StObject.set(x, "algorithms", value.asInstanceOf[js.Any])
     

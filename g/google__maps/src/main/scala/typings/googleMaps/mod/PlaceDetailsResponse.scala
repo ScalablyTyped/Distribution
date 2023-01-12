@@ -30,7 +30,8 @@ object PlaceDetailsResponse {
     __obj.asInstanceOf[PlaceDetailsResponse]
   }
   
-  extension [Self <: PlaceDetailsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceDetailsResponse] (val x: Self) extends AnyVal {
     
     inline def setHtml_attributions(value: js.Array[String]): Self = StObject.set(x, "html_attributions", value.asInstanceOf[js.Any])
     

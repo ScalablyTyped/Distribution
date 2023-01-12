@@ -3981,7 +3981,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -7045,7 +7046,8 @@ object anon {
       __obj.asInstanceOf[PartialRecordPropertystri]
     }
     
-    extension [Self <: PartialRecordPropertystri](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialRecordPropertystri] (val x: Self) extends AnyVal {
       
       inline def `set-khtml-box-align`(value: String): Self = StObject.set(x, "-khtml-box-align", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object OnPotSealed {
     __obj.asInstanceOf[OnPotSealed]
   }
   
-  extension [Self <: OnPotSealed](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnPotSealed] (val x: Self) extends AnyVal {
     
     inline def setOnPotSealed(value: /* pot */ KnuddelPot => Unit): Self = StObject.set(x, "onPotSealed", js.Any.fromFunction1(value))
     

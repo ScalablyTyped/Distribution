@@ -29,7 +29,8 @@ object reducerMod {
       __obj.asInstanceOf[SessionState]
     }
     
-    extension [Self <: SessionState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SessionState] (val x: Self) extends AnyVal {
       
       inline def setAuthenticated(value: Boolean): Self = StObject.set(x, "authenticated", value.asInstanceOf[js.Any])
       

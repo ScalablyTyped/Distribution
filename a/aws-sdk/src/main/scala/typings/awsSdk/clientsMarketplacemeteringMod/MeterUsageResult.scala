@@ -18,7 +18,8 @@ object MeterUsageResult {
     __obj.asInstanceOf[MeterUsageResult]
   }
   
-  extension [Self <: MeterUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MeterUsageResult] (val x: Self) extends AnyVal {
     
     inline def setMeteringRecordId(value: String): Self = StObject.set(x, "MeteringRecordId", value.asInstanceOf[js.Any])
     

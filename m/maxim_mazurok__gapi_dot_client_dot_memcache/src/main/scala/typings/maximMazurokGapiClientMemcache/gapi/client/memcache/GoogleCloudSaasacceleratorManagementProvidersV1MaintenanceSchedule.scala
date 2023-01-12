@@ -34,7 +34,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1MaintenanceSchedule] (val x: Self) extends AnyVal {
     
     inline def setCanReschedule(value: Boolean): Self = StObject.set(x, "canReschedule", value.asInstanceOf[js.Any])
     

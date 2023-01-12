@@ -29,7 +29,8 @@ object GetDimensions {
     __obj.asInstanceOf[GetDimensions[Datum]]
   }
   
-  extension [Self <: GetDimensions[?], Datum](x: Self & GetDimensions[Datum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDimensions[?], Datum] (val x: Self & GetDimensions[Datum]) extends AnyVal {
     
     inline def setAnnotations(value: js.Array[AnnotationMatcher[Datum]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object CaptchaChangeEvent {
     __obj.asInstanceOf[CaptchaChangeEvent]
   }
   
-  extension [Self <: CaptchaChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptchaChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setValue(value: String): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object HorizontalGridLinesProps {
     __obj.asInstanceOf[HorizontalGridLinesProps]
   }
   
-  extension [Self <: HorizontalGridLinesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HorizontalGridLinesProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

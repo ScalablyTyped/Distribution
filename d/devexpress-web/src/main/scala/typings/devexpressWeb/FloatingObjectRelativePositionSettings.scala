@@ -41,7 +41,8 @@ object FloatingObjectRelativePositionSettings {
     __obj.asInstanceOf[FloatingObjectRelativePositionSettings]
   }
   
-  extension [Self <: FloatingObjectRelativePositionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloatingObjectRelativePositionSettings] (val x: Self) extends AnyVal {
     
     inline def setHorizontalPositionType(value: FloatingObjectHorizontalPositionType): Self = StObject.set(x, "horizontalPositionType", value.asInstanceOf[js.Any])
     

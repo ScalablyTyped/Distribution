@@ -28,7 +28,8 @@ object MessageEntity {
     __obj.asInstanceOf[MessageEntity]
   }
   
-  extension [Self <: MessageEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEntity] (val x: Self) extends AnyVal {
     
     inline def setCustom_emoji_id(value: String): Self = StObject.set(x, "custom_emoji_id", value.asInstanceOf[js.Any])
     

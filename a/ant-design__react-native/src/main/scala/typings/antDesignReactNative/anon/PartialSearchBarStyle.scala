@@ -28,7 +28,8 @@ object PartialSearchBarStyle {
     __obj.asInstanceOf[PartialSearchBarStyle]
   }
   
-  extension [Self <: PartialSearchBarStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSearchBarStyle] (val x: Self) extends AnyVal {
     
     inline def setCancelText(value: TextStyle): Self = StObject.set(x, "cancelText", value.asInstanceOf[js.Any])
     

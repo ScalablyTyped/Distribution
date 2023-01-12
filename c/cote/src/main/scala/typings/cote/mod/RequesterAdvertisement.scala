@@ -20,7 +20,8 @@ object RequesterAdvertisement {
     __obj.asInstanceOf[RequesterAdvertisement]
   }
   
-  extension [Self <: RequesterAdvertisement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequesterAdvertisement] (val x: Self) extends AnyVal {
     
     inline def setRequests(value: js.Array[String]): Self = StObject.set(x, "requests", value.asInstanceOf[js.Any])
     

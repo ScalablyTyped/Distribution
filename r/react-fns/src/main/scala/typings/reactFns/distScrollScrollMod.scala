@@ -51,7 +51,8 @@ object distScrollScrollMod {
       __obj.asInstanceOf[ScrollConfig]
     }
     
-    extension [Self <: ScrollConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollConfig] (val x: Self) extends AnyVal {
       
       inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object distScrollScrollMod {
       __obj.asInstanceOf[ScrollProps]
     }
     
-    extension [Self <: ScrollProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollProps] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

@@ -26,7 +26,8 @@ object ShapeAnd {
     __obj.asInstanceOf[ShapeAnd]
   }
   
-  extension [Self <: ShapeAnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeAnd] (val x: Self) extends AnyVal {
     
     inline def setShapeExprs(value: js.Array[shapeExprOrRef]): Self = StObject.set(x, "shapeExprs", value.asInstanceOf[js.Any])
     

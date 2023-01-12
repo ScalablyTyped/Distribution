@@ -43,7 +43,8 @@ object PackageIssue {
     __obj.asInstanceOf[PackageIssue]
   }
   
-  extension [Self <: PackageIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackageIssue] (val x: Self) extends AnyVal {
     
     inline def setAffectedCpeUri(value: String): Self = StObject.set(x, "affectedCpeUri", value.asInstanceOf[js.Any])
     

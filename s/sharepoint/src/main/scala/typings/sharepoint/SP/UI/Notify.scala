@@ -22,7 +22,8 @@ object Notify {
       __obj.asInstanceOf[Notification]
     }
     
-    extension [Self <: Notification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Notification] (val x: Self) extends AnyVal {
       
       inline def setGet_id(value: () => String): Self = StObject.set(x, "get_id", js.Any.fromFunction0(value))
       
@@ -47,7 +48,8 @@ object Notify {
       __obj.asInstanceOf[NotificationContainer]
     }
     
-    extension [Self <: NotificationContainer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationContainer] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "Clear", js.Any.fromFunction0(value))
       

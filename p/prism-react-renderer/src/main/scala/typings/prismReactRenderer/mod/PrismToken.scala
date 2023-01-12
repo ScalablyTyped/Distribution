@@ -18,7 +18,8 @@ object PrismToken {
     __obj.asInstanceOf[PrismToken]
   }
   
-  extension [Self <: PrismToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrismToken] (val x: Self) extends AnyVal {
     
     inline def setContent(value: (js.Array[PrismToken | String]) | String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

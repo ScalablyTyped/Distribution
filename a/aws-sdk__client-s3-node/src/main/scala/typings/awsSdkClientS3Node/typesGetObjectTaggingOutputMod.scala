@@ -32,7 +32,8 @@ object typesGetObjectTaggingOutputMod {
       __obj.asInstanceOf[GetObjectTaggingOutput]
     }
     
-    extension [Self <: GetObjectTaggingOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetObjectTaggingOutput] (val x: Self) extends AnyVal {
       
       inline def setTagSet(value: js.Array[UnmarshalledTag]): Self = StObject.set(x, "TagSet", value.asInstanceOf[js.Any])
       

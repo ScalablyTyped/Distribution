@@ -43,7 +43,8 @@ object VpcEndpoint {
     __obj.asInstanceOf[VpcEndpoint]
   }
   
-  extension [Self <: VpcEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpcEndpoint] (val x: Self) extends AnyVal {
     
     inline def setDomainArn(value: DomainArn): Self = StObject.set(x, "DomainArn", value.asInstanceOf[js.Any])
     

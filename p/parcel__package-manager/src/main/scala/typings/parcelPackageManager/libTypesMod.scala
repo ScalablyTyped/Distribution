@@ -24,7 +24,8 @@ object libTypesMod {
       __obj.asInstanceOf[InstallOptions]
     }
     
-    extension [Self <: InstallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallOptions] (val x: Self) extends AnyVal {
       
       inline def setInstallPeers(value: Boolean): Self = StObject.set(x, "installPeers", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object libTypesMod {
       __obj.asInstanceOf[InstallerOptions]
     }
     
-    extension [Self <: InstallerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InstallerOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FilePath */ Any
@@ -117,7 +119,8 @@ object libTypesMod {
       __obj.asInstanceOf[Invalidations]
     }
     
-    extension [Self <: Invalidations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalidations] (val x: Self) extends AnyVal {
       
       inline def setInvalidateOnFileChange(
         value: Set[
@@ -152,7 +155,8 @@ object libTypesMod {
       __obj.asInstanceOf[ModuleRequest]
     }
     
-    extension [Self <: ModuleRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleRequest] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -177,7 +181,8 @@ object libTypesMod {
       __obj.asInstanceOf[PackageInstaller]
     }
     
-    extension [Self <: PackageInstaller](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageInstaller] (val x: Self) extends AnyVal {
       
       inline def setInstall(value: InstallerOptions => js.Promise[Unit]): Self = StObject.set(x, "install", js.Any.fromFunction1(value))
     }
@@ -248,7 +253,8 @@ object libTypesMod {
       __obj.asInstanceOf[ResolveResult]
     }
     
-    extension [Self <: ResolveResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveResult] (val x: Self) extends AnyVal {
       
       inline def setInvalidateOnFileChange(
         value: Set[

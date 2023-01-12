@@ -34,7 +34,8 @@ object LineHoverOptions {
     __obj.asInstanceOf[LineHoverOptions]
   }
   
-  extension [Self <: LineHoverOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineHoverOptions] (val x: Self) extends AnyVal {
     
     inline def setHoverBorderCapStyle(value: CanvasLineCap): Self = StObject.set(x, "hoverBorderCapStyle", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object WorkspaceFolderPickOptions {
     __obj.asInstanceOf[WorkspaceFolderPickOptions]
   }
   
-  extension [Self <: WorkspaceFolderPickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkspaceFolderPickOptions] (val x: Self) extends AnyVal {
     
     inline def setIgnoreFocusOut(value: Boolean): Self = StObject.set(x, "ignoreFocusOut", value.asInstanceOf[js.Any])
     

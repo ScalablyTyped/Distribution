@@ -180,7 +180,8 @@ object HeadObjectOutput {
     __obj.asInstanceOf[HeadObjectOutput]
   }
   
-  extension [Self <: HeadObjectOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadObjectOutput] (val x: Self) extends AnyVal {
     
     inline def setAcceptRanges(value: AcceptRanges): Self = StObject.set(x, "AcceptRanges", value.asInstanceOf[js.Any])
     

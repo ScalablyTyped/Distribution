@@ -90,7 +90,8 @@ object BarBorderWidth {
     __obj.asInstanceOf[BarBorderWidth]
   }
   
-  extension [Self <: BarBorderWidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarBorderWidth] (val x: Self) extends AnyVal {
     
     inline def setBarBorderColor(value: String): Self = StObject.set(x, "barBorderColor", value.asInstanceOf[js.Any])
     

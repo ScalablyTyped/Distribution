@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[BarcodeOptions]
     }
     
-    extension [Self <: BarcodeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Double): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[BarcodeResult]
     }
     
-    extension [Self <: BarcodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BarcodeResult] (val x: Self) extends AnyVal {
       
       inline def setGetBase64(value: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit] => Unit): Self = StObject.set(x, "getBase64", js.Any.fromFunction1(value))
       

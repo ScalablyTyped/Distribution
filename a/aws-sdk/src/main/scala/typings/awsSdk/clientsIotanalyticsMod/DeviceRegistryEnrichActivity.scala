@@ -38,7 +38,8 @@ object DeviceRegistryEnrichActivity {
     __obj.asInstanceOf[DeviceRegistryEnrichActivity]
   }
   
-  extension [Self <: DeviceRegistryEnrichActivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRegistryEnrichActivity] (val x: Self) extends AnyVal {
     
     inline def setAttribute(value: AttributeName): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
     

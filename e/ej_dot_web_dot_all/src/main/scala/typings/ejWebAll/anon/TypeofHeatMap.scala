@@ -20,7 +20,8 @@ object TypeofHeatMap {
     __obj.asInstanceOf[TypeofHeatMap]
   }
   
-  extension [Self <: TypeofHeatMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofHeatMap] (val x: Self) extends AnyVal {
     
     inline def setFn(value: HeatMap): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

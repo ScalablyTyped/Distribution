@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsDistributeHorizontallySmallMod extends Shortc
       __obj.asInstanceOf[DistributeHorizontallySmallProps]
     }
     
-    extension [Self <: DistributeHorizontallySmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributeHorizontallySmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

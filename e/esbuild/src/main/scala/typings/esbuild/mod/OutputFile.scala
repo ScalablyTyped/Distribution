@@ -21,7 +21,8 @@ object OutputFile {
     __obj.asInstanceOf[OutputFile]
   }
   
-  extension [Self <: OutputFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutputFile] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.typedarray.Uint8Array): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

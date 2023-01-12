@@ -32,7 +32,8 @@ object CallStack {
     __obj.asInstanceOf[CallStack]
   }
   
-  extension [Self <: CallStack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallStack] (val x: Self) extends AnyVal {
     
     inline def setCallStack(value: String): Self = StObject.set(x, "callStack", value.asInstanceOf[js.Any])
     

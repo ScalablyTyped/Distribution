@@ -75,7 +75,8 @@ object powerSource {
       __obj.asInstanceOf[PowerSourceInfo]
     }
     
-    extension [Self <: PowerSourceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PowerSourceInfo] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

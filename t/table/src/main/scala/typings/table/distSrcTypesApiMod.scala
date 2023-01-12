@@ -57,7 +57,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[BaseUserConfig]
     }
     
-    extension [Self <: BaseUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseUserConfig] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: BorderUserConfig): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -148,7 +149,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[BorderConfig]
     }
     
-    extension [Self <: BorderConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderConfig] (val x: Self) extends AnyVal {
       
       inline def setBodyJoin(value: String): Self = StObject.set(x, "bodyJoin", value.asInstanceOf[js.Any])
       
@@ -241,7 +243,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[BorderUserConfig]
     }
     
-    extension [Self <: BorderUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BorderUserConfig] (val x: Self) extends AnyVal {
       
       inline def setBodyJoin(value: String): Self = StObject.set(x, "bodyJoin", value.asInstanceOf[js.Any])
       
@@ -364,7 +367,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[CellUserConfig]
     }
     
-    extension [Self <: CellUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CellUserConfig] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -408,7 +412,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[ColumnUserConfig]
     }
     
-    extension [Self <: ColumnUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColumnUserConfig] (val x: Self) extends AnyVal {
       
       inline def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
       
@@ -444,7 +449,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[HeaderUserConfig]
     }
     
-    extension [Self <: HeaderUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeaderUserConfig] (val x: Self) extends AnyVal {
       
       inline def setAlignment(value: Alignment): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
       
@@ -491,7 +497,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[SpanningCellConfig]
     }
     
-    extension [Self <: SpanningCellConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpanningCellConfig] (val x: Self) extends AnyVal {
       
       inline def setCol(value: Double): Self = StObject.set(x, "col", value.asInstanceOf[js.Any])
       
@@ -529,7 +536,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[StreamUserConfig]
     }
     
-    extension [Self <: StreamUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StreamUserConfig] (val x: Self) extends AnyVal {
       
       inline def setColumnCount(value: Double): Self = StObject.set(x, "columnCount", value.asInstanceOf[js.Any])
       
@@ -567,7 +575,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[TableUserConfig]
     }
     
-    extension [Self <: TableUserConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableUserConfig] (val x: Self) extends AnyVal {
       
       inline def setDrawHorizontalLine(value: (/* index */ Double, /* size */ Double) => Boolean): Self = StObject.set(x, "drawHorizontalLine", js.Any.fromFunction2(value))
       
@@ -615,7 +624,8 @@ object distSrcTypesApiMod {
       __obj.asInstanceOf[WritableStream]
     }
     
-    extension [Self <: WritableStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritableStream] (val x: Self) extends AnyVal {
       
       inline def setWrite(value: js.Array[String] => Unit): Self = StObject.set(x, "write", js.Any.fromFunction1(value))
     }

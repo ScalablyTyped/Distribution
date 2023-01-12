@@ -40,7 +40,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[OperatingSystem]
     }
     
-    extension [Self <: OperatingSystem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperatingSystem] (val x: Self) extends AnyVal {
       
       inline def setArchitecture(value: Double): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
       

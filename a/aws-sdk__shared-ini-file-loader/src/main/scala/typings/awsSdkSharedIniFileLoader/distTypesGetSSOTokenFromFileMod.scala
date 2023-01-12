@@ -63,7 +63,8 @@ object distTypesGetSSOTokenFromFileMod {
       __obj.asInstanceOf[SSOToken]
     }
     
-    extension [Self <: SSOToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SSOToken] (val x: Self) extends AnyVal {
       
       inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
       

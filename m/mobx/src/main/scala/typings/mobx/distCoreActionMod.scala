@@ -74,7 +74,8 @@ object distCoreActionMod {
       __obj.asInstanceOf[IActionRunInfo]
     }
     
-    extension [Self <: IActionRunInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionRunInfo] (val x: Self) extends AnyVal {
       
       inline def setActionId_(value: Double): Self = StObject.set(x, "actionId_", value.asInstanceOf[js.Any])
       

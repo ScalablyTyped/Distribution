@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Copy]
     }
     
-    extension [Self <: Copy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Copy] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: js.Array[String]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
       

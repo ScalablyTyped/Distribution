@@ -29,7 +29,8 @@ object SystemMediaTransportControlsTimelineProperties {
     __obj.asInstanceOf[SystemMediaTransportControlsTimelineProperties]
   }
   
-  extension [Self <: SystemMediaTransportControlsTimelineProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemMediaTransportControlsTimelineProperties] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: Double): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

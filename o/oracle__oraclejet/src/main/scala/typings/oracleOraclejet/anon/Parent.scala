@@ -19,7 +19,8 @@ object Parent {
     __obj.asInstanceOf[Parent[K]]
   }
   
-  extension [Self <: Parent[?], K](x: Self & Parent[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parent[?], K] (val x: Self & Parent[K]) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

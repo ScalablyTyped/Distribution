@@ -34,7 +34,8 @@ object Placeholders {
     __obj.asInstanceOf[Placeholders]
   }
   
-  extension [Self <: Placeholders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Placeholders] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -284,7 +284,8 @@ object mod {
       __obj.asInstanceOf[Details]
     }
     
-    extension [Self <: Details](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -397,7 +398,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setUseragent(value: Details): Self = StObject.set(x, "useragent", value.asInstanceOf[js.Any])
           

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[RemoteServiceName]
     }
     
-    extension [Self <: RemoteServiceName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteServiceName] (val x: Self) extends AnyVal {
       
       inline def setRemoteServiceName(value: String): Self = StObject.set(x, "remoteServiceName", value.asInstanceOf[js.Any])
       

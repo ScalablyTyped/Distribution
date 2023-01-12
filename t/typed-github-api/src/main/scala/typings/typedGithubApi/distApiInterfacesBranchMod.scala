@@ -30,7 +30,8 @@ object distApiInterfacesBranchMod {
       __obj.asInstanceOf[Branch]
     }
     
-    extension [Self <: Branch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Branch] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: CommitSummary): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object distApiInterfacesBranchMod {
       __obj.asInstanceOf[BranchRef]
     }
     
-    extension [Self <: BranchRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchRef] (val x: Self) extends AnyVal {
       
       inline def setCommit(value: GitRef): Self = StObject.set(x, "commit", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object distApiInterfacesBranchMod {
       __obj.asInstanceOf[BranchSummary]
     }
     
-    extension [Self <: BranchSummary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BranchSummary] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

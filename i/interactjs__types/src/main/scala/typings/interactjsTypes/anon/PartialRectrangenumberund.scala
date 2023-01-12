@@ -36,7 +36,8 @@ object PartialRectrangenumberund {
     __obj.asInstanceOf[PartialRectrangenumberund]
   }
   
-  extension [Self <: PartialRectrangenumberund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRectrangenumberund] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

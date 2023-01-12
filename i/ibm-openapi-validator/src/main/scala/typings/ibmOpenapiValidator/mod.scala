@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[validatorResult]
     }
     
-    extension [Self <: validatorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: validatorResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Any | validatorResultItem]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[validatorResultItem]
     }
     
-    extension [Self <: validatorResultItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: validatorResultItem] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

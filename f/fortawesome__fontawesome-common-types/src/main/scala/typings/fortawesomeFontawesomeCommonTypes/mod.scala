@@ -49,7 +49,8 @@ object mod {
   }
   object IconDefinition {
     
-    extension [Self <: IconDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconDefinition] (val x: Self) extends AnyVal {
       
       inline def setIcon(
         value: js.Tuple5[
@@ -91,7 +92,8 @@ object mod {
   }
   object IconLookup {
     
-    extension [Self <: IconLookup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IconLookup] (val x: Self) extends AnyVal {
       
       inline def setIconName(value: IconName): Self = StObject.set(x, "iconName", value.asInstanceOf[js.Any])
       

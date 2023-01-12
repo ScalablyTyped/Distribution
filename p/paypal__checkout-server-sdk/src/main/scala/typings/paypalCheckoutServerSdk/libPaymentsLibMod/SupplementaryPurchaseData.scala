@@ -17,7 +17,8 @@ object SupplementaryPurchaseData {
     __obj.asInstanceOf[SupplementaryPurchaseData]
   }
   
-  extension [Self <: SupplementaryPurchaseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupplementaryPurchaseData] (val x: Self) extends AnyVal {
     
     inline def setInvoice_id(value: String): Self = StObject.set(x, "invoice_id", value.asInstanceOf[js.Any])
     

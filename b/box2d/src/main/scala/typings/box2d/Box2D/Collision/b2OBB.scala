@@ -30,7 +30,8 @@ object b2OBB {
     __obj.asInstanceOf[b2OBB]
   }
   
-  extension [Self <: b2OBB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2OBB] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: b2Vec2): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

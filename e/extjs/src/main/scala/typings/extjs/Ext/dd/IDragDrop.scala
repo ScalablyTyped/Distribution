@@ -327,7 +327,8 @@ object IDragDrop {
     __obj.asInstanceOf[IDragDrop]
   }
   
-  extension [Self <: IDragDrop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDragDrop] (val x: Self) extends AnyVal {
     
     inline def setAddInvalidHandleClass(value: /* cssClass */ js.UndefOr[String] => Unit): Self = StObject.set(x, "addInvalidHandleClass", js.Any.fromFunction1(value))
     

@@ -111,7 +111,8 @@ object dxContextMenu {
       __obj.asInstanceOf[ExplicitTypes[TKey]]
     }
     
-    extension [Self <: ExplicitTypes[?], TKey](x: Self & ExplicitTypes[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExplicitTypes[?], TKey] (val x: Self & ExplicitTypes[TKey]) extends AnyVal {
       
       inline def setContentReadyEvent(value: ContentReadyEvent[TKey]): Self = StObject.set(x, "ContentReadyEvent", value.asInstanceOf[js.Any])
       
@@ -237,7 +238,8 @@ object dxContextMenu {
       __obj.asInstanceOf[PositioningEvent[TKey]]
     }
     
-    extension [Self <: PositioningEvent[?], TKey](x: Self & PositioningEvent[TKey]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PositioningEvent[?], TKey] (val x: Self & PositioningEvent[TKey]) extends AnyVal {
       
       inline def setPosition(value: PositionConfig): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     }

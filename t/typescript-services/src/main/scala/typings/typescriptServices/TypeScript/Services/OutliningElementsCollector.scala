@@ -215,7 +215,8 @@ object OutliningElementsCollector {
     __obj.asInstanceOf[OutliningElementsCollector]
   }
   
-  extension [Self <: OutliningElementsCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutliningElementsCollector] (val x: Self) extends AnyVal {
     
     inline def setAddOutlineRange(value: (Any, Any, Any) => Any): Self = StObject.set(x, "addOutlineRange", js.Any.fromFunction3(value))
     

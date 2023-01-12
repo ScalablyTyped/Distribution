@@ -27,7 +27,8 @@ object distTypesEntityMod {
         __obj.asInstanceOf[BrowserFileData]
       }
       
-      extension [Self <: BrowserFileData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: BrowserFileData] (val x: Self) extends AnyVal {
         
         inline def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
         
@@ -74,7 +75,8 @@ object distTypesEntityMod {
         __obj.asInstanceOf[NodeFileData]
       }
       
-      extension [Self <: NodeFileData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NodeFileData] (val x: Self) extends AnyVal {
         
         inline def setBody(value: PassThrough): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -104,7 +106,8 @@ object distTypesEntityMod {
         __obj.asInstanceOf[AccessToken]
       }
       
-      extension [Self <: AccessToken](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AccessToken] (val x: Self) extends AnyVal {
         
         inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
         

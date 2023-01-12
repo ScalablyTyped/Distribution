@@ -117,7 +117,8 @@ object PartialOmitPopover2PropsD {
     __obj.asInstanceOf[PartialOmitPopover2PropsD]
   }
   
-  extension [Self <: PartialOmitPopover2PropsD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOmitPopover2PropsD] (val x: Self) extends AnyVal {
     
     inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
     

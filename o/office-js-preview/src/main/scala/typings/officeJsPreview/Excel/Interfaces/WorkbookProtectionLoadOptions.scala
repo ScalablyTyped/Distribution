@@ -33,7 +33,8 @@ object WorkbookProtectionLoadOptions {
     __obj.asInstanceOf[WorkbookProtectionLoadOptions]
   }
   
-  extension [Self <: WorkbookProtectionLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookProtectionLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

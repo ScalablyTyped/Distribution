@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[StrategyOptionsWithRequestInterface]
     }
     
-    extension [Self <: StrategyOptionsWithRequestInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrategyOptionsWithRequestInterface] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: Boolean): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }

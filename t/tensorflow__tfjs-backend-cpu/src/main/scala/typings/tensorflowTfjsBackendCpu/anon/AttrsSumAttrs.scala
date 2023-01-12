@@ -22,7 +22,8 @@ object AttrsSumAttrs {
     __obj.asInstanceOf[AttrsSumAttrs]
   }
   
-  extension [Self <: AttrsSumAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsSumAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: SumAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

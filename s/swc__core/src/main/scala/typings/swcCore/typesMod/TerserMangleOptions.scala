@@ -29,7 +29,8 @@ object TerserMangleOptions {
     __obj.asInstanceOf[TerserMangleOptions]
   }
   
-  extension [Self <: TerserMangleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerserMangleOptions] (val x: Self) extends AnyVal {
     
     inline def setIe8(value: Boolean): Self = StObject.set(x, "ie8", value.asInstanceOf[js.Any])
     

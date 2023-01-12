@@ -54,7 +54,8 @@ object CreateComputeEnvironmentRequest {
     __obj.asInstanceOf[CreateComputeEnvironmentRequest]
   }
   
-  extension [Self <: CreateComputeEnvironmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateComputeEnvironmentRequest] (val x: Self) extends AnyVal {
     
     inline def setComputeEnvironmentName(value: String): Self = StObject.set(x, "computeEnvironmentName", value.asInstanceOf[js.Any])
     

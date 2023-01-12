@@ -15,7 +15,8 @@ object WaypointOptions {
     __obj.asInstanceOf[WaypointOptions]
   }
   
-  extension [Self <: WaypointOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WaypointOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowUTurn(value: Boolean): Self = StObject.set(x, "allowUTurn", value.asInstanceOf[js.Any])
     

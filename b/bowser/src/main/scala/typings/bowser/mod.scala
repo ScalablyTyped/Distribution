@@ -65,7 +65,8 @@ object mod {
         __obj.asInstanceOf[Details]
       }
       
-      extension [Self <: Details](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Details] (val x: Self) extends AnyVal {
         
         inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
         
@@ -92,7 +93,8 @@ object mod {
         __obj.asInstanceOf[OSDetails]
       }
       
-      extension [Self <: OSDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OSDetails] (val x: Self) extends AnyVal {
         
         inline def setVersionName(value: String): Self = StObject.set(x, "versionName", value.asInstanceOf[js.Any])
         
@@ -117,7 +119,8 @@ object mod {
         __obj.asInstanceOf[ParsedResult]
       }
       
-      extension [Self <: ParsedResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ParsedResult] (val x: Self) extends AnyVal {
         
         inline def setBrowser(value: BrowserDetails): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
         
@@ -312,7 +315,8 @@ object mod {
         __obj.asInstanceOf[PlatformDetails]
       }
       
-      extension [Self <: PlatformDetails](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: PlatformDetails] (val x: Self) extends AnyVal {
         
         inline def setModel(value: String): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
         

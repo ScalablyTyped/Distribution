@@ -17,7 +17,8 @@ object MlGetTrainedModelsResponse {
     __obj.asInstanceOf[MlGetTrainedModelsResponse]
   }
   
-  extension [Self <: MlGetTrainedModelsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetTrainedModelsResponse] (val x: Self) extends AnyVal {
     
     inline def setCount(value: integer): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

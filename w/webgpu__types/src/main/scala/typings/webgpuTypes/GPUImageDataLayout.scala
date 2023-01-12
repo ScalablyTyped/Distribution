@@ -34,7 +34,8 @@ object GPUImageDataLayout {
     __obj.asInstanceOf[GPUImageDataLayout]
   }
   
-  extension [Self <: GPUImageDataLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUImageDataLayout] (val x: Self) extends AnyVal {
     
     inline def setBytesPerRow(value: GPUSize32): Self = StObject.set(x, "bytesPerRow", value.asInstanceOf[js.Any])
     

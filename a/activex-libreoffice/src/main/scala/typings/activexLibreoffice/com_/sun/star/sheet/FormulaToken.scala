@@ -27,7 +27,8 @@ object FormulaToken {
     __obj.asInstanceOf[FormulaToken]
   }
   
-  extension [Self <: FormulaToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormulaToken] (val x: Self) extends AnyVal {
     
     inline def setData(value: Any): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

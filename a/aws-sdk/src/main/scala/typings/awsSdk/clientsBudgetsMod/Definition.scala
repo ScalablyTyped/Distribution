@@ -28,7 +28,8 @@ object Definition {
     __obj.asInstanceOf[Definition]
   }
   
-  extension [Self <: Definition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Definition] (val x: Self) extends AnyVal {
     
     inline def setIamActionDefinition(value: IamActionDefinition): Self = StObject.set(x, "IamActionDefinition", value.asInstanceOf[js.Any])
     

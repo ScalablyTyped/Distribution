@@ -19,7 +19,8 @@ object InforNexusSourceProperties {
     __obj.asInstanceOf[InforNexusSourceProperties]
   }
   
-  extension [Self <: InforNexusSourceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InforNexusSourceProperties] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Object): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
   }

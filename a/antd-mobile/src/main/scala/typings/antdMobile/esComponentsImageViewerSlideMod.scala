@@ -32,7 +32,8 @@ object esComponentsImageViewerSlideMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setDragLockRef(value: MutableRefObject[Boolean]): Self = StObject.set(x, "dragLockRef", value.asInstanceOf[js.Any])
       

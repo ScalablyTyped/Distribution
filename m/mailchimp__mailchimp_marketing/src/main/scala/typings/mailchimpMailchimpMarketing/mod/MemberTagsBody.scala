@@ -15,7 +15,8 @@ object MemberTagsBody {
     __obj.asInstanceOf[MemberTagsBody]
   }
   
-  extension [Self <: MemberTagsBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberTagsBody] (val x: Self) extends AnyVal {
     
     inline def setTags(value: js.Array[TagBody]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
     

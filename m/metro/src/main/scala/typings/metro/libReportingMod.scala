@@ -36,7 +36,8 @@ object libReportingMod {
       __obj.asInstanceOf[BundleDetails]
     }
     
-    extension [Self <: BundleDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundleDetails] (val x: Self) extends AnyVal {
       
       inline def setBundleType(value: String): Self = StObject.set(x, "bundleType", value.asInstanceOf[js.Any])
       
@@ -199,7 +200,8 @@ object libReportingMod {
       __obj.asInstanceOf[Reporter]
     }
     
-    extension [Self <: Reporter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reporter] (val x: Self) extends AnyVal {
       
       inline def setUpdate(value: ReportableEvent => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
     }

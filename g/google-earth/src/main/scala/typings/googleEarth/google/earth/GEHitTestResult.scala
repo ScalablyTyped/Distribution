@@ -50,7 +50,8 @@ object GEHitTestResult {
     __obj.asInstanceOf[GEHitTestResult]
   }
   
-  extension [Self <: GEHitTestResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GEHitTestResult] (val x: Self) extends AnyVal {
     
     inline def setGetAltitude(value: () => Double): Self = StObject.set(x, "getAltitude", js.Any.fromFunction0(value))
     

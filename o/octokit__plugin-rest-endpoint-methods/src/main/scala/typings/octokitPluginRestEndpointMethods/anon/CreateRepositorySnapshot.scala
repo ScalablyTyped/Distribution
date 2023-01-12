@@ -58,7 +58,8 @@ object CreateRepositorySnapshot {
     __obj.asInstanceOf[CreateRepositorySnapshot]
   }
   
-  extension [Self <: CreateRepositorySnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateRepositorySnapshot] (val x: Self) extends AnyVal {
     
     inline def setCreateRepositorySnapshot(value: `250`): Self = StObject.set(x, "createRepositorySnapshot", value.asInstanceOf[js.Any])
     

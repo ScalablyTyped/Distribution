@@ -16,7 +16,8 @@ object PartnerDataAccessConfig {
     __obj.asInstanceOf[PartnerDataAccessConfig]
   }
   
-  extension [Self <: PartnerDataAccessConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartnerDataAccessConfig] (val x: Self) extends AnyVal {
     
     inline def setSdfConfig(value: SdfConfig): Self = StObject.set(x, "sdfConfig", value.asInstanceOf[js.Any])
     

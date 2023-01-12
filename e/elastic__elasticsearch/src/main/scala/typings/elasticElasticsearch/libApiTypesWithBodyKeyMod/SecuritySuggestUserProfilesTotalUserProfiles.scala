@@ -17,7 +17,8 @@ object SecuritySuggestUserProfilesTotalUserProfiles {
     __obj.asInstanceOf[SecuritySuggestUserProfilesTotalUserProfiles]
   }
   
-  extension [Self <: SecuritySuggestUserProfilesTotalUserProfiles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecuritySuggestUserProfilesTotalUserProfiles] (val x: Self) extends AnyVal {
     
     inline def setRelation(value: RelationName): Self = StObject.set(x, "relation", value.asInstanceOf[js.Any])
     

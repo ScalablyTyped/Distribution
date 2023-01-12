@@ -32,7 +32,8 @@ object tripleExprBase {
     __obj.asInstanceOf[tripleExprBase]
   }
   
-  extension [Self <: tripleExprBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tripleExprBase] (val x: Self) extends AnyVal {
     
     inline def setId(value: tripleExprLabel): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

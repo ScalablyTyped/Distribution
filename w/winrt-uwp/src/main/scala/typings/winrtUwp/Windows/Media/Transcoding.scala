@@ -168,7 +168,8 @@ object Transcoding {
       __obj.asInstanceOf[PrepareTranscodeResult]
     }
     
-    extension [Self <: PrepareTranscodeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrepareTranscodeResult] (val x: Self) extends AnyVal {
       
       inline def setCanTranscode(value: Boolean): Self = StObject.set(x, "canTranscode", value.asInstanceOf[js.Any])
       

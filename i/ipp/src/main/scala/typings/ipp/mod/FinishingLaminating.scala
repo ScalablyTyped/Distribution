@@ -17,7 +17,8 @@ object FinishingLaminating {
     __obj.asInstanceOf[FinishingLaminating]
   }
   
-  extension [Self <: FinishingLaminating](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinishingLaminating] (val x: Self) extends AnyVal {
     
     inline def `setLaminating-sides`(value: FinishingSides): Self = StObject.set(x, "laminating-sides", value.asInstanceOf[js.Any])
     

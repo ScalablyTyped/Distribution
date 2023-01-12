@@ -20,7 +20,8 @@ object ParseAs {
     __obj.asInstanceOf[ParseAs[parseAs]]
   }
   
-  extension [Self <: ParseAs[?], parseAs /* <: String | Buffer */](x: Self & ParseAs[parseAs]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseAs[?], parseAs /* <: String | Buffer */] (val x: Self & ParseAs[parseAs]) extends AnyVal {
     
     inline def setBodyLimit(value: Double): Self = StObject.set(x, "bodyLimit", value.asInstanceOf[js.Any])
     

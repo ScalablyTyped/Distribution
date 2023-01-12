@@ -27,7 +27,8 @@ object QueryDslFunctionScoreQuery {
     __obj.asInstanceOf[QueryDslFunctionScoreQuery]
   }
   
-  extension [Self <: QueryDslFunctionScoreQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslFunctionScoreQuery] (val x: Self) extends AnyVal {
     
     inline def setBoost_mode(value: QueryDslFunctionBoostMode): Self = StObject.set(x, "boost_mode", value.asInstanceOf[js.Any])
     

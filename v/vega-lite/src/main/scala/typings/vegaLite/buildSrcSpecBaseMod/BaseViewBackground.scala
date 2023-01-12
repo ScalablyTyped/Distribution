@@ -75,7 +75,8 @@ object BaseViewBackground {
     __obj.asInstanceOf[BaseViewBackground[ES]]
   }
   
-  extension [Self <: BaseViewBackground[?], ES /* <: ExprRef | SignalRef */](x: Self & BaseViewBackground[ES]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseViewBackground[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseViewBackground[ES]) extends AnyVal {
     
     inline def setCornerRadius(
       value: /* import warning: importer.ImportType#apply Failed type conversion: vega-typings.vega-typings/types/spec/signal.SignalRef extends number | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined | undefined ? std.Exclude<number | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> | ES : std.Exclude<number | vega-typings.vega-typings/types/spec/signal.SignalRef | undefined | undefined, vega-typings.vega-typings/types/spec/encode.ScaledValueRef<any> | vega-typings.vega-typings/types/spec/encode.NumericValueRef | vega-typings.vega-typings/types/spec/encode.ColorValueRef> */ js.Any

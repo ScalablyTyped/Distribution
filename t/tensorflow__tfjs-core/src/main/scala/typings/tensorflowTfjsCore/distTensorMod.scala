@@ -2055,7 +2055,8 @@ object distTensorMod {
       __obj.asInstanceOf[DataToGPUWebGLOption]
     }
     
-    extension [Self <: DataToGPUWebGLOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataToGPUWebGLOption] (val x: Self) extends AnyVal {
       
       inline def setCustomTexShape(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "customTexShape", value.asInstanceOf[js.Any])
       
@@ -2082,7 +2083,8 @@ object distTensorMod {
       __obj.asInstanceOf[GPUData]
     }
     
-    extension [Self <: GPUData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPUData] (val x: Self) extends AnyVal {
       
       inline def setBufSize(value: Double): Self = StObject.set(x, "bufSize", value.asInstanceOf[js.Any])
       
@@ -2213,7 +2215,8 @@ object distTensorMod {
       __obj.asInstanceOf[TensorData[D]]
     }
     
-    extension [Self <: TensorData[?], D /* <: DataType */](x: Self & TensorData[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorData[?], D /* <: DataType */] (val x: Self & TensorData[D]) extends AnyVal {
       
       inline def setDataId(value: DataId): Self = StObject.set(x, "dataId", value.asInstanceOf[js.Any])
       

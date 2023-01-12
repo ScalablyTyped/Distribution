@@ -45,7 +45,8 @@ object EthereumSignTxEIP1559 {
     __obj.asInstanceOf[EthereumSignTxEIP1559]
   }
   
-  extension [Self <: EthereumSignTxEIP1559](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignTxEIP1559] (val x: Self) extends AnyVal {
     
     inline def setAccess_list(value: js.Array[EthereumAccessList]): Self = StObject.set(x, "access_list", value.asInstanceOf[js.Any])
     

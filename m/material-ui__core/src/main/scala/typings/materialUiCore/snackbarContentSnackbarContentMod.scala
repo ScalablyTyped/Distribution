@@ -514,7 +514,8 @@ object snackbarContentSnackbarContentMod {
       __obj.asInstanceOf[SnackbarContentProps]
     }
     
-    extension [Self <: SnackbarContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SnackbarContentProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

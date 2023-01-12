@@ -17,7 +17,8 @@ object Element {
     __obj.asInstanceOf[Element]
   }
   
-  extension [Self <: Element](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Element] (val x: Self) extends AnyVal {
     
     inline def setDropzone(value: InteractableAllowFrom): Self = StObject.set(x, "dropzone", value.asInstanceOf[js.Any])
     

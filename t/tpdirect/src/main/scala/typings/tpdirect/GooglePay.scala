@@ -50,7 +50,8 @@ object GooglePay {
     __obj.asInstanceOf[GooglePay]
   }
   
-  extension [Self <: GooglePay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePay] (val x: Self) extends AnyVal {
     
     inline def setGetPrime(
       value: js.Function3[

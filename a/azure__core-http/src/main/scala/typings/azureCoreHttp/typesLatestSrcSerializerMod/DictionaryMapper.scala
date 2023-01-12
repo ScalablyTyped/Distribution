@@ -28,7 +28,8 @@ object DictionaryMapper {
     __obj.asInstanceOf[DictionaryMapper]
   }
   
-  extension [Self <: DictionaryMapper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictionaryMapper] (val x: Self) extends AnyVal {
     
     inline def setHeaderCollectionPrefix(value: String): Self = StObject.set(x, "headerCollectionPrefix", value.asInstanceOf[js.Any])
     

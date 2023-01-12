@@ -25,7 +25,8 @@ object GoogleCloudDatacatalogV1DataSource {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1DataSource]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1DataSource] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

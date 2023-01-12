@@ -154,7 +154,8 @@ object UserResolveOptions {
     __obj.asInstanceOf[UserResolveOptions]
   }
   
-  extension [Self <: UserResolveOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserResolveOptions] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: js.Array[AliasOption] | AliasOptions): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

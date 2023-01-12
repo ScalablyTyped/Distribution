@@ -116,7 +116,8 @@ object ImagePropsBase {
     __obj.asInstanceOf[ImagePropsBase]
   }
   
-  extension [Self <: ImagePropsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagePropsBase] (val x: Self) extends AnyVal {
     
     inline def setBorderBottomLeftRadius(value: Double): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])
     

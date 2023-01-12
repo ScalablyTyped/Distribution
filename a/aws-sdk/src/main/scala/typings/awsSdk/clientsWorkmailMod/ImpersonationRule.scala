@@ -43,7 +43,8 @@ object ImpersonationRule {
     __obj.asInstanceOf[ImpersonationRule]
   }
   
-  extension [Self <: ImpersonationRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImpersonationRule] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: ImpersonationRuleDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

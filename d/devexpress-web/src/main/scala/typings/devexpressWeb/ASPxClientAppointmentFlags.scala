@@ -65,7 +65,8 @@ object ASPxClientAppointmentFlags {
     __obj.asInstanceOf[ASPxClientAppointmentFlags]
   }
   
-  extension [Self <: ASPxClientAppointmentFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientAppointmentFlags] (val x: Self) extends AnyVal {
     
     inline def setAllowConflicts(value: Boolean): Self = StObject.set(x, "allowConflicts", value.asInstanceOf[js.Any])
     

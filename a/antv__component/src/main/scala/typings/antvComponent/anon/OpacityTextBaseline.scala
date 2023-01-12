@@ -19,7 +19,8 @@ object OpacityTextBaseline {
     __obj.asInstanceOf[OpacityTextBaseline]
   }
   
-  extension [Self <: OpacityTextBaseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpacityTextBaseline] (val x: Self) extends AnyVal {
     
     inline def setFill(value: String): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

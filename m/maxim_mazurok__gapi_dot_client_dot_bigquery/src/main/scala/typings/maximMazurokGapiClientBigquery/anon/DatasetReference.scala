@@ -33,7 +33,8 @@ object DatasetReference {
     __obj.asInstanceOf[DatasetReference]
   }
   
-  extension [Self <: DatasetReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetReference] (val x: Self) extends AnyVal {
     
     inline def setDatasetReference(value: typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.DatasetReference): Self = StObject.set(x, "datasetReference", value.asInstanceOf[js.Any])
     

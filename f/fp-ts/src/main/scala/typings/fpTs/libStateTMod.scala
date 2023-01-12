@@ -458,7 +458,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM[M]]
     }
     
-    extension [Self <: StateM[?], M](x: Self & StateM[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM[?], M] (val x: Self & StateM[M]) extends AnyVal {
       
       inline def setAp(value: (StateT[M, Any, js.Function1[Any, Any]], StateT[M, Any, Any]) => StateT[M, Any, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
@@ -536,7 +537,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM1[M]]
     }
     
-    extension [Self <: StateM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */](x: Self & StateM1[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM1[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ Any */] (val x: Self & StateM1[M]) extends AnyVal {
       
       inline def setAp(value: (StateT1[M, Any, js.Function1[Any, Any]], StateT1[M, Any, Any]) => StateT1[M, Any, Any]): Self = StObject.set(x, "ap", js.Any.fromFunction2(value))
       
@@ -614,7 +616,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM2[M]]
     }
     
-    extension [Self <: StateM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & StateM2[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM2[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & StateM2[M]) extends AnyVal {
       
       inline def setAp(
         value: (StateT2[M, Any, Any, js.Function1[Any, Any]], StateT2[M, Any, Any, Any]) => StateT2[M, Any, Any, Any]
@@ -696,7 +699,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM2C[M, E]]
     }
     
-    extension [Self <: StateM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (StateM2C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM2C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (StateM2C[M, E])) extends AnyVal {
       
       inline def setAp(
         value: (StateT2[M, Any, E, js.Function1[Any, Any]], StateT2[M, Any, E, Any]) => StateT2[M, Any, E, Any]
@@ -778,7 +782,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM3[M]]
     }
     
-    extension [Self <: StateM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & StateM3[M]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM3[?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & StateM3[M]) extends AnyVal {
       
       inline def setAp(
         value: (StateT3[M, Any, Any, Any, js.Function1[Any, Any]], StateT3[M, Any, Any, Any, Any]) => StateT3[M, Any, Any, Any, Any]
@@ -860,7 +865,8 @@ object libStateTMod {
       __obj.asInstanceOf[StateM3C[M, E]]
     }
     
-    extension [Self <: StateM3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (StateM3C[M, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateM3C[?, ?], M /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (StateM3C[M, E])) extends AnyVal {
       
       inline def setAp(
         value: (StateT3[M, Any, Any, E, js.Function1[Any, Any]], StateT3[M, Any, Any, E, Any]) => StateT3[M, Any, Any, E, Any]

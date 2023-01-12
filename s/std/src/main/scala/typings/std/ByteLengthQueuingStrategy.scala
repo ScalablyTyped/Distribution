@@ -24,7 +24,8 @@ object ByteLengthQueuingStrategy {
     __obj.asInstanceOf[ByteLengthQueuingStrategy]
   }
   
-  extension [Self <: ByteLengthQueuingStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteLengthQueuingStrategy] (val x: Self) extends AnyVal {
     
     inline def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object XForbiddenCharacters {
     __obj.asInstanceOf[XForbiddenCharacters]
   }
   
-  extension [Self <: XForbiddenCharacters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XForbiddenCharacters] (val x: Self) extends AnyVal {
     
     inline def setGetForbiddenCharacters(value: Locale => ForbiddenCharacters): Self = StObject.set(x, "getForbiddenCharacters", js.Any.fromFunction1(value))
     

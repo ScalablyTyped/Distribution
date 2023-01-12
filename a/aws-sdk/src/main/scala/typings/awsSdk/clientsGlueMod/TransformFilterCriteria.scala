@@ -58,7 +58,8 @@ object TransformFilterCriteria {
     __obj.asInstanceOf[TransformFilterCriteria]
   }
   
-  extension [Self <: TransformFilterCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformFilterCriteria] (val x: Self) extends AnyVal {
     
     inline def setCreatedAfter(value: js.Date): Self = StObject.set(x, "CreatedAfter", value.asInstanceOf[js.Any])
     

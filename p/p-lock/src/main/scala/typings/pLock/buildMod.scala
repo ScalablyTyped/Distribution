@@ -31,7 +31,8 @@ object buildMod {
       __obj.asInstanceOf[LockOptions]
     }
     
-    extension [Self <: LockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LockOptions] (val x: Self) extends AnyVal {
       
       inline def setReplace(value: Boolean): Self = StObject.set(x, "replace", value.asInstanceOf[js.Any])
       

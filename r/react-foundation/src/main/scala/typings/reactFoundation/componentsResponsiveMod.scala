@@ -232,7 +232,8 @@ object componentsResponsiveMod {
       __obj.asInstanceOf[MenuIconProps]
     }
     
-    extension [Self <: MenuIconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MenuIconProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -588,7 +589,8 @@ object componentsResponsiveMod {
       __obj.asInstanceOf[ResponsiveNavigationProps]
     }
     
-    extension [Self <: ResponsiveNavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveNavigationProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -803,7 +805,8 @@ object componentsResponsiveMod {
       __obj.asInstanceOf[ResponsiveNavigationState]
     }
     
-    extension [Self <: ResponsiveNavigationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveNavigationState] (val x: Self) extends AnyVal {
       
       inline def setIsTitleBarVisible(value: Boolean): Self = StObject.set(x, "isTitleBarVisible", value.asInstanceOf[js.Any])
       
@@ -929,7 +932,8 @@ object componentsResponsiveMod {
       __obj.asInstanceOf[TitleBarProps]
     }
     
-    extension [Self <: TitleBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleBarProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1229,7 +1233,8 @@ object componentsResponsiveMod {
       __obj.asInstanceOf[TitleBarTitleProps]
     }
     
-    extension [Self <: TitleBarTitleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleBarTitleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

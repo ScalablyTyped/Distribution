@@ -22,7 +22,8 @@ object DownloadFileResult {
     __obj.asInstanceOf[DownloadFileResult]
   }
   
-  extension [Self <: DownloadFileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadFileResult] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: Double): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

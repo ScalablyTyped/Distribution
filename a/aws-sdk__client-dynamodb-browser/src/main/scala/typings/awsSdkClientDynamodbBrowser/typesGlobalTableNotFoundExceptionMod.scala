@@ -27,7 +27,8 @@ object typesGlobalTableNotFoundExceptionMod {
       __obj.asInstanceOf[GlobalTableNotFoundException]
     }
     
-    extension [Self <: GlobalTableNotFoundException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTableNotFoundException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.GlobalTableNotFoundException
@@ -49,7 +50,8 @@ object typesGlobalTableNotFoundExceptionMod {
       __obj.asInstanceOf[GlobalTableNotFoundExceptionDetails]
     }
     
-    extension [Self <: GlobalTableNotFoundExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalTableNotFoundExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

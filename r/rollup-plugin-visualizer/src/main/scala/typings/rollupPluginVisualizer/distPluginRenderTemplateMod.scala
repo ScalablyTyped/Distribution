@@ -27,7 +27,8 @@ object distPluginRenderTemplateMod {
       __obj.asInstanceOf[RenderTemplateOptions]
     }
     
-    extension [Self <: RenderTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: VisualizerData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

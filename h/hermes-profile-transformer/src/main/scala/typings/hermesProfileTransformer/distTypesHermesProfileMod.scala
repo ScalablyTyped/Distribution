@@ -26,7 +26,8 @@ object distTypesHermesProfileMod {
       __obj.asInstanceOf[HermesCPUProfile]
     }
     
-    extension [Self <: HermesCPUProfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HermesCPUProfile] (val x: Self) extends AnyVal {
       
       inline def setSamples(value: js.Array[HermesSample]): Self = StObject.set(x, "samples", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object distTypesHermesProfileMod {
       __obj.asInstanceOf[HermesSample]
     }
     
-    extension [Self <: HermesSample](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HermesSample] (val x: Self) extends AnyVal {
       
       inline def setCpu(value: String): Self = StObject.set(x, "cpu", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object distTypesHermesProfileMod {
       __obj.asInstanceOf[HermesStackFrame]
     }
     
-    extension [Self <: HermesStackFrame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HermesStackFrame] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       

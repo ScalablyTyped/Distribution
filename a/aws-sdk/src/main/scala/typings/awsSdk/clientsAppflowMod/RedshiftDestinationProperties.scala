@@ -34,7 +34,8 @@ object RedshiftDestinationProperties {
     __obj.asInstanceOf[RedshiftDestinationProperties]
   }
   
-  extension [Self <: RedshiftDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RedshiftDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setBucketPrefix(value: BucketPrefix): Self = StObject.set(x, "bucketPrefix", value.asInstanceOf[js.Any])
     

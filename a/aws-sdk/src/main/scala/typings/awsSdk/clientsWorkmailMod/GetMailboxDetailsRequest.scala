@@ -23,7 +23,8 @@ object GetMailboxDetailsRequest {
     __obj.asInstanceOf[GetMailboxDetailsRequest]
   }
   
-  extension [Self <: GetMailboxDetailsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMailboxDetailsRequest] (val x: Self) extends AnyVal {
     
     inline def setOrganizationId(value: OrganizationId): Self = StObject.set(x, "OrganizationId", value.asInstanceOf[js.Any])
     

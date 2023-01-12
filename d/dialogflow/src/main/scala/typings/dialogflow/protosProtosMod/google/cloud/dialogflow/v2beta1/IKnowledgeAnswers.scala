@@ -18,7 +18,8 @@ object IKnowledgeAnswers {
     __obj.asInstanceOf[IKnowledgeAnswers]
   }
   
-  extension [Self <: IKnowledgeAnswers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKnowledgeAnswers] (val x: Self) extends AnyVal {
     
     inline def setAnswers(value: js.Array[IAnswer]): Self = StObject.set(x, "answers", value.asInstanceOf[js.Any])
     

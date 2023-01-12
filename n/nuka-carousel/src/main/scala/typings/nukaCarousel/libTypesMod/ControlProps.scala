@@ -99,7 +99,8 @@ object ControlProps {
     __obj.asInstanceOf[ControlProps]
   }
   
-  extension [Self <: ControlProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlProps] (val x: Self) extends AnyVal {
     
     inline def setCellAlign(value: CellAlign): Self = StObject.set(x, "cellAlign", value.asInstanceOf[js.Any])
     

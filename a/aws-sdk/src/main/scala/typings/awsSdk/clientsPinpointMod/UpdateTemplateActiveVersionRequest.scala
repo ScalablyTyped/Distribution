@@ -29,7 +29,8 @@ object UpdateTemplateActiveVersionRequest {
     __obj.asInstanceOf[UpdateTemplateActiveVersionRequest]
   }
   
-  extension [Self <: UpdateTemplateActiveVersionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTemplateActiveVersionRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateActiveVersionRequest(value: TemplateActiveVersionRequest): Self = StObject.set(x, "TemplateActiveVersionRequest", value.asInstanceOf[js.Any])
     

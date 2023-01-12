@@ -51,7 +51,8 @@ object typesInvokeAsyncInputMod {
       __obj.asInstanceOf[InvokeAsyncInput[StreamType]]
     }
     
-    extension [Self <: InvokeAsyncInput[?], StreamType](x: Self & InvokeAsyncInput[StreamType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvokeAsyncInput[?], StreamType] (val x: Self & InvokeAsyncInput[StreamType]) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

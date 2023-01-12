@@ -35,7 +35,8 @@ object CommentRichContent {
     __obj.asInstanceOf[CommentRichContent]
   }
   
-  extension [Self <: CommentRichContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentRichContent] (val x: Self) extends AnyVal {
     
     inline def setMentions(value: js.Array[CommentMention]): Self = StObject.set(x, "mentions", value.asInstanceOf[js.Any])
     

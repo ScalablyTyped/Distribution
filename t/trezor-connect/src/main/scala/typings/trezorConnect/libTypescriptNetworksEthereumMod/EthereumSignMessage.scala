@@ -19,7 +19,8 @@ object EthereumSignMessage {
     __obj.asInstanceOf[EthereumSignMessage]
   }
   
-  extension [Self <: EthereumSignMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EthereumSignMessage] (val x: Self) extends AnyVal {
     
     inline def setHex(value: Boolean): Self = StObject.set(x, "hex", value.asInstanceOf[js.Any])
     

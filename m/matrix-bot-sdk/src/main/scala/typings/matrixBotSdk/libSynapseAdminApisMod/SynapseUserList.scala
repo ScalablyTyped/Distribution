@@ -28,7 +28,8 @@ object SynapseUserList {
     __obj.asInstanceOf[SynapseUserList]
   }
   
-  extension [Self <: SynapseUserList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseUserList] (val x: Self) extends AnyVal {
     
     inline def setNext_token(value: String): Self = StObject.set(x, "next_token", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object FusedBatchNormAttrs {
     __obj.asInstanceOf[FusedBatchNormAttrs]
   }
   
-  extension [Self <: FusedBatchNormAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FusedBatchNormAttrs] (val x: Self) extends AnyVal {
     
     inline def setVarianceEpsilon(value: Double): Self = StObject.set(x, "varianceEpsilon", value.asInstanceOf[js.Any])
   }

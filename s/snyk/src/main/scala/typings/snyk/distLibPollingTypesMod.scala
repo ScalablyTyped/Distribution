@@ -26,7 +26,8 @@ object distLibPollingTypesMod {
       __obj.asInstanceOf[PollingTask]
     }
     
-    extension [Self <: PollingTask](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PollingTask] (val x: Self) extends AnyVal {
       
       inline def setMaxAttempts(value: Double): Self = StObject.set(x, "maxAttempts", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object distLibPollingTypesMod {
       __obj.asInstanceOf[ResolutionMeta]
     }
     
-    extension [Self <: ResolutionMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolutionMeta] (val x: Self) extends AnyVal {
       
       inline def setIdentity(value: Type): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object distLibPollingTypesMod {
       __obj.asInstanceOf[ResolveAndTestFactsResponse]
     }
     
-    extension [Self <: ResolveAndTestFactsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveAndTestFactsResponse] (val x: Self) extends AnyVal {
       
       inline def setResult(value: TestDependenciesResult): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object distLibPollingTypesMod {
       __obj.asInstanceOf[ResolveFactsState]
     }
     
-    extension [Self <: ResolveFactsState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolveFactsState] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -219,7 +223,8 @@ object distLibPollingTypesMod {
       __obj.asInstanceOf[TestDependenciesResponse]
     }
     
-    extension [Self <: TestDependenciesResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestDependenciesResponse] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: TestDepGraphMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       

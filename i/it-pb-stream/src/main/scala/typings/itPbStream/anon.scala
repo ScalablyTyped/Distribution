@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[Decode[T]]
     }
     
-    extension [Self <: Decode[?], T](x: Self & Decode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decode[?], T] (val x: Self & Decode[T]) extends AnyVal {
       
       inline def setDecode(value: /* data */ js.typedarray.Uint8Array | Uint8ArrayList => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
     }
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[DecodeEncode[T]]
     }
     
-    extension [Self <: DecodeEncode[?], T](x: Self & DecodeEncode[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DecodeEncode[?], T] (val x: Self & DecodeEncode[T]) extends AnyVal {
       
       inline def setDecode(value: /* data */ js.typedarray.Uint8Array | Uint8ArrayList => T): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Encode]
     }
     
-    extension [Self <: Encode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encode] (val x: Self) extends AnyVal {
       
       inline def setEncode(value: Any => js.typedarray.Uint8Array): Self = StObject.set(x, "encode", js.Any.fromFunction1(value))
     }

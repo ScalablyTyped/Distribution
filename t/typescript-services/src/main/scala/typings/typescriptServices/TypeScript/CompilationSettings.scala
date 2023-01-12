@@ -71,7 +71,8 @@ object CompilationSettings {
     __obj.asInstanceOf[CompilationSettings]
   }
   
-  extension [Self <: CompilationSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilationSettings] (val x: Self) extends AnyVal {
     
     inline def setAllowAutomaticSemicolonInsertion(value: Boolean): Self = StObject.set(x, "allowAutomaticSemicolonInsertion", value.asInstanceOf[js.Any])
     

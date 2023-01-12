@@ -26,7 +26,8 @@ object RVNearestXData {
     __obj.asInstanceOf[RVNearestXData[T]]
   }
   
-  extension [Self <: RVNearestXData[?], T /* <: AbstractSeriesPoint */](x: Self & RVNearestXData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RVNearestXData[?], T /* <: AbstractSeriesPoint */] (val x: Self & RVNearestXData[T]) extends AnyVal {
     
     inline def setEvent(value: MouseEvent[HTMLElement, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

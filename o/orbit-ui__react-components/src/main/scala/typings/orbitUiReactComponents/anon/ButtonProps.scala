@@ -17,7 +17,8 @@ object ButtonProps {
     __obj.asInstanceOf[ButtonProps[Shape]]
   }
   
-  extension [Self <: ButtonProps[?], Shape](x: Self & ButtonProps[Shape]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonProps[?], Shape] (val x: Self & ButtonProps[Shape]) extends AnyVal {
     
     inline def setButtonProps(value: Dictx[Shape]): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
     

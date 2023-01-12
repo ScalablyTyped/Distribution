@@ -23,7 +23,8 @@ object UntagColumnOperation {
     __obj.asInstanceOf[UntagColumnOperation]
   }
   
-  extension [Self <: UntagColumnOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UntagColumnOperation] (val x: Self) extends AnyVal {
     
     inline def setColumnName(value: ColumnName): Self = StObject.set(x, "ColumnName", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object distInputSrcUseGroupInputMod {
       __obj.asInstanceOf[UseGroupInputProps]
     }
     
-    extension [Self <: UseGroupInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseGroupInputProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: String): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       
@@ -141,7 +142,8 @@ object distInputSrcUseGroupInputMod {
       __obj.asInstanceOf[UseGroupInputReturn]
     }
     
-    extension [Self <: UseGroupInputReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseGroupInputReturn] (val x: Self) extends AnyVal {
       
       inline def setGroupProps(value: Align): Self = StObject.set(x, "groupProps", value.asInstanceOf[js.Any])
       

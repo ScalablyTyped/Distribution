@@ -18,7 +18,8 @@ object GoogleCloudDatalabelingV1beta1Attempt {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Attempt]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1Attempt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Attempt] (val x: Self) extends AnyVal {
     
     inline def setAttemptTime(value: String): Self = StObject.set(x, "attemptTime", value.asInstanceOf[js.Any])
     

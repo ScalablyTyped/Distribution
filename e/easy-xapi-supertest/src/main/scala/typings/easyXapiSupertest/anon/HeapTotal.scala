@@ -19,7 +19,8 @@ object HeapTotal {
     __obj.asInstanceOf[HeapTotal]
   }
   
-  extension [Self <: HeapTotal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeapTotal] (val x: Self) extends AnyVal {
     
     inline def setHeapTotal(value: Double): Self = StObject.set(x, "heapTotal", value.asInstanceOf[js.Any])
     

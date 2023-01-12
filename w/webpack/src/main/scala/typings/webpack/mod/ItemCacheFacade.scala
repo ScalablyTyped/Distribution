@@ -35,7 +35,8 @@ object ItemCacheFacade {
     __obj.asInstanceOf[ItemCacheFacade]
   }
   
-  extension [Self <: ItemCacheFacade](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemCacheFacade] (val x: Self) extends AnyVal {
     
     inline def setGet(value: CallbackCache[Any] => Unit): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

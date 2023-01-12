@@ -18,7 +18,8 @@ object FlashInstance {
     __obj.asInstanceOf[FlashInstance]
   }
   
-  extension [Self <: FlashInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashInstance] (val x: Self) extends AnyVal {
     
     inline def setInstanceType(value: String): Self = StObject.set(x, "instanceType", value.asInstanceOf[js.Any])
     

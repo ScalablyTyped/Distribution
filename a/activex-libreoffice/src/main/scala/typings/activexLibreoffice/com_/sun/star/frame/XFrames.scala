@@ -60,7 +60,8 @@ object XFrames {
     __obj.asInstanceOf[XFrames]
   }
   
-  extension [Self <: XFrames](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFrames] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: XFrame => Unit): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

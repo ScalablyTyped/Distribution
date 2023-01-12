@@ -40,7 +40,8 @@ object XReferenceCollector {
     __obj.asInstanceOf[XReferenceCollector]
   }
   
-  extension [Self <: XReferenceCollector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XReferenceCollector] (val x: Self) extends AnyVal {
     
     inline def setSetReferenceCount(value: Double => Unit): Self = StObject.set(x, "setReferenceCount", js.Any.fromFunction1(value))
     

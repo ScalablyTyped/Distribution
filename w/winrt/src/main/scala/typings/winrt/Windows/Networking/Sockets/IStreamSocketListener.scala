@@ -35,7 +35,8 @@ object IStreamSocketListener {
     __obj.asInstanceOf[IStreamSocketListener]
   }
   
-  extension [Self <: IStreamSocketListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamSocketListener] (val x: Self) extends AnyVal {
     
     inline def setBindEndpointAsync(value: (HostName, String) => IAsyncAction): Self = StObject.set(x, "bindEndpointAsync", js.Any.fromFunction2(value))
     

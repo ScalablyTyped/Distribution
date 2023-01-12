@@ -410,7 +410,8 @@ object PartialBoxPlotData {
     __obj.asInstanceOf[PartialBoxPlotData]
   }
   
-  extension [Self <: PartialBoxPlotData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialBoxPlotData] (val x: Self) extends AnyVal {
     
     inline def setAlignmentgroup(value: String): Self = StObject.set(x, "alignmentgroup", value.asInstanceOf[js.Any])
     

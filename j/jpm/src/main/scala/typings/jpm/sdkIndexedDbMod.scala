@@ -25,7 +25,8 @@ object sdkIndexedDbMod {
       __obj.asInstanceOf[IndexedImpl]
     }
     
-    extension [Self <: IndexedImpl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndexedImpl] (val x: Self) extends AnyVal {
       
       inline def setDOMException(value: DOMException): Self = StObject.set(x, "DOMException", value.asInstanceOf[js.Any])
       

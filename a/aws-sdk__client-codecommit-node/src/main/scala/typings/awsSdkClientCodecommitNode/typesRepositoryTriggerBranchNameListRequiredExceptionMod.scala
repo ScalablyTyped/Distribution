@@ -23,7 +23,8 @@ object typesRepositoryTriggerBranchNameListRequiredExceptionMod {
       __obj.asInstanceOf[RepositoryTriggerBranchNameListRequiredException]
     }
     
-    extension [Self <: RepositoryTriggerBranchNameListRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryTriggerBranchNameListRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.RepositoryTriggerBranchNameListRequiredException

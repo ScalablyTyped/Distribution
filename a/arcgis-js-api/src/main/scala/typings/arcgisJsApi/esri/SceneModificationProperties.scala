@@ -32,7 +32,8 @@ object SceneModificationProperties {
     __obj.asInstanceOf[SceneModificationProperties]
   }
   
-  extension [Self <: SceneModificationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneModificationProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometry(value: PolygonProperties): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     

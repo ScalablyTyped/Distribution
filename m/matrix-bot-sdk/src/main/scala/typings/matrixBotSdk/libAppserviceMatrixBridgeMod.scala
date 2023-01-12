@@ -96,7 +96,8 @@ object libAppserviceMatrixBridgeMod {
       __obj.asInstanceOf[IRemoteRoomInfo]
     }
     
-    extension [Self <: IRemoteRoomInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemoteRoomInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -116,7 +117,8 @@ object libAppserviceMatrixBridgeMod {
       __obj.asInstanceOf[IRemoteUserInfo]
     }
     
-    extension [Self <: IRemoteUserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRemoteUserInfo] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }

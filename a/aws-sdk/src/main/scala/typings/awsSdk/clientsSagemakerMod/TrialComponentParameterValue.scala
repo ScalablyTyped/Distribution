@@ -23,7 +23,8 @@ object TrialComponentParameterValue {
     __obj.asInstanceOf[TrialComponentParameterValue]
   }
   
-  extension [Self <: TrialComponentParameterValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrialComponentParameterValue] (val x: Self) extends AnyVal {
     
     inline def setNumberValue(value: DoubleParameterValue): Self = StObject.set(x, "NumberValue", value.asInstanceOf[js.Any])
     

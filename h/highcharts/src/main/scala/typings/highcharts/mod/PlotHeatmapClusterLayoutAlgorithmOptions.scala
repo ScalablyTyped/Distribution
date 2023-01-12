@@ -92,7 +92,8 @@ object PlotHeatmapClusterLayoutAlgorithmOptions {
     __obj.asInstanceOf[PlotHeatmapClusterLayoutAlgorithmOptions]
   }
   
-  extension [Self <: PlotHeatmapClusterLayoutAlgorithmOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotHeatmapClusterLayoutAlgorithmOptions] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double | String): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

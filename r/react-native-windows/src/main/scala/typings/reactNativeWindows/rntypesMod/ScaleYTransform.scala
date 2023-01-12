@@ -15,7 +15,8 @@ object ScaleYTransform {
     __obj.asInstanceOf[ScaleYTransform]
   }
   
-  extension [Self <: ScaleYTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScaleYTransform] (val x: Self) extends AnyVal {
     
     inline def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
   }

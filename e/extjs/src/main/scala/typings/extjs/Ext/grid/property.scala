@@ -79,7 +79,8 @@ object property {
       __obj.asInstanceOf[IGrid]
     }
     
-    extension [Self <: IGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGrid] (val x: Self) extends AnyVal {
       
       inline def setCustomEditors(value: Any): Self = StObject.set(x, "customEditors", value.asInstanceOf[js.Any])
       
@@ -154,7 +155,8 @@ object property {
       __obj.asInstanceOf[IProperty]
     }
     
-    extension [Self <: IProperty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProperty] (val x: Self) extends AnyVal {
       
       inline def setFields(value: IMixedCollection): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       

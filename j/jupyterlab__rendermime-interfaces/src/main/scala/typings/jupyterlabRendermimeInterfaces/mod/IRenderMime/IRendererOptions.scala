@@ -47,7 +47,8 @@ object IRendererOptions {
     __obj.asInstanceOf[IRendererOptions]
   }
   
-  extension [Self <: IRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setLatexTypesetter(value: ILatexTypesetter): Self = StObject.set(x, "latexTypesetter", value.asInstanceOf[js.Any])
     

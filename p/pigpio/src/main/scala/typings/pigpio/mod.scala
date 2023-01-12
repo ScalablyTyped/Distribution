@@ -872,7 +872,8 @@ object mod {
       __obj.asInstanceOf[GenericWaveStep]
     }
     
-    extension [Self <: GenericWaveStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GenericWaveStep] (val x: Self) extends AnyVal {
       
       inline def setGpioOff(value: Double): Self = StObject.set(x, "gpioOff", value.asInstanceOf[js.Any])
       

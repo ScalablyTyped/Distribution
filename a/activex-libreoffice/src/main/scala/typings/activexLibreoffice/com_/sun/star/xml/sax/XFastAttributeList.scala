@@ -92,7 +92,8 @@ object XFastAttributeList {
     __obj.asInstanceOf[XFastAttributeList]
   }
   
-  extension [Self <: XFastAttributeList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastAttributeList] (val x: Self) extends AnyVal {
     
     inline def setFastAttributes(value: SafeArray[FastAttribute]): Self = StObject.set(x, "FastAttributes", value.asInstanceOf[js.Any])
     

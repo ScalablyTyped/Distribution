@@ -45,7 +45,8 @@ object BasicYarnAutoscalingConfig {
     __obj.asInstanceOf[BasicYarnAutoscalingConfig]
   }
   
-  extension [Self <: BasicYarnAutoscalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasicYarnAutoscalingConfig] (val x: Self) extends AnyVal {
     
     inline def setGracefulDecommissionTimeout(value: String): Self = StObject.set(x, "gracefulDecommissionTimeout", value.asInstanceOf[js.Any])
     

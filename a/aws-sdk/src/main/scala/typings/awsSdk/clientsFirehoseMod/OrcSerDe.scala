@@ -63,7 +63,8 @@ object OrcSerDe {
     __obj.asInstanceOf[OrcSerDe]
   }
   
-  extension [Self <: OrcSerDe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrcSerDe] (val x: Self) extends AnyVal {
     
     inline def setBlockSizeBytes(value: BlockSizeBytes): Self = StObject.set(x, "BlockSizeBytes", value.asInstanceOf[js.Any])
     

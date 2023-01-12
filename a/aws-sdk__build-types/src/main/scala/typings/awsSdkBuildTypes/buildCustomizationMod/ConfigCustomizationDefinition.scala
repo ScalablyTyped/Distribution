@@ -21,7 +21,8 @@ object ConfigCustomizationDefinition {
     __obj.asInstanceOf[ConfigCustomizationDefinition]
   }
   
-  extension [Self <: ConfigCustomizationDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigCustomizationDefinition] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ConfigurationDefinition): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

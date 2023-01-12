@@ -21,7 +21,8 @@ object ShowCompletedEvent {
     __obj.asInstanceOf[ShowCompletedEvent]
   }
   
-  extension [Self <: ShowCompletedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowCompletedEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: `show-completed`): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

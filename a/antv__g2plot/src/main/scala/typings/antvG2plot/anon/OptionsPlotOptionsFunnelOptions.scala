@@ -22,7 +22,8 @@ object OptionsPlotOptionsFunnelOptions {
     __obj.asInstanceOf[OptionsPlotOptionsFunnelOptions]
   }
   
-  extension [Self <: OptionsPlotOptionsFunnelOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsPlotOptionsFunnelOptions] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: PlotOptionsFunnelOptions): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

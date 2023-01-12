@@ -23,7 +23,8 @@ object DBCoreOpenCursorRequest {
     __obj.asInstanceOf[DBCoreOpenCursorRequest]
   }
   
-  extension [Self <: DBCoreOpenCursorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBCoreOpenCursorRequest] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: DBCoreQuery): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     

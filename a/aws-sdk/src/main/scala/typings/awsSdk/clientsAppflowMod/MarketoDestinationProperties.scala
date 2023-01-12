@@ -21,7 +21,8 @@ object MarketoDestinationProperties {
     __obj.asInstanceOf[MarketoDestinationProperties]
   }
   
-  extension [Self <: MarketoDestinationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarketoDestinationProperties] (val x: Self) extends AnyVal {
     
     inline def setErrorHandlingConfig(value: ErrorHandlingConfig): Self = StObject.set(x, "errorHandlingConfig", value.asInstanceOf[js.Any])
     

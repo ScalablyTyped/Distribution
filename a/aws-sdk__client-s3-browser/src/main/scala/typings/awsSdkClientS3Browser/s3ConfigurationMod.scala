@@ -186,7 +186,8 @@ object s3ConfigurationMod {
       __obj.asInstanceOf[S3Configuration]
     }
     
-    extension [Self <: S3Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3Configuration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       
@@ -361,7 +362,8 @@ object s3ConfigurationMod {
       __obj.asInstanceOf[S3ResolvableConfiguration]
     }
     
-    extension [Self <: S3ResolvableConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ResolvableConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBodyLengthChecker(value: Any => js.UndefOr[Double]): Self = StObject.set(x, "bodyLengthChecker", js.Any.fromFunction1(value))
       
@@ -524,7 +526,8 @@ object s3ConfigurationMod {
       __obj.asInstanceOf[S3ResolvedConfiguration]
     }
     
-    extension [Self <: S3ResolvedConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: S3ResolvedConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBase64Decoder(value: /* input */ String => js.typedarray.Uint8Array): Self = StObject.set(x, "base64Decoder", js.Any.fromFunction1(value))
       

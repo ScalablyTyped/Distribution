@@ -33,7 +33,8 @@ object ListBuiltInSlotTypesRequest {
     __obj.asInstanceOf[ListBuiltInSlotTypesRequest]
   }
   
-  extension [Self <: ListBuiltInSlotTypesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBuiltInSlotTypesRequest] (val x: Self) extends AnyVal {
     
     inline def setLocaleId(value: LocaleId): Self = StObject.set(x, "localeId", value.asInstanceOf[js.Any])
     

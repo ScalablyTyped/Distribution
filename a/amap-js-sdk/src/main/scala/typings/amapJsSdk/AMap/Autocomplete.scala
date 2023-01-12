@@ -20,7 +20,8 @@ object Autocomplete {
     __obj.asInstanceOf[Autocomplete]
   }
   
-  extension [Self <: Autocomplete](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Autocomplete] (val x: Self) extends AnyVal {
     
     inline def setSearch(
       value: (String, js.Function2[/* status */ String, /* result */ String | AutocompleteResult, Unit]) => Unit

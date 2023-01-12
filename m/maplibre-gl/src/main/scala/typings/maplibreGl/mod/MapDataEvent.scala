@@ -20,7 +20,8 @@ object MapDataEvent {
     __obj.asInstanceOf[MapDataEvent]
   }
   
-  extension [Self <: MapDataEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapDataEvent] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: String): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

@@ -58,7 +58,8 @@ object ExpungeWhichSharedNotebookRestrictions {
     __obj.asInstanceOf[ExpungeWhichSharedNotebookRestrictions]
   }
   
-  extension [Self <: ExpungeWhichSharedNotebookRestrictions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpungeWhichSharedNotebookRestrictions] (val x: Self) extends AnyVal {
     
     inline def setExpungeWhichSharedNotebookRestrictions(value: SharedNotebookInstanceRestrictions): Self = StObject.set(x, "expungeWhichSharedNotebookRestrictions", value.asInstanceOf[js.Any])
     

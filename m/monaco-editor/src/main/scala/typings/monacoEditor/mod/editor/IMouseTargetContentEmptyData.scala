@@ -17,7 +17,8 @@ object IMouseTargetContentEmptyData {
     __obj.asInstanceOf[IMouseTargetContentEmptyData]
   }
   
-  extension [Self <: IMouseTargetContentEmptyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetContentEmptyData] (val x: Self) extends AnyVal {
     
     inline def setHorizontalDistanceToText(value: Double): Self = StObject.set(x, "horizontalDistanceToText", value.asInstanceOf[js.Any])
     

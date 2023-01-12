@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[ClassName[Theme]]
     }
     
-    extension [Self <: ClassName[?], Theme](x: Self & ClassName[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassName[?], Theme] (val x: Self & ClassName[Theme]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -49,7 +50,8 @@ object anon {
       __obj.asInstanceOf[Classes[StylesType]]
     }
     
-    extension [Self <: Classes[?], StylesType /* <: ClassKeyInferable[Any, Any] */](x: Self & Classes[StylesType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes[?], StylesType /* <: ClassKeyInferable[Any, Any] */] (val x: Self & Classes[StylesType]) extends AnyVal {
       
       inline def setClasses(value: ClassNameMap[ClassKeyOfStyles[StylesType]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       
@@ -78,7 +80,8 @@ object anon {
       __obj.asInstanceOf[NameProps[Props, Name, Theme]]
     }
     
-    extension [Self <: NameProps[?, ?, ?], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[Any] */](x: Self & (NameProps[Props, Name, Theme])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NameProps[?, ?, ?], Props, Name /* <: /* keyof any */ String */, Theme /* <: ThemeWithProps[Any] */] (val x: Self & (NameProps[Props, Name, Theme])) extends AnyVal {
       
       inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[ThemeTheme[Theme]]
     }
     
-    extension [Self <: ThemeTheme[?], Theme](x: Self & ThemeTheme[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ThemeTheme[?], Theme] (val x: Self & ThemeTheme[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     }

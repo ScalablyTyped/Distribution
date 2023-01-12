@@ -33,7 +33,8 @@ object DataSourceInitializedEventUIParam {
     __obj.asInstanceOf[DataSourceInitializedEventUIParam]
   }
   
-  extension [Self <: DataSourceInitializedEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceInitializedEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setDataSource(value: Any): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     

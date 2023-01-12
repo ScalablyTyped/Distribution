@@ -28,7 +28,8 @@ object Navigator {
     __obj.asInstanceOf[Navigator]
   }
   
-  extension [Self <: Navigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
     
     inline def setCreateHref(value: /* to */ To => String): Self = StObject.set(x, "createHref", js.Any.fromFunction1(value))
     

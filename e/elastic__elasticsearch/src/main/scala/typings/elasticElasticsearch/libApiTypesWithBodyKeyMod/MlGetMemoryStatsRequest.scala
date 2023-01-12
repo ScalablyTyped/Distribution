@@ -21,7 +21,8 @@ object MlGetMemoryStatsRequest {
     __obj.asInstanceOf[MlGetMemoryStatsRequest]
   }
   
-  extension [Self <: MlGetMemoryStatsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlGetMemoryStatsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaster_timeout(value: Duration): Self = StObject.set(x, "master_timeout", value.asInstanceOf[js.Any])
     

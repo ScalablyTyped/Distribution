@@ -29,7 +29,8 @@ object PartialFontSpec {
     __obj.asInstanceOf[PartialFontSpec]
   }
   
-  extension [Self <: PartialFontSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialFontSpec] (val x: Self) extends AnyVal {
     
     inline def setFamily(value: String): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
     

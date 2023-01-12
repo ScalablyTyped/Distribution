@@ -23,7 +23,8 @@ object CancelQuantumTaskRequest {
     __obj.asInstanceOf[CancelQuantumTaskRequest]
   }
   
-  extension [Self <: CancelQuantumTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelQuantumTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String64): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

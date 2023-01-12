@@ -449,7 +449,8 @@ object ClosestFacilityParametersProperties {
     __obj.asInstanceOf[ClosestFacilityParametersProperties]
   }
   
-  extension [Self <: ClosestFacilityParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClosestFacilityParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setAccumulateAttributes(
       value: js.Array[

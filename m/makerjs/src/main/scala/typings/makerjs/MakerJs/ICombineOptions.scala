@@ -45,7 +45,8 @@ object ICombineOptions {
     __obj.asInstanceOf[ICombineOptions]
   }
   
-  extension [Self <: ICombineOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICombineOptions] (val x: Self) extends AnyVal {
     
     inline def setFarPoint(value: IPoint): Self = StObject.set(x, "farPoint", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object DescribeThingRegistrationTaskRequest {
     __obj.asInstanceOf[DescribeThingRegistrationTaskRequest]
   }
   
-  extension [Self <: DescribeThingRegistrationTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeThingRegistrationTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: TaskId): Self = StObject.set(x, "taskId", value.asInstanceOf[js.Any])
   }

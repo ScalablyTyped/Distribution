@@ -68,7 +68,8 @@ object desktopConfig {
     __obj.asInstanceOf[desktopConfig]
   }
   
-  extension [Self <: desktopConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: desktopConfig] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Boolean | obj): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

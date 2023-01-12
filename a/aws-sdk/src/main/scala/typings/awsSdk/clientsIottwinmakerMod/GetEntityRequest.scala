@@ -23,7 +23,8 @@ object GetEntityRequest {
     __obj.asInstanceOf[GetEntityRequest]
   }
   
-  extension [Self <: GetEntityRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEntityRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: EntityId): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     

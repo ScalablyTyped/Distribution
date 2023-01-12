@@ -29,7 +29,8 @@ object NavigatorScrollEvent {
     __obj.asInstanceOf[NavigatorScrollEvent]
   }
   
-  extension [Self <: NavigatorScrollEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorScrollEvent] (val x: Self) extends AnyVal {
     
     inline def setPreventDefault(value: Boolean): Self = StObject.set(x, "preventDefault", value.asInstanceOf[js.Any])
     

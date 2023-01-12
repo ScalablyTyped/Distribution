@@ -46,7 +46,8 @@ object XAccessControlContext {
     __obj.asInstanceOf[XAccessControlContext]
   }
   
-  extension [Self <: XAccessControlContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessControlContext] (val x: Self) extends AnyVal {
     
     inline def setCheckPermission(value: Any => Unit): Self = StObject.set(x, "checkPermission", js.Any.fromFunction1(value))
   }

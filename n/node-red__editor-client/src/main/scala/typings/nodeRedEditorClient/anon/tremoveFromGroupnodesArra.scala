@@ -26,7 +26,8 @@ object tremoveFromGroupnodesArra {
     __obj.asInstanceOf[tremoveFromGroupnodesArra]
   }
   
-  extension [Self <: tremoveFromGroupnodesArra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: tremoveFromGroupnodesArra] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: /* ev */ HistoryEvent => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

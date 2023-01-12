@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[DevServerConfig]
     }
     
-    extension [Self <: DevServerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DevServerConfig] (val x: Self) extends AnyVal {
       
       inline def setDevServerConfig(value: Configuration): Self = StObject.set(x, "devServerConfig", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[Logging]
     }
     
-    extension [Self <: Logging](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Logging] (val x: Self) extends AnyVal {
       
       inline def setLogging(value: (/* stats */ Stats, /* config */ typings.webpack.mod.Configuration) => Unit): Self = StObject.set(x, "logging", js.Any.fromFunction2(value))
       
@@ -156,7 +158,8 @@ object anon {
       __obj.asInstanceOf[TypeofWebpackDevServer]
     }
     
-    extension [Self <: TypeofWebpackDevServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofWebpackDevServer] (val x: Self) extends AnyVal {
       
       inline def setDEFAULT_STATS(value: Instantiable0[DEFAULT_STATS]): Self = StObject.set(x, "DEFAULT_STATS", value.asInstanceOf[js.Any])
       

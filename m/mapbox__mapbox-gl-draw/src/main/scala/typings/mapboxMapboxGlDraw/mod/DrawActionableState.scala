@@ -19,7 +19,8 @@ object DrawActionableState {
     __obj.asInstanceOf[DrawActionableState]
   }
   
-  extension [Self <: DrawActionableState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrawActionableState] (val x: Self) extends AnyVal {
     
     inline def setCombineFeatures(value: Boolean): Self = StObject.set(x, "combineFeatures", value.asInstanceOf[js.Any])
     

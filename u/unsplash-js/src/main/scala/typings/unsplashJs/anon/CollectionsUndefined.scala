@@ -15,7 +15,8 @@ object CollectionsUndefined {
     __obj.asInstanceOf[CollectionsUndefined]
   }
   
-  extension [Self <: CollectionsUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CollectionsUndefined] (val x: Self) extends AnyVal {
     
     inline def setCollections(value: Unit): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
   }

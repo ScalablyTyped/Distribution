@@ -29,7 +29,8 @@ object DoctypeToken {
     __obj.asInstanceOf[DoctypeToken]
   }
   
-  extension [Self <: DoctypeToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoctypeToken] (val x: Self) extends AnyVal {
     
     inline def setForceQuirks(value: Boolean): Self = StObject.set(x, "forceQuirks", value.asInstanceOf[js.Any])
     

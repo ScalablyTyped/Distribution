@@ -26,7 +26,8 @@ object libCoreMessagesOutgoingResponseMod {
       __obj.asInstanceOf[OutgoingResponse]
     }
     
-    extension [Self <: OutgoingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutgoingResponse] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -62,7 +63,8 @@ object libCoreMessagesOutgoingResponseMod {
       __obj.asInstanceOf[ResponseOptions]
     }
     
-    extension [Self <: ResponseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseOptions] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Body): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

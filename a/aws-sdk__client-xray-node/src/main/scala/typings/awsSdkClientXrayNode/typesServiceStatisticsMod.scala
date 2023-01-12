@@ -44,7 +44,8 @@ object typesServiceStatisticsMod {
       __obj.asInstanceOf[ServiceStatistics]
     }
     
-    extension [Self <: ServiceStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceStatistics] (val x: Self) extends AnyVal {
       
       inline def setErrorStatistics(value: ErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object typesServiceStatisticsMod {
       __obj.asInstanceOf[UnmarshalledServiceStatistics]
     }
     
-    extension [Self <: UnmarshalledServiceStatistics](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledServiceStatistics] (val x: Self) extends AnyVal {
       
       inline def setErrorStatistics(value: UnmarshalledErrorStatistics): Self = StObject.set(x, "ErrorStatistics", value.asInstanceOf[js.Any])
       

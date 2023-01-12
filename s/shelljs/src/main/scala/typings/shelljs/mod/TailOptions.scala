@@ -17,7 +17,8 @@ object TailOptions {
     __obj.asInstanceOf[TailOptions]
   }
   
-  extension [Self <: TailOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TailOptions] (val x: Self) extends AnyVal {
     
     inline def `set-n`(value: Double): Self = StObject.set(x, "-n", value.asInstanceOf[js.Any])
   }

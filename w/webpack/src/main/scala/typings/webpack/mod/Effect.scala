@@ -18,7 +18,8 @@ object Effect {
     __obj.asInstanceOf[Effect]
   }
   
-  extension [Self <: Effect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effect] (val x: Self) extends AnyVal {
     
     inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

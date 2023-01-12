@@ -30,7 +30,8 @@ object NodesCpu {
     __obj.asInstanceOf[NodesCpu]
   }
   
-  extension [Self <: NodesCpu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesCpu] (val x: Self) extends AnyVal {
     
     inline def setLoad_average(value: Record[String, double]): Self = StObject.set(x, "load_average", value.asInstanceOf[js.Any])
     

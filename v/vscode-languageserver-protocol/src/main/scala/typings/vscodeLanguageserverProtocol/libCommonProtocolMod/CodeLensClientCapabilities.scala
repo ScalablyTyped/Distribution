@@ -18,7 +18,8 @@ object CodeLensClientCapabilities {
     __obj.asInstanceOf[CodeLensClientCapabilities]
   }
   
-  extension [Self <: CodeLensClientCapabilities](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CodeLensClientCapabilities] (val x: Self) extends AnyVal {
     
     inline def setDynamicRegistration(value: Boolean): Self = StObject.set(x, "dynamicRegistration", value.asInstanceOf[js.Any])
     

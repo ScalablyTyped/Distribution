@@ -565,7 +565,8 @@ object typesLinkedlistMod {
         __obj.asInstanceOf[INode[T]]
       }
       
-      extension [Self <: INode[?], T](x: Self & INode[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: INode[?], T] (val x: Self & INode[T]) extends AnyVal {
         
         inline def setList(value: LinkedList[T]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
         

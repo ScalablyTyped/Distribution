@@ -16,7 +16,8 @@ object Bufferable {
     __obj.asInstanceOf[Bufferable]
   }
   
-  extension [Self <: Bufferable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bufferable] (val x: Self) extends AnyVal {
     
     inline def setBuffered(value: TimeRanges): Self = StObject.set(x, "buffered", value.asInstanceOf[js.Any])
   }

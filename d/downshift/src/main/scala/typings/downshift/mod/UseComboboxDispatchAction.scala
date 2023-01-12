@@ -31,7 +31,8 @@ object UseComboboxDispatchAction {
     __obj.asInstanceOf[UseComboboxDispatchAction[Item]]
   }
   
-  extension [Self <: UseComboboxDispatchAction[?], Item](x: Self & UseComboboxDispatchAction[Item]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseComboboxDispatchAction[?], Item] (val x: Self & UseComboboxDispatchAction[Item]) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

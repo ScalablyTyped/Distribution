@@ -27,7 +27,8 @@ object statusOptionsMod {
       __obj.asInstanceOf[StatusOptions]
     }
     
-    extension [Self <: StatusOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatusOptions] (val x: Self) extends AnyVal {
       
       inline def setFlags(value: Double): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
       

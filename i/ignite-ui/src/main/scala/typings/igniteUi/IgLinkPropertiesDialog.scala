@@ -53,7 +53,8 @@ object IgLinkPropertiesDialog {
     __obj.asInstanceOf[IgLinkPropertiesDialog]
   }
   
-  extension [Self <: IgLinkPropertiesDialog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgLinkPropertiesDialog] (val x: Self) extends AnyVal {
     
     inline def setApply(value: (/* event */ Event, /* ui */ ApplyEventUIParam) => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction2(value))
     

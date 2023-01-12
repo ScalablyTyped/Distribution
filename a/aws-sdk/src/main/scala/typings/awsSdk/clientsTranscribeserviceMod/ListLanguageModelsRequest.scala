@@ -33,7 +33,8 @@ object ListLanguageModelsRequest {
     __obj.asInstanceOf[ListLanguageModelsRequest]
   }
   
-  extension [Self <: ListLanguageModelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLanguageModelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

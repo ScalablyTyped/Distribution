@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[AxiosCancelOptions]
     }
     
-    extension [Self <: AxiosCancelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosCancelOptions] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])
     }
@@ -49,7 +50,8 @@ object mod {
         __obj.asInstanceOf[AxiosRequestConfig]
       }
       
-      extension [Self <: AxiosRequestConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AxiosRequestConfig] (val x: Self) extends AnyVal {
         
         inline def setRequestId(value: String): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
         
@@ -70,7 +72,8 @@ object mod {
         __obj.asInstanceOf[typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic]
       }
       
-      extension [Self <: typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.axiosCancel.mod.axiosAugmentingMod.AxiosStatic] (val x: Self) extends AnyVal {
         
         inline def setCancel(value: String => Unit): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
         

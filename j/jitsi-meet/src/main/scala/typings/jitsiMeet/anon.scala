@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -39,7 +40,8 @@ object anon {
       __obj.asInstanceOf[IdString]
     }
     
-    extension [Self <: IdString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdString] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -58,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Local]
     }
     
-    extension [Self <: Local](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Local] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -79,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -158,7 +162,8 @@ object anon {
       __obj.asInstanceOf[RecordExternalAPICommands]
     }
     
-    extension [Self <: RecordExternalAPICommands](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordExternalAPICommands] (val x: Self) extends AnyVal {
       
       inline def setAvatarUrl(value: js.Array[Any]): Self = StObject.set(x, "avatarUrl", value.asInstanceOf[js.Any])
       
@@ -253,7 +258,8 @@ object anon {
       __obj.asInstanceOf[SourceType]
     }
     
-    extension [Self <: SourceType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SourceType] (val x: Self) extends AnyVal {
       
       inline def setSourceType(value: ScreenSharingSourceTypes): Self = StObject.set(x, "sourceType", value.asInstanceOf[js.Any])
       

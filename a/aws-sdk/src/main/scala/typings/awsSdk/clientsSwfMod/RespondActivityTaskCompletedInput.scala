@@ -23,7 +23,8 @@ object RespondActivityTaskCompletedInput {
     __obj.asInstanceOf[RespondActivityTaskCompletedInput]
   }
   
-  extension [Self <: RespondActivityTaskCompletedInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RespondActivityTaskCompletedInput] (val x: Self) extends AnyVal {
     
     inline def setResult(value: Data): Self = StObject.set(x, "result", value.asInstanceOf[js.Any])
     

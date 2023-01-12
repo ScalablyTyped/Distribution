@@ -195,7 +195,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[UploadProgressEvent]
     }
     
-    extension [Self <: UploadProgressEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadProgressEvent] (val x: Self) extends AnyVal {
       
       inline def setAT_TARGET(value: Double): Self = StObject.set(x, "AT_TARGET", value.asInstanceOf[js.Any])
       
@@ -780,7 +781,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[UploadProps]
     }
     
-    extension [Self <: UploadProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1703,7 +1705,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[UploadRequestError]
     }
     
-    extension [Self <: UploadRequestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadRequestError] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: UploadRequestMethod): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -1784,7 +1787,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[UploadRequestOption[T]]
     }
     
-    extension [Self <: UploadRequestOption[?], T](x: Self & UploadRequestOption[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadRequestOption[?], T] (val x: Self & UploadRequestOption[T]) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       

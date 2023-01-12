@@ -24,7 +24,8 @@ object JQueryFileUploadChangeObject {
     __obj.asInstanceOf[JQueryFileUploadChangeObject]
   }
   
-  extension [Self <: JQueryFileUploadChangeObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFileUploadChangeObject] (val x: Self) extends AnyVal {
     
     inline def setFileInput(value: JQuery): Self = StObject.set(x, "fileInput", value.asInstanceOf[js.Any])
     

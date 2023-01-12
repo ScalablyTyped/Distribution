@@ -17,7 +17,8 @@ object ClassifyInput {
     __obj.asInstanceOf[ClassifyInput]
   }
   
-  extension [Self <: ClassifyInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClassifyInput] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

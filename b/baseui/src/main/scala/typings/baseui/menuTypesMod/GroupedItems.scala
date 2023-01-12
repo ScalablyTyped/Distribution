@@ -18,7 +18,8 @@ object GroupedItems {
     __obj.asInstanceOf[GroupedItems]
   }
   
-  extension [Self <: GroupedItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupedItems] (val x: Self) extends AnyVal {
     
     inline def set__ungrouped(value: ArrayItems): Self = StObject.set(x, "__ungrouped", value.asInstanceOf[js.Any])
     

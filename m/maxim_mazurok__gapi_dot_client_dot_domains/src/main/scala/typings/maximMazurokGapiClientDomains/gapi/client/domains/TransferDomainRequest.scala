@@ -32,7 +32,8 @@ object TransferDomainRequest {
     __obj.asInstanceOf[TransferDomainRequest]
   }
   
-  extension [Self <: TransferDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransferDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationCode(value: AuthorizationCode): Self = StObject.set(x, "authorizationCode", value.asInstanceOf[js.Any])
     

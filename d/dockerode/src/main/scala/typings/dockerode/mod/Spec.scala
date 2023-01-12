@@ -27,7 +27,8 @@ object Spec {
     __obj.asInstanceOf[Spec]
   }
   
-  extension [Self <: Spec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Spec] (val x: Self) extends AnyVal {
     
     inline def setCAConfig(value: CAConfig): Self = StObject.set(x, "CAConfig", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object XIdentifierReplace {
     __obj.asInstanceOf[XIdentifierReplace]
   }
   
-  extension [Self <: XIdentifierReplace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XIdentifierReplace] (val x: Self) extends AnyVal {
     
     inline def setReplaceByIdentifer(value: (Double, Any) => Unit): Self = StObject.set(x, "replaceByIdentifer", js.Any.fromFunction2(value))
   }

@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[Blob]
     }
     
-    extension [Self <: Blob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blob] (val x: Self) extends AnyVal {
       
       inline def setByte_size(value: Double): Self = StObject.set(x, "byte_size", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object mod {
       __obj.asInstanceOf[DirectUploadDelegate]
     }
     
-    extension [Self <: DirectUploadDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectUploadDelegate] (val x: Self) extends AnyVal {
       
       inline def setDirectUploadWillCreateBlobWithXHR(value: /* xhr */ XMLHttpRequest => Unit): Self = StObject.set(x, "directUploadWillCreateBlobWithXHR", js.Any.fromFunction1(value))
       

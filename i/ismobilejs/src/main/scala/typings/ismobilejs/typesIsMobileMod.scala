@@ -33,7 +33,8 @@ object typesIsMobileMod {
       __obj.asInstanceOf[Navigator]
     }
     
-    extension [Self <: Navigator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Navigator] (val x: Self) extends AnyVal {
       
       inline def setMaxTouchPoints(value: Double): Self = StObject.set(x, "maxTouchPoints", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object typesIsMobileMod {
       __obj.asInstanceOf[isMobileResult]
     }
     
-    extension [Self <: isMobileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: isMobileResult] (val x: Self) extends AnyVal {
       
       inline def setAmazon(value: Phone): Self = StObject.set(x, "amazon", value.asInstanceOf[js.Any])
       

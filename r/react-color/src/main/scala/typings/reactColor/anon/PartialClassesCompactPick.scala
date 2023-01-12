@@ -16,7 +16,8 @@ object PartialClassesCompactPick {
     __obj.asInstanceOf[PartialClassesCompactPick]
   }
   
-  extension [Self <: PartialClassesCompactPick](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassesCompactPick] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: PartialCompactPickerStyle): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

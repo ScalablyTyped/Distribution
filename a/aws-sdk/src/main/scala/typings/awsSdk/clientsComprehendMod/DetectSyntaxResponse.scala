@@ -18,7 +18,8 @@ object DetectSyntaxResponse {
     __obj.asInstanceOf[DetectSyntaxResponse]
   }
   
-  extension [Self <: DetectSyntaxResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectSyntaxResponse] (val x: Self) extends AnyVal {
     
     inline def setSyntaxTokens(value: ListOfSyntaxTokens): Self = StObject.set(x, "SyntaxTokens", value.asInstanceOf[js.Any])
     

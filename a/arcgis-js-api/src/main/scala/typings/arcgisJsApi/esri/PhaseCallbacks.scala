@@ -34,7 +34,8 @@ object PhaseCallbacks {
     __obj.asInstanceOf[PhaseCallbacks]
   }
   
-  extension [Self <: PhaseCallbacks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhaseCallbacks] (val x: Self) extends AnyVal {
     
     inline def setPrepare(value: /* event */ js.UndefOr[PhaseEvent] => scala.Unit): Self = StObject.set(x, "prepare", js.Any.fromFunction1(value))
     

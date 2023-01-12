@@ -18,7 +18,8 @@ object PendingOperations {
     __obj.asInstanceOf[PendingOperations]
   }
   
-  extension [Self <: PendingOperations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PendingOperations] (val x: Self) extends AnyVal {
     
     inline def setPendingOperations(value: js.Array[RequestDescriptor]): Self = StObject.set(x, "pendingOperations", value.asInstanceOf[js.Any])
     

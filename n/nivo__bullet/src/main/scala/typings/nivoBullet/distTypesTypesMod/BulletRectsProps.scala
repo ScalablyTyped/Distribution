@@ -68,7 +68,8 @@ object BulletRectsProps {
     __obj.asInstanceOf[BulletRectsProps]
   }
   
-  extension [Self <: BulletRectsProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletRectsProps] (val x: Self) extends AnyVal {
     
     inline def setAnimatedProps(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SpringValues<{  measuresY :number,   transform :string}> */ Any

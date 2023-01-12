@@ -151,7 +151,8 @@ object readonlyfieldsArraystring {
     __obj.asInstanceOf[readonlyfieldsArraystring]
   }
   
-  extension [Self <: readonlyfieldsArraystring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: readonlyfieldsArraystring] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: AnimateOption | `false`): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

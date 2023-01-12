@@ -65,7 +65,8 @@ object FaxInboundRoutingExtension {
     __obj.asInstanceOf[FaxInboundRoutingExtension]
   }
   
-  extension [Self <: FaxInboundRoutingExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxInboundRoutingExtension] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: Boolean): Self = StObject.set(x, "Debug", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AwsElbLoadBalancerHealthCheck {
     __obj.asInstanceOf[AwsElbLoadBalancerHealthCheck]
   }
   
-  extension [Self <: AwsElbLoadBalancerHealthCheck](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsElbLoadBalancerHealthCheck] (val x: Self) extends AnyVal {
     
     inline def setHealthyThreshold(value: Integer): Self = StObject.set(x, "HealthyThreshold", value.asInstanceOf[js.Any])
     

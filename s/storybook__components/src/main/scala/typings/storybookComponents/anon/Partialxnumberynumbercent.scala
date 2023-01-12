@@ -20,7 +20,8 @@ object Partialxnumberynumbercent {
     __obj.asInstanceOf[Partialxnumberynumbercent]
   }
   
-  extension [Self <: Partialxnumberynumbercent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Partialxnumberynumbercent] (val x: Self) extends AnyVal {
     
     inline def setCenterOffset(value: Double): Self = StObject.set(x, "centerOffset", value.asInstanceOf[js.Any])
     

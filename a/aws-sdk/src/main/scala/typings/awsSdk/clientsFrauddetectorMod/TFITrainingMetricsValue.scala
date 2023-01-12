@@ -23,7 +23,8 @@ object TFITrainingMetricsValue {
     __obj.asInstanceOf[TFITrainingMetricsValue]
   }
   
-  extension [Self <: TFITrainingMetricsValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TFITrainingMetricsValue] (val x: Self) extends AnyVal {
     
     inline def setMetricDataPoints(value: TFIMetricDataPointsList): Self = StObject.set(x, "metricDataPoints", value.asInstanceOf[js.Any])
     

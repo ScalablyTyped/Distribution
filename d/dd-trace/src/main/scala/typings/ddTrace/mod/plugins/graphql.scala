@@ -93,7 +93,8 @@ object graphql {
     __obj.asInstanceOf[graphql]
   }
   
-  extension [Self <: graphql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: graphql] (val x: Self) extends AnyVal {
     
     inline def setCollapse(value: Boolean): Self = StObject.set(x, "collapse", value.asInstanceOf[js.Any])
     

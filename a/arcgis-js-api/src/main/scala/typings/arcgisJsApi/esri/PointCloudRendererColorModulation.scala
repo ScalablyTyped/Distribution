@@ -36,7 +36,8 @@ object PointCloudRendererColorModulation {
     __obj.asInstanceOf[PointCloudRendererColorModulation]
   }
   
-  extension [Self <: PointCloudRendererColorModulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PointCloudRendererColorModulation] (val x: Self) extends AnyVal {
     
     inline def setField(value: String): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object PlusWebviewWebviewPosition {
     __obj.asInstanceOf[PlusWebviewWebviewPosition]
   }
   
-  extension [Self <: PlusWebviewWebviewPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewPosition] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: String): Self = StObject.set(x, "absolute", value.asInstanceOf[js.Any])
     

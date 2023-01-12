@@ -19,7 +19,8 @@ object Activehooks {
     __obj.asInstanceOf[Activehooks]
   }
   
-  extension [Self <: Activehooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Activehooks] (val x: Self) extends AnyVal {
     
     inline def setActive_hooks(value: Double): Self = StObject.set(x, "active_hooks", value.asInstanceOf[js.Any])
     

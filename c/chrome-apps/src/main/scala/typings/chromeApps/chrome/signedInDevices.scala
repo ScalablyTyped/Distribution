@@ -54,7 +54,8 @@ object signedInDevices {
       __obj.asInstanceOf[DeviceInfo]
     }
     
-    extension [Self <: DeviceInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeviceInfo] (val x: Self) extends AnyVal {
       
       inline def setChromeVersion(value: String): Self = StObject.set(x, "chromeVersion", value.asInstanceOf[js.Any])
       

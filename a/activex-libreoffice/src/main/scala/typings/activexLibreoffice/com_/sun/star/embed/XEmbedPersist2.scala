@@ -36,7 +36,8 @@ object XEmbedPersist2 {
     __obj.asInstanceOf[XEmbedPersist2]
   }
   
-  extension [Self <: XEmbedPersist2](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbedPersist2] (val x: Self) extends AnyVal {
     
     inline def setIsStored(value: () => Boolean): Self = StObject.set(x, "isStored", js.Any.fromFunction0(value))
   }

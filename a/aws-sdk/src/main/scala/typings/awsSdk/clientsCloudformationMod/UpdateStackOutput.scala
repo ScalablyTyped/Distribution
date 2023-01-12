@@ -18,7 +18,8 @@ object UpdateStackOutput {
     __obj.asInstanceOf[UpdateStackOutput]
   }
   
-  extension [Self <: UpdateStackOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateStackOutput] (val x: Self) extends AnyVal {
     
     inline def setStackId(value: StackId): Self = StObject.set(x, "StackId", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object AccessPolicy {
     __obj.asInstanceOf[AccessPolicy]
   }
   
-  extension [Self <: AccessPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessPolicy] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

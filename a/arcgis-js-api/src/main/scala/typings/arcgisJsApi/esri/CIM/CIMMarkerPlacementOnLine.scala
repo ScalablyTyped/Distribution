@@ -32,7 +32,8 @@ object CIMMarkerPlacementOnLine {
     __obj.asInstanceOf[CIMMarkerPlacementOnLine]
   }
   
-  extension [Self <: CIMMarkerPlacementOnLine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CIMMarkerPlacementOnLine] (val x: Self) extends AnyVal {
     
     inline def setRelativeTo(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PlacementOnLineRelativeTo * / any */ String

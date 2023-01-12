@@ -79,7 +79,8 @@ object libCommonTypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchyMiddleware]
     }
     
-    extension [Self <: TypeHierarchyMiddleware](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchyMiddleware] (val x: Self) extends AnyVal {
       
       inline def setPrepareTypeHierarchy(
         value: js.ThisFunction4[
@@ -141,7 +142,8 @@ object libCommonTypeHierarchyMod {
       __obj.asInstanceOf[TypeHierarchyProvider]
     }
     
-    extension [Self <: TypeHierarchyProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeHierarchyProvider] (val x: Self) extends AnyVal {
       
       inline def setClient(value: Any): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

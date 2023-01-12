@@ -26,7 +26,8 @@ object SketchMSRect {
     __obj.asInstanceOf[SketchMSRect]
   }
   
-  extension [Self <: SketchMSRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSRect] (val x: Self) extends AnyVal {
     
     inline def setConstrainProportions(value: Boolean): Self = StObject.set(x, "constrainProportions", value.asInstanceOf[js.Any])
     

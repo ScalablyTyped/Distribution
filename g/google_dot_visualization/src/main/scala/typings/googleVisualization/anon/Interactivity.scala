@@ -29,7 +29,8 @@ object Interactivity {
     __obj.asInstanceOf[Interactivity]
   }
   
-  extension [Self <: Interactivity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Interactivity] (val x: Self) extends AnyVal {
     
     inline def setColorMode(value: unique): Self = StObject.set(x, "colorMode", value.asInstanceOf[js.Any])
     

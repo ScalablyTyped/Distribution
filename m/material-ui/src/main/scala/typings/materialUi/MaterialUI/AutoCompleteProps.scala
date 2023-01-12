@@ -64,7 +64,8 @@ object AutoCompleteProps {
     __obj.asInstanceOf[AutoCompleteProps[DataItem]]
   }
   
-  extension [Self <: AutoCompleteProps[?], DataItem](x: Self & AutoCompleteProps[DataItem]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoCompleteProps[?], DataItem] (val x: Self & AutoCompleteProps[DataItem]) extends AnyVal {
     
     inline def setAnchorOrigin(value: origin): Self = StObject.set(x, "anchorOrigin", value.asInstanceOf[js.Any])
     

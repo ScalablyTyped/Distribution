@@ -18,7 +18,8 @@ object LaunchTemplateHibernationOptions {
     __obj.asInstanceOf[LaunchTemplateHibernationOptions]
   }
   
-  extension [Self <: LaunchTemplateHibernationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateHibernationOptions] (val x: Self) extends AnyVal {
     
     inline def setConfigured(value: Boolean): Self = StObject.set(x, "Configured", value.asInstanceOf[js.Any])
     

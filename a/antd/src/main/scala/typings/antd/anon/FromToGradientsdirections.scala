@@ -23,7 +23,8 @@ object FromToGradientsdirections {
     __obj.asInstanceOf[FromToGradientsdirections]
   }
   
-  extension [Self <: FromToGradientsdirections](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FromToGradientsdirections] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: String): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

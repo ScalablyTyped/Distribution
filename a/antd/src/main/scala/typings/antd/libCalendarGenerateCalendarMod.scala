@@ -104,7 +104,8 @@ object libCalendarGenerateCalendarMod {
       __obj.asInstanceOf[CalendarProps[DateType]]
     }
     
-    extension [Self <: CalendarProps[?], DateType](x: Self & CalendarProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalendarProps[?], DateType] (val x: Self & CalendarProps[DateType]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object libCalendarGenerateCalendarMod {
       __obj.asInstanceOf[PickerPanelBaseProps[DateType]]
     }
     
-    extension [Self <: PickerPanelBaseProps[?], DateType](x: Self & PickerPanelBaseProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelBaseProps[?], DateType] (val x: Self & PickerPanelBaseProps[DateType]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -423,7 +425,8 @@ object libCalendarGenerateCalendarMod {
       __obj.asInstanceOf[PickerPanelDateProps[DateType]]
     }
     
-    extension [Self <: PickerPanelDateProps[?], DateType](x: Self & PickerPanelDateProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelDateProps[?], DateType] (val x: Self & PickerPanelDateProps[DateType]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -635,7 +638,8 @@ object libCalendarGenerateCalendarMod {
       __obj.asInstanceOf[PickerPanelTimeProps[DateType]]
     }
     
-    extension [Self <: PickerPanelTimeProps[?], DateType](x: Self & PickerPanelTimeProps[DateType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickerPanelTimeProps[?], DateType] (val x: Self & PickerPanelTimeProps[DateType]) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

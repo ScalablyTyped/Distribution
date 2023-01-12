@@ -138,7 +138,8 @@ object buildSrcCompileLegendEncodeMod {
       __obj.asInstanceOf[LegendEncodeParams]
     }
     
-    extension [Self <: LegendEncodeParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendEncodeParams] (val x: Self) extends AnyVal {
       
       inline def setChannel(value: NonPositionScaleChannel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
       

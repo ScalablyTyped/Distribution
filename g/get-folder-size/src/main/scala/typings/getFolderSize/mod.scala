@@ -86,7 +86,8 @@ object mod {
         __obj.asInstanceOf[FSLike]
       }
       
-      extension [Self <: FSLike](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FSLike] (val x: Self) extends AnyVal {
         
         inline def setLstat(value: (PathLike, /* repeated */ Any) => js.Promise[FStatsLike]): Self = StObject.set(x, "lstat", js.Any.fromFunction2(value))
         
@@ -109,7 +110,8 @@ object mod {
         __obj.asInstanceOf[FStatsLike]
       }
       
-      extension [Self <: FStatsLike](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FStatsLike] (val x: Self) extends AnyVal {
         
         inline def setIno(value: Double): Self = StObject.set(x, "ino", value.asInstanceOf[js.Any])
         
@@ -132,7 +134,8 @@ object mod {
         __obj.asInstanceOf[FolderSizeInfo]
       }
       
-      extension [Self <: FolderSizeInfo](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FolderSizeInfo] (val x: Self) extends AnyVal {
         
         inline def setErrors(value: js.Array[js.Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
         
@@ -157,7 +160,8 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setFs(value: FSLike): Self = StObject.set(x, "fs", value.asInstanceOf[js.Any])
         

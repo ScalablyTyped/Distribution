@@ -207,7 +207,8 @@ object JQueryCycle2 {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAllowWrap(value: Boolean): Self = StObject.set(x, "allowWrap", value.asInstanceOf[js.Any])
       
@@ -410,7 +411,8 @@ object JQueryCycle2 {
       __obj.asInstanceOf[OptionsWithState]
     }
     
-    extension [Self <: OptionsWithState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsWithState] (val x: Self) extends AnyVal {
       
       inline def setBusy(value: Boolean): Self = StObject.set(x, "busy", value.asInstanceOf[js.Any])
       
@@ -437,7 +439,8 @@ object JQueryCycle2 {
       __obj.asInstanceOf[Transition]
     }
     
-    extension [Self <: Transition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Transition] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: (Options, Element, Element, Boolean) => Unit): Self = StObject.set(x, "before", js.Any.fromFunction4(value))
     }

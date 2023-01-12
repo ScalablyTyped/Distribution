@@ -65,7 +65,8 @@ object FilterResponseCookie {
     __obj.asInstanceOf[FilterResponseCookie]
   }
   
-  extension [Self <: FilterResponseCookie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterResponseCookie] (val x: Self) extends AnyVal {
     
     inline def setAgeLowerBound(value: integer): Self = StObject.set(x, "ageLowerBound", value.asInstanceOf[js.Any])
     

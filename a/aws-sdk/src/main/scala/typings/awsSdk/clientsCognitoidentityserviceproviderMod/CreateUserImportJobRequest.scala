@@ -28,7 +28,8 @@ object CreateUserImportJobRequest {
     __obj.asInstanceOf[CreateUserImportJobRequest]
   }
   
-  extension [Self <: CreateUserImportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateUserImportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogsRoleArn(value: ArnType): Self = StObject.set(x, "CloudWatchLogsRoleArn", value.asInstanceOf[js.Any])
     

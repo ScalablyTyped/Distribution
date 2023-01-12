@@ -18,7 +18,8 @@ object SuppressionListDestination {
     __obj.asInstanceOf[SuppressionListDestination]
   }
   
-  extension [Self <: SuppressionListDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuppressionListDestination] (val x: Self) extends AnyVal {
     
     inline def setSuppressionListImportAction(value: SuppressionListImportAction): Self = StObject.set(x, "SuppressionListImportAction", value.asInstanceOf[js.Any])
   }

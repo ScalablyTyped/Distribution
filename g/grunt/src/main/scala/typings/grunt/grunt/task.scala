@@ -266,7 +266,8 @@ object task {
       __obj.asInstanceOf[ITaskOptions]
     }
     
-    extension [Self <: ITaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITaskOptions] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: Any): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       

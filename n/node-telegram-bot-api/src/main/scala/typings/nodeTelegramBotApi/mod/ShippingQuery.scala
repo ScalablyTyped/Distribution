@@ -21,7 +21,8 @@ object ShippingQuery {
     __obj.asInstanceOf[ShippingQuery]
   }
   
-  extension [Self <: ShippingQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShippingQuery] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: User): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object esmAngularTemplateMod {
       __obj.asInstanceOf[IModel]
     }
     
-    extension [Self <: IModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModel] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElementgetindexnumberATTRIBUTENODE): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

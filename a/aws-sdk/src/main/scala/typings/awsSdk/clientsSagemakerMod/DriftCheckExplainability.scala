@@ -23,7 +23,8 @@ object DriftCheckExplainability {
     __obj.asInstanceOf[DriftCheckExplainability]
   }
   
-  extension [Self <: DriftCheckExplainability](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriftCheckExplainability] (val x: Self) extends AnyVal {
     
     inline def setConfigFile(value: FileSource): Self = StObject.set(x, "ConfigFile", value.asInstanceOf[js.Any])
     

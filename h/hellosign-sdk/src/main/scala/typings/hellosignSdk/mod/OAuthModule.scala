@@ -20,7 +20,8 @@ object OAuthModule {
     __obj.asInstanceOf[OAuthModule]
   }
   
-  extension [Self <: OAuthModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuthModule] (val x: Self) extends AnyVal {
     
     inline def setGetToken(value: OAuthRequestOptions => js.Promise[OAuthResponse]): Self = StObject.set(x, "getToken", js.Any.fromFunction1(value))
     

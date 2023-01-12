@@ -28,7 +28,8 @@ object DetectedProviderIds {
     __obj.asInstanceOf[DetectedProviderIds]
   }
   
-  extension [Self <: DetectedProviderIds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetectedProviderIds] (val x: Self) extends AnyVal {
     
     inline def setDetectedProviderIds(value: js.Array[String]): Self = StObject.set(x, "detectedProviderIds", value.asInstanceOf[js.Any])
     

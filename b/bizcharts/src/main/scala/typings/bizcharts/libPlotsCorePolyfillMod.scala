@@ -40,7 +40,8 @@ object libPlotsCorePolyfillMod {
       __obj.asInstanceOf[ReplaceApi_]
     }
     
-    extension [Self <: ReplaceApi_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplaceApi_] (val x: Self) extends AnyVal {
       
       inline def setNotice(value: String): Self = StObject.set(x, "notice", value.asInstanceOf[js.Any])
       

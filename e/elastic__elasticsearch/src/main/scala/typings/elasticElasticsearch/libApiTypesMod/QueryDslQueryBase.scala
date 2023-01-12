@@ -17,7 +17,8 @@ object QueryDslQueryBase {
     __obj.asInstanceOf[QueryDslQueryBase]
   }
   
-  extension [Self <: QueryDslQueryBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslQueryBase] (val x: Self) extends AnyVal {
     
     inline def setBoost(value: float): Self = StObject.set(x, "boost", value.asInstanceOf[js.Any])
     

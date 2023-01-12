@@ -27,7 +27,8 @@ object ModalKnockoutBindingHandler {
     __obj.asInstanceOf[ModalKnockoutBindingHandler]
   }
   
-  extension [Self <: ModalKnockoutBindingHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModalKnockoutBindingHandler] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: KnockstrapModalDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

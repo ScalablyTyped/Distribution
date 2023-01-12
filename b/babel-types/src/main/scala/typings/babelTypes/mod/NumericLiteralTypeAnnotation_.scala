@@ -22,7 +22,8 @@ object NumericLiteralTypeAnnotation_ {
     __obj.asInstanceOf[NumericLiteralTypeAnnotation_]
   }
   
-  extension [Self <: NumericLiteralTypeAnnotation_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumericLiteralTypeAnnotation_] (val x: Self) extends AnyVal {
     
     inline def setType(value: NumericLiteralTypeAnnotation): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

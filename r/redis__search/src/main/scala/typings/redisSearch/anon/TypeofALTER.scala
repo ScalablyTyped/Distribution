@@ -19,7 +19,8 @@ object TypeofALTER {
     __obj.asInstanceOf[TypeofALTER]
   }
   
-  extension [Self <: TypeofALTER](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofALTER] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (String, RediSearchSchema) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

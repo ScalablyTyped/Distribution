@@ -83,7 +83,8 @@ object libGridAggregateBarMod {
       __obj.asInstanceOf[AggregateBar]
     }
     
-    extension [Self <: AggregateBar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AggregateBar] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: Any => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

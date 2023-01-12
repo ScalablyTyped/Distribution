@@ -156,7 +156,8 @@ object LineDescriptor {
     __obj.asInstanceOf[LineDescriptor]
   }
   
-  extension [Self <: LineDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineDescriptor] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: String): Self = StObject.set(x, "Category", value.asInstanceOf[js.Any])
     

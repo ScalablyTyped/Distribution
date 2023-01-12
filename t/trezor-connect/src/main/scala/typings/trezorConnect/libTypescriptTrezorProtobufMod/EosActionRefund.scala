@@ -15,7 +15,8 @@ object EosActionRefund {
     __obj.asInstanceOf[EosActionRefund]
   }
   
-  extension [Self <: EosActionRefund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EosActionRefund] (val x: Self) extends AnyVal {
     
     inline def setOwner(value: String): Self = StObject.set(x, "owner", value.asInstanceOf[js.Any])
   }

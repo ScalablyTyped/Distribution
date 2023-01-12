@@ -89,7 +89,8 @@ object ApplicationData {
     __obj.asInstanceOf[ApplicationData]
   }
   
-  extension [Self <: ApplicationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationData] (val x: Self) extends AnyVal {
     
     inline def setCalculationEngineVersion(value: Double): Self = StObject.set(x, "calculationEngineVersion", value.asInstanceOf[js.Any])
     

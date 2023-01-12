@@ -21,7 +21,8 @@ object TurnServerConfig {
     __obj.asInstanceOf[TurnServerConfig]
   }
   
-  extension [Self <: TurnServerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TurnServerConfig] (val x: Self) extends AnyVal {
     
     inline def setCredential(value: String): Self = StObject.set(x, "credential", value.asInstanceOf[js.Any])
     

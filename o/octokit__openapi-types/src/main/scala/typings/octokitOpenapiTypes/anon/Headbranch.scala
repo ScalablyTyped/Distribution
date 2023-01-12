@@ -28,7 +28,8 @@ object Headbranch {
     __obj.asInstanceOf[Headbranch]
   }
   
-  extension [Self <: Headbranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Headbranch] (val x: Self) extends AnyVal {
     
     inline def setHead_branch(value: String): Self = StObject.set(x, "head_branch", value.asInstanceOf[js.Any])
     

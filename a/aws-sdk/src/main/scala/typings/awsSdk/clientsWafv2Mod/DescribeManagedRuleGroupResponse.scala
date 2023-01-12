@@ -48,7 +48,8 @@ object DescribeManagedRuleGroupResponse {
     __obj.asInstanceOf[DescribeManagedRuleGroupResponse]
   }
   
-  extension [Self <: DescribeManagedRuleGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeManagedRuleGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailableLabels(value: LabelSummaries): Self = StObject.set(x, "AvailableLabels", value.asInstanceOf[js.Any])
     

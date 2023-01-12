@@ -48,7 +48,8 @@ object AuthProvider {
     __obj.asInstanceOf[AuthProvider]
   }
   
-  extension [Self <: AuthProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthProvider] (val x: Self) extends AnyVal {
     
     inline def setAudiences(value: String): Self = StObject.set(x, "audiences", value.asInstanceOf[js.Any])
     

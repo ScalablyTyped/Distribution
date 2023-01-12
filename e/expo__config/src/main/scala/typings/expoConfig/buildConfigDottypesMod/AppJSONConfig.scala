@@ -21,7 +21,8 @@ object AppJSONConfig {
     __obj.asInstanceOf[AppJSONConfig]
   }
   
-  extension [Self <: AppJSONConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppJSONConfig] (val x: Self) extends AnyVal {
     
     inline def setExpo(value: ExpoConfig): Self = StObject.set(x, "expo", value.asInstanceOf[js.Any])
   }

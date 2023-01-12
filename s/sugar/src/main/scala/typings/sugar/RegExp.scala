@@ -26,7 +26,8 @@ object RegExp {
     __obj.asInstanceOf[RegExp]
   }
   
-  extension [Self <: RegExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
     
     inline def setAddFlags(value: java.lang.String => RegExp): Self = StObject.set(x, "addFlags", js.Any.fromFunction1(value))
     

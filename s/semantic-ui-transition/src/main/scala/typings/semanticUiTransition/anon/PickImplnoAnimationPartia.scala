@@ -21,7 +21,8 @@ object PickImplnoAnimationPartia {
     __obj.asInstanceOf[PickImplnoAnimationPartia]
   }
   
-  extension [Self <: PickImplnoAnimationPartia](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplnoAnimationPartia] (val x: Self) extends AnyVal {
     
     inline def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
     

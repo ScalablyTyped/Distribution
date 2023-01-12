@@ -43,7 +43,8 @@ object libComponentsBlockBlockMod {
       __obj.asInstanceOf[BlockPickerProps]
     }
     
-    extension [Self <: BlockPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockPickerProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[String]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object libComponentsBlockBlockMod {
       __obj.asInstanceOf[BlockPickerStylesProps]
     }
     
-    extension [Self <: BlockPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

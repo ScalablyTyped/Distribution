@@ -28,7 +28,8 @@ object MonitoredResourceInfo {
     __obj.asInstanceOf[MonitoredResourceInfo]
   }
   
-  extension [Self <: MonitoredResourceInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MonitoredResourceInfo] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ResourceArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

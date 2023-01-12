@@ -30,7 +30,8 @@ object DynamitePlaceholderMetadata {
     __obj.asInstanceOf[DynamitePlaceholderMetadata]
   }
   
-  extension [Self <: DynamitePlaceholderMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DynamitePlaceholderMetadata] (val x: Self) extends AnyVal {
     
     inline def setAttachmentMetadata(value: AttachmentMetadata): Self = StObject.set(x, "attachmentMetadata", value.asInstanceOf[js.Any])
     

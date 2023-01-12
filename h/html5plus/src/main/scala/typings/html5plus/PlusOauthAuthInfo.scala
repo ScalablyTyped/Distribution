@@ -61,7 +61,8 @@ object PlusOauthAuthInfo {
     __obj.asInstanceOf[PlusOauthAuthInfo]
   }
   
-  extension [Self <: PlusOauthAuthInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusOauthAuthInfo] (val x: Self) extends AnyVal {
     
     inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
     

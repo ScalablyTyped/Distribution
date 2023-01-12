@@ -25,7 +25,8 @@ object LocateViewModelProperties {
     __obj.asInstanceOf[LocateViewModelProperties]
   }
   
-  extension [Self <: LocateViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocateViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setPopupEnabled(value: Boolean): Self = StObject.set(x, "popupEnabled", value.asInstanceOf[js.Any])
     

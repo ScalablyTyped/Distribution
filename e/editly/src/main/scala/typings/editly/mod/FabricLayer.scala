@@ -34,7 +34,8 @@ object FabricLayer {
     __obj.asInstanceOf[FabricLayer]
   }
   
-  extension [Self <: FabricLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FabricLayer] (val x: Self) extends AnyVal {
     
     inline def setFunc(value: /* args */ CustomFabricFunctionArgs => OptionalPromise[CustomFunctionCallbacks]): Self = StObject.set(x, "func", js.Any.fromFunction1(value))
     

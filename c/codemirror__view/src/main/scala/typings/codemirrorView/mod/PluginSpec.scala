@@ -41,7 +41,8 @@ object PluginSpec {
     __obj.asInstanceOf[PluginSpec[V]]
   }
   
-  extension [Self <: PluginSpec[?], V /* <: PluginValue */](x: Self & PluginSpec[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginSpec[?], V /* <: PluginValue */] (val x: Self & PluginSpec[V]) extends AnyVal {
     
     inline def setDecorations(value: /* value */ V => DecorationSet): Self = StObject.set(x, "decorations", js.Any.fromFunction1(value))
     

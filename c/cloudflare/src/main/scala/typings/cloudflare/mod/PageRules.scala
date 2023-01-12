@@ -30,7 +30,8 @@ object PageRules {
     __obj.asInstanceOf[PageRules]
   }
   
-  extension [Self <: PageRules](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PageRules] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Actions => js.Promise[js.Object]): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

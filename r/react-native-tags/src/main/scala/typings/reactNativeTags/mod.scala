@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[RenderTag]
     }
     
-    extension [Self <: RenderTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderTag] (val x: Self) extends AnyVal {
       
       inline def setDeleteTagOnPress(value: () => Unit): Self = StObject.set(x, "deleteTagOnPress", js.Any.fromFunction0(value))
       
@@ -64,7 +65,8 @@ object mod {
       __obj.asInstanceOf[TagPress]
     }
     
-    extension [Self <: TagPress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagPress] (val x: Self) extends AnyVal {
       
       inline def setDeleted(value: Boolean): Self = StObject.set(x, "deleted", value.asInstanceOf[js.Any])
       
@@ -174,7 +176,8 @@ object mod {
       __obj.asInstanceOf[TagsProps]
     }
     
-    extension [Self <: TagsProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagsProps] (val x: Self) extends AnyVal {
       
       inline def setContainerStyle(value: ViewStyle): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
@@ -259,7 +262,8 @@ object mod {
       __obj.asInstanceOf[TextInputProps]
     }
     
-    extension [Self <: TextInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextInputProps] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
     }

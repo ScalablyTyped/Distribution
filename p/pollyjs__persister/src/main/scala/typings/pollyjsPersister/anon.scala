@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Blocked]
     }
     
-    extension [Self <: Blocked](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Blocked] (val x: Self) extends AnyVal {
       
       inline def setBlocked(value: Double): Self = StObject.set(x, "blocked", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Encoding]
     }
     
-    extension [Self <: Encoding](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Encoding] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -108,7 +110,8 @@ object anon {
       __obj.asInstanceOf[MimeType]
     }
     
-    extension [Self <: MimeType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MimeType] (val x: Self) extends AnyVal {
       
       inline def setMimeType(value: String): Self = StObject.set(x, "mimeType", value.asInstanceOf[js.Any])
       
@@ -135,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

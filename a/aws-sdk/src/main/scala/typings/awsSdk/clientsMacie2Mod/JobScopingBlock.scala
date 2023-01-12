@@ -18,7 +18,8 @@ object JobScopingBlock {
     __obj.asInstanceOf[JobScopingBlock]
   }
   
-  extension [Self <: JobScopingBlock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobScopingBlock] (val x: Self) extends AnyVal {
     
     inline def setAnd(value: listOfJobScopeTerm): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object SourceMapSpan {
     __obj.asInstanceOf[SourceMapSpan]
   }
   
-  extension [Self <: SourceMapSpan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceMapSpan] (val x: Self) extends AnyVal {
     
     inline def setEmittedColumn(value: Double): Self = StObject.set(x, "emittedColumn", value.asInstanceOf[js.Any])
     

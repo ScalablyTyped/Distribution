@@ -62,7 +62,8 @@ object ISkyDrivePickerProperies {
     __obj.asInstanceOf[ISkyDrivePickerProperies]
   }
   
-  extension [Self <: ISkyDrivePickerProperies](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISkyDrivePickerProperies] (val x: Self) extends AnyVal {
     
     inline def setLightbox(value: String): Self = StObject.set(x, "lightbox", value.asInstanceOf[js.Any])
     

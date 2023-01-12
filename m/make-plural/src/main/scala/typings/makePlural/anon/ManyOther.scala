@@ -61,7 +61,8 @@ object ManyOther {
     __obj.asInstanceOf[ManyOther]
   }
   
-  extension [Self <: ManyOther](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManyOther] (val x: Self) extends AnyVal {
     
     inline def setMany(
       value: js.Tuple4[

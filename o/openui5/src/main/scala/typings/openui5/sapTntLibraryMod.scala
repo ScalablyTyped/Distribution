@@ -45,7 +45,8 @@ object sapTntLibraryMod {
       __obj.asInstanceOf[IToolHeader]
     }
     
-    extension [Self <: IToolHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToolHeader] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_tnt_IToolHeader(value: Boolean): Self = StObject.set(x, "__implements__sap_tnt_IToolHeader", value.asInstanceOf[js.Any])
     }

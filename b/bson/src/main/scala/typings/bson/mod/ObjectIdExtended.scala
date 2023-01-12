@@ -16,7 +16,8 @@ object ObjectIdExtended {
     __obj.asInstanceOf[ObjectIdExtended]
   }
   
-  extension [Self <: ObjectIdExtended](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectIdExtended] (val x: Self) extends AnyVal {
     
     inline def set$oid(value: String): Self = StObject.set(x, "$oid", value.asInstanceOf[js.Any])
   }

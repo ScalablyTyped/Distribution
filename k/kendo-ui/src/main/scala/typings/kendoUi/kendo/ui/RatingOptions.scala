@@ -49,7 +49,8 @@ object RatingOptions {
     __obj.asInstanceOf[RatingOptions]
   }
   
-  extension [Self <: RatingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RatingOptions] (val x: Self) extends AnyVal {
     
     inline def setChange(value: /* e */ RatingChangeEvent => Unit): Self = StObject.set(x, "change", js.Any.fromFunction1(value))
     

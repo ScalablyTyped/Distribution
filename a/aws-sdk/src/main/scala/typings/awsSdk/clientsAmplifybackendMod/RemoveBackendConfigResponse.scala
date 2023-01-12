@@ -18,7 +18,8 @@ object RemoveBackendConfigResponse {
     __obj.asInstanceOf[RemoveBackendConfigResponse]
   }
   
-  extension [Self <: RemoveBackendConfigResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveBackendConfigResponse] (val x: Self) extends AnyVal {
     
     inline def setError(value: string): Self = StObject.set(x, "Error", value.asInstanceOf[js.Any])
     

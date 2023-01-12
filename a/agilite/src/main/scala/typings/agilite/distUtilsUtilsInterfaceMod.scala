@@ -25,7 +25,8 @@ object distUtilsUtilsInterfaceMod {
       __obj.asInstanceOf[AxiosInterface]
     }
     
-    extension [Self <: AxiosInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxiosInterface] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -422,7 +423,8 @@ object distUtilsUtilsInterfaceMod {
       __obj.asInstanceOf[EnumsInterface]
     }
     
-    extension [Self <: EnumsInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumsInterface] (val x: Self) extends AnyVal {
       
       inline def setHEADER_API_KEY(value: String): Self = StObject.set(x, "HEADER_API_KEY", value.asInstanceOf[js.Any])
       
@@ -766,7 +768,8 @@ object distUtilsUtilsInterfaceMod {
       __obj.asInstanceOf[EnumsTypeDetectInterface]
     }
     
-    extension [Self <: EnumsTypeDetectInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EnumsTypeDetectInterface] (val x: Self) extends AnyVal {
       
       inline def setARGS(value: String): Self = StObject.set(x, "ARGS", value.asInstanceOf[js.Any])
       
@@ -839,7 +842,8 @@ object distUtilsUtilsInterfaceMod {
       __obj.asInstanceOf[OutputFormatInterface]
     }
     
-    extension [Self <: OutputFormatInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OutputFormatInterface] (val x: Self) extends AnyVal {
       
       inline def setJSON(value: String): Self = StObject.set(x, "JSON", value.asInstanceOf[js.Any])
       

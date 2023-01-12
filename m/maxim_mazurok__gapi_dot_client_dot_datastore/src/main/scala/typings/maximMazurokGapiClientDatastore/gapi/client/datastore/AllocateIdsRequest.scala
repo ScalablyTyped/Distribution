@@ -19,7 +19,8 @@ object AllocateIdsRequest {
     __obj.asInstanceOf[AllocateIdsRequest]
   }
   
-  extension [Self <: AllocateIdsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllocateIdsRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Transcript {
     __obj.asInstanceOf[Transcript]
   }
   
-  extension [Self <: Transcript](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transcript] (val x: Self) extends AnyVal {
     
     inline def setRedactedTranscriptFileUri(value: Uri): Self = StObject.set(x, "RedactedTranscriptFileUri", value.asInstanceOf[js.Any])
     

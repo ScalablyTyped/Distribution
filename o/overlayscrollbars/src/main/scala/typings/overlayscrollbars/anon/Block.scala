@@ -31,7 +31,8 @@ object Block {
     __obj.asInstanceOf[Block]
   }
   
-  extension [Self <: Block](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
     
     inline def setBlock(value: BlockBehavior | XY | (js.Tuple2[BlockBehavior, BlockBehavior])): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
     

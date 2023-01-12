@@ -26,7 +26,8 @@ object ThinQueryParams {
     __obj.asInstanceOf[ThinQueryParams[TQuery, TEnvironmentProviderOptions]]
   }
   
-  extension [Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */](x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThinQueryParams[?, ?], TQuery /* <: OperationType */, TEnvironmentProviderOptions /* <: EnvironmentProviderOptions[Record[String, Any]] */] (val x: Self & (ThinQueryParams[TQuery, TEnvironmentProviderOptions])) extends AnyVal {
     
     inline def setEnvironmentProviderOptions(value: TEnvironmentProviderOptions): Self = StObject.set(x, "environmentProviderOptions", value.asInstanceOf[js.Any])
     

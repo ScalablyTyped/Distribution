@@ -21,7 +21,8 @@ object DigestInfoParameters {
     __obj.asInstanceOf[DigestInfoParameters]
   }
   
-  extension [Self <: DigestInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DigestInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: OctetString): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

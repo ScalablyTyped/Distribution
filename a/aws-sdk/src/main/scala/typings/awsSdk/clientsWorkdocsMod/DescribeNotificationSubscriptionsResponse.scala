@@ -23,7 +23,8 @@ object DescribeNotificationSubscriptionsResponse {
     __obj.asInstanceOf[DescribeNotificationSubscriptionsResponse]
   }
   
-  extension [Self <: DescribeNotificationSubscriptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNotificationSubscriptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setMarker(value: PageMarkerType): Self = StObject.set(x, "Marker", value.asInstanceOf[js.Any])
     

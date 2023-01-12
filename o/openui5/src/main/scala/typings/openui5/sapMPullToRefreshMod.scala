@@ -390,7 +390,8 @@ object sapMPullToRefreshMod {
       __obj.asInstanceOf[PullToRefreshSettings]
     }
     
-    extension [Self <: PullToRefreshSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PullToRefreshSettings] (val x: Self) extends AnyVal {
       
       inline def setCustomIcon(value: URI | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "customIcon", value.asInstanceOf[js.Any])
       

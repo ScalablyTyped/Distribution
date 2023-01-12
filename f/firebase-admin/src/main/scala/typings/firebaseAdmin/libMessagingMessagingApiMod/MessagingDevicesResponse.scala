@@ -29,7 +29,8 @@ object MessagingDevicesResponse {
     __obj.asInstanceOf[MessagingDevicesResponse]
   }
   
-  extension [Self <: MessagingDevicesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingDevicesResponse] (val x: Self) extends AnyVal {
     
     inline def setCanonicalRegistrationTokenCount(value: Double): Self = StObject.set(x, "canonicalRegistrationTokenCount", value.asInstanceOf[js.Any])
     

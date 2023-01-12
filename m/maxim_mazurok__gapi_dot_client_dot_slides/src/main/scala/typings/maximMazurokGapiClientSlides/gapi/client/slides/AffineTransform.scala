@@ -34,7 +34,8 @@ object AffineTransform {
     __obj.asInstanceOf[AffineTransform]
   }
   
-  extension [Self <: AffineTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AffineTransform] (val x: Self) extends AnyVal {
     
     inline def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
     

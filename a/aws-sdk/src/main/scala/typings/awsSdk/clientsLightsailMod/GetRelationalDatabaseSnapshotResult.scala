@@ -18,7 +18,8 @@ object GetRelationalDatabaseSnapshotResult {
     __obj.asInstanceOf[GetRelationalDatabaseSnapshotResult]
   }
   
-  extension [Self <: GetRelationalDatabaseSnapshotResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRelationalDatabaseSnapshotResult] (val x: Self) extends AnyVal {
     
     inline def setRelationalDatabaseSnapshot(value: RelationalDatabaseSnapshot): Self = StObject.set(x, "relationalDatabaseSnapshot", value.asInstanceOf[js.Any])
     

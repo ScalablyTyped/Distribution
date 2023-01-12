@@ -24,7 +24,8 @@ object AuthStateChangeData {
     __obj.asInstanceOf[AuthStateChangeData]
   }
   
-  extension [Self <: AuthStateChangeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthStateChangeData] (val x: Self) extends AnyVal {
     
     inline def setSocket(value: typings.socketclusterServer.serversocketMod.^): Self = StObject.set(x, "socket", value.asInstanceOf[js.Any])
   }

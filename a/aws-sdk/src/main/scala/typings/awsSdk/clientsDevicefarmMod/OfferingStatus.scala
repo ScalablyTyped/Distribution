@@ -33,7 +33,8 @@ object OfferingStatus {
     __obj.asInstanceOf[OfferingStatus]
   }
   
-  extension [Self <: OfferingStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfferingStatus] (val x: Self) extends AnyVal {
     
     inline def setEffectiveOn(value: js.Date): Self = StObject.set(x, "effectiveOn", value.asInstanceOf[js.Any])
     

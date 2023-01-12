@@ -24,7 +24,8 @@ object PrincipalPrincipalValueMa {
     __obj.asInstanceOf[PrincipalPrincipalValueMa]
   }
   
-  extension [Self <: PrincipalPrincipalValueMa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrincipalPrincipalValueMa] (val x: Self) extends AnyVal {
     
     inline def setNotResource(value: String | js.Array[String]): Self = StObject.set(x, "NotResource", value.asInstanceOf[js.Any])
     

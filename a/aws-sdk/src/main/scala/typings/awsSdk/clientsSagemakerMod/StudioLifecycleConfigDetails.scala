@@ -38,7 +38,8 @@ object StudioLifecycleConfigDetails {
     __obj.asInstanceOf[StudioLifecycleConfigDetails]
   }
   
-  extension [Self <: StudioLifecycleConfigDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StudioLifecycleConfigDetails] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

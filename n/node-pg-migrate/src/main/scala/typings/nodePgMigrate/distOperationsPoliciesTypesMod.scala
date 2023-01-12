@@ -59,7 +59,8 @@ object distOperationsPoliciesTypesMod {
       __obj.asInstanceOf[CreatePolicyOptionsEn]
     }
     
-    extension [Self <: CreatePolicyOptionsEn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePolicyOptionsEn] (val x: Self) extends AnyVal {
       
       inline def setCommand(value: ALL | SELECT | INSERT | UPDATE | DELETE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distOperationsPoliciesTypesMod {
       __obj.asInstanceOf[PolicyOptions]
     }
     
-    extension [Self <: PolicyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PolicyOptions] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: String): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

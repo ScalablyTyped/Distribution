@@ -35,7 +35,8 @@ object GoogleApiYouTubeSearchResource {
     __obj.asInstanceOf[GoogleApiYouTubeSearchResource]
   }
   
-  extension [Self <: GoogleApiYouTubeSearchResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleApiYouTubeSearchResource] (val x: Self) extends AnyVal {
     
     inline def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])
     

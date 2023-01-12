@@ -19,7 +19,8 @@ object LongShort {
     __obj.asInstanceOf[LongShort]
   }
   
-  extension [Self <: LongShort](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LongShort] (val x: Self) extends AnyVal {
     
     inline def setLong(value: RecordDecimalFormatNumLDM1000): Self = StObject.set(x, "long", value.asInstanceOf[js.Any])
     

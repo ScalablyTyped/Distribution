@@ -23,7 +23,8 @@ object DescribeScalableTargetsResponse {
     __obj.asInstanceOf[DescribeScalableTargetsResponse]
   }
   
-  extension [Self <: DescribeScalableTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalableTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

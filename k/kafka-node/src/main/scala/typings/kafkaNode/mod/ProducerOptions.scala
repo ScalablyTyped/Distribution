@@ -19,7 +19,8 @@ object ProducerOptions {
     __obj.asInstanceOf[ProducerOptions]
   }
   
-  extension [Self <: ProducerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProducerOptions] (val x: Self) extends AnyVal {
     
     inline def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
     

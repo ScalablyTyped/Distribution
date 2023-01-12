@@ -46,7 +46,8 @@ object AddonsConfig {
     __obj.asInstanceOf[AddonsConfig]
   }
   
-  extension [Self <: AddonsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddonsConfig] (val x: Self) extends AnyVal {
     
     inline def setCloudRunConfig(value: CloudRunConfig): Self = StObject.set(x, "cloudRunConfig", value.asInstanceOf[js.Any])
     

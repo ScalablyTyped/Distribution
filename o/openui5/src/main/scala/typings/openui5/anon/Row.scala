@@ -19,7 +19,8 @@ object Row {
     __obj.asInstanceOf[Row]
   }
   
-  extension [Self <: Row](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Row] (val x: Self) extends AnyVal {
     
     inline def setRow(value: HTMLElement): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
     

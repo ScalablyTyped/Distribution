@@ -18,7 +18,8 @@ object PutTraceSegmentsResult {
     __obj.asInstanceOf[PutTraceSegmentsResult]
   }
   
-  extension [Self <: PutTraceSegmentsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutTraceSegmentsResult] (val x: Self) extends AnyVal {
     
     inline def setUnprocessedTraceSegments(value: UnprocessedTraceSegmentList): Self = StObject.set(x, "UnprocessedTraceSegments", value.asInstanceOf[js.Any])
     

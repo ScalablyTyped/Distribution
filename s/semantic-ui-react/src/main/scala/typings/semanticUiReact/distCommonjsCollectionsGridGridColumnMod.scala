@@ -96,7 +96,8 @@ object distCommonjsCollectionsGridGridColumnMod extends Shortcut {
       __obj.asInstanceOf[StrictGridColumnProps]
     }
     
-    extension [Self <: StrictGridColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictGridColumnProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

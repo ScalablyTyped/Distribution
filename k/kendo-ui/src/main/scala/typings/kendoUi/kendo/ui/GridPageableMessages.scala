@@ -35,7 +35,8 @@ object GridPageableMessages {
     __obj.asInstanceOf[GridPageableMessages]
   }
   
-  extension [Self <: GridPageableMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridPageableMessages] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: String): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

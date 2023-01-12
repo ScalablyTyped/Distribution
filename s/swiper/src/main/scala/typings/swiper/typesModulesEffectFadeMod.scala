@@ -34,7 +34,8 @@ object typesModulesEffectFadeMod {
       __obj.asInstanceOf[FadeEffectOptions]
     }
     
-    extension [Self <: FadeEffectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FadeEffectOptions] (val x: Self) extends AnyVal {
       
       inline def setCrossFade(value: Boolean): Self = StObject.set(x, "crossFade", value.asInstanceOf[js.Any])
       

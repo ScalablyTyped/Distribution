@@ -43,7 +43,8 @@ object typesGlobalSecondaryIndexInfoMod {
       __obj.asInstanceOf[GlobalSecondaryIndexInfo]
     }
     
-    extension [Self <: GlobalSecondaryIndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSecondaryIndexInfo] (val x: Self) extends AnyVal {
       
       inline def setIndexName(value: String): Self = StObject.set(x, "IndexName", value.asInstanceOf[js.Any])
       
@@ -94,7 +95,8 @@ object typesGlobalSecondaryIndexInfoMod {
       __obj.asInstanceOf[UnmarshalledGlobalSecondaryIndexInfo]
     }
     
-    extension [Self <: UnmarshalledGlobalSecondaryIndexInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledGlobalSecondaryIndexInfo] (val x: Self) extends AnyVal {
       
       inline def setKeySchema(value: js.Array[UnmarshalledKeySchemaElement]): Self = StObject.set(x, "KeySchema", value.asInstanceOf[js.Any])
       

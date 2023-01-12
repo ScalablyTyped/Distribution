@@ -21,7 +21,8 @@ object IPlayToConnection {
     __obj.asInstanceOf[IPlayToConnection]
   }
   
-  extension [Self <: IPlayToConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPlayToConnection] (val x: Self) extends AnyVal {
     
     inline def setOnerror(value: Any): Self = StObject.set(x, "onerror", value.asInstanceOf[js.Any])
     

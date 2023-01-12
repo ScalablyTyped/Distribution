@@ -49,7 +49,8 @@ object ttsEngine {
       __obj.asInstanceOf[SpeakOptions]
     }
     
-    extension [Self <: SpeakOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpeakOptions] (val x: Self) extends AnyVal {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       

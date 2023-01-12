@@ -48,7 +48,8 @@ object AuditAdvertiserResponse {
     __obj.asInstanceOf[AuditAdvertiserResponse]
   }
   
-  extension [Self <: AuditAdvertiserResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuditAdvertiserResponse] (val x: Self) extends AnyVal {
     
     inline def setAdGroupCriteriaCount(value: String): Self = StObject.set(x, "adGroupCriteriaCount", value.asInstanceOf[js.Any])
     

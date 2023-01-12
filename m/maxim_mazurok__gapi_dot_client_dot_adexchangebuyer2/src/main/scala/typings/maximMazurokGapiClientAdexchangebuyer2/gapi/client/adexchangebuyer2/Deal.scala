@@ -101,7 +101,8 @@ object Deal {
     __obj.asInstanceOf[Deal]
   }
   
-  extension [Self <: Deal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Deal] (val x: Self) extends AnyVal {
     
     inline def setAvailableEndTime(value: String): Self = StObject.set(x, "availableEndTime", value.asInstanceOf[js.Any])
     

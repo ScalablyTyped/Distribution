@@ -17,7 +17,8 @@ object ApplicationjsonAutotriggerchecks {
     __obj.asInstanceOf[ApplicationjsonAutotriggerchecks]
   }
   
-  extension [Self <: ApplicationjsonAutotriggerchecks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAutotriggerchecks] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Autotriggerchecks): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

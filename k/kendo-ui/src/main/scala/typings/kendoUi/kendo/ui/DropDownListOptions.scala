@@ -100,7 +100,8 @@ object DropDownListOptions {
     __obj.asInstanceOf[DropDownListOptions]
   }
   
-  extension [Self <: DropDownListOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropDownListOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean | DropDownListAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

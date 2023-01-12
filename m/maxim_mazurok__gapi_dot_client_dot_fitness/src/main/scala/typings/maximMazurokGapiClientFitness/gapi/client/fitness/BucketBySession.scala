@@ -16,7 +16,8 @@ object BucketBySession {
     __obj.asInstanceOf[BucketBySession]
   }
   
-  extension [Self <: BucketBySession](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketBySession] (val x: Self) extends AnyVal {
     
     inline def setMinDurationMillis(value: String): Self = StObject.set(x, "minDurationMillis", value.asInstanceOf[js.Any])
     

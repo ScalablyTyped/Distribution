@@ -67,7 +67,8 @@ object libVictoryAreaMod {
       __obj.asInstanceOf[VictoryAreaProps]
     }
     
-    extension [Self <: VictoryAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAreaProps] (val x: Self) extends AnyVal {
       
       inline def setEventKey(
         value: (js.Array[Double | String]) | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StringOrNumberOrCallback */ Any)

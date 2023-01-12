@@ -35,7 +35,8 @@ object Cond {
     __obj.asInstanceOf[Cond[TContext, TEvent]]
   }
   
-  extension [Self <: Cond[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (Cond[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cond[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (Cond[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: js.Array[ActionObject[TContext, TEvent]]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

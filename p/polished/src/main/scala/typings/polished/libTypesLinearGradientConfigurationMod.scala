@@ -21,7 +21,8 @@ object libTypesLinearGradientConfigurationMod {
       __obj.asInstanceOf[LinearGradientConfiguration]
     }
     
-    extension [Self <: LinearGradientConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinearGradientConfiguration] (val x: Self) extends AnyVal {
       
       inline def setColorStops(value: js.Array[String]): Self = StObject.set(x, "colorStops", value.asInstanceOf[js.Any])
       

@@ -64,7 +64,8 @@ object distSrcConfigMod {
       __obj.asInstanceOf[GossipsubOptsSpec]
     }
     
-    extension [Self <: GossipsubOptsSpec](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GossipsubOptsSpec] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       

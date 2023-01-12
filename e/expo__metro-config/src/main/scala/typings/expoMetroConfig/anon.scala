@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
@@ -44,7 +45,8 @@ object anon {
       __obj.asInstanceOf[Folders]
     }
     
-    extension [Self <: Folders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Folders] (val x: Self) extends AnyVal {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
@@ -76,7 +78,8 @@ object anon {
       __obj.asInstanceOf[GetRuleType]
     }
     
-    extension [Self <: GetRuleType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRuleType] (val x: Self) extends AnyVal {
       
       inline def setGetRuleType(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BabelTransformerArgs */ Any => String
@@ -101,7 +104,8 @@ object anon {
       __obj.asInstanceOf[ModuleIds]
     }
     
-    extension [Self <: ModuleIds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleIds] (val x: Self) extends AnyVal {
       
       inline def setFolders(value: js.Array[String]): Self = StObject.set(x, "folders", value.asInstanceOf[js.Any])
       
@@ -130,7 +134,8 @@ object anon {
       __obj.asInstanceOf[NodeModulesPaths]
     }
     
-    extension [Self <: NodeModulesPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeModulesPaths] (val x: Self) extends AnyVal {
       
       inline def setNodeModulesPaths(value: js.Array[String]): Self = StObject.set(x, "nodeModulesPaths", value.asInstanceOf[js.Any])
       

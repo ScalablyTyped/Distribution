@@ -22,7 +22,8 @@ object PermissionEntry {
     __obj.asInstanceOf[PermissionEntry]
   }
   
-  extension [Self <: PermissionEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PermissionEntry] (val x: Self) extends AnyVal {
     
     inline def setPermdesc(value: String): Self = StObject.set(x, "permdesc", value.asInstanceOf[js.Any])
     

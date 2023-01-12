@@ -98,7 +98,8 @@ object VEF {
     __obj.asInstanceOf[VEF]
   }
   
-  extension [Self <: VEF](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VEF] (val x: Self) extends AnyVal {
     
     inline def setAUD(value: js.Array[js.UndefOr[String]]): Self = StObject.set(x, "AUD", value.asInstanceOf[js.Any])
     

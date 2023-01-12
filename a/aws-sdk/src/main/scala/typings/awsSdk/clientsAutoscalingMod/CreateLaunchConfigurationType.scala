@@ -108,7 +108,8 @@ object CreateLaunchConfigurationType {
     __obj.asInstanceOf[CreateLaunchConfigurationType]
   }
   
-  extension [Self <: CreateLaunchConfigurationType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLaunchConfigurationType] (val x: Self) extends AnyVal {
     
     inline def setAssociatePublicIpAddress(value: AssociatePublicIpAddress): Self = StObject.set(x, "AssociatePublicIpAddress", value.asInstanceOf[js.Any])
     

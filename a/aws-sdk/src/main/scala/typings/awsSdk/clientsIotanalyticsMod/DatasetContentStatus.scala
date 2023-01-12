@@ -23,7 +23,8 @@ object DatasetContentStatus {
     __obj.asInstanceOf[DatasetContentStatus]
   }
   
-  extension [Self <: DatasetContentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetContentStatus] (val x: Self) extends AnyVal {
     
     inline def setReason(value: Reason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
     

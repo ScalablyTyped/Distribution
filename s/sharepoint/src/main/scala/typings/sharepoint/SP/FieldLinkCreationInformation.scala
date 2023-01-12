@@ -27,7 +27,8 @@ object FieldLinkCreationInformation {
     __obj.asInstanceOf[FieldLinkCreationInformation]
   }
   
-  extension [Self <: FieldLinkCreationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldLinkCreationInformation] (val x: Self) extends AnyVal {
     
     inline def setGet_field(value: () => Field): Self = StObject.set(x, "get_field", js.Any.fromFunction0(value))
     

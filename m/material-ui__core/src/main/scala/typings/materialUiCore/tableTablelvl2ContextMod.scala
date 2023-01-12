@@ -26,7 +26,8 @@ object tableTablelvl2ContextMod extends Shortcut {
       __obj.asInstanceOf[Tablelvl2ContextProps]
     }
     
-    extension [Self <: Tablelvl2ContextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tablelvl2ContextProps] (val x: Self) extends AnyVal {
       
       inline def setVariant(value: head | body | footer): Self = StObject.set(x, "variant", value.asInstanceOf[js.Any])
     }

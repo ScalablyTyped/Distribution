@@ -19,7 +19,8 @@ object LevelReadConcernLevel {
     __obj.asInstanceOf[LevelReadConcernLevel]
   }
   
-  extension [Self <: LevelReadConcernLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelReadConcernLevel] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: ReadConcernLevel): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

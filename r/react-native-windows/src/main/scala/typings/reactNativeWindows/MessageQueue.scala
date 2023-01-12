@@ -23,7 +23,8 @@ object MessageQueue {
     __obj.asInstanceOf[MessageQueue]
   }
   
-  extension [Self <: MessageQueue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageQueue] (val x: Self) extends AnyVal {
     
     inline def setGetCallableModule(value: String => js.Object): Self = StObject.set(x, "getCallableModule", js.Any.fromFunction1(value))
     

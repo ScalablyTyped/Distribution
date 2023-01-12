@@ -65,7 +65,8 @@ object MigrationJobId {
     __obj.asInstanceOf[MigrationJobId]
   }
   
-  extension [Self <: MigrationJobId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MigrationJobId] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

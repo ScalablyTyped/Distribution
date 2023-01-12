@@ -19,7 +19,8 @@ object ClusterAutoscalingConfig {
     __obj.asInstanceOf[ClusterAutoscalingConfig]
   }
   
-  extension [Self <: ClusterAutoscalingConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterAutoscalingConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoscalingLimits(value: AutoscalingLimits): Self = StObject.set(x, "autoscalingLimits", value.asInstanceOf[js.Any])
     

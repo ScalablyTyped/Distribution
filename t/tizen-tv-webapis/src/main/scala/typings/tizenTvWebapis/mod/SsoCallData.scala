@@ -15,7 +15,8 @@ object SsoCallData {
     __obj.asInstanceOf[SsoCallData]
   }
   
-  extension [Self <: SsoCallData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SsoCallData] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: String): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

@@ -137,7 +137,8 @@ object mod {
       __obj.asInstanceOf[RrdtoolDataPoint[D]]
     }
     
-    extension [Self <: RrdtoolDataPoint[?], D /* <: RrdtoolData */](x: Self & RrdtoolDataPoint[D]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RrdtoolDataPoint[?], D /* <: RrdtoolData */] (val x: Self & RrdtoolDataPoint[D]) extends AnyVal {
       
       inline def setTime(value: Timestamp): Self = StObject.set(x, "time", value.asInstanceOf[js.Any])
       

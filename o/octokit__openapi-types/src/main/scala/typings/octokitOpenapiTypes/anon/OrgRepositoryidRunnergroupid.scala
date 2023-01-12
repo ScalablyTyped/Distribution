@@ -24,7 +24,8 @@ object OrgRepositoryidRunnergroupid {
     __obj.asInstanceOf[OrgRepositoryidRunnergroupid]
   }
   
-  extension [Self <: OrgRepositoryidRunnergroupid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrgRepositoryidRunnergroupid] (val x: Self) extends AnyVal {
     
     inline def setOrg_(value: String): Self = StObject.set(x, "org", value.asInstanceOf[js.Any])
     

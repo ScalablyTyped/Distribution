@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[Ie]
     }
     
-    extension [Self <: Ie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ie] (val x: Self) extends AnyVal {
       
       inline def setIe(value: Boolean): Self = StObject.set(x, "ie", value.asInstanceOf[js.Any])
       

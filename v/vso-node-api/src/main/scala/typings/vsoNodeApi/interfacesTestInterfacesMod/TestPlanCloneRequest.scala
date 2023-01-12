@@ -19,7 +19,8 @@ object TestPlanCloneRequest {
     __obj.asInstanceOf[TestPlanCloneRequest]
   }
   
-  extension [Self <: TestPlanCloneRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestPlanCloneRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationTestPlan(value: TestPlan): Self = StObject.set(x, "destinationTestPlan", value.asInstanceOf[js.Any])
     

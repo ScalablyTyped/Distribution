@@ -25,7 +25,8 @@ object ColumnValidation {
     __obj.asInstanceOf[ColumnValidation]
   }
   
-  extension [Self <: ColumnValidation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnValidation] (val x: Self) extends AnyVal {
     
     inline def setDefaultLanguage(value: NullableOption[String]): Self = StObject.set(x, "defaultLanguage", value.asInstanceOf[js.Any])
     

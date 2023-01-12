@@ -17,7 +17,8 @@ object Metaname {
     __obj.asInstanceOf[Metaname]
   }
   
-  extension [Self <: Metaname](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metaname] (val x: Self) extends AnyVal {
     
     inline def setMetaname(value: String): Self = StObject.set(x, "metaname", value.asInstanceOf[js.Any])
     

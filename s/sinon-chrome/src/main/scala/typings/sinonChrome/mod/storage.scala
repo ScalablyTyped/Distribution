@@ -82,7 +82,8 @@ object storage {
       __obj.asInstanceOf[StubbedStorageArea]
     }
     
-    extension [Self <: StubbedStorageArea](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbedStorageArea] (val x: Self) extends AnyVal {
       
       inline def setClear(value: SinonChromeStub): Self = StObject.set(x, "clear", value.asInstanceOf[js.Any])
       

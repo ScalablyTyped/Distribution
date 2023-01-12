@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[NewDoc[T, G]]
     }
     
-    extension [Self <: NewDoc[?, ?], T /* <: G */, G](x: Self & (NewDoc[T, G])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewDoc[?, ?], T /* <: G */, G] (val x: Self & (NewDoc[T, G])) extends AnyVal {
       
       inline def setNewDoc(value: T): Self = StObject.set(x, "newDoc", value.asInstanceOf[js.Any])
       

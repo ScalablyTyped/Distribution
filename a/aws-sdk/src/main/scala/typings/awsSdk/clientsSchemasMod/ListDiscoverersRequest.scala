@@ -30,7 +30,8 @@ object ListDiscoverersRequest {
     __obj.asInstanceOf[ListDiscoverersRequest]
   }
   
-  extension [Self <: ListDiscoverersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDiscoverersRequest] (val x: Self) extends AnyVal {
     
     inline def setDiscovererIdPrefix(value: string): Self = StObject.set(x, "DiscovererIdPrefix", value.asInstanceOf[js.Any])
     

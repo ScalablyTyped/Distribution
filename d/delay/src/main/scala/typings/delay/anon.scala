@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[ClearTimeout]
     }
     
-    extension [Self <: ClearTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClearTimeout] (val x: Self) extends AnyVal {
       
       inline def setClearTimeout(value: Any => Unit): Self = StObject.set(x, "clearTimeout", js.Any.fromFunction1(value))
       
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Once]
     }
     
-    extension [Self <: Once](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Once] (val x: Self) extends AnyVal {
       
       inline def setOnce(value: Boolean): Self = StObject.set(x, "once", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[Optionsvalueunknownundefi]
     }
     
-    extension [Self <: Optionsvalueunknownundefi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Optionsvalueunknownundefi] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -97,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Value[T]]
     }
     
-    extension [Self <: Value[?], T](x: Self & Value[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Value[?], T] (val x: Self & Value[T]) extends AnyVal {
       
       inline def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     }

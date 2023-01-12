@@ -32,7 +32,8 @@ object Slider {
     __obj.asInstanceOf[Slider]
   }
   
-  extension [Self <: Slider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
     
     inline def setDark(value: SliderTheme): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
     

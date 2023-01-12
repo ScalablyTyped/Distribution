@@ -106,7 +106,8 @@ object libDoctorAilmentsBaseMod {
       __obj.asInstanceOf[AilmentDeps]
     }
     
-    extension [Self <: AilmentDeps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AilmentDeps] (val x: Self) extends AnyVal {
       
       inline def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
       

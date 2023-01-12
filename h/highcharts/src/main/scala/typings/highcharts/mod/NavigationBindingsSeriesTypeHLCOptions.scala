@@ -15,7 +15,8 @@ object NavigationBindingsSeriesTypeHLCOptions {
     __obj.asInstanceOf[NavigationBindingsSeriesTypeHLCOptions]
   }
   
-  extension [Self <: NavigationBindingsSeriesTypeHLCOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBindingsSeriesTypeHLCOptions] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object ContainerEvent {
     __obj.asInstanceOf[ContainerEvent]
   }
   
-  extension [Self <: ContainerEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerEvent] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

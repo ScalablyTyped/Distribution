@@ -18,7 +18,8 @@ object CreateLayerResult {
     __obj.asInstanceOf[CreateLayerResult]
   }
   
-  extension [Self <: CreateLayerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLayerResult] (val x: Self) extends AnyVal {
     
     inline def setLayerId(value: String): Self = StObject.set(x, "LayerId", value.asInstanceOf[js.Any])
     

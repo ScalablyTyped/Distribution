@@ -39,7 +39,8 @@ object AddGrammarParams {
     __obj.asInstanceOf[AddGrammarParams]
   }
   
-  extension [Self <: AddGrammarParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddGrammarParams] (val x: Self) extends AnyVal {
     
     inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     

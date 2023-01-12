@@ -48,7 +48,8 @@ object libComponentsSpinButtonSpinButtonDottypesMod {
       __obj.asInstanceOf[ISpinButton]
     }
     
-    extension [Self <: ISpinButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinButton] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
       
@@ -89,7 +90,8 @@ object libComponentsSpinButtonSpinButtonDottypesMod {
       __obj.asInstanceOf[ISpinButtonClassNames]
     }
     
-    extension [Self <: ISpinButtonClassNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinButtonClassNames] (val x: Self) extends AnyVal {
       
       inline def setArrowBox(value: String): Self = StObject.set(x, "arrowBox", value.asInstanceOf[js.Any])
       
@@ -349,7 +351,8 @@ object libComponentsSpinButtonSpinButtonDottypesMod {
       __obj.asInstanceOf[ISpinButtonProps]
     }
     
-    extension [Self <: ISpinButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinButtonProps] (val x: Self) extends AnyVal {
       
       inline def setAriaDescribedBy(value: String): Self = StObject.set(x, "ariaDescribedBy", value.asInstanceOf[js.Any])
       
@@ -609,7 +612,8 @@ object libComponentsSpinButtonSpinButtonDottypesMod {
       __obj.asInstanceOf[ISpinButtonStyles]
     }
     
-    extension [Self <: ISpinButtonStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpinButtonStyles] (val x: Self) extends AnyVal {
       
       inline def setArrowButtonsContainer(value: IStyle): Self = StObject.set(x, "arrowButtonsContainer", value.asInstanceOf[js.Any])
       

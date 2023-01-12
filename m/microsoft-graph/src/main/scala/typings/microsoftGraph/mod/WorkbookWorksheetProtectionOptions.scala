@@ -46,7 +46,8 @@ object WorkbookWorksheetProtectionOptions {
     __obj.asInstanceOf[WorkbookWorksheetProtectionOptions]
   }
   
-  extension [Self <: WorkbookWorksheetProtectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookWorksheetProtectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowAutoFilter(value: Boolean): Self = StObject.set(x, "allowAutoFilter", value.asInstanceOf[js.Any])
     

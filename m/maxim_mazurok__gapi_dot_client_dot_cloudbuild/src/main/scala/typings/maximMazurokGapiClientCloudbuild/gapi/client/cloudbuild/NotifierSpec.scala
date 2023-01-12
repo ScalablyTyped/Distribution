@@ -19,7 +19,8 @@ object NotifierSpec {
     __obj.asInstanceOf[NotifierSpec]
   }
   
-  extension [Self <: NotifierSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifierSpec] (val x: Self) extends AnyVal {
     
     inline def setNotification(value: Notification): Self = StObject.set(x, "notification", value.asInstanceOf[js.Any])
     

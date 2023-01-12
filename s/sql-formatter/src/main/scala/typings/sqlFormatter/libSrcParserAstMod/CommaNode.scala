@@ -20,7 +20,8 @@ object CommaNode {
     __obj.asInstanceOf[CommaNode]
   }
   
-  extension [Self <: CommaNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommaNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: comma): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

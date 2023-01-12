@@ -84,7 +84,8 @@ object PrintJobConfiguration {
     __obj.asInstanceOf[PrintJobConfiguration]
   }
   
-  extension [Self <: PrintJobConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintJobConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCollate(value: NullableOption[Boolean]): Self = StObject.set(x, "collate", value.asInstanceOf[js.Any])
     

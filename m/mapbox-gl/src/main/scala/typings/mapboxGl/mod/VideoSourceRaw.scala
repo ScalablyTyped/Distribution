@@ -22,7 +22,8 @@ object VideoSourceRaw {
     __obj.asInstanceOf[VideoSourceRaw]
   }
   
-  extension [Self <: VideoSourceRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoSourceRaw] (val x: Self) extends AnyVal {
     
     inline def setType(value: video): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

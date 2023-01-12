@@ -38,7 +38,8 @@ object TypographyProps {
     __obj.asInstanceOf[TypographyProps]
   }
   
-  extension [Self <: TypographyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypographyProps] (val x: Self) extends AnyVal {
     
     inline def setFontSize(value: Boolean): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     

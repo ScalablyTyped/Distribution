@@ -83,7 +83,8 @@ object distTypesLegacyRenderMod {
       __obj.asInstanceOf[LegacyResult]
     }
     
-    extension [Self <: LegacyResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegacyResult] (val x: Self) extends AnyVal {
       
       inline def setCss(value: Buffer): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
       

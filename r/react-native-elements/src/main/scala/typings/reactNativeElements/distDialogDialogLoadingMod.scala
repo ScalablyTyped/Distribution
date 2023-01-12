@@ -33,7 +33,8 @@ object distDialogDialogLoadingMod extends Shortcut {
       __obj.asInstanceOf[DialogLoadingProps]
     }
     
-    extension [Self <: DialogLoadingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogLoadingProps] (val x: Self) extends AnyVal {
       
       inline def setLoadingProps(value: ActivityIndicatorProps): Self = StObject.set(x, "loadingProps", value.asInstanceOf[js.Any])
       

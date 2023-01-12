@@ -23,7 +23,8 @@ object InboxPlacementTrackingOption {
     __obj.asInstanceOf[InboxPlacementTrackingOption]
   }
   
-  extension [Self <: InboxPlacementTrackingOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboxPlacementTrackingOption] (val x: Self) extends AnyVal {
     
     inline def setGlobal(value: Enabled): Self = StObject.set(x, "Global", value.asInstanceOf[js.Any])
     

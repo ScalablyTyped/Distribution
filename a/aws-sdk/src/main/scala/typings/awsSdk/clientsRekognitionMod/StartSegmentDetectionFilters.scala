@@ -23,7 +23,8 @@ object StartSegmentDetectionFilters {
     __obj.asInstanceOf[StartSegmentDetectionFilters]
   }
   
-  extension [Self <: StartSegmentDetectionFilters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartSegmentDetectionFilters] (val x: Self) extends AnyVal {
     
     inline def setShotFilter(value: StartShotDetectionFilter): Self = StObject.set(x, "ShotFilter", value.asInstanceOf[js.Any])
     

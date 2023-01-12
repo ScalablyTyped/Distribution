@@ -33,7 +33,8 @@ object Patient {
     __obj.asInstanceOf[Patient]
   }
   
-  extension [Self <: Patient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Patient] (val x: Self) extends AnyVal {
     
     inline def setApi(value: Api): Self = StObject.set(x, "api", value.asInstanceOf[js.Any])
     

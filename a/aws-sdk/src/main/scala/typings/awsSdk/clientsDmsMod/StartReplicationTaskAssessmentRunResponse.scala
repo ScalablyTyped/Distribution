@@ -18,7 +18,8 @@ object StartReplicationTaskAssessmentRunResponse {
     __obj.asInstanceOf[StartReplicationTaskAssessmentRunResponse]
   }
   
-  extension [Self <: StartReplicationTaskAssessmentRunResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartReplicationTaskAssessmentRunResponse] (val x: Self) extends AnyVal {
     
     inline def setReplicationTaskAssessmentRun(value: ReplicationTaskAssessmentRun): Self = StObject.set(x, "ReplicationTaskAssessmentRun", value.asInstanceOf[js.Any])
     

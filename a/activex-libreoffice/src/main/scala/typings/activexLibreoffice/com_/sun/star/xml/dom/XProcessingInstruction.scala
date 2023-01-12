@@ -79,7 +79,8 @@ object XProcessingInstruction {
     __obj.asInstanceOf[XProcessingInstruction]
   }
   
-  extension [Self <: XProcessingInstruction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XProcessingInstruction] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

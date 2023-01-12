@@ -371,7 +371,8 @@ object anon {
       __obj.asInstanceOf[OmitTestrunnercapabilitie]
     }
     
-    extension [Self <: OmitTestrunnercapabilitie](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmitTestrunnercapabilitie] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[
@@ -1058,7 +1059,8 @@ object anon {
       __obj.asInstanceOf[Paths]
     }
     
-    extension [Self <: Paths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Paths] (val x: Self) extends AnyVal {
       
       inline def setPaths(value: js.Array[String]): Self = StObject.set(x, "paths", value.asInstanceOf[js.Any])
       
@@ -1606,7 +1608,8 @@ object anon {
       __obj.asInstanceOf[RequiredTestrunner]
     }
     
-    extension [Self <: RequiredTestrunner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredTestrunner] (val x: Self) extends AnyVal {
       
       inline def setAfter(
         value: (js.Function3[

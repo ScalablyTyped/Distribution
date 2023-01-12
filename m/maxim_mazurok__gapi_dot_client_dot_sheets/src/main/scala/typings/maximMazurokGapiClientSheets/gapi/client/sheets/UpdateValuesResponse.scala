@@ -31,7 +31,8 @@ object UpdateValuesResponse {
     __obj.asInstanceOf[UpdateValuesResponse]
   }
   
-  extension [Self <: UpdateValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setSpreadsheetId(value: String): Self = StObject.set(x, "spreadsheetId", value.asInstanceOf[js.Any])
     

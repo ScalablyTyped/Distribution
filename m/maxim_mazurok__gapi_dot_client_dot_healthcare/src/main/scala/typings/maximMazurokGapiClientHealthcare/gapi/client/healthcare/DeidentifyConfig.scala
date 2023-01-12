@@ -25,7 +25,8 @@ object DeidentifyConfig {
     __obj.asInstanceOf[DeidentifyConfig]
   }
   
-  extension [Self <: DeidentifyConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeidentifyConfig] (val x: Self) extends AnyVal {
     
     inline def setDicom(value: DicomConfig): Self = StObject.set(x, "dicom", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem {
     __obj.asInstanceOf[FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem]
   }
   
-  extension [Self <: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemManagerGetSavedFileListSuccessCallbackResultFileItem] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: Double): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
     

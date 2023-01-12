@@ -19,7 +19,8 @@ object VimeoVideoQualityObject {
     __obj.asInstanceOf[VimeoVideoQualityObject]
   }
   
-  extension [Self <: VimeoVideoQualityObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VimeoVideoQualityObject] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

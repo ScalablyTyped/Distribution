@@ -21,7 +21,8 @@ object TileDebugOptions {
     __obj.asInstanceOf[TileDebugOptions]
   }
   
-  extension [Self <: TileDebugOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileDebugOptions] (val x: Self) extends AnyVal {
     
     inline def setProjection(value: ProjectionLike): Self = StObject.set(x, "projection", value.asInstanceOf[js.Any])
     

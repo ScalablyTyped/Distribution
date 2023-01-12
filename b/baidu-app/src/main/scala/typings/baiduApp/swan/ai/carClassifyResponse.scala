@@ -22,7 +22,8 @@ object carClassifyResponse {
     __obj.asInstanceOf[carClassifyResponse]
   }
   
-  extension [Self <: carClassifyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: carClassifyResponse] (val x: Self) extends AnyVal {
     
     inline def setLocation_result(value: Height): Self = StObject.set(x, "location_result", value.asInstanceOf[js.Any])
     

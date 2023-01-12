@@ -41,7 +41,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[AttemptResult]
     }
     
-    extension [Self <: AttemptResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttemptResult] (val x: Self) extends AnyVal {
       
       inline def setDuration(value: ms): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
       
@@ -87,7 +88,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressCliParser]
     }
     
-    extension [Self <: CypressCliParser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressCliParser] (val x: Self) extends AnyVal {
       
       inline def setParseRunArguments(value: js.Array[String] => js.Promise[PartialCypressRunOptions]): Self = StObject.set(x, "parseRunArguments", js.Any.fromFunction1(value))
     }
@@ -140,7 +142,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressCommonOptions]
     }
     
-    extension [Self <: CypressCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: ConfigOptions[Any]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -183,7 +186,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressFailedRunResult]
     }
     
-    extension [Self <: CypressFailedRunResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressFailedRunResult] (val x: Self) extends AnyVal {
       
       inline def setFailures(value: Double): Self = StObject.set(x, "failures", value.asInstanceOf[js.Any])
       
@@ -249,7 +253,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressOpenOptions]
     }
     
-    extension [Self <: CypressOpenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressOpenOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -388,7 +393,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressRunOptions]
     }
     
-    extension [Self <: CypressRunOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressRunOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowser(value: String): Self = StObject.set(x, "browser", value.asInstanceOf[js.Any])
       
@@ -495,7 +501,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[CypressRunResult]
     }
     
-    extension [Self <: CypressRunResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CypressRunResult] (val x: Self) extends AnyVal {
       
       inline def setBrowserName(value: String): Self = StObject.set(x, "browserName", value.asInstanceOf[js.Any])
       
@@ -559,7 +566,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[HookInformation]
     }
     
-    extension [Self <: HookInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HookInformation] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -640,7 +648,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[RunResult]
     }
     
-    extension [Self <: RunResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RunResult] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -695,7 +704,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[ScreenshotInformation]
     }
     
-    extension [Self <: ScreenshotInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenshotInformation] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: pixels): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -724,7 +734,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[TestError]
     }
     
-    extension [Self <: TestError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -759,7 +770,8 @@ object CypressCommandLine {
       __obj.asInstanceOf[TestResult]
     }
     
-    extension [Self <: TestResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestResult] (val x: Self) extends AnyVal {
       
       inline def setAttempts(value: js.Array[AttemptResult]): Self = StObject.set(x, "attempts", value.asInstanceOf[js.Any])
       

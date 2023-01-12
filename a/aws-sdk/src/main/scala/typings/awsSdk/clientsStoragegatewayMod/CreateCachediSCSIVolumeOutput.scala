@@ -23,7 +23,8 @@ object CreateCachediSCSIVolumeOutput {
     __obj.asInstanceOf[CreateCachediSCSIVolumeOutput]
   }
   
-  extension [Self <: CreateCachediSCSIVolumeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateCachediSCSIVolumeOutput] (val x: Self) extends AnyVal {
     
     inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     

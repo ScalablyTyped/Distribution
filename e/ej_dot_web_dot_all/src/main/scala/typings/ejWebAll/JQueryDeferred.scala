@@ -18,7 +18,8 @@ object JQueryDeferred {
     __obj.asInstanceOf[JQueryDeferred[T]]
   }
   
-  extension [Self <: JQueryDeferred[?], T](x: Self & JQueryDeferred[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryDeferred[?], T] (val x: Self & JQueryDeferred[T]) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
     

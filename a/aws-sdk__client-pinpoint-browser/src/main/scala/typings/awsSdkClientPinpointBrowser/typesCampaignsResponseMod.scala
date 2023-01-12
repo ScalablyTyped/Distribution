@@ -27,7 +27,8 @@ object typesCampaignsResponseMod {
       __obj.asInstanceOf[CampaignsResponse]
     }
     
-    extension [Self <: CampaignsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CampaignsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[CampaignResponse] | js.Iterable[CampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object typesCampaignsResponseMod {
       __obj.asInstanceOf[UnmarshalledCampaignsResponse]
     }
     
-    extension [Self <: UnmarshalledCampaignsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledCampaignsResponse] (val x: Self) extends AnyVal {
       
       inline def setItem(value: js.Array[UnmarshalledCampaignResponse]): Self = StObject.set(x, "Item", value.asInstanceOf[js.Any])
       

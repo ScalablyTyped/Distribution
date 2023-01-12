@@ -63,7 +63,8 @@ object SystemInfo {
       __obj.asInstanceOf[GPUDevice]
     }
     
-    extension [Self <: GPUDevice](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPUDevice] (val x: Self) extends AnyVal {
       
       inline def setDeviceId(value: Double): Self = StObject.set(x, "deviceId", value.asInstanceOf[js.Any])
       
@@ -137,7 +138,8 @@ object SystemInfo {
       __obj.asInstanceOf[GPUInfo]
     }
     
-    extension [Self <: GPUInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPUInfo] (val x: Self) extends AnyVal {
       
       inline def setAuxAttributes(value: Any): Self = StObject.set(x, "auxAttributes", value.asInstanceOf[js.Any])
       
@@ -201,7 +203,8 @@ object SystemInfo {
       __obj.asInstanceOf[GetInfoResponse]
     }
     
-    extension [Self <: GetInfoResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetInfoResponse] (val x: Self) extends AnyVal {
       
       inline def setCommandLine(value: String): Self = StObject.set(x, "commandLine", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object SystemInfo {
       __obj.asInstanceOf[GetProcessInfoResponse]
     }
     
-    extension [Self <: GetProcessInfoResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetProcessInfoResponse] (val x: Self) extends AnyVal {
       
       inline def setProcessInfo(value: js.Array[ProcessInfo]): Self = StObject.set(x, "processInfo", value.asInstanceOf[js.Any])
       
@@ -269,7 +273,8 @@ object SystemInfo {
       __obj.asInstanceOf[ImageDecodeAcceleratorCapability]
     }
     
-    extension [Self <: ImageDecodeAcceleratorCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageDecodeAcceleratorCapability] (val x: Self) extends AnyVal {
       
       inline def setImageType(value: ImageType): Self = StObject.set(x, "imageType", value.asInstanceOf[js.Any])
       
@@ -324,7 +329,8 @@ object SystemInfo {
       __obj.asInstanceOf[ProcessInfo]
     }
     
-    extension [Self <: ProcessInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessInfo] (val x: Self) extends AnyVal {
       
       inline def setCpuTime(value: Double): Self = StObject.set(x, "cpuTime", value.asInstanceOf[js.Any])
       
@@ -353,7 +359,8 @@ object SystemInfo {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: integer): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -400,7 +407,8 @@ object SystemInfo {
       __obj.asInstanceOf[VideoDecodeAcceleratorCapability]
     }
     
-    extension [Self <: VideoDecodeAcceleratorCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoDecodeAcceleratorCapability] (val x: Self) extends AnyVal {
       
       inline def setMaxResolution(value: Size): Self = StObject.set(x, "maxResolution", value.asInstanceOf[js.Any])
       
@@ -443,7 +451,8 @@ object SystemInfo {
       __obj.asInstanceOf[VideoEncodeAcceleratorCapability]
     }
     
-    extension [Self <: VideoEncodeAcceleratorCapability](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VideoEncodeAcceleratorCapability] (val x: Self) extends AnyVal {
       
       inline def setMaxFramerateDenominator(value: integer): Self = StObject.set(x, "maxFramerateDenominator", value.asInstanceOf[js.Any])
       

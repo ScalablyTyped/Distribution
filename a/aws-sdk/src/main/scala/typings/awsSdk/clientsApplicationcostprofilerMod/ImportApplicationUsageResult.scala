@@ -18,7 +18,8 @@ object ImportApplicationUsageResult {
     __obj.asInstanceOf[ImportApplicationUsageResult]
   }
   
-  extension [Self <: ImportApplicationUsageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportApplicationUsageResult] (val x: Self) extends AnyVal {
     
     inline def setImportId(value: ImportId): Self = StObject.set(x, "importId", value.asInstanceOf[js.Any])
   }

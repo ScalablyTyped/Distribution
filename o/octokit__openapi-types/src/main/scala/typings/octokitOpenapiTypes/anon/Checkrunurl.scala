@@ -145,7 +145,8 @@ object Checkrunurl {
     __obj.asInstanceOf[Checkrunurl]
   }
   
-  extension [Self <: Checkrunurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Checkrunurl] (val x: Self) extends AnyVal {
     
     inline def setCheck_run_url(value: String): Self = StObject.set(x, "check_run_url", value.asInstanceOf[js.Any])
     

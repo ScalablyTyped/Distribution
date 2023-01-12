@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[CircularRefs]
     }
     
-    extension [Self <: CircularRefs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularRefs] (val x: Self) extends AnyVal {
       
       inline def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object anon {
       __obj.asInstanceOf[CircularRefsBoolean]
     }
     
-    extension [Self <: CircularRefsBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CircularRefsBoolean] (val x: Self) extends AnyVal {
       
       inline def setCircularRefs(value: Boolean): Self = StObject.set(x, "circularRefs", value.asInstanceOf[js.Any])
     }

@@ -27,7 +27,8 @@ object distTemplateCompilerModulesUtilsMod {
       __obj.asInstanceOf[ASTNode]
     }
     
-    extension [Self <: ASTNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASTNode] (val x: Self) extends AnyVal {
       
       inline def setAttrs(value: js.Array[Attr]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object distTemplateCompilerModulesUtilsMod {
       __obj.asInstanceOf[Attr]
     }
     
-    extension [Self <: Attr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attr] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

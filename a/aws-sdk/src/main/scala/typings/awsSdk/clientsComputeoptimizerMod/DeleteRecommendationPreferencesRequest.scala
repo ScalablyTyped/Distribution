@@ -28,7 +28,8 @@ object DeleteRecommendationPreferencesRequest {
     __obj.asInstanceOf[DeleteRecommendationPreferencesRequest]
   }
   
-  extension [Self <: DeleteRecommendationPreferencesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRecommendationPreferencesRequest] (val x: Self) extends AnyVal {
     
     inline def setRecommendationPreferenceNames(value: RecommendationPreferenceNames): Self = StObject.set(x, "recommendationPreferenceNames", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object WorkItemBehaviorField {
     __obj.asInstanceOf[WorkItemBehaviorField]
   }
   
-  extension [Self <: WorkItemBehaviorField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkItemBehaviorField] (val x: Self) extends AnyVal {
     
     inline def setBehaviorFieldId(value: String): Self = StObject.set(x, "behaviorFieldId", value.asInstanceOf[js.Any])
     

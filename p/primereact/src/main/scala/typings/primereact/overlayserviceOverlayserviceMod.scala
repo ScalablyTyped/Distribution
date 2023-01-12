@@ -41,7 +41,8 @@ object overlayserviceOverlayserviceMod {
       __obj.asInstanceOf[OverlayServiceParams]
     }
     
-    extension [Self <: OverlayServiceParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayServiceParams] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

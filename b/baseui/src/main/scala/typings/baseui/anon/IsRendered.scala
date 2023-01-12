@@ -19,7 +19,8 @@ object IsRendered {
     __obj.asInstanceOf[IsRendered]
   }
   
-  extension [Self <: IsRendered](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsRendered] (val x: Self) extends AnyVal {
     
     inline def setIsFocusVisible(value: Boolean): Self = StObject.set(x, "isFocusVisible", value.asInstanceOf[js.Any])
     

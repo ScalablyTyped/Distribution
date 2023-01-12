@@ -33,7 +33,8 @@ object libLowMod {
       __obj.asInstanceOf[Adapter[T]]
     }
     
-    extension [Self <: Adapter[?], T](x: Self & Adapter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Adapter[?], T] (val x: Self & Adapter[T]) extends AnyVal {
       
       inline def setRead(value: () => js.Promise[T | Null]): Self = StObject.set(x, "read", js.Any.fromFunction0(value))
       

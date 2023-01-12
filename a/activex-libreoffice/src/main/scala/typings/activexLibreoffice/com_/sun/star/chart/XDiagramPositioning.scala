@@ -72,7 +72,8 @@ object XDiagramPositioning {
     __obj.asInstanceOf[XDiagramPositioning]
   }
   
-  extension [Self <: XDiagramPositioning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDiagramPositioning] (val x: Self) extends AnyVal {
     
     inline def setCalculateDiagramPositionExcludingAxes(value: () => Rectangle): Self = StObject.set(x, "calculateDiagramPositionExcludingAxes", js.Any.fromFunction0(value))
     

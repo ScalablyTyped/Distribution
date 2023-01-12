@@ -214,7 +214,8 @@ object PluginHooks {
     __obj.asInstanceOf[PluginHooks]
   }
   
-  extension [Self <: PluginHooks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginHooks] (val x: Self) extends AnyVal {
     
     inline def setAugmentChunkHash(
       value: ObjectHook[

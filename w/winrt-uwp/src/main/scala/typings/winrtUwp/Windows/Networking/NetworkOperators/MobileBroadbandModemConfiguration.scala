@@ -23,7 +23,8 @@ object MobileBroadbandModemConfiguration {
     __obj.asInstanceOf[MobileBroadbandModemConfiguration]
   }
   
-  extension [Self <: MobileBroadbandModemConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileBroadbandModemConfiguration] (val x: Self) extends AnyVal {
     
     inline def setHomeProviderId(value: String): Self = StObject.set(x, "homeProviderId", value.asInstanceOf[js.Any])
     

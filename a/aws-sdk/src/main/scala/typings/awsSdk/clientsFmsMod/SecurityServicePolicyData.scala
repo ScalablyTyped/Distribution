@@ -28,7 +28,8 @@ object SecurityServicePolicyData {
     __obj.asInstanceOf[SecurityServicePolicyData]
   }
   
-  extension [Self <: SecurityServicePolicyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityServicePolicyData] (val x: Self) extends AnyVal {
     
     inline def setManagedServiceData(value: ManagedServiceData): Self = StObject.set(x, "ManagedServiceData", value.asInstanceOf[js.Any])
     

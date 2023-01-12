@@ -18,7 +18,8 @@ object AwsEcsClusterConfigurationDetails {
     __obj.asInstanceOf[AwsEcsClusterConfigurationDetails]
   }
   
-  extension [Self <: AwsEcsClusterConfigurationDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsClusterConfigurationDetails] (val x: Self) extends AnyVal {
     
     inline def setExecuteCommandConfiguration(value: AwsEcsClusterConfigurationExecuteCommandConfigurationDetails): Self = StObject.set(x, "ExecuteCommandConfiguration", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object MinecraftTrigger {
     __obj.asInstanceOf[MinecraftTrigger]
   }
   
-  extension [Self <: MinecraftTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MinecraftTrigger] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: String): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

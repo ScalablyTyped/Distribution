@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1Polyline {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1Polyline]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1Polyline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1Polyline] (val x: Self) extends AnyVal {
     
     inline def setVertices(value: js.Array[GoogleCloudDatalabelingV1beta1Vertex]): Self = StObject.set(x, "vertices", value.asInstanceOf[js.Any])
     

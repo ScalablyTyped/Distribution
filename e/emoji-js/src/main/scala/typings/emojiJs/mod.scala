@@ -208,7 +208,8 @@ object mod {
       __obj.asInstanceOf[Emoji]
     }
     
-    extension [Self <: Emoji](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Emoji] (val x: Self) extends AnyVal {
       
       inline def setAddAliases(value: StringDictionary[String] => Unit): Self = StObject.set(x, "addAliases", js.Any.fromFunction1(value))
       

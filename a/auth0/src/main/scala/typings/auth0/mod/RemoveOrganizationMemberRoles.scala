@@ -15,7 +15,8 @@ object RemoveOrganizationMemberRoles {
     __obj.asInstanceOf[RemoveOrganizationMemberRoles]
   }
   
-  extension [Self <: RemoveOrganizationMemberRoles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveOrganizationMemberRoles] (val x: Self) extends AnyVal {
     
     inline def setRoles(value: js.Array[String]): Self = StObject.set(x, "roles", value.asInstanceOf[js.Any])
     

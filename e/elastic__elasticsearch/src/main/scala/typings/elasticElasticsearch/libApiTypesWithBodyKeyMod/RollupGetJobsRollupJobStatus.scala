@@ -20,7 +20,8 @@ object RollupGetJobsRollupJobStatus {
     __obj.asInstanceOf[RollupGetJobsRollupJobStatus]
   }
   
-  extension [Self <: RollupGetJobsRollupJobStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RollupGetJobsRollupJobStatus] (val x: Self) extends AnyVal {
     
     inline def setCurrent_position(value: Record[String, Any]): Self = StObject.set(x, "current_position", value.asInstanceOf[js.Any])
     

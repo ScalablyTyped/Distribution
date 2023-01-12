@@ -26,7 +26,8 @@ object ModelAuthorizationDirectives {
     __obj.asInstanceOf[ModelAuthorizationDirectives]
   }
   
-  extension [Self <: ModelAuthorizationDirectives](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelAuthorizationDirectives] (val x: Self) extends AnyVal {
     
     inline def setAllow_multiple_captures(value: Boolean): Self = StObject.set(x, "allow_multiple_captures", value.asInstanceOf[js.Any])
     

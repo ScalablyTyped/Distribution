@@ -16,7 +16,8 @@ object FileSystemManagerGetFileInfoSuccessCallbackResult {
     __obj.asInstanceOf[FileSystemManagerGetFileInfoSuccessCallbackResult]
   }
   
-  extension [Self <: FileSystemManagerGetFileInfoSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileSystemManagerGetFileInfoSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
   }

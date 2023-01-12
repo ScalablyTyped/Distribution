@@ -38,7 +38,8 @@ object InkAnalysisParagraphData {
     __obj.asInstanceOf[InkAnalysisParagraphData]
   }
   
-  extension [Self <: InkAnalysisParagraphData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InkAnalysisParagraphData] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

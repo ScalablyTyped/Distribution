@@ -23,7 +23,8 @@ object FlushStageCacheRequest {
     __obj.asInstanceOf[FlushStageCacheRequest]
   }
   
-  extension [Self <: FlushStageCacheRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlushStageCacheRequest] (val x: Self) extends AnyVal {
     
     inline def setRestApiId(value: String): Self = StObject.set(x, "restApiId", value.asInstanceOf[js.Any])
     

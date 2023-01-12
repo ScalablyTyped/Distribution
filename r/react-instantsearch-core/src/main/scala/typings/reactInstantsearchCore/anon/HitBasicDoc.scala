@@ -28,7 +28,8 @@ object HitBasicDoc {
     __obj.asInstanceOf[HitBasicDoc]
   }
   
-  extension [Self <: HitBasicDoc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HitBasicDoc] (val x: Self) extends AnyVal {
     
     inline def setObjectID(value: String): Self = StObject.set(x, "objectID", value.asInstanceOf[js.Any])
     

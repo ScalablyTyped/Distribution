@@ -26,7 +26,8 @@ object distAdapterIadapterMod {
       __obj.asInstanceOf[IAdapter[T]]
     }
     
-    extension [Self <: IAdapter[?], T](x: Self & IAdapter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAdapter[?], T] (val x: Self & IAdapter[T]) extends AnyVal {
       
       inline def setReadAsync(value: () => js.Promise[T | Null]): Self = StObject.set(x, "readAsync", js.Any.fromFunction0(value))
       
@@ -50,7 +51,8 @@ object distAdapterIadapterMod {
       __obj.asInstanceOf[IFileAdapter[T]]
     }
     
-    extension [Self <: IFileAdapter[?], T](x: Self & IFileAdapter[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFileAdapter[?], T] (val x: Self & IFileAdapter[T]) extends AnyVal {
       
       inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
     }

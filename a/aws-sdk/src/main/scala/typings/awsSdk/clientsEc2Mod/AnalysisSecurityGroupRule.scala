@@ -43,7 +43,8 @@ object AnalysisSecurityGroupRule {
     __obj.asInstanceOf[AnalysisSecurityGroupRule]
   }
   
-  extension [Self <: AnalysisSecurityGroupRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisSecurityGroupRule] (val x: Self) extends AnyVal {
     
     inline def setCidr(value: String): Self = StObject.set(x, "Cidr", value.asInstanceOf[js.Any])
     

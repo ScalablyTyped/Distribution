@@ -24,7 +24,8 @@ object AnalysisIcuTransformTokenFilter {
     __obj.asInstanceOf[AnalysisIcuTransformTokenFilter]
   }
   
-  extension [Self <: AnalysisIcuTransformTokenFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisIcuTransformTokenFilter] (val x: Self) extends AnyVal {
     
     inline def setDir(value: AnalysisIcuTransformDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
     

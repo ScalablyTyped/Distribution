@@ -18,7 +18,8 @@ object UrlsSearchRequest {
     __obj.asInstanceOf[UrlsSearchRequest]
   }
   
-  extension [Self <: UrlsSearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlsSearchRequest] (val x: Self) extends AnyVal {
     
     inline def setQ(value: String): Self = StObject.set(x, "q", value.asInstanceOf[js.Any])
   }

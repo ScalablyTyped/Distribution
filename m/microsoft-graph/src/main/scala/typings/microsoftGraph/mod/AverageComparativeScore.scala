@@ -19,7 +19,8 @@ object AverageComparativeScore {
     __obj.asInstanceOf[AverageComparativeScore]
   }
   
-  extension [Self <: AverageComparativeScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AverageComparativeScore] (val x: Self) extends AnyVal {
     
     inline def setAverageScore(value: NullableOption[Double]): Self = StObject.set(x, "averageScore", value.asInstanceOf[js.Any])
     

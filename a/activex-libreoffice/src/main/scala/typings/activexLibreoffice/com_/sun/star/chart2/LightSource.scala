@@ -25,7 +25,8 @@ object LightSource {
     __obj.asInstanceOf[LightSource]
   }
   
-  extension [Self <: LightSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LightSource] (val x: Self) extends AnyVal {
     
     inline def setADirection(value: Direction3D): Self = StObject.set(x, "aDirection", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[AreMergedPropsEqual[TMergedProps]]
     }
     
-    extension [Self <: AreMergedPropsEqual[?], TMergedProps](x: Self & AreMergedPropsEqual[TMergedProps]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AreMergedPropsEqual[?], TMergedProps] (val x: Self & AreMergedPropsEqual[TMergedProps]) extends AnyVal {
       
       inline def setAreMergedPropsEqual(value: (TMergedProps, TMergedProps) => Boolean): Self = StObject.set(x, "areMergedPropsEqual", js.Any.fromFunction2(value))
       
@@ -77,7 +78,8 @@ object anon {
       __obj.asInstanceOf[Clear]
     }
     
-    extension [Self <: Clear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clear] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -100,7 +102,8 @@ object anon {
       __obj.asInstanceOf[DependsOnOwnProps]
     }
     
-    extension [Self <: DependsOnOwnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DependsOnOwnProps] (val x: Self) extends AnyVal {
       
       inline def setDependsOnOwnProps(value: Boolean): Self = StObject.set(x, "dependsOnOwnProps", value.asInstanceOf[js.Any])
       
@@ -123,7 +126,8 @@ object anon {
       __obj.asInstanceOf[DisplayName]
     }
     
-    extension [Self <: DisplayName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayName] (val x: Self) extends AnyVal {
       
       inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     }
@@ -156,7 +160,8 @@ object anon {
       __obj.asInstanceOf[WrappedComponent[C]]
     }
     
-    extension [Self <: WrappedComponent[?], C /* <: ComponentType[Any] */](x: Self & WrappedComponent[C]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedComponent[?], C /* <: ComponentType[Any] */] (val x: Self & WrappedComponent[C]) extends AnyVal {
       
       inline def setWrappedComponent(value: C): Self = StObject.set(x, "WrappedComponent", value.asInstanceOf[js.Any])
     }
@@ -173,7 +178,8 @@ object anon {
       __obj.asInstanceOf[WrappedComponentName]
     }
     
-    extension [Self <: WrappedComponentName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrappedComponentName] (val x: Self) extends AnyVal {
       
       inline def setWrappedComponentName(value: String): Self = StObject.set(x, "wrappedComponentName", value.asInstanceOf[js.Any])
     }

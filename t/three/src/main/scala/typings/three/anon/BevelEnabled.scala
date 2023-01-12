@@ -42,7 +42,8 @@ object BevelEnabled {
     __obj.asInstanceOf[BevelEnabled]
   }
   
-  extension [Self <: BevelEnabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BevelEnabled] (val x: Self) extends AnyVal {
     
     inline def setBevelEnabled(value: Boolean): Self = StObject.set(x, "bevelEnabled", value.asInstanceOf[js.Any])
     

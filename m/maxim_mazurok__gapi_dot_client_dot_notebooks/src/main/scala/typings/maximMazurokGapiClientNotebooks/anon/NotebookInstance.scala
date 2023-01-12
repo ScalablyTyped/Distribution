@@ -53,7 +53,8 @@ object NotebookInstance {
     __obj.asInstanceOf[NotebookInstance]
   }
   
-  extension [Self <: NotebookInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotebookInstance] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object OrderBy {
     __obj.asInstanceOf[OrderBy]
   }
   
-  extension [Self <: OrderBy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OrderBy] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Any): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

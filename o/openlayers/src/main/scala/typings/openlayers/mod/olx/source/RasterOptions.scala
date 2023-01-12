@@ -31,7 +31,8 @@ object RasterOptions {
     __obj.asInstanceOf[RasterOptions]
   }
   
-  extension [Self <: RasterOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RasterOptions] (val x: Self) extends AnyVal {
     
     inline def setLib(value: GlobalObject): Self = StObject.set(x, "lib", value.asInstanceOf[js.Any])
     

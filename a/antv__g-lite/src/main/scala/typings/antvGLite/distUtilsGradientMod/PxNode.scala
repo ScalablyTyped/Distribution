@@ -19,7 +19,8 @@ object PxNode {
     __obj.asInstanceOf[PxNode]
   }
   
-  extension [Self <: PxNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PxNode] (val x: Self) extends AnyVal {
     
     inline def setType(value: px): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

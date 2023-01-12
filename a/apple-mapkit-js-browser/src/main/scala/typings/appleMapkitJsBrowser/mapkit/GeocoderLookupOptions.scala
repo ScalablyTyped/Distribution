@@ -37,7 +37,8 @@ object GeocoderLookupOptions {
     __obj.asInstanceOf[GeocoderLookupOptions]
   }
   
-  extension [Self <: GeocoderLookupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderLookupOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: Coordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

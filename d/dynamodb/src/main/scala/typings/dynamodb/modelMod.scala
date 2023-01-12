@@ -154,7 +154,8 @@ object modelMod {
         __obj.asInstanceOf[OperationOptions]
       }
       
-      extension [Self <: OperationOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OperationOptions] (val x: Self) extends AnyVal {
         
         inline def setConditionExpression(value: Any): Self = StObject.set(x, "ConditionExpression", value.asInstanceOf[js.Any])
         
@@ -206,7 +207,8 @@ object modelMod {
       __obj.asInstanceOf[Page[T]]
     }
     
-    extension [Self <: Page[?], T](x: Self & Page[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Page[?], T] (val x: Self & Page[T]) extends AnyVal {
       
       inline def setConsumedCapacity(value: CapacityUnits): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
       

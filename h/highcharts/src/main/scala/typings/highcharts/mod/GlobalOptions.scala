@@ -19,7 +19,8 @@ object GlobalOptions {
     __obj.asInstanceOf[GlobalOptions]
   }
   
-  extension [Self <: GlobalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalOptions] (val x: Self) extends AnyVal {
     
     inline def setVMLRadialGradientURL(value: String): Self = StObject.set(x, "VMLRadialGradientURL", value.asInstanceOf[js.Any])
     

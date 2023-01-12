@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[AnalyzedFilesInfo]
     }
     
-    extension [Self <: AnalyzedFilesInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnalyzedFilesInfo] (val x: Self) extends AnyVal {
       
       inline def setChangedFiles(value: js.Array[String]): Self = StObject.set(x, "changedFiles", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[FileDescriptor]
     }
     
-    extension [Self <: FileDescriptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileDescriptor] (val x: Self) extends AnyVal {
       
       inline def setChanged(value: Boolean): Self = StObject.set(x, "changed", value.asInstanceOf[js.Any])
       

@@ -41,7 +41,8 @@ object b2GearJointDef {
     __obj.asInstanceOf[b2GearJointDef]
   }
   
-  extension [Self <: b2GearJointDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: b2GearJointDef] (val x: Self) extends AnyVal {
     
     inline def setJoint1(value: b2Joint): Self = StObject.set(x, "joint1", value.asInstanceOf[js.Any])
     

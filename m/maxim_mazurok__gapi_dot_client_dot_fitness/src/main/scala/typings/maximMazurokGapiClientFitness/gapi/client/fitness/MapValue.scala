@@ -16,7 +16,8 @@ object MapValue {
     __obj.asInstanceOf[MapValue]
   }
   
-  extension [Self <: MapValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapValue] (val x: Self) extends AnyVal {
     
     inline def setFpVal(value: Double): Self = StObject.set(x, "fpVal", value.asInstanceOf[js.Any])
     

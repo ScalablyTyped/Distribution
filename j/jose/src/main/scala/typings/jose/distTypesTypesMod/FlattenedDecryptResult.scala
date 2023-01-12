@@ -28,7 +28,8 @@ object FlattenedDecryptResult {
     __obj.asInstanceOf[FlattenedDecryptResult]
   }
   
-  extension [Self <: FlattenedDecryptResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlattenedDecryptResult] (val x: Self) extends AnyVal {
     
     inline def setAdditionalAuthenticatedData(value: js.typedarray.Uint8Array): Self = StObject.set(x, "additionalAuthenticatedData", value.asInstanceOf[js.Any])
     

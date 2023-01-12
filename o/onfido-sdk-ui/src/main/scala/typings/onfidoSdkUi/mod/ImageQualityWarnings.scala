@@ -23,7 +23,8 @@ object ImageQualityWarnings {
     __obj.asInstanceOf[ImageQualityWarnings]
   }
   
-  extension [Self <: ImageQualityWarnings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageQualityWarnings] (val x: Self) extends AnyVal {
     
     inline def setDetect_blur(value: Valid): Self = StObject.set(x, "detect_blur", value.asInstanceOf[js.Any])
     

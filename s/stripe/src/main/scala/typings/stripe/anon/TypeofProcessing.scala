@@ -15,7 +15,8 @@ object TypeofProcessing {
     __obj.asInstanceOf[TypeofProcessing]
   }
   
-  extension [Self <: TypeofProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofProcessing] (val x: Self) extends AnyVal {
     
     inline def setCard(value: Any): Self = StObject.set(x, "Card", value.asInstanceOf[js.Any])
   }

@@ -28,7 +28,8 @@ object INxAttrExprDef {
     __obj.asInstanceOf[INxAttrExprDef]
   }
   
-  extension [Self <: INxAttrExprDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAttrExprDef] (val x: Self) extends AnyVal {
     
     inline def setQExpression(value: String): Self = StObject.set(x, "qExpression", value.asInstanceOf[js.Any])
     

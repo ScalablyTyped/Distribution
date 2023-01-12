@@ -62,7 +62,8 @@ object mod {
       __obj.asInstanceOf[AttributeOperator]
     }
     
-    extension [Self <: AttributeOperator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeOperator] (val x: Self) extends AnyVal {
       
       inline def setP1(value: String): Self = StObject.set(x, "p1", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[CFG]
     }
     
-    extension [Self <: CFG](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CFG] (val x: Self) extends AnyVal {
       
       inline def setCombinators(value: String): Self = StObject.set(x, "combinators", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object mod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setIDS_DUPES(value: Boolean): Self = StObject.set(x, "IDS_DUPES", value.asInstanceOf[js.Any])
       
@@ -194,7 +197,8 @@ object mod {
       __obj.asInstanceOf[CustomSelectorResult]
     }
     
-    extension [Self <: CustomSelectorResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomSelectorResult] (val x: Self) extends AnyVal {
       
       inline def setMatch(value: RegExpMatchArray): Self = StObject.set(x, "match", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object mod {
       __obj.asInstanceOf[Global]
     }
     
-    extension [Self <: Global](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Global] (val x: Self) extends AnyVal {
       
       inline def setDOMException(
         value: Instantiable2[/* message */ js.UndefOr[String], /* name */ js.UndefOr[String], DOMException]
@@ -259,7 +264,8 @@ object mod {
       __obj.asInstanceOf[MatchResolver]
     }
     
-    extension [Self <: MatchResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatchResolver] (val x: Self) extends AnyVal {
       
       inline def setFactory(value: js.Array[MatchLambda[Element]]): Self = StObject.set(x, "factory", value.asInstanceOf[js.Any])
       
@@ -548,7 +554,8 @@ object mod {
       __obj.asInstanceOf[SelectResolver]
     }
     
-    extension [Self <: SelectResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectResolver] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* node */ Node => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

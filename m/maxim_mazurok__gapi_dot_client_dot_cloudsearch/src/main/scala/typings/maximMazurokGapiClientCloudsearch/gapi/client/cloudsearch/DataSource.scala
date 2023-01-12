@@ -51,7 +51,8 @@ object DataSource {
     __obj.asInstanceOf[DataSource]
   }
   
-  extension [Self <: DataSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSource] (val x: Self) extends AnyVal {
     
     inline def setDisableModifications(value: Boolean): Self = StObject.set(x, "disableModifications", value.asInstanceOf[js.Any])
     

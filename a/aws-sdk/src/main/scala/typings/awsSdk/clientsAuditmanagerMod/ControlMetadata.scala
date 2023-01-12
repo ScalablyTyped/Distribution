@@ -43,7 +43,8 @@ object ControlMetadata {
     __obj.asInstanceOf[ControlMetadata]
   }
   
-  extension [Self <: ControlMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlMetadata] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AuditManagerArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

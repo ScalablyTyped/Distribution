@@ -59,7 +59,8 @@ object OauthtokenPacketMirroring {
     __obj.asInstanceOf[OauthtokenPacketMirroring]
   }
   
-  extension [Self <: OauthtokenPacketMirroring](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OauthtokenPacketMirroring] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

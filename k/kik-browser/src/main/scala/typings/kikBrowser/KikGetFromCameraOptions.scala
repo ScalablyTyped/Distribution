@@ -19,7 +19,8 @@ object KikGetFromCameraOptions {
     __obj.asInstanceOf[KikGetFromCameraOptions]
   }
   
-  extension [Self <: KikGetFromCameraOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KikGetFromCameraOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxHeight(value: Double): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
     

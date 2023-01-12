@@ -20,7 +20,8 @@ object ServerMethodCache {
     __obj.asInstanceOf[ServerMethodCache]
   }
   
-  extension [Self <: ServerMethodCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerMethodCache] (val x: Self) extends AnyVal {
     
     inline def setGenerateTimeout(value: Double | `false`): Self = StObject.set(x, "generateTimeout", value.asInstanceOf[js.Any])
   }

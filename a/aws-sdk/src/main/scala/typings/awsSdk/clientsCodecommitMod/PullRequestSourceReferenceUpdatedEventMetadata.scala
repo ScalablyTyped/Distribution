@@ -33,7 +33,8 @@ object PullRequestSourceReferenceUpdatedEventMetadata {
     __obj.asInstanceOf[PullRequestSourceReferenceUpdatedEventMetadata]
   }
   
-  extension [Self <: PullRequestSourceReferenceUpdatedEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PullRequestSourceReferenceUpdatedEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setAfterCommitId(value: CommitId): Self = StObject.set(x, "afterCommitId", value.asInstanceOf[js.Any])
     

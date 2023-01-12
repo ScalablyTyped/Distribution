@@ -53,7 +53,8 @@ object typesNotAuthorizedExceptionMod {
       __obj.asInstanceOf[NotAuthorizedException]
     }
     
-    extension [Self <: NotAuthorizedException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotAuthorizedException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.NotAuthorizedException
@@ -75,7 +76,8 @@ object typesNotAuthorizedExceptionMod {
       __obj.asInstanceOf[NotAuthorizedExceptionDetails]
     }
     
-    extension [Self <: NotAuthorizedExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotAuthorizedExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

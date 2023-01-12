@@ -50,7 +50,8 @@ object typesSendMessageBatchRequestEntryMod {
       __obj.asInstanceOf[SendMessageBatchRequestEntry]
     }
     
-    extension [Self <: SendMessageBatchRequestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SendMessageBatchRequestEntry] (val x: Self) extends AnyVal {
       
       inline def setDelaySeconds(value: Double): Self = StObject.set(x, "DelaySeconds", value.asInstanceOf[js.Any])
       
@@ -93,7 +94,8 @@ object typesSendMessageBatchRequestEntryMod {
       __obj.asInstanceOf[UnmarshalledSendMessageBatchRequestEntry]
     }
     
-    extension [Self <: UnmarshalledSendMessageBatchRequestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledSendMessageBatchRequestEntry] (val x: Self) extends AnyVal {
       
       inline def setMessageAttributes(value: StringDictionary[UnmarshalledMessageAttributeValue]): Self = StObject.set(x, "MessageAttributes", value.asInstanceOf[js.Any])
       

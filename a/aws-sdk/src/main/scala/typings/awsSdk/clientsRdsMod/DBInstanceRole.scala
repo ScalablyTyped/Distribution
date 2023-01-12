@@ -28,7 +28,8 @@ object DBInstanceRole {
     __obj.asInstanceOf[DBInstanceRole]
   }
   
-  extension [Self <: DBInstanceRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DBInstanceRole] (val x: Self) extends AnyVal {
     
     inline def setFeatureName(value: String): Self = StObject.set(x, "FeatureName", value.asInstanceOf[js.Any])
     

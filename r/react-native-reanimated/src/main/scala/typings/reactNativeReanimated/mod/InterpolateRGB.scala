@@ -21,7 +21,8 @@ object InterpolateRGB {
     __obj.asInstanceOf[InterpolateRGB]
   }
   
-  extension [Self <: InterpolateRGB](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InterpolateRGB] (val x: Self) extends AnyVal {
     
     inline def setA(value: js.Array[Double]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

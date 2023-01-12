@@ -28,7 +28,8 @@ object distCommonAuthMod {
       __obj.asInstanceOf[AwsSigningConfigBase]
     }
     
-    extension [Self <: AwsSigningConfigBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AwsSigningConfigBase] (val x: Self) extends AnyVal {
       
       inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object distCommonAuthMod {
       __obj.asInstanceOf[WebsocketOptionsBase]
     }
     
-    extension [Self <: WebsocketOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebsocketOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setCreate_signing_config(value: () => AwsSigningConfigBase): Self = StObject.set(x, "create_signing_config", js.Any.fromFunction0(value))
       

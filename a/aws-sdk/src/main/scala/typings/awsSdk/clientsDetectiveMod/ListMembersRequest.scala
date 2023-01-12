@@ -28,7 +28,8 @@ object ListMembersRequest {
     __obj.asInstanceOf[ListMembersRequest]
   }
   
-  extension [Self <: ListMembersRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMembersRequest] (val x: Self) extends AnyVal {
     
     inline def setGraphArn(value: GraphArn): Self = StObject.set(x, "GraphArn", value.asInstanceOf[js.Any])
     

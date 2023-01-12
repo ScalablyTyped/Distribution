@@ -42,7 +42,8 @@ object PlaidLinkOnEventMetadata {
     __obj.asInstanceOf[PlaidLinkOnEventMetadata]
   }
   
-  extension [Self <: PlaidLinkOnEventMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaidLinkOnEventMetadata] (val x: Self) extends AnyVal {
     
     inline def setError_code(value: String): Self = StObject.set(x, "error_code", value.asInstanceOf[js.Any])
     

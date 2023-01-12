@@ -19,7 +19,8 @@ object SheetsChartReferenceSuggestionState {
     __obj.asInstanceOf[SheetsChartReferenceSuggestionState]
   }
   
-  extension [Self <: SheetsChartReferenceSuggestionState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SheetsChartReferenceSuggestionState] (val x: Self) extends AnyVal {
     
     inline def setChartIdSuggested(value: Boolean): Self = StObject.set(x, "chartIdSuggested", value.asInstanceOf[js.Any])
     

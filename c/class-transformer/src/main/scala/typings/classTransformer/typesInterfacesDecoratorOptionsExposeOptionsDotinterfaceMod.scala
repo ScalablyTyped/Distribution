@@ -62,7 +62,8 @@ object typesInterfacesDecoratorOptionsExposeOptionsDotinterfaceMod {
       __obj.asInstanceOf[ExposeOptions]
     }
     
-    extension [Self <: ExposeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExposeOptions] (val x: Self) extends AnyVal {
       
       inline def setGroups(value: js.Array[String]): Self = StObject.set(x, "groups", value.asInstanceOf[js.Any])
       

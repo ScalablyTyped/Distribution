@@ -25,7 +25,8 @@ object PartialSearchIconReactNod {
     __obj.asInstanceOf[PartialSearchIconReactNod]
   }
   
-  extension [Self <: PartialSearchIconReactNod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialSearchIconReactNod] (val x: Self) extends AnyVal {
     
     inline def setDownloadIcon(value: ReactNode): Self = StObject.set(x, "DownloadIcon", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object Parties {
     __obj.asInstanceOf[Parties]
   }
   
-  extension [Self <: Parties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parties] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[Address]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

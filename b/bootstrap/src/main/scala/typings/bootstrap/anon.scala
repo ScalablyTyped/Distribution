@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[Hide]
     }
     
-    extension [Self <: Hide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Hide] (val x: Self) extends AnyVal {
       
       inline def setHide(value: Double): Self = StObject.set(x, "hide", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialOptions]
     }
     
-    extension [Self <: PartialOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: Double | `false`): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -163,7 +165,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsAllowList]
     }
     
-    extension [Self <: PartialOptionsAllowList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsAllowList] (val x: Self) extends AnyVal {
       
       inline def setAllowList(value: RecordkeyofHTMLElementTag): Self = StObject.set(x, "allowList", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsAnimation]
     }
     
-    extension [Self <: PartialOptionsAnimation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsAnimation] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -317,7 +321,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsAutoClose]
     }
     
-    extension [Self <: PartialOptionsAutoClose](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsAutoClose] (val x: Self) extends AnyVal {
       
       inline def setAutoClose(value: Boolean | inside | outside): Self = StObject.set(x, "autoClose", value.asInstanceOf[js.Any])
       
@@ -373,7 +378,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsBackdrop]
     }
     
-    extension [Self <: PartialOptionsBackdrop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsBackdrop] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: static | Boolean): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
@@ -439,7 +445,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsBoundary]
     }
     
-    extension [Self <: PartialOptionsBoundary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsBoundary] (val x: Self) extends AnyVal {
       
       inline def setAllowList(value: RecordkeyofHTMLElementTag): Self = StObject.set(x, "allowList", value.asInstanceOf[js.Any])
       
@@ -549,7 +556,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsKeyboard]
     }
     
-    extension [Self <: PartialOptionsKeyboard](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsKeyboard] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: Boolean | static): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
@@ -587,7 +595,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsMethod]
     }
     
-    extension [Self <: PartialOptionsMethod](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsMethod] (val x: Self) extends AnyVal {
       
       inline def setMethod(value: auto | offset | position): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
@@ -635,7 +644,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsModifiers]
     }
     
-    extension [Self <: PartialOptionsModifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsModifiers] (val x: Self) extends AnyVal {
       
       inline def setModifiers(value: js.Array[PartialModifieranyany]): Self = StObject.set(x, "modifiers", value.asInstanceOf[js.Any])
       
@@ -671,7 +681,8 @@ object anon {
       __obj.asInstanceOf[PartialOptionsParent]
     }
     
-    extension [Self <: PartialOptionsParent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialOptionsParent] (val x: Self) extends AnyVal {
       
       inline def setParent(value: String | Element | JQuery): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
       
@@ -1034,7 +1045,8 @@ object anon {
       __obj.asInstanceOf[RecordkeyofHTMLElementTag]
     }
     
-    extension [Self <: RecordkeyofHTMLElementTag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RecordkeyofHTMLElementTag] (val x: Self) extends AnyVal {
       
       inline def setA(value: js.Array[String | js.RegExp]): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
       

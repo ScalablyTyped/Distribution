@@ -25,7 +25,8 @@ object typesBucketMod {
       __obj.asInstanceOf[Bucket]
     }
     
-    extension [Self <: Bucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bucket] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date | String | Double): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object typesBucketMod {
       __obj.asInstanceOf[UnmarshalledBucket]
     }
     
-    extension [Self <: UnmarshalledBucket](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledBucket] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "CreationDate", value.asInstanceOf[js.Any])
       

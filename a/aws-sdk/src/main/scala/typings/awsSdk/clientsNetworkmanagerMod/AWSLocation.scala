@@ -23,7 +23,8 @@ object AWSLocation {
     __obj.asInstanceOf[AWSLocation]
   }
   
-  extension [Self <: AWSLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AWSLocation] (val x: Self) extends AnyVal {
     
     inline def setSubnetArn(value: SubnetArn): Self = StObject.set(x, "SubnetArn", value.asInstanceOf[js.Any])
     

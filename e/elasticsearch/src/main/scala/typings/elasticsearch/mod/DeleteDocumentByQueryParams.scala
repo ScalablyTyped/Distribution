@@ -87,7 +87,8 @@ object DeleteDocumentByQueryParams {
     __obj.asInstanceOf[DeleteDocumentByQueryParams]
   }
   
-  extension [Self <: DeleteDocumentByQueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDocumentByQueryParams] (val x: Self) extends AnyVal {
     
     inline def setAllowNoIndices(value: Boolean): Self = StObject.set(x, "allowNoIndices", value.asInstanceOf[js.Any])
     

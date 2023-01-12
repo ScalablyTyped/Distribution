@@ -34,7 +34,8 @@ object libPromptMod {
       __obj.asInstanceOf[PromptConfig]
     }
     
-    extension [Self <: PromptConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptConfig] (val x: Self) extends AnyVal {
       
       inline def setMessages(value: PromptMessages): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libPromptMod {
       __obj.asInstanceOf[PromptMessages]
     }
     
-    extension [Self <: PromptMessages](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromptMessages] (val x: Self) extends AnyVal {
       
       inline def setEmptyWarning(value: String): Self = StObject.set(x, "emptyWarning", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object libPromptMod {
       __obj.asInstanceOf[UserPromptConfig]
     }
     
-    extension [Self <: UserPromptConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserPromptConfig] (val x: Self) extends AnyVal {
       
       inline def setMessages(
         value: /* import warning: importer.ImportType#apply Failed type conversion: {[ K in any | undefined ]:? @commitlint/types.@commitlint/types/lib/prompt.PromptMessages[K]} */ js.Any

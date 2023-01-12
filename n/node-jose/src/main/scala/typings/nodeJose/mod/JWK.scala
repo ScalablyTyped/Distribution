@@ -109,7 +109,8 @@ object JWK {
       __obj.asInstanceOf[JWEEncryptor]
     }
     
-    extension [Self <: JWEEncryptor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWEEncryptor] (val x: Self) extends AnyVal {
       
       inline def setFinal(value: () => js.Promise[String]): Self = StObject.set(x, "final", js.Any.fromFunction0(value))
       
@@ -254,7 +255,8 @@ object JWK {
       __obj.asInstanceOf[KeyStoreGetFilter]
     }
     
-    extension [Self <: KeyStoreGetFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyStoreGetFilter] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object JWK {
       __obj.asInstanceOf[KeyStoreGetOptions]
     }
     
-    extension [Self <: KeyStoreGetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyStoreGetOptions] (val x: Self) extends AnyVal {
       
       inline def setKid(value: String): Self = StObject.set(x, "kid", value.asInstanceOf[js.Any])
     }
@@ -326,7 +329,8 @@ object JWK {
       __obj.asInstanceOf[RawKey]
     }
     
-    extension [Self <: RawKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawKey] (val x: Self) extends AnyVal {
       
       inline def setAlg(value: String): Self = StObject.set(x, "alg", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object TypeofMenu {
     __obj.asInstanceOf[TypeofMenu]
   }
   
-  extension [Self <: TypeofMenu](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofMenu] (val x: Self) extends AnyVal {
     
     inline def setFn(value: Menu): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
     

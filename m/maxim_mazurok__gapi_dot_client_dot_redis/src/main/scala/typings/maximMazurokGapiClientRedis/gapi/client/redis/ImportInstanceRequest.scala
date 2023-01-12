@@ -16,7 +16,8 @@ object ImportInstanceRequest {
     __obj.asInstanceOf[ImportInstanceRequest]
   }
   
-  extension [Self <: ImportInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setInputConfig(value: InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     

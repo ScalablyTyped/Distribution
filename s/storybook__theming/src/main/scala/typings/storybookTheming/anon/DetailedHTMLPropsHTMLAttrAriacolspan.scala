@@ -634,7 +634,8 @@ object DetailedHTMLPropsHTMLAttrAriacolspan {
     __obj.asInstanceOf[DetailedHTMLPropsHTMLAttrAriacolspan]
   }
   
-  extension [Self <: DetailedHTMLPropsHTMLAttrAriacolspan](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsHTMLAttrAriacolspan] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

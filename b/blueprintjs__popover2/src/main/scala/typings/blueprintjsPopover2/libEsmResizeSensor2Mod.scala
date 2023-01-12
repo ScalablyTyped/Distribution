@@ -97,7 +97,8 @@ object libEsmResizeSensor2Mod {
       __obj.asInstanceOf[ResizeSensor2Props]
     }
     
-    extension [Self <: ResizeSensor2Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResizeSensor2Props] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Element): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object ContainerLogsOptionsfolloAbortSignal {
     __obj.asInstanceOf[ContainerLogsOptionsfolloAbortSignal]
   }
   
-  extension [Self <: ContainerLogsOptionsfolloAbortSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerLogsOptionsfolloAbortSignal] (val x: Self) extends AnyVal {
     
     inline def setAbortSignal(value: AbortSignal): Self = StObject.set(x, "abortSignal", value.asInstanceOf[js.Any])
     

@@ -143,7 +143,8 @@ object distRouterMod {
       __obj.asInstanceOf[FetcherStates[TData]]
     }
     
-    extension [Self <: FetcherStates[?], TData](x: Self & FetcherStates[TData]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetcherStates[?], TData] (val x: Self & FetcherStates[TData]) extends AnyVal {
       
       inline def setIdle(value: Data[TData]): Self = StObject.set(x, "Idle", value.asInstanceOf[js.Any])
       
@@ -173,7 +174,8 @@ object distRouterMod {
       __obj.asInstanceOf[HydrationState]
     }
     
-    extension [Self <: HydrationState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydrationState] (val x: Self) extends AnyVal {
       
       inline def setActionData(value: RouteData): Self = StObject.set(x, "actionData", value.asInstanceOf[js.Any])
       
@@ -213,7 +215,8 @@ object distRouterMod {
       __obj.asInstanceOf[LinkNavigateOptions]
     }
     
-    extension [Self <: LinkNavigateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkNavigateOptions] (val x: Self) extends AnyVal {
       
       inline def setPreventScrollReset(value: Boolean): Self = StObject.set(x, "preventScrollReset", value.asInstanceOf[js.Any])
       
@@ -269,7 +272,8 @@ object distRouterMod {
       __obj.asInstanceOf[NavigationStates]
     }
     
-    extension [Self <: NavigationStates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationStates] (val x: Self) extends AnyVal {
       
       inline def setIdle(value: FormEncType): Self = StObject.set(x, "Idle", value.asInstanceOf[js.Any])
       
@@ -484,7 +488,8 @@ object distRouterMod {
       __obj.asInstanceOf[RouterInit]
     }
     
-    extension [Self <: RouterInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterInit] (val x: Self) extends AnyVal {
       
       inline def setBasename(value: String): Self = StObject.set(x, "basename", value.asInstanceOf[js.Any])
       
@@ -603,7 +608,8 @@ object distRouterMod {
       __obj.asInstanceOf[RouterState]
     }
     
-    extension [Self <: RouterState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterState] (val x: Self) extends AnyVal {
       
       inline def setActionData(value: RouteData): Self = StObject.set(x, "actionData", value.asInstanceOf[js.Any])
       
@@ -686,7 +692,8 @@ object distRouterMod {
       __obj.asInstanceOf[StaticHandlerContext]
     }
     
-    extension [Self <: StaticHandlerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticHandlerContext] (val x: Self) extends AnyVal {
       
       inline def setActionData(value: RouteData): Self = StObject.set(x, "actionData", value.asInstanceOf[js.Any])
       
@@ -742,7 +749,8 @@ object distRouterMod {
       __obj.asInstanceOf[SubmissionNavigateOptions]
     }
     
-    extension [Self <: SubmissionNavigateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubmissionNavigateOptions] (val x: Self) extends AnyVal {
       
       inline def setFormData(value: typings.std.FormData): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
       
@@ -783,7 +791,8 @@ object distRouterMod {
       __obj.asInstanceOf[UseMatchesMatch]
     }
     
-    extension [Self <: UseMatchesMatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseMatchesMatch] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

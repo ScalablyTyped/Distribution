@@ -24,7 +24,8 @@ object ProcedureAst {
     __obj.asInstanceOf[ProcedureAst]
   }
   
-  extension [Self <: ProcedureAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcedureAst] (val x: Self) extends AnyVal {
     
     inline def setArgs(value: js.Array[Ast]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     

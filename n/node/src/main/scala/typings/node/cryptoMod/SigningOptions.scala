@@ -22,7 +22,8 @@ object SigningOptions {
     __obj.asInstanceOf[SigningOptions]
   }
   
-  extension [Self <: SigningOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SigningOptions] (val x: Self) extends AnyVal {
     
     inline def setDsaEncoding(value: DSAEncoding): Self = StObject.set(x, "dsaEncoding", value.asInstanceOf[js.Any])
     

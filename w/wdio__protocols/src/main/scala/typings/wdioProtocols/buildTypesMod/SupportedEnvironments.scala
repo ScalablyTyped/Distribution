@@ -19,7 +19,8 @@ object SupportedEnvironments {
     __obj.asInstanceOf[SupportedEnvironments]
   }
   
-  extension [Self <: SupportedEnvironments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SupportedEnvironments] (val x: Self) extends AnyVal {
     
     inline def setAndroid(value: RecordEnvironmentsstring): Self = StObject.set(x, "android", value.asInstanceOf[js.Any])
     

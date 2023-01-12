@@ -79,7 +79,8 @@ object libMapCalloutMod {
       __obj.asInstanceOf[MapCalloutProps]
     }
     
-    extension [Self <: MapCalloutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapCalloutProps] (val x: Self) extends AnyVal {
       
       inline def setAlphaHitTest(value: Boolean): Self = StObject.set(x, "alphaHitTest", value.asInstanceOf[js.Any])
       

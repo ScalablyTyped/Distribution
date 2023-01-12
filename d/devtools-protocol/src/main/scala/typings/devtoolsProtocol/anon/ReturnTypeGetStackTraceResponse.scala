@@ -19,7 +19,8 @@ object ReturnTypeGetStackTraceResponse {
     __obj.asInstanceOf[ReturnTypeGetStackTraceResponse]
   }
   
-  extension [Self <: ReturnTypeGetStackTraceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetStackTraceResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetStackTraceRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

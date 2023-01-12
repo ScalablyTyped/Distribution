@@ -17,7 +17,8 @@ object AriaLiveRegion {
     __obj.asInstanceOf[AriaLiveRegion]
   }
   
-  extension [Self <: AriaLiveRegion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AriaLiveRegion] (val x: Self) extends AnyVal {
     
     inline def setAriaLiveRegion(value: NavigationFromKeyboard): Self = StObject.set(x, "ariaLiveRegion", value.asInstanceOf[js.Any])
     

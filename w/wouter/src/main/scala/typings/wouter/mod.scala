@@ -75,7 +75,8 @@ object mod {
       __obj.asInstanceOf[RouteComponentProps[T]]
     }
     
-    extension [Self <: RouteComponentProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](x: Self & RouteComponentProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteComponentProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */] (val x: Self & RouteComponentProps[T]) extends AnyVal {
       
       inline def setParams(value: T): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     }
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[RouteProps[T]]
     }
     
-    extension [Self <: RouteProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */](x: Self & RouteProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouteProps[?], T /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DefaultParams */ Any */] (val x: Self & RouteProps[T]) extends AnyVal {
       
       inline def setChildren(
         value: (js.Function1[
@@ -151,7 +153,8 @@ object mod {
       __obj.asInstanceOf[RouterProps]
     }
     
-    extension [Self <: RouterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RouterProps] (val x: Self) extends AnyVal {
       
       inline def setBase(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Path */ Any
@@ -180,7 +183,8 @@ object mod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -67,7 +67,8 @@ object ConnectorBinding {
     __obj.asInstanceOf[ConnectorBinding]
   }
   
-  extension [Self <: ConnectorBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorBinding] (val x: Self) extends AnyVal {
     
     inline def setConnectSequentially(value: Boolean): Self = StObject.set(x, "connectSequentially", value.asInstanceOf[js.Any])
     

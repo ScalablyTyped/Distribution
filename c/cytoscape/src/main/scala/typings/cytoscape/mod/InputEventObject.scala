@@ -41,7 +41,8 @@ object InputEventObject {
     __obj.asInstanceOf[InputEventObject]
   }
   
-  extension [Self <: InputEventObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputEventObject] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: MouseEvent): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

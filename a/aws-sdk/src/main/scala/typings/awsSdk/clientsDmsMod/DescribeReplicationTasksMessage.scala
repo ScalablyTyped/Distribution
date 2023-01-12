@@ -33,7 +33,8 @@ object DescribeReplicationTasksMessage {
     __obj.asInstanceOf[DescribeReplicationTasksMessage]
   }
   
-  extension [Self <: DescribeReplicationTasksMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeReplicationTasksMessage] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

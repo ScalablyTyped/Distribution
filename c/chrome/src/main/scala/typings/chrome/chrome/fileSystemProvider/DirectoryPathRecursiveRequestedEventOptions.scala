@@ -18,7 +18,8 @@ object DirectoryPathRecursiveRequestedEventOptions {
     __obj.asInstanceOf[DirectoryPathRecursiveRequestedEventOptions]
   }
   
-  extension [Self <: DirectoryPathRecursiveRequestedEventOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryPathRecursiveRequestedEventOptions] (val x: Self) extends AnyVal {
     
     inline def setRecursive(value: Boolean): Self = StObject.set(x, "recursive", value.asInstanceOf[js.Any])
   }

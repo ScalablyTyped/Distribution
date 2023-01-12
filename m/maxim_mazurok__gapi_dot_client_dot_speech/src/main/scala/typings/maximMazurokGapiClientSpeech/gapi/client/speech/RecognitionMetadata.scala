@@ -43,7 +43,8 @@ object RecognitionMetadata {
     __obj.asInstanceOf[RecognitionMetadata]
   }
   
-  extension [Self <: RecognitionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecognitionMetadata] (val x: Self) extends AnyVal {
     
     inline def setAudioTopic(value: String): Self = StObject.set(x, "audioTopic", value.asInstanceOf[js.Any])
     

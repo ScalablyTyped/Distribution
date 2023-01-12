@@ -22,7 +22,8 @@ object ManagedCertificate {
     __obj.asInstanceOf[ManagedCertificate]
   }
   
-  extension [Self <: ManagedCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedCertificate] (val x: Self) extends AnyVal {
     
     inline def setLastRenewalTime(value: String): Self = StObject.set(x, "lastRenewalTime", value.asInstanceOf[js.Any])
     

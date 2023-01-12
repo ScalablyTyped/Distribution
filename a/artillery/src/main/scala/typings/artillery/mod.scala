@@ -26,7 +26,8 @@ object mod {
       __obj.asInstanceOf[ScenarioContext]
     }
     
-    extension [Self <: ScenarioContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScenarioContext] (val x: Self) extends AnyVal {
       
       inline def setVars(value: StringDictionary[Any]): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
     }

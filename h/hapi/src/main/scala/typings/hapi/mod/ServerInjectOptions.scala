@@ -37,7 +37,8 @@ object ServerInjectOptions {
     __obj.asInstanceOf[ServerInjectOptions]
   }
   
-  extension [Self <: ServerInjectOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInjectOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowInternals(value: Boolean): Self = StObject.set(x, "allowInternals", value.asInstanceOf[js.Any])
     

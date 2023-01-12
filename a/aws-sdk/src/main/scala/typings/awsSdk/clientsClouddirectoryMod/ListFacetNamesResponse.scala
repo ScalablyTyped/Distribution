@@ -23,7 +23,8 @@ object ListFacetNamesResponse {
     __obj.asInstanceOf[ListFacetNamesResponse]
   }
   
-  extension [Self <: ListFacetNamesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFacetNamesResponse] (val x: Self) extends AnyVal {
     
     inline def setFacetNames(value: FacetNameList): Self = StObject.set(x, "FacetNames", value.asInstanceOf[js.Any])
     

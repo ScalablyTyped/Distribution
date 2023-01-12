@@ -108,7 +108,8 @@ object mod {
       __obj.asInstanceOf[ExpressFormidableEvents]
     }
     
-    extension [Self <: ExpressFormidableEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressFormidableEvents] (val x: Self) extends AnyVal {
       
       inline def setAction(
         value: (Request_[
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ExpressFormidableOptions]
     }
     
-    extension [Self <: ExpressFormidableOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExpressFormidableOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setFields(value: Fields): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
           

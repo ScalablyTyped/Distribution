@@ -75,7 +75,8 @@ object Statement {
     __obj.asInstanceOf[Statement]
   }
   
-  extension [Self <: Statement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Statement] (val x: Self) extends AnyVal {
     
     inline def setUseBookmarks(value: Boolean): Self = StObject.set(x, "UseBookmarks", value.asInstanceOf[js.Any])
   }

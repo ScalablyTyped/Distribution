@@ -75,7 +75,8 @@ object esAuthAuthenticatorsTokenRequestBasedAuthenticatorMod {
       __obj.asInstanceOf[BaseOptions]
     }
     
-    extension [Self <: BaseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseOptions] (val x: Self) extends AnyVal {
       
       inline def setDisableSslVerification(value: Boolean): Self = StObject.set(x, "disableSslVerification", value.asInstanceOf[js.Any])
       

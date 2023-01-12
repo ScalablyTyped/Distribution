@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[Comment]
     }
     
-    extension [Self <: Comment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Comment] (val x: Self) extends AnyVal {
       
       inline def setComment(value: Chalk): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object anon {
       __obj.asInstanceOf[PickCreateCallsiteRecordO]
     }
     
-    extension [Self <: PickCreateCallsiteRecordO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickCreateCallsiteRecordO] (val x: Self) extends AnyVal {
       
       inline def setForError(value: js.Error): Self = StObject.set(x, "forError", value.asInstanceOf[js.Any])
       
@@ -104,7 +106,8 @@ object anon {
       __obj.asInstanceOf[PickCreateCallsiteRecordOByFunctionName]
     }
     
-    extension [Self <: PickCreateCallsiteRecordOByFunctionName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PickCreateCallsiteRecordOByFunctionName] (val x: Self) extends AnyVal {
       
       inline def setByFunctionName(value: String): Self = StObject.set(x, "byFunctionName", value.asInstanceOf[js.Any])
       

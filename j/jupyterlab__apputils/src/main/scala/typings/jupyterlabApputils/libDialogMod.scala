@@ -365,7 +365,8 @@ object libDialogMod {
         __obj.asInstanceOf[IButton]
       }
       
-      extension [Self <: IButton](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IButton] (val x: Self) extends AnyVal {
         
         inline def setAccept(value: Boolean): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
         
@@ -419,7 +420,8 @@ object libDialogMod {
         __obj.asInstanceOf[ICheckbox]
       }
       
-      extension [Self <: ICheckbox](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICheckbox] (val x: Self) extends AnyVal {
         
         inline def setCaption(value: String): Self = StObject.set(x, "caption", value.asInstanceOf[js.Any])
         
@@ -510,7 +512,8 @@ object libDialogMod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setBody(value: Body[T]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
         
@@ -620,7 +623,8 @@ object libDialogMod {
         __obj.asInstanceOf[IResult[T]]
       }
       
-      extension [Self <: IResult[?], T](x: Self & IResult[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IResult[?], T] (val x: Self & IResult[T]) extends AnyVal {
         
         inline def setButton(value: IButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
         

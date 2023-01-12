@@ -29,7 +29,8 @@ object INodeDef {
     __obj.asInstanceOf[INodeDef]
   }
   
-  extension [Self <: INodeDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INodeDef] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: StringDictionary[IAttrValue]): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TypeofFUNCTIONDELETE {
     __obj.asInstanceOf[TypeofFUNCTIONDELETE]
   }
   
-  extension [Self <: TypeofFUNCTIONDELETE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofFUNCTIONDELETE] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: String => RedisCommandArguments): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

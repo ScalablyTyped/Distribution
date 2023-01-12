@@ -23,7 +23,8 @@ object InvalidationBatch {
     __obj.asInstanceOf[InvalidationBatch]
   }
   
-  extension [Self <: InvalidationBatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidationBatch] (val x: Self) extends AnyVal {
     
     inline def setCallerReference(value: String): Self = StObject.set(x, "CallerReference", value.asInstanceOf[js.Any])
     

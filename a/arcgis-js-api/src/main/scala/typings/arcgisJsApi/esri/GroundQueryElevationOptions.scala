@@ -44,7 +44,8 @@ object GroundQueryElevationOptions {
     __obj.asInstanceOf[GroundQueryElevationOptions]
   }
   
-  extension [Self <: GroundQueryElevationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroundQueryElevationOptions] (val x: Self) extends AnyVal {
     
     inline def setDemResolution(value: Double | String): Self = StObject.set(x, "demResolution", value.asInstanceOf[js.Any])
     

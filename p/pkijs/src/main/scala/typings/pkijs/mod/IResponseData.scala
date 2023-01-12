@@ -30,7 +30,8 @@ object IResponseData {
     __obj.asInstanceOf[IResponseData]
   }
   
-  extension [Self <: IResponseData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IResponseData] (val x: Self) extends AnyVal {
     
     inline def setProducedAt(value: js.Date): Self = StObject.set(x, "producedAt", value.asInstanceOf[js.Any])
     

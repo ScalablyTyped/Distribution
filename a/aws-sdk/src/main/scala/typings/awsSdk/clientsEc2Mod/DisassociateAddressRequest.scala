@@ -28,7 +28,8 @@ object DisassociateAddressRequest {
     __obj.asInstanceOf[DisassociateAddressRequest]
   }
   
-  extension [Self <: DisassociateAddressRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAddressRequest] (val x: Self) extends AnyVal {
     
     inline def setAssociationId(value: ElasticIpAssociationId): Self = StObject.set(x, "AssociationId", value.asInstanceOf[js.Any])
     

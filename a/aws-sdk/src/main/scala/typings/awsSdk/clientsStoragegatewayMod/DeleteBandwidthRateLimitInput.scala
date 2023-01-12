@@ -20,7 +20,8 @@ object DeleteBandwidthRateLimitInput {
     __obj.asInstanceOf[DeleteBandwidthRateLimitInput]
   }
   
-  extension [Self <: DeleteBandwidthRateLimitInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteBandwidthRateLimitInput] (val x: Self) extends AnyVal {
     
     inline def setBandwidthType(value: BandwidthType): Self = StObject.set(x, "BandwidthType", value.asInstanceOf[js.Any])
     

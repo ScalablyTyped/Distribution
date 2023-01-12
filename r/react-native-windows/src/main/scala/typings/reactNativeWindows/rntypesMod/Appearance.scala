@@ -29,7 +29,8 @@ object Appearance {
       __obj.asInstanceOf[AppearancePreferences]
     }
     
-    extension [Self <: AppearancePreferences](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppearancePreferences] (val x: Self) extends AnyVal {
       
       inline def setColorScheme(value: ColorSchemeName): Self = StObject.set(x, "colorScheme", value.asInstanceOf[js.Any])
       

@@ -29,7 +29,8 @@ object libInputTextAreaMod extends Shortcut {
       __obj.asInstanceOf[ShowCountProps]
     }
     
-    extension [Self <: ShowCountProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowCountProps] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: Count => String): Self = StObject.set(x, "formatter", js.Any.fromFunction1(value))
     }
@@ -56,7 +57,8 @@ object libInputTextAreaMod extends Shortcut {
       __obj.asInstanceOf[TextAreaProps]
     }
     
-    extension [Self <: TextAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAllowClear(value: Boolean): Self = StObject.set(x, "allowClear", value.asInstanceOf[js.Any])
       

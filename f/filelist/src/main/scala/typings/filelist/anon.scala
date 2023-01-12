@@ -295,7 +295,8 @@ object anon {
       __obj.asInstanceOf[Funcs]
     }
     
-    extension [Self <: Funcs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Funcs] (val x: Self) extends AnyVal {
       
       inline def setFuncs(value: js.Array[js.Function]): Self = StObject.set(x, "funcs", value.asInstanceOf[js.Any])
       

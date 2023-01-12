@@ -53,7 +53,8 @@ object ListBatchJobExecutionsRequest {
     __obj.asInstanceOf[ListBatchJobExecutionsRequest]
   }
   
-  extension [Self <: ListBatchJobExecutionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListBatchJobExecutionsRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: Identifier): Self = StObject.set(x, "applicationId", value.asInstanceOf[js.Any])
     

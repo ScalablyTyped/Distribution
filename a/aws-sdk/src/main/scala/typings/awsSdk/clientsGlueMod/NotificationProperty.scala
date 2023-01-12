@@ -18,7 +18,8 @@ object NotificationProperty {
     __obj.asInstanceOf[NotificationProperty]
   }
   
-  extension [Self <: NotificationProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationProperty] (val x: Self) extends AnyVal {
     
     inline def setNotifyDelayAfter(value: NotifyDelayAfter): Self = StObject.set(x, "NotifyDelayAfter", value.asInstanceOf[js.Any])
     

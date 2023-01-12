@@ -246,7 +246,8 @@ object libClassdefFieldMod {
       __obj.asInstanceOf[Limit]
     }
     
-    extension [Self <: Limit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Limit] (val x: Self) extends AnyVal {
       
       inline def setEND(value: Double): Self = StObject.set(x, "END", value.asInstanceOf[js.Any])
       

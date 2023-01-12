@@ -18,7 +18,8 @@ object StockToolsGuiDefinitionsSimpleShapesRectangleOptions {
     __obj.asInstanceOf[StockToolsGuiDefinitionsSimpleShapesRectangleOptions]
   }
   
-  extension [Self <: StockToolsGuiDefinitionsSimpleShapesRectangleOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StockToolsGuiDefinitionsSimpleShapesRectangleOptions] (val x: Self) extends AnyVal {
     
     inline def setSymbol(value: String): Self = StObject.set(x, "symbol", value.asInstanceOf[js.Any])
     

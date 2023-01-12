@@ -21,7 +21,8 @@ object JSONSchemaArrayType {
     __obj.asInstanceOf[JSONSchemaArrayType]
   }
   
-  extension [Self <: JSONSchemaArrayType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSONSchemaArrayType] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

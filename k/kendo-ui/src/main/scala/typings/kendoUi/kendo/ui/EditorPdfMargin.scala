@@ -21,7 +21,8 @@ object EditorPdfMargin {
     __obj.asInstanceOf[EditorPdfMargin]
   }
   
-  extension [Self <: EditorPdfMargin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorPdfMargin] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double | String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

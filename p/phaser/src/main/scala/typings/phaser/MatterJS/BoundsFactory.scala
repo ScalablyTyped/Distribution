@@ -71,7 +71,8 @@ object BoundsFactory {
     __obj.asInstanceOf[BoundsFactory]
   }
   
-  extension [Self <: BoundsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoundsFactory] (val x: Self) extends AnyVal {
     
     inline def setContains(value: (IBound, Vector) => Boolean): Self = StObject.set(x, "contains", js.Any.fromFunction2(value))
     

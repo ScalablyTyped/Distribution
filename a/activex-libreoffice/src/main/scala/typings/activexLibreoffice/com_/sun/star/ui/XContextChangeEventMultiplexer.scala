@@ -62,7 +62,8 @@ object XContextChangeEventMultiplexer {
     __obj.asInstanceOf[XContextChangeEventMultiplexer]
   }
   
-  extension [Self <: XContextChangeEventMultiplexer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContextChangeEventMultiplexer] (val x: Self) extends AnyVal {
     
     inline def setAddContextChangeEventListener(value: (XContextChangeEventListener, XInterface) => Unit): Self = StObject.set(x, "addContextChangeEventListener", js.Any.fromFunction2(value))
     

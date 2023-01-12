@@ -16,7 +16,8 @@ object Mount {
     __obj.asInstanceOf[Mount]
   }
   
-  extension [Self <: Mount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Mount] (val x: Self) extends AnyVal {
     
     inline def setMount(value: HTMLElement): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
   }

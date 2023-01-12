@@ -19,7 +19,8 @@ object ListInsertOp {
     __obj.asInstanceOf[ListInsertOp]
   }
   
-  extension [Self <: ListInsertOp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListInsertOp] (val x: Self) extends AnyVal {
     
     inline def setLi(value: Any): Self = StObject.set(x, "li", value.asInstanceOf[js.Any])
     

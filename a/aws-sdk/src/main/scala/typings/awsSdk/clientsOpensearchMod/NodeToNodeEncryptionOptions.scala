@@ -18,7 +18,8 @@ object NodeToNodeEncryptionOptions {
     __obj.asInstanceOf[NodeToNodeEncryptionOptions]
   }
   
-  extension [Self <: NodeToNodeEncryptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeToNodeEncryptionOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

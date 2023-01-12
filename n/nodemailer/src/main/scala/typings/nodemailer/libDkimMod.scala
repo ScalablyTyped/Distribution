@@ -49,7 +49,8 @@ object libDkimMod {
       __obj.asInstanceOf[MultipleKeysOptions]
     }
     
-    extension [Self <: MultipleKeysOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipleKeysOptions] (val x: Self) extends AnyVal {
       
       inline def setKeys(value: js.Array[SingleKeyOptions]): Self = StObject.set(x, "keys", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object libDkimMod {
       __obj.asInstanceOf[OptionalOptions]
     }
     
-    extension [Self <: OptionalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionalOptions] (val x: Self) extends AnyVal {
       
       inline def setCacheDir(value: String | `false`): Self = StObject.set(x, "cacheDir", value.asInstanceOf[js.Any])
       
@@ -144,7 +146,8 @@ object libDkimMod {
       __obj.asInstanceOf[SingleKeyOptions]
     }
     
-    extension [Self <: SingleKeyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SingleKeyOptions] (val x: Self) extends AnyVal {
       
       inline def setDomainName(value: String): Self = StObject.set(x, "domainName", value.asInstanceOf[js.Any])
       

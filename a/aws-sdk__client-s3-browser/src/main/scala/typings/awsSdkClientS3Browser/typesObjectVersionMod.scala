@@ -58,7 +58,8 @@ object typesObjectVersionMod {
       __obj.asInstanceOf[ObjectVersion]
     }
     
-    extension [Self <: ObjectVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ObjectVersion] (val x: Self) extends AnyVal {
       
       inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object typesObjectVersionMod {
       __obj.asInstanceOf[UnmarshalledObjectVersion]
     }
     
-    extension [Self <: UnmarshalledObjectVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledObjectVersion] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: js.Date): Self = StObject.set(x, "LastModified", value.asInstanceOf[js.Any])
       

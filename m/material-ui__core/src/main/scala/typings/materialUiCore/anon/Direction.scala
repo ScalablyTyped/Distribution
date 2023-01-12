@@ -24,7 +24,8 @@ object Direction {
     __obj.asInstanceOf[Direction]
   }
   
-  extension [Self <: Direction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Direction] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

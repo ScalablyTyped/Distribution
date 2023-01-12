@@ -33,7 +33,8 @@ object DomainValidationRecord {
     __obj.asInstanceOf[DomainValidationRecord]
   }
   
-  extension [Self <: DomainValidationRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomainValidationRecord] (val x: Self) extends AnyVal {
     
     inline def setDnsRecordCreationState(value: DnsRecordCreationState): Self = StObject.set(x, "dnsRecordCreationState", value.asInstanceOf[js.Any])
     

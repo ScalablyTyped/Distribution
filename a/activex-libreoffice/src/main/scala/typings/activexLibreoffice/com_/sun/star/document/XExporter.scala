@@ -39,7 +39,8 @@ object XExporter {
     __obj.asInstanceOf[XExporter]
   }
   
-  extension [Self <: XExporter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExporter] (val x: Self) extends AnyVal {
     
     inline def setSetSourceDocument(value: XComponent => Unit): Self = StObject.set(x, "setSourceDocument", js.Any.fromFunction1(value))
   }

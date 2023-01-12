@@ -19,7 +19,8 @@ object GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse {
     __obj.asInstanceOf[GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse]
   }
   
-  extension [Self <: GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleAnalyticsAdminV1alphaListMeasurementProtocolSecretsResponse] (val x: Self) extends AnyVal {
     
     inline def setMeasurementProtocolSecrets(value: js.Array[GoogleAnalyticsAdminV1alphaMeasurementProtocolSecret]): Self = StObject.set(x, "measurementProtocolSecrets", value.asInstanceOf[js.Any])
     

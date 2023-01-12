@@ -17,7 +17,8 @@ object CallData {
     __obj.asInstanceOf[CallData]
   }
   
-  extension [Self <: CallData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallData] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

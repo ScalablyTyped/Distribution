@@ -19,7 +19,8 @@ object ContainerReferencePlugin {
     __obj.asInstanceOf[ContainerReferencePlugin]
   }
   
-  extension [Self <: ContainerReferencePlugin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContainerReferencePlugin] (val x: Self) extends AnyVal {
     
     inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
   }

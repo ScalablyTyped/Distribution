@@ -23,7 +23,8 @@ object BlockStatement {
     __obj.asInstanceOf[BlockStatement]
   }
   
-  extension [Self <: BlockStatement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BlockStatement] (val x: Self) extends AnyVal {
     
     inline def setStmts(value: js.Array[Statement]): Self = StObject.set(x, "stmts", value.asInstanceOf[js.Any])
     

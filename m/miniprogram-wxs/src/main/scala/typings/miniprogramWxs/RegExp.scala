@@ -51,7 +51,8 @@ object RegExp {
     __obj.asInstanceOf[RegExp]
   }
   
-  extension [Self <: RegExp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegExp] (val x: Self) extends AnyVal {
     
     inline def setCompile(value: () => RegExp): Self = StObject.set(x, "compile", js.Any.fromFunction0(value))
     

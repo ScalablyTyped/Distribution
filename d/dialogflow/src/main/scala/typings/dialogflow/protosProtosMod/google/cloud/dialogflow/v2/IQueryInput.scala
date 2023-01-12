@@ -23,7 +23,8 @@ object IQueryInput {
     __obj.asInstanceOf[IQueryInput]
   }
   
-  extension [Self <: IQueryInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryInput] (val x: Self) extends AnyVal {
     
     inline def setAudioConfig(value: IInputAudioConfig): Self = StObject.set(x, "audioConfig", value.asInstanceOf[js.Any])
     

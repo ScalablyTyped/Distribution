@@ -28,7 +28,8 @@ object ComponentRunWith {
     __obj.asInstanceOf[ComponentRunWith]
   }
   
-  extension [Self <: ComponentRunWith](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentRunWith] (val x: Self) extends AnyVal {
     
     inline def setPosixUser(value: NonEmptyString): Self = StObject.set(x, "posixUser", value.asInstanceOf[js.Any])
     

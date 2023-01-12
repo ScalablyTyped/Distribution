@@ -43,7 +43,8 @@ object HyperParameterTuningResourceConfig {
     __obj.asInstanceOf[HyperParameterTuningResourceConfig]
   }
   
-  extension [Self <: HyperParameterTuningResourceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterTuningResourceConfig] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: HyperParameterTuningAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

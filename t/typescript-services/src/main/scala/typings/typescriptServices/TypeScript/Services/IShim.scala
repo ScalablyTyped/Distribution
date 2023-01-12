@@ -15,7 +15,8 @@ object IShim {
     __obj.asInstanceOf[IShim]
   }
   
-  extension [Self <: IShim](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShim] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: Any => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction1(value))
   }

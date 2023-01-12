@@ -112,7 +112,8 @@ object JSTreeStaticDefaults {
     __obj.asInstanceOf[JSTreeStaticDefaults]
   }
   
-  extension [Self <: JSTreeStaticDefaults](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaults] (val x: Self) extends AnyVal {
     
     inline def setCheckbox(value: JSTreeStaticDefaultsCheckbox): Self = StObject.set(x, "checkbox", value.asInstanceOf[js.Any])
     

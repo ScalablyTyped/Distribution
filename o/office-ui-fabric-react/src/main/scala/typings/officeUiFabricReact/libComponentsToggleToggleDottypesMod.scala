@@ -32,7 +32,8 @@ object libComponentsToggleToggleDottypesMod {
       __obj.asInstanceOf[IToggle]
     }
     
-    extension [Self <: IToggle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggle] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Unit): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -149,7 +150,8 @@ object libComponentsToggleToggleDottypesMod {
       __obj.asInstanceOf[IToggleProps]
     }
     
-    extension [Self <: IToggleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggleProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -266,7 +268,8 @@ object libComponentsToggleToggleDottypesMod {
       __obj.asInstanceOf[IToggleStyleProps]
     }
     
-    extension [Self <: IToggleStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggleStyleProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -329,7 +332,8 @@ object libComponentsToggleToggleDottypesMod {
       __obj.asInstanceOf[IToggleStyles]
     }
     
-    extension [Self <: IToggleStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IToggleStyles] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: IStyle): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

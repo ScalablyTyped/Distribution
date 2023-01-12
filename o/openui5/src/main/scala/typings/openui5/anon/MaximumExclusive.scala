@@ -57,7 +57,8 @@ object MaximumExclusive {
     __obj.asInstanceOf[MaximumExclusive]
   }
   
-  extension [Self <: MaximumExclusive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaximumExclusive] (val x: Self) extends AnyVal {
     
     inline def setMaximum(value: String): Self = StObject.set(x, "maximum", value.asInstanceOf[js.Any])
     

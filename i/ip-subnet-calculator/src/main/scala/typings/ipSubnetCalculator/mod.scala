@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[SubnetResult]
     }
     
-    extension [Self <: SubnetResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubnetResult] (val x: Self) extends AnyVal {
       
       inline def setInvertedMask(value: Double): Self = StObject.set(x, "invertedMask", value.asInstanceOf[js.Any])
       

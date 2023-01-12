@@ -92,7 +92,8 @@ object PartialRequiredOptions {
     __obj.asInstanceOf[PartialRequiredOptions]
   }
   
-  extension [Self <: PartialRequiredOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRequiredOptions] (val x: Self) extends AnyVal {
     
     inline def setArrowParens(value: avoid | always): Self = StObject.set(x, "arrowParens", value.asInstanceOf[js.Any])
     

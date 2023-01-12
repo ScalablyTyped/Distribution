@@ -32,7 +32,8 @@ object TextStyleIOS {
     __obj.asInstanceOf[TextStyleIOS]
   }
   
-  extension [Self <: TextStyleIOS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextStyleIOS] (val x: Self) extends AnyVal {
     
     inline def setFontVariant(value: js.Array[FontVariant]): Self = StObject.set(x, "fontVariant", value.asInstanceOf[js.Any])
     

@@ -158,7 +158,8 @@ object ReplicationGroup {
     __obj.asInstanceOf[ReplicationGroup]
   }
   
-  extension [Self <: ReplicationGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationGroup] (val x: Self) extends AnyVal {
     
     inline def setARN(value: String): Self = StObject.set(x, "ARN", value.asInstanceOf[js.Any])
     

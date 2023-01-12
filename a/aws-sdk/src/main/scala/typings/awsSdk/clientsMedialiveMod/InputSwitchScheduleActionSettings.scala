@@ -28,7 +28,8 @@ object InputSwitchScheduleActionSettings {
     __obj.asInstanceOf[InputSwitchScheduleActionSettings]
   }
   
-  extension [Self <: InputSwitchScheduleActionSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputSwitchScheduleActionSettings] (val x: Self) extends AnyVal {
     
     inline def setInputAttachmentNameReference(value: string): Self = StObject.set(x, "InputAttachmentNameReference", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object SpecificViewContentArg {
     __obj.asInstanceOf[SpecificViewContentArg]
   }
   
-  extension [Self <: SpecificViewContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecificViewContentArg] (val x: Self) extends AnyVal {
     
     inline def setNextDayThreshold(value: Duration): Self = StObject.set(x, "nextDayThreshold", value.asInstanceOf[js.Any])
   }

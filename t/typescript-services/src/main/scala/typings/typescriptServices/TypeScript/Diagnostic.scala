@@ -56,7 +56,8 @@ object Diagnostic {
     __obj.asInstanceOf[Diagnostic]
   }
   
-  extension [Self <: Diagnostic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagnostic] (val x: Self) extends AnyVal {
     
     inline def setAdditionalLocations(value: () => js.Array[Location]): Self = StObject.set(x, "additionalLocations", js.Any.fromFunction0(value))
     

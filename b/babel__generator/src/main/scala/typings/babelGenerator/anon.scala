@@ -104,7 +104,8 @@ object anon {
       __obj.asInstanceOf[Compact]
     }
     
-    extension [Self <: Compact](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Compact] (val x: Self) extends AnyVal {
       
       inline def setCompact(value: Boolean): Self = StObject.set(x, "compact", value.asInstanceOf[js.Any])
       
@@ -185,7 +186,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object RemoveLFTagsFromResourceResponse {
     __obj.asInstanceOf[RemoveLFTagsFromResourceResponse]
   }
   
-  extension [Self <: RemoveLFTagsFromResourceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoveLFTagsFromResourceResponse] (val x: Self) extends AnyVal {
     
     inline def setFailures(value: LFTagErrors): Self = StObject.set(x, "Failures", value.asInstanceOf[js.Any])
     

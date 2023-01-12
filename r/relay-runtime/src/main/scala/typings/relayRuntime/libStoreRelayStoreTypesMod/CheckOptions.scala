@@ -17,7 +17,8 @@ object CheckOptions {
     __obj.asInstanceOf[CheckOptions]
   }
   
-  extension [Self <: CheckOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
     
     inline def setHandlers(value: js.Array[MissingFieldHandler]): Self = StObject.set(x, "handlers", value.asInstanceOf[js.Any])
     

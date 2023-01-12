@@ -33,7 +33,8 @@ object DeviceConfig {
     __obj.asInstanceOf[DeviceConfig]
   }
   
-  extension [Self <: DeviceConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceConfig] (val x: Self) extends AnyVal {
     
     inline def setBinaryData(value: String): Self = StObject.set(x, "binaryData", value.asInstanceOf[js.Any])
     

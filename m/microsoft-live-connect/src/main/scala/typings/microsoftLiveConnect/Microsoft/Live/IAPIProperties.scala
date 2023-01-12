@@ -39,7 +39,8 @@ object IAPIProperties {
     __obj.asInstanceOf[IAPIProperties]
   }
   
-  extension [Self <: IAPIProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAPIProperties] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

@@ -68,7 +68,8 @@ object CreateStageRequest {
     __obj.asInstanceOf[CreateStageRequest]
   }
   
-  extension [Self <: CreateStageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStageRequest] (val x: Self) extends AnyVal {
     
     inline def setCacheClusterEnabled(value: Boolean): Self = StObject.set(x, "cacheClusterEnabled", value.asInstanceOf[js.Any])
     

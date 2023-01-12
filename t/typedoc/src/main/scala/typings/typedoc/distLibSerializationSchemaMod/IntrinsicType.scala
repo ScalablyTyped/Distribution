@@ -20,7 +20,8 @@ object IntrinsicType {
     __obj.asInstanceOf[IntrinsicType]
   }
   
-  extension [Self <: IntrinsicType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntrinsicType] (val x: Self) extends AnyVal {
     
     inline def setName(value: ToSerialized[String]): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

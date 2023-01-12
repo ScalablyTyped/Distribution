@@ -16,7 +16,8 @@ object GoogleFirestoreAdminV1ListDatabasesResponse {
     __obj.asInstanceOf[GoogleFirestoreAdminV1ListDatabasesResponse]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1ListDatabasesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1ListDatabasesResponse] (val x: Self) extends AnyVal {
     
     inline def setDatabases(value: js.Array[GoogleFirestoreAdminV1Database]): Self = StObject.set(x, "databases", value.asInstanceOf[js.Any])
     

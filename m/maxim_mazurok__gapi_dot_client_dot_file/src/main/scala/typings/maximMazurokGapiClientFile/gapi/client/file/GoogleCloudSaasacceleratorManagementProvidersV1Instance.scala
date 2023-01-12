@@ -96,7 +96,8 @@ object GoogleCloudSaasacceleratorManagementProvidersV1Instance {
     __obj.asInstanceOf[GoogleCloudSaasacceleratorManagementProvidersV1Instance]
   }
   
-  extension [Self <: GoogleCloudSaasacceleratorManagementProvidersV1Instance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSaasacceleratorManagementProvidersV1Instance] (val x: Self) extends AnyVal {
     
     inline def setConsumerDefinedName(value: String): Self = StObject.set(x, "consumerDefinedName", value.asInstanceOf[js.Any])
     

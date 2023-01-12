@@ -23,7 +23,8 @@ object MetricKeyDataPoints {
     __obj.asInstanceOf[MetricKeyDataPoints]
   }
   
-  extension [Self <: MetricKeyDataPoints](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricKeyDataPoints] (val x: Self) extends AnyVal {
     
     inline def setDataPoints(value: DataPointsList): Self = StObject.set(x, "DataPoints", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object anon {
       __obj.asInstanceOf[Diagonal]
     }
     
-    extension [Self <: Diagonal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Diagonal] (val x: Self) extends AnyVal {
       
       inline def setDiagonal(value: Matrix3): Self = StObject.set(x, "diagonal", value.asInstanceOf[js.Any])
       
@@ -51,7 +52,8 @@ object anon {
       __obj.asInstanceOf[ERROR]
     }
     
-    extension [Self <: ERROR](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ERROR] (val x: Self) extends AnyVal {
       
       inline def setERROR(value: `2`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[GetRecord]
     }
     
-    extension [Self <: GetRecord](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetRecord] (val x: Self) extends AnyVal {
       
       inline def setGetRecord(value: GameEntity => MemoryRecord): Self = StObject.set(x, "getRecord", js.Any.fromFunction1(value))
     }
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Timeout]
     }
     
-    extension [Self <: Timeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
       
       inline def setTimeout(value: Double): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     }
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

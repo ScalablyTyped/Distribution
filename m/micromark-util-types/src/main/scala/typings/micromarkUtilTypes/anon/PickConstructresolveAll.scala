@@ -19,7 +19,8 @@ object PickConstructresolveAll {
     __obj.asInstanceOf[PickConstructresolveAll]
   }
   
-  extension [Self <: PickConstructresolveAll](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickConstructresolveAll] (val x: Self) extends AnyVal {
     
     inline def setResolveAll(value: (/* events */ js.Array[Event], /* context */ TokenizeContext) => js.Array[Event]): Self = StObject.set(x, "resolveAll", js.Any.fromFunction2(value))
     

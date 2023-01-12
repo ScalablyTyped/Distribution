@@ -203,7 +203,8 @@ object graphDataItemMod {
       __obj.asInstanceOf[GraphDataItem]
     }
     
-    extension [Self <: GraphDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GraphDataItem] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

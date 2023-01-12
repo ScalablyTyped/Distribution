@@ -18,7 +18,8 @@ object CreateSMBFileShareOutput {
     __obj.asInstanceOf[CreateSMBFileShareOutput]
   }
   
-  extension [Self <: CreateSMBFileShareOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSMBFileShareOutput] (val x: Self) extends AnyVal {
     
     inline def setFileShareARN(value: FileShareARN): Self = StObject.set(x, "FileShareARN", value.asInstanceOf[js.Any])
     

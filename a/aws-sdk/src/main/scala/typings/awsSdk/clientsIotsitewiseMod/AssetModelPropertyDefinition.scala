@@ -39,7 +39,8 @@ object AssetModelPropertyDefinition {
     __obj.asInstanceOf[AssetModelPropertyDefinition]
   }
   
-  extension [Self <: AssetModelPropertyDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetModelPropertyDefinition] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: PropertyDataType): Self = StObject.set(x, "dataType", value.asInstanceOf[js.Any])
     

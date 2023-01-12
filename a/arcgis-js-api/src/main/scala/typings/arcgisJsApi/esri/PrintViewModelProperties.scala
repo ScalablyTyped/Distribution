@@ -84,7 +84,8 @@ object PrintViewModelProperties {
     __obj.asInstanceOf[PrintViewModelProperties]
   }
   
-  extension [Self <: PrintViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setAllowedFormats(value: String | js.Array[String]): Self = StObject.set(x, "allowedFormats", value.asInstanceOf[js.Any])
     

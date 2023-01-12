@@ -19,7 +19,8 @@ object PerformanceEvent {
     __obj.asInstanceOf[PerformanceEvent]
   }
   
-  extension [Self <: PerformanceEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceEvent] (val x: Self) extends AnyVal {
     
     inline def setDurationMs(value: Double): Self = StObject.set(x, "durationMs", value.asInstanceOf[js.Any])
     

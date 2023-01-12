@@ -23,7 +23,8 @@ object typesReceiptHandleIsInvalidMod {
       __obj.asInstanceOf[ReceiptHandleIsInvalid]
     }
     
-    extension [Self <: ReceiptHandleIsInvalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReceiptHandleIsInvalid] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.ReceiptHandleIsInvalid): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

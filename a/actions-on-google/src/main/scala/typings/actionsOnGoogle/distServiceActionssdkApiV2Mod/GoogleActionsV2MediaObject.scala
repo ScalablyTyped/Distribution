@@ -39,7 +39,8 @@ object GoogleActionsV2MediaObject {
     __obj.asInstanceOf[GoogleActionsV2MediaObject]
   }
   
-  extension [Self <: GoogleActionsV2MediaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2MediaObject] (val x: Self) extends AnyVal {
     
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object IListBoxItemParameters {
     __obj.asInstanceOf[IListBoxItemParameters]
   }
   
-  extension [Self <: IListBoxItemParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IListBoxItemParameters] (val x: Self) extends AnyVal {
     
     inline def setData(value: `0`): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

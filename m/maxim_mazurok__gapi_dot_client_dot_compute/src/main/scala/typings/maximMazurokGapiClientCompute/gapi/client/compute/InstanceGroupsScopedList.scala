@@ -20,7 +20,8 @@ object InstanceGroupsScopedList {
     __obj.asInstanceOf[InstanceGroupsScopedList]
   }
   
-  extension [Self <: InstanceGroupsScopedList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceGroupsScopedList] (val x: Self) extends AnyVal {
     
     inline def setInstanceGroups(value: js.Array[InstanceGroup]): Self = StObject.set(x, "instanceGroups", value.asInstanceOf[js.Any])
     

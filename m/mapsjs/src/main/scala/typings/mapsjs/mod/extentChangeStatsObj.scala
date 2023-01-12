@@ -41,7 +41,8 @@ object extentChangeStatsObj {
     __obj.asInstanceOf[extentChangeStatsObj]
   }
   
-  extension [Self <: extentChangeStatsObj](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: extentChangeStatsObj] (val x: Self) extends AnyVal {
     
     inline def setCenterLat(value: Double): Self = StObject.set(x, "centerLat", value.asInstanceOf[js.Any])
     

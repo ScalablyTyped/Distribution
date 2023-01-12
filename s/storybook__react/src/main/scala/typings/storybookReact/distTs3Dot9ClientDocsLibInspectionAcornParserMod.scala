@@ -26,7 +26,8 @@ object distTs3Dot9ClientDocsLibInspectionAcornParserMod {
       __obj.asInstanceOf[ParsingResult[T]]
     }
     
-    extension [Self <: ParsingResult[?], T](x: Self & ParsingResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsingResult[?], T] (val x: Self & ParsingResult[T]) extends AnyVal {
       
       inline def setAst(value: Any): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
       

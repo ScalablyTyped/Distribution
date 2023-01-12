@@ -144,7 +144,8 @@ object typesLatestSrcPoliciesExponentialRetryPolicyMod {
       __obj.asInstanceOf[RetryOptions]
     }
     
-    extension [Self <: RetryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
       

@@ -36,7 +36,8 @@ object DeploymentInput {
     __obj.asInstanceOf[DeploymentInput]
   }
   
-  extension [Self <: DeploymentInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentInput] (val x: Self) extends AnyVal {
     
     inline def setArtifactsDownloadInput(value: ArtifactsDownloadInput): Self = StObject.set(x, "artifactsDownloadInput", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CreatePushTemplateRequest {
     __obj.asInstanceOf[CreatePushTemplateRequest]
   }
   
-  extension [Self <: CreatePushTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreatePushTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setPushNotificationTemplateRequest(value: PushNotificationTemplateRequest): Self = StObject.set(x, "PushNotificationTemplateRequest", value.asInstanceOf[js.Any])
     

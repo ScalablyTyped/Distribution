@@ -18,7 +18,8 @@ object ComponentDxTreeList {
     __obj.asInstanceOf[ComponentDxTreeList[TRowData, TKey]]
   }
   
-  extension [Self <: ComponentDxTreeList[?, ?], TRowData, TKey](x: Self & (ComponentDxTreeList[TRowData, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComponentDxTreeList[?, ?], TRowData, TKey] (val x: Self & (ComponentDxTreeList[TRowData, TKey])) extends AnyVal {
     
     inline def setComponent(value: dxTreeList[TRowData, TKey]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object InputProps {
     __obj.asInstanceOf[InputProps]
   }
   
-  extension [Self <: InputProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputProps] (val x: Self) extends AnyVal {
     
     inline def setInputProps(value: StringDictionary[Any]): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
     

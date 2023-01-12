@@ -19,7 +19,8 @@ object PopSettings {
     __obj.asInstanceOf[PopSettings]
   }
   
-  extension [Self <: PopSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PopSettings] (val x: Self) extends AnyVal {
     
     inline def setAccessWindow(value: String): Self = StObject.set(x, "accessWindow", value.asInstanceOf[js.Any])
     

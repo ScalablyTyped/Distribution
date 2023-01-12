@@ -48,7 +48,8 @@ object TfvcBranch {
     __obj.asInstanceOf[TfvcBranch]
   }
   
-  extension [Self <: TfvcBranch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcBranch] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: js.Array[TfvcBranch]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

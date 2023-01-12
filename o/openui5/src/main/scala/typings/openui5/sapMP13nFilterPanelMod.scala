@@ -971,7 +971,8 @@ object sapMP13nFilterPanelMod {
       __obj.asInstanceOf[P13nFilterPanelSettings]
     }
     
-    extension [Self <: P13nFilterPanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: P13nFilterPanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAddFilterItem(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "addFilterItem", js.Any.fromFunction1(value))
       

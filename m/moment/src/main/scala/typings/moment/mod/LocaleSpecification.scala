@@ -52,7 +52,8 @@ object LocaleSpecification {
     __obj.asInstanceOf[LocaleSpecification]
   }
   
-  extension [Self <: LocaleSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleSpecification] (val x: Self) extends AnyVal {
     
     inline def setCalendar(value: CalendarSpec): Self = StObject.set(x, "calendar", value.asInstanceOf[js.Any])
     

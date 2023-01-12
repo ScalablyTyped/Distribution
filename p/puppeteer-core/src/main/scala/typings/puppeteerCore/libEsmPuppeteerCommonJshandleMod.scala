@@ -159,7 +159,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[BoundingBox]
     }
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -195,7 +196,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[BoxModel]
     }
     
-    extension [Self <: BoxModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxModel] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: js.Array[Point]): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -250,7 +252,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[ClickOptions]
     }
     
-    extension [Self <: ClickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClickOptions] (val x: Self) extends AnyVal {
       
       inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       
@@ -289,7 +292,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -310,7 +314,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[Point]
     }
     
-    extension [Self <: Point](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Point] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -337,7 +342,8 @@ object libEsmPuppeteerCommonJshandleMod {
       __obj.asInstanceOf[PressOptions]
     }
     
-    extension [Self <: PressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PressOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       

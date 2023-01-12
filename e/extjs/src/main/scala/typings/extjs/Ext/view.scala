@@ -265,7 +265,8 @@ object view {
       __obj.asInstanceOf[IAbstractView]
     }
     
-    extension [Self <: IAbstractView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAbstractView] (val x: Self) extends AnyVal {
       
       inline def setBindStore(value: js.UndefOr[Any | IStore] => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction1(value))
       
@@ -551,7 +552,8 @@ object view {
       __obj.asInstanceOf[typings.extjs.Ext.view.IBoundList]
     }
     
-    extension [Self <: typings.extjs.Ext.view.IBoundList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.extjs.Ext.view.IBoundList] (val x: Self) extends AnyVal {
       
       inline def setBindStore(value: (/* store */ js.UndefOr[Any], /* initial */ js.UndefOr[Any]) => Unit): Self = StObject.set(x, "bindStore", js.Any.fromFunction2(value))
       
@@ -619,7 +621,8 @@ object view {
       __obj.asInstanceOf[IBoundListKeyNav]
     }
     
-    extension [Self <: IBoundListKeyNav](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBoundListKeyNav] (val x: Self) extends AnyVal {
       
       inline def setBoundList(value: typings.extjs.Ext.view.IBoundList): Self = StObject.set(x, "boundList", value.asInstanceOf[js.Any])
       
@@ -722,7 +725,8 @@ object view {
       __obj.asInstanceOf[INodeCache]
     }
     
-    extension [Self <: INodeCache](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INodeCache] (val x: Self) extends AnyVal {
       
       inline def setClear(value: /* removeDom */ js.UndefOr[Boolean] => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))
       
@@ -911,7 +915,8 @@ object view {
       __obj.asInstanceOf[ITable]
     }
     
-    extension [Self <: ITable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITable] (val x: Self) extends AnyVal {
       
       inline def setAddRowCls(value: (/* rowInfo */ js.UndefOr[Any], /* cls */ js.UndefOr[java.lang.String]) => Unit): Self = StObject.set(x, "addRowCls", js.Any.fromFunction2(value))
       
@@ -1034,7 +1039,8 @@ object view {
       __obj.asInstanceOf[ITableLayout]
     }
     
-    extension [Self <: ITableLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITableLayout] (val x: Self) extends AnyVal {
       
       inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
       
@@ -1073,7 +1079,8 @@ object view {
       __obj.asInstanceOf[IView]
     }
     
-    extension [Self <: IView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IView] (val x: Self) extends AnyVal {
       
       inline def setClearHighlight(value: () => Unit): Self = StObject.set(x, "clearHighlight", js.Any.fromFunction0(value))
       

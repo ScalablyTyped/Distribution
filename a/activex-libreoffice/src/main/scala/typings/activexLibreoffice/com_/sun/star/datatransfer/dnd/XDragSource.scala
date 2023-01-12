@@ -69,7 +69,8 @@ object XDragSource {
     __obj.asInstanceOf[XDragSource]
   }
   
-  extension [Self <: XDragSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDragSource] (val x: Self) extends AnyVal {
     
     inline def setGetDefaultCursor(value: Double => Double): Self = StObject.set(x, "getDefaultCursor", js.Any.fromFunction1(value))
     

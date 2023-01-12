@@ -84,7 +84,8 @@ object Diagnostics {
     __obj.asInstanceOf[Diagnostics]
   }
   
-  extension [Self <: Diagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Diagnostics] (val x: Self) extends AnyVal {
     
     inline def setHostName(value: String): Self = StObject.set(x, "hostName", value.asInstanceOf[js.Any])
     

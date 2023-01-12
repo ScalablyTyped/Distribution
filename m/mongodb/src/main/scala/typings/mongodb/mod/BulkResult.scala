@@ -47,7 +47,8 @@ object BulkResult {
     __obj.asInstanceOf[BulkResult]
   }
   
-  extension [Self <: BulkResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkResult] (val x: Self) extends AnyVal {
     
     inline def setInsertedIds(value: js.Array[Document]): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
     

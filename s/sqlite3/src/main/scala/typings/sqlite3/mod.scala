@@ -623,7 +623,8 @@ object mod {
       __obj.asInstanceOf[typings.sqlite3.mod.sqlite3]
     }
     
-    extension [Self <: typings.sqlite3.mod.sqlite3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.sqlite3.mod.sqlite3] (val x: Self) extends AnyVal {
       
       inline def setABORT(value: Double): Self = StObject.set(x, "ABORT", value.asInstanceOf[js.Any])
       

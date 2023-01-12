@@ -28,7 +28,8 @@ object distTypesTableTooltipMod {
       __obj.asInstanceOf[TableTooltipProps]
     }
     
-    extension [Self <: TableTooltipProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableTooltipProps] (val x: Self) extends AnyVal {
       
       inline def setRenderContent(value: () => Element): Self = StObject.set(x, "renderContent", js.Any.fromFunction0(value))
       

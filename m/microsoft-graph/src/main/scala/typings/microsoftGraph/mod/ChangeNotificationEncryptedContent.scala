@@ -36,7 +36,8 @@ object ChangeNotificationEncryptedContent {
     __obj.asInstanceOf[ChangeNotificationEncryptedContent]
   }
   
-  extension [Self <: ChangeNotificationEncryptedContent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeNotificationEncryptedContent] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

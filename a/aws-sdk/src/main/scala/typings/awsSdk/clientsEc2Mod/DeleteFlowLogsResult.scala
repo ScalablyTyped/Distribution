@@ -18,7 +18,8 @@ object DeleteFlowLogsResult {
     __obj.asInstanceOf[DeleteFlowLogsResult]
   }
   
-  extension [Self <: DeleteFlowLogsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteFlowLogsResult] (val x: Self) extends AnyVal {
     
     inline def setUnsuccessful(value: UnsuccessfulItemSet): Self = StObject.set(x, "Unsuccessful", value.asInstanceOf[js.Any])
     

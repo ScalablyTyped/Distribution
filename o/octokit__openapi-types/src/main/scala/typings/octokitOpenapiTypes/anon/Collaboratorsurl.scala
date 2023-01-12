@@ -273,7 +273,8 @@ object Collaboratorsurl {
     __obj.asInstanceOf[Collaboratorsurl]
   }
   
-  extension [Self <: Collaboratorsurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Collaboratorsurl] (val x: Self) extends AnyVal {
     
     inline def setAllow_forking(value: Boolean): Self = StObject.set(x, "allow_forking", value.asInstanceOf[js.Any])
     

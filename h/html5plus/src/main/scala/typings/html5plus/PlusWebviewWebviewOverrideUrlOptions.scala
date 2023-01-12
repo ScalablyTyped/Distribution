@@ -85,7 +85,8 @@ object PlusWebviewWebviewOverrideUrlOptions {
     __obj.asInstanceOf[PlusWebviewWebviewOverrideUrlOptions]
   }
   
-  extension [Self <: PlusWebviewWebviewOverrideUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusWebviewWebviewOverrideUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setEffect(value: instant | _empty): Self = StObject.set(x, "effect", value.asInstanceOf[js.Any])
     

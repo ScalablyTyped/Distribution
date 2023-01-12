@@ -29,7 +29,8 @@ object GoToDataRecordCommand {
     __obj.asInstanceOf[GoToDataRecordCommand]
   }
   
-  extension [Self <: GoToDataRecordCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoToDataRecordCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

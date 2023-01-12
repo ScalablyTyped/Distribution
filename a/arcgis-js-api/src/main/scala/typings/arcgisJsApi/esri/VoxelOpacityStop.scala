@@ -27,7 +27,8 @@ object VoxelOpacityStop {
     __obj.asInstanceOf[VoxelOpacityStop]
   }
   
-  extension [Self <: VoxelOpacityStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoxelOpacityStop] (val x: Self) extends AnyVal {
     
     inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
     

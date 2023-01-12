@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[AttributeGroups]
     }
     
-    extension [Self <: AttributeGroups](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttributeGroups] (val x: Self) extends AnyVal {
       
       inline def setAttributeGroups(value: Any): Self = StObject.set(x, "attributeGroups", value.asInstanceOf[js.Any])
     }
@@ -34,7 +35,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

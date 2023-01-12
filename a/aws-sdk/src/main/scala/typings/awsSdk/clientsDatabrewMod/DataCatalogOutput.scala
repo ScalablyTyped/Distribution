@@ -43,7 +43,8 @@ object DataCatalogOutput {
     __obj.asInstanceOf[DataCatalogOutput]
   }
   
-  extension [Self <: DataCatalogOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataCatalogOutput] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogId): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

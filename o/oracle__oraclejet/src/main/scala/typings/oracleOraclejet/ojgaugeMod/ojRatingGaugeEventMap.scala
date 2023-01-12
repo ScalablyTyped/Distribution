@@ -201,7 +201,8 @@ object ojRatingGaugeEventMap {
     __obj.asInstanceOf[ojRatingGaugeEventMap]
   }
   
-  extension [Self <: ojRatingGaugeEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ojRatingGaugeEventMap] (val x: Self) extends AnyVal {
     
     inline def setChangedChanged(value: JetElementCustomEvent[Boolean]): Self = StObject.set(x, "changedChanged", value.asInstanceOf[js.Any])
     

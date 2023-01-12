@@ -37,7 +37,8 @@ object MedicinalProductDefinitionName {
     __obj.asInstanceOf[MedicinalProductDefinitionName]
   }
   
-  extension [Self <: MedicinalProductDefinitionName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MedicinalProductDefinitionName] (val x: Self) extends AnyVal {
     
     inline def setCountryLanguage(value: js.Array[MedicinalProductDefinitionNameCountryLanguage]): Self = StObject.set(x, "countryLanguage", value.asInstanceOf[js.Any])
     

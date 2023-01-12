@@ -251,7 +251,8 @@ object sapMDynamicDateValueHelpUITypeMod {
       __obj.asInstanceOf[DynamicDateValueHelpUITypeSettings]
     }
     
-    extension [Self <: DynamicDateValueHelpUITypeSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DynamicDateValueHelpUITypeSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

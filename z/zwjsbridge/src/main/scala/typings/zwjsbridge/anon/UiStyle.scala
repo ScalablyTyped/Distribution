@@ -19,7 +19,8 @@ object UiStyle {
     __obj.asInstanceOf[UiStyle]
   }
   
-  extension [Self <: UiStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UiStyle] (val x: Self) extends AnyVal {
     
     inline def setUiStyle(value: String): Self = StObject.set(x, "uiStyle", value.asInstanceOf[js.Any])
   }

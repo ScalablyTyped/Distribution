@@ -35,7 +35,8 @@ object Numerics {
       __obj.asInstanceOf[Matrix3x2]
     }
     
-    extension [Self <: Matrix3x2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix3x2] (val x: Self) extends AnyVal {
       
       inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object Numerics {
       __obj.asInstanceOf[Matrix4x4]
     }
     
-    extension [Self <: Matrix4x4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Matrix4x4] (val x: Self) extends AnyVal {
       
       inline def setM11(value: Double): Self = StObject.set(x, "m11", value.asInstanceOf[js.Any])
       
@@ -184,7 +186,8 @@ object Numerics {
       __obj.asInstanceOf[Quaternion]
     }
     
-    extension [Self <: Quaternion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Quaternion] (val x: Self) extends AnyVal {
       
       inline def setW(value: Double): Self = StObject.set(x, "w", value.asInstanceOf[js.Any])
       
@@ -212,7 +215,8 @@ object Numerics {
       __obj.asInstanceOf[Vector2]
     }
     
-    extension [Self <: Vector2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector2] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -239,7 +243,8 @@ object Numerics {
       __obj.asInstanceOf[Vector3]
     }
     
-    extension [Self <: Vector3](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Vector3] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

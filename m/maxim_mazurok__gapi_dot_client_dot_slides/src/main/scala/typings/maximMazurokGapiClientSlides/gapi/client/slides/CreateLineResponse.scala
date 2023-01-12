@@ -16,7 +16,8 @@ object CreateLineResponse {
     __obj.asInstanceOf[CreateLineResponse]
   }
   
-  extension [Self <: CreateLineResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLineResponse] (val x: Self) extends AnyVal {
     
     inline def setObjectId(value: String): Self = StObject.set(x, "objectId", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object DataProperty {
     __obj.asInstanceOf[DataProperty]
   }
   
-  extension [Self <: DataProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataProperty] (val x: Self) extends AnyVal {
     
     inline def setComplexTypeName(value: String): Self = StObject.set(x, "complexTypeName", value.asInstanceOf[js.Any])
     

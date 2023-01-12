@@ -253,7 +253,8 @@ object spritesSpriteMapMod {
       __obj.asInstanceOf[ISpriteMap]
     }
     
-    extension [Self <: ISpriteMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteMap] (val x: Self) extends AnyVal {
       
       inline def setAtlasJSON(value: ISpriteJSONAtlas): Self = StObject.set(x, "atlasJSON", value.asInstanceOf[js.Any])
       
@@ -319,7 +320,8 @@ object spritesSpriteMapMod {
       __obj.asInstanceOf[ISpriteMapOptions]
     }
     
-    extension [Self <: ISpriteMapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISpriteMapOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseTile(value: Double): Self = StObject.set(x, "baseTile", value.asInstanceOf[js.Any])
       

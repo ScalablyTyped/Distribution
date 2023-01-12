@@ -18,7 +18,8 @@ object PressResponderProps {
     __obj.asInstanceOf[PressResponderProps]
   }
   
-  extension [Self <: PressResponderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PressResponderProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

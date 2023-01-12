@@ -22,7 +22,8 @@ object GoogleFirestoreAdminV1ImportDocumentsRequest {
     __obj.asInstanceOf[GoogleFirestoreAdminV1ImportDocumentsRequest]
   }
   
-  extension [Self <: GoogleFirestoreAdminV1ImportDocumentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleFirestoreAdminV1ImportDocumentsRequest] (val x: Self) extends AnyVal {
     
     inline def setCollectionIds(value: js.Array[String]): Self = StObject.set(x, "collectionIds", value.asInstanceOf[js.Any])
     

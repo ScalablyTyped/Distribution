@@ -18,7 +18,8 @@ object AttachmentInformation {
     __obj.asInstanceOf[AttachmentInformation]
   }
   
-  extension [Self <: AttachmentInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachmentInformation] (val x: Self) extends AnyVal {
     
     inline def setName(value: AttachmentName): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

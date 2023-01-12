@@ -77,7 +77,8 @@ object ButtonMenuItemProperties {
     __obj.asInstanceOf[ButtonMenuItemProperties]
   }
   
-  extension [Self <: ButtonMenuItemProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ButtonMenuItemProperties] (val x: Self) extends AnyVal {
     
     inline def setAutoCloseMenu(value: Boolean): Self = StObject.set(x, "autoCloseMenu", value.asInstanceOf[js.Any])
     

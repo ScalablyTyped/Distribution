@@ -23,7 +23,8 @@ object IntentOverride {
     __obj.asInstanceOf[IntentOverride]
   }
   
-  extension [Self <: IntentOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentOverride] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

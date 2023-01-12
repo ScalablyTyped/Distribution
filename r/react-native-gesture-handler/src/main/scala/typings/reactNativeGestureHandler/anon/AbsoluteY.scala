@@ -23,7 +23,8 @@ object AbsoluteY {
     __obj.asInstanceOf[AbsoluteY]
   }
   
-  extension [Self <: AbsoluteY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbsoluteY] (val x: Self) extends AnyVal {
     
     inline def setAbsoluteX(value: Double): Self = StObject.set(x, "absoluteX", value.asInstanceOf[js.Any])
     

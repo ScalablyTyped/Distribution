@@ -17,7 +17,8 @@ object IWwwFormUrlDecoderEntry {
     __obj.asInstanceOf[IWwwFormUrlDecoderEntry]
   }
   
-  extension [Self <: IWwwFormUrlDecoderEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWwwFormUrlDecoderEntry] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object FlowRendererResult {
     __obj.asInstanceOf[FlowRendererResult]
   }
   
-  extension [Self <: FlowRendererResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowRendererResult] (val x: Self) extends AnyVal {
     
     inline def setBasemapId(value: String): Self = StObject.set(x, "basemapId", value.asInstanceOf[js.Any])
     

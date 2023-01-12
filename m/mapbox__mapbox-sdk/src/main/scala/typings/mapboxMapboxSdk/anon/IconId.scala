@@ -21,7 +21,8 @@ object IconId {
     __obj.asInstanceOf[IconId]
   }
   
-  extension [Self <: IconId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconId] (val x: Self) extends AnyVal {
     
     inline def setDraft(value: Boolean): Self = StObject.set(x, "draft", value.asInstanceOf[js.Any])
     

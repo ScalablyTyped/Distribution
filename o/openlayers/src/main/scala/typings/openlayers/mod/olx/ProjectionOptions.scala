@@ -35,7 +35,8 @@ object ProjectionOptions {
     __obj.asInstanceOf[ProjectionOptions]
   }
   
-  extension [Self <: ProjectionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectionOptions] (val x: Self) extends AnyVal {
     
     inline def setAxisOrientation(value: String): Self = StObject.set(x, "axisOrientation", value.asInstanceOf[js.Any])
     

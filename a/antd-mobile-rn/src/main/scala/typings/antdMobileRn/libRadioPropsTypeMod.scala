@@ -22,7 +22,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioItemPropsType]
     }
     
-    extension [Self <: RadioItemPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioItemPropsType] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Any): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
@@ -55,7 +56,8 @@ object libRadioPropsTypeMod {
       __obj.asInstanceOf[RadioPropsType]
     }
     
-    extension [Self <: RadioPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RadioPropsType] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object GPUInfo {
     __obj.asInstanceOf[GPUInfo]
   }
   
-  extension [Self <: GPUInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUInfo] (val x: Self) extends AnyVal {
     
     inline def setRenderer(value: String): Self = StObject.set(x, "renderer", value.asInstanceOf[js.Any])
     

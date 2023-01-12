@@ -38,7 +38,8 @@ object libCheckboxMod {
       __obj.asInstanceOf[CheckboxProps]
     }
     
-    extension [Self <: CheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

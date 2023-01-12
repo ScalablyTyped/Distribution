@@ -15,7 +15,8 @@ object SecurePaymentContainerRequest {
     __obj.asInstanceOf[SecurePaymentContainerRequest]
   }
   
-  extension [Self <: SecurePaymentContainerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurePaymentContainerRequest] (val x: Self) extends AnyVal {
     
     inline def setSecurePaymentContainerRequest(value: typings.authorizenet.mod.APIContracts.SecurePaymentContainerRequest): Self = StObject.set(x, "securePaymentContainerRequest", value.asInstanceOf[js.Any])
   }

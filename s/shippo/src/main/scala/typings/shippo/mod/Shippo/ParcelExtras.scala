@@ -19,7 +19,8 @@ object ParcelExtras {
     __obj.asInstanceOf[ParcelExtras]
   }
   
-  extension [Self <: ParcelExtras](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParcelExtras] (val x: Self) extends AnyVal {
     
     inline def setCOD(value: Amount): Self = StObject.set(x, "COD", value.asInstanceOf[js.Any])
     

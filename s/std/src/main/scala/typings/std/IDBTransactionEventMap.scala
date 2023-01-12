@@ -22,7 +22,8 @@ object IDBTransactionEventMap {
     __obj.asInstanceOf[IDBTransactionEventMap]
   }
   
-  extension [Self <: IDBTransactionEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDBTransactionEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
     

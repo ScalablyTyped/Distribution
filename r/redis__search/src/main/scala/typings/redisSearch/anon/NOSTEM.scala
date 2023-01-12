@@ -23,7 +23,8 @@ object NOSTEM {
     __obj.asInstanceOf[NOSTEM]
   }
   
-  extension [Self <: NOSTEM](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NOSTEM] (val x: Self) extends AnyVal {
     
     inline def setNOSTEM(value: `true`): Self = StObject.set(x, "NOSTEM", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsVerticalImageMod extends Shortcu
       __obj.asInstanceOf[VerticalImageProps]
     }
     
-    extension [Self <: VerticalImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalImageProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

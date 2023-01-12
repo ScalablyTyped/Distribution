@@ -22,7 +22,8 @@ object Pipe {
     __obj.asInstanceOf[Pipe]
   }
   
-  extension [Self <: Pipe](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pipe] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

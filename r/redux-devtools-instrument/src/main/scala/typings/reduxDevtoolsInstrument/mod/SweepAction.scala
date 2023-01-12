@@ -19,7 +19,8 @@ object SweepAction {
     __obj.asInstanceOf[SweepAction]
   }
   
-  extension [Self <: SweepAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SweepAction] (val x: Self) extends AnyVal {
     
     inline def setType(value: SWEEP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

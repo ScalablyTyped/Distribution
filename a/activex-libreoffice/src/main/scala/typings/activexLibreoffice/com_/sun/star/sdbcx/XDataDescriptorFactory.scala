@@ -30,7 +30,8 @@ object XDataDescriptorFactory {
     __obj.asInstanceOf[XDataDescriptorFactory]
   }
   
-  extension [Self <: XDataDescriptorFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDataDescriptorFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateDataDescriptor(value: () => XPropertySet): Self = StObject.set(x, "createDataDescriptor", js.Any.fromFunction0(value))
   }

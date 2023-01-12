@@ -28,7 +28,8 @@ object GitUserDate {
     __obj.asInstanceOf[GitUserDate]
   }
   
-  extension [Self <: GitUserDate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitUserDate] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

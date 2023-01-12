@@ -101,7 +101,8 @@ object ImageStream {
     __obj.asInstanceOf[ImageStream]
   }
   
-  extension [Self <: ImageStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageStream] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

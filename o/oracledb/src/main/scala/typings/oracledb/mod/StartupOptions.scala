@@ -32,7 +32,8 @@ object StartupOptions {
     __obj.asInstanceOf[StartupOptions]
   }
   
-  extension [Self <: StartupOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartupOptions] (val x: Self) extends AnyVal {
     
     inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object GooglePrivacyDlpV2OutputStorageConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2OutputStorageConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2OutputStorageConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2OutputStorageConfig] (val x: Self) extends AnyVal {
     
     inline def setOutputSchema(value: String): Self = StObject.set(x, "outputSchema", value.asInstanceOf[js.Any])
     

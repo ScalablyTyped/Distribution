@@ -31,7 +31,8 @@ object esmPluginBigIntSupportMod extends Shortcut {
         __obj.asInstanceOf[ConfigTypeMap]
       }
       
-      extension [Self <: ConfigTypeMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ConfigTypeMap] (val x: Self) extends AnyVal {
         
         inline def setBigIntSupport(value: js.BigInt): Self = StObject.set(x, "bigIntSupport", value.asInstanceOf[js.Any])
       }

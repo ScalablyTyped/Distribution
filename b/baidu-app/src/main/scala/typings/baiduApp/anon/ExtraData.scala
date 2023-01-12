@@ -19,7 +19,8 @@ object ExtraData {
     __obj.asInstanceOf[ExtraData]
   }
   
-  extension [Self <: ExtraData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtraData] (val x: Self) extends AnyVal {
     
     inline def setAppId(value: String): Self = StObject.set(x, "appId", value.asInstanceOf[js.Any])
     

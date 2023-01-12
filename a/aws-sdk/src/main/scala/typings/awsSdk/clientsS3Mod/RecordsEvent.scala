@@ -19,7 +19,8 @@ object RecordsEvent {
     __obj.asInstanceOf[RecordsEvent]
   }
   
-  extension [Self <: RecordsEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordsEvent] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Buffer): Self = StObject.set(x, "Payload", value.asInstanceOf[js.Any])
     

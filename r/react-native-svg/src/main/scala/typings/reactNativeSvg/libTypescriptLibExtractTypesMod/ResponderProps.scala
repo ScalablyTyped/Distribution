@@ -22,7 +22,8 @@ object ResponderProps {
     __obj.asInstanceOf[ResponderProps]
   }
   
-  extension [Self <: ResponderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponderProps] (val x: Self) extends AnyVal {
     
     inline def setPointerEvents(value: `box-none` | none | `box-only` | auto): Self = StObject.set(x, "pointerEvents", value.asInstanceOf[js.Any])
     

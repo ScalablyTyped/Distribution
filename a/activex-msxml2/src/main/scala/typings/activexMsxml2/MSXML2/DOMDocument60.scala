@@ -304,7 +304,8 @@ object DOMDocument60 {
     __obj.asInstanceOf[DOMDocument60]
   }
   
-  extension [Self <: DOMDocument60](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOMDocument60] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
     

@@ -115,7 +115,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[InternalState]
     }
     
-    extension [Self <: InternalState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Intersection]
     }
     
-    extension [Self <: Intersection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Intersection] (val x: Self) extends AnyVal {
       
       inline def setEventObject(value: Object3D[Event]): Self = StObject.set(x, "eventObject", value.asInstanceOf[js.Any])
     }
@@ -191,7 +193,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Performance]
     }
     
-    extension [Self <: Performance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Performance] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: Double): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -232,7 +235,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Renderer]
     }
     
-    extension [Self <: Renderer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Renderer] (val x: Self) extends AnyVal {
       
       inline def setRender(value: (Scene, Camera) => Any): Self = StObject.set(x, "render", js.Any.fromFunction2(value))
     }
@@ -327,7 +331,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -358,7 +363,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: Double): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -399,7 +405,8 @@ object distDeclarationsSrcCoreStoreMod {
       __obj.asInstanceOf[Viewport]
     }
     
-    extension [Self <: Viewport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Viewport] (val x: Self) extends AnyVal {
       
       inline def setAspect(value: Double): Self = StObject.set(x, "aspect", value.asInstanceOf[js.Any])
       

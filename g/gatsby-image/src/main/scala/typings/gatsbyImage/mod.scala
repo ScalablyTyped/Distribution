@@ -39,7 +39,8 @@ object mod {
       __obj.asInstanceOf[FixedObject]
     }
     
-    extension [Self <: FixedObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedObject] (val x: Self) extends AnyVal {
       
       inline def setBase64(value: String): Self = StObject.set(x, "base64", value.asInstanceOf[js.Any])
       
@@ -98,7 +99,8 @@ object mod {
       __obj.asInstanceOf[FluidObject]
     }
     
-    extension [Self <: FluidObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FluidObject] (val x: Self) extends AnyVal {
       
       inline def setAspectRatio(value: Double): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
       
@@ -146,7 +148,8 @@ object mod {
       __obj.asInstanceOf[GatsbyImageFixedProps]
     }
     
-    extension [Self <: GatsbyImageFixedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatsbyImageFixedProps] (val x: Self) extends AnyVal {
       
       inline def setFixed(value: FixedObject | js.Array[FixedObject]): Self = StObject.set(x, "fixed", value.asInstanceOf[js.Any])
       
@@ -168,7 +171,8 @@ object mod {
       __obj.asInstanceOf[GatsbyImageFluidProps]
     }
     
-    extension [Self <: GatsbyImageFluidProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatsbyImageFluidProps] (val x: Self) extends AnyVal {
       
       inline def setFluid(value: FluidObject | js.Array[FluidObject]): Self = StObject.set(x, "fluid", value.asInstanceOf[js.Any])
       
@@ -233,7 +237,8 @@ object mod {
       __obj.asInstanceOf[GatsbyImageOptionalProps]
     }
     
-    extension [Self <: GatsbyImageOptionalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GatsbyImageOptionalProps] (val x: Self) extends AnyVal {
       
       inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object PhysicsRadialExplosionEventData {
     __obj.asInstanceOf[PhysicsRadialExplosionEventData]
   }
   
-  extension [Self <: PhysicsRadialExplosionEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicsRadialExplosionEventData] (val x: Self) extends AnyVal {
     
     inline def setSphere(value: Mesh): Self = StObject.set(x, "sphere", value.asInstanceOf[js.Any])
   }

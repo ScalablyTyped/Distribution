@@ -18,7 +18,8 @@ object StopExperimentResponse {
     __obj.asInstanceOf[StopExperimentResponse]
   }
   
-  extension [Self <: StopExperimentResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopExperimentResponse] (val x: Self) extends AnyVal {
     
     inline def setExperiment(value: Experiment): Self = StObject.set(x, "experiment", value.asInstanceOf[js.Any])
     

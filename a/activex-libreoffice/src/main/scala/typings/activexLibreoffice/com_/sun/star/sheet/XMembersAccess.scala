@@ -61,7 +61,8 @@ object XMembersAccess {
     __obj.asInstanceOf[XMembersAccess]
   }
   
-  extension [Self <: XMembersAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMembersAccess] (val x: Self) extends AnyVal {
     
     inline def setGetLocaleIndependentElementNames(value: () => SafeArray[String]): Self = StObject.set(x, "getLocaleIndependentElementNames", js.Any.fromFunction0(value))
     

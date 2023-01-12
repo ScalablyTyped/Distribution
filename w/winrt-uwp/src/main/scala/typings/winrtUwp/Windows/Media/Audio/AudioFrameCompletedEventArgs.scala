@@ -18,7 +18,8 @@ object AudioFrameCompletedEventArgs {
     __obj.asInstanceOf[AudioFrameCompletedEventArgs]
   }
   
-  extension [Self <: AudioFrameCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioFrameCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFrame(value: AudioFrame): Self = StObject.set(x, "frame", value.asInstanceOf[js.Any])
   }

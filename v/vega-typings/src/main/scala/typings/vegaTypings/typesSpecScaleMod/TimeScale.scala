@@ -25,7 +25,8 @@ object TimeScale {
     __obj.asInstanceOf[TimeScale]
   }
   
-  extension [Self <: TimeScale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeScale] (val x: Self) extends AnyVal {
     
     inline def setNice(value: Boolean | TimeInterval | TimeIntervalStep | SignalRef): Self = StObject.set(x, "nice", value.asInstanceOf[js.Any])
     

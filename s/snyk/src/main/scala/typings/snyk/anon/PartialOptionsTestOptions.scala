@@ -131,7 +131,8 @@ object PartialOptionsTestOptions {
     __obj.asInstanceOf[PartialOptionsTestOptions]
   }
   
-  extension [Self <: PartialOptionsTestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptionsTestOptions] (val x: Self) extends AnyVal {
     
     inline def setAdvertiseSubprojectsCount(value: Double): Self = StObject.set(x, "advertiseSubprojectsCount", value.asInstanceOf[js.Any])
     

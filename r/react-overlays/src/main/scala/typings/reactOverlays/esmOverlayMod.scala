@@ -71,7 +71,8 @@ object esmOverlayMod extends Shortcut {
       __obj.asInstanceOf[OverlayProps]
     }
     
-    extension [Self <: OverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OverlayProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ForceUpdate => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

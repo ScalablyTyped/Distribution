@@ -17,7 +17,8 @@ object ProcessFdinfoEpollCounter {
     __obj.asInstanceOf[ProcessFdinfoEpollCounter]
   }
   
-  extension [Self <: ProcessFdinfoEpollCounter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessFdinfoEpollCounter] (val x: Self) extends AnyVal {
     
     inline def setFd(value: Double): Self = StObject.set(x, "fd", value.asInstanceOf[js.Any])
     

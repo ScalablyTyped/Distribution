@@ -34,7 +34,8 @@ object GitDeletedRepository {
     __obj.asInstanceOf[GitDeletedRepository]
   }
   
-  extension [Self <: GitDeletedRepository](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitDeletedRepository] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

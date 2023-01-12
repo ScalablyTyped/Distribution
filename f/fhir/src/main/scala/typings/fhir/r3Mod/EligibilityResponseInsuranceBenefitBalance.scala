@@ -66,7 +66,8 @@ object EligibilityResponseInsuranceBenefitBalance {
     __obj.asInstanceOf[EligibilityResponseInsuranceBenefitBalance]
   }
   
-  extension [Self <: EligibilityResponseInsuranceBenefitBalance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EligibilityResponseInsuranceBenefitBalance] (val x: Self) extends AnyVal {
     
     inline def setCategory(value: CodeableConcept): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
     

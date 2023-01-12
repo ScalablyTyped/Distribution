@@ -21,7 +21,8 @@ object MjmlBodyProps {
     __obj.asInstanceOf[MjmlBodyProps]
   }
   
-  extension [Self <: MjmlBodyProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MjmlBodyProps] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: BackgroundColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

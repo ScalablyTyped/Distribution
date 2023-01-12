@@ -52,7 +52,8 @@ object componentsCheckBoxGroupMod {
       __obj.asInstanceOf[CheckBoxGroupProps]
     }
     
-    extension [Self <: CheckBoxGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxGroupProps] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: js.Array[Double | String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -117,7 +118,8 @@ object componentsCheckBoxGroupMod {
       __obj.asInstanceOf[OnChangeEvent]
     }
     
-    extension [Self <: OnChangeEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnChangeEvent] (val x: Self) extends AnyVal {
       
       inline def setOption(value: String | CheckBoxProps): Self = StObject.set(x, "option", value.asInstanceOf[js.Any])
       

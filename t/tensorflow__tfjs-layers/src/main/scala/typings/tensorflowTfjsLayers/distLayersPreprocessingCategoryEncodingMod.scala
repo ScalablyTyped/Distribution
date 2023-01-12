@@ -47,7 +47,8 @@ object distLayersPreprocessingCategoryEncodingMod {
       __obj.asInstanceOf[CategoryEncodingArgs]
     }
     
-    extension [Self <: CategoryEncodingArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryEncodingArgs] (val x: Self) extends AnyVal {
       
       inline def setNumTokens(value: Double): Self = StObject.set(x, "numTokens", value.asInstanceOf[js.Any])
       

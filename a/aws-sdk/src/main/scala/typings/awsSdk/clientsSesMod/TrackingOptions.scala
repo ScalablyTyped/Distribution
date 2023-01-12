@@ -18,7 +18,8 @@ object TrackingOptions {
     __obj.asInstanceOf[TrackingOptions]
   }
   
-  extension [Self <: TrackingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackingOptions] (val x: Self) extends AnyVal {
     
     inline def setCustomRedirectDomain(value: CustomRedirectDomain): Self = StObject.set(x, "CustomRedirectDomain", value.asInstanceOf[js.Any])
     

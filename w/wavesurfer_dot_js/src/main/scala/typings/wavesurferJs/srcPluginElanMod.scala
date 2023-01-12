@@ -54,7 +54,8 @@ object srcPluginElanMod {
       __obj.asInstanceOf[ElanPluginParams]
     }
     
-    extension [Self <: ElanPluginParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElanPluginParams] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: String | HTMLElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

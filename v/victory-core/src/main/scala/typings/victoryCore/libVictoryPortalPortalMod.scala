@@ -70,7 +70,8 @@ object libVictoryPortalPortalMod {
       __obj.asInstanceOf[PortalProps]
     }
     
-    extension [Self <: PortalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PortalProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

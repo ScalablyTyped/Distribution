@@ -15,7 +15,8 @@ object AnalysisCharFilterBase {
     __obj.asInstanceOf[AnalysisCharFilterBase]
   }
   
-  extension [Self <: AnalysisCharFilterBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisCharFilterBase] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: VersionString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

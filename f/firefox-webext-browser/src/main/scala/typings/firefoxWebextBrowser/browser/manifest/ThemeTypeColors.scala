@@ -105,7 +105,8 @@ object ThemeTypeColors {
     __obj.asInstanceOf[ThemeTypeColors]
   }
   
-  extension [Self <: ThemeTypeColors](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThemeTypeColors] (val x: Self) extends AnyVal {
     
     inline def setAccentcolor(value: ThemeColor): Self = StObject.set(x, "accentcolor", value.asInstanceOf[js.Any])
     

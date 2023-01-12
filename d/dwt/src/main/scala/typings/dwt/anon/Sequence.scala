@@ -26,7 +26,8 @@ object Sequence {
     __obj.asInstanceOf[Sequence]
   }
   
-  extension [Self <: Sequence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sequence] (val x: Self) extends AnyVal {
     
     inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
     

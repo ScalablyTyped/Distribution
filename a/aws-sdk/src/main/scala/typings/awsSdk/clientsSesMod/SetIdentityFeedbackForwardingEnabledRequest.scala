@@ -23,7 +23,8 @@ object SetIdentityFeedbackForwardingEnabledRequest {
     __obj.asInstanceOf[SetIdentityFeedbackForwardingEnabledRequest]
   }
   
-  extension [Self <: SetIdentityFeedbackForwardingEnabledRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetIdentityFeedbackForwardingEnabledRequest] (val x: Self) extends AnyVal {
     
     inline def setForwardingEnabled(value: Enabled): Self = StObject.set(x, "ForwardingEnabled", value.asInstanceOf[js.Any])
     

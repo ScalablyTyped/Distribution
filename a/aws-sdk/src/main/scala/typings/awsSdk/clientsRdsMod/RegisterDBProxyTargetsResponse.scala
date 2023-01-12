@@ -18,7 +18,8 @@ object RegisterDBProxyTargetsResponse {
     __obj.asInstanceOf[RegisterDBProxyTargetsResponse]
   }
   
-  extension [Self <: RegisterDBProxyTargetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDBProxyTargetsResponse] (val x: Self) extends AnyVal {
     
     inline def setDBProxyTargets(value: TargetList): Self = StObject.set(x, "DBProxyTargets", value.asInstanceOf[js.Any])
     

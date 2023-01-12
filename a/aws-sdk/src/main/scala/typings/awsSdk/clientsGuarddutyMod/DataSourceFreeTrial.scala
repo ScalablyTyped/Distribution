@@ -18,7 +18,8 @@ object DataSourceFreeTrial {
     __obj.asInstanceOf[DataSourceFreeTrial]
   }
   
-  extension [Self <: DataSourceFreeTrial](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceFreeTrial] (val x: Self) extends AnyVal {
     
     inline def setFreeTrialDaysRemaining(value: Integer): Self = StObject.set(x, "FreeTrialDaysRemaining", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ProxyConfiguration {
     __obj.asInstanceOf[ProxyConfiguration]
   }
   
-  extension [Self <: ProxyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProxyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setCanConnectDirectly(value: Boolean): Self = StObject.set(x, "canConnectDirectly", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FragmentSelector {
     __obj.asInstanceOf[FragmentSelector]
   }
   
-  extension [Self <: FragmentSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FragmentSelector] (val x: Self) extends AnyVal {
     
     inline def setFragmentSelectorType(value: FragmentSelectorType): Self = StObject.set(x, "FragmentSelectorType", value.asInstanceOf[js.Any])
     

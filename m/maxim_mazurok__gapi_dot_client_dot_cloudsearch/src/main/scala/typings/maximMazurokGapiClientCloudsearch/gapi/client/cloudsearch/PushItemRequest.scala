@@ -22,7 +22,8 @@ object PushItemRequest {
     __obj.asInstanceOf[PushItemRequest]
   }
   
-  extension [Self <: PushItemRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushItemRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

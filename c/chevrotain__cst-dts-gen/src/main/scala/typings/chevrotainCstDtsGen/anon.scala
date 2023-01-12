@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[RequiredGenerateDtsOption]
     }
     
-    extension [Self <: RequiredGenerateDtsOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequiredGenerateDtsOption] (val x: Self) extends AnyVal {
       
       inline def setIncludeVisitorInterface(value: Boolean): Self = StObject.set(x, "includeVisitorInterface", value.asInstanceOf[js.Any])
       

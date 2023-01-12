@@ -26,7 +26,8 @@ object ProfilingDataForRootBackend {
     __obj.asInstanceOf[ProfilingDataForRootBackend]
   }
   
-  extension [Self <: ProfilingDataForRootBackend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProfilingDataForRootBackend] (val x: Self) extends AnyVal {
     
     inline def setCommitData(value: js.Array[CommitDataBackend]): Self = StObject.set(x, "commitData", value.asInstanceOf[js.Any])
     

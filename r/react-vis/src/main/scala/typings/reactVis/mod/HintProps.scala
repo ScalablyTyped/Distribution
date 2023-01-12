@@ -46,7 +46,8 @@ object HintProps {
     __obj.asInstanceOf[HintProps]
   }
   
-  extension [Self <: HintProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Vertical): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

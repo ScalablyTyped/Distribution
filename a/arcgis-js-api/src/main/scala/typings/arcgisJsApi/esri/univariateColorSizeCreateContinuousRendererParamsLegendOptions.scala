@@ -27,7 +27,8 @@ object univariateColorSizeCreateContinuousRendererParamsLegendOptions {
     __obj.asInstanceOf[univariateColorSizeCreateContinuousRendererParamsLegendOptions]
   }
   
-  extension [Self <: univariateColorSizeCreateContinuousRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: univariateColorSizeCreateContinuousRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

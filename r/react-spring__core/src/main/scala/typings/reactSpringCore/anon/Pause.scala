@@ -22,7 +22,8 @@ object Pause {
     __obj.asInstanceOf[Pause[T]]
   }
   
-  extension [Self <: Pause[?], T /* <: AnimationTarget[Any] */](x: Self & Pause[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pause[?], T /* <: AnimationTarget[Any] */] (val x: Self & Pause[T]) extends AnyVal {
     
     inline def setPause(value: () => Unit): Self = StObject.set(x, "pause", js.Any.fromFunction0(value))
     

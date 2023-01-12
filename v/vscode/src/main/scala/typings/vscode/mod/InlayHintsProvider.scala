@@ -42,7 +42,8 @@ object InlayHintsProvider {
     __obj.asInstanceOf[InlayHintsProvider[T]]
   }
   
-  extension [Self <: InlayHintsProvider[?], T /* <: InlayHint */](x: Self & InlayHintsProvider[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InlayHintsProvider[?], T /* <: InlayHint */] (val x: Self & InlayHintsProvider[T]) extends AnyVal {
     
     inline def setOnDidChangeInlayHints(
       value: (/* listener */ js.Function1[Unit, Any], /* thisArgs */ js.UndefOr[Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable

@@ -20,7 +20,8 @@ object TextLogSetting {
     __obj.asInstanceOf[TextLogSetting]
   }
   
-  extension [Self <: TextLogSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextLogSetting] (val x: Self) extends AnyVal {
     
     inline def setDestination(value: TextLogDestination): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
     

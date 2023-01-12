@@ -18,7 +18,8 @@ object DeleteObservabilityConfigurationResponse {
     __obj.asInstanceOf[DeleteObservabilityConfigurationResponse]
   }
   
-  extension [Self <: DeleteObservabilityConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteObservabilityConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setObservabilityConfiguration(value: ObservabilityConfiguration): Self = StObject.set(x, "ObservabilityConfiguration", value.asInstanceOf[js.Any])
   }

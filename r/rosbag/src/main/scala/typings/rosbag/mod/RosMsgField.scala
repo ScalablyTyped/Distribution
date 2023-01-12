@@ -30,7 +30,8 @@ object RosMsgField {
     __obj.asInstanceOf[RosMsgField]
   }
   
-  extension [Self <: RosMsgField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RosMsgField] (val x: Self) extends AnyVal {
     
     inline def setArrayLength(value: Double): Self = StObject.set(x, "arrayLength", value.asInstanceOf[js.Any])
     

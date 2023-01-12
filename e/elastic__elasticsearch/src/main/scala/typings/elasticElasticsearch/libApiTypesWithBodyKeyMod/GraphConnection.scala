@@ -21,7 +21,8 @@ object GraphConnection {
     __obj.asInstanceOf[GraphConnection]
   }
   
-  extension [Self <: GraphConnection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphConnection] (val x: Self) extends AnyVal {
     
     inline def setDoc_count(value: long): Self = StObject.set(x, "doc_count", value.asInstanceOf[js.Any])
     

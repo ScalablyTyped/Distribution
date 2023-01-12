@@ -48,7 +48,8 @@ object Codescanningupload {
     __obj.asInstanceOf[Codescanningupload]
   }
   
-  extension [Self <: Codescanningupload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Codescanningupload] (val x: Self) extends AnyVal {
     
     inline def setActions_runner_registration(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['rate-limit'] */ js.Any

@@ -18,7 +18,8 @@ object FormattedVss {
     __obj.asInstanceOf[FormattedVss]
   }
   
-  extension [Self <: FormattedVss](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormattedVss] (val x: Self) extends AnyVal {
     
     inline def setVssJson(value: String): Self = StObject.set(x, "vssJson", value.asInstanceOf[js.Any])
     

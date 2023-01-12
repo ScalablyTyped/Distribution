@@ -70,7 +70,8 @@ object anon {
       __obj.asInstanceOf[D]
     }
     
-    extension [Self <: D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: D] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double | String): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
       
@@ -252,7 +253,8 @@ object anon {
       __obj.asInstanceOf[PartialILocale]
     }
     
-    extension [Self <: PartialILocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialILocale] (val x: Self) extends AnyVal {
       
       inline def setFormats(value: PartialLTstringLTSstringL): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
       
@@ -328,7 +330,8 @@ object anon {
       __obj.asInstanceOf[PartialLTstringLTSstringL]
     }
     
-    extension [Self <: PartialLTstringLTSstringL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialLTstringLTSstringL] (val x: Self) extends AnyVal {
       
       inline def setL(value: String): Self = StObject.set(x, "L", value.asInstanceOf[js.Any])
       
@@ -392,7 +395,8 @@ object anon {
       __obj.asInstanceOf[Partialfuturestringpastst]
     }
     
-    extension [Self <: Partialfuturestringpastst](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Partialfuturestringpastst] (val x: Self) extends AnyVal {
       
       inline def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

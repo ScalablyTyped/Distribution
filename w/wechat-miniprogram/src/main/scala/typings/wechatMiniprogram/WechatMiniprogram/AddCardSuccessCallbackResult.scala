@@ -18,7 +18,8 @@ object AddCardSuccessCallbackResult {
     __obj.asInstanceOf[AddCardSuccessCallbackResult]
   }
   
-  extension [Self <: AddCardSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCardSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setCardList(value: js.Array[AddCardResponseInfo]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     

@@ -70,7 +70,8 @@ object CallbackFailoverRatio {
     __obj.asInstanceOf[CallbackFailoverRatio]
   }
   
-  extension [Self <: CallbackFailoverRatio](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackFailoverRatio] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

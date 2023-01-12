@@ -23,7 +23,8 @@ object ListAvailableManagementCidrRangesResult {
     __obj.asInstanceOf[ListAvailableManagementCidrRangesResult]
   }
   
-  extension [Self <: ListAvailableManagementCidrRangesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListAvailableManagementCidrRangesResult] (val x: Self) extends AnyVal {
     
     inline def setManagementCidrRanges(value: DedicatedTenancyCidrRangeList): Self = StObject.set(x, "ManagementCidrRanges", value.asInstanceOf[js.Any])
     

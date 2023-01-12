@@ -68,7 +68,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Book]
       }
       
-      extension [Self <: Book](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Book] (val x: Self) extends AnyVal {
         
         inline def setAuthors(value: js.Array[String]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
         

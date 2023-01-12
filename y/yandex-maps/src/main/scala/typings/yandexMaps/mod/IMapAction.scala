@@ -20,7 +20,8 @@ object IMapAction {
     __obj.asInstanceOf[IMapAction]
   }
   
-  extension [Self <: IMapAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapAction] (val x: Self) extends AnyVal {
     
     inline def setBegin(value: Manager => Unit): Self = StObject.set(x, "begin", js.Any.fromFunction1(value))
     

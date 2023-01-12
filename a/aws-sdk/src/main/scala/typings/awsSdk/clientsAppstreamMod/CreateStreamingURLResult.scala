@@ -23,7 +23,8 @@ object CreateStreamingURLResult {
     __obj.asInstanceOf[CreateStreamingURLResult]
   }
   
-  extension [Self <: CreateStreamingURLResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStreamingURLResult] (val x: Self) extends AnyVal {
     
     inline def setExpires(value: js.Date): Self = StObject.set(x, "Expires", value.asInstanceOf[js.Any])
     

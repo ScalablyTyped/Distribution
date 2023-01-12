@@ -25,7 +25,8 @@ object PhoneAuthSnapshot {
     __obj.asInstanceOf[PhoneAuthSnapshot]
   }
   
-  extension [Self <: PhoneAuthSnapshot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhoneAuthSnapshot] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -89,7 +89,8 @@ object X500Name {
     __obj.asInstanceOf[X500Name]
   }
   
-  extension [Self <: X500Name](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X500Name] (val x: Self) extends AnyVal {
     
     inline def setSetByLdapString(value: String => Unit): Self = StObject.set(x, "setByLdapString", js.Any.fromFunction1(value))
     

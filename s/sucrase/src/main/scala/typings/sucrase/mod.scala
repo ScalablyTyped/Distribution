@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[SucraseContext]
     }
     
-    extension [Self <: SucraseContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SucraseContext] (val x: Self) extends AnyVal {
       
       inline def setHelperManager(value: HelperManager): Self = StObject.set(x, "helperManager", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[TransformResult]
     }
     
-    extension [Self <: TransformResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransformResult] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

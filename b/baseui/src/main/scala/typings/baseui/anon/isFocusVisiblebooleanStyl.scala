@@ -33,7 +33,8 @@ object isFocusVisiblebooleanStyl {
     __obj.asInstanceOf[isFocusVisiblebooleanStyl]
   }
   
-  extension [Self <: isFocusVisiblebooleanStyl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: isFocusVisiblebooleanStyl] (val x: Self) extends AnyVal {
     
     inline def set$col(value: js.Object): Self = StObject.set(x, "$col", value.asInstanceOf[js.Any])
     

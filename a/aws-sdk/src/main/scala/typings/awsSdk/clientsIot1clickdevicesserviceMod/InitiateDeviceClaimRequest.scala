@@ -18,7 +18,8 @@ object InitiateDeviceClaimRequest {
     __obj.asInstanceOf[InitiateDeviceClaimRequest]
   }
   
-  extension [Self <: InitiateDeviceClaimRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateDeviceClaimRequest] (val x: Self) extends AnyVal {
     
     inline def setDeviceId(value: string): Self = StObject.set(x, "DeviceId", value.asInstanceOf[js.Any])
   }

@@ -40,7 +40,8 @@ object ProductStatus {
     __obj.asInstanceOf[ProductStatus]
   }
   
-  extension [Self <: ProductStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductStatus] (val x: Self) extends AnyVal {
     
     inline def setCreationDate(value: String): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
     

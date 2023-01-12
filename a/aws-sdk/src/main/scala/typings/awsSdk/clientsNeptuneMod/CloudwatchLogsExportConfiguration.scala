@@ -23,7 +23,8 @@ object CloudwatchLogsExportConfiguration {
     __obj.asInstanceOf[CloudwatchLogsExportConfiguration]
   }
   
-  extension [Self <: CloudwatchLogsExportConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudwatchLogsExportConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDisableLogTypes(value: LogTypeList): Self = StObject.set(x, "DisableLogTypes", value.asInstanceOf[js.Any])
     

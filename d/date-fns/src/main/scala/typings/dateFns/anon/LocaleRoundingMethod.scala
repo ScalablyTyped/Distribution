@@ -30,7 +30,8 @@ object LocaleRoundingMethod {
     __obj.asInstanceOf[LocaleRoundingMethod]
   }
   
-  extension [Self <: LocaleRoundingMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocaleRoundingMethod] (val x: Self) extends AnyVal {
     
     inline def setAddSuffix(value: Boolean): Self = StObject.set(x, "addSuffix", value.asInstanceOf[js.Any])
     

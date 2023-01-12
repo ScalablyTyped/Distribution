@@ -41,7 +41,8 @@ object distSrcBasePathMod {
       __obj.asInstanceOf[BasePath]
     }
     
-    extension [Self <: BasePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BasePath] (val x: Self) extends AnyVal {
       
       inline def setHasVariables(value: () => Boolean): Self = StObject.set(x, "hasVariables", js.Any.fromFunction0(value))
       

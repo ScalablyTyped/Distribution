@@ -76,7 +76,8 @@ object mod {
       __obj.asInstanceOf[Endpoint]
     }
     
-    extension [Self <: Endpoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint] (val x: Self) extends AnyVal {
       
       inline def setMatches(value: StubbyRequest => StubbyRequest | Null): Self = StObject.set(x, "matches", js.Any.fromFunction1(value))
     }
@@ -140,7 +141,8 @@ object mod {
       __obj.asInstanceOf[StubbyCommonOptions]
     }
     
-    extension [Self <: StubbyCommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyCommonOptions] (val x: Self) extends AnyVal {
       
       inline def setAdmin(value: Double): Self = StObject.set(x, "admin", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object mod {
       __obj.asInstanceOf[StubbyData]
     }
     
-    extension [Self <: StubbyData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyData] (val x: Self) extends AnyVal {
       
       inline def setRequest(value: StubbyRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
@@ -361,7 +364,8 @@ object mod {
       __obj.asInstanceOf[StubbyRequest]
     }
     
-    extension [Self <: StubbyRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyRequest] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
@@ -433,7 +437,8 @@ object mod {
       __obj.asInstanceOf[StubbyResponse]
     }
     
-    extension [Self <: StubbyResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -479,7 +484,8 @@ object mod {
       __obj.asInstanceOf[StubbyWithKeyCertOptions]
     }
     
-    extension [Self <: StubbyWithKeyCertOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyWithKeyCertOptions] (val x: Self) extends AnyVal {
       
       inline def setCert(value: String | Buffer | (js.Array[String | Buffer])): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
       
@@ -506,7 +512,8 @@ object mod {
       __obj.asInstanceOf[StubbyWithPfxOptions]
     }
     
-    extension [Self <: StubbyWithPfxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StubbyWithPfxOptions] (val x: Self) extends AnyVal {
       
       inline def setPfx(value: String | Buffer | (js.Array[String | Buffer | js.Object])): Self = StObject.set(x, "pfx", value.asInstanceOf[js.Any])
       

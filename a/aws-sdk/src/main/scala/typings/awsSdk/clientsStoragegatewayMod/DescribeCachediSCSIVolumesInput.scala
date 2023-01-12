@@ -18,7 +18,8 @@ object DescribeCachediSCSIVolumesInput {
     __obj.asInstanceOf[DescribeCachediSCSIVolumesInput]
   }
   
-  extension [Self <: DescribeCachediSCSIVolumesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeCachediSCSIVolumesInput] (val x: Self) extends AnyVal {
     
     inline def setVolumeARNs(value: VolumeARNs): Self = StObject.set(x, "VolumeARNs", value.asInstanceOf[js.Any])
     

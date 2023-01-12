@@ -18,7 +18,8 @@ object GetBucketOwnershipControlsOutput {
     __obj.asInstanceOf[GetBucketOwnershipControlsOutput]
   }
   
-  extension [Self <: GetBucketOwnershipControlsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBucketOwnershipControlsOutput] (val x: Self) extends AnyVal {
     
     inline def setOwnershipControls(value: OwnershipControls): Self = StObject.set(x, "OwnershipControls", value.asInstanceOf[js.Any])
     

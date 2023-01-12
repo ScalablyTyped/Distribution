@@ -28,7 +28,8 @@ object GetDownloadUrlForLayerRequest {
     __obj.asInstanceOf[GetDownloadUrlForLayerRequest]
   }
   
-  extension [Self <: GetDownloadUrlForLayerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDownloadUrlForLayerRequest] (val x: Self) extends AnyVal {
     
     inline def setLayerDigest(value: LayerDigest): Self = StObject.set(x, "layerDigest", value.asInstanceOf[js.Any])
     

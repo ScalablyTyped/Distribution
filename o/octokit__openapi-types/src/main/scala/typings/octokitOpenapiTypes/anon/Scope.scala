@@ -25,7 +25,8 @@ object Scope {
     __obj.asInstanceOf[Scope]
   }
   
-  extension [Self <: Scope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Scope] (val x: Self) extends AnyVal {
     
     inline def setManifest_path(value: String): Self = StObject.set(x, "manifest_path", value.asInstanceOf[js.Any])
     

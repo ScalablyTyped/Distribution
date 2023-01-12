@@ -21,7 +21,8 @@ object TranferAccountVerificationRequest {
     __obj.asInstanceOf[TranferAccountVerificationRequest]
   }
   
-  extension [Self <: TranferAccountVerificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranferAccountVerificationRequest] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

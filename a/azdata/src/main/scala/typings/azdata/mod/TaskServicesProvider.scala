@@ -42,7 +42,8 @@ object TaskServicesProvider {
     __obj.asInstanceOf[TaskServicesProvider]
   }
   
-  extension [Self <: TaskServicesProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskServicesProvider] (val x: Self) extends AnyVal {
     
     inline def setCancelTask(value: CancelTaskParams => Thenable[Boolean]): Self = StObject.set(x, "cancelTask", js.Any.fromFunction1(value))
     

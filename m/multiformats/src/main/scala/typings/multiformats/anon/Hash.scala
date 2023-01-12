@@ -19,7 +19,8 @@ object Hash {
     __obj.asInstanceOf[Hash[Format, Version]]
   }
   
-  extension [Self <: Hash[?, ?], Format /* <: Double */, Version /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */](x: Self & (Hash[Format, Version])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Hash[?, ?], Format /* <: Double */, Version /* <: typings.multiformats.distTypesSrcLinkInterfaceMod.Version */] (val x: Self & (Hash[Format, Version])) extends AnyVal {
     
     inline def setCode(value: Format): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object ChangeTableCellPreferredWidthCommand {
     __obj.asInstanceOf[ChangeTableCellPreferredWidthCommand]
   }
   
-  extension [Self <: ChangeTableCellPreferredWidthCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeTableCellPreferredWidthCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: TableWidthUnit => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

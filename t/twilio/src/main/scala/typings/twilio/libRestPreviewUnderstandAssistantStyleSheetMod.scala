@@ -178,7 +178,8 @@ object libRestPreviewUnderstandAssistantStyleSheetMod {
       __obj.asInstanceOf[StyleSheetInstanceUpdateOptions]
     }
     
-    extension [Self <: StyleSheetInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setStyleSheet(value: js.Object): Self = StObject.set(x, "styleSheet", value.asInstanceOf[js.Any])
       
@@ -245,7 +246,8 @@ object libRestPreviewUnderstandAssistantStyleSheetMod {
       __obj.asInstanceOf[StyleSheetResource]
     }
     
-    extension [Self <: StyleSheetResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       
@@ -268,7 +270,8 @@ object libRestPreviewUnderstandAssistantStyleSheetMod {
       __obj.asInstanceOf[StyleSheetSolution]
     }
     
-    extension [Self <: StyleSheetSolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleSheetSolution] (val x: Self) extends AnyVal {
       
       inline def setAssistantSid(value: String): Self = StObject.set(x, "assistantSid", value.asInstanceOf[js.Any])
       

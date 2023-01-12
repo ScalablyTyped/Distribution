@@ -39,7 +39,8 @@ object AngularResolverOptionsSchema {
     __obj.asInstanceOf[AngularResolverOptionsSchema]
   }
   
-  extension [Self <: AngularResolverOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularResolverOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
     

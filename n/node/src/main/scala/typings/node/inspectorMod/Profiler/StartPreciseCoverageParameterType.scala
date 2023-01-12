@@ -23,7 +23,8 @@ object StartPreciseCoverageParameterType {
     __obj.asInstanceOf[StartPreciseCoverageParameterType]
   }
   
-  extension [Self <: StartPreciseCoverageParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPreciseCoverageParameterType] (val x: Self) extends AnyVal {
     
     inline def setCallCount(value: Boolean): Self = StObject.set(x, "callCount", value.asInstanceOf[js.Any])
     

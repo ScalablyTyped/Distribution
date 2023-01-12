@@ -26,7 +26,8 @@ object SodaCollectionNamesOptions {
     __obj.asInstanceOf[SodaCollectionNamesOptions]
   }
   
-  extension [Self <: SodaCollectionNamesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SodaCollectionNamesOptions] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

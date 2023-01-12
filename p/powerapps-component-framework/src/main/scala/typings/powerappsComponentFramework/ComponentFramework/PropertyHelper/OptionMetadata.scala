@@ -22,7 +22,8 @@ object OptionMetadata {
     __obj.asInstanceOf[OptionMetadata]
   }
   
-  extension [Self <: OptionMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionMetadata] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "Color", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListContactsFilter {
     __obj.asInstanceOf[ListContactsFilter]
   }
   
-  extension [Self <: ListContactsFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListContactsFilter] (val x: Self) extends AnyVal {
     
     inline def setFilteredStatus(value: SubscriptionStatus): Self = StObject.set(x, "FilteredStatus", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object PlotSupertrendParamsOptions {
     __obj.asInstanceOf[PlotSupertrendParamsOptions]
   }
   
-  extension [Self <: PlotSupertrendParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotSupertrendParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

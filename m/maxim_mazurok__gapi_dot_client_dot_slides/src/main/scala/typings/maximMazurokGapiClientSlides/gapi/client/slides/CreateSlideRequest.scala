@@ -36,7 +36,8 @@ object CreateSlideRequest {
     __obj.asInstanceOf[CreateSlideRequest]
   }
   
-  extension [Self <: CreateSlideRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSlideRequest] (val x: Self) extends AnyVal {
     
     inline def setInsertionIndex(value: Double): Self = StObject.set(x, "insertionIndex", value.asInstanceOf[js.Any])
     

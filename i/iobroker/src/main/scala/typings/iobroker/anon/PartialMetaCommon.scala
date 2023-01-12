@@ -33,7 +33,8 @@ object PartialMetaCommon {
     __obj.asInstanceOf[PartialMetaCommon]
   }
   
-  extension [Self <: PartialMetaCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMetaCommon] (val x: Self) extends AnyVal {
     
     inline def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     

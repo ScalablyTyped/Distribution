@@ -148,7 +148,8 @@ object controlMod {
       __obj.asInstanceOf[ControlParams]
     }
     
-    extension [Self <: ControlParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlParams] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       

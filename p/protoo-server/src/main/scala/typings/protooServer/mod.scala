@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[ConnectionRequestInfo]
     }
     
-    extension [Self <: ConnectionRequestInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionRequestInfo] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ProotooResponse]
     }
     
-    extension [Self <: ProotooResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProotooResponse] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -209,7 +211,8 @@ object mod {
       __obj.asInstanceOf[ProtooNotification]
     }
     
-    extension [Self <: ProtooNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtooNotification] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -236,7 +239,8 @@ object mod {
       __obj.asInstanceOf[ProtooRequest]
     }
     
-    extension [Self <: ProtooRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProtooRequest] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -290,7 +294,8 @@ object mod {
       __obj.asInstanceOf[WebSocketServerOptions]
     }
     
-    extension [Self <: WebSocketServerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketServerOptions] (val x: Self) extends AnyVal {
       
       inline def setAssembleFragments(value: Boolean): Self = StObject.set(x, "assembleFragments", value.asInstanceOf[js.Any])
       
@@ -365,7 +370,8 @@ object mod {
       __obj.asInstanceOf[WebSocketTransport]
     }
     
-    extension [Self <: WebSocketTransport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketTransport] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       

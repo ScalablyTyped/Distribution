@@ -28,7 +28,8 @@ object DataHolderStatus {
     __obj.asInstanceOf[DataHolderStatus]
   }
   
-  extension [Self <: DataHolderStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataHolderStatus] (val x: Self) extends AnyVal {
     
     inline def setLegalEntityId(value: String): Self = StObject.set(x, "legalEntityId", value.asInstanceOf[js.Any])
     

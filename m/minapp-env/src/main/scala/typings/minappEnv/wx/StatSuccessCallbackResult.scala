@@ -18,7 +18,8 @@ object StatSuccessCallbackResult {
     __obj.asInstanceOf[StatSuccessCallbackResult]
   }
   
-  extension [Self <: StatSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setStats(value: Stats | js.Object): Self = StObject.set(x, "stats", value.asInstanceOf[js.Any])
   }

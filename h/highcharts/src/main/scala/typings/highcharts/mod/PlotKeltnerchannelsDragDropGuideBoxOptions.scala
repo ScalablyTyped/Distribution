@@ -18,7 +18,8 @@ object PlotKeltnerchannelsDragDropGuideBoxOptions {
     __obj.asInstanceOf[PlotKeltnerchannelsDragDropGuideBoxOptions]
   }
   
-  extension [Self <: PlotKeltnerchannelsDragDropGuideBoxOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotKeltnerchannelsDragDropGuideBoxOptions] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: DragDropGuideBoxOptionsObject): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

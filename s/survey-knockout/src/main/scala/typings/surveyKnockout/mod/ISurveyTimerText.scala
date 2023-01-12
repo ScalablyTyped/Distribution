@@ -15,7 +15,8 @@ object ISurveyTimerText {
     __obj.asInstanceOf[ISurveyTimerText]
   }
   
-  extension [Self <: ISurveyTimerText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISurveyTimerText] (val x: Self) extends AnyVal {
     
     inline def setTimerInfoText(value: String): Self = StObject.set(x, "timerInfoText", value.asInstanceOf[js.Any])
   }

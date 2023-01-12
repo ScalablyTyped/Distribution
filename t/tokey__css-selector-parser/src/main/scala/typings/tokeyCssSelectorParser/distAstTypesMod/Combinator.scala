@@ -39,7 +39,8 @@ object Combinator {
     __obj.asInstanceOf[Combinator]
   }
   
-  extension [Self <: Combinator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Combinator] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

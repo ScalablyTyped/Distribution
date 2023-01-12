@@ -29,7 +29,8 @@ object RangeSelectorInputPositionOptions {
     __obj.asInstanceOf[RangeSelectorInputPositionOptions]
   }
   
-  extension [Self <: RangeSelectorInputPositionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeSelectorInputPositionOptions] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: AlignValue): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

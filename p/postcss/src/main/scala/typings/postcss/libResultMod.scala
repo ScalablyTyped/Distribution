@@ -52,7 +52,8 @@ object libResultMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setPlugin(value: String): Self = StObject.set(x, "plugin", value.asInstanceOf[js.Any])
       
@@ -210,7 +211,8 @@ object libResultMod {
       __obj.asInstanceOf[ResultOptions]
     }
     
-    extension [Self <: ResultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultOptions] (val x: Self) extends AnyVal {
       
       inline def setNode(value: Node): Self = StObject.set(x, "node", value.asInstanceOf[js.Any])
       

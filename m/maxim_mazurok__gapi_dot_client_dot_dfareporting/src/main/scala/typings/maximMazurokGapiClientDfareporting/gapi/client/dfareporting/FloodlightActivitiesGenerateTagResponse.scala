@@ -25,7 +25,8 @@ object FloodlightActivitiesGenerateTagResponse {
     __obj.asInstanceOf[FloodlightActivitiesGenerateTagResponse]
   }
   
-  extension [Self <: FloodlightActivitiesGenerateTagResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FloodlightActivitiesGenerateTagResponse] (val x: Self) extends AnyVal {
     
     inline def setFloodlightActivityTag(value: String): Self = StObject.set(x, "floodlightActivityTag", value.asInstanceOf[js.Any])
     

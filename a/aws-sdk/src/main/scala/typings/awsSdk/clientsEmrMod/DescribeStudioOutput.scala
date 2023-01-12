@@ -18,7 +18,8 @@ object DescribeStudioOutput {
     __obj.asInstanceOf[DescribeStudioOutput]
   }
   
-  extension [Self <: DescribeStudioOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeStudioOutput] (val x: Self) extends AnyVal {
     
     inline def setStudio(value: Studio): Self = StObject.set(x, "Studio", value.asInstanceOf[js.Any])
     

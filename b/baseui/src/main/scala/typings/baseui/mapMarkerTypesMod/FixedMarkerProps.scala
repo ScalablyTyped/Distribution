@@ -35,7 +35,8 @@ object FixedMarkerProps {
     __obj.asInstanceOf[FixedMarkerProps]
   }
   
-  extension [Self <: FixedMarkerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FixedMarkerProps] (val x: Self) extends AnyVal {
     
     inline def setDragging(value: Boolean): Self = StObject.set(x, "dragging", value.asInstanceOf[js.Any])
     

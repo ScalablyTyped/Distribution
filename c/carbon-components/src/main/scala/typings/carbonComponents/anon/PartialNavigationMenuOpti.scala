@@ -58,7 +58,8 @@ object PartialNavigationMenuOpti {
     __obj.asInstanceOf[PartialNavigationMenuOpti]
   }
   
-  extension [Self <: PartialNavigationMenuOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialNavigationMenuOpti] (val x: Self) extends AnyVal {
     
     inline def setAttribInitTarget(value: String): Self = StObject.set(x, "attribInitTarget", value.asInstanceOf[js.Any])
     

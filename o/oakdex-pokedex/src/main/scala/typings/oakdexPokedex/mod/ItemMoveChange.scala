@@ -21,7 +21,8 @@ object ItemMoveChange {
     __obj.asInstanceOf[ItemMoveChange]
   }
   
-  extension [Self <: ItemMoveChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemMoveChange] (val x: Self) extends AnyVal {
     
     inline def setChange_by(value: Double): Self = StObject.set(x, "change_by", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object AppsDynamiteSharedCardSection {
     __obj.asInstanceOf[AppsDynamiteSharedCardSection]
   }
   
-  extension [Self <: AppsDynamiteSharedCardSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamiteSharedCardSection] (val x: Self) extends AnyVal {
     
     inline def setCollapsible(value: Boolean): Self = StObject.set(x, "collapsible", value.asInstanceOf[js.Any])
     

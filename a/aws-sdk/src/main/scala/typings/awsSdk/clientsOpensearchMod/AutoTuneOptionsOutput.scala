@@ -23,7 +23,8 @@ object AutoTuneOptionsOutput {
     __obj.asInstanceOf[AutoTuneOptionsOutput]
   }
   
-  extension [Self <: AutoTuneOptionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AutoTuneOptionsOutput] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "ErrorMessage", value.asInstanceOf[js.Any])
     

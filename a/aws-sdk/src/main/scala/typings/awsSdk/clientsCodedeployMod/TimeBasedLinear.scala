@@ -23,7 +23,8 @@ object TimeBasedLinear {
     __obj.asInstanceOf[TimeBasedLinear]
   }
   
-  extension [Self <: TimeBasedLinear](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeBasedLinear] (val x: Self) extends AnyVal {
     
     inline def setLinearInterval(value: WaitTimeInMins): Self = StObject.set(x, "linearInterval", value.asInstanceOf[js.Any])
     

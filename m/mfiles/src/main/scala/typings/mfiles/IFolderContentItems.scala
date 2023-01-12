@@ -19,7 +19,8 @@ object IFolderContentItems {
     __obj.asInstanceOf[IFolderContentItems]
   }
   
-  extension [Self <: IFolderContentItems](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFolderContentItems] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

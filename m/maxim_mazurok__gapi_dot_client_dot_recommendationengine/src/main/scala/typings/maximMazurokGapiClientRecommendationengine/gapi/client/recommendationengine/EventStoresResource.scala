@@ -26,7 +26,8 @@ object EventStoresResource {
     __obj.asInstanceOf[EventStoresResource]
   }
   
-  extension [Self <: EventStoresResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventStoresResource] (val x: Self) extends AnyVal {
     
     inline def setOperations(value: OperationsResource): Self = StObject.set(x, "operations", value.asInstanceOf[js.Any])
     

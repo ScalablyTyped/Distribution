@@ -43,7 +43,8 @@ object distPluginWebpack4Mod {
       __obj.asInstanceOf[VueLoaderPlugin]
     }
     
-    extension [Self <: VueLoaderPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueLoaderPlugin] (val x: Self) extends AnyVal {
       
       inline def setApply(value: Compiler => Unit): Self = StObject.set(x, "apply", js.Any.fromFunction1(value))
     }

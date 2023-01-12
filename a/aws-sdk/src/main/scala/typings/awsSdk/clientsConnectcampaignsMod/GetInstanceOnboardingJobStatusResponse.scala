@@ -15,7 +15,8 @@ object GetInstanceOnboardingJobStatusResponse {
     __obj.asInstanceOf[GetInstanceOnboardingJobStatusResponse]
   }
   
-  extension [Self <: GetInstanceOnboardingJobStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetInstanceOnboardingJobStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectInstanceOnboardingJobStatus(value: InstanceOnboardingJobStatus): Self = StObject.set(x, "connectInstanceOnboardingJobStatus", value.asInstanceOf[js.Any])
     

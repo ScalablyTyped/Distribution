@@ -15,7 +15,8 @@ object CommonHeaders {
     __obj.asInstanceOf[CommonHeaders]
   }
   
-  extension [Self <: CommonHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonHeaders] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: AxiosHeaders): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
   }

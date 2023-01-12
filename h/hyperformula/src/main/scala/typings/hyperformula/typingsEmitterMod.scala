@@ -422,7 +422,8 @@ object typingsEmitterMod {
       __obj.asInstanceOf[Listeners]
     }
     
-    extension [Self <: Listeners](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Listeners] (val x: Self) extends AnyVal {
       
       inline def setEvaluationResumed(value: js.Array[ExportedChange] => Any): Self = StObject.set(x, "evaluationResumed", js.Any.fromFunction1(value))
       
@@ -470,7 +471,8 @@ object typingsEmitterMod {
       __obj.asInstanceOf[TypedEmitter]
     }
     
-    extension [Self <: TypedEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedEmitter] (val x: Self) extends AnyVal {
       
       inline def setOff(
         value: (Any, /* import warning: importer.ImportType#apply Failed type conversion: hyperformula.hyperformula/typings/Emitter.Listeners[Event] */ js.Any) => Unit

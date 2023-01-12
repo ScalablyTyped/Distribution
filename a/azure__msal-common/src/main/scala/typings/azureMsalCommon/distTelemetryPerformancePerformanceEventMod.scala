@@ -400,7 +400,8 @@ object distTelemetryPerformancePerformanceEventMod {
       __obj.asInstanceOf[PerformanceEvent]
     }
     
-    extension [Self <: PerformanceEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformanceEvent] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenSize(value: Double): Self = StObject.set(x, "accessTokenSize", value.asInstanceOf[js.Any])
       

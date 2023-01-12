@@ -16,7 +16,8 @@ object SasPortalGetPolicyRequest {
     __obj.asInstanceOf[SasPortalGetPolicyRequest]
   }
   
-  extension [Self <: SasPortalGetPolicyRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SasPortalGetPolicyRequest] (val x: Self) extends AnyVal {
     
     inline def setResource(value: String): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

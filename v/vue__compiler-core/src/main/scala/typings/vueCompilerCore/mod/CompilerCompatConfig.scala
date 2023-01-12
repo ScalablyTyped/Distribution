@@ -37,7 +37,8 @@ object CompilerCompatConfig {
     __obj.asInstanceOf[CompilerCompatConfig]
   }
   
-  extension [Self <: CompilerCompatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompilerCompatConfig] (val x: Self) extends AnyVal {
     
     inline def setCOMPILER_FILTER(value: Boolean | `suppress-warning`): Self = StObject.set(x, "COMPILER_FILTER", value.asInstanceOf[js.Any])
     

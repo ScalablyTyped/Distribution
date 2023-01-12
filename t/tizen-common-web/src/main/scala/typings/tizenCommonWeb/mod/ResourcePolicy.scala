@@ -55,7 +55,8 @@ object ResourcePolicy {
     __obj.asInstanceOf[ResourcePolicy]
   }
   
-  extension [Self <: ResourcePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourcePolicy] (val x: Self) extends AnyVal {
     
     inline def setIsActive(value: Boolean): Self = StObject.set(x, "isActive", value.asInstanceOf[js.Any])
     

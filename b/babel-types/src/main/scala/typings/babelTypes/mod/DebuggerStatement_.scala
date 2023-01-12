@@ -21,7 +21,8 @@ object DebuggerStatement_ {
     __obj.asInstanceOf[DebuggerStatement_]
   }
   
-  extension [Self <: DebuggerStatement_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebuggerStatement_] (val x: Self) extends AnyVal {
     
     inline def setType(value: DebuggerStatement): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

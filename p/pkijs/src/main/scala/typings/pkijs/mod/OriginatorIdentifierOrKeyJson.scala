@@ -17,7 +17,8 @@ object OriginatorIdentifierOrKeyJson {
     __obj.asInstanceOf[OriginatorIdentifierOrKeyJson]
   }
   
-  extension [Self <: OriginatorIdentifierOrKeyJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginatorIdentifierOrKeyJson] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

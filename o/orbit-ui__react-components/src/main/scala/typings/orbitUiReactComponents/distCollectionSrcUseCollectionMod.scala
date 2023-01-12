@@ -96,7 +96,8 @@ object distCollectionSrcUseCollectionMod {
       __obj.asInstanceOf[CollectionDivider]
     }
     
-    extension [Self <: CollectionDivider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionDivider] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ElementType[Any] | js.Array[ReactElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -131,7 +132,8 @@ object distCollectionSrcUseCollectionMod {
       __obj.asInstanceOf[CollectionItem]
     }
     
-    extension [Self <: CollectionItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionItem] (val x: Self) extends AnyVal {
       
       inline def setContent(value: ElementType[Any] | js.Array[ReactElement]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -167,7 +169,8 @@ object distCollectionSrcUseCollectionMod {
       __obj.asInstanceOf[CollectionNode]
     }
     
-    extension [Self <: CollectionNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionNode] (val x: Self) extends AnyVal {
       
       inline def setElementType(value: ElementType[Any] | String): Self = StObject.set(x, "elementType", value.asInstanceOf[js.Any])
       
@@ -206,7 +209,8 @@ object distCollectionSrcUseCollectionMod {
       __obj.asInstanceOf[CollectionSection]
     }
     
-    extension [Self <: CollectionSection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CollectionSection] (val x: Self) extends AnyVal {
       
       inline def setItems(value: js.Array[CollectionItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object TuningJobCompletionCriteria {
     __obj.asInstanceOf[TuningJobCompletionCriteria]
   }
   
-  extension [Self <: TuningJobCompletionCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TuningJobCompletionCriteria] (val x: Self) extends AnyVal {
     
     inline def setTargetObjectiveMetricValue(value: TargetObjectiveMetricValue): Self = StObject.set(x, "TargetObjectiveMetricValue", value.asInstanceOf[js.Any])
   }

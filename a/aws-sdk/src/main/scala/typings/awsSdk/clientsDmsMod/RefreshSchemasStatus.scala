@@ -38,7 +38,8 @@ object RefreshSchemasStatus {
     __obj.asInstanceOf[RefreshSchemasStatus]
   }
   
-  extension [Self <: RefreshSchemasStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RefreshSchemasStatus] (val x: Self) extends AnyVal {
     
     inline def setEndpointArn(value: String): Self = StObject.set(x, "EndpointArn", value.asInstanceOf[js.Any])
     

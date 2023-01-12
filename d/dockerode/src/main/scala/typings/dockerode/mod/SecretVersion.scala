@@ -15,7 +15,8 @@ object SecretVersion {
     __obj.asInstanceOf[SecretVersion]
   }
   
-  extension [Self <: SecretVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecretVersion] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "Index", value.asInstanceOf[js.Any])
   }

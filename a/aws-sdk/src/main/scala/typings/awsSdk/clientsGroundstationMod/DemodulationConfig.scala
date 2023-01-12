@@ -18,7 +18,8 @@ object DemodulationConfig {
     __obj.asInstanceOf[DemodulationConfig]
   }
   
-  extension [Self <: DemodulationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DemodulationConfig] (val x: Self) extends AnyVal {
     
     inline def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
   }

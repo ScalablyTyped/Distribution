@@ -28,7 +28,8 @@ object RemoteResponse {
     __obj.asInstanceOf[RemoteResponse]
   }
   
-  extension [Self <: RemoteResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RemoteResponse] (val x: Self) extends AnyVal {
     
     inline def setOptions(value: js.Array[IotconOption]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     

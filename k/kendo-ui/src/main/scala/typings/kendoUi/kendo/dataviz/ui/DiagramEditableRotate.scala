@@ -17,7 +17,8 @@ object DiagramEditableRotate {
     __obj.asInstanceOf[DiagramEditableRotate]
   }
   
-  extension [Self <: DiagramEditableRotate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramEditableRotate] (val x: Self) extends AnyVal {
     
     inline def setFill(value: DiagramEditableRotateFill): Self = StObject.set(x, "fill", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object Update {
     __obj.asInstanceOf[Update]
   }
   
-  extension [Self <: Update](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Update] (val x: Self) extends AnyVal {
     
     inline def setCallback_query(value: CallbackQuery): Self = StObject.set(x, "callback_query", value.asInstanceOf[js.Any])
     

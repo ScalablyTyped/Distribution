@@ -79,7 +79,8 @@ object CellularProperties {
     __obj.asInstanceOf[CellularProperties[M]]
   }
   
-  extension [Self <: CellularProperties[?], M /* <: ManagedObject */](x: Self & CellularProperties[M]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CellularProperties[?], M /* <: ManagedObject */] (val x: Self & CellularProperties[M]) extends AnyVal {
     
     inline def setActivationType(value: String): Self = StObject.set(x, "ActivationType", value.asInstanceOf[js.Any])
     

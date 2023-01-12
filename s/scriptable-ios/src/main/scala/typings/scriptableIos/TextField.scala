@@ -141,7 +141,8 @@ object TextField {
     __obj.asInstanceOf[TextField]
   }
   
-  extension [Self <: TextField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextField] (val x: Self) extends AnyVal {
     
     inline def setCenterAlignText(value: () => Unit): Self = StObject.set(x, "centerAlignText", js.Any.fromFunction0(value))
     

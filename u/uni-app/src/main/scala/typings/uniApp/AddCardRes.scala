@@ -18,7 +18,8 @@ object AddCardRes {
     __obj.asInstanceOf[AddCardRes]
   }
   
-  extension [Self <: AddCardRes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCardRes] (val x: Self) extends AnyVal {
     
     inline def setCardList(value: js.Array[CardData]): Self = StObject.set(x, "cardList", value.asInstanceOf[js.Any])
     

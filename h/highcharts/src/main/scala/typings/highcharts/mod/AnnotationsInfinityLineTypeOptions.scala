@@ -32,7 +32,8 @@ object AnnotationsInfinityLineTypeOptions {
     __obj.asInstanceOf[AnnotationsInfinityLineTypeOptions]
   }
   
-  extension [Self <: AnnotationsInfinityLineTypeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationsInfinityLineTypeOptions] (val x: Self) extends AnyVal {
     
     inline def setLine(value: AnnotationsInfinityLineTypeLineOptions): Self = StObject.set(x, "line", value.asInstanceOf[js.Any])
     

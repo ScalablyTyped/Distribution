@@ -23,7 +23,8 @@ object DeleteDocumentRequest {
     __obj.asInstanceOf[DeleteDocumentRequest]
   }
   
-  extension [Self <: DeleteDocumentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDocumentRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationToken(value: AuthenticationHeaderType): Self = StObject.set(x, "AuthenticationToken", value.asInstanceOf[js.Any])
     

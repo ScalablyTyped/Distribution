@@ -18,7 +18,8 @@ object InputDefinition {
     __obj.asInstanceOf[InputDefinition]
   }
   
-  extension [Self <: InputDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputDefinition] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

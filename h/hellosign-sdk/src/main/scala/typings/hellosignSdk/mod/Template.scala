@@ -43,7 +43,8 @@ object Template {
     __obj.asInstanceOf[Template[Metadata]]
   }
   
-  extension [Self <: Template[?], Metadata](x: Self & Template[Metadata]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Template[?], Metadata] (val x: Self & Template[Metadata]) extends AnyVal {
     
     inline def setAccounts(value: js.Array[BaseAccount]): Self = StObject.set(x, "accounts", value.asInstanceOf[js.Any])
     

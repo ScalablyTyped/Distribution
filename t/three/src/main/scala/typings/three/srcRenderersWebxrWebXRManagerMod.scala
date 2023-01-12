@@ -577,7 +577,8 @@ object srcRenderersWebxrWebXRManagerMod {
       __obj.asInstanceOf[WebXRArrayCamera]
     }
     
-    extension [Self <: WebXRArrayCamera](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebXRArrayCamera] (val x: Self) extends AnyVal {
       
       inline def setAdd(value: /* repeated */ Object3D[Event] => WebXRArrayCamera): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
       

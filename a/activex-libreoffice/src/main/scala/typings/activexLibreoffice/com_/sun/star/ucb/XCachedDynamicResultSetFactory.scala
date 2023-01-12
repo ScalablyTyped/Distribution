@@ -38,7 +38,8 @@ object XCachedDynamicResultSetFactory {
     __obj.asInstanceOf[XCachedDynamicResultSetFactory]
   }
   
-  extension [Self <: XCachedDynamicResultSetFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XCachedDynamicResultSetFactory] (val x: Self) extends AnyVal {
     
     inline def setCreateCachedDynamicResultSet(value: (XDynamicResultSet, XContentIdentifierMapping) => XDynamicResultSet): Self = StObject.set(x, "createCachedDynamicResultSet", js.Any.fromFunction2(value))
   }

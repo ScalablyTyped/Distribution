@@ -28,7 +28,8 @@ object FecOutputSettings {
     __obj.asInstanceOf[FecOutputSettings]
   }
   
-  extension [Self <: FecOutputSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FecOutputSettings] (val x: Self) extends AnyVal {
     
     inline def setColumnDepth(value: integerMin4Max20): Self = StObject.set(x, "ColumnDepth", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object PubsubDestination {
     __obj.asInstanceOf[PubsubDestination]
   }
   
-  extension [Self <: PubsubDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubDestination] (val x: Self) extends AnyVal {
     
     inline def setTopic(value: String): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
     

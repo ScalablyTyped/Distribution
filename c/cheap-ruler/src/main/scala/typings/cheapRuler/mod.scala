@@ -127,7 +127,8 @@ object mod {
       __obj.asInstanceOf[CheapRuler]
     }
     
-    extension [Self <: CheapRuler](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheapRuler] (val x: Self) extends AnyVal {
       
       inline def setAlong(value: (Line, Double) => Point): Self = StObject.set(x, "along", js.Any.fromFunction2(value))
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Factors]
     }
     
-    extension [Self <: Factors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Factors] (val x: Self) extends AnyVal {
       
       inline def setFeet(value: Double): Self = StObject.set(x, "feet", value.asInstanceOf[js.Any])
       

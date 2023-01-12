@@ -54,7 +54,8 @@ object DefaultNavigatorOptions {
     __obj.asInstanceOf[DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap]]
   }
   
-  extension [Self <: DefaultNavigatorOptions[?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */](x: Self & (DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultNavigatorOptions[?, ?, ?, ?], ParamList /* <: ParamListBase */, State /* <: NavigationState[ParamListBase] */, ScreenOptions /* <: js.Object */, EventMap /* <: EventMapBase */] (val x: Self & (DefaultNavigatorOptions[ParamList, State, ScreenOptions, EventMap])) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

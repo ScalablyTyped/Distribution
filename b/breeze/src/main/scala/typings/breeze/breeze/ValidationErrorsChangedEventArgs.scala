@@ -19,7 +19,8 @@ object ValidationErrorsChangedEventArgs {
     __obj.asInstanceOf[ValidationErrorsChangedEventArgs]
   }
   
-  extension [Self <: ValidationErrorsChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationErrorsChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[ValidationError]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

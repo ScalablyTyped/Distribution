@@ -17,7 +17,8 @@ object SpreadsheetSheetRowCellBorderRight {
     __obj.asInstanceOf[SpreadsheetSheetRowCellBorderRight]
   }
   
-  extension [Self <: SpreadsheetSheetRowCellBorderRight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetRowCellBorderRight] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

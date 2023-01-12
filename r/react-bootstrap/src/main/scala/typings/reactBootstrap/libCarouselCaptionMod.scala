@@ -29,7 +29,8 @@ object libCarouselCaptionMod {
       __obj.asInstanceOf[CarouselCaptionProps]
     }
     
-    extension [Self <: CarouselCaptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselCaptionProps] (val x: Self) extends AnyVal {
       
       inline def setComponentClass(value: ElementType[Any]): Self = StObject.set(x, "componentClass", value.asInstanceOf[js.Any])
       

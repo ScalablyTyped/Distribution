@@ -23,7 +23,8 @@ object `1` {
     __obj.asInstanceOf[`1`[TElement]]
   }
   
-  extension [Self <: `1`[?], TElement](x: Self & `1`[TElement]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `1`[?], TElement] (val x: Self & `1`[TElement]) extends AnyVal {
     
     inline def setGet(value: Tween[TElement] => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
   }

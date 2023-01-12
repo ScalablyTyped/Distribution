@@ -58,7 +58,8 @@ object AwsApiCallAction {
     __obj.asInstanceOf[AwsApiCallAction]
   }
   
-  extension [Self <: AwsApiCallAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsApiCallAction] (val x: Self) extends AnyVal {
     
     inline def setAffectedResources(value: AffectedResources): Self = StObject.set(x, "AffectedResources", value.asInstanceOf[js.Any])
     

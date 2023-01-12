@@ -16,7 +16,8 @@ object GcfsConfig {
     __obj.asInstanceOf[GcfsConfig]
   }
   
-  extension [Self <: GcfsConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GcfsConfig] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GlueDataCatalogConfigurationUpdate {
     __obj.asInstanceOf[GlueDataCatalogConfigurationUpdate]
   }
   
-  extension [Self <: GlueDataCatalogConfigurationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlueDataCatalogConfigurationUpdate] (val x: Self) extends AnyVal {
     
     inline def setDatabaseARNUpdate(value: DatabaseARN): Self = StObject.set(x, "DatabaseARNUpdate", value.asInstanceOf[js.Any])
   }

@@ -48,7 +48,8 @@ object Basic {
     __obj.asInstanceOf[Basic]
   }
   
-  extension [Self <: Basic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Basic] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: Reference): Self = StObject.set(x, "author", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object Reaction {
     __obj.asInstanceOf[Reaction]
   }
   
-  extension [Self <: Reaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reaction] (val x: Self) extends AnyVal {
     
     inline def setAction(value: Action): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

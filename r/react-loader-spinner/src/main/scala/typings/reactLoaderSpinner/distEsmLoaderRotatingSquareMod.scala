@@ -38,7 +38,8 @@ object distEsmLoaderRotatingSquareMod extends Shortcut {
       __obj.asInstanceOf[RotatingSquareProps]
     }
     
-    extension [Self <: RotatingSquareProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotatingSquareProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       

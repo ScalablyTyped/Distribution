@@ -37,7 +37,8 @@ object messageCardTypesMod {
       __obj.asInstanceOf[MessageCardOverrides]
     }
     
-    extension [Self <: MessageCardOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageCardOverrides] (val x: Self) extends AnyVal {
       
       inline def setButton(value: Override[Any]): Self = StObject.set(x, "Button", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object messageCardTypesMod {
       __obj.asInstanceOf[MessageCardProps]
     }
     
-    extension [Self <: MessageCardProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageCardProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

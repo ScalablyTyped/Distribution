@@ -29,7 +29,8 @@ object ActionMap {
     __obj.asInstanceOf[ActionMap]
   }
   
-  extension [Self <: ActionMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionMap] (val x: Self) extends AnyVal {
     
     inline def setDrag(value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof drag */ Any): Self = StObject.set(x, "drag", value.asInstanceOf[js.Any])
     

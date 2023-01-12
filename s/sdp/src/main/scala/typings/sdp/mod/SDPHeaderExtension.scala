@@ -19,7 +19,8 @@ object SDPHeaderExtension {
     __obj.asInstanceOf[SDPHeaderExtension]
   }
   
-  extension [Self <: SDPHeaderExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SDPHeaderExtension] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: SDPDirection): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

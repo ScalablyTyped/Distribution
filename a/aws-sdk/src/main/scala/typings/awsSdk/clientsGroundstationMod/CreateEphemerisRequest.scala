@@ -53,7 +53,8 @@ object CreateEphemerisRequest {
     __obj.asInstanceOf[CreateEphemerisRequest]
   }
   
-  extension [Self <: CreateEphemerisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEphemerisRequest] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

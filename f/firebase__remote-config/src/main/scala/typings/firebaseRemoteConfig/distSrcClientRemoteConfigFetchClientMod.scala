@@ -61,7 +61,8 @@ object distSrcClientRemoteConfigFetchClientMod {
       __obj.asInstanceOf[FetchRequest]
     }
     
-    extension [Self <: FetchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
       
       inline def setCacheMaxAgeMillis(value: Double): Self = StObject.set(x, "cacheMaxAgeMillis", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object distSrcClientRemoteConfigFetchClientMod {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: FirebaseRemoteConfigObject): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object distSrcClientRemoteConfigFetchClientMod {
       __obj.asInstanceOf[RemoteConfigFetchClient]
     }
     
-    extension [Self <: RemoteConfigFetchClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemoteConfigFetchClient] (val x: Self) extends AnyVal {
       
       inline def setFetch(value: FetchRequest => js.Promise[FetchResponse]): Self = StObject.set(x, "fetch", js.Any.fromFunction1(value))
     }

@@ -27,7 +27,8 @@ object ScryptOptions {
     __obj.asInstanceOf[ScryptOptions]
   }
   
-  extension [Self <: ScryptOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScryptOptions] (val x: Self) extends AnyVal {
     
     inline def setBlockSize(value: Double): Self = StObject.set(x, "blockSize", value.asInstanceOf[js.Any])
     

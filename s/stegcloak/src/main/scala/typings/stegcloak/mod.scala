@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[StegCloak]
     }
     
-    extension [Self <: StegCloak](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StegCloak] (val x: Self) extends AnyVal {
       
       inline def setHide(value: (String, String, String) => String): Self = StObject.set(x, "hide", js.Any.fromFunction3(value))
       

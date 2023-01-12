@@ -16,7 +16,8 @@ object ConfigIPlayerConfig {
     __obj.asInstanceOf[ConfigIPlayerConfig]
   }
   
-  extension [Self <: ConfigIPlayerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigIPlayerConfig] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: IPlayerConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
   }

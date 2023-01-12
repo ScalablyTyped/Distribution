@@ -411,7 +411,8 @@ object libMapMarkerMod {
       __obj.asInstanceOf[MapMarkerProps]
     }
     
-    extension [Self <: MapMarkerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapMarkerProps] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: Point): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -725,7 +726,8 @@ object libMapMarkerMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -1309,7 +1311,8 @@ object libMapMarkerMod {
       __obj.asInstanceOf[OmittedProps]
     }
     
-    extension [Self <: OmittedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OmittedProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       

@@ -50,7 +50,8 @@ object DataModelProperties {
     __obj.asInstanceOf[DataModelProperties]
   }
   
-  extension [Self <: DataModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataModelProperties] (val x: Self) extends AnyVal {
     
     inline def setEntityTypes(value: js.Array[EntityTypeProperties]): Self = StObject.set(x, "entityTypes", value.asInstanceOf[js.Any])
     

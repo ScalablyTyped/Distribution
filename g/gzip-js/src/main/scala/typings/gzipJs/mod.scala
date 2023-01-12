@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[ZipOptions]
     }
     
-    extension [Self <: ZipOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ITrainAgentRequest {
     __obj.asInstanceOf[ITrainAgentRequest]
   }
   
-  extension [Self <: ITrainAgentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITrainAgentRequest] (val x: Self) extends AnyVal {
     
     inline def setParent(value: String): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

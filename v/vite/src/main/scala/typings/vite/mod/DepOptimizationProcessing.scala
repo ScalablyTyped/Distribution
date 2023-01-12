@@ -17,7 +17,8 @@ object DepOptimizationProcessing {
     __obj.asInstanceOf[DepOptimizationProcessing]
   }
   
-  extension [Self <: DepOptimizationProcessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepOptimizationProcessing] (val x: Self) extends AnyVal {
     
     inline def setPromise(value: js.Promise[Unit]): Self = StObject.set(x, "promise", value.asInstanceOf[js.Any])
     

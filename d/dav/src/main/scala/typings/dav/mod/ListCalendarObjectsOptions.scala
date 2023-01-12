@@ -29,7 +29,8 @@ object ListCalendarObjectsOptions {
     __obj.asInstanceOf[ListCalendarObjectsOptions]
   }
   
-  extension [Self <: ListCalendarObjectsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCalendarObjectsOptions] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: js.Array[js.Object]): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     

@@ -43,7 +43,8 @@ object DefaultWorkspaceCreationProperties {
     __obj.asInstanceOf[DefaultWorkspaceCreationProperties]
   }
   
-  extension [Self <: DefaultWorkspaceCreationProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultWorkspaceCreationProperties] (val x: Self) extends AnyVal {
     
     inline def setCustomSecurityGroupId(value: SecurityGroupId): Self = StObject.set(x, "CustomSecurityGroupId", value.asInstanceOf[js.Any])
     

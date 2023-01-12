@@ -68,7 +68,8 @@ object PrettyPrintProjectPublicDelegatedPrefix {
     __obj.asInstanceOf[PrettyPrintProjectPublicDelegatedPrefix]
   }
   
-  extension [Self <: PrettyPrintProjectPublicDelegatedPrefix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrettyPrintProjectPublicDelegatedPrefix] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

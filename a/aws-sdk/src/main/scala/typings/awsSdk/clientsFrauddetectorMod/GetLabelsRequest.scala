@@ -28,7 +28,8 @@ object GetLabelsRequest {
     __obj.asInstanceOf[GetLabelsRequest]
   }
   
-  extension [Self <: GetLabelsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLabelsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: labelsMaxResults): Self = StObject.set(x, "maxResults", value.asInstanceOf[js.Any])
     

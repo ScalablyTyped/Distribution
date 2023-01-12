@@ -156,7 +156,8 @@ object AMap {
         __obj.asInstanceOf[CityResult]
       }
       
-      extension [Self <: CityResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CityResult] (val x: Self) extends AnyVal {
         
         inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
         
@@ -208,7 +209,8 @@ object AMap {
         __obj.asInstanceOf[ErrorStatus]
       }
       
-      extension [Self <: ErrorStatus](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ErrorStatus] (val x: Self) extends AnyVal {
         
         inline def setInfo(value: String): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
         
@@ -234,7 +236,8 @@ object AMap {
         __obj.asInstanceOf[EventMap]
       }
       
-      extension [Self <: EventMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
         
         inline def setComplete(value: Event_[complete, GeolocationResult]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
         
@@ -299,7 +302,8 @@ object AMap {
         __obj.asInstanceOf[GeolocationResult]
       }
       
-      extension [Self <: GeolocationResult](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GeolocationResult] (val x: Self) extends AnyVal {
         
         inline def setAccuracy(value: Double): Self = StObject.set(x, "accuracy", value.asInstanceOf[js.Any])
         
@@ -455,7 +459,8 @@ object AMap {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setButtonDom(value: String | HTMLElement): Self = StObject.set(x, "buttonDom", value.asInstanceOf[js.Any])
         

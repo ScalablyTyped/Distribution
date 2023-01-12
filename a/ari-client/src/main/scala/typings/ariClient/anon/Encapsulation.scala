@@ -30,7 +30,8 @@ object Encapsulation {
     __obj.asInstanceOf[Encapsulation]
   }
   
-  extension [Self <: Encapsulation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Encapsulation] (val x: Self) extends AnyVal {
     
     inline def setApp(value: String): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

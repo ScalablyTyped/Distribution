@@ -168,7 +168,8 @@ object sapUxapHierarchicalSelectMod {
       __obj.asInstanceOf[HierarchicalSelectSettings]
     }
     
-    extension [Self <: HierarchicalSelectSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HierarchicalSelectSettings] (val x: Self) extends AnyVal {
       
       inline def setUpperCase(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "upperCase", value.asInstanceOf[js.Any])
       

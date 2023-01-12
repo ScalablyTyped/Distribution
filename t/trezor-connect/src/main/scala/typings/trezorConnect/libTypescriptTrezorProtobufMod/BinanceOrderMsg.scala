@@ -35,7 +35,8 @@ object BinanceOrderMsg {
     __obj.asInstanceOf[BinanceOrderMsg]
   }
   
-  extension [Self <: BinanceOrderMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BinanceOrderMsg] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object LobiboxStatic {
     __obj.asInstanceOf[LobiboxStatic]
   }
   
-  extension [Self <: LobiboxStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LobiboxStatic] (val x: Self) extends AnyVal {
     
     inline def setAlert(value: Call): Self = StObject.set(x, "alert", value.asInstanceOf[js.Any])
     

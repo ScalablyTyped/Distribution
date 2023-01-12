@@ -28,7 +28,8 @@ object SetResourceAccessForBucketRequest {
     __obj.asInstanceOf[SetResourceAccessForBucketRequest]
   }
   
-  extension [Self <: SetResourceAccessForBucketRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetResourceAccessForBucketRequest] (val x: Self) extends AnyVal {
     
     inline def setAccess(value: ResourceBucketAccess): Self = StObject.set(x, "access", value.asInstanceOf[js.Any])
     

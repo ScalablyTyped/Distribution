@@ -83,7 +83,8 @@ object typingsLookupColumnIndexMod {
       __obj.asInstanceOf[ValueIndex]
     }
     
-    extension [Self <: ValueIndex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValueIndex] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: js.Array[Double]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       

@@ -61,7 +61,8 @@ object cjsAddToListOptionMod {
       __obj.asInstanceOf[AddToListOptionProps]
     }
     
-    extension [Self <: AddToListOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddToListOptionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

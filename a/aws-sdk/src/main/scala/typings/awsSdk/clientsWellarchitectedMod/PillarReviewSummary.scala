@@ -21,7 +21,8 @@ object PillarReviewSummary {
     __obj.asInstanceOf[PillarReviewSummary]
   }
   
-  extension [Self <: PillarReviewSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PillarReviewSummary] (val x: Self) extends AnyVal {
     
     inline def setNotes(value: Notes): Self = StObject.set(x, "Notes", value.asInstanceOf[js.Any])
     

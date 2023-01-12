@@ -18,7 +18,8 @@ object BaseStoryObject {
     __obj.asInstanceOf[BaseStoryObject[Args, StoryFnReturnType]]
   }
   
-  extension [Self <: BaseStoryObject[?, ?], Args, StoryFnReturnType](x: Self & (BaseStoryObject[Args, StoryFnReturnType])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseStoryObject[?, ?], Args, StoryFnReturnType] (val x: Self & (BaseStoryObject[Args, StoryFnReturnType])) extends AnyVal {
     
     inline def setStoryName(value: String): Self = StObject.set(x, "storyName", value.asInstanceOf[js.Any])
     

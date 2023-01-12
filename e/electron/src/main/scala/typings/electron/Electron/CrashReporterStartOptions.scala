@@ -77,7 +77,8 @@ object CrashReporterStartOptions {
     __obj.asInstanceOf[CrashReporterStartOptions]
   }
   
-  extension [Self <: CrashReporterStartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrashReporterStartOptions] (val x: Self) extends AnyVal {
     
     inline def setCompanyName(value: String): Self = StObject.set(x, "companyName", value.asInstanceOf[js.Any])
     

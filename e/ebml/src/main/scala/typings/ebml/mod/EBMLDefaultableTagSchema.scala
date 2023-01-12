@@ -18,7 +18,8 @@ object EBMLDefaultableTagSchema {
     __obj.asInstanceOf[EBMLDefaultableTagSchema]
   }
   
-  extension [Self <: EBMLDefaultableTagSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBMLDefaultableTagSchema] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object PhysicalIndex {
     __obj.asInstanceOf[PhysicalIndex]
   }
   
-  extension [Self <: PhysicalIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhysicalIndex] (val x: Self) extends AnyVal {
     
     inline def setPhysicalIndex(value: Double): Self = StObject.set(x, "physicalIndex", value.asInstanceOf[js.Any])
     

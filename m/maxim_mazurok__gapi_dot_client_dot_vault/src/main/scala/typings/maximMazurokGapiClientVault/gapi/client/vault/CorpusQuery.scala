@@ -28,7 +28,8 @@ object CorpusQuery {
     __obj.asInstanceOf[CorpusQuery]
   }
   
-  extension [Self <: CorpusQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CorpusQuery] (val x: Self) extends AnyVal {
     
     inline def setDriveQuery(value: HeldDriveQuery): Self = StObject.set(x, "driveQuery", value.asInstanceOf[js.Any])
     

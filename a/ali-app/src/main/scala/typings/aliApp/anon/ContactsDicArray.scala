@@ -16,7 +16,8 @@ object ContactsDicArray {
     __obj.asInstanceOf[ContactsDicArray]
   }
   
-  extension [Self <: ContactsDicArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactsDicArray] (val x: Self) extends AnyVal {
     
     inline def setContactsDicArray(value: js.Array[ContactsDic]): Self = StObject.set(x, "contactsDicArray", value.asInstanceOf[js.Any])
     

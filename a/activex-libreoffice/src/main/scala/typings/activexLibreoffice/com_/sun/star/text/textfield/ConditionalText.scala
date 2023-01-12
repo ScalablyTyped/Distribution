@@ -81,7 +81,8 @@ object ConditionalText {
     __obj.asInstanceOf[ConditionalText]
   }
   
-  extension [Self <: ConditionalText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalText] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: String): Self = StObject.set(x, "Condition", value.asInstanceOf[js.Any])
     

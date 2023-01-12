@@ -33,7 +33,8 @@ object StartImportRequest {
     __obj.asInstanceOf[StartImportRequest]
   }
   
-  extension [Self <: StartImportRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartImportRequest] (val x: Self) extends AnyVal {
     
     inline def setMergeStrategy(value: MergeStrategy): Self = StObject.set(x, "mergeStrategy", value.asInstanceOf[js.Any])
     

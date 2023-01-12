@@ -35,7 +35,8 @@ object PlusMapsCoordinateConvertOptions {
     __obj.asInstanceOf[PlusMapsCoordinateConvertOptions]
   }
   
-  extension [Self <: PlusMapsCoordinateConvertOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlusMapsCoordinateConvertOptions] (val x: Self) extends AnyVal {
     
     inline def setCoordType(value: wgs84 | gcj02 | bd09 | bd09ll): Self = StObject.set(x, "coordType", value.asInstanceOf[js.Any])
     

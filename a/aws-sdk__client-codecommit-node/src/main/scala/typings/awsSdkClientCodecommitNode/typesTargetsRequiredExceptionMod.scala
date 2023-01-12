@@ -21,7 +21,8 @@ object typesTargetsRequiredExceptionMod {
       __obj.asInstanceOf[TargetsRequiredException]
     }
     
-    extension [Self <: TargetsRequiredException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TargetsRequiredException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.TargetsRequiredException

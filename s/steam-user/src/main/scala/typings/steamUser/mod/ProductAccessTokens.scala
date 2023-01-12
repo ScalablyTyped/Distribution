@@ -27,7 +27,8 @@ object ProductAccessTokens {
     __obj.asInstanceOf[ProductAccessTokens]
   }
   
-  extension [Self <: ProductAccessTokens](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductAccessTokens] (val x: Self) extends AnyVal {
     
     inline def setAppDeniedTokens(value: js.Array[Double]): Self = StObject.set(x, "appDeniedTokens", value.asInstanceOf[js.Any])
     

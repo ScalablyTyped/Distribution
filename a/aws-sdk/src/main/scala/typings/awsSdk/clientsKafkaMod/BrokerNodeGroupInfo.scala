@@ -57,7 +57,8 @@ object BrokerNodeGroupInfo {
     __obj.asInstanceOf[BrokerNodeGroupInfo]
   }
   
-  extension [Self <: BrokerNodeGroupInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrokerNodeGroupInfo] (val x: Self) extends AnyVal {
     
     inline def setBrokerAZDistribution(value: BrokerAZDistribution): Self = StObject.set(x, "BrokerAZDistribution", value.asInstanceOf[js.Any])
     

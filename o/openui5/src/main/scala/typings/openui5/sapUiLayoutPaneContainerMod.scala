@@ -336,7 +336,8 @@ object sapUiLayoutPaneContainerMod {
       __obj.asInstanceOf[PaneContainerSettings]
     }
     
-    extension [Self <: PaneContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaneContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setOrientation(
         value: Orientation | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Orientation * / any */ String) | PropertyBindingInfo

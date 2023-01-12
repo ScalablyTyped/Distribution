@@ -28,7 +28,8 @@ object PutInvitationConfigurationRequest {
     __obj.asInstanceOf[PutInvitationConfigurationRequest]
   }
   
-  extension [Self <: PutInvitationConfigurationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutInvitationConfigurationRequest] (val x: Self) extends AnyVal {
     
     inline def setContactEmail(value: Email): Self = StObject.set(x, "ContactEmail", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object libCustomizationsCustomizationsMod {
       __obj.asInstanceOf[ICustomizations]
     }
     
-    extension [Self <: ICustomizations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICustomizations] (val x: Self) extends AnyVal {
       
       inline def setInCustomizerContext(value: Boolean): Self = StObject.set(x, "inCustomizerContext", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object XEmbeddedObjectSupplier {
     __obj.asInstanceOf[XEmbeddedObjectSupplier]
   }
   
-  extension [Self <: XEmbeddedObjectSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEmbeddedObjectSupplier] (val x: Self) extends AnyVal {
     
     inline def setEmbeddedObject(value: XComponent): Self = StObject.set(x, "EmbeddedObject", value.asInstanceOf[js.Any])
     

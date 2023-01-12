@@ -43,7 +43,8 @@ object RestoreStatus {
     __obj.asInstanceOf[RestoreStatus]
   }
   
-  extension [Self <: RestoreStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RestoreStatus] (val x: Self) extends AnyVal {
     
     inline def setCurrentRestoreRateInMegaBytesPerSecond(value: Double): Self = StObject.set(x, "CurrentRestoreRateInMegaBytesPerSecond", value.asInstanceOf[js.Any])
     

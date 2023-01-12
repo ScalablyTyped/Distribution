@@ -17,7 +17,8 @@ object SuspenseHydrationCallbacks {
     __obj.asInstanceOf[SuspenseHydrationCallbacks[SuspenseInstance]]
   }
   
-  extension [Self <: SuspenseHydrationCallbacks[?], SuspenseInstance](x: Self & SuspenseHydrationCallbacks[SuspenseInstance]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SuspenseHydrationCallbacks[?], SuspenseInstance] (val x: Self & SuspenseHydrationCallbacks[SuspenseInstance]) extends AnyVal {
     
     inline def setOnDeleted(value: /* suspenseInstance */ SuspenseInstance => Unit): Self = StObject.set(x, "onDeleted", js.Any.fromFunction1(value))
     

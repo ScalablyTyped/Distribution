@@ -249,7 +249,8 @@ object HlsGroupSettings {
     __obj.asInstanceOf[HlsGroupSettings]
   }
   
-  extension [Self <: HlsGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setAdMarkers(value: listOfHlsAdMarkers): Self = StObject.set(x, "AdMarkers", value.asInstanceOf[js.Any])
     

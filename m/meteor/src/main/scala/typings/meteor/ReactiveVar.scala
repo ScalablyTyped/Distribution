@@ -23,7 +23,8 @@ object ReactiveVar {
     __obj.asInstanceOf[ReactiveVar[T]]
   }
   
-  extension [Self <: ReactiveVar[?], T](x: Self & ReactiveVar[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactiveVar[?], T] (val x: Self & ReactiveVar[T]) extends AnyVal {
     
     inline def setGet(value: () => T): Self = StObject.set(x, "get", js.Any.fromFunction0(value))
     

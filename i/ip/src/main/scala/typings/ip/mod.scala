@@ -103,7 +103,8 @@ object mod {
       __obj.asInstanceOf[SubnetInfo]
     }
     
-    extension [Self <: SubnetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubnetInfo] (val x: Self) extends AnyVal {
       
       inline def setBroadcastAddress(value: String): Self = StObject.set(x, "broadcastAddress", value.asInstanceOf[js.Any])
       

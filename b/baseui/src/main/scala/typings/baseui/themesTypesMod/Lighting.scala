@@ -59,7 +59,8 @@ object Lighting {
     __obj.asInstanceOf[Lighting]
   }
   
-  extension [Self <: Lighting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Lighting] (val x: Self) extends AnyVal {
     
     inline def setDeepAbove(value: String): Self = StObject.set(x, "deepAbove", value.asInstanceOf[js.Any])
     

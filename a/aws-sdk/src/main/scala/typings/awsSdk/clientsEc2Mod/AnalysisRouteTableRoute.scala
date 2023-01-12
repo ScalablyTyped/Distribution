@@ -68,7 +68,8 @@ object AnalysisRouteTableRoute {
     __obj.asInstanceOf[AnalysisRouteTableRoute]
   }
   
-  extension [Self <: AnalysisRouteTableRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisRouteTableRoute] (val x: Self) extends AnyVal {
     
     inline def setDestinationCidr(value: String): Self = StObject.set(x, "DestinationCidr", value.asInstanceOf[js.Any])
     

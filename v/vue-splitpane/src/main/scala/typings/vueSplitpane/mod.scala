@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneComputed]
     }
     
-    extension [Self <: SplitpaneComputed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneComputed] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: () => String): Self = StObject.set(x, "cursor", js.Any.fromFunction0(value))
       
@@ -63,7 +64,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneConstructor]
     }
     
-    extension [Self <: SplitpaneConstructor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneConstructor] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: SplitpaneComputed): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneData]
     }
     
-    extension [Self <: SplitpaneData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneData] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -140,7 +143,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneMethods]
     }
     
-    extension [Self <: SplitpaneMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneMethods] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       
@@ -170,7 +174,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneProps]
     }
     
-    extension [Self <: SplitpaneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -193,7 +198,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SplitpaneWatch]
     }
     
-    extension [Self <: SplitpaneWatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SplitpaneWatch] (val x: Self) extends AnyVal {
       
       inline def setDefaultPercent(value: Any => Unit): Self = StObject.set(x, "defaultPercent", js.Any.fromFunction1(value))
     }

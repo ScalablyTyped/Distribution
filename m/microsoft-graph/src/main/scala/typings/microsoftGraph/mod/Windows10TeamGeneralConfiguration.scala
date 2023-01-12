@@ -88,7 +88,8 @@ object Windows10TeamGeneralConfiguration {
     __obj.asInstanceOf[Windows10TeamGeneralConfiguration]
   }
   
-  extension [Self <: Windows10TeamGeneralConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Windows10TeamGeneralConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAzureOperationalInsightsBlockTelemetry(value: Boolean): Self = StObject.set(x, "azureOperationalInsightsBlockTelemetry", value.asInstanceOf[js.Any])
     

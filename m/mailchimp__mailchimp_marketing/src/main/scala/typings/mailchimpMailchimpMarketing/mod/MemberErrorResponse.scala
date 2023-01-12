@@ -24,7 +24,8 @@ object MemberErrorResponse {
     __obj.asInstanceOf[MemberErrorResponse]
   }
   
-  extension [Self <: MemberErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setDetail(value: String): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])
     

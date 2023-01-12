@@ -34,7 +34,8 @@ object ActionTypeExecutor {
     __obj.asInstanceOf[ActionTypeExecutor]
   }
   
-  extension [Self <: ActionTypeExecutor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionTypeExecutor] (val x: Self) extends AnyVal {
     
     inline def setConfiguration(value: ExecutorConfiguration): Self = StObject.set(x, "configuration", value.asInstanceOf[js.Any])
     

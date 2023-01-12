@@ -31,7 +31,8 @@ object typesWiaAriaTryToSubmitRelatedFormMod {
       __obj.asInstanceOf[KeyboardSubmitEventPartial]
     }
     
-    extension [Self <: KeyboardSubmitEventPartial](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyboardSubmitEventPartial] (val x: Self) extends AnyVal {
       
       inline def setCurrentTarget(value: EventTarget): Self = StObject.set(x, "currentTarget", value.asInstanceOf[js.Any])
       

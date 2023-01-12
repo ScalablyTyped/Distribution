@@ -20,7 +20,8 @@ object BuildingComponentSublayerViewProperties {
     __obj.asInstanceOf[BuildingComponentSublayerViewProperties]
   }
   
-  extension [Self <: BuildingComponentSublayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildingComponentSublayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: FeatureFilterProperties): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

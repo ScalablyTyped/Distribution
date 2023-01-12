@@ -25,7 +25,8 @@ object ISpacer {
     __obj.asInstanceOf[ISpacer]
   }
   
-  extension [Self <: ISpacer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpacer] (val x: Self) extends AnyVal {
     
     inline def setSetWidth(value: /* width */ js.UndefOr[Double] => Unit): Self = StObject.set(x, "setWidth", js.Any.fromFunction1(value))
     

@@ -62,7 +62,8 @@ object distSrcSwarmMod {
       __obj.asInstanceOf[AddrsResult]
     }
     
-    extension [Self <: AddrsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddrsResult] (val x: Self) extends AnyVal {
       
       inline def setAddrs(value: js.Array[Multiaddr_]): Self = StObject.set(x, "addrs", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distSrcSwarmMod {
       __obj.asInstanceOf[PeersOptions]
     }
     
-    extension [Self <: PeersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeersOptions] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Boolean): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object distSrcSwarmMod {
       __obj.asInstanceOf[PeersResult]
     }
     
-    extension [Self <: PeersResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PeersResult] (val x: Self) extends AnyVal {
       
       inline def setAddr(value: Multiaddr_): Self = StObject.set(x, "addr", value.asInstanceOf[js.Any])
       

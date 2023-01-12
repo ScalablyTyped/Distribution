@@ -28,7 +28,8 @@ object IUnicodeHandling {
     __obj.asInstanceOf[IUnicodeHandling]
   }
   
-  extension [Self <: IUnicodeHandling](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUnicodeHandling] (val x: Self) extends AnyVal {
     
     inline def setActiveVersion(value: String): Self = StObject.set(x, "activeVersion", value.asInstanceOf[js.Any])
     

@@ -107,7 +107,8 @@ object cjsComboboxMod extends Shortcut {
       __obj.asInstanceOf[ComboboxProps[TDataItem]]
     }
     
-    extension [Self <: ComboboxProps[?], TDataItem](x: Self & ComboboxProps[TDataItem]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboboxProps[?], TDataItem] (val x: Self & ComboboxProps[TDataItem]) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

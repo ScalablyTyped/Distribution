@@ -379,7 +379,8 @@ object mod {
       __obj.asInstanceOf[Envelope]
     }
     
-    extension [Self <: Envelope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -442,7 +443,8 @@ object mod {
       __obj.asInstanceOf[MiddlewareContext[T]]
     }
     
-    extension [Self <: MiddlewareContext[?], T /* <: Adapter */](x: Self & MiddlewareContext[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareContext[?], T /* <: Adapter */] (val x: Self & MiddlewareContext[T]) extends AnyVal {
       
       inline def setResponse(value: Response[T, Message]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
       

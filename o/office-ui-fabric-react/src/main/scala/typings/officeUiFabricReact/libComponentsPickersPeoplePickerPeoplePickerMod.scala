@@ -116,7 +116,8 @@ object libComponentsPickersPeoplePickerPeoplePickerMod {
       __obj.asInstanceOf[IGenericItem]
     }
     
-    extension [Self <: IGenericItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGenericItem] (val x: Self) extends AnyVal {
       
       inline def setImageInitials(value: String): Self = StObject.set(x, "imageInitials", value.asInstanceOf[js.Any])
       

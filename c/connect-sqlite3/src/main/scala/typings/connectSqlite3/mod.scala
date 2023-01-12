@@ -58,7 +58,8 @@ object mod {
         __obj.asInstanceOf[Cookie]
       }
       
-      extension [Self <: Cookie](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
         
         inline def setOriginalMaxAge(value: Double): Self = StObject.set(x, "originalMaxAge", value.asInstanceOf[js.Any])
       }
@@ -152,7 +153,8 @@ object mod {
         __obj.asInstanceOf[CookieOptions]
       }
       
-      extension [Self <: CookieOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CookieOptions] (val x: Self) extends AnyVal {
         
         inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
         
@@ -234,7 +236,8 @@ object mod {
         __obj.asInstanceOf[SQLiteStoreOptions]
       }
       
-      extension [Self <: SQLiteStoreOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SQLiteStoreOptions] (val x: Self) extends AnyVal {
         
         inline def setConcurrentDB(value: String): Self = StObject.set(x, "concurrentDB", value.asInstanceOf[js.Any])
         
@@ -265,7 +268,8 @@ object mod {
         __obj.asInstanceOf[SessionData]
       }
       
-      extension [Self <: SessionData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SessionData] (val x: Self) extends AnyVal {
         
         inline def setCookie(value: Cookie): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       }

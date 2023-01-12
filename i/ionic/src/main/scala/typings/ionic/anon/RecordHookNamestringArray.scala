@@ -26,7 +26,8 @@ object RecordHookNamestringArray {
     __obj.asInstanceOf[RecordHookNamestringArray]
   }
   
-  extension [Self <: RecordHookNamestringArray](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordHookNamestringArray] (val x: Self) extends AnyVal {
     
     inline def setBuildColonafter(value: String | js.Array[String]): Self = StObject.set(x, "build:after", value.asInstanceOf[js.Any])
     

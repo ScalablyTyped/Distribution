@@ -82,7 +82,8 @@ object AFrame {
     __obj.asInstanceOf[AFrame]
   }
   
-  extension [Self <: AFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AFrame] (val x: Self) extends AnyVal {
     
     inline def setAComponent(value: Component[Any, System[Any]]): Self = StObject.set(x, "AComponent", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ChunkData {
     __obj.asInstanceOf[ChunkData]
   }
   
-  extension [Self <: ChunkData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChunkData] (val x: Self) extends AnyVal {
     
     inline def setEndByte(value: Double): Self = StObject.set(x, "endByte", value.asInstanceOf[js.Any])
     

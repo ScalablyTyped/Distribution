@@ -46,7 +46,8 @@ object ObjectwidthNumberPropunde {
     __obj.asInstanceOf[ObjectwidthNumberPropunde]
   }
   
-  extension [Self <: ObjectwidthNumberPropunde](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectwidthNumberPropunde] (val x: Self) extends AnyVal {
     
     inline def setBbHeight(value: NumberProp): Self = StObject.set(x, "bbHeight", value.asInstanceOf[js.Any])
     

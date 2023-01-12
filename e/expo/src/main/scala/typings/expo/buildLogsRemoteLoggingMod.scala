@@ -60,7 +60,8 @@ object buildLogsRemoteLoggingMod {
       __obj.asInstanceOf[LogEntryFields]
     }
     
-    extension [Self <: LogEntryFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogEntryFields] (val x: Self) extends AnyVal {
       
       inline def setGroupCollapsed(value: Boolean): Self = StObject.set(x, "groupCollapsed", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object buildLogsRemoteLoggingMod {
       __obj.asInstanceOf[LogErrorData]
     }
     
-    extension [Self <: LogErrorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogErrorData] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

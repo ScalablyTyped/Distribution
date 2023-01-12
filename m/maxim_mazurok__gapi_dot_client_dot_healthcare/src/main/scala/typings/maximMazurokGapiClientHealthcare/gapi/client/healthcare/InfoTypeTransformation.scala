@@ -31,7 +31,8 @@ object InfoTypeTransformation {
     __obj.asInstanceOf[InfoTypeTransformation]
   }
   
-  extension [Self <: InfoTypeTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InfoTypeTransformation] (val x: Self) extends AnyVal {
     
     inline def setCharacterMaskConfig(value: CharacterMaskConfig): Self = StObject.set(x, "characterMaskConfig", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ResetServiceSettingResult {
     __obj.asInstanceOf[ResetServiceSettingResult]
   }
   
-  extension [Self <: ResetServiceSettingResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetServiceSettingResult] (val x: Self) extends AnyVal {
     
     inline def setServiceSetting(value: ServiceSetting): Self = StObject.set(x, "ServiceSetting", value.asInstanceOf[js.Any])
     

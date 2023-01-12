@@ -103,7 +103,8 @@ object distSearchElementMod {
       __obj.asInstanceOf[SearchElement]
     }
     
-    extension [Self <: SearchElement](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchElement] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLDivElement): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -146,7 +147,8 @@ object distSearchElementMod {
       __obj.asInstanceOf[SearchElementProps]
     }
     
-    extension [Self <: SearchElementProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchElementProps] (val x: Self) extends AnyVal {
       
       inline def setClassNames(value: Container): Self = StObject.set(x, "classNames", value.asInstanceOf[js.Any])
       

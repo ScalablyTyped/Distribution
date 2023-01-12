@@ -40,7 +40,8 @@ object RegionFilterAnnotationCfg {
     __obj.asInstanceOf[RegionFilterAnnotationCfg]
   }
   
-  extension [Self <: RegionFilterAnnotationCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegionFilterAnnotationCfg] (val x: Self) extends AnyVal {
     
     inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

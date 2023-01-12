@@ -48,7 +48,8 @@ object certificateProvider {
       __obj.asInstanceOf[CertificateInfo]
     }
     
-    extension [Self <: CertificateInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CertificateInfo] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object certificateProvider {
       __obj.asInstanceOf[PinResponseDetails]
     }
     
-    extension [Self <: PinResponseDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinResponseDetails] (val x: Self) extends AnyVal {
       
       inline def setUserInput(value: String): Self = StObject.set(x, "userInput", value.asInstanceOf[js.Any])
       
@@ -151,7 +153,8 @@ object certificateProvider {
       __obj.asInstanceOf[RequestPinDetails]
     }
     
-    extension [Self <: RequestPinDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestPinDetails] (val x: Self) extends AnyVal {
       
       inline def setAttemptsLeft(value: Double): Self = StObject.set(x, "attemptsLeft", value.asInstanceOf[js.Any])
       
@@ -213,7 +216,8 @@ object certificateProvider {
       __obj.asInstanceOf[SignRequest]
     }
     
-    extension [Self <: SignRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignRequest] (val x: Self) extends AnyVal {
       
       inline def setCertificate(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "certificate", value.asInstanceOf[js.Any])
       
@@ -253,7 +257,8 @@ object certificateProvider {
       __obj.asInstanceOf[StopRequestPinDetails]
     }
     
-    extension [Self <: StopRequestPinDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopRequestPinDetails] (val x: Self) extends AnyVal {
       
       inline def setErrorType(
         value: ToStringLiteral[

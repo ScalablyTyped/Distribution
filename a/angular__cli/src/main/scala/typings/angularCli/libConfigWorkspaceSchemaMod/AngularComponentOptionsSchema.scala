@@ -112,7 +112,8 @@ object AngularComponentOptionsSchema {
     __obj.asInstanceOf[AngularComponentOptionsSchema]
   }
   
-  extension [Self <: AngularComponentOptionsSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AngularComponentOptionsSchema] (val x: Self) extends AnyVal {
     
     inline def setChangeDetection(value: ChangeDetection): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
     

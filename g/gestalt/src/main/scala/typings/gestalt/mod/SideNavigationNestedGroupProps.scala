@@ -55,7 +55,8 @@ object SideNavigationNestedGroupProps {
     __obj.asInstanceOf[SideNavigationNestedGroupProps]
   }
   
-  extension [Self <: SideNavigationNestedGroupProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationNestedGroupProps] (val x: Self) extends AnyVal {
     
     inline def setBadge(value: FunctionComponent[BadgeProps]): Self = StObject.set(x, "badge", value.asInstanceOf[js.Any])
     

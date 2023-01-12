@@ -115,7 +115,8 @@ object AnnotationConstructorOptions {
     __obj.asInstanceOf[AnnotationConstructorOptions]
   }
   
-  extension [Self <: AnnotationConstructorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationConstructorOptions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityLabel(value: String): Self = StObject.set(x, "accessibilityLabel", value.asInstanceOf[js.Any])
     

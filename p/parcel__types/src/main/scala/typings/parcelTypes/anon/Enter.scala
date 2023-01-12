@@ -19,7 +19,8 @@ object Enter {
     __obj.asInstanceOf[Enter[TNode, TContext]]
   }
   
-  extension [Self <: Enter[?, ?], TNode, TContext](x: Self & (Enter[TNode, TContext])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Enter[?, ?], TNode, TContext] (val x: Self & (Enter[TNode, TContext])) extends AnyVal {
     
     inline def setEnter(
       value: (TNode, /* context */ js.UndefOr[TContext | Null], /* actions */ TraversalActions) => js.UndefOr[TContext | Null]

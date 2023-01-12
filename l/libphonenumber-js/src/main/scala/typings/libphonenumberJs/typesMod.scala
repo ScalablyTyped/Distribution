@@ -564,7 +564,8 @@ object typesMod {
       __obj.asInstanceOf[Countries]
     }
     
-    extension [Self <: Countries](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Countries] (val x: Self) extends AnyVal {
       
       inline def setAC(value: js.Array[Any]): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       
@@ -3531,7 +3532,8 @@ object typesMod {
       __obj.asInstanceOf[Examples]
     }
     
-    extension [Self <: Examples](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Examples] (val x: Self) extends AnyVal {
       
       inline def setAC(value: NationalNumber): Self = StObject.set(x, "AC", value.asInstanceOf[js.Any])
       
@@ -4053,7 +4055,8 @@ object typesMod {
       __obj.asInstanceOf[FormatNumberOptions]
     }
     
-    extension [Self <: FormatNumberOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatNumberOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatExtension(
         value: (/* formattedNumber */ String, /* extension */ Extension, /* metadata */ MetadataJson) => String
@@ -4092,7 +4095,8 @@ object typesMod {
       __obj.asInstanceOf[FormatNumberOptionsWithoutIDD]
     }
     
-    extension [Self <: FormatNumberOptionsWithoutIDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormatNumberOptionsWithoutIDD] (val x: Self) extends AnyVal {
       
       inline def setFormatExtension(
         value: (/* formattedNumber */ String, /* extension */ Extension, /* metadata */ MetadataJson) => String
@@ -4119,7 +4123,8 @@ object typesMod {
       __obj.asInstanceOf[MetadataJson]
     }
     
-    extension [Self <: MetadataJson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetadataJson] (val x: Self) extends AnyVal {
       
       inline def setCountries(value: Countries): Self = StObject.set(x, "countries", value.asInstanceOf[js.Any])
       
@@ -4165,7 +4170,8 @@ object typesMod {
       __obj.asInstanceOf[NumberFound]
     }
     
-    extension [Self <: NumberFound](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFound] (val x: Self) extends AnyVal {
       
       inline def setEndsAt(value: Double): Self = StObject.set(x, "endsAt", value.asInstanceOf[js.Any])
       
@@ -4194,7 +4200,8 @@ object typesMod {
       __obj.asInstanceOf[NumberFoundLegacy]
     }
     
-    extension [Self <: NumberFoundLegacy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberFoundLegacy] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: CountryCode): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -4248,7 +4255,8 @@ object typesMod {
       __obj.asInstanceOf[NumberingPlan]
     }
     
-    extension [Self <: NumberingPlan](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberingPlan] (val x: Self) extends AnyVal {
       
       inline def setDefaultIDDPrefix(value: () => js.UndefOr[String]): Self = StObject.set(x, "defaultIDDPrefix", js.Any.fromFunction0(value))
       

@@ -19,7 +19,8 @@ object PhononI18nOptions {
     __obj.asInstanceOf[PhononI18nOptions]
   }
   
-  extension [Self <: PhononI18nOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PhononI18nOptions] (val x: Self) extends AnyVal {
     
     inline def setDirectory(value: String): Self = StObject.set(x, "directory", value.asInstanceOf[js.Any])
     

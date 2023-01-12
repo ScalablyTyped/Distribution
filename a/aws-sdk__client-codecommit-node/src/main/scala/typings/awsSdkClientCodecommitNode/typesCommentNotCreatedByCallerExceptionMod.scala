@@ -21,7 +21,8 @@ object typesCommentNotCreatedByCallerExceptionMod {
       __obj.asInstanceOf[CommentNotCreatedByCallerException]
     }
     
-    extension [Self <: CommentNotCreatedByCallerException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentNotCreatedByCallerException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentNotCreatedByCallerException

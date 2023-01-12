@@ -35,7 +35,8 @@ object HostedFieldsEventTypeMap {
     __obj.asInstanceOf[HostedFieldsEventTypeMap]
   }
   
-  extension [Self <: HostedFieldsEventTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HostedFieldsEventTypeMap] (val x: Self) extends AnyVal {
     
     inline def setBlur(value: HostedFieldsEvent): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
     

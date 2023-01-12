@@ -65,7 +65,8 @@ object SortOrder {
     __obj.asInstanceOf[SortOrder]
   }
   
-  extension [Self <: SortOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortOrder] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

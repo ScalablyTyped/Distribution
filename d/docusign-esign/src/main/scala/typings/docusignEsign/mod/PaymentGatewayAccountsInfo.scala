@@ -22,7 +22,8 @@ object PaymentGatewayAccountsInfo {
     __obj.asInstanceOf[PaymentGatewayAccountsInfo]
   }
   
-  extension [Self <: PaymentGatewayAccountsInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaymentGatewayAccountsInfo] (val x: Self) extends AnyVal {
     
     inline def setPaymentGatewayAccounts(
       value: js.Array[

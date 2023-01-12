@@ -15,7 +15,8 @@ object CreateGlobalReplicationGroupResult {
     __obj.asInstanceOf[CreateGlobalReplicationGroupResult]
   }
   
-  extension [Self <: CreateGlobalReplicationGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateGlobalReplicationGroupResult] (val x: Self) extends AnyVal {
     
     inline def setGlobalReplicationGroup(value: GlobalReplicationGroup): Self = StObject.set(x, "GlobalReplicationGroup", value.asInstanceOf[js.Any])
     

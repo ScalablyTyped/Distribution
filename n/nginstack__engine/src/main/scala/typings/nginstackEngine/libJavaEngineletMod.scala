@@ -33,7 +33,8 @@ object libJavaEngineletMod {
       __obj.asInstanceOf[Enginelet]
     }
     
-    extension [Self <: Enginelet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enginelet] (val x: Self) extends AnyVal {
       
       inline def setHandleCommand(value: (String, String, String, String) => String): Self = StObject.set(x, "handleCommand", js.Any.fromFunction4(value))
     }

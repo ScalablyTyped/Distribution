@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Fn]
     }
     
-    extension [Self <: Fn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fn] (val x: Self) extends AnyVal {
       
       inline def setFn(value: (/* snippet */ String, /* match */ String) => Any): Self = StObject.set(x, "fn", js.Any.fromFunction2(value))
       
@@ -43,7 +44,8 @@ object anon {
       __obj.asInstanceOf[HeartbeatTimeout]
     }
     
-    extension [Self <: HeartbeatTimeout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HeartbeatTimeout] (val x: Self) extends AnyVal {
       
       inline def setHeartbeatTimeout(value: Double): Self = StObject.set(x, "heartbeatTimeout", value.asInstanceOf[js.Any])
       
@@ -65,7 +67,8 @@ object anon {
       __obj.asInstanceOf[Plugin]
     }
     
-    extension [Self <: Plugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Plugin] (val x: Self) extends AnyVal {
       
       inline def setPlugin(value: (js.Object, BrowserSyncInstance) => Any): Self = StObject.set(x, "plugin", js.Any.fromFunction2(value))
       
@@ -86,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Port]
     }
     
-    extension [Self <: Port](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Port] (val x: Self) extends AnyVal {
       
       inline def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
       
@@ -105,7 +109,8 @@ object anon {
       __obj.asInstanceOf[Stream]
     }
     
-    extension [Self <: Stream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stream] (val x: Self) extends AnyVal {
       
       inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     }

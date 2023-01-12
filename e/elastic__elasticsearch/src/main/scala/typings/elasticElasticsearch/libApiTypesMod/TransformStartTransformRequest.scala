@@ -19,7 +19,8 @@ object TransformStartTransformRequest {
     __obj.asInstanceOf[TransformStartTransformRequest]
   }
   
-  extension [Self <: TransformStartTransformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformStartTransformRequest] (val x: Self) extends AnyVal {
     
     inline def setTimeout(value: Duration): Self = StObject.set(x, "timeout", value.asInstanceOf[js.Any])
     

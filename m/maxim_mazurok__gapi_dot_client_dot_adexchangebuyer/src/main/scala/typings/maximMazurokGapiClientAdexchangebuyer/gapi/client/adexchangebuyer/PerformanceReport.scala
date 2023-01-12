@@ -79,7 +79,8 @@ object PerformanceReport {
     __obj.asInstanceOf[PerformanceReport]
   }
   
-  extension [Self <: PerformanceReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceReport] (val x: Self) extends AnyVal {
     
     inline def setBidRate(value: Double): Self = StObject.set(x, "bidRate", value.asInstanceOf[js.Any])
     

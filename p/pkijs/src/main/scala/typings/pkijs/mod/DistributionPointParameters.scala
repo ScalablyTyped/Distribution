@@ -23,7 +23,8 @@ object DistributionPointParameters {
     __obj.asInstanceOf[DistributionPointParameters]
   }
   
-  extension [Self <: DistributionPointParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DistributionPointParameters] (val x: Self) extends AnyVal {
     
     inline def setCRLIssuer(value: js.Array[GeneralName]): Self = StObject.set(x, "cRLIssuer", value.asInstanceOf[js.Any])
     

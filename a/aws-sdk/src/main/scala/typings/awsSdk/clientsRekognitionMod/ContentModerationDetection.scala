@@ -23,7 +23,8 @@ object ContentModerationDetection {
     __obj.asInstanceOf[ContentModerationDetection]
   }
   
-  extension [Self <: ContentModerationDetection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentModerationDetection] (val x: Self) extends AnyVal {
     
     inline def setModerationLabel(value: ModerationLabel): Self = StObject.set(x, "ModerationLabel", value.asInstanceOf[js.Any])
     

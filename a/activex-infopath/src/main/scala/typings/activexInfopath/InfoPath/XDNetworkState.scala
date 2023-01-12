@@ -25,7 +25,8 @@ object XDNetworkState {
     __obj.asInstanceOf[XDNetworkState]
   }
   
-  extension [Self <: XDNetworkState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDNetworkState] (val x: Self) extends AnyVal {
     
     inline def setInfoPathDotXDNetworkState_typekey(value: XDNetworkState): Self = StObject.set(x, "InfoPath.XDNetworkState_typekey", value.asInstanceOf[js.Any])
     

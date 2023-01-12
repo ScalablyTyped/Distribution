@@ -37,7 +37,8 @@ object distSrcInterfacesPublicTypesMod {
       __obj.asInstanceOf[Installations]
     }
     
-    extension [Self <: Installations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Installations] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     }
@@ -60,7 +61,8 @@ object distSrcInterfacesPublicTypesMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def setInstallations(value: Installations): Self = StObject.set(x, "installations", value.asInstanceOf[js.Any])
         

@@ -25,7 +25,8 @@ object ReplicaAutoScalingUpdate {
     __obj.asInstanceOf[ReplicaAutoScalingUpdate]
   }
   
-  extension [Self <: ReplicaAutoScalingUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicaAutoScalingUpdate] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
     

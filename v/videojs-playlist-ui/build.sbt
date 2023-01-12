@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "videojs-playlist-ui"
-version := "4.0-dt-20220210Z-0909f9"
+version := "4.0-dt-20220210Z-8e4a5a"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

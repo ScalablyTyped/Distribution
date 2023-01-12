@@ -510,7 +510,8 @@ object SwitchPropscolorstringund {
     __obj.asInstanceOf[SwitchPropscolorstringund]
   }
   
-  extension [Self <: SwitchPropscolorstringund](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwitchPropscolorstringund] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

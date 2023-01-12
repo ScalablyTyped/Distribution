@@ -17,7 +17,8 @@ object SearchData {
     __obj.asInstanceOf[SearchData[T]]
   }
   
-  extension [Self <: SearchData[?], T](x: Self & SearchData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchData[?], T] (val x: Self & SearchData[T]) extends AnyVal {
     
     inline def setSearchQuery(value: Any): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
   }

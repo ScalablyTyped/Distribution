@@ -25,7 +25,8 @@ object distTypesStorageMod {
       __obj.asInstanceOf[Storage]
     }
     
-    extension [Self <: Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Storage] (val x: Self) extends AnyVal {
       
       inline def setGetItem(value: String => String | Null | (js.Promise[String | Null])): Self = StObject.set(x, "getItem", js.Any.fromFunction1(value))
       

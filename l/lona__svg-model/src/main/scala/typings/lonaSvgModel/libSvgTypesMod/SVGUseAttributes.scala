@@ -20,7 +20,8 @@ object SVGUseAttributes {
     __obj.asInstanceOf[SVGUseAttributes]
   }
   
-  extension [Self <: SVGUseAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGUseAttributes] (val x: Self) extends AnyVal {
     
     inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
     

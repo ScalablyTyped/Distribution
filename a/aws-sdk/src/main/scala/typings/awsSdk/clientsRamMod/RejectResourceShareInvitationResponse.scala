@@ -23,7 +23,8 @@ object RejectResourceShareInvitationResponse {
     __obj.asInstanceOf[RejectResourceShareInvitationResponse]
   }
   
-  extension [Self <: RejectResourceShareInvitationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RejectResourceShareInvitationResponse] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: String): Self = StObject.set(x, "clientToken", value.asInstanceOf[js.Any])
     

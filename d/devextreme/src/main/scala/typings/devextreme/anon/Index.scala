@@ -26,7 +26,8 @@ object Index {
     __obj.asInstanceOf[Index[TItem, TKey]]
   }
   
-  extension [Self <: Index[?, ?], TItem, TKey](x: Self & (Index[TItem, TKey])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Index[?, ?], TItem, TKey] (val x: Self & (Index[TItem, TKey])) extends AnyVal {
     
     inline def setData(value: DeepPartial[TItem]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

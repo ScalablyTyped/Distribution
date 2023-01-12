@@ -22,7 +22,8 @@ object BarDatasetConfig {
     __obj.asInstanceOf[BarDatasetConfig]
   }
   
-  extension [Self <: BarDatasetConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarDatasetConfig] (val x: Self) extends AnyVal {
     
     inline def setBarShadowColor(value: Color): Self = StObject.set(x, "barShadowColor", value.asInstanceOf[js.Any])
     

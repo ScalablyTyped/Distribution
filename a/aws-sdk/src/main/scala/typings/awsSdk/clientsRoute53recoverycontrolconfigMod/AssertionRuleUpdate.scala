@@ -28,7 +28,8 @@ object AssertionRuleUpdate {
     __obj.asInstanceOf[AssertionRuleUpdate]
   }
   
-  extension [Self <: AssertionRuleUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssertionRuleUpdate] (val x: Self) extends AnyVal {
     
     inline def setName(value: stringMin1Max64PatternS): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     

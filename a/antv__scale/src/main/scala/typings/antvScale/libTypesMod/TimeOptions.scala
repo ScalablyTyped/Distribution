@@ -49,7 +49,8 @@ object TimeOptions {
     __obj.asInstanceOf[TimeOptions]
   }
   
-  extension [Self <: TimeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeOptions] (val x: Self) extends AnyVal {
     
     inline def setClamp(value: Boolean): Self = StObject.set(x, "clamp", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object MatchedString {
     __obj.asInstanceOf[MatchedString]
   }
   
-  extension [Self <: MatchedString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchedString] (val x: Self) extends AnyVal {
     
     inline def setIncrementPos(value: Unit): Self = StObject.set(x, "incrementPos", value.asInstanceOf[js.Any])
     

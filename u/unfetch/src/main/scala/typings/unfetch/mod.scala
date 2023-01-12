@@ -60,7 +60,8 @@ object mod {
       __obj.asInstanceOf[UnfetchResponse]
     }
     
-    extension [Self <: UnfetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnfetchResponse] (val x: Self) extends AnyVal {
       
       inline def setBlob(value: () => js.Promise[Blob]): Self = StObject.set(x, "blob", js.Any.fromFunction0(value))
       

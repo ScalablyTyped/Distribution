@@ -17,7 +17,8 @@ object StartActivityNotFound {
     __obj.asInstanceOf[StartActivityNotFound]
   }
   
-  extension [Self <: StartActivityNotFound](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartActivityNotFound] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

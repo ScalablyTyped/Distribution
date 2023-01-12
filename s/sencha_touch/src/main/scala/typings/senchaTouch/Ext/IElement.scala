@@ -745,7 +745,8 @@ object IElement {
     __obj.asInstanceOf[IElement]
   }
   
-  extension [Self <: IElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IElement] (val x: Self) extends AnyVal {
     
     inline def setAddCls(
       value: (/* names */ js.UndefOr[java.lang.String], /* prefix */ js.UndefOr[java.lang.String], /* suffix */ js.UndefOr[java.lang.String]) => IElement

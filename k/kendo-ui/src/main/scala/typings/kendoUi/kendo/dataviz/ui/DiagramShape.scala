@@ -51,7 +51,8 @@ object DiagramShape {
     __obj.asInstanceOf[DiagramShape]
   }
   
-  extension [Self <: DiagramShape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagramShape] (val x: Self) extends AnyVal {
     
     inline def setConnectorDefaults(value: DiagramShapeConnectorDefaults): Self = StObject.set(x, "connectorDefaults", value.asInstanceOf[js.Any])
     

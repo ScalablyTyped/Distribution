@@ -46,7 +46,8 @@ object ChatMessagePolicyViolation {
     __obj.asInstanceOf[ChatMessagePolicyViolation]
   }
   
-  extension [Self <: ChatMessagePolicyViolation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatMessagePolicyViolation] (val x: Self) extends AnyVal {
     
     inline def setDlpAction(value: NullableOption[ChatMessagePolicyViolationDlpActionTypes]): Self = StObject.set(x, "dlpAction", value.asInstanceOf[js.Any])
     

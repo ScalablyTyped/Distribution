@@ -27,7 +27,8 @@ object ControlProps {
     __obj.asInstanceOf[ControlProps[T]]
   }
   
-  extension [Self <: ControlProps[?], T](x: Self & ControlProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlProps[?], T] (val x: Self & ControlProps[T]) extends AnyVal {
     
     inline def setArgType(value: ArgType): Self = StObject.set(x, "argType", value.asInstanceOf[js.Any])
     

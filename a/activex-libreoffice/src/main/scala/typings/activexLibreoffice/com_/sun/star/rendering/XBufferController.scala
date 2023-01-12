@@ -73,7 +73,8 @@ object XBufferController {
     __obj.asInstanceOf[XBufferController]
   }
   
-  extension [Self <: XBufferController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XBufferController] (val x: Self) extends AnyVal {
     
     inline def setCreateBuffers(value: Double => Double): Self = StObject.set(x, "createBuffers", js.Any.fromFunction1(value))
     

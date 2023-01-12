@@ -18,7 +18,8 @@ object Received {
     __obj.asInstanceOf[Received]
   }
   
-  extension [Self <: Received](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Received] (val x: Self) extends AnyVal {
     
     inline def setReceived(value: js.Array[TransactionObject]): Self = StObject.set(x, "received", value.asInstanceOf[js.Any])
     

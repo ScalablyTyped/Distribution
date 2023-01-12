@@ -19,7 +19,8 @@ object FontMgrFactory {
     __obj.asInstanceOf[FontMgrFactory]
   }
   
-  extension [Self <: FontMgrFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontMgrFactory] (val x: Self) extends AnyVal {
     
     inline def setFromData(value: /* repeated */ js.typedarray.ArrayBuffer => FontMgr | Null): Self = StObject.set(x, "FromData", js.Any.fromFunction1(value))
   }

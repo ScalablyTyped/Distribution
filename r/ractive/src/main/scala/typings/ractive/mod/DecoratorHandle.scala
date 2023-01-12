@@ -28,7 +28,8 @@ object DecoratorHandle {
     __obj.asInstanceOf[DecoratorHandle]
   }
   
-  extension [Self <: DecoratorHandle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecoratorHandle] (val x: Self) extends AnyVal {
     
     inline def setInvalidate(value: () => Unit): Self = StObject.set(x, "invalidate", js.Any.fromFunction0(value))
     

@@ -55,7 +55,8 @@ object PeerCertificate {
     __obj.asInstanceOf[PeerCertificate]
   }
   
-  extension [Self <: PeerCertificate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PeerCertificate] (val x: Self) extends AnyVal {
     
     inline def setExponent(value: String): Self = StObject.set(x, "exponent", value.asInstanceOf[js.Any])
     

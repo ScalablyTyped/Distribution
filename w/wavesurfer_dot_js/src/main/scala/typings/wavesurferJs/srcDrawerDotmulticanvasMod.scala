@@ -48,7 +48,8 @@ object srcDrawerDotmulticanvasMod {
       __obj.asInstanceOf[DrawParams]
     }
     
-    extension [Self <: DrawParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawParams] (val x: Self) extends AnyVal {
       
       inline def setAbsmax(value: Double): Self = StObject.set(x, "absmax", value.asInstanceOf[js.Any])
       

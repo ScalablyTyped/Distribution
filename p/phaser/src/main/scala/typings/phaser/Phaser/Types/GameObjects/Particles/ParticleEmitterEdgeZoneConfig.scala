@@ -44,7 +44,8 @@ object ParticleEmitterEdgeZoneConfig {
     __obj.asInstanceOf[ParticleEmitterEdgeZoneConfig]
   }
   
-  extension [Self <: ParticleEmitterEdgeZoneConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterEdgeZoneConfig] (val x: Self) extends AnyVal {
     
     inline def setQuantity(value: Double): Self = StObject.set(x, "quantity", value.asInstanceOf[js.Any])
     

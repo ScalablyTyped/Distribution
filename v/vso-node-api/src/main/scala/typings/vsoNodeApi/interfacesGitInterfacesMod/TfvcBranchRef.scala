@@ -54,7 +54,8 @@ object TfvcBranchRef {
     __obj.asInstanceOf[TfvcBranchRef]
   }
   
-  extension [Self <: TfvcBranchRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TfvcBranchRef] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: js.Date): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

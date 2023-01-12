@@ -132,7 +132,8 @@ object mod {
       __obj.asInstanceOf[BufferedMetricsLoggerOptions]
     }
     
-    extension [Self <: BufferedMetricsLoggerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferedMetricsLoggerOptions] (val x: Self) extends AnyVal {
       
       inline def setApiHost(value: String): Self = StObject.set(x, "apiHost", value.asInstanceOf[js.Any])
       

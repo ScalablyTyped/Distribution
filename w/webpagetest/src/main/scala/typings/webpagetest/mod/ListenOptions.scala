@@ -19,7 +19,8 @@ object ListenOptions {
     __obj.asInstanceOf[ListenOptions]
   }
   
-  extension [Self <: ListenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListenOptions] (val x: Self) extends AnyVal {
     
     inline def setCert(value: String): Self = StObject.set(x, "cert", value.asInstanceOf[js.Any])
     

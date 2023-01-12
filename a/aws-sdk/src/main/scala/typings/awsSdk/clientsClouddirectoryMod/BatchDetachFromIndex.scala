@@ -23,7 +23,8 @@ object BatchDetachFromIndex {
     __obj.asInstanceOf[BatchDetachFromIndex]
   }
   
-  extension [Self <: BatchDetachFromIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDetachFromIndex] (val x: Self) extends AnyVal {
     
     inline def setIndexReference(value: ObjectReference): Self = StObject.set(x, "IndexReference", value.asInstanceOf[js.Any])
     

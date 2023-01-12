@@ -19,7 +19,8 @@ object JQueryFileUploadProgressAllObject {
     __obj.asInstanceOf[JQueryFileUploadProgressAllObject]
   }
   
-  extension [Self <: JQueryFileUploadProgressAllObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryFileUploadProgressAllObject] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

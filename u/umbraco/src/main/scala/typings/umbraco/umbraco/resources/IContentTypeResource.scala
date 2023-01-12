@@ -56,7 +56,8 @@ object IContentTypeResource {
     __obj.asInstanceOf[IContentTypeResource]
   }
   
-  extension [Self <: IContentTypeResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContentTypeResource] (val x: Self) extends AnyVal {
     
     inline def setGetAllPropertyTypeAliases(value: () => IPromise[IResourcePromise]): Self = StObject.set(x, "getAllPropertyTypeAliases", js.Any.fromFunction0(value))
     

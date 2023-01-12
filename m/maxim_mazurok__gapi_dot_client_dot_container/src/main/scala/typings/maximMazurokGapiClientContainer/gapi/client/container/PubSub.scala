@@ -22,7 +22,8 @@ object PubSub {
     __obj.asInstanceOf[PubSub]
   }
   
-  extension [Self <: PubSub](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubSub] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

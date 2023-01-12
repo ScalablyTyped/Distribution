@@ -23,7 +23,8 @@ object StreamingSessionStorageRoot {
     __obj.asInstanceOf[StreamingSessionStorageRoot]
   }
   
-  extension [Self <: StreamingSessionStorageRoot](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingSessionStorageRoot] (val x: Self) extends AnyVal {
     
     inline def setLinux(value: StreamingSessionStorageRootPathLinux): Self = StObject.set(x, "linux", value.asInstanceOf[js.Any])
     

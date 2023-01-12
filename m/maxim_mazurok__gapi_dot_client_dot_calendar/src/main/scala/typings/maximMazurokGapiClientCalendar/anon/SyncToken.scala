@@ -49,7 +49,8 @@ object SyncToken {
     __obj.asInstanceOf[SyncToken]
   }
   
-  extension [Self <: SyncToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncToken] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

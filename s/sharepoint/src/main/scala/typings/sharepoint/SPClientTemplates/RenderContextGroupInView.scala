@@ -108,7 +108,8 @@ object RenderContextGroupInView {
     __obj.asInstanceOf[RenderContextGroupInView]
   }
   
-  extension [Self <: RenderContextGroupInView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderContextGroupInView] (val x: Self) extends AnyVal {
     
     inline def setCurrentGroup(value: Group): Self = StObject.set(x, "CurrentGroup", value.asInstanceOf[js.Any])
     

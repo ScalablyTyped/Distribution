@@ -18,7 +18,8 @@ object Typeofaction {
     __obj.asInstanceOf[Typeofaction]
   }
   
-  extension [Self <: Typeofaction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofaction] (val x: Self) extends AnyVal {
     
     inline def setManager(value: Instantiable1[/* map */ Map_, Manager]): Self = StObject.set(x, "Manager", value.asInstanceOf[js.Any])
   }

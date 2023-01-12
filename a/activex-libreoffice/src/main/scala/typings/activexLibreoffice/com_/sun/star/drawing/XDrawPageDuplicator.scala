@@ -30,7 +30,8 @@ object XDrawPageDuplicator {
     __obj.asInstanceOf[XDrawPageDuplicator]
   }
   
-  extension [Self <: XDrawPageDuplicator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDrawPageDuplicator] (val x: Self) extends AnyVal {
     
     inline def setDuplicate(value: XDrawPage => XDrawPage): Self = StObject.set(x, "duplicate", js.Any.fromFunction1(value))
   }

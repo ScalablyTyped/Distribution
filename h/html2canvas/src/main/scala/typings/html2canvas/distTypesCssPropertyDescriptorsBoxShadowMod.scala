@@ -34,7 +34,8 @@ object distTypesCssPropertyDescriptorsBoxShadowMod {
       __obj.asInstanceOf[BoxShadowItem]
     }
     
-    extension [Self <: BoxShadowItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxShadowItem] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: Length): Self = StObject.set(x, "blur", value.asInstanceOf[js.Any])
       

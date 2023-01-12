@@ -19,7 +19,8 @@ object SelectedIndex {
     __obj.asInstanceOf[SelectedIndex]
   }
   
-  extension [Self <: SelectedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedIndex] (val x: Self) extends AnyVal {
     
     inline def setSelectedIndex(value: int): Self = StObject.set(x, "selectedIndex", value.asInstanceOf[js.Any])
     

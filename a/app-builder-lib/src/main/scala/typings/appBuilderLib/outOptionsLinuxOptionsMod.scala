@@ -31,7 +31,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[AppImageOptions]
     }
     
-    extension [Self <: AppImageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppImageOptions] (val x: Self) extends AnyVal {
       
       inline def setLicense(value: String): Self = StObject.set(x, "license", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[CommonLinuxOptions]
     }
     
-    extension [Self <: CommonLinuxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonLinuxOptions] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: String): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -140,7 +142,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[DebOptions]
     }
     
-    extension [Self <: DebOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebOptions] (val x: Self) extends AnyVal {
       
       inline def setPriority(value: String): Self = StObject.set(x, "priority", value.asInstanceOf[js.Any])
       
@@ -261,7 +264,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[FlatpakOptions]
     }
     
-    extension [Self <: FlatpakOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlatpakOptions] (val x: Self) extends AnyVal {
       
       inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -369,7 +373,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[LinuxConfiguration]
     }
     
-    extension [Self <: LinuxConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinuxConfiguration] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: String): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -453,7 +458,8 @@ object outOptionsLinuxOptionsMod {
       __obj.asInstanceOf[LinuxTargetSpecificOptions]
     }
     
-    extension [Self <: LinuxTargetSpecificOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinuxTargetSpecificOptions] (val x: Self) extends AnyVal {
       
       inline def setAfterInstall(value: String): Self = StObject.set(x, "afterInstall", value.asInstanceOf[js.Any])
       

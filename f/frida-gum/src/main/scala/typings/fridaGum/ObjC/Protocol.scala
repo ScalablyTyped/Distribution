@@ -47,7 +47,8 @@ object Protocol {
     __obj.asInstanceOf[Protocol]
   }
   
-  extension [Self <: Protocol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
     
     inline def setMethods(value: StringDictionary[ProtocolMethodDescription]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     

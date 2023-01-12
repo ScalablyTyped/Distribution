@@ -18,7 +18,8 @@ object DragPlanePoint {
     __obj.asInstanceOf[DragPlanePoint]
   }
   
-  extension [Self <: DragPlanePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragPlanePoint] (val x: Self) extends AnyVal {
     
     inline def setDragPlanePoint(value: Vector3): Self = StObject.set(x, "dragPlanePoint", value.asInstanceOf[js.Any])
     

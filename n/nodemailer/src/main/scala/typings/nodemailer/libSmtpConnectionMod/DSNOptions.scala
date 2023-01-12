@@ -28,7 +28,8 @@ object DSNOptions {
     __obj.asInstanceOf[DSNOptions]
   }
   
-  extension [Self <: DSNOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DSNOptions] (val x: Self) extends AnyVal {
     
     inline def setEnvid(value: String): Self = StObject.set(x, "envid", value.asInstanceOf[js.Any])
     

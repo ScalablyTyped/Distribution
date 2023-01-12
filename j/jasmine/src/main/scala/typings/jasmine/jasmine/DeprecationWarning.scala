@@ -20,7 +20,8 @@ object DeprecationWarning {
     __obj.asInstanceOf[DeprecationWarning]
   }
   
-  extension [Self <: DeprecationWarning](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeprecationWarning] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

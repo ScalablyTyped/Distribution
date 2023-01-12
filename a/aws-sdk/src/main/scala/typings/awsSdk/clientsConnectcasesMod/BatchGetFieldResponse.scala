@@ -23,7 +23,8 @@ object BatchGetFieldResponse {
     __obj.asInstanceOf[BatchGetFieldResponse]
   }
   
-  extension [Self <: BatchGetFieldResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetFieldResponse] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: BatchGetFieldResponseErrorsList): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PackagingServiceClient {
     __obj.asInstanceOf[PackagingServiceClient]
   }
   
-  extension [Self <: PackagingServiceClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagingServiceClient] (val x: Self) extends AnyVal {
     
     inline def setAndroidPackageName(value: String): Self = StObject.set(x, "androidPackageName", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object PaginatorChangeParams {
     __obj.asInstanceOf[PaginatorChangeParams]
   }
   
-  extension [Self <: PaginatorChangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaginatorChangeParams] (val x: Self) extends AnyVal {
     
     inline def setOriginalEvent(value: SyntheticEvent[Element, Event]): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
     

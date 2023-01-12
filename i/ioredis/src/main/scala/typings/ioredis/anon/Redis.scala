@@ -15,7 +15,8 @@ object Redis {
     __obj.asInstanceOf[Redis]
   }
   
-  extension [Self <: Redis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Redis] (val x: Self) extends AnyVal {
     
     inline def setRedis(value: Stream): Self = StObject.set(x, "redis", value.asInstanceOf[js.Any])
   }

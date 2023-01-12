@@ -33,7 +33,8 @@ object paymentRequest {
       __obj.asInstanceOf[DisplayItem]
     }
     
-    extension [Self <: DisplayItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisplayItem] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object paymentRequest {
       __obj.asInstanceOf[ShippingAddress]
     }
     
-    extension [Self <: ShippingAddress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShippingAddress] (val x: Self) extends AnyVal {
       
       inline def setAddressLine(value: js.Array[String]): Self = StObject.set(x, "addressLine", value.asInstanceOf[js.Any])
       
@@ -125,7 +127,8 @@ object paymentRequest {
       __obj.asInstanceOf[ShippingOption]
     }
     
-    extension [Self <: ShippingOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShippingOption] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -152,7 +155,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripePaymentMethodPaymentResponse]
     }
     
-    extension [Self <: StripePaymentMethodPaymentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentMethodPaymentResponse] (val x: Self) extends AnyVal {
       
       inline def setPaymentMethod(value: PaymentMethod): Self = StObject.set(x, "paymentMethod", value.asInstanceOf[js.Any])
     }
@@ -211,7 +215,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripePaymentRequestOptions]
     }
     
-    extension [Self <: StripePaymentRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -250,7 +255,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripePaymentRequestUpdateOptions]
     }
     
-    extension [Self <: StripePaymentRequestUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentRequestUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrency(value: String): Self = StObject.set(x, "currency", value.asInstanceOf[js.Any])
       
@@ -293,7 +299,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripePaymentResponse]
     }
     
-    extension [Self <: StripePaymentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripePaymentResponse] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: String => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
       
@@ -334,7 +341,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripeSourcePaymentResponse]
     }
     
-    extension [Self <: StripeSourcePaymentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripeSourcePaymentResponse] (val x: Self) extends AnyVal {
       
       inline def setSource(value: Source): Self = StObject.set(x, "source", value.asInstanceOf[js.Any])
     }
@@ -353,7 +361,8 @@ object paymentRequest {
       __obj.asInstanceOf[StripeTokenPaymentResponse]
     }
     
-    extension [Self <: StripeTokenPaymentResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StripeTokenPaymentResponse] (val x: Self) extends AnyVal {
       
       inline def setToken(value: Token): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     }
@@ -376,7 +385,8 @@ object paymentRequest {
       __obj.asInstanceOf[UpdateDetails]
     }
     
-    extension [Self <: UpdateDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateDetails] (val x: Self) extends AnyVal {
       
       inline def setDisplayItems(value: js.Array[DisplayItem]): Self = StObject.set(x, "displayItems", value.asInstanceOf[js.Any])
       

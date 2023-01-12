@@ -16,7 +16,8 @@ object RTCSctpTransportEventMap {
     __obj.asInstanceOf[RTCSctpTransportEventMap]
   }
   
-  extension [Self <: RTCSctpTransportEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCSctpTransportEventMap] (val x: Self) extends AnyVal {
     
     inline def setStatechange(value: Event): Self = StObject.set(x, "statechange", value.asInstanceOf[js.Any])
   }

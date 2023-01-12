@@ -23,7 +23,8 @@ object MessagingPayload {
     __obj.asInstanceOf[MessagingPayload]
   }
   
-  extension [Self <: MessagingPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessagingPayload] (val x: Self) extends AnyVal {
     
     inline def setData(value: DataMessagePayload): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

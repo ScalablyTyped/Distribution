@@ -28,7 +28,8 @@ object LicenseUnitsDetail {
     __obj.asInstanceOf[LicenseUnitsDetail]
   }
   
-  extension [Self <: LicenseUnitsDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseUnitsDetail] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: NullableOption[Double]): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

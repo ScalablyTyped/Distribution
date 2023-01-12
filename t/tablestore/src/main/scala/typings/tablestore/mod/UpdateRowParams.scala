@@ -33,7 +33,8 @@ object UpdateRowParams {
     __obj.asInstanceOf[UpdateRowParams]
   }
   
-  extension [Self <: UpdateRowParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRowParams] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Condition): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Billion]
     }
     
-    extension [Self <: Billion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Billion] (val x: Self) extends AnyVal {
       
       inline def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object anon {
       __obj.asInstanceOf[Decimal]
     }
     
-    extension [Self <: Decimal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Decimal] (val x: Self) extends AnyVal {
       
       inline def setDecimal(value: String): Self = StObject.set(x, "decimal", value.asInstanceOf[js.Any])
       
@@ -118,7 +121,8 @@ object anon {
       __obj.asInstanceOf[FourDigits]
     }
     
-    extension [Self <: FourDigits](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FourDigits] (val x: Self) extends AnyVal {
       
       inline def setFourDigits(value: Format): Self = StObject.set(x, "fourDigits", value.asInstanceOf[js.Any])
       
@@ -147,7 +151,8 @@ object anon {
       __obj.asInstanceOf[Million]
     }
     
-    extension [Self <: Million](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Million] (val x: Self) extends AnyVal {
       
       inline def setBillion(value: String): Self = StObject.set(x, "billion", value.asInstanceOf[js.Any])
       

@@ -44,7 +44,8 @@ object NetworkMeasure {
     __obj.asInstanceOf[NetworkMeasure]
   }
   
-  extension [Self <: NetworkMeasure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkMeasure] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

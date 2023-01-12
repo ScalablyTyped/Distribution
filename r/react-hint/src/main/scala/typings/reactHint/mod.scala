@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[ReactHintProps]
     }
     
-    extension [Self <: ReactHintProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactHintProps] (val x: Self) extends AnyVal {
       
       inline def setAttribute(value: String): Self = StObject.set(x, "attribute", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AnalysisTokenFilterBase {
     __obj.asInstanceOf[AnalysisTokenFilterBase]
   }
   
-  extension [Self <: AnalysisTokenFilterBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisTokenFilterBase] (val x: Self) extends AnyVal {
     
     inline def setVersion(value: VersionString): Self = StObject.set(x, "version", value.asInstanceOf[js.Any])
     

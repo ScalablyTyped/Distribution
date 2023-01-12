@@ -27,7 +27,8 @@ object DownloadErrorEvent {
     __obj.asInstanceOf[DownloadErrorEvent]
   }
   
-  extension [Self <: DownloadErrorEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DownloadErrorEvent] (val x: Self) extends AnyVal {
     
     inline def setError(value: download): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

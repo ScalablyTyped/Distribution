@@ -45,7 +45,8 @@ object ITriggerType {
     __obj.asInstanceOf[ITriggerType]
   }
   
-  extension [Self <: ITriggerType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITriggerType] (val x: Self) extends AnyVal {
     
     inline def setClone(value: () => ITriggerType): Self = StObject.set(x, "Clone", js.Any.fromFunction0(value))
     

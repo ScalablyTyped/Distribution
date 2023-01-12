@@ -18,7 +18,8 @@ object CreateThesaurusResponse {
     __obj.asInstanceOf[CreateThesaurusResponse]
   }
   
-  extension [Self <: CreateThesaurusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateThesaurusResponse] (val x: Self) extends AnyVal {
     
     inline def setId(value: ThesaurusId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

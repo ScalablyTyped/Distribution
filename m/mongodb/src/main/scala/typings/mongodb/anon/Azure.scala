@@ -24,7 +24,8 @@ object Azure {
     __obj.asInstanceOf[Azure]
   }
   
-  extension [Self <: Azure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Azure] (val x: Self) extends AnyVal {
     
     inline def setAws(value: AutoEncryptionTlsOptions): Self = StObject.set(x, "aws", value.asInstanceOf[js.Any])
     

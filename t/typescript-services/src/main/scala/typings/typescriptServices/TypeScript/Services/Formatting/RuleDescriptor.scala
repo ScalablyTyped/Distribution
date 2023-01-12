@@ -18,7 +18,8 @@ object RuleDescriptor {
     __obj.asInstanceOf[RuleDescriptor]
   }
   
-  extension [Self <: RuleDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleDescriptor] (val x: Self) extends AnyVal {
     
     inline def setLeftTokenRange(value: TokenRange): Self = StObject.set(x, "LeftTokenRange", value.asInstanceOf[js.Any])
     

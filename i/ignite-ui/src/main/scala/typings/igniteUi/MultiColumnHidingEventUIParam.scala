@@ -23,7 +23,8 @@ object MultiColumnHidingEventUIParam {
     __obj.asInstanceOf[MultiColumnHidingEventUIParam]
   }
   
-  extension [Self <: MultiColumnHidingEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiColumnHidingEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setColumnKeys(value: js.Array[Any]): Self = StObject.set(x, "columnKeys", value.asInstanceOf[js.Any])
     

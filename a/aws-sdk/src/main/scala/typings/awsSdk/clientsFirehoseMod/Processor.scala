@@ -23,7 +23,8 @@ object Processor {
     __obj.asInstanceOf[Processor]
   }
   
-  extension [Self <: Processor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Processor] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: ProcessorParameterList): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

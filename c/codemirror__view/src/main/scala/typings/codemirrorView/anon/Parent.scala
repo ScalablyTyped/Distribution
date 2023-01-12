@@ -49,7 +49,8 @@ object Parent {
     __obj.asInstanceOf[Parent]
   }
   
-  extension [Self <: Parent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Parent] (val x: Self) extends AnyVal {
     
     inline def setParent(value: HTMLElement): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     

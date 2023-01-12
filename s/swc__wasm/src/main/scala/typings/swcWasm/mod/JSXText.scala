@@ -26,7 +26,8 @@ object JSXText {
     __obj.asInstanceOf[JSXText]
   }
   
-  extension [Self <: JSXText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXText] (val x: Self) extends AnyVal {
     
     inline def setRaw(value: String): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     

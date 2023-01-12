@@ -38,7 +38,8 @@ object CreateDetectorRequest {
     __obj.asInstanceOf[CreateDetectorRequest]
   }
   
-  extension [Self <: CreateDetectorRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDetectorRequest] (val x: Self) extends AnyVal {
     
     inline def setClientToken(value: ClientToken): Self = StObject.set(x, "ClientToken", value.asInstanceOf[js.Any])
     

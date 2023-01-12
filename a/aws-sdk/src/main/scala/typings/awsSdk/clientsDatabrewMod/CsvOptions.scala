@@ -23,7 +23,8 @@ object CsvOptions {
     __obj.asInstanceOf[CsvOptions]
   }
   
-  extension [Self <: CsvOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvOptions] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: Delimiter): Self = StObject.set(x, "Delimiter", value.asInstanceOf[js.Any])
     

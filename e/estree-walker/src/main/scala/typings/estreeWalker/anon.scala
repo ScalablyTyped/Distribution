@@ -38,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Enter]
     }
     
-    extension [Self <: Enter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Enter] (val x: Self) extends AnyVal {
       
       inline def setEnter(
         value: js.ThisFunction4[
@@ -99,7 +100,8 @@ object anon {
       __obj.asInstanceOf[Leave]
     }
     
-    extension [Self <: Leave](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Leave] (val x: Self) extends AnyVal {
       
       inline def setEnter(
         value: js.ThisFunction4[
@@ -144,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Remove]
     }
     
-    extension [Self <: Remove](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Remove] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
       

@@ -25,7 +25,8 @@ object AddCustomLayerOption {
     __obj.asInstanceOf[AddCustomLayerOption]
   }
   
-  extension [Self <: AddCustomLayerOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCustomLayerOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ GeneralCallbackResult => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

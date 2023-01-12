@@ -23,7 +23,8 @@ object AdaptiveMediaSourcePlaybackBitrateChangedEventArgs {
     __obj.asInstanceOf[AdaptiveMediaSourcePlaybackBitrateChangedEventArgs]
   }
   
-  extension [Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAudioOnly(value: Boolean): Self = StObject.set(x, "audioOnly", value.asInstanceOf[js.Any])
     

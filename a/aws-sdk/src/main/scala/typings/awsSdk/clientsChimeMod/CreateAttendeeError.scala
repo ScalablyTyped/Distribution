@@ -28,7 +28,8 @@ object CreateAttendeeError {
     __obj.asInstanceOf[CreateAttendeeError]
   }
   
-  extension [Self <: CreateAttendeeError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAttendeeError] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: String): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
     

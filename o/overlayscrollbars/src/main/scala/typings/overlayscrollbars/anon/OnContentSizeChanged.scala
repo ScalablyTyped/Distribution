@@ -44,7 +44,8 @@ object OnContentSizeChanged {
     __obj.asInstanceOf[OnContentSizeChanged]
   }
   
-  extension [Self <: OnContentSizeChanged](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnContentSizeChanged] (val x: Self) extends AnyVal {
     
     inline def setOnContentSizeChanged(value: SizeChangedCallback): Self = StObject.set(x, "onContentSizeChanged", value.asInstanceOf[js.Any])
     

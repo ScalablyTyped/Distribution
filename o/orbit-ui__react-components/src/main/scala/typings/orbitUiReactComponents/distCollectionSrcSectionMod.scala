@@ -46,7 +46,8 @@ object distCollectionSrcSectionMod {
       __obj.asInstanceOf[InnerSectionProps]
     }
     
-    extension [Self <: InnerSectionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerSectionProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object RelativeIndexable {
     __obj.asInstanceOf[RelativeIndexable[T]]
   }
   
-  extension [Self <: RelativeIndexable[?], T](x: Self & RelativeIndexable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelativeIndexable[?], T] (val x: Self & RelativeIndexable[T]) extends AnyVal {
     
     inline def setAt(value: Double => js.UndefOr[T]): Self = StObject.set(x, "at", js.Any.fromFunction1(value))
   }

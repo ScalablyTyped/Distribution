@@ -22,7 +22,8 @@ object SentenceOptions {
     __obj.asInstanceOf[SentenceOptions]
   }
   
-  extension [Self <: SentenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SentenceOptions] (val x: Self) extends AnyVal {
     
     inline def setPunctuation(value: Dot | Questionmark | Semicolon | Exclamationmark | Colon | Boolean): Self = StObject.set(x, "punctuation", value.asInstanceOf[js.Any])
     

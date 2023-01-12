@@ -45,7 +45,8 @@ object ngccSrcWritingFileWriterMod {
       __obj.asInstanceOf[FileWriter]
     }
     
-    extension [Self <: FileWriter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileWriter] (val x: Self) extends AnyVal {
       
       inline def setRevertBundle(value: (EntryPoint, js.Array[AbsoluteFsPath], js.Array[EntryPointJsonProperty]) => Unit): Self = StObject.set(x, "revertBundle", js.Any.fromFunction3(value))
       

@@ -159,7 +159,8 @@ object SeriesFunnel3dOptions {
     __obj.asInstanceOf[SeriesFunnel3dOptions]
   }
   
-  extension [Self <: SeriesFunnel3dOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesFunnel3dOptions] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: js.Array[Double | String]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsDistributeVerticalCenterMod ext
       __obj.asInstanceOf[DistributeVerticalCenterProps]
     }
     
-    extension [Self <: DistributeVerticalCenterProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DistributeVerticalCenterProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

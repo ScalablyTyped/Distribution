@@ -26,7 +26,8 @@ object Attributes {
     __obj.asInstanceOf[Attributes[Kin, D, K, Din]]
   }
   
-  extension [Self <: Attributes[?, ?, ?, ?], Kin, D, K, Din](x: Self & (Attributes[Kin, D, K, Din])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Attributes[?, ?, ?, ?], Kin, D, K, Din] (val x: Self & (Attributes[Kin, D, K, Din])) extends AnyVal {
     
     inline def setAttributes(value: js.Array[String | FetchAttribute]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

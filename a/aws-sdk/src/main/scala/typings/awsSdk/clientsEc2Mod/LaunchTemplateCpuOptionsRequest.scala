@@ -23,7 +23,8 @@ object LaunchTemplateCpuOptionsRequest {
     __obj.asInstanceOf[LaunchTemplateCpuOptionsRequest]
   }
   
-  extension [Self <: LaunchTemplateCpuOptionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateCpuOptionsRequest] (val x: Self) extends AnyVal {
     
     inline def setCoreCount(value: Integer): Self = StObject.set(x, "CoreCount", value.asInstanceOf[js.Any])
     

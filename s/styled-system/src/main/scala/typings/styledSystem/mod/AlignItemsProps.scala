@@ -25,7 +25,8 @@ object AlignItemsProps {
     __obj.asInstanceOf[AlignItemsProps[ThemeType]]
   }
   
-  extension [Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */](x: Self & AlignItemsProps[ThemeType]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & AlignItemsProps[ThemeType]) extends AnyVal {
     
     inline def setAlignItems(value: ResponsiveValue[AlignItems, ThemeType]): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
     

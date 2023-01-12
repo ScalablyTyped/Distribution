@@ -16,7 +16,8 @@ object Backend {
     __obj.asInstanceOf[Backend]
   }
   
-  extension [Self <: Backend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backend] (val x: Self) extends AnyVal {
     
     inline def setRules(value: js.Array[BackendRule]): Self = StObject.set(x, "rules", value.asInstanceOf[js.Any])
     

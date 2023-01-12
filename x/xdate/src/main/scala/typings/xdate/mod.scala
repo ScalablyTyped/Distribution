@@ -692,7 +692,8 @@ object mod {
       __obj.asInstanceOf[formattersInfo]
     }
     
-    extension [Self <: formattersInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: formattersInfo] (val x: Self) extends AnyVal {
       
       inline def setI(value: String): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -733,7 +734,8 @@ object mod {
       __obj.asInstanceOf[localeDetail]
     }
     
-    extension [Self <: localeDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: localeDetail] (val x: Self) extends AnyVal {
       
       inline def setAmDesignator(value: String): Self = StObject.set(x, "amDesignator", value.asInstanceOf[js.Any])
       

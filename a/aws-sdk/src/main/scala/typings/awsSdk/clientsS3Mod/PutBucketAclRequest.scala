@@ -68,7 +68,8 @@ object PutBucketAclRequest {
     __obj.asInstanceOf[PutBucketAclRequest]
   }
   
-  extension [Self <: PutBucketAclRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutBucketAclRequest] (val x: Self) extends AnyVal {
     
     inline def setACL(value: BucketCannedACL): Self = StObject.set(x, "ACL", value.asInstanceOf[js.Any])
     

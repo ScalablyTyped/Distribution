@@ -27,7 +27,8 @@ object GPUCanvasConfiguration {
     __obj.asInstanceOf[GPUCanvasConfiguration]
   }
   
-  extension [Self <: GPUCanvasConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPUCanvasConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAlphaMode(value: GPUCanvasAlphaMode): Self = StObject.set(x, "alphaMode", value.asInstanceOf[js.Any])
     

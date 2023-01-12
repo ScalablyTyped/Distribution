@@ -54,7 +54,8 @@ object TypeofXPathResult {
     __obj.asInstanceOf[TypeofXPathResult]
   }
   
-  extension [Self <: TypeofXPathResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofXPathResult] (val x: Self) extends AnyVal {
     
     inline def setANY_TYPE(value: Double): Self = StObject.set(x, "ANY_TYPE", value.asInstanceOf[js.Any])
     

@@ -121,7 +121,8 @@ object distTypesDisposableMod {
       __obj.asInstanceOf[DisposableScope]
     }
     
-    extension [Self <: DisposableScope](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisposableScope] (val x: Self) extends AnyVal {
       
       inline def setFail(value: Any => Unit): Self = StObject.set(x, "fail", js.Any.fromFunction1(value))
       

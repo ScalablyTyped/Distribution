@@ -19,7 +19,8 @@ object TezosParametersManager {
     __obj.asInstanceOf[TezosParametersManager]
   }
   
-  extension [Self <: TezosParametersManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosParametersManager] (val x: Self) extends AnyVal {
     
     inline def setCancel_delegate(value: Boolean): Self = StObject.set(x, "cancel_delegate", value.asInstanceOf[js.Any])
     

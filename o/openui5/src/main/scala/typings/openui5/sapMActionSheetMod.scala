@@ -1067,7 +1067,8 @@ object sapMActionSheetMod {
       __obj.asInstanceOf[ActionSheetSettings]
     }
     
-    extension [Self <: ActionSheetSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActionSheetSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       

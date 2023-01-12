@@ -44,7 +44,8 @@ object SendMessageImg {
     __obj.asInstanceOf[SendMessageImg]
   }
   
-  extension [Self <: SendMessageImg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendMessageImg] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
     

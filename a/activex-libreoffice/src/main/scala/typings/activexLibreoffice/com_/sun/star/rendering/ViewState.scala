@@ -38,7 +38,8 @@ object ViewState {
     __obj.asInstanceOf[ViewState]
   }
   
-  extension [Self <: ViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewState] (val x: Self) extends AnyVal {
     
     inline def setAffineTransform(value: AffineMatrix2D): Self = StObject.set(x, "AffineTransform", value.asInstanceOf[js.Any])
     

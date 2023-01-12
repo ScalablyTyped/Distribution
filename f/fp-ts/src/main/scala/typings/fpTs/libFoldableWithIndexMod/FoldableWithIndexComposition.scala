@@ -50,7 +50,8 @@ object FoldableWithIndexComposition {
     __obj.asInstanceOf[FoldableWithIndexComposition[F, FI, G, GI]]
   }
   
-  extension [Self <: FoldableWithIndexComposition[?, ?, ?, ?], F, FI, G, GI](x: Self & (FoldableWithIndexComposition[F, FI, G, GI])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FoldableWithIndexComposition[?, ?, ?, ?], F, FI, G, GI] (val x: Self & (FoldableWithIndexComposition[F, FI, G, GI])) extends AnyVal {
     
     inline def setFoldMapWithIndex(
       value: Monoid[Any] => js.Function2[

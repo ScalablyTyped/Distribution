@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[InfiniteLoaderProps]
     }
     
-    extension [Self <: InfiniteLoaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfiniteLoaderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: typings.reactWindowInfiniteLoader.anon.OnItemsRendered => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

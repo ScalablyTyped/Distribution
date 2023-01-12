@@ -22,7 +22,8 @@ object SortCaret {
     __obj.asInstanceOf[SortCaret]
   }
   
-  extension [Self <: SortCaret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCaret] (val x: Self) extends AnyVal {
     
     inline def setDataField(value: Any): Self = StObject.set(x, "dataField", value.asInstanceOf[js.Any])
     

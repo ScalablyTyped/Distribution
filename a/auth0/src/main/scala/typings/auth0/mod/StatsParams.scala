@@ -17,7 +17,8 @@ object StatsParams {
     __obj.asInstanceOf[StatsParams]
   }
   
-  extension [Self <: StatsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsParams] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

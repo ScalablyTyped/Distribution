@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[JsonOptions]
     }
     
-    extension [Self <: JsonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JsonOptions] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object mod {
       __obj.asInstanceOf[Record]
     }
     
-    extension [Self <: Record](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Record] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Any): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object mod {
       __obj.asInstanceOf[Yayson]
     }
     
-    extension [Self <: Yayson](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Yayson] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: Adapter): Self = StObject.set(x, "Adapter", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object mod {
       __obj.asInstanceOf[YaysonOptions]
     }
     
-    extension [Self <: YaysonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YaysonOptions] (val x: Self) extends AnyVal {
       
       inline def setAdapter(value: default | sequelize): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       

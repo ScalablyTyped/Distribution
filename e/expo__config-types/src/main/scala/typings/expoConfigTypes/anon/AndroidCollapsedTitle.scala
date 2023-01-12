@@ -40,7 +40,8 @@ object AndroidCollapsedTitle {
     __obj.asInstanceOf[AndroidCollapsedTitle]
   }
   
-  extension [Self <: AndroidCollapsedTitle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AndroidCollapsedTitle] (val x: Self) extends AnyVal {
     
     inline def setAndroidCollapsedTitle(value: String): Self = StObject.set(x, "androidCollapsedTitle", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object anon {
       __obj.asInstanceOf[Crossorigin]
     }
     
-    extension [Self <: Crossorigin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Crossorigin] (val x: Self) extends AnyVal {
       
       inline def setCrossorigin(value: String): Self = StObject.set(x, "crossorigin", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object anon {
       __obj.asInstanceOf[Lasso]
     }
     
-    extension [Self <: Lasso](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Lasso] (val x: Self) extends AnyVal {
       
       inline def setLasso(value: default): Self = StObject.set(x, "lasso", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object anon {
       __obj.asInstanceOf[Parts]
     }
     
-    extension [Self <: Parts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parts] (val x: Self) extends AnyVal {
       
       inline def setParts(value: js.Array[String]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
       

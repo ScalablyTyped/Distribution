@@ -18,7 +18,8 @@ object ImportAppCatalogRequest {
     __obj.asInstanceOf[ImportAppCatalogRequest]
   }
   
-  extension [Self <: ImportAppCatalogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportAppCatalogRequest] (val x: Self) extends AnyVal {
     
     inline def setRoleName(value: RoleName): Self = StObject.set(x, "roleName", value.asInstanceOf[js.Any])
     

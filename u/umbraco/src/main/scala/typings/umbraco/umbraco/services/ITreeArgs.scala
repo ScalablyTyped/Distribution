@@ -20,7 +20,8 @@ object ITreeArgs {
     __obj.asInstanceOf[ITreeArgs]
   }
   
-  extension [Self <: ITreeArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITreeArgs] (val x: Self) extends AnyVal {
     
     inline def setCacheKey(value: String): Self = StObject.set(x, "cacheKey", value.asInstanceOf[js.Any])
     

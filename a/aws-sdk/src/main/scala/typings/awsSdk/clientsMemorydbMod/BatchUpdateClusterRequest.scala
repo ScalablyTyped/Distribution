@@ -23,7 +23,8 @@ object BatchUpdateClusterRequest {
     __obj.asInstanceOf[BatchUpdateClusterRequest]
   }
   
-  extension [Self <: BatchUpdateClusterRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchUpdateClusterRequest] (val x: Self) extends AnyVal {
     
     inline def setClusterNames(value: ClusterNameList): Self = StObject.set(x, "ClusterNames", value.asInstanceOf[js.Any])
     

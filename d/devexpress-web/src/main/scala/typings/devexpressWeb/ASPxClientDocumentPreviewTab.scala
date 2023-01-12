@@ -29,7 +29,8 @@ object ASPxClientDocumentPreviewTab {
     __obj.asInstanceOf[ASPxClientDocumentPreviewTab]
   }
   
-  extension [Self <: ASPxClientDocumentPreviewTab](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDocumentPreviewTab] (val x: Self) extends AnyVal {
     
     inline def setActive(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutObservable<boolean> */ Any

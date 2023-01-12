@@ -17,7 +17,8 @@ object DragPositions {
     __obj.asInstanceOf[DragPositions]
   }
   
-  extension [Self <: DragPositions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragPositions] (val x: Self) extends AnyVal {
     
     inline def setClient(value: ClientPositions): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

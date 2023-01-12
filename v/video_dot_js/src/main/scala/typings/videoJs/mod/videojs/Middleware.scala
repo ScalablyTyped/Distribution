@@ -21,7 +21,8 @@ object Middleware {
     __obj.asInstanceOf[Middleware]
   }
   
-  extension [Self <: Middleware](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Middleware] (val x: Self) extends AnyVal {
     
     inline def setSetSource(value: (SourceObject, js.Function2[/* err */ Any, /* src */ SourceObject, Unit]) => Unit): Self = StObject.set(x, "setSource", js.Any.fromFunction2(value))
   }

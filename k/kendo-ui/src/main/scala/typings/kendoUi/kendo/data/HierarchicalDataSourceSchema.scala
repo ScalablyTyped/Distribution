@@ -18,7 +18,8 @@ object HierarchicalDataSourceSchema {
     __obj.asInstanceOf[HierarchicalDataSourceSchema]
   }
   
-  extension [Self <: HierarchicalDataSourceSchema](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HierarchicalDataSourceSchema] (val x: Self) extends AnyVal {
     
     inline def setModel(value: HierarchicalDataSourceSchemaModel): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[MultiaddrObject]
     }
     
-    extension [Self <: MultiaddrObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultiaddrObject] (val x: Self) extends AnyVal {
       
       inline def setFamily(value: `4` | `6`): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
       
@@ -56,7 +57,8 @@ object distSrcTypesMod {
       __obj.asInstanceOf[Protocol]
     }
     
-    extension [Self <: Protocol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Protocol] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

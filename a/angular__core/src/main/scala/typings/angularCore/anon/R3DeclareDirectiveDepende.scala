@@ -33,7 +33,8 @@ object R3DeclareDirectiveDepende {
     __obj.asInstanceOf[R3DeclareDirectiveDepende]
   }
   
-  extension [Self <: R3DeclareDirectiveDepende](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3DeclareDirectiveDepende] (val x: Self) extends AnyVal {
     
     inline def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
     

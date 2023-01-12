@@ -418,7 +418,8 @@ object buildEsmManagerMod {
       __obj.asInstanceOf[ManagerOptions]
     }
     
-    extension [Self <: ManagerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagerOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoConnect(value: Boolean): Self = StObject.set(x, "autoConnect", value.asInstanceOf[js.Any])
       

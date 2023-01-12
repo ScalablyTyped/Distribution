@@ -20,7 +20,8 @@ object PartialResultParams {
     __obj.asInstanceOf[PartialResultParams]
   }
   
-  extension [Self <: PartialResultParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialResultParams] (val x: Self) extends AnyVal {
     
     inline def setPartialResultToken(value: ProgressToken): Self = StObject.set(x, "partialResultToken", value.asInstanceOf[js.Any])
     

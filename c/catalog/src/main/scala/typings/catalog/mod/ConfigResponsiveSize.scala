@@ -19,7 +19,8 @@ object ConfigResponsiveSize {
     __obj.asInstanceOf[ConfigResponsiveSize]
   }
   
-  extension [Self <: ConfigResponsiveSize](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigResponsiveSize] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     

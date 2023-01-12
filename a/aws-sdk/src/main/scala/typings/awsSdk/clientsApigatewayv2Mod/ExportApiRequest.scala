@@ -43,7 +43,8 @@ object ExportApiRequest {
     __obj.asInstanceOf[ExportApiRequest]
   }
   
-  extension [Self <: ExportApiRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportApiRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

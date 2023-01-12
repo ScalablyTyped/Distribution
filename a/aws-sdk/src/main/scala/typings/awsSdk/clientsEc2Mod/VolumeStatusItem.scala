@@ -48,7 +48,8 @@ object VolumeStatusItem {
     __obj.asInstanceOf[VolumeStatusItem]
   }
   
-  extension [Self <: VolumeStatusItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeStatusItem] (val x: Self) extends AnyVal {
     
     inline def setActions(value: VolumeStatusActionsList): Self = StObject.set(x, "Actions", value.asInstanceOf[js.Any])
     

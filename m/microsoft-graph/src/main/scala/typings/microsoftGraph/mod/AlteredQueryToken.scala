@@ -22,7 +22,8 @@ object AlteredQueryToken {
     __obj.asInstanceOf[AlteredQueryToken]
   }
   
-  extension [Self <: AlteredQueryToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlteredQueryToken] (val x: Self) extends AnyVal {
     
     inline def setLength(value: NullableOption[Double]): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

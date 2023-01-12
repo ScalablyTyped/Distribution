@@ -23,7 +23,8 @@ object EntityActionSymbol {
     __obj.asInstanceOf[EntityActionSymbol]
   }
   
-  extension [Self <: EntityActionSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityActionSymbol] (val x: Self) extends AnyVal {
     
     inline def setIsAttach(value: Boolean): Self = StObject.set(x, "isAttach", value.asInstanceOf[js.Any])
     

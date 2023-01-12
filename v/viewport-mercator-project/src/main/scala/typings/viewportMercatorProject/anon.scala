@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[Altitude]
     }
     
-    extension [Self <: Altitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Altitude] (val x: Self) extends AnyVal {
       
       inline def setAltitude(value: Double): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object anon {
       __obj.asInstanceOf[BaseDistanceScalesInputsc]
     }
     
-    extension [Self <: BaseDistanceScalesInputsc](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDistanceScalesInputsc] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[BaseDistanceScalesInputzo]
     }
     
-    extension [Self <: BaseDistanceScalesInputzo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseDistanceScalesInputzo] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -129,7 +132,8 @@ object anon {
       __obj.asInstanceOf[BaseHighPrecisionDistance]
     }
     
-    extension [Self <: BaseHighPrecisionDistance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHighPrecisionDistance] (val x: Self) extends AnyVal {
       
       inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
       
@@ -161,7 +165,8 @@ object anon {
       __obj.asInstanceOf[BaseHighPrecisionDistanceHighPrecision]
     }
     
-    extension [Self <: BaseHighPrecisionDistanceHighPrecision](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseHighPrecisionDistanceHighPrecision] (val x: Self) extends AnyVal {
       
       inline def setHighPrecision(value: `true`): Self = StObject.set(x, "highPrecision", value.asInstanceOf[js.Any])
       
@@ -190,7 +195,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -221,7 +227,8 @@ object anon {
       __obj.asInstanceOf[Bounds]
     }
     
-    extension [Self <: Bounds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bounds] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: typings.viewportMercatorProject.mod.Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -250,7 +257,8 @@ object anon {
       __obj.asInstanceOf[Latitude]
     }
     
-    extension [Self <: Latitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Latitude] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
     }
@@ -269,7 +277,8 @@ object anon {
       __obj.asInstanceOf[LngLat]
     }
     
-    extension [Self <: LngLat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LngLat] (val x: Self) extends AnyVal {
       
       inline def setLngLat(value: Coordinates): Self = StObject.set(x, "lngLat", value.asInstanceOf[js.Any])
       
@@ -290,7 +299,8 @@ object anon {
       __obj.asInstanceOf[Offset]
     }
     
-    extension [Self <: Offset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Offset] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: Coordinates): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

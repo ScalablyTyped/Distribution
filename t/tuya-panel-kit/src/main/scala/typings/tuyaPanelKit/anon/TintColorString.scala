@@ -15,7 +15,8 @@ object TintColorString {
     __obj.asInstanceOf[TintColorString]
   }
   
-  extension [Self <: TintColorString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TintColorString] (val x: Self) extends AnyVal {
     
     inline def setTintColor(value: String): Self = StObject.set(x, "tintColor", value.asInstanceOf[js.Any])
   }

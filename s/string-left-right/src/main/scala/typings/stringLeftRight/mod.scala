@@ -47,7 +47,8 @@ object mod {
       __obj.asInstanceOf[Opts]
     }
     
-    extension [Self <: Opts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Opts] (val x: Self) extends AnyVal {
       
       inline def setI(value: Boolean): Self = StObject.set(x, "i", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object mod {
       __obj.asInstanceOf[SeqOutput]
     }
     
-    extension [Self <: SeqOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SeqOutput] (val x: Self) extends AnyVal {
       
       inline def setGaps(value: js.Array[js.Tuple2[Double, Double]]): Self = StObject.set(x, "gaps", value.asInstanceOf[js.Any])
       

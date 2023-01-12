@@ -67,7 +67,8 @@ object CsvUpload {
     __obj.asInstanceOf[CsvUpload]
   }
   
-  extension [Self <: CsvUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CsvUpload] (val x: Self) extends AnyVal {
     
     inline def setAppend(value: Record[String, String | Double] => CsvUpload): Self = StObject.set(x, "append", js.Any.fromFunction1(value))
     

@@ -23,7 +23,8 @@ object GetCommentReactionsOutput {
     __obj.asInstanceOf[GetCommentReactionsOutput]
   }
   
-  extension [Self <: GetCommentReactionsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCommentReactionsOutput] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "nextToken", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EndPoint {
     __obj.asInstanceOf[EndPoint]
   }
   
-  extension [Self <: EndPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EndPoint] (val x: Self) extends AnyVal {
     
     inline def setKinesisStreamConfig(value: KinesisStreamConfig): Self = StObject.set(x, "KinesisStreamConfig", value.asInstanceOf[js.Any])
     

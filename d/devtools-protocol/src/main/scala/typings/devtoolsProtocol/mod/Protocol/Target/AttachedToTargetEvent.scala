@@ -22,7 +22,8 @@ object AttachedToTargetEvent {
     __obj.asInstanceOf[AttachedToTargetEvent]
   }
   
-  extension [Self <: AttachedToTargetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachedToTargetEvent] (val x: Self) extends AnyVal {
     
     inline def setSessionId(value: SessionID): Self = StObject.set(x, "sessionId", value.asInstanceOf[js.Any])
     

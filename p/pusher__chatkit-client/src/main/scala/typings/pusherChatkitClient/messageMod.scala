@@ -43,7 +43,8 @@ object messageMod {
       __obj.asInstanceOf[AttachmentPayload]
     }
     
-    extension [Self <: AttachmentPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AttachmentPayload] (val x: Self) extends AnyVal {
       
       inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object messageMod {
       __obj.asInstanceOf[FilePayload]
     }
     
-    extension [Self <: FilePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePayload] (val x: Self) extends AnyVal {
       
       inline def setCustomData(value: Any): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
       
@@ -118,7 +120,8 @@ object messageMod {
       __obj.asInstanceOf[InlinePayload]
     }
     
-    extension [Self <: InlinePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InlinePayload] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -143,7 +146,8 @@ object messageMod {
       __obj.asInstanceOf[MessageFromPusher]
     }
     
-    extension [Self <: MessageFromPusher](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageFromPusher] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -170,7 +174,8 @@ object messageMod {
       __obj.asInstanceOf[MessagePart]
     }
     
-    extension [Self <: MessagePart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessagePart] (val x: Self) extends AnyVal {
       
       inline def setPartType(value: `inline` | url | attachment): Self = StObject.set(x, "partType", value.asInstanceOf[js.Any])
       
@@ -239,7 +244,8 @@ object messageMod {
       __obj.asInstanceOf[PusherMessage]
     }
     
-    extension [Self <: PusherMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PusherMessage] (val x: Self) extends AnyVal {
       
       inline def setCreatedAt(value: js.Date): Self = StObject.set(x, "createdAt", value.asInstanceOf[js.Any])
       
@@ -300,7 +306,8 @@ object messageMod {
       __obj.asInstanceOf[UrlPayload]
     }
     
-    extension [Self <: UrlPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlPayload] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       

@@ -86,7 +86,8 @@ object DescribeGlobalSObjectResult {
     __obj.asInstanceOf[DescribeGlobalSObjectResult]
   }
   
-  extension [Self <: DescribeGlobalSObjectResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeGlobalSObjectResult] (val x: Self) extends AnyVal {
     
     inline def setActivateable(value: Boolean): Self = StObject.set(x, "activateable", value.asInstanceOf[js.Any])
     

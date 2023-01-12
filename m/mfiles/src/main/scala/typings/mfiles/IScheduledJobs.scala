@@ -17,7 +17,8 @@ object IScheduledJobs {
     __obj.asInstanceOf[IScheduledJobs]
   }
   
-  extension [Self <: IScheduledJobs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IScheduledJobs] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

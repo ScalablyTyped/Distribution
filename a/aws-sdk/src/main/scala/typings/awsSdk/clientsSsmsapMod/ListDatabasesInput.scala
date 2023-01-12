@@ -33,7 +33,8 @@ object ListDatabasesInput {
     __obj.asInstanceOf[ListDatabasesInput]
   }
   
-  extension [Self <: ListDatabasesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDatabasesInput] (val x: Self) extends AnyVal {
     
     inline def setApplicationId(value: ApplicationId): Self = StObject.set(x, "ApplicationId", value.asInstanceOf[js.Any])
     

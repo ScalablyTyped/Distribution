@@ -54,7 +54,8 @@ object SketchMSPageLayer {
     __obj.asInstanceOf[SketchMSPageLayer]
   }
   
-  extension [Self <: SketchMSPageLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSPageLayer] (val x: Self) extends AnyVal {
     
     inline def setHasClickThrough(value: Boolean): Self = StObject.set(x, "hasClickThrough", value.asInstanceOf[js.Any])
     

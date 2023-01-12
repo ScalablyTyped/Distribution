@@ -16,7 +16,8 @@ object `14` {
     __obj.asInstanceOf[`14`]
   }
   
-  extension [Self <: `14`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `14`] (val x: Self) extends AnyVal {
     
     inline def setCurrent(value: HTMLElement): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
     

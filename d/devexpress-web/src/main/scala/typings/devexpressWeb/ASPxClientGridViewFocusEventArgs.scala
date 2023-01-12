@@ -23,7 +23,8 @@ object ASPxClientGridViewFocusEventArgs {
     __obj.asInstanceOf[ASPxClientGridViewFocusEventArgs]
   }
   
-  extension [Self <: ASPxClientGridViewFocusEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientGridViewFocusEventArgs] (val x: Self) extends AnyVal {
     
     inline def setIsChangedOnServer(value: Boolean): Self = StObject.set(x, "isChangedOnServer", value.asInstanceOf[js.Any])
   }

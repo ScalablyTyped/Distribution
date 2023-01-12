@@ -25,7 +25,8 @@ object ValidateMessageRequest {
     __obj.asInstanceOf[ValidateMessageRequest]
   }
   
-  extension [Self <: ValidateMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidateMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
     

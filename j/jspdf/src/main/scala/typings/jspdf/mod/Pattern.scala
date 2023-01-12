@@ -17,7 +17,8 @@ object Pattern {
     __obj.asInstanceOf[Pattern]
   }
   
-  extension [Self <: Pattern](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
     
     inline def setGState(value: GState): Self = StObject.set(x, "gState", value.asInstanceOf[js.Any])
     

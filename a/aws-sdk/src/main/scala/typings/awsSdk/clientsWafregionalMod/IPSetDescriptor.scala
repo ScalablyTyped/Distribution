@@ -23,7 +23,8 @@ object IPSetDescriptor {
     __obj.asInstanceOf[IPSetDescriptor]
   }
   
-  extension [Self <: IPSetDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPSetDescriptor] (val x: Self) extends AnyVal {
     
     inline def setType(value: IPSetDescriptorType): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
     

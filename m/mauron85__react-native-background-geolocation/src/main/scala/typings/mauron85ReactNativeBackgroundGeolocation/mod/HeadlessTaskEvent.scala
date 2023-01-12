@@ -19,7 +19,8 @@ object HeadlessTaskEvent {
     __obj.asInstanceOf[HeadlessTaskEvent]
   }
   
-  extension [Self <: HeadlessTaskEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HeadlessTaskEvent] (val x: Self) extends AnyVal {
     
     inline def setName(value: HeadlessTaskEventName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

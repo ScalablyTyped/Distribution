@@ -83,7 +83,8 @@ object SearchRequest {
     __obj.asInstanceOf[SearchRequest]
   }
   
-  extension [Self <: SearchRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchRequest] (val x: Self) extends AnyVal {
     
     inline def setCursor(value: Cursor): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     

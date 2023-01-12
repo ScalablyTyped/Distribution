@@ -39,7 +39,8 @@ object UIkitStickyOptions {
     __obj.asInstanceOf[UIkitStickyOptions]
   }
   
-  extension [Self <: UIkitStickyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitStickyOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

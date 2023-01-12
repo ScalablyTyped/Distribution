@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[NoIsPseudoSelector]
     }
     
-    extension [Self <: NoIsPseudoSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoIsPseudoSelector] (val x: Self) extends AnyVal {
       
       inline def setNoIsPseudoSelector(value: Boolean): Self = StObject.set(x, "noIsPseudoSelector", value.asInstanceOf[js.Any])
     }

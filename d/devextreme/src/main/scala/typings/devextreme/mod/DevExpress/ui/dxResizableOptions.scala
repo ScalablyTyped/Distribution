@@ -72,7 +72,8 @@ object dxResizableOptions {
     __obj.asInstanceOf[dxResizableOptions]
   }
   
-  extension [Self <: dxResizableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxResizableOptions] (val x: Self) extends AnyVal {
     
     inline def setArea(value: String | UserDefinedElement[Element]): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
     

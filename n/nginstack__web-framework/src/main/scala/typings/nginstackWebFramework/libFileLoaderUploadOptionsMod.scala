@@ -60,7 +60,8 @@ object libFileLoaderUploadOptionsMod {
       __obj.asInstanceOf[UploadOptions]
     }
     
-    extension [Self <: UploadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UploadOptions] (val x: Self) extends AnyVal {
       
       inline def setAccept(value: js.Array[String]): Self = StObject.set(x, "accept", value.asInstanceOf[js.Any])
       

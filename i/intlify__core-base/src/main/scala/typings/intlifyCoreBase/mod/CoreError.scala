@@ -19,7 +19,8 @@ object CoreError {
     __obj.asInstanceOf[CoreError]
   }
   
-  extension [Self <: CoreError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CoreErrorCodes): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
   }

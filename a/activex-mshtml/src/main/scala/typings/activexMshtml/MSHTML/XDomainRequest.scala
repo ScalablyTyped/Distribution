@@ -19,7 +19,8 @@ object XDomainRequest {
     __obj.asInstanceOf[XDomainRequest]
   }
   
-  extension [Self <: XDomainRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDomainRequest] (val x: Self) extends AnyVal {
     
     inline def setConstructor(value: Any): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
     

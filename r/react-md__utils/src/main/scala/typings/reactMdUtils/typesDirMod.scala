@@ -39,7 +39,8 @@ object typesDirMod {
       __obj.asInstanceOf[DirProps]
     }
     
-    extension [Self <: DirProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object typesDirMod {
       __obj.asInstanceOf[WritingDirectionContext]
     }
     
-    extension [Self <: WritingDirectionContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WritingDirectionContext] (val x: Self) extends AnyVal {
       
       inline def setDir(value: WritingDirection): Self = StObject.set(x, "dir", value.asInstanceOf[js.Any])
       

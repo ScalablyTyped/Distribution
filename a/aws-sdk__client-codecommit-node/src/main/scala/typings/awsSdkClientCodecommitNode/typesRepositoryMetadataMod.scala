@@ -65,7 +65,8 @@ object typesRepositoryMetadataMod {
       __obj.asInstanceOf[RepositoryMetadata]
     }
     
-    extension [Self <: RepositoryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RepositoryMetadata] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -132,7 +133,8 @@ object typesRepositoryMetadataMod {
       __obj.asInstanceOf[UnmarshalledRepositoryMetadata]
     }
     
-    extension [Self <: UnmarshalledRepositoryMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledRepositoryMetadata] (val x: Self) extends AnyVal {
       
       inline def setCreationDate(value: js.Date): Self = StObject.set(x, "creationDate", value.asInstanceOf[js.Any])
       

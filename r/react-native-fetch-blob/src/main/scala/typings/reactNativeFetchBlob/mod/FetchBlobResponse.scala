@@ -89,7 +89,8 @@ object FetchBlobResponse {
     __obj.asInstanceOf[FetchBlobResponse]
   }
   
-  extension [Self <: FetchBlobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FetchBlobResponse] (val x: Self) extends AnyVal {
     
     inline def setBase64(value: () => Any): Self = StObject.set(x, "base64", js.Any.fromFunction0(value))
     

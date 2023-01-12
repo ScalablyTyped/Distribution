@@ -27,7 +27,8 @@ object typesMetricsConfigurationMod {
       __obj.asInstanceOf[MetricsConfiguration]
     }
     
-    extension [Self <: MetricsConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricsConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: MetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object typesMetricsConfigurationMod {
       __obj.asInstanceOf[UnmarshalledMetricsConfiguration]
     }
     
-    extension [Self <: UnmarshalledMetricsConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledMetricsConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: UnmarshalledMetricsFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
       

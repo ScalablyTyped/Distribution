@@ -67,7 +67,8 @@ object distLibMultiCommandMod {
       __obj.asInstanceOf[RedisMultiQueuedCommand]
     }
     
-    extension [Self <: RedisMultiQueuedCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedisMultiQueuedCommand] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: RedisCommandArguments): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

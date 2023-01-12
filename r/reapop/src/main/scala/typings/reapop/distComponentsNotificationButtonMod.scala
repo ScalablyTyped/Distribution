@@ -35,7 +35,8 @@ object distComponentsNotificationButtonMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setButton(value: NotificationButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

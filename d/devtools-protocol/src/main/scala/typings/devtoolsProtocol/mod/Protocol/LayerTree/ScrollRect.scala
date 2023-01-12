@@ -28,7 +28,8 @@ object ScrollRect {
     __obj.asInstanceOf[ScrollRect]
   }
   
-  extension [Self <: ScrollRect](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollRect] (val x: Self) extends AnyVal {
     
     inline def setRect(value: Rect): Self = StObject.set(x, "rect", value.asInstanceOf[js.Any])
     

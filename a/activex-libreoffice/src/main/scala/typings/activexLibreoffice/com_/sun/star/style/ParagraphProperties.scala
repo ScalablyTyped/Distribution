@@ -323,7 +323,8 @@ object ParagraphProperties {
     __obj.asInstanceOf[ParagraphProperties]
   }
   
-  extension [Self <: ParagraphProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphProperties] (val x: Self) extends AnyVal {
     
     inline def setBorderDistance(value: Double): Self = StObject.set(x, "BorderDistance", value.asInstanceOf[js.Any])
     

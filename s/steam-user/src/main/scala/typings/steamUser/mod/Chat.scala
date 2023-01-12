@@ -33,7 +33,8 @@ object Chat {
     __obj.asInstanceOf[Chat]
   }
   
-  extension [Self <: Chat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Chat] (val x: Self) extends AnyVal {
     
     inline def setInvisibleToFriends(value: Boolean): Self = StObject.set(x, "invisibleToFriends", value.asInstanceOf[js.Any])
     

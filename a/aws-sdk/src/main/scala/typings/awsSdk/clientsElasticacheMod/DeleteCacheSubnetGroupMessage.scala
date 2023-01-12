@@ -18,7 +18,8 @@ object DeleteCacheSubnetGroupMessage {
     __obj.asInstanceOf[DeleteCacheSubnetGroupMessage]
   }
   
-  extension [Self <: DeleteCacheSubnetGroupMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteCacheSubnetGroupMessage] (val x: Self) extends AnyVal {
     
     inline def setCacheSubnetGroupName(value: String): Self = StObject.set(x, "CacheSubnetGroupName", value.asInstanceOf[js.Any])
   }

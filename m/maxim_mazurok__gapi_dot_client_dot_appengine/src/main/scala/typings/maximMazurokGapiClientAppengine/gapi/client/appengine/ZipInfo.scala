@@ -22,7 +22,8 @@ object ZipInfo {
     __obj.asInstanceOf[ZipInfo]
   }
   
-  extension [Self <: ZipInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipInfo] (val x: Self) extends AnyVal {
     
     inline def setFilesCount(value: Double): Self = StObject.set(x, "filesCount", value.asInstanceOf[js.Any])
     

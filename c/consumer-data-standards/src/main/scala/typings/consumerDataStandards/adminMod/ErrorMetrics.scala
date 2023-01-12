@@ -26,7 +26,8 @@ object ErrorMetrics {
     __obj.asInstanceOf[ErrorMetrics]
   }
   
-  extension [Self <: ErrorMetrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorMetrics] (val x: Self) extends AnyVal {
     
     inline def setCurrentDay(value: Double): Self = StObject.set(x, "currentDay", value.asInstanceOf[js.Any])
     

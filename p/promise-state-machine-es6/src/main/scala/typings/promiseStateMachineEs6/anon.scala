@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Events[State, Transitions]]
     }
     
-    extension [Self <: Events[?, ?], State, Transitions /* <: String */](x: Self & (Events[State, Transitions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events[?, ?], State, Transitions /* <: String */] (val x: Self & (Events[State, Transitions])) extends AnyVal {
       
       inline def setEvents(value: typings.promiseStateMachineEs6.mod.Events[State, Transitions]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -40,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Replacer[State, Transitions]]
     }
     
-    extension [Self <: Replacer[?, ?], State, Transitions](x: Self & (Replacer[State, Transitions])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replacer[?, ?], State, Transitions] (val x: Self & (Replacer[State, Transitions])) extends AnyVal {
       
       inline def setReplacer(value: DotNode[State, Transitions] => DotNodeStringified): Self = StObject.set(x, "replacer", js.Any.fromFunction1(value))
     }

@@ -34,7 +34,8 @@ object GlobalPolicy {
     __obj.asInstanceOf[GlobalPolicy]
   }
   
-  extension [Self <: GlobalPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalPolicy] (val x: Self) extends AnyVal {
     
     inline def setAllowOnlyPolicyNetworksToAutoconnect(value: Boolean): Self = StObject.set(x, "AllowOnlyPolicyNetworksToAutoconnect", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object GetOperatorListParameters {
     __obj.asInstanceOf[GetOperatorListParameters]
   }
   
-  extension [Self <: GetOperatorListParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetOperatorListParameters] (val x: Self) extends AnyVal {
     
     inline def setAnnotationMode(value: Double): Self = StObject.set(x, "annotationMode", value.asInstanceOf[js.Any])
     

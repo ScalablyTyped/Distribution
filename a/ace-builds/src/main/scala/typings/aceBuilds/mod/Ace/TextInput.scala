@@ -15,7 +15,8 @@ object TextInput {
     __obj.asInstanceOf[TextInput]
   }
   
-  extension [Self <: TextInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextInput] (val x: Self) extends AnyVal {
     
     inline def setResetSelection(value: () => Unit): Self = StObject.set(x, "resetSelection", js.Any.fromFunction0(value))
   }

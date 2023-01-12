@@ -18,7 +18,8 @@ object GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3beta1ResponseMessageConversationSuccess] (val x: Self) extends AnyVal {
     
     inline def setMetadata(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

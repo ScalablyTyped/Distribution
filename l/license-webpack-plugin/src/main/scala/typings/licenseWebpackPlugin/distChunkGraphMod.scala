@@ -25,7 +25,8 @@ object distChunkGraphMod {
       __obj.asInstanceOf[ChunkGraph]
     }
     
-    extension [Self <: ChunkGraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChunkGraph] (val x: Self) extends AnyVal {
       
       inline def setGetChunkEntryModulesIterable(value: WebpackChunk => IterableIterator[WebpackChunkModule]): Self = StObject.set(x, "getChunkEntryModulesIterable", js.Any.fromFunction1(value))
       

@@ -54,7 +54,8 @@ object DialogCustomProps {
     __obj.asInstanceOf[DialogCustomProps]
   }
   
-  extension [Self <: DialogCustomProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogCustomProps] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Any): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

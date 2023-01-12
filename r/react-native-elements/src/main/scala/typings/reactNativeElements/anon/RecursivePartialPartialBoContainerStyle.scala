@@ -24,7 +24,8 @@ object RecursivePartialPartialBoContainerStyle {
     __obj.asInstanceOf[RecursivePartialPartialBoContainerStyle]
   }
   
-  extension [Self <: RecursivePartialPartialBoContainerStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecursivePartialPartialBoContainerStyle] (val x: Self) extends AnyVal {
     
     inline def setContainerStyle(value: RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
     

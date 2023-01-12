@@ -180,7 +180,8 @@ object distCoreHistoryHandlerMod {
       __obj.asInstanceOf[HistoryAdapter]
     }
     
-    extension [Self <: HistoryAdapter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryAdapter] (val x: Self) extends AnyVal {
       
       inline def setPushState(value: (HistoryState, String, String) => Unit): Self = StObject.set(x, "pushState", js.Any.fromFunction3(value))
       
@@ -201,7 +202,8 @@ object distCoreHistoryHandlerMod {
       __obj.asInstanceOf[HistoryHandlerEventMap]
     }
     
-    extension [Self <: HistoryHandlerEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryHandlerEventMap] (val x: Self) extends AnyVal {
       
       inline def setBuildState(value: BuildStateEvent): Self = StObject.set(x, "buildState", value.asInstanceOf[js.Any])
       
@@ -227,7 +229,8 @@ object distCoreHistoryHandlerMod {
       __obj.asInstanceOf[HistoryState]
     }
     
-    extension [Self <: HistoryState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HistoryState] (val x: Self) extends AnyVal {
       
       inline def setHref(value: String): Self = StObject.set(x, "href", value.asInstanceOf[js.Any])
       
@@ -257,7 +260,8 @@ object distCoreHistoryHandlerMod {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setHistory(value: HistoryMode): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
         
@@ -282,7 +286,8 @@ object distCoreHistoryHandlerMod {
         __obj.asInstanceOf[Payload]
       }
       
-      extension [Self <: Payload](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Payload] (val x: Self) extends AnyVal {
         
         inline def setPostGet(value: Boolean): Self = StObject.set(x, "postGet", value.asInstanceOf[js.Any])
         

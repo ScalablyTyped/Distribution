@@ -18,7 +18,8 @@ object OpsResultAttribute {
     __obj.asInstanceOf[OpsResultAttribute]
   }
   
-  extension [Self <: OpsResultAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpsResultAttribute] (val x: Self) extends AnyVal {
     
     inline def setTypeName(value: OpsDataTypeName): Self = StObject.set(x, "TypeName", value.asInstanceOf[js.Any])
   }

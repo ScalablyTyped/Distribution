@@ -71,7 +71,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setBottom(value: String): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
           
@@ -159,7 +160,8 @@ object SemanticUI {
           __obj.asInstanceOf[Impl]
         }
         
-        extension [Self <: Impl](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
           
           inline def setContainer(value: String): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
           
@@ -383,7 +385,8 @@ object SemanticUI {
         __obj.asInstanceOf[Impl]
       }
       
-      extension [Self <: Impl](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Impl] (val x: Self) extends AnyVal {
         
         inline def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])
         

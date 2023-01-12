@@ -20,7 +20,8 @@ object IArguments {
     __obj.asInstanceOf[IArguments]
   }
   
-  extension [Self <: IArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IArguments] (val x: Self) extends AnyVal {
     
     inline def setCallee(value: Function): Self = StObject.set(x, "callee", value.asInstanceOf[js.Any])
     

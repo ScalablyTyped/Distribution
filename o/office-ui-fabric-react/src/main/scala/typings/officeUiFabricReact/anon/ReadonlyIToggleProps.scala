@@ -502,7 +502,8 @@ object ReadonlyIToggleProps {
     __obj.asInstanceOf[ReadonlyIToggleProps]
   }
   
-  extension [Self <: ReadonlyIToggleProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyIToggleProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

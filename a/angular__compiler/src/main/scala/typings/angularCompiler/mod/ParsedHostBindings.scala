@@ -28,7 +28,8 @@ object ParsedHostBindings {
     __obj.asInstanceOf[ParsedHostBindings]
   }
   
-  extension [Self <: ParsedHostBindings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedHostBindings] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: StringDictionary[Expression]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

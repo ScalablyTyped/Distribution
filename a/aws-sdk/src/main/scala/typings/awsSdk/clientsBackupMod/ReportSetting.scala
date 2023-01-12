@@ -28,7 +28,8 @@ object ReportSetting {
     __obj.asInstanceOf[ReportSetting]
   }
   
-  extension [Self <: ReportSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportSetting] (val x: Self) extends AnyVal {
     
     inline def setFrameworkArns(value: stringList): Self = StObject.set(x, "FrameworkArns", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object Roadview {
     __obj.asInstanceOf[Roadview]
   }
   
-  extension [Self <: Roadview](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Roadview] (val x: Self) extends AnyVal {
     
     inline def setGetPanoId(value: () => Double): Self = StObject.set(x, "getPanoId", js.Any.fromFunction0(value))
     

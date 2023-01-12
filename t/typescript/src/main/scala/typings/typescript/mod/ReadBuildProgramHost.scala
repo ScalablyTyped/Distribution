@@ -23,7 +23,8 @@ object ReadBuildProgramHost {
     __obj.asInstanceOf[ReadBuildProgramHost]
   }
   
-  extension [Self <: ReadBuildProgramHost](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadBuildProgramHost] (val x: Self) extends AnyVal {
     
     inline def setGetCurrentDirectory(value: () => java.lang.String): Self = StObject.set(x, "getCurrentDirectory", js.Any.fromFunction0(value))
     

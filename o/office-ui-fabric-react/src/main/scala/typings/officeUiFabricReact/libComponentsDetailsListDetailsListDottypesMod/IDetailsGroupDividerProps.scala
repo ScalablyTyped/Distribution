@@ -52,7 +52,8 @@ object IDetailsGroupDividerProps {
     __obj.asInstanceOf[IDetailsGroupDividerProps]
   }
   
-  extension [Self <: IDetailsGroupDividerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetailsGroupDividerProps] (val x: Self) extends AnyVal {
     
     inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
     

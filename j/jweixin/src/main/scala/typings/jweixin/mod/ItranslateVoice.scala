@@ -27,7 +27,8 @@ object ItranslateVoice {
     __obj.asInstanceOf[ItranslateVoice]
   }
   
-  extension [Self <: ItranslateVoice](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItranslateVoice] (val x: Self) extends AnyVal {
     
     inline def setIsShowProgressTips(value: Double): Self = StObject.set(x, "isShowProgressTips", value.asInstanceOf[js.Any])
     

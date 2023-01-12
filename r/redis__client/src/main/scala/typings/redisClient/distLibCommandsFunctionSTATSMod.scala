@@ -43,7 +43,8 @@ object distLibCommandsFunctionSTATSMod {
       __obj.asInstanceOf[FunctionStatsReply]
     }
     
-    extension [Self <: FunctionStatsReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionStatsReply] (val x: Self) extends AnyVal {
       
       inline def setEngines(value: Record[String, FunctionsCount]): Self = StObject.set(x, "engines", value.asInstanceOf[js.Any])
       

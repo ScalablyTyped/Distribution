@@ -23,7 +23,8 @@ object RecommendationJobStoppingConditions {
     __obj.asInstanceOf[RecommendationJobStoppingConditions]
   }
   
-  extension [Self <: RecommendationJobStoppingConditions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecommendationJobStoppingConditions] (val x: Self) extends AnyVal {
     
     inline def setMaxInvocations(value: Integer): Self = StObject.set(x, "MaxInvocations", value.asInstanceOf[js.Any])
     

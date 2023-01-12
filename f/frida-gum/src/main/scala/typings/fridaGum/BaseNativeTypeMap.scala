@@ -60,7 +60,8 @@ object BaseNativeTypeMap {
     __obj.asInstanceOf[BaseNativeTypeMap]
   }
   
-  extension [Self <: BaseNativeTypeMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseNativeTypeMap] (val x: Self) extends AnyVal {
     
     inline def setBool(value: Double): Self = StObject.set(x, "bool", value.asInstanceOf[js.Any])
     

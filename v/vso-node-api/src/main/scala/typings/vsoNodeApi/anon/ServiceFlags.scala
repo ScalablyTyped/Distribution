@@ -29,7 +29,8 @@ object ServiceFlags {
     __obj.asInstanceOf[ServiceFlags]
   }
   
-  extension [Self <: ServiceFlags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceFlags] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: scala.Double): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object PreviousAndNextLocation {
     __obj.asInstanceOf[PreviousAndNextLocation]
   }
   
-  extension [Self <: PreviousAndNextLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PreviousAndNextLocation] (val x: Self) extends AnyVal {
     
     inline def setNextPath(value: NumberOrStringArray): Self = StObject.set(x, "nextPath", value.asInstanceOf[js.Any])
     

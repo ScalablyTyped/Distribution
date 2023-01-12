@@ -64,7 +64,8 @@ object FramedControl {
     __obj.asInstanceOf[FramedControl]
   }
   
-  extension [Self <: FramedControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FramedControl] (val x: Self) extends AnyVal {
     
     inline def setGetContentWindow(value: () => js.Promise[Window]): Self = StObject.set(x, "getContentWindow", js.Any.fromFunction0(value))
     

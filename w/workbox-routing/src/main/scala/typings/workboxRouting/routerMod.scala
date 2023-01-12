@@ -53,7 +53,8 @@ object routerMod {
         __obj.asInstanceOf[FindMatchingRouteOptions]
       }
       
-      extension [Self <: FindMatchingRouteOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindMatchingRouteOptions] (val x: Self) extends AnyVal {
         
         inline def setUrl(value: URL): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
       }
@@ -73,7 +74,8 @@ object routerMod {
         __obj.asInstanceOf[FindMatchingRouteReturn[MatchReturn]]
       }
       
-      extension [Self <: FindMatchingRouteReturn[?], MatchReturn](x: Self & FindMatchingRouteReturn[MatchReturn]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: FindMatchingRouteReturn[?], MatchReturn] (val x: Self & FindMatchingRouteReturn[MatchReturn]) extends AnyVal {
         
         inline def setParams(value: Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
         
@@ -96,7 +98,8 @@ object routerMod {
         __obj.asInstanceOf[HandleRequestOptions]
       }
       
-      extension [Self <: HandleRequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HandleRequestOptions] (val x: Self) extends AnyVal {
         
         inline def setEvent(
           value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ Any

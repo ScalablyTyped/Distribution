@@ -23,7 +23,8 @@ object HistoricalOptions {
     __obj.asInstanceOf[HistoricalOptions]
   }
   
-  extension [Self <: HistoricalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoricalOptions] (val x: Self) extends AnyVal {
     
     inline def setBudgetAdjustmentPeriod(value: AdjustmentPeriod): Self = StObject.set(x, "BudgetAdjustmentPeriod", value.asInstanceOf[js.Any])
     

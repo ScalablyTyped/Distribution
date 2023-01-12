@@ -110,7 +110,8 @@ object GuidanceResponse {
     __obj.asInstanceOf[GuidanceResponse]
   }
   
-  extension [Self <: GuidanceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GuidanceResponse] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Reference): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object TransactionTarget {
     __obj.asInstanceOf[TransactionTarget]
   }
   
-  extension [Self <: TransactionTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactionTarget] (val x: Self) extends AnyVal {
     
     inline def setAddresses(value: js.Array[String]): Self = StObject.set(x, "addresses", value.asInstanceOf[js.Any])
     

@@ -36,7 +36,8 @@ object CacheExpires {
     __obj.asInstanceOf[CacheExpires]
   }
   
-  extension [Self <: CacheExpires](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CacheExpires] (val x: Self) extends AnyVal {
     
     inline def setCacheExpires(value: Double): Self = StObject.set(x, "cacheExpires", value.asInstanceOf[js.Any])
     

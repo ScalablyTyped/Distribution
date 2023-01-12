@@ -45,7 +45,8 @@ object InspectorIssueDetails {
     __obj.asInstanceOf[InspectorIssueDetails]
   }
   
-  extension [Self <: InspectorIssueDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectorIssueDetails] (val x: Self) extends AnyVal {
     
     inline def setAttributionReportingIssueDetails(value: AttributionReportingIssueDetails): Self = StObject.set(x, "attributionReportingIssueDetails", value.asInstanceOf[js.Any])
     

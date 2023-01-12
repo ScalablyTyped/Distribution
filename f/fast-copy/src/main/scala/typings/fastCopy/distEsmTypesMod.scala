@@ -56,7 +56,8 @@ object distEsmTypesMod {
       __obj.asInstanceOf[CreateCopierOptions]
     }
     
-    extension [Self <: CreateCopierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateCopierOptions] (val x: Self) extends AnyVal {
       
       inline def setArray(value: (js.Array[Any], /* state */ State) => js.Array[Any]): Self = StObject.set(x, "array", js.Any.fromFunction2(value))
       

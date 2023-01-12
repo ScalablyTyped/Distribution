@@ -30,7 +30,8 @@ object typesChangeMessageVisibilityBatchRequestEntryMod {
       __obj.asInstanceOf[ChangeMessageVisibilityBatchRequestEntry]
     }
     
-    extension [Self <: ChangeMessageVisibilityBatchRequestEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeMessageVisibilityBatchRequestEntry] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
       

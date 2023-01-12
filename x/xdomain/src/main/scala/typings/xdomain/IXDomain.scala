@@ -62,7 +62,8 @@ object IXDomain {
     __obj.asInstanceOf[IXDomain]
   }
   
-  extension [Self <: IXDomain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXDomain] (val x: Self) extends AnyVal {
     
     inline def setCookies(value: XDomainCookies): Self = StObject.set(x, "cookies", value.asInstanceOf[js.Any])
     

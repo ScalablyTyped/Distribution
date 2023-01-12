@@ -15,7 +15,8 @@ object ILanguageServicesDiagnostics {
     __obj.asInstanceOf[ILanguageServicesDiagnostics]
   }
   
-  extension [Self <: ILanguageServicesDiagnostics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILanguageServicesDiagnostics] (val x: Self) extends AnyVal {
     
     inline def setLog(value: String => Unit): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
   }

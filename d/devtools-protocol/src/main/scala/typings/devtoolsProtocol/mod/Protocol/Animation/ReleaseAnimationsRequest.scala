@@ -18,7 +18,8 @@ object ReleaseAnimationsRequest {
     __obj.asInstanceOf[ReleaseAnimationsRequest]
   }
   
-  extension [Self <: ReleaseAnimationsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseAnimationsRequest] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: js.Array[String]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

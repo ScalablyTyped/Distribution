@@ -17,7 +17,8 @@ object JNotifyInitOptions {
     __obj.asInstanceOf[JNotifyInitOptions]
   }
   
-  extension [Self <: JNotifyInitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JNotifyInitOptions] (val x: Self) extends AnyVal {
     
     inline def setAppendType(value: String): Self = StObject.set(x, "appendType", value.asInstanceOf[js.Any])
     

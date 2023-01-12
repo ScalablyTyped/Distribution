@@ -17,7 +17,8 @@ object GitCommitChanges {
     __obj.asInstanceOf[GitCommitChanges]
   }
   
-  extension [Self <: GitCommitChanges](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitCommitChanges] (val x: Self) extends AnyVal {
     
     inline def setChangeCounts(value: ChangeCountDictionary): Self = StObject.set(x, "changeCounts", value.asInstanceOf[js.Any])
     

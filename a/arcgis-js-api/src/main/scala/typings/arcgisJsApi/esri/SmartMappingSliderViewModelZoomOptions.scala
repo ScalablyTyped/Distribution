@@ -27,7 +27,8 @@ object SmartMappingSliderViewModelZoomOptions {
     __obj.asInstanceOf[SmartMappingSliderViewModelZoomOptions]
   }
   
-  extension [Self <: SmartMappingSliderViewModelZoomOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartMappingSliderViewModelZoomOptions] (val x: Self) extends AnyVal {
     
     inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
     

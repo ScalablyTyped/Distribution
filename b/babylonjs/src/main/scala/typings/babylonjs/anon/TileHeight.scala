@@ -41,7 +41,8 @@ object TileHeight {
     __obj.asInstanceOf[TileHeight]
   }
   
-  extension [Self <: TileHeight](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TileHeight] (val x: Self) extends AnyVal {
     
     inline def setAlignHorizontal(value: Double): Self = StObject.set(x, "alignHorizontal", value.asInstanceOf[js.Any])
     

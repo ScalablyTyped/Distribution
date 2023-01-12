@@ -130,7 +130,8 @@ object TimeRangeSvgProps {
     __obj.asInstanceOf[TimeRangeSvgProps]
   }
   
-  extension [Self <: TimeRangeSvgProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeRangeSvgProps] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: BoxAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

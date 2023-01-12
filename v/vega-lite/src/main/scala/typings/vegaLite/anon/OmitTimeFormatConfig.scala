@@ -23,7 +23,8 @@ object OmitTimeFormatConfig {
     __obj.asInstanceOf[OmitTimeFormatConfig]
   }
   
-  extension [Self <: OmitTimeFormatConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitTimeFormatConfig] (val x: Self) extends AnyVal {
     
     inline def setConfig(value: typings.vegaLite.buildSrcConfigMod.Config[ExprRef | SignalRef]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
     

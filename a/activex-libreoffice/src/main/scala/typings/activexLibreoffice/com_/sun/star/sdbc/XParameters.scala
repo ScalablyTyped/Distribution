@@ -272,7 +272,8 @@ object XParameters {
     __obj.asInstanceOf[XParameters]
   }
   
-  extension [Self <: XParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XParameters] (val x: Self) extends AnyVal {
     
     inline def setClearParameters(value: () => Unit): Self = StObject.set(x, "clearParameters", js.Any.fromFunction0(value))
     

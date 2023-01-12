@@ -25,7 +25,8 @@ object Impulse {
     __obj.asInstanceOf[Impulse]
   }
   
-  extension [Self <: Impulse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Impulse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

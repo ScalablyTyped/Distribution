@@ -23,7 +23,8 @@ object OutboundConnectionStatus {
     __obj.asInstanceOf[OutboundConnectionStatus]
   }
   
-  extension [Self <: OutboundConnectionStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutboundConnectionStatus] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ConnectionStatusMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

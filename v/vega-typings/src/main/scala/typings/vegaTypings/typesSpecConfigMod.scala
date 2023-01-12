@@ -364,7 +364,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[AxisConfig]
     }
     
-    extension [Self <: AxisConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisConfig] (val x: Self) extends AnyVal {
       
       inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
@@ -881,7 +882,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[BaseLegendLayout]
     }
     
-    extension [Self <: BaseLegendLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseLegendLayout] (val x: Self) extends AnyVal {
       
       inline def setAnchor(value: TitleAnchor | SignalRef): Self = StObject.set(x, "anchor", value.asInstanceOf[js.Any])
       
@@ -992,7 +994,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setArc(value: MarkConfig): Self = StObject.set(x, "arc", value.asInstanceOf[js.Any])
       
@@ -1617,7 +1620,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[LegendConfig]
     }
     
-    extension [Self <: LegendConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendConfig] (val x: Self) extends AnyVal {
       
       inline def setAria(
         value: (Exclude[js.UndefOr[Boolean], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[Boolean]]
@@ -2095,7 +2099,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[LegendLayout]
     }
     
-    extension [Self <: LegendLayout](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendLayout] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: BaseLegendLayout): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -2525,7 +2530,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[MarkConfig]
     }
     
-    extension [Self <: MarkConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MarkConfig] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: Align | SignalRef): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -2993,7 +2999,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[ProjectionConfig]
     }
     
-    extension [Self <: ProjectionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProjectionConfig] (val x: Self) extends AnyVal {
       
       inline def setCenter(
         value: (Exclude[
@@ -3260,7 +3267,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[RangeConfig]
     }
     
-    extension [Self <: RangeConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RangeConfig] (val x: Self) extends AnyVal {
       
       inline def setCategory(value: RangeScheme | js.Array[Color]): Self = StObject.set(x, "category", value.asInstanceOf[js.Any])
       
@@ -3449,7 +3457,8 @@ object typesSpecConfigMod {
       __obj.asInstanceOf[TitleConfig]
     }
     
-    extension [Self <: TitleConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TitleConfig] (val x: Self) extends AnyVal {
       
       inline def setAlign(
         value: (Exclude[js.UndefOr[AlignValue], ScaledValueRef[Any] | NumericValueRef | ColorValueRef]) | KeepSignal[js.UndefOr[AlignValue]]

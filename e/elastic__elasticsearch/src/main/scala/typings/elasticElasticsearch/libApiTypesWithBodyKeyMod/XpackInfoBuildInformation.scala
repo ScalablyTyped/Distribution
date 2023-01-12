@@ -17,7 +17,8 @@ object XpackInfoBuildInformation {
     __obj.asInstanceOf[XpackInfoBuildInformation]
   }
   
-  extension [Self <: XpackInfoBuildInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XpackInfoBuildInformation] (val x: Self) extends AnyVal {
     
     inline def setDate(value: DateTime): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

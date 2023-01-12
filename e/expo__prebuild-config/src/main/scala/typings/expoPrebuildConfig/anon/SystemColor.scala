@@ -19,7 +19,8 @@ object SystemColor {
     __obj.asInstanceOf[SystemColor]
   }
   
-  extension [Self <: SystemColor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemColor] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String | backgroundColor): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

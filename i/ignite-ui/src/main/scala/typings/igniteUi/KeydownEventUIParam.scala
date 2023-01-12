@@ -33,7 +33,8 @@ object KeydownEventUIParam {
     __obj.asInstanceOf[KeydownEventUIParam]
   }
   
-  extension [Self <: KeydownEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeydownEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setEditorInput(value: Any): Self = StObject.set(x, "editorInput", value.asInstanceOf[js.Any])
     

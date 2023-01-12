@@ -490,7 +490,8 @@ object amStockChartMod {
       __obj.asInstanceOf[AmStockChart]
     }
     
-    extension [Self <: AmStockChart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AmStockChart] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function1[/* e */ Date, Unit]) => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

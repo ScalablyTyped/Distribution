@@ -18,7 +18,8 @@ object Design {
     __obj.asInstanceOf[Design]
   }
   
-  extension [Self <: Design](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Design] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Rows): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

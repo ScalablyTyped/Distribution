@@ -57,7 +57,8 @@ object HighlightedCount {
     __obj.asInstanceOf[HighlightedCount]
   }
   
-  extension [Self <: HighlightedCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HighlightedCount] (val x: Self) extends AnyVal {
     
     inline def setComponentName(value: String): Self = StObject.set(x, "componentName", value.asInstanceOf[js.Any])
     

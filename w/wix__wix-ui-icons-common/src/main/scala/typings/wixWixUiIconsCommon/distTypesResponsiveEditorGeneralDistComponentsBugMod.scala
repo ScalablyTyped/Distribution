@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsBugMod extends Shortcut {
       __obj.asInstanceOf[BugProps]
     }
     
-    extension [Self <: BugProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BugProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

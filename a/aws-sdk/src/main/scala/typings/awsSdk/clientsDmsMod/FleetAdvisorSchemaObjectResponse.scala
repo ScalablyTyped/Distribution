@@ -38,7 +38,8 @@ object FleetAdvisorSchemaObjectResponse {
     __obj.asInstanceOf[FleetAdvisorSchemaObjectResponse]
   }
   
-  extension [Self <: FleetAdvisorSchemaObjectResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FleetAdvisorSchemaObjectResponse] (val x: Self) extends AnyVal {
     
     inline def setCodeLineCount(value: LongOptional): Self = StObject.set(x, "CodeLineCount", value.asInstanceOf[js.Any])
     

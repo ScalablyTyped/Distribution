@@ -48,7 +48,8 @@ object ExecuteStatementOutput {
     __obj.asInstanceOf[ExecuteStatementOutput]
   }
   
-  extension [Self <: ExecuteStatementOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecuteStatementOutput] (val x: Self) extends AnyVal {
     
     inline def setClusterIdentifier(value: Location): Self = StObject.set(x, "ClusterIdentifier", value.asInstanceOf[js.Any])
     

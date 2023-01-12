@@ -111,7 +111,8 @@ object Extensions {
       __obj.asInstanceOf[DragAndDrop5]
     }
     
-    extension [Self <: DragAndDrop5](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragAndDrop5] (val x: Self) extends AnyVal {
       
       inline def setAutoExpandMS(value: Double): Self = StObject.set(x, "autoExpandMS", value.asInstanceOf[js.Any])
       
@@ -259,7 +260,8 @@ object Extensions {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
       
@@ -320,7 +322,8 @@ object Extensions {
       __obj.asInstanceOf[typings.jqueryFancytree.Fancytree.Extensions.List]
     }
     
-    extension [Self <: typings.jqueryFancytree.Fancytree.Extensions.List](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.jqueryFancytree.Fancytree.Extensions.List] (val x: Self) extends AnyVal {
       
       inline def setDnd5(value: DragAndDrop5): Self = StObject.set(x, "dnd5", value.asInstanceOf[js.Any])
       
@@ -365,7 +368,8 @@ object Extensions {
       __obj.asInstanceOf[Table]
     }
     
-    extension [Self <: Table](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
       
       inline def setCheckboxColumnIdx(value: Any): Self = StObject.set(x, "checkboxColumnIdx", value.asInstanceOf[js.Any])
       

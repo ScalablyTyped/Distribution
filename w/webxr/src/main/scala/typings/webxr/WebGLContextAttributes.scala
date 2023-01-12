@@ -20,7 +20,8 @@ object WebGLContextAttributes {
     __obj.asInstanceOf[WebGLContextAttributes]
   }
   
-  extension [Self <: WebGLContextAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLContextAttributes] (val x: Self) extends AnyVal {
     
     inline def setXrCompatible(value: Boolean): Self = StObject.set(x, "xrCompatible", value.asInstanceOf[js.Any])
     

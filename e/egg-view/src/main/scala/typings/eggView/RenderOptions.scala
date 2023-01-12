@@ -24,7 +24,8 @@ object RenderOptions {
     __obj.asInstanceOf[RenderOptions]
   }
   
-  extension [Self <: RenderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOptions] (val x: Self) extends AnyVal {
     
     inline def setLocals(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PlainObject */ Any

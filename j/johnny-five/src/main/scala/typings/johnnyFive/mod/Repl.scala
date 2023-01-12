@@ -15,7 +15,8 @@ object Repl {
     __obj.asInstanceOf[Repl]
   }
   
-  extension [Self <: Repl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Repl] (val x: Self) extends AnyVal {
     
     inline def setInject(value: Any => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction1(value))
   }

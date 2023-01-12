@@ -17,7 +17,8 @@ object MouseOptions {
     __obj.asInstanceOf[MouseOptions]
   }
   
-  extension [Self <: MouseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MouseOptions] (val x: Self) extends AnyVal {
     
     inline def setButton(value: MouseButton): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
     

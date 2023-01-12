@@ -43,7 +43,8 @@ object ProcessDetails {
     __obj.asInstanceOf[ProcessDetails]
   }
   
-  extension [Self <: ProcessDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProcessDetails] (val x: Self) extends AnyVal {
     
     inline def setLaunchedAt(value: NonEmptyString): Self = StObject.set(x, "LaunchedAt", value.asInstanceOf[js.Any])
     

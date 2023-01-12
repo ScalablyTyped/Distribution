@@ -166,7 +166,8 @@ object mod {
       __obj.asInstanceOf[CancelSignal]
     }
     
-    extension [Self <: CancelSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CancelSignal] (val x: Self) extends AnyVal {
       
       inline def setReason(value: Any): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       

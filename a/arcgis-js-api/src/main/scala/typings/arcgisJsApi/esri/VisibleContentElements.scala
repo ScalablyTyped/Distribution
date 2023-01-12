@@ -48,7 +48,8 @@ object VisibleContentElements {
     __obj.asInstanceOf[VisibleContentElements]
   }
   
-  extension [Self <: VisibleContentElements](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleContentElements] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: Boolean): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

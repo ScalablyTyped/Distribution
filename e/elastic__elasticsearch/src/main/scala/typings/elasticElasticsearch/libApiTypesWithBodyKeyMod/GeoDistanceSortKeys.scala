@@ -23,7 +23,8 @@ object GeoDistanceSortKeys {
     __obj.asInstanceOf[GeoDistanceSortKeys]
   }
   
-  extension [Self <: GeoDistanceSortKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoDistanceSortKeys] (val x: Self) extends AnyVal {
     
     inline def setDistance_type(value: GeoDistanceType): Self = StObject.set(x, "distance_type", value.asInstanceOf[js.Any])
     

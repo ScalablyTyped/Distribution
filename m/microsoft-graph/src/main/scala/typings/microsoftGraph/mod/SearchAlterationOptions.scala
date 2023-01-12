@@ -27,7 +27,8 @@ object SearchAlterationOptions {
     __obj.asInstanceOf[SearchAlterationOptions]
   }
   
-  extension [Self <: SearchAlterationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAlterationOptions] (val x: Self) extends AnyVal {
     
     inline def setEnableModification(value: NullableOption[Boolean]): Self = StObject.set(x, "enableModification", value.asInstanceOf[js.Any])
     

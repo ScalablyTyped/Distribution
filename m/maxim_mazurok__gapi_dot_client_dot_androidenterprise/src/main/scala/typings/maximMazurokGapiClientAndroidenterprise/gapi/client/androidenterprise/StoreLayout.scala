@@ -25,7 +25,8 @@ object StoreLayout {
     __obj.asInstanceOf[StoreLayout]
   }
   
-  extension [Self <: StoreLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StoreLayout] (val x: Self) extends AnyVal {
     
     inline def setHomepageId(value: String): Self = StObject.set(x, "homepageId", value.asInstanceOf[js.Any])
     

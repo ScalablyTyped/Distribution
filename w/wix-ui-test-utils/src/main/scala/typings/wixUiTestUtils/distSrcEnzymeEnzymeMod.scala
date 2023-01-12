@@ -76,7 +76,8 @@ object distSrcEnzymeEnzymeMod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setDataHookPropName(value: `data-hook` | dataHook): Self = StObject.set(x, "dataHookPropName", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object distSrcEnzymeEnzymeMod {
       __obj.asInstanceOf[WrapperData]
     }
     
-    extension [Self <: WrapperData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WrapperData] (val x: Self) extends AnyVal {
       
       inline def setDataHook(value: String): Self = StObject.set(x, "dataHook", value.asInstanceOf[js.Any])
       

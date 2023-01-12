@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Explode]
     }
     
-    extension [Self <: Explode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Explode] (val x: Self) extends AnyVal {
       
       inline def setExplode(value: Rule_ => Unit): Self = StObject.set(x, "explode", js.Any.fromFunction1(value))
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[PartialDeclarationProps]
     }
     
-    extension [Self <: PartialDeclarationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialDeclarationProps] (val x: Self) extends AnyVal {
       
       inline def setImportant(value: Boolean): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
       
@@ -80,7 +82,8 @@ object anon {
       __obj.asInstanceOf[Typeofborders]
     }
     
-    extension [Self <: Typeofborders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Typeofborders] (val x: Self) extends AnyVal {
       
       inline def setExplode(value: Rule_ => Unit): Self = StObject.set(x, "explode", js.Any.fromFunction1(value))
       

@@ -23,7 +23,8 @@ object ICommandGenerateSnippet {
     __obj.asInstanceOf[ICommandGenerateSnippet]
   }
   
-  extension [Self <: ICommandGenerateSnippet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommandGenerateSnippet] (val x: Self) extends AnyVal {
     
     inline def setActionId(value: String): Self = StObject.set(x, "actionId", value.asInstanceOf[js.Any])
     

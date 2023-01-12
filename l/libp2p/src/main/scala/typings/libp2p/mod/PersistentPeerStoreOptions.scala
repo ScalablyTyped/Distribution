@@ -15,7 +15,8 @@ object PersistentPeerStoreOptions {
     __obj.asInstanceOf[PersistentPeerStoreOptions]
   }
   
-  extension [Self <: PersistentPeerStoreOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistentPeerStoreOptions] (val x: Self) extends AnyVal {
     
     inline def setThreshold(value: Double): Self = StObject.set(x, "threshold", value.asInstanceOf[js.Any])
     

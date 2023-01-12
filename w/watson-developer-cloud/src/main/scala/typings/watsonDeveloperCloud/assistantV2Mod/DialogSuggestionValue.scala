@@ -17,7 +17,8 @@ object DialogSuggestionValue {
     __obj.asInstanceOf[DialogSuggestionValue]
   }
   
-  extension [Self <: DialogSuggestionValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogSuggestionValue] (val x: Self) extends AnyVal {
     
     inline def setInput(value: MessageInput): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

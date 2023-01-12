@@ -21,7 +21,8 @@ object Borrowers {
     __obj.asInstanceOf[Borrowers]
   }
   
-  extension [Self <: Borrowers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Borrowers] (val x: Self) extends AnyVal {
     
     inline def setIsCanceled(value: Boolean): Self = StObject.set(x, "isCanceled", value.asInstanceOf[js.Any])
     

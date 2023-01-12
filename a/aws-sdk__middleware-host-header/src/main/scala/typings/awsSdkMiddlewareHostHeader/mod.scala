@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[HostHeaderResolvedConfig]
     }
     
-    extension [Self <: HostHeaderResolvedConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HostHeaderResolvedConfig] (val x: Self) extends AnyVal {
       
       inline def setRequestHandler(value: RequestHandler[Any, Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object mod {
       __obj.asInstanceOf[PreviouslyResolved]
     }
     
-    extension [Self <: PreviouslyResolved](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       inline def setRequestHandler(value: RequestHandler[Any, Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }

@@ -19,7 +19,8 @@ object ConsumerProject {
     __obj.asInstanceOf[ConsumerProject]
   }
   
-  extension [Self <: ConsumerProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerProject] (val x: Self) extends AnyVal {
     
     inline def setProjectNum(value: String): Self = StObject.set(x, "projectNum", value.asInstanceOf[js.Any])
     

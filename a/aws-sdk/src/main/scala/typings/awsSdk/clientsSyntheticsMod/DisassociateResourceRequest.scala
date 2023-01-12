@@ -23,7 +23,8 @@ object DisassociateResourceRequest {
     __obj.asInstanceOf[DisassociateResourceRequest]
   }
   
-  extension [Self <: DisassociateResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupIdentifier(value: GroupIdentifier): Self = StObject.set(x, "GroupIdentifier", value.asInstanceOf[js.Any])
     

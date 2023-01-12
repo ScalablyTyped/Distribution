@@ -15,7 +15,8 @@ object EnumValuesNotApplicable {
     __obj.asInstanceOf[EnumValuesNotApplicable]
   }
   
-  extension [Self <: EnumValuesNotApplicable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnumValuesNotApplicable] (val x: Self) extends AnyVal {
     
     inline def setEnumValues(value: NotApplicable): Self = StObject.set(x, "enumValues", value.asInstanceOf[js.Any])
   }

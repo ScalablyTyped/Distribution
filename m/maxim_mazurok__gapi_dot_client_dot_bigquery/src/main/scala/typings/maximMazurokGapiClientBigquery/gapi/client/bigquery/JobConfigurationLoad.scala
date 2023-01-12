@@ -180,7 +180,8 @@ object JobConfigurationLoad {
     __obj.asInstanceOf[JobConfigurationLoad]
   }
   
-  extension [Self <: JobConfigurationLoad](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobConfigurationLoad] (val x: Self) extends AnyVal {
     
     inline def setAllowJaggedRows(value: Boolean): Self = StObject.set(x, "allowJaggedRows", value.asInstanceOf[js.Any])
     

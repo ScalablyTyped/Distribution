@@ -33,7 +33,8 @@ object AudioContentLyrics {
     __obj.asInstanceOf[AudioContentLyrics]
   }
   
-  extension [Self <: AudioContentLyrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioContentLyrics] (val x: Self) extends AnyVal {
     
     inline def setTexts(value: js.Array[String]): Self = StObject.set(x, "texts", value.asInstanceOf[js.Any])
     

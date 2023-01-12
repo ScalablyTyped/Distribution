@@ -21,7 +21,8 @@ object ReadMessagesOptionsMap {
     __obj.asInstanceOf[ReadMessagesOptionsMap]
   }
   
-  extension [Self <: ReadMessagesOptionsMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadMessagesOptionsMap] (val x: Self) extends AnyVal {
     
     inline def setDesiredStartSequenceNumber(value: Double): Self = StObject.set(x, "desiredStartSequenceNumber", value.asInstanceOf[js.Any])
     

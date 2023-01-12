@@ -106,7 +106,8 @@ object mod {
       __obj.asInstanceOf[CallSite]
     }
     
-    extension [Self <: CallSite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallSite] (val x: Self) extends AnyVal {
       
       inline def setGetColumnNumber(value: () => Double | Null): Self = StObject.set(x, "getColumnNumber", js.Any.fromFunction0(value))
       

@@ -41,7 +41,8 @@ object libComponentsSwatchesSwatchesMod {
       __obj.asInstanceOf[SwatchesPickerProps]
     }
     
-    extension [Self <: SwatchesPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwatchesPickerProps] (val x: Self) extends AnyVal {
       
       inline def setColors(value: js.Array[js.Array[String]]): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libComponentsSwatchesSwatchesMod {
       __obj.asInstanceOf[SwatchesPickerStylesProps]
     }
     
-    extension [Self <: SwatchesPickerStylesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwatchesPickerStylesProps] (val x: Self) extends AnyVal {
       
       inline def setBody(value: CSSProperties): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

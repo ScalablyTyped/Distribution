@@ -21,7 +21,8 @@ object IosVppAppAssignmentSettings {
     __obj.asInstanceOf[IosVppAppAssignmentSettings]
   }
   
-  extension [Self <: IosVppAppAssignmentSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IosVppAppAssignmentSettings] (val x: Self) extends AnyVal {
     
     inline def setUseDeviceLicensing(value: Boolean): Self = StObject.set(x, "useDeviceLicensing", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ListGameServersOutput {
     __obj.asInstanceOf[ListGameServersOutput]
   }
   
-  extension [Self <: ListGameServersOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGameServersOutput] (val x: Self) extends AnyVal {
     
     inline def setGameServers(value: GameServers): Self = StObject.set(x, "GameServers", value.asInstanceOf[js.Any])
     

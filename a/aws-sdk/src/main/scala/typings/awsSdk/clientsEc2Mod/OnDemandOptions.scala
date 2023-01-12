@@ -43,7 +43,8 @@ object OnDemandOptions {
     __obj.asInstanceOf[OnDemandOptions]
   }
   
-  extension [Self <: OnDemandOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnDemandOptions] (val x: Self) extends AnyVal {
     
     inline def setAllocationStrategy(value: FleetOnDemandAllocationStrategy): Self = StObject.set(x, "AllocationStrategy", value.asInstanceOf[js.Any])
     

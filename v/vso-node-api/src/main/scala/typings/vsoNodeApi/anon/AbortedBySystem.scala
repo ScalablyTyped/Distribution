@@ -41,7 +41,8 @@ object AbortedBySystem {
     __obj.asInstanceOf[AbortedBySystem]
   }
   
-  extension [Self <: AbortedBySystem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortedBySystem] (val x: Self) extends AnyVal {
     
     inline def setAbortedBySystem(value: scala.Double): Self = StObject.set(x, "abortedBySystem", value.asInstanceOf[js.Any])
     

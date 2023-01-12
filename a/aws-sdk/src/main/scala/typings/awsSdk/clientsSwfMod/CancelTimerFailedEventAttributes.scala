@@ -28,7 +28,8 @@ object CancelTimerFailedEventAttributes {
     __obj.asInstanceOf[CancelTimerFailedEventAttributes]
   }
   
-  extension [Self <: CancelTimerFailedEventAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelTimerFailedEventAttributes] (val x: Self) extends AnyVal {
     
     inline def setCause(value: CancelTimerFailedCause): Self = StObject.set(x, "cause", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object TaskAssistant {
     __obj.asInstanceOf[TaskAssistant]
   }
   
-  extension [Self <: TaskAssistant](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskAssistant] (val x: Self) extends AnyVal {
     
     inline def setProvideTasks(value: () => AssistantArray[Task]): Self = StObject.set(x, "provideTasks", js.Any.fromFunction0(value))
     

@@ -40,7 +40,8 @@ object CartoDBOptions {
     __obj.asInstanceOf[CartoDBOptions]
   }
   
-  extension [Self <: CartoDBOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartoDBOptions] (val x: Self) extends AnyVal {
     
     inline def setAccount(value: String): Self = StObject.set(x, "account", value.asInstanceOf[js.Any])
     

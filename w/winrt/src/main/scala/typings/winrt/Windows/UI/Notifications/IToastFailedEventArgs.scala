@@ -15,7 +15,8 @@ object IToastFailedEventArgs {
     __obj.asInstanceOf[IToastFailedEventArgs]
   }
   
-  extension [Self <: IToastFailedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IToastFailedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setErrorCode(value: Double): Self = StObject.set(x, "errorCode", value.asInstanceOf[js.Any])
   }

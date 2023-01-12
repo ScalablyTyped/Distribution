@@ -18,7 +18,8 @@ object CreditCardTypes {
     __obj.asInstanceOf[CreditCardTypes]
   }
   
-  extension [Self <: CreditCardTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreditCardTypes] (val x: Self) extends AnyVal {
     
     inline def setCardTypes(value: js.Array[String]): Self = StObject.set(x, "cardTypes", value.asInstanceOf[js.Any])
     

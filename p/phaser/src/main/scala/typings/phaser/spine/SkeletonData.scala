@@ -104,7 +104,8 @@ object SkeletonData {
     __obj.asInstanceOf[SkeletonData]
   }
   
-  extension [Self <: SkeletonData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonData] (val x: Self) extends AnyVal {
     
     inline def setAnimations(value: js.Array[Animation]): Self = StObject.set(x, "animations", value.asInstanceOf[js.Any])
     

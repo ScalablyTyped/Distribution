@@ -17,7 +17,8 @@ object ModSkip {
     __obj.asInstanceOf[ModSkip]
   }
   
-  extension [Self <: ModSkip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModSkip] (val x: Self) extends AnyVal {
     
     inline def setM(value: String): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
     

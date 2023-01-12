@@ -66,7 +66,8 @@ object ImagesLoaded {
       __obj.asInstanceOf[ImagesLoadedOptions]
     }
     
-    extension [Self <: ImagesLoadedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImagesLoadedOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: `true` | String): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     }
@@ -86,7 +87,8 @@ object ImagesLoaded {
       __obj.asInstanceOf[LoadingImage]
     }
     
-    extension [Self <: LoadingImage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingImage] (val x: Self) extends AnyVal {
       
       inline def setImg(value: HTMLImageElement): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
       

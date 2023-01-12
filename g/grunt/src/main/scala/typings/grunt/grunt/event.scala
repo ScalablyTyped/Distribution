@@ -101,7 +101,8 @@ object event {
       __obj.asInstanceOf[EventModule]
     }
     
-    extension [Self <: EventModule](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventModule] (val x: Self) extends AnyVal {
       
       inline def setAddListener(value: (String, js.Function) => EventModule): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       

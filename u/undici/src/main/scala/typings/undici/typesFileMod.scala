@@ -52,7 +52,8 @@ object typesFileMod {
       __obj.asInstanceOf[BlobPropertyBag]
     }
     
-    extension [Self <: BlobPropertyBag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlobPropertyBag] (val x: Self) extends AnyVal {
       
       inline def setEndings(value: native | transparent): Self = StObject.set(x, "endings", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object typesFileMod {
       __obj.asInstanceOf[FilePropertyBag]
     }
     
-    extension [Self <: FilePropertyBag](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilePropertyBag] (val x: Self) extends AnyVal {
       
       inline def setLastModified(value: Double): Self = StObject.set(x, "lastModified", value.asInstanceOf[js.Any])
       

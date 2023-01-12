@@ -24,7 +24,8 @@ object ChipProps {
     __obj.asInstanceOf[ChipProps]
   }
   
-  extension [Self <: ChipProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChipProps] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: MouseEvent[Chip, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

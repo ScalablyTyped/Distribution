@@ -21,7 +21,8 @@ object AggregationsMultiTermsBucketKeys {
     __obj.asInstanceOf[AggregationsMultiTermsBucketKeys]
   }
   
-  extension [Self <: AggregationsMultiTermsBucketKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsMultiTermsBucketKeys] (val x: Self) extends AnyVal {
     
     inline def setDoc_count_error_upper_bound(value: long): Self = StObject.set(x, "doc_count_error_upper_bound", value.asInstanceOf[js.Any])
     

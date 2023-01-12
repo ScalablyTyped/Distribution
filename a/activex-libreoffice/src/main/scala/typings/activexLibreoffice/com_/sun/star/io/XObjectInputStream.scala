@@ -43,7 +43,8 @@ object XObjectInputStream {
     __obj.asInstanceOf[XObjectInputStream]
   }
   
-  extension [Self <: XObjectInputStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XObjectInputStream] (val x: Self) extends AnyVal {
     
     inline def setReadObject(value: () => XPersistObject): Self = StObject.set(x, "readObject", js.Any.fromFunction0(value))
   }

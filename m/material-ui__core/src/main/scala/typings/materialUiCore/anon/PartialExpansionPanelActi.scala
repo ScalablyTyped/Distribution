@@ -464,7 +464,8 @@ object PartialExpansionPanelActi {
     __obj.asInstanceOf[PartialExpansionPanelActi]
   }
   
-  extension [Self <: PartialExpansionPanelActi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialExpansionPanelActi] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

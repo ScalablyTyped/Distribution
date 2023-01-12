@@ -28,7 +28,8 @@ object IconButtonProps {
     __obj.asInstanceOf[IconButtonProps[T, F]]
   }
   
-  extension [Self <: IconButtonProps[?, ?], T, F](x: Self & (IconButtonProps[T, F])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconButtonProps[?, ?], T, F] (val x: Self & (IconButtonProps[T, F])) extends AnyVal {
     
     inline def setIcon(value: String | ReactElement): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
     

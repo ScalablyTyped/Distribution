@@ -184,7 +184,8 @@ object XTransliteration {
     __obj.asInstanceOf[XTransliteration]
   }
   
-  extension [Self <: XTransliteration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTransliteration] (val x: Self) extends AnyVal {
     
     inline def setCompareString(value: (String, String) => Double): Self = StObject.set(x, "compareString", js.Any.fromFunction2(value))
     

@@ -22,7 +22,8 @@ object UserRolePermissionGroup {
     __obj.asInstanceOf[UserRolePermissionGroup]
   }
   
-  extension [Self <: UserRolePermissionGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserRolePermissionGroup] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

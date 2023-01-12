@@ -57,7 +57,8 @@ object GesturePoint {
     __obj.asInstanceOf[GesturePoint]
   }
   
-  extension [Self <: GesturePoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GesturePoint] (val x: Self) extends AnyVal {
     
     inline def setCaptured(value: Boolean): Self = StObject.set(x, "captured", value.asInstanceOf[js.Any])
     

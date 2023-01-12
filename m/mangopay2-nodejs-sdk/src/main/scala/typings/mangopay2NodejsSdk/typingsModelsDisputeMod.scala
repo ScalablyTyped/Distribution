@@ -99,7 +99,8 @@ object typingsModelsDisputeMod {
         __obj.asInstanceOf[DisputeData]
       }
       
-      extension [Self <: DisputeData](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DisputeData] (val x: Self) extends AnyVal {
         
         inline def setContestDeadlineDate(value: Timestamp): Self = StObject.set(x, "ContestDeadlineDate", value.asInstanceOf[js.Any])
         
@@ -140,7 +141,8 @@ object typingsModelsDisputeMod {
         __obj.asInstanceOf[DisputeReason]
       }
       
-      extension [Self <: DisputeReason](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: DisputeReason] (val x: Self) extends AnyVal {
         
         inline def setDisputeReasonMessage(value: String): Self = StObject.set(x, "DisputeReasonMessage", value.asInstanceOf[js.Any])
         
@@ -253,7 +255,8 @@ object typingsModelsDisputeMod {
         __obj.asInstanceOf[SubmitDispute]
       }
       
-      extension [Self <: SubmitDispute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SubmitDispute] (val x: Self) extends AnyVal {
         
         inline def setContestedFunds(value: MoneyData): Self = StObject.set(x, "ContestedFunds", value.asInstanceOf[js.Any])
         
@@ -273,7 +276,8 @@ object typingsModelsDisputeMod {
         __obj.asInstanceOf[UpdateDispute]
       }
       
-      extension [Self <: UpdateDispute](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: UpdateDispute] (val x: Self) extends AnyVal {
         
         inline def setTag(value: String): Self = StObject.set(x, "Tag", value.asInstanceOf[js.Any])
         

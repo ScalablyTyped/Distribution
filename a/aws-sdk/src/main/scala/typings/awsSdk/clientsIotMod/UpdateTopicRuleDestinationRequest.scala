@@ -23,7 +23,8 @@ object UpdateTopicRuleDestinationRequest {
     __obj.asInstanceOf[UpdateTopicRuleDestinationRequest]
   }
   
-  extension [Self <: UpdateTopicRuleDestinationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateTopicRuleDestinationRequest] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object libRulesCoreStateCoreMod {
       __obj.asInstanceOf[StateCore]
     }
     
-    extension [Self <: StateCore](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateCore] (val x: Self) extends AnyVal {
       
       inline def setEnv(value: Any): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])
       

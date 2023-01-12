@@ -16,7 +16,8 @@ object TableBorderFill {
     __obj.asInstanceOf[TableBorderFill]
   }
   
-  extension [Self <: TableBorderFill](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableBorderFill] (val x: Self) extends AnyVal {
     
     inline def setSolidFill(value: SolidFill): Self = StObject.set(x, "solidFill", value.asInstanceOf[js.Any])
     

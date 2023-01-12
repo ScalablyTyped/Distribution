@@ -76,7 +76,8 @@ object libMessageStripMessageStripMod {
       __obj.asInstanceOf[MessageStripProps]
     }
     
-    extension [Self <: MessageStripProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageStripProps] (val x: Self) extends AnyVal {
       
       inline def setButtonProps(value: Any): Self = StObject.set(x, "buttonProps", value.asInstanceOf[js.Any])
       

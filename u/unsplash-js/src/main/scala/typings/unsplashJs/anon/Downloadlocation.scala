@@ -21,7 +21,8 @@ object Downloadlocation {
     __obj.asInstanceOf[Downloadlocation]
   }
   
-  extension [Self <: Downloadlocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Downloadlocation] (val x: Self) extends AnyVal {
     
     inline def setDownload(value: String): Self = StObject.set(x, "download", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object esComponentsCascadePickerCascadePickerMod {
       __obj.asInstanceOf[CascadePickerOption]
     }
     
-    extension [Self <: CascadePickerOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadePickerOption] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[CascadePickerOption]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -273,7 +274,8 @@ object esComponentsCascadePickerCascadePickerMod {
       __obj.asInstanceOf[CascadePickerProps]
     }
     
-    extension [Self <: CascadePickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CascadePickerProps] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: () => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction0(value))
       

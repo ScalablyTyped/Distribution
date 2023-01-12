@@ -24,7 +24,8 @@ object distTypesTypesDriveRequestMod {
       __obj.asInstanceOf[ListOptions]
     }
     
-    extension [Self <: ListOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListOptions] (val x: Self) extends AnyVal {
       
       inline def setLast(value: String): Self = StObject.set(x, "last", value.asInstanceOf[js.Any])
       
@@ -59,7 +60,8 @@ object distTypesTypesDriveRequestMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setContentType(value: String): Self = StObject.set(x, "contentType", value.asInstanceOf[js.Any])
       

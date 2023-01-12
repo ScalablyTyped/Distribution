@@ -20,7 +20,8 @@ object ConnectivityInfo {
     __obj.asInstanceOf[ConnectivityInfo]
   }
   
-  extension [Self <: ConnectivityInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectivityInfo] (val x: Self) extends AnyVal {
     
     inline def setPublicAccess(value: PublicAccess): Self = StObject.set(x, "PublicAccess", value.asInstanceOf[js.Any])
     

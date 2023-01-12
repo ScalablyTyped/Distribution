@@ -52,7 +52,8 @@ object CAPICOM_CERTIFICATE_FIND_TYPE {
     __obj.asInstanceOf[CAPICOM_CERTIFICATE_FIND_TYPE]
   }
   
-  extension [Self <: CAPICOM_CERTIFICATE_FIND_TYPE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAPICOM_CERTIFICATE_FIND_TYPE] (val x: Self) extends AnyVal {
     
     inline def setCAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY(value: `7`): Self = StObject.set(x, "CAPICOM_CERTIFICATE_FIND_APPLICATION_POLICY", value.asInstanceOf[js.Any])
     

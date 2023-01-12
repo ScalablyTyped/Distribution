@@ -28,7 +28,8 @@ object CreateStorediSCSIVolumeOutput {
     __obj.asInstanceOf[CreateStorediSCSIVolumeOutput]
   }
   
-  extension [Self <: CreateStorediSCSIVolumeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateStorediSCSIVolumeOutput] (val x: Self) extends AnyVal {
     
     inline def setTargetARN(value: TargetARN): Self = StObject.set(x, "TargetARN", value.asInstanceOf[js.Any])
     

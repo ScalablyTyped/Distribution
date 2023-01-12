@@ -111,7 +111,8 @@ object verovioOptionsMod {
       __obj.asInstanceOf[EngravingDefaults]
     }
     
-    extension [Self <: EngravingDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EngravingDefaults] (val x: Self) extends AnyVal {
       
       inline def setArrowShaftThickness(value: Double): Self = StObject.set(x, "arrowShaftThickness", value.asInstanceOf[js.Any])
       
@@ -1906,7 +1907,8 @@ object verovioOptionsMod {
       __obj.asInstanceOf[VerovioOptions]
     }
     
-    extension [Self <: VerovioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerovioOptions] (val x: Self) extends AnyVal {
       
       inline def setAdjustPageHeight(value: Boolean): Self = StObject.set(x, "adjustPageHeight", value.asInstanceOf[js.Any])
       

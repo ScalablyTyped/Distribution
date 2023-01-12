@@ -65,7 +65,8 @@ object tableRowTableRowMod extends Shortcut {
       __obj.asInstanceOf[TableRowTypeMap[P, D]]
     }
     
-    extension [Self <: TableRowTypeMap[?, ?], P, D /* <: ElementType[Any] */](x: Self & (TableRowTypeMap[P, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableRowTypeMap[?, ?], P, D /* <: ElementType[Any] */] (val x: Self & (TableRowTypeMap[P, D])) extends AnyVal {
       
       inline def setClassKey(value: TableRowClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
       

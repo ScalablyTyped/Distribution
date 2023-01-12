@@ -225,7 +225,8 @@ object blockTypesMod {
       __obj.asInstanceOf[BlockOverrides]
     }
     
-    extension [Self <: BlockOverrides](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockOverrides] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Override[Any]): Self = StObject.set(x, "Block", value.asInstanceOf[js.Any])
       
@@ -421,7 +422,8 @@ object blockTypesMod {
       __obj.asInstanceOf[BlockProps[T]]
     }
     
-    extension [Self <: BlockProps[?], T /* <: ElementType[Any] */](x: Self & BlockProps[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockProps[?], T /* <: ElementType[Any] */] (val x: Self & BlockProps[T]) extends AnyVal {
       
       inline def setAlignContent(value: Responsive[AlignContent]): Self = StObject.set(x, "alignContent", value.asInstanceOf[js.Any])
       
@@ -1477,7 +1479,8 @@ object blockTypesMod {
       __obj.asInstanceOf[StyledBlockProps]
     }
     
-    extension [Self <: StyledBlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyledBlockProps] (val x: Self) extends AnyVal {
       
       inline def set$alignContent(value: Responsive[AlignContent]): Self = StObject.set(x, "$alignContent", value.asInstanceOf[js.Any])
       

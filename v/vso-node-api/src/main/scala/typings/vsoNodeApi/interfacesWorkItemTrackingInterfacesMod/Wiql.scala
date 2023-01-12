@@ -18,7 +18,8 @@ object Wiql {
     __obj.asInstanceOf[Wiql]
   }
   
-  extension [Self <: Wiql](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Wiql] (val x: Self) extends AnyVal {
     
     inline def setQuery(value: String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
   }

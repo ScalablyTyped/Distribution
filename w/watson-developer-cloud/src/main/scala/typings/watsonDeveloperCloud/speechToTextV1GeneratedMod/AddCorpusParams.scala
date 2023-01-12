@@ -33,7 +33,8 @@ object AddCorpusParams {
     __obj.asInstanceOf[AddCorpusParams]
   }
   
-  extension [Self <: AddCorpusParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCorpusParams] (val x: Self) extends AnyVal {
     
     inline def setAllow_overwrite(value: Boolean): Self = StObject.set(x, "allow_overwrite", value.asInstanceOf[js.Any])
     

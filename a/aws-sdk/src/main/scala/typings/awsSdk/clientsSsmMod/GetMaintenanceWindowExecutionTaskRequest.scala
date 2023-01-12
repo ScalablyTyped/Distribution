@@ -23,7 +23,8 @@ object GetMaintenanceWindowExecutionTaskRequest {
     __obj.asInstanceOf[GetMaintenanceWindowExecutionTaskRequest]
   }
   
-  extension [Self <: GetMaintenanceWindowExecutionTaskRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMaintenanceWindowExecutionTaskRequest] (val x: Self) extends AnyVal {
     
     inline def setTaskId(value: MaintenanceWindowExecutionTaskId): Self = StObject.set(x, "TaskId", value.asInstanceOf[js.Any])
     

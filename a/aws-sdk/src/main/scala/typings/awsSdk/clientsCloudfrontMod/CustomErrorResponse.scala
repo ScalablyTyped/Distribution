@@ -33,7 +33,8 @@ object CustomErrorResponse {
     __obj.asInstanceOf[CustomErrorResponse]
   }
   
-  extension [Self <: CustomErrorResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomErrorResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorCachingMinTTL(value: long): Self = StObject.set(x, "ErrorCachingMinTTL", value.asInstanceOf[js.Any])
     

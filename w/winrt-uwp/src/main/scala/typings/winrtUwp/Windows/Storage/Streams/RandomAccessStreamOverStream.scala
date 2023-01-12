@@ -92,7 +92,8 @@ object RandomAccessStreamOverStream {
     __obj.asInstanceOf[RandomAccessStreamOverStream]
   }
   
-  extension [Self <: RandomAccessStreamOverStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RandomAccessStreamOverStream] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

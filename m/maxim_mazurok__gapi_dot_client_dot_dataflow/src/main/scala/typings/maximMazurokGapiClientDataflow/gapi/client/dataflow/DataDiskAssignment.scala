@@ -22,7 +22,8 @@ object DataDiskAssignment {
     __obj.asInstanceOf[DataDiskAssignment]
   }
   
-  extension [Self <: DataDiskAssignment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataDiskAssignment] (val x: Self) extends AnyVal {
     
     inline def setDataDisks(value: js.Array[String]): Self = StObject.set(x, "dataDisks", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object GeoSearchByRadius {
     __obj.asInstanceOf[GeoSearchByRadius]
   }
   
-  extension [Self <: GeoSearchByRadius](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoSearchByRadius] (val x: Self) extends AnyVal {
     
     inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     

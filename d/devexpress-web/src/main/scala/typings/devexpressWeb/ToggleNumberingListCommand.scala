@@ -23,7 +23,8 @@ object ToggleNumberingListCommand {
     __obj.asInstanceOf[ToggleNumberingListCommand]
   }
   
-  extension [Self <: ToggleNumberingListCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToggleNumberingListCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

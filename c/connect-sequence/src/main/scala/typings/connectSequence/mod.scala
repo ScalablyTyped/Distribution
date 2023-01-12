@@ -173,7 +173,8 @@ object mod {
       __obj.asInstanceOf[ConnectSequence]
     }
     
-    extension [Self <: ConnectSequence](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectSequence] (val x: Self) extends AnyVal {
       
       inline def setAppend(
         value: /* repeated */ RequestHandler[

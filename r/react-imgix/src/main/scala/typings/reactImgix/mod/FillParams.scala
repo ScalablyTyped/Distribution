@@ -19,7 +19,8 @@ object FillParams {
     __obj.asInstanceOf[FillParams]
   }
   
-  extension [Self <: FillParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillParams] (val x: Self) extends AnyVal {
     
     inline def setBg(value: ImgixParamType): Self = StObject.set(x, "bg", value.asInstanceOf[js.Any])
     

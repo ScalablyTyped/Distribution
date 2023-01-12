@@ -16,7 +16,8 @@ object IMessageList {
     __obj.asInstanceOf[IMessageList]
   }
   
-  extension [Self <: IMessageList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMessageList] (val x: Self) extends AnyVal {
     
     inline def setMessages(value: js.Array[IMessage]): Self = StObject.set(x, "messages", value.asInstanceOf[js.Any])
     

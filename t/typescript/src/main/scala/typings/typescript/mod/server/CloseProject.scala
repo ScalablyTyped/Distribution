@@ -18,7 +18,8 @@ object CloseProject {
     __obj.asInstanceOf[CloseProject]
   }
   
-  extension [Self <: CloseProject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloseProject] (val x: Self) extends AnyVal {
     
     inline def setKind(value: closeProject): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

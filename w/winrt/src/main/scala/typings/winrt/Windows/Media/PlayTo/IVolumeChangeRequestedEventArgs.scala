@@ -15,7 +15,8 @@ object IVolumeChangeRequestedEventArgs {
     __obj.asInstanceOf[IVolumeChangeRequestedEventArgs]
   }
   
-  extension [Self <: IVolumeChangeRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVolumeChangeRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setVolume(value: Double): Self = StObject.set(x, "volume", value.asInstanceOf[js.Any])
   }

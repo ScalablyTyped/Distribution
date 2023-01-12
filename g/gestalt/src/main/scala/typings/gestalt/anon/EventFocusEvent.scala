@@ -20,7 +20,8 @@ object EventFocusEvent {
     __obj.asInstanceOf[EventFocusEvent]
   }
   
-  extension [Self <: EventFocusEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventFocusEvent] (val x: Self) extends AnyVal {
     
     inline def setEvent(value: FocusEvent[HTMLInputElement, Element]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
     

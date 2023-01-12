@@ -25,7 +25,8 @@ object ChatUserstate {
     __obj.asInstanceOf[ChatUserstate]
   }
   
-  extension [Self <: ChatUserstate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChatUserstate] (val x: Self) extends AnyVal {
     
     inline def setBits(value: String): Self = StObject.set(x, "bits", value.asInstanceOf[js.Any])
     

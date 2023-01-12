@@ -33,7 +33,8 @@ object ASPxClientTreeListCustomButtonEventArgs {
     __obj.asInstanceOf[ASPxClientTreeListCustomButtonEventArgs]
   }
   
-  extension [Self <: ASPxClientTreeListCustomButtonEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientTreeListCustomButtonEventArgs] (val x: Self) extends AnyVal {
     
     inline def setButtonID(value: String): Self = StObject.set(x, "buttonID", value.asInstanceOf[js.Any])
     

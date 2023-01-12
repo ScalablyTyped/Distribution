@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[BufferSize]
     }
     
-    extension [Self <: BufferSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferSize] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[MaxLineLength]
     }
     
-    extension [Self <: MaxLineLength](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MaxLineLength] (val x: Self) extends AnyVal {
       
       inline def setBufferSize(value: Double): Self = StObject.set(x, "bufferSize", value.asInstanceOf[js.Any])
       

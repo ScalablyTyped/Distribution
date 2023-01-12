@@ -23,7 +23,8 @@ object GrantFlowEntitlementsRequest {
     __obj.asInstanceOf[GrantFlowEntitlementsRequest]
   }
   
-  extension [Self <: GrantFlowEntitlementsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GrantFlowEntitlementsRequest] (val x: Self) extends AnyVal {
     
     inline def setEntitlements(value: listOfGrantEntitlementRequest): Self = StObject.set(x, "Entitlements", value.asInstanceOf[js.Any])
     

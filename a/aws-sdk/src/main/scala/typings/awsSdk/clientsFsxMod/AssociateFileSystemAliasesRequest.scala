@@ -25,7 +25,8 @@ object AssociateFileSystemAliasesRequest {
     __obj.asInstanceOf[AssociateFileSystemAliasesRequest]
   }
   
-  extension [Self <: AssociateFileSystemAliasesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssociateFileSystemAliasesRequest] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: AlternateDNSNames): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object FieldControlOutput {
     __obj.asInstanceOf[FieldControlOutput]
   }
   
-  extension [Self <: FieldControlOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldControlOutput] (val x: Self) extends AnyVal {
     
     inline def setValue(value: Any): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

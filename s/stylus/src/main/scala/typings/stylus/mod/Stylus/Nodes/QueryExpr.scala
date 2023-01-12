@@ -36,7 +36,8 @@ object QueryExpr {
     __obj.asInstanceOf[QueryExpr]
   }
   
-  extension [Self <: QueryExpr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryExpr] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Expression): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

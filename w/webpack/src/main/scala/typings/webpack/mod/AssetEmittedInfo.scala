@@ -24,7 +24,8 @@ object AssetEmittedInfo {
     __obj.asInstanceOf[AssetEmittedInfo]
   }
   
-  extension [Self <: AssetEmittedInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssetEmittedInfo] (val x: Self) extends AnyVal {
     
     inline def setCompilation(value: Compilation): Self = StObject.set(x, "compilation", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object Msg {
     __obj.asInstanceOf[Msg]
   }
   
-  extension [Self <: Msg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Msg] (val x: Self) extends AnyVal {
     
     inline def setLocation(value: typings.expressValidator.srcBaseMod.Location): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
     

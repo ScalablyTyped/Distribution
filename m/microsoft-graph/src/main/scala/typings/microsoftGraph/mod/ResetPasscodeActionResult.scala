@@ -18,7 +18,8 @@ object ResetPasscodeActionResult {
     __obj.asInstanceOf[ResetPasscodeActionResult]
   }
   
-  extension [Self <: ResetPasscodeActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResetPasscodeActionResult] (val x: Self) extends AnyVal {
     
     inline def setPasscode(value: NullableOption[String]): Self = StObject.set(x, "passcode", value.asInstanceOf[js.Any])
     

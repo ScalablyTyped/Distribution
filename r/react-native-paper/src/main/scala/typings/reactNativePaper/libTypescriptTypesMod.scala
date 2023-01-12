@@ -57,7 +57,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
       
@@ -84,7 +85,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Fonts]
     }
     
-    extension [Self <: Fonts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fonts] (val x: Self) extends AnyVal {
       
       inline def setLight(value: Font): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
       
@@ -133,7 +135,8 @@ object libTypescriptTypesMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: Scale): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -182,7 +185,8 @@ object libTypescriptTypesMod {
           __obj.asInstanceOf[typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme]
         }
         
-        extension [Self <: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.reactNativePaper.libTypescriptTypesMod.global.ReactNativePaper.Theme] (val x: Self) extends AnyVal {
           
           inline def setAnimation(value: ThemeAnimation): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
           
@@ -211,7 +215,8 @@ object libTypescriptTypesMod {
           __obj.asInstanceOf[ThemeAnimation]
         }
         
-        extension [Self <: ThemeAnimation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ThemeAnimation] (val x: Self) extends AnyVal {
           
           inline def setScale(value: Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
         }
@@ -260,7 +265,8 @@ object libTypescriptTypesMod {
           __obj.asInstanceOf[ThemeColors]
         }
         
-        extension [Self <: ThemeColors](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ThemeColors] (val x: Self) extends AnyVal {
           
           inline def setAccent(value: String): Self = StObject.set(x, "accent", value.asInstanceOf[js.Any])
           
@@ -301,7 +307,8 @@ object libTypescriptTypesMod {
           __obj.asInstanceOf[ThemeFont]
         }
         
-        extension [Self <: ThemeFont](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ThemeFont] (val x: Self) extends AnyVal {
           
           inline def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
           
@@ -328,7 +335,8 @@ object libTypescriptTypesMod {
           __obj.asInstanceOf[ThemeFonts]
         }
         
-        extension [Self <: ThemeFonts](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ThemeFonts] (val x: Self) extends AnyVal {
           
           inline def setLight(value: ThemeFont): Self = StObject.set(x, "light", value.asInstanceOf[js.Any])
           

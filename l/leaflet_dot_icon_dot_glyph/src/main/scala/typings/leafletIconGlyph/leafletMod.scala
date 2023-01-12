@@ -51,7 +51,8 @@ object leafletMod {
         __obj.asInstanceOf[GlyphIconOptions]
       }
       
-      extension [Self <: GlyphIconOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GlyphIconOptions] (val x: Self) extends AnyVal {
         
         inline def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
         
@@ -108,7 +109,8 @@ object leafletMod {
         __obj.asInstanceOf[GlyphOptions]
       }
       
-      extension [Self <: GlyphOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: GlyphOptions] (val x: Self) extends AnyVal {
         
         inline def setBgPos(value: PointExpression): Self = StObject.set(x, "bgPos", value.asInstanceOf[js.Any])
         

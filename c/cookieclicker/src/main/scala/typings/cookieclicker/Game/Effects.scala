@@ -55,7 +55,8 @@ object Effects {
     __obj.asInstanceOf[Effects]
   }
   
-  extension [Self <: Effects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Effects] (val x: Self) extends AnyVal {
     
     inline def setBuildingCost(value: Double): Self = StObject.set(x, "buildingCost", value.asInstanceOf[js.Any])
     

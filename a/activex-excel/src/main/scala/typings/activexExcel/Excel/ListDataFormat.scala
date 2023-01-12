@@ -66,7 +66,8 @@ object ListDataFormat {
     __obj.asInstanceOf[ListDataFormat]
   }
   
-  extension [Self <: ListDataFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDataFormat] (val x: Self) extends AnyVal {
     
     inline def setAllowFillIn(value: Boolean): Self = StObject.set(x, "AllowFillIn", value.asInstanceOf[js.Any])
     

@@ -291,7 +291,8 @@ object mod {
       __obj.asInstanceOf[LDEvaluationDetail]
     }
     
-    extension [Self <: LDEvaluationDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDEvaluationDetail] (val x: Self) extends AnyVal {
       
       inline def setReason(value: LDEvaluationReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -346,7 +347,8 @@ object mod {
       __obj.asInstanceOf[LDEvaluationReason]
     }
     
-    extension [Self <: LDEvaluationReason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDEvaluationReason] (val x: Self) extends AnyVal {
       
       inline def setErrorKind(value: String): Self = StObject.set(x, "errorKind", value.asInstanceOf[js.Any])
       
@@ -391,7 +393,8 @@ object mod {
       __obj.asInstanceOf[LDLogger]
     }
     
-    extension [Self <: LDLogger](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDLogger] (val x: Self) extends AnyVal {
       
       inline def setDebug(value: String => Unit): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
       
@@ -557,7 +560,8 @@ object mod {
       __obj.asInstanceOf[LDOptionsBase]
     }
     
-    extension [Self <: LDOptionsBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDOptionsBase] (val x: Self) extends AnyVal {
       
       inline def setAllAttributesPrivate(value: Boolean): Self = StObject.set(x, "allAttributesPrivate", value.asInstanceOf[js.Any])
       
@@ -720,7 +724,8 @@ object mod {
       __obj.asInstanceOf[LDUser]
     }
     
-    extension [Self <: LDUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LDUser] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       

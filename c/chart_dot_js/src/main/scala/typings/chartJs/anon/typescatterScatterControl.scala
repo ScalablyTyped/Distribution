@@ -214,7 +214,8 @@ object typescatterScatterControl {
     __obj.asInstanceOf[typescatterScatterControl]
   }
   
-  extension [Self <: typescatterScatterControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: typescatterScatterControl] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpeclineonProgre): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

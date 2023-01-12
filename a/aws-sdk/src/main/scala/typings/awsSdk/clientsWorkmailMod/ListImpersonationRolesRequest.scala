@@ -28,7 +28,8 @@ object ListImpersonationRolesRequest {
     __obj.asInstanceOf[ListImpersonationRolesRequest]
   }
   
-  extension [Self <: ListImpersonationRolesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListImpersonationRolesRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object PartialToastOptions {
     __obj.asInstanceOf[PartialToastOptions]
   }
   
-  extension [Self <: PartialToastOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialToastOptions] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

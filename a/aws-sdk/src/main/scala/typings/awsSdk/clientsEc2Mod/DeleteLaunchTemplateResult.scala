@@ -18,7 +18,8 @@ object DeleteLaunchTemplateResult {
     __obj.asInstanceOf[DeleteLaunchTemplateResult]
   }
   
-  extension [Self <: DeleteLaunchTemplateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteLaunchTemplateResult] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplate(value: LaunchTemplate): Self = StObject.set(x, "LaunchTemplate", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setExact(value: Boolean): Self = StObject.set(x, "exact", value.asInstanceOf[js.Any])
       
@@ -53,7 +54,8 @@ object mod {
       __obj.asInstanceOf[PathOptions]
     }
     
-    extension [Self <: PathOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PathOptions] (val x: Self) extends AnyVal {
       
       inline def setProtocol(value: Boolean): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
       

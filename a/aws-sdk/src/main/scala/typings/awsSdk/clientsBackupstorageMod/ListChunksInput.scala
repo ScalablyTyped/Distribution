@@ -33,7 +33,8 @@ object ListChunksInput {
     __obj.asInstanceOf[ListChunksInput]
   }
   
-  extension [Self <: ListChunksInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListChunksInput] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

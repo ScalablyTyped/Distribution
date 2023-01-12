@@ -20,7 +20,8 @@ object DeleteMany {
     __obj.asInstanceOf[DeleteMany[TSchema]]
   }
   
-  extension [Self <: DeleteMany[?], TSchema /* <: Document */](x: Self & DeleteMany[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteMany[?], TSchema /* <: Document */] (val x: Self & DeleteMany[TSchema]) extends AnyVal {
     
     inline def setDeleteMany(value: DeleteManyModel[TSchema]): Self = StObject.set(x, "deleteMany", value.asInstanceOf[js.Any])
   }

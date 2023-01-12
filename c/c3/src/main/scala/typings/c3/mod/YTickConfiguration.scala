@@ -20,7 +20,8 @@ object YTickConfiguration {
     __obj.asInstanceOf[YTickConfiguration]
   }
   
-  extension [Self <: YTickConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: YTickConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: /* x */ Double => String | Double): Self = StObject.set(x, "format", js.Any.fromFunction1(value))
     

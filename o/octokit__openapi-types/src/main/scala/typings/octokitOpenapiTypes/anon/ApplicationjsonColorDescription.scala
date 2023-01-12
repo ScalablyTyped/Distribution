@@ -17,7 +17,8 @@ object ApplicationjsonColorDescription {
     __obj.asInstanceOf[ApplicationjsonColorDescription]
   }
   
-  extension [Self <: ApplicationjsonColorDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonColorDescription] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: ColorDescription): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

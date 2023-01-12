@@ -43,7 +43,8 @@ object distLibMod {
       __obj.asInstanceOf[ICONOptions]
     }
     
-    extension [Self <: ICONOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICONOptions] (val x: Self) extends AnyVal {
       
       inline def setFavicon(value: IcoSizes): Self = StObject.set(x, "favicon", value.asInstanceOf[js.Any])
       

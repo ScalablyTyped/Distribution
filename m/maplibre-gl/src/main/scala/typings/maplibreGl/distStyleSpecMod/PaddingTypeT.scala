@@ -18,7 +18,8 @@ object PaddingTypeT {
     __obj.asInstanceOf[PaddingTypeT]
   }
   
-  extension [Self <: PaddingTypeT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PaddingTypeT] (val x: Self) extends AnyVal {
     
     inline def setKind(value: padding): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
   }

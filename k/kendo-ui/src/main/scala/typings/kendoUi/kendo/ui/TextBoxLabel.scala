@@ -17,7 +17,8 @@ object TextBoxLabel {
     __obj.asInstanceOf[TextBoxLabel]
   }
   
-  extension [Self <: TextBoxLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextBoxLabel] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

@@ -59,7 +59,8 @@ object examplesJsmObjectsWater2Mod {
       __obj.asInstanceOf[Water2Options]
     }
     
-    extension [Self <: Water2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Water2Options] (val x: Self) extends AnyVal {
       
       inline def setClipBias(value: Double): Self = StObject.set(x, "clipBias", value.asInstanceOf[js.Any])
       

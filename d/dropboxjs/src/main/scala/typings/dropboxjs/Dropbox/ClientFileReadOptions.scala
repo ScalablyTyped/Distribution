@@ -31,7 +31,8 @@ object ClientFileReadOptions {
     __obj.asInstanceOf[ClientFileReadOptions]
   }
   
-  extension [Self <: ClientFileReadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientFileReadOptions] (val x: Self) extends AnyVal {
     
     inline def setArrayBuffer(value: Boolean): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
     

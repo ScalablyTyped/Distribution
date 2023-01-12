@@ -44,7 +44,8 @@ object buildAssetSourcesMod {
       __obj.asInstanceOf[AssetMetadata]
     }
     
-    extension [Self <: AssetMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetMetadata] (val x: Self) extends AnyVal {
       
       inline def setFileHashes(value: js.Array[String]): Self = StObject.set(x, "fileHashes", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object buildAssetSourcesMod {
       __obj.asInstanceOf[AssetSource]
     }
     
-    extension [Self <: AssetSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssetSource] (val x: Self) extends AnyVal {
       
       inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

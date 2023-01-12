@@ -38,7 +38,8 @@ object GetEventConfigurationByResourceTypesResponse {
     __obj.asInstanceOf[GetEventConfigurationByResourceTypesResponse]
   }
   
-  extension [Self <: GetEventConfigurationByResourceTypesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEventConfigurationByResourceTypesResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectionStatus(value: ConnectionStatusResourceTypeEventConfiguration): Self = StObject.set(x, "ConnectionStatus", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object StepOptionFace {
     __obj.asInstanceOf[StepOptionFace]
   }
   
-  extension [Self <: StepOptionFace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepOptionFace] (val x: Self) extends AnyVal {
     
     inline def setPhotoCaptureFallback(value: Boolean): Self = StObject.set(x, "photoCaptureFallback", value.asInstanceOf[js.Any])
     

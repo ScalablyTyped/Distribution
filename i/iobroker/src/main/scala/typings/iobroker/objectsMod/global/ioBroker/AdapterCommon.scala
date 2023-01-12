@@ -222,7 +222,8 @@ object AdapterCommon {
     __obj.asInstanceOf[AdapterCommon]
   }
   
-  extension [Self <: AdapterCommon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdapterCommon] (val x: Self) extends AnyVal {
     
     inline def setAdminColumns(value: js.Array[Any]): Self = StObject.set(x, "adminColumns", value.asInstanceOf[js.Any])
     

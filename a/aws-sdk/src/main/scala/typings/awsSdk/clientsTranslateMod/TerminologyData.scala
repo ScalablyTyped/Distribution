@@ -28,7 +28,8 @@ object TerminologyData {
     __obj.asInstanceOf[TerminologyData]
   }
   
-  extension [Self <: TerminologyData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerminologyData] (val x: Self) extends AnyVal {
     
     inline def setDirectionality(value: Directionality): Self = StObject.set(x, "Directionality", value.asInstanceOf[js.Any])
     

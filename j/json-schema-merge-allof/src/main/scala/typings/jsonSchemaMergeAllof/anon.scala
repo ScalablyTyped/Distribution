@@ -36,7 +36,8 @@ object anon {
       __obj.asInstanceOf[AdditionalProperties]
     }
     
-    extension [Self <: AdditionalProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdditionalProperties] (val x: Self) extends AnyVal {
       
       inline def setAdditionalProperties(value: /* schemas */ js.Array[JSONSchema] => JSONSchema): Self = StObject.set(x, "additionalProperties", js.Any.fromFunction1(value))
       
@@ -57,7 +58,8 @@ object anon {
       __obj.asInstanceOf[Contains]
     }
     
-    extension [Self <: Contains](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Contains] (val x: Self) extends AnyVal {
       
       inline def setContains(value: Any): Self = StObject.set(x, "contains", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object anon {
       __obj.asInstanceOf[DefaultResolver[Schema]]
     }
     
-    extension [Self <: DefaultResolver[?], Schema /* <: JSONSchema */](x: Self & DefaultResolver[Schema]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultResolver[?], Schema /* <: JSONSchema */] (val x: Self & DefaultResolver[Schema]) extends AnyVal {
       
       inline def setDefaultResolver(
         value: (/* values */ js.Array[Any], /* path */ js.Array[String], /* mergeSchemas */ MergeSchemas, /* options */ Options_[Schema]) => Any
@@ -122,7 +125,8 @@ object anon {
       __obj.asInstanceOf[Examples]
     }
     
-    extension [Self <: Examples](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Examples] (val x: Self) extends AnyVal {
       
       inline def setExamples(value: Any): Self = StObject.set(x, "examples", value.asInstanceOf[js.Any])
       
@@ -142,7 +146,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def set$id(value: Any): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
@@ -161,7 +166,8 @@ object anon {
       __obj.asInstanceOf[IgnoreAdditionalProperties]
     }
     
-    extension [Self <: IgnoreAdditionalProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreAdditionalProperties] (val x: Self) extends AnyVal {
       
       inline def setIgnoreAdditionalProperties(value: `true`): Self = StObject.set(x, "ignoreAdditionalProperties", value.asInstanceOf[js.Any])
     }
@@ -178,7 +184,8 @@ object anon {
       __obj.asInstanceOf[PropertyNames]
     }
     
-    extension [Self <: PropertyNames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PropertyNames] (val x: Self) extends AnyVal {
       
       inline def setPropertyNames(value: Any): Self = StObject.set(x, "propertyNames", value.asInstanceOf[js.Any])
       

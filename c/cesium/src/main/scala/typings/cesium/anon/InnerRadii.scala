@@ -32,7 +32,8 @@ object InnerRadii {
     __obj.asInstanceOf[InnerRadii]
   }
   
-  extension [Self <: InnerRadii](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerRadii] (val x: Self) extends AnyVal {
     
     inline def setInnerRadii(value: Cartesian3): Self = StObject.set(x, "innerRadii", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2SensitivityScore {
     __obj.asInstanceOf[GooglePrivacyDlpV2SensitivityScore]
   }
   
-  extension [Self <: GooglePrivacyDlpV2SensitivityScore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2SensitivityScore] (val x: Self) extends AnyVal {
     
     inline def setScore(value: String): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
     

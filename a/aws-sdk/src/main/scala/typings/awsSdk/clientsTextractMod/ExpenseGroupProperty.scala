@@ -23,7 +23,8 @@ object ExpenseGroupProperty {
     __obj.asInstanceOf[ExpenseGroupProperty]
   }
   
-  extension [Self <: ExpenseGroupProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpenseGroupProperty] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object AdditionalExportOptions {
     __obj.asInstanceOf[AdditionalExportOptions]
   }
   
-  extension [Self <: AdditionalExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdditionalExportOptions] (val x: Self) extends AnyVal {
     
     inline def setColumnCalcs(value: Boolean): Self = StObject.set(x, "columnCalcs", value.asInstanceOf[js.Any])
     

@@ -466,7 +466,8 @@ object sapUiWebcMainBreadcrumbsMod {
       __obj.asInstanceOf[BreadcrumbsSettings]
     }
     
-    extension [Self <: BreadcrumbsSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BreadcrumbsSettings] (val x: Self) extends AnyVal {
       
       inline def setDesign(
         value: BreadcrumbsDesign | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof BreadcrumbsDesign * / any */ String) | PropertyBindingInfo

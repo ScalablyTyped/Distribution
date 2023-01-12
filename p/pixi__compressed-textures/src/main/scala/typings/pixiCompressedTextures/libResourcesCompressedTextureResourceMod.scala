@@ -105,7 +105,8 @@ object libResourcesCompressedTextureResourceMod {
       __obj.asInstanceOf[CompressedLevelBuffer]
     }
     
-    extension [Self <: CompressedLevelBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompressedLevelBuffer] (val x: Self) extends AnyVal {
       
       inline def setLevelBuffer(value: js.typedarray.Uint8Array): Self = StObject.set(x, "levelBuffer", value.asInstanceOf[js.Any])
       
@@ -136,7 +137,8 @@ object libResourcesCompressedTextureResourceMod {
       __obj.asInstanceOf[ICompressedTextureResourceOptions]
     }
     
-    extension [Self <: ICompressedTextureResourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICompressedTextureResourceOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: INTERNAL_FORMATS): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

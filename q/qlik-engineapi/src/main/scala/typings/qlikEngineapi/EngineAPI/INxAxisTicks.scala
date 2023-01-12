@@ -31,7 +31,8 @@ object INxAxisTicks {
     __obj.asInstanceOf[INxAxisTicks]
   }
   
-  extension [Self <: INxAxisTicks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxAxisTicks] (val x: Self) extends AnyVal {
     
     inline def setQName(value: String): Self = StObject.set(x, "qName", value.asInstanceOf[js.Any])
     

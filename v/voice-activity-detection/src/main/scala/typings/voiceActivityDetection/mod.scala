@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[VoiceActivityDetectionOptions]
     }
     
-    extension [Self <: VoiceActivityDetectionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VoiceActivityDetectionOptions] (val x: Self) extends AnyVal {
       
       inline def setAvgNoiseMultiplier(value: Double): Self = StObject.set(x, "avgNoiseMultiplier", value.asInstanceOf[js.Any])
       

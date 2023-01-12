@@ -29,7 +29,8 @@ object ParsedQuery {
     __obj.asInstanceOf[ParsedQuery]
   }
   
-  extension [Self <: ParsedQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsedQuery] (val x: Self) extends AnyVal {
     
     inline def setAst(value: js.Array[QueryAstNode]): Self = StObject.set(x, "ast", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object SyntheticDependencyLocation {
     __obj.asInstanceOf[SyntheticDependencyLocation]
   }
   
-  extension [Self <: SyntheticDependencyLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntheticDependencyLocation] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object libCommonEventsMod {
       __obj.asInstanceOf[EmitterOptions]
     }
     
-    extension [Self <: EmitterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmitterOptions] (val x: Self) extends AnyVal {
       
       inline def setOnFirstListenerAdd(value: js.Function): Self = StObject.set(x, "onFirstListenerAdd", value.asInstanceOf[js.Any])
       

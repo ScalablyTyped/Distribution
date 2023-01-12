@@ -22,7 +22,8 @@ object GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1EvaluationJobAlertConfig] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

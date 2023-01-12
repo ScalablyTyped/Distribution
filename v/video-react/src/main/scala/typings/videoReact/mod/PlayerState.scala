@@ -147,7 +147,8 @@ object PlayerState {
     __obj.asInstanceOf[PlayerState]
   }
   
-  extension [Self <: PlayerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerState] (val x: Self) extends AnyVal {
     
     inline def setAutoPaused(value: Boolean): Self = StObject.set(x, "autoPaused", value.asInstanceOf[js.Any])
     

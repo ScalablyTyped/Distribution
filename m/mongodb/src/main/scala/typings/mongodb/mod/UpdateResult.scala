@@ -34,7 +34,8 @@ object UpdateResult {
     __obj.asInstanceOf[UpdateResult]
   }
   
-  extension [Self <: UpdateResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateResult] (val x: Self) extends AnyVal {
     
     inline def setAcknowledged(value: Boolean): Self = StObject.set(x, "acknowledged", value.asInstanceOf[js.Any])
     

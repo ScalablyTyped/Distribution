@@ -15,7 +15,8 @@ object NotificationTargetActions {
     __obj.asInstanceOf[NotificationTargetActions]
   }
   
-  extension [Self <: NotificationTargetActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationTargetActions] (val x: Self) extends AnyVal {
     
     inline def setLambdaAction(value: LambdaAction): Self = StObject.set(x, "lambdaAction", value.asInstanceOf[js.Any])
     

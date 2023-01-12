@@ -220,7 +220,8 @@ object libAnchorLinkMod {
       __obj.asInstanceOf[Link]
     }
     
-    extension [Self <: Link](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Link] (val x: Self) extends AnyVal {
       
       inline def setAutoSanitize(value: Boolean): Self = StObject.set(x, "autoSanitize", value.asInstanceOf[js.Any])
       

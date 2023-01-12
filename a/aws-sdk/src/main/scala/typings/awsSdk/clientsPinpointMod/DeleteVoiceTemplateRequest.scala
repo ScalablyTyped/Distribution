@@ -23,7 +23,8 @@ object DeleteVoiceTemplateRequest {
     __obj.asInstanceOf[DeleteVoiceTemplateRequest]
   }
   
-  extension [Self <: DeleteVoiceTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVoiceTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setTemplateName(value: string): Self = StObject.set(x, "TemplateName", value.asInstanceOf[js.Any])
     

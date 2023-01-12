@@ -21,7 +21,8 @@ object dxDropDownButtonItem {
     __obj.asInstanceOf[dxDropDownButtonItem]
   }
   
-  extension [Self <: dxDropDownButtonItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDropDownButtonItem] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: (js.Function1[/* e */ ItemClickEvent, Unit]) | String): Self = StObject.set(x, "onClick", value.asInstanceOf[js.Any])
     

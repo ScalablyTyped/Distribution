@@ -16,7 +16,8 @@ object DeleteDimensionGroupRequest {
     __obj.asInstanceOf[DeleteDimensionGroupRequest]
   }
   
-  extension [Self <: DeleteDimensionGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteDimensionGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setRange(value: DimensionRange): Self = StObject.set(x, "range", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object Cross {
     __obj.asInstanceOf[Cross]
   }
   
-  extension [Self <: Cross](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Cross] (val x: Self) extends AnyVal {
     
     inline def setCross(value: Side): Self = StObject.set(x, "cross", value.asInstanceOf[js.Any])
     

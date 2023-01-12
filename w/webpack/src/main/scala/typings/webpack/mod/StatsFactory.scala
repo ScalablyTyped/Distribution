@@ -21,7 +21,8 @@ object StatsFactory {
     __obj.asInstanceOf[StatsFactory]
   }
   
-  extension [Self <: StatsFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsFactory] (val x: Self) extends AnyVal {
     
     inline def setCreate(value: (String, Any, Omit[StatsFactoryContext, `type`]) => Any): Self = StObject.set(x, "create", js.Any.fromFunction3(value))
     

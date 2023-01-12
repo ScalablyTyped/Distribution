@@ -18,7 +18,8 @@ object GetMetadataResponse {
     __obj.asInstanceOf[GetMetadataResponse]
   }
   
-  extension [Self <: GetMetadataResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetMetadataResponse] (val x: Self) extends AnyVal {
     
     inline def setFeatures(value: FeaturesMap): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
   }

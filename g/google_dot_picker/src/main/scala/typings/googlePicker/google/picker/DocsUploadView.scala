@@ -19,7 +19,8 @@ object DocsUploadView {
     __obj.asInstanceOf[DocsUploadView]
   }
   
-  extension [Self <: DocsUploadView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocsUploadView] (val x: Self) extends AnyVal {
     
     inline def setSetIncludeFolders(value: Boolean => DocsUploadView): Self = StObject.set(x, "setIncludeFolders", js.Any.fromFunction1(value))
     

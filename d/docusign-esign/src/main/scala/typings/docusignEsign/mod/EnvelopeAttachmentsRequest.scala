@@ -18,7 +18,8 @@ object EnvelopeAttachmentsRequest {
     __obj.asInstanceOf[EnvelopeAttachmentsRequest]
   }
   
-  extension [Self <: EnvelopeAttachmentsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeAttachmentsRequest] (val x: Self) extends AnyVal {
     
     inline def setAttachments(value: js.Array[/* Contains information about an attachment. */ Attachment]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
     

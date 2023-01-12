@@ -28,7 +28,8 @@ object PasteDataRequest {
     __obj.asInstanceOf[PasteDataRequest]
   }
   
-  extension [Self <: PasteDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasteDataRequest] (val x: Self) extends AnyVal {
     
     inline def setCoordinate(value: GridCoordinate): Self = StObject.set(x, "coordinate", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object EagerPrimMST {
     __obj.asInstanceOf[EagerPrimMST]
   }
   
-  extension [Self <: EagerPrimMST](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EagerPrimMST] (val x: Self) extends AnyVal {
     
     inline def setMarked(value: Any): Self = StObject.set(x, "marked", value.asInstanceOf[js.Any])
     

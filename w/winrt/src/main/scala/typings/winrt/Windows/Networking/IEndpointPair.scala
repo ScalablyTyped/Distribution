@@ -26,7 +26,8 @@ object IEndpointPair {
     __obj.asInstanceOf[IEndpointPair]
   }
   
-  extension [Self <: IEndpointPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEndpointPair] (val x: Self) extends AnyVal {
     
     inline def setLocalHostName(value: HostName): Self = StObject.set(x, "localHostName", value.asInstanceOf[js.Any])
     

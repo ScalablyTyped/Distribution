@@ -40,7 +40,8 @@ object CompactDisplay {
     __obj.asInstanceOf[CompactDisplay]
   }
   
-  extension [Self <: CompactDisplay](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompactDisplay] (val x: Self) extends AnyVal {
     
     inline def setCompactDisplay(value: NumberFormatOptionsCompactDisplay): Self = StObject.set(x, "compactDisplay", value.asInstanceOf[js.Any])
     

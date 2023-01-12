@@ -25,7 +25,8 @@ object XAccessibleGetAccFlowTo {
     __obj.asInstanceOf[XAccessibleGetAccFlowTo]
   }
   
-  extension [Self <: XAccessibleGetAccFlowTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleGetAccFlowTo] (val x: Self) extends AnyVal {
     
     inline def setGetAccFlowTo(value: (Any, Double) => SafeArray[Any]): Self = StObject.set(x, "getAccFlowTo", js.Any.fromFunction2(value))
   }

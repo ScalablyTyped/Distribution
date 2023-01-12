@@ -66,7 +66,8 @@ object mod {
       __obj.asInstanceOf[GulpSpriteSmithOptions]
     }
     
-    extension [Self <: GulpSpriteSmithOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpSpriteSmithOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: `top-down` | `left-right` | diagonal | `alt-diagonal` | `binary-tree` | String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -194,7 +195,8 @@ object mod {
       __obj.asInstanceOf[GulpSpriteSmithRetinaOptions]
     }
     
-    extension [Self <: GulpSpriteSmithRetinaOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GulpSpriteSmithRetinaOptions] (val x: Self) extends AnyVal {
       
       inline def setAlgorithm(value: `top-down` | `left-right` | diagonal | `alt-diagonal` | `binary-tree` | String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
@@ -327,7 +329,8 @@ object mod {
       __obj.asInstanceOf[Sprite]
     }
     
-    extension [Self <: Sprite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sprite] (val x: Self) extends AnyVal {
       
       inline def setEscaped_image(value: String): Self = StObject.set(x, "escaped_image", value.asInstanceOf[js.Any])
       
@@ -376,7 +379,8 @@ object mod {
       __obj.asInstanceOf[Spritesheet]
     }
     
-    extension [Self <: Spritesheet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Spritesheet] (val x: Self) extends AnyVal {
       
       inline def setEscaped_image(value: String): Self = StObject.set(x, "escaped_image", value.asInstanceOf[js.Any])
       
@@ -401,7 +405,8 @@ object mod {
       __obj.asInstanceOf[SpritesheetInfo]
     }
     
-    extension [Self <: SpritesheetInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpritesheetInfo] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -422,7 +427,8 @@ object mod {
       __obj.asInstanceOf[SpritesmithData]
     }
     
-    extension [Self <: SpritesmithData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpritesmithData] (val x: Self) extends AnyVal {
       
       inline def setSprites(value: js.Array[Sprite]): Self = StObject.set(x, "sprites", value.asInstanceOf[js.Any])
       
@@ -467,7 +473,8 @@ object mod {
       __obj.asInstanceOf[SpritesmithRetinaData]
     }
     
-    extension [Self <: SpritesmithRetinaData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpritesmithRetinaData] (val x: Self) extends AnyVal {
       
       inline def setOptions(value: Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       

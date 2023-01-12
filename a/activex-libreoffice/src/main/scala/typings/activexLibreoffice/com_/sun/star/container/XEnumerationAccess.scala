@@ -28,7 +28,8 @@ object XEnumerationAccess {
     __obj.asInstanceOf[XEnumerationAccess]
   }
   
-  extension [Self <: XEnumerationAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XEnumerationAccess] (val x: Self) extends AnyVal {
     
     inline def setCreateEnumeration(value: () => XEnumeration): Self = StObject.set(x, "createEnumeration", js.Any.fromFunction0(value))
   }

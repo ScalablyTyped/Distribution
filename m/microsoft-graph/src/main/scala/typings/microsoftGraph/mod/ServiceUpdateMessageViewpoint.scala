@@ -22,7 +22,8 @@ object ServiceUpdateMessageViewpoint {
     __obj.asInstanceOf[ServiceUpdateMessageViewpoint]
   }
   
-  extension [Self <: ServiceUpdateMessageViewpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceUpdateMessageViewpoint] (val x: Self) extends AnyVal {
     
     inline def setIsArchived(value: NullableOption[Boolean]): Self = StObject.set(x, "isArchived", value.asInstanceOf[js.Any])
     

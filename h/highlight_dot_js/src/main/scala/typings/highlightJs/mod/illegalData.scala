@@ -23,7 +23,8 @@ object illegalData {
     __obj.asInstanceOf[illegalData]
   }
   
-  extension [Self <: illegalData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: illegalData] (val x: Self) extends AnyVal {
     
     inline def setContext(value: String): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object StartTaskContactResponse {
     __obj.asInstanceOf[StartTaskContactResponse]
   }
   
-  extension [Self <: StartTaskContactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartTaskContactResponse] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

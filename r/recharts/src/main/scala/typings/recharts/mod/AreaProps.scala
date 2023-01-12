@@ -261,7 +261,8 @@ object AreaProps {
     __obj.asInstanceOf[AreaProps]
   }
   
-  extension [Self <: AreaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaProps] (val x: Self) extends AnyVal {
     
     inline def setActiveDot(value: Boolean | js.Object | ReactElement | ContentRenderer[Any]): Self = StObject.set(x, "activeDot", value.asInstanceOf[js.Any])
     

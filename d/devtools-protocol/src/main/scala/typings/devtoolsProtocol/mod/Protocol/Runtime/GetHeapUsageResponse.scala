@@ -23,7 +23,8 @@ object GetHeapUsageResponse {
     __obj.asInstanceOf[GetHeapUsageResponse]
   }
   
-  extension [Self <: GetHeapUsageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHeapUsageResponse] (val x: Self) extends AnyVal {
     
     inline def setTotalSize(value: Double): Self = StObject.set(x, "totalSize", value.asInstanceOf[js.Any])
     

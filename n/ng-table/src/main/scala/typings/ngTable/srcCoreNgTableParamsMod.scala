@@ -349,7 +349,8 @@ object srcCoreNgTableParamsMod {
       __obj.asInstanceOf[IParamValues[T]]
     }
     
-    extension [Self <: IParamValues[?], T](x: Self & IParamValues[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParamValues[?], T] (val x: Self & IParamValues[T]) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       

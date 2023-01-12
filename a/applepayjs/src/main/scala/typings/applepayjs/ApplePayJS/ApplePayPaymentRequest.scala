@@ -93,7 +93,8 @@ object ApplePayPaymentRequest {
     __obj.asInstanceOf[ApplePayPaymentRequest]
   }
   
-  extension [Self <: ApplePayPaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplePayPaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setApplicationData(value: String): Self = StObject.set(x, "applicationData", value.asInstanceOf[js.Any])
     

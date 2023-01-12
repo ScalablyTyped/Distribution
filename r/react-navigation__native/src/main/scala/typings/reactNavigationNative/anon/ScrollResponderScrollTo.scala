@@ -19,7 +19,8 @@ object ScrollResponderScrollTo {
     __obj.asInstanceOf[ScrollResponderScrollTo]
   }
   
-  extension [Self <: ScrollResponderScrollTo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollResponderScrollTo] (val x: Self) extends AnyVal {
     
     inline def setScrollResponderScrollTo(value: ScrollOptions => Unit): Self = StObject.set(x, "scrollResponderScrollTo", js.Any.fromFunction1(value))
   }

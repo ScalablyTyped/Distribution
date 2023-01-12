@@ -22,7 +22,8 @@ object GooglePrivacyDlpV2Color {
     __obj.asInstanceOf[GooglePrivacyDlpV2Color]
   }
   
-  extension [Self <: GooglePrivacyDlpV2Color](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2Color] (val x: Self) extends AnyVal {
     
     inline def setBlue(value: Double): Self = StObject.set(x, "blue", value.asInstanceOf[js.Any])
     

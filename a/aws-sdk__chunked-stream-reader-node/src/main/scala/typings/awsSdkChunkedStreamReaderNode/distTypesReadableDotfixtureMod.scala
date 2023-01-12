@@ -38,7 +38,8 @@ object distTypesReadableDotfixtureMod {
       __obj.asInstanceOf[ReadFromBuffersOptions]
     }
     
-    extension [Self <: ReadFromBuffersOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadFromBuffersOptions] (val x: Self) extends AnyVal {
       
       inline def setBuffers(value: js.Array[Buffer]): Self = StObject.set(x, "buffers", value.asInstanceOf[js.Any])
       

@@ -58,7 +58,8 @@ object TopBarContainerProps {
     __obj.asInstanceOf[TopBarContainerProps]
   }
   
-  extension [Self <: TopBarContainerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopBarContainerProps] (val x: Self) extends AnyVal {
     
     inline def setBackground(value: BackgroundProps): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
     

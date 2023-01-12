@@ -74,7 +74,8 @@ object IDock {
     __obj.asInstanceOf[IDock]
   }
   
-  extension [Self <: IDock](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDock] (val x: Self) extends AnyVal {
     
     inline def setBeginLayout(value: /* ownerContext */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "beginLayout", js.Any.fromFunction1(value))
     

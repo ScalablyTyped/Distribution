@@ -70,7 +70,8 @@ object mod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[PackageMetadata]
     }
     
-    extension [Self <: PackageMetadata](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageMetadata] (val x: Self) extends AnyVal {
       
       inline def setDependencies(value: Record[String, String]): Self = StObject.set(x, "dependencies", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod {
       __obj.asInstanceOf[ParseLockfileOptions]
     }
     
-    extension [Self <: ParseLockfileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseLockfileOptions] (val x: Self) extends AnyVal {
       
       inline def setLockfilePath(value: String): Self = StObject.set(x, "lockfilePath", value.asInstanceOf[js.Any])
       
@@ -147,7 +150,8 @@ object mod {
       __obj.asInstanceOf[ParseLockfileResult]
     }
     
-    extension [Self <: ParseLockfileResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseLockfileResult] (val x: Self) extends AnyVal {
       
       inline def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object mod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       
@@ -192,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ValidationOptions]
     }
     
-    extension [Self <: ValidationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       inline def setEmptyHostname(value: Boolean): Self = StObject.set(x, "emptyHostname", value.asInstanceOf[js.Any])
       
@@ -238,7 +244,8 @@ object mod {
       __obj.asInstanceOf[ValidationSuccess]
     }
     
-    extension [Self <: ValidationSuccess](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationSuccess] (val x: Self) extends AnyVal {
       
       inline def setObject(value: Packages): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       

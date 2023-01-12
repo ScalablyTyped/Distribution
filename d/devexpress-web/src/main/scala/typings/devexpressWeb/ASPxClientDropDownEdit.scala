@@ -93,7 +93,8 @@ object ASPxClientDropDownEdit {
     __obj.asInstanceOf[ASPxClientDropDownEdit]
   }
   
-  extension [Self <: ASPxClientDropDownEdit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientDropDownEdit] (val x: Self) extends AnyVal {
     
     inline def setDropDownCommandButtonClick(value: ASPxClientEvent[ASPxClientDropDownCommandEventHandler[ASPxClientDropDownEdit]]): Self = StObject.set(x, "DropDownCommandButtonClick", value.asInstanceOf[js.Any])
     

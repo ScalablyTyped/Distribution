@@ -23,7 +23,8 @@ object UpdateRequireCheckIn {
     __obj.asInstanceOf[UpdateRequireCheckIn]
   }
   
-  extension [Self <: UpdateRequireCheckIn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateRequireCheckIn] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
     

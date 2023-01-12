@@ -21,7 +21,8 @@ object GetGrantsParams {
     __obj.asInstanceOf[GetGrantsParams]
   }
   
-  extension [Self <: GetGrantsParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGrantsParams] (val x: Self) extends AnyVal {
     
     inline def setAudience(value: String): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
     

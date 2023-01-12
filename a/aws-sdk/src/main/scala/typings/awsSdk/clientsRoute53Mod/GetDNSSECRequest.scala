@@ -18,7 +18,8 @@ object GetDNSSECRequest {
     __obj.asInstanceOf[GetDNSSECRequest]
   }
   
-  extension [Self <: GetDNSSECRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDNSSECRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
   }

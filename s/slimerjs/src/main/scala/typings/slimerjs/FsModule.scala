@@ -138,7 +138,8 @@ object FsModule {
     __obj.asInstanceOf[FsModule]
   }
   
-  extension [Self <: FsModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FsModule] (val x: Self) extends AnyVal {
     
     inline def setAbsolute(value: String => String): Self = StObject.set(x, "absolute", js.Any.fromFunction1(value))
     

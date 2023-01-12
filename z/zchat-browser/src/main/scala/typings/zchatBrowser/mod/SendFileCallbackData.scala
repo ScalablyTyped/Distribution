@@ -21,7 +21,8 @@ object SendFileCallbackData {
     __obj.asInstanceOf[SendFileCallbackData]
   }
   
-  extension [Self <: SendFileCallbackData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendFileCallbackData] (val x: Self) extends AnyVal {
     
     inline def setMime_type(value: String): Self = StObject.set(x, "mime_type", value.asInstanceOf[js.Any])
     

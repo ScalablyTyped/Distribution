@@ -43,7 +43,8 @@ object Transformation {
     __obj.asInstanceOf[Transformation]
   }
   
-  extension [Self <: Transformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transformation] (val x: Self) extends AnyVal {
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

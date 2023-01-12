@@ -122,7 +122,8 @@ object mod {
       __obj.asInstanceOf[DialogContentProps]
     }
     
-    extension [Self <: DialogContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogContentProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -180,7 +181,8 @@ object mod {
       __obj.asInstanceOf[DialogOverlayProps]
     }
     
-    extension [Self <: DialogOverlayProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogOverlayProps] (val x: Self) extends AnyVal {
       
       inline def setDangerouslyBypassFocusLock(value: Boolean): Self = StObject.set(x, "dangerouslyBypassFocusLock", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object mod {
       __obj.asInstanceOf[DialogProps]
     }
     
-    extension [Self <: DialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogProps] (val x: Self) extends AnyVal {
       
       inline def setAllowPinchZoom(value: Boolean): Self = StObject.set(x, "allowPinchZoom", value.asInstanceOf[js.Any])
       
@@ -321,7 +324,8 @@ object mod {
       __obj.asInstanceOf[DialogWrapperProps]
     }
     
-    extension [Self <: DialogWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialogWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setIsOpen(value: Boolean): Self = StObject.set(x, "isOpen", value.asInstanceOf[js.Any])
       

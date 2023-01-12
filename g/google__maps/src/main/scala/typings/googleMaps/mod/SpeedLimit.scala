@@ -22,7 +22,8 @@ object SpeedLimit {
     __obj.asInstanceOf[SpeedLimit]
   }
   
-  extension [Self <: SpeedLimit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpeedLimit] (val x: Self) extends AnyVal {
     
     inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     

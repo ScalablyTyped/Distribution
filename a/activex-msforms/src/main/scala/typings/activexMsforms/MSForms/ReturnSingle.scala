@@ -19,7 +19,8 @@ object ReturnSingle {
     __obj.asInstanceOf[ReturnSingle]
   }
   
-  extension [Self <: ReturnSingle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnSingle] (val x: Self) extends AnyVal {
     
     inline def setMSFormsDotReturnSingle_typekey(value: ReturnSingle): Self = StObject.set(x, "MSForms.ReturnSingle_typekey", value.asInstanceOf[js.Any])
     

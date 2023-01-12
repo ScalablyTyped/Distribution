@@ -38,7 +38,8 @@ object Fetch {
     __obj.asInstanceOf[Fetch[Fn, T, U]]
   }
   
-  extension [Self <: Fetch[?, ?, ?], Fn /* <: Transform[T] */, T /* <: Document */, U](x: Self & (Fetch[Fn, T, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fetch[?, ?, ?], Fn /* <: Transform[T] */, T /* <: Document */, U] (val x: Self & (Fetch[Fn, T, U])) extends AnyVal {
     
     inline def setFetch(value: js.Array[String]): Self = StObject.set(x, "fetch", value.asInstanceOf[js.Any])
     

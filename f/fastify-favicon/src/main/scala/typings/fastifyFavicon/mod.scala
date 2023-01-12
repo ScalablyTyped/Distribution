@@ -29,7 +29,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[FastifyFaviconOptions]
     }
     
-    extension [Self <: FastifyFaviconOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FastifyFaviconOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxAge(value: Double): Self = StObject.set(x, "maxAge", value.asInstanceOf[js.Any])
       

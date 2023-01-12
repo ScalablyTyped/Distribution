@@ -16,7 +16,8 @@ object TrackSearchResult {
     __obj.asInstanceOf[TrackSearchResult]
   }
   
-  extension [Self <: TrackSearchResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TrackSearchResult] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: Body): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
   }

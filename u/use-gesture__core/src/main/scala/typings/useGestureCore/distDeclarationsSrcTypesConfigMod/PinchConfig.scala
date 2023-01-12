@@ -50,7 +50,8 @@ object PinchConfig {
     __obj.asInstanceOf[PinchConfig]
   }
   
-  extension [Self <: PinchConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinchConfig] (val x: Self) extends AnyVal {
     
     inline def setAngleBounds(
       value: PinchBounds | (js.Function1[/* state */ js.UndefOr[PinchStateeventEventTypes], PinchBounds])

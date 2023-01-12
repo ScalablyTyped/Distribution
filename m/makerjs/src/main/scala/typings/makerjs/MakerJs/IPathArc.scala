@@ -35,7 +35,8 @@ object IPathArc {
     __obj.asInstanceOf[IPathArc]
   }
   
-  extension [Self <: IPathArc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPathArc] (val x: Self) extends AnyVal {
     
     inline def setEndAngle(value: Double): Self = StObject.set(x, "endAngle", value.asInstanceOf[js.Any])
     

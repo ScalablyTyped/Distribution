@@ -57,7 +57,8 @@ object ScrollToFixed {
       __obj.asInstanceOf[ScrollToFixedOptions]
     }
     
-    extension [Self <: ScrollToFixedOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollToFixedOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseClassName(value: String): Self = StObject.set(x, "baseClassName", value.asInstanceOf[js.Any])
       

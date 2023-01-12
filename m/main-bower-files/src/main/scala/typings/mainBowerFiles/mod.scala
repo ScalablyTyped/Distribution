@@ -42,7 +42,8 @@ object mod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckExistence(value: Boolean): Self = StObject.set(x, "checkExistence", value.asInstanceOf[js.Any])
       
@@ -99,7 +100,8 @@ object mod {
       __obj.asInstanceOf[IPaths]
     }
     
-    extension [Self <: IPaths](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPaths] (val x: Self) extends AnyVal {
       
       inline def setBowerDirectory(value: String): Self = StObject.set(x, "bowerDirectory", value.asInstanceOf[js.Any])
       

@@ -21,7 +21,8 @@ object MlPreviewDatafeedRequest {
     __obj.asInstanceOf[MlPreviewDatafeedRequest]
   }
   
-  extension [Self <: MlPreviewDatafeedRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlPreviewDatafeedRequest] (val x: Self) extends AnyVal {
     
     inline def setBody(value: Datafeedconfig): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

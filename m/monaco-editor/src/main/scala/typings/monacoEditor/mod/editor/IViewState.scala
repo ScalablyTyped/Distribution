@@ -26,7 +26,8 @@ object IViewState {
     __obj.asInstanceOf[IViewState]
   }
   
-  extension [Self <: IViewState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IViewState] (val x: Self) extends AnyVal {
     
     inline def setFirstPosition(value: IPosition): Self = StObject.set(x, "firstPosition", value.asInstanceOf[js.Any])
     

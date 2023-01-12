@@ -22,7 +22,8 @@ object GeoCoordinates {
     __obj.asInstanceOf[GeoCoordinates]
   }
   
-  extension [Self <: GeoCoordinates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoCoordinates] (val x: Self) extends AnyVal {
     
     inline def setAltitude(value: NullableOption[Double]): Self = StObject.set(x, "altitude", value.asInstanceOf[js.Any])
     

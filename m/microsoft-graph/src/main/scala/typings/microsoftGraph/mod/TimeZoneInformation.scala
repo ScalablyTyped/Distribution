@@ -19,7 +19,8 @@ object TimeZoneInformation {
     __obj.asInstanceOf[TimeZoneInformation]
   }
   
-  extension [Self <: TimeZoneInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeZoneInformation] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

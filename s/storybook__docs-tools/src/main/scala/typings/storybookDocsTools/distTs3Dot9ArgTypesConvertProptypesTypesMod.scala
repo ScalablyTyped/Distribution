@@ -21,7 +21,8 @@ object distTs3Dot9ArgTypesConvertProptypesTypesMod {
       __obj.asInstanceOf[PTBaseType]
     }
     
-    extension [Self <: PTBaseType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PTBaseType] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object distTs3Dot9ArgTypesConvertProptypesTypesMod {
       __obj.asInstanceOf[PTType]
     }
     
-    extension [Self <: PTType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PTType] (val x: Self) extends AnyVal {
       
       inline def setComputed(value: Boolean): Self = StObject.set(x, "computed", value.asInstanceOf[js.Any])
       

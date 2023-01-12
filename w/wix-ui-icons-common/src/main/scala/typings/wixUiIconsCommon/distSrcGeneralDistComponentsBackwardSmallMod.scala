@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsBackwardSmallMod extends Shortcut {
       __obj.asInstanceOf[BackwardSmallProps]
     }
     
-    extension [Self <: BackwardSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackwardSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

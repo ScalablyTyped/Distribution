@@ -29,7 +29,8 @@ object UIkitTooltipOptions {
     __obj.asInstanceOf[UIkitTooltipOptions]
   }
   
-  extension [Self <: UIkitTooltipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitTooltipOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

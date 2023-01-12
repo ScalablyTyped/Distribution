@@ -17,7 +17,8 @@ object DeploymentMachine {
     __obj.asInstanceOf[DeploymentMachine]
   }
   
-  extension [Self <: DeploymentMachine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentMachine] (val x: Self) extends AnyVal {
     
     inline def setAgent(value: TaskAgentReference): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
     

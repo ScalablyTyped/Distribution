@@ -78,7 +78,8 @@ object ImageAttribute {
     __obj.asInstanceOf[ImageAttribute]
   }
   
-  extension [Self <: ImageAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAttribute] (val x: Self) extends AnyVal {
     
     inline def setBlockDeviceMappings(value: BlockDeviceMappingList): Self = StObject.set(x, "BlockDeviceMappings", value.asInstanceOf[js.Any])
     

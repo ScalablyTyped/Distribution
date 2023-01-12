@@ -21,7 +21,8 @@ object IssuerSerialJson {
     __obj.asInstanceOf[IssuerSerialJson]
   }
   
-  extension [Self <: IssuerSerialJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuerSerialJson] (val x: Self) extends AnyVal {
     
     inline def setIssuer(value: GeneralNamesJson): Self = StObject.set(x, "issuer", value.asInstanceOf[js.Any])
     

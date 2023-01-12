@@ -15,7 +15,8 @@ object CustomFieldsBoolean {
     __obj.asInstanceOf[CustomFieldsBoolean]
   }
   
-  extension [Self <: CustomFieldsBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomFieldsBoolean] (val x: Self) extends AnyVal {
     
     inline def setCustomFields(value: Boolean): Self = StObject.set(x, "customFields", value.asInstanceOf[js.Any])
   }

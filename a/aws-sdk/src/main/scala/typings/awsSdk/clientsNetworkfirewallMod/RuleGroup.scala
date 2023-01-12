@@ -33,7 +33,8 @@ object RuleGroup {
     __obj.asInstanceOf[RuleGroup]
   }
   
-  extension [Self <: RuleGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroup] (val x: Self) extends AnyVal {
     
     inline def setReferenceSets(value: ReferenceSets): Self = StObject.set(x, "ReferenceSets", value.asInstanceOf[js.Any])
     

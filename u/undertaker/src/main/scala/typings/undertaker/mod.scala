@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Node]
     }
     
-    extension [Self <: Node](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Node] (val x: Self) extends AnyVal {
       
       inline def setBranch(value: Boolean): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object mod {
       __obj.asInstanceOf[TaskFunctionParams]
     }
     
-    extension [Self <: TaskFunctionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskFunctionParams] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object mod {
       __obj.asInstanceOf[TreeOptions]
     }
     
-    extension [Self <: TreeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeOptions] (val x: Self) extends AnyVal {
       
       inline def setDeep(value: Boolean): Self = StObject.set(x, "deep", value.asInstanceOf[js.Any])
       
@@ -156,7 +159,8 @@ object mod {
       __obj.asInstanceOf[TreeResult]
     }
     
-    extension [Self <: TreeResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeResult] (val x: Self) extends AnyVal {
       
       inline def setLabel(value: Tasks): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
       

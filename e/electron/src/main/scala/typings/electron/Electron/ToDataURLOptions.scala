@@ -18,7 +18,8 @@ object ToDataURLOptions {
     __obj.asInstanceOf[ToDataURLOptions]
   }
   
-  extension [Self <: ToDataURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToDataURLOptions] (val x: Self) extends AnyVal {
     
     inline def setScaleFactor(value: Double): Self = StObject.set(x, "scaleFactor", value.asInstanceOf[js.Any])
     

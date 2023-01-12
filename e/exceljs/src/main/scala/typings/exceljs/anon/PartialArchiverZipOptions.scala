@@ -24,7 +24,8 @@ object PartialArchiverZipOptions {
     __obj.asInstanceOf[PartialArchiverZipOptions]
   }
   
-  extension [Self <: PartialArchiverZipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialArchiverZipOptions] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

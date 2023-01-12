@@ -23,7 +23,8 @@ object MaintenanceWindowFilter {
     __obj.asInstanceOf[MaintenanceWindowFilter]
   }
   
-  extension [Self <: MaintenanceWindowFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenanceWindowFilter] (val x: Self) extends AnyVal {
     
     inline def setKey(value: MaintenanceWindowFilterKey): Self = StObject.set(x, "Key", value.asInstanceOf[js.Any])
     

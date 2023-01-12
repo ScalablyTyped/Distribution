@@ -28,7 +28,8 @@ object Genres {
     __obj.asInstanceOf[Genres]
   }
   
-  extension [Self <: Genres](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Genres] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Name): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

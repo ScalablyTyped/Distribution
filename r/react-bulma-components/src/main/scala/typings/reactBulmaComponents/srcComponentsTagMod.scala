@@ -34,7 +34,8 @@ object srcComponentsTagMod extends Shortcut {
       __obj.asInstanceOf[TagGroupProps]
     }
     
-    extension [Self <: TagGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagGroupProps] (val x: Self) extends AnyVal {
       
       inline def setGapless(value: Boolean): Self = StObject.set(x, "gapless", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object srcComponentsTagMod extends Shortcut {
       __obj.asInstanceOf[TagProps]
     }
     
-    extension [Self <: TagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TagProps] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

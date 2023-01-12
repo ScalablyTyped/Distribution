@@ -50,7 +50,8 @@ object PartialResultSet {
     __obj.asInstanceOf[PartialResultSet]
   }
   
-  extension [Self <: PartialResultSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialResultSet] (val x: Self) extends AnyVal {
     
     inline def setChunkedValue(value: Boolean): Self = StObject.set(x, "chunkedValue", value.asInstanceOf[js.Any])
     

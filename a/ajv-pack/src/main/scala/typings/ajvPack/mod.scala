@@ -366,7 +366,8 @@ object mod {
       __obj.asInstanceOf[AjvPack]
     }
     
-    extension [Self <: AjvPack](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AjvPack] (val x: Self) extends AnyVal {
       
       inline def setAddKeyword(value: FnCallKwdOrDefDef): Self = StObject.set(x, "addKeyword", value.asInstanceOf[js.Any])
       

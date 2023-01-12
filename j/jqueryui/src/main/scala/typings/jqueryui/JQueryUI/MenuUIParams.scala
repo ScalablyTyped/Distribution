@@ -16,7 +16,8 @@ object MenuUIParams {
     __obj.asInstanceOf[MenuUIParams]
   }
   
-  extension [Self <: MenuUIParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuUIParams] (val x: Self) extends AnyVal {
     
     inline def setItem(value: JQuery): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

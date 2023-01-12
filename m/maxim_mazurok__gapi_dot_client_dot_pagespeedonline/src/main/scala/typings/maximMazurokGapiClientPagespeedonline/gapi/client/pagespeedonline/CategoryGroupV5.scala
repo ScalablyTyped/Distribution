@@ -19,7 +19,8 @@ object CategoryGroupV5 {
     __obj.asInstanceOf[CategoryGroupV5]
   }
   
-  extension [Self <: CategoryGroupV5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CategoryGroupV5] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

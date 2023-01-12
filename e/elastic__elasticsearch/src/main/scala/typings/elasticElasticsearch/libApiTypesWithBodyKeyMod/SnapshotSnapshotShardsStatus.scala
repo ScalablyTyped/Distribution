@@ -17,7 +17,8 @@ object SnapshotSnapshotShardsStatus {
     __obj.asInstanceOf[SnapshotSnapshotShardsStatus]
   }
   
-  extension [Self <: SnapshotSnapshotShardsStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotSnapshotShardsStatus] (val x: Self) extends AnyVal {
     
     inline def setStage(value: SnapshotShardsStatsStage): Self = StObject.set(x, "stage", value.asInstanceOf[js.Any])
     

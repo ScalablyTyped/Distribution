@@ -23,7 +23,8 @@ object FilterEntry {
     __obj.asInstanceOf[FilterEntry]
   }
   
-  extension [Self <: FilterEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterEntry] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: Boolean): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

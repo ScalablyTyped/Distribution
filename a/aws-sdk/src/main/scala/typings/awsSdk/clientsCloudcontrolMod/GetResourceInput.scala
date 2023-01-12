@@ -33,7 +33,8 @@ object GetResourceInput {
     __obj.asInstanceOf[GetResourceInput]
   }
   
-  extension [Self <: GetResourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourceInput] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: Identifier): Self = StObject.set(x, "Identifier", value.asInstanceOf[js.Any])
     

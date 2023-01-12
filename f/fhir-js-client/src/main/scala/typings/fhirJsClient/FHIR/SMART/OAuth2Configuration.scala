@@ -41,7 +41,8 @@ object OAuth2Configuration {
     __obj.asInstanceOf[OAuth2Configuration]
   }
   
-  extension [Self <: OAuth2Configuration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth2Configuration] (val x: Self) extends AnyVal {
     
     inline def setClient(value: OAuth2ClientSettings): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object AwsEcsServiceLoadBalancersDetails {
     __obj.asInstanceOf[AwsEcsServiceLoadBalancersDetails]
   }
   
-  extension [Self <: AwsEcsServiceLoadBalancersDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsServiceLoadBalancersDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerName(value: NonEmptyString): Self = StObject.set(x, "ContainerName", value.asInstanceOf[js.Any])
     

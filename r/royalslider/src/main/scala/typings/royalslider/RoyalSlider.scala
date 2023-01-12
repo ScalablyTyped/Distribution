@@ -190,7 +190,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderAutoplayOptions]
     }
     
-    extension [Self <: RoyalSliderAutoplayOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderAutoplayOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -249,7 +250,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderBlockOptions]
     }
     
-    extension [Self <: RoyalSliderBlockOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderBlockOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -301,7 +303,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderDeeplinkingOptions]
     }
     
-    extension [Self <: RoyalSliderDeeplinkingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderDeeplinkingOptions] (val x: Self) extends AnyVal {
       
       inline def setChange(value: Boolean): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
       
@@ -346,7 +349,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderFullscreenOptions]
     }
     
-    extension [Self <: RoyalSliderFullscreenOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderFullscreenOptions] (val x: Self) extends AnyVal {
       
       inline def setButtonFS(value: Boolean): Self = StObject.set(x, "buttonFS", value.asInstanceOf[js.Any])
       
@@ -591,7 +595,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderOptions]
     }
     
-    extension [Self <: RoyalSliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderOptions] (val x: Self) extends AnyVal {
       
       inline def setAddActiveClass(value: Boolean): Self = StObject.set(x, "addActiveClass", value.asInstanceOf[js.Any])
       
@@ -873,7 +878,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderSlide]
     }
     
-    extension [Self <: RoyalSliderSlide](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderSlide] (val x: Self) extends AnyVal {
       
       inline def setAppendOnLoaded(value: Boolean): Self = StObject.set(x, "appendOnLoaded", value.asInstanceOf[js.Any])
       
@@ -983,7 +989,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderThumbsOptions]
     }
     
-    extension [Self <: RoyalSliderThumbsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderThumbsOptions] (val x: Self) extends AnyVal {
       
       inline def setAppendSpan(value: Boolean): Self = StObject.set(x, "appendSpan", value.asInstanceOf[js.Any])
       
@@ -1073,7 +1080,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderVideoOptions]
     }
     
-    extension [Self <: RoyalSliderVideoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderVideoOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoHideArrows(value: Boolean): Self = StObject.set(x, "autoHideArrows", value.asInstanceOf[js.Any])
       
@@ -1136,7 +1144,8 @@ object RoyalSlider {
       __obj.asInstanceOf[RoyalSliderVisibleOptions]
     }
     
-    extension [Self <: RoyalSliderVisibleOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RoyalSliderVisibleOptions] (val x: Self) extends AnyVal {
       
       inline def setBreakpoint(value: Double): Self = StObject.set(x, "breakpoint", value.asInstanceOf[js.Any])
       

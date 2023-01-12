@@ -57,7 +57,8 @@ object KmlLineString {
     __obj.asInstanceOf[KmlLineString]
   }
   
-  extension [Self <: KmlLineString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KmlLineString] (val x: Self) extends AnyVal {
     
     inline def setGetAltitudeOffset(value: () => Double): Self = StObject.set(x, "getAltitudeOffset", js.Any.fromFunction0(value))
     

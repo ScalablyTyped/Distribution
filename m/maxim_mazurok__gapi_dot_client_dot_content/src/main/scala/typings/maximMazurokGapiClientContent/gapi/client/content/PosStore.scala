@@ -37,7 +37,8 @@ object PosStore {
     __obj.asInstanceOf[PosStore]
   }
   
-  extension [Self <: PosStore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PosStore] (val x: Self) extends AnyVal {
     
     inline def setGcidCategory(value: js.Array[String]): Self = StObject.set(x, "gcidCategory", value.asInstanceOf[js.Any])
     

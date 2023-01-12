@@ -43,7 +43,8 @@ object WebStyleSymbolProperties {
     __obj.asInstanceOf[WebStyleSymbolProperties]
   }
   
-  extension [Self <: WebStyleSymbolProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebStyleSymbolProperties] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

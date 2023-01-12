@@ -102,7 +102,8 @@ object mod {
       __obj.asInstanceOf[HDKeyOpt]
     }
     
-    extension [Self <: HDKeyOpt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HDKeyOpt] (val x: Self) extends AnyVal {
       
       inline def setChainCode(value: js.typedarray.Uint8Array): Self = StObject.set(x, "chainCode", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object mod {
       __obj.asInstanceOf[Versions]
     }
     
-    extension [Self <: Versions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Versions] (val x: Self) extends AnyVal {
       
       inline def setPrivate(value: Double): Self = StObject.set(x, "private", value.asInstanceOf[js.Any])
       

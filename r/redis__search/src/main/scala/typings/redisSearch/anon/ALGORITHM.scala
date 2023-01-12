@@ -27,7 +27,8 @@ object ALGORITHM {
     __obj.asInstanceOf[ALGORITHM[T]]
   }
   
-  extension [Self <: ALGORITHM[?], T /* <: VectorAlgorithms */](x: Self & ALGORITHM[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ALGORITHM[?], T /* <: VectorAlgorithms */] (val x: Self & ALGORITHM[T]) extends AnyVal {
     
     inline def setALGORITHM(value: T): Self = StObject.set(x, "ALGORITHM", value.asInstanceOf[js.Any])
     

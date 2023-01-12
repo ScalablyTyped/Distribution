@@ -87,7 +87,8 @@ object libTypescriptNativeStackTypesMod {
       __obj.asInstanceOf[NativeStackNavigationEventMap]
     }
     
-    extension [Self <: NativeStackNavigationEventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeStackNavigationEventMap] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: Data): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -451,7 +452,8 @@ object libTypescriptNativeStackTypesMod {
       __obj.asInstanceOf[NativeStackNavigationOptions]
     }
     
-    extension [Self <: NativeStackNavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeStackNavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setBackButtonImage(value: ImageSourcePropType): Self = StObject.set(x, "backButtonImage", value.asInstanceOf[js.Any])
       
@@ -688,7 +690,8 @@ object libTypescriptNativeStackTypesMod {
       __obj.asInstanceOf[NativeStackScreenProps[ParamList, RouteName]]
     }
     
-    extension [Self <: NativeStackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */](x: Self & (NativeStackScreenProps[ParamList, RouteName])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeStackScreenProps[?, ?], ParamList /* <: ParamListBase */, RouteName /* <: /* keyof ParamList */ String */] (val x: Self & (NativeStackScreenProps[ParamList, RouteName])) extends AnyVal {
       
       inline def setNavigation(value: NativeStackNavigationProp[ParamList, RouteName]): Self = StObject.set(x, "navigation", value.asInstanceOf[js.Any])
       

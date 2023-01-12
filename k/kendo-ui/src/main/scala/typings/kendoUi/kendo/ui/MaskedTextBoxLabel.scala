@@ -17,7 +17,8 @@ object MaskedTextBoxLabel {
     __obj.asInstanceOf[MaskedTextBoxLabel]
   }
   
-  extension [Self <: MaskedTextBoxLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskedTextBoxLabel] (val x: Self) extends AnyVal {
     
     inline def setContent(value: String | js.Function): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     

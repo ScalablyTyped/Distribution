@@ -35,7 +35,8 @@ object esmTypesMod {
       __obj.asInstanceOf[ErrorPOJO]
     }
     
-    extension [Self <: ErrorPOJO](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPOJO] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -240,7 +241,8 @@ object esmTypesMod {
       __obj.asInstanceOf[OnoOptions]
     }
     
-    extension [Self <: OnoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnoOptions] (val x: Self) extends AnyVal {
       
       inline def setConcatMessages(value: Boolean): Self = StObject.set(x, "concatMessages", value.asInstanceOf[js.Any])
       

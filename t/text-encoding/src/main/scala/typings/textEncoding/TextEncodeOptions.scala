@@ -15,7 +15,8 @@ object TextEncodeOptions {
     __obj.asInstanceOf[TextEncodeOptions]
   }
   
-  extension [Self <: TextEncodeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEncodeOptions] (val x: Self) extends AnyVal {
     
     inline def setStream(value: Boolean): Self = StObject.set(x, "stream", value.asInstanceOf[js.Any])
     

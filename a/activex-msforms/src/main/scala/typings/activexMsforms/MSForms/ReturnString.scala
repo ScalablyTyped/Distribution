@@ -19,7 +19,8 @@ object ReturnString {
     __obj.asInstanceOf[ReturnString]
   }
   
-  extension [Self <: ReturnString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnString] (val x: Self) extends AnyVal {
     
     inline def setMSFormsDotReturnString_typekey(value: ReturnString): Self = StObject.set(x, "MSForms.ReturnString_typekey", value.asInstanceOf[js.Any])
     

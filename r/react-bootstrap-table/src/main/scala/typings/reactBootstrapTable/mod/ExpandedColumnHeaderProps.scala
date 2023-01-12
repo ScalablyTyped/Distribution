@@ -15,7 +15,8 @@ object ExpandedColumnHeaderProps {
     __obj.asInstanceOf[ExpandedColumnHeaderProps]
   }
   
-  extension [Self <: ExpandedColumnHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExpandedColumnHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setAnyExpand(value: Boolean): Self = StObject.set(x, "anyExpand", value.asInstanceOf[js.Any])
   }

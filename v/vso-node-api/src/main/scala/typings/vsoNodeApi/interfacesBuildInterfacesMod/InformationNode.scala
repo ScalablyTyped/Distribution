@@ -52,7 +52,8 @@ object InformationNode {
     __obj.asInstanceOf[InformationNode]
   }
   
-  extension [Self <: InformationNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InformationNode] (val x: Self) extends AnyVal {
     
     inline def setFields(value: StringDictionary[String]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

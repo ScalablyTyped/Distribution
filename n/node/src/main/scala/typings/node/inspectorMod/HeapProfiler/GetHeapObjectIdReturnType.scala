@@ -18,7 +18,8 @@ object GetHeapObjectIdReturnType {
     __obj.asInstanceOf[GetHeapObjectIdReturnType]
   }
   
-  extension [Self <: GetHeapObjectIdReturnType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetHeapObjectIdReturnType] (val x: Self) extends AnyVal {
     
     inline def setHeapSnapshotObjectId(value: HeapSnapshotObjectId): Self = StObject.set(x, "heapSnapshotObjectId", value.asInstanceOf[js.Any])
   }

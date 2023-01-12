@@ -33,7 +33,8 @@ object CopyParameters {
     __obj.asInstanceOf[CopyParameters]
   }
   
-  extension [Self <: CopyParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopyParameters] (val x: Self) extends AnyVal {
     
     inline def setConvert(value: Boolean): Self = StObject.set(x, "convert", value.asInstanceOf[js.Any])
     

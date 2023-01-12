@@ -919,7 +919,8 @@ object mod {
       __obj.asInstanceOf[EventParams]
     }
     
-    extension [Self <: EventParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventParams] (val x: Self) extends AnyVal {
       
       inline def setDp(value: String): Self = StObject.set(x, "dp", value.asInstanceOf[js.Any])
       
@@ -976,7 +977,8 @@ object mod {
       __obj.asInstanceOf[ExceptionParams]
     }
     
-    extension [Self <: ExceptionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionParams] (val x: Self) extends AnyVal {
       
       inline def setExd(value: String): Self = StObject.set(x, "exd", value.asInstanceOf[js.Any])
       
@@ -1068,7 +1070,8 @@ object mod {
       __obj.asInstanceOf[ItemParams]
     }
     
-    extension [Self <: ItemParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemParams] (val x: Self) extends AnyVal {
       
       inline def setIc(value: String): Self = StObject.set(x, "ic", value.asInstanceOf[js.Any])
       
@@ -1113,7 +1116,8 @@ object mod {
       __obj.asInstanceOf[MiddlewareOptions]
     }
     
-    extension [Self <: MiddlewareOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MiddlewareOptions] (val x: Self) extends AnyVal {
       
       inline def setCookieName(value: String): Self = StObject.set(x, "cookieName", value.asInstanceOf[js.Any])
       
@@ -1168,7 +1172,8 @@ object mod {
       __obj.asInstanceOf[PageviewParams]
     }
     
-    extension [Self <: PageviewParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageviewParams] (val x: Self) extends AnyVal {
       
       inline def setDh(value: String): Self = StObject.set(x, "dh", value.asInstanceOf[js.Any])
       
@@ -1256,7 +1261,8 @@ object mod {
       __obj.asInstanceOf[ScreenviewParams]
     }
     
-    extension [Self <: ScreenviewParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScreenviewParams] (val x: Self) extends AnyVal {
       
       inline def setAid(value: String): Self = StObject.set(x, "aid", value.asInstanceOf[js.Any])
       
@@ -1294,7 +1300,8 @@ object mod {
       __obj.asInstanceOf[Session]
     }
     
-    extension [Self <: Session](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Session] (val x: Self) extends AnyVal {
       
       inline def setCid(value: String): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -1361,7 +1368,8 @@ object mod {
       __obj.asInstanceOf[TimingParams]
     }
     
-    extension [Self <: TimingParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimingParams] (val x: Self) extends AnyVal {
       
       inline def setUtc(value: String): Self = StObject.set(x, "utc", value.asInstanceOf[js.Any])
       
@@ -1448,7 +1456,8 @@ object mod {
       __obj.asInstanceOf[TransactionParams]
     }
     
-    extension [Self <: TransactionParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransactionParams] (val x: Self) extends AnyVal {
       
       inline def setP(value: String): Self = StObject.set(x, "p", value.asInstanceOf[js.Any])
       
@@ -1518,7 +1527,8 @@ object mod {
       __obj.asInstanceOf[VisitorOptions]
     }
     
-    extension [Self <: VisitorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VisitorOptions] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       

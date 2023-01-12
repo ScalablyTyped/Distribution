@@ -53,7 +53,8 @@ object ImportSummary {
     __obj.asInstanceOf[ImportSummary]
   }
   
-  extension [Self <: ImportSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImportSummary] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogGroupArn(value: CloudWatchLogGroupArn): Self = StObject.set(x, "CloudWatchLogGroupArn", value.asInstanceOf[js.Any])
     

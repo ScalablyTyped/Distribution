@@ -22,7 +22,8 @@ object anon {
       __obj.asInstanceOf[PartialPoint3D]
     }
     
-    extension [Self <: PartialPoint3D](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialPoint3D] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

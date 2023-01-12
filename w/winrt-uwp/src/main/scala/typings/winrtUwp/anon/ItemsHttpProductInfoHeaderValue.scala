@@ -18,7 +18,8 @@ object ItemsHttpProductInfoHeaderValue {
     __obj.asInstanceOf[ItemsHttpProductInfoHeaderValue]
   }
   
-  extension [Self <: ItemsHttpProductInfoHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemsHttpProductInfoHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setItems(value: HttpProductInfoHeaderValue): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

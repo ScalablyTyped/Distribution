@@ -555,7 +555,8 @@ object sapUiWebcMainTreeItemMod {
       __obj.asInstanceOf[TreeItemSettings]
     }
     
-    extension [Self <: TreeItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TreeItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

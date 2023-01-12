@@ -17,7 +17,8 @@ object MenuPosition {
     __obj.asInstanceOf[MenuPosition]
   }
   
-  extension [Self <: MenuPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MenuPosition] (val x: Self) extends AnyVal {
     
     inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
     

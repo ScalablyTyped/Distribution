@@ -38,7 +38,8 @@ object PublicKeySummary {
     __obj.asInstanceOf[PublicKeySummary]
   }
   
-  extension [Self <: PublicKeySummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PublicKeySummary] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

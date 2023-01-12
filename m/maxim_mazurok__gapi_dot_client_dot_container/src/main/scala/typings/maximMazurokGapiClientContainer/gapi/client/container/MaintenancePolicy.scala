@@ -22,7 +22,8 @@ object MaintenancePolicy {
     __obj.asInstanceOf[MaintenancePolicy]
   }
   
-  extension [Self <: MaintenancePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaintenancePolicy] (val x: Self) extends AnyVal {
     
     inline def setResourceVersion(value: String): Self = StObject.set(x, "resourceVersion", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object TimedMetadataInsertion {
     __obj.asInstanceOf[TimedMetadataInsertion]
   }
   
-  extension [Self <: TimedMetadataInsertion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimedMetadataInsertion] (val x: Self) extends AnyVal {
     
     inline def setId3Insertions(value: listOfId3Insertion): Self = StObject.set(x, "Id3Insertions", value.asInstanceOf[js.Any])
     

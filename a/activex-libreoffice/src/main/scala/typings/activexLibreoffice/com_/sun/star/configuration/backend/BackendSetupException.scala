@@ -30,7 +30,8 @@ object BackendSetupException {
     __obj.asInstanceOf[BackendSetupException]
   }
   
-  extension [Self <: BackendSetupException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackendSetupException] (val x: Self) extends AnyVal {
     
     inline def setBackendException(value: Any): Self = StObject.set(x, "BackendException", value.asInstanceOf[js.Any])
   }

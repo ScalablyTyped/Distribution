@@ -23,7 +23,8 @@ object HistoryState {
     __obj.asInstanceOf[HistoryState]
   }
   
-  extension [Self <: HistoryState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HistoryState] (val x: Self) extends AnyVal {
     
     inline def setCleanUrl(value: String): Self = StObject.set(x, "cleanUrl", value.asInstanceOf[js.Any])
     

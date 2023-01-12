@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Eol]
     }
     
-    extension [Self <: Eol](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Eol] (val x: Self) extends AnyVal {
       
       inline def setEol(value: String): Self = StObject.set(x, "eol", value.asInstanceOf[js.Any])
       

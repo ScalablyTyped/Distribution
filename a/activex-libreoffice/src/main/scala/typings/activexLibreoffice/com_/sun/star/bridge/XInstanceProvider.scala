@@ -34,7 +34,8 @@ object XInstanceProvider {
     __obj.asInstanceOf[XInstanceProvider]
   }
   
-  extension [Self <: XInstanceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XInstanceProvider] (val x: Self) extends AnyVal {
     
     inline def setGetInstance(value: String => XInterface): Self = StObject.set(x, "getInstance", js.Any.fromFunction1(value))
   }

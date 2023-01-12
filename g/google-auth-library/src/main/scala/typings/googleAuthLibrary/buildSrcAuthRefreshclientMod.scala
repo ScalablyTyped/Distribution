@@ -70,7 +70,8 @@ object buildSrcAuthRefreshclientMod {
       __obj.asInstanceOf[UserRefreshClientOptions]
     }
     
-    extension [Self <: UserRefreshClientOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserRefreshClientOptions] (val x: Self) extends AnyVal {
       
       inline def setClientId(value: String): Self = StObject.set(x, "clientId", value.asInstanceOf[js.Any])
       

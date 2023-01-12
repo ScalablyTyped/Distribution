@@ -22,7 +22,8 @@ object AttachToTargetRequest {
     __obj.asInstanceOf[AttachToTargetRequest]
   }
   
-  extension [Self <: AttachToTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachToTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setFlatten(value: Boolean): Self = StObject.set(x, "flatten", value.asInstanceOf[js.Any])
     

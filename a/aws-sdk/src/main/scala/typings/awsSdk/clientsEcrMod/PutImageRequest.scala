@@ -43,7 +43,8 @@ object PutImageRequest {
     __obj.asInstanceOf[PutImageRequest]
   }
   
-  extension [Self <: PutImageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutImageRequest] (val x: Self) extends AnyVal {
     
     inline def setImageDigest(value: ImageDigest): Self = StObject.set(x, "imageDigest", value.asInstanceOf[js.Any])
     

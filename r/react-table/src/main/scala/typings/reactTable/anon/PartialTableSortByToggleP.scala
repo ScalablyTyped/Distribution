@@ -24,7 +24,8 @@ object PartialTableSortByToggleP {
     __obj.asInstanceOf[PartialTableSortByToggleP]
   }
   
-  extension [Self <: PartialTableSortByToggleP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTableSortByToggleP] (val x: Self) extends AnyVal {
     
     inline def setOnClick(value: /* e */ MouseEvent[Element, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     

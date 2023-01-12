@@ -21,7 +21,8 @@ object StasisEnd {
     __obj.asInstanceOf[StasisEnd]
   }
   
-  extension [Self <: StasisEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StasisEnd] (val x: Self) extends AnyVal {
     
     inline def setChannel(value: Channel): Self = StObject.set(x, "channel", value.asInstanceOf[js.Any])
   }

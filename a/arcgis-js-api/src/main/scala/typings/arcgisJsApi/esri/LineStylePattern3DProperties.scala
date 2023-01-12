@@ -36,7 +36,8 @@ object LineStylePattern3DProperties {
     __obj.asInstanceOf[LineStylePattern3DProperties]
   }
   
-  extension [Self <: LineStylePattern3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineStylePattern3DProperties] (val x: Self) extends AnyVal {
     
     inline def setStyle(
       value: dash | `dash-dot` | dot | `long-dash` | `long-dash-dot` | `long-dash-dot-dot` | none_ | `short-dash` | `short-dash-dot` | `short-dash-dot-dot` | `short-dot` | solid

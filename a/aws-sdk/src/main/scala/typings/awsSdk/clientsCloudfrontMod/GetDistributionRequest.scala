@@ -18,7 +18,8 @@ object GetDistributionRequest {
     __obj.asInstanceOf[GetDistributionRequest]
   }
   
-  extension [Self <: GetDistributionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDistributionRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
   }

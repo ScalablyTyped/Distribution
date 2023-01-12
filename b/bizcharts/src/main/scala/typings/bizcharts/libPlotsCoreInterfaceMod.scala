@@ -42,7 +42,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisGrid]
     }
     
-    extension [Self <: AxisGrid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisGrid] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisLabel]
     }
     
-    extension [Self <: AxisLabel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisLabel] (val x: Self) extends AnyVal {
       
       inline def setSuffix(value: String): Self = StObject.set(x, "suffix", value.asInstanceOf[js.Any])
       
@@ -90,7 +92,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisLine]
     }
     
-    extension [Self <: AxisLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisLine] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -151,7 +154,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisOptions]
     }
     
-    extension [Self <: AxisOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisOptions] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: AxisGrid): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -202,7 +206,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisTickLine]
     }
     
-    extension [Self <: AxisTickLine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisTickLine] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -223,7 +228,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[AxisTitle]
     }
     
-    extension [Self <: AxisTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AxisTitle] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -253,7 +259,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[LabelOptions]
     }
     
-    extension [Self <: LabelOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: String | IGroup | IShape | GeometryLabelContentCallback): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])
       
@@ -282,7 +289,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[LegendTitle]
     }
     
-    extension [Self <: LegendTitle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LegendTitle] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       
@@ -343,7 +351,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[LengendOptions]
     }
     
-    extension [Self <: LengendOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LengendOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatter(value: (/* text */ String, /* item */ ListItem, /* index */ Double) => Any): Self = StObject.set(x, "formatter", js.Any.fromFunction3(value))
       
@@ -383,7 +392,8 @@ object libPlotsCoreInterfaceMod {
       __obj.asInstanceOf[TooltipCfg]
     }
     
-    extension [Self <: TooltipCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipCfg] (val x: Self) extends AnyVal {
       
       inline def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object NotificationThis {
     __obj.asInstanceOf[NotificationThis]
   }
   
-  extension [Self <: NotificationThis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationThis] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
   }

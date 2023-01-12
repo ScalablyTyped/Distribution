@@ -61,7 +61,8 @@ object libComponentsLabelLabelDottypesMod {
       __obj.asInstanceOf[ILabelProps]
     }
     
-    extension [Self <: ILabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabelProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: IComponentAs[AllHTMLAttributes[HTMLElement]]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object libComponentsLabelLabelDottypesMod {
       __obj.asInstanceOf[ILabelStyleProps]
     }
     
-    extension [Self <: ILabelStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabelStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -145,7 +147,8 @@ object libComponentsLabelLabelDottypesMod {
       __obj.asInstanceOf[ILabelStyles]
     }
     
-    extension [Self <: ILabelStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILabelStyles] (val x: Self) extends AnyVal {
       
       inline def setRoot(value: IStyle): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
       

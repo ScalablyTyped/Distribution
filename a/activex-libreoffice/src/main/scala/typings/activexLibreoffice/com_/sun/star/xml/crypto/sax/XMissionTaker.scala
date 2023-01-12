@@ -28,7 +28,8 @@ object XMissionTaker {
     __obj.asInstanceOf[XMissionTaker]
   }
   
-  extension [Self <: XMissionTaker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMissionTaker] (val x: Self) extends AnyVal {
     
     inline def setEndMission(value: () => Boolean): Self = StObject.set(x, "endMission", js.Any.fromFunction0(value))
   }

@@ -17,7 +17,8 @@ object libDistSrcInterfacesProcessorSubscriptionMod {
       __obj.asInstanceOf[ProcessorSubscription]
     }
     
-    extension [Self <: ProcessorSubscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProcessorSubscription] (val x: Self) extends AnyVal {
       
       inline def setRemove(value: () => Unit): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     }

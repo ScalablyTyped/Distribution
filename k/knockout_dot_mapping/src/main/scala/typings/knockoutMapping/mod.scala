@@ -185,7 +185,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[KnockoutMappingCreateOptions]
       }
       
-      extension [Self <: KnockoutMappingCreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KnockoutMappingCreateOptions] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -235,7 +236,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[KnockoutMappingStandardOptions]
       }
       
-      extension [Self <: KnockoutMappingStandardOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KnockoutMappingStandardOptions] (val x: Self) extends AnyVal {
         
         inline def setCopy(value: js.Array[String]): Self = StObject.set(x, "copy", value.asInstanceOf[js.Any])
         
@@ -292,7 +294,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[KnockoutMappingUpdateOptions]
       }
       
-      extension [Self <: KnockoutMappingUpdateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KnockoutMappingUpdateOptions] (val x: Self) extends AnyVal {
         
         inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -362,7 +365,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[KnockoutPropertyMappingCallBack]
       }
       
-      extension [Self <: KnockoutPropertyMappingCallBack](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KnockoutPropertyMappingCallBack] (val x: Self) extends AnyVal {
         
         inline def setCreate(value: /* options */ KnockoutMappingCreateOptions => Unit): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
         
@@ -400,7 +404,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[KnockoutStatic]
       }
       
-      extension [Self <: KnockoutStatic](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: KnockoutStatic] (val x: Self) extends AnyVal {
         
         inline def setMapping(value: KnockoutMapping): Self = StObject.set(x, "mapping", value.asInstanceOf[js.Any])
       }

@@ -266,7 +266,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[BackoffSettings]
     }
     
-    extension [Self <: BackoffSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackoffSettings] (val x: Self) extends AnyVal {
       
       inline def setInitialRetryDelayMillis(value: Double): Self = StObject.set(x, "initialRetryDelayMillis", value.asInstanceOf[js.Any])
       
@@ -323,7 +324,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[BundlingConfig]
     }
     
-    extension [Self <: BundlingConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BundlingConfig] (val x: Self) extends AnyVal {
       
       inline def setDelay_threshold_millis(value: Double): Self = StObject.set(x, "delay_threshold_millis", value.asInstanceOf[js.Any])
       
@@ -374,7 +376,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[CallOptions]
     }
     
-    extension [Self <: CallOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CallOptions] (val x: Self) extends AnyVal {
       
       inline def setApiName(value: String): Self = StObject.set(x, "apiName", value.asInstanceOf[js.Any])
       
@@ -437,7 +440,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[ClientConfig]
     }
     
-    extension [Self <: ClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
       
       inline def setInterfaces(value: StringDictionary[ServiceConfig]): Self = StObject.set(x, "interfaces", value.asInstanceOf[js.Any])
       
@@ -462,7 +466,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[MethodConfig]
     }
     
-    extension [Self <: MethodConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MethodConfig] (val x: Self) extends AnyVal {
       
       inline def setBundling(value: BundlingConfig): Self = StObject.set(x, "bundling", value.asInstanceOf[js.Any])
       
@@ -515,7 +520,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[RetryParamsConfig]
     }
     
-    extension [Self <: RetryParamsConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryParamsConfig] (val x: Self) extends AnyVal {
       
       inline def setInitial_retry_delay_millis(value: Double): Self = StObject.set(x, "initial_retry_delay_millis", value.asInstanceOf[js.Any])
       
@@ -554,7 +560,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[RetryRequestOptions]
     }
     
-    extension [Self <: RetryRequestOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RetryRequestOptions] (val x: Self) extends AnyVal {
       
       inline def setCurrentRetryAttempt(value: Double): Self = StObject.set(x, "currentRetryAttempt", value.asInstanceOf[js.Any])
       
@@ -597,7 +604,8 @@ object buildSrcGaxMod {
       __obj.asInstanceOf[ServiceConfig]
     }
     
-    extension [Self <: ServiceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceConfig] (val x: Self) extends AnyVal {
       
       inline def setMethods(value: StringDictionary[MethodConfig | Null]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       

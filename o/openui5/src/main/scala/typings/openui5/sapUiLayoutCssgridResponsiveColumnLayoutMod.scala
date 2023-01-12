@@ -238,7 +238,8 @@ object sapUiLayoutCssgridResponsiveColumnLayoutMod {
       __obj.asInstanceOf[ResponsiveColumnLayoutSettings]
     }
     
-    extension [Self <: ResponsiveColumnLayoutSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveColumnLayoutSettings] (val x: Self) extends AnyVal {
       
       inline def setLayoutChange(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "layoutChange", js.Any.fromFunction1(value))
       

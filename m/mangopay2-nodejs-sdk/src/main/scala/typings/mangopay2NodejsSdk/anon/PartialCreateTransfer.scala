@@ -29,7 +29,8 @@ object PartialCreateTransfer {
     __obj.asInstanceOf[PartialCreateTransfer]
   }
   
-  extension [Self <: PartialCreateTransfer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreateTransfer] (val x: Self) extends AnyVal {
     
     inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     

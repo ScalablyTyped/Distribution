@@ -19,7 +19,8 @@ object IReferencedFieldsForType {
     __obj.asInstanceOf[IReferencedFieldsForType]
   }
   
-  extension [Self <: IReferencedFieldsForType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IReferencedFieldsForType] (val x: Self) extends AnyVal {
     
     inline def setFieldNames(value: js.Array[String]): Self = StObject.set(x, "fieldNames", value.asInstanceOf[js.Any])
     

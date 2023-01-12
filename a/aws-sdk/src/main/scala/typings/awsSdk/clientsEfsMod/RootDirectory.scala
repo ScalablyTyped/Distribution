@@ -23,7 +23,8 @@ object RootDirectory {
     __obj.asInstanceOf[RootDirectory]
   }
   
-  extension [Self <: RootDirectory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RootDirectory] (val x: Self) extends AnyVal {
     
     inline def setCreationInfo(value: CreationInfo): Self = StObject.set(x, "CreationInfo", value.asInstanceOf[js.Any])
     

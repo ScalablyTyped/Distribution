@@ -43,7 +43,8 @@ object typesSkipToMainContentMod {
       __obj.asInstanceOf[SkipToMainContentProps]
     }
     
-    extension [Self <: SkipToMainContentProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SkipToMainContentProps] (val x: Self) extends AnyVal {
       
       inline def setMainId(value: String): Self = StObject.set(x, "mainId", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SortCriteria {
     __obj.asInstanceOf[SortCriteria]
   }
   
-  extension [Self <: SortCriteria](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortCriteria] (val x: Self) extends AnyVal {
     
     inline def setField(value: SortField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[Default]
     }
     
-    extension [Self <: Default](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Default] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: ComponentType[js.Object]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     }
@@ -67,7 +68,8 @@ object anon {
       __obj.asInstanceOf[statsFilestringentrypoint]
     }
     
-    extension [Self <: statsFilestringentrypoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: statsFilestringentrypoint] (val x: Self) extends AnyVal {
       
       inline def setEntrypoints(value: String | js.Array[String]): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object anon {
       __obj.asInstanceOf[statsobjectentrypointsstr]
     }
     
-    extension [Self <: statsobjectentrypointsstr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: statsobjectentrypointsstr] (val x: Self) extends AnyVal {
       
       inline def setEntrypoints(value: String | js.Array[String]): Self = StObject.set(x, "entrypoints", value.asInstanceOf[js.Any])
       

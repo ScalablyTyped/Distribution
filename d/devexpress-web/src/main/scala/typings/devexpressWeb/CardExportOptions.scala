@@ -22,7 +22,8 @@ object CardExportOptions {
     __obj.asInstanceOf[CardExportOptions]
   }
   
-  extension [Self <: CardExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardExportOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoArrangeContent(value: Boolean): Self = StObject.set(x, "AutoArrangeContent", value.asInstanceOf[js.Any])
   }

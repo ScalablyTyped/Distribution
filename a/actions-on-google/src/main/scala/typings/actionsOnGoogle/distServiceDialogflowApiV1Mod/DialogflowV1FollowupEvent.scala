@@ -17,7 +17,8 @@ object DialogflowV1FollowupEvent {
     __obj.asInstanceOf[DialogflowV1FollowupEvent]
   }
   
-  extension [Self <: DialogflowV1FollowupEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogflowV1FollowupEvent] (val x: Self) extends AnyVal {
     
     inline def setData(value: DialogflowV1Parameters): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

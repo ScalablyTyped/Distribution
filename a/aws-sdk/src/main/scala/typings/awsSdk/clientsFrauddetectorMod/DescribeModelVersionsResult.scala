@@ -23,7 +23,8 @@ object DescribeModelVersionsResult {
     __obj.asInstanceOf[DescribeModelVersionsResult]
   }
   
-  extension [Self <: DescribeModelVersionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeModelVersionsResult] (val x: Self) extends AnyVal {
     
     inline def setModelVersionDetails(value: modelVersionDetailList): Self = StObject.set(x, "modelVersionDetails", value.asInstanceOf[js.Any])
     

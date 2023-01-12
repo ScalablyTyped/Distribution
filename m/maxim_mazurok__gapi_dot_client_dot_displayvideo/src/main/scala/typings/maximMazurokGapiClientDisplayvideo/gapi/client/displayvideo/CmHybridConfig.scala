@@ -37,7 +37,8 @@ object CmHybridConfig {
     __obj.asInstanceOf[CmHybridConfig]
   }
   
-  extension [Self <: CmHybridConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CmHybridConfig] (val x: Self) extends AnyVal {
     
     inline def setCmAccountId(value: String): Self = StObject.set(x, "cmAccountId", value.asInstanceOf[js.Any])
     

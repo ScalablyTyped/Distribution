@@ -22,7 +22,8 @@ object TradePayArgs {
     __obj.asInstanceOf[TradePayArgs]
   }
   
-  extension [Self <: TradePayArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TradePayArgs] (val x: Self) extends AnyVal {
     
     inline def setOrderStr(value: String): Self = StObject.set(x, "orderStr", value.asInstanceOf[js.Any])
     

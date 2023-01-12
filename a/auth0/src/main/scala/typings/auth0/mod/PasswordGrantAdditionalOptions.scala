@@ -15,7 +15,8 @@ object PasswordGrantAdditionalOptions {
     __obj.asInstanceOf[PasswordGrantAdditionalOptions]
   }
   
-  extension [Self <: PasswordGrantAdditionalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PasswordGrantAdditionalOptions] (val x: Self) extends AnyVal {
     
     inline def setForwardedFor(value: String): Self = StObject.set(x, "forwardedFor", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object TezosSignTx {
     __obj.asInstanceOf[TezosSignTx]
   }
   
-  extension [Self <: TezosSignTx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TezosSignTx] (val x: Self) extends AnyVal {
     
     inline def setAddress_n(value: js.Array[Double]): Self = StObject.set(x, "address_n", value.asInstanceOf[js.Any])
     

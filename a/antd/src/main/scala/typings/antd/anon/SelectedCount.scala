@@ -17,7 +17,8 @@ object SelectedCount {
     __obj.asInstanceOf[SelectedCount]
   }
   
-  extension [Self <: SelectedCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelectedCount] (val x: Self) extends AnyVal {
     
     inline def setSelectedCount(value: Double): Self = StObject.set(x, "selectedCount", value.asInstanceOf[js.Any])
     

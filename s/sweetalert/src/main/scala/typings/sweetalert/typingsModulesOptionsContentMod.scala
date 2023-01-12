@@ -27,7 +27,8 @@ object typingsModulesOptionsContentMod {
       __obj.asInstanceOf[ContentOptions]
     }
     
-    extension [Self <: ContentOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentOptions] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Object): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

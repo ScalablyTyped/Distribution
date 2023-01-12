@@ -15,7 +15,8 @@ object DataAccessOptions {
     __obj.asInstanceOf[DataAccessOptions]
   }
   
-  extension [Self <: DataAccessOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataAccessOptions] (val x: Self) extends AnyVal {
     
     inline def setLogMode(value: String): Self = StObject.set(x, "logMode", value.asInstanceOf[js.Any])
     

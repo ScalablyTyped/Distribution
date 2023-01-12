@@ -15,7 +15,8 @@ object IconDisabledDiscovery {
     __obj.asInstanceOf[IconDisabledDiscovery[BaseToken]]
   }
   
-  extension [Self <: IconDisabledDiscovery[?], BaseToken](x: Self & IconDisabledDiscovery[BaseToken]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconDisabledDiscovery[?], BaseToken] (val x: Self & IconDisabledDiscovery[BaseToken]) extends AnyVal {
     
     inline def setIcon(value: DisabledDiscovery[BaseToken]): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
   }

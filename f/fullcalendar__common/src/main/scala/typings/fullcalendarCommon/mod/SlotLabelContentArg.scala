@@ -23,7 +23,8 @@ object SlotLabelContentArg {
     __obj.asInstanceOf[SlotLabelContentArg]
   }
   
-  extension [Self <: SlotLabelContentArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlotLabelContentArg] (val x: Self) extends AnyVal {
     
     inline def setDate(value: js.Date): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
     

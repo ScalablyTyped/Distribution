@@ -18,7 +18,8 @@ object ShareVideo {
     __obj.asInstanceOf[ShareVideo]
   }
   
-  extension [Self <: ShareVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShareVideo] (val x: Self) extends AnyVal {
     
     inline def setLocalUrl(value: String): Self = StObject.set(x, "localUrl", value.asInstanceOf[js.Any])
   }

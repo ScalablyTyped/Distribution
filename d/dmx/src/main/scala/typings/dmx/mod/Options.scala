@@ -15,7 +15,8 @@ object Options {
     __obj.asInstanceOf[Options[TDevices]]
   }
   
-  extension [Self <: Options[?], TDevices /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Device} */ js.Any */](x: Self & Options[TDevices]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], TDevices /* <: /* import warning: importer.ImportType#apply Failed type conversion: {[ key in string ]:? dmx.dmx.Device} */ js.Any */] (val x: Self & Options[TDevices]) extends AnyVal {
     
     inline def setDevices(value: TDevices): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
     

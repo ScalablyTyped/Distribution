@@ -85,7 +85,8 @@ object distNodeSrcCoreUserUserCredentialImplMod {
       __obj.asInstanceOf[UserCredentialParams]
     }
     
-    extension [Self <: UserCredentialParams](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UserCredentialParams] (val x: Self) extends AnyVal {
       
       inline def setOperationType(value: OperationType): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
       

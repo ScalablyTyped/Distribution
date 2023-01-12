@@ -68,7 +68,8 @@ object SketchMSSymbolMasterLayer {
     __obj.asInstanceOf[SketchMSSymbolMasterLayer]
   }
   
-  extension [Self <: SketchMSSymbolMasterLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SketchMSSymbolMasterLayer] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: SketchMSColor): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

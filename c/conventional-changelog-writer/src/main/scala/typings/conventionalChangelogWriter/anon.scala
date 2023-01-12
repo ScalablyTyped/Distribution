@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Raw[T]]
     }
     
-    extension [Self <: Raw[?], T /* <: Commit[String | Double | js.Symbol] */](x: Self & Raw[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Raw[?], T /* <: Commit[String | Double | js.Symbol] */] (val x: Self & Raw[T]) extends AnyVal {
       
       inline def setRaw(value: T): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
     }

@@ -23,7 +23,8 @@ object DeviceStatusDetail {
     __obj.asInstanceOf[DeviceStatusDetail]
   }
   
-  extension [Self <: DeviceStatusDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceStatusDetail] (val x: Self) extends AnyVal {
     
     inline def setCode(value: DeviceStatusDetailCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

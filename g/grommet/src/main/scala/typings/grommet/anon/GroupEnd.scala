@@ -32,7 +32,8 @@ object GroupEnd {
     __obj.asInstanceOf[GroupEnd]
   }
   
-  extension [Self <: GroupEnd](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GroupEnd] (val x: Self) extends AnyVal {
     
     inline def setBody(value: `8`): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

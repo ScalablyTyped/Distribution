@@ -20,7 +20,8 @@ object IDisplayResult {
     __obj.asInstanceOf[IDisplayResult]
   }
   
-  extension [Self <: IDisplayResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDisplayResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: DisplayResultData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

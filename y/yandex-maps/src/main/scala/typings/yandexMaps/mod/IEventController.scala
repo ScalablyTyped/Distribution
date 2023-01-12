@@ -17,7 +17,8 @@ object IEventController {
     __obj.asInstanceOf[IEventController]
   }
   
-  extension [Self <: IEventController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEventController] (val x: Self) extends AnyVal {
     
     inline def setOnStartListening(value: (/* events */ IEventManager[js.Object], /* type */ String) => Unit): Self = StObject.set(x, "onStartListening", js.Any.fromFunction2(value))
     

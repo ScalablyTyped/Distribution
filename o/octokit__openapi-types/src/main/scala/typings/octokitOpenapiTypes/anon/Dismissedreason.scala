@@ -25,7 +25,8 @@ object Dismissedreason {
     __obj.asInstanceOf[Dismissedreason]
   }
   
-  extension [Self <: Dismissedreason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dismissedreason] (val x: Self) extends AnyVal {
     
     inline def setDismissed_comment(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['schemas']['dependabot-alert-dismissed-comment'] */ js.Any

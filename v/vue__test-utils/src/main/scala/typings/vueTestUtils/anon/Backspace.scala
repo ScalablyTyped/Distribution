@@ -43,7 +43,8 @@ object Backspace {
     __obj.asInstanceOf[Backspace]
   }
   
-  extension [Self <: Backspace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Backspace] (val x: Self) extends AnyVal {
     
     inline def setBackspace(value: typings.vueTestUtils.vueTestUtilsInts.`8`): Self = StObject.set(x, "backspace", value.asInstanceOf[js.Any])
     

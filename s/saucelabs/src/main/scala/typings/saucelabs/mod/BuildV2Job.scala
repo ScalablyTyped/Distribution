@@ -26,7 +26,8 @@ object BuildV2Job {
     __obj.asInstanceOf[BuildV2Job]
   }
   
-  extension [Self <: BuildV2Job](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildV2Job] (val x: Self) extends AnyVal {
     
     inline def setCreation_time(value: String): Self = StObject.set(x, "creation_time", value.asInstanceOf[js.Any])
     

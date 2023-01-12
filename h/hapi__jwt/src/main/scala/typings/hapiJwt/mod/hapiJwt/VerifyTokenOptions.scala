@@ -50,7 +50,8 @@ object VerifyTokenOptions {
     __obj.asInstanceOf[VerifyTokenOptions]
   }
   
-  extension [Self <: VerifyTokenOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyTokenOptions] (val x: Self) extends AnyVal {
     
     inline def setAud(value: String | (js.Array[js.RegExp | String]) | js.RegExp | `false`): Self = StObject.set(x, "aud", value.asInstanceOf[js.Any])
     

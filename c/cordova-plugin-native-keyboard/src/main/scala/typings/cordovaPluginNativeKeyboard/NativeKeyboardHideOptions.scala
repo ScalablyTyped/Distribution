@@ -18,7 +18,8 @@ object NativeKeyboardHideOptions {
     __obj.asInstanceOf[NativeKeyboardHideOptions]
   }
   
-  extension [Self <: NativeKeyboardHideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeKeyboardHideOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimated(value: Boolean): Self = StObject.set(x, "animated", value.asInstanceOf[js.Any])
     

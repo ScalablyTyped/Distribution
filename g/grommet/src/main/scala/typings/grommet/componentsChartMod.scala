@@ -79,7 +79,8 @@ object componentsChartMod {
       __obj.asInstanceOf[CalcsOptions]
     }
     
-    extension [Self <: CalcsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalcsOptions] (val x: Self) extends AnyVal {
       
       inline def setBounds(value: Bounds): Self = StObject.set(x, "bounds", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object componentsChartMod {
       __obj.asInstanceOf[CalcsResult]
     }
     
-    extension [Self <: CalcsResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalcsResult] (val x: Self) extends AnyVal {
       
       inline def setAxis(value: js.Tuple2[js.Array[Double], js.Array[Double]]): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
       
@@ -205,7 +207,8 @@ object componentsChartMod {
       __obj.asInstanceOf[ChartProps]
     }
     
-    extension [Self <: ChartProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChartProps] (val x: Self) extends AnyVal {
       
       inline def setA11yTitle(value: A11yTitleType): Self = StObject.set(x, "a11yTitle", value.asInstanceOf[js.Any])
       

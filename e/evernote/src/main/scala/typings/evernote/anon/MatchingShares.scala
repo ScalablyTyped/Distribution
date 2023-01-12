@@ -18,7 +18,8 @@ object MatchingShares {
     __obj.asInstanceOf[MatchingShares]
   }
   
-  extension [Self <: MatchingShares](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingShares] (val x: Self) extends AnyVal {
     
     inline def setMatchingShares(value: js.Array[SharedNotebook]): Self = StObject.set(x, "matchingShares", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object RTCReceivedRtpStreamStats {
     __obj.asInstanceOf[RTCReceivedRtpStreamStats]
   }
   
-  extension [Self <: RTCReceivedRtpStreamStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RTCReceivedRtpStreamStats] (val x: Self) extends AnyVal {
     
     inline def setJitter(value: Double): Self = StObject.set(x, "jitter", value.asInstanceOf[js.Any])
     

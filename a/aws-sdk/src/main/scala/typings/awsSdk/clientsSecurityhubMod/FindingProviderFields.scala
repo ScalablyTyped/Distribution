@@ -38,7 +38,8 @@ object FindingProviderFields {
     __obj.asInstanceOf[FindingProviderFields]
   }
   
-  extension [Self <: FindingProviderFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindingProviderFields] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: RatioScale): Self = StObject.set(x, "Confidence", value.asInstanceOf[js.Any])
     

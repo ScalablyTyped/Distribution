@@ -19,7 +19,8 @@ object IsReorderable {
     __obj.asInstanceOf[IsReorderable]
   }
   
-  extension [Self <: IsReorderable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsReorderable] (val x: Self) extends AnyVal {
     
     inline def setIsReorderable(value: Boolean): Self = StObject.set(x, "isReorderable", value.asInstanceOf[js.Any])
     

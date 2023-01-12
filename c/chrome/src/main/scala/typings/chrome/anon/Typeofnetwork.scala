@@ -26,7 +26,8 @@ object Typeofnetwork {
     __obj.asInstanceOf[Typeofnetwork]
   }
   
-  extension [Self <: Typeofnetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofnetwork] (val x: Self) extends AnyVal {
     
     inline def setGetHAR(value: js.Function1[/* harLog */ HARLog, Unit] => Unit): Self = StObject.set(x, "getHAR", js.Any.fromFunction1(value))
     

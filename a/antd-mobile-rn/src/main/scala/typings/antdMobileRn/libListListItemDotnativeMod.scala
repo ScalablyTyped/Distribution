@@ -71,7 +71,8 @@ object libListListItemDotnativeMod {
       __obj.asInstanceOf[BriefProps]
     }
     
-    extension [Self <: BriefProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BriefProps] (val x: Self) extends AnyVal {
       
       inline def setStyles(value: typings.antdMobileRn.anon.Brief): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object libListListItemDotnativeMod {
       __obj.asInstanceOf[ListItemProps]
     }
     
-    extension [Self <: ListItemProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: () => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction0(value))
       

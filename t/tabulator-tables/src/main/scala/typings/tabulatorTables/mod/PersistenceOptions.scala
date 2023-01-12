@@ -23,7 +23,8 @@ object PersistenceOptions {
     __obj.asInstanceOf[PersistenceOptions]
   }
   
-  extension [Self <: PersistenceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersistenceOptions] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Boolean | js.Array[String]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

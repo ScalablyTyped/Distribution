@@ -23,7 +23,8 @@ object Bandwidth {
     __obj.asInstanceOf[Bandwidth]
   }
   
-  extension [Self <: Bandwidth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bandwidth] (val x: Self) extends AnyVal {
     
     inline def setDownloadSpeed(value: Integer): Self = StObject.set(x, "DownloadSpeed", value.asInstanceOf[js.Any])
     

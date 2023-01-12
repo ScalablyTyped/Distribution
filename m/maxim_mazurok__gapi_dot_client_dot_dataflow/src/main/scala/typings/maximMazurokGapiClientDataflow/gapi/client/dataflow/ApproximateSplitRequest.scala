@@ -22,7 +22,8 @@ object ApproximateSplitRequest {
     __obj.asInstanceOf[ApproximateSplitRequest]
   }
   
-  extension [Self <: ApproximateSplitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproximateSplitRequest] (val x: Self) extends AnyVal {
     
     inline def setFractionConsumed(value: Double): Self = StObject.set(x, "fractionConsumed", value.asInstanceOf[js.Any])
     

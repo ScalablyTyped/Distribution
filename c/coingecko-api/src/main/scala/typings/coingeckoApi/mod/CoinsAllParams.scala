@@ -46,7 +46,8 @@ object CoinsAllParams {
     __obj.asInstanceOf[CoinsAllParams]
   }
   
-  extension [Self <: CoinsAllParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoinsAllParams] (val x: Self) extends AnyVal {
     
     inline def setLocalization(value: Boolean): Self = StObject.set(x, "localization", value.asInstanceOf[js.Any])
     

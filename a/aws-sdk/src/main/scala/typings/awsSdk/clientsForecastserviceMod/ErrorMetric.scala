@@ -38,7 +38,8 @@ object ErrorMetric {
     __obj.asInstanceOf[ErrorMetric]
   }
   
-  extension [Self <: ErrorMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorMetric] (val x: Self) extends AnyVal {
     
     inline def setForecastType(value: ForecastType): Self = StObject.set(x, "ForecastType", value.asInstanceOf[js.Any])
     

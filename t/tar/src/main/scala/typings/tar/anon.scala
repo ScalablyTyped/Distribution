@@ -129,7 +129,8 @@ object anon {
       __obj.asInstanceOf[CreateOptionsFileOptionss]
     }
     
-    extension [Self <: CreateOptionsFileOptionss](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateOptionsFileOptionss] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
@@ -401,7 +402,8 @@ object anon {
       __obj.asInstanceOf[ExtractOptionsFileOptions]
     }
     
-    extension [Self <: ExtractOptionsFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractOptionsFileOptions] (val x: Self) extends AnyVal {
       
       inline def setC(value: String): Self = StObject.set(x, "C", value.asInstanceOf[js.Any])
       
@@ -551,7 +553,8 @@ object anon {
       __obj.asInstanceOf[F]
     }
     
-    extension [Self <: F](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: F] (val x: Self) extends AnyVal {
       
       inline def setF(value: String): Self = StObject.set(x, "f", value.asInstanceOf[js.Any])
     }
@@ -573,7 +576,8 @@ object anon {
       __obj.asInstanceOf[File]
     }
     
-    extension [Self <: File](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: File] (val x: Self) extends AnyVal {
       
       inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
     }
@@ -590,7 +594,8 @@ object anon {
       __obj.asInstanceOf[Sync]
     }
     
-    extension [Self <: Sync](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sync] (val x: Self) extends AnyVal {
       
       inline def setSync(value: `true`): Self = StObject.set(x, "sync", value.asInstanceOf[js.Any])
     }

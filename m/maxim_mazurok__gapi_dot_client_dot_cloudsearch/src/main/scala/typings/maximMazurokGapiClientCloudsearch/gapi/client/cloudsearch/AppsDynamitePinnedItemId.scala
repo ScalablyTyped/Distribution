@@ -16,7 +16,8 @@ object AppsDynamitePinnedItemId {
     __obj.asInstanceOf[AppsDynamitePinnedItemId]
   }
   
-  extension [Self <: AppsDynamitePinnedItemId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppsDynamitePinnedItemId] (val x: Self) extends AnyVal {
     
     inline def setDriveId(value: String): Self = StObject.set(x, "driveId", value.asInstanceOf[js.Any])
     

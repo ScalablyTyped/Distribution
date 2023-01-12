@@ -23,7 +23,8 @@ object CreateIndexOptions {
     __obj.asInstanceOf[CreateIndexOptions]
   }
   
-  extension [Self <: CreateIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setDeferred(value: Boolean): Self = StObject.set(x, "deferred", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[ECSignatureBuffer]
     }
     
-    extension [Self <: ECSignatureBuffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECSignatureBuffer] (val x: Self) extends AnyVal {
       
       inline def setR(value: Buffer): Self = StObject.set(x, "r", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object mod {
       __obj.asInstanceOf[VaultOptions]
     }
     
-    extension [Self <: VaultOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VaultOptions] (val x: Self) extends AnyVal {
       
       inline def setHdPathString(value: String): Self = StObject.set(x, "hdPathString", value.asInstanceOf[js.Any])
       

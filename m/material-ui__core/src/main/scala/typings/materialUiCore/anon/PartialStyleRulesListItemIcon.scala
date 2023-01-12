@@ -25,7 +25,8 @@ object PartialStyleRulesListItemIcon {
     __obj.asInstanceOf[PartialStyleRulesListItemIcon]
   }
   
-  extension [Self <: PartialStyleRulesListItemIcon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesListItemIcon] (val x: Self) extends AnyVal {
     
     inline def setIcon(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

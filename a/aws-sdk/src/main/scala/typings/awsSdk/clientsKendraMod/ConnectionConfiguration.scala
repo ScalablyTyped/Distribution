@@ -44,7 +44,8 @@ object ConnectionConfiguration {
     __obj.asInstanceOf[ConnectionConfiguration]
   }
   
-  extension [Self <: ConnectionConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionConfiguration] (val x: Self) extends AnyVal {
     
     inline def setDatabaseHost(value: DatabaseHost): Self = StObject.set(x, "DatabaseHost", value.asInstanceOf[js.Any])
     

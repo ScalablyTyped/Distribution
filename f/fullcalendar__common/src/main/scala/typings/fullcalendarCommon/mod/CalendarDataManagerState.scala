@@ -53,7 +53,8 @@ object CalendarDataManagerState {
     __obj.asInstanceOf[CalendarDataManagerState]
   }
   
-  extension [Self <: CalendarDataManagerState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarDataManagerState] (val x: Self) extends AnyVal {
     
     inline def setBusinessHours(value: EventStore): Self = StObject.set(x, "businessHours", value.asInstanceOf[js.Any])
     

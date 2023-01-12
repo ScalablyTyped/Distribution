@@ -32,7 +32,8 @@ object CartesianMarkerProps {
     __obj.asInstanceOf[CartesianMarkerProps[V]]
   }
   
-  extension [Self <: CartesianMarkerProps[?], V /* <: DatumValue */](x: Self & CartesianMarkerProps[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CartesianMarkerProps[?], V /* <: DatumValue */] (val x: Self & CartesianMarkerProps[V]) extends AnyVal {
     
     inline def setAxis(value: typings.nivoCore.nivoCoreStrings.x | y): Self = StObject.set(x, "axis", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object ReadableStreamReadDoneResult {
     __obj.asInstanceOf[ReadableStreamReadDoneResult[T]]
   }
   
-  extension [Self <: ReadableStreamReadDoneResult[?], T](x: Self & ReadableStreamReadDoneResult[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadableStreamReadDoneResult[?], T] (val x: Self & ReadableStreamReadDoneResult[T]) extends AnyVal {
     
     inline def setDone(value: `true`): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListTimeSeriesRequest {
     __obj.asInstanceOf[ListTimeSeriesRequest]
   }
   
-  extension [Self <: ListTimeSeriesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTimeSeriesRequest] (val x: Self) extends AnyVal {
     
     inline def setAliasPrefix(value: PropertyAlias): Self = StObject.set(x, "aliasPrefix", value.asInstanceOf[js.Any])
     

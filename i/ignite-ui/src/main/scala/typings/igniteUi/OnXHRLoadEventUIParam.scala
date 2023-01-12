@@ -33,7 +33,8 @@ object OnXHRLoadEventUIParam {
     __obj.asInstanceOf[OnXHRLoadEventUIParam]
   }
   
-  extension [Self <: OnXHRLoadEventUIParam](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnXHRLoadEventUIParam] (val x: Self) extends AnyVal {
     
     inline def setFileId(value: Double): Self = StObject.set(x, "fileId", value.asInstanceOf[js.Any])
     

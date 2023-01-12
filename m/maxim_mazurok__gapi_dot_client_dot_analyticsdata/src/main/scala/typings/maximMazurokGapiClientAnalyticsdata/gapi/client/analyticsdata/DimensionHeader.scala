@@ -16,7 +16,8 @@ object DimensionHeader {
     __obj.asInstanceOf[DimensionHeader]
   }
   
-  extension [Self <: DimensionHeader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DimensionHeader] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

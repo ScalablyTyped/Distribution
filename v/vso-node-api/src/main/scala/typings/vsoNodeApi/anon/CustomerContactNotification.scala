@@ -26,7 +26,8 @@ object CustomerContactNotification {
     __obj.asInstanceOf[CustomerContactNotification]
   }
   
-  extension [Self <: CustomerContactNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomerContactNotification] (val x: Self) extends AnyVal {
     
     inline def setCustomerContactNotification(value: scala.Double): Self = StObject.set(x, "customerContactNotification", value.asInstanceOf[js.Any])
     

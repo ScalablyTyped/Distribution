@@ -38,7 +38,8 @@ object distSrcWinstonDotpubMod {
       __obj.asInstanceOf[IWinstonData]
     }
     
-    extension [Self <: IWinstonData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWinstonData] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

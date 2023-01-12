@@ -15,7 +15,8 @@ object CustomizeFrame {
     __obj.asInstanceOf[CustomizeFrame]
   }
   
-  extension [Self <: CustomizeFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomizeFrame] (val x: Self) extends AnyVal {
     
     inline def setCustomizeFrame(value: File => Collapse): Self = StObject.set(x, "customizeFrame", js.Any.fromFunction1(value))
   }

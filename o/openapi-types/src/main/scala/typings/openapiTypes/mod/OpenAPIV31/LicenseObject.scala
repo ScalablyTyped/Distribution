@@ -20,7 +20,8 @@ object LicenseObject {
     __obj.asInstanceOf[LicenseObject]
   }
   
-  extension [Self <: LicenseObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LicenseObject] (val x: Self) extends AnyVal {
     
     inline def setIdentifier(value: String): Self = StObject.set(x, "identifier", value.asInstanceOf[js.Any])
     

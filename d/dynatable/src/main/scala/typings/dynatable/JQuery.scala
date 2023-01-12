@@ -31,7 +31,8 @@ object JQuery {
     __obj.asInstanceOf[JQuery]
   }
   
-  extension [Self <: JQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQuery] (val x: Self) extends AnyVal {
     
     inline def setDynatable(value: Dynatable): Self = StObject.set(x, "dynatable", value.asInstanceOf[js.Any])
   }

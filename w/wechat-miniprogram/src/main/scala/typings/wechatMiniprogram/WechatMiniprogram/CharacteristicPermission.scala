@@ -26,7 +26,8 @@ object CharacteristicPermission {
     __obj.asInstanceOf[CharacteristicPermission]
   }
   
-  extension [Self <: CharacteristicPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharacteristicPermission] (val x: Self) extends AnyVal {
     
     inline def setReadEncryptionRequired(value: Boolean): Self = StObject.set(x, "readEncryptionRequired", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object GetLaunchProfileRequestwa {
     __obj.asInstanceOf[GetLaunchProfileRequestwa]
   }
   
-  extension [Self <: GetLaunchProfileRequestwa](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetLaunchProfileRequestwa] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

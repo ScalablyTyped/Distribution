@@ -27,7 +27,8 @@ object distTypesOnStageReactionsDistComponentsSmileyTearsSmallMod extends Shortc
       __obj.asInstanceOf[SmileyTearsSmallProps]
     }
     
-    extension [Self <: SmileyTearsSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmileyTearsSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

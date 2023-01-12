@@ -23,7 +23,8 @@ object AttachElasticLoadBalancerRequest {
     __obj.asInstanceOf[AttachElasticLoadBalancerRequest]
   }
   
-  extension [Self <: AttachElasticLoadBalancerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachElasticLoadBalancerRequest] (val x: Self) extends AnyVal {
     
     inline def setElasticLoadBalancerName(value: String): Self = StObject.set(x, "ElasticLoadBalancerName", value.asInstanceOf[js.Any])
     

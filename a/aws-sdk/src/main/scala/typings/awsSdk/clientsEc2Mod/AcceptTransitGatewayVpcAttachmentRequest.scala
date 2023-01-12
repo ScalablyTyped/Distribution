@@ -23,7 +23,8 @@ object AcceptTransitGatewayVpcAttachmentRequest {
     __obj.asInstanceOf[AcceptTransitGatewayVpcAttachmentRequest]
   }
   
-  extension [Self <: AcceptTransitGatewayVpcAttachmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptTransitGatewayVpcAttachmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

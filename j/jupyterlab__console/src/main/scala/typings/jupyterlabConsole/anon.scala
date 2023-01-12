@@ -52,7 +52,8 @@ object anon {
       __obj.asInstanceOf[PartialIConfig]
     }
     
-    extension [Self <: PartialIConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialIConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoClosingBrackets(value: Boolean): Self = StObject.set(x, "autoClosingBrackets", value.asInstanceOf[js.Any])
       

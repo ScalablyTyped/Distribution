@@ -64,7 +64,8 @@ object ArcGISMapService {
     __obj.asInstanceOf[ArcGISMapService]
   }
   
-  extension [Self <: ArcGISMapService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISMapService] (val x: Self) extends AnyVal {
     
     inline def setCapabilities(value: ArcGISMapServiceCapabilities): Self = StObject.set(x, "capabilities", value.asInstanceOf[js.Any])
     

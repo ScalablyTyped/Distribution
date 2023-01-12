@@ -23,7 +23,8 @@ object BufferEvent {
     __obj.asInstanceOf[BufferEvent]
   }
   
-  extension [Self <: BufferEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BufferEvent] (val x: Self) extends AnyVal {
     
     inline def setMediaType(value: MediaType): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     

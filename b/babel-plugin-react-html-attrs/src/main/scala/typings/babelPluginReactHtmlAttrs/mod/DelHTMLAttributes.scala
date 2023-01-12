@@ -21,7 +21,8 @@ object DelHTMLAttributes {
     __obj.asInstanceOf[DelHTMLAttributes[T]]
   }
   
-  extension [Self <: DelHTMLAttributes[?], T](x: Self & DelHTMLAttributes[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelHTMLAttributes[?], T] (val x: Self & DelHTMLAttributes[T]) extends AnyVal {
     
     inline def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])
     

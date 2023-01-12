@@ -25,7 +25,8 @@ object BulletHandlers {
     __obj.asInstanceOf[BulletHandlers]
   }
   
-  extension [Self <: BulletHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulletHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnMarkerClick(
       value: (WithDatumIdComputedMarker, /* event */ MouseEvent[SVGLineElement, NativeMouseEvent]) => Unit

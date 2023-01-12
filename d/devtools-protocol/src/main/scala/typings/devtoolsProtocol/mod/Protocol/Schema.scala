@@ -25,7 +25,8 @@ object Schema {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object Schema {
       __obj.asInstanceOf[GetDomainsResponse]
     }
     
-    extension [Self <: GetDomainsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetDomainsResponse] (val x: Self) extends AnyVal {
       
       inline def setDomains(value: js.Array[Domain]): Self = StObject.set(x, "domains", value.asInstanceOf[js.Any])
       

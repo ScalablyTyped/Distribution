@@ -40,7 +40,8 @@ object WebpOptions {
     __obj.asInstanceOf[WebpOptions]
   }
   
-  extension [Self <: WebpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebpOptions] (val x: Self) extends AnyVal {
     
     inline def setAlphaQuality(value: Double): Self = StObject.set(x, "alphaQuality", value.asInstanceOf[js.Any])
     

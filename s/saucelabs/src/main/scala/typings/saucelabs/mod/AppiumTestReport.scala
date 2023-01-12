@@ -99,7 +99,8 @@ object AppiumTestReport {
     __obj.asInstanceOf[AppiumTestReport]
   }
   
-  extension [Self <: AppiumTestReport](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppiumTestReport] (val x: Self) extends AnyVal {
     
     inline def setAppVersionId(value: Double): Self = StObject.set(x, "appVersionId", value.asInstanceOf[js.Any])
     

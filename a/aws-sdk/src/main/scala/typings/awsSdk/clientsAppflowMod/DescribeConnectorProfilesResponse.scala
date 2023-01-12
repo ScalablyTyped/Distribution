@@ -23,7 +23,8 @@ object DescribeConnectorProfilesResponse {
     __obj.asInstanceOf[DescribeConnectorProfilesResponse]
   }
   
-  extension [Self <: DescribeConnectorProfilesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeConnectorProfilesResponse] (val x: Self) extends AnyVal {
     
     inline def setConnectorProfileDetails(value: ConnectorProfileDetailList): Self = StObject.set(x, "connectorProfileDetails", value.asInstanceOf[js.Any])
     

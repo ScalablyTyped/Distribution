@@ -169,7 +169,8 @@ object ChartLegend {
     __obj.asInstanceOf[ChartLegend]
   }
   
-  extension [Self <: ChartLegend](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartLegend] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: ChartLegendPosition): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

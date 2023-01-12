@@ -18,7 +18,8 @@ object MatchingResource {
     __obj.asInstanceOf[MatchingResource]
   }
   
-  extension [Self <: MatchingResource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MatchingResource] (val x: Self) extends AnyVal {
     
     inline def setMatchingBucket(value: MatchingBucket): Self = StObject.set(x, "matchingBucket", value.asInstanceOf[js.Any])
     

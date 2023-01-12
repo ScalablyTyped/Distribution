@@ -173,7 +173,8 @@ object BZD {
     __obj.asInstanceOf[BZD]
   }
   
-  extension [Self <: BZD](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BZD] (val x: Self) extends AnyVal {
     
     inline def setAED(value: js.Array[String]): Self = StObject.set(x, "AED", value.asInstanceOf[js.Any])
     

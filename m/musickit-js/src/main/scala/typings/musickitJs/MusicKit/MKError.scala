@@ -30,7 +30,8 @@ object MKError {
     __obj.asInstanceOf[MKError]
   }
   
-  extension [Self <: MKError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MKError] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

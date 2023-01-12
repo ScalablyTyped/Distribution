@@ -15,7 +15,8 @@ object NextExecution {
     __obj.asInstanceOf[NextExecution]
   }
   
-  extension [Self <: NextExecution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NextExecution] (val x: Self) extends AnyVal {
     
     inline def setNextExecution(value: js.Function): Self = StObject.set(x, "nextExecution", value.asInstanceOf[js.Any])
   }

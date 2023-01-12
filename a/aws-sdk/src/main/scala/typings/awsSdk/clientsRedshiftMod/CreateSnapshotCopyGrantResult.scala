@@ -15,7 +15,8 @@ object CreateSnapshotCopyGrantResult {
     __obj.asInstanceOf[CreateSnapshotCopyGrantResult]
   }
   
-  extension [Self <: CreateSnapshotCopyGrantResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateSnapshotCopyGrantResult] (val x: Self) extends AnyVal {
     
     inline def setSnapshotCopyGrant(value: SnapshotCopyGrant): Self = StObject.set(x, "SnapshotCopyGrant", value.asInstanceOf[js.Any])
     

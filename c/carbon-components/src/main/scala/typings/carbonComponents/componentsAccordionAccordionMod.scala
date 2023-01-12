@@ -55,7 +55,8 @@ object componentsAccordionAccordionMod {
       __obj.asInstanceOf[Accordion]
     }
     
-    extension [Self <: Accordion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Accordion] (val x: Self) extends AnyVal {
       
       inline def set_checkIfButton(value: () => Boolean): Self = StObject.set(x, "_checkIfButton", js.Any.fromFunction0(value))
       
@@ -90,7 +91,8 @@ object componentsAccordionAccordionMod {
       __obj.asInstanceOf[AccordionOptions]
     }
     
-    extension [Self <: AccordionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AccordionOptions] (val x: Self) extends AnyVal {
       
       inline def setClassActive(value: String): Self = StObject.set(x, "classActive", value.asInstanceOf[js.Any])
       

@@ -74,7 +74,8 @@ object JoyrideOptions {
     __obj.asInstanceOf[JoyrideOptions]
   }
   
-  extension [Self <: JoyrideOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoyrideOptions] (val x: Self) extends AnyVal {
     
     inline def setCookie_domain(value: Boolean): Self = StObject.set(x, "cookie_domain", value.asInstanceOf[js.Any])
     

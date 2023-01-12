@@ -61,7 +61,8 @@ object AnnotationCalloutDelegate {
     __obj.asInstanceOf[AnnotationCalloutDelegate]
   }
   
-  extension [Self <: AnnotationCalloutDelegate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotationCalloutDelegate] (val x: Self) extends AnyVal {
     
     inline def setCalloutAnchorOffsetForAnnotation(value: (/* annotation */ Annotation, /* size */ Height) => DOMPoint): Self = StObject.set(x, "calloutAnchorOffsetForAnnotation", js.Any.fromFunction2(value))
     

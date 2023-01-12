@@ -464,7 +464,8 @@ object libComponentsUishellSideNavLinkTextMod extends Shortcut {
       __obj.asInstanceOf[SideNavLinkTextProps]
     }
     
-    extension [Self <: SideNavLinkTextProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SideNavLinkTextProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

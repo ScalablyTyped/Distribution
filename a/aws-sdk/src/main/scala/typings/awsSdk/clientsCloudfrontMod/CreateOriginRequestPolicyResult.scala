@@ -28,7 +28,8 @@ object CreateOriginRequestPolicyResult {
     __obj.asInstanceOf[CreateOriginRequestPolicyResult]
   }
   
-  extension [Self <: CreateOriginRequestPolicyResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateOriginRequestPolicyResult] (val x: Self) extends AnyVal {
     
     inline def setETag(value: String): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

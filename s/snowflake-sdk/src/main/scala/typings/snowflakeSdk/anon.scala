@@ -49,7 +49,8 @@ object anon {
       __obj.asInstanceOf[Binds]
     }
     
-    extension [Self <: Binds](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binds] (val x: Self) extends AnyVal {
       
       inline def setBinds(value: typings.snowflakeSdk.mod.Binds): Self = StObject.set(x, "binds", value.asInstanceOf[js.Any])
       

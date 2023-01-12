@@ -35,7 +35,8 @@ object CircularGaugeOptions {
     __obj.asInstanceOf[CircularGaugeOptions]
   }
   
-  extension [Self <: CircularGaugeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularGaugeOptions] (val x: Self) extends AnyVal {
     
     inline def setCenterTemplate(value: String | js.Function): Self = StObject.set(x, "centerTemplate", value.asInstanceOf[js.Any])
     

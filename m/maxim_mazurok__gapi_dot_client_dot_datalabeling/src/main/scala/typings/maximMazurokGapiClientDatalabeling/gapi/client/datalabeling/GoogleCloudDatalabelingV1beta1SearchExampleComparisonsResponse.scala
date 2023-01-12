@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsResponse] (val x: Self) extends AnyVal {
     
     inline def setExampleComparisons(value: js.Array[GoogleCloudDatalabelingV1beta1ExampleComparison]): Self = StObject.set(x, "exampleComparisons", value.asInstanceOf[js.Any])
     

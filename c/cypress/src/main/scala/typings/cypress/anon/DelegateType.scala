@@ -22,7 +22,8 @@ object DelegateType {
     __obj.asInstanceOf[DelegateType]
   }
   
-  extension [Self <: DelegateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelegateType] (val x: Self) extends AnyVal {
     
     inline def setDelegateType(value: String): Self = StObject.set(x, "delegateType", value.asInstanceOf[js.Any])
   }

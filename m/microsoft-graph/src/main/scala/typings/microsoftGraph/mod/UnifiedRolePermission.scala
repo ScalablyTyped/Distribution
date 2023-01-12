@@ -22,7 +22,8 @@ object UnifiedRolePermission {
     __obj.asInstanceOf[UnifiedRolePermission]
   }
   
-  extension [Self <: UnifiedRolePermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnifiedRolePermission] (val x: Self) extends AnyVal {
     
     inline def setAllowedResourceActions(value: js.Array[String]): Self = StObject.set(x, "allowedResourceActions", value.asInstanceOf[js.Any])
     

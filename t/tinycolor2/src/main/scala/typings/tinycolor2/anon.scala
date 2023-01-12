@@ -653,7 +653,8 @@ object anon {
       __obj.asInstanceOf[`000`]
     }
     
-    extension [Self <: `000`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `000`] (val x: Self) extends AnyVal {
       
       inline def set000(value: black): Self = StObject.set(x, "000", value.asInstanceOf[js.Any])
       
@@ -1244,7 +1245,8 @@ object anon {
       __obj.asInstanceOf[Aliceblue]
     }
     
-    extension [Self <: Aliceblue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Aliceblue] (val x: Self) extends AnyVal {
       
       inline def setAliceblue(value: f0f8ff): Self = StObject.set(x, "aliceblue", value.asInstanceOf[js.Any])
       

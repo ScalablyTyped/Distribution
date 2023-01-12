@@ -17,7 +17,8 @@ object DataService {
     __obj.asInstanceOf[DataService]
   }
   
-  extension [Self <: DataService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataService] (val x: Self) extends AnyVal {
     
     inline def setDataService(value: typings.breeze.breeze.DataService): Self = StObject.set(x, "dataService", value.asInstanceOf[js.Any])
     

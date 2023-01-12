@@ -53,7 +53,8 @@ object PipeableApply {
     __obj.asInstanceOf[PipeableApply[F]]
   }
   
-  extension [Self <: PipeableApply[?], F](x: Self & PipeableApply[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableApply[?], F] (val x: Self & PipeableApply[F]) extends AnyVal {
     
     inline def setAp(
       value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT<F, A> */ Any => js.Function1[

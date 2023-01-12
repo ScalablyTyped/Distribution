@@ -33,7 +33,8 @@ object EBSResourceUtilization {
     __obj.asInstanceOf[EBSResourceUtilization]
   }
   
-  extension [Self <: EBSResourceUtilization](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EBSResourceUtilization] (val x: Self) extends AnyVal {
     
     inline def setEbsReadBytesPerSecond(value: GenericString): Self = StObject.set(x, "EbsReadBytesPerSecond", value.asInstanceOf[js.Any])
     

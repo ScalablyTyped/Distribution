@@ -219,7 +219,8 @@ object IAbstractChart {
     __obj.asInstanceOf[IAbstractChart]
   }
   
-  extension [Self <: IAbstractChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAbstractChart] (val x: Self) extends AnyVal {
     
     inline def setAnimate(value: Any): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
     

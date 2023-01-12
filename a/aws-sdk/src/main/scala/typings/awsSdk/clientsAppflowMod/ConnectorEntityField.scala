@@ -68,7 +68,8 @@ object ConnectorEntityField {
     __obj.asInstanceOf[ConnectorEntityField]
   }
   
-  extension [Self <: ConnectorEntityField](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectorEntityField] (val x: Self) extends AnyVal {
     
     inline def setCustomProperties(value: CustomProperties): Self = StObject.set(x, "customProperties", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object CustomQueryParams {
     __obj.asInstanceOf[CustomQueryParams]
   }
   
-  extension [Self <: CustomQueryParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomQueryParams] (val x: Self) extends AnyVal {
     
     inline def setCustomQueryParams(value: Any): Self = StObject.set(x, "customQueryParams", value.asInstanceOf[js.Any])
     

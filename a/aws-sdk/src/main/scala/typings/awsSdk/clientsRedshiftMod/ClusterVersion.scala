@@ -28,7 +28,8 @@ object ClusterVersion {
     __obj.asInstanceOf[ClusterVersion]
   }
   
-  extension [Self <: ClusterVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterVersion] (val x: Self) extends AnyVal {
     
     inline def setClusterParameterGroupFamily(value: String): Self = StObject.set(x, "ClusterParameterGroupFamily", value.asInstanceOf[js.Any])
     

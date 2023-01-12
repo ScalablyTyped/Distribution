@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsHorizontalDragHandleMod exte
       __obj.asInstanceOf[HorizontalDragHandleProps]
     }
     
-    extension [Self <: HorizontalDragHandleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HorizontalDragHandleProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

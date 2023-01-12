@@ -47,7 +47,8 @@ object CaptionRectangle {
     __obj.asInstanceOf[CaptionRectangle]
   }
   
-  extension [Self <: CaptionRectangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CaptionRectangle] (val x: Self) extends AnyVal {
     
     inline def setHeight(value: doubleMin0Max100): Self = StObject.set(x, "Height", value.asInstanceOf[js.Any])
     

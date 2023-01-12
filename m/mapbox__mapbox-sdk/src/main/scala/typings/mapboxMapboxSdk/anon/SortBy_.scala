@@ -31,7 +31,8 @@ object SortBy_ {
     __obj.asInstanceOf[SortBy_]
   }
   
-  extension [Self <: SortBy_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SortBy_] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

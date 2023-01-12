@@ -86,7 +86,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[MetaGraph]
     }
     
-    extension [Self <: MetaGraph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaGraph] (val x: Self) extends AnyVal {
       
       inline def setSignatureDefs(value: SignatureDef): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
       
@@ -109,7 +110,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[MetaGraphInfo]
     }
     
-    extension [Self <: MetaGraphInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetaGraphInfo] (val x: Self) extends AnyVal {
       
       inline def setSignatureDefs(value: SignatureDefInfo): Self = StObject.set(x, "signatureDefs", value.asInstanceOf[js.Any])
       
@@ -138,7 +140,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[ModelPredictConfig]
     }
     
-    extension [Self <: ModelPredictConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelPredictConfig] (val x: Self) extends AnyVal {
       
       inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
       
@@ -167,7 +170,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[ModelTensorInfo]
     }
     
-    extension [Self <: ModelTensorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModelTensorInfo] (val x: Self) extends AnyVal {
       
       inline def setDtype(value: DataType): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
@@ -200,7 +204,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[SavedModelTensorInfo]
     }
     
-    extension [Self <: SavedModelTensorInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SavedModelTensorInfo] (val x: Self) extends AnyVal {
       
       inline def setDtype(value: String): Self = StObject.set(x, "dtype", value.asInstanceOf[js.Any])
       
@@ -227,7 +232,8 @@ object distModelTypesMod {
       __obj.asInstanceOf[SignatureDefEntry]
     }
     
-    extension [Self <: SignatureDefEntry](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignatureDefEntry] (val x: Self) extends AnyVal {
       
       inline def setInputs(value: StringDictionary[ModelTensorInfo]): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
       

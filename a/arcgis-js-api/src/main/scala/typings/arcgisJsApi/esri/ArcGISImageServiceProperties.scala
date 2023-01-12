@@ -216,7 +216,8 @@ object ArcGISImageServiceProperties {
     __obj.asInstanceOf[ArcGISImageServiceProperties]
   }
   
-  extension [Self <: ArcGISImageServiceProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArcGISImageServiceProperties] (val x: Self) extends AnyVal {
     
     inline def setBandIds(value: js.Array[Double]): Self = StObject.set(x, "bandIds", value.asInstanceOf[js.Any])
     

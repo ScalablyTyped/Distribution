@@ -27,7 +27,8 @@ object AppScope {
     __obj.asInstanceOf[AppScope]
   }
   
-  extension [Self <: AppScope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppScope] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: NullableOption[String]): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

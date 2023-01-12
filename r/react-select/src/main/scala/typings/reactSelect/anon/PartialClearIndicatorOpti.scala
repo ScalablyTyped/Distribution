@@ -108,7 +108,8 @@ object PartialClearIndicatorOpti {
     __obj.asInstanceOf[PartialClearIndicatorOpti]
   }
   
-  extension [Self <: PartialClearIndicatorOpti](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClearIndicatorOpti] (val x: Self) extends AnyVal {
     
     inline def setClearIndicator(value: /* props */ ClearIndicatorProps[Any, Boolean, GroupBase[Any]] => Element): Self = StObject.set(x, "ClearIndicator", js.Any.fromFunction1(value))
     

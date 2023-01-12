@@ -25,7 +25,8 @@ object JobErrorSheet {
     __obj.asInstanceOf[JobErrorSheet]
   }
   
-  extension [Self <: JobErrorSheet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobErrorSheet] (val x: Self) extends AnyVal {
     
     inline def `setJob-error-sheet-type`(value: none | standard): Self = StObject.set(x, "job-error-sheet-type", value.asInstanceOf[js.Any])
     

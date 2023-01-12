@@ -25,7 +25,8 @@ object ShaType {
     __obj.asInstanceOf[ShaType]
   }
   
-  extension [Self <: ShaType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShaType] (val x: Self) extends AnyVal {
     
     inline def setSha(value: String): Self = StObject.set(x, "sha", value.asInstanceOf[js.Any])
     

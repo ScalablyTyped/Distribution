@@ -107,7 +107,8 @@ object FeatureReductionClusterPr {
     __obj.asInstanceOf[FeatureReductionClusterPr]
   }
   
-  extension [Self <: FeatureReductionClusterPr](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureReductionClusterPr] (val x: Self) extends AnyVal {
     
     inline def setClusterMaxSize(value: Double | String): Self = StObject.set(x, "clusterMaxSize", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object ExtendedKeyUsageAsync {
     __obj.asInstanceOf[ExtendedKeyUsageAsync]
   }
   
-  extension [Self <: ExtendedKeyUsageAsync](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExtendedKeyUsageAsync] (val x: Self) extends AnyVal {
     
     inline def setEKUs(
       value: /* import warning: importer.ImportType#apply Failed type conversion: cadesplugin.CAPICOM.EKUs extends std.Function ? cadesplugin.CADES_Common.PromisifiedFunction<cadesplugin.CAPICOM.EKUs> : // tslint:disable-line ban-types

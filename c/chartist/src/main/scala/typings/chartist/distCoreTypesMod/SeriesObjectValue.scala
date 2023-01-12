@@ -17,7 +17,8 @@ object SeriesObjectValue {
     __obj.asInstanceOf[SeriesObjectValue[T]]
   }
   
-  extension [Self <: SeriesObjectValue[?], T](x: Self & SeriesObjectValue[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesObjectValue[?], T] (val x: Self & SeriesObjectValue[T]) extends AnyVal {
     
     inline def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     

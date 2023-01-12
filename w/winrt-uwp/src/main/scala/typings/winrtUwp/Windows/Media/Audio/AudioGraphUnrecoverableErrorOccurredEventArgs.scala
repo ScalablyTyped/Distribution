@@ -17,7 +17,8 @@ object AudioGraphUnrecoverableErrorOccurredEventArgs {
     __obj.asInstanceOf[AudioGraphUnrecoverableErrorOccurredEventArgs]
   }
   
-  extension [Self <: AudioGraphUnrecoverableErrorOccurredEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioGraphUnrecoverableErrorOccurredEventArgs] (val x: Self) extends AnyVal {
     
     inline def setError(value: AudioGraphUnrecoverableError): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
   }

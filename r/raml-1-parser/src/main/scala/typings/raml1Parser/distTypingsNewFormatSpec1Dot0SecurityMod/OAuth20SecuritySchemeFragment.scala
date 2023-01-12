@@ -51,7 +51,8 @@ object OAuth20SecuritySchemeFragment {
     __obj.asInstanceOf[OAuth20SecuritySchemeFragment]
   }
   
-  extension [Self <: OAuth20SecuritySchemeFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OAuth20SecuritySchemeFragment] (val x: Self) extends AnyVal {
     
     inline def setDescribedBy(value: SecuritySchemePart10): Self = StObject.set(x, "describedBy", value.asInstanceOf[js.Any])
     

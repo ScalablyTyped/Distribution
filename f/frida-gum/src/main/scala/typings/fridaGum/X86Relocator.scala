@@ -113,7 +113,8 @@ object X86Relocator {
     __obj.asInstanceOf[X86Relocator]
   }
   
-  extension [Self <: X86Relocator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: X86Relocator] (val x: Self) extends AnyVal {
     
     inline def setDispose(value: () => Unit): Self = StObject.set(x, "dispose", js.Any.fromFunction0(value))
     

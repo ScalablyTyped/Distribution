@@ -15,7 +15,8 @@ object RotateTransform {
     __obj.asInstanceOf[RotateTransform]
   }
   
-  extension [Self <: RotateTransform](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RotateTransform] (val x: Self) extends AnyVal {
     
     inline def setRotate(value: String): Self = StObject.set(x, "rotate", value.asInstanceOf[js.Any])
   }

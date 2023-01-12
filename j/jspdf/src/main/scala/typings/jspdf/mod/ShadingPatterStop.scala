@@ -17,7 +17,8 @@ object ShadingPatterStop {
     __obj.asInstanceOf[ShadingPatterStop]
   }
   
-  extension [Self <: ShadingPatterStop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShadingPatterStop] (val x: Self) extends AnyVal {
     
     inline def setColor(value: js.Array[Double]): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     

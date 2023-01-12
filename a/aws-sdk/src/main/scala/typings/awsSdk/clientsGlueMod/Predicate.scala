@@ -23,7 +23,8 @@ object Predicate {
     __obj.asInstanceOf[Predicate]
   }
   
-  extension [Self <: Predicate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Predicate] (val x: Self) extends AnyVal {
     
     inline def setConditions(value: ConditionList): Self = StObject.set(x, "Conditions", value.asInstanceOf[js.Any])
     

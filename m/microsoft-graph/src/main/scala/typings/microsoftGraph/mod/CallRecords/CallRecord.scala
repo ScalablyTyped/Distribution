@@ -66,7 +66,8 @@ object CallRecord {
     __obj.asInstanceOf[CallRecord]
   }
   
-  extension [Self <: CallRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallRecord] (val x: Self) extends AnyVal {
     
     inline def setEndDateTime(value: String): Self = StObject.set(x, "endDateTime", value.asInstanceOf[js.Any])
     

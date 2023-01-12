@@ -93,7 +93,8 @@ object buildSrcMetricsMetricMod {
       __obj.asInstanceOf[MetricOptions]
     }
     
-    extension [Self <: MetricOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetricOptions] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -133,7 +134,8 @@ object buildSrcMetricsMetricMod {
       __obj.asInstanceOf[Observable[AttributesTypes]]
     }
     
-    extension [Self <: Observable[?], AttributesTypes /* <: MetricAttributes */](x: Self & Observable[AttributesTypes]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Observable[?], AttributesTypes /* <: MetricAttributes */] (val x: Self & Observable[AttributesTypes]) extends AnyVal {
       
       inline def setAddCallback(value: ObservableCallback[AttributesTypes] => Unit): Self = StObject.set(x, "addCallback", js.Any.fromFunction1(value))
       

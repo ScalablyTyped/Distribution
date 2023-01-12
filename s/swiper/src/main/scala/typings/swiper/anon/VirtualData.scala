@@ -15,7 +15,8 @@ object VirtualData {
     __obj.asInstanceOf[VirtualData]
   }
   
-  extension [Self <: VirtualData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualData] (val x: Self) extends AnyVal {
     
     inline def setVirtualData(value: From): Self = StObject.set(x, "virtualData", value.asInstanceOf[js.Any])
   }

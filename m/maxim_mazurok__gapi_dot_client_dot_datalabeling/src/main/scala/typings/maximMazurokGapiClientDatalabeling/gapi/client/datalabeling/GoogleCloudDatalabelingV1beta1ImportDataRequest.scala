@@ -19,7 +19,8 @@ object GoogleCloudDatalabelingV1beta1ImportDataRequest {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1ImportDataRequest]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1ImportDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1ImportDataRequest] (val x: Self) extends AnyVal {
     
     inline def setInputConfig(value: GoogleCloudDatalabelingV1beta1InputConfig): Self = StObject.set(x, "inputConfig", value.asInstanceOf[js.Any])
     

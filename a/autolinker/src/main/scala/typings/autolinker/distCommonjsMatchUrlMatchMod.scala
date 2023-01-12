@@ -144,7 +144,8 @@ object distCommonjsMatchUrlMatchMod {
       __obj.asInstanceOf[UrlMatchConfig]
     }
     
-    extension [Self <: UrlMatchConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UrlMatchConfig] (val x: Self) extends AnyVal {
       
       inline def setDecodePercentEncoding(value: Boolean): Self = StObject.set(x, "decodePercentEncoding", value.asInstanceOf[js.Any])
       

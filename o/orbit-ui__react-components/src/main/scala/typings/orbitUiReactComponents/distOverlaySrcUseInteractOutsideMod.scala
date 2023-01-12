@@ -31,7 +31,8 @@ object distOverlaySrcUseInteractOutsideMod {
       __obj.asInstanceOf[UseInteractOutsideOptions]
     }
     
-    extension [Self <: UseInteractOutsideOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseInteractOutsideOptions] (val x: Self) extends AnyVal {
       
       inline def setIsDisabled(value: Boolean): Self = StObject.set(x, "isDisabled", value.asInstanceOf[js.Any])
       

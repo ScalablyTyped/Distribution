@@ -19,7 +19,8 @@ object RepoId {
     __obj.asInstanceOf[RepoId]
   }
   
-  extension [Self <: RepoId](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepoId] (val x: Self) extends AnyVal {
     
     inline def setProjectRepoId(value: ProjectRepoId): Self = StObject.set(x, "projectRepoId", value.asInstanceOf[js.Any])
     

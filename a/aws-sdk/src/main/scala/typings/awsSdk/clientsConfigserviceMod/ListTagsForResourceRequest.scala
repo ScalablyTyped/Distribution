@@ -28,7 +28,8 @@ object ListTagsForResourceRequest {
     __obj.asInstanceOf[ListTagsForResourceRequest]
   }
   
-  extension [Self <: ListTagsForResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListTagsForResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: Limit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

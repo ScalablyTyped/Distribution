@@ -68,7 +68,8 @@ object Metrics {
         __obj.asInstanceOf[MetricsActivity]
       }
       
-      extension [Self <: MetricsActivity](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricsActivity] (val x: Self) extends AnyVal {
         
         inline def `setActivity-arr`(value: Double): Self = StObject.set(x, "activity-arr", value.asInstanceOf[js.Any])
         
@@ -144,7 +145,8 @@ object Metrics {
         __obj.asInstanceOf[MetricsSubscription]
       }
       
-      extension [Self <: MetricsSubscription](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MetricsSubscription] (val x: Self) extends AnyVal {
         
         inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
         
@@ -206,7 +208,8 @@ object Metrics {
       __obj.asInstanceOf[ARPA_]
     }
     
-    extension [Self <: ARPA_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARPA_] (val x: Self) extends AnyVal {
       
       inline def setArpa(value: Double): Self = StObject.set(x, "arpa", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object Metrics {
       __obj.asInstanceOf[ARR_]
     }
     
-    extension [Self <: ARR_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARR_] (val x: Self) extends AnyVal {
       
       inline def setArr(value: Double): Self = StObject.set(x, "arr", value.asInstanceOf[js.Any])
       
@@ -248,7 +252,8 @@ object Metrics {
       __obj.asInstanceOf[ASP_]
     }
     
-    extension [Self <: ASP_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ASP_] (val x: Self) extends AnyVal {
       
       inline def setAsp(value: Double): Self = StObject.set(x, "asp", value.asInstanceOf[js.Any])
       
@@ -267,7 +272,8 @@ object Metrics {
       __obj.asInstanceOf[All_]
     }
     
-    extension [Self <: All_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: All_] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: Arpa): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     }
@@ -287,7 +293,8 @@ object Metrics {
       __obj.asInstanceOf[CustomerChurnRate_]
     }
     
-    extension [Self <: CustomerChurnRate_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerChurnRate_] (val x: Self) extends AnyVal {
       
       inline def `setCustomer-churn-rate`(value: Double): Self = StObject.set(x, "customer-churn-rate", value.asInstanceOf[js.Any])
       
@@ -308,7 +315,8 @@ object Metrics {
       __obj.asInstanceOf[CustomerCount_]
     }
     
-    extension [Self <: CustomerCount_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomerCount_] (val x: Self) extends AnyVal {
       
       inline def setCustomers(value: Double): Self = StObject.set(x, "customers", value.asInstanceOf[js.Any])
       
@@ -329,7 +337,8 @@ object Metrics {
       __obj.asInstanceOf[LTV_]
     }
     
-    extension [Self <: LTV_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LTV_] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -351,7 +360,8 @@ object Metrics {
       __obj.asInstanceOf[MRRChurnRate_]
     }
     
-    extension [Self <: MRRChurnRate_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MRRChurnRate_] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -395,7 +405,8 @@ object Metrics {
       __obj.asInstanceOf[MRR_]
     }
     
-    extension [Self <: MRR_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MRR_] (val x: Self) extends AnyVal {
       
       inline def setDate(value: String): Self = StObject.set(x, "date", value.asInstanceOf[js.Any])
       
@@ -428,7 +439,8 @@ object Metrics {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setInterval(value: String): Self = StObject.set(x, "interval", value.asInstanceOf[js.Any])
       
@@ -455,7 +467,8 @@ object Metrics {
       __obj.asInstanceOf[ParamsNoInterval]
     }
     
-    extension [Self <: ParamsNoInterval](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamsNoInterval] (val x: Self) extends AnyVal {
       
       inline def `setEnd-date`(value: String): Self = StObject.set(x, "end-date", value.asInstanceOf[js.Any])
       

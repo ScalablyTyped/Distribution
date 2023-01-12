@@ -18,7 +18,8 @@ object BatchGetChannelRequest {
     __obj.asInstanceOf[BatchGetChannelRequest]
   }
   
-  extension [Self <: BatchGetChannelRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetChannelRequest] (val x: Self) extends AnyVal {
     
     inline def setArns(value: ChannelArnList): Self = StObject.set(x, "arns", value.asInstanceOf[js.Any])
     

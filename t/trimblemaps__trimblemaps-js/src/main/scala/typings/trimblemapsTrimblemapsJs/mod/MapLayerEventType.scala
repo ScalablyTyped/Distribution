@@ -53,7 +53,8 @@ object MapLayerEventType {
     __obj.asInstanceOf[MapLayerEventType]
   }
   
-  extension [Self <: MapLayerEventType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerEventType] (val x: Self) extends AnyVal {
     
     inline def setClick(value: MapLayerMouseEvent): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

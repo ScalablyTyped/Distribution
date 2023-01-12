@@ -150,7 +150,8 @@ object Migration {
       __obj.asInstanceOf[MigrationManagerConfig]
     }
     
-    extension [Self <: MigrationManagerConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MigrationManagerConfig] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

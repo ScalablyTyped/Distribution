@@ -38,7 +38,8 @@ object PatchRule {
     __obj.asInstanceOf[PatchRule]
   }
   
-  extension [Self <: PatchRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PatchRule] (val x: Self) extends AnyVal {
     
     inline def setApproveAfterDays(value: ApproveAfterDays): Self = StObject.set(x, "ApproveAfterDays", value.asInstanceOf[js.Any])
     

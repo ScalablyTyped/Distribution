@@ -41,7 +41,8 @@ object anon {
       __obj.asInstanceOf[Body]
     }
     
-    extension [Self <: Body](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Body] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -88,7 +89,8 @@ object anon {
       __obj.asInstanceOf[Callback[T]]
     }
     
-    extension [Self <: Callback[?], T](x: Self & Callback[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Callback[?], T] (val x: Self & Callback[T]) extends AnyVal {
       
       inline def setCallback(value: (Response[T], String) => Any): Self = StObject.set(x, "callback", js.Any.fromFunction2(value))
       
@@ -125,7 +127,8 @@ object anon {
       __obj.asInstanceOf[Clientid]
     }
     
-    extension [Self <: Clientid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Clientid] (val x: Self) extends AnyVal {
       
       inline def setClient_id(value: String): Self = StObject.set(x, "client_id", value.asInstanceOf[js.Any])
       

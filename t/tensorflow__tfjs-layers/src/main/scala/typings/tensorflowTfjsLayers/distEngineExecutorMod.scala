@@ -133,7 +133,8 @@ object distEngineExecutorMod {
       __obj.asInstanceOf[ExecutionProbe]
     }
     
-    extension [Self <: ExecutionProbe](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExecutionProbe] (val x: Self) extends AnyVal {
       
       inline def setMaxNumTensors(value: Double): Self = StObject.set(x, "maxNumTensors", value.asInstanceOf[js.Any])
       
@@ -158,7 +159,8 @@ object distEngineExecutorMod {
       __obj.asInstanceOf[Feed]
     }
     
-    extension [Self <: Feed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Feed] (val x: Self) extends AnyVal {
       
       inline def setKey(value: SymbolicTensor): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

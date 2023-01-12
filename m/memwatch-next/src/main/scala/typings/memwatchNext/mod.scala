@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[LeakInformation]
     }
     
-    extension [Self <: LeakInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LeakInformation] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: js.Date): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object mod {
       __obj.asInstanceOf[StatsInformation]
     }
     
-    extension [Self <: StatsInformation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatsInformation] (val x: Self) extends AnyVal {
       
       inline def setCurrent_base(value: Double): Self = StObject.set(x, "current_base", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object mod {
       __obj.asInstanceOf[MutableArrayLike[T]]
     }
     
-    extension [Self <: MutableArrayLike[?], T](x: Self & MutableArrayLike[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MutableArrayLike[?], T] (val x: Self & MutableArrayLike[T]) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }

@@ -18,7 +18,8 @@ object PartialClassNameMapPopove {
     __obj.asInstanceOf[PartialClassNameMapPopove]
   }
   
-  extension [Self <: PartialClassNameMapPopove](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapPopove] (val x: Self) extends AnyVal {
     
     inline def setPaper(value: String): Self = StObject.set(x, "paper", value.asInstanceOf[js.Any])
     

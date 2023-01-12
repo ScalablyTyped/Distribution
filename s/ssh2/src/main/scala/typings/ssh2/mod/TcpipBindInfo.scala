@@ -19,7 +19,8 @@ object TcpipBindInfo {
     __obj.asInstanceOf[TcpipBindInfo]
   }
   
-  extension [Self <: TcpipBindInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TcpipBindInfo] (val x: Self) extends AnyVal {
     
     inline def setBindAddr(value: String): Self = StObject.set(x, "bindAddr", value.asInstanceOf[js.Any])
     

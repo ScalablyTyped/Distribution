@@ -71,7 +71,8 @@ object EnhancedCustomShapePath {
     __obj.asInstanceOf[EnhancedCustomShapePath]
   }
   
-  extension [Self <: EnhancedCustomShapePath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnhancedCustomShapePath] (val x: Self) extends AnyVal {
     
     inline def setConcentricGradientFillAllowed(value: Boolean): Self = StObject.set(x, "ConcentricGradientFillAllowed", value.asInstanceOf[js.Any])
     

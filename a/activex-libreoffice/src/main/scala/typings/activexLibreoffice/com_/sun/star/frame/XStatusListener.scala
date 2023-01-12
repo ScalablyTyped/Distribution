@@ -38,7 +38,8 @@ object XStatusListener {
     __obj.asInstanceOf[XStatusListener]
   }
   
-  extension [Self <: XStatusListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XStatusListener] (val x: Self) extends AnyVal {
     
     inline def setStatusChanged(value: FeatureStateEvent => Unit): Self = StObject.set(x, "statusChanged", js.Any.fromFunction1(value))
   }

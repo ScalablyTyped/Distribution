@@ -46,7 +46,8 @@ object serverMod {
       __obj.asInstanceOf[PipeableStream]
     }
     
-    extension [Self <: PipeableStream](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PipeableStream] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -93,7 +94,8 @@ object serverMod {
       __obj.asInstanceOf[RenderToPipeableStreamOptions]
     }
     
-    extension [Self <: RenderToPipeableStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderToPipeableStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setBootstrapModules(value: js.Array[String]): Self = StObject.set(x, "bootstrapModules", value.asInstanceOf[js.Any])
       
@@ -172,7 +174,8 @@ object serverMod {
       __obj.asInstanceOf[RenderToReadableStreamOptions]
     }
     
-    extension [Self <: RenderToReadableStreamOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderToReadableStreamOptions] (val x: Self) extends AnyVal {
       
       inline def setBootstrapModules(value: js.Array[String]): Self = StObject.set(x, "bootstrapModules", value.asInstanceOf[js.Any])
       

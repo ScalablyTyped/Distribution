@@ -66,7 +66,8 @@ object R3PipeMetadata {
     __obj.asInstanceOf[R3PipeMetadata]
   }
   
-  extension [Self <: R3PipeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: R3PipeMetadata] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[R3DependencyMetadata]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

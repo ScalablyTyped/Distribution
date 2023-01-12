@@ -34,7 +34,8 @@ object BitbucketServerTriggerConfig {
     __obj.asInstanceOf[BitbucketServerTriggerConfig]
   }
   
-  extension [Self <: BitbucketServerTriggerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BitbucketServerTriggerConfig] (val x: Self) extends AnyVal {
     
     inline def setBitbucketServerConfig(value: BitbucketServerConfig): Self = StObject.set(x, "bitbucketServerConfig", value.asInstanceOf[js.Any])
     

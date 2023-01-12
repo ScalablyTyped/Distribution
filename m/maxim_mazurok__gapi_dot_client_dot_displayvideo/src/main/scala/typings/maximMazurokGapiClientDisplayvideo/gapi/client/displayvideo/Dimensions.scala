@@ -19,7 +19,8 @@ object Dimensions {
     __obj.asInstanceOf[Dimensions]
   }
   
-  extension [Self <: Dimensions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dimensions] (val x: Self) extends AnyVal {
     
     inline def setHeightPixels(value: Double): Self = StObject.set(x, "heightPixels", value.asInstanceOf[js.Any])
     

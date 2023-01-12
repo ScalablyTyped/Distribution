@@ -33,7 +33,8 @@ object PartialRowModel {
     __obj.asInstanceOf[PartialRowModel]
   }
   
-  extension [Self <: PartialRowModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialRowModel] (val x: Self) extends AnyVal {
     
     inline def setCells(value: js.Array[CellModel]): Self = StObject.set(x, "cells", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object GetKeyRotationStatusResponse {
     __obj.asInstanceOf[GetKeyRotationStatusResponse]
   }
   
-  extension [Self <: GetKeyRotationStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetKeyRotationStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setKeyRotationEnabled(value: BooleanType): Self = StObject.set(x, "KeyRotationEnabled", value.asInstanceOf[js.Any])
     

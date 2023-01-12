@@ -33,7 +33,8 @@ object StartPersonTrackingRequest {
     __obj.asInstanceOf[StartPersonTrackingRequest]
   }
   
-  extension [Self <: StartPersonTrackingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPersonTrackingRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

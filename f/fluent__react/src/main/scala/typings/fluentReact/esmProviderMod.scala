@@ -28,7 +28,8 @@ object esmProviderMod {
       __obj.asInstanceOf[LocalizationProviderProps]
     }
     
-    extension [Self <: LocalizationProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocalizationProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object UpdateJourneyStateResponse {
     __obj.asInstanceOf[UpdateJourneyStateResponse]
   }
   
-  extension [Self <: UpdateJourneyStateResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateJourneyStateResponse] (val x: Self) extends AnyVal {
     
     inline def setJourneyResponse(value: JourneyResponse): Self = StObject.set(x, "JourneyResponse", value.asInstanceOf[js.Any])
   }

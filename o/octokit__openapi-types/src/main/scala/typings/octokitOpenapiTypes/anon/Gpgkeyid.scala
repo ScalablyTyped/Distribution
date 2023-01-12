@@ -18,7 +18,8 @@ object Gpgkeyid {
     __obj.asInstanceOf[Gpgkeyid]
   }
   
-  extension [Self <: Gpgkeyid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Gpgkeyid] (val x: Self) extends AnyVal {
     
     inline def setGpg_key_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['gpg-key-id'] */ js.Any

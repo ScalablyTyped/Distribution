@@ -19,7 +19,8 @@ object SearchAnalyticsQueryResponse {
     __obj.asInstanceOf[SearchAnalyticsQueryResponse]
   }
   
-  extension [Self <: SearchAnalyticsQueryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchAnalyticsQueryResponse] (val x: Self) extends AnyVal {
     
     inline def setResponseAggregationType(value: String): Self = StObject.set(x, "responseAggregationType", value.asInstanceOf[js.Any])
     

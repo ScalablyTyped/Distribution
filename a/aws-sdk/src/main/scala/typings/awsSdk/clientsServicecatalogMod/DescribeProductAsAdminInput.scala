@@ -33,7 +33,8 @@ object DescribeProductAsAdminInput {
     __obj.asInstanceOf[DescribeProductAsAdminInput]
   }
   
-  extension [Self <: DescribeProductAsAdminInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProductAsAdminInput] (val x: Self) extends AnyVal {
     
     inline def setAcceptLanguage(value: AcceptLanguage): Self = StObject.set(x, "AcceptLanguage", value.asInstanceOf[js.Any])
     

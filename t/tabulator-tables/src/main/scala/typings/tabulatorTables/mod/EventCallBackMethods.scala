@@ -331,7 +331,8 @@ object EventCallBackMethods {
     __obj.asInstanceOf[EventCallBackMethods]
   }
   
-  extension [Self <: EventCallBackMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventCallBackMethods] (val x: Self) extends AnyVal {
     
     inline def setAjaxError(value: () => Unit): Self = StObject.set(x, "ajaxError", js.Any.fromFunction0(value))
     

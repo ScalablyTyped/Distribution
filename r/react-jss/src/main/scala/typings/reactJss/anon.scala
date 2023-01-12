@@ -29,7 +29,8 @@ object anon {
       __obj.asInstanceOf[`0`[Theme]]
     }
     
-    extension [Self <: `0`[?], Theme](x: Self & `0`[Theme]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`[?], Theme] (val x: Self & `0`[Theme]) extends AnyVal {
       
       inline def setTheme(value: Theme): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
       
@@ -62,7 +63,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -117,7 +119,8 @@ object anon {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setClasses(
         value: Partial[
@@ -158,7 +161,8 @@ object anon {
       __obj.asInstanceOf[DisableStylesGeneration]
     }
     
-    extension [Self <: DisableStylesGeneration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DisableStylesGeneration] (val x: Self) extends AnyVal {
       
       inline def setDisableStylesGeneration(value: Boolean): Self = StObject.set(x, "disableStylesGeneration", value.asInstanceOf[js.Any])
       

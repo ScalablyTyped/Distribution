@@ -23,7 +23,8 @@ object SecurityProfileIdentifier {
     __obj.asInstanceOf[SecurityProfileIdentifier]
   }
   
-  extension [Self <: SecurityProfileIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityProfileIdentifier] (val x: Self) extends AnyVal {
     
     inline def setArn(value: SecurityProfileArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -45,7 +45,8 @@ object GetRangeParams {
     __obj.asInstanceOf[GetRangeParams]
   }
   
-  extension [Self <: GetRangeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRangeParams] (val x: Self) extends AnyVal {
     
     inline def setColumnFilter(value: ColumnCondition): Self = StObject.set(x, "columnFilter", value.asInstanceOf[js.Any])
     

@@ -104,7 +104,8 @@ object distCommandsInfoMod {
       __obj.asInstanceOf[InfoReply]
     }
     
-    extension [Self <: InfoReply](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoReply] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: js.Array[Record[String, RedisCommandArgument]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

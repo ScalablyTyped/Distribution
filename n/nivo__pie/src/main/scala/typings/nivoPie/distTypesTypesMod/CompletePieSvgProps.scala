@@ -175,7 +175,8 @@ object CompletePieSvgProps {
     __obj.asInstanceOf[CompletePieSvgProps[RawDatum]]
   }
   
-  extension [Self <: CompletePieSvgProps[?], RawDatum](x: Self & CompletePieSvgProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompletePieSvgProps[?], RawDatum] (val x: Self & CompletePieSvgProps[RawDatum]) extends AnyVal {
     
     inline def setActiveInnerRadiusOffset(value: Double): Self = StObject.set(x, "activeInnerRadiusOffset", value.asInstanceOf[js.Any])
     

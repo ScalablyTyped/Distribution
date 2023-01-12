@@ -38,7 +38,8 @@ object VehicleLocationUpdate {
     __obj.asInstanceOf[VehicleLocationUpdate]
   }
   
-  extension [Self <: VehicleLocationUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VehicleLocationUpdate] (val x: Self) extends AnyVal {
     
     inline def setHeading(value: Double): Self = StObject.set(x, "heading", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object mod {
       __obj.asInstanceOf[NotifierOptions]
     }
     
-    extension [Self <: NotifierOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotifierOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[String]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

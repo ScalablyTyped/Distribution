@@ -33,7 +33,8 @@ object GetResourcePolicyResponse {
     __obj.asInstanceOf[GetResourcePolicyResponse]
   }
   
-  extension [Self <: GetResourcePolicyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetResourcePolicyResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

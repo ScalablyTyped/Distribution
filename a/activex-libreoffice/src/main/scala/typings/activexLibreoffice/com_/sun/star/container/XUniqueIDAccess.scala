@@ -30,7 +30,8 @@ object XUniqueIDAccess {
     __obj.asInstanceOf[XUniqueIDAccess]
   }
   
-  extension [Self <: XUniqueIDAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUniqueIDAccess] (val x: Self) extends AnyVal {
     
     inline def setGetByUniqueID(value: String => Any): Self = StObject.set(x, "getByUniqueID", js.Any.fromFunction1(value))
     

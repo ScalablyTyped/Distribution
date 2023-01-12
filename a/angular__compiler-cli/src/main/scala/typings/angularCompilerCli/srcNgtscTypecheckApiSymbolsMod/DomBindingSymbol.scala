@@ -21,7 +21,8 @@ object DomBindingSymbol {
     __obj.asInstanceOf[DomBindingSymbol]
   }
   
-  extension [Self <: DomBindingSymbol](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DomBindingSymbol] (val x: Self) extends AnyVal {
     
     inline def setHost(value: ElementSymbol | TemplateSymbol): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
     

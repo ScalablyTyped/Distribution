@@ -18,7 +18,8 @@ object PutAccountVdmAttributesRequest {
     __obj.asInstanceOf[PutAccountVdmAttributesRequest]
   }
   
-  extension [Self <: PutAccountVdmAttributesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PutAccountVdmAttributesRequest] (val x: Self) extends AnyVal {
     
     inline def setVdmAttributes(value: VdmAttributes): Self = StObject.set(x, "VdmAttributes", value.asInstanceOf[js.Any])
   }

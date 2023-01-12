@@ -90,7 +90,8 @@ object XboxLiveQualityOfServiceMeasurement {
     __obj.asInstanceOf[XboxLiveQualityOfServiceMeasurement]
   }
   
-  extension [Self <: XboxLiveQualityOfServiceMeasurement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XboxLiveQualityOfServiceMeasurement] (val x: Self) extends AnyVal {
     
     inline def setDeviceAddresses(value: IVector[XboxLiveDeviceAddress]): Self = StObject.set(x, "deviceAddresses", value.asInstanceOf[js.Any])
     

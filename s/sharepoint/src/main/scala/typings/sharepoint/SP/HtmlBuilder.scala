@@ -35,7 +35,8 @@ object HtmlBuilder {
     __obj.asInstanceOf[HtmlBuilder]
   }
   
-  extension [Self <: HtmlBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlBuilder] (val x: Self) extends AnyVal {
     
     inline def setAddAttribute(value: (String, String) => Unit): Self = StObject.set(x, "addAttribute", js.Any.fromFunction2(value))
     

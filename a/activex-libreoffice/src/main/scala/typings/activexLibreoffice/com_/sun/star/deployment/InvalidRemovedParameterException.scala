@@ -35,7 +35,8 @@ object InvalidRemovedParameterException {
     __obj.asInstanceOf[InvalidRemovedParameterException]
   }
   
-  extension [Self <: InvalidRemovedParameterException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InvalidRemovedParameterException] (val x: Self) extends AnyVal {
     
     inline def setExtension(value: XPackage): Self = StObject.set(x, "Extension", value.asInstanceOf[js.Any])
     

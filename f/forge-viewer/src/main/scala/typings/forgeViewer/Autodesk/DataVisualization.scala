@@ -58,7 +58,8 @@ object DataVisualization {
         __obj.asInstanceOf[LevelRoomsMap]
       }
       
-      extension [Self <: LevelRoomsMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LevelRoomsMap] (val x: Self) extends AnyVal {
         
         inline def setAddRoomToLevel(value: (String, Room) => Unit): Self = StObject.set(x, "addRoomToLevel", js.Any.fromFunction2(value))
         
@@ -127,7 +128,8 @@ object DataVisualization {
         __obj.asInstanceOf[RoomDevice]
       }
       
-      extension [Self <: RoomDevice](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RoomDevice] (val x: Self) extends AnyVal {
         
         inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
         
@@ -166,7 +168,8 @@ object DataVisualization {
         __obj.asInstanceOf[StreamLine]
       }
       
-      extension [Self <: StreamLine](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StreamLine] (val x: Self) extends AnyVal {
         
         inline def setAdvance(value: Y => Unit): Self = StObject.set(x, "advance", js.Any.fromFunction1(value))
         
@@ -193,7 +196,8 @@ object DataVisualization {
         __obj.asInstanceOf[StreamLineBuilder]
       }
       
-      extension [Self <: StreamLineBuilder](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StreamLineBuilder] (val x: Self) extends AnyVal {
         
         inline def setCreateStreamLine(value: StreamLineSpecs => StreamLine): Self = StObject.set(x, "createStreamLine", js.Any.fromFunction1(value))
         
@@ -220,7 +224,8 @@ object DataVisualization {
         __obj.asInstanceOf[StreamLineSpecs]
       }
       
-      extension [Self <: StreamLineSpecs](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: StreamLineSpecs] (val x: Self) extends AnyVal {
         
         inline def setLineColor(value: Color): Self = StObject.set(x, "lineColor", value.asInstanceOf[js.Any])
         
@@ -343,7 +348,8 @@ object DataVisualization {
         __obj.asInstanceOf[SurfaceShadingNode]
       }
       
-      extension [Self <: SurfaceShadingNode](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SurfaceShadingNode] (val x: Self) extends AnyVal {
         
         inline def setAddPoint(value: SurfaceShadingPoint => Unit): Self = StObject.set(x, "addPoint", js.Any.fromFunction1(value))
         
@@ -399,7 +405,8 @@ object DataVisualization {
         __obj.asInstanceOf[SurfaceShadingPoint]
       }
       
-      extension [Self <: SurfaceShadingPoint](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SurfaceShadingPoint] (val x: Self) extends AnyVal {
         
         inline def setContextData(value: js.Object): Self = StObject.set(x, "contextData", value.asInstanceOf[js.Any])
         

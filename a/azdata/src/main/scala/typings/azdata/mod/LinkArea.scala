@@ -31,7 +31,8 @@ object LinkArea {
     __obj.asInstanceOf[LinkArea]
   }
   
-  extension [Self <: LinkArea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LinkArea] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityInformation(value: AccessibilityInformation): Self = StObject.set(x, "accessibilityInformation", value.asInstanceOf[js.Any])
     

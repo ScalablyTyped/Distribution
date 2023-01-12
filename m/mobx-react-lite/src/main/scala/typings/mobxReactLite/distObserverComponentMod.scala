@@ -84,7 +84,8 @@ object distObserverComponentMod {
       __obj.asInstanceOf[IObserverProps]
     }
     
-    extension [Self <: IObserverProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObserverProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: () => ReactElement | Null): Self = StObject.set(x, "children", js.Any.fromFunction0(value))
       

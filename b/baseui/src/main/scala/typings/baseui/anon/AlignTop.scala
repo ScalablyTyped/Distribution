@@ -26,7 +26,8 @@ object AlignTop {
     __obj.asInstanceOf[AlignTop]
   }
   
-  extension [Self <: AlignTop](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlignTop] (val x: Self) extends AnyVal {
     
     inline def set$alignTop(value: Boolean): Self = StObject.set(x, "$alignTop", value.asInstanceOf[js.Any])
     

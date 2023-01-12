@@ -46,7 +46,8 @@ object IQueryable {
     __obj.asInstanceOf[IQueryable]
   }
   
-  extension [Self <: IQueryable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IQueryable] (val x: Self) extends AnyVal {
     
     inline def setChild(value: /* selector */ js.UndefOr[Any] => Any): Self = StObject.set(x, "child", js.Any.fromFunction1(value))
     

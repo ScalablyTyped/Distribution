@@ -25,7 +25,8 @@ object Reactive {
     __obj.asInstanceOf[Reactive]
   }
   
-  extension [Self <: Reactive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reactive] (val x: Self) extends AnyVal {
     
     inline def setFields(value: FieldSpecifier): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     

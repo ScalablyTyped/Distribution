@@ -50,7 +50,8 @@ object CircularGridLinesProps {
     __obj.asInstanceOf[CircularGridLinesProps]
   }
   
-  extension [Self <: CircularGridLinesProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CircularGridLinesProps] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: String | AnimationParam | Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

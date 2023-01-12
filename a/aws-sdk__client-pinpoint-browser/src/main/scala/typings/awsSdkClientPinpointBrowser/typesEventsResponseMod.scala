@@ -25,7 +25,8 @@ object typesEventsResponseMod {
       __obj.asInstanceOf[EventsResponse]
     }
     
-    extension [Self <: EventsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventsResponse] (val x: Self) extends AnyVal {
       
       inline def setResults(value: StringDictionary[ItemResponse] | (js.Iterable[js.Tuple2[String, ItemResponse]])): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object typesEventsResponseMod {
       __obj.asInstanceOf[UnmarshalledEventsResponse]
     }
     
-    extension [Self <: UnmarshalledEventsResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEventsResponse] (val x: Self) extends AnyVal {
       
       inline def setResults(value: StringDictionary[UnmarshalledItemResponse]): Self = StObject.set(x, "Results", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object ClusterGetComponentTemplateRequest {
     __obj.asInstanceOf[ClusterGetComponentTemplateRequest]
   }
   
-  extension [Self <: ClusterGetComponentTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterGetComponentTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setFlat_settings(value: Boolean): Self = StObject.set(x, "flat_settings", value.asInstanceOf[js.Any])
     

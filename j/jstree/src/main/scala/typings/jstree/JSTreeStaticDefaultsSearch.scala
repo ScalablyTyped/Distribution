@@ -92,7 +92,8 @@ object JSTreeStaticDefaultsSearch {
     __obj.asInstanceOf[JSTreeStaticDefaultsSearch]
   }
   
-  extension [Self <: JSTreeStaticDefaultsSearch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSTreeStaticDefaultsSearch] (val x: Self) extends AnyVal {
     
     inline def setAjax(value: Any): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

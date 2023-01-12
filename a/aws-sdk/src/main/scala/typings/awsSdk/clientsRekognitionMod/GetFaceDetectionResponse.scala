@@ -38,7 +38,8 @@ object GetFaceDetectionResponse {
     __obj.asInstanceOf[GetFaceDetectionResponse]
   }
   
-  extension [Self <: GetFaceDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetFaceDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setFaces(value: FaceDetections): Self = StObject.set(x, "Faces", value.asInstanceOf[js.Any])
     

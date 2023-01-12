@@ -19,7 +19,8 @@ object CardanoSignedTxData {
     __obj.asInstanceOf[CardanoSignedTxData]
   }
   
-  extension [Self <: CardanoSignedTxData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardanoSignedTxData] (val x: Self) extends AnyVal {
     
     inline def setAuxiliaryDataSupplement(value: CardanoAuxiliaryDataSupplement): Self = StObject.set(x, "auxiliaryDataSupplement", value.asInstanceOf[js.Any])
     

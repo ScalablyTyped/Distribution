@@ -22,7 +22,8 @@ object WriteRequest {
     __obj.asInstanceOf[WriteRequest]
   }
   
-  extension [Self <: WriteRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WriteRequest] (val x: Self) extends AnyVal {
     
     inline def setLabels(value: ApiClientObjectMap[String]): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     

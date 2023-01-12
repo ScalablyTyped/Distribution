@@ -28,7 +28,8 @@ object EditStartEventData {
     __obj.asInstanceOf[EditStartEventData[T]]
   }
   
-  extension [Self <: EditStartEventData[?], T /* <: BaseTagData */](x: Self & EditStartEventData[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditStartEventData[?], T /* <: BaseTagData */] (val x: Self & EditStartEventData[T]) extends AnyVal {
     
     inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

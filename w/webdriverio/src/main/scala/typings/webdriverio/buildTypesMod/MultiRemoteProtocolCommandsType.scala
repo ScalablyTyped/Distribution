@@ -11732,7 +11732,8 @@ trait MultiRemoteProtocolCommandsType extends StObject {
 }
 object MultiRemoteProtocolCommandsType {
   
-  extension [Self <: MultiRemoteProtocolCommandsType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiRemoteProtocolCommandsType] (val x: Self) extends AnyVal {
     
     inline def setAcceptAlert(
       value: /* args */ Parameters[

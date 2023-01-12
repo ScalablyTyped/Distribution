@@ -23,7 +23,8 @@ object TestEnvironment {
     __obj.asInstanceOf[TestEnvironment]
   }
   
-  extension [Self <: TestEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestEnvironment] (val x: Self) extends AnyVal {
     
     inline def setOrientationAngle(value: Double): Self = StObject.set(x, "orientationAngle", value.asInstanceOf[js.Any])
     

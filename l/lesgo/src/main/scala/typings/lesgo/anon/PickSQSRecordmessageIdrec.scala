@@ -18,7 +18,8 @@ object PickSQSRecordmessageIdrec {
     __obj.asInstanceOf[PickSQSRecordmessageIdrec]
   }
   
-  extension [Self <: PickSQSRecordmessageIdrec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickSQSRecordmessageIdrec] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: String): Self = StObject.set(x, "messageId", value.asInstanceOf[js.Any])
     

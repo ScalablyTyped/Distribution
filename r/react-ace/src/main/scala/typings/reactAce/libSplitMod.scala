@@ -152,7 +152,8 @@ object libSplitMod {
       __obj.asInstanceOf[ISplitEditorProps]
     }
     
-    extension [Self <: ISplitEditorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISplitEditorProps] (val x: Self) extends AnyVal {
       
       inline def setAnnotations(value: js.Array[js.Array[IAnnotation]]): Self = StObject.set(x, "annotations", value.asInstanceOf[js.Any])
       

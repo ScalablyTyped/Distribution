@@ -33,7 +33,8 @@ object AreaHTMLAttributes {
     __obj.asInstanceOf[AreaHTMLAttributes]
   }
   
-  extension [Self <: AreaHTMLAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AreaHTMLAttributes] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

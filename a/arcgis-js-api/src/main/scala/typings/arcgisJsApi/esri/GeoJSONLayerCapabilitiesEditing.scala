@@ -86,7 +86,8 @@ object GeoJSONLayerCapabilitiesEditing {
     __obj.asInstanceOf[GeoJSONLayerCapabilitiesEditing]
   }
   
-  extension [Self <: GeoJSONLayerCapabilitiesEditing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerCapabilitiesEditing] (val x: Self) extends AnyVal {
     
     inline def setSupportsDeleteByAnonymous(value: Boolean): Self = StObject.set(x, "supportsDeleteByAnonymous", value.asInstanceOf[js.Any])
     

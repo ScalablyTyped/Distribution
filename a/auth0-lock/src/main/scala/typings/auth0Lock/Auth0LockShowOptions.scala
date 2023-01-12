@@ -34,7 +34,8 @@ object Auth0LockShowOptions {
     __obj.asInstanceOf[Auth0LockShowOptions]
   }
   
-  extension [Self <: Auth0LockShowOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockShowOptions] (val x: Self) extends AnyVal {
     
     inline def setAllowForgotPassword(value: Boolean): Self = StObject.set(x, "allowForgotPassword", value.asInstanceOf[js.Any])
     

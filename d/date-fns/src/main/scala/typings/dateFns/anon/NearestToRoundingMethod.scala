@@ -17,7 +17,8 @@ object NearestToRoundingMethod {
     __obj.asInstanceOf[NearestToRoundingMethod]
   }
   
-  extension [Self <: NearestToRoundingMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestToRoundingMethod] (val x: Self) extends AnyVal {
     
     inline def setNearestTo(value: Double): Self = StObject.set(x, "nearestTo", value.asInstanceOf[js.Any])
     

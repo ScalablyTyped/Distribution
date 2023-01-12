@@ -2212,7 +2212,8 @@ object mod {
       __obj.asInstanceOf[AnimatableStyles]
     }
     
-    extension [Self <: AnimatableStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatableStyles] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: AccentColor | OpaqueConfig): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -5446,7 +5447,8 @@ object mod {
       __obj.asInstanceOf[AnimatedRouteProps]
     }
     
-    extension [Self <: AnimatedRouteProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedRouteProps] (val x: Self) extends AnyVal {
       
       inline def setAtActive(value: AnimatableStyles): Self = StObject.set(x, "atActive", value.asInstanceOf[js.Any])
       
@@ -5519,7 +5521,8 @@ object mod {
       __obj.asInstanceOf[AnimatedSwitchProps]
     }
     
-    extension [Self <: AnimatedSwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedSwitchProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -5585,7 +5588,8 @@ object mod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setAtActive(value: AnimatableStyles): Self = StObject.set(x, "atActive", value.asInstanceOf[js.Any])
       

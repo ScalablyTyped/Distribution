@@ -15,7 +15,8 @@ object KnockoutValidationValidateOptions {
     __obj.asInstanceOf[KnockoutValidationValidateOptions]
   }
   
-  extension [Self <: KnockoutValidationValidateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationValidateOptions] (val x: Self) extends AnyVal {
     
     inline def setThrottle(value: Double): Self = StObject.set(x, "throttle", value.asInstanceOf[js.Any])
     

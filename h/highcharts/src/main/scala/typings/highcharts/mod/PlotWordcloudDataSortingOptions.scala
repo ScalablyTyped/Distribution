@@ -31,7 +31,8 @@ object PlotWordcloudDataSortingOptions {
     __obj.asInstanceOf[PlotWordcloudDataSortingOptions]
   }
   
-  extension [Self <: PlotWordcloudDataSortingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotWordcloudDataSortingOptions] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

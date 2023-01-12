@@ -21,7 +21,8 @@ object UserSettings {
     __obj.asInstanceOf[UserSettings]
   }
   
-  extension [Self <: UserSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserSettings] (val x: Self) extends AnyVal {
     
     inline def setContributionToContentDiscoveryAsOrganizationDisabled(value: Boolean): Self = StObject.set(x, "contributionToContentDiscoveryAsOrganizationDisabled", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MobileDeviceLoginRequest {
     __obj.asInstanceOf[MobileDeviceLoginRequest]
   }
   
-  extension [Self <: MobileDeviceLoginRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileDeviceLoginRequest] (val x: Self) extends AnyVal {
     
     inline def setMobileDeviceLoginRequest(value: typings.authorizenet.mod.APIContracts.MobileDeviceLoginRequest): Self = StObject.set(x, "mobileDeviceLoginRequest", value.asInstanceOf[js.Any])
   }

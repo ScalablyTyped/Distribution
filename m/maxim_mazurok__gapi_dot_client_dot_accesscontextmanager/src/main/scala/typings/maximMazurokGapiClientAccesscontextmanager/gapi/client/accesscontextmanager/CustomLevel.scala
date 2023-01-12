@@ -16,7 +16,8 @@ object CustomLevel {
     __obj.asInstanceOf[CustomLevel]
   }
   
-  extension [Self <: CustomLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomLevel] (val x: Self) extends AnyVal {
     
     inline def setExpr(value: Expr): Self = StObject.set(x, "expr", value.asInstanceOf[js.Any])
     

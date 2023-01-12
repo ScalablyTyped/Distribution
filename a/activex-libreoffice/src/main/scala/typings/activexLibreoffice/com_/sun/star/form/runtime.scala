@@ -71,7 +71,8 @@ object runtime {
       __obj.asInstanceOf[FeatureState]
     }
     
-    extension [Self <: FeatureState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FeatureState] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean): Self = StObject.set(x, "Enabled", value.asInstanceOf[js.Any])
       
@@ -104,7 +105,8 @@ object runtime {
       __obj.asInstanceOf[FilterEvent]
     }
     
-    extension [Self <: FilterEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilterEvent] (val x: Self) extends AnyVal {
       
       inline def setDisjunctiveTerm(value: Double): Self = StObject.set(x, "DisjunctiveTerm", value.asInstanceOf[js.Any])
       
@@ -231,7 +233,8 @@ object runtime {
       __obj.asInstanceOf[FormOperations]
     }
     
-    extension [Self <: FormOperations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormOperations] (val x: Self) extends AnyVal {
       
       inline def setCreateWithForm(value: XForm => Unit): Self = StObject.set(x, "createWithForm", js.Any.fromFunction1(value))
       
@@ -270,7 +273,8 @@ object runtime {
       __obj.asInstanceOf[XFeatureInvalidation]
     }
     
-    extension [Self <: XFeatureInvalidation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFeatureInvalidation] (val x: Self) extends AnyVal {
       
       inline def setInvalidateAllFeatures(value: () => Unit): Self = StObject.set(x, "invalidateAllFeatures", js.Any.fromFunction0(value))
       
@@ -400,7 +404,8 @@ object runtime {
       __obj.asInstanceOf[XFilterController]
     }
     
-    extension [Self <: XFilterController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFilterController] (val x: Self) extends AnyVal {
       
       inline def setActiveTerm(value: Double): Self = StObject.set(x, "ActiveTerm", value.asInstanceOf[js.Any])
       
@@ -479,7 +484,8 @@ object runtime {
       __obj.asInstanceOf[XFilterControllerListener]
     }
     
-    extension [Self <: XFilterControllerListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFilterControllerListener] (val x: Self) extends AnyVal {
       
       inline def setDisjunctiveTermAdded(value: FilterEvent => Unit): Self = StObject.set(x, "disjunctiveTermAdded", js.Any.fromFunction1(value))
       
@@ -666,7 +672,8 @@ object runtime {
       __obj.asInstanceOf[typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController]
     }
     
-    extension [Self <: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.activexLibreoffice.com_.sun.star.form.runtime.XFormController] (val x: Self) extends AnyVal {
       
       inline def setAddActivateListener(value: XFormControllerListener => Unit): Self = StObject.set(x, "addActivateListener", js.Any.fromFunction1(value))
       
@@ -703,7 +710,8 @@ object runtime {
       __obj.asInstanceOf[XFormControllerContext]
     }
     
-    extension [Self <: XFormControllerContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormControllerContext] (val x: Self) extends AnyVal {
       
       inline def setMakeVisible(value: XControl => Unit): Self = StObject.set(x, "makeVisible", js.Any.fromFunction1(value))
     }
@@ -859,7 +867,8 @@ object runtime {
       __obj.asInstanceOf[XFormOperations]
     }
     
-    extension [Self <: XFormOperations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XFormOperations] (val x: Self) extends AnyVal {
       
       inline def setCommitCurrentControl(value: () => Boolean): Self = StObject.set(x, "commitCurrentControl", js.Any.fromFunction0(value))
       

@@ -27,7 +27,8 @@ object distSrcGeneralDistComponentsCartSmallMod extends Shortcut {
       __obj.asInstanceOf[CartSmallProps]
     }
     
-    extension [Self <: CartSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CartSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

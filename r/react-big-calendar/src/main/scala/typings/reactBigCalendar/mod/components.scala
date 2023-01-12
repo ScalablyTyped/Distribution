@@ -18,7 +18,8 @@ object components {
     __obj.asInstanceOf[components]
   }
   
-  extension [Self <: components](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: components] (val x: Self) extends AnyVal {
     
     inline def setDateCellWrapper(value: ComponentType[js.Object]): Self = StObject.set(x, "dateCellWrapper", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object distFieldSrcUseGroupFieldMod {
       __obj.asInstanceOf[UseGroupFieldProps]
     }
     
-    extension [Self <: UseGroupFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseGroupFieldProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distFieldSrcUseGroupFieldMod {
       __obj.asInstanceOf[UseGroupFieldReturn]
     }
     
-    extension [Self <: UseGroupFieldReturn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseGroupFieldReturn] (val x: Self) extends AnyVal {
       
       inline def setFieldContext(value: PartialFieldContextType): Self = StObject.set(x, "fieldContext", value.asInstanceOf[js.Any])
       

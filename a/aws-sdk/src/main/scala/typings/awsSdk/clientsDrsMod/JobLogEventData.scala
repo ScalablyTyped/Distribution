@@ -38,7 +38,8 @@ object JobLogEventData {
     __obj.asInstanceOf[JobLogEventData]
   }
   
-  extension [Self <: JobLogEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobLogEventData] (val x: Self) extends AnyVal {
     
     inline def setConversionProperties(value: ConversionProperties): Self = StObject.set(x, "conversionProperties", value.asInstanceOf[js.Any])
     

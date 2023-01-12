@@ -23,7 +23,8 @@ object PartialExtra {
     __obj.asInstanceOf[PartialExtra]
   }
   
-  extension [Self <: PartialExtra](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialExtra] (val x: Self) extends AnyVal {
     
     inline def setCustomVars(value: StringDictionary[String]): Self = StObject.set(x, "customVars", value.asInstanceOf[js.Any])
     

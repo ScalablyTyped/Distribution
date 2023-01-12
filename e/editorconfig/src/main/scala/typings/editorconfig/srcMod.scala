@@ -48,7 +48,8 @@ object srcMod {
       __obj.asInstanceOf[ECFile]
     }
     
-    extension [Self <: ECFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ECFile] (val x: Self) extends AnyVal {
       
       inline def setContents(value: String | Buffer): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object srcMod {
       __obj.asInstanceOf[FileConfig]
     }
     
-    extension [Self <: FileConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FileConfig] (val x: Self) extends AnyVal {
       
       inline def setContents(value: ParseStringResult): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object srcMod {
       __obj.asInstanceOf[KnownProps]
     }
     
-    extension [Self <: KnownProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KnownProps] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String | unset): Self = StObject.set(x, "charset", value.asInstanceOf[js.Any])
       
@@ -149,7 +152,8 @@ object srcMod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setConfig(value: String): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
       

@@ -31,7 +31,8 @@ object distSrcTypesMetaXrplTransactionMod {
       __obj.asInstanceOf[XrplTransaction]
     }
     
-    extension [Self <: XrplTransaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XrplTransaction] (val x: Self) extends AnyVal {
       
       inline def setBalanceChanges(value: StringDictionary[js.Array[Counterparty]]): Self = StObject.set(x, "balanceChanges", value.asInstanceOf[js.Any])
       

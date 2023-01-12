@@ -23,7 +23,8 @@ object XSlidePreviewCacheListener {
     __obj.asInstanceOf[XSlidePreviewCacheListener]
   }
   
-  extension [Self <: XSlidePreviewCacheListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSlidePreviewCacheListener] (val x: Self) extends AnyVal {
     
     inline def setNotifyPreviewCreation(value: Double => Unit): Self = StObject.set(x, "notifyPreviewCreation", js.Any.fromFunction1(value))
   }

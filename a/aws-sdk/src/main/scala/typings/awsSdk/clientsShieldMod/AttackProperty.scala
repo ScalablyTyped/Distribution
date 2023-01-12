@@ -38,7 +38,8 @@ object AttackProperty {
     __obj.asInstanceOf[AttackProperty]
   }
   
-  extension [Self <: AttackProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttackProperty] (val x: Self) extends AnyVal {
     
     inline def setAttackLayer(value: AttackLayer): Self = StObject.set(x, "AttackLayer", value.asInstanceOf[js.Any])
     

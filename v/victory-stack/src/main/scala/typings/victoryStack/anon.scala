@@ -31,7 +31,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setX(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.D3Scale<any> */ Any
@@ -60,7 +61,8 @@ object anon {
       __obj.asInstanceOf[`1`]
     }
     
-    extension [Self <: `1`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `1`] (val x: Self) extends AnyVal {
       
       inline def setX(value: Boolean): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -200,7 +202,8 @@ object anon {
       __obj.asInstanceOf[Animate]
     }
     
-    extension [Self <: Animate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animate] (val x: Self) extends AnyVal {
       
       inline def setAnimate(
         value: Validator[
@@ -367,7 +370,8 @@ object anon {
       __obj.asInstanceOf[Bottom]
     }
     
-    extension [Self <: Bottom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bottom] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Any): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -426,7 +430,8 @@ object anon {
       __obj.asInstanceOf[Categories]
     }
     
-    extension [Self <: Categories](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Categories] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -473,7 +478,8 @@ object anon {
       __obj.asInstanceOf[ContainerComponent]
     }
     
-    extension [Self <: ContainerComponent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContainerComponent] (val x: Self) extends AnyVal {
       
       inline def setContainerComponent(value: Element): Self = StObject.set(x, "containerComponent", value.asInstanceOf[js.Any])
       
@@ -504,7 +510,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Requireable[js.Object]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -554,7 +561,8 @@ object anon {
       __obj.asInstanceOf[Domain]
     }
     
-    extension [Self <: Domain](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Domain] (val x: Self) extends AnyVal {
       
       inline def setCategories(value: Any): Self = StObject.set(x, "categories", value.asInstanceOf[js.Any])
       
@@ -591,7 +599,8 @@ object anon {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setEvents(value: js.Array[Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
       
@@ -613,7 +622,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setType(value: Call): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -635,7 +645,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_victory-core.D3Scale<any> */ Any
@@ -660,7 +671,8 @@ object anon {
       __obj.asInstanceOf[XY]
     }
     
-    extension [Self <: XY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XY] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -688,7 +700,8 @@ object anon {
       __obj.asInstanceOf[Y]
     }
     
-    extension [Self <: Y](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Y] (val x: Self) extends AnyVal {
       
       inline def setX(value: Requireable[js.Array[js.UndefOr[String | Null]]]): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

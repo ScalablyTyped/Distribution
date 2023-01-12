@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[Js2ResxOptions]
     }
     
-    extension [Self <: Js2ResxOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Js2ResxOptions] (val x: Self) extends AnyVal {
       
       inline def setIndent(value: String): Self = StObject.set(x, "indent", value.asInstanceOf[js.Any])
       

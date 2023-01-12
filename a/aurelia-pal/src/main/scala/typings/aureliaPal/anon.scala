@@ -30,7 +30,8 @@ object anon {
       __obj.asInstanceOf[TypeofXMLHttpRequest]
     }
     
-    extension [Self <: TypeofXMLHttpRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypeofXMLHttpRequest] (val x: Self) extends AnyVal {
       
       inline def setDONE(value: Double): Self = StObject.set(x, "DONE", value.asInstanceOf[js.Any])
       

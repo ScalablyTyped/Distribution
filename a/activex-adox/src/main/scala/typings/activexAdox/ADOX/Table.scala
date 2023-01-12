@@ -61,7 +61,8 @@ object Table {
     __obj.asInstanceOf[Table]
   }
   
-  extension [Self <: Table](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Table] (val x: Self) extends AnyVal {
     
     inline def setADOXDotTable_typekey(value: Table): Self = StObject.set(x, "ADOX.Table_typekey", value.asInstanceOf[js.Any])
     

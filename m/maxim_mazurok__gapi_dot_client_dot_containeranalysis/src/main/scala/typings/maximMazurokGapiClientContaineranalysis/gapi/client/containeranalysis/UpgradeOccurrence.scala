@@ -26,7 +26,8 @@ object UpgradeOccurrence {
     __obj.asInstanceOf[UpgradeOccurrence]
   }
   
-  extension [Self <: UpgradeOccurrence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpgradeOccurrence] (val x: Self) extends AnyVal {
     
     inline def setDistribution(value: UpgradeDistribution): Self = StObject.set(x, "distribution", value.asInstanceOf[js.Any])
     

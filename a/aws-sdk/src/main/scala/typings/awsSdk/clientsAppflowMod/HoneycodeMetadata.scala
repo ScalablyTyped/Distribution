@@ -18,7 +18,8 @@ object HoneycodeMetadata {
     __obj.asInstanceOf[HoneycodeMetadata]
   }
   
-  extension [Self <: HoneycodeMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoneycodeMetadata] (val x: Self) extends AnyVal {
     
     inline def setOAuthScopes(value: OAuthScopeList): Self = StObject.set(x, "oAuthScopes", value.asInstanceOf[js.Any])
     

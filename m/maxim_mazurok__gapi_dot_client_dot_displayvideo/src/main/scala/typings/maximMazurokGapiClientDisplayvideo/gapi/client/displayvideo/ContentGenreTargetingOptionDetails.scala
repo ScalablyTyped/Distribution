@@ -16,7 +16,8 @@ object ContentGenreTargetingOptionDetails {
     __obj.asInstanceOf[ContentGenreTargetingOptionDetails]
   }
   
-  extension [Self <: ContentGenreTargetingOptionDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentGenreTargetingOptionDetails] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

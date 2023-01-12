@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "terminal-link"
-version := "3.0.0-7a5b9d"
+version := "3.0.0-4cd41f"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -27,7 +27,8 @@ object IsMeasured {
     __obj.asInstanceOf[IsMeasured[Value]]
   }
   
-  extension [Self <: IsMeasured[?], Value](x: Self & IsMeasured[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsMeasured[?], Value] (val x: Self & IsMeasured[Value]) extends AnyVal {
     
     inline def setIsMeasured(value: Boolean): Self = StObject.set(x, "isMeasured", value.asInstanceOf[js.Any])
     

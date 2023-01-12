@@ -20,7 +20,8 @@ object PickOptionslegendcolorFie {
     __obj.asInstanceOf[PickOptionslegendcolorFie]
   }
   
-  extension [Self <: PickOptionslegendcolorFie](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickOptionslegendcolorFie] (val x: Self) extends AnyVal {
     
     inline def setColorField(value: String): Self = StObject.set(x, "colorField", value.asInstanceOf[js.Any])
     

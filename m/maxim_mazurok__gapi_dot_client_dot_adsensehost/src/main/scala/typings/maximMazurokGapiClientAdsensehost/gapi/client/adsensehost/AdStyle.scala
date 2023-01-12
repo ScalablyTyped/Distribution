@@ -27,7 +27,8 @@ object AdStyle {
     __obj.asInstanceOf[AdStyle]
   }
   
-  extension [Self <: AdStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdStyle] (val x: Self) extends AnyVal {
     
     inline def setColors(value: Background): Self = StObject.set(x, "colors", value.asInstanceOf[js.Any])
     

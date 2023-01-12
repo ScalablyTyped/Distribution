@@ -25,7 +25,8 @@ object cherryPickOptionsMod {
       __obj.asInstanceOf[CherrypickOptions]
     }
     
-    extension [Self <: CherrypickOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CherrypickOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckoutOpts(value: CheckoutOptions): Self = StObject.set(x, "checkoutOpts", value.asInstanceOf[js.Any])
       

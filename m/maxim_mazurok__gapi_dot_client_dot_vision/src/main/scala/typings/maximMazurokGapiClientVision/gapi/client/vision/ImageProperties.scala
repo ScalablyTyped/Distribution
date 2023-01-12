@@ -16,7 +16,8 @@ object ImageProperties {
     __obj.asInstanceOf[ImageProperties]
   }
   
-  extension [Self <: ImageProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageProperties] (val x: Self) extends AnyVal {
     
     inline def setDominantColors(value: DominantColorsAnnotation): Self = StObject.set(x, "dominantColors", value.asInstanceOf[js.Any])
     

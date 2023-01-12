@@ -22,7 +22,8 @@ object LookupSelection {
     __obj.asInstanceOf[LookupSelection]
   }
   
-  extension [Self <: LookupSelection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LookupSelection] (val x: Self) extends AnyVal {
     
     inline def setParam(value: ParameterName): Self = StObject.set(x, "param", value.asInstanceOf[js.Any])
   }

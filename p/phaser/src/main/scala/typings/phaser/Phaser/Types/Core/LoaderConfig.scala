@@ -58,7 +58,8 @@ object LoaderConfig {
     __obj.asInstanceOf[LoaderConfig]
   }
   
-  extension [Self <: LoaderConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderConfig] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

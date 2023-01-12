@@ -23,7 +23,8 @@ object MakeTextLowerCaseCommand {
     __obj.asInstanceOf[MakeTextLowerCaseCommand]
   }
   
-  extension [Self <: MakeTextLowerCaseCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MakeTextLowerCaseCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: () => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
   }

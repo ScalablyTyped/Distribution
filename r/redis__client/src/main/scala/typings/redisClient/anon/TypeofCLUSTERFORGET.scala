@@ -18,7 +18,8 @@ object TypeofCLUSTERFORGET {
     __obj.asInstanceOf[TypeofCLUSTERFORGET]
   }
   
-  extension [Self <: TypeofCLUSTERFORGET](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCLUSTERFORGET] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: String => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction1(value))
     

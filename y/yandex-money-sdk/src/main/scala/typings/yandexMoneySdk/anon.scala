@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[Allowed]
     }
     
-    extension [Self <: Allowed](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Allowed] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
     }
@@ -58,7 +59,8 @@ object anon {
       __obj.asInstanceOf[Amount]
     }
     
-    extension [Self <: Amount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Amount] (val x: Self) extends AnyVal {
       
       inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
       
@@ -99,7 +101,8 @@ object anon {
       __obj.asInstanceOf[Article]
     }
     
-    extension [Self <: Article](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Article] (val x: Self) extends AnyVal {
       
       inline def setArticle(value: js.Array[MerchantArticleId]): Self = StObject.set(x, "article", value.asInstanceOf[js.Any])
       
@@ -132,7 +135,8 @@ object anon {
       __obj.asInstanceOf[Available]
     }
     
-    extension [Self <: Available](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Available] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: Double): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -169,7 +173,8 @@ object anon {
       __obj.asInstanceOf[Cards]
     }
     
-    extension [Self <: Cards](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cards] (val x: Self) extends AnyVal {
       
       inline def setCards(value: Cscrequired): Self = StObject.set(x, "cards", value.asInstanceOf[js.Any])
       
@@ -196,7 +201,8 @@ object anon {
       __obj.asInstanceOf[Cscrequired]
     }
     
-    extension [Self <: Cscrequired](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cscrequired] (val x: Self) extends AnyVal {
       
       inline def setAllowed(value: Boolean): Self = StObject.set(x, "allowed", value.asInstanceOf[js.Any])
       
@@ -223,7 +229,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setMD(value: String): Self = StObject.set(x, "MD", value.asInstanceOf[js.Any])
       
@@ -247,7 +254,8 @@ object anon {
       __obj.asInstanceOf[Id]
     }
     
-    extension [Self <: Id](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Id] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -272,7 +280,8 @@ object anon {
       __obj.asInstanceOf[MerchantArticleId]
     }
     
-    extension [Self <: MerchantArticleId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MerchantArticleId] (val x: Self) extends AnyVal {
       
       inline def setMerchantArticleId(value: String): Self = StObject.set(x, "merchantArticleId", value.asInstanceOf[js.Any])
       
@@ -300,7 +309,8 @@ object anon {
       __obj.asInstanceOf[Moneysourcetoken]
     }
     
-    extension [Self <: Moneysourcetoken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Moneysourcetoken] (val x: Self) extends AnyVal {
       
       inline def setMoney_source_token(value: String): Self = StObject.set(x, "money_source_token", value.asInstanceOf[js.Any])
       
@@ -329,7 +339,8 @@ object anon {
       __obj.asInstanceOf[Panfragment]
     }
     
-    extension [Self <: Panfragment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Panfragment] (val x: Self) extends AnyVal {
       
       inline def setPan_fragment(value: String): Self = StObject.set(x, "pan_fragment", value.asInstanceOf[js.Any])
       
@@ -354,7 +365,8 @@ object anon {
       __obj.asInstanceOf[Secret]
     }
     
-    extension [Self <: Secret](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Secret] (val x: Self) extends AnyVal {
       
       inline def setSecret(value: String): Self = StObject.set(x, "secret", value.asInstanceOf[js.Any])
       
@@ -375,7 +387,8 @@ object anon {
       __obj.asInstanceOf[Ts]
     }
     
-    extension [Self <: Ts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Ts] (val x: Self) extends AnyVal {
       
       inline def setTs(value: String): Self = StObject.set(x, "ts", value.asInstanceOf[js.Any])
       

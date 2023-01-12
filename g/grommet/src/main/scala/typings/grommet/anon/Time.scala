@@ -25,7 +25,8 @@ object Time {
     __obj.asInstanceOf[Time]
   }
   
-  extension [Self <: Time](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Time] (val x: Self) extends AnyVal {
     
     inline def setContainer(value: BoxProps): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
     

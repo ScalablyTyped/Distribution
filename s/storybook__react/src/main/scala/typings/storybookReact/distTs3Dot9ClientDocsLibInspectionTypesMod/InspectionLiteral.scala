@@ -20,7 +20,8 @@ object InspectionLiteral {
     __obj.asInstanceOf[InspectionLiteral]
   }
   
-  extension [Self <: InspectionLiteral](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionLiteral] (val x: Self) extends AnyVal {
     
     inline def setType(value: LITERAL): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

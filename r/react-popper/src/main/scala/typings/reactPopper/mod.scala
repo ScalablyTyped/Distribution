@@ -149,7 +149,8 @@ object mod {
       __obj.asInstanceOf[ManagerProps]
     }
     
-    extension [Self <: ManagerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ManagerProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -179,7 +180,8 @@ object mod {
       __obj.asInstanceOf[PopperArrowProps]
     }
     
-    extension [Self <: PopperArrowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperArrowProps] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object mod {
       __obj.asInstanceOf[PopperChildrenProps]
     }
     
-    extension [Self <: PopperChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setArrowProps(value: PopperArrowProps): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
       
@@ -273,7 +276,8 @@ object mod {
       __obj.asInstanceOf[PopperProps[Modifiers]]
     }
     
-    extension [Self <: PopperProps[?], Modifiers](x: Self & PopperProps[Modifiers]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperProps[?], Modifiers] (val x: Self & PopperProps[Modifiers]) extends AnyVal {
       
       inline def setChildren(value: PopperChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -325,7 +329,8 @@ object mod {
       __obj.asInstanceOf[ReferenceChildrenProps]
     }
     
-    extension [Self <: ReferenceChildrenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceChildrenProps] (val x: Self) extends AnyVal {
       
       inline def setRef(value: Ref[Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
@@ -348,7 +353,8 @@ object mod {
       __obj.asInstanceOf[ReferenceProps]
     }
     
-    extension [Self <: ReferenceProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReferenceProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReferenceChildrenProps => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       

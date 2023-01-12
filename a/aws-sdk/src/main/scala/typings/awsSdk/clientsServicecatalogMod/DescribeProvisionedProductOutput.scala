@@ -23,7 +23,8 @@ object DescribeProvisionedProductOutput {
     __obj.asInstanceOf[DescribeProvisionedProductOutput]
   }
   
-  extension [Self <: DescribeProvisionedProductOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeProvisionedProductOutput] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchDashboards(value: CloudWatchDashboards): Self = StObject.set(x, "CloudWatchDashboards", value.asInstanceOf[js.Any])
     

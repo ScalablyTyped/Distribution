@@ -23,7 +23,8 @@ object libPropTypesMod {
       __obj.asInstanceOf[ITouchProps]
     }
     
-    extension [Self <: ITouchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITouchProps] (val x: Self) extends AnyVal {
       
       inline def setActiveClassName(value: String): Self = StObject.set(x, "activeClassName", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object libPropTypesMod {
       __obj.asInstanceOf[ITouchState]
     }
     
-    extension [Self <: ITouchState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITouchState] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     }

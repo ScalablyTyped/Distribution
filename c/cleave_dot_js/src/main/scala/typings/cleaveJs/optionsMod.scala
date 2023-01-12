@@ -84,7 +84,8 @@ object optionsMod {
       __obj.asInstanceOf[CleaveOptions]
     }
     
-    extension [Self <: CleaveOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CleaveOptions] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[Double]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       

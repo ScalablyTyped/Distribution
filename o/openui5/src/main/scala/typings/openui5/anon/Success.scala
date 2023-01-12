@@ -43,7 +43,8 @@ object Success {
     __obj.asInstanceOf[Success]
   }
   
-  extension [Self <: Success](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Success] (val x: Self) extends AnyVal {
     
     inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
     

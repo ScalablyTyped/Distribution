@@ -78,7 +78,8 @@ object GetChangesetResponse {
     __obj.asInstanceOf[GetChangesetResponse]
   }
   
-  extension [Self <: GetChangesetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetChangesetResponse] (val x: Self) extends AnyVal {
     
     inline def setActiveFromTimestamp(value: TimestampEpoch): Self = StObject.set(x, "activeFromTimestamp", value.asInstanceOf[js.Any])
     

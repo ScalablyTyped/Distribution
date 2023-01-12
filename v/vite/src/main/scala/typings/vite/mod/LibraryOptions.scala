@@ -41,7 +41,8 @@ object LibraryOptions {
     __obj.asInstanceOf[LibraryOptions]
   }
   
-  extension [Self <: LibraryOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LibraryOptions] (val x: Self) extends AnyVal {
     
     inline def setEntry(value: InputOption): Self = StObject.set(x, "entry", value.asInstanceOf[js.Any])
     

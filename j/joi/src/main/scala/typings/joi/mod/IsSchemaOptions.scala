@@ -20,7 +20,8 @@ object IsSchemaOptions {
     __obj.asInstanceOf[IsSchemaOptions]
   }
   
-  extension [Self <: IsSchemaOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSchemaOptions] (val x: Self) extends AnyVal {
     
     inline def setLegacy(value: Boolean): Self = StObject.set(x, "legacy", value.asInstanceOf[js.Any])
   }

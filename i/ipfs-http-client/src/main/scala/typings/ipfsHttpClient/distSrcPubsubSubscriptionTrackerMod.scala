@@ -50,7 +50,8 @@ object distSrcPubsubSubscriptionTrackerMod {
       __obj.asInstanceOf[Subscription]
     }
     
-    extension [Self <: Subscription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Subscription] (val x: Self) extends AnyVal {
       
       inline def setController(value: AbortController): Self = StObject.set(x, "controller", value.asInstanceOf[js.Any])
       

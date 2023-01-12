@@ -17,7 +17,8 @@ object ErrorUtils {
     __obj.asInstanceOf[ErrorUtils]
   }
   
-  extension [Self <: ErrorUtils](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorUtils] (val x: Self) extends AnyVal {
     
     inline def setGetGlobalHandler(value: () => ErrorHandlerCallback): Self = StObject.set(x, "getGlobalHandler", js.Any.fromFunction0(value))
     

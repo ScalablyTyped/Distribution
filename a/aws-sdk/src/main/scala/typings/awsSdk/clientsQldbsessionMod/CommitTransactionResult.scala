@@ -33,7 +33,8 @@ object CommitTransactionResult {
     __obj.asInstanceOf[CommitTransactionResult]
   }
   
-  extension [Self <: CommitTransactionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommitTransactionResult] (val x: Self) extends AnyVal {
     
     inline def setCommitDigest(value: CommitDigest): Self = StObject.set(x, "CommitDigest", value.asInstanceOf[js.Any])
     

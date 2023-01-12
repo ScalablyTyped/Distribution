@@ -39,7 +39,8 @@ object IAccordion {
     __obj.asInstanceOf[IAccordion]
   }
   
-  extension [Self <: IAccordion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAccordion] (val x: Self) extends AnyVal {
     
     inline def setActiveOnTop(value: Boolean): Self = StObject.set(x, "activeOnTop", value.asInstanceOf[js.Any])
     

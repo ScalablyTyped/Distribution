@@ -37,7 +37,8 @@ object AzureTokenCredentialsOptions {
     __obj.asInstanceOf[AzureTokenCredentialsOptions]
   }
   
-  extension [Self <: AzureTokenCredentialsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AzureTokenCredentialsOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizationScheme(value: String): Self = StObject.set(x, "authorizationScheme", value.asInstanceOf[js.Any])
     

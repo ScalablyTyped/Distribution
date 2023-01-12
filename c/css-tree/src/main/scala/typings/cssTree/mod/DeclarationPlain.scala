@@ -26,7 +26,8 @@ object DeclarationPlain {
     __obj.asInstanceOf[DeclarationPlain]
   }
   
-  extension [Self <: DeclarationPlain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeclarationPlain] (val x: Self) extends AnyVal {
     
     inline def setImportant(value: Boolean | String): Self = StObject.set(x, "important", value.asInstanceOf[js.Any])
     

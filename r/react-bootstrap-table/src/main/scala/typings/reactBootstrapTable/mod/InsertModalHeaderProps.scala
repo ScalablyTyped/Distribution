@@ -45,7 +45,8 @@ object InsertModalHeaderProps {
     __obj.asInstanceOf[InsertModalHeaderProps]
   }
   
-  extension [Self <: InsertModalHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertModalHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setBeforeClose(value: /* e */ SyntheticEvent[Any, Event] => Unit): Self = StObject.set(x, "beforeClose", js.Any.fromFunction1(value))
     

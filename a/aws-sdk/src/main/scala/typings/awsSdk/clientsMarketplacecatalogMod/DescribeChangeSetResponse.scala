@@ -58,7 +58,8 @@ object DescribeChangeSetResponse {
     __obj.asInstanceOf[DescribeChangeSetResponse]
   }
   
-  extension [Self <: DescribeChangeSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChangeSetResponse] (val x: Self) extends AnyVal {
     
     inline def setChangeSet(value: ChangeSetDescription): Self = StObject.set(x, "ChangeSet", value.asInstanceOf[js.Any])
     

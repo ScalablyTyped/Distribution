@@ -17,7 +17,8 @@ object CAVersionJson {
     __obj.asInstanceOf[CAVersionJson]
   }
   
-  extension [Self <: CAVersionJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAVersionJson] (val x: Self) extends AnyVal {
     
     inline def setCertificateIndex(value: Double): Self = StObject.set(x, "certificateIndex", value.asInstanceOf[js.Any])
     

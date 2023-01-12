@@ -55,7 +55,8 @@ object distTypescriptResultsMod {
       __obj.asInstanceOf[ResultMap]
     }
     
-    extension [Self <: ResultMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultMap] (val x: Self) extends AnyVal {
       
       inline def setBLOCKED(value: blocked): Self = StObject.set(x, "BLOCKED", value.asInstanceOf[js.Any])
       

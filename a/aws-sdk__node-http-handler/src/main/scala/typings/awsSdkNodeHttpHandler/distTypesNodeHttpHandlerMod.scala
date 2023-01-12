@@ -63,7 +63,8 @@ object distTypesNodeHttpHandlerMod {
       __obj.asInstanceOf[NodeHttpHandlerOptions]
     }
     
-    extension [Self <: NodeHttpHandlerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeHttpHandlerOptions] (val x: Self) extends AnyVal {
       
       inline def setConnectionTimeout(value: Double): Self = StObject.set(x, "connectionTimeout", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object GetRestApisRequest {
     __obj.asInstanceOf[GetRestApisRequest]
   }
   
-  extension [Self <: GetRestApisRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetRestApisRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: NullableInteger): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
     

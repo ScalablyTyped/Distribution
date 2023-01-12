@@ -38,7 +38,8 @@ object UsageRecord {
     __obj.asInstanceOf[UsageRecord]
   }
   
-  extension [Self <: UsageRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsageRecord] (val x: Self) extends AnyVal {
     
     inline def setCustomerIdentifier(value: CustomerIdentifier): Self = StObject.set(x, "CustomerIdentifier", value.asInstanceOf[js.Any])
     

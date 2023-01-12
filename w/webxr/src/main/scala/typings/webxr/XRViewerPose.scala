@@ -28,7 +28,8 @@ object XRViewerPose {
     __obj.asInstanceOf[XRViewerPose]
   }
   
-  extension [Self <: XRViewerPose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRViewerPose] (val x: Self) extends AnyVal {
     
     inline def setViews(value: js.Array[XRView]): Self = StObject.set(x, "views", value.asInstanceOf[js.Any])
     

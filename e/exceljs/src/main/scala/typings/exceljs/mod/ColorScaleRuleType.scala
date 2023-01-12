@@ -25,7 +25,8 @@ object ColorScaleRuleType {
     __obj.asInstanceOf[ColorScaleRuleType]
   }
   
-  extension [Self <: ColorScaleRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorScaleRuleType] (val x: Self) extends AnyVal {
     
     inline def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
     

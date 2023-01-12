@@ -33,7 +33,8 @@ object JobProgressSummary {
     __obj.asInstanceOf[JobProgressSummary]
   }
   
-  extension [Self <: JobProgressSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobProgressSummary] (val x: Self) extends AnyVal {
     
     inline def setNumberOfTasksFailed(value: JobNumberOfTasksFailed): Self = StObject.set(x, "NumberOfTasksFailed", value.asInstanceOf[js.Any])
     

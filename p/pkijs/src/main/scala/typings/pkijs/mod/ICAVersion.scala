@@ -17,7 +17,8 @@ object ICAVersion {
     __obj.asInstanceOf[ICAVersion]
   }
   
-  extension [Self <: ICAVersion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICAVersion] (val x: Self) extends AnyVal {
     
     inline def setCertificateIndex(value: Double): Self = StObject.set(x, "certificateIndex", value.asInstanceOf[js.Any])
     

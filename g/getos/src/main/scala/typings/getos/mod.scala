@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[LinuxOs]
     }
     
-    extension [Self <: LinuxOs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinuxOs] (val x: Self) extends AnyVal {
       
       inline def setCodename(value: String): Self = StObject.set(x, "codename", value.asInstanceOf[js.Any])
       
@@ -85,7 +86,8 @@ object mod {
       __obj.asInstanceOf[OtherOs]
     }
     
-    extension [Self <: OtherOs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OtherOs] (val x: Self) extends AnyVal {
       
       inline def setOs(value: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin): Self = StObject.set(x, "os", value.asInstanceOf[js.Any])
     }

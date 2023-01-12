@@ -23,7 +23,8 @@ object UserQuickConnectConfig {
     __obj.asInstanceOf[UserQuickConnectConfig]
   }
   
-  extension [Self <: UserQuickConnectConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserQuickConnectConfig] (val x: Self) extends AnyVal {
     
     inline def setContactFlowId(value: ContactFlowId): Self = StObject.set(x, "ContactFlowId", value.asInstanceOf[js.Any])
     

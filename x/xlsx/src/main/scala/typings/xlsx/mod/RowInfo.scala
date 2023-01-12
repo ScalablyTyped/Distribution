@@ -27,7 +27,8 @@ object RowInfo {
     __obj.asInstanceOf[RowInfo]
   }
   
-  extension [Self <: RowInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RowInfo] (val x: Self) extends AnyVal {
     
     inline def setHidden(value: Boolean): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
     

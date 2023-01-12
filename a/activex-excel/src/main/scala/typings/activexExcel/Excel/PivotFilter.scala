@@ -67,7 +67,8 @@ object PivotFilter {
     __obj.asInstanceOf[PivotFilter]
   }
   
-  extension [Self <: PivotFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PivotFilter] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

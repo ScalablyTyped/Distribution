@@ -48,7 +48,8 @@ object TransitGatewayRouteTableRoute {
     __obj.asInstanceOf[TransitGatewayRouteTableRoute]
   }
   
-  extension [Self <: TransitGatewayRouteTableRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRouteTableRoute] (val x: Self) extends AnyVal {
     
     inline def setAttachmentId(value: String): Self = StObject.set(x, "AttachmentId", value.asInstanceOf[js.Any])
     

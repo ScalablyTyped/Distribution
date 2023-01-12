@@ -124,7 +124,8 @@ object Metrics {
     __obj.asInstanceOf[Metrics]
   }
   
-  extension [Self <: Metrics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Metrics] (val x: Self) extends AnyVal {
     
     inline def setAos(value: Double): Self = StObject.set(x, "aos", value.asInstanceOf[js.Any])
     

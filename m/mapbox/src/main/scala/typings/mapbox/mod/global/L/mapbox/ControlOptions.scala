@@ -20,7 +20,8 @@ object ControlOptions {
     __obj.asInstanceOf[ControlOptions]
   }
   
-  extension [Self <: ControlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ControlOptions] (val x: Self) extends AnyVal {
     
     inline def setSanitizer(value: /* template */ String => String): Self = StObject.set(x, "sanitizer", js.Any.fromFunction1(value))
     

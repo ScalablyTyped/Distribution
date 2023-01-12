@@ -64,7 +64,8 @@ object PathFinderOpts {
     __obj.asInstanceOf[PathFinderOpts]
   }
   
-  extension [Self <: PathFinderOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PathFinderOpts] (val x: Self) extends AnyVal {
     
     inline def setFlee(value: Boolean): Self = StObject.set(x, "flee", value.asInstanceOf[js.Any])
     

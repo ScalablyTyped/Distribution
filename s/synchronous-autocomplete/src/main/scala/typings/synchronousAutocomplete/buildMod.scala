@@ -71,7 +71,8 @@ object buildMod {
       __obj.asInstanceOf[Index[TId]]
     }
     
-    extension [Self <: Index[?], TId /* <: String */](x: Self & Index[TId]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Index[?], TId /* <: String */] (val x: Self & Index[TId]) extends AnyVal {
       
       inline def setNrOfTokens(value: NrOfTokens): Self = StObject.set(x, "nrOfTokens", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object buildMod {
       __obj.asInstanceOf[Item[TId]]
     }
     
-    extension [Self <: Item[?], TId /* <: String */](x: Self & Item[TId]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Item[?], TId /* <: String */] (val x: Self & Item[TId]) extends AnyVal {
       
       inline def setId(value: TId): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

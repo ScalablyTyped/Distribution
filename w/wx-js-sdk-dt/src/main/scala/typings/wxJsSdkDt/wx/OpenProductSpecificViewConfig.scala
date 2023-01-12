@@ -25,7 +25,8 @@ object OpenProductSpecificViewConfig {
     __obj.asInstanceOf[OpenProductSpecificViewConfig]
   }
   
-  extension [Self <: OpenProductSpecificViewConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenProductSpecificViewConfig] (val x: Self) extends AnyVal {
     
     inline def setProductId(value: String): Self = StObject.set(x, "productId", value.asInstanceOf[js.Any])
     

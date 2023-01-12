@@ -22,7 +22,8 @@ object StartOptions {
     __obj.asInstanceOf[StartOptions]
   }
   
-  extension [Self <: StartOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartOptions] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     

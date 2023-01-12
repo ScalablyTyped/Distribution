@@ -48,7 +48,8 @@ object ListProjectsInput {
     __obj.asInstanceOf[ListProjectsInput]
   }
   
-  extension [Self <: ListProjectsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListProjectsInput] (val x: Self) extends AnyVal {
     
     inline def setCreationTimeAfter(value: js.Date): Self = StObject.set(x, "CreationTimeAfter", value.asInstanceOf[js.Any])
     

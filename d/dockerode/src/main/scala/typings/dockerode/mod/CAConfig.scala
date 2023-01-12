@@ -23,7 +23,8 @@ object CAConfig {
     __obj.asInstanceOf[CAConfig]
   }
   
-  extension [Self <: CAConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CAConfig] (val x: Self) extends AnyVal {
     
     inline def setExternalCAs(value: js.Array[ExternalCA]): Self = StObject.set(x, "ExternalCAs", value.asInstanceOf[js.Any])
     

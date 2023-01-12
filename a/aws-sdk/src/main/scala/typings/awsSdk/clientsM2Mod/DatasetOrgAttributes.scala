@@ -23,7 +23,8 @@ object DatasetOrgAttributes {
     __obj.asInstanceOf[DatasetOrgAttributes]
   }
   
-  extension [Self <: DatasetOrgAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetOrgAttributes] (val x: Self) extends AnyVal {
     
     inline def setGdg(value: GdgAttributes): Self = StObject.set(x, "gdg", value.asInstanceOf[js.Any])
     

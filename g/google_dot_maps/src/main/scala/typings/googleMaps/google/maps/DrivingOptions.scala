@@ -33,7 +33,8 @@ object DrivingOptions {
     __obj.asInstanceOf[DrivingOptions]
   }
   
-  extension [Self <: DrivingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DrivingOptions] (val x: Self) extends AnyVal {
     
     inline def setDepartureTime(value: js.Date): Self = StObject.set(x, "departureTime", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IColumnReorderHeaderProps]
     }
     
-    extension [Self <: IColumnReorderHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnReorderHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setOnColumnDragEnd(value: (/* props */ DropLocation, /* event */ MouseEvent) => Unit): Self = StObject.set(x, "onColumnDragEnd", js.Any.fromFunction2(value))
       
@@ -98,7 +99,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IColumnResizeDetails]
     }
     
-    extension [Self <: IColumnResizeDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IColumnResizeDetails] (val x: Self) extends AnyVal {
       
       inline def setColumnIndex(value: Double): Self = StObject.set(x, "columnIndex", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeader]
     }
     
-    extension [Self <: IDetailsHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeader] (val x: Self) extends AnyVal {
       
       inline def setFocus(value: () => Boolean): Self = StObject.set(x, "focus", js.Any.fromFunction0(value))
     }
@@ -230,7 +233,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeaderBaseProps]
     }
     
-    extension [Self <: IDetailsHeaderBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeaderBaseProps] (val x: Self) extends AnyVal {
       
       inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
       
@@ -376,7 +380,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeaderProps]
     }
     
-    extension [Self <: IDetailsHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setColumns(value: js.Array[IColumn]): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
       
@@ -405,7 +410,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeaderState]
     }
     
-    extension [Self <: IDetailsHeaderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeaderState] (val x: Self) extends AnyVal {
       
       inline def setColumnResizeDetails(value: IColumnResizeDetails): Self = StObject.set(x, "columnResizeDetails", value.asInstanceOf[js.Any])
       
@@ -459,7 +465,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeaderStyleProps]
     }
     
-    extension [Self <: IDetailsHeaderStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeaderStyleProps] (val x: Self) extends AnyVal {
       
       inline def setCellStyleProps(value: ICellStyleProps): Self = StObject.set(x, "cellStyleProps", value.asInstanceOf[js.Any])
       
@@ -553,7 +560,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDetailsHeaderStyles]
     }
     
-    extension [Self <: IDetailsHeaderStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDetailsHeaderStyles] (val x: Self) extends AnyVal {
       
       inline def setAccessibleLabel(value: IStyle): Self = StObject.set(x, "accessibleLabel", value.asInstanceOf[js.Any])
       
@@ -688,7 +696,8 @@ object libComponentsDetailsListDetailsHeaderDottypesMod {
       __obj.asInstanceOf[IDropHintDetails]
     }
     
-    extension [Self <: IDropHintDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDropHintDetails] (val x: Self) extends AnyVal {
       
       inline def setDropHintElementRef(value: HTMLElement): Self = StObject.set(x, "dropHintElementRef", value.asInstanceOf[js.Any])
       

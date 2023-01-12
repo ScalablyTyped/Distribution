@@ -18,7 +18,8 @@ object ExPolygon {
     __obj.asInstanceOf[ExPolygon]
   }
   
-  extension [Self <: ExPolygon](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExPolygon] (val x: Self) extends AnyVal {
     
     inline def setHoles(value: ArrayLike[ArrayLike[IntPoint]]): Self = StObject.set(x, "holes", value.asInstanceOf[js.Any])
     

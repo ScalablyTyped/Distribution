@@ -147,7 +147,8 @@ object mod {
       __obj.asInstanceOf[AuthorizationTokenConfig]
     }
     
-    extension [Self <: AuthorizationTokenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AuthorizationTokenConfig] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -178,7 +179,8 @@ object mod {
       __obj.asInstanceOf[ClientCredentialTokenConfig]
     }
     
-    extension [Self <: ClientCredentialTokenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientCredentialTokenConfig] (val x: Self) extends AnyVal {
       
       inline def setScope(value: String | js.Array[String]): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object mod {
       __obj.asInstanceOf[ModuleOptions[ClientIdName]]
     }
     
-    extension [Self <: ModuleOptions[?], ClientIdName /* <: String */](x: Self & ModuleOptions[ClientIdName]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModuleOptions[?], ClientIdName /* <: String */] (val x: Self & ModuleOptions[ClientIdName]) extends AnyVal {
       
       inline def setAuth(value: AuthorizeHost): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
       
@@ -249,7 +252,8 @@ object mod {
       __obj.asInstanceOf[PasswordTokenConfig]
     }
     
-    extension [Self <: PasswordTokenConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PasswordTokenConfig] (val x: Self) extends AnyVal {
       
       inline def setPassword(value: String): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
       
@@ -332,7 +336,8 @@ object mod {
       __obj.asInstanceOf[WreckHttpOptions]
     }
     
-    extension [Self <: WreckHttpOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WreckHttpOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Any): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

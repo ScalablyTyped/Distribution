@@ -26,7 +26,8 @@ object HttpContentRangeHeaderValue {
     __obj.asInstanceOf[HttpContentRangeHeaderValue]
   }
   
-  extension [Self <: HttpContentRangeHeaderValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpContentRangeHeaderValue] (val x: Self) extends AnyVal {
     
     inline def setFirstBytePosition(value: Double): Self = StObject.set(x, "firstBytePosition", value.asInstanceOf[js.Any])
     

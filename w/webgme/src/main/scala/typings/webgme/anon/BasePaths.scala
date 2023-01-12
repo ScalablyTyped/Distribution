@@ -38,7 +38,8 @@ object BasePaths {
     __obj.asInstanceOf[BasePaths]
   }
   
-  extension [Self <: BasePaths](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePaths] (val x: Self) extends AnyVal {
     
     inline def setBasePaths(value: js.Array[String]): Self = StObject.set(x, "basePaths", value.asInstanceOf[js.Any])
     

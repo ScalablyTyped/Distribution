@@ -31,7 +31,8 @@ object libTypesTriangleConfigurationMod {
       __obj.asInstanceOf[TriangleConfiguration]
     }
     
-    extension [Self <: TriangleConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TriangleConfiguration] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

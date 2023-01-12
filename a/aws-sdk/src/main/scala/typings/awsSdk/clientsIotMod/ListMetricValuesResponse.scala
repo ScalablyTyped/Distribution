@@ -23,7 +23,8 @@ object ListMetricValuesResponse {
     __obj.asInstanceOf[ListMetricValuesResponse]
   }
   
-  extension [Self <: ListMetricValuesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListMetricValuesResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricDatumList(value: MetricDatumList): Self = StObject.set(x, "metricDatumList", value.asInstanceOf[js.Any])
     

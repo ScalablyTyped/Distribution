@@ -21,7 +21,8 @@ object SVGPatternObject {
     __obj.asInstanceOf[SVGPatternObject]
   }
   
-  extension [Self <: SVGPatternObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPatternObject] (val x: Self) extends AnyVal {
     
     inline def setSvgElement(value: Any): Self = StObject.set(x, "svgElement", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object HlsChunkPerformanceTiming {
     __obj.asInstanceOf[HlsChunkPerformanceTiming]
   }
   
-  extension [Self <: HlsChunkPerformanceTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HlsChunkPerformanceTiming] (val x: Self) extends AnyVal {
     
     inline def setExecuteEnd(value: Double): Self = StObject.set(x, "executeEnd", value.asInstanceOf[js.Any])
     

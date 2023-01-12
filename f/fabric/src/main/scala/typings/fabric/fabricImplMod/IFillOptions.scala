@@ -34,7 +34,8 @@ object IFillOptions {
     __obj.asInstanceOf[IFillOptions]
   }
   
-  extension [Self <: IFillOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IFillOptions] (val x: Self) extends AnyVal {
     
     inline def setOffsetX(value: Double): Self = StObject.set(x, "offsetX", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LocationAsRelativeRaw {
     __obj.asInstanceOf[LocationAsRelativeRaw]
   }
   
-  extension [Self <: LocationAsRelativeRaw](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocationAsRelativeRaw] (val x: Self) extends AnyVal {
     
     inline def setName(value: RouteRecordName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

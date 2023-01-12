@@ -19,7 +19,8 @@ object ReturnTypeGetFullAXTreeResponse {
     __obj.asInstanceOf[ReturnTypeGetFullAXTreeResponse]
   }
   
-  extension [Self <: ReturnTypeGetFullAXTreeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetFullAXTreeResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[js.UndefOr[GetFullAXTreeRequest]]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

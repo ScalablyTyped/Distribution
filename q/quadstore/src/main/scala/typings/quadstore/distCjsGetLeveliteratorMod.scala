@@ -126,7 +126,8 @@ object distCjsGetLeveliteratorMod {
       __obj.asInstanceOf[ReadState[K, V]]
     }
     
-    extension [Self <: ReadState[?, ?], K, V](x: Self & (ReadState[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadState[?, ?], K, V] (val x: Self & (ReadState[K, V])) extends AnyVal {
       
       inline def setNext(
         value: (/* err */ js.UndefOr[js.Error | Null], /* key */ js.UndefOr[K], /* value */ js.UndefOr[V]) => Any

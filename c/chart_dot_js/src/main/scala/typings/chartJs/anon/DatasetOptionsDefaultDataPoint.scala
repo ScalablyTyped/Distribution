@@ -32,7 +32,8 @@ object DatasetOptionsDefaultDataPoint {
     __obj.asInstanceOf[DatasetOptionsDefaultDataPoint]
   }
   
-  extension [Self <: DatasetOptionsDefaultDataPoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetOptionsDefaultDataPoint] (val x: Self) extends AnyVal {
     
     inline def setChartOptions(value: RadarControllerChartOptions): Self = StObject.set(x, "chartOptions", value.asInstanceOf[js.Any])
     

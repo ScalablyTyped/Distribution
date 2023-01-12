@@ -23,7 +23,8 @@ object AuthInfo {
     __obj.asInstanceOf[AuthInfo]
   }
   
-  extension [Self <: AuthInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthInfo] (val x: Self) extends AnyVal {
     
     inline def setActionType(value: ActionType): Self = StObject.set(x, "actionType", value.asInstanceOf[js.Any])
     

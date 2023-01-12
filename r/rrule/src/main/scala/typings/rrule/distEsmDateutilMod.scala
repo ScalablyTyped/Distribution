@@ -233,7 +233,8 @@ object distEsmDateutilMod {
       __obj.asInstanceOf[Datelike]
     }
     
-    extension [Self <: Datelike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Datelike] (val x: Self) extends AnyVal {
       
       inline def setGetTime(value: () => Double): Self = StObject.set(x, "getTime", js.Any.fromFunction0(value))
     }

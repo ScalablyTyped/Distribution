@@ -53,7 +53,8 @@ object Dictkey {
     __obj.asInstanceOf[Dictkey]
   }
   
-  extension [Self <: Dictkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
     
     inline def setIdentities(value: StringDictionary[Any]): Self = StObject.set(x, "identities", value.asInstanceOf[js.Any])
     

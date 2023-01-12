@@ -18,7 +18,8 @@ object DbStatsOptions {
     __obj.asInstanceOf[DbStatsOptions]
   }
   
-  extension [Self <: DbStatsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DbStatsOptions] (val x: Self) extends AnyVal {
     
     inline def setScale(value: scala.Double): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
     

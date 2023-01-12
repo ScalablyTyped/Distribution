@@ -131,7 +131,8 @@ object mod {
       __obj.asInstanceOf[Dim]
     }
     
-    extension [Self <: Dim](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dim] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -166,7 +167,8 @@ object mod {
       __obj.asInstanceOf[Elements]
     }
     
-    extension [Self <: Elements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Elements] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object mod {
       __obj.asInstanceOf[Events]
     }
     
-    extension [Self <: Events](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
       
       inline def setHiResImageLoad(value: () => Unit): Self = StObject.set(x, "hiResImageLoad", js.Any.fromFunction0(value))
       
@@ -292,7 +295,8 @@ object mod {
       __obj.asInstanceOf[Frames]
     }
     
-    extension [Self <: Frames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frames] (val x: Self) extends AnyVal {
       
       inline def setSlideMomentumCheck(value: Double): Self = StObject.set(x, "slideMomentumCheck", value.asInstanceOf[js.Any])
       
@@ -325,7 +329,8 @@ object mod {
       __obj.asInstanceOf[FullScreenElements]
     }
     
-    extension [Self <: FullScreenElements](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenElements] (val x: Self) extends AnyVal {
       
       inline def setFullScreen(value: Element): Self = StObject.set(x, "fullScreen", value.asInstanceOf[js.Any])
       
@@ -346,7 +351,8 @@ object mod {
       __obj.asInstanceOf[FullScreenEvents]
     }
     
-    extension [Self <: FullScreenEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullScreenEvents] (val x: Self) extends AnyVal {
       
       inline def setOnCloseBtnClick(value: () => Unit): Self = StObject.set(x, "onCloseBtnClick", js.Any.fromFunction0(value))
       
@@ -371,7 +377,8 @@ object mod {
       __obj.asInstanceOf[Images]
     }
     
-    extension [Self <: Images](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Images] (val x: Self) extends AnyVal {
       
       inline def setHiResImageSrc(value: IVImage): Self = StObject.set(x, "hiResImageSrc", value.asInstanceOf[js.Any])
       
@@ -402,7 +409,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMaxZoom(value: Double): Self = StObject.set(x, "maxZoom", value.asInstanceOf[js.Any])
       
@@ -468,7 +476,8 @@ object mod {
       __obj.asInstanceOf[Slider]
     }
     
-    extension [Self <: Slider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Slider] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: Element): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       
@@ -513,7 +522,8 @@ object mod {
       __obj.asInstanceOf[SliderOptions]
     }
     
-    extension [Self <: SliderOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
       
       inline def setIsSliderEnabled(value: () => Boolean): Self = StObject.set(x, "isSliderEnabled", js.Any.fromFunction0(value))
       
@@ -540,7 +550,8 @@ object mod {
       __obj.asInstanceOf[Sliders]
     }
     
-    extension [Self <: Sliders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Sliders] (val x: Self) extends AnyVal {
       
       inline def setImageSlider(value: Slider): Self = StObject.set(x, "imageSlider", value.asInstanceOf[js.Any])
       
@@ -583,7 +594,8 @@ object mod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setContainerDim(value: Dim): Self = StObject.set(x, "containerDim", value.asInstanceOf[js.Any])
       

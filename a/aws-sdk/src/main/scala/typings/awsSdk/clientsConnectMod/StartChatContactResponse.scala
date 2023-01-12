@@ -28,7 +28,8 @@ object StartChatContactResponse {
     __obj.asInstanceOf[StartChatContactResponse]
   }
   
-  extension [Self <: StartChatContactResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartChatContactResponse] (val x: Self) extends AnyVal {
     
     inline def setContactId(value: ContactId): Self = StObject.set(x, "ContactId", value.asInstanceOf[js.Any])
     

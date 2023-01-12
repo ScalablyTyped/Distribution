@@ -18,7 +18,8 @@ object IntHex {
     __obj.asInstanceOf[IntHex]
   }
   
-  extension [Self <: IntHex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntHex] (val x: Self) extends AnyVal {
     
     inline def setInt(value: Hex): Self = StObject.set(x, "int", value.asInstanceOf[js.Any])
   }

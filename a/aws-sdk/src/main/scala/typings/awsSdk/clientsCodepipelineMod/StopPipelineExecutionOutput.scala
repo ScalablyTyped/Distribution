@@ -18,7 +18,8 @@ object StopPipelineExecutionOutput {
     __obj.asInstanceOf[StopPipelineExecutionOutput]
   }
   
-  extension [Self <: StopPipelineExecutionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopPipelineExecutionOutput] (val x: Self) extends AnyVal {
     
     inline def setPipelineExecutionId(value: PipelineExecutionId): Self = StObject.set(x, "pipelineExecutionId", value.asInstanceOf[js.Any])
     

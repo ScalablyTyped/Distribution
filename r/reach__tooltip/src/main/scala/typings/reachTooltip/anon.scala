@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[DEBUGSTYLE[ElementType]]
     }
     
-    extension [Self <: DEBUGSTYLE[?], ElementType /* <: HTMLElement | SVGElement */](x: Self & DEBUGSTYLE[ElementType]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DEBUGSTYLE[?], ElementType /* <: HTMLElement | SVGElement */] (val x: Self & DEBUGSTYLE[ElementType]) extends AnyVal {
       
       inline def setDEBUG_STYLE(value: Boolean): Self = StObject.set(x, "DEBUG_STYLE", value.asInstanceOf[js.Any])
       

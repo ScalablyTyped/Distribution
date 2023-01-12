@@ -19,7 +19,8 @@ object DropCollectionResult {
     __obj.asInstanceOf[DropCollectionResult]
   }
   
-  extension [Self <: DropCollectionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropCollectionResult] (val x: Self) extends AnyVal {
     
     inline def setDropped(value: Boolean): Self = StObject.set(x, "dropped", value.asInstanceOf[js.Any])
   }

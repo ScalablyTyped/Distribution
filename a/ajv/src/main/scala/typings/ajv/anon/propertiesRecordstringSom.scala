@@ -30,7 +30,8 @@ object propertiesRecordstringSom {
     __obj.asInstanceOf[propertiesRecordstringSom]
   }
   
-  extension [Self <: propertiesRecordstringSom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: propertiesRecordstringSom] (val x: Self) extends AnyVal {
     
     inline def setAdditionalProperties(value: Boolean): Self = StObject.set(x, "additionalProperties", value.asInstanceOf[js.Any])
     

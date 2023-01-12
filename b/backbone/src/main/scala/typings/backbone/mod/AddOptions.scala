@@ -21,7 +21,8 @@ object AddOptions {
     __obj.asInstanceOf[AddOptions]
   }
   
-  extension [Self <: AddOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddOptions] (val x: Self) extends AnyVal {
     
     inline def setAt(value: Double): Self = StObject.set(x, "at", value.asInstanceOf[js.Any])
     

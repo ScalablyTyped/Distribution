@@ -35,7 +35,8 @@ object IWebXRPlane {
     __obj.asInstanceOf[IWebXRPlane]
   }
   
-  extension [Self <: IWebXRPlane](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRPlane] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

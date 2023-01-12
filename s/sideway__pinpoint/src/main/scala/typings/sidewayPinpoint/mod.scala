@@ -34,7 +34,8 @@ object mod {
         __obj.asInstanceOf[Location]
       }
       
-      extension [Self <: Location](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
         
         inline def setFilename(value: String): Self = StObject.set(x, "filename", value.asInstanceOf[js.Any])
         

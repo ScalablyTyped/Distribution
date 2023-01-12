@@ -23,7 +23,8 @@ object ItemPressedValue {
     __obj.asInstanceOf[ItemPressedValue]
   }
   
-  extension [Self <: ItemPressedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemPressedValue] (val x: Self) extends AnyVal {
     
     inline def setItemPressed(value: Boolean): Self = StObject.set(x, "itemPressed", value.asInstanceOf[js.Any])
     

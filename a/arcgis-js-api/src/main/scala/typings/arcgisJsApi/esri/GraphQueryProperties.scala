@@ -20,7 +20,8 @@ object GraphQueryProperties {
     __obj.asInstanceOf[GraphQueryProperties]
   }
   
-  extension [Self <: GraphQueryProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQueryProperties] (val x: Self) extends AnyVal {
     
     inline def setOpenCypherQuery(value: String): Self = StObject.set(x, "openCypherQuery", value.asInstanceOf[js.Any])
     

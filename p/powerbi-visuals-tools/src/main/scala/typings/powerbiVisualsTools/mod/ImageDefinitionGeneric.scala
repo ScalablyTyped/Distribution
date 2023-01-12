@@ -19,7 +19,8 @@ object ImageDefinitionGeneric {
     __obj.asInstanceOf[ImageDefinitionGeneric[T]]
   }
   
-  extension [Self <: ImageDefinitionGeneric[?], T](x: Self & ImageDefinitionGeneric[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageDefinitionGeneric[?], T] (val x: Self & ImageDefinitionGeneric[T]) extends AnyVal {
     
     inline def setName(value: T): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

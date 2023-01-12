@@ -31,7 +31,8 @@ object Envelope {
     __obj.asInstanceOf[Envelope]
   }
   
-  extension [Self <: Envelope](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Envelope] (val x: Self) extends AnyVal {
     
     inline def setMmax(value: Double): Self = StObject.set(x, "mmax", value.asInstanceOf[js.Any])
     

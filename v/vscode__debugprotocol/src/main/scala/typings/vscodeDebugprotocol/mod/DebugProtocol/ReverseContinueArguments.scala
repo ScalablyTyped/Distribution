@@ -20,7 +20,8 @@ object ReverseContinueArguments {
     __obj.asInstanceOf[ReverseContinueArguments]
   }
   
-  extension [Self <: ReverseContinueArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReverseContinueArguments] (val x: Self) extends AnyVal {
     
     inline def setSingleThread(value: Boolean): Self = StObject.set(x, "singleThread", value.asInstanceOf[js.Any])
     

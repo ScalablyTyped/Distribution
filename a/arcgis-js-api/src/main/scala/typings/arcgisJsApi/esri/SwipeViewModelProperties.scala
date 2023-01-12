@@ -54,7 +54,8 @@ object SwipeViewModelProperties {
     __obj.asInstanceOf[SwipeViewModelProperties]
   }
   
-  extension [Self <: SwipeViewModelProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SwipeViewModelProperties] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: horizontal | vertical): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

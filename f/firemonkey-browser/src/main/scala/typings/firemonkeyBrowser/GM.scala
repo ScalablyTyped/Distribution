@@ -60,7 +60,8 @@ object GM {
       __obj.asInstanceOf[BrowserInfo]
     }
     
-    extension [Self <: BrowserInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrowserInfo] (val x: Self) extends AnyVal {
       
       inline def setBuildID(value: String): Self = StObject.set(x, "buildID", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object GM {
       __obj.asInstanceOf[FetchRequest]
     }
     
-    extension [Self <: FetchRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchRequest] (val x: Self) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -220,7 +222,8 @@ object GM {
       __obj.asInstanceOf[FetchResponse]
     }
     
-    extension [Self <: FetchResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FetchResponse] (val x: Self) extends AnyVal {
       
       inline def setArrayBuffer(value: js.typedarray.ArrayBuffer): Self = StObject.set(x, "arrayBuffer", value.asInstanceOf[js.Any])
       
@@ -275,7 +278,8 @@ object GM {
       __obj.asInstanceOf[PlatformInfo]
     }
     
-    extension [Self <: PlatformInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlatformInfo] (val x: Self) extends AnyVal {
       
       inline def setArch(value: arm | `x86-32` | `x86-64`): Self = StObject.set(x, "arch", value.asInstanceOf[js.Any])
       
@@ -367,7 +371,8 @@ object GM {
       __obj.asInstanceOf[ScriptInfo]
     }
     
-    extension [Self <: ScriptInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScriptInfo] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -477,7 +482,8 @@ object GM {
       __obj.asInstanceOf[XMLRequest[TContext]]
     }
     
-    extension [Self <: XMLRequest[?], TContext](x: Self & XMLRequest[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLRequest[?], TContext] (val x: Self & XMLRequest[TContext]) extends AnyVal {
       
       inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
       
@@ -576,7 +582,8 @@ object GM {
       __obj.asInstanceOf[XMLResponse[TContext]]
     }
     
-    extension [Self <: XMLResponse[?], TContext](x: Self & XMLResponse[TContext]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XMLResponse[?], TContext] (val x: Self & XMLResponse[TContext]) extends AnyVal {
       
       inline def setFinalUrl(value: String): Self = StObject.set(x, "finalUrl", value.asInstanceOf[js.Any])
       

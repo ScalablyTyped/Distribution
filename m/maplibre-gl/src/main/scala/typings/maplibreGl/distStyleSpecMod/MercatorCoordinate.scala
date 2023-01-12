@@ -56,7 +56,8 @@ object MercatorCoordinate {
     __obj.asInstanceOf[MercatorCoordinate]
   }
   
-  extension [Self <: MercatorCoordinate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MercatorCoordinate] (val x: Self) extends AnyVal {
     
     inline def setMeterInMercatorCoordinateUnits(value: () => Double): Self = StObject.set(x, "meterInMercatorCoordinateUnits", js.Any.fromFunction0(value))
     

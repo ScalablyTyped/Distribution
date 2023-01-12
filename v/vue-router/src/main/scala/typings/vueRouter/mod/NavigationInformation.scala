@@ -20,7 +20,8 @@ object NavigationInformation {
     __obj.asInstanceOf[NavigationInformation]
   }
   
-  extension [Self <: NavigationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationInformation] (val x: Self) extends AnyVal {
     
     inline def setDelta(value: Double): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
     

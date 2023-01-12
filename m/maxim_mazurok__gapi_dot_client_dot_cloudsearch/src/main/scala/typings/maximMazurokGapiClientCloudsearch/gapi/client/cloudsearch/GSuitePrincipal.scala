@@ -22,7 +22,8 @@ object GSuitePrincipal {
     __obj.asInstanceOf[GSuitePrincipal]
   }
   
-  extension [Self <: GSuitePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GSuitePrincipal] (val x: Self) extends AnyVal {
     
     inline def setGsuiteDomain(value: Boolean): Self = StObject.set(x, "gsuiteDomain", value.asInstanceOf[js.Any])
     

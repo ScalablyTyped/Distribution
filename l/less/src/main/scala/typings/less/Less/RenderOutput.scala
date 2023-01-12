@@ -19,7 +19,8 @@ object RenderOutput {
     __obj.asInstanceOf[RenderOutput]
   }
   
-  extension [Self <: RenderOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenderOutput] (val x: Self) extends AnyVal {
     
     inline def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
     

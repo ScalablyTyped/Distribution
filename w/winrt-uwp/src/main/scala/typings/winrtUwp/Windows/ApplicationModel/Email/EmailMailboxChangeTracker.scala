@@ -34,7 +34,8 @@ object EmailMailboxChangeTracker {
     __obj.asInstanceOf[EmailMailboxChangeTracker]
   }
   
-  extension [Self <: EmailMailboxChangeTracker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailMailboxChangeTracker] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: () => Unit): Self = StObject.set(x, "enable", js.Any.fromFunction0(value))
     

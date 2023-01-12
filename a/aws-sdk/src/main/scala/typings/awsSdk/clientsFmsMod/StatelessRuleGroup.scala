@@ -28,7 +28,8 @@ object StatelessRuleGroup {
     __obj.asInstanceOf[StatelessRuleGroup]
   }
   
-  extension [Self <: StatelessRuleGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatelessRuleGroup] (val x: Self) extends AnyVal {
     
     inline def setPriority(value: StatelessRuleGroupPriority): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
     

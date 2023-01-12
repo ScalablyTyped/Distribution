@@ -22,7 +22,8 @@ object InspectionObject {
     __obj.asInstanceOf[InspectionObject]
   }
   
-  extension [Self <: InspectionObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InspectionObject] (val x: Self) extends AnyVal {
     
     inline def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
     

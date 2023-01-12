@@ -131,7 +131,8 @@ object distLiteFirestoreSrcCoreSyncEngineImplMod {
       __obj.asInstanceOf[LimboResolution]
     }
     
-    extension [Self <: LimboResolution](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LimboResolution] (val x: Self) extends AnyVal {
       
       inline def setKey(value: DocumentKey): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -171,7 +172,8 @@ object distLiteFirestoreSrcCoreSyncEngineImplMod {
       __obj.asInstanceOf[QueryView]
     }
     
-    extension [Self <: QueryView](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueryView] (val x: Self) extends AnyVal {
       
       inline def setQuery(value: Query): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
@@ -286,7 +288,8 @@ object distLiteFirestoreSrcCoreSyncEngineImplMod {
       __obj.asInstanceOf[SyncEngineListener]
     }
     
-    extension [Self <: SyncEngineListener](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SyncEngineListener] (val x: Self) extends AnyVal {
       
       inline def setOnWatchChange(value: /* snapshots */ js.Array[ViewSnapshot] => Unit): Self = StObject.set(x, "onWatchChange", js.Any.fromFunction1(value))
       

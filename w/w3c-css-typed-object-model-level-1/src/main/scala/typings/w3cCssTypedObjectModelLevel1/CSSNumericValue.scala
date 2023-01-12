@@ -48,7 +48,8 @@ object CSSNumericValue {
     __obj.asInstanceOf[CSSNumericValue]
   }
   
-  extension [Self <: CSSNumericValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSNumericValue] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: /* repeated */ CSSNumberOrNumeric => CSSNumericValue): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

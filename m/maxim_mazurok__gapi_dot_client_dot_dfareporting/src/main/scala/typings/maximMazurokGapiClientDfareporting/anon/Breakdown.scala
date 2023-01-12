@@ -36,7 +36,8 @@ object Breakdown {
     __obj.asInstanceOf[Breakdown]
   }
   
-  extension [Self <: Breakdown](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Breakdown] (val x: Self) extends AnyVal {
     
     inline def setBreakdown(value: js.Array[SortedDimension]): Self = StObject.set(x, "breakdown", value.asInstanceOf[js.Any])
     

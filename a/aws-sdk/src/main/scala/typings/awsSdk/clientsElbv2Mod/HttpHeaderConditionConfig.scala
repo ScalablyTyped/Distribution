@@ -23,7 +23,8 @@ object HttpHeaderConditionConfig {
     __obj.asInstanceOf[HttpHeaderConditionConfig]
   }
   
-  extension [Self <: HttpHeaderConditionConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpHeaderConditionConfig] (val x: Self) extends AnyVal {
     
     inline def setHttpHeaderName(value: HttpHeaderConditionName): Self = StObject.set(x, "HttpHeaderName", value.asInstanceOf[js.Any])
     

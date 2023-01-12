@@ -40,7 +40,8 @@ object typesLibCarouselControlMod {
       __obj.asInstanceOf[CarouselControlProps]
     }
     
-    extension [Self <: CarouselControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CarouselControlProps] (val x: Self) extends AnyVal {
       
       inline def setCssModule(value: CSSModule): Self = StObject.set(x, "cssModule", value.asInstanceOf[js.Any])
       

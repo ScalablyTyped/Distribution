@@ -19,7 +19,8 @@ object SecurityDeleteRoleMappingRequest {
     __obj.asInstanceOf[SecurityDeleteRoleMappingRequest]
   }
   
-  extension [Self <: SecurityDeleteRoleMappingRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityDeleteRoleMappingRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ApplicationjsonPageurl {
     __obj.asInstanceOf[ApplicationjsonPageurl]
   }
   
-  extension [Self <: ApplicationjsonPageurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonPageurl] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Pageurl): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

@@ -310,7 +310,8 @@ object libParamsInterfaceMod {
       __obj.asInstanceOf[ParamDeclaration]
     }
     
-    extension [Self <: ParamDeclaration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParamDeclaration] (val x: Self) extends AnyVal {
       
       inline def setArray(value: Boolean): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       
@@ -533,7 +534,8 @@ object libParamsInterfaceMod {
       __obj.asInstanceOf[Replace]
     }
     
-    extension [Self <: Replace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Replace] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       

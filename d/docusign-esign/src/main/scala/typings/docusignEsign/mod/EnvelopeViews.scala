@@ -18,7 +18,8 @@ object EnvelopeViews {
     __obj.asInstanceOf[EnvelopeViews]
   }
   
-  extension [Self <: EnvelopeViews](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvelopeViews] (val x: Self) extends AnyVal {
     
     inline def setUrl(value: String): Self = StObject.set(x, "url", value.asInstanceOf[js.Any])
     

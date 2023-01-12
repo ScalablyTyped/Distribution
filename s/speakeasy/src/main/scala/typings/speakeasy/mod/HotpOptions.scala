@@ -31,7 +31,8 @@ object HotpOptions {
     __obj.asInstanceOf[HotpOptions]
   }
   
-  extension [Self <: HotpOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HotpOptions] (val x: Self) extends AnyVal {
     
     inline def setDigest(value: Buffer): Self = StObject.set(x, "digest", value.asInstanceOf[js.Any])
     

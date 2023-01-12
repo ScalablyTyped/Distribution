@@ -36,7 +36,8 @@ object Sticker {
     __obj.asInstanceOf[Sticker]
   }
   
-  extension [Self <: Sticker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Sticker] (val x: Self) extends AnyVal {
     
     inline def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
     

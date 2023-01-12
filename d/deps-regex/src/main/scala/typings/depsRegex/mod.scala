@@ -110,7 +110,8 @@ object mod {
       __obj.asInstanceOf[DepsRegex]
     }
     
-    extension [Self <: DepsRegex](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DepsRegex] (val x: Self) extends AnyVal {
       
       inline def setExec(value: String => RegExpExecArray): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
       
@@ -151,7 +152,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setMatchCoffeescript(value: Boolean): Self = StObject.set(x, "matchCoffeescript", value.asInstanceOf[js.Any])
       

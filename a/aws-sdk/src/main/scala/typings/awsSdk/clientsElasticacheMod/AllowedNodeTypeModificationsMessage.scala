@@ -23,7 +23,8 @@ object AllowedNodeTypeModificationsMessage {
     __obj.asInstanceOf[AllowedNodeTypeModificationsMessage]
   }
   
-  extension [Self <: AllowedNodeTypeModificationsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AllowedNodeTypeModificationsMessage] (val x: Self) extends AnyVal {
     
     inline def setScaleDownModifications(value: NodeTypeList): Self = StObject.set(x, "ScaleDownModifications", value.asInstanceOf[js.Any])
     

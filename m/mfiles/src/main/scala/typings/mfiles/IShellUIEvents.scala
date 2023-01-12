@@ -28,7 +28,8 @@ object IShellUIEvents {
     __obj.asInstanceOf[IShellUIEvents]
   }
   
-  extension [Self <: IShellUIEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IShellUIEvents] (val x: Self) extends AnyVal {
     
     inline def setOnNewCommonDialogShellFrame(value: /* shellFrame */ IShellFrame => Unit | IShellFrameEvents): Self = StObject.set(x, "OnNewCommonDialogShellFrame", js.Any.fromFunction1(value))
     

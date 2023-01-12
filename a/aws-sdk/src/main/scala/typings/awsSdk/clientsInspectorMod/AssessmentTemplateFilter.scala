@@ -28,7 +28,8 @@ object AssessmentTemplateFilter {
     __obj.asInstanceOf[AssessmentTemplateFilter]
   }
   
-  extension [Self <: AssessmentTemplateFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentTemplateFilter] (val x: Self) extends AnyVal {
     
     inline def setDurationRange(value: DurationRange): Self = StObject.set(x, "durationRange", value.asInstanceOf[js.Any])
     

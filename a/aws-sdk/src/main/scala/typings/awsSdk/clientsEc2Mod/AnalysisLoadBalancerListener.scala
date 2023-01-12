@@ -23,7 +23,8 @@ object AnalysisLoadBalancerListener {
     __obj.asInstanceOf[AnalysisLoadBalancerListener]
   }
   
-  extension [Self <: AnalysisLoadBalancerListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalysisLoadBalancerListener] (val x: Self) extends AnyVal {
     
     inline def setInstancePort(value: Port): Self = StObject.set(x, "InstancePort", value.asInstanceOf[js.Any])
     

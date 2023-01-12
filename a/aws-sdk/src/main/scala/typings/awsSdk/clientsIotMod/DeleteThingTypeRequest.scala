@@ -18,7 +18,8 @@ object DeleteThingTypeRequest {
     __obj.asInstanceOf[DeleteThingTypeRequest]
   }
   
-  extension [Self <: DeleteThingTypeRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteThingTypeRequest] (val x: Self) extends AnyVal {
     
     inline def setThingTypeName(value: ThingTypeName): Self = StObject.set(x, "thingTypeName", value.asInstanceOf[js.Any])
   }

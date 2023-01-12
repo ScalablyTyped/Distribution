@@ -38,7 +38,8 @@ object ISyndicationClient {
     __obj.asInstanceOf[ISyndicationClient]
   }
   
-  extension [Self <: ISyndicationClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISyndicationClient] (val x: Self) extends AnyVal {
     
     inline def setBypassCacheOnRetrieve(value: Boolean): Self = StObject.set(x, "bypassCacheOnRetrieve", value.asInstanceOf[js.Any])
     

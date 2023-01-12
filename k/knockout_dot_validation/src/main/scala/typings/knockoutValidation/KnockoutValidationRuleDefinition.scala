@@ -17,7 +17,8 @@ object KnockoutValidationRuleDefinition {
     __obj.asInstanceOf[KnockoutValidationRuleDefinition]
   }
   
-  extension [Self <: KnockoutValidationRuleDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationRuleDefinition] (val x: Self) extends AnyVal {
     
     inline def setValidator(value: (Any, Any) => Boolean): Self = StObject.set(x, "validator", js.Any.fromFunction2(value))
   }

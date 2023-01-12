@@ -53,7 +53,8 @@ object RunScriptParameterType {
     __obj.asInstanceOf[RunScriptParameterType]
   }
   
-  extension [Self <: RunScriptParameterType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RunScriptParameterType] (val x: Self) extends AnyVal {
     
     inline def setAwaitPromise(value: Boolean): Self = StObject.set(x, "awaitPromise", value.asInstanceOf[js.Any])
     

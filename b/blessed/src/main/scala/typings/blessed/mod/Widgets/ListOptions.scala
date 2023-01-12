@@ -43,7 +43,8 @@ object ListOptions {
     __obj.asInstanceOf[ListOptions[TStyle]]
   }
   
-  extension [Self <: ListOptions[?], TStyle /* <: ListElementStyle */](x: Self & ListOptions[TStyle]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListOptions[?], TStyle /* <: ListElementStyle */] (val x: Self & ListOptions[TStyle]) extends AnyVal {
     
     inline def setInteractive(value: Boolean): Self = StObject.set(x, "interactive", value.asInstanceOf[js.Any])
     

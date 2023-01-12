@@ -18,7 +18,8 @@ object TabInformation {
     __obj.asInstanceOf[TabInformation]
   }
   
-  extension [Self <: TabInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabInformation] (val x: Self) extends AnyVal {
     
     inline def setTeamTabs(value: js.Array[TabInstance]): Self = StObject.set(x, "teamTabs", value.asInstanceOf[js.Any])
     

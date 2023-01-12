@@ -18,7 +18,8 @@ object GetSigningPlatformRequest {
     __obj.asInstanceOf[GetSigningPlatformRequest]
   }
   
-  extension [Self <: GetSigningPlatformRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSigningPlatformRequest] (val x: Self) extends AnyVal {
     
     inline def setPlatformId(value: PlatformId): Self = StObject.set(x, "platformId", value.asInstanceOf[js.Any])
   }

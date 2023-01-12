@@ -15,7 +15,8 @@ object ReactFlightClientResponse {
     __obj.asInstanceOf[ReactFlightClientResponse]
   }
   
-  extension [Self <: ReactFlightClientResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactFlightClientResponse] (val x: Self) extends AnyVal {
     
     inline def setReadRoot(value: () => Any): Self = StObject.set(x, "readRoot", js.Any.fromFunction0(value))
   }

@@ -18,7 +18,8 @@ object GetAccountSummaryResponse {
     __obj.asInstanceOf[GetAccountSummaryResponse]
   }
   
-  extension [Self <: GetAccountSummaryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAccountSummaryResponse] (val x: Self) extends AnyVal {
     
     inline def setSummaryMap(value: summaryMapType): Self = StObject.set(x, "SummaryMap", value.asInstanceOf[js.Any])
     

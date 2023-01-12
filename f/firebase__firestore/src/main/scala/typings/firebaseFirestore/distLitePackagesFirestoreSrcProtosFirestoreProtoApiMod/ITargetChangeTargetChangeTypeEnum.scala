@@ -32,7 +32,8 @@ object ITargetChangeTargetChangeTypeEnum {
     __obj.asInstanceOf[ITargetChangeTargetChangeTypeEnum]
   }
   
-  extension [Self <: ITargetChangeTargetChangeTypeEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITargetChangeTargetChangeTypeEnum] (val x: Self) extends AnyVal {
     
     inline def setADD(value: TargetChangeTargetChangeType): Self = StObject.set(x, "ADD", value.asInstanceOf[js.Any])
     

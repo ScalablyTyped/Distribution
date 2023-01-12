@@ -60,7 +60,8 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToast]
         }
         
-        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToast](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToast] (val x: Self) extends AnyVal {
           
           inline def setEl(value: IAugmentedJQuery): Self = StObject.set(x, "el", value.asInstanceOf[js.Any])
           
@@ -125,7 +126,8 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig]
         }
         
-        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastBaseConfig] (val x: Self) extends AnyVal {
           
           inline def setAllowHtml(value: Boolean): Self = StObject.set(x, "allowHtml", value.asInstanceOf[js.Any])
           
@@ -204,7 +206,8 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig]
         }
         
-        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastConfig] (val x: Self) extends AnyVal {
           
           inline def setIconClasses(value: Error): Self = StObject.set(x, "iconClasses", value.asInstanceOf[js.Any])
           
@@ -237,7 +240,8 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig]
         }
         
-        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastContainerConfig] (val x: Self) extends AnyVal {
           
           inline def setAutoDismiss(value: Boolean): Self = StObject.set(x, "autoDismiss", value.asInstanceOf[js.Any])
           
@@ -288,7 +292,8 @@ object mod {
           __obj.asInstanceOf[typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions]
         }
         
-        extension [Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularToastr.mod.angularAugmentingMod.toastr.IToastOptions] (val x: Self) extends AnyVal {
           
           inline def setIconClass(value: String): Self = StObject.set(x, "iconClass", value.asInstanceOf[js.Any])
           

@@ -504,7 +504,8 @@ object mod {
       __obj.asInstanceOf[EditableMathFieldProps]
     }
     
-    extension [Self <: EditableMathFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EditableMathFieldProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1294,7 +1295,8 @@ object mod {
       __obj.asInstanceOf[MathFieldConfig]
     }
     
-    extension [Self <: MathFieldConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MathFieldConfig] (val x: Self) extends AnyVal {
       
       inline def setAutoCommands(value: String): Self = StObject.set(x, "autoCommands", value.asInstanceOf[js.Any])
       
@@ -1362,7 +1364,8 @@ object mod {
       __obj.asInstanceOf[StaticMathFieldProps]
     }
     
-    extension [Self <: StaticMathFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticMathFieldProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: String): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

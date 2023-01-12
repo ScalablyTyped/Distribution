@@ -19,7 +19,8 @@ object DataSourcePushEvent {
     __obj.asInstanceOf[DataSourcePushEvent]
   }
   
-  extension [Self <: DataSourcePushEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourcePushEvent] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[DataSourceItemOrGroup]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

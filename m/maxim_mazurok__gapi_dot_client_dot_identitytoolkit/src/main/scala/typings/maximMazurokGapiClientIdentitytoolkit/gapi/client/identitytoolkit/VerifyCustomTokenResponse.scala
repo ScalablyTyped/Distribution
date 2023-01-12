@@ -28,7 +28,8 @@ object VerifyCustomTokenResponse {
     __obj.asInstanceOf[VerifyCustomTokenResponse]
   }
   
-  extension [Self <: VerifyCustomTokenResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerifyCustomTokenResponse] (val x: Self) extends AnyVal {
     
     inline def setExpiresIn(value: String): Self = StObject.set(x, "expiresIn", value.asInstanceOf[js.Any])
     

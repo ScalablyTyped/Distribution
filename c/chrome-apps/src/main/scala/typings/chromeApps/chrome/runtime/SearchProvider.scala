@@ -44,7 +44,8 @@ object SearchProvider {
     __obj.asInstanceOf[SearchProvider]
   }
   
-  extension [Self <: SearchProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchProvider] (val x: Self) extends AnyVal {
     
     inline def setAlternate_urls(value: js.Array[String]): Self = StObject.set(x, "alternate_urls", value.asInstanceOf[js.Any])
     

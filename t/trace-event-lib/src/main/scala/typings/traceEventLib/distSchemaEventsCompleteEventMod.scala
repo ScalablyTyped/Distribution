@@ -53,7 +53,8 @@ object distSchemaEventsCompleteEventMod {
       __obj.asInstanceOf[CompleteEvent]
     }
     
-    extension [Self <: CompleteEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompleteEvent] (val x: Self) extends AnyVal {
       
       inline def setCat(value: String): Self = StObject.set(x, "cat", value.asInstanceOf[js.Any])
       

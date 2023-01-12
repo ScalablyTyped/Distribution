@@ -17,7 +17,8 @@ object Breadcrumbs {
     __obj.asInstanceOf[Breadcrumbs]
   }
   
-  extension [Self <: Breadcrumbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Breadcrumbs] (val x: Self) extends AnyVal {
     
     inline def setBreadcrumbs(value: Boolean): Self = StObject.set(x, "breadcrumbs", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object ConnectFailureResult {
     __obj.asInstanceOf[ConnectFailureResult]
   }
   
-  extension [Self <: ConnectFailureResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectFailureResult] (val x: Self) extends AnyVal {
     
     inline def setConfigId(value: String): Self = StObject.set(x, "configId", value.asInstanceOf[js.Any])
     

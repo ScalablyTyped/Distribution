@@ -27,7 +27,8 @@ object `0Group` {
     __obj.asInstanceOf[`0Group`[L, N, LN]]
   }
   
-  extension [Self <: `0Group`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */](x: Self & (`0Group`[L, N, LN])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0Group`[?, ?, ?], L /* <: typings.tsToolbelt.outListListMod.List[Any] */, N /* <: Double */, LN /* <: typings.tsToolbelt.outListListMod.List[Any] */] (val x: Self & (`0Group`[L, N, LN])) extends AnyVal {
     
     inline def set0(value: __Group[_Drop[L, N, `-Greaterthansign`], N, Append[LN, _Take[L, N, `-Greaterthansign`]]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

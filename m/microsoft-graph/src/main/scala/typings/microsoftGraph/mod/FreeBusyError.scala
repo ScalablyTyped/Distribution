@@ -19,7 +19,8 @@ object FreeBusyError {
     __obj.asInstanceOf[FreeBusyError]
   }
   
-  extension [Self <: FreeBusyError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeBusyError] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: NullableOption[String]): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

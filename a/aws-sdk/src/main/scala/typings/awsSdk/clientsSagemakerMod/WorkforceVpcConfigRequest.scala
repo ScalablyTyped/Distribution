@@ -28,7 +28,8 @@ object WorkforceVpcConfigRequest {
     __obj.asInstanceOf[WorkforceVpcConfigRequest]
   }
   
-  extension [Self <: WorkforceVpcConfigRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkforceVpcConfigRequest] (val x: Self) extends AnyVal {
     
     inline def setSecurityGroupIds(value: WorkforceSecurityGroupIds): Self = StObject.set(x, "SecurityGroupIds", value.asInstanceOf[js.Any])
     

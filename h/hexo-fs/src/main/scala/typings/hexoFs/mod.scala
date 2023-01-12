@@ -609,7 +609,8 @@ object mod {
       __obj.asInstanceOf[AppendFileOptions]
     }
     
-    extension [Self <: AppendFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppendFileOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -640,7 +641,8 @@ object mod {
       __obj.asInstanceOf[DirectoryOptions]
     }
     
-    extension [Self <: DirectoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DirectoryOptions] (val x: Self) extends AnyVal {
       
       inline def setIgnoreHidden(value: Boolean): Self = StObject.set(x, "ignoreHidden", value.asInstanceOf[js.Any])
       

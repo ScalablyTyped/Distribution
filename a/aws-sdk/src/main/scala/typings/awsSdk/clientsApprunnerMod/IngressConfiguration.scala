@@ -18,7 +18,8 @@ object IngressConfiguration {
     __obj.asInstanceOf[IngressConfiguration]
   }
   
-  extension [Self <: IngressConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngressConfiguration] (val x: Self) extends AnyVal {
     
     inline def setIsPubliclyAccessible(value: Boolean): Self = StObject.set(x, "IsPubliclyAccessible", value.asInstanceOf[js.Any])
     

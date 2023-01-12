@@ -16,7 +16,8 @@ object GeoRegionSearchTerms {
     __obj.asInstanceOf[GeoRegionSearchTerms]
   }
   
-  extension [Self <: GeoRegionSearchTerms](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoRegionSearchTerms] (val x: Self) extends AnyVal {
     
     inline def setGeoRegionQuery(value: String): Self = StObject.set(x, "geoRegionQuery", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object Disabled {
     __obj.asInstanceOf[Disabled]
   }
   
-  extension [Self <: Disabled](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Disabled] (val x: Self) extends AnyVal {
     
     inline def setBold(value: PaintToken[BaseToken]): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

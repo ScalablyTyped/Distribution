@@ -23,7 +23,8 @@ object FilterClause {
     __obj.asInstanceOf[FilterClause]
   }
   
-  extension [Self <: FilterClause](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterClause] (val x: Self) extends AnyVal {
     
     inline def setFieldName(value: String): Self = StObject.set(x, "fieldName", value.asInstanceOf[js.Any])
     

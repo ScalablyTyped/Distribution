@@ -19,7 +19,8 @@ object ReturnTypeGetBackgroundColorsResponse {
     __obj.asInstanceOf[ReturnTypeGetBackgroundColorsResponse]
   }
   
-  extension [Self <: ReturnTypeGetBackgroundColorsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetBackgroundColorsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetBackgroundColorsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

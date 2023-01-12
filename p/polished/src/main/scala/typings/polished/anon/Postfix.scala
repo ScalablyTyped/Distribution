@@ -19,7 +19,8 @@ object Postfix {
     __obj.asInstanceOf[Postfix]
   }
   
-  extension [Self <: Postfix](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Postfix] (val x: Self) extends AnyVal {
     
     inline def setPostfix(value: NotationPrecedence): Self = StObject.set(x, "postfix", value.asInstanceOf[js.Any])
     

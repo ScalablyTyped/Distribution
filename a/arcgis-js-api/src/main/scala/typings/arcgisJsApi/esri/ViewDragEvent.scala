@@ -59,7 +59,8 @@ object ViewDragEvent {
     __obj.asInstanceOf[ViewDragEvent]
   }
   
-  extension [Self <: ViewDragEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewDragEvent] (val x: Self) extends AnyVal {
     
     inline def setAction(value: start | added | update | removed | end): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

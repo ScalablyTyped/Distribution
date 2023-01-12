@@ -24,7 +24,8 @@ object ConverterPriority {
     __obj.asInstanceOf[ConverterPriority]
   }
   
-  extension [Self <: ConverterPriority](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConverterPriority] (val x: Self) extends AnyVal {
     
     inline def setConverterPriority(
       value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify PriorityString */ Any) | Double

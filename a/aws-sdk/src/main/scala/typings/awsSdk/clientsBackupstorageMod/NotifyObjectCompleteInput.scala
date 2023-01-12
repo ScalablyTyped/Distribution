@@ -63,7 +63,8 @@ object NotifyObjectCompleteInput {
     __obj.asInstanceOf[NotifyObjectCompleteInput]
   }
   
-  extension [Self <: NotifyObjectCompleteInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotifyObjectCompleteInput] (val x: Self) extends AnyVal {
     
     inline def setBackupJobId(value: String): Self = StObject.set(x, "BackupJobId", value.asInstanceOf[js.Any])
     

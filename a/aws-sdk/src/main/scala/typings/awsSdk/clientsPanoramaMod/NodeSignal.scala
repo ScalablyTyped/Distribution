@@ -23,7 +23,8 @@ object NodeSignal {
     __obj.asInstanceOf[NodeSignal]
   }
   
-  extension [Self <: NodeSignal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodeSignal] (val x: Self) extends AnyVal {
     
     inline def setNodeInstanceId(value: NodeInstanceId): Self = StObject.set(x, "NodeInstanceId", value.asInstanceOf[js.Any])
     

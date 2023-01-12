@@ -18,7 +18,8 @@ object GetAssistantResponse {
     __obj.asInstanceOf[GetAssistantResponse]
   }
   
-  extension [Self <: GetAssistantResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssistantResponse] (val x: Self) extends AnyVal {
     
     inline def setAssistant(value: AssistantData): Self = StObject.set(x, "assistant", value.asInstanceOf[js.Any])
     

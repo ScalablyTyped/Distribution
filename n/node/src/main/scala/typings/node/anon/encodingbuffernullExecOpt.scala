@@ -47,7 +47,8 @@ object encodingbuffernullExecOpt {
     __obj.asInstanceOf[encodingbuffernullExecOpt]
   }
   
-  extension [Self <: encodingbuffernullExecOpt](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: encodingbuffernullExecOpt] (val x: Self) extends AnyVal {
     
     inline def setCwd(value: String | URL): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
     

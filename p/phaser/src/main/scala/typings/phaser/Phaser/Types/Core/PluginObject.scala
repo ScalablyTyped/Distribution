@@ -33,7 +33,8 @@ object PluginObject {
     __obj.asInstanceOf[PluginObject]
   }
   
-  extension [Self <: PluginObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginObject] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: js.Array[String]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

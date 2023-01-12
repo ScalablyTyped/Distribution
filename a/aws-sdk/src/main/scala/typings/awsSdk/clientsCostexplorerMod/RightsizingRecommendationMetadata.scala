@@ -33,7 +33,8 @@ object RightsizingRecommendationMetadata {
     __obj.asInstanceOf[RightsizingRecommendationMetadata]
   }
   
-  extension [Self <: RightsizingRecommendationMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightsizingRecommendationMetadata] (val x: Self) extends AnyVal {
     
     inline def setAdditionalMetadata(value: GenericString): Self = StObject.set(x, "AdditionalMetadata", value.asInstanceOf[js.Any])
     

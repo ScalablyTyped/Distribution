@@ -26,7 +26,8 @@ object SubscriptionCreateRequest {
     __obj.asInstanceOf[SubscriptionCreateRequest]
   }
   
-  extension [Self <: SubscriptionCreateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubscriptionCreateRequest] (val x: Self) extends AnyVal {
     
     inline def setBillingDayOfMonth(value: Double): Self = StObject.set(x, "billingDayOfMonth", value.asInstanceOf[js.Any])
     

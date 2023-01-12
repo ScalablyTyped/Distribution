@@ -54,7 +54,8 @@ object srcNotificationMod {
       __obj.asInstanceOf[ErrorNotificationOptions]
     }
     
-    extension [Self <: ErrorNotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorNotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object srcNotificationMod {
       __obj.asInstanceOf[NotificationOptions]
     }
     
-    extension [Self <: NotificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotificationOptions] (val x: Self) extends AnyVal {
       
       inline def setButtons(value: js.Array[ClassName]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       

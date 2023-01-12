@@ -55,7 +55,8 @@ object PickImpladditionPartialPiActive {
     __obj.asInstanceOf[PickImpladditionPartialPiActive]
   }
   
-  extension [Self <: PickImpladditionPartialPiActive](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImpladditionPartialPiActive] (val x: Self) extends AnyVal {
     
     inline def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

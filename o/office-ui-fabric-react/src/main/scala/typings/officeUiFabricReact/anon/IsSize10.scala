@@ -50,7 +50,8 @@ object IsSize10 {
     __obj.asInstanceOf[IsSize10]
   }
   
-  extension [Self <: IsSize10](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsSize10] (val x: Self) extends AnyVal {
     
     inline def setIsSize10(value: Boolean): Self = StObject.set(x, "isSize10", value.asInstanceOf[js.Any])
     

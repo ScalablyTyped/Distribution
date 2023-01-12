@@ -15,7 +15,8 @@ object RippleAddress {
     __obj.asInstanceOf[RippleAddress]
   }
   
-  extension [Self <: RippleAddress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RippleAddress] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
   }

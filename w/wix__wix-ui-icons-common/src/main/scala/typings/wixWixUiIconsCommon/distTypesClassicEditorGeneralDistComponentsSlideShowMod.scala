@@ -27,7 +27,8 @@ object distTypesClassicEditorGeneralDistComponentsSlideShowMod extends Shortcut 
       __obj.asInstanceOf[SlideShowProps]
     }
     
-    extension [Self <: SlideShowProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SlideShowProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

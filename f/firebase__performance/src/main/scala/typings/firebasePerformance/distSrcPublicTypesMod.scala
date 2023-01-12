@@ -33,7 +33,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[FirebasePerformance]
     }
     
-    extension [Self <: FirebasePerformance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebasePerformance] (val x: Self) extends AnyVal {
       
       inline def setApp(value: FirebaseApp): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object distSrcPublicTypesMod {
       __obj.asInstanceOf[PerformanceSettings]
     }
     
-    extension [Self <: PerformanceSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PerformanceSettings] (val x: Self) extends AnyVal {
       
       inline def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -168,7 +170,8 @@ object distSrcPublicTypesMod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def setPerformance(value: FirebasePerformance): Self = StObject.set(x, "performance", value.asInstanceOf[js.Any])
       }

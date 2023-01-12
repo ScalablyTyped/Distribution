@@ -25,7 +25,8 @@ object MolecularSequenceStructureVariantInner {
     __obj.asInstanceOf[MolecularSequenceStructureVariantInner]
   }
   
-  extension [Self <: MolecularSequenceStructureVariantInner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MolecularSequenceStructureVariantInner] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

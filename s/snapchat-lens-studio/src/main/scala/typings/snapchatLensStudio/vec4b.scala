@@ -41,7 +41,8 @@ object vec4b {
     __obj.asInstanceOf[vec4b]
   }
   
-  extension [Self <: vec4b](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: vec4b] (val x: Self) extends AnyVal {
     
     inline def setA(value: Boolean): Self = StObject.set(x, "a", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object EmbeddedSourceSettings {
     __obj.asInstanceOf[EmbeddedSourceSettings]
   }
   
-  extension [Self <: EmbeddedSourceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmbeddedSourceSettings] (val x: Self) extends AnyVal {
     
     inline def setConvert608To708(value: EmbeddedConvert608To708): Self = StObject.set(x, "Convert608To708", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object distTs3Dot9ModulesRefsMod {
       __obj.asInstanceOf[ComposedRef]
     }
     
-    extension [Self <: ComposedRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposedRef] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -130,7 +131,8 @@ object distTs3Dot9ModulesRefsMod {
       __obj.asInstanceOf[ComposedRefUpdate]
     }
     
-    extension [Self <: ComposedRefUpdate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComposedRefUpdate] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -210,7 +212,8 @@ object distTs3Dot9ModulesRefsMod {
       __obj.asInstanceOf[SetRefData]
     }
     
-    extension [Self <: SetRefData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SetRefData] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -294,7 +297,8 @@ object distTs3Dot9ModulesRefsMod {
       __obj.asInstanceOf[SubState]
     }
     
-    extension [Self <: SubState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SubState] (val x: Self) extends AnyVal {
       
       inline def setRefs(value: Refs): Self = StObject.set(x, "refs", value.asInstanceOf[js.Any])
     }

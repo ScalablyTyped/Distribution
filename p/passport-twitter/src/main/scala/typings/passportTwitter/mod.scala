@@ -68,7 +68,8 @@ object mod {
       __obj.asInstanceOf[IStrategyOption]
     }
     
-    extension [Self <: IStrategyOption](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStrategyOption] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `false`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
       
@@ -113,7 +114,8 @@ object mod {
       __obj.asInstanceOf[IStrategyOptionBase]
     }
     
-    extension [Self <: IStrategyOptionBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStrategyOptionBase] (val x: Self) extends AnyVal {
       
       inline def setAccessTokenURL(value: String): Self = StObject.set(x, "accessTokenURL", value.asInstanceOf[js.Any])
       
@@ -180,7 +182,8 @@ object mod {
       __obj.asInstanceOf[IStrategyOptionWithRequest]
     }
     
-    extension [Self <: IStrategyOptionWithRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IStrategyOptionWithRequest] (val x: Self) extends AnyVal {
       
       inline def setPassReqToCallback(value: `true`): Self = StObject.set(x, "passReqToCallback", value.asInstanceOf[js.Any])
     }
@@ -213,7 +216,8 @@ object mod {
       __obj.asInstanceOf[Profile]
     }
     
-    extension [Self <: Profile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Profile] (val x: Self) extends AnyVal {
       
       inline def setGender(value: String): Self = StObject.set(x, "gender", value.asInstanceOf[js.Any])
       

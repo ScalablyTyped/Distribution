@@ -22,7 +22,8 @@ object UUIDMetadataFields {
     __obj.asInstanceOf[UUIDMetadataFields]
   }
   
-  extension [Self <: UUIDMetadataFields](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UUIDMetadataFields] (val x: Self) extends AnyVal {
     
     inline def setEmail(value: String): Self = StObject.set(x, "email", value.asInstanceOf[js.Any])
     

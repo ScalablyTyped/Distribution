@@ -17,7 +17,8 @@ object TemplateURLOptions {
     __obj.asInstanceOf[TemplateURLOptions]
   }
   
-  extension [Self <: TemplateURLOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateURLOptions] (val x: Self) extends AnyVal {
     
     inline def setPAYLINEV2(value: String): Self = StObject.set(x, "PAYLINEV2", value.asInstanceOf[js.Any])
     

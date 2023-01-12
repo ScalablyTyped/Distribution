@@ -17,7 +17,8 @@ object FileInfoResult {
     __obj.asInstanceOf[FileInfoResult]
   }
   
-  extension [Self <: FileInfoResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileInfoResult] (val x: Self) extends AnyVal {
     
     inline def setIgnored(value: Boolean): Self = StObject.set(x, "ignored", value.asInstanceOf[js.Any])
     

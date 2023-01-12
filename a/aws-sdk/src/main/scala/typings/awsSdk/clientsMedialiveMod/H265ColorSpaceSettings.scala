@@ -23,7 +23,8 @@ object H265ColorSpaceSettings {
     __obj.asInstanceOf[H265ColorSpaceSettings]
   }
   
-  extension [Self <: H265ColorSpaceSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: H265ColorSpaceSettings] (val x: Self) extends AnyVal {
     
     inline def setColorSpacePassthroughSettings(value: ColorSpacePassthroughSettings): Self = StObject.set(x, "ColorSpacePassthroughSettings", value.asInstanceOf[js.Any])
     

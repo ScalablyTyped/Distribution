@@ -38,7 +38,8 @@ object GetAppMonitorDataRequest {
     __obj.asInstanceOf[GetAppMonitorDataRequest]
   }
   
-  extension [Self <: GetAppMonitorDataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAppMonitorDataRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: QueryFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

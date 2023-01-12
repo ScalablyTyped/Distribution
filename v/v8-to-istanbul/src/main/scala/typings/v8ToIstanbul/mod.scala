@@ -82,7 +82,8 @@ object mod {
       __obj.asInstanceOf[V8ToIstanbul]
     }
     
-    extension [Self <: V8ToIstanbul](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: V8ToIstanbul] (val x: Self) extends AnyVal {
       
       inline def setApplyCoverage(value: js.Array[FunctionCoverage] => Unit): Self = StObject.set(x, "applyCoverage", js.Any.fromFunction1(value))
       

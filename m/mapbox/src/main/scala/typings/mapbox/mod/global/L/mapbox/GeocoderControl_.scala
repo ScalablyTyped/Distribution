@@ -44,7 +44,8 @@ object GeocoderControl_ {
     __obj.asInstanceOf[GeocoderControl_]
   }
   
-  extension [Self <: GeocoderControl_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeocoderControl_] (val x: Self) extends AnyVal {
     
     inline def setGetURL(value: () => String): Self = StObject.set(x, "getURL", js.Any.fromFunction0(value))
     

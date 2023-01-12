@@ -21,7 +21,8 @@ object Entry {
     __obj.asInstanceOf[Entry[V]]
   }
   
-  extension [Self <: Entry[?], V](x: Self & Entry[V]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entry[?], V] (val x: Self & Entry[V]) extends AnyVal {
     
     inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
     

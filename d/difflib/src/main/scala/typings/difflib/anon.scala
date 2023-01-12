@@ -25,7 +25,8 @@ object anon {
       __obj.asInstanceOf[Fromfile]
     }
     
-    extension [Self <: Fromfile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fromfile] (val x: Self) extends AnyVal {
       
       inline def setFromfile(value: String): Self = StObject.set(x, "fromfile", value.asInstanceOf[js.Any])
       

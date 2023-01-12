@@ -18,7 +18,8 @@ object RequestServedFromCacheEvent {
     __obj.asInstanceOf[RequestServedFromCacheEvent]
   }
   
-  extension [Self <: RequestServedFromCacheEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestServedFromCacheEvent] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: RequestId): Self = StObject.set(x, "requestId", value.asInstanceOf[js.Any])
   }

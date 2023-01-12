@@ -41,7 +41,8 @@ object TopBottomConditionalFormatLoadOptions {
     __obj.asInstanceOf[TopBottomConditionalFormatLoadOptions]
   }
   
-  extension [Self <: TopBottomConditionalFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopBottomConditionalFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

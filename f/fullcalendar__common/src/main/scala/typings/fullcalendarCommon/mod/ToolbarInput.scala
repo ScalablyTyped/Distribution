@@ -23,7 +23,8 @@ object ToolbarInput {
     __obj.asInstanceOf[ToolbarInput]
   }
   
-  extension [Self <: ToolbarInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ToolbarInput] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: String): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

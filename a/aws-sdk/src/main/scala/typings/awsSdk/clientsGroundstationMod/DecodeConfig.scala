@@ -18,7 +18,8 @@ object DecodeConfig {
     __obj.asInstanceOf[DecodeConfig]
   }
   
-  extension [Self <: DecodeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DecodeConfig] (val x: Self) extends AnyVal {
     
     inline def setUnvalidatedJSON(value: JsonString): Self = StObject.set(x, "unvalidatedJSON", value.asInstanceOf[js.Any])
   }

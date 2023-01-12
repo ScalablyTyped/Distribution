@@ -23,7 +23,8 @@ object PlacementStrategy {
     __obj.asInstanceOf[PlacementStrategy]
   }
   
-  extension [Self <: PlacementStrategy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlacementStrategy] (val x: Self) extends AnyVal {
     
     inline def setField(value: PlacementStrategyField): Self = StObject.set(x, "field", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ShakeParams {
     __obj.asInstanceOf[ShakeParams]
   }
   
-  extension [Self <: ShakeParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShakeParams] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

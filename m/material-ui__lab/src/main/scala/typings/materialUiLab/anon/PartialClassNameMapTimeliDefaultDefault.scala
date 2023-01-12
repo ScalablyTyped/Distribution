@@ -28,7 +28,8 @@ object PartialClassNameMapTimeliDefaultDefault {
     __obj.asInstanceOf[PartialClassNameMapTimeliDefaultDefault]
   }
   
-  extension [Self <: PartialClassNameMapTimeliDefaultDefault](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClassNameMapTimeliDefaultDefault] (val x: Self) extends AnyVal {
     
     inline def setDefaultDefault(value: String): Self = StObject.set(x, "defaultDefault", value.asInstanceOf[js.Any])
     

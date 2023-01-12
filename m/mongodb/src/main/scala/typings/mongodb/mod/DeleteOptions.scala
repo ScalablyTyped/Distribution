@@ -28,7 +28,8 @@ object DeleteOptions {
     __obj.asInstanceOf[DeleteOptions]
   }
   
-  extension [Self <: DeleteOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteOptions] (val x: Self) extends AnyVal {
     
     inline def setHint(value: String | Document): Self = StObject.set(x, "hint", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object WebGPUSamplerDescription {
     __obj.asInstanceOf[WebGPUSamplerDescription]
   }
   
-  extension [Self <: WebGPUSamplerDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGPUSamplerDescription] (val x: Self) extends AnyVal {
     
     inline def setBinding(value: WebGPUBindingInfo): Self = StObject.set(x, "binding", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ValueBoolean {
     __obj.asInstanceOf[ValueBoolean]
   }
   
-  extension [Self <: ValueBoolean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueBoolean] (val x: Self) extends AnyVal {
     
     inline def setKey(value: String | js.RegExp): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     

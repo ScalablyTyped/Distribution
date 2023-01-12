@@ -54,7 +54,8 @@ object anon {
       __obj.asInstanceOf[AppDelegateSubscribers]
     }
     
-    extension [Self <: AppDelegateSubscribers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppDelegateSubscribers] (val x: Self) extends AnyVal {
       
       inline def setAppDelegateSubscribers(value: js.Array[String]): Self = StObject.set(x, "appDelegateSubscribers", value.asInstanceOf[js.Any])
       
@@ -124,7 +125,8 @@ object anon {
       __obj.asInstanceOf[GradlePath]
     }
     
-    extension [Self <: GradlePath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GradlePath] (val x: Self) extends AnyVal {
       
       inline def setGradlePath(value: String | js.Array[String]): Self = StObject.set(x, "gradlePath", value.asInstanceOf[js.Any])
       

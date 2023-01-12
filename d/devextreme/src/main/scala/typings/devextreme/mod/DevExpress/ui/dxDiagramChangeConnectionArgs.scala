@@ -39,7 +39,8 @@ object dxDiagramChangeConnectionArgs {
     __obj.asInstanceOf[dxDiagramChangeConnectionArgs]
   }
   
-  extension [Self <: dxDiagramChangeConnectionArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxDiagramChangeConnectionArgs] (val x: Self) extends AnyVal {
     
     inline def setConnectionPointIndex(value: Double): Self = StObject.set(x, "connectionPointIndex", value.asInstanceOf[js.Any])
     

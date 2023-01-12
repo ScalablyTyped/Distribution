@@ -22,7 +22,8 @@ object CustomMessageRequest {
     __obj.asInstanceOf[CustomMessageRequest]
   }
   
-  extension [Self <: CustomMessageRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomMessageRequest] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Message): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

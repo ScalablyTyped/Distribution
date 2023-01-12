@@ -24,7 +24,8 @@ object GetEnvironmentInputwaiter {
     __obj.asInstanceOf[GetEnvironmentInputwaiter]
   }
   
-  extension [Self <: GetEnvironmentInputwaiter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEnvironmentInputwaiter] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

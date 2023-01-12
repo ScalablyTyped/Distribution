@@ -31,7 +31,8 @@ object buildUseResizeDetectorMod {
       __obj.asInstanceOf[FunctionProps]
     }
     
-    extension [Self <: FunctionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionProps] (val x: Self) extends AnyVal {
       
       inline def setTargetRef(value: ReturnType[FnCall]): Self = StObject.set(x, "targetRef", value.asInstanceOf[js.Any])
       
@@ -52,7 +53,8 @@ object buildUseResizeDetectorMod {
       __obj.asInstanceOf[UseResizeDetectorReturn[T]]
     }
     
-    extension [Self <: UseResizeDetectorReturn[?], T](x: Self & UseResizeDetectorReturn[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UseResizeDetectorReturn[?], T] (val x: Self & UseResizeDetectorReturn[T]) extends AnyVal {
       
       inline def setRef(value: MutableRefObject[T | Null]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }

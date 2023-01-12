@@ -20,7 +20,8 @@ object UserActions {
     __obj.asInstanceOf[UserActions]
   }
   
-  extension [Self <: UserActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserActions] (val x: Self) extends AnyVal {
     
     inline def setClick(value: Boolean | (js.Function1[/* event */ Event, Unit])): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object BatchPutAssetPropertyValueRequest {
     __obj.asInstanceOf[BatchPutAssetPropertyValueRequest]
   }
   
-  extension [Self <: BatchPutAssetPropertyValueRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchPutAssetPropertyValueRequest] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: PutAssetPropertyValueEntries): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

@@ -469,7 +469,8 @@ object AddCollaborator {
     __obj.asInstanceOf[AddCollaborator]
   }
   
-  extension [Self <: AddCollaborator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddCollaborator] (val x: Self) extends AnyVal {
     
     inline def setAddCollaborator(value: `456`): Self = StObject.set(x, "addCollaborator", value.asInstanceOf[js.Any])
     

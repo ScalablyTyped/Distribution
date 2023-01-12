@@ -28,7 +28,8 @@ object libComponentsGroupedListGroupHeaderDottypesMod {
       __obj.asInstanceOf[IGroupHeaderCheckboxProps]
     }
     
-    extension [Self <: IGroupHeaderCheckboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupHeaderCheckboxProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object libComponentsGroupedListGroupHeaderDottypesMod {
       __obj.asInstanceOf[IGroupHeaderProps]
     }
     
-    extension [Self <: IGroupHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setExpandButtonIcon(value: String): Self = StObject.set(x, "expandButtonIcon", value.asInstanceOf[js.Any])
       
@@ -127,7 +129,8 @@ object libComponentsGroupedListGroupHeaderDottypesMod {
       __obj.asInstanceOf[IGroupHeaderStyleProps]
     }
     
-    extension [Self <: IGroupHeaderStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupHeaderStyleProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -174,7 +177,8 @@ object libComponentsGroupedListGroupHeaderDottypesMod {
       __obj.asInstanceOf[IGroupHeaderStyles]
     }
     
-    extension [Self <: IGroupHeaderStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupHeaderStyles] (val x: Self) extends AnyVal {
       
       inline def setCheck(value: IStyle): Self = StObject.set(x, "check", value.asInstanceOf[js.Any])
       

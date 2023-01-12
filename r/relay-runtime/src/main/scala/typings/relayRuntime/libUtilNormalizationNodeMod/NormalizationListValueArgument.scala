@@ -22,7 +22,8 @@ object NormalizationListValueArgument {
     __obj.asInstanceOf[NormalizationListValueArgument]
   }
   
-  extension [Self <: NormalizationListValueArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationListValueArgument] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[NormalizationArgument | Null]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

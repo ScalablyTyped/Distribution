@@ -103,7 +103,8 @@ object componentsListListItemLayoutMod {
       __obj.asInstanceOf[ListItemLayoutProps]
     }
     
-    extension [Self <: ListItemLayoutProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemLayoutProps] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: String | ReactElement): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       
@@ -187,7 +188,8 @@ object componentsListListItemLayoutMod {
       __obj.asInstanceOf[ListItemLayoutTheme]
     }
     
-    extension [Self <: ListItemLayoutTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListItemLayoutTheme] (val x: Self) extends AnyVal {
       
       inline def setDisabled(value: String): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       

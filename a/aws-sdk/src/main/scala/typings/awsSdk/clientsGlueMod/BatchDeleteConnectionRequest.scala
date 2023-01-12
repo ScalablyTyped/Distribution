@@ -23,7 +23,8 @@ object BatchDeleteConnectionRequest {
     __obj.asInstanceOf[BatchDeleteConnectionRequest]
   }
   
-  extension [Self <: BatchDeleteConnectionRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteConnectionRequest] (val x: Self) extends AnyVal {
     
     inline def setCatalogId(value: CatalogIdString): Self = StObject.set(x, "CatalogId", value.asInstanceOf[js.Any])
     

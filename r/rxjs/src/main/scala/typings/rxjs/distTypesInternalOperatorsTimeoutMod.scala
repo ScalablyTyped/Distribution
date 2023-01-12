@@ -40,7 +40,8 @@ object distTypesInternalOperatorsTimeoutMod {
     @js.native
     val ^ : TimeoutErrorCtor = js.native
     
-    extension [Self <: TimeoutError[?, ?], T, M](x: Self & (TimeoutError[T, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutError[?, ?], T, M] (val x: Self & (TimeoutError[T, M])) extends AnyVal {
       
       inline def setInfo(value: TimeoutInfo[T, M]): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
@@ -127,7 +128,8 @@ object distTypesInternalOperatorsTimeoutMod {
       __obj.asInstanceOf[TimeoutConfig[T, O, M]]
     }
     
-    extension [Self <: TimeoutConfig[?, ?, ?], T, O /* <: ObservableInput[Any] */, M](x: Self & (TimeoutConfig[T, O, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutConfig[?, ?, ?], T, O /* <: ObservableInput[Any] */, M] (val x: Self & (TimeoutConfig[T, O, M])) extends AnyVal {
       
       inline def setEach(value: Double): Self = StObject.set(x, "each", value.asInstanceOf[js.Any])
       
@@ -179,7 +181,8 @@ object distTypesInternalOperatorsTimeoutMod {
       __obj.asInstanceOf[TimeoutInfo[T, M]]
     }
     
-    extension [Self <: TimeoutInfo[?, ?], T, M](x: Self & (TimeoutInfo[T, M])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TimeoutInfo[?, ?], T, M] (val x: Self & (TimeoutInfo[T, M])) extends AnyVal {
       
       inline def setLastValue(value: T): Self = StObject.set(x, "lastValue", value.asInstanceOf[js.Any])
       

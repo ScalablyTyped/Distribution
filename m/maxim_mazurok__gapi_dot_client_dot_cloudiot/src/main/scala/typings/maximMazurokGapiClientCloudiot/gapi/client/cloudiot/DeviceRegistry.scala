@@ -51,7 +51,8 @@ object DeviceRegistry {
     __obj.asInstanceOf[DeviceRegistry]
   }
   
-  extension [Self <: DeviceRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceRegistry] (val x: Self) extends AnyVal {
     
     inline def setCredentials(value: js.Array[RegistryCredential]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])
     

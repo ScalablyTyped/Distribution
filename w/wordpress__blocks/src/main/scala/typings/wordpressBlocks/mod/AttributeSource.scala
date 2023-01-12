@@ -61,7 +61,8 @@ object AttributeSource {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setSelector(value: String): Self = StObject.set(x, "selector", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object AttributeSource {
       __obj.asInstanceOf[HTML]
     }
     
-    extension [Self <: HTML](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTML] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -135,7 +137,8 @@ object AttributeSource {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -190,7 +193,8 @@ object AttributeSource {
       __obj.asInstanceOf[Query[T]]
     }
     
-    extension [Self <: Query[?], T](x: Self & Query[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
       
       inline def setDefault(value: js.Array[Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
@@ -230,7 +234,8 @@ object AttributeSource {
       __obj.asInstanceOf[Text]
     }
     
-    extension [Self <: Text](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: String): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       

@@ -45,7 +45,8 @@ object distEventEventObjectMod {
       __obj.asInstanceOf[WidgetEvent]
     }
     
-    extension [Self <: WidgetEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WidgetEvent] (val x: Self) extends AnyVal {
       
       inline def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

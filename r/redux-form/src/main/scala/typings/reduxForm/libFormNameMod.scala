@@ -29,7 +29,8 @@ object libFormNameMod extends Shortcut {
       __obj.asInstanceOf[FormNameProps]
     }
     
-    extension [Self <: FormNameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FormNameProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Form => ReactNode): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }

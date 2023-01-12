@@ -23,7 +23,8 @@ object LoadBalancerTlsCertificateRenewalSummary {
     __obj.asInstanceOf[LoadBalancerTlsCertificateRenewalSummary]
   }
   
-  extension [Self <: LoadBalancerTlsCertificateRenewalSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoadBalancerTlsCertificateRenewalSummary] (val x: Self) extends AnyVal {
     
     inline def setDomainValidationOptions(value: LoadBalancerTlsCertificateDomainValidationOptionList): Self = StObject.set(x, "domainValidationOptions", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object HttpTransportInformation {
     __obj.asInstanceOf[HttpTransportInformation]
   }
   
-  extension [Self <: HttpTransportInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpTransportInformation] (val x: Self) extends AnyVal {
     
     inline def setServerCertificate(value: Certificate): Self = StObject.set(x, "serverCertificate", value.asInstanceOf[js.Any])
     

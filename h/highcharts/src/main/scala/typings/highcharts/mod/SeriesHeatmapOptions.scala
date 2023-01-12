@@ -102,7 +102,8 @@ object SeriesHeatmapOptions {
     __obj.asInstanceOf[SeriesHeatmapOptions]
   }
   
-  extension [Self <: SeriesHeatmapOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SeriesHeatmapOptions] (val x: Self) extends AnyVal {
     
     inline def setData(value: js.Array[js.Array[Double] | PointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

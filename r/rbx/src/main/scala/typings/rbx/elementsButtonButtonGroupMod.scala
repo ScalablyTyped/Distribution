@@ -87,7 +87,8 @@ object elementsButtonButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupModifierProps]
     }
     
-    extension [Self <: ButtonGroupModifierProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupModifierProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object elementsButtonButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupProps]
     }
     
-    extension [Self <: ButtonGroupProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: centered | right): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -359,7 +361,8 @@ object elementsButtonButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupVariables]
     }
     
-    extension [Self <: ButtonGroupVariables](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupVariables] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       
@@ -380,7 +383,8 @@ object elementsButtonButtonGroupMod {
       __obj.asInstanceOf[ButtonGroupVariablesDefaults]
     }
     
-    extension [Self <: ButtonGroupVariablesDefaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonGroupVariablesDefaults] (val x: Self) extends AnyVal {
       
       inline def setAlignments(value: centered | right): Self = StObject.set(x, "alignments", value.asInstanceOf[js.Any])
       

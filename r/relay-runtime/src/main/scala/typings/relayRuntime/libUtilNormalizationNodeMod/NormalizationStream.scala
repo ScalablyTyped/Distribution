@@ -27,7 +27,8 @@ object NormalizationStream {
     __obj.asInstanceOf[NormalizationStream]
   }
   
-  extension [Self <: NormalizationStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NormalizationStream] (val x: Self) extends AnyVal {
     
     inline def setIf(value: String): Self = StObject.set(x, "if", value.asInstanceOf[js.Any])
     

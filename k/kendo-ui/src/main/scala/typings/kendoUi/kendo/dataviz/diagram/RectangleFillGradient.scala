@@ -25,7 +25,8 @@ object RectangleFillGradient {
     __obj.asInstanceOf[RectangleFillGradient]
   }
   
-  extension [Self <: RectangleFillGradient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RectangleFillGradient] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: Any): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
     

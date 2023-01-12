@@ -15,7 +15,8 @@ object TipsTheme {
     __obj.asInstanceOf[TipsTheme]
   }
   
-  extension [Self <: TipsTheme](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TipsTheme] (val x: Self) extends AnyVal {
     
     inline def setBgColor(value: String): Self = StObject.set(x, "bgColor", value.asInstanceOf[js.Any])
   }

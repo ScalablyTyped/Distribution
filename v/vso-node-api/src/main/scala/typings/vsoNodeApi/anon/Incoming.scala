@@ -19,7 +19,8 @@ object Incoming {
     __obj.asInstanceOf[Incoming]
   }
   
-  extension [Self <: Incoming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Incoming] (val x: Self) extends AnyVal {
     
     inline def setInProgress(value: scala.Double): Self = StObject.set(x, "inProgress", value.asInstanceOf[js.Any])
     

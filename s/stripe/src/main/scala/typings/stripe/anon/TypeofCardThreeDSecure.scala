@@ -15,7 +15,8 @@ object TypeofCardThreeDSecure {
     __obj.asInstanceOf[TypeofCardThreeDSecure]
   }
   
-  extension [Self <: TypeofCardThreeDSecure](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofCardThreeDSecure] (val x: Self) extends AnyVal {
     
     inline def setThreeDSecure(value: Any): Self = StObject.set(x, "ThreeDSecure", value.asInstanceOf[js.Any])
   }

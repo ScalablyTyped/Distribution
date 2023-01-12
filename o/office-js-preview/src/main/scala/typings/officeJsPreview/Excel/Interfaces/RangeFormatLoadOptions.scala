@@ -163,7 +163,8 @@ object RangeFormatLoadOptions {
     __obj.asInstanceOf[RangeFormatLoadOptions]
   }
   
-  extension [Self <: RangeFormatLoadOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFormatLoadOptions] (val x: Self) extends AnyVal {
     
     inline def set$all(value: Boolean): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
     

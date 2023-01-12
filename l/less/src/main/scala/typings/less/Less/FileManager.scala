@@ -42,7 +42,8 @@ object FileManager {
     __obj.asInstanceOf[FileManager]
   }
   
-  extension [Self <: FileManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileManager] (val x: Self) extends AnyVal {
     
     inline def setLoadFile(value: (String, String, LoadFileOptions, Environment) => js.Promise[FileLoadResult]): Self = StObject.set(x, "loadFile", js.Any.fromFunction4(value))
     

@@ -18,7 +18,8 @@ object GetContainerServicePowersResult {
     __obj.asInstanceOf[GetContainerServicePowersResult]
   }
   
-  extension [Self <: GetContainerServicePowersResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetContainerServicePowersResult] (val x: Self) extends AnyVal {
     
     inline def setPowers(value: ContainerServicePowerList): Self = StObject.set(x, "powers", value.asInstanceOf[js.Any])
     

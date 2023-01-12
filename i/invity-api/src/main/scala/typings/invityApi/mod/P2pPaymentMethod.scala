@@ -17,7 +17,8 @@ object P2pPaymentMethod {
     __obj.asInstanceOf[P2pPaymentMethod]
   }
   
-  extension [Self <: P2pPaymentMethod](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: P2pPaymentMethod] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

@@ -165,7 +165,8 @@ object libEsmComponentsNavbarNavbarDividerMod {
       __obj.asInstanceOf[INavbarDividerProps]
     }
     
-    extension [Self <: INavbarDividerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: INavbarDividerProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

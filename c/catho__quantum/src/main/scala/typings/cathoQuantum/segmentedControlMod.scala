@@ -36,7 +36,8 @@ object segmentedControlMod {
       __obj.asInstanceOf[SegmentedControlProps]
     }
     
-    extension [Self <: SegmentedControlProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SegmentedControlProps] (val x: Self) extends AnyVal {
       
       inline def setDarkMode(value: Boolean): Self = StObject.set(x, "darkMode", value.asInstanceOf[js.Any])
       

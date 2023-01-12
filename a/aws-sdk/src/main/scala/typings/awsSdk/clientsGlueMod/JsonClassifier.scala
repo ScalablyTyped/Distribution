@@ -38,7 +38,8 @@ object JsonClassifier {
     __obj.asInstanceOf[JsonClassifier]
   }
   
-  extension [Self <: JsonClassifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonClassifier] (val x: Self) extends AnyVal {
     
     inline def setCreationTime(value: js.Date): Self = StObject.set(x, "CreationTime", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object MappingSuggestContext {
     __obj.asInstanceOf[MappingSuggestContext]
   }
   
-  extension [Self <: MappingSuggestContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MappingSuggestContext] (val x: Self) extends AnyVal {
     
     inline def setName(value: Name): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

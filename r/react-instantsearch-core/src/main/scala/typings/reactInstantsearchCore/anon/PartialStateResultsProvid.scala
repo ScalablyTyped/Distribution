@@ -32,7 +32,8 @@ object PartialStateResultsProvid {
     __obj.asInstanceOf[PartialStateResultsProvid]
   }
   
-  extension [Self <: PartialStateResultsProvid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStateResultsProvid] (val x: Self) extends AnyVal {
     
     inline def setAllSearchResults(value: AllSearchResults[Any]): Self = StObject.set(x, "allSearchResults", value.asInstanceOf[js.Any])
     

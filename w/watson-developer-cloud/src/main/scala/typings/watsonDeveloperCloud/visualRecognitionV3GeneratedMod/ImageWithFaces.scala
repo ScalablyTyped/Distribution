@@ -29,7 +29,8 @@ object ImageWithFaces {
     __obj.asInstanceOf[ImageWithFaces]
   }
   
-  extension [Self <: ImageWithFaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageWithFaces] (val x: Self) extends AnyVal {
     
     inline def setError(value: ErrorInfo): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object DeltaSyncConfig {
     __obj.asInstanceOf[DeltaSyncConfig]
   }
   
-  extension [Self <: DeltaSyncConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeltaSyncConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseTableTTL(value: Long): Self = StObject.set(x, "baseTableTTL", value.asInstanceOf[js.Any])
     

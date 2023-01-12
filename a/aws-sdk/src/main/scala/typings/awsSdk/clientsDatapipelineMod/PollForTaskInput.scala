@@ -28,7 +28,8 @@ object PollForTaskInput {
     __obj.asInstanceOf[PollForTaskInput]
   }
   
-  extension [Self <: PollForTaskInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PollForTaskInput] (val x: Self) extends AnyVal {
     
     inline def setHostname(value: id): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
     

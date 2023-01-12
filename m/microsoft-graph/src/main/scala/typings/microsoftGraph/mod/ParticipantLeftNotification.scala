@@ -20,7 +20,8 @@ object ParticipantLeftNotification {
     __obj.asInstanceOf[ParticipantLeftNotification]
   }
   
-  extension [Self <: ParticipantLeftNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticipantLeftNotification] (val x: Self) extends AnyVal {
     
     inline def setCall(value: NullableOption[Call]): Self = StObject.set(x, "call", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object libTypescriptWebHammerGestureHandlerMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setActiveOffsetXEnd(value: Double): Self = StObject.set(x, "activeOffsetXEnd", value.asInstanceOf[js.Any])
       
@@ -381,7 +382,8 @@ object libTypescriptWebHammerGestureHandlerMod {
       __obj.asInstanceOf[HammerInputExt]
     }
     
-    extension [Self <: HammerInputExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HammerInputExt] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       

@@ -217,7 +217,8 @@ object mod {
       __obj.asInstanceOf[JSONSchema4]
     }
     
-    extension [Self <: JSONSchema4](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchema4] (val x: Self) extends AnyVal {
       
       inline def set$ref(value: String): Self = StObject.set(x, "$ref", value.asInstanceOf[js.Any])
       
@@ -716,7 +717,8 @@ object mod {
       __obj.asInstanceOf[JSONSchema6]
     }
     
-    extension [Self <: JSONSchema6](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchema6] (val x: Self) extends AnyVal {
       
       inline def set$id(value: String): Self = StObject.set(x, "$id", value.asInstanceOf[js.Any])
       
@@ -1105,7 +1107,8 @@ object mod {
       __obj.asInstanceOf[JSONSchema7]
     }
     
-    extension [Self <: JSONSchema7](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONSchema7] (val x: Self) extends AnyVal {
       
       inline def set$comment(value: String): Self = StObject.set(x, "$comment", value.asInstanceOf[js.Any])
       
@@ -1395,7 +1398,8 @@ object mod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -1416,7 +1420,8 @@ object mod {
       __obj.asInstanceOf[ValidationResult]
     }
     
-    extension [Self <: ValidationResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[ValidationError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

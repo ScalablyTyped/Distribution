@@ -18,7 +18,8 @@ object CSSCoverageOptions {
     __obj.asInstanceOf[CSSCoverageOptions]
   }
   
-  extension [Self <: CSSCoverageOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSCoverageOptions] (val x: Self) extends AnyVal {
     
     inline def setResetOnNavigation(value: Boolean): Self = StObject.set(x, "resetOnNavigation", value.asInstanceOf[js.Any])
     

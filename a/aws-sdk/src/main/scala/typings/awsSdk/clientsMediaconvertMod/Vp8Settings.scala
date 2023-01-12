@@ -78,7 +78,8 @@ object Vp8Settings {
     __obj.asInstanceOf[Vp8Settings]
   }
   
-  extension [Self <: Vp8Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vp8Settings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: integerMin1000Max1152000000): Self = StObject.set(x, "Bitrate", value.asInstanceOf[js.Any])
     

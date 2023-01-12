@@ -106,7 +106,8 @@ object libMultipartMultipartFormDataMod {
       __obj.asInstanceOf[MultipartFormData]
     }
     
-    extension [Self <: MultipartFormData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MultipartFormData] (val x: Self) extends AnyVal {
       
       inline def setAddFile_(value: Any): Self = StObject.set(x, "addFile_", value.asInstanceOf[js.Any])
       

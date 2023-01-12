@@ -144,7 +144,8 @@ object utilsMod {
     def selfAlignY: Requireable[Any] = js.native
     inline def selfAlignY_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("selfAlignY")(x.asInstanceOf[js.Any])
     
-    extension [Self <: FlexboxPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexboxPropTypes] (val x: Self) extends AnyVal {
       
       inline def setAlignX(value: HorizontalAlignments): Self = StObject.set(x, "alignX", value.asInstanceOf[js.Any])
       
@@ -308,7 +309,8 @@ object utilsMod {
     def showOnlyFor: Requireable[Any] = js.native
     inline def showOnlyFor_=(x: Requireable[Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("showOnlyFor")(x.asInstanceOf[js.Any])
     
-    extension [Self <: GeneralPropTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeneralPropTypes] (val x: Self) extends AnyVal {
       
       inline def setFloat(value: FloatTypes): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
       
@@ -394,7 +396,8 @@ object utilsMod {
       __obj.asInstanceOf[ClassNameProps]
     }
     
-    extension [Self <: ClassNameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassNameProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

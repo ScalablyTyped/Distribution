@@ -61,7 +61,8 @@ object ProtectionData {
     __obj.asInstanceOf[ProtectionData]
   }
   
-  extension [Self <: ProtectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProtectionData] (val x: Self) extends AnyVal {
     
     inline def setAudioRobustness(value: String): Self = StObject.set(x, "audioRobustness", value.asInstanceOf[js.Any])
     

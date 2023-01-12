@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ElasticsearchApmOptions]
     }
     
-    extension [Self <: ElasticsearchApmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ElasticsearchApmOptions] (val x: Self) extends AnyVal {
       
       inline def setApm(value: Agent): Self = StObject.set(x, "apm", value.asInstanceOf[js.Any])
     }

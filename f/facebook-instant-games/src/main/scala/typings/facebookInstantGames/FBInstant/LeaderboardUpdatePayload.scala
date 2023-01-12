@@ -31,7 +31,8 @@ object LeaderboardUpdatePayload {
     __obj.asInstanceOf[LeaderboardUpdatePayload]
   }
   
-  extension [Self <: LeaderboardUpdatePayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeaderboardUpdatePayload] (val x: Self) extends AnyVal {
     
     inline def setAction(value: UpdateAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

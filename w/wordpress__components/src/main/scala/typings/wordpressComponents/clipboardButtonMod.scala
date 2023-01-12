@@ -52,7 +52,8 @@ object clipboardButtonMod {
         __obj.asInstanceOf[Props]
       }
       
-      extension [Self <: Props](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
         
         inline def setOnCopy(value: () => Unit): Self = StObject.set(x, "onCopy", js.Any.fromFunction0(value))
         

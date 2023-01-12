@@ -755,7 +755,8 @@ object sapMTileContainerMod {
       __obj.asInstanceOf[TileContainerSettings]
     }
     
-    extension [Self <: TileContainerSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TileContainerSettings] (val x: Self) extends AnyVal {
       
       inline def setAllowAdd(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "allowAdd", value.asInstanceOf[js.Any])
       

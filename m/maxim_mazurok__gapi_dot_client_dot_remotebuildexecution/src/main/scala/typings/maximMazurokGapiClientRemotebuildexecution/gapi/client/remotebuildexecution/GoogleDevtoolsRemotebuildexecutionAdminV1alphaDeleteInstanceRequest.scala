@@ -16,7 +16,8 @@ object GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteInstanceRequest {
     __obj.asInstanceOf[GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteInstanceRequest]
   }
   
-  extension [Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteInstanceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleDevtoolsRemotebuildexecutionAdminV1alphaDeleteInstanceRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object jQueryMask {
       __obj.asInstanceOf[Invalid]
     }
     
-    extension [Self <: Invalid](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
       
       inline def setE(value: String): Self = StObject.set(x, "e", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object jQueryMask {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setByPassKeys(value: js.Array[Double]): Self = StObject.set(x, "byPassKeys", value.asInstanceOf[js.Any])
       
@@ -178,7 +180,8 @@ object jQueryMask {
       __obj.asInstanceOf[Pattern]
     }
     
-    extension [Self <: Pattern](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Pattern] (val x: Self) extends AnyVal {
       
       inline def setFallback(value: String): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
@@ -211,7 +214,8 @@ object jQueryMask {
       __obj.asInstanceOf[Translation]
     }
     
-    extension [Self <: Translation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Translation] (val x: Self) extends AnyVal {
       
       inline def setPlaceholder(value: String): Self = StObject.set(x, "placeholder", value.asInstanceOf[js.Any])
       

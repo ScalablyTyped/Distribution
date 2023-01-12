@@ -50,7 +50,8 @@ object anon {
       __obj.asInstanceOf[ExcludeExtensions]
     }
     
-    extension [Self <: ExcludeExtensions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExcludeExtensions] (val x: Self) extends AnyVal {
       
       inline def setExcludeExtensions(value: js.Array[String]): Self = StObject.set(x, "excludeExtensions", value.asInstanceOf[js.Any])
       

@@ -16,7 +16,8 @@ object HTMLElement {
     __obj.asInstanceOf[HTMLElement]
   }
   
-  extension [Self <: HTMLElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HTMLElement] (val x: Self) extends AnyVal {
     
     inline def setSelectize(value: IApi[Any, Any]): Self = StObject.set(x, "selectize", value.asInstanceOf[js.Any])
   }

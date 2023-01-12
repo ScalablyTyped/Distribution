@@ -71,7 +71,8 @@ object TextEffectFormat {
     __obj.asInstanceOf[TextEffectFormat]
   }
   
-  extension [Self <: TextEffectFormat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextEffectFormat] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: MsoTextEffectAlignment): Self = StObject.set(x, "Alignment", value.asInstanceOf[js.Any])
     

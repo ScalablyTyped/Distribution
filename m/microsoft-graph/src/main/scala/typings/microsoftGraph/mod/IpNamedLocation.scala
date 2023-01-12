@@ -24,7 +24,8 @@ object IpNamedLocation {
     __obj.asInstanceOf[IpNamedLocation]
   }
   
-  extension [Self <: IpNamedLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpNamedLocation] (val x: Self) extends AnyVal {
     
     inline def setIpRanges(value: js.Array[IpRange]): Self = StObject.set(x, "ipRanges", value.asInstanceOf[js.Any])
     

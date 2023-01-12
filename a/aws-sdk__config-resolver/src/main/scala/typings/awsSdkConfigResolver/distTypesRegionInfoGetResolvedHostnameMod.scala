@@ -25,7 +25,8 @@ object distTypesRegionInfoGetResolvedHostnameMod {
       __obj.asInstanceOf[GetResolvedHostnameOptions]
     }
     
-    extension [Self <: GetResolvedHostnameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetResolvedHostnameOptions] (val x: Self) extends AnyVal {
       
       inline def setPartitionHostname(value: String): Self = StObject.set(x, "partitionHostname", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object VolumeSpecification {
     __obj.asInstanceOf[VolumeSpecification]
   }
   
-  extension [Self <: VolumeSpecification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VolumeSpecification] (val x: Self) extends AnyVal {
     
     inline def setIops(value: Integer): Self = StObject.set(x, "Iops", value.asInstanceOf[js.Any])
     

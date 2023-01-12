@@ -15,7 +15,8 @@ object Namespaces {
     __obj.asInstanceOf[Namespaces]
   }
   
-  extension [Self <: Namespaces](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Namespaces] (val x: Self) extends AnyVal {
     
     inline def setNamespaces(value: js.Array[String]): Self = StObject.set(x, "namespaces", value.asInstanceOf[js.Any])
     

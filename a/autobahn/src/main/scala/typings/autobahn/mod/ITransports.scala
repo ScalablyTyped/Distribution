@@ -26,7 +26,8 @@ object ITransports {
     __obj.asInstanceOf[ITransports]
   }
   
-  extension [Self <: ITransports](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITransports] (val x: Self) extends AnyVal {
     
     inline def setGet(value: TransportType => ITransportFactoryFactory): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

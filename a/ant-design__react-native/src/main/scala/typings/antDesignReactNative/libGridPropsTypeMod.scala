@@ -23,7 +23,8 @@ object libGridPropsTypeMod {
       __obj.asInstanceOf[DataItem]
     }
     
-    extension [Self <: DataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataItem] (val x: Self) extends AnyVal {
       
       inline def setIcon(value: Any): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object libGridPropsTypeMod {
       __obj.asInstanceOf[GridPropsType]
     }
     
-    extension [Self <: GridPropsType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridPropsType] (val x: Self) extends AnyVal {
       
       inline def setCarouselMaxRow(value: Double): Self = StObject.set(x, "carouselMaxRow", value.asInstanceOf[js.Any])
       

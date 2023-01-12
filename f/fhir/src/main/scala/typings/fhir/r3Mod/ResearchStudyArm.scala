@@ -34,7 +34,8 @@ object ResearchStudyArm {
     __obj.asInstanceOf[ResearchStudyArm]
   }
   
-  extension [Self <: ResearchStudyArm](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResearchStudyArm] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CodeableConcept): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

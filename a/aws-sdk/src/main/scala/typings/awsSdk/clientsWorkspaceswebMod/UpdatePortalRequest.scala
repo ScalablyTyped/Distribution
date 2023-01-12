@@ -23,7 +23,8 @@ object UpdatePortalRequest {
     __obj.asInstanceOf[UpdatePortalRequest]
   }
   
-  extension [Self <: UpdatePortalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePortalRequest] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: DisplayName): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

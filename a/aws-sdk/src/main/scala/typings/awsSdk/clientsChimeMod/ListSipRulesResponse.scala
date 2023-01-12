@@ -23,7 +23,8 @@ object ListSipRulesResponse {
     __obj.asInstanceOf[ListSipRulesResponse]
   }
   
-  extension [Self <: ListSipRulesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSipRulesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextTokenString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

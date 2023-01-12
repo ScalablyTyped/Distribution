@@ -36,7 +36,8 @@ object XContentEventListener {
     __obj.asInstanceOf[XContentEventListener]
   }
   
-  extension [Self <: XContentEventListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XContentEventListener] (val x: Self) extends AnyVal {
     
     inline def setContentEvent(value: ContentEvent => Unit): Self = StObject.set(x, "contentEvent", js.Any.fromFunction1(value))
   }

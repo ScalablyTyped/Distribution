@@ -19,7 +19,8 @@ object ApiError {
     __obj.asInstanceOf[ApiError]
   }
   
-  extension [Self <: ApiError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApiError] (val x: Self) extends AnyVal {
     
     inline def setStatusBody(value: js.Object): Self = StObject.set(x, "statusBody", value.asInstanceOf[js.Any])
     

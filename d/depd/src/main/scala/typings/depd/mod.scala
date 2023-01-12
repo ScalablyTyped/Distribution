@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[DeprecationError]
     }
     
-    extension [Self <: DeprecationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DeprecationError] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.depd.depdStrings.DeprecationError): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -97,7 +98,8 @@ object mod {
           __obj.asInstanceOf[Process]
         }
         
-        extension [Self <: Process](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
           
           inline def setAddListener(value: (deprecation, js.Function1[/* deprecationError */ DeprecationError, Unit]) => Process): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
           

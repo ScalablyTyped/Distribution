@@ -147,7 +147,8 @@ object distTasksMod {
       __obj.asInstanceOf[TaskChainOptions]
     }
     
-    extension [Self <: TaskChainOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskChainOptions] (val x: Self) extends AnyVal {
       
       inline def setTaskOptions(value: PartialTaskOptions): Self = StObject.set(x, "taskOptions", value.asInstanceOf[js.Any])
       
@@ -168,7 +169,8 @@ object distTasksMod {
       __obj.asInstanceOf[TaskOptions]
     }
     
-    extension [Self <: TaskOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskOptions] (val x: Self) extends AnyVal {
       
       inline def setMsg(value: String): Self = StObject.set(x, "msg", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object distTasksMod {
       __obj.asInstanceOf[TaskResult]
     }
     
-    extension [Self <: TaskResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TaskResult] (val x: Self) extends AnyVal {
       
       inline def setElapsedTime(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "elapsedTime", value.asInstanceOf[js.Any])
       

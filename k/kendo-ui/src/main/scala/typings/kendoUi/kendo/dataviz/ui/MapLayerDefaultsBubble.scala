@@ -25,7 +25,8 @@ object MapLayerDefaultsBubble {
     __obj.asInstanceOf[MapLayerDefaultsBubble]
   }
   
-  extension [Self <: MapLayerDefaultsBubble](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapLayerDefaultsBubble] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: String): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

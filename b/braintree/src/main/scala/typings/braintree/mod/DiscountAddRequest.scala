@@ -23,7 +23,8 @@ object DiscountAddRequest {
     __obj.asInstanceOf[DiscountAddRequest]
   }
   
-  extension [Self <: DiscountAddRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiscountAddRequest] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: String): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

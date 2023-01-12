@@ -103,7 +103,8 @@ object PrimaryIsoTriangle {
     __obj.asInstanceOf[PrimaryIsoTriangle]
   }
   
-  extension [Self <: PrimaryIsoTriangle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrimaryIsoTriangle] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: (Double, Double) => PrimaryIsoTriangle): Self = StObject.set(x, "build", js.Any.fromFunction2(value))
     

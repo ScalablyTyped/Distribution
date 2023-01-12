@@ -24,7 +24,8 @@ object PrintToPDFResponse {
     __obj.asInstanceOf[PrintToPDFResponse]
   }
   
-  extension [Self <: PrintToPDFResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintToPDFResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

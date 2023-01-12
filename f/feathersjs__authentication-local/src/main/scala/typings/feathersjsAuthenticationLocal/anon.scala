@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     }
@@ -42,7 +43,8 @@ object anon {
       __obj.asInstanceOf[Name]
     }
     
-    extension [Self <: Name](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Name] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -82,7 +84,8 @@ object anon {
       __obj.asInstanceOf[PartialFeathersAuthentica]
     }
     
-    extension [Self <: PartialFeathersAuthentica](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialFeathersAuthentica] (val x: Self) extends AnyVal {
       
       inline def setEntity(value: String): Self = StObject.set(x, "entity", value.asInstanceOf[js.Any])
       

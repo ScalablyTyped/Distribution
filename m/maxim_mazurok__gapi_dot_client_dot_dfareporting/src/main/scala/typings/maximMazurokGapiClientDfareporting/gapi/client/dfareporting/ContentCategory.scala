@@ -25,7 +25,8 @@ object ContentCategory {
     __obj.asInstanceOf[ContentCategory]
   }
   
-  extension [Self <: ContentCategory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentCategory] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

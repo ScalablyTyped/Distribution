@@ -17,7 +17,8 @@ object ChooseCondition {
     __obj.asInstanceOf[ChooseCondition[TContext, TEvent]]
   }
   
-  extension [Self <: ChooseCondition[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (ChooseCondition[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChooseCondition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (ChooseCondition[TContext, TEvent])) extends AnyVal {
     
     inline def setActions(value: Actions[TContext, TEvent]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

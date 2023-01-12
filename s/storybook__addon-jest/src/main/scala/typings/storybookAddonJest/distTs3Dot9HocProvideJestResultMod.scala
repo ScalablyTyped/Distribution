@@ -33,7 +33,8 @@ object distTs3Dot9HocProvideJestResultMod {
       __obj.asInstanceOf[AssertionResult]
     }
     
-    extension [Self <: AssertionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AssertionResult] (val x: Self) extends AnyVal {
       
       inline def setFailureMessages(value: js.Array[String]): Self = StObject.set(x, "failureMessages", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object distTs3Dot9HocProvideJestResultMod {
       __obj.asInstanceOf[HocProps]
     }
     
-    extension [Self <: HocProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HocProps] (val x: Self) extends AnyVal {
       
       inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
       
@@ -85,7 +87,8 @@ object distTs3Dot9HocProvideJestResultMod {
       __obj.asInstanceOf[HocState]
     }
     
-    extension [Self <: HocState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HocState] (val x: Self) extends AnyVal {
       
       inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -114,7 +117,8 @@ object distTs3Dot9HocProvideJestResultMod {
       __obj.asInstanceOf[InjectedProps]
     }
     
-    extension [Self <: InjectedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedProps] (val x: Self) extends AnyVal {
       
       inline def setTests(value: js.Array[Test]): Self = StObject.set(x, "tests", value.asInstanceOf[js.Any])
       
@@ -137,7 +141,8 @@ object distTs3Dot9HocProvideJestResultMod {
       __obj.asInstanceOf[Test]
     }
     
-    extension [Self <: Test](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Test] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       

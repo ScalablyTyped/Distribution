@@ -102,7 +102,8 @@ object PlayerProps {
     __obj.asInstanceOf[PlayerProps]
   }
   
-  extension [Self <: PlayerProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlayerProps] (val x: Self) extends AnyVal {
     
     inline def setAspectRatio(value: String): Self = StObject.set(x, "aspectRatio", value.asInstanceOf[js.Any])
     

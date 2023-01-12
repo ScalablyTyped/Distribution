@@ -33,7 +33,8 @@ object AmbiguousErrorMessages {
     __obj.asInstanceOf[AmbiguousErrorMessages]
   }
   
-  extension [Self <: AmbiguousErrorMessages](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AmbiguousErrorMessages] (val x: Self) extends AnyVal {
     
     inline def setAmbiguousErrorMessages(value: Boolean): Self = StObject.set(x, "ambiguousErrorMessages", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object PinOption {
     __obj.asInstanceOf[PinOption]
   }
   
-  extension [Self <: PinOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PinOption] (val x: Self) extends AnyVal {
     
     inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

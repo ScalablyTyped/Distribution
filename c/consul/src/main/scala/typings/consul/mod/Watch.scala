@@ -48,7 +48,8 @@ object Watch {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setBackoffFactor(value: Double): Self = StObject.set(x, "backoffFactor", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object Watch {
       __obj.asInstanceOf[WatchOptions]
     }
     
-    extension [Self <: WatchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

@@ -17,7 +17,8 @@ object ClientXElement {
     __obj.asInstanceOf[ClientXElement]
   }
   
-  extension [Self <: ClientXElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientXElement] (val x: Self) extends AnyVal {
     
     inline def setGet_element(value: () => XElement): Self = StObject.set(x, "get_element", js.Any.fromFunction0(value))
     

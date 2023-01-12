@@ -33,7 +33,8 @@ object DeleteRuleGroupRequest {
     __obj.asInstanceOf[DeleteRuleGroupRequest]
   }
   
-  extension [Self <: DeleteRuleGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRuleGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setId(value: EntityId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

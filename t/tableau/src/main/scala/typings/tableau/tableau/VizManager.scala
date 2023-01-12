@@ -17,7 +17,8 @@ object VizManager {
     __obj.asInstanceOf[VizManager]
   }
   
-  extension [Self <: VizManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VizManager] (val x: Self) extends AnyVal {
     
     inline def setGetVizs(value: () => js.Array[Viz]): Self = StObject.set(x, "getVizs", js.Any.fromFunction0(value))
   }

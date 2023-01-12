@@ -46,7 +46,8 @@ object GitRepositoryRef {
     __obj.asInstanceOf[GitRepositoryRef]
   }
   
-  extension [Self <: GitRepositoryRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GitRepositoryRef] (val x: Self) extends AnyVal {
     
     inline def setCollection(value: TeamProjectCollectionReference): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     

@@ -351,7 +351,8 @@ object mod {
       __obj.asInstanceOf[NoNewVersionDetectedEvent]
     }
     
-    extension [Self <: NoNewVersionDetectedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoNewVersionDetectedEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: NO_NEW_VERSION_DETECTED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -371,7 +372,8 @@ object mod {
       __obj.asInstanceOf[TypedEvent]
     }
     
-    extension [Self <: TypedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypedEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -391,7 +393,8 @@ object mod {
       __obj.asInstanceOf[UnrecoverableStateEvent]
     }
     
-    extension [Self <: UnrecoverableStateEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnrecoverableStateEvent] (val x: Self) extends AnyVal {
       
       inline def setReason(value: String): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
       
@@ -415,7 +418,8 @@ object mod {
       __obj.asInstanceOf[UpdateActivatedEvent]
     }
     
-    extension [Self <: UpdateActivatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateActivatedEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrent(value: AppData): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -443,7 +447,8 @@ object mod {
       __obj.asInstanceOf[UpdateAvailableEvent]
     }
     
-    extension [Self <: UpdateAvailableEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateAvailableEvent] (val x: Self) extends AnyVal {
       
       inline def setAvailable(value: AppData): Self = StObject.set(x, "available", value.asInstanceOf[js.Any])
       
@@ -469,7 +474,8 @@ object mod {
       __obj.asInstanceOf[VersionDetectedEvent]
     }
     
-    extension [Self <: VersionDetectedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionDetectedEvent] (val x: Self) extends AnyVal {
       
       inline def setType(value: VERSION_DETECTED): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
@@ -529,7 +535,8 @@ object mod {
       __obj.asInstanceOf[VersionInstallationFailedEvent]
     }
     
-    extension [Self <: VersionInstallationFailedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionInstallationFailedEvent] (val x: Self) extends AnyVal {
       
       inline def setError(value: String): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
       
@@ -557,7 +564,8 @@ object mod {
       __obj.asInstanceOf[VersionReadyEvent]
     }
     
-    extension [Self <: VersionReadyEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersionReadyEvent] (val x: Self) extends AnyVal {
       
       inline def setCurrentVersion(value: Hash): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object Rsaprvkey {
     __obj.asInstanceOf[Rsaprvkey]
   }
   
-  extension [Self <: Rsaprvkey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Rsaprvkey] (val x: Self) extends AnyVal {
     
     inline def setRsaprvkey(value: RSAKey): Self = StObject.set(x, "rsaprvkey", value.asInstanceOf[js.Any])
     

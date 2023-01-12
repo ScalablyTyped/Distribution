@@ -35,7 +35,8 @@ object ItemLabelOnError {
     __obj.asInstanceOf[ItemLabelOnError]
   }
   
-  extension [Self <: ItemLabelOnError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ItemLabelOnError] (val x: Self) extends AnyVal {
     
     inline def setCell(value: String): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
     

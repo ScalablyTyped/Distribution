@@ -28,7 +28,8 @@ object SearchSynonymsOptions {
     __obj.asInstanceOf[SearchSynonymsOptions]
   }
   
-  extension [Self <: SearchSynonymsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchSynonymsOptions] (val x: Self) extends AnyVal {
     
     inline def setHitsPerPage(value: Double): Self = StObject.set(x, "hitsPerPage", value.asInstanceOf[js.Any])
     

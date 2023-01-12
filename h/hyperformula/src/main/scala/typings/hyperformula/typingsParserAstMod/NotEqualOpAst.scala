@@ -20,7 +20,8 @@ object NotEqualOpAst {
     __obj.asInstanceOf[NotEqualOpAst]
   }
   
-  extension [Self <: NotEqualOpAst](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotEqualOpAst] (val x: Self) extends AnyVal {
     
     inline def setType(value: NOT_EQUAL_OP): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

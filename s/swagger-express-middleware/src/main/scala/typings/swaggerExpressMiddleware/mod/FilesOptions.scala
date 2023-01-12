@@ -19,7 +19,8 @@ object FilesOptions {
     __obj.asInstanceOf[FilesOptions]
   }
   
-  extension [Self <: FilesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilesOptions] (val x: Self) extends AnyVal {
     
     inline def setApiPath(value: String): Self = StObject.set(x, "apiPath", value.asInstanceOf[js.Any])
     

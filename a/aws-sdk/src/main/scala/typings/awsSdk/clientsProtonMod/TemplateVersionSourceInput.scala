@@ -18,7 +18,8 @@ object TemplateVersionSourceInput {
     __obj.asInstanceOf[TemplateVersionSourceInput]
   }
   
-  extension [Self <: TemplateVersionSourceInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateVersionSourceInput] (val x: Self) extends AnyVal {
     
     inline def setS3(value: S3ObjectSource): Self = StObject.set(x, "s3", value.asInstanceOf[js.Any])
     

@@ -44,7 +44,8 @@ object SignedDataBlockObject {
     __obj.asInstanceOf[SignedDataBlockObject]
   }
   
-  extension [Self <: SignedDataBlockObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignedDataBlockObject] (val x: Self) extends AnyVal {
     
     inline def setCaption(value: String): Self = StObject.set(x, "Caption", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object SettlementTransactionAmount {
     __obj.asInstanceOf[SettlementTransactionAmount]
   }
   
-  extension [Self <: SettlementTransactionAmount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementTransactionAmount] (val x: Self) extends AnyVal {
     
     inline def setCommission(value: SettlementTransactionAmountCommission): Self = StObject.set(x, "commission", value.asInstanceOf[js.Any])
     

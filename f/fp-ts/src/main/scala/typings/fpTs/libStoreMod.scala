@@ -185,7 +185,8 @@ object libStoreMod {
       __obj.asInstanceOf[Store_[S, A]]
     }
     
-    extension [Self <: Store_[?, ?], S, A](x: Self & (Store_[S, A])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Store_[?, ?], S, A] (val x: Self & (Store_[S, A])) extends AnyVal {
       
       inline def setPeek(value: S => A): Self = StObject.set(x, "peek", js.Any.fromFunction1(value))
       

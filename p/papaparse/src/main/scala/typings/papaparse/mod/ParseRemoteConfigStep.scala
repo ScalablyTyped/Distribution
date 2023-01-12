@@ -20,7 +20,8 @@ object ParseRemoteConfigStep {
     __obj.asInstanceOf[ParseRemoteConfigStep[T]]
   }
   
-  extension [Self <: ParseRemoteConfigStep[?], T](x: Self & ParseRemoteConfigStep[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParseRemoteConfigStep[?], T] (val x: Self & ParseRemoteConfigStep[T]) extends AnyVal {
     
     inline def setStep(value: (ParseStepResult[T], Parser) => Unit): Self = StObject.set(x, "step", js.Any.fromFunction2(value))
   }

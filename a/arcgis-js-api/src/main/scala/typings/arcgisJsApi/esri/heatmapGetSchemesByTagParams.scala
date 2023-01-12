@@ -43,7 +43,8 @@ object heatmapGetSchemesByTagParams {
     __obj.asInstanceOf[heatmapGetSchemesByTagParams]
   }
   
-  extension [Self <: heatmapGetSchemesByTagParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: heatmapGetSchemesByTagParams] (val x: Self) extends AnyVal {
     
     inline def setBasemap(value: String | Basemap): Self = StObject.set(x, "basemap", value.asInstanceOf[js.Any])
     

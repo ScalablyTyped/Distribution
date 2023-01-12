@@ -36,7 +36,8 @@ object AdUnit {
     __obj.asInstanceOf[AdUnit]
   }
   
-  extension [Self <: AdUnit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AdUnit] (val x: Self) extends AnyVal {
     
     inline def setAdFormat(value: String): Self = StObject.set(x, "adFormat", value.asInstanceOf[js.Any])
     

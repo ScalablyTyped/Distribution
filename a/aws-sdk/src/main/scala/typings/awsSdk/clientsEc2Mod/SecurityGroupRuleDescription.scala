@@ -23,7 +23,8 @@ object SecurityGroupRuleDescription {
     __obj.asInstanceOf[SecurityGroupRuleDescription]
   }
   
-  extension [Self <: SecurityGroupRuleDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGroupRuleDescription] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

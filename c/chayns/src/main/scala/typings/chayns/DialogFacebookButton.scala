@@ -17,7 +17,8 @@ object DialogFacebookButton {
     __obj.asInstanceOf[DialogFacebookButton]
   }
   
-  extension [Self <: DialogFacebookButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogFacebookButton] (val x: Self) extends AnyVal {
     
     inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
     

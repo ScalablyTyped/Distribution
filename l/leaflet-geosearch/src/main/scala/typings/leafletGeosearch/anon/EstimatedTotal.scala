@@ -18,7 +18,8 @@ object EstimatedTotal {
     __obj.asInstanceOf[EstimatedTotal]
   }
   
-  extension [Self <: EstimatedTotal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EstimatedTotal] (val x: Self) extends AnyVal {
     
     inline def setEstimatedTotal(value: Double): Self = StObject.set(x, "estimatedTotal", value.asInstanceOf[js.Any])
     

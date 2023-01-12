@@ -24,7 +24,8 @@ object PragmaDirective {
     __obj.asInstanceOf[PragmaDirective]
   }
   
-  extension [Self <: PragmaDirective](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PragmaDirective] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -84,7 +84,8 @@ object SchedulerView {
     __obj.asInstanceOf[SchedulerView]
   }
   
-  extension [Self <: SchedulerView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchedulerView] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveSlotHeight(value: Boolean): Self = StObject.set(x, "adaptiveSlotHeight", value.asInstanceOf[js.Any])
     

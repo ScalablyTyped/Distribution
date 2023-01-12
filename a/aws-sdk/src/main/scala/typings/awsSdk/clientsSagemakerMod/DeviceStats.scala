@@ -23,7 +23,8 @@ object DeviceStats {
     __obj.asInstanceOf[DeviceStats]
   }
   
-  extension [Self <: DeviceStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceStats] (val x: Self) extends AnyVal {
     
     inline def setConnectedDeviceCount(value: Long): Self = StObject.set(x, "ConnectedDeviceCount", value.asInstanceOf[js.Any])
     

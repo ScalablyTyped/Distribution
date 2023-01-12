@@ -20,7 +20,8 @@ object ModulesArguments {
     __obj.asInstanceOf[ModulesArguments]
   }
   
-  extension [Self <: ModulesArguments](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModulesArguments] (val x: Self) extends AnyVal {
     
     inline def setModuleCount(value: Double): Self = StObject.set(x, "moduleCount", value.asInstanceOf[js.Any])
     

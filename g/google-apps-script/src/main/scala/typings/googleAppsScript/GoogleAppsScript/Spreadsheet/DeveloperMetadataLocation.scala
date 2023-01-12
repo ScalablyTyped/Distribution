@@ -32,7 +32,8 @@ object DeveloperMetadataLocation {
     __obj.asInstanceOf[DeveloperMetadataLocation]
   }
   
-  extension [Self <: DeveloperMetadataLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeveloperMetadataLocation] (val x: Self) extends AnyVal {
     
     inline def setGetColumn(value: () => Range | Null): Self = StObject.set(x, "getColumn", js.Any.fromFunction0(value))
     

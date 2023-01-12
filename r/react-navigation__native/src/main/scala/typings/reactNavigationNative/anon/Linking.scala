@@ -16,7 +16,8 @@ object Linking {
     __obj.asInstanceOf[Linking]
   }
   
-  extension [Self <: Linking](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Linking] (val x: Self) extends AnyVal {
     
     inline def setLinking(value: LinkingOptions[Any]): Self = StObject.set(x, "linking", value.asInstanceOf[js.Any])
   }

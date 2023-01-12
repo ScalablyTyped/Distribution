@@ -22,7 +22,8 @@ object DeleteQueueItemsRequest {
     __obj.asInstanceOf[DeleteQueueItemsRequest]
   }
   
-  extension [Self <: DeleteQueueItemsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteQueueItemsRequest] (val x: Self) extends AnyVal {
     
     inline def setConnectorName(value: String): Self = StObject.set(x, "connectorName", value.asInstanceOf[js.Any])
     

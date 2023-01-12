@@ -38,7 +38,8 @@ object ApproximateReportedProgress {
     __obj.asInstanceOf[ApproximateReportedProgress]
   }
   
-  extension [Self <: ApproximateReportedProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApproximateReportedProgress] (val x: Self) extends AnyVal {
     
     inline def setConsumedParallelism(value: ReportedParallelism): Self = StObject.set(x, "consumedParallelism", value.asInstanceOf[js.Any])
     

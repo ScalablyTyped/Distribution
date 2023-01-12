@@ -23,7 +23,8 @@ object ListFunctionDefinitionsResponse {
     __obj.asInstanceOf[ListFunctionDefinitionsResponse]
   }
   
-  extension [Self <: ListFunctionDefinitionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListFunctionDefinitionsResponse] (val x: Self) extends AnyVal {
     
     inline def setDefinitions(value: listOfDefinitionInformation): Self = StObject.set(x, "Definitions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object QueryDslScriptQuery {
     __obj.asInstanceOf[QueryDslScriptQuery]
   }
   
-  extension [Self <: QueryDslScriptQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslScriptQuery] (val x: Self) extends AnyVal {
     
     inline def setScript(value: Script): Self = StObject.set(x, "script", value.asInstanceOf[js.Any])
   }

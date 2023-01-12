@@ -59,7 +59,8 @@ object NetworkProperties {
     __obj.asInstanceOf[NetworkProperties]
   }
   
-  extension [Self <: NetworkProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkProperties] (val x: Self) extends AnyVal {
     
     inline def setDataElement(value: Any): Self = StObject.set(x, "dataElement", value.asInstanceOf[js.Any])
     

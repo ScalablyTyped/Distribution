@@ -19,7 +19,8 @@ object distClientModelsClientDefaultResponseMod {
       __obj.asInstanceOf[DefaultResponse]
     }
     
-    extension [Self <: DefaultResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultResponse] (val x: Self) extends AnyVal {
       
       inline def setErrorCode(value: Double): Self = StObject.set(x, "ErrorCode", value.asInstanceOf[js.Any])
       

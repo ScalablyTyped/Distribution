@@ -23,7 +23,8 @@ object ThreadMember {
     __obj.asInstanceOf[ThreadMember]
   }
   
-  extension [Self <: ThreadMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThreadMember] (val x: Self) extends AnyVal {
     
     inline def setUpn(value: String): Self = StObject.set(x, "upn", value.asInstanceOf[js.Any])
   }

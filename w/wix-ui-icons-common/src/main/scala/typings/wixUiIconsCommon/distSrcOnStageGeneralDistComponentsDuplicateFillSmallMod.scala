@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsDuplicateFillSmallMod extends Shortcut
       __obj.asInstanceOf[DuplicateFillSmallProps]
     }
     
-    extension [Self <: DuplicateFillSmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DuplicateFillSmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

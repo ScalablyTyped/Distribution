@@ -32,7 +32,8 @@ object distSrcModulesUiLoadingCoverTypesMod {
       __obj.asInstanceOf[ILoadingCover]
     }
     
-    extension [Self <: ILoadingCover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoadingCover] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
@@ -61,7 +62,8 @@ object distSrcModulesUiLoadingCoverTypesMod {
       __obj.asInstanceOf[ILoadingCoverViewStyles]
     }
     
-    extension [Self <: ILoadingCoverViewStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoadingCoverViewStyles] (val x: Self) extends AnyVal {
       
       inline def setHidden(value: String): Self = StObject.set(x, "hidden", value.asInstanceOf[js.Any])
       

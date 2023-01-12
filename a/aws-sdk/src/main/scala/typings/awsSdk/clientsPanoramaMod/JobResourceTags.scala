@@ -23,7 +23,8 @@ object JobResourceTags {
     __obj.asInstanceOf[JobResourceTags]
   }
   
-  extension [Self <: JobResourceTags](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobResourceTags] (val x: Self) extends AnyVal {
     
     inline def setResourceType(value: JobResourceType): Self = StObject.set(x, "ResourceType", value.asInstanceOf[js.Any])
     

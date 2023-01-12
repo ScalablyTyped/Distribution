@@ -19,7 +19,8 @@ object Azimuth {
     __obj.asInstanceOf[Azimuth]
   }
   
-  extension [Self <: Azimuth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Azimuth] (val x: Self) extends AnyVal {
     
     inline def setAzimuth(value: Double): Self = StObject.set(x, "azimuth", value.asInstanceOf[js.Any])
     

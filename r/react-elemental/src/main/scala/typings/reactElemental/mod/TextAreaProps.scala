@@ -712,7 +712,8 @@ object TextAreaProps {
     __obj.asInstanceOf[TextAreaProps]
   }
   
-  extension [Self <: TextAreaProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextAreaProps] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

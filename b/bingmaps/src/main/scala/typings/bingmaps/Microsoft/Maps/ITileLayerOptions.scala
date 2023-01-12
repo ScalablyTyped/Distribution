@@ -40,7 +40,8 @@ object ITileLayerOptions {
     __obj.asInstanceOf[ITileLayerOptions]
   }
   
-  extension [Self <: ITileLayerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITileLayerOptions] (val x: Self) extends AnyVal {
     
     inline def setDownloadTimeout(value: Double): Self = StObject.set(x, "downloadTimeout", value.asInstanceOf[js.Any])
     

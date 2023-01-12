@@ -23,7 +23,8 @@ object ExecutionTimeFilter {
     __obj.asInstanceOf[ExecutionTimeFilter]
   }
   
-  extension [Self <: ExecutionTimeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionTimeFilter] (val x: Self) extends AnyVal {
     
     inline def setLatestDate(value: js.Date): Self = StObject.set(x, "latestDate", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object GridColumnHideEvent {
     __obj.asInstanceOf[GridColumnHideEvent]
   }
   
-  extension [Self <: GridColumnHideEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GridColumnHideEvent] (val x: Self) extends AnyVal {
     
     inline def setColumn(value: Any): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GetPatchBaselineForPatchGroupResult {
     __obj.asInstanceOf[GetPatchBaselineForPatchGroupResult]
   }
   
-  extension [Self <: GetPatchBaselineForPatchGroupResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetPatchBaselineForPatchGroupResult] (val x: Self) extends AnyVal {
     
     inline def setBaselineId(value: BaselineId): Self = StObject.set(x, "BaselineId", value.asInstanceOf[js.Any])
     

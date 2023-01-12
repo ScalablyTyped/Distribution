@@ -50,7 +50,8 @@ object DescribeInternetGatewaysR {
     __obj.asInstanceOf[DescribeInternetGatewaysR]
   }
   
-  extension [Self <: DescribeInternetGatewaysR](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInternetGatewaysR] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

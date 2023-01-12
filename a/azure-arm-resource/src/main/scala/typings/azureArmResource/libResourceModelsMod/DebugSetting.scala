@@ -23,7 +23,8 @@ object DebugSetting {
     __obj.asInstanceOf[DebugSetting]
   }
   
-  extension [Self <: DebugSetting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DebugSetting] (val x: Self) extends AnyVal {
     
     inline def setDetailLevel(value: String): Self = StObject.set(x, "detailLevel", value.asInstanceOf[js.Any])
     

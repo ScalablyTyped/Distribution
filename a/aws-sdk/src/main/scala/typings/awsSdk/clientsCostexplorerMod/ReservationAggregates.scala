@@ -98,7 +98,8 @@ object ReservationAggregates {
     __obj.asInstanceOf[ReservationAggregates]
   }
   
-  extension [Self <: ReservationAggregates](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReservationAggregates] (val x: Self) extends AnyVal {
     
     inline def setAmortizedRecurringFee(value: AmortizedRecurringFee): Self = StObject.set(x, "AmortizedRecurringFee", value.asInstanceOf[js.Any])
     

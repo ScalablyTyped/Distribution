@@ -667,7 +667,8 @@ object ojlistviewMod {
         __obj.asInstanceOf[ContextByNode[K]]
       }
       
-      extension [Self <: ContextByNode[?], K](x: Self & ContextByNode[K]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ContextByNode[?], K] (val x: Self & ContextByNode[K]) extends AnyVal {
         
         inline def setGroup(value: Boolean): Self = StObject.set(x, "group", value.asInstanceOf[js.Any])
         
@@ -711,7 +712,8 @@ object ojlistviewMod {
         __obj.asInstanceOf[ItemContext[K, D]]
       }
       
-      extension [Self <: ItemContext[?, ?], K, D](x: Self & (ItemContext[K, D])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemContext[?, ?], K, D] (val x: Self & (ItemContext[K, D])) extends AnyVal {
         
         inline def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
         
@@ -753,7 +755,8 @@ object ojlistviewMod {
         __obj.asInstanceOf[ItemsDropContext]
       }
       
-      extension [Self <: ItemsDropContext](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ItemsDropContext] (val x: Self) extends AnyVal {
         
         inline def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
         
@@ -978,7 +981,8 @@ object ojlistviewMod {
       __obj.asInstanceOf[ojListViewEventMap[K, D]]
     }
     
-    extension [Self <: ojListViewEventMap[?, ?], K, D](x: Self & (ojListViewEventMap[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojListViewEventMap[?, ?], K, D] (val x: Self & (ojListViewEventMap[K, D])) extends AnyVal {
       
       inline def setAsChanged(value: JetElementCustomEvent[String]): Self = StObject.set(x, "asChanged", value.asInstanceOf[js.Any])
       
@@ -1095,7 +1099,8 @@ object ojlistviewMod {
       __obj.asInstanceOf[ojListViewSettableProperties[K, D]]
     }
     
-    extension [Self <: ojListViewSettableProperties[?, ?], K, D](x: Self & (ojListViewSettableProperties[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojListViewSettableProperties[?, ?], K, D] (val x: Self & (ojListViewSettableProperties[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       
@@ -1177,7 +1182,8 @@ object ojlistviewMod {
       __obj.asInstanceOf[ojListViewSettablePropertiesLenient[K, D]]
     }
     
-    extension [Self <: ojListViewSettablePropertiesLenient[?, ?], K, D](x: Self & (ojListViewSettablePropertiesLenient[K, D])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ojListViewSettablePropertiesLenient[?, ?], K, D] (val x: Self & (ojListViewSettablePropertiesLenient[K, D])) extends AnyVal {
       
       inline def setAs(value: String): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

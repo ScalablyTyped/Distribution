@@ -17,7 +17,8 @@ object HoldOptions {
     __obj.asInstanceOf[HoldOptions]
   }
   
-  extension [Self <: HoldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HoldOptions] (val x: Self) extends AnyVal {
     
     inline def setUseUpdate(value: Boolean): Self = StObject.set(x, "useUpdate", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ArtistsTopTracksResponse {
     __obj.asInstanceOf[ArtistsTopTracksResponse]
   }
   
-  extension [Self <: ArtistsTopTracksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArtistsTopTracksResponse] (val x: Self) extends AnyVal {
     
     inline def setTracks(value: js.Array[TrackObjectFull]): Self = StObject.set(x, "tracks", value.asInstanceOf[js.Any])
     

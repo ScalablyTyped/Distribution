@@ -18,7 +18,8 @@ object DescribeAvailabilityOptionsResponse {
     __obj.asInstanceOf[DescribeAvailabilityOptionsResponse]
   }
   
-  extension [Self <: DescribeAvailabilityOptionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAvailabilityOptionsResponse] (val x: Self) extends AnyVal {
     
     inline def setAvailabilityOptions(value: AvailabilityOptionsStatus): Self = StObject.set(x, "AvailabilityOptions", value.asInstanceOf[js.Any])
     

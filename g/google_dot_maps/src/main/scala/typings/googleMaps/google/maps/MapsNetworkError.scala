@@ -35,7 +35,8 @@ object MapsNetworkError {
     __obj.asInstanceOf[MapsNetworkError]
   }
   
-  extension [Self <: MapsNetworkError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MapsNetworkError] (val x: Self) extends AnyVal {
     
     inline def setCode(
       value: DirectionsStatus | DistanceMatrixStatus | ElevationStatus | GeocoderStatus | MaxZoomStatus | PlacesServiceStatus | StreetViewStatus

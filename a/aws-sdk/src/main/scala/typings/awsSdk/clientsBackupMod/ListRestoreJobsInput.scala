@@ -53,7 +53,8 @@ object ListRestoreJobsInput {
     __obj.asInstanceOf[ListRestoreJobsInput]
   }
   
-  extension [Self <: ListRestoreJobsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListRestoreJobsInput] (val x: Self) extends AnyVal {
     
     inline def setByAccountId(value: AccountId): Self = StObject.set(x, "ByAccountId", value.asInstanceOf[js.Any])
     

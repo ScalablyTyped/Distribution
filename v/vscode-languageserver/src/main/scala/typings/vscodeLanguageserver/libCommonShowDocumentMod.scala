@@ -25,7 +25,8 @@ object libCommonShowDocumentMod {
       __obj.asInstanceOf[ShowDocumentFeatureShape]
     }
     
-    extension [Self <: ShowDocumentFeatureShape](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ShowDocumentFeatureShape] (val x: Self) extends AnyVal {
       
       inline def setShowDocument(value: ShowDocumentParams => js.Promise[ShowDocumentResult]): Self = StObject.set(x, "showDocument", js.Any.fromFunction1(value))
     }

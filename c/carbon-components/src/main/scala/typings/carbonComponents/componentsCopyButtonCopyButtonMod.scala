@@ -51,7 +51,8 @@ object componentsCopyButtonCopyButtonMod {
       __obj.asInstanceOf[CopyButton]
     }
     
-    extension [Self <: CopyButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyButton] (val x: Self) extends AnyVal {
       
       inline def setHandleAnimationEnd(value: AnimationEvent => Unit): Self = StObject.set(x, "handleAnimationEnd", js.Any.fromFunction1(value))
       
@@ -90,7 +91,8 @@ object componentsCopyButtonCopyButtonMod {
       __obj.asInstanceOf[CopyButtonOptions]
     }
     
-    extension [Self <: CopyButtonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CopyButtonOptions] (val x: Self) extends AnyVal {
       
       inline def setClassAnimating(value: String): Self = StObject.set(x, "classAnimating", value.asInstanceOf[js.Any])
       

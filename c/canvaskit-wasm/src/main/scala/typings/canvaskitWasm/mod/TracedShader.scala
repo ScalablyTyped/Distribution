@@ -17,7 +17,8 @@ object TracedShader {
     __obj.asInstanceOf[TracedShader]
   }
   
-  extension [Self <: TracedShader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TracedShader] (val x: Self) extends AnyVal {
     
     inline def setDebugTrace(value: DebugTrace): Self = StObject.set(x, "debugTrace", value.asInstanceOf[js.Any])
     

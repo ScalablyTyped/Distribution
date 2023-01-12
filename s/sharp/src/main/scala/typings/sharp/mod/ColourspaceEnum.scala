@@ -24,7 +24,8 @@ object ColourspaceEnum {
     __obj.asInstanceOf[ColourspaceEnum]
   }
   
-  extension [Self <: ColourspaceEnum](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColourspaceEnum] (val x: Self) extends AnyVal {
     
     inline def `setB-w`(value: String): Self = StObject.set(x, "b-w", value.asInstanceOf[js.Any])
     

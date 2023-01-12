@@ -90,7 +90,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[Api08]
     }
     
-    extension [Self <: Api08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api08] (val x: Self) extends AnyVal {
       
       inline def setBaseUri(value: String): Self = StObject.set(x, "baseUri", value.asInstanceOf[js.Any])
       
@@ -181,7 +182,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[DocumentationItem08]
     }
     
-    extension [Self <: DocumentationItem08](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentationItem08] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -222,7 +224,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[Error]
     }
     
-    extension [Self <: Error](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Error] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -268,7 +271,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[ErrorPosition]
     }
     
-    extension [Self <: ErrorPosition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorPosition] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: Double): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -291,7 +295,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[ErrorRange]
     }
     
-    extension [Self <: ErrorRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorRange] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: ErrorPosition): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -314,7 +319,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[GlobalSchema]
     }
     
-    extension [Self <: GlobalSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlobalSchema] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -342,7 +348,8 @@ object distTypingsNewFormatSpec0Dot8ApiMod {
       __obj.asInstanceOf[RAML08ParseResult]
     }
     
-    extension [Self <: RAML08ParseResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RAML08ParseResult] (val x: Self) extends AnyVal {
       
       inline def setErrors(value: js.Array[Error]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
       

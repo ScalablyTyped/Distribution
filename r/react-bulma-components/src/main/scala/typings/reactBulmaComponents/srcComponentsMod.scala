@@ -156,7 +156,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[ColorProps]
     }
     
-    extension [Self <: ColorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       
@@ -224,7 +225,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[FlexboxProps]
     }
     
-    extension [Self <: FlexboxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexboxProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: `flex-start` | `flex-end` | center | `space-around` | `space-between` | `space-evenly` | stretch | start | end | baseline
@@ -290,7 +292,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[HelperProps]
     }
     
-    extension [Self <: HelperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HelperProps] (val x: Self) extends AnyVal {
       
       inline def setClearfix(value: Boolean): Self = StObject.set(x, "clearfix", value.asInstanceOf[js.Any])
       
@@ -388,7 +391,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[ResponsiveModifiers]
     }
     
-    extension [Self <: ResponsiveModifiers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveModifiers] (val x: Self) extends AnyVal {
       
       inline def setDisplay(value: DisplayModifier): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
       
@@ -435,7 +439,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[ResponsiveProps]
     }
     
-    extension [Self <: ResponsiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveProps] (val x: Self) extends AnyVal {
       
       inline def setDesktop(value: ResponsiveModifiersonlyBo): Self = StObject.set(x, "desktop", value.asInstanceOf[js.Any])
       
@@ -520,7 +525,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[SpacingProps]
     }
     
-    extension [Self <: SpacingProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpacingProps] (val x: Self) extends AnyVal {
       
       inline def setM(value: SpacingSize): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
       
@@ -614,7 +620,8 @@ object srcComponentsMod {
       __obj.asInstanceOf[TypographyProps]
     }
     
-    extension [Self <: TypographyProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TypographyProps] (val x: Self) extends AnyVal {
       
       inline def setItalic(value: Boolean): Self = StObject.set(x, "italic", value.asInstanceOf[js.Any])
       

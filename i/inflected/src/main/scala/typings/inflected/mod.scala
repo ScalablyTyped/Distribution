@@ -66,7 +66,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Humanize]
       }
       
-      extension [Self <: Humanize](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Humanize] (val x: Self) extends AnyVal {
         
         inline def setCapitalize(value: Boolean): Self = StObject.set(x, "capitalize", value.asInstanceOf[js.Any])
       }
@@ -83,7 +84,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Parameterize]
       }
       
-      extension [Self <: Parameterize](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Parameterize] (val x: Self) extends AnyVal {
         
         inline def setSeparator(value: String): Self = StObject.set(x, "separator", value.asInstanceOf[js.Any])
       }
@@ -102,7 +104,8 @@ object mod extends Shortcut {
         __obj.asInstanceOf[Transliterate]
       }
       
-      extension [Self <: Transliterate](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Transliterate] (val x: Self) extends AnyVal {
         
         inline def setLocale(value: String): Self = StObject.set(x, "locale", value.asInstanceOf[js.Any])
         

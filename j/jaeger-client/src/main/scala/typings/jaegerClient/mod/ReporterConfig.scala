@@ -31,7 +31,8 @@ object ReporterConfig {
     __obj.asInstanceOf[ReporterConfig]
   }
   
-  extension [Self <: ReporterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReporterConfig] (val x: Self) extends AnyVal {
     
     inline def setAgentHost(value: String): Self = StObject.set(x, "agentHost", value.asInstanceOf[js.Any])
     

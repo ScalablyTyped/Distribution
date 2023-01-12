@@ -1071,7 +1071,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonAnchorProps]
     }
     
-    extension [Self <: ButtonAnchorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonAnchorProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1894,7 +1895,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonBaseIsolatedProps]
     }
     
-    extension [Self <: ButtonBaseIsolatedProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonBaseIsolatedProps] (val x: Self) extends AnyVal {
       
       inline def setDangerDescription(value: String): Self = StObject.set(x, "dangerDescription", value.asInstanceOf[js.Any])
       
@@ -1955,7 +1957,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonBaseProps]
     }
     
-    extension [Self <: ButtonBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonBaseProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -2305,7 +2308,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonDefaultProps]
     }
     
-    extension [Self <: ButtonDefaultProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonDefaultProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -2902,7 +2906,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonKindProps]
     }
     
-    extension [Self <: ButtonKindProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonKindProps] (val x: Self) extends AnyVal {
       
       inline def setKind(value: ButtonKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
       
@@ -2927,7 +2932,8 @@ object libComponentsButtonButtonMod {
       __obj.asInstanceOf[ButtonRenderIconRenderProps]
     }
     
-    extension [Self <: ButtonRenderIconRenderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ButtonRenderIconRenderProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-hidden`(value: Boolean): Self = StObject.set(x, "aria-hidden", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object PersonalApplicationPolicy {
     __obj.asInstanceOf[PersonalApplicationPolicy]
   }
   
-  extension [Self <: PersonalApplicationPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PersonalApplicationPolicy] (val x: Self) extends AnyVal {
     
     inline def setInstallType(value: String): Self = StObject.set(x, "installType", value.asInstanceOf[js.Any])
     

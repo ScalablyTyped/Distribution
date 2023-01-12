@@ -28,7 +28,8 @@ object ReactionForComment {
     __obj.asInstanceOf[ReactionForComment]
   }
   
-  extension [Self <: ReactionForComment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactionForComment] (val x: Self) extends AnyVal {
     
     inline def setReaction(value: ReactionValueFormats): Self = StObject.set(x, "reaction", value.asInstanceOf[js.Any])
     

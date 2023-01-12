@@ -18,7 +18,8 @@ object ChildrenJSXChildren {
     __obj.asInstanceOf[ChildrenJSXChildren]
   }
   
-  extension [Self <: ChildrenJSXChildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChildrenJSXChildren] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: JSXChildren[Widget[Any]]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object ConditionalAccessUsers {
     __obj.asInstanceOf[ConditionalAccessUsers]
   }
   
-  extension [Self <: ConditionalAccessUsers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConditionalAccessUsers] (val x: Self) extends AnyVal {
     
     inline def setExcludeGroups(value: js.Array[String]): Self = StObject.set(x, "excludeGroups", value.asInstanceOf[js.Any])
     

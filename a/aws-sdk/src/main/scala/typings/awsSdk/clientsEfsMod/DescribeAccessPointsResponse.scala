@@ -23,7 +23,8 @@ object DescribeAccessPointsResponse {
     __obj.asInstanceOf[DescribeAccessPointsResponse]
   }
   
-  extension [Self <: DescribeAccessPointsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeAccessPointsResponse] (val x: Self) extends AnyVal {
     
     inline def setAccessPoints(value: AccessPointDescriptions): Self = StObject.set(x, "AccessPoints", value.asInstanceOf[js.Any])
     

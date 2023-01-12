@@ -58,7 +58,8 @@ object mod {
       __obj.asInstanceOf[CheckBoxProps]
     }
     
-    extension [Self <: CheckBoxProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckBoxProps] (val x: Self) extends AnyVal {
       
       inline def setCheckBoxColor(value: String): Self = StObject.set(x, "checkBoxColor", value.asInstanceOf[js.Any])
       

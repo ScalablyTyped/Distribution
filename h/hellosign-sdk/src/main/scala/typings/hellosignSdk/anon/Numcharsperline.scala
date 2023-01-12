@@ -17,7 +17,8 @@ object Numcharsperline {
     __obj.asInstanceOf[Numcharsperline]
   }
   
-  extension [Self <: Numcharsperline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Numcharsperline] (val x: Self) extends AnyVal {
     
     inline def setNum_chars_per_line(value: Double): Self = StObject.set(x, "num_chars_per_line", value.asInstanceOf[js.Any])
     

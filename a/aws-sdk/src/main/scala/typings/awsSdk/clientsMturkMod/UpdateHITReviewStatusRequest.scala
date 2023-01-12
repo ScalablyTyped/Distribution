@@ -23,7 +23,8 @@ object UpdateHITReviewStatusRequest {
     __obj.asInstanceOf[UpdateHITReviewStatusRequest]
   }
   
-  extension [Self <: UpdateHITReviewStatusRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateHITReviewStatusRequest] (val x: Self) extends AnyVal {
     
     inline def setHITId(value: EntityId): Self = StObject.set(x, "HITId", value.asInstanceOf[js.Any])
     

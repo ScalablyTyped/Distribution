@@ -39,7 +39,8 @@ object ITabsOptions {
     __obj.asInstanceOf[ITabsOptions]
   }
   
-  extension [Self <: ITabsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITabsOptions] (val x: Self) extends AnyVal {
     
     inline def setActiveCollapse(value: Boolean): Self = StObject.set(x, "activeCollapse", value.asInstanceOf[js.Any])
     

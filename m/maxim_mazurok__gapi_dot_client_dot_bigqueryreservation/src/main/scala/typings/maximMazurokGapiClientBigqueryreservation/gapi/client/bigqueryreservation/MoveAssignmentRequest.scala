@@ -16,7 +16,8 @@ object MoveAssignmentRequest {
     __obj.asInstanceOf[MoveAssignmentRequest]
   }
   
-  extension [Self <: MoveAssignmentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoveAssignmentRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationId(value: String): Self = StObject.set(x, "destinationId", value.asInstanceOf[js.Any])
     

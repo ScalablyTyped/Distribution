@@ -20,7 +20,8 @@ object OperationCompletedEventArgs {
     __obj.asInstanceOf[OperationCompletedEventArgs]
   }
   
-  extension [Self <: OperationCompletedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationCompletedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAcceptedFormatId(value: Any): Self = StObject.set(x, "acceptedFormatId", value.asInstanceOf[js.Any])
     

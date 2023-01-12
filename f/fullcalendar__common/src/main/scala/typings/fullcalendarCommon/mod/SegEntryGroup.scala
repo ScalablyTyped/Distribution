@@ -17,7 +17,8 @@ object SegEntryGroup {
     __obj.asInstanceOf[SegEntryGroup]
   }
   
-  extension [Self <: SegEntryGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegEntryGroup] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: js.Array[SegEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

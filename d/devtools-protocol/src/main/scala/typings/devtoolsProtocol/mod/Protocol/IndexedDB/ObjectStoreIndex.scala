@@ -33,7 +33,8 @@ object ObjectStoreIndex {
     __obj.asInstanceOf[ObjectStoreIndex]
   }
   
-  extension [Self <: ObjectStoreIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ObjectStoreIndex] (val x: Self) extends AnyVal {
     
     inline def setKeyPath(value: KeyPath): Self = StObject.set(x, "keyPath", value.asInstanceOf[js.Any])
     

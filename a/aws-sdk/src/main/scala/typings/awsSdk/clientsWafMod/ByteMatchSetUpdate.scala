@@ -23,7 +23,8 @@ object ByteMatchSetUpdate {
     __obj.asInstanceOf[ByteMatchSetUpdate]
   }
   
-  extension [Self <: ByteMatchSetUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ByteMatchSetUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

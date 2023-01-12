@@ -27,7 +27,8 @@ object ProximityMessage {
     __obj.asInstanceOf[ProximityMessage]
   }
   
-  extension [Self <: ProximityMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProximityMessage] (val x: Self) extends AnyVal {
     
     inline def setData(value: IBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

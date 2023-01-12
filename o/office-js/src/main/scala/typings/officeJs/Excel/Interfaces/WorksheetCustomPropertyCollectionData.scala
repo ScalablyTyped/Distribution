@@ -16,7 +16,8 @@ object WorksheetCustomPropertyCollectionData {
     __obj.asInstanceOf[WorksheetCustomPropertyCollectionData]
   }
   
-  extension [Self <: WorksheetCustomPropertyCollectionData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorksheetCustomPropertyCollectionData] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[WorksheetCustomPropertyData]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

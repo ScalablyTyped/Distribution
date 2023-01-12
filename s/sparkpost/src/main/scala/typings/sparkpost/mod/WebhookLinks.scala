@@ -16,7 +16,8 @@ object WebhookLinks {
     __obj.asInstanceOf[WebhookLinks]
   }
   
-  extension [Self <: WebhookLinks](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebhookLinks] (val x: Self) extends AnyVal {
     
     inline def setLinks(value: js.Array[Href]): Self = StObject.set(x, "links", value.asInstanceOf[js.Any])
     

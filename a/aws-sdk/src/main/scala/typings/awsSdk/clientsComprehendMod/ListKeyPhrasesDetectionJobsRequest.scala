@@ -28,7 +28,8 @@ object ListKeyPhrasesDetectionJobsRequest {
     __obj.asInstanceOf[ListKeyPhrasesDetectionJobsRequest]
   }
   
-  extension [Self <: ListKeyPhrasesDetectionJobsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListKeyPhrasesDetectionJobsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: KeyPhrasesDetectionJobFilter): Self = StObject.set(x, "Filter", value.asInstanceOf[js.Any])
     

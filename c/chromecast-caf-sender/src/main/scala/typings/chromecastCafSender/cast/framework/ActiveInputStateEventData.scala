@@ -18,7 +18,8 @@ object ActiveInputStateEventData {
     __obj.asInstanceOf[ActiveInputStateEventData]
   }
   
-  extension [Self <: ActiveInputStateEventData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveInputStateEventData] (val x: Self) extends AnyVal {
     
     inline def setActiveInputState(value: ActiveInputState): Self = StObject.set(x, "activeInputState", value.asInstanceOf[js.Any])
   }

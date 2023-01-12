@@ -40,7 +40,8 @@ object distPrefixFactoryMod {
       __obj.asInstanceOf[PrefixFactoryOptions]
     }
     
-    extension [Self <: PrefixFactoryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrefixFactoryOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: /* options */ PrefixTemplateOptions => String): Self = StObject.set(x, "level", js.Any.fromFunction1(value))
       
@@ -75,7 +76,8 @@ object distPrefixFactoryMod {
       __obj.asInstanceOf[PrefixTemplateOptions]
     }
     
-    extension [Self <: PrefixTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrefixTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
       

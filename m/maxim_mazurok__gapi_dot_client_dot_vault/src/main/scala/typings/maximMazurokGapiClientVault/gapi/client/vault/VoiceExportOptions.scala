@@ -16,7 +16,8 @@ object VoiceExportOptions {
     __obj.asInstanceOf[VoiceExportOptions]
   }
   
-  extension [Self <: VoiceExportOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoiceExportOptions] (val x: Self) extends AnyVal {
     
     inline def setExportFormat(value: String): Self = StObject.set(x, "exportFormat", value.asInstanceOf[js.Any])
     

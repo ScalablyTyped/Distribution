@@ -23,7 +23,8 @@ object GetSavedFileListSuccess {
     __obj.asInstanceOf[GetSavedFileListSuccess]
   }
   
-  extension [Self <: GetSavedFileListSuccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSavedFileListSuccess] (val x: Self) extends AnyVal {
     
     inline def setErrMsg(value: Double): Self = StObject.set(x, "errMsg", value.asInstanceOf[js.Any])
     

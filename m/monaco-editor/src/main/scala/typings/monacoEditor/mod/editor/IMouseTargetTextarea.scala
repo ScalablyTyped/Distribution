@@ -26,7 +26,8 @@ object IMouseTargetTextarea {
     __obj.asInstanceOf[IMouseTargetTextarea]
   }
   
-  extension [Self <: IMouseTargetTextarea](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMouseTargetTextarea] (val x: Self) extends AnyVal {
     
     inline def setPosition(value: Null): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
     

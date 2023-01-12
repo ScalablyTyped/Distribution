@@ -274,7 +274,8 @@ object distTypesComponentsMod {
         __obj.asInstanceOf[HTMLElementTagNameMap]
       }
       
-      extension [Self <: HTMLElementTagNameMap](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: HTMLElementTagNameMap] (val x: Self) extends AnyVal {
         
         inline def `setIon-icon`(value: HTMLIonIconElement): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
       }
@@ -443,7 +444,8 @@ object distTypesComponentsMod {
         __obj.asInstanceOf[IonIcon]
       }
       
-      extension [Self <: IonIcon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IonIcon] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -500,7 +502,8 @@ object distTypesComponentsMod {
         __obj.asInstanceOf[IntrinsicElements]
       }
       
-      extension [Self <: IntrinsicElements](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
         
         inline def `setIon-icon`(value: typings.ionicons.distTypesComponentsMod.LocalJSX.IonIcon): Self = StObject.set(x, "ion-icon", value.asInstanceOf[js.Any])
       }
@@ -571,7 +574,8 @@ object distTypesComponentsMod {
         __obj.asInstanceOf[typings.ionicons.distTypesComponentsMod.LocalJSX.IonIcon]
       }
       
-      extension [Self <: typings.ionicons.distTypesComponentsMod.LocalJSX.IonIcon](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.ionicons.distTypesComponentsMod.LocalJSX.IonIcon] (val x: Self) extends AnyVal {
         
         inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
         
@@ -639,7 +643,8 @@ object distTypesComponentsMod {
           __obj.asInstanceOf[IntrinsicElements]
         }
         
-        extension [Self <: IntrinsicElements](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IntrinsicElements] (val x: Self) extends AnyVal {
           
           inline def `setIon-icon`(
             value: typings.ionicons.distTypesComponentsMod.LocalJSX.IonIcon & HTMLAttributes[HTMLIonIconElement]

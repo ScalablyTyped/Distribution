@@ -60,7 +60,8 @@ object BaseChart {
       __obj.asInstanceOf[PointInteractionInfo]
     }
     
-    extension [Self <: PointInteractionInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PointInteractionInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: basePointObject): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -77,7 +78,8 @@ object BaseChart {
       __obj.asInstanceOf[TooltipInfo]
     }
     
-    extension [Self <: TooltipInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TooltipInfo] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: basePointObject | dxChartAnnotationConfig | Any): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
       

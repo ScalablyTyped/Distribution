@@ -33,7 +33,8 @@ object DescribeMaintenanceWindowsForTargetRequest {
     __obj.asInstanceOf[DescribeMaintenanceWindowsForTargetRequest]
   }
   
-  extension [Self <: DescribeMaintenanceWindowsForTargetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMaintenanceWindowsForTargetRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaintenanceWindowSearchMaxResults): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

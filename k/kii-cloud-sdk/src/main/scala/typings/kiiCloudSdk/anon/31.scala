@@ -18,7 +18,8 @@ object `31` {
     __obj.asInstanceOf[`31`[T]]
   }
   
-  extension [Self <: `31`[?], T](x: Self & `31`[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `31`[?], T] (val x: Self & `31`[T]) extends AnyVal {
     
     inline def setFailure(value: js.Error => Any): Self = StObject.set(x, "failure", js.Any.fromFunction1(value))
     

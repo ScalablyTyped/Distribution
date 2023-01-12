@@ -21,7 +21,8 @@ object typesQueueNameExistsMod {
       __obj.asInstanceOf[QueueNameExists]
     }
     
-    extension [Self <: QueueNameExists](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueNameExists] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueNameExists): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

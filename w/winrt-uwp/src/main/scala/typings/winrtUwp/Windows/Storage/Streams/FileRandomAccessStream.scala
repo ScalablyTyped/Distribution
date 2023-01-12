@@ -92,7 +92,8 @@ object FileRandomAccessStream {
     __obj.asInstanceOf[FileRandomAccessStream]
   }
   
-  extension [Self <: FileRandomAccessStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileRandomAccessStream] (val x: Self) extends AnyVal {
     
     inline def setCanRead(value: Boolean): Self = StObject.set(x, "canRead", value.asInstanceOf[js.Any])
     

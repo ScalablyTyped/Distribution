@@ -16,7 +16,8 @@ object SearchQualityMetadata {
     __obj.asInstanceOf[SearchQualityMetadata]
   }
   
-  extension [Self <: SearchQualityMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchQualityMetadata] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Double): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

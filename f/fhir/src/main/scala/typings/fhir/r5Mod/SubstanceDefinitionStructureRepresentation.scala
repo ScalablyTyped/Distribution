@@ -37,7 +37,8 @@ object SubstanceDefinitionStructureRepresentation {
     __obj.asInstanceOf[SubstanceDefinitionStructureRepresentation]
   }
   
-  extension [Self <: SubstanceDefinitionStructureRepresentation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubstanceDefinitionStructureRepresentation] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Reference): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

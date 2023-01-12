@@ -15,7 +15,8 @@ object QrResponse {
     __obj.asInstanceOf[QrResponse]
   }
   
-  extension [Self <: QrResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QrResponse] (val x: Self) extends AnyVal {
     
     inline def setImage(value: String): Self = StObject.set(x, "image", value.asInstanceOf[js.Any])
   }

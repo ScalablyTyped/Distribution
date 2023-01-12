@@ -18,7 +18,8 @@ object GetCompatibleVersionsResponse {
     __obj.asInstanceOf[GetCompatibleVersionsResponse]
   }
   
-  extension [Self <: GetCompatibleVersionsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCompatibleVersionsResponse] (val x: Self) extends AnyVal {
     
     inline def setCompatibleVersions(value: CompatibleVersionsList): Self = StObject.set(x, "CompatibleVersions", value.asInstanceOf[js.Any])
     

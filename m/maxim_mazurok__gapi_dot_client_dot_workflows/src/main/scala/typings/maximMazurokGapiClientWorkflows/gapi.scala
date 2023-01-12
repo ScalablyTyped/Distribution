@@ -36,7 +36,8 @@ object gapi {
           __obj.asInstanceOf[ListLocationsResponse]
         }
         
-        extension [Self <: ListLocationsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListLocationsResponse] (val x: Self) extends AnyVal {
           
           inline def setLocations(value: js.Array[Location]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
           
@@ -65,7 +66,8 @@ object gapi {
           __obj.asInstanceOf[ListOperationsResponse]
         }
         
-        extension [Self <: ListOperationsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListOperationsResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -97,7 +99,8 @@ object gapi {
           __obj.asInstanceOf[ListWorkflowsResponse]
         }
         
-        extension [Self <: ListWorkflowsResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ListWorkflowsResponse] (val x: Self) extends AnyVal {
           
           inline def setNextPageToken(value: String): Self = StObject.set(x, "nextPageToken", value.asInstanceOf[js.Any])
           
@@ -145,7 +148,8 @@ object gapi {
           __obj.asInstanceOf[Location]
         }
         
-        extension [Self <: Location](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Location] (val x: Self) extends AnyVal {
           
           inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
           
@@ -227,7 +231,8 @@ object gapi {
           __obj.asInstanceOf[Operation]
         }
         
-        extension [Self <: Operation](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Operation] (val x: Self) extends AnyVal {
           
           inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
           
@@ -279,7 +284,8 @@ object gapi {
           __obj.asInstanceOf[OperationMetadata]
         }
         
-        extension [Self <: OperationMetadata](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: OperationMetadata] (val x: Self) extends AnyVal {
           
           inline def setApiVersion(value: String): Self = StObject.set(x, "apiVersion", value.asInstanceOf[js.Any])
           
@@ -338,7 +344,8 @@ object gapi {
           __obj.asInstanceOf[ProjectsResource]
         }
         
-        extension [Self <: ProjectsResource](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ProjectsResource] (val x: Self) extends AnyVal {
           
           inline def setLocations(value: LocationsResource): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
         }
@@ -369,7 +376,8 @@ object gapi {
           __obj.asInstanceOf[Status]
         }
         
-        extension [Self <: Status](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
           
           inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
           
@@ -446,7 +454,8 @@ object gapi {
           __obj.asInstanceOf[Workflow]
         }
         
-        extension [Self <: Workflow](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Workflow] (val x: Self) extends AnyVal {
           
           inline def setCreateTime(value: String): Self = StObject.set(x, "createTime", value.asInstanceOf[js.Any])
           

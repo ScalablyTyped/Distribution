@@ -22,7 +22,8 @@ object KeyOptions {
     __obj.asInstanceOf[KeyOptions]
   }
   
-  extension [Self <: KeyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyOptions] (val x: Self) extends AnyVal {
     
     inline def setComment(value: String): Self = StObject.set(x, "comment", value.asInstanceOf[js.Any])
     

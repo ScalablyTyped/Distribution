@@ -23,7 +23,8 @@ object UpdatePublicSharingSettingsResponse {
     __obj.asInstanceOf[UpdatePublicSharingSettingsResponse]
   }
   
-  extension [Self <: UpdatePublicSharingSettingsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdatePublicSharingSettingsResponse] (val x: Self) extends AnyVal {
     
     inline def setRequestId(value: String): Self = StObject.set(x, "RequestId", value.asInstanceOf[js.Any])
     

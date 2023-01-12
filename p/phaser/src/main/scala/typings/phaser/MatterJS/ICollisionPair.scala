@@ -62,7 +62,8 @@ object ICollisionPair {
     __obj.asInstanceOf[ICollisionPair]
   }
   
-  extension [Self <: ICollisionPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICollisionPair] (val x: Self) extends AnyVal {
     
     inline def setActiveContacts(value: js.Array[Vector]): Self = StObject.set(x, "activeContacts", value.asInstanceOf[js.Any])
     

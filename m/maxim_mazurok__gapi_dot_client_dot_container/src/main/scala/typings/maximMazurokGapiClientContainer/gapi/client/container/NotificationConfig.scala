@@ -16,7 +16,8 @@ object NotificationConfig {
     __obj.asInstanceOf[NotificationConfig]
   }
   
-  extension [Self <: NotificationConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationConfig] (val x: Self) extends AnyVal {
     
     inline def setPubsub(value: PubSub): Self = StObject.set(x, "pubsub", value.asInstanceOf[js.Any])
     

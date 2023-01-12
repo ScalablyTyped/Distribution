@@ -17,7 +17,8 @@ object ElementRects {
     __obj.asInstanceOf[ElementRects]
   }
   
-  extension [Self <: ElementRects](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementRects] (val x: Self) extends AnyVal {
     
     inline def setFloating(value: Rect): Self = StObject.set(x, "floating", value.asInstanceOf[js.Any])
     

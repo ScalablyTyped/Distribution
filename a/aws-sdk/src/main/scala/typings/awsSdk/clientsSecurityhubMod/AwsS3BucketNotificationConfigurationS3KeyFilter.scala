@@ -18,7 +18,8 @@ object AwsS3BucketNotificationConfigurationS3KeyFilter {
     __obj.asInstanceOf[AwsS3BucketNotificationConfigurationS3KeyFilter]
   }
   
-  extension [Self <: AwsS3BucketNotificationConfigurationS3KeyFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsS3BucketNotificationConfigurationS3KeyFilter] (val x: Self) extends AnyVal {
     
     inline def setFilterRules(value: AwsS3BucketNotificationConfigurationS3KeyFilterRules): Self = StObject.set(x, "FilterRules", value.asInstanceOf[js.Any])
     

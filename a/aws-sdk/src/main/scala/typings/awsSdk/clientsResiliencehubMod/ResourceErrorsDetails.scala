@@ -23,7 +23,8 @@ object ResourceErrorsDetails {
     __obj.asInstanceOf[ResourceErrorsDetails]
   }
   
-  extension [Self <: ResourceErrorsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceErrorsDetails] (val x: Self) extends AnyVal {
     
     inline def setHasMoreErrors(value: BooleanOptional): Self = StObject.set(x, "hasMoreErrors", value.asInstanceOf[js.Any])
     

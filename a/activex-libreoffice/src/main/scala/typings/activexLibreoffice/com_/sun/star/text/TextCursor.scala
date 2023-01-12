@@ -395,7 +395,8 @@ object TextCursor {
     __obj.asInstanceOf[TextCursor]
   }
   
-  extension [Self <: TextCursor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextCursor] (val x: Self) extends AnyVal {
     
     inline def setCollapseToEnd(value: () => Unit): Self = StObject.set(x, "collapseToEnd", js.Any.fromFunction0(value))
     

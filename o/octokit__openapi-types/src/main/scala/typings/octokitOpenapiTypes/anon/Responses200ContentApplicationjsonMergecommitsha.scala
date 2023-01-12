@@ -23,7 +23,8 @@ object Responses200ContentApplicationjsonMergecommitsha {
     __obj.asInstanceOf[Responses200ContentApplicationjsonMergecommitsha]
   }
   
-  extension [Self <: Responses200ContentApplicationjsonMergecommitsha](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Responses200ContentApplicationjsonMergecommitsha] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: PathPullnumberRepo): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     

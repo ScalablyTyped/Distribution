@@ -23,7 +23,8 @@ object TaskStartedEventDetails {
     __obj.asInstanceOf[TaskStartedEventDetails]
   }
   
-  extension [Self <: TaskStartedEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskStartedEventDetails] (val x: Self) extends AnyVal {
     
     inline def setResource(value: Name): Self = StObject.set(x, "resource", value.asInstanceOf[js.Any])
     

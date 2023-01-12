@@ -17,7 +17,8 @@ object AnimationActionOption {
     __obj.asInstanceOf[AnimationActionOption]
   }
   
-  extension [Self <: AnimationActionOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationActionOption] (val x: Self) extends AnyVal {
     
     inline def setTransformOrigin(value: String): Self = StObject.set(x, "transformOrigin", value.asInstanceOf[js.Any])
     

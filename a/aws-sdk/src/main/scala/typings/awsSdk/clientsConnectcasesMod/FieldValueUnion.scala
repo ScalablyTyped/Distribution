@@ -28,7 +28,8 @@ object FieldValueUnion {
     __obj.asInstanceOf[FieldValueUnion]
   }
   
-  extension [Self <: FieldValueUnion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldValueUnion] (val x: Self) extends AnyVal {
     
     inline def setBooleanValue(value: Boolean): Self = StObject.set(x, "booleanValue", value.asInstanceOf[js.Any])
     

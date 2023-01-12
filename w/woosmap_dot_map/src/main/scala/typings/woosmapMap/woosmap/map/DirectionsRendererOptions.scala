@@ -33,7 +33,8 @@ object DirectionsRendererOptions {
     __obj.asInstanceOf[DirectionsRendererOptions]
   }
   
-  extension [Self <: DirectionsRendererOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsRendererOptions] (val x: Self) extends AnyVal {
     
     inline def setDirections(value: DirectionResult): Self = StObject.set(x, "directions", value.asInstanceOf[js.Any])
     

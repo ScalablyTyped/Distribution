@@ -314,7 +314,8 @@ object libGettextMod {
       __obj.asInstanceOf[IJsonData]
     }
     
-    extension [Self <: IJsonData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonData] (val x: Self) extends AnyVal {
       
       inline def set_empty(value: IJsonDataHeader): Self = StObject.set(x, "", value.asInstanceOf[js.Any])
     }
@@ -352,7 +353,8 @@ object libGettextMod {
       __obj.asInstanceOf[IJsonDataHeader]
     }
     
-    extension [Self <: IJsonDataHeader](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IJsonDataHeader] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: String): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       
@@ -422,7 +424,8 @@ object libGettextMod {
       __obj.asInstanceOf[IOptions]
     }
     
-    extension [Self <: IOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IOptions] (val x: Self) extends AnyVal {
       
       inline def setContextDelimiter(value: String): Self = StObject.set(x, "contextDelimiter", value.asInstanceOf[js.Any])
       

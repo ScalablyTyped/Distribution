@@ -54,7 +54,8 @@ object examplesJsmPostprocessingBokehPassMod {
       __obj.asInstanceOf[BokehPassParamters]
     }
     
-    extension [Self <: BokehPassParamters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BokehPassParamters] (val x: Self) extends AnyVal {
       
       inline def setAperture(value: Double): Self = StObject.set(x, "aperture", value.asInstanceOf[js.Any])
       

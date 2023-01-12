@@ -53,7 +53,8 @@ object Reference {
     __obj.asInstanceOf[Reference]
   }
   
-  extension [Self <: Reference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reference] (val x: Self) extends AnyVal {
     
     inline def setAccessDotReference_typekey(value: Reference): Self = StObject.set(x, "Access.Reference_typekey", value.asInstanceOf[js.Any])
     

@@ -79,7 +79,8 @@ object foxxQueuesMod {
       __obj.asInstanceOf[Job]
     }
     
-    extension [Self <: Job](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: () => Unit): Self = StObject.set(x, "abort", js.Any.fromFunction0(value))
       
@@ -150,7 +151,8 @@ object foxxQueuesMod {
       __obj.asInstanceOf[JobOptions]
     }
     
-    extension [Self <: JobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobOptions] (val x: Self) extends AnyVal {
       
       inline def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
       
@@ -235,7 +237,8 @@ object foxxQueuesMod {
       __obj.asInstanceOf[QueueItem]
     }
     
-    extension [Self <: QueueItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: QueueItem] (val x: Self) extends AnyVal {
       
       inline def setBackOff(value: (js.Function1[/* failureCount */ Double, Double]) | Double): Self = StObject.set(x, "backOff", value.asInstanceOf[js.Any])
       
@@ -274,7 +277,8 @@ object foxxQueuesMod {
       __obj.asInstanceOf[Script]
     }
     
-    extension [Self <: Script](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Script] (val x: Self) extends AnyVal {
       
       inline def setMount(value: String): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
       

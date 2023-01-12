@@ -24,7 +24,8 @@ object SpineContainerConfig {
     __obj.asInstanceOf[SpineContainerConfig]
   }
   
-  extension [Self <: SpineContainerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpineContainerConfig] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: SpineGameObject | js.Array[SpineGameObject]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

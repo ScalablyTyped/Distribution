@@ -95,7 +95,8 @@ object XLanguageGuessing {
     __obj.asInstanceOf[XLanguageGuessing]
   }
   
-  extension [Self <: XLanguageGuessing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XLanguageGuessing] (val x: Self) extends AnyVal {
     
     inline def setAvailableLanguages(value: SafeArray[Locale]): Self = StObject.set(x, "AvailableLanguages", value.asInstanceOf[js.Any])
     

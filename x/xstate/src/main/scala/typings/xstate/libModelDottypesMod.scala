@@ -96,7 +96,8 @@ object libModelDottypesMod {
       __obj.asInstanceOf[FinalModelCreators[Self]]
     }
     
-    extension [Self_ <: FinalModelCreators[?], Self](x: Self_ & FinalModelCreators[Self]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self_ <: FinalModelCreators[?], Self] (val x: Self_ & FinalModelCreators[Self]) extends AnyVal {
       
       inline def setActions(value: FinalActionCreators[Prop[Self, actions]]): Self_ = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -188,7 +189,8 @@ object libModelDottypesMod {
       __obj.asInstanceOf[ModelCreators[Self]]
     }
     
-    extension [Self_ <: ModelCreators[?], Self](x: Self_ & ModelCreators[Self]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self_ <: ModelCreators[?], Self] (val x: Self_ & ModelCreators[Self]) extends AnyVal {
       
       inline def setActions(value: ActionCreators[Prop[Self, actions]]): Self_ = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       

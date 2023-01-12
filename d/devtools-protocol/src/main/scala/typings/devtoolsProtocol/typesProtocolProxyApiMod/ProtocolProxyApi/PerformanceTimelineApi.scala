@@ -31,7 +31,8 @@ object PerformanceTimelineApi {
     __obj.asInstanceOf[PerformanceTimelineApi]
   }
   
-  extension [Self <: PerformanceTimelineApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PerformanceTimelineApi] (val x: Self) extends AnyVal {
     
     inline def setEnable(value: EnableRequest => js.Promise[Unit]): Self = StObject.set(x, "enable", js.Any.fromFunction1(value))
     

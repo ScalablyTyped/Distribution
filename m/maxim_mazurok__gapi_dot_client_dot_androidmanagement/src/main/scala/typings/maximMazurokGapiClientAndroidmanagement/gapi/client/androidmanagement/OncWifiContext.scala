@@ -16,7 +16,8 @@ object OncWifiContext {
     __obj.asInstanceOf[OncWifiContext]
   }
   
-  extension [Self <: OncWifiContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OncWifiContext] (val x: Self) extends AnyVal {
     
     inline def setWifiGuid(value: String): Self = StObject.set(x, "wifiGuid", value.asInstanceOf[js.Any])
     

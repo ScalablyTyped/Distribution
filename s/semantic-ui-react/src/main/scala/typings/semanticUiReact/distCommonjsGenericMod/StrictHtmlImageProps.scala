@@ -15,7 +15,8 @@ object StrictHtmlImageProps {
     __obj.asInstanceOf[StrictHtmlImageProps]
   }
   
-  extension [Self <: StrictHtmlImageProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StrictHtmlImageProps] (val x: Self) extends AnyVal {
     
     inline def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
     

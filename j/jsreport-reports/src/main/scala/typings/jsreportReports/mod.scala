@@ -27,7 +27,8 @@ object mod {
       __obj.asInstanceOf[Configuration]
     }
     
-    extension [Self <: Configuration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Configuration] (val x: Self) extends AnyVal {
       
       inline def setCleanInterval(value: String): Self = StObject.set(x, "cleanInterval", value.asInstanceOf[js.Any])
       
@@ -54,7 +55,8 @@ object mod {
       __obj.asInstanceOf[ReportsOptions]
     }
     
-    extension [Self <: ReportsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReportsOptions] (val x: Self) extends AnyVal {
       
       inline def setAsync(value: Boolean): Self = StObject.set(x, "async", value.asInstanceOf[js.Any])
       
@@ -84,7 +86,8 @@ object mod {
         __obj.asInstanceOf[RequestOptions]
       }
       
-      extension [Self <: RequestOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: RequestOptions] (val x: Self) extends AnyVal {
         
         inline def setReports(value: ReportsOptions): Self = StObject.set(x, "reports", value.asInstanceOf[js.Any])
         

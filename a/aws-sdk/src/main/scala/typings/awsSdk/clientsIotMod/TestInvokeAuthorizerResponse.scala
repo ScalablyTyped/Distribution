@@ -38,7 +38,8 @@ object TestInvokeAuthorizerResponse {
     __obj.asInstanceOf[TestInvokeAuthorizerResponse]
   }
   
-  extension [Self <: TestInvokeAuthorizerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestInvokeAuthorizerResponse] (val x: Self) extends AnyVal {
     
     inline def setDisconnectAfterInSeconds(value: Seconds): Self = StObject.set(x, "disconnectAfterInSeconds", value.asInstanceOf[js.Any])
     

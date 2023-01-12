@@ -19,7 +19,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: `0`): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[Binary]
     }
     
-    extension [Self <: Binary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Binary] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
       
@@ -61,7 +63,8 @@ object anon {
       __obj.asInstanceOf[BinaryBoolean]
     }
     
-    extension [Self <: BinaryBoolean](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BinaryBoolean] (val x: Self) extends AnyVal {
       
       inline def setBinary(value: Boolean): Self = StObject.set(x, "binary", value.asInstanceOf[js.Any])
     }
@@ -84,7 +87,8 @@ object anon {
       __obj.asInstanceOf[Code]
     }
     
-    extension [Self <: Code](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Code] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -112,7 +116,8 @@ object anon {
       __obj.asInstanceOf[Data]
     }
     
-    extension [Self <: Data](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Data] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -137,7 +142,8 @@ object anon {
       __obj.asInstanceOf[Origin]
     }
     
-    extension [Self <: Origin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
       
       inline def setOrigin(value: String): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
       
@@ -164,7 +170,8 @@ object anon {
       __obj.asInstanceOf[Reason]
     }
     
-    extension [Self <: Reason](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Reason] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -187,7 +194,8 @@ object anon {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setTarget(value: WebSocket): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
     }
@@ -209,7 +217,8 @@ object anon {
       __obj.asInstanceOf[Type]
     }
     
-    extension [Self <: Type](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Type] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

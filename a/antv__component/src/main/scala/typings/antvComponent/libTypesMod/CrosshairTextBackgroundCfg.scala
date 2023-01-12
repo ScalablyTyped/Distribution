@@ -26,7 +26,8 @@ object CrosshairTextBackgroundCfg {
     __obj.asInstanceOf[CrosshairTextBackgroundCfg]
   }
   
-  extension [Self <: CrosshairTextBackgroundCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CrosshairTextBackgroundCfg] (val x: Self) extends AnyVal {
     
     inline def setPadding(value: Double | js.Array[Double]): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
     

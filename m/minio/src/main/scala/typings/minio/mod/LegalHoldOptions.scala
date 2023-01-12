@@ -17,7 +17,8 @@ object LegalHoldOptions {
     __obj.asInstanceOf[LegalHoldOptions]
   }
   
-  extension [Self <: LegalHoldOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LegalHoldOptions] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: LegalHoldStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     

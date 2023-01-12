@@ -38,7 +38,8 @@ object NoiseReducerTemporalFilterSettings {
     __obj.asInstanceOf[NoiseReducerTemporalFilterSettings]
   }
   
-  extension [Self <: NoiseReducerTemporalFilterSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseReducerTemporalFilterSettings] (val x: Self) extends AnyVal {
     
     inline def setAggressiveMode(value: integerMin0Max4): Self = StObject.set(x, "AggressiveMode", value.asInstanceOf[js.Any])
     

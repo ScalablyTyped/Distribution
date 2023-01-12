@@ -74,7 +74,8 @@ object ChangeStreamOptions {
     __obj.asInstanceOf[ChangeStreamOptions]
   }
   
-  extension [Self <: ChangeStreamOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamOptions] (val x: Self) extends AnyVal {
     
     inline def setFullDocument(value: String): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
     

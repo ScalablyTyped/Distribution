@@ -37,7 +37,8 @@ object XModeChangeApproveListener {
     __obj.asInstanceOf[XModeChangeApproveListener]
   }
   
-  extension [Self <: XModeChangeApproveListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XModeChangeApproveListener] (val x: Self) extends AnyVal {
     
     inline def setApproveModeChange(value: ModeChangeEvent => Unit): Self = StObject.set(x, "approveModeChange", js.Any.fromFunction1(value))
   }

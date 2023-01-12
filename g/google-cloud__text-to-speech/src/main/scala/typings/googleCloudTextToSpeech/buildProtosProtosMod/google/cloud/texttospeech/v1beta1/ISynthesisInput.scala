@@ -20,7 +20,8 @@ object ISynthesisInput {
     __obj.asInstanceOf[ISynthesisInput]
   }
   
-  extension [Self <: ISynthesisInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISynthesisInput] (val x: Self) extends AnyVal {
     
     inline def setSsml(value: String): Self = StObject.set(x, "ssml", value.asInstanceOf[js.Any])
     

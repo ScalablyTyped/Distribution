@@ -22,7 +22,8 @@ object DataTableCustomHeaderData {
     __obj.asInstanceOf[DataTableCustomHeaderData[H]]
   }
   
-  extension [Self <: DataTableCustomHeaderData[?], H /* <: DataTableHeader[String] */](x: Self & DataTableCustomHeaderData[H]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataTableCustomHeaderData[?], H /* <: DataTableHeader[String] */] (val x: Self & DataTableCustomHeaderData[H]) extends AnyVal {
     
     inline def setHeader(value: H): Self = StObject.set(x, "header", value.asInstanceOf[js.Any])
     

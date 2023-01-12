@@ -73,7 +73,8 @@ object Report {
     __obj.asInstanceOf[Report]
   }
   
-  extension [Self <: Report](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Report] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

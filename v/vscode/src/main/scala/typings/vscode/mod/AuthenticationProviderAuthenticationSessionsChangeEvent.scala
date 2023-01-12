@@ -30,7 +30,8 @@ object AuthenticationProviderAuthenticationSessionsChangeEvent {
     __obj.asInstanceOf[AuthenticationProviderAuthenticationSessionsChangeEvent]
   }
   
-  extension [Self <: AuthenticationProviderAuthenticationSessionsChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationProviderAuthenticationSessionsChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setAdded(value: js.Array[AuthenticationSession]): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
     

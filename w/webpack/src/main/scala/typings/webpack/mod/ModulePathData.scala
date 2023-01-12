@@ -19,7 +19,8 @@ object ModulePathData {
     __obj.asInstanceOf[ModulePathData]
   }
   
-  extension [Self <: ModulePathData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModulePathData] (val x: Self) extends AnyVal {
     
     inline def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
     

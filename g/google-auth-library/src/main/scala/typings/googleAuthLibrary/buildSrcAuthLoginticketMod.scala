@@ -179,7 +179,8 @@ object buildSrcAuthLoginticketMod {
       __obj.asInstanceOf[TokenPayload]
     }
     
-    extension [Self <: TokenPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TokenPayload] (val x: Self) extends AnyVal {
       
       inline def setAt_hash(value: String): Self = StObject.set(x, "at_hash", value.asInstanceOf[js.Any])
       

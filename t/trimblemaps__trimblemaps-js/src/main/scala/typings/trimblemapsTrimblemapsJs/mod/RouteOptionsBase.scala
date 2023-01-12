@@ -241,7 +241,8 @@ object RouteOptionsBase {
     __obj.asInstanceOf[RouteOptionsBase]
   }
   
-  extension [Self <: RouteOptionsBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouteOptionsBase] (val x: Self) extends AnyVal {
     
     inline def setAfSetIDs(value: js.Array[Double]): Self = StObject.set(x, "afSetIDs", value.asInstanceOf[js.Any])
     

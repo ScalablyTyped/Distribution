@@ -24,7 +24,8 @@ object PartialLoggableTimeoutablTimeout {
     __obj.asInstanceOf[PartialLoggableTimeoutablTimeout]
   }
   
-  extension [Self <: PartialLoggableTimeoutablTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialLoggableTimeoutablTimeout] (val x: Self) extends AnyVal {
     
     inline def setIncludeShadowDom(value: Boolean): Self = StObject.set(x, "includeShadowDom", value.asInstanceOf[js.Any])
     

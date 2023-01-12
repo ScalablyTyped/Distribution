@@ -28,7 +28,8 @@ object DescribeInstanceTypeLimitsRequest {
     __obj.asInstanceOf[DescribeInstanceTypeLimitsRequest]
   }
   
-  extension [Self <: DescribeInstanceTypeLimitsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeInstanceTypeLimitsRequest] (val x: Self) extends AnyVal {
     
     inline def setDomainName(value: DomainName): Self = StObject.set(x, "DomainName", value.asInstanceOf[js.Any])
     

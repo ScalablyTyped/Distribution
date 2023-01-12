@@ -36,7 +36,8 @@ object IMHistoryMessage {
     __obj.asInstanceOf[IMHistoryMessage]
   }
   
-  extension [Self <: IMHistoryMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMHistoryMessage] (val x: Self) extends AnyVal {
     
     inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

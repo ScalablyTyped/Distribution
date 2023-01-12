@@ -19,7 +19,8 @@ object FlowErrorDetails {
     __obj.asInstanceOf[FlowErrorDetails]
   }
   
-  extension [Self <: FlowErrorDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlowErrorDetails] (val x: Self) extends AnyVal {
     
     inline def setExceptionType(value: String): Self = StObject.set(x, "exceptionType", value.asInstanceOf[js.Any])
     

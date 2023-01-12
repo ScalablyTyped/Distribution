@@ -53,7 +53,8 @@ object ColorCorrector {
     __obj.asInstanceOf[ColorCorrector]
   }
   
-  extension [Self <: ColorCorrector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColorCorrector] (val x: Self) extends AnyVal {
     
     inline def setBrightness(value: integerMin1Max100): Self = StObject.set(x, "Brightness", value.asInstanceOf[js.Any])
     

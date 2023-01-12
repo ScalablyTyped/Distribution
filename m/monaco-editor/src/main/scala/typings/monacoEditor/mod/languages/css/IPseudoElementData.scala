@@ -23,7 +23,8 @@ object IPseudoElementData {
     __obj.asInstanceOf[IPseudoElementData]
   }
   
-  extension [Self <: IPseudoElementData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPseudoElementData] (val x: Self) extends AnyVal {
     
     inline def setBrowsers(value: js.Array[String]): Self = StObject.set(x, "browsers", value.asInstanceOf[js.Any])
     

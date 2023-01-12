@@ -44,7 +44,8 @@ object Zone {
     __obj.asInstanceOf[Zone]
   }
   
-  extension [Self <: Zone](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Zone] (val x: Self) extends AnyVal {
     
     inline def setApex_alias(value: String): Self = StObject.set(x, "apex_alias", value.asInstanceOf[js.Any])
     

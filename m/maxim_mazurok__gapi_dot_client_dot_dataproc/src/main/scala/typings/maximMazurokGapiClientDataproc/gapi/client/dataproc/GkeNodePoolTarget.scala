@@ -26,7 +26,8 @@ object GkeNodePoolTarget {
     __obj.asInstanceOf[GkeNodePoolTarget]
   }
   
-  extension [Self <: GkeNodePoolTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GkeNodePoolTarget] (val x: Self) extends AnyVal {
     
     inline def setNodePool(value: String): Self = StObject.set(x, "nodePool", value.asInstanceOf[js.Any])
     

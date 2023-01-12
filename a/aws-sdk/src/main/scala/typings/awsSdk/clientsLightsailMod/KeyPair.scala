@@ -53,7 +53,8 @@ object KeyPair {
     __obj.asInstanceOf[KeyPair]
   }
   
-  extension [Self <: KeyPair](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyPair] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

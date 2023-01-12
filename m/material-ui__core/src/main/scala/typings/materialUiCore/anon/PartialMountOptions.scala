@@ -18,7 +18,8 @@ object PartialMountOptions {
     __obj.asInstanceOf[PartialMountOptions]
   }
   
-  extension [Self <: PartialMountOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialMountOptions] (val x: Self) extends AnyVal {
     
     inline def setMount(value: FnCallNodeOptions): Self = StObject.set(x, "mount", value.asInstanceOf[js.Any])
     

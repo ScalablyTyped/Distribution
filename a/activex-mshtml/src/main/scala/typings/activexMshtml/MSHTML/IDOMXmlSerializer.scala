@@ -19,7 +19,8 @@ object IDOMXmlSerializer {
     __obj.asInstanceOf[IDOMXmlSerializer]
   }
   
-  extension [Self <: IDOMXmlSerializer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDOMXmlSerializer] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotIDOMXmlSerializer_typekey(value: IDOMXmlSerializer): Self = StObject.set(x, "MSHTML.IDOMXmlSerializer_typekey", value.asInstanceOf[js.Any])
     

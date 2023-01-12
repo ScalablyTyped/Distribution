@@ -17,7 +17,8 @@ object IRawQueryModify {
     __obj.asInstanceOf[IRawQueryModify]
   }
   
-  extension [Self <: IRawQueryModify](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRawQueryModify] (val x: Self) extends AnyVal {
     
     inline def setAppendAnd(value: () => IFieldExpression): Self = StObject.set(x, "AppendAnd", js.Any.fromFunction0(value))
     

@@ -63,7 +63,8 @@ object BackupRule {
     __obj.asInstanceOf[BackupRule]
   }
   
-  extension [Self <: BackupRule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupRule] (val x: Self) extends AnyVal {
     
     inline def setCompletionWindowMinutes(value: WindowMinutes): Self = StObject.set(x, "CompletionWindowMinutes", value.asInstanceOf[js.Any])
     

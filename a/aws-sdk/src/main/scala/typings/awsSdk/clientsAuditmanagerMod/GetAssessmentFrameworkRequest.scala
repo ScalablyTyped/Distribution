@@ -18,7 +18,8 @@ object GetAssessmentFrameworkRequest {
     __obj.asInstanceOf[GetAssessmentFrameworkRequest]
   }
   
-  extension [Self <: GetAssessmentFrameworkRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetAssessmentFrameworkRequest] (val x: Self) extends AnyVal {
     
     inline def setFrameworkId(value: UUID): Self = StObject.set(x, "frameworkId", value.asInstanceOf[js.Any])
   }

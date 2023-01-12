@@ -31,7 +31,8 @@ object GoogleSecuritySafebrowsingV4ThreatMatch {
     __obj.asInstanceOf[GoogleSecuritySafebrowsingV4ThreatMatch]
   }
   
-  extension [Self <: GoogleSecuritySafebrowsingV4ThreatMatch](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleSecuritySafebrowsingV4ThreatMatch] (val x: Self) extends AnyVal {
     
     inline def setCacheDuration(value: String): Self = StObject.set(x, "cacheDuration", value.asInstanceOf[js.Any])
     

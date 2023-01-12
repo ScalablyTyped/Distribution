@@ -19,7 +19,8 @@ object IncludeBaseline {
     __obj.asInstanceOf[IncludeBaseline]
   }
   
-  extension [Self <: IncludeBaseline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeBaseline] (val x: Self) extends AnyVal {
     
     inline def setIncludeBaseline(value: Boolean): Self = StObject.set(x, "includeBaseline", value.asInstanceOf[js.Any])
     

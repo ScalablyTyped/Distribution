@@ -33,7 +33,8 @@ object CloudTrailDetails {
     __obj.asInstanceOf[CloudTrailDetails]
   }
   
-  extension [Self <: CloudTrailDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CloudTrailDetails] (val x: Self) extends AnyVal {
     
     inline def setAccessRole(value: RoleArn): Self = StObject.set(x, "accessRole", value.asInstanceOf[js.Any])
     

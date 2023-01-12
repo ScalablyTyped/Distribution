@@ -23,7 +23,8 @@ object VideoAdParams {
     __obj.asInstanceOf[VideoAdParams]
   }
   
-  extension [Self <: VideoAdParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoAdParams] (val x: Self) extends AnyVal {
     
     inline def setAdUnitId(value: String): Self = StObject.set(x, "adUnitId", value.asInstanceOf[js.Any])
     

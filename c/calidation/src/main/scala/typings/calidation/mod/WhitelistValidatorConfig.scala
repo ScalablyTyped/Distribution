@@ -17,7 +17,8 @@ object WhitelistValidatorConfig {
     __obj.asInstanceOf[WhitelistValidatorConfig[T]]
   }
   
-  extension [Self <: WhitelistValidatorConfig[?], T /* <: js.Object */](x: Self & WhitelistValidatorConfig[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhitelistValidatorConfig[?], T /* <: js.Object */] (val x: Self & WhitelistValidatorConfig[T]) extends AnyVal {
     
     inline def setWhitelist(value: js.Array[String]): Self = StObject.set(x, "whitelist", value.asInstanceOf[js.Any])
     

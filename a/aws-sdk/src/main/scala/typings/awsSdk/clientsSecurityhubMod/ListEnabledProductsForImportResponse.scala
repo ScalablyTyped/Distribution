@@ -23,7 +23,8 @@ object ListEnabledProductsForImportResponse {
     __obj.asInstanceOf[ListEnabledProductsForImportResponse]
   }
   
-  extension [Self <: ListEnabledProductsForImportResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEnabledProductsForImportResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: NextToken): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

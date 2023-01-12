@@ -31,7 +31,8 @@ object GraphSearchProperties {
     __obj.asInstanceOf[GraphSearchProperties]
   }
   
-  extension [Self <: GraphSearchProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphSearchProperties] (val x: Self) extends AnyVal {
     
     inline def setSearchQuery(value: String): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
     

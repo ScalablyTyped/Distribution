@@ -20,7 +20,8 @@ object SocketTcpPermission {
     __obj.asInstanceOf[SocketTcpPermission]
   }
   
-  extension [Self <: SocketTcpPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SocketTcpPermission] (val x: Self) extends AnyVal {
     
     inline def setConnect(value: String | js.Array[String]): Self = StObject.set(x, "connect", value.asInstanceOf[js.Any])
     

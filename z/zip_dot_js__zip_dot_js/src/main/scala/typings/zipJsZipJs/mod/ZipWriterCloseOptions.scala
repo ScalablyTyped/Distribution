@@ -32,7 +32,8 @@ object ZipWriterCloseOptions {
     __obj.asInstanceOf[ZipWriterCloseOptions]
   }
   
-  extension [Self <: ZipWriterCloseOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ZipWriterCloseOptions] (val x: Self) extends AnyVal {
     
     inline def setPreventClose(value: Boolean): Self = StObject.set(x, "preventClose", value.asInstanceOf[js.Any])
     

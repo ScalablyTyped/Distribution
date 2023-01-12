@@ -21,7 +21,8 @@ object Inprogress {
     __obj.asInstanceOf[Inprogress]
   }
   
-  extension [Self <: Inprogress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Inprogress] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: scala.Double): Self = StObject.set(x, "completed", value.asInstanceOf[js.Any])
     

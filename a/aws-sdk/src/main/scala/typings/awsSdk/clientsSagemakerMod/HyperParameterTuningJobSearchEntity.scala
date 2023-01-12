@@ -72,7 +72,8 @@ object HyperParameterTuningJobSearchEntity {
     __obj.asInstanceOf[HyperParameterTuningJobSearchEntity]
   }
   
-  extension [Self <: HyperParameterTuningJobSearchEntity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HyperParameterTuningJobSearchEntity] (val x: Self) extends AnyVal {
     
     inline def setBestTrainingJob(value: HyperParameterTrainingJobSummary): Self = StObject.set(x, "BestTrainingJob", value.asInstanceOf[js.Any])
     

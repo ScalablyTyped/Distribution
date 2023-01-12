@@ -24,7 +24,8 @@ object Compression {
     __obj.asInstanceOf[Compression]
   }
   
-  extension [Self <: Compression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Compression] (val x: Self) extends AnyVal {
     
     inline def setCompression(value: EnumDWTTIFFCompressionType | Double): Self = StObject.set(x, "compression", value.asInstanceOf[js.Any])
     

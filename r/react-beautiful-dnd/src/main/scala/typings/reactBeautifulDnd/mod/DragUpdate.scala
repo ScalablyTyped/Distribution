@@ -22,7 +22,8 @@ object DragUpdate {
     __obj.asInstanceOf[DragUpdate]
   }
   
-  extension [Self <: DragUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragUpdate] (val x: Self) extends AnyVal {
     
     inline def setCombine(value: Combine): Self = StObject.set(x, "combine", value.asInstanceOf[js.Any])
     

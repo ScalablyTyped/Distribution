@@ -75,7 +75,8 @@ object dxValidator {
       __obj.asInstanceOf[ValidatedEvent]
     }
     
-    extension [Self <: ValidatedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatedEvent] (val x: Self) extends AnyVal {
       
       inline def setBrokenRule(value: ValidationRule): Self = StObject.set(x, "brokenRule", value.asInstanceOf[js.Any])
       

@@ -138,7 +138,8 @@ object srcCoreNgTableSettingsMod {
       __obj.asInstanceOf[ISettings[T]]
     }
     
-    extension [Self <: ISettings[?], T](x: Self & ISettings[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISettings[?], T] (val x: Self & ISettings[T]) extends AnyVal {
       
       inline def set$loading(value: Boolean): Self = StObject.set(x, "$loading", value.asInstanceOf[js.Any])
       

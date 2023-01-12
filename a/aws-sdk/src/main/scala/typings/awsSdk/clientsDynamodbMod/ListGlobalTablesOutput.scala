@@ -23,7 +23,8 @@ object ListGlobalTablesOutput {
     __obj.asInstanceOf[ListGlobalTablesOutput]
   }
   
-  extension [Self <: ListGlobalTablesOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListGlobalTablesOutput] (val x: Self) extends AnyVal {
     
     inline def setGlobalTables(value: GlobalTableList): Self = StObject.set(x, "GlobalTables", value.asInstanceOf[js.Any])
     

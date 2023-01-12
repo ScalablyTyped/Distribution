@@ -52,7 +52,8 @@ object distEsm2017SrcCoreCredentialsPhoneMod {
       __obj.asInstanceOf[PhoneAuthCredentialParameters]
     }
     
-    extension [Self <: PhoneAuthCredentialParameters](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PhoneAuthCredentialParameters] (val x: Self) extends AnyVal {
       
       inline def setPhoneNumber(value: String): Self = StObject.set(x, "phoneNumber", value.asInstanceOf[js.Any])
       

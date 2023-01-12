@@ -113,7 +113,8 @@ object datepickerDatepickerMod {
       __obj.asInstanceOf[DatepickerState]
     }
     
-    extension [Self <: DatepickerState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DatepickerState] (val x: Self) extends AnyVal {
       
       inline def setCalendarFocused(value: Boolean): Self = StObject.set(x, "calendarFocused", value.asInstanceOf[js.Any])
       

@@ -89,7 +89,8 @@ object dxPieChartSeriesTypesCommonPieChartSeries {
     __obj.asInstanceOf[dxPieChartSeriesTypesCommonPieChartSeries]
   }
   
-  extension [Self <: dxPieChartSeriesTypesCommonPieChartSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPieChartSeriesTypesCommonPieChartSeries] (val x: Self) extends AnyVal {
     
     inline def setArgumentField(value: String): Self = StObject.set(x, "argumentField", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object ChangeProgressStatusDetails {
     __obj.asInstanceOf[ChangeProgressStatusDetails]
   }
   
-  extension [Self <: ChangeProgressStatusDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeProgressStatusDetails] (val x: Self) extends AnyVal {
     
     inline def setChangeId(value: GUID): Self = StObject.set(x, "ChangeId", value.asInstanceOf[js.Any])
     

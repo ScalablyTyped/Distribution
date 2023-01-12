@@ -29,7 +29,8 @@ object Bcc {
     __obj.asInstanceOf[Bcc]
   }
   
-  extension [Self <: Bcc](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Bcc] (val x: Self) extends AnyVal {
     
     inline def setGetEmail(value: () => Email): Self = StObject.set(x, "getEmail", js.Any.fromFunction0(value))
     

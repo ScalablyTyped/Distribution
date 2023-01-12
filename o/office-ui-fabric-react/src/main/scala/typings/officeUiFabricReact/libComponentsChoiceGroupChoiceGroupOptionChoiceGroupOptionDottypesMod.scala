@@ -79,7 +79,8 @@ object libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod {
       __obj.asInstanceOf[IChoiceGroupOptionProps]
     }
     
-    extension [Self <: IChoiceGroupOptionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupOptionProps] (val x: Self) extends AnyVal {
       
       inline def setComponentRef(value: IRefObject[IChoiceGroupOption]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
       
@@ -151,7 +152,8 @@ object libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod {
       __obj.asInstanceOf[IChoiceGroupOptionStyleProps]
     }
     
-    extension [Self <: IChoiceGroupOptionStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupOptionStyleProps] (val x: Self) extends AnyVal {
       
       inline def setChecked(value: Boolean): Self = StObject.set(x, "checked", value.asInstanceOf[js.Any])
       
@@ -212,7 +214,8 @@ object libComponentsChoiceGroupChoiceGroupOptionChoiceGroupOptionDottypesMod {
       __obj.asInstanceOf[IChoiceGroupOptionStyles]
     }
     
-    extension [Self <: IChoiceGroupOptionStyles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IChoiceGroupOptionStyles] (val x: Self) extends AnyVal {
       
       inline def setChoiceFieldWrapper(value: IStyle): Self = StObject.set(x, "choiceFieldWrapper", value.asInstanceOf[js.Any])
       

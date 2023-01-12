@@ -72,7 +72,8 @@ object SideNavigationTopItemProps {
     __obj.asInstanceOf[SideNavigationTopItemProps]
   }
   
-  extension [Self <: SideNavigationTopItemProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideNavigationTopItemProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: page | section): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

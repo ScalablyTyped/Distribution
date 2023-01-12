@@ -50,7 +50,8 @@ object RequestAuthDefinition {
     __obj.asInstanceOf[RequestAuthDefinition]
   }
   
-  extension [Self <: RequestAuthDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestAuthDefinition] (val x: Self) extends AnyVal {
     
     inline def setApikey(value: js.Array[VariableDefinition]): Self = StObject.set(x, "apikey", value.asInstanceOf[js.Any])
     

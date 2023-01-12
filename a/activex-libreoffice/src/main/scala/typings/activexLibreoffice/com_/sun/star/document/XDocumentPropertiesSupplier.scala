@@ -33,7 +33,8 @@ object XDocumentPropertiesSupplier {
     __obj.asInstanceOf[XDocumentPropertiesSupplier]
   }
   
-  extension [Self <: XDocumentPropertiesSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XDocumentPropertiesSupplier] (val x: Self) extends AnyVal {
     
     inline def setDocumentProperties(value: XDocumentProperties): Self = StObject.set(x, "DocumentProperties", value.asInstanceOf[js.Any])
     

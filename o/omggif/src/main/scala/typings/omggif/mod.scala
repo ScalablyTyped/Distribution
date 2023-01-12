@@ -109,7 +109,8 @@ object mod {
       __obj.asInstanceOf[Frame]
     }
     
-    extension [Self <: Frame](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Frame] (val x: Self) extends AnyVal {
       
       inline def setData_length(value: Double): Self = StObject.set(x, "data_length", value.asInstanceOf[js.Any])
       
@@ -162,7 +163,8 @@ object mod {
       __obj.asInstanceOf[FrameOptions]
     }
     
-    extension [Self <: FrameOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameOptions] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -199,7 +201,8 @@ object mod {
       __obj.asInstanceOf[GifBinary]
     }
     
-    extension [Self <: GifBinary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifBinary] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
@@ -220,7 +223,8 @@ object mod {
       __obj.asInstanceOf[GifOptions]
     }
     
-    extension [Self <: GifOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GifOptions] (val x: Self) extends AnyVal {
       
       inline def setBackground(value: Double): Self = StObject.set(x, "background", value.asInstanceOf[js.Any])
       

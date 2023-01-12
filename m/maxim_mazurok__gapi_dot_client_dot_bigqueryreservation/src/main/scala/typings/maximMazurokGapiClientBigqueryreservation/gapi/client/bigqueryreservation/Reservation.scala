@@ -51,7 +51,8 @@ object Reservation {
     __obj.asInstanceOf[Reservation]
   }
   
-  extension [Self <: Reservation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Reservation] (val x: Self) extends AnyVal {
     
     inline def setConcurrency(value: String): Self = StObject.set(x, "concurrency", value.asInstanceOf[js.Any])
     

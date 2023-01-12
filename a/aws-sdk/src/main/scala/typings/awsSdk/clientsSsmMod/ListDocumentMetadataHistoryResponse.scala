@@ -38,7 +38,8 @@ object ListDocumentMetadataHistoryResponse {
     __obj.asInstanceOf[ListDocumentMetadataHistoryResponse]
   }
   
-  extension [Self <: ListDocumentMetadataHistoryResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListDocumentMetadataHistoryResponse] (val x: Self) extends AnyVal {
     
     inline def setAuthor(value: DocumentAuthor): Self = StObject.set(x, "Author", value.asInstanceOf[js.Any])
     

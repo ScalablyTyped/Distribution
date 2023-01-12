@@ -63,7 +63,8 @@ object mod {
       __obj.asInstanceOf[LogglyBulkOptions]
     }
     
-    extension [Self <: LogglyBulkOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LogglyBulkOptions] (val x: Self) extends AnyVal {
       
       inline def setBufferOptions(value: RetriesInMilliSeconds): Self = StObject.set(x, "bufferOptions", value.asInstanceOf[js.Any])
       

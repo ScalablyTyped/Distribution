@@ -177,7 +177,8 @@ object PartialTilePropsAccessibilityActions {
     __obj.asInstanceOf[PartialTilePropsAccessibilityActions]
   }
   
-  extension [Self <: PartialTilePropsAccessibilityActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialTilePropsAccessibilityActions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

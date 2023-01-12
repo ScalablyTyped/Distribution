@@ -19,7 +19,8 @@ object FillTypeEnumValues {
     __obj.asInstanceOf[FillTypeEnumValues]
   }
   
-  extension [Self <: FillTypeEnumValues](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FillTypeEnumValues] (val x: Self) extends AnyVal {
     
     inline def setEvenOdd(value: FillType): Self = StObject.set(x, "EvenOdd", value.asInstanceOf[js.Any])
     

@@ -42,7 +42,8 @@ object legendOptions {
     __obj.asInstanceOf[legendOptions]
   }
   
-  extension [Self <: legendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: legendOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Any): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

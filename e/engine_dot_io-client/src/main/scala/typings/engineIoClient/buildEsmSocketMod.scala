@@ -467,7 +467,8 @@ object buildEsmSocketMod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: String | Boolean): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

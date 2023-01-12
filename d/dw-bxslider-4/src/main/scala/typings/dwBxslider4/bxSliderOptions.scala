@@ -554,7 +554,8 @@ object bxSliderOptions {
     __obj.asInstanceOf[bxSliderOptions]
   }
   
-  extension [Self <: bxSliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: bxSliderOptions] (val x: Self) extends AnyVal {
     
     inline def setAdaptiveHeight(value: Boolean): Self = StObject.set(x, "adaptiveHeight", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object HttpParameterCodec {
     __obj.asInstanceOf[HttpParameterCodec]
   }
   
-  extension [Self <: HttpParameterCodec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpParameterCodec] (val x: Self) extends AnyVal {
     
     inline def setDecodeKey(value: String => String): Self = StObject.set(x, "decodeKey", js.Any.fromFunction1(value))
     

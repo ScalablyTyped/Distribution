@@ -35,7 +35,8 @@ object IPropertyDefAdmin {
     __obj.asInstanceOf[IPropertyDefAdmin]
   }
   
-  extension [Self <: IPropertyDefAdmin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyDefAdmin] (val x: Self) extends AnyVal {
     
     inline def setAllowAutomaticPermissions(value: Boolean): Self = StObject.set(x, "AllowAutomaticPermissions", value.asInstanceOf[js.Any])
     

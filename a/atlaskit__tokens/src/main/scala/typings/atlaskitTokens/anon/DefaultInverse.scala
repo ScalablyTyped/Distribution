@@ -20,7 +20,8 @@ object DefaultInverse {
     __obj.asInstanceOf[DefaultInverse]
   }
   
-  extension [Self <: DefaultInverse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultInverse] (val x: Self) extends AnyVal {
     
     inline def setInverse(value: PaintToken[BaseToken]): Self = StObject.set(x, "inverse", value.asInstanceOf[js.Any])
     

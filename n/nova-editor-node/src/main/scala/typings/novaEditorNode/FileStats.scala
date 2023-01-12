@@ -39,7 +39,8 @@ object FileStats {
     __obj.asInstanceOf[FileStats]
   }
   
-  extension [Self <: FileStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileStats] (val x: Self) extends AnyVal {
     
     inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     

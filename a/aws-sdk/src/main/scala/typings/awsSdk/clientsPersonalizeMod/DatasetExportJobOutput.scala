@@ -15,7 +15,8 @@ object DatasetExportJobOutput {
     __obj.asInstanceOf[DatasetExportJobOutput]
   }
   
-  extension [Self <: DatasetExportJobOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatasetExportJobOutput] (val x: Self) extends AnyVal {
     
     inline def setS3DataDestination(value: S3DataConfig): Self = StObject.set(x, "s3DataDestination", value.asInstanceOf[js.Any])
   }

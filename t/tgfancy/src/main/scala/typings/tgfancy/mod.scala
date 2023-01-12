@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[ConstructorOptions]
     }
     
-    extension [Self <: ConstructorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConstructorOptions] (val x: Self) extends AnyVal {
       
       inline def setTgfancy(value: TgfancyOptions): Self = StObject.set(x, "tgfancy", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[EmojificationOptions]
     }
     
-    extension [Self <: EmojificationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmojificationOptions] (val x: Self) extends AnyVal {
       
       inline def setEmojify(value: String => String): Self = StObject.set(x, "emojify", js.Any.fromFunction1(value))
     }
@@ -84,7 +86,8 @@ object mod {
       __obj.asInstanceOf[RatelimitingOptions]
     }
     
-    extension [Self <: RatelimitingOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RatelimitingOptions] (val x: Self) extends AnyVal {
       
       inline def setMaxBackoff(value: Double): Self = StObject.set(x, "maxBackoff", value.asInstanceOf[js.Any])
       
@@ -122,7 +125,8 @@ object mod {
       __obj.asInstanceOf[ResolvedChat]
     }
     
-    extension [Self <: ResolvedChat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedChat] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double | String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -148,7 +152,8 @@ object mod {
       __obj.asInstanceOf[ResolvedGroupOrChannel]
     }
     
-    extension [Self <: ResolvedGroupOrChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedGroupOrChannel] (val x: Self) extends AnyVal {
       
       inline def setTitle(value: String): Self = StObject.set(x, "title", value.asInstanceOf[js.Any])
     }
@@ -170,7 +175,8 @@ object mod {
       __obj.asInstanceOf[ResolvedUser]
     }
     
-    extension [Self <: ResolvedUser](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResolvedUser] (val x: Self) extends AnyVal {
       
       inline def setFirst_name(value: String): Self = StObject.set(x, "first_name", value.asInstanceOf[js.Any])
       
@@ -227,7 +233,8 @@ object mod {
       __obj.asInstanceOf[TgfancyOptions]
     }
     
-    extension [Self <: TgfancyOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TgfancyOptions] (val x: Self) extends AnyVal {
       
       inline def setChatIdResolution(value: Boolean | ChatIdResolutionOptions): Self = StObject.set(x, "chatIdResolution", value.asInstanceOf[js.Any])
       
@@ -276,7 +283,8 @@ object mod {
       __obj.asInstanceOf[WebSocketOptions]
     }
     
-    extension [Self <: WebSocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebSocketOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoOpen(value: Boolean): Self = StObject.set(x, "autoOpen", value.asInstanceOf[js.Any])
       

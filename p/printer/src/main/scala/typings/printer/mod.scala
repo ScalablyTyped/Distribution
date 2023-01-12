@@ -87,7 +87,8 @@ object mod {
       __obj.asInstanceOf[JobDetails]
     }
     
-    extension [Self <: JobDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JobDetails] (val x: Self) extends AnyVal {
       
       inline def setCompletedTime(value: js.Date): Self = StObject.set(x, "completedTime", value.asInstanceOf[js.Any])
       
@@ -160,7 +161,8 @@ object mod {
       __obj.asInstanceOf[PrintDirectOptions]
     }
     
-    extension [Self <: PrintDirectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintDirectOptions] (val x: Self) extends AnyVal {
       
       inline def setData(value: String | Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -203,7 +205,8 @@ object mod {
       __obj.asInstanceOf[PrintFileOptions]
     }
     
-    extension [Self <: PrintFileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrintFileOptions] (val x: Self) extends AnyVal {
       
       inline def setError(value: /* err */ js.Error => Any): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
       
@@ -240,7 +243,8 @@ object mod {
       __obj.asInstanceOf[PrinterDetails]
     }
     
-    extension [Self <: PrinterDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PrinterDetails] (val x: Self) extends AnyVal {
       
       inline def setIsDefault(value: Boolean): Self = StObject.set(x, "isDefault", value.asInstanceOf[js.Any])
       

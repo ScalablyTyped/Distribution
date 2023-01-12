@@ -369,7 +369,8 @@ object mod {
       __obj.asInstanceOf[CloseBracketConfig]
     }
     
-    extension [Self <: CloseBracketConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseBracketConfig] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       
@@ -458,7 +459,8 @@ object mod {
       __obj.asInstanceOf[Completion]
     }
     
-    extension [Self <: Completion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Completion] (val x: Self) extends AnyVal {
       
       inline def setApply(
         value: String | (js.Function4[/* view */ EditorView, Completion, /* from */ Double, /* to */ Double, Unit])
@@ -589,7 +591,8 @@ object mod {
       __obj.asInstanceOf[CompletionConfig]
     }
     
-    extension [Self <: CompletionConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionConfig] (val x: Self) extends AnyVal {
       
       inline def setAboveCursor(value: Boolean): Self = StObject.set(x, "aboveCursor", value.asInstanceOf[js.Any])
       
@@ -727,7 +730,8 @@ object mod {
       __obj.asInstanceOf[CompletionResult]
     }
     
-    extension [Self <: CompletionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompletionResult] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Boolean): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

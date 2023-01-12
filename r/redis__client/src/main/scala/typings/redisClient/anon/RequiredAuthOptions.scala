@@ -19,7 +19,8 @@ object RequiredAuthOptions {
     __obj.asInstanceOf[RequiredAuthOptions]
   }
   
-  extension [Self <: RequiredAuthOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredAuthOptions] (val x: Self) extends AnyVal {
     
     inline def setPassword(value: RedisCommandArgument): Self = StObject.set(x, "password", value.asInstanceOf[js.Any])
     

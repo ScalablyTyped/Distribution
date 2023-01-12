@@ -22,7 +22,8 @@ object NgIf {
     __obj.asInstanceOf[NgIf]
   }
   
-  extension [Self <: NgIf](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NgIf] (val x: Self) extends AnyVal {
     
     inline def setNgIf(value: ngIf): Self = StObject.set(x, "ngIf", value.asInstanceOf[js.Any])
     

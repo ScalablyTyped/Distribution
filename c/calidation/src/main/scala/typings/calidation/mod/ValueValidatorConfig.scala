@@ -17,7 +17,8 @@ object ValueValidatorConfig {
     __obj.asInstanceOf[ValueValidatorConfig[P, T]]
   }
   
-  extension [Self <: ValueValidatorConfig[?, ?], P, T /* <: js.Object */](x: Self & (ValueValidatorConfig[P, T])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValueValidatorConfig[?, ?], P, T /* <: js.Object */] (val x: Self & (ValueValidatorConfig[P, T])) extends AnyVal {
     
     inline def setValue(value: P): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }

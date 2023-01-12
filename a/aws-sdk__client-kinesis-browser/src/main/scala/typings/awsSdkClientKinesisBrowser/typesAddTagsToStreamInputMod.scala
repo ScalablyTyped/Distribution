@@ -52,7 +52,8 @@ object typesAddTagsToStreamInputMod {
       __obj.asInstanceOf[AddTagsToStreamInput]
     }
     
-    extension [Self <: AddTagsToStreamInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddTagsToStreamInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

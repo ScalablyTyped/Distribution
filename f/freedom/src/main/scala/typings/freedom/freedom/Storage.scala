@@ -37,7 +37,8 @@ object Storage {
       __obj.asInstanceOf[typings.freedom.freedom.Storage.Storage]
     }
     
-    extension [Self <: typings.freedom.freedom.Storage.Storage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.freedom.freedom.Storage.Storage] (val x: Self) extends AnyVal {
       
       inline def setClear(value: () => js.Promise[Unit]): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       

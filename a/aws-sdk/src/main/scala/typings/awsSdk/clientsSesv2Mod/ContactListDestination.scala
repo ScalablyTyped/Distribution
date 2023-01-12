@@ -23,7 +23,8 @@ object ContactListDestination {
     __obj.asInstanceOf[ContactListDestination]
   }
   
-  extension [Self <: ContactListDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactListDestination] (val x: Self) extends AnyVal {
     
     inline def setContactListImportAction(value: ContactListImportAction): Self = StObject.set(x, "ContactListImportAction", value.asInstanceOf[js.Any])
     

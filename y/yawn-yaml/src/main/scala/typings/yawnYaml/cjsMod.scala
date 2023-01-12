@@ -43,7 +43,8 @@ object cjsMod {
       __obj.asInstanceOf[YAWN]
     }
     
-    extension [Self <: YAWN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YAWN] (val x: Self) extends AnyVal {
       
       inline def setGetRemark(value: String => String): Self = StObject.set(x, "getRemark", js.Any.fromFunction1(value))
       

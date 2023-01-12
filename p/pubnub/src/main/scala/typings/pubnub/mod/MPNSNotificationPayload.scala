@@ -23,7 +23,8 @@ object MPNSNotificationPayload {
     __obj.asInstanceOf[MPNSNotificationPayload]
   }
   
-  extension [Self <: MPNSNotificationPayload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MPNSNotificationPayload] (val x: Self) extends AnyVal {
     
     inline def setBackContent(value: String): Self = StObject.set(x, "backContent", value.asInstanceOf[js.Any])
     

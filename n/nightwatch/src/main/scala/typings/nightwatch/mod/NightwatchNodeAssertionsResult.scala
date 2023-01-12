@@ -18,7 +18,8 @@ object NightwatchNodeAssertionsResult {
     __obj.asInstanceOf[NightwatchNodeAssertionsResult]
   }
   
-  extension [Self <: NightwatchNodeAssertionsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NightwatchNodeAssertionsResult] (val x: Self) extends AnyVal {
     
     inline def setReturned(value: `1`): Self = StObject.set(x, "returned", value.asInstanceOf[js.Any])
     

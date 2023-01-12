@@ -16,7 +16,8 @@ object ImagInputs {
     __obj.asInstanceOf[ImagInputs]
   }
   
-  extension [Self <: ImagInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImagInputs] (val x: Self) extends AnyVal {
     
     inline def setInput(value: scala.Any): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

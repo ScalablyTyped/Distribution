@@ -27,7 +27,8 @@ object InputOutputBinding {
     __obj.asInstanceOf[InputOutputBinding]
   }
   
-  extension [Self <: InputOutputBinding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputOutputBinding] (val x: Self) extends AnyVal {
     
     inline def setInputDataRef(value: InputSet): Self = StObject.set(x, "inputDataRef", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object BillsPayment {
     __obj.asInstanceOf[BillsPayment]
   }
   
-  extension [Self <: BillsPayment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BillsPayment] (val x: Self) extends AnyVal {
     
     inline def setBills(value: BillsPaymentBillsRequest => js.Promise[AxiosResponse[BillsPaymentBillsResponse, Any]]): Self = StObject.set(x, "bills", js.Any.fromFunction1(value))
   }

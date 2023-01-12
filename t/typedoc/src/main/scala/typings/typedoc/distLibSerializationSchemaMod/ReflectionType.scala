@@ -22,7 +22,8 @@ object ReflectionType {
     __obj.asInstanceOf[ReflectionType]
   }
   
-  extension [Self <: ReflectionType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReflectionType] (val x: Self) extends AnyVal {
     
     inline def setDeclaration(value: ModelToObject[typings.typedoc.distLibModelsReflectionsDeclarationMod.DeclarationReflection]): Self = StObject.set(x, "declaration", value.asInstanceOf[js.Any])
     

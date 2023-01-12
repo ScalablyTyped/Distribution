@@ -26,7 +26,8 @@ object PoolStateType {
     __obj.asInstanceOf[PoolStateType]
   }
   
-  extension [Self <: PoolStateType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolStateType] (val x: Self) extends AnyVal {
     
     inline def setActiveConnectionCount(value: Double): Self = StObject.set(x, "activeConnectionCount", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object OpenBluetoothAdapterOption {
     __obj.asInstanceOf[OpenBluetoothAdapterOption]
   }
   
-  extension [Self <: OpenBluetoothAdapterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenBluetoothAdapterOption] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* res */ BluetoothError => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

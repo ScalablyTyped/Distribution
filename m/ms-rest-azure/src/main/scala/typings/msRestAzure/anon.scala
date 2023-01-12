@@ -112,7 +112,8 @@ object anon {
       __obj.asInstanceOf[ActiveDirectoryEndpointUrl]
     }
     
-    extension [Self <: ActiveDirectoryEndpointUrl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDirectoryEndpointUrl] (val x: Self) extends AnyVal {
       
       inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotcomSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
@@ -198,7 +199,8 @@ object anon {
       __obj.asInstanceOf[ActiveDirectoryGraphApiVersion]
     }
     
-    extension [Self <: ActiveDirectoryGraphApiVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDirectoryGraphApiVersion] (val x: Self) extends AnyVal {
       
       inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotchinacloudapiDotcnSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
@@ -283,7 +285,8 @@ object anon {
       __obj.asInstanceOf[ActiveDirectoryGraphResourceId]
     }
     
-    extension [Self <: ActiveDirectoryGraphResourceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDirectoryGraphResourceId] (val x: Self) extends AnyVal {
       
       inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotusSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
@@ -368,7 +371,8 @@ object anon {
       __obj.asInstanceOf[ActiveDirectoryResourceId]
     }
     
-    extension [Self <: ActiveDirectoryResourceId](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ActiveDirectoryResourceId] (val x: Self) extends AnyVal {
       
       inline def setActiveDirectoryEndpointUrl(value: httpsColonSlashSlashloginDotmicrosoftonlineDotdeSlash): Self = StObject.set(x, "activeDirectoryEndpointUrl", value.asInstanceOf[js.Any])
       
@@ -419,7 +423,8 @@ object anon {
       __obj.asInstanceOf[CustomHeaders]
     }
     
-    extension [Self <: CustomHeaders](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomHeaders] (val x: Self) extends AnyVal {
       
       inline def setCustomHeaders(value: StringDictionary[String]): Self = StObject.set(x, "customHeaders", value.asInstanceOf[js.Any])
       

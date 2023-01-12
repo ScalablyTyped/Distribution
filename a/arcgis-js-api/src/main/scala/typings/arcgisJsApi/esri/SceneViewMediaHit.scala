@@ -47,7 +47,8 @@ object SceneViewMediaHit {
     __obj.asInstanceOf[SceneViewMediaHit]
   }
   
-  extension [Self <: SceneViewMediaHit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneViewMediaHit] (val x: Self) extends AnyVal {
     
     inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
     

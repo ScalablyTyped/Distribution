@@ -18,7 +18,8 @@ object KinesisFirehoseConfig {
     __obj.asInstanceOf[KinesisFirehoseConfig]
   }
   
-  extension [Self <: KinesisFirehoseConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KinesisFirehoseConfig] (val x: Self) extends AnyVal {
     
     inline def setFirehoseArn(value: ARN): Self = StObject.set(x, "FirehoseArn", value.asInstanceOf[js.Any])
   }

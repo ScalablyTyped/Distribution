@@ -72,7 +72,8 @@ object ServicePipeline {
     __obj.asInstanceOf[ServicePipeline]
   }
   
-  extension [Self <: ServicePipeline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePipeline] (val x: Self) extends AnyVal {
     
     inline def setArn(value: Arn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

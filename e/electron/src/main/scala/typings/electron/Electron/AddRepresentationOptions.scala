@@ -39,7 +39,8 @@ object AddRepresentationOptions {
     __obj.asInstanceOf[AddRepresentationOptions]
   }
   
-  extension [Self <: AddRepresentationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddRepresentationOptions] (val x: Self) extends AnyVal {
     
     inline def setBuffer(value: Buffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
     

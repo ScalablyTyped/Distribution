@@ -19,7 +19,8 @@ object MultiVarsReadResult {
     __obj.asInstanceOf[MultiVarsReadResult]
   }
   
-  extension [Self <: MultiVarsReadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultiVarsReadResult] (val x: Self) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "Data", value.asInstanceOf[js.Any])
     

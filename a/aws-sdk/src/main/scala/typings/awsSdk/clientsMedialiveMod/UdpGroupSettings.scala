@@ -28,7 +28,8 @@ object UdpGroupSettings {
     __obj.asInstanceOf[UdpGroupSettings]
   }
   
-  extension [Self <: UdpGroupSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UdpGroupSettings] (val x: Self) extends AnyVal {
     
     inline def setInputLossAction(value: InputLossActionForUdpOut): Self = StObject.set(x, "InputLossAction", value.asInstanceOf[js.Any])
     

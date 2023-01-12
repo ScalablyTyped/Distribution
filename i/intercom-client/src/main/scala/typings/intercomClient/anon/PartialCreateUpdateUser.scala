@@ -58,7 +58,8 @@ object PartialCreateUpdateUser {
     __obj.asInstanceOf[PartialCreateUpdateUser]
   }
   
-  extension [Self <: PartialCreateUpdateUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialCreateUpdateUser] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

@@ -207,7 +207,8 @@ object AV {
       __obj.asInstanceOf[Buffer]
     }
     
-    extension [Self <: Buffer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
       
       inline def setCopy(value: () => Buffer): Self = StObject.set(x, "copy", js.Any.fromFunction0(value))
       
@@ -269,7 +270,8 @@ object AV {
       __obj.asInstanceOf[BufferList]
     }
     
-    extension [Self <: BufferList](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferList] (val x: Self) extends AnyVal {
       
       inline def setAdvance(value: () => Boolean): Self = StObject.set(x, "advance", js.Any.fromFunction0(value))
       
@@ -493,7 +495,8 @@ object AV {
       __obj.asInstanceOf[EventEmitter]
     }
     
-    extension [Self <: EventEmitter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitter] (val x: Self) extends AnyVal {
       
       inline def setEmit(value: (String, /* repeated */ Any) => Unit): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
@@ -516,7 +519,8 @@ object AV {
       __obj.asInstanceOf[Filter]
     }
     
-    extension [Self <: Filter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Filter] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: TypedArray => Unit): Self = StObject.set(x, "process", js.Any.fromFunction1(value))
     }
@@ -539,7 +543,8 @@ object AV {
       __obj.asInstanceOf[Format]
     }
     
-    extension [Self <: Format](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Format] (val x: Self) extends AnyVal {
       
       inline def setBitsPerChannel(value: Double): Self = StObject.set(x, "bitsPerChannel", value.asInstanceOf[js.Any])
       
@@ -562,7 +567,8 @@ object AV {
       __obj.asInstanceOf[HttpSourceOpts]
     }
     
-    extension [Self <: HttpSourceOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpSourceOpts] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

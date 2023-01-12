@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsAddressInputMod extends Shortcut
       __obj.asInstanceOf[AddressInputProps]
     }
     
-    extension [Self <: AddressInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddressInputProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -15,7 +15,8 @@ object AppOnline {
     __obj.asInstanceOf[AppOnline]
   }
   
-  extension [Self <: AppOnline](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppOnline] (val x: Self) extends AnyVal {
     
     inline def setAppOnline(value: Boolean): Self = StObject.set(x, "appOnline", value.asInstanceOf[js.Any])
   }

@@ -23,7 +23,8 @@ object DetachThingPrincipalRequest {
     __obj.asInstanceOf[DetachThingPrincipalRequest]
   }
   
-  extension [Self <: DetachThingPrincipalRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetachThingPrincipalRequest] (val x: Self) extends AnyVal {
     
     inline def setPrincipal(value: Principal): Self = StObject.set(x, "principal", value.asInstanceOf[js.Any])
     

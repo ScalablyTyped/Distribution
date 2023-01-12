@@ -21,7 +21,8 @@ object NodesReloadSecureSettingsRequest {
     __obj.asInstanceOf[NodesReloadSecureSettingsRequest]
   }
   
-  extension [Self <: NodesReloadSecureSettingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesReloadSecureSettingsRequest] (val x: Self) extends AnyVal {
     
     inline def setNode_id(value: NodeIds): Self = StObject.set(x, "node_id", value.asInstanceOf[js.Any])
     

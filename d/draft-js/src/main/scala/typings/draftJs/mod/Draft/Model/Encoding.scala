@@ -46,7 +46,8 @@ object Encoding {
       __obj.asInstanceOf[RawDraftContentBlock]
     }
     
-    extension [Self <: RawDraftContentBlock](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftContentBlock] (val x: Self) extends AnyVal {
       
       inline def setData(value: StringDictionary[Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object Encoding {
       __obj.asInstanceOf[RawDraftContentState]
     }
     
-    extension [Self <: RawDraftContentState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftContentState] (val x: Self) extends AnyVal {
       
       inline def setBlocks(value: js.Array[RawDraftContentBlock]): Self = StObject.set(x, "blocks", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object Encoding {
       __obj.asInstanceOf[RawDraftEntity[T]]
     }
     
-    extension [Self <: RawDraftEntity[?], T](x: Self & RawDraftEntity[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftEntity[?], T] (val x: Self & RawDraftEntity[T]) extends AnyVal {
       
       inline def setData(value: T): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -155,7 +158,8 @@ object Encoding {
       __obj.asInstanceOf[RawDraftEntityRange]
     }
     
-    extension [Self <: RawDraftEntityRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftEntityRange] (val x: Self) extends AnyVal {
       
       inline def setKey(value: Double): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -183,7 +187,8 @@ object Encoding {
       __obj.asInstanceOf[RawDraftInlineStyleRange]
     }
     
-    extension [Self <: RawDraftInlineStyleRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RawDraftInlineStyleRange] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

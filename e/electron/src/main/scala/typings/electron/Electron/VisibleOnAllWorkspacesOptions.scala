@@ -31,7 +31,8 @@ object VisibleOnAllWorkspacesOptions {
     __obj.asInstanceOf[VisibleOnAllWorkspacesOptions]
   }
   
-  extension [Self <: VisibleOnAllWorkspacesOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisibleOnAllWorkspacesOptions] (val x: Self) extends AnyVal {
     
     inline def setSkipTransformProcessType(value: Boolean): Self = StObject.set(x, "skipTransformProcessType", value.asInstanceOf[js.Any])
     

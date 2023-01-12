@@ -35,7 +35,8 @@ object distAgentWrapperMod {
       __obj.asInstanceOf[Agent]
     }
     
-    extension [Self <: Agent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Agent] (val x: Self) extends AnyVal {
       
       inline def setGetAgent(value: String => typings.node.httpMod.Agent): Self = StObject.set(x, "getAgent", js.Any.fromFunction1(value))
       

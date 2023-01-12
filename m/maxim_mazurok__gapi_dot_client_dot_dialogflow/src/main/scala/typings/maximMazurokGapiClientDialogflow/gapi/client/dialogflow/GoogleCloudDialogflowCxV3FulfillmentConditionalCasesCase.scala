@@ -22,7 +22,8 @@ object GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase {
     __obj.asInstanceOf[GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase]
   }
   
-  extension [Self <: GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCase] (val x: Self) extends AnyVal {
     
     inline def setCaseContent(value: js.Array[GoogleCloudDialogflowCxV3FulfillmentConditionalCasesCaseCaseContent]): Self = StObject.set(x, "caseContent", value.asInstanceOf[js.Any])
     

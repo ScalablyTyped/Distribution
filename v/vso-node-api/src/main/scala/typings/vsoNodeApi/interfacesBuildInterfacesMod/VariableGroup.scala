@@ -40,7 +40,8 @@ object VariableGroup {
     __obj.asInstanceOf[VariableGroup]
   }
   
-  extension [Self <: VariableGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableGroup] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

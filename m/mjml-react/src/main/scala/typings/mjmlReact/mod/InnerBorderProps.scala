@@ -25,7 +25,8 @@ object InnerBorderProps {
     __obj.asInstanceOf[InnerBorderProps]
   }
   
-  extension [Self <: InnerBorderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InnerBorderProps] (val x: Self) extends AnyVal {
     
     inline def setInnerBorder(value: String): Self = StObject.set(x, "innerBorder", value.asInstanceOf[js.Any])
     

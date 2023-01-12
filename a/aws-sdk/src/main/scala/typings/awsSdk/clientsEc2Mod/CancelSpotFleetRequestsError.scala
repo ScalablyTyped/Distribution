@@ -23,7 +23,8 @@ object CancelSpotFleetRequestsError {
     __obj.asInstanceOf[CancelSpotFleetRequestsError]
   }
   
-  extension [Self <: CancelSpotFleetRequestsError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelSpotFleetRequestsError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: CancelBatchErrorCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

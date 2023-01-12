@@ -21,7 +21,8 @@ object SignDefinition {
     __obj.asInstanceOf[SignDefinition]
   }
   
-  extension [Self <: SignDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignDefinition] (val x: Self) extends AnyVal {
     
     inline def setDatetime(value: js.Date): Self = StObject.set(x, "datetime", value.asInstanceOf[js.Any])
     

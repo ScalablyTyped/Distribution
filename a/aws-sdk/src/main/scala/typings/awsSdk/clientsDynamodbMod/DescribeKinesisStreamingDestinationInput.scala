@@ -18,7 +18,8 @@ object DescribeKinesisStreamingDestinationInput {
     __obj.asInstanceOf[DescribeKinesisStreamingDestinationInput]
   }
   
-  extension [Self <: DescribeKinesisStreamingDestinationInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeKinesisStreamingDestinationInput] (val x: Self) extends AnyVal {
     
     inline def setTableName(value: TableName): Self = StObject.set(x, "TableName", value.asInstanceOf[js.Any])
   }

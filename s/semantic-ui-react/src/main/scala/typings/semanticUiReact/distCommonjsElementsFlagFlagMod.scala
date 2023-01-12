@@ -1533,7 +1533,8 @@ object distCommonjsElementsFlagFlagMod {
       __obj.asInstanceOf[StrictFlagProps]
     }
     
-    extension [Self <: StrictFlagProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictFlagProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

@@ -49,7 +49,8 @@ object AsepriteFileConfig {
     __obj.asInstanceOf[AsepriteFileConfig]
   }
   
-  extension [Self <: AsepriteFileConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsepriteFileConfig] (val x: Self) extends AnyVal {
     
     inline def setAtlasExtension(value: String): Self = StObject.set(x, "atlasExtension", value.asInstanceOf[js.Any])
     

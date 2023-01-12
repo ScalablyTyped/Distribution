@@ -20,7 +20,8 @@ object ServiceEventHandlers {
     __obj.asInstanceOf[ServiceEventHandlers]
   }
   
-  extension [Self <: ServiceEventHandlers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceEventHandlers] (val x: Self) extends AnyVal {
     
     inline def setOnserviceadded(value: Event => Any): Self = StObject.set(x, "onserviceadded", js.Any.fromFunction1(value))
     

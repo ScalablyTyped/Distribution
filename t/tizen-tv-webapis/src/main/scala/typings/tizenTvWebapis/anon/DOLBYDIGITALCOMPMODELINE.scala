@@ -33,7 +33,8 @@ object DOLBYDIGITALCOMPMODELINE {
     __obj.asInstanceOf[DOLBYDIGITALCOMPMODELINE]
   }
   
-  extension [Self <: DOLBYDIGITALCOMPMODELINE](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOLBYDIGITALCOMPMODELINE] (val x: Self) extends AnyVal {
     
     inline def setDOLBY_DIGITAL_COMP_MODE_LINE(value: `0`): Self = StObject.set(x, "DOLBY_DIGITAL_COMP_MODE_LINE", value.asInstanceOf[js.Any])
     

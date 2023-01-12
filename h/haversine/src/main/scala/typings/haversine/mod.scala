@@ -50,7 +50,8 @@ object mod {
       __obj.asInstanceOf[CoordinateLatLng]
     }
     
-    extension [Self <: CoordinateLatLng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateLatLng] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object mod {
       __obj.asInstanceOf[CoordinateLonLat]
     }
     
-    extension [Self <: CoordinateLonLat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateLonLat] (val x: Self) extends AnyVal {
       
       inline def setLat(value: Double): Self = StObject.set(x, "lat", value.asInstanceOf[js.Any])
       
@@ -96,7 +98,8 @@ object mod {
       __obj.asInstanceOf[CoordinateLongitudeLatitude]
     }
     
-    extension [Self <: CoordinateLongitudeLatitude](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CoordinateLongitudeLatitude] (val x: Self) extends AnyVal {
       
       inline def setLatitude(value: Double): Self = StObject.set(x, "latitude", value.asInstanceOf[js.Any])
       
@@ -117,7 +120,8 @@ object mod {
       __obj.asInstanceOf[GeoJSON]
     }
     
-    extension [Self <: GeoJSON](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GeoJSON] (val x: Self) extends AnyVal {
       
       inline def setGeometry(value: Coordinates): Self = StObject.set(x, "geometry", value.asInstanceOf[js.Any])
     }
@@ -147,7 +151,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setFormat(
         value: `[latCommalon]` | `[lonCommalat]` | LeftcurlybracketlonCommalatRightcurlybracket | LeftcurlybracketlatCommalngRightcurlybracket | geojson

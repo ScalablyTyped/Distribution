@@ -37,7 +37,8 @@ object ShowObjectFull {
     __obj.asInstanceOf[ShowObjectFull]
   }
   
-  extension [Self <: ShowObjectFull](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowObjectFull] (val x: Self) extends AnyVal {
     
     inline def setEpisodes(value: js.Array[EpisodeObjectSimplified]): Self = StObject.set(x, "episodes", value.asInstanceOf[js.Any])
     

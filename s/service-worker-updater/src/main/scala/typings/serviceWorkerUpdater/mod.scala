@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[CheckOptions]
     }
     
-    extension [Self <: CheckOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckOptions] (val x: Self) extends AnyVal {
       
       inline def setCheckInterval(value: Double): Self = StObject.set(x, "checkInterval", value.asInstanceOf[js.Any])
       
@@ -60,7 +61,8 @@ object mod {
       __obj.asInstanceOf[InjectedUpdateProps]
     }
     
-    extension [Self <: InjectedUpdateProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InjectedUpdateProps] (val x: Self) extends AnyVal {
       
       inline def setHasUpdate(value: Boolean): Self = StObject.set(x, "hasUpdate", value.asInstanceOf[js.Any])
       

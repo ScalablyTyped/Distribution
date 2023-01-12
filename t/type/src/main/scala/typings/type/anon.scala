@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[AllowString]
     }
     
-    extension [Self <: AllowString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AllowString] (val x: Self) extends AnyVal {
       
       inline def setAllowString(value: Boolean): Self = StObject.set(x, "allowString", value.asInstanceOf[js.Any])
       
@@ -38,7 +39,8 @@ object anon {
       __obj.asInstanceOf[DenyEmpty]
     }
     
-    extension [Self <: DenyEmpty](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DenyEmpty] (val x: Self) extends AnyVal {
       
       inline def setAllowString(value: Boolean): Self = StObject.set(x, "allowString", value.asInstanceOf[js.Any])
       

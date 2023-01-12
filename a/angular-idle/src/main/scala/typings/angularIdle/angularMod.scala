@@ -142,7 +142,8 @@ object angularMod {
         __obj.asInstanceOf[IIdleService]
       }
       
-      extension [Self <: IIdleService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IIdleService] (val x: Self) extends AnyVal {
         
         inline def setGetIdle(value: () => Double): Self = StObject.set(x, "getIdle", js.Any.fromFunction0(value))
         
@@ -230,7 +231,8 @@ object angularMod {
         __obj.asInstanceOf[IKeepAliveService]
       }
       
-      extension [Self <: IKeepAliveService](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IKeepAliveService] (val x: Self) extends AnyVal {
         
         inline def setPing(value: () => Unit): Self = StObject.set(x, "ping", js.Any.fromFunction0(value))
         
@@ -263,7 +265,8 @@ object angularMod {
         __obj.asInstanceOf[ITitleProvider]
       }
       
-      extension [Self <: ITitleProvider](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ITitleProvider] (val x: Self) extends AnyVal {
         
         inline def setEnabled(value: Boolean => Unit): Self = StObject.set(x, "enabled", js.Any.fromFunction1(value))
       }

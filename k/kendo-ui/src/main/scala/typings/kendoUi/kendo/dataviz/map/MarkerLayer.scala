@@ -39,7 +39,8 @@ object MarkerLayer {
     __obj.asInstanceOf[MarkerLayer]
   }
   
-  extension [Self <: MarkerLayer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerLayer] (val x: Self) extends AnyVal {
     
     inline def setAdd(value: Marker => Unit): Self = StObject.set(x, "add", js.Any.fromFunction1(value))
     

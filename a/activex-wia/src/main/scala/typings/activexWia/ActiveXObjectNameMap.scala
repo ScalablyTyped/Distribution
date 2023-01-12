@@ -53,7 +53,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setWIADotCommonDialog(value: CommonDialog): Self = StObject.set(x, "WIA.CommonDialog", value.asInstanceOf[js.Any])
     

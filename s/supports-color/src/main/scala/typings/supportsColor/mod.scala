@@ -74,7 +74,8 @@ object mod {
       __obj.asInstanceOf[ColorSupport]
     }
     
-    extension [Self <: ColorSupport](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ColorSupport] (val x: Self) extends AnyVal {
       
       inline def setHas16m(value: Boolean): Self = StObject.set(x, "has16m", value.asInstanceOf[js.Any])
       
@@ -119,7 +120,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setSniffFlags(value: Boolean): Self = StObject.set(x, "sniffFlags", value.asInstanceOf[js.Any])
       

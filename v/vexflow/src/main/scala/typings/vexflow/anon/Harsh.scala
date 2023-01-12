@@ -21,7 +21,8 @@ object Harsh {
     __obj.asInstanceOf[Harsh]
   }
   
-  extension [Self <: Harsh](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Harsh] (val x: Self) extends AnyVal {
     
     inline def setHarsh(value: Boolean): Self = StObject.set(x, "harsh", value.asInstanceOf[js.Any])
     

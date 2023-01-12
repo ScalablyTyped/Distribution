@@ -18,7 +18,8 @@ object CreateLocationObjectStorageResponse {
     __obj.asInstanceOf[CreateLocationObjectStorageResponse]
   }
   
-  extension [Self <: CreateLocationObjectStorageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateLocationObjectStorageResponse] (val x: Self) extends AnyVal {
     
     inline def setLocationArn(value: LocationArn): Self = StObject.set(x, "LocationArn", value.asInstanceOf[js.Any])
     

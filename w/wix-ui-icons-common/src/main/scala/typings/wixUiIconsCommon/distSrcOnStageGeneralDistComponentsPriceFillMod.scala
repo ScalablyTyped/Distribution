@@ -27,7 +27,8 @@ object distSrcOnStageGeneralDistComponentsPriceFillMod extends Shortcut {
       __obj.asInstanceOf[PriceFillProps]
     }
     
-    extension [Self <: PriceFillProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PriceFillProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

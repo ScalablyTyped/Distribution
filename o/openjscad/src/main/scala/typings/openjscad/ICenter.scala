@@ -15,7 +15,8 @@ object ICenter {
     __obj.asInstanceOf[ICenter]
   }
   
-  extension [Self <: ICenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICenter] (val x: Self) extends AnyVal {
     
     inline def setCenter(value: js.Array[String] => CxG): Self = StObject.set(x, "center", js.Any.fromFunction1(value))
   }

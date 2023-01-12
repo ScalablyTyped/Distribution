@@ -32,7 +32,8 @@ object libGlyphiconMod {
       __obj.asInstanceOf[GlyphiconProps]
     }
     
-    extension [Self <: GlyphiconProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GlyphiconProps] (val x: Self) extends AnyVal {
       
       inline def setBsClass(value: String): Self = StObject.set(x, "bsClass", value.asInstanceOf[js.Any])
       

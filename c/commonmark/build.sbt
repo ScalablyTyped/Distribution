@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "commonmark"
-version := "0.27-dt-20211202Z-1d724d"
+version := "0.27-dt-20211202Z-bd3258"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

@@ -15,7 +15,8 @@ object NodesInfoDeprecationIndexing {
     __obj.asInstanceOf[NodesInfoDeprecationIndexing]
   }
   
-  extension [Self <: NodesInfoDeprecationIndexing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NodesInfoDeprecationIndexing] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean | String): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
   }

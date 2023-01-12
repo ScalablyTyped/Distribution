@@ -19,7 +19,8 @@ object DiskStatus {
     __obj.asInstanceOf[DiskStatus]
   }
   
-  extension [Self <: DiskStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiskStatus] (val x: Self) extends AnyVal {
     
     inline def setFreeSpaceBytes(value: String): Self = StObject.set(x, "freeSpaceBytes", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object CachePolicyHeadersConfig {
     __obj.asInstanceOf[CachePolicyHeadersConfig]
   }
   
-  extension [Self <: CachePolicyHeadersConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CachePolicyHeadersConfig] (val x: Self) extends AnyVal {
     
     inline def setHeaderBehavior(value: CachePolicyHeaderBehavior): Self = StObject.set(x, "HeaderBehavior", value.asInstanceOf[js.Any])
     

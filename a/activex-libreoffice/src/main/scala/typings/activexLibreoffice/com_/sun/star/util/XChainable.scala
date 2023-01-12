@@ -50,7 +50,8 @@ object XChainable {
     __obj.asInstanceOf[XChainable]
   }
   
-  extension [Self <: XChainable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XChainable] (val x: Self) extends AnyVal {
     
     inline def setGetPredecessor(value: () => XChainable): Self = StObject.set(x, "getPredecessor", js.Any.fromFunction0(value))
     

@@ -25,7 +25,8 @@ object libUtilitiesDraggableZoneDraggableZoneDottypesMod {
       __obj.asInstanceOf[ICoordinates]
     }
     
-    extension [Self <: ICoordinates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICoordinates] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       
@@ -48,7 +49,8 @@ object libUtilitiesDraggableZoneDraggableZoneDottypesMod {
       __obj.asInstanceOf[IDragData]
     }
     
-    extension [Self <: IDragData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDragData] (val x: Self) extends AnyVal {
       
       inline def setDelta(value: ICoordinates): Self = StObject.set(x, "delta", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object libUtilitiesDraggableZoneDraggableZoneDottypesMod {
       __obj.asInstanceOf[IDraggableZoneProps]
     }
     
-    extension [Self <: IDraggableZoneProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDraggableZoneProps] (val x: Self) extends AnyVal {
       
       inline def setHandleSelector(value: String): Self = StObject.set(x, "handleSelector", value.asInstanceOf[js.Any])
       

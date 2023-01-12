@@ -19,7 +19,8 @@ object Email {
       __obj.asInstanceOf[CustomEmailOptions]
     }
     
-    extension [Self <: CustomEmailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomEmailOptions] (val x: Self) extends AnyVal {
       
       inline def setPackageSettings(value: Any): Self = StObject.set(x, "packageSettings", value.asInstanceOf[js.Any])
       
@@ -58,7 +59,8 @@ object Email {
       __obj.asInstanceOf[EmailOptions]
     }
     
-    extension [Self <: EmailOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EmailOptions] (val x: Self) extends AnyVal {
       
       inline def setAttachments(value: js.Array[js.Object]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       

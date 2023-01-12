@@ -45,7 +45,8 @@ object libComponentsTextInputControlledPasswordInputMod extends Shortcut {
       __obj.asInstanceOf[ControlledPasswordInputProps]
     }
     
-    extension [Self <: ControlledPasswordInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlledPasswordInputProps] (val x: Self) extends AnyVal {
       
       inline def setHidePasswordLabel(value: String): Self = StObject.set(x, "hidePasswordLabel", value.asInstanceOf[js.Any])
       

@@ -52,7 +52,8 @@ object typesTopicConfigurationDeprecatedMod {
       __obj.asInstanceOf[TopicConfigurationDeprecated]
     }
     
-    extension [Self <: TopicConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TopicConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setEvent(
         value: s3ColonReducedRedundancyLostObject | s3ColonObjectCreatedColonAsterisk | s3ColonObjectCreatedColonPut | s3ColonObjectCreatedColonPost | s3ColonObjectCreatedColonCopy | s3ColonObjectCreatedColonCompleteMultipartUpload | s3ColonObjectRemovedColonAsterisk | s3ColonObjectRemovedColonDelete | s3ColonObjectRemovedColonDeleteMarkerCreated | String
@@ -105,7 +106,8 @@ object typesTopicConfigurationDeprecatedMod {
       __obj.asInstanceOf[UnmarshalledTopicConfigurationDeprecated]
     }
     
-    extension [Self <: UnmarshalledTopicConfigurationDeprecated](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledTopicConfigurationDeprecated] (val x: Self) extends AnyVal {
       
       inline def setEvents(
         value: js.Array[

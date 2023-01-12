@@ -23,7 +23,8 @@ object TipOptions {
     __obj.asInstanceOf[TipOptions]
   }
   
-  extension [Self <: TipOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TipOptions] (val x: Self) extends AnyVal {
     
     inline def setAuthorizeOnly(value: Boolean): Self = StObject.set(x, "authorizeOnly", value.asInstanceOf[js.Any])
     

@@ -56,7 +56,8 @@ object VoterInfoResponse {
     __obj.asInstanceOf[VoterInfoResponse]
   }
   
-  extension [Self <: VoterInfoResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VoterInfoResponse] (val x: Self) extends AnyVal {
     
     inline def setContests(value: js.Array[Contest]): Self = StObject.set(x, "contests", value.asInstanceOf[js.Any])
     

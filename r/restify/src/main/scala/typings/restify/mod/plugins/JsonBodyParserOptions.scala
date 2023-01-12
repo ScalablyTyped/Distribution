@@ -21,7 +21,8 @@ object JsonBodyParserOptions {
     __obj.asInstanceOf[JsonBodyParserOptions]
   }
   
-  extension [Self <: JsonBodyParserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JsonBodyParserOptions] (val x: Self) extends AnyVal {
     
     inline def setBodyReader(value: Boolean): Self = StObject.set(x, "bodyReader", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[IgnoreInvalidLocales]
     }
     
-    extension [Self <: IgnoreInvalidLocales](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreInvalidLocales] (val x: Self) extends AnyVal {
       
       inline def setIgnoreInvalidLocales(value: Boolean): Self = StObject.set(x, "ignoreInvalidLocales", value.asInstanceOf[js.Any])
       

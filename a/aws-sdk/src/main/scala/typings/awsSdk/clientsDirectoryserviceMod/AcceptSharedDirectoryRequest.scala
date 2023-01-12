@@ -18,7 +18,8 @@ object AcceptSharedDirectoryRequest {
     __obj.asInstanceOf[AcceptSharedDirectoryRequest]
   }
   
-  extension [Self <: AcceptSharedDirectoryRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AcceptSharedDirectoryRequest] (val x: Self) extends AnyVal {
     
     inline def setSharedDirectoryId(value: DirectoryId): Self = StObject.set(x, "SharedDirectoryId", value.asInstanceOf[js.Any])
   }

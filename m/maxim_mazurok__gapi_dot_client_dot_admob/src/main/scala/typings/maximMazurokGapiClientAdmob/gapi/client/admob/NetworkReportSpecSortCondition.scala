@@ -22,7 +22,8 @@ object NetworkReportSpecSortCondition {
     __obj.asInstanceOf[NetworkReportSpecSortCondition]
   }
   
-  extension [Self <: NetworkReportSpecSortCondition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkReportSpecSortCondition] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

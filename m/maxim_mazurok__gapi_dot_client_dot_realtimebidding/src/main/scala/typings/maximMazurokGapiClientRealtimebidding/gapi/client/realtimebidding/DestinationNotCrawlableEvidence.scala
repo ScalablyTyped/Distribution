@@ -22,7 +22,8 @@ object DestinationNotCrawlableEvidence {
     __obj.asInstanceOf[DestinationNotCrawlableEvidence]
   }
   
-  extension [Self <: DestinationNotCrawlableEvidence](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DestinationNotCrawlableEvidence] (val x: Self) extends AnyVal {
     
     inline def setCrawlTime(value: String): Self = StObject.set(x, "crawlTime", value.asInstanceOf[js.Any])
     

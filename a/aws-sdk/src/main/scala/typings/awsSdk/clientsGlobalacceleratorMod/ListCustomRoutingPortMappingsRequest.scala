@@ -33,7 +33,8 @@ object ListCustomRoutingPortMappingsRequest {
     __obj.asInstanceOf[ListCustomRoutingPortMappingsRequest]
   }
   
-  extension [Self <: ListCustomRoutingPortMappingsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCustomRoutingPortMappingsRequest] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorArn(value: GenericString): Self = StObject.set(x, "AcceleratorArn", value.asInstanceOf[js.Any])
     

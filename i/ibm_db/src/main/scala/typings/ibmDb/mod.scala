@@ -595,7 +595,8 @@ object mod {
       __obj.asInstanceOf[ConnStr]
     }
     
-    extension [Self <: ConnStr](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnStr] (val x: Self) extends AnyVal {
       
       inline def setDATABASE(value: String): Self = StObject.set(x, "DATABASE", value.asInstanceOf[js.Any])
       
@@ -630,7 +631,8 @@ object mod {
       __obj.asInstanceOf[DescribeObject]
     }
     
-    extension [Self <: DescribeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DescribeObject] (val x: Self) extends AnyVal {
       
       inline def setColumn(value: String): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])
       
@@ -673,7 +675,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setConnectTimeout(value: Double): Self = StObject.set(x, "connectTimeout", value.asInstanceOf[js.Any])
       
@@ -726,7 +729,8 @@ object mod {
       __obj.asInstanceOf[PoolOptions]
     }
     
-    extension [Self <: PoolOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PoolOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoCleanIdle(value: Boolean): Self = StObject.set(x, "autoCleanIdle", value.asInstanceOf[js.Any])
       

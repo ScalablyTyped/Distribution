@@ -28,7 +28,8 @@ object SamlProperties {
     __obj.asInstanceOf[SamlProperties]
   }
   
-  extension [Self <: SamlProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SamlProperties] (val x: Self) extends AnyVal {
     
     inline def setRelayStateParameterName(value: NonEmptyString): Self = StObject.set(x, "RelayStateParameterName", value.asInstanceOf[js.Any])
     

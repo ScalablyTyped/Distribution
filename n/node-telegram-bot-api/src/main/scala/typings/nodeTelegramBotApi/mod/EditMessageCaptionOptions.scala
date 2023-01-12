@@ -21,7 +21,8 @@ object EditMessageCaptionOptions {
     __obj.asInstanceOf[EditMessageCaptionOptions]
   }
   
-  extension [Self <: EditMessageCaptionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditMessageCaptionOptions] (val x: Self) extends AnyVal {
     
     inline def setCaption_entities(value: js.Array[MessageEntity]): Self = StObject.set(x, "caption_entities", value.asInstanceOf[js.Any])
     

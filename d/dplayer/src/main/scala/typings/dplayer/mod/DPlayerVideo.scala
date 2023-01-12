@@ -27,7 +27,8 @@ object DPlayerVideo {
     __obj.asInstanceOf[DPlayerVideo]
   }
   
-  extension [Self <: DPlayerVideo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DPlayerVideo] (val x: Self) extends AnyVal {
     
     inline def setCustomType(value: Any): Self = StObject.set(x, "customType", value.asInstanceOf[js.Any])
     

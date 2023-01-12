@@ -18,7 +18,8 @@ object GetServiceTemplateVersionOutput {
     __obj.asInstanceOf[GetServiceTemplateVersionOutput]
   }
   
-  extension [Self <: GetServiceTemplateVersionOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetServiceTemplateVersionOutput] (val x: Self) extends AnyVal {
     
     inline def setServiceTemplateVersion(value: ServiceTemplateVersion): Self = StObject.set(x, "serviceTemplateVersion", value.asInstanceOf[js.Any])
   }

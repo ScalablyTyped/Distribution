@@ -18,7 +18,8 @@ object ThrottlingRetryPolicyOptions {
     __obj.asInstanceOf[ThrottlingRetryPolicyOptions]
   }
   
-  extension [Self <: ThrottlingRetryPolicyOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThrottlingRetryPolicyOptions] (val x: Self) extends AnyVal {
     
     inline def setMaxRetries(value: Double): Self = StObject.set(x, "maxRetries", value.asInstanceOf[js.Any])
     

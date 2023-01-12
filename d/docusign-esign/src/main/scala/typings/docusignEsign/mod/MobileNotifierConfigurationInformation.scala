@@ -15,7 +15,8 @@ object MobileNotifierConfigurationInformation {
     __obj.asInstanceOf[MobileNotifierConfigurationInformation]
   }
   
-  extension [Self <: MobileNotifierConfigurationInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileNotifierConfigurationInformation] (val x: Self) extends AnyVal {
     
     inline def setMobileNotifierConfigurations(value: js.Array[MobileNotifierConfiguration]): Self = StObject.set(x, "mobileNotifierConfigurations", value.asInstanceOf[js.Any])
     

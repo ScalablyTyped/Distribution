@@ -30,7 +30,8 @@ object typesVersioningConfigurationMod {
       __obj.asInstanceOf[VersioningConfiguration]
     }
     
-    extension [Self <: VersioningConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VersioningConfiguration] (val x: Self) extends AnyVal {
       
       inline def setMFADelete(value: Enabled | Disabled | String): Self = StObject.set(x, "MFADelete", value.asInstanceOf[js.Any])
       

@@ -22,7 +22,8 @@ object SlsaCompleteness {
     __obj.asInstanceOf[SlsaCompleteness]
   }
   
-  extension [Self <: SlsaCompleteness](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlsaCompleteness] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: Boolean): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

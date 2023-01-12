@@ -109,7 +109,8 @@ object libMapHeatmapMod {
       __obj.asInstanceOf[MapHeatmapProps]
     }
     
-    extension [Self <: MapHeatmapProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MapHeatmapProps] (val x: Self) extends AnyVal {
       
       inline def setGradient(value: ColorMapSize): Self = StObject.set(x, "gradient", value.asInstanceOf[js.Any])
       
@@ -285,7 +286,8 @@ object libMapHeatmapMod {
       __obj.asInstanceOf[NativeProps]
     }
     
-    extension [Self <: NativeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeProps] (val x: Self) extends AnyVal {
       
       inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
       
@@ -596,7 +598,8 @@ object libMapHeatmapMod {
       __obj.asInstanceOf[WeightedLatLng]
     }
     
-    extension [Self <: WeightedLatLng](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WeightedLatLng] (val x: Self) extends AnyVal {
       
       inline def setWeight(value: Double): Self = StObject.set(x, "weight", value.asInstanceOf[js.Any])
       

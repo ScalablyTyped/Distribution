@@ -46,7 +46,8 @@ object TerrainData {
     __obj.asInstanceOf[TerrainData]
   }
   
-  extension [Self <: TerrainData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TerrainData] (val x: Self) extends AnyVal {
     
     inline def setDepthTexture(value: WebGLTexture): Self = StObject.set(x, "depthTexture", value.asInstanceOf[js.Any])
     

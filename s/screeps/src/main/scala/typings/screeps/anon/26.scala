@@ -15,7 +15,8 @@ object `26` {
     __obj.asInstanceOf[`26`]
   }
   
-  extension [Self <: `26`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `26`] (val x: Self) extends AnyVal {
     
     inline def setUpgradeController(value: typings.screeps.screepsInts.`2`): Self = StObject.set(x, "upgradeController", value.asInstanceOf[js.Any])
   }

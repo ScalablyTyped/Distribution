@@ -20,7 +20,8 @@ object FeatureLayerBaseElevationInfoFeatureExpressionInfo {
     __obj.asInstanceOf[FeatureLayerBaseElevationInfoFeatureExpressionInfo]
   }
   
-  extension [Self <: FeatureLayerBaseElevationInfoFeatureExpressionInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureLayerBaseElevationInfoFeatureExpressionInfo] (val x: Self) extends AnyVal {
     
     inline def setExpression(value: String): Self = StObject.set(x, "expression", value.asInstanceOf[js.Any])
     

@@ -49,7 +49,8 @@ object CreateBatchImportJobRequest {
     __obj.asInstanceOf[CreateBatchImportJobRequest]
   }
   
-  extension [Self <: CreateBatchImportJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBatchImportJobRequest] (val x: Self) extends AnyVal {
     
     inline def setEventTypeName(value: identifier): Self = StObject.set(x, "eventTypeName", value.asInstanceOf[js.Any])
     

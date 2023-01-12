@@ -28,7 +28,8 @@ object FacetResult {
     __obj.asInstanceOf[FacetResult]
   }
   
-  extension [Self <: FacetResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FacetResult] (val x: Self) extends AnyVal {
     
     inline def setDocumentAttributeKey(value: DocumentAttributeKey): Self = StObject.set(x, "DocumentAttributeKey", value.asInstanceOf[js.Any])
     

@@ -65,7 +65,8 @@ object IncludeUnrevealedLocations {
     __obj.asInstanceOf[IncludeUnrevealedLocations]
   }
   
-  extension [Self <: IncludeUnrevealedLocations](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludeUnrevealedLocations] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

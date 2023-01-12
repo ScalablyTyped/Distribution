@@ -28,7 +28,8 @@ object EstimateTemplateCostInput {
     __obj.asInstanceOf[EstimateTemplateCostInput]
   }
   
-  extension [Self <: EstimateTemplateCostInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EstimateTemplateCostInput] (val x: Self) extends AnyVal {
     
     inline def setParameters(value: Parameters): Self = StObject.set(x, "Parameters", value.asInstanceOf[js.Any])
     

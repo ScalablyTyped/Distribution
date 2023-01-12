@@ -106,7 +106,8 @@ object AtomPub {
       __obj.asInstanceOf[IAtomPubClient]
     }
     
-    extension [Self <: IAtomPubClient](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAtomPubClient] (val x: Self) extends AnyVal {
       
       inline def setCancelAsyncOperations(value: () => Unit): Self = StObject.set(x, "cancelAsyncOperations", js.Any.fromFunction0(value))
       
@@ -147,7 +148,8 @@ object AtomPub {
       __obj.asInstanceOf[IAtomPubClientFactory]
     }
     
-    extension [Self <: IAtomPubClientFactory](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAtomPubClientFactory] (val x: Self) extends AnyVal {
       
       inline def setCreateAtomPubClientWithCredentials(value: PasswordCredential => AtomPubClient): Self = StObject.set(x, "createAtomPubClientWithCredentials", js.Any.fromFunction1(value))
     }
@@ -185,7 +187,8 @@ object AtomPub {
       __obj.asInstanceOf[IResourceCollection]
     }
     
-    extension [Self <: IResourceCollection](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IResourceCollection] (val x: Self) extends AnyVal {
       
       inline def setAccepts(value: IVectorView[String]): Self = StObject.set(x, "accepts", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object AtomPub {
       __obj.asInstanceOf[IServiceDocument]
     }
     
-    extension [Self <: IServiceDocument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IServiceDocument] (val x: Self) extends AnyVal {
       
       inline def setWorkspaces(value: IVectorView[Workspace]): Self = StObject.set(x, "workspaces", value.asInstanceOf[js.Any])
     }
@@ -252,7 +256,8 @@ object AtomPub {
       __obj.asInstanceOf[IWorkspace]
     }
     
-    extension [Self <: IWorkspace](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IWorkspace] (val x: Self) extends AnyVal {
       
       inline def setCollections(value: IVectorView[ResourceCollection]): Self = StObject.set(x, "collections", value.asInstanceOf[js.Any])
       

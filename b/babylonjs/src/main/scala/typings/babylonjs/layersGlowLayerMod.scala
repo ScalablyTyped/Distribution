@@ -238,7 +238,8 @@ object layersGlowLayerMod {
       __obj.asInstanceOf[IGlowLayerOptions]
     }
     
-    extension [Self <: IGlowLayerOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGlowLayerOptions] (val x: Self) extends AnyVal {
       
       inline def setAlphaBlendingMode(value: Double): Self = StObject.set(x, "alphaBlendingMode", value.asInstanceOf[js.Any])
       
@@ -287,7 +288,8 @@ object layersGlowLayerMod {
         __obj.asInstanceOf[AbstractScene]
       }
       
-      extension [Self <: AbstractScene](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: AbstractScene] (val x: Self) extends AnyVal {
         
         inline def setGetGlowLayerByName(value: String => Nullable[GlowLayer]): Self = StObject.set(x, "getGlowLayerByName", js.Any.fromFunction1(value))
       }

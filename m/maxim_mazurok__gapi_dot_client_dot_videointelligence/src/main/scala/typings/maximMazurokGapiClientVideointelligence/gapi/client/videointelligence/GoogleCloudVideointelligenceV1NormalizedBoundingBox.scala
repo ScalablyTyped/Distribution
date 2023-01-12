@@ -25,7 +25,8 @@ object GoogleCloudVideointelligenceV1NormalizedBoundingBox {
     __obj.asInstanceOf[GoogleCloudVideointelligenceV1NormalizedBoundingBox]
   }
   
-  extension [Self <: GoogleCloudVideointelligenceV1NormalizedBoundingBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVideointelligenceV1NormalizedBoundingBox] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

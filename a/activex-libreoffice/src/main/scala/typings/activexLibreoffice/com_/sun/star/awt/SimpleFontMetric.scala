@@ -59,7 +59,8 @@ object SimpleFontMetric {
     __obj.asInstanceOf[SimpleFontMetric]
   }
   
-  extension [Self <: SimpleFontMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SimpleFontMetric] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "Ascent", value.asInstanceOf[js.Any])
     

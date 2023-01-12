@@ -18,7 +18,8 @@ object DeleteInstanceEventWindowResult {
     __obj.asInstanceOf[DeleteInstanceEventWindowResult]
   }
   
-  extension [Self <: DeleteInstanceEventWindowResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteInstanceEventWindowResult] (val x: Self) extends AnyVal {
     
     inline def setInstanceEventWindowState(value: InstanceEventWindowStateChange): Self = StObject.set(x, "InstanceEventWindowState", value.asInstanceOf[js.Any])
     

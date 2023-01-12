@@ -119,7 +119,8 @@ object mod {
       __obj.asInstanceOf[ContentInset]
     }
     
-    extension [Self <: ContentInset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContentInset] (val x: Self) extends AnyVal {
       
       inline def setInput(value: Double): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object mod {
       __obj.asInstanceOf[LabelOffset]
     }
     
-    extension [Self <: LabelOffset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelOffset] (val x: Self) extends AnyVal {
       
       inline def setX0(value: Double): Self = StObject.set(x, "x0", value.asInstanceOf[js.Any])
       
@@ -266,7 +268,8 @@ object mod {
       __obj.asInstanceOf[TextFieldProps]
     }
     
-    extension [Self <: TextFieldProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextFieldProps] (val x: Self) extends AnyVal {
       
       inline def setActiveLineWidth(value: Double): Self = StObject.set(x, "activeLineWidth", value.asInstanceOf[js.Any])
       

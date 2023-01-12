@@ -113,7 +113,8 @@ object Circle {
     __obj.asInstanceOf[Circle]
   }
   
-  extension [Self <: Circle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Circle] (val x: Self) extends AnyVal {
     
     inline def setAddEventListener(value: (String, Callback) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
     

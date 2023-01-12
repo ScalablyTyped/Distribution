@@ -29,7 +29,8 @@ object typesMod {
       __obj.asInstanceOf[MDCMenuItemComponentEventDetail]
     }
     
-    extension [Self <: MDCMenuItemComponentEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCMenuItemComponentEventDetail] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }
@@ -54,7 +55,8 @@ object typesMod {
       __obj.asInstanceOf[MDCMenuItemEventDetail]
     }
     
-    extension [Self <: MDCMenuItemEventDetail](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCMenuItemEventDetail] (val x: Self) extends AnyVal {
       
       inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     }

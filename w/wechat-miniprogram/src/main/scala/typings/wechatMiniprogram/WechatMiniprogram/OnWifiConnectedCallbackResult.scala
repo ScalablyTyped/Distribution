@@ -18,7 +18,8 @@ object OnWifiConnectedCallbackResult {
     __obj.asInstanceOf[OnWifiConnectedCallbackResult]
   }
   
-  extension [Self <: OnWifiConnectedCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnWifiConnectedCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setWifi(value: WifiInfo): Self = StObject.set(x, "wifi", value.asInstanceOf[js.Any])
   }

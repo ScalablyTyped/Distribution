@@ -53,7 +53,8 @@ object DescribeScheduledActionsMessage {
     __obj.asInstanceOf[DescribeScheduledActionsMessage]
   }
   
-  extension [Self <: DescribeScheduledActionsMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScheduledActionsMessage] (val x: Self) extends AnyVal {
     
     inline def setActive(value: BooleanOptional): Self = StObject.set(x, "Active", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object typesSimpleEmailPartMod {
       __obj.asInstanceOf[SimpleEmailPart]
     }
     
-    extension [Self <: SimpleEmailPart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleEmailPart] (val x: Self) extends AnyVal {
       
       inline def setCharset(value: String): Self = StObject.set(x, "Charset", value.asInstanceOf[js.Any])
       

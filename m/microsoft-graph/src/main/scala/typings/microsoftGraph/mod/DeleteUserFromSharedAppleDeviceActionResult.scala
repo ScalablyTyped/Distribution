@@ -18,7 +18,8 @@ object DeleteUserFromSharedAppleDeviceActionResult {
     __obj.asInstanceOf[DeleteUserFromSharedAppleDeviceActionResult]
   }
   
-  extension [Self <: DeleteUserFromSharedAppleDeviceActionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteUserFromSharedAppleDeviceActionResult] (val x: Self) extends AnyVal {
     
     inline def setUserPrincipalName(value: NullableOption[String]): Self = StObject.set(x, "userPrincipalName", value.asInstanceOf[js.Any])
     

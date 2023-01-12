@@ -18,7 +18,8 @@ object MarginLeftProps {
     __obj.asInstanceOf[MarginLeftProps[TLength]]
   }
   
-  extension [Self <: MarginLeftProps[?], TLength](x: Self & MarginLeftProps[TLength]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarginLeftProps[?], TLength] (val x: Self & MarginLeftProps[TLength]) extends AnyVal {
     
     inline def setMarginLeft(value: ResponsiveValue[MarginLeft[TLength]]): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
     

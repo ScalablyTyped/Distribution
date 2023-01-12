@@ -15,7 +15,8 @@ object DismissCount {
     __obj.asInstanceOf[DismissCount]
   }
   
-  extension [Self <: DismissCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DismissCount] (val x: Self) extends AnyVal {
     
     inline def setDismissCount(value: Double): Self = StObject.set(x, "dismissCount", value.asInstanceOf[js.Any])
   }

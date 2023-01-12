@@ -154,7 +154,8 @@ object Driving {
       __obj.asInstanceOf[District]
     }
     
-    extension [Self <: District](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: District] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       
@@ -216,7 +217,8 @@ object Driving {
       __obj.asInstanceOf[DriveRoute]
     }
     
-    extension [Self <: DriveRoute](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveRoute] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -336,7 +338,8 @@ object Driving {
       __obj.asInstanceOf[DriveStep]
     }
     
-    extension [Self <: DriveStep](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DriveStep] (val x: Self) extends AnyVal {
       
       inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -399,7 +402,8 @@ object Driving {
       __obj.asInstanceOf[EventMap]
     }
     
-    extension [Self <: EventMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       inline def setComplete(value: Event_[complete, SearchResult | Info]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
       
@@ -483,7 +487,8 @@ object Driving {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoFitView(value: Boolean): Self = StObject.set(x, "autoFitView", value.asInstanceOf[js.Any])
       
@@ -555,7 +560,8 @@ object Driving {
       __obj.asInstanceOf[Poi]
     }
     
-    extension [Self <: Poi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Poi] (val x: Self) extends AnyVal {
       
       inline def setLocation(value: LngLat): Self = StObject.set(x, "location", value.asInstanceOf[js.Any])
       
@@ -579,7 +585,8 @@ object Driving {
       __obj.asInstanceOf[SearchOptions]
     }
     
-    extension [Self <: SearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
       
       inline def setWaypoints(value: js.Array[LocationValue]): Self = StObject.set(x, "waypoints", value.asInstanceOf[js.Any])
       
@@ -608,7 +615,8 @@ object Driving {
       __obj.asInstanceOf[SearchPoint]
     }
     
-    extension [Self <: SearchPoint](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchPoint] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -689,7 +697,8 @@ object Driving {
       __obj.asInstanceOf[SearchResultBase]
     }
     
-    extension [Self <: SearchResultBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultBase] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Poi): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -736,7 +745,8 @@ object Driving {
       __obj.asInstanceOf[SearchResultCommon]
     }
     
-    extension [Self <: SearchResultCommon](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultCommon] (val x: Self) extends AnyVal {
       
       inline def setDestination(value: LngLat): Self = StObject.set(x, "destination", value.asInstanceOf[js.Any])
       
@@ -801,7 +811,8 @@ object Driving {
       __obj.asInstanceOf[SearchResultExt]
     }
     
-    extension [Self <: SearchResultExt](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SearchResultExt] (val x: Self) extends AnyVal {
       
       inline def setDestinationName(value: String): Self = StObject.set(x, "destinationName", value.asInstanceOf[js.Any])
       
@@ -868,7 +879,8 @@ object Driving {
       __obj.asInstanceOf[TMC]
     }
     
-    extension [Self <: TMC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TMC] (val x: Self) extends AnyVal {
       
       inline def setDistance(value: Double): Self = StObject.set(x, "distance", value.asInstanceOf[js.Any])
       
@@ -899,7 +911,8 @@ object Driving {
       __obj.asInstanceOf[TMCsPath]
     }
     
-    extension [Self <: TMCsPath](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TMCsPath] (val x: Self) extends AnyVal {
       
       inline def setPath(value: js.Array[LngLat]): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
       
@@ -938,7 +951,8 @@ object Driving {
       __obj.asInstanceOf[ViaCity]
     }
     
-    extension [Self <: ViaCity](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViaCity] (val x: Self) extends AnyVal {
       
       inline def setAdcode(value: String): Self = StObject.set(x, "adcode", value.asInstanceOf[js.Any])
       

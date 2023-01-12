@@ -28,7 +28,8 @@ object VariableMultipliersServerExecutionOptions {
     __obj.asInstanceOf[VariableMultipliersServerExecutionOptions]
   }
   
-  extension [Self <: VariableMultipliersServerExecutionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableMultipliersServerExecutionOptions] (val x: Self) extends AnyVal {
     
     inline def setContinueOnError(value: Boolean): Self = StObject.set(x, "continueOnError", value.asInstanceOf[js.Any])
     

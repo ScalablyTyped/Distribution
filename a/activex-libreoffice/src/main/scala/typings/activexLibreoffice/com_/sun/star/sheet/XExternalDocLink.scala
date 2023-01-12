@@ -70,7 +70,8 @@ object XExternalDocLink {
     __obj.asInstanceOf[XExternalDocLink]
   }
   
-  extension [Self <: XExternalDocLink](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExternalDocLink] (val x: Self) extends AnyVal {
     
     inline def setAddSheetCache(value: (String, Boolean) => XExternalSheetCache): Self = StObject.set(x, "addSheetCache", js.Any.fromFunction2(value))
     

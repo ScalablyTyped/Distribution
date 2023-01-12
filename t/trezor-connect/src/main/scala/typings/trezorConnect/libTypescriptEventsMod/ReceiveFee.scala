@@ -23,7 +23,8 @@ object ReceiveFee {
     __obj.asInstanceOf[ReceiveFee]
   }
   
-  extension [Self <: ReceiveFee](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReceiveFee] (val x: Self) extends AnyVal {
     
     inline def setPayload(value: Value | `0` | TypeValue): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object RegisterDeviceRequest {
     __obj.asInstanceOf[RegisterDeviceRequest]
   }
   
-  extension [Self <: RegisterDeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setIdentityId(value: IdentityId): Self = StObject.set(x, "IdentityId", value.asInstanceOf[js.Any])
     

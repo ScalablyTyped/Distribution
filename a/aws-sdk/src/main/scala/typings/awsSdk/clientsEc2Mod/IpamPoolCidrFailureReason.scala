@@ -23,7 +23,8 @@ object IpamPoolCidrFailureReason {
     __obj.asInstanceOf[IpamPoolCidrFailureReason]
   }
   
-  extension [Self <: IpamPoolCidrFailureReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpamPoolCidrFailureReason] (val x: Self) extends AnyVal {
     
     inline def setCode(value: IpamPoolCidrFailureCode): Self = StObject.set(x, "Code", value.asInstanceOf[js.Any])
     

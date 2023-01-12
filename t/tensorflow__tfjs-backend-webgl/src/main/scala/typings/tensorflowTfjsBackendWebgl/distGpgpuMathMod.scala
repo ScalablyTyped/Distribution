@@ -89,7 +89,8 @@ object distGpgpuMathMod {
       __obj.asInstanceOf[GPGPUBinary]
     }
     
-    extension [Self <: GPGPUBinary](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPGPUBinary] (val x: Self) extends AnyVal {
       
       inline def setCustomUniformLocations(value: js.Array[WebGLUniformLocation]): Self = StObject.set(x, "customUniformLocations", value.asInstanceOf[js.Any])
       
@@ -170,7 +171,8 @@ object distGpgpuMathMod {
       __obj.asInstanceOf[GPGPUBinaryLocations]
     }
     
-    extension [Self <: GPGPUBinaryLocations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPGPUBinaryLocations] (val x: Self) extends AnyVal {
       
       inline def setCustomUniformLocations(value: js.Array[WebGLUniformLocation]): Self = StObject.set(x, "customUniformLocations", value.asInstanceOf[js.Any])
       
@@ -243,7 +245,8 @@ object distGpgpuMathMod {
       __obj.asInstanceOf[GPGPUProgram]
     }
     
-    extension [Self <: GPGPUProgram](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GPGPUProgram] (val x: Self) extends AnyVal {
       
       inline def setCustomUniforms(value: js.Array[ArrayIndex]): Self = StObject.set(x, "customUniforms", value.asInstanceOf[js.Any])
       
@@ -300,7 +303,8 @@ object distGpgpuMathMod {
       __obj.asInstanceOf[TensorData]
     }
     
-    extension [Self <: TensorData](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TensorData] (val x: Self) extends AnyVal {
       
       inline def setIsUniform(value: Boolean): Self = StObject.set(x, "isUniform", value.asInstanceOf[js.Any])
       

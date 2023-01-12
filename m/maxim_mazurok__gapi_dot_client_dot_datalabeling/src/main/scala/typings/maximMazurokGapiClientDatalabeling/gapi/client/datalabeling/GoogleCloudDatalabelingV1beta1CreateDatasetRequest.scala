@@ -16,7 +16,8 @@ object GoogleCloudDatalabelingV1beta1CreateDatasetRequest {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1CreateDatasetRequest]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1CreateDatasetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1CreateDatasetRequest] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: GoogleCloudDatalabelingV1beta1Dataset): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

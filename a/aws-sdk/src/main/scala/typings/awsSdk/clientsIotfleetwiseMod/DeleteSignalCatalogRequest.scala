@@ -18,7 +18,8 @@ object DeleteSignalCatalogRequest {
     __obj.asInstanceOf[DeleteSignalCatalogRequest]
   }
   
-  extension [Self <: DeleteSignalCatalogRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSignalCatalogRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: resourceName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
   }

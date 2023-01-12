@@ -20,7 +20,8 @@ object DictpropNameItemKey {
     __obj.asInstanceOf[DictpropNameItemKey]
   }
   
-  extension [Self <: DictpropNameItemKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DictpropNameItemKey] (val x: Self) extends AnyVal {
     
     inline def setItem(value: typings.std.Element): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     

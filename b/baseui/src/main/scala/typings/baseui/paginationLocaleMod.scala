@@ -43,7 +43,8 @@ object paginationLocaleMod {
       __obj.asInstanceOf[PaginationLocale]
     }
     
-    extension [Self <: PaginationLocale](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PaginationLocale] (val x: Self) extends AnyVal {
       
       inline def setNext(value: String): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
       

@@ -19,7 +19,8 @@ object TaskBoardRegisterShortcutOptions {
     __obj.asInstanceOf[TaskBoardRegisterShortcutOptions]
   }
   
-  extension [Self <: TaskBoardRegisterShortcutOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskBoardRegisterShortcutOptions] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

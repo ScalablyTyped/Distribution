@@ -25,7 +25,8 @@ object LocalDisk {
     __obj.asInstanceOf[LocalDisk]
   }
   
-  extension [Self <: LocalDisk](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LocalDisk] (val x: Self) extends AnyVal {
     
     inline def setDiskCount(value: Double): Self = StObject.set(x, "diskCount", value.asInstanceOf[js.Any])
     

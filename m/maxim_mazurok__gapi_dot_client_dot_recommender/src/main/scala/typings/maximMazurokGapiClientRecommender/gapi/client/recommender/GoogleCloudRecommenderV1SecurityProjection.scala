@@ -18,7 +18,8 @@ object GoogleCloudRecommenderV1SecurityProjection {
     __obj.asInstanceOf[GoogleCloudRecommenderV1SecurityProjection]
   }
   
-  extension [Self <: GoogleCloudRecommenderV1SecurityProjection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommenderV1SecurityProjection] (val x: Self) extends AnyVal {
     
     inline def setDetails(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: any} */ js.Any

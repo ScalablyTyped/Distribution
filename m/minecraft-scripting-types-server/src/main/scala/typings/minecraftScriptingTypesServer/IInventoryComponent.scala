@@ -60,7 +60,8 @@ object IInventoryComponent {
     __obj.asInstanceOf[IInventoryComponent]
   }
   
-  extension [Self <: IInventoryComponent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IInventoryComponent] (val x: Self) extends AnyVal {
     
     inline def setAdditional_slots_per_strength(value: Double): Self = StObject.set(x, "additional_slots_per_strength", value.asInstanceOf[js.Any])
     

@@ -20,7 +20,8 @@ object WebCall {
     __obj.asInstanceOf[WebCall[T]]
   }
   
-  extension [Self <: WebCall[?], T](x: Self & WebCall[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebCall[?], T] (val x: Self & WebCall[T]) extends AnyVal {
     
     inline def setHeaders(value: WebHttpHeaders): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object USBOutTransferResult {
     __obj.asInstanceOf[USBOutTransferResult]
   }
   
-  extension [Self <: USBOutTransferResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: USBOutTransferResult] (val x: Self) extends AnyVal {
     
     inline def setBytesWritten(value: Double): Self = StObject.set(x, "bytesWritten", value.asInstanceOf[js.Any])
     

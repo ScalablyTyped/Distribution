@@ -48,7 +48,8 @@ object AsymmetricKeyDetails {
     __obj.asInstanceOf[AsymmetricKeyDetails]
   }
   
-  extension [Self <: AsymmetricKeyDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AsymmetricKeyDetails] (val x: Self) extends AnyVal {
     
     inline def setDivisorLength(value: Double): Self = StObject.set(x, "divisorLength", value.asInstanceOf[js.Any])
     

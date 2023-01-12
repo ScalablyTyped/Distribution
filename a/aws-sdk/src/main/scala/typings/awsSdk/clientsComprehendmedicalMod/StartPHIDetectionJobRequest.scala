@@ -53,7 +53,8 @@ object StartPHIDetectionJobRequest {
     __obj.asInstanceOf[StartPHIDetectionJobRequest]
   }
   
-  extension [Self <: StartPHIDetectionJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartPHIDetectionJobRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestTokenString): Self = StObject.set(x, "ClientRequestToken", value.asInstanceOf[js.Any])
     

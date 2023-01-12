@@ -55,7 +55,8 @@ object AlwaysIncludeEmail {
     __obj.asInstanceOf[AlwaysIncludeEmail]
   }
   
-  extension [Self <: AlwaysIncludeEmail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AlwaysIncludeEmail] (val x: Self) extends AnyVal {
     
     inline def setAlt(value: String): Self = StObject.set(x, "alt", value.asInstanceOf[js.Any])
     

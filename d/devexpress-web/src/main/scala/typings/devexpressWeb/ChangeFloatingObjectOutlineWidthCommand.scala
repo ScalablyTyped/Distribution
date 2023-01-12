@@ -29,7 +29,8 @@ object ChangeFloatingObjectOutlineWidthCommand {
     __obj.asInstanceOf[ChangeFloatingObjectOutlineWidthCommand]
   }
   
-  extension [Self <: ChangeFloatingObjectOutlineWidthCommand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeFloatingObjectOutlineWidthCommand] (val x: Self) extends AnyVal {
     
     inline def setExecute(value: Double => Boolean): Self = StObject.set(x, "execute", js.Any.fromFunction1(value))
     

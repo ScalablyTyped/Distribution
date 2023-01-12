@@ -21,7 +21,8 @@ object PoiList {
     __obj.asInstanceOf[PoiList]
   }
   
-  extension [Self <: PoiList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoiList] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

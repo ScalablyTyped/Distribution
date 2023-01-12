@@ -43,7 +43,8 @@ object XConstantTypeDescription {
     __obj.asInstanceOf[XConstantTypeDescription]
   }
   
-  extension [Self <: XConstantTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XConstantTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setConstantValue(value: Any): Self = StObject.set(x, "ConstantValue", value.asInstanceOf[js.Any])
     

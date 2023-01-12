@@ -62,7 +62,8 @@ object libEsmComponentsProgressBarProgressBarMod {
       __obj.asInstanceOf[IProgressBarProps]
     }
     
-    extension [Self <: IProgressBarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProgressBarProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

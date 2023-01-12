@@ -23,7 +23,8 @@ object XUndoManagerSupplier {
     __obj.asInstanceOf[XUndoManagerSupplier]
   }
   
-  extension [Self <: XUndoManagerSupplier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XUndoManagerSupplier] (val x: Self) extends AnyVal {
     
     inline def setGetUndoManager(value: () => XUndoManager): Self = StObject.set(x, "getUndoManager", js.Any.fromFunction0(value))
     

@@ -22,7 +22,8 @@ object AttrsCumprodAttrs {
     __obj.asInstanceOf[AttrsCumprodAttrs]
   }
   
-  extension [Self <: AttrsCumprodAttrs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttrsCumprodAttrs] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: CumprodAttrs): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

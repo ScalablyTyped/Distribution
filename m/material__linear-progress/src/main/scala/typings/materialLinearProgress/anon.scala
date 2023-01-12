@@ -33,7 +33,8 @@ object anon {
       __obj.asInstanceOf[ANIMATIONREADYCLASS]
     }
     
-    extension [Self <: ANIMATIONREADYCLASS](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANIMATIONREADYCLASS] (val x: Self) extends AnyVal {
       
       inline def setANIMATION_READY_CLASS(value: String): Self = StObject.set(x, "ANIMATION_READY_CLASS", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object anon {
       __obj.asInstanceOf[ARIAHIDDEN]
     }
     
-    extension [Self <: ARIAHIDDEN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARIAHIDDEN] (val x: Self) extends AnyVal {
       
       inline def setARIA_HIDDEN(value: String): Self = StObject.set(x, "ARIA_HIDDEN", value.asInstanceOf[js.Any])
       
@@ -128,7 +130,8 @@ object anon {
       __obj.asInstanceOf[PartialMDCLinearProgressA]
     }
     
-    extension [Self <: PartialMDCLinearProgressA](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialMDCLinearProgressA] (val x: Self) extends AnyVal {
       
       inline def setAddClass(value: /* className */ String => Unit): Self = StObject.set(x, "addClass", js.Any.fromFunction1(value))
       

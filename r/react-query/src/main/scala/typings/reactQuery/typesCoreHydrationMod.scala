@@ -41,7 +41,8 @@ object typesCoreHydrationMod {
       __obj.asInstanceOf[DehydrateOptions]
     }
     
-    extension [Self <: DehydrateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DehydrateOptions] (val x: Self) extends AnyVal {
       
       inline def setDehydrateMutations(value: Boolean): Self = StObject.set(x, "dehydrateMutations", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object typesCoreHydrationMod {
       __obj.asInstanceOf[DehydratedMutation]
     }
     
-    extension [Self <: DehydratedMutation](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DehydratedMutation] (val x: Self) extends AnyVal {
       
       inline def setMutationKey(value: MutationKey): Self = StObject.set(x, "mutationKey", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object typesCoreHydrationMod {
       __obj.asInstanceOf[DehydratedQuery]
     }
     
-    extension [Self <: DehydratedQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DehydratedQuery] (val x: Self) extends AnyVal {
       
       inline def setQueryHash(value: String): Self = StObject.set(x, "queryHash", value.asInstanceOf[js.Any])
       
@@ -126,7 +129,8 @@ object typesCoreHydrationMod {
       __obj.asInstanceOf[DehydratedState]
     }
     
-    extension [Self <: DehydratedState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DehydratedState] (val x: Self) extends AnyVal {
       
       inline def setMutations(value: js.Array[DehydratedMutation]): Self = StObject.set(x, "mutations", value.asInstanceOf[js.Any])
       
@@ -149,7 +153,8 @@ object typesCoreHydrationMod {
       __obj.asInstanceOf[HydrateOptions]
     }
     
-    extension [Self <: HydrateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HydrateOptions] (val x: Self) extends AnyVal {
       
       inline def setDefaultOptions(value: Mutations): Self = StObject.set(x, "defaultOptions", value.asInstanceOf[js.Any])
       

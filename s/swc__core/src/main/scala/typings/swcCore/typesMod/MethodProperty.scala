@@ -21,7 +21,8 @@ object MethodProperty {
     __obj.asInstanceOf[MethodProperty]
   }
   
-  extension [Self <: MethodProperty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MethodProperty] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcCore.swcCoreStrings.MethodProperty): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

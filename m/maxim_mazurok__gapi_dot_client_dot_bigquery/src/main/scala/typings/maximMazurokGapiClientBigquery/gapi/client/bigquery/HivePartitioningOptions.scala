@@ -34,7 +34,8 @@ object HivePartitioningOptions {
     __obj.asInstanceOf[HivePartitioningOptions]
   }
   
-  extension [Self <: HivePartitioningOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HivePartitioningOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

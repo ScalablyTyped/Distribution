@@ -24,7 +24,8 @@ object externalMod {
       __obj.asInstanceOf[Attachment]
     }
     
-    extension [Self <: Attachment](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Attachment] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     }
@@ -44,7 +45,8 @@ object externalMod {
       __obj.asInstanceOf[Cropper]
     }
     
-    extension [Self <: Cropper](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cropper] (val x: Self) extends AnyVal {
       
       inline def setGet(value: String => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       
@@ -69,7 +71,8 @@ object externalMod {
       __obj.asInstanceOf[Theme]
     }
     
-    extension [Self <: Theme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Theme] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

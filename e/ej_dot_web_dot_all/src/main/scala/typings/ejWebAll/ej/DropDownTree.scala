@@ -133,7 +133,8 @@ object DropDownTree {
       __obj.asInstanceOf[BlurEventArgs]
     }
     
-    extension [Self <: BlurEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlurEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -190,7 +191,8 @@ object DropDownTree {
       __obj.asInstanceOf[ChangeEventArgs]
     }
     
-    extension [Self <: ChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -263,7 +265,8 @@ object DropDownTree {
       __obj.asInstanceOf[CheckChangeEventArgs]
     }
     
-    extension [Self <: CheckChangeEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckChangeEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -324,7 +327,8 @@ object DropDownTree {
       __obj.asInstanceOf[CloseEventArgs]
     }
     
-    extension [Self <: CloseEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CloseEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -369,7 +373,8 @@ object DropDownTree {
       __obj.asInstanceOf[CreateEventArgs]
     }
     
-    extension [Self <: CreateEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -406,7 +411,8 @@ object DropDownTree {
       __obj.asInstanceOf[DestroyEventArgs]
     }
     
-    extension [Self <: DestroyEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DestroyEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -455,7 +461,8 @@ object DropDownTree {
       __obj.asInstanceOf[FilteringEventArgs]
     }
     
-    extension [Self <: FilteringEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FilteringEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -504,7 +511,8 @@ object DropDownTree {
       __obj.asInstanceOf[FocusEventArgs]
     }
     
-    extension [Self <: FocusEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FocusEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -686,7 +694,8 @@ object DropDownTree {
       __obj.asInstanceOf[typings.ejWebAll.ej.DropDownTree.Model]
     }
     
-    extension [Self <: typings.ejWebAll.ej.DropDownTree.Model](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: typings.ejWebAll.ej.DropDownTree.Model] (val x: Self) extends AnyVal {
       
       inline def setAllowKeyboardNavigation(value: Boolean): Self = StObject.set(x, "allowKeyboardNavigation", value.asInstanceOf[js.Any])
       
@@ -851,7 +860,8 @@ object DropDownTree {
       __obj.asInstanceOf[OpenEventArgs]
     }
     
-    extension [Self <: OpenEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpenEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       
@@ -896,7 +906,8 @@ object DropDownTree {
       __obj.asInstanceOf[PopupSettings]
     }
     
-    extension [Self <: PopupSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupSettings] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: String | Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -949,7 +960,8 @@ object DropDownTree {
       __obj.asInstanceOf[SelectEventArgs]
     }
     
-    extension [Self <: SelectEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SelectEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object SourceCodeProps {
     __obj.asInstanceOf[SourceCodeProps]
   }
   
-  extension [Self <: SourceCodeProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SourceCodeProps] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

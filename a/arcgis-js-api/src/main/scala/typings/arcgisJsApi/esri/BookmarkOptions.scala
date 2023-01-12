@@ -55,7 +55,8 @@ object BookmarkOptions {
     __obj.asInstanceOf[BookmarkOptions]
   }
   
-  extension [Self <: BookmarkOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BookmarkOptions] (val x: Self) extends AnyVal {
     
     inline def setCaptureRotation(value: Boolean): Self = StObject.set(x, "captureRotation", value.asInstanceOf[js.Any])
     

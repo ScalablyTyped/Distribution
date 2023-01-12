@@ -61,7 +61,8 @@ object distComponentsTypesNumberMod {
       __obj.asInstanceOf[NumberTypeKnob]
     }
     
-    extension [Self <: NumberTypeKnob](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberTypeKnob] (val x: Self) extends AnyVal {
       
       inline def setValue(value: NumberTypeKnobValue): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object distComponentsTypesNumberMod {
       __obj.asInstanceOf[NumberTypeKnobOptions]
     }
     
-    extension [Self <: NumberTypeKnobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberTypeKnobOptions] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -122,7 +124,8 @@ object distComponentsTypesNumberMod {
       __obj.asInstanceOf[NumberTypeProps]
     }
     
-    extension [Self <: NumberTypeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumberTypeProps] (val x: Self) extends AnyVal {
       
       inline def setKnob(value: NumberTypeKnob): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     }

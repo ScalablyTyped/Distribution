@@ -30,7 +30,8 @@ object EncounterDiagnosis {
     __obj.asInstanceOf[EncounterDiagnosis]
   }
   
-  extension [Self <: EncounterDiagnosis](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EncounterDiagnosis] (val x: Self) extends AnyVal {
     
     inline def setCondition(value: Reference): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
     

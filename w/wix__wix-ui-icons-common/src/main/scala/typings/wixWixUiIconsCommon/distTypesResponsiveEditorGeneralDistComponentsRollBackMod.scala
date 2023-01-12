@@ -27,7 +27,8 @@ object distTypesResponsiveEditorGeneralDistComponentsRollBackMod extends Shortcu
       __obj.asInstanceOf[RollBackProps]
     }
     
-    extension [Self <: RollBackProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RollBackProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

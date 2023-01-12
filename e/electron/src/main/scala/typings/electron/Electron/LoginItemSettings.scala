@@ -73,7 +73,8 @@ object LoginItemSettings {
     __obj.asInstanceOf[LoginItemSettings]
   }
   
-  extension [Self <: LoginItemSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoginItemSettings] (val x: Self) extends AnyVal {
     
     inline def setExecutableWillLaunchAtLogin(value: Boolean): Self = StObject.set(x, "executableWillLaunchAtLogin", value.asInstanceOf[js.Any])
     

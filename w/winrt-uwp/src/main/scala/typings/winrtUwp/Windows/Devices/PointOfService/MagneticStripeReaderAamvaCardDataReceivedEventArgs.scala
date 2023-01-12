@@ -92,7 +92,8 @@ object MagneticStripeReaderAamvaCardDataReceivedEventArgs {
     __obj.asInstanceOf[MagneticStripeReaderAamvaCardDataReceivedEventArgs]
   }
   
-  extension [Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MagneticStripeReaderAamvaCardDataReceivedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

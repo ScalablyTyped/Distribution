@@ -28,7 +28,8 @@ object IAssetsProgressEvent {
     __obj.asInstanceOf[IAssetsProgressEvent]
   }
   
-  extension [Self <: IAssetsProgressEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAssetsProgressEvent] (val x: Self) extends AnyVal {
     
     inline def setRemainingCount(value: Double): Self = StObject.set(x, "remainingCount", value.asInstanceOf[js.Any])
     

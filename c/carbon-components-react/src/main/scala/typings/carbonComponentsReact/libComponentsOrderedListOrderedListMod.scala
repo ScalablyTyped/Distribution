@@ -31,7 +31,8 @@ object libComponentsOrderedListOrderedListMod extends Shortcut {
       __obj.asInstanceOf[OrderedListProps]
     }
     
-    extension [Self <: OrderedListProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OrderedListProps] (val x: Self) extends AnyVal {
       
       inline def setIsExpressive(value: Boolean): Self = StObject.set(x, "isExpressive", value.asInstanceOf[js.Any])
       

@@ -53,7 +53,8 @@ object IssueCertificateRequest {
     __obj.asInstanceOf[IssueCertificateRequest]
   }
   
-  extension [Self <: IssueCertificateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssueCertificateRequest] (val x: Self) extends AnyVal {
     
     inline def setApiPassthrough(value: ApiPassthrough): Self = StObject.set(x, "ApiPassthrough", value.asInstanceOf[js.Any])
     

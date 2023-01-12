@@ -44,7 +44,8 @@ object VirtualDOM {
       __obj.asInstanceOf[Thunk]
     }
     
-    extension [Self <: Thunk](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Thunk] (val x: Self) extends AnyVal {
       
       inline def setRender(value: VTree => VTree): Self = StObject.set(x, "render", js.Any.fromFunction1(value))
       
@@ -69,7 +70,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VHook]
     }
     
-    extension [Self <: VHook](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VHook] (val x: Self) extends AnyVal {
       
       inline def setHook(value: (Element, String) => Unit): Self = StObject.set(x, "hook", js.Any.fromFunction2(value))
       
@@ -124,7 +126,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VNode]
     }
     
-    extension [Self <: VNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VNode] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[VTree]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -220,7 +223,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VPatch]
     }
     
-    extension [Self <: VPatch](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VPatch] (val x: Self) extends AnyVal {
       
       inline def setPatch(value: Any): Self = StObject.set(x, "patch", value.asInstanceOf[js.Any])
       
@@ -243,7 +247,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VPatchOptions[T]]
     }
     
-    extension [Self <: VPatchOptions[?], T /* <: Element */](x: Self & VPatchOptions[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VPatchOptions[?], T /* <: Element */] (val x: Self & VPatchOptions[T]) extends AnyVal {
       
       inline def setPatch(value: (T, /* patches */ js.Array[VPatch], /* renderOptions */ VPatchOptions[T]) => T): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
       
@@ -278,7 +283,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VProperties]
     }
     
-    extension [Self <: VProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VProperties] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[String]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
@@ -308,7 +314,8 @@ object VirtualDOM {
       __obj.asInstanceOf[VText]
     }
     
-    extension [Self <: VText](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VText] (val x: Self) extends AnyVal {
       
       inline def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
       
@@ -394,7 +401,8 @@ object VirtualDOM {
       __obj.asInstanceOf[Widget]
     }
     
-    extension [Self <: Widget](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Widget] (val x: Self) extends AnyVal {
       
       inline def setDestroy(value: Element => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
       
@@ -421,7 +429,8 @@ object VirtualDOM {
       __obj.asInstanceOf[createProperties]
     }
     
-    extension [Self <: createProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: createProperties] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

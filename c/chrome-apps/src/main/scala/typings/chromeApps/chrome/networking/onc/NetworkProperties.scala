@@ -92,7 +92,8 @@ object NetworkProperties {
     __obj.asInstanceOf[NetworkProperties[M, IF]]
   }
   
-  extension [Self <: NetworkProperties[?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */](x: Self & (NetworkProperties[M, IF])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkProperties[?, ?], M /* <: ManagedObject */, IF /* <: InterfaceType */] (val x: Self & (NetworkProperties[M, IF])) extends AnyVal {
     
     inline def setConnectable(value: Boolean): Self = StObject.set(x, "Connectable", value.asInstanceOf[js.Any])
     

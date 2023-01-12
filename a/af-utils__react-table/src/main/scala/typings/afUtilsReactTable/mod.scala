@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[ComponentMap]
     }
     
-    extension [Self <: ComponentMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComponentMap] (val x: Self) extends AnyVal {
       
       inline def setCell(value: /* props */ Record[String, Any] => ReactNode): Self = StObject.set(x, "Cell", js.Any.fromFunction1(value))
       
@@ -308,7 +309,8 @@ object mod {
       __obj.asInstanceOf[TableColumnProps]
     }
     
-    extension [Self <: TableColumnProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableColumnProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: TextAlign): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -386,7 +388,8 @@ object mod {
       __obj.asInstanceOf[TableProps]
     }
     
-    extension [Self <: TableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TableProps] (val x: Self) extends AnyVal {
       
       inline def setColumnModel(value: TypeofColumnModel): Self = StObject.set(x, "ColumnModel", value.asInstanceOf[js.Any])
       

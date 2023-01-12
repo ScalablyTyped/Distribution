@@ -23,7 +23,8 @@ object distTs3Dot9ComponentsReportInfoMod {
       __obj.asInstanceOf[InfoProps]
     }
     
-    extension [Self <: InfoProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InfoProps] (val x: Self) extends AnyVal {
       
       inline def setItem(value: Result): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
     }

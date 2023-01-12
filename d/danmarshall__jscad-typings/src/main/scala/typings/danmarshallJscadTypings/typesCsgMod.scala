@@ -101,7 +101,8 @@ object typesCsgMod {
         __obj.asInstanceOf[IArcOptions]
       }
       
-      extension [Self <: IArcOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IArcOptions] (val x: Self) extends AnyVal {
         
         inline def setEndangle(value: Double): Self = StObject.set(x, "endangle", value.asInstanceOf[js.Any])
         
@@ -130,7 +131,8 @@ object typesCsgMod {
         __obj.asInstanceOf[ICircleOptions]
       }
       
-      extension [Self <: ICircleOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ICircleOptions] (val x: Self) extends AnyVal {
         
         inline def setCenter(value: Vector2D | js.Array[Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
         
@@ -161,7 +163,8 @@ object typesCsgMod {
         __obj.asInstanceOf[IEllpiticalArcOptions]
       }
       
-      extension [Self <: IEllpiticalArcOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IEllpiticalArcOptions] (val x: Self) extends AnyVal {
         
         inline def setClockwise(value: Boolean): Self = StObject.set(x, "clockwise", value.asInstanceOf[js.Any])
         
@@ -198,7 +201,8 @@ object typesCsgMod {
         __obj.asInstanceOf[IRadiusOptions]
       }
       
-      extension [Self <: IRadiusOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IRadiusOptions] (val x: Self) extends AnyVal {
         
         inline def setRadius(value: Double): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
         
@@ -229,7 +233,8 @@ object typesCsgMod {
       __obj.asInstanceOf[CAGExtrudeOptions]
     }
     
-    extension [Self <: CAGExtrudeOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CAGExtrudeOptions] (val x: Self) extends AnyVal {
       
       inline def setOffset(value: js.Array[Double]): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
       

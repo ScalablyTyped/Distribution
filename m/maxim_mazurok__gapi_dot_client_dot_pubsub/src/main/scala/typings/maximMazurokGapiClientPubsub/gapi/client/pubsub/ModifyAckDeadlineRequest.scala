@@ -24,7 +24,8 @@ object ModifyAckDeadlineRequest {
     __obj.asInstanceOf[ModifyAckDeadlineRequest]
   }
   
-  extension [Self <: ModifyAckDeadlineRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyAckDeadlineRequest] (val x: Self) extends AnyVal {
     
     inline def setAckDeadlineSeconds(value: Double): Self = StObject.set(x, "ackDeadlineSeconds", value.asInstanceOf[js.Any])
     

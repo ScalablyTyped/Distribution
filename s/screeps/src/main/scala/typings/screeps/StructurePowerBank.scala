@@ -44,7 +44,8 @@ object StructurePowerBank {
     __obj.asInstanceOf[StructurePowerBank]
   }
   
-  extension [Self <: StructurePowerBank](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StructurePowerBank] (val x: Self) extends AnyVal {
     
     inline def setPower(value: Double): Self = StObject.set(x, "power", value.asInstanceOf[js.Any])
     

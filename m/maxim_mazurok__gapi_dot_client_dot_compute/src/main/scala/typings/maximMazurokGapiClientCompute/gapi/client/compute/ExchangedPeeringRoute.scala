@@ -31,7 +31,8 @@ object ExchangedPeeringRoute {
     __obj.asInstanceOf[ExchangedPeeringRoute]
   }
   
-  extension [Self <: ExchangedPeeringRoute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExchangedPeeringRoute] (val x: Self) extends AnyVal {
     
     inline def setDestRange(value: String): Self = StObject.set(x, "destRange", value.asInstanceOf[js.Any])
     

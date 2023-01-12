@@ -23,7 +23,8 @@ object ModelDeployConfig {
     __obj.asInstanceOf[ModelDeployConfig]
   }
   
-  extension [Self <: ModelDeployConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelDeployConfig] (val x: Self) extends AnyVal {
     
     inline def setAutoGenerateEndpointName(value: AutoGenerateEndpointName): Self = StObject.set(x, "AutoGenerateEndpointName", value.asInstanceOf[js.Any])
     

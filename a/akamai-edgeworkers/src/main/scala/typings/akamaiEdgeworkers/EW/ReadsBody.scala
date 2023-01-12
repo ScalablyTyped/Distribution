@@ -25,7 +25,8 @@ object ReadsBody {
     __obj.asInstanceOf[ReadsBody]
   }
   
-  extension [Self <: ReadsBody](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadsBody] (val x: Self) extends AnyVal {
     
     inline def setJson(value: () => js.Promise[Any]): Self = StObject.set(x, "json", js.Any.fromFunction0(value))
     

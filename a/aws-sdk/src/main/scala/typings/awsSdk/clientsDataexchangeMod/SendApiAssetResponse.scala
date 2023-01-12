@@ -23,7 +23,8 @@ object SendApiAssetResponse {
     __obj.asInstanceOf[SendApiAssetResponse]
   }
   
-  extension [Self <: SendApiAssetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendApiAssetResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: string): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])
     

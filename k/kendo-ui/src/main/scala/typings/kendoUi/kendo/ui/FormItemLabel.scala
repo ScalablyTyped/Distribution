@@ -19,7 +19,8 @@ object FormItemLabel {
     __obj.asInstanceOf[FormItemLabel]
   }
   
-  extension [Self <: FormItemLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FormItemLabel] (val x: Self) extends AnyVal {
     
     inline def setEncoded(value: Boolean): Self = StObject.set(x, "encoded", value.asInstanceOf[js.Any])
     

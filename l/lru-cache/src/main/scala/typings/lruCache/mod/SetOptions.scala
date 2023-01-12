@@ -33,7 +33,8 @@ object SetOptions {
     __obj.asInstanceOf[SetOptions[K, V]]
   }
   
-  extension [Self <: SetOptions[?, ?], K, V](x: Self & (SetOptions[K, V])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetOptions[?, ?], K, V] (val x: Self & (SetOptions[K, V])) extends AnyVal {
     
     inline def setNoDisposeOnSet(value: Boolean): Self = StObject.set(x, "noDisposeOnSet", value.asInstanceOf[js.Any])
     

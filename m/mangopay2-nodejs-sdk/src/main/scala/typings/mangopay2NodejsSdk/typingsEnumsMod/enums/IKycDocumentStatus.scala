@@ -25,7 +25,8 @@ object IKycDocumentStatus {
     __obj.asInstanceOf[IKycDocumentStatus]
   }
   
-  extension [Self <: IKycDocumentStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IKycDocumentStatus] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: CREATED): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

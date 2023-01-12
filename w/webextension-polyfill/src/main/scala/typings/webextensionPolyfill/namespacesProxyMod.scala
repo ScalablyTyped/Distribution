@@ -126,7 +126,8 @@ object namespacesProxyMod {
         __obj.asInstanceOf[OnRequestDetailsType]
       }
       
-      extension [Self <: OnRequestDetailsType](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OnRequestDetailsType] (val x: Self) extends AnyVal {
         
         inline def setCookieStoreId(value: String): Self = StObject.set(x, "cookieStoreId", value.asInstanceOf[js.Any])
         
@@ -254,7 +255,8 @@ object namespacesProxyMod {
         __obj.asInstanceOf[ProxyConfig]
       }
       
-      extension [Self <: ProxyConfig](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ProxyConfig] (val x: Self) extends AnyVal {
         
         inline def setAutoConfigUrl(value: String): Self = StObject.set(x, "autoConfigUrl", value.asInstanceOf[js.Any])
         
@@ -356,7 +358,8 @@ object namespacesProxyMod {
         __obj.asInstanceOf[Static]
       }
       
-      extension [Self <: Static](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Static] (val x: Self) extends AnyVal {
         
         inline def setOnError(value: Event[js.Function1[/* error */ OnErrorErrorType, Unit]]): Self = StObject.set(x, "onError", value.asInstanceOf[js.Any])
         

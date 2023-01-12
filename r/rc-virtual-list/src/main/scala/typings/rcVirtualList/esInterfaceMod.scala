@@ -24,7 +24,8 @@ object esInterfaceMod {
       __obj.asInstanceOf[SharedConfig[T]]
     }
     
-    extension [Self <: SharedConfig[?], T](x: Self & SharedConfig[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedConfig[?], T] (val x: Self & SharedConfig[T]) extends AnyVal {
       
       inline def setGetKey(value: T => Key): Self = StObject.set(x, "getKey", js.Any.fromFunction1(value))
     }

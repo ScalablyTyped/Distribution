@@ -15,7 +15,8 @@ object ReferrerPolicy {
     __obj.asInstanceOf[ReferrerPolicy]
   }
   
-  extension [Self <: ReferrerPolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReferrerPolicy] (val x: Self) extends AnyVal {
     
     inline def setReferrerPolicy(value: String): Self = StObject.set(x, "referrerPolicy", value.asInstanceOf[js.Any])
     

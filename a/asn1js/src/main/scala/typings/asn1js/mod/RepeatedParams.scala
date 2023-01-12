@@ -22,7 +22,8 @@ object RepeatedParams {
     __obj.asInstanceOf[RepeatedParams]
   }
   
-  extension [Self <: RepeatedParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeatedParams] (val x: Self) extends AnyVal {
     
     inline def setLocal(value: scala.Boolean): Self = StObject.set(x, "local", value.asInstanceOf[js.Any])
     

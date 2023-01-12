@@ -27,7 +27,8 @@ object distTypesClassicEditorSystemDistComponentsMovetoFrontMod extends Shortcut
       __obj.asInstanceOf[MovetoFrontProps]
     }
     
-    extension [Self <: MovetoFrontProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MovetoFrontProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

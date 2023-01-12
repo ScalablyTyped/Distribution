@@ -724,7 +724,8 @@ object CatIndicesIndicesRecord {
     __obj.asInstanceOf[CatIndicesIndicesRecord]
   }
   
-  extension [Self <: CatIndicesIndicesRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatIndicesIndicesRecord] (val x: Self) extends AnyVal {
     
     inline def setBasi(value: String): Self = StObject.set(x, "basi", value.asInstanceOf[js.Any])
     

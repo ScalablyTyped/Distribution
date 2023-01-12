@@ -47,7 +47,8 @@ object FieldColumnTemplateProperties {
     __obj.asInstanceOf[FieldColumnTemplateProperties]
   }
   
-  extension [Self <: FieldColumnTemplateProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FieldColumnTemplateProperties] (val x: Self) extends AnyVal {
     
     inline def setDomain(value: CodedValueDomainPropertie | RangeDomainPropertiestype): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
     

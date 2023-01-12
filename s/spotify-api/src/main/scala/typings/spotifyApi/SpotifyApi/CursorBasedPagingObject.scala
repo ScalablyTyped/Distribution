@@ -29,7 +29,8 @@ object CursorBasedPagingObject {
     __obj.asInstanceOf[CursorBasedPagingObject[T]]
   }
   
-  extension [Self <: CursorBasedPagingObject[?], T](x: Self & CursorBasedPagingObject[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CursorBasedPagingObject[?], T] (val x: Self & CursorBasedPagingObject[T]) extends AnyVal {
     
     inline def setCursors(value: CursorObject): Self = StObject.set(x, "cursors", value.asInstanceOf[js.Any])
     

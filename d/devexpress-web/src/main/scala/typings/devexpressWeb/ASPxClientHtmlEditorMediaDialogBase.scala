@@ -60,7 +60,8 @@ object ASPxClientHtmlEditorMediaDialogBase {
     __obj.asInstanceOf[ASPxClientHtmlEditorMediaDialogBase]
   }
   
-  extension [Self <: ASPxClientHtmlEditorMediaDialogBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorMediaDialogBase] (val x: Self) extends AnyVal {
     
     inline def setGetHeightSpinEdit(value: () => ASPxClientSpinEdit): Self = StObject.set(x, "GetHeightSpinEdit", js.Any.fromFunction0(value))
     

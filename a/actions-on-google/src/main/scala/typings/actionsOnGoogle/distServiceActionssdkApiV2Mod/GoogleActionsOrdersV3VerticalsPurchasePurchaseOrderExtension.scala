@@ -55,7 +55,8 @@ object GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension {
     __obj.asInstanceOf[GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension]
   }
   
-  extension [Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3VerticalsPurchasePurchaseOrderExtension] (val x: Self) extends AnyVal {
     
     inline def setErrors(value: js.Array[GoogleActionsOrdersV3VerticalsPurchasePurchaseError]): Self = StObject.set(x, "errors", value.asInstanceOf[js.Any])
     

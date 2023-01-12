@@ -19,7 +19,8 @@ object IContextualizedQueryLatencyStats {
     __obj.asInstanceOf[IContextualizedQueryLatencyStats]
   }
   
-  extension [Self <: IContextualizedQueryLatencyStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IContextualizedQueryLatencyStats] (val x: Self) extends AnyVal {
     
     inline def setContext(value: IStatsContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

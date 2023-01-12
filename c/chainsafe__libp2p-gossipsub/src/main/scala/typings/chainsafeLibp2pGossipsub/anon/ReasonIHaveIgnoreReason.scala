@@ -16,7 +16,8 @@ object ReasonIHaveIgnoreReason {
     __obj.asInstanceOf[ReasonIHaveIgnoreReason]
   }
   
-  extension [Self <: ReasonIHaveIgnoreReason](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReasonIHaveIgnoreReason] (val x: Self) extends AnyVal {
     
     inline def setReason(value: IHaveIgnoreReason): Self = StObject.set(x, "reason", value.asInstanceOf[js.Any])
   }

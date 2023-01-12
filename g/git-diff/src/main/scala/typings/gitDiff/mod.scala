@@ -61,7 +61,8 @@ object mod {
       __obj.asInstanceOf[GitDiffOptions]
     }
     
-    extension [Self <: GitDiffOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GitDiffOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Boolean): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       

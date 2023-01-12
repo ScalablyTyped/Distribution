@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[AsBytes]
     }
     
-    extension [Self <: AsBytes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsBytes] (val x: Self) extends AnyVal {
       
       inline def setAsBytes(value: `true`): Self = StObject.set(x, "asBytes", value.asInstanceOf[js.Any])
     }
@@ -35,7 +36,8 @@ object anon {
       __obj.asInstanceOf[AsString]
     }
     
-    extension [Self <: AsString](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AsString] (val x: Self) extends AnyVal {
       
       inline def setAsString(value: `true`): Self = StObject.set(x, "asString", value.asInstanceOf[js.Any])
     }

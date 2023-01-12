@@ -23,7 +23,8 @@ object DescribeSubscribersForNotificationResponse {
     __obj.asInstanceOf[DescribeSubscribersForNotificationResponse]
   }
   
-  extension [Self <: DescribeSubscribersForNotificationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeSubscribersForNotificationResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: GenericString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

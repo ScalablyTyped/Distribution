@@ -55,7 +55,8 @@ object ClusterStatsClusterNodeCount {
     __obj.asInstanceOf[ClusterStatsClusterNodeCount]
   }
   
-  extension [Self <: ClusterStatsClusterNodeCount](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterStatsClusterNodeCount] (val x: Self) extends AnyVal {
     
     inline def setCoordinating_only(value: integer): Self = StObject.set(x, "coordinating_only", value.asInstanceOf[js.Any])
     

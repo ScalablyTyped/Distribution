@@ -91,7 +91,8 @@ object XMultiPropertySet {
     __obj.asInstanceOf[XMultiPropertySet]
   }
   
-  extension [Self <: XMultiPropertySet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XMultiPropertySet] (val x: Self) extends AnyVal {
     
     inline def setAddPropertiesChangeListener(value: (SeqEquiv[String], XPropertiesChangeListener) => Unit): Self = StObject.set(x, "addPropertiesChangeListener", js.Any.fromFunction2(value))
     

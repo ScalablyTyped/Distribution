@@ -121,7 +121,8 @@ object ConnectLog {
     __obj.asInstanceOf[ConnectLog]
   }
   
-  extension [Self <: ConnectLog](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectLog] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object SpaceProps {
     __obj.asInstanceOf[SpaceProps]
   }
   
-  extension [Self <: SpaceProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpaceProps] (val x: Self) extends AnyVal {
     
     inline def setOnSlidingComplete(value: /* value */ Double => Unit): Self = StObject.set(x, "onSlidingComplete", js.Any.fromFunction1(value))
     

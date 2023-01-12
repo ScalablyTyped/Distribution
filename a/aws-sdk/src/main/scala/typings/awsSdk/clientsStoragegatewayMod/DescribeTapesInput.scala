@@ -30,7 +30,8 @@ object DescribeTapesInput {
     __obj.asInstanceOf[DescribeTapesInput]
   }
   
-  extension [Self <: DescribeTapesInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeTapesInput] (val x: Self) extends AnyVal {
     
     inline def setGatewayARN(value: GatewayARN): Self = StObject.set(x, "GatewayARN", value.asInstanceOf[js.Any])
     

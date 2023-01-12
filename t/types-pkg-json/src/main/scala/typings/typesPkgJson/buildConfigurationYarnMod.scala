@@ -30,7 +30,8 @@ object buildConfigurationYarnMod {
       __obj.asInstanceOf[WorkspaceConfig]
     }
     
-    extension [Self <: WorkspaceConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkspaceConfig] (val x: Self) extends AnyVal {
       
       inline def setNohoist(value: js.Array[WorkspacePattern]): Self = StObject.set(x, "nohoist", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object buildConfigurationYarnMod {
       __obj.asInstanceOf[YarnConfiguration]
     }
     
-    extension [Self <: YarnConfiguration](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: YarnConfiguration] (val x: Self) extends AnyVal {
       
       inline def setFlat(value: Boolean): Self = StObject.set(x, "flat", value.asInstanceOf[js.Any])
       

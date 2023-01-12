@@ -16,7 +16,8 @@ object WhereNowParameters {
     __obj.asInstanceOf[WhereNowParameters]
   }
   
-  extension [Self <: WhereNowParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WhereNowParameters] (val x: Self) extends AnyVal {
     
     inline def setUuid(value: String): Self = StObject.set(x, "uuid", value.asInstanceOf[js.Any])
     

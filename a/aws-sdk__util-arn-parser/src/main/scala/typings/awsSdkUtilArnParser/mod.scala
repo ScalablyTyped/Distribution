@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[ARN]
     }
     
-    extension [Self <: ARN](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ARN] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       
@@ -69,7 +70,8 @@ object mod {
       __obj.asInstanceOf[buildOptions]
     }
     
-    extension [Self <: buildOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: buildOptions] (val x: Self) extends AnyVal {
       
       inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
       

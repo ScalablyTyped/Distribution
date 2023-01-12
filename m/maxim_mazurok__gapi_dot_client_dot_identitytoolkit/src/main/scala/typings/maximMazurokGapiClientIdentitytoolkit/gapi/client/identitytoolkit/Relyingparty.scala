@@ -58,7 +58,8 @@ object Relyingparty {
     __obj.asInstanceOf[Relyingparty]
   }
   
-  extension [Self <: Relyingparty](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Relyingparty] (val x: Self) extends AnyVal {
     
     inline def setAndroidInstallApp(value: Boolean): Self = StObject.set(x, "androidInstallApp", value.asInstanceOf[js.Any])
     

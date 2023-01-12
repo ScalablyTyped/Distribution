@@ -21,7 +21,8 @@ object CustomPropertyButton {
     __obj.asInstanceOf[CustomPropertyButton]
   }
   
-  extension [Self <: CustomPropertyButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomPropertyButton] (val x: Self) extends AnyVal {
     
     inline def setAction(value: VisualizationOptions => Unit): Self = StObject.set(x, "action", js.Any.fromFunction1(value))
     

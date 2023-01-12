@@ -18,7 +18,8 @@ object UpdateAcceleratorAttributesResponse {
     __obj.asInstanceOf[UpdateAcceleratorAttributesResponse]
   }
   
-  extension [Self <: UpdateAcceleratorAttributesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateAcceleratorAttributesResponse] (val x: Self) extends AnyVal {
     
     inline def setAcceleratorAttributes(value: AcceleratorAttributes): Self = StObject.set(x, "AcceleratorAttributes", value.asInstanceOf[js.Any])
     

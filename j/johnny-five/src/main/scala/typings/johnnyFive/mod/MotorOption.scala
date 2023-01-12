@@ -27,7 +27,8 @@ object MotorOption {
     __obj.asInstanceOf[MotorOption]
   }
   
-  extension [Self <: MotorOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MotorOption] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: Double): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

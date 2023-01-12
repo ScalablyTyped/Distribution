@@ -15,7 +15,8 @@ object WebExtensionManifestBackgroundC3Type {
     __obj.asInstanceOf[WebExtensionManifestBackgroundC3Type]
   }
   
-  extension [Self <: WebExtensionManifestBackgroundC3Type](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebExtensionManifestBackgroundC3Type] (val x: Self) extends AnyVal {
     
     inline def setService_worker(value: ExtensionURL): Self = StObject.set(x, "service_worker", value.asInstanceOf[js.Any])
   }

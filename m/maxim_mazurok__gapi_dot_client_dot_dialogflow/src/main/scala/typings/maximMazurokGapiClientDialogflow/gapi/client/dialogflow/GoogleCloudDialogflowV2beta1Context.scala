@@ -38,7 +38,8 @@ object GoogleCloudDialogflowV2beta1Context {
     __obj.asInstanceOf[GoogleCloudDialogflowV2beta1Context]
   }
   
-  extension [Self <: GoogleCloudDialogflowV2beta1Context](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDialogflowV2beta1Context] (val x: Self) extends AnyVal {
     
     inline def setLifespanCount(value: Double): Self = StObject.set(x, "lifespanCount", value.asInstanceOf[js.Any])
     

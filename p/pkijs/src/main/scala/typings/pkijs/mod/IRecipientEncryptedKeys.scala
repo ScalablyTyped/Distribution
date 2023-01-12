@@ -15,7 +15,8 @@ object IRecipientEncryptedKeys {
     __obj.asInstanceOf[IRecipientEncryptedKeys]
   }
   
-  extension [Self <: IRecipientEncryptedKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IRecipientEncryptedKeys] (val x: Self) extends AnyVal {
     
     inline def setEncryptedKeys(value: js.Array[RecipientEncryptedKey]): Self = StObject.set(x, "encryptedKeys", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object TimelineFormatOption {
     __obj.asInstanceOf[TimelineFormatOption]
   }
   
-  extension [Self <: TimelineFormatOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimelineFormatOption] (val x: Self) extends AnyVal {
     
     inline def setMajorLabels(value: TimelineFormatLabelsOption | TimelineFormatLabelsFunction): Self = StObject.set(x, "majorLabels", value.asInstanceOf[js.Any])
     

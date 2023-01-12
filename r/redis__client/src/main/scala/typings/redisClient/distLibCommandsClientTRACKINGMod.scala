@@ -36,7 +36,8 @@ object distLibCommandsClientTRACKINGMod {
       __obj.asInstanceOf[BroadcastOptions]
     }
     
-    extension [Self <: BroadcastOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BroadcastOptions] (val x: Self) extends AnyVal {
       
       inline def setBCAST(value: Boolean): Self = StObject.set(x, "BCAST", value.asInstanceOf[js.Any])
       
@@ -65,7 +66,8 @@ object distLibCommandsClientTRACKINGMod {
       __obj.asInstanceOf[CommonOptions]
     }
     
-    extension [Self <: CommonOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonOptions] (val x: Self) extends AnyVal {
       
       inline def setNOLOOP(value: Boolean): Self = StObject.set(x, "NOLOOP", value.asInstanceOf[js.Any])
       
@@ -88,7 +90,8 @@ object distLibCommandsClientTRACKINGMod {
       __obj.asInstanceOf[OptInOptions]
     }
     
-    extension [Self <: OptInOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptInOptions] (val x: Self) extends AnyVal {
       
       inline def setOPTIN(value: Boolean): Self = StObject.set(x, "OPTIN", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object distLibCommandsClientTRACKINGMod {
       __obj.asInstanceOf[OptOutOptions]
     }
     
-    extension [Self <: OptOutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptOutOptions] (val x: Self) extends AnyVal {
       
       inline def setOPTOUT(value: Boolean): Self = StObject.set(x, "OPTOUT", value.asInstanceOf[js.Any])
       

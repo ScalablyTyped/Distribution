@@ -19,7 +19,8 @@ object ThinNestedEntryPointParams {
     __obj.asInstanceOf[ThinNestedEntryPointParams[TEntryPoint]]
   }
   
-  extension [Self <: ThinNestedEntryPointParams[?], TEntryPoint](x: Self & ThinNestedEntryPointParams[TEntryPoint]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ThinNestedEntryPointParams[?], TEntryPoint] (val x: Self & ThinNestedEntryPointParams[TEntryPoint]) extends AnyVal {
     
     inline def setEntryPoint(value: TEntryPoint): Self = StObject.set(x, "entryPoint", value.asInstanceOf[js.Any])
     

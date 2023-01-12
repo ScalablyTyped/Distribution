@@ -57,7 +57,8 @@ object mod {
       __obj.asInstanceOf[CompileExtractsAttributes]
     }
     
-    extension [Self <: CompileExtractsAttributes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileExtractsAttributes] (val x: Self) extends AnyVal {
       
       inline def setCldr(value: js.Object | (js.Function1[/* locale */ String, js.Object])): Self = StObject.set(x, "cldr", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object mod {
       __obj.asInstanceOf[CompileOptions]
     }
     
-    extension [Self <: CompileOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileOptions] (val x: Self) extends AnyVal {
       
       inline def setTemplate(value: /* options */ CompileTemplateOptions => String): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
       
@@ -122,7 +124,8 @@ object mod {
       __obj.asInstanceOf[CompileTemplateOptions]
     }
     
-    extension [Self <: CompileTemplateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompileTemplateOptions] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object CalendarDayPhrases {
     __obj.asInstanceOf[CalendarDayPhrases]
   }
   
-  extension [Self <: CalendarDayPhrases](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CalendarDayPhrases] (val x: Self) extends AnyVal {
     
     inline def setChooseAvailableDate(value: /* phraseArg */ PhraseArg => String): Self = StObject.set(x, "chooseAvailableDate", js.Any.fromFunction1(value))
     

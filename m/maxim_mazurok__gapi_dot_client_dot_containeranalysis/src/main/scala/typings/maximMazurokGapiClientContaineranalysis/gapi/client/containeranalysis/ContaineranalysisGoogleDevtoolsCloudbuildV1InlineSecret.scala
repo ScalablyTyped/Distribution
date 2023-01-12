@@ -24,7 +24,8 @@ object ContaineranalysisGoogleDevtoolsCloudbuildV1InlineSecret {
     __obj.asInstanceOf[ContaineranalysisGoogleDevtoolsCloudbuildV1InlineSecret]
   }
   
-  extension [Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1InlineSecret](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContaineranalysisGoogleDevtoolsCloudbuildV1InlineSecret] (val x: Self) extends AnyVal {
     
     inline def setEnvMap(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

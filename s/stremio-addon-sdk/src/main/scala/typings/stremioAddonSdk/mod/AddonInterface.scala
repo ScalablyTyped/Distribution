@@ -18,7 +18,8 @@ object AddonInterface {
     __obj.asInstanceOf[AddonInterface]
   }
   
-  extension [Self <: AddonInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddonInterface] (val x: Self) extends AnyVal {
     
     inline def setGet(value: resourceShortManifestReso => js.Promise[Any]): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

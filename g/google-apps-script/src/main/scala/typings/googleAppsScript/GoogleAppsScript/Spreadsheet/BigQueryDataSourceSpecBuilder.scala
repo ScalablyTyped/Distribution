@@ -50,7 +50,8 @@ object BigQueryDataSourceSpecBuilder {
     __obj.asInstanceOf[BigQueryDataSourceSpecBuilder]
   }
   
-  extension [Self <: BigQueryDataSourceSpecBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BigQueryDataSourceSpecBuilder] (val x: Self) extends AnyVal {
     
     inline def setBuild(value: () => DataSourceSpec): Self = StObject.set(x, "build", js.Any.fromFunction0(value))
     

@@ -189,7 +189,8 @@ object IDatePicker {
     __obj.asInstanceOf[IDatePicker]
   }
   
-  extension [Self <: IDatePicker](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDatePicker] (val x: Self) extends AnyVal {
     
     inline def setAriaTitle(value: java.lang.String): Self = StObject.set(x, "ariaTitle", value.asInstanceOf[js.Any])
     

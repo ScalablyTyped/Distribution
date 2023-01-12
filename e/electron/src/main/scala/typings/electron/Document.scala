@@ -18,7 +18,8 @@ object Document {
     __obj.asInstanceOf[Document]
   }
   
-  extension [Self <: Document](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Document] (val x: Self) extends AnyVal {
     
     inline def setCreateElement(value: webview => WebviewTag): Self = StObject.set(x, "createElement", js.Any.fromFunction1(value))
   }

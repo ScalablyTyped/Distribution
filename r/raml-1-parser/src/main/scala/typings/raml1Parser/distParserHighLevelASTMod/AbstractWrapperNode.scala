@@ -28,7 +28,8 @@ object AbstractWrapperNode {
     __obj.asInstanceOf[AbstractWrapperNode]
   }
   
-  extension [Self <: AbstractWrapperNode](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbstractWrapperNode] (val x: Self) extends AnyVal {
     
     inline def setKind(value: () => String): Self = StObject.set(x, "kind", js.Any.fromFunction0(value))
     

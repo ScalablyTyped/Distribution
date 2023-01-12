@@ -154,7 +154,8 @@ object `lib@GeneratedMempoolGrpcPbMod` {
       __obj.asInstanceOf[IMempoolServer]
     }
     
-    extension [Self <: IMempoolServer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMempoolServer] (val x: Self) extends AnyVal {
       
       inline def setAddTransactionWithValidation(
         value: (/* call */ ServerUnaryCall[AddTransactionWithValidationRequest], /* callback */ sendUnaryData[AddTransactionWithValidationResponse]) => Unit
@@ -197,7 +198,8 @@ object `lib@GeneratedMempoolGrpcPbMod` {
       __obj.asInstanceOf[IMempoolService]
     }
     
-    extension [Self <: IMempoolService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMempoolService] (val x: Self) extends AnyVal {
       
       inline def setAddTransactionWithValidation(value: IMempoolServiceIAddTransactionWithValidation): Self = StObject.set(x, "addTransactionWithValidation", value.asInstanceOf[js.Any])
       

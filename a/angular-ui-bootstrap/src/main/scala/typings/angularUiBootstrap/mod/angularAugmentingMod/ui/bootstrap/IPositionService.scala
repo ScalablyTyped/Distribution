@@ -24,7 +24,8 @@ object IPositionService {
     __obj.asInstanceOf[IPositionService]
   }
   
-  extension [Self <: IPositionService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPositionService] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: JQuery => IPositionCoordinates): Self = StObject.set(x, "offset", js.Any.fromFunction1(value))
     

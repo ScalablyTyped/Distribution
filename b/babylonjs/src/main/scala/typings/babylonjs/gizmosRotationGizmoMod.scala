@@ -170,7 +170,8 @@ object gizmosRotationGizmoMod {
       __obj.asInstanceOf[IRotationGizmo]
     }
     
-    extension [Self <: IRotationGizmo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRotationGizmo] (val x: Self) extends AnyVal {
       
       inline def setAddToAxisCache(value: (Mesh, GizmoAxisCache) => Unit): Self = StObject.set(x, "addToAxisCache", js.Any.fromFunction2(value))
       
@@ -202,7 +203,8 @@ object gizmosRotationGizmoMod {
       __obj.asInstanceOf[PlaneRotationGizmoOptions]
     }
     
-    extension [Self <: PlaneRotationGizmoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PlaneRotationGizmoOptions] (val x: Self) extends AnyVal {
       
       inline def setColor(value: Color3): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -239,7 +241,8 @@ object gizmosRotationGizmoMod {
       __obj.asInstanceOf[RotationGizmoOptions]
     }
     
-    extension [Self <: RotationGizmoOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RotationGizmoOptions] (val x: Self) extends AnyVal {
       
       inline def setUpdateScale(value: Boolean): Self = StObject.set(x, "updateScale", value.asInstanceOf[js.Any])
       

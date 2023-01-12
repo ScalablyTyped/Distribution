@@ -21,7 +21,8 @@ object Billboard {
     __obj.asInstanceOf[Billboard]
   }
   
-  extension [Self <: Billboard](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Billboard] (val x: Self) extends AnyVal {
     
     inline def setBillboard(value: typings.cesium.mod.Billboard): Self = StObject.set(x, "billboard", value.asInstanceOf[js.Any])
     

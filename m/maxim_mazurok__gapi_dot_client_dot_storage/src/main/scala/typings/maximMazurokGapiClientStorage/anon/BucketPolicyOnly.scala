@@ -25,7 +25,8 @@ object BucketPolicyOnly {
     __obj.asInstanceOf[BucketPolicyOnly]
   }
   
-  extension [Self <: BucketPolicyOnly](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BucketPolicyOnly] (val x: Self) extends AnyVal {
     
     inline def setBucketPolicyOnly(value: LockedTime): Self = StObject.set(x, "bucketPolicyOnly", value.asInstanceOf[js.Any])
     

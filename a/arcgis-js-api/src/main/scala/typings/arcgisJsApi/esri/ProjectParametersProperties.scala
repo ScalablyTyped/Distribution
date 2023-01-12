@@ -41,7 +41,8 @@ object ProjectParametersProperties {
     __obj.asInstanceOf[ProjectParametersProperties]
   }
   
-  extension [Self <: ProjectParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProjectParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setGeometries(value: js.Array[GeometryProperties]): Self = StObject.set(x, "geometries", value.asInstanceOf[js.Any])
     

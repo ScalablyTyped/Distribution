@@ -25,7 +25,8 @@ object TSParenthesizedType_ {
     __obj.asInstanceOf[TSParenthesizedType_]
   }
   
-  extension [Self <: TSParenthesizedType_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSParenthesizedType_] (val x: Self) extends AnyVal {
     
     inline def setType(value: TSParenthesizedType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

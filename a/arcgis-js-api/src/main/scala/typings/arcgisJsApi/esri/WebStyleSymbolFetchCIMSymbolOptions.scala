@@ -21,7 +21,8 @@ object WebStyleSymbolFetchCIMSymbolOptions {
     __obj.asInstanceOf[WebStyleSymbolFetchCIMSymbolOptions]
   }
   
-  extension [Self <: WebStyleSymbolFetchCIMSymbolOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebStyleSymbolFetchCIMSymbolOptions] (val x: Self) extends AnyVal {
     
     inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     

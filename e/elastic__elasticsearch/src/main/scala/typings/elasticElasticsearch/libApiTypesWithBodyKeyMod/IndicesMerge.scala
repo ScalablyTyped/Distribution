@@ -15,7 +15,8 @@ object IndicesMerge {
     __obj.asInstanceOf[IndicesMerge]
   }
   
-  extension [Self <: IndicesMerge](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IndicesMerge] (val x: Self) extends AnyVal {
     
     inline def setScheduler(value: IndicesMergeScheduler): Self = StObject.set(x, "scheduler", value.asInstanceOf[js.Any])
     

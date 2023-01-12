@@ -58,7 +58,8 @@ object TypeofdeviceAttributes {
     __obj.asInstanceOf[TypeofdeviceAttributes]
   }
   
-  extension [Self <: TypeofdeviceAttributes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofdeviceAttributes] (val x: Self) extends AnyVal {
     
     inline def setGetDeviceAnnotatedLocation(value: js.Function1[/* annotatedLocation */ String, Unit] => Unit): Self = StObject.set(x, "getDeviceAnnotatedLocation", js.Any.fromFunction1(value))
     

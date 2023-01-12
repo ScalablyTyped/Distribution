@@ -73,7 +73,8 @@ object libErrorMod {
       __obj.asInstanceOf[AWSError]
     }
     
-    extension [Self <: AWSError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AWSError] (val x: Self) extends AnyVal {
       
       inline def setCfId(value: String): Self = StObject.set(x, "cfId", value.asInstanceOf[js.Any])
       

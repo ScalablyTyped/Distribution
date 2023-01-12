@@ -16,7 +16,8 @@ object ProductSetPurgeConfig {
     __obj.asInstanceOf[ProductSetPurgeConfig]
   }
   
-  extension [Self <: ProductSetPurgeConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ProductSetPurgeConfig] (val x: Self) extends AnyVal {
     
     inline def setProductSetId(value: String): Self = StObject.set(x, "productSetId", value.asInstanceOf[js.Any])
     

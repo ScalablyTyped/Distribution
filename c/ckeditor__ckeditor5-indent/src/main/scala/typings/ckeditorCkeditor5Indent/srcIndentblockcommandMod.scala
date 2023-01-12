@@ -36,7 +36,8 @@ object srcIndentblockcommandMod {
       __obj.asInstanceOf[IndentBehavior]
     }
     
-    extension [Self <: IndentBehavior](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentBehavior] (val x: Self) extends AnyVal {
       
       inline def setCheckEnabled(value: String => Boolean): Self = StObject.set(x, "checkEnabled", js.Any.fromFunction1(value))
       
@@ -58,7 +59,8 @@ object srcIndentblockcommandMod {
       __obj.asInstanceOf[IndentBlockCommand]
     }
     
-    extension [Self <: IndentBlockCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IndentBlockCommand] (val x: Self) extends AnyVal {
       
       inline def setExecute(value: () => Unit): Self = StObject.set(x, "execute", js.Any.fromFunction0(value))
       
@@ -80,7 +82,8 @@ object srcIndentblockcommandMod {
         __obj.asInstanceOf[Commands]
       }
       
-      extension [Self <: Commands](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Commands] (val x: Self) extends AnyVal {
         
         inline def setIndentBlockCommand(value: IndentBlockCommand): Self = StObject.set(x, "IndentBlockCommand", value.asInstanceOf[js.Any])
       }

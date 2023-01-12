@@ -17,7 +17,8 @@ object FlexDirectionFlexGrow {
     __obj.asInstanceOf[FlexDirectionFlexGrow]
   }
   
-  extension [Self <: FlexDirectionFlexGrow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlexDirectionFlexGrow] (val x: Self) extends AnyVal {
     
     inline def setFlexDirection(value: String): Self = StObject.set(x, "flexDirection", value.asInstanceOf[js.Any])
     

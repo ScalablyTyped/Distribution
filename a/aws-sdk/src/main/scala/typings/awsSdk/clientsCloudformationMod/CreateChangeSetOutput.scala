@@ -23,7 +23,8 @@ object CreateChangeSetOutput {
     __obj.asInstanceOf[CreateChangeSetOutput]
   }
   
-  extension [Self <: CreateChangeSetOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateChangeSetOutput] (val x: Self) extends AnyVal {
     
     inline def setId(value: ChangeSetId): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
     

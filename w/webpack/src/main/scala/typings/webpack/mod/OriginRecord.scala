@@ -19,7 +19,8 @@ object OriginRecord {
     __obj.asInstanceOf[OriginRecord]
   }
   
-  extension [Self <: OriginRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginRecord] (val x: Self) extends AnyVal {
     
     inline def setLoc(value: DependencyLocation): Self = StObject.set(x, "loc", value.asInstanceOf[js.Any])
     

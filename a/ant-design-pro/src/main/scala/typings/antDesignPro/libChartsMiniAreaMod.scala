@@ -33,7 +33,8 @@ object libChartsMiniAreaMod {
       __obj.asInstanceOf[IAxis]
     }
     
-    extension [Self <: IAxis](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IAxis] (val x: Self) extends AnyVal {
       
       inline def setGrid(value: Any): Self = StObject.set(x, "grid", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object libChartsMiniAreaMod {
       __obj.asInstanceOf[IMiniAreaProps]
     }
     
-    extension [Self <: IMiniAreaProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMiniAreaProps] (val x: Self) extends AnyVal {
       
       inline def setAnimate(value: Boolean): Self = StObject.set(x, "animate", value.asInstanceOf[js.Any])
       

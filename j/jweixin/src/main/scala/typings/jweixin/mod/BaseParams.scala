@@ -21,7 +21,8 @@ object BaseParams {
     __obj.asInstanceOf[BaseParams]
   }
   
-  extension [Self <: BaseParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseParams] (val x: Self) extends AnyVal {
     
     inline def setComplete(value: /* repeated */ Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))
     

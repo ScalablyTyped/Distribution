@@ -25,7 +25,8 @@ object DropTargetEvent {
     __obj.asInstanceOf[DropTargetEvent]
   }
   
-  extension [Self <: DropTargetEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DropTargetEvent] (val x: Self) extends AnyVal {
     
     inline def setDummy(value: Double): Self = StObject.set(x, "Dummy", value.asInstanceOf[js.Any])
   }

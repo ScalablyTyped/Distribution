@@ -36,7 +36,8 @@ object libFooterCellMod {
       __obj.asInstanceOf[SummaryCellProps]
     }
     
-    extension [Self <: SummaryCellProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SummaryCellProps] (val x: Self) extends AnyVal {
       
       inline def setAlign(value: AlignType): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

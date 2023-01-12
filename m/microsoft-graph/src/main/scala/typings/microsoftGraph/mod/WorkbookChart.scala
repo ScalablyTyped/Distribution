@@ -57,7 +57,8 @@ object WorkbookChart {
     __obj.asInstanceOf[WorkbookChart]
   }
   
-  extension [Self <: WorkbookChart](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WorkbookChart] (val x: Self) extends AnyVal {
     
     inline def setAxes(value: NullableOption[WorkbookChartAxes]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
     

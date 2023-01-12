@@ -23,7 +23,8 @@ object typesParentCommitDoesNotExistExceptionMod {
       __obj.asInstanceOf[ParentCommitDoesNotExistException]
     }
     
-    extension [Self <: ParentCommitDoesNotExistException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParentCommitDoesNotExistException] (val x: Self) extends AnyVal {
       
       inline def setName(
         value: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.ParentCommitDoesNotExistException

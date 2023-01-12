@@ -52,7 +52,8 @@ object libResourcesBlobResourceMod {
       __obj.asInstanceOf[IBlobOptions]
     }
     
-    extension [Self <: IBlobOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBlobOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoLoad(value: Boolean): Self = StObject.set(x, "autoLoad", value.asInstanceOf[js.Any])
       

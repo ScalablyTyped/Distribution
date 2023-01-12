@@ -58,7 +58,8 @@ object OMathMat {
     __obj.asInstanceOf[OMathMat]
   }
   
-  extension [Self <: OMathMat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OMathMat] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: WdOMathVertAlignType): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object Displaylogin {
     __obj.asInstanceOf[Displaylogin]
   }
   
-  extension [Self <: Displaylogin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Displaylogin] (val x: Self) extends AnyVal {
     
     inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
     

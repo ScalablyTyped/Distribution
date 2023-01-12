@@ -62,7 +62,8 @@ object ServiceAreaSolveResultProperties {
     __obj.asInstanceOf[ServiceAreaSolveResultProperties]
   }
   
-  extension [Self <: ServiceAreaSolveResultProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceAreaSolveResultProperties] (val x: Self) extends AnyVal {
     
     inline def setFacilities(value: FeatureSetProperties): Self = StObject.set(x, "facilities", value.asInstanceOf[js.Any])
     

@@ -29,7 +29,8 @@ object AxesFactory {
     __obj.asInstanceOf[AxesFactory]
   }
   
-  extension [Self <: AxesFactory](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxesFactory] (val x: Self) extends AnyVal {
     
     inline def setFromVertices(value: js.Array[Vector] => js.Array[Vector]): Self = StObject.set(x, "fromVertices", js.Any.fromFunction1(value))
     

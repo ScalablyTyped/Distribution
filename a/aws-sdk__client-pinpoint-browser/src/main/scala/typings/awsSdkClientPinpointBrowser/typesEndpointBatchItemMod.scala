@@ -104,7 +104,8 @@ object typesEndpointBatchItemMod {
       __obj.asInstanceOf[EndpointBatchItem]
     }
     
-    extension [Self <: EndpointBatchItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EndpointBatchItem] (val x: Self) extends AnyVal {
       
       inline def setAddress(value: String): Self = StObject.set(x, "Address", value.asInstanceOf[js.Any])
       
@@ -203,7 +204,8 @@ object typesEndpointBatchItemMod {
       __obj.asInstanceOf[UnmarshalledEndpointBatchItem]
     }
     
-    extension [Self <: UnmarshalledEndpointBatchItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledEndpointBatchItem] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "Attributes", value.asInstanceOf[js.Any])
       

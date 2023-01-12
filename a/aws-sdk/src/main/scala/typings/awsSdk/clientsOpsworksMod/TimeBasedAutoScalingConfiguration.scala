@@ -23,7 +23,8 @@ object TimeBasedAutoScalingConfiguration {
     __obj.asInstanceOf[TimeBasedAutoScalingConfiguration]
   }
   
-  extension [Self <: TimeBasedAutoScalingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimeBasedAutoScalingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAutoScalingSchedule(value: WeeklyAutoScalingSchedule): Self = StObject.set(x, "AutoScalingSchedule", value.asInstanceOf[js.Any])
     

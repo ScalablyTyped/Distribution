@@ -30,7 +30,8 @@ object ITypeRegistry {
     __obj.asInstanceOf[ITypeRegistry]
   }
   
-  extension [Self <: ITypeRegistry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITypeRegistry] (val x: Self) extends AnyVal {
     
     inline def setGet(value: String => IParsedType): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

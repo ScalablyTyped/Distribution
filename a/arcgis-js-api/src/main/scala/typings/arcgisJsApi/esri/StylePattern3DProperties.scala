@@ -32,7 +32,8 @@ object StylePattern3DProperties {
     __obj.asInstanceOf[StylePattern3DProperties]
   }
   
-  extension [Self <: StylePattern3DProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StylePattern3DProperties] (val x: Self) extends AnyVal {
     
     inline def setStyle(
       value: `backward-diagonal` | cross | `diagonal-cross` | `forward-diagonal` | horizontal | none_ | solid | vertical

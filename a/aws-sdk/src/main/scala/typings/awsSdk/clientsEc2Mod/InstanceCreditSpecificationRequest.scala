@@ -23,7 +23,8 @@ object InstanceCreditSpecificationRequest {
     __obj.asInstanceOf[InstanceCreditSpecificationRequest]
   }
   
-  extension [Self <: InstanceCreditSpecificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceCreditSpecificationRequest] (val x: Self) extends AnyVal {
     
     inline def setCpuCredits(value: String): Self = StObject.set(x, "CpuCredits", value.asInstanceOf[js.Any])
     

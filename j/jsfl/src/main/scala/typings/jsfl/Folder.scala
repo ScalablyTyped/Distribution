@@ -15,7 +15,8 @@ object Folder {
     __obj.asInstanceOf[Folder]
   }
   
-  extension [Self <: Folder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Folder] (val x: Self) extends AnyVal {
     
     inline def setContents(value: js.Array[File]): Self = StObject.set(x, "contents", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object SideObject {
     __obj.asInstanceOf[SideObject]
   }
   
-  extension [Self <: SideObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SideObject] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

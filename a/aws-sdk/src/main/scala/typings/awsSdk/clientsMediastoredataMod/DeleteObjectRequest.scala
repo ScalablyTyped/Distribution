@@ -18,7 +18,8 @@ object DeleteObjectRequest {
     __obj.asInstanceOf[DeleteObjectRequest]
   }
   
-  extension [Self <: DeleteObjectRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteObjectRequest] (val x: Self) extends AnyVal {
     
     inline def setPath(value: PathNaming): Self = StObject.set(x, "Path", value.asInstanceOf[js.Any])
   }

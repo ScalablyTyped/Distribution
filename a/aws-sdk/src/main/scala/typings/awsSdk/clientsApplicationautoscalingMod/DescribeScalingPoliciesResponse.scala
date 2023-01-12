@@ -23,7 +23,8 @@ object DescribeScalingPoliciesResponse {
     __obj.asInstanceOf[DescribeScalingPoliciesResponse]
   }
   
-  extension [Self <: DescribeScalingPoliciesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeScalingPoliciesResponse] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: XmlString): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

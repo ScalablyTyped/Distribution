@@ -112,7 +112,8 @@ object TableChangedEventArgs {
     __obj.asInstanceOf[TableChangedEventArgs]
   }
   
-  extension [Self <: TableChangedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableChangedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

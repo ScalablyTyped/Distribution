@@ -40,7 +40,8 @@ object PlanDefinitionGoalTarget {
     __obj.asInstanceOf[PlanDefinitionGoalTarget]
   }
   
-  extension [Self <: PlanDefinitionGoalTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlanDefinitionGoalTarget] (val x: Self) extends AnyVal {
     
     inline def setDetailCodeableConcept(value: CodeableConcept): Self = StObject.set(x, "detailCodeableConcept", value.asInstanceOf[js.Any])
     

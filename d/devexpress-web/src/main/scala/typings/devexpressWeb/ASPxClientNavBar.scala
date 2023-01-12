@@ -141,7 +141,8 @@ object ASPxClientNavBar {
     __obj.asInstanceOf[ASPxClientNavBar]
   }
   
-  extension [Self <: ASPxClientNavBar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientNavBar] (val x: Self) extends AnyVal {
     
     inline def setBeginCallback(value: ASPxClientEvent[ASPxClientBeginCallbackEventHandler[ASPxClientNavBar]]): Self = StObject.set(x, "BeginCallback", value.asInstanceOf[js.Any])
     

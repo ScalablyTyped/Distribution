@@ -19,7 +19,8 @@ object Img {
     __obj.asInstanceOf[Img]
   }
   
-  extension [Self <: Img](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Img] (val x: Self) extends AnyVal {
     
     inline def setImg(value: Any): Self = StObject.set(x, "img", value.asInstanceOf[js.Any])
     

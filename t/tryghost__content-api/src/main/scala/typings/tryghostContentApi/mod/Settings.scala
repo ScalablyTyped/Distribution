@@ -47,7 +47,8 @@ object Settings {
     __obj.asInstanceOf[Settings]
   }
   
-  extension [Self <: Settings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
     
     inline def setCover_image(value: String): Self = StObject.set(x, "cover_image", value.asInstanceOf[js.Any])
     

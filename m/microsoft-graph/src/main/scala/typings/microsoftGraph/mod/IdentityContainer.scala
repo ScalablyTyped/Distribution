@@ -29,7 +29,8 @@ object IdentityContainer {
     __obj.asInstanceOf[IdentityContainer]
   }
   
-  extension [Self <: IdentityContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IdentityContainer] (val x: Self) extends AnyVal {
     
     inline def setApiConnectors(value: NullableOption[js.Array[IdentityApiConnector]]): Self = StObject.set(x, "apiConnectors", value.asInstanceOf[js.Any])
     

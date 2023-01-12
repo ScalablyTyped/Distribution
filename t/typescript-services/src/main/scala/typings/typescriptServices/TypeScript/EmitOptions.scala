@@ -62,7 +62,8 @@ object EmitOptions {
     __obj.asInstanceOf[EmitOptions]
   }
   
-  extension [Self <: EmitOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitOptions] (val x: Self) extends AnyVal {
     
     inline def setCommonDirectoryPath(value: () => String): Self = StObject.set(x, "commonDirectoryPath", js.Any.fromFunction0(value))
     

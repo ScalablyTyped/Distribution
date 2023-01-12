@@ -73,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ScrollbarProps]
     }
     
-    extension [Self <: ScrollbarProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollbarProps] (val x: Self) extends AnyVal {
       
       inline def setAlwaysShowTracks(value: Boolean): Self = StObject.set(x, "alwaysShowTracks", value.asInstanceOf[js.Any])
       

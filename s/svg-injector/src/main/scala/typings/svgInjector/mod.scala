@@ -51,7 +51,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[SVGInjectorOptions]
     }
     
-    extension [Self <: SVGInjectorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SVGInjectorOptions] (val x: Self) extends AnyVal {
       
       inline def setEach(value: /* svg */ SVGElement | String => Unit): Self = StObject.set(x, "each", js.Any.fromFunction1(value))
       

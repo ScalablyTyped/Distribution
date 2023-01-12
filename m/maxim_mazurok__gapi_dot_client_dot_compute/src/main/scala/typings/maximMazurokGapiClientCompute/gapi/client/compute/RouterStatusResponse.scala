@@ -18,7 +18,8 @@ object RouterStatusResponse {
     __obj.asInstanceOf[RouterStatusResponse]
   }
   
-  extension [Self <: RouterStatusResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RouterStatusResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object SignatureUrlOptions {
     __obj.asInstanceOf[SignatureUrlOptions]
   }
   
-  extension [Self <: SignatureUrlOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignatureUrlOptions] (val x: Self) extends AnyVal {
     
     inline def setCallback(value: ObjectCallback): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     

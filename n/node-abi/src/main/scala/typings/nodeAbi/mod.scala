@@ -79,7 +79,8 @@ object mod {
       __obj.asInstanceOf[Target]
     }
     
-    extension [Self <: Target](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Target] (val x: Self) extends AnyVal {
       
       inline def setAbi(value: String): Self = StObject.set(x, "abi", value.asInstanceOf[js.Any])
       

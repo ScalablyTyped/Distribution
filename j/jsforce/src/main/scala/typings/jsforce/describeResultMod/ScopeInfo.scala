@@ -17,7 +17,8 @@ object ScopeInfo {
     __obj.asInstanceOf[ScopeInfo]
   }
   
-  extension [Self <: ScopeInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeInfo] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

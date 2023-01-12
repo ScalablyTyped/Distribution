@@ -42,7 +42,8 @@ object componentMod {
       __obj.asInstanceOf[MDCFormFieldInput]
     }
     
-    extension [Self <: MDCFormFieldInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MDCFormFieldInput] (val x: Self) extends AnyVal {
       
       inline def setRipple(value: MDCRipple): Self = StObject.set(x, "ripple", value.asInstanceOf[js.Any])
       

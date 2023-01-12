@@ -28,7 +28,8 @@ object FinskyOfferType {
     __obj.asInstanceOf[FinskyOfferType]
   }
   
-  extension [Self <: FinskyOfferType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinskyOfferType] (val x: Self) extends AnyVal {
     
     inline def setFinskyOfferType(value: Double): Self = StObject.set(x, "finskyOfferType", value.asInstanceOf[js.Any])
     

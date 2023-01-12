@@ -32,7 +32,8 @@ object EntityReference {
     __obj.asInstanceOf[EntityReference]
   }
   
-  extension [Self <: EntityReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EntityReference] (val x: Self) extends AnyVal {
     
     inline def setEtn(value: String): Self = StObject.set(x, "etn", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GoogleCloudVisionV1p1beta1OutputConfig {
     __obj.asInstanceOf[GoogleCloudVisionV1p1beta1OutputConfig]
   }
   
-  extension [Self <: GoogleCloudVisionV1p1beta1OutputConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudVisionV1p1beta1OutputConfig] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

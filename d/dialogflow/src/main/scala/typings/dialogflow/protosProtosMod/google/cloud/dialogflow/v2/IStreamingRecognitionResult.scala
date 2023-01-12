@@ -36,7 +36,8 @@ object IStreamingRecognitionResult {
     __obj.asInstanceOf[IStreamingRecognitionResult]
   }
   
-  extension [Self <: IStreamingRecognitionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamingRecognitionResult] (val x: Self) extends AnyVal {
     
     inline def setConfidence(value: Double): Self = StObject.set(x, "confidence", value.asInstanceOf[js.Any])
     

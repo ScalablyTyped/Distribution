@@ -25,7 +25,8 @@ object PolygonizeOptions {
     __obj.asInstanceOf[PolygonizeOptions]
   }
   
-  extension [Self <: PolygonizeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PolygonizeOptions] (val x: Self) extends AnyVal {
     
     inline def setConnectedness(value: Double): Self = StObject.set(x, "connectedness", value.asInstanceOf[js.Any])
     

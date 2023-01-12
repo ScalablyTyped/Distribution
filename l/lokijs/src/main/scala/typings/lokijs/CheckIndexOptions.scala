@@ -19,7 +19,8 @@ object CheckIndexOptions {
     __obj.asInstanceOf[CheckIndexOptions]
   }
   
-  extension [Self <: CheckIndexOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckIndexOptions] (val x: Self) extends AnyVal {
     
     inline def setRandomSampling(value: Boolean): Self = StObject.set(x, "randomSampling", value.asInstanceOf[js.Any])
     

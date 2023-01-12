@@ -77,7 +77,8 @@ object dxPolarChartSeriesTypesCommonPolarChartSeriesLabel {
     __obj.asInstanceOf[dxPolarChartSeriesTypesCommonPolarChartSeriesLabel]
   }
   
-  extension [Self <: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxPolarChartSeriesTypesCommonPolarChartSeriesLabel] (val x: Self) extends AnyVal {
     
     inline def setArgumentFormat(value: Format): Self = StObject.set(x, "argumentFormat", value.asInstanceOf[js.Any])
     

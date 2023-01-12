@@ -37,7 +37,8 @@ object GoogleCloudDatacatalogV1TagTemplate {
     __obj.asInstanceOf[GoogleCloudDatacatalogV1TagTemplate]
   }
   
-  extension [Self <: GoogleCloudDatacatalogV1TagTemplate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatacatalogV1TagTemplate] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

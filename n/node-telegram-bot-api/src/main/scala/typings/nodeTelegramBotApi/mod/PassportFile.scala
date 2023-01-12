@@ -20,7 +20,8 @@ object PassportFile {
     __obj.asInstanceOf[PassportFile]
   }
   
-  extension [Self <: PassportFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PassportFile] (val x: Self) extends AnyVal {
     
     inline def setFile_date(value: Double): Self = StObject.set(x, "file_date", value.asInstanceOf[js.Any])
     

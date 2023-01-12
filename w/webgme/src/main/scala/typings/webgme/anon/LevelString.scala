@@ -15,7 +15,8 @@ object LevelString {
     __obj.asInstanceOf[LevelString]
   }
   
-  extension [Self <: LevelString](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LevelString] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: String): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
   }

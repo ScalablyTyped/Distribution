@@ -59,7 +59,8 @@ object EditorViewConfig {
     __obj.asInstanceOf[EditorViewConfig]
   }
   
-  extension [Self <: EditorViewConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditorViewConfig] (val x: Self) extends AnyVal {
     
     inline def setDispatch(value: /* tr */ Transaction => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
     

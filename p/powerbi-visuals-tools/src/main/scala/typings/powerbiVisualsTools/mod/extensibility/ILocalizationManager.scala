@@ -15,7 +15,8 @@ object ILocalizationManager {
     __obj.asInstanceOf[ILocalizationManager]
   }
   
-  extension [Self <: ILocalizationManager](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocalizationManager] (val x: Self) extends AnyVal {
     
     inline def setGetDisplayName(value: String => String): Self = StObject.set(x, "getDisplayName", js.Any.fromFunction1(value))
   }

@@ -115,7 +115,8 @@ object BasePayInData {
     __obj.asInstanceOf[BasePayInData]
   }
   
-  extension [Self <: BasePayInData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BasePayInData] (val x: Self) extends AnyVal {
     
     inline def setAuthorId(value: String): Self = StObject.set(x, "AuthorId", value.asInstanceOf[js.Any])
     

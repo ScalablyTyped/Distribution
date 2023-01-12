@@ -51,7 +51,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[DragPreviewOptions]
     }
     
-    extension [Self <: DragPreviewOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragPreviewOptions] (val x: Self) extends AnyVal {
       
       inline def setAnchorX(value: Double): Self = StObject.set(x, "anchorX", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object distTypesOptionsMod {
       __obj.asInstanceOf[DragSourceOptions]
     }
     
-    extension [Self <: DragSourceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DragSourceOptions] (val x: Self) extends AnyVal {
       
       inline def setDropEffect(value: String): Self = StObject.set(x, "dropEffect", value.asInstanceOf[js.Any])
       

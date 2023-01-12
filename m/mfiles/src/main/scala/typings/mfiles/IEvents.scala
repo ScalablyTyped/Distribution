@@ -19,7 +19,8 @@ object IEvents {
     __obj.asInstanceOf[IEvents]
   }
   
-  extension [Self <: IEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEvents] (val x: Self) extends AnyVal {
     
     inline def setRegister(value: (Event, js.Function) => Double): Self = StObject.set(x, "Register", js.Any.fromFunction2(value))
     

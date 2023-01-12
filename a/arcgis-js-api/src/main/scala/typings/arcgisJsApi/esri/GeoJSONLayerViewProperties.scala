@@ -43,7 +43,8 @@ object GeoJSONLayerViewProperties {
     __obj.asInstanceOf[GeoJSONLayerViewProperties]
   }
   
-  extension [Self <: GeoJSONLayerViewProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GeoJSONLayerViewProperties] (val x: Self) extends AnyVal {
     
     inline def setFeatureEffect(value: FeatureEffectProperties): Self = StObject.set(x, "featureEffect", value.asInstanceOf[js.Any])
     

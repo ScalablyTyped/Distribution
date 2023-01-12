@@ -17,7 +17,8 @@ object Organizations {
       __obj.asInstanceOf[CreateManyPayload]
     }
     
-    extension [Self <: CreateManyPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateManyPayload] (val x: Self) extends AnyVal {
       
       inline def setOrganizations(value: js.Array[CreateModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
@@ -36,7 +37,8 @@ object Organizations {
       __obj.asInstanceOf[CreateModel]
     }
     
-    extension [Self <: CreateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateModel] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -53,7 +55,8 @@ object Organizations {
       __obj.asInstanceOf[CreatePayload]
     }
     
-    extension [Self <: CreatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreatePayload] (val x: Self) extends AnyVal {
       
       inline def setOrganization(value: CreateModel): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     }
@@ -72,7 +75,8 @@ object Organizations {
       __obj.asInstanceOf[ListPayload]
     }
     
-    extension [Self <: ListPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListPayload] (val x: Self) extends AnyVal {
       
       inline def setOrganizations(value: js.Array[ResponseModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
@@ -150,7 +154,8 @@ object Organizations {
       __obj.asInstanceOf[ResponseModel]
     }
     
-    extension [Self <: ResponseModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: String): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -221,7 +226,8 @@ object Organizations {
       __obj.asInstanceOf[ResponsePayload]
     }
     
-    extension [Self <: ResponsePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsePayload] (val x: Self) extends AnyVal {
       
       inline def setOrganization(value: ResponseModel): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     }
@@ -240,7 +246,8 @@ object Organizations {
       __obj.asInstanceOf[UpdateManyModel]
     }
     
-    extension [Self <: UpdateManyModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateManyModel] (val x: Self) extends AnyVal {
       
       inline def setId(value: ZendeskID): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -257,7 +264,8 @@ object Organizations {
       __obj.asInstanceOf[UpdateManyPayload]
     }
     
-    extension [Self <: UpdateManyPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateManyPayload] (val x: Self) extends AnyVal {
       
       inline def setOrganizations(value: js.Array[UpdateManyModel]): Self = StObject.set(x, "organizations", value.asInstanceOf[js.Any])
       
@@ -276,7 +284,8 @@ object Organizations {
       __obj.asInstanceOf[UpdateModel]
     }
     
-    extension [Self <: UpdateModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateModel] (val x: Self) extends AnyVal {
       
       inline def setNotes(value: String): Self = StObject.set(x, "notes", value.asInstanceOf[js.Any])
     }
@@ -293,7 +302,8 @@ object Organizations {
       __obj.asInstanceOf[UpdatePayload]
     }
     
-    extension [Self <: UpdatePayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdatePayload] (val x: Self) extends AnyVal {
       
       inline def setOrganization(value: UpdateModel): Self = StObject.set(x, "organization", value.asInstanceOf[js.Any])
     }

@@ -15,7 +15,8 @@ object SerialisedInvertedIndex {
     __obj.asInstanceOf[SerialisedInvertedIndex]
   }
   
-  extension [Self <: SerialisedInvertedIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialisedInvertedIndex] (val x: Self) extends AnyVal {
     
     inline def setRoot(value: InvertedIndexNode): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
   }

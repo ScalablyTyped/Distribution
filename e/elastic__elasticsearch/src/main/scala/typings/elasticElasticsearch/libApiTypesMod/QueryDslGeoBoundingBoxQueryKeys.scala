@@ -21,7 +21,8 @@ object QueryDslGeoBoundingBoxQueryKeys {
     __obj.asInstanceOf[QueryDslGeoBoundingBoxQueryKeys]
   }
   
-  extension [Self <: QueryDslGeoBoundingBoxQueryKeys](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslGeoBoundingBoxQueryKeys] (val x: Self) extends AnyVal {
     
     inline def setIgnore_unmapped(value: Boolean): Self = StObject.set(x, "ignore_unmapped", value.asInstanceOf[js.Any])
     

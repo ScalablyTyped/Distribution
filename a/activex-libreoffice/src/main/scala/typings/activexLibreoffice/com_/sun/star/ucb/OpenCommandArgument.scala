@@ -46,7 +46,8 @@ object OpenCommandArgument {
     __obj.asInstanceOf[OpenCommandArgument]
   }
   
-  extension [Self <: OpenCommandArgument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpenCommandArgument] (val x: Self) extends AnyVal {
     
     inline def setMode(value: Double): Self = StObject.set(x, "Mode", value.asInstanceOf[js.Any])
     

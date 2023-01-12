@@ -41,7 +41,8 @@ object menuMaybeChildMenuMod extends Shortcut {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setGetChildMenu(value: /* item */ Item => ReactNode): Self = StObject.set(x, "getChildMenu", js.Any.fromFunction1(value))
       

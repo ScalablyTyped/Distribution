@@ -23,7 +23,8 @@ object ListSqlInjectionMatchSetsRequest {
     __obj.asInstanceOf[ListSqlInjectionMatchSetsRequest]
   }
   
-  extension [Self <: ListSqlInjectionMatchSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSqlInjectionMatchSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setLimit(value: PaginationLimit): Self = StObject.set(x, "Limit", value.asInstanceOf[js.Any])
     

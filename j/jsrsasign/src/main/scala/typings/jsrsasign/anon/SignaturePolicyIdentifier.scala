@@ -27,7 +27,8 @@ object SignaturePolicyIdentifier {
     __obj.asInstanceOf[SignaturePolicyIdentifier]
   }
   
-  extension [Self <: SignaturePolicyIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignaturePolicyIdentifier] (val x: Self) extends AnyVal {
     
     inline def setSignaturePolicyIdentifier(value: Oid): Self = StObject.set(x, "SignaturePolicyIdentifier", value.asInstanceOf[js.Any])
     

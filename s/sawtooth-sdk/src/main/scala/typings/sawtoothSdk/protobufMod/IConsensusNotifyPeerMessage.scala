@@ -19,7 +19,8 @@ object IConsensusNotifyPeerMessage {
     __obj.asInstanceOf[IConsensusNotifyPeerMessage]
   }
   
-  extension [Self <: IConsensusNotifyPeerMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IConsensusNotifyPeerMessage] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: IConsensusPeerMessage): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object RealBezierSegment2D {
     __obj.asInstanceOf[RealBezierSegment2D]
   }
   
-  extension [Self <: RealBezierSegment2D](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RealBezierSegment2D] (val x: Self) extends AnyVal {
     
     inline def setC1x(value: Double): Self = StObject.set(x, "C1x", value.asInstanceOf[js.Any])
     

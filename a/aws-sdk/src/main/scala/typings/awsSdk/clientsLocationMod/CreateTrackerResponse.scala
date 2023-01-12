@@ -28,7 +28,8 @@ object CreateTrackerResponse {
     __obj.asInstanceOf[CreateTrackerResponse]
   }
   
-  extension [Self <: CreateTrackerResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateTrackerResponse] (val x: Self) extends AnyVal {
     
     inline def setCreateTime(value: js.Date): Self = StObject.set(x, "CreateTime", value.asInstanceOf[js.Any])
     

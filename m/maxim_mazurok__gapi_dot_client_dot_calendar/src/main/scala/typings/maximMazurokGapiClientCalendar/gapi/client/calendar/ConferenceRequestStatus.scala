@@ -22,7 +22,8 @@ object ConferenceRequestStatus {
     __obj.asInstanceOf[ConferenceRequestStatus]
   }
   
-  extension [Self <: ConferenceRequestStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConferenceRequestStatus] (val x: Self) extends AnyVal {
     
     inline def setStatusCode(value: String): Self = StObject.set(x, "statusCode", value.asInstanceOf[js.Any])
     

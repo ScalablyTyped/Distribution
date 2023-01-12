@@ -33,7 +33,8 @@ object StringFilterBuilder {
     __obj.asInstanceOf[StringFilterBuilder]
   }
   
-  extension [Self <: StringFilterBuilder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StringFilterBuilder] (val x: Self) extends AnyVal {
     
     inline def setSetCaseSensitive(value: Boolean => StringFilterBuilder): Self = StObject.set(x, "setCaseSensitive", js.Any.fromFunction1(value))
     

@@ -19,7 +19,8 @@ object CDFJPY {
     __obj.asInstanceOf[CDFJPY]
   }
   
-  extension [Self <: CDFJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CDFJPY] (val x: Self) extends AnyVal {
     
     inline def setCDF(value: js.Array[String]): Self = StObject.set(x, "CDF", value.asInstanceOf[js.Any])
     

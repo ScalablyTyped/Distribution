@@ -18,7 +18,8 @@ object JQueryValidation {
       __obj.asInstanceOf[ValidatorStatic]
     }
     
-    extension [Self <: ValidatorStatic](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidatorStatic] (val x: Self) extends AnyVal {
       
       inline def setUnobtrusive(value: Validator): Self = StObject.set(x, "unobtrusive", value.asInstanceOf[js.Any])
     }

@@ -33,7 +33,8 @@ object SjclModes {
     __obj.asInstanceOf[SjclModes]
   }
   
-  extension [Self <: SjclModes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SjclModes] (val x: Self) extends AnyVal {
     
     inline def setCbc(value: SjclCBCMode): Self = StObject.set(x, "cbc", value.asInstanceOf[js.Any])
     

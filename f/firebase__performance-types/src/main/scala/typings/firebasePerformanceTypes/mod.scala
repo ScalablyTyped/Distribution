@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[FirebasePerformance]
     }
     
-    extension [Self <: FirebasePerformance](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FirebasePerformance] (val x: Self) extends AnyVal {
       
       inline def setDataCollectionEnabled(value: Boolean): Self = StObject.set(x, "dataCollectionEnabled", value.asInstanceOf[js.Any])
       
@@ -144,7 +145,8 @@ object mod {
         __obj.asInstanceOf[NameServiceMapping]
       }
       
-      extension [Self <: NameServiceMapping](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: NameServiceMapping] (val x: Self) extends AnyVal {
         
         inline def `setPerformance-compat`(value: FirebasePerformance): Self = StObject.set(x, "performance-compat", value.asInstanceOf[js.Any])
       }

@@ -56,7 +56,8 @@ object distCjsAsarUtilsMod {
       __obj.asInstanceOf[MergeASARsOptions]
     }
     
-    extension [Self <: MergeASARsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MergeASARsOptions] (val x: Self) extends AnyVal {
       
       inline def setArm64AsarPath(value: String): Self = StObject.set(x, "arm64AsarPath", value.asInstanceOf[js.Any])
       

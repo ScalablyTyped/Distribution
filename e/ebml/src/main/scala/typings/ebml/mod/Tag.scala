@@ -61,7 +61,8 @@ object Tag {
       __obj.asInstanceOf[DataTypeToTypeMap]
     }
     
-    extension [Self <: DataTypeToTypeMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DataTypeToTypeMap] (val x: Self) extends AnyVal {
       
       inline def set8(value: String): Self = StObject.set(x, "8", value.asInstanceOf[js.Any])
       
@@ -81,7 +82,8 @@ object Tag {
     }
   }
   
-  extension [Self <: Tag[?], T /* <: TagType */](x: Self & Tag[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Tag[?], T /* <: TagType */] (val x: Self & Tag[T]) extends AnyVal {
     
     inline def setData(value: Buffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object CheckboxColumnOption {
     __obj.asInstanceOf[CheckboxColumnOption]
   }
   
-  extension [Self <: CheckboxColumnOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CheckboxColumnOption] (val x: Self) extends AnyVal {
     
     inline def setActionOnCheckbox(value: ActionOnCellCheckboxCheck): Self = StObject.set(x, "actionOnCheckbox", value.asInstanceOf[js.Any])
   }

@@ -43,7 +43,8 @@ object ListReusableDelegationSetsResponse {
     __obj.asInstanceOf[ListReusableDelegationSetsResponse]
   }
   
-  extension [Self <: ListReusableDelegationSetsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListReusableDelegationSetsResponse] (val x: Self) extends AnyVal {
     
     inline def setDelegationSets(value: DelegationSets): Self = StObject.set(x, "DelegationSets", value.asInstanceOf[js.Any])
     

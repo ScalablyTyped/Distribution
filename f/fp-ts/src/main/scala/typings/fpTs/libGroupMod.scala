@@ -20,7 +20,8 @@ object libGroupMod {
       __obj.asInstanceOf[Group[A]]
     }
     
-    extension [Self <: Group[?], A](x: Self & Group[A]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Group[?], A] (val x: Self & Group[A]) extends AnyVal {
       
       inline def setInverse(value: A => A): Self = StObject.set(x, "inverse", js.Any.fromFunction1(value))
     }

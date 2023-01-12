@@ -25,7 +25,8 @@ object mod {
       __obj.asInstanceOf[Redactor]
     }
     
-    extension [Self <: Redactor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Redactor] (val x: Self) extends AnyVal {
       
       inline def setForEach(value: Any => Unit): Self = StObject.set(x, "forEach", js.Any.fromFunction1(value))
       

@@ -41,7 +41,8 @@ object mod {
       __obj.asInstanceOf[Dimension]
     }
     
-    extension [Self <: Dimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
       inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
       
@@ -193,7 +194,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAbort(value: js.Function): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
       

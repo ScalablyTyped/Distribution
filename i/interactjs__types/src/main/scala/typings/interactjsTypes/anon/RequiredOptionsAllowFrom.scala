@@ -104,7 +104,8 @@ object RequiredOptionsAllowFrom {
     __obj.asInstanceOf[RequiredOptionsAllowFrom]
   }
   
-  extension [Self <: RequiredOptionsAllowFrom](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredOptionsAllowFrom] (val x: Self) extends AnyVal {
     
     inline def setActionChecker(value: Any): Self = StObject.set(x, "actionChecker", value.asInstanceOf[js.Any])
     

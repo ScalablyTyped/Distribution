@@ -21,7 +21,8 @@ object VimeoTextTrack {
     __obj.asInstanceOf[VimeoTextTrack]
   }
   
-  extension [Self <: VimeoTextTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VimeoTextTrack] (val x: Self) extends AnyVal {
     
     inline def setKind(value: TrackKind): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

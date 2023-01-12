@@ -17,7 +17,8 @@ object TypeofTAGVALS {
     __obj.asInstanceOf[TypeofTAGVALS]
   }
   
-  extension [Self <: TypeofTAGVALS](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofTAGVALS] (val x: Self) extends AnyVal {
     
     inline def setTransformArguments(value: (String, String) => js.Array[String]): Self = StObject.set(x, "transformArguments", js.Any.fromFunction2(value))
     

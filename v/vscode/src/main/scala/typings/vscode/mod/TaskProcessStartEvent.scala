@@ -23,7 +23,8 @@ object TaskProcessStartEvent {
     __obj.asInstanceOf[TaskProcessStartEvent]
   }
   
-  extension [Self <: TaskProcessStartEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaskProcessStartEvent] (val x: Self) extends AnyVal {
     
     inline def setExecution(value: TaskExecution): Self = StObject.set(x, "execution", value.asInstanceOf[js.Any])
     

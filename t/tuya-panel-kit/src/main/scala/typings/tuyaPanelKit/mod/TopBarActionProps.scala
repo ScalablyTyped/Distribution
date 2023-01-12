@@ -363,7 +363,8 @@ object TopBarActionProps {
     __obj.asInstanceOf[TopBarActionProps]
   }
   
-  extension [Self <: TopBarActionProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopBarActionProps] (val x: Self) extends AnyVal {
     
     inline def setAscent(value: Double): Self = StObject.set(x, "ascent", value.asInstanceOf[js.Any])
     

@@ -72,7 +72,8 @@ object ServerInfo {
     __obj.asInstanceOf[ServerInfo]
   }
   
-  extension [Self <: ServerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServerInfo] (val x: Self) extends AnyVal {
     
     inline def setAddress(value: String): Self = StObject.set(x, "address", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object NavigatorYAxisResizeControlledAxisOptions {
     __obj.asInstanceOf[NavigatorYAxisResizeControlledAxisOptions]
   }
   
-  extension [Self <: NavigatorYAxisResizeControlledAxisOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigatorYAxisResizeControlledAxisOptions] (val x: Self) extends AnyVal {
     
     inline def setNext(value: js.Array[Double | String]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])
     

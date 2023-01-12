@@ -31,7 +31,8 @@ object IgTreeGridFilteringLocale {
     __obj.asInstanceOf[IgTreeGridFilteringLocale]
   }
   
-  extension [Self <: IgTreeGridFilteringLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTreeGridFilteringLocale] (val x: Self) extends AnyVal {
     
     inline def setFilterSummaryInPagerTemplate(value: String): Self = StObject.set(x, "filterSummaryInPagerTemplate", value.asInstanceOf[js.Any])
     

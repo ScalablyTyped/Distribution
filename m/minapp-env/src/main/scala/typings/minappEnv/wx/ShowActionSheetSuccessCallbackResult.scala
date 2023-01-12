@@ -16,7 +16,8 @@ object ShowActionSheetSuccessCallbackResult {
     __obj.asInstanceOf[ShowActionSheetSuccessCallbackResult]
   }
   
-  extension [Self <: ShowActionSheetSuccessCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShowActionSheetSuccessCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setTapIndex(value: Double): Self = StObject.set(x, "tapIndex", value.asInstanceOf[js.Any])
   }

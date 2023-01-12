@@ -24,7 +24,8 @@ object SrcControl {
     __obj.asInstanceOf[SrcControl]
   }
   
-  extension [Self <: SrcControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SrcControl] (val x: Self) extends AnyVal {
     
     inline def setListItem(value: default): Self = StObject.set(x, "listItem", value.asInstanceOf[js.Any])
     

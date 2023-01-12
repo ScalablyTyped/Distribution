@@ -25,7 +25,8 @@ object ScrollOffsetCallbackResult {
     __obj.asInstanceOf[ScrollOffsetCallbackResult]
   }
   
-  extension [Self <: ScrollOffsetCallbackResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScrollOffsetCallbackResult] (val x: Self) extends AnyVal {
     
     inline def setDataset(value: js.Object): Self = StObject.set(x, "dataset", value.asInstanceOf[js.Any])
     

@@ -98,7 +98,8 @@ object srcStyleMod {
       __obj.asInstanceOf[BoxAlignmentStyleProps]
     }
     
-    extension [Self <: BoxAlignmentStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoxAlignmentStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAlignContent(
         value: Responsive[
@@ -166,7 +167,8 @@ object srcStyleMod {
       __obj.asInstanceOf[FlexStyleProps]
     }
     
-    extension [Self <: FlexStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FlexStyleProps] (val x: Self) extends AnyVal {
       
       inline def setDirection(value: Responsive[row | column | `row-reverse` | `column-reverse`]): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
       
@@ -215,7 +217,8 @@ object srcStyleMod {
       __obj.asInstanceOf[GridStyleProps]
     }
     
-    extension [Self <: GridStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridStyleProps] (val x: Self) extends AnyVal {
       
       inline def setAreas(value: Responsive[js.Array[String]]): Self = StObject.set(x, "areas", value.asInstanceOf[js.Any])
       
@@ -278,7 +281,8 @@ object srcStyleMod {
       __obj.asInstanceOf[ResponsiveProp[T]]
     }
     
-    extension [Self <: ResponsiveProp[?], T](x: Self & ResponsiveProp[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponsiveProp[?], T] (val x: Self & ResponsiveProp[T]) extends AnyVal {
       
       inline def setBase(value: T): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -435,7 +439,8 @@ object srcStyleMod {
       __obj.asInstanceOf[StyleProps]
     }
     
-    extension [Self <: StyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StyleProps] (val x: Self) extends AnyVal {
       
       inline def setAlignSelf(
         value: Responsive[
@@ -704,7 +709,8 @@ object srcStyleMod {
       __obj.asInstanceOf[ViewStyleProps]
     }
     
-    extension [Self <: ViewStyleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ViewStyleProps] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: Responsive[BackgroundColorValue]): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object IncludedPath {
     __obj.asInstanceOf[IncludedPath]
   }
   
-  extension [Self <: IncludedPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IncludedPath] (val x: Self) extends AnyVal {
     
     inline def setIndexes(value: js.Array[Index]): Self = StObject.set(x, "Indexes", value.asInstanceOf[js.Any])
     

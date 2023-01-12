@@ -21,7 +21,8 @@ object ViewNavigator {
     __obj.asInstanceOf[ViewNavigator]
   }
   
-  extension [Self <: ViewNavigator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewNavigator] (val x: Self) extends AnyVal {
     
     inline def setInit(value: () => Unit): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
     

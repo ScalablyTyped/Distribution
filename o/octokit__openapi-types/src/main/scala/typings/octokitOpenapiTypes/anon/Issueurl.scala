@@ -183,7 +183,8 @@ object Issueurl {
     __obj.asInstanceOf[Issueurl]
   }
   
-  extension [Self <: Issueurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Issueurl] (val x: Self) extends AnyVal {
     
     inline def setActive_lock_reason(value: String): Self = StObject.set(x, "active_lock_reason", value.asInstanceOf[js.Any])
     

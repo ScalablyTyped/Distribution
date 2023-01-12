@@ -45,7 +45,8 @@ object mod {
       __obj.asInstanceOf[ReadConfigRequest]
     }
     
-    extension [Self <: ReadConfigRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadConfigRequest] (val x: Self) extends AnyVal {
       
       inline def setConfigFilename(value: String): Self = StObject.set(x, "configFilename", value.asInstanceOf[js.Any])
       
@@ -72,7 +73,8 @@ object mod {
       __obj.asInstanceOf[ReadConfigResult[T]]
     }
     
-    extension [Self <: ReadConfigResult[?], T](x: Self & ReadConfigResult[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReadConfigResult[?], T] (val x: Self & ReadConfigResult[T]) extends AnyVal {
       
       inline def setConfigFile(value: String): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       

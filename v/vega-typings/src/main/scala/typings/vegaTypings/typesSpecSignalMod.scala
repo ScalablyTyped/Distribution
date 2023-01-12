@@ -39,7 +39,8 @@ object typesSpecSignalMod {
       __obj.asInstanceOf[BaseSignal]
     }
     
-    extension [Self <: BaseSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseSignal] (val x: Self) extends AnyVal {
       
       inline def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
       
@@ -73,7 +74,8 @@ object typesSpecSignalMod {
       __obj.asInstanceOf[InitSignal]
     }
     
-    extension [Self <: InitSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InitSignal] (val x: Self) extends AnyVal {
       
       inline def setBind(value: Binding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object typesSpecSignalMod {
       __obj.asInstanceOf[NewSignal]
     }
     
-    extension [Self <: NewSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NewSignal] (val x: Self) extends AnyVal {
       
       inline def setBind(value: Binding): Self = StObject.set(x, "bind", value.asInstanceOf[js.Any])
       
@@ -141,7 +144,8 @@ object typesSpecSignalMod {
       __obj.asInstanceOf[PushSignal]
     }
     
-    extension [Self <: PushSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushSignal] (val x: Self) extends AnyVal {
       
       inline def setPush(value: outer): Self = StObject.set(x, "push", value.asInstanceOf[js.Any])
     }
@@ -197,7 +201,8 @@ object typesSpecSignalMod {
       __obj.asInstanceOf[SignalRef]
     }
     
-    extension [Self <: SignalRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SignalRef] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: String): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
     }

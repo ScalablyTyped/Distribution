@@ -50,7 +50,8 @@ object IWebXRTrackedImage {
     __obj.asInstanceOf[IWebXRTrackedImage]
   }
   
-  extension [Self <: IWebXRTrackedImage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRTrackedImage] (val x: Self) extends AnyVal {
     
     inline def setEmulated(value: Boolean): Self = StObject.set(x, "emulated", value.asInstanceOf[js.Any])
     

@@ -35,7 +35,8 @@ object ArrayDeclarationOption {
     __obj.asInstanceOf[ArrayDeclarationOption]
   }
   
-  extension [Self <: ArrayDeclarationOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ArrayDeclarationOption] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: js.Array[String]): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

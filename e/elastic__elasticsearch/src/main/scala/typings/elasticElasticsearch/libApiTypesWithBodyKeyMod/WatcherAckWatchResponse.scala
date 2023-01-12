@@ -15,7 +15,8 @@ object WatcherAckWatchResponse {
     __obj.asInstanceOf[WatcherAckWatchResponse]
   }
   
-  extension [Self <: WatcherAckWatchResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatcherAckWatchResponse] (val x: Self) extends AnyVal {
     
     inline def setStatus(value: WatcherWatchStatus): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
   }

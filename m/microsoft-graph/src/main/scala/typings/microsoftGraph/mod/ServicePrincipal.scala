@@ -266,7 +266,8 @@ object ServicePrincipal {
     __obj.asInstanceOf[ServicePrincipal]
   }
   
-  extension [Self <: ServicePrincipal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServicePrincipal] (val x: Self) extends AnyVal {
     
     inline def setAccountEnabled(value: NullableOption[Boolean]): Self = StObject.set(x, "accountEnabled", value.asInstanceOf[js.Any])
     

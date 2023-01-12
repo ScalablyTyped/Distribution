@@ -21,7 +21,8 @@ object typesAlreadyExistsExceptionMod {
       __obj.asInstanceOf[AlreadyExistsException]
     }
     
-    extension [Self <: AlreadyExistsException](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlreadyExistsException] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientKmsBrowser.awsSdkClientKmsBrowserStrings.AlreadyExistsException): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object typesAlreadyExistsExceptionMod {
       __obj.asInstanceOf[AlreadyExistsExceptionDetails]
     }
     
-    extension [Self <: AlreadyExistsExceptionDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AlreadyExistsExceptionDetails] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       

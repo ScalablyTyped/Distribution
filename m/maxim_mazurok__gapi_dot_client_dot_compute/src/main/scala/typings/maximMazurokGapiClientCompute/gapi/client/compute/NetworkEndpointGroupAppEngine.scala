@@ -26,7 +26,8 @@ object NetworkEndpointGroupAppEngine {
     __obj.asInstanceOf[NetworkEndpointGroupAppEngine]
   }
   
-  extension [Self <: NetworkEndpointGroupAppEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkEndpointGroupAppEngine] (val x: Self) extends AnyVal {
     
     inline def setService(value: String): Self = StObject.set(x, "service", value.asInstanceOf[js.Any])
     

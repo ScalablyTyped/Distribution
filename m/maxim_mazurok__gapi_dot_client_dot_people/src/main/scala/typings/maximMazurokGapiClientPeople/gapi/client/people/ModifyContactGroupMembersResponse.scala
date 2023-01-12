@@ -19,7 +19,8 @@ object ModifyContactGroupMembersResponse {
     __obj.asInstanceOf[ModifyContactGroupMembersResponse]
   }
   
-  extension [Self <: ModifyContactGroupMembersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModifyContactGroupMembersResponse] (val x: Self) extends AnyVal {
     
     inline def setCanNotRemoveLastContactGroupResourceNames(value: js.Array[String]): Self = StObject.set(x, "canNotRemoveLastContactGroupResourceNames", value.asInstanceOf[js.Any])
     

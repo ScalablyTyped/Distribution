@@ -15,7 +15,8 @@ object TopicsUndefined {
     __obj.asInstanceOf[TopicsUndefined]
   }
   
-  extension [Self <: TopicsUndefined](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicsUndefined] (val x: Self) extends AnyVal {
     
     inline def setTopics(value: Unit): Self = StObject.set(x, "topics", value.asInstanceOf[js.Any])
   }

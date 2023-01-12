@@ -21,7 +21,8 @@ object Auth0LockThemeButton {
     __obj.asInstanceOf[Auth0LockThemeButton]
   }
   
-  extension [Self <: Auth0LockThemeButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0LockThemeButton] (val x: Self) extends AnyVal {
     
     inline def setDisplayName(value: String): Self = StObject.set(x, "displayName", value.asInstanceOf[js.Any])
     

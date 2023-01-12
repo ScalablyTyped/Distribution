@@ -189,7 +189,8 @@ object StateNodeConfig {
     __obj.asInstanceOf[StateNodeConfig[TContext, TStateSchema, TEvent, TAction]]
   }
   
-  extension [Self <: StateNodeConfig[?, ?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */](x: Self & (StateNodeConfig[TContext, TStateSchema, TEvent, TAction])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StateNodeConfig[?, ?, ?, ?], TContext, TStateSchema /* <: StateSchema[Any] */, TEvent /* <: EventObject */, TAction /* <: BaseActionObject */] (val x: Self & (StateNodeConfig[TContext, TStateSchema, TEvent, TAction])) extends AnyVal {
     
     inline def setActivities(value: SingleOrArray[Activity[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
     

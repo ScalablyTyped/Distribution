@@ -327,7 +327,8 @@ object Check {
     __obj.asInstanceOf[Check]
   }
   
-  extension [Self <: Check](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Check] (val x: Self) extends AnyVal {
     
     inline def setActions(value: js.Function | (js.Array[js.Function0[Unit] | default]) | default): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
     

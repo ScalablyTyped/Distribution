@@ -23,7 +23,8 @@ object DisassociateAttributeGroupRequest {
     __obj.asInstanceOf[DisassociateAttributeGroupRequest]
   }
   
-  extension [Self <: DisassociateAttributeGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateAttributeGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: ApplicationSpecifier): Self = StObject.set(x, "application", value.asInstanceOf[js.Any])
     

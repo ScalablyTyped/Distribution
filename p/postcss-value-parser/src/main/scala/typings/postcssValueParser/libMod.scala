@@ -54,7 +54,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[AdjacentAwareNode]
     }
     
-    extension [Self <: AdjacentAwareNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdjacentAwareNode] (val x: Self) extends AnyVal {
       
       inline def setAfter(value: String): Self = StObject.set(x, "after", value.asInstanceOf[js.Any])
       
@@ -86,7 +87,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[BaseNode]
     }
     
-    extension [Self <: BaseNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseNode] (val x: Self) extends AnyVal {
       
       inline def setSourceEndIndex(value: Double): Self = StObject.set(x, "sourceEndIndex", value.asInstanceOf[js.Any])
       
@@ -110,7 +112,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[ClosableNode]
     }
     
-    extension [Self <: ClosableNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClosableNode] (val x: Self) extends AnyVal {
       
       inline def setUnclosed(value: `true`): Self = StObject.set(x, "unclosed", value.asInstanceOf[js.Any])
       
@@ -134,7 +137,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[CommentNode]
     }
     
-    extension [Self <: CommentNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommentNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: comment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -158,7 +162,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[Dimension]
     }
     
-    extension [Self <: Dimension](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dimension] (val x: Self) extends AnyVal {
       
       inline def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
       
@@ -182,7 +187,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[DivNode]
     }
     
-    extension [Self <: DivNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DivNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: div): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -217,7 +223,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[FunctionNode]
     }
     
-    extension [Self <: FunctionNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FunctionNode] (val x: Self) extends AnyVal {
       
       inline def setNodes(value: js.Array[Node]): Self = StObject.set(x, "nodes", value.asInstanceOf[js.Any])
       
@@ -333,7 +340,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[SpaceNode]
     }
     
-    extension [Self <: SpaceNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpaceNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: space): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -365,7 +373,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[StringNode]
     }
     
-    extension [Self <: StringNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StringNode] (val x: Self) extends AnyVal {
       
       inline def setQuote(value: Quotationmark | (/* ' */ String)): Self = StObject.set(x, "quote", value.asInstanceOf[js.Any])
       
@@ -388,7 +397,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[UnicodeRangeNode]
     }
     
-    extension [Self <: UnicodeRangeNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnicodeRangeNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: `unicode-range`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -459,7 +469,8 @@ object libMod extends Shortcut {
       __obj.asInstanceOf[WordNode]
     }
     
-    extension [Self <: WordNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WordNode] (val x: Self) extends AnyVal {
       
       inline def setType(value: word): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }

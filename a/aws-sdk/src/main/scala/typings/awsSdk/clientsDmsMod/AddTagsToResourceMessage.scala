@@ -23,7 +23,8 @@ object AddTagsToResourceMessage {
     __obj.asInstanceOf[AddTagsToResourceMessage]
   }
   
-  extension [Self <: AddTagsToResourceMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddTagsToResourceMessage] (val x: Self) extends AnyVal {
     
     inline def setResourceArn(value: String): Self = StObject.set(x, "ResourceArn", value.asInstanceOf[js.Any])
     

@@ -978,7 +978,8 @@ object mod {
       __obj.asInstanceOf[Internal]
     }
     
-    extension [Self <: Internal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Internal] (val x: Self) extends AnyVal {
       
       inline def setFetchQuery(
         value: (/* environment */ typings.relayRuntime.libStoreRelayStoreTypesMod.Environment, /* operation */ OperationDescriptor) => RelayObservable[GraphQLResponse]
@@ -1017,7 +1018,8 @@ object mod {
       __obj.asInstanceOf[RefType[Ref]]
     }
     
-    extension [Self <: RefType[?], Ref /* <: String */](x: Self & RefType[Ref]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RefType[?], Ref /* <: String */] (val x: Self & RefType[Ref]) extends AnyVal {
       
       inline def setSpace$fragmentType(value: Ref): Self = StObject.set(x, " $fragmentType", value.asInstanceOf[js.Any])
     }
@@ -1036,7 +1038,8 @@ object mod {
       __obj.asInstanceOf[_FragmentRefs[Refs]]
     }
     
-    extension [Self <: _FragmentRefs[?], Refs /* <: String */](x: Self & _FragmentRefs[Refs]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: _FragmentRefs[?], Refs /* <: String */] (val x: Self & _FragmentRefs[Refs]) extends AnyVal {
       
       inline def setSpace$fragmentSpreads(value: FragmentRefs[Refs]): Self = StObject.set(x, " $fragmentSpreads", value.asInstanceOf[js.Any])
     }

@@ -17,7 +17,8 @@ object NearestRoadsResponse {
     __obj.asInstanceOf[NearestRoadsResponse]
   }
   
-  extension [Self <: NearestRoadsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NearestRoadsResponse] (val x: Self) extends AnyVal {
     
     inline def setSnappedPoints(value: js.Array[Location]): Self = StObject.set(x, "snappedPoints", value.asInstanceOf[js.Any])
     

@@ -64,7 +64,8 @@ object libGcpIdtokenMod {
       __obj.asInstanceOf[IDToken]
     }
     
-    extension [Self <: IDToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IDToken] (val x: Self) extends AnyVal {
       
       inline def setCredentialsContentCache_(value: Any): Self = StObject.set(x, "credentialsContentCache_", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object EventAbi {
     __obj.asInstanceOf[EventAbi]
   }
   
-  extension [Self <: EventAbi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventAbi] (val x: Self) extends AnyVal {
     
     inline def setAnonymous(value: Boolean): Self = StObject.set(x, "anonymous", value.asInstanceOf[js.Any])
     

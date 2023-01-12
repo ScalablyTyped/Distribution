@@ -29,7 +29,8 @@ object IHttpRequestConfigHeaders {
     __obj.asInstanceOf[IHttpRequestConfigHeaders]
   }
   
-  extension [Self <: IHttpRequestConfigHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHttpRequestConfigHeaders] (val x: Self) extends AnyVal {
     
     inline def setCommon(value: Any): Self = StObject.set(x, "common", value.asInstanceOf[js.Any])
     

@@ -135,7 +135,8 @@ object systemConfigMod {
       __obj.asInstanceOf[Config]
     }
     
-    extension [Self <: Config](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Config] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: IdentityMap[String, AliasOptions]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       

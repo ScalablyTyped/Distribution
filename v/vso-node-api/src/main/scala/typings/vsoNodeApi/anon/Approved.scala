@@ -21,7 +21,8 @@ object Approved {
     __obj.asInstanceOf[Approved]
   }
   
-  extension [Self <: Approved](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Approved] (val x: Self) extends AnyVal {
     
     inline def setApproved(value: scala.Double): Self = StObject.set(x, "approved", value.asInstanceOf[js.Any])
     

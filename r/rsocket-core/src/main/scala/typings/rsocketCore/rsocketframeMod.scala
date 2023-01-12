@@ -312,7 +312,8 @@ object rsocketframeMod {
       __obj.asInstanceOf[ErrorSource]
     }
     
-    extension [Self <: ErrorSource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ErrorSource] (val x: Self) extends AnyVal {
       
       inline def setCode(value: Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

@@ -48,7 +48,8 @@ object NetworkOperatorNotificationEventDetails {
     __obj.asInstanceOf[NetworkOperatorNotificationEventDetails]
   }
   
-  extension [Self <: NetworkOperatorNotificationEventDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkOperatorNotificationEventDetails] (val x: Self) extends AnyVal {
     
     inline def setAuthorizeTethering(value: (Boolean, String) => Unit): Self = StObject.set(x, "authorizeTethering", js.Any.fromFunction2(value))
     

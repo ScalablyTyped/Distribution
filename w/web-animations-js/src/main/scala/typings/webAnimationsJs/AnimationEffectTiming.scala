@@ -31,7 +31,8 @@ object AnimationEffectTiming {
     __obj.asInstanceOf[AnimationEffectTiming]
   }
   
-  extension [Self <: AnimationEffectTiming](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationEffectTiming] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

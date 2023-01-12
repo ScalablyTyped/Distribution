@@ -15,7 +15,8 @@ object ErrorHandlerOptions {
     __obj.asInstanceOf[ErrorHandlerOptions]
   }
   
-  extension [Self <: ErrorHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ErrorHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setMode(value: String): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
     

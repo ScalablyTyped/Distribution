@@ -21,7 +21,8 @@ object ConsoleModule {
     __obj.asInstanceOf[ConsoleModule]
   }
   
-  extension [Self <: ConsoleModule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsoleModule] (val x: Self) extends AnyVal {
     
     inline def setError(value: logFn): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     

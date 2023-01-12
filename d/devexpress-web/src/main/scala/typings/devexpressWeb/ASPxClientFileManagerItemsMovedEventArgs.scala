@@ -28,7 +28,8 @@ object ASPxClientFileManagerItemsMovedEventArgs {
     __obj.asInstanceOf[ASPxClientFileManagerItemsMovedEventArgs]
   }
   
-  extension [Self <: ASPxClientFileManagerItemsMovedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientFileManagerItemsMovedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItems(value: js.Array[ASPxClientFileManagerItem]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     

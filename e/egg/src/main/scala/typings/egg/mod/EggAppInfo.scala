@@ -30,7 +30,8 @@ object EggAppInfo {
     __obj.asInstanceOf[EggAppInfo]
   }
   
-  extension [Self <: EggAppInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EggAppInfo] (val x: Self) extends AnyVal {
     
     inline def setBaseDir(value: String): Self = StObject.set(x, "baseDir", value.asInstanceOf[js.Any])
     

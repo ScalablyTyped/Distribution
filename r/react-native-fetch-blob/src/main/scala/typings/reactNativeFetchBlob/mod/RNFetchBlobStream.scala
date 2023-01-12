@@ -19,7 +19,8 @@ object RNFetchBlobStream {
     __obj.asInstanceOf[RNFetchBlobStream]
   }
   
-  extension [Self <: RNFetchBlobStream](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RNFetchBlobStream] (val x: Self) extends AnyVal {
     
     inline def setOnData(value: () => Unit): Self = StObject.set(x, "onData", js.Any.fromFunction0(value))
     

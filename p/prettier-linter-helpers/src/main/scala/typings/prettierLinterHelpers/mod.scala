@@ -36,7 +36,8 @@ object mod {
       __obj.asInstanceOf[Difference]
     }
     
-    extension [Self <: Difference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Difference] (val x: Self) extends AnyVal {
       
       inline def setDeleteText(value: String): Self = StObject.set(x, "deleteText", value.asInstanceOf[js.Any])
       

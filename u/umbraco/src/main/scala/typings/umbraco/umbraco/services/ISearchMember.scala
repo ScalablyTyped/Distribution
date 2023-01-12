@@ -35,7 +35,8 @@ object ISearchMember {
     __obj.asInstanceOf[ISearchMember]
   }
   
-  extension [Self <: ISearchMember](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISearchMember] (val x: Self) extends AnyVal {
     
     inline def setEditorPath(value: String): Self = StObject.set(x, "editorPath", value.asInstanceOf[js.Any])
     

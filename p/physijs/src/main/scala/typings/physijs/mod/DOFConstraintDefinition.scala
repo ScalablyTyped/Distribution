@@ -42,7 +42,8 @@ object DOFConstraintDefinition {
     __obj.asInstanceOf[DOFConstraintDefinition]
   }
   
-  extension [Self <: DOFConstraintDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DOFConstraintDefinition] (val x: Self) extends AnyVal {
     
     inline def setAxisa(value: Vector3): Self = StObject.set(x, "axisa", value.asInstanceOf[js.Any])
     

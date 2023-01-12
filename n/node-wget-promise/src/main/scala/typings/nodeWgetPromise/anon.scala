@@ -23,7 +23,8 @@ object anon {
       __obj.asInstanceOf[OnProgress]
     }
     
-    extension [Self <: OnProgress](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OnProgress] (val x: Self) extends AnyVal {
       
       inline def setOnProgress(value: Any): Self = StObject.set(x, "onProgress", value.asInstanceOf[js.Any])
       

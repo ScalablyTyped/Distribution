@@ -36,7 +36,8 @@ object ActiveXObjectNameMap {
     __obj.asInstanceOf[ActiveXObjectNameMap]
   }
   
-  extension [Self <: ActiveXObjectNameMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveXObjectNameMap] (val x: Self) extends AnyVal {
     
     inline def setACCWIZDotFieldListCtrl(value: FieldList): Self = StObject.set(x, "ACCWIZ.FieldListCtrl", value.asInstanceOf[js.Any])
     

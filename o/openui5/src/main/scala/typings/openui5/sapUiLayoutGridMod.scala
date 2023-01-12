@@ -587,7 +587,8 @@ object sapUiLayoutGridMod {
       __obj.asInstanceOf[GridSettings]
     }
     
-    extension [Self <: GridSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GridSettings] (val x: Self) extends AnyVal {
       
       inline def setAriaLabelledBy(value: js.Array[typings.openui5.sapUiCoreControlMod.default | String]): Self = StObject.set(x, "ariaLabelledBy", value.asInstanceOf[js.Any])
       

@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "stegcloak"
-version := "1.0-dt-20211202Z-5da115"
+version := "1.0-dt-20211202Z-a37bda"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

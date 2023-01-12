@@ -30,7 +30,8 @@ object HMRRuntime {
     __obj.asInstanceOf[HMRRuntime]
   }
   
-  extension [Self <: HMRRuntime](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HMRRuntime] (val x: Self) extends AnyVal {
     
     inline def setCreateRecord(value: (/* id */ String, /* initialDef */ HMRComponent) => Boolean): Self = StObject.set(x, "createRecord", js.Any.fromFunction2(value))
     

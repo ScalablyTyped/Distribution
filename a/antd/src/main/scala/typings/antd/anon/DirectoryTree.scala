@@ -21,7 +21,8 @@ object DirectoryTree {
     __obj.asInstanceOf[DirectoryTree]
   }
   
-  extension [Self <: DirectoryTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectoryTree] (val x: Self) extends AnyVal {
     
     inline def setDirectoryTree(value: DirectoryTreeCompoundedComponent): Self = StObject.set(x, "DirectoryTree", value.asInstanceOf[js.Any])
     

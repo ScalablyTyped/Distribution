@@ -46,7 +46,8 @@ object buildTypesHelpersMod {
       __obj.asInstanceOf[ByteMap]
     }
     
-    extension [Self <: ByteMap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteMap] (val x: Self) extends AnyVal {
       
       inline def setDefaultValue(value: Double | String): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
       
@@ -79,7 +80,8 @@ object buildTypesHelpersMod {
       __obj.asInstanceOf[ByteMapFunctionResult]
     }
     
-    extension [Self <: ByteMapFunctionResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ByteMapFunctionResult] (val x: Self) extends AnyVal {
       
       inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
       

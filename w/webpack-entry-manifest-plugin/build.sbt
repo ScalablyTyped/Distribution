@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "webpack-entry-manifest-plugin"
-version := "2.0-dt-20211202Z-5db208"
+version := "2.0-dt-20211202Z-900163"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

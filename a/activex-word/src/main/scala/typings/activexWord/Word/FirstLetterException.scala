@@ -37,7 +37,8 @@ object FirstLetterException {
     __obj.asInstanceOf[FirstLetterException]
   }
   
-  extension [Self <: FirstLetterException](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FirstLetterException] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

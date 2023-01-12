@@ -22,7 +22,8 @@ object DriveFolder {
     __obj.asInstanceOf[DriveFolder]
   }
   
-  extension [Self <: DriveFolder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DriveFolder] (val x: Self) extends AnyVal {
     
     inline def setAlternateLink(value: String): Self = StObject.set(x, "alternateLink", value.asInstanceOf[js.Any])
     

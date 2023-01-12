@@ -48,7 +48,8 @@ object GetCoreDeviceResponse {
     __obj.asInstanceOf[GetCoreDeviceResponse]
   }
   
-  extension [Self <: GetCoreDeviceResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCoreDeviceResponse] (val x: Self) extends AnyVal {
     
     inline def setArchitecture(value: CoreDeviceArchitectureString): Self = StObject.set(x, "architecture", value.asInstanceOf[js.Any])
     

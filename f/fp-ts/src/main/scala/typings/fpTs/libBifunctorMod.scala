@@ -32,7 +32,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor[F]]
     }
     
-    extension [Self <: Bifunctor[?], F](x: Self & Bifunctor[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor[?], F] (val x: Self & Bifunctor[F]) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HKT2<F, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -72,7 +73,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor2[F]]
     }
     
-    extension [Self <: Bifunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */](x: Self & Bifunctor2[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor2[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */] (val x: Self & Bifunctor2[F]) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -115,7 +117,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor2C[F, E]]
     }
     
-    extension [Self <: Bifunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E](x: Self & (Bifunctor2C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor2C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ Any */, E] (val x: Self & (Bifunctor2C[F, E])) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind2<F, E, A> */ Any, js.Function1[/* e */ E, Any], js.Function1[Any, Any]) => Any
@@ -157,7 +160,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor3[F]]
     }
     
-    extension [Self <: Bifunctor3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */](x: Self & Bifunctor3[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor3[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */] (val x: Self & Bifunctor3[F]) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any
@@ -200,7 +204,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor3C[F, E]]
     }
     
-    extension [Self <: Bifunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E](x: Self & (Bifunctor3C[F, E])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor3C[?, ?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ Any */, E] (val x: Self & (Bifunctor3C[F, E])) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind3<F, R, E, A> */ Any, js.Function1[/* e */ E, Any], js.Function1[Any, Any]) => Any
@@ -242,7 +247,8 @@ object libBifunctorMod {
       __obj.asInstanceOf[Bifunctor4[F]]
     }
     
-    extension [Self <: Bifunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */](x: Self & Bifunctor4[F]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bifunctor4[?], F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS4 */ Any */] (val x: Self & Bifunctor4[F]) extends AnyVal {
       
       inline def setBimap(
         value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Kind4<F, S, R, E, A> */ Any, js.Function1[Any, Any], js.Function1[Any, Any]) => Any

@@ -23,7 +23,8 @@ object ListEffectiveDeploymentsResponse {
     __obj.asInstanceOf[ListEffectiveDeploymentsResponse]
   }
   
-  extension [Self <: ListEffectiveDeploymentsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListEffectiveDeploymentsResponse] (val x: Self) extends AnyVal {
     
     inline def setEffectiveDeployments(value: EffectiveDeploymentsList): Self = StObject.set(x, "effectiveDeployments", value.asInstanceOf[js.Any])
     

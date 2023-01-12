@@ -28,7 +28,8 @@ object AggregatedValue {
     __obj.asInstanceOf[AggregatedValue]
   }
   
-  extension [Self <: AggregatedValue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregatedValue] (val x: Self) extends AnyVal {
     
     inline def setQuality(value: Quality): Self = StObject.set(x, "quality", value.asInstanceOf[js.Any])
     

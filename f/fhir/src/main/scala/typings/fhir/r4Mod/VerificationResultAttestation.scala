@@ -61,7 +61,8 @@ object VerificationResultAttestation {
     __obj.asInstanceOf[VerificationResultAttestation]
   }
   
-  extension [Self <: VerificationResultAttestation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VerificationResultAttestation] (val x: Self) extends AnyVal {
     
     inline def setCommunicationMethod(value: CodeableConcept): Self = StObject.set(x, "communicationMethod", value.asInstanceOf[js.Any])
     

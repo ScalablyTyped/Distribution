@@ -28,7 +28,8 @@ object XTextListener {
     __obj.asInstanceOf[XTextListener]
   }
   
-  extension [Self <: XTextListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XTextListener] (val x: Self) extends AnyVal {
     
     inline def setTextChanged(value: TextEvent => Unit): Self = StObject.set(x, "textChanged", js.Any.fromFunction1(value))
   }

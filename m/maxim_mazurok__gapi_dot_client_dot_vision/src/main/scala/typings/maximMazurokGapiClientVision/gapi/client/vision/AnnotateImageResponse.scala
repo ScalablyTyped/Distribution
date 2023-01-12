@@ -55,7 +55,8 @@ object AnnotateImageResponse {
     __obj.asInstanceOf[AnnotateImageResponse]
   }
   
-  extension [Self <: AnnotateImageResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotateImageResponse] (val x: Self) extends AnyVal {
     
     inline def setContext(value: ImageAnnotationContext): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

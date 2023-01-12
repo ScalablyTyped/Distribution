@@ -90,7 +90,8 @@ object ITimepickerConfig {
     __obj.asInstanceOf[ITimepickerConfig]
   }
   
-  extension [Self <: ITimepickerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ITimepickerConfig] (val x: Self) extends AnyVal {
     
     inline def setArrowkeys(value: Boolean): Self = StObject.set(x, "arrowkeys", value.asInstanceOf[js.Any])
     

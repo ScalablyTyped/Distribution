@@ -25,7 +25,8 @@ object MultipartUploadCopySourceData {
     __obj.asInstanceOf[MultipartUploadCopySourceData]
   }
   
-  extension [Self <: MultipartUploadCopySourceData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MultipartUploadCopySourceData] (val x: Self) extends AnyVal {
     
     inline def setEndOffset(value: Double): Self = StObject.set(x, "endOffset", value.asInstanceOf[js.Any])
     

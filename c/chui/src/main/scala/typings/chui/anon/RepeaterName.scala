@@ -15,7 +15,8 @@ object RepeaterName {
     __obj.asInstanceOf[RepeaterName]
   }
   
-  extension [Self <: RepeaterName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RepeaterName] (val x: Self) extends AnyVal {
     
     inline def setRepeaterName(value: Any): Self = StObject.set(x, "repeaterName", value.asInstanceOf[js.Any])
     

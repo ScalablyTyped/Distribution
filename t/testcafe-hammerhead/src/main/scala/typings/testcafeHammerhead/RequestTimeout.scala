@@ -17,7 +17,8 @@ object RequestTimeout {
     __obj.asInstanceOf[RequestTimeout]
   }
   
-  extension [Self <: RequestTimeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestTimeout] (val x: Self) extends AnyVal {
     
     inline def setAjax(value: Double): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object distSrcOnStageReactionsDistComponentsSmileySmallMod extends Shortcut {
       __obj.asInstanceOf[SmileySmallProps]
     }
     
-    extension [Self <: SmileySmallProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SmileySmallProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

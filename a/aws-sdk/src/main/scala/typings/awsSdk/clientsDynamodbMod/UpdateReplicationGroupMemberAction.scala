@@ -38,7 +38,8 @@ object UpdateReplicationGroupMemberAction {
     __obj.asInstanceOf[UpdateReplicationGroupMemberAction]
   }
   
-  extension [Self <: UpdateReplicationGroupMemberAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateReplicationGroupMemberAction] (val x: Self) extends AnyVal {
     
     inline def setGlobalSecondaryIndexes(value: ReplicaGlobalSecondaryIndexList): Self = StObject.set(x, "GlobalSecondaryIndexes", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object WebGLRenderingContextOverloads {
     __obj.asInstanceOf[WebGLRenderingContextOverloads]
   }
   
-  extension [Self <: WebGLRenderingContextOverloads](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebGLRenderingContextOverloads] (val x: Self) extends AnyVal {
     
     inline def setTexImage2D(value: (GLenum, GLint, GLint, GLenum, GLenum, TexImageSourceWebCodecs) => Unit): Self = StObject.set(x, "texImage2D", js.Any.fromFunction6(value))
     

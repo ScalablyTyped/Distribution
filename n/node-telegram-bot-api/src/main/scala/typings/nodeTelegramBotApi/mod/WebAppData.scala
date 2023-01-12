@@ -17,7 +17,8 @@ object WebAppData {
     __obj.asInstanceOf[WebAppData]
   }
   
-  extension [Self <: WebAppData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebAppData] (val x: Self) extends AnyVal {
     
     inline def setButton_text(value: String): Self = StObject.set(x, "button_text", value.asInstanceOf[js.Any])
     

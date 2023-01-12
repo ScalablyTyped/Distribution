@@ -18,7 +18,8 @@ object DataTables {
       __obj.asInstanceOf[Api]
     }
     
-    extension [Self <: Api](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Api] (val x: Self) extends AnyVal {
       
       inline def setFixedHeader(value: FixedHeaderApi): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
     }
@@ -64,7 +65,8 @@ object DataTables {
       __obj.asInstanceOf[FixedHeaderApi]
     }
     
-    extension [Self <: FixedHeaderApi](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedHeaderApi] (val x: Self) extends AnyVal {
       
       inline def setAdjust(value: () => Api): Self = StObject.set(x, "adjust", js.Any.fromFunction0(value))
       
@@ -110,7 +112,8 @@ object DataTables {
       __obj.asInstanceOf[FixedHeaderSettings]
     }
     
-    extension [Self <: FixedHeaderSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FixedHeaderSettings] (val x: Self) extends AnyVal {
       
       inline def setFooter(value: Boolean): Self = StObject.set(x, "footer", value.asInstanceOf[js.Any])
       
@@ -154,7 +157,8 @@ object DataTables {
       __obj.asInstanceOf[Settings]
     }
     
-    extension [Self <: Settings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Settings] (val x: Self) extends AnyVal {
       
       inline def setFixedHeader(value: Boolean | FixedHeaderSettings): Self = StObject.set(x, "fixedHeader", value.asInstanceOf[js.Any])
       
@@ -173,7 +177,8 @@ object DataTables {
       __obj.asInstanceOf[StaticFunctions]
     }
     
-    extension [Self <: StaticFunctions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticFunctions] (val x: Self) extends AnyVal {
       
       inline def setFixedHeader(value: FixedHeaderStaticFunctions): Self = StObject.set(x, "FixedHeader", value.asInstanceOf[js.Any])
     }

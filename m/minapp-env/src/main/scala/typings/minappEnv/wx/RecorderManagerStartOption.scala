@@ -88,7 +88,8 @@ object RecorderManagerStartOption {
     __obj.asInstanceOf[RecorderManagerStartOption]
   }
   
-  extension [Self <: RecorderManagerStartOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecorderManagerStartOption] (val x: Self) extends AnyVal {
     
     inline def setAudioSource(value: auto | buildInMic | headsetMic | mic | camcorder | voice_communication | voice_recognition): Self = StObject.set(x, "audioSource", value.asInstanceOf[js.Any])
     

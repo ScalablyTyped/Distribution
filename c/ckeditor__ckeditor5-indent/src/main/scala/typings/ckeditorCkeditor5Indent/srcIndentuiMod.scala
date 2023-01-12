@@ -42,7 +42,8 @@ object srcIndentuiMod {
         __obj.asInstanceOf[Plugins]
       }
       
-      extension [Self <: Plugins](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Plugins] (val x: Self) extends AnyVal {
         
         inline def setIndentUI(value: IndentUI): Self = StObject.set(x, "IndentUI", value.asInstanceOf[js.Any])
       }

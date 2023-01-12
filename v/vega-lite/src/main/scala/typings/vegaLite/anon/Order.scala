@@ -32,7 +32,8 @@ object Order {
     __obj.asInstanceOf[Order]
   }
   
-  extension [Self <: Order](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Order] (val x: Self) extends AnyVal {
     
     inline def setEncoding(
       value: fill | color | fillOpacity | opacity | stroke | strokeOpacity | strokeWidth | text | size | typings.vegaLite.vegaLiteStrings.x | y | shape

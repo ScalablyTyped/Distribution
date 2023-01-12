@@ -15,7 +15,8 @@ object DataRepositoryFailureDetails {
     __obj.asInstanceOf[DataRepositoryFailureDetails]
   }
   
-  extension [Self <: DataRepositoryFailureDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataRepositoryFailureDetails] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: ErrorMessage): Self = StObject.set(x, "Message", value.asInstanceOf[js.Any])
     

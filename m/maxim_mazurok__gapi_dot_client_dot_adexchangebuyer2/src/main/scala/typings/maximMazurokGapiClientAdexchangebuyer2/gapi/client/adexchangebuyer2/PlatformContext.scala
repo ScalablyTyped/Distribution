@@ -16,7 +16,8 @@ object PlatformContext {
     __obj.asInstanceOf[PlatformContext]
   }
   
-  extension [Self <: PlatformContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlatformContext] (val x: Self) extends AnyVal {
     
     inline def setPlatforms(value: js.Array[String]): Self = StObject.set(x, "platforms", value.asInstanceOf[js.Any])
     

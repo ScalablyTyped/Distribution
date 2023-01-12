@@ -86,7 +86,8 @@ object ReactCodeMirror {
       __obj.asInstanceOf[ReactCodeMirrorProps]
     }
     
-    extension [Self <: ReactCodeMirrorProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReactCodeMirrorProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       

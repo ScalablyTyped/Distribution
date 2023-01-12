@@ -30,7 +30,8 @@ object QueryDslLikeDocument {
     __obj.asInstanceOf[QueryDslLikeDocument]
   }
   
-  extension [Self <: QueryDslLikeDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryDslLikeDocument] (val x: Self) extends AnyVal {
     
     inline def setDoc(value: Any): Self = StObject.set(x, "doc", value.asInstanceOf[js.Any])
     

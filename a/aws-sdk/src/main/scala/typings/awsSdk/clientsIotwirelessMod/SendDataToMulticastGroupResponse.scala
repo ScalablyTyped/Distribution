@@ -15,7 +15,8 @@ object SendDataToMulticastGroupResponse {
     __obj.asInstanceOf[SendDataToMulticastGroupResponse]
   }
   
-  extension [Self <: SendDataToMulticastGroupResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendDataToMulticastGroupResponse] (val x: Self) extends AnyVal {
     
     inline def setMessageId(value: MulticastGroupMessageId): Self = StObject.set(x, "MessageId", value.asInstanceOf[js.Any])
     

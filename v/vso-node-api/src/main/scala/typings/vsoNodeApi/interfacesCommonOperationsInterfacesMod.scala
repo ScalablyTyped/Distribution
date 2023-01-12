@@ -113,7 +113,8 @@ object interfacesCommonOperationsInterfacesMod {
       __obj.asInstanceOf[OperationReference]
     }
     
-    extension [Self <: OperationReference](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OperationReference] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

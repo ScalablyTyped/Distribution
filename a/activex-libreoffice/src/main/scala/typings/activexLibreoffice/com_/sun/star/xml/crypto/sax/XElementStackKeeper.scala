@@ -41,7 +41,8 @@ object XElementStackKeeper {
     __obj.asInstanceOf[XElementStackKeeper]
   }
   
-  extension [Self <: XElementStackKeeper](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XElementStackKeeper] (val x: Self) extends AnyVal {
     
     inline def setRetrieve(value: (XDocumentHandler, Boolean) => Unit): Self = StObject.set(x, "retrieve", js.Any.fromFunction2(value))
     

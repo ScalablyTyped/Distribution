@@ -104,7 +104,8 @@ object PackagedProductDefinition {
     __obj.asInstanceOf[PackagedProductDefinition]
   }
   
-  extension [Self <: PackagedProductDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PackagedProductDefinition] (val x: Self) extends AnyVal {
     
     inline def setAttachedDocument(value: js.Array[Reference]): Self = StObject.set(x, "attachedDocument", value.asInstanceOf[js.Any])
     

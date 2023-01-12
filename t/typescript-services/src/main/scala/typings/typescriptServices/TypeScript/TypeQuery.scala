@@ -41,7 +41,8 @@ object TypeQuery {
     __obj.asInstanceOf[TypeQuery]
   }
   
-  extension [Self <: TypeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeQuery] (val x: Self) extends AnyVal {
     
     inline def setName(value: AST): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

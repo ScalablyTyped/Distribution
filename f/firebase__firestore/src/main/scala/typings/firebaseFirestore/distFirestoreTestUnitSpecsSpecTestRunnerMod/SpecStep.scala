@@ -141,7 +141,8 @@ object SpecStep {
     __obj.asInstanceOf[SpecStep]
   }
   
-  extension [Self <: SpecStep](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpecStep] (val x: Self) extends AnyVal {
     
     inline def setAddSnapshotsInSyncListener(value: `true`): Self = StObject.set(x, "addSnapshotsInSyncListener", value.asInstanceOf[js.Any])
     

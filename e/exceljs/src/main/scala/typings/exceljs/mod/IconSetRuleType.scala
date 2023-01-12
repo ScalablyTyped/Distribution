@@ -30,7 +30,8 @@ object IconSetRuleType {
     __obj.asInstanceOf[IconSetRuleType]
   }
   
-  extension [Self <: IconSetRuleType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconSetRuleType] (val x: Self) extends AnyVal {
     
     inline def setCfvo(value: js.Array[Cvfo]): Self = StObject.set(x, "cfvo", value.asInstanceOf[js.Any])
     

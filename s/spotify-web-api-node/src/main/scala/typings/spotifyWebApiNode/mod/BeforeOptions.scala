@@ -17,7 +17,8 @@ object BeforeOptions {
     __obj.asInstanceOf[BeforeOptions]
   }
   
-  extension [Self <: BeforeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BeforeOptions] (val x: Self) extends AnyVal {
     
     inline def setBefore(value: Double): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
     

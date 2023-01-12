@@ -146,7 +146,8 @@ object ILocaleInfo {
     __obj.asInstanceOf[ILocaleInfo]
   }
   
-  extension [Self <: ILocaleInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILocaleInfo] (val x: Self) extends AnyVal {
     
     inline def setQBrokenWeeks(value: Double): Self = StObject.set(x, "qBrokenWeeks", value.asInstanceOf[js.Any])
     

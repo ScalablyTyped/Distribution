@@ -62,7 +62,8 @@ object NotificationSubscriptionUpdateParameters {
     __obj.asInstanceOf[NotificationSubscriptionUpdateParameters]
   }
   
-  extension [Self <: NotificationSubscriptionUpdateParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationSubscriptionUpdateParameters] (val x: Self) extends AnyVal {
     
     inline def setAdminSettings(value: SubscriptionAdminSettings): Self = StObject.set(x, "adminSettings", value.asInstanceOf[js.Any])
     

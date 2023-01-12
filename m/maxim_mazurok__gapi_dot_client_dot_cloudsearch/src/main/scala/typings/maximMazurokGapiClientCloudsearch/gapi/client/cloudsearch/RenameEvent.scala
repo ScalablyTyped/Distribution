@@ -17,7 +17,8 @@ object RenameEvent {
     __obj.asInstanceOf[RenameEvent]
   }
   
-  extension [Self <: RenameEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RenameEvent] (val x: Self) extends AnyVal {
     
     inline def setNewName(value: String): Self = StObject.set(x, "newName", value.asInstanceOf[js.Any])
     

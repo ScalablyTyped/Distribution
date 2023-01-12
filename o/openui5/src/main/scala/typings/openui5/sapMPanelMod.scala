@@ -761,7 +761,8 @@ object sapMPanelMod {
       __obj.asInstanceOf[PanelSettings]
     }
     
-    extension [Self <: PanelSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PanelSettings] (val x: Self) extends AnyVal {
       
       inline def setAccessibleRole(
         value: PanelAccessibleRole | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof PanelAccessibleRole * / any */ String) | PropertyBindingInfo

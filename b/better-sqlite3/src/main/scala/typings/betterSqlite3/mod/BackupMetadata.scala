@@ -17,7 +17,8 @@ object BackupMetadata {
     __obj.asInstanceOf[BackupMetadata]
   }
   
-  extension [Self <: BackupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BackupMetadata] (val x: Self) extends AnyVal {
     
     inline def setRemainingPages(value: Double): Self = StObject.set(x, "remainingPages", value.asInstanceOf[js.Any])
     

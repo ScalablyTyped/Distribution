@@ -30,7 +30,8 @@ object CreateBackupMetadata {
     __obj.asInstanceOf[CreateBackupMetadata]
   }
   
-  extension [Self <: CreateBackupMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateBackupMetadata] (val x: Self) extends AnyVal {
     
     inline def setCancelTime(value: String): Self = StObject.set(x, "cancelTime", value.asInstanceOf[js.Any])
     

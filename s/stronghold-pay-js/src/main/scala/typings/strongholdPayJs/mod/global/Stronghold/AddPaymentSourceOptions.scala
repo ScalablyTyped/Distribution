@@ -19,7 +19,8 @@ object AddPaymentSourceOptions {
     __obj.asInstanceOf[AddPaymentSourceOptions]
   }
   
-  extension [Self <: AddPaymentSourceOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AddPaymentSourceOptions] (val x: Self) extends AnyVal {
     
     inline def setOnSuccess(value: /* paymentSource */ PaymentSource => Unit): Self = StObject.set(x, "onSuccess", js.Any.fromFunction1(value))
   }

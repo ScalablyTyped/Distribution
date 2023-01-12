@@ -34,7 +34,8 @@ object BrowserConsoleLogOptions {
     __obj.asInstanceOf[BrowserConsoleLogOptions]
   }
   
-  extension [Self <: BrowserConsoleLogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BrowserConsoleLogOptions] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

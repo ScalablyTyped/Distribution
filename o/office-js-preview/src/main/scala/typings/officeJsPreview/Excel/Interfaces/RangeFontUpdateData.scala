@@ -108,7 +108,8 @@ object RangeFontUpdateData {
     __obj.asInstanceOf[RangeFontUpdateData]
   }
   
-  extension [Self <: RangeFontUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RangeFontUpdateData] (val x: Self) extends AnyVal {
     
     inline def setBold(value: Boolean): Self = StObject.set(x, "bold", value.asInstanceOf[js.Any])
     

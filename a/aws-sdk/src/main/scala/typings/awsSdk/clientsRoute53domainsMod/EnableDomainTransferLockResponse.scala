@@ -18,7 +18,8 @@ object EnableDomainTransferLockResponse {
     __obj.asInstanceOf[EnableDomainTransferLockResponse]
   }
   
-  extension [Self <: EnableDomainTransferLockResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnableDomainTransferLockResponse] (val x: Self) extends AnyVal {
     
     inline def setOperationId(value: OperationId): Self = StObject.set(x, "OperationId", value.asInstanceOf[js.Any])
   }

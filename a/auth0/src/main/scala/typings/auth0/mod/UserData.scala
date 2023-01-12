@@ -45,7 +45,8 @@ object UserData {
     __obj.asInstanceOf[UserData[A, U]]
   }
   
-  extension [Self <: UserData[?, ?], A, U](x: Self & (UserData[A, U])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UserData[?, ?], A, U] (val x: Self & (UserData[A, U])) extends AnyVal {
     
     inline def setApp_metadata(value: A): Self = StObject.set(x, "app_metadata", value.asInstanceOf[js.Any])
     

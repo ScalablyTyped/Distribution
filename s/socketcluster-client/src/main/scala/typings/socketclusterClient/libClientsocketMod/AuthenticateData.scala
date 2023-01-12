@@ -19,7 +19,8 @@ object AuthenticateData {
     __obj.asInstanceOf[AuthenticateData]
   }
   
-  extension [Self <: AuthenticateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticateData] (val x: Self) extends AnyVal {
     
     inline def setAuthToken(value: AuthToken): Self = StObject.set(x, "authToken", value.asInstanceOf[js.Any])
     

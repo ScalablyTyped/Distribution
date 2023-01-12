@@ -51,7 +51,8 @@ object distRuntimeValidationErrorMod {
       __obj.asInstanceOf[ValidationError]
     }
     
-    extension [Self <: ValidationError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidationError] (val x: Self) extends AnyVal {
       
       inline def setAjv(value: `true`): Self = StObject.set(x, "ajv", value.asInstanceOf[js.Any])
       

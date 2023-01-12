@@ -18,7 +18,8 @@ object DeleteReplicaAction {
     __obj.asInstanceOf[DeleteReplicaAction]
   }
   
-  extension [Self <: DeleteReplicaAction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteReplicaAction] (val x: Self) extends AnyVal {
     
     inline def setRegionName(value: RegionName): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
   }

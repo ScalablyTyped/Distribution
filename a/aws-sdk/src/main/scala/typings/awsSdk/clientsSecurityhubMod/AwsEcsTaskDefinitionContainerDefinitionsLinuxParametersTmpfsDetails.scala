@@ -28,7 +28,8 @@ object AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails {
     __obj.asInstanceOf[AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails]
   }
   
-  extension [Self <: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcsTaskDefinitionContainerDefinitionsLinuxParametersTmpfsDetails] (val x: Self) extends AnyVal {
     
     inline def setContainerPath(value: NonEmptyString): Self = StObject.set(x, "ContainerPath", value.asInstanceOf[js.Any])
     

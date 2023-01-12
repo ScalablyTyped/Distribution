@@ -19,7 +19,8 @@ object UseRawData {
     __obj.asInstanceOf[UseRawData]
   }
   
-  extension [Self <: UseRawData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UseRawData] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

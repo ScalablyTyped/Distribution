@@ -15,7 +15,8 @@ object KeyKey {
     __obj.asInstanceOf[KeyKey]
   }
   
-  extension [Self <: KeyKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeyKey] (val x: Self) extends AnyVal {
     
     inline def setKey(value: typings.openpgp.mod.key.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
   }

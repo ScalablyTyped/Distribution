@@ -27,7 +27,8 @@ object CallbackQuery {
     __obj.asInstanceOf[CallbackQuery]
   }
   
-  extension [Self <: CallbackQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallbackQuery] (val x: Self) extends AnyVal {
     
     inline def setChat_instance(value: String): Self = StObject.set(x, "chat_instance", value.asInstanceOf[js.Any])
     

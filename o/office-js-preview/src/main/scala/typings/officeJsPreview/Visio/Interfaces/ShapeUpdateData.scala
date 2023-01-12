@@ -30,7 +30,8 @@ object ShapeUpdateData {
     __obj.asInstanceOf[ShapeUpdateData]
   }
   
-  extension [Self <: ShapeUpdateData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ShapeUpdateData] (val x: Self) extends AnyVal {
     
     inline def setSelect(value: Boolean): Self = StObject.set(x, "select", value.asInstanceOf[js.Any])
     

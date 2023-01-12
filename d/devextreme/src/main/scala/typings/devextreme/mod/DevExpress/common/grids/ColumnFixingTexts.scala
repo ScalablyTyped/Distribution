@@ -33,7 +33,8 @@ object ColumnFixingTexts {
     __obj.asInstanceOf[ColumnFixingTexts]
   }
   
-  extension [Self <: ColumnFixingTexts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnFixingTexts] (val x: Self) extends AnyVal {
     
     inline def setFix(value: String): Self = StObject.set(x, "fix", value.asInstanceOf[js.Any])
     

@@ -81,7 +81,8 @@ object mod {
       __obj.asInstanceOf[CodecEncoder]
     }
     
-    extension [Self <: CodecEncoder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecEncoder] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: Boolean): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -106,7 +107,8 @@ object mod {
       __obj.asInstanceOf[CodecOptions]
     }
     
-    extension [Self <: CodecOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecOptions] (val x: Self) extends AnyVal {
       
       inline def setKeyEncoding(value: String | CodecEncoder): Self = StObject.set(x, "keyEncoding", value.asInstanceOf[js.Any])
       

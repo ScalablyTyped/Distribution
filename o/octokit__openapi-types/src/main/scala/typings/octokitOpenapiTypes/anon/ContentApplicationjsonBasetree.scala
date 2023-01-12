@@ -15,7 +15,8 @@ object ContentApplicationjsonBasetree {
     __obj.asInstanceOf[ContentApplicationjsonBasetree]
   }
   
-  extension [Self <: ContentApplicationjsonBasetree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContentApplicationjsonBasetree] (val x: Self) extends AnyVal {
     
     inline def setContent(value: ApplicationjsonBasetree): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

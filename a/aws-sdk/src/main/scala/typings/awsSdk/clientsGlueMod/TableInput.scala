@@ -78,7 +78,8 @@ object TableInput {
     __obj.asInstanceOf[TableInput]
   }
   
-  extension [Self <: TableInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: DescriptionString): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

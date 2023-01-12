@@ -27,7 +27,8 @@ object GooglePrivacyDlpV2KAnonymityConfig {
     __obj.asInstanceOf[GooglePrivacyDlpV2KAnonymityConfig]
   }
   
-  extension [Self <: GooglePrivacyDlpV2KAnonymityConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2KAnonymityConfig] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: GooglePrivacyDlpV2EntityId): Self = StObject.set(x, "entityId", value.asInstanceOf[js.Any])
     

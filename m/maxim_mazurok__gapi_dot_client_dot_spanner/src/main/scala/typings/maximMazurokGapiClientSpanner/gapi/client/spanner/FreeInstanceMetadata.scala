@@ -28,7 +28,8 @@ object FreeInstanceMetadata {
     __obj.asInstanceOf[FreeInstanceMetadata]
   }
   
-  extension [Self <: FreeInstanceMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FreeInstanceMetadata] (val x: Self) extends AnyVal {
     
     inline def setExpireBehavior(value: String): Self = StObject.set(x, "expireBehavior", value.asInstanceOf[js.Any])
     

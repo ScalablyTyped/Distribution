@@ -25,7 +25,8 @@ object NumberedSortingInfo {
     __obj.asInstanceOf[NumberedSortingInfo]
   }
   
-  extension [Self <: NumberedSortingInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumberedSortingInfo] (val x: Self) extends AnyVal {
     
     inline def setAscending(value: Boolean): Self = StObject.set(x, "Ascending", value.asInstanceOf[js.Any])
     

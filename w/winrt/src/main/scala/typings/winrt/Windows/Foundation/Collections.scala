@@ -47,7 +47,8 @@ object Collections {
       __obj.asInstanceOf[IIterable[T]]
     }
     
-    extension [Self <: IIterable[?], T](x: Self & IIterable[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIterable[?], T] (val x: Self & IIterable[T]) extends AnyVal {
       
       inline def setFirst(value: () => IIterator[T]): Self = StObject.set(x, "first", js.Any.fromFunction0(value))
     }
@@ -70,7 +71,8 @@ object Collections {
       __obj.asInstanceOf[IIterator[T]]
     }
     
-    extension [Self <: IIterator[?], T](x: Self & IIterator[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IIterator[?], T] (val x: Self & IIterator[T]) extends AnyVal {
       
       inline def setCurrent(value: T): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
       
@@ -95,7 +97,8 @@ object Collections {
       __obj.asInstanceOf[IKeyValuePair[K, V]]
     }
     
-    extension [Self <: IKeyValuePair[?, ?], K, V](x: Self & (IKeyValuePair[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IKeyValuePair[?, ?], K, V] (val x: Self & (IKeyValuePair[K, V])) extends AnyVal {
       
       inline def setKey(value: K): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       
@@ -137,7 +140,8 @@ object Collections {
       __obj.asInstanceOf[IMap[K, V]]
     }
     
-    extension [Self <: IMap[?, ?], K, V](x: Self & (IMap[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMap[?, ?], K, V] (val x: Self & (IMap[K, V])) extends AnyVal {
       
       inline def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
       
@@ -168,7 +172,8 @@ object Collections {
       __obj.asInstanceOf[IMapChangedEventArgs[K]]
     }
     
-    extension [Self <: IMapChangedEventArgs[?], K](x: Self & IMapChangedEventArgs[K]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMapChangedEventArgs[?], K] (val x: Self & IMapChangedEventArgs[K]) extends AnyVal {
       
       inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
       
@@ -201,7 +206,8 @@ object Collections {
       __obj.asInstanceOf[IMapView[K, V]]
     }
     
-    extension [Self <: IMapView[?, ?], K, V](x: Self & (IMapView[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMapView[?, ?], K, V] (val x: Self & (IMapView[K, V])) extends AnyVal {
       
       inline def setHasKey(value: K => Boolean): Self = StObject.set(x, "hasKey", js.Any.fromFunction1(value))
       
@@ -236,7 +242,8 @@ object Collections {
       __obj.asInstanceOf[IObservableMap[K, V]]
     }
     
-    extension [Self <: IObservableMap[?, ?], K, V](x: Self & (IObservableMap[K, V])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IObservableMap[?, ?], K, V] (val x: Self & (IObservableMap[K, V])) extends AnyVal {
       
       inline def setOnmapchanged(value: Any): Self = StObject.set(x, "onmapchanged", value.asInstanceOf[js.Any])
     }
@@ -412,7 +419,8 @@ object Collections {
       __obj.asInstanceOf[IVectorChangedEventArgs]
     }
     
-    extension [Self <: IVectorChangedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IVectorChangedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setCollectionChange(value: CollectionChange): Self = StObject.set(x, "collectionChange", value.asInstanceOf[js.Any])
       

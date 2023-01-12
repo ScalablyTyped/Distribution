@@ -53,7 +53,8 @@ object ECSTaskSet {
     __obj.asInstanceOf[ECSTaskSet]
   }
   
-  extension [Self <: ECSTaskSet](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ECSTaskSet] (val x: Self) extends AnyVal {
     
     inline def setDesiredCount(value: ECSTaskSetCount): Self = StObject.set(x, "desiredCount", value.asInstanceOf[js.Any])
     

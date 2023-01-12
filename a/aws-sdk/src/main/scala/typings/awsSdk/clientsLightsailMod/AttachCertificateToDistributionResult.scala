@@ -18,7 +18,8 @@ object AttachCertificateToDistributionResult {
     __obj.asInstanceOf[AttachCertificateToDistributionResult]
   }
   
-  extension [Self <: AttachCertificateToDistributionResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachCertificateToDistributionResult] (val x: Self) extends AnyVal {
     
     inline def setOperation(value: Operation): Self = StObject.set(x, "operation", value.asInstanceOf[js.Any])
     

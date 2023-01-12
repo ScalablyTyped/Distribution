@@ -38,7 +38,8 @@ object StatsSimpleMemoryHostStat {
     __obj.asInstanceOf[StatsSimpleMemoryHostStat]
   }
   
-  extension [Self <: StatsSimpleMemoryHostStat](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatsSimpleMemoryHostStat] (val x: Self) extends AnyVal {
     
     inline def setAtime(value: js.Date): Self = StObject.set(x, "atime", value.asInstanceOf[js.Any])
     

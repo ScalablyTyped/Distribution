@@ -35,7 +35,8 @@ object ImageView {
     __obj.asInstanceOf[ImageView]
   }
   
-  extension [Self <: ImageView](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageView] (val x: Self) extends AnyVal {
     
     inline def setLoadImageAtURL(value: String => Unit): Self = StObject.set(x, "loadImageAtURL", js.Any.fromFunction1(value))
   }

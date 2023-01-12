@@ -18,7 +18,8 @@ object CancelWorldGenerationJobRequest {
     __obj.asInstanceOf[CancelWorldGenerationJobRequest]
   }
   
-  extension [Self <: CancelWorldGenerationJobRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelWorldGenerationJobRequest] (val x: Self) extends AnyVal {
     
     inline def setJob(value: Arn): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
   }

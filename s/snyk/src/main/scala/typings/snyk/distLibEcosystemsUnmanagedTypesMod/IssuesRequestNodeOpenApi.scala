@@ -19,7 +19,8 @@ object IssuesRequestNodeOpenApi {
     __obj.asInstanceOf[IssuesRequestNodeOpenApi]
   }
   
-  extension [Self <: IssuesRequestNodeOpenApi](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IssuesRequestNodeOpenApi] (val x: Self) extends AnyVal {
     
     inline def setDeps(value: js.Array[IssuesRequestDepOpenApi]): Self = StObject.set(x, "deps", value.asInstanceOf[js.Any])
     

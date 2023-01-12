@@ -502,7 +502,8 @@ object libTypesMod {
       __obj.asInstanceOf[CSSProperties]
     }
     
-    extension [Self <: CSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSProperties] (val x: Self) extends AnyVal {
       
       inline def set$unique(value: Boolean): Self = StObject.set(x, "$unique", value.asInstanceOf[js.Any])
       
@@ -1350,7 +1351,8 @@ object libTypesMod {
       __obj.asInstanceOf[KeyFrames]
     }
     
-    extension [Self <: KeyFrames](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KeyFrames] (val x: Self) extends AnyVal {
       
       inline def set$debugName(value: String): Self = StObject.set(x, "$debugName", value.asInstanceOf[js.Any])
       
@@ -1381,7 +1383,8 @@ object libTypesMod {
       __obj.asInstanceOf[MediaQuery]
     }
     
-    extension [Self <: MediaQuery](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MediaQuery] (val x: Self) extends AnyVal {
       
       inline def setMaxHeight(value: Double | String): Self = StObject.set(x, "maxHeight", value.asInstanceOf[js.Any])
       
@@ -1434,7 +1437,8 @@ object libTypesMod {
       __obj.asInstanceOf[NestedCSSProperties]
     }
     
-    extension [Self <: NestedCSSProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedCSSProperties] (val x: Self) extends AnyVal {
       
       inline def set$debugName(value: String): Self = StObject.set(x, "$debugName", value.asInstanceOf[js.Any])
       
@@ -1610,7 +1614,8 @@ object libTypesMod {
       __obj.asInstanceOf[NestedCSSSelectors]
     }
     
-    extension [Self <: NestedCSSSelectors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NestedCSSSelectors] (val x: Self) extends AnyVal {
       
       inline def `set@media screen and Leftparenthesismax-widthColon 700pxRightparenthesis`(value: NestedCSSProperties): Self = StObject.set(x, "@media screen and (max-width: 700px)", value.asInstanceOf[js.Any])
       

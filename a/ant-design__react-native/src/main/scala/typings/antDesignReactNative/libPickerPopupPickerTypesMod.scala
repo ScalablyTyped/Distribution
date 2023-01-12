@@ -63,7 +63,8 @@ object libPickerPopupPickerTypesMod {
       __obj.asInstanceOf[PopupPickerProps]
     }
     
-    extension [Self <: PopupPickerProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopupPickerProps] (val x: Self) extends AnyVal {
       
       inline def setActionTextActiveOpacity(value: Double): Self = StObject.set(x, "actionTextActiveOpacity", value.asInstanceOf[js.Any])
       

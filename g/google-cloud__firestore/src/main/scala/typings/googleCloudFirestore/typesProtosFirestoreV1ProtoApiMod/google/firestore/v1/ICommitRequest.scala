@@ -23,7 +23,8 @@ object ICommitRequest {
     __obj.asInstanceOf[ICommitRequest]
   }
   
-  extension [Self <: ICommitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ICommitRequest] (val x: Self) extends AnyVal {
     
     inline def setDatabase(value: String): Self = StObject.set(x, "database", value.asInstanceOf[js.Any])
     

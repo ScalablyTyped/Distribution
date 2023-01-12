@@ -41,7 +41,8 @@ object triggerAlbMod {
       __obj.asInstanceOf[ALBEvent]
     }
     
-    extension [Self <: ALBEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALBEvent] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object triggerAlbMod {
       __obj.asInstanceOf[ALBEventRequestContext]
     }
     
-    extension [Self <: ALBEventRequestContext](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALBEventRequestContext] (val x: Self) extends AnyVal {
       
       inline def setElb(value: TargetGroupArn): Self = StObject.set(x, "elb", value.asInstanceOf[js.Any])
     }
@@ -121,7 +123,8 @@ object triggerAlbMod {
       __obj.asInstanceOf[ALBResult]
     }
     
-    extension [Self <: ALBResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ALBResult] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

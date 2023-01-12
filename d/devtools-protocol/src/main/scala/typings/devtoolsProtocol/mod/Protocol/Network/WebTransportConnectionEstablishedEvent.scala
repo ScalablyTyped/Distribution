@@ -23,7 +23,8 @@ object WebTransportConnectionEstablishedEvent {
     __obj.asInstanceOf[WebTransportConnectionEstablishedEvent]
   }
   
-  extension [Self <: WebTransportConnectionEstablishedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WebTransportConnectionEstablishedEvent] (val x: Self) extends AnyVal {
     
     inline def setTimestamp(value: MonotonicTime): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])
     

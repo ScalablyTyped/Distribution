@@ -38,7 +38,8 @@ object EditableOptions {
     __obj.asInstanceOf[EditableOptions]
   }
   
-  extension [Self <: EditableOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EditableOptions] (val x: Self) extends AnyVal {
     
     inline def setClearContainer(value: Boolean): Self = StObject.set(x, "clearContainer", value.asInstanceOf[js.Any])
     

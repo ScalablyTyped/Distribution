@@ -31,7 +31,8 @@ object IgGridGroupBySummarySettings {
     __obj.asInstanceOf[IgGridGroupBySummarySettings]
   }
   
-  extension [Self <: IgGridGroupBySummarySettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridGroupBySummarySettings] (val x: Self) extends AnyVal {
     
     inline def setMultiSummaryDelimiter(value: String): Self = StObject.set(x, "multiSummaryDelimiter", value.asInstanceOf[js.Any])
     

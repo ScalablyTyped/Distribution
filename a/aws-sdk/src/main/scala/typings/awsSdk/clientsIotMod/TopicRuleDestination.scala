@@ -48,7 +48,8 @@ object TopicRuleDestination {
     __obj.asInstanceOf[TopicRuleDestination]
   }
   
-  extension [Self <: TopicRuleDestination](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TopicRuleDestination] (val x: Self) extends AnyVal {
     
     inline def setArn(value: AwsArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object ListWebhookItem {
     __obj.asInstanceOf[ListWebhookItem]
   }
   
-  extension [Self <: ListWebhookItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListWebhookItem] (val x: Self) extends AnyVal {
     
     inline def setArn(value: WebhookArn): Self = StObject.set(x, "arn", value.asInstanceOf[js.Any])
     

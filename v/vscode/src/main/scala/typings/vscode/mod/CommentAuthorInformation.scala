@@ -23,7 +23,8 @@ object CommentAuthorInformation {
     __obj.asInstanceOf[CommentAuthorInformation]
   }
   
-  extension [Self <: CommentAuthorInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommentAuthorInformation] (val x: Self) extends AnyVal {
     
     inline def setIconPath(value: Uri): Self = StObject.set(x, "iconPath", value.asInstanceOf[js.Any])
     

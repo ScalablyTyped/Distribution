@@ -21,7 +21,8 @@ object IPFX {
     __obj.asInstanceOf[IPFX]
   }
   
-  extension [Self <: IPFX](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPFX] (val x: Self) extends AnyVal {
     
     inline def setAuthSafe(value: ContentInfo): Self = StObject.set(x, "authSafe", value.asInstanceOf[js.Any])
     

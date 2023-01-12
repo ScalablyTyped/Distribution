@@ -58,7 +58,8 @@ object PushNotificationTemplateRequest {
     __obj.asInstanceOf[PushNotificationTemplateRequest]
   }
   
-  extension [Self <: PushNotificationTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PushNotificationTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setADM(value: AndroidPushNotificationTemplate): Self = StObject.set(x, "ADM", value.asInstanceOf[js.Any])
     

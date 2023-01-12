@@ -43,7 +43,8 @@ object IDirectionsRequestOptions {
     __obj.asInstanceOf[IDirectionsRequestOptions]
   }
   
-  extension [Self <: IDirectionsRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setDistanceUnit(value: DistanceUnit): Self = StObject.set(x, "distanceUnit", value.asInstanceOf[js.Any])
     

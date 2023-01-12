@@ -17,7 +17,8 @@ object QuarantineModeOptions {
     __obj.asInstanceOf[QuarantineModeOptions]
   }
   
-  extension [Self <: QuarantineModeOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuarantineModeOptions] (val x: Self) extends AnyVal {
     
     inline def setAttemptLimit(value: Double): Self = StObject.set(x, "attemptLimit", value.asInstanceOf[js.Any])
     

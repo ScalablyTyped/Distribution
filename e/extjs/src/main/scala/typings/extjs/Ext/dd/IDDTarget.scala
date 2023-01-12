@@ -21,7 +21,8 @@ object IDDTarget {
     __obj.asInstanceOf[IDDTarget]
   }
   
-  extension [Self <: IDDTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDDTarget] (val x: Self) extends AnyVal {
     
     inline def setToString_(value: () => String): Self = StObject.set(x, "toString", js.Any.fromFunction0(value))
     

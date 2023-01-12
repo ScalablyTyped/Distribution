@@ -17,7 +17,8 @@ object GraphQLFormattedError {
     __obj.asInstanceOf[GraphQLFormattedError]
   }
   
-  extension [Self <: GraphQLFormattedError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLFormattedError] (val x: Self) extends AnyVal {
     
     inline def setLocations(value: js.Array[GraphQLErrorLocation]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     

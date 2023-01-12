@@ -42,7 +42,8 @@ object Options {
     __obj.asInstanceOf[Options[K]]
   }
   
-  extension [Self <: Options[?], K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | default | replace | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | toLowerCase | toUpperCase | trim | whitelist */](x: Self & Options[K]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Options[?], K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | default | replace | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | toLowerCase | toUpperCase | trim | whitelist */] (val x: Self & Options[K]) extends AnyVal {
     
     inline def setOptions(
       value: (Parameters[

@@ -23,7 +23,8 @@ object GetIpamPoolCidrsResult {
     __obj.asInstanceOf[GetIpamPoolCidrsResult]
   }
   
-  extension [Self <: GetIpamPoolCidrsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetIpamPoolCidrsResult] (val x: Self) extends AnyVal {
     
     inline def setIpamPoolCidrs(value: IpamPoolCidrSet): Self = StObject.set(x, "IpamPoolCidrs", value.asInstanceOf[js.Any])
     

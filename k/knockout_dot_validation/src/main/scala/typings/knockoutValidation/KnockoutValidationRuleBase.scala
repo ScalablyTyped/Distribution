@@ -15,7 +15,8 @@ object KnockoutValidationRuleBase {
     __obj.asInstanceOf[KnockoutValidationRuleBase]
   }
   
-  extension [Self <: KnockoutValidationRuleBase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnockoutValidationRuleBase] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String | KnockoutValidationMessageFunction): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

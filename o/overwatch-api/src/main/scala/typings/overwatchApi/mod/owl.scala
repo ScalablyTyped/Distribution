@@ -23,7 +23,8 @@ object owl {
     __obj.asInstanceOf[owl]
   }
   
-  extension [Self <: owl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: owl] (val x: Self) extends AnyVal {
     
     inline def setGetLiveMatch(value: js.Function2[/* err */ js.Error, /* data */ Any, Unit] => Unit): Self = StObject.set(x, "getLiveMatch", js.Any.fromFunction1(value))
     

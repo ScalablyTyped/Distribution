@@ -199,7 +199,8 @@ object outHttpExecutorMod {
       __obj.asInstanceOf[DownloadOptions]
     }
     
-    extension [Self <: DownloadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DownloadOptions] (val x: Self) extends AnyVal {
       
       inline def setCancellationToken(value: CancellationToken): Self = StObject.set(x, "cancellationToken", value.asInstanceOf[js.Any])
       

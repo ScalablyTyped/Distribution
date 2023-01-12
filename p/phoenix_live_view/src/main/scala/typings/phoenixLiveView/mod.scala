@@ -458,7 +458,8 @@ object mod {
       __obj.asInstanceOf[Defaults]
     }
     
-    extension [Self <: Defaults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Defaults] (val x: Self) extends AnyVal {
       
       inline def setDebounce(value: Double): Self = StObject.set(x, "debounce", value.asInstanceOf[js.Any])
       
@@ -497,7 +498,8 @@ object mod {
       __obj.asInstanceOf[DomOptions]
     }
     
-    extension [Self <: DomOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DomOptions] (val x: Self) extends AnyVal {
       
       inline def setChildrenOnly(value: Boolean): Self = StObject.set(x, "childrenOnly", value.asInstanceOf[js.Any])
       
@@ -567,7 +569,8 @@ object mod {
       __obj.asInstanceOf[LiveViewUploaderMeta]
     }
     
-    extension [Self <: LiveViewUploaderMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LiveViewUploaderMeta] (val x: Self) extends AnyVal {
       
       inline def setLast_modified(value: Double): Self = StObject.set(x, "last_modified", value.asInstanceOf[js.Any])
       
@@ -610,7 +613,8 @@ object mod {
       __obj.asInstanceOf[SocketOptions]
     }
     
-    extension [Self <: SocketOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SocketOptions] (val x: Self) extends AnyVal {
       
       inline def setBindingPrefix(value: String): Self = StObject.set(x, "bindingPrefix", value.asInstanceOf[js.Any])
       

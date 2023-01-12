@@ -33,7 +33,8 @@ object mod {
       __obj.asInstanceOf[Corner]
     }
     
-    extension [Self <: Corner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Corner] (val x: Self) extends AnyVal {
       
       inline def setScore(value: Double): Self = StObject.set(x, "score", value.asInstanceOf[js.Any])
       

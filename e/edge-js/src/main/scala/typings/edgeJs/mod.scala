@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[Params]
     }
     
-    extension [Self <: Params](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Params] (val x: Self) extends AnyVal {
       
       inline def setAssemblyFile(value: String): Self = StObject.set(x, "assemblyFile", value.asInstanceOf[js.Any])
       
@@ -71,7 +72,8 @@ object mod {
       __obj.asInstanceOf[Source]
     }
     
-    extension [Self <: Source](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Source] (val x: Self) extends AnyVal {
       
       inline def setReferences(value: js.Array[String]): Self = StObject.set(x, "references", value.asInstanceOf[js.Any])
       
@@ -98,7 +100,8 @@ object mod {
       __obj.asInstanceOf[TSQL]
     }
     
-    extension [Self <: TSQL](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TSQL] (val x: Self) extends AnyVal {
       
       inline def setCommandTimeout(value: Double): Self = StObject.set(x, "commandTimeout", value.asInstanceOf[js.Any])
       

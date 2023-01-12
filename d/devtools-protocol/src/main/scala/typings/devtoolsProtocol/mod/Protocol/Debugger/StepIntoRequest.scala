@@ -24,7 +24,8 @@ object StepIntoRequest {
     __obj.asInstanceOf[StepIntoRequest]
   }
   
-  extension [Self <: StepIntoRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StepIntoRequest] (val x: Self) extends AnyVal {
     
     inline def setBreakOnAsyncCall(value: Boolean): Self = StObject.set(x, "breakOnAsyncCall", value.asInstanceOf[js.Any])
     

@@ -48,7 +48,8 @@ object distCommonjsModulesSidebarSidebarPushableMod extends Shortcut {
       __obj.asInstanceOf[StrictSidebarPushableProps]
     }
     
-    extension [Self <: StrictSidebarPushableProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictSidebarPushableProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

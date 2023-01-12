@@ -41,7 +41,8 @@ object MessageEvent {
     __obj.asInstanceOf[MessageEvent]
   }
   
-  extension [Self <: MessageEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageEvent] (val x: Self) extends AnyVal {
     
     inline def setActualChannel(value: String): Self = StObject.set(x, "actualChannel", value.asInstanceOf[js.Any])
     

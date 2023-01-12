@@ -26,7 +26,8 @@ object SymbolResolution {
     __obj.asInstanceOf[SymbolResolution]
   }
   
-  extension [Self <: SymbolResolution](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SymbolResolution] (val x: Self) extends AnyVal {
     
     inline def setAsset(value: Asset): Self = StObject.set(x, "asset", value.asInstanceOf[js.Any])
     

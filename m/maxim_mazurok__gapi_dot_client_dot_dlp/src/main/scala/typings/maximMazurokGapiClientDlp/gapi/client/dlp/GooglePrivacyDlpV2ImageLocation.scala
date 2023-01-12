@@ -16,7 +16,8 @@ object GooglePrivacyDlpV2ImageLocation {
     __obj.asInstanceOf[GooglePrivacyDlpV2ImageLocation]
   }
   
-  extension [Self <: GooglePrivacyDlpV2ImageLocation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GooglePrivacyDlpV2ImageLocation] (val x: Self) extends AnyVal {
     
     inline def setBoundingBoxes(value: js.Array[GooglePrivacyDlpV2BoundingBox]): Self = StObject.set(x, "boundingBoxes", value.asInstanceOf[js.Any])
     

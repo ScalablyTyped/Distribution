@@ -17,7 +17,8 @@ object TestRunStatistic {
     __obj.asInstanceOf[TestRunStatistic]
   }
   
-  extension [Self <: TestRunStatistic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TestRunStatistic] (val x: Self) extends AnyVal {
     
     inline def setRun(value: ShallowReference): Self = StObject.set(x, "run", value.asInstanceOf[js.Any])
     

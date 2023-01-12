@@ -18,7 +18,8 @@ object CreateFeatureResponse {
     __obj.asInstanceOf[CreateFeatureResponse]
   }
   
-  extension [Self <: CreateFeatureResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateFeatureResponse] (val x: Self) extends AnyVal {
     
     inline def setFeature(value: Feature): Self = StObject.set(x, "feature", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object Grip {
     __obj.asInstanceOf[Grip]
   }
   
-  extension [Self <: Grip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Grip] (val x: Self) extends AnyVal {
     
     inline def setGrip(value: String): Self = StObject.set(x, "grip", value.asInstanceOf[js.Any])
     

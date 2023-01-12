@@ -184,7 +184,8 @@ object componentsSwitchMod {
       __obj.asInstanceOf[SwitchActiveProps]
     }
     
-    extension [Self <: SwitchActiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchActiveProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -490,7 +491,8 @@ object componentsSwitchMod {
       __obj.asInstanceOf[SwitchInactiveProps]
     }
     
-    extension [Self <: SwitchInactiveProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchInactiveProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -863,7 +865,8 @@ object componentsSwitchMod {
       __obj.asInstanceOf[SwitchInputProps]
     }
     
-    extension [Self <: SwitchInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchInputProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1302,7 +1305,8 @@ object componentsSwitchMod {
       __obj.asInstanceOf[SwitchPaddleProps]
     }
     
-    extension [Self <: SwitchPaddleProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchPaddleProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       
@@ -1620,7 +1624,8 @@ object componentsSwitchMod {
       __obj.asInstanceOf[SwitchProps]
     }
     
-    extension [Self <: SwitchProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwitchProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

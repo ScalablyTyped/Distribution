@@ -40,7 +40,8 @@ object anon {
       __obj.asInstanceOf[RedirectTo]
     }
     
-    extension [Self <: RedirectTo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RedirectTo] (val x: Self) extends AnyVal {
       
       inline def setRedirectTo(value: Boolean): Self = StObject.set(x, "redirectTo", value.asInstanceOf[js.Any])
       
@@ -126,7 +127,8 @@ object anon {
       __obj.asInstanceOf[ServerStateCookieOptionsn]
     }
     
-    extension [Self <: ServerStateCookieOptionsn](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServerStateCookieOptionsn] (val x: Self) extends AnyVal {
       
       inline def setAutoValue(value: /* request */ Request[ReqRefDefaults] => Unit): Self = StObject.set(x, "autoValue", js.Any.fromFunction1(value))
       

@@ -49,7 +49,8 @@ object TextFieldMaster {
     __obj.asInstanceOf[TextFieldMaster]
   }
   
-  extension [Self <: TextFieldMaster](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextFieldMaster] (val x: Self) extends AnyVal {
     
     inline def setDependentTextFields(value: SafeArray[XDependentTextField]): Self = StObject.set(x, "DependentTextFields", value.asInstanceOf[js.Any])
     

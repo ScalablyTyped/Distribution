@@ -367,7 +367,8 @@ object sapUiLayoutBlockLayoutRowMod {
       __obj.asInstanceOf[BlockLayoutRowSettings]
     }
     
-    extension [Self <: BlockLayoutRowSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockLayoutRowSettings] (val x: Self) extends AnyVal {
       
       inline def setAccentCells(value: js.Array[typings.openui5.sapUiLayoutBlockLayoutCellMod.default | String]): Self = StObject.set(x, "accentCells", value.asInstanceOf[js.Any])
       

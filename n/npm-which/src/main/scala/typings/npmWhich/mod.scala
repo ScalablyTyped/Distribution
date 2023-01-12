@@ -99,7 +99,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NpmWhichOptions]
     }
     
-    extension [Self <: NpmWhichOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NpmWhichOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[StaticWhichOptions]
     }
     
-    extension [Self <: StaticWhichOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticWhichOptions] (val x: Self) extends AnyVal {
       
       inline def setCwd(value: String): Self = StObject.set(x, "cwd", value.asInstanceOf[js.Any])
       

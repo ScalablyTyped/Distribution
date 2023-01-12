@@ -43,7 +43,8 @@ object Entitlement {
     __obj.asInstanceOf[Entitlement]
   }
   
-  extension [Self <: Entitlement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Entitlement] (val x: Self) extends AnyVal {
     
     inline def setAllowCheckIn(value: BoxBoolean): Self = StObject.set(x, "AllowCheckIn", value.asInstanceOf[js.Any])
     

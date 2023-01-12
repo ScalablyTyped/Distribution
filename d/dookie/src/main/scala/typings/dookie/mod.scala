@@ -30,7 +30,8 @@ object mod {
       __obj.asInstanceOf[PushOpts]
     }
     
-    extension [Self <: PushOpts](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PushOpts] (val x: Self) extends AnyVal {
       
       inline def setDropDatabase(value: Boolean): Self = StObject.set(x, "dropDatabase", value.asInstanceOf[js.Any])
       

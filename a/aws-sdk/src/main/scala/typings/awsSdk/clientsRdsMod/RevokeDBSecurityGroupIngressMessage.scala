@@ -38,7 +38,8 @@ object RevokeDBSecurityGroupIngressMessage {
     __obj.asInstanceOf[RevokeDBSecurityGroupIngressMessage]
   }
   
-  extension [Self <: RevokeDBSecurityGroupIngressMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RevokeDBSecurityGroupIngressMessage] (val x: Self) extends AnyVal {
     
     inline def setCIDRIP(value: String): Self = StObject.set(x, "CIDRIP", value.asInstanceOf[js.Any])
     

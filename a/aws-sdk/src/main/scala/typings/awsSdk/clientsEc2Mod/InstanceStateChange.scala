@@ -28,7 +28,8 @@ object InstanceStateChange {
     __obj.asInstanceOf[InstanceStateChange]
   }
   
-  extension [Self <: InstanceStateChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InstanceStateChange] (val x: Self) extends AnyVal {
     
     inline def setCurrentState(value: InstanceState): Self = StObject.set(x, "CurrentState", value.asInstanceOf[js.Any])
     

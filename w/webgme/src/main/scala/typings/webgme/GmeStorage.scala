@@ -67,7 +67,8 @@ object GmeStorage {
       __obj.asInstanceOf[CommitObject]
     }
     
-    extension [Self <: CommitObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitObject] (val x: Self) extends AnyVal {
       
       inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
       
@@ -103,7 +104,8 @@ object GmeStorage {
       __obj.asInstanceOf[CommitResult]
     }
     
-    extension [Self <: CommitResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommitResult] (val x: Self) extends AnyVal {
       
       inline def setHash(value: CommitHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       

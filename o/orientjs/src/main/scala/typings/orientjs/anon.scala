@@ -18,7 +18,8 @@ object anon {
       __obj.asInstanceOf[`0`]
     }
     
-    extension [Self <: `0`](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: `0`] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -37,7 +38,8 @@ object anon {
       __obj.asInstanceOf[Fields]
     }
     
-    extension [Self <: Fields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fields] (val x: Self) extends AnyVal {
       
       inline def setFields(value: js.Array[CustomField]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
       
@@ -60,7 +62,8 @@ object anon {
       __obj.asInstanceOf[Force]
     }
     
-    extension [Self <: Force](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Force] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -91,7 +94,8 @@ object anon {
       __obj.asInstanceOf[Host]
     }
     
-    extension [Self <: Host](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Host] (val x: Self) extends AnyVal {
       
       inline def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
       
@@ -124,7 +128,8 @@ object anon {
       __obj.asInstanceOf[Max]
     }
     
-    extension [Self <: Max](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Max] (val x: Self) extends AnyVal {
       
       inline def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
       
@@ -149,7 +154,8 @@ object anon {
       __obj.asInstanceOf[PageSize]
     }
     
-    extension [Self <: PageSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageSize] (val x: Self) extends AnyVal {
       
       inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
       

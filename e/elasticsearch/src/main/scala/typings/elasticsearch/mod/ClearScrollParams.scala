@@ -17,7 +17,8 @@ object ClearScrollParams {
     __obj.asInstanceOf[ClearScrollParams]
   }
   
-  extension [Self <: ClearScrollParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearScrollParams] (val x: Self) extends AnyVal {
     
     inline def setScrollId(value: NameList): Self = StObject.set(x, "scrollId", value.asInstanceOf[js.Any])
     

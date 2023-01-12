@@ -27,7 +27,8 @@ object DataFileProperties {
     __obj.asInstanceOf[DataFileProperties]
   }
   
-  extension [Self <: DataFileProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataFileProperties] (val x: Self) extends AnyVal {
     
     inline def setItemId(value: String): Self = StObject.set(x, "itemId", value.asInstanceOf[js.Any])
     

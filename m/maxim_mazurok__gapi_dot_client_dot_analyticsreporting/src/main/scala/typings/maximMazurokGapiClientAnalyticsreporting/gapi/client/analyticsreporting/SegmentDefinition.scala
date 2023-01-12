@@ -16,7 +16,8 @@ object SegmentDefinition {
     __obj.asInstanceOf[SegmentDefinition]
   }
   
-  extension [Self <: SegmentDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SegmentDefinition] (val x: Self) extends AnyVal {
     
     inline def setSegmentFilters(value: js.Array[SegmentFilter]): Self = StObject.set(x, "segmentFilters", value.asInstanceOf[js.Any])
     

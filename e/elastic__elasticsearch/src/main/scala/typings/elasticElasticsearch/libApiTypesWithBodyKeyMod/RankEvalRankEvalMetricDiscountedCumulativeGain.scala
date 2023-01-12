@@ -17,7 +17,8 @@ object RankEvalRankEvalMetricDiscountedCumulativeGain {
     __obj.asInstanceOf[RankEvalRankEvalMetricDiscountedCumulativeGain]
   }
   
-  extension [Self <: RankEvalRankEvalMetricDiscountedCumulativeGain](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RankEvalRankEvalMetricDiscountedCumulativeGain] (val x: Self) extends AnyVal {
     
     inline def setNormalize(value: Boolean): Self = StObject.set(x, "normalize", value.asInstanceOf[js.Any])
     

@@ -15,7 +15,8 @@ object MlDataframeEvaluationRegressionMetricsMsle {
     __obj.asInstanceOf[MlDataframeEvaluationRegressionMetricsMsle]
   }
   
-  extension [Self <: MlDataframeEvaluationRegressionMetricsMsle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeEvaluationRegressionMetricsMsle] (val x: Self) extends AnyVal {
     
     inline def setOffset(value: double): Self = StObject.set(x, "offset", value.asInstanceOf[js.Any])
     

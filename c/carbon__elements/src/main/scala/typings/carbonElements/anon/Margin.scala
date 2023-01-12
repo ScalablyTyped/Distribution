@@ -21,7 +21,8 @@ object Margin {
     __obj.asInstanceOf[Margin]
   }
   
-  extension [Self <: Margin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Margin] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: typings.carbonElements.carbonElementsInts.`8`): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

@@ -18,7 +18,8 @@ object ConnectionOAuthClientResponseParameters {
     __obj.asInstanceOf[ConnectionOAuthClientResponseParameters]
   }
   
-  extension [Self <: ConnectionOAuthClientResponseParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectionOAuthClientResponseParameters] (val x: Self) extends AnyVal {
     
     inline def setClientID(value: AuthHeaderParameters): Self = StObject.set(x, "ClientID", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object OSPolicyAssignmentInstanceFilter {
     __obj.asInstanceOf[OSPolicyAssignmentInstanceFilter]
   }
   
-  extension [Self <: OSPolicyAssignmentInstanceFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSPolicyAssignmentInstanceFilter] (val x: Self) extends AnyVal {
     
     inline def setAll(value: Boolean): Self = StObject.set(x, "all", value.asInstanceOf[js.Any])
     

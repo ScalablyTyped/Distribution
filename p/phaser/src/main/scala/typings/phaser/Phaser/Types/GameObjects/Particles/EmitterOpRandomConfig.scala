@@ -23,7 +23,8 @@ object EmitterOpRandomConfig {
     __obj.asInstanceOf[EmitterOpRandomConfig]
   }
   
-  extension [Self <: EmitterOpRandomConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmitterOpRandomConfig] (val x: Self) extends AnyVal {
     
     inline def setRandom(value: js.Array[Double]): Self = StObject.set(x, "random", value.asInstanceOf[js.Any])
     

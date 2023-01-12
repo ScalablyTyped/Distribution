@@ -19,7 +19,8 @@ object OnScrollEventArgs {
     __obj.asInstanceOf[OnScrollEventArgs[T]]
   }
   
-  extension [Self <: OnScrollEventArgs[?], T /* <: SlickData */](x: Self & OnScrollEventArgs[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OnScrollEventArgs[?], T /* <: SlickData */] (val x: Self & OnScrollEventArgs[T]) extends AnyVal {
     
     inline def setScrollLeft(value: Double): Self = StObject.set(x, "scrollLeft", value.asInstanceOf[js.Any])
     

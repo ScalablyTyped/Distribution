@@ -17,7 +17,8 @@ object messageMod {
       __obj.asInstanceOf[Avatar]
     }
     
-    extension [Self <: Avatar](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Avatar] (val x: Self) extends AnyVal {
       
       inline def setImage_url(value: String): Self = StObject.set(x, "image_url", value.asInstanceOf[js.Any])
     }
@@ -40,7 +41,8 @@ object messageMod {
       __obj.asInstanceOf[CreateMessage]
     }
     
-    extension [Self <: CreateMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMessage] (val x: Self) extends AnyVal {
       
       inline def setFrom(value: FromToObject): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
       
@@ -66,7 +68,8 @@ object messageMod {
       __obj.asInstanceOf[FromToObject]
     }
     
-    extension [Self <: FromToObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FromToObject] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -94,7 +97,8 @@ object messageMod {
       __obj.asInstanceOf[Message]
     }
     
-    extension [Self <: Message](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       inline def setCreated_at(value: Double): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
       
@@ -121,7 +125,8 @@ object messageMod {
       __obj.asInstanceOf[MessageModel]
     }
     
-    extension [Self <: MessageModel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageModel] (val x: Self) extends AnyVal {
       
       inline def setBody(value: String): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -165,7 +170,8 @@ object messageMod {
       __obj.asInstanceOf[Owner]
     }
     
-    extension [Self <: Owner](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Owner] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: Avatar): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

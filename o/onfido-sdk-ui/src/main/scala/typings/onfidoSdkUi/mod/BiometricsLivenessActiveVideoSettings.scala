@@ -29,7 +29,8 @@ object BiometricsLivenessActiveVideoSettings {
     __obj.asInstanceOf[BiometricsLivenessActiveVideoSettings]
   }
   
-  extension [Self <: BiometricsLivenessActiveVideoSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BiometricsLivenessActiveVideoSettings] (val x: Self) extends AnyVal {
     
     inline def setBitrate(value: Double): Self = StObject.set(x, "bitrate", value.asInstanceOf[js.Any])
     

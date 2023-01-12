@@ -17,7 +17,8 @@ object VASTClientUrlHandler {
     __obj.asInstanceOf[VASTClientUrlHandler]
   }
   
-  extension [Self <: VASTClientUrlHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VASTClientUrlHandler] (val x: Self) extends AnyVal {
     
     inline def setGet(value: (String, Timeout, FnCall) => Unit): Self = StObject.set(x, "get", js.Any.fromFunction3(value))
   }

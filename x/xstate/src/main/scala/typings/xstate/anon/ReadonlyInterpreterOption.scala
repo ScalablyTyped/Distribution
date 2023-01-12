@@ -29,7 +29,8 @@ object ReadonlyInterpreterOption {
     __obj.asInstanceOf[ReadonlyInterpreterOption]
   }
   
-  extension [Self <: ReadonlyInterpreterOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyInterpreterOption] (val x: Self) extends AnyVal {
     
     inline def setClock(value: typings.xstate.libInterpreterMod.Clock): Self = StObject.set(x, "clock", value.asInstanceOf[js.Any])
     

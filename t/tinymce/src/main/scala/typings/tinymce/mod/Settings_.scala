@@ -359,7 +359,8 @@ object Settings_ {
     __obj.asInstanceOf[Settings_]
   }
   
-  extension [Self <: Settings_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Settings_] (val x: Self) extends AnyVal {
     
     inline def setAdvlist_number_styles(value: String): Self = StObject.set(x, "advlist_number_styles", value.asInstanceOf[js.Any])
     

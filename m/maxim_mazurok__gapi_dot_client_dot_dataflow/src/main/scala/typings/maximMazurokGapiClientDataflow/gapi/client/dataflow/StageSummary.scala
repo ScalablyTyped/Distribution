@@ -34,7 +34,8 @@ object StageSummary {
     __obj.asInstanceOf[StageSummary]
   }
   
-  extension [Self <: StageSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StageSummary] (val x: Self) extends AnyVal {
     
     inline def setEndTime(value: String): Self = StObject.set(x, "endTime", value.asInstanceOf[js.Any])
     

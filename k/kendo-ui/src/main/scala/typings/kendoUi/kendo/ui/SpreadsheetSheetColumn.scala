@@ -17,7 +17,8 @@ object SpreadsheetSheetColumn {
     __obj.asInstanceOf[SpreadsheetSheetColumn]
   }
   
-  extension [Self <: SpreadsheetSheetColumn](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpreadsheetSheetColumn] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

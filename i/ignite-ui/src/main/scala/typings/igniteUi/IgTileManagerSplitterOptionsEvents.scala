@@ -37,7 +37,8 @@ object IgTileManagerSplitterOptionsEvents {
     __obj.asInstanceOf[IgTileManagerSplitterOptionsEvents]
   }
   
-  extension [Self <: IgTileManagerSplitterOptionsEvents](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgTileManagerSplitterOptionsEvents] (val x: Self) extends AnyVal {
     
     inline def setCollapsed(value: Any): Self = StObject.set(x, "collapsed", value.asInstanceOf[js.Any])
     

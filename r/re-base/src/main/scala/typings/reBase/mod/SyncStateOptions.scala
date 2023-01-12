@@ -63,7 +63,8 @@ object SyncStateOptions {
     __obj.asInstanceOf[SyncStateOptions]
   }
   
-  extension [Self <: SyncStateOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyncStateOptions] (val x: Self) extends AnyVal {
     
     inline def setAsArray(value: Boolean): Self = StObject.set(x, "asArray", value.asInstanceOf[js.Any])
     

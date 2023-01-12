@@ -64,7 +64,8 @@ object PartialPlotMarkerAutocolorscale {
     __obj.asInstanceOf[PartialPlotMarkerAutocolorscale]
   }
   
-  extension [Self <: PartialPlotMarkerAutocolorscale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialPlotMarkerAutocolorscale] (val x: Self) extends AnyVal {
     
     inline def setAutocolorscale(value: Boolean): Self = StObject.set(x, "autocolorscale", value.asInstanceOf[js.Any])
     

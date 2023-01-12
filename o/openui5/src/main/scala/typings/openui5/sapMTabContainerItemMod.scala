@@ -595,7 +595,8 @@ object sapMTabContainerItemMod {
       __obj.asInstanceOf[TabContainerItemSettings]
     }
     
-    extension [Self <: TabContainerItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TabContainerItemSettings] (val x: Self) extends AnyVal {
       
       inline def setAdditionalText(value: String | PropertyBindingInfo): Self = StObject.set(x, "additionalText", value.asInstanceOf[js.Any])
       

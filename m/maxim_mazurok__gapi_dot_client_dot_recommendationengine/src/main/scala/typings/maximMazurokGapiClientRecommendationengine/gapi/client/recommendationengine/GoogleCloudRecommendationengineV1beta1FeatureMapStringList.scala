@@ -16,7 +16,8 @@ object GoogleCloudRecommendationengineV1beta1FeatureMapStringList {
     __obj.asInstanceOf[GoogleCloudRecommendationengineV1beta1FeatureMapStringList]
   }
   
-  extension [Self <: GoogleCloudRecommendationengineV1beta1FeatureMapStringList](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudRecommendationengineV1beta1FeatureMapStringList] (val x: Self) extends AnyVal {
     
     inline def setValue(value: js.Array[String]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object ListServicesRequest {
     __obj.asInstanceOf[ListServicesRequest]
   }
   
-  extension [Self <: ListServicesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListServicesRequest] (val x: Self) extends AnyVal {
     
     inline def setCluster(value: String): Self = StObject.set(x, "cluster", value.asInstanceOf[js.Any])
     

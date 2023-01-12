@@ -44,7 +44,8 @@ object mod {
       __obj.asInstanceOf[JSONPointer]
     }
     
-    extension [Self <: JSONPointer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JSONPointer] (val x: Self) extends AnyVal {
       
       inline def setGet(value: js.Object => Any): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
       

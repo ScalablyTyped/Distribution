@@ -34,7 +34,8 @@ object SendersInfoAggregatedStats {
     __obj.asInstanceOf[SendersInfoAggregatedStats]
   }
   
-  extension [Self <: SendersInfoAggregatedStats](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendersInfoAggregatedStats] (val x: Self) extends AnyVal {
     
     inline def setLast_30_days(value: SendersInfoStats): Self = StObject.set(x, "last_30_days", value.asInstanceOf[js.Any])
     

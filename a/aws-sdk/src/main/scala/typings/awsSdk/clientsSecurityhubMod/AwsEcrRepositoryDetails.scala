@@ -43,7 +43,8 @@ object AwsEcrRepositoryDetails {
     __obj.asInstanceOf[AwsEcrRepositoryDetails]
   }
   
-  extension [Self <: AwsEcrRepositoryDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AwsEcrRepositoryDetails] (val x: Self) extends AnyVal {
     
     inline def setArn(value: NonEmptyString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

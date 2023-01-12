@@ -20,7 +20,8 @@ object IntentCollection {
     __obj.asInstanceOf[IntentCollection]
   }
   
-  extension [Self <: IntentCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IntentCollection] (val x: Self) extends AnyVal {
     
     inline def setIntents(value: js.Array[Intent]): Self = StObject.set(x, "intents", value.asInstanceOf[js.Any])
     

@@ -51,7 +51,8 @@ object AttributeContainer {
     __obj.asInstanceOf[AttributeContainer]
   }
   
-  extension [Self <: AttributeContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeContainer] (val x: Self) extends AnyVal {
     
     inline def setAlignment(value: left | right | center | justify): Self = StObject.set(x, "alignment", value.asInstanceOf[js.Any])
     

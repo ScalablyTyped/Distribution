@@ -29,7 +29,8 @@ object distComponentsDebugFrameMod {
       __obj.asInstanceOf[DebugFrameProps]
     }
     
-    extension [Self <: DebugFrameProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DebugFrameProps] (val x: Self) extends AnyVal {
       
       inline def setCenterBounds(value: BoundingBox): Self = StObject.set(x, "centerBounds", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object CreateDirectConnectGatewayRequest {
     __obj.asInstanceOf[CreateDirectConnectGatewayRequest]
   }
   
-  extension [Self <: CreateDirectConnectGatewayRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDirectConnectGatewayRequest] (val x: Self) extends AnyVal {
     
     inline def setAmazonSideAsn(value: LongAsn): Self = StObject.set(x, "amazonSideAsn", value.asInstanceOf[js.Any])
     

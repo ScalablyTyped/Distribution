@@ -18,7 +18,8 @@ object GetGeoMatchSetResponse {
     __obj.asInstanceOf[GetGeoMatchSetResponse]
   }
   
-  extension [Self <: GetGeoMatchSetResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetGeoMatchSetResponse] (val x: Self) extends AnyVal {
     
     inline def setGeoMatchSet(value: GeoMatchSet): Self = StObject.set(x, "GeoMatchSet", value.asInstanceOf[js.Any])
     

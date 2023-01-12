@@ -23,7 +23,8 @@ object ListCompatibleImagesResult {
     __obj.asInstanceOf[ListCompatibleImagesResult]
   }
   
-  extension [Self <: ListCompatibleImagesResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListCompatibleImagesResult] (val x: Self) extends AnyVal {
     
     inline def setCompatibleImages(value: CompatibleImageList): Self = StObject.set(x, "CompatibleImages", value.asInstanceOf[js.Any])
     

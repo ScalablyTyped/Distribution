@@ -19,7 +19,8 @@ object ComplianceInformation {
     __obj.asInstanceOf[ComplianceInformation]
   }
   
-  extension [Self <: ComplianceInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ComplianceInformation] (val x: Self) extends AnyVal {
     
     inline def setCertificationControls(value: NullableOption[js.Array[CertificationControl]]): Self = StObject.set(x, "certificationControls", value.asInstanceOf[js.Any])
     

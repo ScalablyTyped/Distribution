@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[CreateMockStoreOptions[State, Dependency]]
     }
     
-    extension [Self <: CreateMockStoreOptions[?, ?], State /* <: js.Object */, Dependency /* <: js.Object */](x: Self & (CreateMockStoreOptions[State, Dependency])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CreateMockStoreOptions[?, ?], State /* <: js.Object */, Dependency /* <: js.Object */] (val x: Self & (CreateMockStoreOptions[State, Dependency])) extends AnyVal {
       
       inline def setInitialState(value: State): Self = StObject.set(x, "initialState", value.asInstanceOf[js.Any])
       

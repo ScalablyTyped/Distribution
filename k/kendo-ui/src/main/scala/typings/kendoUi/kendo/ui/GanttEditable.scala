@@ -37,7 +37,8 @@ object GanttEditable {
     __obj.asInstanceOf[GanttEditable]
   }
   
-  extension [Self <: GanttEditable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GanttEditable] (val x: Self) extends AnyVal {
     
     inline def setConfirmation(value: Boolean): Self = StObject.set(x, "confirmation", value.asInstanceOf[js.Any])
     

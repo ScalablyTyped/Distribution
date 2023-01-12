@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[Endpoint[T]]
     }
     
-    extension [Self <: Endpoint[?], T](x: Self & Endpoint[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Endpoint[?], T] (val x: Self & Endpoint[T]) extends AnyVal {
       
       inline def setFinite(value: Boolean): Self = StObject.set(x, "finite", value.asInstanceOf[js.Any])
       
@@ -91,7 +92,8 @@ object mod {
       __obj.asInstanceOf[Interval[T]]
     }
     
-    extension [Self <: Interval[?], T](x: Self & Interval[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interval[?], T] (val x: Self & Interval[T]) extends AnyVal {
       
       inline def setConstructor(value: IntervalConstructor[Double]): Self = StObject.set(x, "constructor", value.asInstanceOf[js.Any])
       

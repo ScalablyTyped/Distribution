@@ -19,7 +19,8 @@ object `571` {
     __obj.asInstanceOf[`571`]
   }
   
-  extension [Self <: `571`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `571`] (val x: Self) extends AnyVal {
     
     inline def setIncomplete_results(value: Boolean): Self = StObject.set(x, "incomplete_results", value.asInstanceOf[js.Any])
     

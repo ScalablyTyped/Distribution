@@ -138,7 +138,8 @@ object cjsModalMod {
       __obj.asInstanceOf[BaseModalProps]
     }
     
-    extension [Self <: BaseModalProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseModalProps] (val x: Self) extends AnyVal {
       
       inline def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
       
@@ -247,7 +248,8 @@ object cjsModalMod {
       __obj.asInstanceOf[ModalHandle]
     }
     
-    extension [Self <: ModalHandle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ModalHandle] (val x: Self) extends AnyVal {
       
       inline def setBackdrop(value: HTMLElement): Self = StObject.set(x, "backdrop", value.asInstanceOf[js.Any])
       
@@ -286,7 +288,8 @@ object cjsModalMod {
       __obj.asInstanceOf[RenderModalBackdropProps]
     }
     
-    extension [Self <: RenderModalBackdropProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderModalBackdropProps] (val x: Self) extends AnyVal {
       
       inline def setOnClick(value: SyntheticEvent[Element, Event] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
@@ -315,7 +318,8 @@ object cjsModalMod {
       __obj.asInstanceOf[RenderModalDialogProps]
     }
     
-    extension [Self <: RenderModalDialogProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenderModalDialogProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-modal`(value: Boolean): Self = StObject.set(x, "aria-modal", value.asInstanceOf[js.Any])
       

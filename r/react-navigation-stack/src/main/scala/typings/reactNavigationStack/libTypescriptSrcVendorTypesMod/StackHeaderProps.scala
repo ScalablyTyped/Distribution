@@ -61,7 +61,8 @@ object StackHeaderProps {
     __obj.asInstanceOf[StackHeaderProps]
   }
   
-  extension [Self <: StackHeaderProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StackHeaderProps] (val x: Self) extends AnyVal {
     
     inline def setInsets(value: EdgeInsets): Self = StObject.set(x, "insets", value.asInstanceOf[js.Any])
     

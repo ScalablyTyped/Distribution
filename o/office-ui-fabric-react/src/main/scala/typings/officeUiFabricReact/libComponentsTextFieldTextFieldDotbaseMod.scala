@@ -165,7 +165,8 @@ object libComponentsTextFieldTextFieldDotbaseMod {
       __obj.asInstanceOf[ITextFieldSnapshot]
     }
     
-    extension [Self <: ITextFieldSnapshot](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldSnapshot] (val x: Self) extends AnyVal {
       
       inline def setSelection(value: js.Tuple2[Double | Null, Double | Null]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
@@ -200,7 +201,8 @@ object libComponentsTextFieldTextFieldDotbaseMod {
       __obj.asInstanceOf[ITextFieldState]
     }
     
-    extension [Self <: ITextFieldState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITextFieldState] (val x: Self) extends AnyVal {
       
       inline def setErrorMessage(value: String | Element): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
       

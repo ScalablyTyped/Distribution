@@ -34,7 +34,8 @@ object esTabNavListAddButtonMod extends Shortcut {
       __obj.asInstanceOf[AddButtonProps]
     }
     
-    extension [Self <: AddButtonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AddButtonProps] (val x: Self) extends AnyVal {
       
       inline def setEditable(value: EditableConfig): Self = StObject.set(x, "editable", value.asInstanceOf[js.Any])
       

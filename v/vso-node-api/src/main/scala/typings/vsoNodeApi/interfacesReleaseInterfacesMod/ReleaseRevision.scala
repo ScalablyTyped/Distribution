@@ -36,7 +36,8 @@ object ReleaseRevision {
     __obj.asInstanceOf[ReleaseRevision]
   }
   
-  extension [Self <: ReleaseRevision](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseRevision] (val x: Self) extends AnyVal {
     
     inline def setChangeDetails(value: String): Self = StObject.set(x, "changeDetails", value.asInstanceOf[js.Any])
     

@@ -33,7 +33,8 @@ object ListLogPatternsRequest {
     __obj.asInstanceOf[ListLogPatternsRequest]
   }
   
-  extension [Self <: ListLogPatternsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListLogPatternsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxEntities): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

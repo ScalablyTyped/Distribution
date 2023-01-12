@@ -28,7 +28,8 @@ object ReadonlyPromiseHasPending {
     __obj.asInstanceOf[ReadonlyPromiseHasPending]
   }
   
-  extension [Self <: ReadonlyPromiseHasPending](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReadonlyPromiseHasPending] (val x: Self) extends AnyVal {
     
     inline def setCatch(value: () => js.Promise[HasPendingMappingsResponse | Any]): Self = StObject.set(x, "catch", js.Any.fromFunction0(value))
     

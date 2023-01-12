@@ -35,7 +35,8 @@ object Md5 {
     __obj.asInstanceOf[Md5]
   }
   
-  extension [Self <: Md5](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Md5] (val x: Self) extends AnyVal {
     
     inline def setMd5(value: String): Self = StObject.set(x, "md5", value.asInstanceOf[js.Any])
     

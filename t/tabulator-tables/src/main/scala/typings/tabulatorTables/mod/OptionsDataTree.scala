@@ -54,7 +54,8 @@ object OptionsDataTree {
     __obj.asInstanceOf[OptionsDataTree]
   }
   
-  extension [Self <: OptionsDataTree](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OptionsDataTree] (val x: Self) extends AnyVal {
     
     inline def setDataTree(value: Boolean): Self = StObject.set(x, "dataTree", value.asInstanceOf[js.Any])
     

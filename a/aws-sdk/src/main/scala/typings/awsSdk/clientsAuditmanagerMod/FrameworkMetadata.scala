@@ -33,7 +33,8 @@ object FrameworkMetadata {
     __obj.asInstanceOf[FrameworkMetadata]
   }
   
-  extension [Self <: FrameworkMetadata](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameworkMetadata] (val x: Self) extends AnyVal {
     
     inline def setComplianceType(value: ComplianceType): Self = StObject.set(x, "complianceType", value.asInstanceOf[js.Any])
     

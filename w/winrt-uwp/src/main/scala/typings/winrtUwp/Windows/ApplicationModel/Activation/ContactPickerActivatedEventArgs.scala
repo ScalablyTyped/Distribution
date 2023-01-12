@@ -32,7 +32,8 @@ object ContactPickerActivatedEventArgs {
     __obj.asInstanceOf[ContactPickerActivatedEventArgs]
   }
   
-  extension [Self <: ContactPickerActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ContactPickerActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setContactPickerUI(value: ContactPickerUI): Self = StObject.set(x, "contactPickerUI", value.asInstanceOf[js.Any])
     

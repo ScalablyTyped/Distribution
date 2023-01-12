@@ -66,7 +66,8 @@ object XSubToolbarController {
     __obj.asInstanceOf[XSubToolbarController]
   }
   
-  extension [Self <: XSubToolbarController](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSubToolbarController] (val x: Self) extends AnyVal {
     
     inline def setFunctionSelected(value: String => Unit): Self = StObject.set(x, "functionSelected", js.Any.fromFunction1(value))
     

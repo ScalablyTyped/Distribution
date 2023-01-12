@@ -19,7 +19,8 @@ object Newowner {
     __obj.asInstanceOf[Newowner]
   }
   
-  extension [Self <: Newowner](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Newowner] (val x: Self) extends AnyVal {
     
     inline def setNew_owner(value: String): Self = StObject.set(x, "new_owner", value.asInstanceOf[js.Any])
     

@@ -32,7 +32,8 @@ object ILogger {
     __obj.asInstanceOf[ILogger]
   }
   
-  extension [Self <: ILogger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILogger] (val x: Self) extends AnyVal {
     
     inline def setDebug(value: () => Boolean): Self = StObject.set(x, "debug", js.Any.fromFunction0(value))
     

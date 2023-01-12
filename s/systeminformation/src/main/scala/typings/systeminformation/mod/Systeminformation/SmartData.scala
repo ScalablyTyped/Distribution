@@ -71,7 +71,8 @@ object SmartData {
     __obj.asInstanceOf[SmartData]
   }
   
-  extension [Self <: SmartData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SmartData] (val x: Self) extends AnyVal {
     
     inline def setAta_smart_attributes(value: Revision): Self = StObject.set(x, "ata_smart_attributes", value.asInstanceOf[js.Any])
     

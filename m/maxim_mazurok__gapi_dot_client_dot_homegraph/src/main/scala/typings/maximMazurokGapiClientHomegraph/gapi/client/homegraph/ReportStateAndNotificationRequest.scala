@@ -28,7 +28,8 @@ object ReportStateAndNotificationRequest {
     __obj.asInstanceOf[ReportStateAndNotificationRequest]
   }
   
-  extension [Self <: ReportStateAndNotificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReportStateAndNotificationRequest] (val x: Self) extends AnyVal {
     
     inline def setAgentUserId(value: String): Self = StObject.set(x, "agentUserId", value.asInstanceOf[js.Any])
     

@@ -71,7 +71,8 @@ object PostOrPage {
     __obj.asInstanceOf[PostOrPage]
   }
   
-  extension [Self <: PostOrPage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostOrPage] (val x: Self) extends AnyVal {
     
     inline def setAuthors(value: js.Array[Author]): Self = StObject.set(x, "authors", value.asInstanceOf[js.Any])
     

@@ -41,7 +41,8 @@ object WatchOptions {
     __obj.asInstanceOf[WatchOptions]
   }
   
-  extension [Self <: WatchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WatchOptions] (val x: Self) extends AnyVal {
     
     inline def setAggregateTimeout(value: Double): Self = StObject.set(x, "aggregateTimeout", value.asInstanceOf[js.Any])
     

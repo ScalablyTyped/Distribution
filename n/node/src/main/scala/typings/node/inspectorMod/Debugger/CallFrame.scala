@@ -65,7 +65,8 @@ object CallFrame {
     __obj.asInstanceOf[CallFrame]
   }
   
-  extension [Self <: CallFrame](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CallFrame] (val x: Self) extends AnyVal {
     
     inline def setCallFrameId(value: CallFrameId): Self = StObject.set(x, "callFrameId", value.asInstanceOf[js.Any])
     

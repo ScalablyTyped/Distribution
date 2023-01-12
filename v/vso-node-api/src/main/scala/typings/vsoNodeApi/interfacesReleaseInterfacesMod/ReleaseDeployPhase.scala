@@ -44,7 +44,8 @@ object ReleaseDeployPhase {
     __obj.asInstanceOf[ReleaseDeployPhase]
   }
   
-  extension [Self <: ReleaseDeployPhase](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReleaseDeployPhase] (val x: Self) extends AnyVal {
     
     inline def setDeploymentJobs(value: js.Array[DeploymentJob]): Self = StObject.set(x, "deploymentJobs", value.asInstanceOf[js.Any])
     

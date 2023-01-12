@@ -19,7 +19,8 @@ object FeaturePosition {
     __obj.asInstanceOf[FeaturePosition]
   }
   
-  extension [Self <: FeaturePosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeaturePosition] (val x: Self) extends AnyVal {
     
     inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object IStreamMsg {
     __obj.asInstanceOf[IStreamMsg]
   }
   
-  extension [Self <: IStreamMsg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStreamMsg] (val x: Self) extends AnyVal {
     
     inline def setContent(value: Name): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
   }

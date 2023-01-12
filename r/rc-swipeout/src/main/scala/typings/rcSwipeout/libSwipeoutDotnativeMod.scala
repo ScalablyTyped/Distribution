@@ -68,7 +68,8 @@ object libSwipeoutDotnativeMod {
       __obj.asInstanceOf[SwipeButttonType]
     }
     
-    extension [Self <: SwipeButttonType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SwipeButttonType] (val x: Self) extends AnyVal {
       
       inline def setBackgroundColor(value: String): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
       

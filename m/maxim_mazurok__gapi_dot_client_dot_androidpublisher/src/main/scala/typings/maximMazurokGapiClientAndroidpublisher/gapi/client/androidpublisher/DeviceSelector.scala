@@ -28,7 +28,8 @@ object DeviceSelector {
     __obj.asInstanceOf[DeviceSelector]
   }
   
-  extension [Self <: DeviceSelector](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceSelector] (val x: Self) extends AnyVal {
     
     inline def setDeviceRam(value: DeviceRam): Self = StObject.set(x, "deviceRam", value.asInstanceOf[js.Any])
     

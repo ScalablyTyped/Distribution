@@ -22,7 +22,8 @@ object GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest {
     __obj.asInstanceOf[GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest]
   }
   
-  extension [Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudDatalabelingV1beta1SearchExampleComparisonsRequest] (val x: Self) extends AnyVal {
     
     inline def setPageSize(value: Double): Self = StObject.set(x, "pageSize", value.asInstanceOf[js.Any])
     

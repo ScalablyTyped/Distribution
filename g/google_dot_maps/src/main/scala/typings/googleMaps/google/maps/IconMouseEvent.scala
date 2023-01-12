@@ -37,7 +37,8 @@ object IconMouseEvent {
     __obj.asInstanceOf[IconMouseEvent]
   }
   
-  extension [Self <: IconMouseEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IconMouseEvent] (val x: Self) extends AnyVal {
     
     inline def setPlaceId(value: String): Self = StObject.set(x, "placeId", value.asInstanceOf[js.Any])
     

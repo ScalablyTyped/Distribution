@@ -27,7 +27,8 @@ object distSrcClassicEditorGeneralDistComponentsLottieMod extends Shortcut {
       __obj.asInstanceOf[LottieProps]
     }
     
-    extension [Self <: LottieProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LottieProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

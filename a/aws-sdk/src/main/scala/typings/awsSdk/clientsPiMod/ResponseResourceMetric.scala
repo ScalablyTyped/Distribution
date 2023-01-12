@@ -28,7 +28,8 @@ object ResponseResourceMetric {
     __obj.asInstanceOf[ResponseResourceMetric]
   }
   
-  extension [Self <: ResponseResourceMetric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseResourceMetric] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

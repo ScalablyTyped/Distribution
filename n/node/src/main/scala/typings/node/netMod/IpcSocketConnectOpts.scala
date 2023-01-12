@@ -18,7 +18,8 @@ object IpcSocketConnectOpts {
     __obj.asInstanceOf[IpcSocketConnectOpts]
   }
   
-  extension [Self <: IpcSocketConnectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IpcSocketConnectOpts] (val x: Self) extends AnyVal {
     
     inline def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
   }

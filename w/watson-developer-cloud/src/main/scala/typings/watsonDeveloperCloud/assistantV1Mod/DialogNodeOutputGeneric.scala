@@ -50,7 +50,8 @@ object DialogNodeOutputGeneric {
     __obj.asInstanceOf[DialogNodeOutputGeneric]
   }
   
-  extension [Self <: DialogNodeOutputGeneric](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DialogNodeOutputGeneric] (val x: Self) extends AnyVal {
     
     inline def setDelimiter(value: String): Self = StObject.set(x, "delimiter", value.asInstanceOf[js.Any])
     

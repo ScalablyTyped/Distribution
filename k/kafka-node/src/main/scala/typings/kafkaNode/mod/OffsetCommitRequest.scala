@@ -21,7 +21,8 @@ object OffsetCommitRequest {
     __obj.asInstanceOf[OffsetCommitRequest]
   }
   
-  extension [Self <: OffsetCommitRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OffsetCommitRequest] (val x: Self) extends AnyVal {
     
     inline def setMetadata(value: String): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     

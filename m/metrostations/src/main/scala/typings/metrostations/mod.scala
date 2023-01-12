@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[Line]
     }
     
-    extension [Self <: Line](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Line] (val x: Self) extends AnyVal {
       
       inline def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
       
@@ -78,7 +79,8 @@ object mod {
       __obj.asInstanceOf[MetroStations]
     }
     
-    extension [Self <: MetroStations](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MetroStations] (val x: Self) extends AnyVal {
       
       inline def setLines(value: js.Array[Line]): Self = StObject.set(x, "lines", value.asInstanceOf[js.Any])
       
@@ -124,7 +126,8 @@ object mod {
       __obj.asInstanceOf[Station]
     }
     
-    extension [Self <: Station](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Station] (val x: Self) extends AnyVal {
       
       inline def setGeo_lat(value: String): Self = StObject.set(x, "geo_lat", value.asInstanceOf[js.Any])
       

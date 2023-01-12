@@ -54,7 +54,8 @@ object PushNotifications {
       __obj.asInstanceOf[IPushNotificationChannel]
     }
     
-    extension [Self <: IPushNotificationChannel](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPushNotificationChannel] (val x: Self) extends AnyVal {
       
       inline def setClose(value: () => Unit): Self = StObject.set(x, "close", js.Any.fromFunction0(value))
       
@@ -103,7 +104,8 @@ object PushNotifications {
       __obj.asInstanceOf[IPushNotificationReceivedEventArgs]
     }
     
-    extension [Self <: IPushNotificationReceivedEventArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPushNotificationReceivedEventArgs] (val x: Self) extends AnyVal {
       
       inline def setBadgeNotification(value: BadgeNotification): Self = StObject.set(x, "badgeNotification", value.asInstanceOf[js.Any])
       
@@ -130,7 +132,8 @@ object PushNotifications {
       __obj.asInstanceOf[IRawNotification]
     }
     
-    extension [Self <: IRawNotification](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IRawNotification] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     }

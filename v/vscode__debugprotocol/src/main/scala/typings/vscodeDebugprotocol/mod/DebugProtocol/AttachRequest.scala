@@ -32,7 +32,8 @@ object AttachRequest {
     __obj.asInstanceOf[AttachRequest]
   }
   
-  extension [Self <: AttachRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttachRequest] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: AttachRequestArguments): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
   }

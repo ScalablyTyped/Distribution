@@ -18,7 +18,8 @@ object ClusterConfiguration {
     __obj.asInstanceOf[ClusterConfiguration]
   }
   
-  extension [Self <: ClusterConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClusterConfiguration] (val x: Self) extends AnyVal {
     
     inline def setExecuteCommandConfiguration(value: ExecuteCommandConfiguration): Self = StObject.set(x, "executeCommandConfiguration", value.asInstanceOf[js.Any])
     

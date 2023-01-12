@@ -40,7 +40,8 @@ object mod {
       __obj.asInstanceOf[IBrowseNodeLookupOptions]
     }
     
-    extension [Self <: IBrowseNodeLookupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IBrowseNodeLookupOptions] (val x: Self) extends AnyVal {
       
       inline def setBrowseNodeId(value: String): Self = StObject.set(x, "browseNodeId", value.asInstanceOf[js.Any])
       
@@ -67,7 +68,8 @@ object mod {
       __obj.asInstanceOf[ICredentials]
     }
     
-    extension [Self <: ICredentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICredentials] (val x: Self) extends AnyVal {
       
       inline def setAwsId(value: String): Self = StObject.set(x, "awsId", value.asInstanceOf[js.Any])
       
@@ -106,7 +108,8 @@ object mod {
       __obj.asInstanceOf[IItemLookupOptions]
     }
     
-    extension [Self <: IItemLookupOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemLookupOptions] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       
@@ -173,7 +176,8 @@ object mod {
       __obj.asInstanceOf[IItemSearchOptions]
     }
     
-    extension [Self <: IItemSearchOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IItemSearchOptions] (val x: Self) extends AnyVal {
       
       inline def setCondition(value: String): Self = StObject.set(x, "condition", value.asInstanceOf[js.Any])
       

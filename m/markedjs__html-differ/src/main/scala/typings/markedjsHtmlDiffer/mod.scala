@@ -37,7 +37,8 @@ object mod {
       __obj.asInstanceOf[ChangeObject]
     }
     
-    extension [Self <: ChangeObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ChangeObject] (val x: Self) extends AnyVal {
       
       inline def setAdded(value: Boolean): Self = StObject.set(x, "added", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object mod {
       __obj.asInstanceOf[CustomPreset]
     }
     
-    extension [Self <: CustomPreset](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CustomPreset] (val x: Self) extends AnyVal {
       
       inline def setPreset(value: Preset): Self = StObject.set(x, "preset", value.asInstanceOf[js.Any])
     }
@@ -120,7 +122,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setCompareAttributesAsJSON(value: js.Array[Any]): Self = StObject.set(x, "compareAttributesAsJSON", value.asInstanceOf[js.Any])
       

@@ -66,7 +66,8 @@ object distCjsFileUtilsMod {
       __obj.asInstanceOf[AppFile]
     }
     
-    extension [Self <: AppFile](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppFile] (val x: Self) extends AnyVal {
       
       inline def setRelativePath(value: String): Self = StObject.set(x, "relativePath", value.asInstanceOf[js.Any])
       

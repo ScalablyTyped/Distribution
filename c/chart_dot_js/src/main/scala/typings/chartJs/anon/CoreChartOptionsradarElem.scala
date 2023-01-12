@@ -237,7 +237,8 @@ object CoreChartOptionsradarElem {
     __obj.asInstanceOf[CoreChartOptionsradarElem]
   }
   
-  extension [Self <: CoreChartOptionsradarElem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreChartOptionsradarElem] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: `false` | AnimationSpecradaronProgr): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

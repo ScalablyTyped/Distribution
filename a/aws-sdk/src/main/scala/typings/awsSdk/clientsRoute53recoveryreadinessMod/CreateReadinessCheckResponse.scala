@@ -30,7 +30,8 @@ object CreateReadinessCheckResponse {
     __obj.asInstanceOf[CreateReadinessCheckResponse]
   }
   
-  extension [Self <: CreateReadinessCheckResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateReadinessCheckResponse] (val x: Self) extends AnyVal {
     
     inline def setReadinessCheckArn(value: stringMax256): Self = StObject.set(x, "ReadinessCheckArn", value.asInstanceOf[js.Any])
     

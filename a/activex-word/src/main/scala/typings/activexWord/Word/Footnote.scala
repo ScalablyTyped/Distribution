@@ -40,7 +40,8 @@ object Footnote {
     __obj.asInstanceOf[Footnote]
   }
   
-  extension [Self <: Footnote](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Footnote] (val x: Self) extends AnyVal {
     
     inline def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object JobSheetsInterface {
     __obj.asInstanceOf[JobSheetsInterface]
   }
   
-  extension [Self <: JobSheetsInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JobSheetsInterface] (val x: Self) extends AnyVal {
     
     inline def `setJob-sheets`(value: JobSheets): Self = StObject.set(x, "job-sheets", value.asInstanceOf[js.Any])
     

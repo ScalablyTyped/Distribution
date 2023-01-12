@@ -61,7 +61,8 @@ object libPageHeaderMod extends Shortcut {
       __obj.asInstanceOf[PageHeaderProps]
     }
     
-    extension [Self <: PageHeaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageHeaderProps] (val x: Self) extends AnyVal {
       
       inline def setAvatar(value: AvatarProps): Self = StObject.set(x, "avatar", value.asInstanceOf[js.Any])
       

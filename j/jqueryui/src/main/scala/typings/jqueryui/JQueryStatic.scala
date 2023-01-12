@@ -55,7 +55,8 @@ object JQueryStatic {
     __obj.asInstanceOf[JQueryStatic]
   }
   
-  extension [Self <: JQueryStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JQueryStatic] (val x: Self) extends AnyVal {
     
     inline def setDatepicker(value: Datepicker): Self = StObject.set(x, "datepicker", value.asInstanceOf[js.Any])
     

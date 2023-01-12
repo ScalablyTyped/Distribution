@@ -61,7 +61,8 @@ object OlkCheckBox {
     __obj.asInstanceOf[OlkCheckBox]
   }
   
-  extension [Self <: OlkCheckBox](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OlkCheckBox] (val x: Self) extends AnyVal {
     
     inline def setAccelerator(value: String): Self = StObject.set(x, "Accelerator", value.asInstanceOf[js.Any])
     

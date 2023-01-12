@@ -34,7 +34,8 @@ object mod {
       __obj.asInstanceOf[NodeHttpRequesterOptions]
     }
     
-    extension [Self <: NodeHttpRequesterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeHttpRequesterOptions] (val x: Self) extends AnyVal {
       
       inline def setAgent(value: Agent | typings.node.httpMod.Agent): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
       

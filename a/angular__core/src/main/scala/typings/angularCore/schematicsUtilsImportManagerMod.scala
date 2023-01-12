@@ -81,7 +81,8 @@ object schematicsUtilsImportManagerMod {
       __obj.asInstanceOf[ImportManagerUpdateRecorder]
     }
     
-    extension [Self <: ImportManagerUpdateRecorder](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImportManagerUpdateRecorder] (val x: Self) extends AnyVal {
       
       inline def setAddNewImport(value: (Double, String) => Unit): Self = StObject.set(x, "addNewImport", js.Any.fromFunction2(value))
       

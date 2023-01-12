@@ -23,7 +23,8 @@ object IColumnOptions {
     __obj.asInstanceOf[IColumnOptions]
   }
   
-  extension [Self <: IColumnOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IColumnOptions] (val x: Self) extends AnyVal {
     
     inline def setIdentity(value: Boolean): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
     

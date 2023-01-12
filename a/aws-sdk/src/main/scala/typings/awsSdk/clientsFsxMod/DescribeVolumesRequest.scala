@@ -27,7 +27,8 @@ object DescribeVolumesRequest {
     __obj.asInstanceOf[DescribeVolumesRequest]
   }
   
-  extension [Self <: DescribeVolumesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeVolumesRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: VolumeFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

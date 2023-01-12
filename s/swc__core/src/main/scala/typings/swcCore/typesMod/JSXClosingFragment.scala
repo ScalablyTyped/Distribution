@@ -20,7 +20,8 @@ object JSXClosingFragment {
     __obj.asInstanceOf[JSXClosingFragment]
   }
   
-  extension [Self <: JSXClosingFragment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JSXClosingFragment] (val x: Self) extends AnyVal {
     
     inline def setType(value: typings.swcCore.swcCoreStrings.JSXClosingFragment): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

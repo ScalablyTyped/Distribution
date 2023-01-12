@@ -69,7 +69,8 @@ object InputBoxProperties {
     __obj.asInstanceOf[InputBoxProperties]
   }
   
-  extension [Self <: InputBoxProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InputBoxProperties] (val x: Self) extends AnyVal {
     
     inline def setAriaLive(value: String): Self = StObject.set(x, "ariaLive", value.asInstanceOf[js.Any])
     

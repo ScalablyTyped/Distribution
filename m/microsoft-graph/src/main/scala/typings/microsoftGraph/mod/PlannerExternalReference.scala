@@ -31,7 +31,8 @@ object PlannerExternalReference {
     __obj.asInstanceOf[PlannerExternalReference]
   }
   
-  extension [Self <: PlannerExternalReference](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlannerExternalReference] (val x: Self) extends AnyVal {
     
     inline def setAlias(value: NullableOption[String]): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
     

@@ -60,7 +60,8 @@ object InsertionOrderIdKey {
     __obj.asInstanceOf[InsertionOrderIdKey]
   }
   
-  extension [Self <: InsertionOrderIdKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InsertionOrderIdKey] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

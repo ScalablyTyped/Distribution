@@ -18,7 +18,8 @@ object GetEbsDefaultKmsKeyIdRequest {
     __obj.asInstanceOf[GetEbsDefaultKmsKeyIdRequest]
   }
   
-  extension [Self <: GetEbsDefaultKmsKeyIdRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetEbsDefaultKmsKeyIdRequest] (val x: Self) extends AnyVal {
     
     inline def setDryRun(value: Boolean): Self = StObject.set(x, "DryRun", value.asInstanceOf[js.Any])
     

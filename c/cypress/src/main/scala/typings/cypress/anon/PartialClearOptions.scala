@@ -29,7 +29,8 @@ object PartialClearOptions {
     __obj.asInstanceOf[PartialClearOptions]
   }
   
-  extension [Self <: PartialClearOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClearOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimationDistanceThreshold(value: Double): Self = StObject.set(x, "animationDistanceThreshold", value.asInstanceOf[js.Any])
     

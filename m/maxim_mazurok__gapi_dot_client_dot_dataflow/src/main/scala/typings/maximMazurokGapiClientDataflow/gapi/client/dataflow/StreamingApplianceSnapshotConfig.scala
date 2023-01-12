@@ -19,7 +19,8 @@ object StreamingApplianceSnapshotConfig {
     __obj.asInstanceOf[StreamingApplianceSnapshotConfig]
   }
   
-  extension [Self <: StreamingApplianceSnapshotConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StreamingApplianceSnapshotConfig] (val x: Self) extends AnyVal {
     
     inline def setImportStateEndpoint(value: String): Self = StObject.set(x, "importStateEndpoint", value.asInstanceOf[js.Any])
     

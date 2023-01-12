@@ -27,7 +27,8 @@ object NamingSystemContact {
     __obj.asInstanceOf[NamingSystemContact]
   }
   
-  extension [Self <: NamingSystemContact](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NamingSystemContact] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object ColumnSpec {
     __obj.asInstanceOf[ColumnSpec]
   }
   
-  extension [Self <: ColumnSpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSpec] (val x: Self) extends AnyVal {
     
     inline def setCalc(value: (/* data */ DataTable, /* row */ Double) => Any): Self = StObject.set(x, "calc", js.Any.fromFunction2(value))
     

@@ -26,7 +26,8 @@ object libThemeProviderMod {
       __obj.asInstanceOf[IThemeProviderProps]
     }
     
-    extension [Self <: IThemeProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IThemeProviderProps] (val x: Self) extends AnyVal {
       
       inline def setScheme(value: ISchemeNames): Self = StObject.set(x, "scheme", value.asInstanceOf[js.Any])
       

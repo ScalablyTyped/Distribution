@@ -1158,7 +1158,8 @@ object mod {
       __obj.asInstanceOf[Range]
     }
     
-    extension [Self <: Range](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Range] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -1210,7 +1211,8 @@ object mod {
       __obj.asInstanceOf[Result]
     }
     
-    extension [Self <: Result](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Result] (val x: Self) extends AnyVal {
       
       inline def setDetails(value: js.Array[ResultDetails]): Self = StObject.set(x, "details", value.asInstanceOf[js.Any])
       
@@ -1264,7 +1266,8 @@ object mod {
       __obj.asInstanceOf[ResultDetails]
     }
     
-    extension [Self <: ResultDetails](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultDetails] (val x: Self) extends AnyVal {
       
       inline def setEnd(value: Double): Self = StObject.set(x, "end", value.asInstanceOf[js.Any])
       
@@ -1352,7 +1355,8 @@ object mod {
       __obj.asInstanceOf[ResultFields]
     }
     
-    extension [Self <: ResultFields](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResultFields] (val x: Self) extends AnyVal {
       
       inline def setAdministrativeCode(value: String): Self = StObject.set(x, "administrativeCode", value.asInstanceOf[js.Any])
       

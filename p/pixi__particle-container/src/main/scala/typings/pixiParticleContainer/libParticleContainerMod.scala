@@ -152,7 +152,8 @@ object libParticleContainerMod {
       __obj.asInstanceOf[IParticleProperties]
     }
     
-    extension [Self <: IParticleProperties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IParticleProperties] (val x: Self) extends AnyVal {
       
       inline def setAlpha(value: Boolean): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
       

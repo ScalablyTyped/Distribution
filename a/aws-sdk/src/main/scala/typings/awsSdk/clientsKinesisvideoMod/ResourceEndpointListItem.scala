@@ -23,7 +23,8 @@ object ResourceEndpointListItem {
     __obj.asInstanceOf[ResourceEndpointListItem]
   }
   
-  extension [Self <: ResourceEndpointListItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResourceEndpointListItem] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: ChannelProtocol): Self = StObject.set(x, "Protocol", value.asInstanceOf[js.Any])
     

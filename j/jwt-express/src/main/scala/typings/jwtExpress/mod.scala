@@ -301,7 +301,8 @@ object mod {
       __obj.asInstanceOf[JWT]
     }
     
-    extension [Self <: JWT](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWT] (val x: Self) extends AnyVal {
       
       inline def setExpired(value: Boolean): Self = StObject.set(x, "expired", value.asInstanceOf[js.Any])
       
@@ -401,7 +402,8 @@ object mod {
       __obj.asInstanceOf[JWTExpressOptions]
     }
     
-    extension [Self <: JWTExpressOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTExpressOptions] (val x: Self) extends AnyVal {
       
       inline def setCookie(value: String): Self = StObject.set(x, "cookie", value.asInstanceOf[js.Any])
       
@@ -460,7 +462,8 @@ object mod {
           __obj.asInstanceOf[Request]
         }
         
-        extension [Self <: Request](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Request] (val x: Self) extends AnyVal {
           
           inline def setJwt(value: JWT): Self = StObject.set(x, "jwt", value.asInstanceOf[js.Any])
         }
@@ -484,7 +487,8 @@ object mod {
           __obj.asInstanceOf[Response]
         }
         
-        extension [Self <: Response](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
           
           inline def setJwt(value: Any => JWT): Self = StObject.set(x, "jwt", js.Any.fromFunction1(value))
         }

@@ -16,7 +16,8 @@ object RelayRelayRefetchProp {
     __obj.asInstanceOf[RelayRelayRefetchProp]
   }
   
-  extension [Self <: RelayRelayRefetchProp](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RelayRelayRefetchProp] (val x: Self) extends AnyVal {
     
     inline def setRelay(value: RelayRefetchProp): Self = StObject.set(x, "relay", value.asInstanceOf[js.Any])
   }

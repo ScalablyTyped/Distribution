@@ -20,7 +20,8 @@ object ModelExplainabilityBaselineConfig {
     __obj.asInstanceOf[ModelExplainabilityBaselineConfig]
   }
   
-  extension [Self <: ModelExplainabilityBaselineConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ModelExplainabilityBaselineConfig] (val x: Self) extends AnyVal {
     
     inline def setBaseliningJobName(value: ProcessingJobName): Self = StObject.set(x, "BaseliningJobName", value.asInstanceOf[js.Any])
     

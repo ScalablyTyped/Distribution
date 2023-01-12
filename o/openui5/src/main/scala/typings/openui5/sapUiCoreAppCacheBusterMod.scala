@@ -72,7 +72,8 @@ object sapUiCoreAppCacheBusterMod extends Shortcut {
       __obj.asInstanceOf[AppCacheBuster]
     }
     
-    extension [Self <: AppCacheBuster](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppCacheBuster] (val x: Self) extends AnyVal {
       
       inline def setConvertURL(value: String => String): Self = StObject.set(x, "convertURL", js.Any.fromFunction1(value))
       

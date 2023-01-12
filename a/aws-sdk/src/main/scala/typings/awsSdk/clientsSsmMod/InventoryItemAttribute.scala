@@ -23,7 +23,8 @@ object InventoryItemAttribute {
     __obj.asInstanceOf[InventoryItemAttribute]
   }
   
-  extension [Self <: InventoryItemAttribute](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InventoryItemAttribute] (val x: Self) extends AnyVal {
     
     inline def setDataType(value: InventoryAttributeDataType): Self = StObject.set(x, "DataType", value.asInstanceOf[js.Any])
     

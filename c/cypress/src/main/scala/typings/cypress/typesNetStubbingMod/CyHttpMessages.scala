@@ -29,7 +29,8 @@ object CyHttpMessages {
       __obj.asInstanceOf[BaseMessage]
     }
     
-    extension [Self <: BaseMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseMessage] (val x: Self) extends AnyVal {
       
       inline def setBody(value: Any): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       
@@ -215,7 +216,8 @@ object CyHttpMessages {
       __obj.asInstanceOf[IncomingRequest]
     }
     
-    extension [Self <: IncomingRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingRequest] (val x: Self) extends AnyVal {
       
       inline def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
       
@@ -275,7 +277,8 @@ object CyHttpMessages {
       __obj.asInstanceOf[IncomingResponse]
     }
     
-    extension [Self <: IncomingResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IncomingResponse] (val x: Self) extends AnyVal {
       
       inline def setDelay(value: Double): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
       
@@ -302,7 +305,8 @@ object CyHttpMessages {
       __obj.asInstanceOf[NetworkError]
     }
     
-    extension [Self <: NetworkError](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NetworkError] (val x: Self) extends AnyVal {
       
       inline def setError(value: Any): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
     }
@@ -321,7 +325,8 @@ object CyHttpMessages {
       __obj.asInstanceOf[ResponseComplete]
     }
     
-    extension [Self <: ResponseComplete](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ResponseComplete] (val x: Self) extends AnyVal {
       
       inline def setFinalResBody(
         value: /* import warning: importer.ImportType#apply Failed type conversion: cypress.cypress/types/net-stubbing.CyHttpMessages.BaseMessage['body'] */ js.Any

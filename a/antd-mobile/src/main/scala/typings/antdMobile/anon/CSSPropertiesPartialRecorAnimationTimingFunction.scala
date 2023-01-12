@@ -9971,7 +9971,8 @@ object CSSPropertiesPartialRecorAnimationTimingFunction {
     __obj.asInstanceOf[CSSPropertiesPartialRecorAnimationTimingFunction]
   }
   
-  extension [Self <: CSSPropertiesPartialRecorAnimationTimingFunction](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CSSPropertiesPartialRecorAnimationTimingFunction] (val x: Self) extends AnyVal {
     
     inline def `set--cell-size`(value: String): Self = StObject.set(x, "--cell-size", value.asInstanceOf[js.Any])
     

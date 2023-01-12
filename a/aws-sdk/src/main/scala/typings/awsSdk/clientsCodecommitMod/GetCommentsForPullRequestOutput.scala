@@ -23,7 +23,8 @@ object GetCommentsForPullRequestOutput {
     __obj.asInstanceOf[GetCommentsForPullRequestOutput]
   }
   
-  extension [Self <: GetCommentsForPullRequestOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCommentsForPullRequestOutput] (val x: Self) extends AnyVal {
     
     inline def setCommentsForPullRequestData(value: CommentsForPullRequestData): Self = StObject.set(x, "commentsForPullRequestData", value.asInstanceOf[js.Any])
     

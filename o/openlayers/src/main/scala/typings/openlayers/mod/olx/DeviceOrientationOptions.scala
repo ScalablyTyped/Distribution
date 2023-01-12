@@ -15,7 +15,8 @@ object DeviceOrientationOptions {
     __obj.asInstanceOf[DeviceOrientationOptions]
   }
   
-  extension [Self <: DeviceOrientationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceOrientationOptions] (val x: Self) extends AnyVal {
     
     inline def setTracking(value: Boolean): Self = StObject.set(x, "tracking", value.asInstanceOf[js.Any])
     

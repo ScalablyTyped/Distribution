@@ -136,7 +136,8 @@ object XAccessibleMultiLineText {
     __obj.asInstanceOf[XAccessibleMultiLineText]
   }
   
-  extension [Self <: XAccessibleMultiLineText](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XAccessibleMultiLineText] (val x: Self) extends AnyVal {
     
     inline def setGetLineNumberAtIndex(value: Double => Double): Self = StObject.set(x, "getLineNumberAtIndex", js.Any.fromFunction1(value))
     

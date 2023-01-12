@@ -29,7 +29,8 @@ object typesExceptionMod {
       __obj.asInstanceOf[Exception]
     }
     
-    extension [Self <: Exception](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Exception] (val x: Self) extends AnyVal {
       
       inline def setMechanism(value: Mechanism): Self = StObject.set(x, "mechanism", value.asInstanceOf[js.Any])
       

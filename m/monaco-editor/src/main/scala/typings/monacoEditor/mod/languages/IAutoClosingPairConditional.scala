@@ -17,7 +17,8 @@ object IAutoClosingPairConditional {
     __obj.asInstanceOf[IAutoClosingPairConditional]
   }
   
-  extension [Self <: IAutoClosingPairConditional](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IAutoClosingPairConditional] (val x: Self) extends AnyVal {
     
     inline def setNotIn(value: js.Array[String]): Self = StObject.set(x, "notIn", value.asInstanceOf[js.Any])
     

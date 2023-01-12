@@ -20,7 +20,8 @@ object ConnectOpts {
     __obj.asInstanceOf[ConnectOpts]
   }
   
-  extension [Self <: ConnectOpts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConnectOpts] (val x: Self) extends AnyVal {
     
     inline def setOnread(value: OnReadOpts): Self = StObject.set(x, "onread", value.asInstanceOf[js.Any])
     

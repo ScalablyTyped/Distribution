@@ -22,7 +22,8 @@ object HttpArchiveRequest {
     __obj.asInstanceOf[HttpArchiveRequest]
   }
   
-  extension [Self <: HttpArchiveRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HttpArchiveRequest] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Array[NameValuePair]): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

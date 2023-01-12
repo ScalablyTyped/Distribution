@@ -109,7 +109,8 @@ object counterConfig {
     __obj.asInstanceOf[counterConfig]
   }
   
-  extension [Self <: counterConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: counterConfig] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: String): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
     

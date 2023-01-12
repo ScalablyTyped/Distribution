@@ -31,7 +31,8 @@ object mod {
       __obj.asInstanceOf[OptionsObject]
     }
     
-    extension [Self <: OptionsObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OptionsObject] (val x: Self) extends AnyVal {
       
       inline def setChars(value: String): Self = StObject.set(x, "chars", value.asInstanceOf[js.Any])
       

@@ -370,7 +370,8 @@ object IDetailsListProps {
     __obj.asInstanceOf[IDetailsListProps]
   }
   
-  extension [Self <: IDetailsListProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDetailsListProps] (val x: Self) extends AnyVal {
     
     inline def setAriaLabel(value: String): Self = StObject.set(x, "ariaLabel", value.asInstanceOf[js.Any])
     

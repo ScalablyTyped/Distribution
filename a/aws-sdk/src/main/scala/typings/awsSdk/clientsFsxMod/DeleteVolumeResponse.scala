@@ -28,7 +28,8 @@ object DeleteVolumeResponse {
     __obj.asInstanceOf[DeleteVolumeResponse]
   }
   
-  extension [Self <: DeleteVolumeResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVolumeResponse] (val x: Self) extends AnyVal {
     
     inline def setLifecycle(value: VolumeLifecycle): Self = StObject.set(x, "Lifecycle", value.asInstanceOf[js.Any])
     

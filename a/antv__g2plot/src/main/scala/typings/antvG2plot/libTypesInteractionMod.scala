@@ -63,7 +63,8 @@ object libTypesInteractionMod {
       __obj.asInstanceOf[BrushCfg]
     }
     
-    extension [Self <: BrushCfg](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BrushCfg] (val x: Self) extends AnyVal {
       
       inline def setAction(value: filter | highlight): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
@@ -108,7 +109,8 @@ object libTypesInteractionMod {
       __obj.asInstanceOf[Interaction]
     }
     
-    extension [Self <: Interaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
       
       inline def setCfg(value: Record[String, Any]): Self = StObject.set(x, "cfg", value.asInstanceOf[js.Any])
       

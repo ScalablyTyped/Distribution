@@ -66,7 +66,8 @@ object MessageDetails {
     __obj.asInstanceOf[MessageDetails]
   }
   
-  extension [Self <: MessageDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MessageDetails] (val x: Self) extends AnyVal {
     
     inline def setLevel(value: Double): Self = StObject.set(x, "level", value.asInstanceOf[js.Any])
     

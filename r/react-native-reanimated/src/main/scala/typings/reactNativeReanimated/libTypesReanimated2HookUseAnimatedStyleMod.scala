@@ -45,7 +45,8 @@ object libTypesReanimated2HookUseAnimatedStyleMod {
       __obj.asInstanceOf[AnimatedStyleResult]
     }
     
-    extension [Self <: AnimatedStyleResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnimatedStyleResult] (val x: Self) extends AnyVal {
       
       inline def setAnimatedStyle(value: MutableRefObject[AnimatedStyle]): Self = StObject.set(x, "animatedStyle", value.asInstanceOf[js.Any])
       

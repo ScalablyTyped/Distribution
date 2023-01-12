@@ -20,7 +20,8 @@ object StartIndex {
     __obj.asInstanceOf[StartIndex]
   }
   
-  extension [Self <: StartIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartIndex] (val x: Self) extends AnyVal {
     
     inline def setSilent(value: Boolean): Self = StObject.set(x, "silent", value.asInstanceOf[js.Any])
     

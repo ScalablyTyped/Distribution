@@ -38,7 +38,8 @@ object Adaptor {
     __obj.asInstanceOf[Adaptor]
   }
   
-  extension [Self <: Adaptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Adaptor] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: (Any, String, Ractive[/* ractive.ractive.Ractive<any> */ Any]) => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction3(value))
     

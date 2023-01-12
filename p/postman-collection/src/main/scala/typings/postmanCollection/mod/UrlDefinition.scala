@@ -32,7 +32,8 @@ object UrlDefinition {
     __obj.asInstanceOf[UrlDefinition]
   }
   
-  extension [Self <: UrlDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UrlDefinition] (val x: Self) extends AnyVal {
     
     inline def setAuth(value: Password): Self = StObject.set(x, "auth", value.asInstanceOf[js.Any])
     

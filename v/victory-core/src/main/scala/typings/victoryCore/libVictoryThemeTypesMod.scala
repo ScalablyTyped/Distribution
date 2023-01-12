@@ -40,7 +40,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[BlockProps]
     }
     
-    extension [Self <: BlockProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BlockProps] (val x: Self) extends AnyVal {
       
       inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
       
@@ -75,7 +76,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[LabelProps]
     }
     
-    extension [Self <: LabelProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LabelProps] (val x: Self) extends AnyVal {
       
       inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
       
@@ -120,7 +122,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[TickProps]
     }
     
-    extension [Self <: TickProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TickProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       
@@ -180,7 +183,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryAxisCommonProps]
     }
     
-    extension [Self <: VictoryAxisCommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryAxisCommonProps] (val x: Self) extends AnyVal {
       
       inline def setAxisComponent(value: ReactElement): Self = StObject.set(x, "axisComponent", value.asInstanceOf[js.Any])
       
@@ -1836,7 +1840,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryLabelStyleObject]
     }
     
-    extension [Self <: VictoryLabelStyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryLabelStyleObject] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -6603,7 +6608,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryStyleInterface]
     }
     
-    extension [Self <: VictoryStyleInterface](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryStyleInterface] (val x: Self) extends AnyVal {
       
       inline def setBorder(value: VictoryStyleObject): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
       
@@ -8213,7 +8219,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryStyleObject]
     }
     
-    extension [Self <: VictoryStyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryStyleObject] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       
@@ -13002,7 +13009,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryThemeDefinition]
     }
     
-    extension [Self <: VictoryThemeDefinition](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryThemeDefinition] (val x: Self) extends AnyVal {
       
       inline def setArea(value: styledataVictoryStyleObje): Self = StObject.set(x, "area", value.asInstanceOf[js.Any])
       
@@ -14680,7 +14688,8 @@ object libVictoryThemeTypesMod {
       __obj.asInstanceOf[VictoryTickStyleObject]
     }
     
-    extension [Self <: VictoryTickStyleObject](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VictoryTickStyleObject] (val x: Self) extends AnyVal {
       
       inline def setAccentColor(value: StringOrNumberOrCallback): Self = StObject.set(x, "accentColor", value.asInstanceOf[js.Any])
       

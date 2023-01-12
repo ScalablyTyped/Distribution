@@ -19,7 +19,8 @@ object EnvironmentConfig {
     __obj.asInstanceOf[EnvironmentConfig]
   }
   
-  extension [Self <: EnvironmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnvironmentConfig] (val x: Self) extends AnyVal {
     
     inline def setExecutionConfig(value: ExecutionConfig): Self = StObject.set(x, "executionConfig", value.asInstanceOf[js.Any])
     

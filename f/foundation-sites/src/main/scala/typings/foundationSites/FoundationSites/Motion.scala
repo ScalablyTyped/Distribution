@@ -20,7 +20,8 @@ object Motion {
     __obj.asInstanceOf[Motion]
   }
   
-  extension [Self <: Motion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Motion] (val x: Self) extends AnyVal {
     
     inline def setAnimateIn(value: (js.Object, Any, js.Function) => Unit): Self = StObject.set(x, "animateIn", js.Any.fromFunction3(value))
     

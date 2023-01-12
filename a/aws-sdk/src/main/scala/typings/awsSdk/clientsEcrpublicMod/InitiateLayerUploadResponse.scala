@@ -23,7 +23,8 @@ object InitiateLayerUploadResponse {
     __obj.asInstanceOf[InitiateLayerUploadResponse]
   }
   
-  extension [Self <: InitiateLayerUploadResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InitiateLayerUploadResponse] (val x: Self) extends AnyVal {
     
     inline def setPartSize(value: PartSize): Self = StObject.set(x, "partSize", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object GyroAnalogOption {
     __obj.asInstanceOf[GyroAnalogOption]
   }
   
-  extension [Self <: GyroAnalogOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GyroAnalogOption] (val x: Self) extends AnyVal {
     
     inline def setPins(value: js.Array[String]): Self = StObject.set(x, "pins", value.asInstanceOf[js.Any])
     

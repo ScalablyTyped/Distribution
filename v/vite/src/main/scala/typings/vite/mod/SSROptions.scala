@@ -44,7 +44,8 @@ object SSROptions {
     __obj.asInstanceOf[SSROptions]
   }
   
-  extension [Self <: SSROptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SSROptions] (val x: Self) extends AnyVal {
     
     inline def setExternal(value: js.Array[String]): Self = StObject.set(x, "external", value.asInstanceOf[js.Any])
     

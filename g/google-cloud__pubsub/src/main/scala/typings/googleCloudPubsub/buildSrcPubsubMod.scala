@@ -763,7 +763,8 @@ object buildSrcPubsubMod {
       __obj.asInstanceOf[ClientConfig]
     }
     
-    extension [Self <: ClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClientConfig] (val x: Self) extends AnyVal {
       
       inline def setApiEndpoint(value: String): Self = StObject.set(x, "apiEndpoint", value.asInstanceOf[js.Any])
       
@@ -823,7 +824,8 @@ object buildSrcPubsubMod {
       __obj.asInstanceOf[GetClientConfig]
     }
     
-    extension [Self <: GetClientConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetClientConfig] (val x: Self) extends AnyVal {
       
       inline def setClient(value: PublisherClient | SubscriberClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     }
@@ -854,7 +856,8 @@ object buildSrcPubsubMod {
       __obj.asInstanceOf[GetSubscriptionsOptions]
     }
     
-    extension [Self <: GetSubscriptionsOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetSubscriptionsOptions] (val x: Self) extends AnyVal {
       
       inline def setTopic(value: String | Topic): Self = StObject.set(x, "topic", value.asInstanceOf[js.Any])
       
@@ -917,7 +920,8 @@ object buildSrcPubsubMod {
       __obj.asInstanceOf[PageOptions]
     }
     
-    extension [Self <: PageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PageOptions] (val x: Self) extends AnyVal {
       
       inline def setAutoPaginate(value: Boolean): Self = StObject.set(x, "autoPaginate", value.asInstanceOf[js.Any])
       
@@ -973,7 +977,8 @@ object buildSrcPubsubMod {
       __obj.asInstanceOf[RequestConfig]
     }
     
-    extension [Self <: RequestConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RequestConfig] (val x: Self) extends AnyVal {
       
       inline def setGaxOpts(value: CallOptions): Self = StObject.set(x, "gaxOpts", value.asInstanceOf[js.Any])
       

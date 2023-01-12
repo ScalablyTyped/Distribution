@@ -18,7 +18,8 @@ object DeleteGameSessionQueueInput {
     __obj.asInstanceOf[DeleteGameSessionQueueInput]
   }
   
-  extension [Self <: DeleteGameSessionQueueInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGameSessionQueueInput] (val x: Self) extends AnyVal {
     
     inline def setName(value: GameSessionQueueNameOrArn): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

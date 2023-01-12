@@ -31,7 +31,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[VueTheMaskPlugin]
     }
     
-    extension [Self <: VueTheMaskPlugin](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VueTheMaskPlugin] (val x: Self) extends AnyVal {
       
       inline def setMask(
         value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DirectiveFunction */ Any

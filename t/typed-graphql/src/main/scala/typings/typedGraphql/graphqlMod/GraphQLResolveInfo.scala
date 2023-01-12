@@ -42,7 +42,8 @@ object GraphQLResolveInfo {
     __obj.asInstanceOf[GraphQLResolveInfo]
   }
   
-  extension [Self <: GraphQLResolveInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GraphQLResolveInfo] (val x: Self) extends AnyVal {
     
     inline def setFieldASTs(value: js.Array[Field]): Self = StObject.set(x, "fieldASTs", value.asInstanceOf[js.Any])
     

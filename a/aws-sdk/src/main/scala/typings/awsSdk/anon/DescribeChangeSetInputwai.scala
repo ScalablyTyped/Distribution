@@ -36,7 +36,8 @@ object DescribeChangeSetInputwai {
     __obj.asInstanceOf[DescribeChangeSetInputwai]
   }
   
-  extension [Self <: DescribeChangeSetInputwai](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeChangeSetInputwai] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

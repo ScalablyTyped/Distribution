@@ -16,7 +16,8 @@ object TypeofDropTarget {
     __obj.asInstanceOf[TypeofDropTarget]
   }
   
-  extension [Self <: TypeofDropTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeofDropTarget] (val x: Self) extends AnyVal {
     
     inline def setDestroyGroup(value: String => Unit): Self = StObject.set(x, "destroyGroup", js.Any.fromFunction1(value))
   }

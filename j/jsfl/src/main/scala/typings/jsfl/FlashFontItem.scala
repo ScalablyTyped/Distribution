@@ -50,7 +50,8 @@ object FlashFontItem {
     __obj.asInstanceOf[FlashFontItem]
   }
   
-  extension [Self <: FlashFontItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashFontItem] (val x: Self) extends AnyVal {
     
     inline def setBitmap(value: Boolean): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
     

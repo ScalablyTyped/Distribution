@@ -28,7 +28,8 @@ object CreateAssetModelResponse {
     __obj.asInstanceOf[CreateAssetModelResponse]
   }
   
-  extension [Self <: CreateAssetModelResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAssetModelResponse] (val x: Self) extends AnyVal {
     
     inline def setAssetModelArn(value: ARN): Self = StObject.set(x, "assetModelArn", value.asInstanceOf[js.Any])
     

@@ -25,7 +25,8 @@ object PartialStyleRulesPopoverC {
     __obj.asInstanceOf[PartialStyleRulesPopoverC]
   }
   
-  extension [Self <: PartialStyleRulesPopoverC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialStyleRulesPopoverC] (val x: Self) extends AnyVal {
     
     inline def setPaper(
       value: CSSProperties | CreateCSSProperties[js.Object] | (PropsFunc[js.Object, CreateCSSProperties[js.Object]])

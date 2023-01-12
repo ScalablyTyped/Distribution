@@ -38,7 +38,8 @@ object WindowedMean {
     __obj.asInstanceOf[WindowedMean]
   }
   
-  extension [Self <: WindowedMean](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WindowedMean] (val x: Self) extends AnyVal {
     
     inline def setAddValue(value: Double => Unit): Self = StObject.set(x, "addValue", js.Any.fromFunction1(value))
     

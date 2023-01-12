@@ -17,7 +17,8 @@ object NavigationBarOptions {
     __obj.asInstanceOf[NavigationBarOptions]
   }
   
-  extension [Self <: NavigationBarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NavigationBarOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

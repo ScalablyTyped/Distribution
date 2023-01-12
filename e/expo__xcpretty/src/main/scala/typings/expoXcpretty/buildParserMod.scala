@@ -85,7 +85,8 @@ object buildParserMod {
       __obj.asInstanceOf[Failure]
     }
     
-    extension [Self <: Failure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Failure] (val x: Self) extends AnyVal {
       
       inline def setFilePath(value: String): Self = StObject.set(x, "filePath", value.asInstanceOf[js.Any])
       
@@ -114,7 +115,8 @@ object buildParserMod {
       __obj.asInstanceOf[LinkerFailure]
     }
     
-    extension [Self <: LinkerFailure](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LinkerFailure] (val x: Self) extends AnyVal {
       
       inline def setFiles(value: js.Array[String]): Self = StObject.set(x, "files", value.asInstanceOf[js.Any])
       
@@ -157,7 +159,8 @@ object buildParserMod {
       __obj.asInstanceOf[TestIssue]
     }
     
-    extension [Self <: TestIssue](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TestIssue] (val x: Self) extends AnyVal {
       
       inline def setCursor(value: String): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object DeleteVirtualNodeOutput {
     __obj.asInstanceOf[DeleteVirtualNodeOutput]
   }
   
-  extension [Self <: DeleteVirtualNodeOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteVirtualNodeOutput] (val x: Self) extends AnyVal {
     
     inline def setVirtualNode(value: VirtualNodeData): Self = StObject.set(x, "virtualNode", value.asInstanceOf[js.Any])
   }

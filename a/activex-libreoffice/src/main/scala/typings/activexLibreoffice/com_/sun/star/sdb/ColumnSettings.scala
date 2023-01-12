@@ -85,7 +85,8 @@ object ColumnSettings {
     __obj.asInstanceOf[ColumnSettings]
   }
   
-  extension [Self <: ColumnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ColumnSettings] (val x: Self) extends AnyVal {
     
     inline def setAlign(value: Double): Self = StObject.set(x, "Align", value.asInstanceOf[js.Any])
     

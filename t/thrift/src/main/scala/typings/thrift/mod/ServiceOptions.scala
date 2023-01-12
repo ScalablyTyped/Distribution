@@ -22,7 +22,8 @@ object ServiceOptions {
     __obj.asInstanceOf[ServiceOptions[TProcessor, THandler]]
   }
   
-  extension [Self <: ServiceOptions[?, ?], TProcessor, THandler](x: Self & (ServiceOptions[TProcessor, THandler])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ServiceOptions[?, ?], TProcessor, THandler] (val x: Self & (ServiceOptions[TProcessor, THandler])) extends AnyVal {
     
     inline def setHandler(value: THandler): Self = StObject.set(x, "handler", value.asInstanceOf[js.Any])
     

@@ -87,7 +87,8 @@ object CatMlDatafeedsDatafeedsRecord {
     __obj.asInstanceOf[CatMlDatafeedsDatafeedsRecord]
   }
   
-  extension [Self <: CatMlDatafeedsDatafeedsRecord](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CatMlDatafeedsDatafeedsRecord] (val x: Self) extends AnyVal {
     
     inline def setAe(value: String): Self = StObject.set(x, "ae", value.asInstanceOf[js.Any])
     

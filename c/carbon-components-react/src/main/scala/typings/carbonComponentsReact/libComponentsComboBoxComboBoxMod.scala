@@ -594,7 +594,8 @@ object libComponentsComboBoxComboBoxMod {
       __obj.asInstanceOf[ComboBoxProps[ItemType, CustomElementProps]]
     }
     
-    extension [Self <: ComboBoxProps[?, ?], ItemType, CustomElementProps](x: Self & (ComboBoxProps[ItemType, CustomElementProps])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ComboBoxProps[?, ?], ItemType, CustomElementProps] (val x: Self & (ComboBoxProps[ItemType, CustomElementProps])) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

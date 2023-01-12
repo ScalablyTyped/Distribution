@@ -26,7 +26,8 @@ object libComponentsScrollOffsetListenerMod {
       __obj.asInstanceOf[Props]
     }
     
-    extension [Self <: Props](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Props] (val x: Self) extends AnyVal {
       
       inline def setOnScrollOffsetChange(value: js.Array[Double] => Unit): Self = StObject.set(x, "onScrollOffsetChange", js.Any.fromFunction1(value))
       

@@ -17,7 +17,8 @@ object MlDataframeAnalyticsStatsProgress {
     __obj.asInstanceOf[MlDataframeAnalyticsStatsProgress]
   }
   
-  extension [Self <: MlDataframeAnalyticsStatsProgress](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MlDataframeAnalyticsStatsProgress] (val x: Self) extends AnyVal {
     
     inline def setPhase(value: String): Self = StObject.set(x, "phase", value.asInstanceOf[js.Any])
     

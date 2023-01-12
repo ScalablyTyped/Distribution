@@ -31,7 +31,8 @@ object XRangeSelectionChangeListener {
     __obj.asInstanceOf[XRangeSelectionChangeListener]
   }
   
-  extension [Self <: XRangeSelectionChangeListener](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRangeSelectionChangeListener] (val x: Self) extends AnyVal {
     
     inline def setDescriptorChanged(value: RangeSelectionEvent => Unit): Self = StObject.set(x, "descriptorChanged", js.Any.fromFunction1(value))
   }

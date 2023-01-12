@@ -19,7 +19,8 @@ object DeliverInfo {
     __obj.asInstanceOf[DeliverInfo]
   }
   
-  extension [Self <: DeliverInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeliverInfo] (val x: Self) extends AnyVal {
     
     inline def setResourceUri(value: String): Self = StObject.set(x, "resourceUri", value.asInstanceOf[js.Any])
     

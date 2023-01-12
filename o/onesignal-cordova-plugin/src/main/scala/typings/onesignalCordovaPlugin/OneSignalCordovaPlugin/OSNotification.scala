@@ -151,7 +151,8 @@ object OSNotification {
     __obj.asInstanceOf[OSNotification]
   }
   
-  extension [Self <: OSNotification](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSNotification] (val x: Self) extends AnyVal {
     
     inline def setAdm_big_picture(value: String): Self = StObject.set(x, "adm_big_picture", value.asInstanceOf[js.Any])
     

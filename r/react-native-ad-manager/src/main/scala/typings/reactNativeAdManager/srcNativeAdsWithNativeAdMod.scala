@@ -37,7 +37,8 @@ object srcNativeAdsWithNativeAdMod {
       __obj.asInstanceOf[NativeAdWrapperProps]
     }
     
-    extension [Self <: NativeAdWrapperProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NativeAdWrapperProps] (val x: Self) extends AnyVal {
       
       inline def setAdLoaderIndex(value: String): Self = StObject.set(x, "adLoaderIndex", value.asInstanceOf[js.Any])
       

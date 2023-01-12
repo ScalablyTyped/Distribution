@@ -33,7 +33,8 @@ object CreateDataSourceFromS3Input {
     __obj.asInstanceOf[CreateDataSourceFromS3Input]
   }
   
-  extension [Self <: CreateDataSourceFromS3Input](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDataSourceFromS3Input] (val x: Self) extends AnyVal {
     
     inline def setComputeStatistics(value: ComputeStatistics): Self = StObject.set(x, "ComputeStatistics", value.asInstanceOf[js.Any])
     

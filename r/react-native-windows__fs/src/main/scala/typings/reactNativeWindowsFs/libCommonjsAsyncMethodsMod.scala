@@ -135,7 +135,8 @@ object libCommonjsAsyncMethodsMod extends Shortcut {
       __obj.asInstanceOf[PromisifedMethods]
     }
     
-    extension [Self <: PromisifedMethods](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PromisifedMethods] (val x: Self) extends AnyVal {
       
       inline def setAccess(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof fs.access.__promisify__ */ Any

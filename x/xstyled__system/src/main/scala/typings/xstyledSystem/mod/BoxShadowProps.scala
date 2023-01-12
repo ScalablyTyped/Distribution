@@ -16,7 +16,8 @@ object BoxShadowProps {
     __obj.asInstanceOf[BoxShadowProps]
   }
   
-  extension [Self <: BoxShadowProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BoxShadowProps] (val x: Self) extends AnyVal {
     
     inline def setBoxShadow(value: ResponsiveValue[BoxShadow | Double]): Self = StObject.set(x, "boxShadow", value.asInstanceOf[js.Any])
     

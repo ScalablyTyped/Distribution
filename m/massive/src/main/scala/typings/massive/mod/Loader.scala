@@ -27,7 +27,8 @@ object Loader {
     __obj.asInstanceOf[Loader]
   }
   
-  extension [Self <: Loader](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
     
     inline def setAllowedSchemas(value: String | js.Array[String]): Self = StObject.set(x, "allowedSchemas", value.asInstanceOf[js.Any])
     

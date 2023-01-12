@@ -17,7 +17,8 @@ object StyleSheetProperties {
     __obj.asInstanceOf[StyleSheetProperties]
   }
   
-  extension [Self <: StyleSheetProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StyleSheetProperties] (val x: Self) extends AnyVal {
     
     inline def setFlatten(value: Any => Any): Self = StObject.set(x, "flatten", js.Any.fromFunction1(value))
     

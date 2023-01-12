@@ -43,7 +43,8 @@ object PlotChaikinParamsOptions {
     __obj.asInstanceOf[PlotChaikinParamsOptions]
   }
   
-  extension [Self <: PlotChaikinParamsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlotChaikinParamsOptions] (val x: Self) extends AnyVal {
     
     inline def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
     

@@ -34,7 +34,8 @@ object MVCxClientSchedulerTemplateToolTip {
     __obj.asInstanceOf[MVCxClientSchedulerTemplateToolTip]
   }
   
-  extension [Self <: MVCxClientSchedulerTemplateToolTip](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MVCxClientSchedulerTemplateToolTip] (val x: Self) extends AnyVal {
     
     inline def setType(value: MVCxSchedulerToolTipType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
   }

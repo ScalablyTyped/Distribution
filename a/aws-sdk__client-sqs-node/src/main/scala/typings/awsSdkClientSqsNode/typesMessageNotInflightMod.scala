@@ -21,7 +21,8 @@ object typesMessageNotInflightMod {
       __obj.asInstanceOf[MessageNotInflight]
     }
     
-    extension [Self <: MessageNotInflight](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MessageNotInflight] (val x: Self) extends AnyVal {
       
       inline def setName(value: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.MessageNotInflight): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

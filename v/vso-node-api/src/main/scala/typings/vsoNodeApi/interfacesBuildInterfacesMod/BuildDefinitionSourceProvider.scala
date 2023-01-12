@@ -51,7 +51,8 @@ object BuildDefinitionSourceProvider {
     __obj.asInstanceOf[BuildDefinitionSourceProvider]
   }
   
-  extension [Self <: BuildDefinitionSourceProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuildDefinitionSourceProvider] (val x: Self) extends AnyVal {
     
     inline def setDefinitionUri(value: String): Self = StObject.set(x, "definitionUri", value.asInstanceOf[js.Any])
     

@@ -126,7 +126,8 @@ object distSrcModulesUiLoadingCoverLoadingCoverMod {
       __obj.asInstanceOf[LoadingCover]
     }
     
-    extension [Self <: LoadingCover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoadingCover] (val x: Self) extends AnyVal {
       
       inline def setIsHidden(value: Boolean): Self = StObject.set(x, "isHidden", value.asInstanceOf[js.Any])
       

@@ -18,7 +18,8 @@ object ExportJournalToS3Response {
     __obj.asInstanceOf[ExportJournalToS3Response]
   }
   
-  extension [Self <: ExportJournalToS3Response](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportJournalToS3Response] (val x: Self) extends AnyVal {
     
     inline def setExportId(value: UniqueId): Self = StObject.set(x, "ExportId", value.asInstanceOf[js.Any])
   }

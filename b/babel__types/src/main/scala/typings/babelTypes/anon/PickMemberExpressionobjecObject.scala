@@ -23,7 +23,8 @@ object PickMemberExpressionobjecObject {
     __obj.asInstanceOf[PickMemberExpressionobjecObject]
   }
   
-  extension [Self <: PickMemberExpressionobjecObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickMemberExpressionobjecObject] (val x: Self) extends AnyVal {
     
     inline def setObject(value: Expression | Super_): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     

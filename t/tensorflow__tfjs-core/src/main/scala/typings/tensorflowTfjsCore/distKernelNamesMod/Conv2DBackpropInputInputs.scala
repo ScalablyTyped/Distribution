@@ -18,7 +18,8 @@ object Conv2DBackpropInputInputs {
     __obj.asInstanceOf[Conv2DBackpropInputInputs]
   }
   
-  extension [Self <: Conv2DBackpropInputInputs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Conv2DBackpropInputInputs] (val x: Self) extends AnyVal {
     
     inline def setDy(value: scala.Any): Self = StObject.set(x, "dy", value.asInstanceOf[js.Any])
     

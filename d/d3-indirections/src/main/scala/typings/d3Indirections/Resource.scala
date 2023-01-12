@@ -29,7 +29,8 @@ object Resource {
     __obj.asInstanceOf[Resource[T]]
   }
   
-  extension [Self <: Resource[?], T /* <: ResourceType */](x: Self & Resource[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Resource[?], T /* <: ResourceType */] (val x: Self & Resource[T]) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object distTypesProfileMod {
       __obj.asInstanceOf[SharedConfigFiles]
     }
     
-    extension [Self <: SharedConfigFiles](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SharedConfigFiles] (val x: Self) extends AnyVal {
       
       inline def setConfigFile(value: ParsedIniData): Self = StObject.set(x, "configFile", value.asInstanceOf[js.Any])
       

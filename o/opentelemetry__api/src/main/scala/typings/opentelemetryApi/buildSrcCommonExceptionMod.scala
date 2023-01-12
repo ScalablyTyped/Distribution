@@ -33,7 +33,8 @@ object buildSrcCommonExceptionMod {
       __obj.asInstanceOf[ExceptionWithCode]
     }
     
-    extension [Self <: ExceptionWithCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionWithCode] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object buildSrcCommonExceptionMod {
       __obj.asInstanceOf[ExceptionWithMessage]
     }
     
-    extension [Self <: ExceptionWithMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionWithMessage] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       
@@ -107,7 +109,8 @@ object buildSrcCommonExceptionMod {
       __obj.asInstanceOf[ExceptionWithName]
     }
     
-    extension [Self <: ExceptionWithName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExceptionWithName] (val x: Self) extends AnyVal {
       
       inline def setCode(value: String | Double): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
       

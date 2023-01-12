@@ -48,7 +48,8 @@ object PipeableFoldable {
     __obj.asInstanceOf[PipeableFoldable[F]]
   }
   
-  extension [Self <: PipeableFoldable[?], F](x: Self & PipeableFoldable[F]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PipeableFoldable[?], F] (val x: Self & PipeableFoldable[F]) extends AnyVal {
     
     inline def setFoldMap(
       value: Monoid[Any] => js.Function1[

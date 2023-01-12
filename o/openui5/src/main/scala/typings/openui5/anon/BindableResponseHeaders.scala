@@ -210,7 +210,8 @@ object BindableResponseHeaders {
     __obj.asInstanceOf[BindableResponseHeaders]
   }
   
-  extension [Self <: BindableResponseHeaders](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindableResponseHeaders] (val x: Self) extends AnyVal {
     
     inline def setAnnotationURI(value: String | js.Array[String]): Self = StObject.set(x, "annotationURI", value.asInstanceOf[js.Any])
     

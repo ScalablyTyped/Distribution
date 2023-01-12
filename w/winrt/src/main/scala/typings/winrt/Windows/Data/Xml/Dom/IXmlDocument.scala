@@ -94,7 +94,8 @@ object IXmlDocument {
     __obj.asInstanceOf[IXmlDocument]
   }
   
-  extension [Self <: IXmlDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IXmlDocument] (val x: Self) extends AnyVal {
     
     inline def setCreateAttribute(value: String => XmlAttribute): Self = StObject.set(x, "createAttribute", js.Any.fromFunction1(value))
     

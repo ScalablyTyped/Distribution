@@ -31,7 +31,8 @@ object moleculer {
     __obj.asInstanceOf[moleculer]
   }
   
-  extension [Self <: moleculer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: moleculer] (val x: Self) extends AnyVal {
     
     inline def setClient(value: Boolean | Moleculer_): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

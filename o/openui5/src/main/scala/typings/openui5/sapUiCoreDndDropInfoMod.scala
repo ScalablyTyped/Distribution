@@ -624,7 +624,8 @@ object sapUiCoreDndDropInfoMod {
       __obj.asInstanceOf[DropInfoSettings]
     }
     
-    extension [Self <: DropInfoSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropInfoSettings] (val x: Self) extends AnyVal {
       
       inline def setDragEnter(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "dragEnter", js.Any.fromFunction1(value))
       

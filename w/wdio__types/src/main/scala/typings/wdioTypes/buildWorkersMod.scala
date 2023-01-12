@@ -32,7 +32,8 @@ object buildWorkersMod {
       __obj.asInstanceOf[Job]
     }
     
-    extension [Self <: Job](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Job] (val x: Self) extends AnyVal {
       
       inline def setCaps(value: DesiredCapabilities | W3CCapabilities | MultiRemoteCapabilities): Self = StObject.set(x, "caps", value.asInstanceOf[js.Any])
       
@@ -95,7 +96,8 @@ object buildWorkersMod {
       __obj.asInstanceOf[WorkerCommand]
     }
     
-    extension [Self <: WorkerCommand](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerCommand] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: Any): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
@@ -132,7 +134,8 @@ object buildWorkersMod {
       __obj.asInstanceOf[WorkerMessage]
     }
     
-    extension [Self <: WorkerMessage](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerMessage] (val x: Self) extends AnyVal {
       
       inline def setContent(value: IsMultiremote): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -177,7 +180,8 @@ object buildWorkersMod {
       __obj.asInstanceOf[WorkerRunPayload]
     }
     
-    extension [Self <: WorkerRunPayload](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkerRunPayload] (val x: Self) extends AnyVal {
       
       inline def setCaps(value: RemoteCapability): Self = StObject.set(x, "caps", value.asInstanceOf[js.Any])
       

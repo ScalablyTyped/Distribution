@@ -37,7 +37,8 @@ object NotaryJournal {
     __obj.asInstanceOf[NotaryJournal]
   }
   
-  extension [Self <: NotaryJournal](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotaryJournal] (val x: Self) extends AnyVal {
     
     inline def setCreatedDate(value: String): Self = StObject.set(x, "createdDate", value.asInstanceOf[js.Any])
     

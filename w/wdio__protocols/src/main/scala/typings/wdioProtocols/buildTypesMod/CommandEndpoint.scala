@@ -53,7 +53,8 @@ object CommandEndpoint {
     __obj.asInstanceOf[CommandEndpoint]
   }
   
-  extension [Self <: CommandEndpoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommandEndpoint] (val x: Self) extends AnyVal {
     
     inline def setCommand(value: String): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object GetVpcLinksResponse {
     __obj.asInstanceOf[GetVpcLinksResponse]
   }
   
-  extension [Self <: GetVpcLinksResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetVpcLinksResponse] (val x: Self) extends AnyVal {
     
     inline def setItems(value: listOfVpcLink): Self = StObject.set(x, "Items", value.asInstanceOf[js.Any])
     

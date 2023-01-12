@@ -57,7 +57,8 @@ object SynapseListUserOptions {
     __obj.asInstanceOf[SynapseListUserOptions]
   }
   
-  extension [Self <: SynapseListUserOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SynapseListUserOptions] (val x: Self) extends AnyVal {
     
     inline def setDeactivated(value: Boolean): Self = StObject.set(x, "deactivated", value.asInstanceOf[js.Any])
     

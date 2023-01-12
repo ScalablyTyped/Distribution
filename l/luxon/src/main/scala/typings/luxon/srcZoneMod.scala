@@ -193,7 +193,8 @@ object srcZoneMod {
       __obj.asInstanceOf[ZoneOffsetOptions]
     }
     
-    extension [Self <: ZoneOffsetOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZoneOffsetOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: short | long): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       

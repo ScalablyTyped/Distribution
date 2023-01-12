@@ -35,7 +35,8 @@ object Executable {
     __obj.asInstanceOf[Executable[T]]
   }
   
-  extension [Self <: Executable[?], T](x: Self & Executable[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Executable[?], T] (val x: Self & Executable[T]) extends AnyVal {
     
     inline def setAll(value: () => typings.bluebird.mod.^[js.Array[T]]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
     

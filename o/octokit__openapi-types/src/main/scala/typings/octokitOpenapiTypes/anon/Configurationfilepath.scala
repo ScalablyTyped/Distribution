@@ -25,7 +25,8 @@ object Configurationfilepath {
     __obj.asInstanceOf[Configurationfilepath]
   }
   
-  extension [Self <: Configurationfilepath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Configurationfilepath] (val x: Self) extends AnyVal {
     
     inline def setConfiguration_file_path(value: String): Self = StObject.set(x, "configuration_file_path", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ReconnectServerEventsOptions {
     __obj.asInstanceOf[ReconnectServerEventsOptions]
   }
   
-  extension [Self <: ReconnectServerEventsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReconnectServerEventsOptions] (val x: Self) extends AnyVal {
     
     inline def setErrorArgs(value: js.Array[Any]): Self = StObject.set(x, "errorArgs", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ChartFactory {
     __obj.asInstanceOf[ChartFactory[TChart]]
   }
   
-  extension [Self <: ChartFactory[?], TChart /* <: Nvd3Element */](x: Self & ChartFactory[TChart]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChartFactory[?], TChart /* <: Nvd3Element */] (val x: Self & ChartFactory[TChart]) extends AnyVal {
     
     inline def setCallback(value: /* chart */ TChart => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
     

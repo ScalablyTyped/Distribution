@@ -133,7 +133,8 @@ object CommonPieProps {
     __obj.asInstanceOf[CommonPieProps[RawDatum]]
   }
   
-  extension [Self <: CommonPieProps[?], RawDatum](x: Self & CommonPieProps[RawDatum]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CommonPieProps[?], RawDatum] (val x: Self & CommonPieProps[RawDatum]) extends AnyVal {
     
     inline def setActiveInnerRadiusOffset(value: Double): Self = StObject.set(x, "activeInnerRadiusOffset", value.asInstanceOf[js.Any])
     

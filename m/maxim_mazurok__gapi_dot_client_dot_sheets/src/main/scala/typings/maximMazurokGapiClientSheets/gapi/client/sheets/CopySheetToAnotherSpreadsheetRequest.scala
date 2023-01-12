@@ -16,7 +16,8 @@ object CopySheetToAnotherSpreadsheetRequest {
     __obj.asInstanceOf[CopySheetToAnotherSpreadsheetRequest]
   }
   
-  extension [Self <: CopySheetToAnotherSpreadsheetRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CopySheetToAnotherSpreadsheetRequest] (val x: Self) extends AnyVal {
     
     inline def setDestinationSpreadsheetId(value: String): Self = StObject.set(x, "destinationSpreadsheetId", value.asInstanceOf[js.Any])
     

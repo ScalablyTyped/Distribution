@@ -28,7 +28,8 @@ object GetCanaryRunsRequest {
     __obj.asInstanceOf[GetCanaryRunsRequest]
   }
   
-  extension [Self <: GetCanaryRunsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetCanaryRunsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: MaxSize100): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

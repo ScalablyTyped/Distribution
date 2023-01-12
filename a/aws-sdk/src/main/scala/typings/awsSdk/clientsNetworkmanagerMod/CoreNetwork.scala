@@ -58,7 +58,8 @@ object CoreNetwork {
     __obj.asInstanceOf[CoreNetwork]
   }
   
-  extension [Self <: CoreNetwork](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CoreNetwork] (val x: Self) extends AnyVal {
     
     inline def setCoreNetworkArn(value: CoreNetworkArn): Self = StObject.set(x, "CoreNetworkArn", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object anon {
       __obj.asInstanceOf[AppID]
     }
     
-    extension [Self <: AppID](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AppID] (val x: Self) extends AnyVal {
       
       inline def setAppID(value: String): Self = StObject.set(x, "appID", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object anon {
       __obj.asInstanceOf[Country]
     }
     
-    extension [Self <: Country](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Country] (val x: Self) extends AnyVal {
       
       inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
       
@@ -164,7 +166,8 @@ object anon {
       __obj.asInstanceOf[CurrentVersion]
     }
     
-    extension [Self <: CurrentVersion](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CurrentVersion] (val x: Self) extends AnyVal {
       
       inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
@@ -221,7 +224,8 @@ object anon {
       __obj.asInstanceOf[IgnoreErrors]
     }
     
-    extension [Self <: IgnoreErrors](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IgnoreErrors] (val x: Self) extends AnyVal {
       
       inline def setAppID(value: String): Self = StObject.set(x, "appID", value.asInstanceOf[js.Any])
       
@@ -250,7 +254,8 @@ object anon {
       __obj.asInstanceOf[IsNeeded]
     }
     
-    extension [Self <: IsNeeded](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsNeeded] (val x: Self) extends AnyVal {
       
       inline def setCurrentVersion(value: String): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
       
@@ -281,7 +286,8 @@ object anon {
       __obj.asInstanceOf[PackageName]
     }
     
-    extension [Self <: PackageName](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PackageName] (val x: Self) extends AnyVal {
       
       inline def setIgnoreErrors(value: Boolean): Self = StObject.set(x, "ignoreErrors", value.asInstanceOf[js.Any])
       

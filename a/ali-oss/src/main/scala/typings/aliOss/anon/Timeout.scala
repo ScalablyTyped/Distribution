@@ -17,7 +17,8 @@ object Timeout {
     __obj.asInstanceOf[Timeout]
   }
   
-  extension [Self <: Timeout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Timeout] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

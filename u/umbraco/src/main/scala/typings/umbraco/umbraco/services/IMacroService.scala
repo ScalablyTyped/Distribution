@@ -64,7 +64,8 @@ object IMacroService {
     __obj.asInstanceOf[IMacroService]
   }
   
-  extension [Self <: IMacroService](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMacroService] (val x: Self) extends AnyVal {
     
     inline def setGenerateMacroSyntax(value: /* repeated */ Any => Unit): Self = StObject.set(x, "generateMacroSyntax", js.Any.fromFunction1(value))
     

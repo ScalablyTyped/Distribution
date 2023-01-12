@@ -19,7 +19,8 @@ object PoolOption {
     __obj.asInstanceOf[PoolOption]
   }
   
-  extension [Self <: PoolOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PoolOption] (val x: Self) extends AnyVal {
     
     inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     

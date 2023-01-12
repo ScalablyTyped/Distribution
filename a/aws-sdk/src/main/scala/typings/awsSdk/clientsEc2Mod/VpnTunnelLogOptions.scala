@@ -18,7 +18,8 @@ object VpnTunnelLogOptions {
     __obj.asInstanceOf[VpnTunnelLogOptions]
   }
   
-  extension [Self <: VpnTunnelLogOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VpnTunnelLogOptions] (val x: Self) extends AnyVal {
     
     inline def setCloudWatchLogOptions(value: CloudWatchLogOptions): Self = StObject.set(x, "CloudWatchLogOptions", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Machine {
     __obj.asInstanceOf[Machine]
   }
   
-  extension [Self <: Machine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Machine] (val x: Self) extends AnyVal {
     
     inline def setDevcontainer_path(value: String): Self = StObject.set(x, "devcontainer_path", value.asInstanceOf[js.Any])
     

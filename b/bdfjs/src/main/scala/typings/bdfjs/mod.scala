@@ -38,7 +38,8 @@ object mod {
       __obj.asInstanceOf[Bitmap]
     }
     
-    extension [Self <: Bitmap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Bitmap] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[BoundingBox]
     }
     
-    extension [Self <: BoundingBox](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BoundingBox] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -86,7 +88,8 @@ object mod {
       __obj.asInstanceOf[DrawOptions]
     }
     
-    extension [Self <: DrawOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DrawOptions] (val x: Self) extends AnyVal {
       
       inline def setKerningBias(value: Double): Self = StObject.set(x, "kerningBias", value.asInstanceOf[js.Any])
       
@@ -107,7 +110,8 @@ object mod {
       __obj.asInstanceOf[Font]
     }
     
-    extension [Self <: Font](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Font] (val x: Self) extends AnyVal {
       
       inline def setGlyphs(value: NumberDictionary[Glyph]): Self = StObject.set(x, "glyphs", value.asInstanceOf[js.Any])
       
@@ -155,7 +159,8 @@ object mod {
       __obj.asInstanceOf[Glyph]
     }
     
-    extension [Self <: Glyph](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Glyph] (val x: Self) extends AnyVal {
       
       inline def setBitmap(value: js.Array[js.Array[Double]]): Self = StObject.set(x, "bitmap", value.asInstanceOf[js.Any])
       
@@ -214,7 +219,8 @@ object mod {
       __obj.asInstanceOf[Meta]
     }
     
-    extension [Self <: Meta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
       
       inline def setBoundingBox(value: BoundingBox): Self = StObject.set(x, "boundingBox", value.asInstanceOf[js.Any])
       
@@ -243,7 +249,8 @@ object mod {
       __obj.asInstanceOf[ParseOptions]
     }
     
-    extension [Self <: ParseOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParseOptions] (val x: Self) extends AnyVal {
       
       inline def setAllprops(value: Boolean): Self = StObject.set(x, "allprops", value.asInstanceOf[js.Any])
       
@@ -316,7 +323,8 @@ object mod {
       __obj.asInstanceOf[Properties]
     }
     
-    extension [Self <: Properties](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Properties] (val x: Self) extends AnyVal {
       
       inline def setAddStyleName(value: String): Self = StObject.set(x, "addStyleName", value.asInstanceOf[js.Any])
       
@@ -429,7 +437,8 @@ object mod {
       __obj.asInstanceOf[Size]
     }
     
-    extension [Self <: Size](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Size] (val x: Self) extends AnyVal {
       
       inline def setPoints(value: Double): Self = StObject.set(x, "points", value.asInstanceOf[js.Any])
       

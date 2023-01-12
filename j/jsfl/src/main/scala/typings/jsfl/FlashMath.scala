@@ -26,7 +26,8 @@ object FlashMath {
     __obj.asInstanceOf[FlashMath]
   }
   
-  extension [Self <: FlashMath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashMath] (val x: Self) extends AnyVal {
     
     inline def setConcatMatrix(value: (FlashMatrix, FlashMatrix) => FlashMatrix): Self = StObject.set(x, "concatMatrix", js.Any.fromFunction2(value))
     

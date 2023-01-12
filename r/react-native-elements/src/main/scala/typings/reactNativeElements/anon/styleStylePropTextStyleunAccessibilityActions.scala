@@ -327,7 +327,8 @@ object styleStylePropTextStyleunAccessibilityActions {
     __obj.asInstanceOf[styleStylePropTextStyleunAccessibilityActions]
   }
   
-  extension [Self <: styleStylePropTextStyleunAccessibilityActions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: styleStylePropTextStyleunAccessibilityActions] (val x: Self) extends AnyVal {
     
     inline def setAccessibilityActions(value: js.Array[AccessibilityActionInfo]): Self = StObject.set(x, "accessibilityActions", value.asInstanceOf[js.Any])
     

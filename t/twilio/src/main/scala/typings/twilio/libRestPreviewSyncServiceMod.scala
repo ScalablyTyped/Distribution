@@ -249,7 +249,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceInstanceUpdateOptions]
     }
     
-    extension [Self <: ServiceInstanceUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceInstanceUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setAclEnabled(value: Boolean): Self = StObject.set(x, "aclEnabled", value.asInstanceOf[js.Any])
       
@@ -427,7 +428,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceListInstanceCreateOptions]
     }
     
-    extension [Self <: ServiceListInstanceCreateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceListInstanceCreateOptions] (val x: Self) extends AnyVal {
       
       inline def setAclEnabled(value: Boolean): Self = StObject.set(x, "aclEnabled", value.asInstanceOf[js.Any])
       
@@ -488,7 +490,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceListInstanceEachOptions]
     }
     
-    extension [Self <: ServiceListInstanceEachOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceListInstanceEachOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(
         value: (/* item */ ServiceInstance, /* done */ js.Function1[/* err */ js.UndefOr[js.Error], Unit]) => Unit
@@ -537,7 +540,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceListInstanceOptions]
     }
     
-    extension [Self <: ServiceListInstanceOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceListInstanceOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -571,7 +575,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceListInstancePageOptions]
     }
     
-    extension [Self <: ServiceListInstancePageOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceListInstancePageOptions] (val x: Self) extends AnyVal {
       
       inline def setPageNumber(value: Double): Self = StObject.set(x, "pageNumber", value.asInstanceOf[js.Any])
       
@@ -656,7 +661,8 @@ object libRestPreviewSyncServiceMod {
       __obj.asInstanceOf[ServiceResource]
     }
     
-    extension [Self <: ServiceResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ServiceResource] (val x: Self) extends AnyVal {
       
       inline def setAccount_sid(value: String): Self = StObject.set(x, "account_sid", value.asInstanceOf[js.Any])
       

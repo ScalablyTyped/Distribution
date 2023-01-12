@@ -52,7 +52,8 @@ object HubSection {
     __obj.asInstanceOf[HubSection]
   }
   
-  extension [Self <: HubSection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HubSection] (val x: Self) extends AnyVal {
     
     inline def setContentElement(value: HTMLElement): Self = StObject.set(x, "contentElement", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object SnapshotInfoFeatureState {
     __obj.asInstanceOf[SnapshotInfoFeatureState]
   }
   
-  extension [Self <: SnapshotInfoFeatureState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SnapshotInfoFeatureState] (val x: Self) extends AnyVal {
     
     inline def setFeature_name(value: String): Self = StObject.set(x, "feature_name", value.asInstanceOf[js.Any])
     

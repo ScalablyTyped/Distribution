@@ -43,7 +43,8 @@ object libDropdownButtonMod {
       __obj.asInstanceOf[DropdownButtonBaseProps]
     }
     
-    extension [Self <: DropdownButtonBaseProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DropdownButtonBaseProps] (val x: Self) extends AnyVal {
       
       inline def setBlock(value: Boolean): Self = StObject.set(x, "block", value.asInstanceOf[js.Any])
       

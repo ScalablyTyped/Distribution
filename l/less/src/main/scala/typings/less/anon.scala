@@ -17,7 +17,8 @@ object anon {
       __obj.asInstanceOf[PluginManager]
     }
     
-    extension [Self <: PluginManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PluginManager] (val x: Self) extends AnyVal {
       
       inline def setPluginManager(value: typings.less.Less.PluginManager): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
     }

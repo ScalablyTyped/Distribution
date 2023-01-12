@@ -81,7 +81,8 @@ object FeatureFormProperties {
     __obj.asInstanceOf[FeatureFormProperties]
   }
   
-  extension [Self <: FeatureFormProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FeatureFormProperties] (val x: Self) extends AnyVal {
     
     inline def setDisabled(value: Boolean): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
     

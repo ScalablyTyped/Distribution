@@ -328,7 +328,8 @@ object esComponentsVirtualInputVirtualInputMod {
       __obj.asInstanceOf[VirtualInputProps]
     }
     
-    extension [Self <: VirtualInputProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualInputProps] (val x: Self) extends AnyVal {
       
       inline def `setAria-activedescendant`(value: String): Self = StObject.set(x, "aria-activedescendant", value.asInstanceOf[js.Any])
       
@@ -591,7 +592,8 @@ object esComponentsVirtualInputVirtualInputMod {
       __obj.asInstanceOf[VirtualInputRef]
     }
     
-    extension [Self <: VirtualInputRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VirtualInputRef] (val x: Self) extends AnyVal {
       
       inline def setBlur(value: () => Unit): Self = StObject.set(x, "blur", js.Any.fromFunction0(value))
       

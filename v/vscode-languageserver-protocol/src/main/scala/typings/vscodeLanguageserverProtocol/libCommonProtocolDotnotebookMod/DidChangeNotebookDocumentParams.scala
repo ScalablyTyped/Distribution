@@ -38,7 +38,8 @@ object DidChangeNotebookDocumentParams {
     __obj.asInstanceOf[DidChangeNotebookDocumentParams]
   }
   
-  extension [Self <: DidChangeNotebookDocumentParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DidChangeNotebookDocumentParams] (val x: Self) extends AnyVal {
     
     inline def setChange(value: NotebookDocumentChangeEvent): Self = StObject.set(x, "change", value.asInstanceOf[js.Any])
     

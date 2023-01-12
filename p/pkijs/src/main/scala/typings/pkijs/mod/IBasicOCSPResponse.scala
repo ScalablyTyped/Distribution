@@ -22,7 +22,8 @@ object IBasicOCSPResponse {
     __obj.asInstanceOf[IBasicOCSPResponse]
   }
   
-  extension [Self <: IBasicOCSPResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBasicOCSPResponse] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: js.Array[Certificate]): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

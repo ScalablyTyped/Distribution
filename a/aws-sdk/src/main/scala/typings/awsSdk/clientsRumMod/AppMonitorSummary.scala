@@ -38,7 +38,8 @@ object AppMonitorSummary {
     __obj.asInstanceOf[AppMonitorSummary]
   }
   
-  extension [Self <: AppMonitorSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AppMonitorSummary] (val x: Self) extends AnyVal {
     
     inline def setCreated(value: ISOTimestampString): Self = StObject.set(x, "Created", value.asInstanceOf[js.Any])
     

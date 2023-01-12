@@ -15,7 +15,8 @@ object DeviceListChangedEvent {
     __obj.asInstanceOf[DeviceListChangedEvent]
   }
   
-  extension [Self <: DeviceListChangedEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeviceListChangedEvent] (val x: Self) extends AnyVal {
     
     inline def setDevices(value: DeviceMap): Self = StObject.set(x, "devices", value.asInstanceOf[js.Any])
   }

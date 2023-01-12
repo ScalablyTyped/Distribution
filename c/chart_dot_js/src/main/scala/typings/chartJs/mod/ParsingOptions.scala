@@ -25,7 +25,8 @@ object ParsingOptions {
     __obj.asInstanceOf[ParsingOptions]
   }
   
-  extension [Self <: ParsingOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParsingOptions] (val x: Self) extends AnyVal {
     
     inline def setNormalized(value: Boolean): Self = StObject.set(x, "normalized", value.asInstanceOf[js.Any])
     

@@ -95,7 +95,8 @@ object Product {
     __obj.asInstanceOf[Product]
   }
   
-  extension [Self <: Product](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Product] (val x: Self) extends AnyVal {
     
     inline def setAppRestrictionsSchema(value: AppRestrictionsSchema): Self = StObject.set(x, "appRestrictionsSchema", value.asInstanceOf[js.Any])
     

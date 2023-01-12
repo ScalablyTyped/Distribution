@@ -34,7 +34,8 @@ object WerckerEnv {
     __obj.asInstanceOf[WerckerEnv]
   }
   
-  extension [Self <: WerckerEnv](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: WerckerEnv] (val x: Self) extends AnyVal {
     
     inline def setBranch(value: String): Self = StObject.set(x, "branch", value.asInstanceOf[js.Any])
     

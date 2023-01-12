@@ -118,7 +118,8 @@ object distSrcBlockMod {
       __obj.asInstanceOf[PutOptions]
     }
     
-    extension [Self <: PutOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PutOptions] (val x: Self) extends AnyVal {
       
       inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
       
@@ -159,7 +160,8 @@ object distSrcBlockMod {
       __obj.asInstanceOf[RmOptions]
     }
     
-    extension [Self <: RmOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -190,7 +192,8 @@ object distSrcBlockMod {
       __obj.asInstanceOf[RmResult]
     }
     
-    extension [Self <: RmResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RmResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       
@@ -219,7 +222,8 @@ object distSrcBlockMod {
       __obj.asInstanceOf[StatResult]
     }
     
-    extension [Self <: StatResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StatResult] (val x: Self) extends AnyVal {
       
       inline def setCid(value: CID[Any, Double, Double, Version]): Self = StObject.set(x, "cid", value.asInstanceOf[js.Any])
       

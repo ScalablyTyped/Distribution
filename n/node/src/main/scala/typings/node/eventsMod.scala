@@ -603,7 +603,8 @@ object eventsMod {
       __obj.asInstanceOf[Abortable]
     }
     
-    extension [Self <: Abortable](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Abortable] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       
@@ -666,7 +667,8 @@ object eventsMod {
       __obj.asInstanceOf[EventEmitterOptions]
     }
     
-    extension [Self <: EventEmitterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EventEmitterOptions] (val x: Self) extends AnyVal {
       
       inline def setCaptureRejections(value: Boolean): Self = StObject.set(x, "captureRejections", value.asInstanceOf[js.Any])
       
@@ -693,7 +695,8 @@ object eventsMod {
       __obj.asInstanceOf[StaticEventEmitterOptions]
     }
     
-    extension [Self <: StaticEventEmitterOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticEventEmitterOptions] (val x: Self) extends AnyVal {
       
       inline def setSignal(value: AbortSignal): Self = StObject.set(x, "signal", value.asInstanceOf[js.Any])
       

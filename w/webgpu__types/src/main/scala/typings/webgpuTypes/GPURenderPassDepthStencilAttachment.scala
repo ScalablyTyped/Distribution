@@ -75,7 +75,8 @@ object GPURenderPassDepthStencilAttachment {
     __obj.asInstanceOf[GPURenderPassDepthStencilAttachment]
   }
   
-  extension [Self <: GPURenderPassDepthStencilAttachment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GPURenderPassDepthStencilAttachment] (val x: Self) extends AnyVal {
     
     inline def setDepthClearValue(value: Double): Self = StObject.set(x, "depthClearValue", value.asInstanceOf[js.Any])
     

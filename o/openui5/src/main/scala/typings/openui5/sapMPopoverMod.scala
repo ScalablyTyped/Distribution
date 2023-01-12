@@ -1859,7 +1859,8 @@ object sapMPopoverMod {
       __obj.asInstanceOf[PopoverSettings]
     }
     
-    extension [Self <: PopoverSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopoverSettings] (val x: Self) extends AnyVal {
       
       inline def setAfterClose(value: /* oEvent */ typings.openui5.sapUiBaseEventMod.default => Unit): Self = StObject.set(x, "afterClose", js.Any.fromFunction1(value))
       

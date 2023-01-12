@@ -23,7 +23,8 @@ object DeploymentComponentUpdatePolicy {
     __obj.asInstanceOf[DeploymentComponentUpdatePolicy]
   }
   
-  extension [Self <: DeploymentComponentUpdatePolicy](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeploymentComponentUpdatePolicy] (val x: Self) extends AnyVal {
     
     inline def setAction(value: DeploymentComponentUpdatePolicyAction): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

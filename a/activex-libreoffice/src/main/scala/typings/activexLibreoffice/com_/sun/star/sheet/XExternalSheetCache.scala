@@ -71,7 +71,8 @@ object XExternalSheetCache {
     __obj.asInstanceOf[XExternalSheetCache]
   }
   
-  extension [Self <: XExternalSheetCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XExternalSheetCache] (val x: Self) extends AnyVal {
     
     inline def setAllRows(value: SafeArray[Double]): Self = StObject.set(x, "AllRows", value.asInstanceOf[js.Any])
     

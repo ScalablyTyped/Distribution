@@ -143,7 +143,8 @@ object mod {
       __obj.asInstanceOf[NodeLike]
     }
     
-    extension [Self <: NodeLike](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NodeLike] (val x: Self) extends AnyVal {
       
       inline def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       

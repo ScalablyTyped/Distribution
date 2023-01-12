@@ -29,7 +29,8 @@ object UploadCloudImageResult {
     __obj.asInstanceOf[UploadCloudImageResult]
   }
   
-  extension [Self <: UploadCloudImageResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UploadCloudImageResult] (val x: Self) extends AnyVal {
     
     inline def setBase(value: String): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
     

@@ -39,7 +39,8 @@ object backgroundGeolocationDotPromiseMod {
         __obj.asInstanceOf[LocationZ]
       }
       
-      extension [Self <: LocationZ](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LocationZ] (val x: Self) extends AnyVal {
         
         inline def setSpeed(value: Double): Self = StObject.set(x, "speed", value.asInstanceOf[js.Any])
       }

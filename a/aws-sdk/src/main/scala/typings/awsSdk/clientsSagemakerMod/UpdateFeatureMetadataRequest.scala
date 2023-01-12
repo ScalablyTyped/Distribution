@@ -38,7 +38,8 @@ object UpdateFeatureMetadataRequest {
     __obj.asInstanceOf[UpdateFeatureMetadataRequest]
   }
   
-  extension [Self <: UpdateFeatureMetadataRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateFeatureMetadataRequest] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: FeatureDescription): Self = StObject.set(x, "Description", value.asInstanceOf[js.Any])
     

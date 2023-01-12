@@ -21,7 +21,8 @@ object CssExperimentOptions {
     __obj.asInstanceOf[CssExperimentOptions]
   }
   
-  extension [Self <: CssExperimentOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssExperimentOptions] (val x: Self) extends AnyVal {
     
     inline def setExportsOnly(value: Boolean): Self = StObject.set(x, "exportsOnly", value.asInstanceOf[js.Any])
     

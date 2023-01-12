@@ -38,7 +38,8 @@ object FilterStringInput {
     __obj.asInstanceOf[FilterStringInput]
   }
   
-  extension [Self <: FilterStringInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FilterStringInput] (val x: Self) extends AnyVal {
     
     inline def setFilterStringInput(value: String): Self = StObject.set(x, "filterStringInput", value.asInstanceOf[js.Any])
     

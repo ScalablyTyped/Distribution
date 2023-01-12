@@ -84,7 +84,8 @@ object srcSdkInternalModelEventsModelEventManagerMod {
       __obj.asInstanceOf[ILoadUnitResult]
     }
     
-    extension [Self <: ILoadUnitResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ILoadUnitResult] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: () => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction0(value))
       
@@ -120,7 +121,8 @@ object srcSdkInternalModelEventsModelEventManagerMod {
       __obj.asInstanceOf[IModelEventManager]
     }
     
-    extension [Self <: IModelEventManager](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IModelEventManager] (val x: Self) extends AnyVal {
       
       inline def setLoadUnitCompleted(value: (Double, IVoidCallback, IErrorCallback) => Unit): Self = StObject.set(x, "loadUnitCompleted", js.Any.fromFunction3(value))
       

@@ -15,7 +15,8 @@ object BorderFocused {
     __obj.asInstanceOf[BorderFocused]
   }
   
-  extension [Self <: BorderFocused](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BorderFocused] (val x: Self) extends AnyVal {
     
     inline def setBorder(value: Focused): Self = StObject.set(x, "border", value.asInstanceOf[js.Any])
   }

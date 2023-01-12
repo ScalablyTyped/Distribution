@@ -204,7 +204,8 @@ object AnimationThreshold {
     __obj.asInstanceOf[AnimationThreshold]
   }
   
-  extension [Self <: AnimationThreshold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationThreshold] (val x: Self) extends AnyVal {
     
     inline def setAnimation(value: Boolean): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
     

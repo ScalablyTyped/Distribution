@@ -33,7 +33,8 @@ object GetUsageAndQuotaResponse {
     __obj.asInstanceOf[GetUsageAndQuotaResponse]
   }
   
-  extension [Self <: GetUsageAndQuotaResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetUsageAndQuotaResponse] (val x: Self) extends AnyVal {
     
     inline def setOverrideActive(value: Boolean): Self = StObject.set(x, "overrideActive", value.asInstanceOf[js.Any])
     

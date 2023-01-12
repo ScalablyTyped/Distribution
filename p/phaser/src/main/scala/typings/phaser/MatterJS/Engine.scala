@@ -109,7 +109,8 @@ object Engine {
     __obj.asInstanceOf[Engine]
   }
   
-  extension [Self <: Engine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Engine] (val x: Self) extends AnyVal {
     
     inline def setBroadphase(value: Grid): Self = StObject.set(x, "broadphase", value.asInstanceOf[js.Any])
     

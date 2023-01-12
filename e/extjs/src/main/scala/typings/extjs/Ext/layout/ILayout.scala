@@ -109,7 +109,8 @@ object ILayout {
     __obj.asInstanceOf[ILayout]
   }
   
-  extension [Self <: ILayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILayout] (val x: Self) extends AnyVal {
     
     inline def setAfterRemove(value: /* item */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "afterRemove", js.Any.fromFunction1(value))
     

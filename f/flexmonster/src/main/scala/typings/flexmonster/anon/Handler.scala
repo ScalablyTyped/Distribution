@@ -17,7 +17,8 @@ object Handler {
     __obj.asInstanceOf[Handler]
   }
   
-  extension [Self <: Handler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Handler] (val x: Self) extends AnyVal {
     
     inline def setHandler(value: () => Unit): Self = StObject.set(x, "handler", js.Any.fromFunction0(value))
     

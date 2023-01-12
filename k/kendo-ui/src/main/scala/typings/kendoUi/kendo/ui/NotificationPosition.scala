@@ -23,7 +23,8 @@ object NotificationPosition {
     __obj.asInstanceOf[NotificationPosition]
   }
   
-  extension [Self <: NotificationPosition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NotificationPosition] (val x: Self) extends AnyVal {
     
     inline def setBottom(value: Double): Self = StObject.set(x, "bottom", value.asInstanceOf[js.Any])
     

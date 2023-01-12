@@ -25,7 +25,8 @@ object LineBreakHyphenationOptions {
     __obj.asInstanceOf[LineBreakHyphenationOptions]
   }
   
-  extension [Self <: LineBreakHyphenationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LineBreakHyphenationOptions] (val x: Self) extends AnyVal {
     
     inline def setAHyphenationOptions(value: PropertyValues): Self = StObject.set(x, "aHyphenationOptions", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object LoaderResponse {
     __obj.asInstanceOf[LoaderResponse]
   }
   
-  extension [Self <: LoaderResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LoaderResponse] (val x: Self) extends AnyVal {
     
     inline def setData(value: String | js.typedarray.ArrayBuffer): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

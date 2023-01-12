@@ -24,7 +24,8 @@ object Ruleset {
     __obj.asInstanceOf[Ruleset]
   }
   
-  extension [Self <: Ruleset](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ruleset] (val x: Self) extends AnyVal {
     
     inline def setEnabled(value: Boolean): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
     

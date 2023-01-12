@@ -55,7 +55,8 @@ object distTypesStoriesComponentsCategoryListCategoryListDotdriverMod {
       __obj.asInstanceOf[CategoryListDriver]
     }
     
-    extension [Self <: CategoryListDriver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CategoryListDriver] (val x: Self) extends AnyVal {
       
       inline def setBaseElement(value: Element): Self = StObject.set(x, "baseElement", value.asInstanceOf[js.Any])
       

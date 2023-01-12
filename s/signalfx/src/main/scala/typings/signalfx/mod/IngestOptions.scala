@@ -27,7 +27,8 @@ object IngestOptions {
     __obj.asInstanceOf[IngestOptions]
   }
   
-  extension [Self <: IngestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IngestOptions] (val x: Self) extends AnyVal {
     
     inline def setBatchSize(value: Double): Self = StObject.set(x, "batchSize", value.asInstanceOf[js.Any])
     

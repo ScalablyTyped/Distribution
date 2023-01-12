@@ -21,7 +21,8 @@ object AggregationsBucketKsAggregation {
     __obj.asInstanceOf[AggregationsBucketKsAggregation]
   }
   
-  extension [Self <: AggregationsBucketKsAggregation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AggregationsBucketKsAggregation] (val x: Self) extends AnyVal {
     
     inline def setAlternative(value: js.Array[String]): Self = StObject.set(x, "alternative", value.asInstanceOf[js.Any])
     

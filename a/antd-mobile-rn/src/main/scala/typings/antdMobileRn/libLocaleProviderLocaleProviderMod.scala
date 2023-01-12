@@ -52,7 +52,8 @@ object libLocaleProviderLocaleProviderMod {
       __obj.asInstanceOf[LocaleProviderProps]
     }
     
-    extension [Self <: LocaleProviderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LocaleProviderProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: ReactElement): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       

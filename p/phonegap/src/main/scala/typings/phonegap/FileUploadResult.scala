@@ -19,7 +19,8 @@ object FileUploadResult {
     __obj.asInstanceOf[FileUploadResult]
   }
   
-  extension [Self <: FileUploadResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileUploadResult] (val x: Self) extends AnyVal {
     
     inline def setBytesSent(value: Double): Self = StObject.set(x, "bytesSent", value.asInstanceOf[js.Any])
     

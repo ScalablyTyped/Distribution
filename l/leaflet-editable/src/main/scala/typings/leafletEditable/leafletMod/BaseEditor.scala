@@ -32,7 +32,8 @@ object BaseEditor {
     __obj.asInstanceOf[BaseEditor]
   }
   
-  extension [Self <: BaseEditor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BaseEditor] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => Editor): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

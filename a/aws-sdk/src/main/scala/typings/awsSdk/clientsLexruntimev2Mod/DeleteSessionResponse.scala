@@ -33,7 +33,8 @@ object DeleteSessionResponse {
     __obj.asInstanceOf[DeleteSessionResponse]
   }
   
-  extension [Self <: DeleteSessionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteSessionResponse] (val x: Self) extends AnyVal {
     
     inline def setBotAliasId(value: BotAliasIdentifier): Self = StObject.set(x, "botAliasId", value.asInstanceOf[js.Any])
     

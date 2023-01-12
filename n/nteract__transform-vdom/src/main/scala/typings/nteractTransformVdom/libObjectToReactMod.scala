@@ -42,7 +42,8 @@ object libObjectToReactMod {
       __obj.asInstanceOf[VDOMEl]
     }
     
-    extension [Self <: VDOMEl](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VDOMEl] (val x: Self) extends AnyVal {
       
       inline def setAttributes(value: Attributes): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       

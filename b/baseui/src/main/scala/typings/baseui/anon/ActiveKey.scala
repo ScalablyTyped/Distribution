@@ -15,7 +15,8 @@ object ActiveKey {
     __obj.asInstanceOf[ActiveKey]
   }
   
-  extension [Self <: ActiveKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActiveKey] (val x: Self) extends AnyVal {
     
     inline def setActiveKey(value: typings.react.mod.Key): Self = StObject.set(x, "activeKey", value.asInstanceOf[js.Any])
   }

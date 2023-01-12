@@ -24,7 +24,8 @@ object DescribeControlPanelReque {
     __obj.asInstanceOf[DescribeControlPanelReque]
   }
   
-  extension [Self <: DescribeControlPanelReque](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeControlPanelReque] (val x: Self) extends AnyVal {
     
     inline def set$waiter(value: WaiterConfiguration): Self = StObject.set(x, "$waiter", value.asInstanceOf[js.Any])
     

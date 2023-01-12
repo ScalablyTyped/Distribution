@@ -35,7 +35,8 @@ object TypeComparisonInfo {
     __obj.asInstanceOf[TypeComparisonInfo]
   }
   
-  extension [Self <: TypeComparisonInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeComparisonInfo] (val x: Self) extends AnyVal {
     
     inline def setAddMessage(value: String => Unit): Self = StObject.set(x, "addMessage", js.Any.fromFunction1(value))
     

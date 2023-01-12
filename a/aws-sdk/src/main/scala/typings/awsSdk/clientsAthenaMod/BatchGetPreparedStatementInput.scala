@@ -23,7 +23,8 @@ object BatchGetPreparedStatementInput {
     __obj.asInstanceOf[BatchGetPreparedStatementInput]
   }
   
-  extension [Self <: BatchGetPreparedStatementInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchGetPreparedStatementInput] (val x: Self) extends AnyVal {
     
     inline def setPreparedStatementNames(value: PreparedStatementNameList): Self = StObject.set(x, "PreparedStatementNames", value.asInstanceOf[js.Any])
     

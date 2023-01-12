@@ -195,7 +195,8 @@ object HmsPushResultCodeInterface {
     __obj.asInstanceOf[HmsPushResultCodeInterface]
   }
   
-  extension [Self <: HmsPushResultCodeInterface](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HmsPushResultCodeInterface] (val x: Self) extends AnyVal {
     
     inline def setERROR(value: `-1`): Self = StObject.set(x, "ERROR", value.asInstanceOf[js.Any])
     

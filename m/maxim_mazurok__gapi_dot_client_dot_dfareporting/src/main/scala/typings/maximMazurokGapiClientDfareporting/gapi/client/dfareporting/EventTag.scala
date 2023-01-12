@@ -76,7 +76,8 @@ object EventTag {
     __obj.asInstanceOf[EventTag]
   }
   
-  extension [Self <: EventTag](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventTag] (val x: Self) extends AnyVal {
     
     inline def setAccountId(value: String): Self = StObject.set(x, "accountId", value.asInstanceOf[js.Any])
     

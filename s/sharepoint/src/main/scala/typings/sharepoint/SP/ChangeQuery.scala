@@ -201,7 +201,8 @@ object ChangeQuery {
     __obj.asInstanceOf[ChangeQuery]
   }
   
-  extension [Self <: ChangeQuery](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeQuery] (val x: Self) extends AnyVal {
     
     inline def setGet_add(value: () => Boolean): Self = StObject.set(x, "get_add", js.Any.fromFunction0(value))
     

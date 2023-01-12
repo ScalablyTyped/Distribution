@@ -77,7 +77,8 @@ object XFastContextHandler {
     __obj.asInstanceOf[XFastContextHandler]
   }
   
-  extension [Self <: XFastContextHandler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFastContextHandler] (val x: Self) extends AnyVal {
     
     inline def setCharacters(value: String => Unit): Self = StObject.set(x, "characters", js.Any.fromFunction1(value))
     

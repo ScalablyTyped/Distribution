@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "macos-release"
-version := "3.1.0-f0b9c3"
+version := "3.1.0-c7cb24"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

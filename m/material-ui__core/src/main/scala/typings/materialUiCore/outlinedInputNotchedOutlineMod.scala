@@ -510,7 +510,8 @@ object outlinedInputNotchedOutlineMod extends Shortcut {
       __obj.asInstanceOf[NotchedOutlineProps]
     }
     
-    extension [Self <: NotchedOutlineProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NotchedOutlineProps] (val x: Self) extends AnyVal {
       
       inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
       

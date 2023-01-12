@@ -41,7 +41,8 @@ object HtmlCrossHairCfg {
     __obj.asInstanceOf[HtmlCrossHairCfg]
   }
   
-  extension [Self <: HtmlCrossHairCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HtmlCrossHairCfg] (val x: Self) extends AnyVal {
     
     inline def setCrossHairTpl(value: String): Self = StObject.set(x, "crossHairTpl", value.asInstanceOf[js.Any])
     

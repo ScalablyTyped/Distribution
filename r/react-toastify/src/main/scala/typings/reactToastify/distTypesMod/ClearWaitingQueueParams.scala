@@ -15,7 +15,8 @@ object ClearWaitingQueueParams {
     __obj.asInstanceOf[ClearWaitingQueueParams]
   }
   
-  extension [Self <: ClearWaitingQueueParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearWaitingQueueParams] (val x: Self) extends AnyVal {
     
     inline def setContainerId(value: Id): Self = StObject.set(x, "containerId", value.asInstanceOf[js.Any])
     

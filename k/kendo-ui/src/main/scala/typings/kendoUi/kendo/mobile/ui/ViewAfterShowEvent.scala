@@ -17,7 +17,8 @@ object ViewAfterShowEvent {
     __obj.asInstanceOf[ViewAfterShowEvent]
   }
   
-  extension [Self <: ViewAfterShowEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ViewAfterShowEvent] (val x: Self) extends AnyVal {
     
     inline def setView(value: View): Self = StObject.set(x, "view", value.asInstanceOf[js.Any])
     

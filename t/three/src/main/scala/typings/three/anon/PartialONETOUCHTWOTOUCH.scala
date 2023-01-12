@@ -19,7 +19,8 @@ object PartialONETOUCHTWOTOUCH {
     __obj.asInstanceOf[PartialONETOUCHTWOTOUCH]
   }
   
-  extension [Self <: PartialONETOUCHTWOTOUCH](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialONETOUCHTWOTOUCH] (val x: Self) extends AnyVal {
     
     inline def setONE(value: TOUCH): Self = StObject.set(x, "ONE", value.asInstanceOf[js.Any])
     

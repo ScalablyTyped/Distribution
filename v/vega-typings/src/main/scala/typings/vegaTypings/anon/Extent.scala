@@ -24,7 +24,8 @@ object Extent {
     __obj.asInstanceOf[Extent]
   }
   
-  extension [Self <: Extent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Extent] (val x: Self) extends AnyVal {
     
     inline def setCount(value: Double | SignalRef): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
     

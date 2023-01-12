@@ -19,7 +19,8 @@ object BPMNDiagram {
     __obj.asInstanceOf[BPMNDiagram]
   }
   
-  extension [Self <: BPMNDiagram](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BPMNDiagram] (val x: Self) extends AnyVal {
     
     inline def setLabelStyle(value: BPMNLabelStyle): Self = StObject.set(x, "labelStyle", value.asInstanceOf[js.Any])
     

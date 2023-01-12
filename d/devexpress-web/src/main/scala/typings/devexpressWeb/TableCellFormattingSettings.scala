@@ -65,7 +65,8 @@ object TableCellFormattingSettings {
     __obj.asInstanceOf[TableCellFormattingSettings]
   }
   
-  extension [Self <: TableCellFormattingSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableCellFormattingSettings] (val x: Self) extends AnyVal {
     
     inline def setMarginBottom(value: Double): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
     

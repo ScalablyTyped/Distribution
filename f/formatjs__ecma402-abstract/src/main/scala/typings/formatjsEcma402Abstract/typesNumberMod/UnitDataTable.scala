@@ -18,7 +18,8 @@ object UnitDataTable {
     __obj.asInstanceOf[UnitDataTable]
   }
   
-  extension [Self <: UnitDataTable](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitDataTable] (val x: Self) extends AnyVal {
     
     inline def setCompound(value: Record[String, CompoundUnitData]): Self = StObject.set(x, "compound", value.asInstanceOf[js.Any])
     

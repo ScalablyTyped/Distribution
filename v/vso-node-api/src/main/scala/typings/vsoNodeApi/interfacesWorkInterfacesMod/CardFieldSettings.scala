@@ -62,7 +62,8 @@ object CardFieldSettings {
     __obj.asInstanceOf[CardFieldSettings]
   }
   
-  extension [Self <: CardFieldSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CardFieldSettings] (val x: Self) extends AnyVal {
     
     inline def setAdditionalFields(value: js.Array[FieldInfo]): Self = StObject.set(x, "additionalFields", value.asInstanceOf[js.Any])
     

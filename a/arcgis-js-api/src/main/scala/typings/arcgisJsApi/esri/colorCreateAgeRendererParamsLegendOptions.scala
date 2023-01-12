@@ -27,7 +27,8 @@ object colorCreateAgeRendererParamsLegendOptions {
     __obj.asInstanceOf[colorCreateAgeRendererParamsLegendOptions]
   }
   
-  extension [Self <: colorCreateAgeRendererParamsLegendOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: colorCreateAgeRendererParamsLegendOptions] (val x: Self) extends AnyVal {
     
     inline def setShowLegend(value: Boolean): Self = StObject.set(x, "showLegend", value.asInstanceOf[js.Any])
     

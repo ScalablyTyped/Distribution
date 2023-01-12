@@ -27,7 +27,8 @@ object UIkitModalOptions {
     __obj.asInstanceOf[UIkitModalOptions]
   }
   
-  extension [Self <: UIkitModalOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UIkitModalOptions] (val x: Self) extends AnyVal {
     
     inline def `setBg-close`(value: Boolean): Self = StObject.set(x, "bg-close", value.asInstanceOf[js.Any])
     

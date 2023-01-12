@@ -30,7 +30,8 @@ object punycodeMod {
     @js.native
     val ^ : ucs2 = js.native
     
-    extension [Self <: ucs2](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ucs2] (val x: Self) extends AnyVal {
       
       inline def setDecode(value: String => String): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       

@@ -113,7 +113,8 @@ object FaxConfiguration {
     __obj.asInstanceOf[FaxConfiguration]
   }
   
-  extension [Self <: FaxConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxConfiguration] (val x: Self) extends AnyVal {
     
     inline def setAllowPersonalCoverPages(value: Boolean): Self = StObject.set(x, "AllowPersonalCoverPages", value.asInstanceOf[js.Any])
     

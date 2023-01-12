@@ -21,7 +21,8 @@ object FontDescriptor {
     __obj.asInstanceOf[FontDescriptor]
   }
   
-  extension [Self <: FontDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FontDescriptor] (val x: Self) extends AnyVal {
     
     inline def setAttributes(value: Name): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
     

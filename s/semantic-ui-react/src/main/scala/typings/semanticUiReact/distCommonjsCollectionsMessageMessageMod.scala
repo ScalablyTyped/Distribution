@@ -173,7 +173,8 @@ object distCommonjsCollectionsMessageMessageMod extends Shortcut {
       __obj.asInstanceOf[StrictMessageProps]
     }
     
-    extension [Self <: StrictMessageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StrictMessageProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: Any): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

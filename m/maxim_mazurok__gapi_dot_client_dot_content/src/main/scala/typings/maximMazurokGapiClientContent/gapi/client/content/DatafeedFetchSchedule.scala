@@ -43,7 +43,8 @@ object DatafeedFetchSchedule {
     __obj.asInstanceOf[DatafeedFetchSchedule]
   }
   
-  extension [Self <: DatafeedFetchSchedule](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatafeedFetchSchedule] (val x: Self) extends AnyVal {
     
     inline def setDayOfMonth(value: Double): Self = StObject.set(x, "dayOfMonth", value.asInstanceOf[js.Any])
     

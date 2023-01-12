@@ -27,7 +27,8 @@ object distTypesResponsiveEditorSystemDistComponentsVerticalDragLinesMod extends
       __obj.asInstanceOf[VerticalDragLinesProps]
     }
     
-    extension [Self <: VerticalDragLinesProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VerticalDragLinesProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: String | Double): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

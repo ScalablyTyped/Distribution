@@ -17,7 +17,8 @@ object IsChildWindow {
     __obj.asInstanceOf[IsChildWindow]
   }
   
-  extension [Self <: IsChildWindow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IsChildWindow] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "Cancel", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object CreateWorldTemplateRequest {
     __obj.asInstanceOf[CreateWorldTemplateRequest]
   }
   
-  extension [Self <: CreateWorldTemplateRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateWorldTemplateRequest] (val x: Self) extends AnyVal {
     
     inline def setClientRequestToken(value: ClientRequestToken): Self = StObject.set(x, "clientRequestToken", value.asInstanceOf[js.Any])
     

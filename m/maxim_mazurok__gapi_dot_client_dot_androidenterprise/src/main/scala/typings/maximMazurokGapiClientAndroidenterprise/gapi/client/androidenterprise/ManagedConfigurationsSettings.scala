@@ -22,7 +22,8 @@ object ManagedConfigurationsSettings {
     __obj.asInstanceOf[ManagedConfigurationsSettings]
   }
   
-  extension [Self <: ManagedConfigurationsSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ManagedConfigurationsSettings] (val x: Self) extends AnyVal {
     
     inline def setLastUpdatedTimestampMillis(value: String): Self = StObject.set(x, "lastUpdatedTimestampMillis", value.asInstanceOf[js.Any])
     

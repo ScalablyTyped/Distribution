@@ -21,7 +21,8 @@ object ISVGPathSegLinetoAbs {
     __obj.asInstanceOf[ISVGPathSegLinetoAbs]
   }
   
-  extension [Self <: ISVGPathSegLinetoAbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISVGPathSegLinetoAbs] (val x: Self) extends AnyVal {
     
     inline def setMSHTMLDotISVGPathSegLinetoAbs_typekey(value: ISVGPathSegLinetoAbs): Self = StObject.set(x, "MSHTML.ISVGPathSegLinetoAbs_typekey", value.asInstanceOf[js.Any])
     

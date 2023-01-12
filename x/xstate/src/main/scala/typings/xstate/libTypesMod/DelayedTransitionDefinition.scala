@@ -28,7 +28,8 @@ object DelayedTransitionDefinition {
     __obj.asInstanceOf[DelayedTransitionDefinition[TContext, TEvent]]
   }
   
-  extension [Self <: DelayedTransitionDefinition[?, ?], TContext, TEvent /* <: EventObject */](x: Self & (DelayedTransitionDefinition[TContext, TEvent])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DelayedTransitionDefinition[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (DelayedTransitionDefinition[TContext, TEvent])) extends AnyVal {
     
     inline def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

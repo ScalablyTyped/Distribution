@@ -19,7 +19,8 @@ object LeadgenDialogResponse {
     __obj.asInstanceOf[LeadgenDialogResponse]
   }
   
-  extension [Self <: LeadgenDialogResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LeadgenDialogResponse] (val x: Self) extends AnyVal {
     
     inline def setFormID(value: String): Self = StObject.set(x, "formID", value.asInstanceOf[js.Any])
     

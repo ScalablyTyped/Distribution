@@ -109,7 +109,8 @@ object distUtilsTapableHookMod {
       __obj.asInstanceOf[FullTap]
     }
     
-    extension [Self <: FullTap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FullTap] (val x: Self) extends AnyVal {
       
       inline def setFn(value: js.Function): Self = StObject.set(x, "fn", value.asInstanceOf[js.Any])
       
@@ -150,7 +151,8 @@ object distUtilsTapableHookMod {
       __obj.asInstanceOf[Tap]
     }
     
-    extension [Self <: Tap](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Tap] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }
@@ -169,7 +171,8 @@ object distUtilsTapableHookMod {
       __obj.asInstanceOf[TapOptions]
     }
     
-    extension [Self <: TapOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TapOptions] (val x: Self) extends AnyVal {
       
       inline def setBefore(value: String): Self = StObject.set(x, "before", value.asInstanceOf[js.Any])
       

@@ -23,7 +23,8 @@ object RightsizingRecommendationConfiguration {
     __obj.asInstanceOf[RightsizingRecommendationConfiguration]
   }
   
-  extension [Self <: RightsizingRecommendationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RightsizingRecommendationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setBenefitsConsidered(value: GenericBoolean): Self = StObject.set(x, "BenefitsConsidered", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object Branchpolicyid {
     __obj.asInstanceOf[Branchpolicyid]
   }
   
-  extension [Self <: Branchpolicyid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Branchpolicyid] (val x: Self) extends AnyVal {
     
     inline def setBranch_policy_id(
       value: /* import warning: importer.ImportType#apply Failed type conversion: @octokit/openapi-types.@octokit/openapi-types.components['parameters']['branch-policy-id'] */ js.Any

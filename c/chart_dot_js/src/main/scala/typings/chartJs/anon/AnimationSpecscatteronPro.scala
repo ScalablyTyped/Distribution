@@ -67,7 +67,8 @@ object AnimationSpecscatteronPro {
     __obj.asInstanceOf[AnimationSpecscatteronPro]
   }
   
-  extension [Self <: AnimationSpecscatteronPro](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnimationSpecscatteronPro] (val x: Self) extends AnyVal {
     
     inline def setDelay(value: Scriptable[Double, ScriptableContext[scatter]]): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
     

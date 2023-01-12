@@ -15,7 +15,8 @@ object Formatter {
     __obj.asInstanceOf[Formatter]
   }
   
-  extension [Self <: Formatter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Formatter] (val x: Self) extends AnyVal {
     
     inline def setInterpolate(value: (String, Any, String) => js.Array[Any] | Null): Self = StObject.set(x, "interpolate", js.Any.fromFunction3(value))
   }

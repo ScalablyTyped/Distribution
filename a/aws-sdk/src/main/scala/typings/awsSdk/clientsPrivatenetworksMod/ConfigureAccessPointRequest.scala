@@ -43,7 +43,8 @@ object ConfigureAccessPointRequest {
     __obj.asInstanceOf[ConfigureAccessPointRequest]
   }
   
-  extension [Self <: ConfigureAccessPointRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConfigureAccessPointRequest] (val x: Self) extends AnyVal {
     
     inline def setAccessPointArn(value: Arn): Self = StObject.set(x, "accessPointArn", value.asInstanceOf[js.Any])
     

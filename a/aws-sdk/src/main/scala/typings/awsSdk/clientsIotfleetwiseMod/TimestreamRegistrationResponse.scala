@@ -47,7 +47,8 @@ object TimestreamRegistrationResponse {
     __obj.asInstanceOf[TimestreamRegistrationResponse]
   }
   
-  extension [Self <: TimestreamRegistrationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TimestreamRegistrationResponse] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: errorMessage): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

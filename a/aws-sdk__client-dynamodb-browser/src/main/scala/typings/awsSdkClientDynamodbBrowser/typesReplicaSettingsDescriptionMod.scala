@@ -60,7 +60,8 @@ object typesReplicaSettingsDescriptionMod {
       __obj.asInstanceOf[ReplicaSettingsDescription]
     }
     
-    extension [Self <: ReplicaSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ReplicaSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setRegionName(value: String): Self = StObject.set(x, "RegionName", value.asInstanceOf[js.Any])
       
@@ -123,7 +124,8 @@ object typesReplicaSettingsDescriptionMod {
       __obj.asInstanceOf[UnmarshalledReplicaSettingsDescription]
     }
     
-    extension [Self <: UnmarshalledReplicaSettingsDescription](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UnmarshalledReplicaSettingsDescription] (val x: Self) extends AnyVal {
       
       inline def setReplicaGlobalSecondaryIndexSettings(value: js.Array[UnmarshalledReplicaGlobalSecondaryIndexSettingsDescription]): Self = StObject.set(x, "ReplicaGlobalSecondaryIndexSettings", value.asInstanceOf[js.Any])
       

@@ -73,7 +73,8 @@ object ParagraphInfo {
     __obj.asInstanceOf[ParagraphInfo]
   }
   
-  extension [Self <: ParagraphInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParagraphInfo] (val x: Self) extends AnyVal {
     
     inline def setBulletType(value: String): Self = StObject.set(x, "bulletType", value.asInstanceOf[js.Any])
     

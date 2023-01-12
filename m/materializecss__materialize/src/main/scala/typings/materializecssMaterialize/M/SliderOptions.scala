@@ -37,7 +37,8 @@ object SliderOptions {
     __obj.asInstanceOf[SliderOptions]
   }
   
-  extension [Self <: SliderOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SliderOptions] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object GetSubnetCidrReservationsResult {
     __obj.asInstanceOf[GetSubnetCidrReservationsResult]
   }
   
-  extension [Self <: GetSubnetCidrReservationsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSubnetCidrReservationsResult] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

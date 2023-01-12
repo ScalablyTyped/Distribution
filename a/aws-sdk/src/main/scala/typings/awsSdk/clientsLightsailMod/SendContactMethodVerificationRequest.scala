@@ -18,7 +18,8 @@ object SendContactMethodVerificationRequest {
     __obj.asInstanceOf[SendContactMethodVerificationRequest]
   }
   
-  extension [Self <: SendContactMethodVerificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SendContactMethodVerificationRequest] (val x: Self) extends AnyVal {
     
     inline def setProtocol(value: ContactMethodVerificationProtocol): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
   }

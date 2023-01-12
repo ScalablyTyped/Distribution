@@ -17,7 +17,8 @@ object Invalid {
     __obj.asInstanceOf[Invalid]
   }
   
-  extension [Self <: Invalid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Invalid] (val x: Self) extends AnyVal {
     
     inline def setInvalid(value: String): Self = StObject.set(x, "invalid", value.asInstanceOf[js.Any])
     

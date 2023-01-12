@@ -23,7 +23,8 @@ object SystemControl {
     __obj.asInstanceOf[SystemControl]
   }
   
-  extension [Self <: SystemControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SystemControl] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])
     

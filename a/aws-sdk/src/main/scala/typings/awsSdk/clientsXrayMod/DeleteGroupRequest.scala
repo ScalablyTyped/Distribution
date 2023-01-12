@@ -23,7 +23,8 @@ object DeleteGroupRequest {
     __obj.asInstanceOf[DeleteGroupRequest]
   }
   
-  extension [Self <: DeleteGroupRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteGroupRequest] (val x: Self) extends AnyVal {
     
     inline def setGroupARN(value: GroupARN): Self = StObject.set(x, "GroupARN", value.asInstanceOf[js.Any])
     

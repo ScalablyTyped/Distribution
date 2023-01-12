@@ -28,7 +28,8 @@ object CancelStepsInput {
     __obj.asInstanceOf[CancelStepsInput]
   }
   
-  extension [Self <: CancelStepsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelStepsInput] (val x: Self) extends AnyVal {
     
     inline def setClusterId(value: XmlStringMaxLen256): Self = StObject.set(x, "ClusterId", value.asInstanceOf[js.Any])
     

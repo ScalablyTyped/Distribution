@@ -38,7 +38,8 @@ object DocumentReviewerResponseSource {
     __obj.asInstanceOf[DocumentReviewerResponseSource]
   }
   
-  extension [Self <: DocumentReviewerResponseSource](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentReviewerResponseSource] (val x: Self) extends AnyVal {
     
     inline def setComment(value: DocumentReviewCommentList): Self = StObject.set(x, "Comment", value.asInstanceOf[js.Any])
     

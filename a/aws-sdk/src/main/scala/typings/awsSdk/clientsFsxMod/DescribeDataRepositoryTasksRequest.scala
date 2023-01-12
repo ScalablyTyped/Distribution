@@ -27,7 +27,8 @@ object DescribeDataRepositoryTasksRequest {
     __obj.asInstanceOf[DescribeDataRepositoryTasksRequest]
   }
   
-  extension [Self <: DescribeDataRepositoryTasksRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeDataRepositoryTasksRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: DataRepositoryTaskFilters): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

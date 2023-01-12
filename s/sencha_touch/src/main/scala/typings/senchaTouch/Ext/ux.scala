@@ -21,7 +21,8 @@ object ux {
       __obj.asInstanceOf[IActionOverFlowMenuButton]
     }
     
-    extension [Self <: IActionOverFlowMenuButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IActionOverFlowMenuButton] (val x: Self) extends AnyVal {
       
       inline def setMenuItems(value: Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object ux {
       __obj.asInstanceOf[IMenuButton]
     }
     
-    extension [Self <: IMenuButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMenuButton] (val x: Self) extends AnyVal {
       
       inline def setGetMenuItems(value: () => Array): Self = StObject.set(x, "getMenuItems", js.Any.fromFunction0(value))
       
@@ -89,7 +91,8 @@ object ux {
       __obj.asInstanceOf[ITabMenuButton]
     }
     
-    extension [Self <: ITabMenuButton](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITabMenuButton] (val x: Self) extends AnyVal {
       
       inline def setMenuItems(value: Any): Self = StObject.set(x, "menuItems", value.asInstanceOf[js.Any])
       
@@ -163,7 +166,8 @@ object ux {
           __obj.asInstanceOf[IAbstract]
         }
         
-        extension [Self <: IAbstract](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: IAbstract] (val x: Self) extends AnyVal {
           
           inline def setGetAccountID(value: () => Any): Self = StObject.set(x, "getAccountID", js.Any.fromFunction0(value))
           
@@ -204,7 +208,8 @@ object ux {
           __obj.asInstanceOf[ICordova]
         }
         
-        extension [Self <: ICordova](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: ICordova] (val x: Self) extends AnyVal {
           
           inline def setTrackPageview(value: /* page */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "trackPageview", js.Any.fromFunction1(value))
           
@@ -251,7 +256,8 @@ object ux {
           __obj.asInstanceOf[typings.senchaTouch.Ext.ux.device.twitter.IAbstract]
         }
         
-        extension [Self <: typings.senchaTouch.Ext.ux.device.twitter.IAbstract](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.senchaTouch.Ext.ux.device.twitter.IAbstract] (val x: Self) extends AnyVal {
           
           inline def setCompose(value: /* config */ js.UndefOr[Any] => Unit): Self = StObject.set(x, "compose", js.Any.fromFunction1(value))
           

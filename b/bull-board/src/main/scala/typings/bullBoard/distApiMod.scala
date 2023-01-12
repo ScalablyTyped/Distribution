@@ -21,7 +21,8 @@ object distApiMod {
       __obj.asInstanceOf[GetQueues]
     }
     
-    extension [Self <: GetQueues](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GetQueues] (val x: Self) extends AnyVal {
       
       inline def setQueues(value: js.Array[AppQueue]): Self = StObject.set(x, "queues", value.asInstanceOf[js.Any])
       

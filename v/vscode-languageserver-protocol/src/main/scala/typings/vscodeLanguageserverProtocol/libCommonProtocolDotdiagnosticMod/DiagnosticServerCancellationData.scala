@@ -21,7 +21,8 @@ object DiagnosticServerCancellationData {
   
   inline def is(value: Any): /* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.diagnostic.DiagnosticServerCancellationData */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-protocol.vscode-languageserver-protocol/lib/common/protocol.diagnostic.DiagnosticServerCancellationData */ Boolean]
   
-  extension [Self <: DiagnosticServerCancellationData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DiagnosticServerCancellationData] (val x: Self) extends AnyVal {
     
     inline def setRetriggerRequest(value: Boolean): Self = StObject.set(x, "retriggerRequest", value.asInstanceOf[js.Any])
   }

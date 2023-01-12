@@ -22,7 +22,8 @@ object NonCompliantFile {
     __obj.asInstanceOf[NonCompliantFile]
   }
   
-  extension [Self <: NonCompliantFile](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NonCompliantFile] (val x: Self) extends AnyVal {
     
     inline def setDisplayCommand(value: String): Self = StObject.set(x, "displayCommand", value.asInstanceOf[js.Any])
     

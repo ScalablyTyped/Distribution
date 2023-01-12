@@ -26,7 +26,8 @@ object libCascaderTypesMod {
       __obj.asInstanceOf[ICascaderDataItem]
     }
     
-    extension [Self <: ICascaderDataItem](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICascaderDataItem] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: js.Array[ICascaderDataItem]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -83,7 +84,8 @@ object libCascaderTypesMod {
       __obj.asInstanceOf[ICascaderProps]
     }
     
-    extension [Self <: ICascaderProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ICascaderProps] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       

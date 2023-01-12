@@ -197,7 +197,8 @@ object mod {
       __obj.asInstanceOf[NumeratorDenominator]
     }
     
-    extension [Self <: NumeratorDenominator](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NumeratorDenominator] (val x: Self) extends AnyVal {
       
       inline def setD(value: Double): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
       

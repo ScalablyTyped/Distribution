@@ -43,7 +43,8 @@ object ImageAngleParametersProperties {
     __obj.asInstanceOf[ImageAngleParametersProperties]
   }
   
-  extension [Self <: ImageAngleParametersProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAngleParametersProperties] (val x: Self) extends AnyVal {
     
     inline def setAngleNames(value: js.Array[String]): Self = StObject.set(x, "angleNames", value.asInstanceOf[js.Any])
     

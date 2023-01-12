@@ -233,7 +233,8 @@ object TagifyCoreSettings {
     __obj.asInstanceOf[TagifyCoreSettings[T]]
   }
   
-  extension [Self <: TagifyCoreSettings[?], T /* <: BaseTagData */](x: Self & TagifyCoreSettings[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TagifyCoreSettings[?], T /* <: BaseTagData */] (val x: Self & TagifyCoreSettings[T]) extends AnyVal {
     
     inline def setAddTagOnBlur(value: Boolean): Self = StObject.set(x, "addTagOnBlur", value.asInstanceOf[js.Any])
     

@@ -17,7 +17,8 @@ object ResultStatus {
     __obj.asInstanceOf[ResultStatus]
   }
   
-  extension [Self <: ResultStatus](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResultStatus] (val x: Self) extends AnyVal {
     
     inline def setErrorMessage(value: String): Self = StObject.set(x, "errorMessage", value.asInstanceOf[js.Any])
     

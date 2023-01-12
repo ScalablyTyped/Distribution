@@ -45,7 +45,8 @@ object PartialClickOptions {
     __obj.asInstanceOf[PartialClickOptions]
   }
   
-  extension [Self <: PartialClickOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialClickOptions] (val x: Self) extends AnyVal {
     
     inline def setAltKey(value: Boolean): Self = StObject.set(x, "altKey", value.asInstanceOf[js.Any])
     

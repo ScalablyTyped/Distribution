@@ -28,7 +28,8 @@ object TableObject {
     __obj.asInstanceOf[TableObject]
   }
   
-  extension [Self <: TableObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TableObject] (val x: Self) extends AnyVal {
     
     inline def setETag(value: ETagString): Self = StObject.set(x, "ETag", value.asInstanceOf[js.Any])
     

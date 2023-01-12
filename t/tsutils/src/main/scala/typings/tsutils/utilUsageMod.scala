@@ -130,7 +130,8 @@ object utilUsageMod {
       __obj.asInstanceOf[VariableInfo]
     }
     
-    extension [Self <: VariableInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableInfo] (val x: Self) extends AnyVal {
       
       inline def setDeclarations(value: js.Array[Identifier]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
@@ -161,7 +162,8 @@ object utilUsageMod {
       __obj.asInstanceOf[VariableUse]
     }
     
-    extension [Self <: VariableUse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: VariableUse] (val x: Self) extends AnyVal {
       
       inline def setDomain(value: UsageDomain): Self = StObject.set(x, "domain", value.asInstanceOf[js.Any])
       

@@ -51,7 +51,8 @@ object FlashControl {
     __obj.asInstanceOf[FlashControl]
   }
   
-  extension [Self <: FlashControl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FlashControl] (val x: Self) extends AnyVal {
     
     inline def setAssistantLightEnabled(value: Boolean): Self = StObject.set(x, "assistantLightEnabled", value.asInstanceOf[js.Any])
     

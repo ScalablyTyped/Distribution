@@ -43,7 +43,8 @@ object IMapElementStyle {
     __obj.asInstanceOf[IMapElementStyle]
   }
   
-  extension [Self <: IMapElementStyle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IMapElementStyle] (val x: Self) extends AnyVal {
     
     inline def setFillColor(value: String): Self = StObject.set(x, "fillColor", value.asInstanceOf[js.Any])
     

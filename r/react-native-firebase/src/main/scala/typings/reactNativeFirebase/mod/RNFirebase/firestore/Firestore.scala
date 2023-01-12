@@ -42,7 +42,8 @@ object Firestore {
     __obj.asInstanceOf[Firestore]
   }
   
-  extension [Self <: Firestore](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Firestore] (val x: Self) extends AnyVal {
     
     inline def setApp(value: App): Self = StObject.set(x, "app", value.asInstanceOf[js.Any])
     

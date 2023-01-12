@@ -25,7 +25,8 @@ object ILaunchActivatedEventArgs {
     __obj.asInstanceOf[ILaunchActivatedEventArgs]
   }
   
-  extension [Self <: ILaunchActivatedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ILaunchActivatedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setArguments(value: String): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
     

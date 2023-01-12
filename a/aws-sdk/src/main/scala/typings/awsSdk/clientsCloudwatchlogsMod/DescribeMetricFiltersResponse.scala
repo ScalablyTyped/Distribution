@@ -20,7 +20,8 @@ object DescribeMetricFiltersResponse {
     __obj.asInstanceOf[DescribeMetricFiltersResponse]
   }
   
-  extension [Self <: DescribeMetricFiltersResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeMetricFiltersResponse] (val x: Self) extends AnyVal {
     
     inline def setMetricFilters(value: MetricFilters): Self = StObject.set(x, "metricFilters", value.asInstanceOf[js.Any])
     

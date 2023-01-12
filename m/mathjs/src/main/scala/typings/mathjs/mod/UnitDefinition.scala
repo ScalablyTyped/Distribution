@@ -23,7 +23,8 @@ object UnitDefinition {
     __obj.asInstanceOf[UnitDefinition]
   }
   
-  extension [Self <: UnitDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UnitDefinition] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])
     

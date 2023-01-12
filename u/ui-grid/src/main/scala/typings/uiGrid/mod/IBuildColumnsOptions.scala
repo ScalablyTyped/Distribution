@@ -15,7 +15,8 @@ object IBuildColumnsOptions {
     __obj.asInstanceOf[IBuildColumnsOptions]
   }
   
-  extension [Self <: IBuildColumnsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IBuildColumnsOptions] (val x: Self) extends AnyVal {
     
     inline def setOrderByColumnDefs(value: Boolean): Self = StObject.set(x, "orderByColumnDefs", value.asInstanceOf[js.Any])
     

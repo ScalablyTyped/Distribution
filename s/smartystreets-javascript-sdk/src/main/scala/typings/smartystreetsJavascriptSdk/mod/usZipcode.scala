@@ -188,7 +188,8 @@ object usZipcode {
       __obj.asInstanceOf[City]
     }
     
-    extension [Self <: City](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: City] (val x: Self) extends AnyVal {
       
       inline def setCity(value: String): Self = StObject.set(x, "city", value.asInstanceOf[js.Any])
       
@@ -217,7 +218,8 @@ object usZipcode {
       __obj.asInstanceOf[County]
     }
     
-    extension [Self <: County](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: County] (val x: Self) extends AnyVal {
       
       inline def setCountyFips(value: Any): Self = StObject.set(x, "countyFips", value.asInstanceOf[js.Any])
       
@@ -321,7 +323,8 @@ object usZipcode {
       __obj.asInstanceOf[ZipCode]
     }
     
-    extension [Self <: ZipCode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ZipCode] (val x: Self) extends AnyVal {
       
       inline def setAlternateCounties(value: js.Array[County]): Self = StObject.set(x, "alternateCounties", value.asInstanceOf[js.Any])
       

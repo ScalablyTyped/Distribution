@@ -23,7 +23,8 @@ object ListConfigurationSetsRequest {
     __obj.asInstanceOf[ListConfigurationSetsRequest]
   }
   
-  extension [Self <: ListConfigurationSetsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListConfigurationSetsRequest] (val x: Self) extends AnyVal {
     
     inline def setNextToken(value: _String): Self = StObject.set(x, "NextToken", value.asInstanceOf[js.Any])
     

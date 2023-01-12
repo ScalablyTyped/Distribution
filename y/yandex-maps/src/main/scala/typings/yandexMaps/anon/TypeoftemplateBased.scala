@@ -17,7 +17,8 @@ object TypeoftemplateBased {
     __obj.asInstanceOf[TypeoftemplateBased]
   }
   
-  extension [Self <: TypeoftemplateBased](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypeoftemplateBased] (val x: Self) extends AnyVal {
     
     inline def setBase(value: Instantiable1[/* data */ js.Object, Base]): Self = StObject.set(x, "Base", value.asInstanceOf[js.Any])
   }

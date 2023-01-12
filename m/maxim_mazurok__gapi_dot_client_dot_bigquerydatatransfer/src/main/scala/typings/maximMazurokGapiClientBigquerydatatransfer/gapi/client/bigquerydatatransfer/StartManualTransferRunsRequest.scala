@@ -19,7 +19,8 @@ object StartManualTransferRunsRequest {
     __obj.asInstanceOf[StartManualTransferRunsRequest]
   }
   
-  extension [Self <: StartManualTransferRunsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StartManualTransferRunsRequest] (val x: Self) extends AnyVal {
     
     inline def setRequestedRunTime(value: String): Self = StObject.set(x, "requestedRunTime", value.asInstanceOf[js.Any])
     

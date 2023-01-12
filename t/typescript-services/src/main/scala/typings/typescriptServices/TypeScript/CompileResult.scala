@@ -17,7 +17,8 @@ object CompileResult {
     __obj.asInstanceOf[CompileResult]
   }
   
-  extension [Self <: CompileResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompileResult] (val x: Self) extends AnyVal {
     
     inline def setDiagnostics(value: js.Array[Diagnostic]): Self = StObject.set(x, "diagnostics", value.asInstanceOf[js.Any])
     

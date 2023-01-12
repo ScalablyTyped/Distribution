@@ -23,7 +23,8 @@ object CustomEmailLambdaVersionConfigType {
     __obj.asInstanceOf[CustomEmailLambdaVersionConfigType]
   }
   
-  extension [Self <: CustomEmailLambdaVersionConfigType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CustomEmailLambdaVersionConfigType] (val x: Self) extends AnyVal {
     
     inline def setLambdaArn(value: ArnType): Self = StObject.set(x, "LambdaArn", value.asInstanceOf[js.Any])
     

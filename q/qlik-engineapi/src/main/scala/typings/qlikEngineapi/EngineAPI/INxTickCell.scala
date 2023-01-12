@@ -31,7 +31,8 @@ object INxTickCell {
     __obj.asInstanceOf[INxTickCell]
   }
   
-  extension [Self <: INxTickCell](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: INxTickCell] (val x: Self) extends AnyVal {
     
     inline def setQEnd(value: Double): Self = StObject.set(x, "qEnd", value.asInstanceOf[js.Any])
     

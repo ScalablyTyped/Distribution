@@ -19,7 +19,8 @@ object IGeometryEditorModel {
     __obj.asInstanceOf[IGeometryEditorModel]
   }
   
-  extension [Self <: IGeometryEditorModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGeometryEditorModel] (val x: Self) extends AnyVal {
     
     inline def setDestroy(value: () => Unit): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
     

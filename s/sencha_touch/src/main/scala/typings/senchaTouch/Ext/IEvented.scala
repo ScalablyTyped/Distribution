@@ -26,7 +26,8 @@ object IEvented {
     __obj.asInstanceOf[IEvented]
   }
   
-  extension [Self <: IEvented](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IEvented] (val x: Self) extends AnyVal {
     
     inline def setRelayEvents(value: (/* object */ js.UndefOr[Any], /* events */ js.UndefOr[Any]) => IObservable): Self = StObject.set(x, "relayEvents", js.Any.fromFunction2(value))
     

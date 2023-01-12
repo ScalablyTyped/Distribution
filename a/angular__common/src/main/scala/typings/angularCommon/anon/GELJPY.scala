@@ -17,7 +17,8 @@ object GELJPY {
     __obj.asInstanceOf[GELJPY]
   }
   
-  extension [Self <: GELJPY](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GELJPY] (val x: Self) extends AnyVal {
     
     inline def setGEL(value: js.Array[String]): Self = StObject.set(x, "GEL", value.asInstanceOf[js.Any])
     

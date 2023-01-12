@@ -21,7 +21,8 @@ object PluginsSetDetails {
     __obj.asInstanceOf[PluginsSetDetails]
   }
   
-  extension [Self <: PluginsSetDetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PluginsSetDetails] (val x: Self) extends AnyVal {
     
     inline def setSetting(value: allow | block | detect_important_content): Self = StObject.set(x, "setting", value.asInstanceOf[js.Any])
   }

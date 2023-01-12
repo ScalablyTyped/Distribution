@@ -23,7 +23,8 @@ object FrameContext {
     __obj.asInstanceOf[FrameContext]
   }
   
-  extension [Self <: FrameContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FrameContext] (val x: Self) extends AnyVal {
     
     inline def setContentUrl(value: String): Self = StObject.set(x, "contentUrl", value.asInstanceOf[js.Any])
     

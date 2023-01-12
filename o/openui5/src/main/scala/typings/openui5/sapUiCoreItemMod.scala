@@ -272,7 +272,8 @@ object sapUiCoreItemMod {
       __obj.asInstanceOf[ItemSettings]
     }
     
-    extension [Self <: ItemSettings](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ItemSettings] (val x: Self) extends AnyVal {
       
       inline def setEnabled(value: Boolean | PropertyBindingInfo | (/* template literal string: {${string}} */ String)): Self = StObject.set(x, "enabled", value.asInstanceOf[js.Any])
       

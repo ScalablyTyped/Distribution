@@ -46,7 +46,8 @@ object Calls {
     __obj.asInstanceOf[Calls]
   }
   
-  extension [Self <: Calls](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Calls] (val x: Self) extends AnyVal {
     
     inline def setCalls(value: Double): Self = StObject.set(x, "calls", value.asInstanceOf[js.Any])
     

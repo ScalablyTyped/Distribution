@@ -19,7 +19,8 @@ object FileEntry {
     __obj.asInstanceOf[FileEntry]
   }
   
-  extension [Self <: FileEntry](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FileEntry] (val x: Self) extends AnyVal {
     
     inline def setAttrs(value: Attributes): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
     

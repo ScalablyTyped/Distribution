@@ -18,7 +18,8 @@ object DoneInvokeEvent {
     __obj.asInstanceOf[DoneInvokeEvent[TData]]
   }
   
-  extension [Self <: DoneInvokeEvent[?], TData](x: Self & DoneInvokeEvent[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoneInvokeEvent[?], TData] (val x: Self & DoneInvokeEvent[TData]) extends AnyVal {
     
     inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
   }

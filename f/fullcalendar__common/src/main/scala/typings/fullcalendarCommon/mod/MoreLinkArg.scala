@@ -32,7 +32,8 @@ object MoreLinkArg {
     __obj.asInstanceOf[MoreLinkArg]
   }
   
-  extension [Self <: MoreLinkArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MoreLinkArg] (val x: Self) extends AnyVal {
     
     inline def setAllDay(value: Boolean): Self = StObject.set(x, "allDay", value.asInstanceOf[js.Any])
     

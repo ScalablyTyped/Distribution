@@ -18,7 +18,8 @@ object ParametricS3MonitoringConfiguration {
     __obj.asInstanceOf[ParametricS3MonitoringConfiguration]
   }
   
-  extension [Self <: ParametricS3MonitoringConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParametricS3MonitoringConfiguration] (val x: Self) extends AnyVal {
     
     inline def setLogUri(value: UriString): Self = StObject.set(x, "logUri", value.asInstanceOf[js.Any])
     

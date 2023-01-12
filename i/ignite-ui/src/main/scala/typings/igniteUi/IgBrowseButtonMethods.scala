@@ -22,7 +22,8 @@ object IgBrowseButtonMethods {
     __obj.asInstanceOf[IgBrowseButtonMethods]
   }
   
-  extension [Self <: IgBrowseButtonMethods](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgBrowseButtonMethods] (val x: Self) extends AnyVal {
     
     inline def setAttachFilePicker(value: (js.Object, js.Object) => Unit): Self = StObject.set(x, "attachFilePicker", js.Any.fromFunction2(value))
     

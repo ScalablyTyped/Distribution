@@ -87,7 +87,8 @@ object libOptionsMod {
       __obj.asInstanceOf[CheerioOptions]
     }
     
-    extension [Self <: CheerioOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheerioOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseURI(value: String | URL): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
       
@@ -172,7 +173,8 @@ object libOptionsMod {
       __obj.asInstanceOf[HTMLParser2Options]
     }
     
-    extension [Self <: HTMLParser2Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HTMLParser2Options] (val x: Self) extends AnyVal {
       
       inline def setDecodeEntities(value: Boolean): Self = StObject.set(x, "decodeEntities", value.asInstanceOf[js.Any])
       
@@ -262,7 +264,8 @@ object libOptionsMod {
       __obj.asInstanceOf[InternalOptions]
     }
     
-    extension [Self <: InternalOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InternalOptions] (val x: Self) extends AnyVal {
       
       inline def setBaseURI(value: String | URL): Self = StObject.set(x, "baseURI", value.asInstanceOf[js.Any])
       
@@ -352,7 +355,8 @@ object libOptionsMod {
       __obj.asInstanceOf[Parse5Options]
     }
     
-    extension [Self <: Parse5Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Parse5Options] (val x: Self) extends AnyVal {
       
       inline def setScriptingEnabled(value: Boolean): Self = StObject.set(x, "scriptingEnabled", value.asInstanceOf[js.Any])
       

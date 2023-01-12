@@ -23,7 +23,8 @@ object TransactGetItemsOutput {
     __obj.asInstanceOf[TransactGetItemsOutput]
   }
   
-  extension [Self <: TransactGetItemsOutput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransactGetItemsOutput] (val x: Self) extends AnyVal {
     
     inline def setConsumedCapacity(value: ConsumedCapacityMultiple): Self = StObject.set(x, "ConsumedCapacity", value.asInstanceOf[js.Any])
     

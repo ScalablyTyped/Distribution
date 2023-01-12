@@ -19,7 +19,8 @@ object PlaceholderRendererProps {
     __obj.asInstanceOf[PlaceholderRendererProps[T]]
   }
   
-  extension [Self <: PlaceholderRendererProps[?], T](x: Self & PlaceholderRendererProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PlaceholderRendererProps[?], T] (val x: Self & PlaceholderRendererProps[T]) extends AnyVal {
     
     inline def setCanDrop(value: Boolean): Self = StObject.set(x, "canDrop", value.asInstanceOf[js.Any])
     

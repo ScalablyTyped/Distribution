@@ -21,7 +21,8 @@ object MipsRegOperand {
     __obj.asInstanceOf[MipsRegOperand]
   }
   
-  extension [Self <: MipsRegOperand](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MipsRegOperand] (val x: Self) extends AnyVal {
     
     inline def setType(value: reg): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

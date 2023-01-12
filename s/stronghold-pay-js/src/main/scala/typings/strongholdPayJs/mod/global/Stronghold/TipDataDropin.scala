@@ -23,7 +23,8 @@ object TipDataDropin {
     __obj.asInstanceOf[TipDataDropin]
   }
   
-  extension [Self <: TipDataDropin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TipDataDropin] (val x: Self) extends AnyVal {
     
     inline def setAmount(value: Double): Self = StObject.set(x, "amount", value.asInstanceOf[js.Any])
     

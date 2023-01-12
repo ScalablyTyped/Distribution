@@ -19,7 +19,8 @@ object SetMembershipsParameters {
     __obj.asInstanceOf[SetMembershipsParameters[Custom]]
   }
   
-  extension [Self <: SetMembershipsParameters[?], Custom /* <: ObjectCustom */](x: Self & SetMembershipsParameters[Custom]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SetMembershipsParameters[?], Custom /* <: ObjectCustom */] (val x: Self & SetMembershipsParameters[Custom]) extends AnyVal {
     
     inline def setChannels(value: js.Array[String | SetCustom[Custom]]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
     

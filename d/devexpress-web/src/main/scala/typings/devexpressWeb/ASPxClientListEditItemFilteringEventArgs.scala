@@ -33,7 +33,8 @@ object ASPxClientListEditItemFilteringEventArgs {
     __obj.asInstanceOf[ASPxClientListEditItemFilteringEventArgs]
   }
   
-  extension [Self <: ASPxClientListEditItemFilteringEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientListEditItemFilteringEventArgs] (val x: Self) extends AnyVal {
     
     inline def setFilter(value: String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     

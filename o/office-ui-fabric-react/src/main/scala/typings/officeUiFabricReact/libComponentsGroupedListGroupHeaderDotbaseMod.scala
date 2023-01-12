@@ -61,7 +61,8 @@ object libComponentsGroupedListGroupHeaderDotbaseMod {
       __obj.asInstanceOf[IGroupHeaderState]
     }
     
-    extension [Self <: IGroupHeaderState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroupHeaderState] (val x: Self) extends AnyVal {
       
       inline def setIsCollapsed(value: Boolean): Self = StObject.set(x, "isCollapsed", value.asInstanceOf[js.Any])
       

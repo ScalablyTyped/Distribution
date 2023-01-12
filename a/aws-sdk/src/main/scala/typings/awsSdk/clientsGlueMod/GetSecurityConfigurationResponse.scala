@@ -18,7 +18,8 @@ object GetSecurityConfigurationResponse {
     __obj.asInstanceOf[GetSecurityConfigurationResponse]
   }
   
-  extension [Self <: GetSecurityConfigurationResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetSecurityConfigurationResponse] (val x: Self) extends AnyVal {
     
     inline def setSecurityConfiguration(value: SecurityConfiguration): Self = StObject.set(x, "SecurityConfiguration", value.asInstanceOf[js.Any])
     

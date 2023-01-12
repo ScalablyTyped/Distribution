@@ -49,7 +49,8 @@ object mod {
       __obj.asInstanceOf[TWindowSize]
     }
     
-    extension [Self <: TWindowSize](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TWindowSize] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -76,7 +77,8 @@ object mod {
       __obj.asInstanceOf[WindowSizeProps]
     }
     
-    extension [Self <: WindowSizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WindowSizeProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Height => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
     }

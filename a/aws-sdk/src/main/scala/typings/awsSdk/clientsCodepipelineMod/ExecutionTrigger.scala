@@ -23,7 +23,8 @@ object ExecutionTrigger {
     __obj.asInstanceOf[ExecutionTrigger]
   }
   
-  extension [Self <: ExecutionTrigger](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExecutionTrigger] (val x: Self) extends AnyVal {
     
     inline def setTriggerDetail(value: TriggerDetail): Self = StObject.set(x, "triggerDetail", value.asInstanceOf[js.Any])
     

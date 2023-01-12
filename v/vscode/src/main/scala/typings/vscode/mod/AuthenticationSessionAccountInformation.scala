@@ -23,7 +23,8 @@ object AuthenticationSessionAccountInformation {
     __obj.asInstanceOf[AuthenticationSessionAccountInformation]
   }
   
-  extension [Self <: AuthenticationSessionAccountInformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AuthenticationSessionAccountInformation] (val x: Self) extends AnyVal {
     
     inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     

@@ -16,7 +16,8 @@ object DefaultActionsContainer {
     __obj.asInstanceOf[DefaultActionsContainer]
   }
   
-  extension [Self <: DefaultActionsContainer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DefaultActionsContainer] (val x: Self) extends AnyVal {
     
     inline def setDefaultActionsContainer(value: ViewStyle): Self = StObject.set(x, "defaultActionsContainer", value.asInstanceOf[js.Any])
     

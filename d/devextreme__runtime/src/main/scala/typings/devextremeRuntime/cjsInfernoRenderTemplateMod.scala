@@ -32,7 +32,8 @@ object cjsInfernoRenderTemplateMod {
       __obj.asInstanceOf[IProps]
     }
     
-    extension [Self <: IProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IProps] (val x: Self) extends AnyVal {
       
       inline def setContainer(value: HTMLElementgetindexnumber): Self = StObject.set(x, "container", value.asInstanceOf[js.Any])
       

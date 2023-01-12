@@ -16,7 +16,8 @@ object FXInstance {
     __obj.asInstanceOf[FXInstance]
   }
   
-  extension [Self <: FXInstance](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FXInstance] (val x: Self) extends AnyVal {
     
     inline def setAddFX(value: (String, InstantiableEffect) => Unit): Self = StObject.set(x, "addFX", js.Any.fromFunction2(value))
   }

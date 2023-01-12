@@ -137,7 +137,8 @@ object BindingHandlers_ {
     __obj.asInstanceOf[BindingHandlers_]
   }
   
-  extension [Self <: BindingHandlers_](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BindingHandlers_] (val x: Self) extends AnyVal {
     
     inline def setAttr(value: `2`): Self = StObject.set(x, "attr", value.asInstanceOf[js.Any])
     

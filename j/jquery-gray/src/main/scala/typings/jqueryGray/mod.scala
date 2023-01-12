@@ -19,7 +19,8 @@ object mod {
       __obj.asInstanceOf[Classes]
     }
     
-    extension [Self <: Classes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Classes] (val x: Self) extends AnyVal {
       
       inline def setFade(value: String): Self = StObject.set(x, "fade", value.asInstanceOf[js.Any])
       
@@ -41,7 +42,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setClasses(value: Classes): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
       

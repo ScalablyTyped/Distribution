@@ -22,7 +22,8 @@ object SpannerIODetails {
     __obj.asInstanceOf[SpannerIODetails]
   }
   
-  extension [Self <: SpannerIODetails](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SpannerIODetails] (val x: Self) extends AnyVal {
     
     inline def setDatabaseId(value: String): Self = StObject.set(x, "databaseId", value.asInstanceOf[js.Any])
     

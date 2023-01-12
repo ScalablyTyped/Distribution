@@ -28,7 +28,8 @@ object PubsubTarget {
     __obj.asInstanceOf[PubsubTarget]
   }
   
-  extension [Self <: PubsubTarget](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PubsubTarget] (val x: Self) extends AnyVal {
     
     inline def setAttributes(
       value: /* import warning: importer.ImportType#apply Failed type conversion: {[ P in string ]: string} */ js.Any

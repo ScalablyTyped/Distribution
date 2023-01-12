@@ -680,7 +680,8 @@ object libEsmPuppeteerCommonFrameMod {
       __obj.asInstanceOf[FrameAddScriptTagOptions]
     }
     
-    extension [Self <: FrameAddScriptTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameAddScriptTagOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -731,7 +732,8 @@ object libEsmPuppeteerCommonFrameMod {
       __obj.asInstanceOf[FrameAddStyleTagOptions]
     }
     
-    extension [Self <: FrameAddStyleTagOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameAddStyleTagOptions] (val x: Self) extends AnyVal {
       
       inline def setContent(value: String): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
       
@@ -777,7 +779,8 @@ object libEsmPuppeteerCommonFrameMod {
       __obj.asInstanceOf[FrameWaitForFunctionOptions]
     }
     
-    extension [Self <: FrameWaitForFunctionOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FrameWaitForFunctionOptions] (val x: Self) extends AnyVal {
       
       inline def setPolling(value: raf | mutation | Double): Self = StObject.set(x, "polling", value.asInstanceOf[js.Any])
       

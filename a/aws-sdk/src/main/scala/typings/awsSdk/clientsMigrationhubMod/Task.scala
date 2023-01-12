@@ -28,7 +28,8 @@ object Task {
     __obj.asInstanceOf[Task]
   }
   
-  extension [Self <: Task](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Task] (val x: Self) extends AnyVal {
     
     inline def setProgressPercent(value: ProgressPercent): Self = StObject.set(x, "ProgressPercent", value.asInstanceOf[js.Any])
     

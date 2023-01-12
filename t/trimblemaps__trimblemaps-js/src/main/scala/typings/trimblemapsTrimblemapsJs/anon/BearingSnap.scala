@@ -17,7 +17,8 @@ object BearingSnap {
     __obj.asInstanceOf[BearingSnap]
   }
   
-  extension [Self <: BearingSnap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BearingSnap] (val x: Self) extends AnyVal {
     
     inline def setBearingSnap(value: Double): Self = StObject.set(x, "bearingSnap", value.asInstanceOf[js.Any])
     

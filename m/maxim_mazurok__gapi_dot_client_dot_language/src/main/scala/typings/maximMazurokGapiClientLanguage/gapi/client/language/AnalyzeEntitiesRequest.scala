@@ -19,7 +19,8 @@ object AnalyzeEntitiesRequest {
     __obj.asInstanceOf[AnalyzeEntitiesRequest]
   }
   
-  extension [Self <: AnalyzeEntitiesRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnalyzeEntitiesRequest] (val x: Self) extends AnyVal {
     
     inline def setDocument(value: Document): Self = StObject.set(x, "document", value.asInstanceOf[js.Any])
     

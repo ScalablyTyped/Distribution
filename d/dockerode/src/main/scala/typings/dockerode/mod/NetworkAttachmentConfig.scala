@@ -20,7 +20,8 @@ object NetworkAttachmentConfig {
     __obj.asInstanceOf[NetworkAttachmentConfig]
   }
   
-  extension [Self <: NetworkAttachmentConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkAttachmentConfig] (val x: Self) extends AnyVal {
     
     inline def setAliases(value: js.Array[String]): Self = StObject.set(x, "Aliases", value.asInstanceOf[js.Any])
     

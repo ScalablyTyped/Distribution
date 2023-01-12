@@ -54,7 +54,8 @@ object AssessmentRunAgent {
     __obj.asInstanceOf[AssessmentRunAgent]
   }
   
-  extension [Self <: AssessmentRunAgent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AssessmentRunAgent] (val x: Self) extends AnyVal {
     
     inline def setAgentHealth(value: AgentHealth): Self = StObject.set(x, "agentHealth", value.asInstanceOf[js.Any])
     

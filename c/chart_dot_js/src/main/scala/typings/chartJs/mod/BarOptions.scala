@@ -66,7 +66,8 @@ object BarOptions {
     __obj.asInstanceOf[BarOptions]
   }
   
-  extension [Self <: BarOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BarOptions] (val x: Self) extends AnyVal {
     
     inline def setBackgroundColor(value: Color): Self = StObject.set(x, "backgroundColor", value.asInstanceOf[js.Any])
     

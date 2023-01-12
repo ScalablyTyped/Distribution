@@ -19,7 +19,8 @@ object NetworkCache {
     __obj.asInstanceOf[NetworkCache]
   }
   
-  extension [Self <: NetworkCache](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NetworkCache] (val x: Self) extends AnyVal {
     
     inline def setNetworkCache(value: Double): Self = StObject.set(x, "networkCache", value.asInstanceOf[js.Any])
     

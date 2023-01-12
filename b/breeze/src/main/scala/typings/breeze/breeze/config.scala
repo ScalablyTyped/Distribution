@@ -27,7 +27,8 @@ object config {
       __obj.asInstanceOf[AdapterInstancesConfig]
     }
     
-    extension [Self <: AdapterInstancesConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AdapterInstancesConfig] (val x: Self) extends AnyVal {
       
       inline def setAjax(value: String): Self = StObject.set(x, "ajax", value.asInstanceOf[js.Any])
       

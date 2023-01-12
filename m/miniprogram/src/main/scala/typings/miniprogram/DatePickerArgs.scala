@@ -23,7 +23,8 @@ object DatePickerArgs {
     __obj.asInstanceOf[DatePickerArgs]
   }
   
-  extension [Self <: DatePickerArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DatePickerArgs] (val x: Self) extends AnyVal {
     
     inline def setCurrentDate(value: String): Self = StObject.set(x, "currentDate", value.asInstanceOf[js.Any])
     

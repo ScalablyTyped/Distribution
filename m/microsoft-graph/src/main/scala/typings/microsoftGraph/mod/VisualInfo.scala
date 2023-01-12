@@ -40,7 +40,8 @@ object VisualInfo {
     __obj.asInstanceOf[VisualInfo]
   }
   
-  extension [Self <: VisualInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VisualInfo] (val x: Self) extends AnyVal {
     
     inline def setAttribution(value: NullableOption[ImageInfo]): Self = StObject.set(x, "attribution", value.asInstanceOf[js.Any])
     

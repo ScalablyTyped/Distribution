@@ -34,7 +34,8 @@ object SequenceFlow {
     __obj.asInstanceOf[SequenceFlow]
   }
   
-  extension [Self <: SequenceFlow](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SequenceFlow] (val x: Self) extends AnyVal {
     
     inline def setConditionExpression(value: Expression): Self = StObject.set(x, "conditionExpression", value.asInstanceOf[js.Any])
     

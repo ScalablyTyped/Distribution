@@ -24,7 +24,8 @@ object typesWorkboxEventMod {
       __obj.asInstanceOf[WorkboxEvent]
     }
     
-    extension [Self <: WorkboxEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WorkboxEvent] (val x: Self) extends AnyVal {
       
       inline def setOriginalEvent(value: Event): Self = StObject.set(x, "originalEvent", value.asInstanceOf[js.Any])
       

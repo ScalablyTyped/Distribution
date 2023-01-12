@@ -184,7 +184,8 @@ object mod {
       __obj.asInstanceOf[DocumentSchema]
     }
     
-    extension [Self <: DocumentSchema](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DocumentSchema] (val x: Self) extends AnyVal {
       
       inline def set_id(value: String): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
       
@@ -206,7 +207,8 @@ object mod {
       __obj.asInstanceOf[FindOneAndUpdateOptions]
     }
     
-    extension [Self <: FindOneAndUpdateOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOneAndUpdateOptions] (val x: Self) extends AnyVal {
       
       inline def setUpsert(value: Boolean): Self = StObject.set(x, "upsert", value.asInstanceOf[js.Any])
       
@@ -229,7 +231,8 @@ object mod {
       __obj.asInstanceOf[FindOneOptions]
     }
     
-    extension [Self <: FindOneOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOneOptions] (val x: Self) extends AnyVal {
       
       inline def setPopulate(value: Boolean | js.Array[String]): Self = StObject.set(x, "populate", value.asInstanceOf[js.Any])
       
@@ -269,7 +272,8 @@ object mod {
       __obj.asInstanceOf[FindOptions]
     }
     
-    extension [Self <: FindOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FindOptions] (val x: Self) extends AnyVal {
       
       inline def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
       
@@ -359,7 +363,8 @@ object mod {
       __obj.asInstanceOf[SchemaTypeOptions[Type]]
     }
     
-    extension [Self <: SchemaTypeOptions[?], Type](x: Self & SchemaTypeOptions[Type]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SchemaTypeOptions[?], Type] (val x: Self & SchemaTypeOptions[Type]) extends AnyVal {
       
       inline def setChoices(value: js.Array[Type]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
       

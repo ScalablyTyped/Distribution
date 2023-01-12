@@ -71,7 +71,8 @@ object componentsNavigationNavigationMod {
       __obj.asInstanceOf[NavigationProps]
     }
     
-    extension [Self <: NavigationProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationProps] (val x: Self) extends AnyVal {
       
       inline def setActions(value: js.Array[Any]): Self = StObject.set(x, "actions", value.asInstanceOf[js.Any])
       
@@ -128,7 +129,8 @@ object componentsNavigationNavigationMod {
       __obj.asInstanceOf[NavigationTheme]
     }
     
-    extension [Self <: NavigationTheme](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationTheme] (val x: Self) extends AnyVal {
       
       inline def setButton(value: String): Self = StObject.set(x, "button", value.asInstanceOf[js.Any])
       

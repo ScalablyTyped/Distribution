@@ -40,7 +40,8 @@ object AxisConfiguration {
     __obj.asInstanceOf[AxisConfiguration]
   }
   
-  extension [Self <: AxisConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AxisConfiguration] (val x: Self) extends AnyVal {
     
     inline def setInner(value: Boolean): Self = StObject.set(x, "inner", value.asInstanceOf[js.Any])
     

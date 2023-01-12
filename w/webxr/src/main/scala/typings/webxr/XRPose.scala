@@ -22,7 +22,8 @@ object XRPose {
     __obj.asInstanceOf[XRPose]
   }
   
-  extension [Self <: XRPose](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XRPose] (val x: Self) extends AnyVal {
     
     inline def setEmulatedPosition(value: Boolean): Self = StObject.set(x, "emulatedPosition", value.asInstanceOf[js.Any])
     

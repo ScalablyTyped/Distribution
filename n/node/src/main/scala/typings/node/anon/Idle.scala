@@ -23,7 +23,8 @@ object Idle {
     __obj.asInstanceOf[Idle]
   }
   
-  extension [Self <: Idle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Idle] (val x: Self) extends AnyVal {
     
     inline def setIdle(value: Double): Self = StObject.set(x, "idle", value.asInstanceOf[js.Any])
     

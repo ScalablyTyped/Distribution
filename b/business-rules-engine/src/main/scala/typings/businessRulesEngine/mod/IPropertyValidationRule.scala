@@ -25,7 +25,8 @@ object IPropertyValidationRule {
     __obj.asInstanceOf[IPropertyValidationRule[T]]
   }
   
-  extension [Self <: IPropertyValidationRule[?], T](x: Self & IPropertyValidationRule[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IPropertyValidationRule[?], T] (val x: Self & IPropertyValidationRule[T]) extends AnyVal {
     
     inline def setValidate(value: IValidationContext[T] => js.Array[IValidationFailure]): Self = StObject.set(x, "Validate", js.Any.fromFunction1(value))
     

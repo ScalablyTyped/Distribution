@@ -22,7 +22,8 @@ object KnobValidator {
     __obj.asInstanceOf[KnobValidator]
   }
   
-  extension [Self <: KnobValidator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KnobValidator] (val x: Self) extends AnyVal {
     
     inline def setKnob(value: Validator[NumberTypeKnob]): Self = StObject.set(x, "knob", value.asInstanceOf[js.Any])
     

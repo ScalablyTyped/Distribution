@@ -26,7 +26,8 @@ object ChoiceSupportOption {
     __obj.asInstanceOf[ChoiceSupportOption[Value]]
   }
   
-  extension [Self <: ChoiceSupportOption[?], Value](x: Self & ChoiceSupportOption[Value]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChoiceSupportOption[?], Value] (val x: Self & ChoiceSupportOption[Value]) extends AnyVal {
     
     inline def setChoices(value: js.Array[Description[Value]]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object ClientSessionOptions {
     __obj.asInstanceOf[ClientSessionOptions]
   }
   
-  extension [Self <: ClientSessionOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClientSessionOptions] (val x: Self) extends AnyVal {
     
     inline def setCreateConnection(value: (/* authority */ URL, /* option */ SessionOptions) => Duplex): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
     

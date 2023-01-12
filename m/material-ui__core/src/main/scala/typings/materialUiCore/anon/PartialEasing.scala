@@ -22,7 +22,8 @@ object PartialEasing {
     __obj.asInstanceOf[PartialEasing]
   }
   
-  extension [Self <: PartialEasing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialEasing] (val x: Self) extends AnyVal {
     
     inline def setEaseIn(value: String): Self = StObject.set(x, "easeIn", value.asInstanceOf[js.Any])
     

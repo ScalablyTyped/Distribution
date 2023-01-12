@@ -68,7 +68,8 @@ object CostTypes {
     __obj.asInstanceOf[CostTypes]
   }
   
-  extension [Self <: CostTypes](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CostTypes] (val x: Self) extends AnyVal {
     
     inline def setIncludeCredit(value: NullableBoolean): Self = StObject.set(x, "IncludeCredit", value.asInstanceOf[js.Any])
     

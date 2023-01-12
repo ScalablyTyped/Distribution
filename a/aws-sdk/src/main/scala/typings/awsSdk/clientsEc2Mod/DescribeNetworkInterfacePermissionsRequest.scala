@@ -33,7 +33,8 @@ object DescribeNetworkInterfacePermissionsRequest {
     __obj.asInstanceOf[DescribeNetworkInterfacePermissionsRequest]
   }
   
-  extension [Self <: DescribeNetworkInterfacePermissionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeNetworkInterfacePermissionsRequest] (val x: Self) extends AnyVal {
     
     inline def setFilters(value: FilterList): Self = StObject.set(x, "Filters", value.asInstanceOf[js.Any])
     

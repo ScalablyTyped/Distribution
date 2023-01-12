@@ -19,7 +19,8 @@ object ReturnTypeGetDOMStorageItemsResponse {
     __obj.asInstanceOf[ReturnTypeGetDOMStorageItemsResponse]
   }
   
-  extension [Self <: ReturnTypeGetDOMStorageItemsResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReturnTypeGetDOMStorageItemsResponse] (val x: Self) extends AnyVal {
     
     inline def setParamsType(value: js.Array[GetDOMStorageItemsRequest]): Self = StObject.set(x, "paramsType", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object IVoiceSelectionParams {
     __obj.asInstanceOf[IVoiceSelectionParams]
   }
   
-  extension [Self <: IVoiceSelectionParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IVoiceSelectionParams] (val x: Self) extends AnyVal {
     
     inline def setCustomVoice(value: ICustomVoiceParams): Self = StObject.set(x, "customVoice", value.asInstanceOf[js.Any])
     

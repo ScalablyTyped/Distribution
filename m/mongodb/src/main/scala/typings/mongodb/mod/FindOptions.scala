@@ -79,7 +79,8 @@ object FindOptions {
     __obj.asInstanceOf[FindOptions[TSchema]]
   }
   
-  extension [Self <: FindOptions[?], TSchema /* <: Document */](x: Self & FindOptions[TSchema]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FindOptions[?], TSchema /* <: Document */] (val x: Self & FindOptions[TSchema]) extends AnyVal {
     
     inline def setAllowDiskUse(value: Boolean): Self = StObject.set(x, "allowDiskUse", value.asInstanceOf[js.Any])
     

@@ -40,7 +40,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsSelectedKeyMod extends Sho
       __obj.asInstanceOf[IsSelectedKey]
     }
     
-    extension [Self <: IsSelectedKey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsSelectedKey] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: (String, Keys) => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction2(value))
     }

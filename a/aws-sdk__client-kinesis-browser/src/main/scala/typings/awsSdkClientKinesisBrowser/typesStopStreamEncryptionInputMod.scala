@@ -58,7 +58,8 @@ object typesStopStreamEncryptionInputMod {
       __obj.asInstanceOf[StopStreamEncryptionInput]
     }
     
-    extension [Self <: StopStreamEncryptionInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StopStreamEncryptionInput] (val x: Self) extends AnyVal {
       
       inline def set$abortSignal(value: AbortSignal): Self = StObject.set(x, "$abortSignal", value.asInstanceOf[js.Any])
       

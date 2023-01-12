@@ -18,7 +18,8 @@ object GoogleActionsOrdersV3Promotion {
     __obj.asInstanceOf[GoogleActionsOrdersV3Promotion]
   }
   
-  extension [Self <: GoogleActionsOrdersV3Promotion](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsOrdersV3Promotion] (val x: Self) extends AnyVal {
     
     inline def setCoupon(value: String): Self = StObject.set(x, "coupon", value.asInstanceOf[js.Any])
     

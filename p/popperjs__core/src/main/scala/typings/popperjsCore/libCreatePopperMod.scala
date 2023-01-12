@@ -66,7 +66,8 @@ object libCreatePopperMod {
       __obj.asInstanceOf[PopperGeneratorArgs]
     }
     
-    extension [Self <: PopperGeneratorArgs](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PopperGeneratorArgs] (val x: Self) extends AnyVal {
       
       inline def setDefaultModifiers(value: js.Array[Modifier[Any, Any]]): Self = StObject.set(x, "defaultModifiers", value.asInstanceOf[js.Any])
       

@@ -20,7 +20,8 @@ object Origin {
     __obj.asInstanceOf[Origin]
   }
   
-  extension [Self <: Origin](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Origin] (val x: Self) extends AnyVal {
     
     inline def setCustomOriginConfig(value: OriginProtocolPolicy): Self = StObject.set(x, "CustomOriginConfig", value.asInstanceOf[js.Any])
     

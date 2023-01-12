@@ -21,7 +21,8 @@ object SkeletonContainerGrid {
     __obj.asInstanceOf[SkeletonContainerGrid]
   }
   
-  extension [Self <: SkeletonContainerGrid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SkeletonContainerGrid] (val x: Self) extends AnyVal {
     
     inline def setColumns(value: Double): Self = StObject.set(x, "columns", value.asInstanceOf[js.Any])
     

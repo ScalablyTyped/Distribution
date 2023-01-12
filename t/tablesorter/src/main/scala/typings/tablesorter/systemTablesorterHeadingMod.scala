@@ -57,7 +57,8 @@ object systemTablesorterHeadingMod {
       __obj.asInstanceOf[TablesorterHeading]
     }
     
-    extension [Self <: TablesorterHeading](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TablesorterHeading] (val x: Self) extends AnyVal {
       
       inline def setEmpty(value: EmptySorting): Self = StObject.set(x, "empty", value.asInstanceOf[js.Any])
       

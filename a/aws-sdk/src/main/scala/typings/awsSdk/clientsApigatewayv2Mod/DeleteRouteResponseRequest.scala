@@ -28,7 +28,8 @@ object DeleteRouteResponseRequest {
     __obj.asInstanceOf[DeleteRouteResponseRequest]
   }
   
-  extension [Self <: DeleteRouteResponseRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteRouteResponseRequest] (val x: Self) extends AnyVal {
     
     inline def setApiId(value: string): Self = StObject.set(x, "ApiId", value.asInstanceOf[js.Any])
     

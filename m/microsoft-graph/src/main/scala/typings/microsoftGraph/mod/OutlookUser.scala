@@ -18,7 +18,8 @@ object OutlookUser {
     __obj.asInstanceOf[OutlookUser]
   }
   
-  extension [Self <: OutlookUser](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutlookUser] (val x: Self) extends AnyVal {
     
     inline def setMasterCategories(value: NullableOption[js.Array[OutlookCategory]]): Self = StObject.set(x, "masterCategories", value.asInstanceOf[js.Any])
     

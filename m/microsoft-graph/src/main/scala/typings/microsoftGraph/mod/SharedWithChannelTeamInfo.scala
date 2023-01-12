@@ -21,7 +21,8 @@ object SharedWithChannelTeamInfo {
     __obj.asInstanceOf[SharedWithChannelTeamInfo]
   }
   
-  extension [Self <: SharedWithChannelTeamInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SharedWithChannelTeamInfo] (val x: Self) extends AnyVal {
     
     inline def setAllowedMembers(value: NullableOption[js.Array[ConversationMember]]): Self = StObject.set(x, "allowedMembers", value.asInstanceOf[js.Any])
     

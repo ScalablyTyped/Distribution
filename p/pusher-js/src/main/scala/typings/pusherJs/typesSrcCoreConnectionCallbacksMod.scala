@@ -33,7 +33,8 @@ object typesSrcCoreConnectionCallbacksMod {
       __obj.asInstanceOf[ConnectionCallbacks]
     }
     
-    extension [Self <: ConnectionCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ConnectionCallbacks] (val x: Self) extends AnyVal {
       
       inline def setActivity(value: () => Unit): Self = StObject.set(x, "activity", js.Any.fromFunction0(value))
       
@@ -74,7 +75,8 @@ object typesSrcCoreConnectionCallbacksMod {
       __obj.asInstanceOf[HandshakeCallbacks]
     }
     
-    extension [Self <: HandshakeCallbacks](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HandshakeCallbacks] (val x: Self) extends AnyVal {
       
       inline def setConnected(value: HandshakePayload => Unit): Self = StObject.set(x, "connected", js.Any.fromFunction1(value))
     }

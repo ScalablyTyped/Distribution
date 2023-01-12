@@ -35,7 +35,8 @@ object ASPxDesignerUndoEngine {
     __obj.asInstanceOf[ASPxDesignerUndoEngine]
   }
   
-  extension [Self <: ASPxDesignerUndoEngine](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxDesignerUndoEngine] (val x: Self) extends AnyVal {
     
     inline def setClearHistory(value: () => Unit): Self = StObject.set(x, "clearHistory", js.Any.fromFunction0(value))
     

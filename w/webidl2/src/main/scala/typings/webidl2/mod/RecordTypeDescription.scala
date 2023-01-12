@@ -29,7 +29,8 @@ object RecordTypeDescription {
     __obj.asInstanceOf[RecordTypeDescription]
   }
   
-  extension [Self <: RecordTypeDescription](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RecordTypeDescription] (val x: Self) extends AnyVal {
     
     inline def setGeneric(value: record): Self = StObject.set(x, "generic", value.asInstanceOf[js.Any])
     

@@ -30,7 +30,8 @@ object NoiseCancellation {
     __obj.asInstanceOf[NoiseCancellation]
   }
   
-  extension [Self <: NoiseCancellation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NoiseCancellation] (val x: Self) extends AnyVal {
     
     inline def setDisable(value: () => js.Promise[Unit]): Self = StObject.set(x, "disable", js.Any.fromFunction0(value))
     

@@ -29,7 +29,8 @@ object SerialDqElement {
     __obj.asInstanceOf[SerialDqElement]
   }
   
-  extension [Self <: SerialDqElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialDqElement] (val x: Self) extends AnyVal {
     
     inline def setAncestry(value: CrossFrameSelector): Self = StObject.set(x, "ancestry", value.asInstanceOf[js.Any])
     

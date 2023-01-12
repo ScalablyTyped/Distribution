@@ -18,7 +18,8 @@ object Ctx {
     __obj.asInstanceOf[Ctx]
   }
   
-  extension [Self <: Ctx](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Ctx] (val x: Self) extends AnyVal {
     
     inline def setClient(value: typings.oidcProvider.mod.Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
     

@@ -28,7 +28,8 @@ object ListQueryLoggingConfigsRequest {
     __obj.asInstanceOf[ListQueryLoggingConfigsRequest]
   }
   
-  extension [Self <: ListQueryLoggingConfigsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListQueryLoggingConfigsRequest] (val x: Self) extends AnyVal {
     
     inline def setHostedZoneId(value: ResourceId): Self = StObject.set(x, "HostedZoneId", value.asInstanceOf[js.Any])
     

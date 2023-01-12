@@ -19,7 +19,8 @@ object OperationDescriptor {
     __obj.asInstanceOf[OperationDescriptor]
   }
   
-  extension [Self <: OperationDescriptor](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperationDescriptor] (val x: Self) extends AnyVal {
     
     inline def setFragment(value: SingularReaderSelector): Self = StObject.set(x, "fragment", value.asInstanceOf[js.Any])
     

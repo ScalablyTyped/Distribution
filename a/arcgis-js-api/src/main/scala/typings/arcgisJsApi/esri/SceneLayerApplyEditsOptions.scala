@@ -27,7 +27,8 @@ object SceneLayerApplyEditsOptions {
     __obj.asInstanceOf[SceneLayerApplyEditsOptions]
   }
   
-  extension [Self <: SceneLayerApplyEditsOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SceneLayerApplyEditsOptions] (val x: Self) extends AnyVal {
     
     inline def setGlobalIdUsed(value: Boolean): Self = StObject.set(x, "globalIdUsed", value.asInstanceOf[js.Any])
     

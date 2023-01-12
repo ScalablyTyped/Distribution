@@ -28,7 +28,8 @@ object CdnSettings {
     __obj.asInstanceOf[CdnSettings]
   }
   
-  extension [Self <: CdnSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CdnSettings] (val x: Self) extends AnyVal {
     
     inline def setFormat(value: String): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])
     

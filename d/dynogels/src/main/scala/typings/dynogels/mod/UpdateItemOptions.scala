@@ -45,7 +45,8 @@ object UpdateItemOptions {
     __obj.asInstanceOf[UpdateItemOptions]
   }
   
-  extension [Self <: UpdateItemOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UpdateItemOptions] (val x: Self) extends AnyVal {
     
     inline def setAttributeUpdates(value: AttributeUpdates): Self = StObject.set(x, "AttributeUpdates", value.asInstanceOf[js.Any])
     

@@ -75,7 +75,8 @@ object GoogleCloudSecuritycenterV1p1beta1Finding {
     __obj.asInstanceOf[GoogleCloudSecuritycenterV1p1beta1Finding]
   }
   
-  extension [Self <: GoogleCloudSecuritycenterV1p1beta1Finding](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleCloudSecuritycenterV1p1beta1Finding] (val x: Self) extends AnyVal {
     
     inline def setCanonicalName(value: String): Self = StObject.set(x, "canonicalName", value.asInstanceOf[js.Any])
     

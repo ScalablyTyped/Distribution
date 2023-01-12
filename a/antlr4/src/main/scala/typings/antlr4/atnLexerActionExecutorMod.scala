@@ -201,7 +201,8 @@ object atnLexerActionExecutorMod {
       __obj.asInstanceOf[LexerActionExecutor]
     }
     
-    extension [Self <: LexerActionExecutor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LexerActionExecutor] (val x: Self) extends AnyVal {
       
       inline def setCachedHashCode(value: Double): Self = StObject.set(x, "cachedHashCode", value.asInstanceOf[js.Any])
       

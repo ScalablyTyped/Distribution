@@ -27,7 +27,8 @@ object ElementChange {
     __obj.asInstanceOf[ElementChange]
   }
   
-  extension [Self <: ElementChange](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ElementChange] (val x: Self) extends AnyVal {
     
     inline def setAccessor(value: Any): Self = StObject.set(x, "Accessor", value.asInstanceOf[js.Any])
     

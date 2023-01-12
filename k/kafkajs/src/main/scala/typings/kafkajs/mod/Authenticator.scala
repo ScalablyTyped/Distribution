@@ -15,7 +15,8 @@ object Authenticator {
     __obj.asInstanceOf[Authenticator]
   }
   
-  extension [Self <: Authenticator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Authenticator] (val x: Self) extends AnyVal {
     
     inline def setAuthenticate(value: () => js.Promise[Unit]): Self = StObject.set(x, "authenticate", js.Any.fromFunction0(value))
   }

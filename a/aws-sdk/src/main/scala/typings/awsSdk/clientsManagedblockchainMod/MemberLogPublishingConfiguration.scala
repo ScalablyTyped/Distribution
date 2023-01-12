@@ -18,7 +18,8 @@ object MemberLogPublishingConfiguration {
     __obj.asInstanceOf[MemberLogPublishingConfiguration]
   }
   
-  extension [Self <: MemberLogPublishingConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MemberLogPublishingConfiguration] (val x: Self) extends AnyVal {
     
     inline def setFabric(value: MemberFabricLogPublishingConfiguration): Self = StObject.set(x, "Fabric", value.asInstanceOf[js.Any])
     

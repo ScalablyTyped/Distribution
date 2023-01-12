@@ -30,7 +30,8 @@ object PurchaseReservedDBInstancesOfferingMessage {
     __obj.asInstanceOf[PurchaseReservedDBInstancesOfferingMessage]
   }
   
-  extension [Self <: PurchaseReservedDBInstancesOfferingMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PurchaseReservedDBInstancesOfferingMessage] (val x: Self) extends AnyVal {
     
     inline def setDBInstanceCount(value: IntegerOptional): Self = StObject.set(x, "DBInstanceCount", value.asInstanceOf[js.Any])
     

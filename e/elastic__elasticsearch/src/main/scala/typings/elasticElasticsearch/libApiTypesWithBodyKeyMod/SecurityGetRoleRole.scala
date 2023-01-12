@@ -37,7 +37,8 @@ object SecurityGetRoleRole {
     __obj.asInstanceOf[SecurityGetRoleRole]
   }
   
-  extension [Self <: SecurityGetRoleRole](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SecurityGetRoleRole] (val x: Self) extends AnyVal {
     
     inline def setApplications(value: js.Array[SecurityApplicationPrivileges]): Self = StObject.set(x, "applications", value.asInstanceOf[js.Any])
     

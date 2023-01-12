@@ -18,7 +18,8 @@ object PickCollapsibleopen {
     __obj.asInstanceOf[PickCollapsibleopen]
   }
   
-  extension [Self <: PickCollapsibleopen](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickCollapsibleopen] (val x: Self) extends AnyVal {
     
     inline def setOpen(value: /* n */ Double => Unit): Self = StObject.set(x, "open", js.Any.fromFunction1(value))
   }

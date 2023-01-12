@@ -38,7 +38,8 @@ object ResyncMFADeviceRequest {
     __obj.asInstanceOf[ResyncMFADeviceRequest]
   }
   
-  extension [Self <: ResyncMFADeviceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResyncMFADeviceRequest] (val x: Self) extends AnyVal {
     
     inline def setAuthenticationCode1(value: authenticationCodeType): Self = StObject.set(x, "AuthenticationCode1", value.asInstanceOf[js.Any])
     

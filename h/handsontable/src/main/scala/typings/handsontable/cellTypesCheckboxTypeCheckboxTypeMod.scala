@@ -66,7 +66,8 @@ object cellTypesCheckboxTypeCheckboxTypeMod {
       __obj.asInstanceOf[CheckboxCellType]
     }
     
-    extension [Self <: CheckboxCellType](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckboxCellType] (val x: Self) extends AnyVal {
       
       inline def setEditor(value: Instantiable1[/* instance */ default, CheckboxEditor]): Self = StObject.set(x, "editor", value.asInstanceOf[js.Any])
       

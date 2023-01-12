@@ -66,7 +66,8 @@ object eventsSiuDoteventMod {
       __obj.asInstanceOf[SIU]
     }
     
-    extension [Self <: SIU](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SIU] (val x: Self) extends AnyVal {
       
       inline def setAIG(value: Any): Self = StObject.set(x, "AIG", value.asInstanceOf[js.Any])
       

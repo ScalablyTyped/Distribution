@@ -23,7 +23,8 @@ object GetBlueprintsRequest {
     __obj.asInstanceOf[GetBlueprintsRequest]
   }
   
-  extension [Self <: GetBlueprintsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBlueprintsRequest] (val x: Self) extends AnyVal {
     
     inline def setIncludeInactive(value: Boolean): Self = StObject.set(x, "includeInactive", value.asInstanceOf[js.Any])
     

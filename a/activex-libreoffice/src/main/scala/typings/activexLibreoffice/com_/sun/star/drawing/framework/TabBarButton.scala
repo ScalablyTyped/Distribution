@@ -37,7 +37,8 @@ object TabBarButton {
     __obj.asInstanceOf[TabBarButton]
   }
   
-  extension [Self <: TabBarButton](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabBarButton] (val x: Self) extends AnyVal {
     
     inline def setButtonLabel(value: String): Self = StObject.set(x, "ButtonLabel", value.asInstanceOf[js.Any])
     

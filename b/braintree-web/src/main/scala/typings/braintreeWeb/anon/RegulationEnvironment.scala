@@ -18,7 +18,8 @@ object RegulationEnvironment {
     __obj.asInstanceOf[RegulationEnvironment]
   }
   
-  extension [Self <: RegulationEnvironment](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegulationEnvironment] (val x: Self) extends AnyVal {
     
     inline def setRegulationEnvironment(value: psd2 | unregulated | unavailable): Self = StObject.set(x, "regulationEnvironment", value.asInstanceOf[js.Any])
     

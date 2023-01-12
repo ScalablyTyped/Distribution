@@ -35,7 +35,8 @@ object AttestorPublicKey {
     __obj.asInstanceOf[AttestorPublicKey]
   }
   
-  extension [Self <: AttestorPublicKey](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttestorPublicKey] (val x: Self) extends AnyVal {
     
     inline def setAsciiArmoredPgpPublicKey(value: String): Self = StObject.set(x, "asciiArmoredPgpPublicKey", value.asInstanceOf[js.Any])
     

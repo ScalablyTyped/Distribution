@@ -417,7 +417,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CheckTypePredicates]
     }
     
-    extension [Self <: CheckTypePredicates](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CheckTypePredicates] (val x: Self) extends AnyVal {
       
       inline def setArray(value: ArrayFunction): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
       

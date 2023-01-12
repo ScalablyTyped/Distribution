@@ -112,7 +112,8 @@ object SyntaxTokenReplacer {
     __obj.asInstanceOf[SyntaxTokenReplacer]
   }
   
-  extension [Self <: SyntaxTokenReplacer](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxTokenReplacer] (val x: Self) extends AnyVal {
     
     inline def setToken1(value: Any): Self = StObject.set(x, "token1", value.asInstanceOf[js.Any])
     

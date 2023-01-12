@@ -28,7 +28,8 @@ object FaxInboundRouting {
     __obj.asInstanceOf[FaxInboundRouting]
   }
   
-  extension [Self <: FaxInboundRouting](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FaxInboundRouting] (val x: Self) extends AnyVal {
     
     inline def setFAXCOMEXLibDotFaxInboundRouting_typekey(value: FaxInboundRouting): Self = StObject.set(x, "FAXCOMEXLib.FaxInboundRouting_typekey", value.asInstanceOf[js.Any])
     

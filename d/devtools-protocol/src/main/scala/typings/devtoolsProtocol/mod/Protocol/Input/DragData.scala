@@ -26,7 +26,8 @@ object DragData {
     __obj.asInstanceOf[DragData]
   }
   
-  extension [Self <: DragData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragData] (val x: Self) extends AnyVal {
     
     inline def setDragOperationsMask(value: integer): Self = StObject.set(x, "dragOperationsMask", value.asInstanceOf[js.Any])
     

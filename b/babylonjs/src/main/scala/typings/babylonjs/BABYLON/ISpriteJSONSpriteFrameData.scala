@@ -33,7 +33,8 @@ object ISpriteJSONSpriteFrameData {
     __obj.asInstanceOf[ISpriteJSONSpriteFrameData]
   }
   
-  extension [Self <: ISpriteJSONSpriteFrameData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ISpriteJSONSpriteFrameData] (val x: Self) extends AnyVal {
     
     inline def setH(value: Double): Self = StObject.set(x, "h", value.asInstanceOf[js.Any])
     

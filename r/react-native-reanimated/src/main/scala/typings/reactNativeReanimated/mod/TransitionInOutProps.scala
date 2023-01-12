@@ -23,7 +23,8 @@ object TransitionInOutProps {
     __obj.asInstanceOf[TransitionInOutProps]
   }
   
-  extension [Self <: TransitionInOutProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitionInOutProps] (val x: Self) extends AnyVal {
     
     inline def setType(value: fade | scale | `slide-top` | `slide-bottom` | `slide-right` | `slide-left`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     

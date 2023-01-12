@@ -17,7 +17,8 @@ object ApplicationjsonAllowmergecommit {
     __obj.asInstanceOf[ApplicationjsonAllowmergecommit]
   }
   
-  extension [Self <: ApplicationjsonAllowmergecommit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ApplicationjsonAllowmergecommit] (val x: Self) extends AnyVal {
     
     inline def setApplicationSlashjson(value: Allowmergecommit): Self = StObject.set(x, "application/json", value.asInstanceOf[js.Any])
   }

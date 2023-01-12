@@ -39,7 +39,8 @@ object DirectionsGeocodedWaypoint {
     __obj.asInstanceOf[DirectionsGeocodedWaypoint]
   }
   
-  extension [Self <: DirectionsGeocodedWaypoint](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DirectionsGeocodedWaypoint] (val x: Self) extends AnyVal {
     
     inline def setPartial_match(value: Boolean): Self = StObject.set(x, "partial_match", value.asInstanceOf[js.Any])
     

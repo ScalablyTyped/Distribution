@@ -29,7 +29,8 @@ object ParticleEmitterFrameConfig {
     __obj.asInstanceOf[ParticleEmitterFrameConfig]
   }
   
-  extension [Self <: ParticleEmitterFrameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ParticleEmitterFrameConfig] (val x: Self) extends AnyVal {
     
     inline def setCycle(value: Boolean): Self = StObject.set(x, "cycle", value.asInstanceOf[js.Any])
     

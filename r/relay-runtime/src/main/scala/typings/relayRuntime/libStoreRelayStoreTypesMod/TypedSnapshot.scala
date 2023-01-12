@@ -21,7 +21,8 @@ object TypedSnapshot {
     __obj.asInstanceOf[TypedSnapshot[TData]]
   }
   
-  extension [Self <: TypedSnapshot[?], TData](x: Self & TypedSnapshot[TData]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TypedSnapshot[?], TData] (val x: Self & TypedSnapshot[TData]) extends AnyVal {
     
     inline def setData(value: TData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     

@@ -26,7 +26,8 @@ object TSLiteralType {
   @js.native
   def apply(literal: StringLiteral_): TSLiteralType = js.native
   
-  extension [Self <: TSLiteralType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TSLiteralType] (val x: Self) extends AnyVal {
     
     inline def setLiteral(value: NumericLiteral_ | StringLiteral_ | BooleanLiteral_): Self = StObject.set(x, "literal", value.asInstanceOf[js.Any])
     

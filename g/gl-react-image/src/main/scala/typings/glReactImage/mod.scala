@@ -35,7 +35,8 @@ object mod {
       __obj.asInstanceOf[GLImageProps]
     }
     
-    extension [Self <: GLImageProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GLImageProps] (val x: Self) extends AnyVal {
       
       inline def setCenter(value: js.Tuple2[Double, Double]): Self = StObject.set(x, "center", value.asInstanceOf[js.Any])
       

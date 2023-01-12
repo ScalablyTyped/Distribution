@@ -166,7 +166,8 @@ object mod {
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions]
         }
         
-        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketConfigOptions] (val x: Self) extends AnyVal {
           
           inline def setBinaryType(value: blob | arraybuffer): Self = StObject.set(x, "binaryType", value.asInstanceOf[js.Any])
           
@@ -214,7 +215,8 @@ object mod {
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler]
         }
         
-        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageHandler] (val x: Self) extends AnyVal {
           
           inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
@@ -245,7 +247,8 @@ object mod {
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions]
         }
         
-        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketMessageOptions] (val x: Self) extends AnyVal {
           
           inline def setAutoApply(value: Boolean): Self = StObject.set(x, "autoApply", value.asInstanceOf[js.Any])
           
@@ -288,7 +291,8 @@ object mod {
           __obj.asInstanceOf[typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem]
         }
         
-        extension [Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: typings.angularWebsocket.mod.angularAugmentingMod.websocket.IWebSocketQueueItem] (val x: Self) extends AnyVal {
           
           inline def setDefered(value: IPromise[Unit]): Self = StObject.set(x, "defered", value.asInstanceOf[js.Any])
           

@@ -18,7 +18,8 @@ object GetStorageLensConfigurationResult {
     __obj.asInstanceOf[GetStorageLensConfigurationResult]
   }
   
-  extension [Self <: GetStorageLensConfigurationResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetStorageLensConfigurationResult] (val x: Self) extends AnyVal {
     
     inline def setStorageLensConfiguration(value: StorageLensConfiguration): Self = StObject.set(x, "StorageLensConfiguration", value.asInstanceOf[js.Any])
     

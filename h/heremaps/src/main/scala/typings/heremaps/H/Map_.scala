@@ -401,7 +401,8 @@ object Map_ {
       __obj.asInstanceOf[BackgroundRange]
     }
     
-    extension [Self <: BackgroundRange](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BackgroundRange] (val x: Self) extends AnyVal {
       
       inline def setHigher(value: Double): Self = StObject.set(x, "higher", value.asInstanceOf[js.Any])
       
@@ -462,7 +463,8 @@ object Map_ {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAutoColor(value: Boolean): Self = StObject.set(x, "autoColor", value.asInstanceOf[js.Any])
       

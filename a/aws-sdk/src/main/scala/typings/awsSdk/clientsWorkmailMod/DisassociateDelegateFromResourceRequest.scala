@@ -28,7 +28,8 @@ object DisassociateDelegateFromResourceRequest {
     __obj.asInstanceOf[DisassociateDelegateFromResourceRequest]
   }
   
-  extension [Self <: DisassociateDelegateFromResourceRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DisassociateDelegateFromResourceRequest] (val x: Self) extends AnyVal {
     
     inline def setEntityId(value: WorkMailIdentifier): Self = StObject.set(x, "EntityId", value.asInstanceOf[js.Any])
     

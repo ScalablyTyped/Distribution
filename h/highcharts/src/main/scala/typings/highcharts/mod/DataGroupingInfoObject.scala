@@ -22,7 +22,8 @@ object DataGroupingInfoObject {
     __obj.asInstanceOf[DataGroupingInfoObject]
   }
   
-  extension [Self <: DataGroupingInfoObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataGroupingInfoObject] (val x: Self) extends AnyVal {
     
     inline def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     

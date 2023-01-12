@@ -37,7 +37,8 @@ object SchemaObject {
     __obj.asInstanceOf[SchemaObject]
   }
   
-  extension [Self <: SchemaObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaObject] (val x: Self) extends AnyVal {
     
     inline def setDefault(value: Any): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
     

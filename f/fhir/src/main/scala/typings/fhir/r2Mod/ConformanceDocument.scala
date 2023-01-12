@@ -36,7 +36,8 @@ object ConformanceDocument {
     __obj.asInstanceOf[ConformanceDocument]
   }
   
-  extension [Self <: ConformanceDocument](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConformanceDocument] (val x: Self) extends AnyVal {
     
     inline def setDocumentation(value: String): Self = StObject.set(x, "documentation", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object QueryConfig {
     __obj.asInstanceOf[QueryConfig]
   }
   
-  extension [Self <: QueryConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QueryConfig] (val x: Self) extends AnyVal {
     
     inline def setDimensionFilters(value: js.Array[DimensionFilters]): Self = StObject.set(x, "dimensionFilters", value.asInstanceOf[js.Any])
     

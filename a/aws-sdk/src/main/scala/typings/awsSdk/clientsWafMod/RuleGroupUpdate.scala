@@ -23,7 +23,8 @@ object RuleGroupUpdate {
     __obj.asInstanceOf[RuleGroupUpdate]
   }
   
-  extension [Self <: RuleGroupUpdate](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RuleGroupUpdate] (val x: Self) extends AnyVal {
     
     inline def setAction(value: ChangeAction): Self = StObject.set(x, "Action", value.asInstanceOf[js.Any])
     

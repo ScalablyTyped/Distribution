@@ -15,7 +15,8 @@ object SlideChildren {
     __obj.asInstanceOf[SlideChildren]
   }
   
-  extension [Self <: SlideChildren](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SlideChildren] (val x: Self) extends AnyVal {
     
     inline def setOffsetHeight(value: Double): Self = StObject.set(x, "offsetHeight", value.asInstanceOf[js.Any])
   }

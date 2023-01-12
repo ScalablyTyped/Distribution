@@ -33,7 +33,8 @@ object popover {
       __obj.asInstanceOf[IPopover]
     }
     
-    extension [Self <: IPopover](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopover] (val x: Self) extends AnyVal {
       
       inline def set$promise(value: IPromise[Unit]): Self = StObject.set(x, "$promise", value.asInstanceOf[js.Any])
       
@@ -92,7 +93,8 @@ object popover {
       __obj.asInstanceOf[IPopoverOptions]
     }
     
-    extension [Self <: IPopoverOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopoverOptions] (val x: Self) extends AnyVal {
       
       inline def setAnimation(value: String): Self = StObject.set(x, "animation", value.asInstanceOf[js.Any])
       
@@ -183,7 +185,8 @@ object popover {
       __obj.asInstanceOf[IPopoverProvider]
     }
     
-    extension [Self <: IPopoverProvider](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPopoverProvider] (val x: Self) extends AnyVal {
       
       inline def setDefaults(value: IPopoverOptions): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     }

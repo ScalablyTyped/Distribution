@@ -32,7 +32,8 @@ object anon {
       __obj.asInstanceOf[Process]
     }
     
-    extension [Self <: Process](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Process] (val x: Self) extends AnyVal {
       
       inline def setProcess(value: (/* prefix */ js.UndefOr[String], /* suffix */ js.UndefOr[String]) => String): Self = StObject.set(x, "process", js.Any.fromFunction2(value))
       

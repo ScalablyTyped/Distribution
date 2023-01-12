@@ -37,7 +37,8 @@ object GoogleActionsV2OrdersOrderState {
     __obj.asInstanceOf[GoogleActionsV2OrdersOrderState]
   }
   
-  extension [Self <: GoogleActionsV2OrdersOrderState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GoogleActionsV2OrdersOrderState] (val x: Self) extends AnyVal {
     
     inline def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     

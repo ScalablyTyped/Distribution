@@ -31,7 +31,8 @@ object typesUpdateTimeToLiveOutputMod {
       __obj.asInstanceOf[UpdateTimeToLiveOutput]
     }
     
-    extension [Self <: UpdateTimeToLiveOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: UpdateTimeToLiveOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

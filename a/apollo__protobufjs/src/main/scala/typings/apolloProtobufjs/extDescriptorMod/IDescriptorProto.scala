@@ -33,7 +33,8 @@ object IDescriptorProto {
     __obj.asInstanceOf[IDescriptorProto]
   }
   
-  extension [Self <: IDescriptorProto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDescriptorProto] (val x: Self) extends AnyVal {
     
     inline def setEnumType(value: js.Array[IEnumDescriptorProto]): Self = StObject.set(x, "enumType", value.asInstanceOf[js.Any])
     

@@ -38,7 +38,8 @@ object AccessorSummary {
     __obj.asInstanceOf[AccessorSummary]
   }
   
-  extension [Self <: AccessorSummary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccessorSummary] (val x: Self) extends AnyVal {
     
     inline def setArn(value: ArnString): Self = StObject.set(x, "Arn", value.asInstanceOf[js.Any])
     

@@ -27,7 +27,8 @@ object `0AddPositive` {
     __obj.asInstanceOf[`0AddPositive`[N1, N2]]
   }
   
-  extension [Self <: `0AddPositive`[?, ?], N1 /* <: Iteration */, N2 /* <: Iteration */](x: Self & (`0AddPositive`[N1, N2])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `0AddPositive`[?, ?], N1 /* <: Iteration */, N2 /* <: Iteration */] (val x: Self & (`0AddPositive`[N1, N2])) extends AnyVal {
     
     inline def set0(value: _AddPositive[Next[N1], Prev[N2]]): Self = StObject.set(x, "0", value.asInstanceOf[js.Any])
     

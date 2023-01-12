@@ -34,7 +34,8 @@ object SubjectRightsRequestDetail {
     __obj.asInstanceOf[SubjectRightsRequestDetail]
   }
   
-  extension [Self <: SubjectRightsRequestDetail](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SubjectRightsRequestDetail] (val x: Self) extends AnyVal {
     
     inline def setExcludedItemCount(value: NullableOption[Double]): Self = StObject.set(x, "excludedItemCount", value.asInstanceOf[js.Any])
     

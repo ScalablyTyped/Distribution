@@ -17,7 +17,8 @@ object RequestTask {
     __obj.asInstanceOf[RequestTask]
   }
   
-  extension [Self <: RequestTask](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequestTask] (val x: Self) extends AnyVal {
     
     inline def setCompleted(value: (js.Error, String) => Unit): Self = StObject.set(x, "completed", js.Any.fromFunction2(value))
     

@@ -28,7 +28,8 @@ object ListSubscriptionDefinitionVersionsRequest {
     __obj.asInstanceOf[ListSubscriptionDefinitionVersionsRequest]
   }
   
-  extension [Self <: ListSubscriptionDefinitionVersionsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ListSubscriptionDefinitionVersionsRequest] (val x: Self) extends AnyVal {
     
     inline def setMaxResults(value: string): Self = StObject.set(x, "MaxResults", value.asInstanceOf[js.Any])
     

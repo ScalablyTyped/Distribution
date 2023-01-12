@@ -17,7 +17,8 @@ object Vector {
     __obj.asInstanceOf[Vector[T]]
   }
   
-  extension [Self <: Vector[?], T](x: Self & Vector[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Vector[?], T] (val x: Self & Vector[T]) extends AnyVal {
     
     inline def setGet(value: Double => T): Self = StObject.set(x, "get", js.Any.fromFunction1(value))
     

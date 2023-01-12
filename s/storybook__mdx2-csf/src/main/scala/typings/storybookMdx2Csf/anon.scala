@@ -46,7 +46,8 @@ object anon {
       __obj.asInstanceOf[ArgTypes]
     }
     
-    extension [Self <: ArgTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ArgTypes] (val x: Self) extends AnyVal {
       
       inline def setArgTypes(value: String): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])
       

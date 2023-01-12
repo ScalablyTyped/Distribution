@@ -33,7 +33,8 @@ object DepOptimizationOptions {
     __obj.asInstanceOf[DepOptimizationOptions]
   }
   
-  extension [Self <: DepOptimizationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DepOptimizationOptions] (val x: Self) extends AnyVal {
     
     inline def setEntries(value: String | js.Array[String]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
     

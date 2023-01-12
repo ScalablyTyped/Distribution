@@ -28,7 +28,8 @@ object CreateDistributionWithTagsResult {
     __obj.asInstanceOf[CreateDistributionWithTagsResult]
   }
   
-  extension [Self <: CreateDistributionWithTagsResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateDistributionWithTagsResult] (val x: Self) extends AnyVal {
     
     inline def setDistribution(value: Distribution): Self = StObject.set(x, "Distribution", value.asInstanceOf[js.Any])
     

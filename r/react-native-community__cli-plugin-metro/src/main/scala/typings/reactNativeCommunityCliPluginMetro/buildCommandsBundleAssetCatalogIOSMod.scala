@@ -33,7 +33,8 @@ object buildCommandsBundleAssetCatalogIOSMod {
       __obj.asInstanceOf[ImageSet]
     }
     
-    extension [Self <: ImageSet](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImageSet] (val x: Self) extends AnyVal {
       
       inline def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
       

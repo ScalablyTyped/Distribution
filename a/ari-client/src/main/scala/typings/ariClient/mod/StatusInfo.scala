@@ -23,7 +23,8 @@ object StatusInfo {
     __obj.asInstanceOf[StatusInfo]
   }
   
-  extension [Self <: StatusInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StatusInfo] (val x: Self) extends AnyVal {
     
     inline def setLast_reload_time(value: js.Date): Self = StObject.set(x, "last_reload_time", value.asInstanceOf[js.Any])
     

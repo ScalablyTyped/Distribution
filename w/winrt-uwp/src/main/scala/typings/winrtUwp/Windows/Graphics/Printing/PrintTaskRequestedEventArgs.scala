@@ -17,7 +17,8 @@ object PrintTaskRequestedEventArgs {
     __obj.asInstanceOf[PrintTaskRequestedEventArgs]
   }
   
-  extension [Self <: PrintTaskRequestedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintTaskRequestedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setRequest(value: PrintTaskRequest): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
   }

@@ -18,7 +18,8 @@ object GetBackupVaultNotificationsInput {
     __obj.asInstanceOf[GetBackupVaultNotificationsInput]
   }
   
-  extension [Self <: GetBackupVaultNotificationsInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetBackupVaultNotificationsInput] (val x: Self) extends AnyVal {
     
     inline def setBackupVaultName(value: BackupVaultName): Self = StObject.set(x, "BackupVaultName", value.asInstanceOf[js.Any])
   }

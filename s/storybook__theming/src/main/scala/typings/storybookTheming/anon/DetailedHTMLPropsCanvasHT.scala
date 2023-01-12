@@ -638,7 +638,8 @@ object DetailedHTMLPropsCanvasHT {
     __obj.asInstanceOf[DetailedHTMLPropsCanvasHT]
   }
   
-  extension [Self <: DetailedHTMLPropsCanvasHT](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DetailedHTMLPropsCanvasHT] (val x: Self) extends AnyVal {
     
     inline def setAbout(value: String): Self = StObject.set(x, "about", value.asInstanceOf[js.Any])
     

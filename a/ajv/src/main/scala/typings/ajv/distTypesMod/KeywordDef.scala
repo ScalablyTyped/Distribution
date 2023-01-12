@@ -42,7 +42,8 @@ object KeywordDef {
     __obj.asInstanceOf[KeywordDef]
   }
   
-  extension [Self <: KeywordDef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: KeywordDef] (val x: Self) extends AnyVal {
     
     inline def set$data(value: Boolean): Self = StObject.set(x, "$data", value.asInstanceOf[js.Any])
     

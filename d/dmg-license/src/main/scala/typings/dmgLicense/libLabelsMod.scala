@@ -744,7 +744,8 @@ object libLabelsMod {
         __obj.asInstanceOf[CreateOptions]
       }
       
-      extension [Self <: CreateOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: CreateOptions] (val x: Self) extends AnyVal {
         
         inline def setIncludeLanguageName(value: Boolean): Self = StObject.set(x, "includeLanguageName", value.asInstanceOf[js.Any])
         
@@ -763,7 +764,8 @@ object libLabelsMod {
         __obj.asInstanceOf[ForEachOptions]
       }
       
-      extension [Self <: ForEachOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: ForEachOptions] (val x: Self) extends AnyVal {
         
         inline def setOnNoLanguageName(value: () => Unit): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
         
@@ -782,7 +784,8 @@ object libLabelsMod {
         __obj.asInstanceOf[MapOptions[T, U]]
       }
       
-      extension [Self <: MapOptions[?, ?], T, U](x: Self & (MapOptions[T, U])) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: MapOptions[?, ?], T, U] (val x: Self & (MapOptions[T, U])) extends AnyVal {
         
         inline def setOnNoLanguageName(value: () => U): Self = StObject.set(x, "onNoLanguageName", js.Any.fromFunction0(value))
         
@@ -790,7 +793,8 @@ object libLabelsMod {
       }
     }
     
-    extension [Self <: Labels[?], T](x: Self & Labels[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Labels[?], T] (val x: Self & Labels[T]) extends AnyVal {
       
       inline def setAgree(value: T): Self = StObject.set(x, "agree", value.asInstanceOf[js.Any])
       
@@ -821,7 +825,8 @@ object libLabelsMod {
         __obj.asInstanceOf[WithLanguageName[T]]
       }
       
-      extension [Self <: WithLanguageName[?], T](x: Self & WithLanguageName[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: WithLanguageName[?], T] (val x: Self & WithLanguageName[T]) extends AnyVal {
         
         inline def setLanguageName(value: T): Self = StObject.set(x, "languageName", value.asInstanceOf[js.Any])
       }
@@ -909,7 +914,8 @@ object libLabelsMod {
         __obj.asInstanceOf[LabelsRaw]
       }
       
-      extension [Self <: LabelsRaw](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: LabelsRaw] (val x: Self) extends AnyVal {
         
         inline def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       }
@@ -938,7 +944,8 @@ object libLabelsMod {
       __obj.asInstanceOf[NoLabels]
     }
     
-    extension [Self <: NoLabels](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NoLabels] (val x: Self) extends AnyVal {
       
       inline def setAgree(value: Unit): Self = StObject.set(x, "agree", value.asInstanceOf[js.Any])
       

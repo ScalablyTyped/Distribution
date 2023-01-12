@@ -19,7 +19,8 @@ object Int64 {
     __obj.asInstanceOf[Int64]
   }
   
-  extension [Self <: Int64](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Int64] (val x: Self) extends AnyVal {
     
     inline def set64bit_high(value: Double): Self = StObject.set(x, "64bit_high", value.asInstanceOf[js.Any])
     

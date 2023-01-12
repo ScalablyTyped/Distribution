@@ -17,7 +17,8 @@ object TabButtonProps {
     __obj.asInstanceOf[TabButtonProps]
   }
   
-  extension [Self <: TabButtonProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TabButtonProps] (val x: Self) extends AnyVal {
     
     inline def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object OSBackgroundImageLayout {
     __obj.asInstanceOf[OSBackgroundImageLayout]
   }
   
-  extension [Self <: OSBackgroundImageLayout](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OSBackgroundImageLayout] (val x: Self) extends AnyVal {
     
     inline def setBodyTextColor(value: String): Self = StObject.set(x, "bodyTextColor", value.asInstanceOf[js.Any])
     

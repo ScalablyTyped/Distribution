@@ -82,7 +82,8 @@ object ResponseModel {
     __obj.asInstanceOf[ResponseModel]
   }
   
-  extension [Self <: ResponseModel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseModel] (val x: Self) extends AnyVal {
     
     inline def setAssignee_id(value: ZendeskID): Self = StObject.set(x, "assignee_id", value.asInstanceOf[js.Any])
     

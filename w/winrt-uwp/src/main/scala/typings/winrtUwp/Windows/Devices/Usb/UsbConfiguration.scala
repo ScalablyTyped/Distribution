@@ -28,7 +28,8 @@ object UsbConfiguration {
     __obj.asInstanceOf[UsbConfiguration]
   }
   
-  extension [Self <: UsbConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: UsbConfiguration] (val x: Self) extends AnyVal {
     
     inline def setConfigurationDescriptor(value: UsbConfigurationDescriptor): Self = StObject.set(x, "configurationDescriptor", value.asInstanceOf[js.Any])
     

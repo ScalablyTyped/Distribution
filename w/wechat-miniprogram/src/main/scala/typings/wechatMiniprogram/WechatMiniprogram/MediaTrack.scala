@@ -33,7 +33,8 @@ object MediaTrack {
     __obj.asInstanceOf[MediaTrack]
   }
   
-  extension [Self <: MediaTrack](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaTrack] (val x: Self) extends AnyVal {
     
     inline def setDuration(value: Double): Self = StObject.set(x, "duration", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object ExportTasksMessage {
     __obj.asInstanceOf[ExportTasksMessage]
   }
   
-  extension [Self <: ExportTasksMessage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportTasksMessage] (val x: Self) extends AnyVal {
     
     inline def setExportTasks(value: ExportTasksList): Self = StObject.set(x, "ExportTasks", value.asInstanceOf[js.Any])
     

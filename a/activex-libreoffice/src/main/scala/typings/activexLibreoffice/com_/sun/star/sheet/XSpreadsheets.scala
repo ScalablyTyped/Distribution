@@ -61,7 +61,8 @@ object XSpreadsheets {
     __obj.asInstanceOf[XSpreadsheets]
   }
   
-  extension [Self <: XSpreadsheets](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSpreadsheets] (val x: Self) extends AnyVal {
     
     inline def setCopyByName(value: (String, String, Double) => Unit): Self = StObject.set(x, "copyByName", js.Any.fromFunction3(value))
     

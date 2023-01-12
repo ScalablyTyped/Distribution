@@ -341,7 +341,8 @@ object Archiveurl {
     __obj.asInstanceOf[Archiveurl]
   }
   
-  extension [Self <: Archiveurl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Archiveurl] (val x: Self) extends AnyVal {
     
     inline def setArchive_url(value: String): Self = StObject.set(x, "archive_url", value.asInstanceOf[js.Any])
     

@@ -19,7 +19,8 @@ object TextExpressionData {
     __obj.asInstanceOf[TextExpressionData[Scope]]
   }
   
-  extension [Self <: TextExpressionData[?], Scope](x: Self & TextExpressionData[Scope]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextExpressionData[?], Scope] (val x: Self & TextExpressionData[Scope]) extends AnyVal {
     
     inline def setChildNodeIndex(value: Double): Self = StObject.set(x, "childNodeIndex", value.asInstanceOf[js.Any])
   }

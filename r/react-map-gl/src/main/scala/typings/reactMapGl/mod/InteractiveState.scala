@@ -23,7 +23,8 @@ object InteractiveState {
     __obj.asInstanceOf[InteractiveState]
   }
   
-  extension [Self <: InteractiveState](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InteractiveState] (val x: Self) extends AnyVal {
     
     inline def setStartBearing(value: Double): Self = StObject.set(x, "startBearing", value.asInstanceOf[js.Any])
     

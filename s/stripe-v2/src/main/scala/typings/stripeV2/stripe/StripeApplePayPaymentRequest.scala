@@ -38,7 +38,8 @@ object StripeApplePayPaymentRequest {
     __obj.asInstanceOf[StripeApplePayPaymentRequest]
   }
   
-  extension [Self <: StripeApplePayPaymentRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StripeApplePayPaymentRequest] (val x: Self) extends AnyVal {
     
     inline def setBillingContact(value: StripeApplePayPaymentContact): Self = StObject.set(x, "billingContact", value.asInstanceOf[js.Any])
     

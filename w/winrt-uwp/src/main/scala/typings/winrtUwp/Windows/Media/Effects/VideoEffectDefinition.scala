@@ -21,7 +21,8 @@ object VideoEffectDefinition {
     __obj.asInstanceOf[VideoEffectDefinition]
   }
   
-  extension [Self <: VideoEffectDefinition](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VideoEffectDefinition] (val x: Self) extends AnyVal {
     
     inline def setActivatableClassId(value: String): Self = StObject.set(x, "activatableClassId", value.asInstanceOf[js.Any])
     

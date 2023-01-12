@@ -17,7 +17,8 @@ object ReactSelectorOptions {
     __obj.asInstanceOf[ReactSelectorOptions]
   }
   
-  extension [Self <: ReactSelectorOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReactSelectorOptions] (val x: Self) extends AnyVal {
     
     inline def setProps(value: js.Object): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     

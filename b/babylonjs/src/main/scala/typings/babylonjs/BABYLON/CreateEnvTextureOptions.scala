@@ -23,7 +23,8 @@ object CreateEnvTextureOptions {
     __obj.asInstanceOf[CreateEnvTextureOptions]
   }
   
-  extension [Self <: CreateEnvTextureOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateEnvTextureOptions] (val x: Self) extends AnyVal {
     
     inline def setImageQuality(value: Double): Self = StObject.set(x, "imageQuality", value.asInstanceOf[js.Any])
     

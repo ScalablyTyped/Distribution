@@ -61,7 +61,8 @@ object DataSourceParameter {
     __obj.asInstanceOf[DataSourceParameter]
   }
   
-  extension [Self <: DataSourceParameter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataSourceParameter] (val x: Self) extends AnyVal {
     
     inline def setAllowedValues(value: js.Array[String]): Self = StObject.set(x, "allowedValues", value.asInstanceOf[js.Any])
     

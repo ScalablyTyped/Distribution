@@ -48,7 +48,8 @@ object GetDocumentTextDetectionResponse {
     __obj.asInstanceOf[GetDocumentTextDetectionResponse]
   }
   
-  extension [Self <: GetDocumentTextDetectionResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GetDocumentTextDetectionResponse] (val x: Self) extends AnyVal {
     
     inline def setBlocks(value: BlockList): Self = StObject.set(x, "Blocks", value.asInstanceOf[js.Any])
     

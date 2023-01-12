@@ -104,7 +104,8 @@ object mod {
       __obj.asInstanceOf[FTPOptions]
     }
     
-    extension [Self <: FTPOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FTPOptions] (val x: Self) extends AnyVal {
       
       inline def setAdditionalLftpCommands(value: String): Self = StObject.set(x, "additionalLftpCommands", value.asInstanceOf[js.Any])
       
@@ -183,7 +184,8 @@ object mod {
       __obj.asInstanceOf[FTPResults]
     }
     
-    extension [Self <: FTPResults](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FTPResults] (val x: Self) extends AnyVal {
       
       inline def setData(value: String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -216,7 +218,8 @@ object mod {
       __obj.asInstanceOf[MirrorOptions]
     }
     
-    extension [Self <: MirrorOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MirrorOptions] (val x: Self) extends AnyVal {
       
       inline def setFilter(value: Any): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
       

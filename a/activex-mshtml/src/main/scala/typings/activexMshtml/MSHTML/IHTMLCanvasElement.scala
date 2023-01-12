@@ -31,7 +31,8 @@ object IHTMLCanvasElement {
     __obj.asInstanceOf[IHTMLCanvasElement]
   }
   
-  extension [Self <: IHTMLCanvasElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IHTMLCanvasElement] (val x: Self) extends AnyVal {
     
     inline def setGetContext(value: String => ICanvasRenderingContext2D): Self = StObject.set(x, "getContext", js.Any.fromFunction1(value))
     

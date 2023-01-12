@@ -19,7 +19,8 @@ object FinalizeRequestHandlerOptions {
     __obj.asInstanceOf[FinalizeRequestHandlerOptions]
   }
   
-  extension [Self <: FinalizeRequestHandlerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FinalizeRequestHandlerOptions] (val x: Self) extends AnyVal {
     
     inline def setStep(value: finalizeRequest): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }

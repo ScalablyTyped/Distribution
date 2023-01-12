@@ -22,7 +22,8 @@ object CertificateChains {
     __obj.asInstanceOf[CertificateChains]
   }
   
-  extension [Self <: CertificateChains](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CertificateChains] (val x: Self) extends AnyVal {
     
     inline def setCaviumCerts(value: js.Array[String]): Self = StObject.set(x, "caviumCerts", value.asInstanceOf[js.Any])
     

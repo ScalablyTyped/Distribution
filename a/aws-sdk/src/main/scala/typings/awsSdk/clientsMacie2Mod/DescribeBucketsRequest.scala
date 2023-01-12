@@ -33,7 +33,8 @@ object DescribeBucketsRequest {
     __obj.asInstanceOf[DescribeBucketsRequest]
   }
   
-  extension [Self <: DescribeBucketsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBucketsRequest] (val x: Self) extends AnyVal {
     
     inline def setCriteria(value: BucketCriteria): Self = StObject.set(x, "criteria", value.asInstanceOf[js.Any])
     

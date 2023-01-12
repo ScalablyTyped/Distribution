@@ -24,7 +24,8 @@ object OmitEllipsisConfigexpanda {
     __obj.asInstanceOf[OmitEllipsisConfigexpanda]
   }
   
-  extension [Self <: OmitEllipsisConfigexpanda](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OmitEllipsisConfigexpanda] (val x: Self) extends AnyVal {
     
     inline def setOnEllipsis(value: /* ellipsis */ Boolean => Unit): Self = StObject.set(x, "onEllipsis", js.Any.fromFunction1(value))
     

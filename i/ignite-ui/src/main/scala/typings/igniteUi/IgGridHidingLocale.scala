@@ -85,7 +85,8 @@ object IgGridHidingLocale {
     __obj.asInstanceOf[IgGridHidingLocale]
   }
   
-  extension [Self <: IgGridHidingLocale](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IgGridHidingLocale] (val x: Self) extends AnyVal {
     
     inline def setColumnChooserButtonApplyText(value: String): Self = StObject.set(x, "columnChooserButtonApplyText", value.asInstanceOf[js.Any])
     

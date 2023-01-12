@@ -22,7 +22,8 @@ object OutdatedLibrary {
     __obj.asInstanceOf[OutdatedLibrary]
   }
   
-  extension [Self <: OutdatedLibrary](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OutdatedLibrary] (val x: Self) extends AnyVal {
     
     inline def setLearnMoreUrls(value: js.Array[String]): Self = StObject.set(x, "learnMoreUrls", value.asInstanceOf[js.Any])
     

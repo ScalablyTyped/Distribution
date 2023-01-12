@@ -56,7 +56,8 @@ object libUtilsMod {
       __obj.asInstanceOf[ParsedResource]
     }
     
-    extension [Self <: ParsedResource](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ParsedResource] (val x: Self) extends AnyVal {
       
       inline def setLocationId(value: String): Self = StObject.set(x, "locationId", value.asInstanceOf[js.Any])
       

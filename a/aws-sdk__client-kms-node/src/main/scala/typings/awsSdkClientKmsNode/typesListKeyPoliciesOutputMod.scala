@@ -40,7 +40,8 @@ object typesListKeyPoliciesOutputMod {
       __obj.asInstanceOf[ListKeyPoliciesOutput]
     }
     
-    extension [Self <: ListKeyPoliciesOutput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ListKeyPoliciesOutput] (val x: Self) extends AnyVal {
       
       inline def set$metadata(value: ResponseMetadata): Self = StObject.set(x, "$metadata", value.asInstanceOf[js.Any])
       

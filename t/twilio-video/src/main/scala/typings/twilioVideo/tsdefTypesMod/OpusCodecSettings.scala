@@ -21,7 +21,8 @@ object OpusCodecSettings {
     __obj.asInstanceOf[OpusCodecSettings]
   }
   
-  extension [Self <: OpusCodecSettings](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OpusCodecSettings] (val x: Self) extends AnyVal {
     
     inline def setCodec(value: opus): Self = StObject.set(x, "codec", value.asInstanceOf[js.Any])
     

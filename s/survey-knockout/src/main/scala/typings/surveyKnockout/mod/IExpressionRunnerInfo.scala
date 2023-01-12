@@ -19,7 +19,8 @@ object IExpressionRunnerInfo {
     __obj.asInstanceOf[IExpressionRunnerInfo]
   }
   
-  extension [Self <: IExpressionRunnerInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IExpressionRunnerInfo] (val x: Self) extends AnyVal {
     
     inline def setCanRun(value: /* obj */ Base => Boolean): Self = StObject.set(x, "canRun", js.Any.fromFunction1(value))
     

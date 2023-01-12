@@ -18,7 +18,8 @@ object libModelsIdentityServerModelsMod {
       __obj.asInstanceOf[IdentityServerAccount]
     }
     
-    extension [Self <: IdentityServerAccount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityServerAccount] (val x: Self) extends AnyVal {
       
       inline def setUser_id(value: String): Self = StObject.set(x, "user_id", value.asInstanceOf[js.Any])
     }
@@ -41,7 +42,8 @@ object libModelsIdentityServerModelsMod {
       __obj.asInstanceOf[IdentityServerInvite]
     }
     
-    extension [Self <: IdentityServerInvite](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IdentityServerInvite] (val x: Self) extends AnyVal {
       
       inline def setDisplay_name(value: String): Self = StObject.set(x, "display_name", value.asInstanceOf[js.Any])
       

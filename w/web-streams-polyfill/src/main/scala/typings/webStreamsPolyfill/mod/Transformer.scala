@@ -34,7 +34,8 @@ object Transformer {
     __obj.asInstanceOf[Transformer[I, O]]
   }
   
-  extension [Self <: Transformer[?, ?], I, O](x: Self & (Transformer[I, O])) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Transformer[?, ?], I, O] (val x: Self & (Transformer[I, O])) extends AnyVal {
     
     inline def setFlush(value: /* controller */ TransformStreamDefaultController[O] => Unit | PromiseLike[Unit]): Self = StObject.set(x, "flush", js.Any.fromFunction1(value))
     

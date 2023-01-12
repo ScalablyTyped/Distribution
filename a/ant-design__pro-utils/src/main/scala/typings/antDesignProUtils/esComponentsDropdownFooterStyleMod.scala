@@ -28,7 +28,8 @@ object esComponentsDropdownFooterStyleMod {
       __obj.asInstanceOf[ProToken]
     }
     
-    extension [Self <: ProToken](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ProToken] (val x: Self) extends AnyVal {
       
       inline def setComponentCls(value: String): Self = StObject.set(x, "componentCls", value.asInstanceOf[js.Any])
     }

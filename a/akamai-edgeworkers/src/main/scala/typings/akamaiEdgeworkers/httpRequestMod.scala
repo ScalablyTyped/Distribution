@@ -77,7 +77,8 @@ object httpRequestMod {
       __obj.asInstanceOf[HttpResponse]
     }
     
-    extension [Self <: HttpResponse](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: HttpResponse] (val x: Self) extends AnyVal {
       
       inline def setBody(value: ReadableStream[Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
       

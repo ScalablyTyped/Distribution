@@ -17,7 +17,8 @@ object ChangeStreamNameSpace {
     __obj.asInstanceOf[ChangeStreamNameSpace]
   }
   
-  extension [Self <: ChangeStreamNameSpace](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ChangeStreamNameSpace] (val x: Self) extends AnyVal {
     
     inline def setColl(value: String): Self = StObject.set(x, "coll", value.asInstanceOf[js.Any])
     

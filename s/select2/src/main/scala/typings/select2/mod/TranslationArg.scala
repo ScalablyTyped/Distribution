@@ -19,7 +19,8 @@ object TranslationArg {
     __obj.asInstanceOf[TranslationArg]
   }
   
-  extension [Self <: TranslationArg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TranslationArg] (val x: Self) extends AnyVal {
     
     inline def setInput(value: String): Self = StObject.set(x, "input", value.asInstanceOf[js.Any])
     

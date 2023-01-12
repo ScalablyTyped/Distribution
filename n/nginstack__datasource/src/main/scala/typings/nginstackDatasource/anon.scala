@@ -83,7 +83,8 @@ object anon {
       __obj.asInstanceOf[ANGLE]
     }
     
-    extension [Self <: ANGLE](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ANGLE] (val x: Self) extends AnyVal {
       
       inline def setANGLE(value: String): Self = StObject.set(x, "ANGLE", value.asInstanceOf[js.Any])
       
@@ -156,7 +157,8 @@ object anon {
       __obj.asInstanceOf[Children]
     }
     
-    extension [Self <: Children](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Children] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -198,7 +200,8 @@ object anon {
       __obj.asInstanceOf[ClassDef]
     }
     
-    extension [Self <: ClassDef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ClassDef] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: Boolean): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
@@ -227,7 +230,8 @@ object anon {
       __obj.asInstanceOf[DDD]
     }
     
-    extension [Self <: DDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDD] (val x: Self) extends AnyVal {
       
       inline def setDDD(value: Double): Self = StObject.set(x, "DDD", value.asInstanceOf[js.Any])
       
@@ -250,7 +254,8 @@ object anon {
       __obj.asInstanceOf[DDDDDDDD]
     }
     
-    extension [Self <: DDDDDDDD](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDDDDDDD] (val x: Self) extends AnyVal {
       
       inline def setDDD_DDDDD(value: Double): Self = StObject.set(x, "DDD_DDDDD", value.asInstanceOf[js.Any])
       
@@ -281,7 +286,8 @@ object anon {
       __obj.asInstanceOf[DDMM]
     }
     
-    extension [Self <: DDMM](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DDMM] (val x: Self) extends AnyVal {
       
       inline def setDDMM(value: Double): Self = StObject.set(x, "DDMM", value.asInstanceOf[js.Any])
       
@@ -310,7 +316,8 @@ object anon {
       __obj.asInstanceOf[DerivedFrom]
     }
     
-    extension [Self <: DerivedFrom](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DerivedFrom] (val x: Self) extends AnyVal {
       
       inline def setDerivedFrom(value: Any): Self = StObject.set(x, "derivedFrom", value.asInstanceOf[js.Any])
       
@@ -357,7 +364,8 @@ object anon {
       __obj.asInstanceOf[EQUALITY]
     }
     
-    extension [Self <: EQUALITY](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EQUALITY] (val x: Self) extends AnyVal {
       
       inline def setEQUALITY(value: String): Self = StObject.set(x, "EQUALITY", value.asInstanceOf[js.Any])
       

@@ -33,7 +33,8 @@ object MobileMoney {
     __obj.asInstanceOf[MobileMoney]
   }
   
-  extension [Self <: MobileMoney](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MobileMoney] (val x: Self) extends AnyVal {
     
     inline def setFrancophone(
       value: MobileMoneyFrancophoneRequest => js.Promise[AxiosResponse[MobileMoneyFrancophoneResponse, Any]]

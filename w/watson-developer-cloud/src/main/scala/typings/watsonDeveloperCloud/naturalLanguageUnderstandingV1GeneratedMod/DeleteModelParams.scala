@@ -21,7 +21,8 @@ object DeleteModelParams {
     __obj.asInstanceOf[DeleteModelParams]
   }
   
-  extension [Self <: DeleteModelParams](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DeleteModelParams] (val x: Self) extends AnyVal {
     
     inline def setHeaders(value: js.Object): Self = StObject.set(x, "headers", value.asInstanceOf[js.Any])
     

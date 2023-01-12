@@ -31,7 +31,8 @@ object distTypesBaseMod {
       __obj.asInstanceOf[NavigationOptions]
     }
     
-    extension [Self <: NavigationOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NavigationOptions] (val x: Self) extends AnyVal {
       
       inline def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
       
@@ -66,7 +67,8 @@ object distTypesBaseMod {
       __obj.asInstanceOf[SimpleState]
     }
     
-    extension [Self <: SimpleState](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SimpleState] (val x: Self) extends AnyVal {
       
       inline def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
       
@@ -91,7 +93,8 @@ object distTypesBaseMod {
       __obj.asInstanceOf[State]
     }
     
-    extension [Self <: State](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: State] (val x: Self) extends AnyVal {
       
       inline def setMeta(value: StateMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
@@ -124,7 +127,8 @@ object distTypesBaseMod {
       __obj.asInstanceOf[StateMeta]
     }
     
-    extension [Self <: StateMeta](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StateMeta] (val x: Self) extends AnyVal {
       
       inline def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       

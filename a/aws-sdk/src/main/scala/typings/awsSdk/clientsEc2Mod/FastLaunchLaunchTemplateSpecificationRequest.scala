@@ -28,7 +28,8 @@ object FastLaunchLaunchTemplateSpecificationRequest {
     __obj.asInstanceOf[FastLaunchLaunchTemplateSpecificationRequest]
   }
   
-  extension [Self <: FastLaunchLaunchTemplateSpecificationRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: FastLaunchLaunchTemplateSpecificationRequest] (val x: Self) extends AnyVal {
     
     inline def setLaunchTemplateId(value: LaunchTemplateId): Self = StObject.set(x, "LaunchTemplateId", value.asInstanceOf[js.Any])
     

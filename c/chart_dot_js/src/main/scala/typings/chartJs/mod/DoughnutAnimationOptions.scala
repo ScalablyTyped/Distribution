@@ -25,7 +25,8 @@ object DoughnutAnimationOptions {
     __obj.asInstanceOf[DoughnutAnimationOptions]
   }
   
-  extension [Self <: DoughnutAnimationOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DoughnutAnimationOptions] (val x: Self) extends AnyVal {
     
     inline def setAnimateRotate(value: Boolean): Self = StObject.set(x, "animateRotate", value.asInstanceOf[js.Any])
     

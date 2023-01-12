@@ -25,7 +25,8 @@ object TemplateElement {
     __obj.asInstanceOf[TemplateElement]
   }
   
-  extension [Self <: TemplateElement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TemplateElement] (val x: Self) extends AnyVal {
     
     inline def setCooked(value: String): Self = StObject.set(x, "cooked", value.asInstanceOf[js.Any])
     

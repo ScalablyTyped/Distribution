@@ -46,7 +46,8 @@ object SVGPathSegArcAbs {
     __obj.asInstanceOf[SVGPathSegArcAbs]
   }
   
-  extension [Self <: SVGPathSegArcAbs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SVGPathSegArcAbs] (val x: Self) extends AnyVal {
     
     inline def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
     

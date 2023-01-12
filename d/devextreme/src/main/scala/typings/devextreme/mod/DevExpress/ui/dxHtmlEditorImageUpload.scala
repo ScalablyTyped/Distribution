@@ -42,7 +42,8 @@ object dxHtmlEditorImageUpload {
     __obj.asInstanceOf[dxHtmlEditorImageUpload]
   }
   
-  extension [Self <: dxHtmlEditorImageUpload](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: dxHtmlEditorImageUpload] (val x: Self) extends AnyVal {
     
     inline def setFileUploadMode(value: HtmlEditorImageUploadMode): Self = StObject.set(x, "fileUploadMode", value.asInstanceOf[js.Any])
     

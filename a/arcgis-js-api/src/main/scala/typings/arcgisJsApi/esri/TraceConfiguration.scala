@@ -89,7 +89,8 @@ object TraceConfiguration {
     __obj.asInstanceOf[TraceConfiguration]
   }
   
-  extension [Self <: TraceConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TraceConfiguration] (val x: Self) extends AnyVal {
     
     inline def setConditionBarriers(value: js.Array[Any]): Self = StObject.set(x, "conditionBarriers", value.asInstanceOf[js.Any])
     

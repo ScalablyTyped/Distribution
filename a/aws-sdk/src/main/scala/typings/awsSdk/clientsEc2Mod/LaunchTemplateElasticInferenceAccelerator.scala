@@ -23,7 +23,8 @@ object LaunchTemplateElasticInferenceAccelerator {
     __obj.asInstanceOf[LaunchTemplateElasticInferenceAccelerator]
   }
   
-  extension [Self <: LaunchTemplateElasticInferenceAccelerator](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: LaunchTemplateElasticInferenceAccelerator] (val x: Self) extends AnyVal {
     
     inline def setCount(value: LaunchTemplateElasticInferenceAcceleratorCount): Self = StObject.set(x, "Count", value.asInstanceOf[js.Any])
     

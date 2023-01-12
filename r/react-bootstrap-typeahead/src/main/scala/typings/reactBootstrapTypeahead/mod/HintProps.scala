@@ -24,7 +24,8 @@ object HintProps {
     __obj.asInstanceOf[HintProps]
   }
   
-  extension [Self <: HintProps](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HintProps] (val x: Self) extends AnyVal {
     
     inline def setChildren(value: ReactNode): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
     

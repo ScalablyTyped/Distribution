@@ -97,7 +97,8 @@ object PickImplkeyboardShortcuts {
     __obj.asInstanceOf[PickImplkeyboardShortcuts]
   }
   
-  extension [Self <: PickImplkeyboardShortcuts](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PickImplkeyboardShortcuts] (val x: Self) extends AnyVal {
     
     inline def setClassName(value: ClassNameSettings): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     

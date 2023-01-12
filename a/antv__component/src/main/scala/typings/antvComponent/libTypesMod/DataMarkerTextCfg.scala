@@ -17,7 +17,8 @@ object DataMarkerTextCfg {
     __obj.asInstanceOf[DataMarkerTextCfg]
   }
   
-  extension [Self <: DataMarkerTextCfg](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataMarkerTextCfg] (val x: Self) extends AnyVal {
     
     inline def setDisplay(value: Boolean): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
     

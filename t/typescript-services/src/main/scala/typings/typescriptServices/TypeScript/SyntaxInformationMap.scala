@@ -163,7 +163,8 @@ object SyntaxInformationMap {
     __obj.asInstanceOf[SyntaxInformationMap]
   }
   
-  extension [Self <: SyntaxInformationMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SyntaxInformationMap] (val x: Self) extends AnyVal {
     
     inline def setElementToPosition(value: Any): Self = StObject.set(x, "elementToPosition", value.asInstanceOf[js.Any])
     

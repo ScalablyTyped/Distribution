@@ -29,7 +29,8 @@ object libSrcDialectMod {
       __obj.asInstanceOf[Dialect]
     }
     
-    extension [Self <: Dialect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialect] (val x: Self) extends AnyVal {
       
       inline def setFormatOptions(value: ProcessedDialectFormatOptions): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object libSrcDialectMod {
       __obj.asInstanceOf[DialectOptions]
     }
     
-    extension [Self <: DialectOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DialectOptions] (val x: Self) extends AnyVal {
       
       inline def setFormatOptions(value: DialectFormatOptions): Self = StObject.set(x, "formatOptions", value.asInstanceOf[js.Any])
       

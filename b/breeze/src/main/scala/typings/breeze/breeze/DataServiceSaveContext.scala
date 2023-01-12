@@ -35,7 +35,8 @@ object DataServiceSaveContext {
     __obj.asInstanceOf[DataServiceSaveContext]
   }
   
-  extension [Self <: DataServiceSaveContext](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataServiceSaveContext] (val x: Self) extends AnyVal {
     
     inline def setAdapter(value: DataServiceAdapter): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
     

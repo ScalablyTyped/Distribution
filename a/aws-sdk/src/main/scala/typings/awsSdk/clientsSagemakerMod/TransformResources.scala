@@ -28,7 +28,8 @@ object TransformResources {
     __obj.asInstanceOf[TransformResources]
   }
   
-  extension [Self <: TransformResources](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransformResources] (val x: Self) extends AnyVal {
     
     inline def setInstanceCount(value: TransformInstanceCount): Self = StObject.set(x, "InstanceCount", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object PartialOptions {
     __obj.asInstanceOf[PartialOptions]
   }
   
-  extension [Self <: PartialOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
     
     inline def setElement(value: HTMLElement | String): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
     

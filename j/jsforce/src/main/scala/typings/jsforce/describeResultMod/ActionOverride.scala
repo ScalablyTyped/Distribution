@@ -23,7 +23,8 @@ object ActionOverride {
     __obj.asInstanceOf[ActionOverride]
   }
   
-  extension [Self <: ActionOverride](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ActionOverride] (val x: Self) extends AnyVal {
     
     inline def setFormFactor(value: String): Self = StObject.set(x, "formFactor", value.asInstanceOf[js.Any])
     

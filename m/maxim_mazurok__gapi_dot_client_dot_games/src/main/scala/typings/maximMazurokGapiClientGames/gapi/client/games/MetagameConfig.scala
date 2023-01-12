@@ -22,7 +22,8 @@ object MetagameConfig {
     __obj.asInstanceOf[MetagameConfig]
   }
   
-  extension [Self <: MetagameConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetagameConfig] (val x: Self) extends AnyVal {
     
     inline def setCurrentVersion(value: Double): Self = StObject.set(x, "currentVersion", value.asInstanceOf[js.Any])
     

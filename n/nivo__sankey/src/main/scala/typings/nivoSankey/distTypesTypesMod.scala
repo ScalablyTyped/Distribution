@@ -53,7 +53,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DefaultLink]
     }
     
-    extension [Self <: DefaultLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultLink] (val x: Self) extends AnyVal {
       
       inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
       
@@ -82,7 +83,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[DefaultNode]
     }
     
-    extension [Self <: DefaultNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DefaultNode] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -237,7 +239,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SankeyCommonProps[N, L]]
     }
     
-    extension [Self <: SankeyCommonProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeyCommonProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyCommonProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeyCommonProps[N, L])) extends AnyVal {
       
       inline def setAlign(value: SankeyAlignType | SankeyAlignFunction): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
@@ -352,7 +355,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SankeyDataProps[N, L]]
     }
     
-    extension [Self <: SankeyDataProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeyDataProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyDataProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeyDataProps[N, L])) extends AnyVal {
       
       inline def setData(value: Links[N, L]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     }
@@ -405,7 +409,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SankeyRawLink]
     }
     
-    extension [Self <: SankeyRawLink](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyRawLink] (val x: Self) extends AnyVal {
       
       inline def setEndColor(value: String): Self = StObject.set(x, "endColor", value.asInstanceOf[js.Any])
       
@@ -434,7 +439,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SankeyRawNode]
     }
     
-    extension [Self <: SankeyRawNode](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeyRawNode] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
     }
@@ -565,7 +571,8 @@ object distTypesTypesMod {
       __obj.asInstanceOf[SankeySvgProps[N, L]]
     }
     
-    extension [Self <: SankeySvgProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */](x: Self & (SankeySvgProps[N, L])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SankeySvgProps[?, ?], N /* <: DefaultNode */, L /* <: DefaultLink */] (val x: Self & (SankeySvgProps[N, L])) extends AnyVal {
       
       inline def setAlign(value: SankeyAlignType | SankeyAlignFunction): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       

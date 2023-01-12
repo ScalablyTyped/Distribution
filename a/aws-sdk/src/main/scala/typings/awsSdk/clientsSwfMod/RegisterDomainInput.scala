@@ -33,7 +33,8 @@ object RegisterDomainInput {
     __obj.asInstanceOf[RegisterDomainInput]
   }
   
-  extension [Self <: RegisterDomainInput](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RegisterDomainInput] (val x: Self) extends AnyVal {
     
     inline def setDescription(value: Description): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
     

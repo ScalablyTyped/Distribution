@@ -20,7 +20,8 @@ object PartialObservervoid {
     __obj.asInstanceOf[PartialObservervoid]
   }
   
-  extension [Self <: PartialObservervoid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PartialObservervoid] (val x: Self) extends AnyVal {
     
     inline def setError(value: FirestoreError => Unit): Self = StObject.set(x, "error", js.Any.fromFunction1(value))
     

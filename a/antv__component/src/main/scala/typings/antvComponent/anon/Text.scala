@@ -17,7 +17,8 @@ object Text {
     __obj.asInstanceOf[Text]
   }
   
-  extension [Self <: Text](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Text] (val x: Self) extends AnyVal {
     
     inline def setStyle(value: TextAlign): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     

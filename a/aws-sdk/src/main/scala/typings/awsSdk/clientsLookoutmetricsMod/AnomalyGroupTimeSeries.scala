@@ -23,7 +23,8 @@ object AnomalyGroupTimeSeries {
     __obj.asInstanceOf[AnomalyGroupTimeSeries]
   }
   
-  extension [Self <: AnomalyGroupTimeSeries](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnomalyGroupTimeSeries] (val x: Self) extends AnyVal {
     
     inline def setAnomalyGroupId(value: UUID): Self = StObject.set(x, "AnomalyGroupId", value.asInstanceOf[js.Any])
     

@@ -31,7 +31,8 @@ object Auth0DecodedHash {
     __obj.asInstanceOf[Auth0DecodedHash]
   }
   
-  extension [Self <: Auth0DecodedHash](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Auth0DecodedHash] (val x: Self) extends AnyVal {
     
     inline def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
     

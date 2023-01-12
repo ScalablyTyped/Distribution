@@ -34,7 +34,8 @@ object InboundTransfers {
     __obj.asInstanceOf[InboundTransfers]
   }
   
-  extension [Self <: InboundTransfers](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: InboundTransfers] (val x: Self) extends AnyVal {
     
     inline def setInboundTransfers(value: InboundTransfersResource): Self = StObject.set(x, "inboundTransfers", value.asInstanceOf[js.Any])
     

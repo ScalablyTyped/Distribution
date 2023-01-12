@@ -40,7 +40,8 @@ object OverlayOptions {
     __obj.asInstanceOf[OverlayOptions]
   }
   
-  extension [Self <: OverlayOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OverlayOptions] (val x: Self) extends AnyVal {
     
     inline def setAutoPan(value: Boolean): Self = StObject.set(x, "autoPan", value.asInstanceOf[js.Any])
     

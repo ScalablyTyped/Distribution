@@ -53,7 +53,8 @@ object TransitGatewayRequestOptions {
     __obj.asInstanceOf[TransitGatewayRequestOptions]
   }
   
-  extension [Self <: TransitGatewayRequestOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TransitGatewayRequestOptions] (val x: Self) extends AnyVal {
     
     inline def setAmazonSideAsn(value: Long): Self = StObject.set(x, "AmazonSideAsn", value.asInstanceOf[js.Any])
     

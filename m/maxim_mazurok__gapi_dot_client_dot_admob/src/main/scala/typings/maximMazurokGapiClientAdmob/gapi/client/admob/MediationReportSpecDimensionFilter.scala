@@ -19,7 +19,8 @@ object MediationReportSpecDimensionFilter {
     __obj.asInstanceOf[MediationReportSpecDimensionFilter]
   }
   
-  extension [Self <: MediationReportSpecDimensionFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediationReportSpecDimensionFilter] (val x: Self) extends AnyVal {
     
     inline def setDimension(value: String): Self = StObject.set(x, "dimension", value.asInstanceOf[js.Any])
     

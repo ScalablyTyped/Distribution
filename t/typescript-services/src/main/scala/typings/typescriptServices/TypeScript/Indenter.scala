@@ -21,7 +21,8 @@ object Indenter {
     __obj.asInstanceOf[Indenter]
   }
   
-  extension [Self <: Indenter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Indenter] (val x: Self) extends AnyVal {
     
     inline def setDecreaseIndent(value: () => Unit): Self = StObject.set(x, "decreaseIndent", js.Any.fromFunction0(value))
     

@@ -27,7 +27,8 @@ object QuaternionAnimationTrackXYZEuler {
     __obj.asInstanceOf[QuaternionAnimationTrackXYZEuler]
   }
   
-  extension [Self <: QuaternionAnimationTrackXYZEuler](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: QuaternionAnimationTrackXYZEuler] (val x: Self) extends AnyVal {
     
     inline def setGetChildTrackByIndex(value: Double => AnimationTrack): Self = StObject.set(x, "getChildTrackByIndex", js.Any.fromFunction1(value))
     

@@ -34,7 +34,8 @@ object XElementAccess {
     __obj.asInstanceOf[XElementAccess]
   }
   
-  extension [Self <: XElementAccess](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XElementAccess] (val x: Self) extends AnyVal {
     
     inline def setElementType(value: `type`): Self = StObject.set(x, "ElementType", value.asInstanceOf[js.Any])
     

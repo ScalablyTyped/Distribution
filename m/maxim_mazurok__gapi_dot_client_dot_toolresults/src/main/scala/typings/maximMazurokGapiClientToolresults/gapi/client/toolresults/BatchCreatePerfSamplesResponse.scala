@@ -15,7 +15,8 @@ object BatchCreatePerfSamplesResponse {
     __obj.asInstanceOf[BatchCreatePerfSamplesResponse]
   }
   
-  extension [Self <: BatchCreatePerfSamplesResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchCreatePerfSamplesResponse] (val x: Self) extends AnyVal {
     
     inline def setPerfSamples(value: js.Array[PerfSample]): Self = StObject.set(x, "perfSamples", value.asInstanceOf[js.Any])
     

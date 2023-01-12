@@ -43,7 +43,8 @@ object MetricTransformation {
     __obj.asInstanceOf[MetricTransformation]
   }
   
-  extension [Self <: MetricTransformation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MetricTransformation] (val x: Self) extends AnyVal {
     
     inline def setDefaultValue(value: DefaultValue): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
     

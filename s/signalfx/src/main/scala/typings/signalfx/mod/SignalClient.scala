@@ -17,7 +17,8 @@ object SignalClient {
     __obj.asInstanceOf[SignalClient]
   }
   
-  extension [Self <: SignalClient](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SignalClient] (val x: Self) extends AnyVal {
     
     inline def setSend(value: SignalReport => js.Promise[Unit]): Self = StObject.set(x, "send", js.Any.fromFunction1(value))
     

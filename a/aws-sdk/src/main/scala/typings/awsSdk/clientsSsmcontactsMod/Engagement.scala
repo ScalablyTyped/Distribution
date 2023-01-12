@@ -43,7 +43,8 @@ object Engagement {
     __obj.asInstanceOf[Engagement]
   }
   
-  extension [Self <: Engagement](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Engagement] (val x: Self) extends AnyVal {
     
     inline def setContactArn(value: SsmContactsArn): Self = StObject.set(x, "ContactArn", value.asInstanceOf[js.Any])
     

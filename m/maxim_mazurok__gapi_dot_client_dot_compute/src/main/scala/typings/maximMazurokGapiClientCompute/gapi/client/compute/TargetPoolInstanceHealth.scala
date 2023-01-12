@@ -18,7 +18,8 @@ object TargetPoolInstanceHealth {
     __obj.asInstanceOf[TargetPoolInstanceHealth]
   }
   
-  extension [Self <: TargetPoolInstanceHealth](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TargetPoolInstanceHealth] (val x: Self) extends AnyVal {
     
     inline def setHealthStatus(value: js.Array[HealthStatus]): Self = StObject.set(x, "healthStatus", value.asInstanceOf[js.Any])
     

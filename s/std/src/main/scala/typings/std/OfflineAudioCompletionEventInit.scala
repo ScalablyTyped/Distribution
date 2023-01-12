@@ -18,7 +18,8 @@ object OfflineAudioCompletionEventInit {
     __obj.asInstanceOf[OfflineAudioCompletionEventInit]
   }
   
-  extension [Self <: OfflineAudioCompletionEventInit](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OfflineAudioCompletionEventInit] (val x: Self) extends AnyVal {
     
     inline def setRenderedBuffer(value: AudioBuffer): Self = StObject.set(x, "renderedBuffer", value.asInstanceOf[js.Any])
   }

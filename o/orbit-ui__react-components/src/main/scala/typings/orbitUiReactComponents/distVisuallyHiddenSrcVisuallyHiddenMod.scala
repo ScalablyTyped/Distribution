@@ -47,7 +47,8 @@ object distVisuallyHiddenSrcVisuallyHiddenMod {
       __obj.asInstanceOf[InnerVisuallyHiddenProps]
     }
     
-    extension [Self <: InnerVisuallyHiddenProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InnerVisuallyHiddenProps] (val x: Self) extends AnyVal {
       
       inline def setAs(value: ElementType[Any]): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])
       

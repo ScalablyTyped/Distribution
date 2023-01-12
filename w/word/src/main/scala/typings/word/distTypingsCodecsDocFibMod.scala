@@ -33,7 +33,8 @@ object distTypingsCodecsDocFibMod {
       __obj.asInstanceOf[Fib]
     }
     
-    extension [Self <: Fib](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Fib] (val x: Self) extends AnyVal {
       
       inline def setBase(value: FibBase): Self = StObject.set(x, "base", value.asInstanceOf[js.Any])
       
@@ -74,7 +75,8 @@ object distTypingsCodecsDocFibMod {
       __obj.asInstanceOf[FibBase]
     }
     
-    extension [Self <: FibBase](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FibBase] (val x: Self) extends AnyVal {
       
       inline def setFWhichTblStm(value: Double): Self = StObject.set(x, "fWhichTblStm", value.asInstanceOf[js.Any])
       
@@ -101,7 +103,8 @@ object distTypingsCodecsDocFibMod {
       __obj.asInstanceOf[FibRgCswNew]
     }
     
-    extension [Self <: FibRgCswNew](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FibRgCswNew] (val x: Self) extends AnyVal {
       
       inline def setNFibNew(value: Double): Self = StObject.set(x, "nFibNew", value.asInstanceOf[js.Any])
     }
@@ -146,7 +149,8 @@ object distTypingsCodecsDocFibMod {
       __obj.asInstanceOf[FibRgFcLcb]
     }
     
-    extension [Self <: FibRgFcLcb](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FibRgFcLcb] (val x: Self) extends AnyVal {
       
       inline def setFcClx(value: Double): Self = StObject.set(x, "fcClx", value.asInstanceOf[js.Any])
       
@@ -222,7 +226,8 @@ object distTypingsCodecsDocFibMod {
       __obj.asInstanceOf[FibRgLw97]
     }
     
-    extension [Self <: FibRgLw97](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: FibRgLw97] (val x: Self) extends AnyVal {
       
       inline def setCcpAtn(value: Double): Self = StObject.set(x, "ccpAtn", value.asInstanceOf[js.Any])
       

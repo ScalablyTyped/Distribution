@@ -36,7 +36,8 @@ object sapUiIntegrationDesigntimeBaseEditorValidatorIsDateMod extends Shortcut {
       __obj.asInstanceOf[IsDate]
     }
     
-    extension [Self <: IsDate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsDate] (val x: Self) extends AnyVal {
       
       inline def setValidate(value: String => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
     }

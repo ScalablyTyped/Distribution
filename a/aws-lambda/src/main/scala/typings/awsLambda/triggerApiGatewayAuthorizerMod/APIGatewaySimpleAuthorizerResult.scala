@@ -15,7 +15,8 @@ object APIGatewaySimpleAuthorizerResult {
     __obj.asInstanceOf[APIGatewaySimpleAuthorizerResult]
   }
   
-  extension [Self <: APIGatewaySimpleAuthorizerResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: APIGatewaySimpleAuthorizerResult] (val x: Self) extends AnyVal {
     
     inline def setIsAuthorized(value: Boolean): Self = StObject.set(x, "isAuthorized", value.asInstanceOf[js.Any])
   }

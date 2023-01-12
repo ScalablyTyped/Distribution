@@ -111,7 +111,8 @@ object mod {
       __obj.asInstanceOf[MotionProps]
     }
     
-    extension [Self <: MotionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MotionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* interpolatedStyle */ PlainStyle => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -147,7 +148,8 @@ object mod {
       __obj.asInstanceOf[OpaqueConfig]
     }
     
-    extension [Self <: OpaqueConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OpaqueConfig] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -191,7 +193,8 @@ object mod {
       __obj.asInstanceOf[SpringHelperConfig]
     }
     
-    extension [Self <: SpringHelperConfig](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: SpringHelperConfig] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -246,7 +249,8 @@ object mod {
       __obj.asInstanceOf[TransitionPlainStyle]
     }
     
-    extension [Self <: TransitionPlainStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionPlainStyle] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
@@ -301,7 +305,8 @@ object mod {
       __obj.asInstanceOf[TransitionProps]
     }
     
-    extension [Self <: TransitionProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionProps] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: /* interpolatedStyles */ js.Array[TransitionPlainStyle] => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
@@ -361,7 +366,8 @@ object mod {
       __obj.asInstanceOf[TransitionStyle]
     }
     
-    extension [Self <: TransitionStyle](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TransitionStyle] (val x: Self) extends AnyVal {
       
       inline def setData(value: Any): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       

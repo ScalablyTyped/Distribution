@@ -20,7 +20,8 @@ object EmailCC {
     __obj.asInstanceOf[EmailCC]
   }
   
-  extension [Self <: EmailCC](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EmailCC] (val x: Self) extends AnyVal {
     
     inline def setAction(value: String): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
     

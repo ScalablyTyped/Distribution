@@ -23,7 +23,8 @@ object MaskedInputStatic {
     __obj.asInstanceOf[MaskedInputStatic]
   }
   
-  extension [Self <: MaskedInputStatic](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MaskedInputStatic] (val x: Self) extends AnyVal {
     
     inline def setDefaults(value: MaskedInputDefaults): Self = StObject.set(x, "defaults", value.asInstanceOf[js.Any])
     

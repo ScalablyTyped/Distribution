@@ -57,7 +57,8 @@ object modulesMixinsScrollSpyMod extends Shortcut {
       __obj.asInstanceOf[ScrollSpy]
     }
     
-    extension [Self <: ScrollSpy](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollSpy] (val x: Self) extends AnyVal {
       
       inline def setAddSpyHandler(value: (Any, Any) => Unit): Self = StObject.set(x, "addSpyHandler", js.Any.fromFunction2(value))
       

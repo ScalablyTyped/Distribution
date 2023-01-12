@@ -1,6 +1,6 @@
 organization := "org.scalablytyped"
 name := "gematriya"
-version := "2.0-dt-20211202Z-d75d2c"
+version := "2.0-dt-20211202Z-eccb66"
 scalaVersion := "3.2.0"
 enablePlugins(ScalaJSPlugin)
 libraryDependencies ++= Seq(

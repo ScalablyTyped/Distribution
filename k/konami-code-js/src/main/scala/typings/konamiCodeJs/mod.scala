@@ -116,7 +116,8 @@ object mod {
       __obj.asInstanceOf[KonamiOptions]
     }
     
-    extension [Self <: KonamiOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: KonamiOptions] (val x: Self) extends AnyVal {
       
       inline def setCallback(value: /* instance */ KonamiCode => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       

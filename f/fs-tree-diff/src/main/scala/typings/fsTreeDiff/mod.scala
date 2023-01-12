@@ -98,7 +98,8 @@ object mod {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setEntries(value: js.Array[BaseEntry]): Self = StObject.set(x, "entries", value.asInstanceOf[js.Any])
       
@@ -143,7 +144,8 @@ object mod {
       __obj.asInstanceOf[PatchDelegate]
     }
     
-    extension [Self <: PatchDelegate](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PatchDelegate] (val x: Self) extends AnyVal {
       
       inline def setChange(value: (/* inputPath */ String, /* outputPath */ String, /* relativePath */ String) => Unit): Self = StObject.set(x, "change", js.Any.fromFunction3(value))
       
@@ -178,7 +180,8 @@ object mod {
       __obj.asInstanceOf[StaticOptions]
     }
     
-    extension [Self <: StaticOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: StaticOptions] (val x: Self) extends AnyVal {
       
       inline def setSortAndExpand(value: Boolean): Self = StObject.set(x, "sortAndExpand", value.asInstanceOf[js.Any])
       

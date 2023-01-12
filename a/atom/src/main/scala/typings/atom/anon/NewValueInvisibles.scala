@@ -18,7 +18,8 @@ object NewValueInvisibles {
     __obj.asInstanceOf[NewValueInvisibles]
   }
   
-  extension [Self <: NewValueInvisibles](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NewValueInvisibles] (val x: Self) extends AnyVal {
     
     inline def setNewValue(value: Invisibles): Self = StObject.set(x, "newValue", value.asInstanceOf[js.Any])
     

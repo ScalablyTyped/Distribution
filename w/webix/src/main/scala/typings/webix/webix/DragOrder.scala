@@ -46,7 +46,8 @@ object DragOrder {
     __obj.asInstanceOf[DragOrder]
   }
   
-  extension [Self <: DragOrder](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DragOrder] (val x: Self) extends AnyVal {
     
     inline def set$drag(value: (HTMLElement, Event, String) => String): Self = StObject.set(x, "$drag", js.Any.fromFunction3(value))
     

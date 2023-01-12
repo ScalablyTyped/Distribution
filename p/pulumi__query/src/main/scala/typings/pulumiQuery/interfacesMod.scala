@@ -505,7 +505,8 @@ object interfacesMod {
         __obj.asInstanceOf[SymbolConstructor]
       }
       
-      extension [Self <: SymbolConstructor](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: SymbolConstructor] (val x: Self) extends AnyVal {
         
         inline def setAsyncIterator(value: js.Symbol): Self = StObject.set(x, "asyncIterator", value.asInstanceOf[js.Any])
       }

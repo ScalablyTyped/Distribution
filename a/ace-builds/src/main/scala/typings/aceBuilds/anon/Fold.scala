@@ -17,7 +17,8 @@ object Fold {
     __obj.asInstanceOf[Fold]
   }
   
-  extension [Self <: Fold](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Fold] (val x: Self) extends AnyVal {
     
     inline def setFold(value: typings.aceBuilds.mod.Ace.Fold): Self = StObject.set(x, "fold", value.asInstanceOf[js.Any])
     

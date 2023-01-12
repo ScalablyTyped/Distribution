@@ -22,7 +22,8 @@ object NumRounds {
     __obj.asInstanceOf[NumRounds]
   }
   
-  extension [Self <: NumRounds](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NumRounds] (val x: Self) extends AnyVal {
     
     inline def setNumRounds(value: Double): Self = StObject.set(x, "numRounds", value.asInstanceOf[js.Any])
     

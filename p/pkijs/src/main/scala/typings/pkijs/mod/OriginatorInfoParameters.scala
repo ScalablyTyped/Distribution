@@ -20,7 +20,8 @@ object OriginatorInfoParameters {
     __obj.asInstanceOf[OriginatorInfoParameters]
   }
   
-  extension [Self <: OriginatorInfoParameters](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OriginatorInfoParameters] (val x: Self) extends AnyVal {
     
     inline def setCerts(value: CertificateSet): Self = StObject.set(x, "certs", value.asInstanceOf[js.Any])
     

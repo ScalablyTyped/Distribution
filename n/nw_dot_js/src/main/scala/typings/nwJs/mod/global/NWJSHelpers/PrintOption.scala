@@ -54,7 +54,8 @@ object PrintOption {
     __obj.asInstanceOf[PrintOption]
   }
   
-  extension [Self <: PrintOption](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PrintOption] (val x: Self) extends AnyVal {
     
     inline def setHeaderFooterEnabled(value: Boolean): Self = StObject.set(x, "headerFooterEnabled", value.asInstanceOf[js.Any])
     

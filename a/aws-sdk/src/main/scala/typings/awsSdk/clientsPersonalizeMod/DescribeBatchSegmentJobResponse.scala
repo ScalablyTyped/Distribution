@@ -18,7 +18,8 @@ object DescribeBatchSegmentJobResponse {
     __obj.asInstanceOf[DescribeBatchSegmentJobResponse]
   }
   
-  extension [Self <: DescribeBatchSegmentJobResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBatchSegmentJobResponse] (val x: Self) extends AnyVal {
     
     inline def setBatchSegmentJob(value: BatchSegmentJob): Self = StObject.set(x, "batchSegmentJob", value.asInstanceOf[js.Any])
     

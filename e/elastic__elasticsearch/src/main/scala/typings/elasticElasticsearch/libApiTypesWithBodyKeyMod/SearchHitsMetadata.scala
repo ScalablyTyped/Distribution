@@ -19,7 +19,8 @@ object SearchHitsMetadata {
     __obj.asInstanceOf[SearchHitsMetadata[T]]
   }
   
-  extension [Self <: SearchHitsMetadata[?], T](x: Self & SearchHitsMetadata[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchHitsMetadata[?], T] (val x: Self & SearchHitsMetadata[T]) extends AnyVal {
     
     inline def setHits(value: js.Array[SearchHit[T]]): Self = StObject.set(x, "hits", value.asInstanceOf[js.Any])
     

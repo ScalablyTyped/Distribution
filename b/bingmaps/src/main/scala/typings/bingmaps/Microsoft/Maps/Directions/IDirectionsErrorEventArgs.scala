@@ -19,7 +19,8 @@ object IDirectionsErrorEventArgs {
     __obj.asInstanceOf[IDirectionsErrorEventArgs]
   }
   
-  extension [Self <: IDirectionsErrorEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IDirectionsErrorEventArgs] (val x: Self) extends AnyVal {
     
     inline def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     

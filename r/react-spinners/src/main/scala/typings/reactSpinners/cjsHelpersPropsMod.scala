@@ -28,7 +28,8 @@ object cjsHelpersPropsMod {
       __obj.asInstanceOf[CommonProps]
     }
     
-    extension [Self <: CommonProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CommonProps] (val x: Self) extends AnyVal {
       
       inline def setCssOverride(value: CSSProperties): Self = StObject.set(x, "cssOverride", value.asInstanceOf[js.Any])
       
@@ -61,7 +62,8 @@ object cjsHelpersPropsMod {
       __obj.asInstanceOf[LoaderHeightWidthProps]
     }
     
-    extension [Self <: LoaderHeightWidthProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderHeightWidthProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -92,7 +94,8 @@ object cjsHelpersPropsMod {
       __obj.asInstanceOf[LoaderHeightWidthRadiusProps]
     }
     
-    extension [Self <: LoaderHeightWidthRadiusProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderHeightWidthRadiusProps] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: LengthType): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -127,7 +130,8 @@ object cjsHelpersPropsMod {
       __obj.asInstanceOf[LoaderSizeMarginProps]
     }
     
-    extension [Self <: LoaderSizeMarginProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderSizeMarginProps] (val x: Self) extends AnyVal {
       
       inline def setMargin(value: LengthType): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
       
@@ -152,7 +156,8 @@ object cjsHelpersPropsMod {
       __obj.asInstanceOf[LoaderSizeProps]
     }
     
-    extension [Self <: LoaderSizeProps](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: LoaderSizeProps] (val x: Self) extends AnyVal {
       
       inline def setSize(value: LengthType): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
       

@@ -71,7 +71,8 @@ object EnterpriseToken {
     __obj.asInstanceOf[EnterpriseToken]
   }
   
-  extension [Self <: EnterpriseToken](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EnterpriseToken] (val x: Self) extends AnyVal {
     
     inline def set$Dotxgafv(value: String): Self = StObject.set(x, "$.xgafv", value.asInstanceOf[js.Any])
     

@@ -66,7 +66,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: URL): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -89,7 +90,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[InvalidStat]
     }
     
-    extension [Self <: InvalidStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: InvalidStat] (val x: Self) extends AnyVal {
       
       inline def setPinCount(value: Unit): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
       
@@ -114,7 +116,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[PinCount]
     }
     
-    extension [Self <: PinCount](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PinCount] (val x: Self) extends AnyVal {
       
       inline def setFailed(value: Double): Self = StObject.set(x, "failed", value.asInstanceOf[js.Any])
       
@@ -145,7 +148,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[RemotePinService]
     }
     
-    extension [Self <: RemotePinService](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemotePinService] (val x: Self) extends AnyVal {
       
       inline def setEndpoint(value: URL): Self = StObject.set(x, "endpoint", value.asInstanceOf[js.Any])
       
@@ -171,7 +175,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[RemotePinServiceWithStat]
     }
     
-    extension [Self <: RemotePinServiceWithStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RemotePinServiceWithStat] (val x: Self) extends AnyVal {
       
       inline def setStat(value: Stat): Self = StObject.set(x, "stat", value.asInstanceOf[js.Any])
     }
@@ -210,7 +215,8 @@ object distSrcPinRemoteServiceMod {
       __obj.asInstanceOf[ValidStat]
     }
     
-    extension [Self <: ValidStat](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ValidStat] (val x: Self) extends AnyVal {
       
       inline def setPinCount(value: PinCount): Self = StObject.set(x, "pinCount", value.asInstanceOf[js.Any])
       

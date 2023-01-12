@@ -26,7 +26,8 @@ object gapi {
           __obj.asInstanceOf[PublishUrlNotificationResponse]
         }
         
-        extension [Self <: PublishUrlNotificationResponse](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: PublishUrlNotificationResponse] (val x: Self) extends AnyVal {
           
           inline def setUrlNotificationMetadata(value: UrlNotificationMetadata): Self = StObject.set(x, "urlNotificationMetadata", value.asInstanceOf[js.Any])
           
@@ -52,7 +53,8 @@ object gapi {
           __obj.asInstanceOf[UrlNotification]
         }
         
-        extension [Self <: UrlNotification](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UrlNotification] (val x: Self) extends AnyVal {
           
           inline def setNotifyTime(value: String): Self = StObject.set(x, "notifyTime", value.asInstanceOf[js.Any])
           
@@ -86,7 +88,8 @@ object gapi {
           __obj.asInstanceOf[UrlNotificationMetadata]
         }
         
-        extension [Self <: UrlNotificationMetadata](x: Self) {
+        @scala.inline
+        implicit open class MutableBuilder[Self <: UrlNotificationMetadata] (val x: Self) extends AnyVal {
           
           inline def setLatestRemove(value: UrlNotification): Self = StObject.set(x, "latestRemove", value.asInstanceOf[js.Any])
           

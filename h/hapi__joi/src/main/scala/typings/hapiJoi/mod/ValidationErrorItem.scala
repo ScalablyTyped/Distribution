@@ -22,7 +22,8 @@ object ValidationErrorItem {
     __obj.asInstanceOf[ValidationErrorItem]
   }
   
-  extension [Self <: ValidationErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ValidationErrorItem] (val x: Self) extends AnyVal {
     
     inline def setContext(value: Context): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
     

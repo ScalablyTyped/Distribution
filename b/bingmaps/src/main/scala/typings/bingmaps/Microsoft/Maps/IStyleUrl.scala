@@ -16,7 +16,8 @@ object IStyleUrl {
     __obj.asInstanceOf[IStyleUrl]
   }
   
-  extension [Self <: IStyleUrl](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IStyleUrl] (val x: Self) extends AnyVal {
     
     inline def setStyleURLs(value: js.Array[String]): Self = StObject.set(x, "styleURLs", value.asInstanceOf[js.Any])
     

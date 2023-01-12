@@ -44,7 +44,8 @@ object Edits {
     __obj.asInstanceOf[Edits]
   }
   
-  extension [Self <: Edits](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Edits] (val x: Self) extends AnyVal {
     
     inline def setAnnotationPosition(value: Boolean): Self = StObject.set(x, "annotationPosition", value.asInstanceOf[js.Any])
     

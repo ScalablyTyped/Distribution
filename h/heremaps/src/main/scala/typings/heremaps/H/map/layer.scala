@@ -130,7 +130,8 @@ object layer {
       __obj.asInstanceOf[IMarkerLayer]
     }
     
-    extension [Self <: IMarkerLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IMarkerLayer] (val x: Self) extends AnyVal {
       
       inline def setRequestDomMarkers(
         value: (typings.heremaps.H.geo.Rect, Double, Boolean, Point) => typings.heremaps.H.map.layer.IMarkerLayer.Response | TiledResponse
@@ -159,7 +160,8 @@ object layer {
         __obj.asInstanceOf[typings.heremaps.H.map.layer.IMarkerLayer.Response]
       }
       
-      extension [Self <: typings.heremaps.H.map.layer.IMarkerLayer.Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: typings.heremaps.H.map.layer.IMarkerLayer.Response] (val x: Self) extends AnyVal {
         
         inline def setMarkers(value: js.Array[AbstractMarker]): Self = StObject.set(x, "markers", value.asInstanceOf[js.Any])
         
@@ -190,7 +192,8 @@ object layer {
         __obj.asInstanceOf[TiledResponse]
       }
       
-      extension [Self <: TiledResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: TiledResponse] (val x: Self) extends AnyVal {
         
         inline def setNumber(value: Double): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
         
@@ -253,7 +256,8 @@ object layer {
       __obj.asInstanceOf[ITileLayer]
     }
     
-    extension [Self <: ITileLayer](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ITileLayer] (val x: Self) extends AnyVal {
       
       inline def setCancelTile(value: (Double, Double, Double) => Unit): Self = StObject.set(x, "cancelTile", js.Any.fromFunction3(value))
       
@@ -280,7 +284,8 @@ object layer {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
         
@@ -310,7 +315,8 @@ object layer {
         __obj.asInstanceOf[Response]
       }
       
-      extension [Self <: Response](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Response] (val x: Self) extends AnyVal {
         
         inline def setTiles(value: js.Array[Tile]): Self = StObject.set(x, "tiles", value.asInstanceOf[js.Any])
         
@@ -390,7 +396,8 @@ object layer {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setDark(value: Boolean): Self = StObject.set(x, "dark", value.asInstanceOf[js.Any])
         
@@ -506,7 +513,8 @@ object layer {
         __obj.asInstanceOf[Options]
       }
       
-      extension [Self <: Options](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
         
         inline def setDataCacheSize(value: Double): Self = StObject.set(x, "dataCacheSize", value.asInstanceOf[js.Any])
         
@@ -544,7 +552,8 @@ object layer {
         __obj.asInstanceOf[OverlaysResponse]
       }
       
-      extension [Self <: OverlaysResponse](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: OverlaysResponse] (val x: Self) extends AnyVal {
         
         inline def setOverlays(value: js.Array[Overlay]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
         

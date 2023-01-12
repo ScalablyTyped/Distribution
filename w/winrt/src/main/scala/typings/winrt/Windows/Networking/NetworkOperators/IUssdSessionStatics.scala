@@ -20,7 +20,8 @@ object IUssdSessionStatics {
     __obj.asInstanceOf[IUssdSessionStatics]
   }
   
-  extension [Self <: IUssdSessionStatics](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IUssdSessionStatics] (val x: Self) extends AnyVal {
     
     inline def setCreateFromNetworkAccountId(value: String => UssdSession): Self = StObject.set(x, "createFromNetworkAccountId", js.Any.fromFunction1(value))
     

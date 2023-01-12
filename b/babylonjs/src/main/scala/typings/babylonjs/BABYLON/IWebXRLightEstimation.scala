@@ -38,7 +38,8 @@ object IWebXRLightEstimation {
     __obj.asInstanceOf[IWebXRLightEstimation]
   }
   
-  extension [Self <: IWebXRLightEstimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IWebXRLightEstimation] (val x: Self) extends AnyVal {
     
     inline def setLightColor(value: Color3): Self = StObject.set(x, "lightColor", value.asInstanceOf[js.Any])
     

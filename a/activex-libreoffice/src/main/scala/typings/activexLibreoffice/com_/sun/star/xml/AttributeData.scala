@@ -31,7 +31,8 @@ object AttributeData {
     __obj.asInstanceOf[AttributeData]
   }
   
-  extension [Self <: AttributeData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AttributeData] (val x: Self) extends AnyVal {
     
     inline def setNamespace(value: String): Self = StObject.set(x, "Namespace", value.asInstanceOf[js.Any])
     

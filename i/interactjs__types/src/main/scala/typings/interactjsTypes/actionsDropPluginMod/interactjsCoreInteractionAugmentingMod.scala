@@ -18,7 +18,8 @@ object interactjsCoreInteractionAugmentingMod {
       __obj.asInstanceOf[Interaction]
     }
     
-    extension [Self <: Interaction](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Interaction] (val x: Self) extends AnyVal {
       
       inline def setDropState(value: DropState): Self = StObject.set(x, "dropState", value.asInstanceOf[js.Any])
       

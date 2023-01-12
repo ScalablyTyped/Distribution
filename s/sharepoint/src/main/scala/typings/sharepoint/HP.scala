@@ -102,7 +102,8 @@ object HP {
     __obj.asInstanceOf[HP]
   }
   
-  extension [Self <: HP](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: HP] (val x: Self) extends AnyVal {
     
     inline def setClose(value: () => Unit): Self = StObject.set(x, "Close", js.Any.fromFunction0(value))
     

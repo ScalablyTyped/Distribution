@@ -68,7 +68,8 @@ object Typeofshape {
     __obj.asInstanceOf[Typeofshape]
   }
   
-  extension [Self <: Typeofshape](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Typeofshape] (val x: Self) extends AnyVal {
     
     inline def setCircle(
       value: Instantiable2[/* pixelGeometry */ IPixelCircleGeometry, /* params */ js.UndefOr[Fill], Circle]

@@ -53,7 +53,8 @@ object anon {
       __obj.asInstanceOf[ExtractArgTypes]
     }
     
-    extension [Self <: ExtractArgTypes](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtractArgTypes] (val x: Self) extends AnyVal {
       
       inline def setExtractArgTypes(
         value: /* component */ Component => (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify StrictArgTypes */ Any) | Null
@@ -94,7 +95,8 @@ object anon {
       __obj.asInstanceOf[PartialTypeResolvers]
     }
     
-    extension [Self <: PartialTypeResolvers](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: PartialTypeResolvers] (val x: Self) extends AnyVal {
       
       inline def setDefault(value: (/* rawDefaultProp */ Any, /* propDef */ PropDef) => PropDefaultValue): Self = StObject.set(x, "default", js.Any.fromFunction2(value))
       

@@ -19,7 +19,8 @@ object buildSrcAuthCredentialsMod {
       __obj.asInstanceOf[CredentialBody]
     }
     
-    extension [Self <: CredentialBody](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialBody] (val x: Self) extends AnyVal {
       
       inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       
@@ -70,7 +71,8 @@ object buildSrcAuthCredentialsMod {
       __obj.asInstanceOf[CredentialRequest]
     }
     
-    extension [Self <: CredentialRequest](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CredentialRequest] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -137,7 +139,8 @@ object buildSrcAuthCredentialsMod {
       __obj.asInstanceOf[Credentials]
     }
     
-    extension [Self <: Credentials](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Credentials] (val x: Self) extends AnyVal {
       
       inline def setAccess_token(value: String): Self = StObject.set(x, "access_token", value.asInstanceOf[js.Any])
       
@@ -192,7 +195,8 @@ object buildSrcAuthCredentialsMod {
       __obj.asInstanceOf[ImpersonatedJWTInput]
     }
     
-    extension [Self <: ImpersonatedJWTInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ImpersonatedJWTInput] (val x: Self) extends AnyVal {
       
       inline def setDelegates(value: js.Array[String]): Self = StObject.set(x, "delegates", value.asInstanceOf[js.Any])
       
@@ -241,7 +245,8 @@ object buildSrcAuthCredentialsMod {
       __obj.asInstanceOf[JWTInput]
     }
     
-    extension [Self <: JWTInput](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: JWTInput] (val x: Self) extends AnyVal {
       
       inline def setClient_email(value: String): Self = StObject.set(x, "client_email", value.asInstanceOf[js.Any])
       

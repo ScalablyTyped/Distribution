@@ -31,7 +31,8 @@ object SearchOptions {
     __obj.asInstanceOf[SearchOptions]
   }
   
-  extension [Self <: SearchOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SearchOptions] (val x: Self) extends AnyVal {
     
     inline def setCategory(
       value: /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof Category * / any */ String

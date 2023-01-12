@@ -17,7 +17,8 @@ object CharIndex {
     __obj.asInstanceOf[CharIndex]
   }
   
-  extension [Self <: CharIndex](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CharIndex] (val x: Self) extends AnyVal {
     
     inline def setCharIndex(value: Double): Self = StObject.set(x, "charIndex", value.asInstanceOf[js.Any])
     

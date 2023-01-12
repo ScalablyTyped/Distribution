@@ -15,7 +15,8 @@ object ExportApiResponse {
     __obj.asInstanceOf[ExportApiResponse]
   }
   
-  extension [Self <: ExportApiResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ExportApiResponse] (val x: Self) extends AnyVal {
     
     inline def setBody(value: ExportedApi): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     

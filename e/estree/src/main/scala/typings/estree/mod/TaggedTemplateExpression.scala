@@ -23,7 +23,8 @@ object TaggedTemplateExpression {
     __obj.asInstanceOf[TaggedTemplateExpression]
   }
   
-  extension [Self <: TaggedTemplateExpression](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TaggedTemplateExpression] (val x: Self) extends AnyVal {
     
     inline def setQuasi(value: TemplateLiteral): Self = StObject.set(x, "quasi", value.asInstanceOf[js.Any])
     

@@ -37,7 +37,8 @@ object PagePerpageSortType {
     __obj.asInstanceOf[PagePerpageSortType]
   }
   
-  extension [Self <: PagePerpageSortType](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PagePerpageSortType] (val x: Self) extends AnyVal {
     
     inline def setDirection(value: asc | desc): Self = StObject.set(x, "direction", value.asInstanceOf[js.Any])
     

@@ -96,7 +96,8 @@ object Coverage {
     __obj.asInstanceOf[Coverage]
   }
   
-  extension [Self <: Coverage](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: Coverage] (val x: Self) extends AnyVal {
     
     inline def setBin(value: Identifier): Self = StObject.set(x, "bin", value.asInstanceOf[js.Any])
     

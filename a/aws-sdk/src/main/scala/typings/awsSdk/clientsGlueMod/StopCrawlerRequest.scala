@@ -18,7 +18,8 @@ object StopCrawlerRequest {
     __obj.asInstanceOf[StopCrawlerRequest]
   }
   
-  extension [Self <: StopCrawlerRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: StopCrawlerRequest] (val x: Self) extends AnyVal {
     
     inline def setName(value: NameString): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
   }

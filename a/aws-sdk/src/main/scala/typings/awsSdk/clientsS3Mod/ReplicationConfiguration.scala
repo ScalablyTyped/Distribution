@@ -23,7 +23,8 @@ object ReplicationConfiguration {
     __obj.asInstanceOf[ReplicationConfiguration]
   }
   
-  extension [Self <: ReplicationConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ReplicationConfiguration] (val x: Self) extends AnyVal {
     
     inline def setRole(value: Role): Self = StObject.set(x, "Role", value.asInstanceOf[js.Any])
     

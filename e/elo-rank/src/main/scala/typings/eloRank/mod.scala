@@ -48,7 +48,8 @@ object mod {
       __obj.asInstanceOf[EloRank]
     }
     
-    extension [Self <: EloRank](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: EloRank] (val x: Self) extends AnyVal {
       
       inline def setGetExpected(value: (Double, Double) => Double): Self = StObject.set(x, "getExpected", js.Any.fromFunction2(value))
       

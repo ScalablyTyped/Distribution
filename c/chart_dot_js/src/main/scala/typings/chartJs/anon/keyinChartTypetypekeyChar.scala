@@ -39,7 +39,8 @@ object keyinChartTypetypekeyChar {
     __obj.asInstanceOf[keyinChartTypetypekeyChar]
   }
   
-  extension [Self <: keyinChartTypetypekeyChar](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: keyinChartTypetypekeyChar] (val x: Self) extends AnyVal {
     
     inline def setBar(value: typebarBarControllerDatas): Self = StObject.set(x, "bar", value.asInstanceOf[js.Any])
     

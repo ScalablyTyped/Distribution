@@ -39,7 +39,8 @@ object BulkWriterError {
     __obj.asInstanceOf[BulkWriterError]
   }
   
-  extension [Self <: BulkWriterError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BulkWriterError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: GrpcStatus): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

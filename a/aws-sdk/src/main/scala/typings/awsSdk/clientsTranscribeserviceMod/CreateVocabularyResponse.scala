@@ -38,7 +38,8 @@ object CreateVocabularyResponse {
     __obj.asInstanceOf[CreateVocabularyResponse]
   }
   
-  extension [Self <: CreateVocabularyResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateVocabularyResponse] (val x: Self) extends AnyVal {
     
     inline def setFailureReason(value: FailureReason): Self = StObject.set(x, "FailureReason", value.asInstanceOf[js.Any])
     

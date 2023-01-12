@@ -19,7 +19,8 @@ object BatchDeleteAlertsRequest {
     __obj.asInstanceOf[BatchDeleteAlertsRequest]
   }
   
-  extension [Self <: BatchDeleteAlertsRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BatchDeleteAlertsRequest] (val x: Self) extends AnyVal {
     
     inline def setAlertId(value: js.Array[String]): Self = StObject.set(x, "alertId", value.asInstanceOf[js.Any])
     

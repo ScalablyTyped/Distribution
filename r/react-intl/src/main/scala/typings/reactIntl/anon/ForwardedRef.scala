@@ -16,7 +16,8 @@ object ForwardedRef {
     __obj.asInstanceOf[ForwardedRef]
   }
   
-  extension [Self <: ForwardedRef](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ForwardedRef] (val x: Self) extends AnyVal {
     
     inline def setForwardedRef(value: Ref[Any]): Self = StObject.set(x, "forwardedRef", value.asInstanceOf[js.Any])
     

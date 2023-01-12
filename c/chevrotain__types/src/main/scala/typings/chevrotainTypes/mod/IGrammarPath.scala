@@ -24,7 +24,8 @@ object IGrammarPath {
     __obj.asInstanceOf[IGrammarPath]
   }
   
-  extension [Self <: IGrammarPath](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: IGrammarPath] (val x: Self) extends AnyVal {
     
     inline def setOccurrenceStack(value: js.Array[Double]): Self = StObject.set(x, "occurrenceStack", value.asInstanceOf[js.Any])
     

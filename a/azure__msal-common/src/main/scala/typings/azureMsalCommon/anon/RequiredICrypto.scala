@@ -69,7 +69,8 @@ object RequiredICrypto {
     __obj.asInstanceOf[RequiredICrypto]
   }
   
-  extension [Self <: RequiredICrypto](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RequiredICrypto] (val x: Self) extends AnyVal {
     
     inline def setBase64Decode(value: /* input */ String => String): Self = StObject.set(x, "base64Decode", js.Any.fromFunction1(value))
     

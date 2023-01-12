@@ -15,7 +15,8 @@ object SelfClosing {
     __obj.asInstanceOf[SelfClosing]
   }
   
-  extension [Self <: SelfClosing](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SelfClosing] (val x: Self) extends AnyVal {
     
     inline def setSelfClosing(value: String): Self = StObject.set(x, "selfClosing", value.asInstanceOf[js.Any])
   }

@@ -24,7 +24,8 @@ object `480` {
     __obj.asInstanceOf[`480`]
   }
   
-  extension [Self <: `480`](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: `480`] (val x: Self) extends AnyVal {
     
     inline def setReviewer(
       value: Partial[

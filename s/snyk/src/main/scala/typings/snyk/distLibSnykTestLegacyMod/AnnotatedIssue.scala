@@ -72,7 +72,8 @@ object AnnotatedIssue {
     __obj.asInstanceOf[AnnotatedIssue]
   }
   
-  extension [Self <: AnnotatedIssue](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AnnotatedIssue] (val x: Self) extends AnyVal {
     
     inline def setBundled(value: Any): Self = StObject.set(x, "bundled", value.asInstanceOf[js.Any])
     

@@ -22,7 +22,8 @@ object VariableInfo {
     __obj.asInstanceOf[VariableInfo]
   }
   
-  extension [Self <: VariableInfo](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableInfo] (val x: Self) extends AnyVal {
     
     inline def setDeclaredScope(value: ScopeInfo): Self = StObject.set(x, "declaredScope", value.asInstanceOf[js.Any])
     

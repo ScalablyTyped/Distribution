@@ -28,7 +28,8 @@ object distSrcDiscoveryMod {
       __obj.asInstanceOf[DiscoverGateway_]
     }
     
-    extension [Self <: DiscoverGateway_](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscoverGateway_] (val x: Self) extends AnyVal {
       
       inline def setCancel(value: () => js.Promise[Unit]): Self = StObject.set(x, "cancel", js.Any.fromFunction0(value))
       
@@ -60,7 +61,8 @@ object distSrcDiscoveryMod {
       __obj.asInstanceOf[DiscoveryOptions]
     }
     
-    extension [Self <: DiscoveryOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: DiscoveryOptions] (val x: Self) extends AnyVal {
       
       inline def setDiscoveryTimeout(value: Double): Self = StObject.set(x, "discoveryTimeout", value.asInstanceOf[js.Any])
       

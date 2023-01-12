@@ -23,7 +23,8 @@ object ASPxClientHtmlEditorDialogClosingEventArgs {
     __obj.asInstanceOf[ASPxClientHtmlEditorDialogClosingEventArgs]
   }
   
-  extension [Self <: ASPxClientHtmlEditorDialogClosingEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientHtmlEditorDialogClosingEventArgs] (val x: Self) extends AnyVal {
     
     inline def setCancel(value: Boolean): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])
   }

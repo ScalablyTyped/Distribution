@@ -17,7 +17,8 @@ object DataViewObjectPropertyIdentifier {
     __obj.asInstanceOf[DataViewObjectPropertyIdentifier]
   }
   
-  extension [Self <: DataViewObjectPropertyIdentifier](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DataViewObjectPropertyIdentifier] (val x: Self) extends AnyVal {
     
     inline def setObjectName(value: String): Self = StObject.set(x, "objectName", value.asInstanceOf[js.Any])
     

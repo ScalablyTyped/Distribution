@@ -50,7 +50,8 @@ object VariableSizeGridProps {
     __obj.asInstanceOf[VariableSizeGridProps[T]]
   }
   
-  extension [Self <: VariableSizeGridProps[?], T](x: Self & VariableSizeGridProps[T]) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VariableSizeGridProps[?], T] (val x: Self & VariableSizeGridProps[T]) extends AnyVal {
     
     inline def setColumnWidth(value: Double => Double): Self = StObject.set(x, "columnWidth", js.Any.fromFunction1(value))
     

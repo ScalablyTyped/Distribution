@@ -17,7 +17,8 @@ object MediaPlaybackItemOpenedEventArgs {
     __obj.asInstanceOf[MediaPlaybackItemOpenedEventArgs]
   }
   
-  extension [Self <: MediaPlaybackItemOpenedEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MediaPlaybackItemOpenedEventArgs] (val x: Self) extends AnyVal {
     
     inline def setItem(value: MediaPlaybackItem): Self = StObject.set(x, "item", value.asInstanceOf[js.Any])
   }

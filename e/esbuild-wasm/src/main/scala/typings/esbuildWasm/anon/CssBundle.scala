@@ -31,7 +31,8 @@ object CssBundle {
     __obj.asInstanceOf[CssBundle]
   }
   
-  extension [Self <: CssBundle](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CssBundle] (val x: Self) extends AnyVal {
     
     inline def setBytes(value: Double): Self = StObject.set(x, "bytes", value.asInstanceOf[js.Any])
     

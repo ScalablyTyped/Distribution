@@ -20,7 +20,8 @@ object CounterexampleCollection {
     __obj.asInstanceOf[CounterexampleCollection]
   }
   
-  extension [Self <: CounterexampleCollection](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CounterexampleCollection] (val x: Self) extends AnyVal {
     
     inline def setCounterexamples(value: js.Array[Counterexample]): Self = StObject.set(x, "counterexamples", value.asInstanceOf[js.Any])
     

@@ -23,7 +23,8 @@ object EventNodeid {
     __obj.asInstanceOf[EventNodeid]
   }
   
-  extension [Self <: EventNodeid](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: EventNodeid] (val x: Self) extends AnyVal {
     
     inline def setComments(
       value: js.Array[

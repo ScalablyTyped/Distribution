@@ -73,7 +73,8 @@ object AudioFeaturesObject {
     __obj.asInstanceOf[AudioFeaturesObject]
   }
   
-  extension [Self <: AudioFeaturesObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AudioFeaturesObject] (val x: Self) extends AnyVal {
     
     inline def setAcousticness(value: Double): Self = StObject.set(x, "acousticness", value.asInstanceOf[js.Any])
     

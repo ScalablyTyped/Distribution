@@ -18,7 +18,8 @@ object PresenterOnlyConfiguration {
     __obj.asInstanceOf[PresenterOnlyConfiguration]
   }
   
-  extension [Self <: PresenterOnlyConfiguration](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PresenterOnlyConfiguration] (val x: Self) extends AnyVal {
     
     inline def setPresenterPosition(value: PresenterPosition): Self = StObject.set(x, "PresenterPosition", value.asInstanceOf[js.Any])
     

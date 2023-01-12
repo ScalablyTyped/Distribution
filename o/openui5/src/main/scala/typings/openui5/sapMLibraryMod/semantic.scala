@@ -54,7 +54,8 @@ object semantic {
       __obj.asInstanceOf[IFilter]
     }
     
-    extension [Self <: IFilter](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IFilter] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_m_semantic_IFilter(value: Boolean): Self = StObject.set(x, "__implements__sap_m_semantic_IFilter", value.asInstanceOf[js.Any])
     }
@@ -74,7 +75,8 @@ object semantic {
       __obj.asInstanceOf[IGroup]
     }
     
-    extension [Self <: IGroup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IGroup] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_m_semantic_IGroup(value: Boolean): Self = StObject.set(x, "__implements__sap_m_semantic_IGroup", value.asInstanceOf[js.Any])
     }
@@ -94,7 +96,8 @@ object semantic {
       __obj.asInstanceOf[ISort]
     }
     
-    extension [Self <: ISort](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ISort] (val x: Self) extends AnyVal {
       
       inline def set__implements__sap_m_semantic_ISort(value: Boolean): Self = StObject.set(x, "__implements__sap_m_semantic_ISort", value.asInstanceOf[js.Any])
     }

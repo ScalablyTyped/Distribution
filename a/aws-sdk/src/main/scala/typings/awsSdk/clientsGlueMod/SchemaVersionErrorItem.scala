@@ -23,7 +23,8 @@ object SchemaVersionErrorItem {
     __obj.asInstanceOf[SchemaVersionErrorItem]
   }
   
-  extension [Self <: SchemaVersionErrorItem](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SchemaVersionErrorItem] (val x: Self) extends AnyVal {
     
     inline def setErrorDetails(value: ErrorDetails): Self = StObject.set(x, "ErrorDetails", value.asInstanceOf[js.Any])
     

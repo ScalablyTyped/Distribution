@@ -25,7 +25,8 @@ object VirtualGatewaySpec {
     __obj.asInstanceOf[VirtualGatewaySpec]
   }
   
-  extension [Self <: VirtualGatewaySpec](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: VirtualGatewaySpec] (val x: Self) extends AnyVal {
     
     inline def setBackendDefaults(value: VirtualGatewayBackendDefaults): Self = StObject.set(x, "backendDefaults", value.asInstanceOf[js.Any])
     

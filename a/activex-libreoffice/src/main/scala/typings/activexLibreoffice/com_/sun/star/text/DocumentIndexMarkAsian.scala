@@ -27,7 +27,8 @@ object DocumentIndexMarkAsian {
     __obj.asInstanceOf[DocumentIndexMarkAsian]
   }
   
-  extension [Self <: DocumentIndexMarkAsian](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DocumentIndexMarkAsian] (val x: Self) extends AnyVal {
     
     inline def setPrimaryKeyReading(value: String): Self = StObject.set(x, "PrimaryKeyReading", value.asInstanceOf[js.Any])
     

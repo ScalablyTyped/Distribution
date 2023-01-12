@@ -24,7 +24,8 @@ object anon {
       __obj.asInstanceOf[Damping]
     }
     
-    extension [Self <: Damping](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Damping] (val x: Self) extends AnyVal {
       
       inline def setDamping(value: Double): Self = StObject.set(x, "damping", value.asInstanceOf[js.Any])
       
@@ -47,7 +48,8 @@ object anon {
       __obj.asInstanceOf[Done[V]]
     }
     
-    extension [Self <: Done[?], V](x: Self & Done[V]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Done[?], V] (val x: Self & Done[V]) extends AnyVal {
       
       inline def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
       
@@ -74,7 +76,8 @@ object anon {
       __obj.asInstanceOf[Start]
     }
     
-    extension [Self <: Start](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Start] (val x: Self) extends AnyVal {
       
       inline def setStart(value: () => Unit): Self = StObject.set(x, "start", js.Any.fromFunction0(value))
       
@@ -93,7 +96,8 @@ object anon {
       __obj.asInstanceOf[Stop]
     }
     
-    extension [Self <: Stop](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Stop] (val x: Self) extends AnyVal {
       
       inline def setStop(value: () => Unit): Self = StObject.set(x, "stop", js.Any.fromFunction0(value))
     }
@@ -122,7 +126,8 @@ object anon {
       __obj.asInstanceOf[X]
     }
     
-    extension [Self <: X](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: X] (val x: Self) extends AnyVal {
       
       inline def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
       

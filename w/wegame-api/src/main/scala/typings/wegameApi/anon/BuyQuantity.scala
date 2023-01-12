@@ -109,7 +109,8 @@ object BuyQuantity {
     __obj.asInstanceOf[BuyQuantity]
   }
   
-  extension [Self <: BuyQuantity](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: BuyQuantity] (val x: Self) extends AnyVal {
     
     inline def setBuyQuantity(value: Double): Self = StObject.set(x, "buyQuantity", value.asInstanceOf[js.Any])
     

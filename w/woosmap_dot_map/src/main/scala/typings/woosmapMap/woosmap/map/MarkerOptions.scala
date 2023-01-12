@@ -58,7 +58,8 @@ object MarkerOptions {
     __obj.asInstanceOf[MarkerOptions]
   }
   
-  extension [Self <: MarkerOptions](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: MarkerOptions] (val x: Self) extends AnyVal {
     
     inline def setAnchorPoint(value: Point): Self = StObject.set(x, "anchorPoint", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object DescribeBlockName {
     __obj.asInstanceOf[DescribeBlockName]
   }
   
-  extension [Self <: DescribeBlockName](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: DescribeBlockName] (val x: Self) extends AnyVal {
     
     inline def setDescribeBlock(value: typings.jestTypes.mod.DescribeBlock): Self = StObject.set(x, "describeBlock", value.asInstanceOf[js.Any])
     

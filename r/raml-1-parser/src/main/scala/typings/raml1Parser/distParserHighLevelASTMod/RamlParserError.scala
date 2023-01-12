@@ -40,7 +40,8 @@ object RamlParserError {
     __obj.asInstanceOf[RamlParserError]
   }
   
-  extension [Self <: RamlParserError](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: RamlParserError] (val x: Self) extends AnyVal {
     
     inline def setCode(value: String): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     

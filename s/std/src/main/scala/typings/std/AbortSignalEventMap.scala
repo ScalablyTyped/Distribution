@@ -16,7 +16,8 @@ object AbortSignalEventMap {
     __obj.asInstanceOf[AbortSignalEventMap]
   }
   
-  extension [Self <: AbortSignalEventMap](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AbortSignalEventMap] (val x: Self) extends AnyVal {
     
     inline def setAbort(value: Event): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
   }

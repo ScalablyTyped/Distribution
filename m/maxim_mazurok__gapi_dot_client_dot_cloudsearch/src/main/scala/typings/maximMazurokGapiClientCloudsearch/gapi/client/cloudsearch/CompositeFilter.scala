@@ -19,7 +19,8 @@ object CompositeFilter {
     __obj.asInstanceOf[CompositeFilter]
   }
   
-  extension [Self <: CompositeFilter](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompositeFilter] (val x: Self) extends AnyVal {
     
     inline def setLogicOperator(value: String): Self = StObject.set(x, "logicOperator", value.asInstanceOf[js.Any])
     

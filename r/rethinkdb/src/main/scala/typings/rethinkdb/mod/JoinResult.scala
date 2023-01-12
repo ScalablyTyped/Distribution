@@ -17,7 +17,8 @@ object JoinResult {
     __obj.asInstanceOf[JoinResult]
   }
   
-  extension [Self <: JoinResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: JoinResult] (val x: Self) extends AnyVal {
     
     inline def setLeft(value: Any): Self = StObject.set(x, "left", value.asInstanceOf[js.Any])
     

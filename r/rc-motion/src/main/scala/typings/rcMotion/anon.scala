@@ -138,7 +138,8 @@ object anon {
       __obj.asInstanceOf[Animationend]
     }
     
-    extension [Self <: Animationend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Animationend] (val x: Self) extends AnyVal {
       
       inline def setAnimationend(value: Record[String, String]): Self = StObject.set(x, "animationend", value.asInstanceOf[js.Any])
       
@@ -167,7 +168,8 @@ object anon {
       __obj.asInstanceOf[Appear]
     }
     
-    extension [Self <: Appear](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Appear] (val x: Self) extends AnyVal {
       
       inline def setAppear(value: String): Self = StObject.set(x, "appear", value.asInstanceOf[js.Any])
       
@@ -270,7 +272,8 @@ object anon {
       __obj.asInstanceOf[CSSMotionPropsrefRefanyun]
     }
     
-    extension [Self <: CSSMotionPropsrefRefanyun](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CSSMotionPropsrefRefanyun] (val x: Self) extends AnyVal {
       
       inline def setChildren(value: (/* props */ Dictkey, /* ref */ js.Function1[/* node */ Any, Unit]) => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction2(value))
       
@@ -407,7 +410,8 @@ object anon {
       __obj.asInstanceOf[Dictkey]
     }
     
-    extension [Self <: Dictkey](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictkey] (val x: Self) extends AnyVal {
       
       inline def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
       
@@ -436,7 +440,8 @@ object anon {
       __obj.asInstanceOf[Dictname]
     }
     
-    extension [Self <: Dictname](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dictname] (val x: Self) extends AnyVal {
       
       inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -456,7 +461,8 @@ object anon {
       __obj.asInstanceOf[ForwardRef]
     }
     
-    extension [Self <: ForwardRef](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ForwardRef] (val x: Self) extends AnyVal {
       
       inline def setForwardRef(value: Boolean): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
       
@@ -479,7 +485,8 @@ object anon {
       __obj.asInstanceOf[IsCanceled]
     }
     
-    extension [Self <: IsCanceled](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IsCanceled] (val x: Self) extends AnyVal {
       
       inline def setIsCanceled(value: () => Boolean): Self = StObject.set(x, "isCanceled", js.Any.fromFunction0(value))
     }
@@ -496,7 +503,8 @@ object anon {
       __obj.asInstanceOf[Key]
     }
     
-    extension [Self <: Key](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Key] (val x: Self) extends AnyVal {
       
       inline def setKey(value: typings.react.mod.Key): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     }
@@ -515,7 +523,8 @@ object anon {
       __obj.asInstanceOf[Status]
     }
     
-    extension [Self <: Status](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Status] (val x: Self) extends AnyVal {
       
       inline def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
       

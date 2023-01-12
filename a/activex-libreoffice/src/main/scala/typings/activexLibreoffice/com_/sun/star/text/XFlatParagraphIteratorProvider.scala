@@ -35,7 +35,8 @@ object XFlatParagraphIteratorProvider {
     __obj.asInstanceOf[XFlatParagraphIteratorProvider]
   }
   
-  extension [Self <: XFlatParagraphIteratorProvider](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XFlatParagraphIteratorProvider] (val x: Self) extends AnyVal {
     
     inline def setGetFlatParagraphIterator(value: (Double, Boolean) => XFlatParagraphIterator): Self = StObject.set(x, "getFlatParagraphIterator", js.Any.fromFunction2(value))
   }

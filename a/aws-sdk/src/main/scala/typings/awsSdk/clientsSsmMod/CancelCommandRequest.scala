@@ -23,7 +23,8 @@ object CancelCommandRequest {
     __obj.asInstanceOf[CancelCommandRequest]
   }
   
-  extension [Self <: CancelCommandRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CancelCommandRequest] (val x: Self) extends AnyVal {
     
     inline def setCommandId(value: CommandId): Self = StObject.set(x, "CommandId", value.asInstanceOf[js.Any])
     

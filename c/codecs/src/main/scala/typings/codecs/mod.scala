@@ -41,7 +41,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[BaseCodec[InType, OutType]]
     }
     
-    extension [Self <: BaseCodec[?, ?], InType, OutType](x: Self & (BaseCodec[InType, OutType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BaseCodec[?, ?], InType, OutType] (val x: Self & (BaseCodec[InType, OutType])) extends AnyVal {
       
       inline def setDecode(value: js.typedarray.Uint8Array => OutType): Self = StObject.set(x, "decode", js.Any.fromFunction1(value))
       
@@ -111,7 +112,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[CodecLookup]
     }
     
-    extension [Self <: CodecLookup](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CodecLookup] (val x: Self) extends AnyVal {
       
       inline def setAscii(value: AsciiCodec): Self = StObject.set(x, "ascii", value.asInstanceOf[js.Any])
       
@@ -276,7 +278,8 @@ object mod extends Shortcut {
       __obj.asInstanceOf[NamedCodec[TName, InType, OutType]]
     }
     
-    extension [Self <: NamedCodec[?, ?, ?], TName /* <: String */, InType, OutType](x: Self & (NamedCodec[TName, InType, OutType])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: NamedCodec[?, ?, ?], TName /* <: String */, InType, OutType] (val x: Self & (NamedCodec[TName, InType, OutType])) extends AnyVal {
       
       inline def setName(value: TName): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     }

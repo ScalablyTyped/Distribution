@@ -763,7 +763,8 @@ object distParserJsyamlJsyaml2lowLevelMod {
       __obj.asInstanceOf[ExtendedFSResolver]
     }
     
-    extension [Self <: ExtendedFSResolver](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ExtendedFSResolver] (val x: Self) extends AnyVal {
       
       inline def setList(value: String => js.Array[String]): Self = StObject.set(x, "list", js.Any.fromFunction1(value))
       

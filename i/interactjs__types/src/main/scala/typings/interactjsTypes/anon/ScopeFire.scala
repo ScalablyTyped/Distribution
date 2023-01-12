@@ -161,7 +161,8 @@ object ScopeFire {
     __obj.asInstanceOf[ScopeFire]
   }
   
-  extension [Self <: ScopeFire](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ScopeFire] (val x: Self) extends AnyVal {
     
     inline def setPointerType(value: String): Self = StObject.set(x, "pointerType", value.asInstanceOf[js.Any])
     

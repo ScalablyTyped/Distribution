@@ -33,7 +33,8 @@ object ASPxClientRichEditAutoCorrectEventArgs {
     __obj.asInstanceOf[ASPxClientRichEditAutoCorrectEventArgs]
   }
   
-  extension [Self <: ASPxClientRichEditAutoCorrectEventArgs](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ASPxClientRichEditAutoCorrectEventArgs] (val x: Self) extends AnyVal {
     
     inline def setHandled(value: Boolean): Self = StObject.set(x, "handled", value.asInstanceOf[js.Any])
     

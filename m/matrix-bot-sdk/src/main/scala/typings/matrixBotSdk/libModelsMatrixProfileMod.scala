@@ -58,7 +58,8 @@ object libModelsMatrixProfileMod {
       __obj.asInstanceOf[MatrixProfileInfo]
     }
     
-    extension [Self <: MatrixProfileInfo](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: MatrixProfileInfo] (val x: Self) extends AnyVal {
       
       inline def setAvatar_url(value: String): Self = StObject.set(x, "avatar_url", value.asInstanceOf[js.Any])
       

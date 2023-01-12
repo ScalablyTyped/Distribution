@@ -46,7 +46,8 @@ object ConsumerConfig {
     __obj.asInstanceOf[ConsumerConfig]
   }
   
-  extension [Self <: ConsumerConfig](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ConsumerConfig] (val x: Self) extends AnyVal {
     
     inline def setAckTimeoutMs(value: Double): Self = StObject.set(x, "ackTimeoutMs", value.asInstanceOf[js.Any])
     

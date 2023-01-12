@@ -22,7 +22,8 @@ object PostalCodeGroup {
     __obj.asInstanceOf[PostalCodeGroup]
   }
   
-  extension [Self <: PostalCodeGroup](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: PostalCodeGroup] (val x: Self) extends AnyVal {
     
     inline def setCountry(value: String): Self = StObject.set(x, "country", value.asInstanceOf[js.Any])
     

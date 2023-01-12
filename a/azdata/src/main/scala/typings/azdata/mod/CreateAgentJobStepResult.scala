@@ -17,7 +17,8 @@ object CreateAgentJobStepResult {
     __obj.asInstanceOf[CreateAgentJobStepResult]
   }
   
-  extension [Self <: CreateAgentJobStepResult](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CreateAgentJobStepResult] (val x: Self) extends AnyVal {
     
     inline def setStep(value: AgentJobStepInfo): Self = StObject.set(x, "step", value.asInstanceOf[js.Any])
   }

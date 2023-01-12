@@ -278,7 +278,8 @@ object mod {
         __obj.asInstanceOf[IOptions[T]]
       }
       
-      extension [Self <: IOptions[?], T /* <: Widget */](x: Self & IOptions[T]) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IOptions[?], T /* <: Widget */] (val x: Self & IOptions[T]) extends AnyVal {
         
         inline def setContextMenuRenderer(value: IRenderer): Self = StObject.set(x, "contextMenuRenderer", value.asInstanceOf[js.Any])
         
@@ -324,7 +325,8 @@ object mod {
         __obj.asInstanceOf[IStartOptions]
       }
       
-      extension [Self <: IStartOptions](x: Self) {
+      @scala.inline
+      implicit open class MutableBuilder[Self <: IStartOptions] (val x: Self) extends AnyVal {
         
         inline def setHostID(value: String): Self = StObject.set(x, "hostID", value.asInstanceOf[js.Any])
         
@@ -426,7 +428,8 @@ object mod {
       __obj.asInstanceOf[IPlugin[T, U]]
     }
     
-    extension [Self <: IPlugin[?, ?], T, U](x: Self & (IPlugin[T, U])) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: IPlugin[?, ?], T, U] (val x: Self & (IPlugin[T, U])) extends AnyVal {
       
       inline def setActivate(value: (T, /* repeated */ Any) => U | js.Promise[U]): Self = StObject.set(x, "activate", js.Any.fromFunction2(value))
       

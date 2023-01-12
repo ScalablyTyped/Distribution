@@ -16,7 +16,8 @@ object GlobalPermission {
     __obj.asInstanceOf[GlobalPermission]
   }
   
-  extension [Self <: GlobalPermission](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: GlobalPermission] (val x: Self) extends AnyVal {
     
     inline def setPermission(value: String): Self = StObject.set(x, "permission", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object CompassHeading {
     __obj.asInstanceOf[CompassHeading]
   }
   
-  extension [Self <: CompassHeading](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: CompassHeading] (val x: Self) extends AnyVal {
     
     inline def setHeadingAccuracy(value: Double): Self = StObject.set(x, "headingAccuracy", value.asInstanceOf[js.Any])
     

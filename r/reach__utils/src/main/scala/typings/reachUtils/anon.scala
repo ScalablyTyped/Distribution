@@ -21,7 +21,8 @@ object anon {
       __obj.asInstanceOf[CalledFrom[T]]
     }
     
-    extension [Self <: CalledFrom[?], T](x: Self & CalledFrom[T]) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CalledFrom[?], T] (val x: Self & CalledFrom[T]) extends AnyVal {
       
       inline def setCalledFrom(value: String): Self = StObject.set(x, "calledFrom", value.asInstanceOf[js.Any])
       
@@ -50,7 +51,8 @@ object anon {
       __obj.asInstanceOf[Height]
     }
     
-    extension [Self <: Height](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Height] (val x: Self) extends AnyVal {
       
       inline def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
       
@@ -71,7 +73,8 @@ object anon {
       __obj.asInstanceOf[ScrollX]
     }
     
-    extension [Self <: ScrollX](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScrollX] (val x: Self) extends AnyVal {
       
       inline def setScrollX(value: Double): Self = StObject.set(x, "scrollX", value.asInstanceOf[js.Any])
       

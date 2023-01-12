@@ -55,7 +55,8 @@ object jQueryMaskMoney {
       __obj.asInstanceOf[Options]
     }
     
-    extension [Self <: Options](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       inline def setAffixesStay(value: Boolean): Self = StObject.set(x, "affixesStay", value.asInstanceOf[js.Any])
       

@@ -25,7 +25,8 @@ object ResponseDataJson {
     __obj.asInstanceOf[ResponseDataJson]
   }
   
-  extension [Self <: ResponseDataJson](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ResponseDataJson] (val x: Self) extends AnyVal {
     
     inline def setProducedAt(value: js.Date): Self = StObject.set(x, "producedAt", value.asInstanceOf[js.Any])
     

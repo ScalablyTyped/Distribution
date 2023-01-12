@@ -15,7 +15,8 @@ object TextPartialCSSProperties {
     __obj.asInstanceOf[TextPartialCSSProperties]
   }
   
-  extension [Self <: TextPartialCSSProperties](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: TextPartialCSSProperties] (val x: Self) extends AnyVal {
     
     inline def setText(value: PartialCSSProperties): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
   }

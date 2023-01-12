@@ -53,7 +53,8 @@ object typesCartMod {
       __obj.asInstanceOf[Cart]
     }
     
-    extension [Self <: Cart](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Cart] (val x: Self) extends AnyVal {
       
       inline def setCreated(value: Double): Self = StObject.set(x, "created", value.asInstanceOf[js.Any])
       

@@ -43,7 +43,8 @@ object XSortableGridData {
     __obj.asInstanceOf[XSortableGridData]
   }
   
-  extension [Self <: XSortableGridData](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: XSortableGridData] (val x: Self) extends AnyVal {
     
     inline def setCurrentSortOrder(value: Pair[Double, Boolean]): Self = StObject.set(x, "CurrentSortOrder", value.asInstanceOf[js.Any])
     

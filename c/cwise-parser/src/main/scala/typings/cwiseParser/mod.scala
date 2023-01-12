@@ -29,7 +29,8 @@ object mod {
       __obj.asInstanceOf[CompiledArgument]
     }
     
-    extension [Self <: CompiledArgument](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledArgument] (val x: Self) extends AnyVal {
       
       inline def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
@@ -63,7 +64,8 @@ object mod {
       __obj.asInstanceOf[CompiledRoutine]
     }
     
-    extension [Self <: CompiledRoutine](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CompiledRoutine] (val x: Self) extends AnyVal {
       
       inline def setArgs(value: js.Array[CompiledArgument]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       

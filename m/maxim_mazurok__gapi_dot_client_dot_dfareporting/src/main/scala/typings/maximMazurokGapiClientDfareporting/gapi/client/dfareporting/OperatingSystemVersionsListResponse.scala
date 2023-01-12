@@ -19,7 +19,8 @@ object OperatingSystemVersionsListResponse {
     __obj.asInstanceOf[OperatingSystemVersionsListResponse]
   }
   
-  extension [Self <: OperatingSystemVersionsListResponse](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: OperatingSystemVersionsListResponse] (val x: Self) extends AnyVal {
     
     inline def setKind(value: String): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
     

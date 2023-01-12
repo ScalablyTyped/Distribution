@@ -215,7 +215,8 @@ object sapUiTestRecordReplayMod {
       __obj.asInstanceOf[ControlSelector]
     }
     
-    extension [Self <: ControlSelector](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ControlSelector] (val x: Self) extends AnyVal {
       
       inline def setBindingPath(value: js.Object): Self = StObject.set(x, "bindingPath", value.asInstanceOf[js.Any])
       

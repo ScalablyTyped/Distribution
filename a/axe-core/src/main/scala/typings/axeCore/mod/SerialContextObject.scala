@@ -17,7 +17,8 @@ object SerialContextObject {
     __obj.asInstanceOf[SerialContextObject]
   }
   
-  extension [Self <: SerialContextObject](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SerialContextObject] (val x: Self) extends AnyVal {
     
     inline def setExclude(value: BaseSelector | (js.Array[BaseSelector | js.Array[BaseSelector]])): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])
     

@@ -21,7 +21,8 @@ object ImageAnimation {
     __obj.asInstanceOf[ImageAnimation]
   }
   
-  extension [Self <: ImageAnimation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ImageAnimation] (val x: Self) extends AnyVal {
     
     inline def setFrameBase(value: Double): Self = StObject.set(x, "frameBase", value.asInstanceOf[js.Any])
     

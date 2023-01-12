@@ -57,7 +57,8 @@ object distSrcDialectMod {
       __obj.asInstanceOf[Dialect]
     }
     
-    extension [Self <: Dialect](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: Dialect] (val x: Self) extends AnyVal {
       
       inline def setAnd(value: js.Array[String]): Self = StObject.set(x, "and", value.asInstanceOf[js.Any])
       

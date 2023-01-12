@@ -21,7 +21,8 @@ object SettlementListRequest {
     __obj.asInstanceOf[SettlementListRequest]
   }
   
-  extension [Self <: SettlementListRequest](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: SettlementListRequest] (val x: Self) extends AnyVal {
     
     inline def setFrom(value: String): Self = StObject.set(x, "from", value.asInstanceOf[js.Any])
     

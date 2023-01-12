@@ -637,7 +637,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[BufferChangedEvent]
     }
     
-    extension [Self <: BufferChangedEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferChangedEvent] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[NewRange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -665,7 +666,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[BufferChangingEvent]
     }
     
-    extension [Self <: BufferChangingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferChangingEvent] (val x: Self) extends AnyVal {
       
       inline def setOldRange(value: Range): Self = StObject.set(x, "oldRange", value.asInstanceOf[js.Any])
     }
@@ -689,7 +691,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[BufferLoadOptions]
     }
     
-    extension [Self <: BufferLoadOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferLoadOptions] (val x: Self) extends AnyVal {
       
       inline def setEncoding(value: String): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
       
@@ -736,7 +739,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[BufferScanResult]
     }
     
-    extension [Self <: BufferScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferScanResult] (val x: Self) extends AnyVal {
       
       inline def setBuffer(value: TextBuffer): Self = StObject.set(x, "buffer", value.asInstanceOf[js.Any])
       
@@ -767,7 +771,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[BufferStoppedChangingEvent]
     }
     
-    extension [Self <: BufferStoppedChangingEvent](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: BufferStoppedChangingEvent] (val x: Self) extends AnyVal {
       
       inline def setChanges(value: js.Array[TextChange]): Self = StObject.set(x, "changes", value.asInstanceOf[js.Any])
       
@@ -802,7 +807,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[ContextualBufferScanResult]
     }
     
-    extension [Self <: ContextualBufferScanResult](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ContextualBufferScanResult] (val x: Self) extends AnyVal {
       
       inline def setLeadingContextLines(value: js.Array[String]): Self = StObject.set(x, "leadingContextLines", value.asInstanceOf[js.Any])
       
@@ -829,7 +835,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[ScanContextOptions]
     }
     
-    extension [Self <: ScanContextOptions](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: ScanContextOptions] (val x: Self) extends AnyVal {
       
       inline def setLeadingContextLineCount(value: Double): Self = StObject.set(x, "leadingContextLineCount", value.asInstanceOf[js.Any])
       
@@ -894,7 +901,8 @@ object dependenciesTextBufferSrcTextBufferMod {
       __obj.asInstanceOf[TextBufferFileBackend]
     }
     
-    extension [Self <: TextBufferFileBackend](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: TextBufferFileBackend] (val x: Self) extends AnyVal {
       
       inline def setCreateReadStream(value: () => ReadStream): Self = StObject.set(x, "createReadStream", js.Any.fromFunction0(value))
       

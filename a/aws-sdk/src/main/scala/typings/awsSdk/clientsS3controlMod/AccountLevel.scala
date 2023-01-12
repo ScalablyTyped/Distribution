@@ -23,7 +23,8 @@ object AccountLevel {
     __obj.asInstanceOf[AccountLevel]
   }
   
-  extension [Self <: AccountLevel](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: AccountLevel] (val x: Self) extends AnyVal {
     
     inline def setActivityMetrics(value: ActivityMetrics): Self = StObject.set(x, "ActivityMetrics", value.asInstanceOf[js.Any])
     

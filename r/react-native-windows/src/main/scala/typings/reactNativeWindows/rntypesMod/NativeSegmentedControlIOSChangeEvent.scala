@@ -19,7 +19,8 @@ object NativeSegmentedControlIOSChangeEvent {
     __obj.asInstanceOf[NativeSegmentedControlIOSChangeEvent]
   }
   
-  extension [Self <: NativeSegmentedControlIOSChangeEvent](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: NativeSegmentedControlIOSChangeEvent] (val x: Self) extends AnyVal {
     
     inline def setSelectedSegmentIndex(value: Double): Self = StObject.set(x, "selectedSegmentIndex", value.asInstanceOf[js.Any])
     

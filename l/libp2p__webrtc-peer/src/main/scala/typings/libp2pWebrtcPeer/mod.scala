@@ -56,7 +56,8 @@ object mod {
       __obj.asInstanceOf[AnswerSignal]
     }
     
-    extension [Self <: AnswerSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: AnswerSignal] (val x: Self) extends AnyVal {
       
       inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       
@@ -80,7 +81,8 @@ object mod {
       __obj.asInstanceOf[CandidateSignal]
     }
     
-    extension [Self <: CandidateSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: CandidateSignal] (val x: Self) extends AnyVal {
       
       inline def setCandidate(value: Candidate): Self = StObject.set(x, "candidate", value.asInstanceOf[js.Any])
       
@@ -102,7 +104,8 @@ object mod {
       __obj.asInstanceOf[GoodbyeSignal]
     }
     
-    extension [Self <: GoodbyeSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: GoodbyeSignal] (val x: Self) extends AnyVal {
       
       inline def setType(value: goodbye): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -124,7 +127,8 @@ object mod {
       __obj.asInstanceOf[OfferSignal]
     }
     
-    extension [Self <: OfferSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: OfferSignal] (val x: Self) extends AnyVal {
       
       inline def setSdp(value: String): Self = StObject.set(x, "sdp", value.asInstanceOf[js.Any])
       
@@ -146,7 +150,8 @@ object mod {
       __obj.asInstanceOf[RenegotiateSignal]
     }
     
-    extension [Self <: RenegotiateSignal](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: RenegotiateSignal] (val x: Self) extends AnyVal {
       
       inline def setType(value: renegotiate): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
@@ -212,7 +217,8 @@ object mod {
       __obj.asInstanceOf[WRTC]
     }
     
-    extension [Self <: WRTC](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WRTC] (val x: Self) extends AnyVal {
       
       inline def setRTCIceCandidate(
         value: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof RTCIceCandidate */ Any
@@ -243,7 +249,8 @@ object mod {
       __obj.asInstanceOf[WebRTCInitiatorInit]
     }
     
-    extension [Self <: WebRTCInitiatorInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCInitiatorInit] (val x: Self) extends AnyVal {
       
       inline def setDataChannelInit(value: RTCDataChannelInit): Self = StObject.set(x, "dataChannelInit", value.asInstanceOf[js.Any])
       
@@ -285,7 +292,8 @@ object mod {
       __obj.asInstanceOf[WebRTCPeerEvents]
     }
     
-    extension [Self <: WebRTCPeerEvents](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCPeerEvents] (val x: Self) extends AnyVal {
       
       inline def setClose(value: CustomEvent[Any]): Self = StObject.set(x, "close", value.asInstanceOf[js.Any])
       
@@ -314,7 +322,8 @@ object mod {
       __obj.asInstanceOf[WebRTCPeerInit]
     }
     
-    extension [Self <: WebRTCPeerInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCPeerInit] (val x: Self) extends AnyVal {
       
       inline def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
@@ -343,7 +352,8 @@ object mod {
       __obj.asInstanceOf[WebRTCReceiverInit]
     }
     
-    extension [Self <: WebRTCReceiverInit](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: WebRTCReceiverInit] (val x: Self) extends AnyVal {
       
       inline def setAnswerOptions(value: RTCAnswerOptions): Self = StObject.set(x, "answerOptions", value.asInstanceOf[js.Any])
       

@@ -107,7 +107,8 @@ object srcDataprocessorXmldataprocessorMod {
       __obj.asInstanceOf[XmlDataProcessor]
     }
     
-    extension [Self <: XmlDataProcessor](x: Self) {
+    @scala.inline
+    implicit open class MutableBuilder[Self <: XmlDataProcessor] (val x: Self) extends AnyVal {
       
       inline def setDomConverter(value: typings.ckeditorCkeditor5Engine.srcViewDomconverterMod.default): Self = StObject.set(x, "domConverter", value.asInstanceOf[js.Any])
       

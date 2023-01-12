@@ -24,7 +24,8 @@ object ClearDropOperation {
     __obj.asInstanceOf[ClearDropOperation]
   }
   
-  extension [Self <: ClearDropOperation](x: Self) {
+  @scala.inline
+  implicit open class MutableBuilder[Self <: ClearDropOperation] (val x: Self) extends AnyVal {
     
     inline def setGraph(value: GraphReference): Self = StObject.set(x, "graph", value.asInstanceOf[js.Any])
     
